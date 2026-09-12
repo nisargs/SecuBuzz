@@ -13,6 +13,9 @@ const FEEDS = [
   "https://www.bleepingcomputer.com/feed/",
   "https://krebsonsecurity.com/feed/",
   "https://therecord.media/feed",
+  "https://www.darkreading.com/rss.xml",
+  "https://www.securityweek.com/feed/",
+  "https://www.cisa.gov/cybersecurity-advisories/all.xml",
 ];
 
 const FEED_PATH = "feed.json";
