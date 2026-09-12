@@ -1,5 +1,6 @@
 import type { ArticleRepository } from './ArticleRepository';
 import { MockArticleRepository } from './MockArticleRepository';
+import { RemoteArticleRepository } from './RemoteArticleRepository';
 
 /**
  * Single place to choose the live data source.
@@ -12,7 +13,7 @@ let repository: ArticleRepository | null = null;
 
 export function getArticleRepository(): ArticleRepository {
   if (repository === null) {
-    repository = new MockArticleRepository();
+    repository = new RemoteArticleRepository();
   }
   return repository;
 }
