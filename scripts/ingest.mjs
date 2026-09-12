@@ -37,7 +37,10 @@ const schema = {
       type: "string",
       enum: ["BREACH", "RANSOMWARE", "CVE", "VULNERABILITY", "NATION_STATE", "GENERAL"],
     },
-    severity: { type: "string", enum: ["low", "medium", "high", "critical"] },
+    severity: {
+      type: "string",
+      enum: ["LOW", "MEDIUM", "HIGH", "CRITICAL"]
+    },
   },
   required: ["headline", "summary", "category", "severity"],
 };
@@ -54,7 +57,8 @@ Source: ${link}
 
 Write a factual summary between 40 and 70 words, plain language, no 
 sensationalism, no clickbait. Classify it into exactly one category and 
-assign a severity.`;
+assign a severity using exactly one of:
+LOW, MEDIUM, HIGH, CRITICAL.`;
 
   const response = await ai.models.generateContent({
     model: "gemini-3.8-flash",

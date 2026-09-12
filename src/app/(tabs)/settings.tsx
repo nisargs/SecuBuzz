@@ -21,8 +21,9 @@ export default function SettingsScreen() {
       <View style={styles.card}>
         <Text style={styles.label}>Data</Text>
         <Text style={styles.body}>
-          This build uses sample demo stories only. There is no login, no payments, and no
-          subscription. Bookmarks are stored locally on this device. No SecuBuzz account is required.
+          SecuBuzz aggregates cybersecurity news from trusted public sources
+          and uses AI to create short summaries. Always open the original
+          article for full details and verification.
         </Text>
       </View>
 
