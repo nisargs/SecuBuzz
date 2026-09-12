@@ -1,5 +1,16 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/dutch-ncsc-critical-check-point-vpn-flaws-exploitation-is-imminent/",
+    "headline": "Dutch NCSC Warns of Imminent Exploitation of Critical Check Point VPN Flaws",
+    "summary": "The Dutch Nationaal Cyber Security Centrum NCSC is warning of imminent exploitation of two critical flaws in Check Point VPN. These two critical flaws are tracked as CVE-2026-85102 and CVE-2026-85103. The agency warns that exploitation of both Check Point VPN vulnerabilities is imminent.",
+    "sourceName": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/dutch-ncsc-critical-check-point-vpn-flaws-exploitation-is-imminent/",
+    "category": "CVE",
+    "severity": "critical",
+    "publishedAt": "2026-09-12T14:14:32.000Z",
+    "imageUrl": null
+  },
+  {
     "id": "https://krebsonsecurity.com/2026/09/microsoft-plugs-nearly-1000-security-holes/",
     "headline": "Microsoft Releases Updates for At Least 974 Security Holes",
     "summary": "Microsoft has released updates addressing at least 974 security vulnerabilities across its Windows operating systems and other software, marking its largest single patch release to date. While Microsoft noted that artificial intelligence has accelerated the discovery of these flaws, security experts caution that organizations are finding it difficult to test and deploy such a high volume of fixes every month.",
