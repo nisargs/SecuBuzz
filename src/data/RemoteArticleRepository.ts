@@ -9,4 +9,8 @@ export class RemoteArticleRepository implements ArticleRepository {
     if (!response.ok) throw new Error('Failed to fetch feed');
     return response.json();
   }
+
+  lastResultFromCache(): boolean {
+    return false;
+  }
 }

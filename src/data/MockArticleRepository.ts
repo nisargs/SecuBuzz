@@ -160,4 +160,8 @@ export class MockArticleRepository implements ArticleRepository {
     // Return a copy so screens cannot accidentally mutate the demo list.
     return SAMPLE_ARTICLES.map((article) => ({ ...article }));
   }
+
+  lastResultFromCache(): boolean {
+    return false;
+  }
 }

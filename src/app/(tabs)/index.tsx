@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import { FlatList, RefreshControl, StyleSheet, View } from 'react-native';
+import { FlatList, RefreshControl, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { ArticleCard } from '../../components/ArticleCard';
@@ -40,6 +40,10 @@ export default function FeedScreen() {
       <ScreenHeader title="Secubuzz" subtitle="Cybersecurity news, in brief" />
       <CategoryFilterChips selected={filter} onSelect={setFilter} />
 
+      {state.status === 'ready' && state.fromCache ? (
+        <Text style={styles.cacheHint}>Showing saved articles — pull to refresh</Text>
+      ) : null}
+
       {state.status === 'loading' && !refreshing ? <LoadingState /> : null}
 
       {state.status === 'error' ? (
@@ -79,6 +83,12 @@ const styles = StyleSheet.create({
   safe: {
     flex: 1,
     backgroundColor: colors.background,
+  },
+  cacheHint: {
+    paddingHorizontal: spacing.lg,
+    paddingBottom: spacing.sm,
+    color: colors.textMuted,
+    fontSize: 13,
   },
   list: {
     paddingHorizontal: spacing.lg,
