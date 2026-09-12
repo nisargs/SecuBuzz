@@ -1,5 +1,38 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/hackers-abused-claude-to-extract-secrets-from-18m-android-apps/",
+    "headline": "Threat Groups Attempted to Abuse Anthropic's Claude AI",
+    "summary": "Anthropic reported that multiple threat groups attempted to abuse its Claude AI model for malicious activities. The perpetrators included financially motivated actors as well as state-sponsored espionage groups associated with Russia and China. According to the report, hackers abused the Claude model to extract secrets from 1.8 million Android applications.",
+    "sourceName": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-abused-claude-to-extract-secrets-from-18m-android-apps/",
+    "category": "NATION_STATE",
+    "severity": "high",
+    "publishedAt": "2026-09-11T20:19:09.000Z",
+    "imageUrl": null
+  },
+  {
+    "id": "https://krebsonsecurity.com/2026/09/fbi-probes-service-selling-153m-drivers-licenses/",
+    "headline": "FBI Investigates Dark Web Service Selling 153 Million Driver's Licenses",
+    "summary": "The FBI's New Orleans field office has launched an official inquiry into a new dark web identity theft service selling digital scans of over 153 million driver's licenses from the United States and Canada. The compromised scans appear to have been siphoned from a widely-used identity verification firm located in Louisiana, according to interviews with affected individuals.",
+    "sourceName": "Krebs on Security",
+    "sourceUrl": "https://krebsonsecurity.com/2026/09/fbi-probes-service-selling-153m-drivers-licenses/",
+    "category": "BREACH",
+    "severity": "critical",
+    "publishedAt": "2026-09-01T22:40:28.000Z",
+    "imageUrl": null
+  },
+  {
+    "id": "https://therecord.media/invoice-scam-emails-new-features-microsoft-researchers",
+    "headline": "Microsoft Identifies AI Tactics in Invoice-Scam Emails",
+    "summary": "Microsoft researchers analyzed a flood of fraudulent business emails and found that threat actors had doubled up on tactics to make them appear legitimate. These invoice-scam emails incorporate new features designed to increase credibility, which includes threat actors leveraging help from artificial intelligence.",
+    "sourceName": "The Record from Recorded Future News",
+    "sourceUrl": "https://therecord.media/invoice-scam-emails-new-features-microsoft-researchers",
+    "category": "GENERAL",
+    "severity": "medium",
+    "publishedAt": "2026-09-11T18:40:00.000Z",
+    "imageUrl": "http://cms.therecord.media/uploads/email_icon_chuttersnap_unsplash_a8cc9cf839.jpg"
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/dutch-ncsc-critical-check-point-vpn-flaws-exploitation-is-imminent/",
     "headline": "Dutch NCSC Warns of Imminent Exploitation of Critical Check Point VPN Flaws",
     "summary": "The Dutch Nationaal Cyber Security Centrum NCSC is warning of imminent exploitation of two critical flaws in Check Point VPN. These two critical flaws are tracked as CVE-2026-85102 and CVE-2026-85103. The agency warns that exploitation of both Check Point VPN vulnerabilities is imminent.",
