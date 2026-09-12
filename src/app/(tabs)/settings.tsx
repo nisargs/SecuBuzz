@@ -22,7 +22,7 @@ export default function SettingsScreen() {
         <Text style={styles.label}>Data</Text>
         <Text style={styles.body}>
           This build uses sample demo stories only. There is no login, no payments, and no
-          subscription. Bookmarks stay on this device until you close the app.
+          subscription. Bookmarks are stored locally on this device. No SecuBuzz account is required.
         </Text>
       </View>
 
