@@ -1,5 +1,16 @@
 [
   {
+    "id": "https://www.securityweek.com/anthropic-ceo-dario-amodei-says-ai-industry-needs-to-give-safety-measures-time-to-catch-up/",
+    "headline": "Anthropic CEO Calls for AI Safety Measures to Catch Up",
+    "summary": "Anthropic CEO Dario Amodei has stated that the AI industry must give safety measures sufficient time to catch up. Amodei issued a warning that within six to 12 months, AI could be capable of leading a swarm of agents that could take over the entire internet.",
+    "sourceName": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/anthropic-ceo-dario-amodei-says-ai-industry-needs-to-give-safety-measures-time-to-catch-up/",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "publishedAt": "2026-09-13T13:27:25.000Z",
+    "imageUrl": null
+  },
+  {
     "id": "https://krebsonsecurity.com/2026/08/two-alleged-teampcp-hackers-arrested-in-australia/",
     "headline": "Australian Police Arrest Two Suspected TeamPCP Hackers",
     "summary": "The Australian Federal Police arrested two men, aged 21 and 23, in Western Australia for their suspected involvement in TeamPCP. The cybercrime and data extortion syndicate allegedly created malicious open-source software to target and rob thousands of businesses worldwide in an extensive series of software supply chain attacks.",
