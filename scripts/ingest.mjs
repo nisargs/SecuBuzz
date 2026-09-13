@@ -100,6 +100,14 @@ No sensationalism.
 
 No clickbait.
 
+IMPORTANT NUMBER FORMAT RULE:
+- Always use numerals for numbers.
+- Never spell out numbers.
+- For example, write "6 to 12 months", NOT "six to 12 months".
+- Write "3 vulnerabilities", NOT "three vulnerabilities".
+- Write "1 year", NOT "one year".
+- Preserve technical identifiers exactly, including CVE numbers, version numbers, dates, percentages, and CVSS scores.
+
 Classify the article into exactly one category:
 
 - BREACH

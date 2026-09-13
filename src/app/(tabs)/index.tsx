@@ -1,6 +1,8 @@
 import { Ionicons } from '@expo/vector-icons';
+import { useFonts } from 'expo-font';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
+  ActivityIndicator,
   FlatList,
   Pressable,
   RefreshControl,
@@ -26,10 +28,13 @@ import {
   type Article,
   type CategoryFilter,
 } from '../../models/article';
+import { exoFonts } from '../../theme/fonts';
 import { colors, spacing } from '../../theme/theme';
 
 const PROGRESS_SEGMENTS = 5;
+
 const INITIAL_ARTICLES = 10;
+
 const ARTICLES_PER_BATCH = 10;
 
 function formatCategory(
@@ -53,7 +58,37 @@ function formatCategory(
   );
 }
 
+function formatHeaderDateTime(
+  date: Date,
+): string {
+  const datePart = date.toLocaleDateString(
+    'en-GB',
+    {
+      day: 'numeric',
+      month: 'short',
+    },
+  );
+
+  const timePart = date
+    .toLocaleTimeString('en-US', {
+      hour: 'numeric',
+      minute: '2-digit',
+      hour12: true,
+    })
+    .toLowerCase();
+
+  return `${datePart}, ${timePart}`;
+}
+
 export default function FeedScreen() {
+  const [fontsLoaded] = useFonts({
+    Exo_400Regular: exoFonts.regular,
+    Exo_500Medium: exoFonts.medium,
+    Exo_600SemiBold: exoFonts.semiBold,
+    Exo_700Bold: exoFonts.bold,
+    Exo_800ExtraBold: exoFonts.extraBold,
+  });
+
   const { state, load } = useArticles();
 
   const {
@@ -76,21 +111,43 @@ export default function FeedScreen() {
   const [loadedCount, setLoadedCount] =
     useState(INITIAL_ARTICLES);
 
+  const [now, setNow] =
+    useState(() => new Date());
+
   const listRef =
     useRef<FlatList<Article>>(null);
 
+  /*
+   * Load the news feed.
+   */
   useEffect(() => {
     void load();
   }, [load]);
 
+  /*
+   * Keep the header clock current.
+   *
+   * It refreshes every 30 seconds.
+   */
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setNow(new Date());
+    }, 30_000);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+
+  /*
+   * Sort all articles by their actual publication
+   * timestamp, newest first.
+   */
   const articles = useMemo(() => {
     if (state.status !== 'ready') {
       return [];
     }
 
-    /**
-     * Always sort newest → oldest on the device.
-     */
     return [...state.articles].sort(
       (a, b) => {
         const aTime = Date.parse(
@@ -114,6 +171,9 @@ export default function FeedScreen() {
     );
   }, [state]);
 
+  /*
+   * Apply the selected category filter.
+   */
   const filteredArticles = useMemo(() => {
     if (filter === 'ALL') {
       return articles;
@@ -125,6 +185,12 @@ export default function FeedScreen() {
     );
   }, [articles, filter]);
 
+  /*
+   * Progressive loading.
+   *
+   * We start with 10 and add another 10 as
+   * the user approaches the end.
+   */
   const visibleArticles = useMemo(
     () =>
       filteredArticles.slice(
@@ -137,6 +203,9 @@ export default function FeedScreen() {
     [filteredArticles, loadedCount],
   );
 
+  /*
+   * Reset the feed when the user changes category.
+   */
   useEffect(() => {
     setCurrentIndex(0);
     setLoadedCount(INITIAL_ARTICLES);
@@ -147,25 +216,34 @@ export default function FeedScreen() {
     });
   }, [filter]);
 
+  /*
+   * Pull-to-refresh.
+   */
   const onRefresh = useCallback(
     async () => {
       setRefreshing(true);
 
-      await load();
+      try {
+        await load();
 
-      setCurrentIndex(0);
-      setLoadedCount(INITIAL_ARTICLES);
+        setCurrentIndex(0);
+        setLoadedCount(INITIAL_ARTICLES);
 
-      listRef.current?.scrollToOffset({
-        offset: 0,
-        animated: false,
-      });
-
-      setRefreshing(false);
+        listRef.current?.scrollToOffset({
+          offset: 0,
+          animated: false,
+        });
+      } finally {
+        setRefreshing(false);
+      }
     },
     [load],
   );
 
+  /*
+   * Called after the user finishes swiping
+   * to the next article.
+   */
   const handleScrollEnd = useCallback(
     (
       event: NativeSyntheticEvent<NativeScrollEvent>,
@@ -183,9 +261,9 @@ export default function FeedScreen() {
 
       setCurrentIndex(index);
 
-      /**
-       * Start preparing older articles before
-       * the reader reaches the end.
+      /*
+       * Load another batch before the user
+       * reaches the end.
        */
       if (
         index >=
@@ -206,6 +284,9 @@ export default function FeedScreen() {
     ],
   );
 
+  /*
+   * Additional safety net for FlatList.
+   */
   const handleEndReached = useCallback(
     () => {
       setLoadedCount((current) =>
@@ -218,27 +299,41 @@ export default function FeedScreen() {
     [filteredArticles.length],
   );
 
+  /*
+   * Don't render the actual screen until
+   * the Exo fonts have loaded.
+   *
+   * All hooks above still run on every render,
+   * so React's hook order remains stable.
+   */
+  if (!fontsLoaded) {
+    return (
+      <View style={styles.fontLoading}>
+        <ActivityIndicator
+          size="small"
+          color="#4CC9F0"
+        />
+      </View>
+    );
+  }
+
   return (
     <SafeAreaView
       style={styles.safe}
       edges={['top']}
     >
-      {/* HEADER */}
+      {/* ================================
+          HEADER
+          ================================ */}
       <View style={styles.header}>
-        <View>
+        <View style={styles.headerLeft}>
           <View style={styles.titleRow}>
             <Text style={styles.title}>
               SecuBuzz
             </Text>
 
             <Text style={styles.date}>
-              {new Date().toLocaleDateString(
-                'en-GB',
-                {
-                  day: 'numeric',
-                  month: 'short',
-                },
-              )}
+              {formatHeaderDateTime(now)}
             </Text>
           </View>
 
@@ -247,23 +342,23 @@ export default function FeedScreen() {
           </Text>
         </View>
 
-        <View style={styles.headerIcons}>
-          <Pressable
-            accessibilityRole="button"
-            accessibilityLabel="Search"
-            hitSlop={8}
-            style={styles.iconButton}
-          >
-            <Ionicons
-              name="search-outline"
-              size={28}
-              color={colors.textPrimary}
-            />
-          </Pressable>
-        </View>
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel="Search"
+          hitSlop={10}
+          style={styles.searchButton}
+        >
+          <Ionicons
+            name="search-outline"
+            size={28}
+            color={colors.textPrimary}
+          />
+        </Pressable>
       </View>
 
-      {/* CATEGORY FILTERS */}
+      {/* ================================
+          CATEGORY FILTERS
+          ================================ */}
       <ScrollView
         horizontal
         showsHorizontalScrollIndicator={false}
@@ -305,7 +400,12 @@ export default function FeedScreen() {
         })}
       </ScrollView>
 
-      {/* FIVE PROGRESS RECTANGLES */}
+      {/* ================================
+          FIVE PROGRESS RECTANGLES
+          
+          No 01/10 counter.
+          They simply indicate position.
+          ================================ */}
       <View style={styles.progressRow}>
         {Array.from({
           length: PROGRESS_SEGMENTS,
@@ -328,7 +428,9 @@ export default function FeedScreen() {
         })}
       </View>
 
-      {/* CONTENT */}
+      {/* ================================
+          ARTICLE FEED
+          ================================ */}
       <View
         style={styles.feedContainer}
         onLayout={(event) => {
@@ -405,22 +507,51 @@ export default function FeedScreen() {
                 onRefresh={() => {
                   void onRefresh();
                 }}
-                tintColor={
-                  colors.textPrimary
+                tintColor="#4CC9F0"
+                colors={['#4CC9F0']}
+                progressBackgroundColor={
+                  colors.surface
                 }
-                colors={[
-                  colors.textPrimary,
-                ]}
               />
             }
           />
         ) : null}
       </View>
+
+      {/* ================================
+          VISIBLE REFRESH STATE
+          
+          This appears while the feed is
+          actually refreshing.
+          ================================ */}
+      {refreshing ? (
+        <View
+          pointerEvents="none"
+          style={styles.refreshIndicator}
+        >
+          <View
+            style={styles.refreshCircle}
+          >
+            <ActivityIndicator
+              size="small"
+              color="#4CC9F0"
+            />
+          </View>
+        </View>
+      ) : null}
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
+  fontLoading: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor:
+      colors.background,
+  },
+
   safe: {
     flex: 1,
     backgroundColor:
@@ -436,9 +567,14 @@ const styles = StyleSheet.create({
     paddingBottom: spacing.sm,
   },
 
+  headerLeft: {
+    flex: 1,
+  },
+
   titleRow: {
     flexDirection: 'row',
     alignItems: 'baseline',
+    flexWrap: 'wrap',
   },
 
   title: {
@@ -450,25 +586,22 @@ const styles = StyleSheet.create({
 
   date: {
     color: colors.textSecondary,
+    fontFamily: 'Exo_400Regular',
     fontSize: 13,
     marginLeft: 8,
   },
 
   subtitle: {
     color: colors.textPrimary,
+    fontFamily: 'Exo_600SemiBold',
     fontSize: 12,
-    fontWeight: '700',
     letterSpacing: 2.4,
     marginTop: 8,
   },
 
-  headerIcons: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-
-  iconButton: {
+  searchButton: {
     padding: 4,
+    marginLeft: 8,
   },
 
   chipsScroll: {
@@ -498,8 +631,8 @@ const styles = StyleSheet.create({
 
   chipText: {
     color: colors.textSecondary,
+    fontFamily: 'Exo_500Medium',
     fontSize: 14,
-    fontWeight: '600',
   },
 
   chipTextSelected: {
@@ -526,5 +659,23 @@ const styles = StyleSheet.create({
 
   feedContainer: {
     flex: 1,
+  },
+
+  refreshIndicator: {
+    position: 'absolute',
+    top: 96,
+    left: 0,
+    right: 0,
+    alignItems: 'center',
+  },
+
+  refreshCircle: {
+    width: 38,
+    height: 38,
+    borderRadius: 19,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor:
+      colors.surface,
   },
 });

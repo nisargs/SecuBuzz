@@ -1,5 +1,4 @@
 import { Ionicons } from '@expo/vector-icons';
-import * as Linking from 'expo-linking';
 import { useState } from 'react';
 import {
   Pressable,
@@ -11,6 +10,7 @@ import {
 import type { Article } from '../models/article';
 import { colors, spacing } from '../theme/theme';
 import { formatPublishedAt } from '../utils/formatPublishedAt';
+import { openArticle } from '../utils/openArticle';
 
 type ArticleCardProps = {
   article: Article;
@@ -21,12 +21,10 @@ type ArticleCardProps = {
 function formatCategory(
   category: Article['category'],
 ): string {
-  /**
-   * Keep CVE uppercase.
-   *
-   * Keep all article categories uppercase to match
-   * the editorial design.
-   */
+  if (category === 'CVE') {
+    return 'CVE';
+  }
+
   if (category === 'NATION_STATE') {
     return 'NATION STATE';
   }
@@ -39,38 +37,28 @@ export function ArticleCard({
   isSaved,
   onToggleSaved,
 }: ArticleCardProps) {
-  const [linkError, setLinkError] =
-    useState<string | null>(null);
+  const [opening, setOpening] =
+    useState(false);
 
-  async function openSource() {
-    setLinkError(null);
-
-    try {
-      const canOpen =
-        await Linking.canOpenURL(
-          article.sourceUrl,
-        );
-
-      if (!canOpen) {
-        setLinkError(
-          'This link cannot be opened on this device.',
-        );
-        return;
-      }
-
-      await Linking.openURL(
-        article.sourceUrl,
-      );
-    } catch {
-      setLinkError(
-        'Could not open the original article.',
-      );
+  async function handleOpenArticle() {
+    if (opening) {
+      return;
     }
+
+    setOpening(true);
+
+    await openArticle(
+      article.sourceUrl,
+    );
+
+    setOpening(false);
   }
 
   return (
     <View style={styles.card}>
-      {/* ARTICLE HEADER */}
+      {/* =================================
+          CATEGORY + BOOKMARK
+          ================================= */}
       <View style={styles.metaTopRow}>
         <Text style={styles.category}>
           {formatCategory(article.category)}
@@ -81,9 +69,9 @@ export function ArticleCard({
           accessibilityLabel={
             isSaved
               ? 'Remove bookmark'
-              : 'Save story'
+              : 'Save article'
           }
-          hitSlop={10}
+          hitSlop={12}
           onPress={() =>
             onToggleSaved(article.id)
           }
@@ -105,26 +93,36 @@ export function ArticleCard({
         </Pressable>
       </View>
 
-      {/* PUBLICATION INFORMATION */}
+      {/* =================================
+          PUBLICATION DATE + SOURCE
+          ================================= */}
       <Text style={styles.publicationMeta}>
         {formatPublishedAt(article)} ·{' '}
         {article.sourceName}
       </Text>
 
-      {/* HEADLINE */}
+      {/* =================================
+          HEADLINE
+          ================================= */}
       <Text style={styles.headline}>
         {article.headline}
       </Text>
 
-      {/* DESIGN DIVIDER */}
+      {/* =================================
+          CYAN DIVIDER
+          ================================= */}
       <View style={styles.divider} />
 
-      {/* SUMMARY */}
+      {/* =================================
+          SUMMARY
+          ================================= */}
       <Text style={styles.summary}>
         {article.summary}
       </Text>
 
-      {/* FOOTER */}
+      {/* =================================
+          ORIGINAL ARTICLE LINK
+          ================================= */}
       <View style={styles.footer}>
         <Text
           style={styles.footerPreview}
@@ -135,15 +133,17 @@ export function ArticleCard({
 
         <Pressable
           accessibilityRole="button"
-          accessibilityLabel="Read original article"
+          accessibilityLabel="Open original article"
+          disabled={opening}
           onPress={() => {
-            void openSource();
+            void handleOpenArticle();
           }}
           style={styles.readMoreRow}
         >
           <Text style={styles.readMoreText}>
-            READ MORE ·{' '}
-            {article.sourceName.toUpperCase()}
+            {opening
+              ? 'OPENING...'
+              : `READ MORE · ${article.sourceName.toUpperCase()}`}
           </Text>
 
           <Ionicons
@@ -153,12 +153,6 @@ export function ArticleCard({
           />
         </Pressable>
       </View>
-
-      {linkError ? (
-        <Text style={styles.linkError}>
-          {linkError}
-        </Text>
-      ) : null}
     </View>
   );
 }
@@ -166,7 +160,8 @@ export function ArticleCard({
 const styles = StyleSheet.create({
   card: {
     flex: 1,
-    backgroundColor: colors.background,
+    backgroundColor:
+      colors.background,
     paddingHorizontal: spacing.lg,
     paddingTop: spacing.md,
     paddingBottom: spacing.md,
@@ -180,9 +175,9 @@ const styles = StyleSheet.create({
 
   category: {
     color: '#4CC9F0',
-    fontSize: 12,
-    fontWeight: '700',
-    letterSpacing: 1.5,
+    fontFamily: 'Exo_600SemiBold',
+    fontSize: 11,
+    letterSpacing: 1.7,
   },
 
   bookmarkButton: {
@@ -191,6 +186,7 @@ const styles = StyleSheet.create({
 
   publicationMeta: {
     color: colors.textSecondary,
+    fontFamily: 'Exo_400Regular',
     fontSize: 13,
     lineHeight: 20,
     marginTop: 5,
@@ -242,16 +238,10 @@ const styles = StyleSheet.create({
 
   readMoreText: {
     color: '#4CC9F0',
+    fontFamily: 'Exo_600SemiBold',
     fontSize: 12,
-    fontWeight: '800',
     letterSpacing: 1.1,
     flex: 1,
     paddingRight: 10,
-  },
-
-  linkError: {
-    color: colors.danger,
-    fontSize: 13,
-    marginTop: 8,
   },
 });
