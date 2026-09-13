@@ -1,12 +1,16 @@
 import { Ionicons } from '@expo/vector-icons';
 import * as Linking from 'expo-linking';
 import { useState } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import {
+  Pressable,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
 
 import type { Article } from '../models/article';
-import { categoryColors, colors, radii, spacing } from '../theme/theme';
-import { categoryLabel } from '../utils/categoryLabel';
-import { formatRelativeTime } from '../utils/relativeTime';
+import { colors, spacing } from '../theme/theme';
+import { formatPublishedAt } from '../utils/formatPublishedAt';
 
 type ArticleCardProps = {
   article: Article;
@@ -14,146 +18,240 @@ type ArticleCardProps = {
   onToggleSaved: (articleId: string) => void;
 };
 
-export function ArticleCard({ article, isSaved, onToggleSaved }: ArticleCardProps) {
-  const [linkError, setLinkError] = useState<string | null>(null);
-  const pill = categoryColors[article.category];
+function formatCategory(
+  category: Article['category'],
+): string {
+  /**
+   * Keep CVE uppercase.
+   *
+   * Keep all article categories uppercase to match
+   * the editorial design.
+   */
+  if (category === 'NATION_STATE') {
+    return 'NATION STATE';
+  }
+
+  return category;
+}
+
+export function ArticleCard({
+  article,
+  isSaved,
+  onToggleSaved,
+}: ArticleCardProps) {
+  const [linkError, setLinkError] =
+    useState<string | null>(null);
 
   async function openSource() {
     setLinkError(null);
+
     try {
-      const canOpen = await Linking.canOpenURL(article.sourceUrl);
+      const canOpen =
+        await Linking.canOpenURL(
+          article.sourceUrl,
+        );
+
       if (!canOpen) {
-        setLinkError('This link cannot be opened on this device.');
+        setLinkError(
+          'This link cannot be opened on this device.',
+        );
         return;
       }
-      await Linking.openURL(article.sourceUrl);
+
+      await Linking.openURL(
+        article.sourceUrl,
+      );
     } catch {
-      setLinkError('Could not open the original article.');
+      setLinkError(
+        'Could not open the original article.',
+      );
     }
   }
 
   return (
     <View style={styles.card}>
-      <View style={styles.topRow}>
-        <View style={[styles.pill, { backgroundColor: pill.background }]}>
-          <Text style={[styles.pillText, { color: pill.text }]}>
-            {categoryLabel(article.category)}
-          </Text>
-        </View>
+      {/* ARTICLE HEADER */}
+      <View style={styles.metaTopRow}>
+        <Text style={styles.category}>
+          {formatCategory(article.category)}
+        </Text>
+
         <Pressable
           accessibilityRole="button"
-          accessibilityLabel={isSaved ? 'Remove bookmark' : 'Save story'}
-          hitSlop={8}
-          onPress={() => onToggleSaved(article.id)}
+          accessibilityLabel={
+            isSaved
+              ? 'Remove bookmark'
+              : 'Save story'
+          }
+          hitSlop={10}
+          onPress={() =>
+            onToggleSaved(article.id)
+          }
           style={styles.bookmarkButton}
         >
           <Ionicons
-            name={isSaved ? 'bookmark' : 'bookmark-outline'}
-            size={22}
-            color={isSaved ? colors.textPrimary : colors.textSecondary}
+            name={
+              isSaved
+                ? 'bookmark'
+                : 'bookmark-outline'
+            }
+            size={24}
+            color={
+              isSaved
+                ? colors.textPrimary
+                : colors.textSecondary
+            }
           />
         </Pressable>
       </View>
 
-      <Text style={styles.headline}>{article.headline}</Text>
-      <Text style={styles.summary}>{article.summary}</Text>
+      {/* PUBLICATION INFORMATION */}
+      <Text style={styles.publicationMeta}>
+        {formatPublishedAt(article)} ·{' '}
+        {article.sourceName}
+      </Text>
 
-      <View style={styles.metaRow}>
-        <Text style={styles.meta}>{article.sourceName}</Text>
-        <Text style={styles.metaDot}>·</Text>
-        <Text style={styles.meta}>{formatRelativeTime(article.publishedAt)}</Text>
+      {/* HEADLINE */}
+      <Text style={styles.headline}>
+        {article.headline}
+      </Text>
+
+      {/* DESIGN DIVIDER */}
+      <View style={styles.divider} />
+
+      {/* SUMMARY */}
+      <Text style={styles.summary}>
+        {article.summary}
+      </Text>
+
+      {/* FOOTER */}
+      <View style={styles.footer}>
+        <Text
+          style={styles.footerPreview}
+          numberOfLines={2}
+        >
+          {article.summary}
+        </Text>
+
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel="Read original article"
+          onPress={() => {
+            void openSource();
+          }}
+          style={styles.readMoreRow}
+        >
+          <Text style={styles.readMoreText}>
+            READ MORE ·{' '}
+            {article.sourceName.toUpperCase()}
+          </Text>
+
+          <Ionicons
+            name="arrow-forward"
+            size={25}
+            color="#FFFFFF"
+          />
+        </Pressable>
       </View>
 
-      <Pressable
-        accessibilityRole="button"
-        accessibilityLabel="Read full article in browser"
-        onPress={() => {
-          void openSource();
-        }}
-        style={({ pressed }) => [styles.readButton, pressed && styles.readButtonPressed]}
-      >
-        <Text style={styles.readButtonText}>Read full article</Text>
-        <Ionicons name="open-outline" size={16} color={colors.background} />
-      </Pressable>
-
-      {linkError ? <Text style={styles.linkError}>{linkError}</Text> : null}
+      {linkError ? (
+        <Text style={styles.linkError}>
+          {linkError}
+        </Text>
+      ) : null}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: colors.surface,
-    borderRadius: radii.lg,
-    padding: spacing.lg,
-    borderWidth: 1,
-    borderColor: colors.border,
-    gap: spacing.sm,
+    flex: 1,
+    backgroundColor: colors.background,
+    paddingHorizontal: spacing.lg,
+    paddingTop: spacing.md,
+    paddingBottom: spacing.md,
   },
-  topRow: {
+
+  metaTopRow: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
   },
-  pill: {
-    borderRadius: radii.pill,
-    paddingHorizontal: 10,
-    paddingVertical: 4,
-  },
-  pillText: {
+
+  category: {
+    color: '#4CC9F0',
     fontSize: 12,
-    fontWeight: '600',
-    letterSpacing: 0.2,
+    fontWeight: '700',
+    letterSpacing: 1.5,
   },
+
   bookmarkButton: {
     padding: 4,
   },
+
+  publicationMeta: {
+    color: colors.textSecondary,
+    fontSize: 13,
+    lineHeight: 20,
+    marginTop: 5,
+  },
+
   headline: {
     color: colors.textPrimary,
-    fontSize: 20,
-    fontWeight: '700',
-    lineHeight: 26,
+    fontSize: 26,
+    lineHeight: 33,
+    fontWeight: '800',
+    marginTop: spacing.lg,
   },
+
+  divider: {
+    width: 64,
+    height: 3,
+    backgroundColor: '#4CC9F0',
+    marginTop: spacing.lg,
+    marginBottom: spacing.lg,
+  },
+
   summary: {
     color: colors.textSecondary,
-    fontSize: 16,
-    lineHeight: 24,
+    fontSize: 17,
+    lineHeight: 27,
   },
-  metaRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 6,
-    marginTop: 4,
+
+  footer: {
+    marginTop: 'auto',
+    paddingTop: spacing.lg,
   },
-  meta: {
-    color: colors.textMuted,
-    fontSize: 13,
-  },
-  metaDot: {
-    color: colors.textMuted,
-    fontSize: 13,
-  },
-  readButton: {
-    marginTop: 8,
-    backgroundColor: colors.textPrimary,
-    borderRadius: radii.md,
-    paddingVertical: 12,
-    paddingHorizontal: spacing.md,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: 8,
-  },
-  readButtonPressed: {
-    opacity: 0.85,
-  },
-  readButtonText: {
-    color: colors.background,
+
+  footerPreview: {
+    color: colors.textPrimary,
     fontSize: 15,
-    fontWeight: '600',
+    lineHeight: 20,
+    fontWeight: '700',
+    marginBottom: 8,
   },
+
+  readMoreRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    borderTopWidth: 1,
+    borderTopColor: colors.border,
+    paddingTop: 10,
+  },
+
+  readMoreText: {
+    color: '#4CC9F0',
+    fontSize: 12,
+    fontWeight: '800',
+    letterSpacing: 1.1,
+    flex: 1,
+    paddingRight: 10,
+  },
+
   linkError: {
     color: colors.danger,
     fontSize: 13,
+    marginTop: 8,
   },
 });

@@ -1,14 +1,21 @@
-import type { ArticleCategory } from '../models/article';
+import type {
+  ArticleCategory,
+  CategoryFilter,
+} from '../models/article';
 
-const LABELS: Record<ArticleCategory, string> = {
-  BREACH: 'Breach',
-  RANSOMWARE: 'Ransomware',
-  CVE: 'CVE',
-  VULNERABILITY: 'Vulnerability',
-  NATION_STATE: 'Nation-State',
-  GENERAL: 'General',
-};
+export function categoryLabel(
+  category: ArticleCategory | CategoryFilter,
+): string {
+  if (category === 'ALL') {
+    return 'All';
+  }
 
-export function categoryLabel(category: ArticleCategory): string {
-  return LABELS[category];
+  if (category === 'CVE') {
+    return 'CVE';
+  }
+
+  return category
+    .toLowerCase()
+    .replace(/_/g, ' ')
+    .replace(/\b\w/g, (letter) => letter.toUpperCase());
 }

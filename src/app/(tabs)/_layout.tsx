@@ -1,61 +1,87 @@
 import { Ionicons } from '@expo/vector-icons';
 import { Tabs } from 'expo-router';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { colors } from '../../theme/theme';
 
-/** Height of the icons + labels, not including the Android system inset. */
-const TAB_BAR_CONTENT_HEIGHT = 56;
-
-export default function TabsLayout() {
-  const insets = useSafeAreaInsets();
-
+export default function TabLayout() {
   return (
     <Tabs
-      safeAreaInsets={{ bottom: 0 }}
       screenOptions={{
         headerShown: false,
+
         tabBarActiveTintColor: colors.textPrimary,
         tabBarInactiveTintColor: colors.textMuted,
+
         tabBarStyle: {
-          backgroundColor: colors.surface,
+          backgroundColor: colors.background,
           borderTopColor: colors.border,
-          height: TAB_BAR_CONTENT_HEIGHT + insets.bottom,
-          paddingBottom: insets.bottom,
+          borderTopWidth: 1,
+          height: 72,
+          paddingTop: 8,
+          paddingBottom: 8,
         },
+
         tabBarLabelStyle: {
-          fontSize: 12,
+          fontSize: 11,
           fontWeight: '600',
+        },
+
+        tabBarItemStyle: {
+          paddingVertical: 2,
         },
       }}
     >
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Feed',
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="newspaper-outline" color={color} size={size} />
+          title: 'Briefs',
+          tabBarIcon: ({ color, focused }) => (
+            <Ionicons
+              name={focused ? 'newspaper' : 'newspaper-outline'}
+              size={21}
+              color={color}
+            />
           ),
         }}
       />
+
       <Tabs.Screen
         name="saved"
         options={{
           title: 'Saved',
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="bookmark-outline" color={color} size={size} />
+          tabBarIcon: ({ color, focused }) => (
+            <Ionicons
+              name={focused ? 'bookmark' : 'bookmark-outline'}
+              size={21}
+              color={color}
+            />
           ),
         }}
       />
+
       <Tabs.Screen
         name="settings"
         options={{
           title: 'Settings',
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="settings-outline" color={color} size={size} />
+          tabBarIcon: ({ color, focused }) => (
+            <Ionicons
+              name={focused ? 'settings' : 'settings-outline'}
+              size={21}
+              color={color}
+            />
           ),
         }}
       />
+
+      {/* Future release:
+          Threats remains available as a route but is hidden
+          from the bottom navigation for now. */}
+      {/* <Tabs.Screen
+        name="threats"
+        options={{
+          href: null,
+        }}
+      /> */}
     </Tabs>
   );
 }
