@@ -1,48 +1,68 @@
 import { Ionicons } from '@expo/vector-icons';
-import { useEffect, useMemo } from 'react';
+import { useFonts } from 'expo-font';
+import { useRouter } from 'expo-router';
+import { useEffect, useMemo, useState } from 'react';
 import {
+  ActivityIndicator,
   FlatList,
   Pressable,
   StyleSheet,
   Text,
+  TextInput,
   View,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { EmptyState, ErrorState, LoadingState } from '../../components/ScreenStates';
+import {
+  EmptyState,
+  ErrorState,
+  LoadingState,
+} from '../../components/ScreenStates';
 import { useSavedArticles } from '../../context/SavedArticlesContext';
 import { useArticles } from '../../hooks/useArticles';
 import type { Article } from '../../models/article';
+import { exoFonts } from '../../theme/fonts';
 import { colors, spacing } from '../../theme/theme';
+import { formatPublishedAt } from '../../utils/formatPublishedAt';
 
-function formatCategory(category: Article['category']): string {
+const BLUE = '#4CC9F0';
+
+function formatCategory(
+  category: Article['category'],
+): string {
+  if (category === 'CVE') {
+    return 'CVE';
+  }
+
   if (category === 'NATION_STATE') {
-    return 'NATION-STATE';
+    return 'NATION STATE';
   }
 
-  return category.replace(/_/g, ' ');
-}
-
-function formatDate(dateString: string): string {
-  const date = new Date(dateString);
-
-  if (Number.isNaN(date.getTime())) {
-    return '';
-  }
-
-  return new Intl.DateTimeFormat('en-US', {
-    day: 'numeric',
-    month: 'short',
-  }).format(date);
+  return category;
 }
 
 export default function SavedScreen() {
+  const router = useRouter();
+
+  const [fontsLoaded] = useFonts({
+    Exo_400Regular: exoFonts.regular,
+    Exo_500Medium: exoFonts.medium,
+    Exo_600SemiBold: exoFonts.semiBold,
+    Exo_700Bold: exoFonts.bold,
+  });
+
   const { state, load } = useArticles();
+
   const {
     savedIds,
-    isSaved,
     toggleSaved,
   } = useSavedArticles();
+
+  const [searchOpen, setSearchOpen] =
+    useState(false);
+
+  const [searchQuery, setSearchQuery] =
+    useState('');
 
   useEffect(() => {
     void load();
@@ -53,25 +73,169 @@ export default function SavedScreen() {
       return [];
     }
 
-    return state.articles.filter((article) =>
-      savedIds.has(article.id),
-    );
+    return [...state.articles]
+      .filter((article) =>
+        savedIds.has(article.id),
+      )
+      .sort((a, b) => {
+        const aTime = Date.parse(
+          a.publishedAt || '',
+        );
+
+        const bTime = Date.parse(
+          b.publishedAt || '',
+        );
+
+        return (
+          (Number.isNaN(bTime)
+            ? 0
+            : bTime) -
+          (Number.isNaN(aTime)
+            ? 0
+            : aTime)
+        );
+      });
   }, [savedIds, state]);
+
+  const filteredArticles =
+    useMemo(() => {
+      const query =
+        searchQuery.trim().toLowerCase();
+
+      if (!query) {
+        return savedArticles;
+      }
+
+      return savedArticles.filter(
+        (article) => {
+          const searchableText = [
+            article.headline,
+            article.summary,
+            article.sourceName,
+            article.category,
+          ]
+            .join(' ')
+            .toLowerCase();
+
+          return searchableText.includes(
+            query,
+          );
+        },
+      );
+    }, [
+      savedArticles,
+      searchQuery,
+    ]);
+
+  function handleOpen(article: Article) {
+    router.push({
+      pathname: '/article/[id]',
+      params: {
+        id: article.id,
+      },
+    });
+  }
+
+  function toggleSearch() {
+    if (searchOpen) {
+      setSearchQuery('');
+      setSearchOpen(false);
+    } else {
+      setSearchOpen(true);
+    }
+  }
+
+  if (!fontsLoaded) {
+    return (
+      <View style={styles.loadingScreen}>
+        <ActivityIndicator
+          size="small"
+          color={BLUE}
+        />
+      </View>
+    );
+  }
 
   return (
     <SafeAreaView
       style={styles.safe}
       edges={['top']}
     >
+      {/* HEADER */}
       <View style={styles.header}>
-        <Text style={styles.title}>
-          Saved
-        </Text>
+        <View>
+          <Text style={styles.title}>
+            Saved
+          </Text>
 
-        <Text style={styles.subtitle}>
-          {savedArticles.length} briefs kept for later
-        </Text>
+          <Text style={styles.subtitle}>
+            BOOKMARKED SECURITY BRIEFS
+          </Text>
+        </View>
+
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel={
+            searchOpen
+              ? 'Close saved search'
+              : 'Search saved articles'
+          }
+          hitSlop={10}
+          onPress={toggleSearch}
+          style={styles.searchButton}
+        >
+          <Ionicons
+            name={
+              searchOpen
+                ? 'close-outline'
+                : 'search-outline'
+            }
+            size={28}
+            color={BLUE}
+          />
+        </Pressable>
       </View>
+
+      {/* SEARCH */}
+      {searchOpen ? (
+        <View style={styles.searchContainer}>
+          <Ionicons
+            name="search-outline"
+            size={20}
+            color={BLUE}
+          />
+
+          <TextInput
+            autoFocus
+            value={searchQuery}
+            onChangeText={setSearchQuery}
+            placeholder="Search saved stories..."
+            placeholderTextColor={
+              colors.textMuted
+            }
+            style={styles.searchInput}
+            autoCapitalize="none"
+            autoCorrect={false}
+          />
+
+          {searchQuery.length > 0 ? (
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="Clear saved search"
+              hitSlop={8}
+              onPress={() =>
+                setSearchQuery('')
+              }
+            >
+              <Ionicons
+                name="close-circle"
+                size={20}
+                color={BLUE}
+              />
+            </Pressable>
+          ) : null}
+        </View>
+      ) : null}
 
       {state.status === 'loading' ? (
         <LoadingState />
@@ -87,55 +251,82 @@ export default function SavedScreen() {
       {state.status === 'ready' &&
       savedArticles.length === 0 ? (
         <EmptyState
-          message="Tap the bookmark on a brief and it will appear here."
+          message="Tap the bookmark icon on a story in Briefs to keep it here."
         />
       ) : null}
 
       {state.status === 'ready' &&
-      savedArticles.length > 0 ? (
+      savedArticles.length > 0 &&
+      filteredArticles.length === 0 ? (
+        <EmptyState
+          message="No saved stories match your search."
+        />
+      ) : null}
+
+      {state.status === 'ready' &&
+      filteredArticles.length > 0 ? (
         <FlatList
-          data={savedArticles}
+          data={filteredArticles}
           keyExtractor={(item) => item.id}
-          contentContainerStyle={styles.list}
-          ItemSeparatorComponent={() => (
-            <View style={styles.separator} />
-          )}
-          renderItem={({ item }) => (
-            <View style={styles.row}>
-              <View style={styles.rowContent}>
-                <Text style={styles.category}>
-                  {formatCategory(item.category)}
-                </Text>
+          showsVerticalScrollIndicator={false}
+          contentContainerStyle={
+            styles.list
+          }
+          renderItem={({
+            item,
+          }: {
+            item: Article;
+          }) => (
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel={`Open ${item.headline}`}
+              onPress={() => {
+                handleOpen(item);
+              }}
+              style={({ pressed }) => [
+                styles.article,
+                pressed &&
+                  styles.articlePressed,
+              ]}
+            >
+              <View style={styles.articleTop}>
+                <View style={styles.articleMeta}>
+                  <Text style={styles.category}>
+                    {formatCategory(
+                      item.category,
+                    )}
+                  </Text>
 
-                <Text
-                  numberOfLines={2}
-                  style={styles.headline}
+                  <Text style={styles.metaText}>
+                    {formatPublishedAt(item)} ·{' '}
+                    {item.sourceName}
+                  </Text>
+                </View>
+
+                <Pressable
+                  accessibilityRole="button"
+                  accessibilityLabel="Remove saved article"
+                  hitSlop={10}
+                  onPress={(event) => {
+                    event.stopPropagation();
+                    toggleSaved(item.id);
+                  }}
                 >
-                  {item.headline}
-                </Text>
-
-                <Text style={styles.meta}>
-                  {item.sourceName}
-                  {' · '}
-                  {formatDate(item.publishedAt)}
-                </Text>
+                  <Ionicons
+                    name="bookmark"
+                    size={22}
+                    color={BLUE}
+                  />
+                </Pressable>
               </View>
 
-              <Pressable
-                accessibilityRole="button"
-                accessibilityLabel={`Remove ${item.headline} from saved`}
-                onPress={() =>
-                  toggleSaved(item.id)
-                }
-                style={styles.removeButton}
+              <Text
+                style={styles.headline}
+                numberOfLines={3}
               >
-                <Ionicons
-                  name="close"
-                  size={18}
-                  color={colors.textMuted}
-                />
-              </Pressable>
-            </View>
+                {item.headline}
+              </Text>
+            </Pressable>
           )}
         />
       ) : null}
@@ -144,79 +335,122 @@ export default function SavedScreen() {
 }
 
 const styles = StyleSheet.create({
+  loadingScreen: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor:
+      colors.background,
+  },
+
   safe: {
     flex: 1,
-    backgroundColor: colors.background,
+    backgroundColor:
+      colors.background,
   },
 
   header: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    justifyContent: 'space-between',
     paddingHorizontal: spacing.lg,
-    paddingTop: 5,
-    paddingBottom: 14,
+    paddingTop: spacing.md,
+    paddingBottom: spacing.sm,
   },
 
   title: {
     color: colors.textPrimary,
-    fontSize: 20,
+    fontSize: 30,
+    lineHeight: 36,
     fontWeight: '800',
-    letterSpacing: -0.4,
   },
 
   subtitle: {
-    marginTop: 5,
-    color: colors.textMuted,
-    fontSize: 10,
-    fontWeight: '500',
-    letterSpacing: 1.4,
-    textTransform: 'uppercase',
+    color: colors.textPrimary,
+    fontFamily: 'Exo_600SemiBold',
+    fontSize: 11,
+    letterSpacing: 2,
+    marginTop: 7,
+  },
+
+  searchButton: {
+    padding: 4,
+  },
+
+  searchContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginHorizontal: spacing.lg,
+    marginBottom: 10,
+    paddingHorizontal: 12,
+    height: 44,
+    borderWidth: 1,
+    borderColor: BLUE,
+    borderRadius: 22,
+    backgroundColor:
+      colors.surface,
+  },
+
+  searchInput: {
+    flex: 1,
+    color: colors.textPrimary,
+    fontFamily: 'Exo_400Regular',
+    fontSize: 14,
+    marginLeft: 9,
+    paddingVertical: 0,
   },
 
   list: {
     paddingHorizontal: spacing.lg,
     paddingBottom: spacing.xl,
+    gap: 12,
   },
 
-  separator: {
-    height: 1,
-    backgroundColor: colors.border,
+  article: {
+    backgroundColor:
+      colors.surface,
+    borderWidth: 1,
+    borderColor: colors.border,
+    borderRadius: 16,
+    padding: spacing.md,
   },
 
-  row: {
+  articlePressed: {
+    borderColor: BLUE,
+    opacity: 0.9,
+  },
+
+  articleTop: {
     flexDirection: 'row',
     alignItems: 'flex-start',
-    paddingVertical: 15,
+    justifyContent: 'space-between',
   },
 
-  rowContent: {
+  articleMeta: {
     flex: 1,
-    paddingRight: 12,
+    paddingRight: 10,
   },
 
   category: {
-    color: '#4CC9F0',
-    fontSize: 10,
-    fontWeight: '600',
+    color: BLUE,
+    fontFamily: 'Exo_600SemiBold',
+    fontSize: 11,
     letterSpacing: 1.5,
   },
 
+  metaText: {
+    color: colors.textSecondary,
+    fontFamily: 'Exo_400Regular',
+    fontSize: 12,
+    lineHeight: 18,
+    marginTop: 4,
+  },
+
   headline: {
-    marginTop: 6,
     color: colors.textPrimary,
-    fontSize: 16,
-    lineHeight: 21,
-    fontWeight: '700',
-  },
-
-  meta: {
-    marginTop: 6,
-    color: colors.textMuted,
-    fontSize: 10.5,
-  },
-
-  removeButton: {
-    width: 32,
-    height: 32,
-    alignItems: 'center',
-    justifyContent: 'center',
+    fontSize: 20,
+    lineHeight: 26,
+    fontWeight: '800',
+    marginTop: 12,
   },
 });

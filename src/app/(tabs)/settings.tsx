@@ -1,7 +1,15 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
+import {
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { colors, radii, spacing } from '../../theme/theme';
+import { exoFonts } from '../../theme/fonts';
+import { colors, spacing } from '../../theme/theme';
+
+const BLUE = '#4CC9F0';
 
 export default function SettingsScreen() {
   return (
@@ -9,66 +17,83 @@ export default function SettingsScreen() {
       style={styles.safe}
       edges={['top']}
     >
+      {/* HEADER */}
       <View style={styles.header}>
         <Text style={styles.title}>
           Settings
         </Text>
 
         <Text style={styles.subtitle}>
-          SECUBUZZ
+          SECU BUZZ APP SETTINGS
         </Text>
       </View>
 
+      {/* ABOUT */}
       <View style={styles.card}>
-        <Text style={styles.label}>
-          About SecuBuzz
-        </Text>
+        <View style={styles.cardHeader}>
+          <Ionicons
+            name="information-circle-outline"
+            size={22}
+            color={BLUE}
+          />
+
+          <Text style={styles.label}>
+            About
+          </Text>
+        </View>
 
         <Text style={styles.body}>
-          SecuBuzz turns cybersecurity news into
-          short, easy-to-read briefs. Tap any story
-          to open the original article from the
-          publisher.
+          SecuBuzz is a short-form
+          cybersecurity news reader.
+          You see a headline, a brief
+          summary, and a link to the
+          original source. Full articles
+          stay on the publisher's site.
         </Text>
       </View>
 
+      {/* DATA */}
       <View style={styles.card}>
-        <Text style={styles.label}>
-          Bookmarks
-        </Text>
+        <View style={styles.cardHeader}>
+          <Ionicons
+            name="cloud-outline"
+            size={22}
+            color={BLUE}
+          />
+
+          <Text style={styles.label}>
+            Data
+          </Text>
+        </View>
 
         <Text style={styles.body}>
-          Your saved stories are stored locally on
-          this device. No SecuBuzz account is
-          required.
+          News is retrieved from the
+          SecuBuzz cybersecurity feed.
+          Bookmarks are stored locally
+          on this device.
         </Text>
       </View>
 
+      {/* APPEARANCE */}
       <View style={styles.card}>
-        <Text style={styles.label}>
-          AI summaries
-        </Text>
+        <View style={styles.cardHeader}>
+          <Ionicons
+            name="color-palette-outline"
+            size={22}
+            color={BLUE}
+          />
+
+          <Text style={styles.label}>
+            Appearance
+          </Text>
+        </View>
 
         <Text style={styles.body}>
-          Summaries are generated from cybersecurity
-          news sources. Always open the original
-          article for the complete story and context.
+          SecuBuzz uses a dark interface
+          with blue cybersecurity accents.
+          Light mode is not available yet.
         </Text>
       </View>
-
-      <View style={styles.card}>
-        <Text style={styles.label}>
-          Appearance
-        </Text>
-
-        <Text style={styles.body}>
-          SecuBuzz currently uses a dark theme.
-        </Text>
-      </View>
-
-      <Text style={styles.version}>
-        SecuBuzz · Version 1.0.0
-      </Text>
     </SafeAreaView>
   );
 }
@@ -76,58 +101,59 @@ export default function SettingsScreen() {
 const styles = StyleSheet.create({
   safe: {
     flex: 1,
-    backgroundColor: colors.background,
+    backgroundColor:
+      colors.background,
   },
 
   header: {
     paddingHorizontal: spacing.lg,
-    paddingTop: 5,
-    paddingBottom: 14,
+    paddingTop: spacing.md,
+    paddingBottom: spacing.lg,
   },
 
   title: {
     color: colors.textPrimary,
-    fontSize: 20,
+    fontSize: 30,
+    lineHeight: 36,
     fontWeight: '800',
-    letterSpacing: -0.4,
   },
 
   subtitle: {
-    marginTop: 5,
-    color: colors.textMuted,
-    fontSize: 10,
-    fontWeight: '500',
-    letterSpacing: 1.4,
+    color: BLUE,
+    fontFamily: 'Exo_600SemiBold',
+    fontSize: 11,
+    letterSpacing: 2,
+    marginTop: 7,
   },
 
   card: {
     marginHorizontal: spacing.lg,
     marginBottom: spacing.md,
-    padding: spacing.lg,
-    backgroundColor: colors.surface,
-    borderRadius: radii.lg,
+    backgroundColor:
+      colors.surface,
     borderWidth: 1,
     borderColor: colors.border,
+    borderRadius: 16,
+    padding: spacing.lg,
+  },
+
+  cardHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 9,
   },
 
   label: {
-    color: colors.textPrimary,
+    color: BLUE,
+    fontFamily: 'Exo_600SemiBold',
     fontSize: 15,
-    fontWeight: '700',
+    letterSpacing: 1.2,
+    marginLeft: 8,
   },
 
   body: {
-    marginTop: 7,
     color: colors.textSecondary,
-    fontSize: 14,
-    lineHeight: 21,
-  },
-
-  version: {
-    marginTop: 'auto',
-    marginBottom: spacing.lg,
-    textAlign: 'center',
-    color: colors.textMuted,
-    fontSize: 11,
+    fontSize: 15,
+    lineHeight: 22,
   },
 });

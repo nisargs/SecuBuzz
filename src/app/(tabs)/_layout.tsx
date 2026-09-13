@@ -1,33 +1,47 @@
 import { Ionicons } from '@expo/vector-icons';
 import { Tabs } from 'expo-router';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { colors } from '../../theme/theme';
 
-export default function TabLayout() {
+const BLUE = '#4CC9F0';
+
+export default function TabsLayout() {
+  const insets = useSafeAreaInsets();
+
+  const bottomInset = Math.max(
+    insets.bottom,
+    8,
+  );
+
   return (
     <Tabs
       screenOptions={{
         headerShown: false,
 
-        tabBarActiveTintColor: colors.textPrimary,
-        tabBarInactiveTintColor: colors.textMuted,
+        tabBarActiveTintColor: BLUE,
+
+        tabBarInactiveTintColor:
+          colors.textMuted,
 
         tabBarStyle: {
-          backgroundColor: colors.background,
-          borderTopColor: colors.border,
+          backgroundColor:
+            colors.background,
+          borderTopColor: `${BLUE}45`,
           borderTopWidth: 1,
-          height: 72,
-          paddingTop: 8,
-          paddingBottom: 8,
+          height: 58 + bottomInset,
+          paddingTop: 6,
+          paddingBottom: bottomInset,
         },
 
         tabBarLabelStyle: {
           fontSize: 11,
-          fontWeight: '600',
+          fontWeight: '700',
+          marginTop: 1,
         },
 
         tabBarItemStyle: {
-          paddingVertical: 2,
+          height: 50,
         },
       }}
     >
@@ -35,10 +49,18 @@ export default function TabLayout() {
         name="index"
         options={{
           title: 'Briefs',
-          tabBarIcon: ({ color, focused }) => (
+
+          tabBarIcon: ({
+            focused,
+            color,
+          }) => (
             <Ionicons
-              name={focused ? 'newspaper' : 'newspaper-outline'}
-              size={21}
+              name={
+                focused
+                  ? 'newspaper'
+                  : 'newspaper-outline'
+              }
+              size={22}
               color={color}
             />
           ),
@@ -49,10 +71,18 @@ export default function TabLayout() {
         name="saved"
         options={{
           title: 'Saved',
-          tabBarIcon: ({ color, focused }) => (
+
+          tabBarIcon: ({
+            focused,
+            color,
+          }) => (
             <Ionicons
-              name={focused ? 'bookmark' : 'bookmark-outline'}
-              size={21}
+              name={
+                focused
+                  ? 'bookmark'
+                  : 'bookmark-outline'
+              }
+              size={22}
               color={color}
             />
           ),
@@ -63,25 +93,30 @@ export default function TabLayout() {
         name="settings"
         options={{
           title: 'Settings',
-          tabBarIcon: ({ color, focused }) => (
+
+          tabBarIcon: ({
+            focused,
+            color,
+          }) => (
             <Ionicons
-              name={focused ? 'settings' : 'settings-outline'}
-              size={21}
+              name={
+                focused
+                  ? 'settings'
+                  : 'settings-outline'
+              }
+              size={22}
               color={color}
             />
           ),
         }}
       />
 
-      {/* Future release:
-          Threats remains available as a route but is hidden
-          from the bottom navigation for now. */}
-      {/* <Tabs.Screen
+      <Tabs.Screen
         name="threats"
         options={{
           href: null,
         }}
-      /> */}
+      />
     </Tabs>
   );
 }

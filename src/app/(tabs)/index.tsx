@@ -9,6 +9,7 @@ import {
   ScrollView,
   StyleSheet,
   Text,
+  TextInput,
   View,
   type NativeScrollEvent,
   type NativeSyntheticEvent,
@@ -30,6 +31,8 @@ import {
 } from '../../models/article';
 import { exoFonts } from '../../theme/fonts';
 import { colors, spacing } from '../../theme/theme';
+
+const BLUE = '#4CC9F0';
 
 const PROGRESS_SEGMENTS = 5;
 
@@ -114,25 +117,29 @@ export default function FeedScreen() {
   const [now, setNow] =
     useState(() => new Date());
 
+  const [searchOpen, setSearchOpen] =
+    useState(false);
+
+  const [searchQuery, setSearchQuery] =
+    useState('');
+
   const listRef =
     useRef<FlatList<Article>>(null);
 
   /*
-   * Load the news feed.
+   * Load articles.
    */
   useEffect(() => {
     void load();
   }, [load]);
 
   /*
-   * Keep the header clock current.
-   *
-   * It refreshes every 30 seconds.
+   * Update the header clock every second.
    */
   useEffect(() => {
     const timer = setInterval(() => {
       setNow(new Date());
-    }, 30_000);
+    }, 1000);
 
     return () => {
       clearInterval(timer);
@@ -140,8 +147,7 @@ export default function FeedScreen() {
   }, []);
 
   /*
-   * Sort all articles by their actual publication
-   * timestamp, newest first.
+   * Sort newest → oldest.
    */
   const articles = useMemo(() => {
     if (state.status !== 'ready') {
@@ -172,9 +178,9 @@ export default function FeedScreen() {
   }, [state]);
 
   /*
-   * Apply the selected category filter.
+   * Category filtering.
    */
-  const filteredArticles = useMemo(() => {
+  const categoryArticles = useMemo(() => {
     if (filter === 'ALL') {
       return articles;
     }
@@ -186,10 +192,45 @@ export default function FeedScreen() {
   }, [articles, filter]);
 
   /*
-   * Progressive loading.
+   * Search filtering.
    *
-   * We start with 10 and add another 10 as
-   * the user approaches the end.
+   * Searches:
+   * - headline
+   * - summary
+   * - source
+   * - category
+   */
+  const filteredArticles = useMemo(() => {
+    const query =
+      searchQuery.trim().toLowerCase();
+
+    if (!query) {
+      return categoryArticles;
+    }
+
+    return categoryArticles.filter(
+      (article) => {
+        const searchableText = [
+          article.headline,
+          article.summary,
+          article.sourceName,
+          article.category,
+        ]
+          .join(' ')
+          .toLowerCase();
+
+        return searchableText.includes(
+          query,
+        );
+      },
+    );
+  }, [
+    categoryArticles,
+    searchQuery,
+  ]);
+
+  /*
+   * Progressive loading.
    */
   const visibleArticles = useMemo(
     () =>
@@ -204,7 +245,8 @@ export default function FeedScreen() {
   );
 
   /*
-   * Reset the feed when the user changes category.
+   * Reset feed position when the category
+   * or search changes.
    */
   useEffect(() => {
     setCurrentIndex(0);
@@ -214,10 +256,13 @@ export default function FeedScreen() {
       offset: 0,
       animated: false,
     });
-  }, [filter]);
+  }, [
+    filter,
+    searchQuery,
+  ]);
 
   /*
-   * Pull-to-refresh.
+   * Pull to refresh.
    */
   const onRefresh = useCallback(
     async () => {
@@ -241,8 +286,7 @@ export default function FeedScreen() {
   );
 
   /*
-   * Called after the user finishes swiping
-   * to the next article.
+   * Article swipe finished.
    */
   const handleScrollEnd = useCallback(
     (
@@ -262,8 +306,8 @@ export default function FeedScreen() {
       setCurrentIndex(index);
 
       /*
-       * Load another batch before the user
-       * reaches the end.
+       * Load another batch before reaching
+       * the end.
        */
       if (
         index >=
@@ -285,7 +329,7 @@ export default function FeedScreen() {
   );
 
   /*
-   * Additional safety net for FlatList.
+   * FlatList safety net.
    */
   const handleEndReached = useCallback(
     () => {
@@ -300,18 +344,23 @@ export default function FeedScreen() {
   );
 
   /*
-   * Don't render the actual screen until
-   * the Exo fonts have loaded.
-   *
-   * All hooks above still run on every render,
-   * so React's hook order remains stable.
+   * Toggle search mode.
    */
+  const toggleSearch = () => {
+    if (searchOpen) {
+      setSearchQuery('');
+      setSearchOpen(false);
+    } else {
+      setSearchOpen(true);
+    }
+  };
+
   if (!fontsLoaded) {
     return (
       <View style={styles.fontLoading}>
         <ActivityIndicator
           size="small"
-          color="#4CC9F0"
+          color={BLUE}
         />
       </View>
     );
@@ -322,9 +371,7 @@ export default function FeedScreen() {
       style={styles.safe}
       edges={['top']}
     >
-      {/* ================================
-          HEADER
-          ================================ */}
+      {/* HEADER */}
       <View style={styles.header}>
         <View style={styles.headerLeft}>
           <View style={styles.titleRow}>
@@ -344,21 +391,70 @@ export default function FeedScreen() {
 
         <Pressable
           accessibilityRole="button"
-          accessibilityLabel="Search"
+          accessibilityLabel={
+            searchOpen
+              ? 'Close search'
+              : 'Search articles'
+          }
           hitSlop={10}
+          onPress={toggleSearch}
           style={styles.searchButton}
         >
           <Ionicons
-            name="search-outline"
-            size={28}
-            color={colors.textPrimary}
+            name={
+              searchOpen
+                ? 'close-outline'
+                : 'search-outline'
+            }
+            size={29}
+            color={BLUE}
           />
         </Pressable>
       </View>
 
-      {/* ================================
-          CATEGORY FILTERS
-          ================================ */}
+      {/* SEARCH */}
+      {searchOpen ? (
+        <View style={styles.searchContainer}>
+          <Ionicons
+            name="search-outline"
+            size={20}
+            color={BLUE}
+          />
+
+          <TextInput
+            autoFocus
+            value={searchQuery}
+            onChangeText={setSearchQuery}
+            placeholder="Search cybersecurity news..."
+            placeholderTextColor={
+              colors.textMuted
+            }
+            style={styles.searchInput}
+            returnKeyType="search"
+            autoCapitalize="none"
+            autoCorrect={false}
+          />
+
+          {searchQuery.length > 0 ? (
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="Clear search"
+              hitSlop={8}
+              onPress={() =>
+                setSearchQuery('')
+              }
+            >
+              <Ionicons
+                name="close-circle"
+                size={20}
+                color={BLUE}
+              />
+            </Pressable>
+          ) : null}
+        </View>
+      ) : null}
+
+      {/* CATEGORY FILTERS */}
       <ScrollView
         horizontal
         showsHorizontalScrollIndicator={false}
@@ -400,12 +496,7 @@ export default function FeedScreen() {
         })}
       </ScrollView>
 
-      {/* ================================
-          FIVE PROGRESS RECTANGLES
-          
-          No 01/10 counter.
-          They simply indicate position.
-          ================================ */}
+      {/* PROGRESS */}
       <View style={styles.progressRow}>
         {Array.from({
           length: PROGRESS_SEGMENTS,
@@ -428,9 +519,7 @@ export default function FeedScreen() {
         })}
       </View>
 
-      {/* ================================
-          ARTICLE FEED
-          ================================ */}
+      {/* FEED */}
       <View
         style={styles.feedContainer}
         onLayout={(event) => {
@@ -454,7 +543,11 @@ export default function FeedScreen() {
         {state.status === 'ready' &&
         filteredArticles.length === 0 ? (
           <EmptyState
-            message="No stories in this category right now."
+            message={
+              searchQuery
+                ? 'No stories match your search.'
+                : 'No stories in this category right now.'
+            }
           />
         ) : null}
 
@@ -507,8 +600,8 @@ export default function FeedScreen() {
                 onRefresh={() => {
                   void onRefresh();
                 }}
-                tintColor="#4CC9F0"
-                colors={['#4CC9F0']}
+                tintColor={BLUE}
+                colors={[BLUE]}
                 progressBackgroundColor={
                   colors.surface
                 }
@@ -518,12 +611,7 @@ export default function FeedScreen() {
         ) : null}
       </View>
 
-      {/* ================================
-          VISIBLE REFRESH STATE
-          
-          This appears while the feed is
-          actually refreshing.
-          ================================ */}
+      {/* REFRESH INDICATOR */}
       {refreshing ? (
         <View
           pointerEvents="none"
@@ -534,7 +622,7 @@ export default function FeedScreen() {
           >
             <ActivityIndicator
               size="small"
-              color="#4CC9F0"
+              color={BLUE}
             />
           </View>
         </View>
@@ -604,6 +692,29 @@ const styles = StyleSheet.create({
     marginLeft: 8,
   },
 
+  searchContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginHorizontal: spacing.lg,
+    marginBottom: 5,
+    paddingHorizontal: 12,
+    height: 44,
+    borderWidth: 1,
+    borderColor: BLUE,
+    borderRadius: 22,
+    backgroundColor:
+      colors.surface,
+  },
+
+  searchInput: {
+    flex: 1,
+    color: colors.textPrimary,
+    fontFamily: 'Exo_400Regular',
+    fontSize: 14,
+    marginLeft: 9,
+    paddingVertical: 0,
+  },
+
   chipsScroll: {
     flexGrow: 0,
   },
@@ -623,10 +734,8 @@ const styles = StyleSheet.create({
   },
 
   chipSelected: {
-    borderColor:
-      colors.textPrimary,
-    backgroundColor:
-      colors.surface,
+    borderColor: BLUE,
+    backgroundColor: '#4CC9F018',
   },
 
   chipText: {
@@ -636,7 +745,8 @@ const styles = StyleSheet.create({
   },
 
   chipTextSelected: {
-    color: colors.textPrimary,
+    color: BLUE,
+    fontFamily: 'Exo_600SemiBold',
   },
 
   progressRow: {
@@ -654,7 +764,7 @@ const styles = StyleSheet.create({
   },
 
   progressSegmentActive: {
-    backgroundColor: '#4CC9F0',
+    backgroundColor: BLUE,
   },
 
   feedContainer: {
@@ -677,5 +787,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor:
       colors.surface,
+    borderWidth: 1,
+    borderColor: BLUE,
   },
 });

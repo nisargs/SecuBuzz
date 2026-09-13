@@ -12,6 +12,8 @@ import { colors, spacing } from '../theme/theme';
 import { formatPublishedAt } from '../utils/formatPublishedAt';
 import { openArticle } from '../utils/openArticle';
 
+const BLUE = '#4CC9F0';
+
 type ArticleCardProps = {
   article: Article;
   isSaved: boolean;
@@ -56,9 +58,7 @@ export function ArticleCard({
 
   return (
     <View style={styles.card}>
-      {/* =================================
-          CATEGORY + BOOKMARK
-          ================================= */}
+      {/* CATEGORY + BOOKMARK */}
       <View style={styles.metaTopRow}>
         <Text style={styles.category}>
           {formatCategory(article.category)}
@@ -86,43 +86,39 @@ export function ArticleCard({
             size={24}
             color={
               isSaved
-                ? colors.textPrimary
+                ? BLUE
                 : colors.textSecondary
             }
           />
         </Pressable>
       </View>
 
-      {/* =================================
-          PUBLICATION DATE + SOURCE
-          ================================= */}
+      {/* DATE + SOURCE */}
       <Text style={styles.publicationMeta}>
         {formatPublishedAt(article)} ·{' '}
         {article.sourceName}
       </Text>
 
-      {/* =================================
-          HEADLINE
-          ================================= */}
-      <Text style={styles.headline}>
+      {/* HEADLINE */}
+      <Text
+        style={styles.headline}
+        numberOfLines={4}
+      >
         {article.headline}
       </Text>
 
-      {/* =================================
-          CYAN DIVIDER
-          ================================= */}
+      {/* DIVIDER */}
       <View style={styles.divider} />
 
-      {/* =================================
-          SUMMARY
-          ================================= */}
-      <Text style={styles.summary}>
+      {/* SUMMARY */}
+      <Text
+        style={styles.summary}
+        numberOfLines={8}
+      >
         {article.summary}
       </Text>
 
-      {/* =================================
-          ORIGINAL ARTICLE LINK
-          ================================= */}
+      {/* FIXED FOOTER */}
       <View style={styles.footer}>
         <Text
           style={styles.footerPreview}
@@ -148,8 +144,8 @@ export function ArticleCard({
 
           <Ionicons
             name="arrow-forward"
-            size={25}
-            color="#FFFFFF"
+            size={24}
+            color={BLUE}
           />
         </Pressable>
       </View>
@@ -160,11 +156,12 @@ export function ArticleCard({
 const styles = StyleSheet.create({
   card: {
     flex: 1,
+    position: 'relative',
     backgroundColor:
       colors.background,
     paddingHorizontal: spacing.lg,
     paddingTop: spacing.md,
-    paddingBottom: spacing.md,
+    paddingBottom: 105,
   },
 
   metaTopRow: {
@@ -174,7 +171,7 @@ const styles = StyleSheet.create({
   },
 
   category: {
-    color: '#4CC9F0',
+    color: BLUE,
     fontFamily: 'Exo_600SemiBold',
     fontSize: 11,
     letterSpacing: 1.7,
@@ -194,8 +191,8 @@ const styles = StyleSheet.create({
 
   headline: {
     color: colors.textPrimary,
-    fontSize: 26,
-    lineHeight: 33,
+    fontSize: 25,
+    lineHeight: 32,
     fontWeight: '800',
     marginTop: spacing.lg,
   },
@@ -203,28 +200,34 @@ const styles = StyleSheet.create({
   divider: {
     width: 64,
     height: 3,
-    backgroundColor: '#4CC9F0',
+    backgroundColor: BLUE,
     marginTop: spacing.lg,
     marginBottom: spacing.lg,
   },
 
   summary: {
     color: colors.textSecondary,
-    fontSize: 17,
-    lineHeight: 27,
+    fontSize: 16,
+    lineHeight: 25,
+    flexShrink: 1,
   },
 
   footer: {
-    marginTop: 'auto',
-    paddingTop: spacing.lg,
+    position: 'absolute',
+    left: spacing.lg,
+    right: spacing.lg,
+    bottom: 10,
+    paddingTop: 8,
+    backgroundColor:
+      colors.background,
   },
 
   footerPreview: {
     color: colors.textPrimary,
-    fontSize: 15,
-    lineHeight: 20,
+    fontSize: 14,
+    lineHeight: 18,
     fontWeight: '700',
-    marginBottom: 8,
+    marginBottom: 7,
   },
 
   readMoreRow: {
@@ -233,14 +236,14 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     borderTopWidth: 1,
     borderTopColor: colors.border,
-    paddingTop: 10,
+    paddingTop: 9,
   },
 
   readMoreText: {
-    color: '#4CC9F0',
+    color: BLUE,
     fontFamily: 'Exo_600SemiBold',
-    fontSize: 12,
-    letterSpacing: 1.1,
+    fontSize: 11,
+    letterSpacing: 1.05,
     flex: 1,
     paddingRight: 10,
   },
