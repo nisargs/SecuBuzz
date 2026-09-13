@@ -4,41 +4,99 @@ import type { ArticleRepository } from './ArticleRepository';
 const FEED_URL =
   'https://raw.githubusercontent.com/nisargs/SecuBuzz/main/feed.json';
 
-export class RemoteArticleRepository implements ArticleRepository {
-  async getArticles(): Promise<Article[]> {
-    /**
-     * Cache-busting query parameter.
-     *
-     * This prevents the device/network from repeatedly
-     * serving an older copy of feed.json.
-     */
-    const url = `${FEED_URL}?t=${Date.now()}`;
+function normalizeSeverity(
+  value: unknown,
+): Article['severity'] {
+  const severity = String(value ?? '').toUpperCase();
 
-    const response = await fetch(url);
+  if (
+    severity === 'LOW' ||
+    severity === 'MEDIUM' ||
+    severity === 'HIGH' ||
+    severity === 'CRITICAL'
+  ) {
+    return severity;
+  }
+
+  return 'LOW';
+}
+
+function isCategory(
+  value: unknown,
+): value is Article['category'] {
+  return (
+    value === 'BREACH' ||
+    value === 'RANSOMWARE' ||
+    value === 'CVE' ||
+    value === 'VULNERABILITY' ||
+    value === 'NATION_STATE' ||
+    value === 'GENERAL'
+  );
+}
+
+function normalizeArticle(
+  value: unknown,
+): Article | null {
+  if (
+    typeof value !== 'object' ||
+    value === null
+  ) {
+    return null;
+  }
+
+  const record = value as Record<string, unknown>;
+
+  if (
+    typeof record.id !== 'string' ||
+    typeof record.headline !== 'string' ||
+    typeof record.summary !== 'string' ||
+    typeof record.sourceName !== 'string' ||
+    typeof record.sourceUrl !== 'string' ||
+    !isCategory(record.category) ||
+    typeof record.publishedAt !== 'string'
+  ) {
+    return null;
+  }
+
+  /*
+ * Only fields required by the Article model are copied.
+ *
+ * Any unknown fields from the remote feed are ignored.
+ */
+  return {
+    id: record.id,
+    headline: record.headline,
+    summary: record.summary,
+    sourceName: record.sourceName,
+    sourceUrl: record.sourceUrl,
+    category: record.category,
+    publishedAt: record.publishedAt,
+    severity: normalizeSeverity(record.severity),
+  };
+}
+
+export class RemoteArticleRepository
+  implements ArticleRepository
+{
+  async getArticles(): Promise<Article[]> {
+    const response = await fetch(FEED_URL);
 
     if (!response.ok) {
-      throw new Error(
-        `Failed to fetch feed (${response.status})`
-      );
+      throw new Error('Failed to fetch feed');
     }
 
-    const articles = (await response.json()) as Article[];
+    const raw: unknown = await response.json();
 
-    /**
-     * Sort again on the device.
-     *
-     * Even if feed.json is correctly sorted, the app
-     * protects itself against incorrectly ordered data.
-     */
-    return [...articles].sort((a, b) => {
-      const aTime = Date.parse(a.publishedAt || '');
-      const bTime = Date.parse(b.publishedAt || '');
+    if (!Array.isArray(raw)) {
+      throw new Error('Invalid feed format');
+    }
 
-      const safeA = Number.isNaN(aTime) ? 0 : aTime;
-      const safeB = Number.isNaN(bTime) ? 0 : bTime;
-
-      return safeB - safeA;
-    });
+    return raw
+      .map(normalizeArticle)
+      .filter(
+        (article): article is Article =>
+          article !== null,
+      );
   }
 
   lastResultFromCache(): boolean {

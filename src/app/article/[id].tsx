@@ -1,7 +1,8 @@
 import { Ionicons } from '@expo/vector-icons';
-import { useLocalSearchParams, useRouter } from 'expo-router';
-import { useEffect, useMemo } from 'react';
+import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
+import { useEffect } from 'react';
 import {
+  ActivityIndicator,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -10,32 +11,49 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import {
+  ErrorState,
+  LoadingState,
+} from '../../components/ScreenStates';
 import { useSavedArticles } from '../../context/SavedArticlesContext';
 import { useArticles } from '../../hooks/useArticles';
-import { colors, radii, spacing } from '../../theme/theme';
-import { categoryLabel } from '../../utils/categoryLabel';
-import { formatRelativeTime } from '../../utils/relativeTime';
+import type { Article } from '../../models/article';
+import { colors, spacing } from '../../theme/theme';
+import { formatPublishedAt } from '../../utils/formatPublishedAt';
 import { openArticle } from '../../utils/openArticle';
 
 const BLUE = '#4CC9F0';
 
+function formatCategory(
+  category: Article['category'],
+): string {
+  if (category === 'CVE') {
+    return 'CVE';
+  }
+
+  if (category === 'NATION_STATE') {
+    return 'NATION STATE';
+  }
+
+  return category;
+}
+
 export default function ArticleDetailScreen() {
   const router = useRouter();
 
-  const params = useLocalSearchParams<{
-    id: string;
-  }>();
+  const { id } =
+    useLocalSearchParams<{
+      id: string;
+    }>();
 
   const { state, load } = useArticles();
 
   const {
+    savedArticles,
+    isHydrated,
     isSaved,
     toggleSaved,
   } = useSavedArticles();
-
-  const articleId = Array.isArray(params.id)
-    ? params.id[0]
-    : params.id;
 
   useEffect(() => {
     if (state.status === 'loading') {
@@ -43,141 +61,83 @@ export default function ArticleDetailScreen() {
     }
   }, [load, state.status]);
 
-  const article = useMemo(() => {
-    if (state.status !== 'ready') {
-      return null;
-    }
+  const liveArticle =
+    state.status === 'ready'
+      ? state.articles.find(
+          (article) => article.id === id,
+        )
+      : undefined;
 
+  /*
+   * IMPORTANT:
+   *
+   * If the article has disappeared from feed.json,
+   * use the permanent saved snapshot instead.
+   */
+  const savedArticle = savedArticles.find(
+    (article) => article.id === id,
+  );
+
+  const article = liveArticle ?? savedArticle;
+
+  if (!isHydrated) {
     return (
-      state.articles.find(
-        (item) => item.id === articleId,
-      ) ?? null
-    );
-  }, [state, articleId]);
-
-  if (state.status === 'loading') {
-    return (
-      <SafeAreaView
-        style={styles.safe}
-        edges={['top', 'bottom']}
-      >
-        <View style={styles.header}>
-          <Pressable
-            onPress={() => router.back()}
-            hitSlop={10}
-            style={styles.headerButton}
-          >
-            <Ionicons
-              name="arrow-back"
-              size={23}
-              color={BLUE}
-            />
-          </Pressable>
-
-          <Text style={styles.headerTitle}>
-            SecuBuzz
-          </Text>
-
-          <View style={styles.headerSpacer} />
-        </View>
-
-        <View style={styles.center}>
-          <Text style={styles.loadingText}>
-            Loading story...
-          </Text>
+      <SafeAreaView style={styles.safe}>
+        <View style={styles.loading}>
+          <ActivityIndicator
+            size="small"
+            color={BLUE}
+          />
         </View>
       </SafeAreaView>
     );
   }
 
-  if (state.status === 'error') {
+  if (
+    article === undefined &&
+    state.status === 'loading'
+  ) {
     return (
-      <SafeAreaView
-        style={styles.safe}
-        edges={['top', 'bottom']}
-      >
-        <View style={styles.header}>
+      <SafeAreaView style={styles.safe}>
+        <LoadingState />
+      </SafeAreaView>
+    );
+  }
+
+  if (
+    article === undefined &&
+    state.status === 'error'
+  ) {
+    return (
+      <SafeAreaView style={styles.safe}>
+        <ErrorState
+          message={state.message}
+          onRetry={() => void load()}
+        />
+      </SafeAreaView>
+    );
+  }
+
+  if (article === undefined) {
+    return (
+      <SafeAreaView style={styles.safe}>
+        <View style={styles.notFound}>
+          <Text style={styles.notFoundTitle}>
+            Article unavailable
+          </Text>
+
+          <Text style={styles.notFoundText}>
+            This security brief is no longer available.
+          </Text>
+
           <Pressable
             onPress={() => router.back()}
-            hitSlop={10}
-            style={styles.headerButton}
+            style={styles.backButton}
           >
-            <Ionicons
-              name="arrow-back"
-              size={23}
-              color={BLUE}
-            />
-          </Pressable>
-
-          <Text style={styles.headerTitle}>
-            SecuBuzz
-          </Text>
-
-          <View style={styles.headerSpacer} />
-        </View>
-
-        <View style={styles.center}>
-          <Text style={styles.errorTitle}>
-            Could not load story
-          </Text>
-
-          <Text style={styles.errorText}>
-            {state.message}
-          </Text>
-
-          <Pressable
-            onPress={() => {
-              void load();
-            }}
-            style={({ pressed }) => [
-              styles.retryButton,
-              pressed && styles.retryButtonPressed,
-            ]}
-          >
-            <Text style={styles.retryButtonText}>
-              TRY AGAIN
+            <Text style={styles.backButtonText}>
+              GO BACK
             </Text>
           </Pressable>
-        </View>
-      </SafeAreaView>
-    );
-  }
-
-  if (!article) {
-    return (
-      <SafeAreaView
-        style={styles.safe}
-        edges={['top', 'bottom']}
-      >
-        <View style={styles.header}>
-          <Pressable
-            onPress={() => router.back()}
-            hitSlop={10}
-            style={styles.headerButton}
-          >
-            <Ionicons
-              name="arrow-back"
-              size={23}
-              color={BLUE}
-            />
-          </Pressable>
-
-          <Text style={styles.headerTitle}>
-            SecuBuzz
-          </Text>
-
-          <View style={styles.headerSpacer} />
-        </View>
-
-        <View style={styles.center}>
-          <Text style={styles.errorTitle}>
-            Story unavailable
-          </Text>
-
-          <Text style={styles.errorText}>
-            This story could not be found in the
-            current feed.
-          </Text>
         </View>
       </SafeAreaView>
     );
@@ -188,18 +148,26 @@ export default function ArticleDetailScreen() {
   return (
     <SafeAreaView
       style={styles.safe}
-      edges={['top', 'bottom']}
+      edges={['top']}
     >
+      <Stack.Screen
+        options={{
+          headerShown: false,
+        }}
+      />
+
       <View style={styles.header}>
         <Pressable
-          onPress={() => router.back()}
+          accessibilityRole="button"
+          accessibilityLabel="Go back"
           hitSlop={10}
+          onPress={() => router.back()}
           style={styles.headerButton}
         >
           <Ionicons
             name="arrow-back"
-            size={23}
-            color={BLUE}
+            size={24}
+            color={colors.textPrimary}
           />
         </Pressable>
 
@@ -208,15 +176,17 @@ export default function ArticleDetailScreen() {
         </Text>
 
         <Pressable
-          onPress={() => toggleSaved(article.id)}
-          hitSlop={10}
-          style={styles.headerButton}
           accessibilityRole="button"
           accessibilityLabel={
             saved
               ? 'Remove bookmark'
-              : 'Save story'
+              : 'Save article'
           }
+          hitSlop={10}
+          onPress={() =>
+            toggleSaved(article.id)
+          }
+          style={styles.headerButton}
         >
           <Ionicons
             name={
@@ -224,43 +194,36 @@ export default function ArticleDetailScreen() {
                 ? 'bookmark'
                 : 'bookmark-outline'
             }
-            size={23}
-            color={BLUE}
+            size={24}
+            color={
+              saved
+                ? BLUE
+                : colors.textPrimary
+            }
           />
         </Pressable>
       </View>
 
       <ScrollView
         showsVerticalScrollIndicator={false}
-        contentContainerStyle={styles.content}
+        contentContainerStyle={
+          styles.content
+        }
       >
-        <View style={styles.category}>
-          <Text style={styles.categoryText}>
-            {categoryLabel(article.category)}
-          </Text>
-        </View>
+        <Text style={styles.category}>
+          {formatCategory(article.category)}
+        </Text>
+
+        <Text style={styles.meta}>
+          {formatPublishedAt(article)} ·{' '}
+          {article.sourceName}
+        </Text>
 
         <Text style={styles.headline}>
           {article.headline}
         </Text>
 
-        <View style={styles.metaRow}>
-          <Text style={styles.source}>
-            {article.sourceName}
-          </Text>
-
-          <Text style={styles.dot}>
-            ·
-          </Text>
-
-          <Text style={styles.date}>
-            {formatRelativeTime(
-              article.publishedAt,
-            )}
-          </Text>
-        </View>
-
-        <View style={styles.divider} />
+        <View style={styles.accent} />
 
         <Text style={styles.briefLabel}>
           60-WORD SECURITY BRIEF
@@ -270,41 +233,38 @@ export default function ArticleDetailScreen() {
           {article.summary}
         </Text>
 
-        <View style={styles.originalSection}>
-          <Text style={styles.originalLabel}>
-            ORIGINAL SOURCE
-          </Text>
+        <View style={styles.divider} />
 
-          <Text style={styles.originalSource}>
-            {article.sourceName}
-          </Text>
-
-          <Text style={styles.originalDescription}>
-            Read the complete article from the
-            original publisher.
-          </Text>
-
-          <Pressable
-            onPress={() => {
-              void openArticle(article.sourceUrl);
-            }}
-            style={({ pressed }) => [
-              styles.originalButton,
-              pressed &&
-                styles.originalButtonPressed,
-            ]}
-          >
-            <Text style={styles.originalButtonText}>
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel="Read original article"
+          onPress={() => {
+            void openArticle(
+              article.sourceUrl,
+            );
+          }}
+          style={({ pressed }) => [
+            styles.originalButton,
+            pressed &&
+              styles.originalButtonPressed,
+          ]}
+        >
+          <View>
+            <Text style={styles.originalLabel}>
               READ ORIGINAL
             </Text>
 
-            <Ionicons
-              name="open-outline"
-              size={17}
-              color={colors.background}
-            />
-          </Pressable>
-        </View>
+            <Text style={styles.originalSource}>
+              {article.sourceName}
+            </Text>
+          </View>
+
+          <Ionicons
+            name="open-outline"
+            size={20}
+            color={BLUE}
+          />
+        </Pressable>
       </ScrollView>
     </SafeAreaView>
   );
@@ -316,31 +276,32 @@ const styles = StyleSheet.create({
     backgroundColor: colors.background,
   },
 
+  loading: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
   header: {
-    height: 58,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingHorizontal: spacing.lg,
+    paddingVertical: spacing.md,
     borderBottomWidth: 1,
     borderBottomColor: colors.border,
   },
 
   headerButton: {
-    width: 42,
-    height: 42,
+    width: 36,
+    height: 36,
     alignItems: 'center',
     justifyContent: 'center',
   },
 
-  headerSpacer: {
-    width: 42,
-    height: 42,
-  },
-
   headerTitle: {
     color: colors.textPrimary,
-    fontSize: 17,
+    fontSize: 18,
     fontWeight: '800',
   },
 
@@ -351,172 +312,112 @@ const styles = StyleSheet.create({
   },
 
   category: {
-    alignSelf: 'flex-start',
-    borderWidth: 1,
-    borderColor: BLUE,
-    borderRadius: radii.pill,
-    backgroundColor: `${BLUE}18`,
-    paddingHorizontal: 11,
-    paddingVertical: 5,
-    marginBottom: spacing.md,
+    color: BLUE,
+    fontSize: 12,
+    fontWeight: '700',
+    letterSpacing: 1.6,
   },
 
-  categoryText: {
-    color: BLUE,
-    fontSize: 11,
-    fontWeight: '800',
-    letterSpacing: 0.8,
-    textTransform: 'uppercase',
+  meta: {
+    color: colors.textMuted,
+    fontSize: 13,
+    lineHeight: 19,
+    marginTop: 7,
   },
 
   headline: {
     color: colors.textPrimary,
-    fontSize: 29,
-    lineHeight: 36,
+    fontSize: 30,
+    lineHeight: 38,
     fontWeight: '800',
+    marginTop: 18,
   },
 
-  metaRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 6,
-    marginTop: spacing.md,
+  accent: {
+    width: 42,
+    height: 2,
+    backgroundColor: BLUE,
+    marginTop: 18,
   },
 
-  source: {
+  briefLabel: {
     color: colors.textPrimary,
-    fontSize: 14,
+    fontSize: 11,
     fontWeight: '700',
+    letterSpacing: 1.7,
+    marginTop: 26,
   },
 
-  dot: {
-    color: colors.textMuted,
-    fontSize: 13,
-  },
-
-  date: {
-    color: colors.textMuted,
-    fontSize: 13,
+  summary: {
+    color: colors.textSecondary,
+    fontSize: 16,
+    lineHeight: 25,
+    marginTop: 10,
   },
 
   divider: {
     height: 1,
     backgroundColor: colors.border,
-    marginVertical: spacing.xl,
-  },
-
-  briefLabel: {
-    color: BLUE,
-    fontSize: 11,
-    fontWeight: '800',
-    letterSpacing: 1,
-    marginBottom: spacing.md,
-  },
-
-  summary: {
-    color: colors.textSecondary,
-    fontSize: 18,
-    lineHeight: 28,
-  },
-
-  originalSection: {
-    marginTop: spacing.xl,
-    padding: spacing.lg,
-    backgroundColor: colors.surface,
-    borderWidth: 1,
-    borderColor: colors.border,
-    borderRadius: radii.lg,
-  },
-
-  originalLabel: {
-    color: colors.textMuted,
-    fontSize: 10,
-    fontWeight: '800',
-    letterSpacing: 1,
-    marginBottom: 7,
-  },
-
-  originalSource: {
-    color: colors.textPrimary,
-    fontSize: 19,
-    fontWeight: '800',
-  },
-
-  originalDescription: {
-    color: colors.textSecondary,
-    fontSize: 14,
-    lineHeight: 21,
-    marginTop: 6,
-    marginBottom: spacing.md,
+    marginTop: 28,
   },
 
   originalButton: {
-    minHeight: 46,
-    borderRadius: radii.md,
-    backgroundColor: BLUE,
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center',
-    gap: 8,
-    paddingHorizontal: spacing.md,
+    justifyContent: 'space-between',
+    paddingVertical: 18,
   },
 
   originalButtonPressed: {
-    opacity: 0.75,
+    opacity: 0.7,
   },
 
-  originalButtonText: {
-    color: colors.background,
+  originalLabel: {
+    color: BLUE,
+    fontSize: 12,
+    fontWeight: '700',
+    letterSpacing: 1.5,
+  },
+
+  originalSource: {
+    color: colors.textMuted,
     fontSize: 13,
-    fontWeight: '800',
-    letterSpacing: 0.7,
+    marginTop: 4,
   },
 
-  center: {
+  notFound: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
     paddingHorizontal: spacing.xl,
   },
 
-  loadingText: {
-    color: colors.textMuted,
-    fontSize: 15,
-  },
-
-  errorTitle: {
+  notFoundTitle: {
     color: colors.textPrimary,
-    fontSize: 20,
+    fontSize: 22,
     fontWeight: '800',
-    marginBottom: 8,
+  },
+
+  notFoundText: {
+    color: colors.textSecondary,
+    fontSize: 15,
     textAlign: 'center',
+    marginTop: 8,
   },
 
-  errorText: {
-    color: colors.textMuted,
-    fontSize: 14,
-    lineHeight: 21,
-    textAlign: 'center',
+  backButton: {
+    marginTop: 20,
+    paddingHorizontal: 20,
+    paddingVertical: 12,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: BLUE,
   },
 
-  retryButton: {
-    minHeight: 44,
-    marginTop: spacing.lg,
-    paddingHorizontal: spacing.lg,
-    borderRadius: radii.md,
-    backgroundColor: BLUE,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-
-  retryButtonPressed: {
-    opacity: 0.75,
-  },
-
-  retryButtonText: {
-    color: colors.background,
+  backButtonText: {
+    color: BLUE,
     fontSize: 12,
-    fontWeight: '800',
-    letterSpacing: 0.7,
+    fontWeight: '700',
+    letterSpacing: 1.2,
   },
 });

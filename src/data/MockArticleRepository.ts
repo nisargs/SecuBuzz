@@ -1,4 +1,4 @@
-import type { Article } from '../models/article';
+﻿import type { Article } from '../models/article';
 import type { ArticleRepository } from './ArticleRepository';
 
 /**
@@ -20,7 +20,6 @@ const SAMPLE_ARTICLES: Article[] = [
     sourceUrl: 'https://www.cisa.gov/news-events',
     category: 'RANSOMWARE',
     publishedAt: '2026-09-11T18:30:00.000Z',
-    imageUrl: null,
     severity: 'CRITICAL',
   },
   {
@@ -32,7 +31,6 @@ const SAMPLE_ARTICLES: Article[] = [
     sourceUrl: 'https://krebsonsecurity.com/',
     category: 'BREACH',
     publishedAt: '2026-09-11T12:10:00.000Z',
-    imageUrl: null,
     severity: 'HIGH',
   },
   {
@@ -44,7 +42,6 @@ const SAMPLE_ARTICLES: Article[] = [
     sourceUrl: 'https://nvd.nist.gov/',
     category: 'CVE',
     publishedAt: '2026-09-11T08:00:00.000Z',
-    imageUrl: null,
     severity: 'CRITICAL',
   },
   {
@@ -56,7 +53,6 @@ const SAMPLE_ARTICLES: Article[] = [
     sourceUrl: 'https://chromereleases.googleblog.com/',
     category: 'VULNERABILITY',
     publishedAt: '2026-09-10T21:45:00.000Z',
-    imageUrl: null,
     severity: 'HIGH',
   },
   {
@@ -68,7 +64,6 @@ const SAMPLE_ARTICLES: Article[] = [
     sourceUrl: 'https://www.cisa.gov/news-events/cybersecurity-advisories',
     category: 'NATION_STATE',
     publishedAt: '2026-09-10T16:20:00.000Z',
-    imageUrl: null,
     severity: 'HIGH',
   },
   {
@@ -80,7 +75,6 @@ const SAMPLE_ARTICLES: Article[] = [
     sourceUrl: 'https://therecord.media/',
     category: 'BREACH',
     publishedAt: '2026-09-10T09:15:00.000Z',
-    imageUrl: null,
     severity: 'HIGH',
   },
   {
@@ -92,7 +86,6 @@ const SAMPLE_ARTICLES: Article[] = [
     sourceUrl: 'https://www.cisecurity.org/ms-isac',
     category: 'RANSOMWARE',
     publishedAt: '2026-09-09T19:00:00.000Z',
-    imageUrl: null,
     severity: 'HIGH',
   },
   {
@@ -104,7 +97,6 @@ const SAMPLE_ARTICLES: Article[] = [
     sourceUrl: 'https://securitylab.github.com/',
     category: 'CVE',
     publishedAt: '2026-09-09T11:40:00.000Z',
-    imageUrl: null,
     severity: 'MEDIUM',
   },
   {
@@ -116,7 +108,6 @@ const SAMPLE_ARTICLES: Article[] = [
     sourceUrl: 'https://aws.amazon.com/blogs/security/',
     category: 'GENERAL',
     publishedAt: '2026-09-08T22:05:00.000Z',
-    imageUrl: null,
     severity: 'MEDIUM',
   },
   {
@@ -128,7 +119,6 @@ const SAMPLE_ARTICLES: Article[] = [
     sourceUrl: 'https://lore.kernel.org/linux-hardening/',
     category: 'VULNERABILITY',
     publishedAt: '2026-09-08T14:55:00.000Z',
-    imageUrl: null,
     severity: 'MEDIUM',
   },
   {
@@ -140,7 +130,6 @@ const SAMPLE_ARTICLES: Article[] = [
     sourceUrl: 'https://www.ncsc.gov.uk/section/keep-up-to-date/news',
     category: 'NATION_STATE',
     publishedAt: '2026-09-07T17:25:00.000Z',
-    imageUrl: null,
     severity: 'CRITICAL',
   },
 ];

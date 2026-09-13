@@ -26,13 +26,18 @@ const FEEDS = [
 
 const FEED_PATH = "feed.json";
 const SEEN_PATH = "seen-urls.json";
+const MAX_FEED_ARTICLES = 100;
 
 const seen = existsSync(SEEN_PATH)
-  ? JSON.parse(readFileSync(SEEN_PATH, "utf8"))
+  ? JSON.parse(
+      readFileSync(SEEN_PATH, "utf8"),
+    )
   : [];
 
 const existingFeed = existsSync(FEED_PATH)
-  ? JSON.parse(readFileSync(FEED_PATH, "utf8"))
+  ? JSON.parse(
+      readFileSync(FEED_PATH, "utf8"),
+    )
   : [];
 
 const schema = {
@@ -77,169 +82,84 @@ const schema = {
   ],
 };
 
-async function summarize(title, content, link) {
+async function summarize(
+  title,
+  content,
+  link,
+) {
   const prompt = `You are summarizing a cybersecurity news article for a mobile
-news app.
-
-Use ONLY facts present in the text below.
-
-Do not invent facts, CVEs, affected products, organizations,
-attackers, dates, or numbers that are not explicitly stated.
+news app. Use ONLY facts present in the text below. Do not invent facts, CVEs,
+affected products, organizations, attackers, dates, or numbers that are not
+explicitly stated.
 
 Title: ${title}
-
 Content: ${content}
-
 Source: ${link}
 
-Write a factual summary between 40 and 70 words.
+Write a factual summary between 40 and 70 words, plain language, no
+sensationalism, no clickbait. Classify it into exactly one category and
+assign a severity.`;
 
-Use plain language.
-
-No sensationalism.
-
-No clickbait.
-
-IMPORTANT NUMBER FORMAT RULE:
-- Always use numerals for numbers.
-- Never spell out numbers.
-- For example, write "6 to 12 months", NOT "six to 12 months".
-- Write "3 vulnerabilities", NOT "three vulnerabilities".
-- Write "1 year", NOT "one year".
-- Preserve technical identifiers exactly, including CVE numbers, version numbers, dates, percentages, and CVSS scores.
-
-Classify the article into exactly one category:
-
-- BREACH
-- RANSOMWARE
-- CVE
-- VULNERABILITY
-- NATION_STATE
-- GENERAL
-
-Assign one severity:
-
-- low
-- medium
-- high
-- critical
-`;
-
-  const response = await ai.models.generateContent({
-    model: "gemini-3.8-flash",
-    contents: prompt,
-    config: {
-      responseMimeType: "application/json",
-      responseSchema: schema,
-    },
-  });
+  const response =
+    await ai.models.generateContent({
+      model: "gemini-3.8-flash",
+      contents: prompt,
+      config: {
+        responseMimeType: "application/json",
+        responseSchema: schema,
+      },
+    });
 
   return JSON.parse(response.text);
-}
-
-function normalizeSeverity(severity) {
-  const value = String(severity || "").toUpperCase();
-
-  if (
-    value === "LOW" ||
-    value === "MEDIUM" ||
-    value === "HIGH" ||
-    value === "CRITICAL"
-  ) {
-    return value;
-  }
-
-  return "LOW";
-}
-
-function getPublishedAt(item) {
-  const raw = item.isoDate || item.pubDate;
-
-  if (!raw) {
-    return null;
-  }
-
-  const parsed = new Date(raw);
-
-  if (Number.isNaN(parsed.getTime())) {
-    return null;
-  }
-
-  return parsed.toISOString();
 }
 
 const newArticles = [];
 
 for (const feedUrl of FEEDS) {
   try {
-    console.log(`Reading ${feedUrl}`);
+    const feed =
+      await parser.parseURL(feedUrl);
 
-    const feed = await parser.parseURL(feedUrl);
-
-    for (const item of feed.items.slice(0, 10)) {
+    for (const item of feed.items.slice(
+      0,
+      10,
+    )) {
       const url = item.link;
 
       if (!url || seen.includes(url)) {
         continue;
       }
 
-      const publishedAt = getPublishedAt(item);
-
-      if (!publishedAt) {
-        console.warn(
-          `Skipping article with no valid publication date: ${item.title}`
-        );
-        continue;
-      }
-
       const content =
         item.contentSnippet ||
         item.content ||
-        item.title ||
-        "";
+        item.title;
 
       const result = await summarize(
-        item.title || "Untitled article",
+        item.title,
         content,
-        url
+        url,
       );
 
+      /*
+       * IMPORTANT:
+       *
+       *
+       * We also intentionally do not inspect or copy
+       * RSS enclosure fields into the article.
+       */
       newArticles.push({
         id: url,
-
         headline: result.headline,
-
         summary: result.summary,
-
-        sourceName: feed.title || "Unknown",
-
+        sourceName:
+          feed.title || "Unknown",
         sourceUrl: url,
-
         category: result.category,
-
-        severity: normalizeSeverity(result.severity),
-
-        /**
-         * Normalized timestamp used for reliable chronological sorting.
-         */
-        publishedAt,
-
-        /**
-         * Original RSS publication string.
-         *
-         * This is important because it may contain:
-         * - exact source time
-         * - date
-         * - timezone
-         */
-        publishedAtRaw:
-          item.pubDate ||
+        severity: result.severity,
+        publishedAt:
           item.isoDate ||
-          null,
-
-        imageUrl:
-          item.enclosure?.url ||
-          null,
+          new Date().toISOString(),
       });
 
       seen.push(url);
@@ -247,56 +167,41 @@ for (const feedUrl of FEEDS) {
   } catch (err) {
     console.error(
       `Failed to process ${feedUrl}:`,
-      err.message
+      err.message,
     );
   }
 }
 
-/**
- * Combine old + new articles.
+/*
+ * Keep only the newest 100 articles in the live feed.
  *
- * Deduplicate by article ID.
+ * IMPORTANT:
+ *
+ * This limit applies ONLY to feed.json.
+ *
+ * It does NOT affect articles that a user has already
+ * bookmarked because Saved articles are persisted
+ * separately in AsyncStorage.
  */
-const articleMap = new Map();
-
-for (const article of [
-  ...existingFeed,
+const merged = [
   ...newArticles,
-]) {
-  if (!article?.id) {
-    continue;
-  }
-
-  articleMap.set(article.id, article);
-}
-
-/**
- * Sort newest publication date first.
- *
- * Articles without a valid date are pushed to the bottom.
- */
-const merged = Array.from(articleMap.values())
-  .sort((a, b) => {
-    const aTime = Date.parse(a.publishedAt || "");
-    const bTime = Date.parse(b.publishedAt || "");
-
-    const safeA = Number.isNaN(aTime) ? 0 : aTime;
-    const safeB = Number.isNaN(bTime) ? 0 : bTime;
-
-    return safeB - safeA;
-  })
-  .slice(0, 100);
+  ...existingFeed,
+].slice(0, MAX_FEED_ARTICLES);
 
 writeFileSync(
   FEED_PATH,
-  JSON.stringify(merged, null, 2)
+  JSON.stringify(merged, null, 2),
 );
 
 writeFileSync(
   SEEN_PATH,
-  JSON.stringify(seen.slice(-2000), null, 2)
+  JSON.stringify(
+    seen.slice(-2000),
+    null,
+    2,
+  ),
 );
 
 console.log(
-  `Added ${newArticles.length} new articles. Feed now has ${merged.length}.`
+  `Added ${newArticles.length} new articles. Feed now has ${merged.length}.`,
 );

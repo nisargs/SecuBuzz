@@ -1,7 +1,6 @@
 import { Ionicons } from '@expo/vector-icons';
 import { useFonts } from 'expo-font';
-import { useRouter } from 'expo-router';
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 import {
   ActivityIndicator,
   FlatList,
@@ -12,14 +11,10 @@ import {
   View,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { useRouter } from 'expo-router';
 
-import {
-  EmptyState,
-  ErrorState,
-  LoadingState,
-} from '../../components/ScreenStates';
+import { EmptyState } from '../../components/ScreenStates';
 import { useSavedArticles } from '../../context/SavedArticlesContext';
-import { useArticles } from '../../hooks/useArticles';
 import type { Article } from '../../models/article';
 import { exoFonts } from '../../theme/fonts';
 import { colors, spacing } from '../../theme/theme';
@@ -51,10 +46,9 @@ export default function SavedScreen() {
     Exo_700Bold: exoFonts.bold,
   });
 
-  const { state, load } = useArticles();
-
   const {
-    savedIds,
+    savedArticles,
+    isHydrated,
     toggleSaved,
   } = useSavedArticles();
 
@@ -64,20 +58,12 @@ export default function SavedScreen() {
   const [searchQuery, setSearchQuery] =
     useState('');
 
-  useEffect(() => {
-    void load();
-  }, [load]);
+  const filteredArticles = useMemo(() => {
+    const query =
+      searchQuery.trim().toLowerCase();
 
-  const savedArticles = useMemo(() => {
-    if (state.status !== 'ready') {
-      return [];
-    }
-
-    return [...state.articles]
-      .filter((article) =>
-        savedIds.has(article.id),
-      )
-      .sort((a, b) => {
+    const sorted = [...savedArticles].sort(
+      (a, b) => {
         const aTime = Date.parse(
           a.publishedAt || '',
         );
@@ -87,47 +73,31 @@ export default function SavedScreen() {
         );
 
         return (
-          (Number.isNaN(bTime)
-            ? 0
-            : bTime) -
-          (Number.isNaN(aTime)
-            ? 0
-            : aTime)
+          (Number.isNaN(bTime) ? 0 : bTime) -
+          (Number.isNaN(aTime) ? 0 : aTime)
         );
-      });
-  }, [savedIds, state]);
+      },
+    );
 
-  const filteredArticles =
-    useMemo(() => {
-      const query =
-        searchQuery.trim().toLowerCase();
+    if (!query) {
+      return sorted;
+    }
 
-      if (!query) {
-        return savedArticles;
-      }
+    return sorted.filter((article) => {
+      const searchableText = [
+        article.headline,
+        article.summary,
+        article.sourceName,
+        article.category,
+      ]
+        .join(' ')
+        .toLowerCase();
 
-      return savedArticles.filter(
-        (article) => {
-          const searchableText = [
-            article.headline,
-            article.summary,
-            article.sourceName,
-            article.category,
-          ]
-            .join(' ')
-            .toLowerCase();
+      return searchableText.includes(query);
+    });
+  }, [savedArticles, searchQuery]);
 
-          return searchableText.includes(
-            query,
-          );
-        },
-      );
-    }, [
-      savedArticles,
-      searchQuery,
-    ]);
-
-  function handleOpen(article: Article) {
+  function openArticle(article: Article) {
     router.push({
       pathname: '/article/[id]',
       params: {
@@ -146,6 +116,17 @@ export default function SavedScreen() {
   }
 
   if (!fontsLoaded) {
+    return (
+      <View style={styles.loadingScreen}>
+        <ActivityIndicator
+          size="small"
+          color={BLUE}
+        />
+      </View>
+    );
+  }
+
+  if (!isHydrated) {
     return (
       <View style={styles.loadingScreen}>
         <ActivityIndicator
@@ -237,41 +218,25 @@ export default function SavedScreen() {
         </View>
       ) : null}
 
-      {state.status === 'loading' ? (
-        <LoadingState />
-      ) : null}
-
-      {state.status === 'error' ? (
-        <ErrorState
-          message={state.message}
-          onRetry={() => void load()}
-        />
-      ) : null}
-
-      {state.status === 'ready' &&
-      savedArticles.length === 0 ? (
+      {savedArticles.length === 0 ? (
         <EmptyState
           message="Tap the bookmark icon on a story in Briefs to keep it here."
         />
       ) : null}
 
-      {state.status === 'ready' &&
-      savedArticles.length > 0 &&
+      {savedArticles.length > 0 &&
       filteredArticles.length === 0 ? (
         <EmptyState
           message="No saved stories match your search."
         />
       ) : null}
 
-      {state.status === 'ready' &&
-      filteredArticles.length > 0 ? (
+      {filteredArticles.length > 0 ? (
         <FlatList
           data={filteredArticles}
           keyExtractor={(item) => item.id}
           showsVerticalScrollIndicator={false}
-          contentContainerStyle={
-            styles.list
-          }
+          contentContainerStyle={styles.list}
           renderItem={({
             item,
           }: {
@@ -280,9 +245,7 @@ export default function SavedScreen() {
             <Pressable
               accessibilityRole="button"
               accessibilityLabel={`Open ${item.headline}`}
-              onPress={() => {
-                handleOpen(item);
-              }}
+              onPress={() => openArticle(item)}
               style={({ pressed }) => [
                 styles.article,
                 pressed &&
@@ -339,14 +302,12 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor:
-      colors.background,
+    backgroundColor: colors.background,
   },
 
   safe: {
     flex: 1,
-    backgroundColor:
-      colors.background,
+    backgroundColor: colors.background,
   },
 
   header: {
@@ -387,8 +348,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: BLUE,
     borderRadius: 22,
-    backgroundColor:
-      colors.surface,
+    backgroundColor: colors.surface,
   },
 
   searchInput: {
@@ -407,8 +367,7 @@ const styles = StyleSheet.create({
   },
 
   article: {
-    backgroundColor:
-      colors.surface,
+    backgroundColor: colors.surface,
     borderWidth: 1,
     borderColor: colors.border,
     borderRadius: 16,

@@ -15,19 +15,6 @@ const MONTHS = [
   'Dec',
 ];
 
-const KNOWN_TIMEZONES: Record<string, number> = {
-  UTC: 0,
-  GMT: 0,
-  EST: -300,
-  EDT: -240,
-  CST: -360,
-  CDT: -300,
-  MST: -420,
-  MDT: -360,
-  PST: -480,
-  PDT: -420,
-};
-
 function formatClock(
   hours: number,
   minutes: number,
@@ -43,180 +30,127 @@ function formatDate(
   month: number,
   day: number,
 ): string {
-  const currentYear = new Date().getFullYear();
-
-  if (year !== currentYear) {
-    return `${day} ${MONTHS[month]} ${year}`;
-  }
-
-  return `${day} ${MONTHS[month]}`;
+  return `${day} ${MONTHS[month] ?? ''}`;
 }
 
+/**
+ * Reads an explicit timezone offset from an ISO date string.
+ *
+ * Examples:
+ *   2026-09-13T15:41:00Z        -> 0
+ *   2026-09-13T15:41:00+00:00  -> 0
+ *   2026-09-13T15:41:00+05:30  -> 330
+ *   2026-09-13T15:41:00-04:00  -> -240
+ *
+ * Returns null when the timestamp does not contain an explicit
+ * timezone.
+ */
 function timezoneOffsetMinutes(
   raw: string,
 ): number | null {
-  const numericMatch = raw.match(
-    /(?:^|\s)(Z|[+-]\d{2}:?\d{2})(?:\s|$)/i,
-  );
+  const value = raw.trim();
 
-  if (numericMatch) {
-    const value = numericMatch[1].toUpperCase();
-
-    if (value === 'Z') {
-      return 0;
-    }
-
-    const normalized = value.replace(':', '');
-
-    const sign =
-      normalized[0] === '-' ? -1 : 1;
-
-    const hours = Number(
-      normalized.slice(1, 3),
-    );
-
-    const minutes = Number(
-      normalized.slice(3, 5),
-    );
-
-    return sign * (hours * 60 + minutes);
+  if (value.endsWith('Z')) {
+    return 0;
   }
 
-  const abbreviationMatch = raw.match(
-    /\b(UTC|GMT|EST|EDT|CST|CDT|MST|MDT|PST|PDT)\b/i,
+  const match = value.match(
+    /([+-])(\d{2}):?(\d{2})$/,
   );
 
-  if (abbreviationMatch) {
-    return (
-      KNOWN_TIMEZONES[
-        abbreviationMatch[1].toUpperCase()
-      ] ?? null
-    );
-  }
-
-  return null;
-}
-
-function formatFromDate(
-  iso: string,
-  offsetMinutes: number | null,
-): string | null {
-  const date = new Date(iso);
-
-  if (Number.isNaN(date.getTime())) {
+  if (!match) {
     return null;
   }
 
-  /*
-   * If the source explicitly provided a timezone,
-   * shift the UTC instant into that source timezone
-   * and then read the UTC components.
-   *
-   * The timezone itself is intentionally NOT displayed.
-   */
-  if (offsetMinutes !== null) {
-    const shifted = new Date(
-      date.getTime() +
-        offsetMinutes * 60 * 1000,
-    );
+  const sign = match[1] === '+' ? 1 : -1;
+  const hours = Number(match[2]);
+  const minutes = Number(match[3]);
 
-    const year = shifted.getUTCFullYear();
-    const month = shifted.getUTCMonth();
-    const day = shifted.getUTCDate();
-    const hours = shifted.getUTCHours();
-    const minutes = shifted.getUTCMinutes();
+  if (
+    Number.isNaN(hours) ||
+    Number.isNaN(minutes)
+  ) {
+    return null;
+  }
 
-    return `${formatClock(hours, minutes)} · ${formatDate(
-      year,
-      month,
-      day,
+  return (
+    sign * (hours * 60 + minutes)
+  );
+}
+
+/**
+ * Formats an ISO timestamp while preserving an explicit
+ * timezone contained in publishedAt.
+ *
+ * The timezone itself is intentionally NOT displayed.
+ *
+ * Example:
+ *   2026-09-13T15:41:00+05:30
+ *
+ * becomes:
+ *   3:41 pm · 13 Sep
+ */
+function formatFromDate(
+  date: Date,
+  offsetMinutes: number | null,
+): string {
+  if (offsetMinutes === null) {
+    /*
+     * No timezone was supplied.
+     * Use the device's local timezone.
+     */
+    return `${formatClock(
+      date.getHours(),
+      date.getMinutes(),
+    )} · ${formatDate(
+      date.getFullYear(),
+      date.getMonth(),
+      date.getDate(),
     )}`;
   }
 
   /*
-   * No explicit timezone was supplied.
-   * Use the device-local representation of the timestamp.
+   * Date.getTime() is the actual UTC instant.
+   *
+   * Shift that instant into the timezone represented by
+   * the timestamp so that we preserve the publication
+   * time from the source.
    */
-  const year = date.getFullYear();
-  const month = date.getMonth();
-  const day = date.getDate();
-  const hours = date.getHours();
-  const minutes = date.getMinutes();
+  const shifted = new Date(
+    date.getTime() +
+      offsetMinutes * 60 * 1000,
+  );
 
-  return `${formatClock(hours, minutes)} · ${formatDate(
-    year,
-    month,
-    day,
+  return `${formatClock(
+    shifted.getUTCHours(),
+    shifted.getUTCMinutes(),
+  )} · ${formatDate(
+    shifted.getUTCFullYear(),
+    shifted.getUTCMonth(),
+    shifted.getUTCDate(),
   )}`;
 }
 
 export function formatPublishedAt(
   article: Article,
 ): string {
-  const raw =
-    article.publishedAtRaw?.trim() || '';
+  const raw = article.publishedAt?.trim() ?? '';
 
-  if (raw) {
-    const offsetMinutes =
-      timezoneOffsetMinutes(raw);
-
-    /*
-     * Parse the original RSS value.
-     */
-    const parsed = new Date(raw);
-
-    if (!Number.isNaN(parsed.getTime())) {
-      const base = formatFromDate(
-        article.publishedAt,
-        offsetMinutes,
-      );
-
-      if (base) {
-        /*
-         * Keep the article's original publication
-         * time, but do not display GMT/UTC offsets.
-         */
-        return base;
-      }
-    }
-
-    /*
-     * Some feeds give a date without a usable time.
-     * Fall back to extracting the date from the raw value.
-     */
-    const dateMatch = raw.match(
-      /(\d{4})-(\d{2})-(\d{2})/,
-    );
-
-    if (dateMatch) {
-      const year = Number(dateMatch[1]);
-      const month =
-        Number(dateMatch[2]) - 1;
-      const day = Number(dateMatch[3]);
-
-      return formatDate(
-        year,
-        month,
-        day,
-      );
-    }
+  if (!raw) {
+    return 'Unknown date';
   }
 
-  /*
-   * Final fallback to normalized publishedAt.
-   */
-  const fallback = new Date(
-    article.publishedAt,
-  );
+  const parsed = new Date(raw);
 
-  if (Number.isNaN(fallback.getTime())) {
-    return 'Date unavailable';
+  if (Number.isNaN(parsed.getTime())) {
+    return 'Unknown date';
   }
 
-  return (
-    formatFromDate(
-      article.publishedAt,
-      null,
-    ) || 'Date unavailable'
+  const offsetMinutes =
+    timezoneOffsetMinutes(raw);
+
+  return formatFromDate(
+    parsed,
+    offsetMinutes,
   );
 }
