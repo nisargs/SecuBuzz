@@ -34,103 +34,19 @@ function formatDate(
 }
 
 /**
- * Reads an explicit timezone offset from an ISO date string.
+ * Formats an article's publication timestamp using
+ * the timezone configured on the user's device.
  *
- * Examples:
- *   2026-09-13T15:41:00Z        -> 0
- *   2026-09-13T15:41:00+00:00  -> 0
- *   2026-09-13T15:41:00+05:30  -> 330
- *   2026-09-13T15:41:00-04:00  -> -240
+ * The feed stores publishedAt as an absolute timestamp,
+ * normally in UTC, for example:
  *
- * Returns null when the timestamp does not contain an explicit
- * timezone.
+ * 2026-09-13T21:36:00.000Z
+ *
+ * new Date(...) converts that instant to the device's
+ * local timezone. We then use the normal local Date
+ * getters instead of manually applying the source
+ * article's timezone.
  */
-function timezoneOffsetMinutes(
-  raw: string,
-): number | null {
-  const value = raw.trim();
-
-  if (value.endsWith('Z')) {
-    return 0;
-  }
-
-  const match = value.match(
-    /([+-])(\d{2}):?(\d{2})$/,
-  );
-
-  if (!match) {
-    return null;
-  }
-
-  const sign = match[1] === '+' ? 1 : -1;
-  const hours = Number(match[2]);
-  const minutes = Number(match[3]);
-
-  if (
-    Number.isNaN(hours) ||
-    Number.isNaN(minutes)
-  ) {
-    return null;
-  }
-
-  return (
-    sign * (hours * 60 + minutes)
-  );
-}
-
-/**
- * Formats an ISO timestamp while preserving an explicit
- * timezone contained in publishedAt.
- *
- * The timezone itself is intentionally NOT displayed.
- *
- * Example:
- *   2026-09-13T15:41:00+05:30
- *
- * becomes:
- *   3:41 pm · 13 Sep
- */
-function formatFromDate(
-  date: Date,
-  offsetMinutes: number | null,
-): string {
-  if (offsetMinutes === null) {
-    /*
-     * No timezone was supplied.
-     * Use the device's local timezone.
-     */
-    return `${formatClock(
-      date.getHours(),
-      date.getMinutes(),
-    )} · ${formatDate(
-      date.getFullYear(),
-      date.getMonth(),
-      date.getDate(),
-    )}`;
-  }
-
-  /*
-   * Date.getTime() is the actual UTC instant.
-   *
-   * Shift that instant into the timezone represented by
-   * the timestamp so that we preserve the publication
-   * time from the source.
-   */
-  const shifted = new Date(
-    date.getTime() +
-      offsetMinutes * 60 * 1000,
-  );
-
-  return `${formatClock(
-    shifted.getUTCHours(),
-    shifted.getUTCMinutes(),
-  )} · ${formatDate(
-    shifted.getUTCFullYear(),
-    shifted.getUTCMonth(),
-    shifted.getUTCDate(),
-  )}`;
-}
-
 export function formatPublishedAt(
   article: Article,
 ): string {
@@ -140,17 +56,18 @@ export function formatPublishedAt(
     return 'Unknown date';
   }
 
-  const parsed = new Date(raw);
+  const date = new Date(raw);
 
-  if (Number.isNaN(parsed.getTime())) {
+  if (Number.isNaN(date.getTime())) {
     return 'Unknown date';
   }
 
-  const offsetMinutes =
-    timezoneOffsetMinutes(raw);
-
-  return formatFromDate(
-    parsed,
-    offsetMinutes,
-  );
+  return `${formatClock(
+    date.getHours(),
+    date.getMinutes(),
+  )} · ${formatDate(
+    date.getFullYear(),
+    date.getMonth(),
+    date.getDate(),
+  )}`;
 }

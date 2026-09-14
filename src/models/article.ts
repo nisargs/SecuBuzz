@@ -38,6 +38,8 @@ export type ArticleSeverity =
  * - publication time
  * - severity
  *
+ * There are intentionally no image fields or duplicate/raw
+ * publication-date fields in the Article model.
  */
 export type Article = {
   id: string;
