@@ -7,8 +7,7 @@
         "sourceUrl":  "https://therecord.media/nsa-reorganization-five-mission-centers",
         "category":  "GENERAL",
         "severity":  "LOW",
-        "publishedAt":  "2026-09-13T21:36:00.000Z",
-        "publishedAtRaw":  "Sun, 13 Sep 2026 21:36:00 GMT"
+        "publishedAt":  "2026-09-13T21:36:00.000Z"
     },
     {
         "id":  "https://www.securityweek.com/anthropic-ceo-dario-amodei-says-ai-industry-needs-to-give-safety-measures-time-to-catch-up/",
@@ -28,8 +27,7 @@
         "sourceUrl":  "https://thehackernews.com/2026/09/attackers-use-passkey-phishing-to.html",
         "category":  "BREACH",
         "severity":  "HIGH",
-        "publishedAt":  "2026-09-13T10:11:48.000Z",
-        "publishedAtRaw":  "Sun, 13 Sep 2026 15:41:48 +0530"
+        "publishedAt":  "2026-09-13T10:11:48.000Z"
     },
     {
         "id":  "https://thehackernews.com/2026/09/cisa-adds-5-actively-exploited.html",

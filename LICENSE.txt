@@ -1,0 +1,12 @@
+Copyright © 2026 SecuBuzz. All rights reserved.
+
+This repository and its contents, including source code, application logic,
+designs, documentation, assets, and other original materials, are proprietary
+to SecuBuzz.
+
+No permission is granted to copy, modify, reproduce, distribute, publish,
+sublicense, sell, or otherwise use the contents of this repository, in whole
+or in part, without prior written permission from SecuBuzz.
+
+Third-party software and dependencies included in or used by this project
+remain subject to their respective licenses.
