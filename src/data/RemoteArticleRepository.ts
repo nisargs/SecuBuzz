@@ -3,10 +3,11 @@ import type {
     ArticleCategory,
     ArticleSeverity,
   } from '../models/article';
+  
   import type { ArticleRepository } from './ArticleRepository';
   
   const FEED_URL =
-    'https://raw.githubusercontent.com/nisargs/SecuBuzz/main/feed.json';
+    'https://pub-3fb02516aa81498eb34da1b79161b1c8.r2.dev/feed.json';
   
   function isSeverity(
     value: unknown,
@@ -68,7 +69,7 @@ import type {
       return null;
     }
   
-    /*
+    /**
      * Only fields required by the Article model are copied.
      *
      * This intentionally ignores any unknown fields that might exist
