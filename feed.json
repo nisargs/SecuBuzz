@@ -1,5 +1,25 @@
 [
   {
+    "id": "https://www.darkreading.com/cyberattacks-data-breaches/sandworm-chains-cisco-vulnerabilities-cyclops-blink",
+    "headline": "Sandworm Chains Cisco Vulnerabilities to Deploy Cyclops Blink",
+    "summary": "The notorious Russian threat group Sandworm is spreading an upgraded version of Cyclops Blink, a botnet malware that the FBI disrupted in 2022. The campaign reportedly chains Cisco vulnerabilities to deploy the malware.",
+    "sourceName": "darkreading",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/sandworm-chains-cisco-vulnerabilities-cyclops-blink",
+    "category": "NATION_STATE",
+    "severity": "high",
+    "publishedAt": "2026-09-14T21:37:28.000Z"
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/homebrew-700-gets-built-in-gui-better-security-controls/",
+    "headline": "Homebrew 7.0.0 Adds Built-In Vulnerability Scanner and Native BrewUI",
+    "summary": "Homebrew package manager version 7.0.0 has been released with a built-in vulnerability scanner, stronger security controls, and the full release of its native BrewUI graphical interface. The update expands Homebrew’s security capabilities while adding a completed GUI experience for users of the package manager.",
+    "sourceName": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/homebrew-700-gets-built-in-gui-better-security-controls/",
+    "category": "VULNERABILITY",
+    "severity": "low",
+    "publishedAt": "2026-09-14T19:51:04.000Z"
+  },
+  {
     "id": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk",
     "headline": "Maximum-Severity GitLab Path Traversal Flaw Risks Supply Chains",
     "summary": "GitLab Community Edition and Enterprise Edition instances are affected by CVE-2026-85706, a path traversal vulnerability rated 10 out of 10 on the CVSS scale. The maximum-severity flaw puts supply chains at risk, according to the supplied article information, and is classified as critical.",
