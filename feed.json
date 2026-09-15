@@ -1,12 +1,22 @@
 [
   {
     "id": "aHR0cHM6Ly93d3cuYmxlZXBp",
-    "headline": "CenterPoint Energy Confirms Customer Data Stolen in Cyberattack",
-    "summary": "CenterPoint Energy announced that customer data was stolen in a recent cyberattack. The utility confirmed the breach after detecting unauthorized access to its systems, though it did not disclose the number of records affected or the specific type of information compromised.",
+    "headline": "Acronis Warns of Actively Exploited cPanel Backup Plugin Flaw",
+    "summary": "Acronis has warned that an actively exploited vulnerability exists in its cPanel backup plugin, according to BleepingComputer on September 15, 2026. The flaw is being used in the wild to compromise systems, and the vendor urges administrators to apply available patches or temporarily disable the plugin until a fix is released.",
     "sourceName": "bleepingcomputer.com",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/centerpoint-energy-confirms-customer-data-stolen-in-cyberattack/",
-    "category": "BREACH",
-    "publishedAt": "2026-09-15T16:40:14.000Z",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/acronis-warns-of-actively-exploited-flaw-in-its-cpanel-backup-plugin/",
+    "category": "VULNERABILITY",
+    "publishedAt": "2026-09-15T21:37:35.000Z",
+    "severity": "HIGH"
+  },
+  {
+    "id": "aHR0cHM6Ly93d3cuc2VjdXJp",
+    "headline": "Microsoft Commits to AI Privacy Rules for Students After Union Talks",
+    "summary": "Microsoft has agreed to adopt comprehensive AI privacy guardrails for its educational products after negotiations with the American Federation of Teachers, SecurityWeek reported on September 15, 2026. The commitment aims to protect student data and ensure responsible AI use in schools, potentially influencing other technology firms to follow similar standards.",
+    "sourceName": "securityweek.com",
+    "sourceUrl": "https://www.securityweek.com/microsoft-commits-to-sweeping-ai-privacy-rules-for-students-will-other-tech-giants-follow/",
+    "category": "GENERAL",
+    "publishedAt": "2026-09-15T20:24:51.000Z",
     "severity": "MEDIUM"
   },
   {
@@ -17,16 +27,6 @@
     "sourceUrl": "https://thehackernews.com/2026/09/iranian-hackers-use-telegram-controlled.html",
     "category": "NATION_STATE",
     "publishedAt": "2026-09-15T16:29:51.000Z",
-    "severity": "MEDIUM"
-  },
-  {
-    "id": "aHR0cHM6Ly93d3cuc2VjdXJp",
-    "headline": "$1 Million Sandbox Challenge Uncovers Linux Kernel Flaws",
-    "summary": "Researchers in a $1 million sandbox challenge uncovered multiple flaws in the Linux kernel, prompting Vercel to automate its vulnerability triage process due to the high volume of reports. The findings underscore the importance of coordinated bug‑hunting initiatives for improving open‑source security.",
-    "sourceName": "securityweek.com",
-    "sourceUrl": "https://www.securityweek.com/1-million-sandbox-challenge-uncovers-linux-kernel-flaws/",
-    "category": "VULNERABILITY",
-    "publishedAt": "2026-09-15T16:00:00.000Z",
     "severity": "MEDIUM"
   },
   {
