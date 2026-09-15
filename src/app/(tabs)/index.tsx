@@ -376,7 +376,10 @@ export default function FeedScreen() {
         <View style={styles.headerLeft}>
           <View style={styles.titleRow}>
             <Text style={styles.title}>
-              SecuBuzz
+              Secu
+              <Text style={styles.titleAccent}>
+                Buzz
+              </Text>
             </Text>
 
             <Text style={styles.date}>
@@ -670,6 +673,10 @@ const styles = StyleSheet.create({
     fontSize: 30,
     lineHeight: 36,
     fontWeight: '800',
+  },
+
+  titleAccent: {
+    color: BLUE,
   },
 
   date: {
