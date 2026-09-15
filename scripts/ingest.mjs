@@ -1,407 +1,566 @@
-import Parser from "rss-parser";
-import {
-  readFileSync,
-  writeFileSync,
-  existsSync,
-} from "fs";
-import { dirname, resolve } from "path";
-import { fileURLToPath } from "url";
-
-const SCRIPT_DIR = dirname(
-  fileURLToPath(import.meta.url),
-);
-
-const ROOT_DIR = resolve(
-  SCRIPT_DIR,
-  "..",
-);
-
-const FEED_PATH = resolve(
-  ROOT_DIR,
-  "feed.json",
-);
-
-const SEEN_PATH = resolve(
-  ROOT_DIR,
-  "seen-urls.json",
-);
-
-const OPENROUTER_KEY =
-  process.env.OPENROUTER_API_KEY;
-
-if (!OPENROUTER_KEY) {
-  throw new Error(
-    "Missing OPENROUTER_API_KEY environment variable.",
-  );
-}
-
-const parser = new Parser();
+import fs from 'node:fs/promises';
 
 const FEEDS = [
-  "https://feeds.feedburner.com/TheHackersNews",
-  "https://www.bleepingcomputer.com/feed/",
-  "https://krebsonsecurity.com/feed/",
-  "https://therecord.media/feed",
-  "https://www.darkreading.com/rss.xml",
-  "https://www.securityweek.com/feed/",
-  "https://www.cisa.gov/cybersecurity-advisories/all.xml",
+  'https://feeds.feedburner.com/TheHackersNews',
+  'https://www.bleepingcomputer.com/feed/',
+  'https://www.cisa.gov/cybersecurity-advisories/all.xml',
+  'https://www.securityweek.com/feed/',
+  'https://www.darkreading.com/rss.xml',
+  'https://www.helpnetsecurity.com/feed/',
+  'https://therecord.media/feed/',
 ];
 
-const MAX_AI_CALLS_PER_RUN = 4;
+const FEED_PATH = './feed.json';
+const SEEN_URLS_PATH = './seen-urls.json';
+
+const OPENROUTER_ENDPOINT =
+  'https://openrouter.ai/api/v1/chat/completions';
+
+const AI_MODEL =
+  'nvidia/nemotron-3-super-120b-a12b:free';
+
+const ARTICLES_PER_AI_BATCH = 4;
+
 const MAX_FEED_SIZE = 100;
+const MAX_SEEN_URLS = 2000;
 const MAX_RSS_ITEMS_PER_FEED = 10;
-const MAX_CONTENT_LENGTH = 12000;
+const MAX_CONTENT_LENGTH = 5000;
 
-const AI_MODEL = "openrouter/free";
+const VALID_CATEGORIES = new Set([
+  'BREACH',
+  'RANSOMWARE',
+  'CVE',
+  'VULNERABILITY',
+  'NATION_STATE',
+  'GENERAL',
+]);
 
-const CATEGORY_VALUES = [
-  "BREACH",
-  "RANSOMWARE",
-  "CVE",
-  "VULNERABILITY",
-  "NATION_STATE",
-  "GENERAL",
-];
+const VALID_SEVERITIES = new Set([
+  'LOW',
+  'MEDIUM',
+  'HIGH',
+  'CRITICAL',
+]);
 
-const SEVERITY_VALUES = [
-  "low",
-  "medium",
-  "high",
-  "critical",
-];
+function log(message) {
+  console.log(message);
+}
 
 function cleanText(value) {
-  return String(value ?? "")
-    .replace(/\s+/g, " ")
+  if (typeof value !== 'string') {
+    return '';
+  }
+
+  return value
+    .replace(/\s+/g, ' ')
+    .replace(/&nbsp;/gi, ' ')
     .trim();
 }
 
-function loadJsonFile(filePath, fallback) {
-  if (!existsSync(filePath)) {
-    return fallback;
+function stripHtml(value) {
+  return cleanText(
+    value
+      .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+      .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+      .replace(/<[^>]+>/g, ' ')
+      .replace(/&amp;/gi, '&')
+      .replace(/&quot;/gi, '"')
+      .replace(/&#39;/gi, "'")
+      .replace(/&lt;/gi, '<')
+      .replace(/&gt;/gi, '>')
+  );
+}
+
+function truncateText(value, maxLength) {
+  if (value.length <= maxLength) {
+    return value;
   }
 
-  const text =
-    readFileSync(filePath, "utf8").replace(
-      /^\uFEFF/,
-      "",
+  return `${value.slice(0, maxLength)}...`;
+}
+
+function normalizeCategory(value) {
+  const category = cleanText(value).toUpperCase();
+
+  if (VALID_CATEGORIES.has(category)) {
+    return category;
+  }
+
+  return 'GENERAL';
+}
+
+function normalizeSeverity(value) {
+  const severity = cleanText(value).toUpperCase();
+
+  if (VALID_SEVERITIES.has(severity)) {
+    return severity;
+  }
+
+  return 'MEDIUM';
+}
+
+function normalizeDate(value) {
+  const date = new Date(value);
+
+  if (Number.isNaN(date.getTime())) {
+    return new Date().toISOString();
+  }
+
+  return date.toISOString();
+}
+
+function getSourceName(feedUrl, item) {
+  const explicitSource =
+    cleanText(item.sourceName) ||
+    cleanText(item.source) ||
+    cleanText(item.publisher);
+
+  if (explicitSource) {
+    return explicitSource;
+  }
+
+  try {
+    return new URL(feedUrl).hostname.replace(/^www\./, '');
+  } catch {
+    return 'Unknown Source';
+  }
+}
+
+function parseXmlItems(xml) {
+  const items = [];
+
+  const rssMatches =
+    xml.match(/<item\b[\s\S]*?<\/item>/gi) || [];
+
+  for (const block of rssMatches) {
+    const title =
+      block.match(
+        /<title(?:\s[^>]*)?>([\s\S]*?)<\/title>/i
+      )?.[1] || '';
+
+    const link =
+      block.match(
+        /<link(?:\s[^>]*)?>([\s\S]*?)<\/link>/i
+      )?.[1] || '';
+
+    const description =
+      block.match(
+        /<description(?:\s[^>]*)?>([\s\S]*?)<\/description>/i
+      )?.[1] || '';
+
+    const pubDate =
+      block.match(
+        /<pubDate(?:\s[^>]*)?>([\s\S]*?)<\/pubDate>/i
+      )?.[1] || '';
+
+    const source =
+      block.match(
+        /<source(?:\s[^>]*)?>([\s\S]*?)<\/source>/i
+      )?.[1] || '';
+
+    items.push({
+      title: stripHtml(title),
+      link: cleanText(link),
+      description: stripHtml(description),
+      pubDate: cleanText(pubDate),
+      source: stripHtml(source),
+    });
+  }
+
+  if (items.length > 0) {
+    return items;
+  }
+
+  const atomEntries =
+    xml.match(/<entry\b[\s\S]*?<\/entry>/gi) || [];
+
+  for (const block of atomEntries) {
+    const title =
+      block.match(
+        /<title(?:\s[^>]*)?>([\s\S]*?)<\/title>/i
+      )?.[1] || '';
+
+    const description =
+      block.match(
+        /<(?:summary|content)(?:\s[^>]*)?>([\s\S]*?)<\/(?:summary|content)>/i
+      )?.[1] || '';
+
+    const published =
+      block.match(
+        /<(?:published|updated)(?:\s[^>]*)?>([\s\S]*?)<\/(?:published|updated)>/i
+      )?.[1] || '';
+
+    const href =
+      block.match(
+        /<link[^>]+href=["']([^"']+)["'][^>]*\/?>/i
+      )?.[1] || '';
+
+    items.push({
+      title: stripHtml(title),
+      link: cleanText(href),
+      description: stripHtml(description),
+      pubDate: cleanText(published),
+      source: '',
+    });
+  }
+
+  return items;
+}
+
+async function fetchFeed(feedUrl) {
+  const response = await fetch(feedUrl, {
+    headers: {
+      'User-Agent': 'SecuBuzz/1.0 RSS Reader',
+      Accept:
+        'application/rss+xml, application/atom+xml, application/xml, text/xml',
+    },
+  });
+
+  if (!response.ok) {
+    throw new Error(
+      `HTTP ${response.status} ${response.statusText}`
     );
+  }
 
-  if (!text.trim()) {
+  return response.text();
+}
+
+async function loadJson(path, fallback) {
+  try {
+    const raw = await fs.readFile(path, 'utf8');
+
+    if (!raw.trim()) {
+      return fallback;
+    }
+
+    return JSON.parse(raw);
+  } catch {
     return fallback;
   }
-
-  return JSON.parse(text);
 }
 
-const seen = loadJsonFile(
-  SEEN_PATH,
-  [],
-);
-
-const existingFeed = loadJsonFile(
-  FEED_PATH,
-  [],
-);
-
-if (!Array.isArray(seen)) {
-  throw new Error(
-    "Invalid seen-urls.json format.",
+async function saveJson(path, value) {
+  await fs.writeFile(
+    path,
+    `${JSON.stringify(value, null, 2)}\n`,
+    'utf8'
   );
 }
 
-if (!Array.isArray(existingFeed)) {
-  throw new Error(
-    "Invalid feed.json format.",
-  );
-}
-
-console.log(
-  `Using feed file: ${FEED_PATH}`,
-);
-
-console.log(
-  `Using seen URL file: ${SEEN_PATH}`,
-);
-
-console.log(
-  `Existing feed contains ${existingFeed.length} articles.`,
-);
-
-console.log(
-  `Existing seen URL history contains ${seen.length} URLs.`,
-);
-
-const seenSet = new Set(
-  seen.filter(
-    (value) =>
-      typeof value === "string",
-  ),
-);
-
-function getPublishedTimestamp(item) {
-  const value =
-    item.isoDate ||
-    item.pubDate ||
-    item.published ||
-    item.date;
-
-  if (!value) {
-    return 0;
+function normalizeExistingArticle(article) {
+  if (!article || typeof article !== 'object') {
+    return null;
   }
 
-  const timestamp =
-    Date.parse(value);
+  const id = cleanText(article.id);
+  const headline = cleanText(article.headline);
+  const summary = cleanText(article.summary);
+  const sourceName = cleanText(article.sourceName);
+  const sourceUrl = cleanText(article.sourceUrl);
 
-  return Number.isNaN(timestamp)
-    ? 0
-    : timestamp;
-}
-
-function getPublishedAt(item) {
-  const timestamp =
-    getPublishedTimestamp(item);
-
-  if (timestamp > 0) {
-    return new Date(
-      timestamp,
-    ).toISOString();
-  }
-
-  return new Date().toISOString();
-}
-
-function getArticleContent(item) {
-  const content =
-    item.contentSnippet ||
-    item.content ||
-    item["content:encoded"] ||
-    item.summary ||
-    item.title ||
-    "";
-
-  return cleanText(content).slice(
-    0,
-    MAX_CONTENT_LENGTH,
-  );
-}
-
-function isValidResult(value) {
   if (
-    typeof value !== "object" ||
-    value === null
+    !id ||
+    !headline ||
+    !summary ||
+    !sourceName ||
+    !sourceUrl
   ) {
-    return false;
+    return null;
   }
 
-  const result = value;
+  return {
+    id,
+    headline,
+    summary,
+    sourceName,
+    sourceUrl,
+    category: normalizeCategory(article.category),
+    publishedAt: normalizeDate(article.publishedAt),
+    severity: normalizeSeverity(article.severity),
+  };
+}
 
-  return (
-    typeof result.headline === "string" &&
-    result.headline.trim().length > 0 &&
-    typeof result.summary === "string" &&
-    result.summary.trim().length > 0 &&
-    typeof result.category === "string" &&
-    CATEGORY_VALUES.includes(
-      result.category,
-    ) &&
-    typeof result.severity === "string" &&
-    SEVERITY_VALUES.includes(
-      result.severity.toLowerCase(),
-    )
-  );
+function normalizeExistingFeed(value) {
+  if (!Array.isArray(value)) {
+    return [];
+  }
+
+  const normalized = [];
+
+  for (const item of value) {
+    const article = normalizeExistingArticle(item);
+
+    if (article) {
+      normalized.push(article);
+    }
+  }
+
+  return normalized;
 }
 
 function extractJsonObject(text) {
-  const cleaned =
-    String(text ?? "")
-      .trim()
-      .replace(
-        /^```json\s*/i,
-        "",
-      )
-      .replace(
-        /^```\s*/i,
-        "",
-      )
-      .replace(
-        /\s*```$/i,
-        "",
-      )
-      .trim();
+  const start = text.indexOf('{');
 
-  try {
-    return JSON.parse(cleaned);
-  } catch {
-    // Continue with object extraction.
-  }
-
-  const start =
-    cleaned.indexOf("{");
-
-  const end =
-    cleaned.lastIndexOf("}");
-
-  if (
-    start === -1 ||
-    end === -1 ||
-    end <= start
-  ) {
+  if (start === -1) {
     return null;
   }
 
-  const possibleJson =
-    cleaned.slice(
-      start,
-      end + 1,
-    );
+  let depth = 0;
+  let inString = false;
+  let escaped = false;
 
-  try {
-    return JSON.parse(
-      possibleJson,
-    );
-  } catch {
-    return null;
+  for (let i = start; i < text.length; i += 1) {
+    const char = text[i];
+
+    if (inString) {
+      if (escaped) {
+        escaped = false;
+      } else if (char === '\\') {
+        escaped = true;
+      } else if (char === '"') {
+        inString = false;
+      }
+
+      continue;
+    }
+
+    if (char === '"') {
+      inString = true;
+      continue;
+    }
+
+    if (char === '{') {
+      depth += 1;
+    } else if (char === '}') {
+      depth -= 1;
+
+      if (depth === 0) {
+        return text.slice(start, i + 1);
+      }
+    }
   }
+
+  return null;
 }
 
-async function sleep(ms) {
-  await new Promise(
-    (resolvePromise) =>
-      setTimeout(
-        resolvePromise,
-        ms,
-      ),
+function extractCompleteArticleObjects(text) {
+  const results = [];
+
+  const articlesStart = text.indexOf('"articles"');
+
+  if (articlesStart === -1) {
+    return results;
+  }
+
+  const arrayStart = text.indexOf('[', articlesStart);
+
+  if (arrayStart === -1) {
+    return results;
+  }
+
+  let objectStart = -1;
+  let depth = 0;
+  let inString = false;
+  let escaped = false;
+
+  for (
+    let i = arrayStart + 1;
+    i < text.length;
+    i += 1
+  ) {
+    const char = text[i];
+
+    if (inString) {
+      if (escaped) {
+        escaped = false;
+      } else if (char === '\\') {
+        escaped = true;
+      } else if (char === '"') {
+        inString = false;
+      }
+
+      continue;
+    }
+
+    if (char === '"') {
+      inString = true;
+      continue;
+    }
+
+    if (char === '{') {
+      if (depth === 0) {
+        objectStart = i;
+      }
+
+      depth += 1;
+      continue;
+    }
+
+    if (char === '}') {
+      depth -= 1;
+
+      if (depth === 0 && objectStart !== -1) {
+        const rawObject =
+          text.slice(objectStart, i + 1);
+
+        try {
+          const parsed = JSON.parse(rawObject);
+          results.push(parsed);
+        } catch {
+          // Ignore malformed objects.
+        }
+
+        objectStart = -1;
+      }
+    }
+
+    if (char === ']' && depth === 0) {
+      break;
+    }
+  }
+
+  return results;
+}
+
+function extractArticleResults(content) {
+  if (
+    typeof content !== 'string' ||
+    !content.trim()
+  ) {
+    return [];
+  }
+
+  const cleaned = content
+    .replace(/^```json\s*/i, '')
+    .replace(/^```\s*/i, '')
+    .replace(/\s*```$/i, '')
+    .trim();
+
+  try {
+    const parsed = JSON.parse(cleaned);
+
+    if (Array.isArray(parsed)) {
+      return parsed;
+    }
+
+    if (Array.isArray(parsed.articles)) {
+      return parsed.articles;
+    }
+  } catch {
+    // Continue with recovery.
+  }
+
+  const object = extractJsonObject(cleaned);
+
+  if (object) {
+    try {
+      const parsed = JSON.parse(object);
+
+      if (Array.isArray(parsed)) {
+        return parsed;
+      }
+
+      if (Array.isArray(parsed.articles)) {
+        return parsed.articles;
+      }
+    } catch {
+      // Continue with individual object recovery.
+    }
+  }
+
+  return extractCompleteArticleObjects(cleaned);
+}
+
+function getResponseText(responseJson) {
+  const choice = responseJson?.choices?.[0];
+
+  if (!choice) {
+    return '';
+  }
+
+  const content = choice.message?.content;
+
+  if (typeof content === 'string') {
+    return content;
+  }
+
+  if (Array.isArray(content)) {
+    return content
+      .map((part) => {
+        if (typeof part === 'string') {
+          return part;
+        }
+
+        return part?.text || '';
+      })
+      .join('');
+  }
+
+  return '';
+}
+
+function getFinishReason(responseJson) {
+  return (
+    responseJson?.choices?.[0]?.finish_reason ||
+    'unknown'
   );
 }
 
-async function requestOpenRouter(
-  prompt,
-) {
-  const response =
-    await fetch(
-      "https://openrouter.ai/api/v1/chat/completions",
-      {
-        method: "POST",
-        headers: {
-          Authorization:
-            `Bearer ${OPENROUTER_KEY}`,
-          "Content-Type":
-            "application/json",
-          "HTTP-Referer":
-            "https://github.com/nisargs/SecuBuzz",
-          "X-Title":
-            "SecuBuzz",
-        },
-        body: JSON.stringify({
-          model: AI_MODEL,
-          messages: [
-            {
-              role: "user",
-              content: prompt,
-            },
-          ],
-          temperature: 0.1,
-          max_tokens: 500,
-          response_format: {
-            type: "json_object",
-          },
-        }),
-      },
-    );
+function buildBatchPrompt(candidates) {
+  const candidateText = candidates
+    .map(
+      (candidate, index) => `
+ARTICLE ${index + 1}
 
-  const responseText =
-    await response.text();
+Title:
+${candidate.title}
 
-  let data;
+Source:
+${candidate.sourceName}
 
-  try {
-    data =
-      JSON.parse(
-        responseText,
-      );
-  } catch {
-    const error =
-      new Error(
-        `OpenRouter returned invalid HTTP JSON: ${responseText.slice(0, 500)}`,
-      );
+Published:
+${candidate.publishedAt}
 
-    error.status =
-      response.status;
+Content:
+${candidate.content}
+`
+    )
+    .join('\n');
 
-    throw error;
-  }
+  return `
+You are the editorial engine for SecuBuzz.
 
-  if (!response.ok) {
-    const message =
-      data?.error?.message ||
-      `HTTP ${response.status}`;
+There are exactly ${candidates.length} articles below.
 
-    const error =
-      new Error(
-        `OpenRouter request failed: ${message}`,
-      );
+You MUST return exactly ${candidates.length} results.
 
-    error.status =
-      response.status;
+Return exactly one result for every article:
+- ARTICLE 1 -> index 1
+- ARTICLE 2 -> index 2
+- ARTICLE 3 -> index 3
+- ARTICLE 4 -> index 4
 
-    throw error;
-  }
+Never omit an article.
+Never merge articles.
+Never invent an article.
 
-  const contentText =
-    data?.choices?.[0]?.message?.content;
+Process every article independently.
 
-  if (
-    typeof contentText !==
-      "string" ||
-    !contentText.trim()
-  ) {
-    const error =
-      new Error(
-        "OpenRouter returned an empty model response.",
-      );
+RULES:
+- Use only information supplied in the article.
+- Do not invent facts.
+- Keep the original meaning accurate.
+- Write an approximately 40-60 word cybersecurity news summary.
+- Do not shorten the summary with "...".
+- Write a concise, accurate headline.
+- Do not mention AI.
+- Do not explain your work.
+- Do not show reasoning.
+- Do not use markdown.
+- Do not include URLs.
+- Return ONLY valid JSON.
 
-    error.status =
-      response.status;
-
-    throw error;
-  }
-
-  return contentText;
-}
-
-async function summarize(
-  title,
-  content,
-  link,
-) {
-  const prompt = `
-You are the cybersecurity news editor for SecuBuzz.
-
-Read the supplied article information and return EXACTLY ONE JSON object.
-
-Use ONLY facts explicitly present in the supplied article information.
-
-Do not invent:
-- facts
-- CVE numbers
-- affected products
-- organizations
-- attackers
-- dates
-- numbers
-- technical details
-
-Requirements:
-
-headline:
-A clear factual headline.
-
-summary:
-A factual summary between 40 and 70 words.
-
-category:
-Choose exactly one:
+Allowed categories:
 BREACH
 RANSOMWARE
 CVE
@@ -409,443 +568,595 @@ VULNERABILITY
 NATION_STATE
 GENERAL
 
-severity:
-Choose exactly one:
-low
-medium
-high
-critical
+Allowed severities:
+LOW
+MEDIUM
+HIGH
+CRITICAL
 
-Do not include markdown.
-Do not include explanations.
-Do not include "Here is the JSON".
-Return ONLY the JSON object.
+Required structure:
 
-ARTICLE TITLE:
-${cleanText(title)}
-
-ARTICLE CONTENT:
-${content}
-
-ARTICLE URL:
-${link}
-`;
-
-  let lastError = null;
-
-  for (
-    let attempt = 1;
-    attempt <= 2;
-    attempt += 1
-  ) {
-    try {
-      const contentText =
-        await requestOpenRouter(
-          prompt,
-        );
-
-      const result =
-        extractJsonObject(
-          contentText,
-        );
-
-      if (!isValidResult(result)) {
-        throw new Error(
-          `Model returned invalid SecuBuzz JSON: ${contentText.slice(0, 700)}`,
-        );
-      }
-
-      return {
-        headline:
-          cleanText(
-            result.headline,
-          ),
-        summary:
-          cleanText(
-            result.summary,
-          ),
-        category:
-          result.category,
-        severity:
-          result.severity.toLowerCase(),
-      };
-    } catch (error) {
-      lastError = error;
-
-      const status =
-        error?.status;
-
-      if (
-        status === 401 ||
-        status === 403
-      ) {
-        throw error;
-      }
-
-      if (
-        status === 429
-      ) {
-        throw error;
-      }
-
-      if (
-        attempt === 2
-      ) {
-        throw error;
-      }
-
-      console.log(
-        "OpenRouter provider failed. Waiting 3 seconds before one retry...",
-      );
-
-      await sleep(3000);
+{
+  "articles": [
+    {
+      "index": 1,
+      "headline": "Short accurate headline",
+      "summary": "Approximately 40-60 words.",
+      "category": "GENERAL",
+      "severity": "MEDIUM"
+    },
+    {
+      "index": 2,
+      "headline": "Short accurate headline",
+      "summary": "Approximately 40-60 words.",
+      "category": "GENERAL",
+      "severity": "MEDIUM"
+    },
+    {
+      "index": 3,
+      "headline": "Short accurate headline",
+      "summary": "Approximately 40-60 words.",
+      "category": "GENERAL",
+      "severity": "MEDIUM"
+    },
+    {
+      "index": 4,
+      "headline": "Short accurate headline",
+      "summary": "Approximately 40-60 words.",
+      "category": "GENERAL",
+      "severity": "MEDIUM"
     }
-  }
-
-  throw lastError;
+  ]
 }
 
-function normalizeExistingArticle(
-  article,
+Before responding, verify:
+- Exactly ${candidates.length} objects exist.
+- Every index from 1 through ${candidates.length} appears exactly once.
+- Every object has headline, summary, category, and severity.
+
+${candidateText}
+`;
+}
+
+async function requestOpenRouter(prompt) {
+  const apiKey = process.env.OPENROUTER_API_KEY;
+
+  if (!apiKey) {
+    throw new Error(
+      'OPENROUTER_API_KEY is not configured.'
+    );
+  }
+
+  const requestBody = {
+    model: AI_MODEL,
+    temperature: 0.1,
+    max_tokens: 5000,
+    messages: [
+      {
+        role: 'system',
+        content:
+          'You are a cybersecurity news editor. You must process every supplied article and return exactly one JSON result for each article. Never omit an article. Return only valid JSON.',
+      },
+      {
+        role: 'user',
+        content: prompt,
+      },
+    ],
+    response_format: {
+      type: 'json_object',
+    },
+  };
+
+  const response = await fetch(
+    OPENROUTER_ENDPOINT,
+    {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        'Content-Type': 'application/json',
+        'HTTP-Referer':
+          'https://secubuzz.app',
+        'X-Title': 'SecuBuzz',
+      },
+      body: JSON.stringify(requestBody),
+    }
+  );
+
+  const responseText = await response.text();
+
+  log(
+    `OpenRouter HTTP status: ${response.status} ${response.statusText}`
+  );
+
+  if (!responseText.trim()) {
+    log(
+      'OpenRouter returned an empty HTTP response body.'
+    );
+
+    throw new Error(
+      `OpenRouter returned an empty response body (HTTP ${response.status}).`
+    );
+  }
+
+  let responseJson;
+
+  try {
+    responseJson = JSON.parse(responseText);
+  } catch {
+    log(
+      `OpenRouter returned non-JSON response body:`
+    );
+    log(responseText.slice(0, 2000));
+
+    throw new Error(
+      'OpenRouter returned a non-JSON response.'
+    );
+  }
+
+  if (!response.ok) {
+    log(
+      'OpenRouter error response:'
+    );
+
+    log(
+      JSON.stringify(
+        responseJson,
+        null,
+        2
+      ).slice(0, 3000)
+    );
+
+    const message =
+      responseJson?.error?.message ||
+      responseJson?.error ||
+      `HTTP ${response.status}`;
+
+    throw new Error(
+      `OpenRouter request failed: ${message}`
+    );
+  }
+
+  log(
+    `OpenRouter response top-level keys: ${Object.keys(
+      responseJson
+    ).join(', ')}`
+  );
+
+  if (!Array.isArray(responseJson?.choices)) {
+    log(
+      'OpenRouter response does not contain a choices array.'
+    );
+
+    log(
+      'OpenRouter response structure:'
+    );
+
+    log(
+      JSON.stringify(
+        responseJson,
+        null,
+        2
+      ).slice(0, 4000)
+    );
+  }
+
+  return responseJson;
+}
+
+function buildArticleFromResult(
+  result,
+  candidate
 ) {
-  if (
-    typeof article !== "object" ||
-    article === null
-  ) {
+  if (!result || typeof result !== 'object') {
     return null;
   }
 
-  if (
-    typeof article.id !== "string" ||
-    typeof article.headline !==
-      "string" ||
-    typeof article.summary !==
-      "string" ||
-    typeof article.sourceName !==
-      "string" ||
-    typeof article.sourceUrl !==
-      "string" ||
-    typeof article.category !==
-      "string" ||
-    typeof article.publishedAt !==
-      "string"
-  ) {
+  const headline = cleanText(result.headline);
+  const summary = cleanText(result.summary);
+
+  if (!headline || !summary) {
     return null;
   }
 
-  const severity =
-    String(
-      article.severity ??
-        "low",
-    ).toLowerCase();
+  if (!candidate.sourceUrl) {
+    return null;
+  }
+
+  const articleId = Buffer.from(
+    candidate.sourceUrl
+  )
+    .toString('base64url')
+    .slice(0, 24);
 
   return {
-    id: article.id,
-    headline:
-      article.headline,
-    summary:
-      article.summary,
-    sourceName:
-      article.sourceName,
-    sourceUrl:
-      article.sourceUrl,
-    category:
-      CATEGORY_VALUES.includes(
-        article.category,
-      )
-        ? article.category
-        : "GENERAL",
-    severity:
-      SEVERITY_VALUES.includes(
-        severity,
-      )
-        ? severity
-        : "low",
-    publishedAt:
-      article.publishedAt,
+    id: articleId,
+    headline,
+    summary,
+    sourceName: candidate.sourceName,
+    sourceUrl: candidate.sourceUrl,
+    category: normalizeCategory(
+      result.category
+    ),
+    publishedAt: candidate.publishedAt,
+    severity: normalizeSeverity(
+      result.severity
+    ),
   };
 }
 
-const normalizedExistingFeed =
-  existingFeed
-    .map(
-      normalizeExistingArticle,
-    )
-    .filter(
-      (article) =>
-        article !== null,
+async function main() {
+  log('Starting SecuBuzz feed ingestion...');
+  log(`AI model: ${AI_MODEL}`);
+  log(
+    `AI batch size: ${ARTICLES_PER_AI_BATCH}`
+  );
+  log('');
+
+  const existingFeedRaw =
+    await loadJson(FEED_PATH, []);
+
+  const existingFeed =
+    normalizeExistingFeed(
+      existingFeedRaw
     );
 
-const existingIds =
-  new Set(
-    normalizedExistingFeed.map(
-      (article) =>
-        article.id,
-    ),
+  const seenUrlsRaw =
+    await loadJson(
+      SEEN_URLS_PATH,
+      []
+    );
+
+  const seenUrls = new Set(
+    Array.isArray(seenUrlsRaw)
+      ? seenUrlsRaw.filter(
+          (url) =>
+            typeof url === 'string' &&
+            url.trim()
+        )
+      : []
   );
 
-const candidates = [];
+  const candidates = [];
 
-for (const feedUrl of FEEDS) {
-  try {
-    console.log(
-      `Reading RSS: ${feedUrl}`,
-    );
+  for (const feedUrl of FEEDS) {
+    try {
+      log(`Fetching: ${feedUrl}`);
 
-    const feed =
-      await parser.parseURL(
-        feedUrl,
-      );
+      const xml =
+        await fetchFeed(feedUrl);
 
-    const items =
-      feed.items.slice(
-        0,
-        MAX_RSS_ITEMS_PER_FEED,
-      );
-
-    for (const item of items) {
-      const url =
-        typeof item.link ===
-        "string"
-          ? item.link.trim()
-          : "";
-
-      if (!url) {
-        continue;
-      }
-
-      if (seenSet.has(url)) {
-        continue;
-      }
-
-      if (existingIds.has(url)) {
-        continue;
-      }
-
-      const title =
-        cleanText(
-          item.title,
+      const items =
+        parseXmlItems(xml).slice(
+          0,
+          MAX_RSS_ITEMS_PER_FEED
         );
 
-      if (!title) {
-        continue;
+      log(
+        `Found ${items.length} RSS items.`
+      );
+
+      for (const item of items) {
+        const sourceUrl =
+          cleanText(item.link);
+
+        if (
+          !sourceUrl ||
+          seenUrls.has(sourceUrl)
+        ) {
+          continue;
+        }
+
+        const title =
+          cleanText(item.title);
+
+        if (!title) {
+          continue;
+        }
+
+        const content =
+          truncateText(
+            cleanText(
+              item.description ||
+                item.content ||
+                ''
+            ),
+            MAX_CONTENT_LENGTH
+          );
+
+        candidates.push({
+          title,
+          content,
+          sourceName:
+            getSourceName(
+              feedUrl,
+              item
+            ),
+          sourceUrl,
+          publishedAt:
+            normalizeDate(
+              item.pubDate
+            ),
+        });
       }
-
-      const content =
-        getArticleContent(
-          item,
-        );
-
-      if (!content) {
-        continue;
-      }
-
-      candidates.push({
-        url,
-        title,
-        content,
-        sourceName:
-          cleanText(
-            feed.title,
-          ) || "Unknown",
-        publishedAt:
-          getPublishedAt(
-            item,
-          ),
-        publishedTimestamp:
-          getPublishedTimestamp(
-            item,
-          ),
-      });
+    } catch (error) {
+      log(
+        `Feed failed: ${feedUrl} — ${
+          error instanceof Error
+            ? error.message
+            : String(error)
+        }`
+      );
     }
-  } catch (error) {
-    console.error(
-      `Failed to read RSS feed ${feedUrl}:`,
-      error instanceof Error
-        ? error.message
-        : String(error),
+  }
+
+  log('');
+  log(
+    `Found ${candidates.length} new RSS candidates.`
+  );
+
+  if (candidates.length === 0) {
+    log(
+      'No new candidates. Existing feed will be preserved.'
     );
-  }
-}
-
-candidates.sort(
-  (a, b) =>
-    b.publishedTimestamp -
-    a.publishedTimestamp,
-);
-
-console.log(
-  `Found ${candidates.length} new RSS candidates.`,
-);
-
-console.log(
-  `AI processing limit for this run: ${MAX_AI_CALLS_PER_RUN}.`,
-);
-
-console.log(
-  `AI model: ${AI_MODEL}`,
-);
-
-const selectedCandidates =
-  candidates.slice(
-    0,
-    MAX_AI_CALLS_PER_RUN,
-  );
-
-const newArticles = [];
-
-let aiCalls = 0;
-
-for (
-  const candidate of selectedCandidates
-) {
-  if (
-    aiCalls >=
-    MAX_AI_CALLS_PER_RUN
-  ) {
-    break;
+    log(
+      `Feed now has ${existingFeed.length} articles.`
+    );
+    log(
+      `Seen URL history contains ${seenUrls.size} URLs.`
+    );
+    return;
   }
 
-  console.log(
-    `Processing ${aiCalls + 1}/${MAX_AI_CALLS_PER_RUN}: ${candidate.title}`,
+  candidates.sort(
+    (a, b) =>
+      new Date(
+        b.publishedAt
+      ).getTime() -
+      new Date(
+        a.publishedAt
+      ).getTime()
   );
+
+  const selectedCandidates =
+    candidates.slice(
+      0,
+      ARTICLES_PER_AI_BATCH
+    );
+
+  log(
+    `Selected ${selectedCandidates.length} candidates for this run.`
+  );
+
+  log('');
+  log(
+    'Sending selected candidates in ONE OpenRouter request...'
+  );
+
+  const prompt =
+    buildBatchPrompt(
+      selectedCandidates
+    );
+
+  let responseJson;
 
   try {
-    aiCalls += 1;
-
-    const result =
-      await summarize(
-        candidate.title,
-        candidate.content,
-        candidate.url,
+    responseJson =
+      await requestOpenRouter(
+        prompt
       );
-
-    const article = {
-      id: candidate.url,
-      headline:
-        result.headline,
-      summary:
-        result.summary,
-      sourceName:
-        candidate.sourceName,
-      sourceUrl:
-        candidate.url,
-      category:
-        result.category,
-      severity:
-        result.severity,
-      publishedAt:
-        candidate.publishedAt,
-    };
-
-    newArticles.push(
-      article,
-    );
-
-    seenSet.add(
-      candidate.url,
-    );
-
-    console.log(
-      `Added: ${article.headline}`,
-    );
   } catch (error) {
-    const status =
-      error?.status;
-
-    console.error(
-      `Failed to process ${candidate.url}:`,
-      error instanceof Error
-        ? error.message
-        : String(error),
+    log(
+      `OpenRouter failed: ${
+        error instanceof Error
+          ? error.message
+          : String(error)
+      }`
     );
 
-    if (
-      status === 401 ||
-      status === 403
-    ) {
-      console.error(
-        "Stopping because the OpenRouter API key was rejected.",
-      );
-
-      break;
-    }
-
-    if (
-      status === 429
-    ) {
-      console.error(
-        "Stopping because OpenRouter rate-limited the request.",
-      );
-
-      break;
-    }
-
-    if (
-      typeof status ===
-        "number" &&
-      status >= 500
-    ) {
-      console.error(
-        "Stopping because the OpenRouter provider/server returned a server error.",
-      );
-
-      break;
-    }
+    log(
+      'No new articles were generated.'
+    );
+    log(
+      'Existing feed will be preserved.'
+    );
+    log(
+      `Feed now has ${existingFeed.length} articles.`
+    );
+    log(
+      `Seen URL history contains ${seenUrls.size} URLs.`
+    );
+    return;
   }
-}
 
-if (
-  normalizedExistingFeed.length >
-    0 &&
-  newArticles.length === 0
-) {
-  console.log(
-    "No new articles were successfully generated. Existing feed will be preserved.",
+  const finishReason =
+    getFinishReason(
+      responseJson
+    );
+
+  const content =
+    getResponseText(
+      responseJson
+    );
+
+  log(
+    `OpenRouter finish reason: ${finishReason}`
+  );
+
+  log(
+    `OpenRouter response content length: ${content.length} characters.`
+  );
+
+  const results =
+    extractArticleResults(
+      content
+    );
+
+  log(
+    `Recovered ${results.length} article results from OpenRouter.`
+  );
+
+  if (results.length === 0) {
+    log(
+      'No usable article results were recovered.'
+    );
+
+    if (content) {
+      log(
+        `Response preview:\n${content.slice(
+          0,
+          2000
+        )}`
+      );
+    }
+
+    log(
+      'No new articles were added.'
+    );
+    log(
+      `Feed now has ${existingFeed.length} articles.`
+    );
+    log(
+      `Seen URL history contains ${seenUrls.size} URLs.`
+    );
+    return;
+  }
+
+  const newArticles = [];
+  const successfullyProcessedUrls =
+    new Set();
+
+  for (const result of results) {
+    const index =
+      Number(result?.index);
+
+    if (
+      !Number.isInteger(index) ||
+      index < 1 ||
+      index >
+        selectedCandidates.length
+    ) {
+      continue;
+    }
+
+    const candidate =
+      selectedCandidates[
+        index - 1
+      ];
+
+    const article =
+      buildArticleFromResult(
+        result,
+        candidate
+      );
+
+    if (!article) {
+      continue;
+    }
+
+    newArticles.push(article);
+
+    successfullyProcessedUrls.add(
+      candidate.sourceUrl
+    );
+  }
+
+  log(
+    `Successfully built ${newArticles.length} new articles.`
+  );
+
+  if (newArticles.length === 0) {
+    log(
+      'No valid articles survived validation.'
+    );
+    log(
+      'Existing feed will be preserved.'
+    );
+    log(
+      `Feed now has ${existingFeed.length} articles.`
+    );
+    log(
+      `Seen URL history contains ${seenUrls.size} URLs.`
+    );
+    return;
+  }
+
+  for (const url of successfullyProcessedUrls) {
+    seenUrls.add(url);
+  }
+
+  const merged = [
+    ...newArticles,
+    ...existingFeed,
+  ];
+
+  const deduplicated = [];
+  const ids = new Set();
+  const urls = new Set();
+
+  for (const article of merged) {
+    if (
+      ids.has(article.id) ||
+      urls.has(article.sourceUrl)
+    ) {
+      continue;
+    }
+
+    ids.add(article.id);
+    urls.add(article.sourceUrl);
+    deduplicated.push(article);
+  }
+
+  deduplicated.sort(
+    (a, b) =>
+      new Date(
+        b.publishedAt
+      ).getTime() -
+      new Date(
+        a.publishedAt
+      ).getTime()
+  );
+
+  const finalFeed =
+    deduplicated.slice(
+      0,
+      MAX_FEED_SIZE
+    );
+
+  const finalSeenUrls =
+    Array.from(seenUrls).slice(
+      -MAX_SEEN_URLS
+    );
+
+  await saveJson(
+    FEED_PATH,
+    finalFeed
+  );
+
+  await saveJson(
+    SEEN_URLS_PATH,
+    finalSeenUrls
+  );
+
+  log('');
+  log(
+    `Added ${newArticles.length} new articles.`
+  );
+  log(
+    `Feed now has ${finalFeed.length} articles.`
+  );
+  log(
+    `Seen URL history contains ${finalSeenUrls.length} URLs.`
   );
 }
 
-const merged = [
-  ...newArticles,
-  ...normalizedExistingFeed,
-].slice(
-  0,
-  MAX_FEED_SIZE,
-);
+main().catch((error) => {
+  console.error(
+    'Ingestion failed:',
+    error instanceof Error
+      ? error.stack ||
+        error.message
+      : error
+  );
 
-const finalSeen =
-  Array.from(
-    seenSet,
-  ).slice(-2000);
-
-writeFileSync(
-  FEED_PATH,
-  JSON.stringify(
-    merged,
-    null,
-    2,
-  ),
-  "utf8",
-);
-
-writeFileSync(
-  SEEN_PATH,
-  JSON.stringify(
-    finalSeen,
-    null,
-    2,
-  ),
-  "utf8",
-);
-
-console.log(
-  `Added ${newArticles.length} new articles.`,
-);
-
-console.log(
-  `Feed now has ${merged.length} articles.`,
-);
-
-console.log(
-  `Seen URL history contains ${finalSeen.length} URLs.`,
-);
+  process.exit(1);
+});

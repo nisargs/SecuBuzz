@@ -1,13 +1,23 @@
 [
   {
+    "id": "aHR0cHM6Ly93d3cuc2VjdXJp",
+    "headline": "Exein raises $270M at $1.7B valuation for physical AI security",
+    "summary": "Exein, a cybersecurity startup focused on physical AI security, announced it has raised $270 million in funding, valuing the company at $1.7 billion. The funds will support development of a proprietary foundation model and accelerate the company's global expansion efforts.",
+    "sourceName": "securityweek.com",
+    "sourceUrl": "https://www.securityweek.com/exein-secures-270m-at-1-7b-valuation-for-physical-ai-security/",
+    "category": "GENERAL",
+    "publishedAt": "2026-09-15T15:45:13.000Z",
+    "severity": "LOW"
+  },
+  {
     "id": "https://www.securityweek.com/root-rce-zero-day-in-cisco-secure-email-gateway-under-active-exploitation/",
     "headline": "Root RCE Zero-Day in Cisco Secure Email Gateway Under Active Exploitation",
     "summary": "An unauthenticated attacker is actively exploiting CVE-2026-76461 to achieve remote code execution on Cisco Secure Email Gateway systems. This zero-day vulnerability allows for the execution of arbitrary commands on the underlying operating system with root privileges, posing a significant security risk to affected organizations.",
     "sourceName": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/root-rce-zero-day-in-cisco-secure-email-gateway-under-active-exploitation/",
+    "sourceUrl": "https://www.securityweek.com/root-rce-zero-day-in-cisco-secure-email-gateway-under-active-exploitation",
     "category": "VULNERABILITY",
-    "severity": "critical",
-    "publishedAt": "2026-09-15T05:18:51.000Z"
+    "publishedAt": "2026-09-15T05:18:51.000Z",
+    "severity": "CRITICAL"
   },
   {
     "id": "https://www.darkreading.com/cyberattacks-data-breaches/sandworm-chains-cisco-vulnerabilities-cyclops-blink",
@@ -16,18 +26,8 @@
     "sourceName": "darkreading",
     "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/sandworm-chains-cisco-vulnerabilities-cyclops-blink",
     "category": "NATION_STATE",
-    "severity": "high",
-    "publishedAt": "2026-09-14T21:37:28.000Z"
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/homebrew-700-gets-built-in-gui-better-security-controls/",
-    "headline": "Homebrew 7.0.0 Adds Built-In Vulnerability Scanner and Native BrewUI",
-    "summary": "Homebrew package manager version 7.0.0 has been released with a built-in vulnerability scanner, stronger security controls, and the full release of its native BrewUI graphical interface. The update expands Homebrew’s security capabilities while adding a completed GUI experience for users of the package manager.",
-    "sourceName": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/homebrew-700-gets-built-in-gui-better-security-controls/",
-    "category": "VULNERABILITY",
-    "severity": "low",
-    "publishedAt": "2026-09-14T19:51:04.000Z"
+    "publishedAt": "2026-09-14T21:37:28.000Z",
+    "severity": "HIGH"
   },
   {
     "id": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk",
@@ -36,8 +36,18 @@
     "sourceName": "darkreading",
     "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk",
     "category": "VULNERABILITY",
-    "severity": "critical",
-    "publishedAt": "2026-09-14T20:19:22.000Z"
+    "publishedAt": "2026-09-14T20:19:22.000Z",
+    "severity": "CRITICAL"
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/homebrew-700-gets-built-in-gui-better-security-controls/",
+    "headline": "Homebrew 7.0.0 Adds Built-In Vulnerability Scanner and Native BrewUI",
+    "summary": "Homebrew package manager version 7.0.0 has been released with a built-in vulnerability scanner, stronger security controls, and the full release of its native BrewUI graphical interface. The update expands Homebrew’s security capabilities while adding a completed GUI experience for users of the package manager.",
+    "sourceName": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/homebrew-700-gets-built-in-gui-better-security-controls",
+    "category": "VULNERABILITY",
+    "publishedAt": "2026-09-14T19:51:04.000Z",
+    "severity": "LOW"
   },
   {
     "id": "https://therecord.media/nsa-reorganization-five-mission-centers",
@@ -46,18 +56,18 @@
     "sourceName": "The Record from Recorded Future News",
     "sourceUrl": "https://therecord.media/nsa-reorganization-five-mission-centers",
     "category": "GENERAL",
-    "severity": "low",
-    "publishedAt": "2026-09-13T21:36:00.000Z"
+    "publishedAt": "2026-09-13T21:36:00.000Z",
+    "severity": "LOW"
   },
   {
     "id": "https://www.securityweek.com/anthropic-ceo-dario-amodei-says-ai-industry-needs-to-give-safety-measures-time-to-catch-up/",
     "headline": "Anthropic CEO Calls for AI Safety Measures to Catch Up",
     "summary": "Anthropic CEO Dario Amodei has stated that the AI industry must give safety measures sufficient time to catch up. Amodei issued a warning that within six to 12 months, AI could be capable of leading a swarm of agents that could take over the entire internet.",
     "sourceName": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/anthropic-ceo-dario-amodei-says-ai-industry-needs-to-give-safety-measures-time-to-catch-up/",
+    "sourceUrl": "https://www.securityweek.com/anthropic-ceo-dario-amodei-says-ai-industry-needs-to-give-safety-measures-time-to-catch-up",
     "category": "GENERAL",
-    "severity": "medium",
-    "publishedAt": "2026-09-13T13:27:25.000Z"
+    "publishedAt": "2026-09-13T13:27:25.000Z",
+    "severity": "MEDIUM"
   },
   {
     "id": "https://thehackernews.com/2026/09/attackers-use-passkey-phishing-to.html",
@@ -66,8 +76,8 @@
     "sourceName": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/09/attackers-use-passkey-phishing-to.html",
     "category": "BREACH",
-    "severity": "high",
-    "publishedAt": "2026-09-13T10:11:48.000Z"
+    "publishedAt": "2026-09-13T10:11:48.000Z",
+    "severity": "HIGH"
   },
   {
     "id": "https://thehackernews.com/2026/09/cisa-adds-5-actively-exploited.html",
@@ -76,28 +86,28 @@
     "sourceName": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/09/cisa-adds-5-actively-exploited.html",
     "category": "VULNERABILITY",
-    "severity": "high",
-    "publishedAt": "2026-09-12T15:54:45.000Z"
+    "publishedAt": "2026-09-12T15:54:45.000Z",
+    "severity": "HIGH"
   },
   {
     "id": "https://www.bleepingcomputer.com/news/security/dutch-ncsc-critical-check-point-vpn-flaws-exploitation-is-imminent/",
     "headline": "Dutch NCSC Warns of Imminent Exploitation of Critical Check Point VPN Flaws",
     "summary": "The Dutch Nationaal Cyber Security Centrum NCSC is warning of imminent exploitation of two critical flaws in Check Point VPN. These two critical flaws are tracked as CVE-2026-85102 and CVE-2026-85103. The agency warns that exploitation of both Check Point VPN vulnerabilities is imminent.",
     "sourceName": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/dutch-ncsc-critical-check-point-vpn-flaws-exploitation-is-imminent/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/dutch-ncsc-critical-check-point-vpn-flaws-exploitation-is-imminent",
     "category": "CVE",
-    "severity": "critical",
-    "publishedAt": "2026-09-12T14:14:32.000Z"
+    "publishedAt": "2026-09-12T14:14:32.000Z",
+    "severity": "CRITICAL"
   },
   {
     "id": "https://www.bleepingcomputer.com/news/security/hackers-abused-claude-to-extract-secrets-from-18m-android-apps/",
     "headline": "Threat Groups Attempted to Abuse Anthropic's Claude AI",
     "summary": "Anthropic reported that multiple threat groups attempted to abuse its Claude AI model for malicious activities. The perpetrators included financially motivated actors as well as state-sponsored espionage groups associated with Russia and China. According to the report, hackers abused the Claude model to extract secrets from 1.8 million Android applications.",
     "sourceName": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-abused-claude-to-extract-secrets-from-18m-android-apps/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-abused-claude-to-extract-secrets-from-18m-android-apps",
     "category": "NATION_STATE",
-    "severity": "high",
-    "publishedAt": "2026-09-11T20:19:09.000Z"
+    "publishedAt": "2026-09-11T20:19:09.000Z",
+    "severity": "HIGH"
   },
   {
     "id": "https://therecord.media/florida-shiny-hunters-motor-vehicle",
@@ -106,8 +116,8 @@
     "sourceName": "The Record from Recorded Future News",
     "sourceUrl": "https://therecord.media/florida-shiny-hunters-motor-vehicle",
     "category": "BREACH",
-    "severity": "high",
-    "publishedAt": "2026-09-11T20:00:00.000Z"
+    "publishedAt": "2026-09-11T20:00:00.000Z",
+    "severity": "HIGH"
   },
   {
     "id": "https://www.darkreading.com/cyberattacks-data-breaches/1m-personalized-fraud-emails-3-days",
@@ -116,8 +126,8 @@
     "sourceName": "darkreading",
     "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/1m-personalized-fraud-emails-3-days",
     "category": "GENERAL",
-    "severity": "medium",
-    "publishedAt": "2026-09-11T19:21:08.000Z"
+    "publishedAt": "2026-09-11T19:21:08.000Z",
+    "severity": "MEDIUM"
   },
   {
     "id": "https://therecord.media/invoice-scam-emails-new-features-microsoft-researchers",
@@ -126,37 +136,37 @@
     "sourceName": "The Record from Recorded Future News",
     "sourceUrl": "https://therecord.media/invoice-scam-emails-new-features-microsoft-researchers",
     "category": "GENERAL",
-    "severity": "medium",
-    "publishedAt": "2026-09-11T18:40:00.000Z"
+    "publishedAt": "2026-09-11T18:40:00.000Z",
+    "severity": "MEDIUM"
   },
   {
     "id": "https://krebsonsecurity.com/2026/09/microsoft-plugs-nearly-1000-security-holes/",
     "headline": "Microsoft Releases Updates for At Least 974 Security Holes",
     "summary": "Microsoft has released updates addressing at least 974 security vulnerabilities across its Windows operating systems and other software, marking its largest single patch release to date. While Microsoft noted that artificial intelligence has accelerated the discovery of these flaws, security experts caution that organizations are finding it difficult to test and deploy such a high volume of fixes every month.",
     "sourceName": "Krebs on Security",
-    "sourceUrl": "https://krebsonsecurity.com/2026/09/microsoft-plugs-nearly-1000-security-holes/",
+    "sourceUrl": "https://krebsonsecurity.com/2026/09/microsoft-plugs-nearly-1000-security-holes",
     "category": "VULNERABILITY",
-    "severity": "high",
-    "publishedAt": "2026-09-08T21:44:22.000Z"
+    "publishedAt": "2026-09-08T21:44:22.000Z",
+    "severity": "HIGH"
   },
   {
     "id": "https://krebsonsecurity.com/2026/09/fbi-probes-service-selling-153m-drivers-licenses/",
     "headline": "FBI Investigates Dark Web Service Selling 153 Million Driver's Licenses",
     "summary": "The FBI's New Orleans field office has launched an official inquiry into a new dark web identity theft service selling digital scans of over 153 million driver's licenses from the United States and Canada. The compromised scans appear to have been siphoned from a widely-used identity verification firm located in Louisiana, according to interviews with affected individuals.",
     "sourceName": "Krebs on Security",
-    "sourceUrl": "https://krebsonsecurity.com/2026/09/fbi-probes-service-selling-153m-drivers-licenses/",
+    "sourceUrl": "https://krebsonsecurity.com/2026/09/fbi-probes-service-selling-153m-drivers-licenses",
     "category": "BREACH",
-    "severity": "critical",
-    "publishedAt": "2026-09-01T22:40:28.000Z"
+    "publishedAt": "2026-09-01T22:40:28.000Z",
+    "severity": "CRITICAL"
   },
   {
     "id": "https://krebsonsecurity.com/2026/08/two-alleged-teampcp-hackers-arrested-in-australia/",
     "headline": "Australian Police Arrest Two Suspected TeamPCP Hackers",
     "summary": "The Australian Federal Police arrested two men, aged 21 and 23, in Western Australia for their suspected involvement in TeamPCP. The cybercrime and data extortion syndicate allegedly created malicious open-source software to target and rob thousands of businesses worldwide in an extensive series of software supply chain attacks.",
     "sourceName": "Krebs on Security",
-    "sourceUrl": "https://krebsonsecurity.com/2026/08/two-alleged-teampcp-hackers-arrested-in-australia/",
+    "sourceUrl": "https://krebsonsecurity.com/2026/08/two-alleged-teampcp-hackers-arrested-in-australia",
     "category": "GENERAL",
-    "severity": "medium",
-    "publishedAt": "2026-08-27T11:04:15.000Z"
+    "publishedAt": "2026-08-27T11:04:15.000Z",
+    "severity": "MEDIUM"
   }
 ]
