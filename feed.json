@@ -1,13 +1,33 @@
 [
   {
+    "id": "aHR0cHM6Ly93d3cuYmxlZXBp",
+    "headline": "CenterPoint Energy Confirms Customer Data Stolen in Cyberattack",
+    "summary": "CenterPoint Energy announced that customer data was stolen in a recent cyberattack. The utility confirmed the breach after detecting unauthorized access to its systems, though it did not disclose the number of records affected or the specific type of information compromised.",
+    "sourceName": "bleepingcomputer.com",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/centerpoint-energy-confirms-customer-data-stolen-in-cyberattack/",
+    "category": "BREACH",
+    "publishedAt": "2026-09-15T16:40:14.000Z",
+    "severity": "MEDIUM"
+  },
+  {
+    "id": "aHR0cHM6Ly90aGVoYWNrZXJu",
+    "headline": "Iranian Hackers Use Telegram-Controlled Malware to Spy on Dissidents and Journalists",
+    "summary": "Iranian hackers deployed malware controlled via Telegram to conduct surveillance on dissidents and journalists. The malicious software allowed attackers to monitor communications, track locations, and exfiltrate sensitive information from targets, highlighting a growing trend of state‑linked cyber espionage using popular messaging platforms.",
+    "sourceName": "feeds.feedburner.com",
+    "sourceUrl": "https://thehackernews.com/2026/09/iranian-hackers-use-telegram-controlled.html",
+    "category": "NATION_STATE",
+    "publishedAt": "2026-09-15T16:29:51.000Z",
+    "severity": "MEDIUM"
+  },
+  {
     "id": "aHR0cHM6Ly93d3cuc2VjdXJp",
-    "headline": "Exein raises $270M at $1.7B valuation for physical AI security",
-    "summary": "Exein, a cybersecurity startup focused on physical AI security, announced it has raised $270 million in funding, valuing the company at $1.7 billion. The funds will support development of a proprietary foundation model and accelerate the company's global expansion efforts.",
+    "headline": "$1 Million Sandbox Challenge Uncovers Linux Kernel Flaws",
+    "summary": "Researchers in a $1 million sandbox challenge uncovered multiple flaws in the Linux kernel, prompting Vercel to automate its vulnerability triage process due to the high volume of reports. The findings underscore the importance of coordinated bug‑hunting initiatives for improving open‑source security.",
     "sourceName": "securityweek.com",
-    "sourceUrl": "https://www.securityweek.com/exein-secures-270m-at-1-7b-valuation-for-physical-ai-security/",
-    "category": "GENERAL",
-    "publishedAt": "2026-09-15T15:45:13.000Z",
-    "severity": "LOW"
+    "sourceUrl": "https://www.securityweek.com/1-million-sandbox-challenge-uncovers-linux-kernel-flaws/",
+    "category": "VULNERABILITY",
+    "publishedAt": "2026-09-15T16:00:00.000Z",
+    "severity": "MEDIUM"
   },
   {
     "id": "https://www.securityweek.com/root-rce-zero-day-in-cisco-secure-email-gateway-under-active-exploitation/",
