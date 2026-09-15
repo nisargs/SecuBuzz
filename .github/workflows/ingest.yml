@@ -27,7 +27,7 @@ jobs:
       - name: Generate feed
         run: node scripts/ingest.mjs
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
 
       - name: Commit updated feed
         uses: stefanzweifel/git-auto-commit-action@v5
