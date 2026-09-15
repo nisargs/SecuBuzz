@@ -87,52 +87,6 @@ export default function SettingsScreen() {
           </Text>
         </View>
 
-        {/* ABOUT */}
-        <View style={styles.card}>
-          <View style={styles.cardHeader}>
-            <Ionicons
-              name="information-circle-outline"
-              size={22}
-              color={BLUE}
-            />
-
-            <Text style={styles.label}>
-              About
-            </Text>
-          </View>
-
-          <Text style={styles.body}>
-            SecuBuzz is a short-form
-            cybersecurity news reader.
-            You see a headline, a brief
-            summary, and a link to the
-            original source. Full articles
-            stay on the publisher's site.
-          </Text>
-        </View>
-
-        {/* DATA */}
-        <View style={styles.card}>
-          <View style={styles.cardHeader}>
-            <Ionicons
-              name="cloud-outline"
-              size={22}
-              color={BLUE}
-            />
-
-            <Text style={styles.label}>
-              Data
-            </Text>
-          </View>
-
-          <Text style={styles.body}>
-            News is retrieved from the
-            SecuBuzz cybersecurity feed.
-            Bookmarks are stored locally
-            on this device.
-          </Text>
-        </View>
-
         {/* APPEARANCE */}
         <View style={styles.card}>
           <View style={styles.cardHeader}>
@@ -192,9 +146,21 @@ export default function SettingsScreen() {
               router.push('/data-privacy')
             }
           />
+        </View>
 
-          <View style={styles.rowDivider} />
+        {/* ABOUT & SUPPORT */}
+        <View
+          style={[
+            styles.sectionHeader,
+            styles.aboutSectionHeader,
+          ]}
+        >
+          <Text style={styles.sectionLabel}>
+            ABOUT & SUPPORT
+          </Text>
+        </View>
 
+        <View style={styles.legalCard}>
           <SettingsRow
             icon="information-outline"
             title="About SecuBuzz"
@@ -302,6 +268,10 @@ const styles = StyleSheet.create({
     marginHorizontal: spacing.lg,
     marginTop: spacing.md,
     marginBottom: 9,
+  },
+
+  aboutSectionHeader: {
+    marginTop: spacing.lg,
   },
 
   sectionLabel: {
