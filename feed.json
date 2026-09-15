@@ -1,5 +1,15 @@
 [
   {
+    "id": "https://www.securityweek.com/root-rce-zero-day-in-cisco-secure-email-gateway-under-active-exploitation/",
+    "headline": "Root RCE Zero-Day in Cisco Secure Email Gateway Under Active Exploitation",
+    "summary": "An unauthenticated attacker is actively exploiting CVE-2026-76461 to achieve remote code execution on Cisco Secure Email Gateway systems. This zero-day vulnerability allows for the execution of arbitrary commands on the underlying operating system with root privileges, posing a significant security risk to affected organizations.",
+    "sourceName": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/root-rce-zero-day-in-cisco-secure-email-gateway-under-active-exploitation/",
+    "category": "VULNERABILITY",
+    "severity": "critical",
+    "publishedAt": "2026-09-15T05:18:51.000Z"
+  },
+  {
     "id": "https://www.darkreading.com/cyberattacks-data-breaches/sandworm-chains-cisco-vulnerabilities-cyclops-blink",
     "headline": "Sandworm Chains Cisco Vulnerabilities to Deploy Cyclops Blink",
     "summary": "The notorious Russian threat group Sandworm is spreading an upgraded version of Cyclops Blink, a botnet malware that the FBI disrupted in 2022. The campaign reportedly chains Cisco vulnerabilities to deploy the malware.",
