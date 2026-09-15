@@ -110,13 +110,6 @@ export default function TabsLayout() {
           ),
         }}
       />
-
-      <Tabs.Screen
-        name="threats"
-        options={{
-          href: null,
-        }}
-      />
     </Tabs>
   );
 }

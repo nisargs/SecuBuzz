@@ -110,23 +110,15 @@ export function ArticleCard({
       {/* DIVIDER */}
       <View style={styles.divider} />
 
-      {/* SUMMARY */}
-      <Text
-        style={styles.summary}
-        numberOfLines={8}
-      >
-        {article.summary}
-      </Text>
-
-      {/* FIXED FOOTER */}
-      <View style={styles.footer}>
-        <Text
-          style={styles.footerPreview}
-          numberOfLines={2}
-        >
+      {/* FULL SUMMARY */}
+      <View style={styles.summaryContainer}>
+        <Text style={styles.summary}>
           {article.summary}
         </Text>
+      </View>
 
+      {/* READ MORE */}
+      <View style={styles.footer}>
         <Pressable
           accessibilityRole="button"
           accessibilityLabel="Open original article"
@@ -161,7 +153,7 @@ const styles = StyleSheet.create({
       colors.background,
     paddingHorizontal: spacing.lg,
     paddingTop: spacing.md,
-    paddingBottom: 105,
+    paddingBottom: 68,
   },
 
   metaTopRow: {
@@ -205,11 +197,14 @@ const styles = StyleSheet.create({
     marginBottom: spacing.lg,
   },
 
+  summaryContainer: {
+    flex: 1,
+  },
+
   summary: {
     color: colors.textSecondary,
     fontSize: 16,
     lineHeight: 25,
-    flexShrink: 1,
   },
 
   footer: {
@@ -217,17 +212,8 @@ const styles = StyleSheet.create({
     left: spacing.lg,
     right: spacing.lg,
     bottom: 10,
-    paddingTop: 8,
     backgroundColor:
       colors.background,
-  },
-
-  footerPreview: {
-    color: colors.textPrimary,
-    fontSize: 14,
-    lineHeight: 18,
-    fontWeight: '700',
-    marginBottom: 7,
   },
 
   readMoreRow: {
