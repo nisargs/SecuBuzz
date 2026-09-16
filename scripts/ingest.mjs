@@ -1,237 +1,540 @@
-import fs from 'node:fs/promises';
+import fs from "node:fs/promises";
+import path from "node:path";
+import process from "node:process";
+import { fileURLToPath } from "node:url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const ROOT_DIR = path.resolve(__dirname, "..");
+
+const FEED_FILE = path.join(ROOT_DIR, "feed.json");
+const SEEN_URLS_FILE = path.join(ROOT_DIR, "seen-urls.json");
+
+const GROQ_API_URL =
+  "https://api.groq.com/openai/v1/chat/completions";
+
+const GROQ_API_KEY = process.env.GROQ_API_KEY;
+
+const AI_MODEL = "openai/gpt-oss-20b";
+
+/*
+ * ---------------------------------------------------------------------------
+ * INGESTION CONFIGURATION
+ * ---------------------------------------------------------------------------
+ *
+ * We deliberately keep this conservative because the current Groq limit
+ * for this model is 8,000 tokens per minute on the free plan.
+ */
+
+const ARTICLES_PER_AI_BATCH = 2;
+
+const MAX_NEW_CANDIDATES = 8;
+
+const ITEMS_PER_FEED = 10;
+
+const MAX_FEED_ARTICLES = 100;
+
+const DESCRIPTION_MAX_LENGTH = 900;
+
+const MAX_COMPLETION_TOKENS = 1200;
+
+/*
+ * Minimum delay between successful AI requests.
+ *
+ * The real protection comes from the Groq rate-limit headers below.
+ * This delay simply prevents us from firing requests back-to-back.
+ */
+const MIN_DELAY_BETWEEN_REQUESTS_MS = 5000;
+
+/*
+ * When remaining TPM falls below this amount, wait for the rate-limit
+ * window to reset before making another request.
+ */
+const MIN_REMAINING_TOKENS_BEFORE_WAIT = 2500;
+
+/*
+ * Number of times a 429 request can be retried.
+ */
+const MAX_RATE_LIMIT_RETRIES = 3;
+
+/*
+ * Extra safety buffer after the server says the token window will reset.
+ */
+const RATE_LIMIT_RESET_BUFFER_MS = 1500;
+
+// -----------------------------------------------------------------------------
+// RSS SOURCES
+// -----------------------------------------------------------------------------
 
 const FEEDS = [
-  'https://feeds.feedburner.com/TheHackersNews',
-  'https://www.bleepingcomputer.com/feed/',
-  'https://www.cisa.gov/cybersecurity-advisories/all.xml',
-  'https://www.securityweek.com/feed/',
-  'https://www.darkreading.com/rss.xml',
-  'https://www.helpnetsecurity.com/feed/',
-  'https://therecord.media/feed/',
+  {
+    name: "The Hacker News",
+    url: "https://feeds.feedburner.com/TheHackersNews",
+  },
+  {
+    name: "BleepingComputer",
+    url: "https://www.bleepingcomputer.com/feed/",
+  },
+  {
+    name: "CISA",
+    url: "https://www.cisa.gov/cybersecurity-advisories/all.xml",
+  },
+  {
+    name: "SecurityWeek",
+    url: "https://www.securityweek.com/feed/",
+  },
+  {
+    name: "Dark Reading",
+    url: "https://www.darkreading.com/rss.xml",
+  },
+  {
+    name: "Help Net Security",
+    url: "https://www.helpnetsecurity.com/feed/",
+  },
+  {
+    name: "The Record",
+    url: "https://therecord.media/feed/",
+  },
 ];
 
-const FEED_PATH = './feed.json';
-const SEEN_URLS_PATH = './seen-urls.json';
+// -----------------------------------------------------------------------------
+// VALIDATION
+// -----------------------------------------------------------------------------
 
-const OPENROUTER_ENDPOINT =
-  'https://openrouter.ai/api/v1/chat/completions';
-
-const AI_MODEL =
-  'nvidia/nemotron-3-super-120b-a12b:free';
-
-const ARTICLES_PER_AI_BATCH = 4;
-
-const MAX_FEED_SIZE = 100;
-const MAX_SEEN_URLS = 2000;
-const MAX_RSS_ITEMS_PER_FEED = 10;
-const MAX_CONTENT_LENGTH = 5000;
-
-const VALID_CATEGORIES = new Set([
-  'BREACH',
-  'RANSOMWARE',
-  'CVE',
-  'VULNERABILITY',
-  'NATION_STATE',
-  'GENERAL',
-]);
-
-const VALID_SEVERITIES = new Set([
-  'LOW',
-  'MEDIUM',
-  'HIGH',
-  'CRITICAL',
-]);
-
-function log(message) {
-  console.log(message);
-}
-
-function cleanText(value) {
-  if (typeof value !== 'string') {
-    return '';
-  }
-
-  return value
-    .replace(/\s+/g, ' ')
-    .replace(/&nbsp;/gi, ' ')
-    .trim();
-}
-
-function stripHtml(value) {
-  return cleanText(
-    value
-      .replace(/<script[\s\S]*?<\/script>/gi, ' ')
-      .replace(/<style[\s\S]*?<\/style>/gi, ' ')
-      .replace(/<[^>]+>/g, ' ')
-      .replace(/&amp;/gi, '&')
-      .replace(/&quot;/gi, '"')
-      .replace(/&#39;/gi, "'")
-      .replace(/&lt;/gi, '<')
-      .replace(/&gt;/gi, '>')
+if (!GROQ_API_KEY) {
+  throw new Error(
+    "Missing GROQ_API_KEY environment variable.",
   );
 }
 
-function truncateText(value, maxLength) {
-  if (value.length <= maxLength) {
-    return value;
-  }
+// -----------------------------------------------------------------------------
+// GENERIC HELPERS
+// -----------------------------------------------------------------------------
 
-  return `${value.slice(0, maxLength)}...`;
+function sleep(milliseconds) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, milliseconds);
+  });
 }
 
-function normalizeCategory(value) {
-  const category = cleanText(value).toUpperCase();
-
-  if (VALID_CATEGORIES.has(category)) {
-    return category;
+function cleanText(value) {
+  if (value === null || value === undefined) {
+    return "";
   }
 
-  return 'GENERAL';
+  return String(value)
+    .replace(/<!\[CDATA\[(.*?)\]\]>/gis, "$1")
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;/gi, " ")
+    .replace(/&amp;/gi, "&")
+    .replace(/&quot;/gi, '"')
+    .replace(/&#39;/gi, "'")
+    .replace(/&apos;/gi, "'")
+    .replace(/&lt;/gi, "<")
+    .replace(/&gt;/gi, ">")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
-function normalizeSeverity(value) {
-  const severity = cleanText(value).toUpperCase();
-
-  if (VALID_SEVERITIES.has(severity)) {
-    return severity;
+function decodeXml(value) {
+  if (!value) {
+    return "";
   }
 
-  return 'MEDIUM';
+  return String(value)
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&apos;/g, "'")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&#(\d+);/g, (_, code) =>
+      String.fromCharCode(Number(code)),
+    )
+    .replace(/&#x([0-9a-f]+);/gi, (_, code) =>
+      String.fromCharCode(parseInt(code, 16)),
+    );
 }
 
-function normalizeDate(value) {
-  const date = new Date(value);
+function extractTag(block, tagName) {
+  const regex = new RegExp(
+    `<${tagName}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${tagName}>`,
+    "i",
+  );
 
-  if (Number.isNaN(date.getTime())) {
-    return new Date().toISOString();
+  const match = block.match(regex);
+
+  if (!match) {
+    return "";
   }
 
-  return date.toISOString();
+  return cleanText(decodeXml(match[1]));
 }
 
-function getSourceName(feedUrl, item) {
-  const explicitSource =
-    cleanText(item.sourceName) ||
-    cleanText(item.source) ||
-    cleanText(item.publisher);
+function extractAtomLink(block) {
+  const match = block.match(
+    /<link[^>]+href=["']([^"']+)["'][^>]*>/i,
+  );
 
-  if (explicitSource) {
-    return explicitSource;
-  }
-
-  try {
-    return new URL(feedUrl).hostname.replace(/^www\./, '');
-  } catch {
-    return 'Unknown Source';
-  }
+  return match ? decodeXml(match[1]).trim() : "";
 }
 
-function parseXmlItems(xml) {
+function extractRssItems(xml) {
   const items = [];
 
-  const rssMatches =
-    xml.match(/<item\b[\s\S]*?<\/item>/gi) || [];
+  const itemMatches =
+    xml.match(
+      /<item(?:\s[^>]*)?>[\s\S]*?<\/item>/gi,
+    ) || [];
 
-  for (const block of rssMatches) {
-    const title =
-      block.match(
-        /<title(?:\s[^>]*)?>([\s\S]*?)<\/title>/i
-      )?.[1] || '';
+  for (const item of itemMatches) {
+    const title = extractTag(item, "title");
 
     const link =
-      block.match(
-        /<link(?:\s[^>]*)?>([\s\S]*?)<\/link>/i
-      )?.[1] || '';
+      extractTag(item, "link") ||
+      extractTag(item, "guid");
 
     const description =
-      block.match(
-        /<description(?:\s[^>]*)?>([\s\S]*?)<\/description>/i
-      )?.[1] || '';
+      extractTag(item, "description") ||
+      extractTag(item, "content:encoded");
 
     const pubDate =
-      block.match(
-        /<pubDate(?:\s[^>]*)?>([\s\S]*?)<\/pubDate>/i
-      )?.[1] || '';
+      extractTag(item, "pubDate") ||
+      extractTag(item, "published") ||
+      extractTag(item, "dc:date");
 
-    const source =
-      block.match(
-        /<source(?:\s[^>]*)?>([\s\S]*?)<\/source>/i
-      )?.[1] || '';
+    if (!title || !link) {
+      continue;
+    }
 
     items.push({
-      title: stripHtml(title),
-      link: cleanText(link),
-      description: stripHtml(description),
-      pubDate: cleanText(pubDate),
-      source: stripHtml(source),
+      title,
+      url: link,
+      description,
+      publishedAt: pubDate,
     });
   }
 
-  if (items.length > 0) {
-    return items;
-  }
+  /*
+   * Atom fallback.
+   */
+  if (items.length === 0) {
+    const entryMatches =
+      xml.match(
+        /<entry(?:\s[^>]*)?>[\s\S]*?<\/entry>/gi,
+      ) || [];
 
-  const atomEntries =
-    xml.match(/<entry\b[\s\S]*?<\/entry>/gi) || [];
+    for (const entry of entryMatches) {
+      const title = extractTag(entry, "title");
 
-  for (const block of atomEntries) {
-    const title =
-      block.match(
-        /<title(?:\s[^>]*)?>([\s\S]*?)<\/title>/i
-      )?.[1] || '';
+      const link =
+        extractAtomLink(entry) ||
+        extractTag(entry, "id");
 
-    const description =
-      block.match(
-        /<(?:summary|content)(?:\s[^>]*)?>([\s\S]*?)<\/(?:summary|content)>/i
-      )?.[1] || '';
+      const description =
+        extractTag(entry, "summary") ||
+        extractTag(entry, "content");
 
-    const published =
-      block.match(
-        /<(?:published|updated)(?:\s[^>]*)?>([\s\S]*?)<\/(?:published|updated)>/i
-      )?.[1] || '';
+      const publishedAt =
+        extractTag(entry, "published") ||
+        extractTag(entry, "updated");
 
-    const href =
-      block.match(
-        /<link[^>]+href=["']([^"']+)["'][^>]*\/?>/i
-      )?.[1] || '';
+      if (!title || !link) {
+        continue;
+      }
 
-    items.push({
-      title: stripHtml(title),
-      link: cleanText(href),
-      description: stripHtml(description),
-      pubDate: cleanText(published),
-      source: '',
-    });
+      items.push({
+        title,
+        url: link,
+        description,
+        publishedAt,
+      });
+    }
   }
 
   return items;
 }
 
-async function fetchFeed(feedUrl) {
-  const response = await fetch(feedUrl, {
-    headers: {
-      'User-Agent': 'SecuBuzz/1.0 RSS Reader',
-      Accept:
-        'application/rss+xml, application/atom+xml, application/xml, text/xml',
-    },
-  });
+function normaliseUrl(url) {
+  try {
+    const parsed = new URL(url);
 
-  if (!response.ok) {
-    throw new Error(
-      `HTTP ${response.status} ${response.statusText}`
-    );
+    parsed.hash = "";
+
+    const trackingParams = [
+      "utm_source",
+      "utm_medium",
+      "utm_campaign",
+      "utm_term",
+      "utm_content",
+      "fbclid",
+      "gclid",
+    ];
+
+    for (const parameter of trackingParams) {
+      parsed.searchParams.delete(parameter);
+    }
+
+    return parsed.toString();
+  } catch {
+    return String(url).trim();
   }
-
-  return response.text();
 }
 
-async function loadJson(path, fallback) {
+function isValidHttpUrl(value) {
   try {
-    const raw = await fs.readFile(path, 'utf8');
+    const url = new URL(value);
 
-    if (!raw.trim()) {
-      return fallback;
+    return (
+      url.protocol === "http:" ||
+      url.protocol === "https:"
+    );
+  } catch {
+    return false;
+  }
+}
+
+function uniqueByUrl(items) {
+  const seen = new Set();
+  const result = [];
+
+  for (const item of items) {
+    const normalized = normaliseUrl(item.url);
+
+    if (!normalized || seen.has(normalized)) {
+      continue;
     }
+
+    seen.add(normalized);
+
+    result.push({
+      ...item,
+      url: normalized,
+    });
+  }
+
+  return result;
+}
+
+function truncateText(text, maxLength) {
+  if (!text) {
+    return "";
+  }
+
+  if (text.length <= maxLength) {
+    return text;
+  }
+
+  return `${text.slice(0, maxLength)}...`;
+}
+
+function safeJsonParse(text) {
+  if (!text || typeof text !== "string") {
+    return null;
+  }
+
+  const trimmed = text.trim();
+
+  try {
+    return JSON.parse(trimmed);
+  } catch {
+    // Continue.
+  }
+
+  const withoutFence = trimmed
+    .replace(/^```json\s*/i, "")
+    .replace(/^```\s*/i, "")
+    .replace(/\s*```$/i, "")
+    .trim();
+
+  try {
+    return JSON.parse(withoutFence);
+  } catch {
+    // Continue.
+  }
+
+  const firstBrace = withoutFence.indexOf("{");
+  const lastBrace = withoutFence.lastIndexOf("}");
+
+  if (
+    firstBrace >= 0 &&
+    lastBrace > firstBrace
+  ) {
+    const candidate = withoutFence.slice(
+      firstBrace,
+      lastBrace + 1,
+    );
+
+    try {
+      return JSON.parse(candidate);
+    } catch {
+      return null;
+    }
+  }
+
+  return null;
+}
+
+function extractArticleArray(value) {
+  if (!value) {
+    return [];
+  }
+
+  if (Array.isArray(value)) {
+    return value;
+  }
+
+  if (
+    typeof value === "object" &&
+    Array.isArray(value.articles)
+  ) {
+    return value.articles;
+  }
+
+  if (
+    typeof value === "object" &&
+    value.output &&
+    typeof value.output === "object" &&
+    Array.isArray(value.output.articles)
+  ) {
+    return value.output.articles;
+  }
+
+  return [];
+}
+
+function normaliseCategory(category) {
+  const allowed = new Set([
+    "BREACH",
+    "RANSOMWARE",
+    "CVE",
+    "VULNERABILITY",
+    "NATION_STATE",
+    "GENERAL",
+  ]);
+
+  const normalized = String(category || "")
+    .trim()
+    .toUpperCase()
+    .replace(/[\s-]+/g, "_");
+
+  return allowed.has(normalized)
+    ? normalized
+    : "GENERAL";
+}
+
+function normaliseSeverity(severity) {
+  const allowed = new Set([
+    "LOW",
+    "MEDIUM",
+    "HIGH",
+    "CRITICAL",
+  ]);
+
+  const normalized = String(severity || "")
+    .trim()
+    .toUpperCase();
+
+  return allowed.has(normalized)
+    ? normalized
+    : "MEDIUM";
+}
+
+function wordCount(text) {
+  return String(text || "")
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean)
+    .length;
+}
+
+// -----------------------------------------------------------------------------
+// AI RESULT VALIDATION
+// -----------------------------------------------------------------------------
+
+function validateAiArticle(
+  article,
+  candidateMap,
+) {
+  if (!article || typeof article !== "object") {
+    return null;
+  }
+
+  const index = Number(article.index);
+
+  if (
+    !Number.isInteger(index) ||
+    !candidateMap.has(index)
+  ) {
+    return null;
+  }
+
+  const candidate = candidateMap.get(index);
+
+  const headline = cleanText(
+    article.headline,
+  );
+
+  const summary = cleanText(
+    article.summary,
+  );
+
+  if (!headline || !summary) {
+    return null;
+  }
+
+  const words = wordCount(summary);
+
+  /*
+   * We ask for approximately 40-60 words.
+   *
+   * Allow 20-90 to avoid throwing away otherwise
+   * useful content if the model is slightly outside
+   * the target range.
+   */
+  if (words < 20 || words > 90) {
+    return null;
+  }
+
+  const sourceUrl = normaliseUrl(
+    candidate.url,
+  );
+
+  return {
+    id: sourceUrl,
+    sourceUrl,
+    title: headline,
+    headline,
+    summary,
+    category: normaliseCategory(
+      article.category,
+    ),
+    severity: normaliseSeverity(
+      article.severity,
+    ),
+    source: candidate.source,
+    publishedAt:
+      candidate.publishedAt ||
+      new Date().toISOString(),
+    url: sourceUrl,
+  };
+}
+
+// -----------------------------------------------------------------------------
+// FILE HANDLING
+// -----------------------------------------------------------------------------
+
+async function readJsonFile(
+  filePath,
+  fallback,
+) {
+  try {
+    const raw = await fs.readFile(
+      filePath,
+      "utf8",
+    );
 
     return JSON.parse(raw);
   } catch {
@@ -239,328 +542,113 @@ async function loadJson(path, fallback) {
   }
 }
 
-async function saveJson(path, value) {
+async function writeJsonFile(
+  filePath,
+  value,
+) {
   await fs.writeFile(
-    path,
+    filePath,
     `${JSON.stringify(value, null, 2)}\n`,
-    'utf8'
+    "utf8",
   );
 }
 
-function normalizeExistingArticle(article) {
-  if (!article || typeof article !== 'object') {
-    return null;
-  }
+// -----------------------------------------------------------------------------
+// FETCH RSS
+// -----------------------------------------------------------------------------
 
-  const id = cleanText(article.id);
-  const headline = cleanText(article.headline);
-  const summary = cleanText(article.summary);
-  const sourceName = cleanText(article.sourceName);
-  const sourceUrl = cleanText(article.sourceUrl);
-
-  if (
-    !id ||
-    !headline ||
-    !summary ||
-    !sourceName ||
-    !sourceUrl
-  ) {
-    return null;
-  }
-
-  return {
-    id,
-    headline,
-    summary,
-    sourceName,
-    sourceUrl,
-    category: normalizeCategory(article.category),
-    publishedAt: normalizeDate(article.publishedAt),
-    severity: normalizeSeverity(article.severity),
-  };
-}
-
-function normalizeExistingFeed(value) {
-  if (!Array.isArray(value)) {
-    return [];
-  }
-
-  const normalized = [];
-
-  for (const item of value) {
-    const article = normalizeExistingArticle(item);
-
-    if (article) {
-      normalized.push(article);
-    }
-  }
-
-  return normalized;
-}
-
-function extractJsonObject(text) {
-  const start = text.indexOf('{');
-
-  if (start === -1) {
-    return null;
-  }
-
-  let depth = 0;
-  let inString = false;
-  let escaped = false;
-
-  for (let i = start; i < text.length; i += 1) {
-    const char = text[i];
-
-    if (inString) {
-      if (escaped) {
-        escaped = false;
-      } else if (char === '\\') {
-        escaped = true;
-      } else if (char === '"') {
-        inString = false;
-      }
-
-      continue;
-    }
-
-    if (char === '"') {
-      inString = true;
-      continue;
-    }
-
-    if (char === '{') {
-      depth += 1;
-    } else if (char === '}') {
-      depth -= 1;
-
-      if (depth === 0) {
-        return text.slice(start, i + 1);
-      }
-    }
-  }
-
-  return null;
-}
-
-function extractCompleteArticleObjects(text) {
-  const results = [];
-
-  const articlesStart = text.indexOf('"articles"');
-
-  if (articlesStart === -1) {
-    return results;
-  }
-
-  const arrayStart = text.indexOf('[', articlesStart);
-
-  if (arrayStart === -1) {
-    return results;
-  }
-
-  let objectStart = -1;
-  let depth = 0;
-  let inString = false;
-  let escaped = false;
-
-  for (
-    let i = arrayStart + 1;
-    i < text.length;
-    i += 1
-  ) {
-    const char = text[i];
-
-    if (inString) {
-      if (escaped) {
-        escaped = false;
-      } else if (char === '\\') {
-        escaped = true;
-      } else if (char === '"') {
-        inString = false;
-      }
-
-      continue;
-    }
-
-    if (char === '"') {
-      inString = true;
-      continue;
-    }
-
-    if (char === '{') {
-      if (depth === 0) {
-        objectStart = i;
-      }
-
-      depth += 1;
-      continue;
-    }
-
-    if (char === '}') {
-      depth -= 1;
-
-      if (depth === 0 && objectStart !== -1) {
-        const rawObject =
-          text.slice(objectStart, i + 1);
-
-        try {
-          const parsed = JSON.parse(rawObject);
-          results.push(parsed);
-        } catch {
-          // Ignore malformed objects.
-        }
-
-        objectStart = -1;
-      }
-    }
-
-    if (char === ']' && depth === 0) {
-      break;
-    }
-  }
-
-  return results;
-}
-
-function extractArticleResults(content) {
-  if (
-    typeof content !== 'string' ||
-    !content.trim()
-  ) {
-    return [];
-  }
-
-  const cleaned = content
-    .replace(/^```json\s*/i, '')
-    .replace(/^```\s*/i, '')
-    .replace(/\s*```$/i, '')
-    .trim();
-
-  try {
-    const parsed = JSON.parse(cleaned);
-
-    if (Array.isArray(parsed)) {
-      return parsed;
-    }
-
-    if (Array.isArray(parsed.articles)) {
-      return parsed.articles;
-    }
-  } catch {
-    // Continue with recovery.
-  }
-
-  const object = extractJsonObject(cleaned);
-
-  if (object) {
-    try {
-      const parsed = JSON.parse(object);
-
-      if (Array.isArray(parsed)) {
-        return parsed;
-      }
-
-      if (Array.isArray(parsed.articles)) {
-        return parsed.articles;
-      }
-    } catch {
-      // Continue with individual object recovery.
-    }
-  }
-
-  return extractCompleteArticleObjects(cleaned);
-}
-
-function getResponseText(responseJson) {
-  const choice = responseJson?.choices?.[0];
-
-  if (!choice) {
-    return '';
-  }
-
-  const content = choice.message?.content;
-
-  if (typeof content === 'string') {
-    return content;
-  }
-
-  if (Array.isArray(content)) {
-    return content
-      .map((part) => {
-        if (typeof part === 'string') {
-          return part;
-        }
-
-        return part?.text || '';
-      })
-      .join('');
-  }
-
-  return '';
-}
-
-function getFinishReason(responseJson) {
-  return (
-    responseJson?.choices?.[0]?.finish_reason ||
-    'unknown'
+async function fetchFeed(feed) {
+  console.log(
+    `Fetching: ${feed.url}`,
   );
+
+  const response = await fetch(
+    feed.url,
+    {
+      headers: {
+        "User-Agent":
+          "SecuBuzz/1.0 RSS Reader",
+        Accept:
+          "application/rss+xml, application/xml, text/xml, */*",
+      },
+    },
+  );
+
+  if (!response.ok) {
+    throw new Error(
+      `HTTP ${response.status} ${response.statusText}`,
+    );
+  }
+
+  const xml = await response.text();
+
+  const items = extractRssItems(xml)
+    .slice(0, ITEMS_PER_FEED)
+    .map((item) => ({
+      ...item,
+      source: feed.name,
+      url: normaliseUrl(item.url),
+    }))
+    .filter((item) =>
+      isValidHttpUrl(item.url),
+    );
+
+  console.log(
+    `Found ${items.length} RSS items.`,
+  );
+
+  return items;
 }
 
-function buildBatchPrompt(candidates) {
-  const candidateText = candidates
-    .map(
-      (candidate, index) => `
-ARTICLE ${index + 1}
+// -----------------------------------------------------------------------------
+// AI PROMPT
+// -----------------------------------------------------------------------------
 
-Title:
-${candidate.title}
-
-Source:
-${candidate.sourceName}
-
-Published:
-${candidate.publishedAt}
-
-Content:
-${candidate.content}
-`
-    )
-    .join('\n');
+function buildBatchPrompt(
+  candidates,
+) {
+  const articles = candidates.map(
+    (candidate, index) => ({
+      index,
+      source: candidate.source,
+      title: candidate.title,
+      description: truncateText(
+        candidate.description,
+        DESCRIPTION_MAX_LENGTH,
+      ),
+      publishedAt:
+        candidate.publishedAt || "",
+    }),
+  );
 
   return `
-You are the editorial engine for SecuBuzz.
+You are the content editor for SecuBuzz, a concise cybersecurity news app.
 
-There are exactly ${candidates.length} articles below.
+Process each supplied cybersecurity news article independently.
 
-You MUST return exactly ${candidates.length} results.
+For each article:
 
-Return exactly one result for every article:
-- ARTICLE 1 -> index 1
-- ARTICLE 2 -> index 2
-- ARTICLE 3 -> index 3
-- ARTICLE 4 -> index 4
+1. Create a clear factual headline.
+2. Create a concise 40-60 word summary.
+3. Assign exactly one category.
+4. Assign exactly one severity.
 
-Never omit an article.
-Never merge articles.
-Never invent an article.
+IMPORTANT RULES:
 
-Process every article independently.
-
-RULES:
-- Use only information supplied in the article.
+- Use ONLY information present in the supplied title and description.
 - Do not invent facts.
-- Keep the original meaning accurate.
-- Write an approximately 40-60 word cybersecurity news summary.
-- Do not shorten the summary with "...".
-- Write a concise, accurate headline.
-- Do not mention AI.
-- Do not explain your work.
-- Do not show reasoning.
-- Do not use markdown.
-- Do not include URLs.
-- Return ONLY valid JSON.
+- Do not combine information between articles.
+- Do not invent people, organizations, dates, numbers, vulnerabilities, attackers, victims, malware names, or technical details.
+- Do not use information from your own knowledge.
+- The summary must make sense without opening the source.
+- Do not use Markdown.
+- Do not use bullet points inside summaries.
+- Do not use ellipses.
+- If there is not enough information for a reliable summary, omit that article.
+- The "index" must exactly match the supplied article index.
 
 Allowed categories:
+
 BREACH
 RANSOMWARE
 CVE
@@ -569,594 +657,1042 @@ NATION_STATE
 GENERAL
 
 Allowed severities:
+
 LOW
 MEDIUM
 HIGH
 CRITICAL
 
-Required structure:
+Return ONLY the JSON structure required by the schema.
 
-{
-  "articles": [
-    {
-      "index": 1,
-      "headline": "Short accurate headline",
-      "summary": "Approximately 40-60 words.",
-      "category": "GENERAL",
-      "severity": "MEDIUM"
-    },
-    {
-      "index": 2,
-      "headline": "Short accurate headline",
-      "summary": "Approximately 40-60 words.",
-      "category": "GENERAL",
-      "severity": "MEDIUM"
-    },
-    {
-      "index": 3,
-      "headline": "Short accurate headline",
-      "summary": "Approximately 40-60 words.",
-      "category": "GENERAL",
-      "severity": "MEDIUM"
-    },
-    {
-      "index": 4,
-      "headline": "Short accurate headline",
-      "summary": "Approximately 40-60 words.",
-      "category": "GENERAL",
-      "severity": "MEDIUM"
+Input articles:
+
+${JSON.stringify(
+  articles,
+  null,
+  2,
+)}
+`.trim();
+}
+
+// -----------------------------------------------------------------------------
+// RATE LIMIT HELPERS
+// -----------------------------------------------------------------------------
+
+function parseSeconds(value) {
+  if (!value) {
+    return 0;
+  }
+
+  const text = String(value).trim();
+
+  /*
+   * Examples:
+   * 7.66s
+   * 2m59.56s
+   * 12.0825s
+   */
+
+  let totalSeconds = 0;
+
+  const minutesMatch =
+    text.match(/([\d.]+)\s*m/i);
+
+  const secondsMatch =
+    text.match(/([\d.]+)\s*s/i);
+
+  if (minutesMatch) {
+    totalSeconds +=
+      Number(minutesMatch[1]) * 60;
+  }
+
+  if (secondsMatch) {
+    totalSeconds +=
+      Number(secondsMatch[1]);
+  }
+
+  if (totalSeconds === 0) {
+    const numeric = Number(text);
+
+    if (Number.isFinite(numeric)) {
+      totalSeconds = numeric;
     }
-  ]
+  }
+
+  return Number.isFinite(totalSeconds)
+    ? totalSeconds
+    : 0;
 }
 
-Before responding, verify:
-- Exactly ${candidates.length} objects exist.
-- Every index from 1 through ${candidates.length} appears exactly once.
-- Every object has headline, summary, category, and severity.
-
-${candidateText}
-`;
-}
-
-async function requestOpenRouter(prompt) {
-  const apiKey = process.env.OPENROUTER_API_KEY;
-
-  if (!apiKey) {
-    throw new Error(
-      'OPENROUTER_API_KEY is not configured.'
-    );
-  }
-
-  const requestBody = {
-    model: AI_MODEL,
-    temperature: 0.1,
-    max_tokens: 5000,
-    messages: [
-      {
-        role: 'system',
-        content:
-          'You are a cybersecurity news editor. You must process every supplied article and return exactly one JSON result for each article. Never omit an article. Return only valid JSON.',
-      },
-      {
-        role: 'user',
-        content: prompt,
-      },
-    ],
-    response_format: {
-      type: 'json_object',
-    },
-  };
-
-  const response = await fetch(
-    OPENROUTER_ENDPOINT,
-    {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        'Content-Type': 'application/json',
-        'HTTP-Referer':
-          'https://secubuzz.app',
-        'X-Title': 'SecuBuzz',
-      },
-      body: JSON.stringify(requestBody),
-    }
-  );
-
-  const responseText = await response.text();
-
-  log(
-    `OpenRouter HTTP status: ${response.status} ${response.statusText}`
-  );
-
-  if (!responseText.trim()) {
-    log(
-      'OpenRouter returned an empty HTTP response body.'
-    );
-
-    throw new Error(
-      `OpenRouter returned an empty response body (HTTP ${response.status}).`
-    );
-  }
-
-  let responseJson;
-
-  try {
-    responseJson = JSON.parse(responseText);
-  } catch {
-    log(
-      `OpenRouter returned non-JSON response body:`
-    );
-    log(responseText.slice(0, 2000));
-
-    throw new Error(
-      'OpenRouter returned a non-JSON response.'
-    );
-  }
-
-  if (!response.ok) {
-    log(
-      'OpenRouter error response:'
-    );
-
-    log(
-      JSON.stringify(
-        responseJson,
-        null,
-        2
-      ).slice(0, 3000)
-    );
-
-    const message =
-      responseJson?.error?.message ||
-      responseJson?.error ||
-      `HTTP ${response.status}`;
-
-    throw new Error(
-      `OpenRouter request failed: ${message}`
-    );
-  }
-
-  log(
-    `OpenRouter response top-level keys: ${Object.keys(
-      responseJson
-    ).join(', ')}`
-  );
-
-  if (!Array.isArray(responseJson?.choices)) {
-    log(
-      'OpenRouter response does not contain a choices array.'
-    );
-
-    log(
-      'OpenRouter response structure:'
-    );
-
-    log(
-      JSON.stringify(
-        responseJson,
-        null,
-        2
-      ).slice(0, 4000)
-    );
-  }
-
-  return responseJson;
-}
-
-function buildArticleFromResult(
-  result,
-  candidate
+function getHeader(
+  headers,
+  name,
 ) {
-  if (!result || typeof result !== 'object') {
-    return null;
-  }
-
-  const headline = cleanText(result.headline);
-  const summary = cleanText(result.summary);
-
-  if (!headline || !summary) {
-    return null;
-  }
-
-  if (!candidate.sourceUrl) {
-    return null;
-  }
-
-  const articleId = Buffer.from(
-    candidate.sourceUrl
-  )
-    .toString('base64url')
-    .slice(0, 24);
-
-  return {
-    id: articleId,
-    headline,
-    summary,
-    sourceName: candidate.sourceName,
-    sourceUrl: candidate.sourceUrl,
-    category: normalizeCategory(
-      result.category
-    ),
-    publishedAt: candidate.publishedAt,
-    severity: normalizeSeverity(
-      result.severity
-    ),
-  };
+  return headers.get(name);
 }
 
-async function main() {
-  log('Starting SecuBuzz feed ingestion...');
-  log(`AI model: ${AI_MODEL}`);
-  log(
-    `AI batch size: ${ARTICLES_PER_AI_BATCH}`
-  );
-  log('');
-
-  const existingFeedRaw =
-    await loadJson(FEED_PATH, []);
-
-  const existingFeed =
-    normalizeExistingFeed(
-      existingFeedRaw
-    );
-
-  const seenUrlsRaw =
-    await loadJson(
-      SEEN_URLS_PATH,
-      []
-    );
-
-  const seenUrls = new Set(
-    Array.isArray(seenUrlsRaw)
-      ? seenUrlsRaw.filter(
-          (url) =>
-            typeof url === 'string' &&
-            url.trim()
-        )
-      : []
+async function waitForRateLimitReset(
+  response,
+) {
+  const resetValue = getHeader(
+    response.headers,
+    "x-ratelimit-reset-tokens",
   );
 
-  const candidates = [];
+  const resetSeconds =
+    parseSeconds(resetValue);
 
-  for (const feedUrl of FEEDS) {
-    try {
-      log(`Fetching: ${feedUrl}`);
-
-      const xml =
-        await fetchFeed(feedUrl);
-
-      const items =
-        parseXmlItems(xml).slice(
-          0,
-          MAX_RSS_ITEMS_PER_FEED
-        );
-
-      log(
-        `Found ${items.length} RSS items.`
-      );
-
-      for (const item of items) {
-        const sourceUrl =
-          cleanText(item.link);
-
-        if (
-          !sourceUrl ||
-          seenUrls.has(sourceUrl)
-        ) {
-          continue;
-        }
-
-        const title =
-          cleanText(item.title);
-
-        if (!title) {
-          continue;
-        }
-
-        const content =
-          truncateText(
-            cleanText(
-              item.description ||
-                item.content ||
-                ''
-            ),
-            MAX_CONTENT_LENGTH
-          );
-
-        candidates.push({
-          title,
-          content,
-          sourceName:
-            getSourceName(
-              feedUrl,
-              item
-            ),
-          sourceUrl,
-          publishedAt:
-            normalizeDate(
-              item.pubDate
-            ),
-        });
-      }
-    } catch (error) {
-      log(
-        `Feed failed: ${feedUrl} — ${
-          error instanceof Error
-            ? error.message
-            : String(error)
-        }`
-      );
-    }
-  }
-
-  log('');
-  log(
-    `Found ${candidates.length} new RSS candidates.`
-  );
-
-  if (candidates.length === 0) {
-    log(
-      'No new candidates. Existing feed will be preserved.'
+  if (resetSeconds <= 0) {
+    console.log(
+      "No token reset time was supplied. Waiting 15 seconds as a safety fallback...",
     );
-    log(
-      `Feed now has ${existingFeed.length} articles.`
-    );
-    log(
-      `Seen URL history contains ${seenUrls.size} URLs.`
-    );
+
+    await sleep(15000);
+
     return;
   }
 
-  candidates.sort(
-    (a, b) =>
-      new Date(
-        b.publishedAt
-      ).getTime() -
-      new Date(
-        a.publishedAt
-      ).getTime()
+  const waitMilliseconds =
+    Math.ceil(
+      resetSeconds * 1000,
+    ) +
+    RATE_LIMIT_RESET_BUFFER_MS;
+
+  console.log(
+    `Groq token window resets in approximately ${resetSeconds.toFixed(
+      2,
+    )}s.`,
   );
 
-  const selectedCandidates =
-    candidates.slice(
-      0,
-      ARTICLES_PER_AI_BATCH
+  console.log(
+    `Waiting ${Math.ceil(
+      waitMilliseconds / 1000,
+    )}s before the next request...`,
+  );
+
+  await sleep(
+    waitMilliseconds,
+  );
+}
+
+async function waitBetweenRequests(
+  response,
+) {
+  const remainingTokensHeader =
+    getHeader(
+      response.headers,
+      "x-ratelimit-remaining-tokens",
     );
 
-  log(
-    `Selected ${selectedCandidates.length} candidates for this run.`
+  const resetTokensHeader =
+    getHeader(
+      response.headers,
+      "x-ratelimit-reset-tokens",
+    );
+
+  const remainingTokens = Number(
+    remainingTokensHeader,
   );
 
-  log('');
-  log(
-    'Sending selected candidates in ONE OpenRouter request...'
+  console.log(
+    `Groq remaining token allowance: ${
+      Number.isFinite(remainingTokens)
+        ? remainingTokens
+        : "unknown"
+    }`,
   );
 
+  if (resetTokensHeader) {
+    console.log(
+      `Groq token reset: ${resetTokensHeader}`,
+    );
+  }
+
+  /*
+   * If the remaining allowance is getting low,
+   * wait for the actual Groq token window reset.
+   */
+  if (
+    Number.isFinite(remainingTokens) &&
+    remainingTokens <
+      MIN_REMAINING_TOKENS_BEFORE_WAIT
+  ) {
+    console.log(
+      `Remaining TPM is below ${MIN_REMAINING_TOKENS_BEFORE_WAIT}.`,
+    );
+
+    await waitForRateLimitReset(
+      response,
+    );
+
+    return;
+  }
+
+  /*
+   * Otherwise use a small spacing delay.
+   */
+  console.log(
+    `Waiting ${
+      MIN_DELAY_BETWEEN_REQUESTS_MS / 1000
+    }s before the next Groq request...`,
+  );
+
+  await sleep(
+    MIN_DELAY_BETWEEN_REQUESTS_MS,
+  );
+}
+
+// -----------------------------------------------------------------------------
+// STRICT JSON SCHEMA
+// -----------------------------------------------------------------------------
+
+const GROQ_RESPONSE_SCHEMA = {
+  type: "object",
+
+  properties: {
+    articles: {
+      type: "array",
+
+      items: {
+        type: "object",
+
+        properties: {
+          index: {
+            type: "integer",
+          },
+
+          headline: {
+            type: "string",
+          },
+
+          summary: {
+            type: "string",
+          },
+
+          category: {
+            type: "string",
+            enum: [
+              "BREACH",
+              "RANSOMWARE",
+              "CVE",
+              "VULNERABILITY",
+              "NATION_STATE",
+              "GENERAL",
+            ],
+          },
+
+          severity: {
+            type: "string",
+            enum: [
+              "LOW",
+              "MEDIUM",
+              "HIGH",
+              "CRITICAL",
+            ],
+          },
+        },
+
+        required: [
+          "index",
+          "headline",
+          "summary",
+          "category",
+          "severity",
+        ],
+
+        additionalProperties: false,
+      },
+    },
+  },
+
+  required: [
+    "articles",
+  ],
+
+  additionalProperties: false,
+};
+
+// -----------------------------------------------------------------------------
+// GROQ REQUEST
+// -----------------------------------------------------------------------------
+
+async function requestGroq(
+  candidates,
+) {
   const prompt =
     buildBatchPrompt(
-      selectedCandidates
+      candidates,
     );
 
-  let responseJson;
+  console.log(
+    "Sending selected candidates in ONE Groq request...",
+  );
 
-  try {
-    responseJson =
-      await requestOpenRouter(
-        prompt
+  for (
+    let attempt = 0;
+    attempt <= MAX_RATE_LIMIT_RETRIES;
+    attempt++
+  ) {
+    const requestStart =
+      Date.now();
+
+    let response;
+
+    try {
+      response = await fetch(
+        GROQ_API_URL,
+        {
+          method: "POST",
+
+          headers: {
+            Authorization:
+              `Bearer ${GROQ_API_KEY}`,
+
+            "Content-Type":
+              "application/json",
+          },
+
+          body: JSON.stringify({
+            model: AI_MODEL,
+
+            messages: [
+              {
+                role: "system",
+
+                content:
+                  "You are a precise cybersecurity news editor. Follow the supplied JSON schema exactly. Do not provide explanations or reasoning.",
+              },
+
+              {
+                role: "user",
+
+                content: prompt,
+              },
+            ],
+
+            /*
+             * Strict JSON Schema.
+             *
+             * GPT-OSS 20B supports Groq Structured Outputs.
+             */
+            response_format: {
+              type: "json_schema",
+
+              json_schema: {
+                name:
+                  "secubuzz_articles",
+
+                strict: true,
+
+                schema:
+                  GROQ_RESPONSE_SCHEMA,
+              },
+            },
+
+            /*
+             * Keep model reasoning low because
+             * we only need a simple editorial transformation.
+             */
+            reasoning_effort: "low",
+
+            temperature: 0.2,
+
+            max_completion_tokens:
+              MAX_COMPLETION_TOKENS,
+
+            stream: false,
+          }),
+        },
       );
-  } catch (error) {
-    log(
-      `OpenRouter failed: ${
-        error instanceof Error
-          ? error.message
-          : String(error)
-      }`
-    );
-
-    log(
-      'No new articles were generated.'
-    );
-    log(
-      'Existing feed will be preserved.'
-    );
-    log(
-      `Feed now has ${existingFeed.length} articles.`
-    );
-    log(
-      `Seen URL history contains ${seenUrls.size} URLs.`
-    );
-    return;
-  }
-
-  const finishReason =
-    getFinishReason(
-      responseJson
-    );
-
-  const content =
-    getResponseText(
-      responseJson
-    );
-
-  log(
-    `OpenRouter finish reason: ${finishReason}`
-  );
-
-  log(
-    `OpenRouter response content length: ${content.length} characters.`
-  );
-
-  const results =
-    extractArticleResults(
-      content
-    );
-
-  log(
-    `Recovered ${results.length} article results from OpenRouter.`
-  );
-
-  if (results.length === 0) {
-    log(
-      'No usable article results were recovered.'
-    );
-
-    if (content) {
-      log(
-        `Response preview:\n${content.slice(
-          0,
-          2000
-        )}`
+    } catch (error) {
+      throw new Error(
+        `Network error while calling Groq: ${
+          error instanceof Error
+            ? error.message
+            : error
+        }`,
       );
     }
 
-    log(
-      'No new articles were added.'
-    );
-    log(
-      `Feed now has ${existingFeed.length} articles.`
-    );
-    log(
-      `Seen URL history contains ${seenUrls.size} URLs.`
-    );
-    return;
-  }
+    const duration =
+      Date.now() - requestStart;
 
-  const newArticles = [];
-  const successfullyProcessedUrls =
-    new Set();
+    console.log(
+      `Groq request duration: ${duration} ms`,
+    );
 
-  for (const result of results) {
-    const index =
-      Number(result?.index);
+    console.log(
+      `Groq HTTP status: ${response.status} ${response.statusText}`,
+    );
+
+    /*
+     * 429 = rate limit.
+     */
+    if (response.status === 429) {
+      const retryAfter =
+        response.headers.get(
+          "retry-after",
+        );
+
+      const resetTokens =
+        response.headers.get(
+          "x-ratelimit-reset-tokens",
+        );
+
+      console.log(
+        `Groq rate limit reached.`,
+      );
+
+      if (retryAfter) {
+        const retrySeconds =
+          parseSeconds(
+            retryAfter,
+          );
+
+        console.log(
+          `Groq requested retry after approximately ${retrySeconds.toFixed(
+            2,
+          )}s.`,
+        );
+
+        await sleep(
+          Math.ceil(
+            retrySeconds * 1000,
+          ) +
+            RATE_LIMIT_RESET_BUFFER_MS,
+        );
+      } else if (resetTokens) {
+        await waitForRateLimitReset(
+          response,
+        );
+      } else {
+        /*
+         * Exponential backoff fallback.
+         */
+        const fallbackSeconds =
+          Math.min(
+            5 * 2 ** attempt,
+            30,
+          );
+
+        console.log(
+          `No retry timing supplied. Waiting ${fallbackSeconds}s...`,
+        );
+
+        await sleep(
+          fallbackSeconds * 1000,
+        );
+      }
+
+      if (
+        attempt <
+        MAX_RATE_LIMIT_RETRIES
+      ) {
+        console.log(
+          `Retrying Groq request (${attempt + 1}/${MAX_RATE_LIMIT_RETRIES})...`,
+        );
+
+        continue;
+      }
+
+      throw new Error(
+        "Groq rate limit remained active after all retries.",
+      );
+    }
+
+    const responseText =
+      await response.text();
+
+    let payload = null;
+
+    try {
+      payload =
+        JSON.parse(
+          responseText,
+        );
+    } catch {
+      throw new Error(
+        `Groq returned non-JSON HTTP response: ${truncateText(
+          responseText,
+          1000,
+        )}`,
+      );
+    }
+
+    if (!response.ok) {
+      const message =
+        payload?.error?.message ||
+        `Groq request failed with HTTP ${response.status}.`;
+
+      throw new Error(
+        message,
+      );
+    }
+
+    if (payload?.error) {
+      throw new Error(
+        payload.error.message ||
+          "Groq returned an API error.",
+      );
+    }
 
     if (
-      !Number.isInteger(index) ||
-      index < 1 ||
-      index >
-        selectedCandidates.length
+      !Array.isArray(
+        payload?.choices,
+      ) ||
+      payload.choices.length === 0
     ) {
-      continue;
+      console.log(
+        "Groq response does not contain a choices array.",
+      );
+
+      console.log(
+        "Groq response structure:",
+      );
+
+      console.log(
+        JSON.stringify(
+          payload,
+          null,
+          2,
+        ).slice(0, 4000),
+      );
+
+      return [];
     }
 
-    const candidate =
-      selectedCandidates[
-        index - 1
-      ];
+    const choice =
+      payload.choices[0];
 
+    const content =
+      choice?.message?.content ||
+      "";
+
+    console.log(
+      `Groq finish reason: ${
+        choice?.finish_reason ||
+        "unknown"
+      }`,
+    );
+
+    console.log(
+      `Groq response content length: ${content.length} characters.`,
+    );
+
+    if (!content.trim()) {
+      console.log(
+        "Groq returned an empty content response.",
+      );
+
+      return [];
+    }
+
+    console.log(
+      "Parsing Groq JSON response...",
+    );
+
+    const parsed =
+      safeJsonParse(
+        content,
+      );
+
+    if (!parsed) {
+      console.log(
+        "Could not parse Groq content as JSON.",
+      );
+
+      console.log(
+        "Response preview:",
+      );
+
+      console.log(
+        content.slice(
+          0,
+          4000,
+        ),
+      );
+
+      return [];
+    }
+
+    const articles =
+      extractArticleArray(
+        parsed,
+      );
+
+    console.log(
+      `Groq returned ${articles.length} article results.`,
+    );
+
+    /*
+     * Print rate information.
+     */
+    const remainingTokens =
+      response.headers.get(
+        "x-ratelimit-remaining-tokens",
+      );
+
+    const resetTokens =
+      response.headers.get(
+        "x-ratelimit-reset-tokens",
+      );
+
+    if (remainingTokens) {
+      console.log(
+        `Groq remaining token allowance: ${remainingTokens}`,
+      );
+    }
+
+    if (resetTokens) {
+      console.log(
+        `Groq token reset: ${resetTokens}`,
+      );
+    }
+
+    /*
+     * IMPORTANT:
+     *
+     * Wait BEFORE returning so the next batch
+     * cannot immediately hit the TPM ceiling.
+     */
+    await waitBetweenRequests(
+      response,
+    );
+
+    return articles;
+  }
+
+  return [];
+}
+
+// -----------------------------------------------------------------------------
+// LOAD EXISTING DATA
+// -----------------------------------------------------------------------------
+
+const existingFeed =
+  await readJsonFile(
+    FEED_FILE,
+    [],
+  );
+
+const existingSeenUrls =
+  await readJsonFile(
+    SEEN_URLS_FILE,
+    [],
+  );
+
+const feedArticles =
+  Array.isArray(existingFeed)
+    ? existingFeed
+    : Array.isArray(
+        existingFeed?.articles,
+      )
+      ? existingFeed.articles
+      : [];
+
+const seenUrls =
+  new Set(
+    Array.isArray(
+      existingSeenUrls,
+    )
+      ? existingSeenUrls.map(
+          normaliseUrl,
+        )
+      : [],
+  );
+
+// -----------------------------------------------------------------------------
+// START
+// -----------------------------------------------------------------------------
+
+console.log(
+  "Starting SecuBuzz feed ingestion...",
+);
+
+console.log(
+  `AI model: ${AI_MODEL}`,
+);
+
+console.log(
+  `AI batch size: ${ARTICLES_PER_AI_BATCH}`,
+);
+
+console.log(
+  `Maximum candidates per run: ${MAX_NEW_CANDIDATES}`,
+);
+
+console.log(
+  `AI description limit: ${DESCRIPTION_MAX_LENGTH} characters`,
+);
+
+console.log(
+  `Maximum completion tokens: ${MAX_COMPLETION_TOKENS}`,
+);
+
+console.log(
+  `Minimum request spacing: ${
+    MIN_DELAY_BETWEEN_REQUESTS_MS / 1000
+  } seconds`,
+);
+
+console.log(
+  `TPM safety threshold: ${MIN_REMAINING_TOKENS_BEFORE_WAIT} tokens`,
+);
+
+console.log(
+  `Using feed file: ${FEED_FILE}`,
+);
+
+console.log(
+  `Using seen URL file: ${SEEN_URLS_FILE}`,
+);
+
+console.log(
+  `Existing feed contains ${feedArticles.length} articles.`,
+);
+
+console.log(
+  `Existing seen URL history contains ${seenUrls.size} URLs.`,
+);
+
+// -----------------------------------------------------------------------------
+// FETCH ALL RSS SOURCES
+// -----------------------------------------------------------------------------
+
+const allCandidates = [];
+
+for (const feed of FEEDS) {
+  try {
+    const items =
+      await fetchFeed(
+        feed,
+      );
+
+    allCandidates.push(
+      ...items,
+    );
+  } catch (error) {
+    console.error(
+      `Failed to fetch ${feed.name}:`,
+      error instanceof Error
+        ? error.message
+        : error,
+    );
+  }
+}
+
+// -----------------------------------------------------------------------------
+// REMOVE DUPLICATES
+// -----------------------------------------------------------------------------
+
+const uniqueCandidates =
+  uniqueByUrl(
+    allCandidates,
+  );
+
+const newCandidates =
+  uniqueCandidates.filter(
+    (candidate) =>
+      !seenUrls.has(
+        normaliseUrl(
+          candidate.url,
+        ),
+      ),
+  );
+
+console.log(
+  `Found ${newCandidates.length} new RSS candidates.`,
+);
+
+// -----------------------------------------------------------------------------
+// SELECT CANDIDATES
+// -----------------------------------------------------------------------------
+
+const selectedCandidates =
+  newCandidates.slice(
+    0,
+    MAX_NEW_CANDIDATES,
+  );
+
+console.log(
+  `Selected ${selectedCandidates.length} candidates for processing.`,
+);
+
+if (
+  selectedCandidates.length > 0
+) {
+  console.log(
+    "Selected articles:",
+  );
+
+  selectedCandidates.forEach(
+    (candidate, index) => {
+      console.log(
+        `  ${index + 1}. [${candidate.source}] ${candidate.title}`,
+      );
+    },
+  );
+}
+
+// -----------------------------------------------------------------------------
+// PROCESS IN BATCHES
+// -----------------------------------------------------------------------------
+
+const generatedArticles = [];
+
+const totalBatches =
+  Math.ceil(
+    selectedCandidates.length /
+      ARTICLES_PER_AI_BATCH,
+  );
+
+for (
+  let start = 0;
+  start <
+  selectedCandidates.length;
+  start +=
+    ARTICLES_PER_AI_BATCH
+) {
+  const batch =
+    selectedCandidates.slice(
+      start,
+      start +
+        ARTICLES_PER_AI_BATCH,
+    );
+
+  const batchNumber =
+    Math.floor(
+      start /
+        ARTICLES_PER_AI_BATCH,
+    ) + 1;
+
+  console.log("");
+
+  console.log(
+    `Processing batch ${batchNumber}/${totalBatches}...`,
+  );
+
+  console.log(
+    `Batch contains ${batch.length} articles.`,
+  );
+
+  /*
+   * Give every candidate a batch-local integer index.
+   *
+   * This is deliberately smaller than asking the AI
+   * to reproduce long source URLs.
+   */
+  const indexedBatch =
+    batch.map(
+      (candidate, index) => ({
+        ...candidate,
+        aiIndex: index,
+      }),
+    );
+
+  const candidateMap =
+    new Map(
+      indexedBatch.map(
+        (candidate) => [
+          candidate.aiIndex,
+          candidate,
+        ],
+      ),
+    );
+
+  let rawResults = [];
+
+  try {
+    rawResults =
+      await requestGroq(
+        indexedBatch,
+      );
+  } catch (error) {
+    console.error(
+      "Groq batch failed:",
+      error instanceof Error
+        ? error.message
+        : error,
+    );
+
+    /*
+     * IMPORTANT:
+     *
+     * Failed articles are NOT added to seenUrls.
+     *
+     * They can therefore be retried during
+     * the next six-hour ingestion run.
+     */
+    continue;
+  }
+
+  const validArticles = [];
+
+  for (const rawArticle of rawResults) {
     const article =
-      buildArticleFromResult(
-        result,
-        candidate
+      validateAiArticle(
+        rawArticle,
+        candidateMap,
       );
 
     if (!article) {
+      console.log(
+        "Ignoring invalid AI article result.",
+      );
+
       continue;
     }
 
-    newArticles.push(article);
-
-    successfullyProcessedUrls.add(
-      candidate.sourceUrl
+    validArticles.push(
+      article,
     );
   }
 
-  log(
-    `Successfully built ${newArticles.length} new articles.`
+  console.log(
+    `Recovered ${validArticles.length} valid articles from this batch.`,
   );
 
-  if (newArticles.length === 0) {
-    log(
-      'No valid articles survived validation.'
+  generatedArticles.push(
+    ...validArticles,
+  );
+
+  /*
+   * ONLY successfully generated articles
+   * become "seen".
+   */
+  for (const article of validArticles) {
+    seenUrls.add(
+      normaliseUrl(
+        article.sourceUrl,
+      ),
     );
-    log(
-      'Existing feed will be preserved.'
-    );
-    log(
-      `Feed now has ${existingFeed.length} articles.`
-    );
-    log(
-      `Seen URL history contains ${seenUrls.size} URLs.`
-    );
-    return;
   }
+}
 
-  for (const url of successfullyProcessedUrls) {
-    seenUrls.add(url);
-  }
+// -----------------------------------------------------------------------------
+// REMOVE DUPLICATES FROM AI OUTPUT
+// -----------------------------------------------------------------------------
 
-  const merged = [
-    ...newArticles,
-    ...existingFeed,
-  ];
+const generatedByUrl =
+  new Map();
 
-  const deduplicated = [];
-  const ids = new Set();
-  const urls = new Set();
-
-  for (const article of merged) {
-    if (
-      ids.has(article.id) ||
-      urls.has(article.sourceUrl)
-    ) {
-      continue;
-    }
-
-    ids.add(article.id);
-    urls.add(article.sourceUrl);
-    deduplicated.push(article);
-  }
-
-  deduplicated.sort(
-    (a, b) =>
-      new Date(
-        b.publishedAt
-      ).getTime() -
-      new Date(
-        a.publishedAt
-      ).getTime()
-  );
-
-  const finalFeed =
-    deduplicated.slice(
-      0,
-      MAX_FEED_SIZE
-    );
-
-  const finalSeenUrls =
-    Array.from(seenUrls).slice(
-      -MAX_SEEN_URLS
-    );
-
-  await saveJson(
-    FEED_PATH,
-    finalFeed
-  );
-
-  await saveJson(
-    SEEN_URLS_PATH,
-    finalSeenUrls
-  );
-
-  log('');
-  log(
-    `Added ${newArticles.length} new articles.`
-  );
-  log(
-    `Feed now has ${finalFeed.length} articles.`
-  );
-  log(
-    `Seen URL history contains ${finalSeenUrls.length} URLs.`
+for (const article of generatedArticles) {
+  generatedByUrl.set(
+    normaliseUrl(
+      article.sourceUrl,
+    ),
+    article,
   );
 }
 
-main().catch((error) => {
-  console.error(
-    'Ingestion failed:',
-    error instanceof Error
-      ? error.stack ||
-        error.message
-      : error
+const uniqueGeneratedArticles =
+  Array.from(
+    generatedByUrl.values(),
   );
 
-  process.exit(1);
-});
+// -----------------------------------------------------------------------------
+// MERGE WITH EXISTING FEED
+// -----------------------------------------------------------------------------
+
+const existingByUrl =
+  new Map();
+
+for (const article of feedArticles) {
+  const url =
+    normaliseUrl(
+      article?.sourceUrl ||
+        article?.url ||
+        "",
+    );
+
+  if (!url) {
+    continue;
+  }
+
+  existingByUrl.set(
+    url,
+    article,
+  );
+}
+
+for (
+  const article of
+  uniqueGeneratedArticles
+) {
+  existingByUrl.set(
+    normaliseUrl(
+      article.sourceUrl,
+    ),
+    article,
+  );
+}
+
+const newUrls =
+  new Set(
+    uniqueGeneratedArticles.map(
+      (article) =>
+        normaliseUrl(
+          article.sourceUrl,
+        ),
+    ),
+  );
+
+const mergedFeed = [
+  ...uniqueGeneratedArticles,
+
+  ...Array.from(
+    existingByUrl.values(),
+  ).filter(
+    (article) =>
+      !newUrls.has(
+        normaliseUrl(
+          article?.sourceUrl ||
+            article?.url ||
+            "",
+        ),
+      ),
+  ),
+].slice(
+  0,
+  MAX_FEED_ARTICLES,
+);
+
+// -----------------------------------------------------------------------------
+// SAVE
+// -----------------------------------------------------------------------------
+
+await writeJsonFile(
+  FEED_FILE,
+  mergedFeed,
+);
+
+await writeJsonFile(
+  SEEN_URLS_FILE,
+  Array.from(
+    seenUrls,
+  ),
+);
+
+// -----------------------------------------------------------------------------
+// FINAL OUTPUT
+// -----------------------------------------------------------------------------
+
+console.log("");
+
+console.log(
+  `Added ${uniqueGeneratedArticles.length} new articles.`,
+);
+
+console.log(
+  `Feed now has ${mergedFeed.length} articles.`,
+);
+
+console.log(
+  `Seen URL history contains ${seenUrls.size} URLs.`,
+);
+
+console.log("");
+
+console.log(
+  "SecuBuzz feed ingestion completed.",
+);

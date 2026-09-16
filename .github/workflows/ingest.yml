@@ -1,59 +1,86 @@
-name: Ingest cybersecurity news
+name: SecuBuzz Feed Ingestion
 
 on:
+  # Run automatically every 6 hours
   schedule:
-    - cron: "0 */3 * * *"
-  workflow_dispatch: {}
+    - cron: "0 */6 * * *"
 
+  # Allow manual testing from GitHub Actions
+  workflow_dispatch:
+
+# Required so GitHub Actions can commit updated
+# feed.json and seen-urls.json back to the repository.
 permissions:
   contents: write
 
 jobs:
   ingest:
+    name: Ingest Cybersecurity News
     runs-on: ubuntu-latest
 
+    env:
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+
     steps:
+      # ---------------------------------------------------------
+      # Checkout repository
+      # ---------------------------------------------------------
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
+      # ---------------------------------------------------------
+      # Setup Node.js
+      # ---------------------------------------------------------
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
 
-      - name: Install ingestion dependencies
-        run: cd scripts && npm install
+      # ---------------------------------------------------------
+      # Verify Groq API key exists
+      # ---------------------------------------------------------
+      - name: Verify Groq API key
+        shell: bash
+        run: |
+          if [ -z "$GROQ_API_KEY" ]; then
+            echo "GROQ_API_KEY is missing."
+            exit 1
+          fi
 
-      - name: Generate feed
-        run: node scripts/ingest.mjs
-        env:
-          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          echo "GROQ_API_KEY is configured."
 
+      # ---------------------------------------------------------
+      # Validate JavaScript syntax
+      # ---------------------------------------------------------
+      - name: Validate ingestion script
+        run: |
+          node --check "./scripts/ingest.mjs"
+
+      # ---------------------------------------------------------
+      # Run SecuBuzz ingestion
+      # ---------------------------------------------------------
+      - name: Run SecuBuzz ingestion
+        run: |
+          node "./scripts/ingest.mjs"
+
+      # ---------------------------------------------------------
+      # Commit updated feed files
+      # ---------------------------------------------------------
       - name: Commit updated feed
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "Update feed.json"
-          file_pattern: "feed.json seen-urls.json"
-
-      - name: Upload feed.json to Cloudflare R2
+        shell: bash
         run: |
-          aws s3 cp ./feed.json \
-            s3://secubuzz-feed/feed.json \
-            --endpoint-url "https://${{ secrets.R2_ACCOUNT_ID }}.r2.cloudflarestorage.com" \
-            --content-type "application/json" \
-            --cache-control "public, max-age=300"
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
-          AWS_DEFAULT_REGION: auto
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: Verify feed.json exists in R2
-        run: |
-          aws s3api head-object \
-            --bucket secubuzz-feed \
-            --key feed.json \
-            --endpoint-url "https://${{ secrets.R2_ACCOUNT_ID }}.r2.cloudflarestorage.com"
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
-          AWS_DEFAULT_REGION: auto
+          git add feed.json seen-urls.json
+
+          if git diff --cached --quiet; then
+            echo "No feed changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Update SecuBuzz feed"
+
+          git push
