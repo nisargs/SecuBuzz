@@ -16,8 +16,8 @@ type KeyValueStore = {
 };
 
 /**
- * Decorator: tries a live ArticleRepository first, then AsyncStorage.
- * The Feed still only calls getArticles() — it never talks to storage itself.
+ * Tries the live ArticleRepository first.
+ * Falls back to AsyncStorage only when the live feed fails.
  */
 export class CachingArticleRepository implements ArticleRepository {
   private fromCache = false;
@@ -34,42 +34,68 @@ export class CachingArticleRepository implements ArticleRepository {
   async getArticles(): Promise<Article[]> {
     try {
       const articles = await this.inner.getArticles();
+
       this.fromCache = false;
-      await this.writeCache(articles);
+
+      /*
+       * Do not replace a good cache with an empty feed.
+       *
+       * An empty feed could otherwise make the app lose all
+       * previously available stories.
+       */
+      if (articles.length > 0) {
+        await this.writeCache(articles);
+      }
+
       return articles;
     } catch (error) {
       const cached = await this.readCache();
-      if (cached !== null) {
+
+      if (cached !== null && cached.length > 0) {
         this.fromCache = true;
         return cached;
       }
+
       this.fromCache = false;
       throw error;
     }
   }
 
-  private async writeCache(articles: Article[]): Promise<void> {
+  private async writeCache(
+    articles: Article[],
+  ): Promise<void> {
     try {
       const payload: CachedFeed = {
         savedAt: new Date().toISOString(),
         articles,
       };
-      await this.storage.setItem(CACHE_KEY, JSON.stringify(payload));
+
+      await this.storage.setItem(
+        CACHE_KEY,
+        JSON.stringify(payload),
+      );
     } catch {
-      // Fresh data is still returned even if saving the cache fails.
+      /*
+       * Fresh data is still returned even if
+       * saving the cache fails.
+       */
     }
   }
 
   private async readCache(): Promise<Article[] | null> {
     try {
       const raw = await this.storage.getItem(CACHE_KEY);
+
       if (raw === null) {
         return null;
       }
+
       const parsed: unknown = JSON.parse(raw);
+
       if (!isCachedFeed(parsed)) {
         return null;
       }
+
       return parsed.articles;
     } catch {
       return null;
@@ -77,10 +103,23 @@ export class CachingArticleRepository implements ArticleRepository {
   }
 }
 
-function isCachedFeed(value: unknown): value is CachedFeed {
-  if (typeof value !== 'object' || value === null) {
+function isCachedFeed(
+  value: unknown,
+): value is CachedFeed {
+  if (
+    typeof value !== 'object' ||
+    value === null
+  ) {
     return false;
   }
-  const record = value as { savedAt?: unknown; articles?: unknown };
-  return typeof record.savedAt === 'string' && Array.isArray(record.articles);
+
+  const record = value as {
+    savedAt?: unknown;
+    articles?: unknown;
+  };
+
+  return (
+    typeof record.savedAt === 'string' &&
+    Array.isArray(record.articles)
+  );
 }
