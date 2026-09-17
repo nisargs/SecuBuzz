@@ -58,15 +58,23 @@ function normalizeArticle(
   const record = value as Record<string, unknown>;
 
   /*
-   * The feed currently contains both the newer field names
-   * and some legacy field names.
+   * Your feed.json uses:
    *
-   * Supported:
+   *   source
    *
-   * headline OR title
-   * sourceName OR source
-   * sourceUrl OR url
+   * while the app's Article model uses:
+   *
+   *   sourceName
+   *
+   * So we translate source -> sourceName here.
    */
+
+  const id =
+    typeof record.id === 'string'
+      ? record.id
+      : typeof record.url === 'string'
+        ? record.url
+        : null;
 
   const headline =
     typeof record.headline === 'string'
@@ -74,6 +82,11 @@ function normalizeArticle(
       : typeof record.title === 'string'
         ? record.title
         : null;
+
+  const summary =
+    typeof record.summary === 'string'
+      ? record.summary
+      : null;
 
   const sourceName =
     typeof record.sourceName === 'string'
@@ -89,26 +102,36 @@ function normalizeArticle(
         ? record.url
         : null;
 
+  const publishedAt =
+    typeof record.publishedAt === 'string'
+      ? record.publishedAt
+      : null;
+
+  const category = record.category;
+
+  /*
+   * Reject only if the actual required data is missing.
+   */
   if (
-    typeof record.id !== 'string' ||
+    id === null ||
     headline === null ||
-    typeof record.summary !== 'string' ||
+    summary === null ||
     sourceName === null ||
     sourceUrl === null ||
-    !isCategory(record.category) ||
-    typeof record.publishedAt !== 'string'
+    !isCategory(category) ||
+    publishedAt === null
   ) {
     return null;
   }
 
   return {
-    id: record.id,
+    id,
     headline,
-    summary: record.summary,
+    summary,
     sourceName,
     sourceUrl,
-    category: record.category,
-    publishedAt: record.publishedAt,
+    category,
+    publishedAt,
     severity: normalizeSeverity(record.severity),
   };
 }
@@ -118,23 +141,21 @@ export class RemoteArticleRepository
 {
   async getArticles(): Promise<Article[]> {
     /*
-     * Cache-busting query parameter.
-     *
-     * The feed itself is still the same R2 file, but this prevents
-     * an old HTTP/CDN response from being reused by the device.
+     * Add a cache-busting query parameter so the app doesn't
+     * accidentally receive an older cached copy of feed.json.
      */
     const url = `${FEED_URL}?t=${Date.now()}`;
 
     const response = await fetch(url, {
       headers: {
-        Accept: 'application/json',
         'Cache-Control': 'no-cache',
+        Pragma: 'no-cache',
       },
     });
 
     if (!response.ok) {
       throw new Error(
-        `Failed to fetch feed (${response.status})`,
+        `Failed to fetch feed: ${response.status}`,
       );
     }
 
@@ -152,11 +173,9 @@ export class RemoteArticleRepository
       );
 
     /*
-     * Never treat a feed containing articles as successfully
-     * loaded if none of those articles could be understood.
-     *
-     * This prevents a schema mismatch from overwriting the
-     * user's good cached feed with an empty array.
+     * This catches a feed/model mismatch instead of silently
+     * returning zero articles and making the app fall back
+     * to the old cache.
      */
     if (raw.length > 0 && articles.length === 0) {
       throw new Error(
