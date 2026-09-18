@@ -1,5 +1,101 @@
 [
   {
+    "id": "https://thehackernews.com/2026/09/weaselbiscuit-stealer-spreads-via-13.html",
+    "sourceUrl": "https://thehackernews.com/2026/09/weaselbiscuit-stealer-spreads-via-13.html",
+    "title": "WeaselBiscuit Stealer Discovered in 13 npm Packages",
+    "headline": "WeaselBiscuit Stealer Discovered in 13 npm Packages",
+    "summary": "Researchers found 13 npm packages delivering the WeaselBiscuit JavaScript stealer, which harvests Chrome extension storage. The malware shares features with DPRK’s Contagious Interview campaign strains BeaverTail and another. The discovery highlights the use of npm as a delivery vector for new threats.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "publishedAt": "Fri, 18 Sep 2026 16:10:06 +0530",
+    "url": "https://thehackernews.com/2026/09/weaselbiscuit-stealer-spreads-via-13.html"
+  },
+  {
+    "id": "https://thehackernews.com/2026/09/claimed-bug-bounty-hunter-likely-used.html",
+    "sourceUrl": "https://thehackernews.com/2026/09/claimed-bug-bounty-hunter-likely-used.html",
+    "title": "LLM-Assisted Development of PhantomRaven npm Stealer",
+    "headline": "LLM-Assisted Development of PhantomRaven npm Stealer",
+    "summary": "A threat actor linked to the PhantomRaven JavaScript stealer is believed to have used a large language model to write the malware. Evidence includes verbose comments, placeholder code, and token‑analysis patterns. The stealer is distributed via the npm package registry.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "publishedAt": "Fri, 18 Sep 2026 14:48:03 +0530",
+    "url": "https://thehackernews.com/2026/09/claimed-bug-bounty-hunter-likely-used.html"
+  },
+  {
+    "id": "https://thehackernews.com/2026/09/rathat-android-malware-abuses-adb-to.html",
+    "sourceUrl": "https://thehackernews.com/2026/09/rathat-android-malware-abuses-adb-to.html",
+    "title": "RatHat Android Malware Uses ADB to Maintain Shell Access After Uninstall",
+    "headline": "RatHat Android Malware Uses ADB to Maintain Shell Access After Uninstall",
+    "summary": "Researchers identified RatHat, an Android malware linked to China-based threat actors. It employs AI to navigate devices and uses ADB to keep shell access after uninstallation. Distribution occurs through targeted smishing and malvertising, leading users to deceptive third‑party download portals.",
+    "category": "GENERAL",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "Fri, 18 Sep 2026 11:47:25 +0530",
+    "url": "https://thehackernews.com/2026/09/rathat-android-malware-abuses-adb-to.html"
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/check-point-warns-critical-flaw-lets-hackers-execute-code-as-root/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/check-point-warns-critical-flaw-lets-hackers-execute-code-as-root/",
+    "title": "Check Point Flaw Allows Root‑Level Code Execution on Management Systems",
+    "headline": "Check Point Flaw Allows Root‑Level Code Execution on Management Systems",
+    "summary": "Check Point Software released updates for a critical flaw that lets attackers run code with root privileges on management systems. The vulnerability could enable full system compromise if exploited.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "publishedAt": "Fri, 18 Sep 2026 05:34:33 -0400",
+    "url": "https://www.bleepingcomputer.com/news/security/check-point-warns-critical-flaw-lets-hackers-execute-code-as-root/"
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-broken-copy-and-paste-for-excel-2016-users/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-broken-copy-and-paste-for-excel-2016-users/",
+    "title": "Microsoft Fixes Copy-Paste Failure in Excel 2016 After KB5002914 Update",
+    "headline": "Microsoft Fixes Copy-Paste Failure in Excel 2016 After KB5002914 Update",
+    "summary": "Microsoft has addressed a known copy-and-paste failure affecting some Excel 2016 users after installing the September 2026 KB5002914 security update. The fix restores normal clipboard functionality, preventing data loss during document editing. Users should apply the update to avoid disruptions.",
+    "category": "VULNERABILITY",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "Fri, 18 Sep 2026 03:35:31 -0400",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-broken-copy-and-paste-for-excel-2016-users/"
+  },
+  {
+    "id": "https://www.securityweek.com/nightmarestresser-ddos-service-disrupted-in-international-operation/",
+    "sourceUrl": "https://www.securityweek.com/nightmarestresser-ddos-service-disrupted-in-international-operation/",
+    "title": "NightmareStresser DDoS Service Disrupted in International Operation",
+    "headline": "NightmareStresser DDoS Service Disrupted in International Operation",
+    "summary": "The long‑running NightmareStresser DDoS‑for‑hire service was disrupted during an international operation, according to SecurityWeek. The incident highlights ongoing efforts to dismantle large‑scale cyber‑attack platforms. Details on the operators or affected clients remain undisclosed. Law enforcement agencies are reportedly coordinating with international partners to investigate the breach and prevent future attacks.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "Fri, 18 Sep 2026 10:12:33 +0000",
+    "url": "https://www.securityweek.com/nightmarestresser-ddos-service-disrupted-in-international-operation/"
+  },
+  {
+    "id": "https://www.securityweek.com/brevo-supply-chain-attack-injects-malware-into-100000-websites/",
+    "sourceUrl": "https://www.securityweek.com/brevo-supply-chain-attack-injects-malware-into-100000-websites/",
+    "title": "Brevo Supply Chain Attack Injects Malware Into 100,000 Websites",
+    "headline": "Brevo Supply Chain Attack Injects Malware Into 100,000 Websites",
+    "summary": "Hackers compromised a Brevo API key to deploy a Cloudflare worker that injected malicious scripts into 100,000 websites. The attack demonstrates a large‑scale supply‑chain compromise affecting many sites via a single compromised credential.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "Fri, 18 Sep 2026 09:46:57 +0000",
+    "url": "https://www.securityweek.com/brevo-supply-chain-attack-injects-malware-into-100000-websites/"
+  },
+  {
+    "id": "https://www.securityweek.com/critical-orkes-conductor-vulnerability-exploited-in-attacks/",
+    "sourceUrl": "https://www.securityweek.com/critical-orkes-conductor-vulnerability-exploited-in-attacks/",
+    "title": "Critical Orkes Conductor Vulnerability Exploited in Attacks",
+    "headline": "Critical Orkes Conductor Vulnerability Exploited in Attacks",
+    "summary": "CVE‑2026‑58138 is an unauthenticated remote code execution flaw in Orkes Conductor that attackers can exploit through inline workflow definitions. The vulnerability has been actively used in recent attacks, allowing attackers to execute arbitrary code on affected systems.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "SecurityWeek",
+    "publishedAt": "Fri, 18 Sep 2026 08:42:18 +0000",
+    "url": "https://www.securityweek.com/critical-orkes-conductor-vulnerability-exploited-in-attacks/"
+  },
+  {
     "id": "https://thehackernews.com/2026/09/critical-check-point-management-server.html",
     "sourceUrl": "https://thehackernews.com/2026/09/critical-check-point-management-server.html",
     "title": "Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root",
@@ -1074,55 +1170,5 @@
     "category": "BREACH",
     "publishedAt": "2026-09-11T20:00:00.000Z",
     "severity": "HIGH"
-  },
-  {
-    "id": "https://www.darkreading.com/cyberattacks-data-breaches/1m-personalized-fraud-emails-3-days",
-    "headline": "Threat Actor Uses AI to Generate One Million Fraud Emails in Three Days",
-    "summary": "A threat actor generated one million personalized fraud emails in three days. Cybercriminals behind malicious email campaigns no longer have to compromise volume for credibility, or vice versa, thanks to artificial intelligence. Using AI, malicious email campaigns can achieve high volume while maintaining credibility in personalized fraud emails.",
-    "sourceName": "darkreading",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/1m-personalized-fraud-emails-3-days",
-    "category": "GENERAL",
-    "publishedAt": "2026-09-11T19:21:08.000Z",
-    "severity": "MEDIUM"
-  },
-  {
-    "id": "https://therecord.media/invoice-scam-emails-new-features-microsoft-researchers",
-    "headline": "Microsoft Identifies AI Tactics in Invoice-Scam Emails",
-    "summary": "Microsoft researchers analyzed a flood of fraudulent business emails and found that threat actors had doubled up on tactics to make them appear legitimate. These invoice-scam emails incorporate new features designed to increase credibility, which includes threat actors leveraging help from artificial intelligence.",
-    "sourceName": "The Record from Recorded Future News",
-    "sourceUrl": "https://therecord.media/invoice-scam-emails-new-features-microsoft-researchers",
-    "category": "GENERAL",
-    "publishedAt": "2026-09-11T18:40:00.000Z",
-    "severity": "MEDIUM"
-  },
-  {
-    "id": "https://krebsonsecurity.com/2026/09/microsoft-plugs-nearly-1000-security-holes/",
-    "headline": "Microsoft Releases Updates for At Least 974 Security Holes",
-    "summary": "Microsoft has released updates addressing at least 974 security vulnerabilities across its Windows operating systems and other software, marking its largest single patch release to date. While Microsoft noted that artificial intelligence has accelerated the discovery of these flaws, security experts caution that organizations are finding it difficult to test and deploy such a high volume of fixes every month.",
-    "sourceName": "Krebs on Security",
-    "sourceUrl": "https://krebsonsecurity.com/2026/09/microsoft-plugs-nearly-1000-security-holes",
-    "category": "VULNERABILITY",
-    "publishedAt": "2026-09-08T21:44:22.000Z",
-    "severity": "HIGH"
-  },
-  {
-    "id": "https://krebsonsecurity.com/2026/09/fbi-probes-service-selling-153m-drivers-licenses/",
-    "headline": "FBI Investigates Dark Web Service Selling 153 Million Driver's Licenses",
-    "summary": "The FBI's New Orleans field office has launched an official inquiry into a new dark web identity theft service selling digital scans of over 153 million driver's licenses from the United States and Canada. The compromised scans appear to have been siphoned from a widely-used identity verification firm located in Louisiana, according to interviews with affected individuals.",
-    "sourceName": "Krebs on Security",
-    "sourceUrl": "https://krebsonsecurity.com/2026/09/fbi-probes-service-selling-153m-drivers-licenses",
-    "category": "BREACH",
-    "publishedAt": "2026-09-01T22:40:28.000Z",
-    "severity": "CRITICAL"
-  },
-  {
-    "id": "https://krebsonsecurity.com/2026/08/two-alleged-teampcp-hackers-arrested-in-australia/",
-    "headline": "Australian Police Arrest Two Suspected TeamPCP Hackers",
-    "summary": "The Australian Federal Police arrested two men, aged 21 and 23, in Western Australia for their suspected involvement in TeamPCP. The cybercrime and data extortion syndicate allegedly created malicious open-source software to target and rob thousands of businesses worldwide in an extensive series of software supply chain attacks.",
-    "sourceName": "Krebs on Security",
-    "sourceUrl": "https://krebsonsecurity.com/2026/08/two-alleged-teampcp-hackers-arrested-in-australia",
-    "category": "GENERAL",
-    "publishedAt": "2026-08-27T11:04:15.000Z",
-    "severity": "MEDIUM"
   }
 ]
