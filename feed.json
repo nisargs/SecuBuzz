@@ -1,5 +1,89 @@
 [
   {
+    "id": "https://thehackernews.com/2026/09/public-exploits-released-for-four-linux.html",
+    "sourceUrl": "https://thehackernews.com/2026/09/public-exploits-released-for-four-linux.html",
+    "title": "Public Exploits Released for Four Linux Kernel Flaws That Enable Local Root",
+    "headline": "Public Exploits Released for Four Linux Kernel Flaws That Enable Local Root",
+    "summary": "A security researcher released working exploit code for four Linux kernel flaws that allow a local user to gain root access. Kernel maintainers have patched all four, so systems with updated kernels are safe, but older kernels should be updated.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "Fri, 18 Sep 2026 23:32:24 +0530",
+    "url": "https://thehackernews.com/2026/09/public-exploits-released-for-four-linux.html"
+  },
+  {
+    "id": "https://thehackernews.com/2026/09/new-wordpress-click2shell-flaw-forces.html",
+    "sourceUrl": "https://thehackernews.com/2026/09/new-wordpress-click2shell-flaw-forces.html",
+    "title": "New WordPress Click2Shell Flaw Forces Theme Installs, Can Chain to Code Execution",
+    "headline": "New WordPress Click2Shell Flaw Forces Theme Installs, Can Chain to Code Execution",
+    "summary": "WordPress patched a new core vulnerability that lets a crafted link, opened by a logged‑in administrator, install a theme from the official directory without user interaction, potentially leading to code execution.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "Fri, 18 Sep 2026 22:26:19 +0530",
+    "url": "https://thehackernews.com/2026/09/new-wordpress-click2shell-flaw-forces.html"
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/webinar-which-google-workspace-security-controls-actually-matter/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/webinar-which-google-workspace-security-controls-actually-matter/",
+    "title": "Webinar Explores Which Google Workspace Security Controls Matter Most",
+    "headline": "Webinar Explores Which Google Workspace Security Controls Matter Most",
+    "summary": "A webinar discusses real‑world breaches to determine which Google Workspace security controls provide the most value, which are overrated, and where lean security teams should focus resources.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "publishedAt": "Fri, 18 Sep 2026 09:10:19 -0400",
+    "url": "https://www.bleepingcomputer.com/news/security/webinar-which-google-workspace-security-controls-actually-matter/"
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/alerts/2026/09/18/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/09/18/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+    "headline": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+    "summary": "CISA has added CVE-2025-39964 and CVE-2026-53266, both Linux Kernel vulnerabilities, to its Known Exploited Vulnerabilities catalog. The addition follows evidence of active exploitation and emphasizes the need for federal agencies to prioritize rapid remediation of high‑risk vulnerabilities.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CISA",
+    "publishedAt": "Fri, 18 Sep 26 12:00:00 +0000",
+    "url": "https://www.cisa.gov/news-events/alerts/2026/09/18/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+  },
+  {
+    "id": "https://www.securityweek.com/in-other-news-ransomware-developer-sentenced-plugin4shell-ai-attack-critical-sap-flaw/",
+    "sourceUrl": "https://www.securityweek.com/in-other-news-ransomware-developer-sentenced-plugin4shell-ai-attack-critical-sap-flaw/",
+    "title": "Ransomware Developer Sentenced, Plugin4Shell AI Attack, Critical SAP Flaw",
+    "headline": "Ransomware Developer Sentenced, Plugin4Shell AI Attack, Critical SAP Flaw",
+    "summary": "SecurityWeek highlights several notable stories: a ransomware developer receives a sentence, an AI‑driven Plugin4Shell attack is reported, and a critical flaw in SAP software is identified. The article also references Mandiant’s 2026 AI risk report and a WordPress plugin bug exploited by a bug bounty hunter.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "publishedAt": "Fri, 18 Sep 2026 14:25:00 +0000",
+    "url": "https://www.securityweek.com/in-other-news-ransomware-developer-sentenced-plugin4shell-ai-attack-critical-sap-flaw/"
+  },
+  {
+    "id": "https://www.securityweek.com/ai-built-exploit-and-sign-in-flaw-opened-path-to-internal-openai-code/",
+    "sourceUrl": "https://www.securityweek.com/ai-built-exploit-and-sign-in-flaw-opened-path-to-internal-openai-code/",
+    "title": "AI‑Built Exploit Reveals Sign‑In Flaw Granting OpenAI Internal Code Access",
+    "headline": "AI‑Built Exploit Reveals Sign‑In Flaw Granting OpenAI Internal Code Access",
+    "summary": "Hacktron researchers demonstrated an AI‑built exploit that leveraged a sign‑in flaw to gain access to OpenAI employee accounts and internal code. The researchers earned a bug bounty for revealing the vulnerability that allowed unauthorized entry into OpenAI’s internal systems during.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "Fri, 18 Sep 2026 12:45:24 +0000",
+    "url": "https://www.securityweek.com/ai-built-exploit-and-sign-in-flaw-opened-path-to-internal-openai-code/"
+  },
+  {
+    "id": "https://www.securityweek.com/23-million-user-records-compromised-in-gyazo-data-breach/",
+    "sourceUrl": "https://www.securityweek.com/23-million-user-records-compromised-in-gyazo-data-breach/",
+    "title": "Gyazo Data Breach Compromises 23 Million User Records",
+    "headline": "Gyazo Data Breach Compromises 23 Million User Records",
+    "summary": "Gyazo’s image upload server vulnerability allowed attackers to access and compromise 23 million user records. The company, Helpfeel, confirmed the breach and the unauthorized data exposure. The incident highlights the risks of insecure upload handling in cloud services for users globally.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "Fri, 18 Sep 2026 11:38:40 +0000",
+    "url": "https://www.securityweek.com/23-million-user-records-compromised-in-gyazo-data-breach/"
+  },
+  {
     "id": "https://thehackernews.com/2026/09/transparent-tribe-deploys-new-rust.html",
     "sourceUrl": "https://thehackernews.com/2026/09/transparent-tribe-deploys-new-rust.html",
     "title": "Transparent Tribe Deploys Rust Backdoor for C2 Operations",
@@ -1114,77 +1198,5 @@
     "source": "The Hacker News",
     "publishedAt": "Tue, 15 Sep 2026 11:41:11 +0530",
     "url": "https://thehackernews.com/2026/09/cisco-secure-email-gateway-flaw.html"
-  },
-  {
-    "id": "https://thehackernews.com/2026/09/china-linked-hackers-exploit-chrome.html",
-    "sourceUrl": "https://thehackernews.com/2026/09/china-linked-hackers-exploit-chrome.html",
-    "title": "China-Linked Hackers Use Chrome and Windows Zero-Days to Deploy GRIMWEDGE Backdoor",
-    "headline": "China-Linked Hackers Use Chrome and Windows Zero-Days to Deploy GRIMWEDGE Backdoor",
-    "summary": "A Chinese threat actor used a spear‑phishing campaign that exploited recently patched Chrome and Windows vulnerabilities to deliver the GRIMWEDGE JavaScript backdoor to NGOs. The activity was tracked by Volexity under the moniker UTA0560.",
-    "category": "NATION_STATE",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "publishedAt": "Tue, 15 Sep 2026 11:01:05 +0530",
-    "url": "https://thehackernews.com/2026/09/china-linked-hackers-exploit-chrome.html"
-  },
-  {
-    "id": "aHR0cHM6Ly93d3cuYmxlZXBp",
-    "headline": "Acronis Warns of Actively Exploited cPanel Backup Plugin Flaw",
-    "summary": "Acronis has warned that an actively exploited vulnerability exists in its cPanel backup plugin, according to BleepingComputer on September 15, 2026. The flaw is being used in the wild to compromise systems, and the vendor urges administrators to apply available patches or temporarily disable the plugin until a fix is released.",
-    "sourceName": "bleepingcomputer.com",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/acronis-warns-of-actively-exploited-flaw-in-its-cpanel-backup-plugin/",
-    "category": "VULNERABILITY",
-    "publishedAt": "2026-09-15T21:37:35.000Z",
-    "severity": "HIGH"
-  },
-  {
-    "id": "aHR0cHM6Ly93d3cuc2VjdXJp",
-    "headline": "Microsoft Commits to AI Privacy Rules for Students After Union Talks",
-    "summary": "Microsoft has agreed to adopt comprehensive AI privacy guardrails for its educational products after negotiations with the American Federation of Teachers, SecurityWeek reported on September 15, 2026. The commitment aims to protect student data and ensure responsible AI use in schools, potentially influencing other technology firms to follow similar standards.",
-    "sourceName": "securityweek.com",
-    "sourceUrl": "https://www.securityweek.com/microsoft-commits-to-sweeping-ai-privacy-rules-for-students-will-other-tech-giants-follow/",
-    "category": "GENERAL",
-    "publishedAt": "2026-09-15T20:24:51.000Z",
-    "severity": "MEDIUM"
-  },
-  {
-    "id": "aHR0cHM6Ly90aGVoYWNrZXJu",
-    "headline": "Iranian Hackers Use Telegram-Controlled Malware to Spy on Dissidents and Journalists",
-    "summary": "Iranian hackers deployed malware controlled via Telegram to conduct surveillance on dissidents and journalists. The malicious software allowed attackers to monitor communications, track locations, and exfiltrate sensitive information from targets, highlighting a growing trend of state‑linked cyber espionage using popular messaging platforms.",
-    "sourceName": "feeds.feedburner.com",
-    "sourceUrl": "https://thehackernews.com/2026/09/iranian-hackers-use-telegram-controlled.html",
-    "category": "NATION_STATE",
-    "publishedAt": "2026-09-15T16:29:51.000Z",
-    "severity": "MEDIUM"
-  },
-  {
-    "id": "https://www.securityweek.com/root-rce-zero-day-in-cisco-secure-email-gateway-under-active-exploitation/",
-    "headline": "Root RCE Zero-Day in Cisco Secure Email Gateway Under Active Exploitation",
-    "summary": "An unauthenticated attacker is actively exploiting CVE-2026-76461 to achieve remote code execution on Cisco Secure Email Gateway systems. This zero-day vulnerability allows for the execution of arbitrary commands on the underlying operating system with root privileges, posing a significant security risk to affected organizations.",
-    "sourceName": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/root-rce-zero-day-in-cisco-secure-email-gateway-under-active-exploitation",
-    "category": "VULNERABILITY",
-    "publishedAt": "2026-09-15T05:18:51.000Z",
-    "severity": "CRITICAL"
-  },
-  {
-    "id": "https://www.darkreading.com/cyberattacks-data-breaches/sandworm-chains-cisco-vulnerabilities-cyclops-blink",
-    "headline": "Sandworm Chains Cisco Vulnerabilities to Deploy Cyclops Blink",
-    "summary": "The notorious Russian threat group Sandworm is spreading an upgraded version of Cyclops Blink, a botnet malware that the FBI disrupted in 2022. The campaign reportedly chains Cisco vulnerabilities to deploy the malware.",
-    "sourceName": "darkreading",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/sandworm-chains-cisco-vulnerabilities-cyclops-blink",
-    "category": "NATION_STATE",
-    "publishedAt": "2026-09-14T21:37:28.000Z",
-    "severity": "HIGH"
-  },
-  {
-    "id": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk",
-    "headline": "Maximum-Severity GitLab Path Traversal Flaw Risks Supply Chains",
-    "summary": "GitLab Community Edition and Enterprise Edition instances are affected by CVE-2026-85706, a path traversal vulnerability rated 10 out of 10 on the CVSS scale. The maximum-severity flaw puts supply chains at risk, according to the supplied article information, and is classified as critical.",
-    "sourceName": "darkreading",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk",
-    "category": "VULNERABILITY",
-    "publishedAt": "2026-09-14T20:19:22.000Z",
-    "severity": "CRITICAL"
   }
 ]
