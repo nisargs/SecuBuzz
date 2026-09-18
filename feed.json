@@ -1,5 +1,101 @@
 [
   {
+    "id": "https://thehackernews.com/2026/09/transparent-tribe-deploys-new-rust.html",
+    "sourceUrl": "https://thehackernews.com/2026/09/transparent-tribe-deploys-new-rust.html",
+    "title": "Transparent Tribe Deploys Rust Backdoor for C2 Operations",
+    "headline": "Transparent Tribe Deploys Rust Backdoor for C2 Operations",
+    "summary": "The Pakistan‑aligned threat group Transparent Tribe, also known as APT36 and Earth Karkaddan, has launched new cyber attacks against Indian and Afghan government and defense entities. The attacks use newly documented tools RUSTYSHADE, RUSTYMOVE, PSNATCH, and BASHNATCH for command and control.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "publishedAt": "Fri, 18 Sep 2026 20:54:16 +0530",
+    "url": "https://thehackernews.com/2026/09/transparent-tribe-deploys-new-rust.html"
+  },
+  {
+    "id": "https://thehackernews.com/2026/09/microsoft-patches-cvss-100-azure-ai.html",
+    "sourceUrl": "https://thehackernews.com/2026/09/microsoft-patches-cvss-100-azure-ai.html",
+    "title": "Microsoft Releases Patch for Azure AI Foundry CVE-2026-85889",
+    "headline": "Microsoft Releases Patch for Azure AI Foundry CVE-2026-85889",
+    "summary": "Microsoft has issued a fix for a critical flaw in Azure AI Foundry that could allow unauthorized privilege escalation. The vulnerability, identified as CVE-2026-85889, has a CVSS score of 10.0 and permits attackers to elevate privileges over a network without authentication.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "publishedAt": "Fri, 18 Sep 2026 18:17:04 +0530",
+    "url": "https://thehackernews.com/2026/09/microsoft-patches-cvss-100-azure-ai.html"
+  },
+  {
+    "id": "https://thehackernews.com/2026/09/an-abandoned-cdn-domain-was-re.html",
+    "sourceUrl": "https://thehackernews.com/2026/09/an-abandoned-cdn-domain-was-re.html",
+    "title": "Abandoned CDN Domain Re‑Registered, Thousands of Sites Still Use It",
+    "headline": "Abandoned CDN Domain Re‑Registered, Thousands of Sites Still Use It",
+    "summary": "In July 2025, a former CDN domain was re‑registered after its original service was shut down. Despite the expiration, thousands of websites, code repositories, and documentation pages still reference hostnames under that domain, meaning the new owner can serve assets to unsuspecting traffic.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "publishedAt": "Fri, 18 Sep 2026 16:31:16 +0530",
+    "url": "https://thehackernews.com/2026/09/an-abandoned-cdn-domain-was-re.html"
+  },
+  {
+    "id": "https://thehackernews.com/2026/09/plugin4shell-lets-repository-owners.html",
+    "sourceUrl": "https://thehackernews.com/2026/09/plugin4shell-lets-repository-owners.html",
+    "title": "AI Coding Agent Flaw Lets Malicious Plugin Swap Despite Version Locks",
+    "headline": "AI Coding Agent Flaw Lets Malicious Plugin Swap Despite Version Locks",
+    "summary": "A flaw in four popular AI coding agents lets a repository owner replace a pinned plugin with malicious code, bypassing version locks. Security firm Air Security reported the vulnerability, and patches have been released for Anthropic’s Claude Code and OpenAI’s Codex, while GitHub Copilot remains unaffected.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "Fri, 18 Sep 2026 16:31:01 +0530",
+    "url": "https://thehackernews.com/2026/09/plugin4shell-lets-repository-owners.html"
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/gyazo-server-flaw-exploited-to-steal-236-million-user-records/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/gyazo-server-flaw-exploited-to-steal-236-million-user-records/",
+    "title": "Gyazo Server Flaw Exposes 23.6 Million User Records",
+    "headline": "Gyazo Server Flaw Exposes 23.6 Million User Records",
+    "summary": "Gyazo, an image‑sharing service, confirmed a data breach after attackers exploited a server vulnerability that allowed them to steal 23.6 million user records. The breach highlights the risk of unpatched server flaws in popular platforms.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "Fri, 18 Sep 2026 12:00:38 -0400",
+    "url": "https://www.bleepingcomputer.com/news/security/gyazo-server-flaw-exploited-to-steal-236-million-user-records/"
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/fake-lastpass-authenticator-github-repos-push-new-rapuncel-infostealer/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fake-lastpass-authenticator-github-repos-push-new-rapuncel-infostealer/",
+    "title": "Fake LastPass Authenticator Repositories Push New Rapuncel Infostealer",
+    "headline": "Fake LastPass Authenticator Repositories Push New Rapuncel Infostealer",
+    "summary": "A malware campaign uses SEO‑optimized GitHub repositories that impersonate well‑known software firms to distribute a previously undocumented information stealer named Rapuncel. The tactic exploits trust in legitimate software names to spread the malicious code.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "publishedAt": "Fri, 18 Sep 2026 11:19:06 -0400",
+    "url": "https://www.bleepingcomputer.com/news/security/fake-lastpass-authenticator-github-repos-push-new-rapuncel-infostealer/"
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/secure-enterprise-sharing-with-access-reviews-for-microsoft-365/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/secure-enterprise-sharing-with-access-reviews-for-microsoft-365/",
+    "title": "Microsoft 365 Access Reviews Improve Data Visibility",
+    "headline": "Microsoft 365 Access Reviews Improve Data Visibility",
+    "summary": "Microsoft 365 enables easy file sharing, but access can linger after its purpose ends, exposing sensitive data. Tenfold Software explains how centralized access governance and owner-driven reviews can identify and remove unnecessary access, improving visibility and security for organizations, ensuring data remains protected.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "Fri, 18 Sep 2026 10:00:10 -0400",
+    "url": "https://www.bleepingcomputer.com/news/security/secure-enterprise-sharing-with-access-reviews-for-microsoft-365/"
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/microsoft-teams-will-let-admins-block-custom-file-extensions/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-teams-will-let-admins-block-custom-file-extensions/",
+    "title": "Teams Adds Custom File Extension Blocking for Admins",
+    "headline": "Teams Adds Custom File Extension Blocking for Admins",
+    "summary": "Microsoft Teams is adding a new feature that allows administrators to block custom file extensions commonly linked to security threats. The update lets organizations tailor the list of prohibited extensions to meet their security policies, helping prevent malicious files from being shared within Teams.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "Fri, 18 Sep 2026 09:58:40 -0400",
+    "url": "https://www.bleepingcomputer.com/news/security/microsoft-teams-will-let-admins-block-custom-file-extensions/"
+  },
+  {
     "id": "https://thehackernews.com/2026/09/weaselbiscuit-stealer-spreads-via-13.html",
     "sourceUrl": "https://thehackernews.com/2026/09/weaselbiscuit-stealer-spreads-via-13.html",
     "title": "WeaselBiscuit Stealer Discovered in 13 npm Packages",
@@ -1090,85 +1186,5 @@
     "category": "VULNERABILITY",
     "publishedAt": "2026-09-14T20:19:22.000Z",
     "severity": "CRITICAL"
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/homebrew-700-gets-built-in-gui-better-security-controls/",
-    "headline": "Homebrew 7.0.0 Adds Built-In Vulnerability Scanner and Native BrewUI",
-    "summary": "Homebrew package manager version 7.0.0 has been released with a built-in vulnerability scanner, stronger security controls, and the full release of its native BrewUI graphical interface. The update expands Homebrew’s security capabilities while adding a completed GUI experience for users of the package manager.",
-    "sourceName": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/homebrew-700-gets-built-in-gui-better-security-controls",
-    "category": "VULNERABILITY",
-    "publishedAt": "2026-09-14T19:51:04.000Z",
-    "severity": "LOW"
-  },
-  {
-    "id": "https://therecord.media/nsa-reorganization-five-mission-centers",
-    "headline": "NSA Reorganization to Establish 5 Mission Centers Including Cyber and AI",
-    "summary": "The NSA is undergoing a fast and thorough reorganization. Described as the largest electronic spy agency in the world, the agency is reorganizing quickly. This thorough reorganization at the NSA will create 5 mission centers. Among the 5 mission centers created under this structure will be centers for cyber and AI.",
-    "sourceName": "The Record from Recorded Future News",
-    "sourceUrl": "https://therecord.media/nsa-reorganization-five-mission-centers",
-    "category": "GENERAL",
-    "publishedAt": "2026-09-13T21:36:00.000Z",
-    "severity": "LOW"
-  },
-  {
-    "id": "https://www.securityweek.com/anthropic-ceo-dario-amodei-says-ai-industry-needs-to-give-safety-measures-time-to-catch-up/",
-    "headline": "Anthropic CEO Calls for AI Safety Measures to Catch Up",
-    "summary": "Anthropic CEO Dario Amodei has stated that the AI industry must give safety measures sufficient time to catch up. Amodei issued a warning that within six to 12 months, AI could be capable of leading a swarm of agents that could take over the entire internet.",
-    "sourceName": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/anthropic-ceo-dario-amodei-says-ai-industry-needs-to-give-safety-measures-time-to-catch-up",
-    "category": "GENERAL",
-    "publishedAt": "2026-09-13T13:27:25.000Z",
-    "severity": "MEDIUM"
-  },
-  {
-    "id": "https://thehackernews.com/2026/09/attackers-use-passkey-phishing-to.html",
-    "headline": "Attackers Use Passkey Phishing to Hijack Microsoft Cloud Accounts",
-    "summary": "Microsoft disclosed 2 threat campaigns abusing third-party email delivery infrastructure. 1 campaign distributed over 1000000 financial fraud emails between August 3 and 5, 2026, by impersonating chief executive officers. Threat actors also used passkey-themed social engineering to breach cloud environments, hijack Microsoft cloud accounts, and exfiltrate data.",
-    "sourceName": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/09/attackers-use-passkey-phishing-to.html",
-    "category": "BREACH",
-    "publishedAt": "2026-09-13T10:11:48.000Z",
-    "severity": "HIGH"
-  },
-  {
-    "id": "https://thehackernews.com/2026/09/cisa-adds-5-actively-exploited.html",
-    "headline": "CISA Adds Five Actively Exploited Flaws to KEV Catalog",
-    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency has added five actively exploited security flaws to its Known Exploited Vulnerabilities catalog. The vulnerabilities impact JFrog Artifactory, ConnectWise ScreenConnect, and MikroTik RouterOS. Among these is CVE-2026-42016, an incorrect authorization vulnerability with a CVSS score of 8.1, following reports of active exploitation.",
-    "sourceName": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/09/cisa-adds-5-actively-exploited.html",
-    "category": "VULNERABILITY",
-    "publishedAt": "2026-09-12T15:54:45.000Z",
-    "severity": "HIGH"
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/dutch-ncsc-critical-check-point-vpn-flaws-exploitation-is-imminent/",
-    "headline": "Dutch NCSC Warns of Imminent Exploitation of Critical Check Point VPN Flaws",
-    "summary": "The Dutch Nationaal Cyber Security Centrum NCSC is warning of imminent exploitation of two critical flaws in Check Point VPN. These two critical flaws are tracked as CVE-2026-85102 and CVE-2026-85103. The agency warns that exploitation of both Check Point VPN vulnerabilities is imminent.",
-    "sourceName": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/dutch-ncsc-critical-check-point-vpn-flaws-exploitation-is-imminent",
-    "category": "CVE",
-    "publishedAt": "2026-09-12T14:14:32.000Z",
-    "severity": "CRITICAL"
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/hackers-abused-claude-to-extract-secrets-from-18m-android-apps/",
-    "headline": "Threat Groups Attempted to Abuse Anthropic's Claude AI",
-    "summary": "Anthropic reported that multiple threat groups attempted to abuse its Claude AI model for malicious activities. The perpetrators included financially motivated actors as well as state-sponsored espionage groups associated with Russia and China. According to the report, hackers abused the Claude model to extract secrets from 1.8 million Android applications.",
-    "sourceName": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-abused-claude-to-extract-secrets-from-18m-android-apps",
-    "category": "NATION_STATE",
-    "publishedAt": "2026-09-11T20:19:09.000Z",
-    "severity": "HIGH"
-  },
-  {
-    "id": "https://therecord.media/florida-shiny-hunters-motor-vehicle",
-    "headline": "Florida DMV Confirms Data Breach Linked to Stolen Officer Credentials",
-    "summary": "The Florida Department of Motor Vehicles has confirmed a data breach claimed by the cybercrime group ShinyHunters. The department stated that the incident originated with the theft of credentials stored on a police officer's personal device, tying the motor vehicle data breach to the stolen credentials.",
-    "sourceName": "The Record from Recorded Future News",
-    "sourceUrl": "https://therecord.media/florida-shiny-hunters-motor-vehicle",
-    "category": "BREACH",
-    "publishedAt": "2026-09-11T20:00:00.000Z",
-    "severity": "HIGH"
   }
 ]
