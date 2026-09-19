@@ -14,11 +14,11 @@ import { colors, spacing } from '../theme/theme';
 const BLUE = '#4CC9F0';
 
 const PRIVACY_EMAIL =
-  'mailto:[PRIVACY_EMAIL]';
+  'mailto:secubuzz.app@gmail.com';
 
 export default function ContactScreen() {
   function openEmail() {
-    void Linking.openURL(PRIVACY_EMAIL);
+    void Linking.openURL("mailto:secubuzz.app@gmail.com");
   }
 
   return (
@@ -74,7 +74,7 @@ export default function ContactScreen() {
             </Text>
 
             <Text style={styles.emailAddress}>
-              [PRIVACY_EMAIL]
+            secubuzz.app@gmail.com
             </Text>
           </View>
 

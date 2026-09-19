@@ -119,7 +119,7 @@ export default function TermsScreen() {
             The SecuBuzz name, application interface,
             original software, branding, and original
             materials are owned by or licensed to
-            [DEVELOPER_NAME], except for third-party
+            Nisarg Soni, except for third-party
             materials and content identified as belonging
             to their respective owners.
           </Text>
@@ -138,7 +138,7 @@ export default function TermsScreen() {
         <Section title="8. Limitation of Liability">
           <Text style={styles.paragraph}>
             To the maximum extent permitted by applicable
-            law, [DEVELOPER_NAME] will not be liable for
+            law, Nisarg Soni will not be liable for
             losses arising from reliance on cybersecurity
             information provided through SecuBuzz,
             interruptions to the service, or changes to
@@ -162,7 +162,7 @@ export default function TermsScreen() {
           </Text>
 
           <Text style={styles.contact}>
-            [PRIVACY_EMAIL]
+          secubuzz.app@gmail.com
           </Text>
         </Section>
       </ScrollView>
