@@ -1,5 +1,65 @@
 [
   {
+    "id": "https://therecord.media/nations-take-action-on-north-korean-it-worker-schemes",
+    "sourceUrl": "https://therecord.media/nations-take-action-on-north-korean-it-worker-schemes",
+    "title": "Nations Take Action on North Korean IT Workers After UN Report",
+    "headline": "Nations Take Action on North Korean IT Workers After UN Report",
+    "summary": "A UN report highlighted allegations involving North Korean IT workers, prompting Vietnam, Laos, Pakistan, and Argentina to take meaningful steps in response as of July. The actions reflect growing international pressure on North Korea’s cyber workforce and its global impact.",
+    "category": "NATION_STATE",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "publishedAt": "Fri, 18 Sep 2026 14:29:00 GMT",
+    "url": "https://therecord.media/nations-take-action-on-north-korean-it-worker-schemes"
+  },
+  {
+    "id": "https://therecord.media/hacking-group-nighteagle-expands-russia-china",
+    "sourceUrl": "https://therecord.media/hacking-group-nighteagle-expands-russia-china",
+    "title": "NightEagle Expands Operations to Russia",
+    "headline": "NightEagle Expands Operations to Russia",
+    "summary": "The hacking group NightEagle, previously targeting China’s high‑tech sector, has broadened its reach to Russia. Kaspersky reports investigating multiple incidents involving the group at Russian businesses over the past year, indicating a growing threat to the region’s cybersecurity landscape.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "publishedAt": "Fri, 18 Sep 2026 13:24:00 GMT",
+    "url": "https://therecord.media/hacking-group-nighteagle-expands-russia-china"
+  },
+  {
+    "id": "https://therecord.media/north-korean-hackers-infect-thousands-of-devices-waterplum-scheme",
+    "sourceUrl": "https://therecord.media/north-korean-hackers-infect-thousands-of-devices-waterplum-scheme",
+    "title": "WaterPlum Campaign Infects Thousands of Devices Worldwide",
+    "headline": "WaterPlum Campaign Infects Thousands of Devices Worldwide",
+    "summary": "North Korean hackers under the WaterPlum campaign have infected thousands of devices across 100 countries. The FBI, Defense Department, Japan’s National Police Agency, and law enforcement in Australia and Germany issued a joint advisory warning of cryptocurrency theft by actors posing as AI or blockchain companies.",
+    "category": "NATION_STATE",
+    "severity": "HIGH",
+    "source": "The Record",
+    "publishedAt": "Fri, 18 Sep 2026 04:00:00 GMT",
+    "url": "https://therecord.media/north-korean-hackers-infect-thousands-of-devices-waterplum-scheme"
+  },
+  {
+    "id": "https://therecord.media/european-commission-set-to-push-social-media-kids-restrictions-into-law",
+    "sourceUrl": "https://therecord.media/european-commission-set-to-push-social-media-kids-restrictions-into-law",
+    "title": "EU Proposes KIDS Act to Restrict Social Media Accounts for Children",
+    "headline": "EU Proposes KIDS Act to Restrict Social Media Accounts for Children",
+    "summary": "The European Commission plans to legislate the EU KIDS Act, banning social media platforms from offering accounts to users under 13 and setting a minimum age of 15 for account creation across the bloc. The proposal aims to enhance child safety online.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Record",
+    "publishedAt": "Thu, 17 Sep 2026 20:36:00 GMT",
+    "url": "https://therecord.media/european-commission-set-to-push-social-media-kids-restrictions-into-law"
+  },
+  {
+    "id": "https://therecord.media/china-hackers-latin-america-espionage",
+    "sourceUrl": "https://therecord.media/china-hackers-latin-america-espionage",
+    "title": "Chinese Hackers Target Latin American Governments with New Backdoor",
+    "headline": "Chinese Hackers Target Latin American Governments with New Backdoor",
+    "summary": "Alleged Chinese hackers, known as FamousSparrow, are reportedly infiltrating government agencies across Latin America using a new backdoor dubbed “SparroWocky.” The intrusion method allows attackers to gain persistent access, raising concerns over regional cybersecurity and potential state-sponsored espionage.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Record",
+    "publishedAt": "Thu, 17 Sep 2026 16:30:00 GMT",
+    "url": "https://therecord.media/china-hackers-latin-america-espionage"
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/09/18/google-androidx-security-state-libraries/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/09/18/google-androidx-security-state-libraries/",
     "title": "Android Apps Can Now Check Security Patches Down to Individual Device Components",
@@ -1138,65 +1198,5 @@
     "source": "BleepingComputer",
     "publishedAt": "Thu, 17 Sep 2026 03:20:54 -0400",
     "url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-identity-service-engine-zero-day-exploited-in-attacks/"
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-258-02",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-258-02",
-    "title": "Critical Vulnerabilities Found in Wärtsilä FOS‑Onboard Software",
-    "headline": "Critical Vulnerabilities Found in Wärtsilä FOS‑Onboard Software",
-    "summary": "Wärtsilä FOS‑Onboard 5.07.0923.01 is affected by two high‑impact CVEs, allowing attackers to deliver unauthorized updates, execute code, or extract credentials. The vulnerabilities involve a hard‑coded cryptographic key in the deployer‑ng Update Controller, posing a serious risk to transportation systems.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CISA",
-    "publishedAt": "Tue, 15 Sep 26 12:00:00 +0000",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-258-02"
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-258-06",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-258-06",
-    "title": "Siemens Mendix SAML Vulnerability Allows Account Hijacking",
-    "headline": "Siemens Mendix SAML Vulnerability Allows Account Hijacking",
-    "summary": "The Mendix SAML module contains a vulnerability that could let unauthenticated remote attackers hijack accounts in certain SSO configurations. Siemens has released fixes and recommends updating to the latest version. The issue is identified as CVE-2026-80465 with a CVSS score of 8.7.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "CISA",
-    "publishedAt": "Tue, 15 Sep 26 12:00:00 +0000",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-258-06"
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-258-07",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-258-07",
-    "title": "Siemens Teamcenter XSS Vulnerability Enables Remote Code Injection",
-    "headline": "Siemens Teamcenter XSS Vulnerability Enables Remote Code Injection",
-    "summary": "A reflected cross‑site scripting flaw in Teamcenter’s authentication redirect flow allows unauthenticated attackers to inject JavaScript into authenticated users’ sessions. Siemens has issued new versions and advises updating. The vulnerability has a CVSS score of 6.1.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "CISA",
-    "publishedAt": "Tue, 15 Sep 26 12:00:00 +0000",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-258-07"
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-258-03",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-258-03",
-    "title": "mySCADA myPRO Manager Vulnerabilities Allow Privileged Access and SMS Abuse",
-    "headline": "mySCADA myPRO Manager Vulnerabilities Allow Privileged Access and SMS Abuse",
-    "summary": "The mySCADA myPRO Manager command API lacks proper authentication, enabling unauthenticated attackers with network access to exploit privileged functions and send arbitrary SMS messages via the connected GSM modem. The vulnerability is rated CVSS 9.8 and affects multiple critical infrastructure sectors worldwide.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "CISA",
-    "publishedAt": "Tue, 15 Sep 26 12:00:00 +0000",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-258-03"
-  },
-  {
-    "id": "https://www.securityweek.com/cisa-releases-guidance-on-deploying-cyber-decoys/",
-    "sourceUrl": "https://www.securityweek.com/cisa-releases-guidance-on-deploying-cyber-decoys/",
-    "title": "CISA Issues Guidance on Cyber Decoys to Bolster Critical Infrastructure Defenses",
-    "headline": "CISA Issues Guidance on Cyber Decoys to Bolster Critical Infrastructure Defenses",
-    "summary": "CISA has released new guidance on deploying cyber decoys, complementing Zero Trust models to help organizations detect, observe, and block malicious activity within their environments.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "Thu, 17 Sep 2026 07:53:43 +0000",
-    "url": "https://www.securityweek.com/cisa-releases-guidance-on-deploying-cyber-decoys/"
   }
 ]
