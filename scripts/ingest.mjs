@@ -35,7 +35,7 @@ const AI_MODEL = "openai/gpt-oss-20b";
 
 const ARTICLES_PER_AI_BATCH = 2;
 
-const MAX_NEW_CANDIDATES = 2;
+const MAX_NEW_CANDIDATES = 8;
 
 const ITEMS_PER_FEED = 10;
 
