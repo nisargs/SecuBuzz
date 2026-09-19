@@ -95,6 +95,16 @@ export default function PrivacyPolicyScreen() {
             on your device so that your Saved section
             can remember your selections.
           </Text>
+
+          <Text style={styles.paragraph}>
+            If you choose to enable news notifications,
+            an Expo push notification token is generated for
+            your device and processed to deliver alerts when
+            new cybersecurity briefs are published. This
+            token is strictly used for notification delivery
+            and notification permissions can be revoked at
+            any time through your operating system settings.
+          </Text>
         </Section>
 
         <Section title="3. Information Stored on Your Device">

@@ -9,6 +9,13 @@ const ROOT_DIR = path.resolve(__dirname, "..");
 
 const FEED_FILE = path.join(ROOT_DIR, "feed.json");
 const SEEN_URLS_FILE = path.join(ROOT_DIR, "seen-urls.json");
+const NOTIFIED_ARTICLES_FILE = path.join(ROOT_DIR, "notified-articles.json");
+
+const PUSH_TOKEN_API_URL =
+  process.env.PUSH_TOKEN_API_URL ||
+  "https://secubuzz-push.secubuzz.workers.dev/api/push-tokens";
+
+const PUSH_ADMIN_SECRET = process.env.PUSH_ADMIN_SECRET;
 
 const GROQ_API_URL =
   "https://api.groq.com/openai/v1/chat/completions";
@@ -1672,6 +1679,185 @@ await writeJsonFile(
     seenUrls,
   ),
 );
+
+// -----------------------------------------------------------------------------
+// PUSH NOTIFICATIONS BROADCAST
+// -----------------------------------------------------------------------------
+
+async function sendPushNotificationsForNewArticles(newArticles) {
+  if (!newArticles || newArticles.length === 0) {
+    return;
+  }
+
+  const existingNotified = await readJsonFile(NOTIFIED_ARTICLES_FILE, []);
+  const notifiedSet = new Set(Array.isArray(existingNotified) ? existingNotified : []);
+
+  const articlesToNotify = newArticles.filter(
+    (article) => !notifiedSet.has(normaliseUrl(article.sourceUrl)),
+  );
+
+  if (articlesToNotify.length === 0) {
+    console.log("No unnotified new articles to broadcast.");
+    return;
+  }
+
+  console.log(
+    `\nPreparing push notifications for ${articlesToNotify.length} new articles...`,
+  );
+
+  let tokens = [];
+  try {
+    const headers = { "Content-Type": "application/json" };
+    if (PUSH_ADMIN_SECRET) {
+      headers["x-admin-key"] = PUSH_ADMIN_SECRET;
+      headers["Authorization"] = `Bearer ${PUSH_ADMIN_SECRET}`;
+    }
+
+    const tokenRes = await fetch(PUSH_TOKEN_API_URL, { headers });
+    if (tokenRes.ok) {
+      const data = await tokenRes.json();
+      if (Array.isArray(data.tokens)) {
+        tokens = data.tokens;
+      }
+    } else {
+      console.warn(
+        `Could not fetch push tokens: HTTP ${tokenRes.status} ${tokenRes.statusText}`,
+      );
+    }
+  } catch (error) {
+    console.warn(
+      "Could not connect to push token service:",
+      error instanceof Error ? error.message : error,
+    );
+  }
+
+  if (tokens.length === 0) {
+    console.log(
+      "No registered push tokens found. Updating notification history.",
+    );
+    for (const article of articlesToNotify) {
+      notifiedSet.add(normaliseUrl(article.sourceUrl));
+    }
+    await writeJsonFile(NOTIFIED_ARTICLES_FILE, Array.from(notifiedSet));
+    return;
+  }
+
+  console.log(`Broadcasting to ${tokens.length} registered device(s)...`);
+
+  const invalidTokens = new Set();
+
+  for (const article of articlesToNotify) {
+    console.log(`\nSending push notification for: "${article.headline}"`);
+
+    // Payload: Title="SecuBuzz", Body=<ARTICLE HEADLINE> (ONLY headline)
+    const messages = tokens.map((token) => ({
+      to: token,
+      sound: "default",
+      title: "SecuBuzz",
+      body: article.headline,
+      channelId: "secubuzz-news",
+      data: {
+        type: "article",
+        articleId: article.sourceUrl,
+        articleUrl: article.sourceUrl,
+      },
+    }));
+
+    const chunkSize = 100;
+    for (let i = 0; i < messages.length; i += chunkSize) {
+      const chunk = messages.slice(i, i + chunkSize);
+
+      try {
+        const response = await fetch("https://exp.host/--/api/v2/push/send", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+            "Accept-Encoding": "gzip, deflate",
+          },
+          body: JSON.stringify(chunk),
+        });
+
+        if (response.ok) {
+          const result = await response.json();
+          if (Array.isArray(result?.data)) {
+            result.data.forEach((ticket, idx) => {
+              if (
+                ticket.status === "error" &&
+                ticket.details?.error === "DeviceNotRegistered"
+              ) {
+                invalidTokens.add(chunk[idx].to);
+              }
+            });
+          }
+          console.log(
+            `Sent batch of ${chunk.length} notifications successfully.`,
+          );
+        } else {
+          console.error(
+            `Expo Push API error: HTTP ${response.status} ${response.statusText}`,
+          );
+        }
+      } catch (err) {
+        console.error(
+          "Failed to send notification batch to Expo:",
+          err instanceof Error ? err.message : err,
+        );
+      }
+    }
+
+    notifiedSet.add(normaliseUrl(article.sourceUrl));
+
+    try {
+      const headers = { "Content-Type": "application/json" };
+      if (PUSH_ADMIN_SECRET) {
+        headers["x-admin-key"] = PUSH_ADMIN_SECRET;
+      }
+      const recordUrl = PUSH_TOKEN_API_URL.replace(
+        /\/push-tokens\/?$/,
+        "/notifications/sent",
+      );
+      await fetch(recordUrl, {
+        method: "POST",
+        headers,
+        body: JSON.stringify({
+          articleId: article.sourceUrl,
+          headline: article.headline,
+          recipientCount: tokens.length,
+        }),
+      });
+    } catch {
+      // Ignore
+    }
+  }
+
+  await writeJsonFile(NOTIFIED_ARTICLES_FILE, Array.from(notifiedSet));
+
+  if (invalidTokens.size > 0) {
+    try {
+      const headers = { "Content-Type": "application/json" };
+      if (PUSH_ADMIN_SECRET) {
+        headers["x-admin-key"] = PUSH_ADMIN_SECRET;
+      }
+      const deactivateUrl = PUSH_TOKEN_API_URL.replace(
+        /\/push-tokens\/?$/,
+        "/push-tokens/deactivate",
+      );
+      await fetch(deactivateUrl, {
+        method: "POST",
+        headers,
+        body: JSON.stringify({ tokens: Array.from(invalidTokens) }),
+      });
+      console.log(`Deactivated ${invalidTokens.size} expired tokens.`);
+    } catch {
+      // Ignore
+    }
+  }
+}
+
+if (uniqueGeneratedArticles.length > 0) {
+  await sendPushNotificationsForNewArticles(uniqueGeneratedArticles);
+}
 
 // -----------------------------------------------------------------------------
 // FINAL OUTPUT

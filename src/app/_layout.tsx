@@ -1,15 +1,19 @@
+import * as Notifications from 'expo-notifications';
 import { useFonts } from 'expo-font';
-import { Stack } from 'expo-router';
+import { Stack, useRouter } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 
 import { SavedArticlesProvider } from '../context/SavedArticlesContext';
+import { registerForPushNotificationsAsync } from '../services/notificationService';
 import { exoFonts } from '../theme/fonts';
 import { colors } from '../theme/theme';
 
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
+  const router = useRouter();
+
   const [loaded, error] = useFonts({
     Exo_400Regular: exoFonts.regular,
     Exo_500Medium: exoFonts.medium,
@@ -23,6 +27,49 @@ export default function RootLayout() {
       void SplashScreen.hideAsync();
     }
   }, [loaded, error]);
+
+  // Notification response observer for cold-start and background taps
+  useEffect(() => {
+    function handleNotificationResponse(
+      response: Notifications.NotificationResponse
+    ) {
+      try {
+        const data = response?.notification?.request?.content?.data;
+        if (data?.type === 'article' && typeof data.articleId === 'string') {
+          router.push({
+            pathname: '/article/[id]',
+            params: { id: data.articleId },
+          });
+        }
+      } catch (err) {
+        console.warn('SecuBuzz: Notification tap handling error:', err);
+      }
+    }
+
+    // Handle launch from notification when app was completely closed
+    Notifications.getLastNotificationResponseAsync().then((response) => {
+      if (response) {
+        handleNotificationResponse(response);
+      }
+    });
+
+    // Handle tap from background or foreground
+    const subscription =
+      Notifications.addNotificationResponseReceivedListener(
+        handleNotificationResponse
+      );
+
+    return () => {
+      subscription.remove();
+    };
+  }, [router]);
+
+  // Request notification permission once at first-use flow after app loads
+  useEffect(() => {
+    if (loaded) {
+      void registerForPushNotificationsAsync();
+    }
+  }, [loaded]);
 
   if (!loaded && !error) {
     return null;

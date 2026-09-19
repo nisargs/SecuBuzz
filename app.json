@@ -36,6 +36,14 @@
           "image": "./assets/splash-icon.png",
           "resizeMode": "contain"
         }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/android-icon-monochrome.png",
+          "color": "#4CC9F0",
+          "defaultChannel": "secubuzz-news"
+        }
       ]
     ],
     "experiments": {
@@ -45,7 +53,8 @@
       "router": {},
       "eas": {
         "projectId": "51de636f-84a1-4295-9b85-02c3c406d964"
-      }
+      },
+      "pushTokenApiUrl": "https://secubuzz-push.secubuzz.workers.dev/api/push-tokens"
     },
     "owner": "secubuzz-app"
   }

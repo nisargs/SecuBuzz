@@ -1,6 +1,8 @@
 import { Ionicons } from '@expo/vector-icons';
 import { router } from 'expo-router';
+import { useEffect, useState } from 'react';
 import {
+  AppState,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -9,6 +11,10 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import {
+  getNotificationPermissionStatusAsync,
+  registerForPushNotificationsAsync,
+} from '../../services/notificationService';
 import { exoFonts } from '../../theme/fonts';
 import { colors, spacing } from '../../theme/theme';
 
@@ -65,6 +71,31 @@ function SettingsRow({
 }
 
 export default function SettingsScreen() {
+  const [notificationsEnabled, setNotificationsEnabled] = useState(false);
+
+  useEffect(() => {
+    let isMounted = true;
+    async function checkStatus() {
+      const status = await getNotificationPermissionStatusAsync();
+      if (isMounted) {
+        setNotificationsEnabled(status === 'granted');
+      }
+    }
+
+    void checkStatus();
+
+    const subscription = AppState.addEventListener('change', (state) => {
+      if (state === 'active') {
+        void checkStatus();
+      }
+    });
+
+    return () => {
+      isMounted = false;
+      subscription.remove();
+    };
+  }, []);
+
   return (
     <SafeAreaView
       style={styles.safe}
@@ -86,6 +117,59 @@ export default function SettingsScreen() {
             SECU BUZZ APP SETTINGS
           </Text>
         </View>
+
+        {/* NOTIFICATIONS */}
+        <View style={styles.sectionHeader}>
+          <Text style={styles.sectionLabel}>
+            NOTIFICATIONS
+          </Text>
+        </View>
+
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel="Notification status"
+          onPress={async () => {
+            if (!notificationsEnabled) {
+              await registerForPushNotificationsAsync(true);
+              const status = await getNotificationPermissionStatusAsync();
+              setNotificationsEnabled(status === 'granted');
+            }
+          }}
+          style={styles.card}
+        >
+          <View style={styles.cardHeader}>
+            <Ionicons
+              name={
+                notificationsEnabled
+                  ? 'notifications-outline'
+                  : 'notifications-off-outline'
+              }
+              size={22}
+              color={BLUE}
+            />
+
+            <Text style={styles.label}>
+              News Alerts ·{' '}
+              <Text
+                style={{
+                  color: notificationsEnabled
+                    ? BLUE
+                    : colors.textMuted,
+                }}
+              >
+                {notificationsEnabled
+                  ? 'Enabled'
+                  : 'Disabled'}
+              </Text>
+            </Text>
+          </View>
+
+          <Text style={styles.body}>
+            {notificationsEnabled
+              ? 'Notifications are active. You will receive alerts when new cybersecurity briefs are published.'
+              : 'Notifications are disabled. Tap to grant permission and receive alerts for new security stories.'}
+          </Text>
+        </Pressable>
 
         {/* APPEARANCE */}
         <View style={styles.card}>
