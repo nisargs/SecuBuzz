@@ -240,18 +240,6 @@
     "url": "https://thehackernews.com/2026/09/identity-visibility-in-2026-foundation.html"
   },
   {
-    "id": "https://thehackernews.com/2026/09/claude-opus-5-helped-researchers-take.html",
-    "sourceUrl": "https://thehackernews.com/2026/09/claude-opus-5-helped-researchers-take.html",
-    "title": "Researchers Exploit Chain of Flaws to Access OpenAI Staff Accounts",
-    "headline": "Researchers Exploit Chain of Flaws to Access OpenAI Staff Accounts",
-    "summary": "Hacktron researchers used Claude Opus 5 to chain two flaws, first in OpenAI’s public help forum software and then in its login system, to take over ChatGPT and Codex accounts of OpenAI employees and reach an internal code repository. The activity was part of security research.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-09-19T13:28:35.000Z",
-    "url": "https://thehackernews.com/2026/09/claude-opus-5-helped-researchers-take.html"
-  },
-  {
     "id": "https://thehackernews.com/2026/09/solarwinds-patches-arm-hard-coded-key.html",
     "sourceUrl": "https://thehackernews.com/2026/09/solarwinds-patches-arm-hard-coded-key.html",
     "title": "SolarWinds Releases Patch for High-Severity ARM Remote Code Execution Flaw",
@@ -262,18 +250,6 @@
     "source": "The Hacker News",
     "publishedAt": "2026-09-19T09:31:17.000Z",
     "url": "https://thehackernews.com/2026/09/solarwinds-patches-arm-hard-coded-key.html"
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/bragjack-attacks-hijack-ai-browser-agents-through-malicious-extensions/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/bragjack-attacks-hijack-ai-browser-agents-through-malicious-extensions/",
-    "title": "BragJack Hijacks AI Browser Agents via Malicious Extension",
-    "headline": "BragJack Hijacks AI Browser Agents via Malicious Extension",
-    "summary": "BragJack, a proof‑of‑concept attack, hijacks AI assistants in multiple browsers by installing a malicious extension. The technique, Prompt Forcing, has earned significant bounties and led to two CVEs.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-09-19T14:56:31.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/bragjack-attacks-hijack-ai-browser-agents-through-malicious-extensions/"
   },
   {
     "id": "https://www.bleepingcomputer.com/news/security/north-korean-waterplum-hackers-infected-30-000-devices-worldwide/",

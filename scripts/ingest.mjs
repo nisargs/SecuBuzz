@@ -35,7 +35,7 @@ const AI_MODEL = "openai/gpt-oss-20b";
 
 const ARTICLES_PER_AI_BATCH = 2;
 
-const MAX_NEW_CANDIDATES = 8;
+const MAX_NEW_CANDIDATES = 2;
 
 const ITEMS_PER_FEED = 10;
 
@@ -270,7 +270,7 @@ function extractRssItems(xml) {
 
 function normaliseUrl(url) {
   try {
-    const cleaned = String(url || "").replace(/[\t\r\n]+/g, "").trim();
+    const cleaned = String(url || "").replace(/\s+/g, "").trim();
     const parsed = new URL(cleaned);
 
     parsed.hash = "";
@@ -291,13 +291,14 @@ function normaliseUrl(url) {
 
     return parsed.toString();
   } catch {
-    return String(url).trim();
+    return String(url || "").replace(/\s+/g, "").trim();
   }
 }
 
 function isValidHttpUrl(value) {
   try {
-    const url = new URL(value);
+    const cleaned = String(value || "").replace(/\s+/g, "").trim();
+    const url = new URL(cleaned);
 
     return (
       url.protocol === "http:" ||
