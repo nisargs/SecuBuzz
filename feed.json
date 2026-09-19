@@ -1,5 +1,29 @@
 [
   {
+    "id": "https://thehackernews.com/2026/09/claude-opus-5-helped-researchers-take.html",
+    "sourceUrl": "https://thehackernews.com/2026/09/claude-opus-5-helped-researchers-take.html",
+    "title": "Researchers Exploit Chain of Flaws to Take Over OpenAI Staff Accounts",
+    "headline": "Researchers Exploit Chain of Flaws to Take Over OpenAI Staff Accounts",
+    "summary": "Hacktron researchers used Claude Opus 5 to chain two flaws, first in OpenAI’s public help forum software and then in its login system, to take control of ChatGPT and Codex accounts of several employees and access an internal code repository.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-09-19T18:36:53.000Z",
+    "url": "https://thehackernews.com/2026/09/claude-opus-5-helped-researchers-take.html"
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/bragjack-attacks-hijack-ai-browser-agents-through-malicious-extensions/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/bragjack-attacks-hijack-ai-browser-agents-through-malicious-extensions/",
+    "title": "Malicious Extension Hijacks AI Browser Agents Across Multiple Platforms",
+    "headline": "Malicious Extension Hijacks AI Browser Agents Across Multiple Platforms",
+    "summary": "BragJack, a proof‑of‑concept attack, hijacks AI assistants in Chrome, Edge, Opera Neon, Perplexity Comet, and Claude in Chrome by installing a single malicious extension, exploiting prompt‑forcing techniques.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-09-19T14:56:31.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/bragjack-attacks-hijack-ai-browser-agents-through-malicious-extensions/"
+  },
+  {
     "id": "https://therecord.media/nations-take-action-on-north-korean-it-worker-schemes",
     "sourceUrl": "https://therecord.media/nations-take-action-on-north-korean-it-worker-schemes",
     "title": "Nations Take Action on North Korean IT Workers After UN Report",
