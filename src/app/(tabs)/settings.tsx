@@ -15,6 +15,7 @@ import {
   getNotificationPermissionStatusAsync,
   registerForPushNotificationsAsync,
 } from '../../services/notificationService';
+import { getLocalTimeZoneShort } from '../../utils/formatPublishedAt';
 import { exoFonts } from '../../theme/fonts';
 import { colors, spacing } from '../../theme/theme';
 
@@ -189,6 +190,25 @@ export default function SettingsScreen() {
             SecuBuzz uses a dark interface
             with blue cybersecurity accents.
             Light mode is not available yet.
+          </Text>
+        </View>
+
+        {/* TIME ZONE */}
+        <View style={styles.card}>
+          <View style={styles.cardHeader}>
+            <Ionicons
+              name="time-outline"
+              size={22}
+              color={BLUE}
+            />
+
+            <Text style={styles.label}>
+              Time Zone
+            </Text>
+          </View>
+
+          <Text style={styles.body}>
+            All article publication times are automatically converted to your device's local time zone ({getLocalTimeZoneShort() || 'Local'}).
           </Text>
         </View>
 

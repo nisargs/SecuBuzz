@@ -102,6 +102,10 @@ const FEEDS = [
     name: "The Record",
     url: "https://therecord.media/feed/",
   },
+  {
+    name: "CyberNews AI",
+    url: "https://www.cybernewsai.com/feed.xml",
+  },
 ];
 
 // -----------------------------------------------------------------------------
@@ -266,7 +270,8 @@ function extractRssItems(xml) {
 
 function normaliseUrl(url) {
   try {
-    const parsed = new URL(url);
+    const cleaned = String(url || "").replace(/[\t\r\n]+/g, "").trim();
+    const parsed = new URL(cleaned);
 
     parsed.hash = "";
 
@@ -522,9 +527,14 @@ function validateAiArticle(
       article.severity,
     ),
     source: candidate.source,
-    publishedAt:
-      candidate.publishedAt ||
-      new Date().toISOString(),
+    publishedAt: candidate.publishedAt
+      ? (() => {
+          const parsed = new Date(candidate.publishedAt);
+          return Number.isNaN(parsed.getTime())
+            ? new Date().toISOString()
+            : parsed.toISOString();
+        })()
+      : new Date().toISOString(),
     url: sourceUrl,
   };
 }
@@ -812,6 +822,22 @@ async function waitBetweenRequests(
   if (resetTokensHeader) {
     console.log(
       `Groq token reset: ${resetTokensHeader}`,
+    );
+  }
+
+  const remainingRequestsHeader = getHeader(
+    response.headers,
+    "x-ratelimit-remaining-requests",
+  );
+  const limitRequestsHeader = getHeader(
+    response.headers,
+    "x-ratelimit-limit-requests",
+  );
+  if (remainingRequestsHeader) {
+    console.log(
+      `Groq remaining requests for today: ${remainingRequestsHeader}${
+        limitRequestsHeader ? ` / ${limitRequestsHeader}` : ""
+      }`,
     );
   }
 

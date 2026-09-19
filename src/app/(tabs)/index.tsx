@@ -2,6 +2,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   ActivityIndicator,
+  AppState,
   FlatList,
   Pressable,
   RefreshControl,
@@ -125,6 +126,21 @@ export default function FeedScreen() {
    */
   useEffect(() => {
     void load();
+  }, [load]);
+
+  /*
+   * Auto-refresh feed silently when returning to foreground.
+   */
+  useEffect(() => {
+    const subscription = AppState.addEventListener('change', (nextState) => {
+      if (nextState === 'active') {
+        void load();
+      }
+    });
+
+    return () => {
+      subscription.remove();
+    };
   }, [load]);
 
   /*

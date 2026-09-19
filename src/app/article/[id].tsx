@@ -80,6 +80,13 @@ export default function ArticleDetailScreen() {
 
   const article = liveArticle ?? savedArticle;
 
+  // If opened from a push notification for a fresh story, ensure latest feed is loaded
+  useEffect(() => {
+    if (state.status === 'ready' && !liveArticle && !savedArticle) {
+      void load();
+    }
+  }, [state.status, liveArticle, savedArticle, load]);
+
   if (!isHydrated) {
     return (
       <SafeAreaView style={styles.safe}>
@@ -265,6 +272,17 @@ export default function ArticleDetailScreen() {
             color={BLUE}
           />
         </Pressable>
+
+        <View style={styles.timeZoneNoteContainer}>
+          <Ionicons
+            name="time-outline"
+            size={13}
+            color={colors.textMuted}
+          />
+          <Text style={styles.timeZoneNote}>
+            Publication times are automatically converted to your device's local time zone.
+          </Text>
+        </View>
       </ScrollView>
     </SafeAreaView>
   );
@@ -419,5 +437,21 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: '700',
     letterSpacing: 1.2,
+  },
+
+  timeZoneNoteContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+    marginTop: spacing.md,
+    marginBottom: spacing.lg,
+    paddingHorizontal: 4,
+  },
+
+  timeZoneNote: {
+    color: colors.textMuted,
+    fontSize: 11,
+    fontFamily: 'Exo_400Regular',
+    flex: 1,
   },
 });

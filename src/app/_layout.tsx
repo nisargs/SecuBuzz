@@ -4,6 +4,7 @@ import { Stack, useRouter } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 
+import { getArticleRepository } from '../data/getArticleRepository';
 import { SavedArticlesProvider } from '../context/SavedArticlesContext';
 import { registerForPushNotificationsAsync } from '../services/notificationService';
 import { exoFonts } from '../theme/fonts';
@@ -54,13 +55,20 @@ export default function RootLayout() {
     });
 
     // Handle tap from background or foreground
-    const subscription =
+    const responseSubscription =
       Notifications.addNotificationResponseReceivedListener(
         handleNotificationResponse
       );
 
+    // When a notification arrives while app is open, pre-fetch latest feed
+    const receivedSubscription =
+      Notifications.addNotificationReceivedListener(() => {
+        void getArticleRepository().getArticles();
+      });
+
     return () => {
-      subscription.remove();
+      responseSubscription.remove();
+      receivedSubscription.remove();
     };
   }, [router]);
 
