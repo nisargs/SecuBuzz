@@ -1,5 +1,4 @@
 import { Ionicons } from '@expo/vector-icons';
-import { useFonts } from 'expo-font';
 import { useMemo, useState } from 'react';
 import {
   ActivityIndicator,
@@ -16,7 +15,6 @@ import { useRouter } from 'expo-router';
 import { EmptyState } from '../../components/ScreenStates';
 import { useSavedArticles } from '../../context/SavedArticlesContext';
 import type { Article } from '../../models/article';
-import { exoFonts } from '../../theme/fonts';
 import { colors, spacing } from '../../theme/theme';
 import { formatPublishedAt } from '../../utils/formatPublishedAt';
 
@@ -38,13 +36,6 @@ function formatCategory(
 
 export default function SavedScreen() {
   const router = useRouter();
-
-  const [fontsLoaded] = useFonts({
-    Exo_400Regular: exoFonts.regular,
-    Exo_500Medium: exoFonts.medium,
-    Exo_600SemiBold: exoFonts.semiBold,
-    Exo_700Bold: exoFonts.bold,
-  });
 
   const {
     savedArticles,
@@ -113,17 +104,6 @@ export default function SavedScreen() {
     } else {
       setSearchOpen(true);
     }
-  }
-
-  if (!fontsLoaded) {
-    return (
-      <View style={styles.loadingScreen}>
-        <ActivityIndicator
-          size="small"
-          color={BLUE}
-        />
-      </View>
-    );
   }
 
   if (!isHydrated) {

@@ -1,5 +1,4 @@
 import { Ionicons } from '@expo/vector-icons';
-import { useFonts } from 'expo-font';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   ActivityIndicator,
@@ -29,7 +28,6 @@ import {
   type Article,
   type CategoryFilter,
 } from '../../models/article';
-import { exoFonts } from '../../theme/fonts';
 import { colors, spacing } from '../../theme/theme';
 
 const BLUE = '#4CC9F0';
@@ -84,14 +82,6 @@ function formatHeaderDateTime(
 }
 
 export default function FeedScreen() {
-  const [fontsLoaded] = useFonts({
-    Exo_400Regular: exoFonts.regular,
-    Exo_500Medium: exoFonts.medium,
-    Exo_600SemiBold: exoFonts.semiBold,
-    Exo_700Bold: exoFonts.bold,
-    Exo_800ExtraBold: exoFonts.extraBold,
-  });
-
   const { state, load } = useArticles();
 
   const {
@@ -354,17 +344,6 @@ export default function FeedScreen() {
       setSearchOpen(true);
     }
   };
-
-  if (!fontsLoaded) {
-    return (
-      <View style={styles.fontLoading}>
-        <ActivityIndicator
-          size="small"
-          color={BLUE}
-        />
-      </View>
-    );
-  }
 
   return (
     <SafeAreaView
