@@ -21,6 +21,7 @@ import {
   ErrorState,
   LoadingState,
 } from '../../components/ScreenStates';
+import { TestingNoticeModal } from '../../components/TestingNoticeModal';
 import { useSavedArticles } from '../../context/SavedArticlesContext';
 import { useArticles } from '../../hooks/useArticles';
 import {
@@ -93,6 +94,9 @@ export default function FeedScreen() {
     useState<CategoryFilter>('ALL');
 
   const [refreshing, setRefreshing] =
+    useState(false);
+
+  const [showTestingNotice, setShowTestingNotice] =
     useState(false);
 
   const [feedHeight, setFeedHeight] =
@@ -252,28 +256,13 @@ export default function FeedScreen() {
   ]);
 
   /*
-   * Pull to refresh.
+   * Manual refresh trigger (button tap or pull-to-refresh).
+   * In testing phase, manual refresh is paused and a notice is shown.
    */
-  const onRefresh = useCallback(
-    async () => {
-      setRefreshing(true);
-
-      try {
-        await load();
-
-        setCurrentIndex(0);
-        setLoadedCount(INITIAL_ARTICLES);
-
-        listRef.current?.scrollToOffset({
-          offset: 0,
-          animated: false,
-        });
-      } finally {
-        setRefreshing(false);
-      }
-    },
-    [load],
-  );
+  const handleManualRefresh = useCallback(() => {
+    setRefreshing(false);
+    setShowTestingNotice(true);
+  }, []);
 
   /*
    * Article swipe finished.
@@ -371,27 +360,43 @@ export default function FeedScreen() {
           </Text>
         </View>
 
-        <Pressable
-          accessibilityRole="button"
-          accessibilityLabel={
-            searchOpen
-              ? 'Close search'
-              : 'Search articles'
-          }
-          hitSlop={10}
-          onPress={toggleSearch}
-          style={styles.searchButton}
-        >
-          <Ionicons
-            name={
+        <View style={styles.headerActions}>
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="Refresh feed"
+            hitSlop={10}
+            onPress={handleManualRefresh}
+            style={styles.headerButton}
+          >
+            <Ionicons
+              name="refresh-outline"
+              size={26}
+              color={BLUE}
+            />
+          </Pressable>
+
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel={
               searchOpen
-                ? 'close-outline'
-                : 'search-outline'
+                ? 'Close search'
+                : 'Search articles'
             }
-            size={29}
-            color={BLUE}
-          />
-        </Pressable>
+            hitSlop={10}
+            onPress={toggleSearch}
+            style={styles.headerButton}
+          >
+            <Ionicons
+              name={
+                searchOpen
+                  ? 'close-outline'
+                  : 'search-outline'
+              }
+              size={28}
+              color={BLUE}
+            />
+          </Pressable>
+        </View>
       </View>
 
       {/* SEARCH */}
@@ -579,9 +584,7 @@ export default function FeedScreen() {
             refreshControl={
               <RefreshControl
                 refreshing={refreshing}
-                onRefresh={() => {
-                  void onRefresh();
-                }}
+                onRefresh={handleManualRefresh}
                 tintColor={BLUE}
                 colors={[BLUE]}
                 progressBackgroundColor={
@@ -609,6 +612,11 @@ export default function FeedScreen() {
           </View>
         </View>
       ) : null}
+      {/* TESTING NOTICE MODAL */}
+      <TestingNoticeModal
+        visible={showTestingNotice}
+        onClose={() => setShowTestingNotice(false)}
+      />
     </SafeAreaView>
   );
 }
@@ -673,9 +681,15 @@ const styles = StyleSheet.create({
     marginTop: 8,
   },
 
-  searchButton: {
-    padding: 4,
+  headerActions: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
     marginLeft: 8,
+  },
+
+  headerButton: {
+    padding: 4,
   },
 
   searchContainer: {
