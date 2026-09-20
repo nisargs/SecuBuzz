@@ -12,5 +12,8 @@
 			"database_name": "secubuzz-push-db",
 			"database_id": "13e7169f-7237-46a3-97fd-d0e4762b94e2"
 		}
-	]
+	],
+	"triggers": {
+		"crons": ["17 */4 * * *"]
+	}
 }

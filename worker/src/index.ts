@@ -12,6 +12,7 @@ export interface D1Database {
 export interface Env {
   DB: D1Database;
   PUSH_ADMIN_SECRET?: string;
+  GITHUB_PAT?: string;
 }
 
 const CORS_HEADERS = {
@@ -267,6 +268,41 @@ export default {
         return jsonResponse({ success: true, message: 'Recorded sent notification' });
       }
 
+      // Manual / Webhook Ingestion Dispatcher
+      if (url.pathname === '/api/trigger-ingest') {
+        if (!isAuthorized(request, env)) {
+          return errorResponse('Unauthorized', 401);
+        }
+
+        const token = env.GITHUB_PAT;
+        if (!token) {
+          return errorResponse('GITHUB_PAT secret not configured in Worker', 500);
+        }
+
+        const ghRes = await fetch(
+          'https://api.github.com/repos/nisargs/SecuBuzz/actions/workflows/ingest.yml/dispatches',
+          {
+            method: 'POST',
+            headers: {
+              'Authorization': `Bearer ${token}`,
+              'Accept': 'application/vnd.github+json',
+              'User-Agent': 'SecuBuzz-Cloudflare-Dispatcher',
+            },
+            body: JSON.stringify({ ref: 'main' }),
+          }
+        );
+
+        if (ghRes.status === 204) {
+          return jsonResponse({
+            success: true,
+            message: 'SecuBuzz ingestion workflow successfully triggered on GitHub!',
+          });
+        }
+
+        const errText = await ghRes.text();
+        return errorResponse(`GitHub API error (${ghRes.status}): ${errText}`, 502);
+      }
+
       return errorResponse('Not found', 404);
     } catch (error) {
       console.error('Worker error:', error);
@@ -275,5 +311,48 @@ export default {
         500
       );
     }
+  },
+
+  // ---------------------------------------------------------------------------
+  // CRON TRIGGER HANDLER (Fires every 4 hours with 0-second latency)
+  // ---------------------------------------------------------------------------
+  async scheduled(
+    event: { cron: string },
+    env: Env,
+    ctx: { waitUntil: (promise: Promise<unknown>) => void }
+  ): Promise<void> {
+    const token = env.GITHUB_PAT;
+    if (!token) {
+      console.warn('[Cron Trigger] GITHUB_PAT is missing. Ingestion not triggered.');
+      return;
+    }
+
+    console.log(`[Cron Trigger] Dispatching SecuBuzz feed ingestion at ${new Date().toISOString()}...`);
+
+    const dispatchPromise = fetch(
+      'https://api.github.com/repos/nisargs/SecuBuzz/actions/workflows/ingest.yml/dispatches',
+      {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Accept': 'application/vnd.github+json',
+          'User-Agent': 'SecuBuzz-Cloudflare-Cron',
+        },
+        body: JSON.stringify({ ref: 'main' }),
+      }
+    )
+      .then(async (res) => {
+        if (res.status === 204) {
+          console.log('[Cron Trigger] Successfully dispatched GitHub ingestion workflow!');
+        } else {
+          const text = await res.text();
+          console.error(`[Cron Trigger] GitHub returned HTTP ${res.status}: ${text}`);
+        }
+      })
+      .catch((err) => {
+        console.error('[Cron Trigger] Network error calling GitHub API:', err);
+      });
+
+    ctx.waitUntil(dispatchPromise);
   },
 };
