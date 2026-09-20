@@ -13,12 +13,11 @@ import { colors, spacing } from '../theme/theme';
 
 const BLUE = '#4CC9F0';
 
-const PRIVACY_EMAIL =
-  'mailto:secubuzz.app@gmail.com';
+const SUPPORT_EMAIL = 'support@secubuzz.com';
 
 export default function ContactScreen() {
   function openEmail() {
-    void Linking.openURL("mailto:secubuzz.app@gmail.com");
+    void Linking.openURL(`mailto:${SUPPORT_EMAIL}`);
   }
 
   return (
@@ -74,7 +73,7 @@ export default function ContactScreen() {
             </Text>
 
             <Text style={styles.emailAddress}>
-            secubuzz.app@gmail.com
+              support@secubuzz.com
             </Text>
           </View>
 
@@ -87,27 +86,27 @@ export default function ContactScreen() {
 
         <Pressable
           accessibilityRole="button"
-          accessibilityLabel="Connect with Nisarg Soni on LinkedIn"
+          accessibilityLabel="Visit SecuBuzz official website"
           onPress={() =>
             void Linking.openURL(
-              'https://www.linkedin.com/in/soni-nisarg/',
+              'https://secubuzz.com',
             )
           }
           style={[styles.emailButton, { marginTop: spacing.md }]}
         >
           <Ionicons
-            name="logo-linkedin"
+            name="globe-outline"
             size={24}
-            color="#0A66C2"
+            color={BLUE}
           />
 
           <View style={styles.emailBody}>
             <Text style={styles.emailTitle}>
-              Developer Profile
+              Official Website
             </Text>
 
             <Text style={styles.emailAddress}>
-              Nisarg Soni · LinkedIn
+              secubuzz.com
             </Text>
           </View>
 

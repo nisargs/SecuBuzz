@@ -119,7 +119,7 @@ export default function TermsScreen() {
             The SecuBuzz name, application interface,
             original software, branding, and original
             materials are owned by or licensed to
-            Nisarg Soni, except for third-party
+            MiSo Labs, except for third-party
             materials and content identified as belonging
             to their respective owners.
           </Text>
@@ -138,7 +138,7 @@ export default function TermsScreen() {
         <Section title="8. Limitation of Liability">
           <Text style={styles.paragraph}>
             To the maximum extent permitted by applicable
-            law, Nisarg Soni will not be liable for
+            law, MiSo Labs will not be liable for
             losses arising from reliance on cybersecurity
             information provided through SecuBuzz,
             interruptions to the service, or changes to
@@ -162,7 +162,7 @@ export default function TermsScreen() {
           </Text>
 
           <Text style={styles.contact}>
-          secubuzz.app@gmail.com
+            support@secubuzz.com
           </Text>
         </Section>
       </ScrollView>

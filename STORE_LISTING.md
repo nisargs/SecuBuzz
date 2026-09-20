@@ -73,11 +73,11 @@ Stay ahead of zero-days, ransomware syndicates, and supply chain vulnerabilities
 
 ## 4. Contact & Legal URLs
 
-- **Website / Privacy Policy URL**:
-  `https://secubuzz-push.secubuzz.workers.dev/privacy`
+- **Official Website**:
+  `https://secubuzz.com`
+- **Privacy Policy URL**:
+  `https://secubuzz.com/privacy` (or `https://secubuzz-push.secubuzz.workers.dev/privacy`)
 - **Developer Support Email**:
-  `secubuzz.app@gmail.com`
+  `support@secubuzz.com`
 - **Developer / Organization Name**:
-  `Nisarg Soni`
-- **Developer LinkedIn**:
-  `https://www.linkedin.com/in/soni-nisarg/`
+  `MiSo Labs`

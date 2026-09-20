@@ -301,22 +301,22 @@ export default function SettingsScreen() {
 
         <Pressable
           accessibilityRole="link"
-          accessibilityLabel="Developer Nisarg Soni on LinkedIn"
+          accessibilityLabel="MiSo Labs Website"
           onPress={() =>
             void Linking.openURL(
-              'https://www.linkedin.com/in/soni-nisarg/',
+              'https://secubuzz.com',
             )
           }
           style={styles.developerFooter}
         >
           <Text style={styles.developerFooterText}>
-            Developed by Nisarg Soni
+            SecuBuzz by MiSo Labs
           </Text>
 
           <Ionicons
-            name="logo-linkedin"
-            size={14}
-            color="#0A66C2"
+            name="open-outline"
+            size={12}
+            color={colors.textMuted}
             style={styles.developerFooterIcon}
           />
         </Pressable>
@@ -476,8 +476,6 @@ const styles = StyleSheet.create({
     color: colors.textSecondary,
     fontFamily: 'Exo_500Medium',
     fontSize: 12,
-    textDecorationLine: 'underline',
-    textDecorationColor: '#0A66C2',
   },
 
   developerFooterIcon: {

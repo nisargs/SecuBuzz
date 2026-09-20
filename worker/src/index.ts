@@ -75,8 +75,8 @@ export default {
     }
 
     try {
-      // Privacy Policy Page (Public, for Google Play Store compliance)
-      if (url.pathname === '/privacy' || url.pathname === '/privacy.html') {
+      // Public Landing & Privacy Policy Page (Google Play Store compliance & domain root)
+      if (url.pathname === '/' || url.pathname === '/privacy' || url.pathname === '/privacy.html') {
         return new Response(PRIVACY_POLICY_HTML, {
           status: 200,
           headers: {
@@ -88,7 +88,7 @@ export default {
       }
 
       // 1. Health check
-      if (url.pathname === '/' || url.pathname === '/health') {
+      if (url.pathname === '/health' || url.pathname === '/api/health') {
         return jsonResponse({
           status: 'ok',
           service: 'secubuzz-push-worker',

@@ -60,7 +60,7 @@ export default function PrivacyPolicyScreen() {
           <Text style={styles.paragraph}>
             SecuBuzz is a cybersecurity news and
             security briefing application operated by
-            Nisarg Soni.
+            MiSo Labs.
           </Text>
 
           <Text style={styles.paragraph}>
@@ -68,7 +68,7 @@ export default function PrivacyPolicyScreen() {
           </Text>
 
           <Text style={styles.contact}>
-          secubuzz.app@gmail.com
+            support@secubuzz.com
           </Text>
         </Section>
 
@@ -289,7 +289,7 @@ export default function PrivacyPolicyScreen() {
           </Text>
 
           <Text style={styles.contact}>
-          secubuzz.app@gmail.com
+            support@secubuzz.com
           </Text>
         </Section>
 

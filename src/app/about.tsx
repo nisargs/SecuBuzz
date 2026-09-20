@@ -77,26 +77,31 @@ export default function AboutScreen() {
 
           <Pressable
             accessibilityRole="link"
-            accessibilityLabel="Nisarg Soni on LinkedIn"
+            accessibilityLabel="MiSo Labs Website"
             onPress={() =>
               void Linking.openURL(
-                'https://www.linkedin.com/in/soni-nisarg/',
+                'https://secubuzz.com',
               )
             }
             style={styles.developerRow}
           >
             <Text style={styles.developerName}>
-              Nisarg Soni
+              MiSo Labs
             </Text>
 
             <Ionicons
-              name="logo-linkedin"
-              size={16}
-              color="#0A66C2"
-              style={styles.linkedinIcon}
+              name="open-outline"
+              size={13}
+              color={BLUE}
+              style={styles.openIcon}
             />
           </Pressable>
         </View>
+
+        <InfoRow
+          label="Website"
+          value="secubuzz.com"
+        />
 
         <InfoRow
           label="Purpose"
@@ -215,14 +220,12 @@ const styles = StyleSheet.create({
   },
 
   developerName: {
-    color: colors.textPrimary,
+    color: BLUE,
     fontFamily: 'Exo_600SemiBold',
     fontSize: 14,
-    textDecorationLine: 'underline',
-    textDecorationColor: '#0A66C2',
   },
 
-  linkedinIcon: {
+  openIcon: {
     marginLeft: 6,
   },
 
