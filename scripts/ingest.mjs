@@ -35,7 +35,7 @@ const AI_MODEL = "openai/gpt-oss-20b";
 
 const ARTICLES_PER_AI_BATCH = 2;
 
-const MAX_NEW_CANDIDATES = 8;
+const MAX_NEW_CANDIDATES = 12;
 
 const ITEMS_PER_FEED = 10;
 
@@ -87,6 +87,26 @@ const FEEDS = [
     url: "https://www.cisa.gov/cybersecurity-advisories/all.xml",
   },
   {
+    name: "Krebs on Security",
+    url: "https://krebsonsecurity.com/feed/",
+  },
+  {
+    name: "SANS Internet Storm Center",
+    url: "https://isc.sans.edu/rssfeed_full.xml",
+  },
+  {
+    name: "Unit 42",
+    url: "https://unit42.paloaltonetworks.com/feed/",
+  },
+  {
+    name: "Zero Day Initiative",
+    url: "https://www.zerodayinitiative.com/blog?format=rss",
+  },
+  {
+    name: "The Record",
+    url: "https://therecord.media/feed/",
+  },
+  {
     name: "SecurityWeek",
     url: "https://www.securityweek.com/feed/",
   },
@@ -99,12 +119,40 @@ const FEEDS = [
     url: "https://www.helpnetsecurity.com/feed/",
   },
   {
-    name: "The Record",
-    url: "https://therecord.media/feed/",
-  },
-  {
     name: "CyberNews AI",
     url: "https://www.cybernewsai.com/feed.xml",
+  },
+  {
+    name: "Microsoft Security",
+    url: "https://www.microsoft.com/security/blog/feed/",
+  },
+  {
+    name: "Google Security",
+    url: "https://security.googleblog.com/feeds/posts/default",
+  },
+  {
+    name: "Sophos Threat Research",
+    url: "https://news.sophos.com/en-us/category/threat-research/feed/",
+  },
+  {
+    name: "Check Point Research",
+    url: "https://research.checkpoint.com/feed/",
+  },
+  {
+    name: "CrowdStrike",
+    url: "https://www.crowdstrike.com/blog/feed/",
+  },
+  {
+    name: "The DFIR Report",
+    url: "https://thedfirreport.com/feed/",
+  },
+  {
+    name: "Wiz Research",
+    url: "https://www.wiz.io/blog/rss.xml",
+  },
+  {
+    name: "Cloudflare Security",
+    url: "https://blog.cloudflare.com/rss/",
   },
 ];
 
@@ -1445,14 +1493,65 @@ console.log(
 );
 
 // -----------------------------------------------------------------------------
-// SELECT CANDIDATES
+// FILTER & DIVERSIFY CANDIDATES
 // -----------------------------------------------------------------------------
 
-const selectedCandidates =
-  newCandidates.slice(
-    0,
-    MAX_NEW_CANDIDATES,
-  );
+/*
+ * Filter out promotional/marketing noise and future-dated event posts.
+ */
+const now = Date.now();
+const filteredCandidates = newCandidates.filter((candidate) => {
+  const titleLower = String(candidate.title || "").toLowerCase();
+
+  if (
+    titleLower.includes("named a leader") ||
+    titleLower.includes("financial results") ||
+    titleLower.includes("earnings release") ||
+    titleLower.includes("webinar") ||
+    titleLower.includes("virtual event")
+  ) {
+    return false;
+  }
+
+  if (candidate.publishedAt) {
+    const publishedTime = new Date(candidate.publishedAt).getTime();
+    if (Number.isFinite(publishedTime) && publishedTime > now + 86400000) {
+      return false;
+    }
+  }
+
+  return true;
+});
+
+/*
+ * Sort chronologically: newest articles first.
+ */
+filteredCandidates.sort((a, b) => {
+  const timeA = a.publishedAt ? new Date(a.publishedAt).getTime() : 0;
+  const timeB = b.publishedAt ? new Date(b.publishedAt).getTime() : 0;
+  return (Number.isFinite(timeB) ? timeB : 0) - (Number.isFinite(timeA) ? timeA : 0);
+});
+
+/*
+ * Ensure multi-source diversity: cap at 2 articles per source in first pass,
+ * then fill remaining capacity up to MAX_NEW_CANDIDATES.
+ */
+const sourceCounts = new Map();
+const diversifiedCandidates = [];
+const remainingPool = [];
+
+for (const candidate of filteredCandidates) {
+  const currentCount = sourceCounts.get(candidate.source) || 0;
+  if (currentCount < 2) {
+    diversifiedCandidates.push(candidate);
+    sourceCounts.set(candidate.source, currentCount + 1);
+  } else {
+    remainingPool.push(candidate);
+  }
+}
+
+const candidatePool = [...diversifiedCandidates, ...remainingPool];
+const selectedCandidates = candidatePool.slice(0, MAX_NEW_CANDIDATES);
 
 console.log(
   `Selected ${selectedCandidates.length} candidates for processing.`,
