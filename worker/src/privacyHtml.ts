@@ -322,5 +322,8 @@ export const PRIVACY_POLICY_HTML = `<!DOCTYPE html>
       </p>
     </footer>
   </div>
+  <!-- Cloudflare Web Analytics -->
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "3c443df0b27a4db6b0380677e533dba8"}'></script>
+  <!-- End Cloudflare Web Analytics -->
 </body>
 </html>`;
