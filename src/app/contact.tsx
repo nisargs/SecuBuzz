@@ -85,6 +85,39 @@ export default function ContactScreen() {
           />
         </Pressable>
 
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel="Connect with Nisarg Soni on LinkedIn"
+          onPress={() =>
+            void Linking.openURL(
+              'https://www.linkedin.com/in/soni-nisarg/',
+            )
+          }
+          style={[styles.emailButton, { marginTop: spacing.md }]}
+        >
+          <Ionicons
+            name="logo-linkedin"
+            size={24}
+            color="#0A66C2"
+          />
+
+          <View style={styles.emailBody}>
+            <Text style={styles.emailTitle}>
+              Developer Profile
+            </Text>
+
+            <Text style={styles.emailAddress}>
+              Nisarg Soni · LinkedIn
+            </Text>
+          </View>
+
+          <Ionicons
+            name="open-outline"
+            size={20}
+            color={colors.textMuted}
+          />
+        </Pressable>
+
         <View style={styles.note}>
           <Ionicons
             name="shield-checkmark-outline"

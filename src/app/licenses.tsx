@@ -81,10 +81,28 @@ export default function LicensesScreen() {
           license="MIT"
         />
 
+        <License
+          name="expo-notifications"
+          license="MIT"
+        />
+
+        <License
+          name="react-native-safe-area-context"
+          license="MIT"
+        />
+
+        <License
+          name="react-native-screens"
+          license="MIT"
+        />
+
+        <License
+          name="Exo Font Family"
+          license="SIL Open Font License 1.1"
+        />
+
         <Text style={styles.note}>
-          The complete dependency and license inventory
-          should be regenerated from the project's
-          package lockfile before a production release.
+          SecuBuzz is grateful to the open-source community and contributors behind these libraries. All third-party trademarks and brand names are the property of their respective owners.
         </Text>
       </ScrollView>
     </SafeAreaView>

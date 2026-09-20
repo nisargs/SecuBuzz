@@ -1,6 +1,10 @@
 import { Ionicons } from '@expo/vector-icons';
+import Constants from 'expo-constants';
+import * as Linking from 'expo-linking';
 import { router } from 'expo-router';
 import {
+  Image,
+  Pressable,
   ScrollView,
   StyleSheet,
   Text,
@@ -13,6 +17,9 @@ import { colors, spacing } from '../theme/theme';
 const BLUE = '#4CC9F0';
 
 export default function AboutScreen() {
+  const version = Constants.expoConfig?.version || '1.0.0';
+  const buildNumber = Constants.expoConfig?.android?.versionCode || '1';
+
   return (
     <SafeAreaView
       style={styles.safeArea}
@@ -37,11 +44,11 @@ export default function AboutScreen() {
         style={styles.scroll}
         contentContainerStyle={styles.content}
       >
-        <View style={styles.logo}>
-          <Text style={styles.logoText}>
-            SB
-          </Text>
-        </View>
+        <Image
+          source={require('../../assets/icon.png')}
+          style={styles.logoImage}
+          resizeMode="contain"
+        />
 
         <Text style={styles.title}>
           SecuBuzz
@@ -60,8 +67,36 @@ export default function AboutScreen() {
 
         <InfoRow
           label="Version"
-          value="1.0.0"
+          value={`v${version} (Build ${buildNumber})`}
         />
+
+        <View style={styles.infoRow}>
+          <Text style={styles.infoLabel}>
+            Developer
+          </Text>
+
+          <Pressable
+            accessibilityRole="link"
+            accessibilityLabel="Nisarg Soni on LinkedIn"
+            onPress={() =>
+              void Linking.openURL(
+                'https://www.linkedin.com/in/soni-nisarg/',
+              )
+            }
+            style={styles.developerRow}
+          >
+            <Text style={styles.developerName}>
+              Nisarg Soni
+            </Text>
+
+            <Ionicons
+              name="logo-linkedin"
+              size={16}
+              color="#0A66C2"
+              style={styles.linkedinIcon}
+            />
+          </Pressable>
+        </View>
 
         <InfoRow
           label="Purpose"
@@ -164,20 +199,31 @@ const styles = StyleSheet.create({
     paddingBottom: 48,
   },
 
-  logo: {
-    width: 72,
-    height: 72,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderWidth: 2,
+  logoImage: {
+    width: 80,
+    height: 80,
+    borderRadius: 18,
+    borderWidth: 1.5,
     borderColor: BLUE,
     marginBottom: 16,
   },
 
-  logoText: {
-    color: BLUE,
-    fontFamily: 'Exo_800ExtraBold',
-    fontSize: 24,
+  developerRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    maxWidth: '65%',
+  },
+
+  developerName: {
+    color: colors.textPrimary,
+    fontFamily: 'Exo_600SemiBold',
+    fontSize: 14,
+    textDecorationLine: 'underline',
+    textDecorationColor: '#0A66C2',
+  },
+
+  linkedinIcon: {
+    marginLeft: 6,
   },
 
   title: {

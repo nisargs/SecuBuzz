@@ -1,4 +1,6 @@
 import { Ionicons } from '@expo/vector-icons';
+import Constants from 'expo-constants';
+import * as Linking from 'expo-linking';
 import { router } from 'expo-router';
 import { useEffect, useState } from 'react';
 import {
@@ -297,8 +299,30 @@ export default function SettingsScreen() {
           />
         </View>
 
+        <Pressable
+          accessibilityRole="link"
+          accessibilityLabel="Developer Nisarg Soni on LinkedIn"
+          onPress={() =>
+            void Linking.openURL(
+              'https://www.linkedin.com/in/soni-nisarg/',
+            )
+          }
+          style={styles.developerFooter}
+        >
+          <Text style={styles.developerFooterText}>
+            Developed by Nisarg Soni
+          </Text>
+
+          <Ionicons
+            name="logo-linkedin"
+            size={14}
+            color="#0A66C2"
+            style={styles.developerFooterIcon}
+          />
+        </Pressable>
+
         <Text style={styles.version}>
-          SecuBuzz · Version 1.0.0
+          SecuBuzz · v{Constants.expoConfig?.version || '1.0.0'} (Build {Constants.expoConfig?.android?.versionCode || '1'})
         </Text>
       </ScrollView>
     </SafeAreaView>
@@ -440,11 +464,31 @@ const styles = StyleSheet.create({
     marginLeft: 68,
   },
 
+  developerFooter: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 22,
+    marginBottom: 4,
+  },
+
+  developerFooterText: {
+    color: colors.textSecondary,
+    fontFamily: 'Exo_500Medium',
+    fontSize: 12,
+    textDecorationLine: 'underline',
+    textDecorationColor: '#0A66C2',
+  },
+
+  developerFooterIcon: {
+    marginLeft: 5,
+  },
+
   version: {
     color: colors.textMuted,
     fontFamily: 'Exo_400Regular',
     fontSize: 11,
     textAlign: 'center',
-    marginTop: 22,
+    marginTop: 6,
   },
 });

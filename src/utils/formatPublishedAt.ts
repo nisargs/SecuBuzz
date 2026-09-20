@@ -73,7 +73,6 @@ export function formatPublishedAt(
     return 'Unknown date';
   }
 
-  const tz = getLocalTimeZoneShort(date);
   const timeStr = formatClock(date.getHours(), date.getMinutes());
   const dateStr = formatDate(
     date.getFullYear(),
@@ -81,5 +80,5 @@ export function formatPublishedAt(
     date.getDate(),
   );
 
-  return tz ? `${timeStr} ${tz} · ${dateStr}` : `${timeStr} · ${dateStr}`;
+  return `${timeStr} · ${dateStr}`;
 }
