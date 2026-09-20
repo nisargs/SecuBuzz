@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 
 import { getArticleRepository } from '../data/getArticleRepository';
 import { SavedArticlesProvider } from '../context/SavedArticlesContext';
-import { registerForPushNotificationsAsync } from '../services/notificationService';
+import { isExpoGo, registerForPushNotificationsAsync } from '../services/notificationService';
 import { exoFonts } from '../theme/fonts';
 import { colors } from '../theme/theme';
 
@@ -31,6 +31,10 @@ export default function RootLayout() {
 
   // Notification response observer for cold-start and background taps
   useEffect(() => {
+    if (isExpoGo) {
+      return;
+    }
+
     function handleNotificationResponse(
       response: Notifications.NotificationResponse
     ) {
@@ -47,34 +51,45 @@ export default function RootLayout() {
       }
     }
 
-    // Handle launch from notification when app was completely closed
-    Notifications.getLastNotificationResponseAsync().then((response) => {
-      if (response) {
-        handleNotificationResponse(response);
-      }
-    });
+    let responseSubscription: Notifications.Subscription | undefined;
+    let receivedSubscription: Notifications.Subscription | undefined;
 
-    // Handle tap from background or foreground
-    const responseSubscription =
-      Notifications.addNotificationResponseReceivedListener(
-        handleNotificationResponse
-      );
+    try {
+      // Handle launch from notification when app was completely closed
+      Notifications.getLastNotificationResponseAsync()
+        .then((response) => {
+          if (response) {
+            handleNotificationResponse(response);
+          }
+        })
+        .catch((err) => {
+          console.warn('SecuBuzz: getLastNotificationResponseAsync error:', err);
+        });
 
-    // When a notification arrives while app is open, pre-fetch latest feed
-    const receivedSubscription =
-      Notifications.addNotificationReceivedListener(() => {
-        void getArticleRepository().getArticles();
-      });
+      // Handle tap from background or foreground
+      responseSubscription =
+        Notifications.addNotificationResponseReceivedListener(
+          handleNotificationResponse
+        );
+
+      // When a notification arrives while app is open, pre-fetch latest feed
+      receivedSubscription =
+        Notifications.addNotificationReceivedListener(() => {
+          void getArticleRepository().getArticles();
+        });
+    } catch (err) {
+      console.warn('SecuBuzz: Failed to attach notification listeners:', err);
+    }
 
     return () => {
-      responseSubscription.remove();
-      receivedSubscription.remove();
+      responseSubscription?.remove();
+      receivedSubscription?.remove();
     };
   }, [router]);
 
   // Request notification permission once at first-use flow after app loads
   useEffect(() => {
-    if (loaded) {
+    if (loaded && !isExpoGo) {
       void registerForPushNotificationsAsync();
     }
   }, [loaded]);

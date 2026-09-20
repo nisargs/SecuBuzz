@@ -1,8 +1,13 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import Constants from 'expo-constants';
+import Constants, { ExecutionEnvironment } from 'expo-constants';
 import * as Device from 'expo-device';
 import * as Notifications from 'expo-notifications';
 import { Platform } from 'react-native';
+
+export const isExpoGo =
+  Constants.appOwnership === 'expo' ||
+  Constants.executionEnvironment === ExecutionEnvironment.StoreClient ||
+  (Constants.executionEnvironment as string) === 'storeClient';
 
 const STORAGE_KEY_TOKEN = '@secubuzz_push_token';
 const STORAGE_KEY_PERMISSION_REQUESTED = '@secubuzz_push_permission_requested';
@@ -18,22 +23,29 @@ const DEFAULT_API_URL =
 /**
  * Configure foreground notification presentation.
  * Shows a banner and list entry, but does not aggressively play sound if reading.
+ * Note: Notifications are disabled in Expo Go on Android (SDK 53+).
  */
-Notifications.setNotificationHandler({
-  handleNotification: async () => ({
-    shouldPlaySound: false,
-    shouldSetBadge: false,
-    shouldShowBanner: true,
-    shouldShowList: true,
-  }),
-});
+if (!isExpoGo) {
+  try {
+    Notifications.setNotificationHandler({
+      handleNotification: async () => ({
+        shouldPlaySound: false,
+        shouldSetBadge: false,
+        shouldShowBanner: true,
+        shouldShowList: true,
+      }),
+    });
+  } catch (err) {
+    console.warn('SecuBuzz: Notification handler setup error:', err);
+  }
+}
 
 /**
  * Ensures the Android notification channel exists.
  * Required on Android 8.0+ and particularly Android 13+ before permissions/tokens.
  */
 export async function setupNotificationChannelAsync(): Promise<void> {
-  if (Platform.OS !== 'android') {
+  if (Platform.OS !== 'android' || isExpoGo) {
     return;
   }
 
@@ -57,6 +69,10 @@ export async function setupNotificationChannelAsync(): Promise<void> {
  * Checks current notification permission status.
  */
 export async function getNotificationPermissionStatusAsync(): Promise<Notifications.PermissionStatus> {
+  if (isExpoGo) {
+    return Notifications.PermissionStatus.UNDETERMINED;
+  }
+
   try {
     const { status } = await Notifications.getPermissionsAsync();
     return status;
@@ -73,6 +89,13 @@ export async function getNotificationPermissionStatusAsync(): Promise<Notificati
 export async function registerForPushNotificationsAsync(
   forceRequest = false
 ): Promise<string | null> {
+  if (isExpoGo) {
+    console.log(
+      'SecuBuzz: Push notifications are disabled in Expo Go. Use a development build or preview/production APK.'
+    );
+    return null;
+  }
+
   // Push tokens are only valid on real physical devices
   if (!Device.isDevice) {
     console.log('SecuBuzz: Push notifications require a physical device.');

@@ -15,6 +15,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import {
   getNotificationPermissionStatusAsync,
+  isExpoGo,
   registerForPushNotificationsAsync,
 } from '../../services/notificationService';
 import { getLocalTimeZoneShort } from '../../utils/formatPublishedAt';
@@ -132,6 +133,9 @@ export default function SettingsScreen() {
           accessibilityRole="button"
           accessibilityLabel="Notification status"
           onPress={async () => {
+            if (isExpoGo) {
+              return;
+            }
             if (!notificationsEnabled) {
               await registerForPushNotificationsAsync(true);
               const status = await getNotificationPermissionStatusAsync();
@@ -143,24 +147,30 @@ export default function SettingsScreen() {
           <View style={styles.cardHeader}>
             <Ionicons
               name={
-                notificationsEnabled
+                isExpoGo
+                  ? 'notifications-off-outline'
+                  : notificationsEnabled
                   ? 'notifications-outline'
                   : 'notifications-off-outline'
               }
               size={22}
-              color={BLUE}
+              color={isExpoGo ? colors.textMuted : BLUE}
             />
 
             <Text style={styles.label}>
               News Alerts ·{' '}
               <Text
                 style={{
-                  color: notificationsEnabled
+                  color: isExpoGo
+                    ? colors.textMuted
+                    : notificationsEnabled
                     ? BLUE
                     : colors.textMuted,
                 }}
               >
-                {notificationsEnabled
+                {isExpoGo
+                  ? 'Preview / APK Only'
+                  : notificationsEnabled
                   ? 'Enabled'
                   : 'Disabled'}
               </Text>
@@ -168,7 +178,9 @@ export default function SettingsScreen() {
           </View>
 
           <Text style={styles.body}>
-            {notificationsEnabled
+            {isExpoGo
+              ? 'Push notifications require a standalone or development build (disabled in Expo Go). Install the preview APK or standalone build to test alerts.'
+              : notificationsEnabled
               ? 'Notifications are active. You will receive alerts when new cybersecurity briefs are published.'
               : 'Notifications are disabled. Tap to grant permission and receive alerts for new security stories.'}
           </Text>
