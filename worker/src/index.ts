@@ -87,6 +87,21 @@ export default {
         });
       }
 
+      // Public Feed Proxy (Enables https://secubuzz.com/feed.json to serve live R2 feed directly)
+      if (url.pathname === '/feed.json') {
+        const r2Response = await fetch(
+          'https://pub-3fb02516aa81498eb34da1b79161b1c8.r2.dev/feed.json'
+        );
+        return new Response(r2Response.body, {
+          status: r2Response.status,
+          headers: {
+            'Content-Type': 'application/json',
+            'Cache-Control': 'no-cache, no-store, must-revalidate',
+            ...CORS_HEADERS,
+          },
+        });
+      }
+
       // 1. Health check
       if (url.pathname === '/health' || url.pathname === '/api/health') {
         return jsonResponse({

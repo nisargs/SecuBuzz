@@ -6,7 +6,9 @@ import type {
 
 import type { ArticleRepository } from './ArticleRepository';
 
-const FEED_URL =
+const PRIMARY_FEED_URL =
+  'https://secubuzz.com/feed.json';
+const FALLBACK_FEED_URL =
   'https://pub-3fb02516aa81498eb34da1b79161b1c8.r2.dev/feed.json';
 
 function isSeverity(
@@ -152,59 +154,71 @@ export class RemoteArticleRepository
   implements ArticleRepository
 {
   async getArticles(): Promise<Article[]> {
-    /*
-     * Add a cache-busting query parameter so the app doesn't
-     * accidentally receive an older cached copy of feed.json.
-     */
-    const url = `${FEED_URL}?t=${Date.now()}`;
+    const endpoints = [PRIMARY_FEED_URL, FALLBACK_FEED_URL];
+    let lastError: Error | null = null;
 
-    const response = await fetch(url, {
-      headers: {
-        'Cache-Control': 'no-cache',
-        Pragma: 'no-cache',
-      },
-    });
+    for (const baseUrl of endpoints) {
+      try {
+        /*
+         * Add a cache-busting query parameter so the app doesn't
+         * accidentally receive an older cached copy of feed.json.
+         */
+        const url = `${baseUrl}?t=${Date.now()}`;
 
-    if (!response.ok) {
-      throw new Error(
-        `Failed to fetch feed: ${response.status}`,
-      );
+        const response = await fetch(url, {
+          headers: {
+            'Cache-Control': 'no-cache',
+            Pragma: 'no-cache',
+          },
+        });
+
+        if (!response.ok) {
+          throw new Error(
+            `Failed to fetch feed from ${baseUrl}: ${response.status}`,
+          );
+        }
+
+        const raw: unknown = await response.json();
+
+        if (!Array.isArray(raw)) {
+          throw new Error('Invalid feed format');
+        }
+
+        const articles = raw
+          .map(normalizeArticle)
+          .filter(
+            (article): article is Article =>
+              article !== null,
+          );
+
+        /*
+         * This catches a feed/model mismatch instead of silently
+         * returning zero articles and making the app fall back
+         * to the old cache.
+         */
+        if (raw.length > 0 && articles.length === 0) {
+          throw new Error(
+            'Feed contains articles, but none could be parsed.',
+          );
+        }
+
+        /*
+         * Newest articles first.
+         */
+        articles.sort(
+          (a, b) =>
+            new Date(b.publishedAt).getTime() -
+            new Date(a.publishedAt).getTime(),
+        );
+
+        return articles;
+      } catch (err) {
+        lastError = err instanceof Error ? err : new Error(String(err));
+        console.warn(`SecuBuzz: Feed fetch failed on ${baseUrl}, trying fallback...`, err);
+      }
     }
 
-    const raw: unknown = await response.json();
-
-    if (!Array.isArray(raw)) {
-      throw new Error('Invalid feed format');
-    }
-
-    const articles = raw
-      .map(normalizeArticle)
-      .filter(
-        (article): article is Article =>
-          article !== null,
-      );
-
-    /*
-     * This catches a feed/model mismatch instead of silently
-     * returning zero articles and making the app fall back
-     * to the old cache.
-     */
-    if (raw.length > 0 && articles.length === 0) {
-      throw new Error(
-        'Feed contains articles, but none could be parsed.',
-      );
-    }
-
-    /*
-     * Newest articles first.
-     */
-    articles.sort(
-      (a, b) =>
-        new Date(b.publishedAt).getTime() -
-        new Date(a.publishedAt).getTime(),
-    );
-
-    return articles;
+    throw lastError ?? new Error('Failed to fetch feed from all endpoints');
   }
 
   lastResultFromCache(): boolean {
