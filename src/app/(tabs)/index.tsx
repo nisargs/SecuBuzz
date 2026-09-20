@@ -2,6 +2,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   ActivityIndicator,
+  Animated,
   AppState,
   FlatList,
   Pressable,
@@ -268,16 +269,80 @@ export default function FeedScreen() {
   ]);
 
   /*
+   * Animated 'Feed is up to date' toast banner.
+   */
+  const bannerOpacity = useRef(new Animated.Value(0)).current;
+  const bannerTranslateY = useRef(new Animated.Value(-10)).current;
+  const [bannerVisible, setBannerVisible] = useState(false);
+  const bannerTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const triggerUpToDateBanner = useCallback(() => {
+    if (bannerTimerRef.current) {
+      clearTimeout(bannerTimerRef.current);
+    }
+    setBannerVisible(true);
+    bannerOpacity.setValue(0);
+    bannerTranslateY.setValue(-10);
+
+    Animated.parallel([
+      Animated.timing(bannerOpacity, {
+        toValue: 1,
+        duration: 260,
+        useNativeDriver: true,
+      }),
+      Animated.timing(bannerTranslateY, {
+        toValue: 0,
+        duration: 260,
+        useNativeDriver: true,
+      }),
+    ]).start();
+
+    bannerTimerRef.current = setTimeout(() => {
+      Animated.parallel([
+        Animated.timing(bannerOpacity, {
+          toValue: 0,
+          duration: 700,
+          useNativeDriver: true,
+        }),
+        Animated.timing(bannerTranslateY, {
+          toValue: -8,
+          duration: 700,
+          useNativeDriver: true,
+        }),
+      ]).start(() => {
+        setBannerVisible(false);
+      });
+    }, 2200);
+  }, [bannerOpacity, bannerTranslateY]);
+
+  useEffect(() => {
+    return () => {
+      if (bannerTimerRef.current) {
+        clearTimeout(bannerTimerRef.current);
+      }
+    };
+  }, []);
+
+  /*
    * Manual refresh trigger (button tap or pull-to-refresh).
+   * Pulls latest news; if no new articles were found, shows 'Feed is up to date' banner.
    */
   const handleManualRefresh = useCallback(async () => {
     setRefreshing(true);
     try {
-      await load();
+      const previousTopId = articles[0]?.id;
+      const newArticles = await load();
+      if (newArticles && newArticles.length > 0) {
+        if (newArticles[0]?.id === previousTopId) {
+          triggerUpToDateBanner();
+        }
+      } else if (newArticles) {
+        triggerUpToDateBanner();
+      }
     } finally {
       setRefreshing(false);
     }
-  }, [load]);
+  }, [articles, load, triggerUpToDateBanner]);
 
   /*
    * Article swipe finished.
@@ -627,6 +692,30 @@ export default function FeedScreen() {
           </View>
         </View>
       ) : null}
+
+      {/* UP TO DATE TOAST BANNER */}
+      {bannerVisible ? (
+        <Animated.View
+          pointerEvents="none"
+          style={[
+            styles.upToDateBanner,
+            {
+              opacity: bannerOpacity,
+              transform: [{ translateY: bannerTranslateY }],
+            },
+          ]}
+        >
+          <Ionicons
+            name="checkmark-circle"
+            size={16}
+            color={BLUE}
+            style={styles.upToDateIcon}
+          />
+          <Text style={styles.upToDateText}>
+            Feed is up to date
+          </Text>
+        </Animated.View>
+      ) : null}
     </SafeAreaView>
   );
 }
@@ -799,5 +888,36 @@ const styles = StyleSheet.create({
       colors.surface,
     borderWidth: 1,
     borderColor: BLUE,
+  },
+
+  upToDateBanner: {
+    position: 'absolute',
+    top: 66,
+    alignSelf: 'center',
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#111822EE',
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: '#4CC9F044',
+    paddingHorizontal: 16,
+    paddingVertical: 7,
+    zIndex: 999,
+    elevation: 8,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.4,
+    shadowRadius: 8,
+  },
+
+  upToDateIcon: {
+    marginRight: 7,
+  },
+
+  upToDateText: {
+    color: colors.textPrimary,
+    fontFamily: 'Exo_600SemiBold',
+    fontSize: 13,
+    letterSpacing: 0.3,
   },
 });

@@ -14,7 +14,7 @@ type ArticlesState =
 export function useArticles() {
   const [state, setState] = useState<ArticlesState>({ status: 'loading' });
 
-  const load = useCallback(async () => {
+  const load = useCallback(async (): Promise<Article[] | null> => {
     // Keep existing stories on screen during pull-to-refresh.
     setState((current) => (current.status === 'ready' ? current : { status: 'loading' }));
     try {
@@ -25,9 +25,11 @@ export function useArticles() {
         articles,
         fromCache: repository.lastResultFromCache(),
       });
+      return articles;
     } catch (error) {
       const message = error instanceof Error ? error.message : 'Could not load stories.';
       setState({ status: 'error', message });
+      return null;
     }
   }, []);
 

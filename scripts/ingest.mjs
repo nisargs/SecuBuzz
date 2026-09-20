@@ -521,9 +521,16 @@ function validateAiArticle(
     title: headline,
     headline,
     summary,
-    category: normaliseCategory(
-      article.category,
-    ),
+    category: (() => {
+      const cat = normaliseCategory(article.category);
+      if (cat === "CVE") {
+        const hasCveMention = /CVE[\u2010-\u2015-]\d{4}[\u2010-\u2015-]\d{4,7}/i.test(
+          `${headline} ${summary}`,
+        );
+        return hasCveMention ? "CVE" : "VULNERABILITY";
+      }
+      return cat;
+    })(),
     severity: normaliseSeverity(
       article.severity,
     ),
@@ -662,24 +669,23 @@ IMPORTANT RULES:
 - Do not use Markdown.
 - Do not use bullet points inside summaries.
 - Do not use ellipses.
+- The summary must provide usable, concrete intelligence (what software is affected, how the exploit/attack works, what is the impact, and the fix or mitigation if available). Aim for approximately 50-60 words.
 - If there is not enough information for a reliable summary, omit that article.
 - The "index" must exactly match the supplied article index.
 
-Allowed categories:
+CATEGORY RULES (STRICT):
+- "CVE": ONLY assign "CVE" if an official CVE ID (format "CVE-YYYY-XXXXX", e.g. CVE-2024-38063) is explicitly named in the title or text, AND you must mention that CVE ID in the summary. If NO specific CVE identifier is stated, DO NOT use CVE — use VULNERABILITY instead.
+- "VULNERABILITY": Security flaws, zero-days, exploit chains, buffer overflows, or logic bugs that do NOT cite an official CVE ID.
+- "BREACH": Unauthorized access, data leaks, credential thefts, or compromised corporate/user accounts.
+- "RANSOMWARE": Ransomware infections, encryptors, extortion groups, or ransom payments.
+- "NATION_STATE": State-sponsored espionage, APT hacking groups (e.g. APT28, Lazarus, Volt Typhoon), or cyber warfare.
+- "GENERAL": Industry cybersecurity trends, advisories, defensive tools, regulations, or law enforcement actions.
 
-BREACH
-RANSOMWARE
-CVE
-VULNERABILITY
-NATION_STATE
-GENERAL
+Allowed categories:
+BREACH, RANSOMWARE, CVE, VULNERABILITY, NATION_STATE, GENERAL
 
 Allowed severities:
-
-LOW
-MEDIUM
-HIGH
-CRITICAL
+LOW, MEDIUM, HIGH, CRITICAL
 
 Return ONLY the JSON structure required by the schema.
 

@@ -107,21 +107,33 @@ function normalizeArticle(
       ? record.publishedAt
       : null;
 
-  const category = record.category;
-
-  /*
-   * Reject only if the actual required data is missing.
-   */
   if (
     id === null ||
     headline === null ||
     summary === null ||
     sourceName === null ||
     sourceUrl === null ||
-    !isCategory(category) ||
+    !isCategory(record.category) ||
     publishedAt === null
   ) {
     return null;
+  }
+
+  let category: ArticleCategory = record.category;
+
+  /*
+   * If an article is labeled as CVE, verify that an actual CVE identifier
+   * (e.g. CVE-2024-1234 or unicode hyphen CVE‑2024‑1234) is present.
+   * If none exists, reclassify it as VULNERABILITY so users never see an
+   * unsupported CVE label.
+   */
+  if (category === 'CVE') {
+    const hasCveMention = /CVE[\u2010-\u2015-]\d{4}[\u2010-\u2015-]\d{4,7}/i.test(
+      `${headline} ${summary}`,
+    );
+    if (!hasCveMention) {
+      category = 'VULNERABILITY';
+    }
   }
 
   return {
