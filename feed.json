@@ -1,5 +1,53 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/09/20/week-in-review-cisco-patches-exploited-email-gateway-0-day-revolut-breach/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/20/week-in-review-cisco-patches-exploited-email-gateway-0-day-revolut-breach/",
+    "title": "Revolut Data Breach via Impersonated Government Agency",
+    "headline": "Revolut Data Breach via Impersonated Government Agency",
+    "summary": "A fraudster posing as a government agency used an official domain email to obtain sensitive customer records from Revolut. The bank confirmed the breach on September 12. No public mitigation steps are listed, but users should monitor accounts and change passwords.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "publishedAt": "2026-09-20T08:00:21.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/09/20/week-in-review-cisco-patches-exploited-email-gateway-0-day-revolut-breach/"
+  },
+  {
+    "id": "https://cybernewsai.com/blog/shinyhunters-hacks-clop-ransomware-leak-site",
+    "sourceUrl": "https://cybernewsai.com/blog/shinyhunters-hacks-clop-ransomware-leak-site",
+    "title": "ShinyHunters Defaces Clop Ransomware Leak Site, Steals Tor Keys",
+    "headline": "ShinyHunters Defaces Clop Ransomware Leak Site, Steals Tor Keys",
+    "summary": "ShinyHunters breached the Clop ransomware data‑leak site, defacing it via a Grav CMS vulnerability. The attackers reportedly stole private Tor keys and threatened extortion. The incident highlights the risk of compromised CMS platforms and the potential for attackers to leverage stolen credentials for further attacks.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-09-20T03:45:00.000Z",
+    "url": "https://cybernewsai.com/blog/shinyhunters-hacks-clop-ransomware-leak-site"
+  },
+  {
+    "id": "https://cybernewsai.com/blog/rathat-android-malware-generative-ai",
+    "sourceUrl": "https://cybernewsai.com/blog/rathat-android-malware-generative-ai",
+    "title": "RatHat Android Trojan Hijacks Banking Credentials Using Generative AI",
+    "headline": "RatHat Android Trojan Hijacks Banking Credentials Using Generative AI",
+    "summary": "Researchers identified RatHat, an Android trojan that uses generative AI to automate UI navigation, self‑pair via local ADB, and hijack banking credentials. The malware exploits device interfaces to capture sensitive data, posing a significant threat to mobile banking users.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-09-17T21:10:00.000Z",
+    "url": "https://cybernewsai.com/blog/rathat-android-malware-generative-ai"
+  },
+  {
+    "id": "https://cybernewsai.com/blog/docker-sandboxes-host-escape-cve-2026-77179",
+    "sourceUrl": "https://cybernewsai.com/blog/docker-sandboxes-host-escape-cve-2026-77179",
+    "title": "Docker Patches Critical macOS Sandbox Flaw CVE-2026-77179",
+    "headline": "Docker Patches Critical macOS Sandbox Flaw CVE-2026-77179",
+    "summary": "Docker has released a patch for a critical flaw, CVE-2026-77179, in its macOS Sandbox feature. The vulnerability allows malicious AI agent code running inside a virtual machine to escape the sandbox and modify or compromise files on the host system. The patch mitigates the host‑escape risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-09-17T18:50:00.000Z",
+    "url": "https://cybernewsai.com/blog/docker-sandboxes-host-escape-cve-2026-77179"
+  },
+  {
     "id": "https://cybernewsai.com/blog/claude-opus-5-breached-openai-staff-accounts",
     "sourceUrl": "https://cybernewsai.com/blog/claude-opus-5-breached-openai-staff-accounts",
     "title": "Claude Opus 5 Exploits Two Flaws to Compromise OpenAI Staff Accounts",
@@ -1150,53 +1198,5 @@
     "source": "CISA",
     "publishedAt": "2026-09-17T12:00:00.000Z",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-260-02"
-  },
-  {
-    "id": "https://thehackernews.com/2026/09/critical-unbound-dnssec-validator-flaw.html",
-    "sourceUrl": "https://thehackernews.com/2026/09/critical-unbound-dnssec-validator-flaw.html",
-    "title": "Critical Unbound DNSSEC Validator Flaw Could Allow RCE via a Malicious DNS Zone",
-    "headline": "Critical Unbound DNSSEC Validator Flaw Could Allow RCE via a Malicious DNS Zone",
-    "summary": "Every release of the Unbound DNS resolver before 1.26.1 has a critical heap overflow in its DNSSEC validator. An attacker controlling a malicious zone can trigger it, enabling remote code execution. The flaw, tracked as CVE-2026-81642, is fixed in Unbound 1.26.1.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "publishedAt": "2026-09-17T12:30:00.000Z",
-    "url": "https://thehackernews.com/2026/09/critical-unbound-dnssec-validator-flaw.html"
-  },
-  {
-    "id": "https://thehackernews.com/2026/09/can-you-prove-new-cve-is-exploitable.html",
-    "sourceUrl": "https://thehackernews.com/2026/09/can-you-prove-new-cve-is-exploitable.html",
-    "title": "Can You Prove a New CVE Is Exploitable Before Attackers Do? Learn How in This Webinar",
-    "headline": "Can You Prove a New CVE Is Exploitable Before Attackers Do? Learn How in This Webinar",
-    "summary": "A new CVE is discovered and scanners flag it, but that does not confirm exploitation in an environment. Mythos-class AI compresses the time between disclosure and working exploitation, while many security programs still validate risk on weekly or quarterly cycles.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "publishedAt": "2026-09-17T11:50:00.000Z",
-    "url": "https://thehackernews.com/2026/09/can-you-prove-new-cve-is-exploitable.html"
-  },
-  {
-    "id": "https://thehackernews.com/2026/09/cisos-expert-guide-to-agentic.html",
-    "sourceUrl": "https://thehackernews.com/2026/09/cisos-expert-guide-to-agentic.html",
-    "title": "CISO Guide Explains How AI Agents Close Exploitation Gap",
-    "headline": "CISO Guide Explains How AI Agents Close Exploitation Gap",
-    "summary": "A new free guide details how autonomous AI agents can help security leaders address the rapid weaponization of vulnerabilities, which attackers now exploit within about five days. The guide stresses the need for strict controls before deploying agents in production, as exploitation drives 31% of breaches.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "publishedAt": "2026-09-17T10:50:53.000Z",
-    "url": "https://thehackernews.com/2026/09/cisos-expert-guide-to-agentic.html"
-  },
-  {
-    "id": "https://thehackernews.com/2026/09/china-aligned-famoussparrow-deploys.html",
-    "sourceUrl": "https://thehackernews.com/2026/09/china-aligned-famoussparrow-deploys.html",
-    "title": "FamousSparrow Deploys SparroWocky Backdoor in Latin America",
-    "headline": "FamousSparrow Deploys SparroWocky Backdoor in Latin America",
-    "summary": "The China-aligned threat actor FamousSparrow has been observed deploying the previously unreported SparroWocky backdoor across multiple Latin American countries since August 2025. The modular C++ backdoor was identified by ESET researchers in a technical report shared with The Hacker News.",
-    "category": "NATION_STATE",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "publishedAt": "2026-09-17T10:05:45.000Z",
-    "url": "https://thehackernews.com/2026/09/china-aligned-famoussparrow-deploys.html"
   }
 ]
