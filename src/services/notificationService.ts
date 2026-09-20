@@ -1,13 +1,32 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { isRunningInExpoGo } from 'expo';
 import Constants, { ExecutionEnvironment } from 'expo-constants';
 import * as Device from 'expo-device';
-import * as Notifications from 'expo-notifications';
+import type * as NotificationsType from 'expo-notifications';
 import { Platform } from 'react-native';
 
 export const isExpoGo =
+  isRunningInExpoGo() ||
   Constants.appOwnership === 'expo' ||
   Constants.executionEnvironment === ExecutionEnvironment.StoreClient ||
   (Constants.executionEnvironment as string) === 'storeClient';
+
+/**
+ * Lazily loads expo-notifications only in standalone/development builds.
+ * In Expo Go on Android (SDK 53+), importing expo-notifications at top level throws
+ * an uncaught error because remote push notifications were removed from Expo Go.
+ */
+function getNotifications(): typeof NotificationsType | null {
+  if (isExpoGo) {
+    return null;
+  }
+  try {
+    return require('expo-notifications');
+  } catch (err) {
+    console.warn('SecuBuzz: Could not load expo-notifications module:', err);
+    return null;
+  }
+}
 
 const STORAGE_KEY_TOKEN = '@secubuzz_push_token';
 const STORAGE_KEY_PERMISSION_REQUESTED = '@secubuzz_push_permission_requested';
@@ -26,17 +45,20 @@ const DEFAULT_API_URL =
  * Note: Notifications are disabled in Expo Go on Android (SDK 53+).
  */
 if (!isExpoGo) {
-  try {
-    Notifications.setNotificationHandler({
-      handleNotification: async () => ({
-        shouldPlaySound: false,
-        shouldSetBadge: false,
-        shouldShowBanner: true,
-        shouldShowList: true,
-      }),
-    });
-  } catch (err) {
-    console.warn('SecuBuzz: Notification handler setup error:', err);
+  const Notifications = getNotifications();
+  if (Notifications) {
+    try {
+      Notifications.setNotificationHandler({
+        handleNotification: async () => ({
+          shouldPlaySound: false,
+          shouldSetBadge: false,
+          shouldShowBanner: true,
+          shouldShowList: true,
+        }),
+      });
+    } catch (err) {
+      console.warn('SecuBuzz: Notification handler setup error:', err);
+    }
   }
 }
 
@@ -46,6 +68,11 @@ if (!isExpoGo) {
  */
 export async function setupNotificationChannelAsync(): Promise<void> {
   if (Platform.OS !== 'android' || isExpoGo) {
+    return;
+  }
+
+  const Notifications = getNotifications();
+  if (!Notifications) {
     return;
   }
 
@@ -68,9 +95,14 @@ export async function setupNotificationChannelAsync(): Promise<void> {
 /**
  * Checks current notification permission status.
  */
-export async function getNotificationPermissionStatusAsync(): Promise<Notifications.PermissionStatus> {
+export async function getNotificationPermissionStatusAsync(): Promise<NotificationsType.PermissionStatus> {
   if (isExpoGo) {
-    return Notifications.PermissionStatus.UNDETERMINED;
+    return 'undetermined' as NotificationsType.PermissionStatus;
+  }
+
+  const Notifications = getNotifications();
+  if (!Notifications) {
+    return 'undetermined' as NotificationsType.PermissionStatus;
   }
 
   try {
@@ -78,7 +110,7 @@ export async function getNotificationPermissionStatusAsync(): Promise<Notificati
     return status;
   } catch (error) {
     console.warn('SecuBuzz: Could not read notification permissions:', error);
-    return Notifications.PermissionStatus.UNDETERMINED;
+    return 'undetermined' as NotificationsType.PermissionStatus;
   }
 }
 
@@ -102,69 +134,73 @@ export async function registerForPushNotificationsAsync(
     return null;
   }
 
-  // 1. Ensure notification channel is ready on Android
-  await setupNotificationChannelAsync();
+  const Notifications = getNotifications();
+  if (!Notifications) {
+    return null;
+  }
 
-  // 2. Check existing permission status
-  let { status } = await Notifications.getPermissionsAsync();
+  try {
+    // 1. Ensure notification channel is ready on Android
+    await setupNotificationChannelAsync();
 
-  if (status !== Notifications.PermissionStatus.GRANTED) {
-    const hasPrompted = await AsyncStorage.getItem(STORAGE_KEY_PERMISSION_REQUESTED);
+    // 2. Check existing permission status
+    let { status } = await Notifications.getPermissionsAsync();
 
-    // If already prompted once and denied, do not ask again unless explicitly triggered
-    if (hasPrompted === 'true' && !forceRequest) {
+    if (status !== 'granted') {
+      const hasPrompted = await AsyncStorage.getItem(STORAGE_KEY_PERMISSION_REQUESTED);
+
+      // If already prompted once and denied, do not ask again unless explicitly triggered
+      if (hasPrompted === 'true' && !forceRequest) {
+        return null;
+      }
+
+      // Mark that we have now requested permission
+      await AsyncStorage.setItem(STORAGE_KEY_PERMISSION_REQUESTED, 'true');
+
+      const requested = await Notifications.requestPermissionsAsync();
+      status = requested.status;
+    }
+
+    if (status !== 'granted') {
       return null;
     }
 
-    // Mark that we have now requested permission
-    await AsyncStorage.setItem(STORAGE_KEY_PERMISSION_REQUESTED, 'true');
+    // 3. Resolve Project ID from EAS config
+    const projectId =
+      Constants.expoConfig?.extra?.eas?.projectId ??
+      Constants.easConfig?.projectId ??
+      '51de636f-84a1-4295-9b85-02c3c406d964';
 
-    const requested = await Notifications.requestPermissionsAsync();
-    status = requested.status;
-  }
+    if (!projectId) {
+      console.warn('SecuBuzz: Missing EAS Project ID for push token registration.');
+      return null;
+    }
 
-  if (status !== Notifications.PermissionStatus.GRANTED) {
-    return null;
-  }
-
-  // 3. Resolve Project ID from EAS config
-  const projectId =
-    Constants.expoConfig?.extra?.eas?.projectId ??
-    Constants.easConfig?.projectId ??
-    '51de636f-84a1-4295-9b85-02c3c406d964';
-
-  if (!projectId) {
-    console.warn('SecuBuzz: Missing EAS Project ID for push token registration.');
-    return null;
-  }
-
-  // 4. Retrieve Expo push token
-  let token: string;
-  try {
+    // 4. Retrieve Expo push token
     const tokenResult = await Notifications.getExpoPushTokenAsync({
       projectId,
     });
-    token = tokenResult.data;
+    const token = tokenResult.data;
+
+    if (
+      !token ||
+      (!token.startsWith('ExponentPushToken[') && !token.startsWith('ExpoPushToken['))
+    ) {
+      console.warn('SecuBuzz: Invalid token returned from Expo:', token);
+      return null;
+    }
+
+    // Save token locally
+    await AsyncStorage.setItem(STORAGE_KEY_TOKEN, token);
+
+    // 5. Register with backend (Cloudflare Worker)
+    void syncTokenWithBackendAsync(token);
+
+    return token;
   } catch (error) {
-    console.warn('SecuBuzz: Failed to obtain Expo push token:', error);
+    console.warn('SecuBuzz: Failed to register push token:', error);
     return null;
   }
-
-  if (
-    !token ||
-    (!token.startsWith('ExponentPushToken[') && !token.startsWith('ExpoPushToken['))
-  ) {
-    console.warn('SecuBuzz: Invalid token returned from Expo:', token);
-    return null;
-  }
-
-  // Save token locally
-  await AsyncStorage.setItem(STORAGE_KEY_TOKEN, token);
-
-  // 5. Register with backend (Cloudflare Worker)
-  void syncTokenWithBackendAsync(token);
-
-  return token;
 }
 
 /**

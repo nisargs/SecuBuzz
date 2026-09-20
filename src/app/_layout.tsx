@@ -1,4 +1,4 @@
-import * as Notifications from 'expo-notifications';
+import type * as NotificationsType from 'expo-notifications';
 import { useFonts } from 'expo-font';
 import { Stack, useRouter } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
@@ -35,8 +35,20 @@ export default function RootLayout() {
       return;
     }
 
+    let Notifications: typeof NotificationsType | null = null;
+    try {
+      Notifications = require('expo-notifications');
+    } catch (e) {
+      console.warn('SecuBuzz: Failed to load expo-notifications in layout:', e);
+      return;
+    }
+
+    if (!Notifications) {
+      return;
+    }
+
     function handleNotificationResponse(
-      response: Notifications.NotificationResponse
+      response: NotificationsType.NotificationResponse
     ) {
       try {
         const data = response?.notification?.request?.content?.data;
@@ -51,8 +63,8 @@ export default function RootLayout() {
       }
     }
 
-    let responseSubscription: Notifications.Subscription | undefined;
-    let receivedSubscription: Notifications.Subscription | undefined;
+    let responseSubscription: NotificationsType.Subscription | undefined;
+    let receivedSubscription: NotificationsType.Subscription | undefined;
 
     try {
       // Handle launch from notification when app was completely closed
