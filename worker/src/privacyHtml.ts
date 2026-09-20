@@ -265,9 +265,12 @@ export const PRIVACY_POLICY_HTML = `<!DOCTYPE html>
     </div>
 
     <div class="section">
-      <h2>8. No Third-Party Advertising or Tracking SDKs</h2>
+      <h2>8. Analytics & Advertising Disclosures</h2>
       <p>
-        SecuBuzz does not integrate third-party ad networks (such as Google AdMob or Meta Audience Network) or invasive behavioral tracking analytics. You will never see commercial popups, banners, or tracking pixels inside the app.
+        <strong>In-App:</strong> The SecuBuzz mobile application does not integrate third-party advertising SDKs (such as Google AdMob or Meta Audience Network), commercial ad networks, or invasive behavioral tracking SDKs. You will never see commercial popups, banners, or tracking pixels inside the mobile app.
+      </p>
+      <p>
+        <strong>Website (secubuzz.com):</strong> On our public informational website and privacy pages, we use <strong>Cloudflare Web Analytics</strong>. This is a privacy-first, cookieless analytics service designed to measure aggregate traffic (page views, country-level geography, and device categories) without using cookies, without accessing browser local storage, and without collecting personal identifiable information (PII) or profiling individual visitors across the web.
       </p>
     </div>
 

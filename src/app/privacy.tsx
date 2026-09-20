@@ -202,16 +202,23 @@ export default function PrivacyPolicyScreen() {
 
         <Section title="8. Analytics and Advertising">
           <Text style={styles.paragraph}>
-            The current version of SecuBuzz does not
-            intentionally include third-party
-            advertising SDKs or personalized
-            advertising.
+            The SecuBuzz mobile application does not
+            include third-party advertising SDKs or
+            personalized ad tracking.
           </Text>
 
           <Text style={styles.paragraph}>
-            If analytics, advertising, crash-reporting,
-            or other data-collection services are added
-            in a future version, this Privacy Policy and
+            Our public informational website (secubuzz.com)
+            uses privacy-preserving, cookieless Cloudflare
+            Web Analytics to measure aggregate page visits
+            without collecting personal data or using
+            tracking cookies.
+          </Text>
+
+          <Text style={styles.paragraph}>
+            If additional analytics or advertising services
+            are ever added to the mobile application in
+            future versions, this Privacy Policy and
             applicable Google Play disclosures will be
             updated as required.
           </Text>
