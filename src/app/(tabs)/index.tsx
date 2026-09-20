@@ -22,7 +22,6 @@ import {
   ErrorState,
   LoadingState,
 } from '../../components/ScreenStates';
-import { TestingNoticeModal } from '../../components/TestingNoticeModal';
 import { useSavedArticles } from '../../context/SavedArticlesContext';
 import { useArticles } from '../../hooks/useArticles';
 import {
@@ -95,9 +94,6 @@ export default function FeedScreen() {
     useState<CategoryFilter>('ALL');
 
   const [refreshing, setRefreshing] =
-    useState(false);
-
-  const [showTestingNotice, setShowTestingNotice] =
     useState(false);
 
   const [feedHeight, setFeedHeight] =
@@ -273,12 +269,15 @@ export default function FeedScreen() {
 
   /*
    * Manual refresh trigger (button tap or pull-to-refresh).
-   * In testing phase, manual refresh is paused and a notice is shown.
    */
-  const handleManualRefresh = useCallback(() => {
-    setRefreshing(false);
-    setShowTestingNotice(true);
-  }, []);
+  const handleManualRefresh = useCallback(async () => {
+    setRefreshing(true);
+    try {
+      await load();
+    } finally {
+      setRefreshing(false);
+    }
+  }, [load]);
 
   /*
    * Article swipe finished.
@@ -628,11 +627,6 @@ export default function FeedScreen() {
           </View>
         </View>
       ) : null}
-      {/* TESTING NOTICE MODAL */}
-      <TestingNoticeModal
-        visible={showTestingNotice}
-        onClose={() => setShowTestingNotice(false)}
-      />
     </SafeAreaView>
   );
 }
