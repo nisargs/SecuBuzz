@@ -74,7 +74,7 @@ Stay ahead of zero-days, ransomware syndicates, and supply chain vulnerabilities
 ## 4. Contact & Legal URLs
 
 - **Website / Privacy Policy URL**:
-  `https://nisargs.github.io/SecuBuzz/` (or `https://nisargs.github.io/SecuBuzz/privacy.html`)
+  `https://secubuzz-push.secubuzz.workers.dev/privacy`
 - **Developer Support Email**:
   `secubuzz.app@gmail.com`
 - **Developer / Organization Name**:

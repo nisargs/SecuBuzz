@@ -60,6 +60,8 @@ function isAuthorized(request: Request, env: Env): boolean {
   return false;
 }
 
+import { PRIVACY_POLICY_HTML } from './privacyHtml';
+
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
@@ -73,6 +75,18 @@ export default {
     }
 
     try {
+      // Privacy Policy Page (Public, for Google Play Store compliance)
+      if (url.pathname === '/privacy' || url.pathname === '/privacy.html') {
+        return new Response(PRIVACY_POLICY_HTML, {
+          status: 200,
+          headers: {
+            'Content-Type': 'text/html; charset=utf-8',
+            'Cache-Control': 'public, max-age=3600',
+            ...CORS_HEADERS,
+          },
+        });
+      }
+
       // 1. Health check
       if (url.pathname === '/' || url.pathname === '/health') {
         return jsonResponse({
