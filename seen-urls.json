@@ -203,5 +203,11 @@
   "https://www.sophos.com/en-us/blog/cisco-secure-email-gateway-vulnerability-cve-2026-76461-in-active-exploitation",
   "https://research.checkpoint.com/2026/14th-september-threat-intelligence-report/",
   "https://unit42.paloaltonetworks.com/behavioral-clustering-map-to-cloud-identities/",
-  "https://blog.cloudflare.com/casb-policies/"
+  "https://blog.cloudflare.com/casb-policies/",
+  "https://www.wiz.io/blog/artifactory-under-attack-in-the-wild-exploitation-of-cve-2026-42016-cve-2026-4201",
+  "https://www.microsoft.com/en-us/security/blog/2026/09/10/protecting-organizations-ai-assisted-executive-impersonation-invoice-fraud/",
+  "https://www.microsoft.com/en-us/security/blog/2026/09/10/detect-and-disrupt-ai-themed-attacks-with-microsoft-defender/",
+  "https://research.checkpoint.com/2026/puzzlemask-abusing-plain-prose-as-a-covert-ai-attack-vector/",
+  "https://blog.cloudflare.com/post-quantum-dnssec-1111/",
+  "https://www.wiz.io/blog/wiz-govramp-high"
 ]

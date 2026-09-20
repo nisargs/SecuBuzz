@@ -1,5 +1,77 @@
 [
   {
+    "id": "https://www.wiz.io/blog/artifactory-under-attack-in-the-wild-exploitation-of-cve-2026-42016-cve-2026-4201",
+    "sourceUrl": "https://www.wiz.io/blog/artifactory-under-attack-in-the-wild-exploitation-of-cve-2026-42016-cve-2026-4201",
+    "title": "Wiz Research Reports Active Exploitation of Three JFrog Artifactory CVEs",
+    "headline": "Wiz Research Reports Active Exploitation of Three JFrog Artifactory CVEs",
+    "summary": "Wiz Research reports active exploitation of three critical JFrog Artifactory vulnerabilities—CVE‑2026‑42016, CVE‑2026‑42018, and CVE‑2026‑82329—by attackers chaining them to bypass authentication and seize administrative control. The flaws are rated critical and high severity, enabling full system takeover. Immediate patching and monitoring are essential.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Wiz Research",
+    "publishedAt": "2026-09-10T19:04:00.000Z",
+    "url": "https://www.wiz.io/blog/artifactory-under-attack-in-the-wild-exploitation-of-cve-2026-42016-cve-2026-4201"
+  },
+  {
+    "id": "https://www.microsoft.com/en-us/security/blog/2026/09/10/protecting-organizations-ai-assisted-executive-impersonation-invoice-fraud/",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/09/10/protecting-organizations-ai-assisted-executive-impersonation-invoice-fraud/",
+    "title": "Microsoft Security Warns of AI‑Assisted Executive Impersonation and Invoice Fraud",
+    "headline": "Microsoft Security Warns of AI‑Assisted Executive Impersonation and Invoice Fraud",
+    "summary": "Microsoft Security highlights an AI‑assisted business email compromise campaign that impersonated executives and sent fake invoices to finance teams, prompting ACH payment fraud. The attack leveraged generative AI to craft convincing messages, targeting financial operations. Organizations should verify invoice authenticity, enforce MFA, and train staff to detect AI‑generated phishing.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Microsoft Security",
+    "publishedAt": "2026-09-10T17:23:05.000Z",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/10/protecting-organizations-ai-assisted-executive-impersonation-invoice-fraud/"
+  },
+  {
+    "id": "https://www.microsoft.com/en-us/security/blog/2026/09/10/detect-and-disrupt-ai-themed-attacks-with-microsoft-defender/",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/09/10/detect-and-disrupt-ai-themed-attacks-with-microsoft-defender/",
+    "title": "Microsoft Defender Detects and Disrupts AI-Themed Phishing and Malware",
+    "headline": "Microsoft Defender Detects and Disrupts AI-Themed Phishing and Malware",
+    "summary": "Microsoft Defender now identifies and blocks AI-themed phishing, malware, and multi‑stage attacks throughout the attack chain. The tool analyzes suspicious content and stops malicious payloads before they reach users, enhancing protection against emerging AI‑driven threats.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Microsoft Security",
+    "publishedAt": "2026-09-10T16:00:00.000Z",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/10/detect-and-disrupt-ai-themed-attacks-with-microsoft-defender/"
+  },
+  {
+    "id": "https://research.checkpoint.com/2026/puzzlemask-abusing-plain-prose-as-a-covert-ai-attack-vector/",
+    "sourceUrl": "https://research.checkpoint.com/2026/puzzlemask-abusing-plain-prose-as-a-covert-ai-attack-vector/",
+    "title": "PuzzleMask: Plain Prose Used to Bypass LLM Policy Checks",
+    "headline": "PuzzleMask: Plain Prose Used to Bypass LLM Policy Checks",
+    "summary": "Check Point Research uncovered PuzzleMask, a technique that embeds policy‑violating commands within plain English prose to evade LLM‑based security checks. The method tricks language models into executing malicious actions such as encrypting files or revealing sensitive recipes, exposing a new covert attack vector.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Check Point Research",
+    "publishedAt": "2026-09-10T14:32:46.000Z",
+    "url": "https://research.checkpoint.com/2026/puzzlemask-abusing-plain-prose-as-a-covert-ai-attack-vector/"
+  },
+  {
+    "id": "https://blog.cloudflare.com/post-quantum-dnssec-1111/",
+    "sourceUrl": "https://blog.cloudflare.com/post-quantum-dnssec-1111/",
+    "title": "Cloudflare 1.1.1.1 Adds Post-Quantum DNSSEC Support",
+    "headline": "Cloudflare 1.1.1.1 Adds Post-Quantum DNSSEC Support",
+    "summary": "1.1.1.1 now validates DNSSEC signatures using NIST’s post‑quantum ML‑DSA‑44 algorithm, supporting 2,420‑byte signatures and managing downgrade risks at scale. This enhancement improves resilience against quantum‑era attacks and ensures compatibility with existing DNSSEC infrastructure without compromising performance or requiring client updates.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "publishedAt": "2026-09-10T13:00:00.000Z",
+    "url": "https://blog.cloudflare.com/post-quantum-dnssec-1111/"
+  },
+  {
+    "id": "https://www.wiz.io/blog/wiz-govramp-high",
+    "sourceUrl": "https://www.wiz.io/blog/wiz-govramp-high",
+    "title": "Wiz Achieves GovRAMP High Authorization",
+    "headline": "Wiz Achieves GovRAMP High Authorization",
+    "summary": "Wiz has achieved GovRAMP High Authorization, enabling unified cloud security and accelerating secure modernization to protect citizen data and critical infrastructure. This certification demonstrates compliance with stringent federal security requirements and supports organizations in meeting regulatory obligations while maintaining robust threat detection and response capabilities across multiple cloud environments, ensuring continuous monitoring and rapid incident containment.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Wiz Research",
+    "publishedAt": "2026-09-10T11:00:00.000Z",
+    "url": "https://www.wiz.io/blog/wiz-govramp-high"
+  },
+  {
     "id": "https://cybernewsai.com/blog/aws-agentcore-identity-memory-exposure",
     "sourceUrl": "https://cybernewsai.com/blog/aws-agentcore-identity-memory-exposure",
     "title": "AWS AgentCore Exposes Identity Vault Secrets in Memory",
@@ -1126,77 +1198,5 @@
     "source": "BleepingComputer",
     "publishedAt": "2026-09-18T13:58:40.000Z",
     "url": "https://www.bleepingcomputer.com/news/security/microsoft-teams-will-let-admins-block-custom-file-extensions/"
-  },
-  {
-    "id": "https://thehackernews.com/2026/09/weaselbiscuit-stealer-spreads-via-13.html",
-    "sourceUrl": "https://thehackernews.com/2026/09/weaselbiscuit-stealer-spreads-via-13.html",
-    "title": "WeaselBiscuit Stealer Discovered in 13 npm Packages",
-    "headline": "WeaselBiscuit Stealer Discovered in 13 npm Packages",
-    "summary": "Researchers found 13 npm packages delivering the WeaselBiscuit JavaScript stealer, which harvests Chrome extension storage. The malware shares features with DPRK’s Contagious Interview campaign strains BeaverTail and another. The discovery highlights the use of npm as a delivery vector for new threats.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "publishedAt": "2026-09-18T10:40:06.000Z",
-    "url": "https://thehackernews.com/2026/09/weaselbiscuit-stealer-spreads-via-13.html"
-  },
-  {
-    "id": "https://thehackernews.com/2026/09/claimed-bug-bounty-hunter-likely-used.html",
-    "sourceUrl": "https://thehackernews.com/2026/09/claimed-bug-bounty-hunter-likely-used.html",
-    "title": "LLM-Assisted Development of PhantomRaven npm Stealer",
-    "headline": "LLM-Assisted Development of PhantomRaven npm Stealer",
-    "summary": "A threat actor linked to the PhantomRaven JavaScript stealer is believed to have used a large language model to write the malware. Evidence includes verbose comments, placeholder code, and token‑analysis patterns. The stealer is distributed via the npm package registry.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "publishedAt": "2026-09-18T09:18:03.000Z",
-    "url": "https://thehackernews.com/2026/09/claimed-bug-bounty-hunter-likely-used.html"
-  },
-  {
-    "id": "https://thehackernews.com/2026/09/rathat-android-malware-abuses-adb-to.html",
-    "sourceUrl": "https://thehackernews.com/2026/09/rathat-android-malware-abuses-adb-to.html",
-    "title": "RatHat Android Malware Uses ADB to Maintain Shell Access After Uninstall",
-    "headline": "RatHat Android Malware Uses ADB to Maintain Shell Access After Uninstall",
-    "summary": "Researchers identified RatHat, an Android malware linked to China-based threat actors. It employs AI to navigate devices and uses ADB to keep shell access after uninstallation. Distribution occurs through targeted smishing and malvertising, leading users to deceptive third‑party download portals.",
-    "category": "GENERAL",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-09-18T06:17:25.000Z",
-    "url": "https://thehackernews.com/2026/09/rathat-android-malware-abuses-adb-to.html"
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/check-point-warns-critical-flaw-lets-hackers-execute-code-as-root/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/check-point-warns-critical-flaw-lets-hackers-execute-code-as-root/",
-    "title": "Check Point Flaw Allows Root‑Level Code Execution on Management Systems",
-    "headline": "Check Point Flaw Allows Root‑Level Code Execution on Management Systems",
-    "summary": "Check Point Software released updates for a critical flaw that lets attackers run code with root privileges on management systems. The vulnerability could enable full system compromise if exploited.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-09-18T09:34:33.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/check-point-warns-critical-flaw-lets-hackers-execute-code-as-root/"
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-broken-copy-and-paste-for-excel-2016-users/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-broken-copy-and-paste-for-excel-2016-users/",
-    "title": "Microsoft Fixes Copy-Paste Failure in Excel 2016 After KB5002914 Update",
-    "headline": "Microsoft Fixes Copy-Paste Failure in Excel 2016 After KB5002914 Update",
-    "summary": "Microsoft has addressed a known copy-and-paste failure affecting some Excel 2016 users after installing the September 2026 KB5002914 security update. The fix restores normal clipboard functionality, preventing data loss during document editing. Users should apply the update to avoid disruptions.",
-    "category": "VULNERABILITY",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-09-18T07:35:31.000Z",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-broken-copy-and-paste-for-excel-2016-users/"
-  },
-  {
-    "id": "https://www.securityweek.com/nightmarestresser-ddos-service-disrupted-in-international-operation/",
-    "sourceUrl": "https://www.securityweek.com/nightmarestresser-ddos-service-disrupted-in-international-operation/",
-    "title": "NightmareStresser DDoS Service Disrupted in International Operation",
-    "headline": "NightmareStresser DDoS Service Disrupted in International Operation",
-    "summary": "The long‑running NightmareStresser DDoS‑for‑hire service was disrupted during an international operation, according to SecurityWeek. The incident highlights ongoing efforts to dismantle large‑scale cyber‑attack platforms. Details on the operators or affected clients remain undisclosed. Law enforcement agencies are reportedly coordinating with international partners to investigate the breach and prevent future attacks.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-09-18T10:12:33.000Z",
-    "url": "https://www.securityweek.com/nightmarestresser-ddos-service-disrupted-in-international-operation/"
   }
 ]
