@@ -160,5 +160,11 @@
   "https://www.microsoft.com/en-us/security/blog/2026/09/10/detect-and-disrupt-ai-themed-attacks-with-microsoft-defender/",
   "https://research.checkpoint.com/2026/puzzlemask-abusing-plain-prose-as-a-covert-ai-attack-vector/",
   "https://blog.cloudflare.com/post-quantum-dnssec-1111/",
-  "https://www.wiz.io/blog/wiz-govramp-high"
+  "https://www.wiz.io/blog/wiz-govramp-high",
+  "https://unit42.paloaltonetworks.com/kubernetes-spiffe-spire-identity-spoofing/",
+  "https://www.microsoft.com/en-us/security/blog/2026/09/09/threat-matrix-mapping-threats-across-cloud-web-applications/",
+  "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
+  "https://www.wiz.io/blog/off-guard-breaking-litellm-from-authentication-bypass-to-cloud-compromise",
+  "https://blog.cloudflare.com/workers-module-registry-nodejs/",
+  "https://unit42.paloaltonetworks.com/ppi-network-malware-campaign-analysis/"
 ]

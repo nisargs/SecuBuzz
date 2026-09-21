@@ -1,5 +1,77 @@
 [
   {
+    "id": "https://unit42.paloaltonetworks.com/kubernetes-spiffe-spire-identity-spoofing/",
+    "sourceUrl": "https://unit42.paloaltonetworks.com/kubernetes-spiffe-spire-identity-spoofing/",
+    "title": "SPIFFE/SPIRE Metadata Exploited for Identity Spoofing on Compromised K8s Nodes",
+    "headline": "SPIFFE/SPIRE Metadata Exploited for Identity Spoofing on Compromised K8s Nodes",
+    "summary": "Root access on a compromised Kubernetes node enables attackers to use SPIFFE/SPIRE metadata to spoof and harvest co-located workload identities. The technique allows post‑exploitation identity misuse, potentially granting unauthorized access to services and data within the cluster.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Unit 42",
+    "publishedAt": "2026-09-10T10:00:43.000Z",
+    "url": "https://unit42.paloaltonetworks.com/kubernetes-spiffe-spire-identity-spoofing/"
+  },
+  {
+    "id": "https://www.microsoft.com/en-us/security/blog/2026/09/09/threat-matrix-mapping-threats-across-cloud-web-applications/",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/09/09/threat-matrix-mapping-threats-across-cloud-web-applications/",
+    "title": "Microsoft Launches Cloud Web Applications Threat Matrix",
+    "headline": "Microsoft Launches Cloud Web Applications Threat Matrix",
+    "summary": "Microsoft introduces the Cloud Web Applications Threat Matrix, an MITRE ATT&CK‑aligned framework that helps defenders understand, prioritize, and mitigate threats to cloud‑hosted web apps and serverless platforms. The matrix provides actionable guidance for securing cloud web applications.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Microsoft Security",
+    "publishedAt": "2026-09-09T21:30:00.000Z",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/09/threat-matrix-mapping-threats-across-cloud-web-applications/"
+  },
+  {
+    "id": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
+    "title": "Passkey-Themed Social Engineering Compromises Identities and Cloud Data",
+    "headline": "Passkey-Themed Social Engineering Compromises Identities and Cloud Data",
+    "summary": "Threat actors use passkey‑themed social engineering to gain MFA persistence, abuse Microsoft Graph for reconnaissance, and access SharePoint, OneDrive, and email data. The post outlines detection and mitigation steps to protect identities and cloud resources.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Microsoft Security",
+    "publishedAt": "2026-09-09T17:41:18.000Z",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/"
+  },
+  {
+    "id": "https://www.wiz.io/blog/off-guard-breaking-litellm-from-authentication-bypass-to-cloud-compromise",
+    "sourceUrl": "https://www.wiz.io/blog/off-guard-breaking-litellm-from-authentication-bypass-to-cloud-compromise",
+    "title": "LiteLLM Default Keys and Unauthenticated Sessions Enable Cloud Compromise",
+    "headline": "LiteLLM Default Keys and Unauthenticated Sessions Enable Cloud Compromise",
+    "summary": "LiteLLM’s default keys, unauthenticated MCP sessions, and custom guardrails allow attackers to bypass authentication, achieve root‑level remote code execution, and steal IAM credentials. The vulnerability exposes cloud AI infrastructure to full compromise.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Wiz Research",
+    "publishedAt": "2026-09-09T16:06:00.000Z",
+    "url": "https://www.wiz.io/blog/off-guard-breaking-litellm-from-authentication-bypass-to-cloud-compromise"
+  },
+  {
+    "id": "https://blog.cloudflare.com/workers-module-registry-nodejs/",
+    "sourceUrl": "https://blog.cloudflare.com/workers-module-registry-nodejs/",
+    "title": "Cloudflare Workers Adds Node.js Compatibility and URL‑Based Module Registry",
+    "headline": "Cloudflare Workers Adds Node.js Compatibility and URL‑Based Module Registry",
+    "summary": "Cloudflare Workers now supports Node.js compatibility by default, allowing applications up to 64 MiB. The update introduces a URL‑based module registry using import.meta, lazy compilation, shared code caches, and clearer error messages, improving developer experience and performance.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "publishedAt": "2026-09-09T13:00:00.000Z",
+    "url": "https://blog.cloudflare.com/workers-module-registry-nodejs/"
+  },
+  {
+    "id": "https://unit42.paloaltonetworks.com/ppi-network-malware-campaign-analysis/",
+    "sourceUrl": "https://unit42.paloaltonetworks.com/ppi-network-malware-campaign-analysis/",
+    "title": "Unit 42 Exposes YouTube Gaming Lures Used to Deliver Multi‑Payload Malware",
+    "headline": "Unit 42 Exposes YouTube Gaming Lures Used to Deliver Multi‑Payload Malware",
+    "summary": "Unit 42 uncovered that cybercriminals employ YouTube gaming lures and SEO poisoning to deliver multi‑payload malware into enterprise networks. The investigation details how attackers use these tactics to bypass defenses and install malicious code, highlighting the need for vigilant content filtering and user awareness.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Unit 42",
+    "publishedAt": "2026-09-09T10:00:55.000Z",
+    "url": "https://unit42.paloaltonetworks.com/ppi-network-malware-campaign-analysis/"
+  },
+  {
     "id": "https://www.wiz.io/blog/artifactory-under-attack-in-the-wild-exploitation-of-cve-2026-42016-cve-2026-4201",
     "sourceUrl": "https://www.wiz.io/blog/artifactory-under-attack-in-the-wild-exploitation-of-cve-2026-42016-cve-2026-4201",
     "title": "Wiz Research Reports Active Exploitation of Three JFrog Artifactory CVEs",
@@ -1126,77 +1198,5 @@
     "source": "The Hacker News",
     "publishedAt": "2026-09-18T12:47:04.000Z",
     "url": "https://thehackernews.com/2026/09/microsoft-patches-cvss-100-azure-ai.html"
-  },
-  {
-    "id": "https://thehackernews.com/2026/09/an-abandoned-cdn-domain-was-re.html",
-    "sourceUrl": "https://thehackernews.com/2026/09/an-abandoned-cdn-domain-was-re.html",
-    "title": "Abandoned CDN Domain Re‑Registered, Thousands of Sites Still Use It",
-    "headline": "Abandoned CDN Domain Re‑Registered, Thousands of Sites Still Use It",
-    "summary": "In July 2025, a former CDN domain was re‑registered after its original service was shut down. Despite the expiration, thousands of websites, code repositories, and documentation pages still reference hostnames under that domain, meaning the new owner can serve assets to unsuspecting traffic.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "publishedAt": "2026-09-18T11:01:16.000Z",
-    "url": "https://thehackernews.com/2026/09/an-abandoned-cdn-domain-was-re.html"
-  },
-  {
-    "id": "https://thehackernews.com/2026/09/plugin4shell-lets-repository-owners.html",
-    "sourceUrl": "https://thehackernews.com/2026/09/plugin4shell-lets-repository-owners.html",
-    "title": "AI Coding Agent Flaw Lets Malicious Plugin Swap Despite Version Locks",
-    "headline": "AI Coding Agent Flaw Lets Malicious Plugin Swap Despite Version Locks",
-    "summary": "A flaw in four popular AI coding agents lets a repository owner replace a pinned plugin with malicious code, bypassing version locks. Security firm Air Security reported the vulnerability, and patches have been released for Anthropic’s Claude Code and OpenAI’s Codex, while GitHub Copilot remains unaffected.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-09-18T11:01:01.000Z",
-    "url": "https://thehackernews.com/2026/09/plugin4shell-lets-repository-owners.html"
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/gyazo-server-flaw-exploited-to-steal-236-million-user-records/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/gyazo-server-flaw-exploited-to-steal-236-million-user-records/",
-    "title": "Gyazo Server Flaw Exposes 23.6 Million User Records",
-    "headline": "Gyazo Server Flaw Exposes 23.6 Million User Records",
-    "summary": "Gyazo, an image‑sharing service, confirmed a data breach after attackers exploited a server vulnerability that allowed them to steal 23.6 million user records. The breach highlights the risk of unpatched server flaws in popular platforms.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-09-18T16:00:38.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/gyazo-server-flaw-exploited-to-steal-236-million-user-records/"
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/fake-lastpass-authenticator-github-repos-push-new-rapuncel-infostealer/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fake-lastpass-authenticator-github-repos-push-new-rapuncel-infostealer/",
-    "title": "Fake LastPass Authenticator Repositories Push New Rapuncel Infostealer",
-    "headline": "Fake LastPass Authenticator Repositories Push New Rapuncel Infostealer",
-    "summary": "A malware campaign uses SEO‑optimized GitHub repositories that impersonate well‑known software firms to distribute a previously undocumented information stealer named Rapuncel. The tactic exploits trust in legitimate software names to spread the malicious code.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-09-18T15:19:06.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/fake-lastpass-authenticator-github-repos-push-new-rapuncel-infostealer/"
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/secure-enterprise-sharing-with-access-reviews-for-microsoft-365/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/secure-enterprise-sharing-with-access-reviews-for-microsoft-365/",
-    "title": "Microsoft 365 Access Reviews Improve Data Visibility",
-    "headline": "Microsoft 365 Access Reviews Improve Data Visibility",
-    "summary": "Microsoft 365 enables easy file sharing, but access can linger after its purpose ends, exposing sensitive data. Tenfold Software explains how centralized access governance and owner-driven reviews can identify and remove unnecessary access, improving visibility and security for organizations, ensuring data remains protected.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-09-18T14:00:10.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/secure-enterprise-sharing-with-access-reviews-for-microsoft-365/"
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/microsoft-teams-will-let-admins-block-custom-file-extensions/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-teams-will-let-admins-block-custom-file-extensions/",
-    "title": "Teams Adds Custom File Extension Blocking for Admins",
-    "headline": "Teams Adds Custom File Extension Blocking for Admins",
-    "summary": "Microsoft Teams is adding a new feature that allows administrators to block custom file extensions commonly linked to security threats. The update lets organizations tailor the list of prohibited extensions to meet their security policies, helping prevent malicious files from being shared within Teams.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-09-18T13:58:40.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/microsoft-teams-will-let-admins-block-custom-file-extensions/"
   }
 ]
