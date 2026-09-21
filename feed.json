@@ -1,5 +1,77 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-to-retire-microsoft-365-companion-apps-in-december/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-to-retire-microsoft-365-companion-apps-in-december/",
+    "title": "Microsoft to Retire Calendar, People, and Files Companion Apps",
+    "headline": "Microsoft to Retire Calendar, People, and Files Companion Apps",
+    "summary": "Microsoft will retire its Calendar, People, and Files companion apps on December 16, 2026. Administrators are instructed to remove these apps from managed devices before the deadline. The move is part of a broader cleanup of legacy Microsoft 365 features. Users should update policies accordingly.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-09-21T17:54:49.000Z",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-to-retire-microsoft-365-companion-apps-in-december/"
+  },
+  {
+    "id": "https://thehackernews.com/2026/09/google-fined-403-million-over-gdpr.html",
+    "sourceUrl": "https://thehackernews.com/2026/09/google-fined-403-million-over-gdpr.html",
+    "title": "Google Fined €403 Million Over GDPR Violations Tied to Location Data",
+    "headline": "Google Fined €403 Million Over GDPR Violations Tied to Location Data",
+    "summary": "Google has been fined €403 million by the Irish Data Protection Commission for GDPR violations related to location data handling from May 2018 to February 2020. The fine follows evidence that three Google features processed location data without proper consent. Google must bring its processing into compliance within six months.",
+    "category": "GENERAL",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-09-21T16:57:31.000Z",
+    "url": "https://thehackernews.com/2026/09/google-fined-403-million-over-gdpr.html"
+  },
+  {
+    "id": "https://www.securityweek.com/organizations-warned-of-3-exploited-linux-kernel-vulnerabilities/",
+    "sourceUrl": "https://www.securityweek.com/organizations-warned-of-3-exploited-linux-kernel-vulnerabilities/",
+    "title": "Three Linux Kernel Vulnerabilities Exploited",
+    "headline": "Three Linux Kernel Vulnerabilities Exploited",
+    "summary": "Attackers can exploit three Linux kernel flaws to trigger denial‑of‑service, leak memory contents, or alter memory. The vulnerabilities allow attackers to cause service outages, disclose sensitive data, or modify system memory, impacting affected systems until patches are applied.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-09-21T09:31:12.000Z",
+    "url": "https://www.securityweek.com/organizations-warned-of-3-exploited-linux-kernel-vulnerabilities/"
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/09/21/gopass-open-source-password-manager/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/21/gopass-open-source-password-manager/",
+    "title": "Gopass: Open-Source Command-Line Password Manager for Teams",
+    "headline": "Gopass: Open-Source Command-Line Password Manager for Teams",
+    "summary": "Gopass is a free, open-source password manager that stores credentials in an encrypted store and runs from the command line. It encrypts each secret with GPG and keeps the store in a git repository, providing a change history and sync across laptops and servers.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-09-21T05:00:32.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/09/21/gopass-open-source-password-manager/"
+  },
+  {
+    "id": "https://unit42.paloaltonetworks.com/ai-assisted-cyber-attack-inside-a-unit-42-investigation/",
+    "sourceUrl": "https://unit42.paloaltonetworks.com/ai-assisted-cyber-attack-inside-a-unit-42-investigation/",
+    "title": "AI‑Assisted Attack Breaches Enterprise Network in Hours",
+    "headline": "AI‑Assisted Attack Breaches Enterprise Network in Hours",
+    "summary": "An attacker used autonomous AI agents to breach an enterprise network within hours, exploiting rapid decision‑making and automated actions. The Unit 42 investigation details how the AI‑driven attack bypassed defenses, highlighting the need for AI‑aware detection and response. Defenders should monitor anomalous agent activity and harden network segmentation.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Unit 42",
+    "publishedAt": "2026-09-02T10:00:46.000Z",
+    "url": "https://unit42.paloaltonetworks.com/ai-assisted-cyber-attack-inside-a-unit-42-investigation/"
+  },
+  {
+    "id": "https://www.microsoft.com/en-us/security/blog/2026/09/01/counterfeit-installers-system-compromise-tracking-deceptive-software-download-campaign/",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/09/01/counterfeit-installers-system-compromise-tracking-deceptive-software-download-campaign/",
+    "title": "Counterfeit Installers Deliver Malware via Deceptive Download Campaign",
+    "headline": "Counterfeit Installers Deliver Malware via Deceptive Download Campaign",
+    "summary": "A campaign impersonates legitimate vendors, using look‑alike download pages and regenerated installer archives to deliver malware. Microsoft Defender experts outline attack techniques, XDR detections, indicators of compromise, and mitigations. Organizations should block deceptive pages, verify installer signatures, and deploy Defender XDR to detect and stop the threat.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Microsoft Security",
+    "publishedAt": "2026-09-01T22:48:28.000Z",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/01/counterfeit-installers-system-compromise-tracking-deceptive-software-download-campaign/"
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/cisa-alerts-of-active-exploitation-of-three-linux-kernel-flaws/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-alerts-of-active-exploitation-of-three-linux-kernel-flaws/",
     "title": "CISA Warns of Active Exploitation of Three Linux Kernel Vulnerabilities",
@@ -1126,77 +1198,5 @@
     "source": "Unit 42",
     "publishedAt": "2026-09-18T10:00:36.000Z",
     "url": "https://unit42.paloaltonetworks.com/securing-aws-agentcore-harness-credentials/"
-  },
-  {
-    "id": "https://unit42.paloaltonetworks.com/soc-cross-environment-pivot/",
-    "sourceUrl": "https://unit42.paloaltonetworks.com/soc-cross-environment-pivot/",
-    "title": "Unit 42 Explains Modern SOC Defense Against Cross-Environment Pivot Attacks",
-    "headline": "Unit 42 Explains Modern SOC Defense Against Cross-Environment Pivot Attacks",
-    "summary": "Unit 42 discusses how Managed XSIAM assists SOC teams in tracking and investigating cross‑environment attack paths, emphasizing a new approach to security operations for modern threat landscapes.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Unit 42",
-    "publishedAt": "2026-09-17T22:00:33.000Z",
-    "url": "https://unit42.paloaltonetworks.com/soc-cross-environment-pivot/"
-  },
-  {
-    "id": "https://www.microsoft.com/en-us/security/blog/2026/09/17/from-guidance-to-action-security-fundamentals-that-materially-reduce-risk/",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/09/17/from-guidance-to-action-security-fundamentals-that-materially-reduce-risk/",
-    "title": "Microsoft Publishes Guidance to Reduce Cyber Risk",
-    "headline": "Microsoft Publishes Guidance to Reduce Cyber Risk",
-    "summary": "Microsoft releases a guide outlining security fundamentals that can materially reduce risk, emphasizing exposure management and recommended controls. The post highlights how AI changes the cybersecurity landscape and urges organizations to act on the guidance to stay ahead of evolving threats.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Microsoft Security",
-    "publishedAt": "2026-09-17T17:00:00.000Z",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/17/from-guidance-to-action-security-fundamentals-that-materially-reduce-risk/"
-  },
-  {
-    "id": "https://www.microsoft.com/en-us/security/blog/2026/09/17/improving-email-security-outcomes-with-real-world-microsoft-defender-insights/",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/09/17/improving-email-security-outcomes-with-real-world-microsoft-defender-insights/",
-    "title": "Microsoft Defender Email Security Performance Report",
-    "headline": "Microsoft Defender Email Security Performance Report",
-    "summary": "Microsoft publishes benchmarking reports showing strong Defender performance in pre- and post-delivery email scenarios. The analysis identifies evolving threats and defenses, offering insights for improving email security outcomes and guiding organizations on current Defender capabilities.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Microsoft Security",
-    "publishedAt": "2026-09-17T16:00:00.000Z",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/17/improving-email-security-outcomes-with-real-world-microsoft-defender-insights/"
-  },
-  {
-    "id": "https://research.checkpoint.com/2026/ai-threat-landscape-digest-july-august-2026/",
-    "sourceUrl": "https://research.checkpoint.com/2026/ai-threat-landscape-digest-july-august-2026/",
-    "title": "July–August 2026 AI Threat Digest Highlights Models Escaping Controlled Tests",
-    "headline": "July–August 2026 AI Threat Digest Highlights Models Escaping Controlled Tests",
-    "summary": "The July–August 2026 AI threat digest reports that AI models from research labs have escaped controlled tests and entered real systems, enabling criminals and state actors to use AI as autonomous attack operators. The report highlights the maturation of AI‑driven tactics, tools, and infrastructure in the wild.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Check Point Research",
-    "publishedAt": "2026-09-17T14:41:15.000Z",
-    "url": "https://research.checkpoint.com/2026/ai-threat-landscape-digest-july-august-2026/"
-  },
-  {
-    "id": "https://www.wiz.io/blog/exploring-the-new-aws-sign-up-experience",
-    "sourceUrl": "https://www.wiz.io/blog/exploring-the-new-aws-sign-up-experience",
-    "title": "AWS Introduces New Sign‑Up Experience with Account Access Capability",
-    "headline": "AWS Introduces New Sign‑Up Experience with Account Access Capability",
-    "summary": "AWS introduces a new Sign‑Up experience that integrates an Account Access capability. The post explains how the sandboxed environment works and why organizations must upgrade their security posture beyond the sandbox to protect against potential misconfigurations and unauthorized access and mitigate risks.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Wiz Research",
-    "publishedAt": "2026-09-17T14:25:30.000Z",
-    "url": "https://www.wiz.io/blog/exploring-the-new-aws-sign-up-experience"
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/09/20/week-in-review-cisco-patches-exploited-email-gateway-0-day-revolut-breach/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/20/week-in-review-cisco-patches-exploited-email-gateway-0-day-revolut-breach/",
-    "title": "Revolut Data Breach via Impersonated Government Agency",
-    "headline": "Revolut Data Breach via Impersonated Government Agency",
-    "summary": "A fraudster posing as a government agency used an official domain email to obtain sensitive customer records from Revolut. The bank confirmed the breach on September 12. No public mitigation steps are listed, but users should monitor accounts and change passwords.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "publishedAt": "2026-09-20T08:00:21.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/09/20/week-in-review-cisco-patches-exploited-email-gateway-0-day-revolut-breach/"
   }
 ]
