@@ -1,5 +1,65 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/09/22/davmail-7-0-0-microsoft-graph/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/22/davmail-7-0-0-microsoft-graph/",
+    "title": "DavMail 7.0.0 Updates to Use Microsoft Graph",
+    "headline": "DavMail 7.0.0 Updates to Use Microsoft Graph",
+    "summary": "DavMail 7.0.0 shifts most of its functionality to Microsoft Graph, removing the davmail.caldavImpersonate option and enabling a new sync method by default. The Java gateway now translates IMAP, SMTP, CalDAV, CardDAV, and LDAP requests into Exchange and Office 365 compatible calls, simplifying mail, calendar, and contact access for users leaving Outlook.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-09-22T03:48:17.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/09/22/davmail-7-0-0-microsoft-graph/"
+  },
+  {
+    "id": "https://www.sophos.com/en-us/blog/sonicwall-83548-83549",
+    "sourceUrl": "https://www.sophos.com/en-us/blog/sonicwall-83548-83549",
+    "title": "SonicWall Vulnerability Advisory for Models 83548 and 83549",
+    "headline": "SonicWall Vulnerability Advisory for Models 83548 and 83549",
+    "summary": "SonicWall has issued an advisory for models 83548 and 83549, indicating a security flaw that could allow attackers to exploit the devices. The vulnerability may enable unauthorized access or manipulation of network traffic. Users should apply the latest firmware updates and monitor for any unusual activity.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Sophos Threat Research",
+    "publishedAt": "2026-09-02T00:00:00.000Z",
+    "url": "https://www.sophos.com/en-us/blog/sonicwall-83548-83549"
+  },
+  {
+    "id": "https://www.wiz.io/blog/introducing-cva",
+    "sourceUrl": "https://www.wiz.io/blog/introducing-cva",
+    "title": "Wiz CVA Enables Real‑Time Detection of Newly Published Vulnerabilities",
+    "headline": "Wiz CVA Enables Real‑Time Detection of Newly Published Vulnerabilities",
+    "summary": "Wiz Research introduced a continuous vulnerability assessment tool that uses Wiz CVA to detect exposure immediately when a new vulnerability is disclosed. The system scans for newly published flaws, alerts security teams, and helps prioritize remediation efforts. It enhances real‑time defense capabilities against emerging threats.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Wiz Research",
+    "publishedAt": "2026-09-01T10:54:43.000Z",
+    "url": "https://www.wiz.io/blog/introducing-cva"
+  },
+  {
+    "id": "https://research.checkpoint.com/2026/breaking-the-seal-static-deobfuscation-of-jsceals-compiled-v8-bytecode/",
+    "sourceUrl": "https://research.checkpoint.com/2026/breaking-the-seal-static-deobfuscation-of-jsceals-compiled-v8-bytecode/",
+    "title": "Check Point Research Deobfuscates JSCeal V8 Bytecode",
+    "headline": "Check Point Research Deobfuscates JSCeal V8 Bytecode",
+    "summary": "Check Point Research has reverse‑engineered JSCeal, a cryptocurrency‑stealing malware compiled into V8 bytecode (.jsc) and executed via a bundled Node.js runtime. The analysis reveals the tool’s structure and execution flow, aiding defenders in detecting and mitigating its activity in crypto applications.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Check Point Research",
+    "publishedAt": "2026-08-31T13:38:28.000Z",
+    "url": "https://research.checkpoint.com/2026/breaking-the-seal-static-deobfuscation-of-jsceals-compiled-v8-bytecode/"
+  },
+  {
+    "id": "https://research.checkpoint.com/2026/31th-august-threat-intelligence-report/",
+    "sourceUrl": "https://research.checkpoint.com/2026/31th-august-threat-intelligence-report/",
+    "title": "Manchester Airports Group Exposes 8.7 Million Customer Records",
+    "headline": "Manchester Airports Group Exposes 8.7 Million Customer Records",
+    "summary": "Manchester Airports Group disclosed a cyberattack that exposed personal data of approximately 8.7 million customers, including contact details and travel information. The breach highlights the vulnerability of aviation industry data and underscores the need for stronger security controls and incident response plans.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Check Point Research",
+    "publishedAt": "2026-08-31T12:58:42.000Z",
+    "url": "https://research.checkpoint.com/2026/31th-august-threat-intelligence-report/"
+  },
+  {
     "id": "https://research.checkpoint.com/2026/21st-september-threat-intelligence-report/",
     "sourceUrl": "https://research.checkpoint.com/2026/21st-september-threat-intelligence-report/",
     "title": "Japan Digital Agency Data Breach Exposes 246,000 Records",
@@ -1138,65 +1198,5 @@
     "source": "Wiz Research",
     "publishedAt": "2026-09-17T14:04:47.000Z",
     "url": "https://www.wiz.io/blog/building-an-ai-detection-engine-for-agent-intent"
-  },
-  {
-    "id": "https://blog.cloudflare.com/client-side-security-finds-4-malicious-campaigns/",
-    "sourceUrl": "https://blog.cloudflare.com/client-side-security-finds-4-malicious-campaigns/",
-    "title": "Cloudflare’s Client‑Side Security Detects Evasive JavaScript Attacks on Storefronts",
-    "headline": "Cloudflare’s Client‑Side Security Detects Evasive JavaScript Attacks on Storefronts",
-    "summary": "Cloudflare’s machine‑learning models identify malicious JavaScript that siphons revenue, hijacks clicks, or rewrites analytics on modern storefronts. The platform surfaces these evasive client‑side attacks for analyst investigation, helping protect e‑commerce sites from hidden revenue‑stealing scripts.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "publishedAt": "2026-09-16T20:06:17.000Z",
-    "url": "https://blog.cloudflare.com/client-side-security-finds-4-malicious-campaigns/"
-  },
-  {
-    "id": "https://www.thezdi.com/blog/2026/9/16/the-apple-security-update-review-for-september-2026",
-    "sourceUrl": "https://www.thezdi.com/blog/2026/9/16/the-apple-security-update-review-for-september-2026",
-    "title": "Apple Releases 273 CVE Patches, Including CVE‑2026‑65400 for Screen Sharing Server",
-    "headline": "Apple Releases 273 CVE Patches, Including CVE‑2026‑65400 for Screen Sharing Server",
-    "summary": "Apple’s September 2026 security update patches 273 CVEs across macOS, iOS, visionOS, and other products. Notably, CVE‑2026‑65400 addresses a critical flaw in the Screen Sharing Server that is actively exploited. The update mitigates the vulnerability by applying the necessary patches across affected Apple platforms.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Zero Day Initiative",
-    "publishedAt": "2026-09-16T19:58:14.000Z",
-    "url": "https://www.thezdi.com/blog/2026/9/16/the-apple-security-update-review-for-september-2026"
-  },
-  {
-    "id": "https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight/",
-    "sourceUrl": "https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight/",
-    "title": "Radaris Data Broker Loses Domains in Privacy Lawsuit",
-    "headline": "Radaris Data Broker Loses Domains in Privacy Lawsuit",
-    "summary": "A New Jersey court ordered Radaris.com and over a dozen other data broker domains to be transferred to plaintiffs after a lawsuit alleging the broker violated state privacy law by publishing personal information of law‑enforcement officials. The ruling highlights enforcement of privacy regulations against data brokers.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Krebs on Security",
-    "publishedAt": "2026-09-16T18:14:22.000Z",
-    "url": "https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight/"
-  },
-  {
-    "id": "https://unit42.paloaltonetworks.com/atomic-macos-amos-stealer-activity/",
-    "sourceUrl": "https://unit42.paloaltonetworks.com/atomic-macos-amos-stealer-activity/",
-    "title": "Atomic macOS Stealer Targets Credentials",
-    "headline": "Atomic macOS Stealer Targets Credentials",
-    "summary": "Atomic macOS (AMOS) is a modern macOS malware that uses deceptive setup guides to steal user credentials and sensitive data. Security teams can detect and block AMOS by monitoring for suspicious installation prompts and credential exfiltration patterns.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "Unit 42",
-    "publishedAt": "2026-09-16T10:00:06.000Z",
-    "url": "https://unit42.paloaltonetworks.com/atomic-macos-amos-stealer-activity/"
-  },
-  {
-    "id": "https://www.sophos.com/en-us/blog/september-2026-patch-tuesday",
-    "sourceUrl": "https://www.sophos.com/en-us/blog/september-2026-patch-tuesday",
-    "title": "September Patch Tuesday haul includes 973 CVEs",
-    "headline": "September Patch Tuesday haul includes 973 CVEs",
-    "summary": "The September Patch Tuesday release contains 973 identified CVEs, with Windows receiving 718 fixes. The update addresses a broad range of vulnerabilities across Microsoft products, improving security posture. Users should apply the patches promptly to mitigate potential exploitation of these weaknesses.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Sophos Threat Research",
-    "publishedAt": "2026-09-16T00:00:00.000Z",
-    "url": "https://www.sophos.com/en-us/blog/september-2026-patch-tuesday"
   }
 ]
