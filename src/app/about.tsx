@@ -26,12 +26,18 @@ export default function AboutScreen() {
       edges={['top', 'bottom']}
     >
       <View style={styles.header}>
-        <Ionicons
-          name="arrow-back"
-          size={24}
-          color={colors.textPrimary}
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel="Go back"
+          hitSlop={12}
           onPress={() => router.back()}
-        />
+        >
+          <Ionicons
+            name="arrow-back"
+            size={24}
+            color={colors.textPrimary}
+          />
+        </Pressable>
 
         <Text style={styles.headerTitle}>
           About SecuBuzz

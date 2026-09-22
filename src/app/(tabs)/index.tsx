@@ -269,6 +269,32 @@ export default function FeedScreen() {
   ]);
 
   /*
+   * Smoothly scroll back to the very first top story.
+   */
+  const scrollToTop = useCallback(() => {
+    listRef.current?.scrollToOffset({
+      offset: 0,
+      animated: true,
+    });
+    setCurrentIndex(0);
+  }, []);
+
+  /*
+   * Animated 'Back to Top' floating button.
+   * Smoothly fades/scales in when user scrolls past the top story (currentIndex > 0).
+   */
+  const backToTopAnim = useRef(new Animated.Value(0)).current;
+
+  useEffect(() => {
+    Animated.spring(backToTopAnim, {
+      toValue: currentIndex > 0 ? 1 : 0,
+      useNativeDriver: true,
+      friction: 8,
+      tension: 50,
+    }).start();
+  }, [currentIndex, backToTopAnim]);
+
+  /*
    * Animated 'Feed is up to date' toast banner.
    */
   const bannerOpacity = useRef(new Animated.Value(0)).current;
@@ -421,7 +447,13 @@ export default function FeedScreen() {
     >
       {/* HEADER */}
       <View style={styles.header}>
-        <View style={styles.headerLeft}>
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel="Scroll to top story"
+          hitSlop={8}
+          onPress={scrollToTop}
+          style={styles.headerLeft}
+        >
           <View style={styles.titleRow}>
             <Text style={styles.title}>
               Secu
@@ -438,7 +470,7 @@ export default function FeedScreen() {
           <Text style={styles.subtitle}>
             60-WORD SECURITY BRIEFS
           </Text>
-        </View>
+        </Pressable>
 
         <View style={styles.headerActions}>
           <Pressable
@@ -674,6 +706,51 @@ export default function FeedScreen() {
             }
           />
         ) : null}
+
+        {/* FLOATING BACK TO TOP BUTTON */}
+        <Animated.View
+          style={[
+            styles.backToTopContainer,
+            {
+              opacity: backToTopAnim,
+              transform: [
+                {
+                  scale: backToTopAnim.interpolate({
+                    inputRange: [0, 1],
+                    outputRange: [0.8, 1],
+                  }),
+                },
+                {
+                  translateY: backToTopAnim.interpolate({
+                    inputRange: [0, 1],
+                    outputRange: [16, 0],
+                  }),
+                },
+              ],
+            },
+          ]}
+          pointerEvents={currentIndex > 0 ? 'auto' : 'none'}
+        >
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="Back to top story"
+            hitSlop={8}
+            onPress={scrollToTop}
+            style={({ pressed }) => [
+              styles.backToTopButton,
+              pressed && styles.backToTopButtonPressed,
+            ]}
+          >
+            <Ionicons
+              name="arrow-up"
+              size={14}
+              color={BLUE}
+            />
+            <Text style={styles.backToTopText}>
+              TOP
+            </Text>
+          </Pressable>
+        </Animated.View>
       </View>
 
       {/* REFRESH INDICATOR */}
@@ -919,5 +996,42 @@ const styles = StyleSheet.create({
     fontFamily: 'Exo_600SemiBold',
     fontSize: 13,
     letterSpacing: 0.3,
+  },
+
+  backToTopContainer: {
+    position: 'absolute',
+    bottom: 54,
+    alignSelf: 'center',
+    zIndex: 20,
+    elevation: 8,
+  },
+
+  backToTopButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+    backgroundColor: '#0B0F14E6',
+    borderWidth: 1.2,
+    borderColor: '#4CC9F099',
+    paddingVertical: 7,
+    paddingHorizontal: 16,
+    borderRadius: 20,
+    shadowColor: '#4CC9F0',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.45,
+    shadowRadius: 8,
+    elevation: 6,
+  },
+
+  backToTopButtonPressed: {
+    opacity: 0.8,
+    transform: [{ scale: 0.96 }],
+  },
+
+  backToTopText: {
+    color: BLUE,
+    fontFamily: 'Exo_700Bold',
+    fontSize: 12,
+    letterSpacing: 1.2,
   },
 });

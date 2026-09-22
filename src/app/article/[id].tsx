@@ -21,6 +21,7 @@ import type { Article } from '../../models/article';
 import { colors, spacing } from '../../theme/theme';
 import { formatPublishedAt } from '../../utils/formatPublishedAt';
 import { openArticle } from '../../utils/openArticle';
+import { shareArticle } from '../../utils/shareArticle';
 
 const BLUE = '#4CC9F0';
 
@@ -182,33 +183,51 @@ export default function ArticleDetailScreen() {
           SecuBuzz
         </Text>
 
-        <Pressable
-          accessibilityRole="button"
-          accessibilityLabel={
-            saved
-              ? 'Remove bookmark'
-              : 'Save article'
-          }
-          hitSlop={10}
-          onPress={() =>
-            toggleSaved(article.id)
-          }
-          style={styles.headerButton}
-        >
-          <Ionicons
-            name={
+        <View style={styles.headerRight}>
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="Share article"
+            hitSlop={10}
+            onPress={() => {
+              void shareArticle(article);
+            }}
+            style={styles.headerButton}
+          >
+            <Ionicons
+              name="share-social-outline"
+              size={22}
+              color={colors.textPrimary}
+            />
+          </Pressable>
+
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel={
               saved
-                ? 'bookmark'
-                : 'bookmark-outline'
+                ? 'Remove bookmark'
+                : 'Save article'
             }
-            size={24}
-            color={
-              saved
-                ? BLUE
-                : colors.textPrimary
+            hitSlop={10}
+            onPress={() =>
+              toggleSaved(article.id)
             }
-          />
-        </Pressable>
+            style={styles.headerButton}
+          >
+            <Ionicons
+              name={
+                saved
+                  ? 'bookmark'
+                  : 'bookmark-outline'
+              }
+              size={24}
+              color={
+                saved
+                  ? BLUE
+                  : colors.textPrimary
+              }
+            />
+          </Pressable>
+        </View>
       </View>
 
       <ScrollView
@@ -308,6 +327,12 @@ const styles = StyleSheet.create({
     paddingVertical: spacing.md,
     borderBottomWidth: 1,
     borderBottomColor: colors.border,
+  },
+
+  headerRight: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
   },
 
   headerButton: {

@@ -11,6 +11,7 @@ import type { Article } from '../models/article';
 import { colors, spacing } from '../theme/theme';
 import { formatPublishedAt } from '../utils/formatPublishedAt';
 import { openArticle } from '../utils/openArticle';
+import { shareArticle } from '../utils/shareArticle';
 
 const BLUE = '#4CC9F0';
 
@@ -58,39 +59,57 @@ export function ArticleCard({
 
   return (
     <View style={styles.card}>
-      {/* CATEGORY + BOOKMARK */}
+      {/* CATEGORY + ACTIONS */}
       <View style={styles.metaTopRow}>
         <Text style={styles.category}>
           {formatCategory(article.category)}
         </Text>
 
-        <Pressable
-          accessibilityRole="button"
-          accessibilityLabel={
-            isSaved
-              ? 'Remove bookmark'
-              : 'Save article'
-          }
-          hitSlop={12}
-          onPress={() =>
-            onToggleSaved(article.id)
-          }
-          style={styles.bookmarkButton}
-        >
-          <Ionicons
-            name={
+        <View style={styles.actionsRow}>
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="Share article"
+            hitSlop={12}
+            onPress={() => {
+              void shareArticle(article);
+            }}
+            style={styles.actionButton}
+          >
+            <Ionicons
+              name="share-social-outline"
+              size={22}
+              color={colors.textSecondary}
+            />
+          </Pressable>
+
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel={
               isSaved
-                ? 'bookmark'
-                : 'bookmark-outline'
+                ? 'Remove bookmark'
+                : 'Save article'
             }
-            size={24}
-            color={
-              isSaved
-                ? BLUE
-                : colors.textSecondary
+            hitSlop={12}
+            onPress={() =>
+              onToggleSaved(article.id)
             }
-          />
-        </Pressable>
+            style={styles.actionButton}
+          >
+            <Ionicons
+              name={
+                isSaved
+                  ? 'bookmark'
+                  : 'bookmark-outline'
+              }
+              size={24}
+              color={
+                isSaved
+                  ? BLUE
+                  : colors.textSecondary
+              }
+            />
+          </Pressable>
+        </View>
       </View>
 
       {/* DATE + SOURCE */}
@@ -169,7 +188,13 @@ const styles = StyleSheet.create({
     letterSpacing: 1.7,
   },
 
-  bookmarkButton: {
+  actionsRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+  },
+
+  actionButton: {
     padding: 4,
   },
 

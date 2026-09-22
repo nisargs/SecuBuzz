@@ -1,6 +1,7 @@
 import { Ionicons } from '@expo/vector-icons';
 import { router } from 'expo-router';
 import {
+  Pressable,
   ScrollView,
   StyleSheet,
   Text,
@@ -19,12 +20,18 @@ export default function DataPrivacyScreen() {
       edges={['top', 'bottom']}
     >
       <View style={styles.header}>
-        <Ionicons
-          name="arrow-back"
-          size={24}
-          color={colors.textPrimary}
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel="Go back"
+          hitSlop={12}
           onPress={() => router.back()}
-        />
+        >
+          <Ionicons
+            name="arrow-back"
+            size={24}
+            color={colors.textPrimary}
+          />
+        </Pressable>
 
         <Text style={styles.headerTitle}>
           Data & Privacy

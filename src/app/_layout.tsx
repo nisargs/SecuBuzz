@@ -2,6 +2,7 @@ import type * as NotificationsType from 'expo-notifications';
 import { useFonts } from 'expo-font';
 import { Stack, useRouter } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
+import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
 
 import { getArticleRepository } from '../data/getArticleRepository';
@@ -112,6 +113,7 @@ export default function RootLayout() {
 
   return (
     <SavedArticlesProvider>
+      <StatusBar style="light" />
       <Stack
         screenOptions={{
           headerShown: false,
