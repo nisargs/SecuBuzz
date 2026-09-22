@@ -90,7 +90,7 @@ export default function SavedScreen() {
 
   function openArticle(article: Article) {
     router.push({
-      pathname: '/article/[id]',
+      pathname: '/article/[...id]',
       params: {
         id: article.id,
       },

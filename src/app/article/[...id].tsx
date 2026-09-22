@@ -39,13 +39,36 @@ function formatCategory(
   return category;
 }
 
+function normalizeUrlForMatch(url?: string | null): string {
+  if (!url) return '';
+  return url
+    .trim()
+    .replace(/^https?:\/\//i, '')
+    .replace(/\/+$/, '')
+    .toLowerCase();
+}
+
 export default function ArticleDetailScreen() {
   const router = useRouter();
 
-  const { id } =
-    useLocalSearchParams<{
-      id: string;
-    }>();
+  const params = useLocalSearchParams<{
+    id?: string | string[];
+    url?: string;
+  }>();
+
+  // Reconstruct full URL if Expo Router broke it into catch-all path segments
+  const rawId = Array.isArray(params.id)
+    ? params.id.join('/')
+    : (params.id || params.url || '');
+
+  let decodedId = rawId;
+  try {
+    decodedId = decodeURIComponent(rawId);
+  } catch {
+    // Keep rawId if malformed percent encoding
+  }
+
+  const normalizedTarget = normalizeUrlForMatch(decodedId);
 
   const { state, load } = useArticles();
 
@@ -65,18 +88,26 @@ export default function ArticleDetailScreen() {
   const liveArticle =
     state.status === 'ready'
       ? state.articles.find(
-          (article) => article.id === id,
+          (article) =>
+            article.id === decodedId ||
+            article.sourceUrl === decodedId ||
+            (normalizedTarget.length > 0 &&
+              (normalizeUrlForMatch(article.id) === normalizedTarget ||
+                normalizeUrlForMatch(article.sourceUrl) === normalizedTarget)),
         )
       : undefined;
 
   /*
-   * IMPORTANT:
-   *
    * If the article has disappeared from feed.json,
    * use the permanent saved snapshot instead.
    */
   const savedArticle = savedArticles.find(
-    (article) => article.id === id,
+    (article) =>
+      article.id === decodedId ||
+      article.sourceUrl === decodedId ||
+      (normalizedTarget.length > 0 &&
+        (normalizeUrlForMatch(article.id) === normalizedTarget ||
+          normalizeUrlForMatch(article.sourceUrl) === normalizedTarget)),
   );
 
   const article = liveArticle ?? savedArticle;
@@ -139,6 +170,9 @@ export default function ArticleDetailScreen() {
           </Text>
 
           <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="Go back to feed"
+            hitSlop={12}
             onPress={() => router.back()}
             style={styles.backButton}
           >
@@ -168,7 +202,7 @@ export default function ArticleDetailScreen() {
         <Pressable
           accessibilityRole="button"
           accessibilityLabel="Go back"
-          hitSlop={10}
+          hitSlop={12}
           onPress={() => router.back()}
           style={styles.headerButton}
         >
@@ -187,14 +221,14 @@ export default function ArticleDetailScreen() {
           <Pressable
             accessibilityRole="button"
             accessibilityLabel="Share article"
-            hitSlop={10}
+            hitSlop={12}
             onPress={() => {
               void shareArticle(article);
             }}
             style={styles.headerButton}
           >
             <Ionicons
-              name="share-social-outline"
+              name="arrow-redo-outline"
               size={22}
               color={colors.textPrimary}
             />
@@ -207,7 +241,7 @@ export default function ArticleDetailScreen() {
                 ? 'Remove bookmark'
                 : 'Save article'
             }
-            hitSlop={10}
+            hitSlop={12}
             onPress={() =>
               toggleSaved(article.id)
             }
@@ -336,8 +370,8 @@ const styles = StyleSheet.create({
   },
 
   headerButton: {
-    width: 36,
-    height: 36,
+    width: 44,
+    height: 44,
     alignItems: 'center',
     justifyContent: 'center',
   },

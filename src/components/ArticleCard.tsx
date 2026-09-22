@@ -76,7 +76,7 @@ export function ArticleCard({
             style={styles.actionButton}
           >
             <Ionicons
-              name="share-social-outline"
+              name="arrow-redo-outline"
               size={22}
               color={colors.textSecondary}
             />

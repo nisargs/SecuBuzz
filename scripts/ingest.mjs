@@ -1824,17 +1824,29 @@ async function sendPushNotificationsForNewArticles(newArticles) {
   const existingNotified = await readJsonFile(NOTIFIED_ARTICLES_FILE, []);
   const notifiedSet = new Set(Array.isArray(existingNotified) ? existingNotified : []);
 
-  const articlesToNotify = newArticles.filter(
+  const unnotifiedArticles = newArticles.filter(
     (article) => !notifiedSet.has(normaliseUrl(article.sourceUrl)),
   );
 
-  if (articlesToNotify.length === 0) {
+  if (unnotifiedArticles.length === 0) {
     console.log("No unnotified new articles to broadcast.");
     return;
   }
 
+  // Prioritize by severity (CRITICAL > HIGH > MEDIUM > LOW) then freshness
+  const severityWeight = { CRITICAL: 4, HIGH: 3, MEDIUM: 2, LOW: 1 };
+  unnotifiedArticles.sort((a, b) => {
+    const sDiff = (severityWeight[b.severity] || 0) - (severityWeight[a.severity] || 0);
+    if (sDiff !== 0) return sDiff;
+    return new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime();
+  });
+
+  // Limit to at most 4 notifications per 4-hour cycle
+  const MAX_NOTIFICATIONS_PER_CYCLE = 4;
+  const articlesToNotify = unnotifiedArticles.slice(0, MAX_NOTIFICATIONS_PER_CYCLE);
+
   console.log(
-    `\nPreparing push notifications for ${articlesToNotify.length} new articles...`,
+    `\nPreparing push notifications for ${articlesToNotify.length} articles (capped from ${unnotifiedArticles.length} candidates)...`,
   );
 
   let tokens = [];
@@ -1867,7 +1879,7 @@ async function sendPushNotificationsForNewArticles(newArticles) {
     console.log(
       "No registered push tokens found. Updating notification history.",
     );
-    for (const article of articlesToNotify) {
+    for (const article of unnotifiedArticles) {
       notifiedSet.add(normaliseUrl(article.sourceUrl));
     }
     await writeJsonFile(NOTIFIED_ARTICLES_FILE, Array.from(notifiedSet));
@@ -1961,8 +1973,18 @@ async function sendPushNotificationsForNewArticles(newArticles) {
     } catch {
       // Ignore
     }
+
+    // Space out notifications to avoid a simultaneous notification barrage
+    if (articlesToNotify.indexOf(article) < articlesToNotify.length - 1) {
+      console.log("Spacing notifications (waiting 15s)...");
+      await sleep(15000);
+    }
   }
 
+  // Mark all unnotified articles in this batch as notified
+  for (const article of unnotifiedArticles) {
+    notifiedSet.add(normaliseUrl(article.sourceUrl));
+  }
   await writeJsonFile(NOTIFIED_ARTICLES_FILE, Array.from(notifiedSet));
 
   if (invalidTokens.size > 0) {

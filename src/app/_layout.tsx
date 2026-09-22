@@ -31,8 +31,9 @@ export default function RootLayout() {
   }, [loaded, error]);
 
   // Notification response observer for cold-start and background taps
+  // MUST wait until loaded is true so the root Stack navigator is fully mounted
   useEffect(() => {
-    if (isExpoGo) {
+    if (!loaded || isExpoGo) {
       return;
     }
 
@@ -53,10 +54,17 @@ export default function RootLayout() {
     ) {
       try {
         const data = response?.notification?.request?.content?.data;
-        if (data?.type === 'article' && typeof data.articleId === 'string') {
+        const articleId =
+          typeof data?.articleId === 'string'
+            ? data.articleId
+            : typeof data?.articleUrl === 'string'
+              ? data.articleUrl
+              : null;
+
+        if (articleId) {
           router.push({
-            pathname: '/article/[id]',
-            params: { id: data.articleId },
+            pathname: '/article/[...id]',
+            params: { id: articleId, url: articleId },
           });
         }
       } catch (err) {
@@ -98,7 +106,7 @@ export default function RootLayout() {
       responseSubscription?.remove();
       receivedSubscription?.remove();
     };
-  }, [router]);
+  }, [loaded, router]);
 
   // Request notification permission once at first-use flow after app loads
   useEffect(() => {
@@ -123,7 +131,7 @@ export default function RootLayout() {
         }}
       >
         <Stack.Screen name="(tabs)" />
-        <Stack.Screen name="article/[id]" />
+        <Stack.Screen name="article/[...id]" />
 
         <Stack.Screen name="privacy" />
         <Stack.Screen name="terms" />

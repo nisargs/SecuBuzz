@@ -7,7 +7,16 @@ import type { Article } from '../models/article';
  */
 export async function shareArticle(article: Article): Promise<void> {
   try {
-    const message = `${article.headline}\n\n${article.summary}\n\nSource: ${article.sourceUrl}\nShared via SecuBuzz`;
+    const message = [
+      article.headline,
+      '',
+      article.summary,
+      '',
+      'Source:',
+      article.sourceUrl,
+      '',
+      'Shared via SecuBuzz',
+    ].join('\n');
 
     await Share.share(
       {

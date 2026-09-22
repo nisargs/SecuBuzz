@@ -257,6 +257,7 @@ export default function FeedScreen() {
    */
   useEffect(() => {
     setCurrentIndex(0);
+    setShowBackToTop(false);
     setLoadedCount(INITIAL_ARTICLES);
 
     listRef.current?.scrollToOffset({
@@ -271,7 +272,11 @@ export default function FeedScreen() {
   /*
    * Smoothly scroll back to the very first top story.
    */
+  const [showBackToTop, setShowBackToTop] = useState(false);
+  const lastScrollY = useRef(0);
+
   const scrollToTop = useCallback(() => {
+    setShowBackToTop(false);
     listRef.current?.scrollToOffset({
       offset: 0,
       animated: true,
@@ -281,18 +286,19 @@ export default function FeedScreen() {
 
   /*
    * Animated 'Back to Top' floating button.
-   * Smoothly fades/scales in when user scrolls past the top story (currentIndex > 0).
+   * Only visible when the user starts scrolling UP (returning towards the top).
+   * Automatically hidden when scrolling down through the feed or when at the top.
    */
   const backToTopAnim = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {
     Animated.spring(backToTopAnim, {
-      toValue: currentIndex > 0 ? 1 : 0,
+      toValue: showBackToTop ? 1 : 0,
       useNativeDriver: true,
       friction: 8,
       tension: 50,
     }).start();
-  }, [currentIndex, backToTopAnim]);
+  }, [showBackToTop, backToTopAnim]);
 
   /*
    * Animated 'Feed is up to date' toast banner.
@@ -371,6 +377,31 @@ export default function FeedScreen() {
   }, [articles, load, triggerUpToDateBanner]);
 
   /*
+   * Directional scroll listener:
+   * Only show 'Back to Top' when scrolling UP (returning towards the top).
+   * Hide immediately when scrolling DOWN (advancing through the feed) or at the top.
+   */
+  const handleScroll = useCallback(
+    (event: NativeSyntheticEvent<NativeScrollEvent>) => {
+      const currentY = event.nativeEvent.contentOffset.y;
+      const diff = currentY - lastScrollY.current;
+
+      if (currentY <= 20) {
+        setShowBackToTop(false);
+      } else if (diff < -15) {
+        // Scrolling UP towards the top
+        setShowBackToTop(true);
+      } else if (diff > 15) {
+        // Scrolling DOWN towards newer stories
+        setShowBackToTop(false);
+      }
+
+      lastScrollY.current = currentY;
+    },
+    [],
+  );
+
+  /*
    * Article swipe finished.
    */
   const handleScrollEnd = useCallback(
@@ -389,6 +420,10 @@ export default function FeedScreen() {
       );
 
       setCurrentIndex(index);
+
+      if (index === 0) {
+        setShowBackToTop(false);
+      }
 
       /*
        * Load another batch before reaching
@@ -682,6 +717,8 @@ export default function FeedScreen() {
             decelerationRate="fast"
             disableIntervalMomentum
             showsVerticalScrollIndicator={false}
+            onScroll={handleScroll}
+            scrollEventThrottle={16}
             onMomentumScrollEnd={
               handleScrollEnd
             }
@@ -729,7 +766,7 @@ export default function FeedScreen() {
               ],
             },
           ]}
-          pointerEvents={currentIndex > 0 ? 'auto' : 'none'}
+          pointerEvents={showBackToTop ? 'auto' : 'none'}
         >
           <Pressable
             accessibilityRole="button"
