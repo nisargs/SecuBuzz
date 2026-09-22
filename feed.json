@@ -1,5 +1,65 @@
 [
   {
+    "id": "https://www.sophos.com/en-us/blog/ungentlemanly-behavior-insights-into-a-ransomware-operation",
+    "sourceUrl": "https://www.sophos.com/en-us/blog/ungentlemanly-behavior-insights-into-a-ransomware-operation",
+    "title": "Gold Sherwood Affiliates Use Ransomware-as-a-Service Tactics",
+    "headline": "Gold Sherwood Affiliates Use Ransomware-as-a-Service Tactics",
+    "summary": "Analysis of 15 intrusions shows Gold Sherwood affiliates employing ransomware-as-a-service tradecraft. The operation uses the Gentlemen framework to deploy ransomware, targeting victims for extortion. The report details the affiliates’ methods and highlights the need for vigilance against such services.",
+    "category": "RANSOMWARE",
+    "severity": "HIGH",
+    "source": "Sophos Threat Research",
+    "publishedAt": "2026-09-01T00:00:00.000Z",
+    "url": "https://www.sophos.com/en-us/blog/ungentlemanly-behavior-insights-into-a-ransomware-operation"
+  },
+  {
+    "id": "https://unit42.paloaltonetworks.com/spring-ring-voice-phishing-campaigns/",
+    "sourceUrl": "https://unit42.paloaltonetworks.com/spring-ring-voice-phishing-campaigns/",
+    "title": "Spring Ring Campaign Uses Microsoft Teams Voice Phishing to Deploy Malware",
+    "headline": "Spring Ring Campaign Uses Microsoft Teams Voice Phishing to Deploy Malware",
+    "summary": "Spring Ring abuses Microsoft Teams voice phishing to target enterprise domain controllers, deploying malware. The campaign leverages Teams’ voice features to trick users into installing malicious payloads, compromising domain control and potentially enabling further lateral movement. Defensive measures include scrutinizing voice calls and tightening Teams access controls.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "Unit 42",
+    "publishedAt": "2026-08-31T10:00:36.000Z",
+    "url": "https://unit42.paloaltonetworks.com/spring-ring-voice-phishing-campaigns/"
+  },
+  {
+    "id": "https://www.wiz.io/blog/ai-infrastructure-honeypot",
+    "sourceUrl": "https://www.wiz.io/blog/ai-infrastructure-honeypot",
+    "title": "AI Infrastructure Targeted by RCE, Prompt Injection, and Credential Theft Campaigns",
+    "headline": "AI Infrastructure Targeted by RCE, Prompt Injection, and Credential Theft Campaigns",
+    "summary": "Wiz honeypots revealed active campaigns attacking AI infrastructure, focusing on LiteLLM, MCP servers, and other AI frameworks. Attackers leveraged remote code execution, blind prompt injection, and memory credential theft to compromise systems. The findings highlight the need for hardened input validation, secure coding practices, and memory protection to mitigate these threats.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Wiz Research",
+    "publishedAt": "2026-08-27T16:33:16.000Z",
+    "url": "https://www.wiz.io/blog/ai-infrastructure-honeypot"
+  },
+  {
+    "id": "https://krebsonsecurity.com/2026/08/two-alleged-teampcp-hackers-arrested-in-australia/",
+    "sourceUrl": "https://krebsonsecurity.com/2026/08/two-alleged-teampcp-hackers-arrested-in-australia/",
+    "title": "Australian Police Arrest Two Men Linked to TeamPCP Cybercrime Group",
+    "headline": "Australian Police Arrest Two Men Linked to TeamPCP Cybercrime Group",
+    "summary": "Australian Federal Police arrested two men linked to TeamPCP, a cybercrime group accused of orchestrating the longest-running software supply chain attacks. The suspects, aged 21 and 23, are believed to have created malicious open-source software to extort thousands of businesses worldwide. The arrest follows investigations into the group's supply‑chain sabotage.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "Krebs on Security",
+    "publishedAt": "2026-08-27T11:04:15.000Z",
+    "url": "https://krebsonsecurity.com/2026/08/two-alleged-teampcp-hackers-arrested-in-australia/"
+  },
+  {
+    "id": "https://thedfirreport.com/2026/08/24/bengalseo-part-1-anatomy-of-the-operation/",
+    "sourceUrl": "https://thedfirreport.com/2026/08/24/bengalseo-part-1-anatomy-of-the-operation/",
+    "title": "DFIR Report Details SEO Poisoning Campaign Deploying Malware",
+    "headline": "DFIR Report Details SEO Poisoning Campaign Deploying Malware",
+    "summary": "In March 2026, investigators uncovered an SEO poisoning campaign that deployed malware through manipulated search results. The operation, detailed in the DFIR Report, involved injecting malicious code into search engine listings to redirect users to compromised sites. The campaign demonstrates how search engine manipulation can serve as a vector for malware distribution.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "The DFIR Report",
+    "publishedAt": "2026-08-24T14:28:41.000Z",
+    "url": "https://thedfirreport.com/2026/08/24/bengalseo-part-1-anatomy-of-the-operation/"
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/09/22/davmail-7-0-0-microsoft-graph/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/09/22/davmail-7-0-0-microsoft-graph/",
     "title": "DavMail 7.0.0 Updates to Use Microsoft Graph",
@@ -1138,65 +1198,5 @@
     "source": "Sophos Threat Research",
     "publishedAt": "2026-09-15T00:00:00.000Z",
     "url": "https://www.sophos.com/en-us/blog/cisco-secure-email-gateway-vulnerability-cve-2026-76461-in-active-exploitation"
-  },
-  {
-    "id": "https://research.checkpoint.com/2026/14th-september-threat-intelligence-report/",
-    "sourceUrl": "https://research.checkpoint.com/2026/14th-september-threat-intelligence-report/",
-    "title": "IDScan.net Data Breach Exposes Names and Government IDs",
-    "headline": "IDScan.net Data Breach Exposes Names and Government IDs",
-    "summary": "IDScan.net, a US identity verification provider, disclosed a data breach after detecting unauthorized access on September 1. Exposed data included names and government identification numbers. A criminal marketplace advertised stolen data. The breach highlights the need for stronger access controls and monitoring.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Check Point Research",
-    "publishedAt": "2026-09-14T12:22:06.000Z",
-    "url": "https://research.checkpoint.com/2026/14th-september-threat-intelligence-report/"
-  },
-  {
-    "id": "https://unit42.paloaltonetworks.com/behavioral-clustering-map-to-cloud-identities/",
-    "sourceUrl": "https://unit42.paloaltonetworks.com/behavioral-clustering-map-to-cloud-identities/",
-    "title": "Unit 42 Unveils Behavioral Clustering Model for Cloud Identity Threat Detection",
-    "headline": "Unit 42 Unveils Behavioral Clustering Model for Cloud Identity Threat Detection",
-    "summary": "Unit 42 introduced a behavioral clustering model that maps cloud identity roles from audit logs, enabling continuous threat detection via standard SQL queries. The approach allows security teams to identify anomalous role activity and detect potential misuse without custom tooling. It improves visibility into cloud identity usage and supports proactive monitoring.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Unit 42",
-    "publishedAt": "2026-09-14T10:00:01.000Z",
-    "url": "https://unit42.paloaltonetworks.com/behavioral-clustering-map-to-cloud-identities/"
-  },
-  {
-    "id": "https://blog.cloudflare.com/casb-policies/",
-    "sourceUrl": "https://blog.cloudflare.com/casb-policies/",
-    "title": "Cloudflare CASB Adds Automatic Remediation Policies for SaaS Risks",
-    "headline": "Cloudflare CASB Adds Automatic Remediation Policies for SaaS Risks",
-    "summary": "Cloudflare CASB now offers automatic remediation policies built on its developer platform. The native automation engine lets security teams create event‑driven logic to revoke risky file shares and trigger webhooks, eliminating manual intervention. This feature enhances SaaS risk management by automating response actions for identified threats.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "publishedAt": "2026-09-11T13:00:00.000Z",
-    "url": "https://blog.cloudflare.com/casb-policies/"
-  },
-  {
-    "id": "https://isc.sans.edu/diary/rss/33348",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33348",
-    "title": "LausivLoader Malware Analysis Reveals Data Transfer Between Stages",
-    "headline": "LausivLoader Malware Analysis Reveals Data Transfer Between Stages",
-    "summary": "A malspam email with a malicious attachment was quarantined by a customer’s mail gateway. The attachment, linked to LausivLoader, demonstrates how the malware passes data between its stages. The email failed SPF and DMARC checks, limiting its spread. No public fix is available yet.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "SANS Internet Storm Center",
-    "publishedAt": "2026-09-17T15:06:44.000Z",
-    "url": "https://isc.sans.edu/diary/rss/33348"
-  },
-  {
-    "id": "https://www.wiz.io/blog/building-an-ai-detection-engine-for-agent-intent",
-    "sourceUrl": "https://www.wiz.io/blog/building-an-ai-detection-engine-for-agent-intent",
-    "title": "AI Detection Engine Analyzes Model Logs to Spot Malicious Agent Behavior",
-    "headline": "AI Detection Engine Analyzes Model Logs to Spot Malicious Agent Behavior",
-    "summary": "Wiz Research describes an AI-native detection pipeline that examines model input and output logs to identify malicious AI agent intent. The system analyzes behavior patterns to uncover hidden threats, improving defensive capabilities against AI-driven attacks.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Wiz Research",
-    "publishedAt": "2026-09-17T14:04:47.000Z",
-    "url": "https://www.wiz.io/blog/building-an-ai-detection-engine-for-agent-intent"
   }
 ]
