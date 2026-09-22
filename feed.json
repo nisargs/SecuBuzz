@@ -1,5 +1,77 @@
 [
   {
+    "id": "https://thehackernews.com/2026/09/one-hidden-meta-muse-setting-could-let.html",
+    "sourceUrl": "https://thehackernews.com/2026/09/one-hidden-meta-muse-setting-could-let.html",
+    "title": "Meta Muse AI Assistant Can Be Hijacked via Hidden Setting",
+    "headline": "Meta Muse AI Assistant Can Be Hijacked via Hidden Setting",
+    "summary": "A proof‑of‑concept shows that malware on a Mac can change a hidden setting in Meta’s Muse AI assistant, redirecting microphone input to an attacker. The attacker receives spoken prompts instead of Meta, effectively turning the assistant into a covert backdoor. The flaw resides in the Muse app’s configuration handling.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-09-22T06:33:57.000Z",
+    "url": "https://thehackernews.com/2026/09/one-hidden-meta-muse-setting-could-let.html"
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/09/22/5g-subscriber-tracking-research/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/22/5g-subscriber-tracking-research/",
+    "title": "Low‑Cost Fake Base Station Exposes 5G Subscriber Tracking Vulnerability",
+    "headline": "Low‑Cost Fake Base Station Exposes 5G Subscriber Tracking Vulnerability",
+    "summary": "Researchers built a low‑cost fake base station, 5G‑Shark, that lures phones onto it and interrogates them. In standalone‑5G networks tested, operators correctly hid permanent identities but exposed predictable temporary IDs, allowing an observer to track subscribers. The tool demonstrates a vulnerability in 5G network identity management.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-09-22T06:30:21.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/09/22/5g-subscriber-tracking-research/"
+  },
+  {
+    "id": "https://thehackernews.com/2026/09/wordpress-comment2shell-flaw-can-turn.html",
+    "sourceUrl": "https://thehackernews.com/2026/09/wordpress-comment2shell-flaw-can-turn.html",
+    "title": "WordPress Comment2Shell Flaw Turns Anonymous XSS Into Server RCE",
+    "headline": "WordPress Comment2Shell Flaw Turns Anonymous XSS Into Server RCE",
+    "summary": "A flaw in WordPress core allows an anonymous visitor to plant a hidden script that, when an admin opens the page, can execute code on the server. The issue, tracked as CVE-2026-93485, was fixed in WordPress 7.1.1 released on September 17. Site owners are urged to update immediately.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-09-22T06:03:14.000Z",
+    "url": "https://thehackernews.com/2026/09/wordpress-comment2shell-flaw-can-turn.html"
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/09/22/passwork-nis2-compliance-guide/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/22/passwork-nis2-compliance-guide/",
+    "title": "Passwork NIS2 Guide Aims to Reduce Audit Hours",
+    "headline": "Passwork NIS2 Guide Aims to Reduce Audit Hours",
+    "summary": "The guide helps EU organizations prepare for NIS2 compliance audits by outlining steps to streamline documentation and address IAM skill gaps. It highlights that senior management can be personally liable for non‑compliance and urges teams to adopt efficient practices before the 2026 audit.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-09-22T05:00:49.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/09/22/passwork-nis2-compliance-guide/"
+  },
+  {
+    "id": "https://www.securityweek.com/us-proposes-ai-incident-alert-system-in-talks-with-china-bessent-says/",
+    "sourceUrl": "https://www.securityweek.com/us-proposes-ai-incident-alert-system-in-talks-with-china-bessent-says/",
+    "title": "US Proposes AI Incident Alert System in Talks With China",
+    "headline": "US Proposes AI Incident Alert System in Talks With China",
+    "summary": "The United States is proposing an AI incident alert system and is in discussions with China about its implementation. Trump has opposed slowing AI development, arguing it would allow China to catch up to U.S. companies. The proposal was highlighted by Bessent in a recent SecurityWeek report.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-09-22T02:01:24.000Z",
+    "url": "https://www.securityweek.com/us-proposes-ai-incident-alert-system-in-talks-with-china-bessent-says/"
+  },
+  {
+    "id": "https://research.checkpoint.com/2026/24th-august-threat-intelligence-report/",
+    "sourceUrl": "https://research.checkpoint.com/2026/24th-august-threat-intelligence-report/",
+    "title": "Latvia’s Road Traffic Safety Directorate Breach Exposes Payment Records of 1.2 Million",
+    "headline": "Latvia’s Road Traffic Safety Directorate Breach Exposes Payment Records of 1.2 Million",
+    "summary": "Latvia’s Road Traffic Safety Directorate confirmed a breach that exposed payment records of more than 1.2 million people, about two‑thirds of the country’s population, and impacted 200,000 organizations. The incident highlights the vulnerability of national transportation data systems to unauthorized access.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Check Point Research",
+    "publishedAt": "2026-08-24T14:07:53.000Z",
+    "url": "https://research.checkpoint.com/2026/24th-august-threat-intelligence-report/"
+  },
+  {
     "id": "https://www.sophos.com/en-us/blog/ungentlemanly-behavior-insights-into-a-ransomware-operation",
     "sourceUrl": "https://www.sophos.com/en-us/blog/ungentlemanly-behavior-insights-into-a-ransomware-operation",
     "title": "Gold Sherwood Affiliates Use Ransomware-as-a-Service Tactics",
@@ -1126,77 +1198,5 @@
     "source": "Check Point Research",
     "publishedAt": "2026-09-10T14:32:46.000Z",
     "url": "https://research.checkpoint.com/2026/puzzlemask-abusing-plain-prose-as-a-covert-ai-attack-vector/"
-  },
-  {
-    "id": "https://blog.cloudflare.com/post-quantum-dnssec-1111/",
-    "sourceUrl": "https://blog.cloudflare.com/post-quantum-dnssec-1111/",
-    "title": "Cloudflare 1.1.1.1 Adds Post-Quantum DNSSEC Support",
-    "headline": "Cloudflare 1.1.1.1 Adds Post-Quantum DNSSEC Support",
-    "summary": "1.1.1.1 now validates DNSSEC signatures using NIST’s post‑quantum ML‑DSA‑44 algorithm, supporting 2,420‑byte signatures and managing downgrade risks at scale. This enhancement improves resilience against quantum‑era attacks and ensures compatibility with existing DNSSEC infrastructure without compromising performance or requiring client updates.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "publishedAt": "2026-09-10T13:00:00.000Z",
-    "url": "https://blog.cloudflare.com/post-quantum-dnssec-1111/"
-  },
-  {
-    "id": "https://www.wiz.io/blog/wiz-govramp-high",
-    "sourceUrl": "https://www.wiz.io/blog/wiz-govramp-high",
-    "title": "Wiz Achieves GovRAMP High Authorization",
-    "headline": "Wiz Achieves GovRAMP High Authorization",
-    "summary": "Wiz has achieved GovRAMP High Authorization, enabling unified cloud security and accelerating secure modernization to protect citizen data and critical infrastructure. This certification demonstrates compliance with stringent federal security requirements and supports organizations in meeting regulatory obligations while maintaining robust threat detection and response capabilities across multiple cloud environments, ensuring continuous monitoring and rapid incident containment.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Wiz Research",
-    "publishedAt": "2026-09-10T11:00:00.000Z",
-    "url": "https://www.wiz.io/blog/wiz-govramp-high"
-  },
-  {
-    "id": "https://cybernewsai.com/blog/aws-agentcore-identity-memory-exposure",
-    "sourceUrl": "https://cybernewsai.com/blog/aws-agentcore-identity-memory-exposure",
-    "title": "AWS AgentCore Exposes Identity Vault Secrets in Memory",
-    "headline": "AWS AgentCore Exposes Identity Vault Secrets in Memory",
-    "summary": "Unit 42 discovered that AWS AgentCore Harness stores Identity Vault secrets in plaintext within container memory, allowing attackers to inject code and exfiltrate credentials quickly. The flaw permits direct access to sensitive secrets without additional authentication, posing a high risk to cloud workloads. Mitigation requires updating AgentCore to a patched version that encrypts secrets in memory.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-09-20T18:45:00.000Z",
-    "url": "https://cybernewsai.com/blog/aws-agentcore-identity-memory-exposure"
-  },
-  {
-    "id": "https://blog.cloudflare.com/workers-granular-authorization/",
-    "sourceUrl": "https://blog.cloudflare.com/workers-granular-authorization/",
-    "title": "Cloudflare Enhances Workers Access Control",
-    "headline": "Cloudflare Enhances Workers Access Control",
-    "summary": "Cloudflare now allows scoping access to individual Workers and assigning narrower Developer Platform roles. Teammates, CI tokens, and agents receive only the permissions needed to debug, deploy, or monitor, improving security by limiting over‑privileged access.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "publishedAt": "2026-09-15T13:00:00.000Z",
-    "url": "https://blog.cloudflare.com/workers-granular-authorization/"
-  },
-  {
-    "id": "https://www.wiz.io/blog/wiz-defend-and-google-security-operations",
-    "sourceUrl": "https://www.wiz.io/blog/wiz-defend-and-google-security-operations",
-    "title": "Wiz Defend and Google Security Operations Deepen Integration",
-    "headline": "Wiz Defend and Google Security Operations Deepen Integration",
-    "summary": "Wiz Defend and Google Security Operations are expanding their integration to streamline investigations across teams, regardless of location. The enhanced collaboration aims to accelerate response times and improve threat detection workflows, providing a unified platform for security operations and incident analysis.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Wiz Research",
-    "publishedAt": "2026-09-15T12:49:17.000Z",
-    "url": "https://www.wiz.io/blog/wiz-defend-and-google-security-operations"
-  },
-  {
-    "id": "https://www.sophos.com/en-us/blog/cisco-secure-email-gateway-vulnerability-cve-2026-76461-in-active-exploitation",
-    "sourceUrl": "https://www.sophos.com/en-us/blog/cisco-secure-email-gateway-vulnerability-cve-2026-76461-in-active-exploitation",
-    "title": "Cisco Secure Email Gateway Vulnerability CVE-2026-76461 in Active Exploitation",
-    "headline": "Cisco Secure Email Gateway Vulnerability CVE-2026-76461 in Active Exploitation",
-    "summary": "Cisco Secure Email Gateway is affected by CVE-2026-76461, a vulnerability currently being actively exploited. The flaw allows attackers to bypass email security controls, potentially delivering malicious payloads. Cisco has issued an advisory and recommends applying the latest security patch to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Sophos Threat Research",
-    "publishedAt": "2026-09-15T00:00:00.000Z",
-    "url": "https://www.sophos.com/en-us/blog/cisco-secure-email-gateway-vulnerability-cve-2026-76461-in-active-exploitation"
   }
 ]
