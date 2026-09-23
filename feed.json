@@ -1,5 +1,77 @@
 [
   {
+    "id": "https://cybernewsai.com/blog/sweden-fines-miljodata-183k-gdpr-breach-2m-citizens",
+    "sourceUrl": "https://cybernewsai.com/blog/sweden-fines-miljodata-183k-gdpr-breach-2m-citizens",
+    "title": "Sweden Fines Miljödata $183K for 2.2M Citizen Data Breach",
+    "headline": "Sweden Fines Miljödata $183K for 2.2M Citizen Data Breach",
+    "summary": "Sweden’s privacy watchdog IMY fined software vendor Miljödata $183,000 under GDPR Article 32 after an extortion breach exposed 2.2 million citizen records. The fine reflects the vendor’s failure to protect personal data and comply with GDPR security requirements.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-09-22T21:00:00.000Z",
+    "url": "https://cybernewsai.com/blog/sweden-fines-miljodata-183k-gdpr-breach-2m-citizens"
+  },
+  {
+    "id": "https://cybernewsai.com/blog/chinese-hackers-exploit-multitech-perimeter-flaws-govt-data",
+    "sourceUrl": "https://cybernewsai.com/blog/chinese-hackers-exploit-multitech-perimeter-flaws-govt-data",
+    "title": "Chinese Hackers Use WordPress and Zyxel Flaws to Steal Government Records",
+    "headline": "Chinese Hackers Use WordPress and Zyxel Flaws to Steal Government Records",
+    "summary": "Chinese threat actors breached 49 organizations in 29 countries by chaining WordPress and Zyxel vulnerabilities. They stole over 18,500 sensitive government records, demonstrating a coordinated state-sponsored attack that leveraged multiple software weaknesses.",
+    "category": "NATION_STATE",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-09-22T20:45:00.000Z",
+    "url": "https://cybernewsai.com/blog/chinese-hackers-exploit-multitech-perimeter-flaws-govt-data"
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/chinese-hackers-exploit-multiple-technologies-to-steal-govt-data/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/chinese-hackers-exploit-multiple-technologies-to-steal-govt-data/",
+    "title": "Chinese Hackers Exploit ZyXEL and WordPress Vulnerabilities to Steal Government Data",
+    "headline": "Chinese Hackers Exploit ZyXEL and WordPress Vulnerabilities to Steal Government Data",
+    "summary": "A Chinese-speaking threat actor has leveraged security flaws in ZyXEL GS1900 Smart Managed Switches and WordPress to exfiltrate sensitive data from 996 devices and over 18,500 backend database records. The attack targeted government networks, compromising confidential information.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-09-22T20:35:24.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/chinese-hackers-exploit-multiple-technologies-to-steal-govt-data/"
+  },
+  {
+    "id": "https://thehackernews.com/2026/09/new-cvss-100-velocloud-orchestrator.html",
+    "sourceUrl": "https://thehackernews.com/2026/09/new-cvss-100-velocloud-orchestrator.html",
+    "title": "VeloCloud Orchestrator CVE-2026-93952 Exploited in Certificate-Based Setups",
+    "headline": "VeloCloud Orchestrator CVE-2026-93952 Exploited in Certificate-Based Setups",
+    "summary": "Arista reports attackers exploiting CVE-2026-93952 in on‑premises VeloCloud Orchestrator (VCO). The flaw allows remote attackers without login to gain privileged internal functions on the VCO host, affecting setups that authenticate Edge devices with certificates. No fix or mitigation is provided in the report.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-09-22T12:29:00.000Z",
+    "url": "https://thehackernews.com/2026/09/new-cvss-100-velocloud-orchestrator.html"
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-265-04",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-265-04",
+    "title": "Siemens SIPLUS and SIMATIC Products Vulnerable to Copy Fail (CVE-2026-31431)",
+    "headline": "Siemens SIPLUS and SIMATIC Products Vulnerable to Copy Fail (CVE-2026-31431)",
+    "summary": "Siemens SIPLUS and SIMATIC products are affected by the Copy Fail vulnerability (CVE-2026-31431). Affected versions include SIMATIC AX Runtime Core Linux Common Debian, ARM64, Platform Container, VMWare Development, and certain HMI MTP1000 models. Siemens has released updated firmware and recommends applying the latest patches or implementing countermeasures where fixes are pending.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "CISA",
+    "publishedAt": "2026-09-22T12:00:00.000Z",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-265-04"
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-265-05",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-265-05",
+    "title": "Siemens Desigo CC Client Code Execution Vulnerability (CVE-2026-34223)",
+    "headline": "Siemens Desigo CC Client Code Execution Vulnerability (CVE-2026-34223)",
+    "summary": "A Client Code Execution vulnerability (CVE-2026-34223) in Siemens Desigo CC allows attackers to run arbitrary code on client devices via specially crafted graphics documents containing embedded scripts. Successful exploitation can compromise the client OS and enable lateral movement. Affected versions V6 and V7 have patches available; users should update immediately.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CISA",
+    "publishedAt": "2026-09-22T12:00:00.000Z",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-265-05"
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/",
     "title": "Rogue MFA Providers Can Steal Passwords During Logins",
@@ -1126,77 +1198,5 @@
     "source": "Help Net Security",
     "publishedAt": "2026-09-21T12:23:19.000Z",
     "url": "https://www.helpnetsecurity.com/2026/09/21/ireland-google-users-location-data-processing-fine/"
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/alerts/2026/09/21/cisa-adds-one-known-exploited-vulnerability-catalog",
-    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/09/21/cisa-adds-one-known-exploited-vulnerability-catalog",
-    "title": "CISA Adds CVE-2026-7273 to Known Exploited Vulnerabilities Catalog",
-    "headline": "CISA Adds CVE-2026-7273 to Known Exploited Vulnerabilities Catalog",
-    "summary": "CISA has added CVE-2026-7273, a stack‑based buffer overflow in Zyxel GS1900 Series Switches, to its KEV catalog after evidence of active exploitation. The flaw allows attackers to gain full control of exposed assets. Federal agencies are urged to prioritize rapid remediation per BOD 26‑04.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CISA",
-    "publishedAt": "2026-09-21T12:00:00.000Z",
-    "url": "https://www.cisa.gov/news-events/alerts/2026/09/21/cisa-adds-one-known-exploited-vulnerability-catalog"
-  },
-  {
-    "id": "https://www.securityweek.com/colorado-water-utilities-hit-by-cyberattacks-targeting-ot-systems/",
-    "sourceUrl": "https://www.securityweek.com/colorado-water-utilities-hit-by-cyberattacks-targeting-ot-systems/",
-    "title": "Colorado Water Utilities Hit by OT System Cyberattacks",
-    "headline": "Colorado Water Utilities Hit by OT System Cyberattacks",
-    "summary": "Hackers targeted Colorado water utilities’ operational technology, changing equipment settings, disabling remote access and alarms, and altering pumping cycles. The attacks disrupted critical water infrastructure operations, indicating unauthorized access and manipulation of OT systems.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-09-21T10:03:44.000Z",
-    "url": "https://www.securityweek.com/colorado-water-utilities-hit-by-cyberattacks-targeting-ot-systems/"
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/09/21/helpfeel-gyazo-data-breach/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/21/helpfeel-gyazo-data-breach/",
-    "title": "Hackers Exploit Gyazo Server Flaw to Steal 23.6 Million User Records",
-    "headline": "Hackers Exploit Gyazo Server Flaw to Steal 23.6 Million User Records",
-    "summary": "A vulnerability in Gyazo’s image upload server allowed attackers to access and download about 23.62 million user records and metadata linked to hundreds of millions of images. The breach exposed personal data and image information, compromising user privacy. Gyazo confirmed the incident and is investigating the exploit.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "publishedAt": "2026-09-21T08:57:26.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/09/21/helpfeel-gyazo-data-breach/"
-  },
-  {
-    "id": "https://www.securityweek.com/fake-lastpass-installers-push-kernel-level-edr-killer-rapuncel-stealer/",
-    "sourceUrl": "https://www.securityweek.com/fake-lastpass-installers-push-kernel-level-edr-killer-rapuncel-stealer/",
-    "title": "Fake LastPass Installers Deploy Kernel‑Level EDR Killer and Stealer",
-    "headline": "Fake LastPass Installers Deploy Kernel‑Level EDR Killer and Stealer",
-    "summary": "Attackers masquerading as 40 companies drop a kernel‑level EDR‑killing tool that disables 145 security products, then install the ‘Rapuncel’ infostealer. The malware bypasses defenses by running at kernel level, allowing attackers to exfiltrate credentials and other data before detection.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-09-21T15:46:58.000Z",
-    "url": "https://www.securityweek.com/fake-lastpass-installers-push-kernel-level-edr-killer-rapuncel-stealer/"
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/google-fined-403-million-over-location-data-privacy-violations/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/google-fined-403-million-over-location-data-privacy-violations/",
-    "title": "Google Fined €403 Million for Location Data Privacy Violations",
-    "headline": "Google Fined €403 Million for Location Data Privacy Violations",
-    "summary": "Ireland’s Data Protection Commission fined Google €403 million for multiple GDPR breaches involving the processing of users’ location data. The fine reflects violations of privacy regulations and highlights the regulatory risks for companies handling personal data.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-09-21T15:41:22.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/google-fined-403-million-over-location-data-privacy-violations/"
-  },
-  {
-    "id": "https://therecord.media/belgium-table-tennis-cyberattack",
-    "sourceUrl": "https://therecord.media/belgium-table-tennis-cyberattack",
-    "title": "Belgian Table Tennis Federation Investigates Data Theft Attack",
-    "headline": "Belgian Table Tennis Federation Investigates Data Theft Attack",
-    "summary": "Belgium’s national table tennis federation is probing a cyberattack after a hacker claimed to have stolen data on tens of thousands of members. The incident involves unauthorized access to member information, prompting an investigation into the breach’s scope and potential impact on personal data security.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "publishedAt": "2026-09-21T15:00:00.000Z",
-    "url": "https://therecord.media/belgium-table-tennis-cyberattack"
   }
 ]
