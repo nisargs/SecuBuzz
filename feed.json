@@ -1,5 +1,77 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/09/23/datadome-growing-bad-bot-traffic-report/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/23/datadome-growing-bad-bot-traffic-report/",
+    "title": "Nearly Two-Thirds of Tested Websites Fail Bot Tests",
+    "headline": "Nearly Two-Thirds of Tested Websites Fail Bot Tests",
+    "summary": "DataDome’s 2026 State of Bot & Agent Security Report shows that almost 66% of 75,000 customer sites failed every bot test. Bot traffic rose 124% from July 2025 to June 2026, while human traffic grew only 13.2%. AI agent and LLM crawler traffic increased 82.3%, nine times faster than human traffic.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-09-23T04:30:37.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/09/23/datadome-growing-bad-bot-traffic-report/"
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-265-01",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-265-01",
+    "title": "CVE-2026-87121 Out-of-Bounds Write in lwIP MQTT Client Enables Full Code Execution",
+    "headline": "CVE-2026-87121 Out-of-Bounds Write in lwIP MQTT Client Enables Full Code Execution",
+    "summary": "The CVE-2026-87121 vulnerability in the lwIP TCP/IP Stack MQTT Client Application (versions >=2.0.1) allows an attacker to perform an out-of-bounds write, potentially leading to full code execution on affected devices. The flaw impacts critical infrastructure sectors worldwide. Mitigation requires updating to a patched lwIP version.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CISA",
+    "publishedAt": "2026-09-22T12:00:00.000Z",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-265-01"
+  },
+  {
+    "id": "https://www.sophos.com/en-us/blog/fake-ai-real-malware-attackers-impersonating-ai-brands",
+    "sourceUrl": "https://www.sophos.com/en-us/blog/fake-ai-real-malware-attackers-impersonating-ai-brands",
+    "title": "Attackers Impersonate AI Brands to Distribute Malware",
+    "headline": "Attackers Impersonate AI Brands to Distribute Malware",
+    "summary": "Attackers are exploiting the popularity of AI tools by impersonating well‑known AI brands to distribute malware. Sophos MDR casework shows repeated use of malvertising and infostealer tactics. The campaign targets users seeking AI solutions, delivering malicious payloads that steal credentials and other sensitive data.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "Sophos Threat Research",
+    "publishedAt": "2026-08-19T00:00:00.000Z",
+    "url": "https://www.sophos.com/en-us/blog/fake-ai-real-malware-attackers-impersonating-ai-brands"
+  },
+  {
+    "id": "https://krebsonsecurity.com/2026/08/whos-tracking-you-use-this-new-service-to-find-out/",
+    "sourceUrl": "https://krebsonsecurity.com/2026/08/whos-tracking-you-use-this-new-service-to-find-out/",
+    "title": "DecryptAds Reveals Who Is Tracking Users Across Web and Mobile",
+    "headline": "DecryptAds Reveals Who Is Tracking Users Across Web and Mobile",
+    "summary": "DecryptAds is a free, open‑source service that scrapes ad‑tech data to reveal the entities tracking users across websites and mobile apps. By correlating publicly available information, it allows individuals to quickly identify advertisers, data brokers, and other trackers, simplifying privacy investigations and enhancing transparency.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Krebs on Security",
+    "publishedAt": "2026-08-14T11:24:35.000Z",
+    "url": "https://krebsonsecurity.com/2026/08/whos-tracking-you-use-this-new-service-to-find-out/"
+  },
+  {
+    "id": "https://krebsonsecurity.com/2026/08/microsoft-plugs-nearly-400-security-holes/",
+    "sourceUrl": "https://krebsonsecurity.com/2026/08/microsoft-plugs-nearly-400-security-holes/",
+    "title": "Microsoft Releases Patch for 398 Windows Vulnerabilities, One Actively Exploited",
+    "headline": "Microsoft Releases Patch for 398 Windows Vulnerabilities, One Actively Exploited",
+    "summary": "Microsoft issued updates fixing 398 security flaws in Windows and related software, including a vulnerability already under active exploitation. The patch addresses multiple weaknesses, some previously disclosed, and mitigates potential attack vectors across the operating system and supported applications.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Krebs on Security",
+    "publishedAt": "2026-08-11T21:28:35.000Z",
+    "url": "https://krebsonsecurity.com/2026/08/microsoft-plugs-nearly-400-security-holes/"
+  },
+  {
+    "id": "https://www.thezdi.com/blog/2026/8/11/the-august-2026-security-update-review",
+    "sourceUrl": "https://www.thezdi.com/blog/2026/8/11/the-august-2026-security-update-review",
+    "title": "Adobe August 2026 Patch Rollout Covers 51 CVEs Across Multiple Products",
+    "headline": "Adobe August 2026 Patch Rollout Covers 51 CVEs Across Multiple Products",
+    "summary": "Adobe released five bulletins in August 2026, addressing 51 unique CVEs in ColdFusion, Commerce, Lightroom Classic, Content Credentials SDK, and Campaign Classic. The updates patch critical security flaws across these products, reducing exposure to known exploits and strengthening overall platform security.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Zero Day Initiative",
+    "publishedAt": "2026-08-11T17:56:34.000Z",
+    "url": "https://www.thezdi.com/blog/2026/8/11/the-august-2026-security-update-review"
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/09/23/rabbit-os3-ai-agent-now-available/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/09/23/rabbit-os3-ai-agent-now-available/",
     "title": "Rabbit Releases Cloud‑Based OS3 That Controls User Laptops",
@@ -1126,77 +1198,5 @@
     "source": "The Hacker News",
     "publishedAt": "2026-09-21T16:57:31.000Z",
     "url": "https://thehackernews.com/2026/09/google-fined-403-million-over-gdpr.html"
-  },
-  {
-    "id": "https://www.securityweek.com/organizations-warned-of-3-exploited-linux-kernel-vulnerabilities/",
-    "sourceUrl": "https://www.securityweek.com/organizations-warned-of-3-exploited-linux-kernel-vulnerabilities/",
-    "title": "Three Linux Kernel Vulnerabilities Exploited",
-    "headline": "Three Linux Kernel Vulnerabilities Exploited",
-    "summary": "Attackers can exploit three Linux kernel flaws to trigger denial‑of‑service, leak memory contents, or alter memory. The vulnerabilities allow attackers to cause service outages, disclose sensitive data, or modify system memory, impacting affected systems until patches are applied.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-09-21T09:31:12.000Z",
-    "url": "https://www.securityweek.com/organizations-warned-of-3-exploited-linux-kernel-vulnerabilities/"
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/09/21/gopass-open-source-password-manager/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/21/gopass-open-source-password-manager/",
-    "title": "Gopass: Open-Source Command-Line Password Manager for Teams",
-    "headline": "Gopass: Open-Source Command-Line Password Manager for Teams",
-    "summary": "Gopass is a free, open-source password manager that stores credentials in an encrypted store and runs from the command line. It encrypts each secret with GPG and keeps the store in a git repository, providing a change history and sync across laptops and servers.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-09-21T05:00:32.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/09/21/gopass-open-source-password-manager/"
-  },
-  {
-    "id": "https://unit42.paloaltonetworks.com/ai-assisted-cyber-attack-inside-a-unit-42-investigation/",
-    "sourceUrl": "https://unit42.paloaltonetworks.com/ai-assisted-cyber-attack-inside-a-unit-42-investigation/",
-    "title": "AI‑Assisted Attack Breaches Enterprise Network in Hours",
-    "headline": "AI‑Assisted Attack Breaches Enterprise Network in Hours",
-    "summary": "An attacker used autonomous AI agents to breach an enterprise network within hours, exploiting rapid decision‑making and automated actions. The Unit 42 investigation details how the AI‑driven attack bypassed defenses, highlighting the need for AI‑aware detection and response. Defenders should monitor anomalous agent activity and harden network segmentation.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Unit 42",
-    "publishedAt": "2026-09-02T10:00:46.000Z",
-    "url": "https://unit42.paloaltonetworks.com/ai-assisted-cyber-attack-inside-a-unit-42-investigation/"
-  },
-  {
-    "id": "https://www.microsoft.com/en-us/security/blog/2026/09/01/counterfeit-installers-system-compromise-tracking-deceptive-software-download-campaign/",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/09/01/counterfeit-installers-system-compromise-tracking-deceptive-software-download-campaign/",
-    "title": "Counterfeit Installers Deliver Malware via Deceptive Download Campaign",
-    "headline": "Counterfeit Installers Deliver Malware via Deceptive Download Campaign",
-    "summary": "A campaign impersonates legitimate vendors, using look‑alike download pages and regenerated installer archives to deliver malware. Microsoft Defender experts outline attack techniques, XDR detections, indicators of compromise, and mitigations. Organizations should block deceptive pages, verify installer signatures, and deploy Defender XDR to detect and stop the threat.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Microsoft Security",
-    "publishedAt": "2026-09-01T22:48:28.000Z",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/01/counterfeit-installers-system-compromise-tracking-deceptive-software-download-campaign/"
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/cisa-alerts-of-active-exploitation-of-three-linux-kernel-flaws/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-alerts-of-active-exploitation-of-three-linux-kernel-flaws/",
-    "title": "CISA Warns of Active Exploitation of Three Linux Kernel Vulnerabilities",
-    "headline": "CISA Warns of Active Exploitation of Three Linux Kernel Vulnerabilities",
-    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has issued a warning that hackers are actively exploiting three Linux kernel vulnerabilities, one of which is rated critical. The advisory urges affected organizations to apply patches immediately to mitigate potential system compromise.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-09-21T20:12:17.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/cisa-alerts-of-active-exploitation-of-three-linux-kernel-flaws/"
-  },
-  {
-    "id": "https://therecord.media/google-europe-location-data-fine",
-    "sourceUrl": "https://therecord.media/google-europe-location-data-fine",
-    "title": "EU Regulator Fines Google Over €403 Million for Location Data Violations",
-    "headline": "EU Regulator Fines Google Over €403 Million for Location Data Violations",
-    "summary": "Ireland’s Data Protection Commission has fined Google more than €403 million ($462 million) for violating location data privacy rules. The fine follows an inquiry that began in early 2020, highlighting the regulator’s enforcement of data protection laws against major tech firms.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Record",
-    "publishedAt": "2026-09-21T19:15:00.000Z",
-    "url": "https://therecord.media/google-europe-location-data-fine"
   }
 ]
