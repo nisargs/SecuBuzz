@@ -1,5 +1,77 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/09/23/rabbit-os3-ai-agent-now-available/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/23/rabbit-os3-ai-agent-now-available/",
+    "title": "Rabbit Releases Cloud‑Based OS3 That Controls User Laptops",
+    "headline": "Rabbit Releases Cloud‑Based OS3 That Controls User Laptops",
+    "summary": "Rabbit released OS3, an agentic operating system that runs in the cloud and controls a user’s laptop via a local agent installed with one command. Users issue goals in chat; OS3 selects the device and automates desktop software, file access, web browsing, or code execution. One account can connect up to five devices.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-09-23T03:38:05.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/09/23/rabbit-os3-ai-agent-now-available/"
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/09/23/netbsd-10-2-security-fixes-released/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/23/netbsd-10-2-security-fixes-released/",
+    "title": "NetBSD 10.2 Patch Fixes Remote Kernel Crash in ipfilter",
+    "headline": "NetBSD 10.2 Patch Fixes Remote Kernel Crash in ipfilter",
+    "summary": "A NetBSD 10.2 system exposed a remotely triggerable null pointer dereference in the ipfilter kernel module, allowing an external attacker to cause a kernel crash. The NetBSD Project released a patch on September 15, fixing the flaw and preventing potential denial‑of‑service attacks.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "publishedAt": "2026-09-23T03:16:17.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/09/23/netbsd-10-2-security-fixes-released/"
+  },
+  {
+    "id": "https://cybernewsai.com/blog/shinyhunters-claims-fbi-hack-peoplesoft-zero-day",
+    "sourceUrl": "https://cybernewsai.com/blog/shinyhunters-claims-fbi-hack-peoplesoft-zero-day",
+    "title": "ShinyHunters Claims FBI Breach via PeopleSoft Zero-Day",
+    "headline": "ShinyHunters Claims FBI Breach via PeopleSoft Zero-Day",
+    "summary": "ShinyHunters alleges it exploited a zero‑day flaw in PeopleSoft to breach FBI systems, reportedly exfiltrating 3 TB of employee and applicant data. The group claims the attack enabled unauthorized access to sensitive records, but no official confirmation or remediation details have been released.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-09-22T20:00:00.000Z",
+    "url": "https://cybernewsai.com/blog/shinyhunters-claims-fbi-hack-peoplesoft-zero-day"
+  },
+  {
+    "id": "https://www.securityweek.com/cyera-raises-400-million-at-12-billion-valuation/",
+    "sourceUrl": "https://www.securityweek.com/cyera-raises-400-million-at-12-billion-valuation/",
+    "title": "Cyera Secures $400 Million Series G Funding",
+    "headline": "Cyera Secures $400 Million Series G Funding",
+    "summary": "Cyera, a data security firm, closed a $400 million Series G round led by Goldman Sachs Alternatives, valuing the company at over $12 billion. The investment expands Cyera’s capital base to support growth and product development, with no immediate operational impact reported.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-09-22T14:29:34.000Z",
+    "url": "https://www.securityweek.com/cyera-raises-400-million-at-12-billion-valuation/"
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-265-07",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-265-07",
+    "title": "Siemens SIMOVE Fleetmanager and SIPLANT Path Traversal Vulnerability (CVE-2026-67367)",
+    "headline": "Siemens SIMOVE Fleetmanager and SIPLANT Path Traversal Vulnerability (CVE-2026-67367)",
+    "summary": "Siemens SIMOVE Fleetmanager and SIPLANT versions V3.1 to V4.0 and V1.7 to V3.1 contain a relative path traversal flaw (CVE-2026-67367) that could allow attackers to read files outside intended directories. Siemens released patches; users should update to the latest versions immediately.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CISA",
+    "publishedAt": "2026-09-22T12:00:00.000Z",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-265-07"
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-265-03",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-265-03",
+    "title": "Siemens Siveillance Control Unrestricted File Upload Vulnerability",
+    "headline": "Siemens Siveillance Control Unrestricted File Upload Vulnerability",
+    "summary": "A vulnerability in the Open Interface Services web module of Siemens Siveillance Control and Pro allows attackers to upload arbitrary files, potentially leading to root-level access on the OIS server. Siemens has released patches and recommends updating to the latest versions to mitigate the risk.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
+    "source": "CISA",
+    "publishedAt": "2026-09-22T12:00:00.000Z",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-265-03"
+  },
+  {
     "id": "https://cybernewsai.com/blog/sweden-fines-miljodata-183k-gdpr-breach-2m-citizens",
     "sourceUrl": "https://cybernewsai.com/blog/sweden-fines-miljodata-183k-gdpr-breach-2m-citizens",
     "title": "Sweden Fines Miljödata $183K for 2.2M Citizen Data Breach",
@@ -1126,77 +1198,5 @@
     "source": "The Record",
     "publishedAt": "2026-09-21T19:15:00.000Z",
     "url": "https://therecord.media/google-europe-location-data-fine"
-  },
-  {
-    "id": "https://www.darkreading.com/cyberattacks-data-breaches/cybercriminals-hiding-new-malware-torrents-popular-films",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/cybercriminals-hiding-new-malware-torrents-popular-films",
-    "title": "Cybercriminals Hide New Malware in Torrent Files for Popular Films",
-    "headline": "Cybercriminals Hide New Malware in Torrent Files for Popular Films",
-    "summary": "Cybercriminals distribute new malware via torrent sites for popular films, targeting users in Africa, including Kenya and Uganda. The malicious files embed malicious code that installs backdoors once downloaded. Users are warned to avoid untrusted torrents and verify file integrity. No official patch yet.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "Dark Reading",
-    "publishedAt": "2026-09-21T19:11:26.000Z",
-    "url": "https://www.darkreading.com/cyberattacks-data-breaches/cybercriminals-hiding-new-malware-torrents-popular-films"
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/wordpress-click2shell-flaw-lets-hackers-execute-php-on-the-server/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/wordpress-click2shell-flaw-lets-hackers-execute-php-on-the-server/",
-    "title": "WordPress Click2Shell Flaw Lets Hackers Execute PHP on Server",
-    "headline": "WordPress Click2Shell Flaw Lets Hackers Execute PHP on Server",
-    "summary": "The WordPress Click2Shell flaw is a CSRF vulnerability in the Core component that allows attackers to execute arbitrary PHP code on the server. A proof‑of‑concept exploit demonstrates how the flaw can be triggered via crafted requests. WordPress users should update to the latest release or apply the vendor patch.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-09-21T18:23:11.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/wordpress-click2shell-flaw-lets-hackers-execute-php-on-the-server/"
-  },
-  {
-    "id": "https://thehackernews.com/2026/09/fake-lastpass-authenticator-installer.html",
-    "sourceUrl": "https://thehackernews.com/2026/09/fake-lastpass-authenticator-installer.html",
-    "title": "Fake LastPass Authenticator Installer Uses Signed Driver to Disable Security Software",
-    "headline": "Fake LastPass Authenticator Installer Uses Signed Driver to Disable Security Software",
-    "summary": "A counterfeit LastPass Authenticator installer from GitHub installs a Windows kernel driver signed by Microsoft’s hardware‑compatibility program. The driver disables antivirus and EDR before a password stealer executes, allowing credential theft. The malware evades detection, posing a high‑risk threat to users who run the installer.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-09-21T17:31:01.000Z",
-    "url": "https://thehackernews.com/2026/09/fake-lastpass-authenticator-installer.html"
-  },
-  {
-    "id": "https://www.securityweek.com/google-hit-with-463-million-fine-for-eu-location-data-rule-breach/",
-    "sourceUrl": "https://www.securityweek.com/google-hit-with-463-million-fine-for-eu-location-data-rule-breach/",
-    "title": "Google Fined $463 Million for EU Location Data Rule Breach",
-    "headline": "Google Fined $463 Million for EU Location Data Rule Breach",
-    "summary": "Google was fined 403 million euros ($463 million) for violating EU privacy regulations by mishandling users’ location data. The fine reflects a serious breach of the EU’s strict location data rules, highlighting the company’s failure to protect personal information.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-09-21T17:19:53.000Z",
-    "url": "https://www.securityweek.com/google-hit-with-463-million-fine-for-eu-location-data-rule-breach/"
-  },
-  {
-    "id": "https://thehackernews.com/2026/09/contagious-interview-campaign.html",
-    "sourceUrl": "https://thehackernews.com/2026/09/contagious-interview-campaign.html",
-    "title": "North Korean Threat Actors Compromise 30,000 Devices, Steal $10.71M in Crypto",
-    "headline": "North Korean Threat Actors Compromise 30,000 Devices, Steal $10.71M in Crypto",
-    "summary": "The Contagious Interview campaign, attributed to North Korean actors, has compromised over 30,000 devices across 100+ countries, targeting web designers, engineers, and crypto specialists. Attackers siphoned funds or credentials from more than 7,000 cryptocurrency wallets, causing significant financial loss.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-09-21T17:19:00.000Z",
-    "url": "https://thehackernews.com/2026/09/contagious-interview-campaign.html"
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/09/21/ireland-google-users-location-data-processing-fine/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/21/ireland-google-users-location-data-processing-fine/",
-    "title": "Google Fined €403 Million for GDPR Violations on Location Tracking",
-    "headline": "Google Fined €403 Million for GDPR Violations on Location Tracking",
-    "summary": "Ireland’s Data Protection Commission fined Google €403 million for unlawfully processing users’ location data between May 2018 and February 2020. The fine requires Google to bring its location tracking practices into compliance within six months, highlighting regulatory enforcement of GDPR.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "publishedAt": "2026-09-21T12:23:19.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/09/21/ireland-google-users-location-data-processing-fine/"
   }
 ]
