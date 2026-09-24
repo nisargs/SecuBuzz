@@ -18,7 +18,7 @@ import {
 import { useSavedArticles } from '../../context/SavedArticlesContext';
 import { useArticles } from '../../hooks/useArticles';
 import type { Article } from '../../models/article';
-import { colors, spacing } from '../../theme/theme';
+import { colors, severityColors, spacing } from '../../theme/theme';
 import { formatPublishedAt } from '../../utils/formatPublishedAt';
 import { openArticle } from '../../utils/openArticle';
 import { shareArticle } from '../../utils/shareArticle';
@@ -334,9 +334,43 @@ export default function ArticleDetailScreen() {
           styles.content
         }
       >
-        <Text style={styles.category}>
-          {formatCategory(article.category)}
-        </Text>
+        <View style={styles.categoryRow}>
+          <Text style={styles.category}>
+            {formatCategory(article.category)}
+          </Text>
+
+          {article.severity ? (
+            <View
+              style={[
+                styles.severityTag,
+                article.severity === 'CRITICAL' && styles.severityTagCritical,
+              ]}
+            >
+              <View
+                style={[
+                  styles.severityDot,
+                  {
+                    backgroundColor:
+                      severityColors[article.severity]?.primary ??
+                      colors.textMuted,
+                  },
+                ]}
+              />
+              <Text
+                style={[
+                  styles.severityLabel,
+                  {
+                    color:
+                      severityColors[article.severity]?.primary ??
+                      colors.textMuted,
+                  },
+                ]}
+              >
+                {article.severity}
+              </Text>
+            </View>
+          ) : null}
+        </View>
 
         <Text style={styles.meta}>
           {formatPublishedAt(article)} ·{' '}
@@ -347,7 +381,14 @@ export default function ArticleDetailScreen() {
           {article.headline}
         </Text>
 
-        <View style={styles.accent} />
+        <View
+          style={[
+            styles.accent,
+            article.severity === 'CRITICAL' && {
+              backgroundColor: severityColors.CRITICAL.primary,
+            },
+          ]}
+        />
 
         <Text style={styles.briefLabel}>
           60-WORD SECURITY BRIEF
@@ -452,11 +493,45 @@ const styles = StyleSheet.create({
     paddingBottom: 40,
   },
 
+  categoryRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+  },
+
   category: {
     color: BLUE,
     fontSize: 12,
     fontWeight: '700',
     letterSpacing: 1.6,
+  },
+
+  severityTag: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 5,
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderRadius: 4,
+    backgroundColor: 'rgba(255, 255, 255, 0.05)',
+  },
+
+  severityTagCritical: {
+    backgroundColor: severityColors.CRITICAL.surface,
+    borderWidth: 1,
+    borderColor: severityColors.CRITICAL.border,
+  },
+
+  severityDot: {
+    width: 5,
+    height: 5,
+    borderRadius: 2.5,
+  },
+
+  severityLabel: {
+    fontFamily: 'Exo_600SemiBold',
+    fontSize: 9.5,
+    letterSpacing: 1.1,
   },
 
   meta: {

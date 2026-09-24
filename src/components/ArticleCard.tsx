@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 
 import type { Article } from '../models/article';
-import { colors, spacing } from '../theme/theme';
+import { colors, severityColors, spacing } from '../theme/theme';
 import { formatPublishedAt } from '../utils/formatPublishedAt';
 import { openArticle } from '../utils/openArticle';
 import { shareArticle } from '../utils/shareArticle';
@@ -57,13 +57,49 @@ export function ArticleCard({
     setOpening(false);
   }
 
+  const isCritical = article.severity === 'CRITICAL';
+
   return (
     <View style={styles.card}>
-      {/* CATEGORY + ACTIONS */}
+      {/* CATEGORY + SEVERITY + ACTIONS */}
       <View style={styles.metaTopRow}>
-        <Text style={styles.category}>
-          {formatCategory(article.category)}
-        </Text>
+        <View style={styles.metaLeftGroup}>
+          <Text style={styles.category}>
+            {formatCategory(article.category)}
+          </Text>
+
+          {article.severity ? (
+            <View
+              style={[
+                styles.severityTag,
+                isCritical && styles.severityTagCritical,
+              ]}
+            >
+              <View
+                style={[
+                  styles.severityDot,
+                  {
+                    backgroundColor:
+                      severityColors[article.severity]?.primary ??
+                      colors.textMuted,
+                  },
+                ]}
+              />
+              <Text
+                style={[
+                  styles.severityLabel,
+                  {
+                    color:
+                      severityColors[article.severity]?.primary ??
+                      colors.textMuted,
+                  },
+                ]}
+              >
+                {article.severity}
+              </Text>
+            </View>
+          ) : null}
+        </View>
 
         <View style={styles.actionsRow}>
           <Pressable
@@ -127,7 +163,12 @@ export function ArticleCard({
       </Text>
 
       {/* DIVIDER */}
-      <View style={styles.divider} />
+      <View
+        style={[
+          styles.divider,
+          isCritical && { backgroundColor: severityColors.CRITICAL.primary },
+        ]}
+      />
 
       {/* FULL SUMMARY */}
       <View style={styles.summaryContainer}>
@@ -181,11 +222,45 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
 
+  metaLeftGroup: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+  },
+
   category: {
     color: BLUE,
     fontFamily: 'Exo_600SemiBold',
     fontSize: 11,
     letterSpacing: 1.7,
+  },
+
+  severityTag: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 5,
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderRadius: 4,
+    backgroundColor: 'rgba(255, 255, 255, 0.05)',
+  },
+
+  severityTagCritical: {
+    backgroundColor: severityColors.CRITICAL.surface,
+    borderWidth: 1,
+    borderColor: severityColors.CRITICAL.border,
+  },
+
+  severityDot: {
+    width: 5,
+    height: 5,
+    borderRadius: 2.5,
+  },
+
+  severityLabel: {
+    fontFamily: 'Exo_600SemiBold',
+    fontSize: 9.5,
+    letterSpacing: 1.1,
   },
 
   actionsRow: {

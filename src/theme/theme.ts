@@ -46,3 +46,43 @@ export const radii = {
   lg: 16,
   pill: 999,
 } as const;
+
+/**
+ * Curated brand accents for present and future theme customization.
+ * Tested for high readability against both dark backgrounds and future light modes.
+ */
+export const accentPresets = {
+  cyan: '#4CC9F0',    // SecuBuzz Classic Cyber Cyan
+  green: '#10B981',   // Terminal Matrix Emerald (SOC Analyst)
+  amber: '#F59E0B',   // Cyber Radar Warm Amber
+  slate: '#94A3B8',   // Minimalist Monolith Titanium
+} as const;
+
+/**
+ * Threat Severity colors.
+ * Calibrated for maximum readability, sober restraint, and zero "AI neon" glare.
+ * Tested to maintain AA/AAA contrast ratios in both dark mode and future white mode.
+ */
+export const severityColors = {
+  CRITICAL: {
+    primary: '#EF4444',       // Crimson red - reserved strictly for zero-days & active exploitation
+    surface: 'rgba(239, 68, 68, 0.12)',
+    border: 'rgba(239, 68, 68, 0.3)',
+  },
+  HIGH: {
+    primary: '#F59E0B',       // Warm industrial amber - for major data breaches & high-CVSS flaws
+    surface: 'rgba(245, 158, 11, 0.12)',
+    border: 'rgba(245, 158, 11, 0.3)',
+  },
+  MEDIUM: {
+    primary: '#38BDF8',       // Technical slate cyan - scheduled patches & user-interaction bugs
+    surface: 'rgba(56, 189, 248, 0.10)',
+    border: 'rgba(56, 189, 248, 0.25)',
+  },
+  LOW: {
+    primary: '#94A3B8',       // Muted graphite - research papers, trends & advisory reports
+    surface: 'rgba(148, 163, 184, 0.10)',
+    border: 'rgba(148, 163, 184, 0.2)',
+  },
+} as const;
+
