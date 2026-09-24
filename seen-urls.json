@@ -453,5 +453,10 @@
   "https://cybernewsai.com/blog/detecting-exposed-aws-iam-credentials-quarantine-policies",
   "https://www.sophos.com/en-us/blog/2608-patch-tuesday",
   "https://www.thezdi.com/blog/2026/7/29/the-july-2026-apple-security-update-review",
-  "https://krebsonsecurity.com/2026/07/lg-to-ban-residential-proxies-from-smart-tv-apps/"
+  "https://krebsonsecurity.com/2026/07/lg-to-ban-residential-proxies-from-smart-tv-apps/",
+  "https://www.helpnetsecurity.com/2026/09/24/ot-asset-visibility-challenges/",
+  "https://www.helpnetsecurity.com/2026/09/24/ubuntu-kernel-cve-fixes-release-schedule/",
+  "https://cybernewsai.com/blog/check-point-security-gateway-vpn-rce-cve-2026-85102",
+  "https://cybernewsai.com/blog/wordpress-core-rce-cve-2026-87902-exploited-in-the-wild",
+  "https://krebsonsecurity.com/2026/07/microsoft-patches-a-record-570-security-flaws/"
 ]

@@ -1,5 +1,65 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/09/24/ot-asset-visibility-challenges/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/24/ot-asset-visibility-challenges/",
+    "title": "Attackers Remotely Access Water System PLCs in Seven U.S. States",
+    "headline": "Attackers Remotely Access Water System PLCs in Seven U.S. States",
+    "summary": "In early August, attackers remotely accessed internet‑facing programmable logic controllers that manage pumps and valves in water systems across at least seven U.S. states. The intrusion caused loss of monitoring and control, degrading water operations. Investigators are exploring links to Iran‑backed hackers. OT security programs must protect such controllers.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "publishedAt": "2026-09-24T04:30:14.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/09/24/ot-asset-visibility-challenges/"
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/09/24/ubuntu-kernel-cve-fixes-release-schedule/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/24/ubuntu-kernel-cve-fixes-release-schedule/",
+    "title": "Ubuntu Kernel Releases Weekly Security Fixes",
+    "headline": "Ubuntu Kernel Releases Weekly Security Fixes",
+    "summary": "Canonical will ship Ubuntu kernel updates every two weeks, merging the four‑week Stable Release Update cycle with the two‑week security fix cycle into a single weekly release schedule. This change provides administrators a faster path to receive kernel CVE fixes, improving security patching efficiency.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-09-24T04:27:02.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/09/24/ubuntu-kernel-cve-fixes-release-schedule/"
+  },
+  {
+    "id": "https://cybernewsai.com/blog/check-point-security-gateway-vpn-rce-cve-2026-85102",
+    "sourceUrl": "https://cybernewsai.com/blog/check-point-security-gateway-vpn-rce-cve-2026-85102",
+    "title": "Check Point Warns of VPN Zero-Day Flaws Exploited in Attacks",
+    "headline": "Check Point Warns of VPN Zero-Day Flaws Exploited in Attacks",
+    "summary": "Check Point confirmed active in-the-wild exploitation of pre-auth VPN zero‑days CVE-2026-85102 and CVE-2026-93616 impacting Quantum Security Gateways. The flaws allow attackers to bypass authentication and gain remote access. Immediate patching of affected gateways is required to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-09-24T01:49:43.000Z",
+    "url": "https://cybernewsai.com/blog/check-point-security-gateway-vpn-rce-cve-2026-85102"
+  },
+  {
+    "id": "https://cybernewsai.com/blog/wordpress-core-rce-cve-2026-87902-exploited-in-the-wild",
+    "sourceUrl": "https://cybernewsai.com/blog/wordpress-core-rce-cve-2026-87902-exploited-in-the-wild",
+    "title": "WordPress Core Remote Code Execution Exploited via CVE-2026-87902",
+    "headline": "WordPress Core Remote Code Execution Exploited via CVE-2026-87902",
+    "summary": "Adversaries are exploiting a critical path traversal flaw (CVE-2026-87902) in WordPress Core, enabling remote command execution through abused pearcmd components. The vulnerability allows attackers to run arbitrary code on affected sites, posing a severe risk to site owners. Immediate patching is required.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-09-24T01:36:00.000Z",
+    "url": "https://cybernewsai.com/blog/wordpress-core-rce-cve-2026-87902-exploited-in-the-wild"
+  },
+  {
+    "id": "https://krebsonsecurity.com/2026/07/microsoft-patches-a-record-570-security-flaws/",
+    "sourceUrl": "https://krebsonsecurity.com/2026/07/microsoft-patches-a-record-570-security-flaws/",
+    "title": "Microsoft Releases 570 Security Patches",
+    "headline": "Microsoft Releases 570 Security Patches",
+    "summary": "Microsoft issued updates fixing at least 570 security holes across Windows and other software, nearly triple the previous record. The high volume was aided by AI‑driven vulnerability discovery. Users should install the patches promptly to mitigate potential exploits.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Krebs on Security",
+    "publishedAt": "2026-07-14T19:22:42.000Z",
+    "url": "https://krebsonsecurity.com/2026/07/microsoft-patches-a-record-570-security-flaws/"
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/09/24/enisa-eu-cyber-threats-report/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/09/24/enisa-eu-cyber-threats-report/",
     "title": "Europe’s Technology Backbone Faces Rising Cyber Threats",
@@ -1138,65 +1198,5 @@
     "source": "Dark Reading",
     "publishedAt": "2026-09-22T20:02:02.000Z",
     "url": "https://www.darkreading.com/identity-access-management-security/microsoft-disrupts-eviltokens-device-code-phishing-service"
-  },
-  {
-    "id": "https://thehackernews.com/2026/09/critical-bifrost-ai-gateway-flaw-lets.html",
-    "sourceUrl": "https://thehackernews.com/2026/09/critical-bifrost-ai-gateway-flaw-lets.html",
-    "title": "Critical Bifrost AI Gateway Flaw Lets Attackers Run Commands Without Credentials",
-    "headline": "Critical Bifrost AI Gateway Flaw Lets Attackers Run Commands Without Credentials",
-    "summary": "A critical vulnerability (CVE-2026-90898) in Bifrost, an open‑source AI gateway, allows unauthenticated attackers to execute arbitrary commands via a single HTTP request. The flaw affects all Bifrost HTTP transport versions before 2.1.0 when management authentication is disabled. Immediate patching is required.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "publishedAt": "2026-09-22T16:41:12.000Z",
-    "url": "https://thehackernews.com/2026/09/critical-bifrost-ai-gateway-flaw-lets.html"
-  },
-  {
-    "id": "https://thehackernews.com/2026/09/researcher-drops-bigdiskbuster-zero-day.html",
-    "sourceUrl": "https://thehackernews.com/2026/09/researcher-drops-bigdiskbuster-zero-day.html",
-    "title": "Researcher Drops BigDiskBuster Zero‑Day PoC That Blocks Microsoft Defender Updates",
-    "headline": "Researcher Drops BigDiskBuster Zero‑Day PoC That Blocks Microsoft Defender Updates",
-    "summary": "A zero‑day proof‑of‑concept tool named BigDiskBuster fills disk space to halt Microsoft Defender from installing platform and signature updates. Published on GitHub, it has no patch, CVE, or Microsoft advisory. The tool exploits a resource exhaustion flaw, preventing update processes and potentially leaving systems vulnerable.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-09-22T16:14:04.000Z",
-    "url": "https://thehackernews.com/2026/09/researcher-drops-bigdiskbuster-zero-day.html"
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-265-02",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-265-02",
-    "title": "lwIP (Lightweight IP) Double Free Vulnerability CVE-2026-91018",
-    "headline": "lwIP (Lightweight IP) Double Free Vulnerability CVE-2026-91018",
-    "summary": "The lwIP (Lightweight IP) library versions API >=2.0.1 contain a double free flaw (CVE-2026-91018) that can cause a system crash, denial of service, memory corruption, or remote code execution. Affected systems include critical infrastructure sectors worldwide. Mitigation requires updating to the latest patched release.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CISA",
-    "publishedAt": "2026-09-22T12:00:00.000Z",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-265-02"
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-265-08",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-265-08",
-    "title": "Siemens WTV676 and WTV776 Denial of Service Vulnerability CVE-2026-89207",
-    "headline": "Siemens WTV676 and WTV776 Denial of Service Vulnerability CVE-2026-89207",
-    "summary": "Siemens WTV676 and WTV776 devices have a denial of service flaw (CVE-2026-89207) where improper input validation can force the devices into protection mode, disabling remote web access. Siemens recommends updating to the latest firmware versions to remediate the issue.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "CISA",
-    "publishedAt": "2026-09-22T12:00:00.000Z",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-265-08"
-  },
-  {
-    "id": "https://therecord.media/canadian-regulator-opens-probe-of-idscan-following-data-breach",
-    "sourceUrl": "https://therecord.media/canadian-regulator-opens-probe-of-idscan-following-data-breach",
-    "title": "Canadian Regulator Investigates IDScan Over Data Privacy Allegations",
-    "headline": "Canadian Regulator Investigates IDScan Over Data Privacy Allegations",
-    "summary": "The Canadian privacy regulator has opened a probe into IDScan, alleging violations of federal private‑sector privacy law. The investigation will examine IDScan’s security practices and whether victim notifications met legal requirements. No specific breach has been reported, but the probe could lead to enforcement action.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "publishedAt": "2026-09-22T19:52:00.000Z",
-    "url": "https://therecord.media/canadian-regulator-opens-probe-of-idscan-following-data-breach"
   }
 ]
