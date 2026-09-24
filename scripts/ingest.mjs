@@ -39,7 +39,7 @@ const MAX_NEW_CANDIDATES = 12;
 
 const ITEMS_PER_FEED = 10;
 
-const MAX_FEED_ARTICLES = 100;
+const MAX_FEED_ARTICLES = 250;
 
 const DESCRIPTION_MAX_LENGTH = 900;
 
@@ -728,6 +728,24 @@ CATEGORY RULES (STRICT):
 - "RANSOMWARE": Ransomware infections, encryptors, extortion groups, or ransom payments.
 - "NATION_STATE": State-sponsored espionage, APT hacking groups (e.g. APT28, Lazarus, Volt Typhoon), or cyber warfare.
 - "GENERAL": Industry cybersecurity trends, advisories, defensive tools, regulations, or law enforcement actions.
+
+SEVERITY RULES (OBJECTIVE THREAT CRITERIA):
+- "CRITICAL":
+  * Active zero-day exploitation confirmed in the wild.
+  * Unauthenticated Remote Code Execution (RCE) with CVSS 9.0-10.0 affecting enterprise infrastructure, firewalls, VPNs, hypervisors, or operating system kernels.
+  * Mass infrastructure collapse or emergency CISA Binding Operational Directives.
+- "HIGH":
+  * Confirmed major corporate or government data breaches compromising credentials, financial records, or millions of users.
+  * High-severity flaws (CVSS 7.0-8.9), critical vulnerabilities with public proof-of-concept (PoC) exploits, or authenticated RCE.
+  * Active ransomware extortion attacks against prominent institutions, or targeted espionage campaigns by tracked nation-state APT groups.
+- "MEDIUM":
+  * Vulnerabilities requiring user interaction (phishing, social engineering, CSRF, reflected/stored XSS) or local/adjacent network access.
+  * Routine scheduled security patches (Patch Tuesday) without active in-the-wild exploitation.
+  * Phishing kit discoveries, credential stuffing, rogue browser extensions, or botnet disruptions.
+- "LOW":
+  * General cybersecurity trends, quarterly threat reports, security surveys, webinars, or academic research papers.
+  * Low-severity minor bugs (CVSS < 4.0) requiring physical or high-privilege access.
+  * Defensive tool releases, industry compliance updates, or legal/policy announcements.
 
 Allowed categories:
 BREACH, RANSOMWARE, CVE, VULNERABILITY, NATION_STATE, GENERAL
