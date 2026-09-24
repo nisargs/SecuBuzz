@@ -64,7 +64,19 @@ export default function RootLayout() {
         if (articleId) {
           router.push({
             pathname: '/article/[...id]',
-            params: { id: articleId, url: articleId },
+            params: {
+              id: articleId,
+              url: articleId,
+              headline: typeof data?.headline === 'string' ? data.headline : undefined,
+              summary: typeof data?.summary === 'string' ? data.summary : undefined,
+              category: typeof data?.category === 'string' ? data.category : undefined,
+              severity: typeof data?.severity === 'string' ? data.severity : undefined,
+              source: typeof data?.source === 'string' ? data.source : undefined,
+              publishedAt:
+                typeof data?.publishedAt === 'string'
+                  ? data.publishedAt
+                  : undefined,
+            },
           });
         }
       } catch (err) {

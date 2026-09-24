@@ -3,7 +3,7 @@ export const PRIVACY_POLICY_HTML = `<!DOCTYPE html>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SecuBuzz · Privacy Policy</title>
+  <title>SecuBuzz · Privacy Policy & Account Deletion</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Exo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -178,7 +178,7 @@ export const PRIVACY_POLICY_HTML = `<!DOCTYPE html>
     <header>
       <h1 class="app-title">SecuBuzz</h1>
       <div class="tagline">60-Word Security Briefs</div>
-      <p class="updated-date">Effective Date: September 14, 2026</p>
+      <p class="updated-date">Effective Date: September 24, 2026</p>
     </header>
 
     <div class="intro-card">
@@ -188,16 +188,15 @@ export const PRIVACY_POLICY_HTML = `<!DOCTYPE html>
     </div>
 
     <div class="section">
-      <h2>1. Who We Are</h2>
+      <h2>1. Who We Are & Application Details</h2>
       <p>
-        SecuBuzz is an independent cybersecurity news and threat briefing application developed and operated by <strong>MiSo Labs</strong>.
+        <strong>Application Name:</strong> SecuBuzz<br />
+        <strong>Developer:</strong> MiSo Labs<br />
+        <strong>Official Website:</strong> <a href="https://secubuzz.com" target="_blank" rel="noopener noreferrer">secubuzz.com</a><br />
+        <strong>Privacy Inquiries:</strong> <a href="mailto:support@secubuzz.com">support@secubuzz.com</a>
       </p>
       <p>
-        For any privacy, security, or data handling inquiries, please contact:
-        <br />
-        <strong>Email:</strong> <a href="mailto:support@secubuzz.com">support@secubuzz.com</a>
-        <br />
-        <strong>Official Website:</strong> <a href="https://secubuzz.com" target="_blank" rel="noopener noreferrer">secubuzz.com</a>
+        SecuBuzz is an independent cybersecurity news and threat briefing application developed and operated by <strong>MiSo Labs</strong>.
       </p>
     </div>
 
@@ -281,14 +280,22 @@ export const PRIVACY_POLICY_HTML = `<!DOCTYPE html>
       </p>
     </div>
 
-    <div class="section">
-      <h2>10. Data Retention & Deletion</h2>
+    <div class="section" id="account-deletion">
+      <h2>10. SecuBuzz Account & Data Deletion Policy</h2>
       <p>
-        Because SecuBuzz does not require accounts, there is no account database to delete. You have complete control over your data:
+        <strong>Application Name:</strong> SecuBuzz<br />
+        SecuBuzz is designed as an account-free application. Users are not required to create a profile, username, password, or provide an email address to use SecuBuzz. Consequently, SecuBuzz does not maintain a centralized user account database or store personal account credentials on remote servers.
+      </p>
+      <p>
+        If you wish to delete all data, bookmarks, and identifiers associated with <strong>SecuBuzz</strong> from your device and our systems, you can do so immediately using the following options:
       </p>
       <ul>
-        <li><strong>Bookmarks:</strong> Can be un-saved individually in the app or cleared by clearing the app data.</li>
-        <li><strong>Push Tokens:</strong> Deactivated automatically if you disable notifications in Android Settings, or upon request by emailing us with your push token.</li>
+        <li>
+          <strong>Deleting SecuBuzz Local Data & Bookmarks:</strong> Inside the SecuBuzz app, navigate to <strong>Settings</strong> &gt; <strong>Data &amp; Privacy</strong> and tap <strong>Delete All Local Data</strong>. Alternatively, on your Android device go to <strong>Settings</strong> &gt; <strong>Apps</strong> &gt; <strong>SecuBuzz</strong> &gt; <strong>Storage</strong> &gt; <strong>Clear Data / Clear Storage</strong>. This immediately and permanently purges all saved bookmarks, local reading history, and cached feed snapshots.
+        </li>
+        <li>
+          <strong>Revoking & Deleting Push Notification Tokens:</strong> In your device <strong>Settings</strong> &gt; <strong>Apps</strong> &gt; <strong>SecuBuzz</strong> &gt; <strong>Notifications</strong>, toggle notifications <strong>OFF</strong>. Once disabled, SecuBuzz stops sending push notifications to your device. To have your pseudonymous push notification token manually purged from the SecuBuzz backend (Cloudflare D1 database), submit a deletion request by emailing <a href="mailto:support@secubuzz.com?subject=SecuBuzz%20Data%20Deletion%20Request">support@secubuzz.com</a> with the subject line <em>"SecuBuzz Data Deletion Request"</em>. Tokens are permanently erased within 30 days.
+        </li>
       </ul>
     </div>
 
@@ -309,9 +316,10 @@ export const PRIVACY_POLICY_HTML = `<!DOCTYPE html>
     <div class="section">
       <h2>13. Contact Information</h2>
       <p>
-        If you have questions, feedback, or security disclosure reports regarding this policy, please reach out directly:
+        If you have questions, feedback, or data deletion requests regarding SecuBuzz, please reach out directly:
       </p>
       <p>
+        <strong>Application Name:</strong> SecuBuzz<br />
         <strong>Email:</strong> <a href="mailto:support@secubuzz.com">support@secubuzz.com</a><br />
         <strong>Developer:</strong> MiSo Labs (<a href="https://secubuzz.com" target="_blank" rel="noopener noreferrer">secubuzz.com</a>)
       </p>

@@ -1,6 +1,6 @@
 import { Ionicons } from '@expo/vector-icons';
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
-import { useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import {
   ActivityIndicator,
   Pressable,
@@ -41,9 +41,14 @@ function formatCategory(
 
 function normalizeUrlForMatch(url?: string | null): string {
   if (!url) return '';
-  return url
-    .trim()
-    .replace(/^https?:\/\//i, '')
+  let str = url.trim();
+  try {
+    str = decodeURIComponent(str);
+  } catch {
+    // Keep str if malformed percent encoding
+  }
+  return str
+    .replace(/^https?:\/+/i, '')
     .replace(/\/+$/, '')
     .toLowerCase();
 }
@@ -54,18 +59,34 @@ export default function ArticleDetailScreen() {
   const params = useLocalSearchParams<{
     id?: string | string[];
     url?: string;
+    headline?: string;
+    summary?: string;
+    category?: string;
+    severity?: string;
+    source?: string;
+    publishedAt?: string;
   }>();
 
-  // Reconstruct full URL if Expo Router broke it into catch-all path segments
-  const rawId = Array.isArray(params.id)
-    ? params.id.join('/')
-    : (params.id || params.url || '');
+  // If url is passed in query params, it is intact and untouched by path segment parsing.
+  let rawTarget = '';
+  if (typeof params.url === 'string' && params.url.trim().length > 0) {
+    rawTarget = params.url.trim();
+  } else if (Array.isArray(params.id)) {
+    rawTarget = params.id.join('/');
+  } else if (typeof params.id === 'string') {
+    rawTarget = params.id.trim();
+  }
 
-  let decodedId = rawId;
+  let decodedId = rawTarget;
   try {
-    decodedId = decodeURIComponent(rawId);
+    decodedId = decodeURIComponent(rawTarget);
   } catch {
-    // Keep rawId if malformed percent encoding
+    // Keep rawTarget if malformed percent encoding
+  }
+
+  // Restore double slash in protocol if Expo router collapsed it during catch-all path segment join
+  if (/^https?:\/+[^\/]/.test(decodedId)) {
+    decodedId = decodedId.replace(/^(https?):\/+([^\/])/i, '$1://$2');
   }
 
   const normalizedTarget = normalizeUrlForMatch(decodedId);
@@ -79,43 +100,86 @@ export default function ArticleDetailScreen() {
     toggleSaved,
   } = useSavedArticles();
 
+  const [isRefreshingFeed, setIsRefreshingFeed] = useState(false);
+  const hasAttemptedReloadRef = useRef(false);
+
   useEffect(() => {
     if (state.status === 'loading') {
       void load();
     }
   }, [load, state.status]);
 
+  const matchesTarget = (item: Article) => {
+    if (item.id === decodedId || item.sourceUrl === decodedId) {
+      return true;
+    }
+    if (normalizedTarget.length > 0) {
+      const normId = normalizeUrlForMatch(item.id);
+      const normSource = normalizeUrlForMatch(item.sourceUrl);
+      if (normId === normalizedTarget || normSource === normalizedTarget) {
+        return true;
+      }
+      const targetSlug = normalizedTarget.split('?')[0].replace(/\/+$/, '');
+      const itemSlug = normSource.split('?')[0].replace(/\/+$/, '');
+      if (
+        targetSlug.length > 12 &&
+        itemSlug.length > 12 &&
+        (itemSlug.endsWith(targetSlug) || targetSlug.endsWith(itemSlug))
+      ) {
+        return true;
+      }
+    }
+    if (params.headline && item.headline) {
+      if (item.headline.trim().toLowerCase() === params.headline.trim().toLowerCase()) {
+        return true;
+      }
+    }
+    return false;
+  };
+
   const liveArticle =
     state.status === 'ready'
-      ? state.articles.find(
-          (article) =>
-            article.id === decodedId ||
-            article.sourceUrl === decodedId ||
-            (normalizedTarget.length > 0 &&
-              (normalizeUrlForMatch(article.id) === normalizedTarget ||
-                normalizeUrlForMatch(article.sourceUrl) === normalizedTarget)),
-        )
+      ? state.articles.find(matchesTarget)
       : undefined;
 
   /*
    * If the article has disappeared from feed.json,
    * use the permanent saved snapshot instead.
    */
-  const savedArticle = savedArticles.find(
-    (article) =>
-      article.id === decodedId ||
-      article.sourceUrl === decodedId ||
-      (normalizedTarget.length > 0 &&
-        (normalizeUrlForMatch(article.id) === normalizedTarget ||
-          normalizeUrlForMatch(article.sourceUrl) === normalizedTarget)),
-  );
+  const savedArticle = savedArticles.find(matchesTarget);
 
-  const article = liveArticle ?? savedArticle;
+  /*
+   * Reconstruct article from notification payload if feed has rolled over.
+   */
+  const notificationFallbackArticle: Article | undefined =
+    params.headline && (params.url || decodedId)
+      ? {
+          id: params.url || decodedId,
+          sourceUrl: params.url || decodedId,
+          headline: params.headline,
+          summary: params.summary || '',
+          category: (params.category as Article['category']) || 'GENERAL',
+          severity: (params.severity as Article['severity']) || 'HIGH',
+          sourceName: params.source || 'SecuBuzz Alert',
+          publishedAt: params.publishedAt || new Date().toISOString(),
+        }
+      : undefined;
+
+  const article = liveArticle ?? savedArticle ?? notificationFallbackArticle;
 
   // If opened from a push notification for a fresh story, ensure latest feed is loaded
   useEffect(() => {
-    if (state.status === 'ready' && !liveArticle && !savedArticle) {
-      void load();
+    if (
+      state.status === 'ready' &&
+      !liveArticle &&
+      !savedArticle &&
+      !hasAttemptedReloadRef.current
+    ) {
+      hasAttemptedReloadRef.current = true;
+      setIsRefreshingFeed(true);
+      void load().finally(() => {
+        setIsRefreshingFeed(false);
+      });
     }
   }, [state.status, liveArticle, savedArticle, load]);
 
@@ -134,7 +198,7 @@ export default function ArticleDetailScreen() {
 
   if (
     article === undefined &&
-    state.status === 'loading'
+    (state.status === 'loading' || isRefreshingFeed)
   ) {
     return (
       <SafeAreaView style={styles.safe}>

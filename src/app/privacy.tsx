@@ -46,32 +46,39 @@ export default function PrivacyPolicyScreen() {
         showsVerticalScrollIndicator={false}
       >
         <Text style={styles.eyebrow}>
-          SECUBUZZ
+          APPLICATION PRIVACY & DATA POLICY
         </Text>
 
         <Text style={styles.title}>
-          Privacy Policy
+          SecuBuzz Privacy Policy
         </Text>
 
         <Text style={styles.updated}>
-          Effective date: September 14, 2026
+          Effective date: September 24, 2026
         </Text>
 
         <Text style={styles.paragraph}>
-          This Privacy Policy explains how SecuBuzz
-          handles information when you use the
-          SecuBuzz mobile application.
+          This Privacy Policy explains how the SecuBuzz mobile application
+          handles information and user privacy.
         </Text>
 
-        <Section title="1. Who We Are">
+        <Section title="1. Application Information & Developer">
           <Text style={styles.paragraph}>
-            SecuBuzz is a cybersecurity news and
-            security briefing application operated by
-            MiSo Labs.
+            Application Name: SecuBuzz
           </Text>
 
           <Text style={styles.paragraph}>
-            Privacy questions can be sent to:
+            Developer: MiSo Labs (secubuzz.com)
+          </Text>
+
+          <Text style={styles.paragraph}>
+            SecuBuzz is a specialized cybersecurity news and security
+            briefing application designed to deliver real-time threat
+            intelligence without tracking personal identities.
+          </Text>
+
+          <Text style={styles.paragraph}>
+            Privacy and data deletion inquiries:
           </Text>
 
           <Text style={styles.contact}>
@@ -79,12 +86,10 @@ export default function PrivacyPolicyScreen() {
           </Text>
         </Section>
 
-        <Section title="2. Information We Collect">
+        <Section title="2. Information Collected by SecuBuzz">
           <Text style={styles.paragraph}>
-            SecuBuzz is designed to provide
-            cybersecurity news and does not require
-            you to create an account to use the core
-            application.
+            SecuBuzz is built privacy-first and does not require you to
+            create an account to use the application.
           </Text>
 
           <Text style={styles.paragraph}>
@@ -246,19 +251,37 @@ export default function PrivacyPolicyScreen() {
           </Text>
         </Section>
 
-        <Section title="10. Data Retention and Deletion">
+        <Section title="10. SecuBuzz Account & Data Deletion Policy">
           <Text style={styles.paragraph}>
-            Saved article selections are retained
-            locally on your device until you remove
-            them through the SecuBuzz application or
-            remove the application's local data.
+            Application Name: SecuBuzz
           </Text>
 
           <Text style={styles.paragraph}>
-            Because the current version of SecuBuzz
-            does not require an account, there is no
-            SecuBuzz user account that you need to
-            delete.
+            No User Account Creation: The SecuBuzz mobile application does not
+            require, create, or support user account registration, passwords, or
+            user profiles. Because SecuBuzz operates without user accounts, there
+            is no SecuBuzz user account database to delete.
+          </Text>
+
+          <Text style={styles.paragraph}>
+            How SecuBuzz users can delete all associated data:
+          </Text>
+
+          <Text style={styles.paragraph}>
+            • SecuBuzz Bookmarks & Local Cache: Saved articles are stored
+            locally on your device. You can remove bookmarks individually
+            within the SecuBuzz app, or delete all local data by opening Android
+            Settings &gt; Apps &gt; SecuBuzz &gt; Storage &gt; Clear Storage / Clear Data,
+            or by uninstalling the SecuBuzz application.
+          </Text>
+
+          <Text style={styles.paragraph}>
+            • SecuBuzz Push Notification Tokens: If you opt in to receive news
+            alerts in SecuBuzz, a pseudonymous push notification token is assigned
+            to your device. You can revoke and delete this token at any time by
+            disabling notifications in Android Settings &gt; Apps &gt; SecuBuzz &gt;
+            Notifications, or by contacting our support team at support@secubuzz.com
+            to request manual deletion of your device token from our SecuBuzz notification server.
           </Text>
         </Section>
 

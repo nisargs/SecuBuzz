@@ -46,47 +46,53 @@ export default function DataPrivacyScreen() {
         showsVerticalScrollIndicator={false}
       >
         <Text style={styles.eyebrow}>
-          YOUR DATA
+          SECUBUZZ DATA CONTROL
         </Text>
 
         <Text style={styles.title}>
-          Your privacy, simply explained.
+          SecuBuzz Privacy & Data Control
         </Text>
 
         <InfoCard
-          icon="bookmark-outline"
-          title="Saved articles"
-          text="Your saved articles are stored locally on your device so SecuBuzz can remember them."
-        />
-
-        <InfoCard
           icon="person-outline"
-          title="No account required"
-          text="The current version of SecuBuzz does not require you to create an account to read and save briefs."
+          title="SecuBuzz Account Deletion"
+          text="SecuBuzz does not require or support user accounts. There are no logins, passwords, or cloud user profiles to delete."
         />
 
         <InfoCard
-          icon="eye-off-outline"
-          title="No personalized tracking"
-          text="The current version does not intentionally use advertising or personalized tracking SDKs."
-        />
-
-        <InfoCard
-          icon="cloud-outline"
-          title="News feed"
-          text="SecuBuzz retrieves cybersecurity news-feed data from SecuBuzz infrastructure so the app can display current briefs."
-        />
-
-        <InfoCard
-          icon="open-outline"
-          title="External publishers"
-          text="When you open an original article, you leave SecuBuzz and the publisher's own privacy practices apply."
+          icon="bookmark-outline"
+          title="SecuBuzz Saved Articles"
+          text="Your saved articles are stored strictly on your local device so SecuBuzz can display them offline."
         />
 
         <InfoCard
           icon="trash-outline"
-          title="Deleting local data"
-          text="You can remove saved articles from the Saved section. Removing the app or its local storage also removes locally stored saved-article data."
+          title="Deleting SecuBuzz Local Data"
+          text="You can remove saved articles inside SecuBuzz anytime. Clearing app data in Android Settings (Settings > Apps > SecuBuzz > Storage > Clear Data) or uninstalling SecuBuzz deletes all local data."
+        />
+
+        <InfoCard
+          icon="notifications-outline"
+          title="SecuBuzz Push Notification Tokens"
+          text="SecuBuzz uses pseudonymous push tokens solely to alert you to breaking security briefs. Disable anytime in Android Settings > Apps > SecuBuzz > Notifications or email support@secubuzz.com to delete your token."
+        />
+
+        <InfoCard
+          icon="eye-off-outline"
+          title="No Personalized Tracking"
+          text="SecuBuzz does not use tracking or advertising SDKs. Your reading habits are never profiled or sold."
+        />
+
+        <InfoCard
+          icon="cloud-outline"
+          title="SecuBuzz News Feed"
+          text="SecuBuzz retrieves verified cybersecurity threat briefings from SecuBuzz cloud infrastructure over TLS encryption."
+        />
+
+        <InfoCard
+          icon="open-outline"
+          title="External Publishers"
+          text="When opening external sources, you leave SecuBuzz and the respective publisher's privacy practices apply."
         />
 
         <View style={styles.policyBox}>

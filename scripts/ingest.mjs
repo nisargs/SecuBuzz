@@ -1904,6 +1904,12 @@ async function sendPushNotificationsForNewArticles(newArticles) {
         type: "article",
         articleId: article.sourceUrl,
         articleUrl: article.sourceUrl,
+        headline: article.headline,
+        summary: article.summary,
+        category: article.category,
+        severity: article.severity,
+        source: article.source || article.sourceName,
+        publishedAt: article.publishedAt,
       },
     }));
 

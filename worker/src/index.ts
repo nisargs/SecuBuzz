@@ -76,8 +76,16 @@ export default {
     }
 
     try {
-      // Public Landing & Privacy Policy Page (Google Play Store compliance & domain root)
-      if (url.pathname === '/' || url.pathname === '/privacy' || url.pathname === '/privacy.html') {
+      // Public Landing, Privacy Policy & Account Deletion Page (Google Play Store compliance & domain root)
+      if (
+        url.pathname === '/' ||
+        url.pathname === '/privacy' ||
+        url.pathname === '/privacy.html' ||
+        url.pathname === '/account-deletion' ||
+        url.pathname === '/account-deletion.html' ||
+        url.pathname === '/delete-account' ||
+        url.pathname === '/delete-account.html'
+      ) {
         return new Response(PRIVACY_POLICY_HTML, {
           status: 200,
           headers: {
