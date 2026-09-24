@@ -1,5 +1,77 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/09/24/enisa-eu-cyber-threats-report/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/24/enisa-eu-cyber-threats-report/",
+    "title": "Europe’s Technology Backbone Faces Rising Cyber Threats",
+    "headline": "Europe’s Technology Backbone Faces Rising Cyber Threats",
+    "summary": "ENISA’s Threat Landscape 2026 reports increasing disruptive attacks on public-facing services, financially motivated cybercrime, and compromises of shared technology providers across Europe. Key threats include cybercrime, state-linked activity, foreign information manipulation, hacktivism, and vulnerability exploitation, with 8,257 incidents recorded in 2025.",
+    "category": "GENERAL",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "publishedAt": "2026-09-24T04:00:02.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/09/24/enisa-eu-cyber-threats-report/"
+  },
+  {
+    "id": "https://cybernewsai.com/blog/remcontrol-android-banking-malware-targets-europe-canada",
+    "sourceUrl": "https://cybernewsai.com/blog/remcontrol-android-banking-malware-targets-europe-canada",
+    "title": "RemControl Android Banking Trojan Hijacks Accounts in Europe and Canada",
+    "headline": "RemControl Android Banking Trojan Hijacks Accounts in Europe and Canada",
+    "summary": "RemControl is an Android banking trojan that uses fake TVTap IPTV apps, rogue VPNs, and Accessibility Services to hijack banking accounts in Europe and Canada. The malware exploits legitimate app permissions to intercept credentials and perform unauthorized transactions. Users should avoid suspicious apps and enable two‑factor authentication. No official patch is available yet.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-09-24T02:32:50.000Z",
+    "url": "https://cybernewsai.com/blog/remcontrol-android-banking-malware-targets-europe-canada"
+  },
+  {
+    "id": "https://cybernewsai.com/blog/detecting-exposed-aws-iam-credentials-quarantine-policies",
+    "sourceUrl": "https://cybernewsai.com/blog/detecting-exposed-aws-iam-credentials-quarantine-policies",
+    "title": "AWS Deploys Managed Policy to Quarantine Compromised IAM Keys",
+    "headline": "AWS Deploys Managed Policy to Quarantine Compromised IAM Keys",
+    "summary": "AWS has introduced the AWSCompromisedKeyQuarantine managed policy, which automatically neutralizes publicly exposed IAM credentials within minutes. Unit 42 reports that the policy quarantines compromised keys, preventing further access while alerting administrators. The solution requires no manual intervention and helps organizations reduce the risk of credential‑based attacks.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-09-24T02:01:48.000Z",
+    "url": "https://cybernewsai.com/blog/detecting-exposed-aws-iam-credentials-quarantine-policies"
+  },
+  {
+    "id": "https://www.sophos.com/en-us/blog/2608-patch-tuesday",
+    "sourceUrl": "https://www.sophos.com/en-us/blog/2608-patch-tuesday",
+    "title": "Microsoft Edge Receives 421 CVE Patches on Patch Tuesday",
+    "headline": "Microsoft Edge Receives 421 CVE Patches on Patch Tuesday",
+    "summary": "Microsoft released 421 CVE patches for Edge on Patch Tuesday, addressing a range of security flaws. The update includes a small set of Edge patches and two additional stragglers. Users should install the latest update to mitigate the identified vulnerabilities and maintain system security.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Sophos Threat Research",
+    "publishedAt": "2026-08-17T00:00:00.000Z",
+    "url": "https://www.sophos.com/en-us/blog/2608-patch-tuesday"
+  },
+  {
+    "id": "https://www.thezdi.com/blog/2026/7/29/the-july-2026-apple-security-update-review",
+    "sourceUrl": "https://www.thezdi.com/blog/2026/7/29/the-july-2026-apple-security-update-review",
+    "title": "Apple Releases 210 CVEs in July 2026 Security Update, Including CVE-2026-43818",
+    "headline": "Apple Releases 210 CVEs in July 2026 Security Update, Including CVE-2026-43818",
+    "summary": "Apple’s July 2026 security update fixed 210 unique CVEs across iOS, macOS, tvOS, watchOS, visionOS, and Safari. Notably, CVE-2026-43818 in ImageIO allows arbitrary code execution via malicious images. Users should update all Apple products to the latest versions to protect against this high‑severity vulnerability.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Zero Day Initiative",
+    "publishedAt": "2026-07-30T14:00:00.000Z",
+    "url": "https://www.thezdi.com/blog/2026/7/29/the-july-2026-apple-security-update-review"
+  },
+  {
+    "id": "https://krebsonsecurity.com/2026/07/lg-to-ban-residential-proxies-from-smart-tv-apps/",
+    "sourceUrl": "https://krebsonsecurity.com/2026/07/lg-to-ban-residential-proxies-from-smart-tv-apps/",
+    "title": "LG Bans Residential Proxy Apps on Smart TVs",
+    "headline": "LG Bans Residential Proxy Apps on Smart TVs",
+    "summary": "LG Electronics USA will suspend smart TV apps that turn TVs into residential proxy nodes, following research showing over 42% of webOS store apps allow third‑party traffic routing. The ban aims to prevent unauthorized proxy use and protect user privacy.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "Krebs on Security",
+    "publishedAt": "2026-07-22T01:10:38.000Z",
+    "url": "https://krebsonsecurity.com/2026/07/lg-to-ban-residential-proxies-from-smart-tv-apps/"
+  },
+  {
     "id": "https://cybernewsai.com/blog/autonomous-ai-agents-steal-600k-credit-cards-skimmer-attacks",
     "sourceUrl": "https://cybernewsai.com/blog/autonomous-ai-agents-steal-600k-credit-cards-skimmer-attacks",
     "title": "AI Agents Steal 600,000 Cards from 119 E‑Commerce Sites",
@@ -1126,77 +1198,5 @@
     "source": "The Record",
     "publishedAt": "2026-09-22T19:52:00.000Z",
     "url": "https://therecord.media/canadian-regulator-opens-probe-of-idscan-following-data-breach"
-  },
-  {
-    "id": "https://thehackernews.com/2026/09/malicious-npm-package-poses-as-twilio.html",
-    "sourceUrl": "https://thehackernews.com/2026/09/malicious-npm-package-poses-as-twilio.html",
-    "title": "Malicious npm Package 'tw-pkgprobe-7731' Steals Credentials",
-    "headline": "Malicious npm Package 'tw-pkgprobe-7731' Steals Credentials",
-    "summary": "Researchers uncovered a malicious npm package named tw‑pkgprobe‑7731 that masquerades as a Twilio bug‑bounty tool. The package, uploaded in mid‑August 2026, stealthily harvests credentials from developers’ environments. The threat remains active on the npm registry, and users should delete the package and audit dependencies.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-09-22T17:58:15.000Z",
-    "url": "https://thehackernews.com/2026/09/malicious-npm-package-poses-as-twilio.html"
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/reducing-shadow-it-visibility-gaps-with-wazuh/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/reducing-shadow-it-visibility-gaps-with-wazuh/",
-    "title": "Wazuh Reduces Shadow IT Visibility Gaps",
-    "headline": "Wazuh Reduces Shadow IT Visibility Gaps",
-    "summary": "Wazuh offers endpoint inventory, agentless monitoring, and centralized analysis to help security teams detect unmanaged endpoints, unauthorized software, and other assets outside existing monitoring, reducing shadow IT visibility gaps.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-09-22T17:17:41.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/reducing-shadow-it-visibility-gaps-with-wazuh/"
-  },
-  {
-    "id": "https://thehackernews.com/2026/09/microsoft-takes-down-eviltokens-device.html",
-    "sourceUrl": "https://thehackernews.com/2026/09/microsoft-takes-down-eviltokens-device.html",
-    "title": "Microsoft Takedown of EvilTokens Phishing Service",
-    "headline": "Microsoft Takedown of EvilTokens Phishing Service",
-    "summary": "Microsoft dismantled the EvilTokens device-code phishing service, which used AI throughout its attack chain, after a U.S. court order. The takedown involved Health-ISAC, Cloudflare, Coinbase, OpenAI, Railway, SpyCloud, and The Shadowserver, stopping 12,000 compromised inboxes.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-09-22T17:03:31.000Z",
-    "url": "https://thehackernews.com/2026/09/microsoft-takes-down-eviltokens-device.html"
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/check-point-patches-management-server-zero-day-exploited-in-attacks/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/check-point-patches-management-server-zero-day-exploited-in-attacks/",
-    "title": "Check Point Issues Emergency Hotfix for Critical Management Server Zero‑Day",
-    "headline": "Check Point Issues Emergency Hotfix for Critical Management Server Zero‑Day",
-    "summary": "Check Point released emergency hotfixes for a critical Security Management Server vulnerability that could allow attackers to run arbitrary scripts. The flaw enables remote code execution on affected servers, potentially compromising network management and control. Patching is mandatory to prevent exploitation.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-09-22T16:32:47.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/check-point-patches-management-server-zero-day-exploited-in-attacks/"
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-265-09",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-265-09",
-    "title": "OpenPLC Runtime v3 Vulnerability Allows Session Hijacking and Control of PLCs",
-    "headline": "OpenPLC Runtime v3 Vulnerability Allows Session Hijacking and Control of PLCs",
-    "summary": "A critical vulnerability (CVE-2026-88020) in OpenPLC Runtime v3 lets attackers hijack session cookies and issue state‑changing requests, enabling full control over programmable logic controllers and the physical processes they manage. Affected versions include OpenPLC 3. Users should apply vendor patches immediately.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CISA",
-    "publishedAt": "2026-09-22T12:00:00.000Z",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-265-09"
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/alerts/2026/09/22/cisa-adds-four-known-exploited-vulnerabilities-catalog",
-    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/09/22/cisa-adds-four-known-exploited-vulnerabilities-catalog",
-    "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
-    "headline": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
-    "summary": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities catalog, citing active exploitation. The catalog lists CVE-2026-85102, CVE-2026-93616, CVE-2026-93952, and CVE-2026-94127, covering certificate validation, path traversal, input validation, and a heap‑based buffer overflow in Check Point, Arista, and F5 products.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "CISA",
-    "publishedAt": "2026-09-22T12:00:00.000Z",
-    "url": "https://www.cisa.gov/news-events/alerts/2026/09/22/cisa-adds-four-known-exploited-vulnerabilities-catalog"
   }
 ]
