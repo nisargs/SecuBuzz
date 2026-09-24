@@ -1,5 +1,77 @@
 [
   {
+    "id": "https://cybernewsai.com/blog/autonomous-ai-agents-steal-600k-credit-cards-skimmer-attacks",
+    "sourceUrl": "https://cybernewsai.com/blog/autonomous-ai-agents-steal-600k-credit-cards-skimmer-attacks",
+    "title": "AI Agents Steal 600,000 Cards from 119 E‑Commerce Sites",
+    "headline": "AI Agents Steal 600,000 Cards from 119 E‑Commerce Sites",
+    "summary": "Autonomous AI agents using Strix and Cairn breached 119 e‑commerce sites, exfiltrating 600,000 payment cards. The operation cost $25 per victim. The attack demonstrates large‑scale credential theft via automated skimming, highlighting the need for stronger authentication and monitoring.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-09-23T16:30:00.000Z",
+    "url": "https://cybernewsai.com/blog/autonomous-ai-agents-steal-600k-credit-cards-skimmer-attacks"
+  },
+  {
+    "id": "https://www.securityweek.com/arista-urges-immediate-patching-of-exploited-vco-zero-day/",
+    "sourceUrl": "https://www.securityweek.com/arista-urges-immediate-patching-of-exploited-vco-zero-day/",
+    "title": "Arista Urges Immediate Patching of Exploited VCO Zero-Day",
+    "headline": "Arista Urges Immediate Patching of Exploited VCO Zero-Day",
+    "summary": "Arista has issued a critical‑severity advisory urging immediate patching of a VCO zero‑day vulnerability that allows remote attackers to trigger privileged internal functionality. The flaw can be exploited to gain elevated access, potentially compromising network infrastructure. Users should apply the vendor’s patch as soon as possible to mitigate the risk.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-09-23T08:33:06.000Z",
+    "url": "https://www.securityweek.com/arista-urges-immediate-patching-of-exploited-vco-zero-day/"
+  },
+  {
+    "id": "https://www.darkreading.com/cybersecurity-operations/deception-by-design-cisa-s-guide-to-tricking-cybercriminals",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/deception-by-design-cisa-s-guide-to-tricking-cybercriminals",
+    "title": "CISA Releases Guide to Deploy Deception Tactics",
+    "headline": "CISA Releases Guide to Deploy Deception Tactics",
+    "summary": "CISA releases a guide that encourages organizations with limited resources to deploy deception tactics, such as honeypots and fake data, to lure and trap cybercriminals. The manual outlines low‑cost, easy‑to‑implement traps that can expose attackers’ methods and reduce the risk of successful intrusions.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-09-22T19:59:24.000Z",
+    "url": "https://www.darkreading.com/cybersecurity-operations/deception-by-design-cisa-s-guide-to-tricking-cybercriminals"
+  },
+  {
+    "id": "https://www.wiz.io/blog/wiz-mcp-agent-integrations",
+    "sourceUrl": "https://www.wiz.io/blog/wiz-mcp-agent-integrations",
+    "title": "WIN AI Expands Ecosystem with Agent Integrations",
+    "headline": "WIN AI Expands Ecosystem with Agent Integrations",
+    "summary": "WIN AI expands its ecosystem by integrating agents that allow partners to connect and share data across platforms. The Wiz MCP for WIN partners accelerates the development of a connected AI environment, enabling faster deployment of AI services and improving interoperability among security tools.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Wiz Research",
+    "publishedAt": "2026-09-22T12:00:01.000Z",
+    "url": "https://www.wiz.io/blog/wiz-mcp-agent-integrations"
+  },
+  {
+    "id": "https://krebsonsecurity.com/2026/08/canadian-man-pleads-guilty-in-snowflake-extortions/",
+    "sourceUrl": "https://krebsonsecurity.com/2026/08/canadian-man-pleads-guilty-in-snowflake-extortions/",
+    "title": "Canadian Hacker Pleads Guilty for Snowflake Extortions",
+    "headline": "Canadian Hacker Pleads Guilty for Snowflake Extortions",
+    "summary": "A 26‑year‑old Canadian man, Connor Riley Moucka, admitted to hacking Snowflake to extort over 165 organizations and stealing call and text records of more than 100 million AT&T customers. He pleaded guilty to computer fraud and conspiracy to hack and extort.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Krebs on Security",
+    "publishedAt": "2026-08-06T17:00:56.000Z",
+    "url": "https://krebsonsecurity.com/2026/08/canadian-man-pleads-guilty-in-snowflake-extortions/"
+  },
+  {
+    "id": "https://krebsonsecurity.com/2026/07/read-this-before-you-buy-that-tv-streaming-stick/",
+    "sourceUrl": "https://krebsonsecurity.com/2026/07/read-this-before-you-buy-that-tv-streaming-stick/",
+    "title": "TV Streaming Sticks Used to Spoof Phones and Defraud Ad Networks",
+    "headline": "TV Streaming Sticks Used to Spoof Phones and Defraud Ad Networks",
+    "summary": "Generic TV streaming sticks that promise unlimited content are secretly renting users’ Internet connections to strangers and spoofing themselves as mobile phones to click ads on AI‑generated sites. The devices facilitate widespread ad fraud against online merchants and advertising networks.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "Krebs on Security",
+    "publishedAt": "2026-07-30T16:49:00.000Z",
+    "url": "https://krebsonsecurity.com/2026/07/read-this-before-you-buy-that-tv-streaming-stick/"
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/placeholder-domain-used-in-dev-docs-now-serves-clickfix-attacks/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/placeholder-domain-used-in-dev-docs-now-serves-clickfix-attacks/",
     "title": "Placeholder Domain Now Hosts ClickFix Phishing Page",
@@ -1126,77 +1198,5 @@
     "source": "CISA",
     "publishedAt": "2026-09-22T12:00:00.000Z",
     "url": "https://www.cisa.gov/news-events/alerts/2026/09/22/cisa-adds-four-known-exploited-vulnerabilities-catalog"
-  },
-  {
-    "id": "https://www.darkreading.com/cyber-risk/third-industrial-orgs-see-cybersecurity-risk-top-obstacle",
-    "sourceUrl": "https://www.darkreading.com/cyber-risk/third-industrial-orgs-see-cybersecurity-risk-top-obstacle",
-    "title": "Industrial Organizations Rank Cybersecurity Risk as Top Growth Obstacle",
-    "headline": "Industrial Organizations Rank Cybersecurity Risk as Top Growth Obstacle",
-    "summary": "A recent study shows that over one third of industrial organizations view cybersecurity risk as a primary barrier to growth, prompting increased investment in security as connected operations, AI adoption, and IT/OT convergence expand operational risk.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "publishedAt": "2026-09-22T12:00:00.000Z",
-    "url": "https://www.darkreading.com/cyber-risk/third-industrial-orgs-see-cybersecurity-risk-top-obstacle"
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/09/22/fake-ai-subscription-sites-google-sign-in/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/22/fake-ai-subscription-sites-google-sign-in/",
-    "title": "Scammers Use Real Google Sign‑In Screens to Sell Fake AI Subscriptions",
-    "headline": "Scammers Use Real Google Sign‑In Screens to Sell Fake AI Subscriptions",
-    "summary": "Scammers employ a $249 toolkit to create over 100 fake AI subscription sites that mimic legitimate Google sign‑in screens, convincing users to pay up to $2,000 annually for unverified services. Malwarebytes linked all sites to the same developer and toolkit, exposing a widespread phishing operation.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-09-22T08:54:30.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/09/22/fake-ai-subscription-sites-google-sign-in/"
-  },
-  {
-    "id": "https://www.securityweek.com/japan-dismantles-first-north-korean-laptop-farm-as-us-and-allies-detail-wider-scheme/",
-    "sourceUrl": "https://www.securityweek.com/japan-dismantles-first-north-korean-laptop-farm-as-us-and-allies-detail-wider-scheme/",
-    "title": "Japan Dismantles First North Korean Laptop Farm as Allies Reveal Wider Scheme",
-    "headline": "Japan Dismantles First North Korean Laptop Farm as Allies Reveal Wider Scheme",
-    "summary": "Japan dismantled a North Korean laptop farm, part of the WaterPlum campaign. A joint US, Japan, Germany, and Australia report details the broader scheme, indicating coordinated state-sponsored espionage targeting global infrastructure.",
-    "category": "NATION_STATE",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-09-22T08:37:06.000Z",
-    "url": "https://www.securityweek.com/japan-dismantles-first-north-korean-laptop-farm-as-us-and-allies-detail-wider-scheme/"
-  },
-  {
-    "id": "https://cybernewsai.com/blog/eviltokens-phaas-disrupted-12000-microsoft-accounts",
-    "sourceUrl": "https://cybernewsai.com/blog/eviltokens-phaas-disrupted-12000-microsoft-accounts",
-    "title": "Microsoft Disrupts EvilTokens PhaaS After 12,000 Accounts Breached",
-    "headline": "Microsoft Disrupts EvilTokens PhaaS After 12,000 Accounts Breached",
-    "summary": "Microsoft’s Digital Crimes Unit and international partners disrupted the EvilTokens PhaaS platform after it hijacked over 12,000 enterprise cloud accounts, exposing sensitive data and compromising access to corporate resources. The takedown stops further credential theft and limits ongoing exploitation of the compromised accounts.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-09-22T19:18:43.000Z",
-    "url": "https://cybernewsai.com/blog/eviltokens-phaas-disrupted-12000-microsoft-accounts"
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/shinyhunters-claims-fbi-hack-data-theft-in-peoplesoft-zero-day-breach/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/shinyhunters-claims-fbi-hack-data-theft-in-peoplesoft-zero-day-breach/",
-    "title": "ShinyHunters Claims FBI Hack via Oracle PeopleSoft Zero-Day",
-    "headline": "ShinyHunters Claims FBI Hack via Oracle PeopleSoft Zero-Day",
-    "summary": "ShinyHunters claims to have breached FBI systems via a new Oracle PeopleSoft zero‑day vulnerability, accessing internal services and exfiltrating sensitive employee and job applicant data. The gang alleges the exploit bypassed security controls, enabling data theft before detection. No CVE ID is disclosed.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-09-22T19:13:29.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/shinyhunters-claims-fbi-hack-data-theft-in-peoplesoft-zero-day-breach/"
-  },
-  {
-    "id": "https://thehackernews.com/2026/09/check-point-warns-of-management-server.html",
-    "sourceUrl": "https://thehackernews.com/2026/09/check-point-warns-of-management-server.html",
-    "title": "Check Point Warns of Management Server Zero-Day Exploited in Targeted Attacks",
-    "headline": "Check Point Warns of Management Server Zero-Day Exploited in Targeted Attacks",
-    "summary": "Check Point disclosed that attackers exploited CVE-2026-93616, a zero‑day flaw in its Security Management Server, on July 23. The vulnerability allows unauthenticated script execution via the server’s web service. A patch was released on September 22 to protect firewall policy management.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "publishedAt": "2026-09-22T18:29:39.000Z",
-    "url": "https://thehackernews.com/2026/09/check-point-warns-of-management-server.html"
   }
 ]
