@@ -1,5 +1,77 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/09/25/eu-usa-retail-chain-cyberattacks/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/25/eu-usa-retail-chain-cyberattacks/",
+    "title": "Incident Count Survey Shows Gaps in Store‑Wide Security Coverage",
+    "headline": "Incident Count Survey Shows Gaps in Store‑Wide Security Coverage",
+    "summary": "A VikingCloud survey of 200 security and IT leaders at U.S. and European chains found that none of the 13 security technologies measured reduced incident spread between sites, nor did real‑time visibility. The only policy that helped was a specific decision highlighted in the study.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-09-25T04:30:26.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/09/25/eu-usa-retail-chain-cyberattacks/"
+  },
+  {
+    "id": "https://www.thezdi.com/blog/2026/6/9/the-june-2026-security-update-review",
+    "sourceUrl": "https://www.thezdi.com/blog/2026/6/9/the-june-2026-security-update-review",
+    "title": "Microsoft and Adobe Release Largest Patch Tuesday Update of 2026",
+    "headline": "Microsoft and Adobe Release Largest Patch Tuesday Update of 2026",
+    "summary": "Microsoft and Adobe released the largest Patch Tuesday update yet, addressing 123 unique CVEs across products such as Acrobat Reader, ColdFusion, and InDesign. Eleven CVEs were reported through ZDI. The update includes critical fixes for multiple Adobe and Microsoft applications, improving overall security posture.",
+    "category": "VULNERABILITY",
+    "severity": "LOW",
+    "source": "Zero Day Initiative",
+    "publishedAt": "2026-06-09T18:12:18.000Z",
+    "url": "https://www.thezdi.com/blog/2026/6/9/the-june-2026-security-update-review"
+  },
+  {
+    "id": "https://thedfirreport.com/2026/04/22/bissa-scanner-exposed-ai-assisted-mass-exploitation-and-credential-harvesting/",
+    "sourceUrl": "https://thedfirreport.com/2026/04/22/bissa-scanner-exposed-ai-assisted-mass-exploitation-and-credential-harvesting/",
+    "title": "Bissa Scanner Exposed: AI-Driven Credential Harvesting Operation",
+    "headline": "Bissa Scanner Exposed: AI-Driven Credential Harvesting Operation",
+    "summary": "An exposed server revealed the Bissa scanner platform, used for large-scale credential harvesting. The operator employed AI tools Claude Code and OpenClaw to orchestrate and refine the collection pipeline, enabling mass exploitation across multiple victims. The operation highlights advanced automated credential theft techniques.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The DFIR Report",
+    "publishedAt": "2026-04-22T14:51:21.000Z",
+    "url": "https://thedfirreport.com/2026/04/22/bissa-scanner-exposed-ai-assisted-mass-exploitation-and-credential-harvesting/"
+  },
+  {
+    "id": "http://security.googleblog.com/feeds/3718049046001981559/comments/default",
+    "sourceUrl": "http://security.googleblog.com/feeds/3718049046001981559/comments/default",
+    "title": "Google Releases Device Bound Session Credentials for Chrome",
+    "headline": "Google Releases Device Bound Session Credentials for Chrome",
+    "summary": "Google now offers Device Bound Session Credentials (DBSC) for Windows users in Chrome 146, with macOS support coming soon. DBSC ties session cookies to device credentials, preventing malware from stealing or replaying cookies. The feature aims to reduce session theft, a common threat from infostealer malware like LummaC2.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Google Security",
+    "publishedAt": "2026-04-09T17:07:00.001Z",
+    "url": "http://security.googleblog.com/feeds/3718049046001981559/comments/default"
+  },
+  {
+    "id": "http://security.googleblog.com/feeds/7611943504123181983/comments/default",
+    "sourceUrl": "http://security.googleblog.com/feeds/7611943504123181983/comments/default",
+    "title": "Google Enhances AI Defenses Against Indirect Prompt Injection",
+    "headline": "Google Enhances AI Defenses Against Indirect Prompt Injection",
+    "summary": "Google GenAI Security Team is continuously improving resistance to indirect prompt injection (IPI) in Workspace with Gemini. IPI lets attackers inject malicious instructions into an LLM’s data or tools, potentially without user input. The team is enhancing LLM defenses and adding new AI application safeguards to counter evolving IPI attacks.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Google Security",
+    "publishedAt": "2026-04-02T16:00:00.003Z",
+    "url": "http://security.googleblog.com/feeds/7611943504123181983/comments/default"
+  },
+  {
+    "id": "https://thedfirreport.com/2026/02/23/apache-activemq-exploit-leads-to-lockbit-ransomware/",
+    "sourceUrl": "https://thedfirreport.com/2026/02/23/apache-activemq-exploit-leads-to-lockbit-ransomware/",
+    "title": "Apache ActiveMQ CVE-2023-46604 RCE Enables LockBit Ransomware Attack",
+    "headline": "Apache ActiveMQ CVE-2023-46604 RCE Enables LockBit Ransomware Attack",
+    "summary": "A threat actor exploited CVE-2023-46604 on an exposed Apache ActiveMQ server, using a Java Spring class to achieve remote code execution. The compromise allowed the actor to deploy LockBit ransomware, encrypting victim data and demanding payment. Patching ActiveMQ and disabling exposed endpoints mitigates the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The DFIR Report",
+    "publishedAt": "2026-02-23T14:09:43.000Z",
+    "url": "https://thedfirreport.com/2026/02/23/apache-activemq-exploit-leads-to-lockbit-ransomware/"
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/09/25/new-infosec-products-of-the-month-september-2026/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/09/25/new-infosec-products-of-the-month-september-2026/",
     "title": "New Infosec Products of the Month: September 2026",
