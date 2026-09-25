@@ -1,5 +1,77 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/09/25/docker-launches-cloud-sandboxes/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/25/docker-launches-cloud-sandboxes/",
+    "title": "Docker Launches OCI‑Based Kits for Secure AI Agent Execution",
+    "headline": "Docker Launches OCI‑Based Kits for Secure AI Agent Execution",
+    "summary": "Docker announced Docker Cloud Sandboxes, a solution that packages AI agents and guardrails into OCI‑based kits, enabling secure, isolated execution in the cloud. The service allows organizations to run agentic workloads at scale without using local developer hardware or provisioning new infrastructure, reducing cost and resource usage.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-09-25T07:57:50.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/09/25/docker-launches-cloud-sandboxes/"
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/09/25/fake-payroll-desktop-apps-screenconnect/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/25/fake-payroll-desktop-apps-screenconnect/",
+    "title": "Fake Payroll Desktop Apps Enable Remote Control of Company Systems",
+    "headline": "Fake Payroll Desktop Apps Enable Remote Control of Company Systems",
+    "summary": "An attacker distributed counterfeit desktop applications for three major US payroll and HR platforms. Installing the software installs ScreenConnect, a remote access tool, allowing the attacker to control the victim’s computer covertly. The attack compromises payroll systems and exposes company paychecks to unauthorized access.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "publishedAt": "2026-09-25T07:52:51.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/09/25/fake-payroll-desktop-apps-screenconnect/"
+  },
+  {
+    "id": "https://www.darkreading.com/physical-security/russia-hybrid-cyber-physical-war-europe",
+    "sourceUrl": "https://www.darkreading.com/physical-security/russia-hybrid-cyber-physical-war-europe",
+    "title": "Russia Intensifies Hybrid Cyber-Physical Attacks on Europe",
+    "headline": "Russia Intensifies Hybrid Cyber-Physical Attacks on Europe",
+    "summary": "Russia is escalating cyber sabotage, disinformation, and drone attacks against European countries that support Ukraine, targeting critical infrastructure and political entities. The campaign blends digital and physical tactics to disrupt services and sow confusion. No specific vulnerability or breach reported.",
+    "category": "NATION_STATE",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-09-25T07:00:00.000Z",
+    "url": "https://www.darkreading.com/physical-security/russia-hybrid-cyber-physical-war-europe"
+  },
+  {
+    "id": "https://www.securityweek.com/roundcube-webmail-vulnerability-in-attackers-crosshairs/",
+    "sourceUrl": "https://www.securityweek.com/roundcube-webmail-vulnerability-in-attackers-crosshairs/",
+    "title": "Roundcube Webmail SQL Injection Exploited as CVE-2026-48842",
+    "headline": "Roundcube Webmail SQL Injection Exploited as CVE-2026-48842",
+    "summary": "The CVE-2026-48842 SQL injection flaw in Roundcube Webmail allows unauthenticated attackers to execute arbitrary SQL commands, potentially leading to data exfiltration or remote code execution. The vulnerability is publicly documented and requires no credentials to exploit. Patching Roundcube to the latest version mitigates the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-09-25T06:57:40.000Z",
+    "url": "https://www.securityweek.com/roundcube-webmail-vulnerability-in-attackers-crosshairs/"
+  },
+  {
+    "id": "https://thehackernews.com/2026/09/cloudflare-fixes-flaw-that-let-one.html",
+    "sourceUrl": "https://thehackernews.com/2026/09/cloudflare-fixes-flaw-that-let-one.html",
+    "title": "Cloudflare Containers Flaw Allows Reading of Leftover Disk Data",
+    "headline": "Cloudflare Containers Flaw Allows Reading of Leftover Disk Data",
+    "summary": "A flaw in Cloudflare Containers enabled a paying customer to read data remnants left on the same server by previous containers. The data came from unused disk space, not live workloads, and the attacker could not select which data to access. Cloudflare has issued a fix.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "publishedAt": "2026-09-25T04:49:22.000Z",
+    "url": "https://thehackernews.com/2026/09/cloudflare-fixes-flaw-that-let-one.html"
+  },
+  {
+    "id": "https://thehackernews.com/2026/09/wso2-and-adobe-commerce-flaws-exploited.html",
+    "sourceUrl": "https://thehackernews.com/2026/09/wso2-and-adobe-commerce-flaws-exploited.html",
+    "title": "WSO2 API Control Plane Path Traversal Exploited, Added to CISA KEV",
+    "headline": "WSO2 API Control Plane Path Traversal Exploited, Added to CISA KEV",
+    "summary": "CISA added a critical path traversal flaw in WSO2 API Control Plane, identified as CVE-2026-5430 with a CVSS score of 9.8, to its Known Exploited Vulnerabilities catalog after evidence of active exploitation. The vulnerability allows attackers to access arbitrary files on the server.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "publishedAt": "2026-09-25T04:46:34.000Z",
+    "url": "https://thehackernews.com/2026/09/wso2-and-adobe-commerce-flaws-exploited.html"
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/09/25/eu-usa-retail-chain-cyberattacks/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/09/25/eu-usa-retail-chain-cyberattacks/",
     "title": "Incident Count Survey Shows Gaps in Store‑Wide Security Coverage",
