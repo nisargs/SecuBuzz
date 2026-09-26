@@ -1,5 +1,53 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-365-kb5002907-update-paused-after-office-license-deactivations/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-365-kb5002907-update-paused-after-office-license-deactivations/",
+    "title": "Microsoft Pauses KB5002907 Update After Office 2016/2019 License Deactivations",
+    "headline": "Microsoft Pauses KB5002907 Update After Office 2016/2019 License Deactivations",
+    "summary": "Microsoft halted rollout of KB5002907, a Microsoft 365 update, after users reported that it deactivated or removed perpetual Office 2016 and Office 2019 installations. The pause follows widespread reports of license deactivation, prompting Microsoft to investigate the update’s impact on legacy Office products.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-09-26T15:50:38.000Z",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-365-kb5002907-update-paused-after-office-license-deactivations/"
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/github-actions-re-enabled-with-mini-shai-hulud-payload-still-active/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/github-actions-re-enabled-with-mini-shai-hulud-payload-still-active/",
+    "title": "GitHub Actions Re-Enabled While Mini Shai-Hulud Payload Remains Active",
+    "headline": "GitHub Actions Re-Enabled While Mini Shai-Hulud Payload Remains Active",
+    "summary": "Two third‑party GitHub Actions that were previously compromised in a Mini Shai‑Hulud ransomware campaign were re‑enabled by their maintainer. The actions still point to malicious code, allowing attackers to execute the payload in any workflow that uses them. The continued availability poses a risk to projects relying on these actions.",
+    "category": "RANSOMWARE",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-09-26T14:19:46.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/github-actions-re-enabled-with-mini-shai-hulud-payload-still-active/"
+  },
+  {
+    "id": "https://thehackernews.com/2026/09/attackers-bypass-wafs-to-exploit-oracle.html",
+    "sourceUrl": "https://thehackernews.com/2026/09/attackers-bypass-wafs-to-exploit-oracle.html",
+    "title": "Oracle PeopleSoft Vulnerability CVE-2026-35273 Exploited via WAF Bypass, Deploying Web Shells",
+    "headline": "Oracle PeopleSoft Vulnerability CVE-2026-35273 Exploited via WAF Bypass, Deploying Web Shells",
+    "summary": "Google warns of renewed mass exploitation of Oracle PeopleSoft's CVE-2026-35273, a critical flaw enabling unauthenticated remote code execution. Attackers bypass WAFs, deploy web shells across multiple sectors worldwide. The zero‑day exploitation demands immediate patching and WAF rule updates to mitigate the high‑risk threat.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "publishedAt": "2026-09-26T11:46:40.000Z",
+    "url": "https://thehackernews.com/2026/09/attackers-bypass-wafs-to-exploit-oracle.html"
+  },
+  {
+    "id": "https://thehackernews.com/2026/09/zero-trust-for-ai-agents-starts-with.html",
+    "sourceUrl": "https://thehackernews.com/2026/09/zero-trust-for-ai-agents-starts-with.html",
+    "title": "Zero Trust for AI Agents Begins with Addressing Zero Visibility",
+    "headline": "Zero Trust for AI Agents Begins with Addressing Zero Visibility",
+    "summary": "The shift toward zero trust for AI agents starts by tackling the lack of visibility into agent behavior. Recent incidents, including a notable intrusion at Hugging Face during OpenAI agent testing, highlight the need for monitoring, logging, and governance to secure AI deployments.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "publishedAt": "2026-09-26T10:30:00.000Z",
+    "url": "https://thehackernews.com/2026/09/zero-trust-for-ai-agents-starts-with.html"
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/artificial-intelligence/openais-ai-agents-accidentally-uploaded-user-provided-images-to-third-party-sites/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openais-ai-agents-accidentally-uploaded-user-provided-images-to-third-party-sites/",
     "title": "OpenAI AI Agents Uploaded User Images to Third-Party Sites",
