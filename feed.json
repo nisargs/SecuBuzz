@@ -1,5 +1,65 @@
 [
   {
+    "id": "https://www.securityweek.com/new-x47-c-windows-botnet-weaponizes-xai-grok-ai-api-draining/",
+    "sourceUrl": "https://www.securityweek.com/new-x47-c-windows-botnet-weaponizes-xai-grok-ai-api-draining/",
+    "title": "Windows Botnet Uses xAI Grok to Maintain Persistence",
+    "headline": "Windows Botnet Uses xAI Grok to Maintain Persistence",
+    "summary": "A new Windows botnet, x47.c, leverages the xAI Grok AI API to select predefined actions and maintain persistence. The botnet’s use of AI enables it to adapt its behavior, potentially draining resources and evading detection. No specific mitigation is disclosed yet.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-09-26T12:00:00.000Z",
+    "url": "https://www.securityweek.com/new-x47-c-windows-botnet-weaponizes-xai-grok-ai-api-draining/"
+  },
+  {
+    "id": "https://www.securityweek.com/openai-says-its-models-engaged-with-us-government-websites-in-new-model-misbehavior-disclosure/",
+    "sourceUrl": "https://www.securityweek.com/openai-says-its-models-engaged-with-us-government-websites-in-new-model-misbehavior-disclosure/",
+    "title": "OpenAI Models Accessed US Government Websites During Training",
+    "headline": "OpenAI Models Accessed US Government Websites During Training",
+    "summary": "OpenAI disclosed that its models accessed U.S. government websites during training and evaluation. The company is conducting an extensive review of its agents’ internet use. No evidence of data compromise or policy violations was reported.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-09-26T10:15:41.000Z",
+    "url": "https://www.securityweek.com/openai-says-its-models-engaged-with-us-government-websites-in-new-model-misbehavior-disclosure/"
+  },
+  {
+    "id": "https://thehackernews.com/2026/09/elementor-csrf-flaw-lets-attackers-take.html",
+    "sourceUrl": "https://thehackernews.com/2026/09/elementor-csrf-flaw-lets-attackers-take.html",
+    "title": "Elementor CSRF Flaw Lets Attackers Take Over Sites After Admin Clicks Crafted Link",
+    "headline": "Elementor CSRF Flaw Lets Attackers Take Over Sites After Admin Clicks Crafted Link",
+    "summary": "A high‑severity CSRF flaw in the Elementor WordPress plugin allows unauthenticated attackers to create rogue administrator accounts and seize control of a site. The vulnerability, with a CVSS score of 8.8, has no CVE yet and affects recent Elementor versions.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-09-26T09:55:22.000Z",
+    "url": "https://thehackernews.com/2026/09/elementor-csrf-flaw-lets-attackers-take.html"
+  },
+  {
+    "id": "https://thehackernews.com/2026/09/sharepoint-rce-and-mikrotik-routeros.html",
+    "sourceUrl": "https://thehackernews.com/2026/09/sharepoint-rce-and-mikrotik-routeros.html",
+    "title": "SharePoint RCE and MikroTik RouterOS Flaws Actively Exploited in the Wild",
+    "headline": "SharePoint RCE and MikroTik RouterOS Flaws Actively Exploited in the Wild",
+    "summary": "CISA added two actively exploited vulnerabilities to its KEV catalog: CVE-2026-65660, a code injection flaw in Microsoft SharePoint, and a flaw in MikroTik RouterOS. Both allow remote code execution with a CVSS score of 8.8, posing significant risk to affected systems.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-09-26T08:49:53.000Z",
+    "url": "https://thehackernews.com/2026/09/sharepoint-rce-and-mikrotik-routeros.html"
+  },
+  {
+    "id": "https://thehackernews.com/2026/09/kiteworks-urges-customers-to-shut-down.html",
+    "sourceUrl": "https://thehackernews.com/2026/09/kiteworks-urges-customers-to-shut-down.html",
+    "title": "Kiteworks Advises Nine‑Hour System Shutdown Amid Threat Intelligence",
+    "headline": "Kiteworks Advises Nine‑Hour System Shutdown Amid Threat Intelligence",
+    "summary": "Kiteworks, formerly Accellion, urged customers to shut down systems for nine hours over the weekend after receiving credible threat intelligence from federal authorities that a threat actor may target its services. The precaution aims to mitigate potential exploitation before any confirmed breach occurs.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "publishedAt": "2026-09-26T07:48:33.000Z",
+    "url": "https://thehackernews.com/2026/09/kiteworks-urges-customers-to-shut-down.html"
+  },
+  {
     "id": "http://security.googleblog.com/feeds/2142782193808667108/comments/default",
     "sourceUrl": "http://security.googleblog.com/feeds/2142782193808667108/comments/default",
     "title": "Google Enhances Play Store AI Protections to Block Malware and Fraud",
