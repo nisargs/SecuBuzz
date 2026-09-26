@@ -1,5 +1,29 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/shinyhunters-uses-waf-bypass-trick-in-oracle-peoplesoft-attacks/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/shinyhunters-uses-waf-bypass-trick-in-oracle-peoplesoft-attacks/",
+    "title": "ShinyHunters Exploits Oracle PeopleSoft CVE-2026-35273 via WAF Bypass",
+    "headline": "ShinyHunters Exploits Oracle PeopleSoft CVE-2026-35273 via WAF Bypass",
+    "summary": "ShinyHunters uses a URL‑encoding trick to bypass web application firewall rules and exploit the Oracle PeopleSoft CVE-2026-35273 flaw, enabling widespread attacks on vulnerable servers. The group resumes exploitation after the bypass, targeting systems still affected by the flaw.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-09-26T19:03:34.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/shinyhunters-uses-waf-bypass-trick-in-oracle-peoplesoft-attacks/"
+  },
+  {
+    "id": "https://thehackernews.com/2026/09/lunex-stealer-abuses-amd-driver-to.html",
+    "sourceUrl": "https://thehackernews.com/2026/09/lunex-stealer-abuses-amd-driver-to.html",
+    "title": "Lunex Stealer Uses AMD Driver to Disable Security Monitoring and Steal Browser Credentials",
+    "headline": "Lunex Stealer Uses AMD Driver to Disable Security Monitoring and Steal Browser Credentials",
+    "summary": "Lunex Stealer, part of a malware‑as‑a‑service platform, abuses an AMD driver to disable security monitoring and steal browser credentials from Ukrainian‑speaking users. The four‑stage attack chain begins with a fake CAPTCHA page and targets users via compromised Ukrainian websites.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "publishedAt": "2026-09-26T18:22:52.000Z",
+    "url": "https://thehackernews.com/2026/09/lunex-stealer-abuses-amd-driver-to.html"
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-365-kb5002907-update-paused-after-office-license-deactivations/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-365-kb5002907-update-paused-after-office-license-deactivations/",
     "title": "Microsoft Pauses KB5002907 Update After Office 2016/2019 License Deactivations",
