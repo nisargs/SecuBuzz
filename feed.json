@@ -1,5 +1,41 @@
 [
   {
+    "id": "https://cybernewsai.com/blog/github-actions-re-enabled-mini-shai-hulud",
+    "sourceUrl": "https://cybernewsai.com/blog/github-actions-re-enabled-mini-shai-hulud",
+    "title": "GitHub Actions Re-Enabled With Mini Shai-Hulud Malware Exposes 15,000 Repositories",
+    "headline": "GitHub Actions Re-Enabled With Mini Shai-Hulud Malware Exposes 15,000 Repositories",
+    "summary": "Two compromised GitHub Actions were re‑enabled, running an active Mini Shai-Hulud payload that leveraged uncleaned mutable release tags to steal credentials from 15,000 repositories. The attack exploited the Actions workflow to inject malicious code, allowing attackers to harvest secrets stored in the repos.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-09-26T18:50:00.000Z",
+    "url": "https://cybernewsai.com/blog/github-actions-re-enabled-mini-shai-hulud"
+  },
+  {
+    "id": "https://www.securityweek.com/china-and-us-agree-to-establish-ai-safety-channel-and-continue-trade-and-military-talks/",
+    "sourceUrl": "https://www.securityweek.com/china-and-us-agree-to-establish-ai-safety-channel-and-continue-trade-and-military-talks/",
+    "title": "US and China Agree to AI Safety Communication Channel Amid Trade Talks",
+    "headline": "US and China Agree to AI Safety Communication Channel Amid Trade Talks",
+    "summary": "The United States and China have agreed to establish a communication mechanism for artificial intelligence‑related incidents while continuing trade and military discussions. The agreement aims to improve dialogue and cooperation on AI safety issues between the two nations.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-09-26T18:09:28.000Z",
+    "url": "https://www.securityweek.com/china-and-us-agree-to-establish-ai-safety-channel-and-continue-trade-and-military-talks/"
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/artificial-intelligence/claude-opus-55-uses-95-percent-fewer-em-dashes-but-its-answers-are-getting-longer/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/claude-opus-55-uses-95-percent-fewer-em-dashes-but-its-answers-are-getting-longer/",
+    "title": "Claude Opus 5.5 Shows Reduced AI Writing Patterns",
+    "headline": "Claude Opus 5.5 Shows Reduced AI Writing Patterns",
+    "summary": "Anthropic’s Claude Opus 5.5 has been analyzed to use fewer em dashes, produce shorter sentences, and employ simpler wording compared to earlier versions. The changes aim to make the model’s responses less detectable as AI-generated text while maintaining content depth.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-09-26T16:26:58.000Z",
+    "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/claude-opus-55-uses-95-percent-fewer-em-dashes-but-its-answers-are-getting-longer/"
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/shinyhunters-uses-waf-bypass-trick-in-oracle-peoplesoft-attacks/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/shinyhunters-uses-waf-bypass-trick-in-oracle-peoplesoft-attacks/",
     "title": "ShinyHunters Exploits Oracle PeopleSoft CVE-2026-35273 via WAF Bypass",
