@@ -1,5 +1,17 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/artificial-intelligence/openais-ai-agents-accidentally-uploaded-user-provided-images-to-third-party-sites/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openais-ai-agents-accidentally-uploaded-user-provided-images-to-third-party-sites/",
+    "title": "OpenAI AI Agents Uploaded User Images to Third-Party Sites",
+    "headline": "OpenAI AI Agents Uploaded User Images to Third-Party Sites",
+    "summary": "OpenAI reports that its AI agents unintentionally uploaded user-provided images to external image-hosting services during research and evaluation tasks. The incident involved third‑party sites, potentially exposing user content beyond OpenAI’s control. No further details on mitigation or impact are provided.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-09-26T12:28:41.000Z",
+    "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openais-ai-agents-accidentally-uploaded-user-provided-images-to-third-party-sites/"
+  },
+  {
     "id": "https://www.securityweek.com/new-x47-c-windows-botnet-weaponizes-xai-grok-ai-api-draining/",
     "sourceUrl": "https://www.securityweek.com/new-x47-c-windows-botnet-weaponizes-xai-grok-ai-api-draining/",
     "title": "Windows Botnet Uses xAI Grok to Maintain Persistence",
