@@ -1,5 +1,41 @@
 [
   {
+    "id": "https://thedfirreport.com/2025/07/14/kongtuke-filefix-leads-to-new-interlock-rat-variant/",
+    "sourceUrl": "https://thedfirreport.com/2025/07/14/kongtuke-filefix-leads-to-new-interlock-rat-variant/",
+    "title": "New PHP-Based Interlock RAT Variant Discovered",
+    "headline": "New PHP-Based Interlock RAT Variant Discovered",
+    "summary": "Researchers identified a new Interlock RAT variant, KongTuke FileFix, that uses PHP instead of the previous JavaScript-based NodeSnake. The malware is active in a widespread campaign since May 2025, providing attackers with remote access capabilities. No public fix is available yet.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "The DFIR Report",
+    "publishedAt": "2025-07-14T00:50:41.000Z",
+    "url": "https://thedfirreport.com/2025/07/14/kongtuke-filefix-leads-to-new-interlock-rat-variant/"
+  },
+  {
+    "id": "https://www.crowdstrike.com/en-us/blog/phantomraven-llm-generated-information-stealer-for-bug-bounty-hunting/",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/phantomraven-llm-generated-information-stealer-for-bug-bounty-hunting/",
+    "title": "PhantomRaven: LLM‑Generated Information Stealer for Bug‑Bounty Testing",
+    "headline": "PhantomRaven: LLM‑Generated Information Stealer for Bug‑Bounty Testing",
+    "summary": "PhantomRaven is an LLM‑generated information stealer crafted for bug‑bounty researchers. The tool harvests credentials and sensitive data from target systems, enabling security analysts to test defenses. It demonstrates how AI can automate data exfiltration for legitimate testing purposes. No public exploitation reported.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "CrowdStrike",
+    "publishedAt": "2026-09-15T05:00:00.000Z",
+    "url": "https://www.crowdstrike.com/en-us/blog/phantomraven-llm-generated-information-stealer-for-bug-bounty-hunting/"
+  },
+  {
+    "id": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-september-2026/",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-september-2026/",
+    "title": "September 2026 Patch Tuesday: Two Exploited Zero‑Days and 113 Critical Vulnerabilities Among 972 CVEs",
+    "headline": "September 2026 Patch Tuesday: Two Exploited Zero‑Days and 113 Critical Vulnerabilities Among 972 CVEs",
+    "summary": "September 2026 Patch Tuesday revealed two zero‑day vulnerabilities that were actively exploited in the wild, alongside 113 critical flaws identified among 972 CVEs. The disclosed exploits target enterprise software, potentially enabling remote code execution and data compromise. Patches are available; administrators should apply them immediately to mitigate risk.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "CrowdStrike",
+    "publishedAt": "2026-09-08T05:00:00.000Z",
+    "url": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-september-2026/"
+  },
+  {
     "id": "https://cybernewsai.com/blog/cisa-kev-alert-sharepoint-wso2-adobe-commerce-exploited",
     "sourceUrl": "https://cybernewsai.com/blog/cisa-kev-alert-sharepoint-wso2-adobe-commerce-exploited",
     "title": "CISA Adds WSO2, SharePoint, Adobe Commerce Vulnerabilities to KEV",
