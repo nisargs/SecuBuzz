@@ -1,5 +1,41 @@
 [
   {
+    "id": "http://security.googleblog.com/feeds/1964027891567384535/comments/default",
+    "sourceUrl": "http://security.googleblog.com/feeds/1964027891567384535/comments/default",
+    "title": "Android 16+ Adds New Theft Protection Features",
+    "headline": "Android 16+ Adds New Theft Protection Features",
+    "summary": "Google’s Android Security Team released updates for Android 16+ that strengthen theft protection. The changes add multi-layered defenses, enhanced authentication safeguards, and new controls for failed authentications, making stolen devices harder targets and reducing financial fraud risk.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Google Security",
+    "publishedAt": "2026-01-27T16:59:00.001Z",
+    "url": "http://security.googleblog.com/feeds/1964027891567384535/comments/default"
+  },
+  {
+    "id": "https://thedfirreport.com/2025/12/17/cats-got-your-files-lynx-ransomware/",
+    "sourceUrl": "https://thedfirreport.com/2025/12/17/cats-got-your-files-lynx-ransomware/",
+    "title": "Lynx Ransomware Targets Systems via RDP",
+    "headline": "Lynx Ransomware Targets Systems via RDP",
+    "summary": "Lynx ransomware began infecting systems in March 2025 after a single successful Remote Desktop Protocol logon to an internet‑exposed machine. The attack used RDP access without credential stuffing or brute force, indicating a targeted intrusion that could lead to data encryption and extortion.",
+    "category": "RANSOMWARE",
+    "severity": "MEDIUM",
+    "source": "The DFIR Report",
+    "publishedAt": "2025-12-17T19:07:07.000Z",
+    "url": "https://thedfirreport.com/2025/12/17/cats-got-your-files-lynx-ransomware/"
+  },
+  {
+    "id": "https://thedfirreport.com/2025/09/29/from-a-single-click-how-lunar-spider-enabled-a-near-two-month-intrusion/",
+    "sourceUrl": "https://thedfirreport.com/2025/09/29/from-a-single-click-how-lunar-spider-enabled-a-near-two-month-intrusion/",
+    "title": "Lunar Spider Enables Two-Month Intrusion From Single Click",
+    "headline": "Lunar Spider Enables Two-Month Intrusion From Single Click",
+    "summary": "A DFIR report details how the Lunar Spider malware gained initial access, executed, persisted, escalated privileges, evaded defense, accessed credentials, discovered the environment, moved laterally, established command and control, exfiltrated data, and impacted the target over nearly two months.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "The DFIR Report",
+    "publishedAt": "2025-09-29T14:30:06.000Z",
+    "url": "https://thedfirreport.com/2025/09/29/from-a-single-click-how-lunar-spider-enabled-a-near-two-month-intrusion/"
+  },
+  {
     "id": "https://unit42.paloaltonetworks.com/3-consulting-myths-debunked-by-unit-42-experts/",
     "sourceUrl": "https://unit42.paloaltonetworks.com/3-consulting-myths-debunked-by-unit-42-experts/",
     "title": "Unit 42 Debunks Three Consulting Myths",
