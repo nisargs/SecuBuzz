@@ -1,5 +1,65 @@
 [
   {
+    "id": "https://cybernewsai.com/blog/cisa-kev-alert-sharepoint-wso2-adobe-commerce-exploited",
+    "sourceUrl": "https://cybernewsai.com/blog/cisa-kev-alert-sharepoint-wso2-adobe-commerce-exploited",
+    "title": "CISA Adds WSO2, SharePoint, Adobe Commerce Vulnerabilities to KEV",
+    "headline": "CISA Adds WSO2, SharePoint, Adobe Commerce Vulnerabilities to KEV",
+    "summary": "CISA has added three critical vulnerabilities to its Known Exploited Vulnerabilities catalog: a JWT authentication bypass in WSO2, a zero-click flaw in Adobe Commerce, and a code injection flaw in SharePoint. The vulnerabilities allow attackers to gain unauthorized access and execute arbitrary code, potentially compromising sensitive data and systems.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-09-26T04:00:19.000Z",
+    "url": "https://cybernewsai.com/blog/cisa-kev-alert-sharepoint-wso2-adobe-commerce-exploited"
+  },
+  {
+    "id": "https://cybernewsai.com/blog/google-mandiant-cicd-pipeline-hardening-blueprint",
+    "sourceUrl": "https://cybernewsai.com/blog/google-mandiant-cicd-pipeline-hardening-blueprint",
+    "title": "Google and Mandiant Release CI/CD Hardening Blueprint",
+    "headline": "Google and Mandiant Release CI/CD Hardening Blueprint",
+    "summary": "Google Cloud and Mandiant have published a defense‑in‑depth guide to harden CI/CD pipelines, build runners, and software supply chains. The blueprint offers actionable steps to protect against supply‑chain attacks, including secure build environments, code integrity checks, and continuous monitoring.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-09-26T03:58:52.000Z",
+    "url": "https://cybernewsai.com/blog/google-mandiant-cicd-pipeline-hardening-blueprint"
+  },
+  {
+    "id": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+    "sourceUrl": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+    "title": "Intrusion Linked to Three Major Ransomware Gangs",
+    "headline": "Intrusion Linked to Three Major Ransomware Gangs",
+    "summary": "An intrusion investigation revealed connections to three prominent ransomware groups, indicating coordinated activity. The analysis traced the attack’s lifecycle from initial access to command and control, highlighting the gangs’ shared tactics and potential for widespread impact. No specific exploit or vulnerability was disclosed.",
+    "category": "RANSOMWARE",
+    "severity": "HIGH",
+    "source": "The DFIR Report",
+    "publishedAt": "2025-09-08T14:20:31.000Z",
+    "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+  },
+  {
+    "id": "https://thedfirreport.com/2025/08/05/from-bing-search-to-ransomware-bumblebee-and-adaptixc2-deliver-akira-2/",
+    "sourceUrl": "https://thedfirreport.com/2025/08/05/from-bing-search-to-ransomware-bumblebee-and-adaptixc2-deliver-akira-2/",
+    "title": "Bing Search Delivery Used by Bumblebee to Deploy Akira Ransomware",
+    "headline": "Bing Search Delivery Used by Bumblebee to Deploy Akira Ransomware",
+    "summary": "Threat actors leveraged Bing search engine poisoning to deliver Bumblebee malware, which then deployed the Akira ransomware payload. The campaign impersonated legitimate IT tools to trick users into executing malicious links. The attack demonstrates a new delivery vector for ransomware, emphasizing the need for vigilant search engine security.",
+    "category": "RANSOMWARE",
+    "severity": "HIGH",
+    "source": "The DFIR Report",
+    "publishedAt": "2025-08-05T21:30:00.000Z",
+    "url": "https://thedfirreport.com/2025/08/05/from-bing-search-to-ransomware-bumblebee-and-adaptixc2-deliver-akira-2/"
+  },
+  {
+    "id": "https://cybernewsai.com/blog/elementor-rest-nonce-flaw-creates-wordpress-admin",
+    "sourceUrl": "https://cybernewsai.com/blog/elementor-rest-nonce-flaw-creates-wordpress-admin",
+    "title": "Elementor Plugin CSRF Allows Forging Admin Accounts",
+    "headline": "Elementor Plugin CSRF Allows Forging Admin Accounts",
+    "summary": "A critical CSRF flaw in the Elementor WordPress plugin bypasses REST API nonce checks, enabling attackers to create rogue administrator accounts. The vulnerability permits unauthorized admin access without authentication, posing a high risk to site security. Immediate plugin updates and nonce validation fixes are recommended.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-09-26T01:04:23.000Z",
+    "url": "https://cybernewsai.com/blog/elementor-rest-nonce-flaw-creates-wordpress-admin"
+  },
+  {
     "id": "http://security.googleblog.com/feeds/1964027891567384535/comments/default",
     "sourceUrl": "http://security.googleblog.com/feeds/1964027891567384535/comments/default",
     "title": "Android 16+ Adds New Theft Protection Features",
