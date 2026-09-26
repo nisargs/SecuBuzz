@@ -1,5 +1,17 @@
 [
   {
+    "id": "http://security.googleblog.com/feeds/2142782193808667108/comments/default",
+    "sourceUrl": "http://security.googleblog.com/feeds/2142782193808667108/comments/default",
+    "title": "Google Enhances Play Store AI Protections to Block Malware and Fraud",
+    "headline": "Google Enhances Play Store AI Protections to Block Malware and Fraud",
+    "summary": "Google announced that in 2025 its Play Store AI defenses stopped over 1.75 million policy‑violating apps and banned more than 80,000 malicious developers. The company deepened AI and real‑time defenses to counter sophisticated malware, financial fraud, hidden subscriptions, and privacy invasions, protecting billions of users.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Google Security",
+    "publishedAt": "2026-02-19T17:00:00.001Z",
+    "url": "http://security.googleblog.com/feeds/2142782193808667108/comments/default"
+  },
+  {
     "id": "https://thedfirreport.com/2025/07/14/kongtuke-filefix-leads-to-new-interlock-rat-variant/",
     "sourceUrl": "https://thedfirreport.com/2025/07/14/kongtuke-filefix-leads-to-new-interlock-rat-variant/",
     "title": "New PHP-Based Interlock RAT Variant Discovered",
