@@ -9,17 +9,18 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { colors, spacing } from '../theme/theme';
-
-const BLUE = '#4CC9F0';
+import { useTheme } from '../context/ThemeContext';
+import { spacing } from '../theme/theme';
 
 export default function PrivacyPolicyScreen() {
+  const { colors, accentColor } = useTheme();
+
   return (
     <SafeAreaView
-      style={styles.safeArea}
+      style={[styles.safeArea, { backgroundColor: colors.background }]}
       edges={['top', 'bottom']}
     >
-      <View style={styles.header}>
+      <View style={[styles.header, { borderBottomColor: colors.border }]}>
         <Pressable
           accessibilityRole="button"
           accessibilityLabel="Go back"
@@ -33,7 +34,7 @@ export default function PrivacyPolicyScreen() {
           />
         </Pressable>
 
-        <Text style={styles.headerTitle}>
+        <Text style={[styles.headerTitle, { color: colors.textPrimary }]}>
           Privacy Policy
         </Text>
 
@@ -45,54 +46,54 @@ export default function PrivacyPolicyScreen() {
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
       >
-        <Text style={styles.eyebrow}>
+        <Text style={[styles.eyebrow, { color: accentColor }]}>
           APPLICATION PRIVACY & DATA POLICY
         </Text>
 
-        <Text style={styles.title}>
+        <Text style={[styles.title, { color: colors.textPrimary }]}>
           SecuBuzz Privacy Policy
         </Text>
 
-        <Text style={styles.updated}>
+        <Text style={[styles.updated, { color: colors.textMuted }]}>
           Effective date: September 24, 2026
         </Text>
 
-        <Text style={styles.paragraph}>
+        <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
           This Privacy Policy explains how the SecuBuzz mobile application
           handles information and user privacy.
         </Text>
 
-        <Section title="1. Application Information & Developer">
-          <Text style={styles.paragraph}>
+        <Section title="1. Application Information & Developer" colors={colors}>
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
             Application Name: SecuBuzz
           </Text>
 
-          <Text style={styles.paragraph}>
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
             Developer: MiSo Labs (secubuzz.com)
           </Text>
 
-          <Text style={styles.paragraph}>
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
             SecuBuzz is a specialized cybersecurity news and security
             briefing application designed to deliver real-time threat
             intelligence without tracking personal identities.
           </Text>
 
-          <Text style={styles.paragraph}>
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
             Privacy and data deletion inquiries:
           </Text>
 
-          <Text style={styles.contact}>
+          <Text style={[styles.contact, { color: accentColor }]}>
             support@secubuzz.com
           </Text>
         </Section>
 
-        <Section title="2. Information Collected by SecuBuzz">
-          <Text style={styles.paragraph}>
+        <Section title="2. Information Collected by SecuBuzz" colors={colors}>
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
             SecuBuzz is built privacy-first and does not require you to
             create an account to use the application.
           </Text>
 
-          <Text style={styles.paragraph}>
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
             Based on the current version of SecuBuzz,
             the application does not intentionally
             collect your name, email address, phone
@@ -102,241 +103,121 @@ export default function PrivacyPolicyScreen() {
             or authentication credentials.
           </Text>
 
-          <Text style={styles.paragraph}>
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
             Articles that you save are stored locally
             on your device so that your Saved section
             can remember your selections.
           </Text>
+        </Section>
 
-          <Text style={styles.paragraph}>
-            If you choose to enable news notifications,
-            an Expo push notification token is generated for
-            your device and processed to deliver alerts when
-            new cybersecurity briefs are published. This
-            token is strictly used for notification delivery
-            and notification permissions can be revoked at
-            any time through your operating system settings.
+        <Section title="3. User Accounts and Account Deletion" colors={colors}>
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
+            SecuBuzz does not support or require user accounts. You do not
+            create an account, log in, or provide user credentials to access
+            news summaries.
+          </Text>
+
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
+            Because there are no user accounts, there are no remote user account
+            records, user profile databases, or account passwords to delete.
+          </Text>
+
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
+            If you wish to remove all app data from your device, you can delete
+            the application or clear application data in your Android settings.
           </Text>
         </Section>
 
-        <Section title="3. Information Stored on Your Device">
-          <Text style={styles.paragraph}>
-            SecuBuzz stores application data locally
-            on your device. This includes information
-            necessary to remember which articles you
-            have saved.
+        <Section title="4. External Links and Third-Party Sites" colors={colors}>
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
+            SecuBuzz displays summaries of news stories published by
+            third-party sources. Each story includes links that allow you
+            to view the full article on the original publisher's website.
           </Text>
 
-          <Text style={styles.paragraph}>
-            This locally stored information is used
-            only to provide the corresponding
-            application functionality.
-          </Text>
-        </Section>
-
-        <Section title="4. News and Content Data">
-          <Text style={styles.paragraph}>
-            SecuBuzz retrieves cybersecurity news
-            feed data from SecuBuzz infrastructure.
-            The feed contains article information such
-            as headlines, summaries, categories,
-            publication times, source names, and source
-            URLs.
-          </Text>
-
-          <Text style={styles.paragraph}>
-            SecuBuzz may direct you to an external
-            publisher when you choose to read the
-            original article. Once you leave SecuBuzz,
-            the external publisher's privacy practices
-            apply.
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
+            When you open an external link, you leave SecuBuzz and are
+            subject to the terms, privacy practices, and cookie policies of
+            that external site. SecuBuzz is not responsible for the privacy
+            practices, content, or policies of third-party publishers.
           </Text>
         </Section>
 
-        <Section title="5. Hosting and Infrastructure">
-          <Text style={styles.paragraph}>
-            SecuBuzz uses third-party infrastructure
-            providers to host and deliver its
-            cybersecurity news feed.
+        <Section title="5. Data Retention and Deletion" colors={colors}>
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
+            Any saved stories and local preferences are stored directly on
+            your mobile device.
           </Text>
 
-          <Text style={styles.paragraph}>
-            The current feed infrastructure uses
-            Cloudflare R2 for public delivery of
-            SecuBuzz feed data.
-          </Text>
-
-          <Text style={styles.paragraph}>
-            The SecuBuzz mobile application does not
-            send your saved articles to Cloudflare R2.
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
+            You can delete saved stories individually within the application,
+            or delete all local data by uninstalling SecuBuzz or clearing
+            application data in your device settings.
           </Text>
         </Section>
 
-        <Section title="6. AI-Assisted Feed Generation">
-          <Text style={styles.paragraph}>
-            SecuBuzz's backend ingestion process may
-            use third-party AI infrastructure to help
-            generate structured summaries and
-            classifications from publicly available
-            cybersecurity news sources.
+        <Section title="6. Device Permissions" colors={colors}>
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
+            SecuBuzz only requests permissions that are required for core
+            app functionality:
           </Text>
 
-          <Text style={styles.paragraph}>
-            This backend process is separate from the
-            mobile application's local saved-article
-            functionality. The current application is
-            not designed to send your personal
-            information to the AI service as part of
-            normal article browsing.
-          </Text>
-        </Section>
-
-        <Section title="7. Information Sharing">
-          <Text style={styles.paragraph}>
-            SecuBuzz does not intentionally sell your
-            personal information.
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
+            • Notifications: To deliver optional push notification alerts for
+            breaking cybersecurity news. You can enable or disable this
+            permission at any time in Android settings.
           </Text>
 
-          <Text style={styles.paragraph}>
-            The current version of the application is
-            not designed to share your saved articles
-            or personal information with advertisers.
-          </Text>
-
-          <Text style={styles.paragraph}>
-            Information may be processed by service
-            providers that support the operation of
-            SecuBuzz, such as hosting and infrastructure
-            providers, where necessary to provide the
-            service.
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
+            • Internet: To download cybersecurity headlines and summaries from
+            our public feed.
           </Text>
         </Section>
 
-        <Section title="8. Analytics and Advertising">
-          <Text style={styles.paragraph}>
-            The SecuBuzz mobile application does not
-            include third-party advertising SDKs or
-            personalized ad tracking.
-          </Text>
-
-          <Text style={styles.paragraph}>
-            Our public informational website (secubuzz.com)
-            uses privacy-preserving, cookieless Cloudflare
-            Web Analytics to measure aggregate page visits
-            without collecting personal data or using
-            tracking cookies.
-          </Text>
-
-          <Text style={styles.paragraph}>
-            If additional analytics or advertising services
-            are ever added to the mobile application in
-            future versions, this Privacy Policy and
-            applicable Google Play disclosures will be
-            updated as required.
+        <Section title="7. Children's Privacy" colors={colors}>
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
+            SecuBuzz is designed for general audiences and professional
+            cybersecurity awareness. It is not directed at children under the
+            age of 13, and we do not knowingly collect personal information
+            from children.
           </Text>
         </Section>
 
-        <Section title="9. Security">
-          <Text style={styles.paragraph}>
-            SecuBuzz uses reasonable technical and
-            organizational measures appropriate to the
-            nature of the information handled by the
-            application.
-          </Text>
-
-          <Text style={styles.paragraph}>
-            Network communication with SecuBuzz
-            infrastructure is performed using HTTPS
-            where supported by the service endpoint.
+        <Section title="8. Policy Updates" colors={colors}>
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
+            We may update this Privacy Policy from time to time. When changes
+            occur, the effective date at the top of this policy will be
+            updated. Continued use of SecuBuzz indicates acceptance of the
+            updated terms.
           </Text>
         </Section>
 
-        <Section title="10. SecuBuzz Account & Data Deletion Policy">
-          <Text style={styles.paragraph}>
-            Application Name: SecuBuzz
+        <Section title="9. Contact Information" colors={colors}>
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
+            If you have questions or concerns about this Privacy Policy or
+            SecuBuzz data practices, please contact:
           </Text>
 
-          <Text style={styles.paragraph}>
-            No User Account Creation: The SecuBuzz mobile application does not
-            require, create, or support user account registration, passwords, or
-            user profiles. Because SecuBuzz operates without user accounts, there
-            is no SecuBuzz user account database to delete.
+          <Text style={[styles.contact, { color: accentColor }]}>
+            MiSo Labs
           </Text>
 
-          <Text style={styles.paragraph}>
-            How SecuBuzz users can delete all associated data:
+          <Text style={[styles.contact, { color: accentColor }]}>
+            Website: https://secubuzz.com
           </Text>
 
-          <Text style={styles.paragraph}>
-            • SecuBuzz Bookmarks & Local Cache: Saved articles are stored
-            locally on your device. You can remove bookmarks individually
-            within the SecuBuzz app, or delete all local data by opening Android
-            Settings &gt; Apps &gt; SecuBuzz &gt; Storage &gt; Clear Storage / Clear Data,
-            or by uninstalling the SecuBuzz application.
-          </Text>
-
-          <Text style={styles.paragraph}>
-            • SecuBuzz Push Notification Tokens: If you opt in to receive news
-            alerts in SecuBuzz, a pseudonymous push notification token is assigned
-            to your device. You can revoke and delete this token at any time by
-            disabling notifications in Android Settings &gt; Apps &gt; SecuBuzz &gt;
-            Notifications, or by contacting our support team at support@secubuzz.com
-            to request manual deletion of your device token from our SecuBuzz notification server.
+          <Text style={[styles.contact, { color: accentColor }]}>
+            Email: support@secubuzz.com
           </Text>
         </Section>
 
-        <Section title="11. Children's Privacy">
-          <Text style={styles.paragraph}>
-            SecuBuzz is not directed specifically at
-            children and is not designed to knowingly
-            collect personal information from children.
-          </Text>
-        </Section>
-
-        <Section title="12. External Websites">
-          <Text style={styles.paragraph}>
-            SecuBuzz links to cybersecurity news
-            publishers and other external websites.
-            Those websites operate independently of
-            SecuBuzz and may collect information under
-            their own privacy policies.
-          </Text>
-        </Section>
-
-        <Section title="13. Changes to This Policy">
-          <Text style={styles.paragraph}>
-            We may update this Privacy Policy when
-            SecuBuzz's functionality, data practices,
-            infrastructure, or legal requirements
-            change.
+        <View style={[styles.footer, { borderTopColor: colors.border }]}>
+          <Text style={[styles.footerText, { color: colors.textPrimary }]}>
+            SecuBuzz by MiSo Labs
           </Text>
 
-          <Text style={styles.paragraph}>
-            The effective date at the top of this page
-            indicates when this version became
-            effective.
-          </Text>
-        </Section>
-
-        <Section title="14. Contact Us">
-          <Text style={styles.paragraph}>
-            If you have questions, concerns, or
-            requests regarding privacy or data
-            practices, contact:
-          </Text>
-
-          <Text style={styles.contact}>
-            support@secubuzz.com
-          </Text>
-        </Section>
-
-        <View style={styles.footer}>
-          <Text style={styles.footerText}>
-            SecuBuzz
-          </Text>
-
-          <Text style={styles.footerSubtext}>
-            Cybersecurity news and security briefs.
+          <Text style={[styles.footerSubtext, { color: colors.textMuted }]}>
+            Privacy-first cybersecurity intelligence
           </Text>
         </View>
       </ScrollView>
@@ -347,15 +228,17 @@ export default function PrivacyPolicyScreen() {
 type SectionProps = {
   title: string;
   children: React.ReactNode;
+  colors: ReturnType<typeof useTheme>['colors'];
 };
 
 function Section({
   title,
   children,
+  colors,
 }: SectionProps) {
   return (
     <View style={styles.section}>
-      <Text style={styles.sectionTitle}>
+      <Text style={[styles.sectionTitle, { color: colors.textPrimary }]}>
         {title}
       </Text>
 
@@ -367,7 +250,6 @@ function Section({
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: colors.background,
   },
 
   header: {
@@ -376,12 +258,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: spacing.lg,
     borderBottomWidth: 1,
-    borderBottomColor: colors.border,
   },
 
   headerTitle: {
     flex: 1,
-    color: colors.textPrimary,
     fontFamily: 'Exo_700Bold',
     fontSize: 18,
     textAlign: 'center',
@@ -402,7 +282,6 @@ const styles = StyleSheet.create({
   },
 
   eyebrow: {
-    color: BLUE,
     fontFamily: 'Exo_600SemiBold',
     fontSize: 11,
     letterSpacing: 1.8,
@@ -410,14 +289,12 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    color: colors.textPrimary,
     fontFamily: 'Exo_800ExtraBold',
     fontSize: 30,
     lineHeight: 38,
   },
 
   updated: {
-    color: colors.textMuted,
     fontFamily: 'Exo_400Regular',
     fontSize: 13,
     marginTop: 8,
@@ -429,7 +306,6 @@ const styles = StyleSheet.create({
   },
 
   sectionTitle: {
-    color: colors.textPrimary,
     fontFamily: 'Exo_700Bold',
     fontSize: 18,
     lineHeight: 25,
@@ -437,7 +313,6 @@ const styles = StyleSheet.create({
   },
 
   paragraph: {
-    color: colors.textSecondary,
     fontFamily: 'Exo_400Regular',
     fontSize: 15,
     lineHeight: 24,
@@ -445,7 +320,6 @@ const styles = StyleSheet.create({
   },
 
   contact: {
-    color: BLUE,
     fontFamily: 'Exo_600SemiBold',
     fontSize: 15,
     lineHeight: 23,
@@ -454,19 +328,16 @@ const styles = StyleSheet.create({
 
   footer: {
     borderTopWidth: 1,
-    borderTopColor: colors.border,
     paddingTop: spacing.lg,
     marginTop: spacing.md,
   },
 
   footerText: {
-    color: colors.textPrimary,
     fontFamily: 'Exo_700Bold',
     fontSize: 16,
   },
 
   footerSubtext: {
-    color: colors.textMuted,
     fontFamily: 'Exo_400Regular',
     fontSize: 13,
     marginTop: 4,

@@ -16,14 +16,15 @@ import {
   LoadingState,
 } from '../../components/ScreenStates';
 import { useSavedArticles } from '../../context/SavedArticlesContext';
+import { useTheme } from '../../context/ThemeContext';
 import { useArticles } from '../../hooks/useArticles';
 import type { Article } from '../../models/article';
 import { colors, severityColors, spacing } from '../../theme/theme';
+
+const BLUE = colors.accent;
 import { formatPublishedAt } from '../../utils/formatPublishedAt';
 import { openArticle } from '../../utils/openArticle';
 import { shareArticle } from '../../utils/shareArticle';
-
-const BLUE = '#4CC9F0';
 
 function formatCategory(
   category: Article['category'],
@@ -55,6 +56,7 @@ function normalizeUrlForMatch(url?: string | null): string {
 
 export default function ArticleDetailScreen() {
   const router = useRouter();
+  const { colors, isDark, accentColor, severityColors } = useTheme();
 
   const params = useLocalSearchParams<{
     id?: string | string[];
@@ -185,11 +187,14 @@ export default function ArticleDetailScreen() {
 
   if (!isHydrated) {
     return (
-      <SafeAreaView style={styles.safe}>
+      <SafeAreaView
+        style={[styles.safe, { backgroundColor: colors.background }]}
+        edges={['top']}
+      >
         <View style={styles.loading}>
           <ActivityIndicator
             size="small"
-            color={BLUE}
+            color={accentColor}
           />
         </View>
       </SafeAreaView>
@@ -201,7 +206,10 @@ export default function ArticleDetailScreen() {
     (state.status === 'loading' || isRefreshingFeed)
   ) {
     return (
-      <SafeAreaView style={styles.safe}>
+      <SafeAreaView
+        style={[styles.safe, { backgroundColor: colors.background }]}
+        edges={['top']}
+      >
         <LoadingState />
       </SafeAreaView>
     );
@@ -212,7 +220,10 @@ export default function ArticleDetailScreen() {
     state.status === 'error'
   ) {
     return (
-      <SafeAreaView style={styles.safe}>
+      <SafeAreaView
+        style={[styles.safe, { backgroundColor: colors.background }]}
+        edges={['top']}
+      >
         <ErrorState
           message={state.message}
           onRetry={() => void load()}
@@ -223,13 +234,13 @@ export default function ArticleDetailScreen() {
 
   if (article === undefined) {
     return (
-      <SafeAreaView style={styles.safe}>
+      <SafeAreaView style={[styles.safe, { backgroundColor: colors.background }]}>
         <View style={styles.notFound}>
-          <Text style={styles.notFoundTitle}>
+          <Text style={[styles.notFoundTitle, { color: colors.textPrimary }]}>
             Article unavailable
           </Text>
 
-          <Text style={styles.notFoundText}>
+          <Text style={[styles.notFoundText, { color: colors.textSecondary }]}>
             This security brief is no longer available.
           </Text>
 
@@ -238,9 +249,9 @@ export default function ArticleDetailScreen() {
             accessibilityLabel="Go back to feed"
             hitSlop={12}
             onPress={() => router.back()}
-            style={styles.backButton}
+            style={[styles.backButton, { borderColor: accentColor }]}
           >
-            <Text style={styles.backButtonText}>
+            <Text style={[styles.backButtonText, { color: accentColor }]}>
               GO BACK
             </Text>
           </Pressable>
@@ -250,15 +261,19 @@ export default function ArticleDetailScreen() {
   }
 
   const saved = isSaved(article.id);
+  const severityConfig = article.severity ? severityColors[article.severity] : null;
 
   return (
     <SafeAreaView
-      style={styles.safe}
+      style={[styles.safe, { backgroundColor: colors.background }]}
       edges={['top']}
     >
       <Stack.Screen
         options={{
           headerShown: false,
+          contentStyle: {
+            backgroundColor: colors.background,
+          },
         }}
       />
 
@@ -277,7 +292,7 @@ export default function ArticleDetailScreen() {
           />
         </Pressable>
 
-        <Text style={styles.headerTitle}>
+        <Text style={[styles.headerTitle, { color: colors.textPrimary }]}>
           SecuBuzz
         </Text>
 
@@ -320,7 +335,7 @@ export default function ArticleDetailScreen() {
               size={24}
               color={
                 saved
-                  ? BLUE
+                  ? accentColor
                   : colors.textPrimary
               }
             />
@@ -335,24 +350,31 @@ export default function ArticleDetailScreen() {
         }
       >
         <View style={styles.categoryRow}>
-          <Text style={styles.category}>
+          <Text style={[styles.category, { color: accentColor }]}>
             {formatCategory(article.category)}
           </Text>
 
-          {article.severity ? (
+          {article.severity && severityConfig ? (
             <View
               style={[
                 styles.severityTag,
-                article.severity === 'CRITICAL' && styles.severityTagCritical,
+                {
+                  backgroundColor: isDark
+                    ? 'rgba(255, 255, 255, 0.05)'
+                    : 'rgba(0, 0, 0, 0.04)',
+                },
+                article.severity === 'CRITICAL' && {
+                  backgroundColor: severityConfig.surface,
+                  borderWidth: 1,
+                  borderColor: severityConfig.border,
+                },
               ]}
             >
               <View
                 style={[
                   styles.severityDot,
                   {
-                    backgroundColor:
-                      severityColors[article.severity]?.primary ??
-                      colors.textMuted,
+                    backgroundColor: severityConfig.primary,
                   },
                 ]}
               />
@@ -360,9 +382,7 @@ export default function ArticleDetailScreen() {
                 style={[
                   styles.severityLabel,
                   {
-                    color:
-                      severityColors[article.severity]?.primary ??
-                      colors.textMuted,
+                    color: severityConfig.primary,
                   },
                 ]}
               >
@@ -372,33 +392,36 @@ export default function ArticleDetailScreen() {
           ) : null}
         </View>
 
-        <Text style={styles.meta}>
+        <Text style={[styles.meta, { color: colors.textMuted }]}>
           {formatPublishedAt(article)} ·{' '}
           {article.sourceName}
         </Text>
 
-        <Text style={styles.headline}>
+        <Text style={[styles.headline, { color: colors.textPrimary }]}>
           {article.headline}
         </Text>
 
         <View
           style={[
             styles.accent,
-            article.severity === 'CRITICAL' && {
-              backgroundColor: severityColors.CRITICAL.primary,
+            {
+              backgroundColor:
+                article.severity === 'CRITICAL'
+                  ? severityColors.CRITICAL.primary
+                  : accentColor,
             },
           ]}
         />
 
-        <Text style={styles.briefLabel}>
+        <Text style={[styles.briefLabel, { color: colors.textPrimary }]}>
           60-WORD SECURITY BRIEF
         </Text>
 
-        <Text style={styles.summary}>
+        <Text style={[styles.summary, { color: colors.textSecondary }]}>
           {article.summary}
         </Text>
 
-        <View style={styles.divider} />
+        <View style={[styles.divider, { backgroundColor: colors.border }]} />
 
         <Pressable
           accessibilityRole="button"
@@ -415,11 +438,11 @@ export default function ArticleDetailScreen() {
           ]}
         >
           <View>
-            <Text style={styles.originalLabel}>
+            <Text style={[styles.originalLabel, { color: accentColor }]}>
               READ ORIGINAL
             </Text>
 
-            <Text style={styles.originalSource}>
+            <Text style={[styles.originalSource, { color: colors.textMuted }]}>
               {article.sourceName}
             </Text>
           </View>
@@ -427,7 +450,7 @@ export default function ArticleDetailScreen() {
           <Ionicons
             name="open-outline"
             size={20}
-            color={BLUE}
+            color={accentColor}
           />
         </Pressable>
 
@@ -437,7 +460,7 @@ export default function ArticleDetailScreen() {
             size={13}
             color={colors.textMuted}
           />
-          <Text style={styles.timeZoneNote}>
+          <Text style={[styles.timeZoneNote, { color: colors.textMuted }]}>
             Publication times are automatically converted to your device's local time zone.
           </Text>
         </View>
@@ -543,32 +566,32 @@ const styles = StyleSheet.create({
 
   headline: {
     color: colors.textPrimary,
-    fontSize: 30,
-    lineHeight: 38,
-    fontWeight: '800',
-    marginTop: 18,
+    fontSize: 24,
+    lineHeight: 32,
+    fontWeight: '700',
+    marginTop: 14,
   },
 
   accent: {
-    width: 42,
+    width: 36,
     height: 2,
     backgroundColor: BLUE,
-    marginTop: 18,
+    marginTop: 14,
   },
 
   briefLabel: {
     color: colors.textPrimary,
-    fontSize: 11,
+    fontSize: 10.5,
     fontWeight: '700',
-    letterSpacing: 1.7,
-    marginTop: 26,
+    letterSpacing: 1.6,
+    marginTop: 20,
   },
 
   summary: {
     color: colors.textSecondary,
-    fontSize: 16,
-    lineHeight: 25,
-    marginTop: 10,
+    fontSize: 15,
+    lineHeight: 23,
+    marginTop: 8,
   },
 
   divider: {

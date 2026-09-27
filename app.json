@@ -6,6 +6,7 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
+    "backgroundColor": "#0B0F14",
     "scheme": "secubuzz",
     "ios": {
       "supportsTablet": true
@@ -56,6 +57,12 @@
         "projectId": "51de636f-84a1-4295-9b85-02c3c406d964"
       },
       "pushTokenApiUrl": "https://secubuzz-push.secubuzz.workers.dev/api/push-tokens"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/51de636f-84a1-4295-9b85-02c3c406d964"
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
     },
     "owner": "secubuzz-app"
   }

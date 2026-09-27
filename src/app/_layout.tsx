@@ -5,13 +5,47 @@ import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
 
+import { ThemeProvider, useTheme } from '../context/ThemeContext';
 import { getArticleRepository } from '../data/getArticleRepository';
 import { SavedArticlesProvider } from '../context/SavedArticlesContext';
 import { isExpoGo, registerForPushNotificationsAsync } from '../services/notificationService';
 import { exoFonts } from '../theme/fonts';
-import { colors } from '../theme/theme';
 
 SplashScreen.preventAutoHideAsync();
+
+function RootNavigator() {
+  const { colors, isDark } = useTheme();
+
+  return (
+    <>
+      <StatusBar style={isDark ? 'light' : 'dark'} />
+      <Stack
+        screenOptions={{
+          headerShown: false,
+          animation: 'slide_from_right',
+          contentStyle: {
+            backgroundColor: colors.background,
+          },
+        }}
+      >
+        <Stack.Screen name="(tabs)" />
+        <Stack.Screen name="article/[...id]" />
+
+        <Stack.Screen name="appearance" />
+        <Stack.Screen name="notifications" />
+        <Stack.Screen name="about-support" />
+        <Stack.Screen name="legal" />
+
+        <Stack.Screen name="privacy" />
+        <Stack.Screen name="terms" />
+        <Stack.Screen name="data-privacy" />
+        <Stack.Screen name="about" />
+        <Stack.Screen name="licenses" />
+        <Stack.Screen name="contact" />
+      </Stack>
+    </>
+  );
+}
 
 export default function RootLayout() {
   const router = useRouter();
@@ -65,7 +99,7 @@ export default function RootLayout() {
           router.push({
             pathname: '/article/[...id]',
             params: {
-              id: articleId,
+              id: [articleId],
               url: articleId,
               headline: typeof data?.headline === 'string' ? data.headline : undefined,
               summary: typeof data?.summary === 'string' ? data.summary : undefined,
@@ -132,26 +166,10 @@ export default function RootLayout() {
   }
 
   return (
-    <SavedArticlesProvider>
-      <StatusBar style="light" />
-      <Stack
-        screenOptions={{
-          headerShown: false,
-          contentStyle: {
-            backgroundColor: colors.background,
-          },
-        }}
-      >
-        <Stack.Screen name="(tabs)" />
-        <Stack.Screen name="article/[...id]" />
-
-        <Stack.Screen name="privacy" />
-        <Stack.Screen name="terms" />
-        <Stack.Screen name="data-privacy" />
-        <Stack.Screen name="about" />
-        <Stack.Screen name="licenses" />
-        <Stack.Screen name="contact" />
-      </Stack>
-    </SavedArticlesProvider>
+    <ThemeProvider>
+      <SavedArticlesProvider>
+        <RootNavigator />
+      </SavedArticlesProvider>
+    </ThemeProvider>
   );
 }

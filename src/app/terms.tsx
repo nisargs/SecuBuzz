@@ -9,17 +9,18 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { colors, spacing } from '../theme/theme';
-
-const BLUE = '#4CC9F0';
+import { useTheme } from '../context/ThemeContext';
+import { spacing } from '../theme/theme';
 
 export default function TermsScreen() {
+  const { colors, accentColor } = useTheme();
+
   return (
     <SafeAreaView
-      style={styles.safeArea}
+      style={[styles.safeArea, { backgroundColor: colors.background }]}
       edges={['top', 'bottom']}
     >
-      <View style={styles.header}>
+      <View style={[styles.header, { borderBottomColor: colors.border }]}>
         <Pressable
           accessibilityRole="button"
           accessibilityLabel="Go back"
@@ -33,7 +34,7 @@ export default function TermsScreen() {
           />
         </Pressable>
 
-        <Text style={styles.headerTitle}>
+        <Text style={[styles.headerTitle, { color: colors.textPrimary }]}>
           Terms of Use
         </Text>
 
@@ -45,130 +46,96 @@ export default function TermsScreen() {
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
       >
-        <Text style={styles.eyebrow}>
+        <Text style={[styles.eyebrow, { color: accentColor }]}>
           SECUBUZZ
         </Text>
 
-        <Text style={styles.title}>
+        <Text style={[styles.title, { color: colors.textPrimary }]}>
           Terms of Use
         </Text>
 
-        <Text style={styles.updated}>
-          Effective date: September 14, 2026
+        <Text style={[styles.updated, { color: colors.textMuted }]}>
+          Effective date: September 24, 2026
         </Text>
 
-        <Section title="1. Acceptance">
-          <Text style={styles.paragraph}>
-            By using SecuBuzz, you agree to these Terms
-            of Use. If you do not agree with these terms,
-            please do not use the application.
+        <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
+          Please read these Terms of Use ("Terms") carefully
+          before using the SecuBuzz mobile application.
+        </Text>
+
+        <Section title="1. Acceptance of Terms" colors={colors}>
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
+            By downloading, installing, or using SecuBuzz,
+            you agree to be bound by these Terms. If you do
+            not agree, do not use the application.
           </Text>
         </Section>
 
-        <Section title="2. About SecuBuzz">
-          <Text style={styles.paragraph}>
-            SecuBuzz provides cybersecurity news
-            summaries, security briefs, classifications,
-            and links to original publisher content.
+        <Section title="2. Informational Purpose Only" colors={colors}>
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
+            SecuBuzz provides cybersecurity news summaries,
+            headlines, and links for informational and educational
+            awareness purposes only.
           </Text>
 
-          <Text style={styles.paragraph}>
-            SecuBuzz is an informational service and
-            does not provide professional cybersecurity,
-            legal, financial, or other professional
-            advice.
-          </Text>
-        </Section>
-
-        <Section title="3. Accuracy of Information">
-          <Text style={styles.paragraph}>
-            We aim to provide useful and accurate
-            cybersecurity information, but SecuBuzz
-            cannot guarantee that every headline,
-            summary, classification, publication time,
-            or other piece of information is complete,
-            current, or error-free.
-          </Text>
-
-          <Text style={styles.paragraph}>
-            Users should consult the original publisher
-            and appropriate authoritative sources before
-            making decisions based on cybersecurity
-            information.
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
+            SecuBuzz does not provide legal, cybersecurity,
+            incident response, forensic, compliance, or technical
+            advice. You should consult qualified cybersecurity
+            professionals for incident investigation or operational
+            defense.
           </Text>
         </Section>
 
-        <Section title="4. Third-Party Content">
-          <Text style={styles.paragraph}>
-            Article content belongs to its respective
-            publishers and rights holders.
+        <Section title="3. Third-Party Content & Links" colors={colors}>
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
+            SecuBuzz summarizes content from external third-party
+            publishers. We do not own, control, or endorse third-party
+            sites or their reporting.
           </Text>
 
-          <Text style={styles.paragraph}>
-            SecuBuzz may provide headlines, summaries,
-            metadata, and links to third-party content.
-            Your use of external publisher websites is
-            subject to their terms and policies.
-          </Text>
-        </Section>
-
-        <Section title="5. Acceptable Use">
-          <Text style={styles.paragraph}>
-            You agree not to misuse SecuBuzz, interfere
-            with its operation, attempt unauthorized
-            access to its infrastructure, or use the
-            service to violate applicable laws.
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
+            When you open links within SecuBuzz, you leave the application
+            and are subject to the terms, conditions, and privacy policies
+            of those external publishers.
           </Text>
         </Section>
 
-        <Section title="6. Intellectual Property">
-          <Text style={styles.paragraph}>
-            The SecuBuzz name, application interface,
-            original software, branding, and original
-            materials are owned by or licensed to
-            MiSo Labs, except for third-party
-            materials and content identified as belonging
-            to their respective owners.
+        <Section title="4. Prohibited Uses" colors={colors}>
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
+            You agree not to misuse SecuBuzz, reverse-engineer,
+            tamper with, disrupt, or access our servers, APIs, or
+            content through unauthorized automated means without
+            prior written permission.
           </Text>
         </Section>
 
-        <Section title="7. Availability">
-          <Text style={styles.paragraph}>
-            SecuBuzz may be changed, interrupted,
-            suspended, or discontinued at any time.
-            We do not guarantee uninterrupted
-            availability of the service or third-party
-            content.
+        <Section title="5. Disclaimer of Warranties" colors={colors}>
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
+            SecuBuzz is provided on an "AS IS" and "AS AVAILABLE"
+            basis without warranties of any kind, whether express
+            or implied. We do not guarantee that the application
+            will be error-free, uninterrupted, or that news summaries
+            will be complete or timely.
           </Text>
         </Section>
 
-        <Section title="8. Limitation of Liability">
-          <Text style={styles.paragraph}>
-            To the maximum extent permitted by applicable
-            law, MiSo Labs will not be liable for
-            losses arising from reliance on cybersecurity
-            information provided through SecuBuzz,
-            interruptions to the service, or changes to
-            third-party websites or content.
+        <Section title="6. Limitation of Liability" colors={colors}>
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
+            To the maximum extent permitted by applicable law,
+            MiSo Labs and SecuBuzz shall not be liable for any
+            indirect, incidental, special, consequential, or punitive
+            damages arising from your use of or inability to use the
+            application.
           </Text>
         </Section>
 
-        <Section title="9. Changes to These Terms">
-          <Text style={styles.paragraph}>
-            We may update these Terms of Use when the
-            application or applicable requirements change.
-            Continued use of SecuBuzz after an update
-            means you accept the updated terms.
-          </Text>
-        </Section>
-
-        <Section title="10. Contact">
-          <Text style={styles.paragraph}>
-            Questions about these Terms of Use can be
-            sent to:
+        <Section title="7. Contact" colors={colors}>
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
+            For questions regarding these Terms, contact:
           </Text>
 
-          <Text style={styles.contact}>
+          <Text style={[styles.contact, { color: accentColor }]}>
             support@secubuzz.com
           </Text>
         </Section>
@@ -180,15 +147,17 @@ export default function TermsScreen() {
 type SectionProps = {
   title: string;
   children: React.ReactNode;
+  colors: ReturnType<typeof useTheme>['colors'];
 };
 
 function Section({
   title,
   children,
+  colors,
 }: SectionProps) {
   return (
     <View style={styles.section}>
-      <Text style={styles.sectionTitle}>
+      <Text style={[styles.sectionTitle, { color: colors.textPrimary }]}>
         {title}
       </Text>
 
@@ -200,7 +169,6 @@ function Section({
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: colors.background,
   },
 
   header: {
@@ -209,12 +177,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: spacing.lg,
     borderBottomWidth: 1,
-    borderBottomColor: colors.border,
   },
 
   headerTitle: {
     flex: 1,
-    color: colors.textPrimary,
     fontFamily: 'Exo_700Bold',
     fontSize: 18,
     textAlign: 'center',
@@ -235,7 +201,6 @@ const styles = StyleSheet.create({
   },
 
   eyebrow: {
-    color: BLUE,
     fontFamily: 'Exo_600SemiBold',
     fontSize: 11,
     letterSpacing: 1.8,
@@ -243,14 +208,12 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    color: colors.textPrimary,
     fontFamily: 'Exo_800ExtraBold',
     fontSize: 30,
     lineHeight: 38,
   },
 
   updated: {
-    color: colors.textMuted,
     fontFamily: 'Exo_400Regular',
     fontSize: 13,
     marginTop: 8,
@@ -262,7 +225,6 @@ const styles = StyleSheet.create({
   },
 
   sectionTitle: {
-    color: colors.textPrimary,
     fontFamily: 'Exo_700Bold',
     fontSize: 18,
     lineHeight: 25,
@@ -270,7 +232,6 @@ const styles = StyleSheet.create({
   },
 
   paragraph: {
-    color: colors.textSecondary,
     fontFamily: 'Exo_400Regular',
     fontSize: 15,
     lineHeight: 24,
@@ -278,7 +239,6 @@ const styles = StyleSheet.create({
   },
 
   contact: {
-    color: BLUE,
     fontFamily: 'Exo_600SemiBold',
     fontSize: 15,
   },

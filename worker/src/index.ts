@@ -96,6 +96,52 @@ export default {
         });
       }
 
+      // Sitemap for Search Engines
+      if (url.pathname === '/sitemap.xml') {
+        const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://secubuzz.com/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://secubuzz.com/privacy</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://secubuzz.com/account-deletion</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>`;
+        return new Response(sitemapXml, {
+          status: 200,
+          headers: {
+            'Content-Type': 'application/xml; charset=utf-8',
+            'Cache-Control': 'public, max-age=86400',
+            ...CORS_HEADERS,
+          },
+        });
+      }
+
+      // Robots.txt for Web Crawlers
+      if (url.pathname === '/robots.txt') {
+        const robotsTxt = `User-agent: *\nAllow: /\n\nSitemap: https://secubuzz.com/sitemap.xml\n`;
+        return new Response(robotsTxt, {
+          status: 200,
+          headers: {
+            'Content-Type': 'text/plain; charset=utf-8',
+            'Cache-Control': 'public, max-age=86400',
+            ...CORS_HEADERS,
+          },
+        });
+      }
+
       // Public Feed Proxy (Enables https://secubuzz.com/feed.json to serve live R2 feed directly)
       if (url.pathname === '/feed.json') {
         const r2Response = await fetch(

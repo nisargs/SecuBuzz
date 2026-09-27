@@ -1,32 +1,60 @@
 import { ActivityIndicator, Pressable, StyleSheet, Text, View } from 'react-native';
 
-import { colors, radii, spacing } from '../theme/theme';
+import { useTheme } from '../context/ThemeContext';
+import { radii, spacing } from '../theme/theme';
 
 export function LoadingState() {
+  const { colors, accentColor } = useTheme();
+
   return (
     <View style={styles.center}>
-      <ActivityIndicator color={colors.textPrimary} size="large" />
-      <Text style={styles.secondary}>Loading stories…</Text>
+      <ActivityIndicator color={accentColor} size="large" />
+      <Text style={[styles.secondary, { color: colors.textSecondary }]}>
+        Loading stories…
+      </Text>
     </View>
   );
 }
 
 export function EmptyState({ message }: { message: string }) {
+  const { colors } = useTheme();
+
   return (
     <View style={styles.center}>
-      <Text style={styles.title}>Nothing here yet</Text>
-      <Text style={styles.secondary}>{message}</Text>
+      <Text style={[styles.title, { color: colors.textPrimary }]}>
+        Nothing here yet
+      </Text>
+      <Text style={[styles.secondary, { color: colors.textSecondary }]}>
+        {message}
+      </Text>
     </View>
   );
 }
 
 export function ErrorState({ message, onRetry }: { message: string; onRetry: () => void }) {
+  const { colors } = useTheme();
+
   return (
     <View style={styles.center}>
-      <Text style={styles.title}>Could not load stories</Text>
-      <Text style={styles.secondary}>{message}</Text>
-      <Pressable onPress={onRetry} style={styles.retry}>
-        <Text style={styles.retryText}>Try again</Text>
+      <Text style={[styles.title, { color: colors.textPrimary }]}>
+        Could not load stories
+      </Text>
+      <Text style={[styles.secondary, { color: colors.textSecondary }]}>
+        {message}
+      </Text>
+      <Pressable
+        onPress={onRetry}
+        style={[
+          styles.retry,
+          {
+            backgroundColor: colors.surfaceRaised,
+            borderColor: colors.border,
+          },
+        ]}
+      >
+        <Text style={[styles.retryText, { color: colors.textPrimary }]}>
+          Try again
+        </Text>
       </Pressable>
     </View>
   );
@@ -41,28 +69,23 @@ const styles = StyleSheet.create({
     gap: spacing.sm,
   },
   title: {
-    color: colors.textPrimary,
     fontSize: 18,
     fontWeight: '700',
     textAlign: 'center',
   },
   secondary: {
-    color: colors.textSecondary,
     fontSize: 15,
     textAlign: 'center',
     lineHeight: 22,
   },
   retry: {
     marginTop: spacing.sm,
-    backgroundColor: colors.surfaceRaised,
     borderRadius: radii.md,
     paddingHorizontal: spacing.lg,
     paddingVertical: 10,
     borderWidth: 1,
-    borderColor: colors.border,
   },
   retryText: {
-    color: colors.textPrimary,
     fontWeight: '600',
   },
 });

@@ -9,17 +9,18 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { colors, spacing } from '../theme/theme';
-
-const BLUE = '#4CC9F0';
+import { useTheme } from '../context/ThemeContext';
+import { spacing } from '../theme/theme';
 
 export default function DataPrivacyScreen() {
+  const { colors, accentColor } = useTheme();
+
   return (
     <SafeAreaView
-      style={styles.safeArea}
+      style={[styles.safeArea, { backgroundColor: colors.background }]}
       edges={['top', 'bottom']}
     >
-      <View style={styles.header}>
+      <View style={[styles.header, { borderBottomColor: colors.border }]}>
         <Pressable
           accessibilityRole="button"
           accessibilityLabel="Go back"
@@ -33,7 +34,7 @@ export default function DataPrivacyScreen() {
           />
         </Pressable>
 
-        <Text style={styles.headerTitle}>
+        <Text style={[styles.headerTitle, { color: colors.textPrimary }]}>
           Data & Privacy
         </Text>
 
@@ -45,11 +46,11 @@ export default function DataPrivacyScreen() {
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
       >
-        <Text style={styles.eyebrow}>
+        <Text style={[styles.eyebrow, { color: accentColor }]}>
           SECUBUZZ DATA CONTROL
         </Text>
 
-        <Text style={styles.title}>
+        <Text style={[styles.title, { color: colors.textPrimary }]}>
           SecuBuzz Privacy & Data Control
         </Text>
 
@@ -57,63 +58,54 @@ export default function DataPrivacyScreen() {
           icon="person-outline"
           title="SecuBuzz Account Deletion"
           text="SecuBuzz does not require or support user accounts. There are no logins, passwords, or cloud user profiles to delete."
+          colors={colors}
+          accentColor={accentColor}
         />
 
         <InfoCard
-          icon="bookmark-outline"
-          title="SecuBuzz Saved Articles"
-          text="Your saved articles are stored strictly on your local device so SecuBuzz can display them offline."
+          icon="phone-portrait-outline"
+          title="On-Device Storage Only"
+          text="Bookmarks and app preferences are stored exclusively on your device. They are not transmitted to or stored on any server."
+          colors={colors}
+          accentColor={accentColor}
         />
 
         <InfoCard
           icon="trash-outline"
-          title="Deleting SecuBuzz Local Data"
-          text="You can remove saved articles inside SecuBuzz anytime. Clearing app data in Android Settings (Settings > Apps > SecuBuzz > Storage > Clear Data) or uninstalling SecuBuzz deletes all local data."
+          title="How to Remove All App Data"
+          text="Uninstalling SecuBuzz immediately and permanently deletes all on-device data, including saved articles and preferences."
+          colors={colors}
+          accentColor={accentColor}
         />
 
         <InfoCard
           icon="notifications-outline"
-          title="SecuBuzz Push Notification Tokens"
-          text="SecuBuzz uses pseudonymous push tokens solely to alert you to breaking security briefs. Disable anytime in Android Settings > Apps > SecuBuzz > Notifications or email support@secubuzz.com to delete your token."
+          title="Push Notification Tokens"
+          text="If you enable notifications, a push token is registered to deliver breaking news alerts. No personal identifiers are attached to this token."
+          colors={colors}
+          accentColor={accentColor}
         />
 
-        <InfoCard
-          icon="eye-off-outline"
-          title="No Personalized Tracking"
-          text="SecuBuzz does not use tracking or advertising SDKs. Your reading habits are never profiled or sold."
-        />
-
-        <InfoCard
-          icon="cloud-outline"
-          title="SecuBuzz News Feed"
-          text="SecuBuzz retrieves verified cybersecurity threat briefings from SecuBuzz cloud infrastructure over TLS encryption."
-        />
-
-        <InfoCard
-          icon="open-outline"
-          title="External Publishers"
-          text="When opening external sources, you leave SecuBuzz and the respective publisher's privacy practices apply."
-        />
-
-        <View style={styles.policyBox}>
-          <Text style={styles.policyTitle}>
-            Want the full details?
+        <View style={[styles.policyBox, { borderTopColor: colors.border }]}>
+          <Text style={[styles.policyTitle, { color: colors.textPrimary }]}>
+            Full Privacy Policy
           </Text>
 
-          <Text style={styles.policyText}>
-            Read the complete Privacy Policy for
-            information about data handling,
-            infrastructure, security, retention,
-            third-party services, and your privacy
-            rights.
+          <Text style={[styles.policyText, { color: colors.textSecondary }]}>
+            SecuBuzz and developer MiSo Labs are committed
+            to minimal data handling and full transparency.
+            For full details, read our complete privacy policy.
           </Text>
 
-          <Text
-            style={styles.policyLink}
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="Read complete Privacy Policy"
             onPress={() => router.push('/privacy')}
           >
-            VIEW PRIVACY POLICY →
-          </Text>
+            <Text style={[styles.policyLink, { color: accentColor }]}>
+              READ FULL PRIVACY POLICY →
+            </Text>
+          </Pressable>
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -124,27 +116,39 @@ type InfoCardProps = {
   icon: keyof typeof Ionicons.glyphMap;
   title: string;
   text: string;
+  colors: ReturnType<typeof useTheme>['colors'];
+  accentColor: string;
 };
 
 function InfoCard({
   icon,
   title,
   text,
+  colors,
+  accentColor,
 }: InfoCardProps) {
   return (
-    <View style={styles.card}>
+    <View
+      style={[
+        styles.card,
+        {
+          backgroundColor: colors.surface,
+          borderColor: colors.border,
+        },
+      ]}
+    >
       <Ionicons
         name={icon}
         size={24}
-        color={BLUE}
+        color={accentColor}
       />
 
       <View style={styles.cardBody}>
-        <Text style={styles.cardTitle}>
+        <Text style={[styles.cardTitle, { color: colors.textPrimary }]}>
           {title}
         </Text>
 
-        <Text style={styles.cardText}>
+        <Text style={[styles.cardText, { color: colors.textSecondary }]}>
           {text}
         </Text>
       </View>
@@ -155,7 +159,6 @@ function InfoCard({
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: colors.background,
   },
 
   header: {
@@ -164,12 +167,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: spacing.lg,
     borderBottomWidth: 1,
-    borderBottomColor: colors.border,
   },
 
   headerTitle: {
     flex: 1,
-    color: colors.textPrimary,
     fontFamily: 'Exo_700Bold',
     fontSize: 18,
     textAlign: 'center',
@@ -190,7 +191,6 @@ const styles = StyleSheet.create({
   },
 
   eyebrow: {
-    color: BLUE,
     fontFamily: 'Exo_600SemiBold',
     fontSize: 11,
     letterSpacing: 1.8,
@@ -198,7 +198,6 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    color: colors.textPrimary,
     fontFamily: 'Exo_800ExtraBold',
     fontSize: 28,
     lineHeight: 36,
@@ -209,8 +208,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     padding: spacing.lg,
     borderWidth: 1,
-    borderColor: colors.border,
-    backgroundColor: colors.surface,
+    borderRadius: 16,
     marginBottom: 12,
   },
 
@@ -220,14 +218,12 @@ const styles = StyleSheet.create({
   },
 
   cardTitle: {
-    color: colors.textPrimary,
     fontFamily: 'Exo_700Bold',
     fontSize: 16,
     marginBottom: 6,
   },
 
   cardText: {
-    color: colors.textSecondary,
     fontFamily: 'Exo_400Regular',
     fontSize: 14,
     lineHeight: 21,
@@ -235,27 +231,23 @@ const styles = StyleSheet.create({
 
   policyBox: {
     borderTopWidth: 1,
-    borderTopColor: colors.border,
     marginTop: spacing.lg,
     paddingTop: spacing.xl,
   },
 
   policyTitle: {
-    color: colors.textPrimary,
     fontFamily: 'Exo_700Bold',
     fontSize: 18,
     marginBottom: 8,
   },
 
   policyText: {
-    color: colors.textSecondary,
     fontFamily: 'Exo_400Regular',
     fontSize: 14,
     lineHeight: 22,
   },
 
   policyLink: {
-    color: BLUE,
     fontFamily: 'Exo_600SemiBold',
     fontSize: 12,
     letterSpacing: 1,

@@ -14,11 +14,12 @@ import { useRouter } from 'expo-router';
 
 import { EmptyState } from '../../components/ScreenStates';
 import { useSavedArticles } from '../../context/SavedArticlesContext';
+import { useTheme } from '../../context/ThemeContext';
 import type { Article } from '../../models/article';
 import { colors, spacing } from '../../theme/theme';
-import { formatPublishedAt } from '../../utils/formatPublishedAt';
 
-const BLUE = '#4CC9F0';
+const BLUE = colors.accent;
+import { formatPublishedAt } from '../../utils/formatPublishedAt';
 
 function formatCategory(
   category: Article['category'],
@@ -36,6 +37,7 @@ function formatCategory(
 
 export default function SavedScreen() {
   const router = useRouter();
+  const { colors, accentColor } = useTheme();
 
   const {
     savedArticles,
@@ -92,7 +94,8 @@ export default function SavedScreen() {
     router.push({
       pathname: '/article/[...id]',
       params: {
-        id: article.id,
+        id: [article.id],
+        url: article.sourceUrl,
       },
     });
   }
@@ -111,7 +114,7 @@ export default function SavedScreen() {
       <View style={styles.loadingScreen}>
         <ActivityIndicator
           size="small"
-          color={BLUE}
+          color={accentColor}
         />
       </View>
     );
@@ -119,17 +122,17 @@ export default function SavedScreen() {
 
   return (
     <SafeAreaView
-      style={styles.safe}
+      style={[styles.safe, { backgroundColor: colors.background }]}
       edges={['top']}
     >
       {/* HEADER */}
       <View style={styles.header}>
         <View>
-          <Text style={styles.title}>
+          <Text style={[styles.title, { color: colors.textPrimary }]}>
             Saved
           </Text>
 
-          <Text style={styles.subtitle}>
+          <Text style={[styles.subtitle, { color: colors.textPrimary }]}>
             BOOKMARKED SECURITY BRIEFS
           </Text>
         </View>
@@ -152,18 +155,26 @@ export default function SavedScreen() {
                 : 'search-outline'
             }
             size={28}
-            color={BLUE}
+            color={accentColor}
           />
         </Pressable>
       </View>
 
       {/* SEARCH */}
       {searchOpen ? (
-        <View style={styles.searchContainer}>
+        <View
+          style={[
+            styles.searchContainer,
+            {
+              borderColor: accentColor,
+              backgroundColor: colors.surface,
+            },
+          ]}
+        >
           <Ionicons
             name="search-outline"
             size={20}
-            color={BLUE}
+            color={accentColor}
           />
 
           <TextInput
@@ -174,7 +185,10 @@ export default function SavedScreen() {
             placeholderTextColor={
               colors.textMuted
             }
-            style={styles.searchInput}
+            style={[
+              styles.searchInput,
+              { color: colors.textPrimary },
+            ]}
             autoCapitalize="none"
             autoCorrect={false}
           />
@@ -191,7 +205,7 @@ export default function SavedScreen() {
               <Ionicons
                 name="close-circle"
                 size={20}
-                color={BLUE}
+                color={accentColor}
               />
             </Pressable>
           ) : null}
@@ -228,19 +242,25 @@ export default function SavedScreen() {
               onPress={() => openArticle(item)}
               style={({ pressed }) => [
                 styles.article,
-                pressed &&
+                {
+                  backgroundColor: colors.surface,
+                  borderColor: colors.border,
+                },
+                pressed && [
                   styles.articlePressed,
+                  { borderColor: accentColor },
+                ],
               ]}
             >
               <View style={styles.articleTop}>
                 <View style={styles.articleMeta}>
-                  <Text style={styles.category}>
+                  <Text style={[styles.category, { color: accentColor }]}>
                     {formatCategory(
                       item.category,
                     )}
                   </Text>
 
-                  <Text style={styles.metaText}>
+                  <Text style={[styles.metaText, { color: colors.textSecondary }]}>
                     {formatPublishedAt(item)} ·{' '}
                     {item.sourceName}
                   </Text>
@@ -258,13 +278,13 @@ export default function SavedScreen() {
                   <Ionicons
                     name="bookmark"
                     size={22}
-                    color={BLUE}
+                    color={accentColor}
                   />
                 </Pressable>
               </View>
 
               <Text
-                style={styles.headline}
+                style={[styles.headline, { color: colors.textPrimary }]}
                 numberOfLines={3}
               >
                 {item.headline}
@@ -387,9 +407,9 @@ const styles = StyleSheet.create({
 
   headline: {
     color: colors.textPrimary,
-    fontSize: 20,
-    lineHeight: 26,
-    fontWeight: '800',
-    marginTop: 12,
+    fontSize: 18,
+    lineHeight: 24,
+    fontWeight: '700',
+    marginTop: 10,
   },
 });

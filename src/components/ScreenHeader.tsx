@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-import { colors, spacing } from '../theme/theme';
+import { useTheme } from '../context/ThemeContext';
+import { spacing } from '../theme/theme';
 
 type ScreenHeaderProps = {
   title: string;
@@ -8,10 +9,16 @@ type ScreenHeaderProps = {
 };
 
 export function ScreenHeader({ title, subtitle }: ScreenHeaderProps) {
+  const { colors } = useTheme();
+
   return (
     <View style={styles.wrap}>
-      <Text style={styles.title}>{title}</Text>
-      {subtitle ? <Text style={styles.subtitle}>{subtitle}</Text> : null}
+      <Text style={[styles.title, { color: colors.textPrimary }]}>{title}</Text>
+      {subtitle ? (
+        <Text style={[styles.subtitle, { color: colors.textSecondary }]}>
+          {subtitle}
+        </Text>
+      ) : null}
     </View>
   );
 }
@@ -23,14 +30,12 @@ const styles = StyleSheet.create({
     paddingBottom: spacing.md,
   },
   title: {
-    color: colors.textPrimary,
     fontSize: 28,
     fontWeight: '700',
     letterSpacing: -0.4,
   },
   subtitle: {
     marginTop: 4,
-    color: colors.textSecondary,
     fontSize: 14,
   },
 });

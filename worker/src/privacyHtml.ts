@@ -4,6 +4,48 @@ export const PRIVACY_POLICY_HTML = `<!DOCTYPE html>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SecuBuzz · Privacy Policy & Account Deletion</title>
+  <meta name="description" content="SecuBuzz by MiSo Labs — Real-time cybersecurity intelligence, CVSS/CISA threat severity analysis, and zero-day alerts. Zero tracking, zero account required." />
+  <meta name="keywords" content="cybersecurity news, infoSec intelligence, CVE alerts, zero day vulnerabilities, CISA KEV, CVSS threat severity, MiSo Labs, SecuBuzz" />
+  <meta name="author" content="MiSo Labs" />
+  <link rel="canonical" href="https://secubuzz.com/" />
+
+  <!-- OpenGraph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://secubuzz.com/" />
+  <meta property="og:title" content="SecuBuzz · Real-time Cybersecurity Intelligence & Threat Telemetry" />
+  <meta property="og:description" content="Stay ahead of enterprise threats, CVE alerts, and cybersecurity zero-days with SecuBuzz. Fast, curated, and privacy-respecting." />
+  <meta property="og:image" content="https://secubuzz.com/assets/icon.png" />
+  <meta property="og:site_name" content="SecuBuzz" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://secubuzz.com/" />
+  <meta name="twitter:title" content="SecuBuzz · Cybersecurity Intelligence" />
+  <meta name="twitter:description" content="Real-time threat alerts, CVSS severity classification, and privacy-first security news." />
+  <meta name="twitter:image" content="https://secubuzz.com/assets/icon.png" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "SecuBuzz",
+    "operatingSystem": "Android",
+    "applicationCategory": "NewsApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0.00",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "MiSo Labs",
+      "url": "https://secubuzz.com"
+    },
+    "description": "Real-time curated cybersecurity intelligence, threat severity analysis, and zero-day alerts with zero telemetry."
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Exo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />

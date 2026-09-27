@@ -12,20 +12,20 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { colors, spacing } from '../theme/theme';
-
-const BLUE = '#4CC9F0';
+import { useTheme } from '../context/ThemeContext';
+import { spacing } from '../theme/theme';
 
 export default function AboutScreen() {
+  const { colors, accentColor } = useTheme();
   const version = Constants.expoConfig?.version || '1.0.0';
   const buildNumber = Constants.expoConfig?.android?.versionCode || '1';
 
   return (
     <SafeAreaView
-      style={styles.safeArea}
+      style={[styles.safeArea, { backgroundColor: colors.background }]}
       edges={['top', 'bottom']}
     >
-      <View style={styles.header}>
+      <View style={[styles.header, { borderBottomColor: colors.border }]}>
         <Pressable
           accessibilityRole="button"
           accessibilityLabel="Go back"
@@ -39,7 +39,7 @@ export default function AboutScreen() {
           />
         </Pressable>
 
-        <Text style={styles.headerTitle}>
+        <Text style={[styles.headerTitle, { color: colors.textPrimary }]}>
           About SecuBuzz
         </Text>
 
@@ -52,19 +52,19 @@ export default function AboutScreen() {
       >
         <Image
           source={require('../../assets/icon.png')}
-          style={styles.logoImage}
+          style={[styles.logoImage, { borderColor: accentColor }]}
           resizeMode="contain"
         />
 
-        <Text style={styles.title}>
+        <Text style={[styles.title, { color: colors.textPrimary }]}>
           SecuBuzz
         </Text>
 
-        <Text style={styles.tagline}>
+        <Text style={[styles.tagline, { color: accentColor }]}>
           60-WORD SECURITY BRIEFS
         </Text>
 
-        <Text style={styles.description}>
+        <Text style={[styles.description, { color: colors.textSecondary }]}>
           SecuBuzz is a cybersecurity news application
           designed to make important security
           developments easier to discover and
@@ -74,10 +74,11 @@ export default function AboutScreen() {
         <InfoRow
           label="Version"
           value={`v${version} (Build ${buildNumber})`}
+          colors={colors}
         />
 
-        <View style={styles.infoRow}>
-          <Text style={styles.infoLabel}>
+        <View style={[styles.infoRow, { borderTopColor: colors.border }]}>
+          <Text style={[styles.infoLabel, { color: colors.textMuted }]}>
             Developer
           </Text>
 
@@ -91,14 +92,14 @@ export default function AboutScreen() {
             }
             style={styles.developerRow}
           >
-            <Text style={styles.developerName}>
+            <Text style={[styles.developerName, { color: accentColor }]}>
               MiSo Labs
             </Text>
 
             <Ionicons
               name="open-outline"
               size={13}
-              color={BLUE}
+              color={accentColor}
               style={styles.openIcon}
             />
           </Pressable>
@@ -107,24 +108,27 @@ export default function AboutScreen() {
         <InfoRow
           label="Website"
           value="secubuzz.com"
+          colors={colors}
         />
 
         <InfoRow
           label="Purpose"
           value="Cybersecurity news and security briefs"
+          colors={colors}
         />
 
         <InfoRow
           label="Platform"
           value="Android"
+          colors={colors}
         />
 
-        <View style={styles.section}>
-          <Text style={styles.sectionTitle}>
+        <View style={[styles.section, { borderTopColor: colors.border }]}>
+          <Text style={[styles.sectionTitle, { color: colors.textPrimary }]}>
             Content
           </Text>
 
-          <Text style={styles.sectionText}>
+          <Text style={[styles.sectionText, { color: colors.textSecondary }]}>
             SecuBuzz aggregates cybersecurity news
             information from external publishers and
             provides concise summaries, categories,
@@ -133,12 +137,12 @@ export default function AboutScreen() {
           </Text>
         </View>
 
-        <View style={styles.section}>
-          <Text style={styles.sectionTitle}>
+        <View style={[styles.section, { borderTopColor: colors.border }]}>
+          <Text style={[styles.sectionTitle, { color: colors.textPrimary }]}>
             Important
           </Text>
 
-          <Text style={styles.sectionText}>
+          <Text style={[styles.sectionText, { color: colors.textSecondary }]}>
             SecuBuzz is an informational news product.
             It is not a substitute for professional
             cybersecurity advice, incident response,
@@ -153,19 +157,21 @@ export default function AboutScreen() {
 type InfoRowProps = {
   label: string;
   value: string;
+  colors: ReturnType<typeof useTheme>['colors'];
 };
 
 function InfoRow({
   label,
   value,
+  colors,
 }: InfoRowProps) {
   return (
-    <View style={styles.infoRow}>
-      <Text style={styles.infoLabel}>
+    <View style={[styles.infoRow, { borderTopColor: colors.border }]}>
+      <Text style={[styles.infoLabel, { color: colors.textMuted }]}>
         {label}
       </Text>
 
-      <Text style={styles.infoValue}>
+      <Text style={[styles.infoValue, { color: colors.textPrimary }]}>
         {value}
       </Text>
     </View>
@@ -175,7 +181,6 @@ function InfoRow({
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: colors.background,
   },
 
   header: {
@@ -184,12 +189,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: spacing.lg,
     borderBottomWidth: 1,
-    borderBottomColor: colors.border,
   },
 
   headerTitle: {
     flex: 1,
-    color: colors.textPrimary,
     fontFamily: 'Exo_700Bold',
     fontSize: 18,
     textAlign: 'center',
@@ -215,7 +218,6 @@ const styles = StyleSheet.create({
     height: 80,
     borderRadius: 18,
     borderWidth: 1.5,
-    borderColor: BLUE,
     marginBottom: 16,
   },
 
@@ -226,7 +228,6 @@ const styles = StyleSheet.create({
   },
 
   developerName: {
-    color: BLUE,
     fontFamily: 'Exo_600SemiBold',
     fontSize: 14,
   },
@@ -236,13 +237,11 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    color: colors.textPrimary,
     fontFamily: 'Exo_800ExtraBold',
     fontSize: 32,
   },
 
   tagline: {
-    color: BLUE,
     fontFamily: 'Exo_600SemiBold',
     fontSize: 10,
     letterSpacing: 1.8,
@@ -250,7 +249,6 @@ const styles = StyleSheet.create({
   },
 
   description: {
-    color: colors.textSecondary,
     fontFamily: 'Exo_400Regular',
     fontSize: 15,
     lineHeight: 24,
@@ -264,18 +262,15 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     borderTopWidth: 1,
-    borderTopColor: colors.border,
     paddingVertical: 15,
   },
 
   infoLabel: {
-    color: colors.textMuted,
     fontFamily: 'Exo_500Medium',
     fontSize: 14,
   },
 
   infoValue: {
-    color: colors.textPrimary,
     fontFamily: 'Exo_500Medium',
     fontSize: 14,
     maxWidth: '65%',
@@ -285,20 +280,17 @@ const styles = StyleSheet.create({
   section: {
     width: '100%',
     borderTopWidth: 1,
-    borderTopColor: colors.border,
     paddingTop: spacing.lg,
     marginTop: spacing.lg,
   },
 
   sectionTitle: {
-    color: colors.textPrimary,
     fontFamily: 'Exo_700Bold',
     fontSize: 18,
     marginBottom: 8,
   },
 
   sectionText: {
-    color: colors.textSecondary,
     fontFamily: 'Exo_400Regular',
     fontSize: 14,
     lineHeight: 22,

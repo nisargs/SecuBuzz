@@ -1,6 +1,4 @@
 import { Ionicons } from '@expo/vector-icons';
-import Constants from 'expo-constants';
-import * as Linking from 'expo-linking';
 import { router } from 'expo-router';
 import { useEffect, useState } from 'react';
 import {
@@ -13,30 +11,32 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { useTheme } from '../../context/ThemeContext';
 import {
   getNotificationPermissionStatusAsync,
   isExpoGo,
-  registerForPushNotificationsAsync,
 } from '../../services/notificationService';
-import { getLocalTimeZoneShort } from '../../utils/formatPublishedAt';
-import { exoFonts } from '../../theme/fonts';
-import { colors, spacing } from '../../theme/theme';
+import { accentPresets, type AccentPresetKey, spacing } from '../../theme/theme';
 
-const BLUE = '#4CC9F0';
-
-type SettingsRowProps = {
+type ParentOptionProps = {
   icon: keyof typeof Ionicons.glyphMap;
   title: string;
   subtitle: string;
+  badge?: string;
   onPress: () => void;
+  accentColor: string;
+  colors: ReturnType<typeof useTheme>['colors'];
 };
 
-function SettingsRow({
+function ParentOptionRow({
   icon,
   title,
   subtitle,
+  badge,
   onPress,
-}: SettingsRowProps) {
+  accentColor,
+  colors,
+}: ParentOptionProps) {
   return (
     <Pressable
       accessibilityRole="button"
@@ -47,34 +47,74 @@ function SettingsRow({
         pressed && styles.rowPressed,
       ]}
     >
-      <View style={styles.rowIcon}>
+      <View
+        style={[
+          styles.iconWrap,
+          {
+            backgroundColor: `${accentColor}15`,
+          },
+        ]}
+      >
         <Ionicons
           name={icon}
-          size={21}
-          color={BLUE}
+          size={22}
+          color={accentColor}
         />
       </View>
 
       <View style={styles.rowContent}>
-        <Text style={styles.rowTitle}>
-          {title}
-        </Text>
+        <View style={styles.titleRow}>
+          <Text style={[styles.rowTitle, { color: colors.textPrimary }]}>
+            {title}
+          </Text>
+          {badge ? (
+            <View
+              style={[
+                styles.badge,
+                {
+                  backgroundColor: `${accentColor}20`,
+                },
+              ]}
+            >
+              <Text style={[styles.badgeText, { color: accentColor }]}>
+                {badge}
+              </Text>
+            </View>
+          ) : null}
+        </View>
 
-        <Text style={styles.rowSubtitle}>
+        <Text style={[styles.rowSubtitle, { color: colors.textMuted }]}>
           {subtitle}
         </Text>
       </View>
 
       <Ionicons
         name="chevron-forward"
-        size={19}
+        size={20}
         color={colors.textMuted}
       />
     </Pressable>
   );
 }
 
+const ACCENT_LABELS: Record<AccentPresetKey, string> = {
+  cyan: 'Classic Cyan',
+  teal: 'Modern Teal',
+  cobalt: 'Cobalt Blue',
+  green: 'Matrix Emerald',
+  amber: 'Radar Amber',
+  slate: 'Titanium Slate',
+};
+
 export default function SettingsScreen() {
+  const {
+    themeMode,
+    isDark,
+    accentKey,
+    accentColor,
+    colors,
+  } = useTheme();
+
   const [notificationsEnabled, setNotificationsEnabled] = useState(false);
 
   useEffect(() => {
@@ -100,242 +140,108 @@ export default function SettingsScreen() {
     };
   }, []);
 
+  const themeDisplay =
+    themeMode === 'system'
+      ? `System (${isDark ? 'Dark' : 'Light'})`
+      : isDark
+      ? 'Dark Mode'
+      : 'Light Mode';
+
+  const accentDisplay = ACCENT_LABELS[accentKey] ?? 'Cyan';
+
   return (
     <SafeAreaView
-      style={styles.safe}
+      style={[styles.safe, { backgroundColor: colors.background }]}
       edges={['top']}
     >
       <ScrollView
         showsVerticalScrollIndicator={false}
-        contentContainerStyle={
-          styles.scrollContent
-        }
+        contentContainerStyle={styles.scrollContent}
       >
         {/* HEADER */}
         <View style={styles.header}>
-          <Text style={styles.title}>
+          <Text style={[styles.title, { color: colors.textPrimary }]}>
             Settings
           </Text>
 
-          <Text style={styles.subtitle}>
-            SECU BUZZ APP SETTINGS
+          <Text style={[styles.subtitle, { color: accentColor }]}>
+            PREFERENCES & CONFIGURATION
           </Text>
         </View>
 
-        {/* NOTIFICATIONS */}
-        <View style={styles.sectionHeader}>
-          <Text style={styles.sectionLabel}>
-            NOTIFICATIONS
-          </Text>
-        </View>
-
-        <Pressable
-          accessibilityRole="button"
-          accessibilityLabel="Notification status"
-          onPress={async () => {
-            if (isExpoGo) {
-              return;
-            }
-            if (!notificationsEnabled) {
-              await registerForPushNotificationsAsync(true);
-              const status = await getNotificationPermissionStatusAsync();
-              setNotificationsEnabled(status === 'granted');
-            }
-          }}
-          style={styles.card}
-        >
-          <View style={styles.cardHeader}>
-            <Ionicons
-              name={
-                isExpoGo
-                  ? 'notifications-off-outline'
-                  : notificationsEnabled
-                  ? 'notifications-outline'
-                  : 'notifications-off-outline'
-              }
-              size={22}
-              color={isExpoGo ? colors.textMuted : BLUE}
-            />
-
-            <Text style={styles.label}>
-              News Alerts ·{' '}
-              <Text
-                style={{
-                  color: isExpoGo
-                    ? colors.textMuted
-                    : notificationsEnabled
-                    ? BLUE
-                    : colors.textMuted,
-                }}
-              >
-                {isExpoGo
-                  ? 'Preview / APK Only'
-                  : notificationsEnabled
-                  ? 'Enabled'
-                  : 'Disabled'}
-              </Text>
-            </Text>
-          </View>
-
-          <Text style={styles.body}>
-            {isExpoGo
-              ? 'Push notifications require a standalone or development build (disabled in Expo Go). Install the preview APK or standalone build to test alerts.'
-              : notificationsEnabled
-              ? 'Notifications are active. You will receive alerts when new cybersecurity briefs are published.'
-              : 'Notifications are disabled. Tap to grant permission and receive alerts for new security stories.'}
-          </Text>
-        </Pressable>
-
-        {/* APPEARANCE */}
-        <View style={styles.card}>
-          <View style={styles.cardHeader}>
-            <Ionicons
-              name="color-palette-outline"
-              size={22}
-              color={BLUE}
-            />
-
-            <Text style={styles.label}>
-              Appearance
-            </Text>
-          </View>
-
-          <Text style={styles.body}>
-            SecuBuzz uses a dark interface
-            with blue cybersecurity accents.
-            Light mode is not available yet.
-          </Text>
-        </View>
-
-        {/* TIME ZONE */}
-        <View style={styles.card}>
-          <View style={styles.cardHeader}>
-            <Ionicons
-              name="time-outline"
-              size={22}
-              color={BLUE}
-            />
-
-            <Text style={styles.label}>
-              Time Zone
-            </Text>
-          </View>
-
-          <Text style={styles.body}>
-            All article publication times are automatically converted to your device's local time zone ({getLocalTimeZoneShort() || 'Local'}).
-          </Text>
-        </View>
-
-        {/* LEGAL & PRIVACY */}
-        <View style={styles.sectionHeader}>
-          <Text style={styles.sectionLabel}>
-            LEGAL & PRIVACY
-          </Text>
-        </View>
-
-        <View style={styles.legalCard}>
-          <SettingsRow
-            icon="shield-checkmark-outline"
-            title="Privacy Policy"
-            subtitle="How SecuBuzz handles information"
-            onPress={() =>
-              router.push('/privacy')
-            }
-          />
-
-          <View style={styles.rowDivider} />
-
-          <SettingsRow
-            icon="document-text-outline"
-            title="Terms of Use"
-            subtitle="Terms governing use of SecuBuzz"
-            onPress={() =>
-              router.push('/terms')
-            }
-          />
-
-          <View style={styles.rowDivider} />
-
-          <SettingsRow
-            icon="lock-closed-outline"
-            title="Data & Privacy"
-            subtitle="A simple overview of your data"
-            onPress={() =>
-              router.push('/data-privacy')
-            }
-          />
-        </View>
-
-        {/* ABOUT & SUPPORT */}
+        {/* PARENT OPTIONS GROUP */}
         <View
           style={[
-            styles.sectionHeader,
-            styles.aboutSectionHeader,
+            styles.parentCard,
+            {
+              backgroundColor: colors.surface,
+              borderColor: colors.border,
+            },
           ]}
         >
-          <Text style={styles.sectionLabel}>
-            ABOUT & SUPPORT
-          </Text>
+          {/* 1. APPEARANCE */}
+          <ParentOptionRow
+            icon="color-palette-outline"
+            title="Appearance & Theme"
+            subtitle={`${themeDisplay} · ${accentDisplay}`}
+            onPress={() => router.push('/appearance')}
+            accentColor={accentColor}
+            colors={colors}
+          />
+
+          <View style={[styles.divider, { backgroundColor: colors.border }]} />
+
+          {/* 2. NOTIFICATIONS */}
+          <ParentOptionRow
+            icon="notifications-outline"
+            title="Notifications"
+            subtitle={
+              isExpoGo
+                ? 'Preview / APK Only'
+                : notificationsEnabled
+                ? 'Active · Push Alerts Enabled'
+                : 'Disabled · Tap to Configure'
+            }
+            badge={notificationsEnabled ? 'ACTIVE' : undefined}
+            onPress={() => router.push('/notifications')}
+            accentColor={accentColor}
+            colors={colors}
+          />
+
+          <View style={[styles.divider, { backgroundColor: colors.border }]} />
+
+          {/* 3. ABOUT & SUPPORT */}
+          <ParentOptionRow
+            icon="information-circle-outline"
+            title="About & Support"
+            subtitle="Feedback, version 1.0.1 & licenses"
+            onPress={() => router.push('/about-support')}
+            accentColor={accentColor}
+            colors={colors}
+          />
+
+          <View style={[styles.divider, { backgroundColor: colors.border }]} />
+
+          {/* 4. LEGAL & PRIVACY */}
+          <ParentOptionRow
+            icon="shield-checkmark-outline"
+            title="Legal & Privacy"
+            subtitle="Privacy Policy, terms & data rights"
+            onPress={() => router.push('/legal')}
+            accentColor={accentColor}
+            colors={colors}
+          />
         </View>
 
-        <View style={styles.legalCard}>
-          <SettingsRow
-            icon="information-outline"
-            title="About SecuBuzz"
-            subtitle="Version and application information"
-            onPress={() =>
-              router.push('/about')
-            }
-          />
-
-          <View style={styles.rowDivider} />
-
-          <SettingsRow
-            icon="code-slash-outline"
-            title="Open Source Licenses"
-            subtitle="Third-party software and licenses"
-            onPress={() =>
-              router.push('/licenses')
-            }
-          />
-
-          <View style={styles.rowDivider} />
-
-          <SettingsRow
-            icon="mail-outline"
-            title="Contact & Support"
-            subtitle="Privacy, security and support contact"
-            onPress={() =>
-              router.push('/contact')
-            }
-          />
-        </View>
-
-        <Pressable
-          accessibilityRole="link"
-          accessibilityLabel="MiSo Labs Website"
-          onPress={() =>
-            void Linking.openURL(
-              'https://secubuzz.com',
-            )
-          }
-          style={styles.developerFooter}
-        >
-          <Text style={styles.developerFooterText}>
-            SecuBuzz by MiSo Labs
+        {/* BOTTOM ATTRIBUTION */}
+        <View style={styles.footer}>
+          <Text style={[styles.footerText, { color: colors.textMuted }]}>
+            SecuBuzz Intelligence · Version 1.0.1
           </Text>
-
-          <Ionicons
-            name="open-outline"
-            size={12}
-            color={colors.textMuted}
-            style={styles.developerFooterIcon}
-          />
-        </Pressable>
-
-        <Text style={styles.version}>
-          SecuBuzz · v{Constants.expoConfig?.version || '1.0.0'} (Build {Constants.expoConfig?.android?.versionCode || '1'})
-        </Text>
+          <Text style={[styles.footerSubtext, { color: colors.textMuted }]}>
+            Crafted by MiSo Labs
+          </Text>
+        </View>
       </ScrollView>
     </SafeAreaView>
   );
@@ -344,161 +250,110 @@ export default function SettingsScreen() {
 const styles = StyleSheet.create({
   safe: {
     flex: 1,
-    backgroundColor:
-      colors.background,
   },
 
   scrollContent: {
-    paddingBottom: 36,
+    paddingHorizontal: spacing.lg,
+    paddingTop: spacing.sm,
+    paddingBottom: 48,
   },
 
   header: {
-    paddingHorizontal: spacing.lg,
-    paddingTop: spacing.md,
-    paddingBottom: spacing.lg,
+    paddingTop: spacing.sm,
+    paddingBottom: 24,
   },
 
   title: {
-    color: colors.textPrimary,
     fontSize: 30,
     lineHeight: 36,
     fontWeight: '800',
   },
 
   subtitle: {
-    color: BLUE,
     fontFamily: 'Exo_600SemiBold',
     fontSize: 11,
     letterSpacing: 2,
-    marginTop: 7,
+    marginTop: 6,
   },
 
-  card: {
-    marginHorizontal: spacing.lg,
-    marginBottom: spacing.md,
-    backgroundColor:
-      colors.surface,
-    borderWidth: 1,
-    borderColor: colors.border,
+  parentCard: {
     borderRadius: 16,
-    padding: spacing.lg,
-  },
-
-  cardHeader: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: 9,
-  },
-
-  label: {
-    color: BLUE,
-    fontFamily: 'Exo_600SemiBold',
-    fontSize: 15,
-    letterSpacing: 1.2,
-    marginLeft: 8,
-  },
-
-  body: {
-    color: colors.textSecondary,
-    fontSize: 15,
-    lineHeight: 22,
-  },
-
-  sectionHeader: {
-    marginHorizontal: spacing.lg,
-    marginTop: spacing.md,
-    marginBottom: 9,
-  },
-
-  aboutSectionHeader: {
-    marginTop: spacing.lg,
-  },
-
-  sectionLabel: {
-    color: colors.textMuted,
-    fontFamily: 'Exo_600SemiBold',
-    fontSize: 11,
-    letterSpacing: 1.7,
-  },
-
-  legalCard: {
-    marginHorizontal: spacing.lg,
-    backgroundColor:
-      colors.surface,
     borderWidth: 1,
-    borderColor: colors.border,
-    borderRadius: 16,
     overflow: 'hidden',
   },
 
   row: {
-    minHeight: 72,
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: spacing.lg,
-    paddingVertical: 12,
+    paddingHorizontal: 16,
+    paddingVertical: 18,
+    gap: 14,
   },
 
   rowPressed: {
     opacity: 0.7,
   },
 
-  rowIcon: {
-    width: 38,
-    height: 38,
+  iconWrap: {
+    width: 42,
+    height: 42,
+    borderRadius: 10,
     alignItems: 'center',
     justifyContent: 'center',
   },
 
   rowContent: {
     flex: 1,
-    marginHorizontal: 10,
+  },
+
+  titleRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    marginBottom: 4,
   },
 
   rowTitle: {
-    color: colors.textPrimary,
     fontFamily: 'Exo_600SemiBold',
     fontSize: 15,
   },
 
+  badge: {
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderRadius: 4,
+  },
+
+  badgeText: {
+    fontFamily: 'Exo_600SemiBold',
+    fontSize: 9.5,
+    letterSpacing: 0.8,
+  },
+
   rowSubtitle: {
-    color: colors.textMuted,
     fontFamily: 'Exo_400Regular',
-    fontSize: 12,
-    lineHeight: 18,
-    marginTop: 3,
+    fontSize: 12.5,
+    lineHeight: 17,
   },
 
-  rowDivider: {
+  divider: {
     height: 1,
-    backgroundColor:
-      colors.border,
-    marginLeft: 68,
+    marginLeft: 70,
   },
 
-  developerFooter: {
-    flexDirection: 'row',
+  footer: {
     alignItems: 'center',
-    justifyContent: 'center',
-    marginTop: 22,
-    marginBottom: 4,
+    marginTop: 36,
+    gap: 4,
   },
 
-  developerFooterText: {
-    color: colors.textSecondary,
+  footerText: {
     fontFamily: 'Exo_500Medium',
     fontSize: 12,
   },
 
-  developerFooterIcon: {
-    marginLeft: 5,
-  },
-
-  version: {
-    color: colors.textMuted,
+  footerSubtext: {
     fontFamily: 'Exo_400Regular',
     fontSize: 11,
-    textAlign: 'center',
-    marginTop: 6,
   },
 });

@@ -1,8 +1,9 @@
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 
+import { useTheme } from '../context/ThemeContext';
 import type { CategoryFilter } from '../models/article';
 import { ARTICLE_CATEGORIES } from '../models/article';
-import { colors, radii, spacing } from '../theme/theme';
+import { radii, spacing } from '../theme/theme';
 import { categoryLabel } from '../utils/categoryLabel';
 
 const FILTERS: { value: CategoryFilter; label: string }[] = [
@@ -23,9 +24,10 @@ type CategoryFilterChipsProps = {
 
 /**
  * Horizontal category filters on the Feed screen.
- * Not the colored tag on ArticleCard (see ArticleCard.tsx styles.pill).
  */
 export function CategoryFilterChips({ selected, onSelect }: CategoryFilterChipsProps) {
+  const { colors } = useTheme();
+
   return (
     <ScrollView
       horizontal
@@ -43,9 +45,26 @@ export function CategoryFilterChips({ selected, onSelect }: CategoryFilterChipsP
               accessibilityRole="button"
               accessibilityState={{ selected: isActive }}
               onPress={() => onSelect(filter.value)}
-              style={[styles.chip, isActive && styles.chipActive]}
+              style={[
+                styles.chip,
+                {
+                  backgroundColor: colors.surface,
+                  borderColor: colors.border,
+                },
+                isActive && {
+                  backgroundColor: colors.textPrimary,
+                  borderColor: colors.textPrimary,
+                },
+              ]}
             >
-              <Text style={[styles.chipLabel, isActive && styles.chipLabelActive]} allowFontScaling={false}>
+              <Text
+                style={[
+                  styles.chipLabel,
+                  { color: colors.textSecondary },
+                  isActive && { color: colors.background },
+                ]}
+                allowFontScaling={false}
+              >
                 {filter.label}
               </Text>
             </Pressable>
@@ -72,8 +91,6 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   chip: {
-    backgroundColor: colors.surface,
-    borderColor: colors.border,
     borderWidth: 1,
     borderRadius: radii.pill,
     minHeight: 36,
@@ -84,19 +101,11 @@ const styles = StyleSheet.create({
     overflow: 'visible',
     flexShrink: 0,
   },
-  chipActive: {
-    backgroundColor: colors.textPrimary,
-    borderColor: colors.textPrimary,
-  },
   chipLabel: {
-    color: colors.textSecondary,
     fontSize: CHIP_FONT_SIZE,
     lineHeight: CHIP_LINE_HEIGHT,
     fontWeight: '600',
     includeFontPadding: false,
     textAlignVertical: 'center',
-  },
-  chipLabelActive: {
-    color: colors.background,
   },
 });

@@ -7,13 +7,14 @@ import {
   View,
 } from 'react-native';
 
+import { useTheme } from '../context/ThemeContext';
 import type { Article } from '../models/article';
 import { colors, severityColors, spacing } from '../theme/theme';
+
+const BLUE = colors.accent;
 import { formatPublishedAt } from '../utils/formatPublishedAt';
 import { openArticle } from '../utils/openArticle';
 import { shareArticle } from '../utils/shareArticle';
-
-const BLUE = '#4CC9F0';
 
 type ArticleCardProps = {
   article: Article;
@@ -40,8 +41,8 @@ export function ArticleCard({
   isSaved,
   onToggleSaved,
 }: ArticleCardProps) {
-  const [opening, setOpening] =
-    useState(false);
+  const { colors, isDark, accentColor, severityColors } = useTheme();
+  const [opening, setOpening] = useState(false);
 
   async function handleOpenArticle() {
     if (opening) {
@@ -58,30 +59,38 @@ export function ArticleCard({
   }
 
   const isCritical = article.severity === 'CRITICAL';
+  const severityConfig = article.severity ? severityColors[article.severity] : null;
 
   return (
-    <View style={styles.card}>
+    <View style={[styles.card, { backgroundColor: colors.background }]}>
       {/* CATEGORY + SEVERITY + ACTIONS */}
       <View style={styles.metaTopRow}>
         <View style={styles.metaLeftGroup}>
-          <Text style={styles.category}>
+          <Text style={[styles.category, { color: accentColor }]}>
             {formatCategory(article.category)}
           </Text>
 
-          {article.severity ? (
+          {article.severity && severityConfig ? (
             <View
               style={[
                 styles.severityTag,
-                isCritical && styles.severityTagCritical,
+                {
+                  backgroundColor: isDark
+                    ? 'rgba(255, 255, 255, 0.05)'
+                    : 'rgba(0, 0, 0, 0.04)',
+                },
+                isCritical && {
+                  backgroundColor: severityConfig.surface,
+                  borderWidth: 1,
+                  borderColor: severityConfig.border,
+                },
               ]}
             >
               <View
                 style={[
                   styles.severityDot,
                   {
-                    backgroundColor:
-                      severityColors[article.severity]?.primary ??
-                      colors.textMuted,
+                    backgroundColor: severityConfig.primary,
                   },
                 ]}
               />
@@ -89,9 +98,7 @@ export function ArticleCard({
                 style={[
                   styles.severityLabel,
                   {
-                    color:
-                      severityColors[article.severity]?.primary ??
-                      colors.textMuted,
+                    color: severityConfig.primary,
                   },
                 ]}
               >
@@ -140,7 +147,7 @@ export function ArticleCard({
               size={24}
               color={
                 isSaved
-                  ? BLUE
+                  ? accentColor
                   : colors.textSecondary
               }
             />
@@ -149,14 +156,14 @@ export function ArticleCard({
       </View>
 
       {/* DATE + SOURCE */}
-      <Text style={styles.publicationMeta}>
+      <Text style={[styles.publicationMeta, { color: colors.textSecondary }]}>
         {formatPublishedAt(article)} ·{' '}
         {article.sourceName}
       </Text>
 
       {/* HEADLINE */}
       <Text
-        style={styles.headline}
+        style={[styles.headline, { color: colors.textPrimary }]}
         numberOfLines={4}
       >
         {article.headline}
@@ -166,19 +173,23 @@ export function ArticleCard({
       <View
         style={[
           styles.divider,
-          isCritical && { backgroundColor: severityColors.CRITICAL.primary },
+          {
+            backgroundColor: isCritical
+              ? severityColors.CRITICAL.primary
+              : accentColor,
+          },
         ]}
       />
 
       {/* FULL SUMMARY */}
       <View style={styles.summaryContainer}>
-        <Text style={styles.summary}>
+        <Text style={[styles.summary, { color: colors.textSecondary }]}>
           {article.summary}
         </Text>
       </View>
 
       {/* READ MORE */}
-      <View style={styles.footer}>
+      <View style={[styles.footer, { backgroundColor: colors.background }]}>
         <Pressable
           accessibilityRole="button"
           accessibilityLabel="Open original article"
@@ -186,9 +197,9 @@ export function ArticleCard({
           onPress={() => {
             void handleOpenArticle();
           }}
-          style={styles.readMoreRow}
+          style={[styles.readMoreRow, { borderTopColor: colors.border }]}
         >
-          <Text style={styles.readMoreText}>
+          <Text style={[styles.readMoreText, { color: accentColor }]}>
             {opening
               ? 'OPENING...'
               : `READ MORE · ${article.sourceName.toUpperCase()}`}
@@ -197,7 +208,7 @@ export function ArticleCard({
           <Ionicons
             name="arrow-forward"
             size={24}
-            color={BLUE}
+            color={accentColor}
           />
         </Pressable>
       </View>
@@ -209,8 +220,6 @@ const styles = StyleSheet.create({
   card: {
     flex: 1,
     position: 'relative',
-    backgroundColor:
-      colors.background,
     paddingHorizontal: spacing.lg,
     paddingTop: spacing.md,
     paddingBottom: 68,
@@ -283,18 +292,18 @@ const styles = StyleSheet.create({
 
   headline: {
     color: colors.textPrimary,
-    fontSize: 25,
-    lineHeight: 32,
-    fontWeight: '800',
-    marginTop: spacing.lg,
+    fontSize: 21,
+    lineHeight: 28,
+    fontWeight: '700',
+    marginTop: spacing.md,
   },
 
   divider: {
-    width: 64,
-    height: 3,
+    width: 48,
+    height: 2.5,
     backgroundColor: BLUE,
-    marginTop: spacing.lg,
-    marginBottom: spacing.lg,
+    marginTop: spacing.md,
+    marginBottom: spacing.md,
   },
 
   summaryContainer: {
@@ -303,8 +312,8 @@ const styles = StyleSheet.create({
 
   summary: {
     color: colors.textSecondary,
-    fontSize: 16,
-    lineHeight: 25,
+    fontSize: 14.5,
+    lineHeight: 22.5,
   },
 
   footer: {

@@ -1,0 +1,49 @@
+name: SecuBuzz Security & Quality Audit
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    name: Security & Code Integrity Audit
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: 'npm'
+
+      - name: Gitleaks Secret Scanner (Detect API keys & credentials)
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: false
+
+      - name: Install App Dependencies
+        run: npm ci --prefer-offline
+
+      - name: Audit App Dependencies (High & Critical CVEs)
+        run: npm audit --audit-level=high
+
+      - name: Verify TypeScript Integrity
+        run: npx tsc --noEmit
+
+      - name: Audit Cloudflare Worker Dependencies
+        working-directory: ./worker
+        run: |
+          npm ci --prefer-offline
+          npm audit --audit-level=high

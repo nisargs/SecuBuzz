@@ -9,17 +9,37 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { colors, spacing } from '../theme/theme';
+import { useTheme } from '../context/ThemeContext';
+import { spacing } from '../theme/theme';
 
-const BLUE = '#4CC9F0';
+const PACKAGES = [
+  { name: 'expo', license: 'MIT License' },
+  { name: 'expo-router', license: 'MIT License' },
+  { name: 'react', license: 'MIT License' },
+  { name: 'react-native', license: 'MIT License' },
+  { name: '@expo-google-fonts/exo', license: 'SIL Open Font License' },
+  { name: '@expo/vector-icons', license: 'MIT License' },
+  { name: 'expo-constants', license: 'MIT License' },
+  { name: 'expo-device', license: 'MIT License' },
+  { name: 'expo-font', license: 'MIT License' },
+  { name: 'expo-linking', license: 'MIT License' },
+  { name: 'expo-notifications', license: 'MIT License' },
+  { name: 'expo-splash-screen', license: 'MIT License' },
+  { name: 'expo-status-bar', license: 'MIT License' },
+  { name: 'react-native-safe-area-context', license: 'MIT License' },
+  { name: 'react-native-screens', license: 'MIT License' },
+  { name: '@react-native-async-storage/async-storage', license: 'MIT License' },
+];
 
 export default function LicensesScreen() {
+  const { colors, accentColor } = useTheme();
+
   return (
     <SafeAreaView
-      style={styles.safeArea}
+      style={[styles.safeArea, { backgroundColor: colors.background }]}
       edges={['top', 'bottom']}
     >
-      <View style={styles.header}>
+      <View style={[styles.header, { borderBottomColor: colors.border }]}>
         <Pressable
           accessibilityRole="button"
           accessibilityLabel="Go back"
@@ -33,7 +53,7 @@ export default function LicensesScreen() {
           />
         </Pressable>
 
-        <Text style={styles.headerTitle}>
+        <Text style={[styles.headerTitle, { color: colors.textPrimary }]}>
           Open Source Licenses
         </Text>
 
@@ -44,112 +64,55 @@ export default function LicensesScreen() {
         style={styles.scroll}
         contentContainerStyle={styles.content}
       >
-        <Text style={styles.eyebrow}>
+        <Text style={[styles.eyebrow, { color: accentColor }]}>
           OPEN SOURCE
         </Text>
 
-        <Text style={styles.title}>
+        <Text style={[styles.title, { color: colors.textPrimary }]}>
           Software licenses
         </Text>
 
-        <Text style={styles.paragraph}>
+        <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
           SecuBuzz is built using open-source software
           and third-party packages. Each dependency
           remains subject to its applicable license.
         </Text>
 
-        <License
-          name="React Native"
-          license="MIT"
-        />
+        {PACKAGES.map((pkg) => (
+          <View
+            key={pkg.name}
+            style={[styles.license, { borderTopColor: colors.border }]}
+          >
+            <View style={styles.licenseBody}>
+              <Text style={[styles.licenseName, { color: colors.textPrimary }]}>
+                {pkg.name}
+              </Text>
 
-        <License
-          name="React"
-          license="MIT"
-        />
+              <Text style={[styles.licenseType, { color: colors.textMuted }]}>
+                {pkg.license}
+              </Text>
+            </View>
 
-        <License
-          name="Expo"
-          license="MIT"
-        />
+            <Ionicons
+              name="shield-checkmark-outline"
+              size={18}
+              color={accentColor}
+            />
+          </View>
+        ))}
 
-        <License
-          name="Expo Router"
-          license="MIT"
-        />
-
-        <License
-          name="@expo/vector-icons"
-          license="MIT"
-        />
-
-        <License
-          name="AsyncStorage"
-          license="MIT"
-        />
-
-        <License
-          name="expo-notifications"
-          license="MIT"
-        />
-
-        <License
-          name="react-native-safe-area-context"
-          license="MIT"
-        />
-
-        <License
-          name="react-native-screens"
-          license="MIT"
-        />
-
-        <License
-          name="Exo Font Family"
-          license="SIL Open Font License 1.1"
-        />
-
-        <Text style={styles.note}>
-          SecuBuzz is grateful to the open-source community and contributors behind these libraries. All third-party trademarks and brand names are the property of their respective owners.
+        <Text style={[styles.note, { color: colors.textMuted }]}>
+          All third-party trademarks and trade names
+          belong to their respective owners.
         </Text>
       </ScrollView>
     </SafeAreaView>
   );
 }
 
-type LicenseProps = {
-  name: string;
-  license: string;
-};
-
-function License({
-  name,
-  license,
-}: LicenseProps) {
-  return (
-    <View style={styles.license}>
-      <View style={styles.licenseBody}>
-        <Text style={styles.licenseName}>
-          {name}
-        </Text>
-
-        <Text style={styles.licenseType}>
-          {license}
-        </Text>
-      </View>
-
-      <Ionicons
-        name="chevron-forward"
-        size={18}
-        color={colors.textMuted}
-      />
-    </View>
-  );
-}
-
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: colors.background,
   },
 
   header: {
@@ -158,12 +121,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: spacing.lg,
     borderBottomWidth: 1,
-    borderBottomColor: colors.border,
   },
 
   headerTitle: {
     flex: 1,
-    color: colors.textPrimary,
     fontFamily: 'Exo_700Bold',
     fontSize: 18,
     textAlign: 'center',
@@ -184,7 +145,6 @@ const styles = StyleSheet.create({
   },
 
   eyebrow: {
-    color: BLUE,
     fontFamily: 'Exo_600SemiBold',
     fontSize: 11,
     letterSpacing: 1.8,
@@ -192,7 +152,6 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    color: colors.textPrimary,
     fontFamily: 'Exo_800ExtraBold',
     fontSize: 30,
     lineHeight: 38,
@@ -200,7 +159,6 @@ const styles = StyleSheet.create({
   },
 
   paragraph: {
-    color: colors.textSecondary,
     fontFamily: 'Exo_400Regular',
     fontSize: 15,
     lineHeight: 24,
@@ -211,7 +169,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     borderTopWidth: 1,
-    borderTopColor: colors.border,
     paddingVertical: 16,
   },
 
@@ -220,20 +177,17 @@ const styles = StyleSheet.create({
   },
 
   licenseName: {
-    color: colors.textPrimary,
     fontFamily: 'Exo_600SemiBold',
     fontSize: 15,
   },
 
   licenseType: {
-    color: colors.textMuted,
     fontFamily: 'Exo_400Regular',
     fontSize: 12,
     marginTop: 4,
   },
 
   note: {
-    color: colors.textMuted,
     fontFamily: 'Exo_400Regular',
     fontSize: 12,
     lineHeight: 19,

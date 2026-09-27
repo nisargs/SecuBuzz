@@ -25,6 +25,7 @@ import {
 } from '../../components/ScreenStates';
 import { useSavedArticles } from '../../context/SavedArticlesContext';
 import { useArticles } from '../../hooks/useArticles';
+import { useTheme } from '../../context/ThemeContext';
 import {
   ARTICLE_CATEGORIES,
   type Article,
@@ -32,7 +33,7 @@ import {
 } from '../../models/article';
 import { colors, spacing } from '../../theme/theme';
 
-const BLUE = '#4CC9F0';
+const BLUE = colors.accent;
 
 const PROGRESS_SEGMENTS = 5;
 
@@ -84,6 +85,7 @@ function formatHeaderDateTime(
 }
 
 export default function FeedScreen() {
+  const { colors, isDark, accentColor } = useTheme();
   const { state, load } = useArticles();
 
   const {
@@ -477,7 +479,7 @@ export default function FeedScreen() {
 
   return (
     <SafeAreaView
-      style={styles.safe}
+      style={[styles.safe, { backgroundColor: colors.background }]}
       edges={['top']}
     >
       {/* HEADER */}
@@ -490,19 +492,19 @@ export default function FeedScreen() {
           style={styles.headerLeft}
         >
           <View style={styles.titleRow}>
-            <Text style={styles.title}>
+            <Text style={[styles.title, { color: colors.textPrimary }]}>
               Secu
-              <Text style={styles.titleAccent}>
+              <Text style={[styles.titleAccent, { color: accentColor }]}>
                 Buzz
               </Text>
             </Text>
 
-            <Text style={styles.date}>
+            <Text style={[styles.date, { color: colors.textSecondary }]}>
               {formatHeaderDateTime(now)}
             </Text>
           </View>
 
-          <Text style={styles.subtitle}>
+          <Text style={[styles.subtitle, { color: colors.textPrimary }]}>
             60-WORD SECURITY BRIEFS
           </Text>
         </Pressable>
@@ -518,7 +520,7 @@ export default function FeedScreen() {
             <Ionicons
               name="refresh-outline"
               size={26}
-              color={BLUE}
+              color={accentColor}
             />
           </Pressable>
 
@@ -540,7 +542,7 @@ export default function FeedScreen() {
                   : 'search-outline'
               }
               size={28}
-              color={BLUE}
+              color={accentColor}
             />
           </Pressable>
         </View>
@@ -548,11 +550,19 @@ export default function FeedScreen() {
 
       {/* SEARCH */}
       {searchOpen ? (
-        <View style={styles.searchContainer}>
+        <View
+          style={[
+            styles.searchContainer,
+            {
+              borderColor: accentColor,
+              backgroundColor: colors.surface,
+            },
+          ]}
+        >
           <Ionicons
             name="search-outline"
             size={20}
-            color={BLUE}
+            color={accentColor}
           />
 
           <TextInput
@@ -563,7 +573,10 @@ export default function FeedScreen() {
             placeholderTextColor={
               colors.textMuted
             }
-            style={styles.searchInput}
+            style={[
+              styles.searchInput,
+              { color: colors.textPrimary },
+            ]}
             returnKeyType="search"
             autoCapitalize="none"
             autoCorrect={false}
@@ -581,7 +594,7 @@ export default function FeedScreen() {
               <Ionicons
                 name="close-circle"
                 size={20}
-                color={BLUE}
+                color={accentColor}
               />
             </Pressable>
           ) : null}
@@ -612,15 +625,26 @@ export default function FeedScreen() {
               }
               style={[
                 styles.chip,
-                selected &&
-                  styles.chipSelected,
+                {
+                  borderColor: colors.border,
+                  backgroundColor: isDark ? 'transparent' : colors.surface,
+                },
+                selected && {
+                  borderColor: accentColor,
+                  backgroundColor: isDark
+                    ? `${accentColor}18`
+                    : `${accentColor}14`,
+                },
               ]}
             >
               <Text
                 style={[
                   styles.chipText,
-                  selected &&
-                    styles.chipTextSelected,
+                  { color: colors.textSecondary },
+                  selected && {
+                    color: accentColor,
+                    fontFamily: 'Exo_600SemiBold',
+                  },
                 ]}
               >
                 {formatCategory(category)}
@@ -645,8 +669,8 @@ export default function FeedScreen() {
               key={index}
               style={[
                 styles.progressSegment,
-                active &&
-                  styles.progressSegmentActive,
+                { backgroundColor: colors.border },
+                active && { backgroundColor: accentColor },
               ]}
             />
           );
@@ -734,8 +758,8 @@ export default function FeedScreen() {
               <RefreshControl
                 refreshing={refreshing}
                 onRefresh={handleManualRefresh}
-                tintColor={BLUE}
-                colors={[BLUE]}
+                tintColor={accentColor}
+                colors={[accentColor]}
                 progressBackgroundColor={
                   colors.surface
                 }
@@ -775,15 +799,20 @@ export default function FeedScreen() {
             onPress={scrollToTop}
             style={({ pressed }) => [
               styles.backToTopButton,
+              {
+                backgroundColor: isDark ? '#0B0F14E6' : '#FFFFFFE6',
+                borderColor: `${accentColor}99`,
+                shadowColor: accentColor,
+              },
               pressed && styles.backToTopButtonPressed,
             ]}
           >
             <Ionicons
               name="arrow-up"
               size={14}
-              color={BLUE}
+              color={accentColor}
             />
-            <Text style={styles.backToTopText}>
+            <Text style={[styles.backToTopText, { color: accentColor }]}>
               TOP
             </Text>
           </Pressable>
@@ -797,11 +826,17 @@ export default function FeedScreen() {
           style={styles.refreshIndicator}
         >
           <View
-            style={styles.refreshCircle}
+            style={[
+              styles.refreshCircle,
+              {
+                backgroundColor: colors.surface,
+                borderColor: accentColor,
+              },
+            ]}
           >
             <ActivityIndicator
               size="small"
-              color={BLUE}
+              color={accentColor}
             />
           </View>
         </View>
@@ -814,6 +849,8 @@ export default function FeedScreen() {
           style={[
             styles.upToDateBanner,
             {
+              backgroundColor: isDark ? '#111822EE' : '#FFFFFFFA',
+              borderColor: isDark ? `${accentColor}44` : colors.border,
               opacity: bannerOpacity,
               transform: [{ translateY: bannerTranslateY }],
             },
@@ -822,10 +859,10 @@ export default function FeedScreen() {
           <Ionicons
             name="checkmark-circle"
             size={16}
-            color={BLUE}
+            color={accentColor}
             style={styles.upToDateIcon}
           />
-          <Text style={styles.upToDateText}>
+          <Text style={[styles.upToDateText, { color: colors.textPrimary }]}>
             Feed is up to date
           </Text>
         </Animated.View>
