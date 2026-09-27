@@ -1,5 +1,17 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-turns-claude-into-an-ai-marketplace-with-2-000-plus-plugins-and-connectors/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-turns-claude-into-an-ai-marketplace-with-2-000-plus-plugins-and-connectors/",
+    "title": "Anthropic Launches Claude Marketplace with 2,000+ AI Plugins",
+    "headline": "Anthropic Launches Claude Marketplace with 2,000+ AI Plugins",
+    "summary": "Anthropic announced the Claude Marketplace, consolidating AI tools such as plugins, connectors, and agents into a single platform. The new hub aims to streamline access to AI functionalities for developers and users, enhancing integration across applications.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-09-27T13:38:40.000Z",
+    "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-turns-claude-into-an-ai-marketplace-with-2-000-plus-plugins-and-connectors/"
+  },
+  {
     "id": "https://www.securityweek.com/microsoft-sharepoint-flaw-cve-2026-65660-now-exploited-in-attacks/",
     "sourceUrl": "https://www.securityweek.com/microsoft-sharepoint-flaw-cve-2026-65660-now-exploited-in-attacks/",
     "title": "Microsoft SharePoint CVE-2026-65660 Exploited in Attacks",
