@@ -35,4 +35,19 @@
 ## 6. Next Native `.aab` Rebuild Roadmap (v1.0.2+)
 - **Haptic Feedback:** Install `expo-haptics` (`npx expo install expo-haptics`) on the next full native binary release for tactile bookmarking and refresh feedback. Do not introduce in OTA-only cycles.
 
+## 7. Product Evolution & Post-Approval Roadmap (Claude + ChatGPT Synthesis)
+- **Current Milestone (Freeze Phase):** 14-day Google Play closed testing window (~10 days remaining as of late Sept 2026). Protect build stability on production branch; no high-risk architectural rewrites during this evaluation window.
+- **EPSS (Exploit Prediction Scoring System) Evaluation:** Scheduled for preliminary technical evaluation on Monday/Tuesday. EPSS is a free daily API from FIRST.org providing in-the-wild exploitation probability (e.g. 97th percentile / 0.94 probability) for CVEs. Must be lightweight and fail gracefully if offline.
+- **The Core Product Pivot ("Threat-to-Action"):**
+  - Transform SecuBuzz from a cybersecurity news reader into a lightweight, personal threat-intelligence assistant.
+  - Pipeline: `News → CVE → KEV → EPSS → Product / Version → User Stack ("Am I Affected?") → Action`.
+- **Feature Prioritization (Post-Approval v1.1+):**
+  - **P0: "My Stack / Am I Affected?"**: Local, 100% on-device vendor/technology watchlist (e.g. Microsoft Exchange, Palo Alto PAN-OS, Cisco ASA, Fortinet). Matches against `vendorProject` and `product` fields already present in the article model. Zero privacy risk, zero backend cost.
+  - **P0: EPSS Threat Enrichment**: Display probability percentile alongside CVSS and CISA KEV on CVE advisory cards.
+  - **P1: Structured Threat Timeline**: Visual lifecycle (`Disclosed → PoC → Exploit → CISA KEV → Patch`) indicating what changed.
+  - **P1: Authoritative NVD Vector Integration**: Pull CVSS v3.1/v4.0 vector strings directly from NIST NVD API.
+- **Strict Guardrails:**
+  - **No UGC / Social Feeds:** Reject open comments, likes, or user-generated text. Preserves sober, no-noise positioning and avoids legal moderation liability. If community signal is added, keep it strictly to anonymous 1-tap poll metrics (e.g., *"Are you affected? Yes 30% / No 70%"*).
+  - **No Full-Text Scraping for IOCs:** Do not scrape full publisher articles to extract IPs/hashes (copyright risk). Extract structured IOCs only from designated open threat feeds (ThreatFox, CISA KEV) when needed.
+
 
