@@ -1,5 +1,17 @@
 [
   {
+    "id": "https://www.securityweek.com/microsoft-sharepoint-flaw-cve-2026-65660-now-exploited-in-attacks/",
+    "sourceUrl": "https://www.securityweek.com/microsoft-sharepoint-flaw-cve-2026-65660-now-exploited-in-attacks/",
+    "title": "Microsoft SharePoint CVE-2026-65660 Exploited in Attacks",
+    "headline": "Microsoft SharePoint CVE-2026-65660 Exploited in Attacks",
+    "summary": "CISA has added CVE-2026-65660 to its KEV catalog, marking it as a critical vulnerability in Microsoft SharePoint. The flaw is actively exploited, forcing federal agencies to patch by September 28. The vulnerability allows attackers to execute remote code, potentially compromising sensitive data and systems.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-09-27T09:23:09.000Z",
+    "url": "https://www.securityweek.com/microsoft-sharepoint-flaw-cve-2026-65660-now-exploited-in-attacks/"
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/09/27/week-in-review-gyazo-breach-exposes-23-6m-user-data-taskstomp-steals-documents/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/09/27/week-in-review-gyazo-breach-exposes-23-6m-user-data-taskstomp-steals-documents/",
     "title": "Gyazo Breach Exposes 23.6 Million User Records",
