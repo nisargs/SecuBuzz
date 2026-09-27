@@ -1,5 +1,17 @@
 [
   {
+    "id": "https://www.darkreading.com/cyber-risk/how-to-manage-ciso-cfo-relationship-cybersecurity-success",
+    "sourceUrl": "https://www.darkreading.com/cyber-risk/how-to-manage-ciso-cfo-relationship-cybersecurity-success",
+    "title": "CISO and CFO Alignment Boosts Cybersecurity Success",
+    "headline": "CISO and CFO Alignment Boosts Cybersecurity Success",
+    "summary": "Organizations where CISOs and CFOs align on cybersecurity strategy better protect assets, manage risk, and enable business growth, according to a Dark Reading analysis.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-09-25T20:28:10.000Z",
+    "url": "https://www.darkreading.com/cyber-risk/how-to-manage-ciso-cfo-relationship-cybersecurity-success"
+  },
+  {
     "id": "https://www.cisa.gov/news-events/alerts/2026/09/27/critical-zero-day-vulnerabilities-exploited-citrix-netscaler-adc-gateway",
     "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/09/27/critical-zero-day-vulnerabilities-exploited-citrix-netscaler-adc-gateway",
     "title": "Citrix NetScaler ADC and Gateway Zero-Day Vulnerabilities Exploited Globally",
