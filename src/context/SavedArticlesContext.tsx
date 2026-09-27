@@ -78,15 +78,28 @@ function parseArticle(value: unknown): Article | null {
     return null;
   }
 
+  const rawSummary = record.summary as string;
+  const cleanSummary = rawSummary
+    .replace(/^#+\s*.*$/gm, '')
+    .replace(/#+\s*(?:Summary|Details|Impact|Workarounds|PoC)\b:?/gi, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+
   return {
     id: record.id,
     headline: record.headline,
-    summary: record.summary,
+    summary: cleanSummary,
     sourceName: record.sourceName,
     sourceUrl: record.sourceUrl,
     category: record.category,
     publishedAt: record.publishedAt,
     severity: String(record.severity).toUpperCase() as Article['severity'],
+    requiredAction: typeof record.requiredAction === 'string' ? record.requiredAction : undefined,
+    dueDate: typeof record.dueDate === 'string' ? record.dueDate : undefined,
+    patchedVersion: typeof record.patchedVersion === 'string' ? record.patchedVersion : undefined,
+    vulnerableVersionRange: typeof record.vulnerableVersionRange === 'string' ? record.vulnerableVersionRange : undefined,
+    vendorProject: typeof record.vendorProject === 'string' ? record.vendorProject : undefined,
+    product: typeof record.product === 'string' ? record.product : undefined,
   };
 }
 
@@ -150,6 +163,59 @@ async function findArticleForSaving(
           if (article?.id === articleId) {
             return article;
           }
+        }
+      }
+    }
+  } catch {
+    // Continue to advisories check.
+  }
+
+  /*
+   * Second, check the advisories cache.
+   * If the user saved a CVE/threat advisory from the Advisories tab,
+   * convert it into the unified Article shape so it appears in the Saved tab.
+   */
+  try {
+    let rawAdvisories = await AsyncStorage.getItem('@secubuzz_advisories_v3');
+    if (!rawAdvisories) {
+      rawAdvisories = await AsyncStorage.getItem('@secubuzz_advisories_v2');
+    }
+    if (rawAdvisories !== null) {
+      const advisories: unknown = JSON.parse(rawAdvisories);
+      if (Array.isArray(advisories)) {
+        const found = advisories.find(
+          (item: any) => item?.id === articleId || item?.cveID === articleId,
+        );
+        if (found) {
+          const rawDesc =
+            found.shortDescription ||
+            found.requiredAction ||
+            'Known Exploited Threat Advisory';
+          const cleanSummary = rawDesc
+            .replace(/^#+\s*.*$/gm, '')
+            .replace(/#+\s*(?:Summary|Details|Impact|Workarounds|PoC)\b:?/gi, '')
+            .replace(/\s+/g, ' ')
+            .trim();
+
+          const advisoryArticle: Article = {
+            id: found.id || found.cveID,
+            headline: `${found.cveID}: ${found.vulnerabilityName || found.product}`,
+            summary: cleanSummary,
+            sourceUrl:
+              found.url ||
+              `https://nvd.nist.gov/vuln/detail/${found.cveID}`,
+            sourceName: found.source || 'CISA KEV',
+            publishedAt: found.dateAdded || new Date().toISOString(),
+            category: 'CVE',
+            severity: found.severity || 'HIGH',
+            requiredAction: found.requiredAction,
+            dueDate: found.dueDate,
+            patchedVersion: found.patchedVersion,
+            vulnerableVersionRange: found.vulnerableVersionRange,
+            vendorProject: found.vendorProject,
+            product: found.product,
+          };
+          return advisoryArticle;
         }
       }
     }

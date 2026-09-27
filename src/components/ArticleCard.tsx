@@ -20,6 +20,8 @@ type ArticleCardProps = {
   article: Article;
   isSaved: boolean;
   onToggleSaved: (articleId: string) => void;
+  onSelectSeverity?: (severity: NonNullable<Article['severity']>) => void;
+  onSelectCategory?: (category: Article['category']) => void;
 };
 
 function formatCategory(
@@ -40,6 +42,8 @@ export function ArticleCard({
   article,
   isSaved,
   onToggleSaved,
+  onSelectSeverity,
+  onSelectCategory,
 }: ArticleCardProps) {
   const { colors, isDark, accentColor, severityColors } = useTheme();
   const [opening, setOpening] = useState(false);
@@ -66,12 +70,25 @@ export function ArticleCard({
       {/* CATEGORY + SEVERITY + ACTIONS */}
       <View style={styles.metaTopRow}>
         <View style={styles.metaLeftGroup}>
-          <Text style={[styles.category, { color: accentColor }]}>
-            {formatCategory(article.category)}
-          </Text>
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel={`Filter by ${formatCategory(article.category)} category`}
+            hitSlop={8}
+            disabled={!onSelectCategory}
+            onPress={() => onSelectCategory?.(article.category)}
+          >
+            <Text style={[styles.category, { color: accentColor }]}>
+              {formatCategory(article.category)}
+            </Text>
+          </Pressable>
 
           {article.severity && severityConfig ? (
-            <View
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel={`Filter by ${article.severity} severity`}
+              hitSlop={8}
+              disabled={!onSelectSeverity}
+              onPress={() => onSelectSeverity?.(article.severity!)}
               style={[
                 styles.severityTag,
                 {
@@ -104,7 +121,7 @@ export function ArticleCard({
               >
                 {article.severity}
               </Text>
-            </View>
+            </Pressable>
           ) : null}
         </View>
 

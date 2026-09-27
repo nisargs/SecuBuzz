@@ -6,6 +6,7 @@ import {
   Pressable,
   ScrollView,
   StyleSheet,
+  Switch,
   Text,
   View,
 } from 'react-native';
@@ -13,24 +14,34 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { useTheme } from '../context/ThemeContext';
 import {
+  DEFAULT_NOTIFICATION_PREFERENCES,
   getNotificationPermissionStatusAsync,
+  getNotificationPreferencesAsync,
   isExpoGo,
   registerForPushNotificationsAsync,
+  saveNotificationPreferencesAsync,
+  type NotificationPreferences,
+  type SeverityThreshold,
 } from '../services/notificationService';
 import { spacing } from '../theme/theme';
 
 export default function NotificationsScreen() {
-  const { colors, accentColor, severityColors } = useTheme();
+  const { colors, isDark, accentColor, severityColors } = useTheme();
 
   const [notificationsEnabled, setNotificationsEnabled] = useState(false);
   const [requesting, setRequesting] = useState(false);
+  const [preferences, setPreferences] = useState<NotificationPreferences>(
+    DEFAULT_NOTIFICATION_PREFERENCES,
+  );
 
   useEffect(() => {
     let isMounted = true;
     async function checkStatus() {
       const status = await getNotificationPermissionStatusAsync();
+      const prefs = await getNotificationPreferencesAsync();
       if (isMounted) {
         setNotificationsEnabled(status === 'granted');
+        setPreferences(prefs);
       }
     }
 
@@ -63,6 +74,14 @@ export default function NotificationsScreen() {
     } finally {
       setRequesting(false);
     }
+  }
+
+  async function handleUpdatePreference<K extends keyof NotificationPreferences>(
+    key: K,
+    value: NotificationPreferences[K],
+  ) {
+    const next = await saveNotificationPreferencesAsync({ [key]: value });
+    setPreferences(next);
   }
 
   return (
@@ -185,6 +204,270 @@ export default function NotificationsScreen() {
               : 'Tap to grant permission. Once enabled, you will receive timely notifications when major security incidents occur.'}
           </Text>
         </Pressable>
+
+        {/* ALERT CHANNELS */}
+        <Text style={[styles.sectionSubtitle, { color: colors.textMuted }]}>
+          ALERT CHANNELS
+        </Text>
+
+        <View
+          style={[
+            styles.channelsCard,
+            {
+              backgroundColor: colors.surface,
+              borderColor: colors.border,
+            },
+          ]}
+        >
+          {/* News Briefs Toggle */}
+          <View style={styles.channelRow}>
+            <View
+              style={[
+                styles.channelIconWrap,
+                { backgroundColor: `${accentColor}18` },
+              ]}
+            >
+              <Ionicons
+                name="newspaper-outline"
+                size={20}
+                color={accentColor}
+              />
+            </View>
+            <View style={styles.channelTextWrap}>
+              <Text style={[styles.channelTitle, { color: colors.textPrimary }]}>
+                News Briefs Dispatches
+              </Text>
+              <Text style={[styles.channelDesc, { color: colors.textSecondary }]}>
+                Daily cybersecurity intelligence, data breaches, and incident analysis.
+              </Text>
+            </View>
+            <Switch
+              value={preferences.newsBriefs}
+              onValueChange={(val) => handleUpdatePreference('newsBriefs', val)}
+              trackColor={{
+                false: isDark ? '#334155' : '#cbd5e1',
+                true: `${accentColor}88`,
+              }}
+              thumbColor={preferences.newsBriefs ? accentColor : '#94a3b8'}
+            />
+          </View>
+
+          <View style={[styles.divider, { backgroundColor: colors.border }]} />
+
+          {/* Threat Advisories Toggle */}
+          <View style={styles.channelRow}>
+            <View
+              style={[
+                styles.channelIconWrap,
+                { backgroundColor: `${severityColors.CRITICAL.primary}18` },
+              ]}
+            >
+              <Ionicons
+                name="shield-checkmark-outline"
+                size={20}
+                color={severityColors.CRITICAL.primary}
+              />
+            </View>
+            <View style={styles.channelTextWrap}>
+              <Text style={[styles.channelTitle, { color: colors.textPrimary }]}>
+                Threat Advisories & Zero-Days
+              </Text>
+              <Text style={[styles.channelDesc, { color: colors.textSecondary }]}>
+                CISA KEV emergency directives, active in-the-wild zero-days, and CVEs.
+              </Text>
+            </View>
+            <Switch
+              value={preferences.threatAdvisories}
+              onValueChange={(val) =>
+                handleUpdatePreference('threatAdvisories', val)
+              }
+              trackColor={{
+                false: isDark ? '#334155' : '#cbd5e1',
+                true: `${accentColor}88`,
+              }}
+              thumbColor={preferences.threatAdvisories ? accentColor : '#94a3b8'}
+            />
+          </View>
+        </View>
+
+        {/* SEVERITY THRESHOLD SELECTOR */}
+        <Text style={[styles.sectionSubtitle, { color: colors.textMuted }]}>
+          SEVERITY THRESHOLD
+        </Text>
+        <Text style={[styles.thresholdSubtitle, { color: colors.textSecondary }]}>
+          Only dispatch alerts that meet or exceed this threat severity.
+        </Text>
+
+        <View style={styles.thresholdList}>
+          {/* Critical Only */}
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="Select Critical Only threshold"
+            onPress={() =>
+              handleUpdatePreference('severityThreshold', 'CRITICAL_ONLY')
+            }
+            style={[
+              styles.thresholdCard,
+              {
+                backgroundColor: colors.surface,
+                borderColor:
+                  preferences.severityThreshold === 'CRITICAL_ONLY'
+                    ? severityColors.CRITICAL.primary
+                    : colors.border,
+              },
+              preferences.severityThreshold === 'CRITICAL_ONLY' &&
+                styles.thresholdCardActive,
+            ]}
+          >
+            <View style={styles.thresholdHeader}>
+              <View style={styles.thresholdTitleRow}>
+                <View
+                  style={[
+                    styles.severityDot,
+                    { backgroundColor: severityColors.CRITICAL.primary },
+                  ]}
+                />
+                <Text
+                  style={[styles.thresholdTitle, { color: colors.textPrimary }]}
+                >
+                  Critical Threats Only
+                </Text>
+              </View>
+              <Ionicons
+                name={
+                  preferences.severityThreshold === 'CRITICAL_ONLY'
+                    ? 'radio-button-on'
+                    : 'radio-button-off'
+                }
+                size={19}
+                color={
+                  preferences.severityThreshold === 'CRITICAL_ONLY'
+                    ? severityColors.CRITICAL.primary
+                    : colors.textMuted
+                }
+              />
+            </View>
+            <Text style={[styles.thresholdDesc, { color: colors.textSecondary }]}>
+              Active in-the-wild zero-days, CISA Emergency Directives, and unauthenticated RCE on enterprise infrastructure (CVSS 9.0–10.0).
+            </Text>
+          </Pressable>
+
+          {/* High & Critical (Recommended) */}
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="Select High and Critical threshold"
+            onPress={() =>
+              handleUpdatePreference('severityThreshold', 'HIGH_CRITICAL')
+            }
+            style={[
+              styles.thresholdCard,
+              {
+                backgroundColor: colors.surface,
+                borderColor:
+                  preferences.severityThreshold === 'HIGH_CRITICAL'
+                    ? accentColor
+                    : colors.border,
+              },
+              preferences.severityThreshold === 'HIGH_CRITICAL' &&
+                styles.thresholdCardActive,
+            ]}
+          >
+            <View style={styles.thresholdHeader}>
+              <View style={styles.thresholdTitleRow}>
+                <View
+                  style={[
+                    styles.severityDot,
+                    { backgroundColor: accentColor },
+                  ]}
+                />
+                <Text
+                  style={[styles.thresholdTitle, { color: colors.textPrimary }]}
+                >
+                  High & Critical (Recommended)
+                </Text>
+                <View
+                  style={[
+                    styles.recBadge,
+                    { backgroundColor: `${accentColor}22` },
+                  ]}
+                >
+                  <Text
+                    style={[styles.recBadgeText, { color: accentColor }]}
+                  >
+                    BEST
+                  </Text>
+                </View>
+              </View>
+              <Ionicons
+                name={
+                  preferences.severityThreshold === 'HIGH_CRITICAL'
+                    ? 'radio-button-on'
+                    : 'radio-button-off'
+                }
+                size={19}
+                color={
+                  preferences.severityThreshold === 'HIGH_CRITICAL'
+                    ? accentColor
+                    : colors.textMuted
+                }
+              />
+            </View>
+            <Text style={[styles.thresholdDesc, { color: colors.textSecondary }]}>
+              Confirmed major data breaches, CVSS 7.0–8.9 with public PoC, active ransomware campaigns, and nation-state APT bulletins.
+            </Text>
+          </Pressable>
+
+          {/* All Updates */}
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="Select All Updates threshold"
+            onPress={() => handleUpdatePreference('severityThreshold', 'ALL')}
+            style={[
+              styles.thresholdCard,
+              {
+                backgroundColor: colors.surface,
+                borderColor:
+                  preferences.severityThreshold === 'ALL'
+                    ? colors.textSecondary
+                    : colors.border,
+              },
+              preferences.severityThreshold === 'ALL' &&
+                styles.thresholdCardActive,
+            ]}
+          >
+            <View style={styles.thresholdHeader}>
+              <View style={styles.thresholdTitleRow}>
+                <View
+                  style={[
+                    styles.severityDot,
+                    { backgroundColor: severityColors.LOW.primary },
+                  ]}
+                />
+                <Text
+                  style={[styles.thresholdTitle, { color: colors.textPrimary }]}
+                >
+                  All Security Dispatches
+                </Text>
+              </View>
+              <Ionicons
+                name={
+                  preferences.severityThreshold === 'ALL'
+                    ? 'radio-button-on'
+                    : 'radio-button-off'
+                }
+                size={19}
+                color={
+                  preferences.severityThreshold === 'ALL'
+                    ? accentColor
+                    : colors.textMuted
+                }
+              />
+            </View>
+            <Text style={[styles.thresholdDesc, { color: colors.textSecondary }]}>
+              Includes routine vulnerability disclosures requiring user interaction (XSS, CSRF), scheduled patches (Patch Tuesday), and surveys.
+            </Text>
+          </Pressable>
+        </View>
 
         {/* SEVERITY POLICY INFO */}
         <Text style={[styles.sectionSubtitle, { color: colors.textMuted }]}>
@@ -384,5 +667,101 @@ const styles = StyleSheet.create({
 
   divider: {
     height: 1,
+  },
+
+  channelsCard: {
+    borderRadius: 14,
+    borderWidth: 1,
+    overflow: 'hidden',
+  },
+
+  channelRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: 16,
+    gap: 12,
+  },
+
+  channelIconWrap: {
+    width: 36,
+    height: 36,
+    borderRadius: 8,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  channelTextWrap: {
+    flex: 1,
+  },
+
+  channelTitle: {
+    fontFamily: 'Exo_600SemiBold',
+    fontSize: 14,
+    marginBottom: 2,
+  },
+
+  channelDesc: {
+    fontFamily: 'Exo_400Regular',
+    fontSize: 12,
+    lineHeight: 17,
+  },
+
+  thresholdSubtitle: {
+    fontFamily: 'Exo_400Regular',
+    fontSize: 13,
+    lineHeight: 18,
+    marginBottom: 12,
+  },
+
+  thresholdList: {
+    gap: 10,
+  },
+
+  thresholdCard: {
+    padding: 14,
+    borderRadius: 12,
+    borderWidth: 1,
+  },
+
+  thresholdCardActive: {
+    borderWidth: 1.5,
+  },
+
+  thresholdHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginBottom: 6,
+  },
+
+  thresholdTitleRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    flex: 1,
+  },
+
+  thresholdTitle: {
+    fontFamily: 'Exo_600SemiBold',
+    fontSize: 14,
+  },
+
+  thresholdDesc: {
+    fontFamily: 'Exo_400Regular',
+    fontSize: 12,
+    lineHeight: 17,
+    paddingLeft: 16,
+  },
+
+  recBadge: {
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderRadius: 4,
+  },
+
+  recBadgeText: {
+    fontFamily: 'Exo_700Bold',
+    fontSize: 9.5,
+    letterSpacing: 0.5,
   },
 });

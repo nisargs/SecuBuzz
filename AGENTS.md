@@ -32,3 +32,7 @@
   - Both URLs and in-app screens (`privacy.tsx`, `data-privacy.tsx`) explicitly declare the app name **"SecuBuzz"** and developer **"MiSo Labs"**.
 - **Feed System:** `scripts/ingest.mjs` retains up to 250 articles (~5–7 days of security intelligence), scheduled every 4 hours via Worker cron.
 
+## 6. Next Native `.aab` Rebuild Roadmap (v1.0.2+)
+- **Haptic Feedback:** Install `expo-haptics` (`npx expo install expo-haptics`) on the next full native binary release for tactile bookmarking and refresh feedback. Do not introduce in OTA-only cycles.
+
+

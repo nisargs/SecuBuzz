@@ -10,6 +10,10 @@ const ROOT_DIR = path.resolve(__dirname, "..");
 const FEED_FILE = path.join(ROOT_DIR, "feed.json");
 const SEEN_URLS_FILE = path.join(ROOT_DIR, "seen-urls.json");
 const NOTIFIED_ARTICLES_FILE = path.join(ROOT_DIR, "notified-articles.json");
+const NOTIFIED_CVES_FILE = path.join(ROOT_DIR, "notified-cves.json");
+
+const CISA_KEV_FEED_URL =
+  "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json";
 
 const PUSH_TOKEN_API_URL =
   process.env.PUSH_TOKEN_API_URL ||
@@ -35,7 +39,7 @@ const AI_MODEL = "openai/gpt-oss-20b";
 
 const ARTICLES_PER_AI_BATCH = 2;
 
-const MAX_NEW_CANDIDATES = 12;
+const MAX_NEW_CANDIDATES = 16;
 
 const ITEMS_PER_FEED = 10;
 
@@ -1911,21 +1915,23 @@ async function sendPushNotificationsForNewArticles(newArticles) {
   for (const article of articlesToNotify) {
     console.log(`\nSending push notification for: "${article.headline}"`);
 
-    // Payload: Title="SecuBuzz", Body=<ARTICLE HEADLINE> (ONLY headline)
+    const severity = (article.severity || "HIGH").toUpperCase();
+    const title = `SecuBuzz · BRIEF [${severity}]`;
+
     const messages = tokens.map((token) => ({
       to: token,
       sound: "default",
-      title: "SecuBuzz",
+      title,
       body: article.headline,
       channelId: "secubuzz-news",
       data: {
-        type: "article",
+        type: "brief",
         articleId: article.sourceUrl,
         articleUrl: article.sourceUrl,
         headline: article.headline,
         summary: article.summary,
         category: article.category,
-        severity: article.severity,
+        severity,
         source: article.source || article.sourceName,
         publishedAt: article.publishedAt,
       },
@@ -2033,9 +2039,145 @@ async function sendPushNotificationsForNewArticles(newArticles) {
   }
 }
 
+// -----------------------------------------------------------------------------
+// CISA KEV ZERO-DAY BROADCAST (100% Free - Zero Groq Tokens)
+// -----------------------------------------------------------------------------
+
+async function checkAndBroadcastCisaKevZeroDays() {
+  try {
+    console.log("\nChecking CISA KEV catalog for new in-the-wild zero-days...");
+    const res = await fetch(CISA_KEV_FEED_URL, {
+      headers: { Accept: "application/json" },
+    });
+    if (!res.ok) {
+      console.warn(`CISA KEV fetch failed: HTTP ${res.status}`);
+      return;
+    }
+
+    const data = await res.json();
+    const vulnerabilities = Array.isArray(data?.vulnerabilities)
+      ? data.vulnerabilities
+      : [];
+
+    const existingNotifiedCves = await readJsonFile(NOTIFIED_CVES_FILE, []);
+    const notifiedCveSet = new Set(
+      Array.isArray(existingNotifiedCves) ? existingNotifiedCves : [],
+    );
+
+    // Look for unnotified CVEs added in the last 7 days
+    const sevenDaysAgo = Date.now() - 7 * 24 * 60 * 60 * 1000;
+    const candidates = vulnerabilities.filter((v) => {
+      if (!v?.cveID || notifiedCveSet.has(v.cveID)) return false;
+      const addedTime = Date.parse(v.dateAdded) || 0;
+      return addedTime >= sevenDaysAgo;
+    });
+
+    if (candidates.length === 0) {
+      console.log("No new unnotified CISA KEV zero-days found.");
+      return;
+    }
+
+    // Fetch registered device tokens
+    let tokens = [];
+    try {
+      const headers = { "Content-Type": "application/json" };
+      if (PUSH_ADMIN_SECRET) {
+        headers["x-admin-key"] = PUSH_ADMIN_SECRET;
+        headers["Authorization"] = `Bearer ${PUSH_ADMIN_SECRET}`;
+      }
+      const tokenRes = await fetch(PUSH_TOKEN_API_URL, { headers });
+      if (tokenRes.ok) {
+        const tokenData = await tokenRes.json();
+        if (Array.isArray(tokenData.tokens)) {
+          tokens = tokenData.tokens;
+        }
+      }
+    } catch (err) {
+      console.warn("Could not fetch tokens for CISA KEV alert:", err);
+    }
+
+    if (tokens.length === 0) {
+      console.log(
+        "No registered push tokens found. Marking CISA KEV zero-days as seen.",
+      );
+      for (const v of candidates) {
+        notifiedCveSet.add(v.cveID);
+      }
+      await writeJsonFile(NOTIFIED_CVES_FILE, Array.from(notifiedCveSet));
+      return;
+    }
+
+    // Limit to at most 2 zero-day notifications per cycle to avoid notification spam
+    const toNotify = candidates.slice(0, 2);
+    console.log(
+      `Broadcasting ${toNotify.length} CISA KEV zero-day alert(s) to ${tokens.length} device(s)...`,
+    );
+
+    for (const cve of toNotify) {
+      const isRansomware =
+        cve.knownRansomwareCampaignUse?.toLowerCase() === "known";
+      const severity = isRansomware ? "CRITICAL" : "HIGH";
+      const title = isRansomware
+        ? "SecuBuzz · ADVISORY [CRITICAL - RANSOMWARE]"
+        : `SecuBuzz · ADVISORY [${severity}]`;
+      const body = `${cve.cveID} (${cve.vendorProject} · ${cve.product}): ${cve.vulnerabilityName}`;
+
+      console.log(`Sending CISA alert: "${body}"`);
+
+      const messages = tokens.map((token) => ({
+        to: token,
+        sound: "default",
+        title,
+        body,
+        channelId: "secubuzz-news",
+        data: {
+          type: "advisory",
+          cveID: cve.cveID,
+          vendorProject: cve.vendorProject,
+          product: cve.product,
+          dueDate: cve.dueDate,
+          severity,
+          source: "CISA KEV",
+        },
+      }));
+
+      const chunkSize = 100;
+      for (let i = 0; i < messages.length; i += chunkSize) {
+        const chunk = messages.slice(i, i + chunkSize);
+        try {
+          await fetch("https://exp.host/--/api/v2/push/send", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+            },
+            body: JSON.stringify(chunk),
+          });
+        } catch (pushErr) {
+          console.warn("Error sending CISA push chunk:", pushErr);
+        }
+      }
+
+      notifiedCveSet.add(cve.cveID);
+      await sleep(10000);
+    }
+
+    // Mark all candidates as seen so backlog isn't repeatedly alerted
+    for (const cve of candidates) {
+      notifiedCveSet.add(cve.cveID);
+    }
+    await writeJsonFile(NOTIFIED_CVES_FILE, Array.from(notifiedCveSet));
+  } catch (err) {
+    console.warn("Could not check CISA KEV zero-days:", err);
+  }
+}
+
 if (uniqueGeneratedArticles.length > 0) {
   await sendPushNotificationsForNewArticles(uniqueGeneratedArticles);
 }
+
+// Check and broadcast newly added CISA KEV zero-days
+await checkAndBroadcastCisaKevZeroDays();
 
 // -----------------------------------------------------------------------------
 // FINAL OUTPUT

@@ -50,6 +50,14 @@ export type Article = {
   category: ArticleCategory;
   publishedAt: string;
   severity: ArticleSeverity;
+
+  // Optional threat advisory fields (preserved when bookmarking CVEs)
+  requiredAction?: string;
+  dueDate?: string;
+  patchedVersion?: string;
+  vulnerableVersionRange?: string;
+  vendorProject?: string;
+  product?: string;
 };
 
 /**

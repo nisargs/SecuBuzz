@@ -35,9 +35,19 @@ function formatCategory(
   return category;
 }
 
+function isAdvisoryItem(item: Article): boolean {
+  return (
+    item.sourceName === 'CISA KEV' ||
+    item.sourceName === 'GITHUB' ||
+    item.sourceName === 'NVD' ||
+    item.id.startsWith('CVE-') ||
+    item.id.startsWith('GHSA-')
+  );
+}
+
 export default function SavedScreen() {
   const router = useRouter();
-  const { colors, accentColor } = useTheme();
+  const { colors, isDark, accentColor } = useTheme();
 
   const {
     savedArticles,
@@ -132,8 +142,8 @@ export default function SavedScreen() {
             Saved
           </Text>
 
-          <Text style={[styles.subtitle, { color: colors.textPrimary }]}>
-            BOOKMARKED SECURITY BRIEFS
+          <Text style={[styles.subtitle, { color: accentColor }]}>
+            BOOKMARKED STORIES & ADVISORIES
           </Text>
         </View>
 
@@ -214,7 +224,7 @@ export default function SavedScreen() {
 
       {savedArticles.length === 0 ? (
         <EmptyState
-          message="Tap the bookmark icon on a story in Briefs to keep it here."
+          message="Tap the bookmark icon on any story or advisory to keep it here."
         />
       ) : null}
 
@@ -235,62 +245,100 @@ export default function SavedScreen() {
             item,
           }: {
             item: Article;
-          }) => (
-            <Pressable
-              accessibilityRole="button"
-              accessibilityLabel={`Open ${item.headline}`}
-              onPress={() => openArticle(item)}
-              style={({ pressed }) => [
-                styles.article,
-                {
-                  backgroundColor: colors.surface,
-                  borderColor: colors.border,
-                },
-                pressed && [
-                  styles.articlePressed,
-                  { borderColor: accentColor },
-                ],
-              ]}
-            >
-              <View style={styles.articleTop}>
-                <View style={styles.articleMeta}>
-                  <Text style={[styles.category, { color: accentColor }]}>
-                    {formatCategory(
-                      item.category,
-                    )}
-                  </Text>
+          }) => {
+            const isAdvisory = isAdvisoryItem(item);
 
-                  <Text style={[styles.metaText, { color: colors.textSecondary }]}>
-                    {formatPublishedAt(item)} ·{' '}
-                    {item.sourceName}
-                  </Text>
+            return (
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel={`Open ${item.headline}`}
+                onPress={() => openArticle(item)}
+                style={({ pressed }) => [
+                  styles.article,
+                  {
+                    backgroundColor: colors.surface,
+                    borderColor: colors.border,
+                  },
+                  pressed && [
+                    styles.articlePressed,
+                    { borderColor: accentColor },
+                  ],
+                ]}
+              >
+                <View style={styles.articleTop}>
+                  <View style={styles.articleMeta}>
+                    <View style={styles.badgeRow}>
+                      <View
+                        style={[
+                          styles.originBadge,
+                          {
+                            backgroundColor: isAdvisory
+                              ? isDark
+                                ? 'rgba(245, 158, 11, 0.12)'
+                                : 'rgba(245, 158, 11, 0.08)'
+                              : isDark
+                              ? 'rgba(76, 201, 240, 0.12)'
+                              : 'rgba(2, 132, 199, 0.08)',
+                            borderColor: isAdvisory
+                              ? `${accentColor}55`
+                              : isDark
+                              ? 'rgba(76, 201, 240, 0.3)'
+                              : 'rgba(2, 132, 199, 0.3)',
+                          },
+                        ]}
+                      >
+                        <Ionicons
+                          name={isAdvisory ? 'shield-checkmark' : 'newspaper-outline'}
+                          size={11}
+                          color={isAdvisory ? accentColor : colors.accent}
+                          style={{ marginRight: 4 }}
+                        />
+                        <Text
+                          style={[
+                            styles.originText,
+                            { color: isAdvisory ? accentColor : colors.accent },
+                          ]}
+                        >
+                          {isAdvisory ? 'ADVISORY' : 'BRIEF'}
+                        </Text>
+                      </View>
+
+                      <Text style={[styles.category, { color: colors.textSecondary }]}>
+                        {formatCategory(item.category)}
+                      </Text>
+                    </View>
+
+                    <Text style={[styles.metaText, { color: colors.textSecondary }]}>
+                      {formatPublishedAt(item)} · {item.sourceName}
+                    </Text>
+                  </View>
+
+                  <Pressable
+                    accessibilityRole="button"
+                    accessibilityLabel="Remove saved article"
+                    hitSlop={10}
+                    onPress={(event) => {
+                      event.stopPropagation();
+                      toggleSaved(item.id);
+                    }}
+                  >
+                    <Ionicons
+                      name="bookmark"
+                      size={22}
+                      color={accentColor}
+                    />
+                  </Pressable>
                 </View>
 
-                <Pressable
-                  accessibilityRole="button"
-                  accessibilityLabel="Remove saved article"
-                  hitSlop={10}
-                  onPress={(event) => {
-                    event.stopPropagation();
-                    toggleSaved(item.id);
-                  }}
+                <Text
+                  style={[styles.headline, { color: colors.textPrimary }]}
+                  numberOfLines={3}
                 >
-                  <Ionicons
-                    name="bookmark"
-                    size={22}
-                    color={accentColor}
-                  />
-                </Pressable>
-              </View>
-
-              <Text
-                style={[styles.headline, { color: colors.textPrimary }]}
-                numberOfLines={3}
-              >
-                {item.headline}
-              </Text>
-            </Pressable>
-          )}
+                  {item.headline}
+                </Text>
+              </Pressable>
+            );
+          }}
         />
       ) : null}
     </SafeAreaView>
@@ -327,7 +375,6 @@ const styles = StyleSheet.create({
   },
 
   subtitle: {
-    color: colors.textPrimary,
     fontFamily: 'Exo_600SemiBold',
     fontSize: 11,
     letterSpacing: 2,
@@ -390,11 +437,31 @@ const styles = StyleSheet.create({
     paddingRight: 10,
   },
 
+  badgeRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+  },
+
+  originBadge: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderRadius: 4,
+    borderWidth: 1,
+  },
+
+  originText: {
+    fontFamily: 'Exo_700Bold',
+    fontSize: 9.5,
+    letterSpacing: 0.8,
+  },
+
   category: {
-    color: BLUE,
     fontFamily: 'Exo_600SemiBold',
     fontSize: 11,
-    letterSpacing: 1.5,
+    letterSpacing: 1.2,
   },
 
   metaText: {

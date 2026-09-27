@@ -19,6 +19,10 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { ArticleCard } from '../../components/ArticleCard';
 import {
+  FilterModal,
+  type SeverityFilter,
+} from '../../components/FilterModal';
+import {
   EmptyState,
   ErrorState,
   LoadingState,
@@ -62,26 +66,11 @@ function formatCategory(
   );
 }
 
-function formatHeaderDateTime(
-  date: Date,
-): string {
-  const datePart = date.toLocaleDateString(
-    'en-GB',
-    {
-      day: 'numeric',
-      month: 'short',
-    },
-  );
-
-  const timePart = date
-    .toLocaleTimeString('en-US', {
-      hour: 'numeric',
-      minute: '2-digit',
-      hour12: true,
-    })
-    .toLowerCase();
-
-  return `${datePart}, ${timePart}`;
+function formatHeaderDate(date: Date): string {
+  return date.toLocaleDateString('en-GB', {
+    day: 'numeric',
+    month: 'short',
+  });
 }
 
 export default function FeedScreen() {
@@ -95,6 +84,15 @@ export default function FeedScreen() {
 
   const [filter, setFilter] =
     useState<CategoryFilter>('ALL');
+
+  const [severityFilter, setSeverityFilter] =
+    useState<SeverityFilter>('ALL');
+
+  const [filterModalOpen, setFilterModalOpen] =
+    useState(false);
+
+  const isAnyFilterActive =
+    filter !== 'ALL' || severityFilter !== 'ALL';
 
   const [refreshing, setRefreshing] =
     useState(false);
@@ -187,54 +185,78 @@ export default function FeedScreen() {
   }, [state]);
 
   /*
-   * Category filtering.
+   * Category and severity counts for filter badges.
    */
-  const categoryArticles = useMemo(() => {
-    if (filter === 'ALL') {
-      return articles;
-    }
+  const severityCounts = useMemo(() => {
+    const counts: Record<string, number> = {
+      ALL: articles.length,
+      CRITICAL: 0,
+      HIGH: 0,
+      MEDIUM: 0,
+      LOW: 0,
+    };
+    articles.forEach((a) => {
+      if (a.severity && counts[a.severity] !== undefined) {
+        counts[a.severity]++;
+      }
+    });
+    return counts;
+  }, [articles]);
 
-    return articles.filter(
-      (article) =>
-        article.category === filter,
-    );
-  }, [articles, filter]);
+  const categoryCounts = useMemo(() => {
+    const counts: Record<string, number> = { ALL: articles.length };
+    ARTICLE_CATEGORIES.forEach((c) => {
+      counts[c] = 0;
+    });
+    articles.forEach((a) => {
+      if (counts[a.category] !== undefined) {
+        counts[a.category]++;
+      }
+    });
+    return counts;
+  }, [articles]);
 
   /*
-   * Search filtering.
-   *
-   * Searches:
-   * - headline
-   * - summary
-   * - source
-   * - category
+   * Multi-dimensional filtering:
+   * Category + Threat Severity + Search query.
    */
   const filteredArticles = useMemo(() => {
-    const query =
-      searchQuery.trim().toLowerCase();
+    let result = articles;
 
-    if (!query) {
-      return categoryArticles;
+    if (filter !== 'ALL') {
+      result = result.filter(
+        (article) => article.category === filter,
+      );
     }
 
-    return categoryArticles.filter(
-      (article) => {
-        const searchableText = [
-          article.headline,
-          article.summary,
-          article.sourceName,
-          article.category,
-        ]
-          .join(' ')
-          .toLowerCase();
+    if (severityFilter !== 'ALL') {
+      result = result.filter(
+        (article) => article.severity === severityFilter,
+      );
+    }
 
-        return searchableText.includes(
-          query,
-        );
-      },
-    );
+    const query = searchQuery.trim().toLowerCase();
+    if (!query) {
+      return result;
+    }
+
+    return result.filter((article) => {
+      const searchableText = [
+        article.headline,
+        article.summary,
+        article.sourceName,
+        article.category,
+        article.severity || '',
+      ]
+        .join(' ')
+        .toLowerCase();
+
+      return searchableText.includes(query);
+    });
   }, [
-    categoryArticles,
+    articles,
+    filter,
+    severityFilter,
     searchQuery,
   ]);
 
@@ -254,7 +276,7 @@ export default function FeedScreen() {
   );
 
   /*
-   * Reset feed position when the category
+   * Reset feed position when the category, severity,
    * or search changes.
    */
   useEffect(() => {
@@ -268,6 +290,7 @@ export default function FeedScreen() {
     });
   }, [
     filter,
+    severityFilter,
     searchQuery,
   ]);
 
@@ -500,7 +523,7 @@ export default function FeedScreen() {
             </Text>
 
             <Text style={[styles.date, { color: colors.textSecondary }]}>
-              {formatHeaderDateTime(now)}
+              {formatHeaderDate(now)}
             </Text>
           </View>
 
@@ -512,6 +535,30 @@ export default function FeedScreen() {
         <View style={styles.headerActions}>
           <Pressable
             accessibilityRole="button"
+            accessibilityLabel="Filter feed by severity and category"
+            hitSlop={10}
+            onPress={() => setFilterModalOpen(true)}
+            style={styles.headerButton}
+          >
+            <View style={{ position: 'relative' }}>
+              <Ionicons
+                name={isAnyFilterActive ? 'options' : 'options-outline'}
+                size={26}
+                color={isAnyFilterActive ? accentColor : colors.textSecondary}
+              />
+              {isAnyFilterActive && (
+                <View
+                  style={[
+                    styles.filterActiveDot,
+                    { backgroundColor: accentColor },
+                  ]}
+                />
+              )}
+            </View>
+          </Pressable>
+
+          <Pressable
+            accessibilityRole="button"
             accessibilityLabel="Refresh feed"
             hitSlop={10}
             onPress={handleManualRefresh}
@@ -520,7 +567,7 @@ export default function FeedScreen() {
             <Ionicons
               name="refresh-outline"
               size={26}
-              color={accentColor}
+              color={colors.textSecondary}
             />
           </Pressable>
 
@@ -542,11 +589,65 @@ export default function FeedScreen() {
                   : 'search-outline'
               }
               size={28}
-              color={accentColor}
+              color={searchOpen ? accentColor : colors.textSecondary}
             />
           </Pressable>
         </View>
       </View>
+
+      {/* ACTIVE FILTER BANNER */}
+      {isAnyFilterActive ? (
+        <View
+          style={[
+            styles.activeFilterBanner,
+            {
+              backgroundColor: isDark
+                ? 'rgba(76, 201, 240, 0.08)'
+                : 'rgba(2, 132, 199, 0.06)',
+              borderBottomColor: colors.border,
+            },
+          ]}
+        >
+          <View style={styles.activeFilterLeft}>
+            <Text
+              style={[
+                styles.activeFilterText,
+                { color: colors.textSecondary },
+              ]}
+              numberOfLines={1}
+            >
+              FILTER:{' '}
+              <Text
+                style={{
+                  color: colors.textPrimary,
+                  fontFamily: 'Exo_700Bold',
+                }}
+              >
+                {severityFilter !== 'ALL' ? severityFilter : ''}
+                {severityFilter !== 'ALL' && filter !== 'ALL' ? ' · ' : ''}
+                {filter !== 'ALL' ? formatCategory(filter) : ''}
+              </Text>
+              {' '}({filteredArticles.length})
+            </Text>
+          </View>
+
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="Reset all filters"
+            hitSlop={8}
+            onPress={() => {
+              setFilter('ALL');
+              setSeverityFilter('ALL');
+            }}
+            style={styles.clearFilterButton}
+          >
+            <Ionicons name="close-circle" size={17} color={accentColor} />
+            <Text style={[styles.clearFilterText, { color: accentColor }]}>
+              Clear
+            </Text>
+          </Pressable>
+        </View>
+      ) : null}
 
       {/* SEARCH */}
       {searchOpen ? (
@@ -601,58 +702,7 @@ export default function FeedScreen() {
         </View>
       ) : null}
 
-      {/* CATEGORY FILTERS */}
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        contentContainerStyle={
-          styles.chipsContent
-        }
-        style={styles.chipsScroll}
-      >
-        {[
-          'ALL' as const,
-          ...ARTICLE_CATEGORIES,
-        ].map((category) => {
-          const selected =
-            filter === category;
 
-          return (
-            <Pressable
-              key={category}
-              onPress={() =>
-                setFilter(category)
-              }
-              style={[
-                styles.chip,
-                {
-                  borderColor: colors.border,
-                  backgroundColor: isDark ? 'transparent' : colors.surface,
-                },
-                selected && {
-                  borderColor: accentColor,
-                  backgroundColor: isDark
-                    ? `${accentColor}18`
-                    : `${accentColor}14`,
-                },
-              ]}
-            >
-              <Text
-                style={[
-                  styles.chipText,
-                  { color: colors.textSecondary },
-                  selected && {
-                    color: accentColor,
-                    fontFamily: 'Exo_600SemiBold',
-                  },
-                ]}
-              >
-                {formatCategory(category)}
-              </Text>
-            </Pressable>
-          );
-        })}
-      </ScrollView>
 
       {/* PROGRESS */}
       <View style={styles.progressRow}>
@@ -732,6 +782,12 @@ export default function FeedScreen() {
                   onToggleSaved={
                     toggleSaved
                   }
+                  onSelectSeverity={(sev) => {
+                    setSeverityFilter(sev);
+                  }}
+                  onSelectCategory={(cat) => {
+                    setFilter(cat);
+                  }}
                 />
               </View>
             )}
@@ -867,6 +923,28 @@ export default function FeedScreen() {
           </Text>
         </Animated.View>
       ) : null}
+
+      {/* FILTER SHEET MODAL */}
+      <FilterModal
+        visible={filterModalOpen}
+        onClose={() => setFilterModalOpen(false)}
+        selectedCategory={filter}
+        onSelectCategory={(cat) => {
+          setFilter(cat);
+        }}
+        selectedSeverity={severityFilter}
+        onSelectSeverity={(sev) => {
+          setSeverityFilter(sev);
+        }}
+        onReset={() => {
+          setFilter('ALL');
+          setSeverityFilter('ALL');
+        }}
+        totalArticlesCount={articles.length}
+        filteredCount={filteredArticles.length}
+        severityCounts={severityCounts}
+        categoryCounts={categoryCounts}
+      />
     </SafeAreaView>
   );
 }
@@ -897,18 +975,19 @@ const styles = StyleSheet.create({
 
   headerLeft: {
     flex: 1,
+    marginRight: 6,
   },
 
   titleRow: {
     flexDirection: 'row',
     alignItems: 'baseline',
-    flexWrap: 'wrap',
+    gap: 8,
   },
 
   title: {
     color: colors.textPrimary,
-    fontSize: 30,
-    lineHeight: 36,
+    fontSize: 28,
+    lineHeight: 34,
     fontWeight: '800',
   },
 
@@ -920,22 +999,21 @@ const styles = StyleSheet.create({
     color: colors.textSecondary,
     fontFamily: 'Exo_400Regular',
     fontSize: 13,
-    marginLeft: 8,
   },
 
   subtitle: {
     color: colors.textPrimary,
     fontFamily: 'Exo_600SemiBold',
-    fontSize: 12,
-    letterSpacing: 2.4,
-    marginTop: 8,
+    fontSize: 11,
+    letterSpacing: 2,
+    marginTop: 4,
   },
 
   headerActions: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 8,
-    marginLeft: 8,
+    paddingTop: 3,
   },
 
   headerButton: {
@@ -1107,5 +1185,46 @@ const styles = StyleSheet.create({
     fontFamily: 'Exo_700Bold',
     fontSize: 12,
     letterSpacing: 1.2,
+  },
+
+  filterActiveDot: {
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    width: 8,
+    height: 8,
+    borderRadius: 4,
+  },
+
+  activeFilterBanner: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingHorizontal: spacing.lg,
+    paddingVertical: 8,
+    borderBottomWidth: 1,
+  },
+
+  activeFilterLeft: {
+    flex: 1,
+    marginRight: 8,
+  },
+
+  activeFilterText: {
+    fontSize: 12,
+    letterSpacing: 0.3,
+  },
+
+  clearFilterButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+    paddingVertical: 2,
+    paddingHorizontal: 6,
+  },
+
+  clearFilterText: {
+    fontSize: 12,
+    fontFamily: 'Exo_600SemiBold',
   },
 });

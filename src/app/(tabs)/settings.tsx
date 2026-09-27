@@ -1,7 +1,9 @@
 import { Ionicons } from '@expo/vector-icons';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { router } from 'expo-router';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import {
+  Alert,
   AppState,
   Pressable,
   ScrollView,
@@ -116,6 +118,30 @@ export default function SettingsScreen() {
   } = useTheme();
 
   const [notificationsEnabled, setNotificationsEnabled] = useState(false);
+  const [cacheSize, setCacheSize] = useState<string>('Calculating...');
+  const [isClearing, setIsClearing] = useState(false);
+
+  const calculateCacheSize = useCallback(async () => {
+    try {
+      const keys = await AsyncStorage.getAllKeys();
+      const stores = await AsyncStorage.multiGet(keys);
+      let totalBytes = 0;
+      for (const [key, value] of stores) {
+        if (value) {
+          totalBytes += (key.length + value.length) * 2;
+        }
+      }
+      if (totalBytes < 1024) {
+        setCacheSize(`${totalBytes} B`);
+      } else if (totalBytes < 1024 * 1024) {
+        setCacheSize(`${(totalBytes / 1024).toFixed(1)} KB`);
+      } else {
+        setCacheSize(`${(totalBytes / (1024 * 1024)).toFixed(2)} MB`);
+      }
+    } catch {
+      setCacheSize('Unknown');
+    }
+  }, []);
 
   useEffect(() => {
     let isMounted = true;
@@ -127,10 +153,12 @@ export default function SettingsScreen() {
     }
 
     void checkStatus();
+    void calculateCacheSize();
 
     const subscription = AppState.addEventListener('change', (state) => {
       if (state === 'active') {
         void checkStatus();
+        void calculateCacheSize();
       }
     });
 
@@ -138,7 +166,40 @@ export default function SettingsScreen() {
       isMounted = false;
       subscription.remove();
     };
-  }, []);
+  }, [calculateCacheSize]);
+
+  function handleClearCache() {
+    Alert.alert(
+      'Clear Cached Intelligence',
+      `Are you sure you want to clear ${cacheSize} of cached news briefs and threat advisories?\n\nYour saved bookmarks and preferences will be preserved.`,
+      [
+        { text: 'Cancel', style: 'cancel' },
+        {
+          text: 'Clear Cache',
+          style: 'destructive',
+          onPress: async () => {
+            setIsClearing(true);
+            try {
+              await AsyncStorage.multiRemove([
+                'cached-articles',
+                '@secubuzz_advisories_v3',
+                '@secubuzz_advisories_v2',
+              ]);
+              await calculateCacheSize();
+              Alert.alert(
+                'Cache Cleared',
+                'Temporary news briefs and advisories have been cleared. Fresh intelligence will download on your next feed refresh.',
+              );
+            } catch {
+              Alert.alert('Error', 'Could not clear cache.');
+            } finally {
+              setIsClearing(false);
+            }
+          },
+        },
+      ],
+    );
+  }
 
   const themeDisplay =
     themeMode === 'system'
@@ -228,6 +289,19 @@ export default function SettingsScreen() {
             title="Legal & Privacy"
             subtitle="Privacy Policy, terms & data rights"
             onPress={() => router.push('/legal')}
+            accentColor={accentColor}
+            colors={colors}
+          />
+
+          <View style={[styles.divider, { backgroundColor: colors.border }]} />
+
+          {/* 5. DATA & STORAGE */}
+          <ParentOptionRow
+            icon="server-outline"
+            title="Data & Storage"
+            subtitle={`Cache: ${cacheSize} · Stored offline`}
+            badge={isClearing ? 'CLEARING...' : 'CLEAR'}
+            onPress={handleClearCache}
             accentColor={accentColor}
             colors={colors}
           />

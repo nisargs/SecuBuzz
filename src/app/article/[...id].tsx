@@ -1,3 +1,4 @@
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Ionicons } from '@expo/vector-icons';
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
 import { useEffect, useRef, useState } from 'react';
@@ -19,6 +20,7 @@ import { useSavedArticles } from '../../context/SavedArticlesContext';
 import { useTheme } from '../../context/ThemeContext';
 import { useArticles } from '../../hooks/useArticles';
 import type { Article } from '../../models/article';
+import type { CveAdvisory } from '../../models/cve';
 import { colors, severityColors, spacing } from '../../theme/theme';
 
 const BLUE = colors.accent;
@@ -38,6 +40,17 @@ function formatCategory(
   }
 
   return category;
+}
+
+function formatAdvisoryDate(dateStr?: string): string {
+  if (!dateStr) return 'RECENT';
+  const parsed = new Date(dateStr);
+  if (isNaN(parsed.getTime())) return dateStr;
+  return parsed.toLocaleDateString('en-GB', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+  });
 }
 
 function normalizeUrlForMatch(url?: string | null): string {
@@ -263,6 +276,55 @@ export default function ArticleDetailScreen() {
   const saved = isSaved(article.id);
   const severityConfig = article.severity ? severityColors[article.severity] : null;
 
+  const isAdvisory =
+    article.sourceName === 'CISA KEV' ||
+    article.sourceName === 'GITHUB' ||
+    article.sourceName === 'NVD' ||
+    article.id.startsWith('CVE-') ||
+    article.id.startsWith('GHSA-');
+
+  const [advisoryDetails, setAdvisoryDetails] = useState<CveAdvisory | null>(null);
+
+  useEffect(() => {
+    if (!isAdvisory) return;
+    async function loadDetails() {
+      try {
+        let raw = await AsyncStorage.getItem('@secubuzz_advisories_v3');
+        if (!raw) raw = await AsyncStorage.getItem('@secubuzz_advisories_v2');
+        if (raw) {
+          const list = JSON.parse(raw);
+          if (Array.isArray(list)) {
+            const found = list.find(
+              (item: any) =>
+                item.id === article?.id ||
+                item.cveID === article?.id ||
+                (article?.sourceUrl && item.url === article.sourceUrl),
+            );
+            if (found) {
+              setAdvisoryDetails(found);
+            }
+          }
+        }
+      } catch {
+        // Fallback to article properties
+      }
+    }
+    void loadDetails();
+  }, [isAdvisory, article?.id, article?.sourceUrl]);
+
+  const remediationDueDate = article.dueDate || advisoryDetails?.dueDate;
+  const remediationFix = article.patchedVersion || advisoryDetails?.patchedVersion;
+  const remediationAction = article.requiredAction || advisoryDetails?.requiredAction;
+  const remediationRange = article.vulnerableVersionRange || advisoryDetails?.vulnerableVersionRange;
+  const affectedVendor = article.vendorProject || advisoryDetails?.vendorProject;
+  const affectedProduct = article.product || advisoryDetails?.product;
+
+  const cleanSummary = (article.summary || '')
+    .replace(/^#+\s*.*$/gm, '')
+    .replace(/#+\s*(?:Summary|Details|Impact|Workarounds|PoC)\b:?/gi, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+
   return (
     <SafeAreaView
       style={[styles.safe, { backgroundColor: colors.background }]}
@@ -413,19 +475,124 @@ export default function ArticleDetailScreen() {
           ]}
         />
 
-        <Text style={[styles.briefLabel, { color: colors.textPrimary }]}>
-          60-WORD SECURITY BRIEF
-        </Text>
+        {/* Affected Component Banner (For Threat Advisories - Directly under Title) */}
+        {isAdvisory && (affectedVendor || affectedProduct) ? (
+          <View
+            style={[
+              styles.targetBanner,
+              {
+                backgroundColor: isDark
+                  ? 'rgba(255, 255, 255, 0.04)'
+                  : 'rgba(0, 0, 0, 0.03)',
+                borderColor: colors.border,
+              },
+            ]}
+          >
+            <Ionicons
+              name="cube-outline"
+              size={14}
+              color={accentColor}
+              style={{ marginRight: 6 }}
+            />
+            <Text
+              style={[styles.targetText, { color: colors.textSecondary }]}
+              numberOfLines={2}
+            >
+              AFFECTED:{' '}
+              {affectedVendor ? (
+                <Text style={{ color: colors.textPrimary, fontFamily: 'Exo_700Bold' }}>
+                  {affectedVendor}
+                </Text>
+              ) : null}
+              {affectedVendor && affectedProduct ? ' · ' : ''}
+              {affectedProduct ? (
+                <Text style={{ color: colors.textPrimary, fontFamily: 'Exo_600SemiBold' }}>
+                  {affectedProduct}
+                </Text>
+              ) : null}
+            </Text>
+          </View>
+        ) : null}
+
+        {!isAdvisory ? (
+          <Text style={[styles.briefLabel, { color: colors.textPrimary }]}>
+            60-WORD SECURITY BRIEF
+          </Text>
+        ) : null}
 
         <Text style={[styles.summary, { color: colors.textSecondary }]}>
-          {article.summary}
+          {cleanSummary}
         </Text>
+
+        {/* Remediation & Guidance Card (For Threat Advisories) */}
+        {isAdvisory && (remediationDueDate || remediationFix || remediationAction) ? (
+          <View
+            style={[
+              styles.remediationCard,
+              {
+                backgroundColor: isDark
+                  ? colors.surface
+                  : colors.surfaceRaised,
+                borderColor:
+                  article.severity === 'CRITICAL'
+                    ? `${severityColors.CRITICAL.primary}44`
+                    : colors.border,
+              },
+            ]}
+          >
+            <View style={styles.remediationHeader}>
+              <Ionicons
+                name={remediationDueDate ? 'calendar-outline' : 'shield-checkmark-outline'}
+                size={15}
+                color={
+                  remediationDueDate
+                    ? severityColors.CRITICAL.primary
+                    : accentColor
+                }
+                style={{ marginRight: 6 }}
+              />
+              <Text
+                style={[
+                  styles.remediationTitle,
+                  {
+                    color: remediationDueDate
+                      ? severityColors.CRITICAL.primary
+                      : accentColor,
+                  },
+                ]}
+              >
+                {remediationDueDate
+                  ? `REMEDIATION DEADLINE: ${formatAdvisoryDate(remediationDueDate)}`
+                  : remediationFix
+                  ? `FIX AVAILABLE: ${remediationFix}`
+                  : 'REMEDIATION GUIDANCE'}
+              </Text>
+            </View>
+
+            {remediationAction ? (
+              <Text
+                style={[styles.remediationAction, { color: colors.textPrimary }]}
+              >
+                {remediationAction.replace(/\s*\(see URL in Notes\)/gi, '').trim()}
+              </Text>
+            ) : null}
+
+            {remediationRange ? (
+              <Text
+                style={[styles.versionRange, { color: colors.textSecondary }]}
+                numberOfLines={2}
+              >
+                Vulnerable versions: {remediationRange}
+              </Text>
+            ) : null}
+          </View>
+        ) : null}
 
         <View style={[styles.divider, { backgroundColor: colors.border }]} />
 
         <Pressable
           accessibilityRole="button"
-          accessibilityLabel="Read original article"
+          accessibilityLabel={isAdvisory ? 'Inspect original advisory' : 'Read original article'}
           onPress={() => {
             void openArticle(
               article.sourceUrl,
@@ -439,7 +606,7 @@ export default function ArticleDetailScreen() {
         >
           <View>
             <Text style={[styles.originalLabel, { color: accentColor }]}>
-              READ ORIGINAL
+              {isAdvisory ? 'INSPECT ADVISORY' : 'READ ORIGINAL'}
             </Text>
 
             <Text style={[styles.originalSource, { color: colors.textMuted }]}>
@@ -674,5 +841,55 @@ const styles = StyleSheet.create({
     fontSize: 11,
     fontFamily: 'Exo_400Regular',
     flex: 1,
+  },
+
+  targetBanner: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    borderRadius: 8,
+    borderWidth: 1,
+    marginTop: 12,
+    marginBottom: 14,
+  },
+
+  targetText: {
+    fontSize: 12.5,
+    flex: 1,
+    letterSpacing: 0.2,
+    lineHeight: 18,
+  },
+
+  remediationCard: {
+    borderRadius: 10,
+    borderWidth: 1,
+    padding: 14,
+    marginTop: 12,
+    marginBottom: 4,
+  },
+
+  remediationHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 8,
+  },
+
+  remediationTitle: {
+    fontSize: 11.5,
+    fontFamily: 'Exo_700Bold',
+    letterSpacing: 0.6,
+  },
+
+  remediationAction: {
+    fontSize: 13,
+    lineHeight: 19,
+    fontFamily: 'Exo_500Medium',
+  },
+
+  versionRange: {
+    fontSize: 12,
+    marginTop: 8,
+    fontStyle: 'italic',
   },
 });

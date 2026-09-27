@@ -70,6 +70,28 @@ export default function TabsLayout() {
       />
 
       <Tabs.Screen
+        name="advisories"
+        options={{
+          title: 'Advisories',
+
+          tabBarIcon: ({
+            focused,
+            color,
+          }) => (
+            <Ionicons
+              name={
+                focused
+                  ? 'shield-checkmark'
+                  : 'shield-checkmark-outline'
+              }
+              size={22}
+              color={color}
+            />
+          ),
+        }}
+      />
+
+      <Tabs.Screen
         name="saved"
         options={{
           title: 'Saved',

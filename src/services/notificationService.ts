@@ -31,6 +31,52 @@ function getNotifications(): typeof NotificationsType | null {
 const STORAGE_KEY_TOKEN = '@secubuzz_push_token';
 const STORAGE_KEY_PERMISSION_REQUESTED = '@secubuzz_push_permission_requested';
 const STORAGE_KEY_LAST_REGISTERED = '@secubuzz_push_token_last_registered';
+const STORAGE_KEY_PREFERENCES = '@secubuzz_notification_preferences';
+
+export type SeverityThreshold = 'ALL' | 'HIGH_CRITICAL' | 'CRITICAL_ONLY';
+
+export interface NotificationPreferences {
+  newsBriefs: boolean;
+  threatAdvisories: boolean;
+  severityThreshold: SeverityThreshold;
+}
+
+export const DEFAULT_NOTIFICATION_PREFERENCES: NotificationPreferences = {
+  newsBriefs: true,
+  threatAdvisories: true,
+  severityThreshold: 'HIGH_CRITICAL',
+};
+
+export async function getNotificationPreferencesAsync(): Promise<NotificationPreferences> {
+  try {
+    const raw = await AsyncStorage.getItem(STORAGE_KEY_PREFERENCES);
+    if (!raw) return DEFAULT_NOTIFICATION_PREFERENCES;
+    const parsed = JSON.parse(raw);
+    return {
+      newsBriefs: parsed.newsBriefs ?? DEFAULT_NOTIFICATION_PREFERENCES.newsBriefs,
+      threatAdvisories:
+        parsed.threatAdvisories ?? DEFAULT_NOTIFICATION_PREFERENCES.threatAdvisories,
+      severityThreshold:
+        parsed.severityThreshold ?? DEFAULT_NOTIFICATION_PREFERENCES.severityThreshold,
+    };
+  } catch {
+    return DEFAULT_NOTIFICATION_PREFERENCES;
+  }
+}
+
+export async function saveNotificationPreferencesAsync(
+  updates: Partial<NotificationPreferences>,
+): Promise<NotificationPreferences> {
+  try {
+    const current = await getNotificationPreferencesAsync();
+    const next: NotificationPreferences = { ...current, ...updates };
+    await AsyncStorage.setItem(STORAGE_KEY_PREFERENCES, JSON.stringify(next));
+    return next;
+  } catch (err) {
+    console.warn('SecuBuzz: Could not save notification preferences:', err);
+    return DEFAULT_NOTIFICATION_PREFERENCES;
+  }
+}
 
 export const ANDROID_CHANNEL_ID = 'secubuzz-news';
 
@@ -40,8 +86,8 @@ const DEFAULT_API_URL =
   'https://secubuzz-push.secubuzz.workers.dev/api/push-tokens';
 
 /**
- * Configure foreground notification presentation.
- * Shows a banner and list entry, but does not aggressively play sound if reading.
+ * Configure foreground notification presentation with respect to user preferences.
+ * Shows a banner and list entry only if enabled by user filters.
  * Note: Notifications are disabled in Expo Go on Android (SDK 53+).
  */
 if (!isExpoGo) {
@@ -49,12 +95,77 @@ if (!isExpoGo) {
   if (Notifications) {
     try {
       Notifications.setNotificationHandler({
-        handleNotification: async () => ({
-          shouldPlaySound: false,
-          shouldSetBadge: false,
-          shouldShowBanner: true,
-          shouldShowList: true,
-        }),
+        handleNotification: async (notification) => {
+          try {
+            const data: any = notification.request.content.data;
+            const prefs = await getNotificationPreferencesAsync();
+
+            const notifType = String(data?.type || '').toLowerCase();
+            const notifSeverity = String(data?.severity || '').toUpperCase();
+
+            // Check content type filters
+            if (notifType === 'brief' && !prefs.newsBriefs) {
+              return {
+                shouldPlaySound: false,
+                shouldSetBadge: false,
+                shouldShowBanner: false,
+                shouldShowList: false,
+              };
+            }
+
+            if (
+              (notifType === 'advisory' || notifType === 'cve') &&
+              !prefs.threatAdvisories
+            ) {
+              return {
+                shouldPlaySound: false,
+                shouldSetBadge: false,
+                shouldShowBanner: false,
+                shouldShowList: false,
+              };
+            }
+
+            // Check severity threshold filter
+            if (
+              prefs.severityThreshold === 'CRITICAL_ONLY' &&
+              notifSeverity !== 'CRITICAL'
+            ) {
+              return {
+                shouldPlaySound: false,
+                shouldSetBadge: false,
+                shouldShowBanner: false,
+                shouldShowList: false,
+              };
+            }
+
+            if (
+              prefs.severityThreshold === 'HIGH_CRITICAL' &&
+              notifSeverity !== 'CRITICAL' &&
+              notifSeverity !== 'HIGH'
+            ) {
+              return {
+                shouldPlaySound: false,
+                shouldSetBadge: false,
+                shouldShowBanner: false,
+                shouldShowList: false,
+              };
+            }
+
+            return {
+              shouldPlaySound: false,
+              shouldSetBadge: false,
+              shouldShowBanner: true,
+              shouldShowList: true,
+            };
+          } catch {
+            return {
+              shouldPlaySound: false,
+              shouldSetBadge: false,
+              shouldShowBanner: true,
+              shouldShowList: true,
+            };
+          }
+        },
       });
     } catch (err) {
       console.warn('SecuBuzz: Notification handler setup error:', err);
