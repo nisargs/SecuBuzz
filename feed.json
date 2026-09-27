@@ -1,5 +1,29 @@
 [
   {
+    "id": "https://blog.cloudflare.com/cloudflares-2026-annual-founders-letter/",
+    "sourceUrl": "https://blog.cloudflare.com/cloudflares-2026-annual-founders-letter/",
+    "title": "Cloudflare Reflects on AI and Web Sustainability in 2026 Founders’ Letter",
+    "headline": "Cloudflare Reflects on AI and Web Sustainability in 2026 Founders’ Letter",
+    "summary": "Cloudflare’s 2026 Annual Founders’ Letter discusses the growing dominance of automated traffic, the rise of AI agents, new creators, and the company’s commitment to building a fair, sustainable future for the web.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "publishedAt": "2026-09-27T17:00:00.000Z",
+    "url": "https://blog.cloudflare.com/cloudflares-2026-annual-founders-letter/"
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/alerts/2026/09/27/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/09/27/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+    "title": "CISA Adds Two Citrix NetScaler Vulnerabilities to Known Exploited Catalog",
+    "headline": "CISA Adds Two Citrix NetScaler Vulnerabilities to Known Exploited Catalog",
+    "summary": "CISA has added CVE-2026-88771 and CVE-2026-88772, both Citrix NetScaler flaws, to its Known Exploited Vulnerabilities catalog after evidence of active exploitation. The vulnerabilities involve improper input validation and memory buffer restriction issues, posing significant risks to federal agencies.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CISA",
+    "publishedAt": "2026-09-27T12:00:00.000Z",
+    "url": "https://www.cisa.gov/news-events/alerts/2026/09/27/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/citrix-admins-warned-to-shut-down-netscalers-over-2-exploited-zero-days/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/citrix-admins-warned-to-shut-down-netscalers-over-2-exploited-zero-days/",
     "title": "Citrix NetScaler Zero‑Day Exploits Prompt Shutdown Warning",
