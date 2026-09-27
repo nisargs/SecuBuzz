@@ -99,6 +99,7 @@ export interface Article {
 - **Filter Modal**: Filter simultaneously by Threat Severity (`CRITICAL`, `HIGH`, `MEDIUM`, `LOW`) and Category (`BREACH`, `RANSOMWARE`, `CVE`, `NATION_STATE`, `VULNERABILITY`, `GENERAL`).
 - **Live Search**: Instant keyword search filtering by title, summary, vendor, or CVE ID.
 - **Quick Actions**:
+  - **1-Tap Markdown Incident Report Copy**: Instantly copies a clean, markdown-formatted incident report to clipboard (with a 2-second visual checkmark confirmation) formatted for pasting directly into Slack, Microsoft Teams, Jira tickets, or Discord.
   - 1-tap Bookmark/Save with visual state transition.
   - Native Share sheet (generates clean pre-formatted intelligence snippets for Slack, Teams, WhatsApp, X).
   - "Read Original" button opening in-app / external source.
@@ -108,6 +109,7 @@ export interface Article {
 ### Tab 2: Threat Advisories (`src/app/(tabs)/advisories.tsx`)
 - **Direct CISA KEV Ingestion**: Ingests active zero-days from CISA's live catalog.
 - **Active Telemetry Counter**: Header badge showing dynamic active threat count (`25 ACTIVE` or `6 OF 25 ACTIVE` when filtered).
+- **1-Tap Markdown Advisory Report Copy**: Copies full vulnerability telemetry (CVE ID, severity, affected vendor/product, remediation deadline, patch version, required action, and source URL) in Markdown for security team channels.
 - **Affected Component Banner**: Dedicated banner highlighting `AFFECTED: Vendor · Product` with micro cube icon.
 - **Remediation & Guidance Card**:
   - Crimson highlight for `REMEDIATION DEADLINE: <Date>` (CISA KEV binding date) or `FIX AVAILABLE: <Version>`.

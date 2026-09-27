@@ -24,6 +24,7 @@ import type { CveAdvisory } from '../../models/cve';
 import { colors, severityColors, spacing } from '../../theme/theme';
 
 const BLUE = colors.accent;
+import { copyAdvisoryToClipboard, copyArticleToClipboard } from '../../utils/copyReport';
 import { formatPublishedAt } from '../../utils/formatPublishedAt';
 import { openArticle } from '../../utils/openArticle';
 import { shareArticle } from '../../utils/shareArticle';
@@ -284,6 +285,19 @@ export default function ArticleDetailScreen() {
     article.id.startsWith('GHSA-');
 
   const [advisoryDetails, setAdvisoryDetails] = useState<CveAdvisory | null>(null);
+  const [copied, setCopied] = useState(false);
+
+  function handleCopy() {
+    if (isAdvisory && advisoryDetails) {
+      copyAdvisoryToClipboard(advisoryDetails);
+    } else if (article) {
+      copyArticleToClipboard(article);
+    }
+    setCopied(true);
+    setTimeout(() => {
+      setCopied(false);
+    }, 2000);
+  }
 
   useEffect(() => {
     if (!isAdvisory) return;
@@ -359,6 +373,20 @@ export default function ArticleDetailScreen() {
         </Text>
 
         <View style={styles.headerRight}>
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="Copy markdown report for Slack or Teams"
+            hitSlop={12}
+            onPress={handleCopy}
+            style={styles.headerButton}
+          >
+            <Ionicons
+              name={copied ? 'checkmark-circle' : 'copy-outline'}
+              size={21}
+              color={copied ? accentColor : colors.textPrimary}
+            />
+          </Pressable>
+
           <Pressable
             accessibilityRole="button"
             accessibilityLabel="Share article"

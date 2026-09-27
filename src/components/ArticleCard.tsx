@@ -12,6 +12,7 @@ import type { Article } from '../models/article';
 import { colors, severityColors, spacing } from '../theme/theme';
 
 const BLUE = colors.accent;
+import { copyArticleToClipboard } from '../utils/copyReport';
 import { formatPublishedAt } from '../utils/formatPublishedAt';
 import { openArticle } from '../utils/openArticle';
 import { shareArticle } from '../utils/shareArticle';
@@ -47,6 +48,15 @@ export function ArticleCard({
 }: ArticleCardProps) {
   const { colors, isDark, accentColor, severityColors } = useTheme();
   const [opening, setOpening] = useState(false);
+  const [copied, setCopied] = useState(false);
+
+  function handleCopy() {
+    copyArticleToClipboard(article);
+    setCopied(true);
+    setTimeout(() => {
+      setCopied(false);
+    }, 2000);
+  }
 
   async function handleOpenArticle() {
     if (opening) {
@@ -126,6 +136,20 @@ export function ArticleCard({
         </View>
 
         <View style={styles.actionsRow}>
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="Copy markdown incident report"
+            hitSlop={12}
+            onPress={handleCopy}
+            style={styles.actionButton}
+          >
+            <Ionicons
+              name={copied ? 'checkmark-circle' : 'copy-outline'}
+              size={21}
+              color={copied ? accentColor : colors.textSecondary}
+            />
+          </Pressable>
+
           <Pressable
             accessibilityRole="button"
             accessibilityLabel="Share article"

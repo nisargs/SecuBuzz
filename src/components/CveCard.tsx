@@ -12,6 +12,7 @@ import {
 import { useTheme } from '../context/ThemeContext';
 import type { AdvisorySeverity, AdvisorySource, CveAdvisory } from '../models/cve';
 import { spacing } from '../theme/theme';
+import { copyAdvisoryToClipboard } from '../utils/copyReport';
 import { openArticle } from '../utils/openArticle';
 
 type CveCardProps = {
@@ -42,6 +43,15 @@ export function CveCard({
 }: CveCardProps) {
   const { colors, isDark, accentColor, severityColors } = useTheme();
   const [opening, setOpening] = useState(false);
+  const [copied, setCopied] = useState(false);
+
+  function handleCopy() {
+    copyAdvisoryToClipboard(advisory);
+    setCopied(true);
+    setTimeout(() => {
+      setCopied(false);
+    }, 2000);
+  }
 
   const isRansomware =
     advisory.knownRansomwareCampaignUse?.toLowerCase() === 'known';
@@ -176,6 +186,20 @@ export function CveCard({
         </View>
 
         <View style={styles.actionsRow}>
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="Copy markdown report for Slack or Teams"
+            hitSlop={12}
+            onPress={handleCopy}
+            style={styles.actionButton}
+          >
+            <Ionicons
+              name={copied ? 'checkmark-circle' : 'copy-outline'}
+              size={21}
+              color={copied ? accentColor : colors.textSecondary}
+            />
+          </Pressable>
+
           <Pressable
             accessibilityRole="button"
             accessibilityLabel="Share advisory"
