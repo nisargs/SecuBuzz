@@ -1,5 +1,17 @@
 [
   {
+    "id": "https://www.cisa.gov/news-events/alerts/2026/09/27/critical-zero-day-vulnerabilities-exploited-citrix-netscaler-adc-gateway",
+    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/09/27/critical-zero-day-vulnerabilities-exploited-citrix-netscaler-adc-gateway",
+    "title": "Citrix NetScaler ADC and Gateway Zero-Day Vulnerabilities Exploited Globally",
+    "headline": "Citrix NetScaler ADC and Gateway Zero-Day Vulnerabilities Exploited Globally",
+    "summary": "CISA reports eight zero‑day CVEs (CVE-2026-88771 to CVE-2026-88778) in Citrix NetScaler ADC and Gateway. CVE-2026-88771 and CVE-2026-88772 are confirmed for remote code execution and are actively exploited worldwide. Citrix must be updated immediately to mitigate the risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CISA",
+    "publishedAt": "2026-09-27T12:00:00.000Z",
+    "url": "https://www.cisa.gov/news-events/alerts/2026/09/27/critical-zero-day-vulnerabilities-exploited-citrix-netscaler-adc-gateway"
+  },
+  {
     "id": "https://blog.cloudflare.com/cloudflares-2026-annual-founders-letter/",
     "sourceUrl": "https://blog.cloudflare.com/cloudflares-2026-annual-founders-letter/",
     "title": "Cloudflare Reflects on AI and Web Sustainability in 2026 Founders’ Letter",
