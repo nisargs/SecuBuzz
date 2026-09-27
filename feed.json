@@ -1,5 +1,17 @@
 [
   {
+    "id": "https://cybernewsai.com/blog/lunex-stealer-amd-byovd-edr-evasion",
+    "sourceUrl": "https://cybernewsai.com/blog/lunex-stealer-amd-byovd-edr-evasion",
+    "title": "LunexStealer Uses AMD Driver BYOVD to Evade EDR and Steal Credentials",
+    "headline": "LunexStealer Uses AMD Driver BYOVD to Evade EDR and Steal Credentials",
+    "summary": "LunexStealer deploys the AMD PDFWKRNL.sys driver via a Bring Your Own Vulnerability (BYOVD) technique to zero kernel callbacks, effectively blinding endpoint detection and response systems. The malware then steals browser credentials and cryptocurrency wallet data from 28 victim panels.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-09-27T01:41:09.000Z",
+    "url": "https://cybernewsai.com/blog/lunex-stealer-amd-byovd-edr-evasion"
+  },
+  {
     "id": "https://cybernewsai.com/blog/github-actions-re-enabled-mini-shai-hulud",
     "sourceUrl": "https://cybernewsai.com/blog/github-actions-re-enabled-mini-shai-hulud",
     "title": "GitHub Actions Re-Enabled With Mini Shai-Hulud Malware Exposes 15,000 Repositories",
