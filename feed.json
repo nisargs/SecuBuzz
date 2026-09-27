@@ -1,5 +1,41 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/09/27/week-in-review-gyazo-breach-exposes-23-6m-user-data-taskstomp-steals-documents/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/27/week-in-review-gyazo-breach-exposes-23-6m-user-data-taskstomp-steals-documents/",
+    "title": "Gyazo Breach Exposes 23.6 Million User Records",
+    "headline": "Gyazo Breach Exposes 23.6 Million User Records",
+    "summary": "Gyazo suffered a data breach that exposed 23.6 million user records, including personal details and passwords. The breach also involved TASK#STOMP, a tool that stole documents from affected accounts. The incident highlights the need for stronger access controls and monitoring of third‑party tools.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "publishedAt": "2026-09-27T08:00:49.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/09/27/week-in-review-gyazo-breach-exposes-23-6m-user-data-taskstomp-steals-documents/"
+  },
+  {
+    "id": "https://thehackernews.com/2026/09/warning-two-unpatched-citrix-netscaler.html",
+    "sourceUrl": "https://thehackernews.com/2026/09/warning-two-unpatched-citrix-netscaler.html",
+    "title": "Citrix NetScaler ADC and Gateway RCE Zero‑Days Actively Exploited",
+    "headline": "Citrix NetScaler ADC and Gateway RCE Zero‑Days Actively Exploited",
+    "summary": "Two unpatched zero‑day vulnerabilities in Citrix NetScaler ADC and NetScaler Gateway allow remote code execution. Security firm watchTowr reports active exploitation in the wild. Citrix has not confirmed the flaws or released a patch, prompting administrators to take appliances offline to mitigate the risk.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "publishedAt": "2026-09-27T07:47:57.000Z",
+    "url": "https://thehackernews.com/2026/09/warning-two-unpatched-citrix-netscaler.html"
+  },
+  {
+    "id": "https://www.wiz.io/blog/infostealer-incursion-cloud-ai-credentials",
+    "sourceUrl": "https://www.wiz.io/blog/infostealer-incursion-cloud-ai-credentials",
+    "title": "Infostealer Credentials Target Cloud, Code, and AI Environments",
+    "headline": "Infostealer Credentials Target Cloud, Code, and AI Environments",
+    "summary": "Wiz Research mapped stolen credentials from NordStellar data, showing how infostealer families target accounts used in cloud, code, and AI platforms. The breach exposes sensitive access across multiple environments, potentially allowing attackers to compromise infrastructure, source code repositories, and AI model training data.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Wiz Research",
+    "publishedAt": "2026-09-25T14:51:15.000Z",
+    "url": "https://www.wiz.io/blog/infostealer-incursion-cloud-ai-credentials"
+  },
+  {
     "id": "https://cybernewsai.com/blog/lunex-stealer-amd-byovd-edr-evasion",
     "sourceUrl": "https://cybernewsai.com/blog/lunex-stealer-amd-byovd-edr-evasion",
     "title": "LunexStealer Uses AMD Driver BYOVD to Evade EDR and Steal Credentials",
