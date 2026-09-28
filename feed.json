@@ -1,5 +1,17 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-is-preparing-o-an-always-on-chatgpt-assistant-that-could-handle-email/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-is-preparing-o-an-always-on-chatgpt-assistant-that-could-handle-email/",
+    "title": "OpenAI Tests New Always‑On ChatGPT Assistant “o”",
+    "headline": "OpenAI Tests New Always‑On ChatGPT Assistant “o”",
+    "summary": "OpenAI is testing a new always‑on assistant named “o,” which could handle email and other tasks. The feature was briefly referenced on the company’s website, indicating early development and potential future integration into OpenAI’s product lineup.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-09-27T23:40:39.000Z",
+    "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-is-preparing-o-an-always-on-chatgpt-assistant-that-could-handle-email/"
+  },
+  {
     "id": "https://www.darkreading.com/cyber-risk/how-to-manage-ciso-cfo-relationship-cybersecurity-success",
     "sourceUrl": "https://www.darkreading.com/cyber-risk/how-to-manage-ciso-cfo-relationship-cybersecurity-success",
     "title": "CISO and CFO Alignment Boosts Cybersecurity Success",
