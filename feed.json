@@ -1,5 +1,65 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/us-soldier-gets-70-months-in-prison-for-extorting-10-tech-telecom-firms/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/us-soldier-gets-70-months-in-prison-for-extorting-10-tech-telecom-firms/",
+    "title": "US Soldier Sentenced for Extorting Ten Tech Firms",
+    "headline": "US Soldier Sentenced for Extorting Ten Tech Firms",
+    "summary": "A former U.S. Army soldier was sentenced to 70 months in prison after hacking and extorting at least ten U.S. technology and telecommunications companies between April 2023 and December 2024. The case involved unauthorized access and demands for payment to prevent disclosure of compromised data.",
+    "category": "RANSOMWARE",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-09-28T07:30:15.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/us-soldier-gets-70-months-in-prison-for-extorting-10-tech-telecom-firms/"
+  },
+  {
+    "id": "https://www.securityweek.com/citrix-confirms-2-netscaler-zero-days-after-admins-pulled-the-plug/",
+    "sourceUrl": "https://www.securityweek.com/citrix-confirms-2-netscaler-zero-days-after-admins-pulled-the-plug/",
+    "title": "Citrix Releases Patches for Two NetScaler Zero-Days",
+    "headline": "Citrix Releases Patches for Two NetScaler Zero-Days",
+    "summary": "Citrix has issued patches for two critical NetScaler vulnerabilities identified as CVE-2026-88771 and CVE-2026-88772. The zero-days allowed unauthenticated remote code execution, potentially enabling attackers to take control of affected Citrix appliances. Users are urged to apply the updates immediately to mitigate exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-09-28T07:29:51.000Z",
+    "url": "https://www.securityweek.com/citrix-confirms-2-netscaler-zero-days-after-admins-pulled-the-plug/"
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-exploited-citrix-flaws-by-wednesday/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-exploited-citrix-flaws-by-wednesday/",
+    "title": "CISA Orders Federal Agencies to Patch Exploited Citrix NetScaler Vulnerabilities",
+    "headline": "CISA Orders Federal Agencies to Patch Exploited Citrix NetScaler Vulnerabilities",
+    "summary": "The Cybersecurity and Infrastructure Security Agency has mandated U.S. government agencies to patch two critical Citrix NetScaler vulnerabilities before Wednesday. The directive follows reports of active exploitation in the wild, urging immediate remediation to prevent potential remote code execution attacks on federal systems.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-09-28T06:24:19.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-exploited-citrix-flaws-by-wednesday/"
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/09/28/chris-latimer-vectorize-agent-memory-security/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/28/chris-latimer-vectorize-agent-memory-security/",
+    "title": "Security Check: Protect AI Agent Memory from Credential Leakage",
+    "headline": "Security Check: Protect AI Agent Memory from Credential Leakage",
+    "summary": "Vectorize CEO Chris Latimer warns that AI coding agents often store API keys, credentials, and sensitive documents in plain text on developer machines and cloud services. Attackers can inject poisoned memory via plugins or integrations, targeting inexperienced coders. The interview stresses the need for strict access controls and secure memory handling practices.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-09-28T06:00:40.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/09/28/chris-latimer-vectorize-agent-memory-security/"
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/09/28/authorizer-open-source-authentication-server/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/28/authorizer-open-source-authentication-server/",
+    "title": "Authorizer: Open‑Source Authentication and Authorization Tool",
+    "headline": "Authorizer: Open‑Source Authentication and Authorization Tool",
+    "summary": "Authorizer is an open‑source server that handles sign‑in and access control for web and mobile applications. It runs on user‑chosen infrastructure, stores accounts in a chosen database, and includes a permissions engine and AI agent interface to verify user access before fetching documents. Teams can deploy it to manage user authentication and authorization.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-09-28T05:30:06.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/09/28/authorizer-open-source-authentication-server/"
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/09/28/ai-agent-security-governance-aws-report/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/09/28/ai-agent-security-governance-aws-report/",
     "title": "AI Forces Enterprises to Rethink Security Governance",
