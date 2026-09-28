@@ -1,5 +1,29 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/09/28/ai-agent-security-governance-aws-report/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/28/ai-agent-security-governance-aws-report/",
+    "title": "AI Forces Enterprises to Rethink Security Governance",
+    "headline": "AI Forces Enterprises to Rethink Security Governance",
+    "summary": "AI agents are prompting companies to embed governance into systems and maintain human accountability as deployments scale. AWS’s Reimagine 2026 highlights the need for governance frameworks, citing interviews with 154 executives across 128 organizations in 23 industries. The report urges updating review processes beyond legacy six‑month IT programs.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-09-28T05:00:48.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/09/28/ai-agent-security-governance-aws-report/"
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/09/28/product-showcase-verdict/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/28/product-showcase-verdict/",
+    "title": "Verdict App Detects AI‑Generated Images on iPhone",
+    "headline": "Verdict App Detects AI‑Generated Images on iPhone",
+    "summary": "Verdict is an offline iOS 16+ app that scans photos and videos for AI manipulation, returning a 0–100 score with evidence. It analyzes AI‑detection model outputs, camera metadata, and sensor noise, including a compression check. The tool offers a quick, account‑free way to verify media authenticity on iPhones.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-09-28T04:30:42.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/09/28/product-showcase-verdict/"
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/09/28/quantum-random-number-generator-qrng-guidance/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/09/28/quantum-random-number-generator-qrng-guidance/",
     "title": "Quantum Random Number Generators May Leak Clues Despite Passing Tests",
