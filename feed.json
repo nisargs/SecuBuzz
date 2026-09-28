@@ -1,5 +1,29 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/09/28/quantum-random-number-generator-qrng-guidance/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/28/quantum-random-number-generator-qrng-guidance/",
+    "title": "Quantum Random Number Generators May Leak Clues Despite Passing Tests",
+    "headline": "Quantum Random Number Generators May Leak Clues Despite Passing Tests",
+    "summary": "A new ETSI technical report highlights weaknesses in quantum random number generators that could allow attackers to infer generated numbers. The guidance covers device and system flaws that reduce randomness, potentially compromising cryptographic keys and other security functions.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-09-28T04:00:51.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/09/28/quantum-random-number-generator-qrng-guidance/"
+  },
+  {
+    "id": "https://cybernewsai.com/blog/citrix-netscaler-twin-zero-days-cve-2026-88771-cve-2026-88772",
+    "sourceUrl": "https://cybernewsai.com/blog/citrix-netscaler-twin-zero-days-cve-2026-88771-cve-2026-88772",
+    "title": "Citrix NetScaler ADC and Gateway Hit by Twin Pre-Auth RCE Zero-Days",
+    "headline": "Citrix NetScaler ADC and Gateway Hit by Twin Pre-Auth RCE Zero-Days",
+    "summary": "Citrix confirmed active exploitation of two pre-authentication remote code execution flaws in NetScaler ADC and Gateway, identified as CVE-2026-88771 and CVE-2026-88772, both with CVSS 9.5. Immediate patching is required to mitigate the critical vulnerability.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-09-28T00:55:10.000Z",
+    "url": "https://cybernewsai.com/blog/citrix-netscaler-twin-zero-days-cve-2026-88771-cve-2026-88772"
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-is-preparing-o-an-always-on-chatgpt-assistant-that-could-handle-email/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-is-preparing-o-an-always-on-chatgpt-assistant-that-could-handle-email/",
     "title": "OpenAI Tests New Always‑On ChatGPT Assistant “o”",
