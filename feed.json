@@ -1,5 +1,41 @@
 [
   {
+    "id": "https://thehackernews.com/2026/09/rathat-android-malware-console-uses.html",
+    "sourceUrl": "https://thehackernews.com/2026/09/rathat-android-malware-console-uses.html",
+    "title": "RatHat Android Malware Console Targets High-Value Victims",
+    "headline": "RatHat Android Malware Console Targets High-Value Victims",
+    "summary": "Security firm Cleafy traced nearly 100 deployments of RatHat’s Android banking trojan console since April 2026. The console, part of a malware‑as‑a‑service model, lets operators control infected phones and collect data from each device.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-09-28T17:38:33.000Z",
+    "url": "https://thehackernews.com/2026/09/rathat-android-malware-console-uses.html"
+  },
+  {
+    "id": "https://blog.cloudflare.com/kitesurf-update/",
+    "sourceUrl": "https://blog.cloudflare.com/kitesurf-update/",
+    "title": "Cloudflare Updates Kitesurf Browser with WebMCP and Performance Enhancements",
+    "headline": "Cloudflare Updates Kitesurf Browser with WebMCP and Performance Enhancements",
+    "summary": "Cloudflare’s Kitesurf, a Workers‑based browser for AI agents, received an update adding WebMCP support, improved DOM performance, and terminal‑based rendering. The update passes over 730,000 Web Platform subtests, enabling faster navigation of complex sites.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "publishedAt": "2026-09-28T13:00:00.000Z",
+    "url": "https://blog.cloudflare.com/kitesurf-update/"
+  },
+  {
+    "id": "https://blog.cloudflare.com/introducing-the-cold-start/",
+    "sourceUrl": "https://blog.cloudflare.com/introducing-the-cold-start/",
+    "title": "Cloudflare Launches The Cold Start Startup Competition",
+    "headline": "Cloudflare Launches The Cold Start Startup Competition",
+    "summary": "Cloudflare has introduced The Cold Start, a competition at Cloudflare Connect that gives five early‑stage startups five minutes to pitch live. The grand prize includes $500,000 in credits, a San Francisco billboard, and an invitation to a VIP speakers dinner.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "publishedAt": "2026-09-28T13:00:00.000Z",
+    "url": "https://blog.cloudflare.com/introducing-the-cold-start/"
+  },
+  {
     "id": "https://cybernewsai.com/blog/bitget-387-million-crypto-heist-third-party-breach",
     "sourceUrl": "https://cybernewsai.com/blog/bitget-387-million-crypto-heist-third-party-breach",
     "title": "Bitget Loses $387.5M in Crypto Heist via Third-Party Security Flaw",
@@ -2962,41 +2998,5 @@
     "source": "Help Net Security",
     "publishedAt": "2026-09-24T04:27:02.000Z",
     "url": "https://www.helpnetsecurity.com/2026/09/24/ubuntu-kernel-cve-fixes-release-schedule/"
-  },
-  {
-    "id": "https://cybernewsai.com/blog/check-point-security-gateway-vpn-rce-cve-2026-85102",
-    "sourceUrl": "https://cybernewsai.com/blog/check-point-security-gateway-vpn-rce-cve-2026-85102",
-    "title": "Check Point Warns of VPN Zero-Day Flaws Exploited in Attacks",
-    "headline": "Check Point Warns of VPN Zero-Day Flaws Exploited in Attacks",
-    "summary": "Check Point confirmed active in-the-wild exploitation of pre-auth VPN zero‑days CVE-2026-85102 and CVE-2026-93616 impacting Quantum Security Gateways. The flaws allow attackers to bypass authentication and gain remote access. Immediate patching of affected gateways is required to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-09-24T01:49:43.000Z",
-    "url": "https://cybernewsai.com/blog/check-point-security-gateway-vpn-rce-cve-2026-85102"
-  },
-  {
-    "id": "https://cybernewsai.com/blog/wordpress-core-rce-cve-2026-87902-exploited-in-the-wild",
-    "sourceUrl": "https://cybernewsai.com/blog/wordpress-core-rce-cve-2026-87902-exploited-in-the-wild",
-    "title": "WordPress Core Remote Code Execution Exploited via CVE-2026-87902",
-    "headline": "WordPress Core Remote Code Execution Exploited via CVE-2026-87902",
-    "summary": "Adversaries are exploiting a critical path traversal flaw (CVE-2026-87902) in WordPress Core, enabling remote command execution through abused pearcmd components. The vulnerability allows attackers to run arbitrary code on affected sites, posing a severe risk to site owners. Immediate patching is required.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-09-24T01:36:00.000Z",
-    "url": "https://cybernewsai.com/blog/wordpress-core-rce-cve-2026-87902-exploited-in-the-wild"
-  },
-  {
-    "id": "https://krebsonsecurity.com/2026/07/microsoft-patches-a-record-570-security-flaws/",
-    "sourceUrl": "https://krebsonsecurity.com/2026/07/microsoft-patches-a-record-570-security-flaws/",
-    "title": "Microsoft Releases 570 Security Patches",
-    "headline": "Microsoft Releases 570 Security Patches",
-    "summary": "Microsoft issued updates fixing at least 570 security holes across Windows and other software, nearly triple the previous record. The high volume was aided by AI‑driven vulnerability discovery. Users should install the patches promptly to mitigate potential exploits.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Krebs on Security",
-    "publishedAt": "2026-07-14T19:22:42.000Z",
-    "url": "https://krebsonsecurity.com/2026/07/microsoft-patches-a-record-570-security-flaws/"
   }
 ]
