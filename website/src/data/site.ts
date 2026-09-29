@@ -8,14 +8,15 @@ export const mainNav = [
 
 
 export const footerNav = [
-{
-  heading: 'Product',
-  links: [
-  { label: 'News briefs', to: '/news' },
-  { label: 'CISA advisories', to: '/advisories' },
-  { label: 'Download the app', to: '/download' }]
-
-},
+  {
+    heading: 'Product',
+    links: [
+      { label: 'News briefs', to: '/news' },
+      { label: 'CISA advisories', to: '/advisories' },
+      { label: 'Download the app', to: '/download' },
+      { label: 'RSS Feed', to: '/rss.xml', external: true },
+    ]
+  },
 {
   heading: 'Company',
   links: [

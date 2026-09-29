@@ -1,5 +1,6 @@
 import React from 'react';
 import type { Severity } from '../types/advisory';
+import { getCvssSeverity } from '../utils/advisory';
 
 interface SeverityBadgeProps {
   severity: Severity;
@@ -14,12 +15,12 @@ const toneClass: Record<Severity, string> = {
 };
 
 export function SeverityBadge({ severity, cvss }: SeverityBadgeProps) {
+  const effectiveSeverity = getCvssSeverity(cvss, severity);
   return (
     <span
-      className={`inline-flex items-center gap-1.5 whitespace-nowrap rounded border px-1.5 py-0.5 font-mono text-[11px] font-medium ${toneClass[severity]}`}>
-      
-      {severity}
+      className={`inline-flex items-center gap-1.5 whitespace-nowrap rounded border px-1.5 py-0.5 font-mono text-[11px] font-medium ${toneClass[effectiveSeverity]}`}>
+      {effectiveSeverity}
       {cvss !== undefined && <span className="opacity-80">{cvss.toFixed(1)}</span>}
-    </span>);
-
+    </span>
+  );
 }

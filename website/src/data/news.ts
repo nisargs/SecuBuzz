@@ -141,8 +141,20 @@ export const news: NewsBrief[] = [
     "cves": [
       "CVE-2026-86950"
     ],
-    "additionalSources": [],
-    "aliases": []
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/apple-patches-coregraphics-zero-day-flaw-exploited-in-attacks/"
+      },
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/09/28/product-showcase-verdict/"
+      }
+    ],
+    "aliases": [
+      "apple-fixes-coregraphics-zero-day-exploited-in-ios-attacks",
+      "verdict-app-detects-ai-generated-images-on-iphone"
+    ]
   },
   {
     "slug": "microsoft-dissects-needymantis-malware-from-daemon-tools-hac",
@@ -200,18 +212,6 @@ export const news: NewsBrief[] = [
     "source": "Help Net Security",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/anthropic-claude-sonnet-5-5/",
     "publishedAt": "2026-09-29T08:15:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "apple-fixes-coregraphics-zero-day-exploited-in-ios-attacks",
-    "title": "Apple Fixes CoreGraphics Zero-Day Exploited in iOS Attacks",
-    "summary": "Apple released security updates to patch a zero‑day vulnerability in CoreGraphics that was actively exploited in sophisticated targeted attacks against iOS devices. The flaw allowed attackers to execute arbitrary code on affected devices, enabling full device compromise. The update mitigates the exploit by tightening memory handling in the graphics subsystem.",
-    "category": "Vulnerability",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/apple-patches-coregraphics-zero-day-flaw-exploited-in-attacks/",
-    "publishedAt": "2026-09-29T07:33:12.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -680,18 +680,6 @@ export const news: NewsBrief[] = [
     "source": "Help Net Security",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/09/28/ai-agent-security-governance-aws-report/",
     "publishedAt": "2026-09-28T05:00:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "verdict-app-detects-ai-generated-images-on-iphone",
-    "title": "Verdict App Detects AI‑Generated Images on iPhone",
-    "summary": "Verdict is an offline iOS 16+ app that scans photos and videos for AI manipulation, returning a 0–100 score with evidence. It analyzes AI‑detection model outputs, camera metadata, and sensor noise, including a compression check. The tool offers a quick, account‑free way to verify media authenticity on iPhones.",
-    "category": "Policy",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/28/product-showcase-verdict/",
-    "publishedAt": "2026-09-28T04:30:42.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []

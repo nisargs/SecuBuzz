@@ -1,18 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { ArrowLeftIcon, ArrowUpRightIcon, ShieldAlertIcon, ActivityIcon } from 'lucide-react';
+import { ArrowLeftIcon, ArrowUpRightIcon, ShieldAlertIcon, ActivityIcon, CopyIcon, CheckIcon } from 'lucide-react';
 import { useLiveAdvisories } from '../data/useLiveAdvisories';
 import { useLiveNews } from '../data/useLiveNews';
 import { SeverityBadge } from '../components/SeverityBadge';
 import { AppCta } from '../components/AppCta';
 import { NotFound } from './NotFound';
 import { shortDate, timeAgo } from '../utils/date';
-import { dueStatus } from '../utils/advisory';
+import { dueStatus, parseCvssVector, formatAdvisorySnippet, getCvssSeverity } from '../utils/advisory';
 import { Seo } from '../components/Seo';
 
 interface EpssData {
   epss: number;
   percentile: number;
+  delta7d?: number | null;
   date?: string;
 }
 
@@ -25,6 +26,9 @@ interface CvssMetrics {
   privilegesRequired?: string;
   userInteraction?: string;
   scope?: string;
+  confidentialityImpact?: string;
+  integrityImpact?: string;
+  availabilityImpact?: string;
 }
 
 export function AdvisoryDetail() {
@@ -38,6 +42,7 @@ export function AdvisoryDetail() {
 
   const [cvssMetrics, setCvssMetrics] = useState<CvssMetrics | null>(null);
   const [metricsLoading, setMetricsLoading] = useState(false);
+  const [copiedSnippet, setCopiedSnippet] = useState(false);
 
   useEffect(() => {
     if (!advisory?.cve) return;
@@ -54,20 +59,25 @@ export function AdvisoryDetail() {
           setEpss({
             epss: data.epss,
             percentile: data.percentile,
+            delta7d: typeof data.delta7d === 'number' ? data.delta7d : null,
             date: data.date,
           });
         }
       })
       .catch(() => {
-        // Fallback directly to FIRST.org public API
-        fetch(`https://api.first.org/data/v1/epss?cve=${advisory.cve}`)
+        // Fallback directly to FIRST.org public API with time-series for 7d delta
+        fetch(`https://api.first.org/data/v1/epss?cve=${advisory.cve}&scope=time-series`)
           .then((res) => res.json())
           .then((data: any) => {
             const item = data?.data?.[0];
             if (item && item.epss) {
+              const epssVal = parseFloat(item.epss);
+              const ts = item['time-series'];
+              const epss7d = ts && ts.length > 0 ? parseFloat(ts[Math.min(6, ts.length - 1)].epss) : epssVal;
               setEpss({
-                epss: parseFloat(item.epss),
+                epss: epssVal,
                 percentile: parseFloat(item.percentile),
+                delta7d: Number((epssVal - epss7d).toFixed(4)),
                 date: item.date,
               });
             }
@@ -103,8 +113,25 @@ export function AdvisoryDetail() {
     return <NotFound />;
   }
 
+  const effectiveCvss = cvssMetrics?.score ?? advisory.cvss;
+  const effectiveSeverity = getCvssSeverity(effectiveCvss, advisory.severity);
+
+  const handleCopySnippet = async () => {
+    const text = formatAdvisorySnippet(advisory, effectiveCvss, epss?.percentile);
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopiedSnippet(true);
+      setTimeout(() => setCopiedSnippet(false), 2000);
+    } catch {
+      setCopiedSnippet(true);
+      setTimeout(() => setCopiedSnippet(false), 2000);
+    }
+  };
+
   const status = dueStatus(advisory.dueDate);
-  const coverage = news.filter((b) => b.cves.includes(advisory.cve));
+  const coverage = news.filter(
+    (b) => b.cves.includes(advisory.cve) || (b.title + ' ' + b.summary).toLowerCase().includes(advisory.cve.toLowerCase())
+  );
   const deadlineTone =
     status.tone === 'overdue' ? 'text-critical' : status.tone === 'urgent' ? 'text-accent' : 'text-ink';
   const deadlineText =
@@ -157,7 +184,7 @@ export function AdvisoryDetail() {
           <div>
             <div className="flex flex-wrap items-center gap-3">
               <span className="font-mono text-sm text-muted">{advisory.cve}</span>
-              <SeverityBadge severity={advisory.severity} cvss={cvssMetrics?.score || advisory.cvss} />
+              <SeverityBadge severity={effectiveSeverity} cvss={effectiveCvss} />
               {advisory.ransomware && (
                 <span className="rounded bg-critical/10 px-2 py-0.5 font-mono text-xs font-medium text-critical">
                   Ransomware Campaign
@@ -167,6 +194,24 @@ export function AdvisoryDetail() {
             <h1 className="mt-4 max-w-3xl text-3xl font-semibold leading-tight tracking-tight text-ink md:text-4xl">
               {advisory.name}
             </h1>
+            <div className="mt-5 flex flex-wrap items-center gap-3">
+              <button
+                type="button"
+                onClick={handleCopySnippet}
+                className="inline-flex items-center gap-1.5 rounded-md border border-line bg-surface px-3 py-1.5 font-mono text-xs font-medium text-ink transition-colors hover:border-accent hover:text-accent">
+                {copiedSnippet ? (
+                  <>
+                    <CheckIcon className="h-3.5 w-3.5 text-accent" aria-hidden="true" />
+                    Copied incident snippet (Slack/Teams)
+                  </>
+                ) : (
+                  <>
+                    <CopyIcon className="h-3.5 w-3.5 text-subtle" aria-hidden="true" />
+                    Copy incident snippet (Slack/Teams)
+                  </>
+                )}
+              </button>
+            </div>
           </div>
           <div className="rounded-lg border border-line bg-surface p-5">
             <p className="text-xs text-subtle">Federal remediation due</p>
@@ -194,28 +239,46 @@ export function AdvisoryDetail() {
               </div>
 
               {epss ? (
-                <div className="mt-4 grid gap-4 sm:grid-cols-2">
-                  <div className="rounded border border-line bg-raised/50 p-4">
-                    <p className="text-xs text-subtle">Exploitation Probability (30-day)</p>
-                    <p className="mt-1 font-mono text-2xl font-semibold text-ink">
-                      {(epss.epss * 100).toFixed(2)}%
-                    </p>
-                    <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-line">
-                      <div
-                        className="h-full bg-accent transition-all duration-300"
-                        style={{ width: `${Math.min(100, Math.max(4, epss.epss * 100))}%` }}
-                      />
+                <div className="mt-4">
+                  <div className="grid gap-4 sm:grid-cols-2">
+                    <div className="rounded border border-line bg-raised/50 p-4">
+                      <p className="text-xs text-subtle">Exploitation Probability (30-day)</p>
+                      <p className="mt-1 font-mono text-2xl font-semibold text-ink">
+                        {(epss.epss * 100).toFixed(2)}%
+                      </p>
+                      <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-line">
+                        <div
+                          className="h-full bg-accent transition-all duration-300"
+                          style={{ width: `${Math.min(100, Math.max(4, epss.epss * 100))}%` }}
+                        />
+                      </div>
+                    </div>
+                    <div className="rounded border border-line bg-raised/50 p-4">
+                      <p className="text-xs text-subtle">Relative Threat Percentile</p>
+                      <p className="mt-1 font-mono text-2xl font-semibold text-accent">
+                        {(epss.percentile * 100).toFixed(1)}%
+                      </p>
+                      <p className="mt-1 text-xs text-muted">
+                        Higher risk than {(epss.percentile * 100).toFixed(1)}% of all tracked CVEs
+                      </p>
                     </div>
                   </div>
-                  <div className="rounded border border-line bg-raised/50 p-4">
-                    <p className="text-xs text-subtle">Relative Threat Percentile</p>
-                    <p className="mt-1 font-mono text-2xl font-semibold text-accent">
-                      {(epss.percentile * 100).toFixed(1)}%
-                    </p>
-                    <p className="mt-1 text-xs text-muted">
-                      Higher risk than {(epss.percentile * 100).toFixed(1)}% of all tracked CVEs
-                    </p>
-                  </div>
+                  {epss.delta7d !== undefined && epss.delta7d !== null && (
+                    <div className="mt-3.5 flex items-center gap-2 border-t border-line/60 pt-3 font-mono text-xs">
+                      <span className="text-subtle">7-day trend:</span>
+                      {epss.delta7d > 0.001 ? (
+                        <span className="font-semibold text-critical">
+                          ↗ +{(epss.delta7d * 100).toFixed(1)}% (Rising)
+                        </span>
+                      ) : epss.delta7d < -0.001 ? (
+                        <span className="font-semibold text-low">
+                          ↘ {(epss.delta7d * 100).toFixed(1)}% (Falling)
+                        </span>
+                      ) : (
+                        <span className="text-muted">→ Stable (0.0% delta)</span>
+                      )}
+                    </div>
+                  )}
                 </div>
               ) : epssLoading ? (
                 <p className="mt-3 text-sm text-subtle font-mono">Querying FIRST.org EPSS telemetry...</p>
@@ -236,49 +299,84 @@ export function AdvisoryDetail() {
                 <span className="font-mono text-xs text-subtle">NIST NVD</span>
               </div>
 
-              {cvssMetrics?.vectorString ? (
-                <div className="mt-4 space-y-4">
-                  <div>
-                    <p className="text-xs text-subtle font-mono uppercase tracking-wider">Vector String</p>
-                    <code className="mt-1 block rounded bg-raised p-2.5 font-mono text-xs text-ink break-all border border-line">
-                      {cvssMetrics.vectorString}
-                    </code>
-                  </div>
+              {cvssMetrics?.vectorString ? (() => {
+                const parsed = parseCvssVector(cvssMetrics.vectorString);
+                const av = cvssMetrics.attackVector || parsed.attackVector;
+                const ac = cvssMetrics.attackComplexity || parsed.attackComplexity;
+                const pr = cvssMetrics.privilegesRequired || parsed.privilegesRequired;
+                const ui = cvssMetrics.userInteraction || parsed.userInteraction;
+                const sc = cvssMetrics.scope || parsed.scope;
+                const c = cvssMetrics.confidentialityImpact || parsed.confidentialityImpact;
+                const i = cvssMetrics.integrityImpact || parsed.integrityImpact;
+                const a = cvssMetrics.availabilityImpact || parsed.availabilityImpact;
 
-                  <div className="flex flex-wrap gap-2 pt-1 text-xs font-mono">
-                    {cvssMetrics.attackVector && (
-                      <span className="rounded border border-line px-2.5 py-1 text-ink bg-raised/40">
-                        Vector: <strong className="text-accent">{cvssMetrics.attackVector}</strong>
-                      </span>
-                    )}
-                    {cvssMetrics.attackComplexity && (
-                      <span className="rounded border border-line px-2.5 py-1 text-ink bg-raised/40">
-                        Complexity: <strong className="text-ink">{cvssMetrics.attackComplexity}</strong>
-                      </span>
-                    )}
-                    {cvssMetrics.privilegesRequired && (
-                      <span className="rounded border border-line px-2.5 py-1 text-ink bg-raised/40">
-                        Privileges: <strong className="text-ink">{cvssMetrics.privilegesRequired}</strong>
-                      </span>
-                    )}
-                    {cvssMetrics.userInteraction && (
-                      <span className="rounded border border-line px-2.5 py-1 text-ink bg-raised/40">
-                        Interaction: <strong className="text-ink">{cvssMetrics.userInteraction}</strong>
-                      </span>
-                    )}
-                    {cvssMetrics.scope && (
-                      <span className="rounded border border-line px-2.5 py-1 text-ink bg-raised/40">
-                        Scope: <strong className="text-ink">{cvssMetrics.scope}</strong>
-                      </span>
-                    )}
+                return (
+                  <div className="mt-4 space-y-4">
+                    <div>
+                      <p className="text-xs text-subtle font-mono uppercase tracking-wider">Vector String</p>
+                      <code className="mt-1 block rounded bg-raised p-2.5 font-mono text-xs text-ink break-all border border-line">
+                        {cvssMetrics.vectorString}
+                      </code>
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-2 pt-1 sm:grid-cols-4 text-xs font-mono">
+                      {av && (
+                        <div className="rounded border border-line bg-raised/40 p-2">
+                          <div className="text-[10px] uppercase text-subtle">Attack Vector</div>
+                          <div className="mt-0.5 font-semibold text-accent">{av}</div>
+                        </div>
+                      )}
+                      {ac && (
+                        <div className="rounded border border-line bg-raised/40 p-2">
+                          <div className="text-[10px] uppercase text-subtle">Complexity</div>
+                          <div className="mt-0.5 font-semibold text-ink">{ac}</div>
+                        </div>
+                      )}
+                      {pr && (
+                        <div className="rounded border border-line bg-raised/40 p-2">
+                          <div className="text-[10px] uppercase text-subtle">Privileges</div>
+                          <div className="mt-0.5 font-semibold text-ink">{pr}</div>
+                        </div>
+                      )}
+                      {ui && (
+                        <div className="rounded border border-line bg-raised/40 p-2">
+                          <div className="text-[10px] uppercase text-subtle">Interaction</div>
+                          <div className="mt-0.5 font-semibold text-ink">{ui}</div>
+                        </div>
+                      )}
+                      {sc && (
+                        <div className="rounded border border-line bg-raised/40 p-2">
+                          <div className="text-[10px] uppercase text-subtle">Scope</div>
+                          <div className="mt-0.5 font-semibold text-ink">{sc}</div>
+                        </div>
+                      )}
+                      {c && (
+                        <div className="rounded border border-line bg-raised/40 p-2">
+                          <div className="text-[10px] uppercase text-subtle">Confidentiality</div>
+                          <div className={`mt-0.5 font-semibold ${c.toUpperCase() === 'HIGH' ? 'text-critical' : 'text-ink'}`}>{c}</div>
+                        </div>
+                      )}
+                      {i && (
+                        <div className="rounded border border-line bg-raised/40 p-2">
+                          <div className="text-[10px] uppercase text-subtle">Integrity</div>
+                          <div className={`mt-0.5 font-semibold ${i.toUpperCase() === 'HIGH' ? 'text-critical' : 'text-ink'}`}>{i}</div>
+                        </div>
+                      )}
+                      {a && (
+                        <div className="rounded border border-line bg-raised/40 p-2">
+                          <div className="text-[10px] uppercase text-subtle">Availability</div>
+                          <div className={`mt-0.5 font-semibold ${a.toUpperCase() === 'HIGH' ? 'text-critical' : 'text-ink'}`}>{a}</div>
+                        </div>
+                      )}
+                    </div>
                   </div>
-                </div>
-              ) : metricsLoading ? (
+                );
+              })() : metricsLoading ? (
                 <p className="mt-3 text-sm text-subtle font-mono">Querying NVD vector string...</p>
               ) : (
                 <div className="mt-4">
                   <p className="font-mono text-xs text-muted">
-                    Base Score: {advisory.cvss} ({advisory.severity})
+                    Base Score: {effectiveCvss.toFixed(1)} ({effectiveSeverity})
                   </p>
                   <p className="mt-1 text-xs text-subtle">
                     Detailed metric breakdown available directly on NIST NVD.

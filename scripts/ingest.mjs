@@ -1803,7 +1803,8 @@ const ENTITY_TERMS = [
   'bitget', 'kiteworks', 'netscaler', 'citrix', 'wireshark', 'snowflake',
   'chatgpt', 'elementor', 'sharepoint', 'fortinet', 'palo alto', 'ivanti',
   'sonicwall', 'cisco', 'crowdstrike', 'vmware', 'salesforce', 'qualys',
-  'telegram', 'ransomhub', 'lockbit', 'akira', 'qilin', 'blacksuit'
+  'telegram', 'ransomhub', 'lockbit', 'akira', 'qilin', 'blacksuit',
+  'coregraphics', 'core graphics', 'safari', 'webkit', 'ios'
 ];
 
 const STOP_WORDS = new Set([
@@ -1886,7 +1887,18 @@ function deduplicateAndTrimFeed(articles) {
         break;
       }
 
-      // 4) Overlap of 2+ significant keywords within 3 days
+      // 4) Normalized component / zero-day matching (e.g. Apple CoreGraphics zero-day coverage)
+      const normFull = fullText.replace(/[^a-z0-9]/g, '');
+      const normExisting = existingFull.replace(/[^a-z0-9]/g, '');
+      if (
+        (normFull.includes('coregraphics') && normExisting.includes('coregraphics')) ||
+        (normFull.includes('apple') && normFull.includes('zeroday') && normExisting.includes('apple') && normExisting.includes('zeroday') && timeDiffDays <= 3)
+      ) {
+        duplicateOf = existing;
+        break;
+      }
+
+      // 5) Overlap of 2+ significant keywords within 3 days
       const existingKw = new Set(getTitleKeywords(existing.title || ''));
       const overlap = keywords.filter(k => existingKw.has(k));
       if (overlap.length >= 2 && timeDiffDays <= 3) {

@@ -78,7 +78,7 @@ export function NewsArticle() {
               <span className="text-accent">{brief.category}</span>
               <span className="text-subtle">·</span>
               <time dateTime={brief.publishedAt} className="text-muted">
-                {shortDate(brief.publishedAt)}, {clockTime(brief.publishedAt)} UTC
+                {`${shortDate(brief.publishedAt)}, ${clockTime(brief.publishedAt)} UTC`}
               </time>
               <span className="text-subtle">({timeAgo(brief.publishedAt)})</span>
             </div>

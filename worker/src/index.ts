@@ -88,7 +88,8 @@ const ENTITY_TERMS = [
   'bitget', 'kiteworks', 'netscaler', 'citrix', 'wireshark', 'snowflake',
   'chatgpt', 'elementor', 'sharepoint', 'fortinet', 'palo alto', 'ivanti',
   'sonicwall', 'cisco', 'crowdstrike', 'vmware', 'salesforce', 'qualys',
-  'telegram', 'ransomhub', 'lockbit', 'akira', 'qilin', 'blacksuit'
+  'telegram', 'ransomhub', 'lockbit', 'akira', 'qilin', 'blacksuit',
+  'coregraphics', 'core graphics', 'safari', 'webkit', 'ios'
 ];
 
 const STOP_WORDS = new Set([
@@ -169,7 +170,18 @@ function deduplicateFeed(articles: any[]): ArticleItem[] {
         break;
       }
 
-      // 4) Overlap of 2+ significant keywords within 3 days
+      // 4) Normalized component / zero-day matching (e.g. Apple CoreGraphics zero-day coverage)
+      const normFull = fullText.replace(/[^a-z0-9]/g, '');
+      const normExisting = existingFull.replace(/[^a-z0-9]/g, '');
+      if (
+        (normFull.includes('coregraphics') && normExisting.includes('coregraphics')) ||
+        (normFull.includes('apple') && normFull.includes('zeroday') && normExisting.includes('apple') && normExisting.includes('zeroday') && timeDiffDays <= 3)
+      ) {
+        duplicateOf = existing;
+        break;
+      }
+
+      // 5) Overlap of 2+ significant keywords within 3 days
       const existingKw = new Set(getTitleKeywords(existing.title || existing.headline || ''));
       const overlap = keywords.filter(k => existingKw.has(k));
       if (overlap.length >= 2 && timeDiffDays <= 3) {
@@ -256,7 +268,7 @@ async function getKevAdvisories(full: boolean = true): Promise<KevVulnerability[
     : (cachedRecentKev.length > 0 ? cachedRecentKev : SEED_KEV_ADVISORIES);
 }
 
-const epssCache = new Map<string, { epss: number; percentile: number; cachedAt: number }>();
+const epssCache = new Map<string, { epss: number; percentile: number; delta7d: number | null; date?: string; cachedAt: number }>();
 async function getEpssScore(cve: string) {
   const now = Date.now();
   const cached = epssCache.get(cve);
@@ -264,15 +276,19 @@ async function getEpssScore(cve: string) {
     return cached;
   }
   try {
-    const res = await fetch(`https://api.first.org/data/v1/epss?cve=${cve}`);
+    const res = await fetch(`https://api.first.org/data/v1/epss?cve=${cve}&scope=time-series`);
     if (res.ok) {
       const json: any = await res.json();
       const item = json.data?.[0];
       if (item && item.epss) {
+        const epssVal = parseFloat(item.epss);
+        const ts = item['time-series'];
+        const epss7d = ts && ts.length > 0 ? parseFloat(ts[Math.min(6, ts.length - 1)].epss) : epssVal;
         const result = {
           cve,
-          epss: parseFloat(item.epss),
+          epss: epssVal,
           percentile: parseFloat(item.percentile),
+          delta7d: Number((epssVal - epss7d).toFixed(4)),
           date: item.date,
           cachedAt: now,
         };
@@ -283,7 +299,7 @@ async function getEpssScore(cve: string) {
   } catch (err) {
     console.warn('EPSS fetch error:', err);
   }
-  return { cve, epss: null, percentile: null };
+  return { cve, epss: null, percentile: null, delta7d: null };
 }
 
 const cveMetricsCache = new Map<string, any>();
@@ -309,12 +325,17 @@ async function getCveMetrics(cve: string) {
           vectorString: best.vectorString,
           version: best.version,
           score: best.baseScore,
+          baseScore: best.baseScore,
           severity: best.baseSeverity,
+          baseSeverity: best.baseSeverity,
           attackVector: best.attackVector,
           attackComplexity: best.attackComplexity,
           privilegesRequired: best.privilegesRequired,
           userInteraction: best.userInteraction,
           scope: best.scope,
+          confidentialityImpact: best.confidentialityImpact,
+          integrityImpact: best.integrityImpact,
+          availabilityImpact: best.availabilityImpact,
           cachedAt: now,
         };
         cveMetricsCache.set(cve, result);
@@ -325,6 +346,43 @@ async function getCveMetrics(cve: string) {
     console.warn('NVD fetch error:', err);
   }
   return { cve, vectorString: null };
+}
+
+function isKnownSpaRoute(pathname: string, articlesList: ArticleItem[], advisoriesList: KevVulnerability[]): boolean {
+  const clean = pathname.replace(/\/+$/, '') || '/';
+  const STATIC_ROUTES = new Set([
+    '/',
+    '/news',
+    '/advisories',
+    '/download',
+    '/about',
+    '/privacy',
+    '/terms',
+    '/data-privacy',
+    '/account-deletion',
+    '/publishers',
+    '/contact',
+  ]);
+
+  if (STATIC_ROUTES.has(clean)) return true;
+
+  if (clean.startsWith('/news/')) {
+    const slug = clean.slice('/news/'.length).toLowerCase();
+    return articlesList.some(
+      a => (a.slug && a.slug.toLowerCase() === slug) ||
+           (a.aliases && a.aliases.some((al: string) => al.toLowerCase() === slug))
+    );
+  }
+
+  if (clean.startsWith('/advisories/')) {
+    const slug = clean.slice('/advisories/'.length).toLowerCase();
+    return advisoriesList.some(
+      a => (a.cveID && a.cveID.toLowerCase() === slug) ||
+           (a.cveID && slug.includes(a.cveID.toLowerCase()))
+    );
+  }
+
+  return false;
 }
 
 async function findKevAdvisory(slug: string): Promise<KevVulnerability | undefined> {
@@ -507,34 +565,6 @@ export default {
         });
       }
 
-      // Static Assets & Single Page Application (SPA) Routing via Cloudflare Workers Assets
-      if (env.ASSETS) {
-        let assetRes = await env.ASSETS.fetch(request);
-        if (assetRes.status === 404) {
-          assetRes = await env.ASSETS.fetch(new Request(new URL('/', request.url), request));
-        }
-
-        const contentType = assetRes.headers.get('content-type') || '';
-        if (assetRes.status === 200 && contentType.includes('text/html')) {
-          const rawHtml = await assetRes.text();
-          const [articles, advisories] = await Promise.all([getArticles(), getKevAdvisories()]);
-          const enrichedHtml = injectMetaTags(rawHtml, url.pathname, articles, advisories);
-          return new Response(enrichedHtml, {
-            status: 200,
-            headers: {
-              'Content-Type': 'text/html; charset=utf-8',
-              'Cache-Control': 'public, max-age=60, s-maxage=300',
-              ...CORS_HEADERS,
-            },
-          });
-        }
-
-        if (assetRes.status !== 404) {
-          return assetRes;
-        }
-      }
-
-
       // 1. Health check
       if (url.pathname === '/health' || url.pathname === '/api/health') {
         return jsonResponse({
@@ -586,7 +616,7 @@ export default {
         });
       }
 
-      // 3. Get Active Tokens (Called by scripts/ingest.mjs during 6-hour cron)
+      // 3. Get Active Tokens (Called by scripts/ingest.mjs during cron)
       // GET /api/push-tokens
       if (
         (url.pathname === '/api/push-tokens' || url.pathname === '/push-tokens') &&
@@ -700,7 +730,7 @@ export default {
         return jsonResponse({ success: true, message: 'Recorded sent notification' });
       }
 
-      // Manual / Webhook Ingestion Dispatcher
+      // 7. Manual / Webhook Ingestion Dispatcher
       if (url.pathname === '/api/trigger-ingest') {
         if (!isAuthorized(request, env)) {
           return errorResponse('Unauthorized', 401);
@@ -733,6 +763,43 @@ export default {
 
         const errText = await ghRes.text();
         return errorResponse(`GitHub API error (${ghRes.status}): ${errText}`, 502);
+      }
+
+      // If an unrecognized /api/ route is requested, return 404 JSON (never HTML)
+      if (url.pathname.startsWith('/api/')) {
+        return errorResponse('API endpoint not found', 404);
+      }
+
+      // Static Assets & Single Page Application (SPA) Routing via Cloudflare Workers Assets
+      if (env.ASSETS) {
+        let assetRes = await env.ASSETS.fetch(request);
+        if (assetRes.status === 404) {
+          // If request is for a file asset with extension (e.g. .js, .css, .png, etc.), do NOT fallback to index.html!
+          if (url.pathname.match(/\.[a-zA-Z0-9]+$/)) {
+            return new Response('Not found', { status: 404 });
+          }
+          assetRes = await env.ASSETS.fetch(new Request(new URL('/', request.url), request));
+        }
+
+        const contentType = assetRes.headers.get('content-type') || '';
+        if (assetRes.status === 200 && contentType.includes('text/html')) {
+          const rawHtml = await assetRes.text();
+          const [articles, advisories] = await Promise.all([getArticles(), getKevAdvisories()]);
+          const enrichedHtml = injectMetaTags(rawHtml, url.pathname, articles, advisories);
+          const isRouteValid = isKnownSpaRoute(url.pathname, articles, advisories);
+          return new Response(enrichedHtml, {
+            status: isRouteValid ? 200 : 404,
+            headers: {
+              'Content-Type': 'text/html; charset=utf-8',
+              'Cache-Control': isRouteValid ? 'public, max-age=60, s-maxage=300' : 'no-cache, no-store',
+              ...CORS_HEADERS,
+            },
+          });
+        }
+
+        if (assetRes.status !== 404) {
+          return assetRes;
+        }
       }
 
       return errorResponse('Not found', 404);

@@ -55,20 +55,19 @@ export function Home() {
                 <dt className="text-xs text-subtle">KEVs added, last 7 days</dt>
                 <dd className="mt-1 font-mono text-2xl font-medium text-ink">{addedThisWeek}</dd>
               </div>
-              {nextDue &&
-              <div>
+              {nextDue && (
+                <div>
                   <dt className="text-xs text-subtle">Next federal deadline</dt>
-                  <dd className="mt-1">
+                  <dd className="mt-1 flex items-baseline gap-2.5">
                     <Link
-                    to={`/advisories/${nextDue.slug}`}
-                    className="font-mono text-2xl font-medium text-accent hover:underline">
-                    
+                      to={`/advisories/${nextDue.slug}`}
+                      className="font-mono text-2xl font-medium text-accent hover:underline">
                       {nextDue.dueDate.slice(5)}
                     </Link>
-                    <span className="ml-2 font-mono text-xs text-muted">{nextDue.cve}</span>
+                    <span className="font-mono text-xs text-muted">({nextDue.cve})</span>
                   </dd>
                 </div>
-              }
+              )}
             </dl>
           </div>
           <PhoneMockup />

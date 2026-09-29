@@ -4,6 +4,7 @@ import { PageIntro } from '../components/PageIntro';
 import { AdvisoryTable } from '../components/AdvisoryTable';
 import { useLiveAdvisories } from '../data/useLiveAdvisories';
 import { daysUntil } from '../utils/date';
+import { getCvssSeverity } from '../utils/advisory';
 import { Seo } from '../components/Seo';
 
 type SortKey = 'added' | 'due';
@@ -12,6 +13,7 @@ const PAGE_SIZE = 25;
 export function Advisories() {
   const [query, setQuery] = useState('');
   const [ransomwareOnly, setRansomwareOnly] = useState(false);
+  const [dueThisWeekOnly, setDueThisWeekOnly] = useState(false);
   const [vendorFilter, setVendorFilter] = useState('ALL');
   const [severityFilter, setSeverityFilter] = useState('ALL');
   const [sort, setSort] = useState<SortKey>('added');
@@ -20,6 +22,10 @@ export function Advisories() {
 
   const openCount = advisories.filter((a) => daysUntil(a.dueDate) >= 0).length;
   const overdueCount = advisories.length - openCount;
+  const dueThisWeekCount = advisories.filter((a) => {
+    const d = daysUntil(a.dueDate);
+    return d >= 0 && d <= 7;
+  }).length;
 
   const topVendors = useMemo(() => {
     const counts: Record<string, number> = {};
@@ -38,8 +44,17 @@ export function Advisories() {
     const q = query.trim().toLowerCase();
     return advisories
       .filter((a) => (ransomwareOnly ? a.ransomware : true))
+      .filter((a) => {
+        if (!dueThisWeekOnly) return true;
+        const d = daysUntil(a.dueDate);
+        return d >= 0 && d <= 7;
+      })
       .filter((a) => (vendorFilter === 'ALL' ? true : a.vendor.toLowerCase() === vendorFilter.toLowerCase()))
-      .filter((a) => (severityFilter === 'ALL' ? true : a.severity.toLowerCase() === severityFilter.toLowerCase()))
+      .filter((a) => {
+        if (severityFilter === 'ALL') return true;
+        const effectiveSev = getCvssSeverity(a.cvss, a.severity).toUpperCase();
+        return effectiveSev === severityFilter.toUpperCase();
+      })
       .filter((a) =>
         q
           ? [a.cve, a.vendor, a.product, a.name, a.description].some((v) =>
@@ -50,13 +65,14 @@ export function Advisories() {
       .sort((a, b) =>
         sort === 'added' ? b.dateAdded.localeCompare(a.dateAdded) : a.dueDate.localeCompare(b.dueDate)
       );
-  }, [advisories, query, ransomwareOnly, vendorFilter, severityFilter, sort]);
+  }, [advisories, query, ransomwareOnly, dueThisWeekOnly, vendorFilter, severityFilter, sort]);
 
   const ransomwareCount = advisories.filter((a) => a.ransomware).length;
   const totalPages = Math.max(1, Math.ceil(results.length / PAGE_SIZE));
   const safePage = Math.min(page, totalPages);
   const startIndex = (safePage - 1) * PAGE_SIZE;
   const paginatedAdvisories = results.slice(startIndex, startIndex + PAGE_SIZE);
+
 
   return (
     <>
@@ -106,6 +122,18 @@ export function Advisories() {
               <label className="inline-flex cursor-pointer items-center gap-2 text-sm text-muted">
                 <input
                   type="checkbox"
+                  checked={dueThisWeekOnly}
+                  onChange={(e) => {
+                    setDueThisWeekOnly(e.target.checked);
+                    setPage(1);
+                  }}
+                  className="h-4 w-4 rounded border-line bg-surface accent-[rgb(var(--accent))]" />
+                Due this week {dueThisWeekCount > 0 ? `(${dueThisWeekCount})` : ''}
+              </label>
+
+              <label className="inline-flex cursor-pointer items-center gap-2 text-sm text-muted">
+                <input
+                  type="checkbox"
                   checked={ransomwareOnly}
                   onChange={(e) => {
                     setRansomwareOnly(e.target.checked);
@@ -114,6 +142,7 @@ export function Advisories() {
                   className="h-4 w-4 rounded border-line bg-surface accent-[rgb(var(--accent))]" />
                 Known ransomware use {ransomwareCount > 0 ? `(${ransomwareCount})` : ''}
               </label>
+
               <label className="inline-flex items-center gap-2 text-sm text-muted">
                 Sort
                 <select
@@ -161,10 +190,12 @@ export function Advisories() {
                 <option value="ALL">All Severities</option>
                 <option value="CRITICAL">Critical (CVSS 9.0–10.0)</option>
                 <option value="HIGH">High (CVSS 7.0–8.9)</option>
+                <option value="MEDIUM">Medium (CVSS 4.0–6.9)</option>
+                <option value="LOW">Low (CVSS &lt; 4.0)</option>
               </select>
             </label>
 
-            {(vendorFilter !== 'ALL' || severityFilter !== 'ALL' || ransomwareOnly || query) && (
+            {(vendorFilter !== 'ALL' || severityFilter !== 'ALL' || ransomwareOnly || dueThisWeekOnly || query) && (
               <button
                 type="button"
                 onClick={() => {
@@ -172,6 +203,7 @@ export function Advisories() {
                   setVendorFilter('ALL');
                   setSeverityFilter('ALL');
                   setRansomwareOnly(false);
+                  setDueThisWeekOnly(false);
                   setPage(1);
                 }}
                 className="text-xs text-accent hover:underline">
@@ -179,6 +211,7 @@ export function Advisories() {
               </button>
             )}
           </div>
+
         </div>
 
         <div className="mb-3 flex items-center justify-between text-xs font-mono text-subtle" aria-live="polite">

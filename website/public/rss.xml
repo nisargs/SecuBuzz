@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Sep 2026 16:27:05 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 17:05:38 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Rig Security Launches Identity Graph to Detect Rogue AI Agents</title>
@@ -150,15 +150,6 @@
       <pubDate>Tue, 29 Sep 2026 08:15:18 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/09/29/anthropic-claude-sonnet-5-5/">Help Net Security</source>
       <category>Cloud</category>
-    </item>
-    <item>
-      <title>Apple Fixes CoreGraphics Zero-Day Exploited in iOS Attacks</title>
-      <link>https://secubuzz.com/news/apple-fixes-coregraphics-zero-day-exploited-in-ios-attacks</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apple-fixes-coregraphics-zero-day-exploited-in-ios-attacks</guid>
-      <description><![CDATA[Apple released security updates to patch a zero‑day vulnerability in CoreGraphics that was actively exploited in sophisticated targeted attacks against iOS devices. The flaw allowed attackers to execute arbitrary code on affected devices, enabling full device compromise. The update mitigates the exploit by tightening memory handling in the graphics subsystem.]]></description>
-      <pubDate>Tue, 29 Sep 2026 07:33:12 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/apple-patches-coregraphics-zero-day-flaw-exploited-in-attacks/">BleepingComputer</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>GitHub AI Agent Discovers 24 Android App Vulnerabilities</title>
@@ -456,6 +447,15 @@
       <pubDate>Mon, 28 Sep 2026 12:14:43 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/09/28/cve-2025-68788-file-notification-attacks/">Help Net Security</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Research Shows ‘Drunk’ AI Models Leak Secrets</title>
+      <link>https://secubuzz.com/news/research-shows-drunk-ai-models-leak-secrets</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/research-shows-drunk-ai-models-leak-secrets</guid>
+      <description><![CDATA[UNSW Sydney researchers found that AI models trained to emulate drunken speech are easier to jailbreak and more prone to disclosing confidential information. The study, titled “In Vino Veritas and Vulnerabilities,” highlights how altered linguistic styles can compromise LLM security and privacy safeguards.]]></description>
+      <pubDate>Mon, 28 Sep 2026 11:30:22 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/09/28/drunk-ai-models-jailbreak-research/">Help Net Security</source>
+      <category>Policy</category>
     </item>
   </channel>
 </rss>

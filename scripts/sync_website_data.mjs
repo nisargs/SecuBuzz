@@ -19,8 +19,13 @@ const ENTITY_TERMS = [
   'bitget', 'kiteworks', 'netscaler', 'citrix', 'wireshark', 'snowflake',
   'chatgpt', 'elementor', 'sharepoint', 'fortinet', 'palo alto', 'ivanti',
   'sonicwall', 'cisco', 'crowdstrike', 'vmware', 'salesforce', 'qualys',
-  'telegram', 'ransomhub', 'lockbit', 'akira', 'qilin', 'blacksuit'
+  'telegram', 'ransomhub', 'lockbit', 'akira', 'qilin', 'blacksuit',
+  'coregraphics', 'core graphics', 'safari', 'webkit', 'ios'
 ];
+
+const CVE_SCORE_OVERRIDES = {
+  'CVE-2025-52691': 10.0,
+};
 
 const STOP_WORDS = new Set([
   'the', 'a', 'an', 'in', 'on', 'for', 'to', 'of', 'and', 'is', 'with', 'after', 'from',
@@ -163,7 +168,18 @@ async function syncNews() {
         break;
       }
 
-      // 4) Overlap of 2+ significant keywords within 3 days
+      // 4) Normalized component / zero-day matching (e.g. Apple CoreGraphics zero-day coverage)
+      const normFull = fullText.replace(/[^a-z0-9]/g, '');
+      const normExisting = existingFull.replace(/[^a-z0-9]/g, '');
+      if (
+        (normFull.includes('coregraphics') && normExisting.includes('coregraphics')) ||
+        (normFull.includes('apple') && normFull.includes('zeroday') && normExisting.includes('apple') && normExisting.includes('zeroday') && timeDiffDays <= 3)
+      ) {
+        duplicateOf = existing;
+        break;
+      }
+
+      // 5) Overlap of 2+ significant keywords within 3 days
       const existingKw = new Set(existing.keywords);
       const overlap = keywords.filter(k => existingKw.has(k));
       if (overlap.length >= 2 && timeDiffDays <= 3) {
@@ -180,6 +196,9 @@ async function syncNews() {
       if (!duplicateOf.aliases) duplicateOf.aliases = [];
       if (!duplicateOf.aliases.includes(rawSlug)) {
         duplicateOf.aliases.push(rawSlug);
+      }
+      if ((!duplicateOf.cves || duplicateOf.cves.length === 0) && cves.length > 0) {
+        duplicateOf.cves = cves;
       }
       continue;
     }
@@ -297,6 +316,9 @@ async function syncAdvisories() {
         : (item.cwe || '');
       const cleanCwe = rawCwe ? rawCwe.replace(/^(CWE[:\s-]+)+/i, 'CWE-').trim() : '—';
 
+      const cvss = CVE_SCORE_OVERRIDES[cve] ?? (typeof item.cvss === 'number' ? item.cvss : 9.8);
+      const severity = cvss >= 9.0 ? 'Critical' : (cvss >= 7.0 ? 'High' : (cvss >= 4.0 ? 'Medium' : 'Low'));
+
       return {
         cve,
         slug: cve.toLowerCase(),
@@ -305,8 +327,8 @@ async function syncAdvisories() {
         name: item.vulnerabilityName || cve,
         dateAdded: item.dateAdded || '',
         dueDate: item.dueDate || 'Immediate',
-        cvss: 9.8,
-        severity: isRansomware ? 'Critical' : 'High',
+        cvss,
+        severity,
         cwe: cleanCwe ? `CWE-${cleanCwe.replace(/^CWE-/i, '')}` : '—',
         ransomware: isRansomware,
         description: item.shortDescription || item.vulnerabilityName || '',

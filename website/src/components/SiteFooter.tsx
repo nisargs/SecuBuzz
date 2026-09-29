@@ -17,13 +17,25 @@ export function SiteFooter() {
         <nav key={group.heading} aria-label={group.heading}>
             <h2 className="text-sm font-semibold text-ink">{group.heading}</h2>
             <ul className="mt-4 space-y-2.5">
-              {group.links.map((link) =>
-            <li key={link.to}>
-                  <Link to={link.to} className="text-sm text-muted transition-colors duration-150 ease-out hover:text-ink">
-                    {link.label}
-                  </Link>
+              {group.links.map((link) => (
+                <li key={link.to}>
+                  {link.to.endsWith('.xml') ? (
+                    <a
+                      href={link.to}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-muted transition-colors duration-150 ease-out hover:text-ink">
+                      {link.label}
+                    </a>
+                  ) : (
+                    <Link
+                      to={link.to}
+                      className="text-sm text-muted transition-colors duration-150 ease-out hover:text-ink">
+                      {link.label}
+                    </Link>
+                  )}
                 </li>
-            )}
+              ))}
             </ul>
           </nav>
         )}

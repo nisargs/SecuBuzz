@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { advisories as initialAdvisories } from './advisories';
 import type { Advisory } from '../types/advisory';
+import { getCvssSeverity, CVE_SCORE_OVERRIDES } from '../utils/advisory';
 
 function transformKev(list: any[]): Advisory[] {
   return list.map(item => {
@@ -16,6 +17,9 @@ function transformKev(list: any[]): Advisory[] {
       : (item.cwe || '');
     const cleanCwe = rawCwe ? rawCwe.replace(/^(CWE[:\s-]+)+/i, 'CWE-').trim() : '—';
 
+    const cvss = CVE_SCORE_OVERRIDES[cve] ?? (typeof item.cvss === 'number' ? item.cvss : 9.8);
+    const severity = getCvssSeverity(cvss, isRansomware ? 'Critical' : 'High');
+
     return {
       cve,
       slug: cve.toLowerCase(),
@@ -24,8 +28,8 @@ function transformKev(list: any[]): Advisory[] {
       name: item.vulnerabilityName || cve,
       dateAdded: item.dateAdded || '',
       dueDate: item.dueDate || 'Immediate',
-      cvss: 9.8,
-      severity: isRansomware ? 'Critical' : 'High',
+      cvss,
+      severity,
       cwe: cleanCwe || '—',
       ransomware: isRansomware,
       description: item.shortDescription || item.vulnerabilityName || '',
