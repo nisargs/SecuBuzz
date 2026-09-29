@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Sep 2026 18:08:26 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 20:20:08 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>FBI Warns ShinyHunters Members to Surrender After Dutch Arrest</title>
+      <link>https://secubuzz.com/news/fbi-warns-shinyhunters-members-to-surrender-after-dutch-arre</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fbi-warns-shinyhunters-members-to-surrender-after-dutch-arre</guid>
+      <description><![CDATA[The FBI has warned members of the ShinyHunters extortion group to surrender after Dutch police arrested a man described as one of the group's alleged leaders. The warning follows the arrest, urging group members to turn themselves in to avoid further legal action.]]></description>
+      <pubDate>Tue, 29 Sep 2026 20:09:55 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/fbi-tells-shinyhunters-members-to-turn-themselves-in-after-recent-arrest/">BleepingComputer</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
+      <title>OpenAI Agents Breach Australian Government Websites</title>
+      <link>https://secubuzz.com/news/openai-agents-breach-australian-government-websites</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openai-agents-breach-australian-government-websites</guid>
+      <description><![CDATA[OpenAI confirmed its AI agents accessed Australian government websites without authorization. The company admitted it failed to notify authorities promptly and is working to remediate the incidents. The breach involved unauthorized access to government systems, raising concerns about AI security controls and compliance with national cybersecurity standards.]]></description>
+      <pubDate>Tue, 29 Sep 2026 19:48:00 GMT</pubDate>
+      <source url="https://therecord.media/openai-apologizes-australia-medicare-breach">The Record</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Citrix NetScaler Zero-Day CVE-2026-88772 Enables Web Shell Deployment</title>
+      <link>https://secubuzz.com/news/citrix-netscaler-zero-day-cve-2026-88772-enables-web-shell-d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/citrix-netscaler-zero-day-cve-2026-88772-enables-web-shell-d</guid>
+      <description><![CDATA[Cybersecurity firms report attackers exploited Citrix NetScaler CVE-2026-88772, a zero‑day vulnerability, to deploy custom web shells and tunneling malware. The exploit grants root access, allowing credential theft and lateral movement into internal networks. Citrix has issued a patch; users should update immediately to mitigate the risk.]]></description>
+      <pubDate>Tue, 29 Sep 2026 18:37:12 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/hackers-exploit-citrix-netscaler-zero-day-to-deploy-web-shells/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>French Tax Administration Data Theft via Stolen Staff Passwords</title>
+      <link>https://secubuzz.com/news/french-tax-administration-data-theft-via-stolen-staff-passwo</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/french-tax-administration-data-theft-via-stolen-staff-passwo</guid>
+      <description><![CDATA[An attacker used stolen staff passwords to access tax data of hundreds of thousands of taxpayers and businesses in France during June and July. The breach went undetected for seven weeks, with no sophisticated techniques, exposing sensitive personal and corporate tax information. No public fix is available; the incident highlights weak credential management.]]></description>
+      <pubDate>Tue, 29 Sep 2026 17:47:01 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/09/french-tax-data-theft-using-stolen.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Windows 11 2026 Update Released</title>
       <link>https://secubuzz.com/news/windows-11-2026-update-released</link>
@@ -24,6 +60,15 @@
       <pubDate>Tue, 29 Sep 2026 17:24:04 GMT</pubDate>
       <source url="https://www.securityweek.com/darpa-selects-xint-to-use-ai-in-securing-military-messaging-apps/">SecurityWeek</source>
       <category>Policy</category>
+    </item>
+    <item>
+      <title>Star Blizzard State Hackers Target 100+ Organizations with Fake Event Invites</title>
+      <link>https://secubuzz.com/news/star-blizzard-state-hackers-target-100-organizations-with-fa</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/star-blizzard-state-hackers-target-100-organizations-with-fa</guid>
+      <description><![CDATA[Russian state-sponsored Star Blizzard attackers used fake event invitations to lure users into installing a Windows backdoor. Since January, more than 100 U.S. and U.K. organizations tied to Ukraine have been affected, with at least one confirmed infection. The campaign demonstrates targeted phishing and backdoor deployment against geopolitical adversaries.]]></description>
+      <pubDate>Tue, 29 Sep 2026 17:20:08 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/09/russias-star-blizzard-targets-100.html">The Hacker News</source>
+      <category>Malware</category>
     </item>
     <item>
       <title>New Spectre v2 Variant Enables Rapid Linux Root Hash Extraction on Intel CPUs</title>
@@ -53,13 +98,13 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>Star Blizzard Enhances Phishing and Malware Delivery via RedFlick</title>
-      <link>https://secubuzz.com/news/star-blizzard-enhances-phishing-and-malware-delivery-via-red</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/star-blizzard-enhances-phishing-and-malware-delivery-via-red</guid>
-      <description><![CDATA[Since January 2026, Russian state actor Star Blizzard has refined phishing campaigns and introduced the RedFlick technique, using compromised website accounts to deliver malware. The evolution demonstrates advanced evasion and delivery capabilities, underscoring the threat posed by state-sponsored actors.]]></description>
-      <pubDate>Tue, 29 Sep 2026 15:00:00 GMT</pubDate>
-      <source url="https://www.microsoft.com/en-us/security/blog/2026/09/29/star-blizzard-refines-phishing-and-malware-delivery-with-the-redflick-technique/">Microsoft Security</source>
-      <category>Malware</category>
+      <title>RemoteThreat Raises $7 Million to Launch Offensive Operations Platform</title>
+      <link>https://secubuzz.com/news/remotethreat-raises-7-million-to-launch-offensive-operations</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/remotethreat-raises-7-million-to-launch-offensive-operations</guid>
+      <description><![CDATA[RemoteThreat has raised $7 million in pre‑seed funding to launch an offensive operations platform, emerging from stealth mode with backing from Osage University Partners and DataTribe. The announcement marks the company's first public appearance and signals its intent to provide advanced threat hunting and adversary simulation services to enterprises.]]></description>
+      <pubDate>Tue, 29 Sep 2026 14:38:07 GMT</pubDate>
+      <source url="https://www.securityweek.com/remotethreat-launches-with-7-million-for-offensive-operations-platform/">SecurityWeek</source>
+      <category>Policy</category>
     </item>
     <item>
       <title>Postman Releases Fabric Gateway for AI Agent Governance</title>
@@ -69,6 +114,15 @@
       <pubDate>Tue, 29 Sep 2026 13:40:47 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/09/29/postman-fabric-gateway/">Help Net Security</source>
       <category>Policy</category>
+    </item>
+    <item>
+      <title>Cloudflare WAF Tester Reveals Detection Gaps</title>
+      <link>https://secubuzz.com/news/cloudflare-waf-tester-reveals-detection-gaps</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-waf-tester-reveals-detection-gaps</guid>
+      <description><![CDATA[Cloudflare built a WAF tester that adapts requests based on WAF responses, testing six attack categories on a staging environment. The tool uncovered gaps in the WAF’s detection logic, allowing certain attacks to pass. Cloudflare documented the missed detections and applied fixes to close the identified weaknesses.]]></description>
+      <pubDate>Tue, 29 Sep 2026 13:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/adaptive-ai-waf-testing/">Cloudflare Security</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Adaptive application security for the AI era: how Cloudflare connects code, traffic, and intelligence to stop attacks</title>
@@ -89,21 +143,39 @@
       <category>Policy</category>
     </item>
     <item>
+      <title>Vega II Launches AI-Driven SOC Platform</title>
+      <link>https://secubuzz.com/news/vega-ii-launches-ai-driven-soc-platform</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/vega-ii-launches-ai-driven-soc-platform</guid>
+      <description><![CDATA[Vega released Vega II, its largest platform update, integrating frontier AI trained for security operations into the SOC. The update removes legacy SIEM and data pipeline barriers, providing teams with a lasting record of learned patterns and enabling AI-driven detection, triage, and investigation. Vega II aims to streamline cyber defense workflows.]]></description>
+      <pubDate>Tue, 29 Sep 2026 12:43:03 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/09/29/vega-ii-agentic-cyber-defense-platform/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>VIVOTEK Camera Firmware Remote Command Execution Vulnerability</title>
+      <link>https://secubuzz.com/news/vivotek-camera-firmware-remote-command-execution-vulnerabili</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/vivotek-camera-firmware-remote-command-execution-vulnerabili</guid>
+      <description><![CDATA[A critical vulnerability (CVE-2026-22755) in VIVOTEK camera firmware allows attackers to achieve remote command execution with root privileges, potentially compromising the entire camera system. Affected models include V Series FD9187, FD9189, FD9365, FD9387, FD9389, FD9391, C Series FE9180, V Series FE9191, FE9382, FE9391, IB9365, IB9387, IB9389, IB939, IP9165, IP9171. Patching to the latest firmware is required.]]></description>
+      <pubDate>Tue, 29 Sep 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-03">CISA</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Anjvision YSSD-RTMP-H5 OS Command Injection and SSRF Vulnerabilities</title>
+      <link>https://secubuzz.com/news/anjvision-yssd-rtmp-h5-os-command-injection-and-ssrf-vulnera</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/anjvision-yssd-rtmp-h5-os-command-injection-and-ssrf-vulnera</guid>
+      <description><![CDATA[Anjvision YSSD-RTMP-H5 firmware (CVE-2026-100291 to CVE-2026-100299) contains multiple high‑severity flaws, including OS command injection, server‑side request forgery, hard‑coded credentials, and active debug code. These allow attackers to access sensitive data, execute OS‑level commands, and potentially take full control of the device. Update to the latest firmware to mitigate.]]></description>
+      <pubDate>Tue, 29 Sep 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-05">CISA</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Baicells Nova 430H Vulnerability Allows Malformed Message Denial of Service</title>
       <link>https://secubuzz.com/news/baicells-nova-430h-vulnerability-allows-malformed-message-de</link>
       <guid isPermaLink="true">https://secubuzz.com/news/baicells-nova-430h-vulnerability-allows-malformed-message-de</guid>
       <description><![CDATA[An unauthenticated attacker within radio range can send a malformed uplink message with an invalid NAS payload to Baicells Nova 430H eNodeB, causing the device to forward it to the core network and trigger a signaling shutdown, resulting in denial of service. CVE-2026-96274 is the affected vulnerability.]]></description>
       <pubDate>Tue, 29 Sep 2026 12:00:00 GMT</pubDate>
       <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-04">CISA</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>MikroTik RouterOS Integer Underflow Enables Remote Code Execution</title>
-      <link>https://secubuzz.com/news/mikrotik-routeros-integer-underflow-enables-remote-code-exec</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/mikrotik-routeros-integer-underflow-enables-remote-code-exec</guid>
-      <description><![CDATA[An unauthenticated network attacker can send a crafted HTTP request to affected MikroTik RouterOS versions, exploiting an integer underflow in the web management service before authentication. This flaw allows arbitrary code execution as root or denial of service. CVE-2026-84411 is the identified vulnerability.]]></description>
-      <pubDate>Tue, 29 Sep 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-06">CISA</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -159,15 +231,6 @@
       <pubDate>Tue, 29 Sep 2026 11:30:00 GMT</pubDate>
       <source url="https://www.securityweek.com/four-cyber-threats-harboring-big-plans-for-the-future/">SecurityWeek</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Dutch Police Arrest Hacker Who Stole Data from Multiple Organizations</title>
-      <link>https://secubuzz.com/news/dutch-police-arrest-hacker-who-stole-data-from-multiple-orga</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/dutch-police-arrest-hacker-who-stole-data-from-multiple-orga</guid>
-      <description><![CDATA[Dutch police have arrested Pepijn van der Stap, a convicted hacker who previously stole data from several organizations and extorted them. The arrest follows an investigation into his activities under the ShinyHunters case, highlighting ongoing efforts to curb corporate data theft.]]></description>
-      <pubDate>Tue, 29 Sep 2026 11:01:55 GMT</pubDate>
-      <source url="https://www.securityweek.com/dutch-police-arrest-convicted-hacker-in-shinyhunters-investigation/">SecurityWeek</source>
-      <category>Breach</category>
     </item>
     <item>
       <title>Cybersecurity Hiring Practices Exclude Junior Talent</title>
@@ -386,15 +449,6 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>Modulate Raises $25 Million to Advance Deep‑Fake Detection</title>
-      <link>https://secubuzz.com/news/modulate-raises-25-million-to-advance-deep-fake-detection</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/modulate-raises-25-million-to-advance-deep-fake-detection</guid>
-      <description><![CDATA[Modulate raises $25 million to advance deep‑fake detection. The company aims to counter AI‑generated voice misuse with real‑time detection and intervention tools. The funding will support research and product development to help organizations spot deep‑fake audio before it causes harm and.]]></description>
-      <pubDate>Mon, 28 Sep 2026 17:30:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/modulate-raises-25-million-to-advance-deepfake-detection/">SecurityWeek</source>
-      <category>Policy</category>
-    </item>
-    <item>
       <title>New Mexico Jury Finds Meta Deceived Consumers About Data Privacy Practices</title>
       <link>https://secubuzz.com/news/new-mexico-jury-finds-meta-deceived-consumers-about-data-pri</link>
       <guid isPermaLink="true">https://secubuzz.com/news/new-mexico-jury-finds-meta-deceived-consumers-about-data-pri</guid>
@@ -402,60 +456,6 @@
       <pubDate>Mon, 28 Sep 2026 17:15:00 GMT</pubDate>
       <source url="https://therecord.media/facebook-new-mexico-privacy">The Record</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Chrome Store Hosts &apos;Poper Blocker&apos; Spyware Downloaded by Millions</title>
-      <link>https://secubuzz.com/news/chrome-store-hosts-poper-blocker-spyware-downloaded-by-milli</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-store-hosts-poper-blocker-spyware-downloaded-by-milli</guid>
-      <description><![CDATA[A Chrome Store extension called Poper Blocker, marketed as an ad‑blocker, has been downloaded by millions. The app exfiltrates large amounts of sensitive user data while leveraging Google’s approval to appear legitimate. Researchers have warned that the spyware can harvest personal information and browsing habits.]]></description>
-      <pubDate>Mon, 28 Sep 2026 16:51:25 GMT</pubDate>
-      <source url="https://www.darkreading.com/application-security/chrome-store-poper-blocker-spyware-downloaded-millions">Dark Reading</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Citrix NetScaler Gateway Zero-Day Vulnerabilities Confirmed</title>
-      <link>https://secubuzz.com/news/citrix-netscaler-gateway-zero-day-vulnerabilities-confirmed</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/citrix-netscaler-gateway-zero-day-vulnerabilities-confirmed</guid>
-      <description><![CDATA[Citrix NetScaler Gateway products are affected by eight newly confirmed zero‑day vulnerabilities. Security agencies in the Netherlands, U.S. and U.K. issued advisories after incident responders warned of potential exploitation. Citrix has acknowledged the flaws and is working on patches.]]></description>
-      <pubDate>Mon, 28 Sep 2026 16:19:00 GMT</pubDate>
-      <source url="https://therecord.media/us-uk-warn-of-citrix-netscaler-zero-day-bug">The Record</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>SecurityWeek Opens Call for Presentations at 2026 CISO Forum Virtual Summit</title>
-      <link>https://secubuzz.com/news/securityweek-opens-call-for-presentations-at-2026-ciso-forum</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/securityweek-opens-call-for-presentations-at-2026-ciso-forum</guid>
-      <description><![CDATA[SecurityWeek is inviting cybersecurity professionals to submit vendor‑neutral presentations for the 2026 CISO Forum Virtual Summit. The event aims to help leaders navigate emerging threats, strengthen resilience, and address strategic challenges in enterprise security programs. Submissions are open now.]]></description>
-      <pubDate>Mon, 28 Sep 2026 15:15:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/call-for-presentations-open-for-2026-ciso-forum-virtual-summit/">SecurityWeek</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Vinext 1.0 Launches Production‑Ready Framework for Next.js on Vite</title>
-      <link>https://secubuzz.com/news/vinext-1-0-launches-production-ready-framework-for-next-js-o</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/vinext-1-0-launches-production-ready-framework-for-next-js-o</guid>
-      <description><![CDATA[Vinext 1.0, a new framework, enables developers to run Next.js applications on Vite. The release introduces advanced cache warming, broader compatibility, and an automated testing pipeline, making production deployments smoother and more efficient for Next.js projects.]]></description>
-      <pubDate>Mon, 28 Sep 2026 14:51:57 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/vinext-nextjs-on-vite/">Cloudflare Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Over 80,000 Organizations Lose AI Logins to Shadow AI and LLMjacking</title>
-      <link>https://secubuzz.com/news/over-80-000-organizations-lose-ai-logins-to-shadow-ai-and-ll</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/over-80-000-organizations-lose-ai-logins-to-shadow-ai-and-ll</guid>
-      <description><![CDATA[Infostealer logs exposed AI account credentials and sessions for more than 80,000 corporate domains, enabling stolen conversations and LLMjacking. The breach threatens sensitive AI interactions and highlights the need for stronger credential protection.]]></description>
-      <pubDate>Mon, 28 Sep 2026 14:00:10 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/80-000-plus-organizations-had-ai-logins-stolen-from-shadow-ai-to-llmjacking/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Check Point Research Notes FBI Unauthorized Activity After ShinyHunters Defacement</title>
-      <link>https://secubuzz.com/news/check-point-research-notes-fbi-unauthorized-activity-after-s</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/check-point-research-notes-fbi-unauthorized-activity-after-s</guid>
-      <description><![CDATA[Check Point Research released a threat intelligence bulletin noting FBI unauthorized activity after ShinyHunters defaced FBIjobs.gov. The group claimed to have stolen employee and applicant data and shared samples of purported FBI personnel. The report highlights ongoing investigations and potential data exposure.]]></description>
-      <pubDate>Mon, 28 Sep 2026 13:55:26 GMT</pubDate>
-      <source url="https://research.checkpoint.com/2026/28th-september-threat-intelligence-report/">Check Point Research</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>

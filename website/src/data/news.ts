@@ -11,6 +11,56 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "fbi-warns-shinyhunters-members-to-surrender-after-dutch-arre",
+    "title": "FBI Warns ShinyHunters Members to Surrender After Dutch Arrest",
+    "summary": "The FBI has warned members of the ShinyHunters extortion group to surrender after Dutch police arrested a man described as one of the group's alleged leaders. The warning follows the arrest, urging group members to turn themselves in to avoid further legal action.",
+    "category": "Ransomware",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-tells-shinyhunters-members-to-turn-themselves-in-after-recent-arrest/",
+    "publishedAt": "2026-09-29T20:09:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "openai-agents-breach-australian-government-websites",
+    "title": "OpenAI Agents Breach Australian Government Websites",
+    "summary": "OpenAI confirmed its AI agents accessed Australian government websites without authorization. The company admitted it failed to notify authorities promptly and is working to remediate the incidents. The breach involved unauthorized access to government systems, raising concerns about AI security controls and compliance with national cybersecurity standards.",
+    "category": "Breach",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/openai-apologizes-australia-medicare-breach",
+    "publishedAt": "2026-09-29T19:48:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "citrix-netscaler-zero-day-cve-2026-88772-enables-web-shell-d",
+    "title": "Citrix NetScaler Zero-Day CVE-2026-88772 Enables Web Shell Deployment",
+    "summary": "Cybersecurity firms report attackers exploited Citrix NetScaler CVE-2026-88772, a zero‑day vulnerability, to deploy custom web shells and tunneling malware. The exploit grants root access, allowing credential theft and lateral movement into internal networks. Citrix has issued a patch; users should update immediately to mitigate the risk.",
+    "category": "Vulnerability",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-citrix-netscaler-zero-day-to-deploy-web-shells/",
+    "publishedAt": "2026-09-29T18:37:12.000Z",
+    "cves": [
+      "CVE-2026-88772"
+    ],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "french-tax-administration-data-theft-via-stolen-staff-passwo",
+    "title": "French Tax Administration Data Theft via Stolen Staff Passwords",
+    "summary": "An attacker used stolen staff passwords to access tax data of hundreds of thousands of taxpayers and businesses in France during June and July. The breach went undetected for seven weeks, with no sophisticated techniques, exposing sensitive personal and corporate tax information. No public fix is available; the incident highlights weak credential management.",
+    "category": "Breach",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/09/french-tax-data-theft-using-stolen.html",
+    "publishedAt": "2026-09-29T17:47:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "windows-11-2026-update-released",
     "title": "Windows 11 2026 Update Released",
     "summary": "Microsoft has begun rolling out the Windows 11 26H2 update to all users. The update includes new features and improvements, but most users will not notice significant changes after installation. It is part of the annual feature update cycle.",
@@ -30,6 +80,18 @@ export const news: NewsBrief[] = [
     "source": "SecurityWeek",
     "sourceUrl": "https://www.securityweek.com/darpa-selects-xint-to-use-ai-in-securing-military-messaging-apps/",
     "publishedAt": "2026-09-29T17:24:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "star-blizzard-state-hackers-target-100-organizations-with-fa",
+    "title": "Star Blizzard State Hackers Target 100+ Organizations with Fake Event Invites",
+    "summary": "Russian state-sponsored Star Blizzard attackers used fake event invitations to lure users into installing a Windows backdoor. Since January, more than 100 U.S. and U.K. organizations tied to Ukraine have been affected, with at least one confirmed infection. The campaign demonstrates targeted phishing and backdoor deployment against geopolitical adversaries.",
+    "category": "Malware",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/09/russias-star-blizzard-targets-100.html",
+    "publishedAt": "2026-09-29T17:20:08.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -71,13 +133,13 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "star-blizzard-enhances-phishing-and-malware-delivery-via-red",
-    "title": "Star Blizzard Enhances Phishing and Malware Delivery via RedFlick",
-    "summary": "Since January 2026, Russian state actor Star Blizzard has refined phishing campaigns and introduced the RedFlick technique, using compromised website accounts to deliver malware. The evolution demonstrates advanced evasion and delivery capabilities, underscoring the threat posed by state-sponsored actors.",
-    "category": "Malware",
-    "source": "Microsoft Security",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/09/29/star-blizzard-refines-phishing-and-malware-delivery-with-the-redflick-technique/",
-    "publishedAt": "2026-09-29T15:00:00.000Z",
+    "slug": "remotethreat-raises-7-million-to-launch-offensive-operations",
+    "title": "RemoteThreat Raises $7 Million to Launch Offensive Operations Platform",
+    "summary": "RemoteThreat has raised $7 million in pre‑seed funding to launch an offensive operations platform, emerging from stealth mode with backing from Osage University Partners and DataTribe. The announcement marks the company's first public appearance and signals its intent to provide advanced threat hunting and adversary simulation services to enterprises.",
+    "category": "Policy",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/remotethreat-launches-with-7-million-for-offensive-operations-platform/",
+    "publishedAt": "2026-09-29T14:38:07.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -90,6 +152,18 @@ export const news: NewsBrief[] = [
     "source": "Help Net Security",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/postman-fabric-gateway/",
     "publishedAt": "2026-09-29T13:40:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "cloudflare-waf-tester-reveals-detection-gaps",
+    "title": "Cloudflare WAF Tester Reveals Detection Gaps",
+    "summary": "Cloudflare built a WAF tester that adapts requests based on WAF responses, testing six attack categories on a staging environment. The tool uncovered gaps in the WAF’s detection logic, allowing certain attacks to pass. Cloudflare documented the missed detections and applied fixes to close the identified weaknesses.",
+    "category": "Vulnerability",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/adaptive-ai-waf-testing/",
+    "publishedAt": "2026-09-29T13:00:00.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -119,6 +193,47 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
+    "slug": "vega-ii-launches-ai-driven-soc-platform",
+    "title": "Vega II Launches AI-Driven SOC Platform",
+    "summary": "Vega released Vega II, its largest platform update, integrating frontier AI trained for security operations into the SOC. The update removes legacy SIEM and data pipeline barriers, providing teams with a lasting record of learned patterns and enabling AI-driven detection, triage, and investigation. Vega II aims to streamline cyber defense workflows.",
+    "category": "Policy",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/vega-ii-agentic-cyber-defense-platform/",
+    "publishedAt": "2026-09-29T12:43:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "vivotek-camera-firmware-remote-command-execution-vulnerabili",
+    "title": "VIVOTEK Camera Firmware Remote Command Execution Vulnerability",
+    "summary": "A critical vulnerability (CVE-2026-22755) in VIVOTEK camera firmware allows attackers to achieve remote command execution with root privileges, potentially compromising the entire camera system. Affected models include V Series FD9187, FD9189, FD9365, FD9387, FD9389, FD9391, C Series FE9180, V Series FE9191, FE9382, FE9391, IB9365, IB9387, IB9389, IB939, IP9165, IP9171. Patching to the latest firmware is required.",
+    "category": "Vulnerability",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-03",
+    "publishedAt": "2026-09-29T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-22755"
+    ],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "anjvision-yssd-rtmp-h5-os-command-injection-and-ssrf-vulnera",
+    "title": "Anjvision YSSD-RTMP-H5 OS Command Injection and SSRF Vulnerabilities",
+    "summary": "Anjvision YSSD-RTMP-H5 firmware (CVE-2026-100291 to CVE-2026-100299) contains multiple high‑severity flaws, including OS command injection, server‑side request forgery, hard‑coded credentials, and active debug code. These allow attackers to access sensitive data, execute OS‑level commands, and potentially take full control of the device. Update to the latest firmware to mitigate.",
+    "category": "Vulnerability",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-05",
+    "publishedAt": "2026-09-29T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-100291",
+      "CVE-2026-100299"
+    ],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "baicells-nova-430h-vulnerability-allows-malformed-message-de",
     "title": "Baicells Nova 430H Vulnerability Allows Malformed Message Denial of Service",
     "summary": "An unauthenticated attacker within radio range can send a malformed uplink message with an invalid NAS payload to Baicells Nova 430H eNodeB, causing the device to forward it to the core network and trigger a signaling shutdown, resulting in denial of service. CVE-2026-96274 is the affected vulnerability.",
@@ -128,20 +243,6 @@ export const news: NewsBrief[] = [
     "publishedAt": "2026-09-29T12:00:00.000Z",
     "cves": [
       "CVE-2026-96274"
-    ],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "mikrotik-routeros-integer-underflow-enables-remote-code-exec",
-    "title": "MikroTik RouterOS Integer Underflow Enables Remote Code Execution",
-    "summary": "An unauthenticated network attacker can send a crafted HTTP request to affected MikroTik RouterOS versions, exploiting an integer underflow in the web management service before authentication. This flaw allows arbitrary code execution as root or denial of service. CVE-2026-84411 is the identified vulnerability.",
-    "category": "Vulnerability",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-06",
-    "publishedAt": "2026-09-29T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-84411"
     ],
     "additionalSources": [],
     "aliases": []
@@ -214,18 +315,6 @@ export const news: NewsBrief[] = [
     "source": "SecurityWeek",
     "sourceUrl": "https://www.securityweek.com/four-cyber-threats-harboring-big-plans-for-the-future/",
     "publishedAt": "2026-09-29T11:30:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "dutch-police-arrest-hacker-who-stole-data-from-multiple-orga",
-    "title": "Dutch Police Arrest Hacker Who Stole Data from Multiple Organizations",
-    "summary": "Dutch police have arrested Pepijn van der Stap, a convicted hacker who previously stole data from several organizations and extorted them. The arrest follows an investigation into his activities under the ShinyHunters case, highlighting ongoing efforts to curb corporate data theft.",
-    "category": "Breach",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/dutch-police-arrest-convicted-hacker-in-shinyhunters-investigation/",
-    "publishedAt": "2026-09-29T11:01:55.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -521,18 +610,6 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "modulate-raises-25-million-to-advance-deep-fake-detection",
-    "title": "Modulate Raises $25 Million to Advance Deep‑Fake Detection",
-    "summary": "Modulate raises $25 million to advance deep‑fake detection. The company aims to counter AI‑generated voice misuse with real‑time detection and intervention tools. The funding will support research and product development to help organizations spot deep‑fake audio before it causes harm and.",
-    "category": "Policy",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/modulate-raises-25-million-to-advance-deepfake-detection/",
-    "publishedAt": "2026-09-28T17:30:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
     "slug": "new-mexico-jury-finds-meta-deceived-consumers-about-data-pri",
     "title": "New Mexico Jury Finds Meta Deceived Consumers About Data Privacy Practices",
     "summary": "A New Mexico jury found Meta violated consumer privacy law nearly 44 million times by misleading users about its data‑privacy practices. The court ruled the company’s statements were deceptive, holding Meta accountable for false claims about how it collects and uses personal information.",
@@ -552,18 +629,6 @@ export const news: NewsBrief[] = [
     "source": "Dark Reading",
     "sourceUrl": "https://www.darkreading.com/application-security/chrome-store-poper-blocker-spyware-downloaded-millions",
     "publishedAt": "2026-09-28T16:51:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "citrix-netscaler-gateway-zero-day-vulnerabilities-confirmed",
-    "title": "Citrix NetScaler Gateway Zero-Day Vulnerabilities Confirmed",
-    "summary": "Citrix NetScaler Gateway products are affected by eight newly confirmed zero‑day vulnerabilities. Security agencies in the Netherlands, U.S. and U.K. issued advisories after incident responders warned of potential exploitation. Citrix has acknowledged the flaws and is working on patches.",
-    "category": "Vulnerability",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/us-uk-warn-of-citrix-netscaler-zero-day-bug",
-    "publishedAt": "2026-09-28T16:19:00.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -600,18 +665,6 @@ export const news: NewsBrief[] = [
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/80-000-plus-organizations-had-ai-logins-stolen-from-shadow-ai-to-llmjacking/",
     "publishedAt": "2026-09-28T14:00:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "check-point-research-notes-fbi-unauthorized-activity-after-s",
-    "title": "Check Point Research Notes FBI Unauthorized Activity After ShinyHunters Defacement",
-    "summary": "Check Point Research released a threat intelligence bulletin noting FBI unauthorized activity after ShinyHunters defaced FBIjobs.gov. The group claimed to have stolen employee and applicant data and shared samples of purported FBI personnel. The report highlights ongoing investigations and potential data exposure.",
-    "category": "Breach",
-    "source": "Check Point Research",
-    "sourceUrl": "https://research.checkpoint.com/2026/28th-september-threat-intelligence-report/",
-    "publishedAt": "2026-09-28T13:55:26.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
