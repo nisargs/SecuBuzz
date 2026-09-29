@@ -41,6 +41,12 @@ export type ArticleSeverity =
  * There are intentionally no image fields or duplicate/raw
  * publication-date fields in the Article model.
  */
+export type AdditionalSource = {
+  sourceName: string;
+  sourceUrl: string;
+  publishedAt?: string;
+};
+
 export type Article = {
   id: string;
   headline: string;
@@ -58,7 +64,9 @@ export type Article = {
   vulnerableVersionRange?: string;
   vendorProject?: string;
   product?: string;
+  additionalSources?: AdditionalSource[];
 };
+
 
 /**
  * Filter chip values.

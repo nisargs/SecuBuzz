@@ -55,7 +55,7 @@ export const appFeatures = [
   { title: 'On-device bookmarks', body: 'Save critical briefs and advisories for later with a single tap. Bookmarks stay 100% on your device with no account or cloud sync.' },
   { title: '1-tap incident reports', body: 'Copy formatted markdown threat intelligence to clipboard for pasting directly into Slack, Microsoft Teams, or Jira tickets.' },
   { title: 'Offline reading', body: 'Up to 250 briefs and advisories are cached locally. Read full intelligence without network connectivity.' },
-  { title: 'No account required', body: 'Install and read immediately. 100% on-device preferences, no tracking, and anonymous crash reports only.' },
+  { title: 'No account required', body: 'Join the closed test to start reading. 100% on-device preferences, no tracking, and anonymous crash reports only.' },
 ];
 
 export const appRequirements = [

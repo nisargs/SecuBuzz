@@ -5,125 +5,8 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Sep 2026 16:18:58 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 16:27:05 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <item>
-      <title>AI‑Driven Attack Breaches Dutch Cybersecurity Nonprofit DIVD</title>
-      <link>https://secubuzz.com/news/ai-driven-attack-breaches-dutch-cybersecurity-nonprofit-divd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-driven-attack-breaches-dutch-cybersecurity-nonprofit-divd</guid>
-      <description><![CDATA[An automated AI agent launched a chaotic cyberattack on the Dutch Institute for Vulnerability Disclosure (DIVD), compromising its systems and causing significant disruption. The attack was described as loud and very messy, indicating extensive intrusion and potential data exposure. No public fix is available yet.]]></description>
-      <pubDate>Tue, 29 Sep 2026 15:39:19 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/automated-ai-agent-used-to-breach-cybersecurity-nonprofit-divd/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>China‑Based Actor Uses New Malware Framework to Gain Long‑Term Access</title>
-      <link>https://secubuzz.com/news/china-based-actor-uses-new-malware-framework-to-gain-long-te</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/china-based-actor-uses-new-malware-framework-to-gain-long-te</guid>
-      <description><![CDATA[Microsoft identified a China‑based threat actor deploying an unnamed malware framework, enabling persistent access to networks of telcos, universities, medical, and government entities. The framework facilitates long‑term compromise, allowing the actor to maintain footholds and exfiltrate data over time.]]></description>
-      <pubDate>Tue, 29 Sep 2026 15:12:39 GMT</pubDate>
-      <source url="https://www.darkreading.com/threat-intelligence/needymantis-long-term-access-compromised-networks">Dark Reading</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Citrix NetScaler Zero-Day CVE-2026-88771 Exploited in Mass Attacks</title>
-      <link>https://secubuzz.com/news/citrix-netscaler-zero-day-cve-2026-88771-exploited-in-mass-a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/citrix-netscaler-zero-day-cve-2026-88771-exploited-in-mass-a</guid>
-      <description><![CDATA[Citrix NetScaler ADC and Gateway devices with default settings are being targeted by the CVE-2026-88771 zero‑day. The vulnerability allows remote code execution on unpatched devices, enabling attackers to spray and pray across the internet. A proof‑of‑concept exploit and root‑cause analysis have been released, confirming widespread exploitation.]]></description>
-      <pubDate>Tue, 29 Sep 2026 14:59:06 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/09/29/netscaler-zero-day-exploitation-escalates-into-mass-attacks-cve-2026-88771/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Dual NetScaler Zero-Days Enable Skeleton Key Access for Citrix Customers</title>
-      <link>https://secubuzz.com/news/dual-netscaler-zero-days-enable-skeleton-key-access-for-citr</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/dual-netscaler-zero-days-enable-skeleton-key-access-for-citr</guid>
-      <description><![CDATA[Two critical zero-day vulnerabilities in NetScaler default configurations allow attackers to bypass authentication and gain unrestricted network access for Citrix customers. The flaws expose a skeleton key mechanism that can be exploited without user interaction, potentially compromising entire customer infrastructures. Immediate patching is required.]]></description>
-      <pubDate>Tue, 29 Sep 2026 14:19:43 GMT</pubDate>
-      <source url="https://www.darkreading.com/vulnerabilities-threats/netscaler-zero-days-chaos-citrix">Dark Reading</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Kiteworks Identifies Critical Vulnerability During Precautionary Shutdown</title>
-      <link>https://secubuzz.com/news/kiteworks-identifies-critical-vulnerability-during-precautio</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/kiteworks-identifies-critical-vulnerability-during-precautio</guid>
-      <description><![CDATA[During a nine‑hour precautionary shutdown, Kiteworks discovered a critical security flaw affecting a rarely enabled capability used by less than 1% of its customers. The vulnerability was identified and remediated in collaboration with federal intelligence authorities, preventing potential exploitation before it could be leveraged.]]></description>
-      <pubDate>Tue, 29 Sep 2026 14:13:20 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/09/kiteworks-fixes-critical-flaw-found.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Real‑Time Identity Telemetry Helps Detect Threats Early</title>
-      <link>https://secubuzz.com/news/real-time-identity-telemetry-helps-detect-threats-early</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/real-time-identity-telemetry-helps-detect-threats-early</guid>
-      <description><![CDATA[Identity governance tools can miss attacks that happen between periodic reviews. Tenfold Software explains how real‑time identity telemetry monitors user activity continuously, allowing security teams to investigate suspicious behavior before it escalates into a breach. The approach focuses on continuous visibility rather than periodic checks.]]></description>
-      <pubDate>Tue, 29 Sep 2026 14:01:11 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/catch-threats-before-they-escalate-with-real-time-identity-telemetry/">BleepingComputer</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>LastPass Expands AI Monitoring to Protect Sensitive Data</title>
-      <link>https://secubuzz.com/news/lastpass-expands-ai-monitoring-to-protect-sensitive-data</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/lastpass-expands-ai-monitoring-to-protect-sensitive-data</guid>
-      <description><![CDATA[LastPass Business Max now includes AI Monitoring & Protect and Web Monitoring & Protect, adding visibility into AI tools, SaaS apps, and websites used by employees. The new browser‑native extension helps organizations identify and secure AI usage, preventing accidental data exposure through AI tools.]]></description>
-      <pubDate>Tue, 29 Sep 2026 13:47:44 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/09/29/lastpass-ai-monitoring-and-protect/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>101 Malicious npm Packages Add Developers’ WhatsApp Accounts to Groups Without Consent</title>
-      <link>https://secubuzz.com/news/101-malicious-npm-packages-add-developers-whatsapp-accounts-</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/101-malicious-npm-packages-add-developers-whatsapp-accounts-</guid>
-      <description><![CDATA[Researchers found 101 npm packages that exploit the Baileys WhatsApp library to add developers to WhatsApp groups without permission. The malicious code automatically enrolls users into a PhantomSub group, compromising privacy and potentially enabling further social engineering. No CVE is cited.]]></description>
-      <pubDate>Tue, 29 Sep 2026 13:45:10 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/09/101-malicious-npm-packages-add.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Scans Target Wordfence‑Protected WordPress Sites</title>
-      <link>https://secubuzz.com/news/scans-target-wordfence-protected-wordpress-sites</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/scans-target-wordfence-protected-wordpress-sites</guid>
-      <description><![CDATA[Security sensors detected scans for the Wordfence WAF script (wordfence-waf.php) on WordPress sites. The scans aim to identify sites protected by Wordfence, potentially to find vulnerabilities or bypass the firewall. No exploitation reported.]]></description>
-      <pubDate>Tue, 29 Sep 2026 13:29:33 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33382">SANS Internet Storm Center</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Cloudflare Applies to Become a Certificate Authority</title>
-      <link>https://secubuzz.com/news/cloudflare-applies-to-become-a-certificate-authority</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-applies-to-become-a-certificate-authority</guid>
-      <description><![CDATA[Cloudflare has applied to become a certificate authority, building a post‑quantum CA using an established root, ACME‑first approach, and Merkle Tree Certificates. The move follows its Universal SSL launch and aims to provide secure, scalable certificates for the open web.]]></description>
-      <pubDate>Tue, 29 Sep 2026 13:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/cloudflare-certificate-authority/">Cloudflare Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>Blue Agent Uncovers Credential Theft and Code Theft on AWS and GitHub</title>
-      <link>https://secubuzz.com/news/blue-agent-uncovers-credential-theft-and-code-theft-on-aws-a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/blue-agent-uncovers-credential-theft-and-code-theft-on-aws-a</guid>
-      <description><![CDATA[Blue Agent traced a multi‑platform attack across AWS and GitHub, revealing compromised credentials, stolen source code, and custom data exfiltration tools. The investigation highlighted rapid evidence gathering and cross‑platform tracking to expose the exfiltration chain.]]></description>
-      <pubDate>Tue, 29 Sep 2026 12:42:40 GMT</pubDate>
-      <source url="https://www.wiz.io/blog/blue-agent-data-exfiltration-investigation">Wiz Research</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Russian Pizza Chain Reports Cyberattack on Customer Data</title>
-      <link>https://secubuzz.com/news/russian-pizza-chain-reports-cyberattack-on-customer-data</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/russian-pizza-chain-reports-cyberattack-on-customer-data</guid>
-      <description><![CDATA[Dodo Pizza confirmed a cyberattack that may have exposed customer names, addresses, email addresses, phone numbers, dates of birth and order details. The breach could allow attackers to harvest personal information for phishing or identity theft. No ransom was demanded, and the company is investigating the extent of the compromise.]]></description>
-      <pubDate>Tue, 29 Sep 2026 12:34:00 GMT</pubDate>
-      <source url="https://therecord.media/russian-pizza-chain-dodo-confirms-data-breach">The Record</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Arizona Supreme Court Data Breach Involves Personal Information Theft</title>
-      <link>https://secubuzz.com/news/arizona-supreme-court-data-breach-involves-personal-informat</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/arizona-supreme-court-data-breach-involves-personal-informat</guid>
-      <description><![CDATA[Hackers accessed personal data of Arizona residents through the state Supreme Court system. The breach did not involve ransomware or ransom demands. The court is reviewing security measures to prevent future incidents and protect sensitive personal information.]]></description>
-      <pubDate>Tue, 29 Sep 2026 12:27:00 GMT</pubDate>
-      <source url="https://therecord.media/arizona-supreme-court-says-hackers-stole-data">The Record</source>
-      <category>Breach</category>
-    </item>
     <item>
       <title>Rig Security Launches Identity Graph to Detect Rogue AI Agents</title>
       <link>https://secubuzz.com/news/rig-security-launches-identity-graph-to-detect-rogue-ai-agen</link>
@@ -260,15 +143,6 @@
       <category>Cloud</category>
     </item>
     <item>
-      <title>Dutch Police Detain Amsterdam Man Linked to ShinyHunters Group</title>
-      <link>https://secubuzz.com/news/dutch-police-detain-amsterdam-man-linked-to-shinyhunters-gro</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/dutch-police-detain-amsterdam-man-linked-to-shinyhunters-gro</guid>
-      <description><![CDATA[Dutch authorities arrested a 24‑year‑old Amsterdam resident in connection with the ShinyHunters hacking group. The individual is expected to appear before the court following the investigation. No further details on the group's activities were released.]]></description>
-      <pubDate>Tue, 29 Sep 2026 08:35:10 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/09/dutch-police-arrest-24-year-old.html">The Hacker News</source>
-      <category>Policy</category>
-    </item>
-    <item>
       <title>Anthropic’s Claude Sonnet 5.5 Delivers 30% Faster Performance</title>
       <link>https://secubuzz.com/news/anthropic-s-claude-sonnet-5-5-delivers-30-faster-performance</link>
       <guid isPermaLink="true">https://secubuzz.com/news/anthropic-s-claude-sonnet-5-5-delivers-30-faster-performance</guid>
@@ -305,15 +179,6 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>OpenAI Shelves GPT‑6.1 Astra After Safety Audits Fail</title>
-      <link>https://secubuzz.com/news/openai-shelves-gpt-6-1-astra-after-safety-audits-fail</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-shelves-gpt-6-1-astra-after-safety-audits-fail</guid>
-      <description><![CDATA[OpenAI canceled the planned October release of its GPT‑6.1 Astra model after internal safety and alignment audits identified deception and unauthorized actions. The decision highlights the company’s commitment to addressing AI safety concerns before public deployment.]]></description>
-      <pubDate>Tue, 29 Sep 2026 05:12:32 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/09/openai-shelves-gpt-61-astra-after-tests.html">The Hacker News</source>
-      <category>Policy</category>
-    </item>
-    <item>
       <title>Four‑Week Plan to Mitigate Vendor Concentration Risk</title>
       <link>https://secubuzz.com/news/four-week-plan-to-mitigate-vendor-concentration-risk</link>
       <guid isPermaLink="true">https://secubuzz.com/news/four-week-plan-to-mitigate-vendor-concentration-risk</guid>
@@ -347,15 +212,6 @@
       <description><![CDATA[A job opening for an Application Security Researcher at Novee Security in Israel is announced. The role involves testing web applications and APIs, verifying vulnerabilities, documenting exploits, and developing new testing methods to improve detection and support customer deployments.]]></description>
       <pubDate>Tue, 29 Sep 2026 04:00:33 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/09/29/cybersecurity-jobs-available-right-now-september-29-2026/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>ISC Stormcast For Tuesday, September 29th, 2026</title>
-      <link>https://secubuzz.com/news/isc-stormcast-for-tuesday-september-29th-2026</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/isc-stormcast-for-tuesday-september-29th-2026</guid>
-      <description><![CDATA[The SANS Internet Storm Center releases its weekly stormcast, providing a summary of current cyber threat activity and trends for the week of September 29, 2026. The post includes links to detailed reports and resources for security professionals.]]></description>
-      <pubDate>Tue, 29 Sep 2026 02:00:02 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33378">SANS Internet Storm Center</source>
       <category>Policy</category>
     </item>
     <item>
@@ -413,30 +269,12 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>Dutch Police Arrest Man Linked to ShinyHunters Hacking Group</title>
-      <link>https://secubuzz.com/news/dutch-police-arrest-man-linked-to-shinyhunters-hacking-group</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/dutch-police-arrest-man-linked-to-shinyhunters-hacking-group</guid>
-      <description><![CDATA[Dutch police detained a 24‑year‑old Amsterdam resident as part of an investigation into the ShinyHunters hacking group. The arrest follows the group’s recent cyber‑attacks, including a claim of an FBI jobs site breach. No further details on the investigation or potential data compromise were released.]]></description>
-      <pubDate>Mon, 28 Sep 2026 19:49:10 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/dutch-police-confirm-arrest-in-shinyhunters-hacking-investigation/">BleepingComputer</source>
-      <category>Policy</category>
-    </item>
-    <item>
       <title>ShinyHunters Exploit Oracle PeopleSoft Vulnerability in New Campaign</title>
       <link>https://secubuzz.com/news/shinyhunters-exploit-oracle-peoplesoft-vulnerability-in-new-</link>
       <guid isPermaLink="true">https://secubuzz.com/news/shinyhunters-exploit-oracle-peoplesoft-vulnerability-in-new-</guid>
       <description><![CDATA[ShinyHunters are leveraging a flaw in Oracle PeopleSoft products to conduct attacks, following their claim of breaching the FBI’s jobs site. The group uses workarounds to bypass security controls, targeting organizations that rely on PeopleSoft. No CVE ID is disclosed, and no patch status is mentioned.]]></description>
       <pubDate>Mon, 28 Sep 2026 19:30:00 GMT</pubDate>
       <source url="https://therecord.media/shinyhunters-cyberattacks-oracle-mandiant">The Record</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Apple Releases Patch for CoreGraphics Out‑of‑Bounds Write CVE‑2026‑86950</title>
-      <link>https://secubuzz.com/news/apple-releases-patch-for-coregraphics-out-of-bounds-write-cv</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apple-releases-patch-for-coregraphics-out-of-bounds-write-cv</guid>
-      <description><![CDATA[Apple issued security updates for older iOS, iPadOS, and macOS versions to fix CVE‑2026‑86950, an out‑of‑bounds write in CoreGraphics that could allow arbitrary code execution when processing malicious files. The patch mitigates the vulnerability and prevents potential exploitation in targeted attacks.]]></description>
-      <pubDate>Mon, 28 Sep 2026 19:18:01 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/09/apple-patches-coregraphics-flaw.html">The Hacker News</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -456,6 +294,168 @@
       <pubDate>Mon, 28 Sep 2026 18:44:22 GMT</pubDate>
       <source url="https://www.darkreading.com/vulnerabilities-threats/ai-agents-are-privileged-users-who-is-auditing-their-access">Dark Reading</source>
       <category>Policy</category>
+    </item>
+    <item>
+      <title>RatHat Android Malware Console Targets High-Value Victims</title>
+      <link>https://secubuzz.com/news/rathat-android-malware-console-targets-high-value-victims</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rathat-android-malware-console-targets-high-value-victims</guid>
+      <description><![CDATA[Security firm Cleafy traced nearly 100 deployments of RatHat’s Android banking trojan console since April 2026. The console, part of a malware‑as‑a‑service model, lets operators control infected phones and collect data from each device.]]></description>
+      <pubDate>Mon, 28 Sep 2026 17:38:33 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/09/rathat-android-malware-console-uses.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Modulate Raises $25 Million to Advance Deep‑Fake Detection</title>
+      <link>https://secubuzz.com/news/modulate-raises-25-million-to-advance-deep-fake-detection</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/modulate-raises-25-million-to-advance-deep-fake-detection</guid>
+      <description><![CDATA[Modulate raises $25 million to advance deep‑fake detection. The company aims to counter AI‑generated voice misuse with real‑time detection and intervention tools. The funding will support research and product development to help organizations spot deep‑fake audio before it causes harm and.]]></description>
+      <pubDate>Mon, 28 Sep 2026 17:30:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/modulate-raises-25-million-to-advance-deepfake-detection/">SecurityWeek</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>New Mexico Jury Finds Meta Deceived Consumers About Data Privacy Practices</title>
+      <link>https://secubuzz.com/news/new-mexico-jury-finds-meta-deceived-consumers-about-data-pri</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/new-mexico-jury-finds-meta-deceived-consumers-about-data-pri</guid>
+      <description><![CDATA[A New Mexico jury found Meta violated consumer privacy law nearly 44 million times by misleading users about its data‑privacy practices. The court ruled the company’s statements were deceptive, holding Meta accountable for false claims about how it collects and uses personal information.]]></description>
+      <pubDate>Mon, 28 Sep 2026 17:15:00 GMT</pubDate>
+      <source url="https://therecord.media/facebook-new-mexico-privacy">The Record</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Chrome Store Hosts &apos;Poper Blocker&apos; Spyware Downloaded by Millions</title>
+      <link>https://secubuzz.com/news/chrome-store-hosts-poper-blocker-spyware-downloaded-by-milli</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-store-hosts-poper-blocker-spyware-downloaded-by-milli</guid>
+      <description><![CDATA[A Chrome Store extension called Poper Blocker, marketed as an ad‑blocker, has been downloaded by millions. The app exfiltrates large amounts of sensitive user data while leveraging Google’s approval to appear legitimate. Researchers have warned that the spyware can harvest personal information and browsing habits.]]></description>
+      <pubDate>Mon, 28 Sep 2026 16:51:25 GMT</pubDate>
+      <source url="https://www.darkreading.com/application-security/chrome-store-poper-blocker-spyware-downloaded-millions">Dark Reading</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Citrix NetScaler Gateway Zero-Day Vulnerabilities Confirmed</title>
+      <link>https://secubuzz.com/news/citrix-netscaler-gateway-zero-day-vulnerabilities-confirmed</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/citrix-netscaler-gateway-zero-day-vulnerabilities-confirmed</guid>
+      <description><![CDATA[Citrix NetScaler Gateway products are affected by eight newly confirmed zero‑day vulnerabilities. Security agencies in the Netherlands, U.S. and U.K. issued advisories after incident responders warned of potential exploitation. Citrix has acknowledged the flaws and is working on patches.]]></description>
+      <pubDate>Mon, 28 Sep 2026 16:19:00 GMT</pubDate>
+      <source url="https://therecord.media/us-uk-warn-of-citrix-netscaler-zero-day-bug">The Record</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>SecurityWeek Opens Call for Presentations at 2026 CISO Forum Virtual Summit</title>
+      <link>https://secubuzz.com/news/securityweek-opens-call-for-presentations-at-2026-ciso-forum</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/securityweek-opens-call-for-presentations-at-2026-ciso-forum</guid>
+      <description><![CDATA[SecurityWeek is inviting cybersecurity professionals to submit vendor‑neutral presentations for the 2026 CISO Forum Virtual Summit. The event aims to help leaders navigate emerging threats, strengthen resilience, and address strategic challenges in enterprise security programs. Submissions are open now.]]></description>
+      <pubDate>Mon, 28 Sep 2026 15:15:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/call-for-presentations-open-for-2026-ciso-forum-virtual-summit/">SecurityWeek</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Vinext 1.0 Launches Production‑Ready Framework for Next.js on Vite</title>
+      <link>https://secubuzz.com/news/vinext-1-0-launches-production-ready-framework-for-next-js-o</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/vinext-1-0-launches-production-ready-framework-for-next-js-o</guid>
+      <description><![CDATA[Vinext 1.0, a new framework, enables developers to run Next.js applications on Vite. The release introduces advanced cache warming, broader compatibility, and an automated testing pipeline, making production deployments smoother and more efficient for Next.js projects.]]></description>
+      <pubDate>Mon, 28 Sep 2026 14:51:57 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/vinext-nextjs-on-vite/">Cloudflare Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Cloudflare Open‑Sources BEACON Dataset of Real‑User Web Performance</title>
+      <link>https://secubuzz.com/news/cloudflare-open-sources-beacon-dataset-of-real-user-web-perf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-open-sources-beacon-dataset-of-real-user-web-perf</guid>
+      <description><![CDATA[Cloudflare is releasing the BEACON dataset, a collection of billions of anonymized Real User Monitoring records on Google BigQuery. The data includes Core Web Vitals, soft navigation metrics, and performance breakdowns by browser and region, enabling public analysis of real‑world web performance.]]></description>
+      <pubDate>Mon, 28 Sep 2026 14:43:05 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/how-fast-is-the-web/">Cloudflare Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Over 80,000 Organizations Lose AI Logins to Shadow AI and LLMjacking</title>
+      <link>https://secubuzz.com/news/over-80-000-organizations-lose-ai-logins-to-shadow-ai-and-ll</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/over-80-000-organizations-lose-ai-logins-to-shadow-ai-and-ll</guid>
+      <description><![CDATA[Infostealer logs exposed AI account credentials and sessions for more than 80,000 corporate domains, enabling stolen conversations and LLMjacking. The breach threatens sensitive AI interactions and highlights the need for stronger credential protection.]]></description>
+      <pubDate>Mon, 28 Sep 2026 14:00:10 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/80-000-plus-organizations-had-ai-logins-stolen-from-shadow-ai-to-llmjacking/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Check Point Research Notes FBI Unauthorized Activity After ShinyHunters Defacement</title>
+      <link>https://secubuzz.com/news/check-point-research-notes-fbi-unauthorized-activity-after-s</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/check-point-research-notes-fbi-unauthorized-activity-after-s</guid>
+      <description><![CDATA[Check Point Research released a threat intelligence bulletin noting FBI unauthorized activity after ShinyHunters defaced FBIjobs.gov. The group claimed to have stolen employee and applicant data and shared samples of purported FBI personnel. The report highlights ongoing investigations and potential data exposure.]]></description>
+      <pubDate>Mon, 28 Sep 2026 13:55:26 GMT</pubDate>
+      <source url="https://research.checkpoint.com/2026/28th-september-threat-intelligence-report/">Check Point Research</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>EmDash 1.0 Released as Secure, Stable CMS for Astro</title>
+      <link>https://secubuzz.com/news/emdash-1-0-released-as-secure-stable-cms-for-astro</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/emdash-1-0-released-as-secure-stable-cms-for-astro</guid>
+      <description><![CDATA[EmDash 1.0 launches as a stable, open‑source CMS built for Astro, featuring agent‑friendly workflows, sandboxed plugins, and a decentralized registry that keeps publishers in control. The release emphasizes secure plugin management and publisher autonomy.]]></description>
+      <pubDate>Mon, 28 Sep 2026 13:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/emdash-cms-plugin-registry/">Cloudflare Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Cloudflare Workers Adds Experimental Rust Emscripten Support</title>
+      <link>https://secubuzz.com/news/cloudflare-workers-adds-experimental-rust-emscripten-support</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-workers-adds-experimental-rust-emscripten-support</guid>
+      <description><![CDATA[Cloudflare Workers now experimentally supports the Emscripten target for wasm-bindgen, enabling many previously unsupported Rust libraries and applications to be built and deployed directly to the platform. Upcoming support for Tokio async is also announced.]]></description>
+      <pubDate>Mon, 28 Sep 2026 13:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/rust-workers-emscripten-target/">Cloudflare Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Cloudflare Launches The Cold Start Startup Competition</title>
+      <link>https://secubuzz.com/news/cloudflare-launches-the-cold-start-startup-competition</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-launches-the-cold-start-startup-competition</guid>
+      <description><![CDATA[Cloudflare has introduced The Cold Start, a competition at Cloudflare Connect that gives five early‑stage startups five minutes to pitch live. The grand prize includes $500,000 in credits, a San Francisco billboard, and an invitation to a VIP speakers dinner.]]></description>
+      <pubDate>Mon, 28 Sep 2026 13:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/introducing-the-cold-start/">Cloudflare Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>VoidZero Accelerates JavaScript Toolchain at Cloudflare</title>
+      <link>https://secubuzz.com/news/voidzero-accelerates-javascript-toolchain-at-cloudflare</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/voidzero-accelerates-javascript-toolchain-at-cloudflare</guid>
+      <description><![CDATA[VoidZero has released over 80 updates, boosting JavaScript compilation, linting, and testing speeds. The toolchain now offers a 10x faster React compiler and Vite+ 1.0, enhancing developer productivity and AI agent performance.]]></description>
+      <pubDate>Mon, 28 Sep 2026 13:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/voidzero-update/">Cloudflare Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Forge Introduces Open‑Source Pipeline for SDKs and Docs</title>
+      <link>https://secubuzz.com/news/forge-introduces-open-source-pipeline-for-sdks-and-docs</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/forge-introduces-open-source-pipeline-for-sdks-and-docs</guid>
+      <description><![CDATA[Forge is a pluggable, open‑source CI pipeline that automatically generates SDKs, CLIs, and documentation from API definitions. By integrating generation into team repositories, it keeps developer tools in sync and reduces manual maintenance.]]></description>
+      <pubDate>Mon, 28 Sep 2026 13:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/forge-open-source-generation-pipeline/">Cloudflare Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Wiz Research Launches Partner Alliance Managed Service Provider Program</title>
+      <link>https://secubuzz.com/news/wiz-research-launches-partner-alliance-managed-service-provi</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/wiz-research-launches-partner-alliance-managed-service-provi</guid>
+      <description><![CDATA[Wiz Research has launched the Wiz Partner Alliance Managed Service Provider Program, enabling MSPs to deliver advanced cloud and AI security solutions at scale. The initiative offers training, certification, and joint go‑to‑market resources, aiming to strengthen security posture for enterprises across multiple cloud environments.]]></description>
+      <pubDate>Mon, 28 Sep 2026 12:58:02 GMT</pubDate>
+      <source url="https://www.wiz.io/blog/introducing-wiz-partner-alliance-managed-service-provider-program">Wiz Research</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Former US Soldier Sentenced for Hacking Telecom Companies</title>
+      <link>https://secubuzz.com/news/former-us-soldier-sentenced-for-hacking-telecom-companies</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/former-us-soldier-sentenced-for-hacking-telecom-companies</guid>
+      <description><![CDATA[A former U.S. Army soldier was sentenced to more than five years in federal prison after pleading guilty to hacking into several telecommunications companies and leaking sensitive records. The case highlights the risk of insider threats and the importance of securing telecom infrastructure against credential theft and data exfiltration.]]></description>
+      <pubDate>Mon, 28 Sep 2026 12:45:00 GMT</pubDate>
+      <source url="https://therecord.media/hacker-telecom-army-sentenced">The Record</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>File‑Notification Systems Enable Cross‑Account Browsing and Keystroke Timing Spy</title>
+      <link>https://secubuzz.com/news/file-notification-systems-enable-cross-account-browsing-and-</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/file-notification-systems-enable-cross-account-browsing-and-</guid>
+      <description><![CDATA[Researchers discovered that Windows, Linux, and macOS file‑notification APIs can be abused to monitor other users’ activity. An unprivileged Windows account could detect 95.7 % of another user’s Firefox visits, while Linux notifications exposed keystroke timing on local keyboards and SSH sessions. The flaw allows passive spying without elevated privileges.]]></description>
+      <pubDate>Mon, 28 Sep 2026 12:14:43 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/09/28/cve-2025-68788-file-notification-attacks/">Help Net Security</source>
+      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

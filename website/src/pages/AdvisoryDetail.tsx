@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { ArrowLeftIcon, ArrowUpRightIcon } from 'lucide-react';
+import { ArrowLeftIcon, ArrowUpRightIcon, ShieldAlertIcon, ActivityIcon } from 'lucide-react';
 import { useLiveAdvisories } from '../data/useLiveAdvisories';
 import { useLiveNews } from '../data/useLiveNews';
 import { SeverityBadge } from '../components/SeverityBadge';
@@ -10,11 +10,87 @@ import { shortDate, timeAgo } from '../utils/date';
 import { dueStatus } from '../utils/advisory';
 import { Seo } from '../components/Seo';
 
+interface EpssData {
+  epss: number;
+  percentile: number;
+  date?: string;
+}
+
+interface CvssMetrics {
+  vectorString?: string;
+  score?: number;
+  severity?: string;
+  attackVector?: string;
+  attackComplexity?: string;
+  privilegesRequired?: string;
+  userInteraction?: string;
+  scope?: string;
+}
+
 export function AdvisoryDetail() {
   const { slug } = useParams();
   const { advisories, loading: loadingAdv } = useLiveAdvisories();
   const { news } = useLiveNews();
   const advisory = advisories.find((a) => a.slug === slug || a.cve.toLowerCase() === (slug || '').toLowerCase());
+
+  const [epss, setEpss] = useState<EpssData | null>(null);
+  const [epssLoading, setEpssLoading] = useState(false);
+
+  const [cvssMetrics, setCvssMetrics] = useState<CvssMetrics | null>(null);
+  const [metricsLoading, setMetricsLoading] = useState(false);
+
+  useEffect(() => {
+    if (!advisory?.cve) return;
+
+    // 1. Fetch EPSS score
+    setEpssLoading(true);
+    fetch(`/api/epss?cve=${advisory.cve}`)
+      .then((res) => {
+        if (!res.ok) throw new Error('Worker EPSS failed');
+        return res.json();
+      })
+      .then((data: any) => {
+        if (data && typeof data.epss === 'number') {
+          setEpss({
+            epss: data.epss,
+            percentile: data.percentile,
+            date: data.date,
+          });
+        }
+      })
+      .catch(() => {
+        // Fallback directly to FIRST.org public API
+        fetch(`https://api.first.org/data/v1/epss?cve=${advisory.cve}`)
+          .then((res) => res.json())
+          .then((data: any) => {
+            const item = data?.data?.[0];
+            if (item && item.epss) {
+              setEpss({
+                epss: parseFloat(item.epss),
+                percentile: parseFloat(item.percentile),
+                date: item.date,
+              });
+            }
+          })
+          .catch((err) => console.warn('EPSS fallback error:', err));
+      })
+      .finally(() => setEpssLoading(false));
+
+    // 2. Fetch CVSS Metrics & Vector string
+    setMetricsLoading(true);
+    fetch(`/api/cve-metrics?cve=${advisory.cve}`)
+      .then((res) => {
+        if (!res.ok) throw new Error('CVSS metrics failed');
+        return res.json();
+      })
+      .then((data: any) => {
+        if (data && data.vectorString) {
+          setCvssMetrics(data);
+        }
+      })
+      .catch((err) => console.warn('CVSS metrics error:', err))
+      .finally(() => setMetricsLoading(false));
+  }, [advisory?.cve]);
 
   if (!advisory) {
     if (loadingAdv) {
@@ -30,21 +106,38 @@ export function AdvisoryDetail() {
   const status = dueStatus(advisory.dueDate);
   const coverage = news.filter((b) => b.cves.includes(advisory.cve));
   const deadlineTone =
-  status.tone === 'overdue' ? 'text-critical' : status.tone === 'urgent' ? 'text-accent' : 'text-ink';
+    status.tone === 'overdue' ? 'text-critical' : status.tone === 'urgent' ? 'text-accent' : 'text-ink';
   const deadlineText =
-  status.days < 0 ?
-  `${Math.abs(status.days)} days overdue` :
-  status.days === 0 ?
-  'Due today' :
-  `${status.days} days remaining`;
+    status.days < 0
+      ? Math.abs(status.days) === 1
+        ? '1 day overdue'
+        : `${Math.abs(status.days)} days overdue`
+      : status.days === 0
+      ? 'Due today'
+      : status.days === 1
+      ? '1 day remaining'
+      : `${status.days} days remaining`;
+
+  const rawCwe = (advisory.cwe || '').trim();
+  const cleanCwe = rawCwe && rawCwe !== '—'
+    ? rawCwe.replace(/^(CWE[:\s-]+)+/i, 'CWE-').trim()
+    : '—';
 
   const facts = [
-  { label: 'Vendor', value: advisory.vendor },
-  { label: 'Product', value: advisory.product },
-  { label: 'Added to KEV', value: shortDate(advisory.dateAdded) },
-  { label: 'Weakness', value: advisory.cwe },
-  { label: 'Ransomware use', value: advisory.ransomware ? 'Known campaign use' : 'Not reported' }];
-
+    { label: 'Vendor', value: advisory.vendor },
+    { label: 'Product', value: advisory.product },
+    { label: 'Added to KEV', value: shortDate(advisory.dateAdded) },
+    { label: 'Weakness', value: cleanCwe || '—' },
+    { label: 'Ransomware use', value: advisory.ransomware ? 'Known campaign use' : 'Not reported' },
+    {
+      label: 'EPSS Percentile',
+      value: epss
+        ? `${(epss.percentile * 100).toFixed(1)}th percentile`
+        : epssLoading
+        ? 'Querying FIRST.org...'
+        : 'Pending FIRST.org evaluation',
+    },
+  ];
 
   return (
     <>
@@ -57,7 +150,6 @@ export function AdvisoryDetail() {
         <Link
           to="/advisories"
           className="inline-flex items-center gap-1.5 text-sm text-muted transition-colors duration-150 ease-out hover:text-ink">
-          
           <ArrowLeftIcon className="h-4 w-4" aria-hidden="true" /> All advisories
         </Link>
 
@@ -65,7 +157,12 @@ export function AdvisoryDetail() {
           <div>
             <div className="flex flex-wrap items-center gap-3">
               <span className="font-mono text-sm text-muted">{advisory.cve}</span>
-              <SeverityBadge severity={advisory.severity} cvss={advisory.cvss} />
+              <SeverityBadge severity={advisory.severity} cvss={cvssMetrics?.score || advisory.cvss} />
+              {advisory.ransomware && (
+                <span className="rounded bg-critical/10 px-2 py-0.5 font-mono text-xs font-medium text-critical">
+                  Ransomware Campaign
+                </span>
+              )}
             </div>
             <h1 className="mt-4 max-w-3xl text-3xl font-semibold leading-tight tracking-tight text-ink md:text-4xl">
               {advisory.name}
@@ -78,55 +175,182 @@ export function AdvisoryDetail() {
           </div>
         </header>
 
-        <div className="mt-10 grid gap-12 lg:grid-cols-[1fr_300px]">
+        <div className="mt-10 grid gap-12 lg:grid-cols-[1fr_320px]">
           <div className="max-w-[720px] space-y-10">
+            {/* Description */}
             <section>
               <h2 className="text-lg font-semibold text-ink">Description</h2>
               <p className="mt-3 text-[16px] leading-relaxed text-muted">{advisory.description}</p>
             </section>
+
+            {/* Exploit Prediction Scoring System (EPSS) */}
+            <section className="rounded-lg border border-line bg-surface p-6">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <ActivityIcon className="h-4 w-4 text-accent" aria-hidden="true" />
+                  <h2 className="text-base font-semibold text-ink">Exploit Prediction Score (EPSS)</h2>
+                </div>
+                <span className="font-mono text-xs text-subtle">FIRST.org daily model</span>
+              </div>
+
+              {epss ? (
+                <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                  <div className="rounded border border-line bg-raised/50 p-4">
+                    <p className="text-xs text-subtle">Exploitation Probability (30-day)</p>
+                    <p className="mt-1 font-mono text-2xl font-semibold text-ink">
+                      {(epss.epss * 100).toFixed(2)}%
+                    </p>
+                    <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-line">
+                      <div
+                        className="h-full bg-accent transition-all duration-300"
+                        style={{ width: `${Math.min(100, Math.max(4, epss.epss * 100))}%` }}
+                      />
+                    </div>
+                  </div>
+                  <div className="rounded border border-line bg-raised/50 p-4">
+                    <p className="text-xs text-subtle">Relative Threat Percentile</p>
+                    <p className="mt-1 font-mono text-2xl font-semibold text-accent">
+                      {(epss.percentile * 100).toFixed(1)}%
+                    </p>
+                    <p className="mt-1 text-xs text-muted">
+                      Higher risk than {(epss.percentile * 100).toFixed(1)}% of all tracked CVEs
+                    </p>
+                  </div>
+                </div>
+              ) : epssLoading ? (
+                <p className="mt-3 text-sm text-subtle font-mono">Querying FIRST.org EPSS telemetry...</p>
+              ) : (
+                <p className="mt-3 text-sm text-muted">
+                  EPSS probability pending publication in FIRST.org daily feed.
+                </p>
+              )}
+            </section>
+
+            {/* CVSS v3.1 / v4.0 Vector Telemetry */}
+            <section className="rounded-lg border border-line bg-surface p-6">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <ShieldAlertIcon className="h-4 w-4 text-accent" aria-hidden="true" />
+                  <h2 className="text-base font-semibold text-ink">Authoritative CVSS Vector</h2>
+                </div>
+                <span className="font-mono text-xs text-subtle">NIST NVD</span>
+              </div>
+
+              {cvssMetrics?.vectorString ? (
+                <div className="mt-4 space-y-4">
+                  <div>
+                    <p className="text-xs text-subtle font-mono uppercase tracking-wider">Vector String</p>
+                    <code className="mt-1 block rounded bg-raised p-2.5 font-mono text-xs text-ink break-all border border-line">
+                      {cvssMetrics.vectorString}
+                    </code>
+                  </div>
+
+                  <div className="flex flex-wrap gap-2 pt-1 text-xs font-mono">
+                    {cvssMetrics.attackVector && (
+                      <span className="rounded border border-line px-2.5 py-1 text-ink bg-raised/40">
+                        Vector: <strong className="text-accent">{cvssMetrics.attackVector}</strong>
+                      </span>
+                    )}
+                    {cvssMetrics.attackComplexity && (
+                      <span className="rounded border border-line px-2.5 py-1 text-ink bg-raised/40">
+                        Complexity: <strong className="text-ink">{cvssMetrics.attackComplexity}</strong>
+                      </span>
+                    )}
+                    {cvssMetrics.privilegesRequired && (
+                      <span className="rounded border border-line px-2.5 py-1 text-ink bg-raised/40">
+                        Privileges: <strong className="text-ink">{cvssMetrics.privilegesRequired}</strong>
+                      </span>
+                    )}
+                    {cvssMetrics.userInteraction && (
+                      <span className="rounded border border-line px-2.5 py-1 text-ink bg-raised/40">
+                        Interaction: <strong className="text-ink">{cvssMetrics.userInteraction}</strong>
+                      </span>
+                    )}
+                    {cvssMetrics.scope && (
+                      <span className="rounded border border-line px-2.5 py-1 text-ink bg-raised/40">
+                        Scope: <strong className="text-ink">{cvssMetrics.scope}</strong>
+                      </span>
+                    )}
+                  </div>
+                </div>
+              ) : metricsLoading ? (
+                <p className="mt-3 text-sm text-subtle font-mono">Querying NVD vector string...</p>
+              ) : (
+                <div className="mt-4">
+                  <p className="font-mono text-xs text-muted">
+                    Base Score: {advisory.cvss} ({advisory.severity})
+                  </p>
+                  <p className="mt-1 text-xs text-subtle">
+                    Detailed metric breakdown available directly on NIST NVD.
+                  </p>
+                </div>
+              )}
+
+              {/* Version & CPE Guidance */}
+              <div className="mt-5 border-t border-line/60 pt-4">
+                <p className="text-xs text-muted">
+                  Affects <strong className="text-ink">{advisory.vendor} {advisory.product}</strong>. Because automated version range matching can produce false positives, authoritative version and CPE configuration matrices are maintained directly on NVD:
+                </p>
+                <a
+                  href={`https://nvd.nist.gov/vuln/detail/${advisory.cve}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 inline-flex items-center gap-1.5 text-xs font-medium text-accent hover:underline">
+                  View authoritative affected & patched versions on NVD
+                  <ArrowUpRightIcon className="h-3.5 w-3.5" aria-hidden="true" />
+                </a>
+              </div>
+            </section>
+
+            {/* Required Action */}
             <section className="rounded-lg border border-accent/40 bg-accent/5 p-6">
               <h2 className="text-lg font-semibold text-accent">Required action</h2>
               <p className="mt-2 text-[16px] leading-relaxed text-ink">{advisory.requiredAction}</p>
             </section>
+
+            {/* References */}
             <section>
               <h2 className="text-lg font-semibold text-ink">References</h2>
               <ul className="mt-3 divide-y divide-line border-y border-line">
-                {advisory.references.map((r) =>
-                <li key={r.url}>
+                {advisory.references.map((r) => (
+                  <li key={r.url}>
                     <a
-                    href={r.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-between gap-4 py-3.5 text-[15px] text-ink transition-colors duration-150 ease-out hover:text-accent">
-                    
+                      href={r.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-between gap-4 py-3.5 text-[15px] text-ink transition-colors duration-150 ease-out hover:text-accent">
                       {r.label}
                       <ArrowUpRightIcon className="h-4 w-4 shrink-0 text-muted" aria-hidden="true" />
                     </a>
                   </li>
-                )}
+                ))}
               </ul>
             </section>
           </div>
 
           <aside className="space-y-10">
             <dl className="divide-y divide-line border-y border-line">
-              {facts.map((f) =>
-              <div key={f.label} className="py-3.5">
+              {facts.map((f) => (
+                <div key={f.label} className="py-3.5">
                   <dt className="text-xs text-subtle">{f.label}</dt>
-                  <dd className={`mt-1 text-sm ${f.label === 'Ransomware use' && advisory.ransomware ? 'text-critical' : 'text-ink'}`}>
+                  <dd
+                    className={`mt-1 text-sm ${
+                      f.label === 'Ransomware use' && advisory.ransomware ? 'text-critical font-medium' : 'text-ink'
+                    }`}>
                     {f.value}
                   </dd>
                 </div>
-              )}
+              ))}
             </dl>
+
             <section aria-labelledby="coverage">
               <h2 id="coverage" className="text-sm font-semibold text-ink">
                 SecuBuzz coverage
               </h2>
-              {coverage.length > 0 ?
-              <ul className="mt-3 divide-y divide-line border-y border-line">
-                  {coverage.map((b) =>
-                <li key={b.slug}>
+              {coverage.length > 0 ? (
+                <ul className="mt-3 divide-y divide-line border-y border-line">
+                  {coverage.map((b) => (
+                    <li key={b.slug}>
                       <Link to={`/news/${b.slug}`} className="block py-4">
                         <p className="text-[15px] font-medium leading-snug text-ink transition-colors duration-150 ease-out hover:text-accent">
                           {b.title}
@@ -134,16 +358,19 @@ export function AdvisoryDetail() {
                         <p className="mt-1.5 font-mono text-xs text-subtle">{timeAgo(b.publishedAt)}</p>
                       </Link>
                     </li>
-                )}
-                </ul> :
-
-              <p className="mt-2 text-sm text-muted">No briefs reference this CVE yet.</p>
-              }
+                  ))}
+                </ul>
+              ) : (
+                <p className="mt-2 text-sm text-muted">No briefs reference this CVE yet.</p>
+              )}
             </section>
           </aside>
         </div>
       </article>
-      <AppCta title="Get KEV alerts on your Android device" body="Receive push notifications with remediation deadlines whenever new zero-days are cataloged." />
-    </>);
-
+      <AppCta
+        title="Get KEV alerts on your Android device"
+        body="Receive push notifications with remediation deadlines whenever new zero-days are cataloged."
+      />
+    </>
+  );
 }

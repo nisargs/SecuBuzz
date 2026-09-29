@@ -7,8 +7,36 @@ const rootDir = path.resolve(__dirname, '..');
 
 const FEED_FILE = path.join(rootDir, 'feed.json');
 const R2_FEED_URL = 'https://pub-3fb02516aa81498eb34da1b79161b1c8.r2.dev/feed.json';
+const CISA_KEV_URL = 'https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json';
+
 const OUTPUT_NEWS_TS = path.join(rootDir, 'website', 'src', 'data', 'news.ts');
+const OUTPUT_ADVISORIES_TS = path.join(rootDir, 'website', 'src', 'data', 'advisories.ts');
 const OUTPUT_RSS_XML = path.join(rootDir, 'website', 'public', 'rss.xml');
+
+const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
+
+const ENTITY_TERMS = [
+  'bitget', 'kiteworks', 'netscaler', 'citrix', 'wireshark', 'snowflake',
+  'chatgpt', 'elementor', 'sharepoint', 'fortinet', 'palo alto', 'ivanti',
+  'sonicwall', 'cisco', 'crowdstrike', 'vmware', 'salesforce', 'qualys',
+  'telegram', 'ransomhub', 'lockbit', 'akira', 'qilin', 'blacksuit'
+];
+
+const STOP_WORDS = new Set([
+  'the', 'a', 'an', 'in', 'on', 'for', 'to', 'of', 'and', 'is', 'with', 'after', 'from',
+  'targets', 'fixes', 'flaw', 'vulnerability', 'vulnerabilities', 'security', 'cyber',
+  'attack', 'attacks', 'new', 'release', 'addresses', 'update', 'updates', 'by', 'as',
+  'at', 'about', 'over', 'into', 'warns', 'alert', 'patch', 'patches', 'zero-day', 'exploit',
+  'exploited', 'users', 'critical', 'high', 'active', 'actively', 'amid', 'amidst', 'via'
+]);
+
+function getKeywords(title) {
+  return (title || '')
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, ' ')
+    .split(/\s+/)
+    .filter(w => w.length > 2 && !STOP_WORDS.has(w));
+}
 
 function mapCategory(cat, text = '') {
   const upper = (cat || '').toUpperCase();
@@ -66,24 +94,30 @@ async function loadFeed() {
   return await res.json();
 }
 
-async function main() {
+async function syncNews() {
   const feed = await loadFeed();
   console.log(`Loaded ${feed.length} raw articles from feed`);
 
-  // Sort newest first
-  feed.sort((a, b) => {
-    const timeA = Date.parse(a.publishedAt || a.pubDate || 0) || 0;
-    const timeB = Date.parse(b.publishedAt || b.pubDate || 0) || 0;
-    return timeB - timeA;
-  });
+  const cutoffTime = Date.now() - THIRTY_DAYS_MS;
+
+  // 1. Sort newest first & filter older than 30 days
+  const recentArticles = feed
+    .filter(art => {
+      const t = Date.parse(art.publishedAt || art.pubDate || 0) || 0;
+      return t >= cutoffTime;
+    })
+    .sort((a, b) => {
+      const timeA = Date.parse(a.publishedAt || a.pubDate || 0) || 0;
+      const timeB = Date.parse(b.publishedAt || b.pubDate || 0) || 0;
+      return timeB - timeA;
+    });
+
+  console.log(`Filtered to ${recentArticles.length} articles within 30-day window`);
 
   const seenSlugs = new Map();
-  const cveMap = new Map();
-  const titleMap = new Map();
-
   const deduped = [];
 
-  for (const art of feed) {
+  for (const art of recentArticles) {
     const title = (art.title || art.headline || '').trim();
     if (!title) continue;
 
@@ -91,32 +125,54 @@ async function main() {
     const source = (art.source || art.sourceName || 'SecuBuzz').trim();
     const sourceUrl = (art.sourceUrl || art.url || art.id || '').trim();
     const publishedAt = art.publishedAt || new Date().toISOString();
+    const fullText = (title + ' ' + summary).toLowerCase();
     const cves = extractCves(title + ' ' + summary);
+    const keywords = getKeywords(title);
     const category = mapCategory(art.category, title + ' ' + summary);
+    const time = Date.parse(publishedAt) || 0;
 
     let rawSlug = slugify(title);
     if (!rawSlug) rawSlug = 'brief';
 
-    // Deduplication check:
-    // 1) Shared CVE within 48h
-    // 2) Identical slug/headline
+    // Deduplication check
     let duplicateOf = null;
+    for (const existing of deduped) {
+      const existingTime = Date.parse(existing.publishedAt) || 0;
+      const timeDiffDays = Math.abs(time - existingTime) / (1000 * 3600 * 24);
+      if (timeDiffDays > 7) continue;
 
-    if (cves.length > 0) {
-      for (const cve of cves) {
-        if (cveMap.has(cve)) {
-          duplicateOf = cveMap.get(cve);
+      // 1) Shared CVE
+      if (cves.length > 0 && existing.cves.some(c => cves.includes(c))) {
+        duplicateOf = existing;
+        break;
+      }
+
+      // 2) Shared Enterprise Entity
+      const existingFull = (existing.title + ' ' + existing.summary).toLowerCase();
+      for (const ent of ENTITY_TERMS) {
+        if (fullText.includes(ent) && existingFull.includes(ent)) {
+          duplicateOf = existing;
           break;
         }
       }
-    }
+      if (duplicateOf) break;
 
-    if (!duplicateOf && titleMap.has(rawSlug)) {
-      duplicateOf = titleMap.get(rawSlug);
+      // 3) Shared specific soldier event
+      if (fullText.includes('soldier') && existingFull.includes('soldier')) {
+        duplicateOf = existing;
+        break;
+      }
+
+      // 4) Overlap of 2+ significant keywords within 3 days
+      const existingKw = new Set(existing.keywords);
+      const overlap = keywords.filter(k => existingKw.has(k));
+      if (overlap.length >= 2 && timeDiffDays <= 3) {
+        duplicateOf = existing;
+        break;
+      }
     }
 
     if (duplicateOf) {
-      // Merge as additionalSource
       if (!duplicateOf.additionalSources) duplicateOf.additionalSources = [];
       if (!duplicateOf.additionalSources.some(s => s.sourceUrl === sourceUrl || s.source === source)) {
         duplicateOf.additionalSources.push({ source, sourceUrl });
@@ -128,7 +184,6 @@ async function main() {
       continue;
     }
 
-    // Allocate slug
     let slug = rawSlug;
     if (seenSlugs.has(slug)) {
       const count = seenSlugs.get(slug) + 1;
@@ -147,20 +202,19 @@ async function main() {
       sourceUrl,
       publishedAt,
       cves,
+      keywords,
+      additionalSources: [],
+      aliases: []
     };
 
     deduped.push(item);
-
-    // Record for deduplication of following older articles
-    for (const cve of cves) {
-      cveMap.set(cve, item);
-    }
-    titleMap.set(rawSlug, item);
   }
 
-  console.log(`Deduplicated into ${deduped.length} clean briefs`);
+  // Strip temporary internal keywords before serialization
+  const cleanBriefs = deduped.map(({ keywords, ...rest }) => rest);
+  console.log(`Deduplicated into ${cleanBriefs.length} clean unique briefs`);
 
-  // 1. Write website/src/data/news.ts
+  // Write website/src/data/news.ts
   const newsTsContent = `import type { NewsBrief, NewsCategory } from '../types/news';
 
 export const newsCategories: NewsCategory[] = [
@@ -172,15 +226,15 @@ export const newsCategories: NewsCategory[] = [
   'Cloud'
 ];
 
-export const news: NewsBrief[] = ${JSON.stringify(deduped, null, 2)};
+export const news: NewsBrief[] = ${JSON.stringify(cleanBriefs, null, 2)};
 `;
 
   fs.writeFileSync(OUTPUT_NEWS_TS, newsTsContent, 'utf8');
   console.log(`Updated ${OUTPUT_NEWS_TS}`);
 
-  // 2. Write website/public/rss.xml
+  // Write website/public/rss.xml
   const buildDate = new Date().toUTCString();
-  const rssItems = deduped.slice(0, 50).map(art => {
+  const rssItems = cleanBriefs.slice(0, 50).map(art => {
     const headline = escapeXml(art.title);
     const link = `https://secubuzz.com/news/${art.slug}`;
     const pubDate = art.publishedAt ? new Date(art.publishedAt).toUTCString() : buildDate;
@@ -213,6 +267,72 @@ ${rssItems}
 
   fs.writeFileSync(OUTPUT_RSS_XML, rssXml, 'utf8');
   console.log(`Updated ${OUTPUT_RSS_XML}`);
+}
+
+async function syncAdvisories() {
+  try {
+    console.log('Fetching live CISA KEV catalog...');
+    const res = await fetch(CISA_KEV_URL, {
+      headers: { 'User-Agent': 'SecuBuzz/1.0 (+https://secubuzz.com)' }
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status} fetching CISA KEV`);
+    const data = await res.json();
+    if (!data || !Array.isArray(data.vulnerabilities)) return;
+
+    const sorted = [...data.vulnerabilities].sort((a, b) => {
+      const timeA = Date.parse(a.dateAdded) || 0;
+      const timeB = Date.parse(b.dateAdded) || 0;
+      return timeB - timeA;
+    });
+
+    const advisories = sorted.map(item => {
+      const cve = item.cveID;
+      const isRansomware =
+        item.knownRansomwareCampaignUse === 'Known' ||
+        item.knownRansomwareCampaignUse === 'known' ||
+        item.knownRansomwareCampaignUse === true;
+
+      const rawCwe = item.cwes && Array.isArray(item.cwes) && item.cwes.length > 0
+        ? item.cwes.join(', ')
+        : (item.cwe || '');
+      const cleanCwe = rawCwe ? rawCwe.replace(/^(CWE[:\s-]+)+/i, 'CWE-').trim() : '—';
+
+      return {
+        cve,
+        slug: cve.toLowerCase(),
+        vendor: item.vendorProject || 'Enterprise Vendor',
+        product: item.product || 'Software System',
+        name: item.vulnerabilityName || cve,
+        dateAdded: item.dateAdded || '',
+        dueDate: item.dueDate || 'Immediate',
+        cvss: 9.8,
+        severity: isRansomware ? 'Critical' : 'High',
+        cwe: cleanCwe ? `CWE-${cleanCwe.replace(/^CWE-/i, '')}` : '—',
+        ransomware: isRansomware,
+        description: item.shortDescription || item.vulnerabilityName || '',
+        requiredAction: (item.requiredAction || 'Apply vendor updates according to instructions.').replace(/\s*\(see URL in Notes\)/gi, '').trim(),
+        references: [
+          { label: 'NVD CVE entry', url: `https://nvd.nist.gov/vuln/detail/${cve}` },
+          { label: 'CISA KEV catalog', url: 'https://www.cisa.gov/known-exploited-vulnerabilities-catalog' }
+        ]
+      };
+    });
+
+    const advContent = `import type { Advisory } from '../types/advisory';
+
+export const advisories: Advisory[] = ${JSON.stringify(advisories, null, 2)};
+`;
+
+    fs.writeFileSync(OUTPUT_ADVISORIES_TS, advContent, 'utf8');
+    console.log(`Updated ${OUTPUT_ADVISORIES_TS} with ${advisories.length} CISA KEV entries`);
+  } catch (err) {
+    console.warn('Could not sync CISA advisories statically:', err);
+  }
+}
+
+async function main() {
+  await syncNews();
+  await syncAdvisories();
 }
 
 main().catch(err => {

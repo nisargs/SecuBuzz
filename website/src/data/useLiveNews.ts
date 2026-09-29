@@ -2,6 +2,31 @@ import { useState, useEffect } from 'react';
 import { news as initialNews } from './news';
 import type { NewsBrief, NewsCategory } from '../types/news';
 
+const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
+
+const ENTITY_TERMS = [
+  'bitget', 'kiteworks', 'netscaler', 'citrix', 'wireshark', 'snowflake',
+  'chatgpt', 'elementor', 'sharepoint', 'fortinet', 'palo alto', 'ivanti',
+  'sonicwall', 'cisco', 'crowdstrike', 'vmware', 'salesforce', 'qualys',
+  'telegram', 'ransomhub', 'lockbit', 'akira', 'qilin', 'blacksuit'
+];
+
+const STOP_WORDS = new Set([
+  'the', 'a', 'an', 'in', 'on', 'for', 'to', 'of', 'and', 'is', 'with', 'after', 'from',
+  'targets', 'fixes', 'flaw', 'vulnerability', 'vulnerabilities', 'security', 'cyber',
+  'attack', 'attacks', 'new', 'release', 'addresses', 'update', 'updates', 'by', 'as',
+  'at', 'about', 'over', 'into', 'warns', 'alert', 'patch', 'patches', 'zero-day', 'exploit',
+  'exploited', 'users', 'critical', 'high', 'active', 'actively', 'amid', 'amidst', 'via'
+]);
+
+function getKeywords(title: string): string[] {
+  return (title || '')
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, ' ')
+    .split(/\s+/)
+    .filter(w => w.length > 2 && !STOP_WORDS.has(w));
+}
+
 function mapCategory(cat: string = '', text: string = ''): NewsCategory {
   const upper = cat.toUpperCase();
   if (upper === 'BREACH') return 'Breach';
@@ -31,17 +56,26 @@ function slugify(title: string): string {
     .slice(0, 60);
 }
 
+interface InternalBrief extends NewsBrief {
+  keywords?: string[];
+}
+
 function transformFeed(feed: any[]): NewsBrief[] {
-  const sorted = [...feed].sort((a, b) => {
-    const timeA = Date.parse(a.publishedAt || a.pubDate || 0) || 0;
-    const timeB = Date.parse(b.publishedAt || b.pubDate || 0) || 0;
-    return timeB - timeA;
-  });
+  const cutoffTime = Date.now() - THIRTY_DAYS_MS;
+
+  const sorted = [...feed]
+    .filter(art => {
+      const t = Date.parse(art.publishedAt || art.pubDate || 0) || 0;
+      return t >= cutoffTime;
+    })
+    .sort((a, b) => {
+      const timeA = Date.parse(a.publishedAt || a.pubDate || 0) || 0;
+      const timeB = Date.parse(b.publishedAt || b.pubDate || 0) || 0;
+      return timeB - timeA;
+    });
 
   const seenSlugs = new Map<string, number>();
-  const cveMap = new Map<string, NewsBrief>();
-  const titleMap = new Map<string, NewsBrief>();
-  const deduped: NewsBrief[] = [];
+  const deduped: InternalBrief[] = [];
 
   for (const art of sorted) {
     const title = (art.title || art.headline || '').trim();
@@ -51,24 +85,46 @@ function transformFeed(feed: any[]): NewsBrief[] {
     const source = (art.source || art.sourceName || 'SecuBuzz').trim();
     const sourceUrl = (art.sourceUrl || art.url || art.id || '').trim();
     const publishedAt = art.publishedAt || new Date().toISOString();
+    const fullText = (title + ' ' + summary).toLowerCase();
     const cves = extractCves(title + ' ' + summary);
+    const keywords = getKeywords(title);
     const category = mapCategory(art.category, title + ' ' + summary);
+    const time = Date.parse(publishedAt) || 0;
 
     let rawSlug = slugify(title);
     if (!rawSlug) rawSlug = 'brief';
 
-    let duplicateOf: NewsBrief | null = null;
-    if (cves.length > 0) {
-      for (const cve of cves) {
-        if (cveMap.has(cve)) {
-          duplicateOf = cveMap.get(cve)!;
+    let duplicateOf: InternalBrief | null = null;
+    for (const existing of deduped) {
+      const existingTime = Date.parse(existing.publishedAt) || 0;
+      const timeDiffDays = Math.abs(time - existingTime) / (1000 * 3600 * 24);
+      if (timeDiffDays > 7) continue;
+
+      if (cves.length > 0 && existing.cves.some(c => cves.includes(c))) {
+        duplicateOf = existing;
+        break;
+      }
+
+      const existingFull = (existing.title + ' ' + existing.summary).toLowerCase();
+      for (const ent of ENTITY_TERMS) {
+        if (fullText.includes(ent) && existingFull.includes(ent)) {
+          duplicateOf = existing;
           break;
         }
       }
-    }
+      if (duplicateOf) break;
 
-    if (!duplicateOf && titleMap.has(rawSlug)) {
-      duplicateOf = titleMap.get(rawSlug)!;
+      if (fullText.includes('soldier') && existingFull.includes('soldier')) {
+        duplicateOf = existing;
+        break;
+      }
+
+      const existingKw = new Set(existing.keywords || []);
+      const overlap = keywords.filter(k => existingKw.has(k));
+      if (overlap.length >= 2 && timeDiffDays <= 3) {
+        duplicateOf = existing;
+        break;
+      }
     }
 
     if (duplicateOf) {
@@ -92,7 +148,7 @@ function transformFeed(feed: any[]): NewsBrief[] {
       seenSlugs.set(slug, 1);
     }
 
-    const item: NewsBrief = {
+    const item: InternalBrief = {
       slug,
       title,
       summary,
@@ -101,17 +157,15 @@ function transformFeed(feed: any[]): NewsBrief[] {
       sourceUrl,
       publishedAt,
       cves,
+      keywords,
+      additionalSources: [],
+      aliases: []
     };
 
     deduped.push(item);
-
-    for (const cve of cves) {
-      cveMap.set(cve, item);
-    }
-    titleMap.set(rawSlug, item);
   }
 
-  return deduped;
+  return deduped.map(({ keywords, ...rest }) => rest);
 }
 
 let cachedNews: NewsBrief[] = initialNews;

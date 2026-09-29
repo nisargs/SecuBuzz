@@ -8,22 +8,28 @@ function transformKev(list: any[]): Advisory[] {
     const isRansomware =
       item.knownRansomwareCampaignUse === 'Known' ||
       item.knownRansomwareCampaignUse === 'known' ||
-      item.knownRansomwareCampaignUse === true;
+      item.knownRansomwareCampaignUse === true ||
+      item.ransomware === true;
+
+    const rawCwe = item.cwes && Array.isArray(item.cwes) && item.cwes.length > 0
+      ? item.cwes.join(', ')
+      : (item.cwe || '');
+    const cleanCwe = rawCwe ? rawCwe.replace(/^(CWE[:\s-]+)+/i, 'CWE-').trim() : '—';
 
     return {
       cve,
       slug: cve.toLowerCase(),
-      vendor: item.vendorProject,
-      product: item.product,
-      name: item.vulnerabilityName,
-      dateAdded: item.dateAdded,
-      dueDate: item.dueDate,
+      vendor: item.vendorProject || 'Enterprise Vendor',
+      product: item.product || 'Software System',
+      name: item.vulnerabilityName || cve,
+      dateAdded: item.dateAdded || '',
+      dueDate: item.dueDate || 'Immediate',
       cvss: 9.8,
-      severity: 'Critical',
-      cwe: item.cwes && Array.isArray(item.cwes) ? `CWE: ${item.cwes.join(', ')}` : '',
+      severity: isRansomware ? 'Critical' : 'High',
+      cwe: cleanCwe || '—',
       ransomware: isRansomware,
-      description: item.shortDescription || item.vulnerabilityName,
-      requiredAction: item.requiredAction || 'Apply vendor updates according to instructions.',
+      description: item.shortDescription || item.vulnerabilityName || '',
+      requiredAction: (item.requiredAction || 'Apply vendor updates according to instructions.').replace(/\s*\(see URL in Notes\)/gi, '').trim(),
       references: [
         { label: 'NVD CVE entry', url: `https://nvd.nist.gov/vuln/detail/${cve}` },
         { label: 'CISA KEV catalog', url: 'https://www.cisa.gov/known-exploited-vulnerabilities-catalog' }

@@ -83,6 +83,118 @@ import {
 const R2_FEED_URL = 'https://pub-3fb02516aa81498eb34da1b79161b1c8.r2.dev/feed.json';
 const CISA_KEV_URL = 'https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json';
 
+const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
+const ENTITY_TERMS = [
+  'bitget', 'kiteworks', 'netscaler', 'citrix', 'wireshark', 'snowflake',
+  'chatgpt', 'elementor', 'sharepoint', 'fortinet', 'palo alto', 'ivanti',
+  'sonicwall', 'cisco', 'crowdstrike', 'vmware', 'salesforce', 'qualys',
+  'telegram', 'ransomhub', 'lockbit', 'akira', 'qilin', 'blacksuit'
+];
+
+const STOP_WORDS = new Set([
+  'the', 'a', 'an', 'in', 'on', 'for', 'to', 'of', 'and', 'is', 'with', 'after', 'from',
+  'targets', 'fixes', 'flaw', 'vulnerability', 'vulnerabilities', 'security', 'cyber',
+  'attack', 'attacks', 'new', 'release', 'addresses', 'update', 'updates', 'by', 'as',
+  'at', 'about', 'over', 'into', 'warns', 'alert', 'patch', 'patches', 'zero-day', 'exploit',
+  'exploited', 'users', 'critical', 'high', 'active', 'actively', 'amid', 'amidst', 'via'
+]);
+
+function getTitleKeywords(title: string): string[] {
+  return (title || '')
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, ' ')
+    .split(/\s+/)
+    .filter(w => w.length > 2 && !STOP_WORDS.has(w));
+}
+
+function extractCvesFromText(text: string): string[] {
+  const matches = (text || '').match(/CVE-\d{4}-\d{4,7}/gi);
+  return matches ? Array.from(new Set(matches.map(c => c.toUpperCase()))) : [];
+}
+
+function deduplicateFeed(articles: any[]): ArticleItem[] {
+  const cutoffTime = Date.now() - THIRTY_DAYS_MS;
+  const recentArticles = (articles || [])
+    .filter(art => {
+      const t = Date.parse(art.publishedAt || art.pubDate || 0) || 0;
+      return t >= cutoffTime;
+    })
+    .sort((a, b) => {
+      const timeA = Date.parse(a.publishedAt || a.pubDate || 0) || 0;
+      const timeB = Date.parse(b.publishedAt || b.pubDate || 0) || 0;
+      return timeB - timeA;
+    });
+
+  const deduped: any[] = [];
+
+  for (const art of recentArticles) {
+    const title = (art.title || art.headline || '').trim();
+    if (!title) continue;
+
+    const summary = (art.summary || '').trim();
+    const source = (art.source || art.sourceName || 'SecuBuzz').trim();
+    const sourceUrl = (art.sourceUrl || art.url || art.id || '').trim();
+    const publishedAt = art.publishedAt || new Date().toISOString();
+    const fullText = (title + ' ' + summary).toLowerCase();
+    const cves = extractCvesFromText(title + ' ' + summary);
+    const keywords = getTitleKeywords(title);
+    const time = Date.parse(publishedAt) || 0;
+
+    let duplicateOf: any = null;
+    for (const existing of deduped) {
+      const existingTime = Date.parse(existing.publishedAt) || 0;
+      const timeDiffDays = Math.abs(time - existingTime) / (1000 * 3600 * 24);
+      if (timeDiffDays > 7) continue;
+
+      // 1) Shared CVE
+      const existingCves = extractCvesFromText((existing.title || existing.headline || '') + ' ' + (existing.summary || ''));
+      if (cves.length > 0 && existingCves.some(c => cves.includes(c))) {
+        duplicateOf = existing;
+        break;
+      }
+
+      // 2) Shared Enterprise Entity
+      const existingFull = ((existing.title || existing.headline || '') + ' ' + (existing.summary || '')).toLowerCase();
+      for (const ent of ENTITY_TERMS) {
+        if (fullText.includes(ent) && existingFull.includes(ent)) {
+          duplicateOf = existing;
+          break;
+        }
+      }
+      if (duplicateOf) break;
+
+      // 3) Shared specific soldier espionage event
+      if (fullText.includes('soldier') && existingFull.includes('soldier')) {
+        duplicateOf = existing;
+        break;
+      }
+
+      // 4) Overlap of 2+ significant keywords within 3 days
+      const existingKw = new Set(getTitleKeywords(existing.title || existing.headline || ''));
+      const overlap = keywords.filter(k => existingKw.has(k));
+      if (overlap.length >= 2 && timeDiffDays <= 3) {
+        duplicateOf = existing;
+        break;
+      }
+    }
+
+    if (duplicateOf) {
+      if (!duplicateOf.additionalSources) duplicateOf.additionalSources = [];
+      if (!duplicateOf.additionalSources.some((s: any) => s.sourceUrl === sourceUrl || s.source === source)) {
+        duplicateOf.additionalSources.push({ source, sourceUrl });
+      }
+      continue;
+    }
+
+    deduped.push({
+      ...art,
+      additionalSources: Array.isArray(art.additionalSources) ? art.additionalSources : []
+    });
+  }
+
+  return deduped.slice(0, 250);
+}
+
 let cachedArticles: ArticleItem[] | null = null;
 let cachedArticlesTime = 0;
 
@@ -94,7 +206,8 @@ async function getArticles(): Promise<ArticleItem[]> {
   try {
     const res = await fetch(R2_FEED_URL);
     if (res.ok) {
-      cachedArticles = await res.json();
+      const raw: any[] = await res.json();
+      cachedArticles = deduplicateFeed(raw);
       cachedArticlesTime = now;
       return cachedArticles || [];
     }
@@ -108,10 +221,10 @@ let cachedAllKev: KevVulnerability[] = SEED_KEV_ADVISORIES;
 let cachedRecentKev: KevVulnerability[] = SEED_KEV_ADVISORIES;
 let cachedKevTime = 0;
 
-async function getKevAdvisories(): Promise<KevVulnerability[]> {
+async function getKevAdvisories(full: boolean = true): Promise<KevVulnerability[]> {
   const now = Date.now();
   if (cachedAllKev.length > 0 && now - cachedKevTime < 30 * 60 * 1000) {
-    return cachedRecentKev;
+    return full ? cachedAllKev : cachedRecentKev;
   }
   try {
     const res = await fetch(CISA_KEV_URL, {
@@ -132,13 +245,86 @@ async function getKevAdvisories(): Promise<KevVulnerability[]> {
         cachedAllKev = sorted;
         cachedRecentKev = sorted.slice(0, 100);
         cachedKevTime = now;
-        return cachedRecentKev;
+        return full ? cachedAllKev : cachedRecentKev;
       }
     }
   } catch (err) {
     console.error('Failed to fetch KEV catalog:', err);
   }
-  return cachedRecentKev.length > 0 ? cachedRecentKev : SEED_KEV_ADVISORIES;
+  return full
+    ? (cachedAllKev.length > 0 ? cachedAllKev : SEED_KEV_ADVISORIES)
+    : (cachedRecentKev.length > 0 ? cachedRecentKev : SEED_KEV_ADVISORIES);
+}
+
+const epssCache = new Map<string, { epss: number; percentile: number; cachedAt: number }>();
+async function getEpssScore(cve: string) {
+  const now = Date.now();
+  const cached = epssCache.get(cve);
+  if (cached && now - cached.cachedAt < 24 * 3600 * 1000) {
+    return cached;
+  }
+  try {
+    const res = await fetch(`https://api.first.org/data/v1/epss?cve=${cve}`);
+    if (res.ok) {
+      const json: any = await res.json();
+      const item = json.data?.[0];
+      if (item && item.epss) {
+        const result = {
+          cve,
+          epss: parseFloat(item.epss),
+          percentile: parseFloat(item.percentile),
+          date: item.date,
+          cachedAt: now,
+        };
+        epssCache.set(cve, result);
+        return result;
+      }
+    }
+  } catch (err) {
+    console.warn('EPSS fetch error:', err);
+  }
+  return { cve, epss: null, percentile: null };
+}
+
+const cveMetricsCache = new Map<string, any>();
+async function getCveMetrics(cve: string) {
+  const now = Date.now();
+  const cached = cveMetricsCache.get(cve);
+  if (cached && now - cached.cachedAt < 24 * 3600 * 1000) {
+    return cached;
+  }
+  try {
+    const res = await fetch(`https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=${cve}`, {
+      headers: { 'User-Agent': 'SecuBuzz/1.0 (+https://secubuzz.com)' },
+    });
+    if (res.ok) {
+      const json: any = await res.json();
+      const vuln = json.vulnerabilities?.[0]?.cve;
+      const v31 = vuln?.metrics?.cvssMetricV31?.[0]?.cvssData;
+      const v40 = vuln?.metrics?.cvssMetricV40?.[0]?.cvssData;
+      const best = v31 || v40;
+      if (best) {
+        const result = {
+          cve,
+          vectorString: best.vectorString,
+          version: best.version,
+          score: best.baseScore,
+          severity: best.baseSeverity,
+          attackVector: best.attackVector,
+          attackComplexity: best.attackComplexity,
+          privilegesRequired: best.privilegesRequired,
+          userInteraction: best.userInteraction,
+          scope: best.scope,
+          cachedAt: now,
+        };
+        cveMetricsCache.set(cve, result);
+        return result;
+      }
+    }
+  } catch (err) {
+    console.warn('NVD fetch error:', err);
+  }
+  return { cve, vectorString: null };
 }
 
 async function findKevAdvisory(slug: string): Promise<KevVulnerability | undefined> {
@@ -216,20 +402,49 @@ export default {
         });
       }
 
-      // API: Advisories JSON
+      // API: Advisories JSON (Full CISA KEV catalog by default)
       if (url.pathname === '/api/advisories') {
-        const advisories = await getKevAdvisories();
+        const all = url.searchParams.get('all') !== 'false';
+        const advisories = await getKevAdvisories(all);
         return jsonResponse({
           success: true,
           count: advisories.length,
           advisories,
+        }, 200, {
+          'Cache-Control': 'public, max-age=1800, s-maxage=1800',
         });
       }
 
-      // API: News articles JSON
+      // API: EPSS Exploit Prediction Scores (FIRST.org)
+      if (url.pathname === '/api/epss') {
+        const cve = (url.searchParams.get('cve') || '').toUpperCase().trim();
+        if (!cve || !cve.startsWith('CVE-')) {
+          return jsonResponse({ error: 'Valid CVE parameter required' }, 400);
+        }
+        const data = await getEpssScore(cve);
+        return jsonResponse(data, 200, {
+          'Cache-Control': 'public, max-age=86400, s-maxage=86400',
+        });
+      }
+
+      // API: Authoritative CVSS Metrics & Vector Strings (NIST NVD)
+      if (url.pathname === '/api/cve-metrics') {
+        const cve = (url.searchParams.get('cve') || '').toUpperCase().trim();
+        if (!cve || !cve.startsWith('CVE-')) {
+          return jsonResponse({ error: 'Valid CVE parameter required' }, 400);
+        }
+        const data = await getCveMetrics(cve);
+        return jsonResponse(data, 200, {
+          'Cache-Control': 'public, max-age=86400, s-maxage=86400',
+        });
+      }
+
+      // API: News articles JSON (Deduplicated, 30-day window)
       if (url.pathname === '/api/news' || url.pathname === '/feed.json') {
         const articles = await getArticles();
-        return jsonResponse(articles);
+        return jsonResponse(articles, 200, {
+          'Cache-Control': 'public, max-age=300, s-maxage=300',
+        });
       }
 
       // Redirect legacy .html URLs to clean SPA paths
@@ -319,20 +534,6 @@ export default {
         }
       }
 
-      // Public Feed Proxy (Enables https://secubuzz.com/feed.json to serve live R2 feed directly)
-      if (url.pathname === '/feed.json') {
-        const r2Response = await fetch(
-          'https://pub-3fb02516aa81498eb34da1b79161b1c8.r2.dev/feed.json'
-        );
-        return new Response(r2Response.body, {
-          status: r2Response.status,
-          headers: {
-            'Content-Type': 'application/json',
-            'Cache-Control': 'no-cache, no-store, must-revalidate',
-            ...CORS_HEADERS,
-          },
-        });
-      }
 
       // 1. Health check
       if (url.pathname === '/health' || url.pathname === '/api/health') {

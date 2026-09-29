@@ -12,7 +12,13 @@ interface LegalPageProps {
 }
 
 export function LegalPage({ title, updated, sections, canonicalPath, description }: LegalPageProps) {
-  const path = canonicalPath || (title.toLowerCase().includes('privacy') ? '/privacy' : '/account-deletion');
+  const path =
+    canonicalPath ||
+    (title.toLowerCase().includes('privacy')
+      ? '/privacy'
+      : title.toLowerCase().includes('terms')
+      ? '/terms'
+      : '/account-deletion');
   const desc = description || `Official ${title} for SecuBuzz by MiSo Labs. No tracking, anonymous crash reports only.`;
 
   return (

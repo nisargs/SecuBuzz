@@ -649,7 +649,48 @@ export default function ArticleDetailScreen() {
           />
         </Pressable>
 
+        {article.additionalSources && article.additionalSources.length > 0 && (
+          <View style={styles.additionalSourcesContainer}>
+            <Text style={[styles.additionalSourcesLabel, { color: colors.textMuted }]}>
+              ALSO REPORTED BY
+            </Text>
+            <View style={styles.additionalSourcesList}>
+              {article.additionalSources.map((src, idx) => (
+                <Pressable
+                  key={idx}
+                  accessibilityRole="link"
+                  accessibilityLabel={`Read coverage on ${src.sourceName}`}
+                  onPress={() => {
+                    void openArticle(src.sourceUrl);
+                  }}
+                  style={({ pressed }) => [
+                    styles.additionalSourceChip,
+                    {
+                      borderColor: colors.border,
+                      backgroundColor: isDark
+                        ? 'rgba(255, 255, 255, 0.04)'
+                        : 'rgba(0, 0, 0, 0.03)',
+                    },
+                    pressed && { opacity: 0.7 },
+                  ]}
+                >
+                  <Text style={[styles.additionalSourceText, { color: colors.textPrimary }]}>
+                    {src.sourceName}
+                  </Text>
+                  <Ionicons
+                    name="arrow-forward"
+                    size={11}
+                    color={accentColor}
+                    style={{ marginLeft: 4 }}
+                  />
+                </Pressable>
+              ))}
+            </View>
+          </View>
+        )}
+
         <View style={styles.timeZoneNoteContainer}>
+
           <Ionicons
             name="time-outline"
             size={13}
@@ -920,4 +961,32 @@ const styles = StyleSheet.create({
     marginTop: 8,
     fontStyle: 'italic',
   },
+  additionalSourcesContainer: {
+    marginTop: 16,
+    marginBottom: 6,
+  },
+  additionalSourcesLabel: {
+    fontSize: 11,
+    fontFamily: 'Exo_600SemiBold',
+    letterSpacing: 0.8,
+    marginBottom: 8,
+  },
+  additionalSourcesList: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: 8,
+  },
+  additionalSourceChip: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 10,
+    paddingVertical: 6,
+    borderRadius: 6,
+    borderWidth: 1,
+  },
+  additionalSourceText: {
+    fontSize: 12,
+    fontFamily: 'Exo_500Medium',
+  },
 });
+

@@ -60,6 +60,7 @@ export function generateSitemapXml(
     { loc: 'https://secubuzz.com/download', priority: '0.9', changefreq: 'monthly' },
     { loc: 'https://secubuzz.com/publishers', priority: '0.8', changefreq: 'monthly' },
     { loc: 'https://secubuzz.com/privacy', priority: '0.8', changefreq: 'monthly' },
+    { loc: 'https://secubuzz.com/terms', priority: '0.8', changefreq: 'monthly' },
     { loc: 'https://secubuzz.com/contact', priority: '0.7', changefreq: 'monthly' },
     { loc: 'https://secubuzz.com/about', priority: '0.7', changefreq: 'monthly' },
     { loc: 'https://secubuzz.com/account-deletion', priority: '0.6', changefreq: 'monthly' },
@@ -198,6 +199,9 @@ export function injectMetaTags(
   } else if (pathname === '/privacy') {
     title = 'Privacy Policy · SecuBuzz';
     description = 'Privacy Policy for SecuBuzz by MiSo Labs. No tracking, zero ad profiles, anonymous crash reports only.';
+  } else if (pathname === '/terms') {
+    title = 'Terms of Service · SecuBuzz';
+    description = 'Terms of Service for SecuBuzz by MiSo Labs. Security intelligence reading terms and guidelines.';
   } else if (pathname === '/account-deletion') {
     title = 'Account & Data Deletion · SecuBuzz';
     description = 'Data privacy and deletion policy for SecuBuzz. 100% on-device data retention with immediate local purge options.';

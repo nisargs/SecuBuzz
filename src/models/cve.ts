@@ -18,9 +18,13 @@ export type CveAdvisory = {
   url: string;
   cwes?: string[];
   cvssScore?: number;
+  cvssVector?: string;
+  epssScore?: number;
+  epssPercentile?: number;
   patchedVersion?: string;
   vulnerableVersionRange?: string;
 };
+
 
 export type AdvisorySourceFilter = 'ALL' | 'CISA' | 'GITHUB';
 export type AdvisorySeverityFilter = 'ALL' | AdvisorySeverity | 'RANSOMWARE';

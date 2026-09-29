@@ -92,7 +92,9 @@ async function fetchCisaKev(): Promise<CveAdvisory[]> {
         dueDate: item.dueDate || 'Immediate',
         knownRansomwareCampaignUse: item.knownRansomwareCampaignUse || 'Unknown',
         url,
-        cwes: item.cwes || [],
+        cwes: (item.cwes || []).map((c: any) =>
+          String(c).replace(/^CWE:\s*/i, '').trim(),
+        ).filter(Boolean),
       };
     });
   } catch (err) {
@@ -265,7 +267,11 @@ async function fetchGitHubAdvisories(): Promise<CveAdvisory[]> {
         dueDate: undefined,
         knownRansomwareCampaignUse: 'Unknown',
         url: item.html_url,
-        cwes: item.cwes?.map((c) => c.cwe_id || c.name || '').filter(Boolean),
+        cwes: item.cwes
+          ?.map((c) =>
+            (c.cwe_id || c.name || '').replace(/^CWE:\s*/i, '').trim(),
+          )
+          .filter(Boolean),
         cvssScore: cvss,
         patchedVersion: firstPatched,
         vulnerableVersionRange: vulnRange,
