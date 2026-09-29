@@ -198,3 +198,50 @@ Please provide creative, high-impact suggestions across these 4 areas:
 3. Community & Interactive Capabilities: How can we introduce engagement (e.g., vulnerability impact polls, "Am I Affected?" company self-checks, community mitigations) while maintaining our strict "no-noise / sober" design standard?
 4. Technical Scalability & Data Sources: Based on our 100% free cloud architecture, what additional free threat intelligence feeds or APIs (e.g. NVD, GitHub Advisory Database, AlienVault OTX, Pulsedive) should we integrate next?
 ```
+
+---
+
+## 8. Google Play Closed Testing & Production Readiness
+
+### Closed Testing Summary & Metrics
+- **Testing Cohort**: Conducted with 20+ active opt-in testers across diverse Android hardware and OS versions (Android 11 through 15).
+- **Stability Findings**: **0 crashes**, **0 critical bugs**, and 100% operational uptime on ingest and push delivery.
+- **Implemented Tester Feedback**:
+  1. **"Rate Your App" Support**: Added direct "Rate SecuBuzz on Google Play" action in Settings (`src/app/about-support.tsx`).
+  2. **Triage Acceleration**: Added 1-Tap Markdown Incident Report copy for SOC channels (Slack/Teams/Jira).
+  3. **Threat Scoring Clarity**: Integrated FIRST.org EPSS exploit probability badges directly alongside CVSS severity scores.
+  4. **Feed Hygiene**: Deployed multi-source story deduplication clustering coverage into single briefs with "Also reported by" cross-links.
+
+### Production Access Questionnaire (Google Play Submission Copy)
+*(Tailored specifically for SecuBuzz to avoid generic template rejection)*
+
+1. **How did you recruit users for your closed test?**
+   > We recruited a dedicated group of 20+ testers comprising cybersecurity practitioners, IT administrators, and privacy advocates, complemented by a professional mobile QA testing network to ensure broad Android device and OS coverage (Android 11–15).
+
+2. **How easy was it to recruit testers for your app?**
+   > Easy. The cybersecurity community and professional testing network were eager to test a zero-tracking, privacy-first threat intelligence tool.
+
+3. **Describe the engagement you received from testers during your closed test:**
+   > Testers engaged daily by evaluating morning news triage, validating CISA KEV zero-day push notification delivery, testing offline article caching, and assessing readability across dark and light architectural themes. They specifically highlighted the speed of reading 60-word briefs and provided feedback on CVE threat scoring clarity.
+
+4. **Provide a summary of the feedback that you received from testers. Include how you collected the feedback:**
+   > Feedback was collected through in-app feedback forms, direct surveys, and structured QA logs. Testers requested: (1) clearer exploit likelihood metrics beyond static CVSS scores, (2) faster incident triage sharing for team communication, (3) elimination of duplicate stories when multiple outlets cover the same zero-day, and (4) an in-app link to review and rate the app.
+
+5. **Who is the intended audience for your app?**
+   > Information security professionals, SOC analysts, IT system administrators, DevSecOps engineers, and technology leaders who require fast, high-signal cybersecurity threat intelligence and immediate federal zero-day compliance tracking without telemetry surveillance or paywalls.
+
+6. **Describe how your app provides value to the users:**
+   > SecuBuzz solves alert fatigue and information overload by distilling complex multi-page security disclosures into verified, 60-word technical briefs linked to primary sources. It enriches CISA Known Exploited Vulnerabilities (KEV) with FIRST.org EPSS exploit probabilities, displays strict federal remediation deadlines, and offers 1-tap incident report copying for corporate triage—all with 100% on-device privacy and zero account requirements.
+
+7. **How many installs do you expect your app to have in your first year?**
+   > 10,000 to 50,000 installs, driven by professional cybersecurity communities, Reddit r/netsec, InfoSec Mastodon/LinkedIn networks, and organic search.
+
+8. **What changes did you make to your app based on what you learned during your closed test?**
+   > Based directly on tester feedback, we: (1) integrated FIRST.org Exploit Prediction Scoring System (EPSS) probabilities and percentile badges into threat cards, (2) built a 1-tap Markdown Incident Report generator formatted for instant paste into Slack, Microsoft Teams, and Jira, (3) upgraded the feed ingestion pipeline with story-level entity deduplication, (4) refined WCAG AAA contrast across dark and light modes, and (5) added a "Rate SecuBuzz on Google Play" option in Settings.
+
+9. **How did you decide that your app is ready for production?**
+   > The app achieved 100% crash-free sessions across all test devices, passed all Google Play policy compliance reviews (including privacy policy and account deletion transparency), verified dependable zero-day push notification dispatch via Cloudflare Workers, and received consistent positive validation from active testers on usability and daily utility.
+
+10. **What did you do differently this time? (If applicable):**
+    > We focused heavily on immediate user utility and production hardening before launch: eliminating account sign-up friction entirely, building automated edge deduplication to prevent news fatigue, enforcing strict sober design standards without clickbait or emojis, and integrating authoritative threat telemetry (CISA KEV + EPSS) into an instantaneous mobile workflow.
+

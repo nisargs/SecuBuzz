@@ -129,6 +129,17 @@ export default function AboutSupportScreen() {
           ]}
         >
           <SubItemRow
+            icon="star-outline"
+            title="Rate SecuBuzz on Google Play"
+            subtitle="Support development & share your review"
+            onPress={() => void Linking.openURL('https://play.google.com/store/apps/details?id=com.secubuzz.app')}
+            accentColor={accentColor}
+            colors={colors}
+          />
+
+          <View style={[styles.divider, { backgroundColor: colors.border }]} />
+
+          <SubItemRow
             icon="chatbubbles-outline"
             title="Contact & Feedback"
             subtitle="Share suggestions, report bugs, or get support"
