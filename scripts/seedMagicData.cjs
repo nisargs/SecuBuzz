@@ -74,7 +74,7 @@ export const newsCategories: NewsCategory[] = [
 export const news: NewsBrief[] = ${JSON.stringify(newsItems, null, 2)};
 `;
 
-fs.writeFileSync(path.join(rootDir, 'magicpatterns-export', 'src', 'data', 'news.ts'), newsTs);
+fs.writeFileSync(path.join(rootDir, 'website', 'src', 'data', 'news.ts'), newsTs);
 console.log(`Generated news.ts with ${newsItems.length} real articles`);
 
 // 2. Process seedKev.ts -> advisories.ts
@@ -124,5 +124,5 @@ const advisoriesTs = `import type { Advisory } from '../types/advisory';
 export const advisories: Advisory[] = ${JSON.stringify(advisories, null, 2)};
 `;
 
-fs.writeFileSync(path.join(rootDir, 'magicpatterns-export', 'src', 'data', 'advisories.ts'), advisoriesTs);
+fs.writeFileSync(path.join(rootDir, 'website', 'src', 'data', 'advisories.ts'), advisoriesTs);
 console.log(`Generated advisories.ts with ${advisories.length} real CISA KEV entries`);

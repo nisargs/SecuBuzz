@@ -68,7 +68,7 @@ import {
   ArticleItem,
   KevVulnerability,
   generateSitemapXml,
-} from './websiteHtml';
+} from './sitemap';
 import { SEED_KEV_ADVISORIES } from './seedKev';
 
 import {

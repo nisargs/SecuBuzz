@@ -160,9 +160,9 @@ fs.writeFileSync(path.join(rootDir, 'generated_apple_touch.png'), appleTouch);
 fs.writeFileSync(path.join(rootDir, 'assets', 'favicon.png'), icon48);
 console.log('Updated assets/favicon.png with SecuBuzz icon (48x48)');
 
-// Also write copies to docs/
-fs.writeFileSync(path.join(rootDir, 'docs', 'favicon.png'), icon48);
-fs.writeFileSync(path.join(rootDir, 'docs', 'favicon.ico'), icon48);
-fs.writeFileSync(path.join(rootDir, 'docs', 'icon.png'), icon512);
-fs.writeFileSync(path.join(rootDir, 'docs', 'apple-touch-icon.png'), appleTouch);
-console.log('Updated docs/ assets');
+// Also write copies to website/public/
+fs.writeFileSync(path.join(rootDir, 'website', 'public', 'favicon.png'), icon48);
+fs.writeFileSync(path.join(rootDir, 'website', 'public', 'favicon.ico'), icon48);
+fs.writeFileSync(path.join(rootDir, 'website', 'public', 'icon.png'), icon512);
+fs.writeFileSync(path.join(rootDir, 'website', 'public', 'apple-touch-icon.png'), appleTouch);
+console.log('Updated website/public/ assets');
