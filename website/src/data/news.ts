@@ -11,6 +11,78 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "former-air-force-members-sentenced-for-multi-million-dollar-",
+    "title": "Former Air Force Members Sentenced for Multi-Million Dollar BEC Scam",
+    "summary": "Two ex‑Air Force personnel received 189 months in prison after orchestrating a BEC fraud scheme that spoofed vendors to redirect wire transfers. The operation diverted payments to the ring’s accounts, resulting in a multimillion‑dollar loss.",
+    "category": "Policy",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/ex-air-force-members-jailed-bec-fraud",
+    "publishedAt": "2026-09-29T23:15:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "phishing-campaigns-exploit-msp360-rmm-to-deploy-remote-acces",
+    "title": "Phishing Campaigns Exploit MSP360 RMM to Deploy Remote Access Tools",
+    "summary": "Microsoft identified phishing attacks that leveraged MSP360 RMM to install ScreenConnect, creating redundant remote‑access channels for subsequent malicious activity. The technique allows attackers to maintain persistent footholds via legitimate remote‑management software.",
+    "category": "Vulnerability",
+    "source": "Microsoft Security",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/09/29/phishing-abuses-rmm-tools-persistent-access/",
+    "publishedAt": "2026-09-29T21:39:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "apple-zero-day-cve-2026-86950-weaponized-in-targeted-attacks",
+    "title": "Apple Zero‑Day CVE‑2026‑86950 Weaponized in Targeted Attacks",
+    "summary": "Attackers are exploiting CVE‑2026‑86950, an out‑of‑bounds write flaw in Apple software, in highly sophisticated attacks. The vulnerability allows attackers to overwrite memory and potentially execute arbitrary code, enabling targeted compromise of affected devices. Apple has issued a patch to mitigate the flaw.",
+    "category": "Vulnerability",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/apple-zero-day-vulnerability-weaponized-targeted-attacks",
+    "publishedAt": "2026-09-29T21:31:29.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "star-blizzard-launches-redflick-cyber-espionage-campaign-tar",
+    "title": "Star Blizzard Launches RedFlick Cyber Espionage Campaign Targeting 100+ Western Organizations",
+    "summary": "Russia’s Star Blizzard used the RedFlick fake event lure to deliver the CosmicPulse backdoor and DarkSword iOS exploit kit to over 100 Western organizations, enabling covert data exfiltration and persistent access. The operation demonstrates a coordinated state-sponsored espionage effort.",
+    "category": "Malware",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/star-blizzard-redflick-phishing-cosmicpulse-backdoor",
+    "publishedAt": "2026-09-29T21:22:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "unsloth-studio-vulnerability-enables-arbitrary-python-code-e",
+    "title": "Unsloth Studio Vulnerability Enables Arbitrary Python Code Execution During Model Inspection",
+    "summary": "A patched flaw in Unsloth Studio allows attackers to run arbitrary Python code when inspecting AI models via the trust_remote_code setting. The vulnerability can lead to full code execution on the host system, posing a high risk to developers using the platform.",
+    "category": "Vulnerability",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/application-security/unsloth-studio-flaw-model-inspection-code-execution",
+    "publishedAt": "2026-09-29T21:08:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "custom-chatgpts-deploy-rat-malware-via-clickfix-attacks",
+    "title": "Custom ChatGPTs Deploy RAT Malware via ClickFix Attacks",
+    "summary": "Custom ChatGPT variants promoted in sponsored Google results direct users to malicious sites that use ClickFix attacks to deliver remote access trojan malware. The technique exploits users’ trust in AI tools, enabling attackers to install RATs without user interaction. Security teams should block such custom models and monitor for RAT activity.",
+    "category": "Vulnerability",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/custom-chatgpts-push-clickfix-attacks-to-deploy-rat-malware/",
+    "publishedAt": "2026-09-29T20:59:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "fbi-warns-shinyhunters-members-to-surrender-after-dutch-arre",
     "title": "FBI Warns ShinyHunters Members to Surrender After Dutch Arrest",
     "summary": "The FBI has warned members of the ShinyHunters extortion group to surrender after Dutch police arrested a man described as one of the group's alleged leaders. The warning follows the arrest, urging group members to turn themselves in to avoid further legal action.",
@@ -85,18 +157,6 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "star-blizzard-state-hackers-target-100-organizations-with-fa",
-    "title": "Star Blizzard State Hackers Target 100+ Organizations with Fake Event Invites",
-    "summary": "Russian state-sponsored Star Blizzard attackers used fake event invitations to lure users into installing a Windows backdoor. Since January, more than 100 U.S. and U.K. organizations tied to Ukraine have been affected, with at least one confirmed infection. The campaign demonstrates targeted phishing and backdoor deployment against geopolitical adversaries.",
-    "category": "Malware",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/09/russias-star-blizzard-targets-100.html",
-    "publishedAt": "2026-09-29T17:20:08.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
     "slug": "new-spectre-v2-variant-enables-rapid-linux-root-hash-extract",
     "title": "New Spectre v2 Variant Enables Rapid Linux Root Hash Extraction on Intel CPUs",
     "summary": "A newly discovered Branch Target Reuse (BTR) variant of Spectre v2 can extract root password hashes from Intel‑based Linux systems in 3‑5 minutes. The attack targets the CPU micro‑architecture, bypassing kernel protections, and requires only local execution on the affected machine.",
@@ -157,6 +217,18 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
+    "slug": "cloudflare-adds-visibility-into-post-quantum-encryption-for-",
+    "title": "Cloudflare Adds Visibility Into Post-Quantum Encryption for Domains",
+    "summary": "Cloudflare now exposes post‑quantum (PQ) encryption status in TLS 1.3 directly within HTTP Analytics, Log Explorer, and Logpush. The feature lets site owners verify that their domains use PQ ciphers, helping ensure protection against future quantum‑era attacks.",
+    "category": "Cloud",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/post-quantum-visibility/",
+    "publishedAt": "2026-09-29T13:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "cloudflare-waf-tester-reveals-detection-gaps",
     "title": "Cloudflare WAF Tester Reveals Detection Gaps",
     "summary": "Cloudflare built a WAF tester that adapts requests based on WAF responses, testing six attack categories on a staging environment. The tool uncovered gaps in the WAF’s detection logic, allowing certain attacks to pass. Cloudflare documented the missed detections and applied fixes to close the identified weaknesses.",
@@ -201,6 +273,20 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/vega-ii-agentic-cyber-defense-platform/",
     "publishedAt": "2026-09-29T12:43:03.000Z",
     "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "viidure-dashcam-android-app-suffers-critical-vulnerabilities",
+    "title": "Viidure Dashcam Android App Suffers Critical Vulnerabilities Including CVE-2026-94204",
+    "summary": "Affected Viidure Dashcam Android versions contain CVE‑2026‑94204, incorrect permission assignment, hard‑coded credentials, and a public‑read cloud storage bucket. These flaws let attackers access, modify, or delete sensitive user data and critical system files, potentially crippling the entire platform.",
+    "category": "Vulnerability",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-07",
+    "publishedAt": "2026-09-29T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-94204"
+    ],
     "additionalSources": [],
     "aliases": []
   },
@@ -267,18 +353,6 @@ export const news: NewsBrief[] = [
     "source": "Help Net Security",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/pindrop-enterprise-deepfake-attacks-report/",
     "publishedAt": "2026-09-29T11:59:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "malicious-custom-gpt-on-chatgpt-com-triggers-rat-download",
-    "title": "Malicious Custom GPT on chatgpt.com Triggers RAT Download",
-    "summary": "A custom GPT named “Plus 5.6” on chatgpt.com redirects users to a fake Cloudflare CAPTCHA, then delivers a remote access trojan. The campaign has affected dozens of users, with Huntress SOC reporting at least 40 incidents linked to the Google Sites domain used in the attack.",
-    "category": "Breach",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/malicious-chatgpt-custom-gpt-malware-via-clickfix/",
-    "publishedAt": "2026-09-29T11:55:25.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -356,20 +430,6 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "apple-patches-exploited-zero-day-in-core-graphics-cve-2026-8",
-    "title": "Apple Patches Exploited Zero-Day in Core Graphics (CVE-2026-86950)",
-    "summary": "Apple released updates for iOS and macOS to fix CVE-2026-86950, a zero‑day flaw in the Core Graphics framework that was actively exploited in a sophisticated attack targeting specific individuals on older iOS versions. The patch addresses path‑based drawing and transformation handling to prevent remote code execution.",
-    "category": "Vulnerability",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/apple-core-graphics-zero-day-cve-2026-86950-fixed/",
-    "publishedAt": "2026-09-29T09:50:55.000Z",
-    "cves": [
-      "CVE-2026-86950"
-    ],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
     "slug": "microsoft-dissects-needymantis-malware-from-daemon-tools-hac",
     "title": "Microsoft Dissects NeedyMantis Malware from Daemon Tools Hackers",
     "summary": "Microsoft analyzed NeedyMantis, a modular malware framework used by Daemon Tools hackers. The study details its custom executable format and persistence mechanisms, providing insights into its long‑term foothold capabilities. The findings help defenders recognize and mitigate this threat.",
@@ -430,30 +490,6 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "github-ai-agent-discovers-24-android-app-vulnerabilities",
-    "title": "GitHub AI Agent Discovers 24 Android App Vulnerabilities",
-    "summary": "GitHub Security Lab’s AI‑driven audit workflows identified more than 20 security flaws across Android applications, including two critical bugs in the popular OsmAnd navigation app. One flaw allowed external intents to access a restricted activity, potentially exposing user data. The findings highlight the need for stricter intent validation and prompt app developers to patch the issues.",
-    "category": "Vulnerability",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/github-ai-android-app-vulnerabilities/",
-    "publishedAt": "2026-09-29T06:39:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "mcp-python-sdk-vulnerability-enables-oauth-credential-theft",
-    "title": "MCP Python SDK Vulnerability Enables OAuth Credential Theft",
-    "summary": "A flaw in the official MCP Python SDK allows a malicious MCP server to trick applications into sending OAuth credentials—including client secrets, authorization codes, and PKCE proof keys—to an attacker‑controlled token endpoint. The issue is fixed in SDK version 1.30.0; users should upgrade promptly.",
-    "category": "Vulnerability",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/09/official-mcp-python-sdk-flaw-can-let.html",
-    "publishedAt": "2026-09-29T06:08:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
     "slug": "four-week-plan-to-mitigate-vendor-concentration-risk",
     "title": "Four‑Week Plan to Mitigate Vendor Concentration Risk",
     "summary": "Skycloak founder Guilliano Molaire outlines a four‑week strategy to map and reduce vendor concentration risk. The approach identifies hidden dependencies on single cloud, identity, DNS, email, payment, or AI model providers, helping organizations avoid cascading failures when one provider goes down.",
@@ -509,18 +545,6 @@ export const news: NewsBrief[] = [
     "source": "CyberNews AI",
     "sourceUrl": "https://cybernewsai.com/blog/storm-3168-azure-service-principal-resource-destruction",
     "publishedAt": "2026-09-28T21:45:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "zero-day-vulnerability-in-tdengine-time-series-database-coul",
-    "title": "Zero‑Day Vulnerability in TDengine Time‑Series Database Could Crash OT Servers",
-    "summary": "A high‑severity zero‑day flaw in the TDengine time‑series database, widely deployed in industrial, IoT, energy, and automotive sectors, can cause operational technology servers to crash. The vulnerability is actively exploitable and requires no user interaction.",
-    "category": "Vulnerability",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/ics-ot-security/one-packet-crash-servers-tdengine",
-    "publishedAt": "2026-09-28T21:13:04.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -682,18 +706,6 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "cloudflare-workers-adds-experimental-rust-emscripten-support",
-    "title": "Cloudflare Workers Adds Experimental Rust Emscripten Support",
-    "summary": "Cloudflare Workers now experimentally supports the Emscripten target for wasm-bindgen, enabling many previously unsupported Rust libraries and applications to be built and deployed directly to the platform. Upcoming support for Tokio async is also announced.",
-    "category": "Cloud",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/rust-workers-emscripten-target/",
-    "publishedAt": "2026-09-28T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
     "slug": "voidzero-accelerates-javascript-toolchain-at-cloudflare",
     "title": "VoidZero Accelerates JavaScript Toolchain at Cloudflare",
     "summary": "VoidZero has released over 80 updates, boosting JavaScript compilation, linting, and testing speeds. The toolchain now offers a 10x faster React compiler and Vite+ 1.0, enhancing developer productivity and AI agent performance.",
@@ -725,18 +737,6 @@ export const news: NewsBrief[] = [
     "source": "Wiz Research",
     "sourceUrl": "https://www.wiz.io/blog/introducing-wiz-partner-alliance-managed-service-provider-program",
     "publishedAt": "2026-09-28T12:58:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "former-us-soldier-sentenced-for-hacking-telecom-companies",
-    "title": "Former US Soldier Sentenced for Hacking Telecom Companies",
-    "summary": "A former U.S. Army soldier was sentenced to more than five years in federal prison after pleading guilty to hacking into several telecommunications companies and leaking sensitive records. The case highlights the risk of insider threats and the importance of securing telecom infrastructure against credential theft and data exfiltration.",
-    "category": "Breach",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/hacker-telecom-army-sentenced",
-    "publishedAt": "2026-09-28T12:45:00.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []

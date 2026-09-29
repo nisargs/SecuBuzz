@@ -5,8 +5,62 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Sep 2026 21:38:36 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 23:46:59 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Former Air Force Members Sentenced for Multi-Million Dollar BEC Scam</title>
+      <link>https://secubuzz.com/news/former-air-force-members-sentenced-for-multi-million-dollar-</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/former-air-force-members-sentenced-for-multi-million-dollar-</guid>
+      <description><![CDATA[Two ex‑Air Force personnel received 189 months in prison after orchestrating a BEC fraud scheme that spoofed vendors to redirect wire transfers. The operation diverted payments to the ring’s accounts, resulting in a multimillion‑dollar loss.]]></description>
+      <pubDate>Tue, 29 Sep 2026 23:15:34 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/ex-air-force-members-jailed-bec-fraud">CyberNews AI</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Phishing Campaigns Exploit MSP360 RMM to Deploy Remote Access Tools</title>
+      <link>https://secubuzz.com/news/phishing-campaigns-exploit-msp360-rmm-to-deploy-remote-acces</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/phishing-campaigns-exploit-msp360-rmm-to-deploy-remote-acces</guid>
+      <description><![CDATA[Microsoft identified phishing attacks that leveraged MSP360 RMM to install ScreenConnect, creating redundant remote‑access channels for subsequent malicious activity. The technique allows attackers to maintain persistent footholds via legitimate remote‑management software.]]></description>
+      <pubDate>Tue, 29 Sep 2026 21:39:27 GMT</pubDate>
+      <source url="https://www.microsoft.com/en-us/security/blog/2026/09/29/phishing-abuses-rmm-tools-persistent-access/">Microsoft Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Apple Zero‑Day CVE‑2026‑86950 Weaponized in Targeted Attacks</title>
+      <link>https://secubuzz.com/news/apple-zero-day-cve-2026-86950-weaponized-in-targeted-attacks</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apple-zero-day-cve-2026-86950-weaponized-in-targeted-attacks</guid>
+      <description><![CDATA[Attackers are exploiting CVE‑2026‑86950, an out‑of‑bounds write flaw in Apple software, in highly sophisticated attacks. The vulnerability allows attackers to overwrite memory and potentially execute arbitrary code, enabling targeted compromise of affected devices. Apple has issued a patch to mitigate the flaw.]]></description>
+      <pubDate>Tue, 29 Sep 2026 21:31:29 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyberattacks-data-breaches/apple-zero-day-vulnerability-weaponized-targeted-attacks">Dark Reading</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Star Blizzard Launches RedFlick Cyber Espionage Campaign Targeting 100+ Western Organizations</title>
+      <link>https://secubuzz.com/news/star-blizzard-launches-redflick-cyber-espionage-campaign-tar</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/star-blizzard-launches-redflick-cyber-espionage-campaign-tar</guid>
+      <description><![CDATA[Russia’s Star Blizzard used the RedFlick fake event lure to deliver the CosmicPulse backdoor and DarkSword iOS exploit kit to over 100 Western organizations, enabling covert data exfiltration and persistent access. The operation demonstrates a coordinated state-sponsored espionage effort.]]></description>
+      <pubDate>Tue, 29 Sep 2026 21:22:34 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/star-blizzard-redflick-phishing-cosmicpulse-backdoor">CyberNews AI</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Unsloth Studio Vulnerability Enables Arbitrary Python Code Execution During Model Inspection</title>
+      <link>https://secubuzz.com/news/unsloth-studio-vulnerability-enables-arbitrary-python-code-e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/unsloth-studio-vulnerability-enables-arbitrary-python-code-e</guid>
+      <description><![CDATA[A patched flaw in Unsloth Studio allows attackers to run arbitrary Python code when inspecting AI models via the trust_remote_code setting. The vulnerability can lead to full code execution on the host system, posing a high risk to developers using the platform.]]></description>
+      <pubDate>Tue, 29 Sep 2026 21:08:42 GMT</pubDate>
+      <source url="https://www.darkreading.com/application-security/unsloth-studio-flaw-model-inspection-code-execution">Dark Reading</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Custom ChatGPTs Deploy RAT Malware via ClickFix Attacks</title>
+      <link>https://secubuzz.com/news/custom-chatgpts-deploy-rat-malware-via-clickfix-attacks</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/custom-chatgpts-deploy-rat-malware-via-clickfix-attacks</guid>
+      <description><![CDATA[Custom ChatGPT variants promoted in sponsored Google results direct users to malicious sites that use ClickFix attacks to deliver remote access trojan malware. The technique exploits users’ trust in AI tools, enabling attackers to install RATs without user interaction. Security teams should block such custom models and monitor for RAT activity.]]></description>
+      <pubDate>Tue, 29 Sep 2026 20:59:39 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/custom-chatgpts-push-clickfix-attacks-to-deploy-rat-malware/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>FBI Warns ShinyHunters Members to Surrender After Dutch Arrest</title>
       <link>https://secubuzz.com/news/fbi-warns-shinyhunters-members-to-surrender-after-dutch-arre</link>
@@ -62,15 +116,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Star Blizzard State Hackers Target 100+ Organizations with Fake Event Invites</title>
-      <link>https://secubuzz.com/news/star-blizzard-state-hackers-target-100-organizations-with-fa</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/star-blizzard-state-hackers-target-100-organizations-with-fa</guid>
-      <description><![CDATA[Russian state-sponsored Star Blizzard attackers used fake event invitations to lure users into installing a Windows backdoor. Since January, more than 100 U.S. and U.K. organizations tied to Ukraine have been affected, with at least one confirmed infection. The campaign demonstrates targeted phishing and backdoor deployment against geopolitical adversaries.]]></description>
-      <pubDate>Tue, 29 Sep 2026 17:20:08 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/09/russias-star-blizzard-targets-100.html">The Hacker News</source>
-      <category>Malware</category>
-    </item>
-    <item>
       <title>New Spectre v2 Variant Enables Rapid Linux Root Hash Extraction on Intel CPUs</title>
       <link>https://secubuzz.com/news/new-spectre-v2-variant-enables-rapid-linux-root-hash-extract</link>
       <guid isPermaLink="true">https://secubuzz.com/news/new-spectre-v2-variant-enables-rapid-linux-root-hash-extract</guid>
@@ -116,6 +161,15 @@
       <category>Policy</category>
     </item>
     <item>
+      <title>Cloudflare Adds Visibility Into Post-Quantum Encryption for Domains</title>
+      <link>https://secubuzz.com/news/cloudflare-adds-visibility-into-post-quantum-encryption-for-</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-adds-visibility-into-post-quantum-encryption-for-</guid>
+      <description><![CDATA[Cloudflare now exposes post‑quantum (PQ) encryption status in TLS 1.3 directly within HTTP Analytics, Log Explorer, and Logpush. The feature lets site owners verify that their domains use PQ ciphers, helping ensure protection against future quantum‑era attacks.]]></description>
+      <pubDate>Tue, 29 Sep 2026 13:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/post-quantum-visibility/">Cloudflare Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
       <title>Cloudflare WAF Tester Reveals Detection Gaps</title>
       <link>https://secubuzz.com/news/cloudflare-waf-tester-reveals-detection-gaps</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-waf-tester-reveals-detection-gaps</guid>
@@ -150,6 +204,15 @@
       <pubDate>Tue, 29 Sep 2026 12:43:03 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/09/29/vega-ii-agentic-cyber-defense-platform/">Help Net Security</source>
       <category>Policy</category>
+    </item>
+    <item>
+      <title>Viidure Dashcam Android App Suffers Critical Vulnerabilities Including CVE-2026-94204</title>
+      <link>https://secubuzz.com/news/viidure-dashcam-android-app-suffers-critical-vulnerabilities</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/viidure-dashcam-android-app-suffers-critical-vulnerabilities</guid>
+      <description><![CDATA[Affected Viidure Dashcam Android versions contain CVE‑2026‑94204, incorrect permission assignment, hard‑coded credentials, and a public‑read cloud storage bucket. These flaws let attackers access, modify, or delete sensitive user data and critical system files, potentially crippling the entire platform.]]></description>
+      <pubDate>Tue, 29 Sep 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-07">CISA</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>VIVOTEK Camera Firmware Remote Command Execution Vulnerability</title>
@@ -195,15 +258,6 @@
       <pubDate>Tue, 29 Sep 2026 11:59:00 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/09/29/pindrop-enterprise-deepfake-attacks-report/">Help Net Security</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Malicious Custom GPT on chatgpt.com Triggers RAT Download</title>
-      <link>https://secubuzz.com/news/malicious-custom-gpt-on-chatgpt-com-triggers-rat-download</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/malicious-custom-gpt-on-chatgpt-com-triggers-rat-download</guid>
-      <description><![CDATA[A custom GPT named “Plus 5.6” on chatgpt.com redirects users to a fake Cloudflare CAPTCHA, then delivers a remote access trojan. The campaign has affected dozens of users, with Huntress SOC reporting at least 40 incidents linked to the Google Sites domain used in the attack.]]></description>
-      <pubDate>Tue, 29 Sep 2026 11:55:25 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/09/29/malicious-chatgpt-custom-gpt-malware-via-clickfix/">Help Net Security</source>
-      <category>Breach</category>
     </item>
     <item>
       <title>Vietnamese Man Charged in $16M Pig Butchering Crypto Scam</title>
@@ -260,15 +314,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Apple Patches Exploited Zero-Day in Core Graphics (CVE-2026-86950)</title>
-      <link>https://secubuzz.com/news/apple-patches-exploited-zero-day-in-core-graphics-cve-2026-8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apple-patches-exploited-zero-day-in-core-graphics-cve-2026-8</guid>
-      <description><![CDATA[Apple released updates for iOS and macOS to fix CVE-2026-86950, a zero‑day flaw in the Core Graphics framework that was actively exploited in a sophisticated attack targeting specific individuals on older iOS versions. The patch addresses path‑based drawing and transformation handling to prevent remote code execution.]]></description>
-      <pubDate>Tue, 29 Sep 2026 09:50:55 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/09/29/apple-core-graphics-zero-day-cve-2026-86950-fixed/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>Microsoft Dissects NeedyMantis Malware from Daemon Tools Hackers</title>
       <link>https://secubuzz.com/news/microsoft-dissects-needymantis-malware-from-daemon-tools-hac</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-dissects-needymantis-malware-from-daemon-tools-hac</guid>
@@ -314,24 +359,6 @@
       <category>Cloud</category>
     </item>
     <item>
-      <title>GitHub AI Agent Discovers 24 Android App Vulnerabilities</title>
-      <link>https://secubuzz.com/news/github-ai-agent-discovers-24-android-app-vulnerabilities</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/github-ai-agent-discovers-24-android-app-vulnerabilities</guid>
-      <description><![CDATA[GitHub Security Lab’s AI‑driven audit workflows identified more than 20 security flaws across Android applications, including two critical bugs in the popular OsmAnd navigation app. One flaw allowed external intents to access a restricted activity, potentially exposing user data. The findings highlight the need for stricter intent validation and prompt app developers to patch the issues.]]></description>
-      <pubDate>Tue, 29 Sep 2026 06:39:42 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/09/29/github-ai-android-app-vulnerabilities/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>MCP Python SDK Vulnerability Enables OAuth Credential Theft</title>
-      <link>https://secubuzz.com/news/mcp-python-sdk-vulnerability-enables-oauth-credential-theft</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/mcp-python-sdk-vulnerability-enables-oauth-credential-theft</guid>
-      <description><![CDATA[A flaw in the official MCP Python SDK allows a malicious MCP server to trick applications into sending OAuth credentials—including client secrets, authorization codes, and PKCE proof keys—to an attacker‑controlled token endpoint. The issue is fixed in SDK version 1.30.0; users should upgrade promptly.]]></description>
-      <pubDate>Tue, 29 Sep 2026 06:08:25 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/09/official-mcp-python-sdk-flaw-can-let.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>Four‑Week Plan to Mitigate Vendor Concentration Risk</title>
       <link>https://secubuzz.com/news/four-week-plan-to-mitigate-vendor-concentration-risk</link>
       <guid isPermaLink="true">https://secubuzz.com/news/four-week-plan-to-mitigate-vendor-concentration-risk</guid>
@@ -375,15 +402,6 @@
       <pubDate>Mon, 28 Sep 2026 21:45:51 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/storm-3168-azure-service-principal-resource-destruction">CyberNews AI</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Zero‑Day Vulnerability in TDengine Time‑Series Database Could Crash OT Servers</title>
-      <link>https://secubuzz.com/news/zero-day-vulnerability-in-tdengine-time-series-database-coul</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/zero-day-vulnerability-in-tdengine-time-series-database-coul</guid>
-      <description><![CDATA[A high‑severity zero‑day flaw in the TDengine time‑series database, widely deployed in industrial, IoT, energy, and automotive sectors, can cause operational technology servers to crash. The vulnerability is actively exploitable and requires no user interaction.]]></description>
-      <pubDate>Mon, 28 Sep 2026 21:13:04 GMT</pubDate>
-      <source url="https://www.darkreading.com/ics-ot-security/one-packet-crash-servers-tdengine">Dark Reading</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>Keio Railway Operator Hit by Ransomware Attack</title>
@@ -437,24 +455,6 @@
       <description><![CDATA[Enterprises monitor human employees closely, but autonomous AI agents often run with extensive privileges that can become insider threats. The article highlights the need for auditing AI access controls to prevent misuse and potential data breaches.]]></description>
       <pubDate>Mon, 28 Sep 2026 18:44:22 GMT</pubDate>
       <source url="https://www.darkreading.com/vulnerabilities-threats/ai-agents-are-privileged-users-who-is-auditing-their-access">Dark Reading</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>RatHat Android Malware Console Targets High-Value Victims</title>
-      <link>https://secubuzz.com/news/rathat-android-malware-console-targets-high-value-victims</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rathat-android-malware-console-targets-high-value-victims</guid>
-      <description><![CDATA[Security firm Cleafy traced nearly 100 deployments of RatHat’s Android banking trojan console since April 2026. The console, part of a malware‑as‑a‑service model, lets operators control infected phones and collect data from each device.]]></description>
-      <pubDate>Mon, 28 Sep 2026 17:38:33 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/09/rathat-android-malware-console-uses.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>New Mexico Jury Finds Meta Deceived Consumers About Data Privacy Practices</title>
-      <link>https://secubuzz.com/news/new-mexico-jury-finds-meta-deceived-consumers-about-data-pri</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/new-mexico-jury-finds-meta-deceived-consumers-about-data-pri</guid>
-      <description><![CDATA[A New Mexico jury found Meta violated consumer privacy law nearly 44 million times by misleading users about its data‑privacy practices. The court ruled the company’s statements were deceptive, holding Meta accountable for false claims about how it collects and uses personal information.]]></description>
-      <pubDate>Mon, 28 Sep 2026 17:15:00 GMT</pubDate>
-      <source url="https://therecord.media/facebook-new-mexico-privacy">The Record</source>
       <category>Policy</category>
     </item>
   </channel>
