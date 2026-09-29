@@ -21,7 +21,7 @@ export function Advisories() {
     filter((a) => ransomwareOnly ? a.ransomware : true).
     filter((a) =>
     q ?
-    [a.cve, a.vendor, a.product, a.name].some((v) => v.toLowerCase().includes(q)) :
+    [a.cve, a.vendor, a.product, a.name, a.description].some((v) => (v || '').toLowerCase().includes(q)) :
     true
     ).
     sort((a, b) =>
@@ -60,7 +60,7 @@ export function Advisories() {
               type="search"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="CVE, vendor or product"
+              placeholder="CVE, vendor, product, or keyword"
               className="h-9 w-full rounded-md border border-line bg-surface pl-9 pr-3 text-sm text-ink placeholder:text-subtle focus:border-accent focus:outline-none" />
             
           </label>

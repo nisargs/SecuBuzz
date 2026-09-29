@@ -52,6 +52,7 @@ export const homeReasons = [
 export const appFeatures = [
   { title: '60-word briefs', body: 'Swipe through the day’s security news in concise cards you can finish in under 15 seconds.' },
   { title: 'KEV push alerts', body: 'Instant notification when CISA lists a new exploited vulnerability, with remediation deadlines attached.' },
+  { title: 'On-device bookmarks', body: 'Save critical stories and advisories for later with a single tap. Bookmarks stay 100% on your device with no account or cloud sync.' },
   { title: '1-tap incident reports', body: 'Instantly copy formatted markdown threat intelligence to clipboard for pasting directly into Slack, Microsoft Teams, or Jira tickets.' },
   { title: 'Offline reading', body: 'Up to 250 briefs and advisories are cached locally. Read full intelligence without network connectivity.' },
   { title: 'No account required', body: 'Install and read immediately. 100% on-device preferences, zero tracking, and zero telemetry harvesting.' },
