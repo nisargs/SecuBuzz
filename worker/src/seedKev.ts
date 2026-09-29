@@ -1,4 +1,4 @@
-import type { KevVulnerability } from './websiteHtml';
+import type { KevVulnerability } from './sitemap';
 
 export const SEED_KEV_ADVISORIES: KevVulnerability[] = [
   {

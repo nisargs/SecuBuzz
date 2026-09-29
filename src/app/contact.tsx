@@ -348,11 +348,11 @@ export default function ContactScreen() {
               />
             </Pressable>
 
-            {/* Security */}
+            {/* Security / Vulnerability Disclosure */}
             <Pressable
               accessibilityRole="button"
-              accessibilityLabel={`Send email to ${SECURITY_EMAIL}`}
-              onPress={() => openDirectEmail(SECURITY_EMAIL)}
+              accessibilityLabel={`Send email to ${SUPPORT_EMAIL}`}
+              onPress={() => openDirectEmail(SUPPORT_EMAIL)}
               style={[
                 styles.emailButton,
                 {
@@ -374,7 +374,7 @@ export default function ContactScreen() {
                 </Text>
 
                 <Text style={[styles.emailAddress, { color: colors.textMuted }]}>
-                  {SECURITY_EMAIL}
+                  {SUPPORT_EMAIL}
                 </Text>
               </View>
 
