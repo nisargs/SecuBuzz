@@ -5,8 +5,125 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Sep 2026 12:50:24 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 16:18:58 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AI‑Driven Attack Breaches Dutch Cybersecurity Nonprofit DIVD</title>
+      <link>https://secubuzz.com/news/ai-driven-attack-breaches-dutch-cybersecurity-nonprofit-divd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-driven-attack-breaches-dutch-cybersecurity-nonprofit-divd</guid>
+      <description><![CDATA[An automated AI agent launched a chaotic cyberattack on the Dutch Institute for Vulnerability Disclosure (DIVD), compromising its systems and causing significant disruption. The attack was described as loud and very messy, indicating extensive intrusion and potential data exposure. No public fix is available yet.]]></description>
+      <pubDate>Tue, 29 Sep 2026 15:39:19 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/automated-ai-agent-used-to-breach-cybersecurity-nonprofit-divd/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>China‑Based Actor Uses New Malware Framework to Gain Long‑Term Access</title>
+      <link>https://secubuzz.com/news/china-based-actor-uses-new-malware-framework-to-gain-long-te</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/china-based-actor-uses-new-malware-framework-to-gain-long-te</guid>
+      <description><![CDATA[Microsoft identified a China‑based threat actor deploying an unnamed malware framework, enabling persistent access to networks of telcos, universities, medical, and government entities. The framework facilitates long‑term compromise, allowing the actor to maintain footholds and exfiltrate data over time.]]></description>
+      <pubDate>Tue, 29 Sep 2026 15:12:39 GMT</pubDate>
+      <source url="https://www.darkreading.com/threat-intelligence/needymantis-long-term-access-compromised-networks">Dark Reading</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Citrix NetScaler Zero-Day CVE-2026-88771 Exploited in Mass Attacks</title>
+      <link>https://secubuzz.com/news/citrix-netscaler-zero-day-cve-2026-88771-exploited-in-mass-a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/citrix-netscaler-zero-day-cve-2026-88771-exploited-in-mass-a</guid>
+      <description><![CDATA[Citrix NetScaler ADC and Gateway devices with default settings are being targeted by the CVE-2026-88771 zero‑day. The vulnerability allows remote code execution on unpatched devices, enabling attackers to spray and pray across the internet. A proof‑of‑concept exploit and root‑cause analysis have been released, confirming widespread exploitation.]]></description>
+      <pubDate>Tue, 29 Sep 2026 14:59:06 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/09/29/netscaler-zero-day-exploitation-escalates-into-mass-attacks-cve-2026-88771/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Dual NetScaler Zero-Days Enable Skeleton Key Access for Citrix Customers</title>
+      <link>https://secubuzz.com/news/dual-netscaler-zero-days-enable-skeleton-key-access-for-citr</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/dual-netscaler-zero-days-enable-skeleton-key-access-for-citr</guid>
+      <description><![CDATA[Two critical zero-day vulnerabilities in NetScaler default configurations allow attackers to bypass authentication and gain unrestricted network access for Citrix customers. The flaws expose a skeleton key mechanism that can be exploited without user interaction, potentially compromising entire customer infrastructures. Immediate patching is required.]]></description>
+      <pubDate>Tue, 29 Sep 2026 14:19:43 GMT</pubDate>
+      <source url="https://www.darkreading.com/vulnerabilities-threats/netscaler-zero-days-chaos-citrix">Dark Reading</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Kiteworks Identifies Critical Vulnerability During Precautionary Shutdown</title>
+      <link>https://secubuzz.com/news/kiteworks-identifies-critical-vulnerability-during-precautio</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/kiteworks-identifies-critical-vulnerability-during-precautio</guid>
+      <description><![CDATA[During a nine‑hour precautionary shutdown, Kiteworks discovered a critical security flaw affecting a rarely enabled capability used by less than 1% of its customers. The vulnerability was identified and remediated in collaboration with federal intelligence authorities, preventing potential exploitation before it could be leveraged.]]></description>
+      <pubDate>Tue, 29 Sep 2026 14:13:20 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/09/kiteworks-fixes-critical-flaw-found.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Real‑Time Identity Telemetry Helps Detect Threats Early</title>
+      <link>https://secubuzz.com/news/real-time-identity-telemetry-helps-detect-threats-early</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/real-time-identity-telemetry-helps-detect-threats-early</guid>
+      <description><![CDATA[Identity governance tools can miss attacks that happen between periodic reviews. Tenfold Software explains how real‑time identity telemetry monitors user activity continuously, allowing security teams to investigate suspicious behavior before it escalates into a breach. The approach focuses on continuous visibility rather than periodic checks.]]></description>
+      <pubDate>Tue, 29 Sep 2026 14:01:11 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/catch-threats-before-they-escalate-with-real-time-identity-telemetry/">BleepingComputer</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>LastPass Expands AI Monitoring to Protect Sensitive Data</title>
+      <link>https://secubuzz.com/news/lastpass-expands-ai-monitoring-to-protect-sensitive-data</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/lastpass-expands-ai-monitoring-to-protect-sensitive-data</guid>
+      <description><![CDATA[LastPass Business Max now includes AI Monitoring & Protect and Web Monitoring & Protect, adding visibility into AI tools, SaaS apps, and websites used by employees. The new browser‑native extension helps organizations identify and secure AI usage, preventing accidental data exposure through AI tools.]]></description>
+      <pubDate>Tue, 29 Sep 2026 13:47:44 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/09/29/lastpass-ai-monitoring-and-protect/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>101 Malicious npm Packages Add Developers’ WhatsApp Accounts to Groups Without Consent</title>
+      <link>https://secubuzz.com/news/101-malicious-npm-packages-add-developers-whatsapp-accounts-</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/101-malicious-npm-packages-add-developers-whatsapp-accounts-</guid>
+      <description><![CDATA[Researchers found 101 npm packages that exploit the Baileys WhatsApp library to add developers to WhatsApp groups without permission. The malicious code automatically enrolls users into a PhantomSub group, compromising privacy and potentially enabling further social engineering. No CVE is cited.]]></description>
+      <pubDate>Tue, 29 Sep 2026 13:45:10 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/09/101-malicious-npm-packages-add.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Scans Target Wordfence‑Protected WordPress Sites</title>
+      <link>https://secubuzz.com/news/scans-target-wordfence-protected-wordpress-sites</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/scans-target-wordfence-protected-wordpress-sites</guid>
+      <description><![CDATA[Security sensors detected scans for the Wordfence WAF script (wordfence-waf.php) on WordPress sites. The scans aim to identify sites protected by Wordfence, potentially to find vulnerabilities or bypass the firewall. No exploitation reported.]]></description>
+      <pubDate>Tue, 29 Sep 2026 13:29:33 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33382">SANS Internet Storm Center</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Cloudflare Applies to Become a Certificate Authority</title>
+      <link>https://secubuzz.com/news/cloudflare-applies-to-become-a-certificate-authority</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-applies-to-become-a-certificate-authority</guid>
+      <description><![CDATA[Cloudflare has applied to become a certificate authority, building a post‑quantum CA using an established root, ACME‑first approach, and Merkle Tree Certificates. The move follows its Universal SSL launch and aims to provide secure, scalable certificates for the open web.]]></description>
+      <pubDate>Tue, 29 Sep 2026 13:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/cloudflare-certificate-authority/">Cloudflare Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Blue Agent Uncovers Credential Theft and Code Theft on AWS and GitHub</title>
+      <link>https://secubuzz.com/news/blue-agent-uncovers-credential-theft-and-code-theft-on-aws-a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/blue-agent-uncovers-credential-theft-and-code-theft-on-aws-a</guid>
+      <description><![CDATA[Blue Agent traced a multi‑platform attack across AWS and GitHub, revealing compromised credentials, stolen source code, and custom data exfiltration tools. The investigation highlighted rapid evidence gathering and cross‑platform tracking to expose the exfiltration chain.]]></description>
+      <pubDate>Tue, 29 Sep 2026 12:42:40 GMT</pubDate>
+      <source url="https://www.wiz.io/blog/blue-agent-data-exfiltration-investigation">Wiz Research</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Russian Pizza Chain Reports Cyberattack on Customer Data</title>
+      <link>https://secubuzz.com/news/russian-pizza-chain-reports-cyberattack-on-customer-data</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/russian-pizza-chain-reports-cyberattack-on-customer-data</guid>
+      <description><![CDATA[Dodo Pizza confirmed a cyberattack that may have exposed customer names, addresses, email addresses, phone numbers, dates of birth and order details. The breach could allow attackers to harvest personal information for phishing or identity theft. No ransom was demanded, and the company is investigating the extent of the compromise.]]></description>
+      <pubDate>Tue, 29 Sep 2026 12:34:00 GMT</pubDate>
+      <source url="https://therecord.media/russian-pizza-chain-dodo-confirms-data-breach">The Record</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Arizona Supreme Court Data Breach Involves Personal Information Theft</title>
+      <link>https://secubuzz.com/news/arizona-supreme-court-data-breach-involves-personal-informat</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/arizona-supreme-court-data-breach-involves-personal-informat</guid>
+      <description><![CDATA[Hackers accessed personal data of Arizona residents through the state Supreme Court system. The breach did not involve ransomware or ransom demands. The court is reviewing security measures to prevent future incidents and protect sensitive personal information.]]></description>
+      <pubDate>Tue, 29 Sep 2026 12:27:00 GMT</pubDate>
+      <source url="https://therecord.media/arizona-supreme-court-says-hackers-stole-data">The Record</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Rig Security Launches Identity Graph to Detect Rogue AI Agents</title>
       <link>https://secubuzz.com/news/rig-security-launches-identity-graph-to-detect-rogue-ai-agen</link>
@@ -339,123 +456,6 @@
       <pubDate>Mon, 28 Sep 2026 18:44:22 GMT</pubDate>
       <source url="https://www.darkreading.com/vulnerabilities-threats/ai-agents-are-privileged-users-who-is-auditing-their-access">Dark Reading</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>NeedyMantis Malware Enables Long‑Term Access in Breached Networks</title>
-      <link>https://secubuzz.com/news/needymantis-malware-enables-long-term-access-in-breached-net</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/needymantis-malware-enables-long-term-access-in-breached-net</guid>
-      <description><![CDATA[Microsoft identified the NeedyMantis malware family as a tool used by attackers to maintain persistent access after initial network breaches. It has appeared in targeted intrusions against telecoms, universities, medical nonprofits, intergovernmental bodies, and government contractors, extending attackers’ foothold.]]></description>
-      <pubDate>Mon, 28 Sep 2026 18:35:42 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/09/hackers-use-needymantis-to-maintain.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>IAM Framework for AI Agents: Managing Identity and Access in Enterprise Systems</title>
-      <link>https://secubuzz.com/news/iam-framework-for-ai-agents-managing-identity-and-access-in-</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/iam-framework-for-ai-agents-managing-identity-and-access-in-</guid>
-      <description><![CDATA[The guide outlines an identity‑and‑access‑management (IAM) architecture tailored for AI agents, detailing how agents authenticate, invoke tools, and act across enterprise environments with delegated authority. It discusses limitations of traditional provisioning, core components, evaluation criteria, and runtime evidence to verify agent behavior.]]></description>
-      <pubDate>Mon, 28 Sep 2026 18:20:38 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/09/iam-for-ai-agent.html">The Hacker News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Bitget Exchange Stole $388M via Third-Party Security Product Exploit</title>
-      <link>https://secubuzz.com/news/bitget-exchange-stole-388m-via-third-party-security-product-</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/bitget-exchange-stole-388m-via-third-party-security-product-</guid>
-      <description><![CDATA[An attacker exploited a flaw in a third‑party security product used by Bitget to gain high‑level internal credentials. The attacker then used those credentials to send fraudulent withdrawal commands, resulting in a $388 million loss.]]></description>
-      <pubDate>Mon, 28 Sep 2026 17:42:18 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/09/bitget-says-attacker-exploited-third.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>RatHat Android Malware Console Targets High-Value Victims</title>
-      <link>https://secubuzz.com/news/rathat-android-malware-console-targets-high-value-victims</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rathat-android-malware-console-targets-high-value-victims</guid>
-      <description><![CDATA[Security firm Cleafy traced nearly 100 deployments of RatHat’s Android banking trojan console since April 2026. The console, part of a malware‑as‑a‑service model, lets operators control infected phones and collect data from each device.]]></description>
-      <pubDate>Mon, 28 Sep 2026 17:38:33 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/09/rathat-android-malware-console-uses.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Modulate Raises $25 Million to Advance Deep‑Fake Detection</title>
-      <link>https://secubuzz.com/news/modulate-raises-25-million-to-advance-deep-fake-detection</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/modulate-raises-25-million-to-advance-deep-fake-detection</guid>
-      <description><![CDATA[Modulate raises $25 million to advance deep‑fake detection. The company aims to counter AI‑generated voice misuse with real‑time detection and intervention tools. The funding will support research and product development to help organizations spot deep‑fake audio before it causes harm and.]]></description>
-      <pubDate>Mon, 28 Sep 2026 17:30:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/modulate-raises-25-million-to-advance-deepfake-detection/">SecurityWeek</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>New Mexico Jury Finds Meta Deceived Consumers About Data Privacy Practices</title>
-      <link>https://secubuzz.com/news/new-mexico-jury-finds-meta-deceived-consumers-about-data-pri</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/new-mexico-jury-finds-meta-deceived-consumers-about-data-pri</guid>
-      <description><![CDATA[A New Mexico jury found Meta violated consumer privacy law nearly 44 million times by misleading users about its data‑privacy practices. The court ruled the company’s statements were deceptive, holding Meta accountable for false claims about how it collects and uses personal information.]]></description>
-      <pubDate>Mon, 28 Sep 2026 17:15:00 GMT</pubDate>
-      <source url="https://therecord.media/facebook-new-mexico-privacy">The Record</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Chrome Store Hosts &apos;Poper Blocker&apos; Spyware Downloaded by Millions</title>
-      <link>https://secubuzz.com/news/chrome-store-hosts-poper-blocker-spyware-downloaded-by-milli</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-store-hosts-poper-blocker-spyware-downloaded-by-milli</guid>
-      <description><![CDATA[A Chrome Store extension called Poper Blocker, marketed as an ad‑blocker, has been downloaded by millions. The app exfiltrates large amounts of sensitive user data while leveraging Google’s approval to appear legitimate. Researchers have warned that the spyware can harvest personal information and browsing habits.]]></description>
-      <pubDate>Mon, 28 Sep 2026 16:51:25 GMT</pubDate>
-      <source url="https://www.darkreading.com/application-security/chrome-store-poper-blocker-spyware-downloaded-millions">Dark Reading</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Citrix NetScaler Gateway Zero-Day Vulnerabilities Confirmed</title>
-      <link>https://secubuzz.com/news/citrix-netscaler-gateway-zero-day-vulnerabilities-confirmed</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/citrix-netscaler-gateway-zero-day-vulnerabilities-confirmed</guid>
-      <description><![CDATA[Citrix NetScaler Gateway products are affected by eight newly confirmed zero‑day vulnerabilities. Security agencies in the Netherlands, U.S. and U.K. issued advisories after incident responders warned of potential exploitation. Citrix has acknowledged the flaws and is working on patches.]]></description>
-      <pubDate>Mon, 28 Sep 2026 16:19:00 GMT</pubDate>
-      <source url="https://therecord.media/us-uk-warn-of-citrix-netscaler-zero-day-bug">The Record</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>JadePuffer Ransomware Targets Azure Tenants, Destroying Cloud Resources</title>
-      <link>https://secubuzz.com/news/jadepuffer-ransomware-targets-azure-tenants-destroying-cloud</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/jadepuffer-ransomware-targets-azure-tenants-destroying-cloud</guid>
-      <description><![CDATA[The JadePuffer ransomware operator is attacking Azure tenants with agent-driven attacks that conduct reconnaissance, steal credentials, and destroy core components such as storage, applications, and databases. The attacks use exposed credentials to access resources and delete cloud-based data.]]></description>
-      <pubDate>Mon, 28 Sep 2026 15:49:27 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/jadepuffer-agentic-ai-attacks-target-azure-destroy-cloud-resources/">BleepingComputer</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>JadePuffer AI Actor Compromises Azure Tenant in Destructive Cloud Attack</title>
-      <link>https://secubuzz.com/news/jadepuffer-ai-actor-compromises-azure-tenant-in-destructive-</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/jadepuffer-ai-actor-compromises-azure-tenant-in-destructive-</guid>
-      <description><![CDATA[The JadePuffer AI actor accessed an Azure tenant using exposed credentials, then deleted cloud-based storage, applications, and databases. The attack demonstrates the ransomware operator’s ability to destroy core cloud components after compromising tenant access.]]></description>
-      <pubDate>Mon, 28 Sep 2026 15:33:21 GMT</pubDate>
-      <source url="https://www.darkreading.com/cloud-security/jadepuffer-ai-actor-azure-tenant-destructive-cloud-attack">Dark Reading</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>SecurityWeek Opens Call for Presentations at 2026 CISO Forum Virtual Summit</title>
-      <link>https://secubuzz.com/news/securityweek-opens-call-for-presentations-at-2026-ciso-forum</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/securityweek-opens-call-for-presentations-at-2026-ciso-forum</guid>
-      <description><![CDATA[SecurityWeek is inviting cybersecurity professionals to submit vendor‑neutral presentations for the 2026 CISO Forum Virtual Summit. The event aims to help leaders navigate emerging threats, strengthen resilience, and address strategic challenges in enterprise security programs. Submissions are open now.]]></description>
-      <pubDate>Mon, 28 Sep 2026 15:15:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/call-for-presentations-open-for-2026-ciso-forum-virtual-summit/">SecurityWeek</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Dutch Police Arrest Hacker Linked to ShinyHunters Data Theft and Extortion</title>
-      <link>https://secubuzz.com/news/dutch-police-arrest-hacker-linked-to-shinyhunters-data-theft</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/dutch-police-arrest-hacker-linked-to-shinyhunters-data-theft</guid>
-      <description><![CDATA[Dutch authorities arrested a 23‑year‑old convicted cybercriminal suspected of aiding ShinyHunters in data thefts and extortions. After the arrest, ShinyHunters intensified attacks, stealing sensitive FBI data and extorting the Russian ransomware group Cl0p. The crackdown highlights ongoing threats from the group.]]></description>
-      <pubDate>Mon, 28 Sep 2026 15:08:57 GMT</pubDate>
-      <source url="https://krebsonsecurity.com/2026/09/dutch-police-arrest-reformed-hacker-in-shiny-hunters-investigation/">Krebs on Security</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Citrix NetScaler Zero-Day Exploits CVE-2026-88771 and CVE-2026-88772 Active in Wild</title>
-      <link>https://secubuzz.com/news/citrix-netscaler-zero-day-exploits-cve-2026-88771-and-cve-20</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/citrix-netscaler-zero-day-exploits-cve-2026-88771-and-cve-20</guid>
-      <description><![CDATA[Citrix NetScaler devices are being targeted by active zero-day attacks exploiting CVE-2026-88771 and CVE-2026-88772. The vulnerabilities allow remote code execution without authentication, enabling attackers to gain full control of affected appliances. Citrix has issued patches; administrators should update immediately to mitigate the risk.]]></description>
-      <pubDate>Mon, 28 Sep 2026 15:02:04 GMT</pubDate>
-      <source url="https://unit42.paloaltonetworks.com/netscaler-zero-days-exploited/">Unit 42</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

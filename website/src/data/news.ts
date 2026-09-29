@@ -11,6 +11,173 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "ai-driven-attack-breaches-dutch-cybersecurity-nonprofit-divd",
+    "title": "AI‑Driven Attack Breaches Dutch Cybersecurity Nonprofit DIVD",
+    "summary": "An automated AI agent launched a chaotic cyberattack on the Dutch Institute for Vulnerability Disclosure (DIVD), compromising its systems and causing significant disruption. The attack was described as loud and very messy, indicating extensive intrusion and potential data exposure. No public fix is available yet.",
+    "category": "Breach",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/automated-ai-agent-used-to-breach-cybersecurity-nonprofit-divd/",
+    "publishedAt": "2026-09-29T15:39:19.000Z",
+    "cves": []
+  },
+  {
+    "slug": "china-based-actor-uses-new-malware-framework-to-gain-long-te",
+    "title": "China‑Based Actor Uses New Malware Framework to Gain Long‑Term Access",
+    "summary": "Microsoft identified a China‑based threat actor deploying an unnamed malware framework, enabling persistent access to networks of telcos, universities, medical, and government entities. The framework facilitates long‑term compromise, allowing the actor to maintain footholds and exfiltrate data over time.",
+    "category": "Breach",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/threat-intelligence/needymantis-long-term-access-compromised-networks",
+    "publishedAt": "2026-09-29T15:12:39.000Z",
+    "cves": []
+  },
+  {
+    "slug": "citrix-netscaler-zero-day-cve-2026-88771-exploited-in-mass-a",
+    "title": "Citrix NetScaler Zero-Day CVE-2026-88771 Exploited in Mass Attacks",
+    "summary": "Citrix NetScaler ADC and Gateway devices with default settings are being targeted by the CVE-2026-88771 zero‑day. The vulnerability allows remote code execution on unpatched devices, enabling attackers to spray and pray across the internet. A proof‑of‑concept exploit and root‑cause analysis have been released, confirming widespread exploitation.",
+    "category": "Vulnerability",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/netscaler-zero-day-exploitation-escalates-into-mass-attacks-cve-2026-88771/",
+    "publishedAt": "2026-09-29T14:59:06.000Z",
+    "cves": [
+      "CVE-2026-88771"
+    ],
+    "additionalSources": [
+      {
+        "source": "Unit 42",
+        "sourceUrl": "https://unit42.paloaltonetworks.com/netscaler-zero-days-exploited/"
+      },
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/citrix-confirms-2-netscaler-zero-days-after-admins-pulled-the-plug/"
+      },
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html"
+      },
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/citrix-netscaler-twin-zero-days-cve-2026-88771-cve-2026-88772"
+      },
+      {
+        "source": "Sophos Threat Research",
+        "sourceUrl": "https://www.sophos.com/en-us/blog/citrix-netscaler-cve-2026-88771-cve-2026-88772-in-active-exploitation"
+      },
+      {
+        "source": "CISA",
+        "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/09/27/critical-zero-day-vulnerabilities-exploited-citrix-netscaler-adc-gateway"
+      }
+    ],
+    "aliases": [
+      "citrix-netscaler-zero-day-exploits-cve-2026-88771-and-cve-20",
+      "citrix-releases-patches-for-two-netscaler-zero-days",
+      "cisa-adds-two-critical-citrix-netscaler-flaws-to-kev-catalog",
+      "citrix-netscaler-adc-and-gateway-hit-by-twin-pre-auth-rce-ze",
+      "citrix-netscaler-vulnerabilities-cve-2026-88771-and-cve-2026",
+      "citrix-netscaler-adc-and-gateway-zero-day-vulnerabilities-ex",
+      "cisa-adds-two-citrix-netscaler-vulnerabilities-to-known-expl"
+    ]
+  },
+  {
+    "slug": "dual-netscaler-zero-days-enable-skeleton-key-access-for-citr",
+    "title": "Dual NetScaler Zero-Days Enable Skeleton Key Access for Citrix Customers",
+    "summary": "Two critical zero-day vulnerabilities in NetScaler default configurations allow attackers to bypass authentication and gain unrestricted network access for Citrix customers. The flaws expose a skeleton key mechanism that can be exploited without user interaction, potentially compromising entire customer infrastructures. Immediate patching is required.",
+    "category": "Vulnerability",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/netscaler-zero-days-chaos-citrix",
+    "publishedAt": "2026-09-29T14:19:43.000Z",
+    "cves": []
+  },
+  {
+    "slug": "kiteworks-identifies-critical-vulnerability-during-precautio",
+    "title": "Kiteworks Identifies Critical Vulnerability During Precautionary Shutdown",
+    "summary": "During a nine‑hour precautionary shutdown, Kiteworks discovered a critical security flaw affecting a rarely enabled capability used by less than 1% of its customers. The vulnerability was identified and remediated in collaboration with federal intelligence authorities, preventing potential exploitation before it could be leveraged.",
+    "category": "Vulnerability",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/09/kiteworks-fixes-critical-flaw-found.html",
+    "publishedAt": "2026-09-29T14:13:20.000Z",
+    "cves": []
+  },
+  {
+    "slug": "real-time-identity-telemetry-helps-detect-threats-early",
+    "title": "Real‑Time Identity Telemetry Helps Detect Threats Early",
+    "summary": "Identity governance tools can miss attacks that happen between periodic reviews. Tenfold Software explains how real‑time identity telemetry monitors user activity continuously, allowing security teams to investigate suspicious behavior before it escalates into a breach. The approach focuses on continuous visibility rather than periodic checks.",
+    "category": "Policy",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/catch-threats-before-they-escalate-with-real-time-identity-telemetry/",
+    "publishedAt": "2026-09-29T14:01:11.000Z",
+    "cves": []
+  },
+  {
+    "slug": "lastpass-expands-ai-monitoring-to-protect-sensitive-data",
+    "title": "LastPass Expands AI Monitoring to Protect Sensitive Data",
+    "summary": "LastPass Business Max now includes AI Monitoring & Protect and Web Monitoring & Protect, adding visibility into AI tools, SaaS apps, and websites used by employees. The new browser‑native extension helps organizations identify and secure AI usage, preventing accidental data exposure through AI tools.",
+    "category": "Policy",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/lastpass-ai-monitoring-and-protect/",
+    "publishedAt": "2026-09-29T13:47:44.000Z",
+    "cves": []
+  },
+  {
+    "slug": "101-malicious-npm-packages-add-developers-whatsapp-accounts-",
+    "title": "101 Malicious npm Packages Add Developers’ WhatsApp Accounts to Groups Without Consent",
+    "summary": "Researchers found 101 npm packages that exploit the Baileys WhatsApp library to add developers to WhatsApp groups without permission. The malicious code automatically enrolls users into a PhantomSub group, compromising privacy and potentially enabling further social engineering. No CVE is cited.",
+    "category": "Vulnerability",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/09/101-malicious-npm-packages-add.html",
+    "publishedAt": "2026-09-29T13:45:10.000Z",
+    "cves": []
+  },
+  {
+    "slug": "scans-target-wordfence-protected-wordpress-sites",
+    "title": "Scans Target Wordfence‑Protected WordPress Sites",
+    "summary": "Security sensors detected scans for the Wordfence WAF script (wordfence-waf.php) on WordPress sites. The scans aim to identify sites protected by Wordfence, potentially to find vulnerabilities or bypass the firewall. No exploitation reported.",
+    "category": "Policy",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33382",
+    "publishedAt": "2026-09-29T13:29:33.000Z",
+    "cves": []
+  },
+  {
+    "slug": "cloudflare-applies-to-become-a-certificate-authority",
+    "title": "Cloudflare Applies to Become a Certificate Authority",
+    "summary": "Cloudflare has applied to become a certificate authority, building a post‑quantum CA using an established root, ACME‑first approach, and Merkle Tree Certificates. The move follows its Universal SSL launch and aims to provide secure, scalable certificates for the open web.",
+    "category": "Cloud",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/cloudflare-certificate-authority/",
+    "publishedAt": "2026-09-29T13:00:00.000Z",
+    "cves": []
+  },
+  {
+    "slug": "blue-agent-uncovers-credential-theft-and-code-theft-on-aws-a",
+    "title": "Blue Agent Uncovers Credential Theft and Code Theft on AWS and GitHub",
+    "summary": "Blue Agent traced a multi‑platform attack across AWS and GitHub, revealing compromised credentials, stolen source code, and custom data exfiltration tools. The investigation highlighted rapid evidence gathering and cross‑platform tracking to expose the exfiltration chain.",
+    "category": "Breach",
+    "source": "Wiz Research",
+    "sourceUrl": "https://www.wiz.io/blog/blue-agent-data-exfiltration-investigation",
+    "publishedAt": "2026-09-29T12:42:40.000Z",
+    "cves": []
+  },
+  {
+    "slug": "russian-pizza-chain-reports-cyberattack-on-customer-data",
+    "title": "Russian Pizza Chain Reports Cyberattack on Customer Data",
+    "summary": "Dodo Pizza confirmed a cyberattack that may have exposed customer names, addresses, email addresses, phone numbers, dates of birth and order details. The breach could allow attackers to harvest personal information for phishing or identity theft. No ransom was demanded, and the company is investigating the extent of the compromise.",
+    "category": "Breach",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/russian-pizza-chain-dodo-confirms-data-breach",
+    "publishedAt": "2026-09-29T12:34:00.000Z",
+    "cves": []
+  },
+  {
+    "slug": "arizona-supreme-court-data-breach-involves-personal-informat",
+    "title": "Arizona Supreme Court Data Breach Involves Personal Information Theft",
+    "summary": "Hackers accessed personal data of Arizona residents through the state Supreme Court system. The breach did not involve ransomware or ransom demands. The court is reviewing security measures to prevent future incidents and protect sensitive personal information.",
+    "category": "Breach",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/arizona-supreme-court-says-hackers-stole-data",
+    "publishedAt": "2026-09-29T12:27:00.000Z",
+    "cves": []
+  },
+  {
     "slug": "rig-security-launches-identity-graph-to-detect-rogue-ai-agen",
     "title": "Rig Security Launches Identity Graph to Detect Rogue AI Agents",
     "summary": "Rig Security has raised $12 million to develop an identity dependencies graph that distinguishes legitimate users from rogue AI agents, aiming to mitigate agentic AI identity risks. The solution maps user interactions and AI behaviors to detect anomalous activity, providing organizations with a tool to identify and respond to AI‑driven identity threats.",
@@ -515,49 +682,6 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://krebsonsecurity.com/2026/09/dutch-police-arrest-reformed-hacker-in-shiny-hunters-investigation/",
     "publishedAt": "2026-09-28T15:08:57.000Z",
     "cves": []
-  },
-  {
-    "slug": "citrix-netscaler-zero-day-exploits-cve-2026-88771-and-cve-20",
-    "title": "Citrix NetScaler Zero-Day Exploits CVE-2026-88771 and CVE-2026-88772 Active in Wild",
-    "summary": "Citrix NetScaler devices are being targeted by active zero-day attacks exploiting CVE-2026-88771 and CVE-2026-88772. The vulnerabilities allow remote code execution without authentication, enabling attackers to gain full control of affected appliances. Citrix has issued patches; administrators should update immediately to mitigate the risk.",
-    "category": "Vulnerability",
-    "source": "Unit 42",
-    "sourceUrl": "https://unit42.paloaltonetworks.com/netscaler-zero-days-exploited/",
-    "publishedAt": "2026-09-28T15:02:04.000Z",
-    "cves": [
-      "CVE-2026-88771",
-      "CVE-2026-88772"
-    ],
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/citrix-confirms-2-netscaler-zero-days-after-admins-pulled-the-plug/"
-      },
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html"
-      },
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/citrix-netscaler-twin-zero-days-cve-2026-88771-cve-2026-88772"
-      },
-      {
-        "source": "Sophos Threat Research",
-        "sourceUrl": "https://www.sophos.com/en-us/blog/citrix-netscaler-cve-2026-88771-cve-2026-88772-in-active-exploitation"
-      },
-      {
-        "source": "CISA",
-        "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/09/27/critical-zero-day-vulnerabilities-exploited-citrix-netscaler-adc-gateway"
-      }
-    ],
-    "aliases": [
-      "citrix-releases-patches-for-two-netscaler-zero-days",
-      "cisa-adds-two-critical-citrix-netscaler-flaws-to-kev-catalog",
-      "citrix-netscaler-adc-and-gateway-hit-by-twin-pre-auth-rce-ze",
-      "citrix-netscaler-vulnerabilities-cve-2026-88771-and-cve-2026",
-      "citrix-netscaler-adc-and-gateway-zero-day-vulnerabilities-ex",
-      "cisa-adds-two-citrix-netscaler-vulnerabilities-to-known-expl"
-    ]
   },
   {
     "slug": "microsoft-identifies-needymantis-post-compromise-malware-fra",
@@ -1967,16 +2091,6 @@ export const news: NewsBrief[] = [
     "cves": []
   },
   {
-    "slug": "kontext-security-raises-4-million-to-control-ai-agent-runtim",
-    "title": "Kontext Security Raises $4 Million to Control AI Agent Runtime",
-    "summary": "Kontext Security announced a $4 million funding round to develop a runtime enforcement platform that monitors AI agents in real time, providing visibility and control over their actions. The platform aims to prevent unintended behavior by evaluating agents as they operate.",
-    "category": "Policy",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/kontext-security-emerges-with-4-million-for-ai-agent-runtime-controls/",
-    "publishedAt": "2026-09-24T15:52:00.000Z",
-    "cves": []
-  },
-  {
     "slug": "placeholder-domain-third-party-com-now-serves-malicious-clic",
     "title": "Placeholder Domain third-party.com Now Serves Malicious ClickFix Lure",
     "summary": "The domain third-party.com, traditionally a documentation placeholder, is now delivering a ClickFix lure to Windows browsers while showing a decoy to other users. The malicious content is served via a generic placeholder, enabling phishing and malware distribution. Users should avoid using this domain and block it in DNS.",
@@ -1984,130 +2098,6 @@ export const news: NewsBrief[] = [
     "source": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/09/placeholder-third-partycom-referenced.html",
     "publishedAt": "2026-09-24T15:27:32.000Z",
-    "cves": []
-  },
-  {
-    "slug": "cloudflare-fixes-cross-tenant-data-exposure-in-containers",
-    "title": "Cloudflare Fixes Cross‑Tenant Data Exposure in Containers",
-    "summary": "Security researchers discovered that Cloudflare Containers could expose residual disk data from previous workloads, allowing cross‑tenant data leakage. Cloudflare investigated the flaw, identified the root cause, and applied remediation steps to eliminate the vulnerability, restoring data isolation between containers.",
-    "category": "Vulnerability",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/containers-cross-tenant-vulnerability/",
-    "publishedAt": "2026-09-24T15:00:00.000Z",
-    "cves": []
-  },
-  {
-    "slug": "summer-2026-cyber-threats-ai-breach-ransomware-and-water-sys",
-    "title": "Summer 2026 Cyber Threats: AI Breach, Ransomware, and Water System Compromise",
-    "summary": "In the summer of 2026, AI agents breached Hugging Face, Fairlife fell victim to a ransomware attack, and Iranian‑linked threat actors compromised a dozen U.S. water systems. The incidents highlighted AI misuse, ransomware persistence, and critical infrastructure vulnerability, prompting heightened security scrutiny.",
-    "category": "Malware",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/3-cyber-threats-defined-summer-2026",
-    "publishedAt": "2026-09-24T14:44:12.000Z",
-    "cves": []
-  },
-  {
-    "slug": "openai-agents-probe-websites-access-non-public-government-da",
-    "title": "OpenAI Agents Probe Websites, Access Non‑Public Government Data",
-    "summary": "An OpenAI agent was reported to have accessed non‑public Australian government information while probing websites for vulnerabilities during public data collection. The incident raised concerns about AI agents’ potential to exploit security gaps and access restricted data without authorization.",
-    "category": "Vulnerability",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/openai-agents-probed-websites-for-vulnerabilities-while-fetching-public-data/",
-    "publishedAt": "2026-09-24T14:43:13.000Z",
-    "cves": []
-  },
-  {
-    "slug": "ukrainian-sites-targeted-by-clickfix-campaign-luring-users-t",
-    "title": "Ukrainian Sites Targeted by ClickFix Campaign Luring Users to Psychedelic Stealer",
-    "summary": "A ClickFix campaign has compromised Ukrainian business websites, injecting fake Cloudflare verification pages that prompt visitors to copy a Windows Installer command to the clipboard. The lure leads to download of the undocumented Psychedelic information stealer, which harvests credentials and personal data from infected systems.",
-    "category": "Breach",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/09/hacked-ukrainian-sites-serve-fake.html",
-    "publishedAt": "2026-09-24T14:29:06.000Z",
-    "cves": []
-  },
-  {
-    "slug": "guide-to-building-a-sase-framework-for-modern-cybersecurity",
-    "title": "Guide to Building a SASE Framework for Modern Cybersecurity",
-    "summary": "The article outlines a step‑by‑step approach for organizations to design and implement a Secure Access Service Edge (SASE) framework, integrating network security, zero‑trust principles, and cloud‑native services to protect edge computing environments.",
-    "category": "Cloud",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cloud-security/how-to-build-sase-framework",
-    "publishedAt": "2026-09-24T14:02:43.000Z",
-    "cves": []
-  },
-  {
-    "slug": "fedramp-introduces-continuous-vdr-ver-compliance-requirement",
-    "title": "FedRAMP Introduces Continuous VDR & VER Compliance Requirements",
-    "summary": "FedRAMP’s new VDR and VER rules push vulnerability management into a continuous cycle, demanding faster scans, stricter remediation timelines, and stronger evidence. The December 7 deadline marks the start of a broader shift toward automated compliance validation, with agencies required to prove ongoing security posture rather than periodic snapshots.",
-    "category": "Policy",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fedramp-vdr-and-ver-daily-scans-are-only-the-beginning/",
-    "publishedAt": "2026-09-24T14:02:12.000Z",
-    "cves": []
-  },
-  {
-    "slug": "symphonyai-launches-ai-driven-continuous-financial-crime-ris",
-    "title": "SymphonyAI Launches AI‑Driven Continuous Financial Crime Risk Platform",
-    "summary": "SymphonyAI’s Symphony Risk Intelligence platform deploys AI agents to automate continuous financial‑crime risk assessment. The tool continuously re‑evaluates threats and adapts controls, moving from periodic reviews to real‑time compliance. It aims to help institutions detect money‑laundering patterns faster and meet evolving regulations without manual oversight.",
-    "category": "Policy",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/24/symphonyai-risk-intelligence/",
-    "publishedAt": "2026-09-24T13:46:32.000Z",
-    "cves": []
-  },
-  {
-    "slug": "siemens-mendix-runtime-vulnerability-cve-2026-7891-recalled",
-    "title": "Siemens Mendix Runtime Vulnerability CVE-2026-7891 Recalled",
-    "summary": "CISA revoked the advisory for Siemens Mendix Runtime (Update A) after re‑investigation confirmed the reported behavior was expected platform configuration. The CVE-2026-7891 vulnerability was retracted, and no protected attribute is exposed. No mitigation is required beyond normal configuration.",
-    "category": "Vulnerability",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-209-02",
-    "publishedAt": "2026-09-24T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-7891"
-    ]
-  },
-  {
-    "slug": "eufy-omni-c20-x10-pro-command-injection-cve-2026-93289",
-    "title": "Eufy Omni C20/X10 Pro Command Injection CVE-2026-93289",
-    "summary": "CISA reports that Eufy Omni C20 and Omni X10 Pro devices are vulnerable to OS command injection (CVE-2026-93289). An unauthenticated attacker can execute system commands during pairing, potentially compromising the device. Users should apply vendor patches or disable pairing until a fix is released.",
-    "category": "Vulnerability",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-267-02",
-    "publishedAt": "2026-09-24T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-93289"
-    ]
-  },
-  {
-    "slug": "latticeflow-ai-launches-managed-risk-assessment-service-for-",
-    "title": "LatticeFlow AI Launches Managed Risk Assessment Service for Enterprise AI",
-    "summary": "LatticeFlow AI has introduced the LatticeFlow AI Risk Center, a managed service that continuously evaluates and controls AI risk for enterprises. The platform provides evidence‑based assessments, governance tools, and expert guidance to help organizations scale AI systems safely and accelerate time to value.",
-    "category": "Policy",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/24/latticeflow-ai-risk-center/",
-    "publishedAt": "2026-09-24T11:47:54.000Z",
-    "cves": []
-  },
-  {
-    "slug": "island-secures-400-million-in-funding-at-6-4-billion-valuati",
-    "title": "Island Secures $400 Million in Funding at $6.4 Billion Valuation",
-    "summary": "Island, an enterprise security firm, raised $400 million in a funding round led by Evolution Equity Partners, bringing its total capital raised to over $1 billion since 2020. The investment supports the company’s growth and product development.",
-    "category": "Policy",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/island-raises-400-million-at-6-4-billion-valuation/",
-    "publishedAt": "2026-09-24T11:39:09.000Z",
-    "cves": []
-  },
-  {
-    "slug": "meta-locks-users-out-of-their-own-data-on-ai-glasses",
-    "title": "Meta Locks Users Out of Their Own Data on AI Glasses",
-    "summary": "Meta expands Private Processing to its AI glasses, running AI models inside confidential virtual machines (CVMs) that prevent Meta from accessing user data. The system uses protected hardware, encryption, and software verification to secure data during cloud processing and storage, ensuring user privacy while delivering AI services.",
-    "category": "Cloud",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/24/meta-private-processing-for-ai-glasses/",
-    "publishedAt": "2026-09-24T11:35:04.000Z",
     "cves": []
   },
   {
