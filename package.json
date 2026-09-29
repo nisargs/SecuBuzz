@@ -33,7 +33,7 @@
     "typecheck": "tsc --noEmit",
     "update:prod": "eas update --platform android --branch production --environment production",
     "web:dev": "npm run --prefix website dev",
-    "web:build": "npm run --prefix website build",
+    "web:build": "node scripts/generate_rss.mjs && npm run --prefix website build",
     "worker:dev": "npm run --prefix worker dev",
     "worker:deploy": "npm run --prefix worker deploy",
     "deploy:web": "npm run web:build && npm run worker:deploy"

@@ -16,11 +16,23 @@ import { About } from './pages/About';
 import { Contact } from './pages/Contact';
 import { NotFound } from './pages/NotFound';
 
+function ExternalFileRedirect({ to }: { to: string }) {
+  React.useEffect(() => {
+    window.location.replace(to);
+  }, [to]);
+  return null;
+}
+
 export function App() {
   return (
     <MotionConfig reducedMotion="user">
       <BrowserRouter>
         <Routes>
+          <Route path="/rss.xml" element={<ExternalFileRedirect to="/rss.xml" />} />
+          <Route path="/feed.xml" element={<ExternalFileRedirect to="/rss.xml" />} />
+          <Route path="/sitemap.xml" element={<ExternalFileRedirect to="/sitemap.xml" />} />
+          <Route path="/.well-known/security.txt" element={<ExternalFileRedirect to="/.well-known/security.txt" />} />
+          <Route path="/security.txt" element={<ExternalFileRedirect to="/.well-known/security.txt" />} />
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="/news" element={<News />} />
@@ -38,6 +50,6 @@ export function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-    </MotionConfig>);
-
+    </MotionConfig>
+  );
 }
