@@ -1,6 +1,7 @@
 import { Ionicons } from '@expo/vector-icons';
 import * as Linking from 'expo-linking';
 import { router } from 'expo-router';
+import { useState } from 'react';
 import {
   Pressable,
   ScrollView,
@@ -10,6 +11,7 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { OnboardingModal } from '../components/OnboardingModal';
 import { useTheme } from '../context/ThemeContext';
 import { spacing } from '../theme/theme';
 
@@ -75,6 +77,7 @@ function SubItemRow({
 
 export default function AboutSupportScreen() {
   const { colors, accentColor } = useTheme();
+  const [walkthroughOpen, setWalkthroughOpen] = useState(false);
 
   return (
     <SafeAreaView
@@ -129,6 +132,17 @@ export default function AboutSupportScreen() {
           ]}
         >
           <SubItemRow
+            icon="compass-outline"
+            title="Quick Start Walkthrough"
+            subtitle="Replay the 4-step feature introduction"
+            onPress={() => setWalkthroughOpen(true)}
+            accentColor={accentColor}
+            colors={colors}
+          />
+
+          <View style={[styles.divider, { backgroundColor: colors.border }]} />
+
+          <SubItemRow
             icon="star-outline"
             title="Rate SecuBuzz on Google Play"
             subtitle="Support development & share your review"
@@ -153,7 +167,7 @@ export default function AboutSupportScreen() {
           <SubItemRow
             icon="information-circle-outline"
             title="About SecuBuzz"
-            subtitle="Version 1.0.1, data pipeline & mission"
+            subtitle="Version 1.0.2, data pipeline & mission"
             onPress={() => router.push('/about')}
             accentColor={accentColor}
             colors={colors}
@@ -204,6 +218,11 @@ export default function AboutSupportScreen() {
           />
         </Pressable>
       </ScrollView>
+
+      <OnboardingModal
+        visible={walkthroughOpen}
+        onClose={() => setWalkthroughOpen(false)}
+      />
     </SafeAreaView>
   );
 }

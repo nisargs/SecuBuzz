@@ -17,11 +17,13 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { ArticleCard } from '../../components/ArticleCard';
 import {
   FilterModal,
   type SeverityFilter,
 } from '../../components/FilterModal';
+import { OnboardingModal, WALKTHROUGH_STORAGE_KEY } from '../../components/OnboardingModal';
 import {
   EmptyState,
   ErrorState,
@@ -90,6 +92,21 @@ export default function FeedScreen() {
 
   const [filterModalOpen, setFilterModalOpen] =
     useState(false);
+
+  const [walkthroughOpen, setWalkthroughOpen] =
+    useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      void AsyncStorage.getItem(WALKTHROUGH_STORAGE_KEY).then((seen) => {
+        if (!seen) {
+          setWalkthroughOpen(true);
+        }
+      });
+    }, 400);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const isAnyFilterActive =
     filter !== 'ALL' || severityFilter !== 'ALL';
@@ -944,6 +961,11 @@ export default function FeedScreen() {
         filteredCount={filteredArticles.length}
         severityCounts={severityCounts}
         categoryCounts={categoryCounts}
+      />
+
+      <OnboardingModal
+        visible={walkthroughOpen}
+        onClose={() => setWalkthroughOpen(false)}
       />
     </SafeAreaView>
   );

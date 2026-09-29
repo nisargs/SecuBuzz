@@ -1,6 +1,7 @@
 import { Ionicons } from '@expo/vector-icons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { router } from 'expo-router';
+import { WALKTHROUGH_STORAGE_KEY } from '../../components/OnboardingModal';
 import { useCallback, useEffect, useState } from 'react';
 import {
   Alert,
@@ -184,6 +185,8 @@ export default function SettingsScreen() {
                 'cached-articles',
                 '@secubuzz_advisories_v3',
                 '@secubuzz_advisories_v2',
+                WALKTHROUGH_STORAGE_KEY,
+                '@secubuzz_walkthrough_completed',
               ]);
               await calculateCacheSize();
               Alert.alert(
@@ -275,7 +278,7 @@ export default function SettingsScreen() {
           <ParentOptionRow
             icon="information-circle-outline"
             title="About & Support"
-            subtitle="Feedback, version 1.0.1 & licenses"
+            subtitle="Feedback, version 1.0.2 & licenses"
             onPress={() => router.push('/about-support')}
             accentColor={accentColor}
             colors={colors}
@@ -310,7 +313,7 @@ export default function SettingsScreen() {
         {/* BOTTOM ATTRIBUTION */}
         <View style={styles.footer}>
           <Text style={[styles.footerText, { color: colors.textMuted }]}>
-            SecuBuzz Intelligence · Version 1.0.1
+            SecuBuzz Intelligence · Version 1.0.2
           </Text>
           <Text style={[styles.footerSubtext, { color: colors.textMuted }]}>
             Crafted by MiSo Labs

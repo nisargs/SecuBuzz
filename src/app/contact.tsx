@@ -48,7 +48,7 @@ export default function ContactScreen() {
 
     const categoryObj = CATEGORIES.find((c) => c.id === category);
     const categoryLabel = categoryObj?.label || 'General Feedback';
-    const appVersion = Constants.expoConfig?.version ?? '1.0.1';
+    const appVersion = Constants.expoConfig?.version ?? '1.0.2';
     const systemInfo = `${Platform.OS.toUpperCase()} (SDK ${Platform.Version})`;
 
     const targetEmail = category === 'PUBLISHER' ? PUBLISHERS_EMAIL : SUPPORT_EMAIL;
