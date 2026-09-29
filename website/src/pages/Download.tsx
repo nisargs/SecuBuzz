@@ -3,10 +3,16 @@ import { PlayStoreButton } from '../components/PlayStoreButton';
 import { PhoneMockup } from '../components/PhoneMockup';
 import { FaqAccordion } from '../components/FaqAccordion';
 import { appFeatures, appRequirements, downloadFaq } from '../data/site';
+import { Seo } from '../components/Seo';
 
 export function Download() {
   return (
     <>
+      <Seo
+        title="Download SecuBuzz for Android · Closed Testing"
+        description="Download SecuBuzz for Android. Fast 60-word cybersecurity briefs and CISA zero-day alerts. Now in closed testing on Google Play."
+        canonicalPath="/download"
+      />
       <section className="border-b border-line">
         <div className="mx-auto grid max-w-site items-center gap-14 px-5 py-16 md:px-8 lg:grid-cols-[1fr_0.8fr] lg:py-20">
           <div>

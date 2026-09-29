@@ -8,6 +8,7 @@ import { AppCta } from '../components/AppCta';
 import { NotFound } from './NotFound';
 import { shortDate, timeAgo } from '../utils/date';
 import { dueStatus } from '../utils/advisory';
+import { Seo } from '../components/Seo';
 
 export function AdvisoryDetail() {
   const { slug } = useParams();
@@ -31,11 +32,16 @@ export function AdvisoryDetail() {
   { label: 'Product', value: advisory.product },
   { label: 'Added to KEV', value: shortDate(advisory.dateAdded) },
   { label: 'Weakness', value: advisory.cwe },
-  { label: 'Ransomware use', value: advisory.ransomware ? 'Known' : 'Unknown' }];
+  { label: 'Ransomware use', value: advisory.ransomware ? 'Known campaign use' : 'Not reported' }];
 
 
   return (
     <>
+      <Seo
+        title={`${advisory.cve} · ${advisory.vendor} ${advisory.product} · SecuBuzz`}
+        description={advisory.description || advisory.name}
+        canonicalPath={`/advisories/${advisory.slug}`}
+      />
       <article className="mx-auto max-w-site px-5 pb-16 pt-10 md:px-8">
         <Link
           to="/advisories"
@@ -126,7 +132,7 @@ export function AdvisoryDetail() {
           </aside>
         </div>
       </article>
-      <AppCta title="Get KEV alerts like this on your phone" body="Receive real-time push alerts with remediation deadlines as soon as CISA catalogs active zero-days." />
+      <AppCta title="Get KEV alerts on your Android device" body="Receive push notifications with remediation deadlines whenever new zero-days are cataloged." />
     </>);
 
 }

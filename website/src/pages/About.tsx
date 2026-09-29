@@ -2,10 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { AppCta } from '../components/AppCta';
 import { aboutPrinciples } from '../data/site';
+import { Seo } from '../components/Seo';
 
 export function About() {
   return (
     <>
+      <Seo
+        title="About SecuBuzz · MiSo Labs"
+        description="SecuBuzz is an independent cybersecurity threat intelligence assistant built by MiSo Labs. No tracking, anonymous crash reports only."
+        canonicalPath="/about"
+      />
       <section className="border-b border-line">
         <div className="mx-auto max-w-site px-5 py-16 md:px-8 md:py-24">
           <h1 className="max-w-4xl text-4xl font-semibold leading-[1.1] tracking-tight text-ink md:text-6xl">
@@ -29,7 +35,7 @@ export function About() {
           </p>
           <p>
             SecuBuzz is engineered with a strict <strong className="text-ink">privacy-first architecture</strong>: no user accounts, no trackers,
-            and no telemetry collection. The app is currently in closed testing on Android as we prepare for broader release.
+            no advertising IDs, and anonymous crash reports only to maintain app stability. The app is currently in closed testing on Android as we prepare for broader release.
           </p>
           <p className="text-sm text-subtle">
             SecuBuzz is an independent intelligence project developed by MiSo Labs and is not affiliated with or endorsed by CISA.

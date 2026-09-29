@@ -68,6 +68,8 @@ import {
   ArticleItem,
   KevVulnerability,
   generateSitemapXml,
+  generateRssXml,
+  injectMetaTags,
 } from './sitemap';
 import { SEED_KEV_ADVISORIES } from './seedKev';
 
@@ -250,6 +252,33 @@ export default {
         });
       }
 
+      // RSS Feed for news briefs
+      if (url.pathname === '/rss.xml' || url.pathname === '/feed.xml' || url.pathname === '/news/rss.xml') {
+        const articles = await getArticles();
+        const rssXml = generateRssXml(articles);
+        return new Response(rssXml, {
+          status: 200,
+          headers: {
+            'Content-Type': 'application/xml; charset=utf-8',
+            'Cache-Control': 'public, max-age=1800',
+            ...CORS_HEADERS,
+          },
+        });
+      }
+
+      // Security.txt (RFC 9116)
+      if (url.pathname === '/.well-known/security.txt' || url.pathname === '/security.txt') {
+        const securityTxt = `Contact: mailto:security@secubuzz.com\nExpires: 2027-12-31T23:59:59.000Z\nPreferred-Languages: en\nCanonical: https://secubuzz.com/.well-known/security.txt\nPolicy: https://secubuzz.com/privacy\nAcknowledgments: https://secubuzz.com/about\n`;
+        return new Response(securityTxt, {
+          status: 200,
+          headers: {
+            'Content-Type': 'text/plain; charset=utf-8',
+            'Cache-Control': 'public, max-age=86400',
+            ...CORS_HEADERS,
+          },
+        });
+      }
+
       // Robots.txt for Web Crawlers
       if (url.pathname === '/robots.txt') {
         const robotsTxt = `User-agent: *\nAllow: /\n\nSitemap: https://secubuzz.com/sitemap.xml\n`;
@@ -265,28 +294,29 @@ export default {
 
       // Static Assets & Single Page Application (SPA) Routing via Cloudflare Workers Assets
       if (env.ASSETS) {
-        const assetRes = await env.ASSETS.fetch(request);
+        let assetRes = await env.ASSETS.fetch(request);
+        if (assetRes.status === 404) {
+          assetRes = await env.ASSETS.fetch(new Request(new URL('/', request.url), request));
+        }
+
+        const contentType = assetRes.headers.get('content-type') || '';
+        if (assetRes.status === 200 && contentType.includes('text/html')) {
+          const rawHtml = await assetRes.text();
+          const [articles, advisories] = await Promise.all([getArticles(), getKevAdvisories()]);
+          const enrichedHtml = injectMetaTags(rawHtml, url.pathname, articles, advisories);
+          return new Response(enrichedHtml, {
+            status: 200,
+            headers: {
+              'Content-Type': 'text/html; charset=utf-8',
+              'Cache-Control': 'public, max-age=60, s-maxage=300',
+              ...CORS_HEADERS,
+            },
+          });
+        }
+
         if (assetRes.status !== 404) {
           return assetRes;
         }
-        // Fallback for client-side routing: serve index.html (SPA)
-        const spaRes = await env.ASSETS.fetch(new Request(new URL('/', request.url), request));
-        if (spaRes.status !== 404) {
-          return spaRes;
-        }
-      }
-
-      // Robots.txt for Web Crawlers
-      if (url.pathname === '/robots.txt') {
-        const robotsTxt = `User-agent: *\nAllow: /\n\nSitemap: https://secubuzz.com/sitemap.xml\n`;
-        return new Response(robotsTxt, {
-          status: 200,
-          headers: {
-            'Content-Type': 'text/plain; charset=utf-8',
-            'Cache-Control': 'public, max-age=86400',
-            ...CORS_HEADERS,
-          },
-        });
       }
 
       // Public Feed Proxy (Enables https://secubuzz.com/feed.json to serve live R2 feed directly)

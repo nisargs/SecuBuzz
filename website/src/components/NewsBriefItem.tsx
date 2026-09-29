@@ -37,6 +37,22 @@ export function NewsBriefItem({ brief }: NewsBriefItemProps) {
             {brief.source}
             <ArrowUpRightIcon className="h-3.5 w-3.5" aria-hidden="true" />
           </a>
+          {brief.additionalSources && brief.additionalSources.length > 0 && (
+            <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-subtle">
+              <span>Also reported by:</span>
+              {brief.additionalSources.map((s) => (
+                <a
+                  key={s.sourceUrl}
+                  href={s.sourceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-0.5 text-muted hover:text-ink">
+                  {s.source}
+                  <ArrowUpRightIcon className="h-3 w-3" aria-hidden="true" />
+                </a>
+              ))}
+            </div>
+          )}
           {brief.cves.map((cve) =>
           <Link
             key={cve}

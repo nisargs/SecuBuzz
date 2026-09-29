@@ -18,7 +18,7 @@ export const privacySections: LegalSection[] = [
   heading: '2. Information We Handle',
   body: [
   'Device and Application Telemetry: Anonymized crash logs and app version statistics used strictly to diagnose bugs and maintain uptime.',
-  'Push Notification Token: If you opt in to receive real-time CISA KEV zero-day alerts, an anonymous Expo/Firebase Cloud Messaging (FCM) token is registered to deliver broadcast notifications. This token is never linked to your personal identity, name, or phone number, and can be revoked at any time.',
+  'Push Notification Token: If you opt in to receive periodic CISA KEV zero-day alerts, an anonymous Expo/Firebase Cloud Messaging (FCM) token is registered to deliver broadcast notifications. This token is never linked to your personal identity, name, or phone number, and can be revoked at any time.',
   'On-Device Bookmarks & Preferences: All bookmarks, filter preferences, and theme choices are stored 100% on your local device. They are never sent to or stored on our servers.']
 
 },
@@ -26,7 +26,7 @@ export const privacySections: LegalSection[] = [
   id: 'what-we-dont',
   heading: '3. What We Never Collect',
   body: [
-  'We do not collect names, passwords, phone numbers, contact books, GPS location data, advertising IDs (GAID/IDFA), or browsed story history.',
+  'We do not collect names, passwords, phone numbers, contact books, GPS location data, advertising IDs (GAID/IDFA), or browsed brief history.',
   'We do not sell personal data, license user profiles, or transmit information to data brokers or third-party marketing networks.']
 
 },
@@ -68,7 +68,7 @@ export const accountDeletionSections: LegalSection[] = [
   id: 'local-data',
   heading: '2. Deleting On-Device Data',
   body: [
-  'All user data (such as bookmarked stories, filter preferences, and theme choices) is stored entirely in local device storage.',
+  'All user data (such as bookmarked briefs, filter preferences, and theme choices) is stored entirely in local device storage.',
   'To immediately purge all local data, tap "Clear All Data" in the SecuBuzz in-app Settings screen, or select "Clear Storage / Cache" in your Android system application settings.']
 
 },

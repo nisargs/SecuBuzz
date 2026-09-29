@@ -5,6 +5,8 @@ import { NewsBriefItem } from '../components/NewsBriefItem';
 import { news, newsCategories } from '../data/news';
 import type { NewsCategory } from '../types/news';
 
+import { Seo } from '../components/Seo';
+
 type Filter = 'All' | NewsCategory;
 
 export function News() {
@@ -28,9 +30,14 @@ export function News() {
 
   return (
     <>
+      <Seo
+        title="Cybersecurity News Briefs · SecuBuzz"
+        description="Concise 60-word cybersecurity briefs covering active vulnerabilities, ransomware campaigns, and zero-day threats."
+        canonicalPath="/news"
+      />
       <PageIntro
         title="News briefs"
-        description="Every story that matters to defenders, summarized in 60 words or fewer and linked to the original reporting." />
+        description="Critical threat intelligence that matters to defenders, summarized in concise 60-word briefs and linked to original reporting." />
       
       <div className="mx-auto max-w-site px-5 pb-20 md:px-8">
         <div className="sticky top-16 z-20 -mx-5 flex flex-col gap-3 border-b border-line bg-bg/95 px-5 py-4 backdrop-blur md:-mx-8 md:flex-row md:items-center md:justify-between md:px-8">

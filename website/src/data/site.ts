@@ -51,24 +51,24 @@ export const homeReasons = [
 
 export const appFeatures = [
   { title: '60-word briefs', body: 'Swipe through the day’s security news in concise cards you can finish in under 15 seconds.' },
-  { title: 'KEV push alerts', body: 'Instant notification when CISA lists a new exploited vulnerability, with remediation deadlines attached.' },
-  { title: 'On-device bookmarks', body: 'Save critical stories and advisories for later with a single tap. Bookmarks stay 100% on your device with no account or cloud sync.' },
-  { title: '1-tap incident reports', body: 'Instantly copy formatted markdown threat intelligence to clipboard for pasting directly into Slack, Microsoft Teams, or Jira tickets.' },
+  { title: 'KEV push alerts', body: 'Timely notifications when CISA lists a new exploited vulnerability, with remediation deadlines attached.' },
+  { title: 'On-device bookmarks', body: 'Save critical briefs and advisories for later with a single tap. Bookmarks stay 100% on your device with no account or cloud sync.' },
+  { title: '1-tap incident reports', body: 'Copy formatted markdown threat intelligence to clipboard for pasting directly into Slack, Microsoft Teams, or Jira tickets.' },
   { title: 'Offline reading', body: 'Up to 250 briefs and advisories are cached locally. Read full intelligence without network connectivity.' },
-  { title: 'No account required', body: 'Install and read immediately. 100% on-device preferences, zero tracking, and zero telemetry harvesting.' },
+  { title: 'No account required', body: 'Install and read immediately. 100% on-device preferences, no tracking, and anonymous crash reports only.' },
 ];
 
 export const appRequirements = [
   { label: 'Platform', value: 'Android 8.0 and later' },
   { label: 'Developer', value: 'MiSo Labs' },
   { label: 'Release track', value: 'Closed Testing (Google Play)' },
-  { label: 'Price', value: 'Free · Zero Telemetry' },
+  { label: 'Price', value: 'Free · Anonymous crash reports only' },
 ];
 
 export const downloadFaq = [
   {
-    q: 'Is there an iOS version?',
-    a: 'Not yet. SecuBuzz is currently built for Android and undergoing closed testing. An iOS release is planned on the roadmap.',
+    q: 'Which platforms are supported?',
+    a: 'SecuBuzz is built exclusively for Android and is currently in closed testing on Google Play.',
   },
   {
     q: 'Where does the KEV data come from?',
@@ -76,7 +76,7 @@ export const downloadFaq = [
   },
   {
     q: 'Does the app track me?',
-    a: 'No. SecuBuzz is engineered with privacy by architecture. No user accounts required, no location tracking, and no advertising IDs. See the Privacy Policy for full details.',
+    a: 'No. SecuBuzz is engineered with privacy by architecture. No user accounts required, no location tracking, and no advertising IDs. We collect only anonymous crash logs and version diagnostics to ensure stability. See our Privacy Policy for full details.',
   },
   {
     q: 'How do I join closed testing?',
@@ -91,15 +91,15 @@ export const publisherSteps = [
   },
   {
     title: 'We write the brief',
-    body: 'Our editors summarize qualifying stories in 60 words, crediting your publication by name on every card.',
+    body: 'AI-assisted briefs reviewed for accuracy in 60 words, crediting your publication by name on every card.',
   },
   {
     title: 'Readers click through',
-    body: 'Each brief carries a prominent “Read full story” link to your article. We never republish full text.',
+    body: 'Each brief carries a prominent “Read original reporting” link to your article. We never republish full text.',
   },
   {
     title: 'Direct practitioner traffic',
-    body: 'Every brief directs readers straight to your canonical domain to read your full story, driving verified security practitioner readership.',
+    body: 'Every brief directs readers straight to your canonical domain to read your full reporting, driving verified security practitioner readership.',
   },
 ];
 

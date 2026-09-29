@@ -6,6 +6,11 @@ export type NewsCategory =
 'Policy' |
 'Cloud';
 
+export interface AdditionalSource {
+  source: string;
+  sourceUrl: string;
+}
+
 export interface NewsBrief {
   slug: string;
   title: string;
@@ -13,6 +18,8 @@ export interface NewsBrief {
   category: NewsCategory;
   source: string;
   sourceUrl: string;
+  additionalSources?: AdditionalSource[];
   publishedAt: string;
   cves: string[];
+  aliases?: string[];
 }

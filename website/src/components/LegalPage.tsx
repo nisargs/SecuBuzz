@@ -1,16 +1,23 @@
 import React from 'react';
 import type { LegalSection } from '../data/legal';
 import { PageIntro } from './PageIntro';
+import { Seo } from './Seo';
 
 interface LegalPageProps {
   title: string;
   updated: string;
   sections: LegalSection[];
+  canonicalPath?: string;
+  description?: string;
 }
 
-export function LegalPage({ title, updated, sections }: LegalPageProps) {
+export function LegalPage({ title, updated, sections, canonicalPath, description }: LegalPageProps) {
+  const path = canonicalPath || (title.toLowerCase().includes('privacy') ? '/privacy' : '/account-deletion');
+  const desc = description || `Official ${title} for SecuBuzz by MiSo Labs. No tracking, anonymous crash reports only.`;
+
   return (
     <>
+      <Seo title={`${title} · SecuBuzz`} description={desc} canonicalPath={path} />
       <PageIntro title={title} meta={`Last updated ${updated}`} />
       <div className="mx-auto grid max-w-site gap-12 px-5 py-14 md:px-8 lg:grid-cols-[220px_1fr]">
         <nav aria-label="On this page" className="hidden lg:block">

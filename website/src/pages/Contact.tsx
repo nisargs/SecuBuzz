@@ -1,9 +1,11 @@
 import React from 'react';
 import { PageIntro } from '../components/PageIntro';
 import { ContactForm } from '../components/ContactForm';
+import { Seo } from '../components/Seo';
 
 const channels = [
-  { label: 'Support, Bugs & Security', value: 'support@secubuzz.com' },
+  { label: 'General Support & App Feedback', value: 'support@secubuzz.com' },
+  { label: 'Security Disclosures & Vulnerabilities', value: 'security@secubuzz.com' },
   { label: 'Publishers & Removal Requests', value: 'publishers@secubuzz.com' },
 ];
 
@@ -11,6 +13,11 @@ const channels = [
 export function Contact() {
   return (
     <>
+      <Seo
+        title="Contact SecuBuzz · MiSo Labs"
+        description="Contact the SecuBuzz team at MiSo Labs. Support, bug reports, publisher partnerships, and coordinated security disclosures."
+        canonicalPath="/contact"
+      />
       <PageIntro
         title="Contact"
         description="Questions, corrections, support, or a bug in the app. A real person on the team reads every message." />
@@ -37,8 +44,8 @@ export function Contact() {
             <h2 className="text-sm font-semibold text-ink">Reporting a vulnerability in SecuBuzz?</h2>
             <p className="mt-2 text-sm leading-relaxed text-muted">
               Please email{' '}
-              <a href="mailto:support@secubuzz.com" className="font-mono text-ink hover:text-accent">
-                support@secubuzz.com
+              <a href="mailto:security@secubuzz.com" className="font-mono text-ink hover:text-accent">
+                security@secubuzz.com
               </a>{' '}
               with details. We acknowledge reports within 48 hours and follow coordinated disclosure.
             </p>

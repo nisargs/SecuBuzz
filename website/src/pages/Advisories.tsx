@@ -5,6 +5,8 @@ import { AdvisoryTable } from '../components/AdvisoryTable';
 import { advisories } from '../data/advisories';
 import { daysUntil } from '../utils/date';
 
+import { Seo } from '../components/Seo';
+
 type SortKey = 'added' | 'due';
 
 export function Advisories() {
@@ -31,6 +33,11 @@ export function Advisories() {
 
   return (
     <>
+      <Seo
+        title="CISA Known Exploited Vulnerabilities · SecuBuzz"
+        description="Track active zero-days and vulnerabilities cataloged in CISA Known Exploited Vulnerabilities (KEV) with binding federal due dates."
+        canonicalPath="/advisories"
+      />
       <PageIntro
         title="CISA Known Exploited Vulnerabilities"
         description="Vulnerabilities CISA has confirmed are being exploited in the wild. Federal agencies must remediate by the due date; everyone else should treat it as a strong signal.">

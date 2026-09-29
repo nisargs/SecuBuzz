@@ -54,7 +54,7 @@ export function AdvisoryTable({ items }: AdvisoryTableProps) {
                   </div>
                 </td>
                 <td className="w-[95px] whitespace-nowrap px-4 py-3.5 align-top font-mono text-xs">
-                  {a.ransomware ? <span className="font-medium text-critical">Known</span> : <span className="text-subtle">Unknown</span>}
+                  {a.ransomware ? <span className="font-medium text-critical">Known</span> : <span className="text-subtle" title="No known ransomware use reported">—</span>}
                 </td>
               </tr>
             )}

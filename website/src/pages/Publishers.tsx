@@ -2,10 +2,16 @@ import React from 'react';
 import { PageIntro } from '../components/PageIntro';
 import { PublisherForm } from '../components/PublisherForm';
 import { publisherStats, publisherSteps } from '../data/site';
+import { Seo } from '../components/Seo';
 
 export function Publishers() {
   return (
     <>
+      <Seo
+        title="For Publishers & Security Researchers · SecuBuzz"
+        description="How SecuBuzz attributes and links to cybersecurity publishers, researchers, and reporters. Concise 60-word briefs pointing readers directly to original reporting."
+        canonicalPath="/publishers"
+      />
       <PageIntro
         title="Send defenders to your reporting"
         description="SecuBuzz summarizes security journalism in 60 words and sends readers to the original. Your byline, your traffic, no full-text republishing.">

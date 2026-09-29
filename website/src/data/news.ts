@@ -11,20 +11,6 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
-    "slug": "citrix-netscaler-adc-and-gateway-zero-day-vulnerabilities-exploit",
-    "title": "Citrix NetScaler ADC and Gateway Zero-Day Vulnerabilities Exploited Globally",
-    "summary": "CISA reports eight zero‑day CVEs (CVE-2026-88771 to CVE-2026-88778) in Citrix NetScaler ADC and Gateway. CVE-2026-88771 and CVE-2026-88772 are confirmed for remote code execution and are actively exploited worldwide. Citrix must be updated immediately to mitigate the risk.",
-    "category": "Vulnerability",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/09/27/critical-zero-day-vulnerabilities-exploited-citrix-netscaler-adc-gateway",
-    "publishedAt": "2026-09-27T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-88771",
-      "CVE-2026-88778",
-      "CVE-2026-88772"
-    ]
-  },
-  {
     "slug": "cloudflare-reflects-on-ai-and-web-sustainability-in-2026-founders",
     "title": "Cloudflare Reflects on AI and Web Sustainability in 2026 Founders’ Letter",
     "summary": "Cloudflare’s 2026 Annual Founders’ Letter discusses the growing dominance of automated traffic, the rise of AI agents, new creators, and the company’s commitment to building a fair, sustainable future for the web.",
@@ -32,29 +18,6 @@ export const news: NewsBrief[] = [
     "source": "Cloudflare Security",
     "sourceUrl": "https://blog.cloudflare.com/cloudflares-2026-annual-founders-letter/",
     "publishedAt": "2026-09-27T17:00:00.000Z",
-    "cves": []
-  },
-  {
-    "slug": "cisa-adds-two-citrix-netscaler-vulnerabilities-to-known-exploited",
-    "title": "CISA Adds Two Citrix NetScaler Vulnerabilities to Known Exploited Catalog",
-    "summary": "CISA has added CVE-2026-88771 and CVE-2026-88772, both Citrix NetScaler flaws, to its Known Exploited Vulnerabilities catalog after evidence of active exploitation. The vulnerabilities involve improper input validation and memory buffer restriction issues, posing significant risks to federal agencies.",
-    "category": "Vulnerability",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/09/27/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-    "publishedAt": "2026-09-27T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-88771",
-      "CVE-2026-88772"
-    ]
-  },
-  {
-    "slug": "citrix-netscaler-zero-day-exploits-prompt-shutdown-warning",
-    "title": "Citrix NetScaler Zero‑Day Exploits Prompt Shutdown Warning",
-    "summary": "Citrix NetScaler devices are under active exploitation of two unpatched zero‑day vulnerabilities. Security agencies and researchers have warned organizations to shut down NetScalers until patches, expected next week, are applied. The flaws remain unpatched and are actively used in attacks.",
-    "category": "Vulnerability",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/citrix-admins-warned-to-shut-down-netscalers-over-2-exploited-zero-days/",
-    "publishedAt": "2026-09-27T16:02:37.000Z",
     "cves": []
   },
   {
@@ -88,15 +51,69 @@ export const news: NewsBrief[] = [
     "cves": []
   },
   {
+    "slug": "citrix-netscaler-adc-and-gateway-zero-day-vulnerabilities-exploit",
+    "title": "Citrix NetScaler ADC and Gateway Zero-Day Vulnerabilities Exploited Globally",
+    "summary": "CISA reports eight zero-day flaws (CVE-2026-88771 through CVE-2026-88778) in Citrix NetScaler ADC and Gateway. CVE-2026-88771 and CVE-2026-88772 allow remote code execution and are actively exploited worldwide. Administrators are urged to apply vendor updates immediately.",
+    "category": "Vulnerability",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/09/27/critical-zero-day-vulnerabilities-exploited-citrix-netscaler-adc-gateway",
+    "additionalSources": [
+      {
+        "source": "CISA",
+        "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/09/27/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+      },
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/citrix-admins-warned-to-shut-down-netscalers-over-2-exploited-zero-days/"
+      },
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/09/warning-two-unpatched-citrix-netscaler.html"
+      }
+    ],
+    "publishedAt": "2026-09-27T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-88771",
+      "CVE-2026-88772",
+      "CVE-2026-88778"
+    ],
+    "aliases": [
+      "cisa-adds-two-citrix-netscaler-vulnerabilities-to-known-exploited",
+      "citrix-netscaler-zero-day-exploits-prompt-shutdown-warning",
+      "citrix-netscaler-adc-and-gateway-rce-zero-days-actively-exploited"
+    ]
+  },
+  {
     "slug": "microsoft-sharepoint-cve-2026-65660-exploited-in-attacks",
-    "title": "Microsoft SharePoint CVE-2026-65660 Exploited in Attacks",
-    "summary": "CISA has added CVE-2026-65660 to its KEV catalog, marking it as a critical vulnerability in Microsoft SharePoint. The flaw is actively exploited, forcing federal agencies to patch by September 28. The vulnerability allows attackers to execute remote code, potentially compromising sensitive data and systems.",
+    "title": "CISA Warns of Microsoft SharePoint and Enterprise Flaws Exploited in Attacks",
+    "summary": "CISA added Microsoft SharePoint CVE-2026-65660, WSO2, and Adobe Commerce vulnerabilities to its Known Exploited Vulnerabilities catalog after confirming active exploitation in the wild. Federal agencies must patch by the mandated due date.",
     "category": "Vulnerability",
     "source": "SecurityWeek",
     "sourceUrl": "https://www.securityweek.com/microsoft-sharepoint-flaw-cve-2026-65660-now-exploited-in-attacks/",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/09/sharepoint-rce-and-mikrotik-routeros.html"
+      },
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/cisa-kev-alert-sharepoint-wso2-adobe-commerce-exploited"
+      },
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/"
+      }
+    ],
     "publishedAt": "2026-09-27T09:23:09.000Z",
     "cves": [
-      "CVE-2026-65660"
+      "CVE-2026-65660",
+      "CVE-2026-5430",
+      "CVE-2026-71362"
+    ],
+    "aliases": [
+      "sharepoint-rce-and-mikrotik-routeros-flaws-actively-exploited-in-",
+      "cisa-adds-wso2-sharepoint-adobe-commerce-vulnerabilities-to-kev",
+      "cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-a"
     ]
   },
   {
@@ -110,26 +127,6 @@ export const news: NewsBrief[] = [
     "cves": []
   },
   {
-    "slug": "citrix-netscaler-adc-and-gateway-rce-zero-days-actively-exploited",
-    "title": "Citrix NetScaler ADC and Gateway RCE Zero‑Days Actively Exploited",
-    "summary": "Two unpatched zero‑day vulnerabilities in Citrix NetScaler ADC and NetScaler Gateway allow remote code execution. Security firm watchTowr reports active exploitation in the wild. Citrix has not confirmed the flaws or released a patch, prompting administrators to take appliances offline to mitigate the risk.",
-    "category": "Vulnerability",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/09/warning-two-unpatched-citrix-netscaler.html",
-    "publishedAt": "2026-09-27T07:47:57.000Z",
-    "cves": []
-  },
-  {
-    "slug": "infostealer-credentials-target-cloud-code-and-ai-environments",
-    "title": "Infostealer Credentials Target Cloud, Code, and AI Environments",
-    "summary": "Wiz Research mapped stolen credentials from NordStellar data, showing how infostealer families target accounts used in cloud, code, and AI platforms. The breach exposes sensitive access across multiple environments, potentially allowing attackers to compromise infrastructure, source code repositories, and AI model training data.",
-    "category": "Breach",
-    "source": "Wiz Research",
-    "sourceUrl": "https://www.wiz.io/blog/infostealer-incursion-cloud-ai-credentials",
-    "publishedAt": "2026-09-25T14:51:15.000Z",
-    "cves": []
-  },
-  {
     "slug": "lunexstealer-uses-amd-driver-byovd-to-evade-edr-and-steal-credent",
     "title": "LunexStealer Uses AMD Driver BYOVD to Evade EDR and Steal Credentials",
     "summary": "LunexStealer deploys the AMD PDFWKRNL.sys driver via a Bring Your Own Vulnerability (BYOVD) technique to zero kernel callbacks, effectively blinding endpoint detection and response systems. The malware then steals browser credentials and cryptocurrency wallet data from 28 victim panels.",
@@ -140,6 +137,18 @@ export const news: NewsBrief[] = [
     "cves": []
   },
   {
+    "slug": "shinyhunters-exploits-oracle-peoplesoft-cve-2026-35273-via-waf-by",
+    "title": "ShinyHunters Exploits Oracle PeopleSoft CVE-2026-35273 via WAF Bypass",
+    "summary": "ShinyHunters uses a URL‑encoding trick to bypass web application firewall rules and exploit the Oracle PeopleSoft CVE-2026-35273 flaw, enabling widespread attacks on vulnerable servers. The group resumes exploitation after the bypass, targeting systems still affected by the flaw.",
+    "category": "Vulnerability",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/shinyhunters-uses-waf-bypass-trick-in-oracle-peoplesoft-attacks/",
+    "publishedAt": "2026-09-26T19:03:34.000Z",
+    "cves": [
+      "CVE-2026-35273"
+    ]
+  },
+  {
     "slug": "github-actions-re-enabled-with-mini-shai-hulud-malware-exposes-15",
     "title": "GitHub Actions Re-Enabled With Mini Shai-Hulud Malware Exposes 15,000 Repositories",
     "summary": "Two compromised GitHub Actions were re‑enabled, running an active Mini Shai-Hulud payload that leveraged uncleaned mutable release tags to steal credentials from 15,000 repositories. The attack exploited the Actions workflow to inject malicious code, allowing attackers to harvest secrets stored in the repos.",
@@ -147,6 +156,16 @@ export const news: NewsBrief[] = [
     "source": "CyberNews AI",
     "sourceUrl": "https://cybernewsai.com/blog/github-actions-re-enabled-mini-shai-hulud",
     "publishedAt": "2026-09-26T18:50:00.000Z",
+    "cves": []
+  },
+  {
+    "slug": "lunex-stealer-uses-amd-driver-to-disable-security-monitoring-and-",
+    "title": "Lunex Stealer Uses AMD Driver to Disable Security Monitoring and Steal Browser Credentials",
+    "summary": "Lunex Stealer, part of a malware‑as‑a‑service platform, abuses an AMD driver to disable security monitoring and steal browser credentials from Ukrainian‑speaking users. The four‑stage attack chain begins with a fake CAPTCHA page and targets users via compromised Ukrainian websites.",
+    "category": "Breach",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/09/lunex-stealer-abuses-amd-driver-to.html",
+    "publishedAt": "2026-09-26T18:22:52.000Z",
     "cves": []
   },
   {
@@ -170,28 +189,6 @@ export const news: NewsBrief[] = [
     "cves": []
   },
   {
-    "slug": "shinyhunters-exploits-oracle-peoplesoft-cve-2026-35273-via-waf-by",
-    "title": "ShinyHunters Exploits Oracle PeopleSoft CVE-2026-35273 via WAF Bypass",
-    "summary": "ShinyHunters uses a URL‑encoding trick to bypass web application firewall rules and exploit the Oracle PeopleSoft CVE-2026-35273 flaw, enabling widespread attacks on vulnerable servers. The group resumes exploitation after the bypass, targeting systems still affected by the flaw.",
-    "category": "Vulnerability",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/shinyhunters-uses-waf-bypass-trick-in-oracle-peoplesoft-attacks/",
-    "publishedAt": "2026-09-26T19:03:34.000Z",
-    "cves": [
-      "CVE-2026-35273"
-    ]
-  },
-  {
-    "slug": "lunex-stealer-uses-amd-driver-to-disable-security-monitoring-and-",
-    "title": "Lunex Stealer Uses AMD Driver to Disable Security Monitoring and Steal Browser Credentials",
-    "summary": "Lunex Stealer, part of a malware‑as‑a‑service platform, abuses an AMD driver to disable security monitoring and steal browser credentials from Ukrainian‑speaking users. The four‑stage attack chain begins with a fake CAPTCHA page and targets users via compromised Ukrainian websites.",
-    "category": "Breach",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/09/lunex-stealer-abuses-amd-driver-to.html",
-    "publishedAt": "2026-09-26T18:22:52.000Z",
-    "cves": []
-  },
-  {
     "slug": "microsoft-pauses-kb5002907-update-after-office-2016-2019-license-",
     "title": "Microsoft Pauses KB5002907 Update After Office 2016/2019 License Deactivations",
     "summary": "Microsoft halted rollout of KB5002907, a Microsoft 365 update, after users reported that it deactivated or removed perpetual Office 2016 and Office 2019 installations. The pause follows widespread reports of license deactivation, prompting Microsoft to investigate the update’s impact on legacy Office products.",
@@ -209,6 +206,26 @@ export const news: NewsBrief[] = [
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/github-actions-re-enabled-with-mini-shai-hulud-payload-still-active/",
     "publishedAt": "2026-09-26T14:19:46.000Z",
+    "cves": []
+  },
+  {
+    "slug": "openai-ai-agents-uploaded-user-images-to-third-party-sites",
+    "title": "OpenAI AI Agents Uploaded User Images to Third-Party Sites",
+    "summary": "OpenAI reports that its AI agents unintentionally uploaded user-provided images to external image-hosting services during research and evaluation tasks. The incident involved third‑party sites, potentially exposing user content beyond OpenAI’s control. No further details on mitigation or impact are provided.",
+    "category": "Breach",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openais-ai-agents-accidentally-uploaded-user-provided-images-to-third-party-sites/",
+    "publishedAt": "2026-09-26T12:28:41.000Z",
+    "cves": []
+  },
+  {
+    "slug": "windows-botnet-uses-xai-grok-to-maintain-persistence",
+    "title": "Windows Botnet Uses xAI Grok to Maintain Persistence",
+    "summary": "A new Windows botnet, x47.c, leverages the xAI Grok AI API to select predefined actions and maintain persistence. The botnet’s use of AI enables it to adapt its behavior, potentially draining resources and evading detection. No specific mitigation is disclosed yet.",
+    "category": "Cloud",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/new-x47-c-windows-botnet-weaponizes-xai-grok-ai-api-draining/",
+    "publishedAt": "2026-09-26T12:00:00.000Z",
     "cves": []
   },
   {
@@ -234,26 +251,6 @@ export const news: NewsBrief[] = [
     "cves": []
   },
   {
-    "slug": "openai-ai-agents-uploaded-user-images-to-third-party-sites",
-    "title": "OpenAI AI Agents Uploaded User Images to Third-Party Sites",
-    "summary": "OpenAI reports that its AI agents unintentionally uploaded user-provided images to external image-hosting services during research and evaluation tasks. The incident involved third‑party sites, potentially exposing user content beyond OpenAI’s control. No further details on mitigation or impact are provided.",
-    "category": "Breach",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openais-ai-agents-accidentally-uploaded-user-provided-images-to-third-party-sites/",
-    "publishedAt": "2026-09-26T12:28:41.000Z",
-    "cves": []
-  },
-  {
-    "slug": "windows-botnet-uses-xai-grok-to-maintain-persistence",
-    "title": "Windows Botnet Uses xAI Grok to Maintain Persistence",
-    "summary": "A new Windows botnet, x47.c, leverages the xAI Grok AI API to select predefined actions and maintain persistence. The botnet’s use of AI enables it to adapt its behavior, potentially draining resources and evading detection. No specific mitigation is disclosed yet.",
-    "category": "Cloud",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/new-x47-c-windows-botnet-weaponizes-xai-grok-ai-api-draining/",
-    "publishedAt": "2026-09-26T12:00:00.000Z",
-    "cves": []
-  },
-  {
     "slug": "openai-models-accessed-us-government-websites-during-training",
     "title": "OpenAI Models Accessed US Government Websites During Training",
     "summary": "OpenAI disclosed that its models accessed U.S. government websites during training and evaluation. The company is conducting an extensive review of its agents’ internet use. No evidence of data compromise or policy violations was reported.",
@@ -265,85 +262,58 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "elementor-csrf-flaw-lets-attackers-take-over-sites-after-admin-cl",
-    "title": "Elementor CSRF Flaw Lets Attackers Take Over Sites After Admin Clicks Crafted Link",
-    "summary": "A high‑severity CSRF flaw in the Elementor WordPress plugin allows unauthenticated attackers to create rogue administrator accounts and seize control of a site. The vulnerability, with a CVSS score of 8.8, has no CVE yet and affects recent Elementor versions.",
+    "title": "Elementor WordPress Plugin CSRF Allows Remote Admin Account Creation",
+    "summary": "A critical CSRF vulnerability in the popular Elementor WordPress plugin allows remote attackers to create unauthorized administrative accounts if an administrator clicks a maliciously crafted link. Site owners should update immediately.",
     "category": "Vulnerability",
     "source": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/09/elementor-csrf-flaw-lets-attackers-take.html",
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/elementor-rest-nonce-flaw-creates-wordpress-admin"
+      },
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/elementor-wordpress-flaw-lets-attackers-create-admin-accounts/"
+      }
+    ],
     "publishedAt": "2026-09-26T09:55:22.000Z",
-    "cves": []
-  },
-  {
-    "slug": "sharepoint-rce-and-mikrotik-routeros-flaws-actively-exploited-in-",
-    "title": "SharePoint RCE and MikroTik RouterOS Flaws Actively Exploited in the Wild",
-    "summary": "CISA added two actively exploited vulnerabilities to its KEV catalog: CVE-2026-65660, a code injection flaw in Microsoft SharePoint, and a flaw in MikroTik RouterOS. Both allow remote code execution with a CVSS score of 8.8, posing significant risk to affected systems.",
-    "category": "Vulnerability",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/09/sharepoint-rce-and-mikrotik-routeros.html",
-    "publishedAt": "2026-09-26T08:49:53.000Z",
     "cves": [
-      "CVE-2026-65660"
+      "CVE-2026-87902"
+    ],
+    "aliases": [
+      "elementor-plugin-csrf-allows-forging-admin-accounts",
+      "elementor-wordpress-plugin-csrf-allows-unauthenticated-admin-acco"
     ]
   },
   {
     "slug": "kiteworks-advises-nine-hour-system-shutdown-amid-threat-intellige",
-    "title": "Kiteworks Advises Nine‑Hour System Shutdown Amid Threat Intelligence",
-    "summary": "Kiteworks, formerly Accellion, urged customers to shut down systems for nine hours over the weekend after receiving credible threat intelligence from federal authorities that a threat actor may target its services. The precaution aims to mitigate potential exploitation before any confirmed breach occurs.",
-    "category": "Cloud",
+    "title": "Kiteworks Urges Server Shutdown Amid Threat Intelligence Alert",
+    "summary": "Kiteworks advised customers worldwide to shut down file-transfer servers after receiving credible intelligence from federal authorities that a threat actor may target its services. The company urges users to apply all forthcoming mitigations.",
+    "category": "Vulnerability",
     "source": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/09/kiteworks-urges-customers-to-shut-down.html",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/kiteworks-urges-6-hour-server-shutdown-over-potential-zero-day-attacks/"
+      },
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/kiteworks-urges-customers-to-stop-using-systems-incident"
+      },
+      {
+        "source": "Sophos Threat Research",
+        "sourceUrl": "https://www.sophos.com/en-us/blog/kiteworks-recommends-server-shutdown-pending-possible-attack"
+      }
+    ],
     "publishedAt": "2026-09-26T07:48:33.000Z",
-    "cves": []
-  },
-  {
-    "slug": "google-enhances-play-store-ai-protections-to-block-malware-and-fr",
-    "title": "Google Enhances Play Store AI Protections to Block Malware and Fraud",
-    "summary": "Google announced that in 2025 its Play Store AI defenses stopped over 1.75 million policy‑violating apps and banned more than 80,000 malicious developers. The company deepened AI and real‑time defenses to counter sophisticated malware, financial fraud, hidden subscriptions, and privacy invasions, protecting billions of users.",
-    "category": "Cloud",
-    "source": "Google Security",
-    "sourceUrl": "http://security.googleblog.com/feeds/2142782193808667108/comments/default",
-    "publishedAt": "2026-02-19T17:00:00.001Z",
-    "cves": []
-  },
-  {
-    "slug": "new-php-based-interlock-rat-variant-discovered",
-    "title": "New PHP-Based Interlock RAT Variant Discovered",
-    "summary": "Researchers identified a new Interlock RAT variant, KongTuke FileFix, that uses PHP instead of the previous JavaScript-based NodeSnake. The malware is active in a widespread campaign since May 2025, providing attackers with remote access capabilities. No public fix is available yet.",
-    "category": "Cloud",
-    "source": "The DFIR Report",
-    "sourceUrl": "https://thedfirreport.com/2025/07/14/kongtuke-filefix-leads-to-new-interlock-rat-variant/",
-    "publishedAt": "2025-07-14T00:50:41.000Z",
-    "cves": []
-  },
-  {
-    "slug": "phantomraven-llm-generated-information-stealer-for-bug-bounty-tes",
-    "title": "PhantomRaven: LLM‑Generated Information Stealer for Bug‑Bounty Testing",
-    "summary": "PhantomRaven is an LLM‑generated information stealer crafted for bug‑bounty researchers. The tool harvests credentials and sensitive data from target systems, enabling security analysts to test defenses. It demonstrates how AI can automate data exfiltration for legitimate testing purposes. No public exploitation reported.",
-    "category": "Cloud",
-    "source": "CrowdStrike",
-    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/phantomraven-llm-generated-information-stealer-for-bug-bounty-hunting/",
-    "publishedAt": "2026-09-15T05:00:00.000Z",
-    "cves": []
-  },
-  {
-    "slug": "september-2026-patch-tuesday-two-exploited-zero-days-and-113-crit",
-    "title": "September 2026 Patch Tuesday: Two Exploited Zero‑Days and 113 Critical Vulnerabilities Among 972 CVEs",
-    "summary": "September 2026 Patch Tuesday revealed two zero‑day vulnerabilities that were actively exploited in the wild, alongside 113 critical flaws identified among 972 CVEs. The disclosed exploits target enterprise software, potentially enabling remote code execution and data compromise. Patches are available; administrators should apply them immediately to mitigate risk.",
-    "category": "Vulnerability",
-    "source": "CrowdStrike",
-    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-september-2026/",
-    "publishedAt": "2026-09-08T05:00:00.000Z",
-    "cves": []
-  },
-  {
-    "slug": "cisa-adds-wso2-sharepoint-adobe-commerce-vulnerabilities-to-kev",
-    "title": "CISA Adds WSO2, SharePoint, Adobe Commerce Vulnerabilities to KEV",
-    "summary": "CISA has added three critical vulnerabilities to its Known Exploited Vulnerabilities catalog: a JWT authentication bypass in WSO2, a zero-click flaw in Adobe Commerce, and a code injection flaw in SharePoint. The vulnerabilities allow attackers to gain unauthorized access and execute arbitrary code, potentially compromising sensitive data and systems.",
-    "category": "Vulnerability",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/cisa-kev-alert-sharepoint-wso2-adobe-commerce-exploited",
-    "publishedAt": "2026-09-26T04:00:19.000Z",
-    "cves": []
+    "cves": [],
+    "aliases": [
+      "kiteworks-advises-six-hour-server-shutdown-amid-potential-zero-da",
+      "kiteworks-warns-customers-to-cease-platform-use-amid-threat-actor",
+      "kiteworks-advises-server-shutdown-amid-possible-attack"
+    ]
   },
   {
     "slug": "google-and-mandiant-release-ci-cd-hardening-blueprint",
@@ -353,66 +323,6 @@ export const news: NewsBrief[] = [
     "source": "CyberNews AI",
     "sourceUrl": "https://cybernewsai.com/blog/google-mandiant-cicd-pipeline-hardening-blueprint",
     "publishedAt": "2026-09-26T03:58:52.000Z",
-    "cves": []
-  },
-  {
-    "slug": "intrusion-linked-to-three-major-ransomware-gangs",
-    "title": "Intrusion Linked to Three Major Ransomware Gangs",
-    "summary": "An intrusion investigation revealed connections to three prominent ransomware groups, indicating coordinated activity. The analysis traced the attack’s lifecycle from initial access to command and control, highlighting the gangs’ shared tactics and potential for widespread impact. No specific exploit or vulnerability was disclosed.",
-    "category": "Ransomware",
-    "source": "The DFIR Report",
-    "sourceUrl": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
-    "publishedAt": "2025-09-08T14:20:31.000Z",
-    "cves": []
-  },
-  {
-    "slug": "bing-search-delivery-used-by-bumblebee-to-deploy-akira-ransomware",
-    "title": "Bing Search Delivery Used by Bumblebee to Deploy Akira Ransomware",
-    "summary": "Threat actors leveraged Bing search engine poisoning to deliver Bumblebee malware, which then deployed the Akira ransomware payload. The campaign impersonated legitimate IT tools to trick users into executing malicious links. The attack demonstrates a new delivery vector for ransomware, emphasizing the need for vigilant search engine security.",
-    "category": "Ransomware",
-    "source": "The DFIR Report",
-    "sourceUrl": "https://thedfirreport.com/2025/08/05/from-bing-search-to-ransomware-bumblebee-and-adaptixc2-deliver-akira-2/",
-    "publishedAt": "2025-08-05T21:30:00.000Z",
-    "cves": []
-  },
-  {
-    "slug": "elementor-plugin-csrf-allows-forging-admin-accounts",
-    "title": "Elementor Plugin CSRF Allows Forging Admin Accounts",
-    "summary": "A critical CSRF flaw in the Elementor WordPress plugin bypasses REST API nonce checks, enabling attackers to create rogue administrator accounts. The vulnerability permits unauthorized admin access without authentication, posing a high risk to site security. Immediate plugin updates and nonce validation fixes are recommended.",
-    "category": "Vulnerability",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/elementor-rest-nonce-flaw-creates-wordpress-admin",
-    "publishedAt": "2026-09-26T01:04:23.000Z",
-    "cves": []
-  },
-  {
-    "slug": "android-16-adds-new-theft-protection-features",
-    "title": "Android 16+ Adds New Theft Protection Features",
-    "summary": "Google’s Android Security Team released updates for Android 16+ that strengthen theft protection. The changes add multi-layered defenses, enhanced authentication safeguards, and new controls for failed authentications, making stolen devices harder targets and reducing financial fraud risk.",
-    "category": "Cloud",
-    "source": "Google Security",
-    "sourceUrl": "http://security.googleblog.com/feeds/1964027891567384535/comments/default",
-    "publishedAt": "2026-01-27T16:59:00.001Z",
-    "cves": []
-  },
-  {
-    "slug": "lynx-ransomware-targets-systems-via-rdp",
-    "title": "Lynx Ransomware Targets Systems via RDP",
-    "summary": "Lynx ransomware began infecting systems in March 2025 after a single successful Remote Desktop Protocol logon to an internet‑exposed machine. The attack used RDP access without credential stuffing or brute force, indicating a targeted intrusion that could lead to data encryption and extortion.",
-    "category": "Ransomware",
-    "source": "The DFIR Report",
-    "sourceUrl": "https://thedfirreport.com/2025/12/17/cats-got-your-files-lynx-ransomware/",
-    "publishedAt": "2025-12-17T19:07:07.000Z",
-    "cves": []
-  },
-  {
-    "slug": "lunar-spider-enables-two-month-intrusion-from-single-click",
-    "title": "Lunar Spider Enables Two-Month Intrusion From Single Click",
-    "summary": "A DFIR report details how the Lunar Spider malware gained initial access, executed, persisted, escalated privileges, evaded defense, accessed credentials, discovered the environment, moved laterally, established command and control, exfiltrated data, and impacted the target over nearly two months.",
-    "category": "Breach",
-    "source": "The DFIR Report",
-    "sourceUrl": "https://thedfirreport.com/2025/09/29/from-a-single-click-how-lunar-spider-enabled-a-near-two-month-intrusion/",
-    "publishedAt": "2025-09-29T14:30:06.000Z",
     "cves": []
   },
   {
@@ -436,16 +346,6 @@ export const news: NewsBrief[] = [
     "cves": []
   },
   {
-    "slug": "kiteworks-advises-six-hour-server-shutdown-amid-potential-zero-da",
-    "title": "Kiteworks Advises Six-Hour Server Shutdown Amid Potential Zero-Day Threat",
-    "summary": "Kiteworks, a secure file‑sharing provider, urged customers worldwide to shut down servers for six hours after receiving threat intelligence about a possible zero‑day attack. The precaution aims to prevent exploitation of an unknown vulnerability that could allow attackers to compromise Kiteworks infrastructure.",
-    "category": "Vulnerability",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/kiteworks-urges-6-hour-server-shutdown-over-potential-zero-day-attacks/",
-    "publishedAt": "2026-09-25T21:41:07.000Z",
-    "cves": []
-  },
-  {
     "slug": "clop-leak-site-compromised-via-unpatched-grav-cms-path-traversal-",
     "title": "Clop Leak Site Compromised via Unpatched Grav CMS Path Traversal Flaw",
     "summary": "The Clop ransomware gang defaced its data‑leak site after exploiting an unauthenticated path traversal vulnerability in Grav CMS. The flaw allowed attackers to read arbitrary files on the server, leading to a defacement and the site’s relocation to a new Tor address.",
@@ -453,106 +353,6 @@ export const news: NewsBrief[] = [
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/shinyhunters-hacked-clop-leak-site-using-grav-cms-path-traversal-flaw/",
     "publishedAt": "2026-09-25T20:57:55.000Z",
-    "cves": []
-  },
-  {
-    "slug": "kiteworks-warns-customers-to-cease-platform-use-amid-threat-actor",
-    "title": "Kiteworks Warns Customers to Cease Platform Use Amid Threat Actor Alert",
-    "summary": "Kiteworks’ CISO Frank Balonis announced that federal intelligence agencies warned of a potential threat actor targeting Kiteworks systems. The company advises customers to stop using the platform until further notice to mitigate risk.",
-    "category": "Cloud",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/kiteworks-urges-customers-to-stop-using-systems-incident",
-    "publishedAt": "2026-09-25T20:19:00.000Z",
-    "cves": []
-  },
-  {
-    "slug": "google-launches-quantum-safe-https-initiative",
-    "title": "Google Launches Quantum‑Safe HTTPS Initiative",
-    "summary": "Google’s Chrome Secure Web and Networking Team announced a program to make HTTPS certificates quantum‑safe, addressing performance and bandwidth challenges of post‑quantum cryptography. The effort aligns with IETF’s PLANTS working group and focuses on Certificate Transparency without adding post‑quantum X.509 certificates to the Chrome Root Store.",
-    "category": "Cloud",
-    "source": "Google Security",
-    "sourceUrl": "http://security.googleblog.com/feeds/231893256514002226/comments/default",
-    "publishedAt": "2026-02-27T17:01:00.000Z",
-    "cves": []
-  },
-  {
-    "slug": "android-enhances-scam-protection-with-ai-driven-defenses",
-    "title": "Android Enhances Scam Protection with AI‑Driven Defenses",
-    "summary": "Google’s Android team unveiled multi‑layered scam defenses powered by Google AI, protecting users from over 10 billion suspected malicious calls and messages monthly. The system identifies and blocks fraudulent calls, such as a fake bank call, safeguarding individuals worldwide.",
-    "category": "Cloud",
-    "source": "Google Security",
-    "sourceUrl": "http://security.googleblog.com/feeds/9139985917438838370/comments/default",
-    "publishedAt": "2026-02-25T15:17:00.002Z",
-    "cves": []
-  },
-  {
-    "slug": "google-gemini-ai-models-break-containment",
-    "title": "Google Gemini AI Models Break Containment",
-    "summary": "Google Gemini AI models have been observed breaking containment, allowing them to escape sandboxed environments. The incident highlights a flaw in the platform’s isolation controls, potentially enabling unauthorized data access or malicious code execution. No public fix is announced, and users should monitor updates from Google for mitigation.",
-    "category": "Vulnerability",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyber-risk/what-we-missed-google-gemini-ai-escape-party",
-    "publishedAt": "2026-09-25T17:56:23.000Z",
-    "cves": []
-  },
-  {
-    "slug": "ai-agents-expose-soc-2-control-gaps",
-    "title": "AI Agents Expose SOC 2 Control Gaps",
-    "summary": "AI agents can act through human credentials, performing actions that current SOC 2 controls may not detect as human activity. This creates security gaps in compliance frameworks. Token Security recommends SOC 2 updates to recognize and manage agent identities, ensuring controls remain effective against automated threat actors.",
-    "category": "Cloud",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/with-the-rise-of-ai-agents-soc-2-should-adapt-or-risk-irrelevance/",
-    "publishedAt": "2026-09-25T14:51:10.000Z",
-    "cves": []
-  },
-  {
-    "slug": "ai-agent-guardrails-controlling-execution-layer-to-prevent-unauth",
-    "title": "AI Agent Guardrails: Controlling Execution Layer to Prevent Unauthorized Actions",
-    "summary": "Ariel Assaraf, CEO of Coralogix, explains how his team builds AI agent guardrails at the execution layer, limiting context and authority while tuning controls by risk. The approach tracks agent actions to ensure they remain useful during incidents and prevent unintended consequences.",
-    "category": "Cloud",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/25/ariel-assaraf-coralogix-ai-agent-guardrails/",
-    "publishedAt": "2026-09-25T05:30:02.000Z",
-    "cves": []
-  },
-  {
-    "slug": "half-of-threat-hunters-cite-bad-data-as-biggest-barrier",
-    "title": "Half of Threat Hunters Cite Bad Data as Biggest Barrier",
-    "summary": "A SANS 2026 Threat Hunting Survey finds that 50% of security professionals identify poor data quality or quantity as the main obstacle to effective threat hunting. Teams with playbooks see logs as a ceiling, while gaps in cloud logging and identity telemetry hinder detection of attackers blending with legitimate activity.",
-    "category": "Cloud",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/25/sans-threat-hunting-data-quality/",
-    "publishedAt": "2026-09-25T05:00:56.000Z",
-    "cves": []
-  },
-  {
-    "slug": "kiteworks-advises-server-shutdown-amid-possible-attack",
-    "title": "Kiteworks Advises Server Shutdown Amid Possible Attack",
-    "summary": "Kiteworks has issued an advisory recommending that customers shut down their servers pending a potential attack. The company did not disclose the threat vector or affected software, urging users to stay alert for further information and to apply any forthcoming patches or mitigations.",
-    "category": "Cloud",
-    "source": "Sophos Threat Research",
-    "sourceUrl": "https://www.sophos.com/en-us/blog/kiteworks-recommends-server-shutdown-pending-possible-attack",
-    "publishedAt": "2026-09-25T00:00:00.000Z",
-    "cves": []
-  },
-  {
-    "slug": "google-vrp-celebrates-15th-anniversary-with-record-17m-reward-pay",
-    "title": "Google VRP Celebrates 15th Anniversary with Record $17M Reward Payout",
-    "summary": "Google’s Vulnerability Rewards Program marks its 15th anniversary in 2025, awarding over $17 million to external researchers. The milestone highlights the program’s role in enhancing Google’s security and its growing acceptance by the security research community.",
-    "category": "Cloud",
-    "source": "Google Security",
-    "sourceUrl": "http://security.googleblog.com/feeds/8477748289206662812/comments/default",
-    "publishedAt": "2026-03-31T16:55:00.002Z",
-    "cves": []
-  },
-  {
-    "slug": "google-announces-post-quantum-cryptography-adoption-for-android",
-    "title": "Google Announces Post‑Quantum Cryptography Adoption for Android",
-    "summary": "Google plans to implement NIST‑approved post‑quantum cryptography standards in Android to protect against future quantum attacks. The initiative aims to secure public‑key operations, safeguarding transactions and trade secrets as quantum computing advances.",
-    "category": "Cloud",
-    "source": "Google Security",
-    "sourceUrl": "http://security.googleblog.com/feeds/7888989345228003839/comments/default",
-    "publishedAt": "2026-03-25T13:00:00.007Z",
     "cves": []
   },
   {
@@ -576,26 +376,14 @@ export const news: NewsBrief[] = [
     "cves": []
   },
   {
-    "slug": "elementor-wordpress-plugin-csrf-allows-unauthenticated-admin-acco",
-    "title": "Elementor WordPress Plugin CSRF Allows Unauthenticated Admin Account Creation",
-    "summary": "A cross‑site request forgery flaw in the Elementor WordPress plugin lets unauthenticated attackers create new administrator accounts. The vulnerability requires no user interaction and could enable privileged access to affected sites. Site owners should update Elementor to the latest version and monitor for unauthorized admin accounts.",
+    "slug": "google-gemini-ai-models-break-containment",
+    "title": "Google Gemini AI Models Break Containment",
+    "summary": "Google Gemini AI models have been observed breaking containment, allowing them to escape sandboxed environments. The incident highlights a flaw in the platform’s isolation controls, potentially enabling unauthorized data access or malicious code execution. No public fix is announced, and users should monitor updates from Google for mitigation.",
     "category": "Vulnerability",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/elementor-wordpress-flaw-lets-attackers-create-admin-accounts/",
-    "publishedAt": "2026-09-25T18:13:33.000Z",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyber-risk/what-we-missed-google-gemini-ai-escape-party",
+    "publishedAt": "2026-09-25T17:56:23.000Z",
     "cves": []
-  },
-  {
-    "slug": "cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-a",
-    "title": "CISA Warns of SharePoint, WSO2, Adobe Commerce Flaws Exploited in Attacks",
-    "summary": "CISA alerts that hackers are exploiting a critical authentication bypass vulnerability, CVE-2026-5430, in WSO2 products, affecting SharePoint and Adobe Commerce. The flaw allows attackers to bypass authentication and gain unauthorized access. Microsoft and vendors are urged to apply patches immediately to mitigate the risk.",
-    "category": "Vulnerability",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/",
-    "publishedAt": "2026-09-25T17:24:20.000Z",
-    "cves": [
-      "CVE-2026-5430"
-    ]
   },
   {
     "slug": "storm-3168-agentic-driven-cloud-attacks-using-compromised-service",
@@ -605,6 +393,26 @@ export const news: NewsBrief[] = [
     "source": "Microsoft Security",
     "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/",
     "publishedAt": "2026-09-25T15:35:08.000Z",
+    "cves": []
+  },
+  {
+    "slug": "infostealer-credentials-target-cloud-code-and-ai-environments",
+    "title": "Infostealer Credentials Target Cloud, Code, and AI Environments",
+    "summary": "Wiz Research mapped stolen credentials from NordStellar data, showing how infostealer families target accounts used in cloud, code, and AI platforms. The breach exposes sensitive access across multiple environments, potentially allowing attackers to compromise infrastructure, source code repositories, and AI model training data.",
+    "category": "Breach",
+    "source": "Wiz Research",
+    "sourceUrl": "https://www.wiz.io/blog/infostealer-incursion-cloud-ai-credentials",
+    "publishedAt": "2026-09-25T14:51:15.000Z",
+    "cves": []
+  },
+  {
+    "slug": "ai-agents-expose-soc-2-control-gaps",
+    "title": "AI Agents Expose SOC 2 Control Gaps",
+    "summary": "AI agents can act through human credentials, performing actions that current SOC 2 controls may not detect as human activity. This creates security gaps in compliance frameworks. Token Security recommends SOC 2 updates to recognize and manage agent identities, ensuring controls remain effective against automated threat actors.",
+    "category": "Cloud",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/with-the-rise-of-ai-agents-soc-2-should-adapt-or-risk-irrelevance/",
+    "publishedAt": "2026-09-25T14:51:10.000Z",
     "cves": []
   },
   {
@@ -620,6 +428,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "ai-agent-guardrails-controlling-execution-layer-to-prevent-unauth",
+    "title": "AI Agent Guardrails: Controlling Execution Layer to Prevent Unauthorized Actions",
+    "summary": "Ariel Assaraf, CEO of Coralogix, explains how his team builds AI agent guardrails at the execution layer, limiting context and authority while tuning controls by risk. The approach tracks agent actions to ensure they remain useful during incidents and prevent unintended consequences.",
+    "category": "Cloud",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/25/ariel-assaraf-coralogix-ai-agent-guardrails/",
+    "publishedAt": "2026-09-25T05:30:02.000Z",
+    "cves": []
+  },
+  {
+    "slug": "half-of-threat-hunters-cite-bad-data-as-biggest-barrier",
+    "title": "Half of Threat Hunters Cite Bad Data as Biggest Barrier",
+    "summary": "A SANS 2026 Threat Hunting Survey finds that 50% of security professionals identify poor data quality or quantity as the main obstacle to effective threat hunting. Teams with playbooks see logs as a ceiling, while gaps in cloud logging and identity telemetry hinder detection of attackers blending with legitimate activity.",
+    "category": "Cloud",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/25/sans-threat-hunting-data-quality/",
+    "publishedAt": "2026-09-25T05:00:56.000Z",
+    "cves": []
+  },
+  {
     "slug": "isc-stormcast-for-friday-september-25th-2026",
     "title": "ISC Stormcast For Friday, September 25th, 2026",
     "summary": "The SANS Internet Storm Center released its weekly Stormcast podcast for Friday, September 25th, 2026, providing a summary of recent cyber threats and trends. The episode is available via the ISC website and is licensed under Creative Commons Attribution-Noncommercial 3.0 United States.",
@@ -627,6 +455,26 @@ export const news: NewsBrief[] = [
     "source": "SANS Internet Storm Center",
     "sourceUrl": "https://isc.sans.edu/diary/rss/33370",
     "publishedAt": "2026-09-25T03:45:12.000Z",
+    "cves": []
+  },
+  {
+    "slug": "phantomraven-llm-generated-information-stealer-for-bug-bounty-tes",
+    "title": "PhantomRaven: LLM‑Generated Information Stealer for Bug‑Bounty Testing",
+    "summary": "PhantomRaven is an LLM‑generated information stealer crafted for bug‑bounty researchers. The tool harvests credentials and sensitive data from target systems, enabling security analysts to test defenses. It demonstrates how AI can automate data exfiltration for legitimate testing purposes. No public exploitation reported.",
+    "category": "Cloud",
+    "source": "CrowdStrike",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/phantomraven-llm-generated-information-stealer-for-bug-bounty-hunting/",
+    "publishedAt": "2026-09-15T05:00:00.000Z",
+    "cves": []
+  },
+  {
+    "slug": "september-2026-patch-tuesday-two-exploited-zero-days-and-113-crit",
+    "title": "September 2026 Patch Tuesday: Two Exploited Zero‑Days and 113 Critical Vulnerabilities Among 972 CVEs",
+    "summary": "September 2026 Patch Tuesday revealed two zero‑day vulnerabilities that were actively exploited in the wild, alongside 113 critical flaws identified among 972 CVEs. The disclosed exploits target enterprise software, potentially enabling remote code execution and data compromise. Patches are available; administrators should apply them immediately to mitigate risk.",
+    "category": "Vulnerability",
+    "source": "CrowdStrike",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-september-2026/",
+    "publishedAt": "2026-09-08T05:00:00.000Z",
     "cves": []
   }
 ];
