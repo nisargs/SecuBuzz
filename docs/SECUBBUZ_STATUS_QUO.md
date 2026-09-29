@@ -208,9 +208,14 @@ Please provide creative, high-impact suggestions across these 4 areas:
 - **Stability Findings**: **0 crashes**, **0 critical bugs**, and 100% operational uptime on ingest and push delivery.
 - **Implemented Tester Feedback**:
   1. **"Rate Your App" Support**: Added direct "Rate SecuBuzz on Google Play" action in Settings (`src/app/about-support.tsx`).
-  2. **Triage Acceleration**: Added 1-Tap Markdown Incident Report copy for SOC channels (Slack/Teams/Jira).
-  3. **Threat Scoring Clarity**: Integrated FIRST.org EPSS exploit probability badges directly alongside CVSS severity scores.
-  4. **Feed Hygiene**: Deployed multi-source story deduplication clustering coverage into single briefs with "Also reported by" cross-links.
+  2. **Dynamic Onboarding Walkthrough**: 4-step quick-start carousel introducing 60-word briefs, EPSS threat scores, live search filters, and local bookmarks (`src/components/OnboardingModal.tsx`).
+  3. **Triage Acceleration**: Added 1-Tap Markdown Incident Report copy for SOC channels (Slack/Teams/Jira).
+  4. **Threat Scoring Clarity**: Integrated FIRST.org EPSS exploit probability badges directly alongside CVSS severity scores.
+  5. **Feed Hygiene**: Deployed multi-source story deduplication clustering coverage into single briefs with "Also reported by" cross-links.
+
+- **Upcoming Release (v1.0.2 / Code 6)**:
+  - Scheduled for EAS `.aab` production build on **Thursday, Oct 1, 2026** (when Expo free build quota replenishes).
+  - Main Store Listing updated with refined description and refreshed screenshots on Sep 29, 2026.
 
 ### Production Access Questionnaire (Google Play Submission Copy)
 *(Tailored specifically for SecuBuzz to avoid generic template rejection)*
