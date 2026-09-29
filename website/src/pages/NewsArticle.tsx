@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { ArrowLeftIcon, ArrowUpRightIcon, CopyIcon, CheckIcon, Share2Icon } from 'lucide-react';
-import { news } from '../data/news';
-import { advisories } from '../data/advisories';
+import { useLiveNews } from '../data/useLiveNews';
+import { useLiveAdvisories } from '../data/useLiveAdvisories';
 import { SeverityBadge } from '../components/SeverityBadge';
 import { DueStatus } from '../components/DueStatus';
 import { AppCta } from '../components/AppCta';
@@ -14,11 +14,27 @@ import { wordCount } from '../utils/text';
 export function NewsArticle() {
   const { slug } = useParams();
   const [copied, setCopied] = useState(false);
+  const { news, loading } = useLiveNews();
+  const { advisories } = useLiveAdvisories();
 
   // Match current slug or alias from deduplicated stories
-  const brief = news.find((b) => b.slug === slug || b.aliases?.includes(slug || ''));
+  const brief = news.find((b) => {
+    if (!slug) return false;
+    const target = slug.toLowerCase();
+    const s = b.slug.toLowerCase();
+    return s === target || b.aliases?.some(a => a.toLowerCase() === target) || s.startsWith(target) || target.startsWith(s);
+  });
 
-  if (!brief) return <NotFound />;
+  if (!brief) {
+    if (loading) {
+      return (
+        <div className="mx-auto max-w-site px-5 py-24 text-center">
+          <p className="text-sm font-mono text-muted">Retrieving intelligence brief...</p>
+        </div>
+      );
+    }
+    return <NotFound />;
+  }
 
   const linked = advisories.filter((a) => brief.cves.includes(a.cve));
   const related = news.filter((b) => b.category === brief.category && b.slug !== brief.slug).slice(0, 3);

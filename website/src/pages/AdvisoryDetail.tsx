@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { ArrowLeftIcon, ArrowUpRightIcon } from 'lucide-react';
-import { advisories } from '../data/advisories';
-import { news } from '../data/news';
+import { useLiveAdvisories } from '../data/useLiveAdvisories';
+import { useLiveNews } from '../data/useLiveNews';
 import { SeverityBadge } from '../components/SeverityBadge';
 import { AppCta } from '../components/AppCta';
 import { NotFound } from './NotFound';
@@ -12,9 +12,20 @@ import { Seo } from '../components/Seo';
 
 export function AdvisoryDetail() {
   const { slug } = useParams();
-  const advisory = advisories.find((a) => a.slug === slug);
+  const { advisories, loading: loadingAdv } = useLiveAdvisories();
+  const { news } = useLiveNews();
+  const advisory = advisories.find((a) => a.slug === slug || a.cve.toLowerCase() === (slug || '').toLowerCase());
 
-  if (!advisory) return <NotFound />;
+  if (!advisory) {
+    if (loadingAdv) {
+      return (
+        <div className="mx-auto max-w-site px-5 py-24 text-center">
+          <p className="text-sm font-mono text-muted">Retrieving advisory...</p>
+        </div>
+      );
+    }
+    return <NotFound />;
+  }
 
   const status = dueStatus(advisory.dueDate);
   const coverage = news.filter((b) => b.cves.includes(advisory.cve));

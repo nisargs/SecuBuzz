@@ -6,14 +6,16 @@ import { PhoneMockup } from '../components/PhoneMockup';
 import { NewsBriefItem } from '../components/NewsBriefItem';
 import { AdvisoryListItem } from '../components/AdvisoryListItem';
 import { AppCta } from '../components/AppCta';
-import { news } from '../data/news';
-import { advisories } from '../data/advisories';
 import { homeReasons } from '../data/site';
+import { useLiveNews } from '../data/useLiveNews';
+import { useLiveAdvisories } from '../data/useLiveAdvisories';
 import { daysSince, daysUntil } from '../utils/date';
 
 import { Seo } from '../components/Seo';
 
 export function Home() {
+  const { news } = useLiveNews();
+  const { advisories } = useLiveAdvisories();
   const latest = news.slice(0, 4);
   const recentKev = advisories.slice(0, 5);
   const addedThisWeek = advisories.filter((a) => daysSince(a.dateAdded) <= 7).length;

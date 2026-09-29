@@ -2,7 +2,7 @@ import React, { useMemo, useState } from 'react';
 import { SearchIcon } from 'lucide-react';
 import { PageIntro } from '../components/PageIntro';
 import { AdvisoryTable } from '../components/AdvisoryTable';
-import { advisories } from '../data/advisories';
+import { useLiveAdvisories } from '../data/useLiveAdvisories';
 import { daysUntil } from '../utils/date';
 
 import { Seo } from '../components/Seo';
@@ -13,6 +13,7 @@ export function Advisories() {
   const [query, setQuery] = useState('');
   const [ransomwareOnly, setRansomwareOnly] = useState(false);
   const [sort, setSort] = useState<SortKey>('added');
+  const { advisories } = useLiveAdvisories();
 
   const openCount = advisories.filter((a) => daysUntil(a.dueDate) >= 0).length;
   const overdueCount = advisories.length - openCount;

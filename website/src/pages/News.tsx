@@ -2,7 +2,8 @@ import React, { useMemo, useState } from 'react';
 import { SearchIcon } from 'lucide-react';
 import { PageIntro } from '../components/PageIntro';
 import { NewsBriefItem } from '../components/NewsBriefItem';
-import { news, newsCategories } from '../data/news';
+import { newsCategories } from '../data/news';
+import { useLiveNews } from '../data/useLiveNews';
 import type { NewsCategory } from '../types/news';
 
 import { Seo } from '../components/Seo';
@@ -12,6 +13,7 @@ type Filter = 'All' | NewsCategory;
 export function News() {
   const [filter, setFilter] = useState<Filter>('All');
   const [query, setQuery] = useState('');
+  const { news } = useLiveNews();
 
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
