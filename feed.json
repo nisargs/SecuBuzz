@@ -1,5 +1,29 @@
 [
   {
+    "id": "https://blog.cloudflare.com/emdash-cms-plugin-registry/",
+    "sourceUrl": "https://blog.cloudflare.com/emdash-cms-plugin-registry/",
+    "title": "EmDash 1.0 Released as Secure, Stable CMS for Astro",
+    "headline": "EmDash 1.0 Released as Secure, Stable CMS for Astro",
+    "summary": "EmDash 1.0 launches as a stable, open‑source CMS built for Astro, featuring agent‑friendly workflows, sandboxed plugins, and a decentralized registry that keeps publishers in control. The release emphasizes secure plugin management and publisher autonomy.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "publishedAt": "2026-09-28T13:00:00.000Z",
+    "url": "https://blog.cloudflare.com/emdash-cms-plugin-registry/"
+  },
+  {
+    "id": "https://blog.cloudflare.com/rust-workers-emscripten-target/",
+    "sourceUrl": "https://blog.cloudflare.com/rust-workers-emscripten-target/",
+    "title": "Cloudflare Workers Adds Experimental Rust Emscripten Support",
+    "headline": "Cloudflare Workers Adds Experimental Rust Emscripten Support",
+    "summary": "Cloudflare Workers now experimentally supports the Emscripten target for wasm-bindgen, enabling many previously unsupported Rust libraries and applications to be built and deployed directly to the platform. Upcoming support for Tokio async is also announced.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "publishedAt": "2026-09-28T13:00:00.000Z",
+    "url": "https://blog.cloudflare.com/rust-workers-emscripten-target/"
+  },
+  {
     "id": "https://thehackernews.com/2026/09/rathat-android-malware-console-uses.html",
     "sourceUrl": "https://thehackernews.com/2026/09/rathat-android-malware-console-uses.html",
     "title": "RatHat Android Malware Console Targets High-Value Victims",
@@ -2974,29 +2998,5 @@
     "source": "CyberNews AI",
     "publishedAt": "2026-09-23T17:00:00.000Z",
     "url": "https://cybernewsai.com/blog/dprk-hackers-deliver-go-malware-hashicorp-terraform-registry"
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/09/24/ot-asset-visibility-challenges/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/24/ot-asset-visibility-challenges/",
-    "title": "Attackers Remotely Access Water System PLCs in Seven U.S. States",
-    "headline": "Attackers Remotely Access Water System PLCs in Seven U.S. States",
-    "summary": "In early August, attackers remotely accessed internet‑facing programmable logic controllers that manage pumps and valves in water systems across at least seven U.S. states. The intrusion caused loss of monitoring and control, degrading water operations. Investigators are exploring links to Iran‑backed hackers. OT security programs must protect such controllers.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "publishedAt": "2026-09-24T04:30:14.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/09/24/ot-asset-visibility-challenges/"
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/09/24/ubuntu-kernel-cve-fixes-release-schedule/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/24/ubuntu-kernel-cve-fixes-release-schedule/",
-    "title": "Ubuntu Kernel Releases Weekly Security Fixes",
-    "headline": "Ubuntu Kernel Releases Weekly Security Fixes",
-    "summary": "Canonical will ship Ubuntu kernel updates every two weeks, merging the four‑week Stable Release Update cycle with the two‑week security fix cycle into a single weekly release schedule. This change provides administrators a faster path to receive kernel CVE fixes, improving security patching efficiency.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "publishedAt": "2026-09-24T04:27:02.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/09/24/ubuntu-kernel-cve-fixes-release-schedule/"
   }
 ]
