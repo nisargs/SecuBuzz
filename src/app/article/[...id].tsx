@@ -1,7 +1,7 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Ionicons } from '@expo/vector-icons';
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import {
   ActivityIndicator,
   Pressable,
@@ -21,7 +21,9 @@ import { useTheme } from '../../context/ThemeContext';
 import { useArticles } from '../../hooks/useArticles';
 import type { Article } from '../../models/article';
 import type { CveAdvisory } from '../../models/cve';
+import { fetchEpssScore } from '../../services/epssService';
 import { colors, severityColors, spacing } from '../../theme/theme';
+
 
 const BLUE = colors.accent;
 import { copyAdvisoryToClipboard, copyArticleToClipboard } from '../../utils/copyReport';
@@ -333,11 +335,39 @@ export default function ArticleDetailScreen() {
   const affectedVendor = article.vendorProject || advisoryDetails?.vendorProject;
   const affectedProduct = article.product || advisoryDetails?.product;
 
+  const [epssData, setEpssData] = useState<{ epss: number; percentile: number } | null>(null);
+  const [epssLoading, setEpssLoading] = useState(false);
+
+  const cveId = useMemo(() => {
+    const raw = article?.id || advisoryDetails?.cveID || article?.headline || '';
+    const m = raw.match(/CVE-\d{4}-\d{4,7}/i);
+    return m ? m[0].toUpperCase() : null;
+  }, [article?.id, advisoryDetails?.cveID, article?.headline]);
+
+  useEffect(() => {
+    if (!isAdvisory || !cveId) return;
+    let isMounted = true;
+    setEpssLoading(true);
+    void fetchEpssScore(cveId)
+      .then((res) => {
+        if (isMounted && res) {
+          setEpssData(res);
+        }
+      })
+      .finally(() => {
+        if (isMounted) setEpssLoading(false);
+      });
+    return () => {
+      isMounted = false;
+    };
+  }, [isAdvisory, cveId]);
+
   const cleanSummary = (article.summary || '')
     .replace(/^#+\s*.*$/gm, '')
     .replace(/#+\s*(?:Summary|Details|Impact|Workarounds|PoC)\b:?/gi, '')
     .replace(/\s+/g, ' ')
     .trim();
+
 
   return (
     <SafeAreaView
@@ -616,7 +646,87 @@ export default function ArticleDetailScreen() {
           </View>
         ) : null}
 
+        {/* EPSS Exploit Prediction Telemetry Card (For Threat Advisories) */}
+        {isAdvisory && (epssData || epssLoading) ? (
+          <View
+            style={[
+              styles.epssCard,
+              {
+                backgroundColor: isDark
+                  ? colors.surface
+                  : colors.surfaceRaised,
+                borderColor: colors.border,
+              },
+            ]}
+          >
+            <View style={styles.epssHeader}>
+              <Ionicons
+                name="pulse-outline"
+                size={15}
+                color={accentColor}
+                style={{ marginRight: 6 }}
+              />
+              <Text style={[styles.epssTitle, { color: accentColor }]}>
+                EXPLOIT PREDICTION (EPSS) · FIRST.ORG
+              </Text>
+            </View>
+
+            {epssData ? (
+              <View style={styles.epssMetricsRow}>
+                <View
+                  style={[
+                    styles.epssMetricBox,
+                    {
+                      borderColor: colors.border,
+                      backgroundColor: isDark
+                        ? 'rgba(255, 255, 255, 0.03)'
+                        : 'rgba(0, 0, 0, 0.02)',
+                    },
+                  ]}
+                >
+                  <Text style={[styles.epssMetricLabel, { color: colors.textMuted }]}>
+                    30-Day Exploit Risk
+                  </Text>
+                  <Text style={[styles.epssMetricValue, { color: colors.textPrimary }]}>
+                    {(epssData.epss * 100).toFixed(1)}%
+                  </Text>
+                  <Text style={[styles.epssMetricSub, { color: colors.textSecondary }]}>
+                    In-the-wild probability
+                  </Text>
+                </View>
+
+                <View
+                  style={[
+                    styles.epssMetricBox,
+                    {
+                      borderColor: colors.border,
+                      backgroundColor: isDark
+                        ? 'rgba(255, 255, 255, 0.03)'
+                        : 'rgba(0, 0, 0, 0.02)',
+                    },
+                  ]}
+                >
+                  <Text style={[styles.epssMetricLabel, { color: colors.textMuted }]}>
+                    Threat Percentile
+                  </Text>
+                  <Text style={[styles.epssMetricValue, { color: accentColor }]}>
+                    {(epssData.percentile * 100).toFixed(1)}%
+                  </Text>
+                  <Text style={[styles.epssMetricSub, { color: colors.textSecondary }]}>
+                    Higher than {(epssData.percentile * 100).toFixed(1)}% of CVEs
+                  </Text>
+                </View>
+              </View>
+            ) : (
+              <Text style={[styles.epssLoadingText, { color: colors.textMuted }]}>
+                Querying FIRST.org EPSS telemetry...
+              </Text>
+            )}
+          </View>
+        ) : null}
+
         <View style={[styles.divider, { backgroundColor: colors.border }]} />
+
 
         <Pressable
           accessibilityRole="button"
@@ -988,5 +1098,52 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontFamily: 'Exo_500Medium',
   },
+  epssCard: {
+    borderRadius: 10,
+    borderWidth: 1,
+    padding: 14,
+    marginTop: 12,
+    marginBottom: 4,
+  },
+  epssHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 10,
+  },
+  epssTitle: {
+    fontSize: 11,
+    fontFamily: 'Exo_700Bold',
+    letterSpacing: 0.6,
+  },
+  epssMetricsRow: {
+    flexDirection: 'row',
+    gap: 10,
+  },
+  epssMetricBox: {
+    flex: 1,
+    padding: 10,
+    borderRadius: 8,
+    borderWidth: 1,
+  },
+  epssMetricLabel: {
+    fontSize: 10.5,
+    fontFamily: 'Exo_500Medium',
+    marginBottom: 4,
+  },
+  epssMetricValue: {
+    fontSize: 18,
+    fontFamily: 'Exo_700Bold',
+  },
+  epssMetricSub: {
+    fontSize: 10,
+    marginTop: 2,
+    lineHeight: 14,
+  },
+  epssLoadingText: {
+    fontSize: 12,
+    fontFamily: 'Exo_500Medium',
+    paddingVertical: 4,
+  },
 });
+
 

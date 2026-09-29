@@ -1,5 +1,5 @@
 import { Ionicons } from '@expo/vector-icons';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
   Pressable,
   ScrollView,
@@ -11,7 +11,9 @@ import {
 
 import { useTheme } from '../context/ThemeContext';
 import type { AdvisorySeverity, AdvisorySource, CveAdvisory } from '../models/cve';
+import { fetchEpssScore } from '../services/epssService';
 import { spacing } from '../theme/theme';
+
 import { copyAdvisoryToClipboard } from '../utils/copyReport';
 import { openArticle } from '../utils/openArticle';
 
@@ -56,6 +58,24 @@ export function CveCard({
   const isRansomware =
     advisory.knownRansomwareCampaignUse?.toLowerCase() === 'known';
   const isCritical = advisory.severity === 'CRITICAL' || isRansomware;
+
+  const [epssPercentile, setEpssPercentile] = useState<number | null>(
+    advisory.epssPercentile ?? null,
+  );
+
+  useEffect(() => {
+    if (epssPercentile !== null) return;
+    let isMounted = true;
+    void fetchEpssScore(advisory.cveID).then((res) => {
+      if (isMounted && res) {
+        setEpssPercentile(res.percentile);
+      }
+    });
+    return () => {
+      isMounted = false;
+    };
+  }, [advisory.cveID, epssPercentile]);
+
 
   const severityConfig =
     severityColors[advisory.severity] || severityColors.HIGH;
@@ -183,7 +203,26 @@ export function CveCard({
               {isRansomware ? 'RANSOMWARE' : advisory.severity}
             </Text>
           </Pressable>
+
+          {epssPercentile !== null && (
+            <View
+              style={[
+                styles.epssTag,
+                {
+                  backgroundColor: isDark
+                    ? 'rgba(255, 255, 255, 0.05)'
+                    : 'rgba(0, 0, 0, 0.04)',
+                  borderColor: colors.border,
+                },
+              ]}
+            >
+              <Text style={[styles.epssLabel, { color: accentColor }]}>
+                EPSS {(epssPercentile * 100).toFixed(0)}%
+              </Text>
+            </View>
+          )}
         </View>
+
 
         <View style={styles.actionsRow}>
           <Pressable
@@ -433,6 +472,18 @@ const styles = StyleSheet.create({
     fontFamily: 'Exo_700Bold',
     letterSpacing: 0.8,
   },
+  epssTag: {
+    paddingHorizontal: 6,
+    paddingVertical: 3,
+    borderRadius: 4,
+    borderWidth: 1,
+  },
+  epssLabel: {
+    fontSize: 10,
+    fontFamily: 'Exo_700Bold',
+    letterSpacing: 0.6,
+  },
+
   actionsRow: {
     flexDirection: 'row',
     alignItems: 'center',
