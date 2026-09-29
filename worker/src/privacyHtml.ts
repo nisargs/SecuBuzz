@@ -9,6 +9,12 @@ export const PRIVACY_POLICY_HTML = `<!DOCTYPE html>
   <meta name="author" content="MiSo Labs" />
   <link rel="canonical" href="https://secubuzz.com/" />
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon.png?v=2" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=2" />
+  <link rel="shortcut icon" href="/favicon.ico?v=2" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" />
+
   <!-- OpenGraph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://secubuzz.com/" />
@@ -218,6 +224,9 @@ export const PRIVACY_POLICY_HTML = `<!DOCTYPE html>
 <body>
   <div class="container">
     <header>
+      <a href="/" style="display:inline-block; margin-bottom:14px;" aria-label="SecuBuzz Home">
+        <img src="/icon.png?v=2" alt="SecuBuzz Logo" width="48" height="48" style="object-fit:contain; display:block; margin:0 auto;" />
+      </a>
       <h1 class="app-title">SecuBuzz</h1>
       <div class="tagline">60-Word Security Briefs</div>
       <p class="updated-date">Effective Date: September 24, 2026</p>

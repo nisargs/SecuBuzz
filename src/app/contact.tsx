@@ -20,13 +20,16 @@ import { useTheme } from '../context/ThemeContext';
 import { colors, spacing } from '../theme/theme';
 
 const SUPPORT_EMAIL = 'support@secubuzz.com';
+const PUBLISHERS_EMAIL = 'publishers@secubuzz.com';
+const SECURITY_EMAIL = 'security@secubuzz.com';
 
-type FeedbackCategory = 'FEATURE' | 'BUG' | 'FEED' | 'GENERAL';
+type FeedbackCategory = 'FEATURE' | 'BUG' | 'FEED' | 'PUBLISHER' | 'GENERAL';
 
 const CATEGORIES: { id: FeedbackCategory; label: string; icon: keyof typeof Ionicons.glyphMap }[] = [
   { id: 'FEATURE', label: 'Feature Request', icon: 'sparkles-outline' },
   { id: 'BUG', label: 'Bug Report', icon: 'bug-outline' },
   { id: 'FEED', label: 'Feed Suggestion', icon: 'newspaper-outline' },
+  { id: 'PUBLISHER', label: 'Publisher / Removal', icon: 'document-lock-outline' },
   { id: 'GENERAL', label: 'General Feedback', icon: 'chatbubble-ellipses-outline' },
 ];
 
@@ -49,7 +52,11 @@ export default function ContactScreen() {
     const appVersion = Constants.expoConfig?.version ?? '1.0.1';
     const systemInfo = `${Platform.OS.toUpperCase()} (SDK ${Platform.Version})`;
 
-    const emailSubject = `[SecuBuzz Feedback] ${categoryLabel}`;
+    const targetEmail = category === 'PUBLISHER' ? PUBLISHERS_EMAIL : SUPPORT_EMAIL;
+    const emailSubject = category === 'PUBLISHER'
+      ? `[SecuBuzz Content Request] ${categoryLabel}`
+      : `[SecuBuzz Feedback] ${categoryLabel}`;
+
     const emailBody = [
       `Category: ${categoryLabel}`,
       userEmail.trim() ? `User Contact: ${userEmail.trim()}` : null,
@@ -63,7 +70,7 @@ export default function ContactScreen() {
       .filter((line) => line !== null)
       .join('\n');
 
-    const mailtoUrl = `mailto:${SUPPORT_EMAIL}?subject=${encodeURIComponent(
+    const mailtoUrl = `mailto:${targetEmail}?subject=${encodeURIComponent(
       emailSubject
     )}&body=${encodeURIComponent(emailBody)}`;
 
@@ -71,8 +78,8 @@ export default function ContactScreen() {
     setSubmitted(true);
   }
 
-  function openDirectEmail() {
-    void Linking.openURL(`mailto:${SUPPORT_EMAIL}`);
+  function openDirectEmail(email: string) {
+    void Linking.openURL(`mailto:${email}`);
   }
 
   return (
@@ -265,18 +272,20 @@ export default function ContactScreen() {
             </Text>
 
             <Text style={[styles.sectionTitle, { color: colors.textPrimary }]}>
-              Contact MiSo Labs
+              Direct Communication Channels
             </Text>
 
+            {/* Support */}
             <Pressable
               accessibilityRole="button"
               accessibilityLabel={`Send email to ${SUPPORT_EMAIL}`}
-              onPress={openDirectEmail}
+              onPress={() => openDirectEmail(SUPPORT_EMAIL)}
               style={[
                 styles.emailButton,
                 {
                   backgroundColor: colors.surface,
                   borderColor: colors.border,
+                  marginBottom: 10,
                 },
               ]}
             >
@@ -288,7 +297,7 @@ export default function ContactScreen() {
 
               <View style={styles.emailBody}>
                 <Text style={[styles.emailTitle, { color: colors.textPrimary }]}>
-                  Direct Support Email
+                  Technical Support & Feedback
                 </Text>
 
                 <Text style={[styles.emailAddress, { color: colors.textMuted }]}>
@@ -303,6 +312,116 @@ export default function ContactScreen() {
               />
             </Pressable>
 
+            {/* Publishers */}
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel={`Send email to ${PUBLISHERS_EMAIL}`}
+              onPress={() => openDirectEmail(PUBLISHERS_EMAIL)}
+              style={[
+                styles.emailButton,
+                {
+                  backgroundColor: colors.surface,
+                  borderColor: colors.border,
+                  marginBottom: 10,
+                },
+              ]}
+            >
+              <Ionicons
+                name="newspaper-outline"
+                size={22}
+                color={accentColor}
+              />
+
+              <View style={styles.emailBody}>
+                <Text style={[styles.emailTitle, { color: colors.textPrimary }]}>
+                  Publishers & Content Removal
+                </Text>
+
+                <Text style={[styles.emailAddress, { color: colors.textMuted }]}>
+                  {PUBLISHERS_EMAIL} (48h removal SLA)
+                </Text>
+              </View>
+
+              <Ionicons
+                name="chevron-forward"
+                size={18}
+                color={colors.textMuted}
+              />
+            </Pressable>
+
+            {/* Security */}
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel={`Send email to ${SECURITY_EMAIL}`}
+              onPress={() => openDirectEmail(SECURITY_EMAIL)}
+              style={[
+                styles.emailButton,
+                {
+                  backgroundColor: colors.surface,
+                  borderColor: colors.border,
+                  marginBottom: 10,
+                },
+              ]}
+            >
+              <Ionicons
+                name="shield-outline"
+                size={22}
+                color={accentColor}
+              />
+
+              <View style={styles.emailBody}>
+                <Text style={[styles.emailTitle, { color: colors.textPrimary }]}>
+                  Vulnerability Disclosure
+                </Text>
+
+                <Text style={[styles.emailAddress, { color: colors.textMuted }]}>
+                  {SECURITY_EMAIL}
+                </Text>
+              </View>
+
+              <Ionicons
+                name="chevron-forward"
+                size={18}
+                color={colors.textMuted}
+              />
+            </Pressable>
+
+            {/* Publisher Policy Web Portal */}
+            <Pressable
+              accessibilityRole="link"
+              accessibilityLabel="View Publisher Policy on Web"
+              onPress={() => void Linking.openURL('https://secubuzz.com/publishers')}
+              style={[
+                styles.emailButton,
+                {
+                  backgroundColor: colors.surface,
+                  borderColor: colors.border,
+                },
+              ]}
+            >
+              <Ionicons
+                name="globe-outline"
+                size={22}
+                color={accentColor}
+              />
+
+              <View style={styles.emailBody}>
+                <Text style={[styles.emailTitle, { color: colors.textPrimary }]}>
+                  Publisher Transparency Portal
+                </Text>
+
+                <Text style={[styles.emailAddress, { color: colors.textMuted }]}>
+                  secubuzz.com/publishers
+                </Text>
+              </View>
+
+              <Ionicons
+                name="open-outline"
+                size={18}
+                color={colors.textMuted}
+              />
+            </Pressable>
+
             <View style={[styles.note, { borderTopColor: colors.border }]}>
               <Ionicons
                 name="shield-checkmark-outline"
@@ -311,7 +430,7 @@ export default function ContactScreen() {
               />
 
               <Text style={[styles.noteText, { color: colors.textSecondary }]}>
-                For responsible disclosure of security vulnerabilities in SecuBuzz infrastructure, please use PGP encryption or coordinate via standard security headers.
+                SecuBuzz is developed by MiSo Labs. For responsible disclosure of security vulnerabilities or publisher requests, we respond within 48 business hours.
               </Text>
             </View>
           </View>

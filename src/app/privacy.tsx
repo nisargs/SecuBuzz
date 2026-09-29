@@ -1,4 +1,5 @@
 import { Ionicons } from '@expo/vector-icons';
+import * as Linking from 'expo-linking';
 import { router } from 'expo-router';
 import {
   Pressable,
@@ -55,7 +56,7 @@ export default function PrivacyPolicyScreen() {
         </Text>
 
         <Text style={[styles.updated, { color: colors.textMuted }]}>
-          Effective date: September 24, 2026
+          Effective date: September 28, 2026
         </Text>
 
         <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
@@ -79,12 +80,35 @@ export default function PrivacyPolicyScreen() {
           </Text>
 
           <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
-            Privacy and data deletion inquiries:
+            Inquiries and correspondence:
           </Text>
 
-          <Text style={[styles.contact, { color: accentColor }]}>
-            support@secubuzz.com
-          </Text>
+          <Pressable
+            accessibilityRole="link"
+            onPress={() => void Linking.openURL('mailto:support@secubuzz.com')}
+          >
+            <Text style={[styles.contact, { color: accentColor }]}>
+              Support: support@secubuzz.com
+            </Text>
+          </Pressable>
+
+          <Pressable
+            accessibilityRole="link"
+            onPress={() => void Linking.openURL('mailto:publishers@secubuzz.com')}
+          >
+            <Text style={[styles.contact, { color: accentColor }]}>
+              Publishers: publishers@secubuzz.com
+            </Text>
+          </Pressable>
+
+          <Pressable
+            accessibilityRole="link"
+            onPress={() => void Linking.openURL('mailto:security@secubuzz.com')}
+          >
+            <Text style={[styles.contact, { color: accentColor }]}>
+              Security: security@secubuzz.com
+            </Text>
+          </Pressable>
         </Section>
 
         <Section title="2. Information Collected by SecuBuzz" colors={colors}>
@@ -95,18 +119,17 @@ export default function PrivacyPolicyScreen() {
 
           <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
             Based on the current version of SecuBuzz,
-            the application does not intentionally
-            collect your name, email address, phone
-            number, contacts, precise location,
-            microphone recordings, camera recordings,
-            financial information, health information,
-            or authentication credentials.
+            the application does not collect your name,
+            email address, phone number, contacts, precise
+            location, microphone recordings, camera recordings,
+            financial information, health information, or
+            authentication credentials.
           </Text>
 
           <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
-            Articles that you save are stored locally
-            on your device so that your Saved section
-            can remember your selections.
+            Articles that you bookmark and app settings are stored locally
+            on your physical device using standard application storage so
+            that your preferences persist offline.
           </Text>
         </Section>
 
@@ -125,10 +148,42 @@ export default function PrivacyPolicyScreen() {
           <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
             If you wish to remove all app data from your device, you can delete
             the application or clear application data in your Android settings.
+            See secubuzz.com/account-deletion for complete details.
           </Text>
         </Section>
 
-        <Section title="4. External Links and Third-Party Sites" colors={colors}>
+        <Section title="4. Advertising & Commercial SDKs" colors={colors}>
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
+            The current release of SecuBuzz does not serve commercial
+            advertisements and contains zero third-party advertising or
+            commercial tracking SDKs.
+          </Text>
+
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
+            In future updates, SecuBuzz may incorporate non-intrusive
+            advertising to support operational infrastructure and feed ingestion
+            costs. If introduced, advertising integrations will adhere strictly
+            to Google Play Developer policies, and this policy will be promptly
+            updated.
+          </Text>
+        </Section>
+
+        <Section title="5. Publisher Rights & 48-Hour Removal SLA" colors={colors}>
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
+            SecuBuzz indexes publicly available cybersecurity headlines and
+            generates concise informational digests with direct attribution and
+            canonical outbound links to original publisher articles.
+          </Text>
+
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
+            Content owners or publishers requesting exclusion of their articles
+            or RSS feeds may contact publishers@secubuzz.com. We honor all verified
+            removal requests within 48 business hours. Full publisher terms are
+            available at https://secubuzz.com/publishers.
+          </Text>
+        </Section>
+
+        <Section title="6. External Links and Third-Party Sites" colors={colors}>
           <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
             SecuBuzz displays summaries of news stories published by
             third-party sources. Each story includes links that allow you
@@ -143,7 +198,7 @@ export default function PrivacyPolicyScreen() {
           </Text>
         </Section>
 
-        <Section title="5. Data Retention and Deletion" colors={colors}>
+        <Section title="7. Data Retention and Deletion" colors={colors}>
           <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
             Any saved stories and local preferences are stored directly on
             your mobile device.
@@ -156,7 +211,7 @@ export default function PrivacyPolicyScreen() {
           </Text>
         </Section>
 
-        <Section title="6. Device Permissions" colors={colors}>
+        <Section title="8. Device Permissions" colors={colors}>
           <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
             SecuBuzz only requests permissions that are required for core
             app functionality:
@@ -174,7 +229,7 @@ export default function PrivacyPolicyScreen() {
           </Text>
         </Section>
 
-        <Section title="7. Children's Privacy" colors={colors}>
+        <Section title="9. Children's Privacy" colors={colors}>
           <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
             SecuBuzz is designed for general audiences and professional
             cybersecurity awareness. It is not directed at children under the
@@ -183,7 +238,7 @@ export default function PrivacyPolicyScreen() {
           </Text>
         </Section>
 
-        <Section title="8. Policy Updates" colors={colors}>
+        <Section title="10. Policy Updates" colors={colors}>
           <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
             We may update this Privacy Policy from time to time. When changes
             occur, the effective date at the top of this policy will be
@@ -192,7 +247,7 @@ export default function PrivacyPolicyScreen() {
           </Text>
         </Section>
 
-        <Section title="9. Contact Information" colors={colors}>
+        <Section title="11. Contact Information" colors={colors}>
           <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
             If you have questions or concerns about this Privacy Policy or
             SecuBuzz data practices, please contact:
@@ -202,13 +257,50 @@ export default function PrivacyPolicyScreen() {
             MiSo Labs
           </Text>
 
-          <Text style={[styles.contact, { color: accentColor }]}>
-            Website: https://secubuzz.com
-          </Text>
+          <Pressable
+            accessibilityRole="link"
+            onPress={() => void Linking.openURL('https://secubuzz.com')}
+          >
+            <Text style={[styles.contact, { color: accentColor }]}>
+              Website: https://secubuzz.com
+            </Text>
+          </Pressable>
 
-          <Text style={[styles.contact, { color: accentColor }]}>
-            Email: support@secubuzz.com
-          </Text>
+          <Pressable
+            accessibilityRole="link"
+            onPress={() => void Linking.openURL('mailto:support@secubuzz.com')}
+          >
+            <Text style={[styles.contact, { color: accentColor }]}>
+              Support: support@secubuzz.com
+            </Text>
+          </Pressable>
+
+          <Pressable
+            accessibilityRole="link"
+            onPress={() => void Linking.openURL('mailto:publishers@secubuzz.com')}
+          >
+            <Text style={[styles.contact, { color: accentColor }]}>
+              Publishers: publishers@secubuzz.com
+            </Text>
+          </Pressable>
+
+          <Pressable
+            accessibilityRole="link"
+            onPress={() => void Linking.openURL('mailto:security@secubuzz.com')}
+          >
+            <Text style={[styles.contact, { color: accentColor }]}>
+              Security: security@secubuzz.com
+            </Text>
+          </Pressable>
+
+          <Pressable
+            accessibilityRole="link"
+            onPress={() => void Linking.openURL('https://secubuzz.com/account-deletion')}
+          >
+            <Text style={[styles.contact, { color: accentColor }]}>
+              Account Deletion: https://secubuzz.com/account-deletion
+            </Text>
+          </Pressable>
         </Section>
 
         <View style={[styles.footer, { borderTopColor: colors.border }]}>

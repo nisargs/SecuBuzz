@@ -1,4 +1,5 @@
 import { Ionicons } from '@expo/vector-icons';
+import * as Linking from 'expo-linking';
 import { router } from 'expo-router';
 import {
   Pressable,
@@ -55,7 +56,7 @@ export default function TermsScreen() {
         </Text>
 
         <Text style={[styles.updated, { color: colors.textMuted }]}>
-          Effective date: September 24, 2026
+          Effective date: September 28, 2026
         </Text>
 
         <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
@@ -101,7 +102,24 @@ export default function TermsScreen() {
           </Text>
         </Section>
 
-        <Section title="4. Prohibited Uses" colors={colors}>
+        <Section title="4. Publisher Rights & 48-Hour Removal SLA" colors={colors}>
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
+            SecuBuzz respects intellectual property and publisher rights. We
+            aggregate publicly available cybersecurity headlines and produce
+            concise informational digests with prominent outbound attribution
+            to original sources.
+          </Text>
+
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
+            If you are a copyright holder or content publisher and wish to
+            have your content or feed excluded from our index, email
+            publishers@secubuzz.com. Verified removal requests are executed
+            within 48 business hours. Review our full Publisher Policy at
+            https://secubuzz.com/publishers.
+          </Text>
+        </Section>
+
+        <Section title="5. Prohibited Uses" colors={colors}>
           <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
             You agree not to misuse SecuBuzz, reverse-engineer,
             tamper with, disrupt, or access our servers, APIs, or
@@ -110,7 +128,7 @@ export default function TermsScreen() {
           </Text>
         </Section>
 
-        <Section title="5. Disclaimer of Warranties" colors={colors}>
+        <Section title="6. Disclaimer of Warranties" colors={colors}>
           <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
             SecuBuzz is provided on an "AS IS" and "AS AVAILABLE"
             basis without warranties of any kind, whether express
@@ -120,7 +138,7 @@ export default function TermsScreen() {
           </Text>
         </Section>
 
-        <Section title="6. Limitation of Liability" colors={colors}>
+        <Section title="7. Limitation of Liability" colors={colors}>
           <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
             To the maximum extent permitted by applicable law,
             MiSo Labs and SecuBuzz shall not be liable for any
@@ -130,14 +148,39 @@ export default function TermsScreen() {
           </Text>
         </Section>
 
-        <Section title="7. Contact" colors={colors}>
+        <Section title="8. Contact Information" colors={colors}>
           <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
-            For questions regarding these Terms, contact:
+            For questions regarding these Terms or publisher requests, contact:
           </Text>
 
-          <Text style={[styles.contact, { color: accentColor }]}>
-            support@secubuzz.com
-          </Text>
+          <Pressable
+            accessibilityRole="link"
+            onPress={() => void Linking.openURL('mailto:support@secubuzz.com')}
+          >
+            <Text style={[styles.contact, { color: accentColor }]}>
+              Support: support@secubuzz.com
+            </Text>
+          </Pressable>
+
+          <Pressable
+            accessibilityRole="link"
+            onPress={() => void Linking.openURL('mailto:publishers@secubuzz.com')}
+            style={{ marginTop: 8 }}
+          >
+            <Text style={[styles.contact, { color: accentColor }]}>
+              Publishers: publishers@secubuzz.com
+            </Text>
+          </Pressable>
+
+          <Pressable
+            accessibilityRole="link"
+            onPress={() => void Linking.openURL('https://secubuzz.com/terms')}
+            style={{ marginTop: 8 }}
+          >
+            <Text style={[styles.contact, { color: accentColor }]}>
+              Web Terms: https://secubuzz.com/terms
+            </Text>
+          </Pressable>
         </Section>
       </ScrollView>
     </SafeAreaView>

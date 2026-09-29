@@ -13,6 +13,9 @@ export interface Env {
   DB: D1Database;
   PUSH_ADMIN_SECRET?: string;
   GITHUB_PAT?: string;
+  ASSETS?: {
+    fetch(request: Request | string, init?: RequestInit): Promise<Response>;
+  };
 }
 
 const CORS_HEADERS = {
@@ -61,7 +64,106 @@ function isAuthorized(request: Request, env: Env): boolean {
   return false;
 }
 
-import { PRIVACY_POLICY_HTML } from './privacyHtml';
+import {
+  ArticleItem,
+  KevVulnerability,
+  createSlug,
+  getHomePageHtml,
+  getNewsListPageHtml,
+  getArticleDetailPageHtml,
+  getAdvisoriesListPageHtml,
+  getAdvisoryDetailPageHtml,
+  getDownloadPageHtml,
+  getPublishersPageHtml,
+  getPrivacyPageHtml,
+  getAccountDeletionPageHtml,
+  getTermsPageHtml,
+  getAboutPageHtml,
+  getContactPageHtml,
+  generateSitemapXml,
+} from './websiteHtml';
+import { SEED_KEV_ADVISORIES } from './seedKev';
+
+import {
+  FAVICON_48_BASE64,
+  FAVICON_32_BASE64,
+  APPLE_TOUCH_BASE64,
+  APP_ICON_BASE64,
+} from './iconAssets';
+
+const R2_FEED_URL = 'https://pub-3fb02516aa81498eb34da1b79161b1c8.r2.dev/feed.json';
+const CISA_KEV_URL = 'https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json';
+
+let cachedArticles: ArticleItem[] | null = null;
+let cachedArticlesTime = 0;
+
+async function getArticles(): Promise<ArticleItem[]> {
+  const now = Date.now();
+  if (cachedArticles && now - cachedArticlesTime < 10 * 60 * 1000) {
+    return cachedArticles;
+  }
+  try {
+    const res = await fetch(R2_FEED_URL);
+    if (res.ok) {
+      cachedArticles = await res.json();
+      cachedArticlesTime = now;
+      return cachedArticles || [];
+    }
+  } catch (err) {
+    console.error('Failed to fetch articles from R2:', err);
+  }
+  return cachedArticles || [];
+}
+
+let cachedAllKev: KevVulnerability[] = SEED_KEV_ADVISORIES;
+let cachedRecentKev: KevVulnerability[] = SEED_KEV_ADVISORIES;
+let cachedKevTime = 0;
+
+async function getKevAdvisories(): Promise<KevVulnerability[]> {
+  const now = Date.now();
+  if (cachedAllKev.length > 0 && now - cachedKevTime < 30 * 60 * 1000) {
+    return cachedRecentKev;
+  }
+  try {
+    const res = await fetch(CISA_KEV_URL, {
+      headers: {
+        'User-Agent': 'SecuBuzz/1.0 (+https://secubuzz.com)',
+        'Accept': 'application/json',
+      },
+    });
+    if (res.ok) {
+      const data: any = await res.json();
+      if (data && Array.isArray(data.vulnerabilities) && data.vulnerabilities.length > 0) {
+        // Sort newest first
+        const sorted = [...data.vulnerabilities].sort((a, b) => {
+          const timeA = Date.parse(a.dateAdded) || 0;
+          const timeB = Date.parse(b.dateAdded) || 0;
+          return timeB - timeA;
+        });
+        cachedAllKev = sorted;
+        cachedRecentKev = sorted.slice(0, 100);
+        cachedKevTime = now;
+        return cachedRecentKev;
+      }
+    }
+  } catch (err) {
+    console.error('Failed to fetch KEV catalog:', err);
+  }
+  return cachedRecentKev.length > 0 ? cachedRecentKev : SEED_KEV_ADVISORIES;
+}
+
+async function findKevAdvisory(slug: string): Promise<KevVulnerability | undefined> {
+  await getKevAdvisories();
+  const target = slug.toLowerCase();
+  return (
+    cachedAllKev.find(
+      adv => adv.cveID.toLowerCase() === target || target.includes(adv.cveID.toLowerCase())
+    ) ||
+    SEED_KEV_ADVISORIES.find(
+      adv => adv.cveID.toLowerCase() === target || target.includes(adv.cveID.toLowerCase())
+    )
+  );
+}
 
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
@@ -76,54 +178,221 @@ export default {
     }
 
     try {
-      // Public Landing, Privacy Policy & Account Deletion Page (Google Play Store compliance & domain root)
-      if (
-        url.pathname === '/' ||
-        url.pathname === '/privacy' ||
-        url.pathname === '/privacy.html' ||
-        url.pathname === '/account-deletion' ||
-        url.pathname === '/account-deletion.html' ||
-        url.pathname === '/delete-account' ||
-        url.pathname === '/delete-account.html'
-      ) {
-        return new Response(PRIVACY_POLICY_HTML, {
+      // Favicon & Brand Asset routes
+      if (url.pathname === '/favicon.ico' || url.pathname === '/favicon.png' || url.pathname === '/assets/favicon.png') {
+        const binary = Uint8Array.from(atob(FAVICON_48_BASE64), c => c.charCodeAt(0));
+        return new Response(binary, {
           status: 200,
           headers: {
-            'Content-Type': 'text/html; charset=utf-8',
-            'Cache-Control': 'public, max-age=3600',
+            'Content-Type': 'image/png',
+            'Cache-Control': 'public, max-age=31536000, immutable',
             ...CORS_HEADERS,
           },
         });
       }
 
-      // Sitemap for Search Engines
+      if (url.pathname === '/favicon-32.png') {
+        const binary = Uint8Array.from(atob(FAVICON_32_BASE64), c => c.charCodeAt(0));
+        return new Response(binary, {
+          status: 200,
+          headers: {
+            'Content-Type': 'image/png',
+            'Cache-Control': 'public, max-age=31536000, immutable',
+            ...CORS_HEADERS,
+          },
+        });
+      }
+
+      if (url.pathname === '/apple-touch-icon.png' || url.pathname === '/apple-touch-icon-precomposed.png') {
+        const binary = Uint8Array.from(atob(APPLE_TOUCH_BASE64), c => c.charCodeAt(0));
+        return new Response(binary, {
+          status: 200,
+          headers: {
+            'Content-Type': 'image/png',
+            'Cache-Control': 'public, max-age=31536000, immutable',
+            ...CORS_HEADERS,
+          },
+        });
+      }
+
+      if (url.pathname === '/icon.png' || url.pathname === '/assets/icon.png') {
+        const binary = Uint8Array.from(atob(APP_ICON_BASE64), c => c.charCodeAt(0));
+        return new Response(binary, {
+          status: 200,
+          headers: {
+            'Content-Type': 'image/png',
+            'Cache-Control': 'public, max-age=31536000, immutable',
+            ...CORS_HEADERS,
+          },
+        });
+      }
+
+      // API: Advisories JSON
+      if (url.pathname === '/api/advisories') {
+        const advisories = await getKevAdvisories();
+        return jsonResponse({
+          success: true,
+          count: advisories.length,
+          advisories,
+        });
+      }
+
+      // API: News articles JSON
+      if (url.pathname === '/api/news' || url.pathname === '/feed.json') {
+        const articles = await getArticles();
+        return jsonResponse(articles);
+      }
+
+      // Static Assets via Cloudflare Workers Assets
+      if (env.ASSETS) {
+        const assetRes = await env.ASSETS.fetch(request);
+        if (assetRes.status !== 404) {
+          return assetRes;
+        }
+      }
+
+      const htmlHeaders = {
+        'Content-Type': 'text/html; charset=utf-8',
+        'Cache-Control': 'public, max-age=120, s-maxage=600',
+        ...CORS_HEADERS,
+      };
+
+      // 1. Home Page (Overview, Value Proposition & Latest Briefs)
+      if (url.pathname === '/' || url.pathname === '/index.html') {
+        const articles = await getArticles();
+        return new Response(getHomePageHtml(articles), {
+          status: 200,
+          headers: htmlHeaders,
+        });
+      }
+
+      // 2. News List Page
+      if (url.pathname === '/news' || url.pathname === '/news.html') {
+        const articles = await getArticles();
+        return new Response(getNewsListPageHtml(articles), {
+          status: 200,
+          headers: htmlHeaders,
+        });
+      }
+
+      // 3. Individual News Story Page (/news/:slug)
+      if (url.pathname.startsWith('/news/')) {
+        const slug = url.pathname.replace(/^\/news\//, '').replace(/\/$/, '');
+        const articles = await getArticles();
+        const found = articles.find(art => {
+          const artSlug = createSlug(art.headline || art.title || '', art.id);
+          return artSlug === slug || (slug.length >= 6 && artSlug.endsWith(slug.slice(-6)));
+        });
+
+        if (found) {
+          return new Response(getArticleDetailPageHtml(found, slug), {
+            status: 200,
+            headers: htmlHeaders,
+          });
+        }
+        return new Response(getNewsListPageHtml(articles), {
+          status: 404,
+          headers: htmlHeaders,
+        });
+      }
+
+      // 4. Advisories List Page
+      if (url.pathname === '/advisories' || url.pathname === '/advisories.html') {
+        const advisories = await getKevAdvisories();
+        return new Response(getAdvisoriesListPageHtml(advisories), {
+          status: 200,
+          headers: htmlHeaders,
+        });
+      }
+
+      // 5. Individual Advisory Page (/advisories/:cve)
+      if (url.pathname.startsWith('/advisories/')) {
+        const slug = url.pathname.replace(/^\/advisories\//, '').replace(/\/$/, '').toLowerCase();
+        const found = await findKevAdvisory(slug);
+
+        if (found) {
+          return new Response(getAdvisoryDetailPageHtml(found), {
+            status: 200,
+            headers: htmlHeaders,
+          });
+        }
+        const advisories = await getKevAdvisories();
+        return new Response(getAdvisoriesListPageHtml(advisories), {
+          status: 404,
+          headers: htmlHeaders,
+        });
+      }
+
+      // 6. Download Page
+      if (url.pathname === '/download' || url.pathname === '/download.html') {
+        return new Response(getDownloadPageHtml(), {
+          status: 200,
+          headers: htmlHeaders,
+        });
+      }
+
+      // 7. For Publishers Page (Editorial Standards, Attribution & 48h Removal SLA)
+      if (url.pathname === '/publishers' || url.pathname === '/publishers.html') {
+        return new Response(getPublishersPageHtml(), {
+          status: 200,
+          headers: htmlHeaders,
+        });
+      }
+
+      // 8. Privacy Policy Page (Google Play Compliance)
+      if (url.pathname === '/privacy' || url.pathname === '/privacy.html') {
+        return new Response(getPrivacyPageHtml(), {
+          status: 200,
+          headers: htmlHeaders,
+        });
+      }
+
+      // 9. Account Deletion Page (Google Play Compliance)
+      if (
+        url.pathname === '/account-deletion' ||
+        url.pathname === '/account-deletion.html' ||
+        url.pathname === '/delete-account' ||
+        url.pathname === '/delete-account.html'
+      ) {
+        return new Response(getAccountDeletionPageHtml(), {
+          status: 200,
+          headers: htmlHeaders,
+        });
+      }
+
+      // 10. Terms of Service Page
+      if (url.pathname === '/terms' || url.pathname === '/terms.html') {
+        return new Response(getTermsPageHtml(), {
+          status: 200,
+          headers: htmlHeaders,
+        });
+      }
+
+      // 11. About Page
+      if (url.pathname === '/about' || url.pathname === '/about.html') {
+        return new Response(getAboutPageHtml(), {
+          status: 200,
+          headers: htmlHeaders,
+        });
+      }
+
+      // 12. Dedicated Contact Page
+      if (url.pathname === '/contact' || url.pathname === '/contact.html') {
+        return new Response(getContactPageHtml(), {
+          status: 200,
+          headers: htmlHeaders,
+        });
+      }
+
+      // Dynamic Sitemap for Search Engines
       if (url.pathname === '/sitemap.xml') {
-        const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://secubuzz.com/</loc>
-    <lastmod>2026-09-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://secubuzz.com/privacy</loc>
-    <lastmod>2026-09-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://secubuzz.com/account-deletion</loc>
-    <lastmod>2026-09-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-</urlset>`;
+        const [articles, advisories] = await Promise.all([getArticles(), getKevAdvisories()]);
+        const sitemapXml = generateSitemapXml(articles, advisories);
         return new Response(sitemapXml, {
           status: 200,
           headers: {
             'Content-Type': 'application/xml; charset=utf-8',
-            'Cache-Control': 'public, max-age=86400',
+            'Cache-Control': 'public, max-age=3600',
             ...CORS_HEADERS,
           },
         });

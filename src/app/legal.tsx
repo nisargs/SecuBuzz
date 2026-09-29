@@ -169,6 +169,17 @@ export default function LegalPrivacyScreen() {
             accentColor={accentColor}
             colors={colors}
           />
+
+          <View style={[styles.divider, { backgroundColor: colors.border }]} />
+
+          <LegalItemRow
+            icon="newspaper-outline"
+            title="Publisher Policy"
+            subtitle="48-hour content removal commitment & syndication"
+            onPress={() => void Linking.openURL('https://secubuzz.com/publishers')}
+            accentColor={accentColor}
+            colors={colors}
+          />
         </View>
       </ScrollView>
     </SafeAreaView>

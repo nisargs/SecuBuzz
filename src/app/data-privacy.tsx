@@ -1,4 +1,5 @@
 import { Ionicons } from '@expo/vector-icons';
+import * as Linking from 'expo-linking';
 import { router } from 'expo-router';
 import {
   Pressable,
@@ -71,6 +72,22 @@ export default function DataPrivacyScreen() {
         />
 
         <InfoCard
+          icon="shield-checkmark-outline"
+          title="Zero Commercial Tracking SDKs"
+          text="The current release of SecuBuzz contains zero third-party advertising SDKs, zero cross-app trackers, and zero analytics beacons."
+          colors={colors}
+          accentColor={accentColor}
+        />
+
+        <InfoCard
+          icon="newspaper-outline"
+          title="Publisher Content & Removal SLA"
+          text="We respect content creators. Verified publisher removal requests are honored within 48 business hours at publishers@secubuzz.com."
+          colors={colors}
+          accentColor={accentColor}
+        />
+
+        <InfoCard
           icon="trash-outline"
           title="How to Remove All App Data"
           text="Uninstalling SecuBuzz immediately and permanently deletes all on-device data, including saved articles and preferences."
@@ -88,13 +105,14 @@ export default function DataPrivacyScreen() {
 
         <View style={[styles.policyBox, { borderTopColor: colors.border }]}>
           <Text style={[styles.policyTitle, { color: colors.textPrimary }]}>
-            Full Privacy Policy
+            Full Legal Policies
           </Text>
 
           <Text style={[styles.policyText, { color: colors.textSecondary }]}>
             SecuBuzz and developer MiSo Labs are committed
             to minimal data handling and full transparency.
-            For full details, read our complete privacy policy.
+            Review our complete privacy policy, publisher policy,
+            and account deletion terms.
           </Text>
 
           <Pressable
@@ -104,6 +122,28 @@ export default function DataPrivacyScreen() {
           >
             <Text style={[styles.policyLink, { color: accentColor }]}>
               READ FULL PRIVACY POLICY →
+            </Text>
+          </Pressable>
+
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="View Account Deletion on Web"
+            onPress={() => void Linking.openURL('https://secubuzz.com/account-deletion')}
+            style={{ marginTop: 12 }}
+          >
+            <Text style={[styles.policyLink, { color: accentColor }]}>
+              ACCOUNT DELETION INSTRUCTIONS (WEB) →
+            </Text>
+          </Pressable>
+
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="View Publisher Policy on Web"
+            onPress={() => void Linking.openURL('https://secubuzz.com/publishers')}
+            style={{ marginTop: 12 }}
+          >
+            <Text style={[styles.policyLink, { color: accentColor }]}>
+              PUBLISHER TERMS & 48-HR REMOVAL SLA →
             </Text>
           </Pressable>
         </View>

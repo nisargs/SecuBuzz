@@ -139,6 +139,27 @@ export default function AboutScreen() {
 
         <View style={[styles.section, { borderTopColor: colors.border }]}>
           <Text style={[styles.sectionTitle, { color: colors.textPrimary }]}>
+            Publisher Transparency & Content Rights
+          </Text>
+
+          <Text style={[styles.sectionText, { color: colors.textSecondary }]}>
+            SecuBuzz respects publisher rights and indexes public news under fair informational reporting. If an original publisher requests removal of content or RSS feeds, requests are executed within 48 business hours via publishers@secubuzz.com.
+          </Text>
+
+          <Pressable
+            accessibilityRole="link"
+            accessibilityLabel="Visit Publishers Policy"
+            onPress={() => void Linking.openURL('https://secubuzz.com/publishers')}
+            style={{ marginTop: 10 }}
+          >
+            <Text style={{ fontFamily: 'Exo_600SemiBold', fontSize: 13, color: accentColor }}>
+              PUBLISHER TERMS & 48-HR REMOVAL SLA →
+            </Text>
+          </Pressable>
+        </View>
+
+        <View style={[styles.section, { borderTopColor: colors.border }]}>
+          <Text style={[styles.sectionTitle, { color: colors.textPrimary }]}>
             Important
           </Text>
 

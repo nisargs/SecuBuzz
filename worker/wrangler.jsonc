@@ -15,5 +15,11 @@
 	],
 	"triggers": {
 		"crons": ["17 */4 * * *"]
+	},
+	"assets": {
+		"directory": "../docs",
+		"binding": "ASSETS",
+		"html_handling": "auto-trailing-slash",
+		"not_found_handling": "single-page-application"
 	}
 }
