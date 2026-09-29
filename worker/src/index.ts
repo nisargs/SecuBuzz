@@ -67,19 +67,6 @@ function isAuthorized(request: Request, env: Env): boolean {
 import {
   ArticleItem,
   KevVulnerability,
-  createSlug,
-  getHomePageHtml,
-  getNewsListPageHtml,
-  getArticleDetailPageHtml,
-  getAdvisoriesListPageHtml,
-  getAdvisoryDetailPageHtml,
-  getDownloadPageHtml,
-  getPublishersPageHtml,
-  getPrivacyPageHtml,
-  getAccountDeletionPageHtml,
-  getTermsPageHtml,
-  getAboutPageHtml,
-  getContactPageHtml,
   generateSitemapXml,
 } from './websiteHtml';
 import { SEED_KEV_ADVISORIES } from './seedKev';
@@ -243,145 +230,10 @@ export default {
         return jsonResponse(articles);
       }
 
-      // Static Assets via Cloudflare Workers Assets
-      if (env.ASSETS) {
-        const assetRes = await env.ASSETS.fetch(request);
-        if (assetRes.status !== 404) {
-          return assetRes;
-        }
-      }
-
-      const htmlHeaders = {
-        'Content-Type': 'text/html; charset=utf-8',
-        'Cache-Control': 'public, max-age=120, s-maxage=600',
-        ...CORS_HEADERS,
-      };
-
-      // 1. Home Page (Overview, Value Proposition & Latest Briefs)
-      if (url.pathname === '/' || url.pathname === '/index.html') {
-        const articles = await getArticles();
-        return new Response(getHomePageHtml(articles), {
-          status: 200,
-          headers: htmlHeaders,
-        });
-      }
-
-      // 2. News List Page
-      if (url.pathname === '/news' || url.pathname === '/news.html') {
-        const articles = await getArticles();
-        return new Response(getNewsListPageHtml(articles), {
-          status: 200,
-          headers: htmlHeaders,
-        });
-      }
-
-      // 3. Individual News Story Page (/news/:slug)
-      if (url.pathname.startsWith('/news/')) {
-        const slug = url.pathname.replace(/^\/news\//, '').replace(/\/$/, '');
-        const articles = await getArticles();
-        const found = articles.find(art => {
-          const artSlug = createSlug(art.headline || art.title || '', art.id);
-          return artSlug === slug || (slug.length >= 6 && artSlug.endsWith(slug.slice(-6)));
-        });
-
-        if (found) {
-          return new Response(getArticleDetailPageHtml(found, slug), {
-            status: 200,
-            headers: htmlHeaders,
-          });
-        }
-        return new Response(getNewsListPageHtml(articles), {
-          status: 404,
-          headers: htmlHeaders,
-        });
-      }
-
-      // 4. Advisories List Page
-      if (url.pathname === '/advisories' || url.pathname === '/advisories.html') {
-        const advisories = await getKevAdvisories();
-        return new Response(getAdvisoriesListPageHtml(advisories), {
-          status: 200,
-          headers: htmlHeaders,
-        });
-      }
-
-      // 5. Individual Advisory Page (/advisories/:cve)
-      if (url.pathname.startsWith('/advisories/')) {
-        const slug = url.pathname.replace(/^\/advisories\//, '').replace(/\/$/, '').toLowerCase();
-        const found = await findKevAdvisory(slug);
-
-        if (found) {
-          return new Response(getAdvisoryDetailPageHtml(found), {
-            status: 200,
-            headers: htmlHeaders,
-          });
-        }
-        const advisories = await getKevAdvisories();
-        return new Response(getAdvisoriesListPageHtml(advisories), {
-          status: 404,
-          headers: htmlHeaders,
-        });
-      }
-
-      // 6. Download Page
-      if (url.pathname === '/download' || url.pathname === '/download.html') {
-        return new Response(getDownloadPageHtml(), {
-          status: 200,
-          headers: htmlHeaders,
-        });
-      }
-
-      // 7. For Publishers Page (Editorial Standards, Attribution & 48h Removal SLA)
-      if (url.pathname === '/publishers' || url.pathname === '/publishers.html') {
-        return new Response(getPublishersPageHtml(), {
-          status: 200,
-          headers: htmlHeaders,
-        });
-      }
-
-      // 8. Privacy Policy Page (Google Play Compliance)
-      if (url.pathname === '/privacy' || url.pathname === '/privacy.html') {
-        return new Response(getPrivacyPageHtml(), {
-          status: 200,
-          headers: htmlHeaders,
-        });
-      }
-
-      // 9. Account Deletion Page (Google Play Compliance)
-      if (
-        url.pathname === '/account-deletion' ||
-        url.pathname === '/account-deletion.html' ||
-        url.pathname === '/delete-account' ||
-        url.pathname === '/delete-account.html'
-      ) {
-        return new Response(getAccountDeletionPageHtml(), {
-          status: 200,
-          headers: htmlHeaders,
-        });
-      }
-
-      // 10. Terms of Service Page
-      if (url.pathname === '/terms' || url.pathname === '/terms.html') {
-        return new Response(getTermsPageHtml(), {
-          status: 200,
-          headers: htmlHeaders,
-        });
-      }
-
-      // 11. About Page
-      if (url.pathname === '/about' || url.pathname === '/about.html') {
-        return new Response(getAboutPageHtml(), {
-          status: 200,
-          headers: htmlHeaders,
-        });
-      }
-
-      // 12. Dedicated Contact Page
-      if (url.pathname === '/contact' || url.pathname === '/contact.html') {
-        return new Response(getContactPageHtml(), {
-          status: 200,
-          headers: htmlHeaders,
-        });
+      // Redirect legacy .html URLs to clean SPA paths
+      if (url.pathname.endsWith('.html') && url.pathname !== '/index.html') {
+        const cleanPath = url.pathname.replace(/\.html$/, '');
+        return Response.redirect(`${url.origin}${cleanPath}`, 301);
       }
 
       // Dynamic Sitemap for Search Engines
@@ -396,6 +248,32 @@ export default {
             ...CORS_HEADERS,
           },
         });
+      }
+
+      // Robots.txt for Web Crawlers
+      if (url.pathname === '/robots.txt') {
+        const robotsTxt = `User-agent: *\nAllow: /\n\nSitemap: https://secubuzz.com/sitemap.xml\n`;
+        return new Response(robotsTxt, {
+          status: 200,
+          headers: {
+            'Content-Type': 'text/plain; charset=utf-8',
+            'Cache-Control': 'public, max-age=86400',
+            ...CORS_HEADERS,
+          },
+        });
+      }
+
+      // Static Assets & Single Page Application (SPA) Routing via Cloudflare Workers Assets
+      if (env.ASSETS) {
+        const assetRes = await env.ASSETS.fetch(request);
+        if (assetRes.status !== 404) {
+          return assetRes;
+        }
+        // Fallback for client-side routing: serve index.html (SPA)
+        const spaRes = await env.ASSETS.fetch(new Request(new URL('/', request.url), request));
+        if (spaRes.status !== 404) {
+          return spaRes;
+        }
       }
 
       // Robots.txt for Web Crawlers

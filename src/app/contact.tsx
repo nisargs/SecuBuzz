@@ -21,7 +21,6 @@ import { colors, spacing } from '../theme/theme';
 
 const SUPPORT_EMAIL = 'support@secubuzz.com';
 const PUBLISHERS_EMAIL = 'publishers@secubuzz.com';
-const SECURITY_EMAIL = 'security@secubuzz.com';
 
 type FeedbackCategory = 'FEATURE' | 'BUG' | 'FEED' | 'PUBLISHER' | 'GENERAL';
 

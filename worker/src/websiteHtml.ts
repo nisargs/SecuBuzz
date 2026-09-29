@@ -1715,7 +1715,7 @@ export function getContactPageHtml(): string {
           <h2 class="card-title">Security & Disclosures</h2>
           <p class="card-desc">To report security issues or vulnerabilities in our apps or infrastructure.</p>
           <p style="margin-top: 14px;">
-            <a href="mailto:security@secubuzz.com" class="btn btn-outline" style="font-size:0.82rem;">security@secubuzz.com</a>
+            <a href="mailto:support@secubuzz.com" class="btn btn-outline" style="font-size:0.82rem;">support@secubuzz.com</a>
           </p>
         </div>
       </div>

@@ -3,9 +3,8 @@ import { PageIntro } from '../components/PageIntro';
 import { ContactForm } from '../components/ContactForm';
 
 const channels = [
-  { label: 'General', value: 'hello@secubuzz.com' },
-  { label: 'Press', value: 'press@secubuzz.com' },
-  { label: 'Corrections', value: 'corrections@secubuzz.com' },
+  { label: 'Support, Bugs & Security', value: 'support@secubuzz.com' },
+  { label: 'Publishers & Removal Requests', value: 'publishers@secubuzz.com' },
 ];
 
 
@@ -14,7 +13,7 @@ export function Contact() {
     <>
       <PageIntro
         title="Contact"
-        description="Questions, corrections, press, or a bug in the app. A real person on the team reads every message." />
+        description="Questions, corrections, support, or a bug in the app. A real person on the team reads every message." />
       
       <div className="mx-auto grid max-w-site gap-14 px-5 py-16 md:px-8 lg:grid-cols-[1fr_320px]">
         <ContactForm />
@@ -37,9 +36,9 @@ export function Contact() {
           <section className="rounded-lg border border-line p-5">
             <h2 className="text-sm font-semibold text-ink">Reporting a vulnerability in SecuBuzz?</h2>
             <p className="mt-2 text-sm leading-relaxed text-muted">
-              Please don’t use this form. Email{' '}
-              <a href="mailto:security@secubuzz.com" className="font-mono text-ink hover:text-accent">
-                security@secubuzz.com
+              Please email{' '}
+              <a href="mailto:support@secubuzz.com" className="font-mono text-ink hover:text-accent">
+                support@secubuzz.com
               </a>{' '}
               with details. We acknowledge reports within 48 hours and follow coordinated disclosure.
             </p>

@@ -3,6 +3,7 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { MenuIcon, XIcon } from 'lucide-react';
 import { Logo } from './Logo';
+import { ThemeToggle } from './ThemeToggle';
 import { mainNav } from '../data/site';
 
 export function SiteHeader() {
@@ -32,6 +33,7 @@ export function SiteHeader() {
           </nav>
         </div>
         <div className="flex items-center gap-3">
+          <ThemeToggle />
           <Link
             to="/download"
             className="hidden h-9 items-center whitespace-nowrap rounded-md bg-accent px-4 text-sm font-semibold text-accent-ink transition-colors duration-150 ease-out hover:bg-accent/90 sm:inline-flex">

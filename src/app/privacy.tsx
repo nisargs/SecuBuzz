@@ -100,15 +100,6 @@ export default function PrivacyPolicyScreen() {
               Publishers: publishers@secubuzz.com
             </Text>
           </Pressable>
-
-          <Pressable
-            accessibilityRole="link"
-            onPress={() => void Linking.openURL('mailto:security@secubuzz.com')}
-          >
-            <Text style={[styles.contact, { color: accentColor }]}>
-              Security: security@secubuzz.com
-            </Text>
-          </Pressable>
         </Section>
 
         <Section title="2. Information Collected by SecuBuzz" colors={colors}>
@@ -284,14 +275,6 @@ export default function PrivacyPolicyScreen() {
             </Text>
           </Pressable>
 
-          <Pressable
-            accessibilityRole="link"
-            onPress={() => void Linking.openURL('mailto:security@secubuzz.com')}
-          >
-            <Text style={[styles.contact, { color: accentColor }]}>
-              Security: security@secubuzz.com
-            </Text>
-          </Pressable>
 
           <Pressable
             accessibilityRole="link"

@@ -8,7 +8,8 @@
 
 /* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
 
-:root {
+:root,
+html[data-theme="dark"] {
   --bg: 10 12 15;
   --surface: 17 20 24;
   --raised: 25 29 34;
@@ -22,6 +23,22 @@
   --high: 255 138 61;
   --medium: 122 167 255;
   --low: 140 150 160;
+}
+
+html[data-theme="light"] {
+  --bg: 248 250 252;
+  --surface: 255 255 255;
+  --raised: 241 245 249;
+  --line: 226 232 240;
+  --ink: 15 23 42;
+  --muted: 71 85 105;
+  --subtle: 148 163 184;
+  --accent: 2 132 199;
+  --accent-ink: 255 255 255;
+  --critical: 220 38 38;
+  --high: 217 119 6;
+  --medium: 37 99 235;
+  --low: 100 116 139;
 }
 html,
 body,

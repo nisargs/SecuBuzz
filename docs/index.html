@@ -29,8 +29,20 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script type="module" crossorigin src="/assets/index-D8NFVb3T.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-2FdpVv3n.css">
+    <script>
+      (function() {
+        try {
+          const t = localStorage.getItem('secubuzz-theme');
+          if (t === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+          } else {
+            document.documentElement.setAttribute('data-theme', 'dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-BIqALHow.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BqzqUQuS.css">
   </head>
   <body>
     <div id="root"></div>
