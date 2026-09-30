@@ -1,5 +1,31 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/09/30/owasp-noir-open-source-static-analysis-tool/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/owasp-noir-open-source-static-analysis-tool/",
+    "title": "OWASP Noir Revealed as Open-Source Static Analysis Tool",
+    "headline": "OWASP Noir Revealed as Open-Source Static Analysis Tool",
+    "summary": "OWASP Noir is an open-source static analysis tool that scans application source code to list exposed endpoints, including paths, HTTP methods, parameters, headers, and cookies, with file and line references. It highlights shadow APIs, deprecated routes, and undocumented handlers, aiding developers in identifying hidden or unused endpoints.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-09-30T05:30:36.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/09/30/owasp-noir-open-source-static-analysis-tool/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/09/30/rapidfort-cra-container-compliance/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/rapidfort-cra-container-compliance/",
+    "title": "EU Cyber Resilience Act Imposes Container and Kubernetes Security Requirements",
+    "headline": "EU Cyber Resilience Act Imposes Container and Kubernetes Security Requirements",
+    "summary": "The EU Cyber Resilience Act (CRA) mandates cybersecurity requirements for products with digital elements sold in the EU, effective Dec. 10, 2024. Reporting obligations begin Sept. 11, 2026, with full enforcement Dec. 11, 2027. The regulation introduces new requirements for teams working with containers and Kubernetes throughout the application lifecycle.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-09-30T05:00:53.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/09/30/rapidfort-cra-container-compliance/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/09/30/research-unpatched-vulnerabilities-backlog/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/research-unpatched-vulnerabilities-backlog/",
     "title": "Most Critical and High Vulnerabilities Remain Unpatched Over 90 Days",

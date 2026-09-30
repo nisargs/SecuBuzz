@@ -11,6 +11,30 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "owasp-noir-revealed-as-open-source-static-analysis-tool",
+    "title": "OWASP Noir Revealed as Open-Source Static Analysis Tool",
+    "summary": "OWASP Noir is an open-source static analysis tool that scans application source code to list exposed endpoints, including paths, HTTP methods, parameters, headers, and cookies, with file and line references. It highlights shadow APIs, deprecated routes, and undocumented handlers, aiding developers in identifying hidden or unused endpoints.",
+    "category": "Policy",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/owasp-noir-open-source-static-analysis-tool/",
+    "publishedAt": "2026-09-30T05:30:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "eu-cyber-resilience-act-imposes-container-and-kubernetes-sec",
+    "title": "EU Cyber Resilience Act Imposes Container and Kubernetes Security Requirements",
+    "summary": "The EU Cyber Resilience Act (CRA) mandates cybersecurity requirements for products with digital elements sold in the EU, effective Dec. 10, 2024. Reporting obligations begin Sept. 11, 2026, with full enforcement Dec. 11, 2027. The regulation introduces new requirements for teams working with containers and Kubernetes throughout the application lifecycle.",
+    "category": "Cloud",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/rapidfort-cra-container-compliance/",
+    "publishedAt": "2026-09-30T05:00:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "most-critical-and-high-vulnerabilities-remain-unpatched-over",
     "title": "Most Critical and High Vulnerabilities Remain Unpatched Over 90 Days",
     "summary": "Detectify examined 1,293 customers across the US, UK, and Nordics, finding that 97% of critical and 92% of high‑severity flaws in the Nordics, and 86% in the US, had been exposed for more than 90 days. The study highlights a widespread lag in patching internet‑facing systems.",

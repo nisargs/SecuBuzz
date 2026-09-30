@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Sep 2026 04:19:56 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2026 05:36:51 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>OWASP Noir Revealed as Open-Source Static Analysis Tool</title>
+      <link>https://secubuzz.com/news/owasp-noir-revealed-as-open-source-static-analysis-tool</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/owasp-noir-revealed-as-open-source-static-analysis-tool</guid>
+      <description><![CDATA[OWASP Noir is an open-source static analysis tool that scans application source code to list exposed endpoints, including paths, HTTP methods, parameters, headers, and cookies, with file and line references. It highlights shadow APIs, deprecated routes, and undocumented handlers, aiding developers in identifying hidden or unused endpoints.]]></description>
+      <pubDate>Wed, 30 Sep 2026 05:30:36 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/09/30/owasp-noir-open-source-static-analysis-tool/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>EU Cyber Resilience Act Imposes Container and Kubernetes Security Requirements</title>
+      <link>https://secubuzz.com/news/eu-cyber-resilience-act-imposes-container-and-kubernetes-sec</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/eu-cyber-resilience-act-imposes-container-and-kubernetes-sec</guid>
+      <description><![CDATA[The EU Cyber Resilience Act (CRA) mandates cybersecurity requirements for products with digital elements sold in the EU, effective Dec. 10, 2024. Reporting obligations begin Sept. 11, 2026, with full enforcement Dec. 11, 2027. The regulation introduces new requirements for teams working with containers and Kubernetes throughout the application lifecycle.]]></description>
+      <pubDate>Wed, 30 Sep 2026 05:00:53 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/09/30/rapidfort-cra-container-compliance/">Help Net Security</source>
+      <category>Cloud</category>
+    </item>
     <item>
       <title>Most Critical and High Vulnerabilities Remain Unpatched Over 90 Days</title>
       <link>https://secubuzz.com/news/most-critical-and-high-vulnerabilities-remain-unpatched-over</link>
@@ -437,24 +455,6 @@
       <description><![CDATA[Cloudflare’s new EmDash 1.0 CMS locks each sandboxed plugin in its own isolated runtime. A plugin starts with access only to its private storage and cannot reach site content, media, users, secrets, environment, filesystem, or network until it declares needed permissions and a site administrator approves them. This protects site owners running third‑party code.]]></description>
       <pubDate>Tue, 29 Sep 2026 09:03:41 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/09/29/cloudflare-emdash-plugin-security/">Help Net Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>Anthropic’s Claude Sonnet 5.5 Delivers 30% Faster Performance</title>
-      <link>https://secubuzz.com/news/anthropic-s-claude-sonnet-5-5-delivers-30-faster-performance</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-s-claude-sonnet-5-5-delivers-30-faster-performance</guid>
-      <description><![CDATA[Anthropic released Claude Sonnet 5.5, an AI model for coding and office tasks that is over 30% faster than its predecessor while using fewer tokens, reducing cost per task. The model is available with zero data retention on the Claude Platform via AWS, Google Cloud, and Microsoft Azure.]]></description>
-      <pubDate>Tue, 29 Sep 2026 08:15:18 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/09/29/anthropic-claude-sonnet-5-5/">Help Net Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>Four‑Week Plan to Mitigate Vendor Concentration Risk</title>
-      <link>https://secubuzz.com/news/four-week-plan-to-mitigate-vendor-concentration-risk</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/four-week-plan-to-mitigate-vendor-concentration-risk</guid>
-      <description><![CDATA[Skycloak founder Guilliano Molaire outlines a four‑week strategy to map and reduce vendor concentration risk. The approach identifies hidden dependencies on single cloud, identity, DNS, email, payment, or AI model providers, helping organizations avoid cascading failures when one provider goes down.]]></description>
-      <pubDate>Tue, 29 Sep 2026 05:00:20 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/09/29/vendor-concentration-risk-video/">Help Net Security</source>
       <category>Cloud</category>
     </item>
   </channel>
