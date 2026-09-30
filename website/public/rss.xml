@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Sep 2026 05:36:51 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2026 08:20:06 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Former US Air Force Members Sentenced for Million-Dollar Business Email Compromise Scheme</title>
+      <link>https://secubuzz.com/news/former-us-air-force-members-sentenced-for-million-dollar-bus</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/former-us-air-force-members-sentenced-for-million-dollar-bus</guid>
+      <description><![CDATA[Two former Air Force personnel, Chijioke Timothy Odimegwu and Harafat Mogaji, were sentenced to 189 months for running a BEC and phishing operation that targeted U.S. businesses. They sent spam emails to steal employee usernames and passwords, compromising corporate email accounts.]]></description>
+      <pubDate>Wed, 30 Sep 2026 07:42:11 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/09/30/air-force-members-sentenced-bec-phishing/">Help Net Security</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>South Africa Seeks Assistance After Ransomware Toolkit Hits Air Traffic Control Network</title>
+      <link>https://secubuzz.com/news/south-africa-seeks-assistance-after-ransomware-toolkit-hits-</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/south-africa-seeks-assistance-after-ransomware-toolkit-hits-</guid>
+      <description><![CDATA[A ransomware toolkit was installed on at least one operational South African air traffic control network, prompting authorities to seek external help. The attack targeted aviation infrastructure, potentially disrupting air traffic management systems and raising concerns about critical national infrastructure security.]]></description>
+      <pubDate>Wed, 30 Sep 2026 07:00:00 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyberattacks-data-breaches/south-africa-help-cyberattack-air-traffic-control">Dark Reading</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
+      <title>OpenSSL and WolfSSL Patch High‑Severity Vulnerabilities</title>
+      <link>https://secubuzz.com/news/openssl-and-wolfssl-patch-high-severity-vulnerabilities</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openssl-and-wolfssl-patch-high-severity-vulnerabilities</guid>
+      <description><![CDATA[SecurityWeek reports that each of the open‑source cryptographic libraries, OpenSSL and WolfSSL, has received patches for roughly a dozen high‑severity vulnerabilities. The updates address critical flaws that could allow attackers to compromise encrypted communications or execute arbitrary code. Users should apply the latest releases to mitigate potential exploitation.]]></description>
+      <pubDate>Wed, 30 Sep 2026 06:55:50 GMT</pubDate>
+      <source url="https://www.securityweek.com/high-severity-vulnerabilities-patched-in-openssl-wolfssl/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Genea Launches AI‑Enabled Access Control Platform</title>
+      <link>https://secubuzz.com/news/genea-launches-ai-enabled-access-control-platform</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/genea-launches-ai-enabled-access-control-platform</guid>
+      <description><![CDATA[Genea has unveiled Genea MCP, a Model Context Protocol server that connects AI agents directly to its access control system. The new tool enables role‑based permissions to be configured with a single sentence, streamlining onboarding and temporary access. The release positions Genea among the first providers to offer a native MCP server.]]></description>
+      <pubDate>Wed, 30 Sep 2026 06:49:24 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/09/30/genea-mcp/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>OWASP Noir Revealed as Open-Source Static Analysis Tool</title>
       <link>https://secubuzz.com/news/owasp-noir-revealed-as-open-source-static-analysis-tool</link>
@@ -17,6 +53,15 @@
       <category>Policy</category>
     </item>
     <item>
+      <title>Citrix NetScaler CVE-2026-88772 Enables Pre-Auth Shellcode Execution</title>
+      <link>https://secubuzz.com/news/citrix-netscaler-cve-2026-88772-enables-pre-auth-shellcode-e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/citrix-netscaler-cve-2026-88772-enables-pre-auth-shellcode-e</guid>
+      <description><![CDATA[A memory overflow bug in Citrix NetScaler ADC and Gateway’s DTLS handling allows attackers to execute shellcode without authentication. The flaw, CVE-2026-88772, has a CVSS score of 9.5 and is actively exploited in the wild. Patching is mandatory to prevent remote code execution.]]></description>
+      <pubDate>Wed, 30 Sep 2026 05:30:30 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>EU Cyber Resilience Act Imposes Container and Kubernetes Security Requirements</title>
       <link>https://secubuzz.com/news/eu-cyber-resilience-act-imposes-container-and-kubernetes-sec</link>
       <guid isPermaLink="true">https://secubuzz.com/news/eu-cyber-resilience-act-imposes-container-and-kubernetes-sec</guid>
@@ -24,6 +69,15 @@
       <pubDate>Wed, 30 Sep 2026 05:00:53 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/09/30/rapidfort-cra-container-compliance/">Help Net Security</source>
       <category>Cloud</category>
+    </item>
+    <item>
+      <title>BH Consulting Launches BH Haven SME Cybersecurity Service with AI Support</title>
+      <link>https://secubuzz.com/news/bh-consulting-launches-bh-haven-sme-cybersecurity-service-wi</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/bh-consulting-launches-bh-haven-sme-cybersecurity-service-wi</guid>
+      <description><![CDATA[BH Consulting has introduced BH Haven, a continuous service for Irish SMEs that pairs specialist consultants with a proprietary AI tool for analysis, evidence review, regulatory mapping and reporting. The offering prioritises Ireland, the UK, Nordic and other EU markets, helping clients comply with GDPR, NIS2 and the EU AI Act.]]></description>
+      <pubDate>Wed, 30 Sep 2026 04:30:17 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/09/30/bh-haven-sme-cybersecurity-service/">Help Net Security</source>
+      <category>Policy</category>
     </item>
     <item>
       <title>Most Critical and High Vulnerabilities Remain Unpatched Over 90 Days</title>
@@ -62,12 +116,12 @@
       <category>Cloud</category>
     </item>
     <item>
-      <title>Former Air Force Members Sentenced for Multi-Million Dollar BEC Scam</title>
-      <link>https://secubuzz.com/news/former-air-force-members-sentenced-for-multi-million-dollar-</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/former-air-force-members-sentenced-for-multi-million-dollar-</guid>
-      <description><![CDATA[Two ex‑Air Force personnel received 189 months in prison after orchestrating a BEC fraud scheme that spoofed vendors to redirect wire transfers. The operation diverted payments to the ring’s accounts, resulting in a multimillion‑dollar loss.]]></description>
-      <pubDate>Tue, 29 Sep 2026 23:15:34 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/ex-air-force-members-jailed-bec-fraud">CyberNews AI</source>
+      <title>Tech Giants Agree to Voluntary AI Self‑Regulation Accord</title>
+      <link>https://secubuzz.com/news/tech-giants-agree-to-voluntary-ai-self-regulation-accord</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/tech-giants-agree-to-voluntary-ai-self-regulation-accord</guid>
+      <description><![CDATA[Four major technology companies have signed a voluntary accord to self‑police AI development, outlining four steps to enhance transparency and safety. The agreement aims to lay groundwork for future regulatory frameworks while allowing firms to maintain control over their AI practices.]]></description>
+      <pubDate>Wed, 30 Sep 2026 01:48:21 GMT</pubDate>
+      <source url="https://www.securityweek.com/trump-says-top-tech-firms-have-signed-accord-to-self-police-ai-development/">SecurityWeek</source>
       <category>Policy</category>
     </item>
     <item>
@@ -98,15 +152,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Unsloth Studio Vulnerability Enables Arbitrary Python Code Execution During Model Inspection</title>
-      <link>https://secubuzz.com/news/unsloth-studio-vulnerability-enables-arbitrary-python-code-e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/unsloth-studio-vulnerability-enables-arbitrary-python-code-e</guid>
-      <description><![CDATA[A patched flaw in Unsloth Studio allows attackers to run arbitrary Python code when inspecting AI models via the trust_remote_code setting. The vulnerability can lead to full code execution on the host system, posing a high risk to developers using the platform.]]></description>
-      <pubDate>Tue, 29 Sep 2026 21:08:42 GMT</pubDate>
-      <source url="https://www.darkreading.com/application-security/unsloth-studio-flaw-model-inspection-code-execution">Dark Reading</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>Custom ChatGPTs Deploy RAT Malware via ClickFix Attacks</title>
       <link>https://secubuzz.com/news/custom-chatgpts-deploy-rat-malware-via-clickfix-attacks</link>
       <guid isPermaLink="true">https://secubuzz.com/news/custom-chatgpts-deploy-rat-malware-via-clickfix-attacks</guid>
@@ -114,15 +159,6 @@
       <pubDate>Tue, 29 Sep 2026 20:59:39 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/custom-chatgpts-push-clickfix-attacks-to-deploy-rat-malware/">BleepingComputer</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Keio Corporation Hit by Ransomware, Trains Remain Operational via Air‑Gap</title>
-      <link>https://secubuzz.com/news/keio-corporation-hit-by-ransomware-trains-remain-operational</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/keio-corporation-hit-by-ransomware-trains-remain-operational</guid>
-      <description><![CDATA[A ransomware attack disrupted Keio Corporation’s hotel reservation and retail payment systems, but strict operational technology air‑gaps prevented impact on Tokyo’s train services. The incident highlights the effectiveness of physical isolation in protecting critical infrastructure from cyber extortion.]]></description>
-      <pubDate>Tue, 29 Sep 2026 20:55:01 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/japans-keio-ransomware-attack-air-gapped-railway-resilience">CyberNews AI</source>
-      <category>Ransomware</category>
     </item>
     <item>
       <title>Paragon Spyware Firm Plans Nasdaq IPO</title>
@@ -159,15 +195,6 @@
       <pubDate>Tue, 29 Sep 2026 19:48:00 GMT</pubDate>
       <source url="https://therecord.media/openai-apologizes-australia-medicare-breach">The Record</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Citrix NetScaler Zero-Day CVE-2026-88772 Enables Web Shell Deployment</title>
-      <link>https://secubuzz.com/news/citrix-netscaler-zero-day-cve-2026-88772-enables-web-shell-d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/citrix-netscaler-zero-day-cve-2026-88772-enables-web-shell-d</guid>
-      <description><![CDATA[Cybersecurity firms report attackers exploited Citrix NetScaler CVE-2026-88772, a zero‑day vulnerability, to deploy custom web shells and tunneling malware. The exploit grants root access, allowing credential theft and lateral movement into internal networks. Citrix has issued a patch; users should update immediately to mitigate the risk.]]></description>
-      <pubDate>Tue, 29 Sep 2026 18:37:12 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/hackers-exploit-citrix-netscaler-zero-day-to-deploy-web-shells/">BleepingComputer</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>French Tax Administration Data Theft via Stolen Staff Passwords</title>
@@ -284,15 +311,6 @@
       <description><![CDATA[Meta introduces Muse for Small Business, an AI agent that integrates with Instagram analytics, Facebook Pages, and Meta ad accounts. The agent assists owners by automating tasks and providing context‑aware insights, helping streamline operations across the Meta ecosystem.]]></description>
       <pubDate>Tue, 29 Sep 2026 12:45:45 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/09/29/meta-muse-for-small-business/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Vega II Launches AI-Driven SOC Platform</title>
-      <link>https://secubuzz.com/news/vega-ii-launches-ai-driven-soc-platform</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/vega-ii-launches-ai-driven-soc-platform</guid>
-      <description><![CDATA[Vega released Vega II, its largest platform update, integrating frontier AI trained for security operations into the SOC. The update removes legacy SIEM and data pipeline barriers, providing teams with a lasting record of learned patterns and enabling AI-driven detection, triage, and investigation. Vega II aims to streamline cyber defense workflows.]]></description>
-      <pubDate>Tue, 29 Sep 2026 12:43:03 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/09/29/vega-ii-agentic-cyber-defense-platform/">Help Net Security</source>
       <category>Policy</category>
     </item>
     <item>
@@ -438,24 +456,6 @@
       <pubDate>Tue, 29 Sep 2026 09:17:43 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/09/29/qbusoft-medyc-data-breach-poland/">Help Net Security</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Kiteworks Addresses Critical Vulnerability, Restores Customer Systems</title>
-      <link>https://secubuzz.com/news/kiteworks-addresses-critical-vulnerability-restores-customer</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/kiteworks-addresses-critical-vulnerability-restores-customer</guid>
-      <description><![CDATA[Kiteworks issued a patch for a critical vulnerability that forced customers to shut down systems. The company lifted its precautionary advisory after the fix was applied, allowing affected environments to resume normal operations. No further exploitation details were disclosed.]]></description>
-      <pubDate>Tue, 29 Sep 2026 09:04:06 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/kiteworks-lifts-shutdown-warning-after-patching-critical-flaw/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cloudflare EmDash 1.0 Enforces Plugin Permission Requests</title>
-      <link>https://secubuzz.com/news/cloudflare-emdash-1-0-enforces-plugin-permission-requests</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-emdash-1-0-enforces-plugin-permission-requests</guid>
-      <description><![CDATA[Cloudflare’s new EmDash 1.0 CMS locks each sandboxed plugin in its own isolated runtime. A plugin starts with access only to its private storage and cannot reach site content, media, users, secrets, environment, filesystem, or network until it declares needed permissions and a site administrator approves them. This protects site owners running third‑party code.]]></description>
-      <pubDate>Tue, 29 Sep 2026 09:03:41 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/09/29/cloudflare-emdash-plugin-security/">Help Net Security</source>
-      <category>Cloud</category>
     </item>
   </channel>
 </rss>

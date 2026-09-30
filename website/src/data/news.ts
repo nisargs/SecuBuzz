@@ -11,6 +11,54 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "former-us-air-force-members-sentenced-for-million-dollar-bus",
+    "title": "Former US Air Force Members Sentenced for Million-Dollar Business Email Compromise Scheme",
+    "summary": "Two former Air Force personnel, Chijioke Timothy Odimegwu and Harafat Mogaji, were sentenced to 189 months for running a BEC and phishing operation that targeted U.S. businesses. They sent spam emails to steal employee usernames and passwords, compromising corporate email accounts.",
+    "category": "Breach",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/air-force-members-sentenced-bec-phishing/",
+    "publishedAt": "2026-09-30T07:42:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "south-africa-seeks-assistance-after-ransomware-toolkit-hits-",
+    "title": "South Africa Seeks Assistance After Ransomware Toolkit Hits Air Traffic Control Network",
+    "summary": "A ransomware toolkit was installed on at least one operational South African air traffic control network, prompting authorities to seek external help. The attack targeted aviation infrastructure, potentially disrupting air traffic management systems and raising concerns about critical national infrastructure security.",
+    "category": "Ransomware",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/south-africa-help-cyberattack-air-traffic-control",
+    "publishedAt": "2026-09-30T07:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "openssl-and-wolfssl-patch-high-severity-vulnerabilities",
+    "title": "OpenSSL and WolfSSL Patch High‑Severity Vulnerabilities",
+    "summary": "SecurityWeek reports that each of the open‑source cryptographic libraries, OpenSSL and WolfSSL, has received patches for roughly a dozen high‑severity vulnerabilities. The updates address critical flaws that could allow attackers to compromise encrypted communications or execute arbitrary code. Users should apply the latest releases to mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/high-severity-vulnerabilities-patched-in-openssl-wolfssl/",
+    "publishedAt": "2026-09-30T06:55:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "genea-launches-ai-enabled-access-control-platform",
+    "title": "Genea Launches AI‑Enabled Access Control Platform",
+    "summary": "Genea has unveiled Genea MCP, a Model Context Protocol server that connects AI agents directly to its access control system. The new tool enables role‑based permissions to be configured with a single sentence, streamlining onboarding and temporary access. The release positions Genea among the first providers to offer a native MCP server.",
+    "category": "Policy",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/genea-mcp/",
+    "publishedAt": "2026-09-30T06:49:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "owasp-noir-revealed-as-open-source-static-analysis-tool",
     "title": "OWASP Noir Revealed as Open-Source Static Analysis Tool",
     "summary": "OWASP Noir is an open-source static analysis tool that scans application source code to list exposed endpoints, including paths, HTTP methods, parameters, headers, and cookies, with file and line references. It highlights shadow APIs, deprecated routes, and undocumented handlers, aiding developers in identifying hidden or unused endpoints.",
@@ -23,6 +71,20 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
+    "slug": "citrix-netscaler-cve-2026-88772-enables-pre-auth-shellcode-e",
+    "title": "Citrix NetScaler CVE-2026-88772 Enables Pre-Auth Shellcode Execution",
+    "summary": "A memory overflow bug in Citrix NetScaler ADC and Gateway’s DTLS handling allows attackers to execute shellcode without authentication. The flaw, CVE-2026-88772, has a CVSS score of 9.5 and is actively exploited in the wild. Patching is mandatory to prevent remote code execution.",
+    "category": "Vulnerability",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html",
+    "publishedAt": "2026-09-30T05:30:30.000Z",
+    "cves": [
+      "CVE-2026-88772"
+    ],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "eu-cyber-resilience-act-imposes-container-and-kubernetes-sec",
     "title": "EU Cyber Resilience Act Imposes Container and Kubernetes Security Requirements",
     "summary": "The EU Cyber Resilience Act (CRA) mandates cybersecurity requirements for products with digital elements sold in the EU, effective Dec. 10, 2024. Reporting obligations begin Sept. 11, 2026, with full enforcement Dec. 11, 2027. The regulation introduces new requirements for teams working with containers and Kubernetes throughout the application lifecycle.",
@@ -30,6 +92,18 @@ export const news: NewsBrief[] = [
     "source": "Help Net Security",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/rapidfort-cra-container-compliance/",
     "publishedAt": "2026-09-30T05:00:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "bh-consulting-launches-bh-haven-sme-cybersecurity-service-wi",
+    "title": "BH Consulting Launches BH Haven SME Cybersecurity Service with AI Support",
+    "summary": "BH Consulting has introduced BH Haven, a continuous service for Irish SMEs that pairs specialist consultants with a proprietary AI tool for analysis, evidence review, regulatory mapping and reporting. The offering prioritises Ireland, the UK, Nordic and other EU markets, helping clients comply with GDPR, NIS2 and the EU AI Act.",
+    "category": "Policy",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/bh-haven-sme-cybersecurity-service/",
+    "publishedAt": "2026-09-30T04:30:17.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -83,13 +157,13 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "former-air-force-members-sentenced-for-multi-million-dollar-",
-    "title": "Former Air Force Members Sentenced for Multi-Million Dollar BEC Scam",
-    "summary": "Two ex‑Air Force personnel received 189 months in prison after orchestrating a BEC fraud scheme that spoofed vendors to redirect wire transfers. The operation diverted payments to the ring’s accounts, resulting in a multimillion‑dollar loss.",
+    "slug": "tech-giants-agree-to-voluntary-ai-self-regulation-accord",
+    "title": "Tech Giants Agree to Voluntary AI Self‑Regulation Accord",
+    "summary": "Four major technology companies have signed a voluntary accord to self‑police AI development, outlining four steps to enhance transparency and safety. The agreement aims to lay groundwork for future regulatory frameworks while allowing firms to maintain control over their AI practices.",
     "category": "Policy",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/ex-air-force-members-jailed-bec-fraud",
-    "publishedAt": "2026-09-29T23:15:34.000Z",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/trump-says-top-tech-firms-have-signed-accord-to-self-police-ai-development/",
+    "publishedAt": "2026-09-30T01:48:21.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -131,18 +205,6 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "unsloth-studio-vulnerability-enables-arbitrary-python-code-e",
-    "title": "Unsloth Studio Vulnerability Enables Arbitrary Python Code Execution During Model Inspection",
-    "summary": "A patched flaw in Unsloth Studio allows attackers to run arbitrary Python code when inspecting AI models via the trust_remote_code setting. The vulnerability can lead to full code execution on the host system, posing a high risk to developers using the platform.",
-    "category": "Vulnerability",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/application-security/unsloth-studio-flaw-model-inspection-code-execution",
-    "publishedAt": "2026-09-29T21:08:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
     "slug": "custom-chatgpts-deploy-rat-malware-via-clickfix-attacks",
     "title": "Custom ChatGPTs Deploy RAT Malware via ClickFix Attacks",
     "summary": "Custom ChatGPT variants promoted in sponsored Google results direct users to malicious sites that use ClickFix attacks to deliver remote access trojan malware. The technique exploits users’ trust in AI tools, enabling attackers to install RATs without user interaction. Security teams should block such custom models and monitor for RAT activity.",
@@ -150,18 +212,6 @@ export const news: NewsBrief[] = [
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/custom-chatgpts-push-clickfix-attacks-to-deploy-rat-malware/",
     "publishedAt": "2026-09-29T20:59:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "keio-corporation-hit-by-ransomware-trains-remain-operational",
-    "title": "Keio Corporation Hit by Ransomware, Trains Remain Operational via Air‑Gap",
-    "summary": "A ransomware attack disrupted Keio Corporation’s hotel reservation and retail payment systems, but strict operational technology air‑gaps prevented impact on Tokyo’s train services. The incident highlights the effectiveness of physical isolation in protecting critical infrastructure from cyber extortion.",
-    "category": "Ransomware",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/japans-keio-ransomware-attack-air-gapped-railway-resilience",
-    "publishedAt": "2026-09-29T20:55:01.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -211,20 +261,6 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://therecord.media/openai-apologizes-australia-medicare-breach",
     "publishedAt": "2026-09-29T19:48:00.000Z",
     "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "citrix-netscaler-zero-day-cve-2026-88772-enables-web-shell-d",
-    "title": "Citrix NetScaler Zero-Day CVE-2026-88772 Enables Web Shell Deployment",
-    "summary": "Cybersecurity firms report attackers exploited Citrix NetScaler CVE-2026-88772, a zero‑day vulnerability, to deploy custom web shells and tunneling malware. The exploit grants root access, allowing credential theft and lateral movement into internal networks. Citrix has issued a patch; users should update immediately to mitigate the risk.",
-    "category": "Vulnerability",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-citrix-netscaler-zero-day-to-deploy-web-shells/",
-    "publishedAt": "2026-09-29T18:37:12.000Z",
-    "cves": [
-      "CVE-2026-88772"
-    ],
     "additionalSources": [],
     "aliases": []
   },
@@ -380,18 +416,6 @@ export const news: NewsBrief[] = [
     "source": "Help Net Security",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/meta-muse-for-small-business/",
     "publishedAt": "2026-09-29T12:45:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "vega-ii-launches-ai-driven-soc-platform",
-    "title": "Vega II Launches AI-Driven SOC Platform",
-    "summary": "Vega released Vega II, its largest platform update, integrating frontier AI trained for security operations into the SOC. The update removes legacy SIEM and data pipeline barriers, providing teams with a lasting record of learned patterns and enabling AI-driven detection, triage, and investigation. Vega II aims to streamline cyber defense workflows.",
-    "category": "Policy",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/vega-ii-agentic-cyber-defense-platform/",
-    "publishedAt": "2026-09-29T12:43:03.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -847,18 +871,6 @@ export const news: NewsBrief[] = [
     "source": "Cloudflare Security",
     "sourceUrl": "https://blog.cloudflare.com/forge-open-source-generation-pipeline/",
     "publishedAt": "2026-09-28T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "wiz-research-launches-partner-alliance-managed-service-provi",
-    "title": "Wiz Research Launches Partner Alliance Managed Service Provider Program",
-    "summary": "Wiz Research has launched the Wiz Partner Alliance Managed Service Provider Program, enabling MSPs to deliver advanced cloud and AI security solutions at scale. The initiative offers training, certification, and joint go‑to‑market resources, aiming to strengthen security posture for enterprises across multiple cloud environments.",
-    "category": "Cloud",
-    "source": "Wiz Research",
-    "sourceUrl": "https://www.wiz.io/blog/introducing-wiz-partner-alliance-managed-service-provider-program",
-    "publishedAt": "2026-09-28T12:58:02.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
