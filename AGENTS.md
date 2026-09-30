@@ -33,6 +33,7 @@
 - **Feed System:** `scripts/ingest.mjs` retains up to 250 articles (~5–7 days of security intelligence), scheduled every 4 hours via Worker cron.
 
 ## 6. Next Native `.aab` Rebuild Roadmap (v1.0.2+)
+- **Header Brand Unification:** Replace 'SecuRadar' with 'SecuBuzz' in `src/app/(tabs)/advisories.tsx` (line 353) to unify app brand identity with `secubuzz.com` and eliminate third-party trademark/domain confusion.
 - **Haptic Feedback:** Install `expo-haptics` (`npx expo install expo-haptics`) on the next full native binary release for tactile bookmarking and refresh feedback. Do not introduce in OTA-only cycles.
 
 ## 7. Product Evolution & Post-Approval Roadmap (Claude + ChatGPT Synthesis)

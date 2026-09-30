@@ -215,6 +215,7 @@ Please provide creative, high-impact suggestions across these 4 areas:
 
 - **Upcoming Release (v1.0.2 / Code 6)**:
   - Scheduled for EAS `.aab` production build on **Thursday, Oct 1, 2026** (when Expo free build quota replenishes).
+  - **Pre-Build Polish**: Update 'SecuRadar' header in `src/app/(tabs)/advisories.tsx` to 'SecuBuzz' before generating the `.aab` file.
   - Main Store Listing updated with refined description and refreshed screenshots on Sep 29, 2026.
 
 ### Production Access Questionnaire (Google Play Submission Copy)
