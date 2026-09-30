@@ -47,13 +47,13 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "star-blizzard-launches-redflick-cyber-espionage-campaign-tar",
-    "title": "Star Blizzard Launches RedFlick Cyber Espionage Campaign Targeting 100+ Western Organizations",
-    "summary": "Russia’s Star Blizzard used the RedFlick fake event lure to deliver the CosmicPulse backdoor and DarkSword iOS exploit kit to over 100 Western organizations, enabling covert data exfiltration and persistent access. The operation demonstrates a coordinated state-sponsored espionage effort.",
-    "category": "Malware",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/star-blizzard-redflick-phishing-cosmicpulse-backdoor",
-    "publishedAt": "2026-09-29T21:22:34.000Z",
+    "slug": "signal-releases-encrypted-local-backup-feature-in-version-8-",
+    "title": "Signal Releases Encrypted Local Backup Feature in Version 8.30",
+    "summary": "Signal version 8.30 now supports encrypted local backups on all supported platforms—Android, iOS, Linux, macOS, and Windows—completing the rollout of its secure backups feature. Users can create local encrypted copies of their message history, enhancing data protection and recovery options.",
+    "category": "Policy",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/signal-adds-encypted-local-backup-support-to-ios-desktop-apps/",
+    "publishedAt": "2026-09-29T21:30:08.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -78,6 +78,18 @@ export const news: NewsBrief[] = [
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/custom-chatgpts-push-clickfix-attacks-to-deploy-rat-malware/",
     "publishedAt": "2026-09-29T20:59:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "keio-corporation-hit-by-ransomware-trains-remain-operational",
+    "title": "Keio Corporation Hit by Ransomware, Trains Remain Operational via Air‑Gap",
+    "summary": "A ransomware attack disrupted Keio Corporation’s hotel reservation and retail payment systems, but strict operational technology air‑gaps prevented impact on Tokyo’s train services. The incident highlights the effectiveness of physical isolation in protecting critical infrastructure from cyber extortion.",
+    "category": "Ransomware",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/japans-keio-ransomware-attack-air-gapped-railway-resilience",
+    "publishedAt": "2026-09-29T20:55:01.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -217,6 +229,30 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
+    "slug": "cloudflare-expands-threat-signals-to-all-accounts",
+    "title": "Cloudflare Expands Threat Signals to All Accounts",
+    "summary": "Cloudflare now offers Threat Signals to every account, automatically parsing open-source threat reports, extracting structured indicators, and linking threat context to WAF rules via the Threat Events Platform. This enhances real-time threat visibility and simplifies rule creation for all users.",
+    "category": "Cloud",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/threat-signals/",
+    "publishedAt": "2026-09-29T13:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "cloudflare-introduces-application-profiles-for-positive-secu",
+    "title": "Cloudflare Introduces Application Profiles for Positive Security",
+    "summary": "Cloudflare’s Application Profiles learn normal HTTP request patterns and flag deviations, adding a positive security layer. By reducing attack surface, the feature helps counter AI‑generated payloads, improving protection against evolving web threats for all customers.",
+    "category": "Cloud",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/application-profiles/",
+    "publishedAt": "2026-09-29T13:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "cloudflare-adds-visibility-into-post-quantum-encryption-for-",
     "title": "Cloudflare Adds Visibility Into Post-Quantum Encryption for Domains",
     "summary": "Cloudflare now exposes post‑quantum (PQ) encryption status in TLS 1.3 directly within HTTP Analytics, Log Explorer, and Logpush. The feature lets site owners verify that their domains use PQ ciphers, helping ensure protection against future quantum‑era attacks.",
@@ -235,18 +271,6 @@ export const news: NewsBrief[] = [
     "category": "Vulnerability",
     "source": "Cloudflare Security",
     "sourceUrl": "https://blog.cloudflare.com/adaptive-ai-waf-testing/",
-    "publishedAt": "2026-09-29T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "adaptive-application-security-for-the-ai-era-how-cloudflare-",
-    "title": "Adaptive application security for the AI era: how Cloudflare connects code, traffic, and intelligence to stop attacks",
-    "summary": "Cloudflare launches an adaptive security framework that links risk discovery, agent governance, runtime protection, and AI‑powered response into a continuous learning loop. The system aims to detect and mitigate threats across code, traffic, and intelligence layers, enhancing overall application protection.",
-    "category": "Cloud",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/ai-era-framework/",
     "publishedAt": "2026-09-29T13:00:00.000Z",
     "cves": [],
     "additionalSources": [],
@@ -273,6 +297,20 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/vega-ii-agentic-cyber-defense-platform/",
     "publishedAt": "2026-09-29T12:43:03.000Z",
     "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "apple-products-vulnerability-cve-2026-86950-added-to-cisa-ke",
+    "title": "Apple Products Vulnerability CVE-2026-86950 Added to CISA KEV Catalog",
+    "summary": "Apple products are impacted by CVE-2026-86950, an out-of-bounds write that can grant attackers full control of exposed assets. CISA has listed it as a known exploited vulnerability, urging federal agencies to prioritize rapid remediation under BOD 26-04. The flaw poses significant risks to federal enterprises and requires urgent patching.",
+    "category": "Vulnerability",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/09/29/cisa-adds-one-known-exploited-vulnerability-catalog",
+    "publishedAt": "2026-09-29T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-86950"
+    ],
     "additionalSources": [],
     "aliases": []
   },
@@ -545,18 +583,6 @@ export const news: NewsBrief[] = [
     "source": "CyberNews AI",
     "sourceUrl": "https://cybernewsai.com/blog/storm-3168-azure-service-principal-resource-destruction",
     "publishedAt": "2026-09-28T21:45:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "keio-railway-operator-hit-by-ransomware-attack",
-    "title": "Keio Railway Operator Hit by Ransomware Attack",
-    "summary": "Keio Corporation, a major private railway operator in Japan, confirmed a ransomware attack over the weekend that disrupted some of its business systems. The incident impacted operational networks, but no ransom payment or data exfiltration details were disclosed.",
-    "category": "Ransomware",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/japans-keio-confirms-ransomware-attack-disrupted-business-systems/",
-    "publishedAt": "2026-09-28T20:56:47.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []

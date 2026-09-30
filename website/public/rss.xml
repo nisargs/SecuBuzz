@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Sep 2026 23:46:59 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2026 00:19:56 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Former Air Force Members Sentenced for Multi-Million Dollar BEC Scam</title>
@@ -35,13 +35,13 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>Star Blizzard Launches RedFlick Cyber Espionage Campaign Targeting 100+ Western Organizations</title>
-      <link>https://secubuzz.com/news/star-blizzard-launches-redflick-cyber-espionage-campaign-tar</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/star-blizzard-launches-redflick-cyber-espionage-campaign-tar</guid>
-      <description><![CDATA[Russia’s Star Blizzard used the RedFlick fake event lure to deliver the CosmicPulse backdoor and DarkSword iOS exploit kit to over 100 Western organizations, enabling covert data exfiltration and persistent access. The operation demonstrates a coordinated state-sponsored espionage effort.]]></description>
-      <pubDate>Tue, 29 Sep 2026 21:22:34 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/star-blizzard-redflick-phishing-cosmicpulse-backdoor">CyberNews AI</source>
-      <category>Malware</category>
+      <title>Signal Releases Encrypted Local Backup Feature in Version 8.30</title>
+      <link>https://secubuzz.com/news/signal-releases-encrypted-local-backup-feature-in-version-8-</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/signal-releases-encrypted-local-backup-feature-in-version-8-</guid>
+      <description><![CDATA[Signal version 8.30 now supports encrypted local backups on all supported platforms—Android, iOS, Linux, macOS, and Windows—completing the rollout of its secure backups feature. Users can create local encrypted copies of their message history, enhancing data protection and recovery options.]]></description>
+      <pubDate>Tue, 29 Sep 2026 21:30:08 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/signal-adds-encypted-local-backup-support-to-ios-desktop-apps/">BleepingComputer</source>
+      <category>Policy</category>
     </item>
     <item>
       <title>Unsloth Studio Vulnerability Enables Arbitrary Python Code Execution During Model Inspection</title>
@@ -60,6 +60,15 @@
       <pubDate>Tue, 29 Sep 2026 20:59:39 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/custom-chatgpts-push-clickfix-attacks-to-deploy-rat-malware/">BleepingComputer</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Keio Corporation Hit by Ransomware, Trains Remain Operational via Air‑Gap</title>
+      <link>https://secubuzz.com/news/keio-corporation-hit-by-ransomware-trains-remain-operational</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/keio-corporation-hit-by-ransomware-trains-remain-operational</guid>
+      <description><![CDATA[A ransomware attack disrupted Keio Corporation’s hotel reservation and retail payment systems, but strict operational technology air‑gaps prevented impact on Tokyo’s train services. The incident highlights the effectiveness of physical isolation in protecting critical infrastructure from cyber extortion.]]></description>
+      <pubDate>Tue, 29 Sep 2026 20:55:01 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/japans-keio-ransomware-attack-air-gapped-railway-resilience">CyberNews AI</source>
+      <category>Ransomware</category>
     </item>
     <item>
       <title>FBI Warns ShinyHunters Members to Surrender After Dutch Arrest</title>
@@ -161,6 +170,24 @@
       <category>Policy</category>
     </item>
     <item>
+      <title>Cloudflare Expands Threat Signals to All Accounts</title>
+      <link>https://secubuzz.com/news/cloudflare-expands-threat-signals-to-all-accounts</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-expands-threat-signals-to-all-accounts</guid>
+      <description><![CDATA[Cloudflare now offers Threat Signals to every account, automatically parsing open-source threat reports, extracting structured indicators, and linking threat context to WAF rules via the Threat Events Platform. This enhances real-time threat visibility and simplifies rule creation for all users.]]></description>
+      <pubDate>Tue, 29 Sep 2026 13:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/threat-signals/">Cloudflare Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Cloudflare Introduces Application Profiles for Positive Security</title>
+      <link>https://secubuzz.com/news/cloudflare-introduces-application-profiles-for-positive-secu</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-introduces-application-profiles-for-positive-secu</guid>
+      <description><![CDATA[Cloudflare’s Application Profiles learn normal HTTP request patterns and flag deviations, adding a positive security layer. By reducing attack surface, the feature helps counter AI‑generated payloads, improving protection against evolving web threats for all customers.]]></description>
+      <pubDate>Tue, 29 Sep 2026 13:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/application-profiles/">Cloudflare Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
       <title>Cloudflare Adds Visibility Into Post-Quantum Encryption for Domains</title>
       <link>https://secubuzz.com/news/cloudflare-adds-visibility-into-post-quantum-encryption-for-</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-adds-visibility-into-post-quantum-encryption-for-</guid>
@@ -179,15 +206,6 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>Adaptive application security for the AI era: how Cloudflare connects code, traffic, and intelligence to stop attacks</title>
-      <link>https://secubuzz.com/news/adaptive-application-security-for-the-ai-era-how-cloudflare-</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/adaptive-application-security-for-the-ai-era-how-cloudflare-</guid>
-      <description><![CDATA[Cloudflare launches an adaptive security framework that links risk discovery, agent governance, runtime protection, and AI‑powered response into a continuous learning loop. The system aims to detect and mitigate threats across code, traffic, and intelligence layers, enhancing overall application protection.]]></description>
-      <pubDate>Tue, 29 Sep 2026 13:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/ai-era-framework/">Cloudflare Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
       <title>Meta gives small businesses an AI agent that knows their work</title>
       <link>https://secubuzz.com/news/meta-gives-small-businesses-an-ai-agent-that-knows-their-wor</link>
       <guid isPermaLink="true">https://secubuzz.com/news/meta-gives-small-businesses-an-ai-agent-that-knows-their-wor</guid>
@@ -204,6 +222,15 @@
       <pubDate>Tue, 29 Sep 2026 12:43:03 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/09/29/vega-ii-agentic-cyber-defense-platform/">Help Net Security</source>
       <category>Policy</category>
+    </item>
+    <item>
+      <title>Apple Products Vulnerability CVE-2026-86950 Added to CISA KEV Catalog</title>
+      <link>https://secubuzz.com/news/apple-products-vulnerability-cve-2026-86950-added-to-cisa-ke</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apple-products-vulnerability-cve-2026-86950-added-to-cisa-ke</guid>
+      <description><![CDATA[Apple products are impacted by CVE-2026-86950, an out-of-bounds write that can grant attackers full control of exposed assets. CISA has listed it as a known exploited vulnerability, urging federal agencies to prioritize rapid remediation under BOD 26-04. The flaw poses significant risks to federal enterprises and requires urgent patching.]]></description>
+      <pubDate>Tue, 29 Sep 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/alerts/2026/09/29/cisa-adds-one-known-exploited-vulnerability-catalog">CISA</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Viidure Dashcam Android App Suffers Critical Vulnerabilities Including CVE-2026-94204</title>
@@ -404,15 +431,6 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>Keio Railway Operator Hit by Ransomware Attack</title>
-      <link>https://secubuzz.com/news/keio-railway-operator-hit-by-ransomware-attack</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/keio-railway-operator-hit-by-ransomware-attack</guid>
-      <description><![CDATA[Keio Corporation, a major private railway operator in Japan, confirmed a ransomware attack over the weekend that disrupted some of its business systems. The incident impacted operational networks, but no ransom payment or data exfiltration details were disclosed.]]></description>
-      <pubDate>Mon, 28 Sep 2026 20:56:47 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/japans-keio-confirms-ransomware-attack-disrupted-business-systems/">BleepingComputer</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
       <title>Times Car Data Breach Compromises 6.6 Million User Accounts</title>
       <link>https://secubuzz.com/news/times-car-data-breach-compromises-6-6-million-user-accounts</link>
       <guid isPermaLink="true">https://secubuzz.com/news/times-car-data-breach-compromises-6-6-million-user-accounts</guid>
@@ -438,24 +456,6 @@
       <pubDate>Mon, 28 Sep 2026 19:30:00 GMT</pubDate>
       <source url="https://therecord.media/shinyhunters-cyberattacks-oracle-mandiant">The Record</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Supabase Misconfigurations Expose PII, Passwords, and Auth Tokens in 16,000 Databases</title>
-      <link>https://secubuzz.com/news/supabase-misconfigurations-expose-pii-passwords-and-auth-tok</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/supabase-misconfigurations-expose-pii-passwords-and-auth-tok</guid>
-      <description><![CDATA[Researchers discovered over 16,000 Supabase databases with misconfigured access controls, revealing readable tables containing personally identifiable information, passwords, and authentication tokens. The exposure allows attackers to harvest sensitive data from the databases, posing a significant privacy risk to affected users.]]></description>
-      <pubDate>Mon, 28 Sep 2026 18:50:59 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/misconfigured-supabase-apps-expose-data-in-over-16-000-databases/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>AI Agents Operate with Broad Privileges, Raising Insider Threat Concerns</title>
-      <link>https://secubuzz.com/news/ai-agents-operate-with-broad-privileges-raising-insider-thre</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-agents-operate-with-broad-privileges-raising-insider-thre</guid>
-      <description><![CDATA[Enterprises monitor human employees closely, but autonomous AI agents often run with extensive privileges that can become insider threats. The article highlights the need for auditing AI access controls to prevent misuse and potential data breaches.]]></description>
-      <pubDate>Mon, 28 Sep 2026 18:44:22 GMT</pubDate>
-      <source url="https://www.darkreading.com/vulnerabilities-threats/ai-agents-are-privileged-users-who-is-auditing-their-access">Dark Reading</source>
-      <category>Policy</category>
     </item>
   </channel>
 </rss>
