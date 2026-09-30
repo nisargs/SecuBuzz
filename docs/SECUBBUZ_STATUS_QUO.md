@@ -217,6 +217,9 @@ Please provide creative, high-impact suggestions across these 4 areas:
   - Scheduled for EAS `.aab` production build on **Thursday, Oct 1, 2026** (when Expo free build quota replenishes).
   - **Pre-Build Polish**: Update 'SecuRadar' header in `src/app/(tabs)/advisories.tsx` to 'SecuBuzz' before generating the `.aab` file.
   - Main Store Listing updated with refined description and refreshed screenshots on Sep 29, 2026.
+  - **Backend Hardening Roadmap ($0.00 Free Tier)**:
+    - Push Token API Rate Limiting (edge-level rate limiter to prevent spamming D1 tokens).
+    - Automated Cloudflare D1 database daily backup export via existing GitHub Actions cron.
 
 ### Production Access Questionnaire (Google Play Submission Copy)
 *(Tailored specifically for SecuBuzz to avoid generic template rejection)*
