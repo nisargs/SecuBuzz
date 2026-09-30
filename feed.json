@@ -1,5 +1,40 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/russian-state-hackers-use-new-redflick-technique-to-push-malware/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/russian-state-hackers-use-new-redflick-technique-to-push-malware/",
+    "title": "Russian State Hackers Deploy CosmicPulse Backdoor via RedFlick Technique",
+    "headline": "Russian State Hackers Deploy CosmicPulse Backdoor via RedFlick Technique",
+    "summary": "Russian state actor Star Blizzard has introduced a new malware installation method called RedFlick to deploy its CosmicPulse backdoor. The technique allows the actor to push malicious code onto targeted systems, potentially enabling persistent access and data exfiltration. No public patch or mitigation is currently available.",
+    "category": "NATION_STATE",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-09-30T20:34:01.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/russian-state-hackers-use-new-redflick-technique-to-push-malware/",
+    "additionalSources": [
+      {
+        "source": "Dark Reading",
+        "sourceUrl": "https://www.darkreading.com/threat-intelligence/russia-star-blizzard-apt-ditches-clickfix-widen-phishing-net"
+      },
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/russia-hackers-ukraine-blizzard"
+      }
+    ]
+  },
+  {
+    "id": "https://therecord.media/automakers-routinely-share-connected-car-data-third-parties",
+    "sourceUrl": "https://therecord.media/automakers-routinely-share-connected-car-data-third-parties",
+    "title": "Automakers Share Connected-Car Data with Third-Party Advertisers",
+    "headline": "Automakers Share Connected-Car Data with Third-Party Advertisers",
+    "summary": "A study shows that automakers routinely provide personally identifiable connected-car data to a network of large corporations involved in advertising. The data sharing exposes drivers to extensive tracking and profiling by third parties, raising privacy concerns about the use of vehicle telemetry for targeted marketing.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Record",
+    "publishedAt": "2026-09-30T20:32:00.000Z",
+    "url": "https://therecord.media/automakers-routinely-share-connected-car-data-third-parties",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/divd-says-zammad-zero-days-enabled-ai-driven-network-breach/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/divd-says-zammad-zero-days-enabled-ai-driven-network-breach/",
     "title": "Zero-Day Vulnerabilities in Zammad Enable Network Breach",
@@ -149,24 +184,6 @@
     ]
   },
   {
-    "id": "https://www.darkreading.com/threat-intelligence/russia-star-blizzard-apt-ditches-clickfix-widen-phishing-net",
-    "sourceUrl": "https://www.darkreading.com/threat-intelligence/russia-star-blizzard-apt-ditches-clickfix-widen-phishing-net",
-    "title": "Russia’s Star Blizzard Expands Phishing Tactics with RedFlick to Deploy CosmicPulse Backdoor",
-    "headline": "Russia’s Star Blizzard Expands Phishing Tactics with RedFlick to Deploy CosmicPulse Backdoor",
-    "summary": "The APT group Star Blizzard, linked to Russia, is using a new phishing method called RedFlick to target Ukrainian‑linked NGOs, think tanks, and journalists. The campaign delivers the CosmicPulse backdoor, enabling persistent access to victim systems.",
-    "category": "NATION_STATE",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "publishedAt": "2026-09-30T15:02:25.000Z",
-    "url": "https://www.darkreading.com/threat-intelligence/russia-star-blizzard-apt-ditches-clickfix-widen-phishing-net",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/russian-apt-star-blizzard-uses-redflick-infection-chain-in-recent-attacks/"
-      }
-    ]
-  },
-  {
     "id": "https://thehackernews.com/2026/09/attackers-abuse-chatgpt-custom-gpts-to.html",
     "sourceUrl": "https://thehackernews.com/2026/09/attackers-abuse-chatgpt-custom-gpts-to.html",
     "title": "ChatGPT Custom GPTs Used to Deliver Remote Access Trojan via ClickFix Lures",
@@ -299,6 +316,19 @@
     ]
   },
   {
+    "id": "https://www.bleepingcomputer.com/news/security/teamviewer-urges-users-to-patch-severe-flaws-as-soon-as-possible/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/teamviewer-urges-users-to-patch-severe-flaws-as-soon-as-possible/",
+    "title": "TeamViewer Urges Immediate Patch for High‑Severity Vulnerabilities",
+    "headline": "TeamViewer Urges Immediate Patch for High‑Severity Vulnerabilities",
+    "summary": "TeamViewer has warned users to patch a set of high‑severity flaws in its client and host software as soon as possible. The vulnerabilities could allow attackers to gain unauthorized access or execute code on affected systems. Users should download the latest updates from TeamViewer’s website to mitigate the risk.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-09-30T12:25:10.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/teamviewer-urges-users-to-patch-severe-flaws-as-soon-as-possible/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.securityweek.com/chrome-firefox-updates-patch-over-100-vulnerabilities/",
     "sourceUrl": "https://www.securityweek.com/chrome-firefox-updates-patch-over-100-vulnerabilities/",
     "title": "Chrome and Firefox Patch Over 100 Vulnerabilities, Including RCE Flaws",
@@ -310,24 +340,6 @@
     "publishedAt": "2026-09-30T12:16:52.000Z",
     "url": "https://www.securityweek.com/chrome-firefox-updates-patch-over-100-vulnerabilities/",
     "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/russia-hackers-ukraine-blizzard",
-    "sourceUrl": "https://therecord.media/russia-hackers-ukraine-blizzard",
-    "title": "Russian FSB-Linked Hackers Expand Phishing Campaigns Targeting Ukraine Supporters",
-    "headline": "Russian FSB-Linked Hackers Expand Phishing Campaigns Targeting Ukraine Supporters",
-    "summary": "Russian state‑backed group Star Blizzard has broadened its phishing operations this year, deploying a new technique that simplifies malware delivery to Ukraine supporters. The method eases infection by reducing user interaction, increasing the likelihood of successful compromise. No specific CVE cited.",
-    "category": "NATION_STATE",
-    "severity": "HIGH",
-    "source": "The Record",
-    "publishedAt": "2026-09-30T12:00:00.000Z",
-    "url": "https://therecord.media/russia-hackers-ukraine-blizzard",
-    "additionalSources": [
-      {
-        "source": "Microsoft Security",
-        "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/09/29/phishing-abuses-rmm-tools-persistent-access/"
-      }
-    ]
   },
   {
     "id": "https://thehackernews.com/2026/09/know-your-enemy-browser-based-attack.html",
@@ -361,6 +373,24 @@
     ]
   },
   {
+    "id": "https://thehackernews.com/2026/09/us-focused-csuite-phishing-steals.html",
+    "sourceUrl": "https://thehackernews.com/2026/09/us-focused-csuite-phishing-steals.html",
+    "title": "US‑Focused Phishing Campaign Steals Microsoft 365 Sessions and Deploys RMM Tools",
+    "headline": "US‑Focused Phishing Campaign Steals Microsoft 365 Sessions and Deploys RMM Tools",
+    "summary": "Researchers traced a phishing campaign targeting US organizations that stole Microsoft 365 session tokens and installed remote‑access tools. The attackers used the stolen sessions to gain broader account compromise and potential fraud. Organizations should monitor for unusual RMM tool activity and enforce MFA on Microsoft 365 accounts.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-09-30T10:45:00.000Z",
+    "url": "https://thehackernews.com/2026/09/us-focused-csuite-phishing-steals.html",
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/daemon-tools-hackers-needymantis-malware-dissected-by-microsoft/"
+      }
+    ]
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/09/30/openinfra-jfrog-artifactory-instance-compromised/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/openinfra-jfrog-artifactory-instance-compromised/",
     "title": "OpenInfra Europe’s JFrog Artifactory Compromised via CVE-2026-82329",
@@ -372,6 +402,24 @@
     "publishedAt": "2026-09-30T10:39:26.000Z",
     "url": "https://www.helpnetsecurity.com/2026/09/30/openinfra-jfrog-artifactory-instance-compromised/",
     "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/shinyhunters-defiant-after-fbi-calls-on-members-to-come-forward/",
+    "sourceUrl": "https://www.securityweek.com/shinyhunters-defiant-after-fbi-calls-on-members-to-come-forward/",
+    "title": "ShinyHunters Denies Publishing FBI Data After Arrest of Suspected Leader",
+    "headline": "ShinyHunters Denies Publishing FBI Data After Arrest of Suspected Leader",
+    "summary": "ShinyHunters, a hacker collective, has denied publishing data allegedly stolen from the FBI after a suspected leader’s arrest. The group claims it never intended to release the information, despite FBI calls for members to come forward. The incident highlights ongoing tensions between the collective and law enforcement.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-09-30T10:20:02.000Z",
+    "url": "https://www.securityweek.com/shinyhunters-defiant-after-fbi-calls-on-members-to-come-forward/",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-tells-shinyhunters-members-to-turn-themselves-in-after-recent-arrest/"
+      }
+    ]
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/09/30/air-force-members-sentenced-bec-phishing/",
@@ -584,28 +632,6 @@
     "publishedAt": "2026-09-29T20:35:00.000Z",
     "url": "https://therecord.media/controversial-spyware-firm-paragon-to-go-public",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/fbi-tells-shinyhunters-members-to-turn-themselves-in-after-recent-arrest/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-tells-shinyhunters-members-to-turn-themselves-in-after-recent-arrest/",
-    "title": "FBI Warns ShinyHunters Members to Surrender After Dutch Arrest",
-    "headline": "FBI Warns ShinyHunters Members to Surrender After Dutch Arrest",
-    "summary": "The FBI has warned members of the ShinyHunters extortion group to surrender after Dutch police arrested a man described as one of the group's alleged leaders. The warning follows the arrest, urging group members to turn themselves in to avoid further legal action.",
-    "category": "RANSOMWARE",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-09-29T20:09:55.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/fbi-tells-shinyhunters-members-to-turn-themselves-in-after-recent-arrest/",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/dutch-police-arrest-convicted-hacker-in-shinyhunters-investigation/"
-      },
-      {
-        "source": "Check Point Research",
-        "sourceUrl": "https://research.checkpoint.com/2026/28th-september-threat-intelligence-report/"
-      }
-    ]
   },
   {
     "id": "https://therecord.media/openai-apologizes-australia-medicare-breach",
@@ -1027,28 +1053,6 @@
       {
         "source": "Cloudflare Security",
         "sourceUrl": "https://blog.cloudflare.com/cloudflare-cf-cli-launch/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.securityweek.com/daemon-tools-hackers-needymantis-malware-dissected-by-microsoft/",
-    "sourceUrl": "https://www.securityweek.com/daemon-tools-hackers-needymantis-malware-dissected-by-microsoft/",
-    "title": "Microsoft Dissects NeedyMantis Malware from Daemon Tools Hackers",
-    "headline": "Microsoft Dissects NeedyMantis Malware from Daemon Tools Hackers",
-    "summary": "Microsoft analyzed NeedyMantis, a modular malware framework used by Daemon Tools hackers. The study details its custom executable format and persistence mechanisms, providing insights into its long‑term foothold capabilities. The findings help defenders recognize and mitigate this threat.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-09-29T09:46:13.000Z",
-    "url": "https://www.securityweek.com/daemon-tools-hackers-needymantis-malware-dissected-by-microsoft/",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/09/hackers-use-needymantis-to-maintain.html"
-      },
-      {
-        "source": "Microsoft Security",
-        "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/09/28/needymantis-unpacking-a-post-compromise-malware-family-used-in-targeted-operations/"
       }
     ]
   },

@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Sep 2026 20:20:08 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2026 20:52:02 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Russian State Hackers Deploy CosmicPulse Backdoor via RedFlick Technique</title>
+      <link>https://secubuzz.com/news/russian-state-hackers-deploy-cosmicpulse-backdoor-via-redfli</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/russian-state-hackers-deploy-cosmicpulse-backdoor-via-redfli</guid>
+      <description><![CDATA[Russian state actor Star Blizzard has introduced a new malware installation method called RedFlick to deploy its CosmicPulse backdoor. The technique allows the actor to push malicious code onto targeted systems, potentially enabling persistent access and data exfiltration. No public patch or mitigation is currently available.]]></description>
+      <pubDate>Wed, 30 Sep 2026 20:34:01 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/russian-state-hackers-use-new-redflick-technique-to-push-malware/">BleepingComputer</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Automakers Share Connected-Car Data with Third-Party Advertisers</title>
+      <link>https://secubuzz.com/news/automakers-share-connected-car-data-with-third-party-adverti</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/automakers-share-connected-car-data-with-third-party-adverti</guid>
+      <description><![CDATA[A study shows that automakers routinely provide personally identifiable connected-car data to a network of large corporations involved in advertising. The data sharing exposes drivers to extensive tracking and profiling by third parties, raising privacy concerns about the use of vehicle telemetry for targeted marketing.]]></description>
+      <pubDate>Wed, 30 Sep 2026 20:32:00 GMT</pubDate>
+      <source url="https://therecord.media/automakers-routinely-share-connected-car-data-third-parties">The Record</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>Zero-Day Vulnerabilities in Zammad Enable Network Breach</title>
       <link>https://secubuzz.com/news/zero-day-vulnerabilities-in-zammad-enable-network-breach</link>
@@ -98,15 +116,6 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>Russia’s Star Blizzard Expands Phishing Tactics with RedFlick to Deploy CosmicPulse Backdoor</title>
-      <link>https://secubuzz.com/news/russia-s-star-blizzard-expands-phishing-tactics-with-redflic</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/russia-s-star-blizzard-expands-phishing-tactics-with-redflic</guid>
-      <description><![CDATA[The APT group Star Blizzard, linked to Russia, is using a new phishing method called RedFlick to target Ukrainian‑linked NGOs, think tanks, and journalists. The campaign delivers the CosmicPulse backdoor, enabling persistent access to victim systems.]]></description>
-      <pubDate>Wed, 30 Sep 2026 15:02:25 GMT</pubDate>
-      <source url="https://www.darkreading.com/threat-intelligence/russia-star-blizzard-apt-ditches-clickfix-widen-phishing-net">Dark Reading</source>
-      <category>Malware</category>
-    </item>
-    <item>
       <title>ChatGPT Custom GPTs Used to Deliver Remote Access Trojan via ClickFix Lures</title>
       <link>https://secubuzz.com/news/chatgpt-custom-gpts-used-to-deliver-remote-access-trojan-via</link>
       <guid isPermaLink="true">https://secubuzz.com/news/chatgpt-custom-gpts-used-to-deliver-remote-access-trojan-via</guid>
@@ -179,6 +188,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>TeamViewer Urges Immediate Patch for High‑Severity Vulnerabilities</title>
+      <link>https://secubuzz.com/news/teamviewer-urges-immediate-patch-for-high-severity-vulnerabi</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/teamviewer-urges-immediate-patch-for-high-severity-vulnerabi</guid>
+      <description><![CDATA[TeamViewer has warned users to patch a set of high‑severity flaws in its client and host software as soon as possible. The vulnerabilities could allow attackers to gain unauthorized access or execute code on affected systems. Users should download the latest updates from TeamViewer’s website to mitigate the risk.]]></description>
+      <pubDate>Wed, 30 Sep 2026 12:25:10 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/teamviewer-urges-users-to-patch-severe-flaws-as-soon-as-possible/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Chrome and Firefox Patch Over 100 Vulnerabilities, Including RCE Flaws</title>
       <link>https://secubuzz.com/news/chrome-and-firefox-patch-over-100-vulnerabilities-including-</link>
       <guid isPermaLink="true">https://secubuzz.com/news/chrome-and-firefox-patch-over-100-vulnerabilities-including-</guid>
@@ -186,15 +204,6 @@
       <pubDate>Wed, 30 Sep 2026 12:16:52 GMT</pubDate>
       <source url="https://www.securityweek.com/chrome-firefox-updates-patch-over-100-vulnerabilities/">SecurityWeek</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Russian FSB-Linked Hackers Expand Phishing Campaigns Targeting Ukraine Supporters</title>
-      <link>https://secubuzz.com/news/russian-fsb-linked-hackers-expand-phishing-campaigns-targeti</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/russian-fsb-linked-hackers-expand-phishing-campaigns-targeti</guid>
-      <description><![CDATA[Russian state‑backed group Star Blizzard has broadened its phishing operations this year, deploying a new technique that simplifies malware delivery to Ukraine supporters. The method eases infection by reducing user interaction, increasing the likelihood of successful compromise. No specific CVE cited.]]></description>
-      <pubDate>Wed, 30 Sep 2026 12:00:00 GMT</pubDate>
-      <source url="https://therecord.media/russia-hackers-ukraine-blizzard">The Record</source>
-      <category>Malware</category>
     </item>
     <item>
       <title>Browser-Based Attack Techniques Dominating 2026 Threat Landscape</title>
@@ -215,6 +224,15 @@
       <category>Cloud</category>
     </item>
     <item>
+      <title>US‑Focused Phishing Campaign Steals Microsoft 365 Sessions and Deploys RMM Tools</title>
+      <link>https://secubuzz.com/news/us-focused-phishing-campaign-steals-microsoft-365-sessions-a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/us-focused-phishing-campaign-steals-microsoft-365-sessions-a</guid>
+      <description><![CDATA[Researchers traced a phishing campaign targeting US organizations that stole Microsoft 365 session tokens and installed remote‑access tools. The attackers used the stolen sessions to gain broader account compromise and potential fraud. Organizations should monitor for unusual RMM tool activity and enforce MFA on Microsoft 365 accounts.]]></description>
+      <pubDate>Wed, 30 Sep 2026 10:45:00 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/09/us-focused-csuite-phishing-steals.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>OpenInfra Europe’s JFrog Artifactory Compromised via CVE-2026-82329</title>
       <link>https://secubuzz.com/news/openinfra-europe-s-jfrog-artifactory-compromised-via-cve-202</link>
       <guid isPermaLink="true">https://secubuzz.com/news/openinfra-europe-s-jfrog-artifactory-compromised-via-cve-202</guid>
@@ -222,6 +240,15 @@
       <pubDate>Wed, 30 Sep 2026 10:39:26 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/09/30/openinfra-jfrog-artifactory-instance-compromised/">Help Net Security</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>ShinyHunters Denies Publishing FBI Data After Arrest of Suspected Leader</title>
+      <link>https://secubuzz.com/news/shinyhunters-denies-publishing-fbi-data-after-arrest-of-susp</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/shinyhunters-denies-publishing-fbi-data-after-arrest-of-susp</guid>
+      <description><![CDATA[ShinyHunters, a hacker collective, has denied publishing data allegedly stolen from the FBI after a suspected leader’s arrest. The group claims it never intended to release the information, despite FBI calls for members to come forward. The incident highlights ongoing tensions between the collective and law enforcement.]]></description>
+      <pubDate>Wed, 30 Sep 2026 10:20:02 GMT</pubDate>
+      <source url="https://www.securityweek.com/shinyhunters-defiant-after-fbi-calls-on-members-to-come-forward/">SecurityWeek</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>Former US Air Force Members Sentenced for Million-Dollar Business Email Compromise Scheme</title>
@@ -350,15 +377,6 @@
       <category>Malware</category>
     </item>
     <item>
-      <title>FBI Warns ShinyHunters Members to Surrender After Dutch Arrest</title>
-      <link>https://secubuzz.com/news/fbi-warns-shinyhunters-members-to-surrender-after-dutch-arre</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fbi-warns-shinyhunters-members-to-surrender-after-dutch-arre</guid>
-      <description><![CDATA[The FBI has warned members of the ShinyHunters extortion group to surrender after Dutch police arrested a man described as one of the group's alleged leaders. The warning follows the arrest, urging group members to turn themselves in to avoid further legal action.]]></description>
-      <pubDate>Tue, 29 Sep 2026 20:09:55 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/fbi-tells-shinyhunters-members-to-turn-themselves-in-after-recent-arrest/">BleepingComputer</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
       <title>OpenAI Agents Breach Australian Government Websites</title>
       <link>https://secubuzz.com/news/openai-agents-breach-australian-government-websites</link>
       <guid isPermaLink="true">https://secubuzz.com/news/openai-agents-breach-australian-government-websites</guid>
@@ -438,24 +456,6 @@
       <pubDate>Tue, 29 Sep 2026 13:40:47 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/09/29/postman-fabric-gateway/">Help Net Security</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>IETF Introduces Transcript Authentication to Block Quantum Downgrade Attacks on IPsec</title>
-      <link>https://secubuzz.com/news/ietf-introduces-transcript-authentication-to-block-quantum-d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ietf-introduces-transcript-authentication-to-block-quantum-d</guid>
-      <description><![CDATA[Researchers identified a protocol flaw that allows quantum attackers to downgrade post‑quantum IPsec tunnels to classical cryptography. The IETF has adopted a transcript authentication extension to prevent such quantum downgrade attacks, strengthening IPsec’s resilience against future quantum threats.]]></description>
-      <pubDate>Tue, 29 Sep 2026 13:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/ipsec-downgrade-protection/">Cloudflare Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cloudflare Expands Threat Signals to All Accounts</title>
-      <link>https://secubuzz.com/news/cloudflare-expands-threat-signals-to-all-accounts</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-expands-threat-signals-to-all-accounts</guid>
-      <description><![CDATA[Cloudflare now offers Threat Signals to every account, automatically parsing open-source threat reports, extracting structured indicators, and linking threat context to WAF rules via the Threat Events Platform. This enhances real-time threat visibility and simplifies rule creation for all users.]]></description>
-      <pubDate>Tue, 29 Sep 2026 13:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/threat-signals/">Cloudflare Security</source>
-      <category>Cloud</category>
     </item>
   </channel>
 </rss>
