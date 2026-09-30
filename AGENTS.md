@@ -51,4 +51,12 @@
   - **No UGC / Social Feeds:** Reject open comments, likes, or user-generated text. Preserves sober, no-noise positioning and avoids legal moderation liability. If community signal is added, keep it strictly to anonymous 1-tap poll metrics (e.g., *"Are you affected? Yes 30% / No 70%"*).
   - **No Full-Text Scraping for IOCs:** Do not scrape full publisher articles to extract IPs/hashes (copyright risk). Extract structured IOCs only from designated open threat feeds (ThreatFox, CISA KEV) when needed.
 
+## 8. Go-To-Market & Organic Distribution Playbook
+- Full marketing strategy and ready-to-use post templates documented in `docs/MARKETING_PLAYBOOK.md`.
+- Key channels to trigger upon Google Play production approval:
+  1. **Reddit:** Developer story in `r/cybersecurity` and `r/sysadmin` (focus on zero fluff, 60 words, CISA KEV, $0 cost, zero tracking).
+  2. **Hacker News:** `Show HN` highlighting technical minimalism, Cloudflare edge workers, and privacy.
+  3. **LinkedIn:** Daily morning 60-word threat triage posts targeting CISOs & SOC analysts.
+  4. **Substack:** Weekly Friday "5-Minute Zero-Day Digest" linking back to the app.
+
 
