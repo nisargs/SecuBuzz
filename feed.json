@@ -1,5 +1,119 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/divd-says-zammad-zero-days-enabled-ai-driven-network-breach/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/divd-says-zammad-zero-days-enabled-ai-driven-network-breach/",
+    "title": "Zero-Day Vulnerabilities in Zammad Enable Network Breach",
+    "headline": "Zero-Day Vulnerabilities in Zammad Enable Network Breach",
+    "summary": "The Dutch Institute for Vulnerability Disclosure reported that a chain of two zero-day flaws in the open-source Zammad ticketing system allowed attackers to breach its network. The exploit leveraged undisclosed vulnerabilities to gain unauthorized access, compromising internal systems. No public fix is available yet, and the issue remains unpatched.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-09-30T19:49:15.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/divd-says-zammad-zero-days-enabled-ai-driven-network-breach/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://therecord.media/cyber-command-suicide-deaths-pentagon-memo",
+    "sourceUrl": "https://therecord.media/cyber-command-suicide-deaths-pentagon-memo",
+    "title": "Pentagon Issues Cyber Command Notice Amid Suicide Death Reports",
+    "headline": "Pentagon Issues Cyber Command Notice Amid Suicide Death Reports",
+    "summary": "Following reports of multiple suicide deaths, the Pentagon’s assistant secretary for cyber policy issued a memo demanding specific actions from U.S. Cyber Command leadership. The notice highlights concerns over cyber-related incidents and calls for enhanced oversight and response measures within the command.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Record",
+    "publishedAt": "2026-09-30T19:35:00.000Z",
+    "url": "https://therecord.media/cyber-command-suicide-deaths-pentagon-memo",
+    "additionalSources": []
+  },
+  {
+    "id": "https://therecord.media/google-vulnerabilities-cyberattacks-ai",
+    "sourceUrl": "https://therecord.media/google-vulnerabilities-cyberattacks-ai",
+    "title": "Google Reports 10,000 Monthly Vulnerability Disclosures, AI Accelerates Exploitation",
+    "headline": "Google Reports 10,000 Monthly Vulnerability Disclosures, AI Accelerates Exploitation",
+    "summary": "Google researchers warned that vulnerability disclosures have doubled to over 10,000 per month, with artificial intelligence driving the increase. The surge highlights growing exploitation activity, though no specific vulnerabilities or exploits are named. The trend underscores the need for continuous patching and monitoring.",
+    "category": "VULNERABILITY",
+    "severity": "LOW",
+    "source": "The Record",
+    "publishedAt": "2026-09-30T19:00:00.000Z",
+    "url": "https://therecord.media/google-vulnerabilities-cyberattacks-ai",
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/google-ai-is-changing-the-pace-and-profile-of-vulnerability-discovery/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.darkreading.com/cybersecurity-careers/ai-reshapes-soc-career-ladder",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-careers/ai-reshapes-soc-career-ladder",
+    "title": "AI Boosts SOC Satisfaction to 91% While Entry Barriers Rise",
+    "headline": "AI Boosts SOC Satisfaction to 91% While Entry Barriers Rise",
+    "summary": "Swimlane research shows that AI-driven detection and response has raised overall SOC satisfaction to 91%. However, nearly half of security professionals find entry into the field harder, and one in four say AI limits skill development. The study highlights a paradox in the evolving security workforce.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-09-30T18:56:56.000Z",
+    "url": "https://www.darkreading.com/cybersecurity-careers/ai-reshapes-soc-career-ladder",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/over-543-000-valid-credentials-exposed-in-public-github-repositories/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/over-543-000-valid-credentials-exposed-in-public-github-repositories/",
+    "title": "Over 543,000 Valid Credentials Exposed in Public GitHub Repositories",
+    "headline": "Over 543,000 Valid Credentials Exposed in Public GitHub Repositories",
+    "summary": "More than 543,000 active credentials were discovered in public GitHub repositories, remaining valid in July. The leak included usernames and passwords that could be used to access corporate and personal accounts. No immediate patch is required, but affected users should change passwords and enable multi‑factor authentication.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-09-30T18:08:34.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/over-543-000-valid-credentials-exposed-in-public-github-repositories/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html",
+    "sourceUrl": "https://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html",
+    "title": "Attackers Exploit CVE-2026-73570 to Deploy Web Shells and Harvest Zimbra Secrets",
+    "headline": "Attackers Exploit CVE-2026-73570 to Deploy Web Shells and Harvest Zimbra Secrets",
+    "summary": "Threat actors weaponized CVE-2026-73570, an unauthenticated OS command‑injection flaw in Zimbra Collaboration Suite, to deploy web shells and steal authentication secrets. The vulnerability allows remote code execution via SNMP, enabling attackers to access mailbox data. Microsoft has issued a patch; users should update Zimbra immediately.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-09-30T16:46:29.000Z",
+    "url": "https://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html",
+    "additionalSources": [
+      {
+        "source": "Microsoft Security",
+        "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/09/30/unauthenticated-command-injection-on-internet-facing-mail-servers-tracking-cve-2026-73570/"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/09/attackers-abuse-msp360-to-deploy.html",
+    "sourceUrl": "https://thehackernews.com/2026/09/attackers-abuse-msp360-to-deploy.html",
+    "title": "Phishers Use MSP360 to Deploy Remote Management Tool",
+    "headline": "Phishers Use MSP360 to Deploy Remote Management Tool",
+    "summary": "Attackers distributed a legitimate MSP360 installer disguised as meeting invites and software updates. Once run, the installer granted remote management access via ScreenConnect, enabling attackers to control victim systems. The campaign relies on social engineering and legitimate software to bypass defenses.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-09-30T16:32:59.000Z",
+    "url": "https://thehackernews.com/2026/09/attackers-abuse-msp360-to-deploy.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.wiz.io/blog/wizos-helm-charts",
+    "sourceUrl": "https://www.wiz.io/blog/wizos-helm-charts",
+    "title": "WizOS Helm Charts Offer Hardened Kubernetes Deployments",
+    "headline": "WizOS Helm Charts Offer Hardened Kubernetes Deployments",
+    "summary": "WizOS introduces signed, CVE‑scanned Helm charts that harden Kubernetes supply chains. The charts eliminate hidden CI/CD risks and unmaintained dependencies, providing a secure, seamless deployment path for Kubernetes environments.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Wiz Research",
+    "publishedAt": "2026-09-30T15:52:31.000Z",
+    "url": "https://www.wiz.io/blog/wizos-helm-charts",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-pre-auth-rce-flaw-in-mikrotik-routeros/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-pre-auth-rce-flaw-in-mikrotik-routeros/",
     "title": "CISA Warns of Critical Pre-Auth RCE in MikroTik RouterOS",
@@ -27,6 +141,10 @@
       {
         "source": "BleepingComputer",
         "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-new-sd-wan-authentication-bypass-zero-day-exploited-in-attacks/"
+      },
+      {
+        "source": "CISA",
+        "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/09/30/cisa-adds-one-known-exploited-vulnerability-catalog"
       }
     ]
   },
@@ -41,7 +159,12 @@
     "source": "Dark Reading",
     "publishedAt": "2026-09-30T15:02:25.000Z",
     "url": "https://www.darkreading.com/threat-intelligence/russia-star-blizzard-apt-ditches-clickfix-widen-phishing-net",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/russian-apt-star-blizzard-uses-redflick-infection-chain-in-recent-attacks/"
+      }
+    ]
   },
   {
     "id": "https://thehackernews.com/2026/09/attackers-abuse-chatgpt-custom-gpts-to.html",
@@ -62,19 +185,6 @@
     ]
   },
   {
-    "id": "https://www.securityweek.com/google-ai-is-changing-the-pace-and-profile-of-vulnerability-discovery/",
-    "sourceUrl": "https://www.securityweek.com/google-ai-is-changing-the-pace-and-profile-of-vulnerability-discovery/",
-    "title": "Google Reports AI Accelerates Remote Code Vulnerability Discovery",
-    "headline": "Google Reports AI Accelerates Remote Code Vulnerability Discovery",
-    "summary": "Google’s analysis indicates that AI‑discovered vulnerabilities are more likely to enable remote code execution, highlighting a shift in the pace and profile of vulnerability discovery. No specific CVE or exploit details are provided.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-09-30T14:05:58.000Z",
-    "url": "https://www.securityweek.com/google-ai-is-changing-the-pace-and-profile-of-vulnerability-discovery/",
-    "additionalSources": []
-  },
-  {
     "id": "https://www.bleepingcomputer.com/news/security/ais-third-wave-coworkers-break-the-security-model-that-worked-for-agents/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/ais-third-wave-coworkers-break-the-security-model-that-worked-for-agents/",
     "title": "AI Co‑workers Threaten Existing Security Models",
@@ -86,24 +196,6 @@
     "publishedAt": "2026-09-30T14:01:11.000Z",
     "url": "https://www.bleepingcomputer.com/news/security/ais-third-wave-coworkers-break-the-security-model-that-worked-for-agents/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.microsoft.com/en-us/security/blog/2026/09/30/unauthenticated-command-injection-on-internet-facing-mail-servers-tracking-cve-2026-73570/",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/09/30/unauthenticated-command-injection-on-internet-facing-mail-servers-tracking-cve-2026-73570/",
-    "title": "Unauthenticated Command Injection on Zimbra Mail Servers Exploited via CVE-2026-73570",
-    "headline": "Unauthenticated Command Injection on Zimbra Mail Servers Exploited via CVE-2026-73570",
-    "summary": "Microsoft Threat Intelligence reports that CVE-2026-73570 allows unauthenticated command injection on internet-facing Zimbra mail servers. Attackers can execute arbitrary commands, potentially compromising server integrity. Detection involves monitoring unusual outbound traffic, and mitigation includes applying the latest security patch and disabling remote command execution features.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft Security",
-    "publishedAt": "2026-09-30T14:00:00.000Z",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/30/unauthenticated-command-injection-on-internet-facing-mail-servers-tracking-cve-2026-73570/",
-    "additionalSources": [
-      {
-        "source": "CISA",
-        "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-05"
-      }
-    ]
   },
   {
     "id": "https://therecord.media/ukraine-ssscip-mobile-malware-warning-ios-android",
@@ -251,6 +343,24 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.securityweek.com/anthropic-flags-ai-agent-liability-risks-as-openai-faces-hacking-lawsuit/",
+    "sourceUrl": "https://www.securityweek.com/anthropic-flags-ai-agent-liability-risks-as-openai-faces-hacking-lawsuit/",
+    "title": "Anthropic Highlights AI Agent Liability Amid OpenAI Lawsuit",
+    "headline": "Anthropic Highlights AI Agent Liability Amid OpenAI Lawsuit",
+    "summary": "Anthropic has warned about liability risks for autonomous AI agents as OpenAI faces a hacking lawsuit. The discussion focuses on legal accountability for AI actions, reflecting growing concerns over AI‑driven attacks and their regulatory implications.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-09-30T11:19:00.000Z",
+    "url": "https://www.securityweek.com/anthropic-flags-ai-agent-liability-risks-as-openai-faces-hacking-lawsuit/",
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/openai-ceo-announces-new-ai-agent-and-avoids-mention-of-security-concerns-at-developer-conference/"
+      }
+    ]
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/09/30/openinfra-jfrog-artifactory-instance-compromised/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/openinfra-jfrog-artifactory-instance-compromised/",
     "title": "OpenInfra Europe’s JFrog Artifactory Compromised via CVE-2026-82329",
@@ -329,6 +439,19 @@
         "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/vega-ii-agentic-cyber-defense-platform/"
       }
     ]
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/09/30/claude-compliance-api-integrations/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/claude-compliance-api-integrations/",
+    "title": "Security Tools Now Scan Claude Enterprise Chats for Sensitive Data",
+    "headline": "Security Tools Now Scan Claude Enterprise Chats for Sensitive Data",
+    "summary": "Over 100 security and compliance vendors now integrate with the Claude Compliance API, allowing companies to monitor Claude Enterprise activity. The feed captures conversations, uploaded files, projects, cowork and code sessions, prompts, responses, and tool calls, helping detect and protect sensitive information.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-09-30T06:31:58.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/09/30/claude-compliance-api-integrations/",
+    "additionalSources": []
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/09/30/owasp-noir-open-source-static-analysis-tool/",
@@ -437,6 +560,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.sophos.com/en-us/blog/terminalfix-and-lorem-ipsum-loader-enable-covert-tunneling",
+    "sourceUrl": "https://www.sophos.com/en-us/blog/terminalfix-and-lorem-ipsum-loader-enable-covert-tunneling",
+    "title": "TerminalFix and Lorem Ipsum Loader Enable Covert Tunneling",
+    "headline": "TerminalFix and Lorem Ipsum Loader Enable Covert Tunneling",
+    "summary": "The malware family TerminalFix and its component Lorem Ipsum Loader have been observed creating covert tunnels to exfiltrate data. The activity is part of a broader campaign that previously used a different delivery mechanism, indicating ongoing threat actor operations.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "Sophos Threat Research",
+    "publishedAt": "2026-09-30T00:00:00.000Z",
+    "url": "https://www.sophos.com/en-us/blog/terminalfix-and-lorem-ipsum-loader-enable-covert-tunneling",
+    "additionalSources": []
+  },
+  {
     "id": "https://therecord.media/controversial-spyware-firm-paragon-to-go-public",
     "sourceUrl": "https://therecord.media/controversial-spyware-firm-paragon-to-go-public",
     "title": "Paragon Spyware Firm Plans Nasdaq IPO",
@@ -447,19 +583,6 @@
     "source": "The Record",
     "publishedAt": "2026-09-29T20:35:00.000Z",
     "url": "https://therecord.media/controversial-spyware-firm-paragon-to-go-public",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/openai-ceo-announces-new-ai-agent-and-avoids-mention-of-security-concerns-at-developer-conference/",
-    "sourceUrl": "https://www.securityweek.com/openai-ceo-announces-new-ai-agent-and-avoids-mention-of-security-concerns-at-developer-conference/",
-    "title": "OpenAI CEO Announces New AI Agent Dots at Developer Conference",
-    "headline": "OpenAI CEO Announces New AI Agent Dots at Developer Conference",
-    "summary": "During a developer conference, OpenAI CEO Sam Altman unveiled new AI agents called Dots, highlighting product updates while sidestepping any discussion of security concerns. The announcement focused on feature enhancements and future roadmap, with no mention of potential vulnerabilities or safeguards.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-09-29T20:14:44.000Z",
-    "url": "https://www.securityweek.com/openai-ceo-announces-new-ai-agent-and-avoids-mention-of-security-concerns-at-developer-conference/",
     "additionalSources": []
   },
   {

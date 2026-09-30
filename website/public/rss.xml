@@ -5,8 +5,80 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Sep 2026 16:20:15 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2026 20:20:08 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Zero-Day Vulnerabilities in Zammad Enable Network Breach</title>
+      <link>https://secubuzz.com/news/zero-day-vulnerabilities-in-zammad-enable-network-breach</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/zero-day-vulnerabilities-in-zammad-enable-network-breach</guid>
+      <description><![CDATA[The Dutch Institute for Vulnerability Disclosure reported that a chain of two zero-day flaws in the open-source Zammad ticketing system allowed attackers to breach its network. The exploit leveraged undisclosed vulnerabilities to gain unauthorized access, compromising internal systems. No public fix is available yet, and the issue remains unpatched.]]></description>
+      <pubDate>Wed, 30 Sep 2026 19:49:15 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/divd-says-zammad-zero-days-enabled-ai-driven-network-breach/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Pentagon Issues Cyber Command Notice Amid Suicide Death Reports</title>
+      <link>https://secubuzz.com/news/pentagon-issues-cyber-command-notice-amid-suicide-death-repo</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/pentagon-issues-cyber-command-notice-amid-suicide-death-repo</guid>
+      <description><![CDATA[Following reports of multiple suicide deaths, the Pentagon’s assistant secretary for cyber policy issued a memo demanding specific actions from U.S. Cyber Command leadership. The notice highlights concerns over cyber-related incidents and calls for enhanced oversight and response measures within the command.]]></description>
+      <pubDate>Wed, 30 Sep 2026 19:35:00 GMT</pubDate>
+      <source url="https://therecord.media/cyber-command-suicide-deaths-pentagon-memo">The Record</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Google Reports 10,000 Monthly Vulnerability Disclosures, AI Accelerates Exploitation</title>
+      <link>https://secubuzz.com/news/google-reports-10-000-monthly-vulnerability-disclosures-ai-a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-reports-10-000-monthly-vulnerability-disclosures-ai-a</guid>
+      <description><![CDATA[Google researchers warned that vulnerability disclosures have doubled to over 10,000 per month, with artificial intelligence driving the increase. The surge highlights growing exploitation activity, though no specific vulnerabilities or exploits are named. The trend underscores the need for continuous patching and monitoring.]]></description>
+      <pubDate>Wed, 30 Sep 2026 19:00:00 GMT</pubDate>
+      <source url="https://therecord.media/google-vulnerabilities-cyberattacks-ai">The Record</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>AI Boosts SOC Satisfaction to 91% While Entry Barriers Rise</title>
+      <link>https://secubuzz.com/news/ai-boosts-soc-satisfaction-to-91-while-entry-barriers-rise</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-boosts-soc-satisfaction-to-91-while-entry-barriers-rise</guid>
+      <description><![CDATA[Swimlane research shows that AI-driven detection and response has raised overall SOC satisfaction to 91%. However, nearly half of security professionals find entry into the field harder, and one in four say AI limits skill development. The study highlights a paradox in the evolving security workforce.]]></description>
+      <pubDate>Wed, 30 Sep 2026 18:56:56 GMT</pubDate>
+      <source url="https://www.darkreading.com/cybersecurity-careers/ai-reshapes-soc-career-ladder">Dark Reading</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Over 543,000 Valid Credentials Exposed in Public GitHub Repositories</title>
+      <link>https://secubuzz.com/news/over-543-000-valid-credentials-exposed-in-public-github-repo</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/over-543-000-valid-credentials-exposed-in-public-github-repo</guid>
+      <description><![CDATA[More than 543,000 active credentials were discovered in public GitHub repositories, remaining valid in July. The leak included usernames and passwords that could be used to access corporate and personal accounts. No immediate patch is required, but affected users should change passwords and enable multi‑factor authentication.]]></description>
+      <pubDate>Wed, 30 Sep 2026 18:08:34 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/over-543-000-valid-credentials-exposed-in-public-github-repositories/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Attackers Exploit CVE-2026-73570 to Deploy Web Shells and Harvest Zimbra Secrets</title>
+      <link>https://secubuzz.com/news/attackers-exploit-cve-2026-73570-to-deploy-web-shells-and-ha</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/attackers-exploit-cve-2026-73570-to-deploy-web-shells-and-ha</guid>
+      <description><![CDATA[Threat actors weaponized CVE-2026-73570, an unauthenticated OS command‑injection flaw in Zimbra Collaboration Suite, to deploy web shells and steal authentication secrets. The vulnerability allows remote code execution via SNMP, enabling attackers to access mailbox data. Microsoft has issued a patch; users should update Zimbra immediately.]]></description>
+      <pubDate>Wed, 30 Sep 2026 16:46:29 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Phishers Use MSP360 to Deploy Remote Management Tool</title>
+      <link>https://secubuzz.com/news/phishers-use-msp360-to-deploy-remote-management-tool</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/phishers-use-msp360-to-deploy-remote-management-tool</guid>
+      <description><![CDATA[Attackers distributed a legitimate MSP360 installer disguised as meeting invites and software updates. Once run, the installer granted remote management access via ScreenConnect, enabling attackers to control victim systems. The campaign relies on social engineering and legitimate software to bypass defenses.]]></description>
+      <pubDate>Wed, 30 Sep 2026 16:32:59 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/09/attackers-abuse-msp360-to-deploy.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>WizOS Helm Charts Offer Hardened Kubernetes Deployments</title>
+      <link>https://secubuzz.com/news/wizos-helm-charts-offer-hardened-kubernetes-deployments</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/wizos-helm-charts-offer-hardened-kubernetes-deployments</guid>
+      <description><![CDATA[WizOS introduces signed, CVE‑scanned Helm charts that harden Kubernetes supply chains. The charts eliminate hidden CI/CD risks and unmaintained dependencies, providing a secure, seamless deployment path for Kubernetes environments.]]></description>
+      <pubDate>Wed, 30 Sep 2026 15:52:31 GMT</pubDate>
+      <source url="https://www.wiz.io/blog/wizos-helm-charts">Wiz Research</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>CISA Warns of Critical Pre-Auth RCE in MikroTik RouterOS</title>
       <link>https://secubuzz.com/news/cisa-warns-of-critical-pre-auth-rce-in-mikrotik-routeros</link>
@@ -44,30 +116,12 @@
       <category>Malware</category>
     </item>
     <item>
-      <title>Google Reports AI Accelerates Remote Code Vulnerability Discovery</title>
-      <link>https://secubuzz.com/news/google-reports-ai-accelerates-remote-code-vulnerability-disc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-reports-ai-accelerates-remote-code-vulnerability-disc</guid>
-      <description><![CDATA[Google’s analysis indicates that AI‑discovered vulnerabilities are more likely to enable remote code execution, highlighting a shift in the pace and profile of vulnerability discovery. No specific CVE or exploit details are provided.]]></description>
-      <pubDate>Wed, 30 Sep 2026 14:05:58 GMT</pubDate>
-      <source url="https://www.securityweek.com/google-ai-is-changing-the-pace-and-profile-of-vulnerability-discovery/">SecurityWeek</source>
-      <category>Policy</category>
-    </item>
-    <item>
       <title>AI Co‑workers Threaten Existing Security Models</title>
       <link>https://secubuzz.com/news/ai-co-workers-threaten-existing-security-models</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ai-co-workers-threaten-existing-security-models</guid>
       <description><![CDATA[Persistent AI coworkers can operate continuously with standing access, exposing identity risks that current security models were not designed to handle. Token Security recommends giving each agent its own identity, owner, scoped permissions, and lifecycle controls to mitigate these risks.]]></description>
       <pubDate>Wed, 30 Sep 2026 14:01:11 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/ais-third-wave-coworkers-break-the-security-model-that-worked-for-agents/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Unauthenticated Command Injection on Zimbra Mail Servers Exploited via CVE-2026-73570</title>
-      <link>https://secubuzz.com/news/unauthenticated-command-injection-on-zimbra-mail-servers-exp</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/unauthenticated-command-injection-on-zimbra-mail-servers-exp</guid>
-      <description><![CDATA[Microsoft Threat Intelligence reports that CVE-2026-73570 allows unauthenticated command injection on internet-facing Zimbra mail servers. Attackers can execute arbitrary commands, potentially compromising server integrity. Detection involves monitoring unusual outbound traffic, and mitigation includes applying the latest security patch and disabling remote command execution features.]]></description>
-      <pubDate>Wed, 30 Sep 2026 14:00:00 GMT</pubDate>
-      <source url="https://www.microsoft.com/en-us/security/blog/2026/09/30/unauthenticated-command-injection-on-internet-facing-mail-servers-tracking-cve-2026-73570/">Microsoft Security</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -152,6 +206,15 @@
       <category>Policy</category>
     </item>
     <item>
+      <title>Anthropic Highlights AI Agent Liability Amid OpenAI Lawsuit</title>
+      <link>https://secubuzz.com/news/anthropic-highlights-ai-agent-liability-amid-openai-lawsuit</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-highlights-ai-agent-liability-amid-openai-lawsuit</guid>
+      <description><![CDATA[Anthropic has warned about liability risks for autonomous AI agents as OpenAI faces a hacking lawsuit. The discussion focuses on legal accountability for AI actions, reflecting growing concerns over AI‑driven attacks and their regulatory implications.]]></description>
+      <pubDate>Wed, 30 Sep 2026 11:19:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/anthropic-flags-ai-agent-liability-risks-as-openai-faces-hacking-lawsuit/">SecurityWeek</source>
+      <category>Cloud</category>
+    </item>
+    <item>
       <title>OpenInfra Europe’s JFrog Artifactory Compromised via CVE-2026-82329</title>
       <link>https://secubuzz.com/news/openinfra-europe-s-jfrog-artifactory-compromised-via-cve-202</link>
       <guid isPermaLink="true">https://secubuzz.com/news/openinfra-europe-s-jfrog-artifactory-compromised-via-cve-202</guid>
@@ -194,6 +257,15 @@
       <description><![CDATA[Genea has unveiled Genea MCP, a Model Context Protocol server that connects AI agents directly to its access control system. The new tool enables role‑based permissions to be configured with a single sentence, streamlining onboarding and temporary access. The release positions Genea among the first providers to offer a native MCP server.]]></description>
       <pubDate>Wed, 30 Sep 2026 06:49:24 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/09/30/genea-mcp/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Security Tools Now Scan Claude Enterprise Chats for Sensitive Data</title>
+      <link>https://secubuzz.com/news/security-tools-now-scan-claude-enterprise-chats-for-sensitiv</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/security-tools-now-scan-claude-enterprise-chats-for-sensitiv</guid>
+      <description><![CDATA[Over 100 security and compliance vendors now integrate with the Claude Compliance API, allowing companies to monitor Claude Enterprise activity. The feed captures conversations, uploaded files, projects, cowork and code sessions, prompts, responses, and tool calls, helping detect and protect sensitive information.]]></description>
+      <pubDate>Wed, 30 Sep 2026 06:31:58 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/09/30/claude-compliance-api-integrations/">Help Net Security</source>
       <category>Policy</category>
     </item>
     <item>
@@ -260,6 +332,15 @@
       <category>Policy</category>
     </item>
     <item>
+      <title>TerminalFix and Lorem Ipsum Loader Enable Covert Tunneling</title>
+      <link>https://secubuzz.com/news/terminalfix-and-lorem-ipsum-loader-enable-covert-tunneling</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/terminalfix-and-lorem-ipsum-loader-enable-covert-tunneling</guid>
+      <description><![CDATA[The malware family TerminalFix and its component Lorem Ipsum Loader have been observed creating covert tunnels to exfiltrate data. The activity is part of a broader campaign that previously used a different delivery mechanism, indicating ongoing threat actor operations.]]></description>
+      <pubDate>Wed, 30 Sep 2026 00:00:00 GMT</pubDate>
+      <source url="https://www.sophos.com/en-us/blog/terminalfix-and-lorem-ipsum-loader-enable-covert-tunneling">Sophos Threat Research</source>
+      <category>Malware</category>
+    </item>
+    <item>
       <title>Paragon Spyware Firm Plans Nasdaq IPO</title>
       <link>https://secubuzz.com/news/paragon-spyware-firm-plans-nasdaq-ipo</link>
       <guid isPermaLink="true">https://secubuzz.com/news/paragon-spyware-firm-plans-nasdaq-ipo</guid>
@@ -267,15 +348,6 @@
       <pubDate>Tue, 29 Sep 2026 20:35:00 GMT</pubDate>
       <source url="https://therecord.media/controversial-spyware-firm-paragon-to-go-public">The Record</source>
       <category>Malware</category>
-    </item>
-    <item>
-      <title>OpenAI CEO Announces New AI Agent Dots at Developer Conference</title>
-      <link>https://secubuzz.com/news/openai-ceo-announces-new-ai-agent-dots-at-developer-conferen</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-ceo-announces-new-ai-agent-dots-at-developer-conferen</guid>
-      <description><![CDATA[During a developer conference, OpenAI CEO Sam Altman unveiled new AI agents called Dots, highlighting product updates while sidestepping any discussion of security concerns. The announcement focused on feature enhancements and future roadmap, with no mention of potential vulnerabilities or safeguards.]]></description>
-      <pubDate>Tue, 29 Sep 2026 20:14:44 GMT</pubDate>
-      <source url="https://www.securityweek.com/openai-ceo-announces-new-ai-agent-and-avoids-mention-of-security-concerns-at-developer-conference/">SecurityWeek</source>
-      <category>Policy</category>
     </item>
     <item>
       <title>FBI Warns ShinyHunters Members to Surrender After Dutch Arrest</title>
@@ -384,78 +456,6 @@
       <pubDate>Tue, 29 Sep 2026 13:00:00 GMT</pubDate>
       <source url="https://blog.cloudflare.com/threat-signals/">Cloudflare Security</source>
       <category>Cloud</category>
-    </item>
-    <item>
-      <title>Cloudflare Introduces Application Profiles for Positive Security</title>
-      <link>https://secubuzz.com/news/cloudflare-introduces-application-profiles-for-positive-secu</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-introduces-application-profiles-for-positive-secu</guid>
-      <description><![CDATA[Cloudflare’s Application Profiles learn normal HTTP request patterns and flag deviations, adding a positive security layer. By reducing attack surface, the feature helps counter AI‑generated payloads, improving protection against evolving web threats for all customers.]]></description>
-      <pubDate>Tue, 29 Sep 2026 13:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/application-profiles/">Cloudflare Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>Cloudflare WAF Tester Reveals Detection Gaps</title>
-      <link>https://secubuzz.com/news/cloudflare-waf-tester-reveals-detection-gaps</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-waf-tester-reveals-detection-gaps</guid>
-      <description><![CDATA[Cloudflare built a WAF tester that adapts requests based on WAF responses, testing six attack categories on a staging environment. The tool uncovered gaps in the WAF’s detection logic, allowing certain attacks to pass. Cloudflare documented the missed detections and applied fixes to close the identified weaknesses.]]></description>
-      <pubDate>Tue, 29 Sep 2026 13:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/adaptive-ai-waf-testing/">Cloudflare Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Meta gives small businesses an AI agent that knows their work</title>
-      <link>https://secubuzz.com/news/meta-gives-small-businesses-an-ai-agent-that-knows-their-wor</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/meta-gives-small-businesses-an-ai-agent-that-knows-their-wor</guid>
-      <description><![CDATA[Meta introduces Muse for Small Business, an AI agent that integrates with Instagram analytics, Facebook Pages, and Meta ad accounts. The agent assists owners by automating tasks and providing context‑aware insights, helping streamline operations across the Meta ecosystem.]]></description>
-      <pubDate>Tue, 29 Sep 2026 12:45:45 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/09/29/meta-muse-for-small-business/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Pentagon Personnel Agency Data Breach Affects 3 Million People</title>
-      <link>https://secubuzz.com/news/pentagon-personnel-agency-data-breach-affects-3-million-peop</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/pentagon-personnel-agency-data-breach-affects-3-million-peop</guid>
-      <description><![CDATA[A breach at the Defense Manpower Data Center exposed personnel records for the Department of Defense, impacting roughly 3 million individuals. The incident compromised sensitive employee data, including names, service details, and contact information. Immediate containment and investigation are underway to assess the full scope and mitigate further exposure.]]></description>
-      <pubDate>Tue, 29 Sep 2026 12:25:12 GMT</pubDate>
-      <source url="https://www.securityweek.com/pentagon-personnel-agency-data-breach-impacts-3-million-people/">SecurityWeek</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Apple Products Vulnerability CVE-2026-86950 Added to CISA KEV Catalog</title>
-      <link>https://secubuzz.com/news/apple-products-vulnerability-cve-2026-86950-added-to-cisa-ke</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apple-products-vulnerability-cve-2026-86950-added-to-cisa-ke</guid>
-      <description><![CDATA[Apple products are impacted by CVE-2026-86950, an out-of-bounds write that can grant attackers full control of exposed assets. CISA has listed it as a known exploited vulnerability, urging federal agencies to prioritize rapid remediation under BOD 26-04. The flaw poses significant risks to federal enterprises and requires urgent patching.]]></description>
-      <pubDate>Tue, 29 Sep 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/alerts/2026/09/29/cisa-adds-one-known-exploited-vulnerability-catalog">CISA</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Viidure Dashcam Android App Suffers Critical Vulnerabilities Including CVE-2026-94204</title>
-      <link>https://secubuzz.com/news/viidure-dashcam-android-app-suffers-critical-vulnerabilities</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/viidure-dashcam-android-app-suffers-critical-vulnerabilities</guid>
-      <description><![CDATA[Affected Viidure Dashcam Android versions contain CVE‑2026‑94204, incorrect permission assignment, hard‑coded credentials, and a public‑read cloud storage bucket. These flaws let attackers access, modify, or delete sensitive user data and critical system files, potentially crippling the entire platform.]]></description>
-      <pubDate>Tue, 29 Sep 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-07">CISA</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>VIVOTEK Camera Firmware Remote Command Execution Vulnerability</title>
-      <link>https://secubuzz.com/news/vivotek-camera-firmware-remote-command-execution-vulnerabili</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/vivotek-camera-firmware-remote-command-execution-vulnerabili</guid>
-      <description><![CDATA[A critical vulnerability (CVE-2026-22755) in VIVOTEK camera firmware allows attackers to achieve remote command execution with root privileges, potentially compromising the entire camera system. Affected models include V Series FD9187, FD9189, FD9365, FD9387, FD9389, FD9391, C Series FE9180, V Series FE9191, FE9382, FE9391, IB9365, IB9387, IB9389, IB939, IP9165, IP9171. Patching to the latest firmware is required.]]></description>
-      <pubDate>Tue, 29 Sep 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-03">CISA</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Baicells Nova 430H Vulnerability Allows Malformed Message Denial of Service</title>
-      <link>https://secubuzz.com/news/baicells-nova-430h-vulnerability-allows-malformed-message-de</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/baicells-nova-430h-vulnerability-allows-malformed-message-de</guid>
-      <description><![CDATA[An unauthenticated attacker within radio range can send a malformed uplink message with an invalid NAS payload to Baicells Nova 430H eNodeB, causing the device to forward it to the core network and trigger a signaling shutdown, resulting in denial of service. CVE-2026-96274 is the affected vulnerability.]]></description>
-      <pubDate>Tue, 29 Sep 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-04">CISA</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
