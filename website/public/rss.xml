@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Sep 2026 00:19:56 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2026 04:19:56 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Most Critical and High Vulnerabilities Remain Unpatched Over 90 Days</title>
+      <link>https://secubuzz.com/news/most-critical-and-high-vulnerabilities-remain-unpatched-over</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/most-critical-and-high-vulnerabilities-remain-unpatched-over</guid>
+      <description><![CDATA[Detectify examined 1,293 customers across the US, UK, and Nordics, finding that 97% of critical and 92% of high‑severity flaws in the Nordics, and 86% in the US, had been exposed for more than 90 days. The study highlights a widespread lag in patching internet‑facing systems.]]></description>
+      <pubDate>Wed, 30 Sep 2026 04:00:38 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/09/30/research-unpatched-vulnerabilities-backlog/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Microsoft Makes WSL Containers Generally Available on Windows</title>
+      <link>https://secubuzz.com/news/microsoft-makes-wsl-containers-generally-available-on-window</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-makes-wsl-containers-generally-available-on-window</guid>
+      <description><![CDATA[Microsoft released WSL containers as a generally available feature, allowing administrators to disable or restrict image sources. The containers run Linux workloads via the Windows Subsystem for Linux and can be installed with wsl --update or from Microsoft’s GitHub releases. Intune settings help manage the feature.]]></description>
+      <pubDate>Wed, 30 Sep 2026 03:47:25 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/09/30/microsoft-wsl-containers-available/">Help Net Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Organizations Need Six Months to Deploy New Security Controls</title>
+      <link>https://secubuzz.com/news/organizations-need-six-months-to-deploy-new-security-control</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/organizations-need-six-months-to-deploy-new-security-control</guid>
+      <description><![CDATA[A Cisco survey of 8,000 security professionals across 30 markets found only 8% of organizations can quickly roll out new security controls. Internal friction and turf wars slow deployment, while AI models can identify software vulnerabilities faster than human teams. The study highlights the challenge of timely security updates.]]></description>
+      <pubDate>Wed, 30 Sep 2026 03:30:01 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/09/30/relentless-defense-cisco-cybersecurity-survey/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Cloudflare to Issue Post-Quantum Certificates in Early 2027</title>
+      <link>https://secubuzz.com/news/cloudflare-to-issue-post-quantum-certificates-in-early-2027</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-to-issue-post-quantum-certificates-in-early-2027</guid>
+      <description><![CDATA[Cloudflare announced it will become a public certificate authority, issuing both conventional and post-quantum Merkle Tree Certificates (MTCs). Production issuance of MTCs is scheduled for Q1 2027, aiming to diversify the web’s certificate ecosystem dominated by a few major CAs.]]></description>
+      <pubDate>Wed, 30 Sep 2026 03:09:51 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/09/30/cloudflare-certificate-authority-2027/">Help Net Security</source>
+      <category>Cloud</category>
+    </item>
     <item>
       <title>Former Air Force Members Sentenced for Multi-Million Dollar BEC Scam</title>
       <link>https://secubuzz.com/news/former-air-force-members-sentenced-for-multi-million-dollar-</link>
@@ -69,6 +105,24 @@
       <pubDate>Tue, 29 Sep 2026 20:55:01 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/japans-keio-ransomware-attack-air-gapped-railway-resilience">CyberNews AI</source>
       <category>Ransomware</category>
+    </item>
+    <item>
+      <title>Paragon Spyware Firm Plans Nasdaq IPO</title>
+      <link>https://secubuzz.com/news/paragon-spyware-firm-plans-nasdaq-ipo</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/paragon-spyware-firm-plans-nasdaq-ipo</guid>
+      <description><![CDATA[Paragon, a controversial spyware company, intends to go public by year’s end under the REDLattice umbrella. The firm will begin trading on Nasdaq once the deal closes. No security incident or breach is reported in the announcement.]]></description>
+      <pubDate>Tue, 29 Sep 2026 20:35:00 GMT</pubDate>
+      <source url="https://therecord.media/controversial-spyware-firm-paragon-to-go-public">The Record</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>OpenAI CEO Announces New AI Agent Dots at Developer Conference</title>
+      <link>https://secubuzz.com/news/openai-ceo-announces-new-ai-agent-dots-at-developer-conferen</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openai-ceo-announces-new-ai-agent-dots-at-developer-conferen</guid>
+      <description><![CDATA[During a developer conference, OpenAI CEO Sam Altman unveiled new AI agents called Dots, highlighting product updates while sidestepping any discussion of security concerns. The announcement focused on feature enhancements and future roadmap, with no mention of potential vulnerabilities or safeguards.]]></description>
+      <pubDate>Tue, 29 Sep 2026 20:14:44 GMT</pubDate>
+      <source url="https://www.securityweek.com/openai-ceo-announces-new-ai-agent-and-avoids-mention-of-security-concerns-at-developer-conference/">SecurityWeek</source>
+      <category>Policy</category>
     </item>
     <item>
       <title>FBI Warns ShinyHunters Members to Surrender After Dutch Arrest</title>
@@ -170,6 +224,15 @@
       <category>Policy</category>
     </item>
     <item>
+      <title>IETF Introduces Transcript Authentication to Block Quantum Downgrade Attacks on IPsec</title>
+      <link>https://secubuzz.com/news/ietf-introduces-transcript-authentication-to-block-quantum-d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ietf-introduces-transcript-authentication-to-block-quantum-d</guid>
+      <description><![CDATA[Researchers identified a protocol flaw that allows quantum attackers to downgrade post‑quantum IPsec tunnels to classical cryptography. The IETF has adopted a transcript authentication extension to prevent such quantum downgrade attacks, strengthening IPsec’s resilience against future quantum threats.]]></description>
+      <pubDate>Tue, 29 Sep 2026 13:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/ipsec-downgrade-protection/">Cloudflare Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Cloudflare Expands Threat Signals to All Accounts</title>
       <link>https://secubuzz.com/news/cloudflare-expands-threat-signals-to-all-accounts</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-expands-threat-signals-to-all-accounts</guid>
@@ -185,15 +248,6 @@
       <description><![CDATA[Cloudflare’s Application Profiles learn normal HTTP request patterns and flag deviations, adding a positive security layer. By reducing attack surface, the feature helps counter AI‑generated payloads, improving protection against evolving web threats for all customers.]]></description>
       <pubDate>Tue, 29 Sep 2026 13:00:00 GMT</pubDate>
       <source url="https://blog.cloudflare.com/application-profiles/">Cloudflare Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>Cloudflare Adds Visibility Into Post-Quantum Encryption for Domains</title>
-      <link>https://secubuzz.com/news/cloudflare-adds-visibility-into-post-quantum-encryption-for-</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-adds-visibility-into-post-quantum-encryption-for-</guid>
-      <description><![CDATA[Cloudflare now exposes post‑quantum (PQ) encryption status in TLS 1.3 directly within HTTP Analytics, Log Explorer, and Logpush. The feature lets site owners verify that their domains use PQ ciphers, helping ensure protection against future quantum‑era attacks.]]></description>
-      <pubDate>Tue, 29 Sep 2026 13:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/post-quantum-visibility/">Cloudflare Security</source>
       <category>Cloud</category>
     </item>
     <item>
@@ -222,6 +276,15 @@
       <pubDate>Tue, 29 Sep 2026 12:43:03 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/09/29/vega-ii-agentic-cyber-defense-platform/">Help Net Security</source>
       <category>Policy</category>
+    </item>
+    <item>
+      <title>Pentagon Personnel Agency Data Breach Affects 3 Million People</title>
+      <link>https://secubuzz.com/news/pentagon-personnel-agency-data-breach-affects-3-million-peop</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/pentagon-personnel-agency-data-breach-affects-3-million-peop</guid>
+      <description><![CDATA[A breach at the Defense Manpower Data Center exposed personnel records for the Department of Defense, impacting roughly 3 million individuals. The incident compromised sensitive employee data, including names, service details, and contact information. Immediate containment and investigation are underway to assess the full scope and mitigate further exposure.]]></description>
+      <pubDate>Tue, 29 Sep 2026 12:25:12 GMT</pubDate>
+      <source url="https://www.securityweek.com/pentagon-personnel-agency-data-breach-impacts-3-million-people/">SecurityWeek</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>Apple Products Vulnerability CVE-2026-86950 Added to CISA KEV Catalog</title>
@@ -393,69 +456,6 @@
       <pubDate>Tue, 29 Sep 2026 05:00:20 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/09/29/vendor-concentration-risk-video/">Help Net Security</source>
       <category>Cloud</category>
-    </item>
-    <item>
-      <title>Open-Source Cybersecurity Tools Highlighted for September 2026</title>
-      <link>https://secubuzz.com/news/open-source-cybersecurity-tools-highlighted-for-september-20</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/open-source-cybersecurity-tools-highlighted-for-september-20</guid>
-      <description><![CDATA[A curated list of open‑source security solutions is presented, including Sift, a command‑line secrets scanner that searches Microsoft 365, Slack, Jira, local disks, Windows shares, Active Directory, and SharePoint for passwords, API keys, and other sensitive data.]]></description>
-      <pubDate>Tue, 29 Sep 2026 04:30:00 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/09/29/hottest-cybersecurity-open-source-tools-of-the-month-september-2026/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Application Security Researcher Position Open in Israel</title>
-      <link>https://secubuzz.com/news/application-security-researcher-position-open-in-israel</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/application-security-researcher-position-open-in-israel</guid>
-      <description><![CDATA[A job opening for an Application Security Researcher at Novee Security in Israel is announced. The role involves testing web applications and APIs, verifying vulnerabilities, documenting exploits, and developing new testing methods to improve detection and support customer deployments.]]></description>
-      <pubDate>Tue, 29 Sep 2026 04:00:33 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/09/29/cybersecurity-jobs-available-right-now-september-29-2026/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Bitget Loses $387.5M in Crypto Heist via Third-Party Security Flaw</title>
-      <link>https://secubuzz.com/news/bitget-loses-387-5m-in-crypto-heist-via-third-party-security</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/bitget-loses-387-5m-in-crypto-heist-via-third-party-security</guid>
-      <description><![CDATA[Bitget suffered a $387.5 million crypto theft after attackers exploited a flaw in a third‑party service to forge withdrawal commands. The breach was linked to North Korean Lazarus tactics. The incident highlights the risk of third‑party integrations and the need for stricter access controls.]]></description>
-      <pubDate>Mon, 28 Sep 2026 22:36:49 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/bitget-387-million-crypto-heist-third-party-breach">CyberNews AI</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Storm-3168 Uses Leaked Azure Service Principals to Delete Cloud Resources</title>
-      <link>https://secubuzz.com/news/storm-3168-uses-leaked-azure-service-principals-to-delete-cl</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/storm-3168-uses-leaked-azure-service-principals-to-delete-cl</guid>
-      <description><![CDATA[Storm-3168 leveraged leaked Azure service principals to perform over 150 destructive API calls, targeting cloud storage and other resources. The attacks were halted only by immutable resource locks, preventing a full wipe of the affected environment.]]></description>
-      <pubDate>Mon, 28 Sep 2026 21:45:51 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/storm-3168-azure-service-principal-resource-destruction">CyberNews AI</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Times Car Data Breach Compromises 6.6 Million User Accounts</title>
-      <link>https://secubuzz.com/news/times-car-data-breach-compromises-6-6-million-user-accounts</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/times-car-data-breach-compromises-6-6-million-user-accounts</guid>
-      <description><![CDATA[Japanese car‑sharing service Times Car announced that approximately 6.6 million user accounts were compromised in a cyberattack disclosed late last week. The breach exposed personal account information, though the company has not confirmed the extent of data accessed.]]></description>
-      <pubDate>Mon, 28 Sep 2026 20:31:16 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/times-car-confirms-data-breach-affecting-66-million-user-accounts/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Carbonato Botnet Targets Docker Hosts, Steals AI API Keys via Hermes Agent</title>
-      <link>https://secubuzz.com/news/carbonato-botnet-targets-docker-hosts-steals-ai-api-keys-via</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/carbonato-botnet-targets-docker-hosts-steals-ai-api-keys-via</guid>
-      <description><![CDATA[The Carbonato botnet leverages the open‑source Hermes Agent AI framework to run commands through Telegram and harvest AI API keys from exposed Docker hosts. Attackers gain remote control over compromised containers, enabling credential theft and potential lateral movement. Mitigation requires hardening Docker exposure, disabling unused APIs, and monitoring for anomalous Telegram traffic.]]></description>
-      <pubDate>Mon, 28 Sep 2026 20:23:58 GMT</pubDate>
-      <source url="https://www.darkreading.com/identity-access-management-security/carbonato-botnet-ai-agent-hacked-docker-hosts">Dark Reading</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>ShinyHunters Exploit Oracle PeopleSoft Vulnerability in New Campaign</title>
-      <link>https://secubuzz.com/news/shinyhunters-exploit-oracle-peoplesoft-vulnerability-in-new-</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/shinyhunters-exploit-oracle-peoplesoft-vulnerability-in-new-</guid>
-      <description><![CDATA[ShinyHunters are leveraging a flaw in Oracle PeopleSoft products to conduct attacks, following their claim of breaching the FBI’s jobs site. The group uses workarounds to bypass security controls, targeting organizations that rely on PeopleSoft. No CVE ID is disclosed, and no patch status is mentioned.]]></description>
-      <pubDate>Mon, 28 Sep 2026 19:30:00 GMT</pubDate>
-      <source url="https://therecord.media/shinyhunters-cyberattacks-oracle-mandiant">The Record</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

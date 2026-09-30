@@ -1,5 +1,67 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/09/30/research-unpatched-vulnerabilities-backlog/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/research-unpatched-vulnerabilities-backlog/",
+    "title": "Most Critical and High Vulnerabilities Remain Unpatched Over 90 Days",
+    "headline": "Most Critical and High Vulnerabilities Remain Unpatched Over 90 Days",
+    "summary": "Detectify examined 1,293 customers across the US, UK, and Nordics, finding that 97% of critical and 92% of high‑severity flaws in the Nordics, and 86% in the US, had been exposed for more than 90 days. The study highlights a widespread lag in patching internet‑facing systems.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-09-30T04:00:38.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/09/30/research-unpatched-vulnerabilities-backlog/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/09/30/microsoft-wsl-containers-available/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/microsoft-wsl-containers-available/",
+    "title": "Microsoft Makes WSL Containers Generally Available on Windows",
+    "headline": "Microsoft Makes WSL Containers Generally Available on Windows",
+    "summary": "Microsoft released WSL containers as a generally available feature, allowing administrators to disable or restrict image sources. The containers run Linux workloads via the Windows Subsystem for Linux and can be installed with wsl --update or from Microsoft’s GitHub releases. Intune settings help manage the feature.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-09-30T03:47:25.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/09/30/microsoft-wsl-containers-available/",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-is-rolling-out-linux-container-support-to-wsl/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/09/30/relentless-defense-cisco-cybersecurity-survey/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/relentless-defense-cisco-cybersecurity-survey/",
+    "title": "Organizations Need Six Months to Deploy New Security Controls",
+    "headline": "Organizations Need Six Months to Deploy New Security Controls",
+    "summary": "A Cisco survey of 8,000 security professionals across 30 markets found only 8% of organizations can quickly roll out new security controls. Internal friction and turf wars slow deployment, while AI models can identify software vulnerabilities faster than human teams. The study highlights the challenge of timely security updates.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-09-30T03:30:01.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/09/30/relentless-defense-cisco-cybersecurity-survey/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/09/30/cloudflare-certificate-authority-2027/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/cloudflare-certificate-authority-2027/",
+    "title": "Cloudflare to Issue Post-Quantum Certificates in Early 2027",
+    "headline": "Cloudflare to Issue Post-Quantum Certificates in Early 2027",
+    "summary": "Cloudflare announced it will become a public certificate authority, issuing both conventional and post-quantum Merkle Tree Certificates (MTCs). Production issuance of MTCs is scheduled for Q1 2027, aiming to diversify the web’s certificate ecosystem dominated by a few major CAs.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-09-30T03:09:51.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/09/30/cloudflare-certificate-authority-2027/",
+    "additionalSources": [
+      {
+        "source": "Cloudflare Security",
+        "sourceUrl": "https://blog.cloudflare.com/post-quantum-visibility/"
+      }
+    ]
+  },
+  {
     "id": "https://cybernewsai.com/blog/ex-air-force-members-jailed-bec-fraud",
     "sourceUrl": "https://cybernewsai.com/blog/ex-air-force-members-jailed-bec-fraud",
     "title": "Former Air Force Members Sentenced for Multi-Million Dollar BEC Scam",
@@ -135,6 +197,32 @@
         "sourceUrl": "https://www.bleepingcomputer.com/news/security/japans-keio-confirms-ransomware-attack-disrupted-business-systems/"
       }
     ]
+  },
+  {
+    "id": "https://therecord.media/controversial-spyware-firm-paragon-to-go-public",
+    "sourceUrl": "https://therecord.media/controversial-spyware-firm-paragon-to-go-public",
+    "title": "Paragon Spyware Firm Plans Nasdaq IPO",
+    "headline": "Paragon Spyware Firm Plans Nasdaq IPO",
+    "summary": "Paragon, a controversial spyware company, intends to go public by year’s end under the REDLattice umbrella. The firm will begin trading on Nasdaq once the deal closes. No security incident or breach is reported in the announcement.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Record",
+    "publishedAt": "2026-09-29T20:35:00.000Z",
+    "url": "https://therecord.media/controversial-spyware-firm-paragon-to-go-public",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/openai-ceo-announces-new-ai-agent-and-avoids-mention-of-security-concerns-at-developer-conference/",
+    "sourceUrl": "https://www.securityweek.com/openai-ceo-announces-new-ai-agent-and-avoids-mention-of-security-concerns-at-developer-conference/",
+    "title": "OpenAI CEO Announces New AI Agent Dots at Developer Conference",
+    "headline": "OpenAI CEO Announces New AI Agent Dots at Developer Conference",
+    "summary": "During a developer conference, OpenAI CEO Sam Altman unveiled new AI agents called Dots, highlighting product updates while sidestepping any discussion of security concerns. The announcement focused on feature enhancements and future roadmap, with no mention of potential vulnerabilities or safeguards.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-09-29T20:14:44.000Z",
+    "url": "https://www.securityweek.com/openai-ceo-announces-new-ai-agent-and-avoids-mention-of-security-concerns-at-developer-conference/",
+    "additionalSources": []
   },
   {
     "id": "https://www.bleepingcomputer.com/news/security/fbi-tells-shinyhunters-members-to-turn-themselves-in-after-recent-arrest/",
@@ -318,6 +406,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://blog.cloudflare.com/ipsec-downgrade-protection/",
+    "sourceUrl": "https://blog.cloudflare.com/ipsec-downgrade-protection/",
+    "title": "IETF Introduces Transcript Authentication to Block Quantum Downgrade Attacks on IPsec",
+    "headline": "IETF Introduces Transcript Authentication to Block Quantum Downgrade Attacks on IPsec",
+    "summary": "Researchers identified a protocol flaw that allows quantum attackers to downgrade post‑quantum IPsec tunnels to classical cryptography. The IETF has adopted a transcript authentication extension to prevent such quantum downgrade attacks, strengthening IPsec’s resilience against future quantum threats.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Cloudflare Security",
+    "publishedAt": "2026-09-29T13:00:00.000Z",
+    "url": "https://blog.cloudflare.com/ipsec-downgrade-protection/",
+    "additionalSources": []
+  },
+  {
     "id": "https://blog.cloudflare.com/threat-signals/",
     "sourceUrl": "https://blog.cloudflare.com/threat-signals/",
     "title": "Cloudflare Expands Threat Signals to All Accounts",
@@ -345,24 +446,6 @@
       {
         "source": "Cloudflare Security",
         "sourceUrl": "https://blog.cloudflare.com/ai-era-framework/"
-      }
-    ]
-  },
-  {
-    "id": "https://blog.cloudflare.com/post-quantum-visibility/",
-    "sourceUrl": "https://blog.cloudflare.com/post-quantum-visibility/",
-    "title": "Cloudflare Adds Visibility Into Post-Quantum Encryption for Domains",
-    "headline": "Cloudflare Adds Visibility Into Post-Quantum Encryption for Domains",
-    "summary": "Cloudflare now exposes post‑quantum (PQ) encryption status in TLS 1.3 directly within HTTP Analytics, Log Explorer, and Logpush. The feature lets site owners verify that their domains use PQ ciphers, helping ensure protection against future quantum‑era attacks.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "publishedAt": "2026-09-29T13:00:00.000Z",
-    "url": "https://blog.cloudflare.com/post-quantum-visibility/",
-    "additionalSources": [
-      {
-        "source": "Cloudflare Security",
-        "sourceUrl": "https://blog.cloudflare.com/rust-workers-emscripten-target/"
       }
     ]
   },
@@ -404,6 +487,24 @@
     "publishedAt": "2026-09-29T12:43:03.000Z",
     "url": "https://www.helpnetsecurity.com/2026/09/29/vega-ii-agentic-cyber-defense-platform/",
     "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/pentagon-personnel-agency-data-breach-impacts-3-million-people/",
+    "sourceUrl": "https://www.securityweek.com/pentagon-personnel-agency-data-breach-impacts-3-million-people/",
+    "title": "Pentagon Personnel Agency Data Breach Affects 3 Million People",
+    "headline": "Pentagon Personnel Agency Data Breach Affects 3 Million People",
+    "summary": "A breach at the Defense Manpower Data Center exposed personnel records for the Department of Defense, impacting roughly 3 million individuals. The incident compromised sensitive employee data, including names, service details, and contact information. Immediate containment and investigation are underway to assess the full scope and mitigate further exposure.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-09-29T12:25:12.000Z",
+    "url": "https://www.securityweek.com/pentagon-personnel-agency-data-breach-impacts-3-million-people/",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/times-car-confirms-data-breach-affecting-66-million-user-accounts/"
+      }
+    ]
   },
   {
     "id": "https://www.cisa.gov/news-events/alerts/2026/09/29/cisa-adds-one-known-exploited-vulnerability-catalog",
@@ -834,24 +935,6 @@
       {
         "source": "The Hacker News",
         "sourceUrl": "https://thehackernews.com/2026/09/jadepuffer-linked-attackers-used.html"
-      }
-    ]
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/times-car-confirms-data-breach-affecting-66-million-user-accounts/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/times-car-confirms-data-breach-affecting-66-million-user-accounts/",
-    "title": "Times Car Data Breach Compromises 6.6 Million User Accounts",
-    "headline": "Times Car Data Breach Compromises 6.6 Million User Accounts",
-    "summary": "Japanese car‑sharing service Times Car announced that approximately 6.6 million user accounts were compromised in a cyberattack disclosed late last week. The breach exposed personal account information, though the company has not confirmed the extent of data accessed.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-09-28T20:31:16.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/times-car-confirms-data-breach-affecting-66-million-user-accounts/",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/09/27/week-in-review-gyazo-breach-exposes-23-6m-user-data-taskstomp-steals-documents/"
       }
     ]
   },
