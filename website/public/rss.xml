@@ -5,8 +5,89 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Sep 2026 08:20:06 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2026 14:59:31 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Cisco Issues Patch for Exploited SD‑WAN Zero‑Day CVE‑2026‑76504</title>
+      <link>https://secubuzz.com/news/cisco-issues-patch-for-exploited-sd-wan-zero-day-cve-2026-76</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisco-issues-patch-for-exploited-sd-wan-zero-day-cve-2026-76</guid>
+      <description><![CDATA[Cisco released security updates for the Catalyst SD‑WAN Manager to fix a critical zero‑day (CVE‑2026‑76504) that attackers are actively exploiting to gain admin privileges. The patch addresses the flaw and mitigates the escalation risk.]]></description>
+      <pubDate>Wed, 30 Sep 2026 14:46:40 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/cisco-warns-of-new-sd-wan-authentication-bypass-zero-day-exploited-in-attacks/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Google Reports AI Accelerates Remote Code Vulnerability Discovery</title>
+      <link>https://secubuzz.com/news/google-reports-ai-accelerates-remote-code-vulnerability-disc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-reports-ai-accelerates-remote-code-vulnerability-disc</guid>
+      <description><![CDATA[Google’s analysis indicates that AI‑discovered vulnerabilities are more likely to enable remote code execution, highlighting a shift in the pace and profile of vulnerability discovery. No specific CVE or exploit details are provided.]]></description>
+      <pubDate>Wed, 30 Sep 2026 14:05:58 GMT</pubDate>
+      <source url="https://www.securityweek.com/google-ai-is-changing-the-pace-and-profile-of-vulnerability-discovery/">SecurityWeek</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>AI Co‑workers Threaten Existing Security Models</title>
+      <link>https://secubuzz.com/news/ai-co-workers-threaten-existing-security-models</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-co-workers-threaten-existing-security-models</guid>
+      <description><![CDATA[Persistent AI coworkers can operate continuously with standing access, exposing identity risks that current security models were not designed to handle. Token Security recommends giving each agent its own identity, owner, scoped permissions, and lifecycle controls to mitigate these risks.]]></description>
+      <pubDate>Wed, 30 Sep 2026 14:01:11 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/ais-third-wave-coworkers-break-the-security-model-that-worked-for-agents/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Ukrainian Researchers Warn of DarkSword iPhone Malware Exploit Kit</title>
+      <link>https://secubuzz.com/news/ukrainian-researchers-warn-of-darksword-iphone-malware-explo</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ukrainian-researchers-warn-of-darksword-iphone-malware-explo</guid>
+      <description><![CDATA[Ukrainian SSSCIP researchers identified DarkSword, a hit‑and‑run iPhone malware part of a wave of Russian attacks on iOS and Android devices. The kit exploits iOS vulnerabilities to deliver malicious payloads, highlighting the need for updated mobile security defenses.]]></description>
+      <pubDate>Wed, 30 Sep 2026 14:00:00 GMT</pubDate>
+      <source url="https://therecord.media/ukraine-ssscip-mobile-malware-warning-ios-android">The Record</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>WatchGuard Releases Patches for Critical Fireware OS Code Injection Vulnerabilities</title>
+      <link>https://secubuzz.com/news/watchguard-releases-patches-for-critical-fireware-os-code-in</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/watchguard-releases-patches-for-critical-fireware-os-code-in</guid>
+      <description><![CDATA[WatchGuard has issued patches addressing 15 bugs in Fireware OS, including code execution, denial‑of‑service, authorization bypass, and path traversal flaws. The updates mitigate potential remote code execution and denial‑of‑service attacks against Fireware OS devices. Users should apply the latest firmware to secure their network appliances.]]></description>
+      <pubDate>Wed, 30 Sep 2026 13:16:56 GMT</pubDate>
+      <source url="https://www.securityweek.com/watchguard-patches-critical-fireware-os-code-injection-vulnerability/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Cloudflare AI Gateway Adds Auto Router to Cut AI Spend</title>
+      <link>https://secubuzz.com/news/cloudflare-ai-gateway-adds-auto-router-to-cut-ai-spend</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-ai-gateway-adds-auto-router-to-cut-ai-spend</guid>
+      <description><![CDATA[Cloudflare AI Gateway now includes an Auto Router that uses an edge‑deployed classifier to evaluate request complexity and select the most cost‑effective model. The feature balances output quality against token costs, enabling organizations to reduce AI spending while maintaining performance.]]></description>
+      <pubDate>Wed, 30 Sep 2026 13:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/auto-router/">Cloudflare Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Russian FSB-Linked Hackers Expand Phishing Campaigns Targeting Ukraine Supporters</title>
+      <link>https://secubuzz.com/news/russian-fsb-linked-hackers-expand-phishing-campaigns-targeti</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/russian-fsb-linked-hackers-expand-phishing-campaigns-targeti</guid>
+      <description><![CDATA[Russian state‑backed group Star Blizzard has broadened its phishing operations this year, deploying a new technique that simplifies malware delivery to Ukraine supporters. The method eases infection by reducing user interaction, increasing the likelihood of successful compromise. No specific CVE cited.]]></description>
+      <pubDate>Wed, 30 Sep 2026 12:00:00 GMT</pubDate>
+      <source url="https://therecord.media/russia-hackers-ukraine-blizzard">The Record</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Browser-Based Attack Techniques Dominating 2026 Threat Landscape</title>
+      <link>https://secubuzz.com/news/browser-based-attack-techniques-dominating-2026-threat-lands</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/browser-based-attack-techniques-dominating-2026-threat-lands</guid>
+      <description><![CDATA[In 2026, attackers increasingly exploit browsers to launch full attack chains, from initial access to data exfiltration, without leaving the session. Security teams should monitor six high‑risk techniques, including XSS, CSRF, and malicious extensions, to defend against evolving web‑based threats.]]></description>
+      <pubDate>Wed, 30 Sep 2026 11:58:00 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/09/know-your-enemy-browser-based-attack.html">The Hacker News</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>AI Coding Agents Leak 13,000 Internal Company Screenshots to Public GitHub Repos</title>
+      <link>https://secubuzz.com/news/ai-coding-agents-leak-13-000-internal-company-screenshots-to</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-coding-agents-leak-13-000-internal-company-screenshots-to</guid>
+      <description><![CDATA[Glow Labs researchers discovered that AI coding agents were automatically posting internal screenshots, including customer billing records, to public GitHub repositories. Over 13,000 images from more than 300 organizations were exposed across 900+ code repos, revealing sensitive data and unreleased features. The leak highlights a breach of internal confidentiality and the need for stricter data handling controls.]]></description>
+      <pubDate>Wed, 30 Sep 2026 11:52:30 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/09/30/ai-coding-agents-github-screenshot-leak/">Help Net Security</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Former US Air Force Members Sentenced for Million-Dollar Business Email Compromise Scheme</title>
       <link>https://secubuzz.com/news/former-us-air-force-members-sentenced-for-million-dollar-bus</link>
@@ -98,15 +179,6 @@
       <category>Cloud</category>
     </item>
     <item>
-      <title>Organizations Need Six Months to Deploy New Security Controls</title>
-      <link>https://secubuzz.com/news/organizations-need-six-months-to-deploy-new-security-control</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/organizations-need-six-months-to-deploy-new-security-control</guid>
-      <description><![CDATA[A Cisco survey of 8,000 security professionals across 30 markets found only 8% of organizations can quickly roll out new security controls. Internal friction and turf wars slow deployment, while AI models can identify software vulnerabilities faster than human teams. The study highlights the challenge of timely security updates.]]></description>
-      <pubDate>Wed, 30 Sep 2026 03:30:01 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/09/30/relentless-defense-cisco-cybersecurity-survey/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
       <title>Cloudflare to Issue Post-Quantum Certificates in Early 2027</title>
       <link>https://secubuzz.com/news/cloudflare-to-issue-post-quantum-certificates-in-early-2027</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-to-issue-post-quantum-certificates-in-early-2027</guid>
@@ -122,33 +194,6 @@
       <description><![CDATA[Four major technology companies have signed a voluntary accord to self‑police AI development, outlining four steps to enhance transparency and safety. The agreement aims to lay groundwork for future regulatory frameworks while allowing firms to maintain control over their AI practices.]]></description>
       <pubDate>Wed, 30 Sep 2026 01:48:21 GMT</pubDate>
       <source url="https://www.securityweek.com/trump-says-top-tech-firms-have-signed-accord-to-self-police-ai-development/">SecurityWeek</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Phishing Campaigns Exploit MSP360 RMM to Deploy Remote Access Tools</title>
-      <link>https://secubuzz.com/news/phishing-campaigns-exploit-msp360-rmm-to-deploy-remote-acces</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/phishing-campaigns-exploit-msp360-rmm-to-deploy-remote-acces</guid>
-      <description><![CDATA[Microsoft identified phishing attacks that leveraged MSP360 RMM to install ScreenConnect, creating redundant remote‑access channels for subsequent malicious activity. The technique allows attackers to maintain persistent footholds via legitimate remote‑management software.]]></description>
-      <pubDate>Tue, 29 Sep 2026 21:39:27 GMT</pubDate>
-      <source url="https://www.microsoft.com/en-us/security/blog/2026/09/29/phishing-abuses-rmm-tools-persistent-access/">Microsoft Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Apple Zero‑Day CVE‑2026‑86950 Weaponized in Targeted Attacks</title>
-      <link>https://secubuzz.com/news/apple-zero-day-cve-2026-86950-weaponized-in-targeted-attacks</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apple-zero-day-cve-2026-86950-weaponized-in-targeted-attacks</guid>
-      <description><![CDATA[Attackers are exploiting CVE‑2026‑86950, an out‑of‑bounds write flaw in Apple software, in highly sophisticated attacks. The vulnerability allows attackers to overwrite memory and potentially execute arbitrary code, enabling targeted compromise of affected devices. Apple has issued a patch to mitigate the flaw.]]></description>
-      <pubDate>Tue, 29 Sep 2026 21:31:29 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyberattacks-data-breaches/apple-zero-day-vulnerability-weaponized-targeted-attacks">Dark Reading</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Signal Releases Encrypted Local Backup Feature in Version 8.30</title>
-      <link>https://secubuzz.com/news/signal-releases-encrypted-local-backup-feature-in-version-8-</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/signal-releases-encrypted-local-backup-feature-in-version-8-</guid>
-      <description><![CDATA[Signal version 8.30 now supports encrypted local backups on all supported platforms—Android, iOS, Linux, macOS, and Windows—completing the rollout of its secure backups feature. Users can create local encrypted copies of their message history, enhancing data protection and recovery options.]]></description>
-      <pubDate>Tue, 29 Sep 2026 21:30:08 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/signal-adds-encypted-local-backup-support-to-ios-desktop-apps/">BleepingComputer</source>
       <category>Policy</category>
     </item>
     <item>
@@ -411,51 +456,6 @@
       <pubDate>Tue, 29 Sep 2026 11:30:00 GMT</pubDate>
       <source url="https://www.securityweek.com/four-cyber-threats-harboring-big-plans-for-the-future/">SecurityWeek</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Cybersecurity Hiring Practices Exclude Junior Talent</title>
-      <link>https://secubuzz.com/news/cybersecurity-hiring-practices-exclude-junior-talent</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cybersecurity-hiring-practices-exclude-junior-talent</guid>
-      <description><![CDATA[A recent report shows that most cybersecurity firms limit entry-level roles, with over 80% of executives using full training budgets and 70% lacking junior positions. Short training sessions are suggested to accelerate new hires’ productivity and skill development across tools.]]></description>
-      <pubDate>Tue, 29 Sep 2026 11:00:32 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/09/29/skillbit-cybersecurity-micro-training-trends-report/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Palo Alto Networks and NVIDIA Collaborate to Tighten AI Agent Controls</title>
-      <link>https://secubuzz.com/news/palo-alto-networks-and-nvidia-collaborate-to-tighten-ai-agen</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/palo-alto-networks-and-nvidia-collaborate-to-tighten-ai-agen</guid>
-      <description><![CDATA[Palo Alto Networks and NVIDIA collaborate to tighten control over AI agents, focusing on agent activity, network traffic, and identity management via NVIDIA’s Open Agent Safety Platform. The partnership aims to limit AI agents’ code writing, data access, and software use, enhancing security oversight in enterprise environments.]]></description>
-      <pubDate>Tue, 29 Sep 2026 10:21:25 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/09/29/palo-alto-networks-nvidia-ai-agent-security/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Unit 42 Releases OperTraitor Tool to Audit Kubernetes Operator Privileges</title>
-      <link>https://secubuzz.com/news/unit-42-releases-opertraitor-tool-to-audit-kubernetes-operat</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/unit-42-releases-opertraitor-tool-to-audit-kubernetes-operat</guid>
-      <description><![CDATA[Unit 42’s OperTraitor tool audits Kubernetes operators to identify excessive RBAC permissions and secure non-human identities. By scanning operator privileges, it highlights privilege escalation risks and helps organizations tighten Kubernetes security posture, reducing potential attack surfaces from misconfigured operator roles.]]></description>
-      <pubDate>Tue, 29 Sep 2026 10:00:48 GMT</pubDate>
-      <source url="https://unit42.paloaltonetworks.com/agentic-ai-kubernetes-operator-risks/">Unit 42</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Microsoft Dissects NeedyMantis Malware from Daemon Tools Hackers</title>
-      <link>https://secubuzz.com/news/microsoft-dissects-needymantis-malware-from-daemon-tools-hac</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-dissects-needymantis-malware-from-daemon-tools-hac</guid>
-      <description><![CDATA[Microsoft analyzed NeedyMantis, a modular malware framework used by Daemon Tools hackers. The study details its custom executable format and persistence mechanisms, providing insights into its long‑term foothold capabilities. The findings help defenders recognize and mitigate this threat.]]></description>
-      <pubDate>Tue, 29 Sep 2026 09:46:13 GMT</pubDate>
-      <source url="https://www.securityweek.com/daemon-tools-hackers-needymantis-malware-dissected-by-microsoft/">SecurityWeek</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>Hackers Exploit SQL Injection to Steal Patient Data from Polish Medical Software Provider</title>
-      <link>https://secubuzz.com/news/hackers-exploit-sql-injection-to-steal-patient-data-from-pol</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-sql-injection-to-steal-patient-data-from-pol</guid>
-      <description><![CDATA[Hackers used a SQL injection flaw in Qbusoft’s Medyc platform to exfiltrate patient records, including sensitive data from nearly 19 million individuals. The breach follows a similar attack on MyDr, affecting about 12,000 healthcare facilities. The vulnerability allows unauthenticated attackers to read database contents, posing a high‑risk data exposure.]]></description>
-      <pubDate>Tue, 29 Sep 2026 09:17:43 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/09/29/qbusoft-medyc-data-breach-poland/">Help Net Security</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

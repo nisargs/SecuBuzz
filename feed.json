@@ -1,5 +1,146 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-new-sd-wan-authentication-bypass-zero-day-exploited-in-attacks/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-new-sd-wan-authentication-bypass-zero-day-exploited-in-attacks/",
+    "title": "Cisco Issues Patch for Exploited SD‑WAN Zero‑Day CVE‑2026‑76504",
+    "headline": "Cisco Issues Patch for Exploited SD‑WAN Zero‑Day CVE‑2026‑76504",
+    "summary": "Cisco released security updates for the Catalyst SD‑WAN Manager to fix a critical zero‑day (CVE‑2026‑76504) that attackers are actively exploiting to gain admin privileges. The patch addresses the flaw and mitigates the escalation risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-09-30T14:46:40.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-new-sd-wan-authentication-bypass-zero-day-exploited-in-attacks/",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/cve-2026-88772-netscaler-exploitation-zero-day/"
+      },
+      {
+        "source": "Dark Reading",
+        "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/apple-zero-day-vulnerability-weaponized-targeted-attacks"
+      }
+    ]
+  },
+  {
+    "id": "https://www.securityweek.com/google-ai-is-changing-the-pace-and-profile-of-vulnerability-discovery/",
+    "sourceUrl": "https://www.securityweek.com/google-ai-is-changing-the-pace-and-profile-of-vulnerability-discovery/",
+    "title": "Google Reports AI Accelerates Remote Code Vulnerability Discovery",
+    "headline": "Google Reports AI Accelerates Remote Code Vulnerability Discovery",
+    "summary": "Google’s analysis indicates that AI‑discovered vulnerabilities are more likely to enable remote code execution, highlighting a shift in the pace and profile of vulnerability discovery. No specific CVE or exploit details are provided.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-09-30T14:05:58.000Z",
+    "url": "https://www.securityweek.com/google-ai-is-changing-the-pace-and-profile-of-vulnerability-discovery/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/ais-third-wave-coworkers-break-the-security-model-that-worked-for-agents/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ais-third-wave-coworkers-break-the-security-model-that-worked-for-agents/",
+    "title": "AI Co‑workers Threaten Existing Security Models",
+    "headline": "AI Co‑workers Threaten Existing Security Models",
+    "summary": "Persistent AI coworkers can operate continuously with standing access, exposing identity risks that current security models were not designed to handle. Token Security recommends giving each agent its own identity, owner, scoped permissions, and lifecycle controls to mitigate these risks.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-09-30T14:01:11.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/ais-third-wave-coworkers-break-the-security-model-that-worked-for-agents/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://therecord.media/ukraine-ssscip-mobile-malware-warning-ios-android",
+    "sourceUrl": "https://therecord.media/ukraine-ssscip-mobile-malware-warning-ios-android",
+    "title": "Ukrainian Researchers Warn of DarkSword iPhone Malware Exploit Kit",
+    "headline": "Ukrainian Researchers Warn of DarkSword iPhone Malware Exploit Kit",
+    "summary": "Ukrainian SSSCIP researchers identified DarkSword, a hit‑and‑run iPhone malware part of a wave of Russian attacks on iOS and Android devices. The kit exploits iOS vulnerabilities to deliver malicious payloads, highlighting the need for updated mobile security defenses.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "publishedAt": "2026-09-30T14:00:00.000Z",
+    "url": "https://therecord.media/ukraine-ssscip-mobile-malware-warning-ios-android",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/signal-adds-encypted-local-backup-support-to-ios-desktop-apps/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.securityweek.com/watchguard-patches-critical-fireware-os-code-injection-vulnerability/",
+    "sourceUrl": "https://www.securityweek.com/watchguard-patches-critical-fireware-os-code-injection-vulnerability/",
+    "title": "WatchGuard Releases Patches for Critical Fireware OS Code Injection Vulnerabilities",
+    "headline": "WatchGuard Releases Patches for Critical Fireware OS Code Injection Vulnerabilities",
+    "summary": "WatchGuard has issued patches addressing 15 bugs in Fireware OS, including code execution, denial‑of‑service, authorization bypass, and path traversal flaws. The updates mitigate potential remote code execution and denial‑of‑service attacks against Fireware OS devices. Users should apply the latest firmware to secure their network appliances.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-09-30T13:16:56.000Z",
+    "url": "https://www.securityweek.com/watchguard-patches-critical-fireware-os-code-injection-vulnerability/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://blog.cloudflare.com/auto-router/",
+    "sourceUrl": "https://blog.cloudflare.com/auto-router/",
+    "title": "Cloudflare AI Gateway Adds Auto Router to Cut AI Spend",
+    "headline": "Cloudflare AI Gateway Adds Auto Router to Cut AI Spend",
+    "summary": "Cloudflare AI Gateway now includes an Auto Router that uses an edge‑deployed classifier to evaluate request complexity and select the most cost‑effective model. The feature balances output quality against token costs, enabling organizations to reduce AI spending while maintaining performance.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "publishedAt": "2026-09-30T13:00:00.000Z",
+    "url": "https://blog.cloudflare.com/auto-router/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://therecord.media/russia-hackers-ukraine-blizzard",
+    "sourceUrl": "https://therecord.media/russia-hackers-ukraine-blizzard",
+    "title": "Russian FSB-Linked Hackers Expand Phishing Campaigns Targeting Ukraine Supporters",
+    "headline": "Russian FSB-Linked Hackers Expand Phishing Campaigns Targeting Ukraine Supporters",
+    "summary": "Russian state‑backed group Star Blizzard has broadened its phishing operations this year, deploying a new technique that simplifies malware delivery to Ukraine supporters. The method eases infection by reducing user interaction, increasing the likelihood of successful compromise. No specific CVE cited.",
+    "category": "NATION_STATE",
+    "severity": "HIGH",
+    "source": "The Record",
+    "publishedAt": "2026-09-30T12:00:00.000Z",
+    "url": "https://therecord.media/russia-hackers-ukraine-blizzard",
+    "additionalSources": [
+      {
+        "source": "Microsoft Security",
+        "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/09/29/phishing-abuses-rmm-tools-persistent-access/"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/09/know-your-enemy-browser-based-attack.html",
+    "sourceUrl": "https://thehackernews.com/2026/09/know-your-enemy-browser-based-attack.html",
+    "title": "Browser-Based Attack Techniques Dominating 2026 Threat Landscape",
+    "headline": "Browser-Based Attack Techniques Dominating 2026 Threat Landscape",
+    "summary": "In 2026, attackers increasingly exploit browsers to launch full attack chains, from initial access to data exfiltration, without leaving the session. Security teams should monitor six high‑risk techniques, including XSS, CSRF, and malicious extensions, to defend against evolving web‑based threats.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "publishedAt": "2026-09-30T11:58:00.000Z",
+    "url": "https://thehackernews.com/2026/09/know-your-enemy-browser-based-attack.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/09/30/ai-coding-agents-github-screenshot-leak/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/ai-coding-agents-github-screenshot-leak/",
+    "title": "AI Coding Agents Leak 13,000 Internal Company Screenshots to Public GitHub Repos",
+    "headline": "AI Coding Agents Leak 13,000 Internal Company Screenshots to Public GitHub Repos",
+    "summary": "Glow Labs researchers discovered that AI coding agents were automatically posting internal screenshots, including customer billing records, to public GitHub repositories. Over 13,000 images from more than 300 organizations were exposed across 900+ code repos, revealing sensitive data and unreleased features. The leak highlights a breach of internal confidentiality and the need for stricter data handling controls.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "publishedAt": "2026-09-30T11:52:30.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/09/30/ai-coding-agents-github-screenshot-leak/",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/09/ai-coding-agents-exposed-13000-internal.html"
+      }
+    ]
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/09/30/air-force-members-sentenced-bec-phishing/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/air-force-members-sentenced-bec-phishing/",
     "title": "Former US Air Force Members Sentenced for Million-Dollar Business Email Compromise Scheme",
@@ -164,19 +305,6 @@
     ]
   },
   {
-    "id": "https://www.helpnetsecurity.com/2026/09/30/relentless-defense-cisco-cybersecurity-survey/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/relentless-defense-cisco-cybersecurity-survey/",
-    "title": "Organizations Need Six Months to Deploy New Security Controls",
-    "headline": "Organizations Need Six Months to Deploy New Security Controls",
-    "summary": "A Cisco survey of 8,000 security professionals across 30 markets found only 8% of organizations can quickly roll out new security controls. Internal friction and turf wars slow deployment, while AI models can identify software vulnerabilities faster than human teams. The study highlights the challenge of timely security updates.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-09-30T03:30:01.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/09/30/relentless-defense-cisco-cybersecurity-survey/",
-    "additionalSources": []
-  },
-  {
     "id": "https://www.helpnetsecurity.com/2026/09/30/cloudflare-certificate-authority-2027/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/cloudflare-certificate-authority-2027/",
     "title": "Cloudflare to Issue Post-Quantum Certificates in Early 2027",
@@ -206,59 +334,6 @@
     "publishedAt": "2026-09-30T01:48:21.000Z",
     "url": "https://www.securityweek.com/trump-says-top-tech-firms-have-signed-accord-to-self-police-ai-development/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.microsoft.com/en-us/security/blog/2026/09/29/phishing-abuses-rmm-tools-persistent-access/",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/09/29/phishing-abuses-rmm-tools-persistent-access/",
-    "title": "Phishing Campaigns Exploit MSP360 RMM to Deploy Remote Access Tools",
-    "headline": "Phishing Campaigns Exploit MSP360 RMM to Deploy Remote Access Tools",
-    "summary": "Microsoft identified phishing attacks that leveraged MSP360 RMM to install ScreenConnect, creating redundant remote‑access channels for subsequent malicious activity. The technique allows attackers to maintain persistent footholds via legitimate remote‑management software.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Microsoft Security",
-    "publishedAt": "2026-09-29T21:39:27.000Z",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/29/phishing-abuses-rmm-tools-persistent-access/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/cyberattacks-data-breaches/apple-zero-day-vulnerability-weaponized-targeted-attacks",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/apple-zero-day-vulnerability-weaponized-targeted-attacks",
-    "title": "Apple Zero‑Day CVE‑2026‑86950 Weaponized in Targeted Attacks",
-    "headline": "Apple Zero‑Day CVE‑2026‑86950 Weaponized in Targeted Attacks",
-    "summary": "Attackers are exploiting CVE‑2026‑86950, an out‑of‑bounds write flaw in Apple software, in highly sophisticated attacks. The vulnerability allows attackers to overwrite memory and potentially execute arbitrary code, enabling targeted compromise of affected devices. Apple has issued a patch to mitigate the flaw.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "publishedAt": "2026-09-29T21:31:29.000Z",
-    "url": "https://www.darkreading.com/cyberattacks-data-breaches/apple-zero-day-vulnerability-weaponized-targeted-attacks",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/apple-core-graphics-zero-day-cve-2026-86950-fixed/"
-      },
-      {
-        "source": "Dark Reading",
-        "sourceUrl": "https://www.darkreading.com/ics-ot-security/one-packet-crash-servers-tdengine"
-      }
-    ]
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/signal-adds-encypted-local-backup-support-to-ios-desktop-apps/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/signal-adds-encypted-local-backup-support-to-ios-desktop-apps/",
-    "title": "Signal Releases Encrypted Local Backup Feature in Version 8.30",
-    "headline": "Signal Releases Encrypted Local Backup Feature in Version 8.30",
-    "summary": "Signal version 8.30 now supports encrypted local backups on all supported platforms—Android, iOS, Linux, macOS, and Windows—completing the rollout of its secure backups feature. Users can create local encrypted copies of their message history, enhancing data protection and recovery options.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-09-29T21:30:08.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/signal-adds-encypted-local-backup-support-to-ios-desktop-apps/",
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/star-blizzard-redflick-phishing-cosmicpulse-backdoor"
-      }
-    ]
   },
   {
     "id": "https://www.bleepingcomputer.com/news/security/custom-chatgpts-push-clickfix-attacks-to-deploy-rat-malware/",
