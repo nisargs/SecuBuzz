@@ -11,13 +11,51 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
-    "slug": "cisco-issues-patch-for-exploited-sd-wan-zero-day-cve-2026-76",
-    "title": "Cisco Issues Patch for Exploited SD‑WAN Zero‑Day CVE‑2026‑76504",
-    "summary": "Cisco released security updates for the Catalyst SD‑WAN Manager to fix a critical zero‑day (CVE‑2026‑76504) that attackers are actively exploiting to gain admin privileges. The patch addresses the flaw and mitigates the escalation risk.",
+    "slug": "cisa-warns-of-critical-pre-auth-rce-in-mikrotik-routeros",
+    "title": "CISA Warns of Critical Pre-Auth RCE in MikroTik RouterOS",
+    "summary": "CISA has identified a critical pre-authentication remote code execution flaw in MikroTik RouterOS that can allow attackers to execute arbitrary code or cause a denial‑of‑service. The vulnerability affects all RouterOS versions and requires no user interaction. MikroTik has released patches; users should update immediately to mitigate the risk.",
     "category": "Vulnerability",
     "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-new-sd-wan-authentication-bypass-zero-day-exploited-in-attacks/",
-    "publishedAt": "2026-09-30T14:46:40.000Z",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-pre-auth-rce-flaw-in-mikrotik-routeros/",
+    "publishedAt": "2026-09-30T15:49:29.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "cisco-issues-advisory-for-cve-2026-76504-authentication-bypa",
+    "title": "Cisco Issues Advisory for CVE-2026-76504 Authentication Bypass in SD‑WAN Manager",
+    "summary": "Cisco has warned that attackers are exploiting CVE-2026-76504, a critical authentication bypass in Cisco Catalyst SD‑WAN Manager. The flaw lets unauthenticated attackers use the Manager’s API with admin privileges, enabling full control over SD‑WAN networks. Fixed releases are available; no workaround exists, so users must apply the patch promptly.",
+    "category": "Vulnerability",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/09/cisco-warns-of-attackers-exploiting.html",
+    "publishedAt": "2026-09-30T15:24:54.000Z",
+    "cves": [
+      "CVE-2026-76504"
+    ],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "russia-s-star-blizzard-expands-phishing-tactics-with-redflic",
+    "title": "Russia’s Star Blizzard Expands Phishing Tactics with RedFlick to Deploy CosmicPulse Backdoor",
+    "summary": "The APT group Star Blizzard, linked to Russia, is using a new phishing method called RedFlick to target Ukrainian‑linked NGOs, think tanks, and journalists. The campaign delivers the CosmicPulse backdoor, enabling persistent access to victim systems.",
+    "category": "Malware",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/threat-intelligence/russia-star-blizzard-apt-ditches-clickfix-widen-phishing-net",
+    "publishedAt": "2026-09-30T15:02:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "chatgpt-custom-gpts-used-to-deliver-remote-access-trojan-via",
+    "title": "ChatGPT Custom GPTs Used to Deliver Remote Access Trojan via ClickFix Lures",
+    "summary": "Threat actors are exploiting ChatGPT Custom GPTs to masquerade as legitimate products, directing users to malicious sites that employ ClickFix lures. The technique delivers a remote access trojan, relying on user interaction and phishing.",
+    "category": "Malware",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/09/attackers-abuse-chatgpt-custom-gpts-to.html",
+    "publishedAt": "2026-09-30T15:00:15.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -47,6 +85,20 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
+    "slug": "unauthenticated-command-injection-on-zimbra-mail-servers-exp",
+    "title": "Unauthenticated Command Injection on Zimbra Mail Servers Exploited via CVE-2026-73570",
+    "summary": "Microsoft Threat Intelligence reports that CVE-2026-73570 allows unauthenticated command injection on internet-facing Zimbra mail servers. Attackers can execute arbitrary commands, potentially compromising server integrity. Detection involves monitoring unusual outbound traffic, and mitigation includes applying the latest security patch and disabling remote command execution features.",
+    "category": "Vulnerability",
+    "source": "Microsoft Security",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/09/30/unauthenticated-command-injection-on-internet-facing-mail-servers-tracking-cve-2026-73570/",
+    "publishedAt": "2026-09-30T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-73570"
+    ],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "ukrainian-researchers-warn-of-darksword-iphone-malware-explo",
     "title": "Ukrainian Researchers Warn of DarkSword iPhone Malware Exploit Kit",
     "summary": "Ukrainian SSSCIP researchers identified DarkSword, a hit‑and‑run iPhone malware part of a wave of Russian attacks on iOS and Android devices. The kit exploits iOS vulnerabilities to deliver malicious payloads, highlighting the need for updated mobile security defenses.",
@@ -54,6 +106,18 @@ export const news: NewsBrief[] = [
     "source": "The Record",
     "sourceUrl": "https://therecord.media/ukraine-ssscip-mobile-malware-warning-ios-android",
     "publishedAt": "2026-09-30T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "microsoft-enhances-entra-id-protection-against-external-scri",
+    "title": "Microsoft Enhances Entra ID Protection Against External Script Injection",
+    "summary": "Microsoft will strengthen Entra ID authentication to block external script injection attacks starting October. The update aims to prevent attackers from injecting malicious scripts into authentication flows, reducing the risk of credential theft and session hijacking. Users should ensure their Entra ID environment is updated before the rollout.",
+    "category": "Vulnerability",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-to-block-entra-id-script-injection-attacks-starting-october/",
+    "publishedAt": "2026-09-30T13:37:15.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -71,13 +135,52 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "cloudflare-ai-gateway-adds-auto-router-to-cut-ai-spend",
-    "title": "Cloudflare AI Gateway Adds Auto Router to Cut AI Spend",
-    "summary": "Cloudflare AI Gateway now includes an Auto Router that uses an edge‑deployed classifier to evaluate request complexity and select the most cost‑effective model. The feature balances output quality against token costs, enabling organizations to reduce AI spending while maintaining performance.",
+    "slug": "cloudflare-impact-reaches-100-million-in-donations",
+    "title": "Cloudflare Impact Reaches $100 Million in Donations",
+    "summary": "Cloudflare’s Impact program has reached a $100 million milestone in donated services, shielding thousands of entities—including journalists, civil society groups, state and local governments, election bodies, and public schools—from cyberattacks. The initiative expands protection for vulnerable organizations worldwide in the coming months.",
     "category": "Cloud",
     "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/auto-router/",
+    "sourceUrl": "https://blog.cloudflare.com/100-million-donations/",
+    "publishedAt": "2026-09-30T13:01:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "cloudflare-workers-adds-built-in-error-monitoring-to-send-is",
+    "title": "Cloudflare Workers Adds Built‑in Error Monitoring to Send Issues to Coding Agents",
+    "summary": "Cloudflare Workers now includes built‑in error monitoring that groups production failures and forwards stack traces, logs, traces, and application context directly to a coding agent. The feature enables developers to investigate issues faster and automatically open pull requests, streamlining debugging and deployment workflows.",
+    "category": "Cloud",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/real-time-issue-detection/",
     "publishedAt": "2026-09-30T13:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "netscaler-zero-day-attacks-target-government-and-finance-org",
+    "title": "NetScaler Zero-Day Attacks Target Government and Finance Organizations",
+    "summary": "Security firms confirmed exploitation of NetScaler vulnerabilities CVE-2026-88771 and CVE-2026-88772, affecting government and finance entities over several weeks. The zero-day flaws enable remote code execution, compromising critical infrastructure. Immediate patching and vulnerability management are required to mitigate the threat.",
+    "category": "Vulnerability",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/government-finance-orgs-targeted-in-weeks-long-netscaler-zero-day-attacks/",
+    "publishedAt": "2026-09-30T12:48:20.000Z",
+    "cves": [
+      "CVE-2026-88771",
+      "CVE-2026-88772"
+    ],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "chrome-and-firefox-patch-over-100-vulnerabilities-including-",
+    "title": "Chrome and Firefox Patch Over 100 Vulnerabilities, Including RCE Flaws",
+    "summary": "Chrome and Firefox updates address more than 100 security issues, some permitting remote attackers to execute arbitrary code or escape browser sandboxes. The patches close potential exploitation vectors that could lead to system compromise. Users should install the latest browser versions to maintain protection.",
+    "category": "Vulnerability",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/chrome-firefox-updates-patch-over-100-vulnerabilities/",
+    "publishedAt": "2026-09-30T12:16:52.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -107,14 +210,16 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "ai-coding-agents-leak-13-000-internal-company-screenshots-to",
-    "title": "AI Coding Agents Leak 13,000 Internal Company Screenshots to Public GitHub Repos",
-    "summary": "Glow Labs researchers discovered that AI coding agents were automatically posting internal screenshots, including customer billing records, to public GitHub repositories. Over 13,000 images from more than 300 organizations were exposed across 900+ code repos, revealing sensitive data and unreleased features. The leak highlights a breach of internal confidentiality and the need for stricter data handling controls.",
-    "category": "Breach",
+    "slug": "openinfra-europe-s-jfrog-artifactory-compromised-via-cve-202",
+    "title": "OpenInfra Europe’s JFrog Artifactory Compromised via CVE-2026-82329",
+    "summary": "Attackers breached a self-hosted JFrog Artifactory instance operated by OpenInfra Europe, exploiting CVE-2026-82329. Users who downloaded or installed artifacts from https://artifactory.nordix.org/ between August 28 and September 15, 2026 should immediately stop using them, remove them from pipelines, and treat the packages as potentially compromised.",
+    "category": "Vulnerability",
     "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/ai-coding-agents-github-screenshot-leak/",
-    "publishedAt": "2026-09-30T11:52:30.000Z",
-    "cves": [],
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/openinfra-jfrog-artifactory-instance-compromised/",
+    "publishedAt": "2026-09-30T10:39:26.000Z",
+    "cves": [
+      "CVE-2026-82329"
+    ],
     "additionalSources": [],
     "aliases": []
   },
@@ -175,20 +280,6 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/owasp-noir-open-source-static-analysis-tool/",
     "publishedAt": "2026-09-30T05:30:36.000Z",
     "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "citrix-netscaler-cve-2026-88772-enables-pre-auth-shellcode-e",
-    "title": "Citrix NetScaler CVE-2026-88772 Enables Pre-Auth Shellcode Execution",
-    "summary": "A memory overflow bug in Citrix NetScaler ADC and Gateway’s DTLS handling allows attackers to execute shellcode without authentication. The flaw, CVE-2026-88772, has a CVSS score of 9.5 and is actively exploited in the wild. Patching is mandatory to prevent remote code execution.",
-    "category": "Vulnerability",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html",
-    "publishedAt": "2026-09-30T05:30:30.000Z",
-    "cves": [
-      "CVE-2026-88772"
-    ],
     "additionalSources": [],
     "aliases": []
   },
@@ -260,18 +351,6 @@ export const news: NewsBrief[] = [
     "source": "SecurityWeek",
     "sourceUrl": "https://www.securityweek.com/trump-says-top-tech-firms-have-signed-accord-to-self-police-ai-development/",
     "publishedAt": "2026-09-30T01:48:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "custom-chatgpts-deploy-rat-malware-via-clickfix-attacks",
-    "title": "Custom ChatGPTs Deploy RAT Malware via ClickFix Attacks",
-    "summary": "Custom ChatGPT variants promoted in sponsored Google results direct users to malicious sites that use ClickFix attacks to deliver remote access trojan malware. The technique exploits users’ trust in AI tools, enabling attackers to install RATs without user interaction. Security teams should block such custom models and monitor for RAT activity.",
-    "category": "Vulnerability",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/custom-chatgpts-push-clickfix-attacks-to-deploy-rat-malware/",
-    "publishedAt": "2026-09-29T20:59:39.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -530,21 +609,6 @@ export const news: NewsBrief[] = [
     "publishedAt": "2026-09-29T12:00:00.000Z",
     "cves": [
       "CVE-2026-22755"
-    ],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "anjvision-yssd-rtmp-h5-os-command-injection-and-ssrf-vulnera",
-    "title": "Anjvision YSSD-RTMP-H5 OS Command Injection and SSRF Vulnerabilities",
-    "summary": "Anjvision YSSD-RTMP-H5 firmware (CVE-2026-100291 to CVE-2026-100299) contains multiple high‑severity flaws, including OS command injection, server‑side request forgery, hard‑coded credentials, and active debug code. These allow attackers to access sensitive data, execute OS‑level commands, and potentially take full control of the device. Update to the latest firmware to mitigate.",
-    "category": "Vulnerability",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-05",
-    "publishedAt": "2026-09-29T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-100291",
-      "CVE-2026-100299"
     ],
     "additionalSources": [],
     "aliases": []
