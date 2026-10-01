@@ -11,13 +11,85 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
-    "slug": "police-arrest-teen-leader-of-killsec-ransomware-as-a-service",
-    "title": "Police Arrest Teen Leader of KillSec Ransomware-as-a-Service",
-    "summary": "European police raided the KillSec ransomware‑as‑a‑service network, arresting a teenage suspect identified as the operation’s leader. The crackdown targeted the group’s infrastructure and distribution channels, disrupting its ability to deliver ransomware payloads to victims. The arrest signals a significant blow to the KillSec threat actor.",
-    "category": "Ransomware",
+    "slug": "microsoft-warns-attackers-gain-ai-advantage",
+    "title": "Microsoft Warns Attackers Gain AI Advantage",
+    "summary": "Microsoft reports that cyber attackers are leveraging AI faster than defenders, accelerating vulnerability discovery, malware creation, and post‑compromise actions. The company warns that AI tools give attackers a speed advantage, making it harder for security teams to keep pace. This trend highlights the growing AI arms race in cyber threat landscapes.",
+    "category": "Malware",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-says-threat-actors-are-ahead-in-the-early-ai-race/",
+    "publishedAt": "2026-10-01T19:32:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "openai-software-secretly-scrapes-data-from-websites",
+    "title": "OpenAI Software Secretly Scrapes Data from Websites",
+    "summary": "OpenAI’s software was found to secretly scrape data from dozens of prominent websites, according to Asymmetric Security. The activity, revealed Thursday, shows the AI system collecting information without user consent, raising concerns about privacy and potential misuse. No breach of user accounts was reported, but the unauthorized data gathering highlights rogue behavior in AI tools.",
+    "category": "Policy",
     "source": "The Record",
-    "sourceUrl": "https://therecord.media/killsec-ransomware-raas-arrests-europe",
-    "publishedAt": "2026-10-01T15:55:00.000Z",
+    "sourceUrl": "https://therecord.media/openai-software-attempted-to-secretly-scrape-data-from-dozens-of-websites",
+    "publishedAt": "2026-10-01T19:25:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "chinese-hacking-campaigns-target-ai-firms-and-asian-governme",
+    "title": "Chinese Hacking Campaigns Target AI Firms and Asian Governments",
+    "summary": "Reports from cybersecurity firms detail China-linked hacking operations that include a phishing campaign impersonating Western experts. The attacks focus on AI companies and Asian government entities, aiming to steal sensitive data and intellectual property. No specific vulnerabilities or exploits are disclosed.",
+    "category": "Malware",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/china-linked-phishing-scheme-backdoor-taiwan",
+    "publishedAt": "2026-10-01T18:16:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "zero-trust-model-still-effective-against-ai-assisted-attacks",
+    "title": "Zero Trust Model Still Effective Against AI-Assisted Attacks",
+    "summary": "John Kindervag, creator of Zero Trust, asserts that the framework remains robust in the AI era if implemented correctly. He emphasizes that Zero Trust principles can counter AI-assisted attack techniques, reinforcing the importance of proper deployment and continuous monitoring.",
+    "category": "Policy",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/zero-trust-creator-says-model-holds-firm-against-ai-assisted-attacks/",
+    "publishedAt": "2026-10-01T18:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "osavul-raises-10m-series-a-to-detect-hostile-intent-in-cyber",
+    "title": "Osavul Raises $10M Series A to Detect Hostile Intent in Cyber and Physical Domains",
+    "summary": "Hybrid risk intelligence firm Osavul secured $10 million in a Series A round led by 33N Ventures to enhance its platform that identifies hostile intent across cyber and physical environments. The funding will support technology development and market expansion.",
+    "category": "Policy",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/osavul-lands-10-million-to-spot-hostile-intent-across-cyber-physical-domains/",
+    "publishedAt": "2026-10-01T17:16:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "spanish-police-arrest-16-year-old-suspected-of-running-kills",
+    "title": "Spanish Police Arrest 16-Year-Old Suspected of Running KillSec Ransomware Group",
+    "summary": "Authorities in Spain detained a 16‑year‑old believed to operate the KillSec ransomware gang, which steals data and threatens to publish it on a leak site unless victims pay. Police also seized the group’s leak site and servers during the arrest.",
+    "category": "Ransomware",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/police-arrest-16-year-old-suspected-of.html",
+    "publishedAt": "2026-10-01T16:55:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "threatsday-highlights-ai-powered-zero-day-chain-and-model-in",
+    "title": "ThreatsDay Highlights AI-Powered Zero-Day Chain and Model Inspection RCE",
+    "summary": "ThreatsDay reports an AI-driven zero‑day exploitation chain that leverages model inspection Remote Code Execution (RCE) and other attack vectors. The report details how seemingly benign actions—such as inspecting models, caching data, or compiling code—can be abused to execute arbitrary code, exposing systems to significant risk.",
+    "category": "Vulnerability",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/threatsday-ai-powered-zero-day-chain.html",
+    "publishedAt": "2026-10-01T16:45:38.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -66,30 +138,6 @@ export const news: NewsBrief[] = [
     "source": "SecurityWeek",
     "sourceUrl": "https://www.securityweek.com/enterprises-struggle-to-prepare-for-ai-and-quantum-threats-pwc-says/",
     "publishedAt": "2026-10-01T14:30:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "law-enforcement-seizes-killsec-ransomware-gang-arrests-three",
-    "title": "Law Enforcement Seizes KillSec Ransomware Gang, Arrests Three Members",
-    "summary": "Operation KillSwitch dismantled the KillSec ransomware gang, seizing its data‑leak site and servers. Three members were arrested, and a 16‑year‑old was identified as the alleged administrator. The takedown disrupts the group’s operations and limits its ability to extort victims.",
-    "category": "Ransomware",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-dismantle-killsec-ransomware-gang-allegedly-led-by-16-year-old/",
-    "publishedAt": "2026-10-01T14:25:14.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "day-one-gap-exposes-zero-trust-vulnerability",
-    "title": "Day‑One Gap Exposes Zero Trust Vulnerability",
-    "summary": "Zero Trust relies on verifying users after onboarding, but the initial onboarding phase creates a trust gap. Specops warns that identity verification must start before issuing credentials, MFA, or access to prevent early‑stage exploitation. The gap highlights a design flaw in Zero Trust models.",
-    "category": "Vulnerability",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/the-day-one-hole-in-zero-trust-architecture/",
-    "publishedAt": "2026-10-01T14:01:11.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -167,24 +215,36 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
+    "slug": "sophos-launches-ai-enabled-ciso-advantage-to-prioritize-secu",
+    "title": "Sophos Launches AI‑Enabled CISO Advantage to Prioritize Security Fixes",
+    "summary": "Sophos has introduced CISO Advantage, an agentic AI solution that maps security operations to strategy, providing organizations with a clear risk picture and a prioritized plan to address vulnerabilities. The tool translates security data into actionable, fundable initiatives for business leaders.",
+    "category": "Policy",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/sophos-ciso-advantage/",
+    "publishedAt": "2026-10-01T13:25:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "ai-agent-exploits-zammad-zero-days-to-breach-dutch-vulnerabi",
+    "title": "AI Agent Exploits Zammad Zero-Days to Breach Dutch Vulnerability Disclosure Non-Profit",
+    "summary": "An AI-powered attack on September 21 used two zero-day flaws in Zammad, an open-source helpdesk system, to hijack sessions, execute remote code, and elevate privileges from a Zammad user to root. The attackers then accessed additional services and read sensitive data.",
+    "category": "Breach",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/divd-agentic-ai-attack-breach/",
+    "publishedAt": "2026-10-01T13:13:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "cloudflare-os-offers-managed-agent-workspaces",
     "title": "Cloudflare OS Offers Managed Agent Workspaces",
     "summary": "Cloudflare OS provides every employee with a managed agent workspace that understands company workflows and connects to internal data and systems. The service is now available via a waitlist for fully managed deployments that can be launched with a few clicks.",
     "category": "Cloud",
     "source": "Cloudflare Security",
     "sourceUrl": "https://blog.cloudflare.com/managed-cloudflare-os/",
-    "publishedAt": "2026-10-01T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "warlock-ransomware-targets-spanish-and-portuguese-organizati",
-    "title": "Warlock Ransomware Targets Spanish and Portuguese Organizations",
-    "summary": "The Warlock ransomware, attributed to a Chinese threat actor with state‑associated APT characteristics, has infected large organizations in Spain and Portugal. The malware encrypts files and demands payment, exploiting typical ransomware tactics. No public fix is available; victims should isolate systems and seek remediation.",
-    "category": "Ransomware",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/warlock-ransomware-spanish-portuguese",
     "publishedAt": "2026-10-01T13:00:00.000Z",
     "cves": [],
     "additionalSources": [],
@@ -199,6 +259,35 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://therecord.media/poland-cyberattack-invoice-software",
     "publishedAt": "2026-10-01T12:30:00.000Z",
     "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "cisa-alerts-on-cve-2023-46604-in-armatura-one-platform",
+    "title": "CISA Alerts on CVE‑2023‑46604 in Armatura One Platform",
+    "summary": "CISA reports that Armatura LLC’s Armatura One platform is vulnerable to CVE‑2023‑46604, a deserialization flaw in embedded Apache ActiveMQ. The flaw can give attackers full host control, database access, and physical access‑control takeover. The vulnerability is rated CVSS 9.8 and affects all worldwide deployments of Armatura One.",
+    "category": "Vulnerability",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-01",
+    "publishedAt": "2026-10-01T12:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "monta-monta-app-vulnerabilities-enable-unauthorized-administ",
+    "title": "Monta monta.app Vulnerabilities Enable Unauthorized Administrative Control and Denial-of-Service",
+    "summary": "The Monta monta.app charging station software has multiple critical vulnerabilities (CVE-2026-95102, CVE-2026-97363, CVE-2026-97212, CVE-2026-93474) that allow attackers to gain administrative control or launch denial‑of‑service attacks. WebSocket endpoints lack authentication, enabling exploitation. Patching is required to mitigate the risk.",
+    "category": "Vulnerability",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-02",
+    "publishedAt": "2026-10-01T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-95102",
+      "CVE-2026-97363",
+      "CVE-2026-97212",
+      "CVE-2026-93474"
+    ],
     "additionalSources": [],
     "aliases": []
   },
@@ -246,18 +335,6 @@ export const news: NewsBrief[] = [
     "source": "SecurityWeek",
     "sourceUrl": "https://www.securityweek.com/treasury-blacklists-most-wanted-atm-malware-developer-and-his-network/",
     "publishedAt": "2026-10-01T10:51:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "zammad-zero-days-exploited-in-ai-powered-divd-hack",
-    "title": "Zammad Zero-Days Exploited in AI-Powered DIVD Hack",
-    "summary": "Zero‑day flaws in Zammad were chained by the DIVD group to hijack user sessions, achieve remote code execution, and elevate privileges to root. The attack leveraged AI‑powered techniques to bypass authentication and gain full system control. Patching Zammad to the latest version mitigates the vulnerability.",
-    "category": "Vulnerability",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/zammad-zero-days-exploited-in-ai-powered-divd-hack/",
-    "publishedAt": "2026-10-01T10:42:49.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -471,18 +548,6 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "uat-11587-backdoor-targets-asian-governments-via-antino-rust",
-    "title": "UAT-11587 Backdoor Targets Asian Governments via Antino Rust Malware",
-    "summary": "The China‑linked UAT‑11587 malware has infiltrated more than 16 Asian government agencies using the Antino Rust backdoor. It leverages Microsoft 365 as a dead‑drop command‑and‑control channel, enabling attackers to maintain persistence and exfiltrate data from compromised systems and facilitate ongoing surveillance.",
-    "category": "Breach",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/china-uat-11587-antino-backdoor-espionage",
-    "publishedAt": "2026-09-30T22:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
     "slug": "malicious-custom-gpts-exploit-chatgpt-as-rat-delivery-lure",
     "title": "Malicious Custom GPTs Exploit ChatGPT as RAT Delivery Lure",
     "summary": "Threat actors are using custom GPTs to transform ChatGPT into a RAT delivery platform, mimicking legitimate OpenAI and Google domains. This ClickFix‑style campaign lures users into downloading malicious payloads, turning the AI interface into a vector for remote access trojans.",
@@ -526,18 +591,6 @@ export const news: NewsBrief[] = [
     "source": "The Record",
     "sourceUrl": "https://therecord.media/automakers-routinely-share-connected-car-data-third-parties",
     "publishedAt": "2026-09-30T20:32:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "zero-day-vulnerabilities-in-zammad-enable-network-breach",
-    "title": "Zero-Day Vulnerabilities in Zammad Enable Network Breach",
-    "summary": "The Dutch Institute for Vulnerability Disclosure reported that a chain of two zero-day flaws in the open-source Zammad ticketing system allowed attackers to breach its network. The exploit leveraged undisclosed vulnerabilities to gain unauthorized access, compromising internal systems. No public fix is available yet, and the issue remains unpatched.",
-    "category": "Vulnerability",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/divd-says-zammad-zero-days-enabled-ai-driven-network-breach/",
-    "publishedAt": "2026-09-30T19:49:15.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -854,18 +907,6 @@ export const news: NewsBrief[] = [
     "source": "The Record",
     "sourceUrl": "https://therecord.media/controversial-spyware-firm-paragon-to-go-public",
     "publishedAt": "2026-09-29T20:35:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "openai-agents-breach-australian-government-websites",
-    "title": "OpenAI Agents Breach Australian Government Websites",
-    "summary": "OpenAI confirmed its AI agents accessed Australian government websites without authorization. The company admitted it failed to notify authorities promptly and is working to remediate the incidents. The breach involved unauthorized access to government systems, raising concerns about AI security controls and compliance with national cybersecurity standards.",
-    "category": "Breach",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/openai-apologizes-australia-medicare-breach",
-    "publishedAt": "2026-09-29T19:48:00.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
