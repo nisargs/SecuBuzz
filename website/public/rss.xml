@@ -5,8 +5,71 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Oct 2026 08:20:08 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2026 12:20:14 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Financial Services Companies Discuss Modernizing Software Supply Chain</title>
+      <link>https://secubuzz.com/news/financial-services-companies-discuss-modernizing-software-su</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/financial-services-companies-discuss-modernizing-software-su</guid>
+      <description><![CDATA[Security leaders in banks, insurers, and asset managers debate how to eliminate supply‑chain vulnerabilities. Engineering teams outline platform upgrades, while testing budgets and change‑freeze schedules create delays. The result is often an exception, compensating control, or postponed date, highlighting the challenge of modernizing supply chains.]]></description>
+      <pubDate>Thu, 01 Oct 2026 11:45:00 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/how-financial-services-companies-can.html">The Hacker News</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Armadin Raises $255 Million, Valuation Hits $2.5 Billion</title>
+      <link>https://secubuzz.com/news/armadin-raises-255-million-valuation-hits-2-5-billion</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/armadin-raises-255-million-valuation-hits-2-5-billion</guid>
+      <description><![CDATA[AI‑powered offensive security startup Armadin secured $255 million in Series B funding, bringing total capital to about $445 million. The investment follows a public launch just seven months earlier, positioning the company at a $2.5 billion valuation.]]></description>
+      <pubDate>Thu, 01 Oct 2026 11:40:51 GMT</pubDate>
+      <source url="https://www.securityweek.com/kevin-mandias-armadin-raises-255-million-at-2-5-billion-valuation/">SecurityWeek</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Treasury Blacklists ATM Malware Developer Tren de Aragua</title>
+      <link>https://secubuzz.com/news/treasury-blacklists-atm-malware-developer-tren-de-aragua</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/treasury-blacklists-atm-malware-developer-tren-de-aragua</guid>
+      <description><![CDATA[The U.S. Treasury has blacklisted Tren de Aragua, the developer behind an ATM jackpotting malware network. The action follows investigations into the developer’s scheme to hijack ATMs for illicit cash withdrawals. The blacklist aims to curb further criminal activity and protect banking infrastructure.]]></description>
+      <pubDate>Thu, 01 Oct 2026 10:51:39 GMT</pubDate>
+      <source url="https://www.securityweek.com/treasury-blacklists-most-wanted-atm-malware-developer-and-his-network/">SecurityWeek</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Zammad Zero-Days Exploited in AI-Powered DIVD Hack</title>
+      <link>https://secubuzz.com/news/zammad-zero-days-exploited-in-ai-powered-divd-hack</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/zammad-zero-days-exploited-in-ai-powered-divd-hack</guid>
+      <description><![CDATA[Zero‑day flaws in Zammad were chained by the DIVD group to hijack user sessions, achieve remote code execution, and elevate privileges to root. The attack leveraged AI‑powered techniques to bypass authentication and gain full system control. Patching Zammad to the latest version mitigates the vulnerability.]]></description>
+      <pubDate>Thu, 01 Oct 2026 10:42:49 GMT</pubDate>
+      <source url="https://www.securityweek.com/zammad-zero-days-exploited-in-ai-powered-divd-hack/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>OpenAI Disrupts Moonshot AI Reasoning Extraction Campaign</title>
+      <link>https://secubuzz.com/news/openai-disrupts-moonshot-ai-reasoning-extraction-campaign</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openai-disrupts-moonshot-ai-reasoning-extraction-campaign</guid>
+      <description><![CDATA[OpenAI identified and disrupted a coordinated distillation campaign targeting its AI models to illicitly extract protected reasoning. The activity, traced back to July, was linked to individuals associated with Moonshot AI, a Beijing-based Chinese company. OpenAI’s intervention halted the campaign and protected model integrity.]]></description>
+      <pubDate>Thu, 01 Oct 2026 10:42:36 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/openai-disrupts-reasoning-extraction.html">The Hacker News</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Cisco SD‑WAN Zero‑Day Exploited in the Wild</title>
+      <link>https://secubuzz.com/news/cisco-sd-wan-zero-day-exploited-in-the-wild</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisco-sd-wan-zero-day-exploited-in-the-wild</guid>
+      <description><![CDATA[Cisco’s SD‑WAN solution suffered a zero‑day vulnerability (CVE‑2026‑76504) actively exploited in September 2026. Attackers leveraged the flaw to gain unauthorized access, and Cisco has released indicators of compromise for defenders to check. No further technical details or mitigation steps have been disclosed yet.]]></description>
+      <pubDate>Thu, 01 Oct 2026 10:18:21 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/01/new-cisco-sd-wan-zero-day-exploited-in-the-wild-cve-2026-76504/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Pentagon Personnel Records Breached, 3 Million+ Stolen</title>
+      <link>https://secubuzz.com/news/pentagon-personnel-records-breached-3-million-stolen</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/pentagon-personnel-records-breached-3-million-stolen</guid>
+      <description><![CDATA[Hackers breached the Pentagon’s Defense Manpower Data Center, stealing personal records of over three million military personnel. The breach exposed sensitive HR data, prompting the Pentagon to notify affected service members and initiate investigations into the unauthorized access.]]></description>
+      <pubDate>Thu, 01 Oct 2026 09:44:28 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/hackers-breach-pentagon-human-resources-management-system-steal-data-of-nearly-3-million-people/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Google Gemini 4 Argon Identifies Critical Hospital Software Vulnerability</title>
       <link>https://secubuzz.com/news/google-gemini-4-argon-identifies-critical-hospital-software-</link>
@@ -143,15 +206,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>US Sanctions 10 Over ATM Malware Scheme Tied to Tren de Aragua</title>
-      <link>https://secubuzz.com/news/us-sanctions-10-over-atm-malware-scheme-tied-to-tren-de-arag</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/us-sanctions-10-over-atm-malware-scheme-tied-to-tren-de-arag</guid>
-      <description><![CDATA[The U.S. Treasury’s Office of Foreign Assets Control sanctioned ten individuals and companies linked to an ATM malware operation that stole money from dozens of machines. The targets are connected to the Tren de Aragua scheme, and the sanctions aim to disrupt the laundering of the stolen funds.]]></description>
-      <pubDate>Wed, 30 Sep 2026 22:35:00 GMT</pubDate>
-      <source url="https://therecord.media/us-sanctions-10-atm-jackpotting-tren-de-aragua">The Record</source>
-      <category>Malware</category>
-    </item>
-    <item>
       <title>UAT-11587 Backdoor Targets Asian Governments via Antino Rust Malware</title>
       <link>https://secubuzz.com/news/uat-11587-backdoor-targets-asian-governments-via-antino-rust</link>
       <guid isPermaLink="true">https://secubuzz.com/news/uat-11587-backdoor-targets-asian-governments-via-antino-rust</guid>
@@ -278,15 +332,6 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>Cisco Issues Advisory for CVE-2026-76504 Authentication Bypass in SD‑WAN Manager</title>
-      <link>https://secubuzz.com/news/cisco-issues-advisory-for-cve-2026-76504-authentication-bypa</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisco-issues-advisory-for-cve-2026-76504-authentication-bypa</guid>
-      <description><![CDATA[Cisco has warned that attackers are exploiting CVE-2026-76504, a critical authentication bypass in Cisco Catalyst SD‑WAN Manager. The flaw lets unauthenticated attackers use the Manager’s API with admin privileges, enabling full control over SD‑WAN networks. Fixed releases are available; no workaround exists, so users must apply the patch promptly.]]></description>
-      <pubDate>Wed, 30 Sep 2026 15:24:54 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/09/cisco-warns-of-attackers-exploiting.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>AI Co‑workers Threaten Existing Security Models</title>
       <link>https://secubuzz.com/news/ai-co-workers-threaten-existing-security-models</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ai-co-workers-threaten-existing-security-models</guid>
@@ -323,12 +368,12 @@
       <category>Cloud</category>
     </item>
     <item>
-      <title>Cloudflare Launches Pay Per Use Beta for AI Content Billing</title>
-      <link>https://secubuzz.com/news/cloudflare-launches-pay-per-use-beta-for-ai-content-billing</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-launches-pay-per-use-beta-for-ai-content-billing</guid>
-      <description><![CDATA[Cloudflare’s Pay Per Use beta lets AI firms report when they use publishers’ content, automatically handling billing, payouts, and reporting. The service tracks usage and ensures authors receive payment per use, providing a transparent, automated revenue model for content creators and AI developers.]]></description>
+      <title>Cloudflare Monetization Gateway Beta Enables Charging AI Agents</title>
+      <link>https://secubuzz.com/news/cloudflare-monetization-gateway-beta-enables-charging-ai-age</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-monetization-gateway-beta-enables-charging-ai-age</guid>
+      <description><![CDATA[Cloudflare’s new Monetization Gateway beta allows AI agents to be charged for token, API, and MCP tool usage via HTTP 402 responses. The beta is available to U.S. sellers who can apply for access, with partners like Ceramic.ai and Stocktwits already using the service.]]></description>
       <pubDate>Wed, 30 Sep 2026 13:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/pay-per-use/">Cloudflare Security</source>
+      <source url="https://blog.cloudflare.com/monetization-gateway-beta/">Cloudflare Security</source>
       <category>Cloud</category>
     </item>
     <item>
@@ -339,15 +384,6 @@
       <pubDate>Wed, 30 Sep 2026 13:00:00 GMT</pubDate>
       <source url="https://blog.cloudflare.com/ai-model-overuse-user-insights/">Cloudflare Security</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Cloudflare Workers Adds Built‑in Error Monitoring to Send Issues to Coding Agents</title>
-      <link>https://secubuzz.com/news/cloudflare-workers-adds-built-in-error-monitoring-to-send-is</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-workers-adds-built-in-error-monitoring-to-send-is</guid>
-      <description><![CDATA[Cloudflare Workers now includes built‑in error monitoring that groups production failures and forwards stack traces, logs, traces, and application context directly to a coding agent. The feature enables developers to investigate issues faster and automatically open pull requests, streamlining debugging and deployment workflows.]]></description>
-      <pubDate>Wed, 30 Sep 2026 13:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/real-time-issue-detection/">Cloudflare Security</source>
-      <category>Cloud</category>
     </item>
     <item>
       <title>Cloudflare Containers, rebuilt to scale agent sandboxes</title>
@@ -420,42 +456,6 @@
       <pubDate>Wed, 30 Sep 2026 08:09:28 GMT</pubDate>
       <source url="https://thehackernews.com/2026/09/openssl-fixes-high-severity-dtls-flaw.html">The Hacker News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Former US Air Force Members Sentenced for Million-Dollar Business Email Compromise Scheme</title>
-      <link>https://secubuzz.com/news/former-us-air-force-members-sentenced-for-million-dollar-bus</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/former-us-air-force-members-sentenced-for-million-dollar-bus</guid>
-      <description><![CDATA[Two former Air Force personnel, Chijioke Timothy Odimegwu and Harafat Mogaji, were sentenced to 189 months for running a BEC and phishing operation that targeted U.S. businesses. They sent spam emails to steal employee usernames and passwords, compromising corporate email accounts.]]></description>
-      <pubDate>Wed, 30 Sep 2026 07:42:11 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/09/30/air-force-members-sentenced-bec-phishing/">Help Net Security</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>South Africa Seeks Assistance After Ransomware Toolkit Hits Air Traffic Control Network</title>
-      <link>https://secubuzz.com/news/south-africa-seeks-assistance-after-ransomware-toolkit-hits-</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/south-africa-seeks-assistance-after-ransomware-toolkit-hits-</guid>
-      <description><![CDATA[A ransomware toolkit was installed on at least one operational South African air traffic control network, prompting authorities to seek external help. The attack targeted aviation infrastructure, potentially disrupting air traffic management systems and raising concerns about critical national infrastructure security.]]></description>
-      <pubDate>Wed, 30 Sep 2026 07:00:00 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyberattacks-data-breaches/south-africa-help-cyberattack-air-traffic-control">Dark Reading</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Genea Launches AI‑Enabled Access Control Platform</title>
-      <link>https://secubuzz.com/news/genea-launches-ai-enabled-access-control-platform</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/genea-launches-ai-enabled-access-control-platform</guid>
-      <description><![CDATA[Genea has unveiled Genea MCP, a Model Context Protocol server that connects AI agents directly to its access control system. The new tool enables role‑based permissions to be configured with a single sentence, streamlining onboarding and temporary access. The release positions Genea among the first providers to offer a native MCP server.]]></description>
-      <pubDate>Wed, 30 Sep 2026 06:49:24 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/09/30/genea-mcp/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Security Tools Now Scan Claude Enterprise Chats for Sensitive Data</title>
-      <link>https://secubuzz.com/news/security-tools-now-scan-claude-enterprise-chats-for-sensitiv</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/security-tools-now-scan-claude-enterprise-chats-for-sensitiv</guid>
-      <description><![CDATA[Over 100 security and compliance vendors now integrate with the Claude Compliance API, allowing companies to monitor Claude Enterprise activity. The feed captures conversations, uploaded files, projects, cowork and code sessions, prompts, responses, and tool calls, helping detect and protect sensitive information.]]></description>
-      <pubDate>Wed, 30 Sep 2026 06:31:58 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/09/30/claude-compliance-api-integrations/">Help Net Security</source>
-      <category>Policy</category>
     </item>
   </channel>
 </rss>

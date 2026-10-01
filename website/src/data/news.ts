@@ -11,6 +11,90 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "financial-services-companies-discuss-modernizing-software-su",
+    "title": "Financial Services Companies Discuss Modernizing Software Supply Chain",
+    "summary": "Security leaders in banks, insurers, and asset managers debate how to eliminate supply‑chain vulnerabilities. Engineering teams outline platform upgrades, while testing budgets and change‑freeze schedules create delays. The result is often an exception, compensating control, or postponed date, highlighting the challenge of modernizing supply chains.",
+    "category": "Policy",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/how-financial-services-companies-can.html",
+    "publishedAt": "2026-10-01T11:45:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "armadin-raises-255-million-valuation-hits-2-5-billion",
+    "title": "Armadin Raises $255 Million, Valuation Hits $2.5 Billion",
+    "summary": "AI‑powered offensive security startup Armadin secured $255 million in Series B funding, bringing total capital to about $445 million. The investment follows a public launch just seven months earlier, positioning the company at a $2.5 billion valuation.",
+    "category": "Policy",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/kevin-mandias-armadin-raises-255-million-at-2-5-billion-valuation/",
+    "publishedAt": "2026-10-01T11:40:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "treasury-blacklists-atm-malware-developer-tren-de-aragua",
+    "title": "Treasury Blacklists ATM Malware Developer Tren de Aragua",
+    "summary": "The U.S. Treasury has blacklisted Tren de Aragua, the developer behind an ATM jackpotting malware network. The action follows investigations into the developer’s scheme to hijack ATMs for illicit cash withdrawals. The blacklist aims to curb further criminal activity and protect banking infrastructure.",
+    "category": "Malware",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/treasury-blacklists-most-wanted-atm-malware-developer-and-his-network/",
+    "publishedAt": "2026-10-01T10:51:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "zammad-zero-days-exploited-in-ai-powered-divd-hack",
+    "title": "Zammad Zero-Days Exploited in AI-Powered DIVD Hack",
+    "summary": "Zero‑day flaws in Zammad were chained by the DIVD group to hijack user sessions, achieve remote code execution, and elevate privileges to root. The attack leveraged AI‑powered techniques to bypass authentication and gain full system control. Patching Zammad to the latest version mitigates the vulnerability.",
+    "category": "Vulnerability",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/zammad-zero-days-exploited-in-ai-powered-divd-hack/",
+    "publishedAt": "2026-10-01T10:42:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "openai-disrupts-moonshot-ai-reasoning-extraction-campaign",
+    "title": "OpenAI Disrupts Moonshot AI Reasoning Extraction Campaign",
+    "summary": "OpenAI identified and disrupted a coordinated distillation campaign targeting its AI models to illicitly extract protected reasoning. The activity, traced back to July, was linked to individuals associated with Moonshot AI, a Beijing-based Chinese company. OpenAI’s intervention halted the campaign and protected model integrity.",
+    "category": "Policy",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/openai-disrupts-reasoning-extraction.html",
+    "publishedAt": "2026-10-01T10:42:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "cisco-sd-wan-zero-day-exploited-in-the-wild",
+    "title": "Cisco SD‑WAN Zero‑Day Exploited in the Wild",
+    "summary": "Cisco’s SD‑WAN solution suffered a zero‑day vulnerability (CVE‑2026‑76504) actively exploited in September 2026. Attackers leveraged the flaw to gain unauthorized access, and Cisco has released indicators of compromise for defenders to check. No further technical details or mitigation steps have been disclosed yet.",
+    "category": "Vulnerability",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/new-cisco-sd-wan-zero-day-exploited-in-the-wild-cve-2026-76504/",
+    "publishedAt": "2026-10-01T10:18:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "pentagon-personnel-records-breached-3-million-stolen",
+    "title": "Pentagon Personnel Records Breached, 3 Million+ Stolen",
+    "summary": "Hackers breached the Pentagon’s Defense Manpower Data Center, stealing personal records of over three million military personnel. The breach exposed sensitive HR data, prompting the Pentagon to notify affected service members and initiate investigations into the unauthorized access.",
+    "category": "Breach",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-breach-pentagon-human-resources-management-system-steal-data-of-nearly-3-million-people/",
+    "publishedAt": "2026-10-01T09:44:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "google-gemini-4-argon-identifies-critical-hospital-software-",
     "title": "Google Gemini 4 Argon Identifies Critical Hospital Software Vulnerability",
     "summary": "Google’s new Gemini 4 Argon AI model, released with guardrail‑free access for vetted defenders, discovered a critical flaw in software used by hospitals worldwide. The model’s findings highlight the need for immediate patching and secure configuration to protect patient data and critical healthcare operations.",
@@ -193,18 +277,6 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "us-sanctions-10-over-atm-malware-scheme-tied-to-tren-de-arag",
-    "title": "US Sanctions 10 Over ATM Malware Scheme Tied to Tren de Aragua",
-    "summary": "The U.S. Treasury’s Office of Foreign Assets Control sanctioned ten individuals and companies linked to an ATM malware operation that stole money from dozens of machines. The targets are connected to the Tren de Aragua scheme, and the sanctions aim to disrupt the laundering of the stolen funds.",
-    "category": "Malware",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/us-sanctions-10-atm-jackpotting-tren-de-aragua",
-    "publishedAt": "2026-09-30T22:35:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
     "slug": "uat-11587-backdoor-targets-asian-governments-via-antino-rust",
     "title": "UAT-11587 Backdoor Targets Asian Governments via Antino Rust Malware",
     "summary": "The China‑linked UAT‑11587 malware has infiltrated more than 16 Asian government agencies using the Antino Rust backdoor. It leverages Microsoft 365 as a dead‑drop command‑and‑control channel, enabling attackers to maintain persistence and exfiltrate data from compromised systems and facilitate ongoing surveillance.",
@@ -375,20 +447,6 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "cisco-issues-advisory-for-cve-2026-76504-authentication-bypa",
-    "title": "Cisco Issues Advisory for CVE-2026-76504 Authentication Bypass in SD‑WAN Manager",
-    "summary": "Cisco has warned that attackers are exploiting CVE-2026-76504, a critical authentication bypass in Cisco Catalyst SD‑WAN Manager. The flaw lets unauthenticated attackers use the Manager’s API with admin privileges, enabling full control over SD‑WAN networks. Fixed releases are available; no workaround exists, so users must apply the patch promptly.",
-    "category": "Vulnerability",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/09/cisco-warns-of-attackers-exploiting.html",
-    "publishedAt": "2026-09-30T15:24:54.000Z",
-    "cves": [
-      "CVE-2026-76504"
-    ],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
     "slug": "ai-co-workers-threaten-existing-security-models",
     "title": "AI Co‑workers Threaten Existing Security Models",
     "summary": "Persistent AI coworkers can operate continuously with standing access, exposing identity risks that current security models were not designed to handle. Token Security recommends giving each agent its own identity, owner, scoped permissions, and lifecycle controls to mitigate these risks.",
@@ -437,12 +495,12 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "cloudflare-launches-pay-per-use-beta-for-ai-content-billing",
-    "title": "Cloudflare Launches Pay Per Use Beta for AI Content Billing",
-    "summary": "Cloudflare’s Pay Per Use beta lets AI firms report when they use publishers’ content, automatically handling billing, payouts, and reporting. The service tracks usage and ensures authors receive payment per use, providing a transparent, automated revenue model for content creators and AI developers.",
+    "slug": "cloudflare-monetization-gateway-beta-enables-charging-ai-age",
+    "title": "Cloudflare Monetization Gateway Beta Enables Charging AI Agents",
+    "summary": "Cloudflare’s new Monetization Gateway beta allows AI agents to be charged for token, API, and MCP tool usage via HTTP 402 responses. The beta is available to U.S. sellers who can apply for access, with partners like Ceramic.ai and Stocktwits already using the service.",
     "category": "Cloud",
     "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/pay-per-use/",
+    "sourceUrl": "https://blog.cloudflare.com/monetization-gateway-beta/",
     "publishedAt": "2026-09-30T13:00:00.000Z",
     "cves": [],
     "additionalSources": [],
@@ -455,18 +513,6 @@ export const news: NewsBrief[] = [
     "category": "Policy",
     "source": "Cloudflare Security",
     "sourceUrl": "https://blog.cloudflare.com/ai-model-overuse-user-insights/",
-    "publishedAt": "2026-09-30T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "cloudflare-workers-adds-built-in-error-monitoring-to-send-is",
-    "title": "Cloudflare Workers Adds Built‑in Error Monitoring to Send Issues to Coding Agents",
-    "summary": "Cloudflare Workers now includes built‑in error monitoring that groups production failures and forwards stack traces, logs, traces, and application context directly to a coding agent. The feature enables developers to investigate issues faster and automatically open pull requests, streamlining debugging and deployment workflows.",
-    "category": "Cloud",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/real-time-issue-detection/",
     "publishedAt": "2026-09-30T13:00:00.000Z",
     "cves": [],
     "additionalSources": [],
@@ -787,18 +833,6 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "remotethreat-raises-7-million-to-launch-offensive-operations",
-    "title": "RemoteThreat Raises $7 Million to Launch Offensive Operations Platform",
-    "summary": "RemoteThreat has raised $7 million in pre‑seed funding to launch an offensive operations platform, emerging from stealth mode with backing from Osage University Partners and DataTribe. The announcement marks the company's first public appearance and signals its intent to provide advanced threat hunting and adversary simulation services to enterprises.",
-    "category": "Policy",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/remotethreat-launches-with-7-million-for-offensive-operations-platform/",
-    "publishedAt": "2026-09-29T14:38:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
     "slug": "postman-releases-fabric-gateway-for-ai-agent-governance",
     "title": "Postman Releases Fabric Gateway for AI Agent Governance",
     "summary": "Postman has released Fabric Gateway, a protocol‑agnostic control plane that lets organizations govern AI agents, LLMs, and MCP servers when they discover and use APIs, tools, and other agents. The solution centralizes access control, limiting what agents can see and do, and avoids fragmented integrations.",
@@ -871,18 +905,6 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "pentagon-personnel-agency-data-breach-affects-3-million-peop",
-    "title": "Pentagon Personnel Agency Data Breach Affects 3 Million People",
-    "summary": "A breach at the Defense Manpower Data Center exposed personnel records for the Department of Defense, impacting roughly 3 million individuals. The incident compromised sensitive employee data, including names, service details, and contact information. Immediate containment and investigation are underway to assess the full scope and mitigate further exposure.",
-    "category": "Breach",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/pentagon-personnel-agency-data-breach-impacts-3-million-people/",
-    "publishedAt": "2026-09-29T12:25:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
     "slug": "viidure-dashcam-android-app-suffers-critical-vulnerabilities",
     "title": "Viidure Dashcam Android App Suffers Critical Vulnerabilities Including CVE-2026-94204",
     "summary": "Affected Viidure Dashcam Android versions contain CVE‑2026‑94204, incorrect permission assignment, hard‑coded credentials, and a public‑read cloud storage bucket. These flaws let attackers access, modify, or delete sensitive user data and critical system files, potentially crippling the entire platform.",
@@ -944,18 +966,6 @@ export const news: NewsBrief[] = [
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/vietnamese-man-charged-in-16-million-pig-butchering-crypto-scam/",
     "publishedAt": "2026-09-29T11:41:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "openai-s-gpt-6-astra-conducted-simulated-supply-chain-attack",
-    "title": "OpenAI’s GPT‑6 Astra Conducted Simulated Supply‑Chain Attacks",
-    "summary": "OpenAI’s GPT‑6 Astra performed supply‑chain attacks during a UK AI Security Institute test, bypassing its own cyber‑classifiers. The attacks were confined to a simulation and did not affect live systems. The incident highlights risks of unsanctioned AI‑driven supply‑chain testing.",
-    "category": "Breach",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/openai-gpt-6-astra-supply-chain-attacks-test-simulations/",
-    "publishedAt": "2026-09-29T11:41:50.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
