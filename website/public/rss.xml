@@ -5,8 +5,71 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Oct 2026 04:19:59 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2026 06:00:05 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>ScreenConnect Client Abused by Attackers</title>
+      <link>https://secubuzz.com/news/screenconnect-client-abused-by-attackers</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/screenconnect-client-abused-by-attackers</guid>
+      <description><![CDATA[Threat actors are exploiting the ScreenConnect client, a legitimate remote‑access tool, to conduct attacks. The misuse involves leveraging the software’s legitimate features for malicious purposes, potentially enabling unauthorized remote sessions and data exfiltration. No specific vulnerability or CVE is cited.]]></description>
+      <pubDate>Thu, 01 Oct 2026 05:32:13 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33388">SANS Internet Storm Center</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>AI in SOC May Reduce Entry-Level Job Opportunities</title>
+      <link>https://secubuzz.com/news/ai-in-soc-may-reduce-entry-level-job-opportunities</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-in-soc-may-reduce-entry-level-job-opportunities</guid>
+      <description><![CDATA[The integration of AI tools in security operations centers automates repetitive tasks such as phishing detection and malware pattern recognition, potentially decreasing the need for junior analysts. This trend could make entry‑level SOC positions harder to secure as automation replaces routine analysis work.]]></description>
+      <pubDate>Thu, 01 Oct 2026 05:30:08 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/01/ai-soc-entry-jobs/">Help Net Security</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Bitget Confirms Third-Party Zero-Day Used in $387.5 Million Crypto Theft</title>
+      <link>https://secubuzz.com/news/bitget-confirms-third-party-zero-day-used-in-387-5-million-c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/bitget-confirms-third-party-zero-day-used-in-387-5-million-c</guid>
+      <description><![CDATA[Bitget confirmed attackers stole $387.5 million by exploiting a zero‑day flaw in third‑party security products. SlowMist investigation identified malicious activity and a customized tool used by the attacker. No CVE ID was disclosed.]]></description>
+      <pubDate>Thu, 01 Oct 2026 05:21:10 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/bitget-confirms-third-party-zero-day.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>MetaMask Responds to Ongoing Security Incident, No Wallet Threats</title>
+      <link>https://secubuzz.com/news/metamask-responds-to-ongoing-security-incident-no-wallet-thr</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/metamask-responds-to-ongoing-security-incident-no-wallet-thr</guid>
+      <description><![CDATA[MetaMask announced an ongoing security incident affecting part of its infrastructure. The team is remediating the issue with external partners and security advisors, and has found no immediate threat to user wallets.]]></description>
+      <pubDate>Thu, 01 Oct 2026 05:10:09 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/metamask-security-incident-prompts-exit.html">The Hacker News</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>AI-Identified Vulnerabilities Rapidly Exploited</title>
+      <link>https://secubuzz.com/news/ai-identified-vulnerabilities-rapidly-exploited</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-identified-vulnerabilities-rapidly-exploited</guid>
+      <description><![CDATA[Researchers found that attackers quickly exploit vulnerabilities discovered by AI agents, with exploitation occurring within four days of public disclosure. Analysis of January 2025 to August 2026 data shows disclosure rates doubled, yet exploitation remains rare, highlighting the speed at which high‑profile flaws are targeted.]]></description>
+      <pubDate>Thu, 01 Oct 2026 05:00:35 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/01/google-ai-discovered-vulnerabilities-remote-code-execution/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Citrix NetScaler Pre-Authentication Command Injection Enables Web Shell Deployment</title>
+      <link>https://secubuzz.com/news/citrix-netscaler-pre-authentication-command-injection-enable</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/citrix-netscaler-pre-authentication-command-injection-enable</guid>
+      <description><![CDATA[Threat actors exploited a pre-authentication command injection flaw in Citrix NetScaler ADC and Gateway, allowing them to drop web shells, create superuser accounts, and map shells to CSS‑like URLs. The attack enabled configuration data theft across multiple customer environments.]]></description>
+      <pubDate>Thu, 01 Oct 2026 04:35:34 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/citrix-netscaler-post-exploitation.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Employment Scam Victims Tripled at Financial Firms in 21 Countries</title>
+      <link>https://secubuzz.com/news/employment-scam-victims-tripled-at-financial-firms-in-21-cou</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/employment-scam-victims-tripled-at-financial-firms-in-21-cou</guid>
+      <description><![CDATA[Employment‑style phishing scams targeting employees at more than 370 banks and financial institutions in 21 countries surged 258% over the past year, according to fraud‑detection vendor BioCatch. The rise outpaced all other scam types, with total reported scams increasing 35% across the same institutions.]]></description>
+      <pubDate>Thu, 01 Oct 2026 04:30:35 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/01/employment-scam-victims-research/">Help Net Security</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Google Launches Gemini 4 Argon AI to Detect and Patch Software Vulnerabilities</title>
       <link>https://secubuzz.com/news/google-launches-gemini-4-argon-ai-to-detect-and-patch-softwa</link>
@@ -278,15 +341,6 @@
       <category>Cloud</category>
     </item>
     <item>
-      <title>NetScaler Zero-Day Attacks Target Government and Finance Organizations</title>
-      <link>https://secubuzz.com/news/netscaler-zero-day-attacks-target-government-and-finance-org</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/netscaler-zero-day-attacks-target-government-and-finance-org</guid>
-      <description><![CDATA[Security firms confirmed exploitation of NetScaler vulnerabilities CVE-2026-88771 and CVE-2026-88772, affecting government and finance entities over several weeks. The zero-day flaws enable remote code execution, compromising critical infrastructure. Immediate patching and vulnerability management are required to mitigate the threat.]]></description>
-      <pubDate>Wed, 30 Sep 2026 12:48:20 GMT</pubDate>
-      <source url="https://www.securityweek.com/government-finance-orgs-targeted-in-weeks-long-netscaler-zero-day-attacks/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>TeamViewer Urges Immediate Patch for High‑Severity Vulnerabilities</title>
       <link>https://secubuzz.com/news/teamviewer-urges-immediate-patch-for-high-severity-vulnerabi</link>
       <guid isPermaLink="true">https://secubuzz.com/news/teamviewer-urges-immediate-patch-for-high-severity-vulnerabi</guid>
@@ -312,15 +366,6 @@
       <pubDate>Wed, 30 Sep 2026 11:58:00 GMT</pubDate>
       <source url="https://thehackernews.com/2026/09/know-your-enemy-browser-based-attack.html">The Hacker News</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Bitget Breached via Zero-Day in Third-Party Security Products</title>
-      <link>https://secubuzz.com/news/bitget-breached-via-zero-day-in-third-party-security-product</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/bitget-breached-via-zero-day-in-third-party-security-product</guid>
-      <description><![CDATA[Cryptocurrency exchange Bitget confirmed attackers breached its systems after exploiting a zero‑day flaw in third‑party security products, leading to the theft of $387.5 million. The incident highlights the risk of supply‑chain vulnerabilities in security software used by exchanges.]]></description>
-      <pubDate>Wed, 30 Sep 2026 11:11:46 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/bitget-hacked-via-zero-day-in-third-party-security-products/">BleepingComputer</source>
-      <category>Breach</category>
     </item>
     <item>
       <title>US‑Focused Phishing Campaign Steals Microsoft 365 Sessions and Deploys RMM Tools</title>
@@ -411,51 +456,6 @@
       <pubDate>Wed, 30 Sep 2026 05:00:53 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/09/30/rapidfort-cra-container-compliance/">Help Net Security</source>
       <category>Cloud</category>
-    </item>
-    <item>
-      <title>BH Consulting Launches BH Haven SME Cybersecurity Service with AI Support</title>
-      <link>https://secubuzz.com/news/bh-consulting-launches-bh-haven-sme-cybersecurity-service-wi</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/bh-consulting-launches-bh-haven-sme-cybersecurity-service-wi</guid>
-      <description><![CDATA[BH Consulting has introduced BH Haven, a continuous service for Irish SMEs that pairs specialist consultants with a proprietary AI tool for analysis, evidence review, regulatory mapping and reporting. The offering prioritises Ireland, the UK, Nordic and other EU markets, helping clients comply with GDPR, NIS2 and the EU AI Act.]]></description>
-      <pubDate>Wed, 30 Sep 2026 04:30:17 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/09/30/bh-haven-sme-cybersecurity-service/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Most Critical and High Vulnerabilities Remain Unpatched Over 90 Days</title>
-      <link>https://secubuzz.com/news/most-critical-and-high-vulnerabilities-remain-unpatched-over</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/most-critical-and-high-vulnerabilities-remain-unpatched-over</guid>
-      <description><![CDATA[Detectify examined 1,293 customers across the US, UK, and Nordics, finding that 97% of critical and 92% of high‑severity flaws in the Nordics, and 86% in the US, had been exposed for more than 90 days. The study highlights a widespread lag in patching internet‑facing systems.]]></description>
-      <pubDate>Wed, 30 Sep 2026 04:00:38 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/09/30/research-unpatched-vulnerabilities-backlog/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Microsoft Makes WSL Containers Generally Available on Windows</title>
-      <link>https://secubuzz.com/news/microsoft-makes-wsl-containers-generally-available-on-window</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-makes-wsl-containers-generally-available-on-window</guid>
-      <description><![CDATA[Microsoft released WSL containers as a generally available feature, allowing administrators to disable or restrict image sources. The containers run Linux workloads via the Windows Subsystem for Linux and can be installed with wsl --update or from Microsoft’s GitHub releases. Intune settings help manage the feature.]]></description>
-      <pubDate>Wed, 30 Sep 2026 03:47:25 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/09/30/microsoft-wsl-containers-available/">Help Net Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>Cloudflare to Issue Post-Quantum Certificates in Early 2027</title>
-      <link>https://secubuzz.com/news/cloudflare-to-issue-post-quantum-certificates-in-early-2027</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-to-issue-post-quantum-certificates-in-early-2027</guid>
-      <description><![CDATA[Cloudflare announced it will become a public certificate authority, issuing both conventional and post-quantum Merkle Tree Certificates (MTCs). Production issuance of MTCs is scheduled for Q1 2027, aiming to diversify the web’s certificate ecosystem dominated by a few major CAs.]]></description>
-      <pubDate>Wed, 30 Sep 2026 03:09:51 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/09/30/cloudflare-certificate-authority-2027/">Help Net Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>TerminalFix and Lorem Ipsum Loader Enable Covert Tunneling</title>
-      <link>https://secubuzz.com/news/terminalfix-and-lorem-ipsum-loader-enable-covert-tunneling</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/terminalfix-and-lorem-ipsum-loader-enable-covert-tunneling</guid>
-      <description><![CDATA[The malware family TerminalFix and its component Lorem Ipsum Loader have been observed creating covert tunnels to exfiltrate data. The activity is part of a broader campaign that previously used a different delivery mechanism, indicating ongoing threat actor operations.]]></description>
-      <pubDate>Wed, 30 Sep 2026 00:00:00 GMT</pubDate>
-      <source url="https://www.sophos.com/en-us/blog/terminalfix-and-lorem-ipsum-loader-enable-covert-tunneling">Sophos Threat Research</source>
-      <category>Malware</category>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,106 @@
 [
   {
+    "id": "https://isc.sans.edu/diary/rss/33388",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33388",
+    "title": "ScreenConnect Client Abused by Attackers",
+    "headline": "ScreenConnect Client Abused by Attackers",
+    "summary": "Threat actors are exploiting the ScreenConnect client, a legitimate remote‑access tool, to conduct attacks. The misuse involves leveraging the software’s legitimate features for malicious purposes, potentially enabling unauthorized remote sessions and data exfiltration. No specific vulnerability or CVE is cited.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "SANS Internet Storm Center",
+    "publishedAt": "2026-10-01T05:32:13.000Z",
+    "url": "https://isc.sans.edu/diary/rss/33388",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/01/ai-soc-entry-jobs/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/ai-soc-entry-jobs/",
+    "title": "AI in SOC May Reduce Entry-Level Job Opportunities",
+    "headline": "AI in SOC May Reduce Entry-Level Job Opportunities",
+    "summary": "The integration of AI tools in security operations centers automates repetitive tasks such as phishing detection and malware pattern recognition, potentially decreasing the need for junior analysts. This trend could make entry‑level SOC positions harder to secure as automation replaces routine analysis work.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-01T05:30:08.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/01/ai-soc-entry-jobs/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/bitget-confirms-third-party-zero-day.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/bitget-confirms-third-party-zero-day.html",
+    "title": "Bitget Confirms Third-Party Zero-Day Used in $387.5 Million Crypto Theft",
+    "headline": "Bitget Confirms Third-Party Zero-Day Used in $387.5 Million Crypto Theft",
+    "summary": "Bitget confirmed attackers stole $387.5 million by exploiting a zero‑day flaw in third‑party security products. SlowMist investigation identified malicious activity and a customized tool used by the attacker. No CVE ID was disclosed.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-01T05:21:10.000Z",
+    "url": "https://thehackernews.com/2026/10/bitget-confirms-third-party-zero-day.html",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/bitget-hacked-via-zero-day-in-third-party-security-products/"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/metamask-security-incident-prompts-exit.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/metamask-security-incident-prompts-exit.html",
+    "title": "MetaMask Responds to Ongoing Security Incident, No Wallet Threats",
+    "headline": "MetaMask Responds to Ongoing Security Incident, No Wallet Threats",
+    "summary": "MetaMask announced an ongoing security incident affecting part of its infrastructure. The team is remediating the issue with external partners and security advisors, and has found no immediate threat to user wallets.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-01T05:10:09.000Z",
+    "url": "https://thehackernews.com/2026/10/metamask-security-incident-prompts-exit.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/01/google-ai-discovered-vulnerabilities-remote-code-execution/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/google-ai-discovered-vulnerabilities-remote-code-execution/",
+    "title": "AI-Identified Vulnerabilities Rapidly Exploited",
+    "headline": "AI-Identified Vulnerabilities Rapidly Exploited",
+    "summary": "Researchers found that attackers quickly exploit vulnerabilities discovered by AI agents, with exploitation occurring within four days of public disclosure. Analysis of January 2025 to August 2026 data shows disclosure rates doubled, yet exploitation remains rare, highlighting the speed at which high‑profile flaws are targeted.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-01T05:00:35.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/01/google-ai-discovered-vulnerabilities-remote-code-execution/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/citrix-netscaler-post-exploitation.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/citrix-netscaler-post-exploitation.html",
+    "title": "Citrix NetScaler Pre-Authentication Command Injection Enables Web Shell Deployment",
+    "headline": "Citrix NetScaler Pre-Authentication Command Injection Enables Web Shell Deployment",
+    "summary": "Threat actors exploited a pre-authentication command injection flaw in Citrix NetScaler ADC and Gateway, allowing them to drop web shells, create superuser accounts, and map shells to CSS‑like URLs. The attack enabled configuration data theft across multiple customer environments.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-01T04:35:34.000Z",
+    "url": "https://thehackernews.com/2026/10/citrix-netscaler-post-exploitation.html",
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/government-finance-orgs-targeted-in-weeks-long-netscaler-zero-day-attacks/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/01/employment-scam-victims-research/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/employment-scam-victims-research/",
+    "title": "Employment Scam Victims Tripled at Financial Firms in 21 Countries",
+    "headline": "Employment Scam Victims Tripled at Financial Firms in 21 Countries",
+    "summary": "Employment‑style phishing scams targeting employees at more than 370 banks and financial institutions in 21 countries surged 258% over the past year, according to fraud‑detection vendor BioCatch. The rise outpaced all other scam types, with total reported scams increasing 35% across the same institutions.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-01T04:30:35.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/01/employment-scam-victims-research/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/10/01/google-gemini-4-argon/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/google-gemini-4-argon/",
     "title": "Google Launches Gemini 4 Argon AI to Detect and Patch Software Vulnerabilities",
@@ -475,24 +576,6 @@
     ]
   },
   {
-    "id": "https://www.securityweek.com/government-finance-orgs-targeted-in-weeks-long-netscaler-zero-day-attacks/",
-    "sourceUrl": "https://www.securityweek.com/government-finance-orgs-targeted-in-weeks-long-netscaler-zero-day-attacks/",
-    "title": "NetScaler Zero-Day Attacks Target Government and Finance Organizations",
-    "headline": "NetScaler Zero-Day Attacks Target Government and Finance Organizations",
-    "summary": "Security firms confirmed exploitation of NetScaler vulnerabilities CVE-2026-88771 and CVE-2026-88772, affecting government and finance entities over several weeks. The zero-day flaws enable remote code execution, compromising critical infrastructure. Immediate patching and vulnerability management are required to mitigate the threat.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-09-30T12:48:20.000Z",
-    "url": "https://www.securityweek.com/government-finance-orgs-targeted-in-weeks-long-netscaler-zero-day-attacks/",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html"
-      }
-    ]
-  },
-  {
     "id": "https://www.bleepingcomputer.com/news/security/teamviewer-urges-users-to-patch-severe-flaws-as-soon-as-possible/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/teamviewer-urges-users-to-patch-severe-flaws-as-soon-as-possible/",
     "title": "TeamViewer Urges Immediate Patch for High‑Severity Vulnerabilities",
@@ -530,24 +613,6 @@
     "publishedAt": "2026-09-30T11:58:00.000Z",
     "url": "https://thehackernews.com/2026/09/know-your-enemy-browser-based-attack.html",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/bitget-hacked-via-zero-day-in-third-party-security-products/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/bitget-hacked-via-zero-day-in-third-party-security-products/",
-    "title": "Bitget Breached via Zero-Day in Third-Party Security Products",
-    "headline": "Bitget Breached via Zero-Day in Third-Party Security Products",
-    "summary": "Cryptocurrency exchange Bitget confirmed attackers breached its systems after exploiting a zero‑day flaw in third‑party security products, leading to the theft of $387.5 million. The incident highlights the risk of supply‑chain vulnerabilities in security software used by exchanges.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-09-30T11:11:46.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/bitget-hacked-via-zero-day-in-third-party-security-products/",
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/bitget-387-million-crypto-heist-third-party-breach"
-      }
-    ]
   },
   {
     "id": "https://thehackernews.com/2026/09/us-focused-csuite-phishing-steals.html",

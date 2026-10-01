@@ -11,6 +11,90 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "screenconnect-client-abused-by-attackers",
+    "title": "ScreenConnect Client Abused by Attackers",
+    "summary": "Threat actors are exploiting the ScreenConnect client, a legitimate remote‑access tool, to conduct attacks. The misuse involves leveraging the software’s legitimate features for malicious purposes, potentially enabling unauthorized remote sessions and data exfiltration. No specific vulnerability or CVE is cited.",
+    "category": "Vulnerability",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33388",
+    "publishedAt": "2026-10-01T05:32:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "ai-in-soc-may-reduce-entry-level-job-opportunities",
+    "title": "AI in SOC May Reduce Entry-Level Job Opportunities",
+    "summary": "The integration of AI tools in security operations centers automates repetitive tasks such as phishing detection and malware pattern recognition, potentially decreasing the need for junior analysts. This trend could make entry‑level SOC positions harder to secure as automation replaces routine analysis work.",
+    "category": "Malware",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/ai-soc-entry-jobs/",
+    "publishedAt": "2026-10-01T05:30:08.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "bitget-confirms-third-party-zero-day-used-in-387-5-million-c",
+    "title": "Bitget Confirms Third-Party Zero-Day Used in $387.5 Million Crypto Theft",
+    "summary": "Bitget confirmed attackers stole $387.5 million by exploiting a zero‑day flaw in third‑party security products. SlowMist investigation identified malicious activity and a customized tool used by the attacker. No CVE ID was disclosed.",
+    "category": "Vulnerability",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/bitget-confirms-third-party-zero-day.html",
+    "publishedAt": "2026-10-01T05:21:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "metamask-responds-to-ongoing-security-incident-no-wallet-thr",
+    "title": "MetaMask Responds to Ongoing Security Incident, No Wallet Threats",
+    "summary": "MetaMask announced an ongoing security incident affecting part of its infrastructure. The team is remediating the issue with external partners and security advisors, and has found no immediate threat to user wallets.",
+    "category": "Policy",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/metamask-security-incident-prompts-exit.html",
+    "publishedAt": "2026-10-01T05:10:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "ai-identified-vulnerabilities-rapidly-exploited",
+    "title": "AI-Identified Vulnerabilities Rapidly Exploited",
+    "summary": "Researchers found that attackers quickly exploit vulnerabilities discovered by AI agents, with exploitation occurring within four days of public disclosure. Analysis of January 2025 to August 2026 data shows disclosure rates doubled, yet exploitation remains rare, highlighting the speed at which high‑profile flaws are targeted.",
+    "category": "Vulnerability",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/google-ai-discovered-vulnerabilities-remote-code-execution/",
+    "publishedAt": "2026-10-01T05:00:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "citrix-netscaler-pre-authentication-command-injection-enable",
+    "title": "Citrix NetScaler Pre-Authentication Command Injection Enables Web Shell Deployment",
+    "summary": "Threat actors exploited a pre-authentication command injection flaw in Citrix NetScaler ADC and Gateway, allowing them to drop web shells, create superuser accounts, and map shells to CSS‑like URLs. The attack enabled configuration data theft across multiple customer environments.",
+    "category": "Vulnerability",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/citrix-netscaler-post-exploitation.html",
+    "publishedAt": "2026-10-01T04:35:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "employment-scam-victims-tripled-at-financial-firms-in-21-cou",
+    "title": "Employment Scam Victims Tripled at Financial Firms in 21 Countries",
+    "summary": "Employment‑style phishing scams targeting employees at more than 370 banks and financial institutions in 21 countries surged 258% over the past year, according to fraud‑detection vendor BioCatch. The rise outpaced all other scam types, with total reported scams increasing 35% across the same institutions.",
+    "category": "Breach",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/employment-scam-victims-research/",
+    "publishedAt": "2026-10-01T04:30:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "google-launches-gemini-4-argon-ai-to-detect-and-patch-softwa",
     "title": "Google Launches Gemini 4 Argon AI to Detect and Patch Software Vulnerabilities",
     "summary": "Google’s Gemini 4 Argon AI model, released through the Fairwind Program, automatically identifies critical software flaws, validates them, and applies patches without human intervention. The tool is initially available to trusted cyber defenders and Google’s internal teams, with broader access planned for paid API customers.",
@@ -375,21 +459,6 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "netscaler-zero-day-attacks-target-government-and-finance-org",
-    "title": "NetScaler Zero-Day Attacks Target Government and Finance Organizations",
-    "summary": "Security firms confirmed exploitation of NetScaler vulnerabilities CVE-2026-88771 and CVE-2026-88772, affecting government and finance entities over several weeks. The zero-day flaws enable remote code execution, compromising critical infrastructure. Immediate patching and vulnerability management are required to mitigate the threat.",
-    "category": "Vulnerability",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/government-finance-orgs-targeted-in-weeks-long-netscaler-zero-day-attacks/",
-    "publishedAt": "2026-09-30T12:48:20.000Z",
-    "cves": [
-      "CVE-2026-88771",
-      "CVE-2026-88772"
-    ],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
     "slug": "teamviewer-urges-immediate-patch-for-high-severity-vulnerabi",
     "title": "TeamViewer Urges Immediate Patch for High‑Severity Vulnerabilities",
     "summary": "TeamViewer has warned users to patch a set of high‑severity flaws in its client and host software as soon as possible. The vulnerabilities could allow attackers to gain unauthorized access or execute code on affected systems. Users should download the latest updates from TeamViewer’s website to mitigate the risk.",
@@ -421,18 +490,6 @@ export const news: NewsBrief[] = [
     "source": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/09/know-your-enemy-browser-based-attack.html",
     "publishedAt": "2026-09-30T11:58:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "bitget-breached-via-zero-day-in-third-party-security-product",
-    "title": "Bitget Breached via Zero-Day in Third-Party Security Products",
-    "summary": "Cryptocurrency exchange Bitget confirmed attackers breached its systems after exploiting a zero‑day flaw in third‑party security products, leading to the theft of $387.5 million. The incident highlights the risk of supply‑chain vulnerabilities in security software used by exchanges.",
-    "category": "Breach",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/bitget-hacked-via-zero-day-in-third-party-security-products/",
-    "publishedAt": "2026-09-30T11:11:46.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
