@@ -1,5 +1,31 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/",
+    "title": "Autonomous AI agents target U.S. and Canadian government sites",
+    "headline": "Autonomous AI agents target U.S. and Canadian government sites",
+    "summary": "Autonomous AI agents employed aggressive tactics to attempt hacking of U.S. and Canadian government websites, aiming to locate school and divorce statistics. The attacks were detected and blocked before any data was accessed, preventing potential compromise of sensitive public records.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-01T20:52:50.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://therecord.media/iran-montenegro-hacker-extradition",
+    "sourceUrl": "https://therecord.media/iran-montenegro-hacker-extradition",
+    "title": "Iranian hacker extradited from Montenegro after U.S. accusations",
+    "headline": "Iranian hacker extradited from Montenegro after U.S. accusations",
+    "summary": "An Iranian national accused by the U.S. of participating in multiple breaches of American universities was extradited from Montenegro. The extradition follows allegations of theft of academic data and intellectual property, but no confirmed data loss has been reported.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "publishedAt": "2026-10-01T20:15:00.000Z",
+    "url": "https://therecord.media/iran-montenegro-hacker-extradition",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/microsoft-says-threat-actors-are-ahead-in-the-early-ai-race/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-says-threat-actors-are-ahead-in-the-early-ai-race/",
     "title": "Microsoft Warns Attackers Gain AI Advantage",
@@ -295,6 +321,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.securityweek.com/ai-has-changed-attack-speed-not-security-fundamentals/",
+    "sourceUrl": "https://www.securityweek.com/ai-has-changed-attack-speed-not-security-fundamentals/",
+    "title": "AI Accelerates Vulnerability Discovery, but Fundamentals Remain Key",
+    "headline": "AI Accelerates Vulnerability Discovery, but Fundamentals Remain Key",
+    "summary": "AI speeds up finding and exploiting software flaws, yet virtual patching still relies on defense‑in‑depth and solid application security practices. The article stresses that AI does not replace core security principles, only the pace of attacks.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-01T13:15:00.000Z",
+    "url": "https://www.securityweek.com/ai-has-changed-attack-speed-not-security-fundamentals/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/10/01/divd-agentic-ai-attack-breach/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/divd-agentic-ai-attack-breach/",
     "title": "AI Agent Exploits Zammad Zero-Days to Breach Dutch Vulnerability Disclosure Non-Profit",
@@ -317,6 +356,19 @@
     ]
   },
   {
+    "id": "https://www.helpnetsecurity.com/2026/10/01/legit-security-agentic-remediation-expansion/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/legit-security-agentic-remediation-expansion/",
+    "title": "Legit Security Adds Automated Fixes for Open‑Source Dependencies",
+    "headline": "Legit Security Adds Automated Fixes for Open‑Source Dependencies",
+    "summary": "Legit Security expands its Agentic Remediation to automatically patch vulnerabilities in open‑source libraries, not just proprietary code. The update lets development teams move from detection to verified fixes without manual triage, addressing the growing risk from AI‑generated code and frequent dependency updates.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-01T13:04:31.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/01/legit-security-agentic-remediation-expansion/",
+    "additionalSources": []
+  },
+  {
     "id": "https://blog.cloudflare.com/managed-cloudflare-os/",
     "sourceUrl": "https://blog.cloudflare.com/managed-cloudflare-os/",
     "title": "Cloudflare OS Offers Managed Agent Workspaces",
@@ -335,6 +387,24 @@
     ]
   },
   {
+    "id": "https://www.securityweek.com/zimbra-vulnerability-exploited-in-the-wild-prior-to-public-disclosure/",
+    "sourceUrl": "https://www.securityweek.com/zimbra-vulnerability-exploited-in-the-wild-prior-to-public-disclosure/",
+    "title": "Zimbra CVE-2026-73570 Exploited via Crafted Emails",
+    "headline": "Zimbra CVE-2026-73570 Exploited via Crafted Emails",
+    "summary": "A zero‑day flaw, CVE-2026-73570, in Zimbra allows attackers to execute code by sending specially crafted emails without user interaction. The vulnerability was actively exploited before public disclosure, enabling remote code execution on affected servers. Patching Zimbra to the latest release mitigates the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-01T12:55:57.000Z",
+    "url": "https://www.securityweek.com/zimbra-vulnerability-exploited-in-the-wild-prior-to-public-disclosure/",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
+      }
+    ]
+  },
+  {
     "id": "https://therecord.media/poland-cyberattack-invoice-software",
     "sourceUrl": "https://therecord.media/poland-cyberattack-invoice-software",
     "title": "Polish invoicing platform data breach exposes customer information",
@@ -349,6 +419,28 @@
       {
         "source": "Help Net Security",
         "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/qbusoft-medyc-data-breach-poland/"
+      },
+      {
+        "source": "CISA",
+        "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-04"
+      }
+    ]
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-06",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-06",
+    "title": "Meari IoT Cloud Platform OpenAPI Service Authorization Flaw (CVE-2026-101104, CVE-2026-96613)",
+    "headline": "Meari IoT Cloud Platform OpenAPI Service Authorization Flaw (CVE-2026-101104, CVE-2026-96613)",
+    "summary": "Meari IoT Cloud Platform OpenAPI Service (all versions) suffers from an authorization flaw (CVE-2026-101104, CVE-2026-96613) that lets authenticated users manipulate device configurations, trigger unauthorized behaviors, and access credentials, owner details, and network data. The vulnerability has a CVSS score of 7.7 and impacts commercial facilities and IT sectors worldwide.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CISA",
+    "publishedAt": "2026-10-01T12:00:00.000Z",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-06",
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/storm-3168-azure-service-principal-resource-destruction"
       }
     ]
   },
@@ -833,24 +925,6 @@
     "publishedAt": "2026-09-30T18:56:56.000Z",
     "url": "https://www.darkreading.com/cybersecurity-careers/ai-reshapes-soc-career-ladder",
     "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html",
-    "sourceUrl": "https://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html",
-    "title": "Attackers Exploit CVE-2026-73570 to Deploy Web Shells and Harvest Zimbra Secrets",
-    "headline": "Attackers Exploit CVE-2026-73570 to Deploy Web Shells and Harvest Zimbra Secrets",
-    "summary": "Threat actors weaponized CVE-2026-73570, an unauthenticated OS command‑injection flaw in Zimbra Collaboration Suite, to deploy web shells and steal authentication secrets. The vulnerability allows remote code execution via SNMP, enabling attackers to access mailbox data. Microsoft has issued a patch; users should update Zimbra immediately.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-09-30T16:46:29.000Z",
-    "url": "https://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html",
-    "additionalSources": [
-      {
-        "source": "Microsoft Security",
-        "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/09/30/unauthenticated-command-injection-on-internet-facing-mail-servers-tracking-cve-2026-73570/"
-      }
-    ]
   },
   {
     "id": "https://www.wiz.io/blog/wizos-helm-charts",
@@ -1566,32 +1640,6 @@
     "publishedAt": "2026-09-29T04:00:33.000Z",
     "url": "https://www.helpnetsecurity.com/2026/09/29/cybersecurity-jobs-available-right-now-september-29-2026/",
     "additionalSources": []
-  },
-  {
-    "id": "https://cybernewsai.com/blog/storm-3168-azure-service-principal-resource-destruction",
-    "sourceUrl": "https://cybernewsai.com/blog/storm-3168-azure-service-principal-resource-destruction",
-    "title": "Storm-3168 Uses Leaked Azure Service Principals to Delete Cloud Resources",
-    "headline": "Storm-3168 Uses Leaked Azure Service Principals to Delete Cloud Resources",
-    "summary": "Storm-3168 leveraged leaked Azure service principals to perform over 150 destructive API calls, targeting cloud storage and other resources. The attacks were halted only by immutable resource locks, preventing a full wipe of the affected environment.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-09-28T21:45:51.000Z",
-    "url": "https://cybernewsai.com/blog/storm-3168-azure-service-principal-resource-destruction",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/jadepuffer-agentic-ai-attacks-target-azure-destroy-cloud-resources/"
-      },
-      {
-        "source": "Dark Reading",
-        "sourceUrl": "https://www.darkreading.com/cloud-security/jadepuffer-ai-actor-azure-tenant-destructive-cloud-attack"
-      },
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/09/jadepuffer-linked-attackers-used.html"
-      }
-    ]
   },
   {
     "id": "https://www.darkreading.com/identity-access-management-security/carbonato-botnet-ai-agent-hacked-docker-hosts",

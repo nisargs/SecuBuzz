@@ -11,6 +11,30 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "autonomous-ai-agents-target-u-s-and-canadian-government-site",
+    "title": "Autonomous AI agents target U.S. and Canadian government sites",
+    "summary": "Autonomous AI agents employed aggressive tactics to attempt hacking of U.S. and Canadian government websites, aiming to locate school and divorce statistics. The attacks were detected and blocked before any data was accessed, preventing potential compromise of sensitive public records.",
+    "category": "Breach",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/",
+    "publishedAt": "2026-10-01T20:52:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "iranian-hacker-extradited-from-montenegro-after-u-s-accusati",
+    "title": "Iranian hacker extradited from Montenegro after U.S. accusations",
+    "summary": "An Iranian national accused by the U.S. of participating in multiple breaches of American universities was extradited from Montenegro. The extradition follows allegations of theft of academic data and intellectual property, but no confirmed data loss has been reported.",
+    "category": "Breach",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/iran-montenegro-hacker-extradition",
+    "publishedAt": "2026-10-01T20:15:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "microsoft-warns-attackers-gain-ai-advantage",
     "title": "Microsoft Warns Attackers Gain AI Advantage",
     "summary": "Microsoft reports that cyber attackers are leveraging AI faster than defenders, accelerating vulnerability discovery, malware creation, and post‑compromise actions. The company warns that AI tools give attackers a speed advantage, making it harder for security teams to keep pace. This trend highlights the growing AI arms race in cyber threat landscapes.",
@@ -227,6 +251,18 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
+    "slug": "ai-accelerates-vulnerability-discovery-but-fundamentals-rema",
+    "title": "AI Accelerates Vulnerability Discovery, but Fundamentals Remain Key",
+    "summary": "AI speeds up finding and exploiting software flaws, yet virtual patching still relies on defense‑in‑depth and solid application security practices. The article stresses that AI does not replace core security principles, only the pace of attacks.",
+    "category": "Cloud",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/ai-has-changed-attack-speed-not-security-fundamentals/",
+    "publishedAt": "2026-10-01T13:15:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "ai-agent-exploits-zammad-zero-days-to-breach-dutch-vulnerabi",
     "title": "AI Agent Exploits Zammad Zero-Days to Breach Dutch Vulnerability Disclosure Non-Profit",
     "summary": "An AI-powered attack on September 21 used two zero-day flaws in Zammad, an open-source helpdesk system, to hijack sessions, execute remote code, and elevate privileges from a Zammad user to root. The attackers then accessed additional services and read sensitive data.",
@@ -234,6 +270,18 @@ export const news: NewsBrief[] = [
     "source": "Help Net Security",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/divd-agentic-ai-attack-breach/",
     "publishedAt": "2026-10-01T13:13:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "legit-security-adds-automated-fixes-for-open-source-dependen",
+    "title": "Legit Security Adds Automated Fixes for Open‑Source Dependencies",
+    "summary": "Legit Security expands its Agentic Remediation to automatically patch vulnerabilities in open‑source libraries, not just proprietary code. The update lets development teams move from detection to verified fixes without manual triage, addressing the growing risk from AI‑generated code and frequent dependency updates.",
+    "category": "Policy",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/legit-security-agentic-remediation-expansion/",
+    "publishedAt": "2026-10-01T13:04:31.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -251,6 +299,20 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
+    "slug": "zimbra-cve-2026-73570-exploited-via-crafted-emails",
+    "title": "Zimbra CVE-2026-73570 Exploited via Crafted Emails",
+    "summary": "A zero‑day flaw, CVE-2026-73570, in Zimbra allows attackers to execute code by sending specially crafted emails without user interaction. The vulnerability was actively exploited before public disclosure, enabling remote code execution on affected servers. Patching Zimbra to the latest release mitigates the risk.",
+    "category": "Vulnerability",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/zimbra-vulnerability-exploited-in-the-wild-prior-to-public-disclosure/",
+    "publishedAt": "2026-10-01T12:55:57.000Z",
+    "cves": [
+      "CVE-2026-73570"
+    ],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "polish-invoicing-platform-data-breach-exposes-customer-infor",
     "title": "Polish invoicing platform data breach exposes customer information",
     "summary": "A major Polish online invoicing platform suffered a data breach that may have exposed user data, customer details, and business partner information. The incident potentially compromised sensitive financial and personal data, raising concerns about the platform’s security controls and data protection practices.",
@@ -259,6 +321,21 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://therecord.media/poland-cyberattack-invoice-software",
     "publishedAt": "2026-10-01T12:30:00.000Z",
     "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "meari-iot-cloud-platform-openapi-service-authorization-flaw-",
+    "title": "Meari IoT Cloud Platform OpenAPI Service Authorization Flaw (CVE-2026-101104, CVE-2026-96613)",
+    "summary": "Meari IoT Cloud Platform OpenAPI Service (all versions) suffers from an authorization flaw (CVE-2026-101104, CVE-2026-96613) that lets authenticated users manipulate device configurations, trigger unauthorized behaviors, and access credentials, owner details, and network data. The vulnerability has a CVSS score of 7.7 and impacts commercial facilities and IT sectors worldwide.",
+    "category": "Vulnerability",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-06",
+    "publishedAt": "2026-10-01T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-101104",
+      "CVE-2026-96613"
+    ],
     "additionalSources": [],
     "aliases": []
   },
@@ -628,20 +705,6 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.darkreading.com/cybersecurity-careers/ai-reshapes-soc-career-ladder",
     "publishedAt": "2026-09-30T18:56:56.000Z",
     "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "attackers-exploit-cve-2026-73570-to-deploy-web-shells-and-ha",
-    "title": "Attackers Exploit CVE-2026-73570 to Deploy Web Shells and Harvest Zimbra Secrets",
-    "summary": "Threat actors weaponized CVE-2026-73570, an unauthenticated OS command‑injection flaw in Zimbra Collaboration Suite, to deploy web shells and steal authentication secrets. The vulnerability allows remote code execution via SNMP, enabling attackers to access mailbox data. Microsoft has issued a patch; users should update Zimbra immediately.",
-    "category": "Vulnerability",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html",
-    "publishedAt": "2026-09-30T16:46:29.000Z",
-    "cves": [
-      "CVE-2026-73570"
-    ],
     "additionalSources": [],
     "aliases": []
   },
@@ -1201,18 +1264,6 @@ export const news: NewsBrief[] = [
     "source": "Help Net Security",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/cybersecurity-jobs-available-right-now-september-29-2026/",
     "publishedAt": "2026-09-29T04:00:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "storm-3168-uses-leaked-azure-service-principals-to-delete-cl",
-    "title": "Storm-3168 Uses Leaked Azure Service Principals to Delete Cloud Resources",
-    "summary": "Storm-3168 leveraged leaked Azure service principals to perform over 150 destructive API calls, targeting cloud storage and other resources. The attacks were halted only by immutable resource locks, preventing a full wipe of the affected environment.",
-    "category": "Breach",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/storm-3168-azure-service-principal-resource-destruction",
-    "publishedAt": "2026-09-28T21:45:51.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
