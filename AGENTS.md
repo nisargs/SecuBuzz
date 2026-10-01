@@ -32,9 +32,9 @@
   - Both URLs and in-app screens (`privacy.tsx`, `data-privacy.tsx`) explicitly declare the app name **"SecuBuzz"** and developer **"MiSo Labs"**.
 - **Feed System:** `scripts/ingest.mjs` retains up to 250 articles (~5–7 days of security intelligence), scheduled every 4 hours via Worker cron.
 
-## 6. Next Native `.aab` Rebuild Roadmap (v1.0.2+)
-- **Header Brand Unification:** Replace 'SecuRadar' with 'SecuBuzz' in `src/app/(tabs)/advisories.tsx` (line 353) to unify app brand identity with `secubuzz.com` and eliminate third-party trademark/domain confusion.
-- **Haptic Feedback:** Install `expo-haptics` (`npx expo install expo-haptics`) on the next full native binary release for tactile bookmarking and refresh feedback. Do not introduce in OTA-only cycles.
+## 6. Native `.aab` Release (v1.0.2 / Code 6)
+- **Header Brand Unification (Completed):** Replaced 'SecuRadar' with 'SecuBuzz' in `src/app/(tabs)/advisories.tsx` to unify app brand identity with `secubuzz.com` and eliminate third-party trademark/domain confusion.
+- **Haptic Feedback (Completed):** Installed `expo-haptics` and wired tactile feedback into bookmarking (`SavedArticlesContext`), incident report copying (`copyReport.ts`), manual refresh (`index.tsx`, `advisories.tsx`), and theme/accent switches (`ThemeContext.tsx`).
 
 ## 7. Product Evolution & Post-Approval Roadmap (Claude + ChatGPT Synthesis)
 - **Current Milestone (Freeze Phase):** 14-day Google Play closed testing window (~10 days remaining as of late Sept 2026). Protect build stability on production branch; no high-risk architectural rewrites during this evaluation window.

@@ -38,6 +38,7 @@ import {
   type CategoryFilter,
 } from '../../models/article';
 import { colors, spacing } from '../../theme/theme';
+import { haptics } from '../../utils/haptics';
 
 const BLUE = colors.accent;
 
@@ -318,6 +319,7 @@ export default function FeedScreen() {
   const lastScrollY = useRef(0);
 
   const scrollToTop = useCallback(() => {
+    void haptics.impactLight();
     setShowBackToTop(false);
     listRef.current?.scrollToOffset({
       offset: 0,
@@ -402,6 +404,7 @@ export default function FeedScreen() {
    * Pulls latest news; if no new articles were found, shows 'Feed is up to date' banner.
    */
   const handleManualRefresh = useCallback(async () => {
+    void haptics.impactLight();
     setRefreshing(true);
     try {
       const previousTopId = articles[0]?.id;
@@ -409,6 +412,8 @@ export default function FeedScreen() {
       if (newArticles && newArticles.length > 0) {
         if (newArticles[0]?.id === previousTopId) {
           triggerUpToDateBanner();
+        } else {
+          void haptics.notificationSuccess();
         }
       } else if (newArticles) {
         triggerUpToDateBanner();

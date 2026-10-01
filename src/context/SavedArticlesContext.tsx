@@ -12,6 +12,7 @@ import {
 
 import { getArticleRepository } from '../data/getArticleRepository';
 import type { Article } from '../models/article';
+import { haptics } from '../utils/haptics';
 
 const SAVED_ARTICLES_KEY = 'secubuzz-saved-articles';
 const FEED_CACHE_KEY = 'cached-articles';
@@ -346,6 +347,7 @@ export function SavedArticlesProvider({
       );
 
       if (existing) {
+        void haptics.impactLight();
         const next = current.filter(
           (article) => article.id !== articleId,
         );
@@ -359,6 +361,7 @@ export function SavedArticlesProvider({
        * permanently store it.
        */
       void (async () => {
+        void haptics.notificationSuccess();
         const article = await findArticleForSaving(articleId);
 
         if (article === null) {

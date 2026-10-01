@@ -32,7 +32,7 @@ These 20 curated feeds are ingested every 4 hours by `scripts/ingest.mjs`. Each 
 
 ---
 
-## 2. Active Threat Advisories (Advisories Tab / SecuRadar)
+## 2. Active Threat Advisories (Advisories Tab / SecuBuzz)
 These feeds are ingested by `src/services/cveService.ts`, merged, deduplicated by CVE ID, and cached offline via `AsyncStorage` (`@secubuzz_advisories_v2`).
 
 ### A. CISA Known Exploited Vulnerabilities (KEV)

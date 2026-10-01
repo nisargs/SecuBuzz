@@ -1,6 +1,7 @@
 import { Clipboard } from 'react-native';
 import type { Article } from '../models/article';
 import type { CveAdvisory } from '../models/cve';
+import { haptics } from './haptics';
 
 /**
  * Formats a CVE advisory into a clean, markdown-formatted incident report
@@ -100,6 +101,7 @@ export function copyAdvisoryToClipboard(advisory: CveAdvisory): boolean {
   try {
     const markdown = formatAdvisoryMarkdown(advisory);
     Clipboard.setString(markdown);
+    void haptics.notificationSuccess();
     return true;
   } catch (err) {
     console.warn('SecuBuzz: Failed to copy advisory to clipboard:', err);
@@ -114,6 +116,7 @@ export function copyArticleToClipboard(article: Article): boolean {
   try {
     const markdown = formatArticleMarkdown(article);
     Clipboard.setString(markdown);
+    void haptics.notificationSuccess();
     return true;
   } catch (err) {
     console.warn('SecuBuzz: Failed to copy article to clipboard:', err);

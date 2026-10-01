@@ -31,6 +31,7 @@ import type {
 } from '../../models/cve';
 import { getCveAdvisories } from '../../services/cveService';
 import { spacing } from '../../theme/theme';
+import { haptics } from '../../utils/haptics';
 
 const PROGRESS_SEGMENTS = 5;
 const INITIAL_ADVISORIES = 10;
@@ -122,6 +123,7 @@ export default function AdvisoriesScreen() {
   }, [showBackToTop, backToTopAnim]);
 
   const scrollToTop = useCallback(() => {
+    void haptics.impactLight();
     setShowBackToTop(false);
     listRef.current?.scrollToOffset({
       offset: 0,
@@ -173,6 +175,7 @@ export default function AdvisoriesScreen() {
 
   // Manual Refresh
   const handleManualRefresh = useCallback(async () => {
+    void haptics.impactLight();
     setRefreshing(true);
     try {
       const prevTopId = advisories[0]?.id;
@@ -180,6 +183,8 @@ export default function AdvisoriesScreen() {
       if (fresh && fresh.length > 0) {
         if (fresh[0]?.id === prevTopId) {
           triggerUpToDateBanner();
+        } else {
+          void haptics.notificationSuccess();
         }
       } else {
         triggerUpToDateBanner();
@@ -350,7 +355,7 @@ export default function AdvisoriesScreen() {
             <Text style={[styles.title, { color: colors.textPrimary }]}>
               Secu
               <Text style={[styles.titleAccent, { color: accentColor }]}>
-                Radar
+                Buzz
               </Text>
             </Text>
 

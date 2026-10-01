@@ -22,6 +22,7 @@ import {
   type AccentPresetKey,
   type ThemeColors,
 } from '../theme/theme';
+import { haptics } from '../utils/haptics';
 
 export type ThemeMode = 'system' | 'dark' | 'light';
 
@@ -96,6 +97,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const setThemeMode = useCallback(async (mode: ThemeMode) => {
+    void haptics.selection();
     setThemeModeState(mode);
     try {
       await AsyncStorage.setItem(THEME_MODE_STORAGE_KEY, mode);
@@ -106,6 +108,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 
   const setAccentKey = useCallback(async (key: AccentPresetKey) => {
     if (key in accentPresets) {
+      void haptics.selection();
       setAccentKeyState(key);
       try {
         await AsyncStorage.setItem(ACCENT_STORAGE_KEY, key);

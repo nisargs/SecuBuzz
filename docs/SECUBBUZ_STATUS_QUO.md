@@ -213,9 +213,9 @@ Please provide creative, high-impact suggestions across these 4 areas:
   4. **Threat Scoring Clarity**: Integrated FIRST.org EPSS exploit probability badges directly alongside CVSS severity scores.
   5. **Feed Hygiene**: Deployed multi-source story deduplication clustering coverage into single briefs with "Also reported by" cross-links.
 
-- **Upcoming Release (v1.0.2 / Code 6)**:
+- **Release v1.0.2 / Code 6 (Oct 1, 2026)**:
   - Scheduled for EAS `.aab` production build on **Thursday, Oct 1, 2026** (when Expo free build quota replenishes).
-  - **Pre-Build Polish**: Update 'SecuRadar' header in `src/app/(tabs)/advisories.tsx` to 'SecuBuzz' before generating the `.aab` file.
+  - **Completed Polish**: Header brand unified to 'SecuBuzz' across all screens and tabs; `expo-haptics` tactile feedback wired across bookmarks, reports, and pull-to-refresh.
   - Main Store Listing updated with refined description and refreshed screenshots on Sep 29, 2026.
   - **Backend Hardening Roadmap ($0.00 Free Tier)**:
     - Push Token API Rate Limiting (edge-level rate limiter to prevent spamming D1 tokens).
