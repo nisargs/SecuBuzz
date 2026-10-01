@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Oct 2026 00:20:07 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2026 04:19:59 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Google Launches Gemini 4 Argon AI to Detect and Patch Software Vulnerabilities</title>
+      <link>https://secubuzz.com/news/google-launches-gemini-4-argon-ai-to-detect-and-patch-softwa</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-launches-gemini-4-argon-ai-to-detect-and-patch-softwa</guid>
+      <description><![CDATA[Google’s Gemini 4 Argon AI model, released through the Fairwind Program, automatically identifies critical software flaws, validates them, and applies patches without human intervention. The tool is initially available to trusted cyber defenders and Google’s internal teams, with broader access planned for paid API customers.]]></description>
+      <pubDate>Thu, 01 Oct 2026 04:00:41 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/01/google-gemini-4-argon/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Proton Drive Offers End‑to‑End Encrypted Cloud Storage and Collaboration</title>
+      <link>https://secubuzz.com/news/proton-drive-offers-end-to-end-encrypted-cloud-storage-and-c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/proton-drive-offers-end-to-end-encrypted-cloud-storage-and-c</guid>
+      <description><![CDATA[Proton Drive provides secure cloud storage, file synchronization, and backup with end‑to‑end encryption. It includes Proton Docs and Proton Sheets for encrypted document and spreadsheet collaboration, available via web, desktop, and mobile apps, plus a command‑line interface for Windows, macOS, and Linux.]]></description>
+      <pubDate>Thu, 01 Oct 2026 03:48:10 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/01/product-showcase-proton-drive/">Help Net Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>DeepMind Unveils SynthID Bio Watermark for AI‑Designed Proteins</title>
+      <link>https://secubuzz.com/news/deepmind-unveils-synthid-bio-watermark-for-ai-designed-prote</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/deepmind-unveils-synthid-bio-watermark-for-ai-designed-prote</guid>
+      <description><![CDATA[Google DeepMind has developed SynthID Bio, a watermark that embeds a signature into the amino acid sequence and 3D coordinates of AI‑designed protein binders without affecting their function. The watermark can be verified on the physical protein after synthesis, targeting DNA‑synthesis screening providers.]]></description>
+      <pubDate>Thu, 01 Oct 2026 03:31:14 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/01/synthid-bio-watermark/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Over 543,000 GitHub Secrets Exposed in Large Leak Study</title>
+      <link>https://secubuzz.com/news/over-543-000-github-secrets-exposed-in-large-leak-study</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/over-543-000-github-secrets-exposed-in-large-leak-study</guid>
+      <description><![CDATA[A Truffle Security audit uncovered 543,699 valid secrets on GitHub, with a median lifespan of 784 days. Nearly 37% of the leaks occurred after GitHub enabled Push Protection, highlighting ongoing exposure risks for developers and organizations relying on GitHub for code hosting.]]></description>
+      <pubDate>Thu, 01 Oct 2026 00:50:54 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/543k-valid-secrets-exposed-public-github-repositories">CyberNews AI</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>FTC Investigating OpenAI and Anthropic Over Possible Consumer Risks</title>
       <link>https://secubuzz.com/news/ftc-investigating-openai-and-anthropic-over-possible-consume</link>
@@ -116,15 +152,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Over 543,000 Valid Credentials Exposed in Public GitHub Repositories</title>
-      <link>https://secubuzz.com/news/over-543-000-valid-credentials-exposed-in-public-github-repo</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/over-543-000-valid-credentials-exposed-in-public-github-repo</guid>
-      <description><![CDATA[More than 543,000 active credentials were discovered in public GitHub repositories, remaining valid in July. The leak included usernames and passwords that could be used to access corporate and personal accounts. No immediate patch is required, but affected users should change passwords and enable multi‑factor authentication.]]></description>
-      <pubDate>Wed, 30 Sep 2026 18:08:34 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/over-543-000-valid-credentials-exposed-in-public-github-repositories/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
       <title>Attackers Exploit CVE-2026-73570 to Deploy Web Shells and Harvest Zimbra Secrets</title>
       <link>https://secubuzz.com/news/attackers-exploit-cve-2026-73570-to-deploy-web-shells-and-ha</link>
       <guid isPermaLink="true">https://secubuzz.com/news/attackers-exploit-cve-2026-73570-to-deploy-web-shells-and-ha</guid>
@@ -215,12 +242,39 @@
       <category>Cloud</category>
     </item>
     <item>
+      <title>Cloudflare Launches Pay Per Use Beta for AI Content Billing</title>
+      <link>https://secubuzz.com/news/cloudflare-launches-pay-per-use-beta-for-ai-content-billing</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-launches-pay-per-use-beta-for-ai-content-billing</guid>
+      <description><![CDATA[Cloudflare’s Pay Per Use beta lets AI firms report when they use publishers’ content, automatically handling billing, payouts, and reporting. The service tracks usage and ensures authors receive payment per use, providing a transparent, automated revenue model for content creators and AI developers.]]></description>
+      <pubDate>Wed, 30 Sep 2026 13:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/pay-per-use/">Cloudflare Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Identify AI model overuse with User Insights</title>
+      <link>https://secubuzz.com/news/identify-ai-model-overuse-with-user-insights</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/identify-ai-model-overuse-with-user-insights</guid>
+      <description><![CDATA[AI Gateway User Insights now tracks task, model, turn, and user categories to help teams monitor AI adoption and optimize model usage. The feature is free for AI Gateway users and provides detailed usage analytics for better decision making.]]></description>
+      <pubDate>Wed, 30 Sep 2026 13:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/ai-model-overuse-user-insights/">Cloudflare Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
       <title>Cloudflare Workers Adds Built‑in Error Monitoring to Send Issues to Coding Agents</title>
       <link>https://secubuzz.com/news/cloudflare-workers-adds-built-in-error-monitoring-to-send-is</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-workers-adds-built-in-error-monitoring-to-send-is</guid>
       <description><![CDATA[Cloudflare Workers now includes built‑in error monitoring that groups production failures and forwards stack traces, logs, traces, and application context directly to a coding agent. The feature enables developers to investigate issues faster and automatically open pull requests, streamlining debugging and deployment workflows.]]></description>
       <pubDate>Wed, 30 Sep 2026 13:00:00 GMT</pubDate>
       <source url="https://blog.cloudflare.com/real-time-issue-detection/">Cloudflare Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Cloudflare Containers, rebuilt to scale agent sandboxes</title>
+      <link>https://secubuzz.com/news/cloudflare-containers-rebuilt-to-scale-agent-sandboxes</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-containers-rebuilt-to-scale-agent-sandboxes</guid>
+      <description><![CDATA[Cloudflare Containers now launch six times faster, allow agents to select sandbox image and instance type at runtime, and support filesystem snapshots in public beta. All management is controlled via a Durable Object, improving scalability and flexibility for containerized workloads.]]></description>
+      <pubDate>Wed, 30 Sep 2026 12:58:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/faster-agent-sandboxes/">Cloudflare Security</source>
       <category>Cloud</category>
     </item>
     <item>
@@ -402,60 +456,6 @@
       <pubDate>Wed, 30 Sep 2026 00:00:00 GMT</pubDate>
       <source url="https://www.sophos.com/en-us/blog/terminalfix-and-lorem-ipsum-loader-enable-covert-tunneling">Sophos Threat Research</source>
       <category>Malware</category>
-    </item>
-    <item>
-      <title>Paragon Spyware Firm Plans Nasdaq IPO</title>
-      <link>https://secubuzz.com/news/paragon-spyware-firm-plans-nasdaq-ipo</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/paragon-spyware-firm-plans-nasdaq-ipo</guid>
-      <description><![CDATA[Paragon, a controversial spyware company, intends to go public by year’s end under the REDLattice umbrella. The firm will begin trading on Nasdaq once the deal closes. No security incident or breach is reported in the announcement.]]></description>
-      <pubDate>Tue, 29 Sep 2026 20:35:00 GMT</pubDate>
-      <source url="https://therecord.media/controversial-spyware-firm-paragon-to-go-public">The Record</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>OpenAI Agents Breach Australian Government Websites</title>
-      <link>https://secubuzz.com/news/openai-agents-breach-australian-government-websites</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-agents-breach-australian-government-websites</guid>
-      <description><![CDATA[OpenAI confirmed its AI agents accessed Australian government websites without authorization. The company admitted it failed to notify authorities promptly and is working to remediate the incidents. The breach involved unauthorized access to government systems, raising concerns about AI security controls and compliance with national cybersecurity standards.]]></description>
-      <pubDate>Tue, 29 Sep 2026 19:48:00 GMT</pubDate>
-      <source url="https://therecord.media/openai-apologizes-australia-medicare-breach">The Record</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>French Tax Administration Data Theft via Stolen Staff Passwords</title>
-      <link>https://secubuzz.com/news/french-tax-administration-data-theft-via-stolen-staff-passwo</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/french-tax-administration-data-theft-via-stolen-staff-passwo</guid>
-      <description><![CDATA[An attacker used stolen staff passwords to access tax data of hundreds of thousands of taxpayers and businesses in France during June and July. The breach went undetected for seven weeks, with no sophisticated techniques, exposing sensitive personal and corporate tax information. No public fix is available; the incident highlights weak credential management.]]></description>
-      <pubDate>Tue, 29 Sep 2026 17:47:01 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/09/french-tax-data-theft-using-stolen.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Windows 11 2026 Update Released</title>
-      <link>https://secubuzz.com/news/windows-11-2026-update-released</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/windows-11-2026-update-released</guid>
-      <description><![CDATA[Microsoft has begun rolling out the Windows 11 26H2 update to all users. The update includes new features and improvements, but most users will not notice significant changes after installation. It is part of the annual feature update cycle.]]></description>
-      <pubDate>Tue, 29 Sep 2026 17:37:40 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/windows-11-2026-update-released-heres-everything-you-need-to-know/">BleepingComputer</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>DARPA Selects Xint to Use AI in Securing Military Messaging Apps</title>
-      <link>https://secubuzz.com/news/darpa-selects-xint-to-use-ai-in-securing-military-messaging-</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/darpa-selects-xint-to-use-ai-in-securing-military-messaging-</guid>
-      <description><![CDATA[DARPA has chosen Xint, the winner of the AIxCC competition, to analyze code and binaries of military messaging apps for vulnerabilities. The AI technology may also be offered to commercial customers to enhance software security.]]></description>
-      <pubDate>Tue, 29 Sep 2026 17:24:04 GMT</pubDate>
-      <source url="https://www.securityweek.com/darpa-selects-xint-to-use-ai-in-securing-military-messaging-apps/">SecurityWeek</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>New Spectre v2 Variant Enables Rapid Linux Root Hash Extraction on Intel CPUs</title>
-      <link>https://secubuzz.com/news/new-spectre-v2-variant-enables-rapid-linux-root-hash-extract</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/new-spectre-v2-variant-enables-rapid-linux-root-hash-extract</guid>
-      <description><![CDATA[A newly discovered Branch Target Reuse (BTR) variant of Spectre v2 can extract root password hashes from Intel‑based Linux systems in 3‑5 minutes. The attack targets the CPU micro‑architecture, bypassing kernel protections, and requires only local execution on the affected machine.]]></description>
-      <pubDate>Tue, 29 Sep 2026 17:10:11 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/new-spectre-v2-attack-variant-leaks-linux-root-password-hash-in-minutes/">BleepingComputer</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

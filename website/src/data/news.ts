@@ -11,6 +11,54 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "google-launches-gemini-4-argon-ai-to-detect-and-patch-softwa",
+    "title": "Google Launches Gemini 4 Argon AI to Detect and Patch Software Vulnerabilities",
+    "summary": "Google’s Gemini 4 Argon AI model, released through the Fairwind Program, automatically identifies critical software flaws, validates them, and applies patches without human intervention. The tool is initially available to trusted cyber defenders and Google’s internal teams, with broader access planned for paid API customers.",
+    "category": "Vulnerability",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/google-gemini-4-argon/",
+    "publishedAt": "2026-10-01T04:00:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "proton-drive-offers-end-to-end-encrypted-cloud-storage-and-c",
+    "title": "Proton Drive Offers End‑to‑End Encrypted Cloud Storage and Collaboration",
+    "summary": "Proton Drive provides secure cloud storage, file synchronization, and backup with end‑to‑end encryption. It includes Proton Docs and Proton Sheets for encrypted document and spreadsheet collaboration, available via web, desktop, and mobile apps, plus a command‑line interface for Windows, macOS, and Linux.",
+    "category": "Cloud",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/product-showcase-proton-drive/",
+    "publishedAt": "2026-10-01T03:48:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "deepmind-unveils-synthid-bio-watermark-for-ai-designed-prote",
+    "title": "DeepMind Unveils SynthID Bio Watermark for AI‑Designed Proteins",
+    "summary": "Google DeepMind has developed SynthID Bio, a watermark that embeds a signature into the amino acid sequence and 3D coordinates of AI‑designed protein binders without affecting their function. The watermark can be verified on the physical protein after synthesis, targeting DNA‑synthesis screening providers.",
+    "category": "Policy",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/synthid-bio-watermark/",
+    "publishedAt": "2026-10-01T03:31:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "over-543-000-github-secrets-exposed-in-large-leak-study",
+    "title": "Over 543,000 GitHub Secrets Exposed in Large Leak Study",
+    "summary": "A Truffle Security audit uncovered 543,699 valid secrets on GitHub, with a median lifespan of 784 days. Nearly 37% of the leaks occurred after GitHub enabled Push Protection, highlighting ongoing exposure risks for developers and organizations relying on GitHub for code hosting.",
+    "category": "Breach",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/543k-valid-secrets-exposed-public-github-repositories",
+    "publishedAt": "2026-10-01T00:50:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "ftc-investigating-openai-and-anthropic-over-possible-consume",
     "title": "FTC Investigating OpenAI and Anthropic Over Possible Consumer Risks",
     "summary": "The Federal Trade Commission has opened an investigation into OpenAI and Anthropic, citing potential risks to consumers. The FTC confirmed the inquiry but has not released further details. The probe focuses on how the companies’ AI services may affect user privacy and safety.",
@@ -155,18 +203,6 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "over-543-000-valid-credentials-exposed-in-public-github-repo",
-    "title": "Over 543,000 Valid Credentials Exposed in Public GitHub Repositories",
-    "summary": "More than 543,000 active credentials were discovered in public GitHub repositories, remaining valid in July. The leak included usernames and passwords that could be used to access corporate and personal accounts. No immediate patch is required, but affected users should change passwords and enable multi‑factor authentication.",
-    "category": "Breach",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/over-543-000-valid-credentials-exposed-in-public-github-repositories/",
-    "publishedAt": "2026-09-30T18:08:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
     "slug": "attackers-exploit-cve-2026-73570-to-deploy-web-shells-and-ha",
     "title": "Attackers Exploit CVE-2026-73570 to Deploy Web Shells and Harvest Zimbra Secrets",
     "summary": "Threat actors weaponized CVE-2026-73570, an unauthenticated OS command‑injection flaw in Zimbra Collaboration Suite, to deploy web shells and steal authentication secrets. The vulnerability allows remote code execution via SNMP, enabling attackers to access mailbox data. Microsoft has issued a patch; users should update Zimbra immediately.",
@@ -291,6 +327,30 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
+    "slug": "cloudflare-launches-pay-per-use-beta-for-ai-content-billing",
+    "title": "Cloudflare Launches Pay Per Use Beta for AI Content Billing",
+    "summary": "Cloudflare’s Pay Per Use beta lets AI firms report when they use publishers’ content, automatically handling billing, payouts, and reporting. The service tracks usage and ensures authors receive payment per use, providing a transparent, automated revenue model for content creators and AI developers.",
+    "category": "Cloud",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/pay-per-use/",
+    "publishedAt": "2026-09-30T13:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "identify-ai-model-overuse-with-user-insights",
+    "title": "Identify AI model overuse with User Insights",
+    "summary": "AI Gateway User Insights now tracks task, model, turn, and user categories to help teams monitor AI adoption and optimize model usage. The feature is free for AI Gateway users and provides detailed usage analytics for better decision making.",
+    "category": "Policy",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/ai-model-overuse-user-insights/",
+    "publishedAt": "2026-09-30T13:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "cloudflare-workers-adds-built-in-error-monitoring-to-send-is",
     "title": "Cloudflare Workers Adds Built‑in Error Monitoring to Send Issues to Coding Agents",
     "summary": "Cloudflare Workers now includes built‑in error monitoring that groups production failures and forwards stack traces, logs, traces, and application context directly to a coding agent. The feature enables developers to investigate issues faster and automatically open pull requests, streamlining debugging and deployment workflows.",
@@ -298,6 +358,18 @@ export const news: NewsBrief[] = [
     "source": "Cloudflare Security",
     "sourceUrl": "https://blog.cloudflare.com/real-time-issue-detection/",
     "publishedAt": "2026-09-30T13:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "cloudflare-containers-rebuilt-to-scale-agent-sandboxes",
+    "title": "Cloudflare Containers, rebuilt to scale agent sandboxes",
+    "summary": "Cloudflare Containers now launch six times faster, allow agents to select sandbox image and instance type at runtime, and support filesystem snapshots in public beta. All management is controlled via a Durable Object, improving scalability and flexibility for containerized workloads.",
+    "category": "Cloud",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/faster-agent-sandboxes/",
+    "publishedAt": "2026-09-30T12:58:00.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -620,18 +692,6 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "cloudflare-launches-public-certificate-authority-for-post-qu",
-    "title": "Cloudflare Launches Public Certificate Authority for Post‑Quantum Web",
-    "summary": "Cloudflare has unveiled a new public Certificate Authority designed to support post‑quantum cryptography, offering automated certificate issuance for all users. The service aims to future‑proof web security against quantum threats, providing hardened key management and compatibility with emerging post‑quantum algorithms.",
-    "category": "Cloud",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cloud-security/cloudflare-announces-public-certificate-authority-post-quantum-web",
-    "publishedAt": "2026-09-29T17:02:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
     "slug": "storm-3068-exploits-compromised-identity-for-cloud-access",
     "title": "Storm-3068 Exploits Compromised Identity for Cloud Access",
     "summary": "A compromised identity was leveraged by the threat actor Storm-3068 to gain broader cloud access, affecting identities, pipelines, and infrastructure. The incident highlights the need for stronger identity protection and monitoring to prevent lateral movement within cloud environments.",
@@ -792,18 +852,6 @@ export const news: NewsBrief[] = [
     "cves": [
       "CVE-2026-96274"
     ],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "rig-security-launches-identity-graph-to-detect-rogue-ai-agen",
-    "title": "Rig Security Launches Identity Graph to Detect Rogue AI Agents",
-    "summary": "Rig Security has raised $12 million to develop an identity dependencies graph that distinguishes legitimate users from rogue AI agents, aiming to mitigate agentic AI identity risks. The solution maps user interactions and AI behaviors to detect anomalous activity, providing organizations with a tool to identify and respond to AI‑driven identity threats.",
-    "category": "Policy",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/rig-security-emerges-from-stealth-with-12m-to-tackle-agentic-ai-identity-risks/",
-    "publishedAt": "2026-09-29T12:00:00.000Z",
-    "cves": [],
     "additionalSources": [],
     "aliases": []
   },
@@ -1156,18 +1204,6 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "research-shows-drunk-ai-models-leak-secrets",
-    "title": "Research Shows ‘Drunk’ AI Models Leak Secrets",
-    "summary": "UNSW Sydney researchers found that AI models trained to emulate drunken speech are easier to jailbreak and more prone to disclosing confidential information. The study, titled “In Vino Veritas and Vulnerabilities,” highlights how altered linguistic styles can compromise LLM security and privacy safeguards.",
-    "category": "Policy",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/28/drunk-ai-models-jailbreak-research/",
-    "publishedAt": "2026-09-28T11:30:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
     "slug": "dc-health-agency-exposes-400-000-beneficiary-records",
     "title": "DC Health Agency Exposes 400,000 Beneficiary Records",
     "summary": "The DC Health Agency exposed Medicaid IDs and other beneficiary information for 400,000 individuals, compromising personal data and potentially enabling identity theft. The breach involved unauthorized access to sensitive health records, requiring immediate remediation and notification of affected parties.",
@@ -1247,18 +1283,6 @@ export const news: NewsBrief[] = [
     "source": "SANS Internet Storm Center",
     "sourceUrl": "https://isc.sans.edu/diary/rss/33372",
     "publishedAt": "2026-09-27T15:04:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "cloudflare-fixes-containers-cross-tenant-data-exposure-flaw",
-    "title": "Cloudflare Fixes Containers Cross‑Tenant Data Exposure Flaw",
-    "summary": "Cloudflare addressed a vulnerability in its Containers and Sandboxes that let Workers Paid customers recover residual data from other customers’ containers on the same physical host. The fix prevents cross‑tenant data leakage and protects customer privacy.",
-    "category": "Vulnerability",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cloudflare-fixes-containers-cross-tenant-flaw-exposing-customer-data/",
-    "publishedAt": "2026-09-27T14:13:31.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []

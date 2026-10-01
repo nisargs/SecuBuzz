@@ -1,5 +1,71 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/10/01/google-gemini-4-argon/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/google-gemini-4-argon/",
+    "title": "Google Launches Gemini 4 Argon AI to Detect and Patch Software Vulnerabilities",
+    "headline": "Google Launches Gemini 4 Argon AI to Detect and Patch Software Vulnerabilities",
+    "summary": "Google’s Gemini 4 Argon AI model, released through the Fairwind Program, automatically identifies critical software flaws, validates them, and applies patches without human intervention. The tool is initially available to trusted cyber defenders and Google’s internal teams, with broader access planned for paid API customers.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-01T04:00:41.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/01/google-gemini-4-argon/",
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/rig-security-emerges-from-stealth-with-12m-to-tackle-agentic-ai-identity-risks/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/01/product-showcase-proton-drive/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/product-showcase-proton-drive/",
+    "title": "Proton Drive Offers End‑to‑End Encrypted Cloud Storage and Collaboration",
+    "headline": "Proton Drive Offers End‑to‑End Encrypted Cloud Storage and Collaboration",
+    "summary": "Proton Drive provides secure cloud storage, file synchronization, and backup with end‑to‑end encryption. It includes Proton Docs and Proton Sheets for encrypted document and spreadsheet collaboration, available via web, desktop, and mobile apps, plus a command‑line interface for Windows, macOS, and Linux.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-01T03:48:10.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/01/product-showcase-proton-drive/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/01/synthid-bio-watermark/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/synthid-bio-watermark/",
+    "title": "DeepMind Unveils SynthID Bio Watermark for AI‑Designed Proteins",
+    "headline": "DeepMind Unveils SynthID Bio Watermark for AI‑Designed Proteins",
+    "summary": "Google DeepMind has developed SynthID Bio, a watermark that embeds a signature into the amino acid sequence and 3D coordinates of AI‑designed protein binders without affecting their function. The watermark can be verified on the physical protein after synthesis, targeting DNA‑synthesis screening providers.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-01T03:31:14.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/01/synthid-bio-watermark/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybernewsai.com/blog/543k-valid-secrets-exposed-public-github-repositories",
+    "sourceUrl": "https://cybernewsai.com/blog/543k-valid-secrets-exposed-public-github-repositories",
+    "title": "Over 543,000 GitHub Secrets Exposed in Large Leak Study",
+    "headline": "Over 543,000 GitHub Secrets Exposed in Large Leak Study",
+    "summary": "A Truffle Security audit uncovered 543,699 valid secrets on GitHub, with a median lifespan of 784 days. Nearly 37% of the leaks occurred after GitHub enabled Push Protection, highlighting ongoing exposure risks for developers and organizations relying on GitHub for code hosting.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-10-01T00:50:54.000Z",
+    "url": "https://cybernewsai.com/blog/543k-valid-secrets-exposed-public-github-repositories",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/over-543-000-valid-credentials-exposed-in-public-github-repositories/"
+      },
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/09/28/drunk-ai-models-jailbreak-research/"
+      }
+    ]
+  },
+  {
     "id": "https://www.securityweek.com/ftc-is-investigating-openai-and-anthropic-over-possible-risks-to-consumers/",
     "sourceUrl": "https://www.securityweek.com/ftc-is-investigating-openai-and-anthropic-over-possible-risks-to-consumers/",
     "title": "FTC Investigating OpenAI and Anthropic Over Possible Consumer Risks",
@@ -185,19 +251,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.bleepingcomputer.com/news/security/over-543-000-valid-credentials-exposed-in-public-github-repositories/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/over-543-000-valid-credentials-exposed-in-public-github-repositories/",
-    "title": "Over 543,000 Valid Credentials Exposed in Public GitHub Repositories",
-    "headline": "Over 543,000 Valid Credentials Exposed in Public GitHub Repositories",
-    "summary": "More than 543,000 active credentials were discovered in public GitHub repositories, remaining valid in July. The leak included usernames and passwords that could be used to access corporate and personal accounts. No immediate patch is required, but affected users should change passwords and enable multi‑factor authentication.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-09-30T18:08:34.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/over-543-000-valid-credentials-exposed-in-public-github-repositories/",
-    "additionalSources": []
-  },
-  {
     "id": "https://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html",
     "sourceUrl": "https://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html",
     "title": "Attackers Exploit CVE-2026-73570 to Deploy Web Shells and Harvest Zimbra Secrets",
@@ -351,6 +404,37 @@
     "additionalSources": []
   },
   {
+    "id": "https://blog.cloudflare.com/pay-per-use/",
+    "sourceUrl": "https://blog.cloudflare.com/pay-per-use/",
+    "title": "Cloudflare Launches Pay Per Use Beta for AI Content Billing",
+    "headline": "Cloudflare Launches Pay Per Use Beta for AI Content Billing",
+    "summary": "Cloudflare’s Pay Per Use beta lets AI firms report when they use publishers’ content, automatically handling billing, payouts, and reporting. The service tracks usage and ensures authors receive payment per use, providing a transparent, automated revenue model for content creators and AI developers.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "publishedAt": "2026-09-30T13:00:00.000Z",
+    "url": "https://blog.cloudflare.com/pay-per-use/",
+    "additionalSources": [
+      {
+        "source": "Dark Reading",
+        "sourceUrl": "https://www.darkreading.com/cloud-security/cloudflare-announces-public-certificate-authority-post-quantum-web"
+      }
+    ]
+  },
+  {
+    "id": "https://blog.cloudflare.com/ai-model-overuse-user-insights/",
+    "sourceUrl": "https://blog.cloudflare.com/ai-model-overuse-user-insights/",
+    "title": "Identify AI model overuse with User Insights",
+    "headline": "Identify AI model overuse with User Insights",
+    "summary": "AI Gateway User Insights now tracks task, model, turn, and user categories to help teams monitor AI adoption and optimize model usage. The feature is free for AI Gateway users and provides detailed usage analytics for better decision making.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "publishedAt": "2026-09-30T13:00:00.000Z",
+    "url": "https://blog.cloudflare.com/ai-model-overuse-user-insights/",
+    "additionalSources": []
+  },
+  {
     "id": "https://blog.cloudflare.com/real-time-issue-detection/",
     "sourceUrl": "https://blog.cloudflare.com/real-time-issue-detection/",
     "title": "Cloudflare Workers Adds Built‑in Error Monitoring to Send Issues to Coding Agents",
@@ -369,6 +453,24 @@
       {
         "source": "Help Net Security",
         "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/ai-coding-agents-github-screenshot-leak/"
+      }
+    ]
+  },
+  {
+    "id": "https://blog.cloudflare.com/faster-agent-sandboxes/",
+    "sourceUrl": "https://blog.cloudflare.com/faster-agent-sandboxes/",
+    "title": "Cloudflare Containers, rebuilt to scale agent sandboxes",
+    "headline": "Cloudflare Containers, rebuilt to scale agent sandboxes",
+    "summary": "Cloudflare Containers now launch six times faster, allow agents to select sandbox image and instance type at runtime, and support filesystem snapshots in public beta. All management is controlled via a Durable Object, improving scalability and flexibility for containerized workloads.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "publishedAt": "2026-09-30T12:58:00.000Z",
+    "url": "https://blog.cloudflare.com/faster-agent-sandboxes/",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/cloudflare-fixes-containers-cross-tenant-flaw-exposing-customer-data/"
       }
     ]
   },
@@ -775,24 +877,6 @@
     ]
   },
   {
-    "id": "https://www.darkreading.com/cloud-security/cloudflare-announces-public-certificate-authority-post-quantum-web",
-    "sourceUrl": "https://www.darkreading.com/cloud-security/cloudflare-announces-public-certificate-authority-post-quantum-web",
-    "title": "Cloudflare Launches Public Certificate Authority for Post‑Quantum Web",
-    "headline": "Cloudflare Launches Public Certificate Authority for Post‑Quantum Web",
-    "summary": "Cloudflare has unveiled a new public Certificate Authority designed to support post‑quantum cryptography, offering automated certificate issuance for all users. The service aims to future‑proof web security against quantum threats, providing hardened key management and compatibility with emerging post‑quantum algorithms.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "publishedAt": "2026-09-29T17:02:16.000Z",
-    "url": "https://www.darkreading.com/cloud-security/cloudflare-announces-public-certificate-authority-post-quantum-web",
-    "additionalSources": [
-      {
-        "source": "Cloudflare Security",
-        "sourceUrl": "https://blog.cloudflare.com/ai-driven-cryptography-discovery/"
-      }
-    ]
-  },
-  {
     "id": "https://www.microsoft.com/en-us/security/blog/2026/09/29/beyond-source-code-a-path-to-the-keys-to-the-kingdom/",
     "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/09/29/beyond-source-code-a-path-to-the-keys-to-the-kingdom/",
     "title": "Storm-3068 Exploits Compromised Identity for Cloud Access",
@@ -990,28 +1074,6 @@
     "publishedAt": "2026-09-29T12:00:00.000Z",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-04",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/rig-security-emerges-from-stealth-with-12m-to-tackle-agentic-ai-identity-risks/",
-    "sourceUrl": "https://www.securityweek.com/rig-security-emerges-from-stealth-with-12m-to-tackle-agentic-ai-identity-risks/",
-    "title": "Rig Security Launches Identity Graph to Detect Rogue AI Agents",
-    "headline": "Rig Security Launches Identity Graph to Detect Rogue AI Agents",
-    "summary": "Rig Security has raised $12 million to develop an identity dependencies graph that distinguishes legitimate users from rogue AI agents, aiming to mitigate agentic AI identity risks. The solution maps user interactions and AI behaviors to detect anomalous activity, providing organizations with a tool to identify and respond to AI‑driven identity threats.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-09-29T12:00:00.000Z",
-    "url": "https://www.securityweek.com/rig-security-emerges-from-stealth-with-12m-to-tackle-agentic-ai-identity-risks/",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/09/iam-for-ai-agent.html"
-      },
-      {
-        "source": "Dark Reading",
-        "sourceUrl": "https://www.darkreading.com/cyber-risk/nvidia-launches-ai-agent-safety-platform-prevent-rogue-activities"
-      }
-    ]
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/09/29/pindrop-enterprise-deepfake-attacks-report/",
@@ -1502,19 +1564,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.helpnetsecurity.com/2026/09/28/drunk-ai-models-jailbreak-research/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/28/drunk-ai-models-jailbreak-research/",
-    "title": "Research Shows ‘Drunk’ AI Models Leak Secrets",
-    "headline": "Research Shows ‘Drunk’ AI Models Leak Secrets",
-    "summary": "UNSW Sydney researchers found that AI models trained to emulate drunken speech are easier to jailbreak and more prone to disclosing confidential information. The study, titled “In Vino Veritas and Vulnerabilities,” highlights how altered linguistic styles can compromise LLM security and privacy safeguards.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-09-28T11:30:22.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/09/28/drunk-ai-models-jailbreak-research/",
-    "additionalSources": []
-  },
-  {
     "id": "https://www.securityweek.com/dc-health-agency-exposes-400000-beneficiary-records/",
     "sourceUrl": "https://www.securityweek.com/dc-health-agency-exposes-400000-beneficiary-records/",
     "title": "DC Health Agency Exposes 400,000 Beneficiary Records",
@@ -1609,28 +1658,6 @@
     "publishedAt": "2026-09-27T15:04:49.000Z",
     "url": "https://isc.sans.edu/diary/rss/33372",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/cloudflare-fixes-containers-cross-tenant-flaw-exposing-customer-data/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cloudflare-fixes-containers-cross-tenant-flaw-exposing-customer-data/",
-    "title": "Cloudflare Fixes Containers Cross‑Tenant Data Exposure Flaw",
-    "headline": "Cloudflare Fixes Containers Cross‑Tenant Data Exposure Flaw",
-    "summary": "Cloudflare addressed a vulnerability in its Containers and Sandboxes that let Workers Paid customers recover residual data from other customers’ containers on the same physical host. The fix prevents cross‑tenant data leakage and protects customer privacy.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-09-27T14:13:31.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/cloudflare-fixes-containers-cross-tenant-flaw-exposing-customer-data/",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/09/cloudflare-fixes-flaw-that-let-one.html"
-      },
-      {
-        "source": "Cloudflare Security",
-        "sourceUrl": "https://blog.cloudflare.com/containers-cross-tenant-vulnerability/"
-      }
-    ]
   },
   {
     "id": "https://cybernewsai.com/blog/lunex-stealer-amd-byovd-edr-evasion",
