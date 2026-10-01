@@ -5,8 +5,107 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Oct 2026 12:20:14 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2026 15:35:56 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>WordPress Backdoor Rebuilds Itself After Cleanup Using Files, Database, and Shared Memory</title>
+      <link>https://secubuzz.com/news/wordpress-backdoor-rebuilds-itself-after-cleanup-using-files</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/wordpress-backdoor-rebuilds-itself-after-cleanup-using-files</guid>
+      <description><![CDATA[Researchers uncovered a WordPress backdoor that self‑heals by recreating itself through files, database entries, and shared memory after cleanup. The malware, codenamed SC, uses multiple persistence mechanisms to ensure the final payload remains active without re‑infection.]]></description>
+      <pubDate>Thu, 01 Oct 2026 14:37:35 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/wordpress-backdoor-rebuilds-itself.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>PwC Finds Only 22% of Enterprises Ready for Autonomous AI Cyber Defense</title>
+      <link>https://secubuzz.com/news/pwc-finds-only-22-of-enterprises-ready-for-autonomous-ai-cyb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/pwc-finds-only-22-of-enterprises-ready-for-autonomous-ai-cyb</guid>
+      <description><![CDATA[A PwC survey shows just 22% of corporate leaders would deploy fully autonomous AI for cyber defense, and only 21% are adopting quantum‑resistant security measures. The findings highlight a widespread gap in preparedness for emerging AI and quantum threats across the industry.]]></description>
+      <pubDate>Thu, 01 Oct 2026 14:30:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/enterprises-struggle-to-prepare-for-ai-and-quantum-threats-pwc-says/">SecurityWeek</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Law Enforcement Seizes KillSec Ransomware Gang, Arrests Three Members</title>
+      <link>https://secubuzz.com/news/law-enforcement-seizes-killsec-ransomware-gang-arrests-three</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/law-enforcement-seizes-killsec-ransomware-gang-arrests-three</guid>
+      <description><![CDATA[Operation KillSwitch dismantled the KillSec ransomware gang, seizing its data‑leak site and servers. Three members were arrested, and a 16‑year‑old was identified as the alleged administrator. The takedown disrupts the group’s operations and limits its ability to extort victims.]]></description>
+      <pubDate>Thu, 01 Oct 2026 14:25:14 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/police-dismantle-killsec-ransomware-gang-allegedly-led-by-16-year-old/">BleepingComputer</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
+      <title>Day‑One Gap Exposes Zero Trust Vulnerability</title>
+      <link>https://secubuzz.com/news/day-one-gap-exposes-zero-trust-vulnerability</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/day-one-gap-exposes-zero-trust-vulnerability</guid>
+      <description><![CDATA[Zero Trust relies on verifying users after onboarding, but the initial onboarding phase creates a trust gap. Specops warns that identity verification must start before issuing credentials, MFA, or access to prevent early‑stage exploitation. The gap highlights a design flaw in Zero Trust models.]]></description>
+      <pubDate>Thu, 01 Oct 2026 14:01:11 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/the-day-one-hole-in-zero-trust-architecture/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Government Agencies Lead 2026 Cyber Threat Landscape</title>
+      <link>https://secubuzz.com/news/government-agencies-lead-2026-cyber-threat-landscape</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/government-agencies-lead-2026-cyber-threat-landscape</guid>
+      <description><![CDATA[Microsoft’s Digital Defense Report shows government agencies and services experienced 27% of cyber activity in 2026, up from 17% in 2025. The report highlights the growing interconnected cyber risk facing public sector entities and underscores the need for enhanced defensive measures.]]></description>
+      <pubDate>Thu, 01 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://blogs.microsoft.com/on-the-issues/2026/10/01/preparing-governments-for-an-era-of-interconnected-cyber-risk/">Microsoft Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Microsoft Releases 2026 Digital Defense Report Highlights</title>
+      <link>https://secubuzz.com/news/microsoft-releases-2026-digital-defense-report-highlights</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-releases-2026-digital-defense-report-highlights</guid>
+      <description><![CDATA[Microsoft’s 2026 Digital Defense Report outlines a security landscape that is increasingly interconnected, noting evolving threat vectors and the need for robust defense strategies. The report emphasizes the importance of proactive security measures and continuous monitoring to mitigate emerging risks across digital infrastructures.]]></description>
+      <pubDate>Thu, 01 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://www.microsoft.com/en-us/security/blog/2026/10/01/insights-from-the-2026-microsoft-digital-defense-report/">Microsoft Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>DeepKeep Launches AI Lens to Monitor Coding Agent Data Leaks</title>
+      <link>https://secubuzz.com/news/deepkeep-launches-ai-lens-to-monitor-coding-agent-data-leaks</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/deepkeep-launches-ai-lens-to-monitor-coding-agent-data-leaks</guid>
+      <description><![CDATA[DeepKeep introduced AI Lens for Developers, an extension that monitors coding agents like Cursor and Claude Code for data leaks and destructive commands. The tool provides policy enforcement, audit visibility, and runtime protection, closing a critical gap in developer security programs.]]></description>
+      <pubDate>Thu, 01 Oct 2026 13:57:07 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/01/deepkeeps-ai-lens-flags-coding-agent-data-leaks-and-routes-destructive-commands-for-approval/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Cloudflare Promotes AI Sovereignty with Local Open-Source Models</title>
+      <link>https://secubuzz.com/news/cloudflare-promotes-ai-sovereignty-with-local-open-source-mo</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-promotes-ai-sovereignty-with-local-open-source-mo</guid>
+      <description><![CDATA[Cloudflare emphasizes AI sovereignty, offering local open-source models and model-agnostic security tools to give nations genuine choice. The initiative aims to address governments’ concerns that AI control is a zero-sum game, supporting broader AI governance and security.]]></description>
+      <pubDate>Thu, 01 Oct 2026 13:04:19 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/sovereign-ai-choice-one-year-later/">Cloudflare Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Warlock Ransomware Targets Spanish and Portuguese Organizations</title>
+      <link>https://secubuzz.com/news/warlock-ransomware-targets-spanish-and-portuguese-organizati</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/warlock-ransomware-targets-spanish-and-portuguese-organizati</guid>
+      <description><![CDATA[The Warlock ransomware, attributed to a Chinese threat actor with state‑associated APT characteristics, has infected large organizations in Spain and Portugal. The malware encrypts files and demands payment, exploiting typical ransomware tactics. No public fix is available; victims should isolate systems and seek remediation.]]></description>
+      <pubDate>Thu, 01 Oct 2026 13:00:00 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyberattacks-data-breaches/warlock-ransomware-spanish-portuguese">Dark Reading</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
+      <title>Cloudflare Launches Workers KV Instant for Ultra‑Fast Edge Storage</title>
+      <link>https://secubuzz.com/news/cloudflare-launches-workers-kv-instant-for-ultra-fast-edge-s</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-launches-workers-kv-instant-for-ultra-fast-edge-s</guid>
+      <description><![CDATA[Cloudflare introduces Workers KV Instant, a new key‑value store that delivers sub‑2 ms p99 read latencies and 250 ms global replication across 300+ edge locations. It removes cold‑read penalties and maintains the familiar Workers KV API, enhancing performance for edge applications.]]></description>
+      <pubDate>Thu, 01 Oct 2026 13:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/workers-kv-instant/">Cloudflare Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Polish invoicing platform data breach exposes customer information</title>
+      <link>https://secubuzz.com/news/polish-invoicing-platform-data-breach-exposes-customer-infor</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/polish-invoicing-platform-data-breach-exposes-customer-infor</guid>
+      <description><![CDATA[A major Polish online invoicing platform suffered a data breach that may have exposed user data, customer details, and business partner information. The incident potentially compromised sensitive financial and personal data, raising concerns about the platform’s security controls and data protection practices.]]></description>
+      <pubDate>Thu, 01 Oct 2026 12:30:00 GMT</pubDate>
+      <source url="https://therecord.media/poland-cyberattack-invoice-software">The Record</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Financial Services Companies Discuss Modernizing Software Supply Chain</title>
       <link>https://secubuzz.com/news/financial-services-companies-discuss-modernizing-software-su</link>
@@ -53,12 +152,12 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Cisco SD‑WAN Zero‑Day Exploited in the Wild</title>
-      <link>https://secubuzz.com/news/cisco-sd-wan-zero-day-exploited-in-the-wild</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisco-sd-wan-zero-day-exploited-in-the-wild</guid>
-      <description><![CDATA[Cisco’s SD‑WAN solution suffered a zero‑day vulnerability (CVE‑2026‑76504) actively exploited in September 2026. Attackers leveraged the flaw to gain unauthorized access, and Cisco has released indicators of compromise for defenders to check. No further technical details or mitigation steps have been disclosed yet.]]></description>
-      <pubDate>Thu, 01 Oct 2026 10:18:21 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/01/new-cisco-sd-wan-zero-day-exploited-in-the-wild-cve-2026-76504/">Help Net Security</source>
+      <title>CISA adds Cisco SD‑WAN Manager authentication bypass to KEV list</title>
+      <link>https://secubuzz.com/news/cisa-adds-cisco-sd-wan-manager-authentication-bypass-to-kev-</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-cisco-sd-wan-manager-authentication-bypass-to-kev-</guid>
+      <description><![CDATA[CISA added the critical authentication bypass flaw in Cisco Catalyst SD‑WAN Manager, tracked as CVE-2026-76504 with a CVSS score of 9.8, to its Known Exploited Vulnerabilities list after reports of active exploitation. The flaw allows unauthenticated remote attackers to access affected systems.]]></description>
+      <pubDate>Thu, 01 Oct 2026 10:33:16 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html">The Hacker News</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -269,15 +368,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Microsoft Ignite 2026 Highlights AI-First Security Platform</title>
-      <link>https://secubuzz.com/news/microsoft-ignite-2026-highlights-ai-first-security-platform</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-ignite-2026-highlights-ai-first-security-platform</guid>
-      <description><![CDATA[At Microsoft Ignite 2026, Microsoft showcased its AI-first, end-to-end security platform designed to protect identities, devices, data, applications, clouds, infrastructure, and AI agents. The presentation emphasized integrated defenses across the enterprise stack, aiming to streamline security operations and enhance threat detection.]]></description>
-      <pubDate>Wed, 30 Sep 2026 19:31:00 GMT</pubDate>
-      <source url="https://www.microsoft.com/en-us/security/blog/2026/09/30/secure-whats-next-your-guide-to-microsoft-security-at-microsoft-ignite-2026/">Microsoft Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
       <title>Google Reports 10,000 Monthly Vulnerability Disclosures, AI Accelerates Exploitation</title>
       <link>https://secubuzz.com/news/google-reports-10-000-monthly-vulnerability-disclosures-ai-a</link>
       <guid isPermaLink="true">https://secubuzz.com/news/google-reports-10-000-monthly-vulnerability-disclosures-ai-a</guid>
@@ -366,96 +456,6 @@
       <pubDate>Wed, 30 Sep 2026 13:01:55 GMT</pubDate>
       <source url="https://blog.cloudflare.com/100-million-donations/">Cloudflare Security</source>
       <category>Cloud</category>
-    </item>
-    <item>
-      <title>Cloudflare Monetization Gateway Beta Enables Charging AI Agents</title>
-      <link>https://secubuzz.com/news/cloudflare-monetization-gateway-beta-enables-charging-ai-age</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-monetization-gateway-beta-enables-charging-ai-age</guid>
-      <description><![CDATA[Cloudflare’s new Monetization Gateway beta allows AI agents to be charged for token, API, and MCP tool usage via HTTP 402 responses. The beta is available to U.S. sellers who can apply for access, with partners like Ceramic.ai and Stocktwits already using the service.]]></description>
-      <pubDate>Wed, 30 Sep 2026 13:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/monetization-gateway-beta/">Cloudflare Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>Identify AI model overuse with User Insights</title>
-      <link>https://secubuzz.com/news/identify-ai-model-overuse-with-user-insights</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/identify-ai-model-overuse-with-user-insights</guid>
-      <description><![CDATA[AI Gateway User Insights now tracks task, model, turn, and user categories to help teams monitor AI adoption and optimize model usage. The feature is free for AI Gateway users and provides detailed usage analytics for better decision making.]]></description>
-      <pubDate>Wed, 30 Sep 2026 13:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/ai-model-overuse-user-insights/">Cloudflare Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Cloudflare Containers, rebuilt to scale agent sandboxes</title>
-      <link>https://secubuzz.com/news/cloudflare-containers-rebuilt-to-scale-agent-sandboxes</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-containers-rebuilt-to-scale-agent-sandboxes</guid>
-      <description><![CDATA[Cloudflare Containers now launch six times faster, allow agents to select sandbox image and instance type at runtime, and support filesystem snapshots in public beta. All management is controlled via a Durable Object, improving scalability and flexibility for containerized workloads.]]></description>
-      <pubDate>Wed, 30 Sep 2026 12:58:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/faster-agent-sandboxes/">Cloudflare Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>TeamViewer Urges Immediate Patch for High‑Severity Vulnerabilities</title>
-      <link>https://secubuzz.com/news/teamviewer-urges-immediate-patch-for-high-severity-vulnerabi</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/teamviewer-urges-immediate-patch-for-high-severity-vulnerabi</guid>
-      <description><![CDATA[TeamViewer has warned users to patch a set of high‑severity flaws in its client and host software as soon as possible. The vulnerabilities could allow attackers to gain unauthorized access or execute code on affected systems. Users should download the latest updates from TeamViewer’s website to mitigate the risk.]]></description>
-      <pubDate>Wed, 30 Sep 2026 12:25:10 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/teamviewer-urges-users-to-patch-severe-flaws-as-soon-as-possible/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Chrome and Firefox Patch Over 100 Vulnerabilities, Including RCE Flaws</title>
-      <link>https://secubuzz.com/news/chrome-and-firefox-patch-over-100-vulnerabilities-including-</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-and-firefox-patch-over-100-vulnerabilities-including-</guid>
-      <description><![CDATA[Chrome and Firefox updates address more than 100 security issues, some permitting remote attackers to execute arbitrary code or escape browser sandboxes. The patches close potential exploitation vectors that could lead to system compromise. Users should install the latest browser versions to maintain protection.]]></description>
-      <pubDate>Wed, 30 Sep 2026 12:16:52 GMT</pubDate>
-      <source url="https://www.securityweek.com/chrome-firefox-updates-patch-over-100-vulnerabilities/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Browser-Based Attack Techniques Dominating 2026 Threat Landscape</title>
-      <link>https://secubuzz.com/news/browser-based-attack-techniques-dominating-2026-threat-lands</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/browser-based-attack-techniques-dominating-2026-threat-lands</guid>
-      <description><![CDATA[In 2026, attackers increasingly exploit browsers to launch full attack chains, from initial access to data exfiltration, without leaving the session. Security teams should monitor six high‑risk techniques, including XSS, CSRF, and malicious extensions, to defend against evolving web‑based threats.]]></description>
-      <pubDate>Wed, 30 Sep 2026 11:58:00 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/09/know-your-enemy-browser-based-attack.html">The Hacker News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>US‑Focused Phishing Campaign Steals Microsoft 365 Sessions and Deploys RMM Tools</title>
-      <link>https://secubuzz.com/news/us-focused-phishing-campaign-steals-microsoft-365-sessions-a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/us-focused-phishing-campaign-steals-microsoft-365-sessions-a</guid>
-      <description><![CDATA[Researchers traced a phishing campaign targeting US organizations that stole Microsoft 365 session tokens and installed remote‑access tools. The attackers used the stolen sessions to gain broader account compromise and potential fraud. Organizations should monitor for unusual RMM tool activity and enforce MFA on Microsoft 365 accounts.]]></description>
-      <pubDate>Wed, 30 Sep 2026 10:45:00 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/09/us-focused-csuite-phishing-steals.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>OpenInfra Europe’s JFrog Artifactory Compromised via CVE-2026-82329</title>
-      <link>https://secubuzz.com/news/openinfra-europe-s-jfrog-artifactory-compromised-via-cve-202</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openinfra-europe-s-jfrog-artifactory-compromised-via-cve-202</guid>
-      <description><![CDATA[Attackers breached a self-hosted JFrog Artifactory instance operated by OpenInfra Europe, exploiting CVE-2026-82329. Users who downloaded or installed artifacts from https://artifactory.nordix.org/ between August 28 and September 15, 2026 should immediately stop using them, remove them from pipelines, and treat the packages as potentially compromised.]]></description>
-      <pubDate>Wed, 30 Sep 2026 10:39:26 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/09/30/openinfra-jfrog-artifactory-instance-compromised/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>ShinyHunters Denies Publishing FBI Data After Arrest of Suspected Leader</title>
-      <link>https://secubuzz.com/news/shinyhunters-denies-publishing-fbi-data-after-arrest-of-susp</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/shinyhunters-denies-publishing-fbi-data-after-arrest-of-susp</guid>
-      <description><![CDATA[ShinyHunters, a hacker collective, has denied publishing data allegedly stolen from the FBI after a suspected leader’s arrest. The group claims it never intended to release the information, despite FBI calls for members to come forward. The incident highlights ongoing tensions between the collective and law enforcement.]]></description>
-      <pubDate>Wed, 30 Sep 2026 10:20:02 GMT</pubDate>
-      <source url="https://www.securityweek.com/shinyhunters-defiant-after-fbi-calls-on-members-to-come-forward/">SecurityWeek</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>OpenSSL Fixes High‑Severity DTLS Heap Memory Leak</title>
-      <link>https://secubuzz.com/news/openssl-fixes-high-severity-dtls-heap-memory-leak</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openssl-fixes-high-severity-dtls-heap-memory-leak</guid>
-      <description><![CDATA[OpenSSL released a patch for a high‑severity flaw that could leak heap memory or crash applications during DTLS handshakes. The vulnerability occurs when a resend is triggered while a large handshake message is partially processed, potentially exposing sensitive data over UDP traffic.]]></description>
-      <pubDate>Wed, 30 Sep 2026 08:09:28 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/09/openssl-fixes-high-severity-dtls-flaw.html">The Hacker News</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

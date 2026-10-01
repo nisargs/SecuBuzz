@@ -11,6 +11,138 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "wordpress-backdoor-rebuilds-itself-after-cleanup-using-files",
+    "title": "WordPress Backdoor Rebuilds Itself After Cleanup Using Files, Database, and Shared Memory",
+    "summary": "Researchers uncovered a WordPress backdoor that self‑heals by recreating itself through files, database entries, and shared memory after cleanup. The malware, codenamed SC, uses multiple persistence mechanisms to ensure the final payload remains active without re‑infection.",
+    "category": "Vulnerability",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/wordpress-backdoor-rebuilds-itself.html",
+    "publishedAt": "2026-10-01T14:37:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "pwc-finds-only-22-of-enterprises-ready-for-autonomous-ai-cyb",
+    "title": "PwC Finds Only 22% of Enterprises Ready for Autonomous AI Cyber Defense",
+    "summary": "A PwC survey shows just 22% of corporate leaders would deploy fully autonomous AI for cyber defense, and only 21% are adopting quantum‑resistant security measures. The findings highlight a widespread gap in preparedness for emerging AI and quantum threats across the industry.",
+    "category": "Policy",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/enterprises-struggle-to-prepare-for-ai-and-quantum-threats-pwc-says/",
+    "publishedAt": "2026-10-01T14:30:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "law-enforcement-seizes-killsec-ransomware-gang-arrests-three",
+    "title": "Law Enforcement Seizes KillSec Ransomware Gang, Arrests Three Members",
+    "summary": "Operation KillSwitch dismantled the KillSec ransomware gang, seizing its data‑leak site and servers. Three members were arrested, and a 16‑year‑old was identified as the alleged administrator. The takedown disrupts the group’s operations and limits its ability to extort victims.",
+    "category": "Ransomware",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-dismantle-killsec-ransomware-gang-allegedly-led-by-16-year-old/",
+    "publishedAt": "2026-10-01T14:25:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "day-one-gap-exposes-zero-trust-vulnerability",
+    "title": "Day‑One Gap Exposes Zero Trust Vulnerability",
+    "summary": "Zero Trust relies on verifying users after onboarding, but the initial onboarding phase creates a trust gap. Specops warns that identity verification must start before issuing credentials, MFA, or access to prevent early‑stage exploitation. The gap highlights a design flaw in Zero Trust models.",
+    "category": "Vulnerability",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/the-day-one-hole-in-zero-trust-architecture/",
+    "publishedAt": "2026-10-01T14:01:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "government-agencies-lead-2026-cyber-threat-landscape",
+    "title": "Government Agencies Lead 2026 Cyber Threat Landscape",
+    "summary": "Microsoft’s Digital Defense Report shows government agencies and services experienced 27% of cyber activity in 2026, up from 17% in 2025. The report highlights the growing interconnected cyber risk facing public sector entities and underscores the need for enhanced defensive measures.",
+    "category": "Policy",
+    "source": "Microsoft Security",
+    "sourceUrl": "https://blogs.microsoft.com/on-the-issues/2026/10/01/preparing-governments-for-an-era-of-interconnected-cyber-risk/",
+    "publishedAt": "2026-10-01T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "microsoft-releases-2026-digital-defense-report-highlights",
+    "title": "Microsoft Releases 2026 Digital Defense Report Highlights",
+    "summary": "Microsoft’s 2026 Digital Defense Report outlines a security landscape that is increasingly interconnected, noting evolving threat vectors and the need for robust defense strategies. The report emphasizes the importance of proactive security measures and continuous monitoring to mitigate emerging risks across digital infrastructures.",
+    "category": "Policy",
+    "source": "Microsoft Security",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/01/insights-from-the-2026-microsoft-digital-defense-report/",
+    "publishedAt": "2026-10-01T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "deepkeep-launches-ai-lens-to-monitor-coding-agent-data-leaks",
+    "title": "DeepKeep Launches AI Lens to Monitor Coding Agent Data Leaks",
+    "summary": "DeepKeep introduced AI Lens for Developers, an extension that monitors coding agents like Cursor and Claude Code for data leaks and destructive commands. The tool provides policy enforcement, audit visibility, and runtime protection, closing a critical gap in developer security programs.",
+    "category": "Policy",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/deepkeeps-ai-lens-flags-coding-agent-data-leaks-and-routes-destructive-commands-for-approval/",
+    "publishedAt": "2026-10-01T13:57:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "cloudflare-promotes-ai-sovereignty-with-local-open-source-mo",
+    "title": "Cloudflare Promotes AI Sovereignty with Local Open-Source Models",
+    "summary": "Cloudflare emphasizes AI sovereignty, offering local open-source models and model-agnostic security tools to give nations genuine choice. The initiative aims to address governments’ concerns that AI control is a zero-sum game, supporting broader AI governance and security.",
+    "category": "Cloud",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/sovereign-ai-choice-one-year-later/",
+    "publishedAt": "2026-10-01T13:04:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "warlock-ransomware-targets-spanish-and-portuguese-organizati",
+    "title": "Warlock Ransomware Targets Spanish and Portuguese Organizations",
+    "summary": "The Warlock ransomware, attributed to a Chinese threat actor with state‑associated APT characteristics, has infected large organizations in Spain and Portugal. The malware encrypts files and demands payment, exploiting typical ransomware tactics. No public fix is available; victims should isolate systems and seek remediation.",
+    "category": "Ransomware",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/warlock-ransomware-spanish-portuguese",
+    "publishedAt": "2026-10-01T13:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "cloudflare-launches-workers-kv-instant-for-ultra-fast-edge-s",
+    "title": "Cloudflare Launches Workers KV Instant for Ultra‑Fast Edge Storage",
+    "summary": "Cloudflare introduces Workers KV Instant, a new key‑value store that delivers sub‑2 ms p99 read latencies and 250 ms global replication across 300+ edge locations. It removes cold‑read penalties and maintains the familiar Workers KV API, enhancing performance for edge applications.",
+    "category": "Cloud",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/workers-kv-instant/",
+    "publishedAt": "2026-10-01T13:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "polish-invoicing-platform-data-breach-exposes-customer-infor",
+    "title": "Polish invoicing platform data breach exposes customer information",
+    "summary": "A major Polish online invoicing platform suffered a data breach that may have exposed user data, customer details, and business partner information. The incident potentially compromised sensitive financial and personal data, raising concerns about the platform’s security controls and data protection practices.",
+    "category": "Breach",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/poland-cyberattack-invoice-software",
+    "publishedAt": "2026-10-01T12:30:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "financial-services-companies-discuss-modernizing-software-su",
     "title": "Financial Services Companies Discuss Modernizing Software Supply Chain",
     "summary": "Security leaders in banks, insurers, and asset managers debate how to eliminate supply‑chain vulnerabilities. Engineering teams outline platform upgrades, while testing budgets and change‑freeze schedules create delays. The result is often an exception, compensating control, or postponed date, highlighting the challenge of modernizing supply chains.",
@@ -71,14 +203,16 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "cisco-sd-wan-zero-day-exploited-in-the-wild",
-    "title": "Cisco SD‑WAN Zero‑Day Exploited in the Wild",
-    "summary": "Cisco’s SD‑WAN solution suffered a zero‑day vulnerability (CVE‑2026‑76504) actively exploited in September 2026. Attackers leveraged the flaw to gain unauthorized access, and Cisco has released indicators of compromise for defenders to check. No further technical details or mitigation steps have been disclosed yet.",
+    "slug": "cisa-adds-cisco-sd-wan-manager-authentication-bypass-to-kev-",
+    "title": "CISA adds Cisco SD‑WAN Manager authentication bypass to KEV list",
+    "summary": "CISA added the critical authentication bypass flaw in Cisco Catalyst SD‑WAN Manager, tracked as CVE-2026-76504 with a CVSS score of 9.8, to its Known Exploited Vulnerabilities list after reports of active exploitation. The flaw allows unauthenticated remote attackers to access affected systems.",
     "category": "Vulnerability",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/new-cisco-sd-wan-zero-day-exploited-in-the-wild-cve-2026-76504/",
-    "publishedAt": "2026-10-01T10:18:21.000Z",
-    "cves": [],
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html",
+    "publishedAt": "2026-10-01T10:33:16.000Z",
+    "cves": [
+      "CVE-2026-76504"
+    ],
     "additionalSources": [],
     "aliases": []
   },
@@ -361,18 +495,6 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "microsoft-ignite-2026-highlights-ai-first-security-platform",
-    "title": "Microsoft Ignite 2026 Highlights AI-First Security Platform",
-    "summary": "At Microsoft Ignite 2026, Microsoft showcased its AI-first, end-to-end security platform designed to protect identities, devices, data, applications, clouds, infrastructure, and AI agents. The presentation emphasized integrated defenses across the enterprise stack, aiming to streamline security operations and enhance threat detection.",
-    "category": "Cloud",
-    "source": "Microsoft Security",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/09/30/secure-whats-next-your-guide-to-microsoft-security-at-microsoft-ignite-2026/",
-    "publishedAt": "2026-09-30T19:31:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
     "slug": "google-reports-10-000-monthly-vulnerability-disclosures-ai-a",
     "title": "Google Reports 10,000 Monthly Vulnerability Disclosures, AI Accelerates Exploitation",
     "summary": "Google researchers warned that vulnerability disclosures have doubled to over 10,000 per month, with artificial intelligence driving the increase. The surge highlights growing exploitation activity, though no specific vulnerabilities or exploits are named. The trend underscores the need for continuous patching and monitoring.",
@@ -550,18 +672,6 @@ export const news: NewsBrief[] = [
     "source": "SecurityWeek",
     "sourceUrl": "https://www.securityweek.com/chrome-firefox-updates-patch-over-100-vulnerabilities/",
     "publishedAt": "2026-09-30T12:16:52.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "browser-based-attack-techniques-dominating-2026-threat-lands",
-    "title": "Browser-Based Attack Techniques Dominating 2026 Threat Landscape",
-    "summary": "In 2026, attackers increasingly exploit browsers to launch full attack chains, from initial access to data exfiltration, without leaving the session. Security teams should monitor six high‑risk techniques, including XSS, CSRF, and malicious extensions, to defend against evolving web‑based threats.",
-    "category": "Policy",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/09/know-your-enemy-browser-based-attack.html",
-    "publishedAt": "2026-09-30T11:58:00.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -1014,18 +1124,6 @@ export const news: NewsBrief[] = [
     "source": "Unit 42",
     "sourceUrl": "https://unit42.paloaltonetworks.com/agentic-ai-kubernetes-operator-risks/",
     "publishedAt": "2026-09-29T10:00:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "hackers-exploit-sql-injection-to-steal-patient-data-from-pol",
-    "title": "Hackers Exploit SQL Injection to Steal Patient Data from Polish Medical Software Provider",
-    "summary": "Hackers used a SQL injection flaw in Qbusoft’s Medyc platform to exfiltrate patient records, including sensitive data from nearly 19 million individuals. The breach follows a similar attack on MyDr, affecting about 12,000 healthcare facilities. The vulnerability allows unauthenticated attackers to read database contents, posing a high‑risk data exposure.",
-    "category": "Vulnerability",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/qbusoft-medyc-data-breach-poland/",
-    "publishedAt": "2026-09-29T09:17:43.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []

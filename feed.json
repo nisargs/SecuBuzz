@@ -1,5 +1,173 @@
 [
   {
+    "id": "https://thehackernews.com/2026/10/wordpress-backdoor-rebuilds-itself.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/wordpress-backdoor-rebuilds-itself.html",
+    "title": "WordPress Backdoor Rebuilds Itself After Cleanup Using Files, Database, and Shared Memory",
+    "headline": "WordPress Backdoor Rebuilds Itself After Cleanup Using Files, Database, and Shared Memory",
+    "summary": "Researchers uncovered a WordPress backdoor that self‑heals by recreating itself through files, database entries, and shared memory after cleanup. The malware, codenamed SC, uses multiple persistence mechanisms to ensure the final payload remains active without re‑infection.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-01T14:37:35.000Z",
+    "url": "https://thehackernews.com/2026/10/wordpress-backdoor-rebuilds-itself.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/enterprises-struggle-to-prepare-for-ai-and-quantum-threats-pwc-says/",
+    "sourceUrl": "https://www.securityweek.com/enterprises-struggle-to-prepare-for-ai-and-quantum-threats-pwc-says/",
+    "title": "PwC Finds Only 22% of Enterprises Ready for Autonomous AI Cyber Defense",
+    "headline": "PwC Finds Only 22% of Enterprises Ready for Autonomous AI Cyber Defense",
+    "summary": "A PwC survey shows just 22% of corporate leaders would deploy fully autonomous AI for cyber defense, and only 21% are adopting quantum‑resistant security measures. The findings highlight a widespread gap in preparedness for emerging AI and quantum threats across the industry.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-01T14:30:00.000Z",
+    "url": "https://www.securityweek.com/enterprises-struggle-to-prepare-for-ai-and-quantum-threats-pwc-says/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/police-dismantle-killsec-ransomware-gang-allegedly-led-by-16-year-old/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-dismantle-killsec-ransomware-gang-allegedly-led-by-16-year-old/",
+    "title": "Law Enforcement Seizes KillSec Ransomware Gang, Arrests Three Members",
+    "headline": "Law Enforcement Seizes KillSec Ransomware Gang, Arrests Three Members",
+    "summary": "Operation KillSwitch dismantled the KillSec ransomware gang, seizing its data‑leak site and servers. Three members were arrested, and a 16‑year‑old was identified as the alleged administrator. The takedown disrupts the group’s operations and limits its ability to extort victims.",
+    "category": "RANSOMWARE",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-01T14:25:14.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/police-dismantle-killsec-ransomware-gang-allegedly-led-by-16-year-old/",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/killsec-ransomware-16-year-old-main-operator-arrested/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/the-day-one-hole-in-zero-trust-architecture/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/the-day-one-hole-in-zero-trust-architecture/",
+    "title": "Day‑One Gap Exposes Zero Trust Vulnerability",
+    "headline": "Day‑One Gap Exposes Zero Trust Vulnerability",
+    "summary": "Zero Trust relies on verifying users after onboarding, but the initial onboarding phase creates a trust gap. Specops warns that identity verification must start before issuing credentials, MFA, or access to prevent early‑stage exploitation. The gap highlights a design flaw in Zero Trust models.",
+    "category": "VULNERABILITY",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-01T14:01:11.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/the-day-one-hole-in-zero-trust-architecture/",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/new-cisco-sd-wan-zero-day-exploited-in-the-wild-cve-2026-76504/"
+      }
+    ]
+  },
+  {
+    "id": "https://blogs.microsoft.com/on-the-issues/2026/10/01/preparing-governments-for-an-era-of-interconnected-cyber-risk/",
+    "sourceUrl": "https://blogs.microsoft.com/on-the-issues/2026/10/01/preparing-governments-for-an-era-of-interconnected-cyber-risk/",
+    "title": "Government Agencies Lead 2026 Cyber Threat Landscape",
+    "headline": "Government Agencies Lead 2026 Cyber Threat Landscape",
+    "summary": "Microsoft’s Digital Defense Report shows government agencies and services experienced 27% of cyber activity in 2026, up from 17% in 2025. The report highlights the growing interconnected cyber risk facing public sector entities and underscores the need for enhanced defensive measures.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Microsoft Security",
+    "publishedAt": "2026-10-01T14:00:00.000Z",
+    "url": "https://blogs.microsoft.com/on-the-issues/2026/10/01/preparing-governments-for-an-era-of-interconnected-cyber-risk/",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/09/know-your-enemy-browser-based-attack.html"
+      }
+    ]
+  },
+  {
+    "id": "https://www.microsoft.com/en-us/security/blog/2026/10/01/insights-from-the-2026-microsoft-digital-defense-report/",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/01/insights-from-the-2026-microsoft-digital-defense-report/",
+    "title": "Microsoft Releases 2026 Digital Defense Report Highlights",
+    "headline": "Microsoft Releases 2026 Digital Defense Report Highlights",
+    "summary": "Microsoft’s 2026 Digital Defense Report outlines a security landscape that is increasingly interconnected, noting evolving threat vectors and the need for robust defense strategies. The report emphasizes the importance of proactive security measures and continuous monitoring to mitigate emerging risks across digital infrastructures.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Microsoft Security",
+    "publishedAt": "2026-10-01T14:00:00.000Z",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/10/01/insights-from-the-2026-microsoft-digital-defense-report/",
+    "additionalSources": [
+      {
+        "source": "Microsoft Security",
+        "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/09/30/secure-whats-next-your-guide-to-microsoft-security-at-microsoft-ignite-2026/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/01/deepkeeps-ai-lens-flags-coding-agent-data-leaks-and-routes-destructive-commands-for-approval/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/deepkeeps-ai-lens-flags-coding-agent-data-leaks-and-routes-destructive-commands-for-approval/",
+    "title": "DeepKeep Launches AI Lens to Monitor Coding Agent Data Leaks",
+    "headline": "DeepKeep Launches AI Lens to Monitor Coding Agent Data Leaks",
+    "summary": "DeepKeep introduced AI Lens for Developers, an extension that monitors coding agents like Cursor and Claude Code for data leaks and destructive commands. The tool provides policy enforcement, audit visibility, and runtime protection, closing a critical gap in developer security programs.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-01T13:57:07.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/01/deepkeeps-ai-lens-flags-coding-agent-data-leaks-and-routes-destructive-commands-for-approval/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://blog.cloudflare.com/sovereign-ai-choice-one-year-later/",
+    "sourceUrl": "https://blog.cloudflare.com/sovereign-ai-choice-one-year-later/",
+    "title": "Cloudflare Promotes AI Sovereignty with Local Open-Source Models",
+    "headline": "Cloudflare Promotes AI Sovereignty with Local Open-Source Models",
+    "summary": "Cloudflare emphasizes AI sovereignty, offering local open-source models and model-agnostic security tools to give nations genuine choice. The initiative aims to address governments’ concerns that AI control is a zero-sum game, supporting broader AI governance and security.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "publishedAt": "2026-10-01T13:04:19.000Z",
+    "url": "https://blog.cloudflare.com/sovereign-ai-choice-one-year-later/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.darkreading.com/cyberattacks-data-breaches/warlock-ransomware-spanish-portuguese",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/warlock-ransomware-spanish-portuguese",
+    "title": "Warlock Ransomware Targets Spanish and Portuguese Organizations",
+    "headline": "Warlock Ransomware Targets Spanish and Portuguese Organizations",
+    "summary": "The Warlock ransomware, attributed to a Chinese threat actor with state‑associated APT characteristics, has infected large organizations in Spain and Portugal. The malware encrypts files and demands payment, exploiting typical ransomware tactics. No public fix is available; victims should isolate systems and seek remediation.",
+    "category": "RANSOMWARE",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-01T13:00:00.000Z",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/warlock-ransomware-spanish-portuguese",
+    "additionalSources": []
+  },
+  {
+    "id": "https://blog.cloudflare.com/workers-kv-instant/",
+    "sourceUrl": "https://blog.cloudflare.com/workers-kv-instant/",
+    "title": "Cloudflare Launches Workers KV Instant for Ultra‑Fast Edge Storage",
+    "headline": "Cloudflare Launches Workers KV Instant for Ultra‑Fast Edge Storage",
+    "summary": "Cloudflare introduces Workers KV Instant, a new key‑value store that delivers sub‑2 ms p99 read latencies and 250 ms global replication across 300+ edge locations. It removes cold‑read penalties and maintains the familiar Workers KV API, enhancing performance for edge applications.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "publishedAt": "2026-10-01T13:00:00.000Z",
+    "url": "https://blog.cloudflare.com/workers-kv-instant/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://therecord.media/poland-cyberattack-invoice-software",
+    "sourceUrl": "https://therecord.media/poland-cyberattack-invoice-software",
+    "title": "Polish invoicing platform data breach exposes customer information",
+    "headline": "Polish invoicing platform data breach exposes customer information",
+    "summary": "A major Polish online invoicing platform suffered a data breach that may have exposed user data, customer details, and business partner information. The incident potentially compromised sensitive financial and personal data, raising concerns about the platform’s security controls and data protection practices.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Record",
+    "publishedAt": "2026-10-01T12:30:00.000Z",
+    "url": "https://therecord.media/poland-cyberattack-invoice-software",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/qbusoft-medyc-data-breach-poland/"
+      }
+    ]
+  },
+  {
     "id": "https://thehackernews.com/2026/10/how-financial-services-companies-can.html",
     "sourceUrl": "https://thehackernews.com/2026/10/how-financial-services-companies-can.html",
     "title": "Financial Services Companies Discuss Modernizing Software Supply Chain",
@@ -80,22 +248,17 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.helpnetsecurity.com/2026/10/01/new-cisco-sd-wan-zero-day-exploited-in-the-wild-cve-2026-76504/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/new-cisco-sd-wan-zero-day-exploited-in-the-wild-cve-2026-76504/",
-    "title": "Cisco SD‑WAN Zero‑Day Exploited in the Wild",
-    "headline": "Cisco SD‑WAN Zero‑Day Exploited in the Wild",
-    "summary": "Cisco’s SD‑WAN solution suffered a zero‑day vulnerability (CVE‑2026‑76504) actively exploited in September 2026. Attackers leveraged the flaw to gain unauthorized access, and Cisco has released indicators of compromise for defenders to check. No further technical details or mitigation steps have been disclosed yet.",
+    "id": "https://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html",
+    "title": "CISA adds Cisco SD‑WAN Manager authentication bypass to KEV list",
+    "headline": "CISA adds Cisco SD‑WAN Manager authentication bypass to KEV list",
+    "summary": "CISA added the critical authentication bypass flaw in Cisco Catalyst SD‑WAN Manager, tracked as CVE-2026-76504 with a CVSS score of 9.8, to its Known Exploited Vulnerabilities list after reports of active exploitation. The flaw allows unauthenticated remote attackers to access affected systems.",
     "category": "CVE",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-01T10:18:21.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/01/new-cisco-sd-wan-zero-day-exploited-in-the-wild-cve-2026-76504/",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/09/cisco-warns-of-attackers-exploiting.html"
-      }
-    ]
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-01T10:33:16.000Z",
+    "url": "https://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html",
+    "additionalSources": []
   },
   {
     "id": "https://www.bleepingcomputer.com/news/security/hackers-breach-pentagon-human-resources-management-system-steal-data-of-nearly-3-million-people/",
@@ -465,19 +628,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.microsoft.com/en-us/security/blog/2026/09/30/secure-whats-next-your-guide-to-microsoft-security-at-microsoft-ignite-2026/",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/09/30/secure-whats-next-your-guide-to-microsoft-security-at-microsoft-ignite-2026/",
-    "title": "Microsoft Ignite 2026 Highlights AI-First Security Platform",
-    "headline": "Microsoft Ignite 2026 Highlights AI-First Security Platform",
-    "summary": "At Microsoft Ignite 2026, Microsoft showcased its AI-first, end-to-end security platform designed to protect identities, devices, data, applications, clouds, infrastructure, and AI agents. The presentation emphasized integrated defenses across the enterprise stack, aiming to streamline security operations and enhance threat detection.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Microsoft Security",
-    "publishedAt": "2026-09-30T19:31:00.000Z",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/30/secure-whats-next-your-guide-to-microsoft-security-at-microsoft-ignite-2026/",
-    "additionalSources": []
-  },
-  {
     "id": "https://therecord.media/google-vulnerabilities-cyberattacks-ai",
     "sourceUrl": "https://therecord.media/google-vulnerabilities-cyberattacks-ai",
     "title": "Google Reports 10,000 Monthly Vulnerability Disclosures, AI Accelerates Exploitation",
@@ -699,19 +849,6 @@
     "source": "SecurityWeek",
     "publishedAt": "2026-09-30T12:16:52.000Z",
     "url": "https://www.securityweek.com/chrome-firefox-updates-patch-over-100-vulnerabilities/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/09/know-your-enemy-browser-based-attack.html",
-    "sourceUrl": "https://thehackernews.com/2026/09/know-your-enemy-browser-based-attack.html",
-    "title": "Browser-Based Attack Techniques Dominating 2026 Threat Landscape",
-    "headline": "Browser-Based Attack Techniques Dominating 2026 Threat Landscape",
-    "summary": "In 2026, attackers increasingly exploit browsers to launch full attack chains, from initial access to data exfiltration, without leaving the session. Security teams should monitor six high‑risk techniques, including XSS, CSRF, and malicious extensions, to defend against evolving web‑based threats.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "publishedAt": "2026-09-30T11:58:00.000Z",
-    "url": "https://thehackernews.com/2026/09/know-your-enemy-browser-based-attack.html",
     "additionalSources": []
   },
   {
@@ -1280,24 +1417,6 @@
       {
         "source": "Cloudflare Security",
         "sourceUrl": "https://blog.cloudflare.com/cloudflare-cf-cli-launch/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/09/29/qbusoft-medyc-data-breach-poland/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/qbusoft-medyc-data-breach-poland/",
-    "title": "Hackers Exploit SQL Injection to Steal Patient Data from Polish Medical Software Provider",
-    "headline": "Hackers Exploit SQL Injection to Steal Patient Data from Polish Medical Software Provider",
-    "summary": "Hackers used a SQL injection flaw in Qbusoft’s Medyc platform to exfiltrate patient records, including sensitive data from nearly 19 million individuals. The breach follows a similar attack on MyDr, affecting about 12,000 healthcare facilities. The vulnerability allows unauthenticated attackers to read database contents, posing a high‑risk data exposure.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "publishedAt": "2026-09-29T09:17:43.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/09/29/qbusoft-medyc-data-breach-poland/",
-    "additionalSources": [
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/poland-cyberattack-medical-medyc"
       }
     ]
   },
