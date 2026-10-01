@@ -11,6 +11,30 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "police-arrest-teen-leader-of-killsec-ransomware-as-a-service",
+    "title": "Police Arrest Teen Leader of KillSec Ransomware-as-a-Service",
+    "summary": "European police raided the KillSec ransomware‑as‑a‑service network, arresting a teenage suspect identified as the operation’s leader. The crackdown targeted the group’s infrastructure and distribution channels, disrupting its ability to deliver ransomware payloads to victims. The arrest signals a significant blow to the KillSec threat actor.",
+    "category": "Ransomware",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/killsec-ransomware-raas-arrests-europe",
+    "publishedAt": "2026-10-01T15:55:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "cloudflare-launches-clef-decision-models-and-rl-fine-tuning-",
+    "title": "Cloudflare Launches Clef Decision Models and RL Fine‑Tuning Platform",
+    "summary": "Cloudflare unveiled Clef, an open‑source decision‑making framework, and Clef‑flash, a high‑speed classification tool hosted on Workers AI. The company also introduced a reinforcement‑learning platform that lets developers fine‑tune decision models with their own data, aiming to accelerate AI workflow automation.",
+    "category": "Cloud",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/clef-decision-models/",
+    "publishedAt": "2026-10-01T15:34:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "wordpress-backdoor-rebuilds-itself-after-cleanup-using-files",
     "title": "WordPress Backdoor Rebuilds Itself After Cleanup Using Files, Database, and Shared Memory",
     "summary": "Researchers uncovered a WordPress backdoor that self‑heals by recreating itself through files, database entries, and shared memory after cleanup. The malware, codenamed SC, uses multiple persistence mechanisms to ensure the final payload remains active without re‑infection.",
@@ -18,6 +42,18 @@ export const news: NewsBrief[] = [
     "source": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/10/wordpress-backdoor-rebuilds-itself.html",
     "publishedAt": "2026-10-01T14:37:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "rob-juncker-discusses-hacker-identity-and-ethics",
+    "title": "Rob Juncker Discusses Hacker Identity and Ethics",
+    "summary": "Rob Juncker, Mimecast’s chief product and technology officer, confirms he is a hacker and shares his moral compass on security practices. The interview explores his perspective on hacking and cybersecurity leadership.",
+    "category": "Policy",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/hacker-conversations-rob-juncker-a-knock-at-the-door-and-a-moral-compass/",
+    "publishedAt": "2026-10-01T14:30:00.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -95,13 +131,49 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "cloudflare-promotes-ai-sovereignty-with-local-open-source-mo",
-    "title": "Cloudflare Promotes AI Sovereignty with Local Open-Source Models",
-    "summary": "Cloudflare emphasizes AI sovereignty, offering local open-source models and model-agnostic security tools to give nations genuine choice. The initiative aims to address governments’ concerns that AI control is a zero-sum game, supporting broader AI governance and security.",
+    "slug": "kiteworks-releases-patch-for-max-severity-code-injection-vul",
+    "title": "Kiteworks Releases Patch for Max-Severity Code Injection Vulnerability in Email Protection Gateway",
+    "summary": "Kiteworks has issued security updates addressing 126 vulnerabilities, including a high‑severity code injection flaw in its Email Protection Gateway (EPG). The patch mitigates the risk of arbitrary code execution via crafted inputs, protecting data‑sharing operations. Users should apply the update immediately to prevent potential exploitation.",
+    "category": "Vulnerability",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/kiteworks-patches-max-severity-email-protection-gateway-code-injection-vulnerability/",
+    "publishedAt": "2026-10-01T13:51:08.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "exabeam-introduces-ai-assisted-investigations-for-on-premise",
+    "title": "Exabeam Introduces AI‑Assisted Investigations for On‑Premises Data",
+    "summary": "Exabeam launches new capabilities that extend its Agentic SOC to both cloud and on‑premises environments. The update enables AI‑driven investigation, execution, and governance while keeping data local. It aims to accelerate threat detection and response for organizations that require on‑premises data residency.",
+    "category": "Cloud",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/exabeam-agentic-soc/",
+    "publishedAt": "2026-10-01T13:50:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "radarfirst-launches-ai-incident-management-tool",
+    "title": "RadarFirst Launches AI Incident Management Tool",
+    "summary": "RadarFirst has released Radar AI Incident Management, a tool designed to help organizations investigate and document AI-related incidents. The solution addresses risks from biased outcomes, data exposure, and unintended AI actions, enabling coordinated responses across privacy, security, compliance, and product teams.",
+    "category": "Policy",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/radarfirst-ai-incident-management/",
+    "publishedAt": "2026-10-01T13:39:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "cloudflare-os-offers-managed-agent-workspaces",
+    "title": "Cloudflare OS Offers Managed Agent Workspaces",
+    "summary": "Cloudflare OS provides every employee with a managed agent workspace that understands company workflows and connects to internal data and systems. The service is now available via a waitlist for fully managed deployments that can be launched with a few clicks.",
     "category": "Cloud",
     "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/sovereign-ai-choice-one-year-later/",
-    "publishedAt": "2026-10-01T13:04:19.000Z",
+    "sourceUrl": "https://blog.cloudflare.com/managed-cloudflare-os/",
+    "publishedAt": "2026-10-01T13:00:00.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -113,18 +185,6 @@ export const news: NewsBrief[] = [
     "category": "Ransomware",
     "source": "Dark Reading",
     "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/warlock-ransomware-spanish-portuguese",
-    "publishedAt": "2026-10-01T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "cloudflare-launches-workers-kv-instant-for-ultra-fast-edge-s",
-    "title": "Cloudflare Launches Workers KV Instant for Ultra‑Fast Edge Storage",
-    "summary": "Cloudflare introduces Workers KV Instant, a new key‑value store that delivers sub‑2 ms p99 read latencies and 250 ms global replication across 300+ edge locations. It removes cold‑read penalties and maintains the familiar Workers KV API, enhancing performance for edge applications.",
-    "category": "Cloud",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/workers-kv-instant/",
     "publishedAt": "2026-10-01T13:00:00.000Z",
     "cves": [],
     "additionalSources": [],
@@ -162,6 +222,18 @@ export const news: NewsBrief[] = [
     "source": "SecurityWeek",
     "sourceUrl": "https://www.securityweek.com/kevin-mandias-armadin-raises-255-million-at-2-5-billion-valuation/",
     "publishedAt": "2026-10-01T11:40:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "microsoft-enables-windows-settings-backup-by-default-for-ent",
+    "title": "Microsoft Enables Windows Settings Backup by Default for Enterprise Systems",
+    "summary": "Microsoft has activated Windows settings backup and restore on all Microsoft Entra‑joined or hybrid‑joined enterprise systems upgraded to Windows 11 26H2. The feature automatically backs up user settings and can restore them, improving configuration resilience and simplifying recovery after device changes or resets.",
+    "category": "Policy",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-enables-windows-settings-backup-by-default-for-orgs/",
+    "publishedAt": "2026-10-01T11:14:28.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -236,18 +308,6 @@ export const news: NewsBrief[] = [
     "source": "SecurityWeek",
     "sourceUrl": "https://www.securityweek.com/google-launches-gemini-4-argon-with-guardrail-free-access-for-vetted-defenders/",
     "publishedAt": "2026-10-01T07:52:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "thales-releases-sentinel-envelope-plus-for-zero-code-softwar",
-    "title": "Thales Releases Sentinel Envelope Plus for Zero‑Code Software Hardening",
-    "summary": "Thales has unveiled Sentinel Envelope Plus, a new layer of protection for compiled applications that defends against AI‑assisted reverse engineering, zero‑day discovery, and exploit generation. The solution adds multiple security layers without requiring source code changes or special compilation environments, simplifying deployment for developers.",
-    "category": "Policy",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/thales-sentinel-envelope-plus/",
-    "publishedAt": "2026-10-01T07:38:00.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -533,18 +593,6 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "phishers-use-msp360-to-deploy-remote-management-tool",
-    "title": "Phishers Use MSP360 to Deploy Remote Management Tool",
-    "summary": "Attackers distributed a legitimate MSP360 installer disguised as meeting invites and software updates. Once run, the installer granted remote management access via ScreenConnect, enabling attackers to control victim systems. The campaign relies on social engineering and legitimate software to bypass defenses.",
-    "category": "Breach",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/09/attackers-abuse-msp360-to-deploy.html",
-    "publishedAt": "2026-09-30T16:32:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
     "slug": "wizos-helm-charts-offer-hardened-kubernetes-deployments",
     "title": "WizOS Helm Charts Offer Hardened Kubernetes Deployments",
     "summary": "WizOS introduces signed, CVE‑scanned Helm charts that harden Kubernetes supply chains. The charts eliminate hidden CI/CD risks and unmaintained dependencies, providing a secure, seamless deployment path for Kubernetes environments.",
@@ -593,18 +641,6 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "microsoft-enhances-entra-id-protection-against-external-scri",
-    "title": "Microsoft Enhances Entra ID Protection Against External Script Injection",
-    "summary": "Microsoft will strengthen Entra ID authentication to block external script injection attacks starting October. The update aims to prevent attackers from injecting malicious scripts into authentication flows, reducing the risk of credential theft and session hijacking. Users should ensure their Entra ID environment is updated before the rollout.",
-    "category": "Vulnerability",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-to-block-entra-id-script-injection-attacks-starting-october/",
-    "publishedAt": "2026-09-30T13:37:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
     "slug": "cloudflare-impact-reaches-100-million-in-donations",
     "title": "Cloudflare Impact Reaches $100 Million in Donations",
     "summary": "Cloudflare’s Impact program has reached a $100 million milestone in donated services, shielding thousands of entities—including journalists, civil society groups, state and local governments, election bodies, and public schools—from cyberattacks. The initiative expands protection for vulnerable organizations worldwide in the coming months.",
@@ -636,18 +672,6 @@ export const news: NewsBrief[] = [
     "source": "Cloudflare Security",
     "sourceUrl": "https://blog.cloudflare.com/ai-model-overuse-user-insights/",
     "publishedAt": "2026-09-30T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "cloudflare-containers-rebuilt-to-scale-agent-sandboxes",
-    "title": "Cloudflare Containers, rebuilt to scale agent sandboxes",
-    "summary": "Cloudflare Containers now launch six times faster, allow agents to select sandbox image and instance type at runtime, and support filesystem snapshots in public beta. All management is controlled via a Durable Object, improving scalability and flexibility for containerized workloads.",
-    "category": "Cloud",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/faster-agent-sandboxes/",
-    "publishedAt": "2026-09-30T12:58:00.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -703,18 +727,6 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "shinyhunters-denies-publishing-fbi-data-after-arrest-of-susp",
-    "title": "ShinyHunters Denies Publishing FBI Data After Arrest of Suspected Leader",
-    "summary": "ShinyHunters, a hacker collective, has denied publishing data allegedly stolen from the FBI after a suspected leader’s arrest. The group claims it never intended to release the information, despite FBI calls for members to come forward. The incident highlights ongoing tensions between the collective and law enforcement.",
-    "category": "Breach",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/shinyhunters-defiant-after-fbi-calls-on-members-to-come-forward/",
-    "publishedAt": "2026-09-30T10:20:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
     "slug": "openssl-fixes-high-severity-dtls-heap-memory-leak",
     "title": "OpenSSL Fixes High‑Severity DTLS Heap Memory Leak",
     "summary": "OpenSSL released a patch for a high‑severity flaw that could leak heap memory or crash applications during DTLS handshakes. The vulnerability occurs when a resend is triggered while a large handshake message is partially processed, potentially exposing sensitive data over UDP traffic.",
@@ -746,18 +758,6 @@ export const news: NewsBrief[] = [
     "source": "Dark Reading",
     "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/south-africa-help-cyberattack-air-traffic-control",
     "publishedAt": "2026-09-30T07:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "genea-launches-ai-enabled-access-control-platform",
-    "title": "Genea Launches AI‑Enabled Access Control Platform",
-    "summary": "Genea has unveiled Genea MCP, a Model Context Protocol server that connects AI agents directly to its access control system. The new tool enables role‑based permissions to be configured with a single sentence, streamlining onboarding and temporary access. The release positions Genea among the first providers to offer a native MCP server.",
-    "category": "Policy",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/genea-mcp/",
-    "publishedAt": "2026-09-30T06:49:24.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -818,18 +818,6 @@ export const news: NewsBrief[] = [
     "source": "Help Net Security",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/research-unpatched-vulnerabilities-backlog/",
     "publishedAt": "2026-09-30T04:00:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "microsoft-makes-wsl-containers-generally-available-on-window",
-    "title": "Microsoft Makes WSL Containers Generally Available on Windows",
-    "summary": "Microsoft released WSL containers as a generally available feature, allowing administrators to disable or restrict image sources. The containers run Linux workloads via the Windows Subsystem for Linux and can be installed with wsl --update or from Microsoft’s GitHub releases. Intune settings help manage the feature.",
-    "category": "Cloud",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/microsoft-wsl-containers-available/",
-    "publishedAt": "2026-09-30T03:47:25.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -938,18 +926,6 @@ export const news: NewsBrief[] = [
     "source": "Microsoft Security",
     "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/09/29/beyond-source-code-a-path-to-the-keys-to-the-kingdom/",
     "publishedAt": "2026-09-29T16:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "postman-releases-fabric-gateway-for-ai-agent-governance",
-    "title": "Postman Releases Fabric Gateway for AI Agent Governance",
-    "summary": "Postman has released Fabric Gateway, a protocol‑agnostic control plane that lets organizations govern AI agents, LLMs, and MCP servers when they discover and use APIs, tools, and other agents. The solution centralizes access control, limiting what agents can see and do, and avoids fragmented integrations.",
-    "category": "Policy",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/postman-fabric-gateway/",
-    "publishedAt": "2026-09-29T13:40:47.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -1124,18 +1100,6 @@ export const news: NewsBrief[] = [
     "source": "Unit 42",
     "sourceUrl": "https://unit42.paloaltonetworks.com/agentic-ai-kubernetes-operator-risks/",
     "publishedAt": "2026-09-29T10:00:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "kiteworks-addresses-critical-vulnerability-restores-customer",
-    "title": "Kiteworks Addresses Critical Vulnerability, Restores Customer Systems",
-    "summary": "Kiteworks issued a patch for a critical vulnerability that forced customers to shut down systems. The company lifted its precautionary advisory after the fix was applied, allowing affected environments to resume normal operations. No further exploitation details were disclosed.",
-    "category": "Vulnerability",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/kiteworks-lifts-shutdown-warning-after-patching-critical-flaw/",
-    "publishedAt": "2026-09-29T09:04:06.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
