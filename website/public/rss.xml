@@ -5,8 +5,53 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Sep 2026 20:52:02 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2026 00:20:07 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>FTC Investigating OpenAI and Anthropic Over Possible Consumer Risks</title>
+      <link>https://secubuzz.com/news/ftc-investigating-openai-and-anthropic-over-possible-consume</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ftc-investigating-openai-and-anthropic-over-possible-consume</guid>
+      <description><![CDATA[The Federal Trade Commission has opened an investigation into OpenAI and Anthropic, citing potential risks to consumers. The FTC confirmed the inquiry but has not released further details. The probe focuses on how the companies’ AI services may affect user privacy and safety.]]></description>
+      <pubDate>Wed, 30 Sep 2026 23:43:51 GMT</pubDate>
+      <source url="https://www.securityweek.com/ftc-is-investigating-openai-and-anthropic-over-possible-risks-to-consumers/">SecurityWeek</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>US Sanctions 10 Over ATM Malware Scheme Tied to Tren de Aragua</title>
+      <link>https://secubuzz.com/news/us-sanctions-10-over-atm-malware-scheme-tied-to-tren-de-arag</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/us-sanctions-10-over-atm-malware-scheme-tied-to-tren-de-arag</guid>
+      <description><![CDATA[The U.S. Treasury’s Office of Foreign Assets Control sanctioned ten individuals and companies linked to an ATM malware operation that stole money from dozens of machines. The targets are connected to the Tren de Aragua scheme, and the sanctions aim to disrupt the laundering of the stolen funds.]]></description>
+      <pubDate>Wed, 30 Sep 2026 22:35:00 GMT</pubDate>
+      <source url="https://therecord.media/us-sanctions-10-atm-jackpotting-tren-de-aragua">The Record</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>UAT-11587 Backdoor Targets Asian Governments via Antino Rust Malware</title>
+      <link>https://secubuzz.com/news/uat-11587-backdoor-targets-asian-governments-via-antino-rust</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/uat-11587-backdoor-targets-asian-governments-via-antino-rust</guid>
+      <description><![CDATA[The China‑linked UAT‑11587 malware has infiltrated more than 16 Asian government agencies using the Antino Rust backdoor. It leverages Microsoft 365 as a dead‑drop command‑and‑control channel, enabling attackers to maintain persistence and exfiltrate data from compromised systems and facilitate ongoing surveillance.]]></description>
+      <pubDate>Wed, 30 Sep 2026 22:00:00 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/china-uat-11587-antino-backdoor-espionage">CyberNews AI</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Malicious Custom GPTs Exploit ChatGPT as RAT Delivery Lure</title>
+      <link>https://secubuzz.com/news/malicious-custom-gpts-exploit-chatgpt-as-rat-delivery-lure</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/malicious-custom-gpts-exploit-chatgpt-as-rat-delivery-lure</guid>
+      <description><![CDATA[Threat actors are using custom GPTs to transform ChatGPT into a RAT delivery platform, mimicking legitimate OpenAI and Google domains. This ClickFix‑style campaign lures users into downloading malicious payloads, turning the AI interface into a vector for remote access trojans.]]></description>
+      <pubDate>Wed, 30 Sep 2026 21:25:47 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyberattacks-data-breaches/malicious-custom-gpts-chatgpt-rat-delivery-lure">Dark Reading</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>White House AI Safety Accord Calls on Tech Companies to Strengthen Controls</title>
+      <link>https://secubuzz.com/news/white-house-ai-safety-accord-calls-on-tech-companies-to-stre</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/white-house-ai-safety-accord-calls-on-tech-companies-to-stre</guid>
+      <description><![CDATA[The new White House Accord on "Super Intelligence" urges technology firms to adopt stricter AI safety measures, including enhanced oversight and governance. The agreement aims to mitigate risks associated with advanced AI systems by setting industry-wide standards for responsible development and deployment.]]></description>
+      <pubDate>Wed, 30 Sep 2026 20:51:15 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyber-risk/trump-tech-giants-strike-voluntary-ai-safety-accord">Dark Reading</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>Russian State Hackers Deploy CosmicPulse Backdoor via RedFlick Technique</title>
       <link>https://secubuzz.com/news/russian-state-hackers-deploy-cosmicpulse-backdoor-via-redfli</link>
@@ -42,6 +87,15 @@
       <pubDate>Wed, 30 Sep 2026 19:35:00 GMT</pubDate>
       <source url="https://therecord.media/cyber-command-suicide-deaths-pentagon-memo">The Record</source>
       <category>Policy</category>
+    </item>
+    <item>
+      <title>Microsoft Ignite 2026 Highlights AI-First Security Platform</title>
+      <link>https://secubuzz.com/news/microsoft-ignite-2026-highlights-ai-first-security-platform</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-ignite-2026-highlights-ai-first-security-platform</guid>
+      <description><![CDATA[At Microsoft Ignite 2026, Microsoft showcased its AI-first, end-to-end security platform designed to protect identities, devices, data, applications, clouds, infrastructure, and AI agents. The presentation emphasized integrated defenses across the enterprise stack, aiming to streamline security operations and enhance threat detection.]]></description>
+      <pubDate>Wed, 30 Sep 2026 19:31:00 GMT</pubDate>
+      <source url="https://www.microsoft.com/en-us/security/blog/2026/09/30/secure-whats-next-your-guide-to-microsoft-security-at-microsoft-ignite-2026/">Microsoft Security</source>
+      <category>Cloud</category>
     </item>
     <item>
       <title>Google Reports 10,000 Monthly Vulnerability Disclosures, AI Accelerates Exploitation</title>
@@ -114,15 +168,6 @@
       <pubDate>Wed, 30 Sep 2026 15:24:54 GMT</pubDate>
       <source url="https://thehackernews.com/2026/09/cisco-warns-of-attackers-exploiting.html">The Hacker News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>ChatGPT Custom GPTs Used to Deliver Remote Access Trojan via ClickFix Lures</title>
-      <link>https://secubuzz.com/news/chatgpt-custom-gpts-used-to-deliver-remote-access-trojan-via</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chatgpt-custom-gpts-used-to-deliver-remote-access-trojan-via</guid>
-      <description><![CDATA[Threat actors are exploiting ChatGPT Custom GPTs to masquerade as legitimate products, directing users to malicious sites that employ ClickFix lures. The technique delivers a remote access trojan, relying on user interaction and phishing.]]></description>
-      <pubDate>Wed, 30 Sep 2026 15:00:15 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/09/attackers-abuse-chatgpt-custom-gpts-to.html">The Hacker News</source>
-      <category>Malware</category>
     </item>
     <item>
       <title>AI Co‑workers Threaten Existing Security Models</title>
@@ -215,13 +260,13 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Anthropic Highlights AI Agent Liability Amid OpenAI Lawsuit</title>
-      <link>https://secubuzz.com/news/anthropic-highlights-ai-agent-liability-amid-openai-lawsuit</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-highlights-ai-agent-liability-amid-openai-lawsuit</guid>
-      <description><![CDATA[Anthropic has warned about liability risks for autonomous AI agents as OpenAI faces a hacking lawsuit. The discussion focuses on legal accountability for AI actions, reflecting growing concerns over AI‑driven attacks and their regulatory implications.]]></description>
-      <pubDate>Wed, 30 Sep 2026 11:19:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/anthropic-flags-ai-agent-liability-risks-as-openai-faces-hacking-lawsuit/">SecurityWeek</source>
-      <category>Cloud</category>
+      <title>Bitget Breached via Zero-Day in Third-Party Security Products</title>
+      <link>https://secubuzz.com/news/bitget-breached-via-zero-day-in-third-party-security-product</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/bitget-breached-via-zero-day-in-third-party-security-product</guid>
+      <description><![CDATA[Cryptocurrency exchange Bitget confirmed attackers breached its systems after exploiting a zero‑day flaw in third‑party security products, leading to the theft of $387.5 million. The incident highlights the risk of supply‑chain vulnerabilities in security software used by exchanges.]]></description>
+      <pubDate>Wed, 30 Sep 2026 11:11:46 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/bitget-hacked-via-zero-day-in-third-party-security-products/">BleepingComputer</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>US‑Focused Phishing Campaign Steals Microsoft 365 Sessions and Deploys RMM Tools</title>
@@ -251,6 +296,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>OpenSSL Fixes High‑Severity DTLS Heap Memory Leak</title>
+      <link>https://secubuzz.com/news/openssl-fixes-high-severity-dtls-heap-memory-leak</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openssl-fixes-high-severity-dtls-heap-memory-leak</guid>
+      <description><![CDATA[OpenSSL released a patch for a high‑severity flaw that could leak heap memory or crash applications during DTLS handshakes. The vulnerability occurs when a resend is triggered while a large handshake message is partially processed, potentially exposing sensitive data over UDP traffic.]]></description>
+      <pubDate>Wed, 30 Sep 2026 08:09:28 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/09/openssl-fixes-high-severity-dtls-flaw.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Former US Air Force Members Sentenced for Million-Dollar Business Email Compromise Scheme</title>
       <link>https://secubuzz.com/news/former-us-air-force-members-sentenced-for-million-dollar-bus</link>
       <guid isPermaLink="true">https://secubuzz.com/news/former-us-air-force-members-sentenced-for-million-dollar-bus</guid>
@@ -267,15 +321,6 @@
       <pubDate>Wed, 30 Sep 2026 07:00:00 GMT</pubDate>
       <source url="https://www.darkreading.com/cyberattacks-data-breaches/south-africa-help-cyberattack-air-traffic-control">Dark Reading</source>
       <category>Ransomware</category>
-    </item>
-    <item>
-      <title>OpenSSL and WolfSSL Patch High‑Severity Vulnerabilities</title>
-      <link>https://secubuzz.com/news/openssl-and-wolfssl-patch-high-severity-vulnerabilities</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openssl-and-wolfssl-patch-high-severity-vulnerabilities</guid>
-      <description><![CDATA[SecurityWeek reports that each of the open‑source cryptographic libraries, OpenSSL and WolfSSL, has received patches for roughly a dozen high‑severity vulnerabilities. The updates address critical flaws that could allow attackers to compromise encrypted communications or execute arbitrary code. Users should apply the latest releases to mitigate potential exploitation.]]></description>
-      <pubDate>Wed, 30 Sep 2026 06:55:50 GMT</pubDate>
-      <source url="https://www.securityweek.com/high-severity-vulnerabilities-patched-in-openssl-wolfssl/">SecurityWeek</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>Genea Launches AI‑Enabled Access Control Platform</title>
@@ -350,15 +395,6 @@
       <category>Cloud</category>
     </item>
     <item>
-      <title>Tech Giants Agree to Voluntary AI Self‑Regulation Accord</title>
-      <link>https://secubuzz.com/news/tech-giants-agree-to-voluntary-ai-self-regulation-accord</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/tech-giants-agree-to-voluntary-ai-self-regulation-accord</guid>
-      <description><![CDATA[Four major technology companies have signed a voluntary accord to self‑police AI development, outlining four steps to enhance transparency and safety. The agreement aims to lay groundwork for future regulatory frameworks while allowing firms to maintain control over their AI practices.]]></description>
-      <pubDate>Wed, 30 Sep 2026 01:48:21 GMT</pubDate>
-      <source url="https://www.securityweek.com/trump-says-top-tech-firms-have-signed-accord-to-self-police-ai-development/">SecurityWeek</source>
-      <category>Policy</category>
-    </item>
-    <item>
       <title>TerminalFix and Lorem Ipsum Loader Enable Covert Tunneling</title>
       <link>https://secubuzz.com/news/terminalfix-and-lorem-ipsum-loader-enable-covert-tunneling</link>
       <guid isPermaLink="true">https://secubuzz.com/news/terminalfix-and-lorem-ipsum-loader-enable-covert-tunneling</guid>
@@ -420,42 +456,6 @@
       <pubDate>Tue, 29 Sep 2026 17:10:11 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/new-spectre-v2-attack-variant-leaks-linux-root-password-hash-in-minutes/">BleepingComputer</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cloudflare Launches Public Certificate Authority for Post‑Quantum Web</title>
-      <link>https://secubuzz.com/news/cloudflare-launches-public-certificate-authority-for-post-qu</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-launches-public-certificate-authority-for-post-qu</guid>
-      <description><![CDATA[Cloudflare has unveiled a new public Certificate Authority designed to support post‑quantum cryptography, offering automated certificate issuance for all users. The service aims to future‑proof web security against quantum threats, providing hardened key management and compatibility with emerging post‑quantum algorithms.]]></description>
-      <pubDate>Tue, 29 Sep 2026 17:02:16 GMT</pubDate>
-      <source url="https://www.darkreading.com/cloud-security/cloudflare-announces-public-certificate-authority-post-quantum-web">Dark Reading</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>Storm-3068 Exploits Compromised Identity for Cloud Access</title>
-      <link>https://secubuzz.com/news/storm-3068-exploits-compromised-identity-for-cloud-access</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/storm-3068-exploits-compromised-identity-for-cloud-access</guid>
-      <description><![CDATA[A compromised identity was leveraged by the threat actor Storm-3068 to gain broader cloud access, affecting identities, pipelines, and infrastructure. The incident highlights the need for stronger identity protection and monitoring to prevent lateral movement within cloud environments.]]></description>
-      <pubDate>Tue, 29 Sep 2026 16:00:00 GMT</pubDate>
-      <source url="https://www.microsoft.com/en-us/security/blog/2026/09/29/beyond-source-code-a-path-to-the-keys-to-the-kingdom/">Microsoft Security</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>RemoteThreat Raises $7 Million to Launch Offensive Operations Platform</title>
-      <link>https://secubuzz.com/news/remotethreat-raises-7-million-to-launch-offensive-operations</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/remotethreat-raises-7-million-to-launch-offensive-operations</guid>
-      <description><![CDATA[RemoteThreat has raised $7 million in pre‑seed funding to launch an offensive operations platform, emerging from stealth mode with backing from Osage University Partners and DataTribe. The announcement marks the company's first public appearance and signals its intent to provide advanced threat hunting and adversary simulation services to enterprises.]]></description>
-      <pubDate>Tue, 29 Sep 2026 14:38:07 GMT</pubDate>
-      <source url="https://www.securityweek.com/remotethreat-launches-with-7-million-for-offensive-operations-platform/">SecurityWeek</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Postman Releases Fabric Gateway for AI Agent Governance</title>
-      <link>https://secubuzz.com/news/postman-releases-fabric-gateway-for-ai-agent-governance</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/postman-releases-fabric-gateway-for-ai-agent-governance</guid>
-      <description><![CDATA[Postman has released Fabric Gateway, a protocol‑agnostic control plane that lets organizations govern AI agents, LLMs, and MCP servers when they discover and use APIs, tools, and other agents. The solution centralizes access control, limiting what agents can see and do, and avoids fragmented integrations.]]></description>
-      <pubDate>Tue, 29 Sep 2026 13:40:47 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/09/29/postman-fabric-gateway/">Help Net Security</source>
-      <category>Policy</category>
     </item>
   </channel>
 </rss>

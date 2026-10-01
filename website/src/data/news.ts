@@ -11,6 +11,66 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "ftc-investigating-openai-and-anthropic-over-possible-consume",
+    "title": "FTC Investigating OpenAI and Anthropic Over Possible Consumer Risks",
+    "summary": "The Federal Trade Commission has opened an investigation into OpenAI and Anthropic, citing potential risks to consumers. The FTC confirmed the inquiry but has not released further details. The probe focuses on how the companies’ AI services may affect user privacy and safety.",
+    "category": "Policy",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/ftc-is-investigating-openai-and-anthropic-over-possible-risks-to-consumers/",
+    "publishedAt": "2026-09-30T23:43:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "us-sanctions-10-over-atm-malware-scheme-tied-to-tren-de-arag",
+    "title": "US Sanctions 10 Over ATM Malware Scheme Tied to Tren de Aragua",
+    "summary": "The U.S. Treasury’s Office of Foreign Assets Control sanctioned ten individuals and companies linked to an ATM malware operation that stole money from dozens of machines. The targets are connected to the Tren de Aragua scheme, and the sanctions aim to disrupt the laundering of the stolen funds.",
+    "category": "Malware",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/us-sanctions-10-atm-jackpotting-tren-de-aragua",
+    "publishedAt": "2026-09-30T22:35:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "uat-11587-backdoor-targets-asian-governments-via-antino-rust",
+    "title": "UAT-11587 Backdoor Targets Asian Governments via Antino Rust Malware",
+    "summary": "The China‑linked UAT‑11587 malware has infiltrated more than 16 Asian government agencies using the Antino Rust backdoor. It leverages Microsoft 365 as a dead‑drop command‑and‑control channel, enabling attackers to maintain persistence and exfiltrate data from compromised systems and facilitate ongoing surveillance.",
+    "category": "Breach",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/china-uat-11587-antino-backdoor-espionage",
+    "publishedAt": "2026-09-30T22:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "malicious-custom-gpts-exploit-chatgpt-as-rat-delivery-lure",
+    "title": "Malicious Custom GPTs Exploit ChatGPT as RAT Delivery Lure",
+    "summary": "Threat actors are using custom GPTs to transform ChatGPT into a RAT delivery platform, mimicking legitimate OpenAI and Google domains. This ClickFix‑style campaign lures users into downloading malicious payloads, turning the AI interface into a vector for remote access trojans.",
+    "category": "Malware",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/malicious-custom-gpts-chatgpt-rat-delivery-lure",
+    "publishedAt": "2026-09-30T21:25:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "white-house-ai-safety-accord-calls-on-tech-companies-to-stre",
+    "title": "White House AI Safety Accord Calls on Tech Companies to Strengthen Controls",
+    "summary": "The new White House Accord on \"Super Intelligence\" urges technology firms to adopt stricter AI safety measures, including enhanced oversight and governance. The agreement aims to mitigate risks associated with advanced AI systems by setting industry-wide standards for responsible development and deployment.",
+    "category": "Policy",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyber-risk/trump-tech-giants-strike-voluntary-ai-safety-accord",
+    "publishedAt": "2026-09-30T20:51:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "russian-state-hackers-deploy-cosmicpulse-backdoor-via-redfli",
     "title": "Russian State Hackers Deploy CosmicPulse Backdoor via RedFlick Technique",
     "summary": "Russian state actor Star Blizzard has introduced a new malware installation method called RedFlick to deploy its CosmicPulse backdoor. The technique allows the actor to push malicious code onto targeted systems, potentially enabling persistent access and data exfiltration. No public patch or mitigation is currently available.",
@@ -54,6 +114,18 @@ export const news: NewsBrief[] = [
     "source": "The Record",
     "sourceUrl": "https://therecord.media/cyber-command-suicide-deaths-pentagon-memo",
     "publishedAt": "2026-09-30T19:35:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "microsoft-ignite-2026-highlights-ai-first-security-platform",
+    "title": "Microsoft Ignite 2026 Highlights AI-First Security Platform",
+    "summary": "At Microsoft Ignite 2026, Microsoft showcased its AI-first, end-to-end security platform designed to protect identities, devices, data, applications, clouds, infrastructure, and AI agents. The presentation emphasized integrated defenses across the enterprise stack, aiming to streamline security operations and enhance threat detection.",
+    "category": "Cloud",
+    "source": "Microsoft Security",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/09/30/secure-whats-next-your-guide-to-microsoft-security-at-microsoft-ignite-2026/",
+    "publishedAt": "2026-09-30T19:31:00.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -155,18 +227,6 @@ export const news: NewsBrief[] = [
     "cves": [
       "CVE-2026-76504"
     ],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "chatgpt-custom-gpts-used-to-deliver-remote-access-trojan-via",
-    "title": "ChatGPT Custom GPTs Used to Deliver Remote Access Trojan via ClickFix Lures",
-    "summary": "Threat actors are exploiting ChatGPT Custom GPTs to masquerade as legitimate products, directing users to malicious sites that employ ClickFix lures. The technique delivers a remote access trojan, relying on user interaction and phishing.",
-    "category": "Malware",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/09/attackers-abuse-chatgpt-custom-gpts-to.html",
-    "publishedAt": "2026-09-30T15:00:15.000Z",
-    "cves": [],
     "additionalSources": [],
     "aliases": []
   },
@@ -294,13 +354,13 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "anthropic-highlights-ai-agent-liability-amid-openai-lawsuit",
-    "title": "Anthropic Highlights AI Agent Liability Amid OpenAI Lawsuit",
-    "summary": "Anthropic has warned about liability risks for autonomous AI agents as OpenAI faces a hacking lawsuit. The discussion focuses on legal accountability for AI actions, reflecting growing concerns over AI‑driven attacks and their regulatory implications.",
-    "category": "Cloud",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/anthropic-flags-ai-agent-liability-risks-as-openai-faces-hacking-lawsuit/",
-    "publishedAt": "2026-09-30T11:19:00.000Z",
+    "slug": "bitget-breached-via-zero-day-in-third-party-security-product",
+    "title": "Bitget Breached via Zero-Day in Third-Party Security Products",
+    "summary": "Cryptocurrency exchange Bitget confirmed attackers breached its systems after exploiting a zero‑day flaw in third‑party security products, leading to the theft of $387.5 million. The incident highlights the risk of supply‑chain vulnerabilities in security software used by exchanges.",
+    "category": "Breach",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/bitget-hacked-via-zero-day-in-third-party-security-products/",
+    "publishedAt": "2026-09-30T11:11:46.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -344,6 +404,18 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
+    "slug": "openssl-fixes-high-severity-dtls-heap-memory-leak",
+    "title": "OpenSSL Fixes High‑Severity DTLS Heap Memory Leak",
+    "summary": "OpenSSL released a patch for a high‑severity flaw that could leak heap memory or crash applications during DTLS handshakes. The vulnerability occurs when a resend is triggered while a large handshake message is partially processed, potentially exposing sensitive data over UDP traffic.",
+    "category": "Vulnerability",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/09/openssl-fixes-high-severity-dtls-flaw.html",
+    "publishedAt": "2026-09-30T08:09:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "former-us-air-force-members-sentenced-for-million-dollar-bus",
     "title": "Former US Air Force Members Sentenced for Million-Dollar Business Email Compromise Scheme",
     "summary": "Two former Air Force personnel, Chijioke Timothy Odimegwu and Harafat Mogaji, were sentenced to 189 months for running a BEC and phishing operation that targeted U.S. businesses. They sent spam emails to steal employee usernames and passwords, compromising corporate email accounts.",
@@ -363,18 +435,6 @@ export const news: NewsBrief[] = [
     "source": "Dark Reading",
     "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/south-africa-help-cyberattack-air-traffic-control",
     "publishedAt": "2026-09-30T07:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "openssl-and-wolfssl-patch-high-severity-vulnerabilities",
-    "title": "OpenSSL and WolfSSL Patch High‑Severity Vulnerabilities",
-    "summary": "SecurityWeek reports that each of the open‑source cryptographic libraries, OpenSSL and WolfSSL, has received patches for roughly a dozen high‑severity vulnerabilities. The updates address critical flaws that could allow attackers to compromise encrypted communications or execute arbitrary code. Users should apply the latest releases to mitigate potential exploitation.",
-    "category": "Vulnerability",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/high-severity-vulnerabilities-patched-in-openssl-wolfssl/",
-    "publishedAt": "2026-09-30T06:55:50.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -471,18 +531,6 @@ export const news: NewsBrief[] = [
     "source": "Help Net Security",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/cloudflare-certificate-authority-2027/",
     "publishedAt": "2026-09-30T03:09:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "tech-giants-agree-to-voluntary-ai-self-regulation-accord",
-    "title": "Tech Giants Agree to Voluntary AI Self‑Regulation Accord",
-    "summary": "Four major technology companies have signed a voluntary accord to self‑police AI development, outlining four steps to enhance transparency and safety. The agreement aims to lay groundwork for future regulatory frameworks while allowing firms to maintain control over their AI practices.",
-    "category": "Policy",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/trump-says-top-tech-firms-have-signed-accord-to-self-police-ai-development/",
-    "publishedAt": "2026-09-30T01:48:21.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -923,18 +971,6 @@ export const news: NewsBrief[] = [
     "source": "Help Net Security",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/cybersecurity-jobs-available-right-now-september-29-2026/",
     "publishedAt": "2026-09-29T04:00:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "bitget-loses-387-5m-in-crypto-heist-via-third-party-security",
-    "title": "Bitget Loses $387.5M in Crypto Heist via Third-Party Security Flaw",
-    "summary": "Bitget suffered a $387.5 million crypto theft after attackers exploited a flaw in a third‑party service to forge withdrawal commands. The breach was linked to North Korean Lazarus tactics. The incident highlights the risk of third‑party integrations and the need for stricter access controls.",
-    "category": "Breach",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/bitget-387-million-crypto-heist-third-party-breach",
-    "publishedAt": "2026-09-28T22:36:49.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
