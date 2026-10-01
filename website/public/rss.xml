@@ -5,8 +5,53 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Oct 2026 06:00:05 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2026 08:20:08 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Google Gemini 4 Argon Identifies Critical Hospital Software Vulnerability</title>
+      <link>https://secubuzz.com/news/google-gemini-4-argon-identifies-critical-hospital-software-</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-gemini-4-argon-identifies-critical-hospital-software-</guid>
+      <description><![CDATA[Google’s new Gemini 4 Argon AI model, released with guardrail‑free access for vetted defenders, discovered a critical flaw in software used by hospitals worldwide. The model’s findings highlight the need for immediate patching and secure configuration to protect patient data and critical healthcare operations.]]></description>
+      <pubDate>Thu, 01 Oct 2026 07:52:26 GMT</pubDate>
+      <source url="https://www.securityweek.com/google-launches-gemini-4-argon-with-guardrail-free-access-for-vetted-defenders/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Thales Releases Sentinel Envelope Plus for Zero‑Code Software Hardening</title>
+      <link>https://secubuzz.com/news/thales-releases-sentinel-envelope-plus-for-zero-code-softwar</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/thales-releases-sentinel-envelope-plus-for-zero-code-softwar</guid>
+      <description><![CDATA[Thales has unveiled Sentinel Envelope Plus, a new layer of protection for compiled applications that defends against AI‑assisted reverse engineering, zero‑day discovery, and exploit generation. The solution adds multiple security layers without requiring source code changes or special compilation environments, simplifying deployment for developers.]]></description>
+      <pubDate>Thu, 01 Oct 2026 07:38:00 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/01/thales-sentinel-envelope-plus/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>MetaMask Reports Ongoing Infrastructure Security Incident</title>
+      <link>https://secubuzz.com/news/metamask-reports-ongoing-infrastructure-security-incident</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/metamask-reports-ongoing-infrastructure-security-incident</guid>
+      <description><![CDATA[MetaMask has disclosed an ongoing security incident affecting parts of its infrastructure. The incident involves unauthorized access to certain internal systems, potentially exposing configuration data and operational controls. The company is investigating the scope and impact, and has not confirmed any data exfiltration or user credential compromise.]]></description>
+      <pubDate>Thu, 01 Oct 2026 07:33:57 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/metamask-discloses-security-incident-affecting-its-infrastructure/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>BlackFog Launches ADX Vision 2.0 for Agentic AI Governance</title>
+      <link>https://secubuzz.com/news/blackfog-launches-adx-vision-2-0-for-agentic-ai-governance</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/blackfog-launches-adx-vision-2-0-for-agentic-ai-governance</guid>
+      <description><![CDATA[BlackFog has released ADX Vision 2.0, a new platform that extends its AI security suite to protect and govern generative and agentic AI usage within enterprises. The solution offers prompt protection, governance controls, and monitoring to mitigate risks such as prompt injection, unauthorized data exposure, and decision‑making errors by AI agents.]]></description>
+      <pubDate>Thu, 01 Oct 2026 07:25:53 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/01/blackfog-adx-vision-2-0/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Apple CoreGraphics CVE-2026-86950 Exploited via Malicious PDF</title>
+      <link>https://secubuzz.com/news/apple-coregraphics-cve-2026-86950-exploited-via-malicious-pd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apple-coregraphics-cve-2026-86950-exploited-via-malicious-pd</guid>
+      <description><![CDATA[Security researchers released a proof‑of‑concept for CVE-2026-86950, a memory‑corruption flaw in Apple CoreGraphics. A crafted PDF with an embedded font can crash unpatched iPhones and Macs. The vulnerability triggers a crash, not code execution, and is not yet confirmed in the wild.]]></description>
+      <pubDate>Thu, 01 Oct 2026 05:54:41 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/apple-coregraphics-poc-emerges-as.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>ScreenConnect Client Abused by Attackers</title>
       <link>https://secubuzz.com/news/screenconnect-client-abused-by-attackers</link>
@@ -35,15 +80,6 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>MetaMask Responds to Ongoing Security Incident, No Wallet Threats</title>
-      <link>https://secubuzz.com/news/metamask-responds-to-ongoing-security-incident-no-wallet-thr</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/metamask-responds-to-ongoing-security-incident-no-wallet-thr</guid>
-      <description><![CDATA[MetaMask announced an ongoing security incident affecting part of its infrastructure. The team is remediating the issue with external partners and security advisors, and has found no immediate threat to user wallets.]]></description>
-      <pubDate>Thu, 01 Oct 2026 05:10:09 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/metamask-security-incident-prompts-exit.html">The Hacker News</source>
-      <category>Policy</category>
-    </item>
-    <item>
       <title>AI-Identified Vulnerabilities Rapidly Exploited</title>
       <link>https://secubuzz.com/news/ai-identified-vulnerabilities-rapidly-exploited</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ai-identified-vulnerabilities-rapidly-exploited</guid>
@@ -69,15 +105,6 @@
       <pubDate>Thu, 01 Oct 2026 04:30:35 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/01/employment-scam-victims-research/">Help Net Security</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Google Launches Gemini 4 Argon AI to Detect and Patch Software Vulnerabilities</title>
-      <link>https://secubuzz.com/news/google-launches-gemini-4-argon-ai-to-detect-and-patch-softwa</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-launches-gemini-4-argon-ai-to-detect-and-patch-softwa</guid>
-      <description><![CDATA[Google’s Gemini 4 Argon AI model, released through the Fairwind Program, automatically identifies critical software flaws, validates them, and applies patches without human intervention. The tool is initially available to trusted cyber defenders and Google’s internal teams, with broader access planned for paid API customers.]]></description>
-      <pubDate>Thu, 01 Oct 2026 04:00:41 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/01/google-gemini-4-argon/">Help Net Security</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>Proton Drive Offers End‑to‑End Encrypted Cloud Storage and Collaboration</title>
@@ -287,15 +314,6 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>WatchGuard Releases Patches for Critical Fireware OS Code Injection Vulnerabilities</title>
-      <link>https://secubuzz.com/news/watchguard-releases-patches-for-critical-fireware-os-code-in</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/watchguard-releases-patches-for-critical-fireware-os-code-in</guid>
-      <description><![CDATA[WatchGuard has issued patches addressing 15 bugs in Fireware OS, including code execution, denial‑of‑service, authorization bypass, and path traversal flaws. The updates mitigate potential remote code execution and denial‑of‑service attacks against Fireware OS devices. Users should apply the latest firmware to secure their network appliances.]]></description>
-      <pubDate>Wed, 30 Sep 2026 13:16:56 GMT</pubDate>
-      <source url="https://www.securityweek.com/watchguard-patches-critical-fireware-os-code-injection-vulnerability/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>Cloudflare Impact Reaches $100 Million in Donations</title>
       <link>https://secubuzz.com/news/cloudflare-impact-reaches-100-million-in-donations</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-impact-reaches-100-million-in-donations</guid>
@@ -438,24 +456,6 @@
       <pubDate>Wed, 30 Sep 2026 06:31:58 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/09/30/claude-compliance-api-integrations/">Help Net Security</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>OWASP Noir Revealed as Open-Source Static Analysis Tool</title>
-      <link>https://secubuzz.com/news/owasp-noir-revealed-as-open-source-static-analysis-tool</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/owasp-noir-revealed-as-open-source-static-analysis-tool</guid>
-      <description><![CDATA[OWASP Noir is an open-source static analysis tool that scans application source code to list exposed endpoints, including paths, HTTP methods, parameters, headers, and cookies, with file and line references. It highlights shadow APIs, deprecated routes, and undocumented handlers, aiding developers in identifying hidden or unused endpoints.]]></description>
-      <pubDate>Wed, 30 Sep 2026 05:30:36 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/09/30/owasp-noir-open-source-static-analysis-tool/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>EU Cyber Resilience Act Imposes Container and Kubernetes Security Requirements</title>
-      <link>https://secubuzz.com/news/eu-cyber-resilience-act-imposes-container-and-kubernetes-sec</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/eu-cyber-resilience-act-imposes-container-and-kubernetes-sec</guid>
-      <description><![CDATA[The EU Cyber Resilience Act (CRA) mandates cybersecurity requirements for products with digital elements sold in the EU, effective Dec. 10, 2024. Reporting obligations begin Sept. 11, 2026, with full enforcement Dec. 11, 2027. The regulation introduces new requirements for teams working with containers and Kubernetes throughout the application lifecycle.]]></description>
-      <pubDate>Wed, 30 Sep 2026 05:00:53 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/09/30/rapidfort-cra-container-compliance/">Help Net Security</source>
-      <category>Cloud</category>
     </item>
   </channel>
 </rss>

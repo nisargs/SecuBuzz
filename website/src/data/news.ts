@@ -11,6 +11,68 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "google-gemini-4-argon-identifies-critical-hospital-software-",
+    "title": "Google Gemini 4 Argon Identifies Critical Hospital Software Vulnerability",
+    "summary": "Google’s new Gemini 4 Argon AI model, released with guardrail‑free access for vetted defenders, discovered a critical flaw in software used by hospitals worldwide. The model’s findings highlight the need for immediate patching and secure configuration to protect patient data and critical healthcare operations.",
+    "category": "Vulnerability",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/google-launches-gemini-4-argon-with-guardrail-free-access-for-vetted-defenders/",
+    "publishedAt": "2026-10-01T07:52:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "thales-releases-sentinel-envelope-plus-for-zero-code-softwar",
+    "title": "Thales Releases Sentinel Envelope Plus for Zero‑Code Software Hardening",
+    "summary": "Thales has unveiled Sentinel Envelope Plus, a new layer of protection for compiled applications that defends against AI‑assisted reverse engineering, zero‑day discovery, and exploit generation. The solution adds multiple security layers without requiring source code changes or special compilation environments, simplifying deployment for developers.",
+    "category": "Policy",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/thales-sentinel-envelope-plus/",
+    "publishedAt": "2026-10-01T07:38:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "metamask-reports-ongoing-infrastructure-security-incident",
+    "title": "MetaMask Reports Ongoing Infrastructure Security Incident",
+    "summary": "MetaMask has disclosed an ongoing security incident affecting parts of its infrastructure. The incident involves unauthorized access to certain internal systems, potentially exposing configuration data and operational controls. The company is investigating the scope and impact, and has not confirmed any data exfiltration or user credential compromise.",
+    "category": "Vulnerability",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/metamask-discloses-security-incident-affecting-its-infrastructure/",
+    "publishedAt": "2026-10-01T07:33:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "blackfog-launches-adx-vision-2-0-for-agentic-ai-governance",
+    "title": "BlackFog Launches ADX Vision 2.0 for Agentic AI Governance",
+    "summary": "BlackFog has released ADX Vision 2.0, a new platform that extends its AI security suite to protect and govern generative and agentic AI usage within enterprises. The solution offers prompt protection, governance controls, and monitoring to mitigate risks such as prompt injection, unauthorized data exposure, and decision‑making errors by AI agents.",
+    "category": "Policy",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/blackfog-adx-vision-2-0/",
+    "publishedAt": "2026-10-01T07:25:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "apple-coregraphics-cve-2026-86950-exploited-via-malicious-pd",
+    "title": "Apple CoreGraphics CVE-2026-86950 Exploited via Malicious PDF",
+    "summary": "Security researchers released a proof‑of‑concept for CVE-2026-86950, a memory‑corruption flaw in Apple CoreGraphics. A crafted PDF with an embedded font can crash unpatched iPhones and Macs. The vulnerability triggers a crash, not code execution, and is not yet confirmed in the wild.",
+    "category": "Vulnerability",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/apple-coregraphics-poc-emerges-as.html",
+    "publishedAt": "2026-10-01T05:54:41.000Z",
+    "cves": [
+      "CVE-2026-86950"
+    ],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "screenconnect-client-abused-by-attackers",
     "title": "ScreenConnect Client Abused by Attackers",
     "summary": "Threat actors are exploiting the ScreenConnect client, a legitimate remote‑access tool, to conduct attacks. The misuse involves leveraging the software’s legitimate features for malicious purposes, potentially enabling unauthorized remote sessions and data exfiltration. No specific vulnerability or CVE is cited.",
@@ -47,18 +109,6 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "metamask-responds-to-ongoing-security-incident-no-wallet-thr",
-    "title": "MetaMask Responds to Ongoing Security Incident, No Wallet Threats",
-    "summary": "MetaMask announced an ongoing security incident affecting part of its infrastructure. The team is remediating the issue with external partners and security advisors, and has found no immediate threat to user wallets.",
-    "category": "Policy",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/metamask-security-incident-prompts-exit.html",
-    "publishedAt": "2026-10-01T05:10:09.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
     "slug": "ai-identified-vulnerabilities-rapidly-exploited",
     "title": "AI-Identified Vulnerabilities Rapidly Exploited",
     "summary": "Researchers found that attackers quickly exploit vulnerabilities discovered by AI agents, with exploitation occurring within four days of public disclosure. Analysis of January 2025 to August 2026 data shows disclosure rates doubled, yet exploitation remains rare, highlighting the speed at which high‑profile flaws are targeted.",
@@ -90,18 +140,6 @@ export const news: NewsBrief[] = [
     "source": "Help Net Security",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/employment-scam-victims-research/",
     "publishedAt": "2026-10-01T04:30:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "google-launches-gemini-4-argon-ai-to-detect-and-patch-softwa",
-    "title": "Google Launches Gemini 4 Argon AI to Detect and Patch Software Vulnerabilities",
-    "summary": "Google’s Gemini 4 Argon AI model, released through the Fairwind Program, automatically identifies critical software flaws, validates them, and applies patches without human intervention. The tool is initially available to trusted cyber defenders and Google’s internal teams, with broader access planned for paid API customers.",
-    "category": "Vulnerability",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/google-gemini-4-argon/",
-    "publishedAt": "2026-10-01T04:00:41.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -382,18 +420,6 @@ export const news: NewsBrief[] = [
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-to-block-entra-id-script-injection-attacks-starting-october/",
     "publishedAt": "2026-09-30T13:37:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "watchguard-releases-patches-for-critical-fireware-os-code-in",
-    "title": "WatchGuard Releases Patches for Critical Fireware OS Code Injection Vulnerabilities",
-    "summary": "WatchGuard has issued patches addressing 15 bugs in Fireware OS, including code execution, denial‑of‑service, authorization bypass, and path traversal flaws. The updates mitigate potential remote code execution and denial‑of‑service attacks against Fireware OS devices. Users should apply the latest firmware to secure their network appliances.",
-    "category": "Vulnerability",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/watchguard-patches-critical-fireware-os-code-injection-vulnerability/",
-    "publishedAt": "2026-09-30T13:16:56.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -853,20 +879,6 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.securityweek.com/pentagon-personnel-agency-data-breach-impacts-3-million-people/",
     "publishedAt": "2026-09-29T12:25:12.000Z",
     "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "apple-products-vulnerability-cve-2026-86950-added-to-cisa-ke",
-    "title": "Apple Products Vulnerability CVE-2026-86950 Added to CISA KEV Catalog",
-    "summary": "Apple products are impacted by CVE-2026-86950, an out-of-bounds write that can grant attackers full control of exposed assets. CISA has listed it as a known exploited vulnerability, urging federal agencies to prioritize rapid remediation under BOD 26-04. The flaw poses significant risks to federal enterprises and requires urgent patching.",
-    "category": "Vulnerability",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/09/29/cisa-adds-one-known-exploited-vulnerability-catalog",
-    "publishedAt": "2026-09-29T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-86950"
-    ],
     "additionalSources": [],
     "aliases": []
   },
