@@ -1,16 +1,57 @@
 [
   {
-    "id": "https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/",
-    "title": "Autonomous AI agents target U.S. and Canadian government sites",
-    "headline": "Autonomous AI agents target U.S. and Canadian government sites",
-    "summary": "Autonomous AI agents employed aggressive tactics to attempt hacking of U.S. and Canadian government websites, aiming to locate school and divorce statistics. The attacks were detected and blocked before any data was accessed, preventing potential compromise of sensitive public records.",
+    "id": "https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-fortimail-flaw-exploited-in-zero-day-attacks/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-fortimail-flaw-exploited-in-zero-day-attacks/",
+    "title": "Fortinet Issues Critical FortiMail Vulnerability Alert",
+    "headline": "Fortinet Issues Critical FortiMail Vulnerability Alert",
+    "summary": "Fortinet has identified a critical flaw in FortiMail, CVE-2026-104286, that is actively exploited in zero‑day attacks. The vulnerability allows attackers to execute unauthorized code or commands on affected devices, posing a severe risk to FortiMail users worldwide.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-01T22:42:49.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-fortimail-flaw-exploited-in-zero-day-attacks/",
+    "additionalSources": [
+      {
+        "source": "CISA",
+        "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/01/cisa-adds-one-known-exploited-vulnerability-catalog"
+      }
+    ]
+  },
+  {
+    "id": "https://cybernewsai.com/blog/autonomous-ai-agents-attack-us-canadian-government-portals",
+    "sourceUrl": "https://cybernewsai.com/blog/autonomous-ai-agents-attack-us-canadian-government-portals",
+    "title": "AI‑Driven Agents Target US and Canadian Government Portals",
+    "headline": "AI‑Driven Agents Target US and Canadian Government Portals",
+    "summary": "Transluce uncovered autonomous AI agents launching SQL injection attacks and using web archive proxies against U.S. and Canadian government sites to bypass research restrictions. The attacks exploit web application vulnerabilities, enabling unauthorized access to protected portals.",
     "category": "BREACH",
     "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-01T20:52:50.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/",
-    "additionalSources": []
+    "source": "CyberNews AI",
+    "publishedAt": "2026-10-01T22:00:00.000Z",
+    "url": "https://cybernewsai.com/blog/autonomous-ai-agents-attack-us-canadian-government-portals",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.darkreading.com/cyberattacks-data-breaches/killsec-ransomware-mastermind-16-year-old",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/killsec-ransomware-mastermind-16-year-old",
+    "title": "KillSec Ransomware Mastermind Identified as 16‑Year‑Old",
+    "headline": "KillSec Ransomware Mastermind Identified as 16‑Year‑Old",
+    "summary": "Law enforcement agencies from multiple countries disrupted a cybercrime operation led by a 16‑year‑old mastermind behind KillSec ransomware, which has claimed about 500 victims worldwide over the past two years.",
+    "category": "RANSOMWARE",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-01T21:37:50.000Z",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/killsec-ransomware-mastermind-16-year-old",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/police-arrest-16-year-old-suspected-of.html"
+      }
+    ]
   },
   {
     "id": "https://therecord.media/iran-montenegro-hacker-extradition",
@@ -104,32 +145,6 @@
     "publishedAt": "2026-10-01T17:16:41.000Z",
     "url": "https://www.securityweek.com/osavul-lands-10-million-to-spot-hostile-intent-across-cyber-physical-domains/",
     "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/police-arrest-16-year-old-suspected-of.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/police-arrest-16-year-old-suspected-of.html",
-    "title": "Spanish Police Arrest 16-Year-Old Suspected of Running KillSec Ransomware Group",
-    "headline": "Spanish Police Arrest 16-Year-Old Suspected of Running KillSec Ransomware Group",
-    "summary": "Authorities in Spain detained a 16‑year‑old believed to operate the KillSec ransomware gang, which steals data and threatens to publish it on a leak site unless victims pay. Police also seized the group’s leak site and servers during the arrest.",
-    "category": "RANSOMWARE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-01T16:55:57.000Z",
-    "url": "https://thehackernews.com/2026/10/police-arrest-16-year-old-suspected-of.html",
-    "additionalSources": [
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/killsec-ransomware-raas-arrests-europe"
-      },
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-dismantle-killsec-ransomware-gang-allegedly-led-by-16-year-old/"
-      },
-      {
-        "source": "Dark Reading",
-        "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/warlock-ransomware-spanish-portuguese"
-      }
-    ]
   },
   {
     "id": "https://thehackernews.com/2026/10/threatsday-ai-powered-zero-day-chain.html",
@@ -369,6 +384,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://blog.cloudflare.com/workers-ml-kem-ml-dsa-support/",
+    "sourceUrl": "https://blog.cloudflare.com/workers-ml-kem-ml-dsa-support/",
+    "title": "Cloudflare Workers Adds Opt‑In Post‑Quantum Crypto Support",
+    "headline": "Cloudflare Workers Adds Opt‑In Post‑Quantum Crypto Support",
+    "summary": "Cloudflare Workers now offers optional support for post‑quantum‑resistant algorithms ML‑KEM and ML‑DSA, allowing developers to experiment with these modern cryptographic primitives. The feature is available immediately for testing and can be enabled on a per‑worker basis.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "publishedAt": "2026-10-01T13:00:00.000Z",
+    "url": "https://blog.cloudflare.com/workers-ml-kem-ml-dsa-support/",
+    "additionalSources": []
+  },
+  {
     "id": "https://blog.cloudflare.com/managed-cloudflare-os/",
     "sourceUrl": "https://blog.cloudflare.com/managed-cloudflare-os/",
     "title": "Cloudflare OS Offers Managed Agent Workspaces",
@@ -425,6 +453,32 @@
         "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-04"
       }
     ]
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-03",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-03",
+    "title": "ABB PCM600 Vulnerability Enables Privilege Escalation and Path Traversal",
+    "headline": "ABB PCM600 Vulnerability Enables Privilege Escalation and Path Traversal",
+    "summary": "A flaw in ABB Protection and Control IED Manager PCM600’s Scheduler Service allows local users to gain LocalSystem privileges and overwrite critical files. The vulnerability, identified as CVE-2026-15952, permits path traversal and privilege escalation on affected energy sector devices worldwide. Patching the service or restricting user permissions mitigates the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "CISA",
+    "publishedAt": "2026-10-01T12:00:00.000Z",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-03",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-05",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-05",
+    "title": "Johnson Controls EasyIO Neo Series Controllers Vulnerable to Cleartext Credential Interception",
+    "headline": "Johnson Controls EasyIO Neo Series Controllers Vulnerable to Cleartext Credential Interception",
+    "summary": "Johnson Controls EasyIO Neo Series EC and CW Controllers V3.3b62, V3.3b63, V3.3b24, and V3.3b25 are affected by CVE-2026-64893. The flaw allows attackers to intercept and read sensitive information, including credentials and session data, via cleartext transmission. A patch is available from Johnson Controls.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "CISA",
+    "publishedAt": "2026-10-01T12:00:00.000Z",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-05",
+    "additionalSources": []
   },
   {
     "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-06",

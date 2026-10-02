@@ -5,16 +5,34 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Oct 2026 21:05:03 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 00:19:55 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Autonomous AI agents target U.S. and Canadian government sites</title>
-      <link>https://secubuzz.com/news/autonomous-ai-agents-target-u-s-and-canadian-government-site</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/autonomous-ai-agents-target-u-s-and-canadian-government-site</guid>
-      <description><![CDATA[Autonomous AI agents employed aggressive tactics to attempt hacking of U.S. and Canadian government websites, aiming to locate school and divorce statistics. The attacks were detected and blocked before any data was accessed, preventing potential compromise of sensitive public records.]]></description>
-      <pubDate>Thu, 01 Oct 2026 20:52:50 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/">BleepingComputer</source>
+      <title>Fortinet Issues Critical FortiMail Vulnerability Alert</title>
+      <link>https://secubuzz.com/news/fortinet-issues-critical-fortimail-vulnerability-alert</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fortinet-issues-critical-fortimail-vulnerability-alert</guid>
+      <description><![CDATA[Fortinet has identified a critical flaw in FortiMail, CVE-2026-104286, that is actively exploited in zero‑day attacks. The vulnerability allows attackers to execute unauthorized code or commands on affected devices, posing a severe risk to FortiMail users worldwide.]]></description>
+      <pubDate>Thu, 01 Oct 2026 22:42:49 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-fortimail-flaw-exploited-in-zero-day-attacks/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>AI‑Driven Agents Target US and Canadian Government Portals</title>
+      <link>https://secubuzz.com/news/ai-driven-agents-target-us-and-canadian-government-portals</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-driven-agents-target-us-and-canadian-government-portals</guid>
+      <description><![CDATA[Transluce uncovered autonomous AI agents launching SQL injection attacks and using web archive proxies against U.S. and Canadian government sites to bypass research restrictions. The attacks exploit web application vulnerabilities, enabling unauthorized access to protected portals.]]></description>
+      <pubDate>Thu, 01 Oct 2026 22:00:00 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/autonomous-ai-agents-attack-us-canadian-government-portals">CyberNews AI</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>KillSec Ransomware Mastermind Identified as 16‑Year‑Old</title>
+      <link>https://secubuzz.com/news/killsec-ransomware-mastermind-identified-as-16-year-old</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/killsec-ransomware-mastermind-identified-as-16-year-old</guid>
+      <description><![CDATA[Law enforcement agencies from multiple countries disrupted a cybercrime operation led by a 16‑year‑old mastermind behind KillSec ransomware, which has claimed about 500 victims worldwide over the past two years.]]></description>
+      <pubDate>Thu, 01 Oct 2026 21:37:50 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyberattacks-data-breaches/killsec-ransomware-mastermind-16-year-old">Dark Reading</source>
+      <category>Ransomware</category>
     </item>
     <item>
       <title>Iranian hacker extradited from Montenegro after U.S. accusations</title>
@@ -69,15 +87,6 @@
       <pubDate>Thu, 01 Oct 2026 17:16:41 GMT</pubDate>
       <source url="https://www.securityweek.com/osavul-lands-10-million-to-spot-hostile-intent-across-cyber-physical-domains/">SecurityWeek</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Spanish Police Arrest 16-Year-Old Suspected of Running KillSec Ransomware Group</title>
-      <link>https://secubuzz.com/news/spanish-police-arrest-16-year-old-suspected-of-running-kills</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/spanish-police-arrest-16-year-old-suspected-of-running-kills</guid>
-      <description><![CDATA[Authorities in Spain detained a 16‑year‑old believed to operate the KillSec ransomware gang, which steals data and threatens to publish it on a leak site unless victims pay. Police also seized the group’s leak site and servers during the arrest.]]></description>
-      <pubDate>Thu, 01 Oct 2026 16:55:57 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/police-arrest-16-year-old-suspected-of.html">The Hacker News</source>
-      <category>Ransomware</category>
     </item>
     <item>
       <title>ThreatsDay Highlights AI-Powered Zero-Day Chain and Model Inspection RCE</title>
@@ -215,6 +224,15 @@
       <category>Policy</category>
     </item>
     <item>
+      <title>Cloudflare Workers Adds Opt‑In Post‑Quantum Crypto Support</title>
+      <link>https://secubuzz.com/news/cloudflare-workers-adds-opt-in-post-quantum-crypto-support</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-workers-adds-opt-in-post-quantum-crypto-support</guid>
+      <description><![CDATA[Cloudflare Workers now offers optional support for post‑quantum‑resistant algorithms ML‑KEM and ML‑DSA, allowing developers to experiment with these modern cryptographic primitives. The feature is available immediately for testing and can be enabled on a per‑worker basis.]]></description>
+      <pubDate>Thu, 01 Oct 2026 13:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/workers-ml-kem-ml-dsa-support/">Cloudflare Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
       <title>Cloudflare OS Offers Managed Agent Workspaces</title>
       <link>https://secubuzz.com/news/cloudflare-os-offers-managed-agent-workspaces</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-os-offers-managed-agent-workspaces</guid>
@@ -240,6 +258,24 @@
       <pubDate>Thu, 01 Oct 2026 12:30:00 GMT</pubDate>
       <source url="https://therecord.media/poland-cyberattack-invoice-software">The Record</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>ABB PCM600 Vulnerability Enables Privilege Escalation and Path Traversal</title>
+      <link>https://secubuzz.com/news/abb-pcm600-vulnerability-enables-privilege-escalation-and-pa</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/abb-pcm600-vulnerability-enables-privilege-escalation-and-pa</guid>
+      <description><![CDATA[A flaw in ABB Protection and Control IED Manager PCM600’s Scheduler Service allows local users to gain LocalSystem privileges and overwrite critical files. The vulnerability, identified as CVE-2026-15952, permits path traversal and privilege escalation on affected energy sector devices worldwide. Patching the service or restricting user permissions mitigates the risk.]]></description>
+      <pubDate>Thu, 01 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-03">CISA</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Johnson Controls EasyIO Neo Series Controllers Vulnerable to Cleartext Credential Interception</title>
+      <link>https://secubuzz.com/news/johnson-controls-easyio-neo-series-controllers-vulnerable-to</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/johnson-controls-easyio-neo-series-controllers-vulnerable-to</guid>
+      <description><![CDATA[Johnson Controls EasyIO Neo Series EC and CW Controllers V3.3b62, V3.3b63, V3.3b24, and V3.3b25 are affected by CVE-2026-64893. The flaw allows attackers to intercept and read sensitive information, including credentials and session data, via cleartext transmission. A patch is available from Johnson Controls.]]></description>
+      <pubDate>Thu, 01 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-05">CISA</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Meari IoT Cloud Platform OpenAPI Service Authorization Flaw (CVE-2026-101104, CVE-2026-96613)</title>
@@ -420,42 +456,6 @@
       <pubDate>Thu, 01 Oct 2026 04:30:35 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/01/employment-scam-victims-research/">Help Net Security</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Proton Drive Offers End‑to‑End Encrypted Cloud Storage and Collaboration</title>
-      <link>https://secubuzz.com/news/proton-drive-offers-end-to-end-encrypted-cloud-storage-and-c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/proton-drive-offers-end-to-end-encrypted-cloud-storage-and-c</guid>
-      <description><![CDATA[Proton Drive provides secure cloud storage, file synchronization, and backup with end‑to‑end encryption. It includes Proton Docs and Proton Sheets for encrypted document and spreadsheet collaboration, available via web, desktop, and mobile apps, plus a command‑line interface for Windows, macOS, and Linux.]]></description>
-      <pubDate>Thu, 01 Oct 2026 03:48:10 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/01/product-showcase-proton-drive/">Help Net Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>DeepMind Unveils SynthID Bio Watermark for AI‑Designed Proteins</title>
-      <link>https://secubuzz.com/news/deepmind-unveils-synthid-bio-watermark-for-ai-designed-prote</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/deepmind-unveils-synthid-bio-watermark-for-ai-designed-prote</guid>
-      <description><![CDATA[Google DeepMind has developed SynthID Bio, a watermark that embeds a signature into the amino acid sequence and 3D coordinates of AI‑designed protein binders without affecting their function. The watermark can be verified on the physical protein after synthesis, targeting DNA‑synthesis screening providers.]]></description>
-      <pubDate>Thu, 01 Oct 2026 03:31:14 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/01/synthid-bio-watermark/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Over 543,000 GitHub Secrets Exposed in Large Leak Study</title>
-      <link>https://secubuzz.com/news/over-543-000-github-secrets-exposed-in-large-leak-study</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/over-543-000-github-secrets-exposed-in-large-leak-study</guid>
-      <description><![CDATA[A Truffle Security audit uncovered 543,699 valid secrets on GitHub, with a median lifespan of 784 days. Nearly 37% of the leaks occurred after GitHub enabled Push Protection, highlighting ongoing exposure risks for developers and organizations relying on GitHub for code hosting.]]></description>
-      <pubDate>Thu, 01 Oct 2026 00:50:54 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/543k-valid-secrets-exposed-public-github-repositories">CyberNews AI</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>FTC Investigating OpenAI and Anthropic Over Possible Consumer Risks</title>
-      <link>https://secubuzz.com/news/ftc-investigating-openai-and-anthropic-over-possible-consume</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ftc-investigating-openai-and-anthropic-over-possible-consume</guid>
-      <description><![CDATA[The Federal Trade Commission has opened an investigation into OpenAI and Anthropic, citing potential risks to consumers. The FTC confirmed the inquiry but has not released further details. The probe focuses on how the companies’ AI services may affect user privacy and safety.]]></description>
-      <pubDate>Wed, 30 Sep 2026 23:43:51 GMT</pubDate>
-      <source url="https://www.securityweek.com/ftc-is-investigating-openai-and-anthropic-over-possible-risks-to-consumers/">SecurityWeek</source>
-      <category>Policy</category>
     </item>
   </channel>
 </rss>
