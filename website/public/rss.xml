@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Oct 2026 14:47:49 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 16:19:20 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Cloudflare Stream and Workers Enable Custom Video Pipelines</title>
+      <link>https://secubuzz.com/news/cloudflare-stream-and-workers-enable-custom-video-pipelines</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-stream-and-workers-enable-custom-video-pipelines</guid>
+      <description><![CDATA[Cloudflare demonstrates how to build long-running, continuous video processing pipelines by pairing Cloudflare Workers and Durable Objects with a containerized media engine. The solution allows developers to create custom video workflows that run continuously and scale automatically.]]></description>
+      <pubDate>Fri, 02 Oct 2026 16:13:45 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/streamline/">Cloudflare Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Preparing for AI Accountability in 2027</title>
+      <link>https://secubuzz.com/news/preparing-for-ai-accountability-in-2027</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/preparing-for-ai-accountability-in-2027</guid>
+      <description><![CDATA[Organizations may face an artificial intelligence reckoning over the next year. Omdia and Gartner discuss how to tackle governance, security, and value challenges ahead, emphasizing the need for robust AI oversight and risk management practices.]]></description>
+      <pubDate>Fri, 02 Oct 2026 16:01:22 GMT</pubDate>
+      <source url="https://www.darkreading.com/cybersecurity-operations/is-your-organization-ready-for-2027-s-ai-accountability-era-">Dark Reading</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Rogue AI Terminology Misplaces Responsibility in Security Failures</title>
+      <link>https://secubuzz.com/news/rogue-ai-terminology-misplaces-responsibility-in-security-fa</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rogue-ai-terminology-misplaces-responsibility-in-security-fa</guid>
+      <description><![CDATA[The term "Rogue AI" anthropomorphizes large language models, diverting accountability from vendors. Security professionals should view AI agents as untrusted, nondeterministic software rather than sentient actors. This perspective emphasizes proper risk management and safeguards against misattributed blame.]]></description>
+      <pubDate>Fri, 02 Oct 2026 15:51:33 GMT</pubDate>
+      <source url="https://www.darkreading.com/insider-threats/blame-rogue-ai-security-failures">Dark Reading</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>US Sanctions Venezuelan Gang for ATM Jackpotting Attacks</title>
+      <link>https://secubuzz.com/news/us-sanctions-venezuelan-gang-for-atm-jackpotting-attacks</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/us-sanctions-venezuelan-gang-for-atm-jackpotting-attacks</guid>
+      <description><![CDATA[The U.S. Treasury Department sanctioned eight members of the Venezuelan gang Tren de Aragua for orchestrating ATM jackpotting attacks that stole millions of dollars across the United States. The sanctions aim to curb the gang’s financial operations and deter future criminal activity.]]></description>
+      <pubDate>Fri, 02 Oct 2026 15:20:53 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/us-sanctions-tren-de-aragua-members-in-atm-jackpotting-crackdown/">BleepingComputer</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>$15K iCloud Spoofing Bugs, AI Policy Experts Phished, Adblocker Spies on AI Chats</title>
       <link>https://secubuzz.com/news/15k-icloud-spoofing-bugs-ai-policy-experts-phished-adblocker</link>
@@ -69,6 +105,42 @@
       <pubDate>Fri, 02 Oct 2026 13:15:00 GMT</pubDate>
       <source url="https://www.securityweek.com/macos-users-targeted-by-fake-zoom-installer-carrying-cloudsyncd-backdoor/">SecurityWeek</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Cloudflare Launches Traces to Visualize Request Flow Across Its Platform</title>
+      <link>https://secubuzz.com/news/cloudflare-launches-traces-to-visualize-request-flow-across-</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-launches-traces-to-visualize-request-flow-across-</guid>
+      <description><![CDATA[Cloudflare introduces Traces, a tool that tracks how a request moves through security rules, transformations, cache, routing, Workers, and the origin, then follows it across services in the user’s stack. The feature provides visibility into request handling across Cloudflare’s infrastructure.]]></description>
+      <pubDate>Fri, 02 Oct 2026 13:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/cloudflare-tracing/">Cloudflare Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Updates on our pledge to make Cloudflare features accessible to everyone</title>
+      <link>https://secubuzz.com/news/updates-on-our-pledge-to-make-cloudflare-features-accessible</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/updates-on-our-pledge-to-make-cloudflare-features-accessible</guid>
+      <description><![CDATA[Cloudflare reports progress on its commitment to eliminate two-tier product access, expanding Logpush, multi-account governance, and higher platform limits to all accounts. The company outlines internal testing and future plans for broader feature availability.]]></description>
+      <pubDate>Fri, 02 Oct 2026 13:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/enterprise-for-all-update/">Cloudflare Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Quick Tunnels Adds Email Authentication for Accountless Access</title>
+      <link>https://secubuzz.com/news/quick-tunnels-adds-email-authentication-for-accountless-acce</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/quick-tunnels-adds-email-authentication-for-accountless-acce</guid>
+      <description><![CDATA[Quick Tunnels now supports email authentication via the --allowed-mail flag, allowing only specified addresses or domains to reach a local app. This feature enables developers to secure accountless tunnels without requiring a Cloudflare account, simplifying access control for dev projects.]]></description>
+      <pubDate>Fri, 02 Oct 2026 13:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/protected-quick-tunnels/">Cloudflare Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Cloudflare Enables Automation for Leading Civil Society Organizations</title>
+      <link>https://secubuzz.com/news/cloudflare-enables-automation-for-leading-civil-society-orga</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-enables-automation-for-leading-civil-society-orga</guid>
+      <description><![CDATA[Cloudflare reports that leading civil society organizations are leveraging its platform to automate operations, improving efficiency and resilience. The initiative showcases how non‑profits can use Cloudflare’s security and performance services to streamline workflows, protect data, and scale services without dedicated IT teams.]]></description>
+      <pubDate>Fri, 02 Oct 2026 13:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/civil-society-automation/">Cloudflare Security</source>
+      <category>Cloud</category>
     </item>
     <item>
       <title>Linux Backdoors Mimic Asian Mail Security Products</title>
@@ -260,15 +332,6 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>Cloudflare Launches Clef Decision Models and RL Fine‑Tuning Platform</title>
-      <link>https://secubuzz.com/news/cloudflare-launches-clef-decision-models-and-rl-fine-tuning-</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-launches-clef-decision-models-and-rl-fine-tuning-</guid>
-      <description><![CDATA[Cloudflare unveiled Clef, an open‑source decision‑making framework, and Clef‑flash, a high‑speed classification tool hosted on Workers AI. The company also introduced a reinforcement‑learning platform that lets developers fine‑tune decision models with their own data, aiming to accelerate AI workflow automation.]]></description>
-      <pubDate>Thu, 01 Oct 2026 15:34:02 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/clef-decision-models/">Cloudflare Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
       <title>WordPress Backdoor Rebuilds Itself After Cleanup Using Files, Database, and Shared Memory</title>
       <link>https://secubuzz.com/news/wordpress-backdoor-rebuilds-itself-after-cleanup-using-files</link>
       <guid isPermaLink="true">https://secubuzz.com/news/wordpress-backdoor-rebuilds-itself-after-cleanup-using-files</guid>
@@ -386,15 +449,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Cloudflare Workers Adds Opt‑In Post‑Quantum Crypto Support</title>
-      <link>https://secubuzz.com/news/cloudflare-workers-adds-opt-in-post-quantum-crypto-support</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-workers-adds-opt-in-post-quantum-crypto-support</guid>
-      <description><![CDATA[Cloudflare Workers now offers optional support for post‑quantum‑resistant algorithms ML‑KEM and ML‑DSA, allowing developers to experiment with these modern cryptographic primitives. The feature is available immediately for testing and can be enabled on a per‑worker basis.]]></description>
-      <pubDate>Thu, 01 Oct 2026 13:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/workers-ml-kem-ml-dsa-support/">Cloudflare Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
       <title>Cloudflare OS Offers Managed Agent Workspaces</title>
       <link>https://secubuzz.com/news/cloudflare-os-offers-managed-agent-workspaces</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-os-offers-managed-agent-workspaces</guid>
@@ -402,60 +456,6 @@
       <pubDate>Thu, 01 Oct 2026 13:00:00 GMT</pubDate>
       <source url="https://blog.cloudflare.com/managed-cloudflare-os/">Cloudflare Security</source>
       <category>Cloud</category>
-    </item>
-    <item>
-      <title>Zimbra CVE-2026-73570 Exploited via Crafted Emails</title>
-      <link>https://secubuzz.com/news/zimbra-cve-2026-73570-exploited-via-crafted-emails</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/zimbra-cve-2026-73570-exploited-via-crafted-emails</guid>
-      <description><![CDATA[A zero‑day flaw, CVE-2026-73570, in Zimbra allows attackers to execute code by sending specially crafted emails without user interaction. The vulnerability was actively exploited before public disclosure, enabling remote code execution on affected servers. Patching Zimbra to the latest release mitigates the risk.]]></description>
-      <pubDate>Thu, 01 Oct 2026 12:55:57 GMT</pubDate>
-      <source url="https://www.securityweek.com/zimbra-vulnerability-exploited-in-the-wild-prior-to-public-disclosure/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Polish invoicing platform data breach exposes customer information</title>
-      <link>https://secubuzz.com/news/polish-invoicing-platform-data-breach-exposes-customer-infor</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/polish-invoicing-platform-data-breach-exposes-customer-infor</guid>
-      <description><![CDATA[A major Polish online invoicing platform suffered a data breach that may have exposed user data, customer details, and business partner information. The incident potentially compromised sensitive financial and personal data, raising concerns about the platform’s security controls and data protection practices.]]></description>
-      <pubDate>Thu, 01 Oct 2026 12:30:00 GMT</pubDate>
-      <source url="https://therecord.media/poland-cyberattack-invoice-software">The Record</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Johnson Controls EasyIO Neo Series Controllers Vulnerable to Cleartext Credential Interception</title>
-      <link>https://secubuzz.com/news/johnson-controls-easyio-neo-series-controllers-vulnerable-to</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/johnson-controls-easyio-neo-series-controllers-vulnerable-to</guid>
-      <description><![CDATA[Johnson Controls EasyIO Neo Series EC and CW Controllers V3.3b62, V3.3b63, V3.3b24, and V3.3b25 are affected by CVE-2026-64893. The flaw allows attackers to intercept and read sensitive information, including credentials and session data, via cleartext transmission. A patch is available from Johnson Controls.]]></description>
-      <pubDate>Thu, 01 Oct 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-05">CISA</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Meari IoT Cloud Platform OpenAPI Service Authorization Flaw (CVE-2026-101104, CVE-2026-96613)</title>
-      <link>https://secubuzz.com/news/meari-iot-cloud-platform-openapi-service-authorization-flaw-</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/meari-iot-cloud-platform-openapi-service-authorization-flaw-</guid>
-      <description><![CDATA[Meari IoT Cloud Platform OpenAPI Service (all versions) suffers from an authorization flaw (CVE-2026-101104, CVE-2026-96613) that lets authenticated users manipulate device configurations, trigger unauthorized behaviors, and access credentials, owner details, and network data. The vulnerability has a CVSS score of 7.7 and impacts commercial facilities and IT sectors worldwide.]]></description>
-      <pubDate>Thu, 01 Oct 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-06">CISA</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>CISA Alerts on CVE‑2023‑46604 in Armatura One Platform</title>
-      <link>https://secubuzz.com/news/cisa-alerts-on-cve-2023-46604-in-armatura-one-platform</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-alerts-on-cve-2023-46604-in-armatura-one-platform</guid>
-      <description><![CDATA[CISA reports that Armatura LLC’s Armatura One platform is vulnerable to CVE‑2023‑46604, a deserialization flaw in embedded Apache ActiveMQ. The flaw can give attackers full host control, database access, and physical access‑control takeover. The vulnerability is rated CVSS 9.8 and affects all worldwide deployments of Armatura One.]]></description>
-      <pubDate>Thu, 01 Oct 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-01">CISA</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Monta monta.app Vulnerabilities Enable Unauthorized Administrative Control and Denial-of-Service</title>
-      <link>https://secubuzz.com/news/monta-monta-app-vulnerabilities-enable-unauthorized-administ</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/monta-monta-app-vulnerabilities-enable-unauthorized-administ</guid>
-      <description><![CDATA[The Monta monta.app charging station software has multiple critical vulnerabilities (CVE-2026-95102, CVE-2026-97363, CVE-2026-97212, CVE-2026-93474) that allow attackers to gain administrative control or launch denial‑of‑service attacks. WebSocket endpoints lack authentication, enabling exploitation. Patching is required to mitigate the risk.]]></description>
-      <pubDate>Thu, 01 Oct 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-02">CISA</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

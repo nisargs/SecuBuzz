@@ -11,6 +11,54 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "cloudflare-stream-and-workers-enable-custom-video-pipelines",
+    "title": "Cloudflare Stream and Workers Enable Custom Video Pipelines",
+    "summary": "Cloudflare demonstrates how to build long-running, continuous video processing pipelines by pairing Cloudflare Workers and Durable Objects with a containerized media engine. The solution allows developers to create custom video workflows that run continuously and scale automatically.",
+    "category": "Cloud",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/streamline/",
+    "publishedAt": "2026-10-02T16:13:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "preparing-for-ai-accountability-in-2027",
+    "title": "Preparing for AI Accountability in 2027",
+    "summary": "Organizations may face an artificial intelligence reckoning over the next year. Omdia and Gartner discuss how to tackle governance, security, and value challenges ahead, emphasizing the need for robust AI oversight and risk management practices.",
+    "category": "Policy",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/is-your-organization-ready-for-2027-s-ai-accountability-era-",
+    "publishedAt": "2026-10-02T16:01:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "rogue-ai-terminology-misplaces-responsibility-in-security-fa",
+    "title": "Rogue AI Terminology Misplaces Responsibility in Security Failures",
+    "summary": "The term \"Rogue AI\" anthropomorphizes large language models, diverting accountability from vendors. Security professionals should view AI agents as untrusted, nondeterministic software rather than sentient actors. This perspective emphasizes proper risk management and safeguards against misattributed blame.",
+    "category": "Policy",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/insider-threats/blame-rogue-ai-security-failures",
+    "publishedAt": "2026-10-02T15:51:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "us-sanctions-venezuelan-gang-for-atm-jackpotting-attacks",
+    "title": "US Sanctions Venezuelan Gang for ATM Jackpotting Attacks",
+    "summary": "The U.S. Treasury Department sanctioned eight members of the Venezuelan gang Tren de Aragua for orchestrating ATM jackpotting attacks that stole millions of dollars across the United States. The sanctions aim to curb the gang’s financial operations and deter future criminal activity.",
+    "category": "Policy",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/us-sanctions-tren-de-aragua-members-in-atm-jackpotting-crackdown/",
+    "publishedAt": "2026-10-02T15:20:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "15k-icloud-spoofing-bugs-ai-policy-experts-phished-adblocker",
     "title": "$15K iCloud Spoofing Bugs, AI Policy Experts Phished, Adblocker Spies on AI Chats",
     "summary": "SecurityWeek reports that iCloud spoofing bugs could cost users $15,000, AI policy experts were targeted by phishing attacks, and an adblocker extension was found spying on AI chat conversations. The roundup also notes Kiteworks patched over 100 vulnerabilities and Microsoft released its 2026 Digital Defense Report.",
@@ -90,6 +138,54 @@ export const news: NewsBrief[] = [
     "source": "SecurityWeek",
     "sourceUrl": "https://www.securityweek.com/macos-users-targeted-by-fake-zoom-installer-carrying-cloudsyncd-backdoor/",
     "publishedAt": "2026-10-02T13:15:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "cloudflare-launches-traces-to-visualize-request-flow-across-",
+    "title": "Cloudflare Launches Traces to Visualize Request Flow Across Its Platform",
+    "summary": "Cloudflare introduces Traces, a tool that tracks how a request moves through security rules, transformations, cache, routing, Workers, and the origin, then follows it across services in the user’s stack. The feature provides visibility into request handling across Cloudflare’s infrastructure.",
+    "category": "Cloud",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/cloudflare-tracing/",
+    "publishedAt": "2026-10-02T13:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "updates-on-our-pledge-to-make-cloudflare-features-accessible",
+    "title": "Updates on our pledge to make Cloudflare features accessible to everyone",
+    "summary": "Cloudflare reports progress on its commitment to eliminate two-tier product access, expanding Logpush, multi-account governance, and higher platform limits to all accounts. The company outlines internal testing and future plans for broader feature availability.",
+    "category": "Cloud",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/enterprise-for-all-update/",
+    "publishedAt": "2026-10-02T13:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "quick-tunnels-adds-email-authentication-for-accountless-acce",
+    "title": "Quick Tunnels Adds Email Authentication for Accountless Access",
+    "summary": "Quick Tunnels now supports email authentication via the --allowed-mail flag, allowing only specified addresses or domains to reach a local app. This feature enables developers to secure accountless tunnels without requiring a Cloudflare account, simplifying access control for dev projects.",
+    "category": "Cloud",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/protected-quick-tunnels/",
+    "publishedAt": "2026-10-02T13:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "cloudflare-enables-automation-for-leading-civil-society-orga",
+    "title": "Cloudflare Enables Automation for Leading Civil Society Organizations",
+    "summary": "Cloudflare reports that leading civil society organizations are leveraging its platform to automate operations, improving efficiency and resilience. The initiative showcases how non‑profits can use Cloudflare’s security and performance services to streamline workflows, protect data, and scale services without dedicated IT teams.",
+    "category": "Cloud",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/civil-society-automation/",
+    "publishedAt": "2026-10-02T13:00:00.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -347,18 +443,6 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "cloudflare-launches-clef-decision-models-and-rl-fine-tuning-",
-    "title": "Cloudflare Launches Clef Decision Models and RL Fine‑Tuning Platform",
-    "summary": "Cloudflare unveiled Clef, an open‑source decision‑making framework, and Clef‑flash, a high‑speed classification tool hosted on Workers AI. The company also introduced a reinforcement‑learning platform that lets developers fine‑tune decision models with their own data, aiming to accelerate AI workflow automation.",
-    "category": "Cloud",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/clef-decision-models/",
-    "publishedAt": "2026-10-01T15:34:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
     "slug": "wordpress-backdoor-rebuilds-itself-after-cleanup-using-files",
     "title": "WordPress Backdoor Rebuilds Itself After Cleanup Using Files, Database, and Shared Memory",
     "summary": "Researchers uncovered a WordPress backdoor that self‑heals by recreating itself through files, database entries, and shared memory after cleanup. The malware, codenamed SC, uses multiple persistence mechanisms to ensure the final payload remains active without re‑infection.",
@@ -509,18 +593,6 @@ export const news: NewsBrief[] = [
     "category": "Policy",
     "source": "Cloudflare Security",
     "sourceUrl": "https://blog.cloudflare.com/ai-search-ga/",
-    "publishedAt": "2026-10-01T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "cloudflare-workers-adds-opt-in-post-quantum-crypto-support",
-    "title": "Cloudflare Workers Adds Opt‑In Post‑Quantum Crypto Support",
-    "summary": "Cloudflare Workers now offers optional support for post‑quantum‑resistant algorithms ML‑KEM and ML‑DSA, allowing developers to experiment with these modern cryptographic primitives. The feature is available immediately for testing and can be enabled on a per‑worker basis.",
-    "category": "Cloud",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/workers-ml-kem-ml-dsa-support/",
     "publishedAt": "2026-10-01T13:00:00.000Z",
     "cves": [],
     "additionalSources": [],
@@ -679,20 +751,6 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://thehackernews.com/2026/10/openai-disrupts-reasoning-extraction.html",
     "publishedAt": "2026-10-01T10:42:36.000Z",
     "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "cisa-adds-cisco-sd-wan-manager-authentication-bypass-to-kev-",
-    "title": "CISA adds Cisco SD‑WAN Manager authentication bypass to KEV list",
-    "summary": "CISA added the critical authentication bypass flaw in Cisco Catalyst SD‑WAN Manager, tracked as CVE-2026-76504 with a CVSS score of 9.8, to its Known Exploited Vulnerabilities list after reports of active exploitation. The flaw allows unauthenticated remote attackers to access affected systems.",
-    "category": "Vulnerability",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html",
-    "publishedAt": "2026-10-01T10:33:16.000Z",
-    "cves": [
-      "CVE-2026-76504"
-    ],
     "additionalSources": [],
     "aliases": []
   },
@@ -1006,18 +1064,6 @@ export const news: NewsBrief[] = [
     "source": "Cloudflare Security",
     "sourceUrl": "https://blog.cloudflare.com/100-million-donations/",
     "publishedAt": "2026-09-30T13:01:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "cloudflare-monetization-gateway-beta-enables-charging-ai-age",
-    "title": "Cloudflare Monetization Gateway Beta Enables Charging AI Agents",
-    "summary": "Cloudflare’s new Monetization Gateway beta allows AI agents to be charged for token, API, and MCP tool usage via HTTP 402 responses. The beta is available to U.S. sellers who can apply for access, with partners like Ceramic.ai and Stocktwits already using the service.",
-    "category": "Cloud",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/monetization-gateway-beta/",
-    "publishedAt": "2026-09-30T13:00:00.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
