@@ -1,5 +1,31 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/10/02/android-17-advanced-protection-features/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/02/android-17-advanced-protection-features/",
+    "title": "Android 17 Adds Features to Hinder Spyware Tracking",
+    "headline": "Android 17 Adds Features to Hinder Spyware Tracking",
+    "summary": "Google’s Android 17 introduces six Advanced Protection features, including forensic logging that stores evidence off-device and Intrusion Logging that records security and network events. Existing users will be notified when the updates roll out, enhancing traceability for suspected phone hacks.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-02T05:30:37.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/02/android-17-advanced-protection-features/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/02/pwc-attacks-on-ai-systems/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/02/pwc-attacks-on-ai-systems/",
+    "title": "AI Threats Rank Highest Among Business Leaders",
+    "headline": "AI Threats Rank Highest Among Business Leaders",
+    "summary": "PwC surveyed 3,934 executives across 71 countries, finding botnets, adversarial attacks, and data poisoning as the top AI threats. Leaders identified these gaps as the most unprepared, surpassing all other risks in their top five preparedness list.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-02T05:00:28.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/02/pwc-attacks-on-ai-systems/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/10/02/new-infosec-products-of-the-week-october-2-2026/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/02/new-infosec-products-of-the-week-october-2-2026/",
     "title": "Vega II Introduces AI‑Powered SOC Platform",
@@ -395,6 +421,24 @@
     "publishedAt": "2026-10-01T13:04:31.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/01/legit-security-agentic-remediation-expansion/",
     "additionalSources": []
+  },
+  {
+    "id": "https://blog.cloudflare.com/ai-search-ga/",
+    "sourceUrl": "https://blog.cloudflare.com/ai-search-ga/",
+    "title": "AI Search is now generally available",
+    "headline": "AI Search is now generally available",
+    "summary": "AI Search is now generally available, offering image pixel embedding for visual search, OCR on scanned PDFs, file uploads up to 10 MiB, and compatibility with any chat model. The service includes new features and a pricing model, enhancing AI-driven search capabilities for users.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "publishedAt": "2026-10-01T13:00:00.000Z",
+    "url": "https://blog.cloudflare.com/ai-search-ga/",
+    "additionalSources": [
+      {
+        "source": "Cloudflare Security",
+        "sourceUrl": "https://blog.cloudflare.com/cloudflare-basin/"
+      }
+    ]
   },
   {
     "id": "https://blog.cloudflare.com/workers-ml-kem-ml-dsa-support/",

@@ -11,6 +11,30 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "android-17-adds-features-to-hinder-spyware-tracking",
+    "title": "Android 17 Adds Features to Hinder Spyware Tracking",
+    "summary": "Google’s Android 17 introduces six Advanced Protection features, including forensic logging that stores evidence off-device and Intrusion Logging that records security and network events. Existing users will be notified when the updates roll out, enhancing traceability for suspected phone hacks.",
+    "category": "Malware",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/02/android-17-advanced-protection-features/",
+    "publishedAt": "2026-10-02T05:30:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "ai-threats-rank-highest-among-business-leaders",
+    "title": "AI Threats Rank Highest Among Business Leaders",
+    "summary": "PwC surveyed 3,934 executives across 71 countries, finding botnets, adversarial attacks, and data poisoning as the top AI threats. Leaders identified these gaps as the most unprepared, surpassing all other risks in their top five preparedness list.",
+    "category": "Policy",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/02/pwc-attacks-on-ai-systems/",
+    "publishedAt": "2026-10-02T05:00:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "vega-ii-introduces-ai-powered-soc-platform",
     "title": "Vega II Introduces AI‑Powered SOC Platform",
     "summary": "Vega released Vega II, its largest platform update, adding security‑trained AI and persistent memory to the SOC. The update removes legacy SIEM and data pipeline barriers, providing teams with a lasting record of learned insights for improved security operations.",
@@ -308,6 +332,18 @@ export const news: NewsBrief[] = [
     "source": "Help Net Security",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/legit-security-agentic-remediation-expansion/",
     "publishedAt": "2026-10-01T13:04:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "ai-search-is-now-generally-available",
+    "title": "AI Search is now generally available",
+    "summary": "AI Search is now generally available, offering image pixel embedding for visual search, OCR on scanned PDFs, file uploads up to 10 MiB, and compatibility with any chat model. The service includes new features and a pricing model, enhancing AI-driven search capabilities for users.",
+    "category": "Policy",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/ai-search-ga/",
+    "publishedAt": "2026-10-01T13:00:00.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []

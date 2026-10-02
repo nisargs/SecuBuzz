@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Oct 2026 04:19:25 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 05:41:55 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Android 17 Adds Features to Hinder Spyware Tracking</title>
+      <link>https://secubuzz.com/news/android-17-adds-features-to-hinder-spyware-tracking</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/android-17-adds-features-to-hinder-spyware-tracking</guid>
+      <description><![CDATA[Google’s Android 17 introduces six Advanced Protection features, including forensic logging that stores evidence off-device and Intrusion Logging that records security and network events. Existing users will be notified when the updates roll out, enhancing traceability for suspected phone hacks.]]></description>
+      <pubDate>Fri, 02 Oct 2026 05:30:37 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/02/android-17-advanced-protection-features/">Help Net Security</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>AI Threats Rank Highest Among Business Leaders</title>
+      <link>https://secubuzz.com/news/ai-threats-rank-highest-among-business-leaders</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-threats-rank-highest-among-business-leaders</guid>
+      <description><![CDATA[PwC surveyed 3,934 executives across 71 countries, finding botnets, adversarial attacks, and data poisoning as the top AI threats. Leaders identified these gaps as the most unprepared, surpassing all other risks in their top five preparedness list.]]></description>
+      <pubDate>Fri, 02 Oct 2026 05:00:28 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/02/pwc-attacks-on-ai-systems/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>Vega II Introduces AI‑Powered SOC Platform</title>
       <link>https://secubuzz.com/news/vega-ii-introduces-ai-powered-soc-platform</link>
@@ -233,6 +251,15 @@
       <category>Policy</category>
     </item>
     <item>
+      <title>AI Search is now generally available</title>
+      <link>https://secubuzz.com/news/ai-search-is-now-generally-available</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-search-is-now-generally-available</guid>
+      <description><![CDATA[AI Search is now generally available, offering image pixel embedding for visual search, OCR on scanned PDFs, file uploads up to 10 MiB, and compatibility with any chat model. The service includes new features and a pricing model, enhancing AI-driven search capabilities for users.]]></description>
+      <pubDate>Thu, 01 Oct 2026 13:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/ai-search-ga/">Cloudflare Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
       <title>Cloudflare Workers Adds Opt‑In Post‑Quantum Crypto Support</title>
       <link>https://secubuzz.com/news/cloudflare-workers-adds-opt-in-post-quantum-crypto-support</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-workers-adds-opt-in-post-quantum-crypto-support</guid>
@@ -429,33 +456,6 @@
       <pubDate>Thu, 01 Oct 2026 05:30:08 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/01/ai-soc-entry-jobs/">Help Net Security</source>
       <category>Malware</category>
-    </item>
-    <item>
-      <title>Bitget Confirms Third-Party Zero-Day Used in $387.5 Million Crypto Theft</title>
-      <link>https://secubuzz.com/news/bitget-confirms-third-party-zero-day-used-in-387-5-million-c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/bitget-confirms-third-party-zero-day-used-in-387-5-million-c</guid>
-      <description><![CDATA[Bitget confirmed attackers stole $387.5 million by exploiting a zero‑day flaw in third‑party security products. SlowMist investigation identified malicious activity and a customized tool used by the attacker. No CVE ID was disclosed.]]></description>
-      <pubDate>Thu, 01 Oct 2026 05:21:10 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/bitget-confirms-third-party-zero-day.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AI-Identified Vulnerabilities Rapidly Exploited</title>
-      <link>https://secubuzz.com/news/ai-identified-vulnerabilities-rapidly-exploited</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-identified-vulnerabilities-rapidly-exploited</guid>
-      <description><![CDATA[Researchers found that attackers quickly exploit vulnerabilities discovered by AI agents, with exploitation occurring within four days of public disclosure. Analysis of January 2025 to August 2026 data shows disclosure rates doubled, yet exploitation remains rare, highlighting the speed at which high‑profile flaws are targeted.]]></description>
-      <pubDate>Thu, 01 Oct 2026 05:00:35 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/01/google-ai-discovered-vulnerabilities-remote-code-execution/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Citrix NetScaler Pre-Authentication Command Injection Enables Web Shell Deployment</title>
-      <link>https://secubuzz.com/news/citrix-netscaler-pre-authentication-command-injection-enable</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/citrix-netscaler-pre-authentication-command-injection-enable</guid>
-      <description><![CDATA[Threat actors exploited a pre-authentication command injection flaw in Citrix NetScaler ADC and Gateway, allowing them to drop web shells, create superuser accounts, and map shells to CSS‑like URLs. The attack enabled configuration data theft across multiple customer environments.]]></description>
-      <pubDate>Thu, 01 Oct 2026 04:35:34 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/citrix-netscaler-post-exploitation.html">The Hacker News</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
