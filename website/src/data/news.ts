@@ -11,6 +11,30 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "judge-dismisses-spyware-lawsuit-against-salvadoran-journalis",
+    "title": "Judge Dismisses Spyware Lawsuit Against Salvadoran Journalists",
+    "summary": "A California judge dismissed a spyware lawsuit filed by Salvadoran journalists who claimed they were targeted with Pegasus. The plaintiffs, all employees of El Faro, could not establish jurisdiction in the state. The case highlights ongoing legal challenges surrounding state-sponsored spyware use against journalists.",
+    "category": "Malware",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/judge-dismisses-spyware-case-brought-by-salvadoran-journalists",
+    "publishedAt": "2026-10-02T20:30:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "remotethreat-proposes-advanced-red-team-testing-beyond-tradi",
+    "title": "RemoteThreat Proposes Advanced Red‑Team Testing Beyond Traditional Methods",
+    "summary": "RemoteThreat, an offensive cyber operations startup, proposes expanding red‑team testing beyond traditional methods to simulate attackers’ advanced tactics. The company argues that security teams must evaluate post‑defense failure scenarios to better prepare for evolving threat capabilities. Its approach aims to improve resilience by anticipating sophisticated adversary behaviors.",
+    "category": "Policy",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/remotethreat-bets-security-teams-need-to-test-what-happens-after-defenses-fail",
+    "publishedAt": "2026-10-02T20:18:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "bipartisan-bills-target-alpr-use",
     "title": "Bipartisan Bills Target ALPR Use",
     "summary": "Legislation introduced by Sen. Josh Hawley and a bipartisan group led by Sen. Bernie Sanders, Sen. Jeff Merkley, and Rep. Alexandria Ocasio‑Cortez aims to limit automated license plate readers. The bills seek to regulate ALPR deployment and address privacy concerns raised by the technology.",
@@ -309,6 +333,21 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://thehackernews.com/2026/10/openai-parts-ways-with-three-safety.html",
     "publishedAt": "2026-10-02T12:23:15.000Z",
     "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "cisa-adds-two-known-exploited-vulnerabilities-to-catalog",
+    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+    "summary": "CISA has added CVE-2026-102489, a Zammad session fixation flaw, and CVE-2026-102490, a Zammad improper privilege management flaw, to its Known Exploited Vulnerabilities catalog after evidence of active exploitation. The vulnerabilities pose significant risks to federal agencies and require rapid remediation.",
+    "category": "Vulnerability",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/02/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-02T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-102489",
+      "CVE-2026-102490"
+    ],
     "additionalSources": [],
     "aliases": []
   },
@@ -927,6 +966,18 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
+    "slug": "isc-stormcast-podcast-released-for-october-1-2026",
+    "title": "ISC Stormcast Podcast Released for October 1, 2026",
+    "summary": "The SANS Internet Storm Center released its weekly ISC Stormcast podcast for Thursday, October 1, 2026. The episode is available via the ISC website and is licensed under Creative Commons Attribution-Noncommercial 3.0 United States.",
+    "category": "Policy",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33386",
+    "publishedAt": "2026-10-01T02:00:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "over-543-000-github-secrets-exposed-in-large-leak-study",
     "title": "Over 543,000 GitHub Secrets Exposed in Large Leak Study",
     "summary": "A Truffle Security audit uncovered 543,699 valid secrets on GitHub, with a median lifespan of 784 days. Nearly 37% of the leaks occurred after GitHub enabled Push Protection, highlighting ongoing exposure risks for developers and organizations relying on GitHub for code hosting.",
@@ -1054,18 +1105,6 @@ export const news: NewsBrief[] = [
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/ais-third-wave-coworkers-break-the-security-model-that-worked-for-agents/",
     "publishedAt": "2026-09-30T14:01:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "ukrainian-researchers-warn-of-darksword-iphone-malware-explo",
-    "title": "Ukrainian Researchers Warn of DarkSword iPhone Malware Exploit Kit",
-    "summary": "Ukrainian SSSCIP researchers identified DarkSword, a hit‑and‑run iPhone malware part of a wave of Russian attacks on iOS and Android devices. The kit exploits iOS vulnerabilities to deliver malicious payloads, highlighting the need for updated mobile security defenses.",
-    "category": "Vulnerability",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/ukraine-ssscip-mobile-malware-warning-ios-android",
-    "publishedAt": "2026-09-30T14:00:00.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -1272,18 +1311,6 @@ export const news: NewsBrief[] = [
     "source": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/09/french-tax-data-theft-using-stolen.html",
     "publishedAt": "2026-09-29T17:47:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "windows-11-2026-update-released",
-    "title": "Windows 11 2026 Update Released",
-    "summary": "Microsoft has begun rolling out the Windows 11 26H2 update to all users. The update includes new features and improvements, but most users will not notice significant changes after installation. It is part of the annual feature update cycle.",
-    "category": "Policy",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-11-2026-update-released-heres-everything-you-need-to-know/",
-    "publishedAt": "2026-09-29T17:37:40.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []

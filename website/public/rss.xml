@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Oct 2026 20:20:07 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 20:49:40 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Judge Dismisses Spyware Lawsuit Against Salvadoran Journalists</title>
+      <link>https://secubuzz.com/news/judge-dismisses-spyware-lawsuit-against-salvadoran-journalis</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/judge-dismisses-spyware-lawsuit-against-salvadoran-journalis</guid>
+      <description><![CDATA[A California judge dismissed a spyware lawsuit filed by Salvadoran journalists who claimed they were targeted with Pegasus. The plaintiffs, all employees of El Faro, could not establish jurisdiction in the state. The case highlights ongoing legal challenges surrounding state-sponsored spyware use against journalists.]]></description>
+      <pubDate>Fri, 02 Oct 2026 20:30:00 GMT</pubDate>
+      <source url="https://therecord.media/judge-dismisses-spyware-case-brought-by-salvadoran-journalists">The Record</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>RemoteThreat Proposes Advanced Red‑Team Testing Beyond Traditional Methods</title>
+      <link>https://secubuzz.com/news/remotethreat-proposes-advanced-red-team-testing-beyond-tradi</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/remotethreat-proposes-advanced-red-team-testing-beyond-tradi</guid>
+      <description><![CDATA[RemoteThreat, an offensive cyber operations startup, proposes expanding red‑team testing beyond traditional methods to simulate attackers’ advanced tactics. The company argues that security teams must evaluate post‑defense failure scenarios to better prepare for evolving threat capabilities. Its approach aims to improve resilience by anticipating sophisticated adversary behaviors.]]></description>
+      <pubDate>Fri, 02 Oct 2026 20:18:37 GMT</pubDate>
+      <source url="https://www.darkreading.com/cybersecurity-operations/remotethreat-bets-security-teams-need-to-test-what-happens-after-defenses-fail">Dark Reading</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>Bipartisan Bills Target ALPR Use</title>
       <link>https://secubuzz.com/news/bipartisan-bills-target-alpr-use</link>
@@ -233,6 +251,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>CISA Adds Two Known Exploited Vulnerabilities to Catalog</title>
+      <link>https://secubuzz.com/news/cisa-adds-two-known-exploited-vulnerabilities-to-catalog</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-two-known-exploited-vulnerabilities-to-catalog</guid>
+      <description><![CDATA[CISA has added CVE-2026-102489, a Zammad session fixation flaw, and CVE-2026-102490, a Zammad improper privilege management flaw, to its Known Exploited Vulnerabilities catalog after evidence of active exploitation. The vulnerabilities pose significant risks to federal agencies and require rapid remediation.]]></description>
+      <pubDate>Fri, 02 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/alerts/2026/10/02/cisa-adds-two-known-exploited-vulnerabilities-catalog">CISA</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Microsoft X Account Hijacked by Crypto Scammers</title>
       <link>https://secubuzz.com/news/microsoft-x-account-hijacked-by-crypto-scammers</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-x-account-hijacked-by-crypto-scammers</guid>
@@ -429,33 +456,6 @@
       <pubDate>Thu, 01 Oct 2026 13:39:15 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/01/radarfirst-ai-incident-management/">Help Net Security</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Sophos Launches AI‑Enabled CISO Advantage to Prioritize Security Fixes</title>
-      <link>https://secubuzz.com/news/sophos-launches-ai-enabled-ciso-advantage-to-prioritize-secu</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sophos-launches-ai-enabled-ciso-advantage-to-prioritize-secu</guid>
-      <description><![CDATA[Sophos has introduced CISO Advantage, an agentic AI solution that maps security operations to strategy, providing organizations with a clear risk picture and a prioritized plan to address vulnerabilities. The tool translates security data into actionable, fundable initiatives for business leaders.]]></description>
-      <pubDate>Thu, 01 Oct 2026 13:25:12 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/01/sophos-ciso-advantage/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>AI Accelerates Vulnerability Discovery, but Fundamentals Remain Key</title>
-      <link>https://secubuzz.com/news/ai-accelerates-vulnerability-discovery-but-fundamentals-rema</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-accelerates-vulnerability-discovery-but-fundamentals-rema</guid>
-      <description><![CDATA[AI speeds up finding and exploiting software flaws, yet virtual patching still relies on defense‑in‑depth and solid application security practices. The article stresses that AI does not replace core security principles, only the pace of attacks.]]></description>
-      <pubDate>Thu, 01 Oct 2026 13:15:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/ai-has-changed-attack-speed-not-security-fundamentals/">SecurityWeek</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>AI Agent Exploits Zammad Zero-Days to Breach Dutch Vulnerability Disclosure Non-Profit</title>
-      <link>https://secubuzz.com/news/ai-agent-exploits-zammad-zero-days-to-breach-dutch-vulnerabi</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-agent-exploits-zammad-zero-days-to-breach-dutch-vulnerabi</guid>
-      <description><![CDATA[An AI-powered attack on September 21 used two zero-day flaws in Zammad, an open-source helpdesk system, to hijack sessions, execute remote code, and elevate privileges from a Zammad user to root. The attackers then accessed additional services and read sensitive data.]]></description>
-      <pubDate>Thu, 01 Oct 2026 13:13:14 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/01/divd-agentic-ai-attack-breach/">Help Net Security</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>
