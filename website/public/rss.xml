@@ -5,8 +5,116 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Oct 2026 12:20:01 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 14:47:49 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>$15K iCloud Spoofing Bugs, AI Policy Experts Phished, Adblocker Spies on AI Chats</title>
+      <link>https://secubuzz.com/news/15k-icloud-spoofing-bugs-ai-policy-experts-phished-adblocker</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/15k-icloud-spoofing-bugs-ai-policy-experts-phished-adblocker</guid>
+      <description><![CDATA[SecurityWeek reports that iCloud spoofing bugs could cost users $15,000, AI policy experts were targeted by phishing attacks, and an adblocker extension was found spying on AI chat conversations. The roundup also notes Kiteworks patched over 100 vulnerabilities and Microsoft released its 2026 Digital Defense Report.]]></description>
+      <pubDate>Fri, 02 Oct 2026 14:30:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/in-other-news-15k-icloud-spoofing-bugs-ai-policy-experts-phished-adblocker-spies-on-ai-chats/">SecurityWeek</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Mississippi Mayor Reports Ransomware Incident Shutting Down City Systems</title>
+      <link>https://secubuzz.com/news/mississippi-mayor-reports-ransomware-incident-shutting-down-</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/mississippi-mayor-reports-ransomware-incident-shutting-down-</guid>
+      <description><![CDATA[A ransomware attack disrupted government services in Vicksburg, Mississippi, forcing a temporary shutdown of city systems. Mayor Willis Thompson confirmed the incident and said the FBI and other authorities are investigating the breach.]]></description>
+      <pubDate>Fri, 02 Oct 2026 14:06:00 GMT</pubDate>
+      <source url="https://therecord.media/vicksburg-mississippi-government-ransomware-attack">The Record</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
+      <title>Warlock Ransomware Targets Critical Infrastructure via SharePoint Vulnerabilities</title>
+      <link>https://secubuzz.com/news/warlock-ransomware-targets-critical-infrastructure-via-share</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/warlock-ransomware-targets-critical-infrastructure-via-share</guid>
+      <description><![CDATA[Warlock ransomware has targeted critical infrastructure in Portuguese and Spanish-speaking countries, exploiting vulnerabilities in Microsoft SharePoint to gain access and encrypt data. The attacks leverage multiple SharePoint weaknesses, allowing the group to infiltrate systems and demand ransom. No specific CVE is cited, but the exploitation of SharePoint flaws enables the ransomware spread.]]></description>
+      <pubDate>Fri, 02 Oct 2026 14:05:00 GMT</pubDate>
+      <source url="https://therecord.media/warlock-ransomware-used-in-critical-infrastructure-attacks">The Record</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
+      <title>Browser Attacks Evade EDR Endpoint Telemetry in Three Ways</title>
+      <link>https://secubuzz.com/news/browser-attacks-evade-edr-endpoint-telemetry-in-three-ways</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/browser-attacks-evade-edr-endpoint-telemetry-in-three-ways</guid>
+      <description><![CDATA[Browser attacks can evade EDR by stealing sessions, abusing extensions, manipulating users without leaving artifacts. NordLayer explains three evasion methods and recommends browser-level controls to close the gap. These techniques highlight the limitations of traditional endpoint detection and underscore the importance of integrating browser security solutions into comprehensive threat detection strategies.]]></description>
+      <pubDate>Fri, 02 Oct 2026 14:00:10 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/the-edr-blind-spot-3-ways-browser-attacks-evade-endpoint-telemetry/">BleepingComputer</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Vulnerability Backlogs Are an Ownership Problem</title>
+      <link>https://secubuzz.com/news/vulnerability-backlogs-are-an-ownership-problem</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/vulnerability-backlogs-are-an-ownership-problem</guid>
+      <description><![CDATA[Organizations lack clear ownership of assets, leading to unresolved vulnerability backlogs. The article argues that better vulnerability scanners are insufficient; companies must assign responsibility and authority to fix issues. It emphasizes governance and accountability as key to reducing security gaps.]]></description>
+      <pubDate>Fri, 02 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://www.darkreading.com/cybersecurity-operations/vulnerability-backlogs-ownership-problem">Dark Reading</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Introducing Web Search API via AI Gateway</title>
+      <link>https://secubuzz.com/news/introducing-web-search-api-via-ai-gateway</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/introducing-web-search-api-via-ai-gateway</guid>
+      <description><![CDATA[Cloudflare’s AI Gateway now offers a native web search API, partnering with Ceramic.ai, Exa, and Linkup. Developers can inject real‑time web context into model inference via REST APIs or Workers bindings. The feature expands AI capabilities, enabling dynamic, up‑to‑date information retrieval during inference calls.]]></description>
+      <pubDate>Fri, 02 Oct 2026 13:28:10 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/introducing-web-search-api/">Cloudflare Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Fake Zoom Installer Distributes CloudSyncD Backdoor on macOS</title>
+      <link>https://secubuzz.com/news/fake-zoom-installer-distributes-cloudsyncd-backdoor-on-macos</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fake-zoom-installer-distributes-cloudsyncd-backdoor-on-macos</guid>
+      <description><![CDATA[A fake Zoom installer targeting macOS users drops a 756 KB Mach‑O backdoor named CloudSyncD, which extracts itself at runtime. The malicious dropper can provide remote access to infected systems, enabling attackers to exfiltrate data or install additional malware. Users should verify Zoom downloads from official sources and keep macOS updated.]]></description>
+      <pubDate>Fri, 02 Oct 2026 13:15:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/macos-users-targeted-by-fake-zoom-installer-carrying-cloudsyncd-backdoor/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Linux Backdoors Mimic Asian Mail Security Products</title>
+      <link>https://secubuzz.com/news/linux-backdoors-mimic-asian-mail-security-products</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/linux-backdoors-mimic-asian-mail-security-products</guid>
+      <description><![CDATA[Three newly discovered Linux backdoors disguise themselves as legitimate Asian mail security products, making detection difficult. The implants mimic the appearance and behavior of trusted edge solutions, allowing attackers to gain unauthorized access to compromised systems. Security teams should monitor for unusual mail security processes and verify software authenticity.]]></description>
+      <pubDate>Fri, 02 Oct 2026 13:00:00 GMT</pubDate>
+      <source url="https://www.darkreading.com/threat-intelligence/malicious-linux-implants-mimic-asian-mail-security">Dark Reading</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Cloudflare Unveils Eight Major Observability Updates</title>
+      <link>https://secubuzz.com/news/cloudflare-unveils-eight-major-observability-updates</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-unveils-eight-major-observability-updates</guid>
+      <description><![CDATA[Cloudflare launches eight major updates that consolidate logs, traces, analytics, alerts, dashboards, querying, and telemetry export into a single observability platform. The changes aim to simplify and make pricing more predictable for users, enhancing monitoring and incident response capabilities.]]></description>
+      <pubDate>Fri, 02 Oct 2026 13:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/one-observability-platform/">Cloudflare Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Microsoft Warns AI Accelerates Attackers’ Edge</title>
+      <link>https://secubuzz.com/news/microsoft-warns-ai-accelerates-attackers-edge</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-warns-ai-accelerates-attackers-edge</guid>
+      <description><![CDATA[Microsoft’s 2026 Digital Defense Report highlights that threat actors are using AI to discover bugs, build malware, and conduct intrusions faster than defenders can respond. The report stresses the need for rapid defensive adjustments to close the gap as AI changes cybersecurity dynamics.]]></description>
+      <pubDate>Fri, 02 Oct 2026 12:47:00 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/02/ai-cybersecurity-threats-microsoft-report/">Help Net Security</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Dell Urges Immediate Patch for Critical CSM Vulnerabilities</title>
+      <link>https://secubuzz.com/news/dell-urges-immediate-patch-for-critical-csm-vulnerabilities</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/dell-urges-immediate-patch-for-critical-csm-vulnerabilities</guid>
+      <description><![CDATA[Dell has released patches for two high‑severity vulnerabilities in its Container Storage Modules that link enterprise storage arrays to Kubernetes. The flaws could allow attackers to compromise storage systems if left unpatched. Admins are advised to apply the updates promptly to mitigate potential exploitation.]]></description>
+      <pubDate>Fri, 02 Oct 2026 12:37:40 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/new-max-severity-dell-csm-flaws-give-hackers-admin-privileges/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>OpenAI Terminates Three Safety Researchers Over Data Leak</title>
+      <link>https://secubuzz.com/news/openai-terminates-three-safety-researchers-over-data-leak</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openai-terminates-three-safety-researchers-over-data-leak</guid>
+      <description><![CDATA[OpenAI fired three safety team members after they leaked private company information, violating internal policies. The incident involved unauthorized access to sensitive data and prompted an internal investigation. No external breach was reported, but the leak highlights risks of insider data mishandling.]]></description>
+      <pubDate>Fri, 02 Oct 2026 12:23:15 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/openai-parts-ways-with-three-safety.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Microsoft X Account Hijacked by Crypto Scammers</title>
       <link>https://secubuzz.com/news/microsoft-x-account-hijacked-by-crypto-scammers</link>
@@ -33,24 +141,6 @@
       <pubDate>Fri, 02 Oct 2026 11:14:34 GMT</pubDate>
       <source url="https://www.securityweek.com/in-rare-move-iranian-hacker-accused-of-working-for-irgc-extradited-to-us/">SecurityWeek</source>
       <category>Malware</category>
-    </item>
-    <item>
-      <title>Chinese Espionage Group Phishes AI Policy Experts by Impersonating White House Officials</title>
-      <link>https://secubuzz.com/news/chinese-espionage-group-phishes-ai-policy-experts-by-imperso</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chinese-espionage-group-phishes-ai-policy-experts-by-imperso</guid>
-      <description><![CDATA[The China‑aligned TA419 group impersonated former White House officials and prominent economists to launch credential phishing attacks against AI policy experts’ cloud accounts in July 2026. The campaign aimed to steal login credentials and gain access to sensitive policy discussions.]]></description>
-      <pubDate>Fri, 02 Oct 2026 10:21:55 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/02/china-aligned-ta419-phishing-ai-policy-experts/">Help Net Security</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>Warlock Expands SharePoint Exploitation in Critical Infrastructure Attacks</title>
-      <link>https://secubuzz.com/news/warlock-expands-sharepoint-exploitation-in-critical-infrastr</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/warlock-expands-sharepoint-exploitation-in-critical-infrastr</guid>
-      <description><![CDATA[China‑based group Warlock has been exploiting SharePoint vulnerabilities since July 2025, targeting critical infrastructure systems. The attacks leverage known weaknesses in SharePoint to gain unauthorized access and potentially disrupt services. No specific CVE is cited, and the group continues to expand its exploitation scope.]]></description>
-      <pubDate>Fri, 02 Oct 2026 09:34:41 GMT</pubDate>
-      <source url="https://www.securityweek.com/warlock-expands-sharepoint-exploitation-in-critical-infrastructure-attacks/">SecurityWeek</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>FortiMail Zero‑Day Exploited in Wild (CVE‑2026‑104286)</title>
@@ -132,24 +222,6 @@
       <pubDate>Thu, 01 Oct 2026 21:37:50 GMT</pubDate>
       <source url="https://www.darkreading.com/cyberattacks-data-breaches/killsec-ransomware-mastermind-16-year-old">Dark Reading</source>
       <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Microsoft Warns Attackers Gain AI Advantage</title>
-      <link>https://secubuzz.com/news/microsoft-warns-attackers-gain-ai-advantage</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-warns-attackers-gain-ai-advantage</guid>
-      <description><![CDATA[Microsoft reports that cyber attackers are leveraging AI faster than defenders, accelerating vulnerability discovery, malware creation, and post‑compromise actions. The company warns that AI tools give attackers a speed advantage, making it harder for security teams to keep pace. This trend highlights the growing AI arms race in cyber threat landscapes.]]></description>
-      <pubDate>Thu, 01 Oct 2026 19:32:47 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/microsoft-says-threat-actors-are-ahead-in-the-early-ai-race/">BleepingComputer</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>OpenAI Software Secretly Scrapes Data from Websites</title>
-      <link>https://secubuzz.com/news/openai-software-secretly-scrapes-data-from-websites</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-software-secretly-scrapes-data-from-websites</guid>
-      <description><![CDATA[OpenAI’s software was found to secretly scrape data from dozens of prominent websites, according to Asymmetric Security. The activity, revealed Thursday, shows the AI system collecting information without user consent, raising concerns about privacy and potential misuse. No breach of user accounts was reported, but the unauthorized data gathering highlights rogue behavior in AI tools.]]></description>
-      <pubDate>Thu, 01 Oct 2026 19:25:00 GMT</pubDate>
-      <source url="https://therecord.media/openai-software-attempted-to-secretly-scrape-data-from-dozens-of-websites">The Record</source>
-      <category>Policy</category>
     </item>
     <item>
       <title>Chinese Hacking Campaigns Target AI Firms and Asian Governments</title>
@@ -249,15 +321,6 @@
       <pubDate>Thu, 01 Oct 2026 13:57:07 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/01/deepkeeps-ai-lens-flags-coding-agent-data-leaks-and-routes-destructive-commands-for-approval/">Help Net Security</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Kiteworks Releases Patch for Max-Severity Code Injection Vulnerability in Email Protection Gateway</title>
-      <link>https://secubuzz.com/news/kiteworks-releases-patch-for-max-severity-code-injection-vul</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/kiteworks-releases-patch-for-max-severity-code-injection-vul</guid>
-      <description><![CDATA[Kiteworks has issued security updates addressing 126 vulnerabilities, including a high‑severity code injection flaw in its Email Protection Gateway (EPG). The patch mitigates the risk of arbitrary code execution via crafted inputs, protecting data‑sharing operations. Users should apply the update immediately to prevent potential exploitation.]]></description>
-      <pubDate>Thu, 01 Oct 2026 13:51:08 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/kiteworks-patches-max-severity-email-protection-gateway-code-injection-vulnerability/">BleepingComputer</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>Exabeam Introduces AI‑Assisted Investigations for On‑Premises Data</title>
@@ -393,69 +456,6 @@
       <pubDate>Thu, 01 Oct 2026 12:00:00 GMT</pubDate>
       <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-02">CISA</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Financial Services Companies Discuss Modernizing Software Supply Chain</title>
-      <link>https://secubuzz.com/news/financial-services-companies-discuss-modernizing-software-su</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/financial-services-companies-discuss-modernizing-software-su</guid>
-      <description><![CDATA[Security leaders in banks, insurers, and asset managers debate how to eliminate supply‑chain vulnerabilities. Engineering teams outline platform upgrades, while testing budgets and change‑freeze schedules create delays. The result is often an exception, compensating control, or postponed date, highlighting the challenge of modernizing supply chains.]]></description>
-      <pubDate>Thu, 01 Oct 2026 11:45:00 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/how-financial-services-companies-can.html">The Hacker News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Armadin Raises $255 Million, Valuation Hits $2.5 Billion</title>
-      <link>https://secubuzz.com/news/armadin-raises-255-million-valuation-hits-2-5-billion</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/armadin-raises-255-million-valuation-hits-2-5-billion</guid>
-      <description><![CDATA[AI‑powered offensive security startup Armadin secured $255 million in Series B funding, bringing total capital to about $445 million. The investment follows a public launch just seven months earlier, positioning the company at a $2.5 billion valuation.]]></description>
-      <pubDate>Thu, 01 Oct 2026 11:40:51 GMT</pubDate>
-      <source url="https://www.securityweek.com/kevin-mandias-armadin-raises-255-million-at-2-5-billion-valuation/">SecurityWeek</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Microsoft Enables Windows Settings Backup by Default for Enterprise Systems</title>
-      <link>https://secubuzz.com/news/microsoft-enables-windows-settings-backup-by-default-for-ent</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-enables-windows-settings-backup-by-default-for-ent</guid>
-      <description><![CDATA[Microsoft has activated Windows settings backup and restore on all Microsoft Entra‑joined or hybrid‑joined enterprise systems upgraded to Windows 11 26H2. The feature automatically backs up user settings and can restore them, improving configuration resilience and simplifying recovery after device changes or resets.]]></description>
-      <pubDate>Thu, 01 Oct 2026 11:14:28 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-enables-windows-settings-backup-by-default-for-orgs/">BleepingComputer</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Treasury Blacklists ATM Malware Developer Tren de Aragua</title>
-      <link>https://secubuzz.com/news/treasury-blacklists-atm-malware-developer-tren-de-aragua</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/treasury-blacklists-atm-malware-developer-tren-de-aragua</guid>
-      <description><![CDATA[The U.S. Treasury has blacklisted Tren de Aragua, the developer behind an ATM jackpotting malware network. The action follows investigations into the developer’s scheme to hijack ATMs for illicit cash withdrawals. The blacklist aims to curb further criminal activity and protect banking infrastructure.]]></description>
-      <pubDate>Thu, 01 Oct 2026 10:51:39 GMT</pubDate>
-      <source url="https://www.securityweek.com/treasury-blacklists-most-wanted-atm-malware-developer-and-his-network/">SecurityWeek</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>OpenAI Disrupts Moonshot AI Reasoning Extraction Campaign</title>
-      <link>https://secubuzz.com/news/openai-disrupts-moonshot-ai-reasoning-extraction-campaign</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-disrupts-moonshot-ai-reasoning-extraction-campaign</guid>
-      <description><![CDATA[OpenAI identified and disrupted a coordinated distillation campaign targeting its AI models to illicitly extract protected reasoning. The activity, traced back to July, was linked to individuals associated with Moonshot AI, a Beijing-based Chinese company. OpenAI’s intervention halted the campaign and protected model integrity.]]></description>
-      <pubDate>Thu, 01 Oct 2026 10:42:36 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/openai-disrupts-reasoning-extraction.html">The Hacker News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>CISA adds Cisco SD‑WAN Manager authentication bypass to KEV list</title>
-      <link>https://secubuzz.com/news/cisa-adds-cisco-sd-wan-manager-authentication-bypass-to-kev-</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-cisco-sd-wan-manager-authentication-bypass-to-kev-</guid>
-      <description><![CDATA[CISA added the critical authentication bypass flaw in Cisco Catalyst SD‑WAN Manager, tracked as CVE-2026-76504 with a CVSS score of 9.8, to its Known Exploited Vulnerabilities list after reports of active exploitation. The flaw allows unauthenticated remote attackers to access affected systems.]]></description>
-      <pubDate>Thu, 01 Oct 2026 10:33:16 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Pentagon Personnel Records Breached, 3 Million+ Stolen</title>
-      <link>https://secubuzz.com/news/pentagon-personnel-records-breached-3-million-stolen</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/pentagon-personnel-records-breached-3-million-stolen</guid>
-      <description><![CDATA[Hackers breached the Pentagon’s Defense Manpower Data Center, stealing personal records of over three million military personnel. The breach exposed sensitive HR data, prompting the Pentagon to notify affected service members and initiate investigations into the unauthorized access.]]></description>
-      <pubDate>Thu, 01 Oct 2026 09:44:28 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/hackers-breach-pentagon-human-resources-management-system-steal-data-of-nearly-3-million-people/">BleepingComputer</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>

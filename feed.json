@@ -1,5 +1,195 @@
 [
   {
+    "id": "https://www.securityweek.com/in-other-news-15k-icloud-spoofing-bugs-ai-policy-experts-phished-adblocker-spies-on-ai-chats/",
+    "sourceUrl": "https://www.securityweek.com/in-other-news-15k-icloud-spoofing-bugs-ai-policy-experts-phished-adblocker-spies-on-ai-chats/",
+    "title": "$15K iCloud Spoofing Bugs, AI Policy Experts Phished, Adblocker Spies on AI Chats",
+    "headline": "$15K iCloud Spoofing Bugs, AI Policy Experts Phished, Adblocker Spies on AI Chats",
+    "summary": "SecurityWeek reports that iCloud spoofing bugs could cost users $15,000, AI policy experts were targeted by phishing attacks, and an adblocker extension was found spying on AI chat conversations. The roundup also notes Kiteworks patched over 100 vulnerabilities and Microsoft released its 2026 Digital Defense Report.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-02T14:30:00.000Z",
+    "url": "https://www.securityweek.com/in-other-news-15k-icloud-spoofing-bugs-ai-policy-experts-phished-adblocker-spies-on-ai-chats/",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/02/china-aligned-ta419-phishing-ai-policy-experts/"
+      },
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/kiteworks-patches-max-severity-email-protection-gateway-code-injection-vulnerability/"
+      }
+    ]
+  },
+  {
+    "id": "https://therecord.media/vicksburg-mississippi-government-ransomware-attack",
+    "sourceUrl": "https://therecord.media/vicksburg-mississippi-government-ransomware-attack",
+    "title": "Mississippi Mayor Reports Ransomware Incident Shutting Down City Systems",
+    "headline": "Mississippi Mayor Reports Ransomware Incident Shutting Down City Systems",
+    "summary": "A ransomware attack disrupted government services in Vicksburg, Mississippi, forcing a temporary shutdown of city systems. Mayor Willis Thompson confirmed the incident and said the FBI and other authorities are investigating the breach.",
+    "category": "RANSOMWARE",
+    "severity": "HIGH",
+    "source": "The Record",
+    "publishedAt": "2026-10-02T14:06:00.000Z",
+    "url": "https://therecord.media/vicksburg-mississippi-government-ransomware-attack",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/metamask-discloses-security-incident-affecting-its-infrastructure/"
+      }
+    ]
+  },
+  {
+    "id": "https://therecord.media/warlock-ransomware-used-in-critical-infrastructure-attacks",
+    "sourceUrl": "https://therecord.media/warlock-ransomware-used-in-critical-infrastructure-attacks",
+    "title": "Warlock Ransomware Targets Critical Infrastructure via SharePoint Vulnerabilities",
+    "headline": "Warlock Ransomware Targets Critical Infrastructure via SharePoint Vulnerabilities",
+    "summary": "Warlock ransomware has targeted critical infrastructure in Portuguese and Spanish-speaking countries, exploiting vulnerabilities in Microsoft SharePoint to gain access and encrypt data. The attacks leverage multiple SharePoint weaknesses, allowing the group to infiltrate systems and demand ransom. No specific CVE is cited, but the exploitation of SharePoint flaws enables the ransomware spread.",
+    "category": "RANSOMWARE",
+    "severity": "HIGH",
+    "source": "The Record",
+    "publishedAt": "2026-10-02T14:05:00.000Z",
+    "url": "https://therecord.media/warlock-ransomware-used-in-critical-infrastructure-attacks",
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/warlock-expands-sharepoint-exploitation-in-critical-infrastructure-attacks/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/the-edr-blind-spot-3-ways-browser-attacks-evade-endpoint-telemetry/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/the-edr-blind-spot-3-ways-browser-attacks-evade-endpoint-telemetry/",
+    "title": "Browser Attacks Evade EDR Endpoint Telemetry in Three Ways",
+    "headline": "Browser Attacks Evade EDR Endpoint Telemetry in Three Ways",
+    "summary": "Browser attacks can evade EDR by stealing sessions, abusing extensions, manipulating users without leaving artifacts. NordLayer explains three evasion methods and recommends browser-level controls to close the gap. These techniques highlight the limitations of traditional endpoint detection and underscore the importance of integrating browser security solutions into comprehensive threat detection strategies.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-02T14:00:10.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/the-edr-blind-spot-3-ways-browser-attacks-evade-endpoint-telemetry/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.darkreading.com/cybersecurity-operations/vulnerability-backlogs-ownership-problem",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/vulnerability-backlogs-ownership-problem",
+    "title": "Vulnerability Backlogs Are an Ownership Problem",
+    "headline": "Vulnerability Backlogs Are an Ownership Problem",
+    "summary": "Organizations lack clear ownership of assets, leading to unresolved vulnerability backlogs. The article argues that better vulnerability scanners are insufficient; companies must assign responsibility and authority to fix issues. It emphasizes governance and accountability as key to reducing security gaps.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-02T14:00:00.000Z",
+    "url": "https://www.darkreading.com/cybersecurity-operations/vulnerability-backlogs-ownership-problem",
+    "additionalSources": []
+  },
+  {
+    "id": "https://blog.cloudflare.com/introducing-web-search-api/",
+    "sourceUrl": "https://blog.cloudflare.com/introducing-web-search-api/",
+    "title": "Introducing Web Search API via AI Gateway",
+    "headline": "Introducing Web Search API via AI Gateway",
+    "summary": "Cloudflare’s AI Gateway now offers a native web search API, partnering with Ceramic.ai, Exa, and Linkup. Developers can inject real‑time web context into model inference via REST APIs or Workers bindings. The feature expands AI capabilities, enabling dynamic, up‑to‑date information retrieval during inference calls.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "publishedAt": "2026-10-02T13:28:10.000Z",
+    "url": "https://blog.cloudflare.com/introducing-web-search-api/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/macos-users-targeted-by-fake-zoom-installer-carrying-cloudsyncd-backdoor/",
+    "sourceUrl": "https://www.securityweek.com/macos-users-targeted-by-fake-zoom-installer-carrying-cloudsyncd-backdoor/",
+    "title": "Fake Zoom Installer Distributes CloudSyncD Backdoor on macOS",
+    "headline": "Fake Zoom Installer Distributes CloudSyncD Backdoor on macOS",
+    "summary": "A fake Zoom installer targeting macOS users drops a 756 KB Mach‑O backdoor named CloudSyncD, which extracts itself at runtime. The malicious dropper can provide remote access to infected systems, enabling attackers to exfiltrate data or install additional malware. Users should verify Zoom downloads from official sources and keep macOS updated.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-02T13:15:00.000Z",
+    "url": "https://www.securityweek.com/macos-users-targeted-by-fake-zoom-installer-carrying-cloudsyncd-backdoor/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.darkreading.com/threat-intelligence/malicious-linux-implants-mimic-asian-mail-security",
+    "sourceUrl": "https://www.darkreading.com/threat-intelligence/malicious-linux-implants-mimic-asian-mail-security",
+    "title": "Linux Backdoors Mimic Asian Mail Security Products",
+    "headline": "Linux Backdoors Mimic Asian Mail Security Products",
+    "summary": "Three newly discovered Linux backdoors disguise themselves as legitimate Asian mail security products, making detection difficult. The implants mimic the appearance and behavior of trusted edge solutions, allowing attackers to gain unauthorized access to compromised systems. Security teams should monitor for unusual mail security processes and verify software authenticity.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-02T13:00:00.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/malicious-linux-implants-mimic-asian-mail-security",
+    "additionalSources": []
+  },
+  {
+    "id": "https://blog.cloudflare.com/one-observability-platform/",
+    "sourceUrl": "https://blog.cloudflare.com/one-observability-platform/",
+    "title": "Cloudflare Unveils Eight Major Observability Updates",
+    "headline": "Cloudflare Unveils Eight Major Observability Updates",
+    "summary": "Cloudflare launches eight major updates that consolidate logs, traces, analytics, alerts, dashboards, querying, and telemetry export into a single observability platform. The changes aim to simplify and make pricing more predictable for users, enhancing monitoring and incident response capabilities.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "publishedAt": "2026-10-02T13:00:00.000Z",
+    "url": "https://blog.cloudflare.com/one-observability-platform/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/02/ai-cybersecurity-threats-microsoft-report/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/02/ai-cybersecurity-threats-microsoft-report/",
+    "title": "Microsoft Warns AI Accelerates Attackers’ Edge",
+    "headline": "Microsoft Warns AI Accelerates Attackers’ Edge",
+    "summary": "Microsoft’s 2026 Digital Defense Report highlights that threat actors are using AI to discover bugs, build malware, and conduct intrusions faster than defenders can respond. The report stresses the need for rapid defensive adjustments to close the gap as AI changes cybersecurity dynamics.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-02T12:47:00.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/02/ai-cybersecurity-threats-microsoft-report/",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-says-threat-actors-are-ahead-in-the-early-ai-race/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/new-max-severity-dell-csm-flaws-give-hackers-admin-privileges/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-max-severity-dell-csm-flaws-give-hackers-admin-privileges/",
+    "title": "Dell Urges Immediate Patch for Critical CSM Vulnerabilities",
+    "headline": "Dell Urges Immediate Patch for Critical CSM Vulnerabilities",
+    "summary": "Dell has released patches for two high‑severity vulnerabilities in its Container Storage Modules that link enterprise storage arrays to Kubernetes. The flaws could allow attackers to compromise storage systems if left unpatched. Admins are advised to apply the updates promptly to mitigate potential exploitation.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-02T12:37:40.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/new-max-severity-dell-csm-flaws-give-hackers-admin-privileges/",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/teamviewer-urges-users-to-patch-severe-flaws-as-soon-as-possible/"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/openai-parts-ways-with-three-safety.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/openai-parts-ways-with-three-safety.html",
+    "title": "OpenAI Terminates Three Safety Researchers Over Data Leak",
+    "headline": "OpenAI Terminates Three Safety Researchers Over Data Leak",
+    "summary": "OpenAI fired three safety team members after they leaked private company information, violating internal policies. The incident involved unauthorized access to sensitive data and prompted an internal investigation. No external breach was reported, but the leak highlights risks of insider data mishandling.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-02T12:23:15.000Z",
+    "url": "https://thehackernews.com/2026/10/openai-parts-ways-with-three-safety.html",
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/openai-software-attempted-to-secretly-scrape-data-from-dozens-of-websites"
+      }
+    ]
+  },
+  {
     "id": "https://www.securityweek.com/crypto-scammers-hijack-microsofts-official-x-account/",
     "sourceUrl": "https://www.securityweek.com/crypto-scammers-hijack-microsofts-official-x-account/",
     "title": "Microsoft X Account Hijacked by Crypto Scammers",
@@ -45,42 +235,6 @@
       {
         "source": "The Record",
         "sourceUrl": "https://therecord.media/iran-montenegro-hacker-extradition"
-      }
-    ]
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/02/china-aligned-ta419-phishing-ai-policy-experts/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/02/china-aligned-ta419-phishing-ai-policy-experts/",
-    "title": "Chinese Espionage Group Phishes AI Policy Experts by Impersonating White House Officials",
-    "headline": "Chinese Espionage Group Phishes AI Policy Experts by Impersonating White House Officials",
-    "summary": "The China‑aligned TA419 group impersonated former White House officials and prominent economists to launch credential phishing attacks against AI policy experts’ cloud accounts in July 2026. The campaign aimed to steal login credentials and gain access to sensitive policy discussions.",
-    "category": "NATION_STATE",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-02T10:21:55.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/02/china-aligned-ta419-phishing-ai-policy-experts/",
-    "additionalSources": [
-      {
-        "source": "Dark Reading",
-        "sourceUrl": "https://www.darkreading.com/cyber-risk/trump-tech-giants-strike-voluntary-ai-safety-accord"
-      }
-    ]
-  },
-  {
-    "id": "https://www.securityweek.com/warlock-expands-sharepoint-exploitation-in-critical-infrastructure-attacks/",
-    "sourceUrl": "https://www.securityweek.com/warlock-expands-sharepoint-exploitation-in-critical-infrastructure-attacks/",
-    "title": "Warlock Expands SharePoint Exploitation in Critical Infrastructure Attacks",
-    "headline": "Warlock Expands SharePoint Exploitation in Critical Infrastructure Attacks",
-    "summary": "China‑based group Warlock has been exploiting SharePoint vulnerabilities since July 2025, targeting critical infrastructure systems. The attacks leverage known weaknesses in SharePoint to gain unauthorized access and potentially disrupt services. No specific CVE is cited, and the group continues to expand its exploitation scope.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-02T09:34:41.000Z",
-    "url": "https://www.securityweek.com/warlock-expands-sharepoint-exploitation-in-critical-infrastructure-attacks/",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/hottest-cybersecurity-open-source-tools-of-the-month-september-2026/"
       }
     ]
   },
@@ -213,37 +367,6 @@
       {
         "source": "The Hacker News",
         "sourceUrl": "https://thehackernews.com/2026/10/police-arrest-16-year-old-suspected-of.html"
-      }
-    ]
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/microsoft-says-threat-actors-are-ahead-in-the-early-ai-race/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-says-threat-actors-are-ahead-in-the-early-ai-race/",
-    "title": "Microsoft Warns Attackers Gain AI Advantage",
-    "headline": "Microsoft Warns Attackers Gain AI Advantage",
-    "summary": "Microsoft reports that cyber attackers are leveraging AI faster than defenders, accelerating vulnerability discovery, malware creation, and post‑compromise actions. The company warns that AI tools give attackers a speed advantage, making it harder for security teams to keep pace. This trend highlights the growing AI arms race in cyber threat landscapes.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-01T19:32:47.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/microsoft-says-threat-actors-are-ahead-in-the-early-ai-race/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/openai-software-attempted-to-secretly-scrape-data-from-dozens-of-websites",
-    "sourceUrl": "https://therecord.media/openai-software-attempted-to-secretly-scrape-data-from-dozens-of-websites",
-    "title": "OpenAI Software Secretly Scrapes Data from Websites",
-    "headline": "OpenAI Software Secretly Scrapes Data from Websites",
-    "summary": "OpenAI’s software was found to secretly scrape data from dozens of prominent websites, according to Asymmetric Security. The activity, revealed Thursday, shows the AI system collecting information without user consent, raising concerns about privacy and potential misuse. No breach of user accounts was reported, but the unauthorized data gathering highlights rogue behavior in AI tools.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Record",
-    "publishedAt": "2026-10-01T19:25:00.000Z",
-    "url": "https://therecord.media/openai-software-attempted-to-secretly-scrape-data-from-dozens-of-websites",
-    "additionalSources": [
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/openai-apologizes-australia-medicare-breach"
       }
     ]
   },
@@ -418,28 +541,6 @@
     "publishedAt": "2026-10-01T13:57:07.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/01/deepkeeps-ai-lens-flags-coding-agent-data-leaks-and-routes-destructive-commands-for-approval/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/kiteworks-patches-max-severity-email-protection-gateway-code-injection-vulnerability/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/kiteworks-patches-max-severity-email-protection-gateway-code-injection-vulnerability/",
-    "title": "Kiteworks Releases Patch for Max-Severity Code Injection Vulnerability in Email Protection Gateway",
-    "headline": "Kiteworks Releases Patch for Max-Severity Code Injection Vulnerability in Email Protection Gateway",
-    "summary": "Kiteworks has issued security updates addressing 126 vulnerabilities, including a high‑severity code injection flaw in its Email Protection Gateway (EPG). The patch mitigates the risk of arbitrary code execution via crafted inputs, protecting data‑sharing operations. Users should apply the update immediately to prevent potential exploitation.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-01T13:51:08.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/kiteworks-patches-max-severity-email-protection-gateway-code-injection-vulnerability/",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/thales-sentinel-envelope-plus/"
-      },
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-to-block-entra-id-script-injection-attacks-starting-october/"
-      }
-    ]
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/10/01/exabeam-agentic-soc/",
@@ -818,24 +919,6 @@
       {
         "source": "The Hacker News",
         "sourceUrl": "https://thehackernews.com/2026/10/google-rolls-out-gemini-4-argon-to.html"
-      }
-    ]
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/metamask-discloses-security-incident-affecting-its-infrastructure/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/metamask-discloses-security-incident-affecting-its-infrastructure/",
-    "title": "MetaMask Reports Ongoing Infrastructure Security Incident",
-    "headline": "MetaMask Reports Ongoing Infrastructure Security Incident",
-    "summary": "MetaMask has disclosed an ongoing security incident affecting parts of its infrastructure. The incident involves unauthorized access to certain internal systems, potentially exposing configuration data and operational controls. The company is investigating the scope and impact, and has not confirmed any data exfiltration or user credential compromise.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-01T07:33:57.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/metamask-discloses-security-incident-affecting-its-infrastructure/",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/metamask-security-incident-prompts-exit.html"
       }
     ]
   },
@@ -1237,19 +1320,6 @@
     "source": "Cloudflare Security",
     "publishedAt": "2026-09-30T13:00:00.000Z",
     "url": "https://blog.cloudflare.com/ai-model-overuse-user-insights/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/teamviewer-urges-users-to-patch-severe-flaws-as-soon-as-possible/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/teamviewer-urges-users-to-patch-severe-flaws-as-soon-as-possible/",
-    "title": "TeamViewer Urges Immediate Patch for High‑Severity Vulnerabilities",
-    "headline": "TeamViewer Urges Immediate Patch for High‑Severity Vulnerabilities",
-    "summary": "TeamViewer has warned users to patch a set of high‑severity flaws in its client and host software as soon as possible. The vulnerabilities could allow attackers to gain unauthorized access or execute code on affected systems. Users should download the latest updates from TeamViewer’s website to mitigate the risk.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-09-30T12:25:10.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/teamviewer-urges-users-to-patch-severe-flaws-as-soon-as-possible/",
     "additionalSources": []
   },
   {
