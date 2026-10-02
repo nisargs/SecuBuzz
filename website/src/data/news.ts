@@ -11,6 +11,44 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "fortinet-fortimail-zero-day-path-traversal-cve-2026-104286-e",
+    "title": "Fortinet FortiMail Zero‑Day Path Traversal CVE‑2026‑104286 Exposed",
+    "summary": "Fortinet FortiMail path traversal CVE-2026-104286 allows attackers to write arbitrary files, enabling potential remote code execution. The flaw is critical severity, requiring immediate patching. Fortinet has issued a patch and urged customers to update firmware to mitigate the vulnerability. Security researchers recommend disabling the vulnerable feature until the update is applied.",
+    "category": "Vulnerability",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/exploited-fortinet-fortimail-zero-day-calls-for-urgent-action/",
+    "publishedAt": "2026-10-02T08:07:33.000Z",
+    "cves": [
+      "CVE-2026-104286"
+    ],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "google-restricts-android-accessibility-services-to-verified-",
+    "title": "Google Restricts Android Accessibility Services to Verified Tools Under Advanced Protection",
+    "summary": "Google limits Android accessibility services to verified Accessibility Tools when Advanced Protection is enabled, blocking malicious apps that abuse the API for malware and fraud. The change reduces attack surface for credential theft and financial fraud. Users with Advanced Protection will no longer grant unrestricted access to unverified apps.",
+    "category": "Malware",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/android-17-advanced-protection-locks.html",
+    "publishedAt": "2026-10-02T08:01:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "insider-recruitment-threats-target-employee-access",
+    "title": "Insider Recruitment Threats Target Employee Access",
+    "summary": "Cybercriminals are actively recruiting employees to gain legitimate access, enabling them to perform routine actions such as information lookups, account resets, transaction approvals, and shipment changes. These insider services can be sold to criminal customers, increasing the risk of internal compromise and facilitating covert operations within targeted organizations.",
+    "category": "Breach",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/02/intel-471-insider-threat-recruitment-report/",
+    "publishedAt": "2026-10-02T06:00:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "android-17-adds-features-to-hinder-spyware-tracking",
     "title": "Android 17 Adds Features to Hinder Spyware Tracking",
     "summary": "Google’s Android 17 introduces six Advanced Protection features, including forensic logging that stores evidence off-device and Intrusion Logging that records security and network events. Existing users will be notified when the updates roll out, enhancing traceability for suspected phone hacks.",
@@ -35,6 +73,18 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
+    "slug": "ai-agents-maintain-access-to-company-data-after-tasks-comple",
+    "title": "AI Agents Maintain Access to Company Data After Tasks Complete",
+    "summary": "IT teams worry that AI agents retain ongoing access to corporate systems and can act on users’ behalf after their tasks finish, highlighting a gap in enforceable AI policies and the need for real‑time monitoring to prevent unauthorized actions.",
+    "category": "Vulnerability",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/02/delinea-ai-policy-adoption-enforcement-report/",
+    "publishedAt": "2026-10-02T04:30:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "vega-ii-introduces-ai-powered-soc-platform",
     "title": "Vega II Introduces AI‑Powered SOC Platform",
     "summary": "Vega released Vega II, its largest platform update, adding security‑trained AI and persistent memory to the SOC. The update removes legacy SIEM and data pipeline barriers, providing teams with a lasting record of learned insights for improved security operations.",
@@ -43,20 +93,6 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/02/new-infosec-products-of-the-week-october-2-2026/",
     "publishedAt": "2026-10-02T04:00:35.000Z",
     "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "fortinet-issues-critical-fortimail-vulnerability-alert",
-    "title": "Fortinet Issues Critical FortiMail Vulnerability Alert",
-    "summary": "Fortinet has identified a critical flaw in FortiMail, CVE-2026-104286, that is actively exploited in zero‑day attacks. The vulnerability allows attackers to execute unauthorized code or commands on affected devices, posing a severe risk to FortiMail users worldwide.",
-    "category": "Vulnerability",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-fortimail-flaw-exploited-in-zero-day-attacks/",
-    "publishedAt": "2026-10-01T22:42:49.000Z",
-    "cves": [
-      "CVE-2026-104286"
-    ],
     "additionalSources": [],
     "aliases": []
   },
@@ -395,20 +431,6 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://therecord.media/poland-cyberattack-invoice-software",
     "publishedAt": "2026-10-01T12:30:00.000Z",
     "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "abb-pcm600-vulnerability-enables-privilege-escalation-and-pa",
-    "title": "ABB PCM600 Vulnerability Enables Privilege Escalation and Path Traversal",
-    "summary": "A flaw in ABB Protection and Control IED Manager PCM600’s Scheduler Service allows local users to gain LocalSystem privileges and overwrite critical files. The vulnerability, identified as CVE-2026-15952, permits path traversal and privilege escalation on affected energy sector devices worldwide. Patching the service or restricting user permissions mitigates the risk.",
-    "category": "Vulnerability",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-03",
-    "publishedAt": "2026-10-01T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-15952"
-    ],
     "additionalSources": [],
     "aliases": []
   },

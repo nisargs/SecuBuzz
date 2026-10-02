@@ -1,5 +1,57 @@
 [
   {
+    "id": "https://www.securityweek.com/exploited-fortinet-fortimail-zero-day-calls-for-urgent-action/",
+    "sourceUrl": "https://www.securityweek.com/exploited-fortinet-fortimail-zero-day-calls-for-urgent-action/",
+    "title": "Fortinet FortiMail Zero‑Day Path Traversal CVE‑2026‑104286 Exposed",
+    "headline": "Fortinet FortiMail Zero‑Day Path Traversal CVE‑2026‑104286 Exposed",
+    "summary": "Fortinet FortiMail path traversal CVE-2026-104286 allows attackers to write arbitrary files, enabling potential remote code execution. The flaw is critical severity, requiring immediate patching. Fortinet has issued a patch and urged customers to update firmware to mitigate the vulnerability. Security researchers recommend disabling the vulnerable feature until the update is applied.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-02T08:07:33.000Z",
+    "url": "https://www.securityweek.com/exploited-fortinet-fortimail-zero-day-calls-for-urgent-action/",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/critical-fortimail-zero-day-flaw.html"
+      },
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-fortimail-flaw-exploited-in-zero-day-attacks/"
+      },
+      {
+        "source": "CISA",
+        "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-03"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/android-17-advanced-protection-locks.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/android-17-advanced-protection-locks.html",
+    "title": "Google Restricts Android Accessibility Services to Verified Tools Under Advanced Protection",
+    "headline": "Google Restricts Android Accessibility Services to Verified Tools Under Advanced Protection",
+    "summary": "Google limits Android accessibility services to verified Accessibility Tools when Advanced Protection is enabled, blocking malicious apps that abuse the API for malware and fraud. The change reduces attack surface for credential theft and financial fraud. Users with Advanced Protection will no longer grant unrestricted access to unverified apps.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-02T08:01:30.000Z",
+    "url": "https://thehackernews.com/2026/10/android-17-advanced-protection-locks.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/02/intel-471-insider-threat-recruitment-report/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/02/intel-471-insider-threat-recruitment-report/",
+    "title": "Insider Recruitment Threats Target Employee Access",
+    "headline": "Insider Recruitment Threats Target Employee Access",
+    "summary": "Cybercriminals are actively recruiting employees to gain legitimate access, enabling them to perform routine actions such as information lookups, account resets, transaction approvals, and shipment changes. These insider services can be sold to criminal customers, increasing the risk of internal compromise and facilitating covert operations within targeted organizations.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-02T06:00:05.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/02/intel-471-insider-threat-recruitment-report/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/10/02/android-17-advanced-protection-features/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/02/android-17-advanced-protection-features/",
     "title": "Android 17 Adds Features to Hinder Spyware Tracking",
@@ -26,6 +78,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.helpnetsecurity.com/2026/10/02/delinea-ai-policy-adoption-enforcement-report/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/02/delinea-ai-policy-adoption-enforcement-report/",
+    "title": "AI Agents Maintain Access to Company Data After Tasks Complete",
+    "headline": "AI Agents Maintain Access to Company Data After Tasks Complete",
+    "summary": "IT teams worry that AI agents retain ongoing access to corporate systems and can act on users’ behalf after their tasks finish, highlighting a gap in enforceable AI policies and the need for real‑time monitoring to prevent unauthorized actions.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-02T04:30:21.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/02/delinea-ai-policy-adoption-enforcement-report/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/10/02/new-infosec-products-of-the-week-october-2-2026/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/02/new-infosec-products-of-the-week-october-2-2026/",
     "title": "Vega II Introduces AI‑Powered SOC Platform",
@@ -37,24 +102,6 @@
     "publishedAt": "2026-10-02T04:00:35.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/02/new-infosec-products-of-the-week-october-2-2026/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-fortimail-flaw-exploited-in-zero-day-attacks/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-fortimail-flaw-exploited-in-zero-day-attacks/",
-    "title": "Fortinet Issues Critical FortiMail Vulnerability Alert",
-    "headline": "Fortinet Issues Critical FortiMail Vulnerability Alert",
-    "summary": "Fortinet has identified a critical flaw in FortiMail, CVE-2026-104286, that is actively exploited in zero‑day attacks. The vulnerability allows attackers to execute unauthorized code or commands on affected devices, posing a severe risk to FortiMail users worldwide.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-01T22:42:49.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-fortimail-flaw-exploited-in-zero-day-attacks/",
-    "additionalSources": [
-      {
-        "source": "CISA",
-        "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/01/cisa-adds-one-known-exploited-vulnerability-catalog"
-      }
-    ]
   },
   {
     "id": "https://cybernewsai.com/blog/autonomous-ai-agents-attack-us-canadian-government-portals",
@@ -510,19 +557,6 @@
         "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-04"
       }
     ]
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-03",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-03",
-    "title": "ABB PCM600 Vulnerability Enables Privilege Escalation and Path Traversal",
-    "headline": "ABB PCM600 Vulnerability Enables Privilege Escalation and Path Traversal",
-    "summary": "A flaw in ABB Protection and Control IED Manager PCM600’s Scheduler Service allows local users to gain LocalSystem privileges and overwrite critical files. The vulnerability, identified as CVE-2026-15952, permits path traversal and privilege escalation on affected energy sector devices worldwide. Patching the service or restricting user permissions mitigates the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "CISA",
-    "publishedAt": "2026-10-01T12:00:00.000Z",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-03",
-    "additionalSources": []
   },
   {
     "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-05",

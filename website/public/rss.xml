@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Oct 2026 05:41:55 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 08:20:02 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Fortinet FortiMail Zero‑Day Path Traversal CVE‑2026‑104286 Exposed</title>
+      <link>https://secubuzz.com/news/fortinet-fortimail-zero-day-path-traversal-cve-2026-104286-e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fortinet-fortimail-zero-day-path-traversal-cve-2026-104286-e</guid>
+      <description><![CDATA[Fortinet FortiMail path traversal CVE-2026-104286 allows attackers to write arbitrary files, enabling potential remote code execution. The flaw is critical severity, requiring immediate patching. Fortinet has issued a patch and urged customers to update firmware to mitigate the vulnerability. Security researchers recommend disabling the vulnerable feature until the update is applied.]]></description>
+      <pubDate>Fri, 02 Oct 2026 08:07:33 GMT</pubDate>
+      <source url="https://www.securityweek.com/exploited-fortinet-fortimail-zero-day-calls-for-urgent-action/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Google Restricts Android Accessibility Services to Verified Tools Under Advanced Protection</title>
+      <link>https://secubuzz.com/news/google-restricts-android-accessibility-services-to-verified-</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-restricts-android-accessibility-services-to-verified-</guid>
+      <description><![CDATA[Google limits Android accessibility services to verified Accessibility Tools when Advanced Protection is enabled, blocking malicious apps that abuse the API for malware and fraud. The change reduces attack surface for credential theft and financial fraud. Users with Advanced Protection will no longer grant unrestricted access to unverified apps.]]></description>
+      <pubDate>Fri, 02 Oct 2026 08:01:30 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/android-17-advanced-protection-locks.html">The Hacker News</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Insider Recruitment Threats Target Employee Access</title>
+      <link>https://secubuzz.com/news/insider-recruitment-threats-target-employee-access</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/insider-recruitment-threats-target-employee-access</guid>
+      <description><![CDATA[Cybercriminals are actively recruiting employees to gain legitimate access, enabling them to perform routine actions such as information lookups, account resets, transaction approvals, and shipment changes. These insider services can be sold to criminal customers, increasing the risk of internal compromise and facilitating covert operations within targeted organizations.]]></description>
+      <pubDate>Fri, 02 Oct 2026 06:00:05 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/02/intel-471-insider-threat-recruitment-report/">Help Net Security</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Android 17 Adds Features to Hinder Spyware Tracking</title>
       <link>https://secubuzz.com/news/android-17-adds-features-to-hinder-spyware-tracking</link>
@@ -26,6 +53,15 @@
       <category>Policy</category>
     </item>
     <item>
+      <title>AI Agents Maintain Access to Company Data After Tasks Complete</title>
+      <link>https://secubuzz.com/news/ai-agents-maintain-access-to-company-data-after-tasks-comple</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-agents-maintain-access-to-company-data-after-tasks-comple</guid>
+      <description><![CDATA[IT teams worry that AI agents retain ongoing access to corporate systems and can act on users’ behalf after their tasks finish, highlighting a gap in enforceable AI policies and the need for real‑time monitoring to prevent unauthorized actions.]]></description>
+      <pubDate>Fri, 02 Oct 2026 04:30:21 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/02/delinea-ai-policy-adoption-enforcement-report/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Vega II Introduces AI‑Powered SOC Platform</title>
       <link>https://secubuzz.com/news/vega-ii-introduces-ai-powered-soc-platform</link>
       <guid isPermaLink="true">https://secubuzz.com/news/vega-ii-introduces-ai-powered-soc-platform</guid>
@@ -33,15 +69,6 @@
       <pubDate>Fri, 02 Oct 2026 04:00:35 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/02/new-infosec-products-of-the-week-october-2-2026/">Help Net Security</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Fortinet Issues Critical FortiMail Vulnerability Alert</title>
-      <link>https://secubuzz.com/news/fortinet-issues-critical-fortimail-vulnerability-alert</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fortinet-issues-critical-fortimail-vulnerability-alert</guid>
-      <description><![CDATA[Fortinet has identified a critical flaw in FortiMail, CVE-2026-104286, that is actively exploited in zero‑day attacks. The vulnerability allows attackers to execute unauthorized code or commands on affected devices, posing a severe risk to FortiMail users worldwide.]]></description>
-      <pubDate>Thu, 01 Oct 2026 22:42:49 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-fortimail-flaw-exploited-in-zero-day-attacks/">BleepingComputer</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>AI‑Driven Agents Target US and Canadian Government Portals</title>
@@ -296,15 +323,6 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>ABB PCM600 Vulnerability Enables Privilege Escalation and Path Traversal</title>
-      <link>https://secubuzz.com/news/abb-pcm600-vulnerability-enables-privilege-escalation-and-pa</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/abb-pcm600-vulnerability-enables-privilege-escalation-and-pa</guid>
-      <description><![CDATA[A flaw in ABB Protection and Control IED Manager PCM600’s Scheduler Service allows local users to gain LocalSystem privileges and overwrite critical files. The vulnerability, identified as CVE-2026-15952, permits path traversal and privilege escalation on affected energy sector devices worldwide. Patching the service or restricting user permissions mitigates the risk.]]></description>
-      <pubDate>Thu, 01 Oct 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-03">CISA</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>Johnson Controls EasyIO Neo Series Controllers Vulnerable to Cleartext Credential Interception</title>
       <link>https://secubuzz.com/news/johnson-controls-easyio-neo-series-controllers-vulnerable-to</link>
       <guid isPermaLink="true">https://secubuzz.com/news/johnson-controls-easyio-neo-series-controllers-vulnerable-to</guid>
@@ -438,24 +456,6 @@
       <pubDate>Thu, 01 Oct 2026 05:54:41 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/apple-coregraphics-poc-emerges-as.html">The Hacker News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>ScreenConnect Client Abused by Attackers</title>
-      <link>https://secubuzz.com/news/screenconnect-client-abused-by-attackers</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/screenconnect-client-abused-by-attackers</guid>
-      <description><![CDATA[Threat actors are exploiting the ScreenConnect client, a legitimate remote‑access tool, to conduct attacks. The misuse involves leveraging the software’s legitimate features for malicious purposes, potentially enabling unauthorized remote sessions and data exfiltration. No specific vulnerability or CVE is cited.]]></description>
-      <pubDate>Thu, 01 Oct 2026 05:32:13 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33388">SANS Internet Storm Center</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AI in SOC May Reduce Entry-Level Job Opportunities</title>
-      <link>https://secubuzz.com/news/ai-in-soc-may-reduce-entry-level-job-opportunities</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-in-soc-may-reduce-entry-level-job-opportunities</guid>
-      <description><![CDATA[The integration of AI tools in security operations centers automates repetitive tasks such as phishing detection and malware pattern recognition, potentially decreasing the need for junior analysts. This trend could make entry‑level SOC positions harder to secure as automation replaces routine analysis work.]]></description>
-      <pubDate>Thu, 01 Oct 2026 05:30:08 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/01/ai-soc-entry-jobs/">Help Net Security</source>
-      <category>Malware</category>
     </item>
   </channel>
 </rss>
