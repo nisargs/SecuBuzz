@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Oct 2026 00:19:55 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 04:19:25 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Vega II Introduces AI‑Powered SOC Platform</title>
+      <link>https://secubuzz.com/news/vega-ii-introduces-ai-powered-soc-platform</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/vega-ii-introduces-ai-powered-soc-platform</guid>
+      <description><![CDATA[Vega released Vega II, its largest platform update, adding security‑trained AI and persistent memory to the SOC. The update removes legacy SIEM and data pipeline barriers, providing teams with a lasting record of learned insights for improved security operations.]]></description>
+      <pubDate>Fri, 02 Oct 2026 04:00:35 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/02/new-infosec-products-of-the-week-october-2-2026/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>Fortinet Issues Critical FortiMail Vulnerability Alert</title>
       <link>https://secubuzz.com/news/fortinet-issues-critical-fortimail-vulnerability-alert</link>
@@ -447,15 +456,6 @@
       <pubDate>Thu, 01 Oct 2026 04:35:34 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/citrix-netscaler-post-exploitation.html">The Hacker News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Employment Scam Victims Tripled at Financial Firms in 21 Countries</title>
-      <link>https://secubuzz.com/news/employment-scam-victims-tripled-at-financial-firms-in-21-cou</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/employment-scam-victims-tripled-at-financial-firms-in-21-cou</guid>
-      <description><![CDATA[Employment‑style phishing scams targeting employees at more than 370 banks and financial institutions in 21 countries surged 258% over the past year, according to fraud‑detection vendor BioCatch. The rise outpaced all other scam types, with total reported scams increasing 35% across the same institutions.]]></description>
-      <pubDate>Thu, 01 Oct 2026 04:30:35 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/01/employment-scam-victims-research/">Help Net Security</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>

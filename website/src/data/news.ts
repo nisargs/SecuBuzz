@@ -11,6 +11,18 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "vega-ii-introduces-ai-powered-soc-platform",
+    "title": "Vega II Introduces AI‑Powered SOC Platform",
+    "summary": "Vega released Vega II, its largest platform update, adding security‑trained AI and persistent memory to the SOC. The update removes legacy SIEM and data pipeline barriers, providing teams with a lasting record of learned insights for improved security operations.",
+    "category": "Policy",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/02/new-infosec-products-of-the-week-october-2-2026/",
+    "publishedAt": "2026-10-02T04:00:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "fortinet-issues-critical-fortimail-vulnerability-alert",
     "title": "Fortinet Issues Critical FortiMail Vulnerability Alert",
     "summary": "Fortinet has identified a critical flaw in FortiMail, CVE-2026-104286, that is actively exploited in zero‑day attacks. The vulnerability allows attackers to execute unauthorized code or commands on affected devices, posing a severe risk to FortiMail users worldwide.",

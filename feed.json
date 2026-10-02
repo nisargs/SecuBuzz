@@ -1,5 +1,18 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/10/02/new-infosec-products-of-the-week-october-2-2026/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/02/new-infosec-products-of-the-week-october-2-2026/",
+    "title": "Vega II Introduces AI‑Powered SOC Platform",
+    "headline": "Vega II Introduces AI‑Powered SOC Platform",
+    "summary": "Vega released Vega II, its largest platform update, adding security‑trained AI and persistent memory to the SOC. The update removes legacy SIEM and data pipeline barriers, providing teams with a lasting record of learned insights for improved security operations.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-02T04:00:35.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/02/new-infosec-products-of-the-week-october-2-2026/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-fortimail-flaw-exploited-in-zero-day-attacks/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-fortimail-flaw-exploited-in-zero-day-attacks/",
     "title": "Fortinet Issues Critical FortiMail Vulnerability Alert",
@@ -557,6 +570,10 @@
       {
         "source": "SecurityWeek",
         "sourceUrl": "https://www.securityweek.com/remotethreat-launches-with-7-million-for-offensive-operations-platform/"
+      },
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/armadin-raises-255-5-million-funding/"
       }
     ]
   },
