@@ -5,8 +5,80 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Oct 2026 16:19:20 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 20:20:07 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Bipartisan Bills Target ALPR Use</title>
+      <link>https://secubuzz.com/news/bipartisan-bills-target-alpr-use</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/bipartisan-bills-target-alpr-use</guid>
+      <description><![CDATA[Legislation introduced by Sen. Josh Hawley and a bipartisan group led by Sen. Bernie Sanders, Sen. Jeff Merkley, and Rep. Alexandria Ocasio‑Cortez aims to limit automated license plate readers. The bills seek to regulate ALPR deployment and address privacy concerns raised by the technology.]]></description>
+      <pubDate>Fri, 02 Oct 2026 19:30:00 GMT</pubDate>
+      <source url="https://therecord.media/alpr-legislation-hawley-sanders-merkley-aoc">The Record</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Frontline Education Data Breach Exposes Employee SSNs</title>
+      <link>https://secubuzz.com/news/frontline-education-data-breach-exposes-employee-ssns</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/frontline-education-data-breach-exposes-employee-ssns</guid>
+      <description><![CDATA[Frontline Education notified school districts that attackers exploited a third‑party software vulnerability to access its systems. The breach resulted in the theft of employee data, including Social Security numbers. The company is investigating the incident and notifying affected parties.]]></description>
+      <pubDate>Fri, 02 Oct 2026 19:01:40 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/frontline-education-data-breach-impacts-school-district-employees/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Warlock Ransomware Targets Water Utility, Telecom, Government, and University via SharePoint</title>
+      <link>https://secubuzz.com/news/warlock-ransomware-targets-water-utility-telecom-government-</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/warlock-ransomware-targets-water-utility-telecom-government-</guid>
+      <description><![CDATA[The China‑linked Warlock ransomware group exploited SharePoint vulnerabilities to infiltrate a water utility, telecom provider, regional government, and university. Attackers gained initial access through compromised SharePoint sites, enabling further lateral movement and potential data exfiltration.]]></description>
+      <pubDate>Fri, 02 Oct 2026 18:33:01 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/warlock-ransomware-breach-sharepoint-in-water-telecom-operator-attacks/">BleepingComputer</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
+      <title>GitLab AI Gateway Flaw Allows Command Execution on Self‑Hosted Servers</title>
+      <link>https://secubuzz.com/news/gitlab-ai-gateway-flaw-allows-command-execution-on-self-host</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/gitlab-ai-gateway-flaw-allows-command-execution-on-self-host</guid>
+      <description><![CDATA[GitLab disclosed a critical flaw in its AI Gateway that permits a logged‑in user with Duo Agent Platform access to execute commands on the gateway under specific conditions. The issue is fixed in gateway versions 19.2.4, 19.3.2, and 19.4.1. Self‑hosted users should upgrade immediately.]]></description>
+      <pubDate>Fri, 02 Oct 2026 17:33:31 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/gitlab-patches-critical-self-hosted-ai.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Antino Backdoor Targets Asian Governments via Outlook and OneDrive</title>
+      <link>https://secubuzz.com/news/antino-backdoor-targets-asian-governments-via-outlook-and-on</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/antino-backdoor-targets-asian-governments-via-outlook-and-on</guid>
+      <description><![CDATA[A China‑linked threat actor deployed the undocumented Antino backdoor to infiltrate government and policy organizations across Asia, using Outlook and OneDrive for command and control. Cisco Talos tracks the activity, which has affected Taiwan, India, the Philippines, Cambodia, Pakistan, Thailand, and Myanmar.]]></description>
+      <pubDate>Fri, 02 Oct 2026 17:33:16 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/antino-backdoor-uses-outlook-and.html">The Hacker News</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Dell CSM Flaws Enable Unauthenticated Admin Access and Root on Kubernetes Nodes</title>
+      <link>https://secubuzz.com/news/dell-csm-flaws-enable-unauthenticated-admin-access-and-root-</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/dell-csm-flaws-enable-unauthenticated-admin-access-and-root-</guid>
+      <description><![CDATA[Dell released security updates for its Container Storage Modules to fix multiple critical flaws, including CVE-2026-63688. The vulnerability is a missing authentication in the csm-authorization-storage gRPC server, allowing attackers to gain unauthenticated admin access and root on Kubernetes nodes. Immediate patching is required.]]></description>
+      <pubDate>Fri, 02 Oct 2026 17:02:12 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/dell-csm-flaws-enable-unauthenticated.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Kiteworks and Citrix Highlight Zero‑Day Response Challenges</title>
+      <link>https://secubuzz.com/news/kiteworks-and-citrix-highlight-zero-day-response-challenges</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/kiteworks-and-citrix-highlight-zero-day-response-challenges</guid>
+      <description><![CDATA[Kiteworks advised customers to shut down its data‑protection platform for nine hours, while Citrix remained silent before issuing a patch. Both incidents underscore the difficulties organizations face when responding to zero‑day vulnerabilities and coordinating timely remediation.]]></description>
+      <pubDate>Fri, 02 Oct 2026 16:56:30 GMT</pubDate>
+      <source url="https://www.darkreading.com/cybersecurity-operations/kiteworks-citrix-incidents-challenges-zero-day-response">Dark Reading</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>SWIFT Banking &amp; Government Middleware Enables RCE</title>
+      <link>https://secubuzz.com/news/swift-banking-government-middleware-enables-rce</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/swift-banking-government-middleware-enables-rce</guid>
+      <description><![CDATA[A remote code execution flaw exists in SWIFT banking and government middleware, allowing attackers to exploit hardware-based multi‑factor authentication weaknesses in ultra‑sensitive environments. Patching the middleware vulnerabilities is essential to prevent potential exploitation.]]></description>
+      <pubDate>Fri, 02 Oct 2026 16:27:54 GMT</pubDate>
+      <source url="https://www.darkreading.com/cybersecurity-operations/swift-banking-govt-middleware-rce">Dark Reading</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Cloudflare Stream and Workers Enable Custom Video Pipelines</title>
       <link>https://secubuzz.com/news/cloudflare-stream-and-workers-enable-custom-video-pipelines</link>
@@ -44,30 +116,12 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>$15K iCloud Spoofing Bugs, AI Policy Experts Phished, Adblocker Spies on AI Chats</title>
-      <link>https://secubuzz.com/news/15k-icloud-spoofing-bugs-ai-policy-experts-phished-adblocker</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/15k-icloud-spoofing-bugs-ai-policy-experts-phished-adblocker</guid>
-      <description><![CDATA[SecurityWeek reports that iCloud spoofing bugs could cost users $15,000, AI policy experts were targeted by phishing attacks, and an adblocker extension was found spying on AI chat conversations. The roundup also notes Kiteworks patched over 100 vulnerabilities and Microsoft released its 2026 Digital Defense Report.]]></description>
-      <pubDate>Fri, 02 Oct 2026 14:30:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/in-other-news-15k-icloud-spoofing-bugs-ai-policy-experts-phished-adblocker-spies-on-ai-chats/">SecurityWeek</source>
-      <category>Cloud</category>
-    </item>
-    <item>
       <title>Mississippi Mayor Reports Ransomware Incident Shutting Down City Systems</title>
       <link>https://secubuzz.com/news/mississippi-mayor-reports-ransomware-incident-shutting-down-</link>
       <guid isPermaLink="true">https://secubuzz.com/news/mississippi-mayor-reports-ransomware-incident-shutting-down-</guid>
       <description><![CDATA[A ransomware attack disrupted government services in Vicksburg, Mississippi, forcing a temporary shutdown of city systems. Mayor Willis Thompson confirmed the incident and said the FBI and other authorities are investigating the breach.]]></description>
       <pubDate>Fri, 02 Oct 2026 14:06:00 GMT</pubDate>
       <source url="https://therecord.media/vicksburg-mississippi-government-ransomware-attack">The Record</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Warlock Ransomware Targets Critical Infrastructure via SharePoint Vulnerabilities</title>
-      <link>https://secubuzz.com/news/warlock-ransomware-targets-critical-infrastructure-via-share</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/warlock-ransomware-targets-critical-infrastructure-via-share</guid>
-      <description><![CDATA[Warlock ransomware has targeted critical infrastructure in Portuguese and Spanish-speaking countries, exploiting vulnerabilities in Microsoft SharePoint to gain access and encrypt data. The attacks leverage multiple SharePoint weaknesses, allowing the group to infiltrate systems and demand ransom. No specific CVE is cited, but the exploitation of SharePoint flaws enables the ransomware spread.]]></description>
-      <pubDate>Fri, 02 Oct 2026 14:05:00 GMT</pubDate>
-      <source url="https://therecord.media/warlock-ransomware-used-in-critical-infrastructure-attacks">The Record</source>
       <category>Ransomware</category>
     </item>
     <item>
@@ -170,15 +224,6 @@
       <category>Malware</category>
     </item>
     <item>
-      <title>Dell Urges Immediate Patch for Critical CSM Vulnerabilities</title>
-      <link>https://secubuzz.com/news/dell-urges-immediate-patch-for-critical-csm-vulnerabilities</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/dell-urges-immediate-patch-for-critical-csm-vulnerabilities</guid>
-      <description><![CDATA[Dell has released patches for two high‑severity vulnerabilities in its Container Storage Modules that link enterprise storage arrays to Kubernetes. The flaws could allow attackers to compromise storage systems if left unpatched. Admins are advised to apply the updates promptly to mitigate potential exploitation.]]></description>
-      <pubDate>Fri, 02 Oct 2026 12:37:40 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/new-max-severity-dell-csm-flaws-give-hackers-admin-privileges/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>OpenAI Terminates Three Safety Researchers Over Data Leak</title>
       <link>https://secubuzz.com/news/openai-terminates-three-safety-researchers-over-data-leak</link>
       <guid isPermaLink="true">https://secubuzz.com/news/openai-terminates-three-safety-researchers-over-data-leak</guid>
@@ -213,15 +258,6 @@
       <pubDate>Fri, 02 Oct 2026 11:14:34 GMT</pubDate>
       <source url="https://www.securityweek.com/in-rare-move-iranian-hacker-accused-of-working-for-irgc-extradited-to-us/">SecurityWeek</source>
       <category>Malware</category>
-    </item>
-    <item>
-      <title>FortiMail Zero‑Day Exploited in Wild (CVE‑2026‑104286)</title>
-      <link>https://secubuzz.com/news/fortimail-zero-day-exploited-in-wild-cve-2026-104286</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fortimail-zero-day-exploited-in-wild-cve-2026-104286</guid>
-      <description><![CDATA[Fortinet warned that attackers are exploiting CVE‑2026‑104286, a path‑traversal and NULL‑byte vulnerability in FortiMail email gateways, allowing unauthenticated remote code execution. The flaw is actively used in the wild; Fortinet recommends applying the provided workaround until a patch is released.]]></description>
-      <pubDate>Fri, 02 Oct 2026 08:50:59 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/02/fortinet-fortimail-vulnerability-cve-2026-104286/">Help Net Security</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>AI Agents Target US Department of Education and Library and Archives Canada with SQL Injection</title>
@@ -294,15 +330,6 @@
       <pubDate>Thu, 01 Oct 2026 21:37:50 GMT</pubDate>
       <source url="https://www.darkreading.com/cyberattacks-data-breaches/killsec-ransomware-mastermind-16-year-old">Dark Reading</source>
       <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Chinese Hacking Campaigns Target AI Firms and Asian Governments</title>
-      <link>https://secubuzz.com/news/chinese-hacking-campaigns-target-ai-firms-and-asian-governme</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chinese-hacking-campaigns-target-ai-firms-and-asian-governme</guid>
-      <description><![CDATA[Reports from cybersecurity firms detail China-linked hacking operations that include a phishing campaign impersonating Western experts. The attacks focus on AI companies and Asian government entities, aiming to steal sensitive data and intellectual property. No specific vulnerabilities or exploits are disclosed.]]></description>
-      <pubDate>Thu, 01 Oct 2026 18:16:00 GMT</pubDate>
-      <source url="https://therecord.media/china-linked-phishing-scheme-backdoor-taiwan">The Record</source>
-      <category>Malware</category>
     </item>
     <item>
       <title>Zero Trust Model Still Effective Against AI-Assisted Attacks</title>
@@ -429,33 +456,6 @@
       <pubDate>Thu, 01 Oct 2026 13:13:14 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/01/divd-agentic-ai-attack-breach/">Help Net Security</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Legit Security Adds Automated Fixes for Open‑Source Dependencies</title>
-      <link>https://secubuzz.com/news/legit-security-adds-automated-fixes-for-open-source-dependen</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/legit-security-adds-automated-fixes-for-open-source-dependen</guid>
-      <description><![CDATA[Legit Security expands its Agentic Remediation to automatically patch vulnerabilities in open‑source libraries, not just proprietary code. The update lets development teams move from detection to verified fixes without manual triage, addressing the growing risk from AI‑generated code and frequent dependency updates.]]></description>
-      <pubDate>Thu, 01 Oct 2026 13:04:31 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/01/legit-security-agentic-remediation-expansion/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>AI Search is now generally available</title>
-      <link>https://secubuzz.com/news/ai-search-is-now-generally-available</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-search-is-now-generally-available</guid>
-      <description><![CDATA[AI Search is now generally available, offering image pixel embedding for visual search, OCR on scanned PDFs, file uploads up to 10 MiB, and compatibility with any chat model. The service includes new features and a pricing model, enhancing AI-driven search capabilities for users.]]></description>
-      <pubDate>Thu, 01 Oct 2026 13:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/ai-search-ga/">Cloudflare Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Cloudflare OS Offers Managed Agent Workspaces</title>
-      <link>https://secubuzz.com/news/cloudflare-os-offers-managed-agent-workspaces</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-os-offers-managed-agent-workspaces</guid>
-      <description><![CDATA[Cloudflare OS provides every employee with a managed agent workspace that understands company workflows and connects to internal data and systems. The service is now available via a waitlist for fully managed deployments that can be launched with a few clicks.]]></description>
-      <pubDate>Thu, 01 Oct 2026 13:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/managed-cloudflare-os/">Cloudflare Security</source>
-      <category>Cloud</category>
     </item>
   </channel>
 </rss>

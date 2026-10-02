@@ -11,6 +11,104 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "bipartisan-bills-target-alpr-use",
+    "title": "Bipartisan Bills Target ALPR Use",
+    "summary": "Legislation introduced by Sen. Josh Hawley and a bipartisan group led by Sen. Bernie Sanders, Sen. Jeff Merkley, and Rep. Alexandria Ocasio‑Cortez aims to limit automated license plate readers. The bills seek to regulate ALPR deployment and address privacy concerns raised by the technology.",
+    "category": "Policy",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/alpr-legislation-hawley-sanders-merkley-aoc",
+    "publishedAt": "2026-10-02T19:30:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "frontline-education-data-breach-exposes-employee-ssns",
+    "title": "Frontline Education Data Breach Exposes Employee SSNs",
+    "summary": "Frontline Education notified school districts that attackers exploited a third‑party software vulnerability to access its systems. The breach resulted in the theft of employee data, including Social Security numbers. The company is investigating the incident and notifying affected parties.",
+    "category": "Breach",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/frontline-education-data-breach-impacts-school-district-employees/",
+    "publishedAt": "2026-10-02T19:01:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "warlock-ransomware-targets-water-utility-telecom-government-",
+    "title": "Warlock Ransomware Targets Water Utility, Telecom, Government, and University via SharePoint",
+    "summary": "The China‑linked Warlock ransomware group exploited SharePoint vulnerabilities to infiltrate a water utility, telecom provider, regional government, and university. Attackers gained initial access through compromised SharePoint sites, enabling further lateral movement and potential data exfiltration.",
+    "category": "Ransomware",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/warlock-ransomware-breach-sharepoint-in-water-telecom-operator-attacks/",
+    "publishedAt": "2026-10-02T18:33:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "gitlab-ai-gateway-flaw-allows-command-execution-on-self-host",
+    "title": "GitLab AI Gateway Flaw Allows Command Execution on Self‑Hosted Servers",
+    "summary": "GitLab disclosed a critical flaw in its AI Gateway that permits a logged‑in user with Duo Agent Platform access to execute commands on the gateway under specific conditions. The issue is fixed in gateway versions 19.2.4, 19.3.2, and 19.4.1. Self‑hosted users should upgrade immediately.",
+    "category": "Vulnerability",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/gitlab-patches-critical-self-hosted-ai.html",
+    "publishedAt": "2026-10-02T17:33:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "antino-backdoor-targets-asian-governments-via-outlook-and-on",
+    "title": "Antino Backdoor Targets Asian Governments via Outlook and OneDrive",
+    "summary": "A China‑linked threat actor deployed the undocumented Antino backdoor to infiltrate government and policy organizations across Asia, using Outlook and OneDrive for command and control. Cisco Talos tracks the activity, which has affected Taiwan, India, the Philippines, Cambodia, Pakistan, Thailand, and Myanmar.",
+    "category": "Malware",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/antino-backdoor-uses-outlook-and.html",
+    "publishedAt": "2026-10-02T17:33:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "dell-csm-flaws-enable-unauthenticated-admin-access-and-root-",
+    "title": "Dell CSM Flaws Enable Unauthenticated Admin Access and Root on Kubernetes Nodes",
+    "summary": "Dell released security updates for its Container Storage Modules to fix multiple critical flaws, including CVE-2026-63688. The vulnerability is a missing authentication in the csm-authorization-storage gRPC server, allowing attackers to gain unauthenticated admin access and root on Kubernetes nodes. Immediate patching is required.",
+    "category": "Vulnerability",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/dell-csm-flaws-enable-unauthenticated.html",
+    "publishedAt": "2026-10-02T17:02:12.000Z",
+    "cves": [
+      "CVE-2026-63688"
+    ],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "kiteworks-and-citrix-highlight-zero-day-response-challenges",
+    "title": "Kiteworks and Citrix Highlight Zero‑Day Response Challenges",
+    "summary": "Kiteworks advised customers to shut down its data‑protection platform for nine hours, while Citrix remained silent before issuing a patch. Both incidents underscore the difficulties organizations face when responding to zero‑day vulnerabilities and coordinating timely remediation.",
+    "category": "Vulnerability",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/kiteworks-citrix-incidents-challenges-zero-day-response",
+    "publishedAt": "2026-10-02T16:56:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "swift-banking-government-middleware-enables-rce",
+    "title": "SWIFT Banking & Government Middleware Enables RCE",
+    "summary": "A remote code execution flaw exists in SWIFT banking and government middleware, allowing attackers to exploit hardware-based multi‑factor authentication weaknesses in ultra‑sensitive environments. Patching the middleware vulnerabilities is essential to prevent potential exploitation.",
+    "category": "Vulnerability",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/swift-banking-govt-middleware-rce",
+    "publishedAt": "2026-10-02T16:27:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "cloudflare-stream-and-workers-enable-custom-video-pipelines",
     "title": "Cloudflare Stream and Workers Enable Custom Video Pipelines",
     "summary": "Cloudflare demonstrates how to build long-running, continuous video processing pipelines by pairing Cloudflare Workers and Durable Objects with a containerized media engine. The solution allows developers to create custom video workflows that run continuously and scale automatically.",
@@ -59,18 +157,6 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "15k-icloud-spoofing-bugs-ai-policy-experts-phished-adblocker",
-    "title": "$15K iCloud Spoofing Bugs, AI Policy Experts Phished, Adblocker Spies on AI Chats",
-    "summary": "SecurityWeek reports that iCloud spoofing bugs could cost users $15,000, AI policy experts were targeted by phishing attacks, and an adblocker extension was found spying on AI chat conversations. The roundup also notes Kiteworks patched over 100 vulnerabilities and Microsoft released its 2026 Digital Defense Report.",
-    "category": "Cloud",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/in-other-news-15k-icloud-spoofing-bugs-ai-policy-experts-phished-adblocker-spies-on-ai-chats/",
-    "publishedAt": "2026-10-02T14:30:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
     "slug": "mississippi-mayor-reports-ransomware-incident-shutting-down-",
     "title": "Mississippi Mayor Reports Ransomware Incident Shutting Down City Systems",
     "summary": "A ransomware attack disrupted government services in Vicksburg, Mississippi, forcing a temporary shutdown of city systems. Mayor Willis Thompson confirmed the incident and said the FBI and other authorities are investigating the breach.",
@@ -78,18 +164,6 @@ export const news: NewsBrief[] = [
     "source": "The Record",
     "sourceUrl": "https://therecord.media/vicksburg-mississippi-government-ransomware-attack",
     "publishedAt": "2026-10-02T14:06:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "warlock-ransomware-targets-critical-infrastructure-via-share",
-    "title": "Warlock Ransomware Targets Critical Infrastructure via SharePoint Vulnerabilities",
-    "summary": "Warlock ransomware has targeted critical infrastructure in Portuguese and Spanish-speaking countries, exploiting vulnerabilities in Microsoft SharePoint to gain access and encrypt data. The attacks leverage multiple SharePoint weaknesses, allowing the group to infiltrate systems and demand ransom. No specific CVE is cited, but the exploitation of SharePoint flaws enables the ransomware spread.",
-    "category": "Ransomware",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/warlock-ransomware-used-in-critical-infrastructure-attacks",
-    "publishedAt": "2026-10-02T14:05:00.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -227,18 +301,6 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "dell-urges-immediate-patch-for-critical-csm-vulnerabilities",
-    "title": "Dell Urges Immediate Patch for Critical CSM Vulnerabilities",
-    "summary": "Dell has released patches for two high‑severity vulnerabilities in its Container Storage Modules that link enterprise storage arrays to Kubernetes. The flaws could allow attackers to compromise storage systems if left unpatched. Admins are advised to apply the updates promptly to mitigate potential exploitation.",
-    "category": "Vulnerability",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-max-severity-dell-csm-flaws-give-hackers-admin-privileges/",
-    "publishedAt": "2026-10-02T12:37:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
     "slug": "openai-terminates-three-safety-researchers-over-data-leak",
     "title": "OpenAI Terminates Three Safety Researchers Over Data Leak",
     "summary": "OpenAI fired three safety team members after they leaked private company information, violating internal policies. The incident involved unauthorized access to sensitive data and prompted an internal investigation. No external breach was reported, but the leak highlights risks of insider data mishandling.",
@@ -282,18 +344,6 @@ export const news: NewsBrief[] = [
     "source": "SecurityWeek",
     "sourceUrl": "https://www.securityweek.com/in-rare-move-iranian-hacker-accused-of-working-for-irgc-extradited-to-us/",
     "publishedAt": "2026-10-02T11:14:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "fortimail-zero-day-exploited-in-wild-cve-2026-104286",
-    "title": "FortiMail Zero‑Day Exploited in Wild (CVE‑2026‑104286)",
-    "summary": "Fortinet warned that attackers are exploiting CVE‑2026‑104286, a path‑traversal and NULL‑byte vulnerability in FortiMail email gateways, allowing unauthenticated remote code execution. The flaw is actively used in the wild; Fortinet recommends applying the provided workaround until a patch is released.",
-    "category": "Vulnerability",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/02/fortinet-fortimail-vulnerability-cve-2026-104286/",
-    "publishedAt": "2026-10-02T08:50:59.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -390,18 +440,6 @@ export const news: NewsBrief[] = [
     "source": "Dark Reading",
     "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/killsec-ransomware-mastermind-16-year-old",
     "publishedAt": "2026-10-01T21:37:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "chinese-hacking-campaigns-target-ai-firms-and-asian-governme",
-    "title": "Chinese Hacking Campaigns Target AI Firms and Asian Governments",
-    "summary": "Reports from cybersecurity firms detail China-linked hacking operations that include a phishing campaign impersonating Western experts. The attacks focus on AI companies and Asian government entities, aiming to steal sensitive data and intellectual property. No specific vulnerabilities or exploits are disclosed.",
-    "category": "Malware",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/china-linked-phishing-scheme-backdoor-taiwan",
-    "publishedAt": "2026-10-01T18:16:00.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -621,18 +659,6 @@ export const news: NewsBrief[] = [
     "cves": [
       "CVE-2026-73570"
     ],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "polish-invoicing-platform-data-breach-exposes-customer-infor",
-    "title": "Polish invoicing platform data breach exposes customer information",
-    "summary": "A major Polish online invoicing platform suffered a data breach that may have exposed user data, customer details, and business partner information. The incident potentially compromised sensitive financial and personal data, raising concerns about the platform’s security controls and data protection practices.",
-    "category": "Breach",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/poland-cyberattack-invoice-software",
-    "publishedAt": "2026-10-01T12:30:00.000Z",
-    "cves": [],
     "additionalSources": [],
     "aliases": []
   },
@@ -860,18 +886,6 @@ export const news: NewsBrief[] = [
     "source": "CrowdStrike",
     "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-expands-federal-soc-modernization-via-cisa-siemaas/",
     "publishedAt": "2026-10-01T05:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "citrix-netscaler-pre-authentication-command-injection-enable",
-    "title": "Citrix NetScaler Pre-Authentication Command Injection Enables Web Shell Deployment",
-    "summary": "Threat actors exploited a pre-authentication command injection flaw in Citrix NetScaler ADC and Gateway, allowing them to drop web shells, create superuser accounts, and map shells to CSS‑like URLs. The attack enabled configuration data theft across multiple customer environments.",
-    "category": "Vulnerability",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/citrix-netscaler-post-exploitation.html",
-    "publishedAt": "2026-10-01T04:35:34.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []

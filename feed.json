@@ -1,5 +1,147 @@
 [
   {
+    "id": "https://therecord.media/alpr-legislation-hawley-sanders-merkley-aoc",
+    "sourceUrl": "https://therecord.media/alpr-legislation-hawley-sanders-merkley-aoc",
+    "title": "Bipartisan Bills Target ALPR Use",
+    "headline": "Bipartisan Bills Target ALPR Use",
+    "summary": "Legislation introduced by Sen. Josh Hawley and a bipartisan group led by Sen. Bernie Sanders, Sen. Jeff Merkley, and Rep. Alexandria Ocasio‑Cortez aims to limit automated license plate readers. The bills seek to regulate ALPR deployment and address privacy concerns raised by the technology.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Record",
+    "publishedAt": "2026-10-02T19:30:00.000Z",
+    "url": "https://therecord.media/alpr-legislation-hawley-sanders-merkley-aoc",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/frontline-education-data-breach-impacts-school-district-employees/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/frontline-education-data-breach-impacts-school-district-employees/",
+    "title": "Frontline Education Data Breach Exposes Employee SSNs",
+    "headline": "Frontline Education Data Breach Exposes Employee SSNs",
+    "summary": "Frontline Education notified school districts that attackers exploited a third‑party software vulnerability to access its systems. The breach resulted in the theft of employee data, including Social Security numbers. The company is investigating the incident and notifying affected parties.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-02T19:01:40.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/frontline-education-data-breach-impacts-school-district-employees/",
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/poland-cyberattack-invoice-software"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/warlock-ransomware-breach-sharepoint-in-water-telecom-operator-attacks/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/warlock-ransomware-breach-sharepoint-in-water-telecom-operator-attacks/",
+    "title": "Warlock Ransomware Targets Water Utility, Telecom, Government, and University via SharePoint",
+    "headline": "Warlock Ransomware Targets Water Utility, Telecom, Government, and University via SharePoint",
+    "summary": "The China‑linked Warlock ransomware group exploited SharePoint vulnerabilities to infiltrate a water utility, telecom provider, regional government, and university. Attackers gained initial access through compromised SharePoint sites, enabling further lateral movement and potential data exfiltration.",
+    "category": "RANSOMWARE",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-02T18:33:01.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/warlock-ransomware-breach-sharepoint-in-water-telecom-operator-attacks/",
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/warlock-ransomware-used-in-critical-infrastructure-attacks"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/gitlab-patches-critical-self-hosted-ai.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/gitlab-patches-critical-self-hosted-ai.html",
+    "title": "GitLab AI Gateway Flaw Allows Command Execution on Self‑Hosted Servers",
+    "headline": "GitLab AI Gateway Flaw Allows Command Execution on Self‑Hosted Servers",
+    "summary": "GitLab disclosed a critical flaw in its AI Gateway that permits a logged‑in user with Duo Agent Platform access to execute commands on the gateway under specific conditions. The issue is fixed in gateway versions 19.2.4, 19.3.2, and 19.4.1. Self‑hosted users should upgrade immediately.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-02T17:33:31.000Z",
+    "url": "https://thehackernews.com/2026/10/gitlab-patches-critical-self-hosted-ai.html",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/gitlab-warns-of-critical-rce-vulnerability-in-ai-gateway-service/"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/antino-backdoor-uses-outlook-and.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/antino-backdoor-uses-outlook-and.html",
+    "title": "Antino Backdoor Targets Asian Governments via Outlook and OneDrive",
+    "headline": "Antino Backdoor Targets Asian Governments via Outlook and OneDrive",
+    "summary": "A China‑linked threat actor deployed the undocumented Antino backdoor to infiltrate government and policy organizations across Asia, using Outlook and OneDrive for command and control. Cisco Talos tracks the activity, which has affected Taiwan, India, the Philippines, Cambodia, Pakistan, Thailand, and Myanmar.",
+    "category": "NATION_STATE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-02T17:33:16.000Z",
+    "url": "https://thehackernews.com/2026/10/antino-backdoor-uses-outlook-and.html",
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/china-linked-phishing-scheme-backdoor-taiwan"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/dell-csm-flaws-enable-unauthenticated.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/dell-csm-flaws-enable-unauthenticated.html",
+    "title": "Dell CSM Flaws Enable Unauthenticated Admin Access and Root on Kubernetes Nodes",
+    "headline": "Dell CSM Flaws Enable Unauthenticated Admin Access and Root on Kubernetes Nodes",
+    "summary": "Dell released security updates for its Container Storage Modules to fix multiple critical flaws, including CVE-2026-63688. The vulnerability is a missing authentication in the csm-authorization-storage gRPC server, allowing attackers to gain unauthenticated admin access and root on Kubernetes nodes. Immediate patching is required.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-02T17:02:12.000Z",
+    "url": "https://thehackernews.com/2026/10/dell-csm-flaws-enable-unauthenticated.html",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-max-severity-dell-csm-flaws-give-hackers-admin-privileges/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.darkreading.com/cybersecurity-operations/kiteworks-citrix-incidents-challenges-zero-day-response",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/kiteworks-citrix-incidents-challenges-zero-day-response",
+    "title": "Kiteworks and Citrix Highlight Zero‑Day Response Challenges",
+    "headline": "Kiteworks and Citrix Highlight Zero‑Day Response Challenges",
+    "summary": "Kiteworks advised customers to shut down its data‑protection platform for nine hours, while Citrix remained silent before issuing a patch. Both incidents underscore the difficulties organizations face when responding to zero‑day vulnerabilities and coordinating timely remediation.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-02T16:56:30.000Z",
+    "url": "https://www.darkreading.com/cybersecurity-operations/kiteworks-citrix-incidents-challenges-zero-day-response",
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/in-other-news-15k-icloud-spoofing-bugs-ai-policy-experts-phished-adblocker-spies-on-ai-chats/"
+      },
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/02/fortinet-fortimail-vulnerability-cve-2026-104286/"
+      },
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/citrix-netscaler-post-exploitation.html"
+      }
+    ]
+  },
+  {
+    "id": "https://www.darkreading.com/cybersecurity-operations/swift-banking-govt-middleware-rce",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/swift-banking-govt-middleware-rce",
+    "title": "SWIFT Banking & Government Middleware Enables RCE",
+    "headline": "SWIFT Banking & Government Middleware Enables RCE",
+    "summary": "A remote code execution flaw exists in SWIFT banking and government middleware, allowing attackers to exploit hardware-based multi‑factor authentication weaknesses in ultra‑sensitive environments. Patching the middleware vulnerabilities is essential to prevent potential exploitation.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-02T16:27:54.000Z",
+    "url": "https://www.darkreading.com/cybersecurity-operations/swift-banking-govt-middleware-rce",
+    "additionalSources": []
+  },
+  {
     "id": "https://blog.cloudflare.com/streamline/",
     "sourceUrl": "https://blog.cloudflare.com/streamline/",
     "title": "Cloudflare Stream and Workers Enable Custom Video Pipelines",
@@ -57,28 +199,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.securityweek.com/in-other-news-15k-icloud-spoofing-bugs-ai-policy-experts-phished-adblocker-spies-on-ai-chats/",
-    "sourceUrl": "https://www.securityweek.com/in-other-news-15k-icloud-spoofing-bugs-ai-policy-experts-phished-adblocker-spies-on-ai-chats/",
-    "title": "$15K iCloud Spoofing Bugs, AI Policy Experts Phished, Adblocker Spies on AI Chats",
-    "headline": "$15K iCloud Spoofing Bugs, AI Policy Experts Phished, Adblocker Spies on AI Chats",
-    "summary": "SecurityWeek reports that iCloud spoofing bugs could cost users $15,000, AI policy experts were targeted by phishing attacks, and an adblocker extension was found spying on AI chat conversations. The roundup also notes Kiteworks patched over 100 vulnerabilities and Microsoft released its 2026 Digital Defense Report.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-02T14:30:00.000Z",
-    "url": "https://www.securityweek.com/in-other-news-15k-icloud-spoofing-bugs-ai-policy-experts-phished-adblocker-spies-on-ai-chats/",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/02/china-aligned-ta419-phishing-ai-policy-experts/"
-      },
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/kiteworks-patches-max-severity-email-protection-gateway-code-injection-vulnerability/"
-      }
-    ]
-  },
-  {
     "id": "https://therecord.media/vicksburg-mississippi-government-ransomware-attack",
     "sourceUrl": "https://therecord.media/vicksburg-mississippi-government-ransomware-attack",
     "title": "Mississippi Mayor Reports Ransomware Incident Shutting Down City Systems",
@@ -93,24 +213,6 @@
       {
         "source": "BleepingComputer",
         "sourceUrl": "https://www.bleepingcomputer.com/news/security/metamask-discloses-security-incident-affecting-its-infrastructure/"
-      }
-    ]
-  },
-  {
-    "id": "https://therecord.media/warlock-ransomware-used-in-critical-infrastructure-attacks",
-    "sourceUrl": "https://therecord.media/warlock-ransomware-used-in-critical-infrastructure-attacks",
-    "title": "Warlock Ransomware Targets Critical Infrastructure via SharePoint Vulnerabilities",
-    "headline": "Warlock Ransomware Targets Critical Infrastructure via SharePoint Vulnerabilities",
-    "summary": "Warlock ransomware has targeted critical infrastructure in Portuguese and Spanish-speaking countries, exploiting vulnerabilities in Microsoft SharePoint to gain access and encrypt data. The attacks leverage multiple SharePoint weaknesses, allowing the group to infiltrate systems and demand ransom. No specific CVE is cited, but the exploitation of SharePoint flaws enables the ransomware spread.",
-    "category": "RANSOMWARE",
-    "severity": "HIGH",
-    "source": "The Record",
-    "publishedAt": "2026-10-02T14:05:00.000Z",
-    "url": "https://therecord.media/warlock-ransomware-used-in-critical-infrastructure-attacks",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/warlock-expands-sharepoint-exploitation-in-critical-infrastructure-attacks/"
       }
     ]
   },
@@ -278,24 +380,6 @@
     ]
   },
   {
-    "id": "https://www.bleepingcomputer.com/news/security/new-max-severity-dell-csm-flaws-give-hackers-admin-privileges/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-max-severity-dell-csm-flaws-give-hackers-admin-privileges/",
-    "title": "Dell Urges Immediate Patch for Critical CSM Vulnerabilities",
-    "headline": "Dell Urges Immediate Patch for Critical CSM Vulnerabilities",
-    "summary": "Dell has released patches for two high‑severity vulnerabilities in its Container Storage Modules that link enterprise storage arrays to Kubernetes. The flaws could allow attackers to compromise storage systems if left unpatched. Admins are advised to apply the updates promptly to mitigate potential exploitation.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-02T12:37:40.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/new-max-severity-dell-csm-flaws-give-hackers-admin-privileges/",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/teamviewer-urges-users-to-patch-severe-flaws-as-soon-as-possible/"
-      }
-    ]
-  },
-  {
     "id": "https://thehackernews.com/2026/10/openai-parts-ways-with-three-safety.html",
     "sourceUrl": "https://thehackernews.com/2026/10/openai-parts-ways-with-three-safety.html",
     "title": "OpenAI Terminates Three Safety Researchers Over Data Leak",
@@ -359,24 +443,6 @@
       {
         "source": "The Record",
         "sourceUrl": "https://therecord.media/iran-montenegro-hacker-extradition"
-      }
-    ]
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/02/fortinet-fortimail-vulnerability-cve-2026-104286/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/02/fortinet-fortimail-vulnerability-cve-2026-104286/",
-    "title": "FortiMail Zero‑Day Exploited in Wild (CVE‑2026‑104286)",
-    "headline": "FortiMail Zero‑Day Exploited in Wild (CVE‑2026‑104286)",
-    "summary": "Fortinet warned that attackers are exploiting CVE‑2026‑104286, a path‑traversal and NULL‑byte vulnerability in FortiMail email gateways, allowing unauthenticated remote code execution. The flaw is actively used in the wild; Fortinet recommends applying the provided workaround until a patch is released.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-02T08:50:59.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/02/fortinet-fortimail-vulnerability-cve-2026-104286/",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/exploited-fortinet-fortimail-zero-day-calls-for-urgent-action/"
       }
     ]
   },
@@ -491,24 +557,6 @@
       {
         "source": "The Hacker News",
         "sourceUrl": "https://thehackernews.com/2026/10/police-arrest-16-year-old-suspected-of.html"
-      }
-    ]
-  },
-  {
-    "id": "https://therecord.media/china-linked-phishing-scheme-backdoor-taiwan",
-    "sourceUrl": "https://therecord.media/china-linked-phishing-scheme-backdoor-taiwan",
-    "title": "Chinese Hacking Campaigns Target AI Firms and Asian Governments",
-    "headline": "Chinese Hacking Campaigns Target AI Firms and Asian Governments",
-    "summary": "Reports from cybersecurity firms detail China-linked hacking operations that include a phishing campaign impersonating Western experts. The attacks focus on AI companies and Asian government entities, aiming to steal sensitive data and intellectual property. No specific vulnerabilities or exploits are disclosed.",
-    "category": "NATION_STATE",
-    "severity": "HIGH",
-    "source": "The Record",
-    "publishedAt": "2026-10-01T18:16:00.000Z",
-    "url": "https://therecord.media/china-linked-phishing-scheme-backdoor-taiwan",
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/china-uat-11587-antino-backdoor-espionage"
       }
     ]
   },
@@ -787,28 +835,6 @@
       {
         "source": "The Hacker News",
         "sourceUrl": "https://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
-      }
-    ]
-  },
-  {
-    "id": "https://therecord.media/poland-cyberattack-invoice-software",
-    "sourceUrl": "https://therecord.media/poland-cyberattack-invoice-software",
-    "title": "Polish invoicing platform data breach exposes customer information",
-    "headline": "Polish invoicing platform data breach exposes customer information",
-    "summary": "A major Polish online invoicing platform suffered a data breach that may have exposed user data, customer details, and business partner information. The incident potentially compromised sensitive financial and personal data, raising concerns about the platform’s security controls and data protection practices.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "The Record",
-    "publishedAt": "2026-10-01T12:30:00.000Z",
-    "url": "https://therecord.media/poland-cyberattack-invoice-software",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/qbusoft-medyc-data-breach-poland/"
-      },
-      {
-        "source": "CISA",
-        "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-04"
       }
     ]
   },
@@ -1098,24 +1124,6 @@
     "publishedAt": "2026-10-01T05:00:00.000Z",
     "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-expands-federal-soc-modernization-via-cisa-siemaas/",
     "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/citrix-netscaler-post-exploitation.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/citrix-netscaler-post-exploitation.html",
-    "title": "Citrix NetScaler Pre-Authentication Command Injection Enables Web Shell Deployment",
-    "headline": "Citrix NetScaler Pre-Authentication Command Injection Enables Web Shell Deployment",
-    "summary": "Threat actors exploited a pre-authentication command injection flaw in Citrix NetScaler ADC and Gateway, allowing them to drop web shells, create superuser accounts, and map shells to CSS‑like URLs. The attack enabled configuration data theft across multiple customer environments.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-01T04:35:34.000Z",
-    "url": "https://thehackernews.com/2026/10/citrix-netscaler-post-exploitation.html",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/government-finance-orgs-targeted-in-weeks-long-netscaler-zero-day-attacks/"
-      }
-    ]
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/10/01/employment-scam-victims-research/",
