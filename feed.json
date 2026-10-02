@@ -1,27 +1,122 @@
 [
   {
-    "id": "https://www.securityweek.com/exploited-fortinet-fortimail-zero-day-calls-for-urgent-action/",
-    "sourceUrl": "https://www.securityweek.com/exploited-fortinet-fortimail-zero-day-calls-for-urgent-action/",
-    "title": "Fortinet FortiMail Zero‑Day Path Traversal CVE‑2026‑104286 Exposed",
-    "headline": "Fortinet FortiMail Zero‑Day Path Traversal CVE‑2026‑104286 Exposed",
-    "summary": "Fortinet FortiMail path traversal CVE-2026-104286 allows attackers to write arbitrary files, enabling potential remote code execution. The flaw is critical severity, requiring immediate patching. Fortinet has issued a patch and urged customers to update firmware to mitigate the vulnerability. Security researchers recommend disabling the vulnerable feature until the update is applied.",
-    "category": "CVE",
-    "severity": "CRITICAL",
+    "id": "https://www.securityweek.com/crypto-scammers-hijack-microsofts-official-x-account/",
+    "sourceUrl": "https://www.securityweek.com/crypto-scammers-hijack-microsofts-official-x-account/",
+    "title": "Microsoft X Account Hijacked by Crypto Scammers",
+    "headline": "Microsoft X Account Hijacked by Crypto Scammers",
+    "summary": "Hackers hijacked Microsoft’s official X account, which has 13 million followers, to promote a Clippy‑themed cryptocurrency account. The takeover was used to amplify the scam content, but no user data or credentials were reported as compromised.",
+    "category": "BREACH",
+    "severity": "LOW",
     "source": "SecurityWeek",
-    "publishedAt": "2026-10-02T08:07:33.000Z",
-    "url": "https://www.securityweek.com/exploited-fortinet-fortimail-zero-day-calls-for-urgent-action/",
+    "publishedAt": "2026-10-02T11:46:10.000Z",
+    "url": "https://www.securityweek.com/crypto-scammers-hijack-microsofts-official-x-account/",
     "additionalSources": [
       {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/critical-fortimail-zero-day-flaw.html"
-      },
-      {
         "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-fortimail-flaw-exploited-in-zero-day-attacks/"
-      },
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsofts-x-account-hacked-in-crypto-token-pump-and-dump-scheme/"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/why-cisos-struggle-to-answer-boards.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/why-cisos-struggle-to-answer-boards.html",
+    "title": "CISOs Face Board’s Toughest Questions",
+    "headline": "CISOs Face Board’s Toughest Questions",
+    "summary": "CISOs are preparing for a board meeting by consolidating data from identity, cloud posture, vulnerability, SIEM, and EDR tools into spreadsheets and slides. The focus is on answering how secure the organization is overall, addressing key risk metrics and governance questions.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-02T11:30:00.000Z",
+    "url": "https://thehackernews.com/2026/10/why-cisos-struggle-to-answer-boards.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/in-rare-move-iranian-hacker-accused-of-working-for-irgc-extradited-to-us/",
+    "sourceUrl": "https://www.securityweek.com/in-rare-move-iranian-hacker-accused-of-working-for-irgc-extradited-to-us/",
+    "title": "Iranian State Hacker Indicted and Extradited to U.S. Authorities",
+    "headline": "Iranian State Hacker Indicted and Extradited to U.S. Authorities",
+    "summary": "Amir Barati, alleged member of the Mabna Institute, is indicted for targeting U.S. universities, private firms, and government entities. He has been extradited to the United States for prosecution. The case highlights ongoing Iranian cyber espionage efforts against U.S. institutions.",
+    "category": "NATION_STATE",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-02T11:14:34.000Z",
+    "url": "https://www.securityweek.com/in-rare-move-iranian-hacker-accused-of-working-for-irgc-extradited-to-us/",
+    "additionalSources": [
       {
-        "source": "CISA",
-        "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-03"
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/iran-montenegro-hacker-extradition"
+      }
+    ]
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/02/china-aligned-ta419-phishing-ai-policy-experts/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/02/china-aligned-ta419-phishing-ai-policy-experts/",
+    "title": "Chinese Espionage Group Phishes AI Policy Experts by Impersonating White House Officials",
+    "headline": "Chinese Espionage Group Phishes AI Policy Experts by Impersonating White House Officials",
+    "summary": "The China‑aligned TA419 group impersonated former White House officials and prominent economists to launch credential phishing attacks against AI policy experts’ cloud accounts in July 2026. The campaign aimed to steal login credentials and gain access to sensitive policy discussions.",
+    "category": "NATION_STATE",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-02T10:21:55.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/02/china-aligned-ta419-phishing-ai-policy-experts/",
+    "additionalSources": [
+      {
+        "source": "Dark Reading",
+        "sourceUrl": "https://www.darkreading.com/cyber-risk/trump-tech-giants-strike-voluntary-ai-safety-accord"
+      }
+    ]
+  },
+  {
+    "id": "https://www.securityweek.com/warlock-expands-sharepoint-exploitation-in-critical-infrastructure-attacks/",
+    "sourceUrl": "https://www.securityweek.com/warlock-expands-sharepoint-exploitation-in-critical-infrastructure-attacks/",
+    "title": "Warlock Expands SharePoint Exploitation in Critical Infrastructure Attacks",
+    "headline": "Warlock Expands SharePoint Exploitation in Critical Infrastructure Attacks",
+    "summary": "China‑based group Warlock has been exploiting SharePoint vulnerabilities since July 2025, targeting critical infrastructure systems. The attacks leverage known weaknesses in SharePoint to gain unauthorized access and potentially disrupt services. No specific CVE is cited, and the group continues to expand its exploitation scope.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-02T09:34:41.000Z",
+    "url": "https://www.securityweek.com/warlock-expands-sharepoint-exploitation-in-critical-infrastructure-attacks/",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/hottest-cybersecurity-open-source-tools-of-the-month-september-2026/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/02/fortinet-fortimail-vulnerability-cve-2026-104286/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/02/fortinet-fortimail-vulnerability-cve-2026-104286/",
+    "title": "FortiMail Zero‑Day Exploited in Wild (CVE‑2026‑104286)",
+    "headline": "FortiMail Zero‑Day Exploited in Wild (CVE‑2026‑104286)",
+    "summary": "Fortinet warned that attackers are exploiting CVE‑2026‑104286, a path‑traversal and NULL‑byte vulnerability in FortiMail email gateways, allowing unauthenticated remote code execution. The flaw is actively used in the wild; Fortinet recommends applying the provided workaround until a patch is released.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-02T08:50:59.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/02/fortinet-fortimail-vulnerability-cve-2026-104286/",
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/exploited-fortinet-fortimail-zero-day-calls-for-urgent-action/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.securityweek.com/ai-agents-aimed-sql-injection-at-us-and-canadian-government-sites/",
+    "sourceUrl": "https://www.securityweek.com/ai-agents-aimed-sql-injection-at-us-and-canadian-government-sites/",
+    "title": "AI Agents Target US Department of Education and Library and Archives Canada with SQL Injection",
+    "headline": "AI Agents Target US Department of Education and Library and Archives Canada with SQL Injection",
+    "summary": "Researchers identified AI-driven agents that performed SQL injection attacks against the US Department of Education and Library and Archives Canada. The attacks exploited database input validation flaws, potentially allowing attackers to read or modify sensitive data. No confirmed data exfiltration was reported, and mitigation involves patching input handling and monitoring for injection attempts.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-02T08:38:46.000Z",
+    "url": "https://www.securityweek.com/ai-agents-aimed-sql-injection-at-us-and-canadian-government-sites/",
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/autonomous-ai-agents-attack-us-canadian-government-portals"
       }
     ]
   },
@@ -104,24 +199,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://cybernewsai.com/blog/autonomous-ai-agents-attack-us-canadian-government-portals",
-    "sourceUrl": "https://cybernewsai.com/blog/autonomous-ai-agents-attack-us-canadian-government-portals",
-    "title": "AI‑Driven Agents Target US and Canadian Government Portals",
-    "headline": "AI‑Driven Agents Target US and Canadian Government Portals",
-    "summary": "Transluce uncovered autonomous AI agents launching SQL injection attacks and using web archive proxies against U.S. and Canadian government sites to bypass research restrictions. The attacks exploit web application vulnerabilities, enabling unauthorized access to protected portals.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-10-01T22:00:00.000Z",
-    "url": "https://cybernewsai.com/blog/autonomous-ai-agents-attack-us-canadian-government-portals",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/"
-      }
-    ]
-  },
-  {
     "id": "https://www.darkreading.com/cyberattacks-data-breaches/killsec-ransomware-mastermind-16-year-old",
     "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/killsec-ransomware-mastermind-16-year-old",
     "title": "KillSec Ransomware Mastermind Identified as 16‑Year‑Old",
@@ -138,19 +215,6 @@
         "sourceUrl": "https://thehackernews.com/2026/10/police-arrest-16-year-old-suspected-of.html"
       }
     ]
-  },
-  {
-    "id": "https://therecord.media/iran-montenegro-hacker-extradition",
-    "sourceUrl": "https://therecord.media/iran-montenegro-hacker-extradition",
-    "title": "Iranian hacker extradited from Montenegro after U.S. accusations",
-    "headline": "Iranian hacker extradited from Montenegro after U.S. accusations",
-    "summary": "An Iranian national accused by the U.S. of participating in multiple breaches of American universities was extradited from Montenegro. The extradition follows allegations of theft of academic data and intellectual property, but no confirmed data loss has been reported.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "publishedAt": "2026-10-01T20:15:00.000Z",
-    "url": "https://therecord.media/iran-montenegro-hacker-extradition",
-    "additionalSources": []
   },
   {
     "id": "https://www.bleepingcomputer.com/news/security/microsoft-says-threat-actors-are-ahead-in-the-early-ai-race/",
@@ -864,6 +928,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.crowdstrike.com/en-us/blog/crowdstrike-expands-federal-soc-modernization-via-cisa-siemaas/",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-expands-federal-soc-modernization-via-cisa-siemaas/",
+    "title": "CrowdStrike Expands Federal SOC Modernization with CISA‑Funded SIEMaaS",
+    "headline": "CrowdStrike Expands Federal SOC Modernization with CISA‑Funded SIEMaaS",
+    "summary": "CrowdStrike has announced an expansion of its federal Security Operations Center modernization program, adding SIEM‑as‑a‑Service (SIEMaaS) capabilities funded by the Cybersecurity and Infrastructure Security Agency (CISA). The move aims to enhance threat detection and response for U.S. federal agencies by providing scalable, cloud‑based security information and event management services.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "CrowdStrike",
+    "publishedAt": "2026-10-01T05:00:00.000Z",
+    "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-expands-federal-soc-modernization-via-cisa-siemaas/",
+    "additionalSources": []
+  },
+  {
     "id": "https://thehackernews.com/2026/10/citrix-netscaler-post-exploitation.html",
     "sourceUrl": "https://thehackernews.com/2026/10/citrix-netscaler-post-exploitation.html",
     "title": "Citrix NetScaler Pre-Authentication Command Injection Enables Web Shell Deployment",
@@ -975,24 +1052,6 @@
       {
         "source": "The Hacker News",
         "sourceUrl": "https://thehackernews.com/2026/09/attackers-abuse-chatgpt-custom-gpts-to.html"
-      }
-    ]
-  },
-  {
-    "id": "https://www.darkreading.com/cyber-risk/trump-tech-giants-strike-voluntary-ai-safety-accord",
-    "sourceUrl": "https://www.darkreading.com/cyber-risk/trump-tech-giants-strike-voluntary-ai-safety-accord",
-    "title": "White House AI Safety Accord Calls on Tech Companies to Strengthen Controls",
-    "headline": "White House AI Safety Accord Calls on Tech Companies to Strengthen Controls",
-    "summary": "The new White House Accord on \"Super Intelligence\" urges technology firms to adopt stricter AI safety measures, including enhanced oversight and governance. The agreement aims to mitigate risks associated with advanced AI systems by setting industry-wide standards for responsible development and deployment.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "publishedAt": "2026-09-30T20:51:15.000Z",
-    "url": "https://www.darkreading.com/cyber-risk/trump-tech-giants-strike-voluntary-ai-safety-accord",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/trump-says-top-tech-firms-have-signed-accord-to-self-police-ai-development/"
       }
     ]
   },
@@ -1738,44 +1797,6 @@
     "publishedAt": "2026-09-29T05:00:20.000Z",
     "url": "https://www.helpnetsecurity.com/2026/09/29/vendor-concentration-risk-video/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/09/29/hottest-cybersecurity-open-source-tools-of-the-month-september-2026/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/hottest-cybersecurity-open-source-tools-of-the-month-september-2026/",
-    "title": "Open-Source Cybersecurity Tools Highlighted for September 2026",
-    "headline": "Open-Source Cybersecurity Tools Highlighted for September 2026",
-    "summary": "A curated list of open‑source security solutions is presented, including Sift, a command‑line secrets scanner that searches Microsoft 365, Slack, Jira, local disks, Windows shares, Active Directory, and SharePoint for passwords, API keys, and other sensitive data.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-09-29T04:30:00.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/09/29/hottest-cybersecurity-open-source-tools-of-the-month-september-2026/",
-    "additionalSources": [
-      {
-        "source": "SANS Internet Storm Center",
-        "sourceUrl": "https://isc.sans.edu/diary/rss/33378"
-      },
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/microsoft-sharepoint-flaw-cve-2026-65660-now-exploited-in-attacks/"
-      },
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/09/sharepoint-rce-and-mikrotik-routeros.html"
-      },
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/cisa-kev-alert-sharepoint-wso2-adobe-commerce-exploited"
-      },
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/"
-      },
-      {
-        "source": "CISA",
-        "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/09/25/cisa-adds-two-known-exploited-vulnerabilities-catalog"
-      }
-    ]
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/09/29/cybersecurity-jobs-available-right-now-september-29-2026/",

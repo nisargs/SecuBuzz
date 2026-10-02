@@ -5,15 +5,69 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Oct 2026 08:20:02 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 12:20:01 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Fortinet FortiMail Zero‑Day Path Traversal CVE‑2026‑104286 Exposed</title>
-      <link>https://secubuzz.com/news/fortinet-fortimail-zero-day-path-traversal-cve-2026-104286-e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fortinet-fortimail-zero-day-path-traversal-cve-2026-104286-e</guid>
-      <description><![CDATA[Fortinet FortiMail path traversal CVE-2026-104286 allows attackers to write arbitrary files, enabling potential remote code execution. The flaw is critical severity, requiring immediate patching. Fortinet has issued a patch and urged customers to update firmware to mitigate the vulnerability. Security researchers recommend disabling the vulnerable feature until the update is applied.]]></description>
-      <pubDate>Fri, 02 Oct 2026 08:07:33 GMT</pubDate>
-      <source url="https://www.securityweek.com/exploited-fortinet-fortimail-zero-day-calls-for-urgent-action/">SecurityWeek</source>
+      <title>Microsoft X Account Hijacked by Crypto Scammers</title>
+      <link>https://secubuzz.com/news/microsoft-x-account-hijacked-by-crypto-scammers</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-x-account-hijacked-by-crypto-scammers</guid>
+      <description><![CDATA[Hackers hijacked Microsoft’s official X account, which has 13 million followers, to promote a Clippy‑themed cryptocurrency account. The takeover was used to amplify the scam content, but no user data or credentials were reported as compromised.]]></description>
+      <pubDate>Fri, 02 Oct 2026 11:46:10 GMT</pubDate>
+      <source url="https://www.securityweek.com/crypto-scammers-hijack-microsofts-official-x-account/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>CISOs Face Board’s Toughest Questions</title>
+      <link>https://secubuzz.com/news/cisos-face-board-s-toughest-questions</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisos-face-board-s-toughest-questions</guid>
+      <description><![CDATA[CISOs are preparing for a board meeting by consolidating data from identity, cloud posture, vulnerability, SIEM, and EDR tools into spreadsheets and slides. The focus is on answering how secure the organization is overall, addressing key risk metrics and governance questions.]]></description>
+      <pubDate>Fri, 02 Oct 2026 11:30:00 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/why-cisos-struggle-to-answer-boards.html">The Hacker News</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Iranian State Hacker Indicted and Extradited to U.S. Authorities</title>
+      <link>https://secubuzz.com/news/iranian-state-hacker-indicted-and-extradited-to-u-s-authorit</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/iranian-state-hacker-indicted-and-extradited-to-u-s-authorit</guid>
+      <description><![CDATA[Amir Barati, alleged member of the Mabna Institute, is indicted for targeting U.S. universities, private firms, and government entities. He has been extradited to the United States for prosecution. The case highlights ongoing Iranian cyber espionage efforts against U.S. institutions.]]></description>
+      <pubDate>Fri, 02 Oct 2026 11:14:34 GMT</pubDate>
+      <source url="https://www.securityweek.com/in-rare-move-iranian-hacker-accused-of-working-for-irgc-extradited-to-us/">SecurityWeek</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Chinese Espionage Group Phishes AI Policy Experts by Impersonating White House Officials</title>
+      <link>https://secubuzz.com/news/chinese-espionage-group-phishes-ai-policy-experts-by-imperso</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chinese-espionage-group-phishes-ai-policy-experts-by-imperso</guid>
+      <description><![CDATA[The China‑aligned TA419 group impersonated former White House officials and prominent economists to launch credential phishing attacks against AI policy experts’ cloud accounts in July 2026. The campaign aimed to steal login credentials and gain access to sensitive policy discussions.]]></description>
+      <pubDate>Fri, 02 Oct 2026 10:21:55 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/02/china-aligned-ta419-phishing-ai-policy-experts/">Help Net Security</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Warlock Expands SharePoint Exploitation in Critical Infrastructure Attacks</title>
+      <link>https://secubuzz.com/news/warlock-expands-sharepoint-exploitation-in-critical-infrastr</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/warlock-expands-sharepoint-exploitation-in-critical-infrastr</guid>
+      <description><![CDATA[China‑based group Warlock has been exploiting SharePoint vulnerabilities since July 2025, targeting critical infrastructure systems. The attacks leverage known weaknesses in SharePoint to gain unauthorized access and potentially disrupt services. No specific CVE is cited, and the group continues to expand its exploitation scope.]]></description>
+      <pubDate>Fri, 02 Oct 2026 09:34:41 GMT</pubDate>
+      <source url="https://www.securityweek.com/warlock-expands-sharepoint-exploitation-in-critical-infrastructure-attacks/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>FortiMail Zero‑Day Exploited in Wild (CVE‑2026‑104286)</title>
+      <link>https://secubuzz.com/news/fortimail-zero-day-exploited-in-wild-cve-2026-104286</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fortimail-zero-day-exploited-in-wild-cve-2026-104286</guid>
+      <description><![CDATA[Fortinet warned that attackers are exploiting CVE‑2026‑104286, a path‑traversal and NULL‑byte vulnerability in FortiMail email gateways, allowing unauthenticated remote code execution. The flaw is actively used in the wild; Fortinet recommends applying the provided workaround until a patch is released.]]></description>
+      <pubDate>Fri, 02 Oct 2026 08:50:59 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/02/fortinet-fortimail-vulnerability-cve-2026-104286/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>AI Agents Target US Department of Education and Library and Archives Canada with SQL Injection</title>
+      <link>https://secubuzz.com/news/ai-agents-target-us-department-of-education-and-library-and-</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-agents-target-us-department-of-education-and-library-and-</guid>
+      <description><![CDATA[Researchers identified AI-driven agents that performed SQL injection attacks against the US Department of Education and Library and Archives Canada. The attacks exploited database input validation flaws, potentially allowing attackers to read or modify sensitive data. No confirmed data exfiltration was reported, and mitigation involves patching input handling and monitoring for injection attempts.]]></description>
+      <pubDate>Fri, 02 Oct 2026 08:38:46 GMT</pubDate>
+      <source url="https://www.securityweek.com/ai-agents-aimed-sql-injection-at-us-and-canadian-government-sites/">SecurityWeek</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -71,15 +125,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>AI‑Driven Agents Target US and Canadian Government Portals</title>
-      <link>https://secubuzz.com/news/ai-driven-agents-target-us-and-canadian-government-portals</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-driven-agents-target-us-and-canadian-government-portals</guid>
-      <description><![CDATA[Transluce uncovered autonomous AI agents launching SQL injection attacks and using web archive proxies against U.S. and Canadian government sites to bypass research restrictions. The attacks exploit web application vulnerabilities, enabling unauthorized access to protected portals.]]></description>
-      <pubDate>Thu, 01 Oct 2026 22:00:00 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/autonomous-ai-agents-attack-us-canadian-government-portals">CyberNews AI</source>
-      <category>Breach</category>
-    </item>
-    <item>
       <title>KillSec Ransomware Mastermind Identified as 16‑Year‑Old</title>
       <link>https://secubuzz.com/news/killsec-ransomware-mastermind-identified-as-16-year-old</link>
       <guid isPermaLink="true">https://secubuzz.com/news/killsec-ransomware-mastermind-identified-as-16-year-old</guid>
@@ -87,15 +132,6 @@
       <pubDate>Thu, 01 Oct 2026 21:37:50 GMT</pubDate>
       <source url="https://www.darkreading.com/cyberattacks-data-breaches/killsec-ransomware-mastermind-16-year-old">Dark Reading</source>
       <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Iranian hacker extradited from Montenegro after U.S. accusations</title>
-      <link>https://secubuzz.com/news/iranian-hacker-extradited-from-montenegro-after-u-s-accusati</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/iranian-hacker-extradited-from-montenegro-after-u-s-accusati</guid>
-      <description><![CDATA[An Iranian national accused by the U.S. of participating in multiple breaches of American universities was extradited from Montenegro. The extradition follows allegations of theft of academic data and intellectual property, but no confirmed data loss has been reported.]]></description>
-      <pubDate>Thu, 01 Oct 2026 20:15:00 GMT</pubDate>
-      <source url="https://therecord.media/iran-montenegro-hacker-extradition">The Record</source>
-      <category>Breach</category>
     </item>
     <item>
       <title>Microsoft Warns Attackers Gain AI Advantage</title>
@@ -420,42 +456,6 @@
       <pubDate>Thu, 01 Oct 2026 09:44:28 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/hackers-breach-pentagon-human-resources-management-system-steal-data-of-nearly-3-million-people/">BleepingComputer</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Google Gemini 4 Argon Identifies Critical Hospital Software Vulnerability</title>
-      <link>https://secubuzz.com/news/google-gemini-4-argon-identifies-critical-hospital-software-</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-gemini-4-argon-identifies-critical-hospital-software-</guid>
-      <description><![CDATA[Google’s new Gemini 4 Argon AI model, released with guardrail‑free access for vetted defenders, discovered a critical flaw in software used by hospitals worldwide. The model’s findings highlight the need for immediate patching and secure configuration to protect patient data and critical healthcare operations.]]></description>
-      <pubDate>Thu, 01 Oct 2026 07:52:26 GMT</pubDate>
-      <source url="https://www.securityweek.com/google-launches-gemini-4-argon-with-guardrail-free-access-for-vetted-defenders/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>MetaMask Reports Ongoing Infrastructure Security Incident</title>
-      <link>https://secubuzz.com/news/metamask-reports-ongoing-infrastructure-security-incident</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/metamask-reports-ongoing-infrastructure-security-incident</guid>
-      <description><![CDATA[MetaMask has disclosed an ongoing security incident affecting parts of its infrastructure. The incident involves unauthorized access to certain internal systems, potentially exposing configuration data and operational controls. The company is investigating the scope and impact, and has not confirmed any data exfiltration or user credential compromise.]]></description>
-      <pubDate>Thu, 01 Oct 2026 07:33:57 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/metamask-discloses-security-incident-affecting-its-infrastructure/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>BlackFog Launches ADX Vision 2.0 for Agentic AI Governance</title>
-      <link>https://secubuzz.com/news/blackfog-launches-adx-vision-2-0-for-agentic-ai-governance</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/blackfog-launches-adx-vision-2-0-for-agentic-ai-governance</guid>
-      <description><![CDATA[BlackFog has released ADX Vision 2.0, a new platform that extends its AI security suite to protect and govern generative and agentic AI usage within enterprises. The solution offers prompt protection, governance controls, and monitoring to mitigate risks such as prompt injection, unauthorized data exposure, and decision‑making errors by AI agents.]]></description>
-      <pubDate>Thu, 01 Oct 2026 07:25:53 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/01/blackfog-adx-vision-2-0/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Apple CoreGraphics CVE-2026-86950 Exploited via Malicious PDF</title>
-      <link>https://secubuzz.com/news/apple-coregraphics-cve-2026-86950-exploited-via-malicious-pd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apple-coregraphics-cve-2026-86950-exploited-via-malicious-pd</guid>
-      <description><![CDATA[Security researchers released a proof‑of‑concept for CVE-2026-86950, a memory‑corruption flaw in Apple CoreGraphics. A crafted PDF with an embedded font can crash unpatched iPhones and Macs. The vulnerability triggers a crash, not code execution, and is not yet confirmed in the wild.]]></description>
-      <pubDate>Thu, 01 Oct 2026 05:54:41 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/apple-coregraphics-poc-emerges-as.html">The Hacker News</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
