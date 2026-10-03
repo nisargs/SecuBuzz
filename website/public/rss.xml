@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Oct 2026 12:18:37 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 03 Oct 2026 13:25:22 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>doxx.net Raises $38 Million to Fund AI Agent Safety Platform</title>
+      <link>https://secubuzz.com/news/doxx-net-raises-38-million-to-fund-ai-agent-safety-platform</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/doxx-net-raises-38-million-to-fund-ai-agent-safety-platform</guid>
+      <description><![CDATA[doxx.net has secured $38 million to develop its ADN platform, designed to prevent agentic misadventures by ensuring AI agents operate strictly under user authority. The initiative aims to mitigate risks of autonomous AI acting beyond intended boundaries.]]></description>
+      <pubDate>Sat, 03 Oct 2026 11:45:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/doxx-net-raises-38-million-to-prevent-ai-agent-on-the-internet-misadventures/">SecurityWeek</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>Fortra Patches Critical Vulnerabilities in BoKS</title>
       <link>https://secubuzz.com/news/fortra-patches-critical-vulnerabilities-in-boks</link>
@@ -446,15 +455,6 @@
       <description><![CDATA[Microsoft’s 2026 Digital Defense Report outlines a security landscape that is increasingly interconnected, noting evolving threat vectors and the need for robust defense strategies. The report emphasizes the importance of proactive security measures and continuous monitoring to mitigate emerging risks across digital infrastructures.]]></description>
       <pubDate>Thu, 01 Oct 2026 14:00:00 GMT</pubDate>
       <source url="https://www.microsoft.com/en-us/security/blog/2026/10/01/insights-from-the-2026-microsoft-digital-defense-report/">Microsoft Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>DeepKeep Launches AI Lens to Monitor Coding Agent Data Leaks</title>
-      <link>https://secubuzz.com/news/deepkeep-launches-ai-lens-to-monitor-coding-agent-data-leaks</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/deepkeep-launches-ai-lens-to-monitor-coding-agent-data-leaks</guid>
-      <description><![CDATA[DeepKeep introduced AI Lens for Developers, an extension that monitors coding agents like Cursor and Claude Code for data leaks and destructive commands. The tool provides policy enforcement, audit visibility, and runtime protection, closing a critical gap in developer security programs.]]></description>
-      <pubDate>Thu, 01 Oct 2026 13:57:07 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/01/deepkeeps-ai-lens-flags-coding-agent-data-leaks-and-routes-destructive-commands-for-approval/">Help Net Security</source>
       <category>Policy</category>
     </item>
   </channel>

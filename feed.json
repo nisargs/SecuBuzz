@@ -1,5 +1,23 @@
 [
   {
+    "id": "https://www.securityweek.com/doxx-net-raises-38-million-to-prevent-ai-agent-on-the-internet-misadventures/",
+    "sourceUrl": "https://www.securityweek.com/doxx-net-raises-38-million-to-prevent-ai-agent-on-the-internet-misadventures/",
+    "title": "doxx.net Raises $38 Million to Fund AI Agent Safety Platform",
+    "headline": "doxx.net Raises $38 Million to Fund AI Agent Safety Platform",
+    "summary": "doxx.net has secured $38 million to develop its ADN platform, designed to prevent agentic misadventures by ensuring AI agents operate strictly under user authority. The initiative aims to mitigate risks of autonomous AI acting beyond intended boundaries.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-03T11:45:00.000Z",
+    "url": "https://www.securityweek.com/doxx-net-raises-38-million-to-prevent-ai-agent-on-the-internet-misadventures/",
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/kevin-mandias-armadin-raises-255-million-at-2-5-billion-valuation/"
+      }
+    ]
+  },
+  {
     "id": "https://www.securityweek.com/fortra-patches-critical-vulnerabilities-in-boks/",
     "sourceUrl": "https://www.securityweek.com/fortra-patches-critical-vulnerabilities-in-boks/",
     "title": "Fortra Patches Critical Vulnerabilities in BoKS",
@@ -980,28 +998,6 @@
       {
         "source": "Help Net Security",
         "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/openai-gpt-6-astra-supply-chain-attacks-test-simulations/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.securityweek.com/kevin-mandias-armadin-raises-255-million-at-2-5-billion-valuation/",
-    "sourceUrl": "https://www.securityweek.com/kevin-mandias-armadin-raises-255-million-at-2-5-billion-valuation/",
-    "title": "Armadin Raises $255 Million, Valuation Hits $2.5 Billion",
-    "headline": "Armadin Raises $255 Million, Valuation Hits $2.5 Billion",
-    "summary": "AI‑powered offensive security startup Armadin secured $255 million in Series B funding, bringing total capital to about $445 million. The investment follows a public launch just seven months earlier, positioning the company at a $2.5 billion valuation.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-01T11:40:51.000Z",
-    "url": "https://www.securityweek.com/kevin-mandias-armadin-raises-255-million-at-2-5-billion-valuation/",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/remotethreat-launches-with-7-million-for-offensive-operations-platform/"
-      },
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/armadin-raises-255-5-million-funding/"
       }
     ]
   },

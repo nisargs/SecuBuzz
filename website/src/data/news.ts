@@ -11,6 +11,18 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "doxx-net-raises-38-million-to-fund-ai-agent-safety-platform",
+    "title": "doxx.net Raises $38 Million to Fund AI Agent Safety Platform",
+    "summary": "doxx.net has secured $38 million to develop its ADN platform, designed to prevent agentic misadventures by ensuring AI agents operate strictly under user authority. The initiative aims to mitigate risks of autonomous AI acting beyond intended boundaries.",
+    "category": "Policy",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/doxx-net-raises-38-million-to-prevent-ai-agent-on-the-internet-misadventures/",
+    "publishedAt": "2026-10-03T11:45:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "fortra-patches-critical-vulnerabilities-in-boks",
     "title": "Fortra Patches Critical Vulnerabilities in BoKS",
     "summary": "Fortra released patches for critical bugs in its BoKS platform that could allow attackers to bypass authentication, execute shell commands, and corrupt memory. The vulnerabilities posed a high risk of unauthorized access and potential data compromise. Users are urged to apply the latest updates immediately to mitigate the threat.",
@@ -791,18 +803,6 @@ export const news: NewsBrief[] = [
     "source": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/10/how-financial-services-companies-can.html",
     "publishedAt": "2026-10-01T11:45:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "armadin-raises-255-million-valuation-hits-2-5-billion",
-    "title": "Armadin Raises $255 Million, Valuation Hits $2.5 Billion",
-    "summary": "AI‑powered offensive security startup Armadin secured $255 million in Series B funding, bringing total capital to about $445 million. The investment follows a public launch just seven months earlier, positioning the company at a $2.5 billion valuation.",
-    "category": "Policy",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/kevin-mandias-armadin-raises-255-million-at-2-5-billion-valuation/",
-    "publishedAt": "2026-10-01T11:40:51.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
