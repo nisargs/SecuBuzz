@@ -1,5 +1,67 @@
 [
   {
+    "id": "https://isc.sans.edu/diary/rss/33392",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33392",
+    "title": "YARA-X 1.21.0 Released with Five Improvements and Four Bug Fixes",
+    "headline": "YARA-X 1.21.0 Released with Five Improvements and Four Bug Fixes",
+    "summary": "The YARA-X tool has released version 1.21.0, adding five new features and fixing four bugs. The update enhances rule creation and performance for malware analysts and security researchers. No security impact is reported, and users are encouraged to upgrade to benefit from the improvements.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "publishedAt": "2026-10-03T14:40:21.000Z",
+    "url": "https://isc.sans.edu/diary/rss/33392",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/mi5-says-chinas-mss-funded-research.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/mi5-says-chinas-mss-funded-research.html",
+    "title": "MI5 Warns of China’s MSS Funding Research with Over 100 UK Academics",
+    "headline": "MI5 Warns of China’s MSS Funding Research with Over 100 UK Academics",
+    "summary": "MI5 issued a Security Service Espionage Alert on September 30, 2026, stating that China’s Ministry of State Security funded research through the China General Technology Research Institute involving more than 100 UK-linked academics. The program aims to advance intelligence gathering capabilities for Beijing’s state security service.",
+    "category": "NATION_STATE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-03T14:38:46.000Z",
+    "url": "https://thehackernews.com/2026/10/mi5-says-chinas-mss-funded-research.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/warlock-exploits-sharepoint-flaws-to.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/warlock-exploits-sharepoint-flaws-to.html",
+    "title": "Warlock Uses SharePoint Vulnerabilities to Deploy Ransomware",
+    "headline": "Warlock Uses SharePoint Vulnerabilities to Deploy Ransomware",
+    "summary": "The China-linked threat actor Warlock continues to weaponize Microsoft SharePoint flaws, targeting Portuguese and Spanish organizations, including critical infrastructure, government and education sectors. The attacks disable security tools and deploy ransomware, exploiting both legacy and new SharePoint vulnerabilities.",
+    "category": "RANSOMWARE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-03T14:36:33.000Z",
+    "url": "https://thehackernews.com/2026/10/warlock-exploits-sharepoint-flaws-to.html",
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/warlock-ransomware-sharepoint-water-telecom-attacks"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/danish-university-dtu-breach-exposes-data-of-up-to-200-000-people/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/danish-university-dtu-breach-exposes-data-of-up-to-200-000-people/",
+    "title": "Danish University DTU Breach Exposes Data of Up to 200,000 Users",
+    "headline": "Danish University DTU Breach Exposes Data of Up to 200,000 Users",
+    "summary": "Hackers accessed DTU’s identity and access management system, downloading large amounts of data that may include personal information of up to 200,000 users. The breach highlights vulnerabilities in the university’s access controls and raises concerns over the protection of academic data.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-03T14:35:20.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/danish-university-dtu-breach-exposes-data-of-up-to-200-000-people/",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/frontline-education-data-breach-impacts-school-district-employees/"
+      }
+    ]
+  },
+  {
     "id": "https://www.securityweek.com/doxx-net-raises-38-million-to-prevent-ai-agent-on-the-internet-misadventures/",
     "sourceUrl": "https://www.securityweek.com/doxx-net-raises-38-million-to-prevent-ai-agent-on-the-internet-misadventures/",
     "title": "doxx.net Raises $38 Million to Fund AI Agent Safety Platform",
@@ -42,24 +104,6 @@
     "publishedAt": "2026-10-03T11:00:00.000Z",
     "url": "https://thehackernews.com/2026/10/the-state-of-cybersecurity-in-2026key.html",
     "additionalSources": []
-  },
-  {
-    "id": "https://cybernewsai.com/blog/warlock-ransomware-sharepoint-water-telecom-attacks",
-    "sourceUrl": "https://cybernewsai.com/blog/warlock-ransomware-sharepoint-water-telecom-attacks",
-    "title": "Warlock Ransomware Targets Water and Telecom Operators via SharePoint Flaws",
-    "headline": "Warlock Ransomware Targets Water and Telecom Operators via SharePoint Flaws",
-    "summary": "China-linked Warlock ransomware exploited SharePoint vulnerabilities to breach water and telecom operators, deploying BYOVD EDR-killers and VS Code tunnels to compromise 40 hosts. The attack leveraged SharePoint flaws to gain initial access and establish command and control channels.",
-    "category": "RANSOMWARE",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-10-02T23:52:02.000Z",
-    "url": "https://cybernewsai.com/blog/warlock-ransomware-sharepoint-water-telecom-attacks",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/warlock-ransomware-breach-sharepoint-in-water-telecom-operator-attacks/"
-      }
-    ]
   },
   {
     "id": "https://cybernewsai.com/blog/antino-backdoor-abuses-m365-outlook-onedrive-c2",
@@ -140,24 +184,6 @@
     "publishedAt": "2026-10-02T19:30:00.000Z",
     "url": "https://therecord.media/alpr-legislation-hawley-sanders-merkley-aoc",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/frontline-education-data-breach-impacts-school-district-employees/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/frontline-education-data-breach-impacts-school-district-employees/",
-    "title": "Frontline Education Data Breach Exposes Employee SSNs",
-    "headline": "Frontline Education Data Breach Exposes Employee SSNs",
-    "summary": "Frontline Education notified school districts that attackers exploited a third‑party software vulnerability to access its systems. The breach resulted in the theft of employee data, including Social Security numbers. The company is investigating the incident and notifying affected parties.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-02T19:01:40.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/frontline-education-data-breach-impacts-school-district-employees/",
-    "additionalSources": [
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/poland-cyberattack-invoice-software"
-      }
-    ]
   },
   {
     "id": "https://thehackernews.com/2026/10/dell-csm-flaws-enable-unauthenticated.html",

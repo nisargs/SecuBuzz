@@ -11,6 +11,54 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "yara-x-1-21-0-released-with-five-improvements-and-four-bug-f",
+    "title": "YARA-X 1.21.0 Released with Five Improvements and Four Bug Fixes",
+    "summary": "The YARA-X tool has released version 1.21.0, adding five new features and fixing four bugs. The update enhances rule creation and performance for malware analysts and security researchers. No security impact is reported, and users are encouraged to upgrade to benefit from the improvements.",
+    "category": "Malware",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33392",
+    "publishedAt": "2026-10-03T14:40:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "mi5-warns-of-china-s-mss-funding-research-with-over-100-uk-a",
+    "title": "MI5 Warns of China’s MSS Funding Research with Over 100 UK Academics",
+    "summary": "MI5 issued a Security Service Espionage Alert on September 30, 2026, stating that China’s Ministry of State Security funded research through the China General Technology Research Institute involving more than 100 UK-linked academics. The program aims to advance intelligence gathering capabilities for Beijing’s state security service.",
+    "category": "Malware",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/mi5-says-chinas-mss-funded-research.html",
+    "publishedAt": "2026-10-03T14:38:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "warlock-uses-sharepoint-vulnerabilities-to-deploy-ransomware",
+    "title": "Warlock Uses SharePoint Vulnerabilities to Deploy Ransomware",
+    "summary": "The China-linked threat actor Warlock continues to weaponize Microsoft SharePoint flaws, targeting Portuguese and Spanish organizations, including critical infrastructure, government and education sectors. The attacks disable security tools and deploy ransomware, exploiting both legacy and new SharePoint vulnerabilities.",
+    "category": "Ransomware",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/warlock-exploits-sharepoint-flaws-to.html",
+    "publishedAt": "2026-10-03T14:36:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "danish-university-dtu-breach-exposes-data-of-up-to-200-000-u",
+    "title": "Danish University DTU Breach Exposes Data of Up to 200,000 Users",
+    "summary": "Hackers accessed DTU’s identity and access management system, downloading large amounts of data that may include personal information of up to 200,000 users. The breach highlights vulnerabilities in the university’s access controls and raises concerns over the protection of academic data.",
+    "category": "Breach",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/danish-university-dtu-breach-exposes-data-of-up-to-200-000-people/",
+    "publishedAt": "2026-10-03T14:35:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "doxx-net-raises-38-million-to-fund-ai-agent-safety-platform",
     "title": "doxx.net Raises $38 Million to Fund AI Agent Safety Platform",
     "summary": "doxx.net has secured $38 million to develop its ADN platform, designed to prevent agentic misadventures by ensuring AI agents operate strictly under user authority. The initiative aims to mitigate risks of autonomous AI acting beyond intended boundaries.",
@@ -42,18 +90,6 @@ export const news: NewsBrief[] = [
     "source": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/10/the-state-of-cybersecurity-in-2026key.html",
     "publishedAt": "2026-10-03T11:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "warlock-ransomware-targets-water-and-telecom-operators-via-s",
-    "title": "Warlock Ransomware Targets Water and Telecom Operators via SharePoint Flaws",
-    "summary": "China-linked Warlock ransomware exploited SharePoint vulnerabilities to breach water and telecom operators, deploying BYOVD EDR-killers and VS Code tunnels to compromise 40 hosts. The attack leveraged SharePoint flaws to gain initial access and establish command and control channels.",
-    "category": "Ransomware",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/warlock-ransomware-sharepoint-water-telecom-attacks",
-    "publishedAt": "2026-10-02T23:52:02.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -114,18 +150,6 @@ export const news: NewsBrief[] = [
     "source": "The Record",
     "sourceUrl": "https://therecord.media/alpr-legislation-hawley-sanders-merkley-aoc",
     "publishedAt": "2026-10-02T19:30:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "frontline-education-data-breach-exposes-employee-ssns",
-    "title": "Frontline Education Data Breach Exposes Employee SSNs",
-    "summary": "Frontline Education notified school districts that attackers exploited a third‑party software vulnerability to access its systems. The breach resulted in the theft of employee data, including Social Security numbers. The company is investigating the incident and notifying affected parties.",
-    "category": "Breach",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/frontline-education-data-breach-impacts-school-district-employees/",
-    "publishedAt": "2026-10-02T19:01:40.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
