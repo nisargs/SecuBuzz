@@ -11,6 +11,30 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "fortra-patches-critical-vulnerabilities-in-boks",
+    "title": "Fortra Patches Critical Vulnerabilities in BoKS",
+    "summary": "Fortra released patches for critical bugs in its BoKS platform that could allow attackers to bypass authentication, execute shell commands, and corrupt memory. The vulnerabilities posed a high risk of unauthorized access and potential data compromise. Users are urged to apply the latest updates immediately to mitigate the threat.",
+    "category": "Vulnerability",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/fortra-patches-critical-vulnerabilities-in-boks/",
+    "publishedAt": "2026-10-03T11:34:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "cybersecurity-trends-2026-cloud-ai-and-continuous-visibility",
+    "title": "Cybersecurity Trends 2026: Cloud, AI, and Continuous Visibility",
+    "summary": "The 2026 cybersecurity landscape is driven by expanding cloud infrastructure, AI, and distributed systems, requiring continuous visibility, control, and rapid risk response across identities, devices, data, and internet-facing assets.",
+    "category": "Cloud",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/the-state-of-cybersecurity-in-2026key.html",
+    "publishedAt": "2026-10-03T11:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "warlock-ransomware-targets-water-and-telecom-operators-via-s",
     "title": "Warlock Ransomware Targets Water and Telecom Operators via SharePoint Flaws",
     "summary": "China-linked Warlock ransomware exploited SharePoint vulnerabilities to breach water and telecom operators, deploying BYOVD EDR-killers and VS Code tunnels to compromise 40 hosts. The attack leveraged SharePoint flaws to gain initial access and establish command and control channels.",

@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Oct 2026 08:18:07 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 03 Oct 2026 12:18:37 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Fortra Patches Critical Vulnerabilities in BoKS</title>
+      <link>https://secubuzz.com/news/fortra-patches-critical-vulnerabilities-in-boks</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fortra-patches-critical-vulnerabilities-in-boks</guid>
+      <description><![CDATA[Fortra released patches for critical bugs in its BoKS platform that could allow attackers to bypass authentication, execute shell commands, and corrupt memory. The vulnerabilities posed a high risk of unauthorized access and potential data compromise. Users are urged to apply the latest updates immediately to mitigate the threat.]]></description>
+      <pubDate>Sat, 03 Oct 2026 11:34:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/fortra-patches-critical-vulnerabilities-in-boks/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Cybersecurity Trends 2026: Cloud, AI, and Continuous Visibility</title>
+      <link>https://secubuzz.com/news/cybersecurity-trends-2026-cloud-ai-and-continuous-visibility</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cybersecurity-trends-2026-cloud-ai-and-continuous-visibility</guid>
+      <description><![CDATA[The 2026 cybersecurity landscape is driven by expanding cloud infrastructure, AI, and distributed systems, requiring continuous visibility, control, and rapid risk response across identities, devices, data, and internet-facing assets.]]></description>
+      <pubDate>Sat, 03 Oct 2026 11:00:00 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/the-state-of-cybersecurity-in-2026key.html">The Hacker News</source>
+      <category>Cloud</category>
+    </item>
     <item>
       <title>Warlock Ransomware Targets Water and Telecom Operators via SharePoint Flaws</title>
       <link>https://secubuzz.com/news/warlock-ransomware-targets-water-and-telecom-operators-via-s</link>
@@ -437,24 +455,6 @@
       <description><![CDATA[DeepKeep introduced AI Lens for Developers, an extension that monitors coding agents like Cursor and Claude Code for data leaks and destructive commands. The tool provides policy enforcement, audit visibility, and runtime protection, closing a critical gap in developer security programs.]]></description>
       <pubDate>Thu, 01 Oct 2026 13:57:07 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/01/deepkeeps-ai-lens-flags-coding-agent-data-leaks-and-routes-destructive-commands-for-approval/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Exabeam Introduces AI‑Assisted Investigations for On‑Premises Data</title>
-      <link>https://secubuzz.com/news/exabeam-introduces-ai-assisted-investigations-for-on-premise</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/exabeam-introduces-ai-assisted-investigations-for-on-premise</guid>
-      <description><![CDATA[Exabeam launches new capabilities that extend its Agentic SOC to both cloud and on‑premises environments. The update enables AI‑driven investigation, execution, and governance while keeping data local. It aims to accelerate threat detection and response for organizations that require on‑premises data residency.]]></description>
-      <pubDate>Thu, 01 Oct 2026 13:50:04 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/01/exabeam-agentic-soc/">Help Net Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>RadarFirst Launches AI Incident Management Tool</title>
-      <link>https://secubuzz.com/news/radarfirst-launches-ai-incident-management-tool</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/radarfirst-launches-ai-incident-management-tool</guid>
-      <description><![CDATA[RadarFirst has released Radar AI Incident Management, a tool designed to help organizations investigate and document AI-related incidents. The solution addresses risks from biased outcomes, data exposure, and unintended AI actions, enabling coordinated responses across privacy, security, compliance, and product teams.]]></description>
-      <pubDate>Thu, 01 Oct 2026 13:39:15 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/01/radarfirst-ai-incident-management/">Help Net Security</source>
       <category>Policy</category>
     </item>
   </channel>

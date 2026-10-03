@@ -1,5 +1,31 @@
 [
   {
+    "id": "https://www.securityweek.com/fortra-patches-critical-vulnerabilities-in-boks/",
+    "sourceUrl": "https://www.securityweek.com/fortra-patches-critical-vulnerabilities-in-boks/",
+    "title": "Fortra Patches Critical Vulnerabilities in BoKS",
+    "headline": "Fortra Patches Critical Vulnerabilities in BoKS",
+    "summary": "Fortra released patches for critical bugs in its BoKS platform that could allow attackers to bypass authentication, execute shell commands, and corrupt memory. The vulnerabilities posed a high risk of unauthorized access and potential data compromise. Users are urged to apply the latest updates immediately to mitigate the threat.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-03T11:34:00.000Z",
+    "url": "https://www.securityweek.com/fortra-patches-critical-vulnerabilities-in-boks/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/the-state-of-cybersecurity-in-2026key.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/the-state-of-cybersecurity-in-2026key.html",
+    "title": "Cybersecurity Trends 2026: Cloud, AI, and Continuous Visibility",
+    "headline": "Cybersecurity Trends 2026: Cloud, AI, and Continuous Visibility",
+    "summary": "The 2026 cybersecurity landscape is driven by expanding cloud infrastructure, AI, and distributed systems, requiring continuous visibility, control, and rapid risk response across identities, devices, data, and internet-facing assets.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-03T11:00:00.000Z",
+    "url": "https://thehackernews.com/2026/10/the-state-of-cybersecurity-in-2026key.html",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybernewsai.com/blog/warlock-ransomware-sharepoint-water-telecom-attacks",
     "sourceUrl": "https://cybernewsai.com/blog/warlock-ransomware-sharepoint-water-telecom-attacks",
     "title": "Warlock Ransomware Targets Water and Telecom Operators via SharePoint Flaws",
