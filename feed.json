@@ -1,5 +1,59 @@
 [
   {
+    "id": "https://cybernewsai.com/blog/warlock-ransomware-sharepoint-water-telecom-attacks",
+    "sourceUrl": "https://cybernewsai.com/blog/warlock-ransomware-sharepoint-water-telecom-attacks",
+    "title": "Warlock Ransomware Targets Water and Telecom Operators via SharePoint Flaws",
+    "headline": "Warlock Ransomware Targets Water and Telecom Operators via SharePoint Flaws",
+    "summary": "China-linked Warlock ransomware exploited SharePoint vulnerabilities to breach water and telecom operators, deploying BYOVD EDR-killers and VS Code tunnels to compromise 40 hosts. The attack leveraged SharePoint flaws to gain initial access and establish command and control channels.",
+    "category": "RANSOMWARE",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-10-02T23:52:02.000Z",
+    "url": "https://cybernewsai.com/blog/warlock-ransomware-sharepoint-water-telecom-attacks",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/warlock-ransomware-breach-sharepoint-in-water-telecom-operator-attacks/"
+      }
+    ]
+  },
+  {
+    "id": "https://cybernewsai.com/blog/antino-backdoor-abuses-m365-outlook-onedrive-c2",
+    "sourceUrl": "https://cybernewsai.com/blog/antino-backdoor-abuses-m365-outlook-onedrive-c2",
+    "title": "Antino Backdoor Uses M365 Outlook and OneDrive for Covert Command and Control",
+    "headline": "Antino Backdoor Uses M365 Outlook and OneDrive for Covert Command and Control",
+    "summary": "China-nexus threat actor UAT-11587 deployed the Rust-based Antino backdoor, abusing Microsoft 365 Outlook and OneDrive services to establish covert command and control channels against Asian government entities. The backdoor enables remote execution and data exfiltration via cloud services.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-10-02T23:51:11.000Z",
+    "url": "https://cybernewsai.com/blog/antino-backdoor-abuses-m365-outlook-onedrive-c2",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/antino-backdoor-uses-outlook-and.html"
+      }
+    ]
+  },
+  {
+    "id": "https://cybernewsai.com/blog/gitlab-ai-gateway-critical-rce-cve-2026-90970",
+    "sourceUrl": "https://cybernewsai.com/blog/gitlab-ai-gateway-critical-rce-cve-2026-90970",
+    "title": "GitLab AI Gateway Critical RCE Flaw Allows Remote Code Execution",
+    "headline": "GitLab AI Gateway Critical RCE Flaw Allows Remote Code Execution",
+    "summary": "GitLab has patched a critical remote code execution flaw in its AI Gateway service. The vulnerability let authenticated users escape prompt sandboxes and run arbitrary code on hosting servers. The patch addresses the issue and mitigates the risk of unauthorized code execution on affected installations.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-10-02T23:50:16.000Z",
+    "url": "https://cybernewsai.com/blog/gitlab-ai-gateway-critical-rce-cve-2026-90970",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/gitlab-patches-critical-self-hosted-ai.html"
+      }
+    ]
+  },
+  {
     "id": "https://therecord.media/judge-dismisses-spyware-case-brought-by-salvadoran-journalists",
     "sourceUrl": "https://therecord.media/judge-dismisses-spyware-case-brought-by-salvadoran-journalists",
     "title": "Judge Dismisses Spyware Lawsuit Against Salvadoran Journalists",
@@ -58,60 +112,6 @@
       {
         "source": "The Record",
         "sourceUrl": "https://therecord.media/poland-cyberattack-invoice-software"
-      }
-    ]
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/warlock-ransomware-breach-sharepoint-in-water-telecom-operator-attacks/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/warlock-ransomware-breach-sharepoint-in-water-telecom-operator-attacks/",
-    "title": "Warlock Ransomware Targets Water Utility, Telecom, Government, and University via SharePoint",
-    "headline": "Warlock Ransomware Targets Water Utility, Telecom, Government, and University via SharePoint",
-    "summary": "The China‑linked Warlock ransomware group exploited SharePoint vulnerabilities to infiltrate a water utility, telecom provider, regional government, and university. Attackers gained initial access through compromised SharePoint sites, enabling further lateral movement and potential data exfiltration.",
-    "category": "RANSOMWARE",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-02T18:33:01.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/warlock-ransomware-breach-sharepoint-in-water-telecom-operator-attacks/",
-    "additionalSources": [
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/warlock-ransomware-used-in-critical-infrastructure-attacks"
-      }
-    ]
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/gitlab-patches-critical-self-hosted-ai.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/gitlab-patches-critical-self-hosted-ai.html",
-    "title": "GitLab AI Gateway Flaw Allows Command Execution on Self‑Hosted Servers",
-    "headline": "GitLab AI Gateway Flaw Allows Command Execution on Self‑Hosted Servers",
-    "summary": "GitLab disclosed a critical flaw in its AI Gateway that permits a logged‑in user with Duo Agent Platform access to execute commands on the gateway under specific conditions. The issue is fixed in gateway versions 19.2.4, 19.3.2, and 19.4.1. Self‑hosted users should upgrade immediately.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-02T17:33:31.000Z",
-    "url": "https://thehackernews.com/2026/10/gitlab-patches-critical-self-hosted-ai.html",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/gitlab-warns-of-critical-rce-vulnerability-in-ai-gateway-service/"
-      }
-    ]
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/antino-backdoor-uses-outlook-and.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/antino-backdoor-uses-outlook-and.html",
-    "title": "Antino Backdoor Targets Asian Governments via Outlook and OneDrive",
-    "headline": "Antino Backdoor Targets Asian Governments via Outlook and OneDrive",
-    "summary": "A China‑linked threat actor deployed the undocumented Antino backdoor to infiltrate government and policy organizations across Asia, using Outlook and OneDrive for command and control. Cisco Talos tracks the activity, which has affected Taiwan, India, the Philippines, Cambodia, Pakistan, Thailand, and Myanmar.",
-    "category": "NATION_STATE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-02T17:33:16.000Z",
-    "url": "https://thehackernews.com/2026/10/antino-backdoor-uses-outlook-and.html",
-    "additionalSources": [
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/china-linked-phishing-scheme-backdoor-taiwan"
       }
     ]
   },

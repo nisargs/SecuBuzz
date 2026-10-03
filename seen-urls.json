@@ -998,5 +998,8 @@
   "https://www.darkreading.com/cybersecurity-operations/remotethreat-bets-security-teams-need-to-test-what-happens-after-defenses-fail",
   "https://www.cisa.gov/news-events/alerts/2026/10/02/cisa-adds-two-known-exploited-vulnerabilities-catalog",
   "https://isc.sans.edu/diary/rss/33386",
-  "https://www.crowdstrike.com/en-us/blog/crowdstrike-nvidia-extend-security-across-ai-stack/"
+  "https://www.crowdstrike.com/en-us/blog/crowdstrike-nvidia-extend-security-across-ai-stack/",
+  "https://cybernewsai.com/blog/warlock-ransomware-sharepoint-water-telecom-attacks",
+  "https://cybernewsai.com/blog/antino-backdoor-abuses-m365-outlook-onedrive-c2",
+  "https://cybernewsai.com/blog/gitlab-ai-gateway-critical-rce-cve-2026-90970"
 ]

@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "warlock-ransomware-targets-water-and-telecom-operators-via-s",
+    "title": "Warlock Ransomware Targets Water and Telecom Operators via SharePoint Flaws",
+    "summary": "China-linked Warlock ransomware exploited SharePoint vulnerabilities to breach water and telecom operators, deploying BYOVD EDR-killers and VS Code tunnels to compromise 40 hosts. The attack leveraged SharePoint flaws to gain initial access and establish command and control channels.",
+    "category": "Ransomware",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/warlock-ransomware-sharepoint-water-telecom-attacks",
+    "publishedAt": "2026-10-02T23:52:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "antino-backdoor-uses-m365-outlook-and-onedrive-for-covert-co",
+    "title": "Antino Backdoor Uses M365 Outlook and OneDrive for Covert Command and Control",
+    "summary": "China-nexus threat actor UAT-11587 deployed the Rust-based Antino backdoor, abusing Microsoft 365 Outlook and OneDrive services to establish covert command and control channels against Asian government entities. The backdoor enables remote execution and data exfiltration via cloud services.",
+    "category": "Breach",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/antino-backdoor-abuses-m365-outlook-onedrive-c2",
+    "publishedAt": "2026-10-02T23:51:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "gitlab-ai-gateway-critical-rce-flaw-allows-remote-code-execu",
+    "title": "GitLab AI Gateway Critical RCE Flaw Allows Remote Code Execution",
+    "summary": "GitLab has patched a critical remote code execution flaw in its AI Gateway service. The vulnerability let authenticated users escape prompt sandboxes and run arbitrary code on hosting servers. The patch addresses the issue and mitigates the risk of unauthorized code execution on affected installations.",
+    "category": "Vulnerability",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/gitlab-ai-gateway-critical-rce-cve-2026-90970",
+    "publishedAt": "2026-10-02T23:50:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "judge-dismisses-spyware-lawsuit-against-salvadoran-journalis",
     "title": "Judge Dismisses Spyware Lawsuit Against Salvadoran Journalists",
     "summary": "A California judge dismissed a spyware lawsuit filed by Salvadoran journalists who claimed they were targeted with Pegasus. The plaintiffs, all employees of El Faro, could not establish jurisdiction in the state. The case highlights ongoing legal challenges surrounding state-sponsored spyware use against journalists.",
@@ -54,42 +90,6 @@ export const news: NewsBrief[] = [
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/frontline-education-data-breach-impacts-school-district-employees/",
     "publishedAt": "2026-10-02T19:01:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "warlock-ransomware-targets-water-utility-telecom-government-",
-    "title": "Warlock Ransomware Targets Water Utility, Telecom, Government, and University via SharePoint",
-    "summary": "The China‑linked Warlock ransomware group exploited SharePoint vulnerabilities to infiltrate a water utility, telecom provider, regional government, and university. Attackers gained initial access through compromised SharePoint sites, enabling further lateral movement and potential data exfiltration.",
-    "category": "Ransomware",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/warlock-ransomware-breach-sharepoint-in-water-telecom-operator-attacks/",
-    "publishedAt": "2026-10-02T18:33:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "gitlab-ai-gateway-flaw-allows-command-execution-on-self-host",
-    "title": "GitLab AI Gateway Flaw Allows Command Execution on Self‑Hosted Servers",
-    "summary": "GitLab disclosed a critical flaw in its AI Gateway that permits a logged‑in user with Duo Agent Platform access to execute commands on the gateway under specific conditions. The issue is fixed in gateway versions 19.2.4, 19.3.2, and 19.4.1. Self‑hosted users should upgrade immediately.",
-    "category": "Vulnerability",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/gitlab-patches-critical-self-hosted-ai.html",
-    "publishedAt": "2026-10-02T17:33:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "antino-backdoor-targets-asian-governments-via-outlook-and-on",
-    "title": "Antino Backdoor Targets Asian Governments via Outlook and OneDrive",
-    "summary": "A China‑linked threat actor deployed the undocumented Antino backdoor to infiltrate government and policy organizations across Asia, using Outlook and OneDrive for command and control. Cisco Talos tracks the activity, which has affected Taiwan, India, the Philippines, Cambodia, Pakistan, Thailand, and Myanmar.",
-    "category": "Malware",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/antino-backdoor-uses-outlook-and.html",
-    "publishedAt": "2026-10-02T17:33:16.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []

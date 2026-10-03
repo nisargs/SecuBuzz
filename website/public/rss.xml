@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Oct 2026 20:49:40 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 03 Oct 2026 00:18:49 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Warlock Ransomware Targets Water and Telecom Operators via SharePoint Flaws</title>
+      <link>https://secubuzz.com/news/warlock-ransomware-targets-water-and-telecom-operators-via-s</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/warlock-ransomware-targets-water-and-telecom-operators-via-s</guid>
+      <description><![CDATA[China-linked Warlock ransomware exploited SharePoint vulnerabilities to breach water and telecom operators, deploying BYOVD EDR-killers and VS Code tunnels to compromise 40 hosts. The attack leveraged SharePoint flaws to gain initial access and establish command and control channels.]]></description>
+      <pubDate>Fri, 02 Oct 2026 23:52:02 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/warlock-ransomware-sharepoint-water-telecom-attacks">CyberNews AI</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
+      <title>Antino Backdoor Uses M365 Outlook and OneDrive for Covert Command and Control</title>
+      <link>https://secubuzz.com/news/antino-backdoor-uses-m365-outlook-and-onedrive-for-covert-co</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/antino-backdoor-uses-m365-outlook-and-onedrive-for-covert-co</guid>
+      <description><![CDATA[China-nexus threat actor UAT-11587 deployed the Rust-based Antino backdoor, abusing Microsoft 365 Outlook and OneDrive services to establish covert command and control channels against Asian government entities. The backdoor enables remote execution and data exfiltration via cloud services.]]></description>
+      <pubDate>Fri, 02 Oct 2026 23:51:11 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/antino-backdoor-abuses-m365-outlook-onedrive-c2">CyberNews AI</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>GitLab AI Gateway Critical RCE Flaw Allows Remote Code Execution</title>
+      <link>https://secubuzz.com/news/gitlab-ai-gateway-critical-rce-flaw-allows-remote-code-execu</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/gitlab-ai-gateway-critical-rce-flaw-allows-remote-code-execu</guid>
+      <description><![CDATA[GitLab has patched a critical remote code execution flaw in its AI Gateway service. The vulnerability let authenticated users escape prompt sandboxes and run arbitrary code on hosting servers. The patch addresses the issue and mitigates the risk of unauthorized code execution on affected installations.]]></description>
+      <pubDate>Fri, 02 Oct 2026 23:50:16 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/gitlab-ai-gateway-critical-rce-cve-2026-90970">CyberNews AI</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Judge Dismisses Spyware Lawsuit Against Salvadoran Journalists</title>
       <link>https://secubuzz.com/news/judge-dismisses-spyware-lawsuit-against-salvadoran-journalis</link>
@@ -42,33 +69,6 @@
       <pubDate>Fri, 02 Oct 2026 19:01:40 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/frontline-education-data-breach-impacts-school-district-employees/">BleepingComputer</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Warlock Ransomware Targets Water Utility, Telecom, Government, and University via SharePoint</title>
-      <link>https://secubuzz.com/news/warlock-ransomware-targets-water-utility-telecom-government-</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/warlock-ransomware-targets-water-utility-telecom-government-</guid>
-      <description><![CDATA[The China‑linked Warlock ransomware group exploited SharePoint vulnerabilities to infiltrate a water utility, telecom provider, regional government, and university. Attackers gained initial access through compromised SharePoint sites, enabling further lateral movement and potential data exfiltration.]]></description>
-      <pubDate>Fri, 02 Oct 2026 18:33:01 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/warlock-ransomware-breach-sharepoint-in-water-telecom-operator-attacks/">BleepingComputer</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>GitLab AI Gateway Flaw Allows Command Execution on Self‑Hosted Servers</title>
-      <link>https://secubuzz.com/news/gitlab-ai-gateway-flaw-allows-command-execution-on-self-host</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/gitlab-ai-gateway-flaw-allows-command-execution-on-self-host</guid>
-      <description><![CDATA[GitLab disclosed a critical flaw in its AI Gateway that permits a logged‑in user with Duo Agent Platform access to execute commands on the gateway under specific conditions. The issue is fixed in gateway versions 19.2.4, 19.3.2, and 19.4.1. Self‑hosted users should upgrade immediately.]]></description>
-      <pubDate>Fri, 02 Oct 2026 17:33:31 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/gitlab-patches-critical-self-hosted-ai.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Antino Backdoor Targets Asian Governments via Outlook and OneDrive</title>
-      <link>https://secubuzz.com/news/antino-backdoor-targets-asian-governments-via-outlook-and-on</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/antino-backdoor-targets-asian-governments-via-outlook-and-on</guid>
-      <description><![CDATA[A China‑linked threat actor deployed the undocumented Antino backdoor to infiltrate government and policy organizations across Asia, using Outlook and OneDrive for command and control. Cisco Talos tracks the activity, which has affected Taiwan, India, the Philippines, Cambodia, Pakistan, Thailand, and Myanmar.]]></description>
-      <pubDate>Fri, 02 Oct 2026 17:33:16 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/antino-backdoor-uses-outlook-and.html">The Hacker News</source>
-      <category>Malware</category>
     </item>
     <item>
       <title>Dell CSM Flaws Enable Unauthenticated Admin Access and Root on Kubernetes Nodes</title>
