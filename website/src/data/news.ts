@@ -11,6 +11,18 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "shinyhunters-hacker-detained-in-jordan-cooperating-with-fbi",
+    "title": "ShinyHunters Hacker Detained in Jordan, Cooperating with FBI",
+    "summary": "A member of the ShinyHunters extortion group, known online as \"Rey\", was reportedly detained in Jordan and is cooperating with the FBI to help locate other group members. The arrest is part of ongoing efforts to disrupt the group’s operations.",
+    "category": "Policy",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/shinyhunters-hacker-reportedly-detained-in-jordan-aiding-fbi/",
+    "publishedAt": "2026-10-03T19:09:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "yara-x-1-21-0-released-with-five-improvements-and-four-bug-f",
     "title": "YARA-X 1.21.0 Released with Five Improvements and Four Bug Fixes",
     "summary": "The YARA-X tool has released version 1.21.0, adding five new features and fixing four bugs. The update enhances rule creation and performance for malware analysts and security researchers. No security impact is reported, and users are encouraged to upgrade to benefit from the improvements.",
