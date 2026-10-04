@@ -14,6 +14,7 @@ import { wordCount } from '../utils/text';
 export function NewsArticle() {
   const { slug } = useParams();
   const [copied, setCopied] = useState(false);
+  const [copiedSlack, setCopiedSlack] = useState(false);
   const { news, loading } = useLiveNews();
   const { advisories } = useLiveAdvisories();
 
@@ -53,7 +54,31 @@ export function NewsArticle() {
     }
   };
 
-  const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(brief.title)}&url=${encodeURIComponent(canonicalUrl)}`;
+  const handleCopySlack = async () => {
+    const snippet = [
+      `*🚨 SecuBuzz Threat Brief | ${brief.category?.toUpperCase() || 'SECURITY'}*`,
+      `*${brief.title}*`,
+      '',
+      brief.summary,
+      '',
+      `• *Severity:* ${brief.severity || 'Medium'}`,
+      `• *Published:* ${shortDate(brief.publishedAt)}`,
+      `• *Source:* ${brief.sourceName || 'SecuBuzz'}`,
+      `• *Read 60-word brief:* ${canonicalUrl}`,
+    ].join('\n');
+
+    try {
+      await navigator.clipboard.writeText(snippet);
+      setCopiedSlack(true);
+      setTimeout(() => setCopiedSlack(false), 2000);
+    } catch {
+      setCopiedSlack(true);
+      setTimeout(() => setCopiedSlack(false), 2000);
+    }
+  };
+
+  const tweetText = `⚡ 60-Word Security Brief:\n${brief.title}`;
+  const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}&url=${encodeURIComponent(canonicalUrl)}`;
   const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(canonicalUrl)}`;
 
   return (
@@ -133,6 +158,20 @@ export function NewsArticle() {
                 className="rounded border border-line bg-surface px-2.5 py-1 text-ink transition-colors hover:border-accent hover:text-accent">
                 LinkedIn
               </a>
+              <button
+                type="button"
+                onClick={handleCopySlack}
+                className="inline-flex items-center gap-1 rounded border border-line bg-surface px-2.5 py-1 text-ink transition-colors hover:border-accent hover:text-accent">
+                {copiedSlack ? (
+                  <>
+                    <CheckIcon className="h-3.5 w-3.5 text-accent" aria-hidden="true" /> Copied (Slack / Teams)
+                  </>
+                ) : (
+                  <>
+                    <CopyIcon className="h-3.5 w-3.5 text-subtle" aria-hidden="true" /> Slack / Teams
+                  </>
+                )}
+              </button>
               <button
                 type="button"
                 onClick={handleCopyLink}
