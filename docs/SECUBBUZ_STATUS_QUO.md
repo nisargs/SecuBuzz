@@ -218,8 +218,14 @@ Please provide creative, high-impact suggestions across these 4 areas:
   - **Completed Polish**: Header brand unified to 'SecuBuzz' across all screens and tabs; `expo-haptics` tactile feedback wired across bookmarks, reports, and pull-to-refresh.
   - Main Store Listing updated with refined description and refreshed screenshots on Sep 29, 2026.
   - **Backend Hardening Roadmap ($0.00 Free Tier)**:
-    - Push Token API Rate Limiting (edge-level rate limiter to prevent spamming D1 tokens).
+    - Push Token API Rate Limiting (edge-level rate limiter to prevent spamming D1 tokens - completed).
     - Automated Cloudflare D1 database daily backup export via existing GitHub Actions cron.
+    - **Cloudflare Monetization Gateway (Post-Approval)**: Enable agent/crawler micropayments to charge commercial AI scrape bots, LLM search agents, and automated MCP consumers querying `secubuzz.com` feeds, while keeping human practitioner access 100% free.
+    - **Health & Uptime Monitoring ($0.00 Post-Approval Activation)**:
+      - Skipped during 14-day testing freeze; activate immediately upon Google Play production approval.
+      - **Recommended Tool (#1): HetrixTools** (15 monitors, 1-min intervals, free SSL cert & domain expiry tracking, free blacklist/IP reputation tracking, Discord/Telegram/Webhooks, 100% commercial-friendly free tier).
+      - **Backup Option (#2): UptimeObserver** (20 monitors, 5-min intervals, Telegram/Pushover; lacks SSL/domain expiry on free plan).
+      - Monitor endpoints: `https://secubuzz.com`, `https://secubuzz.com/health`, `https://secubuzz.com/api/news`, and `https://secubuzz.com/api/advisories`.
 
 ### Production Access Questionnaire (Google Play Submission Copy)
 *(Tailored specifically for SecuBuzz to avoid generic template rejection)*
@@ -253,4 +259,81 @@ Please provide creative, high-impact suggestions across these 4 areas:
 
 10. **What did you do differently this time? (If applicable):**
     > We focused heavily on immediate user utility and production hardening before launch: eliminating account sign-up friction entirely, building automated edge deduplication to prevent news fatigue, enforcing strict sober design standards without clickbait or emojis, and integrating authoritative threat telemetry (CISA KEV + EPSS) into an instantaneous mobile workflow.
+
+---
+
+## 9. Cloudflare Edge Intelligence, SEO & $0.00 Free-Tier Optimization Protocol
+
+### Daily Analytics Command (Run Anytime)
+To pull fresh, live Cloudflare Edge Network and Real User Monitoring (RUM) analytics:
+```powershell
+npm run analytics
+# Alternatively:
+node scripts/cf_analytics.mjs
+```
+*Outputs: Daily request volume, unique visitor IPs, real human page loads, top referring domains, device/OS breakdowns, API consumption, bot mitigation count, and Worker execution latency.*
+
+---
+
+### Baseline Telemetry Review (October 2026 Initial Audit)
+* **Weekly Edge Traffic**: 32,224 requests across 30+ countries; 5.52 GB bandwidth delivered.
+* **Traffic Spikes**: Sep 30 (8,377 requests / 662 uniques) & Oct 1 (10,672 requests / 446 uniques).
+* **Real User Engagement (RUM)**: 368 human page loads (161 sessions); 95% direct/PWA retention; emerging organic search discovery (`google.com`, `mokka.corp.google.com`).
+* **Device Distribution**: 73.9% Desktop, 26.0% Mobile, <0.1% Tablet.
+* **Operating Systems**: Windows (49.8%), Linux (32.6%), iOS (12.8%), Android (1.1%), ChromeOS (0.8%), macOS (0.5%).
+* **Browsers**: Desktop Chrome (82.6%), Mobile Chrome (7.1%), Mobile Safari (6.8%), Edge/Brave/Chromium (1.4%).
+
+---
+
+### 1. What We Are Doing Right
+1. **Sub-2ms Edge Compute on $0.00 Free Plan**:
+   - The Cloudflare Worker (`secubuzz-push`) handled 24,224 executions in 7 days with a **99.65% success rate** and a median CPU time of **1.14 ms** (well under the 10 ms free-tier limit).
+2. **Organic Discovery & Policy Audits Are Live**:
+   - Google Organic Search (`www.google.com`) is already delivering initial web discovery.
+   - Google Corporate traffic (`mokka.corp.google.com`) confirmed active reviews of `/privacy` and `/account-deletion`, confirming store compliance readiness.
+3. **High Signal Retention**:
+   - Strong direct reader return rates for daily news and CVE triage on `/`, `/news`, and `/advisories`.
+4. **Strong Data Consumption for Threat Telemetry**:
+   - External consumers, AI agents, and bots actively consume our EPSS and CVE metrics endpoints (~11,000 requests on `/api/epss`, `/data/v1/epss`, `/api/cve-metrics`).
+
+---
+
+### 2. What Was Risky / Wrong & The Deployed Fix
+1. **The 4.1 GB Uncached 404 Bot Trap (RESOLVED)**:
+   - **The Problem**: A legacy path (`/sites/default/files/feeds/known_exploited_vulnerabilities.json`) and automated scanners (`/wp-admin/install.php`) were requested 2,500+ times, consuming 4.11 GB of bandwidth. Because Cloudflare Workers Assets defaulted unknown file requests to SPA routing, the worker was executing full R2/feed fetches (`getArticles()`, `getKevAdvisories()`) and returning a 1.6MB HTML bundle with `'Cache-Control': 'no-cache, no-store'`. This caused 56 worker runs to exceed memory limits.
+   - **The Fix (Deployed Oct 4, 2026)**: In `worker/src/index.ts`, introduced an edge bot shield that instantly drops non-HTML extensions (`.json`, `.php`, `.asp`, `.env`, `.git`) and scanner paths with an ultra-light 9-byte `404 Not Found` response cached at Cloudflare's edge for 24 hours (`Cache-Control: public, max-age=86400, s-maxage=86400`). Subsequent bot scans are absorbed 100% by Cloudflare's CDN with zero worker CPU cost.
+2. **Missing Edge Cache Headers on JSON API Endpoints (RESOLVED)**:
+   - **The Problem**: `jsonResponse` in `worker/src/index.ts` only took two arguments `(data, status)` and silently discarded third-argument custom headers, causing `/api/epss` and `/api/cve-metrics` to be treated as dynamic uncached responses.
+   - **The Fix (Deployed Oct 4, 2026)**: Upgraded `jsonResponse` to accept `extraHeaders: Record<string, string> = {}`. Endpoints now emit `Cache-Control: public, max-age=86400, s-maxage=86400`. Repeated queries for identical CVE scores now hit Cloudflare's edge cache for 0ms without consuming worker execution quota.
+
+---
+
+### 3. SEO, Keywords & Web-to-App Conversion Strategy
+1. **Targeting High-Converting Technical Keywords**:
+   - *Active Traffic Identifiers*: Real searchers and scanners are searching for specific CVE numbers (`CVE-2026-88772`, `CVE-2026-86950`, `CVE-2026-72530`, `Citrix NetScaler zero-day`, `Gemini macOS full access`, `Apple CoreGraphics zero-day`).
+   - *Intent Keywords*: "EPSS exploit probability lookup", "CISA KEV daily tracker", "unbiased cybersecurity news 60 words", "real-time CVE threat intelligence".
+2. **Automated XML Sitemap Updates**:
+   - `https://secubuzz.com/sitemap.xml` automatically lists every recent security brief and CISA advisory. Maintain `robots.txt` allowing full indexing to capture long-tail Google searches for newly published CVEs.
+3. **Optimizing the Web-to-App Install Funnel**:
+   - The `/download` page recorded 28 page loads / 11 visits with zero marketing spend.
+   - Add a subtle, high-contrast banner on every web article and advisory page linking directly to the Google Play Store listing once production approval is granted.
+
+---
+
+### 4. Protocol to Keep Services Operational and 100% FREE ($0.00 Guarantee)
+
+| Service | Free Tier Limit | Current SecuBuzz Consumption | Safety Margin |
+| :--- | :--- | :--- | :--- |
+| **Cloudflare Workers** | 100,000 requests/day | ~3,500 requests/day | **96.5% buffer remaining** |
+| **Cloudflare Worker CPU** | 10 ms CPU time / request | 1.14 ms median CPU | **88.6% compute headroom** |
+| **Cloudflare D1 Database** | 5,000,000 read rows/day | <50,000 read rows/day | **99.0% database headroom** |
+| **Cloudflare Bandwidth** | Unlimited free egress | 5.52 GB/week | **100% free forever** |
+| **Cloudflare R2 Storage** | 10 GB storage, 10M reads | <50 MB storage | **99.5% storage headroom** |
+| **Groq AI Summarization** | 30 requests/min, 14.4k/day | ~150 requests/day (cron) | **98.9% API buffer** |
+
+#### Cardinal Free-Tier Rules:
+1. **Never Disable Edge Caching on Public Endpoints**: Always ensure static assets have `max-age=31536000`, API feeds have `max-age=1800` or `86400`, and error drops have `max-age=86400`. Cloudflare CDN absorbs 90%+ of repetitive traffic at zero cost.
+2. **No Unbounded Worker Scraping**: Feeds must only be ingested via the scheduled cron every 4 hours (`scripts/ingest.mjs`), never in ad-hoc synchronous HTTP worker requests.
+3. **Edge Bot Drop**: Keep the regex-based bot rejection at the entrance of `env.ASSETS` so malicious scanners never trigger expensive database or R2 subrequests.
+
 

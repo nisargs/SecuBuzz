@@ -13,7 +13,7 @@ export interface Advisory {
   name: string;
   dateAdded: string;
   dueDate: string;
-  cvss: number;
+  cvss?: number;
   severity: Severity;
   cwe: string;
   ransomware: boolean;

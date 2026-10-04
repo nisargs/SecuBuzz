@@ -76,6 +76,32 @@ export function NewsArticle() {
           <div className="max-w-[720px]">
             <div className="flex flex-wrap items-center gap-x-3 gap-y-1 font-mono text-xs">
               <span className="text-accent">{brief.category}</span>
+              {brief.severity && (
+                <span
+                  className={`inline-flex items-center gap-1.5 rounded border px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider ${
+                    brief.severity === 'CRITICAL'
+                      ? 'border-critical/40 bg-critical/10 text-critical'
+                      : brief.severity === 'HIGH'
+                      ? 'border-high/40 bg-high/10 text-high'
+                      : brief.severity === 'MEDIUM'
+                      ? 'border-medium/40 bg-medium/10 text-medium'
+                      : 'border-low/40 bg-low/10 text-low'
+                  }`}
+                >
+                  <span
+                    className={`h-1.5 w-1.5 rounded-full ${
+                      brief.severity === 'CRITICAL'
+                        ? 'bg-critical'
+                        : brief.severity === 'HIGH'
+                        ? 'bg-high'
+                        : brief.severity === 'MEDIUM'
+                        ? 'bg-medium'
+                        : 'bg-low'
+                    }`}
+                  />
+                  {brief.severity}
+                </span>
+              )}
               <span className="text-subtle">·</span>
               <time dateTime={brief.publishedAt} className="text-muted">
                 {`${shortDate(brief.publishedAt)}, ${clockTime(brief.publishedAt)} UTC`}

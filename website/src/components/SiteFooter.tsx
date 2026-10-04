@@ -42,8 +42,11 @@ export function SiteFooter() {
       </div>
       <div className="border-t border-line">
         <div className="mx-auto flex max-w-site flex-col gap-2 px-5 py-6 text-xs text-subtle md:flex-row md:items-center md:justify-between md:px-8">
-          <p>© 2026 MiSo Labs. All rights reserved.</p>
-          <p>Not affiliated with CISA. KEV data sourced from CISA’s public catalog.</p>
+          <div className="space-y-1">
+            <p>© 2026 MiSo Labs. All rights reserved.</p>
+            <p>All product names and trademarks are property of their respective owners, used for identification only.</p>
+          </div>
+          <p className="shrink-0">Not affiliated with CISA. KEV data sourced from CISA’s public catalog.</p>
         </div>
       </div>
     </footer>);

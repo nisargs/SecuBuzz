@@ -55,6 +55,17 @@ export function Publishers() {
               <li>A working RSS or Atom feed with publish timestamps</li>
             </ul>
           </div>
+
+          <div className="mt-10 border-t border-line pt-8">
+            <h2 className="text-lg font-semibold text-ink">Removal &amp; opt-out policy</h2>
+            <p className="mt-3 text-[15px] leading-relaxed text-muted">
+              Removal requests sent to{' '}
+              <a href="mailto:publishers@secubuzz.com" className="font-mono text-ink underline hover:text-accent">
+                publishers@secubuzz.com
+              </a>{' '}
+              are honored within 48 hours.
+            </p>
+          </div>
         </div>
         <div className="lg:sticky lg:top-24 lg:self-start">
           <PublisherForm />

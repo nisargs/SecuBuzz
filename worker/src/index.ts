@@ -24,12 +24,17 @@ const CORS_HEADERS = {
   'Access-Control-Allow-Headers': 'Content-Type, Authorization, x-admin-key',
 };
 
-function jsonResponse(data: unknown, status = 200): Response {
+function jsonResponse(
+  data: unknown,
+  status = 200,
+  extraHeaders: Record<string, string> = {}
+): Response {
   return new Response(JSON.stringify(data), {
     status,
     headers: {
       'Content-Type': 'application/json',
       ...CORS_HEADERS,
+      ...extraHeaders,
     },
   });
 }
@@ -772,26 +777,65 @@ export default {
 
       // Static Assets & Single Page Application (SPA) Routing via Cloudflare Workers Assets
       if (env.ASSETS) {
+        // Fast drop for automated bot scans and non-HTML extensions (protects free tier CPU & bandwidth)
+        const isKnownBotProbe = /^\/(wp-|cgi-bin|\.env|\.git|admin|login|phpmyadmin|shell|xmlrpc)/i.test(url.pathname);
+        const isNonHtmlExtension = /\.(json|php|asp|aspx|jsp|env|git|yaml|yml|bak|sql|tar|gz|zip)$/i.test(url.pathname);
+        if (isKnownBotProbe || isNonHtmlExtension) {
+          return new Response('Not found', {
+            status: 404,
+            headers: {
+              'Content-Type': 'text/plain; charset=utf-8',
+              'Cache-Control': 'public, max-age=86400, s-maxage=86400',
+              ...CORS_HEADERS,
+            },
+          });
+        }
+
         let assetRes = await env.ASSETS.fetch(request);
+        const contentType = assetRes.headers.get('content-type') || '';
+
+        // If static asset was found (CSS, JS, images, icons, etc.)
+        if (assetRes.status === 200 && !contentType.includes('text/html')) {
+          return assetRes;
+        }
+
         if (assetRes.status === 404) {
-          // If request is for a file asset with extension (e.g. .js, .css, .png, etc.), do NOT fallback to index.html!
           if (url.pathname.match(/\.[a-zA-Z0-9]+$/)) {
-            return new Response('Not found', { status: 404 });
+            return new Response('Not found', {
+              status: 404,
+              headers: {
+                'Content-Type': 'text/plain; charset=utf-8',
+                'Cache-Control': 'public, max-age=86400, s-maxage=86400',
+                ...CORS_HEADERS,
+              },
+            });
           }
           assetRes = await env.ASSETS.fetch(new Request(new URL('/', request.url), request));
         }
 
-        const contentType = assetRes.headers.get('content-type') || '';
-        if (assetRes.status === 200 && contentType.includes('text/html')) {
+        const finalContentType = assetRes.headers.get('content-type') || '';
+        if (assetRes.status === 200 && finalContentType.includes('text/html')) {
           const rawHtml = await assetRes.text();
           const [articles, advisories] = await Promise.all([getArticles(), getKevAdvisories()]);
-          const enrichedHtml = injectMetaTags(rawHtml, url.pathname, articles, advisories);
           const isRouteValid = isKnownSpaRoute(url.pathname, articles, advisories);
+
+          if (!isRouteValid) {
+            return new Response('404 Page Not Found', {
+              status: 404,
+              headers: {
+                'Content-Type': 'text/plain; charset=utf-8',
+                'Cache-Control': 'public, max-age=3600, s-maxage=3600',
+                ...CORS_HEADERS,
+              },
+            });
+          }
+
+          const enrichedHtml = injectMetaTags(rawHtml, url.pathname, articles, advisories);
           return new Response(enrichedHtml, {
-            status: isRouteValid ? 200 : 404,
+            status: 200,
             headers: {
               'Content-Type': 'text/html; charset=utf-8',
-              'Cache-Control': isRouteValid ? 'public, max-age=60, s-maxage=300' : 'no-cache, no-store',
+              'Cache-Control': 'public, max-age=60, s-maxage=300',
               ...CORS_HEADERS,
             },
           });

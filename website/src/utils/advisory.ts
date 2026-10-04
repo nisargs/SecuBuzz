@@ -88,10 +88,11 @@ export function formatAdvisorySnippet(advisory: Advisory, cvssScore?: number, ep
   const score = cvssScore ?? advisory.cvss;
   const severity = getCvssSeverity(score, advisory.severity).toUpperCase();
   const title = advisory.name || `${advisory.vendor} ${advisory.product} Vulnerability`;
+  const cvssPart = score !== undefined ? ` (CVSS ${score.toFixed(1)})` : '';
 
   const lines: string[] = [
     `*${advisory.cve}: ${title}*`,
-    `- Severity: ${severity} (CVSS ${score !== undefined ? score.toFixed(1) : '9.8'})`,
+    `- Severity: ${severity}${cvssPart}`,
     `- Vendor/Product: ${advisory.vendor} · ${advisory.product}`,
     `- Remediation Due: ${advisory.dueDate}`,
   ];

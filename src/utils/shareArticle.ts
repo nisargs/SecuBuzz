@@ -15,7 +15,7 @@ export async function shareArticle(article: Article): Promise<void> {
       'Source:',
       article.sourceUrl,
       '',
-      'Shared via SecuBuzz',
+      'Shared via SecuBuzz (https://secubuzz.com)',
     ].join('\n');
 
     await Share.share(

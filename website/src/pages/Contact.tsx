@@ -41,6 +41,16 @@ export function Contact() {
             </dl>
           </section>
           <section className="rounded-lg border border-line p-5">
+            <h2 className="text-sm font-semibold text-ink">Publishers &amp; removal requests</h2>
+            <p className="mt-2 text-sm leading-relaxed text-muted">
+              Removal requests sent to{' '}
+              <a href="mailto:publishers@secubuzz.com" className="font-mono text-ink hover:text-accent">
+                publishers@secubuzz.com
+              </a>{' '}
+              are honored within 48 hours.
+            </p>
+          </section>
+          <section className="rounded-lg border border-line p-5">
             <h2 className="text-sm font-semibold text-ink">Reporting a vulnerability in SecuBuzz?</h2>
             <p className="mt-2 text-sm leading-relaxed text-muted">
               Please email{' '}

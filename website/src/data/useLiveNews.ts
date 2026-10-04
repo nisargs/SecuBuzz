@@ -89,6 +89,8 @@ function transformFeed(feed: any[]): NewsBrief[] {
     const cves = extractCves(title + ' ' + summary);
     const keywords = getKeywords(title);
     const category = mapCategory(art.category, title + ' ' + summary);
+    const rawSev = (art.severity || '').toUpperCase();
+    const severity = (['CRITICAL', 'HIGH', 'MEDIUM', 'LOW'].includes(rawSev) ? rawSev : undefined) as NewsBrief['severity'];
     const time = Date.parse(publishedAt) || 0;
 
     let rawSlug = slugify(title);
@@ -153,6 +155,7 @@ function transformFeed(feed: any[]): NewsBrief[] {
       title,
       summary,
       category,
+      severity,
       source,
       sourceUrl,
       publishedAt,

@@ -47,6 +47,29 @@
   - **P0: EPSS Threat Enrichment**: Display probability percentile alongside CVSS and CISA KEV on CVE advisory cards.
   - **P1: Structured Threat Timeline**: Visual lifecycle (`Disclosed → PoC → Exploit → CISA KEV → Patch`) indicating what changed.
   - **P1: Authoritative NVD Vector Integration**: Pull CVSS v3.1/v4.0 vector strings directly from NIST NVD API.
+  - **P2: Cloudflare Monetization Gateway (Agent & Scraper Micropayments)**:
+    - Post-approval evaluation: Enable Cloudflare's Monetization Gateway to charge third-party AI bots, commercial LLM crawlers, and automated MCP consumers querying `secubuzz.com` feeds and API endpoints, while keeping the mobile app and human reader experience 100% free.
+  - **P2: Post-Approval Health & Uptime Monitoring ($0.00 Zero-Cost Hardening)**:
+    - Skipped during 14-day closed testing freeze; activate immediately upon Google Play production approval.
+    - **Recommended Tool (#1): HetrixTools** (15 monitors, 1-minute check frequency, free SSL certificate expiry alerts, free domain expiration alerts, free blacklist/IP reputation monitoring, free Telegram/Discord/Webhooks, 100% ad/commercial-friendly free tier).
+    - **Secondary Alternative (#2): UptimeObserver** (20 monitors, 5-minute check frequency, Telegram/Pushover/Webhooks; lacks SSL/domain expiry on free tier).
+    - **Target Endpoints to Monitor**:
+      1. `https://secubuzz.com/` (Website / Landing page)
+      2. `https://secubuzz.com/health` (Cloudflare Worker & R2 health check)
+      3. `https://secubuzz.com/api/news` (JSON article feed)
+      4. `https://secubuzz.com/api/advisories` (CISA KEV / EPSS advisory feed)
+  - **P2: Open-Source Media, Ingestion & ASO Tooling Stack (Post-Approval Activation)**:
+    - **Play Store Screenshots & Demo Videos**:
+      - `software-mansion-labs/goldie`: Open-source agentic app store screenshot & preview generator built specifically for Expo/React Native.
+      - `siddharthvaddem/openscreen`: Free MIT Screen Studio alternative for professional screen recording with auto-zoom, cursor smoothing, and motion blur.
+      - `feitangyuan/onetake`: Programmatic one-take product demo film generation.
+    - **Threat Intelligence Expansion (Android ASB)**:
+      - `docs.crawl4ai.com`: Free asynchronous LLM-friendly crawler to scrape non-RSS security tables (e.g. monthly Android Security Bulletins at `source.android.com/docs/security/bulletin/`).
+    - **Anti-AI Slop Ingestion Guardrails**:
+      - `petergyang/no-ai-slop` & `jalaalrd/anti-ai-slop-writing`: Strict rules integrated into `scripts/ingest.mjs` Groq prompt to eradicate AI filler words ("delve", "tapestry", "in today's digital age") and maintain razor-sharp technical 60-word briefs.
+    - **SEO & Localization Strategy**:
+      - `every-app/open-seo`: Open-source SEO workspace and MCP server for continuous web auditing.
+      - **Localization Decision**: Reject dynamic server translation to prevent cybersecurity terminology corruption and VPS costs; localize Google Play Store listing metadata (title, short description, screenshots) for top international markets.
 - **Strict Guardrails:**
   - **No UGC / Social Feeds:** Reject open comments, likes, or user-generated text. Preserves sober, no-noise positioning and avoids legal moderation liability. If community signal is added, keep it strictly to anonymous 1-tap poll metrics (e.g., *"Are you affected? Yes 30% / No 70%"*).
   - **No Full-Text Scraping for IOCs:** Do not scrape full publisher articles to extract IPs/hashes (copyright risk). Extract structured IOCs only from designated open threat feeds (ThreatFox, CISA KEV) when needed.

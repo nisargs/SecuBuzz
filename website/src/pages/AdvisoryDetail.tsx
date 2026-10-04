@@ -376,7 +376,9 @@ export function AdvisoryDetail() {
               ) : (
                 <div className="mt-4">
                   <p className="font-mono text-xs text-muted">
-                    Base Score: {effectiveCvss.toFixed(1)} ({effectiveSeverity})
+                    {effectiveCvss !== undefined
+                      ? `Base Score: ${effectiveCvss.toFixed(1)} (${effectiveSeverity})`
+                      : `Severity: ${effectiveSeverity} (CISA KEV Active Exploit)`}
                   </p>
                   <p className="mt-1 text-xs text-subtle">
                     Detailed metric breakdown available directly on NIST NVD.

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import { SiteHeader } from './SiteHeader';
 import { SiteFooter } from './SiteFooter';
+import { ErrorBoundary } from './ErrorBoundary';
 
 export function Layout() {
   const { pathname } = useLocation();
@@ -20,9 +21,10 @@ export function Layout() {
       </a>
       <SiteHeader />
       <main id="main" className="flex-1">
-        <Outlet />
+        <ErrorBoundary key={pathname}>
+          <Outlet />
+        </ErrorBoundary>
       </main>
       <SiteFooter />
     </div>);
-
 }

@@ -8,11 +8,42 @@ interface NewsBriefItemProps {
   brief: NewsBrief;
 }
 
+const severityStyles: Record<string, { dot: string; badge: string }> = {
+  CRITICAL: {
+    dot: 'bg-critical',
+    badge: 'border-critical/40 bg-critical/10 text-critical',
+  },
+  HIGH: {
+    dot: 'bg-high',
+    badge: 'border-high/40 bg-high/10 text-high',
+  },
+  MEDIUM: {
+    dot: 'bg-medium',
+    badge: 'border-medium/40 bg-medium/10 text-medium',
+  },
+  LOW: {
+    dot: 'bg-low',
+    badge: 'border-low/40 bg-low/10 text-low',
+  },
+};
+
 export function NewsBriefItem({ brief }: NewsBriefItemProps) {
+  const isCritical = brief.severity === 'CRITICAL';
+
   return (
-    <article className="grid gap-3 py-7 md:grid-cols-[140px_1fr] md:gap-8">
-      <div className="flex items-center gap-3 font-mono text-xs md:flex-col md:items-start md:gap-1.5 md:pt-1">
+    <article className={`grid gap-3 py-7 md:grid-cols-[140px_1fr] md:gap-8 ${isCritical ? 'relative before:absolute before:-left-3 before:top-6 before:bottom-6 before:w-0.5 before:bg-critical before:rounded-full md:before:-left-4' : ''}`}>
+      <div className="flex flex-wrap items-center gap-2 font-mono text-xs md:flex-col md:items-start md:gap-1.5 md:pt-1">
         <span className="text-accent">{brief.category}</span>
+        {brief.severity && severityStyles[brief.severity] && (
+          <span
+            className={`inline-flex items-center gap-1.5 rounded border px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider ${severityStyles[brief.severity].badge}`}
+          >
+            <span
+              className={`h-1.5 w-1.5 rounded-full ${severityStyles[brief.severity].dot}`}
+            />
+            {brief.severity}
+          </span>
+        )}
         <time dateTime={brief.publishedAt} className="text-subtle">
           {timeAgo(brief.publishedAt)}
         </time>

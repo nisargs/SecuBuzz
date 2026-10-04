@@ -2,7 +2,7 @@ import React from 'react';
 import { PlayStoreButton } from '../components/PlayStoreButton';
 import { PhoneMockup } from '../components/PhoneMockup';
 import { FaqAccordion } from '../components/FaqAccordion';
-import { appFeatures, appRequirements, downloadFaq } from '../data/site';
+import { appFeatures, appRequirements, downloadFaq, PLAY_STORE_TESTING_URL } from '../data/site';
 import { Seo } from '../components/Seo';
 
 export function Download() {
@@ -22,8 +22,20 @@ export function Download() {
             <p className="mt-5 max-w-lg text-lg leading-relaxed text-muted">
               Free, zero-tracking security intelligence. 60-word briefs and direct CISA KEV threat alerts delivered without noise, algorithms, or account requirements.
             </p>
-            <div className="mt-8">
+            <div className="mt-8 flex flex-col items-start gap-2.5">
               <PlayStoreButton size="lg" />
+              <p className="text-xs text-subtle">
+                Invited testers can also opt in directly via the{' '}
+                <a
+                  href={PLAY_STORE_TESTING_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent underline transition-colors hover:text-ink"
+                >
+                  Web Testing Opt-In
+                </a>
+                .
+              </p>
             </div>
             <dl className="mt-10 grid max-w-lg grid-cols-2 gap-x-8 gap-y-5 border-t border-line pt-6">
               {appRequirements.map((r) =>

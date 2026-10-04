@@ -125,7 +125,7 @@ export function CveCard({
         'Source:',
         advisory.url,
         '',
-        'Shared via SecuBuzz',
+        'Shared via SecuBuzz (https://secubuzz.com)',
       );
 
       await Share.share(

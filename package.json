@@ -25,7 +25,8 @@
   },
   "devDependencies": {
     "@types/react": "~19.2.2",
-    "typescript": "~6.0.3"
+    "typescript": "~6.0.3",
+    "wrangler": "^4.147.0"
   },
   "scripts": {
     "start": "expo start",
@@ -37,7 +38,8 @@
     "web:build": "node scripts/sync_website_data.mjs && npm run --prefix website build",
     "worker:dev": "npm run --prefix worker dev",
     "worker:deploy": "npm run --prefix worker deploy",
-    "deploy:web": "npm run web:build && npm run worker:deploy"
+    "deploy:web": "npm run web:build && npm run worker:deploy",
+    "analytics": "node scripts/cf_analytics.mjs"
   },
   "private": true
 }

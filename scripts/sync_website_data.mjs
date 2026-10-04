@@ -212,11 +212,15 @@ async function syncNews() {
       seenSlugs.set(slug, 1);
     }
 
+    const rawSev = (art.severity || '').toUpperCase();
+    const severity = ['CRITICAL', 'HIGH', 'MEDIUM', 'LOW'].includes(rawSev) ? rawSev : undefined;
+
     const item = {
       slug,
       title,
       summary,
       category,
+      severity,
       source,
       sourceUrl,
       publishedAt,
@@ -316,8 +320,10 @@ async function syncAdvisories() {
         : (item.cwe || '');
       const cleanCwe = rawCwe ? rawCwe.replace(/^(CWE[:\s-]+)+/i, 'CWE-').trim() : '—';
 
-      const cvss = CVE_SCORE_OVERRIDES[cve] ?? (typeof item.cvss === 'number' ? item.cvss : 9.8);
-      const severity = cvss >= 9.0 ? 'Critical' : (cvss >= 7.0 ? 'High' : (cvss >= 4.0 ? 'Medium' : 'Low'));
+      const cvss = CVE_SCORE_OVERRIDES[cve] ?? (typeof item.cvss === 'number' ? item.cvss : undefined);
+      const severity = cvss !== undefined
+        ? (cvss >= 9.0 ? 'Critical' : (cvss >= 7.0 ? 'High' : (cvss >= 4.0 ? 'Medium' : 'Low')))
+        : (isRansomware ? 'Critical' : 'High');
 
       return {
         cve,

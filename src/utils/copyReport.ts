@@ -47,7 +47,7 @@ export function formatAdvisoryMarkdown(advisory: CveAdvisory): string {
   }
 
   const sourceUrl = advisory.url || `https://nvd.nist.gov/vuln/detail/${advisory.cveID}`;
-  lines.push('', `- Source: ${advisory.source || 'CISA KEV'} (${sourceUrl})`, '', 'Shared via SecuBuzz');
+  lines.push('', `- Source: ${advisory.source || 'CISA KEV'} (${sourceUrl})`, '', 'Shared via SecuBuzz · secubuzz.com');
 
   return lines.join('\n');
 }
@@ -89,7 +89,7 @@ export function formatArticleMarkdown(article: Article): string {
     lines.push('', cleanSummary);
   }
 
-  lines.push('', `- Source: ${article.sourceName} (${article.sourceUrl})`, '', 'Shared via SecuBuzz');
+  lines.push('', `- Source: ${article.sourceName} (${article.sourceUrl})`, '', 'Shared via SecuBuzz · secubuzz.com');
 
   return lines.join('\n');
 }

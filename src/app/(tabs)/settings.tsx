@@ -1,6 +1,7 @@
 import { Ionicons } from '@expo/vector-icons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { router } from 'expo-router';
+import * as Linking from 'expo-linking';
 import { WALKTHROUGH_STORAGE_KEY } from '../../components/OnboardingModal';
 import { useCallback, useEffect, useState } from 'react';
 import {
@@ -315,8 +316,19 @@ export default function SettingsScreen() {
           <Text style={[styles.footerText, { color: colors.textMuted }]}>
             SecuBuzz Intelligence · Version 1.0.2
           </Text>
-          <Text style={[styles.footerSubtext, { color: colors.textMuted }]}>
-            Crafted by MiSo Labs
+          <Pressable
+            accessibilityRole="link"
+            accessibilityLabel="Visit SecuBuzz website"
+            hitSlop={8}
+            onPress={() => void Linking.openURL('https://secubuzz.com')}
+            style={({ pressed }) => [{ opacity: pressed ? 0.7 : 1, marginTop: 4 }]}
+          >
+            <Text style={[styles.footerSubtext, { color: accentColor }]}>
+              secubuzz.com · MiSo Labs
+            </Text>
+          </Pressable>
+          <Text style={[styles.footerSubtext, { color: colors.textMuted, fontSize: 10, textAlign: 'center', marginTop: 8, maxWidth: 300 }]}>
+            All product names and trademarks are property of their respective owners, used for identification only.
           </Text>
         </View>
       </ScrollView>

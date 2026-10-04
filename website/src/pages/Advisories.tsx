@@ -68,6 +68,14 @@ export function Advisories() {
   }, [advisories, query, ransomwareOnly, dueThisWeekOnly, vendorFilter, severityFilter, sort]);
 
   const ransomwareCount = advisories.filter((a) => a.ransomware).length;
+  const criticalCount = useMemo(
+    () => advisories.filter((a) => getCvssSeverity(a.cvss, a.severity).toUpperCase() === 'CRITICAL').length,
+    [advisories]
+  );
+  const highCount = useMemo(
+    () => advisories.filter((a) => getCvssSeverity(a.cvss, a.severity).toUpperCase() === 'HIGH').length,
+    [advisories]
+  );
   const totalPages = Math.max(1, Math.ceil(results.length / PAGE_SIZE));
   const safePage = Math.min(page, totalPages);
   const startIndex = (safePage - 1) * PAGE_SIZE;
@@ -187,11 +195,9 @@ export function Advisories() {
                   setPage(1);
                 }}
                 className="h-8 rounded-md border border-line bg-surface px-2 text-xs text-ink focus:border-accent focus:outline-none">
-                <option value="ALL">All Severities</option>
-                <option value="CRITICAL">Critical (CVSS 9.0–10.0)</option>
-                <option value="HIGH">High (CVSS 7.0–8.9)</option>
-                <option value="MEDIUM">Medium (CVSS 4.0–6.9)</option>
-                <option value="LOW">Low (CVSS &lt; 4.0)</option>
+                <option value="ALL">All Severities ({advisories.length})</option>
+                <option value="CRITICAL">Critical ({criticalCount})</option>
+                <option value="HIGH">High ({highCount})</option>
               </select>
             </label>
 

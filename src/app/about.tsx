@@ -105,11 +105,33 @@ export default function AboutScreen() {
           </Pressable>
         </View>
 
-        <InfoRow
-          label="Website"
-          value="secubuzz.com"
-          colors={colors}
-        />
+        <View style={[styles.infoRow, { borderTopColor: colors.border }]}>
+          <Text style={[styles.infoLabel, { color: colors.textMuted }]}>
+            Website
+          </Text>
+
+          <Pressable
+            accessibilityRole="link"
+            accessibilityLabel="SecuBuzz Website"
+            onPress={() =>
+              void Linking.openURL(
+                'https://secubuzz.com',
+              )
+            }
+            style={styles.developerRow}
+          >
+            <Text style={[styles.developerName, { color: accentColor }]}>
+              secubuzz.com
+            </Text>
+
+            <Ionicons
+              name="open-outline"
+              size={13}
+              color={accentColor}
+              style={styles.openIcon}
+            />
+          </Pressable>
+        </View>
 
         <InfoRow
           label="Purpose"
@@ -168,6 +190,16 @@ export default function AboutScreen() {
             It is not a substitute for professional
             cybersecurity advice, incident response,
             legal advice, or security testing.
+          </Text>
+        </View>
+
+        <View style={[styles.section, { borderTopColor: colors.border }]}>
+          <Text style={[styles.sectionTitle, { color: colors.textPrimary }]}>
+            Trademarks
+          </Text>
+
+          <Text style={[styles.sectionText, { color: colors.textSecondary }]}>
+            All product names and trademarks are property of their respective owners, used for identification only.
           </Text>
         </View>
       </ScrollView>

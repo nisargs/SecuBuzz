@@ -6,6 +6,13 @@
 	"compatibility_flags": [
 		"nodejs_compat"
 	],
+	"routes": [
+		{
+			"pattern": "secubuzz.com",
+			"custom_domain": true
+		}
+	],
+	"workers_dev": true,
 	"d1_databases": [
 		{
 			"binding": "DB",

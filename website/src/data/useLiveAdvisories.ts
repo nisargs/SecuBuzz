@@ -17,8 +17,10 @@ function transformKev(list: any[]): Advisory[] {
       : (item.cwe || '');
     const cleanCwe = rawCwe ? rawCwe.replace(/^(CWE[:\s-]+)+/i, 'CWE-').trim() : '—';
 
-    const cvss = CVE_SCORE_OVERRIDES[cve] ?? (typeof item.cvss === 'number' ? item.cvss : 9.8);
-    const severity = getCvssSeverity(cvss, isRansomware ? 'Critical' : 'High');
+    const cvss = CVE_SCORE_OVERRIDES[cve] ?? (typeof item.cvss === 'number' ? item.cvss : undefined);
+    const severity = cvss !== undefined
+      ? getCvssSeverity(cvss)
+      : (isRansomware ? 'Critical' : 'High');
 
     return {
       cve,
