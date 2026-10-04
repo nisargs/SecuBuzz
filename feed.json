@@ -1,5 +1,18 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-asks-claude-users-to-share-voice-data-for-ai-model-training/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-asks-claude-users-to-share-voice-data-for-ai-model-training/",
+    "title": "Anthropic Requests Claude Users Share Voice Data for Model Training",
+    "headline": "Anthropic Requests Claude Users Share Voice Data for Model Training",
+    "summary": "Anthropic has begun asking Claude users to voluntarily share their voice conversations to help train and improve its AI models. The initiative involves collecting user voice data for model training purposes, with no indication of data breaches or security incidents.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-04T10:53:21.000Z",
+    "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-asks-claude-users-to-share-voice-data-for-ai-model-training/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/10/04/week-in-review-researcher-breaks-into-microsoft-analytics-service-netscaler-rce-0-day-exploited/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/04/week-in-review-researcher-breaks-into-microsoft-analytics-service-netscaler-rce-0-day-exploited/",
     "title": "Microsoft Analytics Breach and Citrix NetScaler RCE Zero‑Days Exploited",

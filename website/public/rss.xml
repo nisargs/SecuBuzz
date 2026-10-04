@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 Oct 2026 08:19:15 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 04 Oct 2026 12:18:41 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Anthropic Requests Claude Users Share Voice Data for Model Training</title>
+      <link>https://secubuzz.com/news/anthropic-requests-claude-users-share-voice-data-for-model-t</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-requests-claude-users-share-voice-data-for-model-t</guid>
+      <description><![CDATA[Anthropic has begun asking Claude users to voluntarily share their voice conversations to help train and improve its AI models. The initiative involves collecting user voice data for model training purposes, with no indication of data breaches or security incidents.]]></description>
+      <pubDate>Sun, 04 Oct 2026 10:53:21 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-asks-claude-users-to-share-voice-data-for-ai-model-training/">BleepingComputer</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>Microsoft Analytics Breach and Citrix NetScaler RCE Zero‑Days Exploited</title>
       <link>https://secubuzz.com/news/microsoft-analytics-breach-and-citrix-netscaler-rce-zero-day</link>
@@ -447,15 +456,6 @@
       <pubDate>Thu, 01 Oct 2026 17:16:41 GMT</pubDate>
       <source url="https://www.securityweek.com/osavul-lands-10-million-to-spot-hostile-intent-across-cyber-physical-domains/">SecurityWeek</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>ThreatsDay Highlights AI-Powered Zero-Day Chain and Model Inspection RCE</title>
-      <link>https://secubuzz.com/news/threatsday-highlights-ai-powered-zero-day-chain-and-model-in</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/threatsday-highlights-ai-powered-zero-day-chain-and-model-in</guid>
-      <description><![CDATA[ThreatsDay reports an AI-driven zero‑day exploitation chain that leverages model inspection Remote Code Execution (RCE) and other attack vectors. The report details how seemingly benign actions—such as inspecting models, caching data, or compiling code—can be abused to execute arbitrary code, exposing systems to significant risk.]]></description>
-      <pubDate>Thu, 01 Oct 2026 16:45:38 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/threatsday-ai-powered-zero-day-chain.html">The Hacker News</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

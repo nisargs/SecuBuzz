@@ -11,6 +11,18 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "anthropic-requests-claude-users-share-voice-data-for-model-t",
+    "title": "Anthropic Requests Claude Users Share Voice Data for Model Training",
+    "summary": "Anthropic has begun asking Claude users to voluntarily share their voice conversations to help train and improve its AI models. The initiative involves collecting user voice data for model training purposes, with no indication of data breaches or security incidents.",
+    "category": "Policy",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-asks-claude-users-to-share-voice-data-for-ai-model-training/",
+    "publishedAt": "2026-10-04T10:53:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "microsoft-analytics-breach-and-citrix-netscaler-rce-zero-day",
     "title": "Microsoft Analytics Breach and Citrix NetScaler RCE Zero‑Days Exploited",
     "summary": "A 16‑year‑old researcher accessed Microsoft’s internal analytics service, exposing 17 trillion rows of employee and Bing search data. Simultaneously, Citrix NetScaler suffered two RCE zero‑days (CVE‑2026‑88771, CVE‑2026‑88772) exploited worldwide. Citrix patched eight critical and high‑severity vulnerabilities to mitigate the attacks.",
