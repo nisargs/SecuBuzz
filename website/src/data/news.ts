@@ -11,6 +11,32 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "citrix-releases-emergency-patch-for-netscaler-saml-dos-vulne",
+    "title": "Citrix Releases Emergency Patch for NetScaler SAML DoS Vulnerability Exploited in Zero-Day Attacks",
+    "summary": "Citrix issued emergency updates for a NetScaler denial‑of‑service flaw identified as CVE‑2026‑88779, which attackers have used in zero‑day attacks. Researchers are examining whether the vulnerability could also enable remote code execution. The patch mitigates the DoS impact and prevents further exploitation.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/citrix-patches-netscaler-saml-zero-day-exploited-in-attacks/",
+    "publishedAt": "2026-10-04T21:58:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "trump-appoints-national-intelligence-director-jay-clayton-to",
+    "title": "Trump Appoints National Intelligence Director Jay Clayton to Head New Federal AI Task Force",
+    "summary": "President Trump announced that National Intelligence Director Jay Clayton will lead a newly formed federal task force focused on artificial intelligence. The move follows a White House meeting with AI industry leaders and aims to coordinate national AI strategy and policy across government agencies.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/trump-names-national-intelligence-director-jay-clayton-to-lead-a-new-federal-ai-task-force/",
+    "publishedAt": "2026-10-04T14:57:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "anthropic-requests-claude-users-share-voice-data-for-model-t",
     "title": "Anthropic Requests Claude Users Share Voice Data for Model Training",
     "summary": "Anthropic has begun asking Claude users to voluntarily share their voice conversations to help train and improve its AI models. The initiative involves collecting user voice data for model training purposes, with no indication of data breaches or security incidents.",
@@ -19,19 +45,6 @@ export const news: NewsBrief[] = [
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-asks-claude-users-to-share-voice-data-for-ai-model-training/",
     "publishedAt": "2026-10-04T10:53:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "microsoft-analytics-breach-and-citrix-netscaler-rce-zero-day",
-    "title": "Microsoft Analytics Breach and Citrix NetScaler RCE Zero‑Days Exploited",
-    "summary": "A 16‑year‑old researcher accessed Microsoft’s internal analytics service, exposing 17 trillion rows of employee and Bing search data. Simultaneously, Citrix NetScaler suffered two RCE zero‑days (CVE‑2026‑88771, CVE‑2026‑88772) exploited worldwide. Citrix patched eight critical and high‑severity vulnerabilities to mitigate the attacks.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/04/week-in-review-researcher-breaks-into-microsoft-analytics-service-netscaler-rce-0-day-exploited/",
-    "publishedAt": "2026-10-04T08:00:19.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []

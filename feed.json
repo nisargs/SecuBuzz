@@ -1,5 +1,40 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/citrix-patches-netscaler-saml-zero-day-exploited-in-attacks/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/citrix-patches-netscaler-saml-zero-day-exploited-in-attacks/",
+    "title": "Citrix Releases Emergency Patch for NetScaler SAML DoS Vulnerability Exploited in Zero-Day Attacks",
+    "headline": "Citrix Releases Emergency Patch for NetScaler SAML DoS Vulnerability Exploited in Zero-Day Attacks",
+    "summary": "Citrix issued emergency updates for a NetScaler denial‑of‑service flaw identified as CVE‑2026‑88779, which attackers have used in zero‑day attacks. Researchers are examining whether the vulnerability could also enable remote code execution. The patch mitigates the DoS impact and prevents further exploitation.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-04T21:58:01.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/citrix-patches-netscaler-saml-zero-day-exploited-in-attacks/",
+    "additionalSources": [
+      {
+        "source": "CISA",
+        "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/04/cisa-adds-one-known-exploited-vulnerability-catalog"
+      },
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/04/week-in-review-researcher-breaks-into-microsoft-analytics-service-netscaler-rce-0-day-exploited/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.securityweek.com/trump-names-national-intelligence-director-jay-clayton-to-lead-a-new-federal-ai-task-force/",
+    "sourceUrl": "https://www.securityweek.com/trump-names-national-intelligence-director-jay-clayton-to-lead-a-new-federal-ai-task-force/",
+    "title": "Trump Appoints National Intelligence Director Jay Clayton to Head New Federal AI Task Force",
+    "headline": "Trump Appoints National Intelligence Director Jay Clayton to Head New Federal AI Task Force",
+    "summary": "President Trump announced that National Intelligence Director Jay Clayton will lead a newly formed federal task force focused on artificial intelligence. The move follows a White House meeting with AI industry leaders and aims to coordinate national AI strategy and policy across government agencies.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-04T14:57:25.000Z",
+    "url": "https://www.securityweek.com/trump-names-national-intelligence-director-jay-clayton-to-lead-a-new-federal-ai-task-force/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-asks-claude-users-to-share-voice-data-for-ai-model-training/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-asks-claude-users-to-share-voice-data-for-ai-model-training/",
     "title": "Anthropic Requests Claude Users Share Voice Data for Model Training",
@@ -11,24 +46,6 @@
     "publishedAt": "2026-10-04T10:53:21.000Z",
     "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-asks-claude-users-to-share-voice-data-for-ai-model-training/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/04/week-in-review-researcher-breaks-into-microsoft-analytics-service-netscaler-rce-0-day-exploited/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/04/week-in-review-researcher-breaks-into-microsoft-analytics-service-netscaler-rce-0-day-exploited/",
-    "title": "Microsoft Analytics Breach and Citrix NetScaler RCE Zero‑Days Exploited",
-    "headline": "Microsoft Analytics Breach and Citrix NetScaler RCE Zero‑Days Exploited",
-    "summary": "A 16‑year‑old researcher accessed Microsoft’s internal analytics service, exposing 17 trillion rows of employee and Bing search data. Simultaneously, Citrix NetScaler suffered two RCE zero‑days (CVE‑2026‑88771, CVE‑2026‑88772) exploited worldwide. Citrix patched eight critical and high‑severity vulnerabilities to mitigate the attacks.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-04T08:00:19.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/04/week-in-review-researcher-breaks-into-microsoft-analytics-service-netscaler-rce-0-day-exploited/",
-    "additionalSources": [
-      {
-        "source": "Dark Reading",
-        "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/kiteworks-citrix-incidents-challenges-zero-day-response"
-      }
-    ]
   },
   {
     "id": "https://thehackernews.com/2026/10/shinyhunters-suspect-rey-reportedly.html",
