@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "microsoft-analytics-breach-and-citrix-netscaler-rce-zero-day",
+    "title": "Microsoft Analytics Breach and Citrix NetScaler RCE Zero‑Days Exploited",
+    "summary": "A 16‑year‑old researcher accessed Microsoft’s internal analytics service, exposing 17 trillion rows of employee and Bing search data. Simultaneously, Citrix NetScaler suffered two RCE zero‑days (CVE‑2026‑88771, CVE‑2026‑88772) exploited worldwide. Citrix patched eight critical and high‑severity vulnerabilities to mitigate the attacks.",
+    "category": "Vulnerability",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/04/week-in-review-researcher-breaks-into-microsoft-analytics-service-netscaler-rce-0-day-exploited/",
+    "publishedAt": "2026-10-04T08:00:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "shinyhunters-suspect-rey-detained-in-jordan",
+    "title": "ShinyHunters Suspect Rey Detained in Jordan",
+    "summary": "A suspected member of the ShinyHunters digital extortion group, known as Rey, was reportedly detained by Jordanian authorities and is cooperating with the FBI. The arrest is part of an ongoing effort to identify and apprehend members of the group.",
+    "category": "Policy",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/shinyhunters-suspect-rey-reportedly.html",
+    "publishedAt": "2026-10-04T07:22:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "ta419-targets-u-s-ai-policy-experts-with-phishing",
+    "title": "TA419 Targets U.S. AI Policy Experts with Phishing",
+    "summary": "The China-aligned TA419 group has launched credential phishing campaigns against U.S. AI policy experts, impersonating economists, policymakers, and an Anthropic employee to harvest credentials. The attacks aim to steal access to sensitive AI research and policy discussions.",
+    "category": "Malware",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/china-aligned-ta419-targets-us-ai.html",
+    "publishedAt": "2026-10-04T07:20:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "google-gemini-could-gain-full-access-to-macos-files-apps-and",
     "title": "Google Gemini Could Gain Full Access to macOS Files, Apps, and Web",
     "summary": "Google’s Gemini AI may soon be able to read any file on a macOS device, launch applications, and browse the web without user permission, potentially enabling unauthorized actions on the system. No specific CVE is cited, and no public exploit is confirmed.",
@@ -18,18 +54,6 @@ export const news: NewsBrief[] = [
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/google/google-gemini-could-soon-get-full-access-to-your-macs-files-apps-and-the-web/",
     "publishedAt": "2026-10-03T23:12:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "shinyhunters-hacker-detained-in-jordan-cooperating-with-fbi",
-    "title": "ShinyHunters Hacker Detained in Jordan, Cooperating with FBI",
-    "summary": "A member of the ShinyHunters extortion group, known online as \"Rey\", was reportedly detained in Jordan and is cooperating with the FBI to help locate other group members. The arrest is part of ongoing efforts to disrupt the group’s operations.",
-    "category": "Policy",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/shinyhunters-hacker-reportedly-detained-in-jordan-aiding-fbi/",
-    "publishedAt": "2026-10-03T19:09:38.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -189,18 +213,6 @@ export const news: NewsBrief[] = [
     "cves": [
       "CVE-2026-63688"
     ],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "kiteworks-and-citrix-highlight-zero-day-response-challenges",
-    "title": "Kiteworks and Citrix Highlight Zero‑Day Response Challenges",
-    "summary": "Kiteworks advised customers to shut down its data‑protection platform for nine hours, while Citrix remained silent before issuing a patch. Both incidents underscore the difficulties organizations face when responding to zero‑day vulnerabilities and coordinating timely remediation.",
-    "category": "Vulnerability",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/kiteworks-citrix-incidents-challenges-zero-day-response",
-    "publishedAt": "2026-10-02T16:56:30.000Z",
-    "cves": [],
     "additionalSources": [],
     "aliases": []
   },

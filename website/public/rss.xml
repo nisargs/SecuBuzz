@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 Oct 2026 05:56:32 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 04 Oct 2026 08:19:15 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Microsoft Analytics Breach and Citrix NetScaler RCE Zero‑Days Exploited</title>
+      <link>https://secubuzz.com/news/microsoft-analytics-breach-and-citrix-netscaler-rce-zero-day</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-analytics-breach-and-citrix-netscaler-rce-zero-day</guid>
+      <description><![CDATA[A 16‑year‑old researcher accessed Microsoft’s internal analytics service, exposing 17 trillion rows of employee and Bing search data. Simultaneously, Citrix NetScaler suffered two RCE zero‑days (CVE‑2026‑88771, CVE‑2026‑88772) exploited worldwide. Citrix patched eight critical and high‑severity vulnerabilities to mitigate the attacks.]]></description>
+      <pubDate>Sun, 04 Oct 2026 08:00:19 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/04/week-in-review-researcher-breaks-into-microsoft-analytics-service-netscaler-rce-0-day-exploited/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>ShinyHunters Suspect Rey Detained in Jordan</title>
+      <link>https://secubuzz.com/news/shinyhunters-suspect-rey-detained-in-jordan</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/shinyhunters-suspect-rey-detained-in-jordan</guid>
+      <description><![CDATA[A suspected member of the ShinyHunters digital extortion group, known as Rey, was reportedly detained by Jordanian authorities and is cooperating with the FBI. The arrest is part of an ongoing effort to identify and apprehend members of the group.]]></description>
+      <pubDate>Sun, 04 Oct 2026 07:22:05 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/shinyhunters-suspect-rey-reportedly.html">The Hacker News</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>TA419 Targets U.S. AI Policy Experts with Phishing</title>
+      <link>https://secubuzz.com/news/ta419-targets-u-s-ai-policy-experts-with-phishing</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ta419-targets-u-s-ai-policy-experts-with-phishing</guid>
+      <description><![CDATA[The China-aligned TA419 group has launched credential phishing campaigns against U.S. AI policy experts, impersonating economists, policymakers, and an Anthropic employee to harvest credentials. The attacks aim to steal access to sensitive AI research and policy discussions.]]></description>
+      <pubDate>Sun, 04 Oct 2026 07:20:32 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/china-aligned-ta419-targets-us-ai.html">The Hacker News</source>
+      <category>Malware</category>
+    </item>
     <item>
       <title>Google Gemini Could Gain Full Access to macOS Files, Apps, and Web</title>
       <link>https://secubuzz.com/news/google-gemini-could-gain-full-access-to-macos-files-apps-and</link>
@@ -15,15 +42,6 @@
       <pubDate>Sat, 03 Oct 2026 23:12:34 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/google/google-gemini-could-soon-get-full-access-to-your-macs-files-apps-and-the-web/">BleepingComputer</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>ShinyHunters Hacker Detained in Jordan, Cooperating with FBI</title>
-      <link>https://secubuzz.com/news/shinyhunters-hacker-detained-in-jordan-cooperating-with-fbi</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/shinyhunters-hacker-detained-in-jordan-cooperating-with-fbi</guid>
-      <description><![CDATA[A member of the ShinyHunters extortion group, known online as "Rey", was reportedly detained in Jordan and is cooperating with the FBI to help locate other group members. The arrest is part of ongoing efforts to disrupt the group’s operations.]]></description>
-      <pubDate>Sat, 03 Oct 2026 19:09:38 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/shinyhunters-hacker-reportedly-detained-in-jordan-aiding-fbi/">BleepingComputer</source>
-      <category>Policy</category>
     </item>
     <item>
       <title>YARA-X 1.21.0 Released with Five Improvements and Four Bug Fixes</title>
@@ -140,15 +158,6 @@
       <description><![CDATA[Dell released security updates for its Container Storage Modules to fix multiple critical flaws, including CVE-2026-63688. The vulnerability is a missing authentication in the csm-authorization-storage gRPC server, allowing attackers to gain unauthenticated admin access and root on Kubernetes nodes. Immediate patching is required.]]></description>
       <pubDate>Fri, 02 Oct 2026 17:02:12 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/dell-csm-flaws-enable-unauthenticated.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Kiteworks and Citrix Highlight Zero‑Day Response Challenges</title>
-      <link>https://secubuzz.com/news/kiteworks-and-citrix-highlight-zero-day-response-challenges</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/kiteworks-and-citrix-highlight-zero-day-response-challenges</guid>
-      <description><![CDATA[Kiteworks advised customers to shut down its data‑protection platform for nine hours, while Citrix remained silent before issuing a patch. Both incidents underscore the difficulties organizations face when responding to zero‑day vulnerabilities and coordinating timely remediation.]]></description>
-      <pubDate>Fri, 02 Oct 2026 16:56:30 GMT</pubDate>
-      <source url="https://www.darkreading.com/cybersecurity-operations/kiteworks-citrix-incidents-challenges-zero-day-response">Dark Reading</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -446,15 +455,6 @@
       <description><![CDATA[ThreatsDay reports an AI-driven zero‑day exploitation chain that leverages model inspection Remote Code Execution (RCE) and other attack vectors. The report details how seemingly benign actions—such as inspecting models, caching data, or compiling code—can be abused to execute arbitrary code, exposing systems to significant risk.]]></description>
       <pubDate>Thu, 01 Oct 2026 16:45:38 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/threatsday-ai-powered-zero-day-chain.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>WordPress Backdoor Rebuilds Itself After Cleanup Using Files, Database, and Shared Memory</title>
-      <link>https://secubuzz.com/news/wordpress-backdoor-rebuilds-itself-after-cleanup-using-files</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/wordpress-backdoor-rebuilds-itself-after-cleanup-using-files</guid>
-      <description><![CDATA[Researchers uncovered a WordPress backdoor that self‑heals by recreating itself through files, database entries, and shared memory after cleanup. The malware, codenamed SC, uses multiple persistence mechanisms to ensure the final payload remains active without re‑infection.]]></description>
-      <pubDate>Thu, 01 Oct 2026 14:37:35 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/wordpress-backdoor-rebuilds-itself.html">The Hacker News</source>
       <category>Vulnerability</category>
     </item>
   </channel>

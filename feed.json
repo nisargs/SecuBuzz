@@ -1,5 +1,54 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/10/04/week-in-review-researcher-breaks-into-microsoft-analytics-service-netscaler-rce-0-day-exploited/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/04/week-in-review-researcher-breaks-into-microsoft-analytics-service-netscaler-rce-0-day-exploited/",
+    "title": "Microsoft Analytics Breach and Citrix NetScaler RCE Zero‑Days Exploited",
+    "headline": "Microsoft Analytics Breach and Citrix NetScaler RCE Zero‑Days Exploited",
+    "summary": "A 16‑year‑old researcher accessed Microsoft’s internal analytics service, exposing 17 trillion rows of employee and Bing search data. Simultaneously, Citrix NetScaler suffered two RCE zero‑days (CVE‑2026‑88771, CVE‑2026‑88772) exploited worldwide. Citrix patched eight critical and high‑severity vulnerabilities to mitigate the attacks.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-04T08:00:19.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/04/week-in-review-researcher-breaks-into-microsoft-analytics-service-netscaler-rce-0-day-exploited/",
+    "additionalSources": [
+      {
+        "source": "Dark Reading",
+        "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/kiteworks-citrix-incidents-challenges-zero-day-response"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/shinyhunters-suspect-rey-reportedly.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/shinyhunters-suspect-rey-reportedly.html",
+    "title": "ShinyHunters Suspect Rey Detained in Jordan",
+    "headline": "ShinyHunters Suspect Rey Detained in Jordan",
+    "summary": "A suspected member of the ShinyHunters digital extortion group, known as Rey, was reportedly detained by Jordanian authorities and is cooperating with the FBI. The arrest is part of an ongoing effort to identify and apprehend members of the group.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-04T07:22:05.000Z",
+    "url": "https://thehackernews.com/2026/10/shinyhunters-suspect-rey-reportedly.html",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/shinyhunters-hacker-reportedly-detained-in-jordan-aiding-fbi/"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/china-aligned-ta419-targets-us-ai.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/china-aligned-ta419-targets-us-ai.html",
+    "title": "TA419 Targets U.S. AI Policy Experts with Phishing",
+    "headline": "TA419 Targets U.S. AI Policy Experts with Phishing",
+    "summary": "The China-aligned TA419 group has launched credential phishing campaigns against U.S. AI policy experts, impersonating economists, policymakers, and an Anthropic employee to harvest credentials. The attacks aim to steal access to sensitive AI research and policy discussions.",
+    "category": "NATION_STATE",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-04T07:20:32.000Z",
+    "url": "https://thehackernews.com/2026/10/china-aligned-ta419-targets-us-ai.html",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/google/google-gemini-could-soon-get-full-access-to-your-macs-files-apps-and-the-web/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/google/google-gemini-could-soon-get-full-access-to-your-macs-files-apps-and-the-web/",
     "title": "Google Gemini Could Gain Full Access to macOS Files, Apps, and Web",
@@ -16,19 +65,6 @@
         "sourceUrl": "https://www.securityweek.com/google-launches-gemini-4-argon-with-guardrail-free-access-for-vetted-defenders/"
       }
     ]
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/shinyhunters-hacker-reportedly-detained-in-jordan-aiding-fbi/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/shinyhunters-hacker-reportedly-detained-in-jordan-aiding-fbi/",
-    "title": "ShinyHunters Hacker Detained in Jordan, Cooperating with FBI",
-    "headline": "ShinyHunters Hacker Detained in Jordan, Cooperating with FBI",
-    "summary": "A member of the ShinyHunters extortion group, known online as \"Rey\", was reportedly detained in Jordan and is cooperating with the FBI to help locate other group members. The arrest is part of ongoing efforts to disrupt the group’s operations.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-03T19:09:38.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/shinyhunters-hacker-reportedly-detained-in-jordan-aiding-fbi/",
-    "additionalSources": []
   },
   {
     "id": "https://isc.sans.edu/diary/rss/33392",
@@ -231,32 +267,6 @@
       {
         "source": "BleepingComputer",
         "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-max-severity-dell-csm-flaws-give-hackers-admin-privileges/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.darkreading.com/cybersecurity-operations/kiteworks-citrix-incidents-challenges-zero-day-response",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/kiteworks-citrix-incidents-challenges-zero-day-response",
-    "title": "Kiteworks and Citrix Highlight Zero‑Day Response Challenges",
-    "headline": "Kiteworks and Citrix Highlight Zero‑Day Response Challenges",
-    "summary": "Kiteworks advised customers to shut down its data‑protection platform for nine hours, while Citrix remained silent before issuing a patch. Both incidents underscore the difficulties organizations face when responding to zero‑day vulnerabilities and coordinating timely remediation.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-02T16:56:30.000Z",
-    "url": "https://www.darkreading.com/cybersecurity-operations/kiteworks-citrix-incidents-challenges-zero-day-response",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/in-other-news-15k-icloud-spoofing-bugs-ai-policy-experts-phished-adblocker-spies-on-ai-chats/"
-      },
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/02/fortinet-fortimail-vulnerability-cve-2026-104286/"
-      },
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/citrix-netscaler-post-exploitation.html"
       }
     ]
   },
