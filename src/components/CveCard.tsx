@@ -120,19 +120,20 @@ export function CveCard({
         messageParts.push('', cleanDescription);
       }
 
+      const webUrl = `https://secubuzz.com/advisories/${advisory.cveID.toLowerCase()}`;
       messageParts.push(
         '',
-        'Source:',
-        advisory.url,
+        `- Live CISA KEV Radar: ${webUrl}`,
+        `- Primary Source: ${advisory.url}`,
         '',
-        'Shared via SecuBuzz (https://secubuzz.com)',
+        'Shared via SecuBuzz · Quick 60-Word Cybersecurity Briefs & CISA KEV Radar (https://secubuzz.com)',
       );
 
       await Share.share(
         {
-          title: `${advisory.cveID} · SecuBuzz`,
+          title: `🚨 [CISA Zero-Day Alert] ${advisory.cveID} · SecuBuzz`,
           message: messageParts.join('\n'),
-          url: advisory.url,
+          url: webUrl,
         },
         {
           dialogTitle: `Share: ${advisory.cveID}`,

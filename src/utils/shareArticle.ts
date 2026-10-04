@@ -7,22 +7,32 @@ import type { Article } from '../models/article';
  */
 export async function shareArticle(article: Article): Promise<void> {
   try {
+    const slug = article.headline
+      ? article.headline
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, '-')
+          .replace(/^-+|-+$/g, '')
+          .slice(0, 60)
+          .replace(/-+$/, '')
+      : '';
+    const webUrl = slug ? `https://secubuzz.com/news/${slug}` : 'https://secubuzz.com';
+
     const message = [
-      article.headline,
+      `⚡ [60-Word Security Brief] ${article.headline}`,
       '',
       article.summary,
       '',
-      'Source:',
-      article.sourceUrl,
+      `- Read 60-word brief: ${webUrl}`,
+      `- Source: ${article.sourceName || 'Primary Source'} (${article.sourceUrl})`,
       '',
-      'Shared via SecuBuzz (https://secubuzz.com)',
+      'Shared via SecuBuzz · Quick 60-Word Cybersecurity Briefs (https://secubuzz.com)',
     ].join('\n');
 
     await Share.share(
       {
-        title: article.headline,
+        title: `⚡ [60-Word Security Brief] ${article.headline}`,
         message,
-        url: article.sourceUrl,
+        url: webUrl,
       },
       {
         dialogTitle: `Share: ${article.headline}`,

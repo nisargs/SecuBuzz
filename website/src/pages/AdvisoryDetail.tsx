@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { ArrowLeftIcon, ArrowUpRightIcon, ShieldAlertIcon, ActivityIcon, CopyIcon, CheckIcon } from 'lucide-react';
+import { ArrowLeftIcon, ArrowUpRightIcon, ShieldAlertIcon, ActivityIcon, CopyIcon, CheckIcon, Share2Icon } from 'lucide-react';
 import { useLiveAdvisories } from '../data/useLiveAdvisories';
 import { useLiveNews } from '../data/useLiveNews';
 import { SeverityBadge } from '../components/SeverityBadge';
@@ -128,6 +128,24 @@ export function AdvisoryDetail() {
     }
   };
 
+  const [copiedLink, setCopiedLink] = useState(false);
+
+  const canonicalUrl = `https://secubuzz.com/advisories/${advisory.slug}`;
+  const tweetText = `🚨 [CISA Zero-Day Alert] ${advisory.cve}: ${advisory.name}\n\nFederal remediation deadline: ${shortDate(advisory.dueDate)} · Live CISA KEV Radar 👇`;
+  const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}&url=${encodeURIComponent(canonicalUrl)}`;
+  const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(canonicalUrl)}`;
+
+  const handleCopyLink = async () => {
+    try {
+      await navigator.clipboard.writeText(canonicalUrl);
+      setCopiedLink(true);
+      setTimeout(() => setCopiedLink(false), 2000);
+    } catch {
+      setCopiedLink(true);
+      setTimeout(() => setCopiedLink(false), 2000);
+    }
+  };
+
   const status = dueStatus(advisory.dueDate);
   const coverage = news.filter(
     (b) => b.cves.includes(advisory.cve) || (b.title + ' ' + b.summary).toLowerCase().includes(advisory.cve.toLowerCase())
@@ -194,20 +212,53 @@ export function AdvisoryDetail() {
             <h1 className="mt-4 max-w-3xl text-3xl font-semibold leading-tight tracking-tight text-ink md:text-4xl">
               {advisory.name}
             </h1>
-            <div className="mt-5 flex flex-wrap items-center gap-3">
+            <div className="mt-5 flex flex-wrap items-center gap-2.5">
+              <span className="inline-flex items-center gap-1.5 font-mono text-xs text-muted">
+                <Share2Icon className="h-3.5 w-3.5 text-subtle" aria-hidden="true" /> Share:
+              </span>
+              <a
+                href={tweetUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded border border-line bg-surface px-2.5 py-1 font-mono text-xs text-ink transition-colors hover:border-accent hover:text-accent">
+                X / Twitter
+              </a>
+              <a
+                href={linkedInUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded border border-line bg-surface px-2.5 py-1 font-mono text-xs text-ink transition-colors hover:border-accent hover:text-accent">
+                LinkedIn
+              </a>
               <button
                 type="button"
                 onClick={handleCopySnippet}
-                className="inline-flex items-center gap-1.5 rounded-md border border-line bg-surface px-3 py-1.5 font-mono text-xs font-medium text-ink transition-colors hover:border-accent hover:text-accent">
+                className="inline-flex items-center gap-1.5 rounded border border-line bg-surface px-2.5 py-1 font-mono text-xs font-medium text-ink transition-colors hover:border-accent hover:text-accent">
                 {copiedSnippet ? (
                   <>
                     <CheckIcon className="h-3.5 w-3.5 text-accent" aria-hidden="true" />
-                    Copied incident snippet (Slack/Teams)
+                    Copied (Slack/Teams)
                   </>
                 ) : (
                   <>
                     <CopyIcon className="h-3.5 w-3.5 text-subtle" aria-hidden="true" />
-                    Copy incident snippet (Slack/Teams)
+                    Slack / Teams
+                  </>
+                )}
+              </button>
+              <button
+                type="button"
+                onClick={handleCopyLink}
+                className="inline-flex items-center gap-1.5 rounded border border-line bg-surface px-2.5 py-1 font-mono text-xs font-medium text-ink transition-colors hover:border-accent hover:text-accent">
+                {copiedLink ? (
+                  <>
+                    <CheckIcon className="h-3.5 w-3.5 text-accent" aria-hidden="true" />
+                    Copied Link
+                  </>
+                ) : (
+                  <>
+                    <CopyIcon className="h-3.5 w-3.5 text-subtle" aria-hidden="true" />
+                    Copy Link
                   </>
                 )}
               </button>

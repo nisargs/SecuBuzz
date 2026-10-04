@@ -173,19 +173,19 @@ export function injectMetaTags(
       return artSlug === slug || slug.startsWith(base) || base.startsWith(slug) || slug.includes(base.slice(0, 35));
     });
     if (article) {
-      title = `${article.headline || article.title} · SecuBuzz`;
-      description = article.summary || description;
+      title = `${article.headline || article.title} · 60-Word Security Brief · SecuBuzz`;
+      description = `⚡ [60-Word Brief] ${article.summary || description}`;
       ogType = 'article';
     }
   } else if (pathname === '/advisories') {
-    title = 'CISA Known Exploited Vulnerabilities · SecuBuzz';
+    title = 'CISA Known Exploited Vulnerabilities Radar · SecuBuzz';
     description = 'Track active zero-days and vulnerabilities cataloged in CISA Known Exploited Vulnerabilities (KEV) with binding federal due dates.';
   } else if (pathname.startsWith('/advisories/')) {
     const slug = pathname.replace('/advisories/', '').toLowerCase();
     const adv = advisories.find(a => a.cveID.toLowerCase() === slug || slug.includes(a.cveID.toLowerCase()));
     if (adv) {
-      title = `${adv.cveID} · ${adv.vendorProject} ${adv.product} · SecuBuzz`;
-      description = adv.shortDescription || adv.vulnerabilityName || description;
+      title = `🚨 ${adv.cveID} · ${adv.vendorProject} ${adv.product} · CISA KEV Radar · SecuBuzz`;
+      description = `🚨 [CISA KEV Alert] ${adv.shortDescription || adv.vulnerabilityName || description}`;
     }
   } else if (pathname === '/about') {
     title = 'About SecuBuzz · MiSo Labs';

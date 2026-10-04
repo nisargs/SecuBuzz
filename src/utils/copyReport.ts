@@ -10,7 +10,7 @@ import { haptics } from './haptics';
 export function formatAdvisoryMarkdown(advisory: CveAdvisory): string {
   const title = advisory.vulnerabilityName || advisory.product || 'Threat Advisory';
   const lines: string[] = [
-    `*${advisory.cveID}: ${title}*`,
+    `*🚨 [CISA Zero-Day Alert] ${advisory.cveID}: ${title}*`,
     `- Severity: ${(advisory.severity || 'HIGH').toUpperCase()}`,
   ];
 
@@ -46,8 +46,10 @@ export function formatAdvisoryMarkdown(advisory: CveAdvisory): string {
     lines.push('', cleanDesc);
   }
 
+  const webUrl = `https://secubuzz.com/advisories/${advisory.cveID.toLowerCase()}`;
   const sourceUrl = advisory.url || `https://nvd.nist.gov/vuln/detail/${advisory.cveID}`;
-  lines.push('', `- Source: ${advisory.source || 'CISA KEV'} (${sourceUrl})`, '', 'Shared via SecuBuzz · secubuzz.com');
+  lines.push('', `- Advisory Radar: ${webUrl}`);
+  lines.push(`- Primary Source: ${advisory.source || 'CISA KEV'} (${sourceUrl})`, '', 'Shared via SecuBuzz · Quick 60-Word Cybersecurity Briefs & CISA KEV Radar (https://secubuzz.com)');
 
   return lines.join('\n');
 }
@@ -56,8 +58,18 @@ export function formatAdvisoryMarkdown(advisory: CveAdvisory): string {
  * Formats a news brief into a markdown incident report.
  */
 export function formatArticleMarkdown(article: Article): string {
+  const slug = article.headline
+    ? article.headline
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-+|-+$/g, '')
+        .slice(0, 60)
+        .replace(/-+$/, '')
+    : '';
+  const webUrl = slug ? `https://secubuzz.com/news/${slug}` : 'https://secubuzz.com';
+
   const lines: string[] = [
-    `*${article.headline}*`,
+    `*⚡ [60-Word Security Brief] ${article.headline}*`,
     `- Category: ${article.category}`,
     `- Severity: ${article.severity}`,
   ];
@@ -89,7 +101,8 @@ export function formatArticleMarkdown(article: Article): string {
     lines.push('', cleanSummary);
   }
 
-  lines.push('', `- Source: ${article.sourceName} (${article.sourceUrl})`, '', 'Shared via SecuBuzz · secubuzz.com');
+  lines.push('', `- Read 60-word brief: ${webUrl}`);
+  lines.push(`- Source: ${article.sourceName} (${article.sourceUrl})`, '', 'Shared via SecuBuzz · Quick 60-Word Cybersecurity Briefs (https://secubuzz.com)');
 
   return lines.join('\n');
 }

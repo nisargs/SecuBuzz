@@ -63,7 +63,7 @@ export function NewsArticle() {
       '',
       `• *Severity:* ${brief.severity || 'Medium'}`,
       `• *Published:* ${shortDate(brief.publishedAt)}`,
-      `• *Source:* ${brief.sourceName || 'SecuBuzz'}`,
+      `• *Source:* ${brief.source || 'SecuBuzz'}`,
       `• *Read 60-word brief:* ${canonicalUrl}`,
     ].join('\n');
 
@@ -77,7 +77,7 @@ export function NewsArticle() {
     }
   };
 
-  const tweetText = `⚡ 60-Word Security Brief:\n${brief.title}`;
+  const tweetText = `⚡ [60-Word Security Brief] ${brief.title}\n\nQuick cybersecurity triage without the fluff 👇`;
   const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}&url=${encodeURIComponent(canonicalUrl)}`;
   const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(canonicalUrl)}`;
 
