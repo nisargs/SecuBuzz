@@ -152,18 +152,18 @@ export function injectMetaTags(
   articles: ArticleItem[],
   advisories: KevVulnerability[]
 ): string {
-  let title = 'SecuBuzz · Cybersecurity News Briefs & CISA KEV Alerts';
-  let description = 'Fast, factual 60-word cybersecurity briefs and CISA KEV tracking for security professionals. No tracking, anonymous crash reports only.';
+  let title = 'SecuBuzz · Quick Cybersecurity News in 60 Words & CISA KEV Radar';
+  let description = 'Quick, factual 60-word cybersecurity news briefs and CISA KEV zero-day tracking for security professionals. Zero tracking, fast triage, verified sources.';
   let canonicalPath = pathname.replace(/\/$/, '') || '';
   let ogType = 'website';
 
   if (pathname === '/' || pathname === '') {
-    title = 'SecuBuzz · Cybersecurity News Briefs & CISA KEV Alerts';
-    description = 'Fast, factual 60-word cybersecurity briefs and CISA KEV tracking for security professionals. No tracking, anonymous crash reports only.';
+    title = 'SecuBuzz · Quick Cybersecurity News in 60 Words & CISA KEV Radar';
+    description = 'Quick, factual 60-word cybersecurity news briefs and CISA KEV zero-day tracking for security professionals. Zero tracking, fast triage, verified sources.';
     canonicalPath = '';
   } else if (pathname === '/news') {
-    title = 'Cybersecurity News Briefs · SecuBuzz';
-    description = 'Concise 60-word cybersecurity briefs covering active vulnerabilities, ransomware campaigns, and zero-day threats.';
+    title = 'Quick Cybersecurity News in 60 Words · SecuBuzz';
+    description = 'Quick, concise 60-word cybersecurity news briefs covering active zero-days, enterprise ransomware campaigns, and CISA advisories.';
   } else if (pathname.startsWith('/news/')) {
     const slug = pathname.replace('/news/', '').toLowerCase();
     const article = articles.find(a => {

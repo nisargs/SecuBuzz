@@ -82,4 +82,14 @@
   3. **LinkedIn:** Daily morning 60-word threat triage posts targeting CISOs & SOC analysts.
   4. **Substack:** Weekly Friday "5-Minute Zero-Day Digest" linking back to the app.
 
+## 9. Google Search Console & Web SEO Memory (Permanent Record)
+- **Google Search Console (GSC):** ALREADY CLAIMED & ACTIVATED for `https://secubuzz.com`. Dynamic sitemap `https://secubuzz.com/sitemap.xml` is actively submitted and tracked. **NEVER suggest or ask the user to claim or verify GSC again.**
+- **Primary SEO Targets & Semantic Keywords:**
+  - Target phrase: "Quick Cybersecurity News in 60 Words & CISA KEV Radar".
+  - Keyword clusters: `quick cybersecurity news`, `cybersecurity news quick`, `60 word cybersecurity briefs`, `CISA KEV daily tracker`, `zero day alerts`, `EPSS threat radar`.
+  - Strategy: Target long-tail CVE queries and "quick / 60 words" bite-sized intent where enterprise vendors (CrowdStrike, Splunk) and legacy media (BleepingComputer) cannot compete.
+- **Edge Analytics Routine:**
+  - Quick health command: `npm run analytics` (or `node scripts/cf_analytics.mjs`).
+
+
 
