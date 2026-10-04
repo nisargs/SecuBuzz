@@ -11,6 +11,18 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "google-gemini-could-gain-full-access-to-macos-files-apps-and",
+    "title": "Google Gemini Could Gain Full Access to macOS Files, Apps, and Web",
+    "summary": "Google’s Gemini AI may soon be able to read any file on a macOS device, launch applications, and browse the web without user permission, potentially enabling unauthorized actions on the system. No specific CVE is cited, and no public exploit is confirmed.",
+    "category": "Vulnerability",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/google/google-gemini-could-soon-get-full-access-to-your-macs-files-apps-and-the-web/",
+    "publishedAt": "2026-10-03T23:12:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "shinyhunters-hacker-detained-in-jordan-cooperating-with-fbi",
     "title": "ShinyHunters Hacker Detained in Jordan, Cooperating with FBI",
     "summary": "A member of the ShinyHunters extortion group, known online as \"Rey\", was reportedly detained in Jordan and is cooperating with the FBI to help locate other group members. The arrest is part of ongoing efforts to disrupt the group’s operations.",
@@ -887,18 +899,6 @@ export const news: NewsBrief[] = [
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-breach-pentagon-human-resources-management-system-steal-data-of-nearly-3-million-people/",
     "publishedAt": "2026-10-01T09:44:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "google-gemini-4-argon-identifies-critical-hospital-software-",
-    "title": "Google Gemini 4 Argon Identifies Critical Hospital Software Vulnerability",
-    "summary": "Google’s new Gemini 4 Argon AI model, released with guardrail‑free access for vetted defenders, discovered a critical flaw in software used by hospitals worldwide. The model’s findings highlight the need for immediate patching and secure configuration to protect patient data and critical healthcare operations.",
-    "category": "Vulnerability",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/google-launches-gemini-4-argon-with-guardrail-free-access-for-vetted-defenders/",
-    "publishedAt": "2026-10-01T07:52:26.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []

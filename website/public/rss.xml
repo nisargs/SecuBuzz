@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Oct 2026 23:06:28 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 04 Oct 2026 00:19:01 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Google Gemini Could Gain Full Access to macOS Files, Apps, and Web</title>
+      <link>https://secubuzz.com/news/google-gemini-could-gain-full-access-to-macos-files-apps-and</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-gemini-could-gain-full-access-to-macos-files-apps-and</guid>
+      <description><![CDATA[Google’s Gemini AI may soon be able to read any file on a macOS device, launch applications, and browse the web without user permission, potentially enabling unauthorized actions on the system. No specific CVE is cited, and no public exploit is confirmed.]]></description>
+      <pubDate>Sat, 03 Oct 2026 23:12:34 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/google/google-gemini-could-soon-get-full-access-to-your-macs-files-apps-and-the-web/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>ShinyHunters Hacker Detained in Jordan, Cooperating with FBI</title>
       <link>https://secubuzz.com/news/shinyhunters-hacker-detained-in-jordan-cooperating-with-fbi</link>
@@ -447,15 +456,6 @@
       <pubDate>Thu, 01 Oct 2026 14:37:35 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/wordpress-backdoor-rebuilds-itself.html">The Hacker News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Rob Juncker Discusses Hacker Identity and Ethics</title>
-      <link>https://secubuzz.com/news/rob-juncker-discusses-hacker-identity-and-ethics</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rob-juncker-discusses-hacker-identity-and-ethics</guid>
-      <description><![CDATA[Rob Juncker, Mimecast’s chief product and technology officer, confirms he is a hacker and shares his moral compass on security practices. The interview explores his perspective on hacking and cybersecurity leadership.]]></description>
-      <pubDate>Thu, 01 Oct 2026 14:30:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/hacker-conversations-rob-juncker-a-knock-at-the-door-and-a-moral-compass/">SecurityWeek</source>
-      <category>Policy</category>
     </item>
   </channel>
 </rss>

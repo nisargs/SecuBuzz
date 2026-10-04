@@ -1,5 +1,23 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/google/google-gemini-could-soon-get-full-access-to-your-macs-files-apps-and-the-web/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/google/google-gemini-could-soon-get-full-access-to-your-macs-files-apps-and-the-web/",
+    "title": "Google Gemini Could Gain Full Access to macOS Files, Apps, and Web",
+    "headline": "Google Gemini Could Gain Full Access to macOS Files, Apps, and Web",
+    "summary": "Google’s Gemini AI may soon be able to read any file on a macOS device, launch applications, and browse the web without user permission, potentially enabling unauthorized actions on the system. No specific CVE is cited, and no public exploit is confirmed.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-03T23:12:34.000Z",
+    "url": "https://www.bleepingcomputer.com/news/google/google-gemini-could-soon-get-full-access-to-your-macs-files-apps-and-the-web/",
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/google-launches-gemini-4-argon-with-guardrail-free-access-for-vetted-defenders/"
+      }
+    ]
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/shinyhunters-hacker-reportedly-detained-in-jordan-aiding-fbi/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/shinyhunters-hacker-reportedly-detained-in-jordan-aiding-fbi/",
     "title": "ShinyHunters Hacker Detained in Jordan, Cooperating with FBI",
@@ -1104,28 +1122,6 @@
       {
         "source": "SecurityWeek",
         "sourceUrl": "https://www.securityweek.com/pentagon-personnel-agency-data-breach-impacts-3-million-people/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.securityweek.com/google-launches-gemini-4-argon-with-guardrail-free-access-for-vetted-defenders/",
-    "sourceUrl": "https://www.securityweek.com/google-launches-gemini-4-argon-with-guardrail-free-access-for-vetted-defenders/",
-    "title": "Google Gemini 4 Argon Identifies Critical Hospital Software Vulnerability",
-    "headline": "Google Gemini 4 Argon Identifies Critical Hospital Software Vulnerability",
-    "summary": "Google’s new Gemini 4 Argon AI model, released with guardrail‑free access for vetted defenders, discovered a critical flaw in software used by hospitals worldwide. The model’s findings highlight the need for immediate patching and secure configuration to protect patient data and critical healthcare operations.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-01T07:52:26.000Z",
-    "url": "https://www.securityweek.com/google-launches-gemini-4-argon-with-guardrail-free-access-for-vetted-defenders/",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/google-gemini-4-argon/"
-      },
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/google-rolls-out-gemini-4-argon-to.html"
       }
     ]
   },
