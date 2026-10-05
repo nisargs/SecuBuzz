@@ -1,10 +1,8 @@
 name: SecuBuzz Security & Quality Audit
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  # Automatic push/PR triggers disabled to prevent CI failure emails on every commit.
+  # Trigger manually via GitHub Actions tab when desired.
   workflow_dispatch:
 
 permissions:
