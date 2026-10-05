@@ -1,21 +1,183 @@
 [
   {
-    "id": "https://therecord.media/denmark-breach-register-cyberattack",
-    "sourceUrl": "https://therecord.media/denmark-breach-register-cyberattack",
-    "title": "Denmark Population Register Breach Exposes 8.8 Million People",
-    "headline": "Denmark Population Register Breach Exposes 8.8 Million People",
-    "summary": "Denmark’s national population register suffered a data breach after unauthorized users accessed the system, exposing personal data of about 8.8 million residents. The breach involved unauthorized entry into the register’s database, potentially compromising sensitive demographic information. Authorities are investigating the incident and assessing the impact on affected individuals.",
+    "id": "https://www.darkreading.com/cyberattacks-data-breaches/chinese-actor-impersonates-us-officials-cyber-espionage",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/chinese-actor-impersonates-us-officials-cyber-espionage",
+    "title": "Chinese Hackers Impersonate US Officials for AI Cyber Espionage",
+    "headline": "Chinese Hackers Impersonate US Officials for AI Cyber Espionage",
+    "summary": "Chinese hackers from TA419 forged relationships with AI policy experts at U.S. think tanks, universities, and legal groups to facilitate espionage. The group impersonated officials to gain access to sensitive research and policy discussions. The operation highlights growing state-sponsored AI cyber espionage targeting U.S. policy makers.",
+    "category": "NATION_STATE",
+    "severity": "MEDIUM",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-05T15:52:59.000Z",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/chinese-actor-impersonates-us-officials-cyber-espionage",
+    "additionalSources": []
+  },
+  {
+    "id": "https://therecord.media/ransomware-university-illinois-chicago",
+    "sourceUrl": "https://therecord.media/ransomware-university-illinois-chicago",
+    "title": "University of Illinois Chicago affected by ransomware attack on medical school",
+    "headline": "University of Illinois Chicago affected by ransomware attack on medical school",
+    "summary": "A ransomware incident hit the University of Illinois Chicago College of Medicine, encrypting files on its servers and stealing some data. The attack disrupted medical research and patient records. No ransom demand was reported, but the breach exposed sensitive information and prompted a security response.",
+    "category": "RANSOMWARE",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "publishedAt": "2026-10-05T15:30:00.000Z",
+    "url": "https://therecord.media/ransomware-university-illinois-chicago",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/denmark-population-registry-data-breach-affects-88-million-people/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/denmark-population-registry-data-breach-affects-88-million-people/",
+    "title": "Denmark Population Registry Data Breach Affects 8.8 Million",
+    "headline": "Denmark Population Registry Data Breach Affects 8.8 Million",
+    "summary": "Denmark’s Central Population Register (CPR) has confirmed a data breach that exposed personal information of about 8.8 million registered residents. The leak includes names, dates of birth, addresses and other identifying details. Authorities are investigating the source and advising affected individuals to monitor for identity theft.",
     "category": "BREACH",
     "severity": "HIGH",
-    "source": "The Record",
-    "publishedAt": "2026-10-05T12:00:00.000Z",
-    "url": "https://therecord.media/denmark-breach-register-cyberattack",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-05T15:21:10.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/denmark-population-registry-data-breach-affects-88-million-people/",
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/denmark-breach-register-cyberattack"
+      }
+    ]
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/05/cisa-flags-new-exploited-netscaler-flaw-as-attackers-crash-appliances-cve-2026-88779/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/cisa-flags-new-exploited-netscaler-flaw-as-attackers-crash-appliances-cve-2026-88779/",
+    "title": "Citrix NetScaler CVE‑2026‑88779 Causes Denial‑of‑Service Attacks",
+    "headline": "Citrix NetScaler CVE‑2026‑88779 Causes Denial‑of‑Service Attacks",
+    "summary": "Citrix NetScaler ADCs and Gateways are vulnerable to CVE‑2026‑88779, a memory overflow that can trigger denial‑of‑service attacks. The flaw allows attackers to crash appliances repeatedly, keeping services unavailable. Citrix urges unpatched deployments to apply the latest patch or disable the affected feature to mitigate the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-05T14:53:48.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/05/cisa-flags-new-exploited-netscaler-flaw-as-attackers-crash-appliances-cve-2026-88779/",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/weekly-recap-netscaler-and-fortimail-0.html"
+      },
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/exchange-server-vulnerability-cve-2026-96940/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/new-dell-system-update-flaw-lets-hackers-gain-root-privileges/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-dell-system-update-flaw-lets-hackers-gain-root-privileges/",
+    "title": "Dell System Update Tool Vulnerability Allows Root Privilege Escalation",
+    "headline": "Dell System Update Tool Vulnerability Allows Root Privilege Escalation",
+    "summary": "Dell issued a critical patch for a flaw in its System Update (DSU) CLI deployment tool that could let attackers gain root privileges on affected systems. The vulnerability requires local access to the DSU command-line interface and can be exploited to execute arbitrary code with system-level permissions. Users are urged to apply the update immediately.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-05T14:53:06.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/new-dell-system-update-flaw-lets-hackers-gain-root-privileges/",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/dell-csm-flaws-enable-unauthenticated.html"
+      }
+    ]
+  },
+  {
+    "id": "https://www.securityweek.com/google-narrows-open-source-bug-bounty-amid-wave-of-invalid-automated-reports/",
+    "sourceUrl": "https://www.securityweek.com/google-narrows-open-source-bug-bounty-amid-wave-of-invalid-automated-reports/",
+    "title": "Google Halts Open Source Bug Bounty Due to Invalid Automated Reports",
+    "headline": "Google Halts Open Source Bug Bounty Due to Invalid Automated Reports",
+    "summary": "Google temporarily suspended acceptance of vulnerability reports through its Open Source Software Vulnerability Reward Program after a surge of invalid automated submissions. The move aims to reduce noise and focus on legitimate security findings. The program remains active for other categories of reports.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-05T14:26:00.000Z",
+    "url": "https://www.securityweek.com/google-narrows-open-source-bug-bounty-amid-wave-of-invalid-automated-reports/",
     "additionalSources": [
       {
         "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/danish-university-dtu-breach-exposes-data-of-up-to-200-000-people/"
+        "sourceUrl": "https://www.bleepingcomputer.com/news/google/google-halts-open-source-bug-bounty-program-amid-ai-spam-surge/"
       }
     ]
+  },
+  {
+    "id": "https://research.checkpoint.com/2026/5th-october-threat-intelligence-report/",
+    "sourceUrl": "https://research.checkpoint.com/2026/5th-october-threat-intelligence-report/",
+    "title": "Arizona State Court System Breach After Phishing Attack",
+    "headline": "Arizona State Court System Breach After Phishing Attack",
+    "summary": "A phishing attack on an Arizona state court employee led to a breach of the court’s system. Attackers accessed backup files containing protective‑order records and over 150,000 Foster Care Review Board reports, exposing sensitive data. The incident underscores the need for stronger email security and employee training.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Check Point Research",
+    "publishedAt": "2026-10-05T13:57:30.000Z",
+    "url": "https://research.checkpoint.com/2026/5th-october-threat-intelligence-report/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/05/milk-dragon-phishing-fake-discounts/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/milk-dragon-phishing-fake-discounts/",
+    "title": "Milk Dragon Phishing Kit Targets Shoppers with Fake Discounts",
+    "headline": "Milk Dragon Phishing Kit Targets Shoppers with Fake Discounts",
+    "summary": "Cybercriminals use the Milk Dragon phishing kit, active since October 2025, to lure shoppers on Facebook and TikTok with fake discounts. The kit directs victims to 258 phishing pages across 66 countries, stealing payment card details and one‑time passwords.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-05T13:55:15.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/05/milk-dragon-phishing-fake-discounts/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://therecord.media/belarusian-hacktivists-two-years-Russian-healthcare-network",
+    "sourceUrl": "https://therecord.media/belarusian-hacktivists-two-years-Russian-healthcare-network",
+    "title": "Belarusian Hacktivists Conduct Two‑Year Espionage in Russian Healthcare Network",
+    "headline": "Belarusian Hacktivists Conduct Two‑Year Espionage in Russian Healthcare Network",
+    "summary": "Russian researchers attribute a two‑year espionage campaign to Belarusian Cyber Partisans, a hacktivist group known for attacks on governments and infrastructure. The campaign infiltrated a Russian healthcare network, gathering sensitive information over an extended period.",
+    "category": "NATION_STATE",
+    "severity": "HIGH",
+    "source": "The Record",
+    "publishedAt": "2026-10-05T13:55:00.000Z",
+    "url": "https://therecord.media/belarusian-hacktivists-two-years-Russian-healthcare-network",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/linux-backdoor-abuses-stun-protocol-exploits-dozens-of-flaws/",
+    "sourceUrl": "https://www.securityweek.com/linux-backdoor-abuses-stun-protocol-exploits-dozens-of-flaws/",
+    "title": "ClingSTUN Linux Backdoor Exploits Multiple Flaws via STUN Protocol",
+    "headline": "ClingSTUN Linux Backdoor Exploits Multiple Flaws via STUN Protocol",
+    "summary": "ClingSTUN is a Linux backdoor that uses the STUN protocol to establish a back‑connect proxy, maintain persistence, and self‑propagate by exploiting numerous vulnerabilities. The malware can spread across networks, compromising systems and enabling attackers to maintain long‑term access. Mitigation requires disabling STUN services, applying vendor patches, and monitoring for unusual outbound traffic.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-05T13:00:00.000Z",
+    "url": "https://www.securityweek.com/linux-backdoor-abuses-stun-protocol-exploits-dozens-of-flaws/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.darkreading.com/cyber-risk/ai-attacks-security-strategies",
+    "sourceUrl": "https://www.darkreading.com/cyber-risk/ai-attacks-security-strategies",
+    "title": "AI‑Driven Attacks Accelerate, Prompting Security Teams to Adapt",
+    "headline": "AI‑Driven Attacks Accelerate, Prompting Security Teams to Adapt",
+    "summary": "AI‑driven attacks are accelerating, forcing security teams to adapt their defenses. The latest Dark Reading poll shows organizations prioritizing automation, threat intelligence, and rapid response to counter fast, relentless, and automated adversaries. Companies are investing in AI‑enabled detection, incident response, and training to keep pace with evolving attack tactics.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-05T13:00:00.000Z",
+    "url": "https://www.darkreading.com/cyber-risk/ai-attacks-security-strategies",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/the-credential-layer-is-expanding.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/the-credential-layer-is-expanding.html",
+    "title": "Credential Layer Expansion Outpaces Security Teams",
+    "headline": "Credential Layer Expansion Outpaces Security Teams",
+    "summary": "Modern enterprises rely on credentials for human, system, and AI connections. GitGuardian offers detection, remediation, and prevention to secure this layer, helping organizations identify where credentials exist and how to protect them.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-05T11:55:00.000Z",
+    "url": "https://thehackernews.com/2026/10/the-credential-layer-is-expanding.html",
+    "additionalSources": []
   },
   {
     "id": "https://www.securityweek.com/exploitation-hits-rejetto-hfs-vulnerability-discovered-by-ai/",
@@ -65,19 +227,6 @@
         "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/macos-full-disk-access-updates/"
       }
     ]
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/05/exchange-server-vulnerability-cve-2026-96940/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/exchange-server-vulnerability-cve-2026-96940/",
-    "title": "Microsoft Releases Out‑of‑Band Update for Exchange Server to Fix CVE‑2026‑96940",
-    "headline": "Microsoft Releases Out‑of‑Band Update for Exchange Server to Fix CVE‑2026‑96940",
-    "summary": "Microsoft issued an out‑of‑band security update for Exchange Server that addresses CVE‑2026‑96940, a high‑severity flaw allowing authenticated attackers to read emails and attachments of other users within the same organization. The update prevents cross‑tenant access and mitigates the vulnerability before any active exploitation is reported.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-05T10:38:42.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/05/exchange-server-vulnerability-cve-2026-96940/",
-    "additionalSources": []
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/10/05/shinyhunters-member-rey-detained-jordan-fbi/",
@@ -142,24 +291,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.bleepingcomputer.com/news/google/google-halts-open-source-bug-bounty-program-amid-ai-spam-surge/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/google/google-halts-open-source-bug-bounty-program-amid-ai-spam-surge/",
-    "title": "Google Suspends Open‑Source Bug Bounty Amid AI Spam",
-    "headline": "Google Suspends Open‑Source Bug Bounty Amid AI Spam",
-    "summary": "Google has paused submissions to its Open Source Software Vulnerability Rewards Program after a surge of AI‑generated reports flooded the system. The move aims to reduce noise and focus on legitimate security findings, while the company reviews its intake process.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-05T08:27:46.000Z",
-    "url": "https://www.bleepingcomputer.com/news/google/google-halts-open-source-bug-bounty-program-amid-ai-spam-surge/",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/keyorix-open-source-on-premise-secrets-management/"
-      }
-    ]
-  },
-  {
     "id": "https://www.helpnetsecurity.com/2026/10/05/doxx-net-agentic-defined-networking-platform/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/doxx-net-agentic-defined-networking-platform/",
     "title": "doxx.net Launches Public Beta of Agentic Defined Networking Platform",
@@ -178,24 +309,6 @@
       {
         "source": "Cloudflare Security",
         "sourceUrl": "https://blog.cloudflare.com/cloudflare-tracing/"
-      }
-    ]
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/new-netscaler-zero-day-exploited-in.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/new-netscaler-zero-day-exploited-in.html",
-    "title": "Citrix NetScaler Zero-Day CVE-2026-88779 Exploited to Disable SAML Deployments",
-    "headline": "Citrix NetScaler Zero-Day CVE-2026-88779 Exploited to Disable SAML Deployments",
-    "summary": "Citrix released patches for CVE-2026-88779, a memory overflow flaw in NetScaler ADC and Gateway that allows attackers to execute code and bring SAML deployments offline. The vulnerability has a CVSS score of 8.7 and is actively exploited in targeted attacks. Apply the vendor’s update immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-05T06:40:19.000Z",
-    "url": "https://thehackernews.com/2026/10/new-netscaler-zero-day-exploited-in.html",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/exploitation-of-citrix-netscaler-zero-day-hits-appliances-patched-days-earlier/"
       }
     ]
   },
@@ -444,24 +557,6 @@
     "publishedAt": "2026-10-02T19:30:00.000Z",
     "url": "https://therecord.media/alpr-legislation-hawley-sanders-merkley-aoc",
     "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/dell-csm-flaws-enable-unauthenticated.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/dell-csm-flaws-enable-unauthenticated.html",
-    "title": "Dell CSM Flaws Enable Unauthenticated Admin Access and Root on Kubernetes Nodes",
-    "headline": "Dell CSM Flaws Enable Unauthenticated Admin Access and Root on Kubernetes Nodes",
-    "summary": "Dell released security updates for its Container Storage Modules to fix multiple critical flaws, including CVE-2026-63688. The vulnerability is a missing authentication in the csm-authorization-storage gRPC server, allowing attackers to gain unauthenticated admin access and root on Kubernetes nodes. Immediate patching is required.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-02T17:02:12.000Z",
-    "url": "https://thehackernews.com/2026/10/dell-csm-flaws-enable-unauthenticated.html",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-max-severity-dell-csm-flaws-give-hackers-admin-privileges/"
-      }
-    ]
   },
   {
     "id": "https://www.darkreading.com/cybersecurity-operations/swift-banking-govt-middleware-rce",

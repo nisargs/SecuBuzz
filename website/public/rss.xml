@@ -5,16 +5,115 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Oct 2026 12:19:49 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 16:20:01 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Denmark Population Register Breach Exposes 8.8 Million People</title>
-      <link>https://secubuzz.com/news/denmark-population-register-breach-exposes-8-8-million-peopl</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/denmark-population-register-breach-exposes-8-8-million-peopl</guid>
-      <description><![CDATA[Denmark’s national population register suffered a data breach after unauthorized users accessed the system, exposing personal data of about 8.8 million residents. The breach involved unauthorized entry into the register’s database, potentially compromising sensitive demographic information. Authorities are investigating the incident and assessing the impact on affected individuals.]]></description>
-      <pubDate>Mon, 05 Oct 2026 12:00:00 GMT</pubDate>
-      <source url="https://therecord.media/denmark-breach-register-cyberattack">The Record</source>
+      <title>Chinese Hackers Impersonate US Officials for AI Cyber Espionage</title>
+      <link>https://secubuzz.com/news/chinese-hackers-impersonate-us-officials-for-ai-cyber-espion</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chinese-hackers-impersonate-us-officials-for-ai-cyber-espion</guid>
+      <description><![CDATA[Chinese hackers from TA419 forged relationships with AI policy experts at U.S. think tanks, universities, and legal groups to facilitate espionage. The group impersonated officials to gain access to sensitive research and policy discussions. The operation highlights growing state-sponsored AI cyber espionage targeting U.S. policy makers.]]></description>
+      <pubDate>Mon, 05 Oct 2026 15:52:59 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyberattacks-data-breaches/chinese-actor-impersonates-us-officials-cyber-espionage">Dark Reading</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>University of Illinois Chicago affected by ransomware attack on medical school</title>
+      <link>https://secubuzz.com/news/university-of-illinois-chicago-affected-by-ransomware-attack</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/university-of-illinois-chicago-affected-by-ransomware-attack</guid>
+      <description><![CDATA[A ransomware incident hit the University of Illinois Chicago College of Medicine, encrypting files on its servers and stealing some data. The attack disrupted medical research and patient records. No ransom demand was reported, but the breach exposed sensitive information and prompted a security response.]]></description>
+      <pubDate>Mon, 05 Oct 2026 15:30:00 GMT</pubDate>
+      <source url="https://therecord.media/ransomware-university-illinois-chicago">The Record</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
+      <title>Denmark Population Registry Data Breach Affects 8.8 Million</title>
+      <link>https://secubuzz.com/news/denmark-population-registry-data-breach-affects-8-8-million</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/denmark-population-registry-data-breach-affects-8-8-million</guid>
+      <description><![CDATA[Denmark’s Central Population Register (CPR) has confirmed a data breach that exposed personal information of about 8.8 million registered residents. The leak includes names, dates of birth, addresses and other identifying details. Authorities are investigating the source and advising affected individuals to monitor for identity theft.]]></description>
+      <pubDate>Mon, 05 Oct 2026 15:21:10 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/denmark-population-registry-data-breach-affects-88-million-people/">BleepingComputer</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Citrix NetScaler CVE‑2026‑88779 Causes Denial‑of‑Service Attacks</title>
+      <link>https://secubuzz.com/news/citrix-netscaler-cve-2026-88779-causes-denial-of-service-att</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/citrix-netscaler-cve-2026-88779-causes-denial-of-service-att</guid>
+      <description><![CDATA[Citrix NetScaler ADCs and Gateways are vulnerable to CVE‑2026‑88779, a memory overflow that can trigger denial‑of‑service attacks. The flaw allows attackers to crash appliances repeatedly, keeping services unavailable. Citrix urges unpatched deployments to apply the latest patch or disable the affected feature to mitigate the risk.]]></description>
+      <pubDate>Mon, 05 Oct 2026 14:53:48 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/05/cisa-flags-new-exploited-netscaler-flaw-as-attackers-crash-appliances-cve-2026-88779/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Dell System Update Tool Vulnerability Allows Root Privilege Escalation</title>
+      <link>https://secubuzz.com/news/dell-system-update-tool-vulnerability-allows-root-privilege-</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/dell-system-update-tool-vulnerability-allows-root-privilege-</guid>
+      <description><![CDATA[Dell issued a critical patch for a flaw in its System Update (DSU) CLI deployment tool that could let attackers gain root privileges on affected systems. The vulnerability requires local access to the DSU command-line interface and can be exploited to execute arbitrary code with system-level permissions. Users are urged to apply the update immediately.]]></description>
+      <pubDate>Mon, 05 Oct 2026 14:53:06 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/new-dell-system-update-flaw-lets-hackers-gain-root-privileges/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Google Halts Open Source Bug Bounty Due to Invalid Automated Reports</title>
+      <link>https://secubuzz.com/news/google-halts-open-source-bug-bounty-due-to-invalid-automated</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-halts-open-source-bug-bounty-due-to-invalid-automated</guid>
+      <description><![CDATA[Google temporarily suspended acceptance of vulnerability reports through its Open Source Software Vulnerability Reward Program after a surge of invalid automated submissions. The move aims to reduce noise and focus on legitimate security findings. The program remains active for other categories of reports.]]></description>
+      <pubDate>Mon, 05 Oct 2026 14:26:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/google-narrows-open-source-bug-bounty-amid-wave-of-invalid-automated-reports/">SecurityWeek</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Arizona State Court System Breach After Phishing Attack</title>
+      <link>https://secubuzz.com/news/arizona-state-court-system-breach-after-phishing-attack</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/arizona-state-court-system-breach-after-phishing-attack</guid>
+      <description><![CDATA[A phishing attack on an Arizona state court employee led to a breach of the court’s system. Attackers accessed backup files containing protective‑order records and over 150,000 Foster Care Review Board reports, exposing sensitive data. The incident underscores the need for stronger email security and employee training.]]></description>
+      <pubDate>Mon, 05 Oct 2026 13:57:30 GMT</pubDate>
+      <source url="https://research.checkpoint.com/2026/5th-october-threat-intelligence-report/">Check Point Research</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Milk Dragon Phishing Kit Targets Shoppers with Fake Discounts</title>
+      <link>https://secubuzz.com/news/milk-dragon-phishing-kit-targets-shoppers-with-fake-discount</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/milk-dragon-phishing-kit-targets-shoppers-with-fake-discount</guid>
+      <description><![CDATA[Cybercriminals use the Milk Dragon phishing kit, active since October 2025, to lure shoppers on Facebook and TikTok with fake discounts. The kit directs victims to 258 phishing pages across 66 countries, stealing payment card details and one‑time passwords.]]></description>
+      <pubDate>Mon, 05 Oct 2026 13:55:15 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/05/milk-dragon-phishing-fake-discounts/">Help Net Security</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Belarusian Hacktivists Conduct Two‑Year Espionage in Russian Healthcare Network</title>
+      <link>https://secubuzz.com/news/belarusian-hacktivists-conduct-two-year-espionage-in-russian</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/belarusian-hacktivists-conduct-two-year-espionage-in-russian</guid>
+      <description><![CDATA[Russian researchers attribute a two‑year espionage campaign to Belarusian Cyber Partisans, a hacktivist group known for attacks on governments and infrastructure. The campaign infiltrated a Russian healthcare network, gathering sensitive information over an extended period.]]></description>
+      <pubDate>Mon, 05 Oct 2026 13:55:00 GMT</pubDate>
+      <source url="https://therecord.media/belarusian-hacktivists-two-years-Russian-healthcare-network">The Record</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>ClingSTUN Linux Backdoor Exploits Multiple Flaws via STUN Protocol</title>
+      <link>https://secubuzz.com/news/clingstun-linux-backdoor-exploits-multiple-flaws-via-stun-pr</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/clingstun-linux-backdoor-exploits-multiple-flaws-via-stun-pr</guid>
+      <description><![CDATA[ClingSTUN is a Linux backdoor that uses the STUN protocol to establish a back‑connect proxy, maintain persistence, and self‑propagate by exploiting numerous vulnerabilities. The malware can spread across networks, compromising systems and enabling attackers to maintain long‑term access. Mitigation requires disabling STUN services, applying vendor patches, and monitoring for unusual outbound traffic.]]></description>
+      <pubDate>Mon, 05 Oct 2026 13:00:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/linux-backdoor-abuses-stun-protocol-exploits-dozens-of-flaws/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>AI‑Driven Attacks Accelerate, Prompting Security Teams to Adapt</title>
+      <link>https://secubuzz.com/news/ai-driven-attacks-accelerate-prompting-security-teams-to-ada</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-driven-attacks-accelerate-prompting-security-teams-to-ada</guid>
+      <description><![CDATA[AI‑driven attacks are accelerating, forcing security teams to adapt their defenses. The latest Dark Reading poll shows organizations prioritizing automation, threat intelligence, and rapid response to counter fast, relentless, and automated adversaries. Companies are investing in AI‑enabled detection, incident response, and training to keep pace with evolving attack tactics.]]></description>
+      <pubDate>Mon, 05 Oct 2026 13:00:00 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyber-risk/ai-attacks-security-strategies">Dark Reading</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Credential Layer Expansion Outpaces Security Teams</title>
+      <link>https://secubuzz.com/news/credential-layer-expansion-outpaces-security-teams</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/credential-layer-expansion-outpaces-security-teams</guid>
+      <description><![CDATA[Modern enterprises rely on credentials for human, system, and AI connections. GitGuardian offers detection, remediation, and prevention to secure this layer, helping organizations identify where credentials exist and how to protect them.]]></description>
+      <pubDate>Mon, 05 Oct 2026 11:55:00 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/the-credential-layer-is-expanding.html">The Hacker News</source>
+      <category>Policy</category>
     </item>
     <item>
       <title>CVE-2026-61500 Exploited in Rejetto HFS, Enabling RCE</title>
@@ -42,15 +141,6 @@
       <pubDate>Mon, 05 Oct 2026 10:38:50 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/apple-plans-tighter-macos-full-disk.html">The Hacker News</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Microsoft Releases Out‑of‑Band Update for Exchange Server to Fix CVE‑2026‑96940</title>
-      <link>https://secubuzz.com/news/microsoft-releases-out-of-band-update-for-exchange-server-to</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-releases-out-of-band-update-for-exchange-server-to</guid>
-      <description><![CDATA[Microsoft issued an out‑of‑band security update for Exchange Server that addresses CVE‑2026‑96940, a high‑severity flaw allowing authenticated attackers to read emails and attachments of other users within the same organization. The update prevents cross‑tenant access and mitigates the vulnerability before any active exploitation is reported.]]></description>
-      <pubDate>Mon, 05 Oct 2026 10:38:42 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/05/exchange-server-vulnerability-cve-2026-96940/">Help Net Security</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>Jordan Detains ShinyHunters Hacker, Cooperates with FBI</title>
@@ -89,15 +179,6 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>Google Suspends Open‑Source Bug Bounty Amid AI Spam</title>
-      <link>https://secubuzz.com/news/google-suspends-open-source-bug-bounty-amid-ai-spam</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-suspends-open-source-bug-bounty-amid-ai-spam</guid>
-      <description><![CDATA[Google has paused submissions to its Open Source Software Vulnerability Rewards Program after a surge of AI‑generated reports flooded the system. The move aims to reduce noise and focus on legitimate security findings, while the company reviews its intake process.]]></description>
-      <pubDate>Mon, 05 Oct 2026 08:27:46 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/google/google-halts-open-source-bug-bounty-program-amid-ai-spam-surge/">BleepingComputer</source>
-      <category>Policy</category>
-    </item>
-    <item>
       <title>doxx.net Launches Public Beta of Agentic Defined Networking Platform</title>
       <link>https://secubuzz.com/news/doxx-net-launches-public-beta-of-agentic-defined-networking-</link>
       <guid isPermaLink="true">https://secubuzz.com/news/doxx-net-launches-public-beta-of-agentic-defined-networking-</guid>
@@ -105,15 +186,6 @@
       <pubDate>Mon, 05 Oct 2026 08:03:40 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/05/doxx-net-agentic-defined-networking-platform/">Help Net Security</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Citrix NetScaler Zero-Day CVE-2026-88779 Exploited to Disable SAML Deployments</title>
-      <link>https://secubuzz.com/news/citrix-netscaler-zero-day-cve-2026-88779-exploited-to-disabl</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/citrix-netscaler-zero-day-cve-2026-88779-exploited-to-disabl</guid>
-      <description><![CDATA[Citrix released patches for CVE-2026-88779, a memory overflow flaw in NetScaler ADC and Gateway that allows attackers to execute code and bring SAML deployments offline. The vulnerability has a CVSS score of 8.7 and is actively exploited in targeted attacks. Apply the vendor’s update immediately to mitigate the risk.]]></description>
-      <pubDate>Mon, 05 Oct 2026 06:40:19 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/new-netscaler-zero-day-exploited-in.html">The Hacker News</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>Hospital CISOs Should Ask Three Key Questions of Healthcare Fintech Vendors</title>
@@ -269,15 +341,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Dell CSM Flaws Enable Unauthenticated Admin Access and Root on Kubernetes Nodes</title>
-      <link>https://secubuzz.com/news/dell-csm-flaws-enable-unauthenticated-admin-access-and-root-</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/dell-csm-flaws-enable-unauthenticated-admin-access-and-root-</guid>
-      <description><![CDATA[Dell released security updates for its Container Storage Modules to fix multiple critical flaws, including CVE-2026-63688. The vulnerability is a missing authentication in the csm-authorization-storage gRPC server, allowing attackers to gain unauthenticated admin access and root on Kubernetes nodes. Immediate patching is required.]]></description>
-      <pubDate>Fri, 02 Oct 2026 17:02:12 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/dell-csm-flaws-enable-unauthenticated.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>SWIFT Banking &amp; Government Middleware Enables RCE</title>
       <link>https://secubuzz.com/news/swift-banking-government-middleware-enables-rce</link>
       <guid isPermaLink="true">https://secubuzz.com/news/swift-banking-government-middleware-enables-rce</guid>
@@ -393,69 +456,6 @@
       <pubDate>Fri, 02 Oct 2026 13:00:00 GMT</pubDate>
       <source url="https://www.darkreading.com/threat-intelligence/malicious-linux-implants-mimic-asian-mail-security">Dark Reading</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Cloudflare Unveils Eight Major Observability Updates</title>
-      <link>https://secubuzz.com/news/cloudflare-unveils-eight-major-observability-updates</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-unveils-eight-major-observability-updates</guid>
-      <description><![CDATA[Cloudflare launches eight major updates that consolidate logs, traces, analytics, alerts, dashboards, querying, and telemetry export into a single observability platform. The changes aim to simplify and make pricing more predictable for users, enhancing monitoring and incident response capabilities.]]></description>
-      <pubDate>Fri, 02 Oct 2026 13:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/one-observability-platform/">Cloudflare Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>Microsoft Warns AI Accelerates Attackers’ Edge</title>
-      <link>https://secubuzz.com/news/microsoft-warns-ai-accelerates-attackers-edge</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-warns-ai-accelerates-attackers-edge</guid>
-      <description><![CDATA[Microsoft’s 2026 Digital Defense Report highlights that threat actors are using AI to discover bugs, build malware, and conduct intrusions faster than defenders can respond. The report stresses the need for rapid defensive adjustments to close the gap as AI changes cybersecurity dynamics.]]></description>
-      <pubDate>Fri, 02 Oct 2026 12:47:00 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/02/ai-cybersecurity-threats-microsoft-report/">Help Net Security</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>OpenAI Terminates Three Safety Researchers Over Data Leak</title>
-      <link>https://secubuzz.com/news/openai-terminates-three-safety-researchers-over-data-leak</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-terminates-three-safety-researchers-over-data-leak</guid>
-      <description><![CDATA[OpenAI fired three safety team members after they leaked private company information, violating internal policies. The incident involved unauthorized access to sensitive data and prompted an internal investigation. No external breach was reported, but the leak highlights risks of insider data mishandling.]]></description>
-      <pubDate>Fri, 02 Oct 2026 12:23:15 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/openai-parts-ways-with-three-safety.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>CISA Adds Two Known Exploited Vulnerabilities to Catalog</title>
-      <link>https://secubuzz.com/news/cisa-adds-two-known-exploited-vulnerabilities-to-catalog</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-two-known-exploited-vulnerabilities-to-catalog</guid>
-      <description><![CDATA[CISA has added CVE-2026-102489, a Zammad session fixation flaw, and CVE-2026-102490, a Zammad improper privilege management flaw, to its Known Exploited Vulnerabilities catalog after evidence of active exploitation. The vulnerabilities pose significant risks to federal agencies and require rapid remediation.]]></description>
-      <pubDate>Fri, 02 Oct 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/alerts/2026/10/02/cisa-adds-two-known-exploited-vulnerabilities-catalog">CISA</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Microsoft X Account Hijacked by Crypto Scammers</title>
-      <link>https://secubuzz.com/news/microsoft-x-account-hijacked-by-crypto-scammers</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-x-account-hijacked-by-crypto-scammers</guid>
-      <description><![CDATA[Hackers hijacked Microsoft’s official X account, which has 13 million followers, to promote a Clippy‑themed cryptocurrency account. The takeover was used to amplify the scam content, but no user data or credentials were reported as compromised.]]></description>
-      <pubDate>Fri, 02 Oct 2026 11:46:10 GMT</pubDate>
-      <source url="https://www.securityweek.com/crypto-scammers-hijack-microsofts-official-x-account/">SecurityWeek</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Iranian State Hacker Indicted and Extradited to U.S. Authorities</title>
-      <link>https://secubuzz.com/news/iranian-state-hacker-indicted-and-extradited-to-u-s-authorit</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/iranian-state-hacker-indicted-and-extradited-to-u-s-authorit</guid>
-      <description><![CDATA[Amir Barati, alleged member of the Mabna Institute, is indicted for targeting U.S. universities, private firms, and government entities. He has been extradited to the United States for prosecution. The case highlights ongoing Iranian cyber espionage efforts against U.S. institutions.]]></description>
-      <pubDate>Fri, 02 Oct 2026 11:14:34 GMT</pubDate>
-      <source url="https://www.securityweek.com/in-rare-move-iranian-hacker-accused-of-working-for-irgc-extradited-to-us/">SecurityWeek</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>AI Agents Target US Department of Education and Library and Archives Canada with SQL Injection</title>
-      <link>https://secubuzz.com/news/ai-agents-target-us-department-of-education-and-library-and-</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-agents-target-us-department-of-education-and-library-and-</guid>
-      <description><![CDATA[Researchers identified AI-driven agents that performed SQL injection attacks against the US Department of Education and Library and Archives Canada. The attacks exploited database input validation flaws, potentially allowing attackers to read or modify sensitive data. No confirmed data exfiltration was reported, and mitigation involves patching input handling and monitoring for injection attempts.]]></description>
-      <pubDate>Fri, 02 Oct 2026 08:38:46 GMT</pubDate>
-      <source url="https://www.securityweek.com/ai-agents-aimed-sql-injection-at-us-and-canadian-government-sites/">SecurityWeek</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
