@@ -37,12 +37,12 @@ We aggregate critical stories from top global intelligence sources, distilling c
 • Offline Bookmarks: Save critical vulnerability briefs and threat advisories to your local device for offline review or incident documentation.
 • Smart Background Refresh: Returning to the app or tapping a breaking notification automatically pulls the freshest feed without waiting.
 
-🛡️ NO ADS. NO TRACKING. NO ACCOUNT REQUIRED.
+🛡️ NO TRACKING. NO ACCOUNT REQUIRED.
 SecuBuzz respects user privacy as deeply as security:
-• Zero third-party ads or commercial banners.
+• Zero tracking or invasive behavioral telemetry.
 • No account creation or password required to browse.
 • Your saved articles stay strictly on your device.
-• 100% free-tier architecture built with privacy at its core.
+• Access full threat intelligence on mobile or directly at https://secubuzz.com.
 
 Stay ahead of zero-days, ransomware syndicates, and supply chain vulnerabilities. Download SecuBuzz today.
 ```
@@ -67,7 +67,7 @@ Stay ahead of zero-days, ransomware syndicates, and supply chain vulnerabilities
 | :--- | :--- | :--- |
 | **App Icon** | 512 × 512 px PNG, 32-bit color, max 1MB | `assets/icon.png` |
 | **Feature Graphic** | 1024 × 500 px PNG, RGB, max 15MB | `assets/feature-graphic.png` |
-| **Screenshots** | 16:9 or 18:9 aspect ratio (min 1080px width) | Capture 3–4 screens on phone: 1. Main Feed, 2. Article Brief, 3. Saved Articles, 4. Settings |
+| **Screenshots (6 Phone Assets)** | 1080 × 1920 px PNG (Play Store spec) | `assets/store-screenshots/` (01-feed to 06-epss) |
 
 ---
 
