@@ -11,6 +11,60 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "apple-adds-controls-to-macos-full-disk-access-amid-ai-privac",
+    "title": "Apple Adds Controls to macOS Full Disk Access Amid AI Privacy Concerns",
+    "summary": "Apple will introduce new controls for Full Disk Access in macOS to address privacy risks posed by increasingly capable AI agents. Users must explicitly grant permission for apps. Apple’s APIs already protect private data, but Full Disk Access bypasses these safeguards for backup apps. No rollout date or detailed mechanism has been disclosed.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/macos-full-disk-access-updates/",
+    "publishedAt": "2026-10-05T08:11:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "doxx-net-launches-public-beta-of-agentic-defined-networking-",
+    "title": "doxx.net Launches Public Beta of Agentic Defined Networking Platform",
+    "summary": "doxx.net has opened a public beta of its Agentic Defined Networking (ADN) platform, allowing users and their agents to create private, serverless networks with built‑in threat protection. The service blocks known malicious destinations and requires no personal information to join. The beta launch follows a $38 million funding round.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/doxx-net-agentic-defined-networking-platform/",
+    "publishedAt": "2026-10-05T08:03:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "alleged-shinyhunters-leader-arrested-in-jordan",
+    "title": "Alleged ShinyHunters Leader Arrested in Jordan",
+    "summary": "Rey, a suspected leader of the ShinyHunters extortion group, was arrested in Jordan. The FBI claims he is aiding in locating other members of the group. No further details on data breaches or financial impact are provided.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/alleged-shinyhunters-leader-arrested-in-jordan/",
+    "publishedAt": "2026-10-05T07:16:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "citrix-netscaler-zero-day-cve-2026-88779-exploited-to-disabl",
+    "title": "Citrix NetScaler Zero-Day CVE-2026-88779 Exploited to Disable SAML Deployments",
+    "summary": "Citrix released patches for CVE-2026-88779, a memory overflow flaw in NetScaler ADC and Gateway that allows attackers to execute code and bring SAML deployments offline. The vulnerability has a CVSS score of 8.7 and is actively exploited in targeted attacks. Apply the vendor’s update immediately to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/new-netscaler-zero-day-exploited-in.html",
+    "publishedAt": "2026-10-05T06:40:19.000Z",
+    "cves": [
+      "CVE-2026-88779"
+    ],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "hospital-cisos-should-ask-three-key-questions-of-healthcare-",
     "title": "Hospital CISOs Should Ask Three Key Questions of Healthcare Fintech Vendors",
     "summary": "Hospital CISOs are advised to ask vendors about PHI protection, AI model safeguards, and MFA implementation. The guidance emphasizes prioritizing patient data and fund disbursement security, ensuring AI recommendations do not act autonomously, and deploying MFA for email as a cost‑effective measure for small practices.",
@@ -20,21 +74,6 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/drew-mccombs-cylerity-healthcare-fintech-security/",
     "publishedAt": "2026-10-05T05:30:47.000Z",
     "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "citrix-netscaler-zero-day-exploitation-hits-appliances-patch",
-    "title": "Citrix NetScaler Zero‑Day Exploitation Hits Appliances Patched Days Earlier",
-    "summary": "Citrix confirmed exploitation of CVE-2026-88779, a zero‑day vulnerability in NetScaler appliances, occurring just days after two other flaws were patched. The active exploitation in the wild triggers a critical security alert, requiring immediate patching and monitoring for affected devices.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/exploitation-of-citrix-netscaler-zero-day-hits-appliances-patched-days-earlier/",
-    "publishedAt": "2026-10-05T05:14:48.000Z",
-    "cves": [
-      "CVE-2026-88779"
-    ],
     "additionalSources": [],
     "aliases": []
   },
@@ -117,19 +156,6 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "shinyhunters-suspect-rey-detained-in-jordan",
-    "title": "ShinyHunters Suspect Rey Detained in Jordan",
-    "summary": "A suspected member of the ShinyHunters digital extortion group, known as Rey, was reportedly detained by Jordanian authorities and is cooperating with the FBI. The arrest is part of an ongoing effort to identify and apprehend members of the group.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/shinyhunters-suspect-rey-reportedly.html",
-    "publishedAt": "2026-10-04T07:22:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
     "slug": "ta419-targets-u-s-ai-policy-experts-with-phishing",
     "title": "TA419 Targets U.S. AI Policy Experts with Phishing",
     "summary": "The China-aligned TA419 group has launched credential phishing campaigns against U.S. AI policy experts, impersonating economists, policymakers, and an Anthropic employee to harvest credentials. The attacks aim to steal access to sensitive AI research and policy discussions.",
@@ -138,19 +164,6 @@ export const news: NewsBrief[] = [
     "source": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/10/china-aligned-ta419-targets-us-ai.html",
     "publishedAt": "2026-10-04T07:20:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "google-gemini-could-gain-full-access-to-macos-files-apps-and",
-    "title": "Google Gemini Could Gain Full Access to macOS Files, Apps, and Web",
-    "summary": "Google’s Gemini AI may soon be able to read any file on a macOS device, launch applications, and browse the web without user permission, potentially enabling unauthorized actions on the system. No specific CVE is cited, and no public exploit is confirmed.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/google/google-gemini-could-soon-get-full-access-to-your-macs-files-apps-and-the-web/",
-    "publishedAt": "2026-10-03T23:12:34.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -203,19 +216,6 @@ export const news: NewsBrief[] = [
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/danish-university-dtu-breach-exposes-data-of-up-to-200-000-people/",
     "publishedAt": "2026-10-03T14:35:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "doxx-net-raises-38-million-to-fund-ai-agent-safety-platform",
-    "title": "doxx.net Raises $38 Million to Fund AI Agent Safety Platform",
-    "summary": "doxx.net has secured $38 million to develop its ADN platform, designed to prevent agentic misadventures by ensuring AI agents operate strictly under user authority. The initiative aims to mitigate risks of autonomous AI acting beyond intended boundaries.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/doxx-net-raises-38-million-to-prevent-ai-agent-on-the-internet-misadventures/",
-    "publishedAt": "2026-10-03T11:45:00.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -457,19 +457,6 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "cloudflare-launches-traces-to-visualize-request-flow-across-",
-    "title": "Cloudflare Launches Traces to Visualize Request Flow Across Its Platform",
-    "summary": "Cloudflare introduces Traces, a tool that tracks how a request moves through security rules, transformations, cache, routing, Workers, and the origin, then follows it across services in the user’s stack. The feature provides visibility into request handling across Cloudflare’s infrastructure.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/cloudflare-tracing/",
-    "publishedAt": "2026-10-02T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
     "slug": "updates-on-our-pledge-to-make-cloudflare-features-accessible",
     "title": "Updates on our pledge to make Cloudflare features accessible to everyone",
     "summary": "Cloudflare reports progress on its commitment to eliminate two-tier product access, expanding Logpush, multi-account governance, and higher platform limits to all accounts. The company outlines internal testing and future plans for broader feature availability.",
@@ -477,19 +464,6 @@ export const news: NewsBrief[] = [
     "severity": "LOW",
     "source": "Cloudflare Security",
     "sourceUrl": "https://blog.cloudflare.com/enterprise-for-all-update/",
-    "publishedAt": "2026-10-02T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "quick-tunnels-adds-email-authentication-for-accountless-acce",
-    "title": "Quick Tunnels Adds Email Authentication for Accountless Access",
-    "summary": "Quick Tunnels now supports email authentication via the --allowed-mail flag, allowing only specified addresses or domains to reach a local app. This feature enables developers to secure accountless tunnels without requiring a Cloudflare account, simplifying access control for dev projects.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/protected-quick-tunnels/",
     "publishedAt": "2026-10-02T13:00:00.000Z",
     "cves": [],
     "additionalSources": [],

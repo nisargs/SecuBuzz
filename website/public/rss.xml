@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Oct 2026 05:45:23 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 08:19:03 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Apple Adds Controls to macOS Full Disk Access Amid AI Privacy Concerns</title>
+      <link>https://secubuzz.com/news/apple-adds-controls-to-macos-full-disk-access-amid-ai-privac</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apple-adds-controls-to-macos-full-disk-access-amid-ai-privac</guid>
+      <description><![CDATA[Apple will introduce new controls for Full Disk Access in macOS to address privacy risks posed by increasingly capable AI agents. Users must explicitly grant permission for apps. Apple’s APIs already protect private data, but Full Disk Access bypasses these safeguards for backup apps. No rollout date or detailed mechanism has been disclosed.]]></description>
+      <pubDate>Mon, 05 Oct 2026 08:11:17 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/05/macos-full-disk-access-updates/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>doxx.net Launches Public Beta of Agentic Defined Networking Platform</title>
+      <link>https://secubuzz.com/news/doxx-net-launches-public-beta-of-agentic-defined-networking-</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/doxx-net-launches-public-beta-of-agentic-defined-networking-</guid>
+      <description><![CDATA[doxx.net has opened a public beta of its Agentic Defined Networking (ADN) platform, allowing users and their agents to create private, serverless networks with built‑in threat protection. The service blocks known malicious destinations and requires no personal information to join. The beta launch follows a $38 million funding round.]]></description>
+      <pubDate>Mon, 05 Oct 2026 08:03:40 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/05/doxx-net-agentic-defined-networking-platform/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Alleged ShinyHunters Leader Arrested in Jordan</title>
+      <link>https://secubuzz.com/news/alleged-shinyhunters-leader-arrested-in-jordan</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/alleged-shinyhunters-leader-arrested-in-jordan</guid>
+      <description><![CDATA[Rey, a suspected leader of the ShinyHunters extortion group, was arrested in Jordan. The FBI claims he is aiding in locating other members of the group. No further details on data breaches or financial impact are provided.]]></description>
+      <pubDate>Mon, 05 Oct 2026 07:16:53 GMT</pubDate>
+      <source url="https://www.securityweek.com/alleged-shinyhunters-leader-arrested-in-jordan/">SecurityWeek</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Citrix NetScaler Zero-Day CVE-2026-88779 Exploited to Disable SAML Deployments</title>
+      <link>https://secubuzz.com/news/citrix-netscaler-zero-day-cve-2026-88779-exploited-to-disabl</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/citrix-netscaler-zero-day-cve-2026-88779-exploited-to-disabl</guid>
+      <description><![CDATA[Citrix released patches for CVE-2026-88779, a memory overflow flaw in NetScaler ADC and Gateway that allows attackers to execute code and bring SAML deployments offline. The vulnerability has a CVSS score of 8.7 and is actively exploited in targeted attacks. Apply the vendor’s update immediately to mitigate the risk.]]></description>
+      <pubDate>Mon, 05 Oct 2026 06:40:19 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/new-netscaler-zero-day-exploited-in.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Hospital CISOs Should Ask Three Key Questions of Healthcare Fintech Vendors</title>
       <link>https://secubuzz.com/news/hospital-cisos-should-ask-three-key-questions-of-healthcare-</link>
@@ -15,15 +51,6 @@
       <pubDate>Mon, 05 Oct 2026 05:30:47 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/05/drew-mccombs-cylerity-healthcare-fintech-security/">Help Net Security</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Citrix NetScaler Zero‑Day Exploitation Hits Appliances Patched Days Earlier</title>
-      <link>https://secubuzz.com/news/citrix-netscaler-zero-day-exploitation-hits-appliances-patch</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/citrix-netscaler-zero-day-exploitation-hits-appliances-patch</guid>
-      <description><![CDATA[Citrix confirmed exploitation of CVE-2026-88779, a zero‑day vulnerability in NetScaler appliances, occurring just days after two other flaws were patched. The active exploitation in the wild triggers a critical security alert, requiring immediate patching and monitoring for affected devices.]]></description>
-      <pubDate>Mon, 05 Oct 2026 05:14:48 GMT</pubDate>
-      <source url="https://www.securityweek.com/exploitation-of-citrix-netscaler-zero-day-hits-appliances-patched-days-earlier/">SecurityWeek</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>Keyorix Offers On‑Premise Open‑Source Secrets Management</title>
@@ -80,15 +107,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>ShinyHunters Suspect Rey Detained in Jordan</title>
-      <link>https://secubuzz.com/news/shinyhunters-suspect-rey-detained-in-jordan</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/shinyhunters-suspect-rey-detained-in-jordan</guid>
-      <description><![CDATA[A suspected member of the ShinyHunters digital extortion group, known as Rey, was reportedly detained by Jordanian authorities and is cooperating with the FBI. The arrest is part of an ongoing effort to identify and apprehend members of the group.]]></description>
-      <pubDate>Sun, 04 Oct 2026 07:22:05 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/shinyhunters-suspect-rey-reportedly.html">The Hacker News</source>
-      <category>Policy</category>
-    </item>
-    <item>
       <title>TA419 Targets U.S. AI Policy Experts with Phishing</title>
       <link>https://secubuzz.com/news/ta419-targets-u-s-ai-policy-experts-with-phishing</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ta419-targets-u-s-ai-policy-experts-with-phishing</guid>
@@ -96,15 +114,6 @@
       <pubDate>Sun, 04 Oct 2026 07:20:32 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/china-aligned-ta419-targets-us-ai.html">The Hacker News</source>
       <category>Malware</category>
-    </item>
-    <item>
-      <title>Google Gemini Could Gain Full Access to macOS Files, Apps, and Web</title>
-      <link>https://secubuzz.com/news/google-gemini-could-gain-full-access-to-macos-files-apps-and</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-gemini-could-gain-full-access-to-macos-files-apps-and</guid>
-      <description><![CDATA[Google’s Gemini AI may soon be able to read any file on a macOS device, launch applications, and browse the web without user permission, potentially enabling unauthorized actions on the system. No specific CVE is cited, and no public exploit is confirmed.]]></description>
-      <pubDate>Sat, 03 Oct 2026 23:12:34 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/google/google-gemini-could-soon-get-full-access-to-your-macs-files-apps-and-the-web/">BleepingComputer</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>YARA-X 1.21.0 Released with Five Improvements and Four Bug Fixes</title>
@@ -141,15 +150,6 @@
       <pubDate>Sat, 03 Oct 2026 14:35:20 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/danish-university-dtu-breach-exposes-data-of-up-to-200-000-people/">BleepingComputer</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>doxx.net Raises $38 Million to Fund AI Agent Safety Platform</title>
-      <link>https://secubuzz.com/news/doxx-net-raises-38-million-to-fund-ai-agent-safety-platform</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/doxx-net-raises-38-million-to-fund-ai-agent-safety-platform</guid>
-      <description><![CDATA[doxx.net has secured $38 million to develop its ADN platform, designed to prevent agentic misadventures by ensuring AI agents operate strictly under user authority. The initiative aims to mitigate risks of autonomous AI acting beyond intended boundaries.]]></description>
-      <pubDate>Sat, 03 Oct 2026 11:45:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/doxx-net-raises-38-million-to-prevent-ai-agent-on-the-internet-misadventures/">SecurityWeek</source>
-      <category>Policy</category>
     </item>
     <item>
       <title>Fortra Patches Critical Vulnerabilities in BoKS</title>
@@ -314,30 +314,12 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>Cloudflare Launches Traces to Visualize Request Flow Across Its Platform</title>
-      <link>https://secubuzz.com/news/cloudflare-launches-traces-to-visualize-request-flow-across-</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-launches-traces-to-visualize-request-flow-across-</guid>
-      <description><![CDATA[Cloudflare introduces Traces, a tool that tracks how a request moves through security rules, transformations, cache, routing, Workers, and the origin, then follows it across services in the user’s stack. The feature provides visibility into request handling across Cloudflare’s infrastructure.]]></description>
-      <pubDate>Fri, 02 Oct 2026 13:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/cloudflare-tracing/">Cloudflare Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
       <title>Updates on our pledge to make Cloudflare features accessible to everyone</title>
       <link>https://secubuzz.com/news/updates-on-our-pledge-to-make-cloudflare-features-accessible</link>
       <guid isPermaLink="true">https://secubuzz.com/news/updates-on-our-pledge-to-make-cloudflare-features-accessible</guid>
       <description><![CDATA[Cloudflare reports progress on its commitment to eliminate two-tier product access, expanding Logpush, multi-account governance, and higher platform limits to all accounts. The company outlines internal testing and future plans for broader feature availability.]]></description>
       <pubDate>Fri, 02 Oct 2026 13:00:00 GMT</pubDate>
       <source url="https://blog.cloudflare.com/enterprise-for-all-update/">Cloudflare Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>Quick Tunnels Adds Email Authentication for Accountless Access</title>
-      <link>https://secubuzz.com/news/quick-tunnels-adds-email-authentication-for-accountless-acce</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/quick-tunnels-adds-email-authentication-for-accountless-acce</guid>
-      <description><![CDATA[Quick Tunnels now supports email authentication via the --allowed-mail flag, allowing only specified addresses or domains to reach a local app. This feature enables developers to secure accountless tunnels without requiring a Cloudflare account, simplifying access control for dev projects.]]></description>
-      <pubDate>Fri, 02 Oct 2026 13:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/protected-quick-tunnels/">Cloudflare Security</source>
       <category>Cloud</category>
     </item>
     <item>
@@ -455,6 +437,24 @@
       <description><![CDATA[PwC surveyed 3,934 executives across 71 countries, finding botnets, adversarial attacks, and data poisoning as the top AI threats. Leaders identified these gaps as the most unprepared, surpassing all other risks in their top five preparedness list.]]></description>
       <pubDate>Fri, 02 Oct 2026 05:00:28 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/02/pwc-attacks-on-ai-systems/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>AI Agents Maintain Access to Company Data After Tasks Complete</title>
+      <link>https://secubuzz.com/news/ai-agents-maintain-access-to-company-data-after-tasks-comple</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-agents-maintain-access-to-company-data-after-tasks-comple</guid>
+      <description><![CDATA[IT teams worry that AI agents retain ongoing access to corporate systems and can act on users’ behalf after their tasks finish, highlighting a gap in enforceable AI policies and the need for real‑time monitoring to prevent unauthorized actions.]]></description>
+      <pubDate>Fri, 02 Oct 2026 04:30:21 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/02/delinea-ai-policy-adoption-enforcement-report/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Vega II Introduces AI‑Powered SOC Platform</title>
+      <link>https://secubuzz.com/news/vega-ii-introduces-ai-powered-soc-platform</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/vega-ii-introduces-ai-powered-soc-platform</guid>
+      <description><![CDATA[Vega released Vega II, its largest platform update, adding security‑trained AI and persistent memory to the SOC. The update removes legacy SIEM and data pipeline barriers, providing teams with a lasting record of learned insights for improved security operations.]]></description>
+      <pubDate>Fri, 02 Oct 2026 04:00:35 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/02/new-infosec-products-of-the-week-october-2-2026/">Help Net Security</source>
       <category>Policy</category>
     </item>
   </channel>
