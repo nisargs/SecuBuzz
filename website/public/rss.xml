@@ -5,15 +5,96 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Oct 2026 08:19:03 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 12:19:49 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Apple Adds Controls to macOS Full Disk Access Amid AI Privacy Concerns</title>
-      <link>https://secubuzz.com/news/apple-adds-controls-to-macos-full-disk-access-amid-ai-privac</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apple-adds-controls-to-macos-full-disk-access-amid-ai-privac</guid>
-      <description><![CDATA[Apple will introduce new controls for Full Disk Access in macOS to address privacy risks posed by increasingly capable AI agents. Users must explicitly grant permission for apps. Apple’s APIs already protect private data, but Full Disk Access bypasses these safeguards for backup apps. No rollout date or detailed mechanism has been disclosed.]]></description>
-      <pubDate>Mon, 05 Oct 2026 08:11:17 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/05/macos-full-disk-access-updates/">Help Net Security</source>
+      <title>Denmark Population Register Breach Exposes 8.8 Million People</title>
+      <link>https://secubuzz.com/news/denmark-population-register-breach-exposes-8-8-million-peopl</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/denmark-population-register-breach-exposes-8-8-million-peopl</guid>
+      <description><![CDATA[Denmark’s national population register suffered a data breach after unauthorized users accessed the system, exposing personal data of about 8.8 million residents. The breach involved unauthorized entry into the register’s database, potentially compromising sensitive demographic information. Authorities are investigating the incident and assessing the impact on affected individuals.]]></description>
+      <pubDate>Mon, 05 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://therecord.media/denmark-breach-register-cyberattack">The Record</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>CVE-2026-61500 Exploited in Rejetto HFS, Enabling RCE</title>
+      <link>https://secubuzz.com/news/cve-2026-61500-exploited-in-rejetto-hfs-enabling-rce</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-61500-exploited-in-rejetto-hfs-enabling-rce</guid>
+      <description><![CDATA[CVE-2026-61500 in Rejetto HFS allows attackers to recover the session‑cookie signing key, granting administrative access and remote code execution. The vulnerability was discovered by AI and has been actively exploited, enabling attackers to execute arbitrary code on affected servers. Patching HFS to the latest version is mandatory to mitigate the risk.]]></description>
+      <pubDate>Mon, 05 Oct 2026 11:00:05 GMT</pubDate>
+      <source url="https://www.securityweek.com/exploitation-hits-rejetto-hfs-vulnerability-discovered-by-ai/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Senate Passes Bipartisan Bill to Strengthen Healthcare Cybersecurity</title>
+      <link>https://secubuzz.com/news/senate-passes-bipartisan-bill-to-strengthen-healthcare-cyber</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/senate-passes-bipartisan-bill-to-strengthen-healthcare-cyber</guid>
+      <description><![CDATA[The U.S. Senate has passed a bipartisan bill aimed at improving cybersecurity in the healthcare sector. The legislation follows a year in which over 730 cyber breaches impacted more than 270 million Americans, with each breach costing an average of $10 million. The bill seeks to enhance protections for sensitive health data and reduce future breach incidents.]]></description>
+      <pubDate>Mon, 05 Oct 2026 10:42:19 GMT</pubDate>
+      <source url="https://www.securityweek.com/senate-passes-bipartisan-bill-to-strengthen-healthcare-cybersecurity/">SecurityWeek</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Apple Plans Tighter macOS Full Disk Access Controls Over AI Agent Data Access</title>
+      <link>https://secubuzz.com/news/apple-plans-tighter-macos-full-disk-access-controls-over-ai-</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apple-plans-tighter-macos-full-disk-access-controls-over-ai-</guid>
+      <description><![CDATA[Apple announced plans to tighten controls on macOS’s Full Disk Access setting, which AI agents currently use to read all user data. The move addresses security risks where developers exploit Full Disk Access to expose files, mail, messages, and browsing history without user consent. The update will limit AI agents’ data access to protect user privacy.]]></description>
+      <pubDate>Mon, 05 Oct 2026 10:38:50 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/apple-plans-tighter-macos-full-disk.html">The Hacker News</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Microsoft Releases Out‑of‑Band Update for Exchange Server to Fix CVE‑2026‑96940</title>
+      <link>https://secubuzz.com/news/microsoft-releases-out-of-band-update-for-exchange-server-to</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-releases-out-of-band-update-for-exchange-server-to</guid>
+      <description><![CDATA[Microsoft issued an out‑of‑band security update for Exchange Server that addresses CVE‑2026‑96940, a high‑severity flaw allowing authenticated attackers to read emails and attachments of other users within the same organization. The update prevents cross‑tenant access and mitigates the vulnerability before any active exploitation is reported.]]></description>
+      <pubDate>Mon, 05 Oct 2026 10:38:42 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/05/exchange-server-vulnerability-cve-2026-96940/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Jordan Detains ShinyHunters Hacker, Cooperates with FBI</title>
+      <link>https://secubuzz.com/news/jordan-detains-shinyhunters-hacker-cooperates-with-fbi</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/jordan-detains-shinyhunters-hacker-cooperates-with-fbi</guid>
+      <description><![CDATA[Jordanian authorities detained a suspected ShinyHunters member, known as Rey, who is reportedly assisting the FBI by providing access to his electronic devices and digital correspondence. The cooperation is considered critical to ongoing efforts to arrest other group members.]]></description>
+      <pubDate>Mon, 05 Oct 2026 10:36:02 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/05/shinyhunters-member-rey-detained-jordan-fbi/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>OpenAI to Show Visual Ads While Generating Images in ChatGPT</title>
+      <link>https://secubuzz.com/news/openai-to-show-visual-ads-while-generating-images-in-chatgpt</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openai-to-show-visual-ads-while-generating-images-in-chatgpt</guid>
+      <description><![CDATA[OpenAI announced that ChatGPT will display visual advertisements while users generate images. The new ad format appears during image creation, expanding the platform’s monetization strategy. No security impact is reported, and the feature is purely a user interface change as of now.]]></description>
+      <pubDate>Mon, 05 Oct 2026 10:28:45 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/artificial-intelligence/openai-will-show-visual-ads-in-chatgpt-while-you-generate-images/">BleepingComputer</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>MAKERphone 2.0: DIY 4G Phone with Plug‑in Hardware</title>
+      <link>https://secubuzz.com/news/makerphone-2-0-diy-4g-phone-with-plug-in-hardware</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/makerphone-2-0-diy-4g-phone-with-plug-in-hardware</guid>
+      <description><![CDATA[CircuitMess launches MAKERphone 2.0, a build‑it‑yourself 4G handset that runs MicroPython or Arduino C++. Users insert a SIM to make real calls and texts, and can add plug‑in camera, speaker, and prototyping board modules. The kit targets hobbyists and parents seeking a child’s first phone.]]></description>
+      <pubDate>Mon, 05 Oct 2026 09:50:37 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/05/makerphone-2-diy-4g-phone/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Windows KB5124010 Update Causes Crashes in Games Using AC‑3 Audio Decoding</title>
+      <link>https://secubuzz.com/news/windows-kb5124010-update-causes-crashes-in-games-using-ac-3-</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/windows-kb5124010-update-causes-crashes-in-games-using-ac-3-</guid>
+      <description><![CDATA[Microsoft’s KB5124010 Windows 11 preview update introduced a bug that causes games and applications using AC‑3 (Dolby Digital) audio decoding to crash. The issue affects only software that relies on the AC‑3 codec, and users are advised to postpone the update until Microsoft releases a fix. No data loss or security breach is reported.]]></description>
+      <pubDate>Mon, 05 Oct 2026 09:37:56 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-kb5124010-update-crashes-some-games-and-apps/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Google Suspends Open‑Source Bug Bounty Amid AI Spam</title>
+      <link>https://secubuzz.com/news/google-suspends-open-source-bug-bounty-amid-ai-spam</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-suspends-open-source-bug-bounty-amid-ai-spam</guid>
+      <description><![CDATA[Google has paused submissions to its Open Source Software Vulnerability Rewards Program after a surge of AI‑generated reports flooded the system. The move aims to reduce noise and focus on legitimate security findings, while the company reviews its intake process.]]></description>
+      <pubDate>Mon, 05 Oct 2026 08:27:46 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/google/google-halts-open-source-bug-bounty-program-amid-ai-spam-surge/">BleepingComputer</source>
       <category>Policy</category>
     </item>
     <item>
@@ -23,15 +104,6 @@
       <description><![CDATA[doxx.net has opened a public beta of its Agentic Defined Networking (ADN) platform, allowing users and their agents to create private, serverless networks with built‑in threat protection. The service blocks known malicious destinations and requires no personal information to join. The beta launch follows a $38 million funding round.]]></description>
       <pubDate>Mon, 05 Oct 2026 08:03:40 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/05/doxx-net-agentic-defined-networking-platform/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Alleged ShinyHunters Leader Arrested in Jordan</title>
-      <link>https://secubuzz.com/news/alleged-shinyhunters-leader-arrested-in-jordan</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/alleged-shinyhunters-leader-arrested-in-jordan</guid>
-      <description><![CDATA[Rey, a suspected leader of the ShinyHunters extortion group, was arrested in Jordan. The FBI claims he is aiding in locating other members of the group. No further details on data breaches or financial impact are provided.]]></description>
-      <pubDate>Mon, 05 Oct 2026 07:16:53 GMT</pubDate>
-      <source url="https://www.securityweek.com/alleged-shinyhunters-leader-arrested-in-jordan/">SecurityWeek</source>
       <category>Policy</category>
     </item>
     <item>
@@ -51,15 +123,6 @@
       <pubDate>Mon, 05 Oct 2026 05:30:47 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/05/drew-mccombs-cylerity-healthcare-fintech-security/">Help Net Security</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Keyorix Offers On‑Premise Open‑Source Secrets Management</title>
-      <link>https://secubuzz.com/news/keyorix-offers-on-premise-open-source-secrets-management</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/keyorix-offers-on-premise-open-source-secrets-management</guid>
-      <description><![CDATA[Keyorix is an open‑source secrets manager that runs entirely on a company’s own servers, storing database passwords, API keys, and tokens in a locked store. It ships as a single binary, requires no internet connection, and is aimed at teams that cannot send credentials to the cloud.]]></description>
-      <pubDate>Mon, 05 Oct 2026 05:00:57 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/05/keyorix-open-source-on-premise-secrets-management/">Help Net Security</source>
-      <category>Cloud</category>
     </item>
     <item>
       <title>RMM Abuse Enables Attackers to Blend In With Legitimate Remote Management</title>
@@ -141,15 +204,6 @@
       <pubDate>Sat, 03 Oct 2026 14:36:33 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/warlock-exploits-sharepoint-flaws-to.html">The Hacker News</source>
       <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Danish University DTU Breach Exposes Data of Up to 200,000 Users</title>
-      <link>https://secubuzz.com/news/danish-university-dtu-breach-exposes-data-of-up-to-200-000-u</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/danish-university-dtu-breach-exposes-data-of-up-to-200-000-u</guid>
-      <description><![CDATA[Hackers accessed DTU’s identity and access management system, downloading large amounts of data that may include personal information of up to 200,000 users. The breach highlights vulnerabilities in the university’s access controls and raises concerns over the protection of academic data.]]></description>
-      <pubDate>Sat, 03 Oct 2026 14:35:20 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/danish-university-dtu-breach-exposes-data-of-up-to-200-000-people/">BleepingComputer</source>
-      <category>Breach</category>
     </item>
     <item>
       <title>Fortra Patches Critical Vulnerabilities in BoKS</title>
@@ -402,60 +456,6 @@
       <pubDate>Fri, 02 Oct 2026 08:38:46 GMT</pubDate>
       <source url="https://www.securityweek.com/ai-agents-aimed-sql-injection-at-us-and-canadian-government-sites/">SecurityWeek</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Google Restricts Android Accessibility Services to Verified Tools Under Advanced Protection</title>
-      <link>https://secubuzz.com/news/google-restricts-android-accessibility-services-to-verified-</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-restricts-android-accessibility-services-to-verified-</guid>
-      <description><![CDATA[Google limits Android accessibility services to verified Accessibility Tools when Advanced Protection is enabled, blocking malicious apps that abuse the API for malware and fraud. The change reduces attack surface for credential theft and financial fraud. Users with Advanced Protection will no longer grant unrestricted access to unverified apps.]]></description>
-      <pubDate>Fri, 02 Oct 2026 08:01:30 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/android-17-advanced-protection-locks.html">The Hacker News</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>Insider Recruitment Threats Target Employee Access</title>
-      <link>https://secubuzz.com/news/insider-recruitment-threats-target-employee-access</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/insider-recruitment-threats-target-employee-access</guid>
-      <description><![CDATA[Cybercriminals are actively recruiting employees to gain legitimate access, enabling them to perform routine actions such as information lookups, account resets, transaction approvals, and shipment changes. These insider services can be sold to criminal customers, increasing the risk of internal compromise and facilitating covert operations within targeted organizations.]]></description>
-      <pubDate>Fri, 02 Oct 2026 06:00:05 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/02/intel-471-insider-threat-recruitment-report/">Help Net Security</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Android 17 Adds Features to Hinder Spyware Tracking</title>
-      <link>https://secubuzz.com/news/android-17-adds-features-to-hinder-spyware-tracking</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/android-17-adds-features-to-hinder-spyware-tracking</guid>
-      <description><![CDATA[Google’s Android 17 introduces six Advanced Protection features, including forensic logging that stores evidence off-device and Intrusion Logging that records security and network events. Existing users will be notified when the updates roll out, enhancing traceability for suspected phone hacks.]]></description>
-      <pubDate>Fri, 02 Oct 2026 05:30:37 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/02/android-17-advanced-protection-features/">Help Net Security</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>AI Threats Rank Highest Among Business Leaders</title>
-      <link>https://secubuzz.com/news/ai-threats-rank-highest-among-business-leaders</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-threats-rank-highest-among-business-leaders</guid>
-      <description><![CDATA[PwC surveyed 3,934 executives across 71 countries, finding botnets, adversarial attacks, and data poisoning as the top AI threats. Leaders identified these gaps as the most unprepared, surpassing all other risks in their top five preparedness list.]]></description>
-      <pubDate>Fri, 02 Oct 2026 05:00:28 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/02/pwc-attacks-on-ai-systems/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>AI Agents Maintain Access to Company Data After Tasks Complete</title>
-      <link>https://secubuzz.com/news/ai-agents-maintain-access-to-company-data-after-tasks-comple</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-agents-maintain-access-to-company-data-after-tasks-comple</guid>
-      <description><![CDATA[IT teams worry that AI agents retain ongoing access to corporate systems and can act on users’ behalf after their tasks finish, highlighting a gap in enforceable AI policies and the need for real‑time monitoring to prevent unauthorized actions.]]></description>
-      <pubDate>Fri, 02 Oct 2026 04:30:21 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/02/delinea-ai-policy-adoption-enforcement-report/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Vega II Introduces AI‑Powered SOC Platform</title>
-      <link>https://secubuzz.com/news/vega-ii-introduces-ai-powered-soc-platform</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/vega-ii-introduces-ai-powered-soc-platform</guid>
-      <description><![CDATA[Vega released Vega II, its largest platform update, adding security‑trained AI and persistent memory to the SOC. The update removes legacy SIEM and data pipeline barriers, providing teams with a lasting record of learned insights for improved security operations.]]></description>
-      <pubDate>Fri, 02 Oct 2026 04:00:35 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/02/new-infosec-products-of-the-week-october-2-2026/">Help Net Security</source>
-      <category>Policy</category>
     </item>
   </channel>
 </rss>
