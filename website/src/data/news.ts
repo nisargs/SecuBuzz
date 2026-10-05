@@ -11,6 +11,19 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "what-s-new-in-wiz-service-catalog-smarter-discovery-governan",
+    "title": "What’s New in Wiz Service Catalog: Smarter Discovery, Governance, and Service-Level Context",
+    "summary": "Wiz introduces updates to its Service Catalog, enabling faster build, continuous context updates, and clearer paths from cloud risk to accountability. The enhancements aim to improve governance and streamline risk management for cloud environments.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "Wiz Research",
+    "sourceUrl": "https://www.wiz.io/blog/wiz-service-catalog-updates",
+    "publishedAt": "2026-10-05T16:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "chinese-hackers-impersonate-us-officials-for-ai-cyber-espion",
     "title": "Chinese Hackers Impersonate US Officials for AI Cyber Espionage",
     "summary": "Chinese hackers from TA419 forged relationships with AI policy experts at U.S. think tanks, universities, and legal groups to facilitate espionage. The group impersonated officials to gain access to sensitive research and policy discussions. The operation highlights growing state-sponsored AI cyber espionage targeting U.S. policy makers.",
@@ -89,6 +102,19 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
+    "slug": "south-korea-probes-bank-breaches-amid-suspected-ai-powered-a",
+    "title": "South Korea probes bank breaches amid suspected AI-powered attacks",
+    "summary": "South Korea’s Financial Services Commission convened an emergency meeting after a series of cyberattacks targeting financial institutions. The attacks are suspected to be AI‑powered, prompting investigations into potential breaches of bank systems and the protection of customer data.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/south-korea-probes-bank-breaches-amid-suspected-ai-powered-attacks/",
+    "publishedAt": "2026-10-05T14:22:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "arizona-state-court-system-breach-after-phishing-attack",
     "title": "Arizona State Court System Breach After Phishing Attack",
     "summary": "A phishing attack on an Arizona state court employee led to a breach of the court’s system. Attackers accessed backup files containing protective‑order records and over 150,000 Foster Care Review Board reports, exposing sensitive data. The incident underscores the need for stronger email security and employee training.",
@@ -128,6 +154,58 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
+    "slug": "ltm-launches-blueverse-agentraceiq-for-ai-agent-monitoring",
+    "title": "LTM Launches BlueVerse AgenTraceIQ for AI Agent Monitoring",
+    "summary": "LTM announced BlueVerse AgenTraceIQ, a solution combining Rubrik Agent Cloud with LTM’s AI governance to help organizations monitor agentic AI, set guardrails, and rewind unintended actions in business-critical environments. The offering is part of Rubrik’s Project Hourglass and partners with elite Global Systems Integrators.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/ltm-blueverse-agentraceiq/",
+    "publishedAt": "2026-10-05T13:37:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "tenfold-adds-shared-content-governance-and-real-time-auditin",
+    "title": "tenfold Adds Shared Content Governance and Real‑Time Auditing to Free Edition",
+    "summary": "tenfold released two new features in its free Community Edition: shared content governance and real‑time event auditing. The updates enable organizations with fewer than 150 users to manage Microsoft 365 sharing more effectively and investigate suspicious identity activity, enhancing overall identity governance.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/tenfold-ce-our-free-identity-governance-tool-just-got-2-new-features/",
+    "publishedAt": "2026-10-05T13:33:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "stellar-cyber-7-0-unveils-ai-powered-soc-workflows",
+    "title": "Stellar Cyber 7.0 Unveils AI‑Powered SOC Workflows",
+    "summary": "Stellar Cyber released version 7.0, adding AI‑driven case triage, measurable SOC workflows, deeper investigative evidence, expanded automated response, and new APIs for large‑scale security operations. The update moves the Human‑Augmented Autonomous SOC from concept to practical operating model, improving analyst efficiency and response speed.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/stellar-cyber-7-0/",
+    "publishedAt": "2026-10-05T13:31:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "nikkei-reports-employee-email-compromise-targeting-journalis",
+    "title": "Nikkei Reports Employee Email Compromise Targeting Journalistic Sources",
+    "summary": "The Japanese media group Nikkei disclosed that an employee email account was compromised, potentially exposing journalistic sources. The breach involved unauthorized access to an internal account, raising concerns about source confidentiality and internal security controls.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/nikkei-cyberattack-japan-data",
+    "publishedAt": "2026-10-05T13:15:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "clingstun-linux-backdoor-exploits-multiple-flaws-via-stun-pr",
     "title": "ClingSTUN Linux Backdoor Exploits Multiple Flaws via STUN Protocol",
     "summary": "ClingSTUN is a Linux backdoor that uses the STUN protocol to establish a back‑connect proxy, maintain persistence, and self‑propagate by exploiting numerous vulnerabilities. The malware can spread across networks, compromising systems and enabling attackers to maintain long‑term access. Mitigation requires disabling STUN services, applying vendor patches, and monitoring for unusual outbound traffic.",
@@ -154,6 +232,19 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
+    "slug": "250-000-patients-affected-by-data-breaches-at-new-jersey-and",
+    "title": "250,000 Patients Affected by Data Breaches at New Jersey and Texas Healthcare Firms",
+    "summary": "Hackers accessed patient data from Clover Health Investments and AngMar Management Services in July, compromising records of 250,000 individuals. The breach exposed sensitive health information, potentially including personal identifiers and medical histories. No mitigation steps are detailed in the report.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/250000-impacted-by-data-breaches-at-new-jersey-texas-healthcare-firms/",
+    "publishedAt": "2026-10-05T12:35:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "credential-layer-expansion-outpaces-security-teams",
     "title": "Credential Layer Expansion Outpaces Security Teams",
     "summary": "Modern enterprises rely on credentials for human, system, and AI connections. GitGuardian offers detection, remediation, and prevention to secure this layer, helping organizations identify where credentials exist and how to protect them.",
@@ -162,6 +253,19 @@ export const news: NewsBrief[] = [
     "source": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/10/the-credential-layer-is-expanding.html",
     "publishedAt": "2026-10-05T11:55:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "realtek-jungle-sdk-exploit-attempts-deploy-cling-botnet-via-",
+    "title": "Realtek Jungle SDK Exploit Attempts Deploy Cling Botnet via STUN C2",
+    "summary": "Threat actors targeted a critical flaw in the Realtek Jungle SDK, attempting to use the vulnerability to install the Cling botnet. Cling repurposes standard STUN traffic as a command-and-control channel, enabling remote control of infected devices. The flaw has been patched, but exploitation attempts continue.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/realtek-jungle-sdk-exploit-attempts.html",
+    "publishedAt": "2026-10-05T11:46:25.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []

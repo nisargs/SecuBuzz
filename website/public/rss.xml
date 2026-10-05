@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Oct 2026 16:20:01 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 17:12:35 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>What’s New in Wiz Service Catalog: Smarter Discovery, Governance, and Service-Level Context</title>
+      <link>https://secubuzz.com/news/what-s-new-in-wiz-service-catalog-smarter-discovery-governan</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/what-s-new-in-wiz-service-catalog-smarter-discovery-governan</guid>
+      <description><![CDATA[Wiz introduces updates to its Service Catalog, enabling faster build, continuous context updates, and clearer paths from cloud risk to accountability. The enhancements aim to improve governance and streamline risk management for cloud environments.]]></description>
+      <pubDate>Mon, 05 Oct 2026 16:00:00 GMT</pubDate>
+      <source url="https://www.wiz.io/blog/wiz-service-catalog-updates">Wiz Research</source>
+      <category>Cloud</category>
+    </item>
     <item>
       <title>Chinese Hackers Impersonate US Officials for AI Cyber Espionage</title>
       <link>https://secubuzz.com/news/chinese-hackers-impersonate-us-officials-for-ai-cyber-espion</link>
@@ -62,6 +71,15 @@
       <category>Policy</category>
     </item>
     <item>
+      <title>South Korea probes bank breaches amid suspected AI-powered attacks</title>
+      <link>https://secubuzz.com/news/south-korea-probes-bank-breaches-amid-suspected-ai-powered-a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/south-korea-probes-bank-breaches-amid-suspected-ai-powered-a</guid>
+      <description><![CDATA[South Korea’s Financial Services Commission convened an emergency meeting after a series of cyberattacks targeting financial institutions. The attacks are suspected to be AI‑powered, prompting investigations into potential breaches of bank systems and the protection of customer data.]]></description>
+      <pubDate>Mon, 05 Oct 2026 14:22:12 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/south-korea-probes-bank-breaches-amid-suspected-ai-powered-attacks/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>Arizona State Court System Breach After Phishing Attack</title>
       <link>https://secubuzz.com/news/arizona-state-court-system-breach-after-phishing-attack</link>
       <guid isPermaLink="true">https://secubuzz.com/news/arizona-state-court-system-breach-after-phishing-attack</guid>
@@ -89,6 +107,42 @@
       <category>Malware</category>
     </item>
     <item>
+      <title>LTM Launches BlueVerse AgenTraceIQ for AI Agent Monitoring</title>
+      <link>https://secubuzz.com/news/ltm-launches-blueverse-agentraceiq-for-ai-agent-monitoring</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ltm-launches-blueverse-agentraceiq-for-ai-agent-monitoring</guid>
+      <description><![CDATA[LTM announced BlueVerse AgenTraceIQ, a solution combining Rubrik Agent Cloud with LTM’s AI governance to help organizations monitor agentic AI, set guardrails, and rewind unintended actions in business-critical environments. The offering is part of Rubrik’s Project Hourglass and partners with elite Global Systems Integrators.]]></description>
+      <pubDate>Mon, 05 Oct 2026 13:37:51 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/05/ltm-blueverse-agentraceiq/">Help Net Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>tenfold Adds Shared Content Governance and Real‑Time Auditing to Free Edition</title>
+      <link>https://secubuzz.com/news/tenfold-adds-shared-content-governance-and-real-time-auditin</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/tenfold-adds-shared-content-governance-and-real-time-auditin</guid>
+      <description><![CDATA[tenfold released two new features in its free Community Edition: shared content governance and real‑time event auditing. The updates enable organizations with fewer than 150 users to manage Microsoft 365 sharing more effectively and investigate suspicious identity activity, enhancing overall identity governance.]]></description>
+      <pubDate>Mon, 05 Oct 2026 13:33:42 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/tenfold-ce-our-free-identity-governance-tool-just-got-2-new-features/">BleepingComputer</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Stellar Cyber 7.0 Unveils AI‑Powered SOC Workflows</title>
+      <link>https://secubuzz.com/news/stellar-cyber-7-0-unveils-ai-powered-soc-workflows</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/stellar-cyber-7-0-unveils-ai-powered-soc-workflows</guid>
+      <description><![CDATA[Stellar Cyber released version 7.0, adding AI‑driven case triage, measurable SOC workflows, deeper investigative evidence, expanded automated response, and new APIs for large‑scale security operations. The update moves the Human‑Augmented Autonomous SOC from concept to practical operating model, improving analyst efficiency and response speed.]]></description>
+      <pubDate>Mon, 05 Oct 2026 13:31:06 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/05/stellar-cyber-7-0/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Nikkei Reports Employee Email Compromise Targeting Journalistic Sources</title>
+      <link>https://secubuzz.com/news/nikkei-reports-employee-email-compromise-targeting-journalis</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/nikkei-reports-employee-email-compromise-targeting-journalis</guid>
+      <description><![CDATA[The Japanese media group Nikkei disclosed that an employee email account was compromised, potentially exposing journalistic sources. The breach involved unauthorized access to an internal account, raising concerns about source confidentiality and internal security controls.]]></description>
+      <pubDate>Mon, 05 Oct 2026 13:15:00 GMT</pubDate>
+      <source url="https://therecord.media/nikkei-cyberattack-japan-data">The Record</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>ClingSTUN Linux Backdoor Exploits Multiple Flaws via STUN Protocol</title>
       <link>https://secubuzz.com/news/clingstun-linux-backdoor-exploits-multiple-flaws-via-stun-pr</link>
       <guid isPermaLink="true">https://secubuzz.com/news/clingstun-linux-backdoor-exploits-multiple-flaws-via-stun-pr</guid>
@@ -107,6 +161,15 @@
       <category>Policy</category>
     </item>
     <item>
+      <title>250,000 Patients Affected by Data Breaches at New Jersey and Texas Healthcare Firms</title>
+      <link>https://secubuzz.com/news/250-000-patients-affected-by-data-breaches-at-new-jersey-and</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/250-000-patients-affected-by-data-breaches-at-new-jersey-and</guid>
+      <description><![CDATA[Hackers accessed patient data from Clover Health Investments and AngMar Management Services in July, compromising records of 250,000 individuals. The breach exposed sensitive health information, potentially including personal identifiers and medical histories. No mitigation steps are detailed in the report.]]></description>
+      <pubDate>Mon, 05 Oct 2026 12:35:15 GMT</pubDate>
+      <source url="https://www.securityweek.com/250000-impacted-by-data-breaches-at-new-jersey-texas-healthcare-firms/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>Credential Layer Expansion Outpaces Security Teams</title>
       <link>https://secubuzz.com/news/credential-layer-expansion-outpaces-security-teams</link>
       <guid isPermaLink="true">https://secubuzz.com/news/credential-layer-expansion-outpaces-security-teams</guid>
@@ -114,6 +177,15 @@
       <pubDate>Mon, 05 Oct 2026 11:55:00 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/the-credential-layer-is-expanding.html">The Hacker News</source>
       <category>Policy</category>
+    </item>
+    <item>
+      <title>Realtek Jungle SDK Exploit Attempts Deploy Cling Botnet via STUN C2</title>
+      <link>https://secubuzz.com/news/realtek-jungle-sdk-exploit-attempts-deploy-cling-botnet-via-</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/realtek-jungle-sdk-exploit-attempts-deploy-cling-botnet-via-</guid>
+      <description><![CDATA[Threat actors targeted a critical flaw in the Realtek Jungle SDK, attempting to use the vulnerability to install the Cling botnet. Cling repurposes standard STUN traffic as a command-and-control channel, enabling remote control of infected devices. The flaw has been patched, but exploitation attempts continue.]]></description>
+      <pubDate>Mon, 05 Oct 2026 11:46:25 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/realtek-jungle-sdk-exploit-attempts.html">The Hacker News</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>CVE-2026-61500 Exploited in Rejetto HFS, Enabling RCE</title>
@@ -384,78 +456,6 @@
       <pubDate>Fri, 02 Oct 2026 15:20:53 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/us-sanctions-tren-de-aragua-members-in-atm-jackpotting-crackdown/">BleepingComputer</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Mississippi Mayor Reports Ransomware Incident Shutting Down City Systems</title>
-      <link>https://secubuzz.com/news/mississippi-mayor-reports-ransomware-incident-shutting-down-</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/mississippi-mayor-reports-ransomware-incident-shutting-down-</guid>
-      <description><![CDATA[A ransomware attack disrupted government services in Vicksburg, Mississippi, forcing a temporary shutdown of city systems. Mayor Willis Thompson confirmed the incident and said the FBI and other authorities are investigating the breach.]]></description>
-      <pubDate>Fri, 02 Oct 2026 14:06:00 GMT</pubDate>
-      <source url="https://therecord.media/vicksburg-mississippi-government-ransomware-attack">The Record</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Browser Attacks Evade EDR Endpoint Telemetry in Three Ways</title>
-      <link>https://secubuzz.com/news/browser-attacks-evade-edr-endpoint-telemetry-in-three-ways</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/browser-attacks-evade-edr-endpoint-telemetry-in-three-ways</guid>
-      <description><![CDATA[Browser attacks can evade EDR by stealing sessions, abusing extensions, manipulating users without leaving artifacts. NordLayer explains three evasion methods and recommends browser-level controls to close the gap. These techniques highlight the limitations of traditional endpoint detection and underscore the importance of integrating browser security solutions into comprehensive threat detection strategies.]]></description>
-      <pubDate>Fri, 02 Oct 2026 14:00:10 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/the-edr-blind-spot-3-ways-browser-attacks-evade-endpoint-telemetry/">BleepingComputer</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Vulnerability Backlogs Are an Ownership Problem</title>
-      <link>https://secubuzz.com/news/vulnerability-backlogs-are-an-ownership-problem</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/vulnerability-backlogs-are-an-ownership-problem</guid>
-      <description><![CDATA[Organizations lack clear ownership of assets, leading to unresolved vulnerability backlogs. The article argues that better vulnerability scanners are insufficient; companies must assign responsibility and authority to fix issues. It emphasizes governance and accountability as key to reducing security gaps.]]></description>
-      <pubDate>Fri, 02 Oct 2026 14:00:00 GMT</pubDate>
-      <source url="https://www.darkreading.com/cybersecurity-operations/vulnerability-backlogs-ownership-problem">Dark Reading</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Introducing Web Search API via AI Gateway</title>
-      <link>https://secubuzz.com/news/introducing-web-search-api-via-ai-gateway</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/introducing-web-search-api-via-ai-gateway</guid>
-      <description><![CDATA[Cloudflare’s AI Gateway now offers a native web search API, partnering with Ceramic.ai, Exa, and Linkup. Developers can inject real‑time web context into model inference via REST APIs or Workers bindings. The feature expands AI capabilities, enabling dynamic, up‑to‑date information retrieval during inference calls.]]></description>
-      <pubDate>Fri, 02 Oct 2026 13:28:10 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/introducing-web-search-api/">Cloudflare Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>Fake Zoom Installer Distributes CloudSyncD Backdoor on macOS</title>
-      <link>https://secubuzz.com/news/fake-zoom-installer-distributes-cloudsyncd-backdoor-on-macos</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fake-zoom-installer-distributes-cloudsyncd-backdoor-on-macos</guid>
-      <description><![CDATA[A fake Zoom installer targeting macOS users drops a 756 KB Mach‑O backdoor named CloudSyncD, which extracts itself at runtime. The malicious dropper can provide remote access to infected systems, enabling attackers to exfiltrate data or install additional malware. Users should verify Zoom downloads from official sources and keep macOS updated.]]></description>
-      <pubDate>Fri, 02 Oct 2026 13:15:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/macos-users-targeted-by-fake-zoom-installer-carrying-cloudsyncd-backdoor/">SecurityWeek</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Updates on our pledge to make Cloudflare features accessible to everyone</title>
-      <link>https://secubuzz.com/news/updates-on-our-pledge-to-make-cloudflare-features-accessible</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/updates-on-our-pledge-to-make-cloudflare-features-accessible</guid>
-      <description><![CDATA[Cloudflare reports progress on its commitment to eliminate two-tier product access, expanding Logpush, multi-account governance, and higher platform limits to all accounts. The company outlines internal testing and future plans for broader feature availability.]]></description>
-      <pubDate>Fri, 02 Oct 2026 13:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/enterprise-for-all-update/">Cloudflare Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>Cloudflare Enables Automation for Leading Civil Society Organizations</title>
-      <link>https://secubuzz.com/news/cloudflare-enables-automation-for-leading-civil-society-orga</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-enables-automation-for-leading-civil-society-orga</guid>
-      <description><![CDATA[Cloudflare reports that leading civil society organizations are leveraging its platform to automate operations, improving efficiency and resilience. The initiative showcases how non‑profits can use Cloudflare’s security and performance services to streamline workflows, protect data, and scale services without dedicated IT teams.]]></description>
-      <pubDate>Fri, 02 Oct 2026 13:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/civil-society-automation/">Cloudflare Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>Linux Backdoors Mimic Asian Mail Security Products</title>
-      <link>https://secubuzz.com/news/linux-backdoors-mimic-asian-mail-security-products</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/linux-backdoors-mimic-asian-mail-security-products</guid>
-      <description><![CDATA[Three newly discovered Linux backdoors disguise themselves as legitimate Asian mail security products, making detection difficult. The implants mimic the appearance and behavior of trusted edge solutions, allowing attackers to gain unauthorized access to compromised systems. Security teams should monitor for unusual mail security processes and verify software authenticity.]]></description>
-      <pubDate>Fri, 02 Oct 2026 13:00:00 GMT</pubDate>
-      <source url="https://www.darkreading.com/threat-intelligence/malicious-linux-implants-mimic-asian-mail-security">Dark Reading</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>
