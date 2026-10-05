@@ -1,5 +1,67 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/10/05/drew-mccombs-cylerity-healthcare-fintech-security/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/drew-mccombs-cylerity-healthcare-fintech-security/",
+    "title": "Hospital CISOs Should Ask Three Key Questions of Healthcare Fintech Vendors",
+    "headline": "Hospital CISOs Should Ask Three Key Questions of Healthcare Fintech Vendors",
+    "summary": "Hospital CISOs are advised to ask vendors about PHI protection, AI model safeguards, and MFA implementation. The guidance emphasizes prioritizing patient data and fund disbursement security, ensuring AI recommendations do not act autonomously, and deploying MFA for email as a cost‑effective measure for small practices.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-05T05:30:47.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/05/drew-mccombs-cylerity-healthcare-fintech-security/",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/why-cisos-struggle-to-answer-boards.html"
+      }
+    ]
+  },
+  {
+    "id": "https://www.securityweek.com/exploitation-of-citrix-netscaler-zero-day-hits-appliances-patched-days-earlier/",
+    "sourceUrl": "https://www.securityweek.com/exploitation-of-citrix-netscaler-zero-day-hits-appliances-patched-days-earlier/",
+    "title": "Citrix NetScaler Zero‑Day Exploitation Hits Appliances Patched Days Earlier",
+    "headline": "Citrix NetScaler Zero‑Day Exploitation Hits Appliances Patched Days Earlier",
+    "summary": "Citrix confirmed exploitation of CVE-2026-88779, a zero‑day vulnerability in NetScaler appliances, occurring just days after two other flaws were patched. The active exploitation in the wild triggers a critical security alert, requiring immediate patching and monitoring for affected devices.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-05T05:14:48.000Z",
+    "url": "https://www.securityweek.com/exploitation-of-citrix-netscaler-zero-day-hits-appliances-patched-days-earlier/",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/citrix-patches-netscaler-saml-zero-day-exploited-in-attacks/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/05/keyorix-open-source-on-premise-secrets-management/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/keyorix-open-source-on-premise-secrets-management/",
+    "title": "Keyorix Offers On‑Premise Open‑Source Secrets Management",
+    "headline": "Keyorix Offers On‑Premise Open‑Source Secrets Management",
+    "summary": "Keyorix is an open‑source secrets manager that runs entirely on a company’s own servers, storing database passwords, API keys, and tokens in a locked store. It ships as a single binary, requires no internet connection, and is aimed at teams that cannot send credentials to the cloud.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-05T05:00:57.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/05/keyorix-open-source-on-premise-secrets-management/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/05/remote-monitoring-and-management-rmm-abuse/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/remote-monitoring-and-management-rmm-abuse/",
+    "title": "RMM Abuse Enables Attackers to Blend In With Legitimate Remote Management",
+    "headline": "RMM Abuse Enables Attackers to Blend In With Legitimate Remote Management",
+    "summary": "Huntress reports attackers are exploiting legitimate remote monitoring and management (RMM) software in 45% of endpoint incidents in Q1 2026. The technique allows attackers to masquerade as normal business operations, increasing the frequency and potential damage of attacks. Mitigation involves stricter RMM access controls and monitoring.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-05T04:30:08.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/05/remote-monitoring-and-management-rmm-abuse/",
+    "additionalSources": []
+  },
+  {
     "id": "https://isc.sans.edu/diary/rss/33396",
     "sourceUrl": "https://isc.sans.edu/diary/rss/33396",
     "title": "Script Parses and Sends TTY Logs from DShield Sensor to SIEM",
@@ -11,28 +73,6 @@
     "publishedAt": "2026-10-05T00:15:00.000Z",
     "url": "https://isc.sans.edu/diary/rss/33396",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/citrix-patches-netscaler-saml-zero-day-exploited-in-attacks/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/citrix-patches-netscaler-saml-zero-day-exploited-in-attacks/",
-    "title": "Citrix Releases Emergency Patch for NetScaler SAML DoS Vulnerability Exploited in Zero-Day Attacks",
-    "headline": "Citrix Releases Emergency Patch for NetScaler SAML DoS Vulnerability Exploited in Zero-Day Attacks",
-    "summary": "Citrix issued emergency updates for a NetScaler denial‑of‑service flaw identified as CVE‑2026‑88779, which attackers have used in zero‑day attacks. Researchers are examining whether the vulnerability could also enable remote code execution. The patch mitigates the DoS impact and prevents further exploitation.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-04T21:58:01.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/citrix-patches-netscaler-saml-zero-day-exploited-in-attacks/",
-    "additionalSources": [
-      {
-        "source": "CISA",
-        "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/04/cisa-adds-one-known-exploited-vulnerability-catalog"
-      },
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/04/week-in-review-researcher-breaks-into-microsoft-analytics-service-netscaler-rce-0-day-exploited/"
-      }
-    ]
   },
   {
     "id": "https://www.securityweek.com/trump-names-national-intelligence-director-jay-clayton-to-lead-a-new-federal-ai-task-force/",
@@ -625,19 +665,6 @@
         "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsofts-x-account-hacked-in-crypto-token-pump-and-dump-scheme/"
       }
     ]
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/why-cisos-struggle-to-answer-boards.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/why-cisos-struggle-to-answer-boards.html",
-    "title": "CISOs Face Board’s Toughest Questions",
-    "headline": "CISOs Face Board’s Toughest Questions",
-    "summary": "CISOs are preparing for a board meeting by consolidating data from identity, cloud posture, vulnerability, SIEM, and EDR tools into spreadsheets and slides. The focus is on answering how secure the organization is overall, addressing key risk metrics and governance questions.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-02T11:30:00.000Z",
-    "url": "https://thehackernews.com/2026/10/why-cisos-struggle-to-answer-boards.html",
-    "additionalSources": []
   },
   {
     "id": "https://www.securityweek.com/in-rare-move-iranian-hacker-accused-of-working-for-irgc-extradited-to-us/",
