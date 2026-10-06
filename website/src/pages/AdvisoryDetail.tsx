@@ -187,9 +187,27 @@ export function AdvisoryDetail() {
   return (
     <>
       <Seo
-        title={`${advisory.cve} · ${advisory.vendor} ${advisory.product} · SecuBuzz`}
-        description={advisory.description || advisory.name}
+        title={`${advisory.cve}: ${advisory.vendor} ${advisory.product} Exploit Status, Patch & CISA KEV · SecuBuzz`}
+        description={`CISA KEV active zero-day alert for ${advisory.cve} (${advisory.vendor} ${advisory.product}). Action required: ${advisory.requiredAction}. Due date: ${advisory.dueDate}. ${advisory.description || advisory.name}`.trim()}
         canonicalPath={`/advisories/${advisory.slug}`}
+        type="article"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'TechArticle',
+          headline: `${advisory.cve} Vulnerability Advisory - ${advisory.vendor} ${advisory.product}`,
+          description: advisory.description || advisory.name,
+          datePublished: advisory.dateAdded,
+          url: `https://secubuzz.com/advisories/${advisory.slug}`,
+          author: {
+            '@type': 'Organization',
+            name: 'CISA / SecuBuzz',
+          },
+          publisher: {
+            '@type': 'Organization',
+            name: 'SecuBuzz',
+            url: 'https://secubuzz.com',
+          },
+        }}
       />
       <article className="mx-auto max-w-site px-5 pb-16 pt-10 md:px-8">
         <Link

@@ -5,6 +5,7 @@ interface SeoProps {
   description: string;
   canonicalPath?: string;
   type?: 'website' | 'article';
+  jsonLd?: Record<string, unknown>;
 }
 
 export function Seo({
@@ -12,6 +13,7 @@ export function Seo({
   description,
   canonicalPath = '',
   type = 'website',
+  jsonLd,
 }: SeoProps) {
   useEffect(() => {
     // 1. Title
@@ -67,7 +69,18 @@ export function Seo({
 
     setNameMeta('twitter:title', fullTitle);
     setNameMeta('twitter:description', description);
-  }, [title, description, canonicalPath, type]);
+
+    // 5. Schema.org JSON-LD Structured Data
+    if (jsonLd) {
+      let scriptTag = document.querySelector('script[type="application/ld+json"]');
+      if (!scriptTag) {
+        scriptTag = document.createElement('script');
+        scriptTag.setAttribute('type', 'application/ld+json');
+        document.head.appendChild(scriptTag);
+      }
+      scriptTag.textContent = JSON.stringify(jsonLd);
+    }
+  }, [title, description, canonicalPath, type, jsonLd]);
 
   return null;
 }

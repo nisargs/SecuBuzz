@@ -415,6 +415,22 @@ export default {
       });
     }
 
+    // Canonical HTTPS & Hostname Enforcement (301 Permanent Redirect)
+    // Resolves GSC split-protocol indexation (e.g. http://secubuzz.com/news) and www canonicalization
+    const isLocal = url.hostname === 'localhost' || url.hostname === '127.0.0.1';
+    const proto = request.headers.get('x-forwarded-proto') || url.protocol.replace(':', '');
+    const isHttp = proto === 'http' || url.protocol === 'http:';
+    const isWww = url.hostname.startsWith('www.');
+
+    if (!isLocal && (isHttp || isWww)) {
+      const canonicalTarget = new URL(request.url);
+      canonicalTarget.protocol = 'https:';
+      if (isWww) {
+        canonicalTarget.hostname = canonicalTarget.hostname.replace(/^www\./, '');
+      }
+      return Response.redirect(canonicalTarget.toString(), 301);
+    }
+
     try {
       // Favicon & Brand Asset routes
       if (url.pathname === '/favicon.ico' || url.pathname === '/favicon.png' || url.pathname === '/assets/favicon.png') {

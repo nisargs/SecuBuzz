@@ -84,10 +84,27 @@ export function NewsArticle() {
   return (
     <>
       <Seo
-        title={`${brief.title} · SecuBuzz`}
-        description={brief.summary}
+        title={`${brief.title} · 60-Word Security Brief · SecuBuzz`}
+        description={`[60-Word Security Brief] ${brief.summary}`}
         canonicalPath={`/news/${brief.slug}`}
         type="article"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'NewsArticle',
+          headline: brief.title,
+          description: brief.summary,
+          datePublished: brief.publishedAt,
+          url: canonicalUrl,
+          author: {
+            '@type': 'Organization',
+            name: brief.source || 'SecuBuzz',
+          },
+          publisher: {
+            '@type': 'Organization',
+            name: 'SecuBuzz',
+            url: 'https://secubuzz.com',
+          },
+        }}
       />
 
       <article className="mx-auto max-w-site px-5 pb-16 pt-10 md:px-8">

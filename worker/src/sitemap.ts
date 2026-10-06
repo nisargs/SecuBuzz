@@ -156,14 +156,34 @@ export function injectMetaTags(
   let description = 'Quick, factual 60-word cybersecurity news briefs and CISA KEV zero-day tracking for security professionals. Zero tracking, fast triage, verified sources.';
   let canonicalPath = pathname.replace(/\/$/, '') || '';
   let ogType = 'website';
+  let jsonLdObj: Record<string, unknown> | null = null;
 
   if (pathname === '/' || pathname === '') {
     title = 'SecuBuzz · Quick Cybersecurity News in 60 Words & CISA KEV Radar';
     description = 'Quick, factual 60-word cybersecurity news briefs and CISA KEV zero-day tracking for security professionals. Zero tracking, fast triage, verified sources.';
     canonicalPath = '';
+    jsonLdObj = {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'SecuBuzz',
+      url: 'https://secubuzz.com/',
+      description,
+      publisher: {
+        '@type': 'Organization',
+        name: 'MiSo Labs',
+        url: 'https://secubuzz.com',
+      },
+    };
   } else if (pathname === '/news') {
     title = 'Quick Cybersecurity News in 60 Words · SecuBuzz';
     description = 'Quick, concise 60-word cybersecurity news briefs covering active zero-days, enterprise ransomware campaigns, and CISA advisories.';
+    jsonLdObj = {
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      name: 'Quick Cybersecurity News Briefs',
+      url: 'https://secubuzz.com/news',
+      description,
+    };
   } else if (pathname.startsWith('/news/')) {
     const slug = pathname.replace('/news/', '').toLowerCase();
     const article = articles.find(a => {
@@ -173,19 +193,65 @@ export function injectMetaTags(
       return artSlug === slug || slug.startsWith(base) || base.startsWith(slug) || slug.includes(base.slice(0, 35));
     });
     if (article) {
-      title = `${article.headline || article.title} · 60-Word Security Brief · SecuBuzz`;
-      description = `⚡ [60-Word Brief] ${article.summary || description}`;
+      const artTitle = article.headline || article.title || 'Security Brief';
+      title = `${artTitle} · 60-Word Security Brief · SecuBuzz`;
+      description = `[60-Word Security Brief] ${article.summary || description}`;
       ogType = 'article';
+      jsonLdObj = {
+        '@context': 'https://schema.org',
+        '@type': 'NewsArticle',
+        headline: artTitle,
+        description: article.summary,
+        datePublished: article.publishedAt,
+        url: `https://secubuzz.com/news/${slug}`,
+        author: {
+          '@type': 'Organization',
+          name: article.sourceName || article.source || 'SecuBuzz',
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'SecuBuzz',
+          url: 'https://secubuzz.com',
+        },
+      };
     }
   } else if (pathname === '/advisories') {
-    title = 'CISA Known Exploited Vulnerabilities Radar · SecuBuzz';
-    description = 'Track active zero-days and vulnerabilities cataloged in CISA Known Exploited Vulnerabilities (KEV) with binding federal due dates.';
+    title = 'CISA Known Exploited Vulnerabilities (KEV) Tracker & EPSS Radar · SecuBuzz';
+    description = 'Track active zero-days in the CISA Known Exploited Vulnerabilities (KEV) catalog with federal remediation deadlines, EPSS exploit likelihood scores, and vendor patch actions.';
+    jsonLdObj = {
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      name: 'CISA Known Exploited Vulnerabilities (KEV) Radar',
+      url: 'https://secubuzz.com/advisories',
+      description,
+    };
   } else if (pathname.startsWith('/advisories/')) {
     const slug = pathname.replace('/advisories/', '').toLowerCase();
     const adv = advisories.find(a => a.cveID.toLowerCase() === slug || slug.includes(a.cveID.toLowerCase()));
     if (adv) {
-      title = `🚨 ${adv.cveID} · ${adv.vendorProject} ${adv.product} · CISA KEV Radar · SecuBuzz`;
-      description = `🚨 [CISA KEV Alert] ${adv.shortDescription || adv.vulnerabilityName || description}`;
+      title = `${adv.cveID}: ${adv.vendorProject} ${adv.product} Exploit Status, Patch & CISA KEV · SecuBuzz`;
+      const actionText = adv.requiredAction ? ` Action: ${adv.requiredAction}.` : '';
+      const dueText = adv.dueDate ? ` Due: ${adv.dueDate}.` : '';
+      const summaryText = adv.shortDescription || adv.vulnerabilityName || '';
+      description = `CISA KEV active zero-day alert for ${adv.cveID} (${adv.vendorProject} ${adv.product}).${actionText}${dueText} ${summaryText}`.trim();
+      ogType = 'article';
+      jsonLdObj = {
+        '@context': 'https://schema.org',
+        '@type': 'TechArticle',
+        headline: `${adv.cveID} Vulnerability Advisory - ${adv.vendorProject} ${adv.product}`,
+        description: adv.shortDescription || adv.vulnerabilityName,
+        datePublished: adv.dateAdded,
+        url: `https://secubuzz.com/advisories/${slug}`,
+        author: {
+          '@type': 'Organization',
+          name: 'CISA / SecuBuzz',
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'SecuBuzz',
+          url: 'https://secubuzz.com',
+        },
+      };
     }
   } else if (pathname === '/about') {
     title = 'About SecuBuzz · MiSo Labs';
@@ -215,7 +281,7 @@ export function injectMetaTags(
   const escapeAttr = (s: string) =>
     s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
-  return html
+  let resultHtml = html
     .replace(/<title>.*?<\/title>/i, `<title>${escapeAttr(title)}</title>`)
     .replace(/<meta name="description" content=".*?" \/>/i, `<meta name="description" content="${escapeAttr(description)}" />`)
     .replace(/<link rel="canonical" href=".*?" \/>/i, `<link rel="canonical" href="${canonicalUrl}" />`)
@@ -225,4 +291,21 @@ export function injectMetaTags(
     .replace(/<meta property="og:type" content=".*?" \/>/i, `<meta property="og:type" content="${ogType}" />`)
     .replace(/<meta name="twitter:title" content=".*?" \/>/i, `<meta name="twitter:title" content="${escapeAttr(title)}" />`)
     .replace(/<meta name="twitter:description" content=".*?" \/>/i, `<meta name="twitter:description" content="${escapeAttr(description)}" />`);
+
+  if (jsonLdObj) {
+    const jsonLdString = JSON.stringify(jsonLdObj);
+    if (resultHtml.includes('application/ld+json')) {
+      resultHtml = resultHtml.replace(
+        /<script type="application\/ld\+json">.*?<\/script>/is,
+        `<script type="application/ld+json">${jsonLdString}</script>`
+      );
+    } else {
+      resultHtml = resultHtml.replace(
+        '</head>',
+        `  <script type="application/ld+json">${jsonLdString}</script>\n  </head>`
+      );
+    }
+  }
+
+  return resultHtml;
 }

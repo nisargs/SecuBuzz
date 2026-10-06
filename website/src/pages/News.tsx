@@ -39,9 +39,16 @@ export function News() {
   return (
     <>
       <Seo
-        title="Cybersecurity News Briefs · SecuBuzz"
-        description="Concise 60-word cybersecurity briefs covering active vulnerabilities, ransomware campaigns, and zero-day threats."
+        title="Quick Cybersecurity News in 60 Words · SecuBuzz"
+        description="Quick, concise 60-word cybersecurity news briefs covering active zero-days, enterprise ransomware campaigns, and CISA advisories."
         canonicalPath="/news"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'CollectionPage',
+          name: 'Quick Cybersecurity News in 60 Words',
+          url: 'https://secubuzz.com/news',
+          description: 'Quick, concise 60-word cybersecurity news briefs covering active zero-days, enterprise ransomware campaigns, and CISA advisories.',
+        }}
       />
       <PageIntro
         title="News briefs"

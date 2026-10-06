@@ -85,9 +85,16 @@ export function Advisories() {
   return (
     <>
       <Seo
-        title="CISA Known Exploited Vulnerabilities · SecuBuzz"
-        description="Track active zero-days and vulnerabilities cataloged in CISA Known Exploited Vulnerabilities (KEV) with binding federal due dates."
+        title="CISA Known Exploited Vulnerabilities (KEV) Tracker & EPSS Radar · SecuBuzz"
+        description="Track active zero-days in the CISA Known Exploited Vulnerabilities (KEV) catalog with federal remediation deadlines, EPSS exploit likelihood scores, and vendor patch actions."
         canonicalPath="/advisories"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'CollectionPage',
+          name: 'CISA Known Exploited Vulnerabilities (KEV) Radar',
+          url: 'https://secubuzz.com/advisories',
+          description: 'Track active zero-days in the CISA Known Exploited Vulnerabilities (KEV) catalog with federal remediation deadlines, EPSS exploit likelihood scores, and vendor patch actions.',
+        }}
       />
       <PageIntro
         title="CISA Known Exploited Vulnerabilities"

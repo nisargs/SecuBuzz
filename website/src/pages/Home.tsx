@@ -26,9 +26,21 @@ export function Home() {
   return (
     <>
       <Seo
-        title="SecuBuzz · Cybersecurity News Briefs & CISA KEV Alerts"
-        description="Fast, factual 60-word cybersecurity briefs and CISA KEV tracking for security professionals. No tracking, anonymous crash reports only."
+        title="SecuBuzz · Quick Cybersecurity News in 60 Words & CISA KEV Radar"
+        description="Quick, factual 60-word cybersecurity news briefs and CISA KEV zero-day tracking for security professionals. Zero tracking, fast triage, verified sources."
         canonicalPath="/"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'WebSite',
+          name: 'SecuBuzz',
+          url: 'https://secubuzz.com/',
+          description: 'Quick, factual 60-word cybersecurity news briefs and CISA KEV zero-day tracking for security professionals.',
+          publisher: {
+            '@type': 'Organization',
+            name: 'MiSo Labs',
+            url: 'https://secubuzz.com',
+          },
+        }}
       />
       <section className="border-b border-line">
         <div className="mx-auto grid max-w-site items-center gap-14 px-5 py-16 md:px-8 lg:grid-cols-[1.15fr_0.85fr] lg:py-24">
