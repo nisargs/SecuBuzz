@@ -1,5 +1,191 @@
 [
   {
+    "id": "https://www.securityweek.com/cybersecurity-ma-roundup-39-deals-announced-in-september-2026/",
+    "sourceUrl": "https://www.securityweek.com/cybersecurity-ma-roundup-39-deals-announced-in-september-2026/",
+    "title": "39 Cybersecurity M&A Deals Announced in September 2026",
+    "headline": "39 Cybersecurity M&A Deals Announced in September 2026",
+    "summary": "A roundup of 39 cybersecurity mergers and acquisitions announced in September 2026, featuring deals by Dragos, IBM, Palo Alto Networks, Kiteworks, and Upwind. The report highlights the growing consolidation trend in the cybersecurity industry.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-06T11:01:35.000Z",
+    "url": "https://www.securityweek.com/cybersecurity-ma-roundup-39-deals-announced-in-september-2026/",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/cybersecurity-jobs-available-right-now-october-6-2026/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/06/dell-system-update-vulnerability-cve-2026-86360/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/dell-system-update-vulnerability-cve-2026-86360/",
+    "title": "Dell System Update Vulnerability (CVE-2026-86360) Enables Root Privileges",
+    "headline": "Dell System Update Vulnerability (CVE-2026-86360) Enables Root Privileges",
+    "summary": "Dell System Update (DSU) versions prior to 2.3.0.0 contain CVE-2026-86360, a path traversal flaw with a CVSS score of 9.6. An unauthenticated remote attacker can exploit it to execute arbitrary code with root privileges on Dell PowerEdge servers. Dell urges immediate patching.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-06T10:44:41.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/06/dell-system-update-vulnerability-cve-2026-86360/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/long-running-npm-malware-campaign-accumulates-40000-downloads/",
+    "sourceUrl": "https://www.securityweek.com/long-running-npm-malware-campaign-accumulates-40000-downloads/",
+    "title": "NPM Supply‑Chain Campaign Releases 40,000 Malicious Packages",
+    "headline": "NPM Supply‑Chain Campaign Releases 40,000 Malicious Packages",
+    "summary": "Since August 2023, attackers have published eight malicious NPM packages under the MALFEX supply‑chain campaign. The packages have accumulated 40,000 downloads, potentially exposing developers who install them to malware that can compromise their systems or inject malicious code into their projects.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-06T10:34:25.000Z",
+    "url": "https://www.securityweek.com/long-running-npm-malware-campaign-accumulates-40000-downloads/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/06/ontinue-ion-dark-web-monitoring/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/ontinue-ion-dark-web-monitoring/",
+    "title": "Ontinue Adds Dark‑Web Monitoring to ION MXDR",
+    "headline": "Ontinue Adds Dark‑Web Monitoring to ION MXDR",
+    "summary": "Ontinue launched ION for Dark Web Monitoring, a managed add‑on that extends ION MXDR. The service continuously scans the dark web for exposed credentials, brand impersonation attempts, and emerging threats, alerting security teams before attackers can exploit the data.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-06T10:10:39.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/06/ontinue-ion-dark-web-monitoring/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://unit42.paloaltonetworks.com/blinder-tunnel-targets-critical-infrastructure/",
+    "sourceUrl": "https://unit42.paloaltonetworks.com/blinder-tunnel-targets-critical-infrastructure/",
+    "title": "Blinder Tunnel Targets Iraqi Critical Infrastructure",
+    "headline": "Blinder Tunnel Targets Iraqi Critical Infrastructure",
+    "summary": "The Blinder Tunnel campaign, linked to Iran, uses fake Dubai Airports recruitment pages and GitHub-based command-and-control malware to compromise Iraqi critical infrastructure. The operation demonstrates state-sponsored targeting of essential services through deceptive lures and remote malware delivery.",
+    "category": "NATION_STATE",
+    "severity": "HIGH",
+    "source": "Unit 42",
+    "publishedAt": "2026-10-06T10:00:33.000Z",
+    "url": "https://unit42.paloaltonetworks.com/blinder-tunnel-targets-critical-infrastructure/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/06/transcend-rails-brings-policy-enforcement-and-spending-controls-to-ai-agents/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/transcend-rails-brings-policy-enforcement-and-spending-controls-to-ai-agents/",
+    "title": "Transcend Launches Rails for AI Agent Policy Enforcement",
+    "headline": "Transcend Launches Rails for AI Agent Policy Enforcement",
+    "summary": "Transcend has introduced Transcend Rails, a new agent management framework that extends beyond identity and access control to enforce policies and spending limits on AI agents. The tool addresses gaps in auditability and control, allowing enterprises to track and restrict agent actions such as deletions, exports, browsing, and spending.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-06T09:57:36.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/06/transcend-rails-brings-policy-enforcement-and-spending-controls-to-ai-agents/",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/ltm-blueverse-agentraceiq/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/06/hack-the-box-ai-range-enterprise-edition/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/hack-the-box-ai-range-enterprise-edition/",
+    "title": "Hack The Box Releases AI Range Enterprise Edition for Security Team Testing",
+    "headline": "Hack The Box Releases AI Range Enterprise Edition for Security Team Testing",
+    "summary": "Hack The Box has launched AI Range Enterprise Edition, enabling enterprise security teams to evaluate the effectiveness of their own AI agents in performing cybersecurity tasks. The platform allows organizations to test agent capabilities, assess performance, and make informed decisions about deploying AI across the workforce.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-06T09:45:46.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/06/hack-the-box-ai-range-enterprise-edition/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://isc.sans.edu/diary/rss/33400",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33400",
+    "title": "New Remote Management Tools Exploited by Threat Actors",
+    "headline": "New Remote Management Tools Exploited by Threat Actors",
+    "summary": "Security researchers have identified additional Remote Management & Monitoring (RMM) tools being abused by threat actors. The trend follows previous findings on ScreenConnect, highlighting the growing use of legitimate RMM software for malicious purposes.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "publishedAt": "2026-10-06T09:34:56.000Z",
+    "url": "https://isc.sans.edu/diary/rss/33400",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/remote-monitoring-and-management-rmm-abuse/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.thezdi.com/blog/2026/10/6/pwn2own-ireland-2026-day-one-results",
+    "sourceUrl": "https://www.thezdi.com/blog/2026/10/6/pwn2own-ireland-2026-day-one-results",
+    "title": "Pwn2Own Ireland 2026 Day One Exploit Highlights",
+    "headline": "Pwn2Own Ireland 2026 Day One Exploit Highlights",
+    "summary": "Day One of Pwn2Own Ireland 2026 saw 21 entries targeting various devices, including Samsung and Pixel. Notable successes included an OOB write and format string bug against the Sonos Era 300, earning the competitor $50,000 and 5 Master of Pwn points. The event continues with live updates.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Zero Day Initiative",
+    "publishedAt": "2026-10-06T09:28:31.000Z",
+    "url": "https://www.thezdi.com/blog/2026/10/6/pwn2own-ireland-2026-day-one-results",
+    "additionalSources": [
+      {
+        "source": "Zero Day Initiative",
+        "sourceUrl": "https://www.thezdi.com/blog/2026/10/5/pwn2own-ireland-2026-the-full-schedule"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/nikkei-discloses-breaches-of-employees-microsoft-google-email-accounts/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/nikkei-discloses-breaches-of-employees-microsoft-google-email-accounts/",
+    "title": "Nikkei Employee Email Accounts Breached",
+    "headline": "Nikkei Employee Email Accounts Breached",
+    "summary": "Japanese publisher Nikkei revealed that attackers breached two employee Microsoft and Google email accounts, using one to send thousands of phishing emails. The breach exposed internal communications and potentially sensitive information, prompting an investigation into the attackers’ methods and the security of employee credentials.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-06T09:25:50.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/nikkei-discloses-breaches-of-employees-microsoft-google-email-accounts/",
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/nikkei-cyberattack-japan-data"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/google-pauses-oss-product-bug-bounty.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/google-pauses-oss-product-bug-bounty.html",
+    "title": "Google Halts OSS Bug Bounty Rewards Amid Surge of Invalid Automated Reports",
+    "headline": "Google Halts OSS Bug Bounty Rewards Amid Surge of Invalid Automated Reports",
+    "summary": "Google has stopped accepting bug bounty submissions for its open-source projects such as Go, Angular, and Protocol Buffers effective October 1. Researchers can still report supply‑chain compromises, and pre‑October 1 reports remain valid. The move aims to reduce invalid automated submissions.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-06T09:21:47.000Z",
+    "url": "https://thehackernews.com/2026/10/google-pauses-oss-product-bug-bounty.html",
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/google-narrows-open-source-bug-bounty-amid-wave-of-invalid-automated-reports/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/engineer-sentenced-for-locking-thousands-of-devices-on-employer-network/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/engineer-sentenced-for-locking-thousands-of-devices-on-employer-network/",
+    "title": "Former Engineer Sentenced for Locking Thousands of Devices in Ransomware‑Style Attack",
+    "headline": "Former Engineer Sentenced for Locking Thousands of Devices in Ransomware‑Style Attack",
+    "summary": "A former core infrastructure engineer at a New Jersey industrial company was sentenced to 32 months in prison after locking over 3,000 devices on his employer’s network in a ransomware‑style attack. The incident involved disabling access to critical systems without payment demands.",
+    "category": "RANSOMWARE",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-06T08:19:24.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/engineer-sentenced-for-locking-thousands-of-devices-on-employer-network/",
+    "additionalSources": []
+  },
+  {
     "id": "https://thehackernews.com/2026/10/critical-atlassian-flaw-lets.html",
     "sourceUrl": "https://thehackernews.com/2026/10/critical-atlassian-flaw-lets.html",
     "title": "Atlassian Data Center Flaw Allows Unauthenticated File Read",
@@ -86,24 +272,6 @@
     "publishedAt": "2026-10-06T04:30:30.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/06/product-showcase-webroot-mobile-security/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/06/cybersecurity-jobs-available-right-now-october-6-2026/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/cybersecurity-jobs-available-right-now-october-6-2026/",
-    "title": "Cybersecurity jobs available right now: October 6, 2026",
-    "headline": "Cybersecurity jobs available right now: October 6, 2026",
-    "summary": "The post lists an Associate IAM Engineer position in New York City, focusing on Microsoft Entra ID identity and access management. Responsibilities include user and group management, access provisioning, role assignments, authentication issue resolution, and documentation of procedures for stable IAM services.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-06T04:00:58.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/06/cybersecurity-jobs-available-right-now-october-6-2026/",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/the-state-of-cybersecurity-in-2026key.html"
-      }
-    ]
   },
   {
     "id": "https://cybernewsai.com/blog/ta419-chinese-espionage-aitm-phishing-detection",
@@ -199,19 +367,6 @@
     ]
   },
   {
-    "id": "https://www.thezdi.com/blog/2026/10/5/pwn2own-ireland-2026-the-full-schedule",
-    "sourceUrl": "https://www.thezdi.com/blog/2026/10/5/pwn2own-ireland-2026-the-full-schedule",
-    "title": "Pwn2Own Ireland 2026 Schedule Released",
-    "headline": "Pwn2Own Ireland 2026 Schedule Released",
-    "summary": "The Pwn2Own Ireland 2026 competition in Cork has announced its full schedule, featuring over 60 phone entries and a live leaderboard. Events include Samsung Galaxy S26, Sonos Era 300, and LiteLLM challenges, with prizes of $50,000 and Master of Pwn points for winners.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Zero Day Initiative",
-    "publishedAt": "2026-10-05T18:11:29.000Z",
-    "url": "https://www.thezdi.com/blog/2026/10/5/pwn2own-ireland-2026-the-full-schedule",
-    "additionalSources": []
-  },
-  {
     "id": "https://therecord.media/us-australia-warn-of-latest-citrix-vulnerability",
     "sourceUrl": "https://therecord.media/us-australia-warn-of-latest-citrix-vulnerability",
     "title": "Citrix Tracks New NetScaler Issue, Distinguishes from Prior Vulnerabilities",
@@ -300,24 +455,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.securityweek.com/google-narrows-open-source-bug-bounty-amid-wave-of-invalid-automated-reports/",
-    "sourceUrl": "https://www.securityweek.com/google-narrows-open-source-bug-bounty-amid-wave-of-invalid-automated-reports/",
-    "title": "Google Halts Open Source Bug Bounty Due to Invalid Automated Reports",
-    "headline": "Google Halts Open Source Bug Bounty Due to Invalid Automated Reports",
-    "summary": "Google temporarily suspended acceptance of vulnerability reports through its Open Source Software Vulnerability Reward Program after a surge of invalid automated submissions. The move aims to reduce noise and focus on legitimate security findings. The program remains active for other categories of reports.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-05T14:26:00.000Z",
-    "url": "https://www.securityweek.com/google-narrows-open-source-bug-bounty-amid-wave-of-invalid-automated-reports/",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/google/google-halts-open-source-bug-bounty-program-amid-ai-spam-surge/"
-      }
-    ]
-  },
-  {
     "id": "https://www.bleepingcomputer.com/news/security/south-korea-probes-bank-breaches-amid-suspected-ai-powered-attacks/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/south-korea-probes-bank-breaches-amid-suspected-ai-powered-attacks/",
     "title": "South Korea probes bank breaches amid suspected AI-powered attacks",
@@ -370,19 +507,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.helpnetsecurity.com/2026/10/05/ltm-blueverse-agentraceiq/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/ltm-blueverse-agentraceiq/",
-    "title": "LTM Launches BlueVerse AgenTraceIQ for AI Agent Monitoring",
-    "headline": "LTM Launches BlueVerse AgenTraceIQ for AI Agent Monitoring",
-    "summary": "LTM announced BlueVerse AgenTraceIQ, a solution combining Rubrik Agent Cloud with LTM’s AI governance to help organizations monitor agentic AI, set guardrails, and rewind unintended actions in business-critical environments. The offering is part of Rubrik’s Project Hourglass and partners with elite Global Systems Integrators.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-05T13:37:51.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/05/ltm-blueverse-agentraceiq/",
-    "additionalSources": []
-  },
-  {
     "id": "https://www.bleepingcomputer.com/news/security/tenfold-ce-our-free-identity-governance-tool-just-got-2-new-features/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/tenfold-ce-our-free-identity-governance-tool-just-got-2-new-features/",
     "title": "tenfold Adds Shared Content Governance and Real‑Time Auditing to Free Edition",
@@ -419,19 +543,6 @@
     "source": "Help Net Security",
     "publishedAt": "2026-10-05T13:30:28.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/05/malwarebytes-scam-link-check/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/nikkei-cyberattack-japan-data",
-    "sourceUrl": "https://therecord.media/nikkei-cyberattack-japan-data",
-    "title": "Nikkei Reports Employee Email Compromise Targeting Journalistic Sources",
-    "headline": "Nikkei Reports Employee Email Compromise Targeting Journalistic Sources",
-    "summary": "The Japanese media group Nikkei disclosed that an employee email account was compromised, potentially exposing journalistic sources. The breach involved unauthorized access to an internal account, raising concerns about source confidentiality and internal security controls.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "publishedAt": "2026-10-05T13:15:00.000Z",
-    "url": "https://therecord.media/nikkei-cyberattack-japan-data",
     "additionalSources": []
   },
   {
@@ -621,19 +732,6 @@
         "sourceUrl": "https://thehackernews.com/2026/10/why-cisos-struggle-to-answer-boards.html"
       }
     ]
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/05/remote-monitoring-and-management-rmm-abuse/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/remote-monitoring-and-management-rmm-abuse/",
-    "title": "RMM Abuse Enables Attackers to Blend In With Legitimate Remote Management",
-    "headline": "RMM Abuse Enables Attackers to Blend In With Legitimate Remote Management",
-    "summary": "Huntress reports attackers are exploiting legitimate remote monitoring and management (RMM) software in 45% of endpoint incidents in Q1 2026. The technique allows attackers to masquerade as normal business operations, increasing the frequency and potential damage of attacks. Mitigation involves stricter RMM access controls and monitoring.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-05T04:30:08.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/05/remote-monitoring-and-management-rmm-abuse/",
-    "additionalSources": []
   },
   {
     "id": "https://isc.sans.edu/diary/rss/33396",
@@ -3653,89 +3751,6 @@
     "source": "Dark Reading",
     "publishedAt": "2026-09-24T14:02:43.000Z",
     "url": "https://www.darkreading.com/cloud-security/how-to-build-sase-framework",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/fedramp-vdr-and-ver-daily-scans-are-only-the-beginning/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fedramp-vdr-and-ver-daily-scans-are-only-the-beginning/",
-    "title": "FedRAMP Introduces Continuous VDR & VER Compliance Requirements",
-    "headline": "FedRAMP Introduces Continuous VDR & VER Compliance Requirements",
-    "summary": "FedRAMP’s new VDR and VER rules push vulnerability management into a continuous cycle, demanding faster scans, stricter remediation timelines, and stronger evidence. The December 7 deadline marks the start of a broader shift toward automated compliance validation, with agencies required to prove ongoing security posture rather than periodic snapshots.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-09-24T14:02:12.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/fedramp-vdr-and-ver-daily-scans-are-only-the-beginning/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/09/24/symphonyai-risk-intelligence/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/24/symphonyai-risk-intelligence/",
-    "title": "SymphonyAI Launches AI‑Driven Continuous Financial Crime Risk Platform",
-    "headline": "SymphonyAI Launches AI‑Driven Continuous Financial Crime Risk Platform",
-    "summary": "SymphonyAI’s Symphony Risk Intelligence platform deploys AI agents to automate continuous financial‑crime risk assessment. The tool continuously re‑evaluates threats and adapts controls, moving from periodic reviews to real‑time compliance. It aims to help institutions detect money‑laundering patterns faster and meet evolving regulations without manual oversight.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-09-24T13:46:32.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/09/24/symphonyai-risk-intelligence/",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/09/24/latticeflow-ai-risk-center/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-209-02",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-209-02",
-    "title": "Siemens Mendix Runtime Vulnerability CVE-2026-7891 Recalled",
-    "headline": "Siemens Mendix Runtime Vulnerability CVE-2026-7891 Recalled",
-    "summary": "CISA revoked the advisory for Siemens Mendix Runtime (Update A) after re‑investigation confirmed the reported behavior was expected platform configuration. The CVE-2026-7891 vulnerability was retracted, and no protected attribute is exposed. No mitigation is required beyond normal configuration.",
-    "category": "CVE",
-    "severity": "LOW",
-    "source": "CISA",
-    "publishedAt": "2026-09-24T12:00:00.000Z",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-209-02",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-267-02",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-267-02",
-    "title": "Eufy Omni C20/X10 Pro Command Injection CVE-2026-93289",
-    "headline": "Eufy Omni C20/X10 Pro Command Injection CVE-2026-93289",
-    "summary": "CISA reports that Eufy Omni C20 and Omni X10 Pro devices are vulnerable to OS command injection (CVE-2026-93289). An unauthenticated attacker can execute system commands during pairing, potentially compromising the device. Users should apply vendor patches or disable pairing until a fix is released.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CISA",
-    "publishedAt": "2026-09-24T12:00:00.000Z",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-267-02",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/island-raises-400-million-at-6-4-billion-valuation/",
-    "sourceUrl": "https://www.securityweek.com/island-raises-400-million-at-6-4-billion-valuation/",
-    "title": "Island Secures $400 Million in Funding at $6.4 Billion Valuation",
-    "headline": "Island Secures $400 Million in Funding at $6.4 Billion Valuation",
-    "summary": "Island, an enterprise security firm, raised $400 million in a funding round led by Evolution Equity Partners, bringing its total capital raised to over $1 billion since 2020. The investment supports the company’s growth and product development.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-09-24T11:39:09.000Z",
-    "url": "https://www.securityweek.com/island-raises-400-million-at-6-4-billion-valuation/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/09/24/meta-private-processing-for-ai-glasses/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/24/meta-private-processing-for-ai-glasses/",
-    "title": "Meta Locks Users Out of Their Own Data on AI Glasses",
-    "headline": "Meta Locks Users Out of Their Own Data on AI Glasses",
-    "summary": "Meta expands Private Processing to its AI glasses, running AI models inside confidential virtual machines (CVMs) that prevent Meta from accessing user data. The system uses protected hardware, encryption, and software verification to secure data during cloud processing and storage, ensuring user privacy while delivering AI services.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-09-24T11:35:04.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/09/24/meta-private-processing-for-ai-glasses/",
     "additionalSources": []
   }
 ]

@@ -5,8 +5,116 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Oct 2026 08:20:19 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 11:20:18 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>39 Cybersecurity M&amp;A Deals Announced in September 2026</title>
+      <link>https://secubuzz.com/news/39-cybersecurity-m-a-deals-announced-in-september-2026</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/39-cybersecurity-m-a-deals-announced-in-september-2026</guid>
+      <description><![CDATA[A roundup of 39 cybersecurity mergers and acquisitions announced in September 2026, featuring deals by Dragos, IBM, Palo Alto Networks, Kiteworks, and Upwind. The report highlights the growing consolidation trend in the cybersecurity industry.]]></description>
+      <pubDate>Tue, 06 Oct 2026 11:01:35 GMT</pubDate>
+      <source url="https://www.securityweek.com/cybersecurity-ma-roundup-39-deals-announced-in-september-2026/">SecurityWeek</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Dell System Update Vulnerability (CVE-2026-86360) Enables Root Privileges</title>
+      <link>https://secubuzz.com/news/dell-system-update-vulnerability-cve-2026-86360-enables-root</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/dell-system-update-vulnerability-cve-2026-86360-enables-root</guid>
+      <description><![CDATA[Dell System Update (DSU) versions prior to 2.3.0.0 contain CVE-2026-86360, a path traversal flaw with a CVSS score of 9.6. An unauthenticated remote attacker can exploit it to execute arbitrary code with root privileges on Dell PowerEdge servers. Dell urges immediate patching.]]></description>
+      <pubDate>Tue, 06 Oct 2026 10:44:41 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/06/dell-system-update-vulnerability-cve-2026-86360/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>NPM Supply‑Chain Campaign Releases 40,000 Malicious Packages</title>
+      <link>https://secubuzz.com/news/npm-supply-chain-campaign-releases-40-000-malicious-packages</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/npm-supply-chain-campaign-releases-40-000-malicious-packages</guid>
+      <description><![CDATA[Since August 2023, attackers have published eight malicious NPM packages under the MALFEX supply‑chain campaign. The packages have accumulated 40,000 downloads, potentially exposing developers who install them to malware that can compromise their systems or inject malicious code into their projects.]]></description>
+      <pubDate>Tue, 06 Oct 2026 10:34:25 GMT</pubDate>
+      <source url="https://www.securityweek.com/long-running-npm-malware-campaign-accumulates-40000-downloads/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Ontinue Adds Dark‑Web Monitoring to ION MXDR</title>
+      <link>https://secubuzz.com/news/ontinue-adds-dark-web-monitoring-to-ion-mxdr</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ontinue-adds-dark-web-monitoring-to-ion-mxdr</guid>
+      <description><![CDATA[Ontinue launched ION for Dark Web Monitoring, a managed add‑on that extends ION MXDR. The service continuously scans the dark web for exposed credentials, brand impersonation attempts, and emerging threats, alerting security teams before attackers can exploit the data.]]></description>
+      <pubDate>Tue, 06 Oct 2026 10:10:39 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/06/ontinue-ion-dark-web-monitoring/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Blinder Tunnel Targets Iraqi Critical Infrastructure</title>
+      <link>https://secubuzz.com/news/blinder-tunnel-targets-iraqi-critical-infrastructure</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/blinder-tunnel-targets-iraqi-critical-infrastructure</guid>
+      <description><![CDATA[The Blinder Tunnel campaign, linked to Iran, uses fake Dubai Airports recruitment pages and GitHub-based command-and-control malware to compromise Iraqi critical infrastructure. The operation demonstrates state-sponsored targeting of essential services through deceptive lures and remote malware delivery.]]></description>
+      <pubDate>Tue, 06 Oct 2026 10:00:33 GMT</pubDate>
+      <source url="https://unit42.paloaltonetworks.com/blinder-tunnel-targets-critical-infrastructure/">Unit 42</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Transcend Launches Rails for AI Agent Policy Enforcement</title>
+      <link>https://secubuzz.com/news/transcend-launches-rails-for-ai-agent-policy-enforcement</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/transcend-launches-rails-for-ai-agent-policy-enforcement</guid>
+      <description><![CDATA[Transcend has introduced Transcend Rails, a new agent management framework that extends beyond identity and access control to enforce policies and spending limits on AI agents. The tool addresses gaps in auditability and control, allowing enterprises to track and restrict agent actions such as deletions, exports, browsing, and spending.]]></description>
+      <pubDate>Tue, 06 Oct 2026 09:57:36 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/06/transcend-rails-brings-policy-enforcement-and-spending-controls-to-ai-agents/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Hack The Box Releases AI Range Enterprise Edition for Security Team Testing</title>
+      <link>https://secubuzz.com/news/hack-the-box-releases-ai-range-enterprise-edition-for-securi</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hack-the-box-releases-ai-range-enterprise-edition-for-securi</guid>
+      <description><![CDATA[Hack The Box has launched AI Range Enterprise Edition, enabling enterprise security teams to evaluate the effectiveness of their own AI agents in performing cybersecurity tasks. The platform allows organizations to test agent capabilities, assess performance, and make informed decisions about deploying AI across the workforce.]]></description>
+      <pubDate>Tue, 06 Oct 2026 09:45:46 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/06/hack-the-box-ai-range-enterprise-edition/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>New Remote Management Tools Exploited by Threat Actors</title>
+      <link>https://secubuzz.com/news/new-remote-management-tools-exploited-by-threat-actors</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/new-remote-management-tools-exploited-by-threat-actors</guid>
+      <description><![CDATA[Security researchers have identified additional Remote Management & Monitoring (RMM) tools being abused by threat actors. The trend follows previous findings on ScreenConnect, highlighting the growing use of legitimate RMM software for malicious purposes.]]></description>
+      <pubDate>Tue, 06 Oct 2026 09:34:56 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33400">SANS Internet Storm Center</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Pwn2Own Ireland 2026 Day One Exploit Highlights</title>
+      <link>https://secubuzz.com/news/pwn2own-ireland-2026-day-one-exploit-highlights</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/pwn2own-ireland-2026-day-one-exploit-highlights</guid>
+      <description><![CDATA[Day One of Pwn2Own Ireland 2026 saw 21 entries targeting various devices, including Samsung and Pixel. Notable successes included an OOB write and format string bug against the Sonos Era 300, earning the competitor $50,000 and 5 Master of Pwn points. The event continues with live updates.]]></description>
+      <pubDate>Tue, 06 Oct 2026 09:28:31 GMT</pubDate>
+      <source url="https://www.thezdi.com/blog/2026/10/6/pwn2own-ireland-2026-day-one-results">Zero Day Initiative</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Nikkei Employee Email Accounts Breached</title>
+      <link>https://secubuzz.com/news/nikkei-employee-email-accounts-breached</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/nikkei-employee-email-accounts-breached</guid>
+      <description><![CDATA[Japanese publisher Nikkei revealed that attackers breached two employee Microsoft and Google email accounts, using one to send thousands of phishing emails. The breach exposed internal communications and potentially sensitive information, prompting an investigation into the attackers’ methods and the security of employee credentials.]]></description>
+      <pubDate>Tue, 06 Oct 2026 09:25:50 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/nikkei-discloses-breaches-of-employees-microsoft-google-email-accounts/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Google Halts OSS Bug Bounty Rewards Amid Surge of Invalid Automated Reports</title>
+      <link>https://secubuzz.com/news/google-halts-oss-bug-bounty-rewards-amid-surge-of-invalid-au</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-halts-oss-bug-bounty-rewards-amid-surge-of-invalid-au</guid>
+      <description><![CDATA[Google has stopped accepting bug bounty submissions for its open-source projects such as Go, Angular, and Protocol Buffers effective October 1. Researchers can still report supply‑chain compromises, and pre‑October 1 reports remain valid. The move aims to reduce invalid automated submissions.]]></description>
+      <pubDate>Tue, 06 Oct 2026 09:21:47 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/google-pauses-oss-product-bug-bounty.html">The Hacker News</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Former Engineer Sentenced for Locking Thousands of Devices in Ransomware‑Style Attack</title>
+      <link>https://secubuzz.com/news/former-engineer-sentenced-for-locking-thousands-of-devices-i</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/former-engineer-sentenced-for-locking-thousands-of-devices-i</guid>
+      <description><![CDATA[A former core infrastructure engineer at a New Jersey industrial company was sentenced to 32 months in prison after locking over 3,000 devices on his employer’s network in a ransomware‑style attack. The incident involved disabling access to critical systems without payment demands.]]></description>
+      <pubDate>Tue, 06 Oct 2026 08:19:24 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/engineer-sentenced-for-locking-thousands-of-devices-on-employer-network/">BleepingComputer</source>
+      <category>Ransomware</category>
+    </item>
     <item>
       <title>Atlassian Data Center Flaw Allows Unauthenticated File Read</title>
       <link>https://secubuzz.com/news/atlassian-data-center-flaw-allows-unauthenticated-file-read</link>
@@ -62,15 +170,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Cybersecurity jobs available right now: October 6, 2026</title>
-      <link>https://secubuzz.com/news/cybersecurity-jobs-available-right-now-october-6-2026</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cybersecurity-jobs-available-right-now-october-6-2026</guid>
-      <description><![CDATA[The post lists an Associate IAM Engineer position in New York City, focusing on Microsoft Entra ID identity and access management. Responsibilities include user and group management, access provisioning, role assignments, authentication issue resolution, and documentation of procedures for stable IAM services.]]></description>
-      <pubDate>Tue, 06 Oct 2026 04:00:58 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/06/cybersecurity-jobs-available-right-now-october-6-2026/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
       <title>TA419: How to Detect &amp; Block Chinese AiTM Phishing Attacks</title>
       <link>https://secubuzz.com/news/ta419-how-to-detect-block-chinese-aitm-phishing-attacks</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ta419-how-to-detect-block-chinese-aitm-phishing-attacks</guid>
@@ -114,15 +213,6 @@
       <pubDate>Mon, 05 Oct 2026 21:25:08 GMT</pubDate>
       <source url="https://www.darkreading.com/iot/clingstun-vulnerable-iot-devices-proxy-nodes">Dark Reading</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Pwn2Own Ireland 2026 Schedule Released</title>
-      <link>https://secubuzz.com/news/pwn2own-ireland-2026-schedule-released</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/pwn2own-ireland-2026-schedule-released</guid>
-      <description><![CDATA[The Pwn2Own Ireland 2026 competition in Cork has announced its full schedule, featuring over 60 phone entries and a live leaderboard. Events include Samsung Galaxy S26, Sonos Era 300, and LiteLLM challenges, with prizes of $50,000 and Master of Pwn points for winners.]]></description>
-      <pubDate>Mon, 05 Oct 2026 18:11:29 GMT</pubDate>
-      <source url="https://www.thezdi.com/blog/2026/10/5/pwn2own-ireland-2026-the-full-schedule">Zero Day Initiative</source>
-      <category>Policy</category>
     </item>
     <item>
       <title>Citrix Tracks New NetScaler Issue, Distinguishes from Prior Vulnerabilities</title>
@@ -179,15 +269,6 @@
       <category>Ransomware</category>
     </item>
     <item>
-      <title>Google Halts Open Source Bug Bounty Due to Invalid Automated Reports</title>
-      <link>https://secubuzz.com/news/google-halts-open-source-bug-bounty-due-to-invalid-automated</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-halts-open-source-bug-bounty-due-to-invalid-automated</guid>
-      <description><![CDATA[Google temporarily suspended acceptance of vulnerability reports through its Open Source Software Vulnerability Reward Program after a surge of invalid automated submissions. The move aims to reduce noise and focus on legitimate security findings. The program remains active for other categories of reports.]]></description>
-      <pubDate>Mon, 05 Oct 2026 14:26:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/google-narrows-open-source-bug-bounty-amid-wave-of-invalid-automated-reports/">SecurityWeek</source>
-      <category>Policy</category>
-    </item>
-    <item>
       <title>South Korea probes bank breaches amid suspected AI-powered attacks</title>
       <link>https://secubuzz.com/news/south-korea-probes-bank-breaches-amid-suspected-ai-powered-a</link>
       <guid isPermaLink="true">https://secubuzz.com/news/south-korea-probes-bank-breaches-amid-suspected-ai-powered-a</guid>
@@ -224,15 +305,6 @@
       <category>Malware</category>
     </item>
     <item>
-      <title>LTM Launches BlueVerse AgenTraceIQ for AI Agent Monitoring</title>
-      <link>https://secubuzz.com/news/ltm-launches-blueverse-agentraceiq-for-ai-agent-monitoring</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ltm-launches-blueverse-agentraceiq-for-ai-agent-monitoring</guid>
-      <description><![CDATA[LTM announced BlueVerse AgenTraceIQ, a solution combining Rubrik Agent Cloud with LTM’s AI governance to help organizations monitor agentic AI, set guardrails, and rewind unintended actions in business-critical environments. The offering is part of Rubrik’s Project Hourglass and partners with elite Global Systems Integrators.]]></description>
-      <pubDate>Mon, 05 Oct 2026 13:37:51 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/05/ltm-blueverse-agentraceiq/">Help Net Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
       <title>tenfold Adds Shared Content Governance and Real‑Time Auditing to Free Edition</title>
       <link>https://secubuzz.com/news/tenfold-adds-shared-content-governance-and-real-time-auditin</link>
       <guid isPermaLink="true">https://secubuzz.com/news/tenfold-adds-shared-content-governance-and-real-time-auditin</guid>
@@ -258,15 +330,6 @@
       <pubDate>Mon, 05 Oct 2026 13:30:28 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/05/malwarebytes-scam-link-check/">Help Net Security</source>
       <category>Malware</category>
-    </item>
-    <item>
-      <title>Nikkei Reports Employee Email Compromise Targeting Journalistic Sources</title>
-      <link>https://secubuzz.com/news/nikkei-reports-employee-email-compromise-targeting-journalis</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/nikkei-reports-employee-email-compromise-targeting-journalis</guid>
-      <description><![CDATA[The Japanese media group Nikkei disclosed that an employee email account was compromised, potentially exposing journalistic sources. The breach involved unauthorized access to an internal account, raising concerns about source confidentiality and internal security controls.]]></description>
-      <pubDate>Mon, 05 Oct 2026 13:15:00 GMT</pubDate>
-      <source url="https://therecord.media/nikkei-cyberattack-japan-data">The Record</source>
-      <category>Breach</category>
     </item>
     <item>
       <title>Developer of Ploutus ATM Malware Arrested in US Court</title>
@@ -386,15 +449,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>RMM Abuse Enables Attackers to Blend In With Legitimate Remote Management</title>
-      <link>https://secubuzz.com/news/rmm-abuse-enables-attackers-to-blend-in-with-legitimate-remo</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rmm-abuse-enables-attackers-to-blend-in-with-legitimate-remo</guid>
-      <description><![CDATA[Huntress reports attackers are exploiting legitimate remote monitoring and management (RMM) software in 45% of endpoint incidents in Q1 2026. The technique allows attackers to masquerade as normal business operations, increasing the frequency and potential damage of attacks. Mitigation involves stricter RMM access controls and monitoring.]]></description>
-      <pubDate>Mon, 05 Oct 2026 04:30:08 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/05/remote-monitoring-and-management-rmm-abuse/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>Script Parses and Sends TTY Logs from DShield Sensor to SIEM</title>
       <link>https://secubuzz.com/news/script-parses-and-sends-tty-logs-from-dshield-sensor-to-siem</link>
       <guid isPermaLink="true">https://secubuzz.com/news/script-parses-and-sends-tty-logs-from-dshield-sensor-to-siem</guid>
@@ -402,60 +456,6 @@
       <pubDate>Mon, 05 Oct 2026 00:15:00 GMT</pubDate>
       <source url="https://isc.sans.edu/diary/rss/33396">SANS Internet Storm Center</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Trump Appoints National Intelligence Director Jay Clayton to Head New Federal AI Task Force</title>
-      <link>https://secubuzz.com/news/trump-appoints-national-intelligence-director-jay-clayton-to</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/trump-appoints-national-intelligence-director-jay-clayton-to</guid>
-      <description><![CDATA[President Trump announced that National Intelligence Director Jay Clayton will lead a newly formed federal task force focused on artificial intelligence. The move follows a White House meeting with AI industry leaders and aims to coordinate national AI strategy and policy across government agencies.]]></description>
-      <pubDate>Sun, 04 Oct 2026 14:57:25 GMT</pubDate>
-      <source url="https://www.securityweek.com/trump-names-national-intelligence-director-jay-clayton-to-lead-a-new-federal-ai-task-force/">SecurityWeek</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Anthropic Requests Claude Users Share Voice Data for Model Training</title>
-      <link>https://secubuzz.com/news/anthropic-requests-claude-users-share-voice-data-for-model-t</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-requests-claude-users-share-voice-data-for-model-t</guid>
-      <description><![CDATA[Anthropic has begun asking Claude users to voluntarily share their voice conversations to help train and improve its AI models. The initiative involves collecting user voice data for model training purposes, with no indication of data breaches or security incidents.]]></description>
-      <pubDate>Sun, 04 Oct 2026 10:53:21 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-asks-claude-users-to-share-voice-data-for-ai-model-training/">BleepingComputer</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Analysis of New User Agent Strings in Honeypot Logs</title>
-      <link>https://secubuzz.com/news/analysis-of-new-user-agent-strings-in-honeypot-logs</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/analysis-of-new-user-agent-strings-in-honeypot-logs</guid>
-      <description><![CDATA[Observations of newly appearing user agent strings in honeypot logs have sparked interest. The logs reveal diverse client identifiers, offering insights into attacker tools and techniques. Monitoring these strings helps security teams detect emerging threats and refine detection rules.]]></description>
-      <pubDate>Sun, 04 Oct 2026 07:58:51 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33394">SANS Internet Storm Center</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>YARA-X 1.21.0 Released with Five Improvements and Four Bug Fixes</title>
-      <link>https://secubuzz.com/news/yara-x-1-21-0-released-with-five-improvements-and-four-bug-f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/yara-x-1-21-0-released-with-five-improvements-and-four-bug-f</guid>
-      <description><![CDATA[The YARA-X tool has released version 1.21.0, adding five new features and fixing four bugs. The update enhances rule creation and performance for malware analysts and security researchers. No security impact is reported, and users are encouraged to upgrade to benefit from the improvements.]]></description>
-      <pubDate>Sat, 03 Oct 2026 14:40:21 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33392">SANS Internet Storm Center</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>MI5 Warns of China’s MSS Funding Research with Over 100 UK Academics</title>
-      <link>https://secubuzz.com/news/mi5-warns-of-china-s-mss-funding-research-with-over-100-uk-a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/mi5-warns-of-china-s-mss-funding-research-with-over-100-uk-a</guid>
-      <description><![CDATA[MI5 issued a Security Service Espionage Alert on September 30, 2026, stating that China’s Ministry of State Security funded research through the China General Technology Research Institute involving more than 100 UK-linked academics. The program aims to advance intelligence gathering capabilities for Beijing’s state security service.]]></description>
-      <pubDate>Sat, 03 Oct 2026 14:38:46 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/mi5-says-chinas-mss-funded-research.html">The Hacker News</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>Warlock Uses SharePoint Vulnerabilities to Deploy Ransomware</title>
-      <link>https://secubuzz.com/news/warlock-uses-sharepoint-vulnerabilities-to-deploy-ransomware</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/warlock-uses-sharepoint-vulnerabilities-to-deploy-ransomware</guid>
-      <description><![CDATA[The China-linked threat actor Warlock continues to weaponize Microsoft SharePoint flaws, targeting Portuguese and Spanish organizations, including critical infrastructure, government and education sectors. The attacks disable security tools and deploy ransomware, exploiting both legacy and new SharePoint vulnerabilities.]]></description>
-      <pubDate>Sat, 03 Oct 2026 14:36:33 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/warlock-exploits-sharepoint-flaws-to.html">The Hacker News</source>
-      <category>Ransomware</category>
     </item>
   </channel>
 </rss>

@@ -11,6 +11,164 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "39-cybersecurity-m-a-deals-announced-in-september-2026",
+    "title": "39 Cybersecurity M&A Deals Announced in September 2026",
+    "summary": "A roundup of 39 cybersecurity mergers and acquisitions announced in September 2026, featuring deals by Dragos, IBM, Palo Alto Networks, Kiteworks, and Upwind. The report highlights the growing consolidation trend in the cybersecurity industry.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/cybersecurity-ma-roundup-39-deals-announced-in-september-2026/",
+    "publishedAt": "2026-10-06T11:01:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "dell-system-update-vulnerability-cve-2026-86360-enables-root",
+    "title": "Dell System Update Vulnerability (CVE-2026-86360) Enables Root Privileges",
+    "summary": "Dell System Update (DSU) versions prior to 2.3.0.0 contain CVE-2026-86360, a path traversal flaw with a CVSS score of 9.6. An unauthenticated remote attacker can exploit it to execute arbitrary code with root privileges on Dell PowerEdge servers. Dell urges immediate patching.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/dell-system-update-vulnerability-cve-2026-86360/",
+    "publishedAt": "2026-10-06T10:44:41.000Z",
+    "cves": [
+      "CVE-2026-86360"
+    ],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "npm-supply-chain-campaign-releases-40-000-malicious-packages",
+    "title": "NPM Supply‑Chain Campaign Releases 40,000 Malicious Packages",
+    "summary": "Since August 2023, attackers have published eight malicious NPM packages under the MALFEX supply‑chain campaign. The packages have accumulated 40,000 downloads, potentially exposing developers who install them to malware that can compromise their systems or inject malicious code into their projects.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/long-running-npm-malware-campaign-accumulates-40000-downloads/",
+    "publishedAt": "2026-10-06T10:34:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "ontinue-adds-dark-web-monitoring-to-ion-mxdr",
+    "title": "Ontinue Adds Dark‑Web Monitoring to ION MXDR",
+    "summary": "Ontinue launched ION for Dark Web Monitoring, a managed add‑on that extends ION MXDR. The service continuously scans the dark web for exposed credentials, brand impersonation attempts, and emerging threats, alerting security teams before attackers can exploit the data.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/ontinue-ion-dark-web-monitoring/",
+    "publishedAt": "2026-10-06T10:10:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "blinder-tunnel-targets-iraqi-critical-infrastructure",
+    "title": "Blinder Tunnel Targets Iraqi Critical Infrastructure",
+    "summary": "The Blinder Tunnel campaign, linked to Iran, uses fake Dubai Airports recruitment pages and GitHub-based command-and-control malware to compromise Iraqi critical infrastructure. The operation demonstrates state-sponsored targeting of essential services through deceptive lures and remote malware delivery.",
+    "category": "Malware",
+    "severity": "HIGH",
+    "source": "Unit 42",
+    "sourceUrl": "https://unit42.paloaltonetworks.com/blinder-tunnel-targets-critical-infrastructure/",
+    "publishedAt": "2026-10-06T10:00:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "transcend-launches-rails-for-ai-agent-policy-enforcement",
+    "title": "Transcend Launches Rails for AI Agent Policy Enforcement",
+    "summary": "Transcend has introduced Transcend Rails, a new agent management framework that extends beyond identity and access control to enforce policies and spending limits on AI agents. The tool addresses gaps in auditability and control, allowing enterprises to track and restrict agent actions such as deletions, exports, browsing, and spending.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/transcend-rails-brings-policy-enforcement-and-spending-controls-to-ai-agents/",
+    "publishedAt": "2026-10-06T09:57:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "hack-the-box-releases-ai-range-enterprise-edition-for-securi",
+    "title": "Hack The Box Releases AI Range Enterprise Edition for Security Team Testing",
+    "summary": "Hack The Box has launched AI Range Enterprise Edition, enabling enterprise security teams to evaluate the effectiveness of their own AI agents in performing cybersecurity tasks. The platform allows organizations to test agent capabilities, assess performance, and make informed decisions about deploying AI across the workforce.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/hack-the-box-ai-range-enterprise-edition/",
+    "publishedAt": "2026-10-06T09:45:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "new-remote-management-tools-exploited-by-threat-actors",
+    "title": "New Remote Management Tools Exploited by Threat Actors",
+    "summary": "Security researchers have identified additional Remote Management & Monitoring (RMM) tools being abused by threat actors. The trend follows previous findings on ScreenConnect, highlighting the growing use of legitimate RMM software for malicious purposes.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33400",
+    "publishedAt": "2026-10-06T09:34:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "pwn2own-ireland-2026-day-one-exploit-highlights",
+    "title": "Pwn2Own Ireland 2026 Day One Exploit Highlights",
+    "summary": "Day One of Pwn2Own Ireland 2026 saw 21 entries targeting various devices, including Samsung and Pixel. Notable successes included an OOB write and format string bug against the Sonos Era 300, earning the competitor $50,000 and 5 Master of Pwn points. The event continues with live updates.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Zero Day Initiative",
+    "sourceUrl": "https://www.thezdi.com/blog/2026/10/6/pwn2own-ireland-2026-day-one-results",
+    "publishedAt": "2026-10-06T09:28:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "nikkei-employee-email-accounts-breached",
+    "title": "Nikkei Employee Email Accounts Breached",
+    "summary": "Japanese publisher Nikkei revealed that attackers breached two employee Microsoft and Google email accounts, using one to send thousands of phishing emails. The breach exposed internal communications and potentially sensitive information, prompting an investigation into the attackers’ methods and the security of employee credentials.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/nikkei-discloses-breaches-of-employees-microsoft-google-email-accounts/",
+    "publishedAt": "2026-10-06T09:25:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "google-halts-oss-bug-bounty-rewards-amid-surge-of-invalid-au",
+    "title": "Google Halts OSS Bug Bounty Rewards Amid Surge of Invalid Automated Reports",
+    "summary": "Google has stopped accepting bug bounty submissions for its open-source projects such as Go, Angular, and Protocol Buffers effective October 1. Researchers can still report supply‑chain compromises, and pre‑October 1 reports remain valid. The move aims to reduce invalid automated submissions.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/google-pauses-oss-product-bug-bounty.html",
+    "publishedAt": "2026-10-06T09:21:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "former-engineer-sentenced-for-locking-thousands-of-devices-i",
+    "title": "Former Engineer Sentenced for Locking Thousands of Devices in Ransomware‑Style Attack",
+    "summary": "A former core infrastructure engineer at a New Jersey industrial company was sentenced to 32 months in prison after locking over 3,000 devices on his employer’s network in a ransomware‑style attack. The incident involved disabling access to critical systems without payment demands.",
+    "category": "Ransomware",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/engineer-sentenced-for-locking-thousands-of-devices-on-employer-network/",
+    "publishedAt": "2026-10-06T08:19:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "atlassian-data-center-flaw-allows-unauthenticated-file-read",
     "title": "Atlassian Data Center Flaw Allows Unauthenticated File Read",
     "summary": "Atlassian disclosed a critical flaw (CVE‑2026‑21589) in eight Data Center products that lets unauthenticated attackers read specific files in the web application root. The vulnerability, rated 9.3/10, requires knowledge of file names and paths but no login. No mitigation details provided.",
@@ -89,19 +247,6 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "cybersecurity-jobs-available-right-now-october-6-2026",
-    "title": "Cybersecurity jobs available right now: October 6, 2026",
-    "summary": "The post lists an Associate IAM Engineer position in New York City, focusing on Microsoft Entra ID identity and access management. Responsibilities include user and group management, access provisioning, role assignments, authentication issue resolution, and documentation of procedures for stable IAM services.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/cybersecurity-jobs-available-right-now-october-6-2026/",
-    "publishedAt": "2026-10-06T04:00:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
     "slug": "ta419-how-to-detect-block-chinese-aitm-phishing-attacks",
     "title": "TA419: How to Detect & Block Chinese AiTM Phishing Attacks",
     "summary": "China-aligned actor TA419 impersonates former US White House officials in AiTM phishing campaigns targeting AI policy experts. The attacks aim to bypass MFA defenses by tricking users into revealing credentials, posing a risk of unauthorized access to sensitive accounts.",
@@ -164,19 +309,6 @@ export const news: NewsBrief[] = [
     "source": "Dark Reading",
     "sourceUrl": "https://www.darkreading.com/iot/clingstun-vulnerable-iot-devices-proxy-nodes",
     "publishedAt": "2026-10-05T21:25:08.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "pwn2own-ireland-2026-schedule-released",
-    "title": "Pwn2Own Ireland 2026 Schedule Released",
-    "summary": "The Pwn2Own Ireland 2026 competition in Cork has announced its full schedule, featuring over 60 phone entries and a live leaderboard. Events include Samsung Galaxy S26, Sonos Era 300, and LiteLLM challenges, with prizes of $50,000 and Master of Pwn points for winners.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Zero Day Initiative",
-    "sourceUrl": "https://www.thezdi.com/blog/2026/10/5/pwn2own-ireland-2026-the-full-schedule",
-    "publishedAt": "2026-10-05T18:11:29.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -262,19 +394,6 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "google-halts-open-source-bug-bounty-due-to-invalid-automated",
-    "title": "Google Halts Open Source Bug Bounty Due to Invalid Automated Reports",
-    "summary": "Google temporarily suspended acceptance of vulnerability reports through its Open Source Software Vulnerability Reward Program after a surge of invalid automated submissions. The move aims to reduce noise and focus on legitimate security findings. The program remains active for other categories of reports.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/google-narrows-open-source-bug-bounty-amid-wave-of-invalid-automated-reports/",
-    "publishedAt": "2026-10-05T14:26:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
     "slug": "south-korea-probes-bank-breaches-amid-suspected-ai-powered-a",
     "title": "South Korea probes bank breaches amid suspected AI-powered attacks",
     "summary": "South Korea’s Financial Services Commission convened an emergency meeting after a series of cyberattacks targeting financial institutions. The attacks are suspected to be AI‑powered, prompting investigations into potential breaches of bank systems and the protection of customer data.",
@@ -327,19 +446,6 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "ltm-launches-blueverse-agentraceiq-for-ai-agent-monitoring",
-    "title": "LTM Launches BlueVerse AgenTraceIQ for AI Agent Monitoring",
-    "summary": "LTM announced BlueVerse AgenTraceIQ, a solution combining Rubrik Agent Cloud with LTM’s AI governance to help organizations monitor agentic AI, set guardrails, and rewind unintended actions in business-critical environments. The offering is part of Rubrik’s Project Hourglass and partners with elite Global Systems Integrators.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/ltm-blueverse-agentraceiq/",
-    "publishedAt": "2026-10-05T13:37:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
     "slug": "tenfold-adds-shared-content-governance-and-real-time-auditin",
     "title": "tenfold Adds Shared Content Governance and Real‑Time Auditing to Free Edition",
     "summary": "tenfold released two new features in its free Community Edition: shared content governance and real‑time event auditing. The updates enable organizations with fewer than 150 users to manage Microsoft 365 sharing more effectively and investigate suspicious identity activity, enhancing overall identity governance.",
@@ -374,19 +480,6 @@ export const news: NewsBrief[] = [
     "source": "Help Net Security",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/malwarebytes-scam-link-check/",
     "publishedAt": "2026-10-05T13:30:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "nikkei-reports-employee-email-compromise-targeting-journalis",
-    "title": "Nikkei Reports Employee Email Compromise Targeting Journalistic Sources",
-    "summary": "The Japanese media group Nikkei disclosed that an employee email account was compromised, potentially exposing journalistic sources. The breach involved unauthorized access to an internal account, raising concerns about source confidentiality and internal security controls.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/nikkei-cyberattack-japan-data",
-    "publishedAt": "2026-10-05T13:15:00.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -556,19 +649,6 @@ export const news: NewsBrief[] = [
     "source": "Help Net Security",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/drew-mccombs-cylerity-healthcare-fintech-security/",
     "publishedAt": "2026-10-05T05:30:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "rmm-abuse-enables-attackers-to-blend-in-with-legitimate-remo",
-    "title": "RMM Abuse Enables Attackers to Blend In With Legitimate Remote Management",
-    "summary": "Huntress reports attackers are exploiting legitimate remote monitoring and management (RMM) software in 45% of endpoint incidents in Q1 2026. The technique allows attackers to masquerade as normal business operations, increasing the frequency and potential damage of attacks. Mitigation involves stricter RMM access controls and monitoring.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/remote-monitoring-and-management-rmm-abuse/",
-    "publishedAt": "2026-10-05T04:30:08.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -3213,88 +3293,6 @@ export const news: NewsBrief[] = [
     "source": "Dark Reading",
     "sourceUrl": "https://www.darkreading.com/cloud-security/how-to-build-sase-framework",
     "publishedAt": "2026-09-24T14:02:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "fedramp-introduces-continuous-vdr-ver-compliance-requirement",
-    "title": "FedRAMP Introduces Continuous VDR & VER Compliance Requirements",
-    "summary": "FedRAMP’s new VDR and VER rules push vulnerability management into a continuous cycle, demanding faster scans, stricter remediation timelines, and stronger evidence. The December 7 deadline marks the start of a broader shift toward automated compliance validation, with agencies required to prove ongoing security posture rather than periodic snapshots.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fedramp-vdr-and-ver-daily-scans-are-only-the-beginning/",
-    "publishedAt": "2026-09-24T14:02:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "symphonyai-launches-ai-driven-continuous-financial-crime-ris",
-    "title": "SymphonyAI Launches AI‑Driven Continuous Financial Crime Risk Platform",
-    "summary": "SymphonyAI’s Symphony Risk Intelligence platform deploys AI agents to automate continuous financial‑crime risk assessment. The tool continuously re‑evaluates threats and adapts controls, moving from periodic reviews to real‑time compliance. It aims to help institutions detect money‑laundering patterns faster and meet evolving regulations without manual oversight.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/24/symphonyai-risk-intelligence/",
-    "publishedAt": "2026-09-24T13:46:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "siemens-mendix-runtime-vulnerability-cve-2026-7891-recalled",
-    "title": "Siemens Mendix Runtime Vulnerability CVE-2026-7891 Recalled",
-    "summary": "CISA revoked the advisory for Siemens Mendix Runtime (Update A) after re‑investigation confirmed the reported behavior was expected platform configuration. The CVE-2026-7891 vulnerability was retracted, and no protected attribute is exposed. No mitigation is required beyond normal configuration.",
-    "category": "Vulnerability",
-    "severity": "LOW",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-209-02",
-    "publishedAt": "2026-09-24T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-7891"
-    ],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "eufy-omni-c20-x10-pro-command-injection-cve-2026-93289",
-    "title": "Eufy Omni C20/X10 Pro Command Injection CVE-2026-93289",
-    "summary": "CISA reports that Eufy Omni C20 and Omni X10 Pro devices are vulnerable to OS command injection (CVE-2026-93289). An unauthenticated attacker can execute system commands during pairing, potentially compromising the device. Users should apply vendor patches or disable pairing until a fix is released.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-267-02",
-    "publishedAt": "2026-09-24T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-93289"
-    ],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "island-secures-400-million-in-funding-at-6-4-billion-valuati",
-    "title": "Island Secures $400 Million in Funding at $6.4 Billion Valuation",
-    "summary": "Island, an enterprise security firm, raised $400 million in a funding round led by Evolution Equity Partners, bringing its total capital raised to over $1 billion since 2020. The investment supports the company’s growth and product development.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/island-raises-400-million-at-6-4-billion-valuation/",
-    "publishedAt": "2026-09-24T11:39:09.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "meta-locks-users-out-of-their-own-data-on-ai-glasses",
-    "title": "Meta Locks Users Out of Their Own Data on AI Glasses",
-    "summary": "Meta expands Private Processing to its AI glasses, running AI models inside confidential virtual machines (CVMs) that prevent Meta from accessing user data. The system uses protected hardware, encryption, and software verification to secure data during cloud processing and storage, ensuring user privacy while delivering AI services.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/24/meta-private-processing-for-ai-glasses/",
-    "publishedAt": "2026-09-24T11:35:04.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
