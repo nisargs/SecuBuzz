@@ -5,8 +5,62 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Oct 2026 16:20:36 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 18:26:20 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Google AI Agent Identifies 500 Vulnerabilities in Web Applications</title>
+      <link>https://secubuzz.com/news/google-ai-agent-identifies-500-vulnerabilities-in-web-applic</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-ai-agent-identifies-500-vulnerabilities-in-web-applic</guid>
+      <description><![CDATA[Google’s PageBreak AI agent scanned its own web applications and uncovered 500 distinct security flaws, ranging from input validation issues to potential exploitation paths. The automated analysis used AI and deterministic validation to assess risk levels, highlighting the growing trend of AI-driven vulnerability discovery and prioritization.]]></description>
+      <pubDate>Tue, 06 Oct 2026 17:56:29 GMT</pubDate>
+      <source url="https://www.darkreading.com/application-security/google-pagebreak-ai-agent-500-flaws-web-apps">Dark Reading</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>DNS Root Key Rollover Scheduled for October 11, 2026</title>
+      <link>https://secubuzz.com/news/dns-root-key-rollover-scheduled-for-october-11-2026</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/dns-root-key-rollover-scheduled-for-october-11-2026</guid>
+      <description><![CDATA[On October 11, 2026, the Internet’s DNS root will switch to a new key‑signing key, KSK‑2024. The change requires resolvers to update trust anchors and verify RFC 8509 trust‑anchor sentinels. Failure to adapt may disrupt name resolution, so operators should test readiness now.]]></description>
+      <pubDate>Tue, 06 Oct 2026 17:50:11 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/root-ksk-2024-rollover/">Cloudflare Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Atlassian Warns of Critical File-Access Flaw in Jira, Confluence</title>
+      <link>https://secubuzz.com/news/atlassian-warns-of-critical-file-access-flaw-in-jira-conflue</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/atlassian-warns-of-critical-file-access-flaw-in-jira-conflue</guid>
+      <description><![CDATA[Atlassian alerts customers to CVE-2026-21589, a critical vulnerability that permits arbitrary file access in self‑hosted Data Center products Confluence, Jira, and Bitbucket. Attackers can read any file on the host. Atlassian recommends applying the latest patch or disabling affected features.]]></description>
+      <pubDate>Tue, 06 Oct 2026 17:34:59 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/atlassian-warns-of-critical-file-access-flaw-in-jira-confluence/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>‘BigDiskBuster’ Creates Silent Gap in Microsoft Defender Updates</title>
+      <link>https://secubuzz.com/news/bigdiskbuster-creates-silent-gap-in-microsoft-defender-updat</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/bigdiskbuster-creates-silent-gap-in-microsoft-defender-updat</guid>
+      <description><![CDATA[A proof‑of‑concept technique named BigDiskBuster keeps Microsoft Defender running while blocking its update process, creating a silent detection gap. The method requires no exploit and does not compromise the service itself.]]></description>
+      <pubDate>Tue, 06 Oct 2026 16:59:24 GMT</pubDate>
+      <source url="https://www.darkreading.com/application-security/bigdiskbuster-microsoft-defender-running-blocking-updates">Dark Reading</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>ASOS Data Breach Confirmed After Hacked Push Notifications</title>
+      <link>https://secubuzz.com/news/asos-data-breach-confirmed-after-hacked-push-notifications</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/asos-data-breach-confirmed-after-hacked-push-notifications</guid>
+      <description><![CDATA[UK fashion retailer ASOS confirmed a data breach after hackers sent unauthorized push notifications via its mobile app, claiming to have stolen customer data from the company’s Snowflake environment. The breach exposed personal information of customers, prompting ASOS to investigate and notify affected users.]]></description>
+      <pubDate>Tue, 06 Oct 2026 16:33:54 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/asos-confirms-data-breach-after-hacked-in-app-notifications/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>CISO Perspectives on Managing Vulnerability Risks in the Age of AI</title>
+      <link>https://secubuzz.com/news/ciso-perspectives-on-managing-vulnerability-risks-in-the-age</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ciso-perspectives-on-managing-vulnerability-risks-in-the-age</guid>
+      <description><![CDATA[Microsoft Security Blog discusses how CISOs can mitigate cybersecurity risks and increase resilience using AI-powered vulnerability management. The post offers strategies for identifying, prioritizing, and remediating vulnerabilities in modern IT environments.]]></description>
+      <pubDate>Tue, 06 Oct 2026 16:00:00 GMT</pubDate>
+      <source url="https://www.microsoft.com/en-us/security/blog/2026/10/06/ciso-perspectives-on-managing-vulnerability-risks-in-the-age-of-ai/">Microsoft Security</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>ATM Malware Creator Arrested in Nebraska Court</title>
       <link>https://secubuzz.com/news/atm-malware-creator-arrested-in-nebraska-court</link>
@@ -35,13 +89,13 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>FBI Blames Contractor’s Missed Patch for ShinyHunters Data Breach</title>
-      <link>https://secubuzz.com/news/fbi-blames-contractor-s-missed-patch-for-shinyhunters-data-b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fbi-blames-contractor-s-missed-patch-for-shinyhunters-data-b</guid>
-      <description><![CDATA[The FBI cited an Accenture contractor’s failure to apply a patch as the cause of a breach that exposed personal data of thousands of bureau employees.]]></description>
-      <pubDate>Tue, 06 Oct 2026 14:15:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/fbi-blames-contractors-missed-patch-for-shinyhunters-breach/">SecurityWeek</source>
-      <category>Breach</category>
+      <title>Osaka Metropolitan University Outage After Suspected Ransomware Attack</title>
+      <link>https://secubuzz.com/news/osaka-metropolitan-university-outage-after-suspected-ransomw</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/osaka-metropolitan-university-outage-after-suspected-ransomw</guid>
+      <description><![CDATA[Osaka Metropolitan University reported an outage that disabled its internal network, email, and various administrative and academic systems after a suspected ransomware attack. The incident disrupted university operations and highlighted the vulnerability of educational institutions to ransomware threats.]]></description>
+      <pubDate>Tue, 06 Oct 2026 14:52:00 GMT</pubDate>
+      <source url="https://therecord.media/osaka-university-cancels-classes-ransomware">The Record</source>
+      <category>Ransomware</category>
     </item>
     <item>
       <title>MSPs Should Test Eight Key Controls to Secure RMM Software</title>
@@ -80,12 +134,48 @@
       <category>Cloud</category>
     </item>
     <item>
-      <title>Hitachi Energy REB500 Vulnerabilities Including CVE-2024-8176</title>
-      <link>https://secubuzz.com/news/hitachi-energy-reb500-vulnerabilities-including-cve-2024-817</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hitachi-energy-reb500-vulnerabilities-including-cve-2024-817</guid>
-      <description><![CDATA[Hitachi Energy reports open‑source software vulnerabilities in its REB500 product, including CVE-2024-8176, a stack overflow in libexpat used by IEC61850 functionality. The flaw allows authenticated malicious users to cause a denial‑of‑service attack. Immediate actions and remediation are recommended.]]></description>
+      <title>AppViewX Expands Agent Identity Security to Mitigate Shadow AI Risks</title>
+      <link>https://secubuzz.com/news/appviewx-expands-agent-identity-security-to-mitigate-shadow-</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/appviewx-expands-agent-identity-security-to-mitigate-shadow-</guid>
+      <description><![CDATA[AppViewX has enhanced its Agent Identity Security platform to discover and govern all agents, including unauthorized ones, and enforce real‑time control. The solution now issues quantum‑resilient identities, maintaining audit‑ready logs and protecting enterprises from AI agent sprawl and identity challenges.]]></description>
+      <pubDate>Tue, 06 Oct 2026 13:37:15 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/06/appviewx-shadow-ai-visibility/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>New Relic Launches Ground Truth CLI for Terminal-Based Investigation</title>
+      <link>https://secubuzz.com/news/new-relic-launches-ground-truth-cli-for-terminal-based-inves</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/new-relic-launches-ground-truth-cli-for-terminal-based-inves</guid>
+      <description><![CDATA[New Relic introduces the Ground Truth CLI, integrating with the Autopilot API to provide headless observability. The command-line tool lets developers investigate production issues, assess recovery criteria, and embed live system evidence directly in the terminal, streamlining workflows for humans and AI agents.]]></description>
+      <pubDate>Tue, 06 Oct 2026 13:27:38 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/06/new-relic-ground-truth-cli/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>ClickFix Campaign Compromises 100+ Ukrainian Websites with Infostealer</title>
+      <link>https://secubuzz.com/news/clickfix-campaign-compromises-100-ukrainian-websites-with-in</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/clickfix-campaign-compromises-100-ukrainian-websites-with-in</guid>
+      <description><![CDATA[CERT‑UA uncovered a ClickFix operation that used fake Cloudflare verification pages to redirect visitors into a trap, deploying the Lunex infostealer. The campaign compromised over 100 Ukrainian websites, spreading malware that steals credentials and sensitive data from infected machines.]]></description>
+      <pubDate>Tue, 06 Oct 2026 13:17:00 GMT</pubDate>
+      <source url="https://therecord.media/clickfix-campaign-ukraine-lunex-stealer">The Record</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Johnson Controls EasyIO FG Hard‑coded Credentials Vulnerability</title>
+      <link>https://secubuzz.com/news/johnson-controls-easyio-fg-hard-coded-credentials-vulnerabil</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/johnson-controls-easyio-fg-hard-coded-credentials-vulnerabil</guid>
+      <description><![CDATA[A CVE-2026-27872 flaw in Johnson Controls EasyIO FG firmware allows attackers to use hard‑coded credentials and improper privilege management to gain full unauthorized device access. The vulnerability, with a CVSS score of 7.7, could lead to complete device compromise. Mitigation requires applying vendor patches.]]></description>
       <pubDate>Tue, 06 Oct 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-05">CISA</source>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-01">CISA</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Hitachi Energy SOI Apache ActiveMQ RCE Vulnerability</title>
+      <link>https://secubuzz.com/news/hitachi-energy-soi-apache-activemq-rce-vulnerability</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hitachi-energy-soi-apache-activemq-rce-vulnerability</guid>
+      <description><![CDATA[CVE-2026-34197 exposes a remote code execution flaw in Hitachi Energy SOI’s Apache ActiveMQ component. With a CVSS score of 8.8, attackers can inject code and compromise confidentiality, integrity, and availability of the product. Immediate remediation involves applying the vendor’s recommended patches.]]></description>
+      <pubDate>Tue, 06 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-04">CISA</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -341,15 +431,6 @@
       <category>Malware</category>
     </item>
     <item>
-      <title>University of Illinois Chicago affected by ransomware attack on medical school</title>
-      <link>https://secubuzz.com/news/university-of-illinois-chicago-affected-by-ransomware-attack</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/university-of-illinois-chicago-affected-by-ransomware-attack</guid>
-      <description><![CDATA[A ransomware incident hit the University of Illinois Chicago College of Medicine, encrypting files on its servers and stealing some data. The attack disrupted medical research and patient records. No ransom demand was reported, but the breach exposed sensitive information and prompted a security response.]]></description>
-      <pubDate>Mon, 05 Oct 2026 15:30:00 GMT</pubDate>
-      <source url="https://therecord.media/ransomware-university-illinois-chicago">The Record</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
       <title>Arizona State Court System Breach After Phishing Attack</title>
       <link>https://secubuzz.com/news/arizona-state-court-system-breach-after-phishing-attack</link>
       <guid isPermaLink="true">https://secubuzz.com/news/arizona-state-court-system-breach-after-phishing-attack</guid>
@@ -375,87 +456,6 @@
       <pubDate>Mon, 05 Oct 2026 13:55:00 GMT</pubDate>
       <source url="https://therecord.media/belarusian-hacktivists-two-years-Russian-healthcare-network">The Record</source>
       <category>Malware</category>
-    </item>
-    <item>
-      <title>tenfold Adds Shared Content Governance and Real‑Time Auditing to Free Edition</title>
-      <link>https://secubuzz.com/news/tenfold-adds-shared-content-governance-and-real-time-auditin</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/tenfold-adds-shared-content-governance-and-real-time-auditin</guid>
-      <description><![CDATA[tenfold released two new features in its free Community Edition: shared content governance and real‑time event auditing. The updates enable organizations with fewer than 150 users to manage Microsoft 365 sharing more effectively and investigate suspicious identity activity, enhancing overall identity governance.]]></description>
-      <pubDate>Mon, 05 Oct 2026 13:33:42 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/tenfold-ce-our-free-identity-governance-tool-just-got-2-new-features/">BleepingComputer</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Stellar Cyber 7.0 Unveils AI‑Powered SOC Workflows</title>
-      <link>https://secubuzz.com/news/stellar-cyber-7-0-unveils-ai-powered-soc-workflows</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/stellar-cyber-7-0-unveils-ai-powered-soc-workflows</guid>
-      <description><![CDATA[Stellar Cyber released version 7.0, adding AI‑driven case triage, measurable SOC workflows, deeper investigative evidence, expanded automated response, and new APIs for large‑scale security operations. The update moves the Human‑Augmented Autonomous SOC from concept to practical operating model, improving analyst efficiency and response speed.]]></description>
-      <pubDate>Mon, 05 Oct 2026 13:31:06 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/05/stellar-cyber-7-0/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Malwarebytes Launches Free Scam Link Check Tool</title>
-      <link>https://secubuzz.com/news/malwarebytes-launches-free-scam-link-check-tool</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/malwarebytes-launches-free-scam-link-check-tool</guid>
-      <description><![CDATA[Malwarebytes released a free web tool that lets users paste suspicious URLs from text, email, chat, or social media to determine if they are safe or dangerous. The tool returns a safety result, explains the reasons, and recommends next steps. It aims to help users avoid scams that have caused billions in losses.]]></description>
-      <pubDate>Mon, 05 Oct 2026 13:30:28 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/05/malwarebytes-scam-link-check/">Help Net Security</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>Cloudflare Celebrates 16th Birthday with 46 New Releases</title>
-      <link>https://secubuzz.com/news/cloudflare-celebrates-16th-birthday-with-46-new-releases</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-celebrates-16th-birthday-with-46-new-releases</guid>
-      <description><![CDATA[During its 16th birthday, Cloudflare announced 46 new features across open source projects, post‑quantum security, AI agents, and developer platform upgrades. The company provided a day‑by‑day roundup of all the new releases shipped during the Birthday Week 2026 event.]]></description>
-      <pubDate>Mon, 05 Oct 2026 13:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/birthday-week-2026-wrap-up/">Cloudflare Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>Cloudflare Interns Ship Products Across 48 Teams</title>
-      <link>https://secubuzz.com/news/cloudflare-interns-ship-products-across-48-teams</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-interns-ship-products-across-48-teams</guid>
-      <description><![CDATA[Cloudflare reports that over 750 interns have contributed real products to 48 teams, including Birthday Week launches and post‑quantum security initiatives, demonstrating AI’s role in amplifying human potential rather than replacing it.]]></description>
-      <pubDate>Mon, 05 Oct 2026 13:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/one-year-later-1111-interns/">Cloudflare Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>AI‑Driven Attacks Accelerate, Prompting Security Teams to Adapt</title>
-      <link>https://secubuzz.com/news/ai-driven-attacks-accelerate-prompting-security-teams-to-ada</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-driven-attacks-accelerate-prompting-security-teams-to-ada</guid>
-      <description><![CDATA[AI‑driven attacks are accelerating, forcing security teams to adapt their defenses. The latest Dark Reading poll shows organizations prioritizing automation, threat intelligence, and rapid response to counter fast, relentless, and automated adversaries. Companies are investing in AI‑enabled detection, incident response, and training to keep pace with evolving attack tactics.]]></description>
-      <pubDate>Mon, 05 Oct 2026 13:00:00 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyber-risk/ai-attacks-security-strategies">Dark Reading</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>250,000 Patients Affected by Data Breaches at New Jersey and Texas Healthcare Firms</title>
-      <link>https://secubuzz.com/news/250-000-patients-affected-by-data-breaches-at-new-jersey-and</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/250-000-patients-affected-by-data-breaches-at-new-jersey-and</guid>
-      <description><![CDATA[Hackers accessed patient data from Clover Health Investments and AngMar Management Services in July, compromising records of 250,000 individuals. The breach exposed sensitive health information, potentially including personal identifiers and medical histories. No mitigation steps are detailed in the report.]]></description>
-      <pubDate>Mon, 05 Oct 2026 12:35:15 GMT</pubDate>
-      <source url="https://www.securityweek.com/250000-impacted-by-data-breaches-at-new-jersey-texas-healthcare-firms/">SecurityWeek</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Credential Layer Expansion Outpaces Security Teams</title>
-      <link>https://secubuzz.com/news/credential-layer-expansion-outpaces-security-teams</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/credential-layer-expansion-outpaces-security-teams</guid>
-      <description><![CDATA[Modern enterprises rely on credentials for human, system, and AI connections. GitGuardian offers detection, remediation, and prevention to secure this layer, helping organizations identify where credentials exist and how to protect them.]]></description>
-      <pubDate>Mon, 05 Oct 2026 11:55:00 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/the-credential-layer-is-expanding.html">The Hacker News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Realtek Jungle SDK Exploit Attempts Deploy Cling Botnet via STUN C2</title>
-      <link>https://secubuzz.com/news/realtek-jungle-sdk-exploit-attempts-deploy-cling-botnet-via-</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/realtek-jungle-sdk-exploit-attempts-deploy-cling-botnet-via-</guid>
-      <description><![CDATA[Threat actors targeted a critical flaw in the Realtek Jungle SDK, attempting to use the vulnerability to install the Cling botnet. Cling repurposes standard STUN traffic as a command-and-control channel, enabling remote control of infected devices. The flaw has been patched, but exploitation attempts continue.]]></description>
-      <pubDate>Mon, 05 Oct 2026 11:46:25 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/realtek-jungle-sdk-exploit-attempts.html">The Hacker News</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

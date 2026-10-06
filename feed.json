@@ -1,5 +1,92 @@
 [
   {
+    "id": "https://www.darkreading.com/application-security/google-pagebreak-ai-agent-500-flaws-web-apps",
+    "sourceUrl": "https://www.darkreading.com/application-security/google-pagebreak-ai-agent-500-flaws-web-apps",
+    "title": "Google AI Agent Identifies 500 Vulnerabilities in Web Applications",
+    "headline": "Google AI Agent Identifies 500 Vulnerabilities in Web Applications",
+    "summary": "Google’s PageBreak AI agent scanned its own web applications and uncovered 500 distinct security flaws, ranging from input validation issues to potential exploitation paths. The automated analysis used AI and deterministic validation to assess risk levels, highlighting the growing trend of AI-driven vulnerability discovery and prioritization.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-06T17:56:29.000Z",
+    "url": "https://www.darkreading.com/application-security/google-pagebreak-ai-agent-500-flaws-web-apps",
+    "additionalSources": []
+  },
+  {
+    "id": "https://blog.cloudflare.com/root-ksk-2024-rollover/",
+    "sourceUrl": "https://blog.cloudflare.com/root-ksk-2024-rollover/",
+    "title": "DNS Root Key Rollover Scheduled for October 11, 2026",
+    "headline": "DNS Root Key Rollover Scheduled for October 11, 2026",
+    "summary": "On October 11, 2026, the Internet’s DNS root will switch to a new key‑signing key, KSK‑2024. The change requires resolvers to update trust anchors and verify RFC 8509 trust‑anchor sentinels. Failure to adapt may disrupt name resolution, so operators should test readiness now.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "publishedAt": "2026-10-06T17:50:11.000Z",
+    "url": "https://blog.cloudflare.com/root-ksk-2024-rollover/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/atlassian-warns-of-critical-file-access-flaw-in-jira-confluence/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/atlassian-warns-of-critical-file-access-flaw-in-jira-confluence/",
+    "title": "Atlassian Warns of Critical File-Access Flaw in Jira, Confluence",
+    "headline": "Atlassian Warns of Critical File-Access Flaw in Jira, Confluence",
+    "summary": "Atlassian alerts customers to CVE-2026-21589, a critical vulnerability that permits arbitrary file access in self‑hosted Data Center products Confluence, Jira, and Bitbucket. Attackers can read any file on the host. Atlassian recommends applying the latest patch or disabling affected features.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-06T17:34:59.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/atlassian-warns-of-critical-file-access-flaw-in-jira-confluence/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.darkreading.com/application-security/bigdiskbuster-microsoft-defender-running-blocking-updates",
+    "sourceUrl": "https://www.darkreading.com/application-security/bigdiskbuster-microsoft-defender-running-blocking-updates",
+    "title": "‘BigDiskBuster’ Creates Silent Gap in Microsoft Defender Updates",
+    "headline": "‘BigDiskBuster’ Creates Silent Gap in Microsoft Defender Updates",
+    "summary": "A proof‑of‑concept technique named BigDiskBuster keeps Microsoft Defender running while blocking its update process, creating a silent detection gap. The method requires no exploit and does not compromise the service itself.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-06T16:59:24.000Z",
+    "url": "https://www.darkreading.com/application-security/bigdiskbuster-microsoft-defender-running-blocking-updates",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/asos-confirms-data-breach-after-hacked-in-app-notifications/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/asos-confirms-data-breach-after-hacked-in-app-notifications/",
+    "title": "ASOS Data Breach Confirmed After Hacked Push Notifications",
+    "headline": "ASOS Data Breach Confirmed After Hacked Push Notifications",
+    "summary": "UK fashion retailer ASOS confirmed a data breach after hackers sent unauthorized push notifications via its mobile app, claiming to have stolen customer data from the company’s Snowflake environment. The breach exposed personal information of customers, prompting ASOS to investigate and notify affected users.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-06T16:33:54.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/asos-confirms-data-breach-after-hacked-in-app-notifications/",
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/fbi-blames-contractors-missed-patch-for-shinyhunters-breach/"
+      },
+      {
+        "source": "CrowdStrike",
+        "sourceUrl": "https://www.crowdstrike.com/en-us/blog/falcon-data-security-for-saas-secures-sensitive-data/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.microsoft.com/en-us/security/blog/2026/10/06/ciso-perspectives-on-managing-vulnerability-risks-in-the-age-of-ai/",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/06/ciso-perspectives-on-managing-vulnerability-risks-in-the-age-of-ai/",
+    "title": "CISO Perspectives on Managing Vulnerability Risks in the Age of AI",
+    "headline": "CISO Perspectives on Managing Vulnerability Risks in the Age of AI",
+    "summary": "Microsoft Security Blog discusses how CISOs can mitigate cybersecurity risks and increase resilience using AI-powered vulnerability management. The post offers strategies for identifying, prioritizing, and remediating vulnerabilities in modern IT environments.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Microsoft Security",
+    "publishedAt": "2026-10-06T16:00:00.000Z",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/10/06/ciso-perspectives-on-managing-vulnerability-risks-in-the-age-of-ai/",
+    "additionalSources": []
+  },
+  {
     "id": "https://therecord.media/atm-malware-creator-appears-in-nebraska-court",
     "sourceUrl": "https://therecord.media/atm-malware-creator-appears-in-nebraska-court",
     "title": "ATM Malware Creator Arrested in Nebraska Court",
@@ -58,24 +145,20 @@
     ]
   },
   {
-    "id": "https://www.securityweek.com/fbi-blames-contractors-missed-patch-for-shinyhunters-breach/",
-    "sourceUrl": "https://www.securityweek.com/fbi-blames-contractors-missed-patch-for-shinyhunters-breach/",
-    "title": "FBI Blames Contractor’s Missed Patch for ShinyHunters Data Breach",
-    "headline": "FBI Blames Contractor’s Missed Patch for ShinyHunters Data Breach",
-    "summary": "The FBI cited an Accenture contractor’s failure to apply a patch as the cause of a breach that exposed personal data of thousands of bureau employees.",
-    "category": "BREACH",
+    "id": "https://therecord.media/osaka-university-cancels-classes-ransomware",
+    "sourceUrl": "https://therecord.media/osaka-university-cancels-classes-ransomware",
+    "title": "Osaka Metropolitan University Outage After Suspected Ransomware Attack",
+    "headline": "Osaka Metropolitan University Outage After Suspected Ransomware Attack",
+    "summary": "Osaka Metropolitan University reported an outage that disabled its internal network, email, and various administrative and academic systems after a suspected ransomware attack. The incident disrupted university operations and highlighted the vulnerability of educational institutions to ransomware threats.",
+    "category": "RANSOMWARE",
     "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-06T14:15:00.000Z",
-    "url": "https://www.securityweek.com/fbi-blames-contractors-missed-patch-for-shinyhunters-breach/",
+    "source": "The Record",
+    "publishedAt": "2026-10-06T14:52:00.000Z",
+    "url": "https://therecord.media/osaka-university-cancels-classes-ransomware",
     "additionalSources": [
       {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/8-8-million-impacted-by-data-breach-at-denmarks-central-person-register/"
-      },
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/fbi-removes-accenture-contractor-after.html"
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/ransomware-university-illinois-chicago"
       }
     ]
   },
@@ -142,20 +225,72 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-05",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-05",
-    "title": "Hitachi Energy REB500 Vulnerabilities Including CVE-2024-8176",
-    "headline": "Hitachi Energy REB500 Vulnerabilities Including CVE-2024-8176",
-    "summary": "Hitachi Energy reports open‑source software vulnerabilities in its REB500 product, including CVE-2024-8176, a stack overflow in libexpat used by IEC61850 functionality. The flaw allows authenticated malicious users to cause a denial‑of‑service attack. Immediate actions and remediation are recommended.",
+    "id": "https://www.helpnetsecurity.com/2026/10/06/appviewx-shadow-ai-visibility/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/appviewx-shadow-ai-visibility/",
+    "title": "AppViewX Expands Agent Identity Security to Mitigate Shadow AI Risks",
+    "headline": "AppViewX Expands Agent Identity Security to Mitigate Shadow AI Risks",
+    "summary": "AppViewX has enhanced its Agent Identity Security platform to discover and govern all agents, including unauthorized ones, and enforce real‑time control. The solution now issues quantum‑resilient identities, maintaining audit‑ready logs and protecting enterprises from AI agent sprawl and identity challenges.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-06T13:37:15.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/06/appviewx-shadow-ai-visibility/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/06/new-relic-ground-truth-cli/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/new-relic-ground-truth-cli/",
+    "title": "New Relic Launches Ground Truth CLI for Terminal-Based Investigation",
+    "headline": "New Relic Launches Ground Truth CLI for Terminal-Based Investigation",
+    "summary": "New Relic introduces the Ground Truth CLI, integrating with the Autopilot API to provide headless observability. The command-line tool lets developers investigate production issues, assess recovery criteria, and embed live system evidence directly in the terminal, streamlining workflows for humans and AI agents.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-06T13:27:38.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/06/new-relic-ground-truth-cli/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://therecord.media/clickfix-campaign-ukraine-lunex-stealer",
+    "sourceUrl": "https://therecord.media/clickfix-campaign-ukraine-lunex-stealer",
+    "title": "ClickFix Campaign Compromises 100+ Ukrainian Websites with Infostealer",
+    "headline": "ClickFix Campaign Compromises 100+ Ukrainian Websites with Infostealer",
+    "summary": "CERT‑UA uncovered a ClickFix operation that used fake Cloudflare verification pages to redirect visitors into a trap, deploying the Lunex infostealer. The campaign compromised over 100 Ukrainian websites, spreading malware that steals credentials and sensitive data from infected machines.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Record",
+    "publishedAt": "2026-10-06T13:17:00.000Z",
+    "url": "https://therecord.media/clickfix-campaign-ukraine-lunex-stealer",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-01",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-01",
+    "title": "Johnson Controls EasyIO FG Hard‑coded Credentials Vulnerability",
+    "headline": "Johnson Controls EasyIO FG Hard‑coded Credentials Vulnerability",
+    "summary": "A CVE-2026-27872 flaw in Johnson Controls EasyIO FG firmware allows attackers to use hard‑coded credentials and improper privilege management to gain full unauthorized device access. The vulnerability, with a CVSS score of 7.7, could lead to complete device compromise. Mitigation requires applying vendor patches.",
     "category": "CVE",
-    "severity": "MEDIUM",
+    "severity": "HIGH",
     "source": "CISA",
     "publishedAt": "2026-10-06T12:00:00.000Z",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-05",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-01",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-04",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-04",
+    "title": "Hitachi Energy SOI Apache ActiveMQ RCE Vulnerability",
+    "headline": "Hitachi Energy SOI Apache ActiveMQ RCE Vulnerability",
+    "summary": "CVE-2026-34197 exposes a remote code execution flaw in Hitachi Energy SOI’s Apache ActiveMQ component. With a CVSS score of 8.8, attackers can inject code and compromise confidentiality, integrity, and availability of the product. Immediate remediation involves applying the vendor’s recommended patches.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CISA",
+    "publishedAt": "2026-10-06T12:00:00.000Z",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-04",
     "additionalSources": [
       {
         "source": "CISA",
-        "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-03"
+        "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-05"
       }
     ]
   },
@@ -581,19 +716,6 @@
     "source": "Dark Reading",
     "publishedAt": "2026-10-05T15:52:59.000Z",
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/chinese-actor-impersonates-us-officials-cyber-espionage",
-    "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/ransomware-university-illinois-chicago",
-    "sourceUrl": "https://therecord.media/ransomware-university-illinois-chicago",
-    "title": "University of Illinois Chicago affected by ransomware attack on medical school",
-    "headline": "University of Illinois Chicago affected by ransomware attack on medical school",
-    "summary": "A ransomware incident hit the University of Illinois Chicago College of Medicine, encrypting files on its servers and stealing some data. The attack disrupted medical research and patient records. No ransom demand was reported, but the breach exposed sensitive information and prompted a security response.",
-    "category": "RANSOMWARE",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "publishedAt": "2026-10-05T15:30:00.000Z",
-    "url": "https://therecord.media/ransomware-university-illinois-chicago",
     "additionalSources": []
   },
   {
@@ -3644,123 +3766,6 @@
     "source": "CyberNews AI",
     "publishedAt": "2026-09-24T21:39:08.000Z",
     "url": "https://cybernewsai.com/blog/teamcity-auth-bypass-cve-2026-63077-ransomware-attacks",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/autonomous-ai-hacks-raise-thorny-questions-of-legal-accountability/",
-    "sourceUrl": "https://www.securityweek.com/autonomous-ai-hacks-raise-thorny-questions-of-legal-accountability/",
-    "title": "Legal Accountability Uncertain for Autonomous AI Hacks",
-    "headline": "Legal Accountability Uncertain for Autonomous AI Hacks",
-    "summary": "The legal responsibility for autonomous AI-driven hacks remains unclear. While lawsuits are possible, experts say criminal investigations would face a very high burden. The article discusses the challenges of attributing and prosecuting AI-enabled cyberattacks.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-09-24T20:35:21.000Z",
-    "url": "https://www.securityweek.com/autonomous-ai-hacks-raise-thorny-questions-of-legal-accountability/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/cyberattacks-data-breaches/sectoprat-returns-hiding-inside-legitimate-application",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/sectoprat-returns-hiding-inside-legitimate-application",
-    "title": "SectopRAT Reappears, Concealed Within Legitimate Application",
-    "headline": "SectopRAT Reappears, Concealed Within Legitimate Application",
-    "summary": "The remote access trojan SectopRAT has resurfaced, now hiding inside a legitimate application. This tactic underscores the need for organizations to monitor application behavior rather than trust them blindly. The article highlights the threat of covert RATs in enterprise environments.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "Dark Reading",
-    "publishedAt": "2026-09-24T20:32:50.000Z",
-    "url": "https://www.darkreading.com/cyberattacks-data-breaches/sectoprat-returns-hiding-inside-legitimate-application",
-    "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/russia-forensics-technology-doj",
-    "sourceUrl": "https://therecord.media/russia-forensics-technology-doj",
-    "title": "Digital Forensics Firm Executives Arrested for Concealing Russian-Made Technology",
-    "headline": "Digital Forensics Firm Executives Arrested for Concealing Russian-Made Technology",
-    "summary": "Two executives of a digital forensics firm that supplies software to U.S. federal agencies were arrested after the Department of Justice alleged they concealed that the company’s technology is manufactured in Russia. The DOJ claims the firm misrepresented its origin to secure federal contracts. No evidence of data compromise was disclosed.",
-    "category": "BREACH",
-    "severity": "LOW",
-    "source": "The Record",
-    "publishedAt": "2026-09-24T20:30:00.000Z",
-    "url": "https://therecord.media/russia-forensics-technology-doj",
-    "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/lawmakers-introduce-bill-for-voluntary-telecom-cyber-rules",
-    "sourceUrl": "https://therecord.media/lawmakers-introduce-bill-for-voluntary-telecom-cyber-rules",
-    "title": "Senators Propose Telecom Cyber Rules After Salt Typhoon Attacks",
-    "headline": "Senators Propose Telecom Cyber Rules After Salt Typhoon Attacks",
-    "summary": "U.S. Senators Mark Warner and Ted Cruz introduced the Telecommunications Cybersecurity and Resilience Act to establish voluntary cyber rules for telecom operators after Salt Typhoon attacks. The bill aims to address the Chinese hacker campaign that breached nearly all major U.S. telecom giants, prompting lawmakers to seek stronger industry safeguards.",
-    "category": "NATION_STATE",
-    "severity": "HIGH",
-    "source": "The Record",
-    "publishedAt": "2026-09-24T20:15:00.000Z",
-    "url": "https://therecord.media/lawmakers-introduce-bill-for-voluntary-telecom-cyber-rules",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/new-carbonato-malware-uses-ai-agents-to-hijack-exposed-docker-hosts/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-carbonato-malware-uses-ai-agents-to-hijack-exposed-docker-hosts/",
-    "title": "Carbonato Botnet Hijacks Docker Hosts via Hermes AI Framework",
-    "headline": "Carbonato Botnet Hijacks Docker Hosts via Hermes AI Framework",
-    "summary": "Carbonato malware targets insecure Docker daemons, installing the Hermes Agent AI framework to gain control of exposed hosts. The botnet exploits exposed Docker APIs to deploy its components, enabling remote command execution and persistence on compromised containers. Mitigation requires securing Docker endpoints and disabling unused APIs.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-09-24T20:10:48.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/new-carbonato-malware-uses-ai-agents-to-hijack-exposed-docker-hosts/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/09/unpatched-oneplus-flaws-let-installed.html",
-    "sourceUrl": "https://thehackernews.com/2026/09/unpatched-oneplus-flaws-let-installed.html",
-    "title": "Unpatched OnePlus Flaws Allow Root Access Without Permissions",
-    "headline": "Unpatched OnePlus Flaws Allow Root Access Without Permissions",
-    "summary": "A malicious app on OnePlus 15 devices can gain root by chaining two unpatched software flaws, giving full device control without requesting permissions. The vulnerabilities also affect other OnePlus models and OPPO phones. OnePlus has acknowledged the issue but has not released a fix yet.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-09-24T18:10:18.000Z",
-    "url": "https://thehackernews.com/2026/09/unpatched-oneplus-flaws-let-installed.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/09/threatsday-ai-search-poisoning-ai.html",
-    "sourceUrl": "https://thehackernews.com/2026/09/threatsday-ai-search-poisoning-ai.html",
-    "title": "AI Search Poisoning, Coding Tool Repo Leaks, One-Click Code Execution Exploits Highlight New Threats",
-    "headline": "AI Search Poisoning, Coding Tool Repo Leaks, One-Click Code Execution Exploits Highlight New Threats",
-    "summary": "This week’s reports detail how attackers poison trusted AI search results, leak repository data from AI coding tools, and enable one-click code execution via seemingly benign links. The attacks exploit existing bugs and misconfigurations, allowing malicious code to run without traditional exploits, increasing risk for developers and users.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-09-24T17:52:43.000Z",
-    "url": "https://thehackernews.com/2026/09/threatsday-ai-search-poisoning-ai.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/exposed-gitlab-project-email-addresses-let-attackers-push-code/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/exposed-gitlab-project-email-addresses-let-attackers-push-code/",
-    "title": "Exposed GitLab Email Addresses Enable Unauthorized Code Pushes",
-    "headline": "Exposed GitLab Email Addresses Enable Unauthorized Code Pushes",
-    "summary": "GitLab projects have publicly exposed email addresses that grant push permissions to developers. Attackers can use these addresses to push malicious code into repositories via READMEs, contributing guides, and support pages. The exposure allows unauthorized code injection, posing a significant risk to project integrity and security.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-09-24T17:47:44.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/exposed-gitlab-project-email-addresses-let-attackers-push-code/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.microsoft.com/en-us/security/blog/2026/09/24/beyond-ransomware-tracking-storm-2570-consistent-tradecraft-across-deployments/",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/09/24/beyond-ransomware-tracking-storm-2570-consistent-tradecraft-across-deployments/",
-    "title": "Storm-2570 Ransomware Affiliate Uses Consistent Tradecraft Across Deployments",
-    "headline": "Storm-2570 Ransomware Affiliate Uses Consistent Tradecraft Across Deployments",
-    "summary": "Storm-2570, a ransomware affiliate, consistently applies the same post‑compromise tools and techniques across multiple ransomware families such as Qilin, DragonForce, Anubis, and BERT. Microsoft Security provides guidance to detect and disrupt these activities before ransomware deployment, helping defenders stay ahead of the threat.",
-    "category": "RANSOMWARE",
-    "severity": "HIGH",
-    "source": "Microsoft Security",
-    "publishedAt": "2026-09-24T16:00:00.000Z",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/24/beyond-ransomware-tracking-storm-2570-consistent-tradecraft-across-deployments/",
     "additionalSources": []
   }
 ]
