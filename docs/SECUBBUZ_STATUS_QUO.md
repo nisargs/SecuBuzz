@@ -204,7 +204,8 @@ Please provide creative, high-impact suggestions across these 4 areas:
 ## 8. Google Play Closed Testing & Production Readiness
 
 ### Closed Testing Summary & Metrics
-- **Testing Cohort**: Conducted with 20+ active opt-in testers across diverse Android hardware and OS versions (Android 11 through 15).
+- **Production Access Application Submitted**: **Applied October 5, 2026, 7:01 PM** (currently In Review by Google Play, typically 2–7 business days).
+- **Testing Cohort**: Completed 14-day continuous closed test meeting all Google Play criteria (12+ opted-in testers across Android 11 through 15).
 - **Stability Findings**: **0 crashes**, **0 critical bugs**, and 100% operational uptime on ingest and push delivery.
 - **Implemented Tester Feedback**:
   1. **"Rate Your App" Support**: Added direct "Rate SecuBuzz on Google Play" action in Settings (`src/app/about-support.tsx`).

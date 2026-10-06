@@ -31,13 +31,16 @@ export async function fetchCloudflareAnalytics({ zoneTag = '65259b39c7fd2648a898
   const since24h = new Date(Date.now() - 24 * 3600 * 1000).toISOString();
   const since7d = new Date(Date.now() - 7 * 24 * 3600 * 1000).toISOString();
 
+  const dateLeq = now.toISOString().slice(0, 10);
+  const dateGeq = new Date(Date.now() - 14 * 24 * 3600 * 1000).toISOString().slice(0, 10);
+
   const zoneQuery = `
-  query ZoneReport($zoneTag: string!, $since7d: string!, $since24h: string!, $until: string!) {
+  query ZoneReport($zoneTag: string!, $dateGeq: string!, $dateLeq: string!, $since7d: string!, $since24h: string!, $until: string!) {
     viewer {
       zones(filter: { zoneTag: $zoneTag }) {
         dailyTimeline: httpRequests1dGroups(
           limit: 14
-          filter: { date_geq: "2026-09-20", date_leq: "2026-10-04" }
+          filter: { date_geq: $dateGeq, date_leq: $dateLeq }
           orderBy: [date_DESC]
         ) {
           dimensions { date }
@@ -155,7 +158,7 @@ export async function fetchCloudflareAnalytics({ zoneTag = '65259b39c7fd2648a898
   `;
 
   const [zoneRes, rumRes] = await Promise.all([
-    queryGraphQL(token, zoneQuery, { zoneTag, since7d, since24h, until: nowIso }),
+    queryGraphQL(token, zoneQuery, { zoneTag, dateGeq, dateLeq, since7d, since24h, until: nowIso }),
     queryGraphQL(token, rumQuery, { accountTag, siteTag, since7d, until: nowIso })
   ]);
 
@@ -168,11 +171,34 @@ export async function fetchCloudflareAnalytics({ zoneTag = '65259b39c7fd2648a898
 
 if (process.argv[1]?.endsWith('cf_analytics.mjs')) {
   fetchCloudflareAnalytics().then(data => {
-    console.log(`Cloudflare Analytics Telemetry fetched at ${data.timestamp}`);
+    console.log(`\n=== Cloudflare Analytics Telemetry (${data.timestamp}) ===`);
     const z = data.zone;
     const r = data.rum;
     const today = z.dailyTimeline?.[0];
-    console.log(`Today's Requests: ${today?.sum?.requests || 0} | Page Views: ${today?.sum?.pageViews || 0} | Uniques: ${today?.uniq?.uniques || 0}`);
+    const mb = today?.sum?.bytes ? (today.sum.bytes / (1024 * 1024)).toFixed(2) : '0';
+    console.log(`Today (${today?.dimensions?.date || 'Today'}): ${today?.sum?.requests || 0} Requests | ${today?.uniq?.uniques || 0} Unique Visitors | ${today?.sum?.pageViews || 0} Page Views | ${mb} MB Bandwidth | ${today?.sum?.threats || 0} Threats Blocked`);
+
+    if (z.dailyTimeline && z.dailyTimeline.length > 1) {
+      console.log('\n--- Recent Daily History ---');
+      for (const d of z.dailyTimeline.slice(1, 6)) {
+        const dMb = (d.sum.bytes / (1024 * 1024)).toFixed(2);
+        console.log(`  ${d.dimensions.date}: ${d.sum.requests.toString().padStart(5)} reqs | ${d.uniq.uniques.toString().padStart(4)} uniques | ${d.sum.pageViews.toString().padStart(4)} views | ${dMb} MB`);
+      }
+    }
+
+    if (z.topPaths7d && z.topPaths7d.length > 0) {
+      console.log('\n--- Top Requested Paths (7d) ---');
+      for (const p of z.topPaths7d.slice(0, 8)) {
+        console.log(`  ${p.count.toString().padStart(5)} | ${p.dimensions.clientRequestHTTPMethodName} ${p.dimensions.clientRequestPath}`);
+      }
+    }
+
+    if (r.rumReferrers7d && r.rumReferrers7d.length > 0) {
+      console.log('\n--- Real User Referrers (7d) ---');
+      for (const ref of r.rumReferrers7d.slice(0, 6)) {
+        console.log(`  ${ref.count.toString().padStart(4)} loads -> ${ref.dimensions.refererHost || '(Direct / Bookmark / PWA)'}`);
+      }
+    }
   }).catch(err => {
     console.error('Failed to fetch analytics:', err);
     process.exit(1);
