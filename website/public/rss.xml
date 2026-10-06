@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Oct 2026 01:20:16 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 04:19:00 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Cybersecurity jobs available right now: October 6, 2026</title>
+      <link>https://secubuzz.com/news/cybersecurity-jobs-available-right-now-october-6-2026</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cybersecurity-jobs-available-right-now-october-6-2026</guid>
+      <description><![CDATA[The post lists an Associate IAM Engineer position in New York City, focusing on Microsoft Entra ID identity and access management. Responsibilities include user and group management, access provisioning, role assignments, authentication issue resolution, and documentation of procedures for stable IAM services.]]></description>
+      <pubDate>Tue, 06 Oct 2026 04:00:58 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/06/cybersecurity-jobs-available-right-now-october-6-2026/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>TA419: How to Detect &amp; Block Chinese AiTM Phishing Attacks</title>
+      <link>https://secubuzz.com/news/ta419-how-to-detect-block-chinese-aitm-phishing-attacks</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ta419-how-to-detect-block-chinese-aitm-phishing-attacks</guid>
+      <description><![CDATA[China-aligned actor TA419 impersonates former US White House officials in AiTM phishing campaigns targeting AI policy experts. The attacks aim to bypass MFA defenses by tricking users into revealing credentials, posing a risk of unauthorized access to sensitive accounts.]]></description>
+      <pubDate>Tue, 06 Oct 2026 01:08:06 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/ta419-chinese-espionage-aitm-phishing-detection">CyberNews AI</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>OpenAI Adds Invisible Watermarks to ChatGPT and Codex Text in EU</title>
       <link>https://secubuzz.com/news/openai-adds-invisible-watermarks-to-chatgpt-and-codex-text-i</link>
@@ -377,15 +395,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>TA419 Targets U.S. AI Policy Experts with Phishing</title>
-      <link>https://secubuzz.com/news/ta419-targets-u-s-ai-policy-experts-with-phishing</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ta419-targets-u-s-ai-policy-experts-with-phishing</guid>
-      <description><![CDATA[The China-aligned TA419 group has launched credential phishing campaigns against U.S. AI policy experts, impersonating economists, policymakers, and an Anthropic employee to harvest credentials. The attacks aim to steal access to sensitive AI research and policy discussions.]]></description>
-      <pubDate>Sun, 04 Oct 2026 07:20:32 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/china-aligned-ta419-targets-us-ai.html">The Hacker News</source>
-      <category>Malware</category>
-    </item>
-    <item>
       <title>YARA-X 1.21.0 Released with Five Improvements and Four Bug Fixes</title>
       <link>https://secubuzz.com/news/yara-x-1-21-0-released-with-five-improvements-and-four-bug-f</link>
       <guid isPermaLink="true">https://secubuzz.com/news/yara-x-1-21-0-released-with-five-improvements-and-four-bug-f</guid>
@@ -420,15 +429,6 @@
       <pubDate>Sat, 03 Oct 2026 11:34:00 GMT</pubDate>
       <source url="https://www.securityweek.com/fortra-patches-critical-vulnerabilities-in-boks/">SecurityWeek</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cybersecurity Trends 2026: Cloud, AI, and Continuous Visibility</title>
-      <link>https://secubuzz.com/news/cybersecurity-trends-2026-cloud-ai-and-continuous-visibility</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cybersecurity-trends-2026-cloud-ai-and-continuous-visibility</guid>
-      <description><![CDATA[The 2026 cybersecurity landscape is driven by expanding cloud infrastructure, AI, and distributed systems, requiring continuous visibility, control, and rapid risk response across identities, devices, data, and internet-facing assets.]]></description>
-      <pubDate>Sat, 03 Oct 2026 11:00:00 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/the-state-of-cybersecurity-in-2026key.html">The Hacker News</source>
-      <category>Cloud</category>
     </item>
     <item>
       <title>Antino Backdoor Uses M365 Outlook and OneDrive for Covert Command and Control</title>
