@@ -39,7 +39,8 @@
     "worker:dev": "npm run --prefix worker dev",
     "worker:deploy": "npm run --prefix worker deploy",
     "deploy:web": "npm run web:build && npm run worker:deploy",
-    "analytics": "node scripts/cf_analytics.mjs"
+    "analytics": "node scripts/cf_analytics.mjs",
+    "analytics:repeat": "node scripts/track_repeat_users.mjs"
   },
   "private": true
 }
