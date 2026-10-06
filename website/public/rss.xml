@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Oct 2026 01:00:10 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 01:20:16 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>OpenAI Adds Invisible Watermarks to ChatGPT and Codex Text in EU</title>
@@ -62,6 +62,33 @@
       <category>Policy</category>
     </item>
     <item>
+      <title>Citrix Tracks New NetScaler Issue, Distinguishes from Prior Vulnerabilities</title>
+      <link>https://secubuzz.com/news/citrix-tracks-new-netscaler-issue-distinguishes-from-prior-v</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/citrix-tracks-new-netscaler-issue-distinguishes-from-prior-v</guid>
+      <description><![CDATA[Citrix confirmed it is monitoring a newly observed issue affecting some customer‑managed NetScaler deployments. The company clarified that this problem is unrelated to the vulnerabilities reported last week that raised alarms among cybersecurity experts. No exploitation details or patches have been released yet.]]></description>
+      <pubDate>Mon, 05 Oct 2026 17:22:00 GMT</pubDate>
+      <source url="https://therecord.media/us-australia-warn-of-latest-citrix-vulnerability">The Record</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>IQVIA Fined €7 Million for Inadequate Health Data Anonymization</title>
+      <link>https://secubuzz.com/news/iqvia-fined-7-million-for-inadequate-health-data-anonymizati</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/iqvia-fined-7-million-for-inadequate-health-data-anonymizati</guid>
+      <description><![CDATA[Italy’s Data Protection Authority fined IQVIA €7 million ($7.8 M) for failing to properly anonymize health data, potentially exposing roughly one million patients to data exposure and de‑anonymization risks. The fine reflects regulatory enforcement of privacy standards rather than an active data breach.]]></description>
+      <pubDate>Mon, 05 Oct 2026 17:19:53 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/iqvia-fined-78-million-for-failing-to-properly-anonymize-health-data/">BleepingComputer</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>ATB Grocery Chain Hit by Cyberattack, Extortion Demand Posted</title>
+      <link>https://secubuzz.com/news/atb-grocery-chain-hit-by-cyberattack-extortion-demand-posted</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/atb-grocery-chain-hit-by-cyberattack-extortion-demand-posted</guid>
+      <description><![CDATA[Ukraine’s largest grocery chain ATB confirmed a cyberattack after hackers posted an extortion demand on its website. The incident indicates a breach attempt, but no data leak has been reported. ATB is investigating the attack and has not disclosed any compromised customer information.]]></description>
+      <pubDate>Mon, 05 Oct 2026 17:00:00 GMT</pubDate>
+      <source url="https://therecord.media/atb-ukraine-cyberattack-ransomware">The Record</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>Microsoft Exchange Vulnerability CVE-2026-96940 Allows Privilege Escalation</title>
       <link>https://secubuzz.com/news/microsoft-exchange-vulnerability-cve-2026-96940-allows-privi</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-exchange-vulnerability-cve-2026-96940-allows-privi</guid>
@@ -96,15 +123,6 @@
       <pubDate>Mon, 05 Oct 2026 15:30:00 GMT</pubDate>
       <source url="https://therecord.media/ransomware-university-illinois-chicago">The Record</source>
       <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Citrix NetScaler CVE‑2026‑88779 Causes Denial‑of‑Service Attacks</title>
-      <link>https://secubuzz.com/news/citrix-netscaler-cve-2026-88779-causes-denial-of-service-att</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/citrix-netscaler-cve-2026-88779-causes-denial-of-service-att</guid>
-      <description><![CDATA[Citrix NetScaler ADCs and Gateways are vulnerable to CVE‑2026‑88779, a memory overflow that can trigger denial‑of‑service attacks. The flaw allows attackers to crash appliances repeatedly, keeping services unavailable. Citrix urges unpatched deployments to apply the latest patch or disable the affected feature to mitigate the risk.]]></description>
-      <pubDate>Mon, 05 Oct 2026 14:53:48 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/05/cisa-flags-new-exploited-netscaler-flaw-as-attackers-crash-appliances-cve-2026-88779/">Help Net Security</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>Google Halts Open Source Bug Bounty Due to Invalid Automated Reports</title>
@@ -195,6 +213,15 @@
       <pubDate>Mon, 05 Oct 2026 13:15:00 GMT</pubDate>
       <source url="https://therecord.media/nikkei-cyberattack-japan-data">The Record</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Developer of Ploutus ATM Malware Arrested in US Court</title>
+      <link>https://secubuzz.com/news/developer-of-ploutus-atm-malware-arrested-in-us-court</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/developer-of-ploutus-atm-malware-arrested-in-us-court</guid>
+      <description><![CDATA[The U.S. Department of Justice announced the arrest of the alleged developer of Ploutus malware, which has been used in ATM jackpotting attacks across the United States. The arrest follows investigations into the malware’s role in stealing millions of dollars from ATMs.]]></description>
+      <pubDate>Mon, 05 Oct 2026 13:01:45 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/suspected-dev-of-ploutus-atm-malware-appears-in-us-court-after-arrest/">BleepingComputer</source>
+      <category>Malware</category>
     </item>
     <item>
       <title>Cloudflare Celebrates 16th Birthday with 46 New Releases</title>
@@ -429,33 +456,6 @@
       <pubDate>Fri, 02 Oct 2026 20:18:37 GMT</pubDate>
       <source url="https://www.darkreading.com/cybersecurity-operations/remotethreat-bets-security-teams-need-to-test-what-happens-after-defenses-fail">Dark Reading</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Bipartisan Bills Target ALPR Use</title>
-      <link>https://secubuzz.com/news/bipartisan-bills-target-alpr-use</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/bipartisan-bills-target-alpr-use</guid>
-      <description><![CDATA[Legislation introduced by Sen. Josh Hawley and a bipartisan group led by Sen. Bernie Sanders, Sen. Jeff Merkley, and Rep. Alexandria Ocasio‑Cortez aims to limit automated license plate readers. The bills seek to regulate ALPR deployment and address privacy concerns raised by the technology.]]></description>
-      <pubDate>Fri, 02 Oct 2026 19:30:00 GMT</pubDate>
-      <source url="https://therecord.media/alpr-legislation-hawley-sanders-merkley-aoc">The Record</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>SWIFT Banking &amp; Government Middleware Enables RCE</title>
-      <link>https://secubuzz.com/news/swift-banking-government-middleware-enables-rce</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/swift-banking-government-middleware-enables-rce</guid>
-      <description><![CDATA[A remote code execution flaw exists in SWIFT banking and government middleware, allowing attackers to exploit hardware-based multi‑factor authentication weaknesses in ultra‑sensitive environments. Patching the middleware vulnerabilities is essential to prevent potential exploitation.]]></description>
-      <pubDate>Fri, 02 Oct 2026 16:27:54 GMT</pubDate>
-      <source url="https://www.darkreading.com/cybersecurity-operations/swift-banking-govt-middleware-rce">Dark Reading</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cloudflare Stream and Workers Enable Custom Video Pipelines</title>
-      <link>https://secubuzz.com/news/cloudflare-stream-and-workers-enable-custom-video-pipelines</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-stream-and-workers-enable-custom-video-pipelines</guid>
-      <description><![CDATA[Cloudflare demonstrates how to build long-running, continuous video processing pipelines by pairing Cloudflare Workers and Durable Objects with a containerized media engine. The solution allows developers to create custom video workflows that run continuously and scale automatically.]]></description>
-      <pubDate>Fri, 02 Oct 2026 16:13:45 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/streamline/">Cloudflare Security</source>
-      <category>Cloud</category>
     </item>
   </channel>
 </rss>

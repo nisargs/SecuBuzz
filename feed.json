@@ -110,6 +110,50 @@
     "additionalSources": []
   },
   {
+    "id": "https://therecord.media/us-australia-warn-of-latest-citrix-vulnerability",
+    "sourceUrl": "https://therecord.media/us-australia-warn-of-latest-citrix-vulnerability",
+    "title": "Citrix Tracks New NetScaler Issue, Distinguishes from Prior Vulnerabilities",
+    "headline": "Citrix Tracks New NetScaler Issue, Distinguishes from Prior Vulnerabilities",
+    "summary": "Citrix confirmed it is monitoring a newly observed issue affecting some customer‑managed NetScaler deployments. The company clarified that this problem is unrelated to the vulnerabilities reported last week that raised alarms among cybersecurity experts. No exploitation details or patches have been released yet.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "publishedAt": "2026-10-05T17:22:00.000Z",
+    "url": "https://therecord.media/us-australia-warn-of-latest-citrix-vulnerability",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/cisa-flags-new-exploited-netscaler-flaw-as-attackers-crash-appliances-cve-2026-88779/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/iqvia-fined-78-million-for-failing-to-properly-anonymize-health-data/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/iqvia-fined-78-million-for-failing-to-properly-anonymize-health-data/",
+    "title": "IQVIA Fined €7 Million for Inadequate Health Data Anonymization",
+    "headline": "IQVIA Fined €7 Million for Inadequate Health Data Anonymization",
+    "summary": "Italy’s Data Protection Authority fined IQVIA €7 million ($7.8 M) for failing to properly anonymize health data, potentially exposing roughly one million patients to data exposure and de‑anonymization risks. The fine reflects regulatory enforcement of privacy standards rather than an active data breach.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-05T17:19:53.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/iqvia-fined-78-million-for-failing-to-properly-anonymize-health-data/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://therecord.media/atb-ukraine-cyberattack-ransomware",
+    "sourceUrl": "https://therecord.media/atb-ukraine-cyberattack-ransomware",
+    "title": "ATB Grocery Chain Hit by Cyberattack, Extortion Demand Posted",
+    "headline": "ATB Grocery Chain Hit by Cyberattack, Extortion Demand Posted",
+    "summary": "Ukraine’s largest grocery chain ATB confirmed a cyberattack after hackers posted an extortion demand on its website. The incident indicates a breach attempt, but no data leak has been reported. ATB is investigating the attack and has not disclosed any compromised customer information.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "publishedAt": "2026-10-05T17:00:00.000Z",
+    "url": "https://therecord.media/atb-ukraine-cyberattack-ransomware",
+    "additionalSources": []
+  },
+  {
     "id": "https://thehackernews.com/2026/10/microsoft-exchange-flaw-lets.html",
     "sourceUrl": "https://thehackernews.com/2026/10/microsoft-exchange-flaw-lets.html",
     "title": "Microsoft Exchange Vulnerability CVE-2026-96940 Allows Privilege Escalation",
@@ -165,32 +209,6 @@
     "publishedAt": "2026-10-05T15:30:00.000Z",
     "url": "https://therecord.media/ransomware-university-illinois-chicago",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/05/cisa-flags-new-exploited-netscaler-flaw-as-attackers-crash-appliances-cve-2026-88779/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/cisa-flags-new-exploited-netscaler-flaw-as-attackers-crash-appliances-cve-2026-88779/",
-    "title": "Citrix NetScaler CVE‑2026‑88779 Causes Denial‑of‑Service Attacks",
-    "headline": "Citrix NetScaler CVE‑2026‑88779 Causes Denial‑of‑Service Attacks",
-    "summary": "Citrix NetScaler ADCs and Gateways are vulnerable to CVE‑2026‑88779, a memory overflow that can trigger denial‑of‑service attacks. The flaw allows attackers to crash appliances repeatedly, keeping services unavailable. Citrix urges unpatched deployments to apply the latest patch or disable the affected feature to mitigate the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-05T14:53:48.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/05/cisa-flags-new-exploited-netscaler-flaw-as-attackers-crash-appliances-cve-2026-88779/",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/weekly-recap-netscaler-and-fortimail-0.html"
-      },
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/exchange-server-vulnerability-cve-2026-96940/"
-      },
-      {
-        "source": "Sophos Threat Research",
-        "sourceUrl": "https://www.sophos.com/en-us/blog/citrix-netscaler-vulnerability-cve-2026-88779-in-active-exploitation"
-      }
-    ]
   },
   {
     "id": "https://www.securityweek.com/google-narrows-open-source-bug-bounty-amid-wave-of-invalid-automated-reports/",
@@ -325,6 +343,19 @@
     "source": "The Record",
     "publishedAt": "2026-10-05T13:15:00.000Z",
     "url": "https://therecord.media/nikkei-cyberattack-japan-data",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/suspected-dev-of-ploutus-atm-malware-appears-in-us-court-after-arrest/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/suspected-dev-of-ploutus-atm-malware-appears-in-us-court-after-arrest/",
+    "title": "Developer of Ploutus ATM Malware Arrested in US Court",
+    "headline": "Developer of Ploutus ATM Malware Arrested in US Court",
+    "summary": "The U.S. Department of Justice announced the arrest of the alleged developer of Ploutus malware, which has been used in ATM jackpotting attacks across the United States. The arrest follows investigations into the malware’s role in stealing millions of dollars from ATMs.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-05T13:01:45.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/suspected-dev-of-ploutus-atm-malware-appears-in-us-court-after-arrest/",
     "additionalSources": []
   },
   {
@@ -3694,45 +3725,6 @@
     "source": "SecurityWeek",
     "publishedAt": "2026-09-24T09:56:04.000Z",
     "url": "https://www.securityweek.com/astrana-health-data-breach-impacts-private-confidential-information/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/09/24/remcontrol-android-banking-trojan-fake-tv-app/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/24/remcontrol-android-banking-trojan-fake-tv-app/",
-    "title": "RemControl Android Trojan Steals Banking PINs and Blocks Removal",
-    "headline": "RemControl Android Trojan Steals Banking PINs and Blocks Removal",
-    "summary": "RemControl is an Android banking trojan that lures users with a fake TV app, then hijacks the device to capture banking PINs. It targets customers of over 30 banks across Italy, France, Spain, Poland, Portugal, Canada and Gulf states. The malware blocks removal attempts and uses a C2 domain registered on July 19, 2026.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "publishedAt": "2026-09-24T09:40:43.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/09/24/remcontrol-android-banking-trojan-fake-tv-app/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/us-court-sentences-armenian-man-to-prison-for-ryuk-ransomware-attacks/",
-    "sourceUrl": "https://www.securityweek.com/us-court-sentences-armenian-man-to-prison-for-ryuk-ransomware-attacks/",
-    "title": "Armenian Man Sentenced for Ryuk Ransomware Attacks",
-    "headline": "Armenian Man Sentenced for Ryuk Ransomware Attacks",
-    "summary": "A U.S. court sentenced Karen Vardanyan to prison for orchestrating Ryuk ransomware attacks, ordering him to pay over $1.2 million in restitution to victims. The case highlights the legal consequences for ransomware operators.",
-    "category": "RANSOMWARE",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-09-24T08:38:29.000Z",
-    "url": "https://www.securityweek.com/us-court-sentences-armenian-man-to-prison-for-ryuk-ransomware-attacks/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/cloud-security/sase-converges-network-security-one-cloud",
-    "sourceUrl": "https://www.darkreading.com/cloud-security/sase-converges-network-security-one-cloud",
-    "title": "SASE Unifies Network and Security into Cloud Solution",
-    "headline": "SASE Unifies Network and Security into Cloud Solution",
-    "summary": "SASE unifies network and security into a single cloud solution, reflecting the shift of enterprise computing to the edge. This approach requires advanced tactics beyond traditional firewalls, integrating identity, data protection, and threat detection to secure distributed workloads for organizations.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "publishedAt": "2026-09-23T22:29:10.000Z",
-    "url": "https://www.darkreading.com/cloud-security/sase-converges-network-security-one-cloud",
     "additionalSources": []
   }
 ]
