@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Oct 2026 18:26:20 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 20:20:26 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Hackers Exploit 32 Zero-Days on Samsung Galaxy S26 at Pwn2Own Ireland</title>
+      <link>https://secubuzz.com/news/hackers-exploit-32-zero-days-on-samsung-galaxy-s26-at-pwn2ow</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-32-zero-days-on-samsung-galaxy-s26-at-pwn2ow</guid>
+      <description><![CDATA[During the first day of Pwn2Own Ireland 2026, researchers compromised a Samsung Galaxy S26 twice by exploiting 32 zero-day vulnerabilities. The attacks demonstrated the device’s critical weaknesses, allowing full system compromise and data exfiltration, and earned participants $388,500 in prize money.]]></description>
+      <pubDate>Tue, 06 Oct 2026 19:21:53 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/hackers-exploit-32-zero-days-on-first-day-of-pwn2own-ireland/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Phishing Platform Mimics AI Chatbot Ads to Steal Credentials and MFA Codes</title>
+      <link>https://secubuzz.com/news/phishing-platform-mimics-ai-chatbot-ads-to-steal-credentials</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/phishing-platform-mimics-ai-chatbot-ads-to-steal-credentials</guid>
+      <description><![CDATA[Cybersecurity researchers uncovered a human-operated phishing platform that impersonates advertising portals for AI chatbots such as ChatGPT, Gemini, and Claude. The fake portals lure users into providing credentials and MFA codes, enabling attackers to hijack business accounts and compromise sensitive data.]]></description>
+      <pubDate>Tue, 06 Oct 2026 18:38:55 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/fake-chatgpt-gemini-and-claude-ad.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Linux Backdoors Disguise Traffic as Email Services to Evade Detection in Korea and Taiwan</title>
+      <link>https://secubuzz.com/news/linux-backdoors-disguise-traffic-as-email-services-to-evade-</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/linux-backdoors-disguise-traffic-as-email-services-to-evade-</guid>
+      <description><![CDATA[Linux backdoors targeting telecom and network appliances in South Korea and Taiwan disguise their traffic as email services and legitimate processes, using names of real binaries to blend in and avoid detection. The threat actors employ this defense‑evasion technique to maintain persistence on affected systems.]]></description>
+      <pubDate>Tue, 06 Oct 2026 18:24:25 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/linux-backdoors-impersonate-email.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Google AI Agent Identifies 500 Vulnerabilities in Web Applications</title>
       <link>https://secubuzz.com/news/google-ai-agent-identifies-500-vulnerabilities-in-web-applic</link>
@@ -77,15 +104,6 @@
       <description><![CDATA[South Korean officials report that personal data of at least 68,000 individuals was exposed through breaches of seven financial institutions. They attribute the attacks to AI agents, allegedly employing a Chinese cybersecurity tool to infiltrate bank systems. The breach compromised sensitive customer information and raised concerns about the security of banking infrastructure.]]></description>
       <pubDate>Tue, 06 Oct 2026 15:29:22 GMT</pubDate>
       <source url="https://therecord.media/south-korean-bank-hacks-ai-agents">The Record</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Fake AI Sites Steal Ad Account Credentials and MFA Codes</title>
-      <link>https://secubuzz.com/news/fake-ai-sites-steal-ad-account-credentials-and-mfa-codes</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fake-ai-sites-steal-ad-account-credentials-and-mfa-codes</guid>
-      <description><![CDATA[A phishing campaign uses counterfeit ChatGPT, Gemini, Claude, and Perplexity sites that hijack login credentials and MFA codes via browser‑in‑browser attacks targeting ad account managers.]]></description>
-      <pubDate>Tue, 06 Oct 2026 15:16:44 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/fake-chatgpt-gemini-sites-steal-advertising-accounts-mfa-codes/">BleepingComputer</source>
       <category>Breach</category>
     </item>
     <item>
@@ -161,21 +179,48 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>SailPoint adds AI agent discovery, temporary access and compliance automation</title>
+      <link>https://secubuzz.com/news/sailpoint-adds-ai-agent-discovery-temporary-access-and-compl</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sailpoint-adds-ai-agent-discovery-temporary-access-and-compl</guid>
+      <description><![CDATA[SailPoint announced new features in its Agentic Fabric and Human Fabric products, enabling enterprises to detect hidden AI tools, enforce continuous compliance, replace permanent access keys with temporary permissions, and shift identity security to real‑time automated defense.]]></description>
+      <pubDate>Tue, 06 Oct 2026 13:16:49 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/06/sailpoint-agentic-fabric-innovation/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Intellias Agentic ServiceOps applies governed AI across IT operations</title>
+      <link>https://secubuzz.com/news/intellias-agentic-serviceops-applies-governed-ai-across-it-o</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/intellias-agentic-serviceops-applies-governed-ai-across-it-o</guid>
+      <description><![CDATA[Intellias launched Agentic ServiceOps, a managed IT service that integrates governed agentic AI into IT service and operations management, providing an Intelligent Orchestrator Layer to streamline end‑to‑end IT work and reduce complexity and costs.]]></description>
+      <pubDate>Tue, 06 Oct 2026 12:55:04 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/06/intellias-agentic-serviceops/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Savannah lwIP SMTP Client Buffer Overflow Vulnerability CVE-2026-15340</title>
+      <link>https://secubuzz.com/news/savannah-lwip-smtp-client-buffer-overflow-vulnerability-cve-</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/savannah-lwip-smtp-client-buffer-overflow-vulnerability-cve-</guid>
+      <description><![CDATA[A buffer overflow in Savannah lwIP SMTP client 2.2.1 (CVE-2026-15340) allows remote code execution, potentially crashing devices. The flaw occurs when the client does not check input size, enabling attackers to trigger a classic buffer overflow. A patch has been released to fix the issue.]]></description>
+      <pubDate>Tue, 06 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-02">CISA</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Hitachi Energy RTU500 End-of-Life Firmware Lacks Modern Security Controls</title>
+      <link>https://secubuzz.com/news/hitachi-energy-rtu500-end-of-life-firmware-lacks-modern-secu</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hitachi-energy-rtu500-end-of-life-firmware-lacks-modern-secu</guid>
+      <description><![CDATA[Hitachi Energy reports that legacy RTU500 CMU firmware 9.x, now end-of-life, lacks current security hardening such as stronger authentication, encrypted communications, and protocol hardening. Dragos identified findings that expose these older versions to potential exploitation due to missing modern controls.]]></description>
+      <pubDate>Tue, 06 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-06">CISA</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Johnson Controls EasyIO FG Hard‑coded Credentials Vulnerability</title>
       <link>https://secubuzz.com/news/johnson-controls-easyio-fg-hard-coded-credentials-vulnerabil</link>
       <guid isPermaLink="true">https://secubuzz.com/news/johnson-controls-easyio-fg-hard-coded-credentials-vulnerabil</guid>
       <description><![CDATA[A CVE-2026-27872 flaw in Johnson Controls EasyIO FG firmware allows attackers to use hard‑coded credentials and improper privilege management to gain full unauthorized device access. The vulnerability, with a CVSS score of 7.7, could lead to complete device compromise. Mitigation requires applying vendor patches.]]></description>
       <pubDate>Tue, 06 Oct 2026 12:00:00 GMT</pubDate>
       <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-01">CISA</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Hitachi Energy SOI Apache ActiveMQ RCE Vulnerability</title>
-      <link>https://secubuzz.com/news/hitachi-energy-soi-apache-activemq-rce-vulnerability</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hitachi-energy-soi-apache-activemq-rce-vulnerability</guid>
-      <description><![CDATA[CVE-2026-34197 exposes a remote code execution flaw in Hitachi Energy SOI’s Apache ActiveMQ component. With a CVSS score of 8.8, attackers can inject code and compromise confidentiality, integrity, and availability of the product. Immediate remediation involves applying the vendor’s recommended patches.]]></description>
-      <pubDate>Tue, 06 Oct 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-04">CISA</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -285,15 +330,6 @@
       <pubDate>Tue, 06 Oct 2026 09:29:31 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/06/github-reviewbench-ai-code-review-benchmark/">Help Net Security</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Pwn2Own Ireland 2026 Day One Exploit Highlights</title>
-      <link>https://secubuzz.com/news/pwn2own-ireland-2026-day-one-exploit-highlights</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/pwn2own-ireland-2026-day-one-exploit-highlights</guid>
-      <description><![CDATA[Day One of Pwn2Own Ireland 2026 saw 21 entries targeting various devices, including Samsung and Pixel. Notable successes included an OOB write and format string bug against the Sonos Era 300, earning the competitor $50,000 and 5 Master of Pwn points. The event continues with live updates.]]></description>
-      <pubDate>Tue, 06 Oct 2026 09:28:31 GMT</pubDate>
-      <source url="https://www.thezdi.com/blog/2026/10/6/pwn2own-ireland-2026-day-one-results">Zero Day Initiative</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>Nikkei Employee Email Accounts Breached</title>
@@ -420,42 +456,6 @@
       <pubDate>Mon, 05 Oct 2026 16:00:00 GMT</pubDate>
       <source url="https://www.wiz.io/blog/wiz-service-catalog-updates">Wiz Research</source>
       <category>Cloud</category>
-    </item>
-    <item>
-      <title>Chinese Hackers Impersonate US Officials for AI Cyber Espionage</title>
-      <link>https://secubuzz.com/news/chinese-hackers-impersonate-us-officials-for-ai-cyber-espion</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chinese-hackers-impersonate-us-officials-for-ai-cyber-espion</guid>
-      <description><![CDATA[Chinese hackers from TA419 forged relationships with AI policy experts at U.S. think tanks, universities, and legal groups to facilitate espionage. The group impersonated officials to gain access to sensitive research and policy discussions. The operation highlights growing state-sponsored AI cyber espionage targeting U.S. policy makers.]]></description>
-      <pubDate>Mon, 05 Oct 2026 15:52:59 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyberattacks-data-breaches/chinese-actor-impersonates-us-officials-cyber-espionage">Dark Reading</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>Arizona State Court System Breach After Phishing Attack</title>
-      <link>https://secubuzz.com/news/arizona-state-court-system-breach-after-phishing-attack</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/arizona-state-court-system-breach-after-phishing-attack</guid>
-      <description><![CDATA[A phishing attack on an Arizona state court employee led to a breach of the court’s system. Attackers accessed backup files containing protective‑order records and over 150,000 Foster Care Review Board reports, exposing sensitive data. The incident underscores the need for stronger email security and employee training.]]></description>
-      <pubDate>Mon, 05 Oct 2026 13:57:30 GMT</pubDate>
-      <source url="https://research.checkpoint.com/2026/5th-october-threat-intelligence-report/">Check Point Research</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Milk Dragon Phishing Kit Targets Shoppers with Fake Discounts</title>
-      <link>https://secubuzz.com/news/milk-dragon-phishing-kit-targets-shoppers-with-fake-discount</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/milk-dragon-phishing-kit-targets-shoppers-with-fake-discount</guid>
-      <description><![CDATA[Cybercriminals use the Milk Dragon phishing kit, active since October 2025, to lure shoppers on Facebook and TikTok with fake discounts. The kit directs victims to 258 phishing pages across 66 countries, stealing payment card details and one‑time passwords.]]></description>
-      <pubDate>Mon, 05 Oct 2026 13:55:15 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/05/milk-dragon-phishing-fake-discounts/">Help Net Security</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Belarusian Hacktivists Conduct Two‑Year Espionage in Russian Healthcare Network</title>
-      <link>https://secubuzz.com/news/belarusian-hacktivists-conduct-two-year-espionage-in-russian</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/belarusian-hacktivists-conduct-two-year-espionage-in-russian</guid>
-      <description><![CDATA[Russian researchers attribute a two‑year espionage campaign to Belarusian Cyber Partisans, a hacktivist group known for attacks on governments and infrastructure. The campaign infiltrated a Russian healthcare network, gathering sensitive information over an extended period.]]></description>
-      <pubDate>Mon, 05 Oct 2026 13:55:00 GMT</pubDate>
-      <source url="https://therecord.media/belarusian-hacktivists-two-years-Russian-healthcare-network">The Record</source>
-      <category>Malware</category>
     </item>
   </channel>
 </rss>

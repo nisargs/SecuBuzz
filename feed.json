@@ -1,5 +1,54 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/hackers-exploit-32-zero-days-on-first-day-of-pwn2own-ireland/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-32-zero-days-on-first-day-of-pwn2own-ireland/",
+    "title": "Hackers Exploit 32 Zero-Days on Samsung Galaxy S26 at Pwn2Own Ireland",
+    "headline": "Hackers Exploit 32 Zero-Days on Samsung Galaxy S26 at Pwn2Own Ireland",
+    "summary": "During the first day of Pwn2Own Ireland 2026, researchers compromised a Samsung Galaxy S26 twice by exploiting 32 zero-day vulnerabilities. The attacks demonstrated the device’s critical weaknesses, allowing full system compromise and data exfiltration, and earned participants $388,500 in prize money.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-06T19:21:53.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-32-zero-days-on-first-day-of-pwn2own-ireland/",
+    "additionalSources": [
+      {
+        "source": "Zero Day Initiative",
+        "sourceUrl": "https://www.thezdi.com/blog/2026/10/6/pwn2own-ireland-2026-day-one-results"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/fake-chatgpt-gemini-and-claude-ad.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/fake-chatgpt-gemini-and-claude-ad.html",
+    "title": "Phishing Platform Mimics AI Chatbot Ads to Steal Credentials and MFA Codes",
+    "headline": "Phishing Platform Mimics AI Chatbot Ads to Steal Credentials and MFA Codes",
+    "summary": "Cybersecurity researchers uncovered a human-operated phishing platform that impersonates advertising portals for AI chatbots such as ChatGPT, Gemini, and Claude. The fake portals lure users into providing credentials and MFA codes, enabling attackers to hijack business accounts and compromise sensitive data.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-06T18:38:55.000Z",
+    "url": "https://thehackernews.com/2026/10/fake-chatgpt-gemini-and-claude-ad.html",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/fake-chatgpt-gemini-sites-steal-advertising-accounts-mfa-codes/"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/linux-backdoors-impersonate-email.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/linux-backdoors-impersonate-email.html",
+    "title": "Linux Backdoors Disguise Traffic as Email Services to Evade Detection in Korea and Taiwan",
+    "headline": "Linux Backdoors Disguise Traffic as Email Services to Evade Detection in Korea and Taiwan",
+    "summary": "Linux backdoors targeting telecom and network appliances in South Korea and Taiwan disguise their traffic as email services and legitimate processes, using names of real binaries to blend in and avoid detection. The threat actors employ this defense‑evasion technique to maintain persistence on affected systems.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-06T18:24:25.000Z",
+    "url": "https://thehackernews.com/2026/10/linux-backdoors-impersonate-email.html",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.darkreading.com/application-security/google-pagebreak-ai-agent-500-flaws-web-apps",
     "sourceUrl": "https://www.darkreading.com/application-security/google-pagebreak-ai-agent-500-flaws-web-apps",
     "title": "Google AI Agent Identifies 500 Vulnerabilities in Web Applications",
@@ -70,6 +119,10 @@
       {
         "source": "CrowdStrike",
         "sourceUrl": "https://www.crowdstrike.com/en-us/blog/falcon-data-security-for-saas-secures-sensitive-data/"
+      },
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/asos-push-notification-apparently-sent-by-hackers"
       }
     ]
   },
@@ -123,24 +176,6 @@
       {
         "source": "BleepingComputer",
         "sourceUrl": "https://www.bleepingcomputer.com/news/security/south-korea-probes-bank-breaches-amid-suspected-ai-powered-attacks/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/fake-chatgpt-gemini-sites-steal-advertising-accounts-mfa-codes/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fake-chatgpt-gemini-sites-steal-advertising-accounts-mfa-codes/",
-    "title": "Fake AI Sites Steal Ad Account Credentials and MFA Codes",
-    "headline": "Fake AI Sites Steal Ad Account Credentials and MFA Codes",
-    "summary": "A phishing campaign uses counterfeit ChatGPT, Gemini, Claude, and Perplexity sites that hijack login credentials and MFA codes via browser‑in‑browser attacks targeting ad account managers.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-06T15:16:44.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/fake-chatgpt-gemini-sites-steal-advertising-accounts-mfa-codes/",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-is-adding-invisible-watermarks-to-chatgpt-and-codex-text-in-the-eu/"
       }
     ]
   },
@@ -208,6 +243,10 @@
       {
         "source": "The Hacker News",
         "sourceUrl": "https://thehackernews.com/2026/10/wikimedia-says-openai-agents-tried-to.html"
+      },
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/rogue-openai-agents-behind-potentially-malicious-wikipedia-edits/"
       }
     ]
   },
@@ -264,6 +303,63 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.helpnetsecurity.com/2026/10/06/sailpoint-agentic-fabric-innovation/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/sailpoint-agentic-fabric-innovation/",
+    "title": "SailPoint adds AI agent discovery, temporary access and compliance automation",
+    "headline": "SailPoint adds AI agent discovery, temporary access and compliance automation",
+    "summary": "SailPoint announced new features in its Agentic Fabric and Human Fabric products, enabling enterprises to detect hidden AI tools, enforce continuous compliance, replace permanent access keys with temporary permissions, and shift identity security to real‑time automated defense.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-06T13:16:49.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/06/sailpoint-agentic-fabric-innovation/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/06/intellias-agentic-serviceops/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/intellias-agentic-serviceops/",
+    "title": "Intellias Agentic ServiceOps applies governed AI across IT operations",
+    "headline": "Intellias Agentic ServiceOps applies governed AI across IT operations",
+    "summary": "Intellias launched Agentic ServiceOps, a managed IT service that integrates governed agentic AI into IT service and operations management, providing an Intelligent Orchestrator Layer to streamline end‑to‑end IT work and reduce complexity and costs.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-06T12:55:04.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/06/intellias-agentic-serviceops/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-02",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-02",
+    "title": "Savannah lwIP SMTP Client Buffer Overflow Vulnerability CVE-2026-15340",
+    "headline": "Savannah lwIP SMTP Client Buffer Overflow Vulnerability CVE-2026-15340",
+    "summary": "A buffer overflow in Savannah lwIP SMTP client 2.2.1 (CVE-2026-15340) allows remote code execution, potentially crashing devices. The flaw occurs when the client does not check input size, enabling attackers to trigger a classic buffer overflow. A patch has been released to fix the issue.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CISA",
+    "publishedAt": "2026-10-06T12:00:00.000Z",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-02",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-06",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-06",
+    "title": "Hitachi Energy RTU500 End-of-Life Firmware Lacks Modern Security Controls",
+    "headline": "Hitachi Energy RTU500 End-of-Life Firmware Lacks Modern Security Controls",
+    "summary": "Hitachi Energy reports that legacy RTU500 CMU firmware 9.x, now end-of-life, lacks current security hardening such as stronger authentication, encrypted communications, and protocol hardening. Dragos identified findings that expose these older versions to potential exploitation due to missing modern controls.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "CISA",
+    "publishedAt": "2026-10-06T12:00:00.000Z",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-06",
+    "additionalSources": [
+      {
+        "source": "CISA",
+        "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-04"
+      }
+    ]
+  },
+  {
     "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-01",
     "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-01",
     "title": "Johnson Controls EasyIO FG Hard‑coded Credentials Vulnerability",
@@ -275,24 +371,6 @@
     "publishedAt": "2026-10-06T12:00:00.000Z",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-01",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-04",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-04",
-    "title": "Hitachi Energy SOI Apache ActiveMQ RCE Vulnerability",
-    "headline": "Hitachi Energy SOI Apache ActiveMQ RCE Vulnerability",
-    "summary": "CVE-2026-34197 exposes a remote code execution flaw in Hitachi Energy SOI’s Apache ActiveMQ component. With a CVSS score of 8.8, attackers can inject code and compromise confidentiality, integrity, and availability of the product. Immediate remediation involves applying the vendor’s recommended patches.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CISA",
-    "publishedAt": "2026-10-06T12:00:00.000Z",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-04",
-    "additionalSources": [
-      {
-        "source": "CISA",
-        "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-05"
-      }
-    ]
   },
   {
     "id": "https://thehackernews.com/2026/10/libreoffice-and-openoffice-flaws-let.html",
@@ -474,24 +552,6 @@
     "publishedAt": "2026-10-06T09:29:31.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/06/github-reviewbench-ai-code-review-benchmark/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.thezdi.com/blog/2026/10/6/pwn2own-ireland-2026-day-one-results",
-    "sourceUrl": "https://www.thezdi.com/blog/2026/10/6/pwn2own-ireland-2026-day-one-results",
-    "title": "Pwn2Own Ireland 2026 Day One Exploit Highlights",
-    "headline": "Pwn2Own Ireland 2026 Day One Exploit Highlights",
-    "summary": "Day One of Pwn2Own Ireland 2026 saw 21 entries targeting various devices, including Samsung and Pixel. Notable successes included an OOB write and format string bug against the Sonos Era 300, earning the competitor $50,000 and 5 Master of Pwn points. The event continues with live updates.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Zero Day Initiative",
-    "publishedAt": "2026-10-06T09:28:31.000Z",
-    "url": "https://www.thezdi.com/blog/2026/10/6/pwn2own-ireland-2026-day-one-results",
-    "additionalSources": [
-      {
-        "source": "Zero Day Initiative",
-        "sourceUrl": "https://www.thezdi.com/blog/2026/10/5/pwn2own-ireland-2026-the-full-schedule"
-      }
-    ]
   },
   {
     "id": "https://www.bleepingcomputer.com/news/security/nikkei-discloses-breaches-of-employees-microsoft-google-email-accounts/",
@@ -3704,68 +3764,6 @@
     "source": "Dark Reading",
     "publishedAt": "2026-09-25T07:00:00.000Z",
     "url": "https://www.darkreading.com/physical-security/russia-hybrid-cyber-physical-war-europe",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/09/25/sans-threat-hunting-data-quality/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/25/sans-threat-hunting-data-quality/",
-    "title": "Half of Threat Hunters Cite Bad Data as Biggest Barrier",
-    "headline": "Half of Threat Hunters Cite Bad Data as Biggest Barrier",
-    "summary": "A SANS 2026 Threat Hunting Survey finds that 50% of security professionals identify poor data quality or quantity as the main obstacle to effective threat hunting. Teams with playbooks see logs as a ceiling, while gaps in cloud logging and identity telemetry hinder detection of attackers blending with legitimate activity.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-09-25T05:00:56.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/09/25/sans-threat-hunting-data-quality/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/09/25/new-infosec-products-of-the-month-september-2026/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/25/new-infosec-products-of-the-month-september-2026/",
-    "title": "New Infosec Products of the Month: September 2026",
-    "headline": "New Infosec Products of the Month: September 2026",
-    "summary": "A review of the latest cybersecurity product releases for September 2026, highlighting offerings from Akeyless, Akuity, Bitsight, BugBase, Cloud Range, Cohesity, Dataminr, Gurucul, Nozomi Networks, Orchid Security, Ping Identity, Scytale, Securin, Superna, and Tuskira. Ping Identity introduces enterprise security for personal AI agents, combining discovery, secretless privileged access, and runtime control.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-09-25T04:00:28.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/09/25/new-infosec-products-of-the-month-september-2026/",
-    "additionalSources": [
-      {
-        "source": "SANS Internet Storm Center",
-        "sourceUrl": "https://isc.sans.edu/diary/rss/33370"
-      }
-    ]
-  },
-  {
-    "id": "https://cybernewsai.com/blog/teamfiltration-unk-condorfiltration-microsoft-365-breach",
-    "sourceUrl": "https://cybernewsai.com/blog/teamfiltration-unk-condorfiltration-microsoft-365-breach",
-    "title": "TeamFiltration Campaign Compromises Microsoft 365 Tenants",
-    "headline": "TeamFiltration Campaign Compromises Microsoft 365 Tenants",
-    "summary": "The TeamFiltration tool was used by the UNK_CondorFiltration campaign to target 28 Microsoft 365 tenants, exploiting dormant service accounts that had default passwords. Attackers gained unauthorized access to these accounts, potentially allowing further lateral movement or data exfiltration within the compromised organizations.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-09-24T23:21:43.000Z",
-    "url": "https://cybernewsai.com/blog/teamfiltration-unk-condorfiltration-microsoft-365-breach",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/09/teamfiltration-compromises-seven.html"
-      }
-    ]
-  },
-  {
-    "id": "https://cybernewsai.com/blog/teamcity-auth-bypass-cve-2026-63077-ransomware-attacks",
-    "sourceUrl": "https://cybernewsai.com/blog/teamcity-auth-bypass-cve-2026-63077-ransomware-attacks",
-    "title": "Ransomware Gangs Exploit Critical TeamCity Auth Bypass Flaw",
-    "headline": "Ransomware Gangs Exploit Critical TeamCity Auth Bypass Flaw",
-    "summary": "CISA reports ransomware groups weaponizing JetBrains TeamCity authentication bypass (CVE-2026-63077) to run OS commands and hijack CI/CD pipelines. The flaw allows unauthenticated RCE with CVSS 9.5. Immediate patching of TeamCity installations is required to prevent ransomware deployment.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-09-24T21:39:08.000Z",
-    "url": "https://cybernewsai.com/blog/teamcity-auth-bypass-cve-2026-63077-ransomware-attacks",
     "additionalSources": []
   }
 ]
