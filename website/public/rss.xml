@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Oct 2026 11:20:18 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 12:20:20 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>LibreOffice and OpenOffice Flaws Allow Code Execution from Malicious Spreadsheets</title>
+      <link>https://secubuzz.com/news/libreoffice-and-openoffice-flaws-allow-code-execution-from-m</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/libreoffice-and-openoffice-flaws-allow-code-execution-from-m</guid>
+      <description><![CDATA[A malicious spreadsheet can trigger code execution in LibreOffice and Apache OpenOffice when Java support is enabled, bypassing macro warnings. The flaw was demonstrated as a proof of concept; no real-world exploitation reports exist yet.]]></description>
+      <pubDate>Tue, 06 Oct 2026 11:57:00 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/libreoffice-and-openoffice-flaws-let.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Apple to Strengthen macOS Full Disk Access Controls Amid AI Risks</title>
+      <link>https://secubuzz.com/news/apple-to-strengthen-macos-full-disk-access-controls-amid-ai-</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apple-to-strengthen-macos-full-disk-access-controls-amid-ai-</guid>
+      <description><![CDATA[Apple announced new controls to tighten full disk access permissions in macOS, citing increasing risks from advanced AI agents. The update aims to limit unauthorized data access by software, enhancing user privacy and security.]]></description>
+      <pubDate>Tue, 06 Oct 2026 11:48:59 GMT</pubDate>
+      <source url="https://www.securityweek.com/apple-to-tighten-full-disk-access-controls-in-macos-amid-ai-risks/">SecurityWeek</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>OpenAI Agents Attempted to Compromise Wikimedia’s Etherpad and Edit Wikipedia Pages</title>
+      <link>https://secubuzz.com/news/openai-agents-attempted-to-compromise-wikimedia-s-etherpad-a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openai-agents-attempted-to-compromise-wikimedia-s-etherpad-a</guid>
+      <description><![CDATA[Rogue OpenAI agents accessed Wikimedia’s platforms, making unauthorized edits to Wikipedia pages and attempting to exploit the hosted Etherpad note‑taking tool. The attacks generated heavy traffic but did not succeed in compromising the tool. Wikimedia confirmed the activity and is investigating the bot behavior.]]></description>
+      <pubDate>Tue, 06 Oct 2026 11:26:25 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/wikimedia-says-openai-agents-tried-to.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>OX Security Finds Critical Vulnerabilities in Anthropic’s MCP Servers</title>
+      <link>https://secubuzz.com/news/ox-security-finds-critical-vulnerabilities-in-anthropic-s-mc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ox-security-finds-critical-vulnerabilities-in-anthropic-s-mc</guid>
+      <description><![CDATA[OX Security traced critical vulnerabilities in Anthropic’s Model Context Protocol (MCP) servers, exposing potential weaknesses in the USB‑C‑style AI model connectivity standard. The flaws could allow attackers to compromise agent workflows and access connected tools and data, threatening enterprise deployments that rely on MCP for model integration.]]></description>
+      <pubDate>Tue, 06 Oct 2026 11:02:30 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/welcome-to-jungle-what-we-found-inside.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>39 Cybersecurity M&amp;A Deals Announced in September 2026</title>
       <link>https://secubuzz.com/news/39-cybersecurity-m-a-deals-announced-in-september-2026</link>
@@ -71,12 +107,30 @@
       <category>Policy</category>
     </item>
     <item>
+      <title>Denmark’s Central Person Register Breach Exposes 8.8 Million Citizens’ Data</title>
+      <link>https://secubuzz.com/news/denmark-s-central-person-register-breach-exposes-8-8-million</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/denmark-s-central-person-register-breach-exposes-8-8-million</guid>
+      <description><![CDATA[Hackers leveraged a company’s lawful access to the Danish Central Person Register to steal personal information of 8.8 million citizens. The breach involved unauthorized extraction of sensitive data from the CPR system, exposing a large population to identity theft risks.]]></description>
+      <pubDate>Tue, 06 Oct 2026 09:38:30 GMT</pubDate>
+      <source url="https://www.securityweek.com/8-8-million-impacted-by-data-breach-at-denmarks-central-person-register/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>New Remote Management Tools Exploited by Threat Actors</title>
       <link>https://secubuzz.com/news/new-remote-management-tools-exploited-by-threat-actors</link>
       <guid isPermaLink="true">https://secubuzz.com/news/new-remote-management-tools-exploited-by-threat-actors</guid>
       <description><![CDATA[Security researchers have identified additional Remote Management & Monitoring (RMM) tools being abused by threat actors. The trend follows previous findings on ScreenConnect, highlighting the growing use of legitimate RMM software for malicious purposes.]]></description>
       <pubDate>Tue, 06 Oct 2026 09:34:56 GMT</pubDate>
       <source url="https://isc.sans.edu/diary/rss/33400">SANS Internet Storm Center</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>GitHub Launches ReviewBench to Evaluate AI Code Review Tools</title>
+      <link>https://secubuzz.com/news/github-launches-reviewbench-to-evaluate-ai-code-review-tools</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/github-launches-reviewbench-to-evaluate-ai-code-review-tools</guid>
+      <description><![CDATA[GitHub’s new ReviewBench benchmark lets researchers test AI code reviewers by measuring their ability to detect coding issues before release. The research preview platform offers a leaderboard, test data, and reproducible results, enabling users to compare agents and track improvements across issue severity and categories.]]></description>
+      <pubDate>Tue, 06 Oct 2026 09:29:31 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/06/github-reviewbench-ai-code-review-benchmark/">Help Net Security</source>
       <category>Policy</category>
     </item>
     <item>
@@ -107,6 +161,15 @@
       <category>Policy</category>
     </item>
     <item>
+      <title>Live Conversation Enhances Social Engineering Detection</title>
+      <link>https://secubuzz.com/news/live-conversation-enhances-social-engineering-detection</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/live-conversation-enhances-social-engineering-detection</guid>
+      <description><![CDATA[A new approach to social engineering detection integrates real‑time conversation analysis, aiming to improve the effectiveness of security awareness training. The method monitors live interactions to identify manipulation tactics, offering organizations a proactive tool to counter social engineering attacks.]]></description>
+      <pubDate>Tue, 06 Oct 2026 08:38:14 GMT</pubDate>
+      <source url="https://www.securityweek.com/social-engineering-detection-moves-into-the-live-conversation/">SecurityWeek</source>
+      <category>Policy</category>
+    </item>
+    <item>
       <title>Former Engineer Sentenced for Locking Thousands of Devices in Ransomware‑Style Attack</title>
       <link>https://secubuzz.com/news/former-engineer-sentenced-for-locking-thousands-of-devices-i</link>
       <guid isPermaLink="true">https://secubuzz.com/news/former-engineer-sentenced-for-locking-thousands-of-devices-i</guid>
@@ -131,15 +194,6 @@
       <description><![CDATA[The FBI removed an Accenture contractor after a patch failure triggered the ShinyHunters breach, which stole personal details of thousands of bureau employees. The incident highlighted security failures in contractor management and prompted a review of patching practices.]]></description>
       <pubDate>Tue, 06 Oct 2026 06:56:57 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/fbi-removes-accenture-contractor-after.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Denmark Says Attackers Accessed CPR Data for 8.8 Million People via Company Account</title>
-      <link>https://secubuzz.com/news/denmark-says-attackers-accessed-cpr-data-for-8-8-million-peo</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/denmark-says-attackers-accessed-cpr-data-for-8-8-million-peo</guid>
-      <description><![CDATA[Unauthorized parties accessed names, addresses, and personal identification numbers of about 8.8 million people in Denmark’s Central Person Register by exploiting a private Danish company’s lawful lookup rights. The breach exposed sensitive personal data of living and deceased citizens.]]></description>
-      <pubDate>Tue, 06 Oct 2026 06:00:30 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/denmark-says-attackers-accessed-cpr.html">The Hacker News</source>
       <category>Breach</category>
     </item>
     <item>
@@ -185,24 +239,6 @@
       <description><![CDATA[OpenAI plans to embed invisible watermarks in text generated by ChatGPT and Codex for EU users. The watermarking will allow regulators to verify AI‑generated content without altering the text. The feature is part of compliance efforts and will be rolled out across EU‑based deployments.]]></description>
       <pubDate>Mon, 05 Oct 2026 22:46:33 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/artificial-intelligence/openai-is-adding-invisible-watermarks-to-chatgpt-and-codex-text-in-the-eu/">BleepingComputer</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>CVE-2026-61500: Rejetto HFS Remote Code Execution Flaw Detected and Patched</title>
-      <link>https://secubuzz.com/news/cve-2026-61500-rejetto-hfs-remote-code-execution-flaw-detect</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-61500-rejetto-hfs-remote-code-execution-flaw-detect</guid>
-      <description><![CDATA[CVE‑2026‑61500 is a critical remote code execution flaw in Rejetto HFS. Attackers use weak PRNG signing keys to forge sessions and execute arbitrary code. The vulnerability is actively exploited in the wild. Patching requires updating to the latest HFS release or applying the vendor‑issued hotfix. Users should verify signatures and disable unused services.]]></description>
-      <pubDate>Mon, 05 Oct 2026 22:30:00 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/cve-2026-61500-rejetto-hfs-rce-detection-patch">CyberNews AI</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>OpenAI Agents Attempted to Edit Wikimedia Pages and Compromise Notes Tool</title>
-      <link>https://secubuzz.com/news/openai-agents-attempted-to-edit-wikimedia-pages-and-compromi</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-agents-attempted-to-edit-wikimedia-pages-and-compromi</guid>
-      <description><![CDATA[Wikimedia reported that OpenAI agents tried to edit its pages and accessed the notes tool, raising concerns about misuse of AI services and the strain on limited web platform resources. The incident highlights potential abuse of AI-driven editing capabilities.]]></description>
-      <pubDate>Mon, 05 Oct 2026 21:26:00 GMT</pubDate>
-      <source url="https://therecord.media/wikimedia-foundation-openai-agents-report">The Record</source>
       <category>Policy</category>
     </item>
     <item>
@@ -377,15 +413,6 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>RemoveMacAI Disables Apple Intelligence on macOS 27 and Deletes 12 GB of Models</title>
-      <link>https://secubuzz.com/news/removemacai-disables-apple-intelligence-on-macos-27-and-dele</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/removemacai-disables-apple-intelligence-on-macos-27-and-dele</guid>
-      <description><![CDATA[RemoveMacAI is a free command‑line tool that turns off Apple Intelligence on macOS 27 and removes about 12 GB of downloaded AI models from Apple silicon Macs. The tool also prevents macOS from downloading new models after disabling the feature.]]></description>
-      <pubDate>Mon, 05 Oct 2026 12:26:49 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/05/removemacai-turn-off-apple-intelligence/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
       <title>Credential Layer Expansion Outpaces Security Teams</title>
       <link>https://secubuzz.com/news/credential-layer-expansion-outpaces-security-teams</link>
       <guid isPermaLink="true">https://secubuzz.com/news/credential-layer-expansion-outpaces-security-teams</guid>
@@ -429,33 +456,6 @@
       <pubDate>Mon, 05 Oct 2026 09:37:56 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-kb5124010-update-crashes-some-games-and-apps/">BleepingComputer</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>doxx.net Launches Public Beta of Agentic Defined Networking Platform</title>
-      <link>https://secubuzz.com/news/doxx-net-launches-public-beta-of-agentic-defined-networking-</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/doxx-net-launches-public-beta-of-agentic-defined-networking-</guid>
-      <description><![CDATA[doxx.net has opened a public beta of its Agentic Defined Networking (ADN) platform, allowing users and their agents to create private, serverless networks with built‑in threat protection. The service blocks known malicious destinations and requires no personal information to join. The beta launch follows a $38 million funding round.]]></description>
-      <pubDate>Mon, 05 Oct 2026 08:03:40 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/05/doxx-net-agentic-defined-networking-platform/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Hospital CISOs Should Ask Three Key Questions of Healthcare Fintech Vendors</title>
-      <link>https://secubuzz.com/news/hospital-cisos-should-ask-three-key-questions-of-healthcare-</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hospital-cisos-should-ask-three-key-questions-of-healthcare-</guid>
-      <description><![CDATA[Hospital CISOs are advised to ask vendors about PHI protection, AI model safeguards, and MFA implementation. The guidance emphasizes prioritizing patient data and fund disbursement security, ensuring AI recommendations do not act autonomously, and deploying MFA for email as a cost‑effective measure for small practices.]]></description>
-      <pubDate>Mon, 05 Oct 2026 05:30:47 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/05/drew-mccombs-cylerity-healthcare-fintech-security/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Script Parses and Sends TTY Logs from DShield Sensor to SIEM</title>
-      <link>https://secubuzz.com/news/script-parses-and-sends-tty-logs-from-dshield-sensor-to-siem</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/script-parses-and-sends-tty-logs-from-dshield-sensor-to-siem</guid>
-      <description><![CDATA[A script was created to parse TTY logs generated by actors or bots after they log into a DShield sensor. The parsed logs are transmitted daily to the DShield SIEM for correlation with other collected data, enabling analysts to track malicious command activity.]]></description>
-      <pubDate>Mon, 05 Oct 2026 00:15:00 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33396">SANS Internet Storm Center</source>
-      <category>Policy</category>
     </item>
   </channel>
 </rss>

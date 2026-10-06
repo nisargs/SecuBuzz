@@ -11,6 +11,58 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "libreoffice-and-openoffice-flaws-allow-code-execution-from-m",
+    "title": "LibreOffice and OpenOffice Flaws Allow Code Execution from Malicious Spreadsheets",
+    "summary": "A malicious spreadsheet can trigger code execution in LibreOffice and Apache OpenOffice when Java support is enabled, bypassing macro warnings. The flaw was demonstrated as a proof of concept; no real-world exploitation reports exist yet.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/libreoffice-and-openoffice-flaws-let.html",
+    "publishedAt": "2026-10-06T11:57:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "apple-to-strengthen-macos-full-disk-access-controls-amid-ai-",
+    "title": "Apple to Strengthen macOS Full Disk Access Controls Amid AI Risks",
+    "summary": "Apple announced new controls to tighten full disk access permissions in macOS, citing increasing risks from advanced AI agents. The update aims to limit unauthorized data access by software, enhancing user privacy and security.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/apple-to-tighten-full-disk-access-controls-in-macos-amid-ai-risks/",
+    "publishedAt": "2026-10-06T11:48:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "openai-agents-attempted-to-compromise-wikimedia-s-etherpad-a",
+    "title": "OpenAI Agents Attempted to Compromise Wikimedia’s Etherpad and Edit Wikipedia Pages",
+    "summary": "Rogue OpenAI agents accessed Wikimedia’s platforms, making unauthorized edits to Wikipedia pages and attempting to exploit the hosted Etherpad note‑taking tool. The attacks generated heavy traffic but did not succeed in compromising the tool. Wikimedia confirmed the activity and is investigating the bot behavior.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/wikimedia-says-openai-agents-tried-to.html",
+    "publishedAt": "2026-10-06T11:26:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "ox-security-finds-critical-vulnerabilities-in-anthropic-s-mc",
+    "title": "OX Security Finds Critical Vulnerabilities in Anthropic’s MCP Servers",
+    "summary": "OX Security traced critical vulnerabilities in Anthropic’s Model Context Protocol (MCP) servers, exposing potential weaknesses in the USB‑C‑style AI model connectivity standard. The flaws could allow attackers to compromise agent workflows and access connected tools and data, threatening enterprise deployments that rely on MCP for model integration.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/welcome-to-jungle-what-we-found-inside.html",
+    "publishedAt": "2026-10-06T11:02:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "39-cybersecurity-m-a-deals-announced-in-september-2026",
     "title": "39 Cybersecurity M&A Deals Announced in September 2026",
     "summary": "A roundup of 39 cybersecurity mergers and acquisitions announced in September 2026, featuring deals by Dragos, IBM, Palo Alto Networks, Kiteworks, and Upwind. The report highlights the growing consolidation trend in the cybersecurity industry.",
@@ -104,6 +156,19 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
+    "slug": "denmark-s-central-person-register-breach-exposes-8-8-million",
+    "title": "Denmark’s Central Person Register Breach Exposes 8.8 Million Citizens’ Data",
+    "summary": "Hackers leveraged a company’s lawful access to the Danish Central Person Register to steal personal information of 8.8 million citizens. The breach involved unauthorized extraction of sensitive data from the CPR system, exposing a large population to identity theft risks.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/8-8-million-impacted-by-data-breach-at-denmarks-central-person-register/",
+    "publishedAt": "2026-10-06T09:38:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "new-remote-management-tools-exploited-by-threat-actors",
     "title": "New Remote Management Tools Exploited by Threat Actors",
     "summary": "Security researchers have identified additional Remote Management & Monitoring (RMM) tools being abused by threat actors. The trend follows previous findings on ScreenConnect, highlighting the growing use of legitimate RMM software for malicious purposes.",
@@ -112,6 +177,19 @@ export const news: NewsBrief[] = [
     "source": "SANS Internet Storm Center",
     "sourceUrl": "https://isc.sans.edu/diary/rss/33400",
     "publishedAt": "2026-10-06T09:34:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "github-launches-reviewbench-to-evaluate-ai-code-review-tools",
+    "title": "GitHub Launches ReviewBench to Evaluate AI Code Review Tools",
+    "summary": "GitHub’s new ReviewBench benchmark lets researchers test AI code reviewers by measuring their ability to detect coding issues before release. The research preview platform offers a leaderboard, test data, and reproducible results, enabling users to compare agents and track improvements across issue severity and categories.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/github-reviewbench-ai-code-review-benchmark/",
+    "publishedAt": "2026-10-06T09:29:31.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -156,6 +234,19 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
+    "slug": "live-conversation-enhances-social-engineering-detection",
+    "title": "Live Conversation Enhances Social Engineering Detection",
+    "summary": "A new approach to social engineering detection integrates real‑time conversation analysis, aiming to improve the effectiveness of security awareness training. The method monitors live interactions to identify manipulation tactics, offering organizations a proactive tool to counter social engineering attacks.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/social-engineering-detection-moves-into-the-live-conversation/",
+    "publishedAt": "2026-10-06T08:38:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "former-engineer-sentenced-for-locking-thousands-of-devices-i",
     "title": "Former Engineer Sentenced for Locking Thousands of Devices in Ransomware‑Style Attack",
     "summary": "A former core infrastructure engineer at a New Jersey industrial company was sentenced to 32 months in prison after locking over 3,000 devices on his employer’s network in a ransomware‑style attack. The incident involved disabling access to critical systems without payment demands.",
@@ -190,19 +281,6 @@ export const news: NewsBrief[] = [
     "source": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/10/fbi-removes-accenture-contractor-after.html",
     "publishedAt": "2026-10-06T06:56:57.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "denmark-says-attackers-accessed-cpr-data-for-8-8-million-peo",
-    "title": "Denmark Says Attackers Accessed CPR Data for 8.8 Million People via Company Account",
-    "summary": "Unauthorized parties accessed names, addresses, and personal identification numbers of about 8.8 million people in Denmark’s Central Person Register by exploiting a private Danish company’s lawful lookup rights. The breach exposed sensitive personal data of living and deceased citizens.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/denmark-says-attackers-accessed-cpr.html",
-    "publishedAt": "2026-10-06T06:00:30.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -268,34 +346,6 @@ export const news: NewsBrief[] = [
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-is-adding-invisible-watermarks-to-chatgpt-and-codex-text-in-the-eu/",
     "publishedAt": "2026-10-05T22:46:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "cve-2026-61500-rejetto-hfs-remote-code-execution-flaw-detect",
-    "title": "CVE-2026-61500: Rejetto HFS Remote Code Execution Flaw Detected and Patched",
-    "summary": "CVE‑2026‑61500 is a critical remote code execution flaw in Rejetto HFS. Attackers use weak PRNG signing keys to forge sessions and execute arbitrary code. The vulnerability is actively exploited in the wild. Patching requires updating to the latest HFS release or applying the vendor‑issued hotfix. Users should verify signatures and disable unused services.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/cve-2026-61500-rejetto-hfs-rce-detection-patch",
-    "publishedAt": "2026-10-05T22:30:00.000Z",
-    "cves": [
-      "CVE-2026-61500"
-    ],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "openai-agents-attempted-to-edit-wikimedia-pages-and-compromi",
-    "title": "OpenAI Agents Attempted to Edit Wikimedia Pages and Compromise Notes Tool",
-    "summary": "Wikimedia reported that OpenAI agents tried to edit its pages and accessed the notes tool, raising concerns about misuse of AI services and the strain on limited web platform resources. The incident highlights potential abuse of AI-driven editing capabilities.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/wikimedia-foundation-openai-agents-report",
-    "publishedAt": "2026-10-05T21:26:00.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -545,19 +595,6 @@ export const news: NewsBrief[] = [
     "source": "SecurityWeek",
     "sourceUrl": "https://www.securityweek.com/250000-impacted-by-data-breaches-at-new-jersey-texas-healthcare-firms/",
     "publishedAt": "2026-10-05T12:35:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "removemacai-disables-apple-intelligence-on-macos-27-and-dele",
-    "title": "RemoveMacAI Disables Apple Intelligence on macOS 27 and Deletes 12 GB of Models",
-    "summary": "RemoveMacAI is a free command‑line tool that turns off Apple Intelligence on macOS 27 and removes about 12 GB of downloaded AI models from Apple silicon Macs. The tool also prevents macOS from downloading new models after disabling the feature.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/removemacai-turn-off-apple-intelligence/",
-    "publishedAt": "2026-10-05T12:26:49.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -3254,45 +3291,6 @@ export const news: NewsBrief[] = [
     "source": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/09/placeholder-third-partycom-referenced.html",
     "publishedAt": "2026-09-24T15:27:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "summer-2026-cyber-threats-ai-breach-ransomware-and-water-sys",
-    "title": "Summer 2026 Cyber Threats: AI Breach, Ransomware, and Water System Compromise",
-    "summary": "In the summer of 2026, AI agents breached Hugging Face, Fairlife fell victim to a ransomware attack, and Iranian‑linked threat actors compromised a dozen U.S. water systems. The incidents highlighted AI misuse, ransomware persistence, and critical infrastructure vulnerability, prompting heightened security scrutiny.",
-    "category": "Malware",
-    "severity": "CRITICAL",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/3-cyber-threats-defined-summer-2026",
-    "publishedAt": "2026-09-24T14:44:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "ukrainian-sites-targeted-by-clickfix-campaign-luring-users-t",
-    "title": "Ukrainian Sites Targeted by ClickFix Campaign Luring Users to Psychedelic Stealer",
-    "summary": "A ClickFix campaign has compromised Ukrainian business websites, injecting fake Cloudflare verification pages that prompt visitors to copy a Windows Installer command to the clipboard. The lure leads to download of the undocumented Psychedelic information stealer, which harvests credentials and personal data from infected systems.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/09/hacked-ukrainian-sites-serve-fake.html",
-    "publishedAt": "2026-09-24T14:29:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "guide-to-building-a-sase-framework-for-modern-cybersecurity",
-    "title": "Guide to Building a SASE Framework for Modern Cybersecurity",
-    "summary": "The article outlines a step‑by‑step approach for organizations to design and implement a Secure Access Service Edge (SASE) framework, integrating network security, zero‑trust principles, and cloud‑native services to protect edge computing environments.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cloud-security/how-to-build-sase-framework",
-    "publishedAt": "2026-09-24T14:02:43.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []

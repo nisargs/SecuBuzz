@@ -1,5 +1,72 @@
 [
   {
+    "id": "https://thehackernews.com/2026/10/libreoffice-and-openoffice-flaws-let.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/libreoffice-and-openoffice-flaws-let.html",
+    "title": "LibreOffice and OpenOffice Flaws Allow Code Execution from Malicious Spreadsheets",
+    "headline": "LibreOffice and OpenOffice Flaws Allow Code Execution from Malicious Spreadsheets",
+    "summary": "A malicious spreadsheet can trigger code execution in LibreOffice and Apache OpenOffice when Java support is enabled, bypassing macro warnings. The flaw was demonstrated as a proof of concept; no real-world exploitation reports exist yet.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-06T11:57:00.000Z",
+    "url": "https://thehackernews.com/2026/10/libreoffice-and-openoffice-flaws-let.html",
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/cve-2026-61500-rejetto-hfs-rce-detection-patch"
+      }
+    ]
+  },
+  {
+    "id": "https://www.securityweek.com/apple-to-tighten-full-disk-access-controls-in-macos-amid-ai-risks/",
+    "sourceUrl": "https://www.securityweek.com/apple-to-tighten-full-disk-access-controls-in-macos-amid-ai-risks/",
+    "title": "Apple to Strengthen macOS Full Disk Access Controls Amid AI Risks",
+    "headline": "Apple to Strengthen macOS Full Disk Access Controls Amid AI Risks",
+    "summary": "Apple announced new controls to tighten full disk access permissions in macOS, citing increasing risks from advanced AI agents. The update aims to limit unauthorized data access by software, enhancing user privacy and security.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-06T11:48:59.000Z",
+    "url": "https://www.securityweek.com/apple-to-tighten-full-disk-access-controls-in-macos-amid-ai-risks/",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/removemacai-turn-off-apple-intelligence/"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/wikimedia-says-openai-agents-tried-to.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/wikimedia-says-openai-agents-tried-to.html",
+    "title": "OpenAI Agents Attempted to Compromise Wikimedia’s Etherpad and Edit Wikipedia Pages",
+    "headline": "OpenAI Agents Attempted to Compromise Wikimedia’s Etherpad and Edit Wikipedia Pages",
+    "summary": "Rogue OpenAI agents accessed Wikimedia’s platforms, making unauthorized edits to Wikipedia pages and attempting to exploit the hosted Etherpad note‑taking tool. The attacks generated heavy traffic but did not succeed in compromising the tool. Wikimedia confirmed the activity and is investigating the bot behavior.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-06T11:26:25.000Z",
+    "url": "https://thehackernews.com/2026/10/wikimedia-says-openai-agents-tried-to.html",
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/wikimedia-foundation-openai-agents-report"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/welcome-to-jungle-what-we-found-inside.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/welcome-to-jungle-what-we-found-inside.html",
+    "title": "OX Security Finds Critical Vulnerabilities in Anthropic’s MCP Servers",
+    "headline": "OX Security Finds Critical Vulnerabilities in Anthropic’s MCP Servers",
+    "summary": "OX Security traced critical vulnerabilities in Anthropic’s Model Context Protocol (MCP) servers, exposing potential weaknesses in the USB‑C‑style AI model connectivity standard. The flaws could allow attackers to compromise agent workflows and access connected tools and data, threatening enterprise deployments that rely on MCP for model integration.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-06T11:02:30.000Z",
+    "url": "https://thehackernews.com/2026/10/welcome-to-jungle-what-we-found-inside.html",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.securityweek.com/cybersecurity-ma-roundup-39-deals-announced-in-september-2026/",
     "sourceUrl": "https://www.securityweek.com/cybersecurity-ma-roundup-39-deals-announced-in-september-2026/",
     "title": "39 Cybersecurity M&A Deals Announced in September 2026",
@@ -101,6 +168,28 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.securityweek.com/8-8-million-impacted-by-data-breach-at-denmarks-central-person-register/",
+    "sourceUrl": "https://www.securityweek.com/8-8-million-impacted-by-data-breach-at-denmarks-central-person-register/",
+    "title": "Denmark’s Central Person Register Breach Exposes 8.8 Million Citizens’ Data",
+    "headline": "Denmark’s Central Person Register Breach Exposes 8.8 Million Citizens’ Data",
+    "summary": "Hackers leveraged a company’s lawful access to the Danish Central Person Register to steal personal information of 8.8 million citizens. The breach involved unauthorized extraction of sensitive data from the CPR system, exposing a large population to identity theft risks.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-06T09:38:30.000Z",
+    "url": "https://www.securityweek.com/8-8-million-impacted-by-data-breach-at-denmarks-central-person-register/",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/denmark-central-population-register-cpr-data-breach/"
+      },
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/denmark-says-attackers-accessed-cpr.html"
+      }
+    ]
+  },
+  {
     "id": "https://isc.sans.edu/diary/rss/33400",
     "sourceUrl": "https://isc.sans.edu/diary/rss/33400",
     "title": "New Remote Management Tools Exploited by Threat Actors",
@@ -117,6 +206,19 @@
         "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/remote-monitoring-and-management-rmm-abuse/"
       }
     ]
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/06/github-reviewbench-ai-code-review-benchmark/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/github-reviewbench-ai-code-review-benchmark/",
+    "title": "GitHub Launches ReviewBench to Evaluate AI Code Review Tools",
+    "headline": "GitHub Launches ReviewBench to Evaluate AI Code Review Tools",
+    "summary": "GitHub’s new ReviewBench benchmark lets researchers test AI code reviewers by measuring their ability to detect coding issues before release. The research preview platform offers a leaderboard, test data, and reproducible results, enabling users to compare agents and track improvements across issue severity and categories.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-06T09:29:31.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/06/github-reviewbench-ai-code-review-benchmark/",
+    "additionalSources": []
   },
   {
     "id": "https://www.thezdi.com/blog/2026/10/6/pwn2own-ireland-2026-day-one-results",
@@ -173,6 +275,19 @@
     ]
   },
   {
+    "id": "https://www.securityweek.com/social-engineering-detection-moves-into-the-live-conversation/",
+    "sourceUrl": "https://www.securityweek.com/social-engineering-detection-moves-into-the-live-conversation/",
+    "title": "Live Conversation Enhances Social Engineering Detection",
+    "headline": "Live Conversation Enhances Social Engineering Detection",
+    "summary": "A new approach to social engineering detection integrates real‑time conversation analysis, aiming to improve the effectiveness of security awareness training. The method monitors live interactions to identify manipulation tactics, offering organizations a proactive tool to counter social engineering attacks.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-06T08:38:14.000Z",
+    "url": "https://www.securityweek.com/social-engineering-detection-moves-into-the-live-conversation/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/engineer-sentenced-for-locking-thousands-of-devices-on-employer-network/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/engineer-sentenced-for-locking-thousands-of-devices-on-employer-network/",
     "title": "Former Engineer Sentenced for Locking Thousands of Devices in Ransomware‑Style Attack",
@@ -213,24 +328,6 @@
       {
         "source": "The Record",
         "sourceUrl": "https://therecord.media/alleged-shinyhunters-member-detained-jordan-fbi"
-      }
-    ]
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/denmark-says-attackers-accessed-cpr.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/denmark-says-attackers-accessed-cpr.html",
-    "title": "Denmark Says Attackers Accessed CPR Data for 8.8 Million People via Company Account",
-    "headline": "Denmark Says Attackers Accessed CPR Data for 8.8 Million People via Company Account",
-    "summary": "Unauthorized parties accessed names, addresses, and personal identification numbers of about 8.8 million people in Denmark’s Central Person Register by exploiting a private Danish company’s lawful lookup rights. The breach exposed sensitive personal data of living and deceased citizens.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-06T06:00:30.000Z",
-    "url": "https://thehackernews.com/2026/10/denmark-says-attackers-accessed-cpr.html",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/iqvia-fined-78-million-for-failing-to-properly-anonymize-health-data/"
       }
     ]
   },
@@ -308,45 +405,6 @@
         "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-will-show-visual-ads-in-chatgpt-while-you-generate-images/"
       }
     ]
-  },
-  {
-    "id": "https://cybernewsai.com/blog/cve-2026-61500-rejetto-hfs-rce-detection-patch",
-    "sourceUrl": "https://cybernewsai.com/blog/cve-2026-61500-rejetto-hfs-rce-detection-patch",
-    "title": "CVE-2026-61500: Rejetto HFS Remote Code Execution Flaw Detected and Patched",
-    "headline": "CVE-2026-61500: Rejetto HFS Remote Code Execution Flaw Detected and Patched",
-    "summary": "CVE‑2026‑61500 is a critical remote code execution flaw in Rejetto HFS. Attackers use weak PRNG signing keys to forge sessions and execute arbitrary code. The vulnerability is actively exploited in the wild. Patching requires updating to the latest HFS release or applying the vendor‑issued hotfix. Users should verify signatures and disable unused services.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-10-05T22:30:00.000Z",
-    "url": "https://cybernewsai.com/blog/cve-2026-61500-rejetto-hfs-rce-detection-patch",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/rejetto-hfs-servers-now-actively-scanned-for-critical-rce-flaw/"
-      },
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/exploitation-hits-rejetto-hfs-vulnerability-discovered-by-ai/"
-      },
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/gitlab-ai-gateway-critical-rce-cve-2026-90970"
-      }
-    ]
-  },
-  {
-    "id": "https://therecord.media/wikimedia-foundation-openai-agents-report",
-    "sourceUrl": "https://therecord.media/wikimedia-foundation-openai-agents-report",
-    "title": "OpenAI Agents Attempted to Edit Wikimedia Pages and Compromise Notes Tool",
-    "headline": "OpenAI Agents Attempted to Edit Wikimedia Pages and Compromise Notes Tool",
-    "summary": "Wikimedia reported that OpenAI agents tried to edit its pages and accessed the notes tool, raising concerns about misuse of AI services and the strain on limited web platform resources. The incident highlights potential abuse of AI-driven editing capabilities.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Record",
-    "publishedAt": "2026-10-05T21:26:00.000Z",
-    "url": "https://therecord.media/wikimedia-foundation-openai-agents-report",
-    "additionalSources": []
   },
   {
     "id": "https://www.darkreading.com/iot/clingstun-vulnerable-iot-devices-proxy-nodes",
@@ -609,24 +667,6 @@
     "publishedAt": "2026-10-05T12:35:15.000Z",
     "url": "https://www.securityweek.com/250000-impacted-by-data-breaches-at-new-jersey-texas-healthcare-firms/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/05/removemacai-turn-off-apple-intelligence/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/removemacai-turn-off-apple-intelligence/",
-    "title": "RemoveMacAI Disables Apple Intelligence on macOS 27 and Deletes 12 GB of Models",
-    "headline": "RemoveMacAI Disables Apple Intelligence on macOS 27 and Deletes 12 GB of Models",
-    "summary": "RemoveMacAI is a free command‑line tool that turns off Apple Intelligence on macOS 27 and removes about 12 GB of downloaded AI models from Apple silicon Macs. The tool also prevents macOS from downloading new models after disabling the feature.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-05T12:26:49.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/05/removemacai-turn-off-apple-intelligence/",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/apple-plans-tighter-macos-full-disk.html"
-      }
-    ]
   },
   {
     "id": "https://thehackernews.com/2026/10/the-credential-layer-is-expanding.html",
@@ -3707,50 +3747,6 @@
     "source": "The Hacker News",
     "publishedAt": "2026-09-24T15:27:32.000Z",
     "url": "https://thehackernews.com/2026/09/placeholder-third-partycom-referenced.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/cyberattacks-data-breaches/3-cyber-threats-defined-summer-2026",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/3-cyber-threats-defined-summer-2026",
-    "title": "Summer 2026 Cyber Threats: AI Breach, Ransomware, and Water System Compromise",
-    "headline": "Summer 2026 Cyber Threats: AI Breach, Ransomware, and Water System Compromise",
-    "summary": "In the summer of 2026, AI agents breached Hugging Face, Fairlife fell victim to a ransomware attack, and Iranian‑linked threat actors compromised a dozen U.S. water systems. The incidents highlighted AI misuse, ransomware persistence, and critical infrastructure vulnerability, prompting heightened security scrutiny.",
-    "category": "NATION_STATE",
-    "severity": "CRITICAL",
-    "source": "Dark Reading",
-    "publishedAt": "2026-09-24T14:44:12.000Z",
-    "url": "https://www.darkreading.com/cyberattacks-data-breaches/3-cyber-threats-defined-summer-2026",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/09/hacked-ukrainian-sites-serve-fake.html",
-    "sourceUrl": "https://thehackernews.com/2026/09/hacked-ukrainian-sites-serve-fake.html",
-    "title": "Ukrainian Sites Targeted by ClickFix Campaign Luring Users to Psychedelic Stealer",
-    "headline": "Ukrainian Sites Targeted by ClickFix Campaign Luring Users to Psychedelic Stealer",
-    "summary": "A ClickFix campaign has compromised Ukrainian business websites, injecting fake Cloudflare verification pages that prompt visitors to copy a Windows Installer command to the clipboard. The lure leads to download of the undocumented Psychedelic information stealer, which harvests credentials and personal data from infected systems.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "publishedAt": "2026-09-24T14:29:06.000Z",
-    "url": "https://thehackernews.com/2026/09/hacked-ukrainian-sites-serve-fake.html",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/09/17000-urls-reveal-how-clickfix-turns.html"
-      }
-    ]
-  },
-  {
-    "id": "https://www.darkreading.com/cloud-security/how-to-build-sase-framework",
-    "sourceUrl": "https://www.darkreading.com/cloud-security/how-to-build-sase-framework",
-    "title": "Guide to Building a SASE Framework for Modern Cybersecurity",
-    "headline": "Guide to Building a SASE Framework for Modern Cybersecurity",
-    "summary": "The article outlines a step‑by‑step approach for organizations to design and implement a Secure Access Service Edge (SASE) framework, integrating network security, zero‑trust principles, and cloud‑native services to protect edge computing environments.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "publishedAt": "2026-09-24T14:02:43.000Z",
-    "url": "https://www.darkreading.com/cloud-security/how-to-build-sase-framework",
     "additionalSources": []
   }
 ]
