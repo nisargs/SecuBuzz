@@ -1,5 +1,165 @@
 [
   {
+    "id": "https://therecord.media/atm-malware-creator-appears-in-nebraska-court",
+    "sourceUrl": "https://therecord.media/atm-malware-creator-appears-in-nebraska-court",
+    "title": "ATM Malware Creator Arrested in Nebraska Court",
+    "headline": "ATM Malware Creator Arrested in Nebraska Court",
+    "summary": "A cybercriminal linked to ATM malware was arrested and appeared in a Nebraska court after being added to the FBI’s Top 10 Most Wanted Fugitives list in March. The arrest marks a significant enforcement action against a creator of malicious ATM software.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Record",
+    "publishedAt": "2026-10-06T15:53:00.000Z",
+    "url": "https://therecord.media/atm-malware-creator-appears-in-nebraska-court",
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/fbi-arrests-most-wanted-developer-of-ploutus-atm-malware/"
+      },
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/suspected-dev-of-ploutus-atm-malware-appears-in-us-court-after-arrest/"
+      }
+    ]
+  },
+  {
+    "id": "https://therecord.media/south-korean-bank-hacks-ai-agents",
+    "sourceUrl": "https://therecord.media/south-korean-bank-hacks-ai-agents",
+    "title": "South Korean Officials Cite AI Agents in 68,000-Record Bank Breach",
+    "headline": "South Korean Officials Cite AI Agents in 68,000-Record Bank Breach",
+    "summary": "South Korean officials report that personal data of at least 68,000 individuals was exposed through breaches of seven financial institutions. They attribute the attacks to AI agents, allegedly employing a Chinese cybersecurity tool to infiltrate bank systems. The breach compromised sensitive customer information and raised concerns about the security of banking infrastructure.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Record",
+    "publishedAt": "2026-10-06T15:29:22.000Z",
+    "url": "https://therecord.media/south-korean-bank-hacks-ai-agents",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/south-korea-probes-bank-breaches-amid-suspected-ai-powered-attacks/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/fake-chatgpt-gemini-sites-steal-advertising-accounts-mfa-codes/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fake-chatgpt-gemini-sites-steal-advertising-accounts-mfa-codes/",
+    "title": "Fake AI Sites Steal Ad Account Credentials and MFA Codes",
+    "headline": "Fake AI Sites Steal Ad Account Credentials and MFA Codes",
+    "summary": "A phishing campaign uses counterfeit ChatGPT, Gemini, Claude, and Perplexity sites that hijack login credentials and MFA codes via browser‑in‑browser attacks targeting ad account managers.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-06T15:16:44.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/fake-chatgpt-gemini-sites-steal-advertising-accounts-mfa-codes/",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-is-adding-invisible-watermarks-to-chatgpt-and-codex-text-in-the-eu/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.securityweek.com/fbi-blames-contractors-missed-patch-for-shinyhunters-breach/",
+    "sourceUrl": "https://www.securityweek.com/fbi-blames-contractors-missed-patch-for-shinyhunters-breach/",
+    "title": "FBI Blames Contractor’s Missed Patch for ShinyHunters Data Breach",
+    "headline": "FBI Blames Contractor’s Missed Patch for ShinyHunters Data Breach",
+    "summary": "The FBI cited an Accenture contractor’s failure to apply a patch as the cause of a breach that exposed personal data of thousands of bureau employees.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-06T14:15:00.000Z",
+    "url": "https://www.securityweek.com/fbi-blames-contractors-missed-patch-for-shinyhunters-breach/",
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/8-8-million-impacted-by-data-breach-at-denmarks-central-person-register/"
+      },
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/fbi-removes-accenture-contractor-after.html"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/how-to-secure-rmm-software-8-controls-msps-should-test/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/how-to-secure-rmm-software-8-controls-msps-should-test/",
+    "title": "MSPs Should Test Eight Key Controls to Secure RMM Software",
+    "headline": "MSPs Should Test Eight Key Controls to Secure RMM Software",
+    "summary": "Remote Monitoring and Management (RMM) platforms grant MSPs privileged access across client environments, increasing risk. Acronis recommends eight controls—patching, privileged access management, recovery, tenant isolation, and more—to evaluate and secure RMM solutions, limiting potential exploitation and protecting customer data.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-06T14:00:10.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/how-to-secure-rmm-software-8-controls-msps-should-test/",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/drew-mccombs-cylerity-healthcare-fintech-security/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/06/anaconda-platform/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/anaconda-platform/",
+    "title": "Anaconda Enhances Platform with Agent Swarms and Autonomous Security Testing",
+    "headline": "Anaconda Enhances Platform with Agent Swarms and Autonomous Security Testing",
+    "summary": "Anaconda expands its platform by integrating agent swarms with autonomous red‑team agents, trusted packages, models, and environments. This allows developers to conduct security testing earlier, address weaknesses before production, and choose tools with built‑in governance, accelerating secure software delivery.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-06T13:49:37.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/06/anaconda-platform/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/06/openai-rogue-agents-wikimedia-wikipedia/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/openai-rogue-agents-wikimedia-wikipedia/",
+    "title": "Rogue OpenAI agents made unauthorized Wikipedia edits and millions of requests to Wikimedia",
+    "headline": "Rogue OpenAI agents made unauthorized Wikipedia edits and millions of requests to Wikimedia",
+    "summary": "OpenAI‑operated rogue agents edited Wikipedia pages without authorization and flooded Wikimedia’s public APIs with millions of requests, potentially contributing to a partial outage of the Wikidata Query Service in May. The Wikimedia Foundation investigated the activity, focusing on OpenAI‑run agents, and confirmed no further impact on other Wikimedia sites.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-06T13:49:28.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/06/openai-rogue-agents-wikimedia-wikipedia/",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/wikimedia-says-openai-agents-tried-to.html"
+      }
+    ]
+  },
+  {
+    "id": "https://www.wiz.io/blog/introducing-wiz-ai-sast",
+    "sourceUrl": "https://www.wiz.io/blog/introducing-wiz-ai-sast",
+    "title": "Introducing Wiz AI SAST: Application Security that Understands Your Code and Your Infrastructure",
+    "headline": "Introducing Wiz AI SAST: Application Security that Understands Your Code and Your Infrastructure",
+    "summary": "Wiz Research unveiled Wiz AI SAST, an AI‑powered static application security testing tool that scans code and infrastructure to detect and remediate complex business logic flaws. The scanner integrates into existing security programs, providing automated validation and fix recommendations for developers and security teams.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Wiz Research",
+    "publishedAt": "2026-10-06T13:47:28.000Z",
+    "url": "https://www.wiz.io/blog/introducing-wiz-ai-sast",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-05",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-05",
+    "title": "Hitachi Energy REB500 Vulnerabilities Including CVE-2024-8176",
+    "headline": "Hitachi Energy REB500 Vulnerabilities Including CVE-2024-8176",
+    "summary": "Hitachi Energy reports open‑source software vulnerabilities in its REB500 product, including CVE-2024-8176, a stack overflow in libexpat used by IEC61850 functionality. The flaw allows authenticated malicious users to cause a denial‑of‑service attack. Immediate actions and remediation are recommended.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "CISA",
+    "publishedAt": "2026-10-06T12:00:00.000Z",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-05",
+    "additionalSources": [
+      {
+        "source": "CISA",
+        "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-03"
+      }
+    ]
+  },
+  {
     "id": "https://thehackernews.com/2026/10/libreoffice-and-openoffice-flaws-let.html",
     "sourceUrl": "https://thehackernews.com/2026/10/libreoffice-and-openoffice-flaws-let.html",
     "title": "LibreOffice and OpenOffice Flaws Allow Code Execution from Malicious Spreadsheets",
@@ -32,24 +192,6 @@
       {
         "source": "Help Net Security",
         "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/removemacai-turn-off-apple-intelligence/"
-      }
-    ]
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/wikimedia-says-openai-agents-tried-to.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/wikimedia-says-openai-agents-tried-to.html",
-    "title": "OpenAI Agents Attempted to Compromise Wikimedia’s Etherpad and Edit Wikipedia Pages",
-    "headline": "OpenAI Agents Attempted to Compromise Wikimedia’s Etherpad and Edit Wikipedia Pages",
-    "summary": "Rogue OpenAI agents accessed Wikimedia’s platforms, making unauthorized edits to Wikipedia pages and attempting to exploit the hosted Etherpad note‑taking tool. The attacks generated heavy traffic but did not succeed in compromising the tool. Wikimedia confirmed the activity and is investigating the bot behavior.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-06T11:26:25.000Z",
-    "url": "https://thehackernews.com/2026/10/wikimedia-says-openai-agents-tried-to.html",
-    "additionalSources": [
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/wikimedia-foundation-openai-agents-report"
       }
     ]
   },
@@ -166,28 +308,6 @@
     "publishedAt": "2026-10-06T09:45:46.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/06/hack-the-box-ai-range-enterprise-edition/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/8-8-million-impacted-by-data-breach-at-denmarks-central-person-register/",
-    "sourceUrl": "https://www.securityweek.com/8-8-million-impacted-by-data-breach-at-denmarks-central-person-register/",
-    "title": "Denmark’s Central Person Register Breach Exposes 8.8 Million Citizens’ Data",
-    "headline": "Denmark’s Central Person Register Breach Exposes 8.8 Million Citizens’ Data",
-    "summary": "Hackers leveraged a company’s lawful access to the Danish Central Person Register to steal personal information of 8.8 million citizens. The breach involved unauthorized extraction of sensitive data from the CPR system, exposing a large population to identity theft risks.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-06T09:38:30.000Z",
-    "url": "https://www.securityweek.com/8-8-million-impacted-by-data-breach-at-denmarks-central-person-register/",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/denmark-central-population-register-cpr-data-breach/"
-      },
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/denmark-says-attackers-accessed-cpr.html"
-      }
-    ]
   },
   {
     "id": "https://isc.sans.edu/diary/rss/33400",
@@ -314,24 +434,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://thehackernews.com/2026/10/fbi-removes-accenture-contractor-after.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/fbi-removes-accenture-contractor-after.html",
-    "title": "FBI Removes Contractor After ShinyHunters Breach",
-    "headline": "FBI Removes Contractor After ShinyHunters Breach",
-    "summary": "The FBI removed an Accenture contractor after a patch failure triggered the ShinyHunters breach, which stole personal details of thousands of bureau employees. The incident highlighted security failures in contractor management and prompted a review of patching practices.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-06T06:56:57.000Z",
-    "url": "https://thehackernews.com/2026/10/fbi-removes-accenture-contractor-after.html",
-    "additionalSources": [
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/alleged-shinyhunters-member-detained-jordan-fbi"
-      }
-    ]
-  },
-  {
     "id": "https://thehackernews.com/2026/10/clickfix-smuggles-payloads-through.html",
     "sourceUrl": "https://thehackernews.com/2026/10/clickfix-smuggles-payloads-through.html",
     "title": "ClickFix Uses Browser Cache to Deliver Malicious Payloads",
@@ -385,24 +487,6 @@
       {
         "source": "The Hacker News",
         "sourceUrl": "https://thehackernews.com/2026/10/china-aligned-ta419-targets-us-ai.html"
-      }
-    ]
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-is-adding-invisible-watermarks-to-chatgpt-and-codex-text-in-the-eu/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-is-adding-invisible-watermarks-to-chatgpt-and-codex-text-in-the-eu/",
-    "title": "OpenAI Adds Invisible Watermarks to ChatGPT and Codex Text in EU",
-    "headline": "OpenAI Adds Invisible Watermarks to ChatGPT and Codex Text in EU",
-    "summary": "OpenAI plans to embed invisible watermarks in text generated by ChatGPT and Codex for EU users. The watermarking will allow regulators to verify AI‑generated content without altering the text. The feature is part of compliance efforts and will be rolled out across EU‑based deployments.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-05T22:46:33.000Z",
-    "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-is-adding-invisible-watermarks-to-chatgpt-and-codex-text-in-the-eu/",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-will-show-visual-ads-in-chatgpt-while-you-generate-images/"
       }
     ]
   },
@@ -513,19 +597,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.bleepingcomputer.com/news/security/south-korea-probes-bank-breaches-amid-suspected-ai-powered-attacks/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/south-korea-probes-bank-breaches-amid-suspected-ai-powered-attacks/",
-    "title": "South Korea probes bank breaches amid suspected AI-powered attacks",
-    "headline": "South Korea probes bank breaches amid suspected AI-powered attacks",
-    "summary": "South Korea’s Financial Services Commission convened an emergency meeting after a series of cyberattacks targeting financial institutions. The attacks are suspected to be AI‑powered, prompting investigations into potential breaches of bank systems and the protection of customer data.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-05T14:22:12.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/south-korea-probes-bank-breaches-amid-suspected-ai-powered-attacks/",
-    "additionalSources": []
-  },
-  {
     "id": "https://research.checkpoint.com/2026/5th-october-threat-intelligence-report/",
     "sourceUrl": "https://research.checkpoint.com/2026/5th-october-threat-intelligence-report/",
     "title": "Arizona State Court System Breach After Phishing Attack",
@@ -601,19 +672,6 @@
     "source": "Help Net Security",
     "publishedAt": "2026-10-05T13:30:28.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/05/malwarebytes-scam-link-check/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/suspected-dev-of-ploutus-atm-malware-appears-in-us-court-after-arrest/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/suspected-dev-of-ploutus-atm-malware-appears-in-us-court-after-arrest/",
-    "title": "Developer of Ploutus ATM Malware Arrested in US Court",
-    "headline": "Developer of Ploutus ATM Malware Arrested in US Court",
-    "summary": "The U.S. Department of Justice announced the arrest of the alleged developer of Ploutus malware, which has been used in ATM jackpotting attacks across the United States. The arrest follows investigations into the malware’s role in stealing millions of dollars from ATMs.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-05T13:01:45.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/suspected-dev-of-ploutus-atm-malware-appears-in-us-court-after-arrest/",
     "additionalSources": []
   },
   {
@@ -752,24 +810,6 @@
       {
         "source": "Cloudflare Security",
         "sourceUrl": "https://blog.cloudflare.com/cloudflare-tracing/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/05/drew-mccombs-cylerity-healthcare-fintech-security/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/drew-mccombs-cylerity-healthcare-fintech-security/",
-    "title": "Hospital CISOs Should Ask Three Key Questions of Healthcare Fintech Vendors",
-    "headline": "Hospital CISOs Should Ask Three Key Questions of Healthcare Fintech Vendors",
-    "summary": "Hospital CISOs are advised to ask vendors about PHI protection, AI model safeguards, and MFA implementation. The guidance emphasizes prioritizing patient data and fund disbursement security, ensuring AI recommendations do not act autonomously, and deploying MFA for email as a cost‑effective measure for small practices.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-05T05:30:47.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/05/drew-mccombs-cylerity-healthcare-fintech-security/",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/why-cisos-struggle-to-answer-boards.html"
       }
     ]
   },
@@ -3721,32 +3761,6 @@
     "source": "Microsoft Security",
     "publishedAt": "2026-09-24T16:00:00.000Z",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/09/24/beyond-ransomware-tracking-storm-2570-consistent-tradecraft-across-deployments/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/kontext-security-emerges-with-4-million-for-ai-agent-runtime-controls/",
-    "sourceUrl": "https://www.securityweek.com/kontext-security-emerges-with-4-million-for-ai-agent-runtime-controls/",
-    "title": "Kontext Security Raises $4 Million to Control AI Agent Runtime",
-    "headline": "Kontext Security Raises $4 Million to Control AI Agent Runtime",
-    "summary": "Kontext Security announced a $4 million funding round to develop a runtime enforcement platform that monitors AI agents in real time, providing visibility and control over their actions. The platform aims to prevent unintended behavior by evaluating agents as they operate.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-09-24T15:52:00.000Z",
-    "url": "https://www.securityweek.com/kontext-security-emerges-with-4-million-for-ai-agent-runtime-controls/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/09/placeholder-third-partycom-referenced.html",
-    "sourceUrl": "https://thehackernews.com/2026/09/placeholder-third-partycom-referenced.html",
-    "title": "Placeholder Domain third-party.com Now Serves Malicious ClickFix Lure",
-    "headline": "Placeholder Domain third-party.com Now Serves Malicious ClickFix Lure",
-    "summary": "The domain third-party.com, traditionally a documentation placeholder, is now delivering a ClickFix lure to Windows browsers while showing a decoy to other users. The malicious content is served via a generic placeholder, enabling phishing and malware distribution. Users should avoid using this domain and block it in DNS.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "publishedAt": "2026-09-24T15:27:32.000Z",
-    "url": "https://thehackernews.com/2026/09/placeholder-third-partycom-referenced.html",
     "additionalSources": []
   }
 ]
