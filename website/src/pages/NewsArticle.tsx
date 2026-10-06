@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { ArrowLeftIcon, ArrowUpRightIcon, CopyIcon, CheckIcon, Share2Icon } from 'lucide-react';
 import { useLiveNews } from '../data/useLiveNews';
@@ -23,8 +23,19 @@ export function NewsArticle() {
     if (!slug) return false;
     const target = slug.toLowerCase();
     const s = b.slug.toLowerCase();
-    return s === target || b.aliases?.some(a => a.toLowerCase() === target) || s.startsWith(target) || target.startsWith(s);
+    if (s === target) return true;
+    if (b.aliases?.some(a => a.toLowerCase() === target)) return true;
+    const base = b.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 50).replace(/^-+|-+$/g, '');
+    if (base && (target === base || target.startsWith(base) || base.startsWith(target))) return true;
+    return s.startsWith(target) || target.startsWith(s);
   });
+
+  // Keep browser address bar in sync with canonical slug if accessed via alias
+  useEffect(() => {
+    if (brief && slug && brief.slug.toLowerCase() !== slug.toLowerCase()) {
+      window.history.replaceState(null, '', `/news/${brief.slug}`);
+    }
+  }, [brief, slug]);
 
   if (!brief) {
     if (loading) {

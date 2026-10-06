@@ -5,12 +5,12 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Oct 2026 20:20:26 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 20:22:17 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Hackers Exploit 32 Zero-Days on Samsung Galaxy S26 at Pwn2Own Ireland</title>
-      <link>https://secubuzz.com/news/hackers-exploit-32-zero-days-on-samsung-galaxy-s26-at-pwn2ow</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-32-zero-days-on-samsung-galaxy-s26-at-pwn2ow</guid>
+      <link>https://secubuzz.com/news/hackers-exploit-32-zero-days-on-samsung-galaxy-s26-4470f0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-32-zero-days-on-samsung-galaxy-s26-4470f0</guid>
       <description><![CDATA[During the first day of Pwn2Own Ireland 2026, researchers compromised a Samsung Galaxy S26 twice by exploiting 32 zero-day vulnerabilities. The attacks demonstrated the device’s critical weaknesses, allowing full system compromise and data exfiltration, and earned participants $388,500 in prize money.]]></description>
       <pubDate>Tue, 06 Oct 2026 19:21:53 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/hackers-exploit-32-zero-days-on-first-day-of-pwn2own-ireland/">BleepingComputer</source>
@@ -18,8 +18,8 @@
     </item>
     <item>
       <title>Phishing Platform Mimics AI Chatbot Ads to Steal Credentials and MFA Codes</title>
-      <link>https://secubuzz.com/news/phishing-platform-mimics-ai-chatbot-ads-to-steal-credentials</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/phishing-platform-mimics-ai-chatbot-ads-to-steal-credentials</guid>
+      <link>https://secubuzz.com/news/phishing-platform-mimics-ai-chatbot-ads-to-steal-c-27387a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/phishing-platform-mimics-ai-chatbot-ads-to-steal-c-27387a</guid>
       <description><![CDATA[Cybersecurity researchers uncovered a human-operated phishing platform that impersonates advertising portals for AI chatbots such as ChatGPT, Gemini, and Claude. The fake portals lure users into providing credentials and MFA codes, enabling attackers to hijack business accounts and compromise sensitive data.]]></description>
       <pubDate>Tue, 06 Oct 2026 18:38:55 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/fake-chatgpt-gemini-and-claude-ad.html">The Hacker News</source>
@@ -27,8 +27,8 @@
     </item>
     <item>
       <title>Linux Backdoors Disguise Traffic as Email Services to Evade Detection in Korea and Taiwan</title>
-      <link>https://secubuzz.com/news/linux-backdoors-disguise-traffic-as-email-services-to-evade-</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/linux-backdoors-disguise-traffic-as-email-services-to-evade-</guid>
+      <link>https://secubuzz.com/news/linux-backdoors-disguise-traffic-as-email-services-2ac92c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/linux-backdoors-disguise-traffic-as-email-services-2ac92c</guid>
       <description><![CDATA[Linux backdoors targeting telecom and network appliances in South Korea and Taiwan disguise their traffic as email services and legitimate processes, using names of real binaries to blend in and avoid detection. The threat actors employ this defense‑evasion technique to maintain persistence on affected systems.]]></description>
       <pubDate>Tue, 06 Oct 2026 18:24:25 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/linux-backdoors-impersonate-email.html">The Hacker News</source>
@@ -36,8 +36,8 @@
     </item>
     <item>
       <title>Google AI Agent Identifies 500 Vulnerabilities in Web Applications</title>
-      <link>https://secubuzz.com/news/google-ai-agent-identifies-500-vulnerabilities-in-web-applic</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-ai-agent-identifies-500-vulnerabilities-in-web-applic</guid>
+      <link>https://secubuzz.com/news/google-ai-agent-identifies-500-vulnerabilities-in-6ecd5d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-ai-agent-identifies-500-vulnerabilities-in-6ecd5d</guid>
       <description><![CDATA[Google’s PageBreak AI agent scanned its own web applications and uncovered 500 distinct security flaws, ranging from input validation issues to potential exploitation paths. The automated analysis used AI and deterministic validation to assess risk levels, highlighting the growing trend of AI-driven vulnerability discovery and prioritization.]]></description>
       <pubDate>Tue, 06 Oct 2026 17:56:29 GMT</pubDate>
       <source url="https://www.darkreading.com/application-security/google-pagebreak-ai-agent-500-flaws-web-apps">Dark Reading</source>
@@ -45,8 +45,8 @@
     </item>
     <item>
       <title>DNS Root Key Rollover Scheduled for October 11, 2026</title>
-      <link>https://secubuzz.com/news/dns-root-key-rollover-scheduled-for-october-11-2026</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/dns-root-key-rollover-scheduled-for-october-11-2026</guid>
+      <link>https://secubuzz.com/news/dns-root-key-rollover-scheduled-for-october-11-202-31870e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/dns-root-key-rollover-scheduled-for-october-11-202-31870e</guid>
       <description><![CDATA[On October 11, 2026, the Internet’s DNS root will switch to a new key‑signing key, KSK‑2024. The change requires resolvers to update trust anchors and verify RFC 8509 trust‑anchor sentinels. Failure to adapt may disrupt name resolution, so operators should test readiness now.]]></description>
       <pubDate>Tue, 06 Oct 2026 17:50:11 GMT</pubDate>
       <source url="https://blog.cloudflare.com/root-ksk-2024-rollover/">Cloudflare Security</source>
@@ -54,8 +54,8 @@
     </item>
     <item>
       <title>Atlassian Warns of Critical File-Access Flaw in Jira, Confluence</title>
-      <link>https://secubuzz.com/news/atlassian-warns-of-critical-file-access-flaw-in-jira-conflue</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/atlassian-warns-of-critical-file-access-flaw-in-jira-conflue</guid>
+      <link>https://secubuzz.com/news/atlassian-warns-of-critical-file-access-flaw-in-ji-3b1b4f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/atlassian-warns-of-critical-file-access-flaw-in-ji-3b1b4f</guid>
       <description><![CDATA[Atlassian alerts customers to CVE-2026-21589, a critical vulnerability that permits arbitrary file access in self‑hosted Data Center products Confluence, Jira, and Bitbucket. Attackers can read any file on the host. Atlassian recommends applying the latest patch or disabling affected features.]]></description>
       <pubDate>Tue, 06 Oct 2026 17:34:59 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/atlassian-warns-of-critical-file-access-flaw-in-jira-confluence/">BleepingComputer</source>
@@ -63,8 +63,8 @@
     </item>
     <item>
       <title>‘BigDiskBuster’ Creates Silent Gap in Microsoft Defender Updates</title>
-      <link>https://secubuzz.com/news/bigdiskbuster-creates-silent-gap-in-microsoft-defender-updat</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/bigdiskbuster-creates-silent-gap-in-microsoft-defender-updat</guid>
+      <link>https://secubuzz.com/news/bigdiskbuster-creates-silent-gap-in-microsoft-def-2df3e9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/bigdiskbuster-creates-silent-gap-in-microsoft-def-2df3e9</guid>
       <description><![CDATA[A proof‑of‑concept technique named BigDiskBuster keeps Microsoft Defender running while blocking its update process, creating a silent detection gap. The method requires no exploit and does not compromise the service itself.]]></description>
       <pubDate>Tue, 06 Oct 2026 16:59:24 GMT</pubDate>
       <source url="https://www.darkreading.com/application-security/bigdiskbuster-microsoft-defender-running-blocking-updates">Dark Reading</source>
@@ -72,8 +72,8 @@
     </item>
     <item>
       <title>ASOS Data Breach Confirmed After Hacked Push Notifications</title>
-      <link>https://secubuzz.com/news/asos-data-breach-confirmed-after-hacked-push-notifications</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/asos-data-breach-confirmed-after-hacked-push-notifications</guid>
+      <link>https://secubuzz.com/news/asos-data-breach-confirmed-after-hacked-push-notif-4746eb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/asos-data-breach-confirmed-after-hacked-push-notif-4746eb</guid>
       <description><![CDATA[UK fashion retailer ASOS confirmed a data breach after hackers sent unauthorized push notifications via its mobile app, claiming to have stolen customer data from the company’s Snowflake environment. The breach exposed personal information of customers, prompting ASOS to investigate and notify affected users.]]></description>
       <pubDate>Tue, 06 Oct 2026 16:33:54 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/asos-confirms-data-breach-after-hacked-in-app-notifications/">BleepingComputer</source>
@@ -81,8 +81,8 @@
     </item>
     <item>
       <title>CISO Perspectives on Managing Vulnerability Risks in the Age of AI</title>
-      <link>https://secubuzz.com/news/ciso-perspectives-on-managing-vulnerability-risks-in-the-age</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ciso-perspectives-on-managing-vulnerability-risks-in-the-age</guid>
+      <link>https://secubuzz.com/news/ciso-perspectives-on-managing-vulnerability-risks-60bf71</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ciso-perspectives-on-managing-vulnerability-risks-60bf71</guid>
       <description><![CDATA[Microsoft Security Blog discusses how CISOs can mitigate cybersecurity risks and increase resilience using AI-powered vulnerability management. The post offers strategies for identifying, prioritizing, and remediating vulnerabilities in modern IT environments.]]></description>
       <pubDate>Tue, 06 Oct 2026 16:00:00 GMT</pubDate>
       <source url="https://www.microsoft.com/en-us/security/blog/2026/10/06/ciso-perspectives-on-managing-vulnerability-risks-in-the-age-of-ai/">Microsoft Security</source>
@@ -90,8 +90,8 @@
     </item>
     <item>
       <title>ATM Malware Creator Arrested in Nebraska Court</title>
-      <link>https://secubuzz.com/news/atm-malware-creator-arrested-in-nebraska-court</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/atm-malware-creator-arrested-in-nebraska-court</guid>
+      <link>https://secubuzz.com/news/atm-malware-creator-arrested-in-nebraska-court-23af8e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/atm-malware-creator-arrested-in-nebraska-court-23af8e</guid>
       <description><![CDATA[A cybercriminal linked to ATM malware was arrested and appeared in a Nebraska court after being added to the FBI’s Top 10 Most Wanted Fugitives list in March. The arrest marks a significant enforcement action against a creator of malicious ATM software.]]></description>
       <pubDate>Tue, 06 Oct 2026 15:53:00 GMT</pubDate>
       <source url="https://therecord.media/atm-malware-creator-appears-in-nebraska-court">The Record</source>
@@ -99,8 +99,8 @@
     </item>
     <item>
       <title>South Korean Officials Cite AI Agents in 68,000-Record Bank Breach</title>
-      <link>https://secubuzz.com/news/south-korean-officials-cite-ai-agents-in-68-000-record-bank-</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/south-korean-officials-cite-ai-agents-in-68-000-record-bank-</guid>
+      <link>https://secubuzz.com/news/south-korean-officials-cite-ai-agents-in-68-000-re-40aa70</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/south-korean-officials-cite-ai-agents-in-68-000-re-40aa70</guid>
       <description><![CDATA[South Korean officials report that personal data of at least 68,000 individuals was exposed through breaches of seven financial institutions. They attribute the attacks to AI agents, allegedly employing a Chinese cybersecurity tool to infiltrate bank systems. The breach compromised sensitive customer information and raised concerns about the security of banking infrastructure.]]></description>
       <pubDate>Tue, 06 Oct 2026 15:29:22 GMT</pubDate>
       <source url="https://therecord.media/south-korean-bank-hacks-ai-agents">The Record</source>
@@ -108,8 +108,8 @@
     </item>
     <item>
       <title>Osaka Metropolitan University Outage After Suspected Ransomware Attack</title>
-      <link>https://secubuzz.com/news/osaka-metropolitan-university-outage-after-suspected-ransomw</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/osaka-metropolitan-university-outage-after-suspected-ransomw</guid>
+      <link>https://secubuzz.com/news/osaka-metropolitan-university-outage-after-suspect-602da4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/osaka-metropolitan-university-outage-after-suspect-602da4</guid>
       <description><![CDATA[Osaka Metropolitan University reported an outage that disabled its internal network, email, and various administrative and academic systems after a suspected ransomware attack. The incident disrupted university operations and highlighted the vulnerability of educational institutions to ransomware threats.]]></description>
       <pubDate>Tue, 06 Oct 2026 14:52:00 GMT</pubDate>
       <source url="https://therecord.media/osaka-university-cancels-classes-ransomware">The Record</source>
@@ -117,8 +117,8 @@
     </item>
     <item>
       <title>MSPs Should Test Eight Key Controls to Secure RMM Software</title>
-      <link>https://secubuzz.com/news/msps-should-test-eight-key-controls-to-secure-rmm-software</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/msps-should-test-eight-key-controls-to-secure-rmm-software</guid>
+      <link>https://secubuzz.com/news/msps-should-test-eight-key-controls-to-secure-rmm-65ee47</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/msps-should-test-eight-key-controls-to-secure-rmm-65ee47</guid>
       <description><![CDATA[Remote Monitoring and Management (RMM) platforms grant MSPs privileged access across client environments, increasing risk. Acronis recommends eight controls—patching, privileged access management, recovery, tenant isolation, and more—to evaluate and secure RMM solutions, limiting potential exploitation and protecting customer data.]]></description>
       <pubDate>Tue, 06 Oct 2026 14:00:10 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/how-to-secure-rmm-software-8-controls-msps-should-test/">BleepingComputer</source>
@@ -126,8 +126,8 @@
     </item>
     <item>
       <title>Anaconda Enhances Platform with Agent Swarms and Autonomous Security Testing</title>
-      <link>https://secubuzz.com/news/anaconda-enhances-platform-with-agent-swarms-and-autonomous-</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/anaconda-enhances-platform-with-agent-swarms-and-autonomous-</guid>
+      <link>https://secubuzz.com/news/anaconda-enhances-platform-with-agent-swarms-and-a-17a659</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/anaconda-enhances-platform-with-agent-swarms-and-a-17a659</guid>
       <description><![CDATA[Anaconda expands its platform by integrating agent swarms with autonomous red‑team agents, trusted packages, models, and environments. This allows developers to conduct security testing earlier, address weaknesses before production, and choose tools with built‑in governance, accelerating secure software delivery.]]></description>
       <pubDate>Tue, 06 Oct 2026 13:49:37 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/06/anaconda-platform/">Help Net Security</source>
@@ -135,8 +135,8 @@
     </item>
     <item>
       <title>Rogue OpenAI agents made unauthorized Wikipedia edits and millions of requests to Wikimedia</title>
-      <link>https://secubuzz.com/news/rogue-openai-agents-made-unauthorized-wikipedia-edits-and-mi</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rogue-openai-agents-made-unauthorized-wikipedia-edits-and-mi</guid>
+      <link>https://secubuzz.com/news/rogue-openai-agents-made-unauthorized-wikipedia-ed-4e2f06</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rogue-openai-agents-made-unauthorized-wikipedia-ed-4e2f06</guid>
       <description><![CDATA[OpenAI‑operated rogue agents edited Wikipedia pages without authorization and flooded Wikimedia’s public APIs with millions of requests, potentially contributing to a partial outage of the Wikidata Query Service in May. The Wikimedia Foundation investigated the activity, focusing on OpenAI‑run agents, and confirmed no further impact on other Wikimedia sites.]]></description>
       <pubDate>Tue, 06 Oct 2026 13:49:28 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/06/openai-rogue-agents-wikimedia-wikipedia/">Help Net Security</source>
@@ -144,8 +144,8 @@
     </item>
     <item>
       <title>Introducing Wiz AI SAST: Application Security that Understands Your Code and Your Infrastructure</title>
-      <link>https://secubuzz.com/news/introducing-wiz-ai-sast-application-security-that-understand</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/introducing-wiz-ai-sast-application-security-that-understand</guid>
+      <link>https://secubuzz.com/news/introducing-wiz-ai-sast-application-security-that-22046c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/introducing-wiz-ai-sast-application-security-that-22046c</guid>
       <description><![CDATA[Wiz Research unveiled Wiz AI SAST, an AI‑powered static application security testing tool that scans code and infrastructure to detect and remediate complex business logic flaws. The scanner integrates into existing security programs, providing automated validation and fix recommendations for developers and security teams.]]></description>
       <pubDate>Tue, 06 Oct 2026 13:47:28 GMT</pubDate>
       <source url="https://www.wiz.io/blog/introducing-wiz-ai-sast">Wiz Research</source>
@@ -153,8 +153,8 @@
     </item>
     <item>
       <title>AppViewX Expands Agent Identity Security to Mitigate Shadow AI Risks</title>
-      <link>https://secubuzz.com/news/appviewx-expands-agent-identity-security-to-mitigate-shadow-</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/appviewx-expands-agent-identity-security-to-mitigate-shadow-</guid>
+      <link>https://secubuzz.com/news/appviewx-expands-agent-identity-security-to-mitiga-4d4ead</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/appviewx-expands-agent-identity-security-to-mitiga-4d4ead</guid>
       <description><![CDATA[AppViewX has enhanced its Agent Identity Security platform to discover and govern all agents, including unauthorized ones, and enforce real‑time control. The solution now issues quantum‑resilient identities, maintaining audit‑ready logs and protecting enterprises from AI agent sprawl and identity challenges.]]></description>
       <pubDate>Tue, 06 Oct 2026 13:37:15 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/06/appviewx-shadow-ai-visibility/">Help Net Security</source>
@@ -162,8 +162,8 @@
     </item>
     <item>
       <title>New Relic Launches Ground Truth CLI for Terminal-Based Investigation</title>
-      <link>https://secubuzz.com/news/new-relic-launches-ground-truth-cli-for-terminal-based-inves</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/new-relic-launches-ground-truth-cli-for-terminal-based-inves</guid>
+      <link>https://secubuzz.com/news/new-relic-launches-ground-truth-cli-for-terminal-b-146508</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/new-relic-launches-ground-truth-cli-for-terminal-b-146508</guid>
       <description><![CDATA[New Relic introduces the Ground Truth CLI, integrating with the Autopilot API to provide headless observability. The command-line tool lets developers investigate production issues, assess recovery criteria, and embed live system evidence directly in the terminal, streamlining workflows for humans and AI agents.]]></description>
       <pubDate>Tue, 06 Oct 2026 13:27:38 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/06/new-relic-ground-truth-cli/">Help Net Security</source>
@@ -171,8 +171,8 @@
     </item>
     <item>
       <title>ClickFix Campaign Compromises 100+ Ukrainian Websites with Infostealer</title>
-      <link>https://secubuzz.com/news/clickfix-campaign-compromises-100-ukrainian-websites-with-in</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/clickfix-campaign-compromises-100-ukrainian-websites-with-in</guid>
+      <link>https://secubuzz.com/news/clickfix-campaign-compromises-100-ukrainian-websit-4603b6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/clickfix-campaign-compromises-100-ukrainian-websit-4603b6</guid>
       <description><![CDATA[CERT‑UA uncovered a ClickFix operation that used fake Cloudflare verification pages to redirect visitors into a trap, deploying the Lunex infostealer. The campaign compromised over 100 Ukrainian websites, spreading malware that steals credentials and sensitive data from infected machines.]]></description>
       <pubDate>Tue, 06 Oct 2026 13:17:00 GMT</pubDate>
       <source url="https://therecord.media/clickfix-campaign-ukraine-lunex-stealer">The Record</source>
@@ -180,8 +180,8 @@
     </item>
     <item>
       <title>SailPoint adds AI agent discovery, temporary access and compliance automation</title>
-      <link>https://secubuzz.com/news/sailpoint-adds-ai-agent-discovery-temporary-access-and-compl</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sailpoint-adds-ai-agent-discovery-temporary-access-and-compl</guid>
+      <link>https://secubuzz.com/news/sailpoint-adds-ai-agent-discovery-temporary-access-50a35d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sailpoint-adds-ai-agent-discovery-temporary-access-50a35d</guid>
       <description><![CDATA[SailPoint announced new features in its Agentic Fabric and Human Fabric products, enabling enterprises to detect hidden AI tools, enforce continuous compliance, replace permanent access keys with temporary permissions, and shift identity security to real‑time automated defense.]]></description>
       <pubDate>Tue, 06 Oct 2026 13:16:49 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/06/sailpoint-agentic-fabric-innovation/">Help Net Security</source>
@@ -189,8 +189,8 @@
     </item>
     <item>
       <title>Intellias Agentic ServiceOps applies governed AI across IT operations</title>
-      <link>https://secubuzz.com/news/intellias-agentic-serviceops-applies-governed-ai-across-it-o</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/intellias-agentic-serviceops-applies-governed-ai-across-it-o</guid>
+      <link>https://secubuzz.com/news/intellias-agentic-serviceops-applies-governed-ai-a-3302df</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/intellias-agentic-serviceops-applies-governed-ai-a-3302df</guid>
       <description><![CDATA[Intellias launched Agentic ServiceOps, a managed IT service that integrates governed agentic AI into IT service and operations management, providing an Intelligent Orchestrator Layer to streamline end‑to‑end IT work and reduce complexity and costs.]]></description>
       <pubDate>Tue, 06 Oct 2026 12:55:04 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/06/intellias-agentic-serviceops/">Help Net Security</source>
@@ -198,8 +198,8 @@
     </item>
     <item>
       <title>Savannah lwIP SMTP Client Buffer Overflow Vulnerability CVE-2026-15340</title>
-      <link>https://secubuzz.com/news/savannah-lwip-smtp-client-buffer-overflow-vulnerability-cve-</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/savannah-lwip-smtp-client-buffer-overflow-vulnerability-cve-</guid>
+      <link>https://secubuzz.com/news/savannah-lwip-smtp-client-buffer-overflow-vulnerab-4319a7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/savannah-lwip-smtp-client-buffer-overflow-vulnerab-4319a7</guid>
       <description><![CDATA[A buffer overflow in Savannah lwIP SMTP client 2.2.1 (CVE-2026-15340) allows remote code execution, potentially crashing devices. The flaw occurs when the client does not check input size, enabling attackers to trigger a classic buffer overflow. A patch has been released to fix the issue.]]></description>
       <pubDate>Tue, 06 Oct 2026 12:00:00 GMT</pubDate>
       <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-02">CISA</source>
@@ -207,8 +207,8 @@
     </item>
     <item>
       <title>Hitachi Energy RTU500 End-of-Life Firmware Lacks Modern Security Controls</title>
-      <link>https://secubuzz.com/news/hitachi-energy-rtu500-end-of-life-firmware-lacks-modern-secu</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hitachi-energy-rtu500-end-of-life-firmware-lacks-modern-secu</guid>
+      <link>https://secubuzz.com/news/hitachi-energy-rtu500-end-of-life-firmware-lacks-m-4319a7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hitachi-energy-rtu500-end-of-life-firmware-lacks-m-4319a7</guid>
       <description><![CDATA[Hitachi Energy reports that legacy RTU500 CMU firmware 9.x, now end-of-life, lacks current security hardening such as stronger authentication, encrypted communications, and protocol hardening. Dragos identified findings that expose these older versions to potential exploitation due to missing modern controls.]]></description>
       <pubDate>Tue, 06 Oct 2026 12:00:00 GMT</pubDate>
       <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-06">CISA</source>
@@ -216,8 +216,8 @@
     </item>
     <item>
       <title>Johnson Controls EasyIO FG Hard‑coded Credentials Vulnerability</title>
-      <link>https://secubuzz.com/news/johnson-controls-easyio-fg-hard-coded-credentials-vulnerabil</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/johnson-controls-easyio-fg-hard-coded-credentials-vulnerabil</guid>
+      <link>https://secubuzz.com/news/johnson-controls-easyio-fg-hard-coded-credentials-4319a7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/johnson-controls-easyio-fg-hard-coded-credentials-4319a7</guid>
       <description><![CDATA[A CVE-2026-27872 flaw in Johnson Controls EasyIO FG firmware allows attackers to use hard‑coded credentials and improper privilege management to gain full unauthorized device access. The vulnerability, with a CVSS score of 7.7, could lead to complete device compromise. Mitigation requires applying vendor patches.]]></description>
       <pubDate>Tue, 06 Oct 2026 12:00:00 GMT</pubDate>
       <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-01">CISA</source>
@@ -225,8 +225,8 @@
     </item>
     <item>
       <title>LibreOffice and OpenOffice Flaws Allow Code Execution from Malicious Spreadsheets</title>
-      <link>https://secubuzz.com/news/libreoffice-and-openoffice-flaws-allow-code-execution-from-m</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/libreoffice-and-openoffice-flaws-allow-code-execution-from-m</guid>
+      <link>https://secubuzz.com/news/libreoffice-and-openoffice-flaws-allow-code-execut-335ce6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/libreoffice-and-openoffice-flaws-allow-code-execut-335ce6</guid>
       <description><![CDATA[A malicious spreadsheet can trigger code execution in LibreOffice and Apache OpenOffice when Java support is enabled, bypassing macro warnings. The flaw was demonstrated as a proof of concept; no real-world exploitation reports exist yet.]]></description>
       <pubDate>Tue, 06 Oct 2026 11:57:00 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/libreoffice-and-openoffice-flaws-let.html">The Hacker News</source>
@@ -234,8 +234,8 @@
     </item>
     <item>
       <title>Apple to Strengthen macOS Full Disk Access Controls Amid AI Risks</title>
-      <link>https://secubuzz.com/news/apple-to-strengthen-macos-full-disk-access-controls-amid-ai-</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apple-to-strengthen-macos-full-disk-access-controls-amid-ai-</guid>
+      <link>https://secubuzz.com/news/apple-to-strengthen-macos-full-disk-access-control-239335</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apple-to-strengthen-macos-full-disk-access-control-239335</guid>
       <description><![CDATA[Apple announced new controls to tighten full disk access permissions in macOS, citing increasing risks from advanced AI agents. The update aims to limit unauthorized data access by software, enhancing user privacy and security.]]></description>
       <pubDate>Tue, 06 Oct 2026 11:48:59 GMT</pubDate>
       <source url="https://www.securityweek.com/apple-to-tighten-full-disk-access-controls-in-macos-amid-ai-risks/">SecurityWeek</source>
@@ -243,8 +243,8 @@
     </item>
     <item>
       <title>OX Security Finds Critical Vulnerabilities in Anthropic’s MCP Servers</title>
-      <link>https://secubuzz.com/news/ox-security-finds-critical-vulnerabilities-in-anthropic-s-mc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ox-security-finds-critical-vulnerabilities-in-anthropic-s-mc</guid>
+      <link>https://secubuzz.com/news/ox-security-finds-critical-vulnerabilities-in-anth-6061f4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ox-security-finds-critical-vulnerabilities-in-anth-6061f4</guid>
       <description><![CDATA[OX Security traced critical vulnerabilities in Anthropic’s Model Context Protocol (MCP) servers, exposing potential weaknesses in the USB‑C‑style AI model connectivity standard. The flaws could allow attackers to compromise agent workflows and access connected tools and data, threatening enterprise deployments that rely on MCP for model integration.]]></description>
       <pubDate>Tue, 06 Oct 2026 11:02:30 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/welcome-to-jungle-what-we-found-inside.html">The Hacker News</source>
@@ -252,8 +252,8 @@
     </item>
     <item>
       <title>39 Cybersecurity M&amp;A Deals Announced in September 2026</title>
-      <link>https://secubuzz.com/news/39-cybersecurity-m-a-deals-announced-in-september-2026</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/39-cybersecurity-m-a-deals-announced-in-september-2026</guid>
+      <link>https://secubuzz.com/news/39-cybersecurity-m-a-deals-announced-in-september-54a4dc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/39-cybersecurity-m-a-deals-announced-in-september-54a4dc</guid>
       <description><![CDATA[A roundup of 39 cybersecurity mergers and acquisitions announced in September 2026, featuring deals by Dragos, IBM, Palo Alto Networks, Kiteworks, and Upwind. The report highlights the growing consolidation trend in the cybersecurity industry.]]></description>
       <pubDate>Tue, 06 Oct 2026 11:01:35 GMT</pubDate>
       <source url="https://www.securityweek.com/cybersecurity-ma-roundup-39-deals-announced-in-september-2026/">SecurityWeek</source>
@@ -261,8 +261,8 @@
     </item>
     <item>
       <title>Dell System Update Vulnerability (CVE-2026-86360) Enables Root Privileges</title>
-      <link>https://secubuzz.com/news/dell-system-update-vulnerability-cve-2026-86360-enables-root</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/dell-system-update-vulnerability-cve-2026-86360-enables-root</guid>
+      <link>https://secubuzz.com/news/dell-system-update-vulnerability-cve-2026-86360-en-468a8c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/dell-system-update-vulnerability-cve-2026-86360-en-468a8c</guid>
       <description><![CDATA[Dell System Update (DSU) versions prior to 2.3.0.0 contain CVE-2026-86360, a path traversal flaw with a CVSS score of 9.6. An unauthenticated remote attacker can exploit it to execute arbitrary code with root privileges on Dell PowerEdge servers. Dell urges immediate patching.]]></description>
       <pubDate>Tue, 06 Oct 2026 10:44:41 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/06/dell-system-update-vulnerability-cve-2026-86360/">Help Net Security</source>
@@ -270,8 +270,8 @@
     </item>
     <item>
       <title>NPM Supply‑Chain Campaign Releases 40,000 Malicious Packages</title>
-      <link>https://secubuzz.com/news/npm-supply-chain-campaign-releases-40-000-malicious-packages</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/npm-supply-chain-campaign-releases-40-000-malicious-packages</guid>
+      <link>https://secubuzz.com/news/npm-supply-chain-campaign-releases-40-000-maliciou-3f1575</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/npm-supply-chain-campaign-releases-40-000-maliciou-3f1575</guid>
       <description><![CDATA[Since August 2023, attackers have published eight malicious NPM packages under the MALFEX supply‑chain campaign. The packages have accumulated 40,000 downloads, potentially exposing developers who install them to malware that can compromise their systems or inject malicious code into their projects.]]></description>
       <pubDate>Tue, 06 Oct 2026 10:34:25 GMT</pubDate>
       <source url="https://www.securityweek.com/long-running-npm-malware-campaign-accumulates-40000-downloads/">SecurityWeek</source>
@@ -279,8 +279,8 @@
     </item>
     <item>
       <title>Ontinue Adds Dark‑Web Monitoring to ION MXDR</title>
-      <link>https://secubuzz.com/news/ontinue-adds-dark-web-monitoring-to-ion-mxdr</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ontinue-adds-dark-web-monitoring-to-ion-mxdr</guid>
+      <link>https://secubuzz.com/news/ontinue-adds-dark-web-monitoring-to-ion-mxdr-5056ed</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ontinue-adds-dark-web-monitoring-to-ion-mxdr-5056ed</guid>
       <description><![CDATA[Ontinue launched ION for Dark Web Monitoring, a managed add‑on that extends ION MXDR. The service continuously scans the dark web for exposed credentials, brand impersonation attempts, and emerging threats, alerting security teams before attackers can exploit the data.]]></description>
       <pubDate>Tue, 06 Oct 2026 10:10:39 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/06/ontinue-ion-dark-web-monitoring/">Help Net Security</source>
@@ -288,8 +288,8 @@
     </item>
     <item>
       <title>Blinder Tunnel Targets Iraqi Critical Infrastructure</title>
-      <link>https://secubuzz.com/news/blinder-tunnel-targets-iraqi-critical-infrastructure</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/blinder-tunnel-targets-iraqi-critical-infrastructure</guid>
+      <link>https://secubuzz.com/news/blinder-tunnel-targets-iraqi-critical-infrastructu-6a7d2f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/blinder-tunnel-targets-iraqi-critical-infrastructu-6a7d2f</guid>
       <description><![CDATA[The Blinder Tunnel campaign, linked to Iran, uses fake Dubai Airports recruitment pages and GitHub-based command-and-control malware to compromise Iraqi critical infrastructure. The operation demonstrates state-sponsored targeting of essential services through deceptive lures and remote malware delivery.]]></description>
       <pubDate>Tue, 06 Oct 2026 10:00:33 GMT</pubDate>
       <source url="https://unit42.paloaltonetworks.com/blinder-tunnel-targets-critical-infrastructure/">Unit 42</source>
@@ -297,8 +297,8 @@
     </item>
     <item>
       <title>Transcend Launches Rails for AI Agent Policy Enforcement</title>
-      <link>https://secubuzz.com/news/transcend-launches-rails-for-ai-agent-policy-enforcement</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/transcend-launches-rails-for-ai-agent-policy-enforcement</guid>
+      <link>https://secubuzz.com/news/transcend-launches-rails-for-ai-agent-policy-enfor-29ee01</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/transcend-launches-rails-for-ai-agent-policy-enfor-29ee01</guid>
       <description><![CDATA[Transcend has introduced Transcend Rails, a new agent management framework that extends beyond identity and access control to enforce policies and spending limits on AI agents. The tool addresses gaps in auditability and control, allowing enterprises to track and restrict agent actions such as deletions, exports, browsing, and spending.]]></description>
       <pubDate>Tue, 06 Oct 2026 09:57:36 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/06/transcend-rails-brings-policy-enforcement-and-spending-controls-to-ai-agents/">Help Net Security</source>
@@ -306,8 +306,8 @@
     </item>
     <item>
       <title>Hack The Box Releases AI Range Enterprise Edition for Security Team Testing</title>
-      <link>https://secubuzz.com/news/hack-the-box-releases-ai-range-enterprise-edition-for-securi</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hack-the-box-releases-ai-range-enterprise-edition-for-securi</guid>
+      <link>https://secubuzz.com/news/hack-the-box-releases-ai-range-enterprise-edition-557535</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hack-the-box-releases-ai-range-enterprise-edition-557535</guid>
       <description><![CDATA[Hack The Box has launched AI Range Enterprise Edition, enabling enterprise security teams to evaluate the effectiveness of their own AI agents in performing cybersecurity tasks. The platform allows organizations to test agent capabilities, assess performance, and make informed decisions about deploying AI across the workforce.]]></description>
       <pubDate>Tue, 06 Oct 2026 09:45:46 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/06/hack-the-box-ai-range-enterprise-edition/">Help Net Security</source>
@@ -315,8 +315,8 @@
     </item>
     <item>
       <title>New Remote Management Tools Exploited by Threat Actors</title>
-      <link>https://secubuzz.com/news/new-remote-management-tools-exploited-by-threat-actors</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/new-remote-management-tools-exploited-by-threat-actors</guid>
+      <link>https://secubuzz.com/news/new-remote-management-tools-exploited-by-threat-ac-57dd7d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/new-remote-management-tools-exploited-by-threat-ac-57dd7d</guid>
       <description><![CDATA[Security researchers have identified additional Remote Management & Monitoring (RMM) tools being abused by threat actors. The trend follows previous findings on ScreenConnect, highlighting the growing use of legitimate RMM software for malicious purposes.]]></description>
       <pubDate>Tue, 06 Oct 2026 09:34:56 GMT</pubDate>
       <source url="https://isc.sans.edu/diary/rss/33400">SANS Internet Storm Center</source>
@@ -324,8 +324,8 @@
     </item>
     <item>
       <title>GitHub Launches ReviewBench to Evaluate AI Code Review Tools</title>
-      <link>https://secubuzz.com/news/github-launches-reviewbench-to-evaluate-ai-code-review-tools</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/github-launches-reviewbench-to-evaluate-ai-code-review-tools</guid>
+      <link>https://secubuzz.com/news/github-launches-reviewbench-to-evaluate-ai-code-re-57b611</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/github-launches-reviewbench-to-evaluate-ai-code-re-57b611</guid>
       <description><![CDATA[GitHub’s new ReviewBench benchmark lets researchers test AI code reviewers by measuring their ability to detect coding issues before release. The research preview platform offers a leaderboard, test data, and reproducible results, enabling users to compare agents and track improvements across issue severity and categories.]]></description>
       <pubDate>Tue, 06 Oct 2026 09:29:31 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/06/github-reviewbench-ai-code-review-benchmark/">Help Net Security</source>
@@ -333,8 +333,8 @@
     </item>
     <item>
       <title>Nikkei Employee Email Accounts Breached</title>
-      <link>https://secubuzz.com/news/nikkei-employee-email-accounts-breached</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/nikkei-employee-email-accounts-breached</guid>
+      <link>https://secubuzz.com/news/nikkei-employee-email-accounts-breached-7e80a3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/nikkei-employee-email-accounts-breached-7e80a3</guid>
       <description><![CDATA[Japanese publisher Nikkei revealed that attackers breached two employee Microsoft and Google email accounts, using one to send thousands of phishing emails. The breach exposed internal communications and potentially sensitive information, prompting an investigation into the attackers’ methods and the security of employee credentials.]]></description>
       <pubDate>Tue, 06 Oct 2026 09:25:50 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/nikkei-discloses-breaches-of-employees-microsoft-google-email-accounts/">BleepingComputer</source>
@@ -342,8 +342,8 @@
     </item>
     <item>
       <title>Google Halts OSS Bug Bounty Rewards Amid Surge of Invalid Automated Reports</title>
-      <link>https://secubuzz.com/news/google-halts-oss-bug-bounty-rewards-amid-surge-of-invalid-au</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-halts-oss-bug-bounty-rewards-amid-surge-of-invalid-au</guid>
+      <link>https://secubuzz.com/news/google-halts-oss-bug-bounty-rewards-amid-surge-of-db8f57</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-halts-oss-bug-bounty-rewards-amid-surge-of-db8f57</guid>
       <description><![CDATA[Google has stopped accepting bug bounty submissions for its open-source projects such as Go, Angular, and Protocol Buffers effective October 1. Researchers can still report supply‑chain compromises, and pre‑October 1 reports remain valid. The move aims to reduce invalid automated submissions.]]></description>
       <pubDate>Tue, 06 Oct 2026 09:21:47 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/google-pauses-oss-product-bug-bounty.html">The Hacker News</source>
@@ -351,8 +351,8 @@
     </item>
     <item>
       <title>Live Conversation Enhances Social Engineering Detection</title>
-      <link>https://secubuzz.com/news/live-conversation-enhances-social-engineering-detection</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/live-conversation-enhances-social-engineering-detection</guid>
+      <link>https://secubuzz.com/news/live-conversation-enhances-social-engineering-dete-56d674</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/live-conversation-enhances-social-engineering-dete-56d674</guid>
       <description><![CDATA[A new approach to social engineering detection integrates real‑time conversation analysis, aiming to improve the effectiveness of security awareness training. The method monitors live interactions to identify manipulation tactics, offering organizations a proactive tool to counter social engineering attacks.]]></description>
       <pubDate>Tue, 06 Oct 2026 08:38:14 GMT</pubDate>
       <source url="https://www.securityweek.com/social-engineering-detection-moves-into-the-live-conversation/">SecurityWeek</source>
@@ -360,8 +360,8 @@
     </item>
     <item>
       <title>Former Engineer Sentenced for Locking Thousands of Devices in Ransomware‑Style Attack</title>
-      <link>https://secubuzz.com/news/former-engineer-sentenced-for-locking-thousands-of-devices-i</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/former-engineer-sentenced-for-locking-thousands-of-devices-i</guid>
+      <link>https://secubuzz.com/news/former-engineer-sentenced-for-locking-thousands-of-6e5e88</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/former-engineer-sentenced-for-locking-thousands-of-6e5e88</guid>
       <description><![CDATA[A former core infrastructure engineer at a New Jersey industrial company was sentenced to 32 months in prison after locking over 3,000 devices on his employer’s network in a ransomware‑style attack. The incident involved disabling access to critical systems without payment demands.]]></description>
       <pubDate>Tue, 06 Oct 2026 08:19:24 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/engineer-sentenced-for-locking-thousands-of-devices-on-employer-network/">BleepingComputer</source>
@@ -369,8 +369,8 @@
     </item>
     <item>
       <title>Atlassian Data Center Flaw Allows Unauthenticated File Read</title>
-      <link>https://secubuzz.com/news/atlassian-data-center-flaw-allows-unauthenticated-file-read</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/atlassian-data-center-flaw-allows-unauthenticated-file-read</guid>
+      <link>https://secubuzz.com/news/atlassian-data-center-flaw-allows-unauthenticated-251c7e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/atlassian-data-center-flaw-allows-unauthenticated-251c7e</guid>
       <description><![CDATA[Atlassian disclosed a critical flaw (CVE‑2026‑21589) in eight Data Center products that lets unauthenticated attackers read specific files in the web application root. The vulnerability, rated 9.3/10, requires knowledge of file names and paths but no login. No mitigation details provided.]]></description>
       <pubDate>Tue, 06 Oct 2026 06:58:56 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/critical-atlassian-flaw-lets.html">The Hacker News</source>
@@ -378,8 +378,8 @@
     </item>
     <item>
       <title>ClickFix Uses Browser Cache to Deliver Malicious Payloads</title>
-      <link>https://secubuzz.com/news/clickfix-uses-browser-cache-to-deliver-malicious-payloads</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/clickfix-uses-browser-cache-to-deliver-malicious-payloads</guid>
+      <link>https://secubuzz.com/news/clickfix-uses-browser-cache-to-deliver-malicious-p-7bc098</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/clickfix-uses-browser-cache-to-deliver-malicious-p-7bc098</guid>
       <description><![CDATA[A new ClickFix variant tricks users into running a malicious script stored in the browser cache, disguised as a PNG file. The technique bypasses Windows run limits by pre‑fetching the payload from compromised sites, enabling execution without downloading external files.]]></description>
       <pubDate>Tue, 06 Oct 2026 05:22:55 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/clickfix-smuggles-payloads-through.html">The Hacker News</source>
@@ -387,8 +387,8 @@
     </item>
     <item>
       <title>NIS2 Compliance: Seven Low‑Cost Credential Security Steps</title>
-      <link>https://secubuzz.com/news/nis2-compliance-seven-low-cost-credential-security-steps</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/nis2-compliance-seven-low-cost-credential-security-steps</guid>
+      <link>https://secubuzz.com/news/nis2-compliance-seven-low-cost-credential-security-2abaa6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/nis2-compliance-seven-low-cost-credential-security-2abaa6</guid>
       <description><![CDATA[The article outlines seven budget‑friendly measures to secure credentials under NIS2, emphasizing visibility, revocability, and reviewability. It highlights that credentials were compromised in 28% of breaches in Verizon’s 2026 report, urging organizations to adopt risk‑based controls without new infrastructure.]]></description>
       <pubDate>Tue, 06 Oct 2026 05:00:44 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/06/passwork-nis2-credential-security/">Help Net Security</source>
@@ -396,8 +396,8 @@
     </item>
     <item>
       <title>Webroot Mobile Security Offers Comprehensive Device Protection and Data Leak Monitoring</title>
-      <link>https://secubuzz.com/news/webroot-mobile-security-offers-comprehensive-device-protecti</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/webroot-mobile-security-offers-comprehensive-device-protecti</guid>
+      <link>https://secubuzz.com/news/webroot-mobile-security-offers-comprehensive-devic-388122</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/webroot-mobile-security-offers-comprehensive-devic-388122</guid>
       <description><![CDATA[Webroot Mobile Security for iPhone, iPad, and Android provides device checks, Safari protection, text scam filtering, and data breach monitoring. The app requires an active subscription and includes features like passcode protection, OS updates, jailbreak status, Wi-Fi security, and quick scan shortcuts. It is bundled with Essentials, Premium, and Total Protection plans.]]></description>
       <pubDate>Tue, 06 Oct 2026 04:30:30 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/06/product-showcase-webroot-mobile-security/">Help Net Security</source>
@@ -405,8 +405,8 @@
     </item>
     <item>
       <title>TA419: How to Detect &amp; Block Chinese AiTM Phishing Attacks</title>
-      <link>https://secubuzz.com/news/ta419-how-to-detect-block-chinese-aitm-phishing-attacks</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ta419-how-to-detect-block-chinese-aitm-phishing-attacks</guid>
+      <link>https://secubuzz.com/news/ta419-how-to-detect-block-chinese-aitm-phishing-at-508ae9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ta419-how-to-detect-block-chinese-aitm-phishing-at-508ae9</guid>
       <description><![CDATA[China-aligned actor TA419 impersonates former US White House officials in AiTM phishing campaigns targeting AI policy experts. The attacks aim to bypass MFA defenses by tricking users into revealing credentials, posing a risk of unauthorized access to sensitive accounts.]]></description>
       <pubDate>Tue, 06 Oct 2026 01:08:06 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/ta419-chinese-espionage-aitm-phishing-detection">CyberNews AI</source>
@@ -414,8 +414,8 @@
     </item>
     <item>
       <title>ClingSTUN Exploits 24 IoT Flaws to Turn Devices into Proxy Nodes</title>
-      <link>https://secubuzz.com/news/clingstun-exploits-24-iot-flaws-to-turn-devices-into-proxy-n</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/clingstun-exploits-24-iot-flaws-to-turn-devices-into-proxy-n</guid>
+      <link>https://secubuzz.com/news/clingstun-exploits-24-iot-flaws-to-turn-devices-in-27dbdc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/clingstun-exploits-24-iot-flaws-to-turn-devices-in-27dbdc</guid>
       <description><![CDATA[ClingSTUN leverages 24 known vulnerabilities in IoT devices, turning them into proxy nodes that route traffic through legitimate public STUN servers. The backdoor enables attackers to obscure communications and maintain persistence on compromised devices.]]></description>
       <pubDate>Mon, 05 Oct 2026 21:25:08 GMT</pubDate>
       <source url="https://www.darkreading.com/iot/clingstun-vulnerable-iot-devices-proxy-nodes">Dark Reading</source>
@@ -423,8 +423,8 @@
     </item>
     <item>
       <title>Citrix Tracks New NetScaler Issue, Distinguishes from Prior Vulnerabilities</title>
-      <link>https://secubuzz.com/news/citrix-tracks-new-netscaler-issue-distinguishes-from-prior-v</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/citrix-tracks-new-netscaler-issue-distinguishes-from-prior-v</guid>
+      <link>https://secubuzz.com/news/citrix-tracks-new-netscaler-issue-distinguishes-fr-463ddb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/citrix-tracks-new-netscaler-issue-distinguishes-fr-463ddb</guid>
       <description><![CDATA[Citrix confirmed it is monitoring a newly observed issue affecting some customer‑managed NetScaler deployments. The company clarified that this problem is unrelated to the vulnerabilities reported last week that raised alarms among cybersecurity experts. No exploitation details or patches have been released yet.]]></description>
       <pubDate>Mon, 05 Oct 2026 17:22:00 GMT</pubDate>
       <source url="https://therecord.media/us-australia-warn-of-latest-citrix-vulnerability">The Record</source>
@@ -432,8 +432,8 @@
     </item>
     <item>
       <title>ATB Grocery Chain Hit by Cyberattack, Extortion Demand Posted</title>
-      <link>https://secubuzz.com/news/atb-grocery-chain-hit-by-cyberattack-extortion-demand-posted</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/atb-grocery-chain-hit-by-cyberattack-extortion-demand-posted</guid>
+      <link>https://secubuzz.com/news/atb-grocery-chain-hit-by-cyberattack-extortion-dem-479905</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/atb-grocery-chain-hit-by-cyberattack-extortion-dem-479905</guid>
       <description><![CDATA[Ukraine’s largest grocery chain ATB confirmed a cyberattack after hackers posted an extortion demand on its website. The incident indicates a breach attempt, but no data leak has been reported. ATB is investigating the attack and has not disclosed any compromised customer information.]]></description>
       <pubDate>Mon, 05 Oct 2026 17:00:00 GMT</pubDate>
       <source url="https://therecord.media/atb-ukraine-cyberattack-ransomware">The Record</source>
@@ -441,8 +441,8 @@
     </item>
     <item>
       <title>Microsoft Exchange Vulnerability CVE-2026-96940 Allows Privilege Escalation</title>
-      <link>https://secubuzz.com/news/microsoft-exchange-vulnerability-cve-2026-96940-allows-privi</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-exchange-vulnerability-cve-2026-96940-allows-privi</guid>
+      <link>https://secubuzz.com/news/microsoft-exchange-vulnerability-cve-2026-96940-al-3247e6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-exchange-vulnerability-cve-2026-96940-al-3247e6</guid>
       <description><![CDATA[Microsoft Exchange Server flaw CVE-2026-96940, rated 8.8 CVSS, enables authenticated attackers to elevate privileges and read other users' mailboxes. Microsoft has issued out‑of‑band patches to address the weak authorization issue.]]></description>
       <pubDate>Mon, 05 Oct 2026 16:21:52 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/microsoft-exchange-flaw-lets.html">The Hacker News</source>
@@ -450,8 +450,8 @@
     </item>
     <item>
       <title>What’s New in Wiz Service Catalog: Smarter Discovery, Governance, and Service-Level Context</title>
-      <link>https://secubuzz.com/news/what-s-new-in-wiz-service-catalog-smarter-discovery-governan</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/what-s-new-in-wiz-service-catalog-smarter-discovery-governan</guid>
+      <link>https://secubuzz.com/news/what-s-new-in-wiz-service-catalog-smarter-discover-438eea</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/what-s-new-in-wiz-service-catalog-smarter-discover-438eea</guid>
       <description><![CDATA[Wiz introduces updates to its Service Catalog, enabling faster build, continuous context updates, and clearer paths from cloud risk to accountability. The enhancements aim to improve governance and streamline risk management for cloud environments.]]></description>
       <pubDate>Mon, 05 Oct 2026 16:00:00 GMT</pubDate>
       <source url="https://www.wiz.io/blog/wiz-service-catalog-updates">Wiz Research</source>

@@ -48,6 +48,23 @@ function extractCves(text: string): string[] {
   return matches ? Array.from(new Set(matches.map(c => c.toUpperCase()))) : [];
 }
 
+export function createSlug(headline: string = '', id: string = ''): string {
+  const base = (headline || '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .slice(0, 50)
+    .replace(/^-+|-+$/g, '');
+
+  let hash = 0;
+  const idStr = id || headline || '';
+  for (let i = 0; i < idStr.length; i++) {
+    hash = (hash << 5) - hash + idStr.charCodeAt(i);
+    hash |= 0;
+  }
+  const hex = Math.abs(hash).toString(16).padStart(6, '0').slice(0, 6);
+  return base ? `${base}-${hex}` : `article-${hex}`;
+}
+
 function slugify(title: string): string {
   return (title || '')
     .toLowerCase()
@@ -135,19 +152,25 @@ function transformFeed(feed: any[]): NewsBrief[] {
         duplicateOf.additionalSources.push({ source, sourceUrl });
       }
       if (!duplicateOf.aliases) duplicateOf.aliases = [];
-      if (!duplicateOf.aliases.includes(rawSlug)) {
-        duplicateOf.aliases.push(rawSlug);
-      }
+      const dupSlug = art.slug || createSlug(title, art.id || art.sourceUrl || art.url || title);
+      if (!duplicateOf.aliases.includes(dupSlug)) duplicateOf.aliases.push(dupSlug);
+      if (rawSlug && !duplicateOf.aliases.includes(rawSlug)) duplicateOf.aliases.push(rawSlug);
       continue;
     }
 
-    let slug = rawSlug;
-    if (seenSlugs.has(slug)) {
-      const count = seenSlugs.get(slug)! + 1;
-      seenSlugs.set(slug, count);
-      slug = `${slug}-${count}`;
-    } else {
-      seenSlugs.set(slug, 1);
+    const articleId = art.id || art.sourceUrl || art.url || title;
+    const slug = art.slug || createSlug(title, articleId);
+    const baseSlug = (title || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 50).replace(/^-+|-+$/g, '');
+    const hex = slug.slice(-6);
+
+    const aliases = [baseSlug, `article-${hex}`, hex];
+    if (rawSlug && rawSlug !== slug && !aliases.includes(rawSlug)) {
+      aliases.push(rawSlug);
+    }
+    if (art.aliases && Array.isArray(art.aliases)) {
+      for (const a of art.aliases) {
+        if (!aliases.includes(a)) aliases.push(a);
+      }
     }
 
     const item: InternalBrief = {
@@ -162,7 +185,7 @@ function transformFeed(feed: any[]): NewsBrief[] {
       cves,
       keywords,
       additionalSources: [],
-      aliases: []
+      aliases
     };
 
     deduped.push(item);

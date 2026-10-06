@@ -16,6 +16,8 @@ export interface ArticleItem {
   requiredAction?: string;
   patchedVersion?: string;
   vulnerableVersionRange?: string;
+  slug?: string;
+  aliases?: string[];
 }
 
 export interface KevVulnerability {
@@ -32,15 +34,16 @@ export interface KevVulnerability {
 }
 
 export function createSlug(headline: string = '', id: string = ''): string {
-  const base = headline
+  const base = (headline || '')
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, '-')
     .slice(0, 50)
     .replace(/^-+|-+$/g, '');
 
   let hash = 0;
-  for (let i = 0; i < id.length; i++) {
-    hash = (hash << 5) - hash + id.charCodeAt(i);
+  const idStr = id || headline || '';
+  for (let i = 0; i < idStr.length; i++) {
+    hash = (hash << 5) - hash + idStr.charCodeAt(i);
     hash |= 0;
   }
   const hex = Math.abs(hash).toString(16).padStart(6, '0').slice(0, 6);
@@ -80,7 +83,8 @@ export function generateSitemapXml(
   const articleEntries = articles
     .map(art => {
       const headline = art.headline || art.title || '';
-      const slug = createSlug(headline, art.id);
+      const articleId = art.id || art.sourceUrl || art.url || headline;
+      const slug = art.slug || createSlug(headline, articleId);
       const mod = art.publishedAt ? art.publishedAt.slice(0, 10) : today;
       return `  <url>
     <loc>https://secubuzz.com/news/${slug}</loc>
@@ -185,12 +189,15 @@ export function injectMetaTags(
       description,
     };
   } else if (pathname.startsWith('/news/')) {
-    const slug = pathname.replace('/news/', '').toLowerCase();
+    const slug = pathname.replace('/news/', '').toLowerCase().replace(/\/+$/, '');
     const article = articles.find(a => {
       const headline = a.headline || a.title || '';
+      const articleId = a.id || a.sourceUrl || a.url || headline;
+      const artSlug = (a.slug || createSlug(headline, articleId)).toLowerCase();
+      if (artSlug === slug) return true;
+      if (a.aliases && a.aliases.some(al => al.toLowerCase() === slug)) return true;
       const base = headline.toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 50).replace(/^-+|-+$/g, '');
-      const artSlug = createSlug(headline, a.id).toLowerCase();
-      return artSlug === slug || slug.startsWith(base) || base.startsWith(slug) || slug.includes(base.slice(0, 35));
+      return base && (slug === base || slug.startsWith(base) || base.startsWith(slug));
     });
     if (article) {
       const artTitle = article.headline || article.title || 'Security Brief';

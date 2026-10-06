@@ -72,6 +72,7 @@ function isAuthorized(request: Request, env: Env): boolean {
 import {
   ArticleItem,
   KevVulnerability,
+  createSlug,
   generateSitemapXml,
   generateRssXml,
   injectMetaTags,
@@ -200,11 +201,33 @@ function deduplicateFeed(articles: any[]): ArticleItem[] {
       if (!duplicateOf.additionalSources.some((s: any) => s.sourceUrl === sourceUrl || s.source === source)) {
         duplicateOf.additionalSources.push({ source, sourceUrl });
       }
+      if (!duplicateOf.aliases) duplicateOf.aliases = [];
+      const dupSlug = createSlug(title, art.id || art.sourceUrl || art.url || title);
+      if (!duplicateOf.aliases.includes(dupSlug)) duplicateOf.aliases.push(dupSlug);
+      const dupBase = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 50).replace(/^-+|-+$/g, '');
+      if (dupBase && !duplicateOf.aliases.includes(dupBase)) duplicateOf.aliases.push(dupBase);
       continue;
+    }
+
+    const articleId = art.id || art.sourceUrl || art.url || title;
+    const slug = art.slug || createSlug(title, articleId);
+    const baseSlug = (title || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 50).replace(/^-+|-+$/g, '');
+    const hex = slug.slice(-6);
+
+    const aliases = [baseSlug, `article-${hex}`, hex];
+    if (art.id && !aliases.includes(art.id.toLowerCase())) {
+      aliases.push(art.id.toLowerCase());
+    }
+    if (art.aliases && Array.isArray(art.aliases)) {
+      for (const a of art.aliases) {
+        if (!aliases.includes(a)) aliases.push(a);
+      }
     }
 
     deduped.push({
       ...art,
+      slug,
+      aliases,
       additionalSources: Array.isArray(art.additionalSources) ? art.additionalSources : []
     });
   }
@@ -373,10 +396,16 @@ function isKnownSpaRoute(pathname: string, articlesList: ArticleItem[], advisori
 
   if (clean.startsWith('/news/')) {
     const slug = clean.slice('/news/'.length).toLowerCase();
-    return articlesList.some(
-      a => (a.slug && a.slug.toLowerCase() === slug) ||
-           (a.aliases && a.aliases.some((al: string) => al.toLowerCase() === slug))
-    );
+    return articlesList.some(a => {
+      const headline = a.headline || a.title || '';
+      const articleId = a.id || a.sourceUrl || a.url || headline;
+      const artSlug = (a.slug || createSlug(headline, articleId)).toLowerCase();
+      if (artSlug === slug) return true;
+      if (a.aliases && a.aliases.some((al: string) => al.toLowerCase() === slug)) return true;
+      const base = headline.toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 50).replace(/^-+|-+$/g, '');
+      if (base && (slug === base || slug.startsWith(base) || base.startsWith(slug))) return true;
+      return false;
+    });
   }
 
   if (clean.startsWith('/advisories/')) {
@@ -530,6 +559,32 @@ export default {
       if (url.pathname.endsWith('.html') && url.pathname !== '/index.html') {
         const cleanPath = url.pathname.replace(/\.html$/, '');
         return Response.redirect(`${url.origin}${cleanPath}`, 301);
+      }
+
+      // News slug 301 redirect for legacy/alias links
+      if (url.pathname.startsWith('/news/')) {
+        const reqSlug = url.pathname.replace(/^\/news\//, '').replace(/\/+$/, '').toLowerCase();
+        if (reqSlug) {
+          const articles = await getArticles();
+          const matchedArt = articles.find(a => {
+            const headline = a.headline || a.title || '';
+            const articleId = a.id || a.sourceUrl || a.url || headline;
+            const artSlug = (a.slug || createSlug(headline, articleId)).toLowerCase();
+            if (artSlug === reqSlug) return false; // Already canonical, proceed to serve
+            if (a.aliases && a.aliases.some((al: string) => al.toLowerCase() === reqSlug)) return true;
+            const base = headline.toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 50).replace(/^-+|-+$/g, '');
+            if (base && (reqSlug === base || reqSlug.startsWith(base) || base.startsWith(reqSlug))) return true;
+            return false;
+          });
+          if (matchedArt) {
+            const headline = matchedArt.headline || matchedArt.title || '';
+            const articleId = matchedArt.id || matchedArt.sourceUrl || matchedArt.url || headline;
+            const canonicalSlug = matchedArt.slug || createSlug(headline, articleId);
+            if (canonicalSlug.toLowerCase() !== reqSlug) {
+              return Response.redirect(`${url.origin}/news/${canonicalSlug}`, 301);
+            }
+          }
+        }
       }
 
       // Dynamic Sitemap for Search Engines

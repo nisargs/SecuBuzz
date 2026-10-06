@@ -64,6 +64,23 @@ function extractCves(text) {
   return matches ? Array.from(new Set(matches.map(c => c.toUpperCase()))) : [];
 }
 
+function createSlug(headline = '', id = '') {
+  const base = (headline || '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .slice(0, 50)
+    .replace(/^-+|-+$/g, '');
+
+  let hash = 0;
+  const idStr = id || headline || '';
+  for (let i = 0; i < idStr.length; i++) {
+    hash = (hash << 5) - hash + idStr.charCodeAt(i);
+    hash |= 0;
+  }
+  const hex = Math.abs(hash).toString(16).padStart(6, '0').slice(0, 6);
+  return base ? `${base}-${hex}` : `article-${hex}`;
+}
+
 function slugify(title) {
   return (title || '')
     .toLowerCase()
@@ -82,6 +99,21 @@ function escapeXml(str) {
 }
 
 async function loadFeed() {
+  try {
+    console.log('Fetching live feed from Cloudflare R2...');
+    const res = await fetch(R2_FEED_URL);
+    if (res.ok) {
+      const data = await res.json();
+      if (Array.isArray(data) && data.length > 0) {
+        fs.writeFileSync(FEED_FILE, JSON.stringify(data, null, 2), 'utf8');
+        console.log(`Saved ${data.length} live articles to local feed.json`);
+        return data;
+      }
+    }
+  } catch (e) {
+    console.warn('Failed to fetch live feed from R2, falling back to local feed.json:', e.message);
+  }
+
   if (fs.existsSync(FEED_FILE)) {
     try {
       const data = JSON.parse(fs.readFileSync(FEED_FILE, 'utf8'));
@@ -89,14 +121,11 @@ async function loadFeed() {
         return data;
       }
     } catch (e) {
-      console.warn('Failed to parse local feed.json, falling back to R2', e);
+      console.warn('Failed to parse local feed.json:', e);
     }
   }
 
-  console.log('Fetching live feed from Cloudflare R2...');
-  const res = await fetch(R2_FEED_URL);
-  if (!res.ok) throw new Error(`HTTP error ${res.status} fetching R2 feed`);
-  return await res.json();
+  throw new Error('No feed data available from R2 or local cache');
 }
 
 async function syncNews() {
@@ -194,22 +223,23 @@ async function syncNews() {
         duplicateOf.additionalSources.push({ source, sourceUrl });
       }
       if (!duplicateOf.aliases) duplicateOf.aliases = [];
-      if (!duplicateOf.aliases.includes(rawSlug)) {
-        duplicateOf.aliases.push(rawSlug);
-      }
+      const dupSlug = createSlug(title, art.id || art.sourceUrl || art.url || title);
+      if (!duplicateOf.aliases.includes(dupSlug)) duplicateOf.aliases.push(dupSlug);
+      if (rawSlug && !duplicateOf.aliases.includes(rawSlug)) duplicateOf.aliases.push(rawSlug);
       if ((!duplicateOf.cves || duplicateOf.cves.length === 0) && cves.length > 0) {
         duplicateOf.cves = cves;
       }
       continue;
     }
 
-    let slug = rawSlug;
-    if (seenSlugs.has(slug)) {
-      const count = seenSlugs.get(slug) + 1;
-      seenSlugs.set(slug, count);
-      slug = `${slug}-${count}`;
-    } else {
-      seenSlugs.set(slug, 1);
+    const articleId = art.id || art.sourceUrl || art.url || title;
+    const slug = createSlug(title, articleId);
+    const baseSlug = (title || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 50).replace(/^-+|-+$/g, '');
+    const hex = slug.slice(-6);
+
+    const aliases = [baseSlug, `article-${hex}`, hex];
+    if (rawSlug && rawSlug !== slug && !aliases.includes(rawSlug)) {
+      aliases.push(rawSlug);
     }
 
     const rawSev = (art.severity || '').toUpperCase();
@@ -227,7 +257,7 @@ async function syncNews() {
       cves,
       keywords,
       additionalSources: [],
-      aliases: []
+      aliases
     };
 
     deduped.push(item);
