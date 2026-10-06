@@ -5,8 +5,62 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Oct 2026 04:19:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 08:20:19 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Atlassian Data Center Flaw Allows Unauthenticated File Read</title>
+      <link>https://secubuzz.com/news/atlassian-data-center-flaw-allows-unauthenticated-file-read</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/atlassian-data-center-flaw-allows-unauthenticated-file-read</guid>
+      <description><![CDATA[Atlassian disclosed a critical flaw (CVE‑2026‑21589) in eight Data Center products that lets unauthenticated attackers read specific files in the web application root. The vulnerability, rated 9.3/10, requires knowledge of file names and paths but no login. No mitigation details provided.]]></description>
+      <pubDate>Tue, 06 Oct 2026 06:58:56 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/critical-atlassian-flaw-lets.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>FBI Removes Contractor After ShinyHunters Breach</title>
+      <link>https://secubuzz.com/news/fbi-removes-contractor-after-shinyhunters-breach</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fbi-removes-contractor-after-shinyhunters-breach</guid>
+      <description><![CDATA[The FBI removed an Accenture contractor after a patch failure triggered the ShinyHunters breach, which stole personal details of thousands of bureau employees. The incident highlighted security failures in contractor management and prompted a review of patching practices.]]></description>
+      <pubDate>Tue, 06 Oct 2026 06:56:57 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/fbi-removes-accenture-contractor-after.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Denmark Says Attackers Accessed CPR Data for 8.8 Million People via Company Account</title>
+      <link>https://secubuzz.com/news/denmark-says-attackers-accessed-cpr-data-for-8-8-million-peo</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/denmark-says-attackers-accessed-cpr-data-for-8-8-million-peo</guid>
+      <description><![CDATA[Unauthorized parties accessed names, addresses, and personal identification numbers of about 8.8 million people in Denmark’s Central Person Register by exploiting a private Danish company’s lawful lookup rights. The breach exposed sensitive personal data of living and deceased citizens.]]></description>
+      <pubDate>Tue, 06 Oct 2026 06:00:30 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/denmark-says-attackers-accessed-cpr.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>ClickFix Uses Browser Cache to Deliver Malicious Payloads</title>
+      <link>https://secubuzz.com/news/clickfix-uses-browser-cache-to-deliver-malicious-payloads</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/clickfix-uses-browser-cache-to-deliver-malicious-payloads</guid>
+      <description><![CDATA[A new ClickFix variant tricks users into running a malicious script stored in the browser cache, disguised as a PNG file. The technique bypasses Windows run limits by pre‑fetching the payload from compromised sites, enabling execution without downloading external files.]]></description>
+      <pubDate>Tue, 06 Oct 2026 05:22:55 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/clickfix-smuggles-payloads-through.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>NIS2 Compliance: Seven Low‑Cost Credential Security Steps</title>
+      <link>https://secubuzz.com/news/nis2-compliance-seven-low-cost-credential-security-steps</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/nis2-compliance-seven-low-cost-credential-security-steps</guid>
+      <description><![CDATA[The article outlines seven budget‑friendly measures to secure credentials under NIS2, emphasizing visibility, revocability, and reviewability. It highlights that credentials were compromised in 28% of breaches in Verizon’s 2026 report, urging organizations to adopt risk‑based controls without new infrastructure.]]></description>
+      <pubDate>Tue, 06 Oct 2026 05:00:44 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/06/passwork-nis2-credential-security/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Webroot Mobile Security Offers Comprehensive Device Protection and Data Leak Monitoring</title>
+      <link>https://secubuzz.com/news/webroot-mobile-security-offers-comprehensive-device-protecti</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/webroot-mobile-security-offers-comprehensive-device-protecti</guid>
+      <description><![CDATA[Webroot Mobile Security for iPhone, iPad, and Android provides device checks, Safari protection, text scam filtering, and data breach monitoring. The app requires an active subscription and includes features like passcode protection, OS updates, jailbreak status, Wi-Fi security, and quick scan shortcuts. It is bundled with Essentials, Premium, and Total Protection plans.]]></description>
+      <pubDate>Tue, 06 Oct 2026 04:30:30 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/06/product-showcase-webroot-mobile-security/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>Cybersecurity jobs available right now: October 6, 2026</title>
       <link>https://secubuzz.com/news/cybersecurity-jobs-available-right-now-october-6-2026</link>
@@ -62,15 +116,6 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>Alleged ShinyHunters Member Detained in Jordan Amid Employee Data Breach</title>
-      <link>https://secubuzz.com/news/alleged-shinyhunters-member-detained-in-jordan-amid-employee</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/alleged-shinyhunters-member-detained-in-jordan-amid-employee</guid>
-      <description><![CDATA[Saif al-Din Khader, a suspected ShinyHunters member, is cooperating with the FBI after a large breach exposed employee data. The incident involved unauthorized access to corporate systems, leading to the theft of sensitive personnel information. Authorities are investigating the extent of the compromise and potential legal consequences.]]></description>
-      <pubDate>Mon, 05 Oct 2026 19:15:00 GMT</pubDate>
-      <source url="https://therecord.media/alleged-shinyhunters-member-detained-jordan-fbi">The Record</source>
-      <category>Breach</category>
-    </item>
-    <item>
       <title>Pwn2Own Ireland 2026 Schedule Released</title>
       <link>https://secubuzz.com/news/pwn2own-ireland-2026-schedule-released</link>
       <guid isPermaLink="true">https://secubuzz.com/news/pwn2own-ireland-2026-schedule-released</guid>
@@ -87,15 +132,6 @@
       <pubDate>Mon, 05 Oct 2026 17:22:00 GMT</pubDate>
       <source url="https://therecord.media/us-australia-warn-of-latest-citrix-vulnerability">The Record</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>IQVIA Fined €7 Million for Inadequate Health Data Anonymization</title>
-      <link>https://secubuzz.com/news/iqvia-fined-7-million-for-inadequate-health-data-anonymizati</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/iqvia-fined-7-million-for-inadequate-health-data-anonymizati</guid>
-      <description><![CDATA[Italy’s Data Protection Authority fined IQVIA €7 million ($7.8 M) for failing to properly anonymize health data, potentially exposing roughly one million patients to data exposure and de‑anonymization risks. The fine reflects regulatory enforcement of privacy standards rather than an active data breach.]]></description>
-      <pubDate>Mon, 05 Oct 2026 17:19:53 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/iqvia-fined-78-million-for-failing-to-properly-anonymize-health-data/">BleepingComputer</source>
-      <category>Policy</category>
     </item>
     <item>
       <title>ATB Grocery Chain Hit by Cyberattack, Extortion Demand Posted</title>
@@ -420,42 +456,6 @@
       <pubDate>Sat, 03 Oct 2026 14:36:33 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/warlock-exploits-sharepoint-flaws-to.html">The Hacker News</source>
       <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Fortra Patches Critical Vulnerabilities in BoKS</title>
-      <link>https://secubuzz.com/news/fortra-patches-critical-vulnerabilities-in-boks</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fortra-patches-critical-vulnerabilities-in-boks</guid>
-      <description><![CDATA[Fortra released patches for critical bugs in its BoKS platform that could allow attackers to bypass authentication, execute shell commands, and corrupt memory. The vulnerabilities posed a high risk of unauthorized access and potential data compromise. Users are urged to apply the latest updates immediately to mitigate the threat.]]></description>
-      <pubDate>Sat, 03 Oct 2026 11:34:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/fortra-patches-critical-vulnerabilities-in-boks/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Antino Backdoor Uses M365 Outlook and OneDrive for Covert Command and Control</title>
-      <link>https://secubuzz.com/news/antino-backdoor-uses-m365-outlook-and-onedrive-for-covert-co</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/antino-backdoor-uses-m365-outlook-and-onedrive-for-covert-co</guid>
-      <description><![CDATA[China-nexus threat actor UAT-11587 deployed the Rust-based Antino backdoor, abusing Microsoft 365 Outlook and OneDrive services to establish covert command and control channels against Asian government entities. The backdoor enables remote execution and data exfiltration via cloud services.]]></description>
-      <pubDate>Fri, 02 Oct 2026 23:51:11 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/antino-backdoor-abuses-m365-outlook-onedrive-c2">CyberNews AI</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Judge Dismisses Spyware Lawsuit Against Salvadoran Journalists</title>
-      <link>https://secubuzz.com/news/judge-dismisses-spyware-lawsuit-against-salvadoran-journalis</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/judge-dismisses-spyware-lawsuit-against-salvadoran-journalis</guid>
-      <description><![CDATA[A California judge dismissed a spyware lawsuit filed by Salvadoran journalists who claimed they were targeted with Pegasus. The plaintiffs, all employees of El Faro, could not establish jurisdiction in the state. The case highlights ongoing legal challenges surrounding state-sponsored spyware use against journalists.]]></description>
-      <pubDate>Fri, 02 Oct 2026 20:30:00 GMT</pubDate>
-      <source url="https://therecord.media/judge-dismisses-spyware-case-brought-by-salvadoran-journalists">The Record</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>RemoteThreat Proposes Advanced Red‑Team Testing Beyond Traditional Methods</title>
-      <link>https://secubuzz.com/news/remotethreat-proposes-advanced-red-team-testing-beyond-tradi</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/remotethreat-proposes-advanced-red-team-testing-beyond-tradi</guid>
-      <description><![CDATA[RemoteThreat, an offensive cyber operations startup, proposes expanding red‑team testing beyond traditional methods to simulate attackers’ advanced tactics. The company argues that security teams must evaluate post‑defense failure scenarios to better prepare for evolving threat capabilities. Its approach aims to improve resilience by anticipating sophisticated adversary behaviors.]]></description>
-      <pubDate>Fri, 02 Oct 2026 20:18:37 GMT</pubDate>
-      <source url="https://www.darkreading.com/cybersecurity-operations/remotethreat-bets-security-teams-need-to-test-what-happens-after-defenses-fail">Dark Reading</source>
-      <category>Policy</category>
     </item>
   </channel>
 </rss>

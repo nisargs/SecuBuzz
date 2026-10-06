@@ -11,6 +11,84 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "atlassian-data-center-flaw-allows-unauthenticated-file-read",
+    "title": "Atlassian Data Center Flaw Allows Unauthenticated File Read",
+    "summary": "Atlassian disclosed a critical flaw (CVE‑2026‑21589) in eight Data Center products that lets unauthenticated attackers read specific files in the web application root. The vulnerability, rated 9.3/10, requires knowledge of file names and paths but no login. No mitigation details provided.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/critical-atlassian-flaw-lets.html",
+    "publishedAt": "2026-10-06T06:58:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "fbi-removes-contractor-after-shinyhunters-breach",
+    "title": "FBI Removes Contractor After ShinyHunters Breach",
+    "summary": "The FBI removed an Accenture contractor after a patch failure triggered the ShinyHunters breach, which stole personal details of thousands of bureau employees. The incident highlighted security failures in contractor management and prompted a review of patching practices.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/fbi-removes-accenture-contractor-after.html",
+    "publishedAt": "2026-10-06T06:56:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "denmark-says-attackers-accessed-cpr-data-for-8-8-million-peo",
+    "title": "Denmark Says Attackers Accessed CPR Data for 8.8 Million People via Company Account",
+    "summary": "Unauthorized parties accessed names, addresses, and personal identification numbers of about 8.8 million people in Denmark’s Central Person Register by exploiting a private Danish company’s lawful lookup rights. The breach exposed sensitive personal data of living and deceased citizens.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/denmark-says-attackers-accessed-cpr.html",
+    "publishedAt": "2026-10-06T06:00:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "clickfix-uses-browser-cache-to-deliver-malicious-payloads",
+    "title": "ClickFix Uses Browser Cache to Deliver Malicious Payloads",
+    "summary": "A new ClickFix variant tricks users into running a malicious script stored in the browser cache, disguised as a PNG file. The technique bypasses Windows run limits by pre‑fetching the payload from compromised sites, enabling execution without downloading external files.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/clickfix-smuggles-payloads-through.html",
+    "publishedAt": "2026-10-06T05:22:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "nis2-compliance-seven-low-cost-credential-security-steps",
+    "title": "NIS2 Compliance: Seven Low‑Cost Credential Security Steps",
+    "summary": "The article outlines seven budget‑friendly measures to secure credentials under NIS2, emphasizing visibility, revocability, and reviewability. It highlights that credentials were compromised in 28% of breaches in Verizon’s 2026 report, urging organizations to adopt risk‑based controls without new infrastructure.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/passwork-nis2-credential-security/",
+    "publishedAt": "2026-10-06T05:00:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
+    "slug": "webroot-mobile-security-offers-comprehensive-device-protecti",
+    "title": "Webroot Mobile Security Offers Comprehensive Device Protection and Data Leak Monitoring",
+    "summary": "Webroot Mobile Security for iPhone, iPad, and Android provides device checks, Safari protection, text scam filtering, and data breach monitoring. The app requires an active subscription and includes features like passcode protection, OS updates, jailbreak status, Wi-Fi security, and quick scan shortcuts. It is bundled with Essentials, Premium, and Total Protection plans.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/product-showcase-webroot-mobile-security/",
+    "publishedAt": "2026-10-06T04:30:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": []
+  },
+  {
     "slug": "cybersecurity-jobs-available-right-now-october-6-2026",
     "title": "Cybersecurity jobs available right now: October 6, 2026",
     "summary": "The post lists an Associate IAM Engineer position in New York City, focusing on Microsoft Entra ID identity and access management. Responsibilities include user and group management, access provisioning, role assignments, authentication issue resolution, and documentation of procedures for stable IAM services.",
@@ -91,19 +169,6 @@ export const news: NewsBrief[] = [
     "aliases": []
   },
   {
-    "slug": "alleged-shinyhunters-member-detained-in-jordan-amid-employee",
-    "title": "Alleged ShinyHunters Member Detained in Jordan Amid Employee Data Breach",
-    "summary": "Saif al-Din Khader, a suspected ShinyHunters member, is cooperating with the FBI after a large breach exposed employee data. The incident involved unauthorized access to corporate systems, leading to the theft of sensitive personnel information. Authorities are investigating the extent of the compromise and potential legal consequences.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/alleged-shinyhunters-member-detained-jordan-fbi",
-    "publishedAt": "2026-10-05T19:15:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
     "slug": "pwn2own-ireland-2026-schedule-released",
     "title": "Pwn2Own Ireland 2026 Schedule Released",
     "summary": "The Pwn2Own Ireland 2026 competition in Cork has announced its full schedule, featuring over 60 phone entries and a live leaderboard. Events include Samsung Galaxy S26, Sonos Era 300, and LiteLLM challenges, with prizes of $50,000 and Master of Pwn points for winners.",
@@ -125,19 +190,6 @@ export const news: NewsBrief[] = [
     "source": "The Record",
     "sourceUrl": "https://therecord.media/us-australia-warn-of-latest-citrix-vulnerability",
     "publishedAt": "2026-10-05T17:22:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "iqvia-fined-7-million-for-inadequate-health-data-anonymizati",
-    "title": "IQVIA Fined €7 Million for Inadequate Health Data Anonymization",
-    "summary": "Italy’s Data Protection Authority fined IQVIA €7 million ($7.8 M) for failing to properly anonymize health data, potentially exposing roughly one million patients to data exposure and de‑anonymization risks. The fine reflects regulatory enforcement of privacy standards rather than an active data breach.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/iqvia-fined-78-million-for-failing-to-properly-anonymize-health-data/",
-    "publishedAt": "2026-10-05T17:19:53.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
@@ -3243,61 +3295,6 @@ export const news: NewsBrief[] = [
     "source": "Help Net Security",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/09/24/meta-private-processing-for-ai-glasses/",
     "publishedAt": "2026-09-24T11:35:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "uk-establishes-national-centre-for-information-defence-to-co",
-    "title": "UK Establishes National Centre for Information Defence to Counter Russian Disinformation",
-    "summary": "The UK government announced the creation of a National Centre for Information Defence to track, attribute, and disrupt hostile state disinformation campaigns, primarily targeting Russian operations. The centre will coordinate with security chiefs to counter state‑sponsored misinformation efforts and protect public discourse.",
-    "category": "Malware",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/24/uk-national-centre-for-information-defence-disinformation-detection/",
-    "publishedAt": "2026-09-24T11:25:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "enable-agentic-remediation-to-fix-known-issues",
-    "title": "Enable Agentic Remediation to Fix Known Issues",
-    "summary": "Agentic remediation focuses on addressing known security problems rather than uncertain risks. The approach emphasizes automated, evidence‑based fixes for identified vulnerabilities, avoiding subjective judgment calls. It promotes systematic patching and configuration management to reduce exposure to known threats.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/begin-at-the-end-how-to-enable-agentic-remediation/",
-    "publishedAt": "2026-09-24T11:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "solarwinds-patches-critical-rce-flaws-in-observability-self-",
-    "title": "SolarWinds Patches Critical RCE Flaws in Observability Self‑Hosted",
-    "summary": "SolarWinds released patches for two critical remote code execution flaws, CVE-2026-28324 and CVE-2026-28325, in its Observability Self‑Hosted product. The vulnerabilities allow unauthenticated attackers to execute arbitrary code. Applying the vendor’s updates mitigates the risk.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/solarwinds-patches-critical-rce-flaws-in-observability-self-hosted/",
-    "publishedAt": "2026-09-24T10:40:40.000Z",
-    "cves": [
-      "CVE-2026-28324",
-      "CVE-2026-28325"
-    ],
-    "additionalSources": [],
-    "aliases": []
-  },
-  {
-    "slug": "astrana-health-data-breach-exposes-private-information",
-    "title": "Astrana Health Data Breach Exposes Private Information",
-    "summary": "Hackers impersonated Astrana Health staff and phished employees to gain server access, compromising private and confidential data. The breach involved unauthorized entry into company servers, exposing sensitive information. No public disclosure of specific data types was made, but the incident highlights phishing-based credential theft.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/astrana-health-data-breach-impacts-private-confidential-information/",
-    "publishedAt": "2026-09-24T09:56:04.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": []
