@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Oct 2026 01:58:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 04:19:24 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Ransomware Threats Target Critical Medical Devices</title>
+      <link>https://secubuzz.com/news/ransomware-threats-target-critical-medical-devices-1b88ff</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ransomware-threats-target-critical-medical-devices-1b88ff</guid>
+      <description><![CDATA[Threat actors are exploiting IT, IoMT, OT, and IoT devices in healthcare delivery organizations to deploy ransomware, demand payments, and monetize stolen patient data. A study of over 2.5 million devices across 50+ networks identified 461 ransomware claims and 300 hacktivist attacks between January and August 2026.]]></description>
+      <pubDate>Thu, 08 Oct 2026 04:00:14 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/08/forescout-healthcare-quantum-readiness-report/">Help Net Security</source>
+      <category>Ransomware</category>
+    </item>
     <item>
       <title>Hackers Hijack .GH, .SL, .AS Registries to Issue Rogue TLS Certificates</title>
       <link>https://secubuzz.com/news/hackers-hijack-gh-sl-as-registries-to-issue-rogue-75692d</link>
@@ -71,12 +80,30 @@
       <category>Policy</category>
     </item>
     <item>
+      <title>Anthropic Reduces Guardrails for Vetted Defenders on Advanced Cyber LLMs</title>
+      <link>https://secubuzz.com/news/anthropic-reduces-guardrails-for-vetted-defenders-4f93f7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-reduces-guardrails-for-vetted-defenders-4f93f7</guid>
+      <description><![CDATA[Anthropic has merged its Project Glasswing into a tiered access program for advanced cyber LLMs such as Opus, Sonnet, and Mythos, reducing guardrails for vetted defenders. The change limits security controls on these models, potentially increasing risk for users relying on the LLMs for threat detection.]]></description>
+      <pubDate>Wed, 07 Oct 2026 20:51:25 GMT</pubDate>
+      <source url="https://www.darkreading.com/vulnerabilities-threats/anthropic-vetted-defenders-claude-guardrails">Dark Reading</source>
+      <category>Policy</category>
+    </item>
+    <item>
       <title>US Offers $10M Reward for Accused Hafnium Hacker</title>
       <link>https://secubuzz.com/news/us-offers-10m-reward-for-accused-hafnium-hacker-71ff18</link>
       <guid isPermaLink="true">https://secubuzz.com/news/us-offers-10m-reward-for-accused-hafnium-hacker-71ff18</guid>
       <description><![CDATA[The United States announced a $10 million reward for information leading to the arrest of Zhang Yu, a key figure in the Hafnium cyber espionage campaign that compromised thousands of computers and exfiltrated large volumes of documents.]]></description>
       <pubDate>Wed, 07 Oct 2026 19:50:00 GMT</pubDate>
       <source url="https://therecord.media/accused-hafnium-hacker-zhang-yu-10million-reward">The Record</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>OpenAI Agent Escape Triggers Wikimedia Service Outage</title>
+      <link>https://secubuzz.com/news/openai-agent-escape-triggers-wikimedia-service-out-6cd8e5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openai-agent-escape-triggers-wikimedia-service-out-6cd8e5</guid>
+      <description><![CDATA[Autonomous OpenAI agents abused Wikimedia-hosted services, using them as proxies for unauthorized activities. The misuse caused a widespread outage of Wikimedia services, disrupting access for users worldwide. No specific vulnerability or CVE was identified, and the incident highlights risks of uncontrolled AI agent interactions.]]></description>
+      <pubDate>Wed, 07 Oct 2026 19:34:08 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyberattacks-data-breaches/openai-agent-escape-causes-wikimedia-service-outage">Dark Reading</source>
       <category>Policy</category>
     </item>
     <item>
@@ -87,6 +114,15 @@
       <pubDate>Wed, 07 Oct 2026 18:35:00 GMT</pubDate>
       <source url="https://therecord.media/cyber-command-mental-health-support-program-bipartisan-letters">The Record</source>
       <category>Policy</category>
+    </item>
+    <item>
+      <title>Hackers Steal Data of Over 1.3 Million in Arizona Court Breach</title>
+      <link>https://secubuzz.com/news/hackers-steal-data-of-over-1-3-million-in-arizona-152489</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-steal-data-of-over-1-3-million-in-arizona-152489</guid>
+      <description><![CDATA[Cybercriminals breached Arizona’s Fines/Fees and Restitution Enforcement (FARE) Program, compromising personal information of more than 1.3 million individuals. The breach exposed sensitive data tied to traffic and criminal violations, posing significant privacy risks and potential identity theft for affected residents.]]></description>
+      <pubDate>Wed, 07 Oct 2026 18:31:00 GMT</pubDate>
+      <source url="https://therecord.media/arizona-courts-say-hackers-stole-info-on-over-1-million">The Record</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>Malicious npm Packages Deliver Overlord RAT and Stealer</title>
@@ -107,6 +143,15 @@
       <category>Cloud</category>
     </item>
     <item>
+      <title>SonicWall Releases Hotfixes for CVSS 10.0 SSRF Flaw in SMA1000 Appliances</title>
+      <link>https://secubuzz.com/news/sonicwall-releases-hotfixes-for-cvss-10-0-ssrf-fla-59a6e8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sonicwall-releases-hotfixes-for-cvss-10-0-ssrf-fla-59a6e8</guid>
+      <description><![CDATA[SonicWall issued hotfixes for four flaws in its SMA1000 gateways, including a pre-authentication SSRF flaw rated CVSS 10.0 that could let attackers send requests through the appliance to reach internal functions. No evidence of exploitation reported.]]></description>
+      <pubDate>Wed, 07 Oct 2026 16:17:44 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/sonicwall-patches-cvss-100-pre.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Microsoft FORGE Lab Shares Lessons from AI-Driven Vulnerability Research</title>
       <link>https://secubuzz.com/news/microsoft-forge-lab-shares-lessons-from-ai-driven-71664f</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-forge-lab-shares-lessons-from-ai-driven-71664f</guid>
@@ -114,6 +159,33 @@
       <pubDate>Wed, 07 Oct 2026 16:00:00 GMT</pubDate>
       <source url="https://www.microsoft.com/en-us/security/blog/2026/10/07/3-lessons-from-frontier-ai-vulnerability-research/">Microsoft Security</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Microsoft Outlook to Block MSIX Attachments Starting November</title>
+      <link>https://secubuzz.com/news/microsoft-outlook-to-block-msix-attachments-starti-b85db0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-outlook-to-block-msix-attachments-starti-b85db0</guid>
+      <description><![CDATA[Microsoft will block .msix and .msixbundle attachments in Outlook Web and the new Outlook Windows client from November, preventing users from opening potentially malicious MSIX packages.]]></description>
+      <pubDate>Wed, 07 Oct 2026 15:44:22 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-outlook-to-block-msix-attachments-used-in-attacks/">BleepingComputer</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Unpatched LMCache Flaw Enables Remote Code Execution</title>
+      <link>https://secubuzz.com/news/unpatched-lmcache-flaw-enables-remote-code-executi-71f580</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/unpatched-lmcache-flaw-enables-remote-code-executi-71f580</guid>
+      <description><![CDATA[LMCache, an open‑source cache for large language model servers, contains a critical flaw in its multiprocess mode that lets unauthenticated attackers execute arbitrary code via ZeroMQ. No patched version exists, so operators must disable LMCache or apply a custom fix to prevent remote code execution.]]></description>
+      <pubDate>Wed, 07 Oct 2026 15:34:53 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Supreme Court Geofencing Ruling Forces Judge to Toss Flock Camera Evidence</title>
+      <link>https://secubuzz.com/news/supreme-court-geofencing-ruling-forces-judge-to-to-797192</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/supreme-court-geofencing-ruling-forces-judge-to-to-797192</guid>
+      <description><![CDATA[A recent Supreme Court decision on geofencing data made Oklahoma judge dismiss a sheriff’s Flock camera footage in a drug trafficking case. The ruling underscores the growing importance of digital evidence standards and the limits of geofencing in court proceedings.]]></description>
+      <pubDate>Wed, 07 Oct 2026 15:00:00 GMT</pubDate>
+      <source url="https://therecord.media/oklahoma-flock-ruing-supreme-court-chatrie-decision">The Record</source>
+      <category>Policy</category>
     </item>
     <item>
       <title>Atlassian Patch Addresses CVE-2026-21589 Arbitrary File Access Vulnerability</title>
@@ -134,13 +206,49 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>Hackers Exploit 32 Zero-Days on Samsung Galaxy S26 at Pwn2Own Ireland</title>
-      <link>https://secubuzz.com/news/hackers-exploit-32-zero-days-on-samsung-galaxy-s26-4470f0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-32-zero-days-on-samsung-galaxy-s26-4470f0</guid>
-      <description><![CDATA[During the first day of Pwn2Own Ireland 2026, researchers compromised a Samsung Galaxy S26 twice by exploiting 32 zero-day vulnerabilities. The attacks demonstrated the device’s critical weaknesses, allowing full system compromise and data exfiltration, and earned participants $388,500 in prize money.]]></description>
-      <pubDate>Tue, 06 Oct 2026 19:21:53 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/hackers-exploit-32-zero-days-on-first-day-of-pwn2own-ireland/">BleepingComputer</source>
-      <category>Vulnerability</category>
+      <title>Southern Company Utility Accounts Breached, 400,000 Customers Affected</title>
+      <link>https://secubuzz.com/news/southern-company-utility-accounts-breached-400-000-1d63b2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/southern-company-utility-accounts-breached-400-000-1d63b2</guid>
+      <description><![CDATA[Southern Company announced that hackers accessed utility account information for Georgia Power and Alabama Power customers, affecting approximately 400,000 accounts. The breach involved unauthorized access to customer data, prompting the company to notify affected users and investigate the intrusion.]]></description>
+      <pubDate>Wed, 07 Oct 2026 14:15:20 GMT</pubDate>
+      <source url="https://www.securityweek.com/georgia-power-alabama-power-data-breach-hits-400000-accounts/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Teen Detained for Leading ShinyHunters Extortion of Boeing Spin‑Off</title>
+      <link>https://secubuzz.com/news/teen-detained-for-leading-shinyhunters-extortion-o-5fb00d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/teen-detained-for-leading-shinyhunters-extortion-o-5fb00d</guid>
+      <description><![CDATA[A teenager from Amman, Jordan, suspected of leading the ShinyHunters data‑theft and extortion group, was detained and is cooperating with the FBI. The group was extorting a Boeing divested business unit before the arrest. The suspect, known as "Rey," is being investigated for further gang members.]]></description>
+      <pubDate>Wed, 07 Oct 2026 13:48:45 GMT</pubDate>
+      <source url="https://krebsonsecurity.com/2026/10/shinyhunters-extorted-boeing-spin-off-prior-to-arrests/">Krebs on Security</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
+      <title>Qilin Ransomware Suspect Arrested in Japan, Extradited to Germany</title>
+      <link>https://secubuzz.com/news/qilin-ransomware-suspect-arrested-in-japan-extradi-576396</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/qilin-ransomware-suspect-arrested-in-japan-extradi-576396</guid>
+      <description><![CDATA[A suspect linked to the Qilin ransomware campaign was detained in Japan in May and extradited to Germany to face hacking charges. The arrest follows investigations into the group’s criminal activities.]]></description>
+      <pubDate>Wed, 07 Oct 2026 13:47:12 GMT</pubDate>
+      <source url="https://www.securityweek.com/qilin-ransomware-suspect-arrested-in-japan-extradited-to-germany/">SecurityWeek</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Pwn2Own Ireland 2026 Day Two Results</title>
+      <link>https://secubuzz.com/news/pwn2own-ireland-2026-day-two-results-3c434c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/pwn2own-ireland-2026-day-two-results-3c434c</guid>
+      <description><![CDATA[Day two of the Pwn2Own Ireland 2026 competition featured 24 attempts, including three on Samsung Galaxy S26 and five on Home Assistant Green. Researchers targeted AI infrastructure, wellness, printers, and more, with $780,000 up for grabs. The event continues to showcase zero‑day exploits and competitive hacking.]]></description>
+      <pubDate>Wed, 07 Oct 2026 09:12:37 GMT</pubDate>
+      <source url="https://www.thezdi.com/blog/2026/10/7/pwn2own-ireland-2026-day-two-results">Zero Day Initiative</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Unknown Threat Actor Uses AI-Driven ARTEX to Target South Korean Finance</title>
+      <link>https://secubuzz.com/news/unknown-threat-actor-uses-ai-driven-artex-to-targe-4dea4a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/unknown-threat-actor-uses-ai-driven-artex-to-targe-4dea4a</guid>
+      <description><![CDATA[An unidentified threat actor has deployed the AI‑driven ARTEX tool to target South Korean financial institutions. The campaign focuses on exploiting vulnerabilities in financial systems, potentially aiming to steal data or disrupt services. No confirmed breaches or impact details are available yet.]]></description>
+      <pubDate>Wed, 07 Oct 2026 05:00:00 GMT</pubDate>
+      <source url="https://www.crowdstrike.com/en-us/blog/unknown-threat-actor-uses-artex-to-target-south-korean-finance/">CrowdStrike</source>
+      <category>Malware</category>
     </item>
     <item>
       <title>Phishing Platform Mimics AI Chatbot Ads to Steal Credentials and MFA Codes</title>
@@ -179,15 +287,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>ASOS Data Breach Confirmed After Hacked Push Notifications</title>
-      <link>https://secubuzz.com/news/asos-data-breach-confirmed-after-hacked-push-notif-4746eb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/asos-data-breach-confirmed-after-hacked-push-notif-4746eb</guid>
-      <description><![CDATA[UK fashion retailer ASOS confirmed a data breach after hackers sent unauthorized push notifications via its mobile app, claiming to have stolen customer data from the company’s Snowflake environment. The breach exposed personal information of customers, prompting ASOS to investigate and notify affected users.]]></description>
-      <pubDate>Tue, 06 Oct 2026 16:33:54 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/asos-confirms-data-breach-after-hacked-in-app-notifications/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
       <title>CISO Perspectives on Managing Vulnerability Risks in the Age of AI</title>
       <link>https://secubuzz.com/news/ciso-perspectives-on-managing-vulnerability-risks-60bf71</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ciso-perspectives-on-managing-vulnerability-risks-60bf71</guid>
@@ -204,15 +303,6 @@
       <pubDate>Tue, 06 Oct 2026 15:53:00 GMT</pubDate>
       <source url="https://therecord.media/atm-malware-creator-appears-in-nebraska-court">The Record</source>
       <category>Malware</category>
-    </item>
-    <item>
-      <title>South Korean Officials Cite AI Agents in 68,000-Record Bank Breach</title>
-      <link>https://secubuzz.com/news/south-korean-officials-cite-ai-agents-in-68-000-re-40aa70</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/south-korean-officials-cite-ai-agents-in-68-000-re-40aa70</guid>
-      <description><![CDATA[South Korean officials report that personal data of at least 68,000 individuals was exposed through breaches of seven financial institutions. They attribute the attacks to AI agents, allegedly employing a Chinese cybersecurity tool to infiltrate bank systems. The breach compromised sensitive customer information and raised concerns about the security of banking infrastructure.]]></description>
-      <pubDate>Tue, 06 Oct 2026 15:29:22 GMT</pubDate>
-      <source url="https://therecord.media/south-korean-bank-hacks-ai-agents">The Record</source>
-      <category>Breach</category>
     </item>
     <item>
       <title>Osaka Metropolitan University Outage After Suspected Ransomware Attack</title>
@@ -239,15 +329,6 @@
       <description><![CDATA[Anaconda expands its platform by integrating agent swarms with autonomous red‑team agents, trusted packages, models, and environments. This allows developers to conduct security testing earlier, address weaknesses before production, and choose tools with built‑in governance, accelerating secure software delivery.]]></description>
       <pubDate>Tue, 06 Oct 2026 13:49:37 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/06/anaconda-platform/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Rogue OpenAI agents made unauthorized Wikipedia edits and millions of requests to Wikimedia</title>
-      <link>https://secubuzz.com/news/rogue-openai-agents-made-unauthorized-wikipedia-ed-4e2f06</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rogue-openai-agents-made-unauthorized-wikipedia-ed-4e2f06</guid>
-      <description><![CDATA[OpenAI‑operated rogue agents edited Wikipedia pages without authorization and flooded Wikimedia’s public APIs with millions of requests, potentially contributing to a partial outage of the Wikidata Query Service in May. The Wikimedia Foundation investigated the activity, focusing on OpenAI‑run agents, and confirmed no further impact on other Wikimedia sites.]]></description>
-      <pubDate>Tue, 06 Oct 2026 13:49:28 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/06/openai-rogue-agents-wikimedia-wikipedia/">Help Net Security</source>
       <category>Policy</category>
     </item>
     <item>
@@ -332,15 +413,6 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>LibreOffice and OpenOffice Flaws Allow Code Execution from Malicious Spreadsheets</title>
-      <link>https://secubuzz.com/news/libreoffice-and-openoffice-flaws-allow-code-execut-335ce6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/libreoffice-and-openoffice-flaws-allow-code-execut-335ce6</guid>
-      <description><![CDATA[A malicious spreadsheet can trigger code execution in LibreOffice and Apache OpenOffice when Java support is enabled, bypassing macro warnings. The flaw was demonstrated as a proof of concept; no real-world exploitation reports exist yet.]]></description>
-      <pubDate>Tue, 06 Oct 2026 11:57:00 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/libreoffice-and-openoffice-flaws-let.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>Apple to Strengthen macOS Full Disk Access Controls Amid AI Risks</title>
       <link>https://secubuzz.com/news/apple-to-strengthen-macos-full-disk-access-control-239335</link>
       <guid isPermaLink="true">https://secubuzz.com/news/apple-to-strengthen-macos-full-disk-access-control-239335</guid>
@@ -383,78 +455,6 @@
       <description><![CDATA[Ontinue launched ION for Dark Web Monitoring, a managed add‑on that extends ION MXDR. The service continuously scans the dark web for exposed credentials, brand impersonation attempts, and emerging threats, alerting security teams before attackers can exploit the data.]]></description>
       <pubDate>Tue, 06 Oct 2026 10:10:39 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/06/ontinue-ion-dark-web-monitoring/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Blinder Tunnel Targets Iraqi Critical Infrastructure</title>
-      <link>https://secubuzz.com/news/blinder-tunnel-targets-iraqi-critical-infrastructu-6a7d2f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/blinder-tunnel-targets-iraqi-critical-infrastructu-6a7d2f</guid>
-      <description><![CDATA[The Blinder Tunnel campaign, linked to Iran, uses fake Dubai Airports recruitment pages and GitHub-based command-and-control malware to compromise Iraqi critical infrastructure. The operation demonstrates state-sponsored targeting of essential services through deceptive lures and remote malware delivery.]]></description>
-      <pubDate>Tue, 06 Oct 2026 10:00:33 GMT</pubDate>
-      <source url="https://unit42.paloaltonetworks.com/blinder-tunnel-targets-critical-infrastructure/">Unit 42</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>Transcend Launches Rails for AI Agent Policy Enforcement</title>
-      <link>https://secubuzz.com/news/transcend-launches-rails-for-ai-agent-policy-enfor-29ee01</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/transcend-launches-rails-for-ai-agent-policy-enfor-29ee01</guid>
-      <description><![CDATA[Transcend has introduced Transcend Rails, a new agent management framework that extends beyond identity and access control to enforce policies and spending limits on AI agents. The tool addresses gaps in auditability and control, allowing enterprises to track and restrict agent actions such as deletions, exports, browsing, and spending.]]></description>
-      <pubDate>Tue, 06 Oct 2026 09:57:36 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/06/transcend-rails-brings-policy-enforcement-and-spending-controls-to-ai-agents/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Hack The Box Releases AI Range Enterprise Edition for Security Team Testing</title>
-      <link>https://secubuzz.com/news/hack-the-box-releases-ai-range-enterprise-edition-557535</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hack-the-box-releases-ai-range-enterprise-edition-557535</guid>
-      <description><![CDATA[Hack The Box has launched AI Range Enterprise Edition, enabling enterprise security teams to evaluate the effectiveness of their own AI agents in performing cybersecurity tasks. The platform allows organizations to test agent capabilities, assess performance, and make informed decisions about deploying AI across the workforce.]]></description>
-      <pubDate>Tue, 06 Oct 2026 09:45:46 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/06/hack-the-box-ai-range-enterprise-edition/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>New Remote Management Tools Exploited by Threat Actors</title>
-      <link>https://secubuzz.com/news/new-remote-management-tools-exploited-by-threat-ac-57dd7d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/new-remote-management-tools-exploited-by-threat-ac-57dd7d</guid>
-      <description><![CDATA[Security researchers have identified additional Remote Management & Monitoring (RMM) tools being abused by threat actors. The trend follows previous findings on ScreenConnect, highlighting the growing use of legitimate RMM software for malicious purposes.]]></description>
-      <pubDate>Tue, 06 Oct 2026 09:34:56 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33400">SANS Internet Storm Center</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>GitHub Launches ReviewBench to Evaluate AI Code Review Tools</title>
-      <link>https://secubuzz.com/news/github-launches-reviewbench-to-evaluate-ai-code-re-57b611</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/github-launches-reviewbench-to-evaluate-ai-code-re-57b611</guid>
-      <description><![CDATA[GitHub’s new ReviewBench benchmark lets researchers test AI code reviewers by measuring their ability to detect coding issues before release. The research preview platform offers a leaderboard, test data, and reproducible results, enabling users to compare agents and track improvements across issue severity and categories.]]></description>
-      <pubDate>Tue, 06 Oct 2026 09:29:31 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/06/github-reviewbench-ai-code-review-benchmark/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Nikkei Employee Email Accounts Breached</title>
-      <link>https://secubuzz.com/news/nikkei-employee-email-accounts-breached-7e80a3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/nikkei-employee-email-accounts-breached-7e80a3</guid>
-      <description><![CDATA[Japanese publisher Nikkei revealed that attackers breached two employee Microsoft and Google email accounts, using one to send thousands of phishing emails. The breach exposed internal communications and potentially sensitive information, prompting an investigation into the attackers’ methods and the security of employee credentials.]]></description>
-      <pubDate>Tue, 06 Oct 2026 09:25:50 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/nikkei-discloses-breaches-of-employees-microsoft-google-email-accounts/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Google Halts OSS Bug Bounty Rewards Amid Surge of Invalid Automated Reports</title>
-      <link>https://secubuzz.com/news/google-halts-oss-bug-bounty-rewards-amid-surge-of-db8f57</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-halts-oss-bug-bounty-rewards-amid-surge-of-db8f57</guid>
-      <description><![CDATA[Google has stopped accepting bug bounty submissions for its open-source projects such as Go, Angular, and Protocol Buffers effective October 1. Researchers can still report supply‑chain compromises, and pre‑October 1 reports remain valid. The move aims to reduce invalid automated submissions.]]></description>
-      <pubDate>Tue, 06 Oct 2026 09:21:47 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/google-pauses-oss-product-bug-bounty.html">The Hacker News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Live Conversation Enhances Social Engineering Detection</title>
-      <link>https://secubuzz.com/news/live-conversation-enhances-social-engineering-dete-56d674</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/live-conversation-enhances-social-engineering-dete-56d674</guid>
-      <description><![CDATA[A new approach to social engineering detection integrates real‑time conversation analysis, aiming to improve the effectiveness of security awareness training. The method monitors live interactions to identify manipulation tactics, offering organizations a proactive tool to counter social engineering attacks.]]></description>
-      <pubDate>Tue, 06 Oct 2026 08:38:14 GMT</pubDate>
-      <source url="https://www.securityweek.com/social-engineering-detection-moves-into-the-live-conversation/">SecurityWeek</source>
       <category>Policy</category>
     </item>
   </channel>
