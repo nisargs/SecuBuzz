@@ -11,6 +11,132 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "ransomware-attack-disrupts-japan-s-idcf-cloud-serv-1715fe",
+    "title": "Ransomware Attack Disrupts Japan's IDCF Cloud Service",
+    "summary": "A ransomware operation targeted IDCF Cloud, a major Japanese cloud provider, causing an outage at a data center cluster that serves eastern Japan. The attack impacted government clients, leading to service disruption and potential data access issues. No specific remediation steps were disclosed.",
+    "category": "Ransomware",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ransomware-attack-disrupts-japans-idcf-cloud-used-by-govt-clients/",
+    "publishedAt": "2026-10-08T20:09:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ransomware-attack-disrupts-japan-s-idcf-cloud-serv",
+      "article-1715fe",
+      "1715fe",
+      "ransomware-attack-disrupts-japan-s-idcf-cloud-service"
+    ]
+  },
+  {
+    "slug": "low-cost-android-phones-ship-with-residential-prox-247d3e",
+    "title": "Low-Cost Android Phones Ship with Residential Proxy Malware",
+    "summary": "The 'Midnight Mimosa' malware campaign infects low-cost Android smartphones via embedded firmware. Attackers silently install apps, conduct ad fraud, and convert devices into residential proxies. The campaign exploits firmware vulnerabilities, enabling covert data exfiltration and botnet expansion.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/low-cost-android-phones-ship-with-residential-proxy-malware/",
+    "publishedAt": "2026-10-08T19:20:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "low-cost-android-phones-ship-with-residential-prox",
+      "article-247d3e",
+      "247d3e",
+      "low-cost-android-phones-ship-with-residential-proxy-malware"
+    ]
+  },
+  {
+    "slug": "international-coalition-seizes-tools-used-by-cyber-579d71",
+    "title": "International coalition seizes tools used by cyber firm behind Flax Typhoon",
+    "summary": "The U.S. and allied nations dismantled digital tools and infrastructure operated by Beijing‑based Integrity Tech, which enabled widespread vulnerability scanning and occasional intrusions as part of the Flax Typhoon campaign. The seizure disrupts the group’s ability to conduct state‑sponsored espionage operations.",
+    "category": "Malware",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/flax-typhoon-china-tools-integrity-tech-international-takedown",
+    "publishedAt": "2026-10-08T19:20:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "international-coalition-seizes-tools-used-by-cyber",
+      "article-579d71",
+      "579d71",
+      "international-coalition-seizes-tools-used-by-cyber-firm-behi"
+    ]
+  },
+  {
+    "slug": "venezuelan-cartel-malware-leader-arrested-for-atm-24f37d",
+    "title": "Venezuelan Cartel Malware Leader Arrested for ATM Jackpotting",
+    "summary": "A Venezuelan cartel’s malware chief, linked to the Tren de Aragua gang, was captured by U.S. authorities. He was the first cybercriminal to appear on the FBI’s “10 Most Wanted Fugitives” list, allegedly funneling illicit cash into the cartel’s violent operations.",
+    "category": "Malware",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/venezuelan-cartel-malware-honcho-nabbed-atm-jackpotting",
+    "publishedAt": "2026-10-08T19:08:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "venezuelan-cartel-malware-leader-arrested-for-atm",
+      "article-24f37d",
+      "24f37d",
+      "venezuelan-cartel-malware-leader-arrested-for-atm-jackpottin"
+    ]
+  },
+  {
+    "slug": "fbi-reports-china-linked-hackers-stole-emails-via-2c2286",
+    "title": "FBI Reports China-Linked Hackers Stole Emails via Third-Party Portal",
+    "summary": "Hackers tied to Integrity Technology Group, a Chinese cybersecurity firm, stole emails from Southeast Asian government agencies, law enforcement, healthcare systems, and religious institutions. The FBI and six other countries say the attackers operated a portal that granted third parties access to the compromised data.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/fbi-says-china-linked-hackers-ran.html",
+    "publishedAt": "2026-10-08T18:32:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fbi-reports-china-linked-hackers-stole-emails-via",
+      "article-2c2286",
+      "2c2286",
+      "fbi-reports-china-linked-hackers-stole-emails-via-third-part"
+    ]
+  },
+  {
+    "slug": "russian-spy-group-enhances-matchboil-malware-with-2f388d",
+    "title": "Russian Spy Group Enhances 'MatchBoil' Malware with Stealth Features",
+    "summary": "Cyber‑espionage actor UAC‑0099 has refined its flagship dropper, 'MatchBoil', adding stealth capabilities in campaigns targeting Ukrainian organizations. The update improves concealment but no active exploitation has been reported.",
+    "category": "Malware",
+    "severity": "MEDIUM",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/russian-spies-matchboil-malware-facelift",
+    "publishedAt": "2026-10-08T18:01:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "russian-spy-group-enhances-matchboil-malware-with",
+      "article-2f388d",
+      "2f388d",
+      "russian-spy-group-enhances-matchboil-malware-with-stealth-fe"
+    ]
+  },
+  {
+    "slug": "ransomware-affiliate-keeps-profits-exposes-server-600325",
+    "title": "Ransomware Affiliate Keeps Profits, Exposes Server with Tools",
+    "summary": "A ransomware affiliate betrayed its partners by keeping the profits for itself. Meanwhile, an attacker left a server exposed, complete with tools and intrusion traces. Malicious code also appeared in developer packages and extensions, highlighting ongoing security lapses on both sides of the fence.",
+    "category": "Ransomware",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/threatsday-ransomware-affiliate.html",
+    "publishedAt": "2026-10-08T17:58:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ransomware-affiliate-keeps-profits-exposes-server",
+      "article-600325",
+      "600325",
+      "ransomware-affiliate-keeps-profits-exposes-server-with-tools"
+    ]
+  },
+  {
     "slug": "fakegit-malware-campaign-distributes-17-610-fake-g-548ce9",
     "title": "FakeGit Malware Campaign Distributes 17,610 Fake GitHub Repositories",
     "summary": "A new wave of FakeGit malware has surfaced, with over 17,000 counterfeit GitHub repositories pushing the SmartLoader downloader that installs the StealC infostealer. The campaign reactivated this month, targeting developers and users who clone the fake repos. No patch or mitigation is publicly available yet.",
@@ -62,6 +188,24 @@ export const news: NewsBrief[] = [
       "article-545202",
       "545202",
       "hackers-access-asos-employee-account-and-leak-personal-data"
+    ]
+  },
+  {
+    "slug": "for577-update-adds-scripts-for-ai-agent-forensic-r-57dd7d",
+    "title": "FOR577 Update Adds Scripts for AI Agent Forensic Review",
+    "summary": "The SANS Internet Storm Center released a major update to FOR577, adding new scripts for forensic review of AI agent activity. The update covers popular AI coding assistants such as Claude Code, Codex, Gemini CLI, Cursor, Copilot, Warp, Windsurf, Qwen Code, OpenCode, and Hermes, detailing chat history locations and evidence gathering.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33410",
+    "publishedAt": "2026-10-08T16:52:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "for577-update-adds-scripts-for-ai-agent-forensic-r",
+      "article-57dd7d",
+      "57dd7d",
+      "for577-update-adds-scripts-for-ai-agent-forensic-review"
     ]
   },
   {
@@ -243,24 +387,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "cheap-android-phones-pre-loaded-with-ad-fraud-malw-4531ca",
-    "title": "Cheap Android Phones Pre‑Loaded with Ad‑Fraud Malware",
-    "summary": "Researchers at Bitdefender discovered that thousands of inexpensive Android devices shipped with ad‑fraud malware that installs before first use and cannot be uninstalled. The malware undermines device security and enables persistent ad fraud, posing a supply‑chain risk to users.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/cheap-androids-shipped-with-ad-fraud-malware",
-    "publishedAt": "2026-10-08T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cheap-android-phones-pre-loaded-with-ad-fraud-malw",
-      "article-4531ca",
-      "4531ca",
-      "cheap-android-phones-pre-loaded-with-ad-fraud-malware"
-    ]
-  },
-  {
     "slug": "cloudflare-radar-redesign-enhances-accessibility-f-53eeb5",
     "title": "Cloudflare Radar Redesign Enhances Accessibility for Non-Technical Users",
     "summary": "Cloudflare has updated its Radar platform, adding an interactive map and standardized components to present real‑time global traffic and outage data. The redesign aims to make complex network insights usable for journalists, researchers, and everyday users while maintaining technical depth. No security impact reported.",
@@ -384,6 +510,24 @@ export const news: NewsBrief[] = [
       "article-2fbbbc",
       "2fbbbc",
       "microsoft-teams-adds-support-for-third-party-deepfake-detect"
+    ]
+  },
+  {
+    "slug": "chinese-state-sponsored-actors-use-automated-tools-4fe541",
+    "title": "Chinese State‑Sponsored Actors Use Automated Tools and Manual Exploits to Steal Sensitive Data",
+    "summary": "Chinese government‑linked threat actors, backed by the Integrity Technology Group, combine automated scanning, large‑scale botnets, and manual exploitation to target organizations worldwide. They use cross‑site scripting, password spraying on Microsoft Exchange, and VPN persistence to exfiltrate emails and credentials. Mitigation includes disabling unused services, sanitizing web inputs, and monitoring Exchange for anomalous activity.",
+    "category": "Malware",
+    "severity": "HIGH",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-281a",
+    "publishedAt": "2026-10-08T12:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chinese-state-sponsored-actors-use-automated-tools",
+      "article-4fe541",
+      "4fe541",
+      "chinese-state-sponsored-actors-use-automated-tools-and-manua"
     ]
   },
   {
@@ -619,24 +763,6 @@ export const news: NewsBrief[] = [
       "article-5fe20c",
       "5fe20c",
       "github-introduces-ai-detector-to-block-passwords-before-code"
-    ]
-  },
-  {
-    "slug": "matchboil-malware-used-by-russia-aligned-group-to-20d654",
-    "title": "MATCHBOIL Malware Used by Russia‑Aligned Group to Install Spying Backdoor in Ukraine",
-    "summary": "ESET researchers identified MATCHBOIL, a downloader used by the Russia‑aligned group UAC‑0099, which installs a spying backdoor on Windows machines in Ukraine. The malware targets transportation, manufacturing, and energy sectors, planting a secondary program that creates privileged access for the attackers.",
-    "category": "Malware",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/matchboil-malware-uac-0099/",
-    "publishedAt": "2026-10-08T09:00:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "matchboil-malware-used-by-russia-aligned-group-to",
-      "article-20d654",
-      "20d654",
-      "matchboil-malware-used-by-russia-aligned-group-to-install-sp"
     ]
   },
   {
@@ -1108,24 +1234,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "qilin-ransomware-suspect-arrested-in-japan-extradi-576396",
-    "title": "Qilin Ransomware Suspect Arrested in Japan, Extradited to Germany",
-    "summary": "A suspect linked to the Qilin ransomware campaign was detained in Japan in May and extradited to Germany to face hacking charges. The arrest follows investigations into the group’s criminal activities.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/qilin-ransomware-suspect-arrested-in-japan-extradited-to-germany/",
-    "publishedAt": "2026-10-07T13:47:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "qilin-ransomware-suspect-arrested-in-japan-extradi",
-      "article-576396",
-      "576396",
-      "qilin-ransomware-suspect-arrested-in-japan-extradited-to-ger"
-    ]
-  },
-  {
     "slug": "hadrian-secures-40m-to-expand-autonomous-offensive-67fa49",
     "title": "Hadrian Secures $40M to Expand Autonomous Offensive Security Platform",
     "summary": "Hadrian, an autonomous offensive security platform, has raised $40 million to broaden its agentic capabilities, enabling defenders to match attacker speed. The funding supports development of tools that simulate adversary tactics for proactive defense. No direct security incident reported.",
@@ -1358,23 +1466,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "atm-malware-creator-arrested-in-nebraska-court-23af8e",
-    "title": "ATM Malware Creator Arrested in Nebraska Court",
-    "summary": "A cybercriminal linked to ATM malware was arrested and appeared in a Nebraska court after being added to the FBI’s Top 10 Most Wanted Fugitives list in March. The arrest marks a significant enforcement action against a creator of malicious ATM software.",
-    "category": "Malware",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/atm-malware-creator-appears-in-nebraska-court",
-    "publishedAt": "2026-10-06T15:53:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "atm-malware-creator-arrested-in-nebraska-court",
-      "article-23af8e",
-      "23af8e"
-    ]
-  },
-  {
     "slug": "osaka-metropolitan-university-outage-after-suspect-602da4",
     "title": "Osaka Metropolitan University Outage After Suspected Ransomware Attack",
     "summary": "Osaka Metropolitan University reported an outage that disabled its internal network, email, and various administrative and academic systems after a suspected ransomware attack. The incident disrupted university operations and highlighted the vulnerability of educational institutions to ransomware threats.",
@@ -1480,24 +1571,6 @@ export const news: NewsBrief[] = [
       "article-4603b6",
       "4603b6",
       "clickfix-campaign-compromises-100-ukrainian-websites-with-in"
-    ]
-  },
-  {
-    "slug": "sailpoint-adds-ai-agent-discovery-temporary-access-50a35d",
-    "title": "SailPoint adds AI agent discovery, temporary access and compliance automation",
-    "summary": "SailPoint announced new features in its Agentic Fabric and Human Fabric products, enabling enterprises to detect hidden AI tools, enforce continuous compliance, replace permanent access keys with temporary permissions, and shift identity security to real‑time automated defense.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/sailpoint-agentic-fabric-innovation/",
-    "publishedAt": "2026-10-06T13:16:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sailpoint-adds-ai-agent-discovery-temporary-access",
-      "article-50a35d",
-      "50a35d",
-      "sailpoint-adds-ai-agent-discovery-temporary-access-and-compl"
     ]
   },
   {
@@ -1701,24 +1774,6 @@ export const news: NewsBrief[] = [
       "article-557535",
       "557535",
       "hack-the-box-releases-ai-range-enterprise-edition-for-securi"
-    ]
-  },
-  {
-    "slug": "new-remote-management-tools-exploited-by-threat-ac-57dd7d",
-    "title": "New Remote Management Tools Exploited by Threat Actors",
-    "summary": "Security researchers have identified additional Remote Management & Monitoring (RMM) tools being abused by threat actors. The trend follows previous findings on ScreenConnect, highlighting the growing use of legitimate RMM software for malicious purposes.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33400",
-    "publishedAt": "2026-10-06T09:34:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "new-remote-management-tools-exploited-by-threat-ac",
-      "article-57dd7d",
-      "57dd7d",
-      "new-remote-management-tools-exploited-by-threat-actors"
     ]
   },
   {
@@ -4449,60 +4504,6 @@ export const news: NewsBrief[] = [
       "article-397bff",
       "397bff",
       "new-mexico-jury-finds-meta-deceived-consumers-about-data-pri"
-    ]
-  },
-  {
-    "slug": "chrome-store-hosts-poper-blocker-spyware-downloade-2c08cd",
-    "title": "Chrome Store Hosts 'Poper Blocker' Spyware Downloaded by Millions",
-    "summary": "A Chrome Store extension called Poper Blocker, marketed as an ad‑blocker, has been downloaded by millions. The app exfiltrates large amounts of sensitive user data while leveraging Google’s approval to appear legitimate. Researchers have warned that the spyware can harvest personal information and browsing habits.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/application-security/chrome-store-poper-blocker-spyware-downloaded-millions",
-    "publishedAt": "2026-09-28T16:51:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-store-hosts-poper-blocker-spyware-downloade",
-      "article-2c08cd",
-      "2c08cd",
-      "chrome-store-hosts-poper-blocker-spyware-downloaded-by-milli"
-    ]
-  },
-  {
-    "slug": "securityweek-opens-call-for-presentations-at-2026-1d25fa",
-    "title": "SecurityWeek Opens Call for Presentations at 2026 CISO Forum Virtual Summit",
-    "summary": "SecurityWeek is inviting cybersecurity professionals to submit vendor‑neutral presentations for the 2026 CISO Forum Virtual Summit. The event aims to help leaders navigate emerging threats, strengthen resilience, and address strategic challenges in enterprise security programs. Submissions are open now.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/call-for-presentations-open-for-2026-ciso-forum-virtual-summit/",
-    "publishedAt": "2026-09-28T15:15:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "securityweek-opens-call-for-presentations-at-2026",
-      "article-1d25fa",
-      "1d25fa",
-      "securityweek-opens-call-for-presentations-at-2026-ciso-forum"
-    ]
-  },
-  {
-    "slug": "vinext-1-0-launches-production-ready-framework-for-23c101",
-    "title": "Vinext 1.0 Launches Production‑Ready Framework for Next.js on Vite",
-    "summary": "Vinext 1.0, a new framework, enables developers to run Next.js applications on Vite. The release introduces advanced cache warming, broader compatibility, and an automated testing pipeline, making production deployments smoother and more efficient for Next.js projects.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/vinext-nextjs-on-vite/",
-    "publishedAt": "2026-09-28T14:51:57.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "vinext-1-0-launches-production-ready-framework-for",
-      "article-23c101",
-      "23c101",
-      "vinext-1-0-launches-production-ready-framework-for-next-js-o"
     ]
   }
 ];
