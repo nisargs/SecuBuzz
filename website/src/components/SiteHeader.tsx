@@ -37,7 +37,7 @@ export function SiteHeader() {
           <Link
             to="/download"
             className="hidden h-9 items-center whitespace-nowrap rounded-md bg-accent px-4 text-sm font-semibold text-accent-ink transition-colors duration-150 ease-out hover:bg-accent/90 sm:inline-flex">
-            Join closed testing
+            Download App
           </Link>
           <button
             type="button"
@@ -62,7 +62,7 @@ export function SiteHeader() {
           transition={{ duration: 0.2, ease: [0.23, 1, 0.32, 1] }}
           className="border-t border-line bg-bg px-5 pb-6 pt-2 md:hidden">
           
-            {[...mainNav, { label: 'Join closed testing', to: '/download' }].map((item) =>
+            {[...mainNav, { label: 'Download App', to: '/download' }].map((item) =>
           <NavLink
             key={item.to}
             to={item.to}

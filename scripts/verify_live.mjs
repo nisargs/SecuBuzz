@@ -4,9 +4,9 @@ async function verify() {
   // 1. /download
   const resDl = await fetch('https://secubuzz.com/download');
   const htmlDl = await resDl.text();
-  const hasJoin = htmlDl.includes('Join the closed test to start reading');
-  const hasInstallOld = htmlDl.includes('Install and read immediately');
-  console.log('1. /download: Join closed test =', hasJoin, '| Old install text absent =', !hasInstallOld);
+  const hasPlay = htmlDl.includes('Get it on Google Play') || htmlDl.includes('Google Play');
+  const hasClosedTest = htmlDl.toLowerCase().includes('closed testing');
+  console.log('1. /download: Google Play present =', hasPlay, '| Closed testing absent =', !hasClosedTest);
 
   // 2. /feed.json
   const resFeed = await fetch('https://secubuzz.com/feed.json');
@@ -25,7 +25,8 @@ async function verify() {
   // 4. /api/advisories
   const resAdv = await fetch('https://secubuzz.com/api/advisories');
   const adv = await resAdv.json();
-  console.log('4. /api/advisories: total KEV catalog =', adv.length);
+  const advCount = adv.count || (Array.isArray(adv) ? adv.length : (adv.advisories || []).length);
+  console.log('4. /api/advisories: total KEV catalog =', advCount);
 
   // 5. /api/epss?cve=CVE-2023-49105
   const resEpss = await fetch('https://secubuzz.com/api/epss?cve=CVE-2023-49105');

@@ -57,20 +57,20 @@ export const appFeatures = [
   { title: 'On-device bookmarks', body: 'Save critical briefs and advisories for later with a single tap. Bookmarks stay 100% on your device with no account or cloud sync.' },
   { title: '1-tap incident reports', body: 'Copy formatted markdown threat intelligence to clipboard for pasting directly into Slack, Microsoft Teams, or Jira tickets.' },
   { title: 'Offline reading', body: 'Up to 250 briefs and advisories are cached locally. Read full intelligence without network connectivity.' },
-  { title: 'No account required', body: 'Join the closed test to start reading. 100% on-device preferences, no tracking, and anonymous crash reports only.' },
+  { title: 'No account required', body: 'Install from Google Play to start reading immediately. 100% on-device preferences, no tracking, and anonymous crash reports only.' },
 ];
 
 export const appRequirements = [
   { label: 'Platform', value: 'Android 8.0 and later' },
   { label: 'Developer', value: 'MiSo Labs' },
-  { label: 'Release track', value: 'Closed Testing (Google Play)' },
-  { label: 'Price', value: 'Free · Anonymous crash reports only' },
+  { label: 'Release track', value: 'Production (Google Play)' },
+  { label: 'Price', value: 'Free · Zero tracking' },
 ];
 
 export const downloadFaq = [
   {
     q: 'Which platforms are supported?',
-    a: 'SecuBuzz is built exclusively for Android and is currently in closed testing on Google Play.',
+    a: 'SecuBuzz is built exclusively for Android (version 8.0 and higher) and is available globally on Google Play.',
   },
   {
     q: 'Where does the KEV data come from?',
@@ -81,8 +81,8 @@ export const downloadFaq = [
     a: 'No. SecuBuzz is engineered with privacy by architecture. No user accounts required, no location tracking, and no advertising IDs. We collect only anonymous crash logs and version diagnostics to ensure stability. See our Privacy Policy for full details.',
   },
   {
-    q: 'How do I join closed testing?',
-    a: 'SecuBuzz is currently in closed testing on Google Play. Use the "Join closed testing" button to request access and test the latest release builds.',
+    q: 'How do I install the app?',
+    a: 'SecuBuzz is available directly on Google Play. Tap the "Get it on Google Play" button to open the store listing and download the app on any Android device.',
   },
 ];
 

@@ -18,7 +18,7 @@ export function PlayStoreButton({ size = 'md' }: PlayStoreButtonProps) {
       <PlayIcon className="h-4 w-4 fill-current" aria-hidden="true" />
       <span className="flex flex-col items-start leading-tight">
         <span className="text-[10px] font-medium uppercase tracking-wide opacity-80">Google Play</span>
-        <span>Join closed testing</span>
+        <span>Get it on Google Play</span>
       </span>
     </a>);
 

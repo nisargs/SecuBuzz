@@ -2,15 +2,15 @@ import React from 'react';
 import { PlayStoreButton } from '../components/PlayStoreButton';
 import { PhoneMockup } from '../components/PhoneMockup';
 import { FaqAccordion } from '../components/FaqAccordion';
-import { appFeatures, appRequirements, downloadFaq, PLAY_STORE_TESTING_URL } from '../data/site';
+import { appFeatures, appRequirements, downloadFaq } from '../data/site';
 import { Seo } from '../components/Seo';
 
 export function Download() {
   return (
     <>
       <Seo
-        title="Download SecuBuzz for Android · Closed Testing"
-        description="Download SecuBuzz for Android. Fast 60-word cybersecurity briefs and CISA zero-day alerts. Now in closed testing on Google Play."
+        title="Download SecuBuzz for Android · Quick Cybersecurity News"
+        description="Download SecuBuzz for Android. Fast 60-word cybersecurity briefs and CISA zero-day alerts. Available globally on Google Play."
         canonicalPath="/download"
       />
       <section className="border-b border-line">
@@ -25,16 +25,7 @@ export function Download() {
             <div className="mt-8 flex flex-col items-start gap-2.5">
               <PlayStoreButton size="lg" />
               <p className="text-xs text-subtle">
-                Invited testers can also opt in directly via the{' '}
-                <a
-                  href={PLAY_STORE_TESTING_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-accent underline transition-colors hover:text-ink"
-                >
-                  Web Testing Opt-In
-                </a>
-                .
+                Official release on Google Play · Requires Android 8.0 (Oreo) or higher · Free &amp; Ad-Free
               </p>
             </div>
             <dl className="mt-10 grid max-w-lg grid-cols-2 gap-x-8 gap-y-5 border-t border-line pt-6">

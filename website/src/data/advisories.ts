@@ -2,6 +2,126 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2015-5477",
+    "slug": "cve-2015-5477",
+    "vendor": "ISC",
+    "product": "BIND",
+    "name": " ISC BIND Data Processing Errors Vulnerability",
+    "dateAdded": "2026-10-08",
+    "dueDate": "2026-10-11",
+    "severity": "High",
+    "cwe": "CWE-19",
+    "ransomware": false,
+    "description": "ISC BIND contains a data processing errors vulnerability that could allow remote attackers to cause a denial of service via TKEY queries.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2015-5477"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2016-3081",
+    "slug": "cve-2016-3081",
+    "vendor": "Apache",
+    "product": "Struts",
+    "name": "Apache Struts Command Injection Vulnerability",
+    "dateAdded": "2026-10-08",
+    "dueDate": "2026-10-11",
+    "severity": "High",
+    "cwe": "CWE-77",
+    "ransomware": false,
+    "description": "Apache Struts contains a command injection vulnerability that could allow remote attackers to execute arbitrary code via method:prefix when Dynamic Method Invocation is enabled.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-3081"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2023-22894",
+    "slug": "cve-2023-22894",
+    "vendor": "Strapi",
+    "product": "Strapi",
+    "name": "Strapi Cleartext Storage of Sensitive Information Vulnerability",
+    "dateAdded": "2026-10-08",
+    "dueDate": "2026-10-11",
+    "severity": "High",
+    "cwe": "CWE-312",
+    "ransomware": false,
+    "description": "Strapi contains a cleartext storage of sensitive information vulnerability that could allow attackers with access to the admin panel to discover sensitive user details via the query filter. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version. This vulnerability can be chained with CVE-2023-22621 to achieve remote code execution. ",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-22894"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2021-3199",
+    "slug": "cve-2021-3199",
+    "vendor": "ONLYOFFICE",
+    "product": "Docs",
+    "name": "ONLYOFFICE Docs Server Path Traversal Vulnerability",
+    "dateAdded": "2026-10-08",
+    "dueDate": "2026-10-11",
+    "severity": "High",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "ONLYOFFICE Docs contains a path traversal vulnerability that can occur when JWT is used, via a /.. sequence in an image upload parameter and could allow for remote code execution.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-3199"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2015-3306",
+    "slug": "cve-2015-3306",
+    "vendor": "ProFTPD",
+    "product": "ProFTPD",
+    "name": "ProFTPD Improper Access Control Vulnerability",
+    "dateAdded": "2026-10-08",
+    "dueDate": "2026-10-11",
+    "severity": "High",
+    "cwe": "CWE-284",
+    "ransomware": false,
+    "description": "ProFTPD contains an improper access control vulnerability that could allow remote attackers to read and write to arbitrary files via the site cpfr and site cpto commands.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2015-3306"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+      }
+    ]
+  },
+  {
     "cve": "CVE-2026-88779",
     "slug": "cve-2026-88779",
     "vendor": "Citrix",
@@ -128,7 +248,7 @@ export const advisories: Advisory[] = [
     "product": "Multiple Products",
     "name": "Apple Multiple Products Out-of-Bounds Write Vulnerability",
     "dateAdded": "2026-09-29",
-    "dueDate": "2026-10-02",
+    "dueDate": "2026-10-13",
     "severity": "High",
     "cwe": "CWE-787",
     "ransomware": false,
@@ -1328,7 +1448,7 @@ export const advisories: Advisory[] = [
     "product": "Kernel",
     "name": "Linux Kernel Out-of-Bounds Write Vulnerability",
     "dateAdded": "2026-08-26",
-    "dueDate": "2026-09-09",
+    "dueDate": "2026-08-29",
     "severity": "High",
     "cwe": "CWE-787",
     "ransomware": false,
