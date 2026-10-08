@@ -11,6 +11,60 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "github-introduces-ai-detector-to-block-passwords-b-5fe20c",
+    "title": "GitHub Introduces AI Detector to Block Passwords Before Code Push",
+    "summary": "GitHub has released an AI‑powered secret detector, built with Microsoft Applied Sciences, that scans code before a push to identify unstructured credentials such as database passwords. The ModernBERT classifier extends existing push protection, blocking pushes that contain secrets and preventing credentials from entering repository history.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/github-push-protection-modernbert/",
+    "publishedAt": "2026-10-08T09:02:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "github-introduces-ai-detector-to-block-passwords-b",
+      "article-5fe20c",
+      "5fe20c",
+      "github-introduces-ai-detector-to-block-passwords-before-code"
+    ]
+  },
+  {
+    "slug": "matchboil-malware-used-by-russia-aligned-group-to-20d654",
+    "title": "MATCHBOIL Malware Used by Russia‑Aligned Group to Install Spying Backdoor in Ukraine",
+    "summary": "ESET researchers identified MATCHBOIL, a downloader used by the Russia‑aligned group UAC‑0099, which installs a spying backdoor on Windows machines in Ukraine. The malware targets transportation, manufacturing, and energy sectors, planting a secondary program that creates privileged access for the attackers.",
+    "category": "Malware",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/matchboil-malware-uac-0099/",
+    "publishedAt": "2026-10-08T09:00:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "matchboil-malware-used-by-russia-aligned-group-to",
+      "article-20d654",
+      "20d654",
+      "matchboil-malware-used-by-russia-aligned-group-to-install-sp"
+    ]
+  },
+  {
+    "slug": "oracle-health-data-breach-reaches-nearly-20-millio-3328a2",
+    "title": "Oracle Health Data Breach Reaches Nearly 20 Million Records",
+    "summary": "Oracle Health has reported that the number of affected records in its data breach has risen to almost 20 million, surpassing earlier estimates. The breach exposes patient data, potentially including personal identifiers and health information. No further details on mitigation or affected systems are provided.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/oracle-health-data-breach-tally-climbs-to-nearly-20-million/",
+    "publishedAt": "2026-10-08T08:23:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "oracle-health-data-breach-reaches-nearly-20-millio",
+      "article-3328a2",
+      "3328a2",
+      "oracle-health-data-breach-reaches-nearly-20-million-records"
+    ]
+  },
+  {
     "slug": "monstercloud-owner-charged-with-fraud-over-ransomw-98a112",
     "title": "MonsterCloud Owner Charged with Fraud Over Ransomware Payments",
     "summary": "Florida-based ransomware remediation company MonsterCloud’s owner, Zohar Pinhasi, is charged with fraud for secretly paying ransomware gangs and overbilling clients. Prosecutors allege he paid over $8 million to attackers while billing more than $19 million to victims, inflating ransom payments and exploiting client trust.",
@@ -173,6 +227,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "ibm-and-red-hat-patch-400-java-library-vulnerabili-6f37d9",
+    "title": "IBM and Red Hat Patch 400+ Java Library Vulnerabilities",
+    "summary": "IBM and Red Hat identified and fixed more than 400 previously unknown security flaws in widely used Java libraries. The vulnerabilities expose companies that run the affected libraries until they apply the patches. The fixes are available through Lightwell, the open‑source patching program. Prompt application of the updates is essential to mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/lightwell-java-library-vulnerabilities/",
+    "publishedAt": "2026-10-08T04:18:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ibm-and-red-hat-patch-400-java-library-vulnerabili",
+      "article-6f37d9",
+      "6f37d9",
+      "ibm-and-red-hat-patch-400-java-library-vulnerabilities"
+    ]
+  },
+  {
     "slug": "ransomware-threats-target-critical-medical-devices-1b88ff",
     "title": "Ransomware Threats Target Critical Medical Devices",
     "summary": "Threat actors are exploiting IT, IoMT, OT, and IoT devices in healthcare delivery organizations to deploy ransomware, demand payments, and monetize stolen patient data. A study of over 2.5 million devices across 50+ networks identified 461 ransomware claims and 300 hacktivist attacks between January and August 2026.",
@@ -330,24 +402,6 @@ export const news: NewsBrief[] = [
       "article-2e9741",
       "2e9741",
       "11-million-plan-for-psychological-support-at-cyber-command-g"
-    ]
-  },
-  {
-    "slug": "hackers-steal-data-of-over-1-3-million-in-arizona-152489",
-    "title": "Hackers Steal Data of Over 1.3 Million in Arizona Court Breach",
-    "summary": "Cybercriminals breached Arizona’s Fines/Fees and Restitution Enforcement (FARE) Program, compromising personal information of more than 1.3 million individuals. The breach exposed sensitive data tied to traffic and criminal violations, posing significant privacy risks and potential identity theft for affected residents.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/arizona-courts-say-hackers-stole-info-on-over-1-million",
-    "publishedAt": "2026-10-07T18:31:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-steal-data-of-over-1-3-million-in-arizona",
-      "article-152489",
-      "152489",
-      "hackers-steal-data-of-over-1-3-million-in-arizona-court-brea"
     ]
   },
   {
@@ -605,6 +659,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "hadrian-secures-40m-to-expand-autonomous-offensive-67fa49",
+    "title": "Hadrian Secures $40M to Expand Autonomous Offensive Security Platform",
+    "summary": "Hadrian, an autonomous offensive security platform, has raised $40 million to broaden its agentic capabilities, enabling defenders to match attacker speed. The funding supports development of tools that simulate adversary tactics for proactive defense. No direct security incident reported.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/hadrian-raises-40-million-to-expand-autonomous-offensive-security-platform/",
+    "publishedAt": "2026-10-07T13:06:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hadrian-secures-40m-to-expand-autonomous-offensive",
+      "article-67fa49",
+      "67fa49",
+      "hadrian-secures-40m-to-expand-autonomous-offensive-security-"
+    ]
+  },
+  {
     "slug": "cyber-risk-shifts-inside-workflow-2026-ciso-survey-c1c27e",
     "title": "Cyber Risk Shifts Inside Workflow, 2026 CISO Survey Reveals",
     "summary": "A 2026 CISO survey shows cyber risk is moving into everyday workflows, driven by AI governance, human risk, and board scrutiny. The findings highlight a five‑year trend toward integrating security into the systems where work actually happens, rather than treating it as a separate function.",
@@ -620,6 +692,59 @@ export const news: NewsBrief[] = [
       "article-c1c27e",
       "c1c27e",
       "cyber-risk-shifts-inside-workflow-2026-ciso-survey-reveals"
+    ]
+  },
+  {
+    "slug": "chrome-155-update-fixes-247-vulnerabilities-40a2f3",
+    "title": "Chrome 155 Update Fixes 247 Vulnerabilities",
+    "summary": "Google released Chrome 155, addressing 247 security issues, including four critical use‑after‑free bugs in Chromecast, Browser, Navigation, and Track components. The update removes the vulnerabilities that could allow attackers to execute arbitrary code or crash the browser, improving overall stability and security.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/chrome-155-update-patches-247-vulnerabilities/",
+    "publishedAt": "2026-10-07T10:51:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-155-update-fixes-247-vulnerabilities",
+      "article-40a2f3",
+      "40a2f3"
+    ]
+  },
+  {
+    "slug": "north-carolina-musician-sentenced-for-10-million-s-119ed0",
+    "title": "North Carolina Musician Sentenced for $10 Million Streaming Fraud Scheme",
+    "summary": "A North Carolina musician received an 18‑month prison sentence for orchestrating a $10 million streaming royalty fraud. The scheme used AI bots to inflate plays on Spotify, Apple Music, Amazon Music, and YouTube Music, deceiving the platforms and defrauding rights holders.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/musician-gets-18-months-in-prison-for-10-million-streaming-fraud-using-ai-bots/",
+    "publishedAt": "2026-10-07T10:35:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "north-carolina-musician-sentenced-for-10-million-s",
+      "article-119ed0",
+      "119ed0",
+      "north-carolina-musician-sentenced-for-10-million-streaming-f"
+    ]
+  },
+  {
+    "slug": "anthropic-unveils-3-tier-cyber-verification-for-ai-2c267d",
+    "title": "Anthropic Unveils 3‑Tier Cyber Verification for AI Models",
+    "summary": "Anthropic consolidates its Cyber Verification Program and Project Glasswing into a single offering, providing three access levels to its most advanced AI models. The initiative aims to enhance security oversight and compliance for users accessing powerful AI capabilities.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/anthropic-introduces-3-tier-cyber-verification-program-for-ai-access/",
+    "publishedAt": "2026-10-07T10:07:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "anthropic-unveils-3-tier-cyber-verification-for-ai",
+      "article-2c267d",
+      "2c267d",
+      "anthropic-unveils-3-tier-cyber-verification-for-ai-models"
     ]
   },
   {
@@ -834,24 +959,6 @@ export const news: NewsBrief[] = [
       "article-65ee47",
       "65ee47",
       "msps-should-test-eight-key-controls-to-secure-rmm-software"
-    ]
-  },
-  {
-    "slug": "anaconda-enhances-platform-with-agent-swarms-and-a-17a659",
-    "title": "Anaconda Enhances Platform with Agent Swarms and Autonomous Security Testing",
-    "summary": "Anaconda expands its platform by integrating agent swarms with autonomous red‑team agents, trusted packages, models, and environments. This allows developers to conduct security testing earlier, address weaknesses before production, and choose tools with built‑in governance, accelerating secure software delivery.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/anaconda-platform/",
-    "publishedAt": "2026-10-06T13:49:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "anaconda-enhances-platform-with-agent-swarms-and-a",
-      "article-17a659",
-      "17a659",
-      "anaconda-enhances-platform-with-agent-swarms-and-autonomous-"
     ]
   },
   {
@@ -1181,24 +1288,6 @@ export const news: NewsBrief[] = [
       "article-57dd7d",
       "57dd7d",
       "new-remote-management-tools-exploited-by-threat-actors"
-    ]
-  },
-  {
-    "slug": "github-launches-reviewbench-to-evaluate-ai-code-re-57b611",
-    "title": "GitHub Launches ReviewBench to Evaluate AI Code Review Tools",
-    "summary": "GitHub’s new ReviewBench benchmark lets researchers test AI code reviewers by measuring their ability to detect coding issues before release. The research preview platform offers a leaderboard, test data, and reproducible results, enabling users to compare agents and track improvements across issue severity and categories.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/github-reviewbench-ai-code-review-benchmark/",
-    "publishedAt": "2026-10-06T09:29:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "github-launches-reviewbench-to-evaluate-ai-code-re",
-      "article-57b611",
-      "57b611",
-      "github-launches-reviewbench-to-evaluate-ai-code-review-tools"
     ]
   },
   {
@@ -4412,95 +4501,6 @@ export const news: NewsBrief[] = [
       "article-b8be11",
       "b8be11",
       "elementor-csrf-flaw-lets-attackers-take-over-sites-after-adm"
-    ]
-  },
-  {
-    "slug": "google-and-mandiant-release-ci-cd-hardening-bluepr-2de2ac",
-    "title": "Google and Mandiant Release CI/CD Hardening Blueprint",
-    "summary": "Google Cloud and Mandiant have published a defense‑in‑depth guide to harden CI/CD pipelines, build runners, and software supply chains. The blueprint offers actionable steps to protect against supply‑chain attacks, including secure build environments, code integrity checks, and continuous monitoring.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/google-mandiant-cicd-pipeline-hardening-blueprint",
-    "publishedAt": "2026-09-26T03:58:52.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-and-mandiant-release-ci-cd-hardening-bluepr",
-      "article-2de2ac",
-      "2de2ac",
-      "google-and-mandiant-release-ci-cd-hardening-blueprint"
-    ]
-  },
-  {
-    "slug": "unit-42-debunks-three-consulting-myths-613428",
-    "title": "Unit 42 Debunks Three Consulting Myths",
-    "summary": "Unit 42 security experts clarify common misconceptions about consulting, providing actionable guidance to strengthen enterprise defenses. The post offers practical insights to help organizations avoid pitfalls and improve security posture.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Unit 42",
-    "sourceUrl": "https://unit42.paloaltonetworks.com/3-consulting-myths-debunked-by-unit-42-experts/",
-    "publishedAt": "2026-09-25T23:00:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "unit-42-debunks-three-consulting-myths",
-      "article-613428",
-      "613428"
-    ]
-  },
-  {
-    "slug": "clop-leak-site-compromised-via-unpatched-grav-cms-6eb2ce",
-    "title": "Clop Leak Site Compromised via Unpatched Grav CMS Path Traversal Flaw",
-    "summary": "The Clop ransomware gang defaced its data‑leak site after exploiting an unauthenticated path traversal vulnerability in Grav CMS. The flaw allowed attackers to read arbitrary files on the server, leading to a defacement and the site’s relocation to a new Tor address.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/shinyhunters-hacked-clop-leak-site-using-grav-cms-path-traversal-flaw/",
-    "publishedAt": "2026-09-25T20:57:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "clop-leak-site-compromised-via-unpatched-grav-cms",
-      "article-6eb2ce",
-      "6eb2ce",
-      "clop-leak-site-compromised-via-unpatched-grav-cms-path-trave"
-    ]
-  },
-  {
-    "slug": "ciso-and-cfo-alignment-boosts-cybersecurity-succes-4e5998",
-    "title": "CISO and CFO Alignment Boosts Cybersecurity Success",
-    "summary": "Organizations where CISOs and CFOs align on cybersecurity strategy better protect assets, manage risk, and enable business growth, according to a Dark Reading analysis.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyber-risk/how-to-manage-ciso-cfo-relationship-cybersecurity-success",
-    "publishedAt": "2026-09-25T20:28:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ciso-and-cfo-alignment-boosts-cybersecurity-succes",
-      "article-4e5998",
-      "4e5998",
-      "ciso-and-cfo-alignment-boosts-cybersecurity-success"
-    ]
-  },
-  {
-    "slug": "labcorp-faces-2-3m-fine-over-cybersecurity-failing-67ef84",
-    "title": "Labcorp Faces $2.3M Fine Over Cybersecurity Failings",
-    "summary": "Labcorp has been fined $2.3 million for cybersecurity failings and will overhaul its data security practices. The company will create an incident response plan for vendor security failures, limit data shared with vendors, and build a risk‑management team to monitor vendor compliance.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/labcorp-to-overhaul-security-practices-settlement",
-    "publishedAt": "2026-09-25T19:35:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "labcorp-faces-2-3m-fine-over-cybersecurity-failing",
-      "article-67ef84",
-      "67ef84",
-      "labcorp-faces-2-3m-fine-over-cybersecurity-failings"
     ]
   }
 ];
