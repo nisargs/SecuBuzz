@@ -59,8 +59,13 @@ function isAuthorized(request: Request, env: Env): boolean {
   }
   const authHeader = request.headers.get('Authorization');
   const customKey = request.headers.get('x-admin-key');
+  const url = new URL(request.url);
+  const queryKey = url.searchParams.get('key') || url.searchParams.get('secret');
 
   if (customKey === env.PUSH_ADMIN_SECRET) {
+    return true;
+  }
+  if (queryKey && queryKey === env.PUSH_ADMIN_SECRET) {
     return true;
   }
   if (authHeader && authHeader === `Bearer ${env.PUSH_ADMIN_SECRET}`) {
