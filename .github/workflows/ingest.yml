@@ -99,6 +99,13 @@ jobs:
           node "./scripts/sync_website_data.mjs"
 
       # ---------------------------------------------------------
+      # Assert feed integrity & freshness (Fail CI loudly if stale)
+      # ---------------------------------------------------------
+      - name: Verify feed integrity & freshness
+        run: |
+          node "./scripts/verify_feed_freshness.mjs"
+
+      # ---------------------------------------------------------
       # Upload latest feed.json to Cloudflare R2
       # ---------------------------------------------------------
       - name: Upload feed.json to Cloudflare R2

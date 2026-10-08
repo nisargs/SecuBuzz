@@ -641,12 +641,31 @@ export default {
         });
       }
 
-      // 1. Health check
+      // 1. Health check & Feed Freshness Watchdog
       if (url.pathname === '/health' || url.pathname === '/api/health') {
-        return jsonResponse({
-          status: 'ok',
+        const articles = await getArticles();
+        const latest = articles[0];
+        const pubTime = latest ? Date.parse(latest.publishedAt || (latest as any).pubDate || '') : 0;
+        const now = Date.now();
+        const ageHours = pubTime ? (now - pubTime) / (1000 * 60 * 60) : 999;
+        const isFresh = ageHours <= 8.0;
+
+        const healthData = {
+          status: isFresh ? 'ok' : 'stale_feed',
           service: 'secubuzz-push-worker',
           timestamp: new Date().toISOString(),
+          feed: {
+            articleCount: articles.length,
+            latestHeadline: latest?.headline || latest?.title || null,
+            latestPublishedAt: latest?.publishedAt || null,
+            ageHours: parseFloat(ageHours.toFixed(2)),
+            isFresh,
+          },
+        };
+
+        const statusCode = isFresh ? 200 : 503;
+        return jsonResponse(healthData, statusCode, {
+          'Cache-Control': 'no-store, no-cache, must-revalidate',
         });
       }
 

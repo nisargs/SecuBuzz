@@ -117,8 +117,7 @@ async function loadFeed() {
     if (res.ok) {
       const data = await res.json();
       if (Array.isArray(data) && data.length > 0) {
-        fs.writeFileSync(FEED_FILE, JSON.stringify(data, null, 2), 'utf8');
-        console.log(`Saved ${data.length} live articles to local feed.json`);
+        console.log(`Loaded ${data.length} live articles from R2 into memory`);
         return data;
       }
     }

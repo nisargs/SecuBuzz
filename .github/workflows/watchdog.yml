@@ -1,0 +1,52 @@
+name: SecuBuzz Feed Watchdog
+
+on:
+  # Check feed freshness every 2 hours (offset to :37)
+  schedule:
+    - cron: "37 */2 * * *"
+
+  # Allow manual trigger from GitHub Actions tab
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  watchdog:
+    name: Check Production Feed Freshness
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Inspect Live Feed Freshness
+        id: check_feed
+        continue-on-error: true
+        env:
+          MAX_STALE_HOURS: "6.0"
+        run: |
+          node "./scripts/watchdog.mjs"
+
+      - name: Emergency Feed Trigger (If Stale)
+        if: steps.check_feed.outcome != 'success'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "🚨 Feed was detected as stale or uncontactable!"
+          echo "Triggering emergency out-of-band ingestion run..."
+
+          gh workflow run ingest.yml --ref main || curl -s -X POST \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${{ github.repository }}/actions/workflows/ingest.yml/dispatches \
+            -d '{"ref":"main"}'
+
+          echo "Emergency ingestion dispatched. Failing step so maintainers receive email telemetry."
+          exit 1
