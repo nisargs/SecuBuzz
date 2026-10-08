@@ -30,7 +30,13 @@
   - Privacy Policy: `https://secubuzz.com/privacy`
   - Account Deletion: `https://secubuzz.com/account-deletion`
   - Both URLs and in-app screens (`privacy.tsx`, `data-privacy.tsx`) explicitly declare the app name **"SecuBuzz"** and developer **"MiSo Labs"**.
-- **Feed System:** `scripts/ingest.mjs` retains up to 250 articles (~5–7 days of security intelligence), scheduled every 4 hours via Worker cron.
+- **Feed System:** `scripts/ingest.mjs` retains up to 250 articles (~5–7 days of security intelligence), scheduled every 4 hours via Worker cron and GitHub Actions.
+- **Feed Resilience & Watchdog System (Zero-Silent-Failure Mandate):**
+  - **Read-Only Invariant:** `scripts/sync_website_data.mjs` is strictly read-only on `feed.json` and must NEVER write or overwrite `feed.json`.
+  - **In-Pipeline Gate (`scripts/verify_feed_freshness.mjs`):** Runs in `.github/workflows/ingest.yml` before R2 upload. Asserts >= 50 articles and newest story <= 14h old; fails CI loudly if stale.
+  - **Edge Watchdog (`https://secubuzz.com/health`):** Evaluates live R2 feed age on every request. Returns HTTP 200 with feed telemetry if healthy, or HTTP 503 `stale_feed` if > 8.0 hours old (triggering external HetrixTools/Uptime monitors).
+  - **Autonomous Watchdog Workflow (`.github/workflows/watchdog.yml`):** Runs every 2 hours; if live feed is > 6h old, automatically dispatches emergency out-of-band `ingest.yml` and alerts.
+  - **Watchdog CLI Routines:** `npm run watchdog` (checks production site freshness) and `npm run verify:feed` (local/CI integrity gate).
 
 ## 6. Native `.aab` Release (v1.0.2 / Code 6)
 - **Header Brand Unification (Completed):** Replaced 'SecuRadar' with 'SecuBuzz' in `src/app/(tabs)/advisories.tsx` to unify app brand identity with `secubuzz.com` and eliminate third-party trademark/domain confusion.
