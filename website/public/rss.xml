@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Oct 2026 04:19:24 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 06:09:16 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Build an Economic Model to Prioritize Security Spending</title>
+      <link>https://secubuzz.com/news/build-an-economic-model-to-prioritize-security-spe-468f2a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/build-an-economic-model-to-prioritize-security-spe-468f2a</guid>
+      <description><![CDATA[Security leaders can use an economic model to quantify risk, starting with loss scenarios and mapping them to assets. The approach ranks fixes by value at risk, aligns with CFO expectations, and demonstrates the worth of prevented incidents, helping prioritize investments.]]></description>
+      <pubDate>Thu, 08 Oct 2026 06:00:01 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/08/ivan-milenkovic-qualys-cyber-risk-quantification/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Audit System to Prevent Misuse of AI in Street Surveillance</title>
+      <link>https://secubuzz.com/news/audit-system-to-prevent-misuse-of-ai-in-street-sur-749558</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/audit-system-to-prevent-misuse-of-ai-in-street-sur-749558</guid>
+      <description><![CDATA[A Japanese professor proposes a Fully Monitored Public Space system that adds independent record‑keeping and unannounced spot checks to AI analyzing street camera footage. The system uses existing cameras and encrypted storage to deter operators from misusing surveillance AI.]]></description>
+      <pubDate>Thu, 08 Oct 2026 05:30:13 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/08/ai-surveillance-cameras-privacy/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>Ransomware Threats Target Critical Medical Devices</title>
       <link>https://secubuzz.com/news/ransomware-threats-target-critical-medical-devices-1b88ff</link>
@@ -179,6 +197,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>PoeLLM Malware Targets AI Infrastructure, Expands Crypto‑Mining Botnet</title>
+      <link>https://secubuzz.com/news/poellm-malware-targets-ai-infrastructure-expands-c-5a5d46</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/poellm-malware-targets-ai-infrastructure-expands-c-5a5d46</guid>
+      <description><![CDATA[Cybersecurity researchers identified PoeLLM malware infecting over 3,400 exposed AI and large language model servers. The malware installs cryptocurrency miners, expanding the botnet’s scale. The campaign, dubbed Canto Incognito, leverages AI infrastructure to deploy miners and grow its network of compromised hosts.]]></description>
+      <pubDate>Wed, 07 Oct 2026 15:33:51 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/poellm-malware-infects-3400-servers-to.html">The Hacker News</source>
+      <category>Malware</category>
+    </item>
+    <item>
       <title>Supreme Court Geofencing Ruling Forces Judge to Toss Flock Camera Evidence</title>
       <link>https://secubuzz.com/news/supreme-court-geofencing-ruling-forces-judge-to-to-797192</link>
       <guid isPermaLink="true">https://secubuzz.com/news/supreme-court-geofencing-ruling-forces-judge-to-to-797192</guid>
@@ -215,6 +242,24 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>OT Cybersecurity Coalition Urges CISA to Create Mandatory Federal Rules</title>
+      <link>https://secubuzz.com/news/ot-cybersecurity-coalition-urges-cisa-to-create-ma-468fc0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ot-cybersecurity-coalition-urges-cisa-to-create-ma-468fc0</guid>
+      <description><![CDATA[The Operational Technology Cybersecurity Coalition released a white paper urging CISA to establish mandatory federal OT rules. The proposal aims to strengthen security for critical infrastructure systems that monitor and control industrial processes. The coalition calls for a new directive to address gaps in current OT cybersecurity regulations.]]></description>
+      <pubDate>Wed, 07 Oct 2026 14:03:00 GMT</pubDate>
+      <source url="https://therecord.media/cyber-experts-call-on-cisa-require-ot-security">The Record</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Ransomware Targets Backup Infrastructure, Urging Robust Isolation</title>
+      <link>https://secubuzz.com/news/ransomware-targets-backup-infrastructure-urging-ro-397911</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ransomware-targets-backup-infrastructure-urging-ro-397911</guid>
+      <description><![CDATA[Ransomware groups increasingly attack backup systems to block recovery and pressure victims into paying. Kaseya warns that backups must be isolated, immutable, and regularly tested so attackers cannot reach them. Organizations should ensure backups are off‑site, encrypted, and verified to maintain resilience.]]></description>
+      <pubDate>Wed, 07 Oct 2026 14:01:11 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/ransomware-has-a-new-target-is-your-backup-ready/">BleepingComputer</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
       <title>Teen Detained for Leading ShinyHunters Extortion of Boeing Spin‑Off</title>
       <link>https://secubuzz.com/news/teen-detained-for-leading-shinyhunters-extortion-o-5fb00d</link>
       <guid isPermaLink="true">https://secubuzz.com/news/teen-detained-for-leading-shinyhunters-extortion-o-5fb00d</guid>
@@ -230,6 +275,15 @@
       <description><![CDATA[A suspect linked to the Qilin ransomware campaign was detained in Japan in May and extradited to Germany to face hacking charges. The arrest follows investigations into the group’s criminal activities.]]></description>
       <pubDate>Wed, 07 Oct 2026 13:47:12 GMT</pubDate>
       <source url="https://www.securityweek.com/qilin-ransomware-suspect-arrested-in-japan-extradited-to-germany/">SecurityWeek</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Cyber Risk Shifts Inside Workflow, 2026 CISO Survey Reveals</title>
+      <link>https://secubuzz.com/news/cyber-risk-shifts-inside-workflow-2026-ciso-survey-c1c27e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cyber-risk-shifts-inside-workflow-2026-ciso-survey-c1c27e</guid>
+      <description><![CDATA[A 2026 CISO survey shows cyber risk is moving into everyday workflows, driven by AI governance, human risk, and board scrutiny. The findings highlight a five‑year trend toward integrating security into the systems where work actually happens, rather than treating it as a separate function.]]></description>
+      <pubDate>Wed, 07 Oct 2026 11:57:05 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/the-sixth-voice-of-ciso-data-shows.html">The Hacker News</source>
       <category>Policy</category>
     </item>
     <item>
@@ -251,13 +305,31 @@
       <category>Malware</category>
     </item>
     <item>
-      <title>Phishing Platform Mimics AI Chatbot Ads to Steal Credentials and MFA Codes</title>
-      <link>https://secubuzz.com/news/phishing-platform-mimics-ai-chatbot-ads-to-steal-c-27387a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/phishing-platform-mimics-ai-chatbot-ads-to-steal-c-27387a</guid>
-      <description><![CDATA[Cybersecurity researchers uncovered a human-operated phishing platform that impersonates advertising portals for AI chatbots such as ChatGPT, Gemini, and Claude. The fake portals lure users into providing credentials and MFA codes, enabling attackers to hijack business accounts and compromise sensitive data.]]></description>
-      <pubDate>Tue, 06 Oct 2026 18:38:55 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/fake-chatgpt-gemini-and-claude-ad.html">The Hacker News</source>
+      <title>Fake AI Portals Hijack Corporate Ad Accounts via Browser-in-the-Browser Attacks</title>
+      <link>https://secubuzz.com/news/fake-ai-portals-hijack-corporate-ad-accounts-via-b-6b47e9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fake-ai-portals-hijack-corporate-ad-accounts-via-b-6b47e9</guid>
+      <description><![CDATA[Attackers use counterfeit ChatGPT and Gemini portals that run Browser‑in‑the‑Browser attacks to steal credentials and take over corporate advertising accounts. The technique bypasses real‑time MFA, allowing attackers to redirect ad spend. Organizations should verify portal URLs, enforce MFA, and monitor account activity.]]></description>
+      <pubDate>Wed, 07 Oct 2026 01:55:14 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/fake-ai-sites-bitb-ad-account-theft">CyberNews AI</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>ClickFix Evolves to Conceal Payloads Using DNS TXT and Browser Cache</title>
+      <link>https://secubuzz.com/news/clickfix-evolves-to-conceal-payloads-using-dns-txt-490936</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/clickfix-evolves-to-conceal-payloads-using-dns-txt-490936</guid>
+      <description><![CDATA[Threat actors behind ClickFix are now embedding malicious payloads within DNS TXT records and leveraging browser cache pre‑fetching to obscure delivery. This technique complicates early detection, as payloads bypass traditional signature‑based defenses and remain dormant until the victim’s browser retrieves cached content.]]></description>
+      <pubDate>Tue, 06 Oct 2026 20:32:58 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyberattacks-data-breaches/clickfix-attacks-evolve-better-hide-malicious-payloads">Dark Reading</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Healthcare Systems Lag Behind Post-Quantum Cryptography Readiness</title>
+      <link>https://secubuzz.com/news/healthcare-systems-lag-behind-post-quantum-cryptog-111cd9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/healthcare-systems-lag-behind-post-quantum-cryptog-111cd9</guid>
+      <description><![CDATA[A study of 2.5 million devices in 50 healthcare organizations shows the sector is far from ready for post‑quantum cryptography, highlighting a significant gap in security preparedness for future quantum threats.]]></description>
+      <pubDate>Tue, 06 Oct 2026 20:30:27 GMT</pubDate>
+      <source url="https://www.darkreading.com/iot/exposed-healthcare-systems-quantum-ready">Dark Reading</source>
+      <category>Policy</category>
     </item>
     <item>
       <title>Linux Backdoors Disguise Traffic as Email Services to Evade Detection in Korea and Taiwan</title>
@@ -383,78 +455,6 @@
       <description><![CDATA[Intellias launched Agentic ServiceOps, a managed IT service that integrates governed agentic AI into IT service and operations management, providing an Intelligent Orchestrator Layer to streamline end‑to‑end IT work and reduce complexity and costs.]]></description>
       <pubDate>Tue, 06 Oct 2026 12:55:04 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/06/intellias-agentic-serviceops/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Savannah lwIP SMTP Client Buffer Overflow Vulnerability CVE-2026-15340</title>
-      <link>https://secubuzz.com/news/savannah-lwip-smtp-client-buffer-overflow-vulnerab-4319a7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/savannah-lwip-smtp-client-buffer-overflow-vulnerab-4319a7</guid>
-      <description><![CDATA[A buffer overflow in Savannah lwIP SMTP client 2.2.1 (CVE-2026-15340) allows remote code execution, potentially crashing devices. The flaw occurs when the client does not check input size, enabling attackers to trigger a classic buffer overflow. A patch has been released to fix the issue.]]></description>
-      <pubDate>Tue, 06 Oct 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-02">CISA</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Hitachi Energy RTU500 End-of-Life Firmware Lacks Modern Security Controls</title>
-      <link>https://secubuzz.com/news/hitachi-energy-rtu500-end-of-life-firmware-lacks-m-4319a7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hitachi-energy-rtu500-end-of-life-firmware-lacks-m-4319a7</guid>
-      <description><![CDATA[Hitachi Energy reports that legacy RTU500 CMU firmware 9.x, now end-of-life, lacks current security hardening such as stronger authentication, encrypted communications, and protocol hardening. Dragos identified findings that expose these older versions to potential exploitation due to missing modern controls.]]></description>
-      <pubDate>Tue, 06 Oct 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-06">CISA</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Johnson Controls EasyIO FG Hard‑coded Credentials Vulnerability</title>
-      <link>https://secubuzz.com/news/johnson-controls-easyio-fg-hard-coded-credentials-4319a7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/johnson-controls-easyio-fg-hard-coded-credentials-4319a7</guid>
-      <description><![CDATA[A CVE-2026-27872 flaw in Johnson Controls EasyIO FG firmware allows attackers to use hard‑coded credentials and improper privilege management to gain full unauthorized device access. The vulnerability, with a CVSS score of 7.7, could lead to complete device compromise. Mitigation requires applying vendor patches.]]></description>
-      <pubDate>Tue, 06 Oct 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-01">CISA</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Apple to Strengthen macOS Full Disk Access Controls Amid AI Risks</title>
-      <link>https://secubuzz.com/news/apple-to-strengthen-macos-full-disk-access-control-239335</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apple-to-strengthen-macos-full-disk-access-control-239335</guid>
-      <description><![CDATA[Apple announced new controls to tighten full disk access permissions in macOS, citing increasing risks from advanced AI agents. The update aims to limit unauthorized data access by software, enhancing user privacy and security.]]></description>
-      <pubDate>Tue, 06 Oct 2026 11:48:59 GMT</pubDate>
-      <source url="https://www.securityweek.com/apple-to-tighten-full-disk-access-controls-in-macos-amid-ai-risks/">SecurityWeek</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>OX Security Finds Critical Vulnerabilities in Anthropic’s MCP Servers</title>
-      <link>https://secubuzz.com/news/ox-security-finds-critical-vulnerabilities-in-anth-6061f4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ox-security-finds-critical-vulnerabilities-in-anth-6061f4</guid>
-      <description><![CDATA[OX Security traced critical vulnerabilities in Anthropic’s Model Context Protocol (MCP) servers, exposing potential weaknesses in the USB‑C‑style AI model connectivity standard. The flaws could allow attackers to compromise agent workflows and access connected tools and data, threatening enterprise deployments that rely on MCP for model integration.]]></description>
-      <pubDate>Tue, 06 Oct 2026 11:02:30 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/welcome-to-jungle-what-we-found-inside.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>39 Cybersecurity M&amp;A Deals Announced in September 2026</title>
-      <link>https://secubuzz.com/news/39-cybersecurity-m-a-deals-announced-in-september-54a4dc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/39-cybersecurity-m-a-deals-announced-in-september-54a4dc</guid>
-      <description><![CDATA[A roundup of 39 cybersecurity mergers and acquisitions announced in September 2026, featuring deals by Dragos, IBM, Palo Alto Networks, Kiteworks, and Upwind. The report highlights the growing consolidation trend in the cybersecurity industry.]]></description>
-      <pubDate>Tue, 06 Oct 2026 11:01:35 GMT</pubDate>
-      <source url="https://www.securityweek.com/cybersecurity-ma-roundup-39-deals-announced-in-september-2026/">SecurityWeek</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Dell System Update Vulnerability (CVE-2026-86360) Enables Root Privileges</title>
-      <link>https://secubuzz.com/news/dell-system-update-vulnerability-cve-2026-86360-en-468a8c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/dell-system-update-vulnerability-cve-2026-86360-en-468a8c</guid>
-      <description><![CDATA[Dell System Update (DSU) versions prior to 2.3.0.0 contain CVE-2026-86360, a path traversal flaw with a CVSS score of 9.6. An unauthenticated remote attacker can exploit it to execute arbitrary code with root privileges on Dell PowerEdge servers. Dell urges immediate patching.]]></description>
-      <pubDate>Tue, 06 Oct 2026 10:44:41 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/06/dell-system-update-vulnerability-cve-2026-86360/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Ontinue Adds Dark‑Web Monitoring to ION MXDR</title>
-      <link>https://secubuzz.com/news/ontinue-adds-dark-web-monitoring-to-ion-mxdr-5056ed</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ontinue-adds-dark-web-monitoring-to-ion-mxdr-5056ed</guid>
-      <description><![CDATA[Ontinue launched ION for Dark Web Monitoring, a managed add‑on that extends ION MXDR. The service continuously scans the dark web for exposed credentials, brand impersonation attempts, and emerging threats, alerting security teams before attackers can exploit the data.]]></description>
-      <pubDate>Tue, 06 Oct 2026 10:10:39 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/06/ontinue-ion-dark-web-monitoring/">Help Net Security</source>
       <category>Policy</category>
     </item>
   </channel>

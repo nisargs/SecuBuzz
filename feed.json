@@ -1,5 +1,36 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/10/08/ivan-milenkovic-qualys-cyber-risk-quantification/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/ivan-milenkovic-qualys-cyber-risk-quantification/",
+    "title": "Build an Economic Model to Prioritize Security Spending",
+    "headline": "Build an Economic Model to Prioritize Security Spending",
+    "summary": "Security leaders can use an economic model to quantify risk, starting with loss scenarios and mapping them to assets. The approach ranks fixes by value at risk, aligns with CFO expectations, and demonstrates the worth of prevented incidents, helping prioritize investments.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-08T06:00:01.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/08/ivan-milenkovic-qualys-cyber-risk-quantification/",
+    "additionalSources": [
+      {
+        "source": "Dark Reading",
+        "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/remotethreat-bets-security-teams-need-to-test-what-happens-after-defenses-fail"
+      }
+    ]
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/08/ai-surveillance-cameras-privacy/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/ai-surveillance-cameras-privacy/",
+    "title": "Audit System to Prevent Misuse of AI in Street Surveillance",
+    "headline": "Audit System to Prevent Misuse of AI in Street Surveillance",
+    "summary": "A Japanese professor proposes a Fully Monitored Public Space system that adds independent record‑keeping and unannounced spot checks to AI analyzing street camera footage. The system uses existing cameras and encrypted storage to deter operators from misusing surveillance AI.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-08T05:30:13.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/08/ai-surveillance-cameras-privacy/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/10/08/forescout-healthcare-quantum-readiness-report/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/forescout-healthcare-quantum-readiness-report/",
     "title": "Ransomware Threats Target Critical Medical Devices",
@@ -198,6 +229,10 @@
       {
         "source": "Check Point Research",
         "sourceUrl": "https://research.checkpoint.com/2026/5th-october-threat-intelligence-report/"
+      },
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/advantest-discloses-data-breach-months-after-ransomware-attack/"
       }
     ]
   },
@@ -290,6 +325,24 @@
     ]
   },
   {
+    "id": "https://thehackernews.com/2026/10/poellm-malware-infects-3400-servers-to.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/poellm-malware-infects-3400-servers-to.html",
+    "title": "PoeLLM Malware Targets AI Infrastructure, Expands Crypto‑Mining Botnet",
+    "headline": "PoeLLM Malware Targets AI Infrastructure, Expands Crypto‑Mining Botnet",
+    "summary": "Cybersecurity researchers identified PoeLLM malware infecting over 3,400 exposed AI and large language model servers. The malware installs cryptocurrency miners, expanding the botnet’s scale. The campaign, dubbed Canto Incognito, leverages AI infrastructure to deploy miners and grow its network of compromised hosts.",
+    "category": "GENERAL",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-07T15:33:51.000Z",
+    "url": "https://thehackernews.com/2026/10/poellm-malware-infects-3400-servers-to.html",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/poellm-malware-infects-exposed-ai-servers-in-cryptomining-attacks/"
+      }
+    ]
+  },
+  {
     "id": "https://therecord.media/oklahoma-flock-ruing-supreme-court-chatrie-decision",
     "sourceUrl": "https://therecord.media/oklahoma-flock-ruing-supreme-court-chatrie-decision",
     "title": "Supreme Court Geofencing Ruling Forces Judge to Toss Flock Camera Evidence",
@@ -325,6 +378,10 @@
       {
         "source": "The Hacker News",
         "sourceUrl": "https://thehackernews.com/2026/10/critical-atlassian-flaw-lets.html"
+      },
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/cve-2026-21589-atlassian-file-access-flaw"
       }
     ]
   },
@@ -369,6 +426,32 @@
     ]
   },
   {
+    "id": "https://therecord.media/cyber-experts-call-on-cisa-require-ot-security",
+    "sourceUrl": "https://therecord.media/cyber-experts-call-on-cisa-require-ot-security",
+    "title": "OT Cybersecurity Coalition Urges CISA to Create Mandatory Federal Rules",
+    "headline": "OT Cybersecurity Coalition Urges CISA to Create Mandatory Federal Rules",
+    "summary": "The Operational Technology Cybersecurity Coalition released a white paper urging CISA to establish mandatory federal OT rules. The proposal aims to strengthen security for critical infrastructure systems that monitor and control industrial processes. The coalition calls for a new directive to address gaps in current OT cybersecurity regulations.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Record",
+    "publishedAt": "2026-10-07T14:03:00.000Z",
+    "url": "https://therecord.media/cyber-experts-call-on-cisa-require-ot-security",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/ransomware-has-a-new-target-is-your-backup-ready/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ransomware-has-a-new-target-is-your-backup-ready/",
+    "title": "Ransomware Targets Backup Infrastructure, Urging Robust Isolation",
+    "headline": "Ransomware Targets Backup Infrastructure, Urging Robust Isolation",
+    "summary": "Ransomware groups increasingly attack backup systems to block recovery and pressure victims into paying. Kaseya warns that backups must be isolated, immutable, and regularly tested so attackers cannot reach them. Organizations should ensure backups are off‑site, encrypted, and verified to maintain resilience.",
+    "category": "RANSOMWARE",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-07T14:01:11.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/ransomware-has-a-new-target-is-your-backup-ready/",
+    "additionalSources": []
+  },
+  {
     "id": "https://krebsonsecurity.com/2026/10/shinyhunters-extorted-boeing-spin-off-prior-to-arrests/",
     "sourceUrl": "https://krebsonsecurity.com/2026/10/shinyhunters-extorted-boeing-spin-off-prior-to-arrests/",
     "title": "Teen Detained for Leading ShinyHunters Extortion of Boeing Spin‑Off",
@@ -392,6 +475,19 @@
     "source": "SecurityWeek",
     "publishedAt": "2026-10-07T13:47:12.000Z",
     "url": "https://www.securityweek.com/qilin-ransomware-suspect-arrested-in-japan-extradited-to-germany/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/the-sixth-voice-of-ciso-data-shows.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/the-sixth-voice-of-ciso-data-shows.html",
+    "title": "Cyber Risk Shifts Inside Workflow, 2026 CISO Survey Reveals",
+    "headline": "Cyber Risk Shifts Inside Workflow, 2026 CISO Survey Reveals",
+    "summary": "A 2026 CISO survey shows cyber risk is moving into everyday workflows, driven by AI governance, human risk, and board scrutiny. The findings highlight a five‑year trend toward integrating security into the systems where work actually happens, rather than treating it as a separate function.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-07T11:57:05.000Z",
+    "url": "https://thehackernews.com/2026/10/the-sixth-voice-of-ciso-data-shows.html",
     "additionalSources": []
   },
   {
@@ -431,22 +527,48 @@
     ]
   },
   {
-    "id": "https://thehackernews.com/2026/10/fake-chatgpt-gemini-and-claude-ad.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/fake-chatgpt-gemini-and-claude-ad.html",
-    "title": "Phishing Platform Mimics AI Chatbot Ads to Steal Credentials and MFA Codes",
-    "headline": "Phishing Platform Mimics AI Chatbot Ads to Steal Credentials and MFA Codes",
-    "summary": "Cybersecurity researchers uncovered a human-operated phishing platform that impersonates advertising portals for AI chatbots such as ChatGPT, Gemini, and Claude. The fake portals lure users into providing credentials and MFA codes, enabling attackers to hijack business accounts and compromise sensitive data.",
+    "id": "https://cybernewsai.com/blog/fake-ai-sites-bitb-ad-account-theft",
+    "sourceUrl": "https://cybernewsai.com/blog/fake-ai-sites-bitb-ad-account-theft",
+    "title": "Fake AI Portals Hijack Corporate Ad Accounts via Browser-in-the-Browser Attacks",
+    "headline": "Fake AI Portals Hijack Corporate Ad Accounts via Browser-in-the-Browser Attacks",
+    "summary": "Attackers use counterfeit ChatGPT and Gemini portals that run Browser‑in‑the‑Browser attacks to steal credentials and take over corporate advertising accounts. The technique bypasses real‑time MFA, allowing attackers to redirect ad spend. Organizations should verify portal URLs, enforce MFA, and monitor account activity.",
     "category": "BREACH",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-06T18:38:55.000Z",
-    "url": "https://thehackernews.com/2026/10/fake-chatgpt-gemini-and-claude-ad.html",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-10-07T01:55:14.000Z",
+    "url": "https://cybernewsai.com/blog/fake-ai-sites-bitb-ad-account-theft",
     "additionalSources": [
       {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/fake-chatgpt-gemini-sites-steal-advertising-accounts-mfa-codes/"
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/fake-chatgpt-gemini-and-claude-ad.html"
       }
     ]
+  },
+  {
+    "id": "https://www.darkreading.com/cyberattacks-data-breaches/clickfix-attacks-evolve-better-hide-malicious-payloads",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/clickfix-attacks-evolve-better-hide-malicious-payloads",
+    "title": "ClickFix Evolves to Conceal Payloads Using DNS TXT and Browser Cache",
+    "headline": "ClickFix Evolves to Conceal Payloads Using DNS TXT and Browser Cache",
+    "summary": "Threat actors behind ClickFix are now embedding malicious payloads within DNS TXT records and leveraging browser cache pre‑fetching to obscure delivery. This technique complicates early detection, as payloads bypass traditional signature‑based defenses and remain dormant until the victim’s browser retrieves cached content.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-06T20:32:58.000Z",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/clickfix-attacks-evolve-better-hide-malicious-payloads",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.darkreading.com/iot/exposed-healthcare-systems-quantum-ready",
+    "sourceUrl": "https://www.darkreading.com/iot/exposed-healthcare-systems-quantum-ready",
+    "title": "Healthcare Systems Lag Behind Post-Quantum Cryptography Readiness",
+    "headline": "Healthcare Systems Lag Behind Post-Quantum Cryptography Readiness",
+    "summary": "A study of 2.5 million devices in 50 healthcare organizations shows the sector is far from ready for post‑quantum cryptography, highlighting a significant gap in security preparedness for future quantum threats.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-06T20:30:27.000Z",
+    "url": "https://www.darkreading.com/iot/exposed-healthcare-systems-quantum-ready",
+    "additionalSources": []
   },
   {
     "id": "https://thehackernews.com/2026/10/linux-backdoors-impersonate-email.html",
@@ -1341,24 +1463,6 @@
     "publishedAt": "2026-10-02T20:30:00.000Z",
     "url": "https://therecord.media/judge-dismisses-spyware-case-brought-by-salvadoran-journalists",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/cybersecurity-operations/remotethreat-bets-security-teams-need-to-test-what-happens-after-defenses-fail",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/remotethreat-bets-security-teams-need-to-test-what-happens-after-defenses-fail",
-    "title": "RemoteThreat Proposes Advanced Red‑Team Testing Beyond Traditional Methods",
-    "headline": "RemoteThreat Proposes Advanced Red‑Team Testing Beyond Traditional Methods",
-    "summary": "RemoteThreat, an offensive cyber operations startup, proposes expanding red‑team testing beyond traditional methods to simulate attackers’ advanced tactics. The company argues that security teams must evaluate post‑defense failure scenarios to better prepare for evolving threat capabilities. Its approach aims to improve resilience by anticipating sophisticated adversary behaviors.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-02T20:18:37.000Z",
-    "url": "https://www.darkreading.com/cybersecurity-operations/remotethreat-bets-security-teams-need-to-test-what-happens-after-defenses-fail",
-    "additionalSources": [
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/ukraine-ssscip-mobile-malware-warning-ios-android"
-      }
-    ]
   },
   {
     "id": "https://therecord.media/alpr-legislation-hawley-sanders-merkley-aoc",
@@ -3644,107 +3748,6 @@
     "source": "Microsoft Security",
     "publishedAt": "2026-09-25T15:35:08.000Z",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/wales-cyberattack-police-breach",
-    "sourceUrl": "https://therecord.media/wales-cyberattack-police-breach",
-    "title": "Cyberattack Hits Welsh Police Force, Staff Data May Be Compromised",
-    "headline": "Cyberattack Hits Welsh Police Force, Staff Data May Be Compromised",
-    "summary": "Dyfed-Powys Police in Wales confirmed a cyberattack that disrupted non-emergency systems and may have compromised staff information. The incident highlights potential data exposure within a law enforcement agency.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "The Record",
-    "publishedAt": "2026-09-25T15:00:00.000Z",
-    "url": "https://therecord.media/wales-cyberattack-police-breach",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/with-the-rise-of-ai-agents-soc-2-should-adapt-or-risk-irrelevance/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/with-the-rise-of-ai-agents-soc-2-should-adapt-or-risk-irrelevance/",
-    "title": "AI Agents Expose SOC 2 Control Gaps",
-    "headline": "AI Agents Expose SOC 2 Control Gaps",
-    "summary": "AI agents can act through human credentials, performing actions that current SOC 2 controls may not detect as human activity. This creates security gaps in compliance frameworks. Token Security recommends SOC 2 updates to recognize and manage agent identities, ensuring controls remain effective against automated threat actors.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-09-25T14:51:10.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/with-the-rise-of-ai-agents-soc-2-should-adapt-or-risk-irrelevance/",
-    "additionalSources": [
-      {
-        "source": "Microsoft Security",
-        "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/09/24/whats-new-in-microsoft-security-september-2026/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.darkreading.com/cyber-risk/stopping-it-worker-scams-revamped-hr-process",
-    "sourceUrl": "https://www.darkreading.com/cyber-risk/stopping-it-worker-scams-revamped-hr-process",
-    "title": "Revamping HR Processes to Counter IT Worker Scams",
-    "headline": "Revamping HR Processes to Counter IT Worker Scams",
-    "summary": "Experts advise training HR managers on the latest tactics and warning signs to mitigate IT worker scams. Automated analysis can further assist in identifying and preventing these social engineering attacks, enhancing organizational security posture.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "publishedAt": "2026-09-25T14:46:13.000Z",
-    "url": "https://www.darkreading.com/cyber-risk/stopping-it-worker-scams-revamped-hr-process",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/09/pamstealer-macos-malware-adds-live-c2.html",
-    "sourceUrl": "https://thehackernews.com/2026/09/pamstealer-macos-malware-adds-live-c2.html",
-    "title": "PamStealer macOS Malware Adds Live C2 Payload Decryption and Multi‑Layer Persistence",
-    "headline": "PamStealer macOS Malware Adds Live C2 Payload Decryption and Multi‑Layer Persistence",
-    "summary": "Researchers identified a new PamStealer variant for macOS that uses a server‑side decryption chain to recover its main payload. The malware still drops a JavaScript for Automation (JXA) script but changes its lure and delivery method. The updated version enhances persistence and evasion by encrypting payload data until it reaches the command‑and‑control server.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "publishedAt": "2026-09-25T13:18:06.000Z",
-    "url": "https://thehackernews.com/2026/09/pamstealer-macos-malware-adds-live-c2.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://blog.cloudflare.com/turnstile-spin/",
-    "sourceUrl": "https://blog.cloudflare.com/turnstile-spin/",
-    "title": "Cloudflare Turnstile Spin Addresses Misconfigured Bot Protection",
-    "headline": "Cloudflare Turnstile Spin Addresses Misconfigured Bot Protection",
-    "summary": "Misconfiguring Cloudflare Turnstile by skipping backend validation exposes sites to bots. Turnstile Spin resolves incomplete setups by employing an AI coding agent to wire up server‑side verification, ensuring proper bot protection and reducing exposure to automated attacks.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Cloudflare Security",
-    "publishedAt": "2026-09-25T13:00:00.000Z",
-    "url": "https://blog.cloudflare.com/turnstile-spin/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-to-deprecate-windows-deployment-services-after-windows-server-2025/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-to-deprecate-windows-deployment-services-after-windows-server-2025/",
-    "title": "Microsoft to Deprecate Windows Deployment Services in Next Server Release",
-    "headline": "Microsoft to Deprecate Windows Deployment Services in Next Server Release",
-    "summary": "Microsoft announced that the Windows Deployment Services (WDS) server role will be deprecated starting with the next Windows Server release. The change will affect organizations that rely on WDS for OS deployment, requiring them to transition to alternative deployment solutions before the deprecation date.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-09-25T12:40:59.000Z",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-to-deprecate-windows-deployment-services-after-windows-server-2025/",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-recent-windows-updates-cause-desktop-loading-issues/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.securityweek.com/cisa-election-security-plan-flags-patching-barriers-voter-database-attacks/",
-    "sourceUrl": "https://www.securityweek.com/cisa-election-security-plan-flags-patching-barriers-voter-database-attacks/",
-    "title": "CISA Election Security Plan Highlights Patching Barriers and Voter Database Attack Risks",
-    "headline": "CISA Election Security Plan Highlights Patching Barriers and Voter Database Attack Risks",
-    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency’s election security plan identifies challenges in patching critical systems and highlights potential attacks on voter databases. The plan aims to improve security posture for election infrastructure by addressing vulnerabilities and strengthening defenses.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-09-25T12:39:12.000Z",
-    "url": "https://www.securityweek.com/cisa-election-security-plan-flags-patching-barriers-voter-database-attacks/",
     "additionalSources": []
   }
 ]
