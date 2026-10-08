@@ -1,5 +1,18 @@
 [
   {
+    "id": "https://therecord.media/cryptocurrency-sim-swap-london",
+    "sourceUrl": "https://therecord.media/cryptocurrency-sim-swap-london",
+    "title": "Crypto Thief Sentenced for $260,000 SIM‑Swapping Scam",
+    "headline": "Crypto Thief Sentenced for $260,000 SIM‑Swapping Scam",
+    "summary": "A 25‑year‑old man was sentenced to two and a half years in prison in London for orchestrating a SIM‑swapping fraud that stole nearly $260,000 in cryptocurrency. The case highlights the growing threat of mobile identity theft and the legal consequences for perpetrators.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Record",
+    "publishedAt": "2026-10-08T15:45:00.000Z",
+    "url": "https://therecord.media/cryptocurrency-sim-swap-london",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.securityweek.com/cisco-patches-a-dozen-critical-vulnerabilities/",
     "sourceUrl": "https://www.securityweek.com/cisco-patches-a-dozen-critical-vulnerabilities/",
     "title": "Cisco Releases Patches for Twelve Critical Vulnerabilities",
@@ -83,6 +96,19 @@
     ]
   },
   {
+    "id": "https://www.securityweek.com/attackers-target-critical-atlassian-vulnerability-within-hours-of-poc-publication/",
+    "sourceUrl": "https://www.securityweek.com/attackers-target-critical-atlassian-vulnerability-within-hours-of-poc-publication/",
+    "title": "Attackers Exploit Atlassian CVE‑2026‑21589 Within Hours of PoC Release",
+    "headline": "Attackers Exploit Atlassian CVE‑2026‑21589 Within Hours of PoC Release",
+    "summary": "Threat actors began targeting Atlassian’s self‑hosted Data Center products after the public release of a proof‑of‑concept for CVE‑2026‑21589, a critical vulnerability that could allow remote code execution. Atlassian has issued a patch; administrators should update immediately to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-08T14:04:44.000Z",
+    "url": "https://www.securityweek.com/attackers-target-critical-atlassian-vulnerability-within-hours-of-poc-publication/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/oauth-grants-pile-up-faster-than-you-can-review-them-heres-how-to-keep-up/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/oauth-grants-pile-up-faster-than-you-can-review-them-heres-how-to-keep-up/",
     "title": "OAuth Grants Exploited in Recent Klue Breach",
@@ -93,6 +119,32 @@
     "source": "BleepingComputer",
     "publishedAt": "2026-10-08T14:00:10.000Z",
     "url": "https://www.bleepingcomputer.com/news/security/oauth-grants-pile-up-faster-than-you-can-review-them-heres-how-to-keep-up/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/uranium-crypto-exchange-hacker-found-guilty-of-53-million-theft/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/uranium-crypto-exchange-hacker-found-guilty-of-53-million-theft/",
+    "title": "Uranium Finance Hack Convicted, $53M Stolen",
+    "headline": "Uranium Finance Hack Convicted, $53M Stolen",
+    "summary": "A Maryland man was convicted of hacking the decentralized crypto exchange Uranium Finance twice in April 2021, stealing more than $53 million. The case highlights the vulnerability of decentralized platforms to targeted attacks and the legal consequences for cybercriminals.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-08T13:18:36.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/uranium-crypto-exchange-hacker-found-guilty-of-53-million-theft/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://therecord.media/cheap-androids-shipped-with-ad-fraud-malware",
+    "sourceUrl": "https://therecord.media/cheap-androids-shipped-with-ad-fraud-malware",
+    "title": "Cheap Android Phones Pre‑Loaded with Ad‑Fraud Malware",
+    "headline": "Cheap Android Phones Pre‑Loaded with Ad‑Fraud Malware",
+    "summary": "Researchers at Bitdefender discovered that thousands of inexpensive Android devices shipped with ad‑fraud malware that installs before first use and cannot be uninstalled. The malware undermines device security and enables persistent ad fraud, posing a supply‑chain risk to users.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "publishedAt": "2026-10-08T13:00:00.000Z",
+    "url": "https://therecord.media/cheap-androids-shipped-with-ad-fraud-malware",
     "additionalSources": []
   },
   {
@@ -122,6 +174,24 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.securityweek.com/us-seeks-alleged-chinese-hafnium-hacker-with-10-million-reward/",
+    "sourceUrl": "https://www.securityweek.com/us-seeks-alleged-chinese-hafnium-hacker-with-10-million-reward/",
+    "title": "US Seeks Alleged Chinese Hafnium Hacker With $10 Million Reward",
+    "headline": "US Seeks Alleged Chinese Hafnium Hacker With $10 Million Reward",
+    "summary": "The United States is offering a $10 million reward for information leading to the arrest of Zhang Yu, a suspected Hafnium hacker linked to Chinese state-sponsored espionage. Zhang was charged alongside Xu Zewei, who was extradited from Italy to the US in April 2026.",
+    "category": "NATION_STATE",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-08T12:46:21.000Z",
+    "url": "https://www.securityweek.com/us-seeks-alleged-chinese-hafnium-hacker-with-10-million-reward/",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/us-offers-up-to-10-million-for-tips-on.html"
+      }
+    ]
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/10/08/scams-targeting-youtube-creators-sponsorship/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/scams-targeting-youtube-creators-sponsorship/",
     "title": "YouTubers Targeted by Phishing Scam Using Fake Sponsorships",
@@ -138,6 +208,37 @@
         "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/milk-dragon-phishing-fake-discounts/"
       }
     ]
+  },
+  {
+    "id": "https://www.securityweek.com/sonicwall-and-splunk-patch-critical-vulnerabilities/",
+    "sourceUrl": "https://www.securityweek.com/sonicwall-and-splunk-patch-critical-vulnerabilities/",
+    "title": "SonicWall and Splunk Patch Critical Vulnerabilities",
+    "headline": "SonicWall and Splunk Patch Critical Vulnerabilities",
+    "summary": "SonicWall and Splunk have released patches for critical and high‑severity flaws that could let attackers bypass authentication, run arbitrary code, and gain elevated privileges. The vulnerabilities affect authentication mechanisms and code execution paths, requiring immediate application of the vendor patches to prevent exploitation.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-08T12:37:32.000Z",
+    "url": "https://www.securityweek.com/sonicwall-and-splunk-patch-critical-vulnerabilities/",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/sonicwall-patches-cvss-100-pre.html"
+      }
+    ]
+  },
+  {
+    "id": "https://therecord.media/russia-ukraine-malware-transportation",
+    "sourceUrl": "https://therecord.media/russia-ukraine-malware-transportation",
+    "title": "Russian-Backed Hackers Deploy Updated Malware Against Ukrainian Transport and Energy Firms",
+    "headline": "Russian-Backed Hackers Deploy Updated Malware Against Ukrainian Transport and Energy Firms",
+    "summary": "Russian-aligned hackers have released an upgraded malware strain targeting Ukrainian transportation, manufacturing, and energy companies. The malware is designed to harvest system data, indicating a persistent threat aimed at disrupting critical infrastructure. No public fix is available yet, but organizations should monitor for unusual data exfiltration activity.",
+    "category": "NATION_STATE",
+    "severity": "HIGH",
+    "source": "The Record",
+    "publishedAt": "2026-10-08T12:30:00.000Z",
+    "url": "https://therecord.media/russia-ukraine-malware-transportation",
+    "additionalSources": []
   },
   {
     "id": "https://www.bleepingcomputer.com/news/security/microsoft-teams-to-add-third-party-deepfake-detection-impersonation-protection/",
@@ -182,6 +283,32 @@
         "sourceUrl": "https://www.securityweek.com/oracle-health-data-breach-tally-climbs-to-nearly-20-million/"
       }
     ]
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/08/anthropic-claude-haiku-5-5/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/anthropic-claude-haiku-5-5/",
+    "title": "Anthropic’s Claude Haiku 5.5 Improves Vulnerability Detection While Maintaining Strong Safeguards",
+    "headline": "Anthropic’s Claude Haiku 5.5 Improves Vulnerability Detection While Maintaining Strong Safeguards",
+    "summary": "Anthropic’s Claude Haiku 5.5, a budget model for speed‑sensitive workloads, now better detects vulnerabilities and writes exploits compared to Haiku 4.5. The company added stricter cybersecurity safeguards, though lighter than higher‑tier models, and tested the model’s offensive abilities with safeguards disabled, revealing known Chrome V8 flaws.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-08T11:24:16.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/08/anthropic-claude-haiku-5-5/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/rein-security-raises-25-million-to-guard-ai-agents-at-runtime/",
+    "sourceUrl": "https://www.securityweek.com/rein-security-raises-25-million-to-guard-ai-agents-at-runtime/",
+    "title": "Rein Security Secures $25M to Protect AI Agents at Runtime",
+    "headline": "Rein Security Secures $25M to Protect AI Agents at Runtime",
+    "summary": "Rein Security announced a $25 million funding round to accelerate product innovation, agentic research, and workforce expansion. The capital will support the development of runtime protection for AI agents, aiming to enhance security for emerging AI workloads. No immediate threat or vulnerability is reported.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-08T11:11:28.000Z",
+    "url": "https://www.securityweek.com/rein-security-raises-25-million-to-guard-ai-agents-at-runtime/",
+    "additionalSources": []
   },
   {
     "id": "https://www.thezdi.com/blog/2026/10/8/pwn2own-ireland-2026-day-three-results-amp-master-of-pwn",
@@ -267,6 +394,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.securityweek.com/fake-decryption-tools-masked-11m-markup-in-ransomware-recovery-scheme/",
+    "sourceUrl": "https://www.securityweek.com/fake-decryption-tools-masked-11m-markup-in-ransomware-recovery-scheme/",
+    "title": "Fake Decryption Tools Inflate Ransom Payments by $11M",
+    "headline": "Fake Decryption Tools Inflate Ransom Payments by $11M",
+    "summary": "A scheme using counterfeit decryption tools was uncovered, where victims paid an additional $11 million for remediation after paying ransoms. The fraud involved charging inflated fees for supposed decryption services, misleading victims into paying more than the original ransom.",
+    "category": "RANSOMWARE",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-08T09:27:55.000Z",
+    "url": "https://www.securityweek.com/fake-decryption-tools-masked-11m-markup-in-ransomware-recovery-scheme/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/10/08/github-push-protection-modernbert/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/github-push-protection-modernbert/",
     "title": "GitHub Introduces AI Detector to Block Passwords Before Code Push",
@@ -338,24 +478,6 @@
       {
         "source": "The Hacker News",
         "sourceUrl": "https://thehackernews.com/2026/10/fbi-warns-fortibleed-remains-active.html"
-      }
-    ]
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/us-offers-up-to-10-million-for-tips-on.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/us-offers-up-to-10-million-for-tips-on.html",
-    "title": "U.S. Offers $10M Reward for Zhang Yu Linked to HAFNIUM Exchange Attacks",
-    "headline": "U.S. Offers $10M Reward for Zhang Yu Linked to HAFNIUM Exchange Attacks",
-    "summary": "The U.S. State Department is offering up to $10 million for tips that identify or locate Zhang Yu, a Chinese national charged in the U.S. over the 2021 Microsoft Exchange Server HAFNIUM attacks. The reward seeks information leading to his identification or location.",
-    "category": "NATION_STATE",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-08T07:42:04.000Z",
-    "url": "https://thehackernews.com/2026/10/us-offers-up-to-10-million-for-tips-on.html",
-    "additionalSources": [
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/accused-hafnium-hacker-zhang-yu-10million-reward"
       }
     ]
   },
@@ -591,24 +713,6 @@
     "publishedAt": "2026-10-07T16:30:36.000Z",
     "url": "https://blog.cloudflare.com/agentic-security-operations/",
     "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/sonicwall-patches-cvss-100-pre.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/sonicwall-patches-cvss-100-pre.html",
-    "title": "SonicWall Releases Hotfixes for CVSS 10.0 SSRF Flaw in SMA1000 Appliances",
-    "headline": "SonicWall Releases Hotfixes for CVSS 10.0 SSRF Flaw in SMA1000 Appliances",
-    "summary": "SonicWall issued hotfixes for four flaws in its SMA1000 gateways, including a pre-authentication SSRF flaw rated CVSS 10.0 that could let attackers send requests through the appliance to reach internal functions. No evidence of exploitation reported.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-07T16:17:44.000Z",
-    "url": "https://thehackernews.com/2026/10/sonicwall-patches-cvss-100-pre.html",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-max-severity-ssrf-flaw-in-sma1000-gateways/"
-      }
-    ]
   },
   {
     "id": "https://www.microsoft.com/en-us/security/blog/2026/10/07/3-lessons-from-frontier-ai-vulnerability-research/",
@@ -3644,120 +3748,6 @@
     "source": "Cloudflare Security",
     "publishedAt": "2026-09-28T14:51:57.000Z",
     "url": "https://blog.cloudflare.com/vinext-nextjs-on-vite/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/80-000-plus-organizations-had-ai-logins-stolen-from-shadow-ai-to-llmjacking/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/80-000-plus-organizations-had-ai-logins-stolen-from-shadow-ai-to-llmjacking/",
-    "title": "Over 80,000 Organizations Lose AI Logins to Shadow AI and LLMjacking",
-    "headline": "Over 80,000 Organizations Lose AI Logins to Shadow AI and LLMjacking",
-    "summary": "Infostealer logs exposed AI account credentials and sessions for more than 80,000 corporate domains, enabling stolen conversations and LLMjacking. The breach threatens sensitive AI interactions and highlights the need for stronger credential protection.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-09-28T14:00:10.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/80-000-plus-organizations-had-ai-logins-stolen-from-shadow-ai-to-llmjacking/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://blog.cloudflare.com/emdash-cms-plugin-registry/",
-    "sourceUrl": "https://blog.cloudflare.com/emdash-cms-plugin-registry/",
-    "title": "EmDash 1.0 Released as Secure, Stable CMS for Astro",
-    "headline": "EmDash 1.0 Released as Secure, Stable CMS for Astro",
-    "summary": "EmDash 1.0 launches as a stable, open‑source CMS built for Astro, featuring agent‑friendly workflows, sandboxed plugins, and a decentralized registry that keeps publishers in control. The release emphasizes secure plugin management and publisher autonomy.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "publishedAt": "2026-09-28T13:00:00.000Z",
-    "url": "https://blog.cloudflare.com/emdash-cms-plugin-registry/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://blog.cloudflare.com/voidzero-update/",
-    "sourceUrl": "https://blog.cloudflare.com/voidzero-update/",
-    "title": "VoidZero Accelerates JavaScript Toolchain at Cloudflare",
-    "headline": "VoidZero Accelerates JavaScript Toolchain at Cloudflare",
-    "summary": "VoidZero has released over 80 updates, boosting JavaScript compilation, linting, and testing speeds. The toolchain now offers a 10x faster React compiler and Vite+ 1.0, enhancing developer productivity and AI agent performance.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "publishedAt": "2026-09-28T13:00:00.000Z",
-    "url": "https://blog.cloudflare.com/voidzero-update/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://blog.cloudflare.com/forge-open-source-generation-pipeline/",
-    "sourceUrl": "https://blog.cloudflare.com/forge-open-source-generation-pipeline/",
-    "title": "Forge Introduces Open‑Source Pipeline for SDKs and Docs",
-    "headline": "Forge Introduces Open‑Source Pipeline for SDKs and Docs",
-    "summary": "Forge is a pluggable, open‑source CI pipeline that automatically generates SDKs, CLIs, and documentation from API definitions. By integrating generation into team repositories, it keeps developer tools in sync and reduces manual maintenance.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "publishedAt": "2026-09-28T13:00:00.000Z",
-    "url": "https://blog.cloudflare.com/forge-open-source-generation-pipeline/",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/09/28/authorizer-open-source-authentication-server/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/09/28/cve-2025-68788-file-notification-attacks/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/28/cve-2025-68788-file-notification-attacks/",
-    "title": "File‑Notification Systems Enable Cross‑Account Browsing and Keystroke Timing Spy",
-    "headline": "File‑Notification Systems Enable Cross‑Account Browsing and Keystroke Timing Spy",
-    "summary": "Researchers discovered that Windows, Linux, and macOS file‑notification APIs can be abused to monitor other users’ activity. An unprivileged Windows account could detect 95.7 % of another user’s Firefox visits, while Linux notifications exposed keystroke timing on local keyboards and SSH sessions. The flaw allows passive spying without elevated privileges.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "publishedAt": "2026-09-28T12:14:43.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/09/28/cve-2025-68788-file-notification-attacks/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/dc-health-agency-exposes-400000-beneficiary-records/",
-    "sourceUrl": "https://www.securityweek.com/dc-health-agency-exposes-400000-beneficiary-records/",
-    "title": "DC Health Agency Exposes 400,000 Beneficiary Records",
-    "headline": "DC Health Agency Exposes 400,000 Beneficiary Records",
-    "summary": "The DC Health Agency exposed Medicaid IDs and other beneficiary information for 400,000 individuals, compromising personal data and potentially enabling identity theft. The breach involved unauthorized access to sensitive health records, requiring immediate remediation and notification of affected parties.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-09-28T11:29:29.000Z",
-    "url": "https://www.securityweek.com/dc-health-agency-exposes-400000-beneficiary-records/",
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/github-actions-re-enabled-mini-shai-hulud"
-      }
-    ]
-  },
-  {
-    "id": "https://www.securityweek.com/new-mexico-jury-finds-facebook-liable-for-deceiving-users-about-privacy-protections/",
-    "sourceUrl": "https://www.securityweek.com/new-mexico-jury-finds-facebook-liable-for-deceiving-users-about-privacy-protections/",
-    "title": "Facebook Found Liable for Misleading Users About Privacy Protections",
-    "headline": "Facebook Found Liable for Misleading Users About Privacy Protections",
-    "summary": "A New Mexico jury ruled that Facebook deceived users regarding its privacy safeguards, holding the company liable for misleading claims. The decision highlights the legal responsibility of social media platforms to transparently disclose privacy practices. No data breach was reported, but the ruling may prompt stricter compliance.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-09-28T10:40:01.000Z",
-    "url": "https://www.securityweek.com/new-mexico-jury-finds-facebook-liable-for-deceiving-users-about-privacy-protections/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/09/28/linkedin-profile-verification-features/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/28/linkedin-profile-verification-features/",
-    "title": "LinkedIn Tests Peer‑Verified Work History Badges",
-    "headline": "LinkedIn Tests Peer‑Verified Work History Badges",
-    "summary": "LinkedIn is piloting a feature that lets members confirm a connection’s work or education history. Verified members can endorse a colleague’s past roles or schools; once enough endorsements are collected, LinkedIn adds a verification badge to the profile. Users may opt out of the feature.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-09-28T08:20:01.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/09/28/linkedin-profile-verification-features/",
     "additionalSources": []
   }
 ]

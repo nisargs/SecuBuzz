@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Oct 2026 15:40:41 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 16:19:50 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Crypto Thief Sentenced for $260,000 SIM‑Swapping Scam</title>
+      <link>https://secubuzz.com/news/crypto-thief-sentenced-for-260-000-sim-swapping-sc-49f221</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/crypto-thief-sentenced-for-260-000-sim-swapping-sc-49f221</guid>
+      <description><![CDATA[A 25‑year‑old man was sentenced to two and a half years in prison in London for orchestrating a SIM‑swapping fraud that stole nearly $260,000 in cryptocurrency. The case highlights the growing threat of mobile identity theft and the legal consequences for perpetrators.]]></description>
+      <pubDate>Thu, 08 Oct 2026 15:45:00 GMT</pubDate>
+      <source url="https://therecord.media/cryptocurrency-sim-swap-london">The Record</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>Cisco Releases Patches for Twelve Critical Vulnerabilities</title>
       <link>https://secubuzz.com/news/cisco-releases-patches-for-twelve-critical-vulnera-a636f9</link>
@@ -53,6 +62,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Attackers Exploit Atlassian CVE‑2026‑21589 Within Hours of PoC Release</title>
+      <link>https://secubuzz.com/news/attackers-exploit-atlassian-cve-2026-21589-within-3f3336</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/attackers-exploit-atlassian-cve-2026-21589-within-3f3336</guid>
+      <description><![CDATA[Threat actors began targeting Atlassian’s self‑hosted Data Center products after the public release of a proof‑of‑concept for CVE‑2026‑21589, a critical vulnerability that could allow remote code execution. Atlassian has issued a patch; administrators should update immediately to mitigate the risk.]]></description>
+      <pubDate>Thu, 08 Oct 2026 14:04:44 GMT</pubDate>
+      <source url="https://www.securityweek.com/attackers-target-critical-atlassian-vulnerability-within-hours-of-poc-publication/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>OAuth Grants Exploited in Recent Klue Breach</title>
       <link>https://secubuzz.com/news/oauth-grants-exploited-in-recent-klue-breach-381d27</link>
       <guid isPermaLink="true">https://secubuzz.com/news/oauth-grants-exploited-in-recent-klue-breach-381d27</guid>
@@ -60,6 +78,24 @@
       <pubDate>Thu, 08 Oct 2026 14:00:10 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/oauth-grants-pile-up-faster-than-you-can-review-them-heres-how-to-keep-up/">BleepingComputer</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Uranium Finance Hack Convicted, $53M Stolen</title>
+      <link>https://secubuzz.com/news/uranium-finance-hack-convicted-53m-stolen-6dbc5b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/uranium-finance-hack-convicted-53m-stolen-6dbc5b</guid>
+      <description><![CDATA[A Maryland man was convicted of hacking the decentralized crypto exchange Uranium Finance twice in April 2021, stealing more than $53 million. The case highlights the vulnerability of decentralized platforms to targeted attacks and the legal consequences for cybercriminals.]]></description>
+      <pubDate>Thu, 08 Oct 2026 13:18:36 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/uranium-crypto-exchange-hacker-found-guilty-of-53-million-theft/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Cheap Android Phones Pre‑Loaded with Ad‑Fraud Malware</title>
+      <link>https://secubuzz.com/news/cheap-android-phones-pre-loaded-with-ad-fraud-malw-4531ca</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cheap-android-phones-pre-loaded-with-ad-fraud-malw-4531ca</guid>
+      <description><![CDATA[Researchers at Bitdefender discovered that thousands of inexpensive Android devices shipped with ad‑fraud malware that installs before first use and cannot be uninstalled. The malware undermines device security and enables persistent ad fraud, posing a supply‑chain risk to users.]]></description>
+      <pubDate>Thu, 08 Oct 2026 13:00:00 GMT</pubDate>
+      <source url="https://therecord.media/cheap-androids-shipped-with-ad-fraud-malware">The Record</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Cloudflare Radar Redesign Enhances Accessibility for Non-Technical Users</title>
@@ -80,6 +116,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>US Seeks Alleged Chinese Hafnium Hacker With $10 Million Reward</title>
+      <link>https://secubuzz.com/news/us-seeks-alleged-chinese-hafnium-hacker-with-10-mi-5a7bd6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/us-seeks-alleged-chinese-hafnium-hacker-with-10-mi-5a7bd6</guid>
+      <description><![CDATA[The United States is offering a $10 million reward for information leading to the arrest of Zhang Yu, a suspected Hafnium hacker linked to Chinese state-sponsored espionage. Zhang was charged alongside Xu Zewei, who was extradited from Italy to the US in April 2026.]]></description>
+      <pubDate>Thu, 08 Oct 2026 12:46:21 GMT</pubDate>
+      <source url="https://www.securityweek.com/us-seeks-alleged-chinese-hafnium-hacker-with-10-million-reward/">SecurityWeek</source>
+      <category>Malware</category>
+    </item>
+    <item>
       <title>YouTubers Targeted by Phishing Scam Using Fake Sponsorships</title>
       <link>https://secubuzz.com/news/youtubers-targeted-by-phishing-scam-using-fake-spo-5a26c0</link>
       <guid isPermaLink="true">https://secubuzz.com/news/youtubers-targeted-by-phishing-scam-using-fake-spo-5a26c0</guid>
@@ -87,6 +132,24 @@
       <pubDate>Thu, 08 Oct 2026 12:41:43 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/08/scams-targeting-youtube-creators-sponsorship/">Help Net Security</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>SonicWall and Splunk Patch Critical Vulnerabilities</title>
+      <link>https://secubuzz.com/news/sonicwall-and-splunk-patch-critical-vulnerabilitie-6f31db</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sonicwall-and-splunk-patch-critical-vulnerabilitie-6f31db</guid>
+      <description><![CDATA[SonicWall and Splunk have released patches for critical and high‑severity flaws that could let attackers bypass authentication, run arbitrary code, and gain elevated privileges. The vulnerabilities affect authentication mechanisms and code execution paths, requiring immediate application of the vendor patches to prevent exploitation.]]></description>
+      <pubDate>Thu, 08 Oct 2026 12:37:32 GMT</pubDate>
+      <source url="https://www.securityweek.com/sonicwall-and-splunk-patch-critical-vulnerabilities/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Russian-Backed Hackers Deploy Updated Malware Against Ukrainian Transport and Energy Firms</title>
+      <link>https://secubuzz.com/news/russian-backed-hackers-deploy-updated-malware-agai-77fa1c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/russian-backed-hackers-deploy-updated-malware-agai-77fa1c</guid>
+      <description><![CDATA[Russian-aligned hackers have released an upgraded malware strain targeting Ukrainian transportation, manufacturing, and energy companies. The malware is designed to harvest system data, indicating a persistent threat aimed at disrupting critical infrastructure. No public fix is available yet, but organizations should monitor for unusual data exfiltration activity.]]></description>
+      <pubDate>Thu, 08 Oct 2026 12:30:00 GMT</pubDate>
+      <source url="https://therecord.media/russia-ukraine-malware-transportation">The Record</source>
+      <category>Malware</category>
     </item>
     <item>
       <title>Microsoft Teams Adds Support for Third‑Party Deepfake Detection Tools</title>
@@ -114,6 +177,24 @@
       <pubDate>Thu, 08 Oct 2026 11:42:46 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/asos-links-data-breach-to-social-engineering-attack-credential-theft/">BleepingComputer</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Anthropic’s Claude Haiku 5.5 Improves Vulnerability Detection While Maintaining Strong Safeguards</title>
+      <link>https://secubuzz.com/news/anthropic-s-claude-haiku-5-5-improves-vulnerabilit-2615c4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-s-claude-haiku-5-5-improves-vulnerabilit-2615c4</guid>
+      <description><![CDATA[Anthropic’s Claude Haiku 5.5, a budget model for speed‑sensitive workloads, now better detects vulnerabilities and writes exploits compared to Haiku 4.5. The company added stricter cybersecurity safeguards, though lighter than higher‑tier models, and tested the model’s offensive abilities with safeguards disabled, revealing known Chrome V8 flaws.]]></description>
+      <pubDate>Thu, 08 Oct 2026 11:24:16 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/08/anthropic-claude-haiku-5-5/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Rein Security Secures $25M to Protect AI Agents at Runtime</title>
+      <link>https://secubuzz.com/news/rein-security-secures-25m-to-protect-ai-agents-at-53002d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rein-security-secures-25m-to-protect-ai-agents-at-53002d</guid>
+      <description><![CDATA[Rein Security announced a $25 million funding round to accelerate product innovation, agentic research, and workforce expansion. The capital will support the development of runtime protection for AI agents, aiming to enhance security for emerging AI workloads. No immediate threat or vulnerability is reported.]]></description>
+      <pubDate>Thu, 08 Oct 2026 11:11:28 GMT</pubDate>
+      <source url="https://www.securityweek.com/rein-security-raises-25-million-to-guard-ai-agents-at-runtime/">SecurityWeek</source>
+      <category>Policy</category>
     </item>
     <item>
       <title>Pwn2Own Ireland 2026 Day Three Wrap‑up</title>
@@ -170,6 +251,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Fake Decryption Tools Inflate Ransom Payments by $11M</title>
+      <link>https://secubuzz.com/news/fake-decryption-tools-inflate-ransom-payments-by-1-110f31</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fake-decryption-tools-inflate-ransom-payments-by-1-110f31</guid>
+      <description><![CDATA[A scheme using counterfeit decryption tools was uncovered, where victims paid an additional $11 million for remediation after paying ransoms. The fraud involved charging inflated fees for supposed decryption services, misleading victims into paying more than the original ransom.]]></description>
+      <pubDate>Thu, 08 Oct 2026 09:27:55 GMT</pubDate>
+      <source url="https://www.securityweek.com/fake-decryption-tools-masked-11m-markup-in-ransomware-recovery-scheme/">SecurityWeek</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
       <title>GitHub Introduces AI Detector to Block Passwords Before Code Push</title>
       <link>https://secubuzz.com/news/github-introduces-ai-detector-to-block-passwords-b-5fe20c</link>
       <guid isPermaLink="true">https://secubuzz.com/news/github-introduces-ai-detector-to-block-passwords-b-5fe20c</guid>
@@ -204,15 +294,6 @@
       <pubDate>Thu, 08 Oct 2026 07:52:33 GMT</pubDate>
       <source url="https://www.securityweek.com/fortibleed-attackers-locking-victims-out-of-fortinet-devices/">SecurityWeek</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>U.S. Offers $10M Reward for Zhang Yu Linked to HAFNIUM Exchange Attacks</title>
-      <link>https://secubuzz.com/news/u-s-offers-10m-reward-for-zhang-yu-linked-to-hafni-70e894</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/u-s-offers-10m-reward-for-zhang-yu-linked-to-hafni-70e894</guid>
-      <description><![CDATA[The U.S. State Department is offering up to $10 million for tips that identify or locate Zhang Yu, a Chinese national charged in the U.S. over the 2021 Microsoft Exchange Server HAFNIUM attacks. The reward seeks information leading to his identification or location.]]></description>
-      <pubDate>Thu, 08 Oct 2026 07:42:04 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/us-offers-up-to-10-million-for-tips-on.html">The Hacker News</source>
-      <category>Malware</category>
     </item>
     <item>
       <title>Build an Economic Model to Prioritize Security Spending</title>
@@ -350,15 +431,6 @@
       <category>Cloud</category>
     </item>
     <item>
-      <title>SonicWall Releases Hotfixes for CVSS 10.0 SSRF Flaw in SMA1000 Appliances</title>
-      <link>https://secubuzz.com/news/sonicwall-releases-hotfixes-for-cvss-10-0-ssrf-fla-59a6e8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sonicwall-releases-hotfixes-for-cvss-10-0-ssrf-fla-59a6e8</guid>
-      <description><![CDATA[SonicWall issued hotfixes for four flaws in its SMA1000 gateways, including a pre-authentication SSRF flaw rated CVSS 10.0 that could let attackers send requests through the appliance to reach internal functions. No evidence of exploitation reported.]]></description>
-      <pubDate>Wed, 07 Oct 2026 16:17:44 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/sonicwall-patches-cvss-100-pre.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>Microsoft FORGE Lab Shares Lessons from AI-Driven Vulnerability Research</title>
       <link>https://secubuzz.com/news/microsoft-forge-lab-shares-lessons-from-ai-driven-71664f</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-forge-lab-shares-lessons-from-ai-driven-71664f</guid>
@@ -384,78 +456,6 @@
       <pubDate>Wed, 07 Oct 2026 15:34:53 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html">The Hacker News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>PoeLLM Malware Targets AI Infrastructure, Expands Crypto‑Mining Botnet</title>
-      <link>https://secubuzz.com/news/poellm-malware-targets-ai-infrastructure-expands-c-5a5d46</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/poellm-malware-targets-ai-infrastructure-expands-c-5a5d46</guid>
-      <description><![CDATA[Cybersecurity researchers identified PoeLLM malware infecting over 3,400 exposed AI and large language model servers. The malware installs cryptocurrency miners, expanding the botnet’s scale. The campaign, dubbed Canto Incognito, leverages AI infrastructure to deploy miners and grow its network of compromised hosts.]]></description>
-      <pubDate>Wed, 07 Oct 2026 15:33:51 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/poellm-malware-infects-3400-servers-to.html">The Hacker News</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>Supreme Court Geofencing Ruling Forces Judge to Toss Flock Camera Evidence</title>
-      <link>https://secubuzz.com/news/supreme-court-geofencing-ruling-forces-judge-to-to-797192</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/supreme-court-geofencing-ruling-forces-judge-to-to-797192</guid>
-      <description><![CDATA[A recent Supreme Court decision on geofencing data made Oklahoma judge dismiss a sheriff’s Flock camera footage in a drug trafficking case. The ruling underscores the growing importance of digital evidence standards and the limits of geofencing in court proceedings.]]></description>
-      <pubDate>Wed, 07 Oct 2026 15:00:00 GMT</pubDate>
-      <source url="https://therecord.media/oklahoma-flock-ruing-supreme-court-chatrie-decision">The Record</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Atlassian Patch Addresses CVE-2026-21589 Arbitrary File Access Vulnerability</title>
-      <link>https://secubuzz.com/news/atlassian-patch-addresses-cve-2026-21589-arbitrary-57dd7d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/atlassian-patch-addresses-cve-2026-21589-arbitrary-57dd7d</guid>
-      <description><![CDATA[Atlassian released patches for multiple products to fix CVE-2026-21589, an arbitrary file access flaw allowing attackers to read any file in the web application’s directory. The vulnerability could expose sensitive configuration files and other confidential data. Users should apply the update immediately to prevent potential data exposure.]]></description>
-      <pubDate>Wed, 07 Oct 2026 14:59:33 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33406">SANS Internet Storm Center</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Wiz Red Agent Reveals Public Data Exposure at Fortune 500 Firm</title>
-      <link>https://secubuzz.com/news/wiz-red-agent-reveals-public-data-exposure-at-fort-1a1a0d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/wiz-red-agent-reveals-public-data-exposure-at-fort-1a1a0d</guid>
-      <description><![CDATA[Wiz’s Red Agent identified a public webpage that exposed sensitive company data within minutes, a flaw missed by traditional DSPM tools. The exposure highlighted gaps in internal‑to‑external scanning and the need for attacker‑thinking security assessments to detect such leaks early.]]></description>
-      <pubDate>Wed, 07 Oct 2026 14:53:27 GMT</pubDate>
-      <source url="https://www.wiz.io/blog/red-agent-financial-services-data-exposure">Wiz Research</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Southern Company Utility Accounts Breached, 400,000 Customers Affected</title>
-      <link>https://secubuzz.com/news/southern-company-utility-accounts-breached-400-000-1d63b2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/southern-company-utility-accounts-breached-400-000-1d63b2</guid>
-      <description><![CDATA[Southern Company announced that hackers accessed utility account information for Georgia Power and Alabama Power customers, affecting approximately 400,000 accounts. The breach involved unauthorized access to customer data, prompting the company to notify affected users and investigate the intrusion.]]></description>
-      <pubDate>Wed, 07 Oct 2026 14:15:20 GMT</pubDate>
-      <source url="https://www.securityweek.com/georgia-power-alabama-power-data-breach-hits-400000-accounts/">SecurityWeek</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>OT Cybersecurity Coalition Urges CISA to Create Mandatory Federal Rules</title>
-      <link>https://secubuzz.com/news/ot-cybersecurity-coalition-urges-cisa-to-create-ma-468fc0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ot-cybersecurity-coalition-urges-cisa-to-create-ma-468fc0</guid>
-      <description><![CDATA[The Operational Technology Cybersecurity Coalition released a white paper urging CISA to establish mandatory federal OT rules. The proposal aims to strengthen security for critical infrastructure systems that monitor and control industrial processes. The coalition calls for a new directive to address gaps in current OT cybersecurity regulations.]]></description>
-      <pubDate>Wed, 07 Oct 2026 14:03:00 GMT</pubDate>
-      <source url="https://therecord.media/cyber-experts-call-on-cisa-require-ot-security">The Record</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Ransomware Targets Backup Infrastructure, Urging Robust Isolation</title>
-      <link>https://secubuzz.com/news/ransomware-targets-backup-infrastructure-urging-ro-397911</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ransomware-targets-backup-infrastructure-urging-ro-397911</guid>
-      <description><![CDATA[Ransomware groups increasingly attack backup systems to block recovery and pressure victims into paying. Kaseya warns that backups must be isolated, immutable, and regularly tested so attackers cannot reach them. Organizations should ensure backups are off‑site, encrypted, and verified to maintain resilience.]]></description>
-      <pubDate>Wed, 07 Oct 2026 14:01:11 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/ransomware-has-a-new-target-is-your-backup-ready/">BleepingComputer</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Teen Detained for Leading ShinyHunters Extortion of Boeing Spin‑Off</title>
-      <link>https://secubuzz.com/news/teen-detained-for-leading-shinyhunters-extortion-o-5fb00d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/teen-detained-for-leading-shinyhunters-extortion-o-5fb00d</guid>
-      <description><![CDATA[A teenager from Amman, Jordan, suspected of leading the ShinyHunters data‑theft and extortion group, was detained and is cooperating with the FBI. The group was extorting a Boeing divested business unit before the arrest. The suspect, known as "Rey," is being investigated for further gang members.]]></description>
-      <pubDate>Wed, 07 Oct 2026 13:48:45 GMT</pubDate>
-      <source url="https://krebsonsecurity.com/2026/10/shinyhunters-extorted-boeing-spin-off-prior-to-arrests/">Krebs on Security</source>
-      <category>Ransomware</category>
     </item>
   </channel>
 </rss>
