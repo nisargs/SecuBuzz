@@ -1,5 +1,31 @@
 [
   {
+    "id": "https://www.darkreading.com/cloud-security/agentcorruption-aws-environments-at-risk-single-prompt",
+    "sourceUrl": "https://www.darkreading.com/cloud-security/agentcorruption-aws-environments-at-risk-single-prompt",
+    "title": "'AgentCorruption' Vulnerability Lets Single Prompt Take Over AWS Bedrock AgentCore",
+    "headline": "'AgentCorruption' Vulnerability Lets Single Prompt Take Over AWS Bedrock AgentCore",
+    "summary": "A recently patched flaw in AWS Bedrock AgentCore, dubbed 'AgentCorruption', can be exploited by sending a single prompt to an AI chatbot, enabling attackers to hijack an entire AWS environment. The vulnerability allows remote code execution across the organization’s fleet. AWS has issued a patch; users should apply it immediately.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-08T20:39:44.000Z",
+    "url": "https://www.darkreading.com/cloud-security/agentcorruption-aws-environments-at-risk-single-prompt",
+    "additionalSources": []
+  },
+  {
+    "id": "https://therecord.media/lawmakers-warn-of-google-spirit-ai-training-deal",
+    "sourceUrl": "https://therecord.media/lawmakers-warn-of-google-spirit-ai-training-deal",
+    "title": "Google AI Training Deal Could Expose Spirit Airlines Data",
+    "headline": "Google AI Training Deal Could Expose Spirit Airlines Data",
+    "summary": "Lawmakers warn that a proposed $10 million AI training deal with Google could expose Spirit Airlines’ sensitive data, including 100 million emails, 500 million Teams messages, employment contracts, employee records, payroll and tax information. The sale would grant Google access to these documents, raising privacy concerns.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Record",
+    "publishedAt": "2026-10-08T20:27:00.000Z",
+    "url": "https://therecord.media/lawmakers-warn-of-google-spirit-ai-training-deal",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/ransomware-attack-disrupts-japans-idcf-cloud-used-by-govt-clients/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/ransomware-attack-disrupts-japans-idcf-cloud-used-by-govt-clients/",
     "title": "Ransomware Attack Disrupts Japan's IDCF Cloud Service",
@@ -442,6 +468,19 @@
     "source": "BleepingComputer",
     "publishedAt": "2026-10-08T12:08:16.000Z",
     "url": "https://www.bleepingcomputer.com/news/security/microsoft-teams-to-add-third-party-deepfake-detection-impersonation-protection/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.darkreading.com/cybersecurity-operations/writing-next-chapter",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/writing-next-chapter",
+    "title": "Dark Reading Announces New Decade",
+    "headline": "Dark Reading Announces New Decade",
+    "summary": "Dark Reading is set to begin a new decade in its storied history, announcing a fresh chapter for the cybersecurity news platform. The publication hints at upcoming breaking news and initiatives aimed at shaping the industry’s future, signaling a renewed focus on security trends and analysis.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-08T12:00:00.000Z",
+    "url": "https://www.darkreading.com/cybersecurity-operations/writing-next-chapter",
     "additionalSources": []
   },
   {
@@ -3729,45 +3768,6 @@
     "source": "BleepingComputer",
     "publishedAt": "2026-09-28T18:50:59.000Z",
     "url": "https://www.bleepingcomputer.com/news/security/misconfigured-supabase-apps-expose-data-in-over-16-000-databases/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/vulnerabilities-threats/ai-agents-are-privileged-users-who-is-auditing-their-access",
-    "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/ai-agents-are-privileged-users-who-is-auditing-their-access",
-    "title": "AI Agents Operate with Broad Privileges, Raising Insider Threat Concerns",
-    "headline": "AI Agents Operate with Broad Privileges, Raising Insider Threat Concerns",
-    "summary": "Enterprises monitor human employees closely, but autonomous AI agents often run with extensive privileges that can become insider threats. The article highlights the need for auditing AI access controls to prevent misuse and potential data breaches.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "publishedAt": "2026-09-28T18:44:22.000Z",
-    "url": "https://www.darkreading.com/vulnerabilities-threats/ai-agents-are-privileged-users-who-is-auditing-their-access",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/09/rathat-android-malware-console-uses.html",
-    "sourceUrl": "https://thehackernews.com/2026/09/rathat-android-malware-console-uses.html",
-    "title": "RatHat Android Malware Console Targets High-Value Victims",
-    "headline": "RatHat Android Malware Console Targets High-Value Victims",
-    "summary": "Security firm Cleafy traced nearly 100 deployments of RatHat’s Android banking trojan console since April 2026. The console, part of a malware‑as‑a‑service model, lets operators control infected phones and collect data from each device.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-09-28T17:38:33.000Z",
-    "url": "https://thehackernews.com/2026/09/rathat-android-malware-console-uses.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/facebook-new-mexico-privacy",
-    "sourceUrl": "https://therecord.media/facebook-new-mexico-privacy",
-    "title": "New Mexico Jury Finds Meta Deceived Consumers About Data Privacy Practices",
-    "headline": "New Mexico Jury Finds Meta Deceived Consumers About Data Privacy Practices",
-    "summary": "A New Mexico jury found Meta violated consumer privacy law nearly 44 million times by misleading users about its data‑privacy practices. The court ruled the company’s statements were deceptive, holding Meta accountable for false claims about how it collects and uses personal information.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Record",
-    "publishedAt": "2026-09-28T17:15:00.000Z",
-    "url": "https://therecord.media/facebook-new-mexico-privacy",
     "additionalSources": []
   }
 ]

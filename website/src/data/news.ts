@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "agentcorruption-vulnerability-lets-single-prompt-7b84c5",
+    "title": "'AgentCorruption' Vulnerability Lets Single Prompt Take Over AWS Bedrock AgentCore",
+    "summary": "A recently patched flaw in AWS Bedrock AgentCore, dubbed 'AgentCorruption', can be exploited by sending a single prompt to an AI chatbot, enabling attackers to hijack an entire AWS environment. The vulnerability allows remote code execution across the organization’s fleet. AWS has issued a patch; users should apply it immediately.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cloud-security/agentcorruption-aws-environments-at-risk-single-prompt",
+    "publishedAt": "2026-10-08T20:39:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "agentcorruption-vulnerability-lets-single-prompt",
+      "article-7b84c5",
+      "7b84c5",
+      "agentcorruption-vulnerability-lets-single-prompt-take-over-a"
+    ]
+  },
+  {
+    "slug": "google-ai-training-deal-could-expose-spirit-airlin-508b7d",
+    "title": "Google AI Training Deal Could Expose Spirit Airlines Data",
+    "summary": "Lawmakers warn that a proposed $10 million AI training deal with Google could expose Spirit Airlines’ sensitive data, including 100 million emails, 500 million Teams messages, employment contracts, employee records, payroll and tax information. The sale would grant Google access to these documents, raising privacy concerns.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/lawmakers-warn-of-google-spirit-ai-training-deal",
+    "publishedAt": "2026-10-08T20:27:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-ai-training-deal-could-expose-spirit-airlin",
+      "article-508b7d",
+      "508b7d",
+      "google-ai-training-deal-could-expose-spirit-airlines-data"
+    ]
+  },
+  {
     "slug": "ransomware-attack-disrupts-japan-s-idcf-cloud-serv-1715fe",
     "title": "Ransomware Attack Disrupts Japan's IDCF Cloud Service",
     "summary": "A ransomware operation targeted IDCF Cloud, a major Japanese cloud provider, causing an outage at a data center cluster that serves eastern Japan. The attack impacted government clients, leading to service disruption and potential data access issues. No specific remediation steps were disclosed.",
@@ -510,6 +546,23 @@ export const news: NewsBrief[] = [
       "article-2fbbbc",
       "2fbbbc",
       "microsoft-teams-adds-support-for-third-party-deepfake-detect"
+    ]
+  },
+  {
+    "slug": "dark-reading-announces-new-decade-4f566b",
+    "title": "Dark Reading Announces New Decade",
+    "summary": "Dark Reading is set to begin a new decade in its storied history, announcing a fresh chapter for the cybersecurity news platform. The publication hints at upcoming breaking news and initiatives aimed at shaping the industry’s future, signaling a renewed focus on security trends and analysis.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/writing-next-chapter",
+    "publishedAt": "2026-10-08T12:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "dark-reading-announces-new-decade",
+      "article-4f566b",
+      "4f566b"
     ]
   },
   {
@@ -4450,60 +4503,6 @@ export const news: NewsBrief[] = [
       "article-22c860",
       "22c860",
       "supabase-misconfigurations-expose-pii-passwords-and-auth-tok"
-    ]
-  },
-  {
-    "slug": "ai-agents-operate-with-broad-privileges-raising-in-1b494e",
-    "title": "AI Agents Operate with Broad Privileges, Raising Insider Threat Concerns",
-    "summary": "Enterprises monitor human employees closely, but autonomous AI agents often run with extensive privileges that can become insider threats. The article highlights the need for auditing AI access controls to prevent misuse and potential data breaches.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/ai-agents-are-privileged-users-who-is-auditing-their-access",
-    "publishedAt": "2026-09-28T18:44:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-agents-operate-with-broad-privileges-raising-in",
-      "article-1b494e",
-      "1b494e",
-      "ai-agents-operate-with-broad-privileges-raising-insider-thre"
-    ]
-  },
-  {
-    "slug": "rathat-android-malware-console-targets-high-value-53085e",
-    "title": "RatHat Android Malware Console Targets High-Value Victims",
-    "summary": "Security firm Cleafy traced nearly 100 deployments of RatHat’s Android banking trojan console since April 2026. The console, part of a malware‑as‑a‑service model, lets operators control infected phones and collect data from each device.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/09/rathat-android-malware-console-uses.html",
-    "publishedAt": "2026-09-28T17:38:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rathat-android-malware-console-targets-high-value",
-      "article-53085e",
-      "53085e",
-      "rathat-android-malware-console-targets-high-value-victims"
-    ]
-  },
-  {
-    "slug": "new-mexico-jury-finds-meta-deceived-consumers-abou-397bff",
-    "title": "New Mexico Jury Finds Meta Deceived Consumers About Data Privacy Practices",
-    "summary": "A New Mexico jury found Meta violated consumer privacy law nearly 44 million times by misleading users about its data‑privacy practices. The court ruled the company’s statements were deceptive, holding Meta accountable for false claims about how it collects and uses personal information.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/facebook-new-mexico-privacy",
-    "publishedAt": "2026-09-28T17:15:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "new-mexico-jury-finds-meta-deceived-consumers-abou",
-      "article-397bff",
-      "397bff",
-      "new-mexico-jury-finds-meta-deceived-consumers-about-data-pri"
     ]
   }
 ];
