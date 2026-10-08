@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Oct 2026 21:13:42 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 23:32:36 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>FBI Seizes Domains of Chinese State‑Sponsored Hacking Tools Used in Critical Infrastructure Breaches</title>
+      <link>https://secubuzz.com/news/fbi-seizes-domains-of-chinese-state-sponsored-hack-5d8536</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fbi-seizes-domains-of-chinese-state-sponsored-hack-5d8536</guid>
+      <description><![CDATA[The FBI seized seven domains that hosted the MicroScan and FishHub tools used by the Chinese state‑sponsored group Flax Typhoon. These tools enabled attacks that breached critical infrastructure and other organizations worldwide. The operation disrupts the group’s command and control infrastructure, limiting future breaches.]]></description>
+      <pubDate>Thu, 08 Oct 2026 21:42:51 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/fbi-disrupts-chinese-hacking-tools-used-to-breach-critical-infrastructure/">BleepingComputer</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Microsoft Urges Early Testing of Post‑Quantum Certificate Ecosystems</title>
+      <link>https://secubuzz.com/news/microsoft-urges-early-testing-of-post-quantum-cert-1b355d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-urges-early-testing-of-post-quantum-cert-1b355d</guid>
+      <description><![CDATA[Microsoft encourages organizations to begin testing post‑quantum authentication by participating in its PQC TLS Pilot Program. The initiative aims to advance readiness for quantum‑resistant certificates and TLS protocols, helping enterprises prepare for future cryptographic challenges.]]></description>
+      <pubDate>Thu, 08 Oct 2026 20:44:28 GMT</pubDate>
+      <source url="https://www.microsoft.com/en-us/security/blog/2026/10/08/post-quantum-authentication-why-organizations-should-start-testing-certificate-ecosystems-now/">Microsoft Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>&apos;AgentCorruption&apos; Vulnerability Lets Single Prompt Take Over AWS Bedrock AgentCore</title>
+      <link>https://secubuzz.com/news/agentcorruption-vulnerability-lets-single-prompt-7b84c5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/agentcorruption-vulnerability-lets-single-prompt-7b84c5</guid>
+      <description><![CDATA[A recently patched flaw in AWS Bedrock AgentCore, dubbed 'AgentCorruption', can be exploited by sending a single prompt to an AI chatbot, enabling attackers to hijack an entire AWS environment. The vulnerability allows remote code execution across the organization’s fleet. AWS has issued a patch; users should apply it immediately.]]></description>
+      <pubDate>Thu, 08 Oct 2026 20:39:44 GMT</pubDate>
+      <source url="https://www.darkreading.com/cloud-security/agentcorruption-aws-environments-at-risk-single-prompt">Dark Reading</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Google AI Training Deal Could Expose Spirit Airlines Data</title>
+      <link>https://secubuzz.com/news/google-ai-training-deal-could-expose-spirit-airlin-508b7d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-ai-training-deal-could-expose-spirit-airlin-508b7d</guid>
+      <description><![CDATA[Lawmakers warn that a proposed $10 million AI training deal with Google could expose Spirit Airlines’ sensitive data, including 100 million emails, 500 million Teams messages, employment contracts, employee records, payroll and tax information. The sale would grant Google access to these documents, raising privacy concerns.]]></description>
+      <pubDate>Thu, 08 Oct 2026 20:27:00 GMT</pubDate>
+      <source url="https://therecord.media/lawmakers-warn-of-google-spirit-ai-training-deal">The Record</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>Ransomware Attack Disrupts Japan&apos;s IDCF Cloud Service</title>
       <link>https://secubuzz.com/news/ransomware-attack-disrupts-japan-s-idcf-cloud-serv-1715fe</link>
@@ -24,15 +60,6 @@
       <pubDate>Thu, 08 Oct 2026 19:20:33 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/low-cost-android-phones-ship-with-residential-proxy-malware/">BleepingComputer</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>International coalition seizes tools used by cyber firm behind Flax Typhoon</title>
-      <link>https://secubuzz.com/news/international-coalition-seizes-tools-used-by-cyber-579d71</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/international-coalition-seizes-tools-used-by-cyber-579d71</guid>
-      <description><![CDATA[The U.S. and allied nations dismantled digital tools and infrastructure operated by Beijing‑based Integrity Tech, which enabled widespread vulnerability scanning and occasional intrusions as part of the Flax Typhoon campaign. The seizure disrupts the group’s ability to conduct state‑sponsored espionage operations.]]></description>
-      <pubDate>Thu, 08 Oct 2026 19:20:00 GMT</pubDate>
-      <source url="https://therecord.media/flax-typhoon-china-tools-integrity-tech-international-takedown">The Record</source>
-      <category>Malware</category>
     </item>
     <item>
       <title>Venezuelan Cartel Malware Leader Arrested for ATM Jackpotting</title>
@@ -206,15 +233,6 @@
       <category>Cloud</category>
     </item>
     <item>
-      <title>FBI Seizes Sites Selling 17,000 Stolen Intimate Images of Women and Girls</title>
-      <link>https://secubuzz.com/news/fbi-seizes-sites-selling-17-000-stolen-intimate-im-4e9809</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fbi-seizes-sites-selling-17-000-stolen-intimate-im-4e9809</guid>
-      <description><![CDATA[The FBI and French authorities seized two websites that sold hacked and stolen sexually explicit images of 17,000 young women and girls. The administrator was arrested in northern France. The operation was conducted with the FBI Washington Field Office and U.S. DOJ. No further details released.]]></description>
-      <pubDate>Thu, 08 Oct 2026 12:51:42 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/08/nudeleaksteens-seized-fbi-france/">Help Net Security</source>
-      <category>Breach</category>
-    </item>
-    <item>
       <title>US Seeks Alleged Chinese Hafnium Hacker With $10 Million Reward</title>
       <link>https://secubuzz.com/news/us-seeks-alleged-chinese-hafnium-hacker-with-10-mi-5a7bd6</link>
       <guid isPermaLink="true">https://secubuzz.com/news/us-seeks-alleged-chinese-hafnium-hacker-with-10-mi-5a7bd6</guid>
@@ -260,13 +278,13 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Chinese State‑Sponsored Actors Use Automated Tools and Manual Exploits to Steal Sensitive Data</title>
-      <link>https://secubuzz.com/news/chinese-state-sponsored-actors-use-automated-tools-4fe541</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chinese-state-sponsored-actors-use-automated-tools-4fe541</guid>
-      <description><![CDATA[Chinese government‑linked threat actors, backed by the Integrity Technology Group, combine automated scanning, large‑scale botnets, and manual exploitation to target organizations worldwide. They use cross‑site scripting, password spraying on Microsoft Exchange, and VPN persistence to exfiltrate emails and credentials. Mitigation includes disabling unused services, sanitizing web inputs, and monitoring Exchange for anomalous activity.]]></description>
+      <title>Dark Reading Announces New Decade</title>
+      <link>https://secubuzz.com/news/dark-reading-announces-new-decade-4f566b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/dark-reading-announces-new-decade-4f566b</guid>
+      <description><![CDATA[Dark Reading is set to begin a new decade in its storied history, announcing a fresh chapter for the cybersecurity news platform. The publication hints at upcoming breaking news and initiatives aimed at shaping the industry’s future, signaling a renewed focus on security trends and analysis.]]></description>
       <pubDate>Thu, 08 Oct 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-281a">CISA</source>
-      <category>Malware</category>
+      <source url="https://www.darkreading.com/cybersecurity-operations/writing-next-chapter">Dark Reading</source>
+      <category>Policy</category>
     </item>
     <item>
       <title>Red Lion Controls N‑Tron 700 Series Vulnerabilities Enable Remote Access and Reboot</title>
@@ -438,24 +456,6 @@
       <pubDate>Thu, 08 Oct 2026 04:30:20 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/08/passkey-adoption-typing-passwords/">Help Net Security</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>IBM and Red Hat Patch 400+ Java Library Vulnerabilities</title>
-      <link>https://secubuzz.com/news/ibm-and-red-hat-patch-400-java-library-vulnerabili-6f37d9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ibm-and-red-hat-patch-400-java-library-vulnerabili-6f37d9</guid>
-      <description><![CDATA[IBM and Red Hat identified and fixed more than 400 previously unknown security flaws in widely used Java libraries. The vulnerabilities expose companies that run the affected libraries until they apply the patches. The fixes are available through Lightwell, the open‑source patching program. Prompt application of the updates is essential to mitigate potential exploitation.]]></description>
-      <pubDate>Thu, 08 Oct 2026 04:18:00 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/08/lightwell-java-library-vulnerabilities/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Ransomware Threats Target Critical Medical Devices</title>
-      <link>https://secubuzz.com/news/ransomware-threats-target-critical-medical-devices-1b88ff</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ransomware-threats-target-critical-medical-devices-1b88ff</guid>
-      <description><![CDATA[Threat actors are exploiting IT, IoMT, OT, and IoT devices in healthcare delivery organizations to deploy ransomware, demand payments, and monetize stolen patient data. A study of over 2.5 million devices across 50+ networks identified 461 ransomware claims and 300 hacktivist attacks between January and August 2026.]]></description>
-      <pubDate>Thu, 08 Oct 2026 04:00:14 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/08/forescout-healthcare-quantum-readiness-report/">Help Net Security</source>
-      <category>Ransomware</category>
     </item>
   </channel>
 </rss>

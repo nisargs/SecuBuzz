@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "fbi-seizes-domains-of-chinese-state-sponsored-hack-5d8536",
+    "title": "FBI Seizes Domains of Chinese State‑Sponsored Hacking Tools Used in Critical Infrastructure Breaches",
+    "summary": "The FBI seized seven domains that hosted the MicroScan and FishHub tools used by the Chinese state‑sponsored group Flax Typhoon. These tools enabled attacks that breached critical infrastructure and other organizations worldwide. The operation disrupts the group’s command and control infrastructure, limiting future breaches.",
+    "category": "Malware",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-disrupts-chinese-hacking-tools-used-to-breach-critical-infrastructure/",
+    "publishedAt": "2026-10-08T21:42:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fbi-seizes-domains-of-chinese-state-sponsored-hack",
+      "article-5d8536",
+      "5d8536",
+      "fbi-seizes-domains-of-chinese-state-sponsored-hacking-tools-"
+    ]
+  },
+  {
+    "slug": "microsoft-urges-early-testing-of-post-quantum-cert-1b355d",
+    "title": "Microsoft Urges Early Testing of Post‑Quantum Certificate Ecosystems",
+    "summary": "Microsoft encourages organizations to begin testing post‑quantum authentication by participating in its PQC TLS Pilot Program. The initiative aims to advance readiness for quantum‑resistant certificates and TLS protocols, helping enterprises prepare for future cryptographic challenges.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Microsoft Security",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/08/post-quantum-authentication-why-organizations-should-start-testing-certificate-ecosystems-now/",
+    "publishedAt": "2026-10-08T20:44:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-urges-early-testing-of-post-quantum-cert",
+      "article-1b355d",
+      "1b355d",
+      "microsoft-urges-early-testing-of-post-quantum-certificate-ec"
+    ]
+  },
+  {
     "slug": "agentcorruption-vulnerability-lets-single-prompt-7b84c5",
     "title": "'AgentCorruption' Vulnerability Lets Single Prompt Take Over AWS Bedrock AgentCore",
     "summary": "A recently patched flaw in AWS Bedrock AgentCore, dubbed 'AgentCorruption', can be exploited by sending a single prompt to an AI chatbot, enabling attackers to hijack an entire AWS environment. The vulnerability allows remote code execution across the organization’s fleet. AWS has issued a patch; users should apply it immediately.",
@@ -80,24 +116,6 @@ export const news: NewsBrief[] = [
       "article-247d3e",
       "247d3e",
       "low-cost-android-phones-ship-with-residential-proxy-malware"
-    ]
-  },
-  {
-    "slug": "international-coalition-seizes-tools-used-by-cyber-579d71",
-    "title": "International coalition seizes tools used by cyber firm behind Flax Typhoon",
-    "summary": "The U.S. and allied nations dismantled digital tools and infrastructure operated by Beijing‑based Integrity Tech, which enabled widespread vulnerability scanning and occasional intrusions as part of the Flax Typhoon campaign. The seizure disrupts the group’s ability to conduct state‑sponsored espionage operations.",
-    "category": "Malware",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/flax-typhoon-china-tools-integrity-tech-international-takedown",
-    "publishedAt": "2026-10-08T19:20:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "international-coalition-seizes-tools-used-by-cyber",
-      "article-579d71",
-      "579d71",
-      "international-coalition-seizes-tools-used-by-cyber-firm-behi"
     ]
   },
   {
@@ -441,24 +459,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "fbi-seizes-sites-selling-17-000-stolen-intimate-im-4e9809",
-    "title": "FBI Seizes Sites Selling 17,000 Stolen Intimate Images of Women and Girls",
-    "summary": "The FBI and French authorities seized two websites that sold hacked and stolen sexually explicit images of 17,000 young women and girls. The administrator was arrested in northern France. The operation was conducted with the FBI Washington Field Office and U.S. DOJ. No further details released.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/nudeleaksteens-seized-fbi-france/",
-    "publishedAt": "2026-10-08T12:51:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fbi-seizes-sites-selling-17-000-stolen-intimate-im",
-      "article-4e9809",
-      "4e9809",
-      "fbi-seizes-sites-selling-17-000-stolen-intimate-images-of-wo"
-    ]
-  },
-  {
     "slug": "us-seeks-alleged-chinese-hafnium-hacker-with-10-mi-5a7bd6",
     "title": "US Seeks Alleged Chinese Hafnium Hacker With $10 Million Reward",
     "summary": "The United States is offering a $10 million reward for information leading to the arrest of Zhang Yu, a suspected Hafnium hacker linked to Chinese state-sponsored espionage. Zhang was charged alongside Xu Zewei, who was extradited from Italy to the US in April 2026.",
@@ -563,24 +563,6 @@ export const news: NewsBrief[] = [
       "dark-reading-announces-new-decade",
       "article-4f566b",
       "4f566b"
-    ]
-  },
-  {
-    "slug": "chinese-state-sponsored-actors-use-automated-tools-4fe541",
-    "title": "Chinese State‑Sponsored Actors Use Automated Tools and Manual Exploits to Steal Sensitive Data",
-    "summary": "Chinese government‑linked threat actors, backed by the Integrity Technology Group, combine automated scanning, large‑scale botnets, and manual exploitation to target organizations worldwide. They use cross‑site scripting, password spraying on Microsoft Exchange, and VPN persistence to exfiltrate emails and credentials. Mitigation includes disabling unused services, sanitizing web inputs, and monitoring Exchange for anomalous activity.",
-    "category": "Malware",
-    "severity": "HIGH",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-281a",
-    "publishedAt": "2026-10-08T12:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chinese-state-sponsored-actors-use-automated-tools",
-      "article-4fe541",
-      "4fe541",
-      "chinese-state-sponsored-actors-use-automated-tools-and-manua"
     ]
   },
   {

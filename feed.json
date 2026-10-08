@@ -1,5 +1,44 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/fbi-disrupts-chinese-hacking-tools-used-to-breach-critical-infrastructure/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-disrupts-chinese-hacking-tools-used-to-breach-critical-infrastructure/",
+    "title": "FBI Seizes Domains of Chinese State‑Sponsored Hacking Tools Used in Critical Infrastructure Breaches",
+    "headline": "FBI Seizes Domains of Chinese State‑Sponsored Hacking Tools Used in Critical Infrastructure Breaches",
+    "summary": "The FBI seized seven domains that hosted the MicroScan and FishHub tools used by the Chinese state‑sponsored group Flax Typhoon. These tools enabled attacks that breached critical infrastructure and other organizations worldwide. The operation disrupts the group’s command and control infrastructure, limiting future breaches.",
+    "category": "NATION_STATE",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-08T21:42:51.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/fbi-disrupts-chinese-hacking-tools-used-to-breach-critical-infrastructure/",
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/flax-typhoon-china-tools-integrity-tech-international-takedown"
+      },
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/nudeleaksteens-seized-fbi-france/"
+      },
+      {
+        "source": "CISA",
+        "sourceUrl": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-281a"
+      }
+    ]
+  },
+  {
+    "id": "https://www.microsoft.com/en-us/security/blog/2026/10/08/post-quantum-authentication-why-organizations-should-start-testing-certificate-ecosystems-now/",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/08/post-quantum-authentication-why-organizations-should-start-testing-certificate-ecosystems-now/",
+    "title": "Microsoft Urges Early Testing of Post‑Quantum Certificate Ecosystems",
+    "headline": "Microsoft Urges Early Testing of Post‑Quantum Certificate Ecosystems",
+    "summary": "Microsoft encourages organizations to begin testing post‑quantum authentication by participating in its PQC TLS Pilot Program. The initiative aims to advance readiness for quantum‑resistant certificates and TLS protocols, helping enterprises prepare for future cryptographic challenges.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Microsoft Security",
+    "publishedAt": "2026-10-08T20:44:28.000Z",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/10/08/post-quantum-authentication-why-organizations-should-start-testing-certificate-ecosystems-now/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.darkreading.com/cloud-security/agentcorruption-aws-environments-at-risk-single-prompt",
     "sourceUrl": "https://www.darkreading.com/cloud-security/agentcorruption-aws-environments-at-risk-single-prompt",
     "title": "'AgentCorruption' Vulnerability Lets Single Prompt Take Over AWS Bedrock AgentCore",
@@ -60,19 +99,6 @@
         "sourceUrl": "https://therecord.media/cheap-androids-shipped-with-ad-fraud-malware"
       }
     ]
-  },
-  {
-    "id": "https://therecord.media/flax-typhoon-china-tools-integrity-tech-international-takedown",
-    "sourceUrl": "https://therecord.media/flax-typhoon-china-tools-integrity-tech-international-takedown",
-    "title": "International coalition seizes tools used by cyber firm behind Flax Typhoon",
-    "headline": "International coalition seizes tools used by cyber firm behind Flax Typhoon",
-    "summary": "The U.S. and allied nations dismantled digital tools and infrastructure operated by Beijing‑based Integrity Tech, which enabled widespread vulnerability scanning and occasional intrusions as part of the Flax Typhoon campaign. The seizure disrupts the group’s ability to conduct state‑sponsored espionage operations.",
-    "category": "NATION_STATE",
-    "severity": "HIGH",
-    "source": "The Record",
-    "publishedAt": "2026-10-08T19:20:00.000Z",
-    "url": "https://therecord.media/flax-typhoon-china-tools-integrity-tech-international-takedown",
-    "additionalSources": []
   },
   {
     "id": "https://www.darkreading.com/cyberattacks-data-breaches/venezuelan-cartel-malware-honcho-nabbed-atm-jackpotting",
@@ -378,19 +404,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.helpnetsecurity.com/2026/10/08/nudeleaksteens-seized-fbi-france/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/nudeleaksteens-seized-fbi-france/",
-    "title": "FBI Seizes Sites Selling 17,000 Stolen Intimate Images of Women and Girls",
-    "headline": "FBI Seizes Sites Selling 17,000 Stolen Intimate Images of Women and Girls",
-    "summary": "The FBI and French authorities seized two websites that sold hacked and stolen sexually explicit images of 17,000 young women and girls. The administrator was arrested in northern France. The operation was conducted with the FBI Washington Field Office and U.S. DOJ. No further details released.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-08T12:51:42.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/08/nudeleaksteens-seized-fbi-france/",
-    "additionalSources": []
-  },
-  {
     "id": "https://www.securityweek.com/us-seeks-alleged-chinese-hafnium-hacker-with-10-million-reward/",
     "sourceUrl": "https://www.securityweek.com/us-seeks-alleged-chinese-hafnium-hacker-with-10-million-reward/",
     "title": "US Seeks Alleged Chinese Hafnium Hacker With $10 Million Reward",
@@ -482,24 +495,6 @@
     "publishedAt": "2026-10-08T12:00:00.000Z",
     "url": "https://www.darkreading.com/cybersecurity-operations/writing-next-chapter",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-281a",
-    "sourceUrl": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-281a",
-    "title": "Chinese State‑Sponsored Actors Use Automated Tools and Manual Exploits to Steal Sensitive Data",
-    "headline": "Chinese State‑Sponsored Actors Use Automated Tools and Manual Exploits to Steal Sensitive Data",
-    "summary": "Chinese government‑linked threat actors, backed by the Integrity Technology Group, combine automated scanning, large‑scale botnets, and manual exploitation to target organizations worldwide. They use cross‑site scripting, password spraying on Microsoft Exchange, and VPN persistence to exfiltrate emails and credentials. Mitigation includes disabling unused services, sanitizing web inputs, and monitoring Exchange for anomalous activity.",
-    "category": "NATION_STATE",
-    "severity": "HIGH",
-    "source": "CISA",
-    "publishedAt": "2026-10-08T12:00:00.000Z",
-    "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-281a",
-    "additionalSources": [
-      {
-        "source": "SANS Internet Storm Center",
-        "sourceUrl": "https://isc.sans.edu/diary/rss/33400"
-      }
-    ]
   },
   {
     "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-281-01",
