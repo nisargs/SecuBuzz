@@ -1,5 +1,220 @@
 [
   {
+    "id": "https://cybernewsai.com/blog/cctld-dns-hijacks-rogue-tls-certificates",
+    "sourceUrl": "https://cybernewsai.com/blog/cctld-dns-hijacks-rogue-tls-certificates",
+    "title": "Hackers Hijack .GH, .SL, .AS Registries to Issue Rogue TLS Certificates",
+    "headline": "Hackers Hijack .GH, .SL, .AS Registries to Issue Rogue TLS Certificates",
+    "summary": "Hackers compromised the .GH, .SL, and .AS domain registries, hijacking Google domains and issuing rogue TLS certificates. Security teams can detect these attacks by hunting CT logs and hardening CAA records. The incident exposes registry control weaknesses and threatens domain integrity.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-10-08T01:32:39.000Z",
+    "url": "https://cybernewsai.com/blog/cctld-dns-hijacks-rogue-tls-certificates",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/attackers-hijack-gh-sl-and-as.html"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/ransomware-recovery-ceo-charged-over-secret-ransom-payments/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ransomware-recovery-ceo-charged-over-secret-ransom-payments/",
+    "title": "MonsterCloud CEO Charged for Secret Ransom Payments to Attackers",
+    "headline": "MonsterCloud CEO Charged for Secret Ransom Payments to Attackers",
+    "summary": "The CEO of MonsterCloud, a ransomware remediation firm, faces charges for secretly paying attackers to obtain decryptors while claiming to use proprietary recovery technology. Prosecutors allege the scheme defrauded victims and undermined legitimate recovery efforts, potentially exposing sensitive data and eroding trust in remediation services.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-07T23:04:37.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/ransomware-recovery-ceo-charged-over-secret-ransom-payments/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/08/cisco-quantum-network-controller-research-prototype/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/cisco-quantum-network-controller-research-prototype/",
+    "title": "Cisco Quantum Network Controller Lets Apps Order Entanglement on Demand",
+    "headline": "Cisco Quantum Network Controller Lets Apps Order Entanglement on Demand",
+    "summary": "Cisco unveiled a research prototype called the Quantum Network Controller that allows applications to request entanglement from a quantum network. The system delegates delivery coordination to the network, enabling on-demand quantum state distribution without manual hardware setup. The prototype demonstrates a new approach to managing quantum resources.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-07T22:33:09.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/08/cisco-quantum-network-controller-research-prototype/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://unit42.paloaltonetworks.com/web3-cloud-supply-chain-attacks/",
+    "sourceUrl": "https://unit42.paloaltonetworks.com/web3-cloud-supply-chain-attacks/",
+    "title": "Evolution of Web3 in Cloud Supply Chain Attacks",
+    "headline": "Evolution of Web3 in Cloud Supply Chain Attacks",
+    "summary": "Unit 42 reports that threat actors are using Web3 infrastructure and open-source supply chain attacks to breach enterprise cloud environments. The attacks exploit vulnerabilities in cloud supply chains, leveraging Web3 tools to gain unauthorized access and compromise cloud resources.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Unit 42",
+    "publishedAt": "2026-10-07T22:00:16.000Z",
+    "url": "https://unit42.paloaltonetworks.com/web3-cloud-supply-chain-attacks/",
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/long-running-npm-malware-campaign-accumulates-40000-downloads/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.darkreading.com/cybersecurity-operations/australian-govt-ai-incident-reporting",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/australian-govt-ai-incident-reporting",
+    "title": "Australia Considers Mandatory AI Incident Reporting",
+    "headline": "Australia Considers Mandatory AI Incident Reporting",
+    "summary": "Australia is evaluating regulations for AI companies after an agentic attack on its Medicare systems. The government is exploring mandatory incident reporting to better manage AI risks and prevent future disruptions to critical health services.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-07T21:42:55.000Z",
+    "url": "https://www.darkreading.com/cybersecurity-operations/australian-govt-ai-incident-reporting",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/fbi-ongoing-fortibleed-attacks-lock-out-fortigate-vpn-admins/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-ongoing-fortibleed-attacks-lock-out-fortigate-vpn-admins/",
+    "title": "FortiBleed Attacks Lock Out FortiGate VPN Administrators",
+    "headline": "FortiBleed Attacks Lock Out FortiGate VPN Administrators",
+    "summary": "The FBI reports ongoing FortiBleed attacks targeting exposed Fortinet FortiGate firewalls and SSL VPN gateways, locking out legitimate administrators. The vulnerability allows attackers to gain unauthorized access and disrupt VPN services, prompting urgent patching and network hardening.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-07T21:28:54.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/fbi-ongoing-fortibleed-attacks-lock-out-fortigate-vpn-admins/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.darkreading.com/cyber-risk/citizen-lab-slams-trump-administration-techno-fascist-executives",
+    "sourceUrl": "https://www.darkreading.com/cyber-risk/citizen-lab-slams-trump-administration-techno-fascist-executives",
+    "title": "Citizen Lab Criticizes Trump Administration for Pushing Surveillance",
+    "headline": "Citizen Lab Criticizes Trump Administration for Pushing Surveillance",
+    "summary": "Citizen Lab’s Ron Deibert publicly criticized the Trump administration for promoting widespread surveillance, accusing technology executives of supporting these efforts. The statement highlights concerns over privacy erosion and corporate complicity in government surveillance programs.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-07T21:25:13.000Z",
+    "url": "https://www.darkreading.com/cyber-risk/citizen-lab-slams-trump-administration-techno-fascist-executives",
+    "additionalSources": []
+  },
+  {
+    "id": "https://therecord.media/accused-hafnium-hacker-zhang-yu-10million-reward",
+    "sourceUrl": "https://therecord.media/accused-hafnium-hacker-zhang-yu-10million-reward",
+    "title": "US Offers $10M Reward for Accused Hafnium Hacker",
+    "headline": "US Offers $10M Reward for Accused Hafnium Hacker",
+    "summary": "The United States announced a $10 million reward for information leading to the arrest of Zhang Yu, a key figure in the Hafnium cyber espionage campaign that compromised thousands of computers and exfiltrated large volumes of documents.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Record",
+    "publishedAt": "2026-10-07T19:50:00.000Z",
+    "url": "https://therecord.media/accused-hafnium-hacker-zhang-yu-10million-reward",
+    "additionalSources": []
+  },
+  {
+    "id": "https://therecord.media/cyber-command-mental-health-support-program-bipartisan-letters",
+    "sourceUrl": "https://therecord.media/cyber-command-mental-health-support-program-bipartisan-letters",
+    "title": "$11 million plan for psychological support at Cyber Command gets fresh boost from lawmakers",
+    "headline": "$11 million plan for psychological support at Cyber Command gets fresh boost from lawmakers",
+    "summary": "Lawmakers overseeing military cyber policy have added an $11 million mental‑health program to defense spending legislation, ensuring sustained funding for psychological support services at the Cyber Command hub in Fort Meade, Maryland.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Record",
+    "publishedAt": "2026-10-07T18:35:00.000Z",
+    "url": "https://therecord.media/cyber-command-mental-health-support-program-bipartisan-letters",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/eight-malicious-npm-packages-downloaded.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/eight-malicious-npm-packages-downloaded.html",
+    "title": "Malicious npm Packages Deliver Overlord RAT and Stealer",
+    "headline": "Malicious npm Packages Deliver Overlord RAT and Stealer",
+    "summary": "Cybersecurity researchers uncovered a supply‑chain malware campaign that pushed 12 npm packages, eight of which were downloaded 40,767 times. The packages installed the Overlord remote‑access trojan and a credential stealer on compromised hosts, enabling attackers to exfiltrate data and maintain persistence.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-07T17:43:20.000Z",
+    "url": "https://thehackernews.com/2026/10/eight-malicious-npm-packages-downloaded.html",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/clickfix-smuggles-payloads-through.html"
+      }
+    ]
+  },
+  {
+    "id": "https://blog.cloudflare.com/agentic-security-operations/",
+    "sourceUrl": "https://blog.cloudflare.com/agentic-security-operations/",
+    "title": "Cloudflare Builds Evidence‑Grounded AI Security Operations",
+    "headline": "Cloudflare Builds Evidence‑Grounded AI Security Operations",
+    "summary": "Cloudflare’s Managed Defense platform deploys AI agents on Workers and global telemetry to separate evidence collection from inference. The system provides grounded, actionable recommendations to analysts, improving the speed and accuracy of security incident response.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "publishedAt": "2026-10-07T16:30:36.000Z",
+    "url": "https://blog.cloudflare.com/agentic-security-operations/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.microsoft.com/en-us/security/blog/2026/10/07/3-lessons-from-frontier-ai-vulnerability-research/",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/07/3-lessons-from-frontier-ai-vulnerability-research/",
+    "title": "Microsoft FORGE Lab Shares Lessons from AI-Driven Vulnerability Research",
+    "headline": "Microsoft FORGE Lab Shares Lessons from AI-Driven Vulnerability Research",
+    "summary": "Microsoft Security’s FORGE Lab outlines three key lessons from applying AI to vulnerability research, scaling efforts from Windows to the Linux kernel. The post highlights how machine learning can accelerate discovery, prioritize risks, and improve patching strategies across diverse operating systems.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Microsoft Security",
+    "publishedAt": "2026-10-07T16:00:00.000Z",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/10/07/3-lessons-from-frontier-ai-vulnerability-research/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://isc.sans.edu/diary/rss/33406",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33406",
+    "title": "Atlassian Patch Addresses CVE-2026-21589 Arbitrary File Access Vulnerability",
+    "headline": "Atlassian Patch Addresses CVE-2026-21589 Arbitrary File Access Vulnerability",
+    "summary": "Atlassian released patches for multiple products to fix CVE-2026-21589, an arbitrary file access flaw allowing attackers to read any file in the web application’s directory. The vulnerability could expose sensitive configuration files and other confidential data. Users should apply the update immediately to prevent potential data exposure.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "SANS Internet Storm Center",
+    "publishedAt": "2026-10-07T14:59:33.000Z",
+    "url": "https://isc.sans.edu/diary/rss/33406",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/07/exploitation-critical-atlassian-flaw-cve-2026-21589/"
+      },
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/atlassian-warns-of-critical-file-access-flaw-in-jira-confluence/"
+      },
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/critical-atlassian-flaw-lets.html"
+      }
+    ]
+  },
+  {
+    "id": "https://www.wiz.io/blog/red-agent-financial-services-data-exposure",
+    "sourceUrl": "https://www.wiz.io/blog/red-agent-financial-services-data-exposure",
+    "title": "Wiz Red Agent Reveals Public Data Exposure at Fortune 500 Firm",
+    "headline": "Wiz Red Agent Reveals Public Data Exposure at Fortune 500 Firm",
+    "summary": "Wiz’s Red Agent identified a public webpage that exposed sensitive company data within minutes, a flaw missed by traditional DSPM tools. The exposure highlighted gaps in internal‑to‑external scanning and the need for attacker‑thinking security assessments to detect such leaks early.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Wiz Research",
+    "publishedAt": "2026-10-07T14:53:27.000Z",
+    "url": "https://www.wiz.io/blog/red-agent-financial-services-data-exposure",
+    "additionalSources": [
+      {
+        "source": "Dark Reading",
+        "sourceUrl": "https://www.darkreading.com/application-security/google-pagebreak-ai-agent-500-flaws-web-apps"
+      }
+    ]
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/hackers-exploit-32-zero-days-on-first-day-of-pwn2own-ireland/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-32-zero-days-on-first-day-of-pwn2own-ireland/",
     "title": "Hackers Exploit 32 Zero-Days on Samsung Galaxy S26 at Pwn2Own Ireland",
@@ -49,19 +264,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.darkreading.com/application-security/google-pagebreak-ai-agent-500-flaws-web-apps",
-    "sourceUrl": "https://www.darkreading.com/application-security/google-pagebreak-ai-agent-500-flaws-web-apps",
-    "title": "Google AI Agent Identifies 500 Vulnerabilities in Web Applications",
-    "headline": "Google AI Agent Identifies 500 Vulnerabilities in Web Applications",
-    "summary": "Google’s PageBreak AI agent scanned its own web applications and uncovered 500 distinct security flaws, ranging from input validation issues to potential exploitation paths. The automated analysis used AI and deterministic validation to assess risk levels, highlighting the growing trend of AI-driven vulnerability discovery and prioritization.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-06T17:56:29.000Z",
-    "url": "https://www.darkreading.com/application-security/google-pagebreak-ai-agent-500-flaws-web-apps",
-    "additionalSources": []
-  },
-  {
     "id": "https://blog.cloudflare.com/root-ksk-2024-rollover/",
     "sourceUrl": "https://blog.cloudflare.com/root-ksk-2024-rollover/",
     "title": "DNS Root Key Rollover Scheduled for October 11, 2026",
@@ -72,19 +274,6 @@
     "source": "Cloudflare Security",
     "publishedAt": "2026-10-06T17:50:11.000Z",
     "url": "https://blog.cloudflare.com/root-ksk-2024-rollover/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/atlassian-warns-of-critical-file-access-flaw-in-jira-confluence/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/atlassian-warns-of-critical-file-access-flaw-in-jira-confluence/",
-    "title": "Atlassian Warns of Critical File-Access Flaw in Jira, Confluence",
-    "headline": "Atlassian Warns of Critical File-Access Flaw in Jira, Confluence",
-    "summary": "Atlassian alerts customers to CVE-2026-21589, a critical vulnerability that permits arbitrary file access in self‑hosted Data Center products Confluence, Jira, and Bitbucket. Attackers can read any file on the host. Atlassian recommends applying the latest patch or disabling affected features.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-06T17:34:59.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/atlassian-warns-of-critical-file-access-flaw-in-jira-confluence/",
     "additionalSources": []
   },
   {
@@ -453,19 +642,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.securityweek.com/long-running-npm-malware-campaign-accumulates-40000-downloads/",
-    "sourceUrl": "https://www.securityweek.com/long-running-npm-malware-campaign-accumulates-40000-downloads/",
-    "title": "NPM Supply‑Chain Campaign Releases 40,000 Malicious Packages",
-    "headline": "NPM Supply‑Chain Campaign Releases 40,000 Malicious Packages",
-    "summary": "Since August 2023, attackers have published eight malicious NPM packages under the MALFEX supply‑chain campaign. The packages have accumulated 40,000 downloads, potentially exposing developers who install them to malware that can compromise their systems or inject malicious code into their projects.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-06T10:34:25.000Z",
-    "url": "https://www.securityweek.com/long-running-npm-malware-campaign-accumulates-40000-downloads/",
-    "additionalSources": []
-  },
-  {
     "id": "https://www.helpnetsecurity.com/2026/10/06/ontinue-ion-dark-web-monitoring/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/ontinue-ion-dark-web-monitoring/",
     "title": "Ontinue Adds Dark‑Web Monitoring to ION MXDR",
@@ -613,32 +789,6 @@
     "source": "BleepingComputer",
     "publishedAt": "2026-10-06T08:19:24.000Z",
     "url": "https://www.bleepingcomputer.com/news/security/engineer-sentenced-for-locking-thousands-of-devices-on-employer-network/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/critical-atlassian-flaw-lets.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/critical-atlassian-flaw-lets.html",
-    "title": "Atlassian Data Center Flaw Allows Unauthenticated File Read",
-    "headline": "Atlassian Data Center Flaw Allows Unauthenticated File Read",
-    "summary": "Atlassian disclosed a critical flaw (CVE‑2026‑21589) in eight Data Center products that lets unauthenticated attackers read specific files in the web application root. The vulnerability, rated 9.3/10, requires knowledge of file names and paths but no login. No mitigation details provided.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-06T06:58:56.000Z",
-    "url": "https://thehackernews.com/2026/10/critical-atlassian-flaw-lets.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/clickfix-smuggles-payloads-through.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/clickfix-smuggles-payloads-through.html",
-    "title": "ClickFix Uses Browser Cache to Deliver Malicious Payloads",
-    "headline": "ClickFix Uses Browser Cache to Deliver Malicious Payloads",
-    "summary": "A new ClickFix variant tricks users into running a malicious script stored in the browser cache, disguised as a PNG file. The technique bypasses Windows run limits by pre‑fetching the payload from compromised sites, enabling execution without downloading external files.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-06T05:22:55.000Z",
-    "url": "https://thehackernews.com/2026/10/clickfix-smuggles-payloads-through.html",
     "additionalSources": []
   },
   {
@@ -3619,151 +3769,5 @@
         "sourceUrl": "https://thehackernews.com/2026/09/openai-agent-bypassed-australian.html"
       }
     ]
-  },
-  {
-    "id": "https://thehackernews.com/2026/09/the-soc-doesnt-need-to-start-over-with.html",
-    "sourceUrl": "https://thehackernews.com/2026/09/the-soc-doesnt-need-to-start-over-with.html",
-    "title": "AI Makes Failed Attacks Cheap to Retry",
-    "headline": "AI Makes Failed Attacks Cheap to Retry",
-    "summary": "AI tools lower the cost of retrying failed attacks, enabling attackers to quickly attempt privilege escalation on low‑privilege cloud accounts. Each failed attempt is inexpensive, allowing rapid iteration and increased attack frequency. The trend signals a quieter, more persistent threat landscape as attackers exploit AI for rapid testing.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "publishedAt": "2026-09-25T11:30:00.000Z",
-    "url": "https://thehackernews.com/2026/09/the-soc-doesnt-need-to-start-over-with.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/windows-linux-android-file-notification-systems-leak-user-activity/",
-    "sourceUrl": "https://www.securityweek.com/windows-linux-android-file-notification-systems-leak-user-activity/",
-    "title": "File Notification Systems Leak User Activity Across Windows, Linux, Android",
-    "headline": "File Notification Systems Leak User Activity Across Windows, Linux, Android",
-    "summary": "Researchers discovered that file‑change notification services on Windows, Linux, and Android can inadvertently expose keystroke timing, browsing patterns, and WhatsApp media events, revealing sensitive user behavior. The flaw allows passive monitoring of file system changes without user interaction. No public patch is yet available.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-09-25T10:53:32.000Z",
-    "url": "https://www.securityweek.com/windows-linux-android-file-notification-systems-leak-user-activity/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/09/roundcube-pre-auth-sql-injection-flaw.html",
-    "sourceUrl": "https://thehackernews.com/2026/09/roundcube-pre-auth-sql-injection-flaw.html",
-    "title": "Roundcube Webmail Vulnerability CVE-2026-48842 Actively Exploited",
-    "headline": "Roundcube Webmail Vulnerability CVE-2026-48842 Actively Exploited",
-    "summary": "The Canadian Centre for Cyber Security warned that CVE-2026-48842, a pre-authentication SQL injection in Roundcube Webmail’s virtuser_query plugin, is being exploited in the wild. Affected versions are 1.6.x before 1.6.16 and 1.7.x before 1.7.1. The flaw allows attackers to inject SQL via a preg_replace() backslash, enabling unauthorized data access. Patches are available.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-09-25T10:14:02.000Z",
-    "url": "https://thehackernews.com/2026/09/roundcube-pre-auth-sql-injection-flaw.html",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/roundcube-webmail-vulnerability-in-attackers-crosshairs/"
-      },
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/roundcube-webmail-pre-auth-sqli-cve-2026-48842-exploited"
-      }
-    ]
-  },
-  {
-    "id": "https://www.securityweek.com/salesbleed-flaws-in-salesforce-agentforce-enabled-zero-click-data-exfiltration/",
-    "sourceUrl": "https://www.securityweek.com/salesbleed-flaws-in-salesforce-agentforce-enabled-zero-click-data-exfiltration/",
-    "title": "Salesforce Agentforce Zero‑Click Data Exfiltration Exploited",
-    "headline": "Salesforce Agentforce Zero‑Click Data Exfiltration Exploited",
-    "summary": "Three vulnerabilities in Salesforce Agentforce let attackers hijack trusted agents, steal data, and launch phishing attacks without user interaction. The flaws enable zero‑click data exfiltration, compromising sensitive information and facilitating credential theft. Salesforce has issued patches to mitigate the breach risk.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-09-25T09:27:51.000Z",
-    "url": "https://www.securityweek.com/salesbleed-flaws-in-salesforce-agentforce-enabled-zero-click-data-exfiltration/",
-    "additionalSources": [
-      {
-        "source": "Dark Reading",
-        "sourceUrl": "https://www.darkreading.com/application-security/salesbleed-exploits-salesforce-agents-slack-phishing"
-      }
-    ]
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/09/25/macsync-info-stealing-malware-for-macos/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/25/macsync-info-stealing-malware-for-macos/",
-    "title": "MacSync Malware Steals Credentials via iCloud Calendar",
-    "headline": "MacSync Malware Steals Credentials via iCloud Calendar",
-    "summary": "MacSync, a 2025 Mac malware family, uses an infostealer and persistent backdoor to harvest credentials, crypto wallet data, and files. It spreads through the Toria crypto wallet app and embeds malicious commands in iCloud calendar entries, enabling remote data exfiltration and persistence on infected Macs.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "publishedAt": "2026-09-25T09:22:45.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/09/25/macsync-info-stealing-malware-for-macos/",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/macsync-malware-uses-public-icloud-calendars-to-deliver-new-payloads/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/09/25/docker-launches-cloud-sandboxes/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/25/docker-launches-cloud-sandboxes/",
-    "title": "Docker Launches OCI‑Based Kits for Secure AI Agent Execution",
-    "headline": "Docker Launches OCI‑Based Kits for Secure AI Agent Execution",
-    "summary": "Docker announced Docker Cloud Sandboxes, a solution that packages AI agents and guardrails into OCI‑based kits, enabling secure, isolated execution in the cloud. The service allows organizations to run agentic workloads at scale without using local developer hardware or provisioning new infrastructure, reducing cost and resource usage.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-09-25T07:57:50.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/09/25/docker-launches-cloud-sandboxes/",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/09/25/dataiku-agent-management/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/09/25/fake-payroll-desktop-apps-screenconnect/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/25/fake-payroll-desktop-apps-screenconnect/",
-    "title": "Fake Payroll Desktop Apps Enable Remote Control of Company Systems",
-    "headline": "Fake Payroll Desktop Apps Enable Remote Control of Company Systems",
-    "summary": "An attacker distributed counterfeit desktop applications for three major US payroll and HR platforms. Installing the software installs ScreenConnect, a remote access tool, allowing the attacker to control the victim’s computer covertly. The attack compromises payroll systems and exposes company paychecks to unauthorized access.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "publishedAt": "2026-09-25T07:52:51.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/09/25/fake-payroll-desktop-apps-screenconnect/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/09/25/abnormal-ai-governance/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/25/abnormal-ai-governance/",
-    "title": "Abnormal AI Expands Security Suite with Governance, Cloud, and Threat Investigation Tools",
-    "headline": "Abnormal AI Expands Security Suite with Governance, Cloud, and Threat Investigation Tools",
-    "summary": "Abnormal AI unveiled new additions to its AI Security suite, combining governance, cloud security, and threat investigation capabilities. The release includes AI Employee Guardrails, AI Agent Security, and AI Security Workbench, aiming to help enterprises adopt AI securely while mitigating AI‑generated threats.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-09-25T07:46:25.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/09/25/abnormal-ai-governance/",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/09/25/sentinelone-extends-wayfinder-threat-hunting/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.darkreading.com/physical-security/russia-hybrid-cyber-physical-war-europe",
-    "sourceUrl": "https://www.darkreading.com/physical-security/russia-hybrid-cyber-physical-war-europe",
-    "title": "Russia Intensifies Hybrid Cyber-Physical Attacks on Europe",
-    "headline": "Russia Intensifies Hybrid Cyber-Physical Attacks on Europe",
-    "summary": "Russia is escalating cyber sabotage, disinformation, and drone attacks against European countries that support Ukraine, targeting critical infrastructure and political entities. The campaign blends digital and physical tactics to disrupt services and sow confusion. No specific vulnerability or breach reported.",
-    "category": "NATION_STATE",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "publishedAt": "2026-09-25T07:00:00.000Z",
-    "url": "https://www.darkreading.com/physical-security/russia-hybrid-cyber-physical-war-europe",
-    "additionalSources": []
   }
 ]

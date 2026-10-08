@@ -99,6 +99,18 @@ function escapeXml(str) {
 }
 
 async function loadFeed() {
+  if (fs.existsSync(FEED_FILE)) {
+    try {
+      const data = JSON.parse(fs.readFileSync(FEED_FILE, 'utf8'));
+      if (Array.isArray(data) && data.length > 0) {
+        console.log(`Loaded ${data.length} articles from local feed.json`);
+        return data;
+      }
+    } catch (e) {
+      console.warn('Failed to parse local feed.json, falling back to R2:', e);
+    }
+  }
+
   try {
     console.log('Fetching live feed from Cloudflare R2...');
     const res = await fetch(R2_FEED_URL);
@@ -111,21 +123,10 @@ async function loadFeed() {
       }
     }
   } catch (e) {
-    console.warn('Failed to fetch live feed from R2, falling back to local feed.json:', e.message);
+    console.warn('Failed to fetch live feed from R2:', e.message);
   }
 
-  if (fs.existsSync(FEED_FILE)) {
-    try {
-      const data = JSON.parse(fs.readFileSync(FEED_FILE, 'utf8'));
-      if (Array.isArray(data) && data.length > 0) {
-        return data;
-      }
-    } catch (e) {
-      console.warn('Failed to parse local feed.json:', e);
-    }
-  }
-
-  throw new Error('No feed data available from R2 or local cache');
+  throw new Error('No feed data available from local cache or R2');
 }
 
 async function syncNews() {
