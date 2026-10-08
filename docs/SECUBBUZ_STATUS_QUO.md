@@ -201,34 +201,31 @@ Please provide creative, high-impact suggestions across these 4 areas:
 
 ---
 
-## 8. Google Play Closed Testing & Production Readiness
+## 8. Google Play Production Rollout & Resilience Architecture
 
-### Closed Testing Summary & Metrics
-- **Production Access Application Submitted**: **Applied October 5, 2026, 7:01 PM** (currently In Review by Google Play, typically 2–7 business days).
-- **Testing Cohort**: Completed 14-day continuous closed test meeting all Google Play criteria (12+ opted-in testers across Android 11 through 15).
-- **Stability Findings**: **0 crashes**, **0 critical bugs**, and 100% operational uptime on ingest and push delivery.
-- **Implemented Tester Feedback**:
-  1. **"Rate Your App" Support**: Added direct "Rate SecuBuzz on Google Play" action in Settings (`src/app/about-support.tsx`).
-  2. **Dynamic Onboarding Walkthrough**: 4-step quick-start carousel introducing 60-word briefs, EPSS threat scores, live search filters, and local bookmarks (`src/components/OnboardingModal.tsx`).
-  3. **Triage Acceleration**: Added 1-Tap Markdown Incident Report copy for SOC channels (Slack/Teams/Jira).
-  4. **Threat Scoring Clarity**: Integrated FIRST.org EPSS exploit probability badges directly alongside CVSS severity scores.
-  5. **Feed Hygiene**: Deployed multi-source story deduplication clustering coverage into single briefs with "Also reported by" cross-links.
+### Milestone Status & Launch Telemetry (October 8, 2026)
+- **14-Day Closed Testing**: **PASSED & APPROVED**. 100% criteria satisfied across 12+ opted-in testers on Android 11–15 with 0 crashes.
+- **Production Access**: Granted by Google Play Console.
+- **Production Release Submitted**: **Version 1.0.2 (Version Code 8)** officially submitted on **Oct 8, 2026** across all 177+ countries and regions. Currently in Google review.
+- **Website Production Alignment**: `secubuzz.com` and all CTA buttons transitioned from "Join closed testing" to public "Get it on Google Play" and "Download App" buttons with direct link to `https://play.google.com/store/apps/details?id=com.secubuzz.app`.
+- **Feed Resilience & Watchdog Architecture (Zero-Silent-Failure Mandate Deployed Oct 8, 2026)**:
+  - **In-Pipeline Gate (`scripts/verify_feed_freshness.mjs`)**: Runs in `.github/workflows/ingest.yml` before R2 upload. Asserts $\ge$ 50 articles and newest story $\le$ 14h old; fails CI loudly if feed is stale.
+  - **Autonomous Watchdog Workflow (`.github/workflows/watchdog.yml`)**: Runs every 2 hours via GitHub Actions. If the live feed exceeds 6.0 hours old, automatically dispatches an emergency out-of-band `ingest.yml` workflow without human intervention.
+  - **Edge Watchdog Endpoint (`https://secubuzz.com/health`)**: Evaluates live R2 feed age on every request. Returns HTTP 200 with feed telemetry (`articleCount`, `latestHeadline`, `ageHours`, `isFresh`) or HTTP 503 `stale_feed` if > 8.0 hours old.
+  - **Watchdog CLI Routines**: `npm run watchdog` (checks production site freshness) and `npm run verify:feed` (local/CI integrity gate).
+- **Backend Hardening ($0.00 Free Tier Profile)**:
+  - Push Token API Rate Limiting on Cloudflare D1 tokens.
+  - Automated Cloudflare D1 database daily backup export via GitHub Actions cron.
+  - Dynamic sitemap `https://secubuzz.com/sitemap.xml` actively indexed by Google Search Console with 250 articles and 1,739 CISA KEV entries.
 
-- **Release v1.0.2 / Code 6 (Oct 1, 2026)**:
-  - Scheduled for EAS `.aab` production build on **Thursday, Oct 1, 2026** (when Expo free build quota replenishes).
-  - **Completed Polish**: Header brand unified to 'SecuBuzz' across all screens and tabs; `expo-haptics` tactile feedback wired across bookmarks, reports, and pull-to-refresh.
-  - Main Store Listing updated with refined description and refreshed screenshots on Sep 29, 2026.
-  - **Backend Hardening Roadmap ($0.00 Free Tier)**:
-    - Push Token API Rate Limiting (edge-level rate limiter to prevent spamming D1 tokens - completed).
-    - Automated Cloudflare D1 database daily backup export via existing GitHub Actions cron.
-    - **Cloudflare Monetization Gateway (Post-Approval)**: Enable agent/crawler micropayments to charge commercial AI scrape bots, LLM search agents, and automated MCP consumers querying `secubuzz.com` feeds, while keeping human practitioner access 100% free.
-    - **Health & Uptime Monitoring ($0.00 Post-Approval Activation)**:
-      - Skipped during 14-day testing freeze; activate immediately upon Google Play production approval.
-      - **Recommended Tool (#1): HetrixTools** (15 monitors, 1-min intervals, free SSL cert & domain expiry tracking, free blacklist/IP reputation tracking, Discord/Telegram/Webhooks, 100% commercial-friendly free tier).
-      - **Backup Option (#2): UptimeObserver** (20 monitors, 5-min intervals, Telegram/Pushover; lacks SSL/domain expiry on free plan).
-      - Monitor endpoints: `https://secubuzz.com`, `https://secubuzz.com/health`, `https://secubuzz.com/api/news`, and `https://secubuzz.com/api/advisories`.
+### Implemented Tester Feedback & Polish
+1. **Header Brand Unification**: Replaced 'SecuRadar' with 'SecuBuzz' in `src/app/(tabs)/advisories.tsx` to eliminate third-party trademark/domain confusion.
+2. **Tactile Haptic Feedback**: Installed `expo-haptics` and wired sensory feedback into bookmarking, 1-tap incident report copying, pull-to-refresh, and theme switching.
+3. **EPSS Threat Enrichment**: Live edge endpoints (`/api/epss`, `/api/cve-metrics`) providing FIRST.org exploit prediction probabilities and NIST NVD CVSS vectors with 24-hour edge caching.
+4. **Feed Hygiene**: Multi-source story deduplication clustering coverage into single 60-word briefs with "Also reported by" cross-links.
+5. **Anti-AI Slop Guardrails**: Strict guidelines in Groq summarization prompts eliminating AI filler words and maintaining razor-sharp technical brevity.
 
-### Production Access Questionnaire (Google Play Submission Copy)
+### Production Access Questionnaire (Google Play Submission Record)
 *(Tailored specifically for SecuBuzz to avoid generic template rejection)*
 
 1. **How did you recruit users for your closed test?**
