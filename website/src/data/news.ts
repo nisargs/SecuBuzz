@@ -11,6 +11,78 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "fakegit-malware-campaign-distributes-17-610-fake-g-548ce9",
+    "title": "FakeGit Malware Campaign Distributes 17,610 Fake GitHub Repositories",
+    "summary": "A new wave of FakeGit malware has surfaced, with over 17,000 counterfeit GitHub repositories pushing the SmartLoader downloader that installs the StealC infostealer. The campaign reactivated this month, targeting developers and users who clone the fake repos. No patch or mitigation is publicly available yet.",
+    "category": "Malware",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fakegit-malware-campaign-returns-with-17-610-malicious-github-repos/",
+    "publishedAt": "2026-10-08T17:10:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fakegit-malware-campaign-distributes-17-610-fake-g",
+      "article-548ce9",
+      "548ce9",
+      "fakegit-malware-campaign-distributes-17-610-fake-github-repo"
+    ]
+  },
+  {
+    "slug": "doj-charges-ransomware-recovery-ceo-for-secret-ran-1084e4",
+    "title": "DOJ Charges Ransomware Recovery CEO for Secret Ransom Payments",
+    "summary": "The U.S. Department of Justice filed wire‑fraud charges against the owner of a ransomware recovery firm, alleging that he secretly paid ransom demands while overcharging victims. The case highlights legal risks for firms that facilitate ransom payments.",
+    "category": "Ransomware",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/ransomware-recovery-charges-doj",
+    "publishedAt": "2026-10-08T17:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "doj-charges-ransomware-recovery-ceo-for-secret-ran",
+      "article-1084e4",
+      "1084e4",
+      "doj-charges-ransomware-recovery-ceo-for-secret-ransom-paymen"
+    ]
+  },
+  {
+    "slug": "hackers-access-asos-employee-account-and-leak-pers-545202",
+    "title": "Hackers Access ASOS Employee Account and Leak Personal Data",
+    "summary": "Hackers accessed an ASOS employee account, obtaining personal information such as names and contact details, along with some non‑personal account data. The breach was identified through an external investigation, highlighting a compromise of internal credentials and potential exposure of employee data.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/asos-says-hackers-tricked-employee-access-push-notification",
+    "publishedAt": "2026-10-08T16:57:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-access-asos-employee-account-and-leak-pers",
+      "article-545202",
+      "545202",
+      "hackers-access-asos-employee-account-and-leak-personal-data"
+    ]
+  },
+  {
+    "slug": "japan-reports-surge-in-web-data-leaks-via-mobile-a-275d4f",
+    "title": "Japan Reports Surge in Web Data Leaks via Mobile API Abuse",
+    "summary": "Japanese organizations experienced multiple personal data leaks as attackers exploited mobile app APIs and known software flaws. The JPCERT/CC issued an alert on October 8, 2026, noting the rise in leaks but did not identify specific attackers or affected entities.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/japan-sees-sharp-rise-in-web-data-leaks.html",
+    "publishedAt": "2026-10-08T15:45:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "japan-reports-surge-in-web-data-leaks-via-mobile-a",
+      "article-275d4f",
+      "275d4f",
+      "japan-reports-surge-in-web-data-leaks-via-mobile-api-abuse"
+    ]
+  },
+  {
     "slug": "crypto-thief-sentenced-for-260-000-sim-swapping-sc-49f221",
     "title": "Crypto Thief Sentenced for $260,000 SIM‑Swapping Scam",
     "summary": "A 25‑year‑old man was sentenced to two and a half years in prison in London for orchestrating a SIM‑swapping fraud that stole nearly $260,000 in cryptocurrency. The case highlights the growing threat of mobile identity theft and the legal consequences for perpetrators.",
@@ -315,6 +387,62 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-lion-controls-n-tron-700-series-vulnerabilitie-430f32",
+    "title": "Red Lion Controls N‑Tron 700 Series Vulnerabilities Enable Remote Access and Reboot",
+    "summary": "Red Lion Controls N‑Tron 700 Series devices are vulnerable to multiple flaws, including hard‑coded credentials, insufficient authentication, and code download without integrity checks. Exploitation can grant administrative access, allow configuration changes, and trigger continuous rebooting via a crafted URL.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-281-01",
+    "publishedAt": "2026-10-08T12:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-lion-controls-n-tron-700-series-vulnerabilitie",
+      "article-430f32",
+      "430f32",
+      "red-lion-controls-n-tron-700-series-vulnerabilities-enable-r"
+    ]
+  },
+  {
+    "slug": "satel-netco-design-vulnerabilities-enable-xss-and-430f32",
+    "title": "Satel Netco Design Vulnerabilities Enable XSS and Code Execution",
+    "summary": "Satel Netco Design versions before v2.1.7 contain a stored cross‑site scripting flaw (CVE‑2026‑105269) that allows authenticated network operators to inject arbitrary scripts, consume resources, enumerate and modify files, and potentially execute code in users’ browsers. Patch to v2.1.7 or later is required.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-281-03",
+    "publishedAt": "2026-10-08T12:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "satel-netco-design-vulnerabilities-enable-xss-and",
+      "article-430f32",
+      "430f32",
+      "satel-netco-design-vulnerabilities-enable-xss-and-code-execu"
+    ]
+  },
+  {
+    "slug": "grid-protection-alliance-openpdc-and-openhistorian-430f32",
+    "title": "Grid Protection Alliance openPDC and openHistorian Vulnerable to CVE-2026-100730 Deserialization Exploit",
+    "summary": "The openPDC and openHistorian Docker images are affected by CVE-2026-100730, a deserialization flaw that allows attackers to execute arbitrary code. The vulnerability also includes missing authentication, SSRF, hard‑coded credentials, and unsafe reflection. Affected systems can be compromised without authentication on non‑Windows environments, posing a critical risk to energy infrastructure.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-281-02",
+    "publishedAt": "2026-10-08T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-100730"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "grid-protection-alliance-openpdc-and-openhistorian",
+      "article-430f32",
+      "430f32",
+      "grid-protection-alliance-openpdc-and-openhistorian-vulnerabl"
+    ]
+  },
+  {
     "slug": "ukrainian-drone-strike-disrupts-major-yandex-data-793976",
     "title": "Ukrainian Drone Strike Disrupts Major Yandex Data Center",
     "summary": "A Ukrainian drone strike damaged a major Yandex data center in Russia, disrupting the company’s network. Connectivity dropped to about 70 percent of normal levels, affecting services and operations. The attack caused physical damage but no data exfiltration was reported. Yandex is assessing the impact and restoring services.",
@@ -330,24 +458,6 @@ export const news: NewsBrief[] = [
       "article-793976",
       "793976",
       "ukrainian-drone-strike-disrupts-major-yandex-data-center"
-    ]
-  },
-  {
-    "slug": "asos-confirms-data-breach-linked-to-social-enginee-42cb8e",
-    "title": "ASOS Confirms Data Breach Linked to Social Engineering Attack",
-    "summary": "ASOS has confirmed a data breach tied to a social engineering attack that stole customer credentials. Hackers accessed personal data, prompting the retailer to notify affected customers and provide updates on remediation steps. The incident highlights the risk of phishing-based credential theft.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/asos-links-data-breach-to-social-engineering-attack-credential-theft/",
-    "publishedAt": "2026-10-08T11:42:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "asos-confirms-data-breach-linked-to-social-enginee",
-      "article-42cb8e",
-      "42cb8e",
-      "asos-confirms-data-breach-linked-to-social-engineering-attac"
     ]
   },
   {
@@ -494,24 +604,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "fake-decryption-tools-inflate-ransom-payments-by-1-110f31",
-    "title": "Fake Decryption Tools Inflate Ransom Payments by $11M",
-    "summary": "A scheme using counterfeit decryption tools was uncovered, where victims paid an additional $11 million for remediation after paying ransoms. The fraud involved charging inflated fees for supposed decryption services, misleading victims into paying more than the original ransom.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/fake-decryption-tools-masked-11m-markup-in-ransomware-recovery-scheme/",
-    "publishedAt": "2026-10-08T09:27:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fake-decryption-tools-inflate-ransom-payments-by-1",
-      "article-110f31",
-      "110f31",
-      "fake-decryption-tools-inflate-ransom-payments-by-11m"
-    ]
-  },
-  {
     "slug": "github-introduces-ai-detector-to-block-passwords-b-5fe20c",
     "title": "GitHub Introduces AI Detector to Block Passwords Before Code Push",
     "summary": "GitHub has released an AI‑powered secret detector, built with Microsoft Applied Sciences, that scans code before a push to identify unstructured credentials such as database passwords. The ModernBERT classifier extends existing push protection, blocking pushes that contain secrets and preventing credentials from entering repository history.",
@@ -545,24 +637,6 @@ export const news: NewsBrief[] = [
       "article-20d654",
       "20d654",
       "matchboil-malware-used-by-russia-aligned-group-to-install-sp"
-    ]
-  },
-  {
-    "slug": "monstercloud-owner-charged-with-fraud-over-ransomw-98a112",
-    "title": "MonsterCloud Owner Charged with Fraud Over Ransomware Payments",
-    "summary": "Florida-based ransomware remediation company MonsterCloud’s owner, Zohar Pinhasi, is charged with fraud for secretly paying ransomware gangs and overbilling clients. Prosecutors allege he paid over $8 million to attackers while billing more than $19 million to victims, inflating ransom payments and exploiting client trust.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/monstercloud-owner-ransomware-fraud-charges/",
-    "publishedAt": "2026-10-08T08:00:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "monstercloud-owner-charged-with-fraud-over-ransomw",
-      "article-98a112",
-      "98a112",
-      "monstercloud-owner-charged-with-fraud-over-ransomware-paymen"
     ]
   },
   {
@@ -885,24 +959,6 @@ export const news: NewsBrief[] = [
       "article-b85db0",
       "b85db0",
       "microsoft-outlook-to-block-msix-attachments-starting-novembe"
-    ]
-  },
-  {
-    "slug": "unpatched-lmcache-flaw-enables-remote-code-executi-71f580",
-    "title": "Unpatched LMCache Flaw Enables Remote Code Execution",
-    "summary": "LMCache, an open‑source cache for large language model servers, contains a critical flaw in its multiprocess mode that lets unauthenticated attackers execute arbitrary code via ZeroMQ. No patched version exists, so operators must disable LMCache or apply a custom fix to prevent remote code execution.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html",
-    "publishedAt": "2026-10-07T15:34:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "unpatched-lmcache-flaw-enables-remote-code-executi",
-      "article-71f580",
-      "71f580",
-      "unpatched-lmcache-flaw-enables-remote-code-execution"
     ]
   },
   {
@@ -1521,24 +1577,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "apple-to-strengthen-macos-full-disk-access-control-239335",
-    "title": "Apple to Strengthen macOS Full Disk Access Controls Amid AI Risks",
-    "summary": "Apple announced new controls to tighten full disk access permissions in macOS, citing increasing risks from advanced AI agents. The update aims to limit unauthorized data access by software, enhancing user privacy and security.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/apple-to-tighten-full-disk-access-controls-in-macos-amid-ai-risks/",
-    "publishedAt": "2026-10-06T11:48:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-to-strengthen-macos-full-disk-access-control",
-      "article-239335",
-      "239335",
-      "apple-to-strengthen-macos-full-disk-access-controls-amid-ai-"
-    ]
-  },
-  {
     "slug": "ox-security-finds-critical-vulnerabilities-in-anth-6061f4",
     "title": "OX Security Finds Critical Vulnerabilities in Anthropic’s MCP Servers",
     "summary": "OX Security traced critical vulnerabilities in Anthropic’s Model Context Protocol (MCP) servers, exposing potential weaknesses in the USB‑C‑style AI model connectivity standard. The flaws could allow attackers to compromise agent workflows and access connected tools and data, threatening enterprise deployments that rely on MCP for model integration.",
@@ -1684,24 +1722,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "google-halts-oss-bug-bounty-rewards-amid-surge-of-db8f57",
-    "title": "Google Halts OSS Bug Bounty Rewards Amid Surge of Invalid Automated Reports",
-    "summary": "Google has stopped accepting bug bounty submissions for its open-source projects such as Go, Angular, and Protocol Buffers effective October 1. Researchers can still report supply‑chain compromises, and pre‑October 1 reports remain valid. The move aims to reduce invalid automated submissions.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/google-pauses-oss-product-bug-bounty.html",
-    "publishedAt": "2026-10-06T09:21:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-halts-oss-bug-bounty-rewards-amid-surge-of",
-      "article-db8f57",
-      "db8f57",
-      "google-halts-oss-bug-bounty-rewards-amid-surge-of-invalid-au"
-    ]
-  },
-  {
     "slug": "nis2-compliance-seven-low-cost-credential-security-2abaa6",
     "title": "NIS2 Compliance: Seven Low‑Cost Credential Security Steps",
     "summary": "The article outlines seven budget‑friendly measures to secure credentials under NIS2, emphasizing visibility, revocability, and reviewability. It highlights that credentials were compromised in 28% of breaches in Verizon’s 2026 report, urging organizations to adopt risk‑based controls without new infrastructure.",
@@ -1735,24 +1755,6 @@ export const news: NewsBrief[] = [
       "article-56f017",
       "56f017",
       "attackers-can-bypass-llm-safety-classifiers-by-requesting-ag"
-    ]
-  },
-  {
-    "slug": "webroot-mobile-security-offers-comprehensive-devic-388122",
-    "title": "Webroot Mobile Security Offers Comprehensive Device Protection and Data Leak Monitoring",
-    "summary": "Webroot Mobile Security for iPhone, iPad, and Android provides device checks, Safari protection, text scam filtering, and data breach monitoring. The app requires an active subscription and includes features like passcode protection, OS updates, jailbreak status, Wi-Fi security, and quick scan shortcuts. It is bundled with Essentials, Premium, and Total Protection plans.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/product-showcase-webroot-mobile-security/",
-    "publishedAt": "2026-10-06T04:30:30.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "webroot-mobile-security-offers-comprehensive-devic",
-      "article-388122",
-      "388122",
-      "webroot-mobile-security-offers-comprehensive-device-protecti"
     ]
   },
   {

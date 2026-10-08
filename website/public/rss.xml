@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Oct 2026 16:19:50 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 17:36:00 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>FakeGit Malware Campaign Distributes 17,610 Fake GitHub Repositories</title>
+      <link>https://secubuzz.com/news/fakegit-malware-campaign-distributes-17-610-fake-g-548ce9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fakegit-malware-campaign-distributes-17-610-fake-g-548ce9</guid>
+      <description><![CDATA[A new wave of FakeGit malware has surfaced, with over 17,000 counterfeit GitHub repositories pushing the SmartLoader downloader that installs the StealC infostealer. The campaign reactivated this month, targeting developers and users who clone the fake repos. No patch or mitigation is publicly available yet.]]></description>
+      <pubDate>Thu, 08 Oct 2026 17:10:55 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/fakegit-malware-campaign-returns-with-17-610-malicious-github-repos/">BleepingComputer</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>DOJ Charges Ransomware Recovery CEO for Secret Ransom Payments</title>
+      <link>https://secubuzz.com/news/doj-charges-ransomware-recovery-ceo-for-secret-ran-1084e4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/doj-charges-ransomware-recovery-ceo-for-secret-ran-1084e4</guid>
+      <description><![CDATA[The U.S. Department of Justice filed wire‑fraud charges against the owner of a ransomware recovery firm, alleging that he secretly paid ransom demands while overcharging victims. The case highlights legal risks for firms that facilitate ransom payments.]]></description>
+      <pubDate>Thu, 08 Oct 2026 17:00:00 GMT</pubDate>
+      <source url="https://therecord.media/ransomware-recovery-charges-doj">The Record</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
+      <title>Hackers Access ASOS Employee Account and Leak Personal Data</title>
+      <link>https://secubuzz.com/news/hackers-access-asos-employee-account-and-leak-pers-545202</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-access-asos-employee-account-and-leak-pers-545202</guid>
+      <description><![CDATA[Hackers accessed an ASOS employee account, obtaining personal information such as names and contact details, along with some non‑personal account data. The breach was identified through an external investigation, highlighting a compromise of internal credentials and potential exposure of employee data.]]></description>
+      <pubDate>Thu, 08 Oct 2026 16:57:00 GMT</pubDate>
+      <source url="https://therecord.media/asos-says-hackers-tricked-employee-access-push-notification">The Record</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Japan Reports Surge in Web Data Leaks via Mobile API Abuse</title>
+      <link>https://secubuzz.com/news/japan-reports-surge-in-web-data-leaks-via-mobile-a-275d4f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/japan-reports-surge-in-web-data-leaks-via-mobile-a-275d4f</guid>
+      <description><![CDATA[Japanese organizations experienced multiple personal data leaks as attackers exploited mobile app APIs and known software flaws. The JPCERT/CC issued an alert on October 8, 2026, noting the rise in leaks but did not identify specific attackers or affected entities.]]></description>
+      <pubDate>Thu, 08 Oct 2026 15:45:56 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/japan-sees-sharp-rise-in-web-data-leaks.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Crypto Thief Sentenced for $260,000 SIM‑Swapping Scam</title>
       <link>https://secubuzz.com/news/crypto-thief-sentenced-for-260-000-sim-swapping-sc-49f221</link>
@@ -161,6 +197,33 @@
       <category>Policy</category>
     </item>
     <item>
+      <title>Red Lion Controls N‑Tron 700 Series Vulnerabilities Enable Remote Access and Reboot</title>
+      <link>https://secubuzz.com/news/red-lion-controls-n-tron-700-series-vulnerabilitie-430f32</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-lion-controls-n-tron-700-series-vulnerabilitie-430f32</guid>
+      <description><![CDATA[Red Lion Controls N‑Tron 700 Series devices are vulnerable to multiple flaws, including hard‑coded credentials, insufficient authentication, and code download without integrity checks. Exploitation can grant administrative access, allow configuration changes, and trigger continuous rebooting via a crafted URL.]]></description>
+      <pubDate>Thu, 08 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-281-01">CISA</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Satel Netco Design Vulnerabilities Enable XSS and Code Execution</title>
+      <link>https://secubuzz.com/news/satel-netco-design-vulnerabilities-enable-xss-and-430f32</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/satel-netco-design-vulnerabilities-enable-xss-and-430f32</guid>
+      <description><![CDATA[Satel Netco Design versions before v2.1.7 contain a stored cross‑site scripting flaw (CVE‑2026‑105269) that allows authenticated network operators to inject arbitrary scripts, consume resources, enumerate and modify files, and potentially execute code in users’ browsers. Patch to v2.1.7 or later is required.]]></description>
+      <pubDate>Thu, 08 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-281-03">CISA</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Grid Protection Alliance openPDC and openHistorian Vulnerable to CVE-2026-100730 Deserialization Exploit</title>
+      <link>https://secubuzz.com/news/grid-protection-alliance-openpdc-and-openhistorian-430f32</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/grid-protection-alliance-openpdc-and-openhistorian-430f32</guid>
+      <description><![CDATA[The openPDC and openHistorian Docker images are affected by CVE-2026-100730, a deserialization flaw that allows attackers to execute arbitrary code. The vulnerability also includes missing authentication, SSRF, hard‑coded credentials, and unsafe reflection. Affected systems can be compromised without authentication on non‑Windows environments, posing a critical risk to energy infrastructure.]]></description>
+      <pubDate>Thu, 08 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-281-02">CISA</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Ukrainian Drone Strike Disrupts Major Yandex Data Center</title>
       <link>https://secubuzz.com/news/ukrainian-drone-strike-disrupts-major-yandex-data-793976</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ukrainian-drone-strike-disrupts-major-yandex-data-793976</guid>
@@ -168,15 +231,6 @@
       <pubDate>Thu, 08 Oct 2026 12:00:00 GMT</pubDate>
       <source url="https://therecord.media/yandex-russia-drone-ukraine">The Record</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>ASOS Confirms Data Breach Linked to Social Engineering Attack</title>
-      <link>https://secubuzz.com/news/asos-confirms-data-breach-linked-to-social-enginee-42cb8e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/asos-confirms-data-breach-linked-to-social-enginee-42cb8e</guid>
-      <description><![CDATA[ASOS has confirmed a data breach tied to a social engineering attack that stole customer credentials. Hackers accessed personal data, prompting the retailer to notify affected customers and provide updates on remediation steps. The incident highlights the risk of phishing-based credential theft.]]></description>
-      <pubDate>Thu, 08 Oct 2026 11:42:46 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/asos-links-data-breach-to-social-engineering-attack-credential-theft/">BleepingComputer</source>
-      <category>Breach</category>
     </item>
     <item>
       <title>Anthropic’s Claude Haiku 5.5 Improves Vulnerability Detection While Maintaining Strong Safeguards</title>
@@ -251,15 +305,6 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>Fake Decryption Tools Inflate Ransom Payments by $11M</title>
-      <link>https://secubuzz.com/news/fake-decryption-tools-inflate-ransom-payments-by-1-110f31</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fake-decryption-tools-inflate-ransom-payments-by-1-110f31</guid>
-      <description><![CDATA[A scheme using counterfeit decryption tools was uncovered, where victims paid an additional $11 million for remediation after paying ransoms. The fraud involved charging inflated fees for supposed decryption services, misleading victims into paying more than the original ransom.]]></description>
-      <pubDate>Thu, 08 Oct 2026 09:27:55 GMT</pubDate>
-      <source url="https://www.securityweek.com/fake-decryption-tools-masked-11m-markup-in-ransomware-recovery-scheme/">SecurityWeek</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
       <title>GitHub Introduces AI Detector to Block Passwords Before Code Push</title>
       <link>https://secubuzz.com/news/github-introduces-ai-detector-to-block-passwords-b-5fe20c</link>
       <guid isPermaLink="true">https://secubuzz.com/news/github-introduces-ai-detector-to-block-passwords-b-5fe20c</guid>
@@ -276,15 +321,6 @@
       <pubDate>Thu, 08 Oct 2026 09:00:54 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/08/matchboil-malware-uac-0099/">Help Net Security</source>
       <category>Malware</category>
-    </item>
-    <item>
-      <title>MonsterCloud Owner Charged with Fraud Over Ransomware Payments</title>
-      <link>https://secubuzz.com/news/monstercloud-owner-charged-with-fraud-over-ransomw-98a112</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/monstercloud-owner-charged-with-fraud-over-ransomw-98a112</guid>
-      <description><![CDATA[Florida-based ransomware remediation company MonsterCloud’s owner, Zohar Pinhasi, is charged with fraud for secretly paying ransomware gangs and overbilling clients. Prosecutors allege he paid over $8 million to attackers while billing more than $19 million to victims, inflating ransom payments and exploiting client trust.]]></description>
-      <pubDate>Thu, 08 Oct 2026 08:00:39 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/08/monstercloud-owner-ransomware-fraud-charges/">Help Net Security</source>
-      <category>Ransomware</category>
     </item>
     <item>
       <title>FortiBleed Attackers Lock Legitimate Users Out of Fortinet Devices</title>
@@ -420,42 +456,6 @@
       <pubDate>Wed, 07 Oct 2026 18:35:00 GMT</pubDate>
       <source url="https://therecord.media/cyber-command-mental-health-support-program-bipartisan-letters">The Record</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Cloudflare Builds Evidence‑Grounded AI Security Operations</title>
-      <link>https://secubuzz.com/news/cloudflare-builds-evidence-grounded-ai-security-op-3acdaf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-builds-evidence-grounded-ai-security-op-3acdaf</guid>
-      <description><![CDATA[Cloudflare’s Managed Defense platform deploys AI agents on Workers and global telemetry to separate evidence collection from inference. The system provides grounded, actionable recommendations to analysts, improving the speed and accuracy of security incident response.]]></description>
-      <pubDate>Wed, 07 Oct 2026 16:30:36 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/agentic-security-operations/">Cloudflare Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>Microsoft FORGE Lab Shares Lessons from AI-Driven Vulnerability Research</title>
-      <link>https://secubuzz.com/news/microsoft-forge-lab-shares-lessons-from-ai-driven-71664f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-forge-lab-shares-lessons-from-ai-driven-71664f</guid>
-      <description><![CDATA[Microsoft Security’s FORGE Lab outlines three key lessons from applying AI to vulnerability research, scaling efforts from Windows to the Linux kernel. The post highlights how machine learning can accelerate discovery, prioritize risks, and improve patching strategies across diverse operating systems.]]></description>
-      <pubDate>Wed, 07 Oct 2026 16:00:00 GMT</pubDate>
-      <source url="https://www.microsoft.com/en-us/security/blog/2026/10/07/3-lessons-from-frontier-ai-vulnerability-research/">Microsoft Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Microsoft Outlook to Block MSIX Attachments Starting November</title>
-      <link>https://secubuzz.com/news/microsoft-outlook-to-block-msix-attachments-starti-b85db0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-outlook-to-block-msix-attachments-starti-b85db0</guid>
-      <description><![CDATA[Microsoft will block .msix and .msixbundle attachments in Outlook Web and the new Outlook Windows client from November, preventing users from opening potentially malicious MSIX packages.]]></description>
-      <pubDate>Wed, 07 Oct 2026 15:44:22 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-outlook-to-block-msix-attachments-used-in-attacks/">BleepingComputer</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Unpatched LMCache Flaw Enables Remote Code Execution</title>
-      <link>https://secubuzz.com/news/unpatched-lmcache-flaw-enables-remote-code-executi-71f580</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/unpatched-lmcache-flaw-enables-remote-code-executi-71f580</guid>
-      <description><![CDATA[LMCache, an open‑source cache for large language model servers, contains a critical flaw in its multiprocess mode that lets unauthenticated attackers execute arbitrary code via ZeroMQ. No patched version exists, so operators must disable LMCache or apply a custom fix to prevent remote code execution.]]></description>
-      <pubDate>Wed, 07 Oct 2026 15:34:53 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html">The Hacker News</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
