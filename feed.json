@@ -1,5 +1,145 @@
 [
   {
+    "id": "https://www.securityweek.com/cisco-patches-a-dozen-critical-vulnerabilities/",
+    "sourceUrl": "https://www.securityweek.com/cisco-patches-a-dozen-critical-vulnerabilities/",
+    "title": "Cisco Releases Patches for Twelve Critical Vulnerabilities",
+    "headline": "Cisco Releases Patches for Twelve Critical Vulnerabilities",
+    "summary": "Cisco has released patches for twelve critical vulnerabilities that could enable unauthorized access, information leaks, privilege escalation, denial‑of‑service, and remote code execution. The fixes address defects in Cisco software, preventing attackers from exploiting these weaknesses. Users should apply the updates immediately to mitigate potential security risks.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-08T15:28:06.000Z",
+    "url": "https://www.securityweek.com/cisco-patches-a-dozen-critical-vulnerabilities/",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-critical-flaws-allowing-nexus-switch-takeover/"
+      },
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/cisco-quantum-network-controller-research-prototype/"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/uac-0099-targets-ukrainian-government.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/uac-0099-targets-ukrainian-government.html",
+    "title": "UAC‑0099 Targets Ukrainian Government with ASHVEIN RAT",
+    "headline": "UAC‑0099 Targets Ukrainian Government with ASHVEIN RAT",
+    "summary": "UAC‑0099, a Russia‑aligned threat actor, has deployed the ASHVEIN RAT—a .NET infostealer and remote access trojan—to target Ukrainian government personnel. The malware hides command and control instructions within HTML, allowing covert operations. TrendAI tracks the activity under the cluster Earth Sirrush, previously known as SHADOW‑EARTH‑065. The campaign poses a significant espionage threat.",
+    "category": "NATION_STATE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-08T15:26:56.000Z",
+    "url": "https://thehackernews.com/2026/10/uac-0099-targets-ukrainian-government.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://therecord.media/leaked-chats-show-russian-extortion-gang-sending-agents-to-law-firms",
+    "sourceUrl": "https://therecord.media/leaked-chats-show-russian-extortion-gang-sending-agents-to-law-firms",
+    "title": "Russian Extortion Gang Targets US Law Firms with Operatives",
+    "headline": "Russian Extortion Gang Targets US Law Firms with Operatives",
+    "summary": "Leaked chats reveal a Russian extortion group coordinating operatives in the United States to target law firms. The gang tracks victims, negotiates multimillion-dollar payments, and deploys “agents” to infiltrate firms. The operation represents a sophisticated extortion campaign aimed at high-value legal clients.",
+    "category": "RANSOMWARE",
+    "severity": "HIGH",
+    "source": "The Record",
+    "publishedAt": "2026-10-08T14:46:00.000Z",
+    "url": "https://therecord.media/leaked-chats-show-russian-extortion-gang-sending-agents-to-law-firms",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/security-awareness-training-isnt-dead-but-it-needs-a-rethink/",
+    "sourceUrl": "https://www.securityweek.com/security-awareness-training-isnt-dead-but-it-needs-a-rethink/",
+    "title": "Security Awareness Training Still Relevant, Calls for Modernization",
+    "headline": "Security Awareness Training Still Relevant, Calls for Modernization",
+    "summary": "Enterprises continue to run security awareness programs, yet their effectiveness is questioned. Experts suggest updating curricula to address evolving threats and employee engagement. The shift aims to improve real-world protection rather than relying on outdated training models.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-08T14:30:00.000Z",
+    "url": "https://www.securityweek.com/security-awareness-training-isnt-dead-but-it-needs-a-rethink/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/artex-ai-pentesting-tool-used-in-data.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/artex-ai-pentesting-tool-used-in-data.html",
+    "title": "ARTEX AI Pentesting Tool Used in Data Theft Attacks on South Korean Financial Firms",
+    "headline": "ARTEX AI Pentesting Tool Used in Data Theft Attacks on South Korean Financial Firms",
+    "summary": "A campaign targeting South Korean financial institutions employed the ARTEX AI pentesting tool to conduct attacks, leading to data exfiltration. The activity, active from late September to early October 2026, involved threat actors exploiting the tool’s capabilities to breach systems and steal sensitive information.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-08T14:12:34.000Z",
+    "url": "https://thehackernews.com/2026/10/artex-ai-pentesting-tool-used-in-data.html",
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/south-korea-hackers-megachurches"
+      },
+      {
+        "source": "CrowdStrike",
+        "sourceUrl": "https://www.crowdstrike.com/en-us/blog/unknown-threat-actor-uses-artex-to-target-south-korean-finance/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/oauth-grants-pile-up-faster-than-you-can-review-them-heres-how-to-keep-up/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/oauth-grants-pile-up-faster-than-you-can-review-them-heres-how-to-keep-up/",
+    "title": "OAuth Grants Exploited in Recent Klue Breach",
+    "headline": "OAuth Grants Exploited in Recent Klue Breach",
+    "summary": "Attackers leveraged forgotten OAuth grants to access corporate data, as highlighted by the recent Klue breach. The article explains how OAuth permissions create data highways between SaaS apps, AI agents, and other tools, and offers strategies to monitor and revoke unused grants to prevent future breaches.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-08T14:00:10.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/oauth-grants-pile-up-faster-than-you-can-review-them-heres-how-to-keep-up/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://blog.cloudflare.com/radar-redesign/",
+    "sourceUrl": "https://blog.cloudflare.com/radar-redesign/",
+    "title": "Cloudflare Radar Redesign Enhances Accessibility for Non-Technical Users",
+    "headline": "Cloudflare Radar Redesign Enhances Accessibility for Non-Technical Users",
+    "summary": "Cloudflare has updated its Radar platform, adding an interactive map and standardized components to present real‑time global traffic and outage data. The redesign aims to make complex network insights usable for journalists, researchers, and everyday users while maintaining technical depth. No security impact reported.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "publishedAt": "2026-10-08T13:00:00.000Z",
+    "url": "https://blog.cloudflare.com/radar-redesign/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/08/nudeleaksteens-seized-fbi-france/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/nudeleaksteens-seized-fbi-france/",
+    "title": "FBI Seizes Sites Selling 17,000 Stolen Intimate Images of Women and Girls",
+    "headline": "FBI Seizes Sites Selling 17,000 Stolen Intimate Images of Women and Girls",
+    "summary": "The FBI and French authorities seized two websites that sold hacked and stolen sexually explicit images of 17,000 young women and girls. The administrator was arrested in northern France. The operation was conducted with the FBI Washington Field Office and U.S. DOJ. No further details released.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-08T12:51:42.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/08/nudeleaksteens-seized-fbi-france/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/08/scams-targeting-youtube-creators-sponsorship/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/scams-targeting-youtube-creators-sponsorship/",
+    "title": "YouTubers Targeted by Phishing Scam Using Fake Sponsorships",
+    "headline": "YouTubers Targeted by Phishing Scam Using Fake Sponsorships",
+    "summary": "Scammers impersonate brands and send personalized emails to YouTube creators, directing them to a fake collaboration platform that requests Google sign‑in. The phishing campaign tricks creators into revealing their Google account credentials, enabling attackers to access their accounts.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-08T12:41:43.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/08/scams-targeting-youtube-creators-sponsorship/",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/milk-dragon-phishing-fake-discounts/"
+      }
+    ]
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/microsoft-teams-to-add-third-party-deepfake-detection-impersonation-protection/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-teams-to-add-third-party-deepfake-detection-impersonation-protection/",
     "title": "Microsoft Teams Adds Support for Third‑Party Deepfake Detection Tools",
@@ -346,19 +486,6 @@
         "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-hijack-google-domains-after-breaching-cctld-registries/"
       }
     ]
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/08/cisco-quantum-network-controller-research-prototype/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/cisco-quantum-network-controller-research-prototype/",
-    "title": "Cisco Quantum Network Controller Lets Apps Order Entanglement on Demand",
-    "headline": "Cisco Quantum Network Controller Lets Apps Order Entanglement on Demand",
-    "summary": "Cisco unveiled a research prototype called the Quantum Network Controller that allows applications to request entanglement from a quantum network. The system delegates delivery coordination to the network, enabling on-demand quantum state distribution without manual hardware setup. The prototype demonstrates a new approach to managing quantum resources.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-07T22:33:09.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/08/cisco-quantum-network-controller-research-prototype/",
-    "additionalSources": []
   },
   {
     "id": "https://unit42.paloaltonetworks.com/web3-cloud-supply-chain-attacks/",
@@ -749,24 +876,6 @@
     "publishedAt": "2026-10-07T10:07:09.000Z",
     "url": "https://www.securityweek.com/anthropic-introduces-3-tier-cyber-verification-program-for-ai-access/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.crowdstrike.com/en-us/blog/unknown-threat-actor-uses-artex-to-target-south-korean-finance/",
-    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/unknown-threat-actor-uses-artex-to-target-south-korean-finance/",
-    "title": "Unknown Threat Actor Uses AI-Driven ARTEX to Target South Korean Finance",
-    "headline": "Unknown Threat Actor Uses AI-Driven ARTEX to Target South Korean Finance",
-    "summary": "An unidentified threat actor has deployed the AI‑driven ARTEX tool to target South Korean financial institutions. The campaign focuses on exploiting vulnerabilities in financial systems, potentially aiming to steal data or disrupt services. No confirmed breaches or impact details are available yet.",
-    "category": "NATION_STATE",
-    "severity": "MEDIUM",
-    "source": "CrowdStrike",
-    "publishedAt": "2026-10-07T05:00:00.000Z",
-    "url": "https://www.crowdstrike.com/en-us/blog/unknown-threat-actor-uses-artex-to-target-south-korean-finance/",
-    "additionalSources": [
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/south-korean-bank-hacks-ai-agents"
-      }
-    ]
   },
   {
     "id": "https://cybernewsai.com/blog/fake-ai-sites-bitb-ad-account-theft",
@@ -1360,19 +1469,6 @@
     "source": "Dark Reading",
     "publishedAt": "2026-10-05T15:52:59.000Z",
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/chinese-actor-impersonates-us-officials-cyber-espionage",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/05/milk-dragon-phishing-fake-discounts/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/milk-dragon-phishing-fake-discounts/",
-    "title": "Milk Dragon Phishing Kit Targets Shoppers with Fake Discounts",
-    "headline": "Milk Dragon Phishing Kit Targets Shoppers with Fake Discounts",
-    "summary": "Cybercriminals use the Milk Dragon phishing kit, active since October 2025, to lure shoppers on Facebook and TikTok with fake discounts. The kit directs victims to 258 phishing pages across 66 countries, stealing payment card details and one‑time passwords.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-05T13:55:15.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/05/milk-dragon-phishing-fake-discounts/",
     "additionalSources": []
   },
   {
@@ -3662,89 +3758,6 @@
     "source": "Help Net Security",
     "publishedAt": "2026-09-28T08:20:01.000Z",
     "url": "https://www.helpnetsecurity.com/2026/09/28/linkedin-profile-verification-features/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/09/28/chris-latimer-vectorize-agent-memory-security/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/28/chris-latimer-vectorize-agent-memory-security/",
-    "title": "Security Check: Protect AI Agent Memory from Credential Leakage",
-    "headline": "Security Check: Protect AI Agent Memory from Credential Leakage",
-    "summary": "Vectorize CEO Chris Latimer warns that AI coding agents often store API keys, credentials, and sensitive documents in plain text on developer machines and cloud services. Attackers can inject poisoned memory via plugins or integrations, targeting inexperienced coders. The interview stresses the need for strict access controls and secure memory handling practices.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-09-28T06:00:40.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/09/28/chris-latimer-vectorize-agent-memory-security/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/09/28/ai-agent-security-governance-aws-report/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/28/ai-agent-security-governance-aws-report/",
-    "title": "AI Forces Enterprises to Rethink Security Governance",
-    "headline": "AI Forces Enterprises to Rethink Security Governance",
-    "summary": "AI agents are prompting companies to embed governance into systems and maintain human accountability as deployments scale. AWS’s Reimagine 2026 highlights the need for governance frameworks, citing interviews with 154 executives across 128 organizations in 23 industries. The report urges updating review processes beyond legacy six‑month IT programs.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-09-28T05:00:48.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/09/28/ai-agent-security-governance-aws-report/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/09/28/quantum-random-number-generator-qrng-guidance/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/28/quantum-random-number-generator-qrng-guidance/",
-    "title": "Quantum Random Number Generators May Leak Clues Despite Passing Tests",
-    "headline": "Quantum Random Number Generators May Leak Clues Despite Passing Tests",
-    "summary": "A new ETSI technical report highlights weaknesses in quantum random number generators that could allow attackers to infer generated numbers. The guidance covers device and system flaws that reduce randomness, potentially compromising cryptographic keys and other security functions.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "publishedAt": "2026-09-28T04:00:51.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/09/28/quantum-random-number-generator-qrng-guidance/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://isc.sans.edu/diary/rss/33372",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33372",
-    "title": "Wireshark 4.6.9 Release Addresses 19 Vulnerabilities",
-    "headline": "Wireshark 4.6.9 Release Addresses 19 Vulnerabilities",
-    "summary": "Wireshark version 4.6.9 has been released, fixing 19 security vulnerabilities and 16 bugs. The update improves stability and security for users of the network protocol analyzer.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "publishedAt": "2026-09-27T15:04:49.000Z",
-    "url": "https://isc.sans.edu/diary/rss/33372",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybernewsai.com/blog/lunex-stealer-amd-byovd-edr-evasion",
-    "sourceUrl": "https://cybernewsai.com/blog/lunex-stealer-amd-byovd-edr-evasion",
-    "title": "LunexStealer Uses AMD Driver BYOVD to Evade EDR and Steal Credentials",
-    "headline": "LunexStealer Uses AMD Driver BYOVD to Evade EDR and Steal Credentials",
-    "summary": "LunexStealer deploys the AMD PDFWKRNL.sys driver via a Bring Your Own Vulnerability (BYOVD) technique to zero kernel callbacks, effectively blinding endpoint detection and response systems. The malware then steals browser credentials and cryptocurrency wallet data from 28 victim panels.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-09-27T01:41:09.000Z",
-    "url": "https://cybernewsai.com/blog/lunex-stealer-amd-byovd-edr-evasion",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/09/lunex-stealer-abuses-amd-driver-to.html"
-      }
-    ]
-  },
-  {
-    "id": "https://www.securityweek.com/china-and-us-agree-to-establish-ai-safety-channel-and-continue-trade-and-military-talks/",
-    "sourceUrl": "https://www.securityweek.com/china-and-us-agree-to-establish-ai-safety-channel-and-continue-trade-and-military-talks/",
-    "title": "US and China Agree to AI Safety Communication Channel Amid Trade Talks",
-    "headline": "US and China Agree to AI Safety Communication Channel Amid Trade Talks",
-    "summary": "The United States and China have agreed to establish a communication mechanism for artificial intelligence‑related incidents while continuing trade and military discussions. The agreement aims to improve dialogue and cooperation on AI safety issues between the two nations.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-09-26T18:09:28.000Z",
-    "url": "https://www.securityweek.com/china-and-us-agree-to-establish-ai-safety-channel-and-continue-trade-and-military-talks/",
     "additionalSources": []
   }
 ]

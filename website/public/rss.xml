@@ -5,8 +5,89 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Oct 2026 12:19:48 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 15:40:41 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Cisco Releases Patches for Twelve Critical Vulnerabilities</title>
+      <link>https://secubuzz.com/news/cisco-releases-patches-for-twelve-critical-vulnera-a636f9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisco-releases-patches-for-twelve-critical-vulnera-a636f9</guid>
+      <description><![CDATA[Cisco has released patches for twelve critical vulnerabilities that could enable unauthorized access, information leaks, privilege escalation, denial‑of‑service, and remote code execution. The fixes address defects in Cisco software, preventing attackers from exploiting these weaknesses. Users should apply the updates immediately to mitigate potential security risks.]]></description>
+      <pubDate>Thu, 08 Oct 2026 15:28:06 GMT</pubDate>
+      <source url="https://www.securityweek.com/cisco-patches-a-dozen-critical-vulnerabilities/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>UAC‑0099 Targets Ukrainian Government with ASHVEIN RAT</title>
+      <link>https://secubuzz.com/news/uac-0099-targets-ukrainian-government-with-ashvein-560cb2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/uac-0099-targets-ukrainian-government-with-ashvein-560cb2</guid>
+      <description><![CDATA[UAC‑0099, a Russia‑aligned threat actor, has deployed the ASHVEIN RAT—a .NET infostealer and remote access trojan—to target Ukrainian government personnel. The malware hides command and control instructions within HTML, allowing covert operations. TrendAI tracks the activity under the cluster Earth Sirrush, previously known as SHADOW‑EARTH‑065. The campaign poses a significant espionage threat.]]></description>
+      <pubDate>Thu, 08 Oct 2026 15:26:56 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/uac-0099-targets-ukrainian-government.html">The Hacker News</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Russian Extortion Gang Targets US Law Firms with Operatives</title>
+      <link>https://secubuzz.com/news/russian-extortion-gang-targets-us-law-firms-with-o-6ee6bf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/russian-extortion-gang-targets-us-law-firms-with-o-6ee6bf</guid>
+      <description><![CDATA[Leaked chats reveal a Russian extortion group coordinating operatives in the United States to target law firms. The gang tracks victims, negotiates multimillion-dollar payments, and deploys “agents” to infiltrate firms. The operation represents a sophisticated extortion campaign aimed at high-value legal clients.]]></description>
+      <pubDate>Thu, 08 Oct 2026 14:46:00 GMT</pubDate>
+      <source url="https://therecord.media/leaked-chats-show-russian-extortion-gang-sending-agents-to-law-firms">The Record</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
+      <title>Security Awareness Training Still Relevant, Calls for Modernization</title>
+      <link>https://secubuzz.com/news/security-awareness-training-still-relevant-calls-f-1fd1d4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/security-awareness-training-still-relevant-calls-f-1fd1d4</guid>
+      <description><![CDATA[Enterprises continue to run security awareness programs, yet their effectiveness is questioned. Experts suggest updating curricula to address evolving threats and employee engagement. The shift aims to improve real-world protection rather than relying on outdated training models.]]></description>
+      <pubDate>Thu, 08 Oct 2026 14:30:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/security-awareness-training-isnt-dead-but-it-needs-a-rethink/">SecurityWeek</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>ARTEX AI Pentesting Tool Used in Data Theft Attacks on South Korean Financial Firms</title>
+      <link>https://secubuzz.com/news/artex-ai-pentesting-tool-used-in-data-theft-attack-58f6d6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/artex-ai-pentesting-tool-used-in-data-theft-attack-58f6d6</guid>
+      <description><![CDATA[A campaign targeting South Korean financial institutions employed the ARTEX AI pentesting tool to conduct attacks, leading to data exfiltration. The activity, active from late September to early October 2026, involved threat actors exploiting the tool’s capabilities to breach systems and steal sensitive information.]]></description>
+      <pubDate>Thu, 08 Oct 2026 14:12:34 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/artex-ai-pentesting-tool-used-in-data.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>OAuth Grants Exploited in Recent Klue Breach</title>
+      <link>https://secubuzz.com/news/oauth-grants-exploited-in-recent-klue-breach-381d27</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/oauth-grants-exploited-in-recent-klue-breach-381d27</guid>
+      <description><![CDATA[Attackers leveraged forgotten OAuth grants to access corporate data, as highlighted by the recent Klue breach. The article explains how OAuth permissions create data highways between SaaS apps, AI agents, and other tools, and offers strategies to monitor and revoke unused grants to prevent future breaches.]]></description>
+      <pubDate>Thu, 08 Oct 2026 14:00:10 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/oauth-grants-pile-up-faster-than-you-can-review-them-heres-how-to-keep-up/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Cloudflare Radar Redesign Enhances Accessibility for Non-Technical Users</title>
+      <link>https://secubuzz.com/news/cloudflare-radar-redesign-enhances-accessibility-f-53eeb5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-radar-redesign-enhances-accessibility-f-53eeb5</guid>
+      <description><![CDATA[Cloudflare has updated its Radar platform, adding an interactive map and standardized components to present real‑time global traffic and outage data. The redesign aims to make complex network insights usable for journalists, researchers, and everyday users while maintaining technical depth. No security impact reported.]]></description>
+      <pubDate>Thu, 08 Oct 2026 13:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/radar-redesign/">Cloudflare Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>FBI Seizes Sites Selling 17,000 Stolen Intimate Images of Women and Girls</title>
+      <link>https://secubuzz.com/news/fbi-seizes-sites-selling-17-000-stolen-intimate-im-4e9809</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fbi-seizes-sites-selling-17-000-stolen-intimate-im-4e9809</guid>
+      <description><![CDATA[The FBI and French authorities seized two websites that sold hacked and stolen sexually explicit images of 17,000 young women and girls. The administrator was arrested in northern France. The operation was conducted with the FBI Washington Field Office and U.S. DOJ. No further details released.]]></description>
+      <pubDate>Thu, 08 Oct 2026 12:51:42 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/08/nudeleaksteens-seized-fbi-france/">Help Net Security</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>YouTubers Targeted by Phishing Scam Using Fake Sponsorships</title>
+      <link>https://secubuzz.com/news/youtubers-targeted-by-phishing-scam-using-fake-spo-5a26c0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/youtubers-targeted-by-phishing-scam-using-fake-spo-5a26c0</guid>
+      <description><![CDATA[Scammers impersonate brands and send personalized emails to YouTube creators, directing them to a fake collaboration platform that requests Google sign‑in. The phishing campaign tricks creators into revealing their Google account credentials, enabling attackers to access their accounts.]]></description>
+      <pubDate>Thu, 08 Oct 2026 12:41:43 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/08/scams-targeting-youtube-creators-sponsorship/">Help Net Security</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Microsoft Teams Adds Support for Third‑Party Deepfake Detection Tools</title>
       <link>https://secubuzz.com/news/microsoft-teams-adds-support-for-third-party-deepf-2fbbbc</link>
@@ -206,15 +287,6 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>Cisco Quantum Network Controller Lets Apps Order Entanglement on Demand</title>
-      <link>https://secubuzz.com/news/cisco-quantum-network-controller-lets-apps-order-e-5f1cff</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisco-quantum-network-controller-lets-apps-order-e-5f1cff</guid>
-      <description><![CDATA[Cisco unveiled a research prototype called the Quantum Network Controller that allows applications to request entanglement from a quantum network. The system delegates delivery coordination to the network, enabling on-demand quantum state distribution without manual hardware setup. The prototype demonstrates a new approach to managing quantum resources.]]></description>
-      <pubDate>Wed, 07 Oct 2026 22:33:09 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/08/cisco-quantum-network-controller-research-prototype/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
       <title>Evolution of Web3 in Cloud Supply Chain Attacks</title>
       <link>https://secubuzz.com/news/evolution-of-web3-in-cloud-supply-chain-attacks-241295</link>
       <guid isPermaLink="true">https://secubuzz.com/news/evolution-of-web3-in-cloud-supply-chain-attacks-241295</guid>
@@ -384,78 +456,6 @@
       <pubDate>Wed, 07 Oct 2026 13:48:45 GMT</pubDate>
       <source url="https://krebsonsecurity.com/2026/10/shinyhunters-extorted-boeing-spin-off-prior-to-arrests/">Krebs on Security</source>
       <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Qilin Ransomware Suspect Arrested in Japan, Extradited to Germany</title>
-      <link>https://secubuzz.com/news/qilin-ransomware-suspect-arrested-in-japan-extradi-576396</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/qilin-ransomware-suspect-arrested-in-japan-extradi-576396</guid>
-      <description><![CDATA[A suspect linked to the Qilin ransomware campaign was detained in Japan in May and extradited to Germany to face hacking charges. The arrest follows investigations into the group’s criminal activities.]]></description>
-      <pubDate>Wed, 07 Oct 2026 13:47:12 GMT</pubDate>
-      <source url="https://www.securityweek.com/qilin-ransomware-suspect-arrested-in-japan-extradited-to-germany/">SecurityWeek</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Hadrian Secures $40M to Expand Autonomous Offensive Security Platform</title>
-      <link>https://secubuzz.com/news/hadrian-secures-40m-to-expand-autonomous-offensive-67fa49</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hadrian-secures-40m-to-expand-autonomous-offensive-67fa49</guid>
-      <description><![CDATA[Hadrian, an autonomous offensive security platform, has raised $40 million to broaden its agentic capabilities, enabling defenders to match attacker speed. The funding supports development of tools that simulate adversary tactics for proactive defense. No direct security incident reported.]]></description>
-      <pubDate>Wed, 07 Oct 2026 13:06:10 GMT</pubDate>
-      <source url="https://www.securityweek.com/hadrian-raises-40-million-to-expand-autonomous-offensive-security-platform/">SecurityWeek</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Cyber Risk Shifts Inside Workflow, 2026 CISO Survey Reveals</title>
-      <link>https://secubuzz.com/news/cyber-risk-shifts-inside-workflow-2026-ciso-survey-c1c27e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cyber-risk-shifts-inside-workflow-2026-ciso-survey-c1c27e</guid>
-      <description><![CDATA[A 2026 CISO survey shows cyber risk is moving into everyday workflows, driven by AI governance, human risk, and board scrutiny. The findings highlight a five‑year trend toward integrating security into the systems where work actually happens, rather than treating it as a separate function.]]></description>
-      <pubDate>Wed, 07 Oct 2026 11:57:05 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/the-sixth-voice-of-ciso-data-shows.html">The Hacker News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Chrome 155 Update Fixes 247 Vulnerabilities</title>
-      <link>https://secubuzz.com/news/chrome-155-update-fixes-247-vulnerabilities-40a2f3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-155-update-fixes-247-vulnerabilities-40a2f3</guid>
-      <description><![CDATA[Google released Chrome 155, addressing 247 security issues, including four critical use‑after‑free bugs in Chromecast, Browser, Navigation, and Track components. The update removes the vulnerabilities that could allow attackers to execute arbitrary code or crash the browser, improving overall stability and security.]]></description>
-      <pubDate>Wed, 07 Oct 2026 10:51:57 GMT</pubDate>
-      <source url="https://www.securityweek.com/chrome-155-update-patches-247-vulnerabilities/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>North Carolina Musician Sentenced for $10 Million Streaming Fraud Scheme</title>
-      <link>https://secubuzz.com/news/north-carolina-musician-sentenced-for-10-million-s-119ed0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/north-carolina-musician-sentenced-for-10-million-s-119ed0</guid>
-      <description><![CDATA[A North Carolina musician received an 18‑month prison sentence for orchestrating a $10 million streaming royalty fraud. The scheme used AI bots to inflate plays on Spotify, Apple Music, Amazon Music, and YouTube Music, deceiving the platforms and defrauding rights holders.]]></description>
-      <pubDate>Wed, 07 Oct 2026 10:35:15 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/musician-gets-18-months-in-prison-for-10-million-streaming-fraud-using-ai-bots/">BleepingComputer</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Anthropic Unveils 3‑Tier Cyber Verification for AI Models</title>
-      <link>https://secubuzz.com/news/anthropic-unveils-3-tier-cyber-verification-for-ai-2c267d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-unveils-3-tier-cyber-verification-for-ai-2c267d</guid>
-      <description><![CDATA[Anthropic consolidates its Cyber Verification Program and Project Glasswing into a single offering, providing three access levels to its most advanced AI models. The initiative aims to enhance security oversight and compliance for users accessing powerful AI capabilities.]]></description>
-      <pubDate>Wed, 07 Oct 2026 10:07:09 GMT</pubDate>
-      <source url="https://www.securityweek.com/anthropic-introduces-3-tier-cyber-verification-program-for-ai-access/">SecurityWeek</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Unknown Threat Actor Uses AI-Driven ARTEX to Target South Korean Finance</title>
-      <link>https://secubuzz.com/news/unknown-threat-actor-uses-ai-driven-artex-to-targe-4dea4a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/unknown-threat-actor-uses-ai-driven-artex-to-targe-4dea4a</guid>
-      <description><![CDATA[An unidentified threat actor has deployed the AI‑driven ARTEX tool to target South Korean financial institutions. The campaign focuses on exploiting vulnerabilities in financial systems, potentially aiming to steal data or disrupt services. No confirmed breaches or impact details are available yet.]]></description>
-      <pubDate>Wed, 07 Oct 2026 05:00:00 GMT</pubDate>
-      <source url="https://www.crowdstrike.com/en-us/blog/unknown-threat-actor-uses-artex-to-target-south-korean-finance/">CrowdStrike</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>Fake AI Portals Hijack Corporate Ad Accounts via Browser-in-the-Browser Attacks</title>
-      <link>https://secubuzz.com/news/fake-ai-portals-hijack-corporate-ad-accounts-via-b-6b47e9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fake-ai-portals-hijack-corporate-ad-accounts-via-b-6b47e9</guid>
-      <description><![CDATA[Attackers use counterfeit ChatGPT and Gemini portals that run Browser‑in‑the‑Browser attacks to steal credentials and take over corporate advertising accounts. The technique bypasses real‑time MFA, allowing attackers to redirect ad spend. Organizations should verify portal URLs, enforce MFA, and monitor account activity.]]></description>
-      <pubDate>Wed, 07 Oct 2026 01:55:14 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/fake-ai-sites-bitb-ad-account-theft">CyberNews AI</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>
