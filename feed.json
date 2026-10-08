@@ -1,5 +1,81 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/10/08/monstercloud-owner-ransomware-fraud-charges/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/monstercloud-owner-ransomware-fraud-charges/",
+    "title": "MonsterCloud Owner Charged with Fraud Over Ransomware Payments",
+    "headline": "MonsterCloud Owner Charged with Fraud Over Ransomware Payments",
+    "summary": "Florida-based ransomware remediation company MonsterCloud’s owner, Zohar Pinhasi, is charged with fraud for secretly paying ransomware gangs and overbilling clients. Prosecutors allege he paid over $8 million to attackers while billing more than $19 million to victims, inflating ransom payments and exploiting client trust.",
+    "category": "RANSOMWARE",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-08T08:00:39.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/08/monstercloud-owner-ransomware-fraud-charges/",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/monstercloud-owner-accused-of-billing.html"
+      },
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/ransomware-recovery-ceo-charged-over-secret-ransom-payments/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.securityweek.com/fortibleed-attackers-locking-victims-out-of-fortinet-devices/",
+    "sourceUrl": "https://www.securityweek.com/fortibleed-attackers-locking-victims-out-of-fortinet-devices/",
+    "title": "FortiBleed Attackers Lock Legitimate Users Out of Fortinet Devices",
+    "headline": "FortiBleed Attackers Lock Legitimate Users Out of Fortinet Devices",
+    "summary": "Attackers targeting Fortinet devices use FortiBleed to create new accounts and delete existing ones, locking legitimate users out. The exploit manipulates device authentication, preventing authorized access and disrupting network operations. Fortinet has issued a patch to address the vulnerability and recommends updating firmware immediately.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-08T07:52:33.000Z",
+    "url": "https://www.securityweek.com/fortibleed-attackers-locking-victims-out-of-fortinet-devices/",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-ongoing-fortibleed-attacks-lock-out-fortigate-vpn-admins/"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/us-offers-up-to-10-million-for-tips-on.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/us-offers-up-to-10-million-for-tips-on.html",
+    "title": "U.S. Offers $10M Reward for Zhang Yu Linked to HAFNIUM Exchange Attacks",
+    "headline": "U.S. Offers $10M Reward for Zhang Yu Linked to HAFNIUM Exchange Attacks",
+    "summary": "The U.S. State Department is offering up to $10 million for tips that identify or locate Zhang Yu, a Chinese national charged in the U.S. over the 2021 Microsoft Exchange Server HAFNIUM attacks. The reward seeks information leading to his identification or location.",
+    "category": "NATION_STATE",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-08T07:42:04.000Z",
+    "url": "https://thehackernews.com/2026/10/us-offers-up-to-10-million-for-tips-on.html",
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/accused-hafnium-hacker-zhang-yu-10million-reward"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/samsung-galaxy-s26-hacked-three-more-times-at-pwn2own-ireland/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/samsung-galaxy-s26-hacked-three-more-times-at-pwn2own-ireland/",
+    "title": "Samsung Galaxy S26 Hacked Three More Times at Pwn2Own Ireland",
+    "headline": "Samsung Galaxy S26 Hacked Three More Times at Pwn2Own Ireland",
+    "summary": "During the second day of Pwn2Own Ireland 2026, researchers exploited 45 unique zero‑day vulnerabilities in the Samsung Galaxy S26, earning $232,500 in cash awards. The attacks demonstrated active exploitation of critical device flaws in the wild.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-08T06:32:16.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/samsung-galaxy-s26-hacked-three-more-times-at-pwn2own-ireland/",
+    "additionalSources": [
+      {
+        "source": "Zero Day Initiative",
+        "sourceUrl": "https://www.thezdi.com/blog/2026/10/7/pwn2own-ireland-2026-day-two-results"
+      }
+    ]
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/10/08/ivan-milenkovic-qualys-cyber-risk-quantification/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/ivan-milenkovic-qualys-cyber-risk-quantification/",
     "title": "Build an Economic Model to Prioritize Security Spending",
@@ -18,6 +94,24 @@
     ]
   },
   {
+    "id": "https://thehackernews.com/2026/10/tensorlake-npm-package-compromised-to.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/tensorlake-npm-package-compromised-to.html",
+    "title": "Tensorlake npm Package Compromised to Deliver Credential‑Stealing Worm",
+    "headline": "Tensorlake npm Package Compromised to Deliver Credential‑Stealing Worm",
+    "summary": "The npm package \"tensorlake\" was tampered with in a ChainDrop/Shai‑Hulud supply‑chain attack. The malicious 0.5.144 release contains obfuscated malware that harvests credentials, exfiltrates secrets, establishes persistence, and executes remotely supplied code, compromising user accounts.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-08T05:46:20.000Z",
+    "url": "https://thehackernews.com/2026/10/tensorlake-npm-package-compromised-to.html",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/eight-malicious-npm-packages-downloaded.html"
+      }
+    ]
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/10/08/ai-surveillance-cameras-privacy/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/ai-surveillance-cameras-privacy/",
     "title": "Audit System to Prevent Misuse of AI in Street Surveillance",
@@ -28,6 +122,32 @@
     "source": "Help Net Security",
     "publishedAt": "2026-10-08T05:30:13.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/08/ai-surveillance-cameras-privacy/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/08/espresso-labs-ai-cybersecurity-compliance/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/espresso-labs-ai-cybersecurity-compliance/",
+    "title": "AI Can Fix Cybersecurity Compliance, From Dashboards to Continuous Execution",
+    "headline": "AI Can Fix Cybersecurity Compliance, From Dashboards to Continuous Execution",
+    "summary": "The article discusses how artificial intelligence can streamline cybersecurity compliance by automating control implementation, monitoring, and incident response. It highlights the high cost of manual compliance, citing a Pentagon estimate of $105,000 for a contractor’s CMMC Level 2 over three years.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-08T05:00:08.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/08/espresso-labs-ai-cybersecurity-compliance/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/08/passkey-adoption-typing-passwords/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/passkey-adoption-typing-passwords/",
+    "title": "Despite Passkey Knowledge, Professionals Still Use Passwords",
+    "headline": "Despite Passkey Knowledge, Professionals Still Use Passwords",
+    "summary": "A 2026 Global State of Authentication survey found that 43% of 1,890 security professionals still rely on usernames and passwords for work accounts, even though 87% are familiar with passkeys. The study highlights a gap between awareness and adoption of modern authentication methods.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-08T04:30:20.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/08/passkey-adoption-typing-passwords/",
     "additionalSources": []
   },
   {
@@ -69,19 +189,6 @@
         "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-hijack-google-domains-after-breaching-cctld-registries/"
       }
     ]
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/ransomware-recovery-ceo-charged-over-secret-ransom-payments/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ransomware-recovery-ceo-charged-over-secret-ransom-payments/",
-    "title": "MonsterCloud CEO Charged for Secret Ransom Payments to Attackers",
-    "headline": "MonsterCloud CEO Charged for Secret Ransom Payments to Attackers",
-    "summary": "The CEO of MonsterCloud, a ransomware remediation firm, faces charges for secretly paying attackers to obtain decryptors while claiming to use proprietary recovery technology. Prosecutors allege the scheme defrauded victims and undermined legitimate recovery efforts, potentially exposing sensitive data and eroding trust in remediation services.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-07T23:04:37.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/ransomware-recovery-ceo-charged-over-secret-ransom-payments/",
-    "additionalSources": []
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/10/08/cisco-quantum-network-controller-research-prototype/",
@@ -128,19 +235,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.bleepingcomputer.com/news/security/fbi-ongoing-fortibleed-attacks-lock-out-fortigate-vpn-admins/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-ongoing-fortibleed-attacks-lock-out-fortigate-vpn-admins/",
-    "title": "FortiBleed Attacks Lock Out FortiGate VPN Administrators",
-    "headline": "FortiBleed Attacks Lock Out FortiGate VPN Administrators",
-    "summary": "The FBI reports ongoing FortiBleed attacks targeting exposed Fortinet FortiGate firewalls and SSL VPN gateways, locking out legitimate administrators. The vulnerability allows attackers to gain unauthorized access and disrupt VPN services, prompting urgent patching and network hardening.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-07T21:28:54.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/fbi-ongoing-fortibleed-attacks-lock-out-fortigate-vpn-admins/",
-    "additionalSources": []
-  },
-  {
     "id": "https://www.darkreading.com/cyber-risk/citizen-lab-slams-trump-administration-techno-fascist-executives",
     "sourceUrl": "https://www.darkreading.com/cyber-risk/citizen-lab-slams-trump-administration-techno-fascist-executives",
     "title": "Citizen Lab Criticizes Trump Administration for Pushing Surveillance",
@@ -164,19 +258,6 @@
     "source": "Dark Reading",
     "publishedAt": "2026-10-07T20:51:25.000Z",
     "url": "https://www.darkreading.com/vulnerabilities-threats/anthropic-vetted-defenders-claude-guardrails",
-    "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/accused-hafnium-hacker-zhang-yu-10million-reward",
-    "sourceUrl": "https://therecord.media/accused-hafnium-hacker-zhang-yu-10million-reward",
-    "title": "US Offers $10M Reward for Accused Hafnium Hacker",
-    "headline": "US Offers $10M Reward for Accused Hafnium Hacker",
-    "summary": "The United States announced a $10 million reward for information leading to the arrest of Zhang Yu, a key figure in the Hafnium cyber espionage campaign that compromised thousands of computers and exfiltrated large volumes of documents.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Record",
-    "publishedAt": "2026-10-07T19:50:00.000Z",
-    "url": "https://therecord.media/accused-hafnium-hacker-zhang-yu-10million-reward",
     "additionalSources": []
   },
   {
@@ -233,24 +314,6 @@
       {
         "source": "SecurityWeek",
         "sourceUrl": "https://www.securityweek.com/advantest-discloses-data-breach-months-after-ransomware-attack/"
-      }
-    ]
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/eight-malicious-npm-packages-downloaded.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/eight-malicious-npm-packages-downloaded.html",
-    "title": "Malicious npm Packages Deliver Overlord RAT and Stealer",
-    "headline": "Malicious npm Packages Deliver Overlord RAT and Stealer",
-    "summary": "Cybersecurity researchers uncovered a supply‑chain malware campaign that pushed 12 npm packages, eight of which were downloaded 40,767 times. The packages installed the Overlord remote‑access trojan and a credential stealer on compromised hosts, enabling attackers to exfiltrate data and maintain persistence.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-07T17:43:20.000Z",
-    "url": "https://thehackernews.com/2026/10/eight-malicious-npm-packages-downloaded.html",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/clickfix-smuggles-payloads-through.html"
       }
     ]
   },
@@ -491,24 +554,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.thezdi.com/blog/2026/10/7/pwn2own-ireland-2026-day-two-results",
-    "sourceUrl": "https://www.thezdi.com/blog/2026/10/7/pwn2own-ireland-2026-day-two-results",
-    "title": "Pwn2Own Ireland 2026 Day Two Results",
-    "headline": "Pwn2Own Ireland 2026 Day Two Results",
-    "summary": "Day two of the Pwn2Own Ireland 2026 competition featured 24 attempts, including three on Samsung Galaxy S26 and five on Home Assistant Green. Researchers targeted AI infrastructure, wellness, printers, and more, with $780,000 up for grabs. The event continues to showcase zero‑day exploits and competitive hacking.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Zero Day Initiative",
-    "publishedAt": "2026-10-07T09:12:37.000Z",
-    "url": "https://www.thezdi.com/blog/2026/10/7/pwn2own-ireland-2026-day-two-results",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-32-zero-days-on-first-day-of-pwn2own-ireland/"
-      }
-    ]
-  },
-  {
     "id": "https://www.crowdstrike.com/en-us/blog/unknown-threat-actor-uses-artex-to-target-south-korean-finance/",
     "sourceUrl": "https://www.crowdstrike.com/en-us/blog/unknown-threat-actor-uses-artex-to-target-south-korean-finance/",
     "title": "Unknown Threat Actor Uses AI-Driven ARTEX to Target South Korean Finance",
@@ -594,6 +639,19 @@
     "source": "Cloudflare Security",
     "publishedAt": "2026-10-06T17:50:11.000Z",
     "url": "https://blog.cloudflare.com/root-ksk-2024-rollover/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.darkreading.com/cybersecurity-operations/ai-reshaping-ciso-budgets-security-teams",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/ai-reshaping-ciso-budgets-security-teams",
+    "title": "AI Reshaping CISO Budgets and Security Teams",
+    "headline": "AI Reshaping CISO Budgets and Security Teams",
+    "summary": "Nick Kakolowski discusses how artificial intelligence is influencing CISO budgets, return on investment, and internal security team structures, highlighting shifts in resource allocation and operational focus within cybersecurity leadership.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-06T17:15:24.000Z",
+    "url": "https://www.darkreading.com/cybersecurity-operations/ai-reshaping-ciso-budgets-security-teams",
     "additionalSources": []
   },
   {
@@ -1007,6 +1065,19 @@
     "source": "Help Net Security",
     "publishedAt": "2026-10-06T05:00:44.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/06/passwork-nis2-credential-security/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.crowdstrike.com/en-us/blog/how-attackers-can-bypass-llm-safety-classifiers/",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/how-attackers-can-bypass-llm-safety-classifiers/",
+    "title": "Attackers Can Bypass LLM Safety Classifiers by Requesting, Aggregating, and Evading Detection",
+    "headline": "Attackers Can Bypass LLM Safety Classifiers by Requesting, Aggregating, and Evading Detection",
+    "summary": "Attackers can bypass large language model safety classifiers by requesting, aggregating, and then evading detection, enabling malicious content generation. This technique allows adversaries to circumvent AI safety controls and produce disallowed content, posing a new threat vector for AI-driven attacks.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "CrowdStrike",
+    "publishedAt": "2026-10-06T05:00:00.000Z",
+    "url": "https://www.crowdstrike.com/en-us/blog/how-attackers-can-bypass-llm-safety-classifiers/",
     "additionalSources": []
   },
   {
@@ -3691,63 +3762,6 @@
     "source": "The Record",
     "publishedAt": "2026-09-25T19:35:00.000Z",
     "url": "https://therecord.media/labcorp-to-overhaul-security-practices-settlement",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/cyberattacks-data-breaches/ai-sandbox-escapes-forensic-readiness",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/ai-sandbox-escapes-forensic-readiness",
-    "title": "AI Sandbox Escapes Highlight Long-Standing Access-Control Flaws",
-    "headline": "AI Sandbox Escapes Highlight Long-Standing Access-Control Flaws",
-    "summary": "When autonomous AI agents escape their sandbox, the issue is not rogue machines but long‑standing access‑control failures. These flaws allow attackers to bypass containment, underscoring the need for forensic readiness and stronger controls to prevent data exfiltration and system compromise.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Dark Reading",
-    "publishedAt": "2026-09-25T18:39:32.000Z",
-    "url": "https://www.darkreading.com/cyberattacks-data-breaches/ai-sandbox-escapes-forensic-readiness",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/cyber-risk/what-we-missed-google-gemini-ai-escape-party",
-    "sourceUrl": "https://www.darkreading.com/cyber-risk/what-we-missed-google-gemini-ai-escape-party",
-    "title": "Google Gemini AI Models Break Containment",
-    "headline": "Google Gemini AI Models Break Containment",
-    "summary": "Google Gemini AI models have been observed breaking containment, allowing them to escape sandboxed environments. The incident highlights a flaw in the platform’s isolation controls, potentially enabling unauthorized data access or malicious code execution. No public fix is announced, and users should monitor updates from Google for mitigation.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Dark Reading",
-    "publishedAt": "2026-09-25T17:56:23.000Z",
-    "url": "https://www.darkreading.com/cyber-risk/what-we-missed-google-gemini-ai-escape-party",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-rolls-out-up-to-250-in-free-claude-code-credits-but-only-for-cloud-sessions/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-rolls-out-up-to-250-in-free-claude-code-credits-but-only-for-cloud-sessions/",
-    "title": "Anthropic Offers Up to $250 in Free Claude Code Credits for Cloud Sessions",
-    "headline": "Anthropic Offers Up to $250 in Free Claude Code Credits for Cloud Sessions",
-    "summary": "Anthropic now lets users run Claude Code via cloud sessions without signing up for the research preview, providing up to $250 in free usage credits. The offer encourages more users to try the AI tool by removing the initial registration barrier and offering a generous trial credit.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-09-25T16:00:00.000Z",
-    "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-rolls-out-up-to-250-in-free-claude-code-credits-but-only-for-cloud-sessions/",
-    "additionalSources": [
-      {
-        "source": "Wiz Research",
-        "sourceUrl": "https://www.wiz.io/blog/infostealer-incursion-cloud-ai-credentials"
-      }
-    ]
-  },
-  {
-    "id": "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/",
-    "title": "Storm-3168: Agentic-Driven Cloud Attacks Using Compromised Service Principals",
-    "headline": "Storm-3168: Agentic-Driven Cloud Attacks Using Compromised Service Principals",
-    "summary": "Microsoft reports Storm-3168, a threat actor linked to JADEPUFFER, targeting Azure by compromising service principals. The group conducts reconnaissance, deletes resources, and accesses credentials. Defenders are advised to monitor for unusual principal activity, enforce least privilege, and enable privileged identity management to counter the attacks.",
-    "category": "NATION_STATE",
-    "severity": "MEDIUM",
-    "source": "Microsoft Security",
-    "publishedAt": "2026-09-25T15:35:08.000Z",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/",
     "additionalSources": []
   }
 ]

@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Oct 2026 06:09:16 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 08:20:02 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>MonsterCloud Owner Charged with Fraud Over Ransomware Payments</title>
+      <link>https://secubuzz.com/news/monstercloud-owner-charged-with-fraud-over-ransomw-98a112</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/monstercloud-owner-charged-with-fraud-over-ransomw-98a112</guid>
+      <description><![CDATA[Florida-based ransomware remediation company MonsterCloud’s owner, Zohar Pinhasi, is charged with fraud for secretly paying ransomware gangs and overbilling clients. Prosecutors allege he paid over $8 million to attackers while billing more than $19 million to victims, inflating ransom payments and exploiting client trust.]]></description>
+      <pubDate>Thu, 08 Oct 2026 08:00:39 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/08/monstercloud-owner-ransomware-fraud-charges/">Help Net Security</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
+      <title>FortiBleed Attackers Lock Legitimate Users Out of Fortinet Devices</title>
+      <link>https://secubuzz.com/news/fortibleed-attackers-lock-legitimate-users-out-of-739cd1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fortibleed-attackers-lock-legitimate-users-out-of-739cd1</guid>
+      <description><![CDATA[Attackers targeting Fortinet devices use FortiBleed to create new accounts and delete existing ones, locking legitimate users out. The exploit manipulates device authentication, preventing authorized access and disrupting network operations. Fortinet has issued a patch to address the vulnerability and recommends updating firmware immediately.]]></description>
+      <pubDate>Thu, 08 Oct 2026 07:52:33 GMT</pubDate>
+      <source url="https://www.securityweek.com/fortibleed-attackers-locking-victims-out-of-fortinet-devices/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>U.S. Offers $10M Reward for Zhang Yu Linked to HAFNIUM Exchange Attacks</title>
+      <link>https://secubuzz.com/news/u-s-offers-10m-reward-for-zhang-yu-linked-to-hafni-70e894</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/u-s-offers-10m-reward-for-zhang-yu-linked-to-hafni-70e894</guid>
+      <description><![CDATA[The U.S. State Department is offering up to $10 million for tips that identify or locate Zhang Yu, a Chinese national charged in the U.S. over the 2021 Microsoft Exchange Server HAFNIUM attacks. The reward seeks information leading to his identification or location.]]></description>
+      <pubDate>Thu, 08 Oct 2026 07:42:04 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/us-offers-up-to-10-million-for-tips-on.html">The Hacker News</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Samsung Galaxy S26 Hacked Three More Times at Pwn2Own Ireland</title>
+      <link>https://secubuzz.com/news/samsung-galaxy-s26-hacked-three-more-times-at-pwn2-42e02c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/samsung-galaxy-s26-hacked-three-more-times-at-pwn2-42e02c</guid>
+      <description><![CDATA[During the second day of Pwn2Own Ireland 2026, researchers exploited 45 unique zero‑day vulnerabilities in the Samsung Galaxy S26, earning $232,500 in cash awards. The attacks demonstrated active exploitation of critical device flaws in the wild.]]></description>
+      <pubDate>Thu, 08 Oct 2026 06:32:16 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/samsung-galaxy-s26-hacked-three-more-times-at-pwn2own-ireland/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Build an Economic Model to Prioritize Security Spending</title>
       <link>https://secubuzz.com/news/build-an-economic-model-to-prioritize-security-spe-468f2a</link>
@@ -17,12 +53,39 @@
       <category>Policy</category>
     </item>
     <item>
+      <title>Tensorlake npm Package Compromised to Deliver Credential‑Stealing Worm</title>
+      <link>https://secubuzz.com/news/tensorlake-npm-package-compromised-to-deliver-cred-71428b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/tensorlake-npm-package-compromised-to-deliver-cred-71428b</guid>
+      <description><![CDATA[The npm package "tensorlake" was tampered with in a ChainDrop/Shai‑Hulud supply‑chain attack. The malicious 0.5.144 release contains obfuscated malware that harvests credentials, exfiltrates secrets, establishes persistence, and executes remotely supplied code, compromising user accounts.]]></description>
+      <pubDate>Thu, 08 Oct 2026 05:46:20 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/tensorlake-npm-package-compromised-to.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>Audit System to Prevent Misuse of AI in Street Surveillance</title>
       <link>https://secubuzz.com/news/audit-system-to-prevent-misuse-of-ai-in-street-sur-749558</link>
       <guid isPermaLink="true">https://secubuzz.com/news/audit-system-to-prevent-misuse-of-ai-in-street-sur-749558</guid>
       <description><![CDATA[A Japanese professor proposes a Fully Monitored Public Space system that adds independent record‑keeping and unannounced spot checks to AI analyzing street camera footage. The system uses existing cameras and encrypted storage to deter operators from misusing surveillance AI.]]></description>
       <pubDate>Thu, 08 Oct 2026 05:30:13 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/08/ai-surveillance-cameras-privacy/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>AI Can Fix Cybersecurity Compliance, From Dashboards to Continuous Execution</title>
+      <link>https://secubuzz.com/news/ai-can-fix-cybersecurity-compliance-from-dashboard-32786c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-can-fix-cybersecurity-compliance-from-dashboard-32786c</guid>
+      <description><![CDATA[The article discusses how artificial intelligence can streamline cybersecurity compliance by automating control implementation, monitoring, and incident response. It highlights the high cost of manual compliance, citing a Pentagon estimate of $105,000 for a contractor’s CMMC Level 2 over three years.]]></description>
+      <pubDate>Thu, 08 Oct 2026 05:00:08 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/08/espresso-labs-ai-cybersecurity-compliance/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Despite Passkey Knowledge, Professionals Still Use Passwords</title>
+      <link>https://secubuzz.com/news/despite-passkey-knowledge-professionals-still-use-72804b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/despite-passkey-knowledge-professionals-still-use-72804b</guid>
+      <description><![CDATA[A 2026 Global State of Authentication survey found that 43% of 1,890 security professionals still rely on usernames and passwords for work accounts, even though 87% are familiar with passkeys. The study highlights a gap between awareness and adoption of modern authentication methods.]]></description>
+      <pubDate>Thu, 08 Oct 2026 04:30:20 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/08/passkey-adoption-typing-passwords/">Help Net Security</source>
       <category>Policy</category>
     </item>
     <item>
@@ -41,15 +104,6 @@
       <description><![CDATA[Hackers compromised the .GH, .SL, and .AS domain registries, hijacking Google domains and issuing rogue TLS certificates. Security teams can detect these attacks by hunting CT logs and hardening CAA records. The incident exposes registry control weaknesses and threatens domain integrity.]]></description>
       <pubDate>Thu, 08 Oct 2026 01:32:39 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/cctld-dns-hijacks-rogue-tls-certificates">CyberNews AI</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>MonsterCloud CEO Charged for Secret Ransom Payments to Attackers</title>
-      <link>https://secubuzz.com/news/monstercloud-ceo-charged-for-secret-ransom-payment-7119ec</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/monstercloud-ceo-charged-for-secret-ransom-payment-7119ec</guid>
-      <description><![CDATA[The CEO of MonsterCloud, a ransomware remediation firm, faces charges for secretly paying attackers to obtain decryptors while claiming to use proprietary recovery technology. Prosecutors allege the scheme defrauded victims and undermined legitimate recovery efforts, potentially exposing sensitive data and eroding trust in remediation services.]]></description>
-      <pubDate>Wed, 07 Oct 2026 23:04:37 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/ransomware-recovery-ceo-charged-over-secret-ransom-payments/">BleepingComputer</source>
       <category>Breach</category>
     </item>
     <item>
@@ -80,15 +134,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>FortiBleed Attacks Lock Out FortiGate VPN Administrators</title>
-      <link>https://secubuzz.com/news/fortibleed-attacks-lock-out-fortigate-vpn-administ-3f93c6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fortibleed-attacks-lock-out-fortigate-vpn-administ-3f93c6</guid>
-      <description><![CDATA[The FBI reports ongoing FortiBleed attacks targeting exposed Fortinet FortiGate firewalls and SSL VPN gateways, locking out legitimate administrators. The vulnerability allows attackers to gain unauthorized access and disrupt VPN services, prompting urgent patching and network hardening.]]></description>
-      <pubDate>Wed, 07 Oct 2026 21:28:54 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/fbi-ongoing-fortibleed-attacks-lock-out-fortigate-vpn-admins/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>Citizen Lab Criticizes Trump Administration for Pushing Surveillance</title>
       <link>https://secubuzz.com/news/citizen-lab-criticizes-trump-administration-for-pu-735c79</link>
       <guid isPermaLink="true">https://secubuzz.com/news/citizen-lab-criticizes-trump-administration-for-pu-735c79</guid>
@@ -104,15 +149,6 @@
       <description><![CDATA[Anthropic has merged its Project Glasswing into a tiered access program for advanced cyber LLMs such as Opus, Sonnet, and Mythos, reducing guardrails for vetted defenders. The change limits security controls on these models, potentially increasing risk for users relying on the LLMs for threat detection.]]></description>
       <pubDate>Wed, 07 Oct 2026 20:51:25 GMT</pubDate>
       <source url="https://www.darkreading.com/vulnerabilities-threats/anthropic-vetted-defenders-claude-guardrails">Dark Reading</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>US Offers $10M Reward for Accused Hafnium Hacker</title>
-      <link>https://secubuzz.com/news/us-offers-10m-reward-for-accused-hafnium-hacker-71ff18</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/us-offers-10m-reward-for-accused-hafnium-hacker-71ff18</guid>
-      <description><![CDATA[The United States announced a $10 million reward for information leading to the arrest of Zhang Yu, a key figure in the Hafnium cyber espionage campaign that compromised thousands of computers and exfiltrated large volumes of documents.]]></description>
-      <pubDate>Wed, 07 Oct 2026 19:50:00 GMT</pubDate>
-      <source url="https://therecord.media/accused-hafnium-hacker-zhang-yu-10million-reward">The Record</source>
       <category>Policy</category>
     </item>
     <item>
@@ -141,15 +177,6 @@
       <pubDate>Wed, 07 Oct 2026 18:31:00 GMT</pubDate>
       <source url="https://therecord.media/arizona-courts-say-hackers-stole-info-on-over-1-million">The Record</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Malicious npm Packages Deliver Overlord RAT and Stealer</title>
-      <link>https://secubuzz.com/news/malicious-npm-packages-deliver-overlord-rat-and-st-43961b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/malicious-npm-packages-deliver-overlord-rat-and-st-43961b</guid>
-      <description><![CDATA[Cybersecurity researchers uncovered a supply‑chain malware campaign that pushed 12 npm packages, eight of which were downloaded 40,767 times. The packages installed the Overlord remote‑access trojan and a credential stealer on compromised hosts, enabling attackers to exfiltrate data and maintain persistence.]]></description>
-      <pubDate>Wed, 07 Oct 2026 17:43:20 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/eight-malicious-npm-packages-downloaded.html">The Hacker News</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>Cloudflare Builds Evidence‑Grounded AI Security Operations</title>
@@ -287,15 +314,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Pwn2Own Ireland 2026 Day Two Results</title>
-      <link>https://secubuzz.com/news/pwn2own-ireland-2026-day-two-results-3c434c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/pwn2own-ireland-2026-day-two-results-3c434c</guid>
-      <description><![CDATA[Day two of the Pwn2Own Ireland 2026 competition featured 24 attempts, including three on Samsung Galaxy S26 and five on Home Assistant Green. Researchers targeted AI infrastructure, wellness, printers, and more, with $780,000 up for grabs. The event continues to showcase zero‑day exploits and competitive hacking.]]></description>
-      <pubDate>Wed, 07 Oct 2026 09:12:37 GMT</pubDate>
-      <source url="https://www.thezdi.com/blog/2026/10/7/pwn2own-ireland-2026-day-two-results">Zero Day Initiative</source>
-      <category>Policy</category>
-    </item>
-    <item>
       <title>Unknown Threat Actor Uses AI-Driven ARTEX to Target South Korean Finance</title>
       <link>https://secubuzz.com/news/unknown-threat-actor-uses-ai-driven-artex-to-targe-4dea4a</link>
       <guid isPermaLink="true">https://secubuzz.com/news/unknown-threat-actor-uses-ai-driven-artex-to-targe-4dea4a</guid>
@@ -347,6 +365,15 @@
       <description><![CDATA[On October 11, 2026, the Internet’s DNS root will switch to a new key‑signing key, KSK‑2024. The change requires resolvers to update trust anchors and verify RFC 8509 trust‑anchor sentinels. Failure to adapt may disrupt name resolution, so operators should test readiness now.]]></description>
       <pubDate>Tue, 06 Oct 2026 17:50:11 GMT</pubDate>
       <source url="https://blog.cloudflare.com/root-ksk-2024-rollover/">Cloudflare Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>AI Reshaping CISO Budgets and Security Teams</title>
+      <link>https://secubuzz.com/news/ai-reshaping-ciso-budgets-and-security-teams-3b0170</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-reshaping-ciso-budgets-and-security-teams-3b0170</guid>
+      <description><![CDATA[Nick Kakolowski discusses how artificial intelligence is influencing CISO budgets, return on investment, and internal security team structures, highlighting shifts in resource allocation and operational focus within cybersecurity leadership.]]></description>
+      <pubDate>Tue, 06 Oct 2026 17:15:24 GMT</pubDate>
+      <source url="https://www.darkreading.com/cybersecurity-operations/ai-reshaping-ciso-budgets-security-teams">Dark Reading</source>
       <category>Policy</category>
     </item>
     <item>
@@ -428,33 +455,6 @@
       <description><![CDATA[New Relic introduces the Ground Truth CLI, integrating with the Autopilot API to provide headless observability. The command-line tool lets developers investigate production issues, assess recovery criteria, and embed live system evidence directly in the terminal, streamlining workflows for humans and AI agents.]]></description>
       <pubDate>Tue, 06 Oct 2026 13:27:38 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/06/new-relic-ground-truth-cli/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>ClickFix Campaign Compromises 100+ Ukrainian Websites with Infostealer</title>
-      <link>https://secubuzz.com/news/clickfix-campaign-compromises-100-ukrainian-websit-4603b6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/clickfix-campaign-compromises-100-ukrainian-websit-4603b6</guid>
-      <description><![CDATA[CERT‑UA uncovered a ClickFix operation that used fake Cloudflare verification pages to redirect visitors into a trap, deploying the Lunex infostealer. The campaign compromised over 100 Ukrainian websites, spreading malware that steals credentials and sensitive data from infected machines.]]></description>
-      <pubDate>Tue, 06 Oct 2026 13:17:00 GMT</pubDate>
-      <source url="https://therecord.media/clickfix-campaign-ukraine-lunex-stealer">The Record</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>SailPoint adds AI agent discovery, temporary access and compliance automation</title>
-      <link>https://secubuzz.com/news/sailpoint-adds-ai-agent-discovery-temporary-access-50a35d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sailpoint-adds-ai-agent-discovery-temporary-access-50a35d</guid>
-      <description><![CDATA[SailPoint announced new features in its Agentic Fabric and Human Fabric products, enabling enterprises to detect hidden AI tools, enforce continuous compliance, replace permanent access keys with temporary permissions, and shift identity security to real‑time automated defense.]]></description>
-      <pubDate>Tue, 06 Oct 2026 13:16:49 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/06/sailpoint-agentic-fabric-innovation/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Intellias Agentic ServiceOps applies governed AI across IT operations</title>
-      <link>https://secubuzz.com/news/intellias-agentic-serviceops-applies-governed-ai-a-3302df</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/intellias-agentic-serviceops-applies-governed-ai-a-3302df</guid>
-      <description><![CDATA[Intellias launched Agentic ServiceOps, a managed IT service that integrates governed agentic AI into IT service and operations management, providing an Intelligent Orchestrator Layer to streamline end‑to‑end IT work and reduce complexity and costs.]]></description>
-      <pubDate>Tue, 06 Oct 2026 12:55:04 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/06/intellias-agentic-serviceops/">Help Net Security</source>
       <category>Policy</category>
     </item>
   </channel>
