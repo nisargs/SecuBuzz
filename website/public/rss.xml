@@ -5,8 +5,89 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Oct 2026 09:26:07 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 12:19:48 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Microsoft Teams Adds Support for Third‑Party Deepfake Detection Tools</title>
+      <link>https://secubuzz.com/news/microsoft-teams-adds-support-for-third-party-deepf-2fbbbc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-teams-adds-support-for-third-party-deepf-2fbbbc</guid>
+      <description><![CDATA[Microsoft announced that Teams will soon support third‑party deep‑fake detection solutions and impersonation protection during meetings. The update will allow users to integrate external tools to identify synthetic media and prevent identity spoofing. No security flaw is disclosed, just a new protective feature for Teams users.]]></description>
+      <pubDate>Thu, 08 Oct 2026 12:08:16 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/microsoft-teams-to-add-third-party-deepfake-detection-impersonation-protection/">BleepingComputer</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Ukrainian Drone Strike Disrupts Major Yandex Data Center</title>
+      <link>https://secubuzz.com/news/ukrainian-drone-strike-disrupts-major-yandex-data-793976</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ukrainian-drone-strike-disrupts-major-yandex-data-793976</guid>
+      <description><![CDATA[A Ukrainian drone strike damaged a major Yandex data center in Russia, disrupting the company’s network. Connectivity dropped to about 70 percent of normal levels, affecting services and operations. The attack caused physical damage but no data exfiltration was reported. Yandex is assessing the impact and restoring services.]]></description>
+      <pubDate>Thu, 08 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://therecord.media/yandex-russia-drone-ukraine">The Record</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>ASOS Confirms Data Breach Linked to Social Engineering Attack</title>
+      <link>https://secubuzz.com/news/asos-confirms-data-breach-linked-to-social-enginee-42cb8e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/asos-confirms-data-breach-linked-to-social-enginee-42cb8e</guid>
+      <description><![CDATA[ASOS has confirmed a data breach tied to a social engineering attack that stole customer credentials. Hackers accessed personal data, prompting the retailer to notify affected customers and provide updates on remediation steps. The incident highlights the risk of phishing-based credential theft.]]></description>
+      <pubDate>Thu, 08 Oct 2026 11:42:46 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/asos-links-data-breach-to-social-engineering-attack-credential-theft/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Pwn2Own Ireland 2026 Day Three Wrap‑up</title>
+      <link>https://secubuzz.com/news/pwn2own-ireland-2026-day-three-wrap-up-18afda</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/pwn2own-ireland-2026-day-three-wrap-up-18afda</guid>
+      <description><![CDATA[Day Three of Pwn2Own Ireland 2026 saw 17 attempts, with the Google Pixel 10 drawing three separate exploits for a $1.33 million prize. Samsung Galaxy S26, Philips Hue Bridge Pro, Home Assistant Green, Oracle Autonomous AI Database, Chroma, and various printers were also targeted. The event continues to highlight zero‑day exploitation in consumer and enterprise devices.]]></description>
+      <pubDate>Thu, 08 Oct 2026 10:41:14 GMT</pubDate>
+      <source url="https://www.thezdi.com/blog/2026/10/8/pwn2own-ireland-2026-day-three-results-amp-master-of-pwn">Zero Day Initiative</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Wazza Phishkit Targets Banking, Government, and Manufacturing</title>
+      <link>https://secubuzz.com/news/wazza-phishkit-targets-banking-government-and-manu-5c44bc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/wazza-phishkit-targets-banking-government-and-manu-5c44bc</guid>
+      <description><![CDATA[Wazza is a new phishing kit that delivers sophisticated phishing pages with filtering, session management, and traffic controls. It targets banking, manufacturing, and government organizations across the US, EU, and Australia, increasing the risk of credential theft and credential stuffing attacks.]]></description>
+      <pubDate>Thu, 08 Oct 2026 10:30:00 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/wazza-phishkit-targets-banking.html">The Hacker News</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Owner of Empire Cybercrime Market Sentenced to 40 Years</title>
+      <link>https://secubuzz.com/news/owner-of-empire-cybercrime-market-sentenced-to-40-22cf8d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/owner-of-empire-cybercrime-market-sentenced-to-40-22cf8d</guid>
+      <description><![CDATA[The co‑creator of the Empire Market, a major dark‑web marketplace that facilitated $430 million in illegal transactions between 2018 and 2020, has been sentenced to 40 years in prison. The ruling underscores law enforcement’s focus on dismantling large‑scale cybercrime operations.]]></description>
+      <pubDate>Thu, 08 Oct 2026 10:29:19 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/owner-of-empire-cybercrime-market-gets-40-years-in-prison/">BleepingComputer</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Cryptomining Botnet Uses GitHub Poem for C2, Infects 3,400 Servers</title>
+      <link>https://secubuzz.com/news/cryptomining-botnet-uses-github-poem-for-c2-infect-e0cf3e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cryptomining-botnet-uses-github-poem-for-c2-infect-e0cf3e</guid>
+      <description><![CDATA[A cryptomining botnet, dubbed PoeLLM, retrieves its command and control addresses from a poem posted on GitHub. The malware targets exposed AI services and open-source tools, mines cryptocurrency, and searches for new victims. The campaign, called Canto Incognito, is linked to an Italian-speaking threat actor.]]></description>
+      <pubDate>Thu, 08 Oct 2026 10:24:57 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/08/poellm-malware-github-poem-ai-servers/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>TP‑Link Router Flaws Prompt State Lawsuits and Regulatory Scrutiny</title>
+      <link>https://secubuzz.com/news/tp-link-router-flaws-prompt-state-lawsuits-and-reg-16ff74</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/tp-link-router-flaws-prompt-state-lawsuits-and-reg-16ff74</guid>
+      <description><![CDATA[US states have filed lawsuits against TP‑Link, citing technical details of router vulnerabilities that could allow attackers to compromise ISP devices. The complaints highlight security weaknesses in TP‑Link’s ISP routers, prompting increased scrutiny and potential regulatory action.]]></description>
+      <pubDate>Thu, 08 Oct 2026 10:24:04 GMT</pubDate>
+      <source url="https://www.securityweek.com/tp-link-faces-state-lawsuits-and-new-scrutiny-over-isp-router-flaws/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>16 Malicious Firefox Extensions Steal Crypto Wallet Recovery Phrases</title>
+      <link>https://secubuzz.com/news/16-malicious-firefox-extensions-steal-crypto-walle-70b9dd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/16-malicious-firefox-extensions-steal-crypto-walle-70b9dd</guid>
+      <description><![CDATA[Researchers found 16 malicious Firefox extensions that masquerade as wallet portals and desktop utilities. The extensions intercept recovery phrases and private keys during wallet import flows and attempt to exfiltrate those secrets. Users should remove or block these extensions and verify extensions from trusted sources.]]></description>
+      <pubDate>Thu, 08 Oct 2026 09:46:32 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/16-malicious-firefox-extensions-pose-as.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>GitHub Introduces AI Detector to Block Passwords Before Code Push</title>
       <link>https://secubuzz.com/news/github-introduces-ai-detector-to-block-passwords-b-5fe20c</link>
@@ -24,15 +105,6 @@
       <pubDate>Thu, 08 Oct 2026 09:00:54 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/08/matchboil-malware-uac-0099/">Help Net Security</source>
       <category>Malware</category>
-    </item>
-    <item>
-      <title>Oracle Health Data Breach Reaches Nearly 20 Million Records</title>
-      <link>https://secubuzz.com/news/oracle-health-data-breach-reaches-nearly-20-millio-3328a2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/oracle-health-data-breach-reaches-nearly-20-millio-3328a2</guid>
-      <description><![CDATA[Oracle Health has reported that the number of affected records in its data breach has risen to almost 20 million, surpassing earlier estimates. The breach exposes patient data, potentially including personal identifiers and health information. No further details on mitigation or affected systems are provided.]]></description>
-      <pubDate>Thu, 08 Oct 2026 08:23:31 GMT</pubDate>
-      <source url="https://www.securityweek.com/oracle-health-data-breach-tally-climbs-to-nearly-20-million/">SecurityWeek</source>
-      <category>Breach</category>
     </item>
     <item>
       <title>MonsterCloud Owner Charged with Fraud Over Ransomware Payments</title>
@@ -60,15 +132,6 @@
       <pubDate>Thu, 08 Oct 2026 07:42:04 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/us-offers-up-to-10-million-for-tips-on.html">The Hacker News</source>
       <category>Malware</category>
-    </item>
-    <item>
-      <title>Samsung Galaxy S26 Hacked Three More Times at Pwn2Own Ireland</title>
-      <link>https://secubuzz.com/news/samsung-galaxy-s26-hacked-three-more-times-at-pwn2-42e02c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/samsung-galaxy-s26-hacked-three-more-times-at-pwn2-42e02c</guid>
-      <description><![CDATA[During the second day of Pwn2Own Ireland 2026, researchers exploited 45 unique zero‑day vulnerabilities in the Samsung Galaxy S26, earning $232,500 in cash awards. The attacks demonstrated active exploitation of critical device flaws in the wild.]]></description>
-      <pubDate>Thu, 08 Oct 2026 06:32:16 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/samsung-galaxy-s26-hacked-three-more-times-at-pwn2own-ireland/">BleepingComputer</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>Build an Economic Model to Prioritize Security Spending</title>
@@ -393,69 +456,6 @@
       <pubDate>Wed, 07 Oct 2026 01:55:14 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/fake-ai-sites-bitb-ad-account-theft">CyberNews AI</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>ClickFix Evolves to Conceal Payloads Using DNS TXT and Browser Cache</title>
-      <link>https://secubuzz.com/news/clickfix-evolves-to-conceal-payloads-using-dns-txt-490936</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/clickfix-evolves-to-conceal-payloads-using-dns-txt-490936</guid>
-      <description><![CDATA[Threat actors behind ClickFix are now embedding malicious payloads within DNS TXT records and leveraging browser cache pre‑fetching to obscure delivery. This technique complicates early detection, as payloads bypass traditional signature‑based defenses and remain dormant until the victim’s browser retrieves cached content.]]></description>
-      <pubDate>Tue, 06 Oct 2026 20:32:58 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyberattacks-data-breaches/clickfix-attacks-evolve-better-hide-malicious-payloads">Dark Reading</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Healthcare Systems Lag Behind Post-Quantum Cryptography Readiness</title>
-      <link>https://secubuzz.com/news/healthcare-systems-lag-behind-post-quantum-cryptog-111cd9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/healthcare-systems-lag-behind-post-quantum-cryptog-111cd9</guid>
-      <description><![CDATA[A study of 2.5 million devices in 50 healthcare organizations shows the sector is far from ready for post‑quantum cryptography, highlighting a significant gap in security preparedness for future quantum threats.]]></description>
-      <pubDate>Tue, 06 Oct 2026 20:30:27 GMT</pubDate>
-      <source url="https://www.darkreading.com/iot/exposed-healthcare-systems-quantum-ready">Dark Reading</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Linux Backdoors Disguise Traffic as Email Services to Evade Detection in Korea and Taiwan</title>
-      <link>https://secubuzz.com/news/linux-backdoors-disguise-traffic-as-email-services-2ac92c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/linux-backdoors-disguise-traffic-as-email-services-2ac92c</guid>
-      <description><![CDATA[Linux backdoors targeting telecom and network appliances in South Korea and Taiwan disguise their traffic as email services and legitimate processes, using names of real binaries to blend in and avoid detection. The threat actors employ this defense‑evasion technique to maintain persistence on affected systems.]]></description>
-      <pubDate>Tue, 06 Oct 2026 18:24:25 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/linux-backdoors-impersonate-email.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>DNS Root Key Rollover Scheduled for October 11, 2026</title>
-      <link>https://secubuzz.com/news/dns-root-key-rollover-scheduled-for-october-11-202-31870e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/dns-root-key-rollover-scheduled-for-october-11-202-31870e</guid>
-      <description><![CDATA[On October 11, 2026, the Internet’s DNS root will switch to a new key‑signing key, KSK‑2024. The change requires resolvers to update trust anchors and verify RFC 8509 trust‑anchor sentinels. Failure to adapt may disrupt name resolution, so operators should test readiness now.]]></description>
-      <pubDate>Tue, 06 Oct 2026 17:50:11 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/root-ksk-2024-rollover/">Cloudflare Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>AI Reshaping CISO Budgets and Security Teams</title>
-      <link>https://secubuzz.com/news/ai-reshaping-ciso-budgets-and-security-teams-3b0170</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-reshaping-ciso-budgets-and-security-teams-3b0170</guid>
-      <description><![CDATA[Nick Kakolowski discusses how artificial intelligence is influencing CISO budgets, return on investment, and internal security team structures, highlighting shifts in resource allocation and operational focus within cybersecurity leadership.]]></description>
-      <pubDate>Tue, 06 Oct 2026 17:15:24 GMT</pubDate>
-      <source url="https://www.darkreading.com/cybersecurity-operations/ai-reshaping-ciso-budgets-security-teams">Dark Reading</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>‘BigDiskBuster’ Creates Silent Gap in Microsoft Defender Updates</title>
-      <link>https://secubuzz.com/news/bigdiskbuster-creates-silent-gap-in-microsoft-def-2df3e9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/bigdiskbuster-creates-silent-gap-in-microsoft-def-2df3e9</guid>
-      <description><![CDATA[A proof‑of‑concept technique named BigDiskBuster keeps Microsoft Defender running while blocking its update process, creating a silent detection gap. The method requires no exploit and does not compromise the service itself.]]></description>
-      <pubDate>Tue, 06 Oct 2026 16:59:24 GMT</pubDate>
-      <source url="https://www.darkreading.com/application-security/bigdiskbuster-microsoft-defender-running-blocking-updates">Dark Reading</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>CISO Perspectives on Managing Vulnerability Risks in the Age of AI</title>
-      <link>https://secubuzz.com/news/ciso-perspectives-on-managing-vulnerability-risks-60bf71</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ciso-perspectives-on-managing-vulnerability-risks-60bf71</guid>
-      <description><![CDATA[Microsoft Security Blog discusses how CISOs can mitigate cybersecurity risks and increase resilience using AI-powered vulnerability management. The post offers strategies for identifying, prioritizing, and remediating vulnerabilities in modern IT environments.]]></description>
-      <pubDate>Tue, 06 Oct 2026 16:00:00 GMT</pubDate>
-      <source url="https://www.microsoft.com/en-us/security/blog/2026/10/06/ciso-perspectives-on-managing-vulnerability-risks-in-the-age-of-ai/">Microsoft Security</source>
-      <category>Policy</category>
     </item>
   </channel>
 </rss>

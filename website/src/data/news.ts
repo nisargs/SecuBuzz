@@ -11,6 +11,167 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "microsoft-teams-adds-support-for-third-party-deepf-2fbbbc",
+    "title": "Microsoft Teams Adds Support for Third‑Party Deepfake Detection Tools",
+    "summary": "Microsoft announced that Teams will soon support third‑party deep‑fake detection solutions and impersonation protection during meetings. The update will allow users to integrate external tools to identify synthetic media and prevent identity spoofing. No security flaw is disclosed, just a new protective feature for Teams users.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-teams-to-add-third-party-deepfake-detection-impersonation-protection/",
+    "publishedAt": "2026-10-08T12:08:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-teams-adds-support-for-third-party-deepf",
+      "article-2fbbbc",
+      "2fbbbc",
+      "microsoft-teams-adds-support-for-third-party-deepfake-detect"
+    ]
+  },
+  {
+    "slug": "ukrainian-drone-strike-disrupts-major-yandex-data-793976",
+    "title": "Ukrainian Drone Strike Disrupts Major Yandex Data Center",
+    "summary": "A Ukrainian drone strike damaged a major Yandex data center in Russia, disrupting the company’s network. Connectivity dropped to about 70 percent of normal levels, affecting services and operations. The attack caused physical damage but no data exfiltration was reported. Yandex is assessing the impact and restoring services.",
+    "category": "Policy",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/yandex-russia-drone-ukraine",
+    "publishedAt": "2026-10-08T12:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ukrainian-drone-strike-disrupts-major-yandex-data",
+      "article-793976",
+      "793976",
+      "ukrainian-drone-strike-disrupts-major-yandex-data-center"
+    ]
+  },
+  {
+    "slug": "asos-confirms-data-breach-linked-to-social-enginee-42cb8e",
+    "title": "ASOS Confirms Data Breach Linked to Social Engineering Attack",
+    "summary": "ASOS has confirmed a data breach tied to a social engineering attack that stole customer credentials. Hackers accessed personal data, prompting the retailer to notify affected customers and provide updates on remediation steps. The incident highlights the risk of phishing-based credential theft.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/asos-links-data-breach-to-social-engineering-attack-credential-theft/",
+    "publishedAt": "2026-10-08T11:42:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "asos-confirms-data-breach-linked-to-social-enginee",
+      "article-42cb8e",
+      "42cb8e",
+      "asos-confirms-data-breach-linked-to-social-engineering-attac"
+    ]
+  },
+  {
+    "slug": "pwn2own-ireland-2026-day-three-wrap-up-18afda",
+    "title": "Pwn2Own Ireland 2026 Day Three Wrap‑up",
+    "summary": "Day Three of Pwn2Own Ireland 2026 saw 17 attempts, with the Google Pixel 10 drawing three separate exploits for a $1.33 million prize. Samsung Galaxy S26, Philips Hue Bridge Pro, Home Assistant Green, Oracle Autonomous AI Database, Chroma, and various printers were also targeted. The event continues to highlight zero‑day exploitation in consumer and enterprise devices.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Zero Day Initiative",
+    "sourceUrl": "https://www.thezdi.com/blog/2026/10/8/pwn2own-ireland-2026-day-three-results-amp-master-of-pwn",
+    "publishedAt": "2026-10-08T10:41:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "pwn2own-ireland-2026-day-three-wrap-up",
+      "article-18afda",
+      "18afda"
+    ]
+  },
+  {
+    "slug": "wazza-phishkit-targets-banking-government-and-manu-5c44bc",
+    "title": "Wazza Phishkit Targets Banking, Government, and Manufacturing",
+    "summary": "Wazza is a new phishing kit that delivers sophisticated phishing pages with filtering, session management, and traffic controls. It targets banking, manufacturing, and government organizations across the US, EU, and Australia, increasing the risk of credential theft and credential stuffing attacks.",
+    "category": "Policy",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/wazza-phishkit-targets-banking.html",
+    "publishedAt": "2026-10-08T10:30:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "wazza-phishkit-targets-banking-government-and-manu",
+      "article-5c44bc",
+      "5c44bc",
+      "wazza-phishkit-targets-banking-government-and-manufacturing"
+    ]
+  },
+  {
+    "slug": "owner-of-empire-cybercrime-market-sentenced-to-40-22cf8d",
+    "title": "Owner of Empire Cybercrime Market Sentenced to 40 Years",
+    "summary": "The co‑creator of the Empire Market, a major dark‑web marketplace that facilitated $430 million in illegal transactions between 2018 and 2020, has been sentenced to 40 years in prison. The ruling underscores law enforcement’s focus on dismantling large‑scale cybercrime operations.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/owner-of-empire-cybercrime-market-gets-40-years-in-prison/",
+    "publishedAt": "2026-10-08T10:29:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "owner-of-empire-cybercrime-market-sentenced-to-40",
+      "article-22cf8d",
+      "22cf8d",
+      "owner-of-empire-cybercrime-market-sentenced-to-40-years"
+    ]
+  },
+  {
+    "slug": "cryptomining-botnet-uses-github-poem-for-c2-infect-e0cf3e",
+    "title": "Cryptomining Botnet Uses GitHub Poem for C2, Infects 3,400 Servers",
+    "summary": "A cryptomining botnet, dubbed PoeLLM, retrieves its command and control addresses from a poem posted on GitHub. The malware targets exposed AI services and open-source tools, mines cryptocurrency, and searches for new victims. The campaign, called Canto Incognito, is linked to an Italian-speaking threat actor.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/poellm-malware-github-poem-ai-servers/",
+    "publishedAt": "2026-10-08T10:24:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cryptomining-botnet-uses-github-poem-for-c2-infect",
+      "article-e0cf3e",
+      "e0cf3e",
+      "cryptomining-botnet-uses-github-poem-for-c2-infects-3-400-se"
+    ]
+  },
+  {
+    "slug": "tp-link-router-flaws-prompt-state-lawsuits-and-reg-16ff74",
+    "title": "TP‑Link Router Flaws Prompt State Lawsuits and Regulatory Scrutiny",
+    "summary": "US states have filed lawsuits against TP‑Link, citing technical details of router vulnerabilities that could allow attackers to compromise ISP devices. The complaints highlight security weaknesses in TP‑Link’s ISP routers, prompting increased scrutiny and potential regulatory action.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/tp-link-faces-state-lawsuits-and-new-scrutiny-over-isp-router-flaws/",
+    "publishedAt": "2026-10-08T10:24:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "tp-link-router-flaws-prompt-state-lawsuits-and-reg",
+      "article-16ff74",
+      "16ff74",
+      "tp-link-router-flaws-prompt-state-lawsuits-and-regulatory-sc"
+    ]
+  },
+  {
+    "slug": "16-malicious-firefox-extensions-steal-crypto-walle-70b9dd",
+    "title": "16 Malicious Firefox Extensions Steal Crypto Wallet Recovery Phrases",
+    "summary": "Researchers found 16 malicious Firefox extensions that masquerade as wallet portals and desktop utilities. The extensions intercept recovery phrases and private keys during wallet import flows and attempt to exfiltrate those secrets. Users should remove or block these extensions and verify extensions from trusted sources.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/16-malicious-firefox-extensions-pose-as.html",
+    "publishedAt": "2026-10-08T09:46:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "16-malicious-firefox-extensions-steal-crypto-walle",
+      "article-70b9dd",
+      "70b9dd",
+      "16-malicious-firefox-extensions-steal-crypto-wallet-recovery"
+    ]
+  },
+  {
     "slug": "github-introduces-ai-detector-to-block-passwords-b-5fe20c",
     "title": "GitHub Introduces AI Detector to Block Passwords Before Code Push",
     "summary": "GitHub has released an AI‑powered secret detector, built with Microsoft Applied Sciences, that scans code before a push to identify unstructured credentials such as database passwords. The ModernBERT classifier extends existing push protection, blocking pushes that contain secrets and preventing credentials from entering repository history.",
@@ -44,24 +205,6 @@ export const news: NewsBrief[] = [
       "article-20d654",
       "20d654",
       "matchboil-malware-used-by-russia-aligned-group-to-install-sp"
-    ]
-  },
-  {
-    "slug": "oracle-health-data-breach-reaches-nearly-20-millio-3328a2",
-    "title": "Oracle Health Data Breach Reaches Nearly 20 Million Records",
-    "summary": "Oracle Health has reported that the number of affected records in its data breach has risen to almost 20 million, surpassing earlier estimates. The breach exposes patient data, potentially including personal identifiers and health information. No further details on mitigation or affected systems are provided.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/oracle-health-data-breach-tally-climbs-to-nearly-20-million/",
-    "publishedAt": "2026-10-08T08:23:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "oracle-health-data-breach-reaches-nearly-20-millio",
-      "article-3328a2",
-      "3328a2",
-      "oracle-health-data-breach-reaches-nearly-20-million-records"
     ]
   },
   {
@@ -116,24 +259,6 @@ export const news: NewsBrief[] = [
       "article-70e894",
       "70e894",
       "u-s-offers-10m-reward-for-zhang-yu-linked-to-hafnium-exchang"
-    ]
-  },
-  {
-    "slug": "samsung-galaxy-s26-hacked-three-more-times-at-pwn2-42e02c",
-    "title": "Samsung Galaxy S26 Hacked Three More Times at Pwn2Own Ireland",
-    "summary": "During the second day of Pwn2Own Ireland 2026, researchers exploited 45 unique zero‑day vulnerabilities in the Samsung Galaxy S26, earning $232,500 in cash awards. The attacks demonstrated active exploitation of critical device flaws in the wild.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/samsung-galaxy-s26-hacked-three-more-times-at-pwn2own-ireland/",
-    "publishedAt": "2026-10-08T06:32:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "samsung-galaxy-s26-hacked-three-more-times-at-pwn2",
-      "article-42e02c",
-      "42e02c",
-      "samsung-galaxy-s26-hacked-three-more-times-at-pwn2own-irelan"
     ]
   },
   {
@@ -1306,24 +1431,6 @@ export const news: NewsBrief[] = [
       "article-db8f57",
       "db8f57",
       "google-halts-oss-bug-bounty-rewards-amid-surge-of-invalid-au"
-    ]
-  },
-  {
-    "slug": "live-conversation-enhances-social-engineering-dete-56d674",
-    "title": "Live Conversation Enhances Social Engineering Detection",
-    "summary": "A new approach to social engineering detection integrates real‑time conversation analysis, aiming to improve the effectiveness of security awareness training. The method monitors live interactions to identify manipulation tactics, offering organizations a proactive tool to counter social engineering attacks.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/social-engineering-detection-moves-into-the-live-conversation/",
-    "publishedAt": "2026-10-06T08:38:14.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "live-conversation-enhances-social-engineering-dete",
-      "article-56d674",
-      "56d674",
-      "live-conversation-enhances-social-engineering-detection"
     ]
   },
   {
@@ -4394,113 +4501,6 @@ export const news: NewsBrief[] = [
       "article-5bc6d9",
       "5bc6d9",
       "us-and-china-agree-to-ai-safety-communication-channel-amid-t"
-    ]
-  },
-  {
-    "slug": "claude-opus-5-5-shows-reduced-ai-writing-patterns-579f7c",
-    "title": "Claude Opus 5.5 Shows Reduced AI Writing Patterns",
-    "summary": "Anthropic’s Claude Opus 5.5 has been analyzed to use fewer em dashes, produce shorter sentences, and employ simpler wording compared to earlier versions. The changes aim to make the model’s responses less detectable as AI-generated text while maintaining content depth.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/claude-opus-55-uses-95-percent-fewer-em-dashes-but-its-answers-are-getting-longer/",
-    "publishedAt": "2026-09-26T16:26:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "claude-opus-5-5-shows-reduced-ai-writing-patterns",
-      "article-579f7c",
-      "579f7c"
-    ]
-  },
-  {
-    "slug": "microsoft-pauses-kb5002907-update-after-office-201-4cc554",
-    "title": "Microsoft Pauses KB5002907 Update After Office 2016/2019 License Deactivations",
-    "summary": "Microsoft halted rollout of KB5002907, a Microsoft 365 update, after users reported that it deactivated or removed perpetual Office 2016 and Office 2019 installations. The pause follows widespread reports of license deactivation, prompting Microsoft to investigate the update’s impact on legacy Office products.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-365-kb5002907-update-paused-after-office-license-deactivations/",
-    "publishedAt": "2026-09-26T15:50:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-pauses-kb5002907-update-after-office-201",
-      "article-4cc554",
-      "4cc554",
-      "microsoft-pauses-kb5002907-update-after-office-2016-2019-lic"
-    ]
-  },
-  {
-    "slug": "github-actions-re-enabled-while-mini-shai-hulud-pa-4a285d",
-    "title": "GitHub Actions Re-Enabled While Mini Shai-Hulud Payload Remains Active",
-    "summary": "Two third‑party GitHub Actions that were previously compromised in a Mini Shai‑Hulud ransomware campaign were re‑enabled by their maintainer. The actions still point to malicious code, allowing attackers to execute the payload in any workflow that uses them. The continued availability poses a risk to projects relying on these actions.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/github-actions-re-enabled-with-mini-shai-hulud-payload-still-active/",
-    "publishedAt": "2026-09-26T14:19:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "github-actions-re-enabled-while-mini-shai-hulud-pa",
-      "article-4a285d",
-      "4a285d",
-      "github-actions-re-enabled-while-mini-shai-hulud-payload-rema"
-    ]
-  },
-  {
-    "slug": "openai-ai-agents-uploaded-user-images-to-third-par-d8c0e7",
-    "title": "OpenAI AI Agents Uploaded User Images to Third-Party Sites",
-    "summary": "OpenAI reports that its AI agents unintentionally uploaded user-provided images to external image-hosting services during research and evaluation tasks. The incident involved third‑party sites, potentially exposing user content beyond OpenAI’s control. No further details on mitigation or impact are provided.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openais-ai-agents-accidentally-uploaded-user-provided-images-to-third-party-sites/",
-    "publishedAt": "2026-09-26T12:28:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openai-ai-agents-uploaded-user-images-to-third-par",
-      "article-d8c0e7",
-      "d8c0e7",
-      "openai-ai-agents-uploaded-user-images-to-third-party-sites"
-    ]
-  },
-  {
-    "slug": "windows-botnet-uses-xai-grok-to-maintain-persisten-572cd4",
-    "title": "Windows Botnet Uses xAI Grok to Maintain Persistence",
-    "summary": "A new Windows botnet, x47.c, leverages the xAI Grok AI API to select predefined actions and maintain persistence. The botnet’s use of AI enables it to adapt its behavior, potentially draining resources and evading detection. No specific mitigation is disclosed yet.",
-    "category": "Policy",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/new-x47-c-windows-botnet-weaponizes-xai-grok-ai-api-draining/",
-    "publishedAt": "2026-09-26T12:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "windows-botnet-uses-xai-grok-to-maintain-persisten",
-      "article-572cd4",
-      "572cd4",
-      "windows-botnet-uses-xai-grok-to-maintain-persistence"
-    ]
-  },
-  {
-    "slug": "elementor-csrf-flaw-lets-attackers-take-over-sites-b8be11",
-    "title": "Elementor CSRF Flaw Lets Attackers Take Over Sites After Admin Clicks Crafted Link",
-    "summary": "A high‑severity CSRF flaw in the Elementor WordPress plugin allows unauthenticated attackers to create rogue administrator accounts and seize control of a site. The vulnerability, with a CVSS score of 8.8, has no CVE yet and affects recent Elementor versions.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/09/elementor-csrf-flaw-lets-attackers-take.html",
-    "publishedAt": "2026-09-26T09:55:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "elementor-csrf-flaw-lets-attackers-take-over-sites",
-      "article-b8be11",
-      "b8be11",
-      "elementor-csrf-flaw-lets-attackers-take-over-sites-after-adm"
     ]
   }
 ];
