@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Oct 2026 13:44:01 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 15:21:28 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Co‑creator of Empire Market Dark Web Marketplace Sentenced to 40 Years</title>
@@ -15,6 +15,42 @@
       <pubDate>Sat, 10 Oct 2026 00:55:00 GMT</pubDate>
       <source url="https://therecord.media/co-creator-empire-dark-net-market-sentenced">The Record</source>
       <category>Policy</category>
+    </item>
+    <item>
+      <title>Belarusian Hacktivists Admit 2023 Breach of Russian State Healthcare Network</title>
+      <link>https://secubuzz.com/news/belarusian-hacktivists-admit-2023-breach-of-russia-6e2913</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/belarusian-hacktivists-admit-2023-breach-of-russia-6e2913</guid>
+      <description><![CDATA[Belarusian Cyber Partisans confirmed they spent months infiltrating the Moscow Department of Health’s network in 2023. The breach involved unauthorized access to the Russian state healthcare system, exposing sensitive data and compromising national security infrastructure. The admission underscores ongoing cyber espionage targeting critical health services.]]></description>
+      <pubDate>Fri, 09 Oct 2026 14:40:00 GMT</pubDate>
+      <source url="https://therecord.media/belarusian-cyber-partisans-claim-2023-russia-healthcare-hack">The Record</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Enforcing Permission Limits for AI Agents</title>
+      <link>https://secubuzz.com/news/enforcing-permission-limits-for-ai-agents-3a3c0d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/enforcing-permission-limits-for-ai-agents-3a3c0d</guid>
+      <description><![CDATA[AI agents can misuse valid credentials to exceed their assigned permissions, bypassing traditional access controls. Token Security recommends implementing agent‑specific policies that enforce strict permission boundaries while preserving autonomy. The guidance helps organizations mitigate risks from AI-driven credential abuse without compromising operational flexibility.]]></description>
+      <pubDate>Fri, 09 Oct 2026 14:01:11 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/how-to-keep-ai-agents-within-their-permissions/">BleepingComputer</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>OpenAI disrupts Russian and Iranian influence operations using ChatGPT</title>
+      <link>https://secubuzz.com/news/openai-disrupts-russian-and-iranian-influence-oper-2b2d6f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openai-disrupts-russian-and-iranian-influence-oper-2b2d6f</guid>
+      <description><![CDATA[OpenAI’s safety team reported that it disrupted a Latin American propaganda operation run by Russians and a cluster of Iranian fake journalist identities that relied on now‑closed ChatGPT accounts. The action stopped the use of the language model for influence operations.]]></description>
+      <pubDate>Fri, 09 Oct 2026 13:50:00 GMT</pubDate>
+      <source url="https://therecord.media/openai-disrupts-russian-iranian-operations-chatgpt">The Record</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>TP‑Link faces lawsuits from four U.S. states over router security claims</title>
+      <link>https://secubuzz.com/news/tp-link-faces-lawsuits-from-four-u-s-states-over-r-108196</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/tp-link-faces-lawsuits-from-four-u-s-states-over-r-108196</guid>
+      <description><![CDATA[Four U.S. states—Florida, Iowa, Montana and Nebraska—filed lawsuits against TP‑Link Systems, alleging the company misled buyers about router security and its separation from China. TP‑Link denies the claims and says it will fight the suits in court.]]></description>
+      <pubDate>Fri, 09 Oct 2026 13:22:53 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/tp-link-sued-by-four-more-us-states.html">The Hacker News</source>
+      <category>Cloud</category>
     </item>
     <item>
       <title>AI Agents Enable New Business Email Compromise Tactics</title>
@@ -33,6 +69,33 @@
       <pubDate>Fri, 09 Oct 2026 13:00:00 GMT</pubDate>
       <source url="https://blog.cloudflare.com/workers-on-demand-profiling/">Cloudflare Security</source>
       <category>Cloud</category>
+    </item>
+    <item>
+      <title>AnyDesk Linux Pre-Auth RCE Exploit Gives Root Access</title>
+      <link>https://secubuzz.com/news/anydesk-linux-pre-auth-rce-exploit-gives-root-acce-27a1c7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/anydesk-linux-pre-auth-rce-exploit-gives-root-acce-27a1c7</guid>
+      <description><![CDATA[Security researchers released a working exploit for a pre-authentication remote code execution flaw in AnyDesk Linux, allowing attackers to gain root privileges before connection approval. AnyDesk patched the issue in version 8.0.3, but the fix was described only as a crash bug with no CVE assigned.]]></description>
+      <pubDate>Fri, 09 Oct 2026 12:59:22 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/researchers-publish-working-exploit-for.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Anthropic Releases Free AI‑Powered Open‑Source Vulnerability Scanner</title>
+      <link>https://secubuzz.com/news/anthropic-releases-free-ai-powered-open-source-vul-10c4fd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-releases-free-ai-powered-open-source-vul-10c4fd</guid>
+      <description><![CDATA[Anthropic unveiled OSS Scanner, an opt‑in AI tool that automatically scans open‑source projects for security flaws. The service, powered by Claude, offers periodic, in‑depth scans at no cost, aiming to strengthen the open‑source ecosystem by identifying vulnerabilities early.]]></description>
+      <pubDate>Fri, 09 Oct 2026 12:47:28 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/anthropic-launches-free-ai.html">The Hacker News</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Attackers Exploit CVE‑2026‑105133 in AhsayCBS to Deploy XMRig Miners</title>
+      <link>https://secubuzz.com/news/attackers-exploit-cve-2026-105133-in-ahsaycbs-to-d-787a57</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/attackers-exploit-cve-2026-105133-in-ahsaycbs-to-d-787a57</guid>
+      <description><![CDATA[Threat actors leveraged CVE‑2026‑105133, an improper authentication flaw in AhsayCBS’s checkSysPwd() function, to gain control of devices. They installed web shells and disguised XMRig cryptocurrency miners as Microsoft Edge, enabling covert mining operations on compromised systems.]]></description>
+      <pubDate>Fri, 09 Oct 2026 12:47:26 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/attackers-exploit-ahsaycbs-flaws-to.html">The Hacker News</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>SonicWall SMA1000 Vulnerability CVE-2026-102255 Exploited in Attacks</title>
@@ -89,15 +152,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Ukrainian‑Russian Dual Citizen Pleads Guilty to 15,000‑Member Money‑Mule Network</title>
-      <link>https://secubuzz.com/news/ukrainian-russian-dual-citizen-pleads-guilty-to-15-34dc4c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ukrainian-russian-dual-citizen-pleads-guilty-to-15-34dc4c</guid>
-      <description><![CDATA[A Ukrainian‑Russian dual citizen admitted to operating a money‑laundering network of 15,000 mules that processed millions of dollars for global cybercriminals. The case underscores the scale of financial crimes tied to cybercrime operations and the legal consequences for facilitators.]]></description>
-      <pubDate>Fri, 09 Oct 2026 11:14:28 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/ukrainian-russian-dual-citizen-admits-to-laundering-millions-for-cybercriminals/">BleepingComputer</source>
-      <category>Policy</category>
-    </item>
-    <item>
       <title>Unpatched AhsayCBS Vulnerabilities Exploited in the Wild</title>
       <link>https://secubuzz.com/news/unpatched-ahsaycbs-vulnerabilities-exploited-in-th-4f5c21</link>
       <guid isPermaLink="true">https://secubuzz.com/news/unpatched-ahsaycbs-vulnerabilities-exploited-in-th-4f5c21</guid>
@@ -123,15 +177,6 @@
       <pubDate>Fri, 09 Oct 2026 09:55:35 GMT</pubDate>
       <source url="https://www.securityweek.com/pre-baked-firmware-malware-hits-budget-android-devices-in-150-countries/">SecurityWeek</source>
       <category>Malware</category>
-    </item>
-    <item>
-      <title>Anthropic Launches Free AI‑Powered Security Scans for Open‑Source Maintainers</title>
-      <link>https://secubuzz.com/news/anthropic-launches-free-ai-powered-security-scans-2df6bb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-launches-free-ai-powered-security-scans-2df6bb</guid>
-      <description><![CDATA[Anthropic introduced OSS Scanner, a free service that applies its Claude AI models to detect security vulnerabilities in open‑source projects. Maintainers who opt in receive periodic scans, detailed reports, and fix guidance. The tool builds on Anthropic’s Project Glasswing experience and aims to reduce human validation bottlenecks.]]></description>
-      <pubDate>Fri, 09 Oct 2026 09:55:24 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/09/anthropic-oss-scanner-ai-security-scans/">Help Net Security</source>
-      <category>Policy</category>
     </item>
     <item>
       <title>GoBalance Vulnerability Allows Hijacking of .onion Addresses</title>
@@ -395,15 +440,6 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>Attackers Exploit Atlassian CVE‑2026‑21589 Within Hours of PoC Release</title>
-      <link>https://secubuzz.com/news/attackers-exploit-atlassian-cve-2026-21589-within-3f3336</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/attackers-exploit-atlassian-cve-2026-21589-within-3f3336</guid>
-      <description><![CDATA[Threat actors began targeting Atlassian’s self‑hosted Data Center products after the public release of a proof‑of‑concept for CVE‑2026‑21589, a critical vulnerability that could allow remote code execution. Atlassian has issued a patch; administrators should update immediately to mitigate the risk.]]></description>
-      <pubDate>Thu, 08 Oct 2026 14:04:44 GMT</pubDate>
-      <source url="https://www.securityweek.com/attackers-target-critical-atlassian-vulnerability-within-hours-of-poc-publication/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>OAuth Grants Exploited in Recent Klue Breach</title>
       <link>https://secubuzz.com/news/oauth-grants-exploited-in-recent-klue-breach-381d27</link>
       <guid isPermaLink="true">https://secubuzz.com/news/oauth-grants-exploited-in-recent-klue-breach-381d27</guid>
@@ -420,42 +456,6 @@
       <pubDate>Thu, 08 Oct 2026 13:18:36 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/uranium-crypto-exchange-hacker-found-guilty-of-53-million-theft/">BleepingComputer</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Cloudflare Radar Redesign Enhances Accessibility for Non-Technical Users</title>
-      <link>https://secubuzz.com/news/cloudflare-radar-redesign-enhances-accessibility-f-53eeb5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-radar-redesign-enhances-accessibility-f-53eeb5</guid>
-      <description><![CDATA[Cloudflare has updated its Radar platform, adding an interactive map and standardized components to present real‑time global traffic and outage data. The redesign aims to make complex network insights usable for journalists, researchers, and everyday users while maintaining technical depth. No security impact reported.]]></description>
-      <pubDate>Thu, 08 Oct 2026 13:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/radar-redesign/">Cloudflare Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>US Seeks Alleged Chinese Hafnium Hacker With $10 Million Reward</title>
-      <link>https://secubuzz.com/news/us-seeks-alleged-chinese-hafnium-hacker-with-10-mi-5a7bd6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/us-seeks-alleged-chinese-hafnium-hacker-with-10-mi-5a7bd6</guid>
-      <description><![CDATA[The United States is offering a $10 million reward for information leading to the arrest of Zhang Yu, a suspected Hafnium hacker linked to Chinese state-sponsored espionage. Zhang was charged alongside Xu Zewei, who was extradited from Italy to the US in April 2026.]]></description>
-      <pubDate>Thu, 08 Oct 2026 12:46:21 GMT</pubDate>
-      <source url="https://www.securityweek.com/us-seeks-alleged-chinese-hafnium-hacker-with-10-million-reward/">SecurityWeek</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>YouTubers Targeted by Phishing Scam Using Fake Sponsorships</title>
-      <link>https://secubuzz.com/news/youtubers-targeted-by-phishing-scam-using-fake-spo-5a26c0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/youtubers-targeted-by-phishing-scam-using-fake-spo-5a26c0</guid>
-      <description><![CDATA[Scammers impersonate brands and send personalized emails to YouTube creators, directing them to a fake collaboration platform that requests Google sign‑in. The phishing campaign tricks creators into revealing their Google account credentials, enabling attackers to access their accounts.]]></description>
-      <pubDate>Thu, 08 Oct 2026 12:41:43 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/08/scams-targeting-youtube-creators-sponsorship/">Help Net Security</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Russian-Backed Hackers Deploy Updated Malware Against Ukrainian Transport and Energy Firms</title>
-      <link>https://secubuzz.com/news/russian-backed-hackers-deploy-updated-malware-agai-77fa1c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/russian-backed-hackers-deploy-updated-malware-agai-77fa1c</guid>
-      <description><![CDATA[Russian-aligned hackers have released an upgraded malware strain targeting Ukrainian transportation, manufacturing, and energy companies. The malware is designed to harvest system data, indicating a persistent threat aimed at disrupting critical infrastructure. No public fix is available yet, but organizations should monitor for unusual data exfiltration activity.]]></description>
-      <pubDate>Thu, 08 Oct 2026 12:30:00 GMT</pubDate>
-      <source url="https://therecord.media/russia-ukraine-malware-transportation">The Record</source>
-      <category>Malware</category>
     </item>
   </channel>
 </rss>

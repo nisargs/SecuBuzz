@@ -29,6 +29,77 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "belarusian-hacktivists-admit-2023-breach-of-russia-6e2913",
+    "title": "Belarusian Hacktivists Admit 2023 Breach of Russian State Healthcare Network",
+    "summary": "Belarusian Cyber Partisans confirmed they spent months infiltrating the Moscow Department of Health’s network in 2023. The breach involved unauthorized access to the Russian state healthcare system, exposing sensitive data and compromising national security infrastructure. The admission underscores ongoing cyber espionage targeting critical health services.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/belarusian-cyber-partisans-claim-2023-russia-healthcare-hack",
+    "publishedAt": "2026-10-09T14:40:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "belarusian-hacktivists-admit-2023-breach-of-russia",
+      "article-6e2913",
+      "6e2913",
+      "belarusian-hacktivists-admit-2023-breach-of-russian-state-he"
+    ]
+  },
+  {
+    "slug": "enforcing-permission-limits-for-ai-agents-3a3c0d",
+    "title": "Enforcing Permission Limits for AI Agents",
+    "summary": "AI agents can misuse valid credentials to exceed their assigned permissions, bypassing traditional access controls. Token Security recommends implementing agent‑specific policies that enforce strict permission boundaries while preserving autonomy. The guidance helps organizations mitigate risks from AI-driven credential abuse without compromising operational flexibility.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/how-to-keep-ai-agents-within-their-permissions/",
+    "publishedAt": "2026-10-09T14:01:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "enforcing-permission-limits-for-ai-agents",
+      "article-3a3c0d",
+      "3a3c0d"
+    ]
+  },
+  {
+    "slug": "openai-disrupts-russian-and-iranian-influence-oper-2b2d6f",
+    "title": "OpenAI disrupts Russian and Iranian influence operations using ChatGPT",
+    "summary": "OpenAI’s safety team reported that it disrupted a Latin American propaganda operation run by Russians and a cluster of Iranian fake journalist identities that relied on now‑closed ChatGPT accounts. The action stopped the use of the language model for influence operations.",
+    "category": "Malware",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/openai-disrupts-russian-iranian-operations-chatgpt",
+    "publishedAt": "2026-10-09T13:50:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openai-disrupts-russian-and-iranian-influence-oper",
+      "article-2b2d6f",
+      "2b2d6f",
+      "openai-disrupts-russian-and-iranian-influence-operations-usi"
+    ]
+  },
+  {
+    "slug": "tp-link-faces-lawsuits-from-four-u-s-states-over-r-108196",
+    "title": "TP‑Link faces lawsuits from four U.S. states over router security claims",
+    "summary": "Four U.S. states—Florida, Iowa, Montana and Nebraska—filed lawsuits against TP‑Link Systems, alleging the company misled buyers about router security and its separation from China. TP‑Link denies the claims and says it will fight the suits in court.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/tp-link-sued-by-four-more-us-states.html",
+    "publishedAt": "2026-10-09T13:22:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "tp-link-faces-lawsuits-from-four-u-s-states-over-r",
+      "article-108196",
+      "108196",
+      "tp-link-faces-lawsuits-from-four-u-s-states-over-router-secu"
+    ]
+  },
+  {
     "slug": "ai-agents-enable-new-business-email-compromise-tac-5c4452",
     "title": "AI Agents Enable New Business Email Compromise Tactics",
     "summary": "AI agents that gain authority over business systems can be manipulated by attackers to act as business email compromise (BEC) victims. The new technique increases the risk of social engineering attacks by allowing automated agents to send fraudulent messages, potentially leading to credential theft or financial loss.",
@@ -62,6 +133,60 @@ export const news: NewsBrief[] = [
       "article-38f569",
       "38f569",
       "cloudflare-launches-on-demand-cpu-and-memory-profiling-for-w"
+    ]
+  },
+  {
+    "slug": "anydesk-linux-pre-auth-rce-exploit-gives-root-acce-27a1c7",
+    "title": "AnyDesk Linux Pre-Auth RCE Exploit Gives Root Access",
+    "summary": "Security researchers released a working exploit for a pre-authentication remote code execution flaw in AnyDesk Linux, allowing attackers to gain root privileges before connection approval. AnyDesk patched the issue in version 8.0.3, but the fix was described only as a crash bug with no CVE assigned.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/researchers-publish-working-exploit-for.html",
+    "publishedAt": "2026-10-09T12:59:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "anydesk-linux-pre-auth-rce-exploit-gives-root-acce",
+      "article-27a1c7",
+      "27a1c7",
+      "anydesk-linux-pre-auth-rce-exploit-gives-root-access"
+    ]
+  },
+  {
+    "slug": "anthropic-releases-free-ai-powered-open-source-vul-10c4fd",
+    "title": "Anthropic Releases Free AI‑Powered Open‑Source Vulnerability Scanner",
+    "summary": "Anthropic unveiled OSS Scanner, an opt‑in AI tool that automatically scans open‑source projects for security flaws. The service, powered by Claude, offers periodic, in‑depth scans at no cost, aiming to strengthen the open‑source ecosystem by identifying vulnerabilities early.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/anthropic-launches-free-ai.html",
+    "publishedAt": "2026-10-09T12:47:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "anthropic-releases-free-ai-powered-open-source-vul",
+      "article-10c4fd",
+      "10c4fd",
+      "anthropic-releases-free-ai-powered-open-source-vulnerability"
+    ]
+  },
+  {
+    "slug": "attackers-exploit-cve-2026-105133-in-ahsaycbs-to-d-787a57",
+    "title": "Attackers Exploit CVE‑2026‑105133 in AhsayCBS to Deploy XMRig Miners",
+    "summary": "Threat actors leveraged CVE‑2026‑105133, an improper authentication flaw in AhsayCBS’s checkSysPwd() function, to gain control of devices. They installed web shells and disguised XMRig cryptocurrency miners as Microsoft Edge, enabling covert mining operations on compromised systems.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/attackers-exploit-ahsaycbs-flaws-to.html",
+    "publishedAt": "2026-10-09T12:47:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "attackers-exploit-cve-2026-105133-in-ahsaycbs-to-d",
+      "article-787a57",
+      "787a57",
+      "attackers-exploit-cve-2026-105133-in-ahsaycbs-to-deploy-xmri"
     ]
   },
   {
@@ -174,24 +299,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "ukrainian-russian-dual-citizen-pleads-guilty-to-15-34dc4c",
-    "title": "Ukrainian‑Russian Dual Citizen Pleads Guilty to 15,000‑Member Money‑Mule Network",
-    "summary": "A Ukrainian‑Russian dual citizen admitted to operating a money‑laundering network of 15,000 mules that processed millions of dollars for global cybercriminals. The case underscores the scale of financial crimes tied to cybercrime operations and the legal consequences for facilitators.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ukrainian-russian-dual-citizen-admits-to-laundering-millions-for-cybercriminals/",
-    "publishedAt": "2026-10-09T11:14:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ukrainian-russian-dual-citizen-pleads-guilty-to-15",
-      "article-34dc4c",
-      "34dc4c",
-      "ukrainian-russian-dual-citizen-pleads-guilty-to-15-000-membe"
-    ]
-  },
-  {
     "slug": "unpatched-ahsaycbs-vulnerabilities-exploited-in-th-4f5c21",
     "title": "Unpatched AhsayCBS Vulnerabilities Exploited in the Wild",
     "summary": "The AhsayCBS platform suffers from two unpatched flaws, CVE-2026-105133 and CVE-2026-105134, that let attackers bypass authentication and inject operating‑system commands. Exploitation can lead to full system compromise. Immediate patching or disabling the affected modules is required.",
@@ -246,24 +353,6 @@ export const news: NewsBrief[] = [
       "article-177f46",
       "177f46",
       "midnight-mimosa-malware-targets-budget-android-devices-world"
-    ]
-  },
-  {
-    "slug": "anthropic-launches-free-ai-powered-security-scans-2df6bb",
-    "title": "Anthropic Launches Free AI‑Powered Security Scans for Open‑Source Maintainers",
-    "summary": "Anthropic introduced OSS Scanner, a free service that applies its Claude AI models to detect security vulnerabilities in open‑source projects. Maintainers who opt in receive periodic scans, detailed reports, and fix guidance. The tool builds on Anthropic’s Project Glasswing experience and aims to reduce human validation bottlenecks.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/09/anthropic-oss-scanner-ai-security-scans/",
-    "publishedAt": "2026-10-09T09:55:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "anthropic-launches-free-ai-powered-security-scans",
-      "article-2df6bb",
-      "2df6bb",
-      "anthropic-launches-free-ai-powered-security-scans-for-open-s"
     ]
   },
   {
@@ -789,24 +878,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "attackers-exploit-atlassian-cve-2026-21589-within-3f3336",
-    "title": "Attackers Exploit Atlassian CVE‑2026‑21589 Within Hours of PoC Release",
-    "summary": "Threat actors began targeting Atlassian’s self‑hosted Data Center products after the public release of a proof‑of‑concept for CVE‑2026‑21589, a critical vulnerability that could allow remote code execution. Atlassian has issued a patch; administrators should update immediately to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/attackers-target-critical-atlassian-vulnerability-within-hours-of-poc-publication/",
-    "publishedAt": "2026-10-08T14:04:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "attackers-exploit-atlassian-cve-2026-21589-within",
-      "article-3f3336",
-      "3f3336",
-      "attackers-exploit-atlassian-cve-2026-21589-within-hours-of-p"
-    ]
-  },
-  {
     "slug": "oauth-grants-exploited-in-recent-klue-breach-381d27",
     "title": "OAuth Grants Exploited in Recent Klue Breach",
     "summary": "Attackers leveraged forgotten OAuth grants to access corporate data, as highlighted by the recent Klue breach. The article explains how OAuth permissions create data highways between SaaS apps, AI agents, and other tools, and offers strategies to monitor and revoke unused grants to prevent future breaches.",
@@ -1091,24 +1162,6 @@ export const news: NewsBrief[] = [
       "article-e0cf3e",
       "e0cf3e",
       "cryptomining-botnet-uses-github-poem-for-c2-infects-3-400-se"
-    ]
-  },
-  {
-    "slug": "tp-link-router-flaws-prompt-state-lawsuits-and-reg-16ff74",
-    "title": "TP‑Link Router Flaws Prompt State Lawsuits and Regulatory Scrutiny",
-    "summary": "US states have filed lawsuits against TP‑Link, citing technical details of router vulnerabilities that could allow attackers to compromise ISP devices. The complaints highlight security weaknesses in TP‑Link’s ISP routers, prompting increased scrutiny and potential regulatory action.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/tp-link-faces-state-lawsuits-and-new-scrutiny-over-isp-router-flaws/",
-    "publishedAt": "2026-10-08T10:24:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "tp-link-router-flaws-prompt-state-lawsuits-and-reg",
-      "article-16ff74",
-      "16ff74",
-      "tp-link-router-flaws-prompt-state-lawsuits-and-regulatory-sc"
     ]
   },
   {
@@ -1648,24 +1701,6 @@ export const news: NewsBrief[] = [
       "article-2c267d",
       "2c267d",
       "anthropic-unveils-3-tier-cyber-verification-for-ai-models"
-    ]
-  },
-  {
-    "slug": "fake-ai-portals-hijack-corporate-ad-accounts-via-b-6b47e9",
-    "title": "Fake AI Portals Hijack Corporate Ad Accounts via Browser-in-the-Browser Attacks",
-    "summary": "Attackers use counterfeit ChatGPT and Gemini portals that run Browser‑in‑the‑Browser attacks to steal credentials and take over corporate advertising accounts. The technique bypasses real‑time MFA, allowing attackers to redirect ad spend. Organizations should verify portal URLs, enforce MFA, and monitor account activity.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/fake-ai-sites-bitb-ad-account-theft",
-    "publishedAt": "2026-10-07T01:55:14.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fake-ai-portals-hijack-corporate-ad-accounts-via-b",
-      "article-6b47e9",
-      "6b47e9",
-      "fake-ai-portals-hijack-corporate-ad-accounts-via-browser-in-"
     ]
   },
   {
@@ -4468,46 +4503,6 @@ export const news: NewsBrief[] = [
       "article-431cd5",
       "431cd5",
       "viidure-dashcam-android-app-suffers-critical-vulnerabilities"
-    ]
-  },
-  {
-    "slug": "vivotek-camera-firmware-remote-command-execution-v-431cd5",
-    "title": "VIVOTEK Camera Firmware Remote Command Execution Vulnerability",
-    "summary": "A critical vulnerability (CVE-2026-22755) in VIVOTEK camera firmware allows attackers to achieve remote command execution with root privileges, potentially compromising the entire camera system. Affected models include V Series FD9187, FD9189, FD9365, FD9387, FD9389, FD9391, C Series FE9180, V Series FE9191, FE9382, FE9391, IB9365, IB9387, IB9389, IB939, IP9165, IP9171. Patching to the latest firmware is required.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-03",
-    "publishedAt": "2026-09-29T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-22755"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "vivotek-camera-firmware-remote-command-execution-v",
-      "article-431cd5",
-      "431cd5",
-      "vivotek-camera-firmware-remote-command-execution-vulnerabili"
-    ]
-  },
-  {
-    "slug": "baicells-nova-430h-vulnerability-allows-malformed-431cd5",
-    "title": "Baicells Nova 430H Vulnerability Allows Malformed Message Denial of Service",
-    "summary": "An unauthenticated attacker within radio range can send a malformed uplink message with an invalid NAS payload to Baicells Nova 430H eNodeB, causing the device to forward it to the core network and trigger a signaling shutdown, resulting in denial of service. CVE-2026-96274 is the affected vulnerability.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-04",
-    "publishedAt": "2026-09-29T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-96274"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "baicells-nova-430h-vulnerability-allows-malformed",
-      "article-431cd5",
-      "431cd5",
-      "baicells-nova-430h-vulnerability-allows-malformed-message-de"
     ]
   }
 ];
