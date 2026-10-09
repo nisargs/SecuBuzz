@@ -18,6 +18,129 @@
     ]
   },
   {
+    "id": "https://therecord.media/japan-germany-ransomware-arrest",
+    "sourceUrl": "https://therecord.media/japan-germany-ransomware-arrest",
+    "title": "Japan Arrests Russian National Linked to Qilin Ransomware Gang",
+    "headline": "Japan Arrests Russian National Linked to Qilin Ransomware Gang",
+    "summary": "Japan’s National Police Agency confirmed the arrest and extradition of a Russian national accused of involvement with the Qilin ransomware gang to Germany. The move is part of international cooperation to curb ransomware operations.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Record",
+    "publishedAt": "2026-10-09T18:45:00.000Z",
+    "url": "https://therecord.media/japan-germany-ransomware-arrest",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-arrests-another-suspected-shinyhunters-hacker-after-agency-breach/"
+      },
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/leaked-chats-show-russian-extortion-gang-sending-agents-to-law-firms"
+      }
+    ]
+  },
+  {
+    "id": "https://blog.cloudflare.com/clef-faster-cheaper-multimodal/",
+    "sourceUrl": "https://blog.cloudflare.com/clef-faster-cheaper-multimodal/",
+    "title": "Cloudflare Expands Clef Decision Model with Clef-omni and Faster Clef",
+    "headline": "Cloudflare Expands Clef Decision Model with Clef-omni and Faster Clef",
+    "summary": "Cloudflare announced Clef-omni, a multimodal decision model handling audio, video, images, and text in one pipeline. The company also reduced Clef-flash pricing and doubled Clef inference speeds, enhancing AI inference efficiency.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "publishedAt": "2026-10-09T18:27:34.000Z",
+    "url": "https://blog.cloudflare.com/clef-faster-cheaper-multimodal/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/fbi-arrests-another-shinyhunters.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/fbi-arrests-another-shinyhunters.html",
+    "title": "FBI Arrests ShinyHunters Suspect Over Jobs Portal Breach",
+    "headline": "FBI Arrests ShinyHunters Suspect Over Jobs Portal Breach",
+    "summary": "The FBI has arrested a suspected co-conspirator of the ShinyHunters extortion group, which breached the FBI’s jobs portal in September and stole sensitive data from almost all FBI agents and job applicants. No charges have been publicly released yet.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-09T17:45:26.000Z",
+    "url": "https://thehackernews.com/2026/10/fbi-arrests-another-shinyhunters.html",
+    "additionalSources": [
+      {
+        "source": "Dark Reading",
+        "sourceUrl": "https://www.darkreading.com/identity-access-management-security/fbi-shinyhunters-claims-hack"
+      },
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/fbi-says-china-linked-hackers-ran.html"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/unpatched-ahsaycbs-flaws-exploited-to-deploy-webshells-mine-crypto/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/unpatched-ahsaycbs-flaws-exploited-to-deploy-webshells-mine-crypto/",
+    "title": "AhsayCBS Vulnerabilities Exploited for Webshells and Crypto Mining",
+    "headline": "AhsayCBS Vulnerabilities Exploited for Webshells and Crypto Mining",
+    "summary": "Threat actors are exploiting an unpatched critical and a medium‑severity flaw in the AhsayCBS backup management platform to deploy webshells and run cryptocurrency miners. The attacks target the platform’s web interface, allowing remote code execution and data exfiltration until patches are applied.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-09T17:17:23.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/unpatched-ahsaycbs-flaws-exploited-to-deploy-webshells-mine-crypto/",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/poellm-malware-infects-3400-servers-to.html"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html",
+    "title": "P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Theft and Remote Commands",
+    "headline": "P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Theft and Remote Commands",
+    "summary": "Researchers identified P7 DarkSword, a new iOS exploit kit variant that reduces on‑device footprint, steals keychain and crypto‑wallet data, and establishes two‑way command and control with attackers. The kit targets iOS devices, enabling remote command execution and data exfiltration.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-09T16:29:55.000Z",
+    "url": "https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/16-malicious-firefox-extensions-pose-as.html"
+      },
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/ivan-milenkovic-qualys-cyber-risk-quantification/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.darkreading.com/cyber-risk/security-threats-don-t-stop-at-the-office-why-executives-families-need-training-too",
+    "sourceUrl": "https://www.darkreading.com/cyber-risk/security-threats-don-t-stop-at-the-office-why-executives-families-need-training-too",
+    "title": "Security Threats Don’t Stop at the Office: Why Executives’ Families Need Training, Too",
+    "headline": "Security Threats Don’t Stop at the Office: Why Executives’ Families Need Training, Too",
+    "summary": "The article stresses that executives’ family members can be the weakest security link, urging them to receive cybersecurity training to prevent attacks that exploit personal devices and social engineering tactics.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-09T16:25:05.000Z",
+    "url": "https://www.darkreading.com/cyber-risk/security-threats-don-t-stop-at-the-office-why-executives-families-need-training-too",
+    "additionalSources": []
+  },
+  {
+    "id": "https://therecord.media/leader-of-money-mule-operation-for-cybercriminals-pleads-guilty",
+    "sourceUrl": "https://therecord.media/leader-of-money-mule-operation-for-cybercriminals-pleads-guilty",
+    "title": "Leader of Money Mule Network Pleads Guilty",
+    "headline": "Leader of Money Mule Network Pleads Guilty",
+    "summary": "Oleg Korniev, a 42‑year‑old dual Ukrainian‑Russian citizen, pleaded guilty for leading Your Mule Cashout, a money‑laundering operation that operated a sophisticated mule network across the U.S. and Europe from 2007 to 2014.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Record",
+    "publishedAt": "2026-10-09T16:06:00.000Z",
+    "url": "https://therecord.media/leader-of-money-mule-operation-for-cybercriminals-pleads-guilty",
+    "additionalSources": []
+  },
+  {
     "id": "https://therecord.media/irhythm-data-breach-reports",
     "sourceUrl": "https://therecord.media/irhythm-data-breach-reports",
     "title": "Hundreds of Thousands Impacted by Data Breach at iRhythm",
@@ -34,19 +157,6 @@
         "sourceUrl": "https://therecord.media/shinyhunters-arrest-fbi-data-breach-investigation"
       }
     ]
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/germany-arrests-alleged-core-qilin-ransomware-member-after-extradition/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/germany-arrests-alleged-core-qilin-ransomware-member-after-extradition/",
-    "title": "Germany Arrests Suspected Qilin Ransomware Leader",
-    "headline": "Germany Arrests Suspected Qilin Ransomware Leader",
-    "summary": "Germany has detained a Russian national extradited from Japan, suspected to be a top member of the Qilin ransomware gang. The arrest follows investigations into the group’s recent attacks on corporate networks, though no specific victims or ransom amounts have been disclosed.",
-    "category": "RANSOMWARE",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-09T15:38:56.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/germany-arrests-alleged-core-qilin-ransomware-member-after-extradition/",
-    "additionalSources": []
   },
   {
     "id": "https://therecord.media/belarusian-cyber-partisans-claim-2023-russia-healthcare-hack",
@@ -588,19 +698,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://thehackernews.com/2026/10/fbi-says-china-linked-hackers-ran.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/fbi-says-china-linked-hackers-ran.html",
-    "title": "FBI Reports China-Linked Hackers Stole Emails via Third-Party Portal",
-    "headline": "FBI Reports China-Linked Hackers Stole Emails via Third-Party Portal",
-    "summary": "Hackers tied to Integrity Technology Group, a Chinese cybersecurity firm, stole emails from Southeast Asian government agencies, law enforcement, healthcare systems, and religious institutions. The FBI and six other countries say the attackers operated a portal that granted third parties access to the compromised data.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-08T18:32:21.000Z",
-    "url": "https://thehackernews.com/2026/10/fbi-says-china-linked-hackers-ran.html",
-    "additionalSources": []
-  },
-  {
     "id": "https://www.darkreading.com/cyberattacks-data-breaches/russian-spies-matchboil-malware-facelift",
     "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/russian-spies-matchboil-malware-facelift",
     "title": "Russian Spy Group Enhances 'MatchBoil' Malware with Stealth Features",
@@ -757,19 +854,6 @@
     "source": "The Hacker News",
     "publishedAt": "2026-10-08T15:26:56.000Z",
     "url": "https://thehackernews.com/2026/10/uac-0099-targets-ukrainian-government.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/leaked-chats-show-russian-extortion-gang-sending-agents-to-law-firms",
-    "sourceUrl": "https://therecord.media/leaked-chats-show-russian-extortion-gang-sending-agents-to-law-firms",
-    "title": "Russian Extortion Gang Targets US Law Firms with Operatives",
-    "headline": "Russian Extortion Gang Targets US Law Firms with Operatives",
-    "summary": "Leaked chats reveal a Russian extortion group coordinating operatives in the United States to target law firms. The gang tracks victims, negotiates multimillion-dollar payments, and deploys “agents” to infiltrate firms. The operation represents a sophisticated extortion campaign aimed at high-value legal clients.",
-    "category": "RANSOMWARE",
-    "severity": "HIGH",
-    "source": "The Record",
-    "publishedAt": "2026-10-08T14:46:00.000Z",
-    "url": "https://therecord.media/leaked-chats-show-russian-extortion-gang-sending-agents-to-law-firms",
     "additionalSources": []
   },
   {
@@ -1036,19 +1120,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://thehackernews.com/2026/10/16-malicious-firefox-extensions-pose-as.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/16-malicious-firefox-extensions-pose-as.html",
-    "title": "16 Malicious Firefox Extensions Steal Crypto Wallet Recovery Phrases",
-    "headline": "16 Malicious Firefox Extensions Steal Crypto Wallet Recovery Phrases",
-    "summary": "Researchers found 16 malicious Firefox extensions that masquerade as wallet portals and desktop utilities. The extensions intercept recovery phrases and private keys during wallet import flows and attempt to exfiltrate those secrets. Users should remove or block these extensions and verify extensions from trusted sources.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-08T09:46:32.000Z",
-    "url": "https://thehackernews.com/2026/10/16-malicious-firefox-extensions-pose-as.html",
-    "additionalSources": []
-  },
-  {
     "id": "https://www.securityweek.com/fortibleed-attackers-locking-victims-out-of-fortinet-devices/",
     "sourceUrl": "https://www.securityweek.com/fortibleed-attackers-locking-victims-out-of-fortinet-devices/",
     "title": "FortiBleed Attackers Lock Legitimate Users Out of Fortinet Devices",
@@ -1067,24 +1138,6 @@
       {
         "source": "The Hacker News",
         "sourceUrl": "https://thehackernews.com/2026/10/fbi-warns-fortibleed-remains-active.html"
-      }
-    ]
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/08/ivan-milenkovic-qualys-cyber-risk-quantification/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/ivan-milenkovic-qualys-cyber-risk-quantification/",
-    "title": "Build an Economic Model to Prioritize Security Spending",
-    "headline": "Build an Economic Model to Prioritize Security Spending",
-    "summary": "Security leaders can use an economic model to quantify risk, starting with loss scenarios and mapping them to assets. The approach ranks fixes by value at risk, aligns with CFO expectations, and demonstrates the worth of prevented incidents, helping prioritize investments.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-08T06:00:01.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/08/ivan-milenkovic-qualys-cyber-risk-quantification/",
-    "additionalSources": [
-      {
-        "source": "Dark Reading",
-        "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/remotethreat-bets-security-teams-need-to-test-what-happens-after-defenses-fail"
       }
     ]
   },
@@ -1310,24 +1363,6 @@
     "publishedAt": "2026-10-07T15:44:22.000Z",
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-outlook-to-block-msix-attachments-used-in-attacks/",
     "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/poellm-malware-infects-3400-servers-to.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/poellm-malware-infects-3400-servers-to.html",
-    "title": "PoeLLM Malware Targets AI Infrastructure, Expands Crypto‑Mining Botnet",
-    "headline": "PoeLLM Malware Targets AI Infrastructure, Expands Crypto‑Mining Botnet",
-    "summary": "Cybersecurity researchers identified PoeLLM malware infecting over 3,400 exposed AI and large language model servers. The malware installs cryptocurrency miners, expanding the botnet’s scale. The campaign, dubbed Canto Incognito, leverages AI infrastructure to deploy miners and grow its network of compromised hosts.",
-    "category": "GENERAL",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-07T15:33:51.000Z",
-    "url": "https://thehackernews.com/2026/10/poellm-malware-infects-3400-servers-to.html",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/poellm-malware-infects-exposed-ai-servers-in-cryptomining-attacks/"
-      }
-    ]
   },
   {
     "id": "https://therecord.media/oklahoma-flock-ruing-supreme-court-chatrie-decision",
@@ -3766,18 +3801,5 @@
         "sourceUrl": "https://blog.cloudflare.com/ai-era-framework/"
       }
     ]
-  },
-  {
-    "id": "https://blog.cloudflare.com/adaptive-ai-waf-testing/",
-    "sourceUrl": "https://blog.cloudflare.com/adaptive-ai-waf-testing/",
-    "title": "Cloudflare WAF Tester Reveals Detection Gaps",
-    "headline": "Cloudflare WAF Tester Reveals Detection Gaps",
-    "summary": "Cloudflare built a WAF tester that adapts requests based on WAF responses, testing six attack categories on a staging environment. The tool uncovered gaps in the WAF’s detection logic, allowing certain attacks to pass. Cloudflare documented the missed detections and applied fixes to close the identified weaknesses.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Cloudflare Security",
-    "publishedAt": "2026-09-29T13:00:00.000Z",
-    "url": "https://blog.cloudflare.com/adaptive-ai-waf-testing/",
-    "additionalSources": []
   }
 ]

@@ -29,6 +29,131 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "japan-arrests-russian-national-linked-to-qilin-ran-2b2701",
+    "title": "Japan Arrests Russian National Linked to Qilin Ransomware Gang",
+    "summary": "Japan’s National Police Agency confirmed the arrest and extradition of a Russian national accused of involvement with the Qilin ransomware gang to Germany. The move is part of international cooperation to curb ransomware operations.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/japan-germany-ransomware-arrest",
+    "publishedAt": "2026-10-09T18:45:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "japan-arrests-russian-national-linked-to-qilin-ran",
+      "article-2b2701",
+      "2b2701",
+      "japan-arrests-russian-national-linked-to-qilin-ransomware-ga"
+    ]
+  },
+  {
+    "slug": "cloudflare-expands-clef-decision-model-with-clef-o-74a125",
+    "title": "Cloudflare Expands Clef Decision Model with Clef-omni and Faster Clef",
+    "summary": "Cloudflare announced Clef-omni, a multimodal decision model handling audio, video, images, and text in one pipeline. The company also reduced Clef-flash pricing and doubled Clef inference speeds, enhancing AI inference efficiency.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/clef-faster-cheaper-multimodal/",
+    "publishedAt": "2026-10-09T18:27:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cloudflare-expands-clef-decision-model-with-clef-o",
+      "article-74a125",
+      "74a125",
+      "cloudflare-expands-clef-decision-model-with-clef-omni-and-fa"
+    ]
+  },
+  {
+    "slug": "fbi-arrests-shinyhunters-suspect-over-jobs-portal-6cacf1",
+    "title": "FBI Arrests ShinyHunters Suspect Over Jobs Portal Breach",
+    "summary": "The FBI has arrested a suspected co-conspirator of the ShinyHunters extortion group, which breached the FBI’s jobs portal in September and stole sensitive data from almost all FBI agents and job applicants. No charges have been publicly released yet.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/fbi-arrests-another-shinyhunters.html",
+    "publishedAt": "2026-10-09T17:45:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fbi-arrests-shinyhunters-suspect-over-jobs-portal",
+      "article-6cacf1",
+      "6cacf1",
+      "fbi-arrests-shinyhunters-suspect-over-jobs-portal-breach"
+    ]
+  },
+  {
+    "slug": "ahsaycbs-vulnerabilities-exploited-for-webshells-a-18decd",
+    "title": "AhsayCBS Vulnerabilities Exploited for Webshells and Crypto Mining",
+    "summary": "Threat actors are exploiting an unpatched critical and a medium‑severity flaw in the AhsayCBS backup management platform to deploy webshells and run cryptocurrency miners. The attacks target the platform’s web interface, allowing remote code execution and data exfiltration until patches are applied.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/unpatched-ahsaycbs-flaws-exploited-to-deploy-webshells-mine-crypto/",
+    "publishedAt": "2026-10-09T17:17:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ahsaycbs-vulnerabilities-exploited-for-webshells-a",
+      "article-18decd",
+      "18decd",
+      "ahsaycbs-vulnerabilities-exploited-for-webshells-and-crypto-"
+    ]
+  },
+  {
+    "slug": "p7-darksword-ios-exploit-kit-adds-crypto-wallet-th-1506d4",
+    "title": "P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Theft and Remote Commands",
+    "summary": "Researchers identified P7 DarkSword, a new iOS exploit kit variant that reduces on‑device footprint, steals keychain and crypto‑wallet data, and establishes two‑way command and control with attackers. The kit targets iOS devices, enabling remote command execution and data exfiltration.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html",
+    "publishedAt": "2026-10-09T16:29:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "p7-darksword-ios-exploit-kit-adds-crypto-wallet-th",
+      "article-1506d4",
+      "1506d4",
+      "p7-darksword-ios-exploit-kit-adds-crypto-wallet-theft-and-re"
+    ]
+  },
+  {
+    "slug": "security-threats-don-t-stop-at-the-office-why-exec-15d4db",
+    "title": "Security Threats Don’t Stop at the Office: Why Executives’ Families Need Training, Too",
+    "summary": "The article stresses that executives’ family members can be the weakest security link, urging them to receive cybersecurity training to prevent attacks that exploit personal devices and social engineering tactics.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyber-risk/security-threats-don-t-stop-at-the-office-why-executives-families-need-training-too",
+    "publishedAt": "2026-10-09T16:25:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "security-threats-don-t-stop-at-the-office-why-exec",
+      "article-15d4db",
+      "15d4db",
+      "security-threats-don-t-stop-at-the-office-why-executives-fam"
+    ]
+  },
+  {
+    "slug": "leader-of-money-mule-network-pleads-guilty-4f076d",
+    "title": "Leader of Money Mule Network Pleads Guilty",
+    "summary": "Oleg Korniev, a 42‑year‑old dual Ukrainian‑Russian citizen, pleaded guilty for leading Your Mule Cashout, a money‑laundering operation that operated a sophisticated mule network across the U.S. and Europe from 2007 to 2014.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/leader-of-money-mule-operation-for-cybercriminals-pleads-guilty",
+    "publishedAt": "2026-10-09T16:06:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "leader-of-money-mule-network-pleads-guilty",
+      "article-4f076d",
+      "4f076d"
+    ]
+  },
+  {
     "slug": "hundreds-of-thousands-impacted-by-data-breach-at-i-5e1a5e",
     "title": "Hundreds of Thousands Impacted by Data Breach at iRhythm",
     "summary": "A data breach at iRhythm, a wearable cardiac sensor company, has affected hundreds of thousands of users. The breach began in the summer, and the company has started notifying state authorities about the impact. No specific exploit or vulnerability details are disclosed.",
@@ -44,23 +169,6 @@ export const news: NewsBrief[] = [
       "article-5e1a5e",
       "5e1a5e",
       "hundreds-of-thousands-impacted-by-data-breach-at-irhythm"
-    ]
-  },
-  {
-    "slug": "germany-arrests-suspected-qilin-ransomware-leader-677481",
-    "title": "Germany Arrests Suspected Qilin Ransomware Leader",
-    "summary": "Germany has detained a Russian national extradited from Japan, suspected to be a top member of the Qilin ransomware gang. The arrest follows investigations into the group’s recent attacks on corporate networks, though no specific victims or ransom amounts have been disclosed.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/germany-arrests-alleged-core-qilin-ransomware-member-after-extradition/",
-    "publishedAt": "2026-10-09T15:38:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "germany-arrests-suspected-qilin-ransomware-leader",
-      "article-677481",
-      "677481"
     ]
   },
   {
@@ -679,24 +787,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "fbi-reports-china-linked-hackers-stole-emails-via-2c2286",
-    "title": "FBI Reports China-Linked Hackers Stole Emails via Third-Party Portal",
-    "summary": "Hackers tied to Integrity Technology Group, a Chinese cybersecurity firm, stole emails from Southeast Asian government agencies, law enforcement, healthcare systems, and religious institutions. The FBI and six other countries say the attackers operated a portal that granted third parties access to the compromised data.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/fbi-says-china-linked-hackers-ran.html",
-    "publishedAt": "2026-10-08T18:32:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fbi-reports-china-linked-hackers-stole-emails-via",
-      "article-2c2286",
-      "2c2286",
-      "fbi-reports-china-linked-hackers-stole-emails-via-third-part"
-    ]
-  },
-  {
     "slug": "russian-spy-group-enhances-matchboil-malware-with-2f388d",
     "title": "Russian Spy Group Enhances 'MatchBoil' Malware with Stealth Features",
     "summary": "Cyber‑espionage actor UAC‑0099 has refined its flagship dropper, 'MatchBoil', adding stealth capabilities in campaigns targeting Ukrainian organizations. The update improves concealment but no active exploitation has been reported.",
@@ -856,24 +946,6 @@ export const news: NewsBrief[] = [
       "article-560cb2",
       "560cb2",
       "uac-0099-targets-ukrainian-government-with-ashvein-rat"
-    ]
-  },
-  {
-    "slug": "russian-extortion-gang-targets-us-law-firms-with-o-6ee6bf",
-    "title": "Russian Extortion Gang Targets US Law Firms with Operatives",
-    "summary": "Leaked chats reveal a Russian extortion group coordinating operatives in the United States to target law firms. The gang tracks victims, negotiates multimillion-dollar payments, and deploys “agents” to infiltrate firms. The operation represents a sophisticated extortion campaign aimed at high-value legal clients.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/leaked-chats-show-russian-extortion-gang-sending-agents-to-law-firms",
-    "publishedAt": "2026-10-08T14:46:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "russian-extortion-gang-targets-us-law-firms-with-o",
-      "article-6ee6bf",
-      "6ee6bf",
-      "russian-extortion-gang-targets-us-law-firms-with-operatives"
     ]
   },
   {
@@ -1200,24 +1272,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "16-malicious-firefox-extensions-steal-crypto-walle-70b9dd",
-    "title": "16 Malicious Firefox Extensions Steal Crypto Wallet Recovery Phrases",
-    "summary": "Researchers found 16 malicious Firefox extensions that masquerade as wallet portals and desktop utilities. The extensions intercept recovery phrases and private keys during wallet import flows and attempt to exfiltrate those secrets. Users should remove or block these extensions and verify extensions from trusted sources.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/16-malicious-firefox-extensions-pose-as.html",
-    "publishedAt": "2026-10-08T09:46:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "16-malicious-firefox-extensions-steal-crypto-walle",
-      "article-70b9dd",
-      "70b9dd",
-      "16-malicious-firefox-extensions-steal-crypto-wallet-recovery"
-    ]
-  },
-  {
     "slug": "fortibleed-attackers-lock-legitimate-users-out-of-739cd1",
     "title": "FortiBleed Attackers Lock Legitimate Users Out of Fortinet Devices",
     "summary": "Attackers targeting Fortinet devices use FortiBleed to create new accounts and delete existing ones, locking legitimate users out. The exploit manipulates device authentication, preventing authorized access and disrupting network operations. Fortinet has issued a patch to address the vulnerability and recommends updating firmware immediately.",
@@ -1233,24 +1287,6 @@ export const news: NewsBrief[] = [
       "article-739cd1",
       "739cd1",
       "fortibleed-attackers-lock-legitimate-users-out-of-fortinet-d"
-    ]
-  },
-  {
-    "slug": "build-an-economic-model-to-prioritize-security-spe-468f2a",
-    "title": "Build an Economic Model to Prioritize Security Spending",
-    "summary": "Security leaders can use an economic model to quantify risk, starting with loss scenarios and mapping them to assets. The approach ranks fixes by value at risk, aligns with CFO expectations, and demonstrates the worth of prevented incidents, helping prioritize investments.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/ivan-milenkovic-qualys-cyber-risk-quantification/",
-    "publishedAt": "2026-10-08T06:00:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "build-an-economic-model-to-prioritize-security-spe",
-      "article-468f2a",
-      "468f2a",
-      "build-an-economic-model-to-prioritize-security-spending"
     ]
   },
   {
@@ -1519,24 +1555,6 @@ export const news: NewsBrief[] = [
       "article-b85db0",
       "b85db0",
       "microsoft-outlook-to-block-msix-attachments-starting-novembe"
-    ]
-  },
-  {
-    "slug": "poellm-malware-targets-ai-infrastructure-expands-c-5a5d46",
-    "title": "PoeLLM Malware Targets AI Infrastructure, Expands Crypto‑Mining Botnet",
-    "summary": "Cybersecurity researchers identified PoeLLM malware infecting over 3,400 exposed AI and large language model servers. The malware installs cryptocurrency miners, expanding the botnet’s scale. The campaign, dubbed Canto Incognito, leverages AI infrastructure to deploy miners and grow its network of compromised hosts.",
-    "category": "Malware",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/poellm-malware-infects-3400-servers-to.html",
-    "publishedAt": "2026-10-07T15:33:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "poellm-malware-targets-ai-infrastructure-expands-c",
-      "article-5a5d46",
-      "5a5d46",
-      "poellm-malware-targets-ai-infrastructure-expands-crypto-mini"
     ]
   },
   {
@@ -4483,23 +4501,6 @@ export const news: NewsBrief[] = [
       "article-2333a1",
       "2333a1",
       "cloudflare-introduces-application-profiles-for-positive-secu"
-    ]
-  },
-  {
-    "slug": "cloudflare-waf-tester-reveals-detection-gaps-1b2172",
-    "title": "Cloudflare WAF Tester Reveals Detection Gaps",
-    "summary": "Cloudflare built a WAF tester that adapts requests based on WAF responses, testing six attack categories on a staging environment. The tool uncovered gaps in the WAF’s detection logic, allowing certain attacks to pass. Cloudflare documented the missed detections and applied fixes to close the identified weaknesses.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/adaptive-ai-waf-testing/",
-    "publishedAt": "2026-09-29T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-waf-tester-reveals-detection-gaps",
-      "article-1b2172",
-      "1b2172"
     ]
   }
 ];

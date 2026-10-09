@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Oct 2026 16:18:46 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 19:42:58 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Co‑creator of Empire Market Dark Web Marketplace Sentenced to 40 Years</title>
@@ -17,6 +17,69 @@
       <category>Policy</category>
     </item>
     <item>
+      <title>Japan Arrests Russian National Linked to Qilin Ransomware Gang</title>
+      <link>https://secubuzz.com/news/japan-arrests-russian-national-linked-to-qilin-ran-2b2701</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/japan-arrests-russian-national-linked-to-qilin-ran-2b2701</guid>
+      <description><![CDATA[Japan’s National Police Agency confirmed the arrest and extradition of a Russian national accused of involvement with the Qilin ransomware gang to Germany. The move is part of international cooperation to curb ransomware operations.]]></description>
+      <pubDate>Fri, 09 Oct 2026 18:45:00 GMT</pubDate>
+      <source url="https://therecord.media/japan-germany-ransomware-arrest">The Record</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Cloudflare Expands Clef Decision Model with Clef-omni and Faster Clef</title>
+      <link>https://secubuzz.com/news/cloudflare-expands-clef-decision-model-with-clef-o-74a125</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-expands-clef-decision-model-with-clef-o-74a125</guid>
+      <description><![CDATA[Cloudflare announced Clef-omni, a multimodal decision model handling audio, video, images, and text in one pipeline. The company also reduced Clef-flash pricing and doubled Clef inference speeds, enhancing AI inference efficiency.]]></description>
+      <pubDate>Fri, 09 Oct 2026 18:27:34 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/clef-faster-cheaper-multimodal/">Cloudflare Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>FBI Arrests ShinyHunters Suspect Over Jobs Portal Breach</title>
+      <link>https://secubuzz.com/news/fbi-arrests-shinyhunters-suspect-over-jobs-portal-6cacf1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fbi-arrests-shinyhunters-suspect-over-jobs-portal-6cacf1</guid>
+      <description><![CDATA[The FBI has arrested a suspected co-conspirator of the ShinyHunters extortion group, which breached the FBI’s jobs portal in September and stole sensitive data from almost all FBI agents and job applicants. No charges have been publicly released yet.]]></description>
+      <pubDate>Fri, 09 Oct 2026 17:45:26 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/fbi-arrests-another-shinyhunters.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>AhsayCBS Vulnerabilities Exploited for Webshells and Crypto Mining</title>
+      <link>https://secubuzz.com/news/ahsaycbs-vulnerabilities-exploited-for-webshells-a-18decd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ahsaycbs-vulnerabilities-exploited-for-webshells-a-18decd</guid>
+      <description><![CDATA[Threat actors are exploiting an unpatched critical and a medium‑severity flaw in the AhsayCBS backup management platform to deploy webshells and run cryptocurrency miners. The attacks target the platform’s web interface, allowing remote code execution and data exfiltration until patches are applied.]]></description>
+      <pubDate>Fri, 09 Oct 2026 17:17:23 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/unpatched-ahsaycbs-flaws-exploited-to-deploy-webshells-mine-crypto/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Theft and Remote Commands</title>
+      <link>https://secubuzz.com/news/p7-darksword-ios-exploit-kit-adds-crypto-wallet-th-1506d4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/p7-darksword-ios-exploit-kit-adds-crypto-wallet-th-1506d4</guid>
+      <description><![CDATA[Researchers identified P7 DarkSword, a new iOS exploit kit variant that reduces on‑device footprint, steals keychain and crypto‑wallet data, and establishes two‑way command and control with attackers. The kit targets iOS devices, enabling remote command execution and data exfiltration.]]></description>
+      <pubDate>Fri, 09 Oct 2026 16:29:55 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Security Threats Don’t Stop at the Office: Why Executives’ Families Need Training, Too</title>
+      <link>https://secubuzz.com/news/security-threats-don-t-stop-at-the-office-why-exec-15d4db</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/security-threats-don-t-stop-at-the-office-why-exec-15d4db</guid>
+      <description><![CDATA[The article stresses that executives’ family members can be the weakest security link, urging them to receive cybersecurity training to prevent attacks that exploit personal devices and social engineering tactics.]]></description>
+      <pubDate>Fri, 09 Oct 2026 16:25:05 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyber-risk/security-threats-don-t-stop-at-the-office-why-executives-families-need-training-too">Dark Reading</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Leader of Money Mule Network Pleads Guilty</title>
+      <link>https://secubuzz.com/news/leader-of-money-mule-network-pleads-guilty-4f076d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/leader-of-money-mule-network-pleads-guilty-4f076d</guid>
+      <description><![CDATA[Oleg Korniev, a 42‑year‑old dual Ukrainian‑Russian citizen, pleaded guilty for leading Your Mule Cashout, a money‑laundering operation that operated a sophisticated mule network across the U.S. and Europe from 2007 to 2014.]]></description>
+      <pubDate>Fri, 09 Oct 2026 16:06:00 GMT</pubDate>
+      <source url="https://therecord.media/leader-of-money-mule-operation-for-cybercriminals-pleads-guilty">The Record</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>Hundreds of Thousands Impacted by Data Breach at iRhythm</title>
       <link>https://secubuzz.com/news/hundreds-of-thousands-impacted-by-data-breach-at-i-5e1a5e</link>
       <guid isPermaLink="true">https://secubuzz.com/news/hundreds-of-thousands-impacted-by-data-breach-at-i-5e1a5e</guid>
@@ -24,15 +87,6 @@
       <pubDate>Fri, 09 Oct 2026 16:06:00 GMT</pubDate>
       <source url="https://therecord.media/irhythm-data-breach-reports">The Record</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Germany Arrests Suspected Qilin Ransomware Leader</title>
-      <link>https://secubuzz.com/news/germany-arrests-suspected-qilin-ransomware-leader-677481</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/germany-arrests-suspected-qilin-ransomware-leader-677481</guid>
-      <description><![CDATA[Germany has detained a Russian national extradited from Japan, suspected to be a top member of the Qilin ransomware gang. The arrest follows investigations into the group’s recent attacks on corporate networks, though no specific victims or ransom amounts have been disclosed.]]></description>
-      <pubDate>Fri, 09 Oct 2026 15:38:56 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/germany-arrests-alleged-core-qilin-ransomware-member-after-extradition/">BleepingComputer</source>
-      <category>Ransomware</category>
     </item>
     <item>
       <title>Belarusian Hacktivists Admit 2023 Breach of Russian State Healthcare Network</title>
@@ -341,15 +395,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>FBI Reports China-Linked Hackers Stole Emails via Third-Party Portal</title>
-      <link>https://secubuzz.com/news/fbi-reports-china-linked-hackers-stole-emails-via-2c2286</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fbi-reports-china-linked-hackers-stole-emails-via-2c2286</guid>
-      <description><![CDATA[Hackers tied to Integrity Technology Group, a Chinese cybersecurity firm, stole emails from Southeast Asian government agencies, law enforcement, healthcare systems, and religious institutions. The FBI and six other countries say the attackers operated a portal that granted third parties access to the compromised data.]]></description>
-      <pubDate>Thu, 08 Oct 2026 18:32:21 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/fbi-says-china-linked-hackers-ran.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
       <title>Russian Spy Group Enhances &apos;MatchBoil&apos; Malware with Stealth Features</title>
       <link>https://secubuzz.com/news/russian-spy-group-enhances-matchboil-malware-with-2f388d</link>
       <guid isPermaLink="true">https://secubuzz.com/news/russian-spy-group-enhances-matchboil-malware-with-2f388d</guid>
@@ -411,51 +456,6 @@
       <pubDate>Thu, 08 Oct 2026 15:45:00 GMT</pubDate>
       <source url="https://therecord.media/cryptocurrency-sim-swap-london">The Record</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Cisco Releases Patches for Twelve Critical Vulnerabilities</title>
-      <link>https://secubuzz.com/news/cisco-releases-patches-for-twelve-critical-vulnera-a636f9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisco-releases-patches-for-twelve-critical-vulnera-a636f9</guid>
-      <description><![CDATA[Cisco has released patches for twelve critical vulnerabilities that could enable unauthorized access, information leaks, privilege escalation, denial‑of‑service, and remote code execution. The fixes address defects in Cisco software, preventing attackers from exploiting these weaknesses. Users should apply the updates immediately to mitigate potential security risks.]]></description>
-      <pubDate>Thu, 08 Oct 2026 15:28:06 GMT</pubDate>
-      <source url="https://www.securityweek.com/cisco-patches-a-dozen-critical-vulnerabilities/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>UAC‑0099 Targets Ukrainian Government with ASHVEIN RAT</title>
-      <link>https://secubuzz.com/news/uac-0099-targets-ukrainian-government-with-ashvein-560cb2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/uac-0099-targets-ukrainian-government-with-ashvein-560cb2</guid>
-      <description><![CDATA[UAC‑0099, a Russia‑aligned threat actor, has deployed the ASHVEIN RAT—a .NET infostealer and remote access trojan—to target Ukrainian government personnel. The malware hides command and control instructions within HTML, allowing covert operations. TrendAI tracks the activity under the cluster Earth Sirrush, previously known as SHADOW‑EARTH‑065. The campaign poses a significant espionage threat.]]></description>
-      <pubDate>Thu, 08 Oct 2026 15:26:56 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/uac-0099-targets-ukrainian-government.html">The Hacker News</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>Russian Extortion Gang Targets US Law Firms with Operatives</title>
-      <link>https://secubuzz.com/news/russian-extortion-gang-targets-us-law-firms-with-o-6ee6bf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/russian-extortion-gang-targets-us-law-firms-with-o-6ee6bf</guid>
-      <description><![CDATA[Leaked chats reveal a Russian extortion group coordinating operatives in the United States to target law firms. The gang tracks victims, negotiates multimillion-dollar payments, and deploys “agents” to infiltrate firms. The operation represents a sophisticated extortion campaign aimed at high-value legal clients.]]></description>
-      <pubDate>Thu, 08 Oct 2026 14:46:00 GMT</pubDate>
-      <source url="https://therecord.media/leaked-chats-show-russian-extortion-gang-sending-agents-to-law-firms">The Record</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Security Awareness Training Still Relevant, Calls for Modernization</title>
-      <link>https://secubuzz.com/news/security-awareness-training-still-relevant-calls-f-1fd1d4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/security-awareness-training-still-relevant-calls-f-1fd1d4</guid>
-      <description><![CDATA[Enterprises continue to run security awareness programs, yet their effectiveness is questioned. Experts suggest updating curricula to address evolving threats and employee engagement. The shift aims to improve real-world protection rather than relying on outdated training models.]]></description>
-      <pubDate>Thu, 08 Oct 2026 14:30:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/security-awareness-training-isnt-dead-but-it-needs-a-rethink/">SecurityWeek</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>ARTEX AI Pentesting Tool Used in Data Theft Attacks on South Korean Financial Firms</title>
-      <link>https://secubuzz.com/news/artex-ai-pentesting-tool-used-in-data-theft-attack-58f6d6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/artex-ai-pentesting-tool-used-in-data-theft-attack-58f6d6</guid>
-      <description><![CDATA[A campaign targeting South Korean financial institutions employed the ARTEX AI pentesting tool to conduct attacks, leading to data exfiltration. The activity, active from late September to early October 2026, involved threat actors exploiting the tool’s capabilities to breach systems and steal sensitive information.]]></description>
-      <pubDate>Thu, 08 Oct 2026 14:12:34 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/artex-ai-pentesting-tool-used-in-data.html">The Hacker News</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>
