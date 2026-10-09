@@ -18,6 +18,19 @@
     ]
   },
   {
+    "id": "https://www.bleepingcomputer.com/news/security/hackers-abuse-google-ads-bing-redirects-to-push-claude-clickfix-attacks/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-abuse-google-ads-bing-redirects-to-push-claude-clickfix-attacks/",
+    "title": "Hackers Use Bing Redirects in Google Ads to Deliver ClickFix Ransomware",
+    "headline": "Hackers Use Bing Redirects in Google Ads to Deliver ClickFix Ransomware",
+    "summary": "Hackers exploit Bing search-result redirects embedded in Google search ads to send users to counterfeit Claude installers that install ClickFix ransomware. The attack vector relies on legitimate advertising platforms to distribute malware, enabling widespread delivery without user interaction beyond clicking ads.",
+    "category": "RANSOMWARE",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-09T20:31:37.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-abuse-google-ads-bing-redirects-to-push-claude-clickfix-attacks/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.darkreading.com/cybersecurity-analytics/ai-scramble-cybersecurity-ma-boom",
     "sourceUrl": "https://www.darkreading.com/cybersecurity-analytics/ai-scramble-cybersecurity-ma-boom",
     "title": "AI-Driven Cybersecurity M&A Surge Hits 117 Deals",
@@ -28,6 +41,19 @@
     "source": "Dark Reading",
     "publishedAt": "2026-10-09T19:26:26.000Z",
     "url": "https://www.darkreading.com/cybersecurity-analytics/ai-scramble-cybersecurity-ma-boom",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/credential-stealing-github-actions.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/credential-stealing-github-actions.html",
+    "title": "Credential-Stealing GitHub Actions Workflows Planted in Thousands of Repositories",
+    "headline": "Credential-Stealing GitHub Actions Workflows Planted in Thousands of Repositories",
+    "summary": "Researchers uncovered a campaign that compromised two high-profile open-source maintainer accounts, injecting malicious GitHub Actions workflows into over 340 repositories. The attackers used the compromised accounts to push credential-stealing code, potentially exposing secrets stored in those workflows.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-09T19:14:28.000Z",
+    "url": "https://thehackernews.com/2026/10/credential-stealing-github-actions.html",
     "additionalSources": []
   },
   {
@@ -3770,31 +3796,5 @@
         "sourceUrl": "https://thehackernews.com/2026/09/openai-pauses-tool-use-after-agent.html"
       }
     ]
-  },
-  {
-    "id": "https://blog.cloudflare.com/ipsec-downgrade-protection/",
-    "sourceUrl": "https://blog.cloudflare.com/ipsec-downgrade-protection/",
-    "title": "IETF Introduces Transcript Authentication to Block Quantum Downgrade Attacks on IPsec",
-    "headline": "IETF Introduces Transcript Authentication to Block Quantum Downgrade Attacks on IPsec",
-    "summary": "Researchers identified a protocol flaw that allows quantum attackers to downgrade post‑quantum IPsec tunnels to classical cryptography. The IETF has adopted a transcript authentication extension to prevent such quantum downgrade attacks, strengthening IPsec’s resilience against future quantum threats.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Cloudflare Security",
-    "publishedAt": "2026-09-29T13:00:00.000Z",
-    "url": "https://blog.cloudflare.com/ipsec-downgrade-protection/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://blog.cloudflare.com/threat-signals/",
-    "sourceUrl": "https://blog.cloudflare.com/threat-signals/",
-    "title": "Cloudflare Expands Threat Signals to All Accounts",
-    "headline": "Cloudflare Expands Threat Signals to All Accounts",
-    "summary": "Cloudflare now offers Threat Signals to every account, automatically parsing open-source threat reports, extracting structured indicators, and linking threat context to WAF rules via the Threat Events Platform. This enhances real-time threat visibility and simplifies rule creation for all users.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "publishedAt": "2026-09-29T13:00:00.000Z",
-    "url": "https://blog.cloudflare.com/threat-signals/",
-    "additionalSources": []
   }
 ]

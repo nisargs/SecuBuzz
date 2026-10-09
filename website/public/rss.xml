@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Oct 2026 20:18:01 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 20:56:48 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Co‑creator of Empire Market Dark Web Marketplace Sentenced to 40 Years</title>
@@ -17,6 +17,15 @@
       <category>Policy</category>
     </item>
     <item>
+      <title>Hackers Use Bing Redirects in Google Ads to Deliver ClickFix Ransomware</title>
+      <link>https://secubuzz.com/news/hackers-use-bing-redirects-in-google-ads-to-delive-591002</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-bing-redirects-in-google-ads-to-delive-591002</guid>
+      <description><![CDATA[Hackers exploit Bing search-result redirects embedded in Google search ads to send users to counterfeit Claude installers that install ClickFix ransomware. The attack vector relies on legitimate advertising platforms to distribute malware, enabling widespread delivery without user interaction beyond clicking ads.]]></description>
+      <pubDate>Fri, 09 Oct 2026 20:31:37 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/hackers-abuse-google-ads-bing-redirects-to-push-claude-clickfix-attacks/">BleepingComputer</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
       <title>AI-Driven Cybersecurity M&amp;A Surge Hits 117 Deals</title>
       <link>https://secubuzz.com/news/ai-driven-cybersecurity-m-a-surge-hits-117-deals-1677c3</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ai-driven-cybersecurity-m-a-surge-hits-117-deals-1677c3</guid>
@@ -24,6 +33,15 @@
       <pubDate>Fri, 09 Oct 2026 19:26:26 GMT</pubDate>
       <source url="https://www.darkreading.com/cybersecurity-analytics/ai-scramble-cybersecurity-ma-boom">Dark Reading</source>
       <category>Policy</category>
+    </item>
+    <item>
+      <title>Credential-Stealing GitHub Actions Workflows Planted in Thousands of Repositories</title>
+      <link>https://secubuzz.com/news/credential-stealing-github-actions-workflows-plant-402946</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/credential-stealing-github-actions-workflows-plant-402946</guid>
+      <description><![CDATA[Researchers uncovered a campaign that compromised two high-profile open-source maintainer accounts, injecting malicious GitHub Actions workflows into over 340 repositories. The attackers used the compromised accounts to push credential-stealing code, potentially exposing secrets stored in those workflows.]]></description>
+      <pubDate>Fri, 09 Oct 2026 19:14:28 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/credential-stealing-github-actions.html">The Hacker News</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>Japan Arrests Russian National Linked to Qilin Ransomware Gang</title>
@@ -437,24 +455,6 @@
       <description><![CDATA[Hackers accessed an ASOS employee account, obtaining personal information such as names and contact details, along with some non‑personal account data. The breach was identified through an external investigation, highlighting a compromise of internal credentials and potential exposure of employee data.]]></description>
       <pubDate>Thu, 08 Oct 2026 16:57:00 GMT</pubDate>
       <source url="https://therecord.media/asos-says-hackers-tricked-employee-access-push-notification">The Record</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>FOR577 Update Adds Scripts for AI Agent Forensic Review</title>
-      <link>https://secubuzz.com/news/for577-update-adds-scripts-for-ai-agent-forensic-r-57dd7d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/for577-update-adds-scripts-for-ai-agent-forensic-r-57dd7d</guid>
-      <description><![CDATA[The SANS Internet Storm Center released a major update to FOR577, adding new scripts for forensic review of AI agent activity. The update covers popular AI coding assistants such as Claude Code, Codex, Gemini CLI, Cursor, Copilot, Warp, Windsurf, Qwen Code, OpenCode, and Hermes, detailing chat history locations and evidence gathering.]]></description>
-      <pubDate>Thu, 08 Oct 2026 16:52:53 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33410">SANS Internet Storm Center</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Japan Reports Surge in Web Data Leaks via Mobile API Abuse</title>
-      <link>https://secubuzz.com/news/japan-reports-surge-in-web-data-leaks-via-mobile-a-275d4f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/japan-reports-surge-in-web-data-leaks-via-mobile-a-275d4f</guid>
-      <description><![CDATA[Japanese organizations experienced multiple personal data leaks as attackers exploited mobile app APIs and known software flaws. The JPCERT/CC issued an alert on October 8, 2026, noting the rise in leaks but did not identify specific attackers or affected entities.]]></description>
-      <pubDate>Thu, 08 Oct 2026 15:45:56 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/japan-sees-sharp-rise-in-web-data-leaks.html">The Hacker News</source>
       <category>Breach</category>
     </item>
   </channel>

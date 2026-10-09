@@ -29,6 +29,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "hackers-use-bing-redirects-in-google-ads-to-delive-591002",
+    "title": "Hackers Use Bing Redirects in Google Ads to Deliver ClickFix Ransomware",
+    "summary": "Hackers exploit Bing search-result redirects embedded in Google search ads to send users to counterfeit Claude installers that install ClickFix ransomware. The attack vector relies on legitimate advertising platforms to distribute malware, enabling widespread delivery without user interaction beyond clicking ads.",
+    "category": "Ransomware",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-abuse-google-ads-bing-redirects-to-push-claude-clickfix-attacks/",
+    "publishedAt": "2026-10-09T20:31:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-use-bing-redirects-in-google-ads-to-delive",
+      "article-591002",
+      "591002",
+      "hackers-use-bing-redirects-in-google-ads-to-deliver-clickfix"
+    ]
+  },
+  {
     "slug": "ai-driven-cybersecurity-m-a-surge-hits-117-deals-1677c3",
     "title": "AI-Driven Cybersecurity M&A Surge Hits 117 Deals",
     "summary": "The cybersecurity sector saw a boom in mergers and acquisitions, with 117 deals announced in the latest quarter. The trend is driven by AI advancements, attracting buyers beyond traditional security firms and reshaping the industry landscape.",
@@ -43,6 +61,24 @@ export const news: NewsBrief[] = [
       "ai-driven-cybersecurity-m-a-surge-hits-117-deals",
       "article-1677c3",
       "1677c3"
+    ]
+  },
+  {
+    "slug": "credential-stealing-github-actions-workflows-plant-402946",
+    "title": "Credential-Stealing GitHub Actions Workflows Planted in Thousands of Repositories",
+    "summary": "Researchers uncovered a campaign that compromised two high-profile open-source maintainer accounts, injecting malicious GitHub Actions workflows into over 340 repositories. The attackers used the compromised accounts to push credential-stealing code, potentially exposing secrets stored in those workflows.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/credential-stealing-github-actions.html",
+    "publishedAt": "2026-10-09T19:14:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "credential-stealing-github-actions-workflows-plant",
+      "article-402946",
+      "402946",
+      "credential-stealing-github-actions-workflows-planted-in-thou"
     ]
   },
   {
@@ -4465,41 +4501,6 @@ export const news: NewsBrief[] = [
       "article-3eb4a2",
       "3eb4a2",
       "storm-3068-exploits-compromised-identity-for-cloud-access"
-    ]
-  },
-  {
-    "slug": "ietf-introduces-transcript-authentication-to-block-4485c0",
-    "title": "IETF Introduces Transcript Authentication to Block Quantum Downgrade Attacks on IPsec",
-    "summary": "Researchers identified a protocol flaw that allows quantum attackers to downgrade post‑quantum IPsec tunnels to classical cryptography. The IETF has adopted a transcript authentication extension to prevent such quantum downgrade attacks, strengthening IPsec’s resilience against future quantum threats.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/ipsec-downgrade-protection/",
-    "publishedAt": "2026-09-29T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ietf-introduces-transcript-authentication-to-block",
-      "article-4485c0",
-      "4485c0",
-      "ietf-introduces-transcript-authentication-to-block-quantum-d"
-    ]
-  },
-  {
-    "slug": "cloudflare-expands-threat-signals-to-all-accounts-ad238f",
-    "title": "Cloudflare Expands Threat Signals to All Accounts",
-    "summary": "Cloudflare now offers Threat Signals to every account, automatically parsing open-source threat reports, extracting structured indicators, and linking threat context to WAF rules via the Threat Events Platform. This enhances real-time threat visibility and simplifies rule creation for all users.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/threat-signals/",
-    "publishedAt": "2026-09-29T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-expands-threat-signals-to-all-accounts",
-      "article-ad238f",
-      "ad238f"
     ]
   }
 ];
