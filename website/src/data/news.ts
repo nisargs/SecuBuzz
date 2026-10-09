@@ -29,6 +29,98 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "ai-agents-enable-new-business-email-compromise-tac-5c4452",
+    "title": "AI Agents Enable New Business Email Compromise Tactics",
+    "summary": "AI agents that gain authority over business systems can be manipulated by attackers to act as business email compromise (BEC) victims. The new technique increases the risk of social engineering attacks by allowing automated agents to send fraudulent messages, potentially leading to credential theft or financial loss.",
+    "category": "Policy",
+    "severity": "MEDIUM",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/social-engineering-ai-agents-bec-2026",
+    "publishedAt": "2026-10-09T13:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-agents-enable-new-business-email-compromise-tac",
+      "article-5c4452",
+      "5c4452",
+      "ai-agents-enable-new-business-email-compromise-tactics"
+    ]
+  },
+  {
+    "slug": "cloudflare-launches-on-demand-cpu-and-memory-profi-38f569",
+    "title": "Cloudflare Launches On‑Demand CPU and Memory Profiling for Workers",
+    "summary": "Cloudflare now offers on‑demand CPU and memory profiling for Workers and Durable Objects, generating interactive flamegraphs directly in production. The feature helps developers quickly identify memory leaks and performance bottlenecks, improving application reliability and reducing troubleshooting time.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/workers-on-demand-profiling/",
+    "publishedAt": "2026-10-09T13:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cloudflare-launches-on-demand-cpu-and-memory-profi",
+      "article-38f569",
+      "38f569",
+      "cloudflare-launches-on-demand-cpu-and-memory-profiling-for-w"
+    ]
+  },
+  {
+    "slug": "sonicwall-sma1000-vulnerability-cve-2026-102255-ex-2e5192",
+    "title": "SonicWall SMA1000 Vulnerability CVE-2026-102255 Exploited in Attacks",
+    "summary": "Attackers are actively exploiting the maximum‑severity flaw CVE-2026-102255 in SonicWall SMA1000 appliances, which was patched three days ago. The vulnerability allows remote code execution, enabling attackers to take control of affected devices. SonicWall has issued a patch; users must update immediately to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/max-severity-sonicwall-sma1000-flaw-now-exploited-in-attacks/",
+    "publishedAt": "2026-10-09T12:32:16.000Z",
+    "cves": [
+      "CVE-2026-102255"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "sonicwall-sma1000-vulnerability-cve-2026-102255-ex",
+      "article-2e5192",
+      "2e5192",
+      "sonicwall-sma1000-vulnerability-cve-2026-102255-exploited-in"
+    ]
+  },
+  {
+    "slug": "high-severity-nvidia-vulnerability-lets-unauthenti-4455e9",
+    "title": "High‑severity NVIDIA vulnerability lets unauthenticated attackers crash GPU monitoring",
+    "summary": "Hundreds of internet‑exposed GPU servers were vulnerable to a high‑severity flaw in NVIDIA’s DCGM Exporter (CVE‑2026‑47483). The flaw allows unauthenticated attackers to crash the monitoring service, potentially disrupting AI workloads. NVIDIA rated the issue CVSS 8.2 and issued a security bulletin on July 28, 2026.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/09/nvidia-dcgm-exporter-vulnerability-cve-2026-47483/",
+    "publishedAt": "2026-10-09T12:26:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "high-severity-nvidia-vulnerability-lets-unauthenti",
+      "article-4455e9",
+      "4455e9",
+      "high-severity-nvidia-vulnerability-lets-unauthenticated-atta"
+    ]
+  },
+  {
+    "slug": "flax-typhoon-exploits-five-flaws-as-cisa-sets-octo-338685",
+    "title": "Flax Typhoon Exploits Five Flaws as CISA Sets October 11 Deadline for Federal Agencies",
+    "summary": "CISA added five security flaws to its Known Exploited Vulnerabilities catalog after abuse by the China‑linked threat actor Flax Typhoon. The catalog lists CVE‑2015‑3306, a ProFTPD access‑control flaw with CVSS 10.0, among other vulnerabilities. The update sets an October 11 deadline for federal agencies to patch.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/flax-typhoon-exploits-five-flaws-as.html",
+    "publishedAt": "2026-10-09T12:21:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "flax-typhoon-exploits-five-flaws-as-cisa-sets-octo",
+      "article-338685",
+      "338685",
+      "flax-typhoon-exploits-five-flaws-as-cisa-sets-october-11-dea"
+    ]
+  },
+  {
     "slug": "ai-driven-breaches-target-korean-banks-tensorlake-63a408",
     "title": "AI-Driven Breaches Target Korean Banks, Tensorlake SDK Compromised",
     "summary": "AI techniques were employed in recent breaches of Korean banks, while the Tensorlake npm SDK was compromised, exposing sensitive data. Additionally, telemetry from NVIDIA GPU monitors was leaked. These incidents highlight the growing threat of AI‑assisted attacks and third‑party component vulnerabilities. No public fix is announced yet.",
@@ -175,24 +267,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "fbi-seizes-domains-used-by-flax-typhoon-hacking-to-d1a25c",
-    "title": "FBI Seizes Domains Used by Flax Typhoon Hacking Tools",
-    "summary": "The FBI seized seven domains that operated the Microscan and FishHub hacking tools, linked to Chinese state-sponsored group Flax Typhoon. The tools targeted critical infrastructure and other organizations worldwide. The seizure disrupts the group’s ability to conduct cyberattacks.",
-    "category": "Malware",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/09/fbi-flax-typhoon-microscan-fishhub-domains/",
-    "publishedAt": "2026-10-09T09:44:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fbi-seizes-domains-used-by-flax-typhoon-hacking-to",
-      "article-d1a25c",
-      "d1a25c",
-      "fbi-seizes-domains-used-by-flax-typhoon-hacking-tools"
-    ]
-  },
-  {
     "slug": "gobalance-vulnerability-allows-hijacking-of-onion-3ee840",
     "title": "GoBalance Vulnerability Allows Hijacking of .onion Addresses",
     "summary": "A flaw in GoBalance lets attackers derive the secret key for a site’s .onion address using only public data, enabling them to seize the address and redirect traffic to a malicious copy. The vulnerability was disclosed by Searchlight Cyber on October 8.",
@@ -228,23 +302,56 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "citrix-urges-immediate-patching-of-critical-netsca-7520e9",
-    "title": "Citrix Urges Immediate Patching of Critical NetScaler Vulnerability",
-    "summary": "Citrix has identified a critical flaw, CVE-2026-107406, in its NetScaler product that could allow attackers to execute code remotely or cause a denial of service. The vulnerability requires immediate patching to prevent potential exploitation and service disruption.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
+    "slug": "us-disrupts-chinese-state-sponsored-hacking-tools-7603f4",
+    "title": "US Disrupts Chinese State‑Sponsored Hacking Tools",
+    "summary": "US authorities disrupted Chinese APT groups using MicroScan and FishHub to scan and hack critical infrastructure in the US and abroad. The action targeted the tools employed by Flax Typhoon and other state‑sponsored actors.",
+    "category": "Malware",
+    "severity": "LOW",
     "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/citrix-urges-immediate-patching-of-critical-netscaler-vulnerability/",
-    "publishedAt": "2026-10-09T06:53:53.000Z",
-    "cves": [
-      "CVE-2026-107406"
-    ],
+    "sourceUrl": "https://www.securityweek.com/us-disrupts-chinese-state-sponsored-hacking-tools/",
+    "publishedAt": "2026-10-09T08:36:37.000Z",
+    "cves": [],
     "additionalSources": [],
     "aliases": [
-      "citrix-urges-immediate-patching-of-critical-netsca",
-      "article-7520e9",
-      "7520e9",
-      "citrix-urges-immediate-patching-of-critical-netscaler-vulner"
+      "us-disrupts-chinese-state-sponsored-hacking-tools",
+      "article-7603f4",
+      "7603f4"
+    ]
+  },
+  {
+    "slug": "citrix-urges-immediate-patch-for-netscaler-rce-vul-27e167",
+    "title": "Citrix Urges Immediate Patch for NetScaler RCE Vulnerability",
+    "summary": "Citrix warned that a critical, unauthenticated remote code execution flaw exists in NetScaler ADC and Gateway appliances. Administrators must apply the vendor’s patch immediately to prevent exploitation of the vulnerability.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/citrix-warns-admins-to-patch-new-netscaler-rce-flaw-immediately/",
+    "publishedAt": "2026-10-09T08:27:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "citrix-urges-immediate-patch-for-netscaler-rce-vul",
+      "article-27e167",
+      "27e167",
+      "citrix-urges-immediate-patch-for-netscaler-rce-vulnerability"
+    ]
+  },
+  {
+    "slug": "researchers-exploit-remote-vulnerability-on-fully-1049e5",
+    "title": "Researchers Exploit Remote Vulnerability on Fully Patched Google Pixel 10",
+    "summary": "Three teams demonstrated remote exploitation of a flaw in the Google Pixel 10 during the Pwn2Own Ireland contest, despite the device being fully patched. The attacks bypassed all current security updates, allowing attackers to gain remote code execution on the phone. The vulnerability was reported to Google and patched after the contest.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/three-teams-demonstrate-remote-hacks-of.html",
+    "publishedAt": "2026-10-09T08:26:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "researchers-exploit-remote-vulnerability-on-fully",
+      "article-1049e5",
+      "1049e5",
+      "researchers-exploit-remote-vulnerability-on-fully-patched-go"
     ]
   },
   {
@@ -785,24 +892,6 @@ export const news: NewsBrief[] = [
       "article-5a26c0",
       "5a26c0",
       "youtubers-targeted-by-phishing-scam-using-fake-sponsorships"
-    ]
-  },
-  {
-    "slug": "sonicwall-and-splunk-patch-critical-vulnerabilitie-6f31db",
-    "title": "SonicWall and Splunk Patch Critical Vulnerabilities",
-    "summary": "SonicWall and Splunk have released patches for critical and high‑severity flaws that could let attackers bypass authentication, run arbitrary code, and gain elevated privileges. The vulnerabilities affect authentication mechanisms and code execution paths, requiring immediate application of the vendor patches to prevent exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/sonicwall-and-splunk-patch-critical-vulnerabilities/",
-    "publishedAt": "2026-10-08T12:37:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sonicwall-and-splunk-patch-critical-vulnerabilitie",
-      "article-6f31db",
-      "6f31db",
-      "sonicwall-and-splunk-patch-critical-vulnerabilities"
     ]
   },
   {
@@ -1434,24 +1523,6 @@ export const news: NewsBrief[] = [
       "article-1d63b2",
       "1d63b2",
       "southern-company-utility-accounts-breached-400-000-customers"
-    ]
-  },
-  {
-    "slug": "ot-cybersecurity-coalition-urges-cisa-to-create-ma-468fc0",
-    "title": "OT Cybersecurity Coalition Urges CISA to Create Mandatory Federal Rules",
-    "summary": "The Operational Technology Cybersecurity Coalition released a white paper urging CISA to establish mandatory federal OT rules. The proposal aims to strengthen security for critical infrastructure systems that monitor and control industrial processes. The coalition calls for a new directive to address gaps in current OT cybersecurity regulations.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/cyber-experts-call-on-cisa-require-ot-security",
-    "publishedAt": "2026-10-07T14:03:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ot-cybersecurity-coalition-urges-cisa-to-create-ma",
-      "article-468fc0",
-      "468fc0",
-      "ot-cybersecurity-coalition-urges-cisa-to-create-mandatory-fe"
     ]
   },
   {
@@ -4437,78 +4508,6 @@ export const news: NewsBrief[] = [
       "article-431cd5",
       "431cd5",
       "baicells-nova-430h-vulnerability-allows-malformed-message-de"
-    ]
-  },
-  {
-    "slug": "deepfakes-drive-board-prioritization-after-executi-673e00",
-    "title": "Deepfakes Drive Board Prioritization After Executive Fall",
-    "summary": "A 2026 Deepfake Readiness Index shows nearly 75% of security leaders have faced or suspect deepfake attacks, yet only 10% have dedicated defenses. Real‑time communications—phone calls, remote interviews, video meetings—are prime targets for AI impersonation, exposing organizations to identity fraud and operational risk.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/pindrop-enterprise-deepfake-attacks-report/",
-    "publishedAt": "2026-09-29T11:59:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "deepfakes-drive-board-prioritization-after-executi",
-      "article-673e00",
-      "673e00",
-      "deepfakes-drive-board-prioritization-after-executive-fall"
-    ]
-  },
-  {
-    "slug": "vietnamese-man-charged-in-16m-pig-butchering-crypt-2d2de2",
-    "title": "Vietnamese Man Charged in $16M Pig Butchering Crypto Scam",
-    "summary": "A Vietnamese national faces money‑laundering charges for orchestrating a pig‑butchering scheme that stole $16 million in cryptocurrency from a victim. The case highlights the growing threat of sophisticated financial fraud targeting crypto investors.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/vietnamese-man-charged-in-16-million-pig-butchering-crypto-scam/",
-    "publishedAt": "2026-09-29T11:41:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "vietnamese-man-charged-in-16m-pig-butchering-crypt",
-      "article-2d2de2",
-      "2d2de2",
-      "vietnamese-man-charged-in-16m-pig-butchering-crypto-scam"
-    ]
-  },
-  {
-    "slug": "four-cyber-threats-harboring-big-plans-for-the-fut-575f3e",
-    "title": "Four Cyber Threats Harboring Big Plans for the Future",
-    "summary": "SecurityWeek highlights AI, supply‑chain exposure, quantum computing, and geopolitical conflict as emerging threats that test security programs. The article urges organizations to integrate disruption preparedness into daily operations to mitigate future risks.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/four-cyber-threats-harboring-big-plans-for-the-future/",
-    "publishedAt": "2026-09-29T11:30:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "four-cyber-threats-harboring-big-plans-for-the-fut",
-      "article-575f3e",
-      "575f3e",
-      "four-cyber-threats-harboring-big-plans-for-the-future"
-    ]
-  },
-  {
-    "slug": "cybersecurity-hiring-practices-exclude-junior-tale-1c5dd2",
-    "title": "Cybersecurity Hiring Practices Exclude Junior Talent",
-    "summary": "A recent report shows that most cybersecurity firms limit entry-level roles, with over 80% of executives using full training budgets and 70% lacking junior positions. Short training sessions are suggested to accelerate new hires’ productivity and skill development across tools.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/skillbit-cybersecurity-micro-training-trends-report/",
-    "publishedAt": "2026-09-29T11:00:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cybersecurity-hiring-practices-exclude-junior-tale",
-      "article-1c5dd2",
-      "1c5dd2",
-      "cybersecurity-hiring-practices-exclude-junior-talent"
     ]
   }
 ];
