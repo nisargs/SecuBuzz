@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Oct 2026 08:19:44 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 12:19:51 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Co‑creator of Empire Market Dark Web Marketplace Sentenced to 40 Years</title>
@@ -17,6 +17,105 @@
       <category>Policy</category>
     </item>
     <item>
+      <title>AI-Driven Breaches Target Korean Banks, Tensorlake SDK Compromised</title>
+      <link>https://secubuzz.com/news/ai-driven-breaches-target-korean-banks-tensorlake-63a408</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-driven-breaches-target-korean-banks-tensorlake-63a408</guid>
+      <description><![CDATA[AI techniques were employed in recent breaches of Korean banks, while the Tensorlake npm SDK was compromised, exposing sensitive data. Additionally, telemetry from NVIDIA GPU monitors was leaked. These incidents highlight the growing threat of AI‑assisted attacks and third‑party component vulnerabilities. No public fix is announced yet.]]></description>
+      <pubDate>Fri, 09 Oct 2026 12:03:50 GMT</pubDate>
+      <source url="https://www.securityweek.com/in-other-news-ai-used-in-korean-bank-breaches-poem-guided-botnet-empire-admin-gets-40-years/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Google Domains Hijacked via ccTLD Exploits</title>
+      <link>https://secubuzz.com/news/google-domains-hijacked-via-cctld-exploits-7b0459</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-domains-hijacked-via-cctld-exploits-7b0459</guid>
+      <description><![CDATA[Hackers hijacked the .gh, .sl, and .as country code top‑level domains and used them to obtain HTTPS certificates for several Google domains. The compromise allowed attackers to intercept traffic to those sites, potentially enabling man‑in‑the‑middle attacks. Google has not yet released a mitigation or patch.]]></description>
+      <pubDate>Fri, 09 Oct 2026 11:43:14 GMT</pubDate>
+      <source url="https://www.securityweek.com/google-domains-impacted-by-recent-cctld-domain-hijacks/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>AI Velocity Paradox Exposes Security Lag in Rapid AI Adoption</title>
+      <link>https://secubuzz.com/news/ai-velocity-paradox-exposes-security-lag-in-rapid-2f0aaa</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-velocity-paradox-exposes-security-lag-in-rapid-2f0aaa</guid>
+      <description><![CDATA[A SailPoint report titled "Horizons of Identity Security" shows enterprises deploying autonomous AI agents at high speed while still relying on legacy, human‑centric security controls. The study highlights a critical velocity paradox that leaves AI‑driven operations vulnerable to outdated defenses.]]></description>
+      <pubDate>Fri, 09 Oct 2026 11:30:00 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/the-ai-velocity-paradox-why-security-is.html">The Hacker News</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Ukrainian‑Russian Dual Citizen Pleads Guilty to 15,000‑Member Money‑Mule Network</title>
+      <link>https://secubuzz.com/news/ukrainian-russian-dual-citizen-pleads-guilty-to-15-34dc4c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ukrainian-russian-dual-citizen-pleads-guilty-to-15-34dc4c</guid>
+      <description><![CDATA[A Ukrainian‑Russian dual citizen admitted to operating a money‑laundering network of 15,000 mules that processed millions of dollars for global cybercriminals. The case underscores the scale of financial crimes tied to cybercrime operations and the legal consequences for facilitators.]]></description>
+      <pubDate>Fri, 09 Oct 2026 11:14:28 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/ukrainian-russian-dual-citizen-admits-to-laundering-millions-for-cybercriminals/">BleepingComputer</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Unpatched AhsayCBS Vulnerabilities Exploited in the Wild</title>
+      <link>https://secubuzz.com/news/unpatched-ahsaycbs-vulnerabilities-exploited-in-th-4f5c21</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/unpatched-ahsaycbs-vulnerabilities-exploited-in-th-4f5c21</guid>
+      <description><![CDATA[The AhsayCBS platform suffers from two unpatched flaws, CVE-2026-105133 and CVE-2026-105134, that let attackers bypass authentication and inject operating‑system commands. Exploitation can lead to full system compromise. Immediate patching or disabling the affected modules is required.]]></description>
+      <pubDate>Fri, 09 Oct 2026 10:23:42 GMT</pubDate>
+      <source url="https://www.securityweek.com/unpatched-ahsaycbs-vulnerabilities-exploited-in-the-wild/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Microsoft to Cease Security Updates for Unsupported Windows Devices</title>
+      <link>https://secubuzz.com/news/microsoft-to-cease-security-updates-for-unsupporte-4c293f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-to-cease-security-updates-for-unsupporte-4c293f</guid>
+      <description><![CDATA[Microsoft announced that devices running unsupported Windows versions will no longer receive security updates after the next Windows Update certificate rotation in 2027. The move means older systems will become increasingly vulnerable without official patches, urging users to upgrade or migrate to supported platforms.]]></description>
+      <pubDate>Fri, 09 Oct 2026 10:12:24 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-outdated-windows-devices-will-lose-security-protection-next-year/">BleepingComputer</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Midnight Mimosa Malware Targets Budget Android Devices Worldwide</title>
+      <link>https://secubuzz.com/news/midnight-mimosa-malware-targets-budget-android-dev-177f46</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/midnight-mimosa-malware-targets-budget-android-dev-177f46</guid>
+      <description><![CDATA[Midnight Mimosa is a preinstalled malware campaign on low-cost Android devices, affecting over 150 countries. The malware is embedded in firmware, enabling attackers to gain persistent access and potentially exfiltrate data from compromised devices. No public patch or mitigation is currently available.]]></description>
+      <pubDate>Fri, 09 Oct 2026 09:55:35 GMT</pubDate>
+      <source url="https://www.securityweek.com/pre-baked-firmware-malware-hits-budget-android-devices-in-150-countries/">SecurityWeek</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Anthropic Launches Free AI‑Powered Security Scans for Open‑Source Maintainers</title>
+      <link>https://secubuzz.com/news/anthropic-launches-free-ai-powered-security-scans-2df6bb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-launches-free-ai-powered-security-scans-2df6bb</guid>
+      <description><![CDATA[Anthropic introduced OSS Scanner, a free service that applies its Claude AI models to detect security vulnerabilities in open‑source projects. Maintainers who opt in receive periodic scans, detailed reports, and fix guidance. The tool builds on Anthropic’s Project Glasswing experience and aims to reduce human validation bottlenecks.]]></description>
+      <pubDate>Fri, 09 Oct 2026 09:55:24 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/09/anthropic-oss-scanner-ai-security-scans/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>FBI Seizes Domains Used by Flax Typhoon Hacking Tools</title>
+      <link>https://secubuzz.com/news/fbi-seizes-domains-used-by-flax-typhoon-hacking-to-d1a25c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fbi-seizes-domains-used-by-flax-typhoon-hacking-to-d1a25c</guid>
+      <description><![CDATA[The FBI seized seven domains that operated the Microscan and FishHub hacking tools, linked to Chinese state-sponsored group Flax Typhoon. The tools targeted critical infrastructure and other organizations worldwide. The seizure disrupts the group’s ability to conduct cyberattacks.]]></description>
+      <pubDate>Fri, 09 Oct 2026 09:44:44 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/09/fbi-flax-typhoon-microscan-fishhub-domains/">Help Net Security</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>GoBalance Vulnerability Allows Hijacking of .onion Addresses</title>
+      <link>https://secubuzz.com/news/gobalance-vulnerability-allows-hijacking-of-onion-3ee840</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/gobalance-vulnerability-allows-hijacking-of-onion-3ee840</guid>
+      <description><![CDATA[A flaw in GoBalance lets attackers derive the secret key for a site’s .onion address using only public data, enabling them to seize the address and redirect traffic to a malicious copy. The vulnerability was disclosed by Searchlight Cyber on October 8.]]></description>
+      <pubDate>Fri, 09 Oct 2026 09:03:24 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/gobalance-flaw-lets-attackers-hijack.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>SimpleLogin Email Alias Service Enhances Privacy</title>
+      <link>https://secubuzz.com/news/simplelogin-email-alias-service-enhances-privacy-b4982f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/simplelogin-email-alias-service-enhances-privacy-b4982f</guid>
+      <description><![CDATA[SimpleLogin, an open-source email alias service from Proton, allows users to create disposable addresses that forward to their primary mailbox. The platform supports self-hosting and includes features such as enable/disable toggles and contact management, helping protect users’ real email addresses from exposure.]]></description>
+      <pubDate>Fri, 09 Oct 2026 08:51:07 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/09/product-showcase-simplelogin/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
       <title>Citrix Urges Immediate Patching of Critical NetScaler Vulnerability</title>
       <link>https://secubuzz.com/news/citrix-urges-immediate-patching-of-critical-netsca-7520e9</link>
       <guid isPermaLink="true">https://secubuzz.com/news/citrix-urges-immediate-patching-of-critical-netsca-7520e9</guid>
@@ -24,24 +123,6 @@
       <pubDate>Fri, 09 Oct 2026 06:53:53 GMT</pubDate>
       <source url="https://www.securityweek.com/citrix-urges-immediate-patching-of-critical-netscaler-vulnerability/">SecurityWeek</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Google Pixel 10 Exploits Earned Hackers $560,000 at Pwn2Own</title>
-      <link>https://secubuzz.com/news/google-pixel-10-exploits-earned-hackers-560-000-at-79f2d7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-pixel-10-exploits-earned-hackers-560-000-at-79f2d7</guid>
-      <description><![CDATA[At Pwn2Own Ireland 2026, hackers earned $560,000 by exploiting Google Pixel 10 phones, along with printers, smart speakers, smart home hubs, and AI infrastructure tools. The event highlighted the value of zero‑day vulnerabilities in mobile and IoT devices, prompting vendors to accelerate patching.]]></description>
-      <pubDate>Fri, 09 Oct 2026 06:39:55 GMT</pubDate>
-      <source url="https://www.securityweek.com/google-pixel-10-exploits-earned-hackers-560000-at-pwn2own/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>FBI Seizes Domains Used by China‑Linked Flax Typhoon APT</title>
-      <link>https://secubuzz.com/news/fbi-seizes-domains-used-by-china-linked-flax-typho-24701c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fbi-seizes-domains-used-by-china-linked-flax-typho-24701c</guid>
-      <description><![CDATA[The FBI and DOJ disrupted malicious tools used by the China‑linked APT group Flax Typhoon, seizing several domains and blocking access to platforms that scanned and infiltrated U.S. critical infrastructure. The action hampers the group’s ability to conduct espionage and sabotage against vital systems.]]></description>
-      <pubDate>Fri, 09 Oct 2026 06:39:29 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/fbi-seizes-7-domains-disrupts-flax.html">The Hacker News</source>
-      <category>Malware</category>
     </item>
     <item>
       <title>October 2026 Patch Tuesday Forecast: Office Cleanup Needed</title>
@@ -141,15 +222,6 @@
       <pubDate>Thu, 08 Oct 2026 20:27:00 GMT</pubDate>
       <source url="https://therecord.media/lawmakers-warn-of-google-spirit-ai-training-deal">The Record</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Low-Cost Android Phones Ship with Residential Proxy Malware</title>
-      <link>https://secubuzz.com/news/low-cost-android-phones-ship-with-residential-prox-247d3e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/low-cost-android-phones-ship-with-residential-prox-247d3e</guid>
-      <description><![CDATA[The 'Midnight Mimosa' malware campaign infects low-cost Android smartphones via embedded firmware. Attackers silently install apps, conduct ad fraud, and convert devices into residential proxies. The campaign exploits firmware vulnerabilities, enabling covert data exfiltration and botnet expansion.]]></description>
-      <pubDate>Thu, 08 Oct 2026 19:20:33 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/low-cost-android-phones-ship-with-residential-proxy-malware/">BleepingComputer</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>FBI Reports China-Linked Hackers Stole Emails via Third-Party Portal</title>
@@ -383,78 +455,6 @@
       <description><![CDATA[The openPDC and openHistorian Docker images are affected by CVE-2026-100730, a deserialization flaw that allows attackers to execute arbitrary code. The vulnerability also includes missing authentication, SSRF, hard‑coded credentials, and unsafe reflection. Affected systems can be compromised without authentication on non‑Windows environments, posing a critical risk to energy infrastructure.]]></description>
       <pubDate>Thu, 08 Oct 2026 12:00:00 GMT</pubDate>
       <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-281-02">CISA</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Ukrainian Drone Strike Disrupts Major Yandex Data Center</title>
-      <link>https://secubuzz.com/news/ukrainian-drone-strike-disrupts-major-yandex-data-793976</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ukrainian-drone-strike-disrupts-major-yandex-data-793976</guid>
-      <description><![CDATA[A Ukrainian drone strike damaged a major Yandex data center in Russia, disrupting the company’s network. Connectivity dropped to about 70 percent of normal levels, affecting services and operations. The attack caused physical damage but no data exfiltration was reported. Yandex is assessing the impact and restoring services.]]></description>
-      <pubDate>Thu, 08 Oct 2026 12:00:00 GMT</pubDate>
-      <source url="https://therecord.media/yandex-russia-drone-ukraine">The Record</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Anthropic’s Claude Haiku 5.5 Improves Vulnerability Detection While Maintaining Strong Safeguards</title>
-      <link>https://secubuzz.com/news/anthropic-s-claude-haiku-5-5-improves-vulnerabilit-2615c4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-s-claude-haiku-5-5-improves-vulnerabilit-2615c4</guid>
-      <description><![CDATA[Anthropic’s Claude Haiku 5.5, a budget model for speed‑sensitive workloads, now better detects vulnerabilities and writes exploits compared to Haiku 4.5. The company added stricter cybersecurity safeguards, though lighter than higher‑tier models, and tested the model’s offensive abilities with safeguards disabled, revealing known Chrome V8 flaws.]]></description>
-      <pubDate>Thu, 08 Oct 2026 11:24:16 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/08/anthropic-claude-haiku-5-5/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Rein Security Secures $25M to Protect AI Agents at Runtime</title>
-      <link>https://secubuzz.com/news/rein-security-secures-25m-to-protect-ai-agents-at-53002d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rein-security-secures-25m-to-protect-ai-agents-at-53002d</guid>
-      <description><![CDATA[Rein Security announced a $25 million funding round to accelerate product innovation, agentic research, and workforce expansion. The capital will support the development of runtime protection for AI agents, aiming to enhance security for emerging AI workloads. No immediate threat or vulnerability is reported.]]></description>
-      <pubDate>Thu, 08 Oct 2026 11:11:28 GMT</pubDate>
-      <source url="https://www.securityweek.com/rein-security-raises-25-million-to-guard-ai-agents-at-runtime/">SecurityWeek</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Wazza Phishkit Targets Banking, Government, and Manufacturing</title>
-      <link>https://secubuzz.com/news/wazza-phishkit-targets-banking-government-and-manu-5c44bc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/wazza-phishkit-targets-banking-government-and-manu-5c44bc</guid>
-      <description><![CDATA[Wazza is a new phishing kit that delivers sophisticated phishing pages with filtering, session management, and traffic controls. It targets banking, manufacturing, and government organizations across the US, EU, and Australia, increasing the risk of credential theft and credential stuffing attacks.]]></description>
-      <pubDate>Thu, 08 Oct 2026 10:30:00 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/wazza-phishkit-targets-banking.html">The Hacker News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Cryptomining Botnet Uses GitHub Poem for C2, Infects 3,400 Servers</title>
-      <link>https://secubuzz.com/news/cryptomining-botnet-uses-github-poem-for-c2-infect-e0cf3e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cryptomining-botnet-uses-github-poem-for-c2-infect-e0cf3e</guid>
-      <description><![CDATA[A cryptomining botnet, dubbed PoeLLM, retrieves its command and control addresses from a poem posted on GitHub. The malware targets exposed AI services and open-source tools, mines cryptocurrency, and searches for new victims. The campaign, called Canto Incognito, is linked to an Italian-speaking threat actor.]]></description>
-      <pubDate>Thu, 08 Oct 2026 10:24:57 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/08/poellm-malware-github-poem-ai-servers/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>TP‑Link Router Flaws Prompt State Lawsuits and Regulatory Scrutiny</title>
-      <link>https://secubuzz.com/news/tp-link-router-flaws-prompt-state-lawsuits-and-reg-16ff74</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/tp-link-router-flaws-prompt-state-lawsuits-and-reg-16ff74</guid>
-      <description><![CDATA[US states have filed lawsuits against TP‑Link, citing technical details of router vulnerabilities that could allow attackers to compromise ISP devices. The complaints highlight security weaknesses in TP‑Link’s ISP routers, prompting increased scrutiny and potential regulatory action.]]></description>
-      <pubDate>Thu, 08 Oct 2026 10:24:04 GMT</pubDate>
-      <source url="https://www.securityweek.com/tp-link-faces-state-lawsuits-and-new-scrutiny-over-isp-router-flaws/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>16 Malicious Firefox Extensions Steal Crypto Wallet Recovery Phrases</title>
-      <link>https://secubuzz.com/news/16-malicious-firefox-extensions-steal-crypto-walle-70b9dd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/16-malicious-firefox-extensions-steal-crypto-walle-70b9dd</guid>
-      <description><![CDATA[Researchers found 16 malicious Firefox extensions that masquerade as wallet portals and desktop utilities. The extensions intercept recovery phrases and private keys during wallet import flows and attempt to exfiltrate those secrets. Users should remove or block these extensions and verify extensions from trusted sources.]]></description>
-      <pubDate>Thu, 08 Oct 2026 09:46:32 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/16-malicious-firefox-extensions-pose-as.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>FortiBleed Attackers Lock Legitimate Users Out of Fortinet Devices</title>
-      <link>https://secubuzz.com/news/fortibleed-attackers-lock-legitimate-users-out-of-739cd1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fortibleed-attackers-lock-legitimate-users-out-of-739cd1</guid>
-      <description><![CDATA[Attackers targeting Fortinet devices use FortiBleed to create new accounts and delete existing ones, locking legitimate users out. The exploit manipulates device authentication, preventing authorized access and disrupting network operations. Fortinet has issued a patch to address the vulnerability and recommends updating firmware immediately.]]></description>
-      <pubDate>Thu, 08 Oct 2026 07:52:33 GMT</pubDate>
-      <source url="https://www.securityweek.com/fortibleed-attackers-locking-victims-out-of-fortinet-devices/">SecurityWeek</source>
       <category>Vulnerability</category>
     </item>
   </channel>

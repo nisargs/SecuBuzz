@@ -29,6 +29,205 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "ai-driven-breaches-target-korean-banks-tensorlake-63a408",
+    "title": "AI-Driven Breaches Target Korean Banks, Tensorlake SDK Compromised",
+    "summary": "AI techniques were employed in recent breaches of Korean banks, while the Tensorlake npm SDK was compromised, exposing sensitive data. Additionally, telemetry from NVIDIA GPU monitors was leaked. These incidents highlight the growing threat of AI‑assisted attacks and third‑party component vulnerabilities. No public fix is announced yet.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/in-other-news-ai-used-in-korean-bank-breaches-poem-guided-botnet-empire-admin-gets-40-years/",
+    "publishedAt": "2026-10-09T12:03:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-driven-breaches-target-korean-banks-tensorlake",
+      "article-63a408",
+      "63a408",
+      "ai-driven-breaches-target-korean-banks-tensorlake-sdk-compro"
+    ]
+  },
+  {
+    "slug": "google-domains-hijacked-via-cctld-exploits-7b0459",
+    "title": "Google Domains Hijacked via ccTLD Exploits",
+    "summary": "Hackers hijacked the .gh, .sl, and .as country code top‑level domains and used them to obtain HTTPS certificates for several Google domains. The compromise allowed attackers to intercept traffic to those sites, potentially enabling man‑in‑the‑middle attacks. Google has not yet released a mitigation or patch.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/google-domains-impacted-by-recent-cctld-domain-hijacks/",
+    "publishedAt": "2026-10-09T11:43:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-domains-hijacked-via-cctld-exploits",
+      "article-7b0459",
+      "7b0459"
+    ]
+  },
+  {
+    "slug": "ai-velocity-paradox-exposes-security-lag-in-rapid-2f0aaa",
+    "title": "AI Velocity Paradox Exposes Security Lag in Rapid AI Adoption",
+    "summary": "A SailPoint report titled \"Horizons of Identity Security\" shows enterprises deploying autonomous AI agents at high speed while still relying on legacy, human‑centric security controls. The study highlights a critical velocity paradox that leaves AI‑driven operations vulnerable to outdated defenses.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/the-ai-velocity-paradox-why-security-is.html",
+    "publishedAt": "2026-10-09T11:30:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-velocity-paradox-exposes-security-lag-in-rapid",
+      "article-2f0aaa",
+      "2f0aaa",
+      "ai-velocity-paradox-exposes-security-lag-in-rapid-ai-adoptio"
+    ]
+  },
+  {
+    "slug": "ukrainian-russian-dual-citizen-pleads-guilty-to-15-34dc4c",
+    "title": "Ukrainian‑Russian Dual Citizen Pleads Guilty to 15,000‑Member Money‑Mule Network",
+    "summary": "A Ukrainian‑Russian dual citizen admitted to operating a money‑laundering network of 15,000 mules that processed millions of dollars for global cybercriminals. The case underscores the scale of financial crimes tied to cybercrime operations and the legal consequences for facilitators.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ukrainian-russian-dual-citizen-admits-to-laundering-millions-for-cybercriminals/",
+    "publishedAt": "2026-10-09T11:14:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ukrainian-russian-dual-citizen-pleads-guilty-to-15",
+      "article-34dc4c",
+      "34dc4c",
+      "ukrainian-russian-dual-citizen-pleads-guilty-to-15-000-membe"
+    ]
+  },
+  {
+    "slug": "unpatched-ahsaycbs-vulnerabilities-exploited-in-th-4f5c21",
+    "title": "Unpatched AhsayCBS Vulnerabilities Exploited in the Wild",
+    "summary": "The AhsayCBS platform suffers from two unpatched flaws, CVE-2026-105133 and CVE-2026-105134, that let attackers bypass authentication and inject operating‑system commands. Exploitation can lead to full system compromise. Immediate patching or disabling the affected modules is required.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/unpatched-ahsaycbs-vulnerabilities-exploited-in-the-wild/",
+    "publishedAt": "2026-10-09T10:23:42.000Z",
+    "cves": [
+      "CVE-2026-105133",
+      "CVE-2026-105134"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "unpatched-ahsaycbs-vulnerabilities-exploited-in-th",
+      "article-4f5c21",
+      "4f5c21",
+      "unpatched-ahsaycbs-vulnerabilities-exploited-in-the-wild"
+    ]
+  },
+  {
+    "slug": "microsoft-to-cease-security-updates-for-unsupporte-4c293f",
+    "title": "Microsoft to Cease Security Updates for Unsupported Windows Devices",
+    "summary": "Microsoft announced that devices running unsupported Windows versions will no longer receive security updates after the next Windows Update certificate rotation in 2027. The move means older systems will become increasingly vulnerable without official patches, urging users to upgrade or migrate to supported platforms.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-outdated-windows-devices-will-lose-security-protection-next-year/",
+    "publishedAt": "2026-10-09T10:12:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-to-cease-security-updates-for-unsupporte",
+      "article-4c293f",
+      "4c293f",
+      "microsoft-to-cease-security-updates-for-unsupported-windows-"
+    ]
+  },
+  {
+    "slug": "midnight-mimosa-malware-targets-budget-android-dev-177f46",
+    "title": "Midnight Mimosa Malware Targets Budget Android Devices Worldwide",
+    "summary": "Midnight Mimosa is a preinstalled malware campaign on low-cost Android devices, affecting over 150 countries. The malware is embedded in firmware, enabling attackers to gain persistent access and potentially exfiltrate data from compromised devices. No public patch or mitigation is currently available.",
+    "category": "Malware",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/pre-baked-firmware-malware-hits-budget-android-devices-in-150-countries/",
+    "publishedAt": "2026-10-09T09:55:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "midnight-mimosa-malware-targets-budget-android-dev",
+      "article-177f46",
+      "177f46",
+      "midnight-mimosa-malware-targets-budget-android-devices-world"
+    ]
+  },
+  {
+    "slug": "anthropic-launches-free-ai-powered-security-scans-2df6bb",
+    "title": "Anthropic Launches Free AI‑Powered Security Scans for Open‑Source Maintainers",
+    "summary": "Anthropic introduced OSS Scanner, a free service that applies its Claude AI models to detect security vulnerabilities in open‑source projects. Maintainers who opt in receive periodic scans, detailed reports, and fix guidance. The tool builds on Anthropic’s Project Glasswing experience and aims to reduce human validation bottlenecks.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/09/anthropic-oss-scanner-ai-security-scans/",
+    "publishedAt": "2026-10-09T09:55:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "anthropic-launches-free-ai-powered-security-scans",
+      "article-2df6bb",
+      "2df6bb",
+      "anthropic-launches-free-ai-powered-security-scans-for-open-s"
+    ]
+  },
+  {
+    "slug": "fbi-seizes-domains-used-by-flax-typhoon-hacking-to-d1a25c",
+    "title": "FBI Seizes Domains Used by Flax Typhoon Hacking Tools",
+    "summary": "The FBI seized seven domains that operated the Microscan and FishHub hacking tools, linked to Chinese state-sponsored group Flax Typhoon. The tools targeted critical infrastructure and other organizations worldwide. The seizure disrupts the group’s ability to conduct cyberattacks.",
+    "category": "Malware",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/09/fbi-flax-typhoon-microscan-fishhub-domains/",
+    "publishedAt": "2026-10-09T09:44:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fbi-seizes-domains-used-by-flax-typhoon-hacking-to",
+      "article-d1a25c",
+      "d1a25c",
+      "fbi-seizes-domains-used-by-flax-typhoon-hacking-tools"
+    ]
+  },
+  {
+    "slug": "gobalance-vulnerability-allows-hijacking-of-onion-3ee840",
+    "title": "GoBalance Vulnerability Allows Hijacking of .onion Addresses",
+    "summary": "A flaw in GoBalance lets attackers derive the secret key for a site’s .onion address using only public data, enabling them to seize the address and redirect traffic to a malicious copy. The vulnerability was disclosed by Searchlight Cyber on October 8.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/gobalance-flaw-lets-attackers-hijack.html",
+    "publishedAt": "2026-10-09T09:03:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gobalance-vulnerability-allows-hijacking-of-onion",
+      "article-3ee840",
+      "3ee840",
+      "gobalance-vulnerability-allows-hijacking-of-onion-addresses"
+    ]
+  },
+  {
+    "slug": "simplelogin-email-alias-service-enhances-privacy-b4982f",
+    "title": "SimpleLogin Email Alias Service Enhances Privacy",
+    "summary": "SimpleLogin, an open-source email alias service from Proton, allows users to create disposable addresses that forward to their primary mailbox. The platform supports self-hosting and includes features such as enable/disable toggles and contact management, helping protect users’ real email addresses from exposure.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/09/product-showcase-simplelogin/",
+    "publishedAt": "2026-10-09T08:51:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "simplelogin-email-alias-service-enhances-privacy",
+      "article-b4982f",
+      "b4982f"
+    ]
+  },
+  {
     "slug": "citrix-urges-immediate-patching-of-critical-netsca-7520e9",
     "title": "Citrix Urges Immediate Patching of Critical NetScaler Vulnerability",
     "summary": "Citrix has identified a critical flaw, CVE-2026-107406, in its NetScaler product that could allow attackers to execute code remotely or cause a denial of service. The vulnerability requires immediate patching to prevent potential exploitation and service disruption.",
@@ -46,42 +245,6 @@ export const news: NewsBrief[] = [
       "article-7520e9",
       "7520e9",
       "citrix-urges-immediate-patching-of-critical-netscaler-vulner"
-    ]
-  },
-  {
-    "slug": "google-pixel-10-exploits-earned-hackers-560-000-at-79f2d7",
-    "title": "Google Pixel 10 Exploits Earned Hackers $560,000 at Pwn2Own",
-    "summary": "At Pwn2Own Ireland 2026, hackers earned $560,000 by exploiting Google Pixel 10 phones, along with printers, smart speakers, smart home hubs, and AI infrastructure tools. The event highlighted the value of zero‑day vulnerabilities in mobile and IoT devices, prompting vendors to accelerate patching.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/google-pixel-10-exploits-earned-hackers-560000-at-pwn2own/",
-    "publishedAt": "2026-10-09T06:39:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-pixel-10-exploits-earned-hackers-560-000-at",
-      "article-79f2d7",
-      "79f2d7",
-      "google-pixel-10-exploits-earned-hackers-560-000-at-pwn2own"
-    ]
-  },
-  {
-    "slug": "fbi-seizes-domains-used-by-china-linked-flax-typho-24701c",
-    "title": "FBI Seizes Domains Used by China‑Linked Flax Typhoon APT",
-    "summary": "The FBI and DOJ disrupted malicious tools used by the China‑linked APT group Flax Typhoon, seizing several domains and blocking access to platforms that scanned and infiltrated U.S. critical infrastructure. The action hampers the group’s ability to conduct espionage and sabotage against vital systems.",
-    "category": "Malware",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/fbi-seizes-7-domains-disrupts-flax.html",
-    "publishedAt": "2026-10-09T06:39:29.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fbi-seizes-domains-used-by-china-linked-flax-typho",
-      "article-24701c",
-      "24701c",
-      "fbi-seizes-domains-used-by-china-linked-flax-typhoon-apt"
     ]
   },
   {
@@ -282,24 +445,6 @@ export const news: NewsBrief[] = [
       "article-508b7d",
       "508b7d",
       "google-ai-training-deal-could-expose-spirit-airlines-data"
-    ]
-  },
-  {
-    "slug": "low-cost-android-phones-ship-with-residential-prox-247d3e",
-    "title": "Low-Cost Android Phones Ship with Residential Proxy Malware",
-    "summary": "The 'Midnight Mimosa' malware campaign infects low-cost Android smartphones via embedded firmware. Attackers silently install apps, conduct ad fraud, and convert devices into residential proxies. The campaign exploits firmware vulnerabilities, enabling covert data exfiltration and botnet expansion.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/low-cost-android-phones-ship-with-residential-proxy-malware/",
-    "publishedAt": "2026-10-08T19:20:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "low-cost-android-phones-ship-with-residential-prox",
-      "article-247d3e",
-      "247d3e",
-      "low-cost-android-phones-ship-with-residential-proxy-malware"
     ]
   },
   {
@@ -929,24 +1074,6 @@ export const news: NewsBrief[] = [
       "article-468f2a",
       "468f2a",
       "build-an-economic-model-to-prioritize-security-spending"
-    ]
-  },
-  {
-    "slug": "tensorlake-npm-package-compromised-to-deliver-cred-71428b",
-    "title": "Tensorlake npm Package Compromised to Deliver Credential‑Stealing Worm",
-    "summary": "The npm package \"tensorlake\" was tampered with in a ChainDrop/Shai‑Hulud supply‑chain attack. The malicious 0.5.144 release contains obfuscated malware that harvests credentials, exfiltrates secrets, establishes persistence, and executes remotely supplied code, compromising user accounts.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/tensorlake-npm-package-compromised-to.html",
-    "publishedAt": "2026-10-08T05:46:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "tensorlake-npm-package-compromised-to-deliver-cred",
-      "article-71428b",
-      "71428b",
-      "tensorlake-npm-package-compromised-to-deliver-credential-ste"
     ]
   },
   {
@@ -4382,132 +4509,6 @@ export const news: NewsBrief[] = [
       "article-1c5dd2",
       "1c5dd2",
       "cybersecurity-hiring-practices-exclude-junior-talent"
-    ]
-  },
-  {
-    "slug": "palo-alto-networks-and-nvidia-collaborate-to-tight-300346",
-    "title": "Palo Alto Networks and NVIDIA Collaborate to Tighten AI Agent Controls",
-    "summary": "Palo Alto Networks and NVIDIA collaborate to tighten control over AI agents, focusing on agent activity, network traffic, and identity management via NVIDIA’s Open Agent Safety Platform. The partnership aims to limit AI agents’ code writing, data access, and software use, enhancing security oversight in enterprise environments.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/palo-alto-networks-nvidia-ai-agent-security/",
-    "publishedAt": "2026-09-29T10:21:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "palo-alto-networks-and-nvidia-collaborate-to-tight",
-      "article-300346",
-      "300346",
-      "palo-alto-networks-and-nvidia-collaborate-to-tighten-ai-agen"
-    ]
-  },
-  {
-    "slug": "unit-42-releases-opertraitor-tool-to-audit-kuberne-4d46cb",
-    "title": "Unit 42 Releases OperTraitor Tool to Audit Kubernetes Operator Privileges",
-    "summary": "Unit 42’s OperTraitor tool audits Kubernetes operators to identify excessive RBAC permissions and secure non-human identities. By scanning operator privileges, it highlights privilege escalation risks and helps organizations tighten Kubernetes security posture, reducing potential attack surfaces from misconfigured operator roles.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Unit 42",
-    "sourceUrl": "https://unit42.paloaltonetworks.com/agentic-ai-kubernetes-operator-risks/",
-    "publishedAt": "2026-09-29T10:00:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "unit-42-releases-opertraitor-tool-to-audit-kuberne",
-      "article-4d46cb",
-      "4d46cb",
-      "unit-42-releases-opertraitor-tool-to-audit-kubernetes-operat"
-    ]
-  },
-  {
-    "slug": "cloudflare-emdash-1-0-enforces-plugin-permission-r-2e900d",
-    "title": "Cloudflare EmDash 1.0 Enforces Plugin Permission Requests",
-    "summary": "Cloudflare’s new EmDash 1.0 CMS locks each sandboxed plugin in its own isolated runtime. A plugin starts with access only to its private storage and cannot reach site content, media, users, secrets, environment, filesystem, or network until it declares needed permissions and a site administrator approves them. This protects site owners running third‑party code.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/cloudflare-emdash-plugin-security/",
-    "publishedAt": "2026-09-29T09:03:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-emdash-1-0-enforces-plugin-permission-r",
-      "article-2e900d",
-      "2e900d",
-      "cloudflare-emdash-1-0-enforces-plugin-permission-requests"
-    ]
-  },
-  {
-    "slug": "anthropic-s-claude-sonnet-5-5-delivers-30-faster-p-3985ef",
-    "title": "Anthropic’s Claude Sonnet 5.5 Delivers 30% Faster Performance",
-    "summary": "Anthropic released Claude Sonnet 5.5, an AI model for coding and office tasks that is over 30% faster than its predecessor while using fewer tokens, reducing cost per task. The model is available with zero data retention on the Claude Platform via AWS, Google Cloud, and Microsoft Azure.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/anthropic-claude-sonnet-5-5/",
-    "publishedAt": "2026-09-29T08:15:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "anthropic-s-claude-sonnet-5-5-delivers-30-faster-p",
-      "article-3985ef",
-      "3985ef",
-      "anthropic-s-claude-sonnet-5-5-delivers-30-faster-performance"
-    ]
-  },
-  {
-    "slug": "four-week-plan-to-mitigate-vendor-concentration-ri-46656b",
-    "title": "Four‑Week Plan to Mitigate Vendor Concentration Risk",
-    "summary": "Skycloak founder Guilliano Molaire outlines a four‑week strategy to map and reduce vendor concentration risk. The approach identifies hidden dependencies on single cloud, identity, DNS, email, payment, or AI model providers, helping organizations avoid cascading failures when one provider goes down.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/vendor-concentration-risk-video/",
-    "publishedAt": "2026-09-29T05:00:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "four-week-plan-to-mitigate-vendor-concentration-ri",
-      "article-46656b",
-      "46656b",
-      "four-week-plan-to-mitigate-vendor-concentration-risk"
-    ]
-  },
-  {
-    "slug": "application-security-researcher-position-open-in-i-7d7294",
-    "title": "Application Security Researcher Position Open in Israel",
-    "summary": "A job opening for an Application Security Researcher at Novee Security in Israel is announced. The role involves testing web applications and APIs, verifying vulnerabilities, documenting exploits, and developing new testing methods to improve detection and support customer deployments.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/cybersecurity-jobs-available-right-now-september-29-2026/",
-    "publishedAt": "2026-09-29T04:00:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "application-security-researcher-position-open-in-i",
-      "article-7d7294",
-      "7d7294",
-      "application-security-researcher-position-open-in-israel"
-    ]
-  },
-  {
-    "slug": "carbonato-botnet-targets-docker-hosts-steals-ai-ap-18feca",
-    "title": "Carbonato Botnet Targets Docker Hosts, Steals AI API Keys via Hermes Agent",
-    "summary": "The Carbonato botnet leverages the open‑source Hermes Agent AI framework to run commands through Telegram and harvest AI API keys from exposed Docker hosts. Attackers gain remote control over compromised containers, enabling credential theft and potential lateral movement. Mitigation requires hardening Docker exposure, disabling unused APIs, and monitoring for anomalous Telegram traffic.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/identity-access-management-security/carbonato-botnet-ai-agent-hacked-docker-hosts",
-    "publishedAt": "2026-09-28T20:23:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "carbonato-botnet-targets-docker-hosts-steals-ai-ap",
-      "article-18feca",
-      "18feca",
-      "carbonato-botnet-targets-docker-hosts-steals-ai-api-keys-via"
     ]
   }
 ];
