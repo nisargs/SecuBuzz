@@ -5,8 +5,53 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Oct 2026 00:17:56 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 04:19:43 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Co‑creator of Empire Market Dark Web Marketplace Sentenced to 40 Years</title>
+      <link>https://secubuzz.com/news/co-creator-of-empire-market-dark-web-marketplace-s-898fec</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/co-creator-of-empire-market-dark-web-marketplace-s-898fec</guid>
+      <description><![CDATA[Raheim Hamilton, 30, pleaded guilty to a drug conspiracy charge and agreed to forfeit more than $100 million in Bitcoin and several Virginia properties. The court imposed a 40‑year prison sentence and forfeiture order.]]></description>
+      <pubDate>Sat, 10 Oct 2026 00:55:00 GMT</pubDate>
+      <source url="https://therecord.media/co-creator-empire-dark-net-market-sentenced">The Record</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Researchers Publish Formula to Predict When AI Chatbots May Go Rogue</title>
+      <link>https://secubuzz.com/news/researchers-publish-formula-to-predict-when-ai-cha-5b9885</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/researchers-publish-formula-to-predict-when-ai-cha-5b9885</guid>
+      <description><![CDATA[George Washington University researchers released a paper outlining a model that predicts the timing and causes of AI chatbots turning malicious. The study aims to help developers anticipate and mitigate potential rogue behavior in conversational AI systems.]]></description>
+      <pubDate>Fri, 09 Oct 2026 04:12:38 GMT</pubDate>
+      <source url="https://www.securityweek.com/formula-predicts-when-ai-chatbots-are-at-risk-of-turning-bad/">SecurityWeek</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Ploutus-D ATM Malware Exploits Kalignite XFS Middleware</title>
+      <link>https://secubuzz.com/news/ploutus-d-atm-malware-exploits-kalignite-xfs-middl-4ae029</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ploutus-d-atm-malware-exploits-kalignite-xfs-middl-4ae029</guid>
+      <description><![CDATA[Ploutus-D malware targets ATM jackpotting by exploiting Kalignite XFS middleware. The attack allows attackers to manipulate cash dispensers, potentially draining accounts. Banks can mitigate by securing middleware, monitoring for abnormal transactions, and implementing robust physical and software controls.]]></description>
+      <pubDate>Fri, 09 Oct 2026 04:01:40 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/ploutus-d-atm-jackpotting-kalignite-defense">CyberNews AI</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>IDCF Cloud Ransomware Locks 239 Hypervisors and Wipes Snapshots</title>
+      <link>https://secubuzz.com/news/idcf-cloud-ransomware-locks-239-hypervisors-and-wi-29af22</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/idcf-cloud-ransomware-locks-239-hypervisors-and-wi-29af22</guid>
+      <description><![CDATA[A ransomware outbreak in Japan’s IDCF Cloud locked 239 hypervisors and erased over 550,000 snapshots. The incident highlights the need for hypervisor defenses, immutable backups, and proactive SOC hunting queries to detect and mitigate such attacks.]]></description>
+      <pubDate>Fri, 09 Oct 2026 03:20:37 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/idcf-cloud-ransomware-hypervisor-mitigation">CyberNews AI</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
+      <title>FakeGit: How to Detect &amp; Block 17,000+ Malicious GitHub Repos</title>
+      <link>https://secubuzz.com/news/fakegit-how-to-detect-block-17-000-malicious-githu-5396f3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fakegit-how-to-detect-block-17-000-malicious-githu-5396f3</guid>
+      <description><![CDATA[The FakeGit campaign uses 17,610 GitHub repositories to deploy SmartLoader and StealC malware. Security teams can identify lures by scanning repository metadata, hunting for known IOCs, and securing credentials to prevent credential theft and malware execution.]]></description>
+      <pubDate>Fri, 09 Oct 2026 02:44:08 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/fakegit-malware-github-smartloader-stealc">CyberNews AI</source>
+      <category>Malware</category>
+    </item>
     <item>
       <title>FBI Seizes Domains of Chinese State‑Sponsored Hacking Tools Used in Critical Infrastructure Breaches</title>
       <link>https://secubuzz.com/news/fbi-seizes-domains-of-chinese-state-sponsored-hack-5d8536</link>
@@ -44,15 +89,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Ransomware Attack Disrupts Japan&apos;s IDCF Cloud Service</title>
-      <link>https://secubuzz.com/news/ransomware-attack-disrupts-japan-s-idcf-cloud-serv-1715fe</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ransomware-attack-disrupts-japan-s-idcf-cloud-serv-1715fe</guid>
-      <description><![CDATA[A ransomware operation targeted IDCF Cloud, a major Japanese cloud provider, causing an outage at a data center cluster that serves eastern Japan. The attack impacted government clients, leading to service disruption and potential data access issues. No specific remediation steps were disclosed.]]></description>
-      <pubDate>Thu, 08 Oct 2026 20:09:45 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/ransomware-attack-disrupts-japans-idcf-cloud-used-by-govt-clients/">BleepingComputer</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
       <title>Low-Cost Android Phones Ship with Residential Proxy Malware</title>
       <link>https://secubuzz.com/news/low-cost-android-phones-ship-with-residential-prox-247d3e</link>
       <guid isPermaLink="true">https://secubuzz.com/news/low-cost-android-phones-ship-with-residential-prox-247d3e</guid>
@@ -60,15 +96,6 @@
       <pubDate>Thu, 08 Oct 2026 19:20:33 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/low-cost-android-phones-ship-with-residential-proxy-malware/">BleepingComputer</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Venezuelan Cartel Malware Leader Arrested for ATM Jackpotting</title>
-      <link>https://secubuzz.com/news/venezuelan-cartel-malware-leader-arrested-for-atm-24f37d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/venezuelan-cartel-malware-leader-arrested-for-atm-24f37d</guid>
-      <description><![CDATA[A Venezuelan cartel’s malware chief, linked to the Tren de Aragua gang, was captured by U.S. authorities. He was the first cybercriminal to appear on the FBI’s “10 Most Wanted Fugitives” list, allegedly funneling illicit cash into the cartel’s violent operations.]]></description>
-      <pubDate>Thu, 08 Oct 2026 19:08:16 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyberattacks-data-breaches/venezuelan-cartel-malware-honcho-nabbed-atm-jackpotting">Dark Reading</source>
-      <category>Malware</category>
     </item>
     <item>
       <title>FBI Reports China-Linked Hackers Stole Emails via Third-Party Portal</title>
@@ -96,15 +123,6 @@
       <pubDate>Thu, 08 Oct 2026 17:58:02 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/threatsday-ransomware-affiliate.html">The Hacker News</source>
       <category>Ransomware</category>
-    </item>
-    <item>
-      <title>FakeGit Malware Campaign Distributes 17,610 Fake GitHub Repositories</title>
-      <link>https://secubuzz.com/news/fakegit-malware-campaign-distributes-17-610-fake-g-548ce9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fakegit-malware-campaign-distributes-17-610-fake-g-548ce9</guid>
-      <description><![CDATA[A new wave of FakeGit malware has surfaced, with over 17,000 counterfeit GitHub repositories pushing the SmartLoader downloader that installs the StealC infostealer. The campaign reactivated this month, targeting developers and users who clone the fake repos. No patch or mitigation is publicly available yet.]]></description>
-      <pubDate>Thu, 08 Oct 2026 17:10:55 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/fakegit-malware-campaign-returns-with-17-610-malicious-github-repos/">BleepingComputer</source>
-      <category>Malware</category>
     </item>
     <item>
       <title>DOJ Charges Ransomware Recovery CEO for Secret Ransom Payments</title>
@@ -359,15 +377,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Owner of Empire Cybercrime Market Sentenced to 40 Years</title>
-      <link>https://secubuzz.com/news/owner-of-empire-cybercrime-market-sentenced-to-40-22cf8d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/owner-of-empire-cybercrime-market-sentenced-to-40-22cf8d</guid>
-      <description><![CDATA[The co‑creator of the Empire Market, a major dark‑web marketplace that facilitated $430 million in illegal transactions between 2018 and 2020, has been sentenced to 40 years in prison. The ruling underscores law enforcement’s focus on dismantling large‑scale cybercrime operations.]]></description>
-      <pubDate>Thu, 08 Oct 2026 10:29:19 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/owner-of-empire-cybercrime-market-gets-40-years-in-prison/">BleepingComputer</source>
-      <category>Policy</category>
-    </item>
-    <item>
       <title>Cryptomining Botnet Uses GitHub Poem for C2, Infects 3,400 Servers</title>
       <link>https://secubuzz.com/news/cryptomining-botnet-uses-github-poem-for-c2-infect-e0cf3e</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cryptomining-botnet-uses-github-poem-for-c2-infect-e0cf3e</guid>
@@ -393,15 +402,6 @@
       <pubDate>Thu, 08 Oct 2026 09:46:32 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/16-malicious-firefox-extensions-pose-as.html">The Hacker News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>GitHub Introduces AI Detector to Block Passwords Before Code Push</title>
-      <link>https://secubuzz.com/news/github-introduces-ai-detector-to-block-passwords-b-5fe20c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/github-introduces-ai-detector-to-block-passwords-b-5fe20c</guid>
-      <description><![CDATA[GitHub has released an AI‑powered secret detector, built with Microsoft Applied Sciences, that scans code before a push to identify unstructured credentials such as database passwords. The ModernBERT classifier extends existing push protection, blocking pushes that contain secrets and preventing credentials from entering repository history.]]></description>
-      <pubDate>Thu, 08 Oct 2026 09:02:11 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/08/github-push-protection-modernbert/">Help Net Security</source>
-      <category>Policy</category>
     </item>
     <item>
       <title>FortiBleed Attackers Lock Legitimate Users Out of Fortinet Devices</title>

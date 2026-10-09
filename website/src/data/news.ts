@@ -11,6 +11,96 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "co-creator-of-empire-market-dark-web-marketplace-s-898fec",
+    "title": "Co‑creator of Empire Market Dark Web Marketplace Sentenced to 40 Years",
+    "summary": "Raheim Hamilton, 30, pleaded guilty to a drug conspiracy charge and agreed to forfeit more than $100 million in Bitcoin and several Virginia properties. The court imposed a 40‑year prison sentence and forfeiture order.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/co-creator-empire-dark-net-market-sentenced",
+    "publishedAt": "2026-10-10T00:55:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "co-creator-of-empire-market-dark-web-marketplace-s",
+      "article-898fec",
+      "898fec",
+      "co-creator-of-empire-market-dark-web-marketplace-sentenced-t"
+    ]
+  },
+  {
+    "slug": "researchers-publish-formula-to-predict-when-ai-cha-5b9885",
+    "title": "Researchers Publish Formula to Predict When AI Chatbots May Go Rogue",
+    "summary": "George Washington University researchers released a paper outlining a model that predicts the timing and causes of AI chatbots turning malicious. The study aims to help developers anticipate and mitigate potential rogue behavior in conversational AI systems.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/formula-predicts-when-ai-chatbots-are-at-risk-of-turning-bad/",
+    "publishedAt": "2026-10-09T04:12:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "researchers-publish-formula-to-predict-when-ai-cha",
+      "article-5b9885",
+      "5b9885",
+      "researchers-publish-formula-to-predict-when-ai-chatbots-may-"
+    ]
+  },
+  {
+    "slug": "ploutus-d-atm-malware-exploits-kalignite-xfs-middl-4ae029",
+    "title": "Ploutus-D ATM Malware Exploits Kalignite XFS Middleware",
+    "summary": "Ploutus-D malware targets ATM jackpotting by exploiting Kalignite XFS middleware. The attack allows attackers to manipulate cash dispensers, potentially draining accounts. Banks can mitigate by securing middleware, monitoring for abnormal transactions, and implementing robust physical and software controls.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/ploutus-d-atm-jackpotting-kalignite-defense",
+    "publishedAt": "2026-10-09T04:01:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ploutus-d-atm-malware-exploits-kalignite-xfs-middl",
+      "article-4ae029",
+      "4ae029",
+      "ploutus-d-atm-malware-exploits-kalignite-xfs-middleware"
+    ]
+  },
+  {
+    "slug": "idcf-cloud-ransomware-locks-239-hypervisors-and-wi-29af22",
+    "title": "IDCF Cloud Ransomware Locks 239 Hypervisors and Wipes Snapshots",
+    "summary": "A ransomware outbreak in Japan’s IDCF Cloud locked 239 hypervisors and erased over 550,000 snapshots. The incident highlights the need for hypervisor defenses, immutable backups, and proactive SOC hunting queries to detect and mitigate such attacks.",
+    "category": "Ransomware",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/idcf-cloud-ransomware-hypervisor-mitigation",
+    "publishedAt": "2026-10-09T03:20:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "idcf-cloud-ransomware-locks-239-hypervisors-and-wi",
+      "article-29af22",
+      "29af22",
+      "idcf-cloud-ransomware-locks-239-hypervisors-and-wipes-snapsh"
+    ]
+  },
+  {
+    "slug": "fakegit-how-to-detect-block-17-000-malicious-githu-5396f3",
+    "title": "FakeGit: How to Detect & Block 17,000+ Malicious GitHub Repos",
+    "summary": "The FakeGit campaign uses 17,610 GitHub repositories to deploy SmartLoader and StealC malware. Security teams can identify lures by scanning repository metadata, hunting for known IOCs, and securing credentials to prevent credential theft and malware execution.",
+    "category": "Malware",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/fakegit-malware-github-smartloader-stealc",
+    "publishedAt": "2026-10-09T02:44:08.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fakegit-how-to-detect-block-17-000-malicious-githu",
+      "article-5396f3",
+      "5396f3",
+      "fakegit-how-to-detect-block-17-000-malicious-github-repos"
+    ]
+  },
+  {
     "slug": "fbi-seizes-domains-of-chinese-state-sponsored-hack-5d8536",
     "title": "FBI Seizes Domains of Chinese State‑Sponsored Hacking Tools Used in Critical Infrastructure Breaches",
     "summary": "The FBI seized seven domains that hosted the MicroScan and FishHub tools used by the Chinese state‑sponsored group Flax Typhoon. These tools enabled attacks that breached critical infrastructure and other organizations worldwide. The operation disrupts the group’s command and control infrastructure, limiting future breaches.",
@@ -83,24 +173,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "ransomware-attack-disrupts-japan-s-idcf-cloud-serv-1715fe",
-    "title": "Ransomware Attack Disrupts Japan's IDCF Cloud Service",
-    "summary": "A ransomware operation targeted IDCF Cloud, a major Japanese cloud provider, causing an outage at a data center cluster that serves eastern Japan. The attack impacted government clients, leading to service disruption and potential data access issues. No specific remediation steps were disclosed.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ransomware-attack-disrupts-japans-idcf-cloud-used-by-govt-clients/",
-    "publishedAt": "2026-10-08T20:09:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ransomware-attack-disrupts-japan-s-idcf-cloud-serv",
-      "article-1715fe",
-      "1715fe",
-      "ransomware-attack-disrupts-japan-s-idcf-cloud-service"
-    ]
-  },
-  {
     "slug": "low-cost-android-phones-ship-with-residential-prox-247d3e",
     "title": "Low-Cost Android Phones Ship with Residential Proxy Malware",
     "summary": "The 'Midnight Mimosa' malware campaign infects low-cost Android smartphones via embedded firmware. Attackers silently install apps, conduct ad fraud, and convert devices into residential proxies. The campaign exploits firmware vulnerabilities, enabling covert data exfiltration and botnet expansion.",
@@ -116,24 +188,6 @@ export const news: NewsBrief[] = [
       "article-247d3e",
       "247d3e",
       "low-cost-android-phones-ship-with-residential-proxy-malware"
-    ]
-  },
-  {
-    "slug": "venezuelan-cartel-malware-leader-arrested-for-atm-24f37d",
-    "title": "Venezuelan Cartel Malware Leader Arrested for ATM Jackpotting",
-    "summary": "A Venezuelan cartel’s malware chief, linked to the Tren de Aragua gang, was captured by U.S. authorities. He was the first cybercriminal to appear on the FBI’s “10 Most Wanted Fugitives” list, allegedly funneling illicit cash into the cartel’s violent operations.",
-    "category": "Malware",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/venezuelan-cartel-malware-honcho-nabbed-atm-jackpotting",
-    "publishedAt": "2026-10-08T19:08:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "venezuelan-cartel-malware-leader-arrested-for-atm",
-      "article-24f37d",
-      "24f37d",
-      "venezuelan-cartel-malware-leader-arrested-for-atm-jackpottin"
     ]
   },
   {
@@ -188,24 +242,6 @@ export const news: NewsBrief[] = [
       "article-600325",
       "600325",
       "ransomware-affiliate-keeps-profits-exposes-server-with-tools"
-    ]
-  },
-  {
-    "slug": "fakegit-malware-campaign-distributes-17-610-fake-g-548ce9",
-    "title": "FakeGit Malware Campaign Distributes 17,610 Fake GitHub Repositories",
-    "summary": "A new wave of FakeGit malware has surfaced, with over 17,000 counterfeit GitHub repositories pushing the SmartLoader downloader that installs the StealC infostealer. The campaign reactivated this month, targeting developers and users who clone the fake repos. No patch or mitigation is publicly available yet.",
-    "category": "Malware",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fakegit-malware-campaign-returns-with-17-610-malicious-github-repos/",
-    "publishedAt": "2026-10-08T17:10:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fakegit-malware-campaign-distributes-17-610-fake-g",
-      "article-548ce9",
-      "548ce9",
-      "fakegit-malware-campaign-distributes-17-610-fake-github-repo"
     ]
   },
   {
@@ -711,24 +747,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "owner-of-empire-cybercrime-market-sentenced-to-40-22cf8d",
-    "title": "Owner of Empire Cybercrime Market Sentenced to 40 Years",
-    "summary": "The co‑creator of the Empire Market, a major dark‑web marketplace that facilitated $430 million in illegal transactions between 2018 and 2020, has been sentenced to 40 years in prison. The ruling underscores law enforcement’s focus on dismantling large‑scale cybercrime operations.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/owner-of-empire-cybercrime-market-gets-40-years-in-prison/",
-    "publishedAt": "2026-10-08T10:29:19.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "owner-of-empire-cybercrime-market-sentenced-to-40",
-      "article-22cf8d",
-      "22cf8d",
-      "owner-of-empire-cybercrime-market-sentenced-to-40-years"
-    ]
-  },
-  {
     "slug": "cryptomining-botnet-uses-github-poem-for-c2-infect-e0cf3e",
     "title": "Cryptomining Botnet Uses GitHub Poem for C2, Infects 3,400 Servers",
     "summary": "A cryptomining botnet, dubbed PoeLLM, retrieves its command and control addresses from a poem posted on GitHub. The malware targets exposed AI services and open-source tools, mines cryptocurrency, and searches for new victims. The campaign, called Canto Incognito, is linked to an Italian-speaking threat actor.",
@@ -780,24 +798,6 @@ export const news: NewsBrief[] = [
       "article-70b9dd",
       "70b9dd",
       "16-malicious-firefox-extensions-steal-crypto-wallet-recovery"
-    ]
-  },
-  {
-    "slug": "github-introduces-ai-detector-to-block-passwords-b-5fe20c",
-    "title": "GitHub Introduces AI Detector to Block Passwords Before Code Push",
-    "summary": "GitHub has released an AI‑powered secret detector, built with Microsoft Applied Sciences, that scans code before a push to identify unstructured credentials such as database passwords. The ModernBERT classifier extends existing push protection, blocking pushes that contain secrets and preventing credentials from entering repository history.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/github-push-protection-modernbert/",
-    "publishedAt": "2026-10-08T09:02:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "github-introduces-ai-detector-to-block-passwords-b",
-      "article-5fe20c",
-      "5fe20c",
-      "github-introduces-ai-detector-to-block-passwords-before-code"
     ]
   },
   {
