@@ -18,6 +18,19 @@
     ]
   },
   {
+    "id": "https://www.darkreading.com/cybersecurity-analytics/ai-scramble-cybersecurity-ma-boom",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-analytics/ai-scramble-cybersecurity-ma-boom",
+    "title": "AI-Driven Cybersecurity M&A Surge Hits 117 Deals",
+    "headline": "AI-Driven Cybersecurity M&A Surge Hits 117 Deals",
+    "summary": "The cybersecurity sector saw a boom in mergers and acquisitions, with 117 deals announced in the latest quarter. The trend is driven by AI advancements, attracting buyers beyond traditional security firms and reshaping the industry landscape.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-09T19:26:26.000Z",
+    "url": "https://www.darkreading.com/cybersecurity-analytics/ai-scramble-cybersecurity-ma-boom",
+    "additionalSources": []
+  },
+  {
     "id": "https://therecord.media/japan-germany-ransomware-arrest",
     "sourceUrl": "https://therecord.media/japan-germany-ransomware-arrest",
     "title": "Japan Arrests Russian National Linked to Qilin Ransomware Gang",
@@ -3783,23 +3796,5 @@
     "publishedAt": "2026-09-29T13:00:00.000Z",
     "url": "https://blog.cloudflare.com/threat-signals/",
     "additionalSources": []
-  },
-  {
-    "id": "https://blog.cloudflare.com/application-profiles/",
-    "sourceUrl": "https://blog.cloudflare.com/application-profiles/",
-    "title": "Cloudflare Introduces Application Profiles for Positive Security",
-    "headline": "Cloudflare Introduces Application Profiles for Positive Security",
-    "summary": "Cloudflare’s Application Profiles learn normal HTTP request patterns and flag deviations, adding a positive security layer. By reducing attack surface, the feature helps counter AI‑generated payloads, improving protection against evolving web threats for all customers.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "publishedAt": "2026-09-29T13:00:00.000Z",
-    "url": "https://blog.cloudflare.com/application-profiles/",
-    "additionalSources": [
-      {
-        "source": "Cloudflare Security",
-        "sourceUrl": "https://blog.cloudflare.com/ai-era-framework/"
-      }
-    ]
   }
 ]

@@ -29,6 +29,23 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "ai-driven-cybersecurity-m-a-surge-hits-117-deals-1677c3",
+    "title": "AI-Driven Cybersecurity M&A Surge Hits 117 Deals",
+    "summary": "The cybersecurity sector saw a boom in mergers and acquisitions, with 117 deals announced in the latest quarter. The trend is driven by AI advancements, attracting buyers beyond traditional security firms and reshaping the industry landscape.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-analytics/ai-scramble-cybersecurity-ma-boom",
+    "publishedAt": "2026-10-09T19:26:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-driven-cybersecurity-m-a-surge-hits-117-deals",
+      "article-1677c3",
+      "1677c3"
+    ]
+  },
+  {
     "slug": "japan-arrests-russian-national-linked-to-qilin-ran-2b2701",
     "title": "Japan Arrests Russian National Linked to Qilin Ransomware Gang",
     "summary": "Japan’s National Police Agency confirmed the arrest and extradition of a Russian national accused of involvement with the Qilin ransomware gang to Germany. The move is part of international cooperation to curb ransomware operations.",
@@ -4483,24 +4500,6 @@ export const news: NewsBrief[] = [
       "cloudflare-expands-threat-signals-to-all-accounts",
       "article-ad238f",
       "ad238f"
-    ]
-  },
-  {
-    "slug": "cloudflare-introduces-application-profiles-for-pos-2333a1",
-    "title": "Cloudflare Introduces Application Profiles for Positive Security",
-    "summary": "Cloudflare’s Application Profiles learn normal HTTP request patterns and flag deviations, adding a positive security layer. By reducing attack surface, the feature helps counter AI‑generated payloads, improving protection against evolving web threats for all customers.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/application-profiles/",
-    "publishedAt": "2026-09-29T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-introduces-application-profiles-for-pos",
-      "article-2333a1",
-      "2333a1",
-      "cloudflare-introduces-application-profiles-for-positive-secu"
     ]
   }
 ];
