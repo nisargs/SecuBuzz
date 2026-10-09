@@ -18,6 +18,78 @@
     ]
   },
   {
+    "id": "https://www.securityweek.com/citrix-urges-immediate-patching-of-critical-netscaler-vulnerability/",
+    "sourceUrl": "https://www.securityweek.com/citrix-urges-immediate-patching-of-critical-netscaler-vulnerability/",
+    "title": "Citrix Urges Immediate Patching of Critical NetScaler Vulnerability",
+    "headline": "Citrix Urges Immediate Patching of Critical NetScaler Vulnerability",
+    "summary": "Citrix has identified a critical flaw, CVE-2026-107406, in its NetScaler product that could allow attackers to execute code remotely or cause a denial of service. The vulnerability requires immediate patching to prevent potential exploitation and service disruption.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-09T06:53:53.000Z",
+    "url": "https://www.securityweek.com/citrix-urges-immediate-patching-of-critical-netscaler-vulnerability/",
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/us-australia-warn-of-latest-citrix-vulnerability"
+      }
+    ]
+  },
+  {
+    "id": "https://www.securityweek.com/google-pixel-10-exploits-earned-hackers-560000-at-pwn2own/",
+    "sourceUrl": "https://www.securityweek.com/google-pixel-10-exploits-earned-hackers-560000-at-pwn2own/",
+    "title": "Google Pixel 10 Exploits Earned Hackers $560,000 at Pwn2Own",
+    "headline": "Google Pixel 10 Exploits Earned Hackers $560,000 at Pwn2Own",
+    "summary": "At Pwn2Own Ireland 2026, hackers earned $560,000 by exploiting Google Pixel 10 phones, along with printers, smart speakers, smart home hubs, and AI infrastructure tools. The event highlighted the value of zero‑day vulnerabilities in mobile and IoT devices, prompting vendors to accelerate patching.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-09T06:39:55.000Z",
+    "url": "https://www.securityweek.com/google-pixel-10-exploits-earned-hackers-560000-at-pwn2own/",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-earn-1262000-for-98-zero-days-at-pwn2own-ireland/"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/fbi-seizes-7-domains-disrupts-flax.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/fbi-seizes-7-domains-disrupts-flax.html",
+    "title": "FBI Seizes Domains Used by China‑Linked Flax Typhoon APT",
+    "headline": "FBI Seizes Domains Used by China‑Linked Flax Typhoon APT",
+    "summary": "The FBI and DOJ disrupted malicious tools used by the China‑linked APT group Flax Typhoon, seizing several domains and blocking access to platforms that scanned and infiltrated U.S. critical infrastructure. The action hampers the group’s ability to conduct espionage and sabotage against vital systems.",
+    "category": "NATION_STATE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-09T06:39:29.000Z",
+    "url": "https://thehackernews.com/2026/10/fbi-seizes-7-domains-disrupts-flax.html",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-disrupts-chinese-hacking-tools-used-to-breach-critical-infrastructure/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/09/october-2026-patch-tuesday-forecast/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/09/october-2026-patch-tuesday-forecast/",
+    "title": "October 2026 Patch Tuesday Forecast: Office Cleanup Needed",
+    "headline": "October 2026 Patch Tuesday Forecast: Office Cleanup Needed",
+    "summary": "Microsoft’s September 2026 Patch Tuesday addressed 973 CVEs, with only two—CVE-2026-85880 and CVE-2026-81963—reported as known exploited. No public disclosures were made. The article urges organizations to prioritize patching high‑risk systems and prepare for ongoing vulnerability management.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-09T06:32:58.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/09/october-2026-patch-tuesday-forecast/",
+    "additionalSources": [
+      {
+        "source": "Cloudflare Security",
+        "sourceUrl": "https://blog.cloudflare.com/root-ksk-2024-rollover/"
+      }
+    ]
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/10/09/christiaan-beek-rapid7-bpfdoor-backdoor/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/09/christiaan-beek-rapid7-bpfdoor-backdoor/",
     "title": "BPFDoor Backdoor Targets Network Edge Devices",
@@ -29,24 +101,6 @@
     "publishedAt": "2026-10-09T06:00:22.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/09/christiaan-beek-rapid7-bpfdoor-backdoor/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/hackers-earn-1262000-for-98-zero-days-at-pwn2own-ireland/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-earn-1262000-for-98-zero-days-at-pwn2own-ireland/",
-    "title": "Hackers Earn $1.26M for 98 Zero-Days at Pwn2Own Ireland",
-    "headline": "Hackers Earn $1.26M for 98 Zero-Days at Pwn2Own Ireland",
-    "summary": "At Pwn2Own Ireland 2026, hackers exploited 98 zero-day vulnerabilities across various platforms, earning a total of $1,262,000 in rewards. The contest highlighted the prevalence of undisclosed flaws and the high value placed on zero-day exploits by the security community.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-09T05:41:04.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/hackers-earn-1262000-for-98-zero-days-at-pwn2own-ireland/",
-    "additionalSources": [
-      {
-        "source": "Zero Day Initiative",
-        "sourceUrl": "https://www.thezdi.com/blog/2026/10/8/pwn2own-ireland-2026-day-three-results-amp-master-of-pwn"
-      }
-    ]
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/10/09/eu-renewable-energy-cybersecurity/",
@@ -147,32 +201,6 @@
       {
         "source": "Help Net Security",
         "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/github-push-protection-modernbert/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/fbi-disrupts-chinese-hacking-tools-used-to-breach-critical-infrastructure/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-disrupts-chinese-hacking-tools-used-to-breach-critical-infrastructure/",
-    "title": "FBI Seizes Domains of Chinese State‑Sponsored Hacking Tools Used in Critical Infrastructure Breaches",
-    "headline": "FBI Seizes Domains of Chinese State‑Sponsored Hacking Tools Used in Critical Infrastructure Breaches",
-    "summary": "The FBI seized seven domains that hosted the MicroScan and FishHub tools used by the Chinese state‑sponsored group Flax Typhoon. These tools enabled attacks that breached critical infrastructure and other organizations worldwide. The operation disrupts the group’s command and control infrastructure, limiting future breaches.",
-    "category": "NATION_STATE",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-08T21:42:51.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/fbi-disrupts-chinese-hacking-tools-used-to-breach-critical-infrastructure/",
-    "additionalSources": [
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/flax-typhoon-china-tools-integrity-tech-international-takedown"
-      },
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/nudeleaksteens-seized-fbi-france/"
-      },
-      {
-        "source": "CISA",
-        "sourceUrl": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-281a"
       }
     ]
   },
@@ -1287,19 +1315,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://blog.cloudflare.com/root-ksk-2024-rollover/",
-    "sourceUrl": "https://blog.cloudflare.com/root-ksk-2024-rollover/",
-    "title": "DNS Root Key Rollover Scheduled for October 11, 2026",
-    "headline": "DNS Root Key Rollover Scheduled for October 11, 2026",
-    "summary": "On October 11, 2026, the Internet’s DNS root will switch to a new key‑signing key, KSK‑2024. The change requires resolvers to update trust anchors and verify RFC 8509 trust‑anchor sentinels. Failure to adapt may disrupt name resolution, so operators should test readiness now.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "publishedAt": "2026-10-06T17:50:11.000Z",
-    "url": "https://blog.cloudflare.com/root-ksk-2024-rollover/",
-    "additionalSources": []
-  },
-  {
     "id": "https://www.darkreading.com/cybersecurity-operations/ai-reshaping-ciso-budgets-security-teams",
     "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/ai-reshaping-ciso-budgets-security-teams",
     "title": "AI Reshaping CISO Budgets and Security Teams",
@@ -1643,24 +1658,6 @@
       {
         "source": "SecurityWeek",
         "sourceUrl": "https://www.securityweek.com/linux-backdoor-abuses-stun-protocol-exploits-dozens-of-flaws/"
-      }
-    ]
-  },
-  {
-    "id": "https://therecord.media/us-australia-warn-of-latest-citrix-vulnerability",
-    "sourceUrl": "https://therecord.media/us-australia-warn-of-latest-citrix-vulnerability",
-    "title": "Citrix Tracks New NetScaler Issue, Distinguishes from Prior Vulnerabilities",
-    "headline": "Citrix Tracks New NetScaler Issue, Distinguishes from Prior Vulnerabilities",
-    "summary": "Citrix confirmed it is monitoring a newly observed issue affecting some customer‑managed NetScaler deployments. The company clarified that this problem is unrelated to the vulnerabilities reported last week that raised alarms among cybersecurity experts. No exploitation details or patches have been released yet.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "publishedAt": "2026-10-05T17:22:00.000Z",
-    "url": "https://therecord.media/us-australia-warn-of-latest-citrix-vulnerability",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/cisa-flags-new-exploited-netscaler-flaw-as-attackers-crash-appliances-cve-2026-88779/"
       }
     ]
   },

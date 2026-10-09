@@ -29,6 +29,83 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "citrix-urges-immediate-patching-of-critical-netsca-7520e9",
+    "title": "Citrix Urges Immediate Patching of Critical NetScaler Vulnerability",
+    "summary": "Citrix has identified a critical flaw, CVE-2026-107406, in its NetScaler product that could allow attackers to execute code remotely or cause a denial of service. The vulnerability requires immediate patching to prevent potential exploitation and service disruption.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/citrix-urges-immediate-patching-of-critical-netscaler-vulnerability/",
+    "publishedAt": "2026-10-09T06:53:53.000Z",
+    "cves": [
+      "CVE-2026-107406"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "citrix-urges-immediate-patching-of-critical-netsca",
+      "article-7520e9",
+      "7520e9",
+      "citrix-urges-immediate-patching-of-critical-netscaler-vulner"
+    ]
+  },
+  {
+    "slug": "google-pixel-10-exploits-earned-hackers-560-000-at-79f2d7",
+    "title": "Google Pixel 10 Exploits Earned Hackers $560,000 at Pwn2Own",
+    "summary": "At Pwn2Own Ireland 2026, hackers earned $560,000 by exploiting Google Pixel 10 phones, along with printers, smart speakers, smart home hubs, and AI infrastructure tools. The event highlighted the value of zero‑day vulnerabilities in mobile and IoT devices, prompting vendors to accelerate patching.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/google-pixel-10-exploits-earned-hackers-560000-at-pwn2own/",
+    "publishedAt": "2026-10-09T06:39:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-pixel-10-exploits-earned-hackers-560-000-at",
+      "article-79f2d7",
+      "79f2d7",
+      "google-pixel-10-exploits-earned-hackers-560-000-at-pwn2own"
+    ]
+  },
+  {
+    "slug": "fbi-seizes-domains-used-by-china-linked-flax-typho-24701c",
+    "title": "FBI Seizes Domains Used by China‑Linked Flax Typhoon APT",
+    "summary": "The FBI and DOJ disrupted malicious tools used by the China‑linked APT group Flax Typhoon, seizing several domains and blocking access to platforms that scanned and infiltrated U.S. critical infrastructure. The action hampers the group’s ability to conduct espionage and sabotage against vital systems.",
+    "category": "Malware",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/fbi-seizes-7-domains-disrupts-flax.html",
+    "publishedAt": "2026-10-09T06:39:29.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fbi-seizes-domains-used-by-china-linked-flax-typho",
+      "article-24701c",
+      "24701c",
+      "fbi-seizes-domains-used-by-china-linked-flax-typhoon-apt"
+    ]
+  },
+  {
+    "slug": "october-2026-patch-tuesday-forecast-office-cleanup-460262",
+    "title": "October 2026 Patch Tuesday Forecast: Office Cleanup Needed",
+    "summary": "Microsoft’s September 2026 Patch Tuesday addressed 973 CVEs, with only two—CVE-2026-85880 and CVE-2026-81963—reported as known exploited. No public disclosures were made. The article urges organizations to prioritize patching high‑risk systems and prepare for ongoing vulnerability management.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/09/october-2026-patch-tuesday-forecast/",
+    "publishedAt": "2026-10-09T06:32:58.000Z",
+    "cves": [
+      "CVE-2026-85880",
+      "CVE-2026-81963"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "october-2026-patch-tuesday-forecast-office-cleanup",
+      "article-460262",
+      "460262",
+      "october-2026-patch-tuesday-forecast-office-cleanup-needed"
+    ]
+  },
+  {
     "slug": "bpfdoor-backdoor-targets-network-edge-devices-71e81c",
     "title": "BPFDoor Backdoor Targets Network Edge Devices",
     "summary": "BPFDoor is a stealthy Linux malware that remains dormant until a special magic packet triggers it. It targets mail gateways and other edge devices that cannot run endpoint agents, potentially compromising telecom networks and exposing national infrastructure to risk.",
@@ -43,24 +120,6 @@ export const news: NewsBrief[] = [
       "bpfdoor-backdoor-targets-network-edge-devices",
       "article-71e81c",
       "71e81c"
-    ]
-  },
-  {
-    "slug": "hackers-earn-1-26m-for-98-zero-days-at-pwn2own-ire-4a78ef",
-    "title": "Hackers Earn $1.26M for 98 Zero-Days at Pwn2Own Ireland",
-    "summary": "At Pwn2Own Ireland 2026, hackers exploited 98 zero-day vulnerabilities across various platforms, earning a total of $1,262,000 in rewards. The contest highlighted the prevalence of undisclosed flaws and the high value placed on zero-day exploits by the security community.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-earn-1262000-for-98-zero-days-at-pwn2own-ireland/",
-    "publishedAt": "2026-10-09T05:41:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-earn-1-26m-for-98-zero-days-at-pwn2own-ire",
-      "article-4a78ef",
-      "4a78ef",
-      "hackers-earn-1-26m-for-98-zero-days-at-pwn2own-ireland"
     ]
   },
   {
@@ -169,24 +228,6 @@ export const news: NewsBrief[] = [
       "article-5396f3",
       "5396f3",
       "fakegit-how-to-detect-block-17-000-malicious-github-repos"
-    ]
-  },
-  {
-    "slug": "fbi-seizes-domains-of-chinese-state-sponsored-hack-5d8536",
-    "title": "FBI Seizes Domains of Chinese State‑Sponsored Hacking Tools Used in Critical Infrastructure Breaches",
-    "summary": "The FBI seized seven domains that hosted the MicroScan and FishHub tools used by the Chinese state‑sponsored group Flax Typhoon. These tools enabled attacks that breached critical infrastructure and other organizations worldwide. The operation disrupts the group’s command and control infrastructure, limiting future breaches.",
-    "category": "Malware",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-disrupts-chinese-hacking-tools-used-to-breach-critical-infrastructure/",
-    "publishedAt": "2026-10-08T21:42:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fbi-seizes-domains-of-chinese-state-sponsored-hack",
-      "article-5d8536",
-      "5d8536",
-      "fbi-seizes-domains-of-chinese-state-sponsored-hacking-tools-"
     ]
   },
   {
@@ -1484,24 +1525,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "dns-root-key-rollover-scheduled-for-october-11-202-31870e",
-    "title": "DNS Root Key Rollover Scheduled for October 11, 2026",
-    "summary": "On October 11, 2026, the Internet’s DNS root will switch to a new key‑signing key, KSK‑2024. The change requires resolvers to update trust anchors and verify RFC 8509 trust‑anchor sentinels. Failure to adapt may disrupt name resolution, so operators should test readiness now.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/root-ksk-2024-rollover/",
-    "publishedAt": "2026-10-06T17:50:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "dns-root-key-rollover-scheduled-for-october-11-202",
-      "article-31870e",
-      "31870e",
-      "dns-root-key-rollover-scheduled-for-october-11-2026"
-    ]
-  },
-  {
     "slug": "ai-reshaping-ciso-budgets-and-security-teams-3b0170",
     "title": "AI Reshaping CISO Budgets and Security Teams",
     "summary": "Nick Kakolowski discusses how artificial intelligence is influencing CISO budgets, return on investment, and internal security team structures, highlighting shifts in resource allocation and operational focus within cybersecurity leadership.",
@@ -1935,24 +1958,6 @@ export const news: NewsBrief[] = [
       "article-27dbdc",
       "27dbdc",
       "clingstun-exploits-24-iot-flaws-to-turn-devices-into-proxy-n"
-    ]
-  },
-  {
-    "slug": "citrix-tracks-new-netscaler-issue-distinguishes-fr-463ddb",
-    "title": "Citrix Tracks New NetScaler Issue, Distinguishes from Prior Vulnerabilities",
-    "summary": "Citrix confirmed it is monitoring a newly observed issue affecting some customer‑managed NetScaler deployments. The company clarified that this problem is unrelated to the vulnerabilities reported last week that raised alarms among cybersecurity experts. No exploitation details or patches have been released yet.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/us-australia-warn-of-latest-citrix-vulnerability",
-    "publishedAt": "2026-10-05T17:22:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "citrix-tracks-new-netscaler-issue-distinguishes-fr",
-      "article-463ddb",
-      "463ddb",
-      "citrix-tracks-new-netscaler-issue-distinguishes-from-prior-v"
     ]
   },
   {

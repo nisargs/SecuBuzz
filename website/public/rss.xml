@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Oct 2026 06:35:55 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 08:19:44 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Co‑creator of Empire Market Dark Web Marketplace Sentenced to 40 Years</title>
@@ -17,21 +17,48 @@
       <category>Policy</category>
     </item>
     <item>
+      <title>Citrix Urges Immediate Patching of Critical NetScaler Vulnerability</title>
+      <link>https://secubuzz.com/news/citrix-urges-immediate-patching-of-critical-netsca-7520e9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/citrix-urges-immediate-patching-of-critical-netsca-7520e9</guid>
+      <description><![CDATA[Citrix has identified a critical flaw, CVE-2026-107406, in its NetScaler product that could allow attackers to execute code remotely or cause a denial of service. The vulnerability requires immediate patching to prevent potential exploitation and service disruption.]]></description>
+      <pubDate>Fri, 09 Oct 2026 06:53:53 GMT</pubDate>
+      <source url="https://www.securityweek.com/citrix-urges-immediate-patching-of-critical-netscaler-vulnerability/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Google Pixel 10 Exploits Earned Hackers $560,000 at Pwn2Own</title>
+      <link>https://secubuzz.com/news/google-pixel-10-exploits-earned-hackers-560-000-at-79f2d7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-pixel-10-exploits-earned-hackers-560-000-at-79f2d7</guid>
+      <description><![CDATA[At Pwn2Own Ireland 2026, hackers earned $560,000 by exploiting Google Pixel 10 phones, along with printers, smart speakers, smart home hubs, and AI infrastructure tools. The event highlighted the value of zero‑day vulnerabilities in mobile and IoT devices, prompting vendors to accelerate patching.]]></description>
+      <pubDate>Fri, 09 Oct 2026 06:39:55 GMT</pubDate>
+      <source url="https://www.securityweek.com/google-pixel-10-exploits-earned-hackers-560000-at-pwn2own/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>FBI Seizes Domains Used by China‑Linked Flax Typhoon APT</title>
+      <link>https://secubuzz.com/news/fbi-seizes-domains-used-by-china-linked-flax-typho-24701c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fbi-seizes-domains-used-by-china-linked-flax-typho-24701c</guid>
+      <description><![CDATA[The FBI and DOJ disrupted malicious tools used by the China‑linked APT group Flax Typhoon, seizing several domains and blocking access to platforms that scanned and infiltrated U.S. critical infrastructure. The action hampers the group’s ability to conduct espionage and sabotage against vital systems.]]></description>
+      <pubDate>Fri, 09 Oct 2026 06:39:29 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/fbi-seizes-7-domains-disrupts-flax.html">The Hacker News</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>October 2026 Patch Tuesday Forecast: Office Cleanup Needed</title>
+      <link>https://secubuzz.com/news/october-2026-patch-tuesday-forecast-office-cleanup-460262</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/october-2026-patch-tuesday-forecast-office-cleanup-460262</guid>
+      <description><![CDATA[Microsoft’s September 2026 Patch Tuesday addressed 973 CVEs, with only two—CVE-2026-85880 and CVE-2026-81963—reported as known exploited. No public disclosures were made. The article urges organizations to prioritize patching high‑risk systems and prepare for ongoing vulnerability management.]]></description>
+      <pubDate>Fri, 09 Oct 2026 06:32:58 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/09/october-2026-patch-tuesday-forecast/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>BPFDoor Backdoor Targets Network Edge Devices</title>
       <link>https://secubuzz.com/news/bpfdoor-backdoor-targets-network-edge-devices-71e81c</link>
       <guid isPermaLink="true">https://secubuzz.com/news/bpfdoor-backdoor-targets-network-edge-devices-71e81c</guid>
       <description><![CDATA[BPFDoor is a stealthy Linux malware that remains dormant until a special magic packet triggers it. It targets mail gateways and other edge devices that cannot run endpoint agents, potentially compromising telecom networks and exposing national infrastructure to risk.]]></description>
       <pubDate>Fri, 09 Oct 2026 06:00:22 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/09/christiaan-beek-rapid7-bpfdoor-backdoor/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Hackers Earn $1.26M for 98 Zero-Days at Pwn2Own Ireland</title>
-      <link>https://secubuzz.com/news/hackers-earn-1-26m-for-98-zero-days-at-pwn2own-ire-4a78ef</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-earn-1-26m-for-98-zero-days-at-pwn2own-ire-4a78ef</guid>
-      <description><![CDATA[At Pwn2Own Ireland 2026, hackers exploited 98 zero-day vulnerabilities across various platforms, earning a total of $1,262,000 in rewards. The contest highlighted the prevalence of undisclosed flaws and the high value placed on zero-day exploits by the security community.]]></description>
-      <pubDate>Fri, 09 Oct 2026 05:41:04 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/hackers-earn-1262000-for-98-zero-days-at-pwn2own-ireland/">BleepingComputer</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -86,15 +113,6 @@
       <description><![CDATA[The FakeGit campaign uses 17,610 GitHub repositories to deploy SmartLoader and StealC malware. Security teams can identify lures by scanning repository metadata, hunting for known IOCs, and securing credentials to prevent credential theft and malware execution.]]></description>
       <pubDate>Fri, 09 Oct 2026 02:44:08 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/fakegit-malware-github-smartloader-stealc">CyberNews AI</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>FBI Seizes Domains of Chinese State‑Sponsored Hacking Tools Used in Critical Infrastructure Breaches</title>
-      <link>https://secubuzz.com/news/fbi-seizes-domains-of-chinese-state-sponsored-hack-5d8536</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fbi-seizes-domains-of-chinese-state-sponsored-hack-5d8536</guid>
-      <description><![CDATA[The FBI seized seven domains that hosted the MicroScan and FishHub tools used by the Chinese state‑sponsored group Flax Typhoon. These tools enabled attacks that breached critical infrastructure and other organizations worldwide. The operation disrupts the group’s command and control infrastructure, limiting future breaches.]]></description>
-      <pubDate>Thu, 08 Oct 2026 21:42:51 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/fbi-disrupts-chinese-hacking-tools-used-to-breach-critical-infrastructure/">BleepingComputer</source>
       <category>Malware</category>
     </item>
     <item>
@@ -438,24 +456,6 @@
       <pubDate>Thu, 08 Oct 2026 07:52:33 GMT</pubDate>
       <source url="https://www.securityweek.com/fortibleed-attackers-locking-victims-out-of-fortinet-devices/">SecurityWeek</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Build an Economic Model to Prioritize Security Spending</title>
-      <link>https://secubuzz.com/news/build-an-economic-model-to-prioritize-security-spe-468f2a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/build-an-economic-model-to-prioritize-security-spe-468f2a</guid>
-      <description><![CDATA[Security leaders can use an economic model to quantify risk, starting with loss scenarios and mapping them to assets. The approach ranks fixes by value at risk, aligns with CFO expectations, and demonstrates the worth of prevented incidents, helping prioritize investments.]]></description>
-      <pubDate>Thu, 08 Oct 2026 06:00:01 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/08/ivan-milenkovic-qualys-cyber-risk-quantification/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Tensorlake npm Package Compromised to Deliver Credential‑Stealing Worm</title>
-      <link>https://secubuzz.com/news/tensorlake-npm-package-compromised-to-deliver-cred-71428b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/tensorlake-npm-package-compromised-to-deliver-cred-71428b</guid>
-      <description><![CDATA[The npm package "tensorlake" was tampered with in a ChainDrop/Shai‑Hulud supply‑chain attack. The malicious 0.5.144 release contains obfuscated malware that harvests credentials, exfiltrates secrets, establishes persistence, and executes remotely supplied code, compromising user accounts.]]></description>
-      <pubDate>Thu, 08 Oct 2026 05:46:20 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/tensorlake-npm-package-compromised-to.html">The Hacker News</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>
