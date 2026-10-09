@@ -18,6 +18,37 @@
     ]
   },
   {
+    "id": "https://therecord.media/irhythm-data-breach-reports",
+    "sourceUrl": "https://therecord.media/irhythm-data-breach-reports",
+    "title": "Hundreds of Thousands Impacted by Data Breach at iRhythm",
+    "headline": "Hundreds of Thousands Impacted by Data Breach at iRhythm",
+    "summary": "A data breach at iRhythm, a wearable cardiac sensor company, has affected hundreds of thousands of users. The breach began in the summer, and the company has started notifying state authorities about the impact. No specific exploit or vulnerability details are disclosed.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Record",
+    "publishedAt": "2026-10-09T16:06:00.000Z",
+    "url": "https://therecord.media/irhythm-data-breach-reports",
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/shinyhunters-arrest-fbi-data-breach-investigation"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/germany-arrests-alleged-core-qilin-ransomware-member-after-extradition/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/germany-arrests-alleged-core-qilin-ransomware-member-after-extradition/",
+    "title": "Germany Arrests Suspected Qilin Ransomware Leader",
+    "headline": "Germany Arrests Suspected Qilin Ransomware Leader",
+    "summary": "Germany has detained a Russian national extradited from Japan, suspected to be a top member of the Qilin ransomware gang. The arrest follows investigations into the group’s recent attacks on corporate networks, though no specific victims or ransom amounts have been disclosed.",
+    "category": "RANSOMWARE",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-09T15:38:56.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/germany-arrests-alleged-core-qilin-ransomware-member-after-extradition/",
+    "additionalSources": []
+  },
+  {
     "id": "https://therecord.media/belarusian-cyber-partisans-claim-2023-russia-healthcare-hack",
     "sourceUrl": "https://therecord.media/belarusian-cyber-partisans-claim-2023-russia-healthcare-hack",
     "title": "Belarusian Hacktivists Admit 2023 Breach of Russian State Healthcare Network",
@@ -3748,36 +3779,5 @@
     "publishedAt": "2026-09-29T13:00:00.000Z",
     "url": "https://blog.cloudflare.com/adaptive-ai-waf-testing/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/09/29/meta-muse-for-small-business/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/meta-muse-for-small-business/",
-    "title": "Meta gives small businesses an AI agent that knows their work",
-    "headline": "Meta gives small businesses an AI agent that knows their work",
-    "summary": "Meta introduces Muse for Small Business, an AI agent that integrates with Instagram analytics, Facebook Pages, and Meta ad accounts. The agent assists owners by automating tasks and providing context‑aware insights, helping streamline operations across the Meta ecosystem.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-09-29T12:45:45.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/09/29/meta-muse-for-small-business/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-07",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-07",
-    "title": "Viidure Dashcam Android App Suffers Critical Vulnerabilities Including CVE-2026-94204",
-    "headline": "Viidure Dashcam Android App Suffers Critical Vulnerabilities Including CVE-2026-94204",
-    "summary": "Affected Viidure Dashcam Android versions contain CVE‑2026‑94204, incorrect permission assignment, hard‑coded credentials, and a public‑read cloud storage bucket. These flaws let attackers access, modify, or delete sensitive user data and critical system files, potentially crippling the entire platform.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CISA",
-    "publishedAt": "2026-09-29T12:00:00.000Z",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-07",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/github-ai-android-app-vulnerabilities/"
-      }
-    ]
   }
 ]

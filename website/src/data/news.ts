@@ -29,6 +29,41 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "hundreds-of-thousands-impacted-by-data-breach-at-i-5e1a5e",
+    "title": "Hundreds of Thousands Impacted by Data Breach at iRhythm",
+    "summary": "A data breach at iRhythm, a wearable cardiac sensor company, has affected hundreds of thousands of users. The breach began in the summer, and the company has started notifying state authorities about the impact. No specific exploit or vulnerability details are disclosed.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/irhythm-data-breach-reports",
+    "publishedAt": "2026-10-09T16:06:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hundreds-of-thousands-impacted-by-data-breach-at-i",
+      "article-5e1a5e",
+      "5e1a5e",
+      "hundreds-of-thousands-impacted-by-data-breach-at-irhythm"
+    ]
+  },
+  {
+    "slug": "germany-arrests-suspected-qilin-ransomware-leader-677481",
+    "title": "Germany Arrests Suspected Qilin Ransomware Leader",
+    "summary": "Germany has detained a Russian national extradited from Japan, suspected to be a top member of the Qilin ransomware gang. The arrest follows investigations into the group’s recent attacks on corporate networks, though no specific victims or ransom amounts have been disclosed.",
+    "category": "Ransomware",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/germany-arrests-alleged-core-qilin-ransomware-member-after-extradition/",
+    "publishedAt": "2026-10-09T15:38:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "germany-arrests-suspected-qilin-ransomware-leader",
+      "article-677481",
+      "677481"
+    ]
+  },
+  {
     "slug": "belarusian-hacktivists-admit-2023-breach-of-russia-6e2913",
     "title": "Belarusian Hacktivists Admit 2023 Breach of Russian State Healthcare Network",
     "summary": "Belarusian Cyber Partisans confirmed they spent months infiltrating the Moscow Department of Health’s network in 2023. The breach involved unauthorized access to the Russian state healthcare system, exposing sensitive data and compromising national security infrastructure. The admission underscores ongoing cyber espionage targeting critical health services.",
@@ -4465,44 +4500,6 @@ export const news: NewsBrief[] = [
       "cloudflare-waf-tester-reveals-detection-gaps",
       "article-1b2172",
       "1b2172"
-    ]
-  },
-  {
-    "slug": "meta-gives-small-businesses-an-ai-agent-that-knows-2ca31d",
-    "title": "Meta gives small businesses an AI agent that knows their work",
-    "summary": "Meta introduces Muse for Small Business, an AI agent that integrates with Instagram analytics, Facebook Pages, and Meta ad accounts. The agent assists owners by automating tasks and providing context‑aware insights, helping streamline operations across the Meta ecosystem.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/meta-muse-for-small-business/",
-    "publishedAt": "2026-09-29T12:45:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "meta-gives-small-businesses-an-ai-agent-that-knows",
-      "article-2ca31d",
-      "2ca31d",
-      "meta-gives-small-businesses-an-ai-agent-that-knows-their-wor"
-    ]
-  },
-  {
-    "slug": "viidure-dashcam-android-app-suffers-critical-vulne-431cd5",
-    "title": "Viidure Dashcam Android App Suffers Critical Vulnerabilities Including CVE-2026-94204",
-    "summary": "Affected Viidure Dashcam Android versions contain CVE‑2026‑94204, incorrect permission assignment, hard‑coded credentials, and a public‑read cloud storage bucket. These flaws let attackers access, modify, or delete sensitive user data and critical system files, potentially crippling the entire platform.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-07",
-    "publishedAt": "2026-09-29T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-94204"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "viidure-dashcam-android-app-suffers-critical-vulne",
-      "article-431cd5",
-      "431cd5",
-      "viidure-dashcam-android-app-suffers-critical-vulnerabilities"
     ]
   }
 ];
