@@ -18,6 +18,68 @@
     ]
   },
   {
+    "id": "https://www.helpnetsecurity.com/2026/10/09/christiaan-beek-rapid7-bpfdoor-backdoor/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/09/christiaan-beek-rapid7-bpfdoor-backdoor/",
+    "title": "BPFDoor Backdoor Targets Network Edge Devices",
+    "headline": "BPFDoor Backdoor Targets Network Edge Devices",
+    "summary": "BPFDoor is a stealthy Linux malware that remains dormant until a special magic packet triggers it. It targets mail gateways and other edge devices that cannot run endpoint agents, potentially compromising telecom networks and exposing national infrastructure to risk.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-09T06:00:22.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/09/christiaan-beek-rapid7-bpfdoor-backdoor/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/hackers-earn-1262000-for-98-zero-days-at-pwn2own-ireland/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-earn-1262000-for-98-zero-days-at-pwn2own-ireland/",
+    "title": "Hackers Earn $1.26M for 98 Zero-Days at Pwn2Own Ireland",
+    "headline": "Hackers Earn $1.26M for 98 Zero-Days at Pwn2Own Ireland",
+    "summary": "At Pwn2Own Ireland 2026, hackers exploited 98 zero-day vulnerabilities across various platforms, earning a total of $1,262,000 in rewards. The contest highlighted the prevalence of undisclosed flaws and the high value placed on zero-day exploits by the security community.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-09T05:41:04.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-earn-1262000-for-98-zero-days-at-pwn2own-ireland/",
+    "additionalSources": [
+      {
+        "source": "Zero Day Initiative",
+        "sourceUrl": "https://www.thezdi.com/blog/2026/10/8/pwn2own-ireland-2026-day-three-results-amp-master-of-pwn"
+      }
+    ]
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/09/eu-renewable-energy-cybersecurity/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/09/eu-renewable-energy-cybersecurity/",
+    "title": "Thousands of Wind and Solar Park Systems Exposed on Internet Across Europe",
+    "headline": "Thousands of Wind and Solar Park Systems Exposed on Internet Across Europe",
+    "summary": "Modat and NCSC‑NL discovered 8,547 internet‑facing systems at wind farms and solar parks in 35 European countries that should not be reachable from the internet. The exposed systems include login screens and turbine control pages with a Stop button accessible to anyone with a browser, posing a significant operational risk.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-09T05:30:52.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/09/eu-renewable-energy-cybersecurity/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/09/pci-ssc-payment-environments-ai-security-guidance/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/09/pci-ssc-payment-environments-ai-security-guidance/",
+    "title": "PCI SSC Recommends Human Approval for AI Actions on Cardholder Data",
+    "headline": "PCI SSC Recommends Human Approval for AI Actions on Cardholder Data",
+    "summary": "The PCI Security Standards Council released guidance urging human oversight of AI agents handling cardholder data. The advisory covers governance, deployment, access controls, testing, and PCI standard application, emphasizing that existing PCI requirements remain primary. It aims to mitigate AI-assisted attack risks in payment environments.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-09T05:00:25.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/09/pci-ssc-payment-environments-ai-security-guidance/",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/09/move-toward-autonomous-it-operations/"
+      }
+    ]
+  },
+  {
     "id": "https://www.securityweek.com/formula-predicts-when-ai-chatbots-are-at-risk-of-turning-bad/",
     "sourceUrl": "https://www.securityweek.com/formula-predicts-when-ai-chatbots-are-at-risk-of-turning-bad/",
     "title": "Researchers Publish Formula to Predict When AI Chatbots May Go Rogue",
@@ -623,24 +685,6 @@
     "publishedAt": "2026-10-08T11:11:28.000Z",
     "url": "https://www.securityweek.com/rein-security-raises-25-million-to-guard-ai-agents-at-runtime/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.thezdi.com/blog/2026/10/8/pwn2own-ireland-2026-day-three-results-amp-master-of-pwn",
-    "sourceUrl": "https://www.thezdi.com/blog/2026/10/8/pwn2own-ireland-2026-day-three-results-amp-master-of-pwn",
-    "title": "Pwn2Own Ireland 2026 Day Three Wrap‑up",
-    "headline": "Pwn2Own Ireland 2026 Day Three Wrap‑up",
-    "summary": "Day Three of Pwn2Own Ireland 2026 saw 17 attempts, with the Google Pixel 10 drawing three separate exploits for a $1.33 million prize. Samsung Galaxy S26, Philips Hue Bridge Pro, Home Assistant Green, Oracle Autonomous AI Database, Chroma, and various printers were also targeted. The event continues to highlight zero‑day exploitation in consumer and enterprise devices.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Zero Day Initiative",
-    "publishedAt": "2026-10-08T10:41:14.000Z",
-    "url": "https://www.thezdi.com/blog/2026/10/8/pwn2own-ireland-2026-day-three-results-amp-master-of-pwn",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/samsung-galaxy-s26-hacked-three-more-times-at-pwn2own-ireland/"
-      }
-    ]
   },
   {
     "id": "https://thehackernews.com/2026/10/wazza-phishkit-targets-banking.html",
@@ -3734,44 +3778,5 @@
         "sourceUrl": "https://thehackernews.com/2026/09/carbonato-botnet-compromises-docker.html"
       }
     ]
-  },
-  {
-    "id": "https://therecord.media/shinyhunters-cyberattacks-oracle-mandiant",
-    "sourceUrl": "https://therecord.media/shinyhunters-cyberattacks-oracle-mandiant",
-    "title": "ShinyHunters Exploit Oracle PeopleSoft Vulnerability in New Campaign",
-    "headline": "ShinyHunters Exploit Oracle PeopleSoft Vulnerability in New Campaign",
-    "summary": "ShinyHunters are leveraging a flaw in Oracle PeopleSoft products to conduct attacks, following their claim of breaching the FBI’s jobs site. The group uses workarounds to bypass security controls, targeting organizations that rely on PeopleSoft. No CVE ID is disclosed, and no patch status is mentioned.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "publishedAt": "2026-09-28T19:30:00.000Z",
-    "url": "https://therecord.media/shinyhunters-cyberattacks-oracle-mandiant",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/google-warns-of-shinyhunters-fresh-oracle-peoplesoft-campaign/"
-      },
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/shinyhunters-uses-waf-bypass-trick-in-oracle-peoplesoft-attacks/"
-      },
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/09/attackers-bypass-wafs-to-exploit-oracle.html"
-      }
-    ]
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/misconfigured-supabase-apps-expose-data-in-over-16-000-databases/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/misconfigured-supabase-apps-expose-data-in-over-16-000-databases/",
-    "title": "Supabase Misconfigurations Expose PII, Passwords, and Auth Tokens in 16,000 Databases",
-    "headline": "Supabase Misconfigurations Expose PII, Passwords, and Auth Tokens in 16,000 Databases",
-    "summary": "Researchers discovered over 16,000 Supabase databases with misconfigured access controls, revealing readable tables containing personally identifiable information, passwords, and authentication tokens. The exposure allows attackers to harvest sensitive data from the databases, posing a significant privacy risk to affected users.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-09-28T18:50:59.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/misconfigured-supabase-apps-expose-data-in-over-16-000-databases/",
-    "additionalSources": []
   }
 ]
