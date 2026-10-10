@@ -3,6 +3,7 @@ import { Outlet, useLocation } from 'react-router-dom';
 import { SiteHeader } from './SiteHeader';
 import { SiteFooter } from './SiteFooter';
 import { ErrorBoundary } from './ErrorBoundary';
+import { SmartAppBanner } from './SmartAppBanner';
 
 export function Layout() {
   const { pathname } = useLocation();
@@ -19,6 +20,7 @@ export function Layout() {
         
         Skip to content
       </a>
+      <SmartAppBanner />
       <SiteHeader />
       <main id="main" className="flex-1">
         <ErrorBoundary key={pathname}>
