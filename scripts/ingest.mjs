@@ -35,13 +35,20 @@ const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 
 const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-2.5-flash";
 
+const OPENROUTER_API_URL =
+  "https://openrouter.ai/api/v1/chat/completions";
+
+const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
+
+const OPENROUTER_MODEL = process.env.OPENROUTER_MODEL || "openrouter/free";
+
 /*
  * ---------------------------------------------------------------------------
  * INGESTION CONFIGURATION
  * ---------------------------------------------------------------------------
  *
- * Expanded throughput with resilient dual-engine Groq + Gemini AI fallback.
- * Groq free tier limit is 8,000 TPM; Gemini free tier offers 1,000,000 TPM.
+ * Interleaved multi-engine pipeline (Groq + Gemini + OpenRouter).
+ * All 3 run on 100% free tier allowances with automated failover.
  */
 
 const ARTICLES_PER_AI_BATCH = 2;
@@ -195,9 +202,9 @@ const FEEDS = [
 // VALIDATION
 // -----------------------------------------------------------------------------
 
-if (!GROQ_API_KEY && !GEMINI_API_KEY) {
+if (!GROQ_API_KEY && !GEMINI_API_KEY && !OPENROUTER_API_KEY) {
   throw new Error(
-    "Missing AI API key: Please set GROQ_API_KEY or GEMINI_API_KEY in the environment.",
+    "Missing AI API key: Please set GROQ_API_KEY, GEMINI_API_KEY, or OPENROUTER_API_KEY in the environment.",
   );
 }
 
@@ -1481,28 +1488,133 @@ async function requestGemini(candidates) {
 }
 
 // -----------------------------------------------------------------------------
-// UNIFIED RESILIENT AI REQUEST DISPATCHER
+// OPENROUTER REQUEST (Interleaved AI Partner)
 // -----------------------------------------------------------------------------
 
-async function requestAi(candidates) {
-  if (GROQ_API_KEY) {
-    try {
-      return await requestGroq(candidates);
-    } catch (groqError) {
-      console.warn(`Groq primary batch attempt failed: ${groqError.message}`);
-      if (GEMINI_API_KEY) {
-        console.log("Automatically switching to Gemini AI backup engine...");
-        return await requestGemini(candidates);
-      }
-      throw groqError;
-    }
-  } else if (GEMINI_API_KEY) {
-    return await requestGemini(candidates);
-  } else {
+async function requestOpenRouter(candidates) {
+  if (!OPENROUTER_API_KEY) {
+    throw new Error("OPENROUTER_API_KEY is not configured.");
+  }
+
+  const prompt = buildBatchPrompt(candidates);
+  console.log(`Sending batch to OpenRouter (${OPENROUTER_MODEL})...`);
+
+  const response = await fetch(OPENROUTER_API_URL, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${OPENROUTER_API_KEY}`,
+      "HTTP-Referer": "https://secubuzz.com",
+      "X-Title": "SecuBuzz News Ingestion",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      model: OPENROUTER_MODEL,
+      messages: [
+        {
+          role: "system",
+          content:
+            "You are a precise cybersecurity news editor. Return ONLY valid JSON adhering to the requested schema. Do not provide explanations or markdown tags.",
+        },
+        {
+          role: "user",
+          content: prompt,
+        },
+      ],
+      response_format: { type: "json_object" },
+      temperature: 0.2,
+      max_tokens: MAX_COMPLETION_TOKENS,
+    }),
+  });
+
+  const responseText = await response.text();
+  let payload = null;
+
+  try {
+    payload = JSON.parse(responseText);
+  } catch {
     throw new Error(
-      "No AI API key found (neither GROQ_API_KEY nor GEMINI_API_KEY).",
+      `OpenRouter returned non-JSON HTTP response: ${truncateText(responseText, 500)}`,
     );
   }
+
+  if (!response.ok) {
+    throw new Error(
+      payload?.error?.message ||
+        `OpenRouter request failed with HTTP ${response.status}`,
+    );
+  }
+
+  const choice = payload?.choices?.[0];
+  const content = choice?.message?.content || "";
+  if (!content.trim()) {
+    console.log("OpenRouter returned an empty content response.");
+    return [];
+  }
+
+  const parsed = safeJsonParse(content);
+  if (!parsed) {
+    throw new Error("Could not parse OpenRouter content as JSON.");
+  }
+
+  const articles = extractArticleArray(parsed);
+  console.log(`OpenRouter returned ${articles.length} article results.`);
+
+  await sleep(1500);
+  return articles;
+}
+
+// -----------------------------------------------------------------------------
+// INTERLEAVED ROTATING MULTI-ENGINE DISPATCHER
+// -----------------------------------------------------------------------------
+
+function getRotatedEngines() {
+  const pool = [];
+  if (GROQ_API_KEY) {
+    pool.push({ name: `Groq (${GROQ_MODEL})`, run: requestGroq });
+  }
+  if (GEMINI_API_KEY) {
+    pool.push({ name: `Gemini (${GEMINI_MODEL})`, run: requestGemini });
+  }
+  if (OPENROUTER_API_KEY) {
+    pool.push({ name: `OpenRouter (${OPENROUTER_MODEL})`, run: requestOpenRouter });
+  }
+
+  if (pool.length === 0) return [];
+
+  // Interleave the lead engine based on current UTC hour
+  const currentHour = new Date().getUTCHours();
+  const leadIndex = currentHour % pool.length;
+  return [...pool.slice(leadIndex), ...pool.slice(0, leadIndex)];
+}
+
+async function requestAi(candidates) {
+  const engines = getRotatedEngines();
+  if (engines.length === 0) {
+    throw new Error(
+      "No AI API key found (neither GROQ_API_KEY, GEMINI_API_KEY, nor OPENROUTER_API_KEY).",
+    );
+  }
+
+  let lastError = null;
+  for (let i = 0; i < engines.length; i++) {
+    const engine = engines[i];
+    try {
+      console.log(
+        `[AI Dispatcher] Using engine ${i === 0 ? "LEAD (Hourly Rotation)" : "FAILOVER"}: ${engine.name}`,
+      );
+      return await engine.run(candidates);
+    } catch (err) {
+      console.warn(`[AI Dispatcher] ${engine.name} attempt failed: ${err.message}`);
+      lastError = err;
+      if (i < engines.length - 1) {
+        console.log(
+          `[AI Dispatcher] Seamlessly switching to next engine: ${engines[i + 1].name}...`,
+        );
+      }
+    }
+  }
+
+  throw lastError || new Error("All configured AI engines failed for this batch.");
 }
 
 // -----------------------------------------------------------------------------
@@ -1549,14 +1661,12 @@ console.log(
   "Starting SecuBuzz feed ingestion...",
 );
 
+const activeRotation = getRotatedEngines();
 console.log(
-  `Primary AI engine: ${GROQ_API_KEY ? `Groq (${GROQ_MODEL})` : "None"}`,
+  `Active AI engines: ${activeRotation.map((e) => e.name).join(" -> ")}`,
 );
-
-if (GEMINI_API_KEY) {
-  console.log(
-    `Backup AI engine: Gemini (${GEMINI_MODEL})`,
-  );
+if (activeRotation.length > 0) {
+  console.log(`This hour's lead engine: ${activeRotation[0].name}`);
 }
 
 console.log(

@@ -64,6 +64,32 @@ export default function RootLayout() {
     }
   }, [loaded, error]);
 
+  // Proactive Over-The-Air (OTA) update check on launch
+  useEffect(() => {
+    if (__DEV__ || isExpoGo) return;
+    let isMounted = true;
+    async function checkOta() {
+      try {
+        const Updates = require('expo-updates');
+        if (Updates?.isEnabled) {
+          const update = await Updates.checkForUpdateAsync();
+          if (update.isAvailable) {
+            await Updates.fetchUpdateAsync();
+            if (isMounted) {
+              await Updates.reloadAsync();
+            }
+          }
+        }
+      } catch (e) {
+        // Fail gracefully without interrupting app experience
+      }
+    }
+    void checkOta();
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
   // Notification response observer for cold-start and background taps
   // MUST wait until loaded is true so the root Stack navigator is fully mounted
   useEffect(() => {
