@@ -1,6 +1,6 @@
 # SecuBuzz: Complete Architectural & Product Status Quo
 
-> **Document Purpose**: This comprehensive status quo dossier details the current architecture, technical stack, threat intelligence pipeline, feature set, design philosophy, and operational cost profile of **SecuBuzz**. You can copy or feed this document into other AI models (e.g., Claude, GPT-4o, Gemini Pro) to brainstorm features, business models, enterprise extensions, and UX refinements.
+> **Document Purpose**: This comprehensive status quo dossier details the current architecture, technical stack, threat intelligence pipeline, feature set, design philosophy, telemetry snapshot, and monetization roadmap of **SecuBuzz**. You can copy or feed this document into other AI models (e.g., Claude 3.7, GPT-4o, Gemini 2.5 Pro, DeepSeek R1) to brainstorm features, enterprise extensions, business models, and UX refinements.
 
 ---
 
@@ -8,13 +8,14 @@
 
 - **App Name**: SecuBuzz
 - **Developer / Publisher**: MiSo Labs
-- **Platform**: Cross-platform Mobile (Android & iOS) via React Native & Expo SDK 57
+- **Platform**: Cross-platform Mobile (Android & iOS) via React Native & Expo SDK 57 (`com.secubuzz.app`) + Web Companion ([secubuzz.com](https://secubuzz.com))
 - **Primary Audience**: Cybersecurity analysts, SOC operators, CISOs, DevSecOps engineers, sysadmins, and technology professionals.
 - **Core Value Proposition**: 
-  1. **Zero Fluff**: Cuts through sensationalist news to deliver factual, actionable 60-word security briefs.
-  2. **Real-Time Threat Telemetry**: Dedicated tracking of active zero-days and emergency directives from the **CISA Known Exploited Vulnerabilities (KEV)** catalog.
-  3. **Anti-AI / Executive Aesthetic**: Clean, dark-mode, sober UI without garish neon gradients or emoji clutter (`🚨⚠️`).
-  4. **100% Free Operation**: Engineered entirely on top-tier free cloud tiers with $0.00 monthly infrastructure overhead.
+  1. **Zero Fluff**: Cuts through sensationalist news to deliver factual, objective, actionable 60-word security intelligence briefs.
+  2. **Real-Time Threat Telemetry**: Dedicated tracking of active zero-days and emergency directives from the **CISA Known Exploited Vulnerabilities (KEV)** catalog and GitHub Security Advisory Database.
+  3. **EPSS Exploit Prediction Integration**: Enriches static CVSS vulnerability scores with daily FIRST.org Exploit Prediction Scoring System (EPSS) probabilities and percentile rankings.
+  4. **Anti-AI / Executive Aesthetic**: Clean, dark-mode, sober UI without garish neon gradients or emoji clutter (`🚨⚠️`).
+  5. **100% Free Operation ($0.00 Overhead)**: Engineered entirely on top-tier free cloud tiers with $0.00 monthly infrastructure overhead.
 
 ---
 
@@ -22,17 +23,19 @@
 
 ```mermaid
 graph TD
-    RSS[20 Global RSS Feeds] -->|Every 4 Hours| GHA[GitHub Actions Ingest Script]
-    CISA[CISA KEV JSON Feed] -->|Every 4 Hours| GHA
-    GHA -->|Deduplicate & Format| GROQ[Groq AI: Llama 3.3 / GPT-OSS 20B]
-    GROQ -->|Strict JSON Schema Briefs| GHA
-    GHA -->|Upload feed.json| R2[Cloudflare R2 Bucket]
+    RSS[26 Curated Global Threat Feeds] -->|Hourly Cron| GHA[GitHub Actions Ingest Script]
+    CISA[CISA KEV + GitHub Advisories] -->|Hourly Cron| GHA
+    GHA -->|Deduplicate & Cluster| TRI_AI[Resilient Dual/Tri-Engine AI Pipeline]
+    TRI_AI -->|1. Groq: Llama 3.3 / GPT-OSS 20B| GHA
+    TRI_AI -->|2. Gemini 2.5 Flash Fallback| GHA
+    TRI_AI -->|3. OpenRouter Free Fallback| GHA
+    GHA -->|Upload feed.json & news.ts| R2[Cloudflare R2 Bucket & Web App]
     GHA -->|Broadcast Alerts| EXPO[Expo Push API]
     EXPO -->|Push Notifications| APP[SecuBuzz Mobile App]
     APP -->|Fetch feed.json| R2
-    APP -->|Fetch Live CISA Advisories| CISA
-    APP -->|Register Push Token| CFW[Cloudflare Worker]
-    CFW -->|Store Tokens| D1[Cloudflare D1 SQLite]
+    APP -->|Fetch 1,789 Advisories| CFW[Cloudflare Worker API]
+    APP -->|Register Push Token| CFW
+    CFW -->|Store Tokens & Clicks| D1[Cloudflare D1 SQLite Database]
 ```
 
 ### Core Frontend Stack
@@ -44,19 +47,19 @@ graph TD
   - `@react-native-async-storage/async-storage` for offline caching of briefs, advisories, bookmarks, preferences, and push tokens.
 - **Typography**: `@expo-google-fonts/exo` (Exo Bold, SemiBold, Medium, Regular).
 - **Icons**: `@expo/vector-icons` (Ionicons).
+- **Sensory & Haptics**: `expo-haptics` (tactile micro-feedback for bookmarking, copying, theme switching, and refresh).
 - **Safe Area**: `react-native-safe-area-context` (`v5.7.0`).
 - **OTA Updates**: `expo-updates` (`v57.0.23`) with runtime version policy set to `appVersion`.
 
 ### Backend & Cloud Infrastructure (100% Free Tier Profile)
 | Service | Purpose | Free Quota | Current SecuBuzz Consumption | Headroom |
 | :--- | :--- | :--- | :--- | :--- |
-| **Cloudflare Worker** (`secubuzz-push`) | Token registration & static policy endpoints | 100,000 req/day | ~20–50 req/day | **99.95% free** |
-| **Cloudflare D1** (`tokens`) | Serverless SQLite database for device push tokens | 100,000 writes/day | < 15 writes/day | **99.98% free** |
-| **Cloudflare R2** (`secubuzz-feed`) | Object storage hosting `feed.json` (~180 KB) | 1,000,000 writes/mo | 180 writes/month (6x/day) | **99.98% free** |
-| **Groq AI API** | Summarizing raw RSS feeds into 60-word briefs | 14,400 req/day | ~48 req/day | **99.66% free** |
-| **CISA KEV Catalog** | Direct JSON threat advisory feed | Public / Unlimited | Direct HTTP fetch ($0.00) | **100% free** |
-| **GitHub Actions** | Automated CI cron running `scripts/ingest.mjs` | 2,000 min/mo | ~135 min/month (~40s per run) | **93.25% free** |
-| **Expo Push Notification Service** | APNs & FCM push relay | Unlimited | Batched in chunks of 100 | **100% free** |
+| **Cloudflare Worker** (`secubuzz-push`) | API routing, token registry, install tracking & edge caching | 100,000 req/day | ~1,200–3,500 req/day | **96.5% buffer remaining** |
+| **Cloudflare D1** (`secubuzz-push-db`) | Serverless SQLite database for push tokens & click analytics | 5,000,000 reads / 100k writes/day | < 50,000 reads / < 50 writes/day | **99.0% database headroom** |
+| **Cloudflare R2** (`secubuzz-feed`) | Object storage hosting `feed.json` (~280 KB) | 10 GB storage / 1,000,000 writes/mo | ~30 MB storage / 720 writes/mo | **99.9% free buffer** |
+| **Dual/Tri-Engine AI Pipeline** | Summarizing raw RSS feeds into 60-word briefs | Groq (14.4k req/day), Gemini (1,500 req/day) | ~50–120 requests/day | **98.5% API headroom** |
+| **GitHub Actions** | Automated CI cron running `scripts/ingest.mjs` hourly | 2,000 min/mo | ~450 min/month (~25s per run) | **77.5% free buffer** |
+| **Expo Push Service** | APNs & FCM push relay to registered Android/iOS devices | Unlimited | Batched in chunks of 100 | **100% free** |
 
 ---
 
@@ -73,13 +76,17 @@ export interface Article {
   category: ArticleCategory;       // 'BREACH' | 'RANSOMWARE' | 'CVE' | 'VULNERABILITY' | 'NATION_STATE' | 'GENERAL'
   severity: ArticleSeverity;       // 'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW'
   publishedAt: string;             // ISO 8601 timestamp
-  // Extended Threat Telemetry for Advisories:
+  // Extended Threat Telemetry:
   requiredAction?: string;         // Mandatory vendor/CISA mitigation action
   dueDate?: string;                // Remediation deadline (e.g., '2026-04-15')
   patchedVersion?: string;         // Fixed software release version
   vulnerableVersionRange?: string; // Vulnerable version scope
   vendorProject?: string;          // Vendor/ecosystem (e.g., 'MikroTik', 'Ivanti', 'Google')
   product?: string;                // Affected software product (e.g., 'RouterOS', 'Chrome')
+  additionalSources?: {            // Story clustering & deduplication cross-links
+    source: string;
+    sourceUrl: string;
+  }[];
 }
 ```
 
@@ -94,23 +101,33 @@ export interface Article {
 ## 4. Current App Features & Screens
 
 ### Tab 1: News Briefs (`src/app/(tabs)/index.tsx`)
-- **Vertical Snap Scroll**: Full-viewport paging (TikTok/Reels style vertical paging), showing 1 self-contained security brief per card.
+- **Vertical Snap Scroll**: Full-viewport paging (TikTok/Reels style vertical paging), presenting 1 self-contained security brief per card.
+- **Rolling Archive**: Ingests and maintains up to 350 articles (~7–10 days of rolling intelligence across 26 feeds).
 - **Micro-Progress Bar**: Discrete 5-segment progress bar at the top indicating scroll position.
 - **Filter Modal**: Filter simultaneously by Threat Severity (`CRITICAL`, `HIGH`, `MEDIUM`, `LOW`) and Category (`BREACH`, `RANSOMWARE`, `CVE`, `NATION_STATE`, `VULNERABILITY`, `GENERAL`).
-- **Live Search**: Instant keyword search filtering by title, summary, vendor, or CVE ID.
+- **Live Search**: Instant keyword search filtering by title, summary, vendor, product, or CVE ID.
+- **Story Deduplication & Cross-Links**: Automatically clusters multiple outlets covering the same event into a single brief with *"Also reported by: [Source 2], [Source 3]"*.
 - **Quick Actions**:
-  - **1-Tap Markdown Incident Report Copy**: Instantly copies a clean, markdown-formatted incident report to clipboard (with a 2-second visual checkmark confirmation) formatted for pasting directly into Slack, Microsoft Teams, Jira tickets, or Discord.
-  - 1-tap Bookmark/Save with visual state transition.
+  - **1-Tap Markdown Incident Report Copy**: Instantly copies a clean, markdown-formatted incident report to clipboard (with haptic feedback and a 2-second visual checkmark confirmation) formatted for pasting directly into Slack, Microsoft Teams, Jira tickets, or Discord.
+  - 1-tap Bookmark/Save with sensory tactile feedback.
   - Native Share sheet (generates clean pre-formatted intelligence snippets for Slack, Teams, WhatsApp, X).
-  - "Read Original" button opening in-app / external source.
+  - "Read Original" button opening verified publisher article.
   - Directional "Back to Top" floating button appearing when scrolling upwards.
-- **Feed Cache**: Caches up to 250 stories locally in `AsyncStorage` (`cached-articles`). Works 100% offline.
+- **Offline Cache**: Caches feed locally in `AsyncStorage` (`cached-articles`). Works 100% offline.
 
 ### Tab 2: Threat Advisories (`src/app/(tabs)/advisories.tsx`)
-- **Direct CISA KEV Ingestion**: Ingests active zero-days from CISA's live catalog.
-- **Active Telemetry Counter**: Header badge showing dynamic active threat count (`25 ACTIVE` or `6 OF 25 ACTIVE` when filtered).
-- **1-Tap Markdown Advisory Report Copy**: Copies full vulnerability telemetry (CVE ID, severity, affected vendor/product, remediation deadline, patch version, required action, and source URL) in Markdown for security team channels.
-- **Affected Component Banner**: Dedicated banner highlighting `AFFECTED: Vendor · Product` with micro cube icon.
+- **Unified Inventory**: Exactly **1,789 active CVE security advisories** (CISA Known Exploited Vulnerabilities catalog + GitHub Global Security Advisories).
+- **EPSS Exploit Prediction Integration**:
+  - Displays real-time Exploit Prediction Scoring System (EPSS) probability percentage and global percentile ranking badge (e.g. `EPSS 94.2% · TOP 1%`).
+  - **Batch EPSS Pre-fetching**: Efficiently queries FIRST.org in chunked batches of 35 CVEs (`epssService.ts`) for fast rendering without UI stutter.
+  - **EPSS Threat Filter**: Filter advisories directly inside the Advisory Filter Modal by exploit likelihood:
+    - *All Threat Levels*
+    - *Critical Exploit Risk (> 80% / Top 2%)*
+    - *High Exploit Risk (> 50% / Top 5%)*
+    - *Moderate Exploit Risk (> 20%)*
+    - *Low Exploit Risk (< 20%)*
+- **Active Telemetry Counter**: Header badge showing dynamic active threat count (`1,789 ACTIVE` or `42 OF 1,789 ACTIVE` when filtered).
+- **1-Tap Markdown Advisory Report Copy**: Copies full vulnerability telemetry (CVE ID, severity, EPSS percentile, affected vendor/product, remediation deadline, patch version, required action, and source URL).
 - **Remediation & Guidance Card**:
   - Crimson highlight for `REMEDIATION DEADLINE: <Date>` (CISA KEV binding date) or `FIX AVAILABLE: <Version>`.
   - Required mitigation action instructions.
@@ -125,7 +142,7 @@ export interface Article {
 
 ### Tab 4: Settings (`src/app/(tabs)/settings.tsx`)
 - **Appearance & Theme**:
-  - Theme mode: System Default, Force Dark Mode, Force Light Mode.
+  - Theme mode: System Default, Force Dark Mode (`#0B0F14`), Force Light Mode.
   - 6 Curated Architectural Accent Presets:
     1. Classic Cyan (`#4CC9F0`)
     2. Modern Teal (`#06B6D4`)
@@ -141,222 +158,137 @@ export interface Article {
     - *All Security Dispatches* (Includes routine patch bulletins)
   - Client-side filtering via `Notifications.setNotificationHandler`.
 - **Data & Storage Manager**:
-  - Live local storage measurement (e.g. `Cache: 184.2 KB · Stored offline`).
+  - Live local storage measurement (e.g. `Cache: 284.2 KB · Stored offline`).
   - "Clear Cache" button: Flushes temporary news & advisory caches to force a fresh download, while strictly protecting user bookmarks, settings, and push tokens.
-- **About & Support / Legal**:
+- **Support & Compliance**:
   - In-app feedback screen.
-  - Privacy policy and account deletion screens compliant with Google Play Store policies.
+  - Privacy Policy and Account Deletion screens compliant with Google Play Store policies.
+  - App Version & Build telemetry display (`v1.0.2 · Code 6 / EAS 8`).
 
 ---
 
-## 5. Ingestion & Push Notification Engine
+## 5. Ingestion Engine & Dual-Engine AI Pipeline
 
 ### Ingestion Script (`scripts/ingest.mjs`)
-- Runs every 4 hours via GitHub Actions workflow (`.github/workflows/ingest.yml`).
-- Scrapes 20 top-tier cybersecurity RSS sources:
-  *The Hacker News, BleepingComputer, CISA, Krebs on Security, SANS ISC, Unit 42 (Palo Alto), Zero Day Initiative, The Record, SecurityWeek, Dark Reading, Help Net Security, CyberNews AI, Microsoft Security, Google Security, Sophos Threat Research, Check Point Research, CrowdStrike, The DFIR Report, Wiz Research, Cloudflare Security.*
-- **Deduplication Engine**: Uses `seen-urls.json` and existing `feed.json` (max 250 articles) so previously ingested articles are never processed again.
-- **Multi-Source Diversity**: Caps at 2 articles per publisher in the first pass to guarantee varied threat coverage.
-- **Groq AI Pipeline**: Batches 2 articles per request with strict JSON schema outputs (`GROQ_RESPONSE_SCHEMA`) and automated rate-limit backoff listening to `x-ratelimit-reset-tokens`.
-- **Zero-Day Pipeline**: Checks CISA KEV feed for newly listed CVEs and broadcasts immediately, bypassing Groq entirely ($0.00).
-
-### Push Notification Branding
-- Push titles follow a clean, sober standard:
-  - `SecuBuzz · BRIEF [HIGH]` or `SecuBuzz · BRIEF [CRITICAL]`
-  - `SecuBuzz · ADVISORY [CRITICAL]` or `SecuBuzz · ADVISORY [CRITICAL - RANSOMWARE]`
-- No emoji clutter (`🚨⚠️`).
-- Relayed via Expo Push Notification Service to Google FCM and Apple APNs.
+- Runs every hour via GitHub Actions (`cron: "17 * * * *"` in `.github/workflows/ingest.yml`).
+- Scrapes **26 top-tier cybersecurity RSS sources**:
+  *The Hacker News, BleepingComputer, CISA, Krebs on Security, SANS ISC, Unit 42 (Palo Alto), Zero Day Initiative, The Record, SecurityWeek, Dark Reading, Help Net Security, CyberNews AI, Microsoft Security, Google Security, Sophos Threat Research, Check Point Research, CrowdStrike, The DFIR Report, Wiz Research, Cloudflare Security, Cisco Talos, Trend Micro Research, SentinelOne, Schneier on Security, Malwarebytes Labs, ESET WeLiveSecurity.*
+- **Dual/Tri-Engine AI Resiliency**:
+  - **Primary**: Groq (`llama-3.3-70b-versatile` / `openai/gpt-oss-20b`) with strict JSON schema outputs and rate-limit backoff listening to `x-ratelimit-reset-tokens`.
+  - **Backup 1**: Google Gemini (`gemini-2.5-flash`) fallback if Groq encounters rate limits or service degradation.
+  - **Backup 2**: OpenRouter (`openrouter/free`) tertiary fallback.
+- **Zero-Day Pipeline**: Checks CISA KEV feed for newly listed CVEs and broadcasts immediately, bypassing LLM processing entirely ($0.00).
+- **Anti-AI Slop Guardrails**: Strict prompt constraints eliminating generic AI filler words ("delve", "tapestry", "in today's digital landscape") to produce razor-sharp 60-word briefs.
+- **Push Notification Broadcasting**: Relayed via Expo Push Notification Service to registered devices with silent background OTA update handling and URL-safe deep linking.
 
 ---
 
-## 6. Architecture Highlights & Guardrails
+## 6. Feed Resilience & Watchdog Architecture
 
-1. **Rule 2: Senior Engineering / OTA Update Priority**:
-   - UI, TypeScript, and layout changes are deployed over-the-air via `eas update --branch production`.
-   - Native builds (`.aab`) are strictly reserved for native permissions or config changes.
-2. **Rule 4: Sober / Anti-AI Aesthetics**:
-   - Micro-dot telemetry (5px).
-   - Crisp 4px architectural corners.
-   - Dynamic crimson accent divider (`#EF4444`) on `CRITICAL` stories.
-3. **Catch-All Deep Linking**:
-   - Catch-all route [`src/app/article/[...id].tsx`](file:///c:/SecuBuzz/src/app/article/[...id].tsx) preserves double-slash protocol integrity (`https://` instead of collapsing into `https:/`).
+To uphold our **Zero-Silent-Failure Mandate**, SecuBuzz runs a 3-layer automated watchdog:
+
+1. **In-Pipeline Freshness Gate (`scripts/verify_feed_freshness.mjs`)**:
+   Runs in CI before R2 upload. Asserts $\ge$ 50 articles and newest story $\le$ 14 hours old; loudly fails CI if the feed is stale.
+2. **Autonomous Watchdog Workflow (`.github/workflows/watchdog.yml`)**:
+   Runs every 2 hours via GitHub Actions. If the live feed exceeds 6.0 hours old, automatically dispatches an emergency out-of-band `ingest.yml` run.
+3. **Edge Health Endpoint (`https://secubuzz.com/health`)**:
+   Evaluates live R2 feed age on every request. Returns HTTP 200 with feed telemetry (`articleCount`, `latestHeadline`, `ageHours`, `isFresh`) or HTTP 503 `stale_feed` if > 8.0 hours old.
 
 ---
 
-## 7. Strategic Brainstorming Prompts for Other AI Models
+## 7. Live Telemetry & Growth Snapshot (October 10, 2026)
 
-You can copy and paste the prompt below into any other AI model (Claude 3.7, GPT-4o, Gemini 2.5 Pro, DeepSeek R1) along with this document:
+- **Registered Mobile Devices (Cloudflare D1 Push Registry)**: **85 Active Android Devices**
+  - App Version breakdown: `v1.0.2`: 22 devices | `v1.0.1`: 33 devices | `v1.0.0`: 30 devices.
+  - Total Push Alerts Delivered: **716 alerts**.
+- **Daily Edge Traffic (`secubuzz.com`)**: ~1,250–4,200 requests/day across 30+ countries.
+- **Google Play Store Install Conversion Attribution**: Live tracking via `/go/play` with unique visitor cookie deduplication (`sb_vid`), source button attribution (`home_hero`, `nav`, `footer`), and geo-IP telemetry.
+- **Production Track Status**: Google Play 14-day closed testing passed with 100% crash-free sessions. Production Release `1.0.2` (Version Code 8) officially submitted for review across 177+ countries.
+
+---
+
+## 8. API Security Matrix
+
+| Endpoint | Access Level | Description |
+| :--- | :---: | :--- |
+| `GET /api/news` / `/feed.json` | **Public (HTTP 200)** | Ingested 60-word cybersecurity news briefs (cached 300s). |
+| `GET /api/advisories` | **Public (HTTP 200)** | 1,789 active CVE security advisories (CISA KEV + GitHub). |
+| `GET /api/epss?cve={ID}` | **Public (HTTP 200)** | FIRST.org EPSS exploit probability proxy (edge-cached 24h). |
+| `GET /api/cve-metrics?cve={ID}` | **Public (HTTP 200)** | NIST NVD CVSS vectors proxy (edge-cached 24h). |
+| `POST /api/push-tokens` | **Public (HTTP 200)** | Write-only device registration on app install. |
+| `GET /health` | **Public (HTTP 200)** | Feed freshness & edge health monitoring. |
+| `GET /api/analytics/install-clicks` | **Private (HTTP 401)** | Install button click telemetry & conversions. |
+| `GET /api/push-tokens` | **Private (HTTP 401)** | Push token registry management. |
+| `POST /api/trigger-ingest` | **Private (HTTP 401)** | Emergency workflow trigger for GitHub Actions. |
+
+*Protected endpoints require `PUSH_ADMIN_SECRET` / `ADMIN_KEY` via `Authorization: Bearer <secret>` or `x-admin-key: <secret>`.*
+
+---
+
+## 9. Product Evolution & Post-Approval Roadmap (The "Threat-to-Action" Pivot)
+
+### The Strategic Vision
+Transform SecuBuzz from a **60-word cybersecurity news reader** into a **lightweight, personal threat-intelligence assistant**.
+
+$$\text{News} \longrightarrow \text{CVE} \longrightarrow \text{KEV} \longrightarrow \text{EPSS} \longrightarrow \text{Product / Version} \longrightarrow \textbf{"Am I Affected?"} \longrightarrow \textbf{Action}$$
+
+### Planned Features
+
+#### P0: "My Stack / Am I Affected?" (Personal Threat Radar)
+- **Local Technology Watchlist**: Users pick or search for technologies in their enterprise/personal stack (e.g., *Palo Alto PAN-OS, Fortinet FortiOS, Microsoft Exchange, VMware ESXi, WordPress, Apache Tomcat, Atlassian*).
+- **On-Device Matching**: Compares local stack entries against `vendorProject` and `product` fields already embedded in our article and CVE models.
+- **Customized High-Priority Push Alerts**: Users can elect to be alerted **only** when a threat or advisory affects *their* defined stack.
+- **Cost & Privacy**: **100% on-device ($0.00 infrastructure cost)**. Zero personal data or server-side user tracking.
+
+#### P0: One-Tap SOC / Executive Triage Brief
+- Generates a pre-formatted, executive incident briefing in Markdown, Slack Block Kit format, or 1-page PDF:
+  - Threat summary & impact scope.
+  - CVSS score & EPSS in-the-wild exploit probability.
+  - CISA KEV exploitation status & binding remediation deadline.
+  - Affected versions & vendor patch link.
+
+#### P1: Structured Threat Lifecycle Timeline
+- Visual status tracker showing where a vulnerability sits in its lifecycle:
+  $$\text{Disclosed} \longrightarrow \text{Public PoC} \longrightarrow \text{Exploited in Wild} \longrightarrow \text{CISA KEV Added} \longrightarrow \text{Patch Available}$$
+
+#### P1: Authoritative NVD CVSS v3.1/v4.0 Vector Strings
+- Displays the complete attack vector breakdown (`AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H`) with human-readable explanations (Network accessible, No privileges required, No user interaction).
+
+#### P1: Team & Outbound Webhook Integration
+- Outbound webhook delivery to Slack, Discord, Microsoft Teams, or PagerDuty for `CRITICAL` alerts or "My Stack" matches.
+
+---
+
+## 10. Monetization Strategy & Packaging (SecuBuzz Pro)
+
+### Core Monetization Principles:
+1. **Never Paywall Free News**: The 60-word news briefs and standard CISA KEV advisories remain 100% free forever as the primary organic distribution engine.
+2. **Charge for Relevance & Time Saved**: Enterprise practitioners expense tools that save them 30 minutes of daily manual threat triage.
+3. **Zero Additional Cloud Overhead**: Pro features execute locally on the client device (SQLite/AsyncStorage) or utilize Cloudflare free edge routes, maintaining an ~85% net margin after Google Play's 15% fee.
+
+### Proposed Packaging
+
+| Tier | Price | Features Included |
+| :--- | :---: | :--- |
+| **SecuBuzz Free** | **$0.00** | • Full 60-word news feed (26 sources)<br>• CISA KEV advisories & basic EPSS scores<br>• Standard push alerts & bookmarking |
+| **SecuBuzz Pro** | **$2.99 / mo**<br>or **$24.99 / yr**<br>*(or $49.99 Lifetime)* | • **"My Stack"** custom technology radar (unlimited vendors)<br>• **Stack-filtered Push Alerts** (alerts only for your infrastructure)<br>• **1-Tap SOC / Executive Triage Brief** copy & export<br>• **Threat Lifecycle Timelines**<br>• **Advanced Multi-Filter CVE Vault** |
+| **SecuBuzz Team** *(Future B2B)* | **$9.99 / mo** | • Outbound Slack / Discord / Teams Webhook alerts<br>• Multi-user stack sharing |
+| **Cloudflare Monetization Gateway** | **Per-Request Micropayment** | • Paywall third-party commercial AI bots, LLM crawlers, and automated MCP consumers querying `secubuzz.com` feeds. |
+
+---
+
+## 11. Prompts for Consulting Other AI Models
+
+You can paste this entire document into Claude 3.7, GPT-4o, or Gemini 2.5 Pro along with the following prompt:
 
 ```markdown
-I have a production-grade, 100% free-tier cybersecurity news and CISA KEV threat advisory mobile app called "SecuBuzz" (React Native / Expo SDK 57, Groq AI, Cloudflare R2/Worker/D1, GitHub Actions). 
+I have built and released a production-grade cybersecurity intelligence mobile application called "SecuBuzz" (React Native / Expo SDK 57, TypeScript, Cloudflare R2/Worker/D1, Groq + Gemini AI dual pipeline, GitHub Actions, 100% $0.00 monthly cost).
 
-Review the attached status quo document. I want you to act as an elite Principal Mobile Product Manager and Staff Cybersecurity Architect. 
+Read the attached complete status quo document. I want you to act as an elite Staff Mobile Architect and Cybersecurity Venture Product Lead.
 
-Please provide creative, high-impact suggestions across these 4 areas:
-1. High-Utility Features for Security Professionals: What specific features (e.g. personal asset watchlists, STIX/TAXII export, IOC extraction, CVSS calculators) would make SecuBuzz an indispensable daily tool for security engineers and SOC analysts?
-2. Monetization & Sustainability without Paywalling: The core intelligence must remain free for everyone. What non-intrusive monetization models (e.g., enterprise team sync, sponsored security tools, premium automated CVE alerts for custom vendor tech stacks) would work best?
-3. Community & Interactive Capabilities: How can we introduce engagement (e.g., vulnerability impact polls, "Am I Affected?" company self-checks, community mitigations) while maintaining our strict "no-noise / sober" design standard?
-4. Technical Scalability & Data Sources: Based on our 100% free cloud architecture, what additional free threat intelligence feeds or APIs (e.g. NVD, GitHub Advisory Database, AlienVault OTX, Pulsedive) should we integrate next?
+Please review our architecture and provide detailed critique and expansion on:
+1. Product Evolution & Paid Features: Review our proposed "SecuBuzz Pro" feature set (My Stack, SOC Triage Brief, Threat Timelines). What additional paid features would CISOs, SOC analysts, and security engineers gladly expense to their corporate credit cards?
+2. Mobile UX & Information Architecture: How can we present complex threat intelligence (EPSS percentiles, CVSS vectors, CISA KEV deadlines, My Stack alerts) on mobile screens with maximum clarity and zero cognitive clutter?
+3. B2B & Team Expansion: What is the most seamless way to transition from single-user mobile Pro subscriptions into high-margin team subscriptions (Slack bots, SIEM webhooks, shared watchlists) without ballooning server costs?
+4. Technical Edge Hardening: Any optimizations or blind spots in our 100% free-tier Cloudflare + GitHub Actions + Expo architecture?
 ```
-
----
-
-## 8. Google Play Production Rollout & Resilience Architecture
-
-### Milestone Status & Launch Telemetry (October 8, 2026)
-- **14-Day Closed Testing**: **PASSED & APPROVED**. 100% criteria satisfied across 12+ opted-in testers on Android 11–15 with 0 crashes.
-- **Production Access**: Granted by Google Play Console.
-- **Production Release Submitted**: **Version 1.0.2 (Version Code 8)** officially submitted on **Oct 8, 2026** across all 177+ countries and regions. Currently in Google review.
-- **Website Production Alignment**: `secubuzz.com` and all CTA buttons transitioned from "Join closed testing" to public "Get it on Google Play" and "Download App" buttons with direct link to `https://play.google.com/store/apps/details?id=com.secubuzz.app`.
-- **Feed Resilience & Watchdog Architecture (Zero-Silent-Failure Mandate Deployed Oct 8, 2026)**:
-  - **In-Pipeline Gate (`scripts/verify_feed_freshness.mjs`)**: Runs in `.github/workflows/ingest.yml` before R2 upload. Asserts $\ge$ 50 articles and newest story $\le$ 14h old; fails CI loudly if feed is stale.
-  - **Autonomous Watchdog Workflow (`.github/workflows/watchdog.yml`)**: Runs every 2 hours via GitHub Actions. If the live feed exceeds 6.0 hours old, automatically dispatches an emergency out-of-band `ingest.yml` workflow without human intervention.
-  - **Edge Watchdog Endpoint (`https://secubuzz.com/health`)**: Evaluates live R2 feed age on every request. Returns HTTP 200 with feed telemetry (`articleCount`, `latestHeadline`, `ageHours`, `isFresh`) or HTTP 503 `stale_feed` if > 8.0 hours old.
-  - **Watchdog CLI Routines**: `npm run watchdog` (checks production site freshness) and `npm run verify:feed` (local/CI integrity gate).
-- **Backend Hardening ($0.00 Free Tier Profile)**:
-  - Push Token API Rate Limiting on Cloudflare D1 tokens.
-  - Automated Cloudflare D1 database daily backup export via GitHub Actions cron.
-  - Dynamic sitemap `https://secubuzz.com/sitemap.xml` actively indexed by Google Search Console with 250 articles and 1,739 CISA KEV entries.
-
-### Implemented Tester Feedback & Polish
-1. **Header Brand Unification**: Replaced 'SecuRadar' with 'SecuBuzz' in `src/app/(tabs)/advisories.tsx` to eliminate third-party trademark/domain confusion.
-2. **Tactile Haptic Feedback**: Installed `expo-haptics` and wired sensory feedback into bookmarking, 1-tap incident report copying, pull-to-refresh, and theme switching.
-3. **EPSS Threat Enrichment**: Live edge endpoints (`/api/epss`, `/api/cve-metrics`) providing FIRST.org exploit prediction probabilities and NIST NVD CVSS vectors with 24-hour edge caching.
-4. **Feed Hygiene**: Multi-source story deduplication clustering coverage into single 60-word briefs with "Also reported by" cross-links.
-5. **Anti-AI Slop Guardrails**: Strict guidelines in Groq summarization prompts eliminating AI filler words and maintaining razor-sharp technical brevity.
-
-### Production Access Questionnaire (Google Play Submission Record)
-*(Tailored specifically for SecuBuzz to avoid generic template rejection)*
-
-1. **How did you recruit users for your closed test?**
-   > We recruited a dedicated group of 20+ testers comprising cybersecurity practitioners, IT administrators, and privacy advocates, complemented by a professional mobile QA testing network to ensure broad Android device and OS coverage (Android 11–15).
-
-2. **How easy was it to recruit testers for your app?**
-   > Easy. The cybersecurity community and professional testing network were eager to test a zero-tracking, privacy-first threat intelligence tool.
-
-3. **Describe the engagement you received from testers during your closed test:**
-   > Testers engaged daily by evaluating morning news triage, validating CISA KEV zero-day push notification delivery, testing offline article caching, and assessing readability across dark and light architectural themes. They specifically highlighted the speed of reading 60-word briefs and provided feedback on CVE threat scoring clarity.
-
-4. **Provide a summary of the feedback that you received from testers. Include how you collected the feedback:**
-   > Feedback was collected through in-app feedback forms, direct surveys, and structured QA logs. Testers requested: (1) clearer exploit likelihood metrics beyond static CVSS scores, (2) faster incident triage sharing for team communication, (3) elimination of duplicate stories when multiple outlets cover the same zero-day, and (4) an in-app link to review and rate the app.
-
-5. **Who is the intended audience for your app?**
-   > Information security professionals, SOC analysts, IT system administrators, DevSecOps engineers, and technology leaders who require fast, high-signal cybersecurity threat intelligence and immediate federal zero-day compliance tracking without telemetry surveillance or paywalls.
-
-6. **Describe how your app provides value to the users:**
-   > SecuBuzz solves alert fatigue and information overload by distilling complex multi-page security disclosures into verified, 60-word technical briefs linked to primary sources. It enriches CISA Known Exploited Vulnerabilities (KEV) with FIRST.org EPSS exploit probabilities, displays strict federal remediation deadlines, and offers 1-tap incident report copying for corporate triage—all with 100% on-device privacy and zero account requirements.
-
-7. **How many installs do you expect your app to have in your first year?**
-   > 10,000 to 50,000 installs, driven by professional cybersecurity communities, Reddit r/netsec, InfoSec Mastodon/LinkedIn networks, and organic search.
-
-8. **What changes did you make to your app based on what you learned during your closed test?**
-   > Based directly on tester feedback, we: (1) integrated FIRST.org Exploit Prediction Scoring System (EPSS) probabilities and percentile badges into threat cards, (2) built a 1-tap Markdown Incident Report generator formatted for instant paste into Slack, Microsoft Teams, and Jira, (3) upgraded the feed ingestion pipeline with story-level entity deduplication, (4) refined WCAG AAA contrast across dark and light modes, and (5) added a "Rate SecuBuzz on Google Play" option in Settings.
-
-9. **How did you decide that your app is ready for production?**
-   > The app achieved 100% crash-free sessions across all test devices, passed all Google Play policy compliance reviews (including privacy policy and account deletion transparency), verified dependable zero-day push notification dispatch via Cloudflare Workers, and received consistent positive validation from active testers on usability and daily utility.
-
-10. **What did you do differently this time? (If applicable):**
-    > We focused heavily on immediate user utility and production hardening before launch: eliminating account sign-up friction entirely, building automated edge deduplication to prevent news fatigue, enforcing strict sober design standards without clickbait or emojis, and integrating authoritative threat telemetry (CISA KEV + EPSS) into an instantaneous mobile workflow.
-
----
-
-## 9. Cloudflare Edge Intelligence, SEO & $0.00 Free-Tier Optimization Protocol
-
-### Daily Analytics Command (Run Anytime)
-To pull fresh, live Cloudflare Edge Network and Real User Monitoring (RUM) analytics:
-```powershell
-npm run analytics
-# Alternatively:
-node scripts/cf_analytics.mjs
-```
-*Outputs: Daily request volume, unique visitor IPs, real human page loads, top referring domains, device/OS breakdowns, API consumption, bot mitigation count, and Worker execution latency.*
-
----
-
-### Baseline Telemetry Review (October 2026 Initial Audit)
-* **Weekly Edge Traffic**: 32,224 requests across 30+ countries; 5.52 GB bandwidth delivered.
-* **Traffic Spikes**: Sep 30 (8,377 requests / 662 uniques) & Oct 1 (10,672 requests / 446 uniques).
-* **Real User Engagement (RUM)**: 368 human page loads (161 sessions); 95% direct/PWA retention; emerging organic search discovery (`google.com`, `mokka.corp.google.com`).
-* **Device Distribution**: 73.9% Desktop, 26.0% Mobile, <0.1% Tablet.
-* **Operating Systems**: Windows (49.8%), Linux (32.6%), iOS (12.8%), Android (1.1%), ChromeOS (0.8%), macOS (0.5%).
-* **Browsers**: Desktop Chrome (82.6%), Mobile Chrome (7.1%), Mobile Safari (6.8%), Edge/Brave/Chromium (1.4%).
-
----
-
-### 1. What We Are Doing Right
-1. **Sub-2ms Edge Compute on $0.00 Free Plan**:
-   - The Cloudflare Worker (`secubuzz-push`) handled 24,224 executions in 7 days with a **99.65% success rate** and a median CPU time of **1.14 ms** (well under the 10 ms free-tier limit).
-2. **Organic Discovery & Policy Audits Are Live**:
-   - Google Organic Search (`www.google.com`) is already delivering initial web discovery.
-   - Google Corporate traffic (`mokka.corp.google.com`) confirmed active reviews of `/privacy` and `/account-deletion`, confirming store compliance readiness.
-3. **High Signal Retention**:
-   - Strong direct reader return rates for daily news and CVE triage on `/`, `/news`, and `/advisories`.
-4. **Strong Data Consumption for Threat Telemetry**:
-   - External consumers, AI agents, and bots actively consume our EPSS and CVE metrics endpoints (~11,000 requests on `/api/epss`, `/data/v1/epss`, `/api/cve-metrics`).
-
----
-
-### 2. What Was Risky / Wrong & The Deployed Fix
-1. **The 4.1 GB Uncached 404 Bot Trap (RESOLVED)**:
-   - **The Problem**: A legacy path (`/sites/default/files/feeds/known_exploited_vulnerabilities.json`) and automated scanners (`/wp-admin/install.php`) were requested 2,500+ times, consuming 4.11 GB of bandwidth. Because Cloudflare Workers Assets defaulted unknown file requests to SPA routing, the worker was executing full R2/feed fetches (`getArticles()`, `getKevAdvisories()`) and returning a 1.6MB HTML bundle with `'Cache-Control': 'no-cache, no-store'`. This caused 56 worker runs to exceed memory limits.
-   - **The Fix (Deployed Oct 4, 2026)**: In `worker/src/index.ts`, introduced an edge bot shield that instantly drops non-HTML extensions (`.json`, `.php`, `.asp`, `.env`, `.git`) and scanner paths with an ultra-light 9-byte `404 Not Found` response cached at Cloudflare's edge for 24 hours (`Cache-Control: public, max-age=86400, s-maxage=86400`). Subsequent bot scans are absorbed 100% by Cloudflare's CDN with zero worker CPU cost.
-2. **Missing Edge Cache Headers on JSON API Endpoints (RESOLVED)**:
-   - **The Problem**: `jsonResponse` in `worker/src/index.ts` only took two arguments `(data, status)` and silently discarded third-argument custom headers, causing `/api/epss` and `/api/cve-metrics` to be treated as dynamic uncached responses.
-   - **The Fix (Deployed Oct 4, 2026)**: Upgraded `jsonResponse` to accept `extraHeaders: Record<string, string> = {}`. Endpoints now emit `Cache-Control: public, max-age=86400, s-maxage=86400`. Repeated queries for identical CVE scores now hit Cloudflare's edge cache for 0ms without consuming worker execution quota.
-
----
-
-### 3. SEO, Keywords & Web-to-App Conversion Strategy
-1. **Targeting High-Converting Technical Keywords**:
-   - *Active Traffic Identifiers*: Real searchers and scanners are searching for specific CVE numbers (`CVE-2026-88772`, `CVE-2026-86950`, `CVE-2026-72530`, `Citrix NetScaler zero-day`, `Gemini macOS full access`, `Apple CoreGraphics zero-day`).
-   - *Intent Keywords*: "EPSS exploit probability lookup", "CISA KEV daily tracker", "unbiased cybersecurity news 60 words", "real-time CVE threat intelligence".
-2. **Automated XML Sitemap Updates**:
-   - `https://secubuzz.com/sitemap.xml` automatically lists every recent security brief and CISA advisory. Maintain `robots.txt` allowing full indexing to capture long-tail Google searches for newly published CVEs.
-3. **Optimizing the Web-to-App Install Funnel**:
-   - The `/download` page recorded 28 page loads / 11 visits with zero marketing spend.
-   - Add a subtle, high-contrast banner on every web article and advisory page linking directly to the Google Play Store listing once production approval is granted.
-
----
-
-### 4. Protocol to Keep Services Operational and 100% FREE ($0.00 Guarantee)
-
-| Service | Free Tier Limit | Current SecuBuzz Consumption | Safety Margin |
-| :--- | :--- | :--- | :--- |
-| **Cloudflare Workers** | 100,000 requests/day | ~3,500 requests/day | **96.5% buffer remaining** |
-| **Cloudflare Worker CPU** | 10 ms CPU time / request | 1.14 ms median CPU | **88.6% compute headroom** |
-| **Cloudflare D1 Database** | 5,000,000 read rows/day | <50,000 read rows/day | **99.0% database headroom** |
-| **Cloudflare Bandwidth** | Unlimited free egress | 5.52 GB/week | **100% free forever** |
-| **Cloudflare R2 Storage** | 10 GB storage, 10M reads | <50 MB storage | **99.5% storage headroom** |
-| **Groq AI Summarization** | 30 requests/min, 14.4k/day | ~150 requests/day (cron) | **98.9% API buffer** |
-
-#### Cardinal Free-Tier Rules:
-1. **Never Disable Edge Caching on Public Endpoints**: Always ensure static assets have `max-age=31536000`, API feeds have `max-age=1800` or `86400`, and error drops have `max-age=86400`. Cloudflare CDN absorbs 90%+ of repetitive traffic at zero cost.
-2. **No Unbounded Worker Scraping**: Feeds must only be ingested via the scheduled cron every 4 hours (`scripts/ingest.mjs`), never in ad-hoc synchronous HTTP worker requests.
-3. **Edge Bot Drop**: Keep the regex-based bot rejection at the entrance of `env.ASSETS` so malicious scanners never trigger expensive database or R2 subrequests.
-
----
-
-### 5. API Security Matrix & Telemetry Execution Reference
-
-#### Private Endpoints (Admin-Protected, HTTP 401):
-* `GET /api/analytics/install-clicks`: Real-time install click telemetry, unique visitors, repeat clickers, and breakdown by source/country.
-* `GET /api/push-tokens`: Internal Expo push token registry.
-* `POST /api/push-tokens/deactivate`: Deactivation of stale/invalid device tokens.
-* `GET /api/notifications/sent` & `POST /api/notifications/sent`: Broadcast tracking & deduplication.
-* `POST /api/trigger-ingest`: Emergency workflow trigger for GitHub Actions.
-
-#### Public Endpoints (HTTP 200):
-* `GET /api/news` & `GET /feed.json`: Ingested 60-word cybersecurity news briefs for mobile & web.
-* `GET /api/advisories`: 1,789 active CVE security advisories (CISA KEV + GitHub Security Advisory Database).
-* `GET /api/epss?cve={CVE-ID}`: FIRST.org EPSS exploit probability proxy (edge-cached 24h).
-* `GET /api/cve-metrics?cve={CVE-ID}`: NIST NVD CVSS vectors proxy (edge-cached 24h).
-* `POST /api/push-tokens`: Safe write-only device registration on app install.
-* `GET /health`: Watchdog uptime endpoint reporting feed age & R2 status.
-
-#### Direct CLI Telemetry Protocol:
-* When asked for user traffic, install clicks, or repeat visitors:
-  * Run `node scripts/track_repeat_users.mjs` or `npm run analytics` directly in the CLI.
-  * Queries Cloudflare D1 via the Cloudflare Management API using the developer's local Wrangler OAuth session without needing manual secrets.
-
-
-
