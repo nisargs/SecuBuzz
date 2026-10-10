@@ -99,8 +99,9 @@
 
 ## 10. Git Hygiene & Ingestion Invariant (Mandatory)
 - **ALWAYS `git pull` BEFORE PUSHING:** Never run `git push` without running `git pull` (or `git pull --rebase origin main`) first.
-- **Why:** GitHub Actions (`ingest.yml`) runs on a cron every 4 hours and automatically commits fresh threat intelligence feeds and RSS data directly to `origin/main`.
+- **Why:** GitHub Actions (`ingest.yml`) runs on an hourly cron (`cron: "17 * * * *"`) and automatically commits fresh threat intelligence feeds directly to `origin/main`.
 - **Consequence:** Pushing without pulling first causes non-fast-forward push rejections and messy merge conflicts on `feed.json` and `rss.xml`. Always pull first.
+- **Store Listing Update Reminder (Mandatory)**: Maintain store listing freeze in Google Play Console during live `v1.0.2` operations. When preparing the next major native release (v1.1.0+ / "My Stack"), proactively remind the user to update the Main Store Listing text in Google Play Console using [STORE_LISTING.md](file:///c:/SecuBuzz/STORE_LISTING.md) (updating "hourly refreshed" and latest feature highlights).
 
 ## 11. API Classification, Telemetry Routines & Inventory Counts (Permanent Record)
 - **Private / Admin-Protected Endpoints (HTTP 401 Unauthorized if unauthenticated):**
