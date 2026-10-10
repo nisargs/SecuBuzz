@@ -40,7 +40,7 @@ SecuBuzz: Cyber Threat Radar
 ```text
 SecuBuzz is the high-signal, zero-fluff cybersecurity threat intelligence assistant built for security analysts, CISOs, sysadmins, penetration testers, and developers who need to stay ahead of breaches without wading through 40-page advisory PDFs.
 
-We distill breaking cyber disclosures, malware campaigns, and zero-day vulnerabilities from 20+ verified intelligence authorities into clean, actionable 60-word briefs refreshed every 4 hours.
+We distill breaking cyber disclosures, malware campaigns, and zero-day vulnerabilities from 20+ verified intelligence authorities into clean, actionable 60-word briefs refreshed hourly around the clock.
 
 ⚡ 60-WORD CYBERSECURITY BRIEFS
 • Get essential threat mechanics and impact in under 30 seconds.

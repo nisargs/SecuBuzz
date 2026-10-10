@@ -24,8 +24,8 @@
 
 ```mermaid
 graph TD
-    RSS[Curated Global Threat Feeds] -->|Every 4 Hours| GHA[GitHub Actions Ingest Script]
-    CISA[CISA KEV + GitHub Advisories] -->|Every 4 Hours| GHA
+    RSS[Curated Global Threat Feeds] -->|Hourly Cron| GHA[GitHub Actions Ingest Script]
+    CISA[CISA KEV + GitHub Advisories] -->|Hourly Cron| GHA
     GHA -->|Deduplicate & Cluster| TRI_AI[Resilient Dual/Tri-Engine AI Pipeline]
     TRI_AI -->|1. Groq: Llama 3.3 / GPT-OSS 20B| GHA
     TRI_AI -->|2. Gemini 2.5 Flash Fallback| GHA
@@ -58,9 +58,9 @@ graph TD
 | :--- | :--- | :--- | :--- | :--- |
 | **Cloudflare Worker** (`secubuzz-push`) | API routing, token registry, install tracking & edge caching | 100,000 req/day | ~1,200–3,500 req/day | **96.5% buffer remaining** |
 | **Cloudflare D1** (`secubuzz-push-db`) | Serverless SQLite database for push tokens & click analytics | 5,000,000 reads / 100k writes/day | < 50,000 reads / < 50 writes/day | **99.0% database headroom** |
-| **Cloudflare R2** (`secubuzz-feed`) | Object storage hosting `feed.json` (~280 KB) | 10 GB storage / 1,000,000 writes/mo | ~30 MB storage / 180 writes/mo | **99.9% free buffer** |
-| **Dual/Tri-Engine AI Pipeline** | Summarizing raw RSS feeds into 60-word briefs | Groq (14.4k req/day), Gemini (1,500 req/day) | ~30–60 requests/day | **99.5% API headroom** |
-| **GitHub Actions** | Automated CI cron running `scripts/ingest.mjs` every 4 hours | 2,000 min/mo | ~135 min/month (~25s per run) | **93.2% free buffer** |
+| **Cloudflare R2** (`secubuzz-feed`) | Object storage hosting `feed.json` (~280 KB) | 10 GB storage / 1,000,000 writes/mo | ~30 MB storage / 720 writes/mo | **99.9% free buffer** |
+| **Dual/Tri-Engine AI Pipeline** | Summarizing raw RSS feeds into 60-word briefs | Groq (14.4k req/day), Gemini (1,500 req/day) | ~50–120 requests/day | **98.5% API headroom** |
+| **GitHub Actions** | Automated CI cron running `scripts/ingest.mjs` hourly | 2,000 min/mo | ~350 min/month (~25s per run) | **82.5% free buffer** |
 | **Expo Push Service** | FCM push relay to registered Android devices | Unlimited | Batched in chunks of 100 | **100% free** |
 
 ---
@@ -104,7 +104,7 @@ export interface Article {
 
 ### Tab 1: News Briefs (`src/app/(tabs)/index.tsx`)
 - **Vertical Snap Scroll**: Full-viewport paging (TikTok/Reels style vertical paging), presenting 1 self-contained security brief per card.
-- **Rolling Archive**: Maintains up to 350 articles (~7–10 days of rolling intelligence across verified sources), refreshed every 4 hours.
+- **Rolling Archive**: Maintains up to 350 articles (~7–10 days of rolling intelligence across 26 verified sources), refreshed hourly around the clock.
 - **Micro-Progress Bar**: Discrete 5-segment progress bar at the top indicating scroll position.
 - **Filter Modal**: Filter simultaneously by Threat Severity (`CRITICAL`, `HIGH`, `MEDIUM`, `LOW`) and Category (`BREACH`, `RANSOMWARE`, `CVE`, `NATION_STATE`, `VULNERABILITY`, `GENERAL`).
 - **Live Search**: Instant keyword search filtering by title, summary, vendor, product, or CVE ID.
@@ -172,9 +172,9 @@ export interface Article {
 ## 5. Ingestion Engine & Dual-Engine AI Pipeline
 
 ### Ingestion Script (`scripts/ingest.mjs`)
-- **Schedule**: Runs automatically **every 4 hours** via GitHub Actions (`cron: "17 */4 * * *"` in `.github/workflows/ingest.yml`), perfectly aligning with the Google Play Store listing and verified production deployment.
+- **Schedule**: Runs automatically **every 1 hour** via GitHub Actions (`cron: "17 * * * *"` in `.github/workflows/ingest.yml`), powered by the multi-engine rotation (Groq + Gemini 2.5 Flash + OpenRouter) to deliver rolling, timely security news around the clock without 4-hour gaps.
 - **Curated Intelligence Sources**:
-  Scrapes 20+ top-tier cybersecurity authorities:
+  Scrapes 26 top-tier cybersecurity authorities:
   *The Hacker News, BleepingComputer, CISA, Krebs on Security, SANS ISC, Unit 42 (Palo Alto), Zero Day Initiative, The Record, SecurityWeek, Dark Reading, Help Net Security, CyberNews AI, Microsoft Security, Google Security, Sophos Threat Research, Check Point Research, CrowdStrike, The DFIR Report, Wiz Research, Cloudflare Security, Cisco Talos, Trend Micro Research, SentinelOne, Schneier on Security, Malwarebytes Labs, ESET WeLiveSecurity.*
 - **Dual/Tri-Engine AI Resiliency**:
   - **Primary**: Groq (`llama-3.3-70b-versatile` / `openai/gpt-oss-20b`) with strict JSON schema outputs and rate-limit backoff listening to `x-ratelimit-reset-tokens`.
@@ -298,7 +298,7 @@ $$\text{News} \longrightarrow \text{CVE} \longrightarrow \text{KEV} \longrightar
 
 | Tier | Price | Features Included |
 | :--- | :---: | :--- |
-| **SecuBuzz Free** | **$0.00** | • Full 60-word news feed (20+ sources, 4-hour cycle)<br>• CISA KEV advisories & basic EPSS scores<br>• Standard push alerts & bookmarking |
+| **SecuBuzz Free** | **$0.00** | • Full 60-word news feed (26 sources, hourly cycle)<br>• CISA KEV advisories & basic EPSS scores<br>• Standard push alerts & bookmarking |
 | **SecuBuzz Pro** | **$2.99 / mo**<br>or **$24.99 / yr**<br>*(or $49.99 Lifetime)* | • **"My Stack"** custom technology radar (unlimited vendors)<br>• **Stack-filtered Push Alerts** (alerts only for your infrastructure)<br>• **1-Tap SOC / Executive Triage Brief** copy & export<br>• **Threat Lifecycle Timelines**<br>• **Advanced Multi-Filter CVE Vault** |
 | **SecuBuzz Team** *(Future B2B)* | **$9.99 / mo** | • Outbound Slack / Discord / Teams Webhook alerts<br>• Multi-user stack sharing |
 | **Cloudflare Monetization Gateway** | **Per-Request Micropayment** | • Paywall third-party commercial AI bots, LLM crawlers, and automated MCP consumers querying `secubuzz.com` feeds. |
