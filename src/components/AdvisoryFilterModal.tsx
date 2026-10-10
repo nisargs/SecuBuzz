@@ -12,7 +12,11 @@ import {
 } from 'react-native';
 
 import { useTheme } from '../context/ThemeContext';
-import type { AdvisorySeverityFilter, AdvisorySourceFilter } from '../models/cve';
+import type {
+  AdvisoryEpssFilter,
+  AdvisorySeverityFilter,
+  AdvisorySourceFilter,
+} from '../models/cve';
 import { spacing } from '../theme/theme';
 
 type AdvisoryFilterModalProps = {
@@ -22,11 +26,14 @@ type AdvisoryFilterModalProps = {
   onSelectSource: (source: AdvisorySourceFilter) => void;
   selectedSeverity: AdvisorySeverityFilter;
   onSelectSeverity: (severity: AdvisorySeverityFilter) => void;
+  selectedEpss: AdvisoryEpssFilter;
+  onSelectEpss: (epss: AdvisoryEpssFilter) => void;
   onReset: () => void;
   totalCount: number;
   filteredCount: number;
   severityCounts: Record<string, number>;
   sourceCounts: Record<string, number>;
+  epssCounts: Record<string, number>;
 };
 
 export function AdvisoryFilterModal({
@@ -36,16 +43,21 @@ export function AdvisoryFilterModal({
   onSelectSource,
   selectedSeverity,
   onSelectSeverity,
+  selectedEpss,
+  onSelectEpss,
   onReset,
   totalCount,
   filteredCount,
   severityCounts,
   sourceCounts,
+  epssCounts,
 }: AdvisoryFilterModalProps) {
   const { colors, isDark, accentColor, severityColors } = useTheme();
 
   const isAnyFilterActive =
-    selectedSource !== 'ALL' || selectedSeverity !== 'ALL';
+    selectedSource !== 'ALL' ||
+    selectedSeverity !== 'ALL' ||
+    selectedEpss !== 'ALL';
 
   const [modalVisible, setModalVisible] = useState(visible);
   const animValue = useRef(new Animated.Value(0)).current;
@@ -489,6 +501,199 @@ export function AdvisoryFilterModal({
                     ]}
                   >
                     GitHub Ecosystem ({sourceCounts.GITHUB || 0})
+                  </Text>
+                </Pressable>
+              </View>
+            </View>
+
+            {/* EXPLOIT PREDICTION (EPSS) SECTION */}
+            <View style={styles.section}>
+              <View style={styles.sectionHeader}>
+                <Text
+                  style={[styles.sectionTitle, { color: colors.textSecondary }]}
+                >
+                  EXPLOIT LIKELIHOOD (EPSS)
+                </Text>
+                {selectedEpss !== 'ALL' && (
+                  <Pressable
+                    hitSlop={6}
+                    onPress={() => onSelectEpss('ALL')}
+                  >
+                    <Text style={[styles.resetSectionText, { color: accentColor }]}>
+                      Clear
+                    </Text>
+                  </Pressable>
+                )}
+              </View>
+
+              <View style={styles.chipsRow}>
+                {/* ALL EPSS */}
+                <Pressable
+                  accessibilityRole="button"
+                  onPress={() => onSelectEpss('ALL')}
+                  style={[
+                    styles.chip,
+                    {
+                      borderColor: colors.border,
+                      backgroundColor:
+                        selectedEpss === 'ALL'
+                          ? isDark
+                            ? `${accentColor}20`
+                            : `${accentColor}15`
+                          : isDark
+                          ? colors.background
+                          : colors.surface,
+                    },
+                    selectedEpss === 'ALL' && {
+                      borderColor: accentColor,
+                    },
+                  ]}
+                >
+                  <Text
+                    style={[
+                      styles.chipText,
+                      { color: colors.textSecondary },
+                      selectedEpss === 'ALL' && {
+                        color: accentColor,
+                        fontWeight: '700',
+                      },
+                    ]}
+                  >
+                    All Likelihoods ({totalCount})
+                  </Text>
+                </Pressable>
+
+                {/* CRITICAL RISK (>90%) */}
+                <Pressable
+                  accessibilityRole="button"
+                  onPress={() => onSelectEpss('CRITICAL_90')}
+                  style={[
+                    styles.chip,
+                    {
+                      borderColor: colors.border,
+                      backgroundColor:
+                        selectedEpss === 'CRITICAL_90'
+                          ? 'rgba(239, 68, 68, 0.18)'
+                          : isDark
+                          ? colors.background
+                          : colors.surface,
+                    },
+                    selectedEpss === 'CRITICAL_90' && {
+                      borderColor: '#EF4444',
+                    },
+                  ]}
+                >
+                  <Ionicons
+                    name="flash-outline"
+                    size={14}
+                    color={
+                      selectedEpss === 'CRITICAL_90'
+                        ? '#EF4444'
+                        : colors.textSecondary
+                    }
+                    style={{ marginRight: 4 }}
+                  />
+                  <Text
+                    style={[
+                      styles.chipText,
+                      { color: colors.textSecondary },
+                      selectedEpss === 'CRITICAL_90' && {
+                        color: '#EF4444',
+                        fontWeight: '700',
+                      },
+                    ]}
+                  >
+                    Critical Risk &gt;90% ({epssCounts.CRITICAL_90 || 0})
+                  </Text>
+                </Pressable>
+
+                {/* ELEVATED RISK (>50%) */}
+                <Pressable
+                  accessibilityRole="button"
+                  onPress={() => onSelectEpss('HIGH_50')}
+                  style={[
+                    styles.chip,
+                    {
+                      borderColor: colors.border,
+                      backgroundColor:
+                        selectedEpss === 'HIGH_50'
+                          ? 'rgba(245, 158, 11, 0.18)'
+                          : isDark
+                          ? colors.background
+                          : colors.surface,
+                    },
+                    selectedEpss === 'HIGH_50' && {
+                      borderColor: '#F59E0B',
+                    },
+                  ]}
+                >
+                  <Ionicons
+                    name="trending-up-outline"
+                    size={14}
+                    color={
+                      selectedEpss === 'HIGH_50'
+                        ? '#F59E0B'
+                        : colors.textSecondary
+                    }
+                    style={{ marginRight: 4 }}
+                  />
+                  <Text
+                    style={[
+                      styles.chipText,
+                      { color: colors.textSecondary },
+                      selectedEpss === 'HIGH_50' && {
+                        color: '#F59E0B',
+                        fontWeight: '700',
+                      },
+                    ]}
+                  >
+                    Elevated Risk &gt;50% ({epssCounts.HIGH_50 || 0})
+                  </Text>
+                </Pressable>
+
+                {/* LOWER RISK (<50%) */}
+                <Pressable
+                  accessibilityRole="button"
+                  onPress={() => onSelectEpss('LOW_50')}
+                  style={[
+                    styles.chip,
+                    {
+                      borderColor: colors.border,
+                      backgroundColor:
+                        selectedEpss === 'LOW_50'
+                          ? isDark
+                            ? `${accentColor}20`
+                            : `${accentColor}15`
+                          : isDark
+                          ? colors.background
+                          : colors.surface,
+                    },
+                    selectedEpss === 'LOW_50' && {
+                      borderColor: accentColor,
+                    },
+                  ]}
+                >
+                  <Ionicons
+                    name="shield-outline"
+                    size={14}
+                    color={
+                      selectedEpss === 'LOW_50'
+                        ? accentColor
+                        : colors.textSecondary
+                    }
+                    style={{ marginRight: 4 }}
+                  />
+                  <Text
+                    style={[
+                      styles.chipText,
+                      { color: colors.textSecondary },
+                      selectedEpss === 'LOW_50' && {
+                        color: accentColor,
+                        fontWeight: '700',
+                      },
+                    ]}
+                  >
+                    Lower Risk &lt;50% ({epssCounts.LOW_50 || 0})
                   </Text>
                 </Pressable>
               </View>

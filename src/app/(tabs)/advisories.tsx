@@ -25,11 +25,13 @@ import {
 import { useSavedArticles } from '../../context/SavedArticlesContext';
 import { useTheme } from '../../context/ThemeContext';
 import type {
+  AdvisoryEpssFilter,
   AdvisorySeverityFilter,
   AdvisorySourceFilter,
   CveAdvisory,
 } from '../../models/cve';
 import { getCveAdvisories } from '../../services/cveService';
+import { fetchEpssBatch, getEpssPercentile } from '../../services/epssService';
 import { spacing } from '../../theme/theme';
 import { haptics } from '../../utils/haptics';
 
@@ -57,10 +59,14 @@ export default function AdvisoriesScreen() {
     useState<AdvisorySourceFilter>('ALL');
   const [severityFilter, setSeverityFilter] =
     useState<AdvisorySeverityFilter>('ALL');
+  const [epssFilter, setEpssFilter] =
+    useState<AdvisoryEpssFilter>('ALL');
   const [filterModalOpen, setFilterModalOpen] = useState(false);
 
   const isAnyFilterActive =
-    sourceFilter !== 'ALL' || severityFilter !== 'ALL';
+    sourceFilter !== 'ALL' ||
+    severityFilter !== 'ALL' ||
+    epssFilter !== 'ALL';
 
   // Search
   const [searchOpen, setSearchOpen] = useState(false);
@@ -87,6 +93,29 @@ export default function AdvisoriesScreen() {
     try {
       const data = await getCveAdvisories();
       setAdvisories(data);
+
+      // Non-blocking background EPSS batch enrichment for top recent advisories
+      if (data && data.length > 0) {
+        const topCves = data.slice(0, 70).map((a) => a.cveID).filter(Boolean);
+        void fetchEpssBatch(topCves).then((epssMap) => {
+          if (epssMap && epssMap.size > 0) {
+            setAdvisories((prev) =>
+              prev.map((item) => {
+                const score = epssMap.get(item.cveID.toUpperCase());
+                if (score && item.epssPercentile === undefined) {
+                  return {
+                    ...item,
+                    epssScore: score.epss,
+                    epssPercentile: score.percentile,
+                  };
+                }
+                return item;
+              }),
+            );
+          }
+        });
+      }
+
       return data;
     } finally {
       setLoading(false);
@@ -225,6 +254,25 @@ export default function AdvisoriesScreen() {
     return counts;
   }, [advisories]);
 
+  // EPSS likelihood counts
+  const epssCounts = useMemo(() => {
+    const counts: Record<string, number> = {
+      ALL: advisories.length,
+      CRITICAL_90: 0,
+      HIGH_50: 0,
+      LOW_50: 0,
+    };
+    advisories.forEach((item) => {
+      const p = item.epssPercentile ?? getEpssPercentile(item.cveID);
+      if (p !== undefined) {
+        if (p >= 0.90) counts.CRITICAL_90++;
+        if (p >= 0.50) counts.HIGH_50++;
+        if (p < 0.50) counts.LOW_50++;
+      }
+    });
+    return counts;
+  }, [advisories]);
+
   // Filtered Advisories
   const filteredAdvisories = useMemo(() => {
     let result = advisories;
@@ -247,6 +295,24 @@ export default function AdvisoriesScreen() {
       result = result.filter((item) => item.severity === 'HIGH');
     }
 
+    // Filter by EPSS Exploit Likelihood
+    if (epssFilter === 'CRITICAL_90') {
+      result = result.filter(
+        (item) =>
+          (item.epssPercentile ?? getEpssPercentile(item.cveID) ?? 0) >= 0.90,
+      );
+    } else if (epssFilter === 'HIGH_50') {
+      result = result.filter(
+        (item) =>
+          (item.epssPercentile ?? getEpssPercentile(item.cveID) ?? 0) >= 0.50,
+      );
+    } else if (epssFilter === 'LOW_50') {
+      result = result.filter((item) => {
+        const p = item.epssPercentile ?? getEpssPercentile(item.cveID);
+        return p !== undefined && p < 0.50;
+      });
+    }
+
     // Search query
     const query = searchQuery.trim().toLowerCase();
     if (!query) return result;
@@ -264,7 +330,7 @@ export default function AdvisoriesScreen() {
         .toLowerCase();
       return text.includes(query);
     });
-  }, [advisories, sourceFilter, severityFilter, searchQuery]);
+  }, [advisories, sourceFilter, severityFilter, epssFilter, searchQuery]);
 
   // Progressive batch loading
   const visibleAdvisories = useMemo(
@@ -486,11 +552,19 @@ export default function AdvisoriesScreen() {
                 }}
               >
                 {severityFilter !== 'ALL' ? severityFilter : ''}
-                {severityFilter !== 'ALL' && sourceFilter !== 'ALL' ? ' · ' : ''}
+                {severityFilter !== 'ALL' && (sourceFilter !== 'ALL' || epssFilter !== 'ALL') ? ' · ' : ''}
                 {sourceFilter === 'CISA'
                   ? 'CISA KEV'
                   : sourceFilter === 'GITHUB'
                   ? 'GitHub Ecosystem'
+                  : ''}
+                {sourceFilter !== 'ALL' && epssFilter !== 'ALL' ? ' · ' : ''}
+                {epssFilter === 'CRITICAL_90'
+                  ? 'EPSS >90%'
+                  : epssFilter === 'HIGH_50'
+                  ? 'EPSS >50%'
+                  : epssFilter === 'LOW_50'
+                  ? 'EPSS <50%'
                   : ''}
               </Text>
               {' '}({filteredAdvisories.length})
@@ -504,6 +578,7 @@ export default function AdvisoriesScreen() {
             onPress={() => {
               setSourceFilter('ALL');
               setSeverityFilter('ALL');
+              setEpssFilter('ALL');
             }}
             style={styles.clearFilterButton}
           >
@@ -712,14 +787,18 @@ export default function AdvisoriesScreen() {
         onSelectSource={setSourceFilter}
         selectedSeverity={severityFilter}
         onSelectSeverity={setSeverityFilter}
+        selectedEpss={epssFilter}
+        onSelectEpss={setEpssFilter}
         onReset={() => {
           setSourceFilter('ALL');
           setSeverityFilter('ALL');
+          setEpssFilter('ALL');
         }}
         totalCount={advisories.length}
         filteredCount={filteredAdvisories.length}
         severityCounts={severityCounts}
         sourceCounts={sourceCounts}
+        epssCounts={epssCounts}
       />
     </SafeAreaView>
   );

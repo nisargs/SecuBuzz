@@ -181,27 +181,32 @@ export async function fetchCloudflareAnalytics({ zoneTag = '65259b39c7fd2648a898
   ]);
 
   let installClicks = null;
+  let deviceTokens = null;
   try {
-    const d1Sql = `SELECT 
-            (SELECT COUNT(*) FROM install_clicks) as totalClicks,
-            (SELECT COUNT(DISTINCT visitor_id) FROM install_clicks) as uniqueClickers,
-            (SELECT SUM(is_repeat) FROM install_clicks) as repeatClicks;
-          SELECT source, COUNT(*) as count, COUNT(DISTINCT visitor_id) as unique_clickers, SUM(is_repeat) as repeats 
-          FROM install_clicks GROUP BY source ORDER BY count DESC;
-          SELECT country, COUNT(*) as count FROM install_clicks GROUP BY country ORDER BY count DESC LIMIT 10;
-          SELECT source, is_repeat, country, referer, clicked_at FROM install_clicks ORDER BY clicked_at DESC LIMIT 25;`;
-    const d1Results = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', d1Sql);
-    if (d1Results && d1Results.length >= 4) {
-      const stats = d1Results[0]?.results?.[0] || {};
-      installClicks = {
-        totalClicks: Number(stats.totalClicks || 0),
-        uniqueClickers: Number(stats.uniqueClickers || 0),
-        repeatClicks: Number(stats.repeatClicks || 0),
-        breakdown: d1Results[1]?.results || [],
-        countries: d1Results[2]?.results || [],
-        recent: d1Results[3]?.results || []
-      };
-    }
+    const statsRes = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', 'SELECT COUNT(*) as totalClicks, COUNT(DISTINCT visitor_id) as uniqueClickers, SUM(is_repeat) as repeatClicks FROM install_clicks');
+    const breakdownRes = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', 'SELECT source, COUNT(*) as count, COUNT(DISTINCT visitor_id) as unique_clickers, SUM(is_repeat) as repeats FROM install_clicks GROUP BY source ORDER BY count DESC');
+    const countriesRes = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', 'SELECT country, COUNT(*) as count FROM install_clicks GROUP BY country ORDER BY count DESC LIMIT 10');
+    const recentRes = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', 'SELECT source, is_repeat, country, referer, clicked_at FROM install_clicks ORDER BY clicked_at DESC LIMIT 25');
+
+    const stats = statsRes?.[0]?.results?.[0] || {};
+    installClicks = {
+      totalClicks: Number(stats.totalClicks || 0),
+      uniqueClickers: Number(stats.uniqueClickers || 0),
+      repeatClicks: Number(stats.repeatClicks || 0),
+      breakdown: breakdownRes?.[0]?.results || [],
+      countries: countriesRes?.[0]?.results || [],
+      recent: recentRes?.[0]?.results || []
+    };
+
+    const tokenStatsRes = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', 'SELECT COUNT(*) as total, platform FROM push_tokens WHERE is_active = 1 GROUP BY platform');
+    const tokenVersionsRes = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', 'SELECT app_version, COUNT(*) as count FROM push_tokens WHERE is_active = 1 GROUP BY app_version ORDER BY app_version DESC');
+    const notificationsSentRes = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', 'SELECT COUNT(*) as totalSent FROM sent_notifications');
+
+    deviceTokens = {
+      platforms: tokenStatsRes?.[0]?.results || [],
+      versions: tokenVersionsRes?.[0]?.results || [],
+      totalSent: Number(notificationsSentRes?.[0]?.results?.[0]?.totalSent || 0)
+    };
   } catch (err) {
     // Non-fatal if offline
   }
@@ -210,7 +215,8 @@ export async function fetchCloudflareAnalytics({ zoneTag = '65259b39c7fd2648a898
     timestamp: nowIso,
     zone: zoneRes.data?.viewer?.zones?.[0] || {},
     rum: rumRes.data?.viewer?.accounts?.[0] || {},
-    installClicks
+    installClicks,
+    deviceTokens
   };
 }
 
@@ -220,9 +226,20 @@ if (process.argv[1]?.endsWith('cf_analytics.mjs')) {
     const z = data.zone;
     const r = data.rum;
     const clicks = data.installClicks;
+    const tokens = data.deviceTokens;
     const today = z.dailyTimeline?.[0];
     const mb = today?.sum?.bytes ? (today.sum.bytes / (1024 * 1024)).toFixed(2) : '0';
     console.log(`Today (${today?.dimensions?.date || 'Today'}): ${today?.sum?.requests || 0} Requests | ${today?.uniq?.uniques || 0} Unique Visitors | ${today?.sum?.pageViews || 0} Page Views | ${mb} MB Bandwidth | ${today?.sum?.threats || 0} Threats Blocked`);
+
+    if (tokens && tokens.platforms && tokens.platforms.length > 0) {
+      const totalDevs = tokens.platforms.reduce((acc, p) => acc + (p.total || 0), 0);
+      console.log('\n--- Active Registered Mobile Devices (D1 Registry) ---');
+      console.log(`  Total Active Devices: ${totalDevs} (${tokens.platforms.map(p => `${p.platform}: ${p.total}`).join(', ')})`);
+      if (tokens.versions && tokens.versions.length > 0) {
+        console.log(`  App Versions Installed: ${tokens.versions.map(v => `v${v.app_version}: ${v.count}`).join(' | ')}`);
+      }
+      console.log(`  Total Push Alerts Delivered: ${tokens.totalSent}`);
+    }
 
     if (clicks) {
       console.log('\n--- Google Play Install Clicks (/go/play Telemetry) ---');

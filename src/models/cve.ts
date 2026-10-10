@@ -28,3 +28,4 @@ export type CveAdvisory = {
 
 export type AdvisorySourceFilter = 'ALL' | 'CISA' | 'GITHUB';
 export type AdvisorySeverityFilter = 'ALL' | AdvisorySeverity | 'RANSOMWARE';
+export type AdvisoryEpssFilter = 'ALL' | 'CRITICAL_90' | 'HIGH_50' | 'LOW_50';
