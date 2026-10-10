@@ -65,6 +65,8 @@ export default function RootLayout() {
   }, [loaded, error]);
 
   // Proactive Over-The-Air (OTA) update check on launch
+  // Fetches fresh OTA bundle silently in the background; will apply seamlessly on next natural restart
+  // without abruptly aborting notification launches with an in-flight reloadAsync().
   useEffect(() => {
     if (__DEV__ || isExpoGo) return;
     let isMounted = true;
@@ -75,9 +77,8 @@ export default function RootLayout() {
           const update = await Updates.checkForUpdateAsync();
           if (update.isAvailable) {
             await Updates.fetchUpdateAsync();
-            if (isMounted) {
-              await Updates.reloadAsync();
-            }
+            // Intentionally omit Updates.reloadAsync() on cold launch to avoid interrupting
+            // user notification taps or cold-start interactions. The update will apply on next restart.
           }
         }
       } catch (e) {
@@ -122,22 +123,30 @@ export default function RootLayout() {
               : null;
 
         if (articleId) {
-          router.push({
-            pathname: '/article/[...id]',
-            params: {
-              id: [articleId],
-              url: articleId,
-              headline: typeof data?.headline === 'string' ? data.headline : undefined,
-              summary: typeof data?.summary === 'string' ? data.summary : undefined,
-              category: typeof data?.category === 'string' ? data.category : undefined,
-              severity: typeof data?.severity === 'string' ? data.severity : undefined,
-              source: typeof data?.source === 'string' ? data.source : undefined,
-              publishedAt:
-                typeof data?.publishedAt === 'string'
-                  ? data.publishedAt
-                  : undefined,
-            },
-          });
+          // Micro-task delay ensures RootNavigator has fully mounted its navigation container
+          setTimeout(() => {
+            try {
+              const safeSegment = encodeURIComponent(articleId);
+              router.push({
+                pathname: '/article/[...id]',
+                params: {
+                  id: [safeSegment],
+                  url: articleId,
+                  headline: typeof data?.headline === 'string' ? data.headline : undefined,
+                  summary: typeof data?.summary === 'string' ? data.summary : undefined,
+                  category: typeof data?.category === 'string' ? data.category : undefined,
+                  severity: typeof data?.severity === 'string' ? data.severity : undefined,
+                  source: typeof data?.source === 'string' ? data.source : undefined,
+                  publishedAt:
+                    typeof data?.publishedAt === 'string'
+                      ? data.publishedAt
+                      : undefined,
+                },
+              });
+            } catch (navErr) {
+              console.warn('SecuBuzz: Deferred notification router.push failed:', navErr);
+            }
+          }, 150);
         }
       } catch (err) {
         console.warn('SecuBuzz: Notification tap handling error:', err);
