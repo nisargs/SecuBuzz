@@ -509,8 +509,11 @@ export default {
         });
       }
 
-      // API: Telemetry for App Install Clicks & Repeat Readers
+      // API: Telemetry for App Install Clicks & Repeat Readers (Private - Admin Only)
       if (url.pathname === '/api/analytics/install-clicks') {
+        if (!isAuthorized(request, env)) {
+          return errorResponse('Unauthorized. Admin access required.', 401);
+        }
         if (!env.DB) return jsonResponse({ totalClicks: 0, uniqueClickers: 0, repeatClicks: 0, breakdown: [], countries: [], recent: [] });
         try {
           const stats: any = await env.DB.prepare(

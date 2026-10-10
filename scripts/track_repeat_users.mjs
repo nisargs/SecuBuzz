@@ -24,6 +24,24 @@ async function queryGraphQL(token, query, variables = {}) {
   return await res.json();
 }
 
+async function queryD1(token, accountTag, databaseId, sql) {
+  try {
+    const res = await fetch(`https://api.cloudflare.com/client/v4/accounts/${accountTag}/d1/database/${databaseId}/query`, {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${token}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ sql })
+    });
+    if (!res.ok) return null;
+    const data = await res.json();
+    return data.result || null;
+  } catch {
+    return null;
+  }
+}
+
 export async function checkRepeatVisitors({
   accountTag = '36eb47dcba495d7d872a2647755f6bde',
   siteTag = '1b2689c6e1e149fa88ee6ed4206893be',
@@ -99,13 +117,15 @@ export async function checkRepeatVisitors({
 
   return {
     timestamp: nowIso,
+    token,
+    accountTag,
     cohorts,
     ukRequests
   };
 }
 
 if (process.argv[1]?.endsWith('track_repeat_users.mjs')) {
-  checkRepeatVisitors().then(async ({ timestamp, cohorts, ukRequests }) => {
+  checkRepeatVisitors().then(async ({ timestamp, token, accountTag, cohorts, ukRequests }) => {
     console.log(`\n========================================================`);
     console.log(`🔍 SECUBUZZ REPEAT VISITOR AUDIT (${timestamp})`);
     console.log(`========================================================`);
@@ -152,9 +172,25 @@ if (process.argv[1]?.endsWith('track_repeat_users.mjs')) {
 
     // 4. Google Play Install Clicks & Conversions
     try {
-      const clickRes = await fetch('https://secubuzz.com/api/analytics/install-clicks');
-      if (clickRes.ok) {
-        const clicks = await clickRes.json();
+      const d1Sql = `SELECT 
+              (SELECT COUNT(*) FROM install_clicks) as totalClicks,
+              (SELECT COUNT(DISTINCT visitor_id) FROM install_clicks) as uniqueClickers,
+              (SELECT SUM(is_repeat) FROM install_clicks) as repeatClicks;
+            SELECT source, COUNT(*) as count, COUNT(DISTINCT visitor_id) as unique_clickers, SUM(is_repeat) as repeats 
+            FROM install_clicks GROUP BY source ORDER BY count DESC;
+            SELECT country, COUNT(*) as count FROM install_clicks GROUP BY country ORDER BY count DESC LIMIT 10;
+            SELECT source, is_repeat, country, referer, clicked_at FROM install_clicks ORDER BY clicked_at DESC LIMIT 25;`;
+      const d1Results = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', d1Sql);
+      if (d1Results && d1Results.length >= 4) {
+        const stats = d1Results[0]?.results?.[0] || {};
+        const clicks = {
+          totalClicks: Number(stats.totalClicks || 0),
+          uniqueClickers: Number(stats.uniqueClickers || 0),
+          repeatClicks: Number(stats.repeatClicks || 0),
+          breakdown: d1Results[1]?.results || [],
+          countries: d1Results[2]?.results || [],
+          recent: d1Results[3]?.results || []
+        };
         console.log(`\n📲 [4] GOOGLE PLAY INSTALL CLICKS & CONVERSIONS:`);
         console.log(`  Total Clicks: ${clicks.totalClicks || 0} | Unique Clickers: ${clicks.uniqueClickers || 0} | Repeat Clickers: ${clicks.repeatClicks || 0}`);
         if (clicks.breakdown && clicks.breakdown.length > 0) {

@@ -24,6 +24,24 @@ async function queryGraphQL(token, query, variables = {}) {
   return await res.json();
 }
 
+async function queryD1(token, accountTag, databaseId, sql) {
+  try {
+    const res = await fetch(`https://api.cloudflare.com/client/v4/accounts/${accountTag}/d1/database/${databaseId}/query`, {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${token}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ sql })
+    });
+    if (!res.ok) return null;
+    const data = await res.json();
+    return data.result || null;
+  } catch {
+    return null;
+  }
+}
+
 export async function fetchCloudflareAnalytics({ zoneTag = '65259b39c7fd2648a898415fb780bcf7', accountTag = '36eb47dcba495d7d872a2647755f6bde', siteTag = '1b2689c6e1e149fa88ee6ed4206893be' } = {}) {
   const token = getOauthToken();
   const now = new Date();
@@ -164,12 +182,28 @@ export async function fetchCloudflareAnalytics({ zoneTag = '65259b39c7fd2648a898
 
   let installClicks = null;
   try {
-    const clickRes = await fetch('https://secubuzz.com/api/analytics/install-clicks');
-    if (clickRes.ok) {
-      installClicks = await clickRes.json();
+    const d1Sql = `SELECT 
+            (SELECT COUNT(*) FROM install_clicks) as totalClicks,
+            (SELECT COUNT(DISTINCT visitor_id) FROM install_clicks) as uniqueClickers,
+            (SELECT SUM(is_repeat) FROM install_clicks) as repeatClicks;
+          SELECT source, COUNT(*) as count, COUNT(DISTINCT visitor_id) as unique_clickers, SUM(is_repeat) as repeats 
+          FROM install_clicks GROUP BY source ORDER BY count DESC;
+          SELECT country, COUNT(*) as count FROM install_clicks GROUP BY country ORDER BY count DESC LIMIT 10;
+          SELECT source, is_repeat, country, referer, clicked_at FROM install_clicks ORDER BY clicked_at DESC LIMIT 25;`;
+    const d1Results = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', d1Sql);
+    if (d1Results && d1Results.length >= 4) {
+      const stats = d1Results[0]?.results?.[0] || {};
+      installClicks = {
+        totalClicks: Number(stats.totalClicks || 0),
+        uniqueClickers: Number(stats.uniqueClickers || 0),
+        repeatClicks: Number(stats.repeatClicks || 0),
+        breakdown: d1Results[1]?.results || [],
+        countries: d1Results[2]?.results || [],
+        recent: d1Results[3]?.results || []
+      };
     }
   } catch (err) {
-    // Non-fatal if offline or not yet deployed
+    // Non-fatal if offline
   }
 
   return {
