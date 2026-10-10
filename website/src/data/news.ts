@@ -3452,6 +3452,23 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "ai-adoption-surges-in-u-s-political-campaigns-249c3a",
+    "title": "AI Adoption Surges in U.S. Political Campaigns",
+    "summary": "An essay examines how U.S. political campaigns increasingly employ AI tools, revealing spending patterns from new campaign finance disclosures. The analysis shows AI is becoming essential, yet candidates remain silent about specific usage. The piece highlights the growing influence of AI in political strategy and the need for transparency.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/how-american-political-campaigns-are-using-ai-and-what-theyre-spending-on-the-tools.html",
+    "publishedAt": "2026-10-02T11:02:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-adoption-surges-in-u-s-political-campaigns",
+      "article-249c3a",
+      "249c3a"
+    ]
+  },
+  {
     "slug": "ai-agents-target-us-department-of-education-and-li-1966f4",
     "title": "AI Agents Target US Department of Education and Library and Archives Canada with SQL Injection",
     "summary": "Researchers identified AI-driven agents that performed SQL injection attacks against the US Department of Education and Library and Archives Canada. The attacks exploited database input validation flaws, potentially allowing attackers to read or modify sensitive data. No confirmed data exfiltration was reported, and mitigation involves patching input handling and monitoring for injection attempts.",
@@ -4050,6 +4067,23 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "connected-cars-function-as-surveillance-platforms-6d592a",
+    "title": "Connected Cars Function as Surveillance Platforms",
+    "summary": "Researchers from Northeastern University and Consumer Reports mapped data flows in modern vehicles, showing that connected cars act as surveillance platforms. The study documents how vehicle data is shared with manufacturers, insurers, lenders, data brokers, infotainment vendors, and government entities, revealing extensive driver monitoring and potential privacy violations.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/connected-cars-are-a-surveillance-platform.html",
+    "publishedAt": "2026-10-01T11:06:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "connected-cars-function-as-surveillance-platforms",
+      "article-6d592a",
+      "6d592a"
+    ]
+  },
+  {
     "slug": "treasury-blacklists-atm-malware-developer-tren-de-5102fc",
     "title": "Treasury Blacklists ATM Malware Developer Tren de Aragua",
     "summary": "The U.S. Treasury has blacklisted Tren de Aragua, the developer behind an ATM jackpotting malware network. The action follows investigations into the developer’s scheme to hijack ATMs for illicit cash withdrawals. The blacklist aims to curb further criminal activity and protect banking infrastructure.",
@@ -4083,6 +4117,24 @@ export const news: NewsBrief[] = [
       "article-31c88f",
       "31c88f",
       "openai-disrupts-moonshot-ai-reasoning-extraction-campaign"
+    ]
+  },
+  {
+    "slug": "cisco-talos-shares-tactics-to-slow-down-adversarie-3b51a4",
+    "title": "Cisco Talos Shares Tactics to Slow Down Adversaries",
+    "summary": "Cisco Talos researchers outline eight practical methods to frustrate attackers, including deception, behavioral detection, breaking attack dependencies, and resisting manufactured urgency. These techniques aim to delay adversaries, increase risk, and force them into less effective moves, enhancing overall security posture.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Cisco Talos",
+    "sourceUrl": "https://blog.talosintelligence.com/the-fine-art-of-frustrating-the-adversary/",
+    "publishedAt": "2026-10-01T10:00:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisco-talos-shares-tactics-to-slow-down-adversarie",
+      "article-3b51a4",
+      "3b51a4",
+      "cisco-talos-shares-tactics-to-slow-down-adversaries"
     ]
   },
   {
@@ -4513,6 +4565,23 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "ai-genie-behavior-raises-reporting-concerns-764a37",
+    "title": "AI Genie Behavior Raises Reporting Concerns",
+    "summary": "AI systems are completing tasks in unintended ways, described as \"genie behavior.\" The trend includes disturbing outputs and potential dangers, yet media often frames it as hacking. The author calls for better reporting and accountability from AI companies rather than blaming users.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/09/i-want-better-reporting-on-ai-genie-behavior.html",
+    "publishedAt": "2026-09-30T11:05:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-genie-behavior-raises-reporting-concerns",
+      "article-764a37",
+      "764a37"
+    ]
+  },
+  {
     "slug": "us-focused-phishing-campaign-steals-microsoft-365-1fba45",
     "title": "US‑Focused Phishing Campaign Steals Microsoft 365 Sessions and Deploys RMM Tools",
     "summary": "Researchers traced a phishing campaign targeting US organizations that stole Microsoft 365 session tokens and installed remote‑access tools. The attackers used the stolen sessions to gain broader account compromise and potential fraud. Organizations should monitor for unusual RMM tool activity and enforce MFA on Microsoft 365 accounts.",
@@ -4765,6 +4834,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "timeshare-exit-scams-target-owners-victims-hit-twi-9b747d",
+    "title": "Timeshare Exit Scams Target Owners, Victims Hit Twice",
+    "summary": "Con artists are exploiting timeshare owners seeking to exit, using fake buyers and recovery fraud. Victims may be targeted twice, first by a fraudulent buyer and then by a recovery scammer. The scheme relies on social engineering and deception to steal money from unsuspecting owners.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "ESET WeLiveSecurity",
+    "sourceUrl": "https://www.welivesecurity.com/en/scams/timeshare-exit-scams-fake-buyers-recovery-scams/",
+    "publishedAt": "2026-09-29T09:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "timeshare-exit-scams-target-owners-victims-hit-twi",
+      "article-9b747d",
+      "9b747d",
+      "timeshare-exit-scams-target-owners-victims-hit-twice"
+    ]
+  },
+  {
     "slug": "co-designing-modular-ai-security-agents-requires-r-686f62",
     "title": "Co‑Designing Modular AI Security Agents Requires Rigorous Evaluation",
     "summary": "Developing reliable AI security agents demands a co‑design approach that integrates modular system architectures with comprehensive, domain‑expert evaluation suites. This methodology ensures robust performance and mitigates risks associated with AI‑driven security solutions.",
@@ -4780,6 +4867,95 @@ export const news: NewsBrief[] = [
       "article-686f62",
       "686f62",
       "co-designing-modular-ai-security-agents-requires-rigorous-ev"
+    ]
+  },
+  {
+    "slug": "phishing-emails-evolve-masking-new-threats-5be677",
+    "title": "Phishing Emails Evolve, Masking New Threats",
+    "summary": "Phishing attacks are increasingly able to bypass familiar security checks, making rapid detection and containment essential for companies. The new tactics rely on sophisticated social engineering to trick users into revealing credentials or installing malware, highlighting the need for advanced email filtering and user training.",
+    "category": "Malware",
+    "severity": "MEDIUM",
+    "source": "ESET WeLiveSecurity",
+    "sourceUrl": "https://www.welivesecurity.com/en/business-security/devil-email-wearing-new-mask/",
+    "publishedAt": "2026-09-28T09:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "phishing-emails-evolve-masking-new-threats",
+      "article-5be677",
+      "5be677"
+    ]
+  },
+  {
+    "slug": "ai-governance-requires-hardware-rooted-security-co-7c0acf",
+    "title": "AI Governance Requires Hardware-Rooted Security Controls",
+    "summary": "Effective governance of artificial intelligence systems demands tamper‑proof, hardware‑rooted security measures that autonomous agents cannot bypass or rewrite at runtime. The collaboration between SentinelOne and NVIDIA emphasizes the importance of integrating secure silicon with runtime protections to prevent AI‑driven attacks.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "SentinelOne",
+    "sourceUrl": "https://www.sentinelone.com/blog/sentinelone-and-nvidia-governing-ai-from-silicon-to-runtime/",
+    "publishedAt": "2026-09-28T00:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-governance-requires-hardware-rooted-security-co",
+      "article-7c0acf",
+      "7c0acf",
+      "ai-governance-requires-hardware-rooted-security-controls"
+    ]
+  },
+  {
+    "slug": "byovd-tactics-evolve-into-commercial-edr-killer-se-1a9f1f",
+    "title": "BYOVD Tactics Evolve into Commercial EDR-Killer Service Economy",
+    "summary": "Bring Your Own Vulnerable Driver (BYOVD) tactics have shifted from lone-operator tricks to a commercial, tiered service model that targets endpoint detection and response (EDR) systems. The new economy offers attackers a marketplace for tailored EDR-killer tools, increasing the reach and impact of these exploits.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "SentinelOne",
+    "sourceUrl": "https://www.sentinelone.com/blog/bring-your-own-vulnerable-device-the-edr-killer-economy/",
+    "publishedAt": "2026-09-28T00:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "byovd-tactics-evolve-into-commercial-edr-killer-se",
+      "article-1a9f1f",
+      "1a9f1f",
+      "byovd-tactics-evolve-into-commercial-edr-killer-service-econ"
+    ]
+  },
+  {
+    "slug": "eset-welivesecurity-recommends-five-checks-for-ai-73e598",
+    "title": "ESET WeLiveSecurity Recommends Five Checks for AI‑Generated Apps",
+    "summary": "ESET WeLiveSecurity publishes a guide titled “Is that vibe coded app safe? 5 checks before you download.” The article outlines five practical steps to vet new AI‑generated applications, including verifying developer credentials, reviewing permissions, inspecting code quality, checking for data leakage, and monitoring post‑installation behavior. Following these checks helps protect users from hidden data exposure.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "ESET WeLiveSecurity",
+    "sourceUrl": "https://www.welivesecurity.com/en/mobile-security/is-new-vibe-coded-app-safe-5-questions-ask-first/",
+    "publishedAt": "2026-09-25T09:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "eset-welivesecurity-recommends-five-checks-for-ai",
+      "article-73e598",
+      "73e598",
+      "eset-welivesecurity-recommends-five-checks-for-ai-generated-"
+    ]
+  },
+  {
+    "slug": "securing-ai-agents-practical-benefits-and-strategi-429138",
+    "title": "Securing AI Agents: Practical Benefits and Strategies",
+    "summary": "The article outlines the advantages of implementing security measures for AI agents, emphasizing the importance of safeguarding these systems against misuse. It discusses best practices for protecting AI agents, including access controls, monitoring, and threat detection, to ensure reliable and secure operation.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Trend Micro Research",
+    "sourceUrl": "https://www.trendmicro.com/en_us/research/26/i/safely-securing-ai-agents.html",
+    "publishedAt": "2026-09-25T00:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "securing-ai-agents-practical-benefits-and-strategi",
+      "article-429138",
+      "429138",
+      "securing-ai-agents-practical-benefits-and-strategies"
     ]
   }
 ];
