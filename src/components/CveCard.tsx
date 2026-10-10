@@ -126,7 +126,9 @@ export function CveCard({
         `- Live CISA KEV Radar: ${webUrl}`,
         `- Primary Source: ${advisory.url}`,
         '',
-        'Shared via SecuBuzz · Quick 60-Word Cybersecurity Briefs & CISA KEV Radar (https://secubuzz.com)',
+        'Shared via SecuBuzz · Quick 60-Word Cybersecurity News',
+        '📱 Google Play: https://play.google.com/store/apps/details?id=com.secubuzz.app',
+        '🌐 Web: https://secubuzz.com',
       );
 
       await Share.share(

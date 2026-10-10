@@ -322,23 +322,151 @@ ${rssItems}
   console.log(`Updated ${OUTPUT_RSS_XML}`);
 }
 
+const GITHUB_ADVISORIES_URL = 'https://api.github.com/advisories?per_page=50';
+
+function formatEcosystem(ecosystem) {
+  if (!ecosystem) return 'Open Source';
+  const lower = ecosystem.toLowerCase();
+  if (lower === 'go') return 'Go';
+  if (lower === 'npm') return 'npm';
+  if (lower === 'pypi') return 'Python (PyPI)';
+  if (lower === 'maven') return 'Java (Maven)';
+  if (lower === 'rubygems') return 'RubyGems';
+  if (lower === 'nuget') return '.NET (NuGet)';
+  if (lower === 'rust' || lower === 'cargo') return 'Rust (Cargo)';
+  if (lower === 'packagist') return 'PHP (Packagist)';
+  return ecosystem.charAt(0).toUpperCase() + ecosystem.slice(1);
+}
+
+function formatProductName(product) {
+  if (!product) return 'Software System';
+  if (product.startsWith('github.com/') || product.startsWith('gitlab.com/')) {
+    const parts = product.split('/');
+    if (parts.length >= 3) {
+      const owner = parts[1];
+      const repo = parts[2];
+      const version = parts[3] ? ` (${parts[3]})` : '';
+      return `${repo}${version} · ${owner}`;
+    }
+  }
+  return product;
+}
+
+function cleanAdvisoryDescription(rawDesc, fallbackSummary) {
+  let text = (rawDesc || fallbackSummary || '').trim();
+  if (!text) return '';
+  text = text.replace(/```[\s\S]*?```/g, '');
+  const summaryMatch = text.match(/(?:^|\n)#+\s*Summary\s*\n+([\s\S]*?)(?=\n#+|$)/i);
+  if (summaryMatch && summaryMatch[1].trim().length > 30) {
+    text = summaryMatch[1];
+  }
+  text = text.replace(/^#+\s+.*$/gm, '');
+  text = text.replace(/#+\s*(?:Summary|Details|Impact|Patches|Workarounds|References|PoC|Proof of Concept)\b:?/gi, '');
+  text = text.replace(/\[([^\]]+)\]\([^\)]+\)/g, '$1');
+  text = text.replace(/https?:\/\/\S+/g, '');
+  text = text.replace(/`([^`]+)`/g, '$1');
+  text = text.replace(/\*\*([^*]+)\*\*/g, '$1');
+  text = text.replace(/\*([^*]+)\*/g, '$1');
+  text = text.replace(/__([^_]+)__/g, '$1');
+  text = text.replace(/_([^_]+)_/g, '$1');
+  text = text.replace(/<[^>]*>/g, '');
+  text = text.replace(/\r\n|\n|\r/g, ' ');
+  text = text.replace(/\s+/g, ' ').trim();
+  if (text.length < 20 && fallbackSummary) {
+    text = fallbackSummary.trim();
+  }
+  if (text.length > 400) {
+    const periodIdx = text.slice(0, 400).lastIndexOf('. ');
+    if (periodIdx > 120) {
+      text = text.slice(0, periodIdx + 1);
+    } else {
+      const spaceIdx = text.slice(0, 400).lastIndexOf(' ');
+      if (spaceIdx > 80) {
+        text = `${text.slice(0, spaceIdx)}...`;
+      } else {
+        text = `${text.slice(0, 400)}...`;
+      }
+    }
+  }
+  return text;
+}
+
+async function fetchGitHubAdvisories() {
+  try {
+    const res = await fetch(GITHUB_ADVISORIES_URL, {
+      headers: {
+        'Accept': 'application/vnd.github+json',
+        'User-Agent': 'SecuBuzz-Web-Sync/1.0 (+https://secubuzz.com)'
+      }
+    });
+    if (!res.ok) {
+      console.warn(`GitHub Advisories fetch returned HTTP ${res.status}`);
+      return [];
+    }
+    const rawList = await res.json();
+    if (!Array.isArray(rawList)) return [];
+
+    return rawList.map(item => {
+      const firstVuln = item.vulnerabilities?.[0];
+      const rawPkgName = firstVuln?.package?.name || 'Open Source Package';
+      const formattedPkg = formatProductName(rawPkgName);
+      const ecosystem = formatEcosystem(firstVuln?.package?.ecosystem);
+      const firstPatched = firstVuln?.first_patched_version;
+
+      const rawSeverity = (item.severity || '').toUpperCase();
+      const severity = rawSeverity === 'CRITICAL' ? 'Critical' : (rawSeverity === 'HIGH' ? 'High' : (rawSeverity === 'LOW' ? 'Low' : 'Medium'));
+      const cleanDesc = cleanAdvisoryDescription(item.description, item.summary);
+      const cvss = item.cvss_severities?.cvss_v4?.score || item.cvss_severities?.cvss_v3?.score;
+      const cve = item.cve_id || item.ghsa_id;
+
+      return {
+        cve,
+        slug: cve.toLowerCase(),
+        vendor: ecosystem,
+        product: formattedPkg,
+        name: item.summary || cve,
+        dateAdded: item.published_at ? item.published_at.split('T')[0] : '',
+        dueDate: 'Immediate',
+        cvss,
+        severity,
+        cwe: (item.cwes?.[0]?.cwe_id || '—').replace(/^CWE:\s*/i, ''),
+        ransomware: false,
+        description: cleanDesc,
+        requiredAction: firstPatched
+          ? `Upgrade ${formattedPkg} to version ${firstPatched} or later.`
+          : 'Review repository advisory and update affected dependencies.',
+        references: [
+          { label: 'GitHub Advisory', url: item.html_url },
+          ...(item.cve_id ? [{ label: 'NVD CVE entry', url: `https://nvd.nist.gov/vuln/detail/${item.cve_id}` }] : [])
+        ]
+      };
+    });
+  } catch (err) {
+    console.warn('Failed to fetch GitHub Advisories:', err);
+    return [];
+  }
+}
+
 async function syncAdvisories() {
   try {
-    console.log('Fetching live CISA KEV catalog...');
-    const res = await fetch(CISA_KEV_URL, {
-      headers: { 'User-Agent': 'SecuBuzz/1.0 (+https://secubuzz.com)' }
-    });
-    if (!res.ok) throw new Error(`HTTP ${res.status} fetching CISA KEV`);
-    const data = await res.json();
+    console.log('Fetching live CISA KEV catalog and GitHub Advisories...');
+    const [cisaRes, githubAdvisories] = await Promise.all([
+      fetch(CISA_KEV_URL, {
+        headers: { 'User-Agent': 'SecuBuzz/1.0 (+https://secubuzz.com)' }
+      }),
+      fetchGitHubAdvisories()
+    ]);
+    if (!cisaRes.ok) throw new Error(`HTTP ${cisaRes.status} fetching CISA KEV`);
+    const data = await cisaRes.json();
     if (!data || !Array.isArray(data.vulnerabilities)) return;
 
-    const sorted = [...data.vulnerabilities].sort((a, b) => {
+    const sortedCisa = [...data.vulnerabilities].sort((a, b) => {
       const timeA = Date.parse(a.dateAdded) || 0;
       const timeB = Date.parse(b.dateAdded) || 0;
       return timeB - timeA;
     });
 
-    const advisories = sorted.map(item => {
+    const cisaAdvisories = sortedCisa.map(item => {
       const cve = item.cveID;
       const isRansomware =
         item.knownRansomwareCampaignUse === 'Known' ||
@@ -376,15 +504,25 @@ async function syncAdvisories() {
       };
     });
 
+    // Merge and deduplicate by CVE ID
+    const cisaCveSet = new Set(cisaAdvisories.map(a => a.cve.toUpperCase()));
+    const uniqueGithub = githubAdvisories.filter(gh => !cisaCveSet.has(gh.cve.toUpperCase()));
+
+    const combined = [...cisaAdvisories, ...uniqueGithub].sort((a, b) => {
+      const timeA = Date.parse(a.dateAdded) || 0;
+      const timeB = Date.parse(b.dateAdded) || 0;
+      return timeB - timeA;
+    });
+
     const advContent = `import type { Advisory } from '../types/advisory';
 
-export const advisories: Advisory[] = ${JSON.stringify(advisories, null, 2)};
+export const advisories: Advisory[] = ${JSON.stringify(combined, null, 2)};
 `;
 
     fs.writeFileSync(OUTPUT_ADVISORIES_TS, advContent, 'utf8');
-    console.log(`Updated ${OUTPUT_ADVISORIES_TS} with ${advisories.length} CISA KEV entries`);
+    console.log(`Updated ${OUTPUT_ADVISORIES_TS} with ${combined.length} combined advisories (${cisaAdvisories.length} CISA KEV + ${uniqueGithub.length} GitHub)`);
   } catch (err) {
-    console.warn('Could not sync CISA advisories statically:', err);
+    console.warn('Could not sync advisories statically:', err);
   }
 }
 

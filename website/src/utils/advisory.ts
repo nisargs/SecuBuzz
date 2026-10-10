@@ -113,6 +113,13 @@ export function formatAdvisorySnippet(advisory: Advisory, cvssScore?: number, ep
     lines.push('', advisory.description.trim());
   }
 
-  lines.push('', `- Reference: https://secubuzz.com/advisories/${advisory.slug}`, '', 'Shared via SecuBuzz · Quick 60-Word Cybersecurity Briefs & CISA KEV Radar (https://secubuzz.com)');
+  lines.push(
+    '',
+    `- Reference: https://secubuzz.com/advisories/${advisory.slug}`,
+    '',
+    'Shared via SecuBuzz · Quick 60-Word Cybersecurity News',
+    '📱 Google Play: https://play.google.com/store/apps/details?id=com.secubuzz.app',
+    '🌐 Web: https://secubuzz.com'
+  );
   return lines.join('\n');
 }

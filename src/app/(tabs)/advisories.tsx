@@ -394,8 +394,8 @@ export default function AdvisoriesScreen() {
                   ]}
                 >
                   {isAnyFilterActive
-                    ? `${filteredAdvisories.length} OF ${advisories.length} ACTIVE`
-                    : `${advisories.length} ACTIVE`}
+                    ? `${filteredAdvisories.length} OF ${advisories.length.toLocaleString()} TRACKED`
+                    : `${advisories.length.toLocaleString()} TRACKED`}
                 </Text>
               </View>
             ) : null}

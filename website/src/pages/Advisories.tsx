@@ -20,9 +20,14 @@ export function Advisories() {
   const [page, setPage] = useState(1);
   const { advisories } = useLiveAdvisories();
 
-  const openCount = advisories.filter((a) => daysUntil(a.dueDate) >= 0).length;
-  const overdueCount = advisories.length - openCount;
+  const openCount = advisories.filter(
+    (a) => a.dueDate && /^\d{4}-\d{2}-\d{2}$/.test(a.dueDate) && daysUntil(a.dueDate) >= 0
+  ).length;
+  const overdueCount = advisories.filter(
+    (a) => a.dueDate && /^\d{4}-\d{2}-\d{2}$/.test(a.dueDate) && daysUntil(a.dueDate) < 0
+  ).length;
   const dueThisWeekCount = advisories.filter((a) => {
+    if (!a.dueDate || !/^\d{4}-\d{2}-\d{2}$/.test(a.dueDate)) return false;
     const d = daysUntil(a.dueDate);
     return d >= 0 && d <= 7;
   }).length;
@@ -106,7 +111,7 @@ export function Advisories() {
             <dd className="mt-1 font-mono text-2xl text-ink">{advisories.length.toLocaleString()}</dd>
           </div>
           <div>
-            <dt className="text-xs text-subtle">Open deadlines</dt>
+            <dt className="text-xs text-subtle">Open CISA deadlines</dt>
             <dd className="mt-1 font-mono text-2xl text-accent">{openCount.toLocaleString()}</dd>
           </div>
           <div>

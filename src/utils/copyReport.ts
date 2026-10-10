@@ -49,7 +49,13 @@ export function formatAdvisoryMarkdown(advisory: CveAdvisory): string {
   const webUrl = `https://secubuzz.com/advisories/${advisory.cveID.toLowerCase()}`;
   const sourceUrl = advisory.url || `https://nvd.nist.gov/vuln/detail/${advisory.cveID}`;
   lines.push('', `- Advisory Radar: ${webUrl}`);
-  lines.push(`- Primary Source: ${advisory.source || 'CISA KEV'} (${sourceUrl})`, '', 'Shared via SecuBuzz · Quick 60-Word Cybersecurity Briefs & CISA KEV Radar (https://secubuzz.com)');
+  lines.push(
+    `- Primary Source: ${advisory.source || 'CISA KEV'} (${sourceUrl})`,
+    '',
+    'Shared via SecuBuzz · Quick 60-Word Cybersecurity News',
+    '📱 Google Play: https://play.google.com/store/apps/details?id=com.secubuzz.app',
+    '🌐 Web: https://secubuzz.com'
+  );
 
   return lines.join('\n');
 }
@@ -102,7 +108,13 @@ export function formatArticleMarkdown(article: Article): string {
   }
 
   lines.push('', `- Read 60-word brief: ${webUrl}`);
-  lines.push(`- Source: ${article.sourceName} (${article.sourceUrl})`, '', 'Shared via SecuBuzz · Quick 60-Word Cybersecurity Briefs (https://secubuzz.com)');
+  lines.push(
+    `- Source: ${article.sourceName} (${article.sourceUrl})`,
+    '',
+    'Shared via SecuBuzz · Quick 60-Word Cybersecurity News',
+    '📱 Google Play: https://play.google.com/store/apps/details?id=com.secubuzz.app',
+    '🌐 Web: https://secubuzz.com'
+  );
 
   return lines.join('\n');
 }

@@ -25,7 +25,9 @@ export async function shareArticle(article: Article): Promise<void> {
       `- Read 60-word brief: ${webUrl}`,
       `- Source: ${article.sourceName || 'Primary Source'} (${article.sourceUrl})`,
       '',
-      'Shared via SecuBuzz · Quick 60-Word Cybersecurity Briefs (https://secubuzz.com)',
+      'Shared via SecuBuzz · Quick 60-Word Cybersecurity News',
+      '📱 Google Play: https://play.google.com/store/apps/details?id=com.secubuzz.app',
+      '🌐 Web: https://secubuzz.com',
     ].join('\n');
 
     await Share.share(
