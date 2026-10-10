@@ -1,5 +1,18 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/cyber-exec-arrested-in-case-allegedly-tied-to-shinyhunters-hackers/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cyber-exec-arrested-in-case-allegedly-tied-to-shinyhunters-hackers/",
+    "title": "Cyber Executive Arrested in Connection with ShinyHunters Hackers",
+    "headline": "Cyber Executive Arrested in Connection with ShinyHunters Hackers",
+    "summary": "Canadian cybersecurity executive Edward Dubrovsky was arrested in Pennsylvania for alleged extortion linked to the ShinyHunters hacking group, part of the FBI’s ongoing crackdown on the group. The arrest follows multiple reports connecting him to the group’s activities.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-10T15:07:54.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/cyber-exec-arrested-in-case-allegedly-tied-to-shinyhunters-hackers/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks/",
     "title": "Chinese Hacker Uses ARTEX AI and Claude Agents to Target South Korean Banks",

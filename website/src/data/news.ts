@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "cyber-executive-arrested-in-connection-with-shinyh-7af634",
+    "title": "Cyber Executive Arrested in Connection with ShinyHunters Hackers",
+    "summary": "Canadian cybersecurity executive Edward Dubrovsky was arrested in Pennsylvania for alleged extortion linked to the ShinyHunters hacking group, part of the FBI’s ongoing crackdown on the group. The arrest follows multiple reports connecting him to the group’s activities.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cyber-exec-arrested-in-case-allegedly-tied-to-shinyhunters-hackers/",
+    "publishedAt": "2026-10-10T15:07:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cyber-executive-arrested-in-connection-with-shinyh",
+      "article-7af634",
+      "7af634",
+      "cyber-executive-arrested-in-connection-with-shinyhunters-hac"
+    ]
+  },
+  {
     "slug": "chinese-hacker-uses-artex-ai-and-claude-agents-to-3b0955",
     "title": "Chinese Hacker Uses ARTEX AI and Claude Agents to Target South Korean Banks",
     "summary": "A Chinese hacker launched attacks on South Korean banks using the ARTEX AI penetration testing suite and Claude AI agents. The campaign targeted banking systems, exploiting the AI tools to conduct reconnaissance and credential theft, compromising sensitive financial data and disrupting services.",

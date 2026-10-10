@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Oct 2026 15:50:38 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2026 16:17:43 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Cyber Executive Arrested in Connection with ShinyHunters Hackers</title>
+      <link>https://secubuzz.com/news/cyber-executive-arrested-in-connection-with-shinyh-7af634</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cyber-executive-arrested-in-connection-with-shinyh-7af634</guid>
+      <description><![CDATA[Canadian cybersecurity executive Edward Dubrovsky was arrested in Pennsylvania for alleged extortion linked to the ShinyHunters hacking group, part of the FBI’s ongoing crackdown on the group. The arrest follows multiple reports connecting him to the group’s activities.]]></description>
+      <pubDate>Sat, 10 Oct 2026 15:07:54 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/cyber-exec-arrested-in-case-allegedly-tied-to-shinyhunters-hackers/">BleepingComputer</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>Chinese Hacker Uses ARTEX AI and Claude Agents to Target South Korean Banks</title>
       <link>https://secubuzz.com/news/chinese-hacker-uses-artex-ai-and-claude-agents-to-3b0955</link>
@@ -447,15 +456,6 @@
       <pubDate>Thu, 08 Oct 2026 20:44:28 GMT</pubDate>
       <source url="https://www.microsoft.com/en-us/security/blog/2026/10/08/post-quantum-authentication-why-organizations-should-start-testing-certificate-ecosystems-now/">Microsoft Security</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>&apos;AgentCorruption&apos; Vulnerability Lets Single Prompt Take Over AWS Bedrock AgentCore</title>
-      <link>https://secubuzz.com/news/agentcorruption-vulnerability-lets-single-prompt-7b84c5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/agentcorruption-vulnerability-lets-single-prompt-7b84c5</guid>
-      <description><![CDATA[A recently patched flaw in AWS Bedrock AgentCore, dubbed 'AgentCorruption', can be exploited by sending a single prompt to an AI chatbot, enabling attackers to hijack an entire AWS environment. The vulnerability allows remote code execution across the organization’s fleet. AWS has issued a patch; users should apply it immediately.]]></description>
-      <pubDate>Thu, 08 Oct 2026 20:39:44 GMT</pubDate>
-      <source url="https://www.darkreading.com/cloud-security/agentcorruption-aws-environments-at-risk-single-prompt">Dark Reading</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
