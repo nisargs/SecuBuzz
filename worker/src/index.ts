@@ -12,6 +12,7 @@ export interface D1Database {
 export interface Env {
   DB: D1Database;
   PUSH_ADMIN_SECRET?: string;
+  ADMIN_KEY?: string;
   GITHUB_PAT?: string;
   ASSETS?: {
     fetch(request: Request | string, init?: RequestInit): Promise<Response>;
@@ -53,24 +54,19 @@ function isValidExpoPushToken(token: unknown): boolean {
 }
 
 function isAuthorized(request: Request, env: Env): boolean {
-  if (!env.PUSH_ADMIN_SECRET) {
+  const allowed = [env.PUSH_ADMIN_SECRET, env.ADMIN_KEY].filter(Boolean) as string[];
+  if (allowed.length === 0) {
     // If no secret configured in worker env, allow internal operations during development
     return true;
   }
-  const authHeader = request.headers.get('Authorization');
-  const customKey = request.headers.get('x-admin-key');
+  const authHeader = request.headers.get('Authorization') || '';
+  const customKey = request.headers.get('x-admin-key') || '';
   const url = new URL(request.url);
-  const queryKey = url.searchParams.get('key') || url.searchParams.get('secret');
+  const queryKey = url.searchParams.get('key') || url.searchParams.get('secret') || '';
 
-  if (customKey === env.PUSH_ADMIN_SECRET) {
-    return true;
-  }
-  if (queryKey && queryKey === env.PUSH_ADMIN_SECRET) {
-    return true;
-  }
-  if (authHeader && authHeader === `Bearer ${env.PUSH_ADMIN_SECRET}`) {
-    return true;
-  }
+  if (allowed.some(s => s === customKey)) return true;
+  if (allowed.some(s => s === queryKey)) return true;
+  if (allowed.some(s => authHeader === `Bearer ${s}`)) return true;
   return false;
 }
 
