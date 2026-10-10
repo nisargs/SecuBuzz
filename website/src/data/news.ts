@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "claude-clickfix-how-to-detect-block-adception-malv-2f791d",
+    "title": "Claude ClickFix: How to Detect & Block Adception Malvertising",
+    "summary": "Adception malvertising uses Google Ads and Bing redirects to deploy fake Claude ClickFix attacks. The article explains clipboard defense, AMOS hunting, and SOC queries to detect and block these malicious ads. It provides practical steps for security teams to mitigate the threat.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/claude-clickfix-adception-malvertising-defense",
+    "publishedAt": "2026-10-10T04:14:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "claude-clickfix-how-to-detect-block-adception-malv",
+      "article-2f791d",
+      "2f791d",
+      "claude-clickfix-how-to-detect-block-adception-malvertising"
+    ]
+  },
+  {
     "slug": "co-creator-of-empire-market-dark-web-marketplace-s-898fec",
     "title": "Co‑creator of Empire Market Dark Web Marketplace Sentenced to 40 Years",
     "summary": "Raheim Hamilton, 30, pleaded guilty to a drug conspiracy charge and agreed to forfeit more than $100 million in Bitcoin and several Virginia properties. The court imposed a 40‑year prison sentence and forfeiture order.",
@@ -26,6 +44,23 @@ export const news: NewsBrief[] = [
       "article-898fec",
       "898fec",
       "co-creator-of-empire-market-dark-web-marketplace-sentenced-t"
+    ]
+  },
+  {
+    "slug": "fbi-arrests-founder-of-ransomware-negotiation-firm-26374d",
+    "title": "FBI Arrests Founder of Ransomware Negotiation Firm",
+    "summary": "The FBI arrested the co‑founder of a Canadian cybersecurity firm linked to the ShinyHunters hacking group, which recently exfiltrated sensitive data on thousands of agents. The arrest follows an investigation into the group’s activities and the firm’s alleged involvement.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Krebs on Security",
+    "sourceUrl": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/",
+    "publishedAt": "2026-10-10T00:17:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fbi-arrests-founder-of-ransomware-negotiation-firm",
+      "article-26374d",
+      "26374d"
     ]
   },
   {
@@ -118,24 +153,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "japan-arrests-russian-national-linked-to-qilin-ran-2b2701",
-    "title": "Japan Arrests Russian National Linked to Qilin Ransomware Gang",
-    "summary": "Japan’s National Police Agency confirmed the arrest and extradition of a Russian national accused of involvement with the Qilin ransomware gang to Germany. The move is part of international cooperation to curb ransomware operations.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/japan-germany-ransomware-arrest",
-    "publishedAt": "2026-10-09T18:45:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "japan-arrests-russian-national-linked-to-qilin-ran",
-      "article-2b2701",
-      "2b2701",
-      "japan-arrests-russian-national-linked-to-qilin-ransomware-ga"
-    ]
-  },
-  {
     "slug": "cloudflare-expands-clef-decision-model-with-clef-o-74a125",
     "title": "Cloudflare Expands Clef Decision Model with Clef-omni and Faster Clef",
     "summary": "Cloudflare announced Clef-omni, a multimodal decision model handling audio, video, images, and text in one pipeline. The company also reduced Clef-flash pricing and doubled Clef inference speeds, enhancing AI inference efficiency.",
@@ -151,24 +168,6 @@ export const news: NewsBrief[] = [
       "article-74a125",
       "74a125",
       "cloudflare-expands-clef-decision-model-with-clef-omni-and-fa"
-    ]
-  },
-  {
-    "slug": "fbi-arrests-shinyhunters-suspect-over-jobs-portal-6cacf1",
-    "title": "FBI Arrests ShinyHunters Suspect Over Jobs Portal Breach",
-    "summary": "The FBI has arrested a suspected co-conspirator of the ShinyHunters extortion group, which breached the FBI’s jobs portal in September and stole sensitive data from almost all FBI agents and job applicants. No charges have been publicly released yet.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/fbi-arrests-another-shinyhunters.html",
-    "publishedAt": "2026-10-09T17:45:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fbi-arrests-shinyhunters-suspect-over-jobs-portal",
-      "article-6cacf1",
-      "6cacf1",
-      "fbi-arrests-shinyhunters-suspect-over-jobs-portal-breach"
     ]
   },
   {
@@ -804,24 +803,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "fakegit-how-to-detect-block-17-000-malicious-githu-5396f3",
-    "title": "FakeGit: How to Detect & Block 17,000+ Malicious GitHub Repos",
-    "summary": "The FakeGit campaign uses 17,610 GitHub repositories to deploy SmartLoader and StealC malware. Security teams can identify lures by scanning repository metadata, hunting for known IOCs, and securing credentials to prevent credential theft and malware execution.",
-    "category": "Malware",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/fakegit-malware-github-smartloader-stealc",
-    "publishedAt": "2026-10-09T02:44:08.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fakegit-how-to-detect-block-17-000-malicious-githu",
-      "article-5396f3",
-      "5396f3",
-      "fakegit-how-to-detect-block-17-000-malicious-github-repos"
-    ]
-  },
-  {
     "slug": "microsoft-urges-early-testing-of-post-quantum-cert-1b355d",
     "title": "Microsoft Urges Early Testing of Post‑Quantum Certificate Ecosystems",
     "summary": "Microsoft encourages organizations to begin testing post‑quantum authentication by participating in its PQC TLS Pilot Program. The initiative aims to advance readiness for quantum‑resistant certificates and TLS protocols, helping enterprises prepare for future cryptographic challenges.",
@@ -1415,6 +1396,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "crowdstrike-and-anthropic-provide-ai-tools-for-cri-9fc386",
+    "title": "CrowdStrike and Anthropic Provide AI Tools for Critical Infrastructure Defenders",
+    "summary": "CrowdStrike and Anthropic have partnered to give critical infrastructure defenders AI-powered tools designed to enhance threat detection and response capabilities. The collaboration aims to improve security posture for essential services by leveraging advanced AI analytics.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "CrowdStrike",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-anthropic-critical-infrastructure-defense-program/",
+    "publishedAt": "2026-10-08T05:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "crowdstrike-and-anthropic-provide-ai-tools-for-cri",
+      "article-9fc386",
+      "9fc386",
+      "crowdstrike-and-anthropic-provide-ai-tools-for-critical-infr"
+    ]
+  },
+  {
     "slug": "despite-passkey-knowledge-professionals-still-use-72804b",
     "title": "Despite Passkey Knowledge, Professionals Still Use Passwords",
     "summary": "A 2026 Global State of Authentication survey found that 43% of 1,890 security professionals still rely on usernames and passwords for work accounts, even though 87% are familiar with passkeys. The study highlights a gap between awareness and adoption of modern authentication methods.",
@@ -1536,24 +1535,6 @@ export const news: NewsBrief[] = [
       "article-735c79",
       "735c79",
       "citizen-lab-criticizes-trump-administration-for-pushing-surv"
-    ]
-  },
-  {
-    "slug": "anthropic-reduces-guardrails-for-vetted-defenders-4f93f7",
-    "title": "Anthropic Reduces Guardrails for Vetted Defenders on Advanced Cyber LLMs",
-    "summary": "Anthropic has merged its Project Glasswing into a tiered access program for advanced cyber LLMs such as Opus, Sonnet, and Mythos, reducing guardrails for vetted defenders. The change limits security controls on these models, potentially increasing risk for users relying on the LLMs for threat detection.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/anthropic-vetted-defenders-claude-guardrails",
-    "publishedAt": "2026-10-07T20:51:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "anthropic-reduces-guardrails-for-vetted-defenders",
-      "article-4f93f7",
-      "4f93f7",
-      "anthropic-reduces-guardrails-for-vetted-defenders-on-advance"
     ]
   },
   {
@@ -3911,24 +3892,6 @@ export const news: NewsBrief[] = [
       "ai-identified-vulnerabilities-rapidly-exploited",
       "article-72cbb8",
       "72cbb8"
-    ]
-  },
-  {
-    "slug": "crowdstrike-expands-federal-soc-modernization-with-3f8510",
-    "title": "CrowdStrike Expands Federal SOC Modernization with CISA‑Funded SIEMaaS",
-    "summary": "CrowdStrike has announced an expansion of its federal Security Operations Center modernization program, adding SIEM‑as‑a‑Service (SIEMaaS) capabilities funded by the Cybersecurity and Infrastructure Security Agency (CISA). The move aims to enhance threat detection and response for U.S. federal agencies by providing scalable, cloud‑based security information and event management services.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "CrowdStrike",
-    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-expands-federal-soc-modernization-via-cisa-siemaas/",
-    "publishedAt": "2026-10-01T05:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "crowdstrike-expands-federal-soc-modernization-with",
-      "article-3f8510",
-      "3f8510",
-      "crowdstrike-expands-federal-soc-modernization-with-cisa-fund"
     ]
   },
   {

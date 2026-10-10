@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Oct 2026 01:59:10 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2026 04:18:39 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Claude ClickFix: How to Detect &amp; Block Adception Malvertising</title>
+      <link>https://secubuzz.com/news/claude-clickfix-how-to-detect-block-adception-malv-2f791d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/claude-clickfix-how-to-detect-block-adception-malv-2f791d</guid>
+      <description><![CDATA[Adception malvertising uses Google Ads and Bing redirects to deploy fake Claude ClickFix attacks. The article explains clipboard defense, AMOS hunting, and SOC queries to detect and block these malicious ads. It provides practical steps for security teams to mitigate the threat.]]></description>
+      <pubDate>Sat, 10 Oct 2026 04:14:40 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/claude-clickfix-adception-malvertising-defense">CyberNews AI</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>Co‑creator of Empire Market Dark Web Marketplace Sentenced to 40 Years</title>
       <link>https://secubuzz.com/news/co-creator-of-empire-market-dark-web-marketplace-s-898fec</link>
@@ -14,6 +23,15 @@
       <description><![CDATA[Raheim Hamilton, 30, pleaded guilty to a drug conspiracy charge and agreed to forfeit more than $100 million in Bitcoin and several Virginia properties. The court imposed a 40‑year prison sentence and forfeiture order.]]></description>
       <pubDate>Sat, 10 Oct 2026 00:55:00 GMT</pubDate>
       <source url="https://therecord.media/co-creator-empire-dark-net-market-sentenced">The Record</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>FBI Arrests Founder of Ransomware Negotiation Firm</title>
+      <link>https://secubuzz.com/news/fbi-arrests-founder-of-ransomware-negotiation-firm-26374d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fbi-arrests-founder-of-ransomware-negotiation-firm-26374d</guid>
+      <description><![CDATA[The FBI arrested the co‑founder of a Canadian cybersecurity firm linked to the ShinyHunters hacking group, which recently exfiltrated sensitive data on thousands of agents. The arrest follows an investigation into the group’s activities and the firm’s alleged involvement.]]></description>
+      <pubDate>Sat, 10 Oct 2026 00:17:42 GMT</pubDate>
+      <source url="https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/">Krebs on Security</source>
       <category>Policy</category>
     </item>
     <item>
@@ -62,15 +80,6 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>Japan Arrests Russian National Linked to Qilin Ransomware Gang</title>
-      <link>https://secubuzz.com/news/japan-arrests-russian-national-linked-to-qilin-ran-2b2701</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/japan-arrests-russian-national-linked-to-qilin-ran-2b2701</guid>
-      <description><![CDATA[Japan’s National Police Agency confirmed the arrest and extradition of a Russian national accused of involvement with the Qilin ransomware gang to Germany. The move is part of international cooperation to curb ransomware operations.]]></description>
-      <pubDate>Fri, 09 Oct 2026 18:45:00 GMT</pubDate>
-      <source url="https://therecord.media/japan-germany-ransomware-arrest">The Record</source>
-      <category>Policy</category>
-    </item>
-    <item>
       <title>Cloudflare Expands Clef Decision Model with Clef-omni and Faster Clef</title>
       <link>https://secubuzz.com/news/cloudflare-expands-clef-decision-model-with-clef-o-74a125</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-expands-clef-decision-model-with-clef-o-74a125</guid>
@@ -78,15 +87,6 @@
       <pubDate>Fri, 09 Oct 2026 18:27:34 GMT</pubDate>
       <source url="https://blog.cloudflare.com/clef-faster-cheaper-multimodal/">Cloudflare Security</source>
       <category>Cloud</category>
-    </item>
-    <item>
-      <title>FBI Arrests ShinyHunters Suspect Over Jobs Portal Breach</title>
-      <link>https://secubuzz.com/news/fbi-arrests-shinyhunters-suspect-over-jobs-portal-6cacf1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fbi-arrests-shinyhunters-suspect-over-jobs-portal-6cacf1</guid>
-      <description><![CDATA[The FBI has arrested a suspected co-conspirator of the ShinyHunters extortion group, which breached the FBI’s jobs portal in September and stole sensitive data from almost all FBI agents and job applicants. No charges have been publicly released yet.]]></description>
-      <pubDate>Fri, 09 Oct 2026 17:45:26 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/fbi-arrests-another-shinyhunters.html">The Hacker News</source>
-      <category>Breach</category>
     </item>
     <item>
       <title>AhsayCBS Vulnerabilities Exploited for Webshells and Crypto Mining</title>
@@ -404,15 +404,6 @@
       <category>Ransomware</category>
     </item>
     <item>
-      <title>FakeGit: How to Detect &amp; Block 17,000+ Malicious GitHub Repos</title>
-      <link>https://secubuzz.com/news/fakegit-how-to-detect-block-17-000-malicious-githu-5396f3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fakegit-how-to-detect-block-17-000-malicious-githu-5396f3</guid>
-      <description><![CDATA[The FakeGit campaign uses 17,610 GitHub repositories to deploy SmartLoader and StealC malware. Security teams can identify lures by scanning repository metadata, hunting for known IOCs, and securing credentials to prevent credential theft and malware execution.]]></description>
-      <pubDate>Fri, 09 Oct 2026 02:44:08 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/fakegit-malware-github-smartloader-stealc">CyberNews AI</source>
-      <category>Malware</category>
-    </item>
-    <item>
       <title>Microsoft Urges Early Testing of Post‑Quantum Certificate Ecosystems</title>
       <link>https://secubuzz.com/news/microsoft-urges-early-testing-of-post-quantum-cert-1b355d</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-urges-early-testing-of-post-quantum-cert-1b355d</guid>
@@ -455,6 +446,15 @@
       <description><![CDATA[A ransomware affiliate betrayed its partners by keeping the profits for itself. Meanwhile, an attacker left a server exposed, complete with tools and intrusion traces. Malicious code also appeared in developer packages and extensions, highlighting ongoing security lapses on both sides of the fence.]]></description>
       <pubDate>Thu, 08 Oct 2026 17:58:02 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/threatsday-ransomware-affiliate.html">The Hacker News</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
+      <title>DOJ Charges Ransomware Recovery CEO for Secret Ransom Payments</title>
+      <link>https://secubuzz.com/news/doj-charges-ransomware-recovery-ceo-for-secret-ran-1084e4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/doj-charges-ransomware-recovery-ceo-for-secret-ran-1084e4</guid>
+      <description><![CDATA[The U.S. Department of Justice filed wire‑fraud charges against the owner of a ransomware recovery firm, alleging that he secretly paid ransom demands while overcharging victims. The case highlights legal risks for firms that facilitate ransom payments.]]></description>
+      <pubDate>Thu, 08 Oct 2026 17:00:00 GMT</pubDate>
+      <source url="https://therecord.media/ransomware-recovery-charges-doj">The Record</source>
       <category>Ransomware</category>
     </item>
   </channel>

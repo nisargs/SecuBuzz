@@ -1,5 +1,23 @@
 [
   {
+    "id": "https://cybernewsai.com/blog/claude-clickfix-adception-malvertising-defense",
+    "sourceUrl": "https://cybernewsai.com/blog/claude-clickfix-adception-malvertising-defense",
+    "title": "Claude ClickFix: How to Detect & Block Adception Malvertising",
+    "headline": "Claude ClickFix: How to Detect & Block Adception Malvertising",
+    "summary": "Adception malvertising uses Google Ads and Bing redirects to deploy fake Claude ClickFix attacks. The article explains clipboard defense, AMOS hunting, and SOC queries to detect and block these malicious ads. It provides practical steps for security teams to mitigate the threat.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-10-10T04:14:40.000Z",
+    "url": "https://cybernewsai.com/blog/claude-clickfix-adception-malvertising-defense",
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/fakegit-malware-github-smartloader-stealc"
+      }
+    ]
+  },
+  {
     "id": "https://therecord.media/co-creator-empire-dark-net-market-sentenced",
     "sourceUrl": "https://therecord.media/co-creator-empire-dark-net-market-sentenced",
     "title": "Co‑creator of Empire Market Dark Web Marketplace Sentenced to 40 Years",
@@ -14,6 +32,28 @@
       {
         "source": "BleepingComputer",
         "sourceUrl": "https://www.bleepingcomputer.com/news/security/owner-of-empire-cybercrime-market-gets-40-years-in-prison/"
+      }
+    ]
+  },
+  {
+    "id": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/",
+    "sourceUrl": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/",
+    "title": "FBI Arrests Founder of Ransomware Negotiation Firm",
+    "headline": "FBI Arrests Founder of Ransomware Negotiation Firm",
+    "summary": "The FBI arrested the co‑founder of a Canadian cybersecurity firm linked to the ShinyHunters hacking group, which recently exfiltrated sensitive data on thousands of agents. The arrest follows an investigation into the group’s activities and the firm’s alleged involvement.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Krebs on Security",
+    "publishedAt": "2026-10-10T00:17:42.000Z",
+    "url": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/",
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/japan-germany-ransomware-arrest"
+      },
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/fbi-arrests-another-shinyhunters.html"
       }
     ]
   },
@@ -83,28 +123,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://therecord.media/japan-germany-ransomware-arrest",
-    "sourceUrl": "https://therecord.media/japan-germany-ransomware-arrest",
-    "title": "Japan Arrests Russian National Linked to Qilin Ransomware Gang",
-    "headline": "Japan Arrests Russian National Linked to Qilin Ransomware Gang",
-    "summary": "Japan’s National Police Agency confirmed the arrest and extradition of a Russian national accused of involvement with the Qilin ransomware gang to Germany. The move is part of international cooperation to curb ransomware operations.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Record",
-    "publishedAt": "2026-10-09T18:45:00.000Z",
-    "url": "https://therecord.media/japan-germany-ransomware-arrest",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-arrests-another-suspected-shinyhunters-hacker-after-agency-breach/"
-      },
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/leaked-chats-show-russian-extortion-gang-sending-agents-to-law-firms"
-      }
-    ]
-  },
-  {
     "id": "https://blog.cloudflare.com/clef-faster-cheaper-multimodal/",
     "sourceUrl": "https://blog.cloudflare.com/clef-faster-cheaper-multimodal/",
     "title": "Cloudflare Expands Clef Decision Model with Clef-omni and Faster Clef",
@@ -116,28 +134,6 @@
     "publishedAt": "2026-10-09T18:27:34.000Z",
     "url": "https://blog.cloudflare.com/clef-faster-cheaper-multimodal/",
     "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/fbi-arrests-another-shinyhunters.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/fbi-arrests-another-shinyhunters.html",
-    "title": "FBI Arrests ShinyHunters Suspect Over Jobs Portal Breach",
-    "headline": "FBI Arrests ShinyHunters Suspect Over Jobs Portal Breach",
-    "summary": "The FBI has arrested a suspected co-conspirator of the ShinyHunters extortion group, which breached the FBI’s jobs portal in September and stole sensitive data from almost all FBI agents and job applicants. No charges have been publicly released yet.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-09T17:45:26.000Z",
-    "url": "https://thehackernews.com/2026/10/fbi-arrests-another-shinyhunters.html",
-    "additionalSources": [
-      {
-        "source": "Dark Reading",
-        "sourceUrl": "https://www.darkreading.com/identity-access-management-security/fbi-shinyhunters-claims-hack"
-      },
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/fbi-says-china-linked-hackers-ran.html"
-      }
-    ]
   },
   {
     "id": "https://www.bleepingcomputer.com/news/security/unpatched-ahsaycbs-flaws-exploited-to-deploy-webshells-mine-crypto/",
@@ -702,28 +698,6 @@
     ]
   },
   {
-    "id": "https://cybernewsai.com/blog/fakegit-malware-github-smartloader-stealc",
-    "sourceUrl": "https://cybernewsai.com/blog/fakegit-malware-github-smartloader-stealc",
-    "title": "FakeGit: How to Detect & Block 17,000+ Malicious GitHub Repos",
-    "headline": "FakeGit: How to Detect & Block 17,000+ Malicious GitHub Repos",
-    "summary": "The FakeGit campaign uses 17,610 GitHub repositories to deploy SmartLoader and StealC malware. Security teams can identify lures by scanning repository metadata, hunting for known IOCs, and securing credentials to prevent credential theft and malware execution.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-10-09T02:44:08.000Z",
-    "url": "https://cybernewsai.com/blog/fakegit-malware-github-smartloader-stealc",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/fakegit-malware-campaign-returns-with-17-610-malicious-github-repos/"
-      },
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/github-push-protection-modernbert/"
-      }
-    ]
-  },
-  {
     "id": "https://www.microsoft.com/en-us/security/blog/2026/10/08/post-quantum-authentication-why-organizations-should-start-testing-certificate-ecosystems-now/",
     "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/08/post-quantum-authentication-why-organizations-should-start-testing-certificate-ecosystems-now/",
     "title": "Microsoft Urges Early Testing of Post‑Quantum Certificate Ecosystems",
@@ -1233,6 +1207,28 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.crowdstrike.com/en-us/blog/crowdstrike-anthropic-critical-infrastructure-defense-program/",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-anthropic-critical-infrastructure-defense-program/",
+    "title": "CrowdStrike and Anthropic Provide AI Tools for Critical Infrastructure Defenders",
+    "headline": "CrowdStrike and Anthropic Provide AI Tools for Critical Infrastructure Defenders",
+    "summary": "CrowdStrike and Anthropic have partnered to give critical infrastructure defenders AI-powered tools designed to enhance threat detection and response capabilities. The collaboration aims to improve security posture for essential services by leveraging advanced AI analytics.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "CrowdStrike",
+    "publishedAt": "2026-10-08T05:00:00.000Z",
+    "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-anthropic-critical-infrastructure-defense-program/",
+    "additionalSources": [
+      {
+        "source": "Dark Reading",
+        "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/anthropic-vetted-defenders-claude-guardrails"
+      },
+      {
+        "source": "CrowdStrike",
+        "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-expands-federal-soc-modernization-via-cisa-siemaas/"
+      }
+    ]
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/10/08/passkey-adoption-typing-passwords/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/passkey-adoption-typing-passwords/",
     "title": "Despite Passkey Knowledge, Professionals Still Use Passwords",
@@ -1340,19 +1336,6 @@
     "source": "Dark Reading",
     "publishedAt": "2026-10-07T21:25:13.000Z",
     "url": "https://www.darkreading.com/cyber-risk/citizen-lab-slams-trump-administration-techno-fascist-executives",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/vulnerabilities-threats/anthropic-vetted-defenders-claude-guardrails",
-    "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/anthropic-vetted-defenders-claude-guardrails",
-    "title": "Anthropic Reduces Guardrails for Vetted Defenders on Advanced Cyber LLMs",
-    "headline": "Anthropic Reduces Guardrails for Vetted Defenders on Advanced Cyber LLMs",
-    "summary": "Anthropic has merged its Project Glasswing into a tiered access program for advanced cyber LLMs such as Opus, Sonnet, and Mythos, reducing guardrails for vetted defenders. The change limits security controls on these models, potentially increasing risk for users relying on the LLMs for threat detection.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-07T20:51:25.000Z",
-    "url": "https://www.darkreading.com/vulnerabilities-threats/anthropic-vetted-defenders-claude-guardrails",
     "additionalSources": []
   },
   {
@@ -3285,24 +3268,6 @@
     "publishedAt": "2026-10-01T05:00:35.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/01/google-ai-discovered-vulnerabilities-remote-code-execution/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.crowdstrike.com/en-us/blog/crowdstrike-expands-federal-soc-modernization-via-cisa-siemaas/",
-    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-expands-federal-soc-modernization-via-cisa-siemaas/",
-    "title": "CrowdStrike Expands Federal SOC Modernization with CISA‑Funded SIEMaaS",
-    "headline": "CrowdStrike Expands Federal SOC Modernization with CISA‑Funded SIEMaaS",
-    "summary": "CrowdStrike has announced an expansion of its federal Security Operations Center modernization program, adding SIEM‑as‑a‑Service (SIEMaaS) capabilities funded by the Cybersecurity and Infrastructure Security Agency (CISA). The move aims to enhance threat detection and response for U.S. federal agencies by providing scalable, cloud‑based security information and event management services.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "CrowdStrike",
-    "publishedAt": "2026-10-01T05:00:00.000Z",
-    "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-expands-federal-soc-modernization-via-cisa-siemaas/",
-    "additionalSources": [
-      {
-        "source": "CrowdStrike",
-        "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-nvidia-extend-security-across-ai-stack/"
-      }
-    ]
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/10/01/employment-scam-victims-research/",
