@@ -1,83 +1,132 @@
-# Google Play Store Listing Copy for SecuBuzz
+# Google Play Store Listing Copy & ASO Master Guide for SecuBuzz
 
-Use this guide to copy-paste your listing details directly into the Google Play Console.
+Use this guide to copy-paste your optimized ASO listing details directly into the Google Play Console under **Grow > Store presence > Main store listing**.
 
 ---
 
-## 1. App Title & Descriptions
+## 1. App Title & Descriptions (Algorithm Indexing Engine)
 
 ### App Name (Max 30 characters)
 ```text
 SecuBuzz: Cybersecurity News
 ```
-*(Exact length: 28 characters)*
+*(Exact length: 28 characters — targets highest volume organic search query "Cybersecurity News")*
 
----
-
-### Short Description (Max 80 characters)
+**Alternative High-Intent Title:**
 ```text
-Concise 60-word cybersecurity briefs, threat intelligence & vulnerability alerts
+SecuBuzz: Cyber Threat Radar
 ```
-*(Exact length: 80 characters)*
+*(Exact length: 28 characters — targets threat intelligence / vulnerability radar intent)*
 
 ---
 
-### Full Description (Up to 4,000 characters)
+### Short Description (Max 80 characters — High Algorithmic Weight)
 ```text
-SecuBuzz is the modern, high-signal cybersecurity news reader designed for security analysts, CISOs, penetration testers, IT professionals, and privacy enthusiasts who need to stay ahead of threats without information overload.
+60-word cybersecurity news, CISA KEV zero-day radar & EPSS threat intelligence
+```
+*(Exact length: 78 characters)*
 
-We aggregate critical stories from top global intelligence sources, distilling complex breach reports, malware campaigns, and CVE vulnerabilities into clean, actionable 60-word briefs.
+**Why this converts:** Naturally packs in 6 primary search keywords:
+1. `cybersecurity news`
+2. `CISA KEV`
+3. `zero-day`
+4. `radar`
+5. `EPSS`
+6. `threat intelligence`
 
-⚡ WHY SECUBUZZ?
-• 60-Word Security Briefs: Get all essential facts in 30 seconds. No fluff, no clickbait.
-• Instant Threat Severity: Every story is categorized with severity indicators (Low, Medium, High, Critical) to help you prioritize your day.
-• Curated Top Sources: Intelligence gathered from trusted publishers including The Hacker News, BleepingComputer, CISA Advisories, SecurityWeek, Dark Reading, Help Net Security, The Record, and CyberNews AI.
-• One-Tap Deep Dive: Want the technical payload analysis or patch details? Tap "Read Original" to jump straight to the source publication.
-• Local Timezone Intelligence: All publication timestamps are automatically converted to your local time zone so you always know exactly how fresh an alert is.
-• Offline Bookmarks: Save critical vulnerability briefs and threat advisories to your local device for offline review or incident documentation.
-• Smart Background Refresh: Returning to the app or tapping a breaking notification automatically pulls the freshest feed without waiting.
+---
 
-🛡️ NO TRACKING. NO ACCOUNT REQUIRED.
-SecuBuzz respects user privacy as deeply as security:
-• Zero tracking or invasive behavioral telemetry.
-• No account creation or password required to browse.
-• Your saved articles stay strictly on your device.
-• Access full threat intelligence on mobile or directly at https://secubuzz.com.
+### Full Description (Optimized for Keyword Density & Conversion)
+```text
+SecuBuzz is the high-signal, zero-fluff cybersecurity threat intelligence assistant built for security analysts, CISOs, sysadmins, penetration testers, and developers who need to stay ahead of breaches without wading through 40-page advisory PDFs.
 
-Stay ahead of zero-days, ransomware syndicates, and supply chain vulnerabilities. Download SecuBuzz today.
+We distill breaking cyber disclosures, malware campaigns, and zero-day vulnerabilities from 20+ verified intelligence authorities into clean, actionable 60-word briefs refreshed every 4 hours.
+
+⚡ 60-WORD CYBERSECURITY BRIEFS
+• Get essential threat mechanics and impact in under 30 seconds.
+• Zero marketing fluff, zero clickbait, zero AI filler words.
+• Direct 1-tap links to original source reporting and vendor bulletins.
+• Severity telemetry with objective CVSS classification (Critical, High, Medium, Low).
+
+🎯 LIVE CISA KEV ZERO-DAY RADAR
+• Real-time catalog of Known Exploited Vulnerabilities (KEV) actively weaponized in the wild.
+• Track federal BOD 22-01 remediation deadlines and compliance mandates.
+• Filter vulnerabilities by vendor, product, and CVE identifier.
+
+📊 EPSS EXPLOIT PROBABILITY SCORING
+• Daily exploit likelihood telemetry powered by FIRST.org Exploit Prediction Scoring System (EPSS).
+• View percentile rankings and real-world exploitation probabilities alongside CVSS scores.
+• Distinguish theoretical bugs from weaponized vulnerabilities actively exploited by threat actors.
+
+📋 1-TAP INCIDENT REPORTING
+• Instantly generate clean, markdown-formatted incident briefs.
+• 1-tap copy to clipboard ready for corporate communication: Slack, Microsoft Teams, Jira, or email.
+• Keep your SOC team and executive stakeholders informed in seconds.
+
+🛡️ 100% PRIVATE & ZERO TRACKING
+SecuBuzz respects user privacy as strictly as cybersecurity:
+• No account registration, passwords, or emails required.
+• Zero third-party analytics trackers, cookies, or behavioral surveillance.
+• Bookmarks and reading preferences remain 100% on your local device.
+• Free to use on Android and Web (https://secubuzz.com).
+
+📡 CURATED THREAT INTELLIGENCE SOURCES
+Continuously aggregated from leading cybersecurity authorities including:
+• The Hacker News
+• BleepingComputer
+• CISA Cybersecurity Advisories
+• SecurityWeek
+• Dark Reading
+• The Record by Recorded Future
+• Help Net Security
+• Krebs on Security
+• SANS Internet Storm Center
+
+Triage threats at machine speed. Stay ahead of zero-days, ransomware syndicates, and supply chain vulnerabilities. Download SecuBuzz today.
 ```
 
 ---
 
 ## 2. Store Categorization & Tags
 
+In **Store presence > Store settings > Category and tags**:
+
 - **Application Category**: `News & Magazines`
-- **Secondary Category / Tags**:
-  - `Cybersecurity`
-  - `Technology`
-  - `Information Security`
-  - `News Reader`
-- **Content Rating**: Everyone (Mature news content should be rated via the Google Play IARC questionnaire — generally rated `Everyone / PEGI 3 / Low Maturity` because it is technical journalism without violence or adult content).
+- **Recommended 5 Tags**:
+  1. `News & magazines`
+  2. `Technology news`
+  3. `Security`
+  4. `Productivity`
+  5. `Tools`
 
 ---
 
-## 3. Store Visual Assets
+## 3. Screenshot Visual Conversion Optimization (CRO)
 
-| Asset | Specifications | Status in Repo |
+Google Play displays the first 3 screenshots side-by-side in search results. To maximize install conversion, your screenshot gallery should feature bold benefit captions above the UI:
+
+| Slot | Caption / Benefit Header | Screen Featured |
 | :--- | :--- | :--- |
-| **App Icon** | 512 × 512 px PNG, 32-bit color, max 1MB | `assets/icon.png` |
-| **Feature Graphic** | 1024 × 500 px PNG, RGB, max 15MB | `assets/feature-graphic.png` |
-| **Screenshots (6 Phone Assets)** | 1080 × 1920 px PNG (Play Store spec) | `assets/store-screenshots/` (01-feed to 06-epss) |
+| **01 (Hero Hook)** | **60-Word Cybersecurity Briefs**<br>Morning threat triage in 30 seconds. Zero fluff. | Headlines Feed (`assets/store-screenshots/01-feed.png`) |
+| **02 (Differentiator)** | **CISA KEV Zero-Day Radar**<br>Active in-the-wild exploits & federal deadlines. | CISA Advisories (`assets/store-screenshots/02-advisories.png`) |
+| **03 (Advanced Intel)** | **EPSS Exploit Probabilities**<br>Predict real-world weaponization with FIRST.org data. | EPSS Advisory View (`assets/store-screenshots/06-epss.png`) |
+| **04 (Productivity)** | **1-Tap Incident Reports**<br>Copy formatted Markdown for Slack, Teams & Jira. | Threat Detail / Share Sheet |
+| **05 (Trust / Security)** | **100% Private · Zero Tracking**<br>No accounts. No sign-up. 100% on-device bookmarks. | Settings / Bookmarks (`assets/store-screenshots/04-bookmarks.png`) |
 
 ---
 
-## 4. Contact & Legal URLs
+## 4. International Localization Strategy (Store Metadata Only)
 
-- **Official Website**:
-  `https://secubuzz.com`
-- **Privacy Policy URL**:
-  `https://secubuzz.com/privacy` (or `https://secubuzz-push.secubuzz.workers.dev/privacy`)
-- **Developer Support Email**:
-  `support@secubuzz.com`
-- **Developer / Organization Name**:
-  `MiSo Labs`
+Without translating the app code (preserving cybersecurity English technical terms), you can localize the store listing in Google Play Console under **Store presence > Main store listing > Manage translations**:
+
+### German (DE) - Top European Cybersecurity Market
+* **Title**: `SecuBuzz: IT-Sicherheit & News`
+* **Short Description**: `60-Wort Cybersecurity News, CISA KEV Zero-Day Radar & EPSS Threat Intelligence`
+
+### French (FR)
+* **Title**: `SecuBuzz: Cybersécurité News`
+* **Short Description**: `Actualités cybersécurité en 60 mots, radar zero-day CISA KEV et alertes EPSS`
+
+### Spanish (ES)
+* **Title**: `SecuBuzz: Ciberseguridad News`
+* **Short Description**: `Noticias de ciberseguridad en 60 palabras, radar zero-day CISA KEV y EPSS`
