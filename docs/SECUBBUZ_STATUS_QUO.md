@@ -334,4 +334,29 @@ node scripts/cf_analytics.mjs
 2. **No Unbounded Worker Scraping**: Feeds must only be ingested via the scheduled cron every 4 hours (`scripts/ingest.mjs`), never in ad-hoc synchronous HTTP worker requests.
 3. **Edge Bot Drop**: Keep the regex-based bot rejection at the entrance of `env.ASSETS` so malicious scanners never trigger expensive database or R2 subrequests.
 
+---
+
+### 5. API Security Matrix & Telemetry Execution Reference
+
+#### Private Endpoints (Admin-Protected, HTTP 401):
+* `GET /api/analytics/install-clicks`: Real-time install click telemetry, unique visitors, repeat clickers, and breakdown by source/country.
+* `GET /api/push-tokens`: Internal Expo push token registry.
+* `POST /api/push-tokens/deactivate`: Deactivation of stale/invalid device tokens.
+* `GET /api/notifications/sent` & `POST /api/notifications/sent`: Broadcast tracking & deduplication.
+* `POST /api/trigger-ingest`: Emergency workflow trigger for GitHub Actions.
+
+#### Public Endpoints (HTTP 200):
+* `GET /api/news` & `GET /feed.json`: Ingested 60-word cybersecurity news briefs for mobile & web.
+* `GET /api/advisories`: 1,789 active CVE security advisories (CISA KEV + GitHub Security Advisory Database).
+* `GET /api/epss?cve={CVE-ID}`: FIRST.org EPSS exploit probability proxy (edge-cached 24h).
+* `GET /api/cve-metrics?cve={CVE-ID}`: NIST NVD CVSS vectors proxy (edge-cached 24h).
+* `POST /api/push-tokens`: Safe write-only device registration on app install.
+* `GET /health`: Watchdog uptime endpoint reporting feed age & R2 status.
+
+#### Direct CLI Telemetry Protocol:
+* When asked for user traffic, install clicks, or repeat visitors:
+  * Run `node scripts/track_repeat_users.mjs` or `npm run analytics` directly in the CLI.
+  * Queries Cloudflare D1 via the Cloudflare Management API using the developer's local Wrangler OAuth session without needing manual secrets.
+
+
 

@@ -326,9 +326,9 @@ const styles = StyleSheet.create({
   publicationMeta: {
     color: colors.textSecondary,
     fontFamily: 'Exo_400Regular',
-    fontSize: 13,
-    lineHeight: 20,
-    marginTop: 5,
+    fontSize: 12.5,
+    lineHeight: 18,
+    marginTop: 6,
   },
 
   headline: {
@@ -361,7 +361,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     left: spacing.lg,
     right: spacing.lg,
-    bottom: 10,
+    bottom: 8,
     backgroundColor:
       colors.background,
   },
@@ -372,14 +372,14 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     borderTopWidth: 1,
     borderTopColor: colors.border,
-    paddingTop: 9,
+    paddingVertical: 12,
   },
 
   readMoreText: {
     color: BLUE,
     fontFamily: 'Exo_600SemiBold',
-    fontSize: 11,
-    letterSpacing: 1.05,
+    fontSize: 12,
+    letterSpacing: 0.9,
     flex: 1,
     paddingRight: 10,
   },

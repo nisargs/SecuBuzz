@@ -102,5 +102,34 @@
 - **Why:** GitHub Actions (`ingest.yml`) runs on a cron every 4 hours and automatically commits fresh threat intelligence feeds and RSS data directly to `origin/main`.
 - **Consequence:** Pushing without pulling first causes non-fast-forward push rejections and messy merge conflicts on `feed.json` and `rss.xml`. Always pull first.
 
+## 11. API Classification, Telemetry Routines & Inventory Counts (Permanent Record)
+- **Private / Admin-Protected Endpoints (HTTP 401 Unauthorized if unauthenticated):**
+  - `GET /api/analytics/install-clicks`: Real-time install button click telemetry, unique visitors, repeat clickers, and breakdown by source/country.
+  - `GET /api/push-tokens`: Internal Expo push token registry.
+  - `POST /api/push-tokens/deactivate`: Deactivation of stale/invalid device tokens.
+  - `GET /api/notifications/sent` & `POST /api/notifications/sent`: Broadcast tracking & deduplication.
+  - `POST /api/trigger-ingest`: Emergency workflow trigger for GitHub Actions.
+  - *Protection mechanism*: Enforced by `isAuthorized(request, env)` checking `PUSH_ADMIN_SECRET` / `ADMIN_KEY` via `Authorization: Bearer <secret>`, `x-admin-key: <secret>`, or `?secret=<secret>`.
+- **Public / Unauthenticated Endpoints (HTTP 200 OK):**
+  - `GET /api/news` & `GET /feed.json`: Ingested 60-word cybersecurity news briefs for mobile & web (cached 300s).
+  - `GET /api/advisories`: 1,789 active CVE security advisories (CISA KEV + GitHub Security Advisory Database).
+  - `GET /api/epss?cve={CVE-ID}`: FIRST.org EPSS exploit probability proxy (edge-cached 24h).
+  - `GET /api/cve-metrics?cve={CVE-ID}`: NIST NVD CVSS vectors proxy (edge-cached 24h).
+  - `POST /api/push-tokens`: Safe write-only device registration on app install (accepts token, never returns any stored token data).
+  - `GET /health`: Watchdog uptime endpoint reporting feed age & R2 status for external monitors (HetrixTools).
+  - *Probes & Unknown `/api/*` Routes*: Always return `404 API endpoint not found`.
+- **Telemetry & Count Inquiries Protocol (Zero-Fumble Responsibility):**
+  - When the user asks for traffic, install counts, or repeat visitor metrics:
+    - **NEVER** ask the user for secrets, API keys, or credentials.
+    - Run `node scripts/track_repeat_users.mjs` or `npm run analytics` directly in the shell. These scripts query Cloudflare D1 via the Cloudflare Management API using the developer's local Wrangler OAuth session.
+- **Authoritative Inventory Counts:**
+  - **Advisories count:** Exactly **1,789 active advisories** (CISA KEV ~1,530 + GitHub Advisories ~259). Kept strictly consistent across mobile app (`1,789 active`) and website (`1,789 active advisories`).
+  - **News feed count:** Up to **250 articles** (~5–7 days of rolling intelligence).
+- **100% Free Tier ($0.00 Cost Guarantee):**
+  - Groq AI: Free tier ceiling is 8,000 TPM, 30 RPM, 14,400 RPD. Ingestion runs every 4 hours, batching 2 articles with a 5s backoff and TPM window reset detection. Adding feeds or increasing feed size must respect this ceiling and never incur costs.
+  - Cloudflare: Worker (100k req/day free), R2 (10GB / 1M writes free), D1 (5M reads / 100k writes free).
+  - GitHub Actions: 2,000 runner minutes/month free (~360 min currently used).
+
+
 
 
