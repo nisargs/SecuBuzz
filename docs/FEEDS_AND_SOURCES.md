@@ -5,7 +5,7 @@ This document provides a single source of truth for all active data feeds, secur
 ---
 
 ## 1. Active News Feeds (Briefs Tab)
-These 20 curated feeds are ingested every 4 hours by `scripts/ingest.mjs`. Each raw item is filtered, deduplicated, and converted by Groq AI (`llama-3.3-70b-versatile`) into concise, 60-word security briefs classified by Threat Severity (`CRITICAL`, `HIGH`, `MEDIUM`, `LOW`) and Category.
+These 26 curated feeds are ingested every 2 hours by `scripts/ingest.mjs` running on GitHub Actions (`cron: "17 */2 * * *"`). Each raw item is filtered, deduplicated, and converted by dual-engine AI (Groq `openai/gpt-oss-20b` with automated fallback to Google Gemini `gemini-2.5-flash`) into concise, 60-word security briefs classified by Threat Severity (`CRITICAL`, `HIGH`, `MEDIUM`, `LOW`) and Category.
 
 | # | Source Name | Feed URL | Primary Focus |
 |---|---|---|---|
@@ -29,6 +29,12 @@ These 20 curated feeds are ingested every 4 hours by `scripts/ingest.mjs`. Each 
 | **18** | **The DFIR Report** | `https://thedfirreport.com/feed/` | Real-world intrusion case studies, forensic timelines |
 | **19** | **Wiz Research** | `https://www.wiz.io/blog/rss.xml` | Cloud infrastructure vulnerabilities (AWS, GCP, Azure) |
 | **20** | **Cloudflare Security** | `https://blog.cloudflare.com/rss/` | DDoS trends, web application firewalls, edge security |
+| **21** | **Cisco Talos** | `https://blog.talosintelligence.com/rss/` | Nation-state campaigns, malware IOCs, exploit telemetry |
+| **22** | **Trend Micro Research** | `https://feeds.feedburner.com/TrendMicroResearch` | Vulnerability research, rootkit/ransomware investigations |
+| **23** | **SentinelOne** | `https://www.sentinelone.com/blog/feed/` | Endpoint threat research, nation-state actor profiles |
+| **24** | **Schneier on Security** | `https://www.schneier.com/feed/atom/` | Cryptography, privacy, and strategic security policy |
+| **25** | **Malwarebytes Labs** | `https://www.malwarebytes.com/blog/feed/index.xml` | Threat intelligence, malicious infrastructure tracking |
+| **26** | **ESET WeLiveSecurity** | `https://www.welivesecurity.com/en/rss/feed/` | Global APT analysis, spyware campaigns, wiper malware |
 
 ---
 

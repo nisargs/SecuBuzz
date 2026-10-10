@@ -26,24 +26,31 @@ const GROQ_API_URL =
 
 const GROQ_API_KEY = process.env.GROQ_API_KEY;
 
-const AI_MODEL = "openai/gpt-oss-20b";
+const GROQ_MODEL = process.env.GROQ_MODEL || "openai/gpt-oss-20b";
+
+const GEMINI_API_URL =
+  "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions";
+
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+
+const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-2.5-flash";
 
 /*
  * ---------------------------------------------------------------------------
  * INGESTION CONFIGURATION
  * ---------------------------------------------------------------------------
  *
- * We deliberately keep this conservative because the current Groq limit
- * for this model is 8,000 tokens per minute on the free plan.
+ * Expanded throughput with resilient dual-engine Groq + Gemini AI fallback.
+ * Groq free tier limit is 8,000 TPM; Gemini free tier offers 1,000,000 TPM.
  */
 
 const ARTICLES_PER_AI_BATCH = 2;
 
-const MAX_NEW_CANDIDATES = 16;
+const MAX_NEW_CANDIDATES = 24;
 
 const ITEMS_PER_FEED = 10;
 
-const MAX_FEED_ARTICLES = 250;
+const MAX_FEED_ARTICLES = 350;
 
 const DESCRIPTION_MAX_LENGTH = 900;
 
@@ -158,15 +165,39 @@ const FEEDS = [
     name: "Cloudflare Security",
     url: "https://blog.cloudflare.com/rss/",
   },
+  {
+    name: "Cisco Talos",
+    url: "https://blog.talosintelligence.com/rss/",
+  },
+  {
+    name: "Trend Micro Research",
+    url: "https://feeds.feedburner.com/TrendMicroResearch",
+  },
+  {
+    name: "SentinelOne",
+    url: "https://www.sentinelone.com/blog/feed/",
+  },
+  {
+    name: "Schneier on Security",
+    url: "https://www.schneier.com/feed/atom/",
+  },
+  {
+    name: "Malwarebytes Labs",
+    url: "https://www.malwarebytes.com/blog/feed/index.xml",
+  },
+  {
+    name: "ESET WeLiveSecurity",
+    url: "https://www.welivesecurity.com/en/rss/feed/",
+  },
 ];
 
 // -----------------------------------------------------------------------------
 // VALIDATION
 // -----------------------------------------------------------------------------
 
-if (!GROQ_API_KEY) {
+if (!GROQ_API_KEY && !GEMINI_API_KEY) {
   throw new Error(
-    "Missing GROQ_API_KEY environment variable.",
+    "Missing AI API key: Please set GROQ_API_KEY or GEMINI_API_KEY in the environment.",
   );
 }
 
@@ -1063,7 +1094,7 @@ async function requestGroq(
           },
 
           body: JSON.stringify({
-            model: AI_MODEL,
+            model: GROQ_MODEL,
 
             messages: [
               {
@@ -1376,6 +1407,105 @@ async function requestGroq(
 }
 
 // -----------------------------------------------------------------------------
+// GEMINI REQUEST (Resilient $0.00 Backup Engine)
+// -----------------------------------------------------------------------------
+
+async function requestGemini(candidates) {
+  if (!GEMINI_API_KEY) {
+    throw new Error("GEMINI_API_KEY is not configured.");
+  }
+
+  const prompt = buildBatchPrompt(candidates);
+  console.log(`Sending batch to Gemini AI fallback (${GEMINI_MODEL})...`);
+
+  const response = await fetch(GEMINI_API_URL, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${GEMINI_API_KEY}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      model: GEMINI_MODEL,
+      messages: [
+        {
+          role: "system",
+          content:
+            "You are a precise cybersecurity news editor. Follow the requested JSON format exactly. Do not provide markdown code blocks, explanations, or reasoning.",
+        },
+        {
+          role: "user",
+          content: prompt,
+        },
+      ],
+      response_format: { type: "json_object" },
+      temperature: 0.2,
+      max_completion_tokens: MAX_COMPLETION_TOKENS,
+    }),
+  });
+
+  const responseText = await response.text();
+  let payload = null;
+
+  try {
+    payload = JSON.parse(responseText);
+  } catch {
+    throw new Error(
+      `Gemini returned non-JSON HTTP response: ${truncateText(responseText, 500)}`,
+    );
+  }
+
+  if (!response.ok) {
+    throw new Error(
+      payload?.error?.message ||
+        `Gemini request failed with HTTP ${response.status}`,
+    );
+  }
+
+  const choice = payload?.choices?.[0];
+  const content = choice?.message?.content || "";
+  if (!content.trim()) {
+    console.log("Gemini returned an empty content response.");
+    return [];
+  }
+
+  const parsed = safeJsonParse(content);
+  if (!parsed) {
+    throw new Error("Could not parse Gemini content as JSON.");
+  }
+
+  const articles = extractArticleArray(parsed);
+  console.log(`Gemini returned ${articles.length} article results.`);
+
+  await sleep(1500);
+  return articles;
+}
+
+// -----------------------------------------------------------------------------
+// UNIFIED RESILIENT AI REQUEST DISPATCHER
+// -----------------------------------------------------------------------------
+
+async function requestAi(candidates) {
+  if (GROQ_API_KEY) {
+    try {
+      return await requestGroq(candidates);
+    } catch (groqError) {
+      console.warn(`Groq primary batch attempt failed: ${groqError.message}`);
+      if (GEMINI_API_KEY) {
+        console.log("Automatically switching to Gemini AI backup engine...");
+        return await requestGemini(candidates);
+      }
+      throw groqError;
+    }
+  } else if (GEMINI_API_KEY) {
+    return await requestGemini(candidates);
+  } else {
+    throw new Error(
+      "No AI API key found (neither GROQ_API_KEY nor GEMINI_API_KEY).",
+    );
+  }
+}
+
+// -----------------------------------------------------------------------------
 // LOAD EXISTING DATA
 // -----------------------------------------------------------------------------
 
@@ -1420,8 +1550,14 @@ console.log(
 );
 
 console.log(
-  `AI model: ${AI_MODEL}`,
+  `Primary AI engine: ${GROQ_API_KEY ? `Groq (${GROQ_MODEL})` : "None"}`,
 );
+
+if (GEMINI_API_KEY) {
+  console.log(
+    `Backup AI engine: Gemini (${GEMINI_MODEL})`,
+  );
+}
 
 console.log(
   `AI batch size: ${ARTICLES_PER_AI_BATCH}`,
@@ -1665,12 +1801,12 @@ for (
 
   try {
     rawResults =
-      await requestGroq(
+      await requestAi(
         indexedBatch,
       );
   } catch (error) {
     console.error(
-      "Groq batch failed:",
+      "AI summarization batch failed:",
       error instanceof Error
         ? error.message
         : error,

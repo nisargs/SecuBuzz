@@ -30,7 +30,7 @@
   - Privacy Policy: `https://secubuzz.com/privacy`
   - Account Deletion: `https://secubuzz.com/account-deletion`
   - Both URLs and in-app screens (`privacy.tsx`, `data-privacy.tsx`) explicitly declare the app name **"SecuBuzz"** and developer **"MiSo Labs"**.
-- **Feed System:** `scripts/ingest.mjs` retains up to 250 articles (~5–7 days of security intelligence), scheduled every 4 hours via Worker cron and GitHub Actions.
+- **Feed System:** `scripts/ingest.mjs` retains up to 350 articles (~7–10 days of security intelligence across 26 curated sources), scheduled every 2 hours via GitHub Actions (`cron: "17 */2 * * *"`). Powered by resilient dual-engine AI (Groq `openai/gpt-oss-20b` + Google Gemini `gemini-2.5-flash` fallback).
 - **Feed Resilience & Watchdog System (Zero-Silent-Failure Mandate):**
   - **Read-Only Invariant:** `scripts/sync_website_data.mjs` is strictly read-only on `feed.json` and must NEVER write or overwrite `feed.json`.
   - **In-Pipeline Gate (`scripts/verify_feed_freshness.mjs`):** Runs in `.github/workflows/ingest.yml` before R2 upload. Asserts >= 50 articles and newest story <= 14h old; fails CI loudly if stale.
@@ -124,11 +124,11 @@
     - Run `node scripts/track_repeat_users.mjs` or `npm run analytics` directly in the shell. These scripts query Cloudflare D1 via the Cloudflare Management API using the developer's local Wrangler OAuth session.
 - **Authoritative Inventory Counts:**
   - **Advisories count:** Exactly **1,789 active advisories** (CISA KEV ~1,530 + GitHub Advisories ~259). Kept strictly consistent across mobile app (`1,789 active`) and website (`1,789 active advisories`).
-  - **News feed count:** Up to **250 articles** (~5–7 days of rolling intelligence).
+  - **News feed count:** Up to **350 articles** (~7–10 days of rolling intelligence across 26 verified threat feeds).
 - **100% Free Tier ($0.00 Cost Guarantee):**
-  - Groq AI: Free tier ceiling is 8,000 TPM, 30 RPM, 14,400 RPD. Ingestion runs every 4 hours, batching 2 articles with a 5s backoff and TPM window reset detection. Adding feeds or increasing feed size must respect this ceiling and never incur costs.
+  - AI Summarization: Dual-engine architecture. Primary Groq free tier ceiling is 8,000 TPM, 30 RPM, 14,400 RPD; backup Google Gemini free tier offers 1,000,000 TPM, 15 RPM, 1,500 RPD. Ingestion runs every 2 hours, batching 2 articles with a 5s backoff and automated fallback. Adding feeds or increasing feed size respects these ceilings and never incurs costs.
   - Cloudflare: Worker (100k req/day free), R2 (10GB / 1M writes free), D1 (5M reads / 100k writes free).
-  - GitHub Actions: 2,000 runner minutes/month free (~360 min currently used).
+  - GitHub Actions: 2,000 runner minutes/month free (~540 min used with 2-hour cron, leaving ~1,460 free minutes).
 
 
 
