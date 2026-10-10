@@ -964,6 +964,23 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "making-sure-the-checks-get-printed-21b9a6",
+    "title": "Making sure the checks get printed",
+    "summary": "Pierre's debut newsletter discusses real‑world risk management challenges and strategies for keeping critical systems operational when ideal patches are unavailable. It highlights the importance of practical controls, monitoring, and contingency planning to mitigate operational risk in complex environments for organizations today.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Cisco Talos",
+    "sourceUrl": "https://blog.talosintelligence.com/making-sure-the-checks-get-printed/",
+    "publishedAt": "2026-10-08T18:00:29.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "making-sure-the-checks-get-printed",
+      "article-21b9a6",
+      "21b9a6"
+    ]
+  },
+  {
     "slug": "ransomware-affiliate-keeps-profits-exposes-server-600325",
     "title": "Ransomware Affiliate Keeps Profits, Exposes Server with Tools",
     "summary": "A ransomware affiliate betrayed its partners by keeping the profits for itself. Meanwhile, an attacker left a server exposed, complete with tools and intrusion traces. Malicious code also appeared in developer packages and extensions, highlighting ongoing security lapses on both sides of the fence.",
@@ -1373,6 +1390,23 @@ export const news: NewsBrief[] = [
       "meta-s-muse-ai-builds-personal-dossiers-on-users",
       "article-433148",
       "433148"
+    ]
+  },
+  {
+    "slug": "how-technology-empowers-and-imperils-dictators-232160",
+    "title": "How Technology Empowers—and Imperils—Dictators",
+    "summary": "The essay examines how technology, particularly AI, can both empower and threaten authoritarian regimes. It recounts the 2022 incident of a Russian TV journalist exposing propaganda, the subsequent crackdown, and the 2024 revelation that RT anchors are AI‑generated, illustrating the growing use of synthetic media to manipulate public perception globally.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/how-technology-empowers-and-imperils-dictators.html",
+    "publishedAt": "2026-10-08T11:07:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "how-technology-empowers-and-imperils-dictators",
+      "article-232160",
+      "232160"
     ]
   },
   {
@@ -2004,6 +2038,41 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "second-shiny-hunters-member-arrested-2c09a5",
+    "title": "Second Shiny Hunters Member Arrested",
+    "summary": "A second member of the Shiny Hunters cybercrime group has been arrested, tightening law enforcement pressure on the organization. The arrest follows earlier investigations and signals increased scrutiny of the group’s operations. Authorities continue to pursue additional suspects while monitoring potential impacts on ongoing cybercrime activities.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/another-shinyhunters-suspect-arrested",
+    "publishedAt": "2026-10-07T10:03:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "second-shiny-hunters-member-arrested",
+      "article-2c09a5",
+      "2c09a5"
+    ]
+  },
+  {
+    "slug": "autonomous-ai-agents-pose-new-threat-to-public-inf-7b5ad7",
+    "title": "Autonomous AI Agents Pose New Threat to Public Infrastructure",
+    "summary": "Recent reports highlight autonomous agents developed in AI labs that can target and attack public infrastructure. These agentic threats can adapt and launch coordinated attacks without human intervention, raising concerns for critical systems. Security teams are urged to strengthen monitoring, implement AI‑aware defenses, and develop response playbooks to mitigate potential incidents.",
+    "category": "Policy",
+    "severity": "MEDIUM",
+    "source": "Cisco Talos",
+    "sourceUrl": "https://blog.talosintelligence.com/one-breach-please-and-make-no-mistakes/",
+    "publishedAt": "2026-10-07T10:00:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "autonomous-ai-agents-pose-new-threat-to-public-inf",
+      "article-7b5ad7",
+      "7b5ad7",
+      "autonomous-ai-agents-pose-new-threat-to-public-infrastructur"
+    ]
+  },
+  {
     "slug": "clickfix-evolves-to-conceal-payloads-using-dns-txt-490936",
     "title": "ClickFix Evolves to Conceal Payloads Using DNS TXT and Browser Cache",
     "summary": "Threat actors behind ClickFix are now embedding malicious payloads within DNS TXT records and leveraging browser cache pre‑fetching to obscure delivery. This technique complicates early detection, as payloads bypass traditional signature‑based defenses and remain dormant until the victim’s browser retrieves cached content.",
@@ -2237,6 +2306,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "facebook-marketplace-scam-uses-user-s-name-and-num-1efaa7",
+    "title": "Facebook Marketplace Scam Uses User’s Name and Number",
+    "summary": "Facebook users report receiving a fake Marketplace listing that lists their own name as the seller and includes their phone number. The scam attempts to trick users into contacting the fake seller, potentially leading to phishing or credential theft. Users should verify listings and report suspicious messages.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/10/facebook-marketplace-phish-uses-your-name-and-number",
+    "publishedAt": "2026-10-06T12:11:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "facebook-marketplace-scam-uses-user-s-name-and-num",
+      "article-1efaa7",
+      "1efaa7",
+      "facebook-marketplace-scam-uses-user-s-name-and-number"
+    ]
+  },
+  {
     "slug": "savannah-lwip-smtp-client-buffer-overflow-vulnerab-4319a7",
     "title": "Savannah lwIP SMTP Client Buffer Overflow Vulnerability CVE-2026-15340",
     "summary": "A buffer overflow in Savannah lwIP SMTP client 2.2.1 (CVE-2026-15340) allows remote code execution, potentially crashing devices. The flaw occurs when the client does not check input size, enabling attackers to trigger a classic buffer overflow. A patch has been released to fix the issue.",
@@ -2419,6 +2506,23 @@ export const news: NewsBrief[] = [
       "article-557535",
       "557535",
       "hack-the-box-releases-ai-range-enterprise-edition-for-securi"
+    ]
+  },
+  {
+    "slug": "smbs-seek-simpler-advanced-security-solutions-122ffe",
+    "title": "SMBs Seek Simpler Advanced Security Solutions",
+    "summary": "The cybersecurity market is increasingly complex, making it difficult for small and medium businesses to protect themselves. Many SMBs are looking for advanced protection that is easy to deploy and manage. The trend highlights a demand for streamlined security tools that reduce complexity while maintaining strong defense.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "ESET WeLiveSecurity",
+    "sourceUrl": "https://www.welivesecurity.com/en/business-security/quest-simplicity-why-smbs-want-advanced-protection-without-complexity/",
+    "publishedAt": "2026-10-06T09:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "smbs-seek-simpler-advanced-security-solutions",
+      "article-122ffe",
+      "122ffe"
     ]
   },
   {
@@ -3078,6 +3182,23 @@ export const news: NewsBrief[] = [
       "article-3731bd",
       "3731bd",
       "us-sanctions-venezuelan-gang-for-atm-jackpotting-attacks"
+    ]
+  },
+  {
+    "slug": "florida-county-finds-unidentified-flock-cameras-1e02ad",
+    "title": "Florida County Finds Unidentified Flock Cameras",
+    "summary": "St. Lucie County discovered a dozen Flock cameras with unknown ownership and no county approval. The devices resemble StingRay surveillance gear used by foreign actors in Washington, DC. The county’s lack of oversight raises concerns about potential unauthorized monitoring of residents.",
+    "category": "Breach",
+    "severity": "LOW",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/unidentified-flock-cameras-in-florida.html",
+    "publishedAt": "2026-10-02T14:52:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "florida-county-finds-unidentified-flock-cameras",
+      "article-1e02ad",
+      "1e02ad"
     ]
   },
   {
@@ -4641,6 +4762,24 @@ export const news: NewsBrief[] = [
       "article-721c64",
       "721c64",
       "french-tax-administration-data-theft-via-stolen-staff-passwo"
+    ]
+  },
+  {
+    "slug": "co-designing-modular-ai-security-agents-requires-r-686f62",
+    "title": "Co‑Designing Modular AI Security Agents Requires Rigorous Evaluation",
+    "summary": "Developing reliable AI security agents demands a co‑design approach that integrates modular system architectures with comprehensive, domain‑expert evaluation suites. This methodology ensures robust performance and mitigates risks associated with AI‑driven security solutions.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "SentinelOne",
+    "sourceUrl": "https://www.sentinelone.com/blog/building-agents-backwards-from-evaluation/",
+    "publishedAt": "2026-09-29T00:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "co-designing-modular-ai-security-agents-requires-r",
+      "article-686f62",
+      "686f62",
+      "co-designing-modular-ai-security-agents-requires-rigorous-ev"
     ]
   }
 ];
