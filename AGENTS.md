@@ -97,5 +97,10 @@
 - **Edge Analytics Routine:**
   - Quick health command: `npm run analytics` (or `node scripts/cf_analytics.mjs`).
 
+## 10. Git Hygiene & Ingestion Invariant (Mandatory)
+- **ALWAYS `git pull` BEFORE PUSHING:** Never run `git push` without running `git pull` (or `git pull --rebase origin main`) first.
+- **Why:** GitHub Actions (`ingest.yml`) runs on a cron every 4 hours and automatically commits fresh threat intelligence feeds and RSS data directly to `origin/main`.
+- **Consequence:** Pushing without pulling first causes non-fast-forward push rejections and messy merge conflicts on `feed.json` and `rss.xml`. Always pull first.
+
 
 
