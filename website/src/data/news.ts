@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "criminal-ip-launches-ai-powered-attack-surface-man-2db71b",
+    "title": "Criminal IP Launches AI‑Powered Attack Surface Management Tool AITEM",
+    "summary": "Criminal IP has released AITEM, an AI‑driven attack surface management solution that links asset discovery with investigation, risk prioritization, and response. The tool aims to enhance visibility and streamline threat mitigation for organizations by automating analysis and prioritization of exposed assets.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/criminal-ip-introduces-aitem-as-the-next-evolution-of-attack-surface-management/",
+    "publishedAt": "2026-10-10T12:30:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "criminal-ip-launches-ai-powered-attack-surface-man",
+      "article-2db71b",
+      "2db71b",
+      "criminal-ip-launches-ai-powered-attack-surface-management-to"
+    ]
+  },
+  {
     "slug": "third-party-ai-agents-escape-identity-governance-543bd9",
     "title": "Third-Party AI Agents Escape Identity Governance",
     "summary": "A study found that about 1,280 third‑party AI products embed AI, but 282 use single sign‑on while the rest remain invisible to identity stacks. The gap means many agents are not governed by authentication controls, exposing organizations to untracked access and potential misuse.",
@@ -4481,24 +4499,6 @@ export const news: NewsBrief[] = [
       "article-721c64",
       "721c64",
       "french-tax-administration-data-theft-via-stolen-staff-passwo"
-    ]
-  },
-  {
-    "slug": "darpa-selects-xint-to-use-ai-in-securing-military-6d2c27",
-    "title": "DARPA Selects Xint to Use AI in Securing Military Messaging Apps",
-    "summary": "DARPA has chosen Xint, the winner of the AIxCC competition, to analyze code and binaries of military messaging apps for vulnerabilities. The AI technology may also be offered to commercial customers to enhance software security.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/darpa-selects-xint-to-use-ai-in-securing-military-messaging-apps/",
-    "publishedAt": "2026-09-29T17:24:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "darpa-selects-xint-to-use-ai-in-securing-military",
-      "article-6d2c27",
-      "6d2c27",
-      "darpa-selects-xint-to-use-ai-in-securing-military-messaging-"
     ]
   }
 ];

@@ -1,5 +1,18 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/criminal-ip-introduces-aitem-as-the-next-evolution-of-attack-surface-management/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/criminal-ip-introduces-aitem-as-the-next-evolution-of-attack-surface-management/",
+    "title": "Criminal IP Launches AI‑Powered Attack Surface Management Tool AITEM",
+    "headline": "Criminal IP Launches AI‑Powered Attack Surface Management Tool AITEM",
+    "summary": "Criminal IP has released AITEM, an AI‑driven attack surface management solution that links asset discovery with investigation, risk prioritization, and response. The tool aims to enhance visibility and streamline threat mitigation for organizations by automating analysis and prioritization of exposed assets.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-10T12:30:39.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/criminal-ip-introduces-aitem-as-the-next-evolution-of-attack-surface-management/",
+    "additionalSources": []
+  },
+  {
     "id": "https://thehackernews.com/2026/10/the-third-party-agent-problem-why.html",
     "sourceUrl": "https://thehackernews.com/2026/10/the-third-party-agent-problem-why.html",
     "title": "Third-Party AI Agents Escape Identity Governance",
@@ -3759,19 +3772,6 @@
     "source": "The Hacker News",
     "publishedAt": "2026-09-29T17:47:01.000Z",
     "url": "https://thehackernews.com/2026/09/french-tax-data-theft-using-stolen.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/darpa-selects-xint-to-use-ai-in-securing-military-messaging-apps/",
-    "sourceUrl": "https://www.securityweek.com/darpa-selects-xint-to-use-ai-in-securing-military-messaging-apps/",
-    "title": "DARPA Selects Xint to Use AI in Securing Military Messaging Apps",
-    "headline": "DARPA Selects Xint to Use AI in Securing Military Messaging Apps",
-    "summary": "DARPA has chosen Xint, the winner of the AIxCC competition, to analyze code and binaries of military messaging apps for vulnerabilities. The AI technology may also be offered to commercial customers to enhance software security.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-09-29T17:24:04.000Z",
-    "url": "https://www.securityweek.com/darpa-selects-xint-to-use-ai-in-securing-military-messaging-apps/",
     "additionalSources": []
   }
 ]
