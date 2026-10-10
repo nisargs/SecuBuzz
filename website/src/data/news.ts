@@ -1214,6 +1214,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "amazon-collects-detailed-personal-profiles-without-7470c6",
+    "title": "Amazon Collects Detailed Personal Profiles Without Consent",
+    "summary": "Amazon reportedly gathers extensive personal data—including body metrics, family details, and lifestyle information—without users’ explicit permission and offers no opt‑out mechanism. The practice raises privacy concerns as the company claims to know more about individuals than they realize. No known breach or vulnerability is reported.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/amazon-has-an-uncomfortably-personal-profile-on-you-check-yours-now",
+    "publishedAt": "2026-10-08T12:29:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "amazon-collects-detailed-personal-profiles-without",
+      "article-7470c6",
+      "7470c6",
+      "amazon-collects-detailed-personal-profiles-without-consent"
+    ]
+  },
+  {
     "slug": "microsoft-teams-adds-support-for-third-party-deepf-2fbbbc",
     "title": "Microsoft Teams Adds Support for Third‑Party Deepfake Detection Tools",
     "summary": "Microsoft announced that Teams will soon support third‑party deep‑fake detection solutions and impersonation protection during meetings. The update will allow users to integrate external tools to identify synthetic media and prevent identity spoofing. No security flaw is disclosed, just a new protective feature for Teams users.",
@@ -1341,6 +1359,23 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "meta-s-muse-ai-builds-personal-dossiers-on-users-433148",
+    "title": "Meta’s Muse AI Builds Personal Dossiers on Users",
+    "summary": "Meta’s Muse AI creates detailed personal dossiers that capture friendships, arguments, and secrets, potentially including data from users who never signed up. The system’s data collection could be used for targeted advertising or surveillance, but no breach or vulnerability has been confirmed.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/privacy/2026/10/metas-muse-ai-files-away-your-friendships-arguments-and-secrets",
+    "publishedAt": "2026-10-08T11:07:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "meta-s-muse-ai-builds-personal-dossiers-on-users",
+      "article-433148",
+      "433148"
+    ]
+  },
+  {
     "slug": "wazza-phishkit-targets-banking-government-and-manu-5c44bc",
     "title": "Wazza Phishkit Targets Banking, Government, and Manufacturing",
     "summary": "Wazza is a new phishing kit that delivers sophisticated phishing pages with filtering, session management, and traffic controls. It targets banking, manufacturing, and government organizations across the US, EU, and Australia, increasing the risk of credential theft and credential stuffing attacks.",
@@ -1374,6 +1409,41 @@ export const news: NewsBrief[] = [
       "article-e0cf3e",
       "e0cf3e",
       "cryptomining-botnet-uses-github-poem-for-c2-infects-3-400-se"
+    ]
+  },
+  {
+    "slug": "ai-analysis-evasion-techniques-in-malware-1018d3",
+    "title": "AI-Analysis Evasion Techniques in Malware",
+    "summary": "Malware authors are developing real‑world techniques to obstruct or defeat automated AI analysis layers, a trend highlighted in a recent blog. The post outlines how these evasion methods undermine AI‑based detection, emphasizing the need for enhanced defensive strategies. No specific vulnerabilities or CVE IDs are cited.",
+    "category": "Malware",
+    "severity": "LOW",
+    "source": "Cisco Talos",
+    "sourceUrl": "https://blog.talosintelligence.com/ignore-all-instructions-and-read-this-blog-the-state-of-ai-analysis-evasion-in-malware/",
+    "publishedAt": "2026-10-08T10:00:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-analysis-evasion-techniques-in-malware",
+      "article-1018d3",
+      "1018d3"
+    ]
+  },
+  {
+    "slug": "matchboil-downloader-evolves-eset-tracks-new-techn-33d44a",
+    "title": "MATCHBOIL Downloader Evolves: ESET Tracks New Techniques 2024‑2026",
+    "summary": "ESET WeLiveSecurity released a report detailing the evolution of the MATCHBOIL downloader, part of the UAC‑0099 malware family. The analysis covers changes in download mechanisms, persistence methods, and evasion tactics observed between 2024 and 2026, highlighting the downloader’s continued use in targeted campaigns.",
+    "category": "Malware",
+    "severity": "LOW",
+    "source": "ESET WeLiveSecurity",
+    "sourceUrl": "https://www.welivesecurity.com/en/eset-research/matchboil-new-tricks-same-old-evil-intentions/",
+    "publishedAt": "2026-10-08T08:45:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "matchboil-downloader-evolves-eset-tracks-new-techn",
+      "article-33d44a",
+      "33d44a",
+      "matchboil-downloader-evolves-eset-tracks-new-techniques-2024"
     ]
   },
   {
@@ -1773,6 +1843,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "google-releases-android-security-updates-limited-a-3e8667",
+    "title": "Google Releases Android Security Updates, Limited Availability",
+    "summary": "Google has issued new Android security updates, but many users will not be able to receive the patches immediately. The updates address various security issues, but rollout delays mean some devices remain unpatched for the time being.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/10/google-issues-android-security-updates-who-can-get-them-and-how",
+    "publishedAt": "2026-10-07T13:25:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-releases-android-security-updates-limited-a",
+      "article-3e8667",
+      "3e8667",
+      "google-releases-android-security-updates-limited-availabilit"
+    ]
+  },
+  {
     "slug": "hadrian-secures-40m-to-expand-autonomous-offensive-67fa49",
     "title": "Hadrian Secures $40M to Expand Autonomous Offensive Security Platform",
     "summary": "Hadrian, an autonomous offensive security platform, has raised $40 million to broaden its agentic capabilities, enabling defenders to match attacker speed. The funding supports development of tools that simulate adversary tactics for proactive defense. No direct security incident reported.",
@@ -1809,6 +1897,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "apple-introduces-reference-image-for-photo-verific-447f1f",
+    "title": "Apple Introduces Reference Image for Photo Verification",
+    "summary": "Apple has launched Reference Image, a system that verifies photos are exactly as captured by an iPhone without linking them to a specific device or photographer. The feature signs images with Apple’s signing service, enabling authenticity checks while preserving photographer anonymity.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/apples-verified-photography-system.html",
+    "publishedAt": "2026-10-07T11:07:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-introduces-reference-image-for-photo-verific",
+      "article-447f1f",
+      "447f1f",
+      "apple-introduces-reference-image-for-photo-verification"
+    ]
+  },
+  {
+    "slug": "ai-powered-phishkit-empowers-criminals-with-rapid-3bc6ad",
+    "title": "AI‑powered PhishKit Empowers Criminals with Rapid Account‑Hijacking Tools",
+    "summary": "BlueKit, an AI‑driven phishing kit, equips attackers with account‑hijacking tools that can be deployed in about ten minutes, enabling the creation of convincing fake login pages and scam messages to target users.",
+    "category": "Policy",
+    "severity": "MEDIUM",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/10/ai-powered-phishkit-arms-criminals-with-account-hijacking-tools-in-10-minutes",
+    "publishedAt": "2026-10-07T10:54:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-powered-phishkit-empowers-criminals-with-rapid",
+      "article-3bc6ad",
+      "3bc6ad",
+      "ai-powered-phishkit-empowers-criminals-with-rapid-account-hi"
+    ]
+  },
+  {
     "slug": "chrome-155-update-fixes-247-vulnerabilities-40a2f3",
     "title": "Chrome 155 Update Fixes 247 Vulnerabilities",
     "summary": "Google released Chrome 155, addressing 247 security issues, including four critical use‑after‑free bugs in Chromecast, Browser, Navigation, and Track components. The update removes the vulnerabilities that could allow attackers to execute arbitrary code or crash the browser, improving overall stability and security.",
@@ -1841,6 +1965,24 @@ export const news: NewsBrief[] = [
       "article-119ed0",
       "119ed0",
       "north-carolina-musician-sentenced-for-10-million-streaming-f"
+    ]
+  },
+  {
+    "slug": "google-recommends-immediate-chrome-and-chromeos-up-1d1d8b",
+    "title": "Google Recommends Immediate Chrome and ChromeOS Update to Address Critical Security Fixes",
+    "summary": "Google released a new update for Chrome browser and ChromeOS containing multiple security fixes. Users are urged to install the update promptly to mitigate potential vulnerabilities.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/10/update-chrome-and-chromeos-to-fix-critical-security-issues",
+    "publishedAt": "2026-10-07T10:25:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-recommends-immediate-chrome-and-chromeos-up",
+      "article-1d1d8b",
+      "1d1d8b",
+      "google-recommends-immediate-chrome-and-chromeos-update-to-ad"
     ]
   },
   {
@@ -3309,6 +3451,24 @@ export const news: NewsBrief[] = [
       "vega-ii-introduces-ai-powered-soc-platform",
       "article-5f401f",
       "5f401f"
+    ]
+  },
+  {
+    "slug": "week-39-cybersecurity-roundup-ryuk-broker-arrested-5e8383",
+    "title": "Week 39 Cybersecurity Roundup: Ryuk Broker Arrested, TraderTraitor Backdoors, AI Credit Card Skimming",
+    "summary": "Week 39 highlights include the arrest of a Ryuk access broker, the emergence of TraderTraitor backdoors on a non‑crypto victim, and an operator’s AI agents siphoning 600,000 credit cards. The report underscores ongoing ransomware, backdoor proliferation, and automated credential theft trends.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "SentinelOne",
+    "sourceUrl": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-39-8",
+    "publishedAt": "2026-10-02T00:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "week-39-cybersecurity-roundup-ryuk-broker-arrested",
+      "article-5e8383",
+      "5e8383",
+      "week-39-cybersecurity-roundup-ryuk-broker-arrested-tradertra"
     ]
   },
   {
