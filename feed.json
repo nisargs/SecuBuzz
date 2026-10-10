@@ -18,6 +18,32 @@
     ]
   },
   {
+    "id": "https://www.securityweek.com/openai-fires-3-safety-researchers-in-dispute-over-ai-risks/",
+    "sourceUrl": "https://www.securityweek.com/openai-fires-3-safety-researchers-in-dispute-over-ai-risks/",
+    "title": "OpenAI Terminates Three Safety Researchers Over Policy Violations",
+    "headline": "OpenAI Terminates Three Safety Researchers Over Policy Violations",
+    "summary": "OpenAI terminated three safety researchers after they allegedly violated company policies on handling sensitive information. The decision highlights the firm’s strict stance on internal data security and policy compliance. The move may affect the organization’s research culture and its approach to AI safety oversight.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-09T21:07:46.000Z",
+    "url": "https://www.securityweek.com/openai-fires-3-safety-researchers-in-dispute-over-ai-risks/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.darkreading.com/cyberattacks-data-breaches/asos-breach-risks-customer-facing-saas",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/asos-breach-risks-customer-facing-saas",
+    "title": "ASOS Breach Demonstrates Risks of Customer-Facing SaaS",
+    "headline": "ASOS Breach Demonstrates Risks of Customer-Facing SaaS",
+    "summary": "A cyberattack on British retailer ASOS exposed a single compromised customer identity, enabling attackers to penetrate deeper into the corporate network. The breach underscores the vulnerability of customer-facing SaaS platforms to credential compromise and highlights the need for stronger identity protection and network segmentation.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-09T20:58:32.000Z",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/asos-breach-risks-customer-facing-saas",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/hackers-abuse-google-ads-bing-redirects-to-push-claude-clickfix-attacks/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-abuse-google-ads-bing-redirects-to-push-claude-clickfix-attacks/",
     "title": "Hackers Use Bing Redirects in Google Ads to Deliver ClickFix Ransomware",
@@ -3756,45 +3782,5 @@
     "publishedAt": "2026-09-29T17:24:04.000Z",
     "url": "https://www.securityweek.com/darpa-selects-xint-to-use-ai-in-securing-military-messaging-apps/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/new-spectre-v2-attack-variant-leaks-linux-root-password-hash-in-minutes/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-spectre-v2-attack-variant-leaks-linux-root-password-hash-in-minutes/",
-    "title": "New Spectre v2 Variant Enables Rapid Linux Root Hash Extraction on Intel CPUs",
-    "headline": "New Spectre v2 Variant Enables Rapid Linux Root Hash Extraction on Intel CPUs",
-    "summary": "A newly discovered Branch Target Reuse (BTR) variant of Spectre v2 can extract root password hashes from Intel‑based Linux systems in 3‑5 minutes. The attack targets the CPU micro‑architecture, bypassing kernel protections, and requires only local execution on the affected machine.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-09-29T17:10:11.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/new-spectre-v2-attack-variant-leaks-linux-root-password-hash-in-minutes/",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/09/new-spectre-v2-btr-attack-leaks-linux.html"
-      },
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/new-spectre-v2-variant-exposes-intel-amd-arm-cpus-to-data-leaks/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.microsoft.com/en-us/security/blog/2026/09/29/beyond-source-code-a-path-to-the-keys-to-the-kingdom/",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/09/29/beyond-source-code-a-path-to-the-keys-to-the-kingdom/",
-    "title": "Storm-3068 Exploits Compromised Identity for Cloud Access",
-    "headline": "Storm-3068 Exploits Compromised Identity for Cloud Access",
-    "summary": "A compromised identity was leveraged by the threat actor Storm-3068 to gain broader cloud access, affecting identities, pipelines, and infrastructure. The incident highlights the need for stronger identity protection and monitoring to prevent lateral movement within cloud environments.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "Microsoft Security",
-    "publishedAt": "2026-09-29T16:00:00.000Z",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/29/beyond-source-code-a-path-to-the-keys-to-the-kingdom/",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/09/openai-pauses-tool-use-after-agent.html"
-      }
-    ]
   }
 ]
