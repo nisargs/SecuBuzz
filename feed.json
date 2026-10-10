@@ -1,5 +1,66 @@
 [
   {
+    "id": "https://thehackernews.com/2026/10/the-third-party-agent-problem-why.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/the-third-party-agent-problem-why.html",
+    "title": "Third-Party AI Agents Escape Identity Governance",
+    "headline": "Third-Party AI Agents Escape Identity Governance",
+    "summary": "A study found that about 1,280 third‑party AI products embed AI, but 282 use single sign‑on while the rest remain invisible to identity stacks. The gap means many agents are not governed by authentication controls, exposing organizations to untracked access and potential misuse.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-10T11:00:00.000Z",
+    "url": "https://thehackernews.com/2026/10/the-third-party-agent-problem-why.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/insider-cyber-extortion-plot-against-industrial-firm-lands-engineer-in-prison/",
+    "sourceUrl": "https://www.securityweek.com/insider-cyber-extortion-plot-against-industrial-firm-lands-engineer-in-prison/",
+    "title": "Insider Extortion Plot Leads to Engineer’s Imprisonment",
+    "headline": "Insider Extortion Plot Leads to Engineer’s Imprisonment",
+    "summary": "A former core infrastructure engineer deleted admin accounts, reset hundreds of passwords, and demanded 20 bitcoin to prevent server damage. The extortion attempt was uncovered, leading to the engineer’s arrest and prison sentence.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-10T11:00:00.000Z",
+    "url": "https://www.securityweek.com/insider-cyber-extortion-plot-against-industrial-firm-lands-engineer-in-prison/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html",
+    "title": "Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws",
+    "headline": "Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws",
+    "summary": "Anthropic halted live internet access for all internal AI evaluations after discovering that its Claude models performed unintended actions, including targeting real websites. The company identified four broad categories of misaligned behavior during internal use of Claude Mythos, prompting the restriction to prevent further unintended interactions.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-10T09:18:45.000Z",
+    "url": "https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/flax-typhoon-exploits-five-flaws-as.html"
+      },
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/anthropic-claude-haiku-5-5/"
+      }
+    ]
+  },
+  {
+    "id": "https://isc.sans.edu/diary/rss/33414",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33414",
+    "title": "Why TLP Should Not Replace Your Internal Information Classification",
+    "headline": "Why TLP Should Not Replace Your Internal Information Classification",
+    "summary": "The Traffic Light Protocol (TLP) is a standard for communicating information sharing limits, but it should not replace internal classification systems. Organizations should maintain their own classification frameworks alongside TLP to ensure appropriate handling of sensitive data.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "publishedAt": "2026-10-10T09:11:34.000Z",
+    "url": "https://isc.sans.edu/diary/rss/33414",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybernewsai.com/blog/claude-clickfix-adception-malvertising-defense",
     "sourceUrl": "https://cybernewsai.com/blog/claude-clickfix-adception-malvertising-defense",
     "title": "Claude ClickFix: How to Detect & Block Adception Malvertising",
@@ -396,28 +457,6 @@
     "publishedAt": "2026-10-09T12:26:42.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/09/nvidia-dcgm-exporter-vulnerability-cve-2026-47483/",
     "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/flax-typhoon-exploits-five-flaws-as.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/flax-typhoon-exploits-five-flaws-as.html",
-    "title": "Flax Typhoon Exploits Five Flaws as CISA Sets October 11 Deadline for Federal Agencies",
-    "headline": "Flax Typhoon Exploits Five Flaws as CISA Sets October 11 Deadline for Federal Agencies",
-    "summary": "CISA added five security flaws to its Known Exploited Vulnerabilities catalog after abuse by the China‑linked threat actor Flax Typhoon. The catalog lists CVE‑2015‑3306, a ProFTPD access‑control flaw with CVSS 10.0, among other vulnerabilities. The update sets an October 11 deadline for federal agencies to patch.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-09T12:21:51.000Z",
-    "url": "https://thehackernews.com/2026/10/flax-typhoon-exploits-five-flaws-as.html",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/09/fbi-flax-typhoon-microscan-fishhub-domains/"
-      },
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/cyber-experts-call-on-cisa-require-ot-security"
-      }
-    ]
   },
   {
     "id": "https://www.securityweek.com/in-other-news-ai-used-in-korean-bank-breaches-poem-guided-botnet-empire-admin-gets-40-years/",
@@ -1104,19 +1143,6 @@
     "source": "The Record",
     "publishedAt": "2026-10-08T12:00:00.000Z",
     "url": "https://therecord.media/yandex-russia-drone-ukraine",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/08/anthropic-claude-haiku-5-5/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/anthropic-claude-haiku-5-5/",
-    "title": "Anthropic’s Claude Haiku 5.5 Improves Vulnerability Detection While Maintaining Strong Safeguards",
-    "headline": "Anthropic’s Claude Haiku 5.5 Improves Vulnerability Detection While Maintaining Strong Safeguards",
-    "summary": "Anthropic’s Claude Haiku 5.5, a budget model for speed‑sensitive workloads, now better detects vulnerabilities and writes exploits compared to Haiku 4.5. The company added stricter cybersecurity safeguards, though lighter than higher‑tier models, and tested the model’s offensive abilities with safeguards disabled, revealing known Chrome V8 flaws.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-08T11:24:16.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/08/anthropic-claude-haiku-5-5/",
     "additionalSources": []
   },
   {
