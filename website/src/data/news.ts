@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "chinese-hacker-uses-artex-ai-and-claude-agents-to-3b0955",
+    "title": "Chinese Hacker Uses ARTEX AI and Claude Agents to Target South Korean Banks",
+    "summary": "A Chinese hacker launched attacks on South Korean banks using the ARTEX AI penetration testing suite and Claude AI agents. The campaign targeted banking systems, exploiting the AI tools to conduct reconnaissance and credential theft, compromising sensitive financial data and disrupting services.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks/",
+    "publishedAt": "2026-10-10T14:16:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chinese-hacker-uses-artex-ai-and-claude-agents-to",
+      "article-3b0955",
+      "3b0955",
+      "chinese-hacker-uses-artex-ai-and-claude-agents-to-target-sou"
+    ]
+  },
+  {
     "slug": "criminal-ip-launches-ai-powered-attack-surface-man-2db71b",
     "title": "Criminal IP Launches AI‑Powered Attack Surface Management Tool AITEM",
     "summary": "Criminal IP has released AITEM, an AI‑driven attack surface management solution that links asset discovery with investigation, risk prioritization, and response. The tool aims to enhance visibility and streamline threat mitigation for organizations by automating analysis and prioritization of exposed assets.",
@@ -545,24 +563,6 @@ export const news: NewsBrief[] = [
       "article-4455e9",
       "4455e9",
       "high-severity-nvidia-vulnerability-lets-unauthenticated-atta"
-    ]
-  },
-  {
-    "slug": "ai-driven-breaches-target-korean-banks-tensorlake-63a408",
-    "title": "AI-Driven Breaches Target Korean Banks, Tensorlake SDK Compromised",
-    "summary": "AI techniques were employed in recent breaches of Korean banks, while the Tensorlake npm SDK was compromised, exposing sensitive data. Additionally, telemetry from NVIDIA GPU monitors was leaked. These incidents highlight the growing threat of AI‑assisted attacks and third‑party component vulnerabilities. No public fix is announced yet.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/in-other-news-ai-used-in-korean-bank-breaches-poem-guided-botnet-empire-admin-gets-40-years/",
-    "publishedAt": "2026-10-09T12:03:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-driven-breaches-target-korean-banks-tensorlake",
-      "article-63a408",
-      "63a408",
-      "ai-driven-breaches-target-korean-banks-tensorlake-sdk-compro"
     ]
   },
   {
@@ -1108,24 +1108,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "artex-ai-pentesting-tool-used-in-data-theft-attack-58f6d6",
-    "title": "ARTEX AI Pentesting Tool Used in Data Theft Attacks on South Korean Financial Firms",
-    "summary": "A campaign targeting South Korean financial institutions employed the ARTEX AI pentesting tool to conduct attacks, leading to data exfiltration. The activity, active from late September to early October 2026, involved threat actors exploiting the tool’s capabilities to breach systems and steal sensitive information.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/artex-ai-pentesting-tool-used-in-data.html",
-    "publishedAt": "2026-10-08T14:12:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "artex-ai-pentesting-tool-used-in-data-theft-attack",
-      "article-58f6d6",
-      "58f6d6",
-      "artex-ai-pentesting-tool-used-in-data-theft-attacks-on-south"
-    ]
-  },
-  {
     "slug": "oauth-grants-exploited-in-recent-klue-breach-381d27",
     "title": "OAuth Grants Exploited in Recent Klue Breach",
     "summary": "Attackers leveraged forgotten OAuth grants to access corporate data, as highlighted by the recent Klue breach. The article explains how OAuth permissions create data highways between SaaS apps, AI agents, and other tools, and offers strategies to monitor and revoke unused grants to prevent future breaches.",
@@ -1175,24 +1157,6 @@ export const news: NewsBrief[] = [
       "article-53eeb5",
       "53eeb5",
       "cloudflare-radar-redesign-enhances-accessibility-for-non-tec"
-    ]
-  },
-  {
-    "slug": "us-seeks-alleged-chinese-hafnium-hacker-with-10-mi-5a7bd6",
-    "title": "US Seeks Alleged Chinese Hafnium Hacker With $10 Million Reward",
-    "summary": "The United States is offering a $10 million reward for information leading to the arrest of Zhang Yu, a suspected Hafnium hacker linked to Chinese state-sponsored espionage. Zhang was charged alongside Xu Zewei, who was extradited from Italy to the US in April 2026.",
-    "category": "Malware",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/us-seeks-alleged-chinese-hafnium-hacker-with-10-million-reward/",
-    "publishedAt": "2026-10-08T12:46:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "us-seeks-alleged-chinese-hafnium-hacker-with-10-mi",
-      "article-5a7bd6",
-      "5a7bd6",
-      "us-seeks-alleged-chinese-hafnium-hacker-with-10-million-rewa"
     ]
   },
   {

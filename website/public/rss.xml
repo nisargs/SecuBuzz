@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Oct 2026 12:59:22 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2026 14:29:31 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Chinese Hacker Uses ARTEX AI and Claude Agents to Target South Korean Banks</title>
+      <link>https://secubuzz.com/news/chinese-hacker-uses-artex-ai-and-claude-agents-to-3b0955</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chinese-hacker-uses-artex-ai-and-claude-agents-to-3b0955</guid>
+      <description><![CDATA[A Chinese hacker launched attacks on South Korean banks using the ARTEX AI penetration testing suite and Claude AI agents. The campaign targeted banking systems, exploiting the AI tools to conduct reconnaissance and credential theft, compromising sensitive financial data and disrupting services.]]></description>
+      <pubDate>Sat, 10 Oct 2026 14:16:17 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Criminal IP Launches AI‑Powered Attack Surface Management Tool AITEM</title>
       <link>https://secubuzz.com/news/criminal-ip-launches-ai-powered-attack-surface-man-2db71b</link>
@@ -276,15 +285,6 @@
       <pubDate>Fri, 09 Oct 2026 12:26:42 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/09/nvidia-dcgm-exporter-vulnerability-cve-2026-47483/">Help Net Security</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AI-Driven Breaches Target Korean Banks, Tensorlake SDK Compromised</title>
-      <link>https://secubuzz.com/news/ai-driven-breaches-target-korean-banks-tensorlake-63a408</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-driven-breaches-target-korean-banks-tensorlake-63a408</guid>
-      <description><![CDATA[AI techniques were employed in recent breaches of Korean banks, while the Tensorlake npm SDK was compromised, exposing sensitive data. Additionally, telemetry from NVIDIA GPU monitors was leaked. These incidents highlight the growing threat of AI‑assisted attacks and third‑party component vulnerabilities. No public fix is announced yet.]]></description>
-      <pubDate>Fri, 09 Oct 2026 12:03:50 GMT</pubDate>
-      <source url="https://www.securityweek.com/in-other-news-ai-used-in-korean-bank-breaches-poem-guided-botnet-empire-admin-gets-40-years/">SecurityWeek</source>
-      <category>Breach</category>
     </item>
     <item>
       <title>Google Domains Hijacked via ccTLD Exploits</title>
