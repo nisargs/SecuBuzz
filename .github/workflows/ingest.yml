@@ -1,9 +1,9 @@
 name: SecuBuzz Feed Ingestion
 
 on:
-  # Run automatically every 1 hour (offset to :17 to avoid global top-of-hour runner congestion)
+  # Run automatically every 4 hours (offset to :17 to avoid global top-of-hour runner congestion)
   schedule:
-    - cron: "17 * * * *"
+    - cron: "17 */4 * * *"
 
   # Allow manual testing from GitHub Actions
   workflow_dispatch:

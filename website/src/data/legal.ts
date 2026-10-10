@@ -19,8 +19,8 @@ export const privacySections: LegalSection[] = [
     body: [
       'Device and Application Telemetry: Anonymized crash logs and app version statistics used strictly to diagnose bugs and maintain uptime.',
       'Push Notification Token: If you opt in to receive periodic CISA KEV zero-day alerts, an anonymous Expo/Firebase Cloud Messaging (FCM) token is registered to deliver broadcast notifications. This token is never linked to your personal identity, name, or phone number, and can be revoked at any time.',
-      'On-Device Bookmarks & Preferences: All bookmarks, filter preferences, and theme choices are stored 100% on your local device. They are never sent to or stored on our servers.',
-      'Website Analytics: The secubuzz.com website uses privacy-first, cookie-less Cloudflare Web Analytics to measure aggregate visitor counts and performance. Cloudflare Web Analytics does not use cookies, does not collect personal identifiers, and does not track users across websites.'
+      'On-Device Bookmarks & Preferences: All bookmarks, filter preferences, and theme choices in the mobile app are stored 100% on your local device. They are never sent to or stored on our servers.',
+      'Website Analytics & Conversion Attribution: The secubuzz.com website uses privacy-first, cookie-less Cloudflare Web Analytics to measure aggregate visitor counts and performance without cross-site tracking. When you click the Google Play download button on secubuzz.com, a minimal, anonymous first-party functional cookie (sb_vid) storing a randomized identifier may be set strictly to measure unique versus repeat install button clicks. We never collect personal identifying information (PII), track users across other websites, or build advertising profiles. Geographic metrics are recorded solely at the aggregate country level via standard server headers without storing individual IP addresses.'
     ]
   },
   {
