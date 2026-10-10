@@ -23,7 +23,7 @@ export function Download() {
               Free, zero-tracking security intelligence. 60-word briefs and direct CISA KEV threat alerts delivered without noise, algorithms, or account requirements.
             </p>
             <div className="mt-8 flex flex-col items-start gap-2.5">
-              <PlayStoreButton size="lg" />
+              <PlayStoreButton size="lg" source="download_page" />
               <p className="text-xs text-subtle">
                 Official release on Google Play · Requires Android 8.0 (Oreo) or higher · Free &amp; Ad-Free
               </p>

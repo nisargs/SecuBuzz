@@ -74,6 +74,15 @@ function isAuthorized(request: Request, env: Env): boolean {
   return false;
 }
 
+function getVisitorInfo(request: Request): { visitorId: string; isRepeat: number; isNewCookie: boolean } {
+  const cookieHeader = request.headers.get('Cookie') || '';
+  const match = cookieHeader.match(/(?:^|;\s*)sb_vid=([a-zA-Z0-9_-]+)/);
+  if (match && match[1]) {
+    return { visitorId: match[1], isRepeat: 1, isNewCookie: false };
+  }
+  return { visitorId: crypto.randomUUID(), isRepeat: 0, isNewCookie: true };
+}
+
 import {
   ArticleItem,
   KevVulnerability,
@@ -466,6 +475,87 @@ export default {
     }
 
     try {
+      // Smart App Download Redirect & Click Tracking (/go/play, /app, /play)
+      if (url.pathname === '/go/play' || url.pathname === '/app' || url.pathname === '/play') {
+        const source = (url.searchParams.get('src') || url.searchParams.get('source') || 'direct').slice(0, 64);
+        const country = request.headers.get('cf-ipcountry') || 'XX';
+        const referer = (request.headers.get('Referer') || '').slice(0, 255);
+        const userAgent = (request.headers.get('User-Agent') || '').slice(0, 255);
+        const now = new Date().toISOString();
+        const { visitorId, isRepeat, isNewCookie } = getVisitorInfo(request);
+
+        if (env.DB) {
+          try {
+            await env.DB.prepare(
+              `INSERT INTO install_clicks (visitor_id, source, is_repeat, country, referer, user_agent, clicked_at)
+               VALUES (?, ?, ?, ?, ?, ?, ?);`
+            ).bind(visitorId, source, isRepeat, country, referer, userAgent, now).run();
+          } catch (dbErr) {
+            console.warn('Failed to record install click:', dbErr);
+          }
+        }
+
+        const headers = new Headers({
+          'Location': 'https://play.google.com/store/apps/details?id=com.secubuzz.app',
+          'Cache-Control': 'no-cache, no-store, must-revalidate',
+        });
+        if (isNewCookie) {
+          headers.append('Set-Cookie', `sb_vid=${visitorId}; Path=/; Max-Age=31536000; SameSite=Lax; Secure`);
+        }
+
+        return new Response(null, {
+          status: 302,
+          headers,
+        });
+      }
+
+      // API: Telemetry for App Install Clicks & Repeat Readers
+      if (url.pathname === '/api/analytics/install-clicks') {
+        if (!env.DB) return jsonResponse({ totalClicks: 0, uniqueClickers: 0, repeatClicks: 0, breakdown: [], countries: [], recent: [] });
+        try {
+          const stats: any = await env.DB.prepare(
+            `SELECT COUNT(*) as total_clicks,
+                    COUNT(DISTINCT visitor_id) as unique_clickers,
+                    SUM(is_repeat) as repeat_clicks
+             FROM install_clicks;`
+          ).first();
+
+          const { results: totals } = await env.DB.prepare(
+            `SELECT source, COUNT(*) as count, COUNT(DISTINCT visitor_id) as unique_clickers, SUM(is_repeat) as repeats
+             FROM install_clicks
+             GROUP BY source
+             ORDER BY count DESC;`
+          ).all();
+
+          const { results: countries } = await env.DB.prepare(
+            `SELECT country, COUNT(*) as count
+             FROM install_clicks
+             GROUP BY country
+             ORDER BY count DESC
+             LIMIT 10;`
+          ).all();
+
+          const { results: recent } = await env.DB.prepare(
+            `SELECT source, is_repeat, country, referer, clicked_at
+             FROM install_clicks
+             ORDER BY clicked_at DESC
+             LIMIT 25;`
+          ).all();
+
+          return jsonResponse({
+            success: true,
+            totalClicks: Number(stats?.total_clicks || 0),
+            uniqueClickers: Number(stats?.unique_clickers || 0),
+            repeatClicks: Number(stats?.repeat_clicks || 0),
+            breakdown: totals ?? [],
+            countries: countries ?? [],
+            recent: recent ?? [],
+          });
+        } catch (err: any) {
+          return jsonResponse({ success: false, error: err.message, totalClicks: 0, uniqueClickers: 0, repeatClicks: 0, breakdown: [], countries: [], recent: [] });
+        }
+      }
+
       // Favicon & Brand Asset routes
       if (url.pathname === '/favicon.ico' || url.pathname === '/favicon.png' || url.pathname === '/assets/favicon.png') {
         const binary = Uint8Array.from(atob(FAVICON_48_BASE64), c => c.charCodeAt(0));
@@ -926,13 +1016,18 @@ export default {
           }
 
           const enrichedHtml = injectMetaTags(rawHtml, url.pathname, articles, advisories);
+          const htmlHeaders = new Headers({
+            'Content-Type': 'text/html; charset=utf-8',
+            'Cache-Control': 'public, max-age=60, s-maxage=300',
+            ...CORS_HEADERS,
+          });
+          const visitor = getVisitorInfo(request);
+          if (visitor.isNewCookie) {
+            htmlHeaders.set('Set-Cookie', `sb_vid=${visitor.visitorId}; Path=/; Max-Age=31536000; SameSite=Lax; Secure`);
+          }
           return new Response(enrichedHtml, {
             status: 200,
-            headers: {
-              'Content-Type': 'text/html; charset=utf-8',
-              'Cache-Control': 'public, max-age=60, s-maxage=300',
-              ...CORS_HEADERS,
-            },
+            headers: htmlHeaders,
           });
         }
 

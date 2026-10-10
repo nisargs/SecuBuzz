@@ -78,7 +78,7 @@ export function SmartAppBanner() {
               </div>
             </div>
             <a
-              href={PLAY_STORE_URL}
+              href="/go/play?src=smart_banner"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex h-8 shrink-0 items-center justify-center whitespace-nowrap rounded-md bg-accent px-3 text-xs font-semibold text-accent-ink transition-colors hover:bg-accent/90"

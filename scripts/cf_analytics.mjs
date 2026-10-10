@@ -162,10 +162,21 @@ export async function fetchCloudflareAnalytics({ zoneTag = '65259b39c7fd2648a898
     queryGraphQL(token, rumQuery, { accountTag, siteTag, since7d, until: nowIso })
   ]);
 
+  let installClicks = null;
+  try {
+    const clickRes = await fetch('https://secubuzz.com/api/analytics/install-clicks');
+    if (clickRes.ok) {
+      installClicks = await clickRes.json();
+    }
+  } catch (err) {
+    // Non-fatal if offline or not yet deployed
+  }
+
   return {
     timestamp: nowIso,
     zone: zoneRes.data?.viewer?.zones?.[0] || {},
-    rum: rumRes.data?.viewer?.accounts?.[0] || {}
+    rum: rumRes.data?.viewer?.accounts?.[0] || {},
+    installClicks
   };
 }
 
@@ -174,9 +185,36 @@ if (process.argv[1]?.endsWith('cf_analytics.mjs')) {
     console.log(`\n=== Cloudflare Analytics Telemetry (${data.timestamp}) ===`);
     const z = data.zone;
     const r = data.rum;
+    const clicks = data.installClicks;
     const today = z.dailyTimeline?.[0];
     const mb = today?.sum?.bytes ? (today.sum.bytes / (1024 * 1024)).toFixed(2) : '0';
     console.log(`Today (${today?.dimensions?.date || 'Today'}): ${today?.sum?.requests || 0} Requests | ${today?.uniq?.uniques || 0} Unique Visitors | ${today?.sum?.pageViews || 0} Page Views | ${mb} MB Bandwidth | ${today?.sum?.threats || 0} Threats Blocked`);
+
+    if (clicks) {
+      console.log('\n--- Google Play Install Clicks (/go/play Telemetry) ---');
+      console.log(`  Total Clicks: ${clicks.totalClicks || 0} | Unique Clickers: ${clicks.uniqueClickers || 0} | Repeat Clicks: ${clicks.repeatClicks || 0}`);
+      
+      if (clicks.breakdown && clicks.breakdown.length > 0) {
+        console.log('  Breakdown by Campaign Source:');
+        for (const b of clicks.breakdown) {
+          console.log(`    - ${b.source.padEnd(16)}: ${b.count.toString().padStart(3)} clicks (${b.unique_clickers || b.count} uniques, ${b.repeats || 0} repeats)`);
+        }
+      }
+
+      if (clicks.countries && clicks.countries.length > 0) {
+        console.log('  Top Countries:');
+        console.log(`    ${clicks.countries.map(c => `${c.country}: ${c.count}`).join(' | ')}`);
+      }
+
+      if (clicks.recent && clicks.recent.length > 0) {
+        console.log('  Recent Referrals:');
+        for (const rc of clicks.recent.slice(0, 5)) {
+          const repeatTag = rc.is_repeat ? '[Repeat]' : '[New]';
+          const ref = rc.referer ? ` via ${rc.referer}` : '';
+          console.log(`    ${rc.clicked_at.slice(0, 19)} | ${rc.country} | ${rc.source} ${repeatTag}${ref}`);
+        }
+      }
+    }
 
     if (z.dailyTimeline && z.dailyTimeline.length > 1) {
       console.log('\n--- Recent Daily History ---');

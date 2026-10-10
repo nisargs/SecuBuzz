@@ -17,7 +17,7 @@ export function AppCta({
           <h2 className="text-2xl font-semibold tracking-tight text-ink md:text-3xl">{title}</h2>
           <p className="mt-2 text-muted">{body}</p>
         </div>
-        <PlayStoreButton size="lg" />
+        <PlayStoreButton size="lg" source="bottom_cta" />
       </div>
     </section>);
 

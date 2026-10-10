@@ -54,7 +54,7 @@ export function Home() {
               Known Exploited Vulnerabilities to your Android phone, with the remediation deadline attached.
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-5">
-              <PlayStoreButton size="lg" />
+              <PlayStoreButton size="lg" source="home_hero" />
               <Link
                 to="/news"
                 className="inline-flex items-center gap-1.5 text-sm font-medium text-ink transition-colors duration-150 ease-out hover:text-accent">

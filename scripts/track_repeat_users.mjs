@@ -105,7 +105,7 @@ export async function checkRepeatVisitors({
 }
 
 if (process.argv[1]?.endsWith('track_repeat_users.mjs')) {
-  checkRepeatVisitors().then(({ timestamp, cohorts, ukRequests }) => {
+  checkRepeatVisitors().then(async ({ timestamp, cohorts, ukRequests }) => {
     console.log(`\n========================================================`);
     console.log(`🔍 SECUBUZZ REPEAT VISITOR AUDIT (${timestamp})`);
     console.log(`========================================================`);
@@ -149,6 +149,31 @@ if (process.argv[1]?.endsWith('track_repeat_users.mjs')) {
       directVisits += d.sum.visits;
     }
     console.log(`  Total Direct Page Loads: ${directCount} across ${directVisits} sessions.`);
+
+    // 4. Google Play Install Clicks & Conversions
+    try {
+      const clickRes = await fetch('https://secubuzz.com/api/analytics/install-clicks');
+      if (clickRes.ok) {
+        const clicks = await clickRes.json();
+        console.log(`\n📲 [4] GOOGLE PLAY INSTALL CLICKS & CONVERSIONS:`);
+        console.log(`  Total Clicks: ${clicks.totalClicks || 0} | Unique Clickers: ${clicks.uniqueClickers || 0} | Repeat Clickers: ${clicks.repeatClicks || 0}`);
+        if (clicks.breakdown && clicks.breakdown.length > 0) {
+          console.log(`  Source Breakdown:`);
+          for (const b of clicks.breakdown) {
+            console.log(`    - ${b.source.padEnd(16)}: ${b.count} clicks (${b.unique_clickers || b.count} uniques, ${b.repeats || 0} repeats)`);
+          }
+        }
+        if (clicks.recent && clicks.recent.length > 0) {
+          console.log(`  Recent Click Timeline:`);
+          for (const rc of clicks.recent.slice(0, 5)) {
+            const repeatTag = rc.is_repeat ? '[Repeat]' : '[New]';
+            console.log(`    - ${rc.clicked_at.slice(0, 19)} | ${rc.country} | ${rc.source} ${repeatTag}`);
+          }
+        }
+      }
+    } catch {
+      // Ignore if offline
+    }
 
     console.log(`\n========================================================\n`);
   }).catch(err => {

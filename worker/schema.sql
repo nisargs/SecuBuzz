@@ -18,3 +18,19 @@ CREATE TABLE IF NOT EXISTS sent_notifications (
   sent_at TEXT NOT NULL,
   recipient_count INTEGER DEFAULT 0
 );
+
+-- Tracking of Google Play App install clicks & referrals
+CREATE TABLE IF NOT EXISTS install_clicks (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  visitor_id TEXT,
+  source TEXT NOT NULL,
+  is_repeat INTEGER DEFAULT 0,
+  country TEXT,
+  referer TEXT,
+  user_agent TEXT,
+  clicked_at TEXT NOT NULL
+);
+
+CREATE INDEX IF NOT EXISTS idx_install_clicks_date ON install_clicks(clicked_at);
+CREATE INDEX IF NOT EXISTS idx_install_clicks_visitor ON install_clicks(visitor_id);
+
