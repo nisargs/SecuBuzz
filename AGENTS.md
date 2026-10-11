@@ -50,7 +50,7 @@
 - **Haptic Feedback (Completed):** Installed `expo-haptics` and wired tactile feedback into bookmarking (`SavedArticlesContext`), incident report copying (`copyReport.ts`), manual refresh (`index.tsx`, `advisories.tsx`), and theme/accent switches (`ThemeContext.tsx`).
 
 ## 7. Product Evolution & Post-Approval Roadmap (Claude + ChatGPT Synthesis)
-- **Current Milestone (Production Track In-Review):** 14-day closed testing passed and Production Access granted. Production Release `1.0.2` (Version Code 8) officially created and submitted for review across all 177+ countries/regions on **Oct 8, 2026**. Website public download CTAs updated to production Google Play. Maintain build freeze on native branch during review.
+- **Current Milestone (Officially Live on Google Play Store):** Production Release `1.0.2` (Version Code 8) is fully approved and **LIVE across all 177+ countries/regions on the Google Play Store**. The 14-day testing period and Google Play production review are completed and passed. The native build freeze is officially lifted. Next phase: Post-approval marketing activation and development of P0 *"My Stack / Am I Affected?"*.
 - **EPSS (Exploit Prediction Scoring System) Evaluation:** Scheduled for preliminary technical evaluation on Monday/Tuesday. EPSS is a free daily API from FIRST.org providing in-the-wild exploitation probability (e.g. 97th percentile / 0.94 probability) for CVEs. Must be lightweight and fail gracefully if offline.
 - **The Core Product Pivot ("Threat-to-Action"):**
   - Transform SecuBuzz from a cybersecurity news reader into a lightweight, personal threat-intelligence assistant.
