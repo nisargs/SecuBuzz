@@ -8,7 +8,11 @@ import { useEffect } from 'react';
 import { ThemeProvider, useTheme } from '../context/ThemeContext';
 import { getArticleRepository } from '../data/getArticleRepository';
 import { SavedArticlesProvider } from '../context/SavedArticlesContext';
-import { isExpoGo, registerForPushNotificationsAsync } from '../services/notificationService';
+import {
+  isExpoGo,
+  registerForPushNotificationsAsync,
+  syncTokenWithBackendAsync,
+} from '../services/notificationService';
 import { exoFonts } from '../theme/fonts';
 
 SplashScreen.preventAutoHideAsync();
@@ -191,10 +195,12 @@ export default function RootLayout() {
     };
   }, [loaded, router]);
 
-  // Request notification permission once at first-use flow after app loads
+  // Request notification permission once at first-use flow and sync preferences with backend
   useEffect(() => {
     if (loaded && !isExpoGo) {
-      void registerForPushNotificationsAsync();
+      void registerForPushNotificationsAsync().then(() => {
+        void syncTokenWithBackendAsync(null, false);
+      });
     }
   }, [loaded]);
 

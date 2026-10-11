@@ -71,6 +71,10 @@ export async function saveNotificationPreferencesAsync(
     const current = await getNotificationPreferencesAsync();
     const next: NotificationPreferences = { ...current, ...updates };
     await AsyncStorage.setItem(STORAGE_KEY_PREFERENCES, JSON.stringify(next));
+
+    // Proactively sync updated user alert preferences to Cloudflare D1 backend immediately
+    void syncTokenWithBackendAsync(null, true, next);
+
     return next;
   } catch (err) {
     console.warn('SecuBuzz: Could not save notification preferences:', err);
@@ -78,6 +82,9 @@ export async function saveNotificationPreferencesAsync(
   }
 }
 
+export const ANDROID_CHANNEL_BRIEFS = 'secubuzz-briefs';
+export const ANDROID_CHANNEL_ADVISORIES = 'secubuzz-advisories';
+export const ANDROID_CHANNEL_CRITICAL = 'secubuzz-critical';
 export const ANDROID_CHANNEL_ID = 'secubuzz-news';
 
 // Fallback to configured Cloudflare Worker URL or app.json extra
@@ -174,7 +181,7 @@ if (!isExpoGo) {
 }
 
 /**
- * Ensures the Android notification channel exists.
+ * Ensures all Android notification channels exist with distinct categories.
  * Required on Android 8.0+ and particularly Android 13+ before permissions/tokens.
  */
 export async function setupNotificationChannelAsync(): Promise<void> {
@@ -188,9 +195,46 @@ export async function setupNotificationChannelAsync(): Promise<void> {
   }
 
   try {
+    // 1. News Briefs Channel
+    await Notifications.setNotificationChannelAsync(ANDROID_CHANNEL_BRIEFS, {
+      name: 'News Briefs',
+      description: 'Instant alerts when new 60-word cybersecurity briefs are published',
+      importance: Notifications.AndroidImportance.HIGH,
+      vibrationPattern: [0, 250, 250, 250],
+      lightColor: '#4CC9F0',
+      enableLights: true,
+      enableVibrate: true,
+      showBadge: false,
+    });
+
+    // 2. Threat Advisories Channel
+    await Notifications.setNotificationChannelAsync(ANDROID_CHANNEL_ADVISORIES, {
+      name: 'Threat Advisories & Zero-Days',
+      description: 'CISA KEV catalog updates and active CVE security advisories',
+      importance: Notifications.AndroidImportance.HIGH,
+      vibrationPattern: [0, 250, 250, 250],
+      lightColor: '#F59E0B',
+      enableLights: true,
+      enableVibrate: true,
+      showBadge: false,
+    });
+
+    // 3. Critical Threats Channel (Max Importance)
+    await Notifications.setNotificationChannelAsync(ANDROID_CHANNEL_CRITICAL, {
+      name: 'Critical & Zero-Day Alerts',
+      description: 'Urgent alerts for active zero-day exploits and ransomware campaigns',
+      importance: Notifications.AndroidImportance.MAX,
+      vibrationPattern: [0, 500, 250, 500],
+      lightColor: '#EF4444',
+      enableLights: true,
+      enableVibrate: true,
+      showBadge: true,
+    });
+
+    // 4. Legacy fallback channel
     await Notifications.setNotificationChannelAsync(ANDROID_CHANNEL_ID, {
-      name: 'SecuBuzz News',
-      description: 'Instant alerts when new cybersecurity briefs are published',
+      name: 'SecuBuzz General',
+      description: 'General cybersecurity alerts and application dispatches',
       importance: Notifications.AndroidImportance.HIGH,
       vibrationPattern: [0, 250, 250, 250],
       lightColor: '#4CC9F0',
@@ -199,7 +243,7 @@ export async function setupNotificationChannelAsync(): Promise<void> {
       showBadge: false,
     });
   } catch (error) {
-    console.warn('SecuBuzz: Failed to configure notification channel:', error);
+    console.warn('SecuBuzz: Failed to configure notification channels:', error);
   }
 }
 
@@ -304,8 +348,8 @@ export async function registerForPushNotificationsAsync(
     // Save token locally
     await AsyncStorage.setItem(STORAGE_KEY_TOKEN, token);
 
-    // 5. Register with backend (Cloudflare Worker)
-    void syncTokenWithBackendAsync(token);
+    // 5. Register with backend (Cloudflare Worker) including user preferences
+    void syncTokenWithBackendAsync(token, true);
 
     return token;
   } catch (error) {
@@ -315,15 +359,27 @@ export async function registerForPushNotificationsAsync(
 }
 
 /**
- * Sends token to the backend endpoint idempotently.
+ * Sends token and user preferences to the backend endpoint idempotently.
+ * @param token - Expo push token (optional, will read from AsyncStorage if omitted)
+ * @param force - If true, ignores 24-hour rate limit to sync immediately (e.g. on preference change)
+ * @param prefsOverride - Pre-resolved preferences to avoid an extra storage read
  */
-export async function syncTokenWithBackendAsync(token: string): Promise<boolean> {
+export async function syncTokenWithBackendAsync(
+  token?: string | null,
+  force = false,
+  prefsOverride?: NotificationPreferences,
+): Promise<boolean> {
   try {
+    const resolvedToken = token || (await AsyncStorage.getItem(STORAGE_KEY_TOKEN));
+    if (!resolvedToken) {
+      return false;
+    }
+
     const lastSyncStr = await AsyncStorage.getItem(STORAGE_KEY_LAST_REGISTERED);
     const now = Date.now();
 
-    // Avoid excessive re-registrations if synced within the last 24 hours
-    if (lastSyncStr) {
+    // Avoid excessive re-registrations if synced within the last 24 hours (unless explicitly forced)
+    if (!force && lastSyncStr) {
       const lastSync = Number(lastSyncStr);
       if (now - lastSync < 24 * 60 * 60 * 1000) {
         return true;
@@ -331,6 +387,7 @@ export async function syncTokenWithBackendAsync(token: string): Promise<boolean>
     }
 
     const appVersion = Constants.expoConfig?.version ?? '1.0.0';
+    const prefs = prefsOverride || (await getNotificationPreferencesAsync());
 
     const response = await fetch(DEFAULT_API_URL, {
       method: 'POST',
@@ -338,9 +395,12 @@ export async function syncTokenWithBackendAsync(token: string): Promise<boolean>
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        token,
+        token: resolvedToken,
         platform: Platform.OS,
         appVersion,
+        newsBriefs: prefs.newsBriefs,
+        threatAdvisories: prefs.threatAdvisories,
+        severityThreshold: prefs.severityThreshold,
       }),
     });
 
@@ -351,7 +411,7 @@ export async function syncTokenWithBackendAsync(token: string): Promise<boolean>
       console.warn(
         'SecuBuzz: Backend rejected push token registration:',
         response.status,
-        await response.text()
+        await response.text(),
       );
       return false;
     }
@@ -361,3 +421,4 @@ export async function syncTokenWithBackendAsync(token: string): Promise<boolean>
     return false;
   }
 }
+

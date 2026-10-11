@@ -6,7 +6,10 @@ CREATE TABLE IF NOT EXISTS push_tokens (
   app_version TEXT,
   created_at TEXT NOT NULL,
   last_seen_at TEXT NOT NULL,
-  is_active INTEGER DEFAULT 1
+  is_active INTEGER DEFAULT 1,
+  news_briefs INTEGER DEFAULT 1,
+  threat_advisories INTEGER DEFAULT 1,
+  severity_threshold TEXT DEFAULT 'HIGH_CRITICAL'
 );
 
 CREATE INDEX IF NOT EXISTS idx_push_tokens_active ON push_tokens(is_active);

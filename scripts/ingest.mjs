@@ -2227,8 +2227,36 @@ await writeJsonFile(
 );
 
 // -----------------------------------------------------------------------------
-// PUSH NOTIFICATIONS BROADCAST
+// PUSH NOTIFICATIONS BROADCAST & USER PREFERENCE FILTERING
 // -----------------------------------------------------------------------------
+
+function shouldDeliverNotification(device, channelType, severity) {
+  if (!device || !device.token) return false;
+
+  // If device is missing explicit boolean flags (legacy shape), fallback to HIGH/CRITICAL default
+  if (typeof device.newsBriefs === "undefined") {
+    return severity === "CRITICAL" || severity === "HIGH";
+  }
+
+  // 1. Channel qualification: user must have enabled the alert channel
+  if (channelType === "brief" && !device.newsBriefs) {
+    return false;
+  }
+  if (channelType === "advisory" && !device.threatAdvisories) {
+    return false;
+  }
+
+  // 2. Severity floor: user's chosen threshold
+  const threshold = (device.severityThreshold || "HIGH_CRITICAL").toUpperCase();
+  if (threshold === "CRITICAL_ONLY") {
+    return severity === "CRITICAL";
+  }
+  if (threshold === "HIGH_CRITICAL") {
+    return severity === "CRITICAL" || severity === "HIGH";
+  }
+  // "ALL"
+  return true;
+}
 
 async function sendPushNotificationsForNewArticles(newArticles, activeFeed) {
   if (!newArticles || newArticles.length === 0) {
@@ -2312,7 +2340,7 @@ async function sendPushNotificationsForNewArticles(newArticles, activeFeed) {
     `\nPreparing push notifications for ${articlesToNotify.length} articles (capped from ${eligibleForPush.length} eligible candidates)...`,
   );
 
-  let tokens = [];
+  let devices = [];
   try {
     const headers = { "Content-Type": "application/json" };
     if (PUSH_ADMIN_SECRET) {
@@ -2323,8 +2351,15 @@ async function sendPushNotificationsForNewArticles(newArticles, activeFeed) {
     const tokenRes = await fetch(PUSH_TOKEN_API_URL, { headers });
     if (tokenRes.ok) {
       const data = await tokenRes.json();
-      if (Array.isArray(data.tokens)) {
-        tokens = data.tokens;
+      if (Array.isArray(data.devices)) {
+        devices = data.devices;
+      } else if (Array.isArray(data.tokens)) {
+        devices = data.tokens.map((tok) => ({
+          token: tok,
+          newsBriefs: true,
+          threatAdvisories: true,
+          severityThreshold: "HIGH_CRITICAL",
+        }));
       }
     } else {
       console.warn(
@@ -2338,7 +2373,7 @@ async function sendPushNotificationsForNewArticles(newArticles, activeFeed) {
     );
   }
 
-  if (tokens.length === 0) {
+  if (devices.length === 0) {
     console.log(
       "No registered push tokens found. Updating notification history.",
     );
@@ -2346,22 +2381,39 @@ async function sendPushNotificationsForNewArticles(newArticles, activeFeed) {
     return;
   }
 
-  console.log(`Broadcasting to ${tokens.length} registered device(s)...`);
+  console.log(`Loaded ${devices.length} registered device(s) from push registry.`);
 
   const invalidTokens = new Set();
 
   for (const article of articlesToNotify) {
-    console.log(`\nSending push notification for: "${article.headline}"`);
+    console.log(`\nEvaluating push notification for: "${article.headline}"`);
 
     const severity = (article.severity || "HIGH").toUpperCase();
+    const targetedDevices = devices.filter((d) =>
+      shouldDeliverNotification(d, "brief", severity),
+    );
+
+    if (targetedDevices.length === 0) {
+      console.log(
+        `[Push Targeting] 0 / ${devices.length} devices match user preferences for brief [${severity}]. Skipping dispatch.`,
+      );
+      notifiedSet.add(normaliseUrl(article.sourceUrl));
+      continue;
+    }
+
+    console.log(
+      `[Push Targeting] Delivering brief [${severity}] to ${targetedDevices.length} / ${devices.length} devices matching user alert preferences.`,
+    );
+
+    const channelId = severity === "CRITICAL" ? "secubuzz-critical" : "secubuzz-briefs";
     const title = `SecuBuzz · BRIEF [${severity}]`;
 
-    const messages = tokens.map((token) => ({
-      to: token,
+    const messages = targetedDevices.map((d) => ({
+      to: d.token,
       sound: "default",
       title,
       body: article.headline,
-      channelId: "secubuzz-news",
+      channelId,
       data: {
         type: "brief",
         articleId: article.sourceUrl,
@@ -2435,7 +2487,7 @@ async function sendPushNotificationsForNewArticles(newArticles, activeFeed) {
         body: JSON.stringify({
           articleId: article.sourceUrl,
           headline: article.headline,
-          recipientCount: tokens.length,
+          recipientCount: targetedDevices.length,
         }),
       });
     } catch {
@@ -2520,8 +2572,8 @@ async function checkAndBroadcastCisaKevZeroDays() {
       return;
     }
 
-    // Fetch registered device tokens
-    let tokens = [];
+    // Fetch registered device tokens with user preferences
+    let devices = [];
     try {
       const headers = { "Content-Type": "application/json" };
       if (PUSH_ADMIN_SECRET) {
@@ -2531,15 +2583,22 @@ async function checkAndBroadcastCisaKevZeroDays() {
       const tokenRes = await fetch(PUSH_TOKEN_API_URL, { headers });
       if (tokenRes.ok) {
         const tokenData = await tokenRes.json();
-        if (Array.isArray(tokenData.tokens)) {
-          tokens = tokenData.tokens;
+        if (Array.isArray(tokenData.devices)) {
+          devices = tokenData.devices;
+        } else if (Array.isArray(tokenData.tokens)) {
+          devices = tokenData.tokens.map((tok) => ({
+            token: tok,
+            newsBriefs: true,
+            threatAdvisories: true,
+            severityThreshold: "HIGH_CRITICAL",
+          }));
         }
       }
     } catch (err) {
       console.warn("Could not fetch tokens for CISA KEV alert:", err);
     }
 
-    if (tokens.length === 0) {
+    if (devices.length === 0) {
       console.log(
         "No registered push tokens found. Marking CISA KEV zero-days as seen.",
       );
@@ -2550,13 +2609,31 @@ async function checkAndBroadcastCisaKevZeroDays() {
     // Limit to at most 2 zero-day notifications per cycle to avoid notification spam
     const toNotify = candidates.slice(0, 2);
     console.log(
-      `Broadcasting ${toNotify.length} CISA KEV zero-day alert(s) to ${tokens.length} device(s)...`,
+      `Broadcasting up to ${toNotify.length} CISA KEV zero-day alert(s)...`,
     );
 
     for (const cve of toNotify) {
       const isRansomware =
         cve.knownRansomwareCampaignUse?.toLowerCase() === "known";
       const severity = isRansomware ? "CRITICAL" : "HIGH";
+
+      const targetedDevices = devices.filter((d) =>
+        shouldDeliverNotification(d, "advisory", severity),
+      );
+
+      if (targetedDevices.length === 0) {
+        console.log(
+          `[Push Targeting] 0 / ${devices.length} devices match user preferences for CISA KEV alert ${cve.cveID} [${severity}]. Skipping dispatch.`,
+        );
+        notifiedCveSet.add(cve.cveID);
+        continue;
+      }
+
+      console.log(
+        `[Push Targeting] Delivering CISA KEV alert ${cve.cveID} [${severity}] to ${targetedDevices.length} / ${devices.length} devices matching preferences.`,
+      );
+
+      const channelId = severity === "CRITICAL" ? "secubuzz-critical" : "secubuzz-advisories";
       const title = isRansomware
         ? "SecuBuzz · ADVISORY [CRITICAL - RANSOMWARE]"
         : `SecuBuzz · ADVISORY [${severity}]`;
@@ -2564,12 +2641,12 @@ async function checkAndBroadcastCisaKevZeroDays() {
 
       console.log(`Sending CISA alert: "${body}"`);
 
-      const messages = tokens.map((token) => ({
-        to: token,
+      const messages = targetedDevices.map((d) => ({
+        to: d.token,
         sound: "default",
         title,
         body,
-        channelId: "secubuzz-news",
+        channelId,
         data: {
           type: "advisory",
           cveID: cve.cveID,
