@@ -183,6 +183,12 @@ export interface Article {
 - **Zero-Day Pipeline**: Checks CISA KEV feed for newly listed CVEs and broadcasts immediately, bypassing LLM processing entirely ($0.00).
 - **Anti-AI Slop Guardrails**: Strict prompt constraints eliminating generic AI filler words ("delve", "tapestry", "in today's digital landscape") to produce razor-sharp 60-word briefs.
 - **Push Notification Broadcasting**: Relayed via Expo Push Notification Service to registered devices with silent background OTA update handling and URL-safe deep linking.
+  - **Zero-Stale-Push Mandate**:
+    - **Candidate Ingestion Floor**: RSS candidate items older than 4 days (96h) are discarded before AI processing and marked as seen in `seenUrls`.
+    - **Live Feed Invariant**: Push notifications are strictly blocked unless the article is verified present in `mergedFeed`.
+    - **24-Hour Freshness Gate**: Broadcasts strictly limited to articles published within the last 24 hours (`<= 24h`).
+    - **Ranked Severity Dispatch**: Prioritized by severity (`CRITICAL` > `HIGH` > `MEDIUM` > `LOW`), capped at 2 notifications per cycle with 15s spacing.
+    - **CISA KEV Freshness**: Zero-day alerts strictly limited to CVEs added to the KEV catalog within 72 hours (`<= 72h`).
 
 ---
 
