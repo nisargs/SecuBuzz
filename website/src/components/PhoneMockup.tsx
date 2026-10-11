@@ -6,12 +6,12 @@ export function PhoneMockup() {
       <div className="rounded-[44px] border border-line/80 bg-surface p-2 shadow-2xl shadow-accent/5 ring-1 ring-white/5">
         <div className="relative overflow-hidden rounded-[36px] bg-[#0B0F14]">
           <img
-            src="/screenshot.jpg"
+            src="/1.jpg"
             alt="SecuBuzz Mobile App Interface"
             className="block h-auto w-full select-none"
             loading="eager"
             width={320}
-            height={693}
+            height={711}
           />
         </div>
       </div>

@@ -952,8 +952,8 @@ export default {
         let assetRes = await env.ASSETS.fetch(request);
         const contentType = assetRes.headers.get('content-type') || '';
 
-        // If static asset was found (CSS, JS, images, icons, etc.)
-        if (assetRes.status === 200 && !contentType.includes('text/html')) {
+        // If static asset was found (CSS, JS, images, icons, video, etc.)
+        if ((assetRes.status === 200 || assetRes.status === 206) && !contentType.includes('text/html')) {
           return assetRes;
         }
 

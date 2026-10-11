@@ -49,3 +49,7 @@ out/
 .dev.vars*
 !.dev.vars.example
 !.env.example
+
+# root media uploads (copied to website/public)
+/1.jpg
+/brag.mp4

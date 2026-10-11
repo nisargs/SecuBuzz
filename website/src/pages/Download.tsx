@@ -41,6 +41,49 @@ export function Download() {
         </div>
       </section>
 
+      <section className="border-b border-line bg-surface/40">
+        <div className="mx-auto max-w-site px-5 py-16 md:px-8 lg:py-20">
+          <div className="mx-auto max-w-2xl text-center">
+            <div className="inline-flex items-center gap-2 rounded-full border border-line bg-surface px-3 py-1 font-mono text-xs text-accent">
+              <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
+              Launch Walkthrough
+            </div>
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink md:text-4xl">
+              See SecuBuzz in action
+            </h2>
+            <p className="mt-3 text-base text-muted md:text-lg">
+              A 23-second walkthrough of real-time threat triage, 60-word security briefs, and CISA KEV deadline tracking.
+            </p>
+          </div>
+
+          <div className="mx-auto mt-10 max-w-4xl">
+            <div className="overflow-hidden rounded-2xl border border-line bg-surface shadow-2xl shadow-accent/5 ring-1 ring-white/5">
+              <div className="flex items-center justify-between border-b border-line bg-raised/70 px-4 py-2.5">
+                <div className="flex items-center gap-2">
+                  <span className="h-2.5 w-2.5 rounded-full bg-line" />
+                  <span className="h-2.5 w-2.5 rounded-full bg-line" />
+                  <span className="h-2.5 w-2.5 rounded-full bg-line" />
+                  <span className="ml-2 font-mono text-xs text-subtle">SecuBuzz · Product Walkthrough</span>
+                </div>
+                <span className="font-mono text-xs text-muted">0:23 · 1080p</span>
+              </div>
+              <div className="relative aspect-video w-full bg-[#0B0F14]">
+                <video
+                  src="/brag.mp4"
+                  poster="/1.jpg"
+                  controls
+                  playsInline
+                  preload="metadata"
+                  className="h-full w-full object-contain"
+                >
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="mx-auto grid max-w-site gap-12 px-5 py-20 md:px-8 lg:grid-cols-[0.8fr_1.2fr]">
         <h2 className="text-3xl font-semibold tracking-tight text-ink">What’s in the app</h2>
         <dl className="divide-y divide-line border-y border-line">
