@@ -41,7 +41,7 @@
     - Candidate floor: RSS candidate items older than 4 days (96h) are discarded before AI processing and marked as seen in `seenUrls` to prevent repeated evaluation.
     - Live Feed Invariant: Push notifications are strictly blocked unless the article is verified present in `mergedFeed`.
     - Push Freshness Invariant: Push broadcasts are strictly limited to articles published within the last 24 hours (`<= 24h`).
-    - Severity Floor: Only `CRITICAL` or `HIGH` severity articles are eligible for push broadcasts (max 2 per cycle).
+    - Severity Floor: Prioritized by severity weight (CRITICAL > HIGH > MEDIUM > LOW, max 2 per cycle) so users receive fresh dispatches while relying on in-app preferences to filter.
     - CISA KEV Freshness: CISA zero-day alerts are strictly limited to CVEs added within 72 hours (`<= 72h`).
 
 ## 6. Native `.aab` Release (v1.0.2 / Code 6)

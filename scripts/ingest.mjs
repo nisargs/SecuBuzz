@@ -2251,7 +2251,7 @@ async function sendPushNotificationsForNewArticles(newArticles, activeFeed) {
   // - Must not have been previously notified prior to this run
   // - Must actually exist in the active merged feed
   // - Must have been published within the last 24 hours (strictly zero stale pushes)
-  // - Must meet the severity threshold: CRITICAL or HIGH only
+  // - All severities (CRITICAL, HIGH, MEDIUM, LOW) eligible, prioritized by severity weight
   const now = Date.now();
   const MAX_PUSH_AGE_MS = 24 * 60 * 60 * 1000; // 24 hours maximum push age
 
@@ -2283,18 +2283,11 @@ async function sendPushNotificationsForNewArticles(newArticles, activeFeed) {
       return false;
     }
 
-    // Must be CRITICAL or HIGH severity
-    const severity = (article.severity || "").toUpperCase();
-    if (severity !== "CRITICAL" && severity !== "HIGH") {
-      console.log(`[Push Filter] Skipping "${article.headline}": Severity ${severity} does not meet CRITICAL/HIGH push threshold.`);
-      return false;
-    }
-
     return true;
   });
 
   if (eligibleForPush.length === 0) {
-    console.log("No fresh (<= 24h) CRITICAL/HIGH articles to broadcast.");
+    console.log("No fresh (<= 24h) articles to broadcast.");
     await writeJsonFile(NOTIFIED_ARTICLES_FILE, Array.from(notifiedSet));
     return;
   }
