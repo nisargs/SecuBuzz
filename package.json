@@ -42,7 +42,8 @@
     "analytics": "node scripts/cf_analytics.mjs",
     "analytics:repeat": "node scripts/track_repeat_users.mjs",
     "watchdog": "node scripts/watchdog.mjs",
-    "verify:feed": "node scripts/verify_feed_freshness.mjs"
+    "verify:feed": "node scripts/verify_feed_freshness.mjs",
+    "test:push": "node scripts/test_push_targeting.mjs"
   },
   "private": true
 }
