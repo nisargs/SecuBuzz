@@ -142,89 +142,33 @@ function deduplicateFeed(articles: any[]): ArticleItem[] {
       return timeB - timeA;
     });
 
-  const deduped: any[] = [];
+  const deduped: ArticleItem[] = [];
+  const seenIds = new Set<string>();
+  const seenUrls = new Set<string>();
+  const seenNormTitles = new Set<string>();
 
   for (const art of recentArticles) {
     const title = (art.title || art.headline || '').trim();
     if (!title) continue;
 
-    const summary = (art.summary || '').trim();
-    const source = (art.source || art.sourceName || 'SecuBuzz').trim();
-    const sourceUrl = (art.sourceUrl || art.url || art.id || '').trim();
-    const publishedAt = art.publishedAt || new Date().toISOString();
-    const fullText = (title + ' ' + summary).toLowerCase();
-    const cves = extractCvesFromText(title + ' ' + summary);
-    const keywords = getTitleKeywords(title);
-    const time = Date.parse(publishedAt) || 0;
+    const sourceUrl = (art.sourceUrl || art.url || '').trim().toLowerCase();
+    const articleId = (art.id || sourceUrl || title).trim().toLowerCase();
+    const normTitle = title.toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 60);
 
-    let duplicateOf: any = null;
-    for (const existing of deduped) {
-      const existingTime = Date.parse(existing.publishedAt) || 0;
-      const timeDiffDays = Math.abs(time - existingTime) / (1000 * 3600 * 24);
-      if (timeDiffDays > 7) continue;
-
-      // 1) Shared CVE
-      const existingCves = extractCvesFromText((existing.title || existing.headline || '') + ' ' + (existing.summary || ''));
-      if (cves.length > 0 && existingCves.some(c => cves.includes(c))) {
-        duplicateOf = existing;
-        break;
-      }
-
-      // 2) Shared Enterprise Entity
-      const existingFull = ((existing.title || existing.headline || '') + ' ' + (existing.summary || '')).toLowerCase();
-      for (const ent of ENTITY_TERMS) {
-        if (fullText.includes(ent) && existingFull.includes(ent)) {
-          duplicateOf = existing;
-          break;
-        }
-      }
-      if (duplicateOf) break;
-
-      // 3) Shared specific soldier espionage event
-      if (fullText.includes('soldier') && existingFull.includes('soldier')) {
-        duplicateOf = existing;
-        break;
-      }
-
-      // 4) Normalized component / zero-day matching (e.g. Apple CoreGraphics zero-day coverage)
-      const normFull = fullText.replace(/[^a-z0-9]/g, '');
-      const normExisting = existingFull.replace(/[^a-z0-9]/g, '');
-      if (
-        (normFull.includes('coregraphics') && normExisting.includes('coregraphics')) ||
-        (normFull.includes('apple') && normFull.includes('zeroday') && normExisting.includes('apple') && normExisting.includes('zeroday') && timeDiffDays <= 3)
-      ) {
-        duplicateOf = existing;
-        break;
-      }
-
-      // 5) Overlap of 2+ significant keywords within 3 days
-      const existingKw = new Set(getTitleKeywords(existing.title || existing.headline || ''));
-      const overlap = keywords.filter(k => existingKw.has(k));
-      if (overlap.length >= 2 && timeDiffDays <= 3) {
-        duplicateOf = existing;
-        break;
-      }
-    }
-
-    if (duplicateOf) {
-      if (!duplicateOf.additionalSources) duplicateOf.additionalSources = [];
-      if (!duplicateOf.additionalSources.some((s: any) => s.sourceUrl === sourceUrl || s.source === source)) {
-        duplicateOf.additionalSources.push({ source, sourceUrl });
-      }
-      if (!duplicateOf.aliases) duplicateOf.aliases = [];
-      const dupSlug = createSlug(title, art.id || art.sourceUrl || art.url || title);
-      if (!duplicateOf.aliases.includes(dupSlug)) duplicateOf.aliases.push(dupSlug);
-      const dupBase = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 50).replace(/^-+|-+$/g, '');
-      if (dupBase && !duplicateOf.aliases.includes(dupBase)) duplicateOf.aliases.push(dupBase);
+    // O(1) duplicate filter (protects free-tier CPU limit from quadratic degradation)
+    if (seenIds.has(articleId) || (sourceUrl && seenUrls.has(sourceUrl)) || (normTitle && seenNormTitles.has(normTitle))) {
       continue;
     }
 
-    const articleId = art.id || art.sourceUrl || art.url || title;
-    const slug = art.slug || createSlug(title, articleId);
+    seenIds.add(articleId);
+    if (sourceUrl) seenUrls.add(sourceUrl);
+    if (normTitle) seenNormTitles.add(normTitle);
+
+    const slug = art.slug || createSlug(title, art.id || sourceUrl || title);
     const baseSlug = (title || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 50).replace(/^-+|-+$/g, '');
     const hex = slug.slice(-6);
 
-    const aliases = [baseSlug, `article-${hex}`, hex];
+    const aliases: string[] = [baseSlug, `article-${hex}`, hex];
     if (art.id && !aliases.includes(art.id.toLowerCase())) {
       aliases.push(art.id.toLowerCase());
     }
@@ -242,7 +186,7 @@ function deduplicateFeed(articles: any[]): ArticleItem[] {
     });
   }
 
-  return deduped.slice(0, 250);
+  return deduped.slice(0, 350);
 }
 
 let cachedArticles: ArticleItem[] | null = null;
@@ -277,12 +221,16 @@ async function getKevAdvisories(full: boolean = true): Promise<KevVulnerability[
     return full ? cachedAllKev : cachedRecentKev;
   }
   try {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 3500);
     const res = await fetch(CISA_KEV_URL, {
+      signal: controller.signal,
       headers: {
         'User-Agent': 'SecuBuzz/1.0 (+https://secubuzz.com)',
         'Accept': 'application/json',
       },
     });
+    clearTimeout(timeoutId);
     if (res.ok) {
       const data: any = await res.json();
       if (data && Array.isArray(data.vulnerabilities) && data.vulnerabilities.length > 0) {
@@ -406,7 +354,9 @@ function isKnownSpaRoute(pathname: string, articlesList: ArticleItem[], advisori
 
   if (clean.startsWith('/news/')) {
     const slug = clean.slice('/news/'.length).toLowerCase();
-    return articlesList.some(a => {
+    if (!slug) return false;
+    // 1) First check active feed
+    const inFeed = articlesList.some(a => {
       const headline = a.headline || a.title || '';
       const articleId = a.id || a.sourceUrl || a.url || headline;
       const artSlug = (a.slug || createSlug(headline, articleId)).toLowerCase();
@@ -416,14 +366,29 @@ function isKnownSpaRoute(pathname: string, articlesList: ArticleItem[], advisori
       if (base && (slug === base || slug.startsWith(base) || base.startsWith(slug))) return true;
       return false;
     });
+    if (inFeed) return true;
+
+    // 2) Any valid news slug (alphanumeric with hyphens/underscores, >= 3 chars) is a valid SPA article route
+    // This allows Googlebot to index historical/aged-out stories with HTTP 200 instead of receiving a 404
+    return /^[a-z0-9_-]{3,}$/i.test(slug);
   }
 
   if (clean.startsWith('/advisories/')) {
     const slug = clean.slice('/advisories/'.length).toLowerCase();
-    return advisoriesList.some(
+    if (!slug) return false;
+    // 1) Any standard CVE (cve-YYYY-NNNN) or GHSA identifier
+    if (/^(cve-\d{4}-\d+|ghsa-[a-z0-9_-]+)$/i.test(slug)) {
+      return true;
+    }
+    // 2) Active KEV catalog match
+    if (advisoriesList.some(
       a => (a.cveID && a.cveID.toLowerCase() === slug) ||
            (a.cveID && slug.includes(a.cveID.toLowerCase()))
-    );
+    )) {
+      return true;
+    }
+    // 3) Any valid advisory slug (>= 4 chars)
+    return /^[a-z0-9_-]{4,}$/i.test(slug);
   }
 
   return false;
