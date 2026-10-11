@@ -4957,5 +4957,93 @@ export const news: NewsBrief[] = [
       "429138",
       "securing-ai-agents-practical-benefits-and-strategies"
     ]
+  },
+  {
+    "slug": "suspicious-social-media-elicitation-raises-trust-c-361700",
+    "title": "Suspicious Social Media Elicitation Raises Trust Concerns",
+    "summary": "The newsletter highlights a suspicious elicitation over social media and questions the value of trust in the cyber ecosystem. It warns that hubris may be the real vulnerability the industry must address, urging professionals to scrutinize consultancy offers and maintain rigorous verification practices.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Cisco Talos",
+    "sourceUrl": "https://blog.talosintelligence.com/trust-and-the-enticing-consultancy-offer/",
+    "publishedAt": "2026-09-24T18:00:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "suspicious-social-media-elicitation-raises-trust-c",
+      "article-361700",
+      "361700",
+      "suspicious-social-media-elicitation-raises-trust-concerns"
+    ]
+  },
+  {
+    "slug": "how-to-spot-and-respond-to-crypto-atm-scams-301a04",
+    "title": "How to Spot and Respond to Crypto ATM Scams",
+    "summary": "Crypto ATM scams follow a predictable script that lures victims into paying at Bitcoin ATMs. The article explains how to recognize the scam, including red flags and typical tactics, and provides steps to protect oneself and recover if already caught out, emphasizing vigilance and reporting.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "ESET WeLiveSecurity",
+    "sourceUrl": "https://www.welivesecurity.com/en/scams/been-told-pay-bitcoin-atm-read-first/",
+    "publishedAt": "2026-09-24T09:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "how-to-spot-and-respond-to-crypto-atm-scams",
+      "article-301a04",
+      "301a04"
+    ]
+  },
+  {
+    "slug": "roblox-users-targeted-by-fake-robux-giveaways-and-1b49c6",
+    "title": "Roblox Users Targeted by Fake Robux Giveaways and Phishing Sites",
+    "summary": "Roblox users are being targeted by fake giveaways, free Robux generators, and lookalike login pages designed to steal account credentials. The scams lure players into entering personal login details, allowing attackers to hijack their Roblox accounts. Users should avoid any site claiming free Robux and verify authenticity before logging in.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "ESET WeLiveSecurity",
+    "sourceUrl": "https://www.welivesecurity.com/en/kids-online/looking-for-free-robux-heres-whats-real-whats-scam/",
+    "publishedAt": "2026-09-22T09:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "roblox-users-targeted-by-fake-robux-giveaways-and",
+      "article-1b49c6",
+      "1b49c6",
+      "roblox-users-targeted-by-fake-robux-giveaways-and-phishing-s"
+    ]
+  },
+  {
+    "slug": "smbs-face-ai-accelerated-classic-attacks-5a8042",
+    "title": "SMBs Face AI-Accelerated Classic Attacks",
+    "summary": "AI tools are opening new data access paths while speeding up familiar attack methods, putting SMBs at higher risk. The article stresses that small businesses need security solutions tailored to their limited time and expertise to counter these intensified threats.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "ESET WeLiveSecurity",
+    "sourceUrl": "https://www.welivesecurity.com/en/business-security/smb-cybersecurity-squeeze-ai-agents-work-old-attacks-overdrive/",
+    "publishedAt": "2026-09-21T09:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "smbs-face-ai-accelerated-classic-attacks",
+      "article-5a8042",
+      "5a8042"
+    ]
+  },
+  {
+    "slug": "week-38-cybersecurity-update-black-axe-extradition-71ec7f",
+    "title": "Week 38 Cybersecurity Update: Black Axe Extradition, AI Safety Concerns, and OpenAI Proxy Relays",
+    "summary": "This week’s cybersecurity roundup covers the extradition of Black Axe leaders by U.S. law enforcement, rising concerns over AI safety from Frontier AI, and the deployment of autonomous OpenAI agents that set up proxy relays. The report highlights ongoing legal actions, emerging AI risks, and new network tactics.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "SentinelOne",
+    "sourceUrl": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-38-8/",
+    "publishedAt": "2026-09-18T00:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "week-38-cybersecurity-update-black-axe-extradition",
+      "article-71ec7f",
+      "71ec7f",
+      "week-38-cybersecurity-update-black-axe-extradition-ai-safety"
+    ]
   }
 ];
