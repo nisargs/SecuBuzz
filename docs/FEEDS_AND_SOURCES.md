@@ -5,7 +5,7 @@ This document provides a single source of truth for all active data feeds, secur
 ---
 
 ## 1. Active News Feeds (Briefs Tab)
-These 26 curated feeds are ingested every 2 hours by `scripts/ingest.mjs` running on GitHub Actions (`cron: "17 */2 * * *"`). Each raw item is filtered, deduplicated, and converted by dual-engine AI (Groq `openai/gpt-oss-20b` with automated fallback to Google Gemini `gemini-2.5-flash`) into concise, 60-word security briefs classified by Threat Severity (`CRITICAL`, `HIGH`, `MEDIUM`, `LOW`) and Category.
+These 27 curated feeds are ingested every 2 hours by `scripts/ingest.mjs` running on GitHub Actions (`cron: "17 */2 * * *"`). Each raw item is filtered, deduplicated, and converted by dual-engine AI (Groq `openai/gpt-oss-20b` with automated fallback to Google Gemini `gemini-2.5-flash`) into concise, 60-word security briefs classified by Threat Severity (`CRITICAL`, `HIGH`, `MEDIUM`, `LOW`) and Category.
 
 | # | Source Name | Feed URL | Primary Focus |
 |---|---|---|---|
@@ -35,6 +35,7 @@ These 26 curated feeds are ingested every 2 hours by `scripts/ingest.mjs` runnin
 | **24** | **Schneier on Security** | `https://www.schneier.com/feed/atom/` | Cryptography, privacy, and strategic security policy |
 | **25** | **Malwarebytes Labs** | `https://www.malwarebytes.com/blog/feed/index.xml` | Threat intelligence, malicious infrastructure tracking |
 | **26** | **ESET WeLiveSecurity** | `https://www.welivesecurity.com/en/rss/feed/` | Global APT analysis, spyware campaigns, wiper malware |
+| **27** | **Cyber Security News** | `https://feeds.feedburner.com/cyber-security-news` | Active zero-days, ransomware intrusion techniques, tool updates |
 
 ---
 

@@ -174,8 +174,8 @@ export interface Article {
 ### Ingestion Script (`scripts/ingest.mjs`)
 - **Schedule**: Runs automatically **every 1 hour** via GitHub Actions (`cron: "17 * * * *"` in `.github/workflows/ingest.yml`), powered by the multi-engine rotation (Groq + Gemini 2.5 Flash + OpenRouter) to deliver rolling, timely security news around the clock without 4-hour gaps.
 - **Curated Intelligence Sources**:
-  Scrapes 26 top-tier cybersecurity authorities:
-  *The Hacker News, BleepingComputer, CISA, Krebs on Security, SANS ISC, Unit 42 (Palo Alto), Zero Day Initiative, The Record, SecurityWeek, Dark Reading, Help Net Security, CyberNews AI, Microsoft Security, Google Security, Sophos Threat Research, Check Point Research, CrowdStrike, The DFIR Report, Wiz Research, Cloudflare Security, Cisco Talos, Trend Micro Research, SentinelOne, Schneier on Security, Malwarebytes Labs, ESET WeLiveSecurity.*
+  Scrapes 27 top-tier cybersecurity authorities:
+  *The Hacker News, BleepingComputer, CISA, Krebs on Security, SANS ISC, Unit 42 (Palo Alto), Zero Day Initiative, The Record, SecurityWeek, Dark Reading, Help Net Security, CyberNews AI, Microsoft Security, Google Security, Sophos Threat Research, Check Point Research, CrowdStrike, The DFIR Report, Wiz Research, Cloudflare Security, Cisco Talos, Trend Micro Research, SentinelOne, Schneier on Security, Malwarebytes Labs, ESET WeLiveSecurity, Cyber Security News.*
 - **Dual/Tri-Engine AI Resiliency**:
   - **Primary**: Groq (`llama-3.3-70b-versatile` / `openai/gpt-oss-20b`) with strict JSON schema outputs and rate-limit backoff listening to `x-ratelimit-reset-tokens`.
   - **Backup 1**: Google Gemini (`gemini-2.5-flash`) fallback if Groq encounters rate limits or service degradation.

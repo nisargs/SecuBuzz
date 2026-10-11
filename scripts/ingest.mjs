@@ -196,6 +196,10 @@ const FEEDS = [
     name: "ESET WeLiveSecurity",
     url: "https://www.welivesecurity.com/en/rss/feed/",
   },
+  {
+    name: "Cyber Security News",
+    url: "https://feeds.feedburner.com/cyber-security-news",
+  },
 ];
 
 // -----------------------------------------------------------------------------

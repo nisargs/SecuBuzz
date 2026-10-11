@@ -30,7 +30,7 @@
   - Privacy Policy: `https://secubuzz.com/privacy`
   - Account Deletion: `https://secubuzz.com/account-deletion`
   - Both URLs and in-app screens (`privacy.tsx`, `data-privacy.tsx`) explicitly declare the app name **"SecuBuzz"** and developer **"MiSo Labs"**.
-- **Feed System:** `scripts/ingest.mjs` retains up to 350 articles (~7–10 days of security intelligence across 26 curated sources), scheduled every 2 hours via GitHub Actions (`cron: "17 */2 * * *"`). Powered by resilient dual-engine AI (Groq `openai/gpt-oss-20b` + Google Gemini `gemini-2.5-flash` fallback).
+- **Feed System:** `scripts/ingest.mjs` retains up to 350 articles (~7–10 days of security intelligence across 27 curated sources), scheduled every 2 hours via GitHub Actions (`cron: "17 */2 * * *"`). Powered by resilient dual-engine AI (Groq `openai/gpt-oss-20b` + Google Gemini `gemini-2.5-flash` fallback).
 - **Feed Resilience & Watchdog System (Zero-Silent-Failure Mandate):**
   - **Read-Only Invariant:** `scripts/sync_website_data.mjs` is strictly read-only on `feed.json` and must NEVER write or overwrite `feed.json`.
   - **In-Pipeline Gate (`scripts/verify_feed_freshness.mjs`):** Runs in `.github/workflows/ingest.yml` before R2 upload. Asserts >= 50 articles and newest story meets adaptive threshold (<= 32h on weekends, <= 18h on weekdays) accounting for natural journalism lulls; fails CI loudly if stale.
@@ -138,7 +138,7 @@
       5. *Download Clicks*: Breakdown of `/go/play` button clicks by country/source (human vs crawler) and `/download` visits.
 - **Authoritative Inventory Counts:**
   - **Advisories count:** Exactly **1,789 active advisories** (CISA KEV ~1,530 + GitHub Advisories ~259). Kept strictly consistent across mobile app (`1,789 active`) and website (`1,789 active advisories`).
-  - **News feed count:** Up to **350 articles** (~7–10 days of rolling intelligence across 26 verified threat feeds).
+  - **News feed count:** Up to **350 articles** (~7–10 days of rolling intelligence across 27 verified threat feeds).
 - **100% Free Tier ($0.00 Cost Guarantee):**
   - AI Summarization: Dual-engine architecture. Primary Groq free tier ceiling is 8,000 TPM, 30 RPM, 14,400 RPD; backup Google Gemini free tier offers 1,000,000 TPM, 15 RPM, 1,500 RPD. Ingestion runs every 2 hours, batching 2 articles with a 5s backoff and automated fallback. Adding feeds or increasing feed size respects these ceilings and never incurs costs.
   - Cloudflare: Worker (100k req/day free), R2 (10GB / 1M writes free), D1 (5M reads / 100k writes free).
