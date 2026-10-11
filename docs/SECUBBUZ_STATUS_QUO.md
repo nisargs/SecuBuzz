@@ -249,10 +249,10 @@ SecuBuzz enforces a strict, transparent two-tier privacy model:
 | `GET /api/advisories` | **Public (HTTP 200)** | 1,789 active CVE security advisories (CISA KEV + GitHub). |
 | `GET /api/epss?cve={ID}` | **Public (HTTP 200)** | FIRST.org EPSS exploit probability proxy (edge-cached 24h). |
 | `GET /api/cve-metrics?cve={ID}` | **Public (HTTP 200)** | NIST NVD CVSS vectors proxy (edge-cached 24h). |
-| `POST /api/push-tokens` | **Public (HTTP 200)** | Write-only device registration on app install. |
+| `POST /api/push-tokens` | **Public (HTTP 200)** | Idempotent device registration & alert preferences sync (`newsBriefs`, `threatAdvisories`, `severityThreshold`). |
 | `GET /health` | **Public (HTTP 200)** | Feed freshness & edge health monitoring. |
 | `GET /api/analytics/install-clicks` | **Private (HTTP 401)** | Install button click telemetry & conversions. |
-| `GET /api/push-tokens` | **Private (HTTP 401)** | Push token registry management. |
+| `GET /api/push-tokens` | **Private (HTTP 401)** | Push token registry management & preference-filtered device fleet queries. |
 | `POST /api/trigger-ingest` | **Private (HTTP 401)** | Emergency workflow trigger for GitHub Actions. |
 
 *Protected endpoints require `PUSH_ADMIN_SECRET` / `ADMIN_KEY` via `Authorization: Bearer <secret>` or `x-admin-key: <secret>`.*
