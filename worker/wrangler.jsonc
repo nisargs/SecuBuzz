@@ -1,6 +1,7 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "secubuzz-push",
+	"account_id": "36eb47dcba495d7d872a2647755f6bde",
 	"main": "src/index.ts",
 	"compatibility_date": "2026-09-01",
 	"compatibility_flags": [

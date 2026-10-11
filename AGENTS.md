@@ -127,9 +127,15 @@
   - `GET /health`: Watchdog uptime endpoint reporting feed age & R2 status for external monitors (HetrixTools).
   - *Probes & Unknown `/api/*` Routes*: Always return `404 API endpoint not found`.
 - **Telemetry & Count Inquiries Protocol (Zero-Fumble Responsibility):**
-  - When the user asks for traffic, install counts, or repeat visitor metrics:
+  - When the user asks for stats, traffic, install counts, or repeat visitor metrics:
     - **NEVER** ask the user for secrets, API keys, or credentials.
-    - Run `node scripts/track_repeat_users.mjs` or `npm run analytics` directly in the shell. These scripts query Cloudflare D1 via the Cloudflare Management API using the developer's local Wrangler OAuth session.
+    - Run `npx wrangler d1 execute secubuzz-push-db --remote --command "..."` (via `worker/` directory) and `node scripts/cf_analytics.mjs` / `node scripts/track_repeat_users.mjs`.
+    - **Mandatory 5-Point Reporting Format**: Always deliver the exact structure:
+      1. *Real User Numbers (Traffic & Sessions)*: 7-day daily breakdown of unique visitors, total requests, page views, bandwidth, and top countries (US, DE, CA, NL, IN, AU, etc.).
+      2. *Pages Checked*: Breakdown of RUM page views by route (`/`, `/news`, `/advisories`, `/download`, `/publishers`, `/about`, and specific CVE/brief URLs).
+      3. *Repeat Users*: Returning direct readers (bookmarks/shortcuts), repeat install clickers (`is_repeat: 1`), and active mobile push fleet in D1 (85 devices across `v1.0.2`, `v1.0.1`, `v1.0.0`).
+      4. *Time on Site & Engagement*: Pages/session (~2.9 pages), dwell time (~1.5–3 min for 60-word briefs), inbound referrers (Reddit, Google, direct), and device OS split (Windows, iOS, Android, macOS).
+      5. *Download Clicks*: Breakdown of `/go/play` button clicks by country/source (human vs crawler) and `/download` visits.
 - **Authoritative Inventory Counts:**
   - **Advisories count:** Exactly **1,789 active advisories** (CISA KEV ~1,530 + GitHub Advisories ~259). Kept strictly consistent across mobile app (`1,789 active`) and website (`1,789 active advisories`).
   - **News feed count:** Up to **350 articles** (~7–10 days of rolling intelligence across 26 verified threat feeds).
