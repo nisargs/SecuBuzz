@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Oct 2026 13:24:02 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 11 Oct 2026 16:19:07 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>FortiBleed Vulnerability Still Active, Patch Tuesday Forecast</title>
@@ -14,6 +14,24 @@
       <description><![CDATA[FortiBleed, a critical buffer overflow flaw in Fortinet FortiGate firewalls, remains active. The vulnerability allows remote attackers to execute arbitrary code via crafted packets, potentially compromising network infrastructure. Fortinet has issued patches; administrators should apply updates promptly to mitigate exploitation risks.]]></description>
       <pubDate>Sun, 11 Oct 2026 08:00:49 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/11/week-in-review-fortibleed-is-still-active-patch-tuesday-forecast/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Best Protected Website Builder 2027: Which Platform Offers True Security</title>
+      <link>https://secubuzz.com/news/best-protected-website-builder-2027-which-platform-55b49d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/best-protected-website-builder-2027-which-platform-55b49d</guid>
+      <description><![CDATA[The article reviews hosted website builders that eliminate the need for site owners to manage core updates, TLS renewal, and server hardening. It argues that the real question is not whether to use a builder, but which builder’s security program provides the most robust protection against self‑managed site hacks.]]></description>
+      <pubDate>Sun, 11 Oct 2026 03:35:31 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/best-protected-website-builder/">Cyber Security News</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Ransomware Groups Exploit Palo Alto GlobalProtect Authentication Bypass CVE-2026-0257</title>
+      <link>https://secubuzz.com/news/ransomware-groups-exploit-palo-alto-globalprotect-4ae2e2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ransomware-groups-exploit-palo-alto-globalprotect-4ae2e2</guid>
+      <description><![CDATA[Ransomware actors Qilin and Settra are using CVE-2026-0257 to bypass authentication in Palo Alto Networks PAN-OS GlobalProtect and Prisma Access, creating unauthorized VPN sessions that grant stealthy access to internal networks. The flaw enables attackers to enter trusted remote access services, posing a serious detection challenge.]]></description>
+      <pubDate>Sun, 11 Oct 2026 03:21:01 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/palo-alto-globalprotect-flaw-vpn-access/">Cyber Security News</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -78,6 +96,42 @@
       <pubDate>Sat, 10 Oct 2026 09:11:34 GMT</pubDate>
       <source url="https://isc.sans.edu/diary/rss/33414">SANS Internet Storm Center</source>
       <category>Policy</category>
+    </item>
+    <item>
+      <title>REA Tool Integrates AI Coders with Ghidra and IDA Pro for Automated Reverse Engineering</title>
+      <link>https://secubuzz.com/news/rea-tool-integrates-ai-coders-with-ghidra-and-ida-78cb23</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rea-tool-integrates-ai-coders-with-ghidra-and-ida-78cb23</guid>
+      <description><![CDATA[The open‑source REA project connects AI coding agents Claude Code and Cursor to disassemblers Ghidra, IDA Pro, and Hopper, enabling researchers to trace program behavior and generate explanatory evidence without source code. It enhances reverse‑engineering workflows by automating analysis and documentation.]]></description>
+      <pubDate>Sat, 10 Oct 2026 08:08:45 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/reverse-engineer-anything-tool/">Cyber Security News</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Single Prompt Can Hijack AWS Bedrock AI Agents and Steal Cloud Credentials</title>
+      <link>https://secubuzz.com/news/single-prompt-can-hijack-aws-bedrock-ai-agents-and-1428ce</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/single-prompt-can-hijack-aws-bedrock-ai-agents-and-1428ce</guid>
+      <description><![CDATA[A single prompt sent to a public-facing AWS Bedrock AgentCore AI agent can expose private chats, source code, long‑term memories, API keys, OAuth tokens, and other secrets in the same AWS account and region. The attack chain, named AgentCorruption, allows attackers to access all secrets stored in the affected agents.]]></description>
+      <pubDate>Sat, 10 Oct 2026 06:58:38 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/agentcorruption-attack/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Microsoft Teams Adds QR Code Checks to Detect Malicious Links</title>
+      <link>https://secubuzz.com/news/microsoft-teams-adds-qr-code-checks-to-detect-mali-375d43</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-teams-adds-qr-code-checks-to-detect-mali-375d43</guid>
+      <description><![CDATA[Microsoft Teams will now scan QR codes in messages for malicious links and warn users after delivery. The update extends existing Microsoft Defender for Office 365 protections, providing clearer warnings and additional data for security teams to investigate suspicious messages.]]></description>
+      <pubDate>Sat, 10 Oct 2026 05:49:32 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/teams-qr-code-protection/">Cyber Security News</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>AT&amp;T to Pay $177 Million Over Two Customer Data Breaches</title>
+      <link>https://secubuzz.com/news/at-t-to-pay-177-million-over-two-customer-data-bre-52384a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/at-t-to-pay-177-million-over-two-customer-data-bre-52384a</guid>
+      <description><![CDATA[AT&T agreed to pay $177 million to settle lawsuits stemming from two 2024 customer data breaches that exposed personal details and call records. The settlements address privacy risks for millions of current and former customers and were approved by a federal judge on October 2, 2026.]]></description>
+      <pubDate>Sat, 10 Oct 2026 04:57:38 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/att-to-pay-177-million/">Cyber Security News</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>Claude ClickFix: How to Detect &amp; Block Adception Malvertising</title>
@@ -170,6 +224,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>AnyDesk Linux Vulnerability Allows Remote Code Execution as Root</title>
+      <link>https://secubuzz.com/news/anydesk-linux-vulnerability-allows-remote-code-exe-676d0e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/anydesk-linux-vulnerability-allows-remote-code-exe-676d0e</guid>
+      <description><![CDATA[A proof‑of‑concept demonstrates that AnyDesk Linux 8.0.2 contains a flaw, dubbed AnyPwn, enabling remote attackers to execute commands as root without authentication. The issue was fixed in version 8.0.3; users should update immediately and verify that TCP port 7070 is not exposed to untrusted networks.]]></description>
+      <pubDate>Fri, 09 Oct 2026 17:15:43 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/anydesk-linux-vulnerability/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Theft and Remote Commands</title>
       <link>https://secubuzz.com/news/p7-darksword-ios-exploit-kit-adds-crypto-wallet-th-1506d4</link>
       <guid isPermaLink="true">https://secubuzz.com/news/p7-darksword-ios-exploit-kit-adds-crypto-wallet-th-1506d4</guid>
@@ -258,15 +321,6 @@
       <pubDate>Fri, 09 Oct 2026 13:00:00 GMT</pubDate>
       <source url="https://blog.cloudflare.com/workers-on-demand-profiling/">Cloudflare Security</source>
       <category>Cloud</category>
-    </item>
-    <item>
-      <title>AnyDesk Linux Pre-Auth RCE Exploit Gives Root Access</title>
-      <link>https://secubuzz.com/news/anydesk-linux-pre-auth-rce-exploit-gives-root-acce-27a1c7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/anydesk-linux-pre-auth-rce-exploit-gives-root-acce-27a1c7</guid>
-      <description><![CDATA[Security researchers released a working exploit for a pre-authentication remote code execution flaw in AnyDesk Linux, allowing attackers to gain root privileges before connection approval. AnyDesk patched the issue in version 8.0.3, but the fix was described only as a crash bug with no CVE assigned.]]></description>
-      <pubDate>Fri, 09 Oct 2026 12:59:22 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/researchers-publish-working-exploit-for.html">The Hacker News</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>Anthropic Releases Free AI‑Powered Open‑Source Vulnerability Scanner</title>
@@ -402,60 +456,6 @@
       <pubDate>Fri, 09 Oct 2026 06:00:22 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/09/christiaan-beek-rapid7-bpfdoor-backdoor/">Help Net Security</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Thousands of Wind and Solar Park Systems Exposed on Internet Across Europe</title>
-      <link>https://secubuzz.com/news/thousands-of-wind-and-solar-park-systems-exposed-o-2e4ba5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/thousands-of-wind-and-solar-park-systems-exposed-o-2e4ba5</guid>
-      <description><![CDATA[Modat and NCSC‑NL discovered 8,547 internet‑facing systems at wind farms and solar parks in 35 European countries that should not be reachable from the internet. The exposed systems include login screens and turbine control pages with a Stop button accessible to anyone with a browser, posing a significant operational risk.]]></description>
-      <pubDate>Fri, 09 Oct 2026 05:30:52 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/09/eu-renewable-energy-cybersecurity/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>PCI SSC Recommends Human Approval for AI Actions on Cardholder Data</title>
-      <link>https://secubuzz.com/news/pci-ssc-recommends-human-approval-for-ai-actions-o-7a1c85</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/pci-ssc-recommends-human-approval-for-ai-actions-o-7a1c85</guid>
-      <description><![CDATA[The PCI Security Standards Council released guidance urging human oversight of AI agents handling cardholder data. The advisory covers governance, deployment, access controls, testing, and PCI standard application, emphasizing that existing PCI requirements remain primary. It aims to mitigate AI-assisted attack risks in payment environments.]]></description>
-      <pubDate>Fri, 09 Oct 2026 05:00:25 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/09/pci-ssc-payment-environments-ai-security-guidance/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Researchers Publish Formula to Predict When AI Chatbots May Go Rogue</title>
-      <link>https://secubuzz.com/news/researchers-publish-formula-to-predict-when-ai-cha-5b9885</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/researchers-publish-formula-to-predict-when-ai-cha-5b9885</guid>
-      <description><![CDATA[George Washington University researchers released a paper outlining a model that predicts the timing and causes of AI chatbots turning malicious. The study aims to help developers anticipate and mitigate potential rogue behavior in conversational AI systems.]]></description>
-      <pubDate>Fri, 09 Oct 2026 04:12:38 GMT</pubDate>
-      <source url="https://www.securityweek.com/formula-predicts-when-ai-chatbots-are-at-risk-of-turning-bad/">SecurityWeek</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Ploutus-D ATM Malware Exploits Kalignite XFS Middleware</title>
-      <link>https://secubuzz.com/news/ploutus-d-atm-malware-exploits-kalignite-xfs-middl-4ae029</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ploutus-d-atm-malware-exploits-kalignite-xfs-middl-4ae029</guid>
-      <description><![CDATA[Ploutus-D malware targets ATM jackpotting by exploiting Kalignite XFS middleware. The attack allows attackers to manipulate cash dispensers, potentially draining accounts. Banks can mitigate by securing middleware, monitoring for abnormal transactions, and implementing robust physical and software controls.]]></description>
-      <pubDate>Fri, 09 Oct 2026 04:01:40 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/ploutus-d-atm-jackpotting-kalignite-defense">CyberNews AI</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>IDCF Cloud Ransomware Locks 239 Hypervisors and Wipes Snapshots</title>
-      <link>https://secubuzz.com/news/idcf-cloud-ransomware-locks-239-hypervisors-and-wi-29af22</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/idcf-cloud-ransomware-locks-239-hypervisors-and-wi-29af22</guid>
-      <description><![CDATA[A ransomware outbreak in Japan’s IDCF Cloud locked 239 hypervisors and erased over 550,000 snapshots. The incident highlights the need for hypervisor defenses, immutable backups, and proactive SOC hunting queries to detect and mitigate such attacks.]]></description>
-      <pubDate>Fri, 09 Oct 2026 03:20:37 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/idcf-cloud-ransomware-hypervisor-mitigation">CyberNews AI</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Microsoft Urges Early Testing of Post‑Quantum Certificate Ecosystems</title>
-      <link>https://secubuzz.com/news/microsoft-urges-early-testing-of-post-quantum-cert-1b355d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-urges-early-testing-of-post-quantum-cert-1b355d</guid>
-      <description><![CDATA[Microsoft encourages organizations to begin testing post‑quantum authentication by participating in its PQC TLS Pilot Program. The initiative aims to advance readiness for quantum‑resistant certificates and TLS protocols, helping enterprises prepare for future cryptographic challenges.]]></description>
-      <pubDate>Thu, 08 Oct 2026 20:44:28 GMT</pubDate>
-      <source url="https://www.microsoft.com/en-us/security/blog/2026/10/08/post-quantum-authentication-why-organizations-should-start-testing-certificate-ecosystems-now/">Microsoft Security</source>
-      <category>Policy</category>
     </item>
   </channel>
 </rss>

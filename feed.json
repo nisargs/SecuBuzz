@@ -22,6 +22,37 @@
     ]
   },
   {
+    "id": "https://cybersecuritynews.com/best-protected-website-builder/",
+    "sourceUrl": "https://cybersecuritynews.com/best-protected-website-builder/",
+    "title": "Best Protected Website Builder 2027: Which Platform Offers True Security",
+    "headline": "Best Protected Website Builder 2027: Which Platform Offers True Security",
+    "summary": "The article reviews hosted website builders that eliminate the need for site owners to manage core updates, TLS renewal, and server hardening. It argues that the real question is not whether to use a builder, but which builder’s security program provides the most robust protection against self‑managed site hacks.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-11T03:35:31.000Z",
+    "url": "https://cybersecuritynews.com/best-protected-website-builder/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/palo-alto-globalprotect-flaw-vpn-access/",
+    "sourceUrl": "https://cybersecuritynews.com/palo-alto-globalprotect-flaw-vpn-access/",
+    "title": "Ransomware Groups Exploit Palo Alto GlobalProtect Authentication Bypass CVE-2026-0257",
+    "headline": "Ransomware Groups Exploit Palo Alto GlobalProtect Authentication Bypass CVE-2026-0257",
+    "summary": "Ransomware actors Qilin and Settra are using CVE-2026-0257 to bypass authentication in Palo Alto Networks PAN-OS GlobalProtect and Prisma Access, creating unauthorized VPN sessions that grant stealthy access to internal networks. The flaw enables attackers to enter trusted remote access services, posing a serious detection challenge.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-11T03:21:01.000Z",
+    "url": "https://cybersecuritynews.com/palo-alto-globalprotect-flaw-vpn-access/",
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/cybersecurity-ma-roundup-39-deals-announced-in-september-2026/"
+      }
+    ]
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/cyber-exec-arrested-in-case-allegedly-tied-to-shinyhunters-hackers/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/cyber-exec-arrested-in-case-allegedly-tied-to-shinyhunters-hackers/",
     "title": "Cyber Executive Arrested in Connection with ShinyHunters Hackers",
@@ -128,6 +159,68 @@
     "source": "SANS Internet Storm Center",
     "publishedAt": "2026-10-10T09:11:34.000Z",
     "url": "https://isc.sans.edu/diary/rss/33414",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/reverse-engineer-anything-tool/",
+    "sourceUrl": "https://cybersecuritynews.com/reverse-engineer-anything-tool/",
+    "title": "REA Tool Integrates AI Coders with Ghidra and IDA Pro for Automated Reverse Engineering",
+    "headline": "REA Tool Integrates AI Coders with Ghidra and IDA Pro for Automated Reverse Engineering",
+    "summary": "The open‑source REA project connects AI coding agents Claude Code and Cursor to disassemblers Ghidra, IDA Pro, and Hopper, enabling researchers to trace program behavior and generate explanatory evidence without source code. It enhances reverse‑engineering workflows by automating analysis and documentation.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-10T08:08:45.000Z",
+    "url": "https://cybersecuritynews.com/reverse-engineer-anything-tool/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/agentcorruption-attack/",
+    "sourceUrl": "https://cybersecuritynews.com/agentcorruption-attack/",
+    "title": "Single Prompt Can Hijack AWS Bedrock AI Agents and Steal Cloud Credentials",
+    "headline": "Single Prompt Can Hijack AWS Bedrock AI Agents and Steal Cloud Credentials",
+    "summary": "A single prompt sent to a public-facing AWS Bedrock AgentCore AI agent can expose private chats, source code, long‑term memories, API keys, OAuth tokens, and other secrets in the same AWS account and region. The attack chain, named AgentCorruption, allows attackers to access all secrets stored in the affected agents.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-10T06:58:38.000Z",
+    "url": "https://cybersecuritynews.com/agentcorruption-attack/",
+    "additionalSources": [
+      {
+        "source": "Dark Reading",
+        "sourceUrl": "https://www.darkreading.com/cloud-security/agentcorruption-aws-environments-at-risk-single-prompt"
+      }
+    ]
+  },
+  {
+    "id": "https://cybersecuritynews.com/teams-qr-code-protection/",
+    "sourceUrl": "https://cybersecuritynews.com/teams-qr-code-protection/",
+    "title": "Microsoft Teams Adds QR Code Checks to Detect Malicious Links",
+    "headline": "Microsoft Teams Adds QR Code Checks to Detect Malicious Links",
+    "summary": "Microsoft Teams will now scan QR codes in messages for malicious links and warn users after delivery. The update extends existing Microsoft Defender for Office 365 protections, providing clearer warnings and additional data for security teams to investigate suspicious messages.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-10T05:49:32.000Z",
+    "url": "https://cybersecuritynews.com/teams-qr-code-protection/",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-teams-to-add-third-party-deepfake-detection-impersonation-protection/"
+      }
+    ]
+  },
+  {
+    "id": "https://cybersecuritynews.com/att-to-pay-177-million/",
+    "sourceUrl": "https://cybersecuritynews.com/att-to-pay-177-million/",
+    "title": "AT&T to Pay $177 Million Over Two Customer Data Breaches",
+    "headline": "AT&T to Pay $177 Million Over Two Customer Data Breaches",
+    "summary": "AT&T agreed to pay $177 million to settle lawsuits stemming from two 2024 customer data breaches that exposed personal details and call records. The settlements address privacy risks for millions of current and former customers and were approved by a federal judge on October 2, 2026.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-10T04:57:38.000Z",
+    "url": "https://cybersecuritynews.com/att-to-pay-177-million/",
     "additionalSources": []
   },
   {
@@ -256,7 +349,12 @@
     "source": "The Hacker News",
     "publishedAt": "2026-10-09T19:14:28.000Z",
     "url": "https://thehackernews.com/2026/10/credential-stealing-github-actions.html",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/ghostaction-github-repo-attack/"
+      }
+    ]
   },
   {
     "id": "https://blog.cloudflare.com/clef-faster-cheaper-multimodal/",
@@ -290,6 +388,28 @@
     ]
   },
   {
+    "id": "https://cybersecuritynews.com/anydesk-linux-vulnerability/",
+    "sourceUrl": "https://cybersecuritynews.com/anydesk-linux-vulnerability/",
+    "title": "AnyDesk Linux Vulnerability Allows Remote Code Execution as Root",
+    "headline": "AnyDesk Linux Vulnerability Allows Remote Code Execution as Root",
+    "summary": "A proof‑of‑concept demonstrates that AnyDesk Linux 8.0.2 contains a flaw, dubbed AnyPwn, enabling remote attackers to execute commands as root without authentication. The issue was fixed in version 8.0.3; users should update immediately and verify that TCP port 7070 is not exposed to untrusted networks.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-09T17:15:43.000Z",
+    "url": "https://cybersecuritynews.com/anydesk-linux-vulnerability/",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/researchers-publish-working-exploit-for.html"
+      },
+      {
+        "source": "CISA",
+        "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-281-03"
+      }
+    ]
+  },
+  {
     "id": "https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html",
     "sourceUrl": "https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html",
     "title": "P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Theft and Remote Commands",
@@ -312,6 +432,10 @@
       {
         "source": "Schneier on Security",
         "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/possible-vulnerability-in-apples-automatic-reboot.html"
+      },
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/agentic-ai-red-team-checklist/"
       }
     ]
   },
@@ -456,19 +580,6 @@
         "sourceUrl": "https://blog.cloudflare.com/deno-joins-cloudflare/"
       }
     ]
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/researchers-publish-working-exploit-for.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/researchers-publish-working-exploit-for.html",
-    "title": "AnyDesk Linux Pre-Auth RCE Exploit Gives Root Access",
-    "headline": "AnyDesk Linux Pre-Auth RCE Exploit Gives Root Access",
-    "summary": "Security researchers released a working exploit for a pre-authentication remote code execution flaw in AnyDesk Linux, allowing attackers to gain root privileges before connection approval. AnyDesk patched the issue in version 8.0.3, but the fix was described only as a crash bug with no CVE assigned.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-09T12:59:22.000Z",
-    "url": "https://thehackernews.com/2026/10/researchers-publish-working-exploit-for.html",
-    "additionalSources": []
   },
   {
     "id": "https://thehackernews.com/2026/10/anthropic-launches-free-ai.html",
@@ -797,19 +908,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.darkreading.com/cloud-security/agentcorruption-aws-environments-at-risk-single-prompt",
-    "sourceUrl": "https://www.darkreading.com/cloud-security/agentcorruption-aws-environments-at-risk-single-prompt",
-    "title": "'AgentCorruption' Vulnerability Lets Single Prompt Take Over AWS Bedrock AgentCore",
-    "headline": "'AgentCorruption' Vulnerability Lets Single Prompt Take Over AWS Bedrock AgentCore",
-    "summary": "A recently patched flaw in AWS Bedrock AgentCore, dubbed 'AgentCorruption', can be exploited by sending a single prompt to an AI chatbot, enabling attackers to hijack an entire AWS environment. The vulnerability allows remote code execution across the organization’s fleet. AWS has issued a patch; users should apply it immediately.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-08T20:39:44.000Z",
-    "url": "https://www.darkreading.com/cloud-security/agentcorruption-aws-environments-at-risk-single-prompt",
-    "additionalSources": []
-  },
-  {
     "id": "https://therecord.media/lawmakers-warn-of-google-spirit-ai-training-deal",
     "sourceUrl": "https://therecord.media/lawmakers-warn-of-google-spirit-ai-training-deal",
     "title": "Google AI Training Deal Could Expose Spirit Airlines Data",
@@ -1104,19 +1202,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.bleepingcomputer.com/news/security/microsoft-teams-to-add-third-party-deepfake-detection-impersonation-protection/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-teams-to-add-third-party-deepfake-detection-impersonation-protection/",
-    "title": "Microsoft Teams Adds Support for Third‑Party Deepfake Detection Tools",
-    "headline": "Microsoft Teams Adds Support for Third‑Party Deepfake Detection Tools",
-    "summary": "Microsoft announced that Teams will soon support third‑party deep‑fake detection solutions and impersonation protection during meetings. The update will allow users to integrate external tools to identify synthetic media and prevent identity spoofing. No security flaw is disclosed, just a new protective feature for Teams users.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-08T12:08:16.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/microsoft-teams-to-add-third-party-deepfake-detection-impersonation-protection/",
-    "additionalSources": []
-  },
-  {
     "id": "https://www.darkreading.com/cybersecurity-operations/writing-next-chapter",
     "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/writing-next-chapter",
     "title": "Dark Reading Announces New Decade",
@@ -1144,24 +1229,6 @@
       {
         "source": "SecurityWeek",
         "sourceUrl": "https://www.securityweek.com/apple-to-tighten-full-disk-access-controls-in-macos-amid-ai-risks/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-281-03",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-281-03",
-    "title": "Satel Netco Design Vulnerabilities Enable XSS and Code Execution",
-    "headline": "Satel Netco Design Vulnerabilities Enable XSS and Code Execution",
-    "summary": "Satel Netco Design versions before v2.1.7 contain a stored cross‑site scripting flaw (CVE‑2026‑105269) that allows authenticated network operators to inject arbitrary scripts, consume resources, enumerate and modify files, and potentially execute code in users’ browsers. Patch to v2.1.7 or later is required.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CISA",
-    "publishedAt": "2026-10-08T12:00:00.000Z",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-281-03",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html"
       }
     ]
   },
@@ -2019,24 +2086,6 @@
     "publishedAt": "2026-10-06T11:02:30.000Z",
     "url": "https://thehackernews.com/2026/10/welcome-to-jungle-what-we-found-inside.html",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/cybersecurity-ma-roundup-39-deals-announced-in-september-2026/",
-    "sourceUrl": "https://www.securityweek.com/cybersecurity-ma-roundup-39-deals-announced-in-september-2026/",
-    "title": "39 Cybersecurity M&A Deals Announced in September 2026",
-    "headline": "39 Cybersecurity M&A Deals Announced in September 2026",
-    "summary": "A roundup of 39 cybersecurity mergers and acquisitions announced in September 2026, featuring deals by Dragos, IBM, Palo Alto Networks, Kiteworks, and Upwind. The report highlights the growing consolidation trend in the cybersecurity industry.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-06T11:01:35.000Z",
-    "url": "https://www.securityweek.com/cybersecurity-ma-roundup-39-deals-announced-in-september-2026/",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/cybersecurity-jobs-available-right-now-october-6-2026/"
-      }
-    ]
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/10/06/dell-system-update-vulnerability-cve-2026-86360/",
