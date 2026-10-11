@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Oct 2026 06:19:35 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 11 Oct 2026 08:18:12 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>FortiBleed Vulnerability Still Active, Patch Tuesday Forecast</title>
+      <link>https://secubuzz.com/news/fortibleed-vulnerability-still-active-patch-tuesda-6698d4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fortibleed-vulnerability-still-active-patch-tuesda-6698d4</guid>
+      <description><![CDATA[FortiBleed, a critical buffer overflow flaw in Fortinet FortiGate firewalls, remains active. The vulnerability allows remote attackers to execute arbitrary code via crafted packets, potentially compromising network infrastructure. Fortinet has issued patches; administrators should apply updates promptly to mitigate exploitation risks.]]></description>
+      <pubDate>Sun, 11 Oct 2026 08:00:49 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/11/week-in-review-fortibleed-is-still-active-patch-tuesday-forecast/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Cyber Executive Arrested in Connection with ShinyHunters Hackers</title>
       <link>https://secubuzz.com/news/cyber-executive-arrested-in-connection-with-shinyh-7af634</link>
@@ -383,15 +392,6 @@
       <description><![CDATA[Three teams demonstrated remote exploitation of a flaw in the Google Pixel 10 during the Pwn2Own Ireland contest, despite the device being fully patched. The attacks bypassed all current security updates, allowing attackers to gain remote code execution on the phone. The vulnerability was reported to Google and patched after the contest.]]></description>
       <pubDate>Fri, 09 Oct 2026 08:26:17 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/three-teams-demonstrate-remote-hacks-of.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>October 2026 Patch Tuesday Forecast: Office Cleanup Needed</title>
-      <link>https://secubuzz.com/news/october-2026-patch-tuesday-forecast-office-cleanup-460262</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/october-2026-patch-tuesday-forecast-office-cleanup-460262</guid>
-      <description><![CDATA[Microsoft’s September 2026 Patch Tuesday addressed 973 CVEs, with only two—CVE-2026-85880 and CVE-2026-81963—reported as known exploited. No public disclosures were made. The article urges organizations to prioritize patching high‑risk systems and prepare for ongoing vulnerability management.]]></description>
-      <pubDate>Fri, 09 Oct 2026 06:32:58 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/09/october-2026-patch-tuesday-forecast/">Help Net Security</source>
       <category>Vulnerability</category>
     </item>
     <item>

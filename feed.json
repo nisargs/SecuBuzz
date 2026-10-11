@@ -1,5 +1,27 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/10/11/week-in-review-fortibleed-is-still-active-patch-tuesday-forecast/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/11/week-in-review-fortibleed-is-still-active-patch-tuesday-forecast/",
+    "title": "FortiBleed Vulnerability Still Active, Patch Tuesday Forecast",
+    "headline": "FortiBleed Vulnerability Still Active, Patch Tuesday Forecast",
+    "summary": "FortiBleed, a critical buffer overflow flaw in Fortinet FortiGate firewalls, remains active. The vulnerability allows remote attackers to execute arbitrary code via crafted packets, potentially compromising network infrastructure. Fortinet has issued patches; administrators should apply updates promptly to mitigate exploitation risks.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-11T08:00:49.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/11/week-in-review-fortibleed-is-still-active-patch-tuesday-forecast/",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/09/october-2026-patch-tuesday-forecast/"
+      },
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/fortibleed-attackers-locking-victims-out-of-fortinet-devices/"
+      }
+    ]
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/cyber-exec-arrested-in-case-allegedly-tied-to-shinyhunters-hackers/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/cyber-exec-arrested-in-case-allegedly-tied-to-shinyhunters-hackers/",
     "title": "Cyber Executive Arrested in Connection with ShinyHunters Hackers",
@@ -669,24 +691,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.helpnetsecurity.com/2026/10/09/october-2026-patch-tuesday-forecast/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/09/october-2026-patch-tuesday-forecast/",
-    "title": "October 2026 Patch Tuesday Forecast: Office Cleanup Needed",
-    "headline": "October 2026 Patch Tuesday Forecast: Office Cleanup Needed",
-    "summary": "Microsoft’s September 2026 Patch Tuesday addressed 973 CVEs, with only two—CVE-2026-85880 and CVE-2026-81963—reported as known exploited. No public disclosures were made. The article urges organizations to prioritize patching high‑risk systems and prepare for ongoing vulnerability management.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-09T06:32:58.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/09/october-2026-patch-tuesday-forecast/",
-    "additionalSources": [
-      {
-        "source": "Cloudflare Security",
-        "sourceUrl": "https://blog.cloudflare.com/root-ksk-2024-rollover/"
-      }
-    ]
-  },
-  {
     "id": "https://www.helpnetsecurity.com/2026/10/09/christiaan-beek-rapid7-bpfdoor-backdoor/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/09/christiaan-beek-rapid7-bpfdoor-backdoor/",
     "title": "BPFDoor Backdoor Targets Network Edge Devices",
@@ -1277,28 +1281,6 @@
     "publishedAt": "2026-10-08T08:45:00.000Z",
     "url": "https://www.welivesecurity.com/en/eset-research/matchboil-new-tricks-same-old-evil-intentions/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/fortibleed-attackers-locking-victims-out-of-fortinet-devices/",
-    "sourceUrl": "https://www.securityweek.com/fortibleed-attackers-locking-victims-out-of-fortinet-devices/",
-    "title": "FortiBleed Attackers Lock Legitimate Users Out of Fortinet Devices",
-    "headline": "FortiBleed Attackers Lock Legitimate Users Out of Fortinet Devices",
-    "summary": "Attackers targeting Fortinet devices use FortiBleed to create new accounts and delete existing ones, locking legitimate users out. The exploit manipulates device authentication, preventing authorized access and disrupting network operations. Fortinet has issued a patch to address the vulnerability and recommends updating firmware immediately.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-08T07:52:33.000Z",
-    "url": "https://www.securityweek.com/fortibleed-attackers-locking-victims-out-of-fortinet-devices/",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-ongoing-fortibleed-attacks-lock-out-fortigate-vpn-admins/"
-      },
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/fbi-warns-fortibleed-remains-active.html"
-      }
-    ]
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/10/08/ai-surveillance-cameras-privacy/",

@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "fortibleed-vulnerability-still-active-patch-tuesda-6698d4",
+    "title": "FortiBleed Vulnerability Still Active, Patch Tuesday Forecast",
+    "summary": "FortiBleed, a critical buffer overflow flaw in Fortinet FortiGate firewalls, remains active. The vulnerability allows remote attackers to execute arbitrary code via crafted packets, potentially compromising network infrastructure. Fortinet has issued patches; administrators should apply updates promptly to mitigate exploitation risks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/11/week-in-review-fortibleed-is-still-active-patch-tuesday-forecast/",
+    "publishedAt": "2026-10-11T08:00:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fortibleed-vulnerability-still-active-patch-tuesda",
+      "article-6698d4",
+      "6698d4",
+      "fortibleed-vulnerability-still-active-patch-tuesday-forecast"
+    ]
+  },
+  {
     "slug": "cyber-executive-arrested-in-connection-with-shinyh-7af634",
     "title": "Cyber Executive Arrested in Connection with ShinyHunters Hackers",
     "summary": "Canadian cybersecurity executive Edward Dubrovsky was arrested in Pennsylvania for alleged extortion linked to the ShinyHunters hacking group, part of the FBI’s ongoing crackdown on the group. The arrest follows multiple reports connecting him to the group’s activities.",
@@ -764,27 +782,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "october-2026-patch-tuesday-forecast-office-cleanup-460262",
-    "title": "October 2026 Patch Tuesday Forecast: Office Cleanup Needed",
-    "summary": "Microsoft’s September 2026 Patch Tuesday addressed 973 CVEs, with only two—CVE-2026-85880 and CVE-2026-81963—reported as known exploited. No public disclosures were made. The article urges organizations to prioritize patching high‑risk systems and prepare for ongoing vulnerability management.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/09/october-2026-patch-tuesday-forecast/",
-    "publishedAt": "2026-10-09T06:32:58.000Z",
-    "cves": [
-      "CVE-2026-85880",
-      "CVE-2026-81963"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "october-2026-patch-tuesday-forecast-office-cleanup",
-      "article-460262",
-      "460262",
-      "october-2026-patch-tuesday-forecast-office-cleanup-needed"
-    ]
-  },
-  {
     "slug": "bpfdoor-backdoor-targets-network-edge-devices-71e81c",
     "title": "BPFDoor Backdoor Targets Network Edge Devices",
     "summary": "BPFDoor is a stealthy Linux malware that remains dormant until a special magic packet triggers it. It targets mail gateways and other edge devices that cannot run endpoint agents, potentially compromising telecom networks and exposing national infrastructure to risk.",
@@ -1478,24 +1475,6 @@ export const news: NewsBrief[] = [
       "article-33d44a",
       "33d44a",
       "matchboil-downloader-evolves-eset-tracks-new-techniques-2024"
-    ]
-  },
-  {
-    "slug": "fortibleed-attackers-lock-legitimate-users-out-of-739cd1",
-    "title": "FortiBleed Attackers Lock Legitimate Users Out of Fortinet Devices",
-    "summary": "Attackers targeting Fortinet devices use FortiBleed to create new accounts and delete existing ones, locking legitimate users out. The exploit manipulates device authentication, preventing authorized access and disrupting network operations. Fortinet has issued a patch to address the vulnerability and recommends updating firmware immediately.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/fortibleed-attackers-locking-victims-out-of-fortinet-devices/",
-    "publishedAt": "2026-10-08T07:52:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortibleed-attackers-lock-legitimate-users-out-of",
-      "article-739cd1",
-      "739cd1",
-      "fortibleed-attackers-lock-legitimate-users-out-of-fortinet-d"
     ]
   },
   {
