@@ -2569,6 +2569,11 @@ async function checkAndBroadcastCisaKevZeroDays() {
         data: {
           type: "advisory",
           cveID: cve.cveID,
+          articleId: cve.cveID,
+          articleUrl: `https://nvd.nist.gov/vuln/detail/${cve.cveID}`,
+          headline: `${cve.cveID} (${cve.vendorProject} · ${cve.product}): ${cve.vulnerabilityName}`,
+          summary: cve.shortDescription || `${cve.vendorProject} ${cve.product} vulnerability added to CISA Known Exploited Vulnerabilities catalog. Action: ${cve.requiredAction || 'Apply vendor patches immediately.'}`,
+          category: "CVE",
           vendorProject: cve.vendorProject,
           product: cve.product,
           dueDate: cve.dueDate,

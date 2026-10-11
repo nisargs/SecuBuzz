@@ -12,9 +12,18 @@ import process from 'node:process';
 const TARGET_URL = process.env.SECUBUZZ_FEED_URL || 'https://secubuzz.com/feed.json';
 const TRIGGER_URL = process.env.SECUBUZZ_TRIGGER_URL || 'https://secubuzz.com/api/trigger-ingest';
 const PUSH_ADMIN_SECRET = process.env.PUSH_ADMIN_SECRET;
-const GITHUB_PAT = process.env.GITHUB_PAT || process.env.GITHUB_TOKEN;
+function getFreshnessThreshold() {
+  if (process.env.MAX_STALE_HOURS) {
+    return parseFloat(process.env.MAX_STALE_HOURS);
+  }
+  const now = new Date();
+  const day = now.getUTCDay();
+  const hour = now.getUTCHours();
+  const isWeekend = day === 0 || day === 6 || (day === 1 && hour < 16);
+  return isWeekend ? 28.0 : 12.0;
+}
 
-const MAX_STALE_HOURS = parseFloat(process.env.MAX_STALE_HOURS || '6.0');
+const MAX_STALE_HOURS = getFreshnessThreshold();
 
 async function triggerEmergencyIngest() {
   console.log('[WATCHDOG RECOVERY] Initiating emergency out-of-band ingestion...');

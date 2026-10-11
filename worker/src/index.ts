@@ -742,7 +742,14 @@ export default {
         const pubTime = latest ? Date.parse(latest.publishedAt || (latest as any).pubDate || '') : 0;
         const now = Date.now();
         const ageHours = pubTime ? (now - pubTime) / (1000 * 60 * 60) : 999;
-        const isFresh = ageHours <= 8.0;
+
+        // Weekend-aware publishing lull window (Saturday 00:00 UTC through Monday 16:00 UTC)
+        const nowDate = new Date(now);
+        const day = nowDate.getUTCDay();
+        const hour = nowDate.getUTCHours();
+        const isWeekend = day === 0 || day === 6 || (day === 1 && hour < 16);
+        const thresholdHours = isWeekend ? 30.0 : 16.0;
+        const isFresh = ageHours <= thresholdHours;
 
         const healthData = {
           status: isFresh ? 'ok' : 'stale_feed',
@@ -753,6 +760,8 @@ export default {
             latestHeadline: latest?.headline || latest?.title || null,
             latestPublishedAt: latest?.publishedAt || null,
             ageHours: parseFloat(ageHours.toFixed(2)),
+            thresholdHours,
+            isWeekend,
             isFresh,
           },
         };

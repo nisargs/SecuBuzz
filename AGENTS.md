@@ -33,16 +33,17 @@
 - **Feed System:** `scripts/ingest.mjs` retains up to 350 articles (~7–10 days of security intelligence across 26 curated sources), scheduled every 2 hours via GitHub Actions (`cron: "17 */2 * * *"`). Powered by resilient dual-engine AI (Groq `openai/gpt-oss-20b` + Google Gemini `gemini-2.5-flash` fallback).
 - **Feed Resilience & Watchdog System (Zero-Silent-Failure Mandate):**
   - **Read-Only Invariant:** `scripts/sync_website_data.mjs` is strictly read-only on `feed.json` and must NEVER write or overwrite `feed.json`.
-  - **In-Pipeline Gate (`scripts/verify_feed_freshness.mjs`):** Runs in `.github/workflows/ingest.yml` before R2 upload. Asserts >= 50 articles and newest story <= 14h old; fails CI loudly if stale.
-  - **Edge Watchdog (`https://secubuzz.com/health`):** Evaluates live R2 feed age on every request. Returns HTTP 200 with feed telemetry if healthy, or HTTP 503 `stale_feed` if > 8.0 hours old (triggering external HetrixTools/Uptime monitors).
-  - **Autonomous Watchdog Workflow (`.github/workflows/watchdog.yml`):** Runs every 2 hours; if live feed is > 6h old, automatically dispatches emergency out-of-band `ingest.yml` and alerts.
+  - **In-Pipeline Gate (`scripts/verify_feed_freshness.mjs`):** Runs in `.github/workflows/ingest.yml` before R2 upload. Asserts >= 50 articles and newest story meets adaptive threshold (<= 32h on weekends, <= 18h on weekdays) accounting for natural journalism lulls; fails CI loudly if stale.
+  - **Edge Watchdog (`https://secubuzz.com/health`):** Evaluates live R2 feed age on every request. Returns HTTP 200 with feed telemetry if healthy (<= 30.0h weekends, <= 16.0h weekdays), or HTTP 503 `stale_feed` if stale (triggering external HetrixTools/Uptime monitors).
+  - **Autonomous Watchdog Workflow (`.github/workflows/watchdog.yml`):** Runs every 2 hours; uses adaptive threshold (28h weekends, 12h weekdays) to prevent false alerts during regular publishing pauses.
   - **Watchdog CLI Routines:** `npm run watchdog` (checks production site freshness) and `npm run verify:feed` (local/CI integrity gate).
+  - **CI Push Rebase Hygiene:** `.github/workflows/ingest.yml` runs `git pull --rebase origin main || true` before `git push` to eliminate CI race condition failures when commits land on main during ingestion.
   - **Zero-Stale-Push Mandate:**
     - Candidate floor: RSS candidate items older than 4 days (96h) are discarded before AI processing and marked as seen in `seenUrls` to prevent repeated evaluation.
     - Live Feed Invariant: Push notifications are strictly blocked unless the article is verified present in `mergedFeed`.
     - Push Freshness Invariant: Push broadcasts are strictly limited to articles published within the last 24 hours (`<= 24h`).
     - Severity Floor: Prioritized by severity weight (CRITICAL > HIGH > MEDIUM > LOW, max 2 per cycle) so users receive fresh dispatches while relying on in-app preferences to filter.
-    - CISA KEV Freshness: CISA zero-day alerts are strictly limited to CVEs added within 72 hours (`<= 72h`).
+    - CISA KEV Freshness & Tap Routing: CISA zero-day alerts are strictly limited to CVEs added within 72 hours (`<= 72h`), and carry full advisory payload metadata (`articleId`, `headline`, `summary`, `articleUrl`) wired to `handleNotificationResponse` so tapping an advisory notification directly opens the advisory details screen.
 
 ## 6. Native `.aab` Release (v1.0.2 / Code 6)
 - **Header Brand Unification (Completed):** Replaced 'SecuRadar' with 'SecuBuzz' in `src/app/(tabs)/advisories.tsx` to unify app brand identity with `secubuzz.com` and eliminate third-party trademark/domain confusion.

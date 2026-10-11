@@ -197,11 +197,11 @@ export interface Article {
 To uphold our **Zero-Silent-Failure Mandate**, SecuBuzz runs a 3-layer automated watchdog:
 
 1. **In-Pipeline Freshness Gate (`scripts/verify_feed_freshness.mjs`)**:
-   Runs in CI before R2 upload. Asserts $\ge$ 50 articles and newest story $\le$ 14 hours old; loudly fails CI if the feed is stale.
+   Runs in CI before R2 upload. Asserts $\ge$ 50 articles and newest story meets adaptive threshold ($\le$ 32h on weekends, $\le$ 18h on weekdays) accounting for natural journalism lulls; loudly fails CI if the feed is stale.
 2. **Autonomous Watchdog Workflow (`.github/workflows/watchdog.yml`)**:
-   Runs every 2 hours via GitHub Actions. If the live feed exceeds 6.0 hours old, automatically dispatches an emergency out-of-band `ingest.yml` run.
+   Runs every 2 hours via GitHub Actions. Evaluates feed age against adaptive thresholds (28h on weekends, 12h on weekdays) to prevent false alerts during regular publishing pauses.
 3. **Edge Health Endpoint (`https://secubuzz.com/health`)**:
-   Evaluates live R2 feed age on every request. Returns HTTP 200 with feed telemetry (`articleCount`, `latestHeadline`, `ageHours`, `isFresh`) or HTTP 503 `stale_feed` if > 8.0 hours old.
+   Evaluates live R2 feed age on every request. Returns HTTP 200 with feed telemetry (`articleCount`, `latestHeadline`, `ageHours`, `thresholdHours`, `isWeekend`, `isFresh`) or HTTP 503 `stale_feed` if stale ($\le$ 30.0h weekends, $\le$ 16.0h weekdays).
 
 ---
 

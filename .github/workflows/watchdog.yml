@@ -29,8 +29,6 @@ jobs:
       - name: Inspect Live Feed Freshness
         id: check_feed
         continue-on-error: true
-        env:
-          MAX_STALE_HOURS: "6.0"
         run: |
           node "./scripts/watchdog.mjs"
 

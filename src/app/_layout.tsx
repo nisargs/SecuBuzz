@@ -120,7 +120,9 @@ export default function RootLayout() {
             ? data.articleId
             : typeof data?.articleUrl === 'string'
               ? data.articleUrl
-              : null;
+              : typeof data?.cveID === 'string'
+                ? data.cveID
+                : null;
 
         if (articleId) {
           // Micro-task delay ensures RootNavigator has fully mounted its navigation container

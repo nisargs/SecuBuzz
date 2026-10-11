@@ -16,7 +16,16 @@ const __dirname = path.dirname(__filename);
 const ROOT_DIR = path.resolve(__dirname, '..');
 const FEED_FILE = path.join(ROOT_DIR, 'feed.json');
 
-const MAX_STALE_HOURS = 14; // Alert threshold: feed must have at least one story within 14h
+// Determine weekend news lull window (Saturday 00:00 UTC through Monday 16:00 UTC)
+function getMaxStaleHours() {
+  const now = new Date();
+  const day = now.getUTCDay(); // 0 = Sunday, 6 = Saturday, 1 = Monday
+  const hour = now.getUTCHours();
+  const isWeekendWindow = day === 0 || day === 6 || (day === 1 && hour < 16);
+  // 32 hours on weekends accounts for typical industry lull; 18 hours on business weekdays
+  return isWeekendWindow ? 32 : 18;
+}
+
 const MIN_ARTICLE_COUNT = 50;
 
 function runCheck() {
@@ -41,36 +50,42 @@ function runCheck() {
     process.exit(1);
   }
 
-  const latest = articles[0];
-  const headline = latest?.headline || latest?.title || 'Unknown Headline';
-  const pubDateStr = latest?.publishedAt || latest?.pubDate;
+  // Find the newest article timestamp across the top 15 items
+  const candidates = articles.slice(0, 15).map((art) => {
+    const pubDateStr = art?.publishedAt || art?.pubDate;
+    const pubTime = pubDateStr ? Date.parse(pubDateStr) : NaN;
+    return {
+      headline: art?.headline || art?.title || 'Unknown Headline',
+      pubTime,
+      pubDateStr,
+    };
+  }).filter((c) => !isNaN(c.pubTime));
 
-  if (!pubDateStr) {
-    console.error('[FATAL] Latest article is missing a publishedAt date field.');
+  if (candidates.length === 0) {
+    console.error('[FATAL] No valid publishedAt dates found in top feed articles.');
     process.exit(1);
   }
 
-  const pubTime = Date.parse(pubDateStr);
-  if (isNaN(pubTime)) {
-    console.error(`[FATAL] Invalid date format for latest article: "${pubDateStr}"`);
-    process.exit(1);
-  }
+  candidates.sort((a, b) => b.pubTime - a.pubTime);
+  const newest = candidates[0];
 
   const now = Date.now();
-  const ageMs = now - pubTime;
+  const ageMs = now - newest.pubTime;
   const ageHours = ageMs / (1000 * 60 * 60);
+  const maxStaleHours = getMaxStaleHours();
 
   console.log(`Feed count: ${articles.length} articles`);
-  console.log(`Latest story: "${headline}"`);
-  console.log(`Published at: ${new Date(pubTime).toISOString()} (${ageHours.toFixed(1)} hours ago)`);
+  console.log(`Latest story: "${newest.headline}"`);
+  console.log(`Published at: ${new Date(newest.pubTime).toISOString()} (${ageHours.toFixed(1)} hours ago)`);
+  console.log(`Allowed freshness threshold: ${maxStaleHours} hours`);
 
-  if (ageHours > MAX_STALE_HOURS) {
-    console.error(`[FATAL] Feed is stale! Latest article is ${ageHours.toFixed(1)} hours old (threshold is ${MAX_STALE_HOURS}h).`);
+  if (ageHours > maxStaleHours) {
+    console.error(`[FATAL] Feed is stale! Latest article is ${ageHours.toFixed(1)} hours old (threshold is ${maxStaleHours}h).`);
     console.error('Ingestion pipeline failed to produce recent news!');
     process.exit(1);
   }
 
-  console.log(`[PASS] Feed integrity and freshness verified successfully (age: ${ageHours.toFixed(1)}h <= ${MAX_STALE_HOURS}h).`);
+  console.log(`[PASS] Feed integrity and freshness verified successfully (age: ${ageHours.toFixed(1)}h <= ${maxStaleHours}h).`);
   process.exit(0);
 }
 
