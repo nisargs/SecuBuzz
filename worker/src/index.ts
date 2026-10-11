@@ -254,6 +254,8 @@ async function getKevAdvisories(full: boolean = true): Promise<KevVulnerability[
     : (cachedRecentKev.length > 0 ? cachedRecentKev : SEED_KEV_ADVISORIES);
 }
 
+let cachedVideoBuffer: ArrayBuffer | null = null;
+
 const epssCache = new Map<string, { epss: number; percentile: number; delta7d: number | null; date?: string; cachedAt: number }>();
 async function getEpssScore(cve: string) {
   const now = Date.now();
@@ -947,6 +949,67 @@ export default {
               ...CORS_HEADERS,
             },
           });
+        }
+
+        // Native HTTP 206 Byte-Range Streaming Handler for Videos (.mp4)
+        if (url.pathname.endsWith('.mp4')) {
+          if (!cachedVideoBuffer) {
+            const initialRes = await env.ASSETS.fetch(new Request(new URL(url.pathname, request.url), { method: 'GET' }));
+            if (initialRes.ok) {
+              cachedVideoBuffer = await initialRes.arrayBuffer();
+            }
+          }
+
+          if (cachedVideoBuffer) {
+            const total = cachedVideoBuffer.byteLength;
+            const rangeHeader = request.headers.get('Range') || request.headers.get('range');
+
+            if (request.method === 'HEAD') {
+              return new Response(null, {
+                status: 200,
+                headers: {
+                  'Content-Type': 'video/mp4',
+                  'Accept-Ranges': 'bytes',
+                  'Content-Length': String(total),
+                  'Cache-Control': 'public, max-age=86400, s-maxage=86400',
+                  ...CORS_HEADERS,
+                },
+              });
+            }
+
+            if (rangeHeader) {
+              const match = rangeHeader.match(/bytes=(\d+)-(\d*)/);
+              if (match) {
+                const start = parseInt(match[1], 10);
+                if (start < total) {
+                  const end = match[2] ? Math.min(parseInt(match[2], 10), total - 1) : total - 1;
+                  const chunk = cachedVideoBuffer.slice(start, end + 1);
+                  return new Response(chunk, {
+                    status: 206,
+                    headers: {
+                      'Content-Type': 'video/mp4',
+                      'Content-Range': `bytes ${start}-${end}/${total}`,
+                      'Accept-Ranges': 'bytes',
+                      'Content-Length': String(end - start + 1),
+                      'Cache-Control': 'public, max-age=86400, s-maxage=86400',
+                      ...CORS_HEADERS,
+                    },
+                  });
+                }
+              }
+            }
+
+            return new Response(cachedVideoBuffer, {
+              status: 200,
+              headers: {
+                'Content-Type': 'video/mp4',
+                'Accept-Ranges': 'bytes',
+                'Content-Length': String(total),
+                'Cache-Control': 'public, max-age=86400, s-maxage=86400',
+                ...CORS_HEADERS,
+              },
+            });
+          }
         }
 
         let assetRes = await env.ASSETS.fetch(request);

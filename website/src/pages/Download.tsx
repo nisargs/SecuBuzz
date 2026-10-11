@@ -1,4 +1,5 @@
 import React from 'react';
+import { Play, ArrowDown } from 'lucide-react';
 import { PlayStoreButton } from '../components/PlayStoreButton';
 import { PhoneMockup } from '../components/PhoneMockup';
 import { FaqAccordion } from '../components/FaqAccordion';
@@ -6,6 +7,21 @@ import { appFeatures, appRequirements, downloadFaq } from '../data/site';
 import { Seo } from '../components/Seo';
 
 export function Download() {
+  const scrollToVideo = (autoPlay = true) => {
+    const el = document.getElementById('launch-video');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      if (autoPlay) {
+        const video = el.querySelector('video');
+        if (video) {
+          setTimeout(() => {
+            video.play().catch(() => {});
+          }, 500);
+        }
+      }
+    }
+  };
+
   return (
     <>
       <Seo
@@ -22,8 +38,19 @@ export function Download() {
             <p className="mt-5 max-w-lg text-lg leading-relaxed text-muted">
               Free, zero-tracking security intelligence. 60-word briefs and direct CISA KEV threat alerts delivered without noise, algorithms, or account requirements.
             </p>
-            <div className="mt-8 flex flex-col items-start gap-2.5">
-              <PlayStoreButton size="lg" source="download_page" />
+            <div className="mt-8 flex flex-col items-start gap-3">
+              <div className="flex flex-wrap items-center gap-3">
+                <PlayStoreButton size="lg" source="download_page" />
+                <button
+                  type="button"
+                  onClick={() => scrollToVideo(true)}
+                  className="inline-flex items-center gap-2 rounded-xl border border-line bg-surface/80 px-4 py-3.5 text-sm font-medium text-ink transition-all duration-150 ease-out hover:border-accent/40 hover:bg-raised hover:text-accent"
+                >
+                  <Play className="h-4 w-4 text-accent fill-accent/30" />
+                  <span>Watch video (0:23)</span>
+                  <ArrowDown className="h-3.5 w-3.5 text-muted" />
+                </button>
+              </div>
               <p className="text-xs text-subtle">
                 Official release on Google Play · Requires Android 8.0 (Oreo) or higher · Free &amp; Ad-Free
               </p>
@@ -36,12 +63,39 @@ export function Download() {
                 </div>
               )}
             </dl>
+
+            {/* Direct launch video jumper card */}
+            <div className="mt-8 border-t border-line/60 pt-6">
+              <button
+                type="button"
+                onClick={() => scrollToVideo(true)}
+                className="group flex w-full max-w-lg items-center justify-between rounded-xl border border-line bg-surface/70 p-3.5 text-left transition-all duration-150 ease-out hover:border-accent/40 hover:bg-raised"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="grid h-9 w-9 place-items-center rounded-lg border border-accent/30 bg-accent/10 text-accent transition-transform duration-150 group-hover:scale-105">
+                    <Play className="h-4 w-4 fill-accent/30 text-accent ml-0.5" />
+                  </div>
+                  <div>
+                    <div className="text-sm font-medium text-ink transition-colors group-hover:text-accent">
+                      Watch the launch walkthrough
+                    </div>
+                    <div className="text-xs text-muted">
+                      23-second product tour &amp; triage overview
+                    </div>
+                  </div>
+                </div>
+                <div className="flex items-center gap-2 text-xs font-mono text-muted group-hover:text-accent">
+                  <span className="rounded border border-line bg-surface px-1.5 py-0.5">0:23</span>
+                  <ArrowDown className="h-4 w-4 transition-transform duration-150 group-hover:translate-y-0.5" />
+                </div>
+              </button>
+            </div>
           </div>
           <PhoneMockup />
         </div>
       </section>
 
-      <section className="border-b border-line bg-surface/40">
+      <section id="launch-video" className="border-b border-line bg-surface/40 scroll-mt-10">
         <div className="mx-auto max-w-site px-5 py-16 md:px-8 lg:py-20">
           <div className="mx-auto max-w-2xl text-center">
             <div className="inline-flex items-center gap-2 rounded-full border border-line bg-surface px-3 py-1 font-mono text-xs text-accent">
