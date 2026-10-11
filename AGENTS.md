@@ -37,6 +37,12 @@
   - **Edge Watchdog (`https://secubuzz.com/health`):** Evaluates live R2 feed age on every request. Returns HTTP 200 with feed telemetry if healthy, or HTTP 503 `stale_feed` if > 8.0 hours old (triggering external HetrixTools/Uptime monitors).
   - **Autonomous Watchdog Workflow (`.github/workflows/watchdog.yml`):** Runs every 2 hours; if live feed is > 6h old, automatically dispatches emergency out-of-band `ingest.yml` and alerts.
   - **Watchdog CLI Routines:** `npm run watchdog` (checks production site freshness) and `npm run verify:feed` (local/CI integrity gate).
+  - **Zero-Stale-Push Mandate:**
+    - Candidate floor: RSS candidate items older than 4 days (96h) are discarded before AI processing and marked as seen in `seenUrls` to prevent repeated evaluation.
+    - Live Feed Invariant: Push notifications are strictly blocked unless the article is verified present in `mergedFeed`.
+    - Push Freshness Invariant: Push broadcasts are strictly limited to articles published within the last 24 hours (`<= 24h`).
+    - Severity Floor: Only `CRITICAL` or `HIGH` severity articles are eligible for push broadcasts (max 2 per cycle).
+    - CISA KEV Freshness: CISA zero-day alerts are strictly limited to CVEs added within 72 hours (`<= 72h`).
 
 ## 6. Native `.aab` Release (v1.0.2 / Code 6)
 - **Header Brand Unification (Completed):** Replaced 'SecuRadar' with 'SecuBuzz' in `src/app/(tabs)/advisories.tsx` to unify app brand identity with `secubuzz.com` and eliminate third-party trademark/domain confusion.

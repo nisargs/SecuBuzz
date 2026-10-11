@@ -1765,31 +1765,48 @@ console.log(
 // -----------------------------------------------------------------------------
 
 /*
- * Filter out promotional/marketing noise and future-dated event posts.
+ * Filter out promotional/marketing noise, off-topic posts, future-dated events,
+ * and stale backlog items (> 4 days / 96 hours old).
  */
 const now = Date.now();
-const filteredCandidates = newCandidates.filter((candidate) => {
+const MAX_CANDIDATE_AGE_MS = 4 * 24 * 60 * 60 * 1000; // 4 days (96 hours) maximum candidate age
+
+const filteredCandidates = [];
+
+for (const candidate of newCandidates) {
+  const url = normaliseUrl(candidate.url);
   const titleLower = String(candidate.title || "").toLowerCase();
 
+  // 1. Promotional, marketing, and off-topic noise filtering
   if (
     titleLower.includes("named a leader") ||
     titleLower.includes("financial results") ||
     titleLower.includes("earnings release") ||
     titleLower.includes("webinar") ||
-    titleLower.includes("virtual event")
+    titleLower.includes("virtual event") ||
+    titleLower.includes("squid blogging")
   ) {
-    return false;
+    seenUrls.add(url);
+    continue;
   }
 
+  // 2. Publication date bounds (Reject future > 24h, and reject stale > 4 days)
   if (candidate.publishedAt) {
     const publishedTime = new Date(candidate.publishedAt).getTime();
-    if (Number.isFinite(publishedTime) && publishedTime > now + 86400000) {
-      return false;
+    if (Number.isFinite(publishedTime)) {
+      if (publishedTime > now + 86400000) {
+        seenUrls.add(url);
+        continue;
+      }
+      if (publishedTime < now - MAX_CANDIDATE_AGE_MS) {
+        seenUrls.add(url);
+        continue;
+      }
     }
   }
 
-  return true;
-});
+  filteredCandidates.push(candidate);
+}
 
 /*
  * Sort chronologically: newest articles first.
@@ -2209,7 +2226,7 @@ await writeJsonFile(
 // PUSH NOTIFICATIONS BROADCAST
 // -----------------------------------------------------------------------------
 
-async function sendPushNotificationsForNewArticles(newArticles) {
+async function sendPushNotificationsForNewArticles(newArticles, activeFeed) {
   if (!newArticles || newArticles.length === 0) {
     return;
   }
@@ -2217,29 +2234,85 @@ async function sendPushNotificationsForNewArticles(newArticles) {
   const existingNotified = await readJsonFile(NOTIFIED_ARTICLES_FILE, []);
   const notifiedSet = new Set(Array.isArray(existingNotified) ? existingNotified : []);
 
-  const unnotifiedArticles = newArticles.filter(
-    (article) => !notifiedSet.has(normaliseUrl(article.sourceUrl)),
+  // 1. Invariant: Record ALL newly generated articles into notifiedSet,
+  // guaranteeing non-qualifying articles (low severity, > 24h old, or trimmed)
+  // NEVER linger in an unnotified backlog.
+  for (const article of newArticles) {
+    notifiedSet.add(normaliseUrl(article.sourceUrl));
+  }
+
+  // 2. Active feed invariant: Article MUST actually exist in the live saved feed.
+  // If an article was pruned by deduplication or trimmed out, NEVER send a push.
+  const activeFeedUrls = new Set(
+    (activeFeed || []).map((art) => normaliseUrl(art.sourceUrl || art.url || art.id || "")),
   );
 
-  if (unnotifiedArticles.length === 0) {
-    console.log("No unnotified new articles to broadcast.");
+  // 3. Strict Push Qualification Gate:
+  // - Must not have been previously notified prior to this run
+  // - Must actually exist in the active merged feed
+  // - Must have been published within the last 24 hours (strictly zero stale pushes)
+  // - Must meet the severity threshold: CRITICAL or HIGH only
+  const now = Date.now();
+  const MAX_PUSH_AGE_MS = 24 * 60 * 60 * 1000; // 24 hours maximum push age
+
+  const eligibleForPush = newArticles.filter((article) => {
+    const url = normaliseUrl(article.sourceUrl);
+
+    // Prevent duplicate broadcasts if already notified in prior runs
+    if (existingNotified.includes(url)) {
+      return false;
+    }
+
+    // Must be in active feed (if pruned or dropped by deduplication, never push)
+    if (!activeFeedUrls.has(url)) {
+      console.log(`[Push Filter] Skipping "${article.headline}": Not in active feed.`);
+      return false;
+    }
+
+    // Must be fresh (published within last 24 hours)
+    const pubTime = Date.parse(article.publishedAt);
+    if (!pubTime || isNaN(pubTime)) {
+      console.log(`[Push Filter] Skipping "${article.headline}": Missing or invalid publishedAt.`);
+      return false;
+    }
+    const ageMs = now - pubTime;
+    if (ageMs > MAX_PUSH_AGE_MS || ageMs < -3600000) {
+      console.log(
+        `[Push Filter] Skipping "${article.headline}": Published ${(ageMs / (1000 * 3600)).toFixed(1)}h ago (strictly exceeds 24h push threshold).`,
+      );
+      return false;
+    }
+
+    // Must be CRITICAL or HIGH severity
+    const severity = (article.severity || "").toUpperCase();
+    if (severity !== "CRITICAL" && severity !== "HIGH") {
+      console.log(`[Push Filter] Skipping "${article.headline}": Severity ${severity} does not meet CRITICAL/HIGH push threshold.`);
+      return false;
+    }
+
+    return true;
+  });
+
+  if (eligibleForPush.length === 0) {
+    console.log("No fresh (<= 24h) CRITICAL/HIGH articles to broadcast.");
+    await writeJsonFile(NOTIFIED_ARTICLES_FILE, Array.from(notifiedSet));
     return;
   }
 
-  // Prioritize by severity (CRITICAL > HIGH > MEDIUM > LOW) then freshness
+  // Prioritize by severity (CRITICAL > HIGH) then freshness
   const severityWeight = { CRITICAL: 4, HIGH: 3, MEDIUM: 2, LOW: 1 };
-  unnotifiedArticles.sort((a, b) => {
+  eligibleForPush.sort((a, b) => {
     const sDiff = (severityWeight[b.severity] || 0) - (severityWeight[a.severity] || 0);
     if (sDiff !== 0) return sDiff;
     return new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime();
   });
 
-  // Limit to at most 4 notifications per 4-hour cycle
-  const MAX_NOTIFICATIONS_PER_CYCLE = 4;
-  const articlesToNotify = unnotifiedArticles.slice(0, MAX_NOTIFICATIONS_PER_CYCLE);
+  // Limit to at most 2 notifications per cycle to avoid notification spam
+  const MAX_NOTIFICATIONS_PER_CYCLE = 2;
+  const articlesToNotify = eligibleForPush.slice(0, MAX_NOTIFICATIONS_PER_CYCLE);
 
   console.log(
-    `\nPreparing push notifications for ${articlesToNotify.length} articles (capped from ${unnotifiedArticles.length} candidates)...`,
+    `\nPreparing push notifications for ${articlesToNotify.length} articles (capped from ${eligibleForPush.length} eligible candidates)...`,
   );
 
   let tokens = [];
@@ -2272,9 +2345,6 @@ async function sendPushNotificationsForNewArticles(newArticles) {
     console.log(
       "No registered push tokens found. Updating notification history.",
     );
-    for (const article of unnotifiedArticles) {
-      notifiedSet.add(normaliseUrl(article.sourceUrl));
-    }
     await writeJsonFile(NOTIFIED_ARTICLES_FILE, Array.from(notifiedSet));
     return;
   }
@@ -2382,10 +2452,7 @@ async function sendPushNotificationsForNewArticles(newArticles) {
     }
   }
 
-  // Mark all unnotified articles in this batch as notified
-  for (const article of unnotifiedArticles) {
-    notifiedSet.add(normaliseUrl(article.sourceUrl));
-  }
+  // Persist updated notification history
   await writeJsonFile(NOTIFIED_ARTICLES_FILE, Array.from(notifiedSet));
 
   if (invalidTokens.size > 0) {
@@ -2435,16 +2502,24 @@ async function checkAndBroadcastCisaKevZeroDays() {
       Array.isArray(existingNotifiedCves) ? existingNotifiedCves : [],
     );
 
-    // Look for unnotified CVEs added in the last 7 days
-    const sevenDaysAgo = Date.now() - 7 * 24 * 60 * 60 * 1000;
+    // Look for unnotified CVEs added in the last 72 hours (strictly zero stale KEV alerts)
+    const MAX_KEV_AGE_MS = 72 * 60 * 60 * 1000;
     const candidates = vulnerabilities.filter((v) => {
       if (!v?.cveID || notifiedCveSet.has(v.cveID)) return false;
       const addedTime = Date.parse(v.dateAdded) || 0;
-      return addedTime >= sevenDaysAgo;
+      return (Date.now() - addedTime) <= MAX_KEV_AGE_MS;
     });
 
+    // Mark ALL catalog vulnerabilities as recorded so old backlog items never trigger alerts
+    for (const v of vulnerabilities) {
+      if (v?.cveID) {
+        notifiedCveSet.add(v.cveID);
+      }
+    }
+
     if (candidates.length === 0) {
-      console.log("No new unnotified CISA KEV zero-days found.");
+      console.log("No new unnotified CISA KEV zero-days found within 72h.");
+      await writeJsonFile(NOTIFIED_CVES_FILE, Array.from(notifiedCveSet));
       return;
     }
 
@@ -2471,9 +2546,6 @@ async function checkAndBroadcastCisaKevZeroDays() {
       console.log(
         "No registered push tokens found. Marking CISA KEV zero-days as seen.",
       );
-      for (const v of candidates) {
-        notifiedCveSet.add(v.cveID);
-      }
       await writeJsonFile(NOTIFIED_CVES_FILE, Array.from(notifiedCveSet));
       return;
     }
@@ -2533,10 +2605,7 @@ async function checkAndBroadcastCisaKevZeroDays() {
       await sleep(10000);
     }
 
-    // Mark all candidates as seen so backlog isn't repeatedly alerted
-    for (const cve of candidates) {
-      notifiedCveSet.add(cve.cveID);
-    }
+    // Persist all recorded CVEs
     await writeJsonFile(NOTIFIED_CVES_FILE, Array.from(notifiedCveSet));
   } catch (err) {
     console.warn("Could not check CISA KEV zero-days:", err);
@@ -2544,7 +2613,7 @@ async function checkAndBroadcastCisaKevZeroDays() {
 }
 
 if (uniqueGeneratedArticles.length > 0) {
-  await sendPushNotificationsForNewArticles(uniqueGeneratedArticles);
+  await sendPushNotificationsForNewArticles(uniqueGeneratedArticles, mergedFeed);
 }
 
 // Check and broadcast newly added CISA KEV zero-days
