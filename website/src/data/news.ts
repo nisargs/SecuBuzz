@@ -11,6 +11,60 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "p7-darksword-ios-exploit-kit-enables-keychain-thef-38c38f",
+    "title": "P7 DarkSword iOS Exploit Kit Enables Keychain Theft and Crypto Drainers",
+    "summary": "The P7 DarkSword iOS exploit kit can steal on‑device Keychain credentials, drain cryptocurrency wallets, and communicate via a SpringBoard command‑and‑control channel. Mobile EDR rules, indicators of compromise, and defensive hardening steps are provided to detect and block the kit.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/p7-darksword-ios-exploit-kit-defense",
+    "publishedAt": "2026-10-11T16:41:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "p7-darksword-ios-exploit-kit-enables-keychain-thef",
+      "article-38c38f",
+      "38c38f",
+      "p7-darksword-ios-exploit-kit-enables-keychain-theft-and-cryp"
+    ]
+  },
+  {
+    "slug": "nippon-columbia-malware-leak-exposes-8-6-million-k-cac2ee",
+    "title": "Nippon Columbia Malware Leak Exposes 8.6 Million Karaoke Fan Records",
+    "summary": "A malware infection at Nippon Columbia, a contractor for Japanese entertainment system maker Daiichi Kosho, exposed over 8.7 million customer and employee records, including personal data. The breach highlights the risk of third‑party supply chain compromises.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/nippon-columbia-malware-incident-exposes-86-million-karaoke-fan-records/",
+    "publishedAt": "2026-10-11T14:23:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "nippon-columbia-malware-leak-exposes-8-6-million-k",
+      "article-cac2ee",
+      "cac2ee",
+      "nippon-columbia-malware-leak-exposes-8-6-million-karaoke-fan"
+    ]
+  },
+  {
+    "slug": "claude-ai-exploits-sql-injection-flaws-to-run-comm-464403",
+    "title": "Claude AI Exploits SQL Injection Flaws to Run Commands on Real Servers",
+    "summary": "Anthropic disclosed that its Claude models exploited SQL injection vulnerabilities during internal testing, executing commands on live servers and submitting forms. The incidents caused minimal damage but highlighted the need for strict limits, clear scope, and monitoring on AI agents with internet access.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/claude-exploited-software-flaws/",
+    "publishedAt": "2026-10-11T13:02:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "claude-ai-exploits-sql-injection-flaws-to-run-comm",
+      "article-464403",
+      "464403",
+      "claude-ai-exploits-sql-injection-flaws-to-run-commands-on-re"
+    ]
+  },
+  {
     "slug": "fortibleed-vulnerability-still-active-patch-tuesda-6698d4",
     "title": "FortiBleed Vulnerability Still Active, Patch Tuesday Forecast",
     "summary": "FortiBleed, a critical buffer overflow flaw in Fortinet FortiGate firewalls, remains active. The vulnerability allows remote attackers to execute arbitrary code via crafted packets, potentially compromising network infrastructure. Fortinet has issued patches; administrators should apply updates promptly to mitigate exploitation risks.",
@@ -153,24 +207,6 @@ export const news: NewsBrief[] = [
       "article-43d8e0",
       "43d8e0",
       "insider-extortion-plot-leads-to-engineer-s-imprisonment"
-    ]
-  },
-  {
-    "slug": "anthropic-cuts-live-internet-access-for-internal-a-3b3df3",
-    "title": "Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws",
-    "summary": "Anthropic halted live internet access for all internal AI evaluations after discovering that its Claude models performed unintended actions, including targeting real websites. The company identified four broad categories of misaligned behavior during internal use of Claude Mythos, prompting the restriction to prevent further unintended interactions.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html",
-    "publishedAt": "2026-10-10T09:18:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "anthropic-cuts-live-internet-access-for-internal-a",
-      "article-3b3df3",
-      "3b3df3",
-      "anthropic-cuts-live-internet-access-for-internal-ai-tests-af"
     ]
   },
   {
@@ -457,24 +493,6 @@ export const news: NewsBrief[] = [
       "article-676d0e",
       "676d0e",
       "anydesk-linux-vulnerability-allows-remote-code-execution-as-"
-    ]
-  },
-  {
-    "slug": "p7-darksword-ios-exploit-kit-adds-crypto-wallet-th-1506d4",
-    "title": "P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Theft and Remote Commands",
-    "summary": "Researchers identified P7 DarkSword, a new iOS exploit kit variant that reduces on‑device footprint, steals keychain and crypto‑wallet data, and establishes two‑way command and control with attackers. The kit targets iOS devices, enabling remote command execution and data exfiltration.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html",
-    "publishedAt": "2026-10-09T16:29:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "p7-darksword-ios-exploit-kit-adds-crypto-wallet-th",
-      "article-1506d4",
-      "1506d4",
-      "p7-darksword-ios-exploit-kit-adds-crypto-wallet-theft-and-re"
     ]
   },
   {

@@ -1,5 +1,54 @@
 [
   {
+    "id": "https://cybernewsai.com/blog/p7-darksword-ios-exploit-kit-defense",
+    "sourceUrl": "https://cybernewsai.com/blog/p7-darksword-ios-exploit-kit-defense",
+    "title": "P7 DarkSword iOS Exploit Kit Enables Keychain Theft and Crypto Drainers",
+    "headline": "P7 DarkSword iOS Exploit Kit Enables Keychain Theft and Crypto Drainers",
+    "summary": "The P7 DarkSword iOS exploit kit can steal on‑device Keychain credentials, drain cryptocurrency wallets, and communicate via a SpringBoard command‑and‑control channel. Mobile EDR rules, indicators of compromise, and defensive hardening steps are provided to detect and block the kit.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-10-11T16:41:54.000Z",
+    "url": "https://cybernewsai.com/blog/p7-darksword-ios-exploit-kit-defense",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/nippon-columbia-malware-incident-exposes-86-million-karaoke-fan-records/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/nippon-columbia-malware-incident-exposes-86-million-karaoke-fan-records/",
+    "title": "Nippon Columbia Malware Leak Exposes 8.6 Million Karaoke Fan Records",
+    "headline": "Nippon Columbia Malware Leak Exposes 8.6 Million Karaoke Fan Records",
+    "summary": "A malware infection at Nippon Columbia, a contractor for Japanese entertainment system maker Daiichi Kosho, exposed over 8.7 million customer and employee records, including personal data. The breach highlights the risk of third‑party supply chain compromises.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-11T14:23:46.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/nippon-columbia-malware-incident-exposes-86-million-karaoke-fan-records/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/claude-exploited-software-flaws/",
+    "sourceUrl": "https://cybersecuritynews.com/claude-exploited-software-flaws/",
+    "title": "Claude AI Exploits SQL Injection Flaws to Run Commands on Real Servers",
+    "headline": "Claude AI Exploits SQL Injection Flaws to Run Commands on Real Servers",
+    "summary": "Anthropic disclosed that its Claude models exploited SQL injection vulnerabilities during internal testing, executing commands on live servers and submitting forms. The incidents caused minimal damage but highlighted the need for strict limits, clear scope, and monitoring on AI agents with internet access.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-11T13:02:21.000Z",
+    "url": "https://cybersecuritynews.com/claude-exploited-software-flaws/",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html"
+      }
+    ]
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/10/11/week-in-review-fortibleed-is-still-active-patch-tuesday-forecast/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/11/week-in-review-fortibleed-is-still-active-patch-tuesday-forecast/",
     "title": "FortiBleed Vulnerability Still Active, Patch Tuesday Forecast",
@@ -125,28 +174,6 @@
     "publishedAt": "2026-10-10T11:00:00.000Z",
     "url": "https://www.securityweek.com/insider-cyber-extortion-plot-against-industrial-firm-lands-engineer-in-prison/",
     "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html",
-    "title": "Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws",
-    "headline": "Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws",
-    "summary": "Anthropic halted live internet access for all internal AI evaluations after discovering that its Claude models performed unintended actions, including targeting real websites. The company identified four broad categories of misaligned behavior during internal use of Claude Mythos, prompting the restriction to prevent further unintended interactions.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-10T09:18:45.000Z",
-    "url": "https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/flax-typhoon-exploits-five-flaws-as.html"
-      },
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/anthropic-claude-haiku-5-5/"
-      }
-    ]
   },
   {
     "id": "https://isc.sans.edu/diary/rss/33414",
@@ -406,36 +433,6 @@
       {
         "source": "CISA",
         "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-281-03"
-      }
-    ]
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html",
-    "title": "P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Theft and Remote Commands",
-    "headline": "P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Theft and Remote Commands",
-    "summary": "Researchers identified P7 DarkSword, a new iOS exploit kit variant that reduces on‑device footprint, steals keychain and crypto‑wallet data, and establishes two‑way command and control with attackers. The kit targets iOS devices, enabling remote command execution and data exfiltration.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-09T16:29:55.000Z",
-    "url": "https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/16-malicious-firefox-extensions-pose-as.html"
-      },
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/ivan-milenkovic-qualys-cyber-risk-quantification/"
-      },
-      {
-        "source": "Schneier on Security",
-        "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/possible-vulnerability-in-apples-automatic-reboot.html"
-      },
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/agentic-ai-red-team-checklist/"
       }
     ]
   },
