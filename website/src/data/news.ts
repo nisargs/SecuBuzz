@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "sonicwall-sma-1000-devices-targeted-for-ssrf-explo-7aa16c",
+    "title": "SonicWall SMA 1000 Devices Targeted for SSRF Exploit",
+    "summary": "Attackers are exploiting a severe Server Side Request Forgery flaw in SonicWall SMA 1000 appliances, allowing them to access internal networks and potentially exfiltrate data. The vulnerability is actively being targeted, forcing customers to apply urgent firmware updates and network segmentation to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/max-severity-ssrf-flaw-sonicwall-sma-devices-under-attack",
+    "publishedAt": "2026-10-12T21:42:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sonicwall-sma-1000-devices-targeted-for-ssrf-explo",
+      "article-7aa16c",
+      "7aa16c",
+      "sonicwall-sma-1000-devices-targeted-for-ssrf-exploit"
+    ]
+  },
+  {
     "slug": "norway-fines-microsoft-owned-ad-firm-for-unlawful-7cd6a9",
     "title": "Norway Fines Microsoft‑Owned Ad Firm for Unlawful Grindr Data Sharing",
     "summary": "Norway’s Data Protection Authority fined Xandr, a Microsoft‑owned advertising company, 92 million NOK ($9.6 million) for unlawfully processing and sharing sensitive Grindr user data. The fine follows investigations into the company’s data handling practices.",
@@ -26,6 +44,42 @@ export const news: NewsBrief[] = [
       "article-7cd6a9",
       "7cd6a9",
       "norway-fines-microsoft-owned-ad-firm-for-unlawful-grindr-dat"
+    ]
+  },
+  {
+    "slug": "ransomware-negotiator-arrested-on-extortion-charge-5661e6",
+    "title": "Ransomware Negotiator Arrested on Extortion Charges",
+    "summary": "Edward Dubrovsky, a former cybersecurity executive and known ransomware negotiator, was arrested in Pennsylvania on conspiracy to extort money. The charges stem from his alleged role in facilitating ransom payments for cybercriminal groups, highlighting law enforcement efforts against ransomware operations.",
+    "category": "Ransomware",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/insider-threats/prominent-ransomware-negotiator-extortion-charges",
+    "publishedAt": "2026-10-12T20:00:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ransomware-negotiator-arrested-on-extortion-charge",
+      "article-5661e6",
+      "5661e6",
+      "ransomware-negotiator-arrested-on-extortion-charges"
+    ]
+  },
+  {
+    "slug": "avisloader-malware-loader-uses-tox-p2p-c2-and-lnk-337a36",
+    "title": "AvisLoader Malware Loader Uses Tox P2P C2 and LNK Hijacking",
+    "summary": "Varonis identified AvisLoader, a resilient Windows malware loader that leverages Tox P2P for command and control, ClickFix lures, and LNK hijacking to evade takedowns and drop payloads. Detection and blocking can be achieved by monitoring unusual Tox traffic and anomalous LNK file behavior.",
+    "category": "Malware",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/avisloader-tox-p2p-malware-loader-defense",
+    "publishedAt": "2026-10-12T19:47:08.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "avisloader-malware-loader-uses-tox-p2p-c2-and-lnk",
+      "article-337a36",
+      "337a36",
+      "avisloader-malware-loader-uses-tox-p2p-c2-and-lnk-hijacking"
     ]
   },
   {
@@ -279,24 +333,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "avisloader-malware-loader-uses-encrypted-peer-to-p-e4f0df",
-    "title": "AvisLoader Malware Loader Uses Encrypted Peer‑to‑Peer Communications",
-    "summary": "Varonis researchers uncovered AvisLoader, a Windows malware loader that resists disruption through encrypted peer‑to‑peer command‑and‑control. The loader employs ClickFix delivery, shortcut‑based persistence, and remote command execution, complicating mitigation efforts.",
-    "category": "Malware",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/inside-avisloader-a-windows-malware-loader-built-to-resist-disruption/",
-    "publishedAt": "2026-10-12T14:00:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "avisloader-malware-loader-uses-encrypted-peer-to-p",
-      "article-e4f0df",
-      "e4f0df",
-      "avisloader-malware-loader-uses-encrypted-peer-to-peer-commun"
-    ]
-  },
-  {
     "slug": "cve-2026-85097-exploited-in-bricksforge-wordpress-111787",
     "title": "CVE-2026-85097 Exploited in Bricksforge WordPress Plugin",
     "summary": "The CVE-2026-85097 vulnerability in the Bricksforge WordPress plugin allows attackers to gain full control of affected WordPress sites. Exploitation in the wild has been confirmed, enabling remote code execution and site takeover. Site owners should update the plugin immediately to mitigate the risk.",
@@ -526,26 +562,6 @@ export const news: NewsBrief[] = [
       "article-76a265",
       "76a265",
       "microsoft-exchange-admin-center-blocks-admin-portal-access"
-    ]
-  },
-  {
-    "slug": "sonicwall-sma-1000-exploited-in-135-attempts-after-44f216",
-    "title": "SonicWall SMA 1000 Exploited in 135 Attempts After Patch",
-    "summary": "Threat actors have targeted the SonicWall Secure Mobile Access 1000 appliances in 135 exploitation attempts following public disclosure. The pre‑authenticated SSRF flaw, CVE-2026-102255 with a CVSS score of 10.0, allows attackers to direct the appliance to issue requests on their behalf, enabling potential remote compromise.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/critical-sonicwall-sma-1000-flaw.html",
-    "publishedAt": "2026-10-12T10:36:56.000Z",
-    "cves": [
-      "CVE-2026-102255"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "sonicwall-sma-1000-exploited-in-135-attempts-after",
-      "article-44f216",
-      "44f216",
-      "sonicwall-sma-1000-exploited-in-135-attempts-after-patch"
     ]
   },
   {

@@ -1,5 +1,23 @@
 [
   {
+    "id": "https://www.darkreading.com/vulnerabilities-threats/max-severity-ssrf-flaw-sonicwall-sma-devices-under-attack",
+    "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/max-severity-ssrf-flaw-sonicwall-sma-devices-under-attack",
+    "title": "SonicWall SMA 1000 Devices Targeted for SSRF Exploit",
+    "headline": "SonicWall SMA 1000 Devices Targeted for SSRF Exploit",
+    "summary": "Attackers are exploiting a severe Server Side Request Forgery flaw in SonicWall SMA 1000 appliances, allowing them to access internal networks and potentially exfiltrate data. The vulnerability is actively being targeted, forcing customers to apply urgent firmware updates and network segmentation to mitigate the risk.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-12T21:42:42.000Z",
+    "url": "https://www.darkreading.com/vulnerabilities-threats/max-severity-ssrf-flaw-sonicwall-sma-devices-under-attack",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/critical-sonicwall-sma-1000-flaw.html"
+      }
+    ]
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/norway-fines-microsoft-ad-firm-96-million-over-grindr-data-sharing/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/norway-fines-microsoft-ad-firm-96-million-over-grindr-data-sharing/",
     "title": "Norway Fines Microsoft‑Owned Ad Firm for Unlawful Grindr Data Sharing",
@@ -11,6 +29,37 @@
     "publishedAt": "2026-10-12T20:13:52.000Z",
     "url": "https://www.bleepingcomputer.com/news/security/norway-fines-microsoft-ad-firm-96-million-over-grindr-data-sharing/",
     "additionalSources": []
+  },
+  {
+    "id": "https://www.darkreading.com/insider-threats/prominent-ransomware-negotiator-extortion-charges",
+    "sourceUrl": "https://www.darkreading.com/insider-threats/prominent-ransomware-negotiator-extortion-charges",
+    "title": "Ransomware Negotiator Arrested on Extortion Charges",
+    "headline": "Ransomware Negotiator Arrested on Extortion Charges",
+    "summary": "Edward Dubrovsky, a former cybersecurity executive and known ransomware negotiator, was arrested in Pennsylvania on conspiracy to extort money. The charges stem from his alleged role in facilitating ransom payments for cybercriminal groups, highlighting law enforcement efforts against ransomware operations.",
+    "category": "RANSOMWARE",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-12T20:00:53.000Z",
+    "url": "https://www.darkreading.com/insider-threats/prominent-ransomware-negotiator-extortion-charges",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybernewsai.com/blog/avisloader-tox-p2p-malware-loader-defense",
+    "sourceUrl": "https://cybernewsai.com/blog/avisloader-tox-p2p-malware-loader-defense",
+    "title": "AvisLoader Malware Loader Uses Tox P2P C2 and LNK Hijacking",
+    "headline": "AvisLoader Malware Loader Uses Tox P2P C2 and LNK Hijacking",
+    "summary": "Varonis identified AvisLoader, a resilient Windows malware loader that leverages Tox P2P for command and control, ClickFix lures, and LNK hijacking to evade takedowns and drop payloads. Detection and blocking can be achieved by monitoring unusual Tox traffic and anomalous LNK file behavior.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-10-12T19:47:08.000Z",
+    "url": "https://cybernewsai.com/blog/avisloader-tox-p2p-malware-loader-defense",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/inside-avisloader-a-windows-malware-loader-built-to-resist-disruption/"
+      }
+    ]
   },
   {
     "id": "https://www.bleepingcomputer.com/news/security/yandex-confirms-service-outage-as-users-lose-access-to-cloud-files/",
@@ -250,19 +299,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.bleepingcomputer.com/news/security/inside-avisloader-a-windows-malware-loader-built-to-resist-disruption/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/inside-avisloader-a-windows-malware-loader-built-to-resist-disruption/",
-    "title": "AvisLoader Malware Loader Uses Encrypted Peer‑to‑Peer Communications",
-    "headline": "AvisLoader Malware Loader Uses Encrypted Peer‑to‑Peer Communications",
-    "summary": "Varonis researchers uncovered AvisLoader, a Windows malware loader that resists disruption through encrypted peer‑to‑peer command‑and‑control. The loader employs ClickFix delivery, shortcut‑based persistence, and remote command execution, complicating mitigation efforts.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-12T14:00:10.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/inside-avisloader-a-windows-malware-loader-built-to-resist-disruption/",
-    "additionalSources": []
-  },
-  {
     "id": "https://www.securityweek.com/bricksforge-wordpress-plugin-vulnerability-exploited-in-the-wild/",
     "sourceUrl": "https://www.securityweek.com/bricksforge-wordpress-plugin-vulnerability-exploited-in-the-wild/",
     "title": "CVE-2026-85097 Exploited in Bricksforge WordPress Plugin",
@@ -462,24 +498,6 @@
       {
         "source": "Cyber Security News",
         "sourceUrl": "https://cybersecuritynews.com/bi-phishing-campaign/"
-      }
-    ]
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/critical-sonicwall-sma-1000-flaw.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/critical-sonicwall-sma-1000-flaw.html",
-    "title": "SonicWall SMA 1000 Exploited in 135 Attempts After Patch",
-    "headline": "SonicWall SMA 1000 Exploited in 135 Attempts After Patch",
-    "summary": "Threat actors have targeted the SonicWall Secure Mobile Access 1000 appliances in 135 exploitation attempts following public disclosure. The pre‑authenticated SSRF flaw, CVE-2026-102255 with a CVSS score of 10.0, allows attackers to direct the appliance to issue requests on their behalf, enabling potential remote compromise.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-12T10:36:56.000Z",
-    "url": "https://thehackernews.com/2026/10/critical-sonicwall-sma-1000-flaw.html",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/critical-sonicwall-vulnerability-exploited-days-after-disclosure/"
       }
     ]
   },

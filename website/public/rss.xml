@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Oct 2026 20:17:46 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 23:10:49 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>SonicWall SMA 1000 Devices Targeted for SSRF Exploit</title>
+      <link>https://secubuzz.com/news/sonicwall-sma-1000-devices-targeted-for-ssrf-explo-7aa16c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sonicwall-sma-1000-devices-targeted-for-ssrf-explo-7aa16c</guid>
+      <description><![CDATA[Attackers are exploiting a severe Server Side Request Forgery flaw in SonicWall SMA 1000 appliances, allowing them to access internal networks and potentially exfiltrate data. The vulnerability is actively being targeted, forcing customers to apply urgent firmware updates and network segmentation to mitigate the risk.]]></description>
+      <pubDate>Mon, 12 Oct 2026 21:42:42 GMT</pubDate>
+      <source url="https://www.darkreading.com/vulnerabilities-threats/max-severity-ssrf-flaw-sonicwall-sma-devices-under-attack">Dark Reading</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Norway Fines Microsoft‑Owned Ad Firm for Unlawful Grindr Data Sharing</title>
       <link>https://secubuzz.com/news/norway-fines-microsoft-owned-ad-firm-for-unlawful-7cd6a9</link>
@@ -15,6 +24,24 @@
       <pubDate>Mon, 12 Oct 2026 20:13:52 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/norway-fines-microsoft-ad-firm-96-million-over-grindr-data-sharing/">BleepingComputer</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Ransomware Negotiator Arrested on Extortion Charges</title>
+      <link>https://secubuzz.com/news/ransomware-negotiator-arrested-on-extortion-charge-5661e6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ransomware-negotiator-arrested-on-extortion-charge-5661e6</guid>
+      <description><![CDATA[Edward Dubrovsky, a former cybersecurity executive and known ransomware negotiator, was arrested in Pennsylvania on conspiracy to extort money. The charges stem from his alleged role in facilitating ransom payments for cybercriminal groups, highlighting law enforcement efforts against ransomware operations.]]></description>
+      <pubDate>Mon, 12 Oct 2026 20:00:53 GMT</pubDate>
+      <source url="https://www.darkreading.com/insider-threats/prominent-ransomware-negotiator-extortion-charges">Dark Reading</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
+      <title>AvisLoader Malware Loader Uses Tox P2P C2 and LNK Hijacking</title>
+      <link>https://secubuzz.com/news/avisloader-malware-loader-uses-tox-p2p-c2-and-lnk-337a36</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/avisloader-malware-loader-uses-tox-p2p-c2-and-lnk-337a36</guid>
+      <description><![CDATA[Varonis identified AvisLoader, a resilient Windows malware loader that leverages Tox P2P for command and control, ClickFix lures, and LNK hijacking to evade takedowns and drop payloads. Detection and blocking can be achieved by monitoring unusual Tox traffic and anomalous LNK file behavior.]]></description>
+      <pubDate>Mon, 12 Oct 2026 19:47:08 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/avisloader-tox-p2p-malware-loader-defense">CyberNews AI</source>
+      <category>Malware</category>
     </item>
     <item>
       <title>Yandex Cloud Outage After Drone Attacks Damage Data Centers</title>
@@ -143,15 +170,6 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>AvisLoader Malware Loader Uses Encrypted Peer‑to‑Peer Communications</title>
-      <link>https://secubuzz.com/news/avisloader-malware-loader-uses-encrypted-peer-to-p-e4f0df</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/avisloader-malware-loader-uses-encrypted-peer-to-p-e4f0df</guid>
-      <description><![CDATA[Varonis researchers uncovered AvisLoader, a Windows malware loader that resists disruption through encrypted peer‑to‑peer command‑and‑control. The loader employs ClickFix delivery, shortcut‑based persistence, and remote command execution, complicating mitigation efforts.]]></description>
-      <pubDate>Mon, 12 Oct 2026 14:00:10 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/inside-avisloader-a-windows-malware-loader-built-to-resist-disruption/">BleepingComputer</source>
-      <category>Malware</category>
-    </item>
-    <item>
       <title>CVE-2026-85097 Exploited in Bricksforge WordPress Plugin</title>
       <link>https://secubuzz.com/news/cve-2026-85097-exploited-in-bricksforge-wordpress-111787</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-85097-exploited-in-bricksforge-wordpress-111787</guid>
@@ -266,15 +284,6 @@
       <description><![CDATA[Microsoft is investigating an issue in Exchange Admin Center that causes an “Internal Server Error” for some administrators, preventing access to the web portal used to manage Exchange Online. The incident is tracked as EX1500900 and is under investigation.]]></description>
       <pubDate>Mon, 12 Oct 2026 10:52:40 GMT</pubDate>
       <source url="https://cybersecuritynews.com/exchange-admin-center-issue/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>SonicWall SMA 1000 Exploited in 135 Attempts After Patch</title>
-      <link>https://secubuzz.com/news/sonicwall-sma-1000-exploited-in-135-attempts-after-44f216</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sonicwall-sma-1000-exploited-in-135-attempts-after-44f216</guid>
-      <description><![CDATA[Threat actors have targeted the SonicWall Secure Mobile Access 1000 appliances in 135 exploitation attempts following public disclosure. The pre‑authenticated SSRF flaw, CVE-2026-102255 with a CVSS score of 10.0, allows attackers to direct the appliance to issue requests on their behalf, enabling potential remote compromise.]]></description>
-      <pubDate>Mon, 12 Oct 2026 10:36:56 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/critical-sonicwall-sma-1000-flaw.html">The Hacker News</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -447,15 +456,6 @@
       <pubDate>Sat, 10 Oct 2026 11:00:00 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/the-third-party-agent-problem-why.html">The Hacker News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Insider Extortion Plot Leads to Engineer’s Imprisonment</title>
-      <link>https://secubuzz.com/news/insider-extortion-plot-leads-to-engineer-s-impriso-43d8e0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/insider-extortion-plot-leads-to-engineer-s-impriso-43d8e0</guid>
-      <description><![CDATA[A former core infrastructure engineer deleted admin accounts, reset hundreds of passwords, and demanded 20 bitcoin to prevent server damage. The extortion attempt was uncovered, leading to the engineer’s arrest and prison sentence.]]></description>
-      <pubDate>Sat, 10 Oct 2026 11:00:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/insider-cyber-extortion-plot-against-industrial-firm-lands-engineer-in-prison/">SecurityWeek</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>
