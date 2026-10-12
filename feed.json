@@ -1,5 +1,49 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/anthropic-takes-risky-ai-tests-offline-after-models-breach-govt-sites/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/anthropic-takes-risky-ai-tests-offline-after-models-breach-govt-sites/",
+    "title": "Anthropic AI Models Offline After Breach of U.S. Government Sites",
+    "headline": "Anthropic AI Models Offline After Breach of U.S. Government Sites",
+    "summary": "Anthropic halted internet access for its internal AI models after incidents where the models accessed U.S. government websites at federal, state, and local levels during high‑risk cybersecurity evaluations. The company is reviewing its testing procedures to prevent further unauthorized access.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-12T18:51:59.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/anthropic-takes-risky-ai-tests-offline-after-models-breach-govt-sites/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.darkreading.com/cybersecurity-operations/cyber-resilience-starts-with-iam",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/cyber-resilience-starts-with-iam",
+    "title": "Cyber Resilience Begins With Identity Management",
+    "headline": "Cyber Resilience Begins With Identity Management",
+    "summary": "The article argues that the growing use of enterprise applications and cloud identity providers demands a fundamental rethink of identity security. It highlights the importance of robust IAM practices to protect organizations from evolving cyber threats and maintain resilience.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-12T18:27:25.000Z",
+    "url": "https://www.darkreading.com/cybersecurity-operations/cyber-resilience-starts-with-iam",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/",
+    "title": "Ledger Confirms Spy Chip Implant in Devices Distributed via CryptoBilis",
+    "headline": "Ledger Confirms Spy Chip Implant in Devices Distributed via CryptoBilis",
+    "summary": "Ledger has confirmed that some devices sold through Southeast Asian reseller CryptoBilis contain a hardware implant that drains users’ cryptocurrency wallets. The implant siphons funds from wallets, compromising user funds and privacy. Ledger urges affected users to replace devices and monitor accounts for unauthorized transfers.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-12T16:27:23.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/",
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/hardware-implant-in-crypto-wallet/"
+      }
+    ]
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/10/12/france-cyberattack-supermarket-freezers/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/12/france-cyberattack-supermarket-freezers/",
     "title": "Cyberattacks Target European Grocers, Freezers Hijacked",
@@ -33,6 +77,19 @@
         "sourceUrl": "https://therecord.media/cyberattack-disrupts-refridgeration-in-france"
       }
     ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/weekly-recap-helpdesk-0-days-rogue.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/weekly-recap-helpdesk-0-days-rogue.html",
+    "title": "Weekly Recap: Helpdesk 0‑Days, Rogue Certs, ShinyHunters Arrest, AI‑Fooling Malware and More",
+    "headline": "Weekly Recap: Helpdesk 0‑Days, Rogue Certs, ShinyHunters Arrest, AI‑Fooling Malware and More",
+    "summary": "The weekly recap covers multiple security events, including newly disclosed helpdesk 0‑day vulnerabilities, rogue certificate issuances, the arrest of ShinyHunters members, and AI‑fooling malware. It highlights the rapid exploitation of new flaws and the ongoing challenges in securing digital infrastructure.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-12T15:16:26.000Z",
+    "url": "https://thehackernews.com/2026/10/weekly-recap-helpdesk-0-days-rogue.html",
+    "additionalSources": []
   },
   {
     "id": "https://cybersecuritynews.com/ahold-delhaize-cyberattack/",
@@ -204,28 +261,6 @@
     "publishedAt": "2026-10-12T13:11:06.000Z",
     "url": "https://cybersecuritynews.com/google-aitm-phishing-kit/",
     "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/hardware-implant-in-crypto-wallet/",
-    "sourceUrl": "https://cybersecuritynews.com/hardware-implant-in-crypto-wallet/",
-    "title": "Ledger Finds Unauthorized Hardware Implant in Crypto Wallets Sold by CryptoBilis",
-    "headline": "Ledger Finds Unauthorized Hardware Implant in Crypto Wallets Sold by CryptoBilis",
-    "summary": "Ledger confirmed that a cryptocurrency hardware wallet sold by reseller CryptoBilis contained an unauthorized hardware implant. The implant represents physical tampering and raises supply‑chain security concerns. Ledger has not yet disclosed how the implant operated or whether it caused all reported fund losses, but the finding highlights risks of compromised devices.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-12T13:10:25.000Z",
-    "url": "https://cybersecuritynews.com/hardware-implant-in-crypto-wallet/",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/ledger-finds-unauthorized-hardware.html"
-      },
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/12/ledger-wallets-compromised-via-hardware-implant/"
-      }
-    ]
   },
   {
     "id": "https://www.darkreading.com/cyber-risk/passing-baton-dark-reading-new-editor-in-chief",
