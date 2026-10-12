@@ -53,7 +53,7 @@ export async function fetchCloudflareAnalytics({ zoneTag = '65259b39c7fd2648a898
   const dateGeq = new Date(Date.now() - 14 * 24 * 3600 * 1000).toISOString().slice(0, 10);
 
   const zoneQuery = `
-  query ZoneReport($zoneTag: string!, $dateGeq: string!, $dateLeq: string!, $since7d: string!, $since24h: string!, $until: string!) {
+  query ZoneReport($zoneTag: String!, $dateGeq: String!, $dateLeq: String!, $since7d: String!, $since24h: String!, $until: String!) {
     viewer {
       zones(filter: { zoneTag: $zoneTag }) {
         dailyTimeline: httpRequests1dGroups(
@@ -114,7 +114,7 @@ export async function fetchCloudflareAnalytics({ zoneTag = '65259b39c7fd2648a898
   `;
 
   const rumQuery = `
-  query RumReport($accountTag: string!, $siteTag: string!, $since7d: string!, $until: string!) {
+  query RumReport($accountTag: String!, $siteTag: String!, $since7d: String!, $until: String!) {
     viewer {
       accounts(filter: { accountTag: $accountTag }) {
         rumBrowsers7d: rumPageloadEventsAdaptiveGroups(
