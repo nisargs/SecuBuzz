@@ -5,24 +5,141 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Oct 2026 09:15:56 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 12:19:21 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Microsoft Power BI Phishing Campaign Deploys Rogue ScreenConnect RMMs for Persistent Access</title>
-      <link>https://secubuzz.com/news/microsoft-power-bi-phishing-campaign-deploys-rogue-5c5ca3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-power-bi-phishing-campaign-deploys-rogue-5c5ca3</guid>
-      <description><![CDATA[A phishing operation uses Microsoft Power BI to host a fake reference document that lures users to download rogue ScreenConnect Remote Management software. Once installed, the malware grants attackers long‑term remote access to Windows machines, enabling persistent control without relying on known vulnerabilities.]]></description>
-      <pubDate>Mon, 12 Oct 2026 08:40:10 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/bi-phishing-campaign/">Cyber Security News</source>
+      <title>Dark Reading Names Fahmida Y Rashid as New Editor-in-Chief</title>
+      <link>https://secubuzz.com/news/dark-reading-names-fahmida-y-rashid-as-new-editor-638367</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/dark-reading-names-fahmida-y-rashid-as-new-editor-638367</guid>
+      <description><![CDATA[Dark Reading announced that Fahmida Y Rashid will serve as the new editor‑in‑chief, continuing the publication’s focus on cybersecurity news and analysis. Rashid’s appointment follows the previous editor’s tenure and is expected to maintain the site’s momentum in delivering timely threat intelligence.]]></description>
+      <pubDate>Mon, 12 Oct 2026 12:30:58 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyber-risk/passing-baton-dark-reading-new-editor-in-chief">Dark Reading</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Ukraine Drone Strike Hits Third Yandex Data Center, Disrupting Russian Digital Services</title>
+      <link>https://secubuzz.com/news/ukraine-drone-strike-hits-third-yandex-data-center-32e1cb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ukraine-drone-strike-hits-third-yandex-data-center-32e1cb</guid>
+      <description><![CDATA[Ukrainian drones struck a third Yandex data center in Russia over the weekend, forcing the facility to shut down. The attack disrupted cloud services, payments, deliveries, and other online services nationwide, highlighting the vulnerability of critical infrastructure to aerial strikes.]]></description>
+      <pubDate>Mon, 12 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://therecord.media/ukraine-strikes-third-yandex-data-center">The Record</source>
       <category>Breach</category>
     </item>
     <item>
-      <title>Critical SonicWall Vulnerability Exploited Days After Disclosure</title>
-      <link>https://secubuzz.com/news/critical-sonicwall-vulnerability-exploited-days-af-55a56b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/critical-sonicwall-vulnerability-exploited-days-af-55a56b</guid>
-      <description><![CDATA[CVE‑2026‑102255 is a pre‑authenticated Server‑Side Request Forgery flaw in SonicWall devices that allows attackers to perform unauthorized operations. The vulnerability was actively exploited within days of its disclosure, enabling attackers to manipulate internal traffic and potentially gain further access.]]></description>
-      <pubDate>Mon, 12 Oct 2026 08:36:01 GMT</pubDate>
-      <source url="https://www.securityweek.com/critical-sonicwall-vulnerability-exploited-days-after-disclosure/">SecurityWeek</source>
+      <title>Canonical’s Websites Hit by Second DDoS Attack of 2026</title>
+      <link>https://secubuzz.com/news/canonical-s-websites-hit-by-second-ddos-attack-of-3b26c3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/canonical-s-websites-hit-by-second-ddos-attack-of-3b26c3</guid>
+      <description><![CDATA[Canonical’s main Ubuntu and Canonical websites, including the Ubuntu blog and developer portal, were disrupted during a second DDoS attack this year. The incident caused temporary inaccessibility for users and developers. No data breach was reported, and the sites were restored after mitigation efforts.]]></description>
+      <pubDate>Mon, 12 Oct 2026 11:58:39 GMT</pubDate>
+      <source url="https://www.securityweek.com/canonical-websites-disrupted-in-second-ddos-attack-this-year/">SecurityWeek</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Windows 11 23H2 Enterprise Editions Reach End of Support in 30 Days</title>
+      <link>https://secubuzz.com/news/windows-11-23h2-enterprise-editions-reach-end-of-s-1da70a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/windows-11-23h2-enterprise-editions-reach-end-of-s-1da70a</guid>
+      <description><![CDATA[Microsoft announced that Windows 11 23H2 Enterprise, Education, and IoT Enterprise editions will cease receiving security updates in 30 days. Users must upgrade to newer releases or apply extended support options. Failure to update may expose systems to unpatched vulnerabilities and compliance risks.]]></description>
+      <pubDate>Mon, 12 Oct 2026 11:58:33 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-11-23h2-reaches-end-of-support-in-30-days/">BleepingComputer</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Mastermind of 15,000-Mule Cybercrime Laundering Network Pleads Guilty in US</title>
+      <link>https://secubuzz.com/news/mastermind-of-15-000-mule-cybercrime-laundering-ne-33edae</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/mastermind-of-15-000-mule-cybercrime-laundering-ne-33edae</guid>
+      <description><![CDATA[Oleg Korniev, a leader of the YMCO money‑mule network that helped hackers move funds outside the US, pleaded guilty in a US court. The case highlights the growing reach of cybercrime laundering operations and the legal actions against key figures.]]></description>
+      <pubDate>Mon, 12 Oct 2026 11:24:50 GMT</pubDate>
+      <source url="https://www.securityweek.com/mastermind-of-15000-mule-cybercrime-laundering-network-pleads-guilty-in-us/">SecurityWeek</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>iRhythm Data Breach Exposes 360,000 Patient Records</title>
+      <link>https://secubuzz.com/news/irhythm-data-breach-exposes-360-000-patient-record-2430d1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/irhythm-data-breach-exposes-360-000-patient-record-2430d1</guid>
+      <description><![CDATA[Hackers accessed iRhythm’s patient database, stealing names, addresses, email addresses, dates of birth, and phone numbers for at least 360,000 individuals. The breach compromises personal health information, potentially enabling identity theft and fraud. iRhythm has notified affected users and is investigating the incident.]]></description>
+      <pubDate>Mon, 12 Oct 2026 11:05:43 GMT</pubDate>
+      <source url="https://www.securityweek.com/irhythm-data-breach-impacts-over-360000-people/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Microsoft’s New Decision‑Scoring Model Aims to Improve AI Agent Workflow</title>
+      <link>https://secubuzz.com/news/microsoft-s-new-decision-scoring-model-aims-to-imp-7e4403</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-s-new-decision-scoring-model-aims-to-imp-7e4403</guid>
+      <description><![CDATA[Microsoft released the Microsoft‑Decision‑1 model, a small decision‑scoring tool that assigns calibrated probabilities to answer options. It is intended for routing, classification, prioritization, verification, and workflow control, enabling secure, trusted AI agent integration.]]></description>
+      <pubDate>Mon, 12 Oct 2026 11:02:24 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/12/microsoft-decision-1-model/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Phishing Emails Target AI Assistant Users</title>
+      <link>https://secubuzz.com/news/phishing-emails-target-ai-assistant-users-e9a99b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/phishing-emails-target-ai-assistant-users-e9a99b</guid>
+      <description><![CDATA[Phishing emails embed hidden instructions that can trick AI assistants into executing commands, turning ignored emails into tasks. The technique exploits AI summarization features to gain user interaction and potentially access sensitive data.]]></description>
+      <pubDate>Mon, 12 Oct 2026 10:54:40 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/ai/2026/10/phishing-emails-are-baiting-your-ai-assistant">Malwarebytes Labs</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Preinstalled Malware on Low-Cost Android Phones</title>
+      <link>https://secubuzz.com/news/preinstalled-malware-on-low-cost-android-phones-5784c0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/preinstalled-malware-on-low-cost-android-phones-5784c0</guid>
+      <description><![CDATA[Malware shipped in firmware on budget Android devices from MediaTek platforms cannot be removed by users. The compromise occurs before first use, enabling persistent control over the device. Users should avoid purchasing from untrusted marketplaces and seek firmware updates.]]></description>
+      <pubDate>Mon, 12 Oct 2026 10:53:51 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/12/midnight-mimosa-malware-cheap-android-phones/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Microsoft Exchange Admin Center Blocks Admin Portal Access</title>
+      <link>https://secubuzz.com/news/microsoft-exchange-admin-center-blocks-admin-porta-76a265</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-exchange-admin-center-blocks-admin-porta-76a265</guid>
+      <description><![CDATA[Microsoft is investigating an issue in Exchange Admin Center that causes an “Internal Server Error” for some administrators, preventing access to the web portal used to manage Exchange Online. The incident is tracked as EX1500900 and is under investigation.]]></description>
+      <pubDate>Mon, 12 Oct 2026 10:52:40 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/exchange-admin-center-issue/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>SonicWall SMA 1000 Exploited in 135 Attempts After Patch</title>
+      <link>https://secubuzz.com/news/sonicwall-sma-1000-exploited-in-135-attempts-after-44f216</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sonicwall-sma-1000-exploited-in-135-attempts-after-44f216</guid>
+      <description><![CDATA[Threat actors have targeted the SonicWall Secure Mobile Access 1000 appliances in 135 exploitation attempts following public disclosure. The pre‑authenticated SSRF flaw, CVE-2026-102255 with a CVSS score of 10.0, allows attackers to direct the appliance to issue requests on their behalf, enabling potential remote compromise.]]></description>
+      <pubDate>Mon, 12 Oct 2026 10:36:56 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/critical-sonicwall-sma-1000-flaw.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Casbaneiro Malware Hides Command‑and‑Control Until Banking Site Visit</title>
+      <link>https://secubuzz.com/news/casbaneiro-malware-hides-command-and-control-until-1bbe3a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/casbaneiro-malware-hides-command-and-control-until-1bbe3a</guid>
+      <description><![CDATA[Casbaneiro malware hides command‑and‑control traffic until infected users visit targeted banking sites. The Windows banking trojan blends phishing, location checks, staged downloads, and separate data‑collection servers to keep infections quiet during analysis. The campaign targets Latin American users, linking activity across multiple sites.]]></description>
+      <pubDate>Mon, 12 Oct 2026 10:34:53 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/casbaneiro-malware/">Cyber Security News</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Canadian Cybersecurity Executive Arrested in ShinyHunters FBI Hack Probe</title>
+      <link>https://secubuzz.com/news/canadian-cybersecurity-executive-arrested-in-shiny-71bcf4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/canadian-cybersecurity-executive-arrested-in-shiny-71bcf4</guid>
+      <description><![CDATA[A Canadian cybersecurity executive, Edward Dubrovsky, was arrested by the FBI during a ShinyHunters hack investigation. The suspect was in the U.S. for a conference when authorities detained him. The arrest follows the FBI’s probe into the ShinyHunters ransomware group’s alleged cyber‑crime activities.]]></description>
+      <pubDate>Mon, 12 Oct 2026 10:32:05 GMT</pubDate>
+      <source url="https://www.securityweek.com/ransomware-response-expert-arrested-in-shinyhunters-fbi-hack-probe/">SecurityWeek</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Ledger Hardware Wallet Implant Linked to $93M Theft</title>
+      <link>https://secubuzz.com/news/ledger-hardware-wallet-implant-linked-to-93m-theft-fde86c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ledger-hardware-wallet-implant-linked-to-93m-theft-fde86c</guid>
+      <description><![CDATA[Ledger reports a hidden implant in hardware wallets sold through Southeast Asia reseller CryptoBilis caused a draining incident on Oct 9 2026, resulting in suspected losses exceeding $93 million. The company confirmed that only affected devices were those distributed via CryptoBilis, and its own systems and direct sales channels were not compromised. Ledger is investigating the implant.]]></description>
+      <pubDate>Mon, 12 Oct 2026 09:46:53 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/12/ledger-wallets-compromised-via-hardware-implant/">Help Net Security</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Bricksforge WordPress Plugin Vulnerability Used for Unauthenticated RCE</title>
+      <link>https://secubuzz.com/news/bricksforge-wordpress-plugin-vulnerability-used-fo-1378bf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/bricksforge-wordpress-plugin-vulnerability-used-fo-1378bf</guid>
+      <description><![CDATA[The Bricksforge plugin for WordPress is being actively exploited in the wild. CVE-2026-85097, a CVSS 10.0 flaw, permits unauthenticated attackers to upload and execute arbitrary PHP code, resulting in remote code execution on vulnerable sites.]]></description>
+      <pubDate>Mon, 12 Oct 2026 09:02:14 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html">The Hacker News</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -60,24 +177,6 @@
       <pubDate>Mon, 12 Oct 2026 07:39:50 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/12/microsoft-windows-update-certificate-rotation/">Help Net Security</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>CyberXero AI‑Powered Campaign Steals 628,000 Ukrainian Records</title>
-      <link>https://secubuzz.com/news/cyberxero-ai-powered-campaign-steals-628-000-ukrai-196992</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cyberxero-ai-powered-campaign-steals-628-000-ukrai-196992</guid>
-      <description><![CDATA[Researchers uncovered a two‑pronged AI‑augmented attack targeting WordPress sites, e‑commerce platforms, and critical infrastructure in Ukraine. The campaign combined commodity tools like Cobalt Strike with Anthropic’s Claude Code orchestration to gain initial access and exfiltrate over 628,000 records.]]></description>
-      <pubDate>Mon, 12 Oct 2026 07:26:12 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/cyberxero-uses-claude-code-in-campaign.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Midnight Mimosa Infects Android Phones via Pre‑Installed Firmware</title>
-      <link>https://secubuzz.com/news/midnight-mimosa-infects-android-phones-via-pre-ins-47de1e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/midnight-mimosa-infects-android-phones-via-pre-ins-47de1e</guid>
-      <description><![CDATA[Midnight Mimosa malware embeds itself in low‑cost Android device firmware, enabling attackers to gain hidden foothold before the device is powered on. The infection bypasses downloads, phishing, and app permissions, targeting multiple brands built on the same platform. No user action is required for compromise.]]></description>
-      <pubDate>Mon, 12 Oct 2026 07:18:04 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/midnight-mimosa/">Cyber Security News</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>Discourse Image Upload Exploit Enables File Read via JPEG Race, Ghostscript, and ImageMagick</title>
@@ -177,15 +276,6 @@
       <pubDate>Sun, 11 Oct 2026 03:21:01 GMT</pubDate>
       <source url="https://cybersecuritynews.com/palo-alto-globalprotect-flaw-vpn-access/">Cyber Security News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cyber Executive Arrested in Connection with ShinyHunters Hackers</title>
-      <link>https://secubuzz.com/news/cyber-executive-arrested-in-connection-with-shinyh-7af634</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cyber-executive-arrested-in-connection-with-shinyh-7af634</guid>
-      <description><![CDATA[Canadian cybersecurity executive Edward Dubrovsky was arrested in Pennsylvania for alleged extortion linked to the ShinyHunters hacking group, part of the FBI’s ongoing crackdown on the group. The arrest follows multiple reports connecting him to the group’s activities.]]></description>
-      <pubDate>Sat, 10 Oct 2026 15:07:54 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/cyber-exec-arrested-in-case-allegedly-tied-to-shinyhunters-hackers/">BleepingComputer</source>
-      <category>Policy</category>
     </item>
     <item>
       <title>Chinese Hacker Uses ARTEX AI and Claude Agents to Target South Korean Banks</title>
@@ -332,15 +422,6 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>Cloudflare Expands Clef Decision Model with Clef-omni and Faster Clef</title>
-      <link>https://secubuzz.com/news/cloudflare-expands-clef-decision-model-with-clef-o-74a125</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-expands-clef-decision-model-with-clef-o-74a125</guid>
-      <description><![CDATA[Cloudflare announced Clef-omni, a multimodal decision model handling audio, video, images, and text in one pipeline. The company also reduced Clef-flash pricing and doubled Clef inference speeds, enhancing AI inference efficiency.]]></description>
-      <pubDate>Fri, 09 Oct 2026 18:27:34 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/clef-faster-cheaper-multimodal/">Cloudflare Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
       <title>AhsayCBS Vulnerabilities Exploited for Webshells and Crypto Mining</title>
       <link>https://secubuzz.com/news/ahsaycbs-vulnerabilities-exploited-for-webshells-a-18decd</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ahsaycbs-vulnerabilities-exploited-for-webshells-a-18decd</guid>
@@ -368,24 +449,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Leader of Money Mule Network Pleads Guilty</title>
-      <link>https://secubuzz.com/news/leader-of-money-mule-network-pleads-guilty-4f076d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/leader-of-money-mule-network-pleads-guilty-4f076d</guid>
-      <description><![CDATA[Oleg Korniev, a 42‑year‑old dual Ukrainian‑Russian citizen, pleaded guilty for leading Your Mule Cashout, a money‑laundering operation that operated a sophisticated mule network across the U.S. and Europe from 2007 to 2014.]]></description>
-      <pubDate>Fri, 09 Oct 2026 16:06:00 GMT</pubDate>
-      <source url="https://therecord.media/leader-of-money-mule-operation-for-cybercriminals-pleads-guilty">The Record</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Hundreds of Thousands Impacted by Data Breach at iRhythm</title>
-      <link>https://secubuzz.com/news/hundreds-of-thousands-impacted-by-data-breach-at-i-5e1a5e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hundreds-of-thousands-impacted-by-data-breach-at-i-5e1a5e</guid>
-      <description><![CDATA[A data breach at iRhythm, a wearable cardiac sensor company, has affected hundreds of thousands of users. The breach began in the summer, and the company has started notifying state authorities about the impact. No specific exploit or vulnerability details are disclosed.]]></description>
-      <pubDate>Fri, 09 Oct 2026 16:06:00 GMT</pubDate>
-      <source url="https://therecord.media/irhythm-data-breach-reports">The Record</source>
-      <category>Breach</category>
-    </item>
-    <item>
       <title>Belarusian Hacktivists Admit 2023 Breach of Russian State Healthcare Network</title>
       <link>https://secubuzz.com/news/belarusian-hacktivists-admit-2023-breach-of-russia-6e2913</link>
       <guid isPermaLink="true">https://secubuzz.com/news/belarusian-hacktivists-admit-2023-breach-of-russia-6e2913</guid>
@@ -393,69 +456,6 @@
       <pubDate>Fri, 09 Oct 2026 14:40:00 GMT</pubDate>
       <source url="https://therecord.media/belarusian-cyber-partisans-claim-2023-russia-healthcare-hack">The Record</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Enforcing Permission Limits for AI Agents</title>
-      <link>https://secubuzz.com/news/enforcing-permission-limits-for-ai-agents-3a3c0d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/enforcing-permission-limits-for-ai-agents-3a3c0d</guid>
-      <description><![CDATA[AI agents can misuse valid credentials to exceed their assigned permissions, bypassing traditional access controls. Token Security recommends implementing agent‑specific policies that enforce strict permission boundaries while preserving autonomy. The guidance helps organizations mitigate risks from AI-driven credential abuse without compromising operational flexibility.]]></description>
-      <pubDate>Fri, 09 Oct 2026 14:01:11 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/how-to-keep-ai-agents-within-their-permissions/">BleepingComputer</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>OpenAI disrupts Russian and Iranian influence operations using ChatGPT</title>
-      <link>https://secubuzz.com/news/openai-disrupts-russian-and-iranian-influence-oper-2b2d6f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-disrupts-russian-and-iranian-influence-oper-2b2d6f</guid>
-      <description><![CDATA[OpenAI’s safety team reported that it disrupted a Latin American propaganda operation run by Russians and a cluster of Iranian fake journalist identities that relied on now‑closed ChatGPT accounts. The action stopped the use of the language model for influence operations.]]></description>
-      <pubDate>Fri, 09 Oct 2026 13:50:00 GMT</pubDate>
-      <source url="https://therecord.media/openai-disrupts-russian-iranian-operations-chatgpt">The Record</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>TP‑Link faces lawsuits from four U.S. states over router security claims</title>
-      <link>https://secubuzz.com/news/tp-link-faces-lawsuits-from-four-u-s-states-over-r-108196</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/tp-link-faces-lawsuits-from-four-u-s-states-over-r-108196</guid>
-      <description><![CDATA[Four U.S. states—Florida, Iowa, Montana and Nebraska—filed lawsuits against TP‑Link Systems, alleging the company misled buyers about router security and its separation from China. TP‑Link denies the claims and says it will fight the suits in court.]]></description>
-      <pubDate>Fri, 09 Oct 2026 13:22:53 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/tp-link-sued-by-four-more-us-states.html">The Hacker News</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>AI Agents Enable New Business Email Compromise Tactics</title>
-      <link>https://secubuzz.com/news/ai-agents-enable-new-business-email-compromise-tac-5c4452</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-agents-enable-new-business-email-compromise-tac-5c4452</guid>
-      <description><![CDATA[AI agents that gain authority over business systems can be manipulated by attackers to act as business email compromise (BEC) victims. The new technique increases the risk of social engineering attacks by allowing automated agents to send fraudulent messages, potentially leading to credential theft or financial loss.]]></description>
-      <pubDate>Fri, 09 Oct 2026 13:00:00 GMT</pubDate>
-      <source url="https://www.darkreading.com/cybersecurity-operations/social-engineering-ai-agents-bec-2026">Dark Reading</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Cloudflare Launches On‑Demand CPU and Memory Profiling for Workers</title>
-      <link>https://secubuzz.com/news/cloudflare-launches-on-demand-cpu-and-memory-profi-38f569</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-launches-on-demand-cpu-and-memory-profi-38f569</guid>
-      <description><![CDATA[Cloudflare now offers on‑demand CPU and memory profiling for Workers and Durable Objects, generating interactive flamegraphs directly in production. The feature helps developers quickly identify memory leaks and performance bottlenecks, improving application reliability and reducing troubleshooting time.]]></description>
-      <pubDate>Fri, 09 Oct 2026 13:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/workers-on-demand-profiling/">Cloudflare Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>Attackers Exploit CVE‑2026‑105133 in AhsayCBS to Deploy XMRig Miners</title>
-      <link>https://secubuzz.com/news/attackers-exploit-cve-2026-105133-in-ahsaycbs-to-d-787a57</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/attackers-exploit-cve-2026-105133-in-ahsaycbs-to-d-787a57</guid>
-      <description><![CDATA[Threat actors leveraged CVE‑2026‑105133, an improper authentication flaw in AhsayCBS’s checkSysPwd() function, to gain control of devices. They installed web shells and disguised XMRig cryptocurrency miners as Microsoft Edge, enabling covert mining operations on compromised systems.]]></description>
-      <pubDate>Fri, 09 Oct 2026 12:47:26 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/attackers-exploit-ahsaycbs-flaws-to.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>High‑severity NVIDIA vulnerability lets unauthenticated attackers crash GPU monitoring</title>
-      <link>https://secubuzz.com/news/high-severity-nvidia-vulnerability-lets-unauthenti-4455e9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/high-severity-nvidia-vulnerability-lets-unauthenti-4455e9</guid>
-      <description><![CDATA[Hundreds of internet‑exposed GPU servers were vulnerable to a high‑severity flaw in NVIDIA’s DCGM Exporter (CVE‑2026‑47483). The flaw allows unauthenticated attackers to crash the monitoring service, potentially disrupting AI workloads. NVIDIA rated the issue CVSS 8.2 and issued a security bulletin on July 28, 2026.]]></description>
-      <pubDate>Fri, 09 Oct 2026 12:26:42 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/09/nvidia-dcgm-exporter-vulnerability-cve-2026-47483/">Help Net Security</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

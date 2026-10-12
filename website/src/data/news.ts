@@ -11,39 +11,274 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
-    "slug": "microsoft-power-bi-phishing-campaign-deploys-rogue-5c5ca3",
-    "title": "Microsoft Power BI Phishing Campaign Deploys Rogue ScreenConnect RMMs for Persistent Access",
-    "summary": "A phishing operation uses Microsoft Power BI to host a fake reference document that lures users to download rogue ScreenConnect Remote Management software. Once installed, the malware grants attackers long‑term remote access to Windows machines, enabling persistent control without relying on known vulnerabilities.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/bi-phishing-campaign/",
-    "publishedAt": "2026-10-12T08:40:10.000Z",
+    "slug": "dark-reading-names-fahmida-y-rashid-as-new-editor-638367",
+    "title": "Dark Reading Names Fahmida Y Rashid as New Editor-in-Chief",
+    "summary": "Dark Reading announced that Fahmida Y Rashid will serve as the new editor‑in‑chief, continuing the publication’s focus on cybersecurity news and analysis. Rashid’s appointment follows the previous editor’s tenure and is expected to maintain the site’s momentum in delivering timely threat intelligence.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyber-risk/passing-baton-dark-reading-new-editor-in-chief",
+    "publishedAt": "2026-10-12T12:30:58.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "microsoft-power-bi-phishing-campaign-deploys-rogue",
-      "article-5c5ca3",
-      "5c5ca3",
-      "microsoft-power-bi-phishing-campaign-deploys-rogue-screencon"
+      "dark-reading-names-fahmida-y-rashid-as-new-editor",
+      "article-638367",
+      "638367",
+      "dark-reading-names-fahmida-y-rashid-as-new-editor-in-chief"
     ]
   },
   {
-    "slug": "critical-sonicwall-vulnerability-exploited-days-af-55a56b",
-    "title": "Critical SonicWall Vulnerability Exploited Days After Disclosure",
-    "summary": "CVE‑2026‑102255 is a pre‑authenticated Server‑Side Request Forgery flaw in SonicWall devices that allows attackers to perform unauthorized operations. The vulnerability was actively exploited within days of its disclosure, enabling attackers to manipulate internal traffic and potentially gain further access.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/critical-sonicwall-vulnerability-exploited-days-after-disclosure/",
-    "publishedAt": "2026-10-12T08:36:01.000Z",
+    "slug": "ukraine-drone-strike-hits-third-yandex-data-center-32e1cb",
+    "title": "Ukraine Drone Strike Hits Third Yandex Data Center, Disrupting Russian Digital Services",
+    "summary": "Ukrainian drones struck a third Yandex data center in Russia over the weekend, forcing the facility to shut down. The attack disrupted cloud services, payments, deliveries, and other online services nationwide, highlighting the vulnerability of critical infrastructure to aerial strikes.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/ukraine-strikes-third-yandex-data-center",
+    "publishedAt": "2026-10-12T12:00:00.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "critical-sonicwall-vulnerability-exploited-days-af",
-      "article-55a56b",
-      "55a56b",
-      "critical-sonicwall-vulnerability-exploited-days-after-disclo"
+      "ukraine-drone-strike-hits-third-yandex-data-center",
+      "article-32e1cb",
+      "32e1cb",
+      "ukraine-drone-strike-hits-third-yandex-data-center-disruptin"
+    ]
+  },
+  {
+    "slug": "canonical-s-websites-hit-by-second-ddos-attack-of-3b26c3",
+    "title": "Canonical’s Websites Hit by Second DDoS Attack of 2026",
+    "summary": "Canonical’s main Ubuntu and Canonical websites, including the Ubuntu blog and developer portal, were disrupted during a second DDoS attack this year. The incident caused temporary inaccessibility for users and developers. No data breach was reported, and the sites were restored after mitigation efforts.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/canonical-websites-disrupted-in-second-ddos-attack-this-year/",
+    "publishedAt": "2026-10-12T11:58:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "canonical-s-websites-hit-by-second-ddos-attack-of",
+      "article-3b26c3",
+      "3b26c3",
+      "canonical-s-websites-hit-by-second-ddos-attack-of-2026"
+    ]
+  },
+  {
+    "slug": "windows-11-23h2-enterprise-editions-reach-end-of-s-1da70a",
+    "title": "Windows 11 23H2 Enterprise Editions Reach End of Support in 30 Days",
+    "summary": "Microsoft announced that Windows 11 23H2 Enterprise, Education, and IoT Enterprise editions will cease receiving security updates in 30 days. Users must upgrade to newer releases or apply extended support options. Failure to update may expose systems to unpatched vulnerabilities and compliance risks.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-11-23h2-reaches-end-of-support-in-30-days/",
+    "publishedAt": "2026-10-12T11:58:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "windows-11-23h2-enterprise-editions-reach-end-of-s",
+      "article-1da70a",
+      "1da70a",
+      "windows-11-23h2-enterprise-editions-reach-end-of-support-in-"
+    ]
+  },
+  {
+    "slug": "mastermind-of-15-000-mule-cybercrime-laundering-ne-33edae",
+    "title": "Mastermind of 15,000-Mule Cybercrime Laundering Network Pleads Guilty in US",
+    "summary": "Oleg Korniev, a leader of the YMCO money‑mule network that helped hackers move funds outside the US, pleaded guilty in a US court. The case highlights the growing reach of cybercrime laundering operations and the legal actions against key figures.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/mastermind-of-15000-mule-cybercrime-laundering-network-pleads-guilty-in-us/",
+    "publishedAt": "2026-10-12T11:24:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "mastermind-of-15-000-mule-cybercrime-laundering-ne",
+      "article-33edae",
+      "33edae",
+      "mastermind-of-15-000-mule-cybercrime-laundering-network-plea"
+    ]
+  },
+  {
+    "slug": "irhythm-data-breach-exposes-360-000-patient-record-2430d1",
+    "title": "iRhythm Data Breach Exposes 360,000 Patient Records",
+    "summary": "Hackers accessed iRhythm’s patient database, stealing names, addresses, email addresses, dates of birth, and phone numbers for at least 360,000 individuals. The breach compromises personal health information, potentially enabling identity theft and fraud. iRhythm has notified affected users and is investigating the incident.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/irhythm-data-breach-impacts-over-360000-people/",
+    "publishedAt": "2026-10-12T11:05:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "irhythm-data-breach-exposes-360-000-patient-record",
+      "article-2430d1",
+      "2430d1",
+      "irhythm-data-breach-exposes-360-000-patient-records"
+    ]
+  },
+  {
+    "slug": "microsoft-s-new-decision-scoring-model-aims-to-imp-7e4403",
+    "title": "Microsoft’s New Decision‑Scoring Model Aims to Improve AI Agent Workflow",
+    "summary": "Microsoft released the Microsoft‑Decision‑1 model, a small decision‑scoring tool that assigns calibrated probabilities to answer options. It is intended for routing, classification, prioritization, verification, and workflow control, enabling secure, trusted AI agent integration.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/12/microsoft-decision-1-model/",
+    "publishedAt": "2026-10-12T11:02:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-s-new-decision-scoring-model-aims-to-imp",
+      "article-7e4403",
+      "7e4403",
+      "microsoft-s-new-decision-scoring-model-aims-to-improve-ai-ag"
+    ]
+  },
+  {
+    "slug": "phishing-emails-target-ai-assistant-users-e9a99b",
+    "title": "Phishing Emails Target AI Assistant Users",
+    "summary": "Phishing emails embed hidden instructions that can trick AI assistants into executing commands, turning ignored emails into tasks. The technique exploits AI summarization features to gain user interaction and potentially access sensitive data.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/10/phishing-emails-are-baiting-your-ai-assistant",
+    "publishedAt": "2026-10-12T10:54:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "phishing-emails-target-ai-assistant-users",
+      "article-e9a99b",
+      "e9a99b"
+    ]
+  },
+  {
+    "slug": "preinstalled-malware-on-low-cost-android-phones-5784c0",
+    "title": "Preinstalled Malware on Low-Cost Android Phones",
+    "summary": "Malware shipped in firmware on budget Android devices from MediaTek platforms cannot be removed by users. The compromise occurs before first use, enabling persistent control over the device. Users should avoid purchasing from untrusted marketplaces and seek firmware updates.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/12/midnight-mimosa-malware-cheap-android-phones/",
+    "publishedAt": "2026-10-12T10:53:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "preinstalled-malware-on-low-cost-android-phones",
+      "article-5784c0",
+      "5784c0"
+    ]
+  },
+  {
+    "slug": "microsoft-exchange-admin-center-blocks-admin-porta-76a265",
+    "title": "Microsoft Exchange Admin Center Blocks Admin Portal Access",
+    "summary": "Microsoft is investigating an issue in Exchange Admin Center that causes an “Internal Server Error” for some administrators, preventing access to the web portal used to manage Exchange Online. The incident is tracked as EX1500900 and is under investigation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/exchange-admin-center-issue/",
+    "publishedAt": "2026-10-12T10:52:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-exchange-admin-center-blocks-admin-porta",
+      "article-76a265",
+      "76a265",
+      "microsoft-exchange-admin-center-blocks-admin-portal-access"
+    ]
+  },
+  {
+    "slug": "sonicwall-sma-1000-exploited-in-135-attempts-after-44f216",
+    "title": "SonicWall SMA 1000 Exploited in 135 Attempts After Patch",
+    "summary": "Threat actors have targeted the SonicWall Secure Mobile Access 1000 appliances in 135 exploitation attempts following public disclosure. The pre‑authenticated SSRF flaw, CVE-2026-102255 with a CVSS score of 10.0, allows attackers to direct the appliance to issue requests on their behalf, enabling potential remote compromise.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/critical-sonicwall-sma-1000-flaw.html",
+    "publishedAt": "2026-10-12T10:36:56.000Z",
+    "cves": [
+      "CVE-2026-102255"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "sonicwall-sma-1000-exploited-in-135-attempts-after",
+      "article-44f216",
+      "44f216",
+      "sonicwall-sma-1000-exploited-in-135-attempts-after-patch"
+    ]
+  },
+  {
+    "slug": "casbaneiro-malware-hides-command-and-control-until-1bbe3a",
+    "title": "Casbaneiro Malware Hides Command‑and‑Control Until Banking Site Visit",
+    "summary": "Casbaneiro malware hides command‑and‑control traffic until infected users visit targeted banking sites. The Windows banking trojan blends phishing, location checks, staged downloads, and separate data‑collection servers to keep infections quiet during analysis. The campaign targets Latin American users, linking activity across multiple sites.",
+    "category": "Malware",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/casbaneiro-malware/",
+    "publishedAt": "2026-10-12T10:34:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "casbaneiro-malware-hides-command-and-control-until",
+      "article-1bbe3a",
+      "1bbe3a",
+      "casbaneiro-malware-hides-command-and-control-until-banking-s"
+    ]
+  },
+  {
+    "slug": "canadian-cybersecurity-executive-arrested-in-shiny-71bcf4",
+    "title": "Canadian Cybersecurity Executive Arrested in ShinyHunters FBI Hack Probe",
+    "summary": "A Canadian cybersecurity executive, Edward Dubrovsky, was arrested by the FBI during a ShinyHunters hack investigation. The suspect was in the U.S. for a conference when authorities detained him. The arrest follows the FBI’s probe into the ShinyHunters ransomware group’s alleged cyber‑crime activities.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/ransomware-response-expert-arrested-in-shinyhunters-fbi-hack-probe/",
+    "publishedAt": "2026-10-12T10:32:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "canadian-cybersecurity-executive-arrested-in-shiny",
+      "article-71bcf4",
+      "71bcf4",
+      "canadian-cybersecurity-executive-arrested-in-shinyhunters-fb"
+    ]
+  },
+  {
+    "slug": "ledger-hardware-wallet-implant-linked-to-93m-theft-fde86c",
+    "title": "Ledger Hardware Wallet Implant Linked to $93M Theft",
+    "summary": "Ledger reports a hidden implant in hardware wallets sold through Southeast Asia reseller CryptoBilis caused a draining incident on Oct 9 2026, resulting in suspected losses exceeding $93 million. The company confirmed that only affected devices were those distributed via CryptoBilis, and its own systems and direct sales channels were not compromised. Ledger is investigating the implant.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/12/ledger-wallets-compromised-via-hardware-implant/",
+    "publishedAt": "2026-10-12T09:46:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ledger-hardware-wallet-implant-linked-to-93m-theft",
+      "article-fde86c",
+      "fde86c"
+    ]
+  },
+  {
+    "slug": "bricksforge-wordpress-plugin-vulnerability-used-fo-1378bf",
+    "title": "Bricksforge WordPress Plugin Vulnerability Used for Unauthenticated RCE",
+    "summary": "The Bricksforge plugin for WordPress is being actively exploited in the wild. CVE-2026-85097, a CVSS 10.0 flaw, permits unauthenticated attackers to upload and execute arbitrary PHP code, resulting in remote code execution on vulnerable sites.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html",
+    "publishedAt": "2026-10-12T09:02:14.000Z",
+    "cves": [
+      "CVE-2026-85097"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "bricksforge-wordpress-plugin-vulnerability-used-fo",
+      "article-1378bf",
+      "1378bf",
+      "bricksforge-wordpress-plugin-vulnerability-used-for-unauthen"
     ]
   },
   {
@@ -118,42 +353,6 @@ export const news: NewsBrief[] = [
       "article-455e7c",
       "455e7c",
       "windows-pcs-may-lose-security-updates-if-key-certificates-ex"
-    ]
-  },
-  {
-    "slug": "cyberxero-ai-powered-campaign-steals-628-000-ukrai-196992",
-    "title": "CyberXero AI‑Powered Campaign Steals 628,000 Ukrainian Records",
-    "summary": "Researchers uncovered a two‑pronged AI‑augmented attack targeting WordPress sites, e‑commerce platforms, and critical infrastructure in Ukraine. The campaign combined commodity tools like Cobalt Strike with Anthropic’s Claude Code orchestration to gain initial access and exfiltrate over 628,000 records.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/cyberxero-uses-claude-code-in-campaign.html",
-    "publishedAt": "2026-10-12T07:26:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cyberxero-ai-powered-campaign-steals-628-000-ukrai",
-      "article-196992",
-      "196992",
-      "cyberxero-ai-powered-campaign-steals-628-000-ukrainian-recor"
-    ]
-  },
-  {
-    "slug": "midnight-mimosa-infects-android-phones-via-pre-ins-47de1e",
-    "title": "Midnight Mimosa Infects Android Phones via Pre‑Installed Firmware",
-    "summary": "Midnight Mimosa malware embeds itself in low‑cost Android device firmware, enabling attackers to gain hidden foothold before the device is powered on. The infection bypasses downloads, phishing, and app permissions, targeting multiple brands built on the same platform. No user action is required for compromise.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/midnight-mimosa/",
-    "publishedAt": "2026-10-12T07:18:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "midnight-mimosa-infects-android-phones-via-pre-ins",
-      "article-47de1e",
-      "47de1e",
-      "midnight-mimosa-infects-android-phones-via-pre-installed-fir"
     ]
   },
   {
@@ -352,24 +551,6 @@ export const news: NewsBrief[] = [
       "article-4ae2e2",
       "4ae2e2",
       "ransomware-groups-exploit-palo-alto-globalprotect-authentica"
-    ]
-  },
-  {
-    "slug": "cyber-executive-arrested-in-connection-with-shinyh-7af634",
-    "title": "Cyber Executive Arrested in Connection with ShinyHunters Hackers",
-    "summary": "Canadian cybersecurity executive Edward Dubrovsky was arrested in Pennsylvania for alleged extortion linked to the ShinyHunters hacking group, part of the FBI’s ongoing crackdown on the group. The arrest follows multiple reports connecting him to the group’s activities.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cyber-exec-arrested-in-case-allegedly-tied-to-shinyhunters-hackers/",
-    "publishedAt": "2026-10-10T15:07:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cyber-executive-arrested-in-connection-with-shinyh",
-      "article-7af634",
-      "7af634",
-      "cyber-executive-arrested-in-connection-with-shinyhunters-hac"
     ]
   },
   {
@@ -658,24 +839,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "cloudflare-expands-clef-decision-model-with-clef-o-74a125",
-    "title": "Cloudflare Expands Clef Decision Model with Clef-omni and Faster Clef",
-    "summary": "Cloudflare announced Clef-omni, a multimodal decision model handling audio, video, images, and text in one pipeline. The company also reduced Clef-flash pricing and doubled Clef inference speeds, enhancing AI inference efficiency.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/clef-faster-cheaper-multimodal/",
-    "publishedAt": "2026-10-09T18:27:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-expands-clef-decision-model-with-clef-o",
-      "article-74a125",
-      "74a125",
-      "cloudflare-expands-clef-decision-model-with-clef-omni-and-fa"
-    ]
-  },
-  {
     "slug": "ahsaycbs-vulnerabilities-exploited-for-webshells-a-18decd",
     "title": "AhsayCBS Vulnerabilities Exploited for Webshells and Crypto Mining",
     "summary": "Threat actors are exploiting an unpatched critical and a medium‑severity flaw in the AhsayCBS backup management platform to deploy webshells and run cryptocurrency miners. The attacks target the platform’s web interface, allowing remote code execution and data exfiltration until patches are applied.",
@@ -727,41 +890,6 @@ export const news: NewsBrief[] = [
       "article-15d4db",
       "15d4db",
       "security-threats-don-t-stop-at-the-office-why-executives-fam"
-    ]
-  },
-  {
-    "slug": "leader-of-money-mule-network-pleads-guilty-4f076d",
-    "title": "Leader of Money Mule Network Pleads Guilty",
-    "summary": "Oleg Korniev, a 42‑year‑old dual Ukrainian‑Russian citizen, pleaded guilty for leading Your Mule Cashout, a money‑laundering operation that operated a sophisticated mule network across the U.S. and Europe from 2007 to 2014.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/leader-of-money-mule-operation-for-cybercriminals-pleads-guilty",
-    "publishedAt": "2026-10-09T16:06:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "leader-of-money-mule-network-pleads-guilty",
-      "article-4f076d",
-      "4f076d"
-    ]
-  },
-  {
-    "slug": "hundreds-of-thousands-impacted-by-data-breach-at-i-5e1a5e",
-    "title": "Hundreds of Thousands Impacted by Data Breach at iRhythm",
-    "summary": "A data breach at iRhythm, a wearable cardiac sensor company, has affected hundreds of thousands of users. The breach began in the summer, and the company has started notifying state authorities about the impact. No specific exploit or vulnerability details are disclosed.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/irhythm-data-breach-reports",
-    "publishedAt": "2026-10-09T16:06:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hundreds-of-thousands-impacted-by-data-breach-at-i",
-      "article-5e1a5e",
-      "5e1a5e",
-      "hundreds-of-thousands-impacted-by-data-breach-at-irhythm"
     ]
   },
   {
