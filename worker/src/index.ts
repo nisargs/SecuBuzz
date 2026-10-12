@@ -254,6 +254,7 @@ async function getKevAdvisories(full: boolean = true): Promise<KevVulnerability[
     : (cachedRecentKev.length > 0 ? cachedRecentKev : SEED_KEV_ADVISORIES);
 }
 
+let cachedVideoPath: string | null = null;
 let cachedVideoBuffer: ArrayBuffer | null = null;
 
 const epssCache = new Map<string, { epss: number; percentile: number; delta7d: number | null; date?: string; cachedAt: number }>();
@@ -1019,10 +1020,15 @@ export default {
 
         // Native HTTP 206 Byte-Range Streaming Handler for Videos (.mp4)
         if (url.pathname.endsWith('.mp4')) {
-          if (!cachedVideoBuffer) {
+          if (url.pathname === '/brag.mp4') {
+            return Response.redirect(new URL('/secubuzz-landscape.mp4', request.url).toString(), 301);
+          }
+
+          if (!cachedVideoBuffer || cachedVideoPath !== url.pathname) {
             const initialRes = await env.ASSETS.fetch(new Request(new URL(url.pathname, request.url), { method: 'GET' }));
             if (initialRes.ok) {
               cachedVideoBuffer = await initialRes.arrayBuffer();
+              cachedVideoPath = url.pathname;
             }
           }
 

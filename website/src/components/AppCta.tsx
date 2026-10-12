@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { QrCode } from 'lucide-react';
 import { PlayStoreButton } from './PlayStoreButton';
 
 interface AppCtaProps {
@@ -17,8 +19,18 @@ export function AppCta({
           <h2 className="text-2xl font-semibold tracking-tight text-ink md:text-3xl">{title}</h2>
           <p className="mt-2 text-muted">{body}</p>
         </div>
-        <PlayStoreButton size="lg" source="bottom_cta" />
+        <div className="flex items-center gap-3">
+          <PlayStoreButton size="lg" source="bottom_cta" />
+          <Link
+            to="/download"
+            title="Scan QR Code to install on Android"
+            className="hidden sm:inline-flex h-14 items-center gap-2 rounded-md border border-line bg-surface px-4 text-xs font-medium text-ink transition-all duration-150 ease-out hover:border-accent hover:bg-raised hover:text-accent"
+          >
+            <QrCode className="h-4 w-4 text-accent" />
+            <span>Scan QR</span>
+          </Link>
+        </div>
       </div>
-    </section>);
-
+    </section>
+  );
 }

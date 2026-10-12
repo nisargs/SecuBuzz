@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRightIcon } from 'lucide-react';
+import { ArrowRightIcon, QrCode } from 'lucide-react';
 import { PlayStoreButton } from '../components/PlayStoreButton';
 import { PhoneMockup } from '../components/PhoneMockup';
 import { NewsBriefItem } from '../components/NewsBriefItem';
@@ -60,6 +60,12 @@ export function Home() {
                 className="inline-flex items-center gap-1.5 text-sm font-medium text-ink transition-colors duration-150 ease-out hover:text-accent">
                 
                 Read today’s briefs <ArrowRightIcon className="h-4 w-4" aria-hidden="true" />
+              </Link>
+            </div>
+            <div className="mt-4 hidden sm:flex items-center gap-2 text-xs text-muted">
+              <Link to="/download" className="inline-flex items-center gap-1.5 text-accent hover:underline">
+                <QrCode className="h-3.5 w-3.5" />
+                <span>On a work computer? Scan QR code to install directly on Android</span>
               </Link>
             </div>
             <dl className="mt-12 grid max-w-lg grid-cols-2 gap-6 border-t border-line pt-6">

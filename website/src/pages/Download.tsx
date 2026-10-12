@@ -38,7 +38,7 @@ export function Download() {
             <p className="mt-5 max-w-lg text-lg leading-relaxed text-muted">
               Free, zero-tracking security intelligence. 60-word briefs and direct CISA KEV threat alerts delivered without noise, algorithms, or account requirements.
             </p>
-            <div className="mt-8 flex flex-col items-start gap-3">
+            <div className="mt-8 flex flex-col items-start gap-4">
               <div className="flex flex-wrap items-center gap-3">
                 <PlayStoreButton size="lg" source="download_page" />
                 <button
@@ -51,6 +51,32 @@ export function Download() {
                   <ArrowDown className="h-3.5 w-3.5 text-muted" />
                 </button>
               </div>
+
+              {/* Desktop QR Scan Card (Targeting corporate laptop & desktop readers) */}
+              <div className="hidden sm:flex items-center gap-4 rounded-xl border border-line/80 bg-surface/80 p-3.5 pr-6 shadow-sm">
+                <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-lg border border-line bg-white p-1">
+                  <img
+                    src="/qr.png"
+                    alt="Scan QR code to install SecuBuzz on Android"
+                    className="h-full w-full object-contain"
+                    width={80}
+                    height={80}
+                  />
+                </div>
+                <div>
+                  <div className="flex items-center gap-2 text-xs font-mono font-medium text-accent">
+                    <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
+                    Scan with Phone
+                  </div>
+                  <div className="text-sm font-medium text-ink">
+                    On a work laptop or desktop?
+                  </div>
+                  <div className="text-xs text-muted">
+                    Scan with your Android camera to open directly in Google Play.
+                  </div>
+                </div>
+              </div>
+
               <p className="text-xs text-subtle">
                 Official release on Google Play · Requires Android 8.0 (Oreo) or higher · Free &amp; Ad-Free
               </p>
@@ -123,7 +149,7 @@ export function Download() {
               </div>
               <div className="relative aspect-video w-full bg-[#0B0F14]">
                 <video
-                  src="/brag.mp4"
+                  src="/secubuzz-landscape.mp4"
                   poster="/1.jpg"
                   controls
                   playsInline
