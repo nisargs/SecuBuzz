@@ -205,17 +205,24 @@ To uphold our **Zero-Silent-Failure Mandate**, SecuBuzz runs a 3-layer automated
 
 ---
 
-## 7. Live Production Status & Telemetry Snapshot (October 10, 2026)
+## 7. Live Production Status & Telemetry Snapshot (October 12, 2026)
 
 - **Production Track Status**: **LIVE on the Google Play Store as of October 10, 2026** across 177+ countries and regions.
   - **Store Listing**: [SecuBuzz on Google Play](https://play.google.com/store/apps/details?id=com.secubuzz.app)
   - Passed 14-day closed testing with 100% crash-free sessions across Android 11–15.
   - Production Release `1.0.2` (Version Code 8).
-- **Registered Mobile Devices (Cloudflare D1 Push Registry)**: **85 Active Android Devices**
-  - App Version breakdown: `v1.0.2`: 22 devices | `v1.0.1`: 33 devices | `v1.0.0`: 30 devices.
-  - Total Push Alerts Delivered: **716 alerts**.
-- **Daily Edge Traffic (`secubuzz.com`)**: ~1,250–4,200 requests/day across 30+ countries.
-- **Install Conversion Telemetry**: Live button-level tracking via `/go/play` with anonymous unique visitor cookie deduplication (`sb_vid`), source button attribution (`home_hero`, `nav`, `footer`), and country-level geo telemetry.
+- **Registered Mobile Devices (Cloudflare D1 Push Registry)**: **87 Active Android Devices**
+  - App Version breakdown: `v1.0.2`: 24 devices | `v1.0.1`: 33 devices | `v1.0.0`: 30 devices.
+  - Total Push Alerts Delivered: **739 alerts**.
+- **Daily Edge Traffic (`secubuzz.com`)**: ~1,250–8,225 requests/day across 30+ countries (7-day total: 22,706 requests, 3,646 unique visitors, 5,282 page views).
+- **Install Conversion Telemetry**:
+  - Live button-level tracking via `/go/play` with anonymous unique visitor cookie deduplication (`sb_vid`), source button attribution (`home_hero`, `bottom_cta`, `smart_banner`, `download_page`, `direct`), and country-level geo telemetry.
+  - **Click Telemetry**: 27 total install clicks across 23 distinct individuals (2 repeat clickers). `is_repeat: 1` in D1 indicates an existing returning website visitor cookie (`sb_vid`), not repeated button clicks.
+  - **Bot vs. Human Separation**: German traffic anomaly (~16 req/visit vs US ~3 req/visit) confirmed as automated cloud crawler/scraper activity (Hetzner / AWS datacenter IPs).
+- **Web Companion & Conversion Architecture (`secubuzz.com`)**:
+  - **Hardware-Locked Phone Mockup (`PhoneMockup.tsx`)**: The smartphone chassis is locked to dark obsidian/titanium (`bg-[#0A0D14]`, `border-[#1E2638]`, `rounded-[48px]`, `ring-1 ring-white/10`). Never adapts to light theme, maintaining crisp hardware realism via layered drop shadow (`shadow-[0_25px_60px_-15px_rgba(15,23,42,0.35)]`). Flush architectural corners with zero protruding fake button divs. Mobile screenshots (`1.jpg`, `screenshot.jpg`, `app-screenshot.jpg`) feature a seamless dark `#0B0E14` base with an Android gesture pill, eliminating light OS 3-button bars.
+  - **Desktop QR Code Conversion System (`/qr.png`)**: Directly targets the 89.8% desktop corporate reader cohort on work laptops who cannot install an Android app on PC. Renders a high-res 2048x2048 QR code on `/download` and desktop helper triggers.
+  - **Walkthrough Video**: Updated to the final 16:9 landscape cut at `/secubuzz-landscape.mp4` with a Cloudflare Worker HTTP 301 permanent redirect from legacy `/brag.mp4`.
 
 ---
 

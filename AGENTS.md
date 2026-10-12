@@ -23,6 +23,12 @@
   - Dark Mode (current default): background `#0B0F14`.
   - Future White Theme: tokens prepared in `src/theme/theme.ts` with AA/AAA contrast ratios.
   - Accent Presets: Cyan (`#4CC9F0`), Terminal Green (`#10B981`), Cyber Amber (`#F59E0B`), Slate (`#94A3B8`).
+- **Hardware-Locked Phone Mockup Standard (`PhoneMockup.tsx`):**
+  - The physical device chassis is permanently locked to a dark obsidian/titanium finish (`bg-[#0A0D14]`, `border-[3.5px] border-[#1E2638]`, `rounded-[48px]`, `ring-1 ring-white/10`).
+  - **Never adapt the chassis to the website theme**: It must never use `bg-surface` or `border-line` which washes out into a pale border in white theme.
+  - **No protruding button divs**: The chassis must remain flush with clean architectural corners; do not attach floating fake side button elements that stick out past the bezel.
+  - **Light Mode Contrast**: Hardware realism is maintained on light backgrounds via a deep multi-tier drop shadow (`shadow-[0_25px_60px_-15px_rgba(15,23,42,0.35)]`).
+  - **Clean Edge-to-Edge Navigation**: Mobile screenshots (`1.jpg`, `screenshot.jpg`, `app-screenshot.jpg`) must maintain a seamless dark `#0B0E14` base with a subtle Android gesture pill, completely eliminating any light/white OS 3-button navigation bars.
 
 ## 5. Deployment & Google Play Compliance
 - **Cloudflare Worker (`worker/src/index.ts`):** Must always be deployed with `npx wrangler deploy` when routing or policy files change. Always verify live endpoints with `fetch`.
@@ -30,7 +36,10 @@
   - Privacy Policy: `https://secubuzz.com/privacy`
   - Account Deletion: `https://secubuzz.com/account-deletion`
   - Both URLs and in-app screens (`privacy.tsx`, `data-privacy.tsx`) explicitly declare the app name **"SecuBuzz"** and developer **"MiSo Labs"**.
-- **Feed System:** `scripts/ingest.mjs` retains up to 350 articles (~7–10 days of security intelligence across 27 curated sources), scheduled every 1 hour via GitHub Actions (`cron: "17 * * * *"`). Powered by resilient tri-engine AI (Groq `openai/gpt-oss-20b` + Google Gemini `gemini-2.5-flash` + OpenRouter fallback).
+- **Desktop QR Conversion & Video Assets:**
+  - High-res QR code (`/qr.png`) pointing directly to Google Play Store deployed to bridge the desktop-to-mobile conversion gap for corporate PC readers (89.8% of web traffic). Rendered on `/download` and via desktop helper triggers.
+  - Product walkthrough video deployed at `/secubuzz-landscape.mp4` (with HTTP 301 redirect from legacy `/brag.mp4` in Cloudflare Worker).
+- **Feed System:** `scripts/ingest.mjs` retains up to 350 articles (~7–10 days of security intelligence across 27 curated sources), scheduled every 1 hour via GitHub Actions (`cron: "17 * * * *"`). Powered by resilient tri-engine AI (Groq `openai/gpt-oss-20b` + Google Gemini `gemini-2.5-flash` + OpenRouter fallback), interleaved via hourly lead rotation (`currentHour % pool.length`) with instant failover on HTTP 429/5xx.
 - **Feed Resilience & Watchdog System (Zero-Silent-Failure Mandate):**
   - **Read-Only Invariant:** `scripts/sync_website_data.mjs` is strictly read-only on `feed.json` and must NEVER write or overwrite `feed.json`.
   - **In-Pipeline Gate (`scripts/verify_feed_freshness.mjs`):** Runs in `.github/workflows/ingest.yml` before R2 upload. Asserts >= 50 articles and newest story meets adaptive threshold (<= 32h on weekends, <= 18h on weekdays) accounting for natural journalism lulls; fails CI loudly if stale.
@@ -133,16 +142,16 @@
     - **Mandatory 5-Point Reporting Format**: Always deliver the exact structure:
       1. *Real User Numbers (Traffic & Sessions)*: 7-day daily breakdown of unique visitors, total requests, page views, bandwidth, and top countries (US, DE, CA, NL, IN, AU, etc.).
       2. *Pages Checked*: Breakdown of RUM page views by route (`/`, `/news`, `/advisories`, `/download`, `/publishers`, `/about`, and specific CVE/brief URLs).
-      3. *Repeat Users*: Returning direct readers (bookmarks/shortcuts), repeat install clickers (`is_repeat: 1`), and active mobile push fleet in D1 (85 devices across `v1.0.2`, `v1.0.1`, `v1.0.0`).
-      4. *Time on Site & Engagement*: Pages/session (~2.9 pages), dwell time (~1.5–3 min for 60-word briefs), inbound referrers (Reddit, Google, direct), and device OS split (Windows, iOS, Android, macOS).
+      3. *Repeat Users*: Returning direct readers (bookmarks/shortcuts), repeat install clickers (`is_repeat: 1` in D1 indicates an existing `sb_vid` returning website cookie, not repeated button clicks; exactly 27 clicks from 23 distinct visitors with 2 repeat clickers), and active mobile push fleet in D1 (87 devices across `v1.0.2`: 24, `v1.0.1`: 33, `v1.0.0`: 30).
+      4. *Time on Site & Engagement*: Pages/session (~2.9 pages), dwell time (~1.5–2.5 min for 60-word briefs), inbound referrers (Reddit, Google, direct), and device OS split (Windows, iOS, Android, macOS). Note bot anomalies (e.g. Germany ~16 req/visit vs US ~3 req/visit reflects cloud scrapers).
       5. *Download Clicks*: Breakdown of `/go/play` button clicks by country/source (human vs crawler) and `/download` visits.
 - **Authoritative Inventory Counts:**
   - **Advisories count:** Exactly **1,789 active advisories** (CISA KEV ~1,530 + GitHub Advisories ~259). Kept strictly consistent across mobile app (`1,789 active`) and website (`1,789 active advisories`).
   - **News feed count:** Up to **350 articles** (~7–10 days of rolling intelligence across 27 verified threat feeds).
 - **100% Free Tier ($0.00 Cost Guarantee):**
-  - AI Summarization: Dual-engine architecture. Primary Groq free tier ceiling is 8,000 TPM, 30 RPM, 14,400 RPD; backup Google Gemini free tier offers 1,000,000 TPM, 15 RPM, 1,500 RPD. Ingestion runs every 2 hours, batching 2 articles with a 5s backoff and automated fallback. Adding feeds or increasing feed size respects these ceilings and never incurs costs.
+  - AI Summarization: Tri-engine architecture (Groq `openai/gpt-oss-20b` + Google Gemini `gemini-2.5-flash` + OpenRouter fallback). Primary Groq free tier ceiling is 8,000 TPM, 30 RPM, 14,400 RPD; backup Google Gemini free tier offers 1,000,000 TPM, 15 RPM, 1,500 RPD. Ingestion runs every 1 hour, batching 2 articles with a 5s backoff and automated fallback. Adding feeds or increasing feed size respects these ceilings and never incurs costs.
   - Cloudflare: Worker (100k req/day free), R2 (10GB / 1M writes free), D1 (5M reads / 100k writes free).
-  - GitHub Actions: 2,000 runner minutes/month free (~540 min used with 2-hour cron, leaving ~1,460 free minutes).
+  - GitHub Actions: 2,000 runner minutes/month free (~480 min used with 1-hour cron, leaving ~1,520 free minutes).
 
 
 
