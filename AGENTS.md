@@ -32,10 +32,12 @@
 
 ## 5. Deployment & Google Play Compliance
 - **Cloudflare Worker (`worker/src/index.ts`):** Must always be deployed with `npx wrangler deploy` when routing or policy files change. Always verify live endpoints with `fetch`.
-- **Policy URLs:**
+- **Policy URLs & Inbound Channels:**
   - Privacy Policy: `https://secubuzz.com/privacy`
   - Account Deletion: `https://secubuzz.com/account-deletion`
+  - Contact Hub: `https://secubuzz.com/contact`
   - Both URLs and in-app screens (`privacy.tsx`, `data-privacy.tsx`) explicitly declare the app name **"SecuBuzz"** and developer **"MiSo Labs"**.
+  - **Zero-Attack-Surface Contact Architecture:** Replaced insecure mock textboxes with verified 1-click Contact Action Cards and structured diagnostic templates routing directly via authenticated email protocols (`support@secubuzz.com`, `security@secubuzz.com`, `publishers@secubuzz.com`). Eliminates SQL injection, stored XSS, and database bot spam, while guaranteeing immediate notifications on team devices.
 - **Desktop QR Conversion & Video Assets:**
   - High-res QR code (`/qr.png`) pointing directly to Google Play Store deployed to bridge the desktop-to-mobile conversion gap for corporate PC readers (89.8% of web traffic). Rendered on `/download` and via desktop helper triggers.
   - Product walkthrough video deployed at `/secubuzz-landscape.mp4` (with HTTP 301 redirect from legacy `/brag.mp4` in Cloudflare Worker).
