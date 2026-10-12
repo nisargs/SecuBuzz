@@ -31,7 +31,7 @@ export function About() {
           <p>
             We built SecuBuzz to cut straight to what matters. Our automated intelligence pipeline ingests
             coverage from 20 authoritative security publications and the CISA Known Exploited Vulnerabilities (KEV)
-            catalog every 4 hours, distilling complex developments into objective, 60-word briefs with direct links to primary sources.
+            catalog hourly around the clock, distilling complex developments into objective, 60-word briefs with direct links to primary sources.
           </p>
           <p>
             SecuBuzz is engineered with a strict <strong className="text-ink">privacy-first architecture</strong>: no user accounts, no trackers,

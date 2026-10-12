@@ -35,7 +35,7 @@ Hey r/cybersecurity,
 Like many of you, part of my morning routine is scanning for breaking zero-days, ransomware extortion campaigns, and CISA directives before the day kicks off. But I got tired of wading through 2,000-word SEO-stuffed articles, intrusive ads, and sensationalist headlines just to find the actual CVE and mitigation steps.
 
 To fix this for myself, I built **SecuBuzz**:
-1. **60-Word Technical Briefs:** Condenses disclosures and news from 20+ verified sources into factual 60-word briefs refreshed every 4 hours, with direct links to primary reporting.
+1. **60-Word Technical Briefs:** Condenses disclosures and news from 20+ verified sources into factual 60-word briefs refreshed hourly, with direct links to primary reporting.
 2. **CISA KEV Zero-Day Tracking:** Real-time catalog tracking active in-the-wild exploits and federal compliance deadlines.
 3. **EPSS Exploit Telemetry:** Displays daily FIRST.org Exploit Prediction Scoring System probabilities and percentiles alongside CVSS scores.
 4. **1-Tap Incident Reporting:** Quickly copy formatted Markdown summaries for Slack, Teams, or Jira.

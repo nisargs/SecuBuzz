@@ -75,7 +75,7 @@ export const downloadFaq = [
   },
   {
     q: 'Where does the KEV data come from?',
-    a: 'Directly from CISA’s public Known Exploited Vulnerabilities catalog, updated every 4 hours via an automated threat intelligence pipeline. SecuBuzz is an independent tool developed by MiSo Labs and is not affiliated with or endorsed by CISA.',
+    a: 'Directly from CISA’s public Known Exploited Vulnerabilities catalog, updated hourly via an automated threat intelligence pipeline. SecuBuzz is an independent tool developed by MiSo Labs and is not affiliated with or endorsed by CISA.',
   },
   {
     q: 'Does the app track me?',

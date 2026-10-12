@@ -117,7 +117,7 @@ Below is the line-by-line audit of SecuBuzz against all 20 launch requirements:
 2. **Zero User-Generated Content (UGC):**
    - Per architectural Rule 7, SecuBuzz strictly rejects comments, forums, and user posts to maintain a sober, clutter-free utility and eliminate legal moderation liabilities. There is zero content to moderate.
 3. **Ingestion is 100% Autonomous:**
-   - The news ingestion pipeline (`scripts/ingest.mjs`) runs automatically every 4 hours via GitHub Actions cron.
+   - The news ingestion pipeline (`scripts/ingest.mjs`) runs automatically hourly via GitHub Actions cron.
    - It fetches CISA KEV and RSS feeds, calls Groq LLM to synthesize 60-word briefs, deduplicates, and commits directly. There is no editorial staff manually drafting articles in a CMS.
 4. **Cloudflare & GitHub Already Provide Free Enterprise Admin Consoles:**
    - **Database & Storage Management:** Cloudflare Dashboard (`dash.cloudflare.com`) provides a full SQL query editor for Cloudflare D1 and a visual browser for R2 object storage.

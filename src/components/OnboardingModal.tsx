@@ -35,7 +35,7 @@ const SLIDES: OnboardingSlide[] = [
       'Stay ahead of breaking cyber threats during morning triage. Complex multi-page disclosures, zero-days, and breach investigations are condensed into verified, 60-word technical briefs linked to original reporting.',
     icon: 'newspaper-outline',
     highlights: [
-      'Refreshed every 4 hours via automated edge pipeline',
+      'Refreshed hourly via automated edge pipeline',
       'Multi-source coverage deduplicated into single stories',
       'Authoritative source links with full offline reading cache',
     ],
