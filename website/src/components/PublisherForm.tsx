@@ -33,36 +33,67 @@ export function PublisherForm() {
     return next;
   };
 
+  const [copiedDraft, setCopiedDraft] = useState(false);
+
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const next = validate();
     setErrors(next);
     if (Object.keys(next).length) return;
     setStatus('submitting');
-    window.setTimeout(() => setStatus('success'), 900);
+
+    const mailtoUrl = `mailto:publishers@secubuzz.com?subject=${encodeURIComponent(
+      `[SecuBuzz Feed Submission] ${values.publication}`
+    )}&body=${encodeURIComponent(
+      `Publication: ${values.publication}\nFeed URL: ${values.feed}\nEditorial Contact: ${values.email}\nPrimary Coverage: ${values.focus}\n\nSubmitted via secubuzz.com/publishers`
+    )}`;
+
+    window.location.href = mailtoUrl;
+    setStatus('success');
+  };
+
+  const handleCopyDraft = () => {
+    const text = `To: publishers@secubuzz.com\nSubject: [SecuBuzz Feed Submission] ${values.publication}\n\nPublication: ${values.publication}\nFeed URL: ${values.feed}\nEditorial Contact: ${values.email}\nPrimary Coverage: ${values.focus}`;
+    navigator.clipboard.writeText(text);
+    setCopiedDraft(true);
+    setTimeout(() => setCopiedDraft(false), 2000);
   };
 
   if (status === 'success') {
     return (
       <div className="rounded-lg border border-line bg-surface p-8" role="status">
         <CheckCircle2Icon className="h-6 w-6 text-accent" aria-hidden="true" />
-        <h3 className="mt-4 text-xl font-semibold text-ink">Feed submitted</h3>
-        <p className="mt-2 text-muted">
-          Thanks, {values.publication}. Our editors will review your feed and reply to {values.email} within five
-          business days.
+        <h3 className="mt-4 text-xl font-semibold text-ink">Feed draft prepared</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted">
+          Your mail client has been opened to submit <span className="text-ink font-medium">{values.publication}</span> directly to our editorial team at{' '}
+          <a href="mailto:publishers@secubuzz.com" className="font-mono text-accent hover:underline">
+            publishers@secubuzz.com
+          </a>.
         </p>
-        <button
-          type="button"
-          onClick={() => {
-            setValues(initial);
-            setStatus('idle');
-          }}
-          className="mt-6 text-sm font-medium text-accent hover:underline">
-          
-          Submit another feed
-        </button>
-      </div>);
-
+        <p className="mt-2 text-xs text-subtle">
+          If your email app didn't open automatically, you can copy the submission details below:
+        </p>
+        <div className="mt-4 flex flex-wrap gap-3">
+          <button
+            type="button"
+            onClick={handleCopyDraft}
+            className="inline-flex h-9 items-center justify-center gap-1.5 rounded-md border border-line bg-bg px-3.5 text-xs font-medium text-ink transition-colors hover:bg-raised"
+          >
+            {copiedDraft ? 'Copied to clipboard!' : 'Copy submission details'}
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              setValues(initial);
+              setStatus('idle');
+            }}
+            className="text-xs font-medium text-accent hover:underline self-center"
+          >
+            Submit another feed
+          </button>
+        </div>
+      </div>
+    );
   }
 
   return (
