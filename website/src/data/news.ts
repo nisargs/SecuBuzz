@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "cyberattacks-target-european-grocers-freezers-hija-5bc796",
+    "title": "Cyberattacks Target European Grocers, Freezers Hijacked",
+    "summary": "Two separate cyberattacks disrupted European food retailers. In France, supermarket chains had freezers tampered with, turning them into ovens and destroying chilled products. In the Netherlands and Belgium, Ahold Delhaize stores faced a security issue causing operational disruption. The attacks caused significant supply chain and inventory damage.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/12/france-cyberattack-supermarket-freezers/",
+    "publishedAt": "2026-10-12T16:07:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cyberattacks-target-european-grocers-freezers-hija",
+      "article-5bc796",
+      "5bc796",
+      "cyberattacks-target-european-grocers-freezers-hijacked"
+    ]
+  },
+  {
     "slug": "cyberattack-defrosts-french-supermarket-refrigerat-76952b",
     "title": "Cyberattack Defrosts French Supermarket Refrigerators",
     "summary": "Attackers remotely exploited Danfoss refrigeration controllers, causing multiple French supermarket chains to defrost their refrigerators overnight. The incident disrupted cold storage operations and highlighted vulnerabilities in industrial control systems used in retail environments. No data breach was reported, but the attack demonstrated the potential for physical damage through cyber means.",

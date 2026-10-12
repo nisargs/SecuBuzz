@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Oct 2026 16:02:23 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 16:17:46 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Cyberattacks Target European Grocers, Freezers Hijacked</title>
+      <link>https://secubuzz.com/news/cyberattacks-target-european-grocers-freezers-hija-5bc796</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cyberattacks-target-european-grocers-freezers-hija-5bc796</guid>
+      <description><![CDATA[Two separate cyberattacks disrupted European food retailers. In France, supermarket chains had freezers tampered with, turning them into ovens and destroying chilled products. In the Netherlands and Belgium, Ahold Delhaize stores faced a security issue causing operational disruption. The attacks caused significant supply chain and inventory damage.]]></description>
+      <pubDate>Mon, 12 Oct 2026 16:07:33 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/12/france-cyberattack-supermarket-freezers/">Help Net Security</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Cyberattack Defrosts French Supermarket Refrigerators</title>
       <link>https://secubuzz.com/news/cyberattack-defrosts-french-supermarket-refrigerat-76952b</link>
@@ -447,15 +456,6 @@
       <pubDate>Sat, 10 Oct 2026 04:57:38 GMT</pubDate>
       <source url="https://cybersecuritynews.com/att-to-pay-177-million/">Cyber Security News</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Claude ClickFix: How to Detect &amp; Block Adception Malvertising</title>
-      <link>https://secubuzz.com/news/claude-clickfix-how-to-detect-block-adception-malv-2f791d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/claude-clickfix-how-to-detect-block-adception-malv-2f791d</guid>
-      <description><![CDATA[Adception malvertising uses Google Ads and Bing redirects to deploy fake Claude ClickFix attacks. The article explains clipboard defense, AMOS hunting, and SOC queries to detect and block these malicious ads. It provides practical steps for security teams to mitigate the threat.]]></description>
-      <pubDate>Sat, 10 Oct 2026 04:14:40 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/claude-clickfix-adception-malvertising-defense">CyberNews AI</source>
-      <category>Policy</category>
     </item>
   </channel>
 </rss>
