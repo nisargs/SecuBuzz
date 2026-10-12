@@ -4,82 +4,139 @@ import * as Linking from 'expo-linking';
 import { router } from 'expo-router';
 import { useState } from 'react';
 import {
-  Alert,
-  KeyboardAvoidingView,
+  Clipboard,
   Platform,
   Pressable,
   ScrollView,
   StyleSheet,
   Text,
-  TextInput,
   View,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { useTheme } from '../context/ThemeContext';
-import { colors, spacing } from '../theme/theme';
+import { spacing } from '../theme/theme';
+import { haptics } from '../utils/haptics';
 
 const SUPPORT_EMAIL = 'support@secubuzz.com';
+const SECURITY_EMAIL = 'security@secubuzz.com';
 const PUBLISHERS_EMAIL = 'publishers@secubuzz.com';
 
-type FeedbackCategory = 'FEATURE' | 'BUG' | 'FEED' | 'PUBLISHER' | 'GENERAL';
+interface Channel {
+  id: string;
+  title: string;
+  email: string;
+  description: string;
+  sla: string;
+  icon: keyof typeof Ionicons.glyphMap;
+  defaultSubject: string;
+  defaultBody: string;
+}
 
-const CATEGORIES: { id: FeedbackCategory; label: string; icon: keyof typeof Ionicons.glyphMap }[] = [
-  { id: 'FEATURE', label: 'Feature Request', icon: 'sparkles-outline' },
-  { id: 'BUG', label: 'Bug Report', icon: 'bug-outline' },
-  { id: 'FEED', label: 'Feed Suggestion', icon: 'newspaper-outline' },
-  { id: 'PUBLISHER', label: 'Publisher / Removal', icon: 'document-lock-outline' },
-  { id: 'GENERAL', label: 'General Feedback', icon: 'chatbubble-ellipses-outline' },
+const CHANNELS: Channel[] = [
+  {
+    id: 'support',
+    title: 'Technical Support & Feedback',
+    email: SUPPORT_EMAIL,
+    description: 'App issues, notification preferences, feature ideas, or general questions.',
+    sla: 'Typical reply within 1 business day',
+    icon: 'chatbubble-ellipses-outline',
+    defaultSubject: '[SecuBuzz Support] App Inquiry',
+    defaultBody: 'Hello SecuBuzz team,\n\nI have a question or feedback regarding the mobile app:\n\n',
+  },
+  {
+    id: 'security',
+    title: 'Vulnerability Disclosure (CVD)',
+    email: SECURITY_EMAIL,
+    description: 'Security findings, coordinated disclosure, or infrastructure vulnerability reports.',
+    sla: '48-hour SLA under RFC 9116 CVD',
+    icon: 'shield-checkmark-outline',
+    defaultSubject: '[SecuBuzz Security Disclosure] Vulnerability Report',
+    defaultBody: 'SecuBuzz Security Team,\n\nI am reporting a potential vulnerability under your Coordinated Vulnerability Disclosure policy.\n\nComponent Affected:\nSeverity Assessment:\nSteps to Reproduce:\n\n',
+  },
+  {
+    id: 'publishers',
+    title: 'Publishers & Content Removal',
+    email: PUBLISHERS_EMAIL,
+    description: 'RSS feed inclusion proposals, correction notices, or content opt-out.',
+    sla: 'Opt-out requests honored within 48h',
+    icon: 'newspaper-outline',
+    defaultSubject: '[SecuBuzz Publisher Request] Content & Attribution',
+    defaultBody: 'SecuBuzz Editorial Desk,\n\nPublication Name:\nArticle or Feed URL:\nRequest Details (Attribution / Correction / Opt-Out):\n\n',
+  },
+];
+
+interface Template {
+  id: string;
+  label: string;
+  icon: keyof typeof Ionicons.glyphMap;
+  targetEmail: string;
+  subject: string;
+  getBody: (appVersion: string, systemInfo: string) => string;
+}
+
+const TEMPLATES: Template[] = [
+  {
+    id: 'bug',
+    label: 'Bug Report',
+    icon: 'bug-outline',
+    targetEmail: SUPPORT_EMAIL,
+    subject: '[SecuBuzz Bug Report] Issue in Android App',
+    getBody: (appVersion, systemInfo) =>
+      `SecuBuzz Diagnostics:\n• App Version: ${appVersion}\n• Platform: ${systemInfo}\n\nDescription of Issue:\n[What happened?]\n\nSteps to Reproduce:\n1. \n2. \n\nExpected Behavior:\n[What should happen?]`,
+  },
+  {
+    id: 'feature',
+    label: 'Feature Idea',
+    icon: 'sparkles-outline',
+    targetEmail: SUPPORT_EMAIL,
+    subject: '[SecuBuzz Feature Suggestion] User Idea',
+    getBody: (appVersion, systemInfo) =>
+      `Feature Proposal:\n[Brief summary of what you'd like to see]\n\nProblem It Solves:\n[How would this assist your security workflow?]\n\nPlatform: ${systemInfo}`,
+  },
+  {
+    id: 'publisher',
+    label: 'Feed Suggestion',
+    icon: 'document-text-outline',
+    targetEmail: PUBLISHERS_EMAIL,
+    subject: '[SecuBuzz Publisher Desk] Feed Request',
+    getBody: () =>
+      `Publication / Blog Name:\nWebsite URL:\nRSS / Atom Feed URL:\n\nPrimary Coverage Focus:`,
+  },
+  {
+    id: 'privacy',
+    label: 'Data Deletion',
+    icon: 'trash-outline',
+    targetEmail: SUPPORT_EMAIL,
+    subject: '[SecuBuzz Privacy] Data Deletion Request',
+    getBody: (appVersion, systemInfo) =>
+      `Hello MiSo Labs Privacy Team,\n\nI request the verification and purge of any push token or server telemetry associated with my device.\n\nPlatform: ${systemInfo}\nApp Version: ${appVersion}\nDate: ${new Date().toISOString().slice(0, 10)}`,
+  },
 ];
 
 export default function ContactScreen() {
   const { colors, isDark, accentColor } = useTheme();
 
-  const [category, setCategory] = useState<FeedbackCategory>('FEATURE');
-  const [message, setMessage] = useState('');
-  const [userEmail, setUserEmail] = useState('');
-  const [submitted, setSubmitted] = useState(false);
+  const [copiedKey, setCopiedKey] = useState<string | null>(null);
+  const [selectedTemplate, setSelectedTemplate] = useState<Template>(TEMPLATES[0]);
 
-  function handleSendFeedback() {
-    if (!message.trim()) {
-      Alert.alert('Message Required', 'Please enter a few words describing your feedback before submitting.');
-      return;
-    }
+  const appVersion = Constants.expoConfig?.version ?? '1.0.2';
+  const systemInfo = `${Platform.OS.toUpperCase()} (SDK ${Platform.Version})`;
 
-    const categoryObj = CATEGORIES.find((c) => c.id === category);
-    const categoryLabel = categoryObj?.label || 'General Feedback';
-    const appVersion = Constants.expoConfig?.version ?? '1.0.2';
-    const systemInfo = `${Platform.OS.toUpperCase()} (SDK ${Platform.Version})`;
+  const handleCopy = (text: string, key: string) => {
+    Clipboard.setString(text);
+    void haptics.notificationSuccess();
+    setCopiedKey(key);
+    setTimeout(() => setCopiedKey(null), 2000);
+  };
 
-    const targetEmail = category === 'PUBLISHER' ? PUBLISHERS_EMAIL : SUPPORT_EMAIL;
-    const emailSubject = category === 'PUBLISHER'
-      ? `[SecuBuzz Content Request] ${categoryLabel}`
-      : `[SecuBuzz Feedback] ${categoryLabel}`;
+  const handleOpenEmail = (email: string, subject: string, body: string) => {
+    void haptics.selection();
+    const mailto = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    void Linking.openURL(mailto);
+  };
 
-    const emailBody = [
-      `Category: ${categoryLabel}`,
-      userEmail.trim() ? `User Contact: ${userEmail.trim()}` : null,
-      `App Version: ${appVersion}`,
-      `Platform: ${systemInfo}`,
-      '',
-      '--- MESSAGE ---',
-      message.trim(),
-      '',
-    ]
-      .filter((line) => line !== null)
-      .join('\n');
-
-    const mailtoUrl = `mailto:${targetEmail}?subject=${encodeURIComponent(
-      emailSubject
-    )}&body=${encodeURIComponent(emailBody)}`;
-
-    void Linking.openURL(mailtoUrl);
-    setSubmitted(true);
-  }
-
-  function openDirectEmail(email: string) {
-    void Linking.openURL(`mailto:${email}`);
-  }
+  const currentTemplateBody = selectedTemplate.getBody(appVersion, systemInfo);
 
   return (
     <SafeAreaView
@@ -92,349 +149,294 @@ export default function ContactScreen() {
           accessibilityRole="button"
           accessibilityLabel="Go back"
           hitSlop={12}
-          onPress={() => router.back()}
+          onPress={() => {
+            void haptics.selection();
+            router.back();
+          }}
           style={styles.backButton}
         >
-          <Ionicons
-            name="arrow-back"
-            size={24}
-            color={colors.textPrimary}
-          />
+          <Ionicons name="arrow-back" size={24} color={colors.textPrimary} />
         </Pressable>
 
         <Text style={[styles.headerTitle, { color: colors.textPrimary }]}>
-          Contact & Feedback
+          Contact & Inquiries
         </Text>
 
         <View style={styles.headerSpacer} />
       </View>
 
-      <KeyboardAvoidingView
-        style={styles.keyboardContainer}
-        behavior={Platform.OS === 'ios' ? 'padding' : undefined}
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={styles.scrollContent}
       >
-        <ScrollView
-          showsVerticalScrollIndicator={false}
-          contentContainerStyle={styles.scrollContent}
-        >
-          {/* FEEDBACK FORM SECTION */}
-          <View style={styles.section}>
-            <Text style={[styles.eyebrow, { color: accentColor }]}>
-              COMMUNITY INPUT
-            </Text>
+        {/* INTRO HERO */}
+        <View style={styles.heroSection}>
+          <Text style={[styles.eyebrow, { color: accentColor }]}>
+            DIRECT COMMUNICATION
+          </Text>
 
-            <Text style={[styles.title, { color: colors.textPrimary }]}>
-              Share Your Feedback
-            </Text>
+          <Text style={[styles.title, { color: colors.textPrimary }]}>
+            Verified Inboxes
+          </Text>
 
-            <Text style={[styles.description, { color: colors.textSecondary }]}>
-              SecuBuzz is built for cybersecurity practitioners. Tell us what features you want, report any bugs, or suggest high-value threat intelligence sources.
-            </Text>
+          <Text style={[styles.description, { color: colors.textSecondary }]}>
+            SecuBuzz communicates strictly through direct email protocols. Messages route directly to an engineer's verified inbox with zero intermediary database storage.
+          </Text>
+        </View>
 
-            {/* CATEGORY CHIPS */}
-            <Text style={[styles.inputLabel, { color: colors.textMuted }]}>
-              FEEDBACK TOPIC
-            </Text>
-            <View style={styles.chipGrid}>
-              {CATEGORIES.map((cat) => {
-                const isSelected = category === cat.id;
-                return (
-                  <Pressable
-                    key={cat.id}
-                    onPress={() => setCategory(cat.id)}
+        {/* 3 VERIFIED CHANNEL CARDS */}
+        <View style={styles.channelList}>
+          {CHANNELS.map((ch) => {
+            const isCopied = copiedKey === ch.id;
+
+            return (
+              <View
+                key={ch.id}
+                style={[
+                  styles.channelCard,
+                  {
+                    backgroundColor: colors.surface,
+                    borderColor: colors.border,
+                  },
+                ]}
+              >
+                <View style={styles.channelHeader}>
+                  <View
                     style={[
-                      styles.chip,
+                      styles.iconCircle,
                       {
-                        backgroundColor: isSelected
-                          ? isDark
-                            ? 'rgba(255, 255, 255, 0.08)'
-                            : 'rgba(0, 0, 0, 0.04)'
-                          : colors.surface,
-                        borderColor: isSelected ? accentColor : colors.border,
+                        backgroundColor: isDark
+                          ? 'rgba(255, 255, 255, 0.05)'
+                          : 'rgba(0, 0, 0, 0.03)',
+                        borderColor: colors.border,
+                      },
+                    ]}
+                  >
+                    <Ionicons name={ch.icon} size={20} color={accentColor} />
+                  </View>
+
+                  <View style={styles.channelTitleWrap}>
+                    <Text style={[styles.channelTitle, { color: colors.textPrimary }]}>
+                      {ch.title}
+                    </Text>
+                    <Text style={[styles.channelEmail, { color: colors.textMuted }]}>
+                      {ch.email}
+                    </Text>
+                  </View>
+                </View>
+
+                <Text style={[styles.channelDesc, { color: colors.textSecondary }]}>
+                  {ch.description}
+                </Text>
+
+                <Text style={[styles.channelSla, { color: colors.textMuted }]}>
+                  {ch.sla}
+                </Text>
+
+                <View style={styles.channelActions}>
+                  <Pressable
+                    accessibilityRole="button"
+                    accessibilityLabel={`Open email to ${ch.email}`}
+                    onPress={() =>
+                      handleOpenEmail(ch.email, ch.defaultSubject, ch.defaultBody)
+                    }
+                    style={[styles.primaryActionBtn, { backgroundColor: accentColor }]}
+                  >
+                    <Ionicons name="mail" size={15} color="#FFFFFF" />
+                    <Text style={styles.primaryActionText}>EMAIL</Text>
+                  </Pressable>
+
+                  <Pressable
+                    accessibilityRole="button"
+                    accessibilityLabel={`Copy address ${ch.email}`}
+                    onPress={() => handleCopy(ch.email, ch.id)}
+                    style={[
+                      styles.secondaryActionBtn,
+                      {
+                        backgroundColor: colors.background,
+                        borderColor: colors.border,
                       },
                     ]}
                   >
                     <Ionicons
-                      name={cat.icon}
-                      size={15}
-                      color={isSelected ? accentColor : colors.textMuted}
+                      name={isCopied ? 'checkmark' : 'copy-outline'}
+                      size={14}
+                      color={isCopied ? accentColor : colors.textSecondary}
                     />
                     <Text
                       style={[
-                        styles.chipText,
-                        { color: isSelected ? colors.textPrimary : colors.textSecondary },
-                        isSelected && { fontWeight: '700' },
+                        styles.secondaryActionText,
+                        { color: isCopied ? accentColor : colors.textPrimary },
                       ]}
                     >
-                      {cat.label}
+                      {isCopied ? 'COPIED' : 'COPY'}
                     </Text>
                   </Pressable>
-                );
-              })}
-            </View>
-
-            {/* MESSAGE INPUT */}
-            <Text style={[styles.inputLabel, { color: colors.textMuted, marginTop: 16 }]}>
-              YOUR MESSAGE
-            </Text>
-            <View
-              style={[
-                styles.textAreaWrap,
-                {
-                  backgroundColor: colors.surface,
-                  borderColor: colors.border,
-                },
-              ]}
-            >
-              <TextInput
-                style={[styles.textArea, { color: colors.textPrimary }]}
-                placeholder="What can we improve, add, or fix?"
-                placeholderTextColor={colors.textMuted}
-                multiline
-                numberOfLines={5}
-                textAlignVertical="top"
-                value={message}
-                onChangeText={setMessage}
-                maxLength={1000}
-              />
-              <Text style={[styles.charCount, { color: colors.textMuted }]}>
-                {message.length}/1000
-              </Text>
-            </View>
-
-            {/* OPTIONAL EMAIL INPUT */}
-            <Text style={[styles.inputLabel, { color: colors.textMuted, marginTop: 14 }]}>
-              REPLY EMAIL (OPTIONAL)
-            </Text>
-            <View
-              style={[
-                styles.inputWrap,
-                {
-                  backgroundColor: colors.surface,
-                  borderColor: colors.border,
-                },
-              ]}
-            >
-              <Ionicons
-                name="at-outline"
-                size={18}
-                color={colors.textMuted}
-              />
-              <TextInput
-                style={[styles.input, { color: colors.textPrimary }]}
-                placeholder="name@example.com"
-                placeholderTextColor={colors.textMuted}
-                keyboardType="email-address"
-                autoCapitalize="none"
-                autoCorrect={false}
-                value={userEmail}
-                onChangeText={setUserEmail}
-              />
-            </View>
-
-            {/* SUBMIT BUTTON */}
-            <Pressable
-              accessibilityRole="button"
-              accessibilityLabel="Submit feedback"
-              onPress={handleSendFeedback}
-              style={[
-                styles.submitButton,
-                {
-                  backgroundColor: accentColor,
-                },
-              ]}
-            >
-              <Ionicons
-                name="paper-plane-outline"
-                size={18}
-                color="#FFFFFF"
-              />
-              <Text style={styles.submitButtonText}>
-                SEND FEEDBACK
-              </Text>
-            </Pressable>
-
-            {submitted ? (
-              <View style={[styles.submittedBanner, { borderColor: accentColor }]}>
-                <Ionicons name="checkmark-circle" size={18} color={accentColor} />
-                <Text style={[styles.submittedText, { color: colors.textPrimary }]}>
-                  Thank you! Your feedback email was prepared.
-                </Text>
+                </View>
               </View>
-            ) : null}
+            );
+          })}
+        </View>
+
+        {/* STRUCTURED DIAGNOSTIC TEMPLATES */}
+        <View
+          style={[
+            styles.templateCard,
+            {
+              backgroundColor: colors.surface,
+              borderColor: colors.border,
+            },
+          ]}
+        >
+          <Text style={[styles.eyebrow, { color: accentColor }]}>
+            DIAGNOSTIC TEMPLATES
+          </Text>
+
+          <Text style={[styles.subheading, { color: colors.textPrimary }]}>
+            Ready-Made Diagnostic Drafts
+          </Text>
+
+          <Text style={[styles.templateDesc, { color: colors.textSecondary }]}>
+            Pick a structured topic below to pre-populate device telemetry and standard diagnostic fields.
+          </Text>
+
+          {/* Template Selector Chips */}
+          <View style={styles.chipRow}>
+            {TEMPLATES.map((tpl) => {
+              const isSelected = selectedTemplate.id === tpl.id;
+
+              return (
+                <Pressable
+                  key={tpl.id}
+                  onPress={() => {
+                    void haptics.selection();
+                    setSelectedTemplate(tpl);
+                  }}
+                  style={[
+                    styles.chip,
+                    {
+                      backgroundColor: isSelected
+                        ? isDark
+                          ? 'rgba(255, 255, 255, 0.10)'
+                          : 'rgba(0, 0, 0, 0.06)'
+                        : colors.background,
+                      borderColor: isSelected ? accentColor : colors.border,
+                    },
+                  ]}
+                >
+                  <Ionicons
+                    name={tpl.icon}
+                    size={14}
+                    color={isSelected ? accentColor : colors.textMuted}
+                  />
+                  <Text
+                    style={[
+                      styles.chipText,
+                      {
+                        color: isSelected
+                          ? colors.textPrimary
+                          : colors.textSecondary,
+                        fontWeight: isSelected ? '700' : '500',
+                      },
+                    ]}
+                  >
+                    {tpl.label}
+                  </Text>
+                </Pressable>
+              );
+            })}
           </View>
 
-          {/* DIRECT SUPPORT CARD */}
-          <View style={[styles.directSection, { borderTopColor: colors.border }]}>
-            <Text style={[styles.eyebrow, { color: accentColor }]}>
-              DIRECT INQUIRIES
-            </Text>
-
-            <Text style={[styles.sectionTitle, { color: colors.textPrimary }]}>
-              Direct Communication Channels
-            </Text>
-
-            {/* Support */}
-            <Pressable
-              accessibilityRole="button"
-              accessibilityLabel={`Send email to ${SUPPORT_EMAIL}`}
-              onPress={() => openDirectEmail(SUPPORT_EMAIL)}
-              style={[
-                styles.emailButton,
-                {
-                  backgroundColor: colors.surface,
-                  borderColor: colors.border,
-                  marginBottom: 10,
-                },
-              ]}
-            >
-              <Ionicons
-                name="mail-outline"
-                size={22}
-                color={accentColor}
-              />
-
-              <View style={styles.emailBody}>
-                <Text style={[styles.emailTitle, { color: colors.textPrimary }]}>
-                  Technical Support & Feedback
-                </Text>
-
-                <Text style={[styles.emailAddress, { color: colors.textMuted }]}>
-                  {SUPPORT_EMAIL}
-                </Text>
-              </View>
-
-              <Ionicons
-                name="chevron-forward"
-                size={18}
-                color={colors.textMuted}
-              />
-            </Pressable>
-
-            {/* Publishers */}
-            <Pressable
-              accessibilityRole="button"
-              accessibilityLabel={`Send email to ${PUBLISHERS_EMAIL}`}
-              onPress={() => openDirectEmail(PUBLISHERS_EMAIL)}
-              style={[
-                styles.emailButton,
-                {
-                  backgroundColor: colors.surface,
-                  borderColor: colors.border,
-                  marginBottom: 10,
-                },
-              ]}
-            >
-              <Ionicons
-                name="newspaper-outline"
-                size={22}
-                color={accentColor}
-              />
-
-              <View style={styles.emailBody}>
-                <Text style={[styles.emailTitle, { color: colors.textPrimary }]}>
-                  Publishers & Content Removal
-                </Text>
-
-                <Text style={[styles.emailAddress, { color: colors.textMuted }]}>
-                  {PUBLISHERS_EMAIL} (48h removal SLA)
-                </Text>
-              </View>
-
-              <Ionicons
-                name="chevron-forward"
-                size={18}
-                color={colors.textMuted}
-              />
-            </Pressable>
-
-            {/* Security / Vulnerability Disclosure */}
-            <Pressable
-              accessibilityRole="button"
-              accessibilityLabel={`Send email to ${SUPPORT_EMAIL}`}
-              onPress={() => openDirectEmail(SUPPORT_EMAIL)}
-              style={[
-                styles.emailButton,
-                {
-                  backgroundColor: colors.surface,
-                  borderColor: colors.border,
-                  marginBottom: 10,
-                },
-              ]}
-            >
-              <Ionicons
-                name="shield-outline"
-                size={22}
-                color={accentColor}
-              />
-
-              <View style={styles.emailBody}>
-                <Text style={[styles.emailTitle, { color: colors.textPrimary }]}>
-                  Vulnerability Disclosure
-                </Text>
-
-                <Text style={[styles.emailAddress, { color: colors.textMuted }]}>
-                  {SUPPORT_EMAIL}
-                </Text>
-              </View>
-
-              <Ionicons
-                name="chevron-forward"
-                size={18}
-                color={colors.textMuted}
-              />
-            </Pressable>
-
-            {/* Publisher Policy Web Portal */}
-            <Pressable
-              accessibilityRole="link"
-              accessibilityLabel="View Publisher Policy on Web"
-              onPress={() => void Linking.openURL('https://secubuzz.com/publishers')}
-              style={[
-                styles.emailButton,
-                {
-                  backgroundColor: colors.surface,
-                  borderColor: colors.border,
-                },
-              ]}
-            >
-              <Ionicons
-                name="globe-outline"
-                size={22}
-                color={accentColor}
-              />
-
-              <View style={styles.emailBody}>
-                <Text style={[styles.emailTitle, { color: colors.textPrimary }]}>
-                  Publisher Transparency Portal
-                </Text>
-
-                <Text style={[styles.emailAddress, { color: colors.textMuted }]}>
-                  secubuzz.com/publishers
-                </Text>
-              </View>
-
-              <Ionicons
-                name="open-outline"
-                size={18}
-                color={colors.textMuted}
-              />
-            </Pressable>
-
-            <View style={[styles.note, { borderTopColor: colors.border }]}>
-              <Ionicons
-                name="shield-checkmark-outline"
-                size={18}
-                color={accentColor}
-              />
-
-              <Text style={[styles.noteText, { color: colors.textSecondary }]}>
-                SecuBuzz is developed by MiSo Labs. For responsible disclosure of security vulnerabilities or publisher requests, we respond within 48 business hours.
+          {/* Template Preview Box */}
+          <View
+            style={[
+              styles.previewBox,
+              {
+                backgroundColor: colors.background,
+                borderColor: colors.border,
+              },
+            ]}
+          >
+            <View style={[styles.previewHeader, { borderBottomColor: colors.border }]}>
+              <Text style={[styles.previewMeta, { color: colors.textMuted }]}>
+                To: <Text style={{ color: colors.textPrimary }}>{selectedTemplate.targetEmail}</Text>
+              </Text>
+              <Text
+                numberOfLines={1}
+                style={[styles.previewMeta, { color: accentColor }]}
+              >
+                {selectedTemplate.subject}
               </Text>
             </View>
+
+            <Text style={[styles.previewText, { color: colors.textSecondary }]}>
+              {currentTemplateBody}
+            </Text>
           </View>
-        </ScrollView>
-      </KeyboardAvoidingView>
+
+          {/* Template Actions */}
+          <View style={styles.templateActionRow}>
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="Copy full template to clipboard"
+              onPress={() => {
+                const fullText = `To: ${selectedTemplate.targetEmail}\nSubject: ${selectedTemplate.subject}\n\n${currentTemplateBody}`;
+                handleCopy(fullText, 'template_body');
+              }}
+              style={[
+                styles.templateSecondaryBtn,
+                {
+                  backgroundColor: colors.background,
+                  borderColor: colors.border,
+                },
+              ]}
+            >
+              <Ionicons
+                name={copiedKey === 'template_body' ? 'checkmark' : 'copy-outline'}
+                size={15}
+                color={copiedKey === 'template_body' ? accentColor : colors.textSecondary}
+              />
+              <Text
+                style={[
+                  styles.templateSecondaryText,
+                  {
+                    color:
+                      copiedKey === 'template_body'
+                        ? accentColor
+                        : colors.textPrimary,
+                  },
+                ]}
+              >
+                {copiedKey === 'template_body' ? 'TEMPLATE COPIED' : 'COPY TEMPLATE'}
+              </Text>
+            </Pressable>
+
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="Open email client with this template"
+              onPress={() =>
+                handleOpenEmail(
+                  selectedTemplate.targetEmail,
+                  selectedTemplate.subject,
+                  currentTemplateBody
+                )
+              }
+              style={[styles.templatePrimaryBtn, { backgroundColor: accentColor }]}
+            >
+              <Ionicons name="open-outline" size={15} color="#FFFFFF" />
+              <Text style={styles.templatePrimaryText}>LAUNCH EMAIL</Text>
+            </Pressable>
+          </View>
+        </View>
+
+        {/* SECURITY & PRIVACY FOOTNOTE */}
+        <View style={[styles.securityFooter, { borderTopColor: colors.border }]}>
+          <Ionicons name="shield-checkmark" size={18} color={accentColor} />
+          <Text style={[styles.securityText, { color: colors.textMuted }]}>
+            SecuBuzz is developed by MiSo Labs. To eliminate web database attack vectors and ensure immediate alerts, inquiries bypass intermediary databases and route directly to verified team devices.
+          </Text>
+        </View>
+      </ScrollView>
     </SafeAreaView>
   );
 }
@@ -453,13 +455,13 @@ const styles = StyleSheet.create({
   },
 
   backButton: {
-    padding: 4,
+    padding: 6,
   },
 
   headerTitle: {
     flex: 1,
     fontFamily: 'Exo_700Bold',
-    fontSize: 18,
+    fontSize: 17,
     textAlign: 'center',
   },
 
@@ -467,25 +469,21 @@ const styles = StyleSheet.create({
     width: 32,
   },
 
-  keyboardContainer: {
-    flex: 1,
-  },
-
   scrollContent: {
     paddingHorizontal: spacing.lg,
-    paddingTop: 24,
+    paddingTop: 20,
     paddingBottom: 48,
   },
 
-  section: {
-    marginBottom: 28,
+  heroSection: {
+    marginBottom: 20,
   },
 
   eyebrow: {
     fontFamily: 'Exo_600SemiBold',
     fontSize: 11,
-    letterSpacing: 2,
-    marginBottom: 6,
+    letterSpacing: 1.8,
+    marginBottom: 4,
   },
 
   title: {
@@ -497,30 +495,138 @@ const styles = StyleSheet.create({
 
   description: {
     fontFamily: 'Exo_400Regular',
-    fontSize: 14,
-    lineHeight: 21,
-    marginBottom: 18,
+    fontSize: 13.5,
+    lineHeight: 20,
   },
 
-  inputLabel: {
-    fontFamily: 'Exo_600SemiBold',
-    fontSize: 11,
-    letterSpacing: 1.4,
+  channelList: {
+    gap: 12,
+    marginBottom: 24,
+  },
+
+  channelCard: {
+    borderRadius: 14,
+    borderWidth: 1,
+    padding: 16,
+  },
+
+  channelHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+    marginBottom: 10,
+  },
+
+  iconCircle: {
+    width: 38,
+    height: 38,
+    borderRadius: 10,
+    borderWidth: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  channelTitleWrap: {
+    flex: 1,
+  },
+
+  channelTitle: {
+    fontFamily: 'Exo_700Bold',
+    fontSize: 15,
+  },
+
+  channelEmail: {
+    fontFamily: 'Exo_400Regular',
+    fontSize: 12,
+    marginTop: 1,
+  },
+
+  channelDesc: {
+    fontFamily: 'Exo_400Regular',
+    fontSize: 12.5,
+    lineHeight: 18,
     marginBottom: 8,
   },
 
-  chipGrid: {
+  channelSla: {
+    fontFamily: 'Exo_500Medium',
+    fontSize: 11,
+    marginBottom: 14,
+  },
+
+  channelActions: {
+    flexDirection: 'row',
+    gap: 10,
+  },
+
+  primaryActionBtn: {
+    flex: 1,
+    height: 38,
+    borderRadius: 8,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 6,
+  },
+
+  primaryActionText: {
+    color: '#FFFFFF',
+    fontFamily: 'Exo_700Bold',
+    fontSize: 12,
+    letterSpacing: 0.8,
+  },
+
+  secondaryActionBtn: {
+    flex: 1,
+    height: 38,
+    borderRadius: 8,
+    borderWidth: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 6,
+  },
+
+  secondaryActionText: {
+    fontFamily: 'Exo_600SemiBold',
+    fontSize: 12,
+    letterSpacing: 0.8,
+  },
+
+  templateCard: {
+    borderRadius: 14,
+    borderWidth: 1,
+    padding: 16,
+    marginBottom: 24,
+  },
+
+  subheading: {
+    fontFamily: 'Exo_700Bold',
+    fontSize: 17,
+    marginTop: 2,
+    marginBottom: 6,
+  },
+
+  templateDesc: {
+    fontFamily: 'Exo_400Regular',
+    fontSize: 12.5,
+    lineHeight: 18,
+    marginBottom: 14,
+  },
+
+  chipRow: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     gap: 8,
+    marginBottom: 14,
   },
 
   chip: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 6,
-    paddingHorizontal: 12,
-    paddingVertical: 8,
+    paddingHorizontal: 11,
+    paddingVertical: 7,
     borderRadius: 8,
     borderWidth: 1,
   },
@@ -530,123 +636,82 @@ const styles = StyleSheet.create({
     fontSize: 12,
   },
 
-  textAreaWrap: {
-    borderRadius: 12,
+  previewBox: {
+    borderRadius: 10,
     borderWidth: 1,
     padding: 12,
-  },
-
-  textArea: {
-    fontFamily: 'Exo_400Regular',
-    fontSize: 14,
-    lineHeight: 20,
-    minHeight: 100,
-  },
-
-  charCount: {
-    fontFamily: 'Exo_400Regular',
-    fontSize: 11,
-    textAlign: 'right',
-    marginTop: 4,
-  },
-
-  inputWrap: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    borderRadius: 10,
-    borderWidth: 1,
-    paddingHorizontal: 12,
-    height: 44,
-    gap: 8,
-  },
-
-  input: {
-    flex: 1,
-    fontFamily: 'Exo_400Regular',
-    fontSize: 14,
-  },
-
-  submitButton: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: 8,
-    height: 46,
-    borderRadius: 10,
-    marginTop: 18,
-  },
-
-  submitButtonText: {
-    color: '#FFFFFF',
-    fontFamily: 'Exo_700Bold',
-    fontSize: 13,
-    letterSpacing: 1.2,
-  },
-
-  submittedBanner: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 8,
-    borderWidth: 1,
-    borderRadius: 8,
-    padding: 10,
-    marginTop: 14,
-    backgroundColor: 'rgba(20, 184, 166, 0.08)',
-  },
-
-  submittedText: {
-    fontFamily: 'Exo_500Medium',
-    fontSize: 12.5,
-  },
-
-  directSection: {
-    borderTopWidth: 1,
-    paddingTop: 24,
-  },
-
-  sectionTitle: {
-    fontFamily: 'Exo_700Bold',
-    fontSize: 18,
     marginBottom: 14,
   },
 
-  emailButton: {
+  previewHeader: {
+    paddingBottom: 8,
+    borderBottomWidth: 1,
+    marginBottom: 8,
+    gap: 2,
+  },
+
+  previewMeta: {
+    fontFamily: 'Exo_500Medium',
+    fontSize: 11,
+  },
+
+  previewText: {
+    fontFamily: 'Exo_400Regular',
+    fontSize: 11.5,
+    lineHeight: 17,
+  },
+
+  templateActionRow: {
+    flexDirection: 'row',
+    gap: 10,
+  },
+
+  templatePrimaryBtn: {
+    flex: 1,
+    height: 40,
+    borderRadius: 8,
     flexDirection: 'row',
     alignItems: 'center',
-    padding: 14,
-    borderRadius: 12,
-    borderWidth: 1,
-    gap: 12,
+    justifyContent: 'center',
+    gap: 6,
   },
 
-  emailBody: {
+  templatePrimaryText: {
+    color: '#FFFFFF',
+    fontFamily: 'Exo_700Bold',
+    fontSize: 12,
+    letterSpacing: 0.8,
+  },
+
+  templateSecondaryBtn: {
     flex: 1,
+    height: 40,
+    borderRadius: 8,
+    borderWidth: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 6,
   },
 
-  emailTitle: {
+  templateSecondaryText: {
     fontFamily: 'Exo_600SemiBold',
-    fontSize: 14,
-    marginBottom: 2,
+    fontSize: 12,
+    letterSpacing: 0.8,
   },
 
-  emailAddress: {
-    fontFamily: 'Exo_400Regular',
-    fontSize: 13,
-  },
-
-  note: {
+  securityFooter: {
     flexDirection: 'row',
     alignItems: 'flex-start',
     gap: 10,
-    marginTop: 16,
-    paddingTop: 14,
+    paddingTop: 16,
     borderTopWidth: 1,
   },
 
-  noteText: {
+  securityText: {
     flex: 1,
     fontFamily: 'Exo_400Regular',
-    fontSize: 12,
-    lineHeight: 18,
+    fontSize: 11.5,
+    lineHeight: 17,
   },
 });
