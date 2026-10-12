@@ -5,8 +5,62 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Oct 2026 04:17:41 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 06:27:10 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AI, Geopolitics, and Fraud Drive CEOs to Prioritize Cyber‑Enabled Fraud Over Ransomware</title>
+      <link>https://secubuzz.com/news/ai-geopolitics-and-fraud-drive-ceos-to-prioritize-4e149a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-geopolitics-and-fraud-drive-ceos-to-prioritize-4e149a</guid>
+      <description><![CDATA[Help Net Security interview with Akshay Joshi, Head of the Centre for Cybersecurity at the World Economic Forum, discusses how AI, geopolitics, and industrialized fraud are reshaping cyber risk. The Global Cybersecurity Outlook 2026 shows CEOs prioritizing cyber‑enabled fraud over ransomware, widening the resilience gap between large and small organizations, and highlighting skills shortages.]]></description>
+      <pubDate>Mon, 12 Oct 2026 06:00:12 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/12/akshay-joshi-wef-cyber-resilience-gap/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>AWS Launches Strands Box, Open‑Source Sandbox for AI Agents</title>
+      <link>https://secubuzz.com/news/aws-launches-strands-box-open-source-sandbox-for-a-8f3308</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/aws-launches-strands-box-open-source-sandbox-for-a-8f3308</guid>
+      <description><![CDATA[AWS has released Strands Box, an open‑source sandbox for AI agents that combines operating‑system isolation with rule‑based checks to prevent repeated actions. Currently in developer preview, it runs on Macs with Apple silicon and will add Linux support. The sandbox targets coding assistants, limiting file access, shell commands, code execution, and API calls.]]></description>
+      <pubDate>Mon, 12 Oct 2026 05:30:34 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/12/aws-strands-box-open-source-ai-agent-sandbox/">Help Net Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>NVIDIA DCGM Exporter Vulnerability Allows Resource Exhaustion</title>
+      <link>https://secubuzz.com/news/nvidia-dcgm-exporter-vulnerability-allows-resource-69e263</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/nvidia-dcgm-exporter-vulnerability-allows-resource-69e263</guid>
+      <description><![CDATA[NVIDIA patched a high‑severity flaw, CVE‑2026‑47483, in its DCGM Exporter that lets unauthenticated attackers exhaust GPU server resources, crash monitoring, and disrupt AI workloads. The flaw targets the exporter’s ability to read GPU metrics and serve them via HTTP.]]></description>
+      <pubDate>Mon, 12 Oct 2026 04:52:16 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/nvidia-dcgm-exporter-bug-exposes/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>AI‑Generated Patches Often Fail Maintainer Tests</title>
+      <link>https://secubuzz.com/news/ai-generated-patches-often-fail-maintainer-tests-3ddea6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-generated-patches-often-fail-maintainer-tests-3ddea6</guid>
+      <description><![CDATA[Researchers at Northwestern University evaluated AI coding agents on 112 real security bugs. They found that many patches that eliminate crashes still fail the maintainers’ custom tests. With Claude Opus 4.7, one‑third of successful crash‑fix patches did not pass these checks, highlighting a flaw in AI patch grading.]]></description>
+      <pubDate>Mon, 12 Oct 2026 04:45:43 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/12/ai-vulnerability-patching-grading-problem/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Weak Admin Password Exposes 8.8 Million Danish CPR Numbers</title>
+      <link>https://secubuzz.com/news/weak-admin-password-exposes-8-8-million-danish-cpr-243e53</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/weak-admin-password-exposes-8-8-million-danish-cpr-243e53</guid>
+      <description><![CDATA[A Danish IT firm’s use of the default password “123456” on three administrator accounts enabled a breach that exposed data linked to 8.8 million national identification numbers. The incident highlights the risks of weak credentials in trusted organizations.]]></description>
+      <pubDate>Mon, 12 Oct 2026 04:42:30 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/admin-password-danish-data-breach/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Gentlemen Ransomware Group Claims Breach of KFC</title>
+      <link>https://secubuzz.com/news/gentlemen-ransomware-group-claims-breach-of-kfc-1a032a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/gentlemen-ransomware-group-claims-breach-of-kfc-1a032a</guid>
+      <description><![CDATA[The Gentlemen ransomware group announced a breach of United States KFC on October 10, 2026, listing the hospitality target in its claim. The allegation remains unverified, with no confirmed compromise of KFC’s U.S. systems reported. No remediation or mitigation details are available.]]></description>
+      <pubDate>Mon, 12 Oct 2026 03:21:04 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/gentlemen-ransomware-kfc-breach/">Cyber Security News</source>
+      <category>Ransomware</category>
+    </item>
     <item>
       <title>P7 DarkSword iOS Exploit Kit Enables Keychain Theft and Crypto Drainers</title>
       <link>https://secubuzz.com/news/p7-darksword-ios-exploit-kit-enables-keychain-thef-38c38f</link>
@@ -15,15 +69,6 @@
       <pubDate>Sun, 11 Oct 2026 16:41:54 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/p7-darksword-ios-exploit-kit-defense">CyberNews AI</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Nippon Columbia Malware Leak Exposes 8.6 Million Karaoke Fan Records</title>
-      <link>https://secubuzz.com/news/nippon-columbia-malware-leak-exposes-8-6-million-k-cac2ee</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/nippon-columbia-malware-leak-exposes-8-6-million-k-cac2ee</guid>
-      <description><![CDATA[A malware infection at Nippon Columbia, a contractor for Japanese entertainment system maker Daiichi Kosho, exposed over 8.7 million customer and employee records, including personal data. The breach highlights the risk of third‑party supply chain compromises.]]></description>
-      <pubDate>Sun, 11 Oct 2026 14:23:46 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/nippon-columbia-malware-incident-exposes-86-million-karaoke-fan-records/">BleepingComputer</source>
-      <category>Breach</category>
     </item>
     <item>
       <title>Claude AI Exploits SQL Injection Flaws to Run Commands on Real Servers</title>
@@ -123,15 +168,6 @@
       <pubDate>Sat, 10 Oct 2026 08:08:45 GMT</pubDate>
       <source url="https://cybersecuritynews.com/reverse-engineer-anything-tool/">Cyber Security News</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Single Prompt Can Hijack AWS Bedrock AI Agents and Steal Cloud Credentials</title>
-      <link>https://secubuzz.com/news/single-prompt-can-hijack-aws-bedrock-ai-agents-and-1428ce</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/single-prompt-can-hijack-aws-bedrock-ai-agents-and-1428ce</guid>
-      <description><![CDATA[A single prompt sent to a public-facing AWS Bedrock AgentCore AI agent can expose private chats, source code, long‑term memories, API keys, OAuth tokens, and other secrets in the same AWS account and region. The attack chain, named AgentCorruption, allows attackers to access all secrets stored in the affected agents.]]></description>
-      <pubDate>Sat, 10 Oct 2026 06:58:38 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/agentcorruption-attack/">Cyber Security News</source>
-      <category>Breach</category>
     </item>
     <item>
       <title>Microsoft Teams Adds QR Code Checks to Detect Malicious Links</title>
@@ -332,15 +368,6 @@
       <category>Cloud</category>
     </item>
     <item>
-      <title>Anthropic Releases Free AI‑Powered Open‑Source Vulnerability Scanner</title>
-      <link>https://secubuzz.com/news/anthropic-releases-free-ai-powered-open-source-vul-10c4fd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-releases-free-ai-powered-open-source-vul-10c4fd</guid>
-      <description><![CDATA[Anthropic unveiled OSS Scanner, an opt‑in AI tool that automatically scans open‑source projects for security flaws. The service, powered by Claude, offers periodic, in‑depth scans at no cost, aiming to strengthen the open‑source ecosystem by identifying vulnerabilities early.]]></description>
-      <pubDate>Fri, 09 Oct 2026 12:47:28 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/anthropic-launches-free-ai.html">The Hacker News</source>
-      <category>Cloud</category>
-    </item>
-    <item>
       <title>Attackers Exploit CVE‑2026‑105133 in AhsayCBS to Deploy XMRig Miners</title>
       <link>https://secubuzz.com/news/attackers-exploit-cve-2026-105133-in-ahsaycbs-to-d-787a57</link>
       <guid isPermaLink="true">https://secubuzz.com/news/attackers-exploit-cve-2026-105133-in-ahsaycbs-to-d-787a57</guid>
@@ -429,33 +456,6 @@
       <pubDate>Fri, 09 Oct 2026 08:51:07 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/09/product-showcase-simplelogin/">Help Net Security</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>US Disrupts Chinese State‑Sponsored Hacking Tools</title>
-      <link>https://secubuzz.com/news/us-disrupts-chinese-state-sponsored-hacking-tools-7603f4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/us-disrupts-chinese-state-sponsored-hacking-tools-7603f4</guid>
-      <description><![CDATA[US authorities disrupted Chinese APT groups using MicroScan and FishHub to scan and hack critical infrastructure in the US and abroad. The action targeted the tools employed by Flax Typhoon and other state‑sponsored actors.]]></description>
-      <pubDate>Fri, 09 Oct 2026 08:36:37 GMT</pubDate>
-      <source url="https://www.securityweek.com/us-disrupts-chinese-state-sponsored-hacking-tools/">SecurityWeek</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>Citrix Urges Immediate Patch for NetScaler RCE Vulnerability</title>
-      <link>https://secubuzz.com/news/citrix-urges-immediate-patch-for-netscaler-rce-vul-27e167</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/citrix-urges-immediate-patch-for-netscaler-rce-vul-27e167</guid>
-      <description><![CDATA[Citrix warned that a critical, unauthenticated remote code execution flaw exists in NetScaler ADC and Gateway appliances. Administrators must apply the vendor’s patch immediately to prevent exploitation of the vulnerability.]]></description>
-      <pubDate>Fri, 09 Oct 2026 08:27:42 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/citrix-warns-admins-to-patch-new-netscaler-rce-flaw-immediately/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Researchers Exploit Remote Vulnerability on Fully Patched Google Pixel 10</title>
-      <link>https://secubuzz.com/news/researchers-exploit-remote-vulnerability-on-fully-1049e5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/researchers-exploit-remote-vulnerability-on-fully-1049e5</guid>
-      <description><![CDATA[Three teams demonstrated remote exploitation of a flaw in the Google Pixel 10 during the Pwn2Own Ireland contest, despite the device being fully patched. The attacks bypassed all current security updates, allowing attackers to gain remote code execution on the phone. The vulnerability was reported to Google and patched after the contest.]]></description>
-      <pubDate>Fri, 09 Oct 2026 08:26:17 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/three-teams-demonstrate-remote-hacks-of.html">The Hacker News</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

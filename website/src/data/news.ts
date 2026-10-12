@@ -11,6 +11,112 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "ai-geopolitics-and-fraud-drive-ceos-to-prioritize-4e149a",
+    "title": "AI, Geopolitics, and Fraud Drive CEOs to Prioritize Cyber‑Enabled Fraud Over Ransomware",
+    "summary": "Help Net Security interview with Akshay Joshi, Head of the Centre for Cybersecurity at the World Economic Forum, discusses how AI, geopolitics, and industrialized fraud are reshaping cyber risk. The Global Cybersecurity Outlook 2026 shows CEOs prioritizing cyber‑enabled fraud over ransomware, widening the resilience gap between large and small organizations, and highlighting skills shortages.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/12/akshay-joshi-wef-cyber-resilience-gap/",
+    "publishedAt": "2026-10-12T06:00:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-geopolitics-and-fraud-drive-ceos-to-prioritize",
+      "article-4e149a",
+      "4e149a",
+      "ai-geopolitics-and-fraud-drive-ceos-to-prioritize-cyber-enab"
+    ]
+  },
+  {
+    "slug": "aws-launches-strands-box-open-source-sandbox-for-a-8f3308",
+    "title": "AWS Launches Strands Box, Open‑Source Sandbox for AI Agents",
+    "summary": "AWS has released Strands Box, an open‑source sandbox for AI agents that combines operating‑system isolation with rule‑based checks to prevent repeated actions. Currently in developer preview, it runs on Macs with Apple silicon and will add Linux support. The sandbox targets coding assistants, limiting file access, shell commands, code execution, and API calls.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/12/aws-strands-box-open-source-ai-agent-sandbox/",
+    "publishedAt": "2026-10-12T05:30:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "aws-launches-strands-box-open-source-sandbox-for-a",
+      "article-8f3308",
+      "8f3308",
+      "aws-launches-strands-box-open-source-sandbox-for-ai-agents"
+    ]
+  },
+  {
+    "slug": "nvidia-dcgm-exporter-vulnerability-allows-resource-69e263",
+    "title": "NVIDIA DCGM Exporter Vulnerability Allows Resource Exhaustion",
+    "summary": "NVIDIA patched a high‑severity flaw, CVE‑2026‑47483, in its DCGM Exporter that lets unauthenticated attackers exhaust GPU server resources, crash monitoring, and disrupt AI workloads. The flaw targets the exporter’s ability to read GPU metrics and serve them via HTTP.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/nvidia-dcgm-exporter-bug-exposes/",
+    "publishedAt": "2026-10-12T04:52:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "nvidia-dcgm-exporter-vulnerability-allows-resource",
+      "article-69e263",
+      "69e263",
+      "nvidia-dcgm-exporter-vulnerability-allows-resource-exhaustio"
+    ]
+  },
+  {
+    "slug": "ai-generated-patches-often-fail-maintainer-tests-3ddea6",
+    "title": "AI‑Generated Patches Often Fail Maintainer Tests",
+    "summary": "Researchers at Northwestern University evaluated AI coding agents on 112 real security bugs. They found that many patches that eliminate crashes still fail the maintainers’ custom tests. With Claude Opus 4.7, one‑third of successful crash‑fix patches did not pass these checks, highlighting a flaw in AI patch grading.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/12/ai-vulnerability-patching-grading-problem/",
+    "publishedAt": "2026-10-12T04:45:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-generated-patches-often-fail-maintainer-tests",
+      "article-3ddea6",
+      "3ddea6"
+    ]
+  },
+  {
+    "slug": "weak-admin-password-exposes-8-8-million-danish-cpr-243e53",
+    "title": "Weak Admin Password Exposes 8.8 Million Danish CPR Numbers",
+    "summary": "A Danish IT firm’s use of the default password “123456” on three administrator accounts enabled a breach that exposed data linked to 8.8 million national identification numbers. The incident highlights the risks of weak credentials in trusted organizations.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/admin-password-danish-data-breach/",
+    "publishedAt": "2026-10-12T04:42:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "weak-admin-password-exposes-8-8-million-danish-cpr",
+      "article-243e53",
+      "243e53",
+      "weak-admin-password-exposes-8-8-million-danish-cpr-numbers"
+    ]
+  },
+  {
+    "slug": "gentlemen-ransomware-group-claims-breach-of-kfc-1a032a",
+    "title": "Gentlemen Ransomware Group Claims Breach of KFC",
+    "summary": "The Gentlemen ransomware group announced a breach of United States KFC on October 10, 2026, listing the hospitality target in its claim. The allegation remains unverified, with no confirmed compromise of KFC’s U.S. systems reported. No remediation or mitigation details are available.",
+    "category": "Ransomware",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/gentlemen-ransomware-kfc-breach/",
+    "publishedAt": "2026-10-12T03:21:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gentlemen-ransomware-group-claims-breach-of-kfc",
+      "article-1a032a",
+      "1a032a"
+    ]
+  },
+  {
     "slug": "p7-darksword-ios-exploit-kit-enables-keychain-thef-38c38f",
     "title": "P7 DarkSword iOS Exploit Kit Enables Keychain Theft and Crypto Drainers",
     "summary": "The P7 DarkSword iOS exploit kit can steal on‑device Keychain credentials, drain cryptocurrency wallets, and communicate via a SpringBoard command‑and‑control channel. Mobile EDR rules, indicators of compromise, and defensive hardening steps are provided to detect and block the kit.",
@@ -26,24 +132,6 @@ export const news: NewsBrief[] = [
       "article-38c38f",
       "38c38f",
       "p7-darksword-ios-exploit-kit-enables-keychain-theft-and-cryp"
-    ]
-  },
-  {
-    "slug": "nippon-columbia-malware-leak-exposes-8-6-million-k-cac2ee",
-    "title": "Nippon Columbia Malware Leak Exposes 8.6 Million Karaoke Fan Records",
-    "summary": "A malware infection at Nippon Columbia, a contractor for Japanese entertainment system maker Daiichi Kosho, exposed over 8.7 million customer and employee records, including personal data. The breach highlights the risk of third‑party supply chain compromises.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/nippon-columbia-malware-incident-exposes-86-million-karaoke-fan-records/",
-    "publishedAt": "2026-10-11T14:23:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nippon-columbia-malware-leak-exposes-8-6-million-k",
-      "article-cac2ee",
-      "cac2ee",
-      "nippon-columbia-malware-leak-exposes-8-6-million-karaoke-fan"
     ]
   },
   {
@@ -243,24 +331,6 @@ export const news: NewsBrief[] = [
       "article-78cb23",
       "78cb23",
       "rea-tool-integrates-ai-coders-with-ghidra-and-ida-pro-for-au"
-    ]
-  },
-  {
-    "slug": "single-prompt-can-hijack-aws-bedrock-ai-agents-and-1428ce",
-    "title": "Single Prompt Can Hijack AWS Bedrock AI Agents and Steal Cloud Credentials",
-    "summary": "A single prompt sent to a public-facing AWS Bedrock AgentCore AI agent can expose private chats, source code, long‑term memories, API keys, OAuth tokens, and other secrets in the same AWS account and region. The attack chain, named AgentCorruption, allows attackers to access all secrets stored in the affected agents.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/agentcorruption-attack/",
-    "publishedAt": "2026-10-10T06:58:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "single-prompt-can-hijack-aws-bedrock-ai-agents-and",
-      "article-1428ce",
-      "1428ce",
-      "single-prompt-can-hijack-aws-bedrock-ai-agents-and-steal-clo"
     ]
   },
   {
@@ -653,24 +723,6 @@ export const news: NewsBrief[] = [
       "article-38f569",
       "38f569",
       "cloudflare-launches-on-demand-cpu-and-memory-profiling-for-w"
-    ]
-  },
-  {
-    "slug": "anthropic-releases-free-ai-powered-open-source-vul-10c4fd",
-    "title": "Anthropic Releases Free AI‑Powered Open‑Source Vulnerability Scanner",
-    "summary": "Anthropic unveiled OSS Scanner, an opt‑in AI tool that automatically scans open‑source projects for security flaws. The service, powered by Claude, offers periodic, in‑depth scans at no cost, aiming to strengthen the open‑source ecosystem by identifying vulnerabilities early.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/anthropic-launches-free-ai.html",
-    "publishedAt": "2026-10-09T12:47:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "anthropic-releases-free-ai-powered-open-source-vul",
-      "article-10c4fd",
-      "10c4fd",
-      "anthropic-releases-free-ai-powered-open-source-vulnerability"
     ]
   },
   {
