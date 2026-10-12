@@ -1,5 +1,49 @@
 [
   {
+    "id": "https://www.securityweek.com/lets-encrypt-cuts-default-certificate-validity-to-64-days-ahead-of-45-day-switch/",
+    "sourceUrl": "https://www.securityweek.com/lets-encrypt-cuts-default-certificate-validity-to-64-days-ahead-of-45-day-switch/",
+    "title": "Let’s Encrypt Shortens Default Certificate Validity to 64 Days",
+    "headline": "Let’s Encrypt Shortens Default Certificate Validity to 64 Days",
+    "summary": "Let’s Encrypt will reduce the default validity of newly issued certificates to 64 days starting February 2027, moving away from the previously planned 45‑day period. The change aims to improve security by shortening the window for certificate misuse and encouraging more frequent renewals.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-12T07:53:28.000Z",
+    "url": "https://www.securityweek.com/lets-encrypt-cuts-default-certificate-validity-to-64-days-ahead-of-45-day-switch/",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/12/lets-encrypt-64-day-certificate-lifetime/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/12/microsoft-windows-update-certificate-rotation/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/12/microsoft-windows-update-certificate-rotation/",
+    "title": "Windows PCs May Lose Security Updates if Key Certificates Expire in 2027",
+    "headline": "Windows PCs May Lose Security Updates if Key Certificates Expire in 2027",
+    "summary": "Microsoft warns that Windows devices lacking updated certificates will lose access to Windows Update servers once the current certificates expire on May 17 or June 19, 2027. Users must install replacement certificates via Microsoft’s certificate rotation process to continue receiving security patches.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-12T07:39:50.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/12/microsoft-windows-update-certificate-rotation/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/cyberxero-uses-claude-code-in-campaign.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/cyberxero-uses-claude-code-in-campaign.html",
+    "title": "CyberXero AI‑Powered Campaign Steals 628,000 Ukrainian Records",
+    "headline": "CyberXero AI‑Powered Campaign Steals 628,000 Ukrainian Records",
+    "summary": "Researchers uncovered a two‑pronged AI‑augmented attack targeting WordPress sites, e‑commerce platforms, and critical infrastructure in Ukraine. The campaign combined commodity tools like Cobalt Strike with Anthropic’s Claude Code orchestration to gain initial access and exfiltrate over 628,000 records.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-12T07:26:12.000Z",
+    "url": "https://thehackernews.com/2026/10/cyberxero-uses-claude-code-in-campaign.html",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/10/12/akshay-joshi-wef-cyber-resilience-gap/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/12/akshay-joshi-wef-cyber-resilience-gap/",
     "title": "AI, Geopolitics, and Fraud Drive CEOs to Prioritize Cyber‑Enabled Fraud Over Ransomware",

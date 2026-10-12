@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Oct 2026 06:27:10 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 08:18:17 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Let’s Encrypt Shortens Default Certificate Validity to 64 Days</title>
+      <link>https://secubuzz.com/news/let-s-encrypt-shortens-default-certificate-validit-f04adb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/let-s-encrypt-shortens-default-certificate-validit-f04adb</guid>
+      <description><![CDATA[Let’s Encrypt will reduce the default validity of newly issued certificates to 64 days starting February 2027, moving away from the previously planned 45‑day period. The change aims to improve security by shortening the window for certificate misuse and encouraging more frequent renewals.]]></description>
+      <pubDate>Mon, 12 Oct 2026 07:53:28 GMT</pubDate>
+      <source url="https://www.securityweek.com/lets-encrypt-cuts-default-certificate-validity-to-64-days-ahead-of-45-day-switch/">SecurityWeek</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Windows PCs May Lose Security Updates if Key Certificates Expire in 2027</title>
+      <link>https://secubuzz.com/news/windows-pcs-may-lose-security-updates-if-key-certi-455e7c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/windows-pcs-may-lose-security-updates-if-key-certi-455e7c</guid>
+      <description><![CDATA[Microsoft warns that Windows devices lacking updated certificates will lose access to Windows Update servers once the current certificates expire on May 17 or June 19, 2027. Users must install replacement certificates via Microsoft’s certificate rotation process to continue receiving security patches.]]></description>
+      <pubDate>Mon, 12 Oct 2026 07:39:50 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/12/microsoft-windows-update-certificate-rotation/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>CyberXero AI‑Powered Campaign Steals 628,000 Ukrainian Records</title>
+      <link>https://secubuzz.com/news/cyberxero-ai-powered-campaign-steals-628-000-ukrai-196992</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cyberxero-ai-powered-campaign-steals-628-000-ukrai-196992</guid>
+      <description><![CDATA[Researchers uncovered a two‑pronged AI‑augmented attack targeting WordPress sites, e‑commerce platforms, and critical infrastructure in Ukraine. The campaign combined commodity tools like Cobalt Strike with Anthropic’s Claude Code orchestration to gain initial access and exfiltrate over 628,000 records.]]></description>
+      <pubDate>Mon, 12 Oct 2026 07:26:12 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/cyberxero-uses-claude-code-in-campaign.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>AI, Geopolitics, and Fraud Drive CEOs to Prioritize Cyber‑Enabled Fraud Over Ransomware</title>
       <link>https://secubuzz.com/news/ai-geopolitics-and-fraud-drive-ceos-to-prioritize-4e149a</link>
@@ -428,33 +455,6 @@
       <description><![CDATA[Microsoft announced that devices running unsupported Windows versions will no longer receive security updates after the next Windows Update certificate rotation in 2027. The move means older systems will become increasingly vulnerable without official patches, urging users to upgrade or migrate to supported platforms.]]></description>
       <pubDate>Fri, 09 Oct 2026 10:12:24 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-outdated-windows-devices-will-lose-security-protection-next-year/">BleepingComputer</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Midnight Mimosa Malware Targets Budget Android Devices Worldwide</title>
-      <link>https://secubuzz.com/news/midnight-mimosa-malware-targets-budget-android-dev-177f46</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/midnight-mimosa-malware-targets-budget-android-dev-177f46</guid>
-      <description><![CDATA[Midnight Mimosa is a preinstalled malware campaign on low-cost Android devices, affecting over 150 countries. The malware is embedded in firmware, enabling attackers to gain persistent access and potentially exfiltrate data from compromised devices. No public patch or mitigation is currently available.]]></description>
-      <pubDate>Fri, 09 Oct 2026 09:55:35 GMT</pubDate>
-      <source url="https://www.securityweek.com/pre-baked-firmware-malware-hits-budget-android-devices-in-150-countries/">SecurityWeek</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>GoBalance Vulnerability Allows Hijacking of .onion Addresses</title>
-      <link>https://secubuzz.com/news/gobalance-vulnerability-allows-hijacking-of-onion-3ee840</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/gobalance-vulnerability-allows-hijacking-of-onion-3ee840</guid>
-      <description><![CDATA[A flaw in GoBalance lets attackers derive the secret key for a site’s .onion address using only public data, enabling them to seize the address and redirect traffic to a malicious copy. The vulnerability was disclosed by Searchlight Cyber on October 8.]]></description>
-      <pubDate>Fri, 09 Oct 2026 09:03:24 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/gobalance-flaw-lets-attackers-hijack.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>SimpleLogin Email Alias Service Enhances Privacy</title>
-      <link>https://secubuzz.com/news/simplelogin-email-alias-service-enhances-privacy-b4982f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/simplelogin-email-alias-service-enhances-privacy-b4982f</guid>
-      <description><![CDATA[SimpleLogin, an open-source email alias service from Proton, allows users to create disposable addresses that forward to their primary mailbox. The platform supports self-hosting and includes features such as enable/disable toggles and contact management, helping protect users’ real email addresses from exposure.]]></description>
-      <pubDate>Fri, 09 Oct 2026 08:51:07 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/09/product-showcase-simplelogin/">Help Net Security</source>
       <category>Policy</category>
     </item>
   </channel>

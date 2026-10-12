@@ -11,6 +11,60 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "let-s-encrypt-shortens-default-certificate-validit-f04adb",
+    "title": "Let’s Encrypt Shortens Default Certificate Validity to 64 Days",
+    "summary": "Let’s Encrypt will reduce the default validity of newly issued certificates to 64 days starting February 2027, moving away from the previously planned 45‑day period. The change aims to improve security by shortening the window for certificate misuse and encouraging more frequent renewals.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/lets-encrypt-cuts-default-certificate-validity-to-64-days-ahead-of-45-day-switch/",
+    "publishedAt": "2026-10-12T07:53:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "let-s-encrypt-shortens-default-certificate-validit",
+      "article-f04adb",
+      "f04adb",
+      "let-s-encrypt-shortens-default-certificate-validity-to-64-da"
+    ]
+  },
+  {
+    "slug": "windows-pcs-may-lose-security-updates-if-key-certi-455e7c",
+    "title": "Windows PCs May Lose Security Updates if Key Certificates Expire in 2027",
+    "summary": "Microsoft warns that Windows devices lacking updated certificates will lose access to Windows Update servers once the current certificates expire on May 17 or June 19, 2027. Users must install replacement certificates via Microsoft’s certificate rotation process to continue receiving security patches.",
+    "category": "Policy",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/12/microsoft-windows-update-certificate-rotation/",
+    "publishedAt": "2026-10-12T07:39:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "windows-pcs-may-lose-security-updates-if-key-certi",
+      "article-455e7c",
+      "455e7c",
+      "windows-pcs-may-lose-security-updates-if-key-certificates-ex"
+    ]
+  },
+  {
+    "slug": "cyberxero-ai-powered-campaign-steals-628-000-ukrai-196992",
+    "title": "CyberXero AI‑Powered Campaign Steals 628,000 Ukrainian Records",
+    "summary": "Researchers uncovered a two‑pronged AI‑augmented attack targeting WordPress sites, e‑commerce platforms, and critical infrastructure in Ukraine. The campaign combined commodity tools like Cobalt Strike with Anthropic’s Claude Code orchestration to gain initial access and exfiltrate over 628,000 records.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/cyberxero-uses-claude-code-in-campaign.html",
+    "publishedAt": "2026-10-12T07:26:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cyberxero-ai-powered-campaign-steals-628-000-ukrai",
+      "article-196992",
+      "196992",
+      "cyberxero-ai-powered-campaign-steals-628-000-ukrainian-recor"
+    ]
+  },
+  {
     "slug": "ai-geopolitics-and-fraud-drive-ceos-to-prioritize-4e149a",
     "title": "AI, Geopolitics, and Fraud Drive CEOs to Prioritize Cyber‑Enabled Fraud Over Ransomware",
     "summary": "Help Net Security interview with Akshay Joshi, Head of the Centre for Cybersecurity at the World Economic Forum, discusses how AI, geopolitics, and industrialized fraud are reshaping cyber risk. The Global Cybersecurity Outlook 2026 shows CEOs prioritizing cyber‑enabled fraud over ransomware, widening the resilience gap between large and small organizations, and highlighting skills shortages.",
