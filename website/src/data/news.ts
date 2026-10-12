@@ -11,6 +11,60 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "microsoft-power-bi-phishing-campaign-deploys-rogue-5c5ca3",
+    "title": "Microsoft Power BI Phishing Campaign Deploys Rogue ScreenConnect RMMs for Persistent Access",
+    "summary": "A phishing operation uses Microsoft Power BI to host a fake reference document that lures users to download rogue ScreenConnect Remote Management software. Once installed, the malware grants attackers long‑term remote access to Windows machines, enabling persistent control without relying on known vulnerabilities.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/bi-phishing-campaign/",
+    "publishedAt": "2026-10-12T08:40:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-power-bi-phishing-campaign-deploys-rogue",
+      "article-5c5ca3",
+      "5c5ca3",
+      "microsoft-power-bi-phishing-campaign-deploys-rogue-screencon"
+    ]
+  },
+  {
+    "slug": "critical-sonicwall-vulnerability-exploited-days-af-55a56b",
+    "title": "Critical SonicWall Vulnerability Exploited Days After Disclosure",
+    "summary": "CVE‑2026‑102255 is a pre‑authenticated Server‑Side Request Forgery flaw in SonicWall devices that allows attackers to perform unauthorized operations. The vulnerability was actively exploited within days of its disclosure, enabling attackers to manipulate internal traffic and potentially gain further access.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/critical-sonicwall-vulnerability-exploited-days-after-disclosure/",
+    "publishedAt": "2026-10-12T08:36:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "critical-sonicwall-vulnerability-exploited-days-af",
+      "article-55a56b",
+      "55a56b",
+      "critical-sonicwall-vulnerability-exploited-days-after-disclo"
+    ]
+  },
+  {
+    "slug": "decepticon-open-source-autonomous-red-team-agent-i-58019b",
+    "title": "Decepticon: Open‑Source Autonomous Red Team Agent Integrating Claude and Codex",
+    "summary": "Decepticon is an open‑source autonomous red‑team tool that combines AI reasoning with hands‑on security testing. It links Claude Code and OpenAI Codex, allowing operators to manage assessments from familiar coding tools and follow attack paths within defined engagement rules.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/decepticon-ai-red-team-tool/",
+    "publishedAt": "2026-10-12T08:05:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "decepticon-open-source-autonomous-red-team-agent-i",
+      "article-58019b",
+      "58019b",
+      "decepticon-open-source-autonomous-red-team-agent-integrating"
+    ]
+  },
+  {
     "slug": "let-s-encrypt-shortens-default-certificate-validit-f04adb",
     "title": "Let’s Encrypt Shortens Default Certificate Validity to 64 Days",
     "summary": "Let’s Encrypt will reduce the default validity of newly issued certificates to 64 days starting February 2027, moving away from the previously planned 45‑day period. The change aims to improve security by shortening the window for certificate misuse and encouraging more frequent renewals.",
@@ -26,6 +80,26 @@ export const news: NewsBrief[] = [
       "article-f04adb",
       "f04adb",
       "let-s-encrypt-shortens-default-certificate-validity-to-64-da"
+    ]
+  },
+  {
+    "slug": "cisa-adds-apache-struts-cve-2016-3081-to-exploited-1d2bbf",
+    "title": "CISA Adds Apache Struts CVE-2016-3081 to Exploited Vulnerabilities Catalog",
+    "summary": "CISA confirmed attackers are exploiting Apache Struts command injection CVE-2016-3081, allowing remote code execution on vulnerable servers. The flaw permits attackers to run arbitrary commands via Dynamic Method Invocation. The vulnerability is actively used in real‑world attacks and requires no user interaction.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/apache-struts-vulnerability-exploited/",
+    "publishedAt": "2026-10-12T07:43:09.000Z",
+    "cves": [
+      "CVE-2016-3081"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-adds-apache-struts-cve-2016-3081-to-exploited",
+      "article-1d2bbf",
+      "1d2bbf",
+      "cisa-adds-apache-struts-cve-2016-3081-to-exploited-vulnerabi"
     ]
   },
   {
@@ -65,6 +139,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "midnight-mimosa-infects-android-phones-via-pre-ins-47de1e",
+    "title": "Midnight Mimosa Infects Android Phones via Pre‑Installed Firmware",
+    "summary": "Midnight Mimosa malware embeds itself in low‑cost Android device firmware, enabling attackers to gain hidden foothold before the device is powered on. The infection bypasses downloads, phishing, and app permissions, targeting multiple brands built on the same platform. No user action is required for compromise.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/midnight-mimosa/",
+    "publishedAt": "2026-10-12T07:18:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "midnight-mimosa-infects-android-phones-via-pre-ins",
+      "article-47de1e",
+      "47de1e",
+      "midnight-mimosa-infects-android-phones-via-pre-installed-fir"
+    ]
+  },
+  {
+    "slug": "discourse-image-upload-exploit-enables-file-read-v-37baca",
+    "title": "Discourse Image Upload Exploit Enables File Read via JPEG Race, Ghostscript, and ImageMagick",
+    "summary": "A flaw in Discourse’s image upload pipeline lets basic users read server files by chaining a JPEG processing delay, Ghostscript execution, and ImageMagick features. The same chain also exposes a cache‑poisoning flaw that can run JavaScript for anonymous visitors. Both issues were patched before publication.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/discourse-image-pipeline-exploit/",
+    "publishedAt": "2026-10-12T06:43:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "discourse-image-upload-exploit-enables-file-read-v",
+      "article-37baca",
+      "37baca",
+      "discourse-image-upload-exploit-enables-file-read-via-jpeg-ra"
+    ]
+  },
+  {
     "slug": "ai-geopolitics-and-fraud-drive-ceos-to-prioritize-4e149a",
     "title": "AI, Geopolitics, and Fraud Drive CEOs to Prioritize Cyber‑Enabled Fraud Over Ransomware",
     "summary": "Help Net Security interview with Akshay Joshi, Head of the Centre for Cybersecurity at the World Economic Forum, discusses how AI, geopolitics, and industrialized fraud are reshaping cyber risk. The Global Cybersecurity Outlook 2026 shows CEOs prioritizing cyber‑enabled fraud over ransomware, widening the resilience gap between large and small organizations, and highlighting skills shortages.",
@@ -80,24 +190,6 @@ export const news: NewsBrief[] = [
       "article-4e149a",
       "4e149a",
       "ai-geopolitics-and-fraud-drive-ceos-to-prioritize-cyber-enab"
-    ]
-  },
-  {
-    "slug": "aws-launches-strands-box-open-source-sandbox-for-a-8f3308",
-    "title": "AWS Launches Strands Box, Open‑Source Sandbox for AI Agents",
-    "summary": "AWS has released Strands Box, an open‑source sandbox for AI agents that combines operating‑system isolation with rule‑based checks to prevent repeated actions. Currently in developer preview, it runs on Macs with Apple silicon and will add Linux support. The sandbox targets coding assistants, limiting file access, shell commands, code execution, and API calls.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/12/aws-strands-box-open-source-ai-agent-sandbox/",
-    "publishedAt": "2026-10-12T05:30:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "aws-launches-strands-box-open-source-sandbox-for-a",
-      "article-8f3308",
-      "8f3308",
-      "aws-launches-strands-box-open-source-sandbox-for-ai-agents"
     ]
   },
   {
@@ -798,26 +890,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "sonicwall-sma1000-vulnerability-cve-2026-102255-ex-2e5192",
-    "title": "SonicWall SMA1000 Vulnerability CVE-2026-102255 Exploited in Attacks",
-    "summary": "Attackers are actively exploiting the maximum‑severity flaw CVE-2026-102255 in SonicWall SMA1000 appliances, which was patched three days ago. The vulnerability allows remote code execution, enabling attackers to take control of affected devices. SonicWall has issued a patch; users must update immediately to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/max-severity-sonicwall-sma1000-flaw-now-exploited-in-attacks/",
-    "publishedAt": "2026-10-09T12:32:16.000Z",
-    "cves": [
-      "CVE-2026-102255"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "sonicwall-sma1000-vulnerability-cve-2026-102255-ex",
-      "article-2e5192",
-      "2e5192",
-      "sonicwall-sma1000-vulnerability-cve-2026-102255-exploited-in"
-    ]
-  },
-  {
     "slug": "high-severity-nvidia-vulnerability-lets-unauthenti-4455e9",
     "title": "High‑severity NVIDIA vulnerability lets unauthenticated attackers crash GPU monitoring",
     "summary": "Hundreds of internet‑exposed GPU servers were vulnerable to a high‑severity flaw in NVIDIA’s DCGM Exporter (CVE‑2026‑47483). The flaw allows unauthenticated attackers to crash the monitoring service, potentially disrupting AI workloads. NVIDIA rated the issue CVSS 8.2 and issued a security bulletin on July 28, 2026.",
@@ -907,24 +979,6 @@ export const news: NewsBrief[] = [
       "article-4c293f",
       "4c293f",
       "microsoft-to-cease-security-updates-for-unsupported-windows-"
-    ]
-  },
-  {
-    "slug": "midnight-mimosa-malware-targets-budget-android-dev-177f46",
-    "title": "Midnight Mimosa Malware Targets Budget Android Devices Worldwide",
-    "summary": "Midnight Mimosa is a preinstalled malware campaign on low-cost Android devices, affecting over 150 countries. The malware is embedded in firmware, enabling attackers to gain persistent access and potentially exfiltrate data from compromised devices. No public patch or mitigation is currently available.",
-    "category": "Malware",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/pre-baked-firmware-malware-hits-budget-android-devices-in-150-countries/",
-    "publishedAt": "2026-10-09T09:55:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "midnight-mimosa-malware-targets-budget-android-dev",
-      "article-177f46",
-      "177f46",
-      "midnight-mimosa-malware-targets-budget-android-devices-world"
     ]
   },
   {

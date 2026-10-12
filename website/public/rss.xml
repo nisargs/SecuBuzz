@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Oct 2026 08:18:17 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 09:15:56 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Microsoft Power BI Phishing Campaign Deploys Rogue ScreenConnect RMMs for Persistent Access</title>
+      <link>https://secubuzz.com/news/microsoft-power-bi-phishing-campaign-deploys-rogue-5c5ca3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-power-bi-phishing-campaign-deploys-rogue-5c5ca3</guid>
+      <description><![CDATA[A phishing operation uses Microsoft Power BI to host a fake reference document that lures users to download rogue ScreenConnect Remote Management software. Once installed, the malware grants attackers long‑term remote access to Windows machines, enabling persistent control without relying on known vulnerabilities.]]></description>
+      <pubDate>Mon, 12 Oct 2026 08:40:10 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/bi-phishing-campaign/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Critical SonicWall Vulnerability Exploited Days After Disclosure</title>
+      <link>https://secubuzz.com/news/critical-sonicwall-vulnerability-exploited-days-af-55a56b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/critical-sonicwall-vulnerability-exploited-days-af-55a56b</guid>
+      <description><![CDATA[CVE‑2026‑102255 is a pre‑authenticated Server‑Side Request Forgery flaw in SonicWall devices that allows attackers to perform unauthorized operations. The vulnerability was actively exploited within days of its disclosure, enabling attackers to manipulate internal traffic and potentially gain further access.]]></description>
+      <pubDate>Mon, 12 Oct 2026 08:36:01 GMT</pubDate>
+      <source url="https://www.securityweek.com/critical-sonicwall-vulnerability-exploited-days-after-disclosure/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Decepticon: Open‑Source Autonomous Red Team Agent Integrating Claude and Codex</title>
+      <link>https://secubuzz.com/news/decepticon-open-source-autonomous-red-team-agent-i-58019b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/decepticon-open-source-autonomous-red-team-agent-i-58019b</guid>
+      <description><![CDATA[Decepticon is an open‑source autonomous red‑team tool that combines AI reasoning with hands‑on security testing. It links Claude Code and OpenAI Codex, allowing operators to manage assessments from familiar coding tools and follow attack paths within defined engagement rules.]]></description>
+      <pubDate>Mon, 12 Oct 2026 08:05:58 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/decepticon-ai-red-team-tool/">Cyber Security News</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>Let’s Encrypt Shortens Default Certificate Validity to 64 Days</title>
       <link>https://secubuzz.com/news/let-s-encrypt-shortens-default-certificate-validit-f04adb</link>
@@ -15,6 +42,15 @@
       <pubDate>Mon, 12 Oct 2026 07:53:28 GMT</pubDate>
       <source url="https://www.securityweek.com/lets-encrypt-cuts-default-certificate-validity-to-64-days-ahead-of-45-day-switch/">SecurityWeek</source>
       <category>Policy</category>
+    </item>
+    <item>
+      <title>CISA Adds Apache Struts CVE-2016-3081 to Exploited Vulnerabilities Catalog</title>
+      <link>https://secubuzz.com/news/cisa-adds-apache-struts-cve-2016-3081-to-exploited-1d2bbf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-apache-struts-cve-2016-3081-to-exploited-1d2bbf</guid>
+      <description><![CDATA[CISA confirmed attackers are exploiting Apache Struts command injection CVE-2016-3081, allowing remote code execution on vulnerable servers. The flaw permits attackers to run arbitrary commands via Dynamic Method Invocation. The vulnerability is actively used in real‑world attacks and requires no user interaction.]]></description>
+      <pubDate>Mon, 12 Oct 2026 07:43:09 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/apache-struts-vulnerability-exploited/">Cyber Security News</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Windows PCs May Lose Security Updates if Key Certificates Expire in 2027</title>
@@ -35,6 +71,24 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Midnight Mimosa Infects Android Phones via Pre‑Installed Firmware</title>
+      <link>https://secubuzz.com/news/midnight-mimosa-infects-android-phones-via-pre-ins-47de1e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/midnight-mimosa-infects-android-phones-via-pre-ins-47de1e</guid>
+      <description><![CDATA[Midnight Mimosa malware embeds itself in low‑cost Android device firmware, enabling attackers to gain hidden foothold before the device is powered on. The infection bypasses downloads, phishing, and app permissions, targeting multiple brands built on the same platform. No user action is required for compromise.]]></description>
+      <pubDate>Mon, 12 Oct 2026 07:18:04 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/midnight-mimosa/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Discourse Image Upload Exploit Enables File Read via JPEG Race, Ghostscript, and ImageMagick</title>
+      <link>https://secubuzz.com/news/discourse-image-upload-exploit-enables-file-read-v-37baca</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/discourse-image-upload-exploit-enables-file-read-v-37baca</guid>
+      <description><![CDATA[A flaw in Discourse’s image upload pipeline lets basic users read server files by chaining a JPEG processing delay, Ghostscript execution, and ImageMagick features. The same chain also exposes a cache‑poisoning flaw that can run JavaScript for anonymous visitors. Both issues were patched before publication.]]></description>
+      <pubDate>Mon, 12 Oct 2026 06:43:59 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/discourse-image-pipeline-exploit/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>AI, Geopolitics, and Fraud Drive CEOs to Prioritize Cyber‑Enabled Fraud Over Ransomware</title>
       <link>https://secubuzz.com/news/ai-geopolitics-and-fraud-drive-ceos-to-prioritize-4e149a</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ai-geopolitics-and-fraud-drive-ceos-to-prioritize-4e149a</guid>
@@ -42,15 +96,6 @@
       <pubDate>Mon, 12 Oct 2026 06:00:12 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/12/akshay-joshi-wef-cyber-resilience-gap/">Help Net Security</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>AWS Launches Strands Box, Open‑Source Sandbox for AI Agents</title>
-      <link>https://secubuzz.com/news/aws-launches-strands-box-open-source-sandbox-for-a-8f3308</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/aws-launches-strands-box-open-source-sandbox-for-a-8f3308</guid>
-      <description><![CDATA[AWS has released Strands Box, an open‑source sandbox for AI agents that combines operating‑system isolation with rule‑based checks to prevent repeated actions. Currently in developer preview, it runs on Macs with Apple silicon and will add Linux support. The sandbox targets coding assistants, limiting file access, shell commands, code execution, and API calls.]]></description>
-      <pubDate>Mon, 12 Oct 2026 05:30:34 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/12/aws-strands-box-open-source-ai-agent-sandbox/">Help Net Security</source>
-      <category>Cloud</category>
     </item>
     <item>
       <title>NVIDIA DCGM Exporter Vulnerability Allows Resource Exhaustion</title>
@@ -404,15 +449,6 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>SonicWall SMA1000 Vulnerability CVE-2026-102255 Exploited in Attacks</title>
-      <link>https://secubuzz.com/news/sonicwall-sma1000-vulnerability-cve-2026-102255-ex-2e5192</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sonicwall-sma1000-vulnerability-cve-2026-102255-ex-2e5192</guid>
-      <description><![CDATA[Attackers are actively exploiting the maximum‑severity flaw CVE-2026-102255 in SonicWall SMA1000 appliances, which was patched three days ago. The vulnerability allows remote code execution, enabling attackers to take control of affected devices. SonicWall has issued a patch; users must update immediately to mitigate the risk.]]></description>
-      <pubDate>Fri, 09 Oct 2026 12:32:16 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/max-severity-sonicwall-sma1000-flaw-now-exploited-in-attacks/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>High‑severity NVIDIA vulnerability lets unauthenticated attackers crash GPU monitoring</title>
       <link>https://secubuzz.com/news/high-severity-nvidia-vulnerability-lets-unauthenti-4455e9</link>
       <guid isPermaLink="true">https://secubuzz.com/news/high-severity-nvidia-vulnerability-lets-unauthenti-4455e9</guid>
@@ -420,42 +456,6 @@
       <pubDate>Fri, 09 Oct 2026 12:26:42 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/09/nvidia-dcgm-exporter-vulnerability-cve-2026-47483/">Help Net Security</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Google Domains Hijacked via ccTLD Exploits</title>
-      <link>https://secubuzz.com/news/google-domains-hijacked-via-cctld-exploits-7b0459</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-domains-hijacked-via-cctld-exploits-7b0459</guid>
-      <description><![CDATA[Hackers hijacked the .gh, .sl, and .as country code top‑level domains and used them to obtain HTTPS certificates for several Google domains. The compromise allowed attackers to intercept traffic to those sites, potentially enabling man‑in‑the‑middle attacks. Google has not yet released a mitigation or patch.]]></description>
-      <pubDate>Fri, 09 Oct 2026 11:43:14 GMT</pubDate>
-      <source url="https://www.securityweek.com/google-domains-impacted-by-recent-cctld-domain-hijacks/">SecurityWeek</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>AI Velocity Paradox Exposes Security Lag in Rapid AI Adoption</title>
-      <link>https://secubuzz.com/news/ai-velocity-paradox-exposes-security-lag-in-rapid-2f0aaa</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-velocity-paradox-exposes-security-lag-in-rapid-2f0aaa</guid>
-      <description><![CDATA[A SailPoint report titled "Horizons of Identity Security" shows enterprises deploying autonomous AI agents at high speed while still relying on legacy, human‑centric security controls. The study highlights a critical velocity paradox that leaves AI‑driven operations vulnerable to outdated defenses.]]></description>
-      <pubDate>Fri, 09 Oct 2026 11:30:00 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/the-ai-velocity-paradox-why-security-is.html">The Hacker News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Unpatched AhsayCBS Vulnerabilities Exploited in the Wild</title>
-      <link>https://secubuzz.com/news/unpatched-ahsaycbs-vulnerabilities-exploited-in-th-4f5c21</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/unpatched-ahsaycbs-vulnerabilities-exploited-in-th-4f5c21</guid>
-      <description><![CDATA[The AhsayCBS platform suffers from two unpatched flaws, CVE-2026-105133 and CVE-2026-105134, that let attackers bypass authentication and inject operating‑system commands. Exploitation can lead to full system compromise. Immediate patching or disabling the affected modules is required.]]></description>
-      <pubDate>Fri, 09 Oct 2026 10:23:42 GMT</pubDate>
-      <source url="https://www.securityweek.com/unpatched-ahsaycbs-vulnerabilities-exploited-in-the-wild/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Microsoft to Cease Security Updates for Unsupported Windows Devices</title>
-      <link>https://secubuzz.com/news/microsoft-to-cease-security-updates-for-unsupporte-4c293f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-to-cease-security-updates-for-unsupporte-4c293f</guid>
-      <description><![CDATA[Microsoft announced that devices running unsupported Windows versions will no longer receive security updates after the next Windows Update certificate rotation in 2027. The move means older systems will become increasingly vulnerable without official patches, urging users to upgrade or migrate to supported platforms.]]></description>
-      <pubDate>Fri, 09 Oct 2026 10:12:24 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-outdated-windows-devices-will-lose-security-protection-next-year/">BleepingComputer</source>
-      <category>Policy</category>
     </item>
   </channel>
 </rss>
