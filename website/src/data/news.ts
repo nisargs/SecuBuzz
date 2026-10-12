@@ -11,6 +11,222 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "cyberattack-defrosts-french-supermarket-refrigerat-76952b",
+    "title": "Cyberattack Defrosts French Supermarket Refrigerators",
+    "summary": "Attackers remotely exploited Danfoss refrigeration controllers, causing multiple French supermarket chains to defrost their refrigerators overnight. The incident disrupted cold storage operations and highlighted vulnerabilities in industrial control systems used in retail environments. No data breach was reported, but the attack demonstrated the potential for physical damage through cyber means.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cyberattack-shuts-down-refrigerators-at-french-supermarkets/",
+    "publishedAt": "2026-10-12T15:23:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cyberattack-defrosts-french-supermarket-refrigerat",
+      "article-76952b",
+      "76952b",
+      "cyberattack-defrosts-french-supermarket-refrigerators"
+    ]
+  },
+  {
+    "slug": "ahold-delhaize-takes-systems-offline-after-securit-57c4ba",
+    "title": "Ahold Delhaize Takes Systems Offline After Security Issue",
+    "summary": "Ahold Delhaize shut down parts of its network after detecting a security issue. The Dutch food retailer assessed the problem and limited its impact while keeping physical stores open. No evidence of data compromise was disclosed, and the incident underscored the importance of rapid incident response in retail operations.",
+    "category": "Policy",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/ahold-delhaize-cyberattack/",
+    "publishedAt": "2026-10-12T15:12:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ahold-delhaize-takes-systems-offline-after-securit",
+      "article-57c4ba",
+      "57c4ba",
+      "ahold-delhaize-takes-systems-offline-after-security-issue"
+    ]
+  },
+  {
+    "slug": "fbi-arrests-suspect-in-shinyhunters-data-theft-72bdf7",
+    "title": "FBI Arrests Suspect in ShinyHunters Data Theft",
+    "summary": "The FBI has arrested an individual linked to ShinyHunters, a hacking group that stole a trove of FBI data on its own agents. The arrest follows the group's disclosure of the breach, which exposed sensitive information about FBI personnel. The case underscores the agency’s vulnerability to insider threats.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/fbi-arrests-suspect-in-fbi-hacking-case.html",
+    "publishedAt": "2026-10-12T15:01:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fbi-arrests-suspect-in-shinyhunters-data-theft",
+      "article-72bdf7",
+      "72bdf7"
+    ]
+  },
+  {
+    "slug": "denmark-central-register-of-persons-breach-exposes-e67ef2",
+    "title": "Denmark Central Register of Persons Breach Exposes Personal Data",
+    "summary": "Denmark’s Central Register of Persons suffered a breach after unauthorized individuals exploited access granted to a private supplier. The incident exposed personal information, including names and addresses, of citizens. The breach highlights the risks of third‑party access to critical government databases.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Check Point Research",
+    "sourceUrl": "https://research.checkpoint.com/2026/12th-october-threat-intelligence-report/",
+    "publishedAt": "2026-10-12T14:51:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "denmark-central-register-of-persons-breach-exposes",
+      "article-e67ef2",
+      "e67ef2",
+      "denmark-central-register-of-persons-breach-exposes-personal-"
+    ]
+  },
+  {
+    "slug": "cloudflare-enhances-logpush-with-sql-based-transfo-6c060a",
+    "title": "Cloudflare Enhances Logpush with SQL‑Based Transformers",
+    "summary": "Cloudflare’s Logpush now supports Transformers, enabling teams to filter, redact, and reshape log streams using SQL before export. Powered by Apache DataFusion and Apache Arrow, Transformers apply changes directly to log data, ensuring only desired information reaches destinations. This feature improves data privacy and compliance during log export.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/transformers-on-logpush/",
+    "publishedAt": "2026-10-12T14:44:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cloudflare-enhances-logpush-with-sql-based-transfo",
+      "article-6c060a",
+      "6c060a",
+      "cloudflare-enhances-logpush-with-sql-based-transformers"
+    ]
+  },
+  {
+    "slug": "google-devsite-vulnerability-enables-remote-code-e-1d7a81",
+    "title": "Google DevSite Vulnerability Enables Remote Code Execution via Forged Flask Sessions",
+    "summary": "A critical flaw in Google’s shared DevSite platform allows unauthenticated attackers to forge Flask session cookies and trigger remote code execution across multiple Google developer sites, including developers.google.com and firebase.google.com. The vulnerability exploits the OAuth flow used by documentation sites, potentially compromising developer credentials and site integrity.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/critical-google-devsite-flaw/",
+    "publishedAt": "2026-10-12T14:31:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-devsite-vulnerability-enables-remote-code-e",
+      "article-1d7a81",
+      "1d7a81",
+      "google-devsite-vulnerability-enables-remote-code-execution-v"
+    ]
+  },
+  {
+    "slug": "ionq-to-acquire-zero-trust-firm-elisity-for-up-to-14f240",
+    "title": "IonQ to Acquire Zero Trust Firm Elisity for Up to $1.3 Billion",
+    "summary": "IonQ announced an all-stock acquisition of zero‑trust firm Elisity, adding its least‑privilege access technology to IonQ’s security portfolio. The deal values Elisity at up to $1.3 billion and expands IonQ’s offerings in identity and access management.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/ionq-to-acquire-zero-trust-firm-elisity-for-up-to-1-3-billion/",
+    "publishedAt": "2026-10-12T14:25:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ionq-to-acquire-zero-trust-firm-elisity-for-up-to",
+      "article-14f240",
+      "14f240",
+      "ionq-to-acquire-zero-trust-firm-elisity-for-up-to-1-3-billio"
+    ]
+  },
+  {
+    "slug": "whatsapp-attachment-deploys-malware-that-gains-sys-443dee",
+    "title": "WhatsApp Attachment Deploys Malware That Gains SYSTEM Access on Windows",
+    "summary": "A malicious WhatsApp attachment delivers a Windows remote access trojan that achieves SYSTEM-level access. The campaign uses a ZIP file with a financial-document lure and an executable named Statement.exe. Opening the file launches the trojan, giving operators deep control over infected machines.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/whatsapp-attachment-deploys-malware/",
+    "publishedAt": "2026-10-12T14:02:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "whatsapp-attachment-deploys-malware-that-gains-sys",
+      "article-443dee",
+      "443dee",
+      "whatsapp-attachment-deploys-malware-that-gains-system-access"
+    ]
+  },
+  {
+    "slug": "avisloader-malware-loader-uses-encrypted-peer-to-p-e4f0df",
+    "title": "AvisLoader Malware Loader Uses Encrypted Peer‑to‑Peer Communications",
+    "summary": "Varonis researchers uncovered AvisLoader, a Windows malware loader that resists disruption through encrypted peer‑to‑peer command‑and‑control. The loader employs ClickFix delivery, shortcut‑based persistence, and remote command execution, complicating mitigation efforts.",
+    "category": "Malware",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/inside-avisloader-a-windows-malware-loader-built-to-resist-disruption/",
+    "publishedAt": "2026-10-12T14:00:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "avisloader-malware-loader-uses-encrypted-peer-to-p",
+      "article-e4f0df",
+      "e4f0df",
+      "avisloader-malware-loader-uses-encrypted-peer-to-peer-commun"
+    ]
+  },
+  {
+    "slug": "cve-2026-85097-exploited-in-bricksforge-wordpress-111787",
+    "title": "CVE-2026-85097 Exploited in Bricksforge WordPress Plugin",
+    "summary": "The CVE-2026-85097 vulnerability in the Bricksforge WordPress plugin allows attackers to gain full control of affected WordPress sites. Exploitation in the wild has been confirmed, enabling remote code execution and site takeover. Site owners should update the plugin immediately to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/bricksforge-wordpress-plugin-vulnerability-exploited-in-the-wild/",
+    "publishedAt": "2026-10-12T13:14:37.000Z",
+    "cves": [
+      "CVE-2026-85097"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-85097-exploited-in-bricksforge-wordpress",
+      "article-111787",
+      "111787",
+      "cve-2026-85097-exploited-in-bricksforge-wordpress-plugin"
+    ]
+  },
+  {
+    "slug": "google-phishing-kit-bypasses-mfa-using-websockets-604dfd",
+    "title": "Google Phishing Kit Bypasses MFA Using WebSockets",
+    "summary": "A phishing kit targeting Google accounts uses live WebSocket connections to relay authentication requests and steal authenticated sessions. By forwarding login steps in real time, attackers bypass MFA without breaking security checks. The campaign focuses on users linked to research organizations, demonstrating a new MFA evasion technique that requires victim interaction.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/google-aitm-phishing-kit/",
+    "publishedAt": "2026-10-12T13:11:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-phishing-kit-bypasses-mfa-using-websockets",
+      "article-604dfd",
+      "604dfd"
+    ]
+  },
+  {
+    "slug": "ledger-finds-unauthorized-hardware-implant-in-cryp-2d4dbf",
+    "title": "Ledger Finds Unauthorized Hardware Implant in Crypto Wallets Sold by CryptoBilis",
+    "summary": "Ledger confirmed that a cryptocurrency hardware wallet sold by reseller CryptoBilis contained an unauthorized hardware implant. The implant represents physical tampering and raises supply‑chain security concerns. Ledger has not yet disclosed how the implant operated or whether it caused all reported fund losses, but the finding highlights risks of compromised devices.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hardware-implant-in-crypto-wallet/",
+    "publishedAt": "2026-10-12T13:10:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ledger-finds-unauthorized-hardware-implant-in-cryp",
+      "article-2d4dbf",
+      "2d4dbf",
+      "ledger-finds-unauthorized-hardware-implant-in-crypto-wallets"
+    ]
+  },
+  {
     "slug": "dark-reading-names-fahmida-y-rashid-as-new-editor-638367",
     "title": "Dark Reading Names Fahmida Y Rashid as New Editor-in-Chief",
     "summary": "Dark Reading announced that Fahmida Y Rashid will serve as the new editor‑in‑chief, continuing the publication’s focus on cybersecurity news and analysis. Rashid’s appointment follows the previous editor’s tenure and is expected to maintain the site’s momentum in delivering timely threat intelligence.",
@@ -26,6 +242,24 @@ export const news: NewsBrief[] = [
       "article-638367",
       "638367",
       "dark-reading-names-fahmida-y-rashid-as-new-editor-in-chief"
+    ]
+  },
+  {
+    "slug": "ibm-issues-patches-for-22-verify-access-vulnerabil-29f55b",
+    "title": "IBM Issues Patches for 22 Verify Access Vulnerabilities, Including Two Critical RCE Bugs",
+    "summary": "IBM released security patches for 22 vulnerabilities in its Verify Identity Access and Security Verify Access products. Two critical flaws, CVE‑2026‑78401 and CVE‑2026‑78406, enable unauthenticated remote code execution on appliance and container deployments via deserialization of untrusted data. The patches mitigate the 9.8‑scored RCE.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/ibm-patches-22-verify-access-flaw/",
+    "publishedAt": "2026-10-12T12:07:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ibm-issues-patches-for-22-verify-access-vulnerabil",
+      "article-29f55b",
+      "29f55b",
+      "ibm-issues-patches-for-22-verify-access-vulnerabilities-incl"
     ]
   },
   {
@@ -83,6 +317,41 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "hackers-exploit-ahsaycbs-backup-server-flaws-to-de-32d4b0",
+    "title": "Hackers Exploit AhsayCBS Backup Server Flaws to Deploy Webshells and XMRig Miners",
+    "summary": "Hackers have leveraged two critical vulnerabilities in AhsayCBS backup servers to execute arbitrary commands, plant webshells, and install XMRig cryptocurrency miners masquerading as Microsoft Edge. Since October 7, 2026, five organizations have been targeted, with attackers establishing persistent access. No public patch has been released yet.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-exploit-critical-ahsaycbs-flaws/",
+    "publishedAt": "2026-10-12T11:56:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-exploit-ahsaycbs-backup-server-flaws-to-de",
+      "article-32d4b0",
+      "32d4b0",
+      "hackers-exploit-ahsaycbs-backup-server-flaws-to-deploy-websh"
+    ]
+  },
+  {
+    "slug": "amazon-blocks-meta-s-muse-after-ai-agent-concerns-1bd25d",
+    "title": "Amazon Blocks Meta’s Muse After AI Agent Concerns",
+    "summary": "Amazon has blocked Meta’s Muse AI agent because it fails to identify itself as a bot while browsing, raising privacy concerns. Instinct also faces scrutiny for privacy issues, and other personal AI agents continue to generate horror stories. The incident highlights growing scrutiny of AI assistant privacy practices.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/bring-your-own-agent-your-employees.html",
+    "publishedAt": "2026-10-12T11:55:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "amazon-blocks-meta-s-muse-after-ai-agent-concerns",
+      "article-1bd25d",
+      "1bd25d"
+    ]
+  },
+  {
     "slug": "mastermind-of-15-000-mule-cybercrime-laundering-ne-33edae",
     "title": "Mastermind of 15,000-Mule Cybercrime Laundering Network Pleads Guilty in US",
     "summary": "Oleg Korniev, a leader of the YMCO money‑mule network that helped hackers move funds outside the US, pleaded guilty in a US court. The case highlights the growing reach of cybercrime laundering operations and the legal actions against key figures.",
@@ -98,24 +367,6 @@ export const news: NewsBrief[] = [
       "article-33edae",
       "33edae",
       "mastermind-of-15-000-mule-cybercrime-laundering-network-plea"
-    ]
-  },
-  {
-    "slug": "irhythm-data-breach-exposes-360-000-patient-record-2430d1",
-    "title": "iRhythm Data Breach Exposes 360,000 Patient Records",
-    "summary": "Hackers accessed iRhythm’s patient database, stealing names, addresses, email addresses, dates of birth, and phone numbers for at least 360,000 individuals. The breach compromises personal health information, potentially enabling identity theft and fraud. iRhythm has notified affected users and is investigating the incident.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/irhythm-data-breach-impacts-over-360000-people/",
-    "publishedAt": "2026-10-12T11:05:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "irhythm-data-breach-exposes-360-000-patient-record",
-      "article-2430d1",
-      "2430d1",
-      "irhythm-data-breach-exposes-360-000-patient-records"
     ]
   },
   {
@@ -224,61 +475,6 @@ export const news: NewsBrief[] = [
       "article-1bbe3a",
       "1bbe3a",
       "casbaneiro-malware-hides-command-and-control-until-banking-s"
-    ]
-  },
-  {
-    "slug": "canadian-cybersecurity-executive-arrested-in-shiny-71bcf4",
-    "title": "Canadian Cybersecurity Executive Arrested in ShinyHunters FBI Hack Probe",
-    "summary": "A Canadian cybersecurity executive, Edward Dubrovsky, was arrested by the FBI during a ShinyHunters hack investigation. The suspect was in the U.S. for a conference when authorities detained him. The arrest follows the FBI’s probe into the ShinyHunters ransomware group’s alleged cyber‑crime activities.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/ransomware-response-expert-arrested-in-shinyhunters-fbi-hack-probe/",
-    "publishedAt": "2026-10-12T10:32:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "canadian-cybersecurity-executive-arrested-in-shiny",
-      "article-71bcf4",
-      "71bcf4",
-      "canadian-cybersecurity-executive-arrested-in-shinyhunters-fb"
-    ]
-  },
-  {
-    "slug": "ledger-hardware-wallet-implant-linked-to-93m-theft-fde86c",
-    "title": "Ledger Hardware Wallet Implant Linked to $93M Theft",
-    "summary": "Ledger reports a hidden implant in hardware wallets sold through Southeast Asia reseller CryptoBilis caused a draining incident on Oct 9 2026, resulting in suspected losses exceeding $93 million. The company confirmed that only affected devices were those distributed via CryptoBilis, and its own systems and direct sales channels were not compromised. Ledger is investigating the implant.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/12/ledger-wallets-compromised-via-hardware-implant/",
-    "publishedAt": "2026-10-12T09:46:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ledger-hardware-wallet-implant-linked-to-93m-theft",
-      "article-fde86c",
-      "fde86c"
-    ]
-  },
-  {
-    "slug": "bricksforge-wordpress-plugin-vulnerability-used-fo-1378bf",
-    "title": "Bricksforge WordPress Plugin Vulnerability Used for Unauthenticated RCE",
-    "summary": "The Bricksforge plugin for WordPress is being actively exploited in the wild. CVE-2026-85097, a CVSS 10.0 flaw, permits unauthenticated attackers to upload and execute arbitrary PHP code, resulting in remote code execution on vulnerable sites.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html",
-    "publishedAt": "2026-10-12T09:02:14.000Z",
-    "cves": [
-      "CVE-2026-85097"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "bricksforge-wordpress-plugin-vulnerability-used-fo",
-      "article-1378bf",
-      "1378bf",
-      "bricksforge-wordpress-plugin-vulnerability-used-for-unauthen"
     ]
   },
   {
@@ -733,23 +929,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "fbi-arrests-founder-of-ransomware-negotiation-firm-26374d",
-    "title": "FBI Arrests Founder of Ransomware Negotiation Firm",
-    "summary": "The FBI arrested the co‑founder of a Canadian cybersecurity firm linked to the ShinyHunters hacking group, which recently exfiltrated sensitive data on thousands of agents. The arrest follows an investigation into the group’s activities and the firm’s alleged involvement.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Krebs on Security",
-    "sourceUrl": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/",
-    "publishedAt": "2026-10-10T00:17:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fbi-arrests-founder-of-ransomware-negotiation-firm",
-      "article-26374d",
-      "26374d"
-    ]
-  },
-  {
     "slug": "openai-terminates-three-safety-researchers-over-po-115ef6",
     "title": "OpenAI Terminates Three Safety Researchers Over Policy Violations",
     "summary": "OpenAI terminated three safety researchers after they allegedly violated company policies on handling sensitive information. The decision highlights the firm’s strict stance on internal data security and policy compliance. The move may affect the organization’s research culture and its approach to AI safety oversight.",
@@ -836,42 +1015,6 @@ export const news: NewsBrief[] = [
       "article-402946",
       "402946",
       "credential-stealing-github-actions-workflows-planted-in-thou"
-    ]
-  },
-  {
-    "slug": "ahsaycbs-vulnerabilities-exploited-for-webshells-a-18decd",
-    "title": "AhsayCBS Vulnerabilities Exploited for Webshells and Crypto Mining",
-    "summary": "Threat actors are exploiting an unpatched critical and a medium‑severity flaw in the AhsayCBS backup management platform to deploy webshells and run cryptocurrency miners. The attacks target the platform’s web interface, allowing remote code execution and data exfiltration until patches are applied.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/unpatched-ahsaycbs-flaws-exploited-to-deploy-webshells-mine-crypto/",
-    "publishedAt": "2026-10-09T17:17:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ahsaycbs-vulnerabilities-exploited-for-webshells-a",
-      "article-18decd",
-      "18decd",
-      "ahsaycbs-vulnerabilities-exploited-for-webshells-and-crypto-"
-    ]
-  },
-  {
-    "slug": "anydesk-linux-vulnerability-allows-remote-code-exe-676d0e",
-    "title": "AnyDesk Linux Vulnerability Allows Remote Code Execution as Root",
-    "summary": "A proof‑of‑concept demonstrates that AnyDesk Linux 8.0.2 contains a flaw, dubbed AnyPwn, enabling remote attackers to execute commands as root without authentication. The issue was fixed in version 8.0.3; users should update immediately and verify that TCP port 7070 is not exposed to untrusted networks.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/anydesk-linux-vulnerability/",
-    "publishedAt": "2026-10-09T17:15:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "anydesk-linux-vulnerability-allows-remote-code-exe",
-      "article-676d0e",
-      "676d0e",
-      "anydesk-linux-vulnerability-allows-remote-code-execution-as-"
     ]
   },
   {
@@ -997,24 +1140,6 @@ export const news: NewsBrief[] = [
       "article-38f569",
       "38f569",
       "cloudflare-launches-on-demand-cpu-and-memory-profiling-for-w"
-    ]
-  },
-  {
-    "slug": "attackers-exploit-cve-2026-105133-in-ahsaycbs-to-d-787a57",
-    "title": "Attackers Exploit CVE‑2026‑105133 in AhsayCBS to Deploy XMRig Miners",
-    "summary": "Threat actors leveraged CVE‑2026‑105133, an improper authentication flaw in AhsayCBS’s checkSysPwd() function, to gain control of devices. They installed web shells and disguised XMRig cryptocurrency miners as Microsoft Edge, enabling covert mining operations on compromised systems.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/attackers-exploit-ahsaycbs-flaws-to.html",
-    "publishedAt": "2026-10-09T12:47:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "attackers-exploit-cve-2026-105133-in-ahsaycbs-to-d",
-      "article-787a57",
-      "787a57",
-      "attackers-exploit-cve-2026-105133-in-ahsaycbs-to-deploy-xmri"
     ]
   },
   {

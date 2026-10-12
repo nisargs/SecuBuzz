@@ -5,8 +5,116 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Oct 2026 12:19:21 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 16:02:23 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Cyberattack Defrosts French Supermarket Refrigerators</title>
+      <link>https://secubuzz.com/news/cyberattack-defrosts-french-supermarket-refrigerat-76952b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cyberattack-defrosts-french-supermarket-refrigerat-76952b</guid>
+      <description><![CDATA[Attackers remotely exploited Danfoss refrigeration controllers, causing multiple French supermarket chains to defrost their refrigerators overnight. The incident disrupted cold storage operations and highlighted vulnerabilities in industrial control systems used in retail environments. No data breach was reported, but the attack demonstrated the potential for physical damage through cyber means.]]></description>
+      <pubDate>Mon, 12 Oct 2026 15:23:34 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/cyberattack-shuts-down-refrigerators-at-french-supermarkets/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Ahold Delhaize Takes Systems Offline After Security Issue</title>
+      <link>https://secubuzz.com/news/ahold-delhaize-takes-systems-offline-after-securit-57c4ba</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ahold-delhaize-takes-systems-offline-after-securit-57c4ba</guid>
+      <description><![CDATA[Ahold Delhaize shut down parts of its network after detecting a security issue. The Dutch food retailer assessed the problem and limited its impact while keeping physical stores open. No evidence of data compromise was disclosed, and the incident underscored the importance of rapid incident response in retail operations.]]></description>
+      <pubDate>Mon, 12 Oct 2026 15:12:54 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/ahold-delhaize-cyberattack/">Cyber Security News</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>FBI Arrests Suspect in ShinyHunters Data Theft</title>
+      <link>https://secubuzz.com/news/fbi-arrests-suspect-in-shinyhunters-data-theft-72bdf7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fbi-arrests-suspect-in-shinyhunters-data-theft-72bdf7</guid>
+      <description><![CDATA[The FBI has arrested an individual linked to ShinyHunters, a hacking group that stole a trove of FBI data on its own agents. The arrest follows the group's disclosure of the breach, which exposed sensitive information about FBI personnel. The case underscores the agency’s vulnerability to insider threats.]]></description>
+      <pubDate>Mon, 12 Oct 2026 15:01:26 GMT</pubDate>
+      <source url="https://www.schneier.com/blog/archives/2026/10/fbi-arrests-suspect-in-fbi-hacking-case.html">Schneier on Security</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Denmark Central Register of Persons Breach Exposes Personal Data</title>
+      <link>https://secubuzz.com/news/denmark-central-register-of-persons-breach-exposes-e67ef2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/denmark-central-register-of-persons-breach-exposes-e67ef2</guid>
+      <description><![CDATA[Denmark’s Central Register of Persons suffered a breach after unauthorized individuals exploited access granted to a private supplier. The incident exposed personal information, including names and addresses, of citizens. The breach highlights the risks of third‑party access to critical government databases.]]></description>
+      <pubDate>Mon, 12 Oct 2026 14:51:31 GMT</pubDate>
+      <source url="https://research.checkpoint.com/2026/12th-october-threat-intelligence-report/">Check Point Research</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Cloudflare Enhances Logpush with SQL‑Based Transformers</title>
+      <link>https://secubuzz.com/news/cloudflare-enhances-logpush-with-sql-based-transfo-6c060a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-enhances-logpush-with-sql-based-transfo-6c060a</guid>
+      <description><![CDATA[Cloudflare’s Logpush now supports Transformers, enabling teams to filter, redact, and reshape log streams using SQL before export. Powered by Apache DataFusion and Apache Arrow, Transformers apply changes directly to log data, ensuring only desired information reaches destinations. This feature improves data privacy and compliance during log export.]]></description>
+      <pubDate>Mon, 12 Oct 2026 14:44:59 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/transformers-on-logpush/">Cloudflare Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Google DevSite Vulnerability Enables Remote Code Execution via Forged Flask Sessions</title>
+      <link>https://secubuzz.com/news/google-devsite-vulnerability-enables-remote-code-e-1d7a81</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-devsite-vulnerability-enables-remote-code-e-1d7a81</guid>
+      <description><![CDATA[A critical flaw in Google’s shared DevSite platform allows unauthenticated attackers to forge Flask session cookies and trigger remote code execution across multiple Google developer sites, including developers.google.com and firebase.google.com. The vulnerability exploits the OAuth flow used by documentation sites, potentially compromising developer credentials and site integrity.]]></description>
+      <pubDate>Mon, 12 Oct 2026 14:31:19 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/critical-google-devsite-flaw/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>IonQ to Acquire Zero Trust Firm Elisity for Up to $1.3 Billion</title>
+      <link>https://secubuzz.com/news/ionq-to-acquire-zero-trust-firm-elisity-for-up-to-14f240</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ionq-to-acquire-zero-trust-firm-elisity-for-up-to-14f240</guid>
+      <description><![CDATA[IonQ announced an all-stock acquisition of zero‑trust firm Elisity, adding its least‑privilege access technology to IonQ’s security portfolio. The deal values Elisity at up to $1.3 billion and expands IonQ’s offerings in identity and access management.]]></description>
+      <pubDate>Mon, 12 Oct 2026 14:25:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/ionq-to-acquire-zero-trust-firm-elisity-for-up-to-1-3-billion/">SecurityWeek</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>WhatsApp Attachment Deploys Malware That Gains SYSTEM Access on Windows</title>
+      <link>https://secubuzz.com/news/whatsapp-attachment-deploys-malware-that-gains-sys-443dee</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/whatsapp-attachment-deploys-malware-that-gains-sys-443dee</guid>
+      <description><![CDATA[A malicious WhatsApp attachment delivers a Windows remote access trojan that achieves SYSTEM-level access. The campaign uses a ZIP file with a financial-document lure and an executable named Statement.exe. Opening the file launches the trojan, giving operators deep control over infected machines.]]></description>
+      <pubDate>Mon, 12 Oct 2026 14:02:53 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/whatsapp-attachment-deploys-malware/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>AvisLoader Malware Loader Uses Encrypted Peer‑to‑Peer Communications</title>
+      <link>https://secubuzz.com/news/avisloader-malware-loader-uses-encrypted-peer-to-p-e4f0df</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/avisloader-malware-loader-uses-encrypted-peer-to-p-e4f0df</guid>
+      <description><![CDATA[Varonis researchers uncovered AvisLoader, a Windows malware loader that resists disruption through encrypted peer‑to‑peer command‑and‑control. The loader employs ClickFix delivery, shortcut‑based persistence, and remote command execution, complicating mitigation efforts.]]></description>
+      <pubDate>Mon, 12 Oct 2026 14:00:10 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/inside-avisloader-a-windows-malware-loader-built-to-resist-disruption/">BleepingComputer</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>CVE-2026-85097 Exploited in Bricksforge WordPress Plugin</title>
+      <link>https://secubuzz.com/news/cve-2026-85097-exploited-in-bricksforge-wordpress-111787</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-85097-exploited-in-bricksforge-wordpress-111787</guid>
+      <description><![CDATA[The CVE-2026-85097 vulnerability in the Bricksforge WordPress plugin allows attackers to gain full control of affected WordPress sites. Exploitation in the wild has been confirmed, enabling remote code execution and site takeover. Site owners should update the plugin immediately to mitigate the risk.]]></description>
+      <pubDate>Mon, 12 Oct 2026 13:14:37 GMT</pubDate>
+      <source url="https://www.securityweek.com/bricksforge-wordpress-plugin-vulnerability-exploited-in-the-wild/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Google Phishing Kit Bypasses MFA Using WebSockets</title>
+      <link>https://secubuzz.com/news/google-phishing-kit-bypasses-mfa-using-websockets-604dfd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-phishing-kit-bypasses-mfa-using-websockets-604dfd</guid>
+      <description><![CDATA[A phishing kit targeting Google accounts uses live WebSocket connections to relay authentication requests and steal authenticated sessions. By forwarding login steps in real time, attackers bypass MFA without breaking security checks. The campaign focuses on users linked to research organizations, demonstrating a new MFA evasion technique that requires victim interaction.]]></description>
+      <pubDate>Mon, 12 Oct 2026 13:11:06 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/google-aitm-phishing-kit/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Ledger Finds Unauthorized Hardware Implant in Crypto Wallets Sold by CryptoBilis</title>
+      <link>https://secubuzz.com/news/ledger-finds-unauthorized-hardware-implant-in-cryp-2d4dbf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ledger-finds-unauthorized-hardware-implant-in-cryp-2d4dbf</guid>
+      <description><![CDATA[Ledger confirmed that a cryptocurrency hardware wallet sold by reseller CryptoBilis contained an unauthorized hardware implant. The implant represents physical tampering and raises supply‑chain security concerns. Ledger has not yet disclosed how the implant operated or whether it caused all reported fund losses, but the finding highlights risks of compromised devices.]]></description>
+      <pubDate>Mon, 12 Oct 2026 13:10:25 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hardware-implant-in-crypto-wallet/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Dark Reading Names Fahmida Y Rashid as New Editor-in-Chief</title>
       <link>https://secubuzz.com/news/dark-reading-names-fahmida-y-rashid-as-new-editor-638367</link>
@@ -15,6 +123,15 @@
       <pubDate>Mon, 12 Oct 2026 12:30:58 GMT</pubDate>
       <source url="https://www.darkreading.com/cyber-risk/passing-baton-dark-reading-new-editor-in-chief">Dark Reading</source>
       <category>Policy</category>
+    </item>
+    <item>
+      <title>IBM Issues Patches for 22 Verify Access Vulnerabilities, Including Two Critical RCE Bugs</title>
+      <link>https://secubuzz.com/news/ibm-issues-patches-for-22-verify-access-vulnerabil-29f55b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ibm-issues-patches-for-22-verify-access-vulnerabil-29f55b</guid>
+      <description><![CDATA[IBM released security patches for 22 vulnerabilities in its Verify Identity Access and Security Verify Access products. Two critical flaws, CVE‑2026‑78401 and CVE‑2026‑78406, enable unauthenticated remote code execution on appliance and container deployments via deserialization of untrusted data. The patches mitigate the 9.8‑scored RCE.]]></description>
+      <pubDate>Mon, 12 Oct 2026 12:07:34 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/ibm-patches-22-verify-access-flaw/">Cyber Security News</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Ukraine Drone Strike Hits Third Yandex Data Center, Disrupting Russian Digital Services</title>
@@ -44,6 +161,24 @@
       <category>Policy</category>
     </item>
     <item>
+      <title>Hackers Exploit AhsayCBS Backup Server Flaws to Deploy Webshells and XMRig Miners</title>
+      <link>https://secubuzz.com/news/hackers-exploit-ahsaycbs-backup-server-flaws-to-de-32d4b0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-ahsaycbs-backup-server-flaws-to-de-32d4b0</guid>
+      <description><![CDATA[Hackers have leveraged two critical vulnerabilities in AhsayCBS backup servers to execute arbitrary commands, plant webshells, and install XMRig cryptocurrency miners masquerading as Microsoft Edge. Since October 7, 2026, five organizations have been targeted, with attackers establishing persistent access. No public patch has been released yet.]]></description>
+      <pubDate>Mon, 12 Oct 2026 11:56:07 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-exploit-critical-ahsaycbs-flaws/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Amazon Blocks Meta’s Muse After AI Agent Concerns</title>
+      <link>https://secubuzz.com/news/amazon-blocks-meta-s-muse-after-ai-agent-concerns-1bd25d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/amazon-blocks-meta-s-muse-after-ai-agent-concerns-1bd25d</guid>
+      <description><![CDATA[Amazon has blocked Meta’s Muse AI agent because it fails to identify itself as a bot while browsing, raising privacy concerns. Instinct also faces scrutiny for privacy issues, and other personal AI agents continue to generate horror stories. The incident highlights growing scrutiny of AI assistant privacy practices.]]></description>
+      <pubDate>Mon, 12 Oct 2026 11:55:00 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/bring-your-own-agent-your-employees.html">The Hacker News</source>
+      <category>Policy</category>
+    </item>
+    <item>
       <title>Mastermind of 15,000-Mule Cybercrime Laundering Network Pleads Guilty in US</title>
       <link>https://secubuzz.com/news/mastermind-of-15-000-mule-cybercrime-laundering-ne-33edae</link>
       <guid isPermaLink="true">https://secubuzz.com/news/mastermind-of-15-000-mule-cybercrime-laundering-ne-33edae</guid>
@@ -51,15 +186,6 @@
       <pubDate>Mon, 12 Oct 2026 11:24:50 GMT</pubDate>
       <source url="https://www.securityweek.com/mastermind-of-15000-mule-cybercrime-laundering-network-pleads-guilty-in-us/">SecurityWeek</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>iRhythm Data Breach Exposes 360,000 Patient Records</title>
-      <link>https://secubuzz.com/news/irhythm-data-breach-exposes-360-000-patient-record-2430d1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/irhythm-data-breach-exposes-360-000-patient-record-2430d1</guid>
-      <description><![CDATA[Hackers accessed iRhythm’s patient database, stealing names, addresses, email addresses, dates of birth, and phone numbers for at least 360,000 individuals. The breach compromises personal health information, potentially enabling identity theft and fraud. iRhythm has notified affected users and is investigating the incident.]]></description>
-      <pubDate>Mon, 12 Oct 2026 11:05:43 GMT</pubDate>
-      <source url="https://www.securityweek.com/irhythm-data-breach-impacts-over-360000-people/">SecurityWeek</source>
-      <category>Breach</category>
     </item>
     <item>
       <title>Microsoft’s New Decision‑Scoring Model Aims to Improve AI Agent Workflow</title>
@@ -114,33 +240,6 @@
       <pubDate>Mon, 12 Oct 2026 10:34:53 GMT</pubDate>
       <source url="https://cybersecuritynews.com/casbaneiro-malware/">Cyber Security News</source>
       <category>Malware</category>
-    </item>
-    <item>
-      <title>Canadian Cybersecurity Executive Arrested in ShinyHunters FBI Hack Probe</title>
-      <link>https://secubuzz.com/news/canadian-cybersecurity-executive-arrested-in-shiny-71bcf4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/canadian-cybersecurity-executive-arrested-in-shiny-71bcf4</guid>
-      <description><![CDATA[A Canadian cybersecurity executive, Edward Dubrovsky, was arrested by the FBI during a ShinyHunters hack investigation. The suspect was in the U.S. for a conference when authorities detained him. The arrest follows the FBI’s probe into the ShinyHunters ransomware group’s alleged cyber‑crime activities.]]></description>
-      <pubDate>Mon, 12 Oct 2026 10:32:05 GMT</pubDate>
-      <source url="https://www.securityweek.com/ransomware-response-expert-arrested-in-shinyhunters-fbi-hack-probe/">SecurityWeek</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Ledger Hardware Wallet Implant Linked to $93M Theft</title>
-      <link>https://secubuzz.com/news/ledger-hardware-wallet-implant-linked-to-93m-theft-fde86c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ledger-hardware-wallet-implant-linked-to-93m-theft-fde86c</guid>
-      <description><![CDATA[Ledger reports a hidden implant in hardware wallets sold through Southeast Asia reseller CryptoBilis caused a draining incident on Oct 9 2026, resulting in suspected losses exceeding $93 million. The company confirmed that only affected devices were those distributed via CryptoBilis, and its own systems and direct sales channels were not compromised. Ledger is investigating the implant.]]></description>
-      <pubDate>Mon, 12 Oct 2026 09:46:53 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/12/ledger-wallets-compromised-via-hardware-implant/">Help Net Security</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Bricksforge WordPress Plugin Vulnerability Used for Unauthenticated RCE</title>
-      <link>https://secubuzz.com/news/bricksforge-wordpress-plugin-vulnerability-used-fo-1378bf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/bricksforge-wordpress-plugin-vulnerability-used-fo-1378bf</guid>
-      <description><![CDATA[The Bricksforge plugin for WordPress is being actively exploited in the wild. CVE-2026-85097, a CVSS 10.0 flaw, permits unauthenticated attackers to upload and execute arbitrary PHP code, resulting in remote code execution on vulnerable sites.]]></description>
-      <pubDate>Mon, 12 Oct 2026 09:02:14 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html">The Hacker News</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>Decepticon: Open‑Source Autonomous Red Team Agent Integrating Claude and Codex</title>
@@ -357,105 +456,6 @@
       <pubDate>Sat, 10 Oct 2026 04:14:40 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/claude-clickfix-adception-malvertising-defense">CyberNews AI</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Co‑creator of Empire Market Dark Web Marketplace Sentenced to 40 Years</title>
-      <link>https://secubuzz.com/news/co-creator-of-empire-market-dark-web-marketplace-s-898fec</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/co-creator-of-empire-market-dark-web-marketplace-s-898fec</guid>
-      <description><![CDATA[Raheim Hamilton, 30, pleaded guilty to a drug conspiracy charge and agreed to forfeit more than $100 million in Bitcoin and several Virginia properties. The court imposed a 40‑year prison sentence and forfeiture order.]]></description>
-      <pubDate>Sat, 10 Oct 2026 00:55:00 GMT</pubDate>
-      <source url="https://therecord.media/co-creator-empire-dark-net-market-sentenced">The Record</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>FBI Arrests Founder of Ransomware Negotiation Firm</title>
-      <link>https://secubuzz.com/news/fbi-arrests-founder-of-ransomware-negotiation-firm-26374d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fbi-arrests-founder-of-ransomware-negotiation-firm-26374d</guid>
-      <description><![CDATA[The FBI arrested the co‑founder of a Canadian cybersecurity firm linked to the ShinyHunters hacking group, which recently exfiltrated sensitive data on thousands of agents. The arrest follows an investigation into the group’s activities and the firm’s alleged involvement.]]></description>
-      <pubDate>Sat, 10 Oct 2026 00:17:42 GMT</pubDate>
-      <source url="https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/">Krebs on Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>OpenAI Terminates Three Safety Researchers Over Policy Violations</title>
-      <link>https://secubuzz.com/news/openai-terminates-three-safety-researchers-over-po-115ef6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-terminates-three-safety-researchers-over-po-115ef6</guid>
-      <description><![CDATA[OpenAI terminated three safety researchers after they allegedly violated company policies on handling sensitive information. The decision highlights the firm’s strict stance on internal data security and policy compliance. The move may affect the organization’s research culture and its approach to AI safety oversight.]]></description>
-      <pubDate>Fri, 09 Oct 2026 21:07:46 GMT</pubDate>
-      <source url="https://www.securityweek.com/openai-fires-3-safety-researchers-in-dispute-over-ai-risks/">SecurityWeek</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>ASOS Breach Demonstrates Risks of Customer-Facing SaaS</title>
-      <link>https://secubuzz.com/news/asos-breach-demonstrates-risks-of-customer-facing-5a40a4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/asos-breach-demonstrates-risks-of-customer-facing-5a40a4</guid>
-      <description><![CDATA[A cyberattack on British retailer ASOS exposed a single compromised customer identity, enabling attackers to penetrate deeper into the corporate network. The breach underscores the vulnerability of customer-facing SaaS platforms to credential compromise and highlights the need for stronger identity protection and network segmentation.]]></description>
-      <pubDate>Fri, 09 Oct 2026 20:58:32 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyberattacks-data-breaches/asos-breach-risks-customer-facing-saas">Dark Reading</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Hackers Use Bing Redirects in Google Ads to Deliver ClickFix Ransomware</title>
-      <link>https://secubuzz.com/news/hackers-use-bing-redirects-in-google-ads-to-delive-591002</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-bing-redirects-in-google-ads-to-delive-591002</guid>
-      <description><![CDATA[Hackers exploit Bing search-result redirects embedded in Google search ads to send users to counterfeit Claude installers that install ClickFix ransomware. The attack vector relies on legitimate advertising platforms to distribute malware, enabling widespread delivery without user interaction beyond clicking ads.]]></description>
-      <pubDate>Fri, 09 Oct 2026 20:31:37 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/hackers-abuse-google-ads-bing-redirects-to-push-claude-clickfix-attacks/">BleepingComputer</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>AI-Driven Cybersecurity M&amp;A Surge Hits 117 Deals</title>
-      <link>https://secubuzz.com/news/ai-driven-cybersecurity-m-a-surge-hits-117-deals-1677c3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-driven-cybersecurity-m-a-surge-hits-117-deals-1677c3</guid>
-      <description><![CDATA[The cybersecurity sector saw a boom in mergers and acquisitions, with 117 deals announced in the latest quarter. The trend is driven by AI advancements, attracting buyers beyond traditional security firms and reshaping the industry landscape.]]></description>
-      <pubDate>Fri, 09 Oct 2026 19:26:26 GMT</pubDate>
-      <source url="https://www.darkreading.com/cybersecurity-analytics/ai-scramble-cybersecurity-ma-boom">Dark Reading</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Credential-Stealing GitHub Actions Workflows Planted in Thousands of Repositories</title>
-      <link>https://secubuzz.com/news/credential-stealing-github-actions-workflows-plant-402946</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/credential-stealing-github-actions-workflows-plant-402946</guid>
-      <description><![CDATA[Researchers uncovered a campaign that compromised two high-profile open-source maintainer accounts, injecting malicious GitHub Actions workflows into over 340 repositories. The attackers used the compromised accounts to push credential-stealing code, potentially exposing secrets stored in those workflows.]]></description>
-      <pubDate>Fri, 09 Oct 2026 19:14:28 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/credential-stealing-github-actions.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>AhsayCBS Vulnerabilities Exploited for Webshells and Crypto Mining</title>
-      <link>https://secubuzz.com/news/ahsaycbs-vulnerabilities-exploited-for-webshells-a-18decd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ahsaycbs-vulnerabilities-exploited-for-webshells-a-18decd</guid>
-      <description><![CDATA[Threat actors are exploiting an unpatched critical and a medium‑severity flaw in the AhsayCBS backup management platform to deploy webshells and run cryptocurrency miners. The attacks target the platform’s web interface, allowing remote code execution and data exfiltration until patches are applied.]]></description>
-      <pubDate>Fri, 09 Oct 2026 17:17:23 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/unpatched-ahsaycbs-flaws-exploited-to-deploy-webshells-mine-crypto/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AnyDesk Linux Vulnerability Allows Remote Code Execution as Root</title>
-      <link>https://secubuzz.com/news/anydesk-linux-vulnerability-allows-remote-code-exe-676d0e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/anydesk-linux-vulnerability-allows-remote-code-exe-676d0e</guid>
-      <description><![CDATA[A proof‑of‑concept demonstrates that AnyDesk Linux 8.0.2 contains a flaw, dubbed AnyPwn, enabling remote attackers to execute commands as root without authentication. The issue was fixed in version 8.0.3; users should update immediately and verify that TCP port 7070 is not exposed to untrusted networks.]]></description>
-      <pubDate>Fri, 09 Oct 2026 17:15:43 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/anydesk-linux-vulnerability/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Security Threats Don’t Stop at the Office: Why Executives’ Families Need Training, Too</title>
-      <link>https://secubuzz.com/news/security-threats-don-t-stop-at-the-office-why-exec-15d4db</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/security-threats-don-t-stop-at-the-office-why-exec-15d4db</guid>
-      <description><![CDATA[The article stresses that executives’ family members can be the weakest security link, urging them to receive cybersecurity training to prevent attacks that exploit personal devices and social engineering tactics.]]></description>
-      <pubDate>Fri, 09 Oct 2026 16:25:05 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyber-risk/security-threats-don-t-stop-at-the-office-why-executives-families-need-training-too">Dark Reading</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Belarusian Hacktivists Admit 2023 Breach of Russian State Healthcare Network</title>
-      <link>https://secubuzz.com/news/belarusian-hacktivists-admit-2023-breach-of-russia-6e2913</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/belarusian-hacktivists-admit-2023-breach-of-russia-6e2913</guid>
-      <description><![CDATA[Belarusian Cyber Partisans confirmed they spent months infiltrating the Moscow Department of Health’s network in 2023. The breach involved unauthorized access to the Russian state healthcare system, exposing sensitive data and compromising national security infrastructure. The admission underscores ongoing cyber espionage targeting critical health services.]]></description>
-      <pubDate>Fri, 09 Oct 2026 14:40:00 GMT</pubDate>
-      <source url="https://therecord.media/belarusian-cyber-partisans-claim-2023-russia-healthcare-hack">The Record</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>
