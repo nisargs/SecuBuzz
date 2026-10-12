@@ -25,6 +25,13 @@ const CORS_HEADERS = {
   'Access-Control-Allow-Headers': 'Content-Type, Authorization, x-admin-key',
 };
 
+const SECURITY_HEADERS = {
+  'X-Content-Type-Options': 'nosniff',
+  'X-Frame-Options': 'DENY',
+  'Referrer-Policy': 'strict-origin-when-cross-origin',
+  'Permissions-Policy': 'camera=(), microphone=(), geolocation=()',
+};
+
 function jsonResponse(
   data: unknown,
   status = 200,
@@ -1128,6 +1135,7 @@ export default {
             'Content-Type': 'text/html; charset=utf-8',
             'Cache-Control': 'public, max-age=60, s-maxage=300',
             ...CORS_HEADERS,
+            ...SECURITY_HEADERS,
           });
           const visitor = getVisitorInfo(request);
           if (visitor.isNewCookie) {
