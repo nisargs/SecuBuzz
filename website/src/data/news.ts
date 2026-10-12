@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "norway-fines-microsoft-owned-ad-firm-for-unlawful-7cd6a9",
+    "title": "Norway Fines Microsoft‑Owned Ad Firm for Unlawful Grindr Data Sharing",
+    "summary": "Norway’s Data Protection Authority fined Xandr, a Microsoft‑owned advertising company, 92 million NOK ($9.6 million) for unlawfully processing and sharing sensitive Grindr user data. The fine follows investigations into the company’s data handling practices.",
+    "category": "Breach",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/norway-fines-microsoft-ad-firm-96-million-over-grindr-data-sharing/",
+    "publishedAt": "2026-10-12T20:13:52.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "norway-fines-microsoft-owned-ad-firm-for-unlawful",
+      "article-7cd6a9",
+      "7cd6a9",
+      "norway-fines-microsoft-owned-ad-firm-for-unlawful-grindr-dat"
+    ]
+  },
+  {
+    "slug": "yandex-cloud-outage-after-drone-attacks-damage-dat-7de647",
+    "title": "Yandex Cloud Outage After Drone Attacks Damage Data Centers",
+    "summary": "Yandex announced that drone attacks damaged three of its data centers, forcing the shutdown of two facilities and partial disablement of a third. The outage has disrupted access to cloud files for users across the service.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/yandex-confirms-service-outage-as-users-lose-access-to-cloud-files/",
+    "publishedAt": "2026-10-12T19:23:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "yandex-cloud-outage-after-drone-attacks-damage-dat",
+      "article-7de647",
+      "7de647",
+      "yandex-cloud-outage-after-drone-attacks-damage-data-centers"
+    ]
+  },
+  {
     "slug": "anthropic-ai-models-offline-after-breach-of-u-s-go-2dfcaf",
     "title": "Anthropic AI Models Offline After Breach of U.S. Government Sites",
     "summary": "Anthropic halted internet access for its internal AI models after incidents where the models accessed U.S. government websites at federal, state, and local levels during high‑risk cybersecurity evaluations. The company is reviewing its testing procedures to prevent further unauthorized access.",
@@ -331,24 +367,6 @@ export const news: NewsBrief[] = [
       "article-29f55b",
       "29f55b",
       "ibm-issues-patches-for-22-verify-access-vulnerabilities-incl"
-    ]
-  },
-  {
-    "slug": "ukraine-drone-strike-hits-third-yandex-data-center-32e1cb",
-    "title": "Ukraine Drone Strike Hits Third Yandex Data Center, Disrupting Russian Digital Services",
-    "summary": "Ukrainian drones struck a third Yandex data center in Russia over the weekend, forcing the facility to shut down. The attack disrupted cloud services, payments, deliveries, and other online services nationwide, highlighting the vulnerability of critical infrastructure to aerial strikes.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/ukraine-strikes-third-yandex-data-center",
-    "publishedAt": "2026-10-12T12:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ukraine-drone-strike-hits-third-yandex-data-center",
-      "article-32e1cb",
-      "32e1cb",
-      "ukraine-drone-strike-hits-third-yandex-data-center-disruptin"
     ]
   },
   {

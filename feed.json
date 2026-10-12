@@ -1,5 +1,36 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/norway-fines-microsoft-ad-firm-96-million-over-grindr-data-sharing/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/norway-fines-microsoft-ad-firm-96-million-over-grindr-data-sharing/",
+    "title": "Norway Fines Microsoft‑Owned Ad Firm for Unlawful Grindr Data Sharing",
+    "headline": "Norway Fines Microsoft‑Owned Ad Firm for Unlawful Grindr Data Sharing",
+    "summary": "Norway’s Data Protection Authority fined Xandr, a Microsoft‑owned advertising company, 92 million NOK ($9.6 million) for unlawfully processing and sharing sensitive Grindr user data. The fine follows investigations into the company’s data handling practices.",
+    "category": "BREACH",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-12T20:13:52.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/norway-fines-microsoft-ad-firm-96-million-over-grindr-data-sharing/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/yandex-confirms-service-outage-as-users-lose-access-to-cloud-files/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/yandex-confirms-service-outage-as-users-lose-access-to-cloud-files/",
+    "title": "Yandex Cloud Outage After Drone Attacks Damage Data Centers",
+    "headline": "Yandex Cloud Outage After Drone Attacks Damage Data Centers",
+    "summary": "Yandex announced that drone attacks damaged three of its data centers, forcing the shutdown of two facilities and partial disablement of a third. The outage has disrupted access to cloud files for users across the service.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-12T19:23:01.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/yandex-confirms-service-outage-as-users-lose-access-to-cloud-files/",
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/ukraine-strikes-third-yandex-data-center"
+      }
+    ]
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/anthropic-takes-risky-ai-tests-offline-after-models-breach-govt-sites/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/anthropic-takes-risky-ai-tests-offline-after-models-breach-govt-sites/",
     "title": "Anthropic AI Models Offline After Breach of U.S. Government Sites",
@@ -286,19 +317,6 @@
     "source": "Cyber Security News",
     "publishedAt": "2026-10-12T12:07:34.000Z",
     "url": "https://cybersecuritynews.com/ibm-patches-22-verify-access-flaw/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/ukraine-strikes-third-yandex-data-center",
-    "sourceUrl": "https://therecord.media/ukraine-strikes-third-yandex-data-center",
-    "title": "Ukraine Drone Strike Hits Third Yandex Data Center, Disrupting Russian Digital Services",
-    "headline": "Ukraine Drone Strike Hits Third Yandex Data Center, Disrupting Russian Digital Services",
-    "summary": "Ukrainian drones struck a third Yandex data center in Russia over the weekend, forcing the facility to shut down. The attack disrupted cloud services, payments, deliveries, and other online services nationwide, highlighting the vulnerability of critical infrastructure to aerial strikes.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "publishedAt": "2026-10-12T12:00:00.000Z",
-    "url": "https://therecord.media/ukraine-strikes-third-yandex-data-center",
     "additionalSources": []
   },
   {

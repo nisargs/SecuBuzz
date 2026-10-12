@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Oct 2026 19:07:44 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 20:17:46 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Norway Fines Microsoft‑Owned Ad Firm for Unlawful Grindr Data Sharing</title>
+      <link>https://secubuzz.com/news/norway-fines-microsoft-owned-ad-firm-for-unlawful-7cd6a9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/norway-fines-microsoft-owned-ad-firm-for-unlawful-7cd6a9</guid>
+      <description><![CDATA[Norway’s Data Protection Authority fined Xandr, a Microsoft‑owned advertising company, 92 million NOK ($9.6 million) for unlawfully processing and sharing sensitive Grindr user data. The fine follows investigations into the company’s data handling practices.]]></description>
+      <pubDate>Mon, 12 Oct 2026 20:13:52 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/norway-fines-microsoft-ad-firm-96-million-over-grindr-data-sharing/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Yandex Cloud Outage After Drone Attacks Damage Data Centers</title>
+      <link>https://secubuzz.com/news/yandex-cloud-outage-after-drone-attacks-damage-dat-7de647</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/yandex-cloud-outage-after-drone-attacks-damage-dat-7de647</guid>
+      <description><![CDATA[Yandex announced that drone attacks damaged three of its data centers, forcing the shutdown of two facilities and partial disablement of a third. The outage has disrupted access to cloud files for users across the service.]]></description>
+      <pubDate>Mon, 12 Oct 2026 19:23:01 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/yandex-confirms-service-outage-as-users-lose-access-to-cloud-files/">BleepingComputer</source>
+      <category>Cloud</category>
+    </item>
     <item>
       <title>Anthropic AI Models Offline After Breach of U.S. Government Sites</title>
       <link>https://secubuzz.com/news/anthropic-ai-models-offline-after-breach-of-u-s-go-2dfcaf</link>
@@ -168,15 +186,6 @@
       <pubDate>Mon, 12 Oct 2026 12:07:34 GMT</pubDate>
       <source url="https://cybersecuritynews.com/ibm-patches-22-verify-access-flaw/">Cyber Security News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Ukraine Drone Strike Hits Third Yandex Data Center, Disrupting Russian Digital Services</title>
-      <link>https://secubuzz.com/news/ukraine-drone-strike-hits-third-yandex-data-center-32e1cb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ukraine-drone-strike-hits-third-yandex-data-center-32e1cb</guid>
-      <description><![CDATA[Ukrainian drones struck a third Yandex data center in Russia over the weekend, forcing the facility to shut down. The attack disrupted cloud services, payments, deliveries, and other online services nationwide, highlighting the vulnerability of critical infrastructure to aerial strikes.]]></description>
-      <pubDate>Mon, 12 Oct 2026 12:00:00 GMT</pubDate>
-      <source url="https://therecord.media/ukraine-strikes-third-yandex-data-center">The Record</source>
-      <category>Breach</category>
     </item>
     <item>
       <title>Canonical’s Websites Hit by Second DDoS Attack of 2026</title>
@@ -447,15 +456,6 @@
       <pubDate>Sat, 10 Oct 2026 11:00:00 GMT</pubDate>
       <source url="https://www.securityweek.com/insider-cyber-extortion-plot-against-industrial-firm-lands-engineer-in-prison/">SecurityWeek</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Why TLP Should Not Replace Your Internal Information Classification</title>
-      <link>https://secubuzz.com/news/why-tlp-should-not-replace-your-internal-informati-57dd7d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/why-tlp-should-not-replace-your-internal-informati-57dd7d</guid>
-      <description><![CDATA[The Traffic Light Protocol (TLP) is a standard for communicating information sharing limits, but it should not replace internal classification systems. Organizations should maintain their own classification frameworks alongside TLP to ensure appropriate handling of sensitive data.]]></description>
-      <pubDate>Sat, 10 Oct 2026 09:11:34 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33414">SANS Internet Storm Center</source>
-      <category>Policy</category>
     </item>
   </channel>
 </rss>
