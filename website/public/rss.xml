@@ -5,24 +5,60 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Oct 2026 20:20:18 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 21:30:43 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Microsoft October 2026 Patch Tuesday fixes 1,411 flaws, 3 zero-days</title>
-      <link>https://secubuzz.com/news/microsoft-october-2026-patch-tuesday-fixes-1-411-f-2c3008</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-october-2026-patch-tuesday-fixes-1-411-f-2c3008</guid>
-      <description><![CDATA[Microsoft’s October 2026 Patch Tuesday addressed 1,411 security flaws, including one actively exploited vulnerability and two publicly disclosed zero-days. The update covers a wide range of Windows components, providing critical patches to prevent exploitation of known weaknesses and improve overall system security.]]></description>
-      <pubDate>Tue, 13 Oct 2026 19:56:09 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/">BleepingComputer</source>
+      <title>Anthropic warns small AI models could self‑replicate across consumer IoT devices</title>
+      <link>https://secubuzz.com/news/anthropic-warns-small-ai-models-could-self-replica-11c42b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-warns-small-ai-models-could-self-replica-11c42b</guid>
+      <description><![CDATA[Anthropic cautions that lightweight AI models may soon be able to self‑replicate across consumer IoT devices such as Android TV boxes and smart ovens, forming distributed botnets that can run AI workloads without data centers. The potential spread could enable large‑scale botnet operations on home devices.]]></description>
+      <pubDate>Tue, 13 Oct 2026 21:16:34 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/anthropic-warns-self-replicating-ai-could-spread-to-your-smart-devices/">BleepingComputer</source>
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>Microsoft Ends Support for Windows 11 24H2 Home and Pro</title>
-      <link>https://secubuzz.com/news/microsoft-ends-support-for-windows-11-24h2-home-an-1f1acc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-ends-support-for-windows-11-24h2-home-an-1f1acc</guid>
-      <description><![CDATA[Microsoft announced that Windows 11 24H2 Home and Pro editions have reached end of support, meaning no further security or non‑security preview updates will be delivered. Users must upgrade to newer releases to maintain protection and receive future updates.]]></description>
-      <pubDate>Tue, 13 Oct 2026 19:04:38 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-11-24h2-home-and-pro-reached-end-of-support/">BleepingComputer</source>
+      <title>DOJ arrests two in laptop farms funneling $3M to North Korea</title>
+      <link>https://secubuzz.com/news/doj-arrests-two-in-laptop-farms-funneling-3m-to-no-6b1c9f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/doj-arrests-two-in-laptop-farms-funneling-3m-to-no-6b1c9f</guid>
+      <description><![CDATA[The U.S. Department of Justice seized laptop farms in Texas that were used to run remote worker scams, generating $3 million in revenue for the North Korean regime. Two individuals were arrested as part of the operation, disrupting a key financial channel for the state-sponsored actor.]]></description>
+      <pubDate>Tue, 13 Oct 2026 20:55:00 GMT</pubDate>
+      <source url="https://therecord.media/north-korea-laptop-farms-worker-scams-doj-raids-texas">The Record</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Microsoft Patch Tuesday Reveals Multiple Vulnerabilities</title>
+      <link>https://secubuzz.com/news/microsoft-patch-tuesday-reveals-multiple-vulnerabi-5052af</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-patch-tuesday-reveals-multiple-vulnerabi-5052af</guid>
+      <description><![CDATA[Microsoft’s October 2026 Patch Tuesday disclosed several vulnerabilities, with Cisco Talos providing Snort rules to detect related threats. The blog outlines the affected software and recommends applying the latest patches to mitigate potential exploitation. No specific CVE IDs are highlighted in the post.]]></description>
+      <pubDate>Tue, 13 Oct 2026 20:37:58 GMT</pubDate>
+      <source url="https://blog.talosintelligence.com/microsoft-patch-tuesday-for-october-2026/">Cisco Talos</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Anthropic Research Highlights AI Worm Threats</title>
+      <link>https://secubuzz.com/news/anthropic-research-highlights-ai-worm-threats-28487d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-research-highlights-ai-worm-threats-28487d</guid>
+      <description><![CDATA[Anthropic’s study combined IoT and network tests to examine AI self‑replication, suggesting future AI worms could be difficult to stop. The research outlines potential attack vectors and emphasizes the need for proactive defenses against emerging AI‑driven malware.]]></description>
+      <pubDate>Tue, 13 Oct 2026 20:35:23 GMT</pubDate>
+      <source url="https://www.darkreading.com/perimeter/anthropic-ingredients-future-ai-worms">Dark Reading</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>FTC Accuses Ohio Company of Fraudulent Sextortion Scam</title>
+      <link>https://secubuzz.com/news/ftc-accuses-ohio-company-of-fraudulent-sextortion-8fcd08</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ftc-accuses-ohio-company-of-fraudulent-sextortion-8fcd08</guid>
+      <description><![CDATA[The FTC alleges an Ohio-based firm charged victims thousands of dollars for sextortion help it never delivered. The company’s operation was deemed fraudulent, and the complaint highlights deceptive practices targeting individuals seeking protection from sextortion threats.]]></description>
+      <pubDate>Tue, 13 Oct 2026 20:12:00 GMT</pubDate>
+      <source url="https://therecord.media/sextortion-assistance-company-alleged-fraud-ftc-complaint">The Record</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Microsoft Issues Windows 10 KB5126657 Extended Security Update</title>
+      <link>https://secubuzz.com/news/microsoft-issues-windows-10-kb5126657-extended-sec-578b79</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-issues-windows-10-kb5126657-extended-sec-578b79</guid>
+      <description><![CDATA[Microsoft released the KB5126657 extended security update for Windows 10, part of this month’s record‑breaking Patch Tuesday. The update includes security fixes and minor bug corrections, ensuring continued protection for Windows 10 users.]]></description>
+      <pubDate>Tue, 13 Oct 2026 19:47:30 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5126657-extended-security-update/">BleepingComputer</source>
       <category>Policy</category>
     </item>
     <item>
@@ -32,15 +68,6 @@
       <description><![CDATA[CVE-2026-104935 allows unauthenticated remote code execution on Ivanti Connect Secure, granting attackers root privileges. The flaw can be leveraged to bypass existing patches and compromise VPN infrastructure. Immediate patching and monitoring are required to mitigate potential exploitation.]]></description>
       <pubDate>Tue, 13 Oct 2026 18:43:43 GMT</pubDate>
       <source url="https://www.securityweek.com/ivanti-zero-day-chain-gave-attackers-root-access-to-fully-patched-vpn/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Anthropic Warns Small AI Models Could Spawn Self-Propagating IoT Botnets</title>
-      <link>https://secubuzz.com/news/anthropic-warns-small-ai-models-could-spawn-self-p-212322</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-warns-small-ai-models-could-spawn-self-p-212322</guid>
-      <description><![CDATA[Anthropic cautions that small AI models may soon gain the ability to self-replicate on IoT devices such as smart ovens and Android TV boxes, forming autonomous worm botnets that are difficult to shut down due to lack of a central control point.]]></description>
-      <pubDate>Tue, 13 Oct 2026 18:20:57 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/anthropic-warns-small-ai-models-could.html">The Hacker News</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -429,33 +456,6 @@
       <pubDate>Tue, 13 Oct 2026 04:30:02 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/13/cloud-security-findings-severity-ai-agent/">Help Net Security</source>
       <category>Cloud</category>
-    </item>
-    <item>
-      <title>Canonical Suffers Four‑Hour DDoS Disruption of Ubuntu Websites and Security APIs</title>
-      <link>https://secubuzz.com/news/canonical-suffers-four-hour-ddos-disruption-of-ubu-4db69d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/canonical-suffers-four-hour-ddos-disruption-of-ubu-4db69d</guid>
-      <description><![CDATA[Canonical experienced a sustained distributed denial‑of‑service attack on October 8, 2026, taking down its main websites and security information services for over four hours. This incident marks the company’s second major DDoS event this year, following a broader outage in April.]]></description>
-      <pubDate>Tue, 13 Oct 2026 04:09:05 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/ubuntu-websites-ddos-attack/">Cyber Security News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>SonicWall SMA 1000 Devices Targeted for SSRF Exploit</title>
-      <link>https://secubuzz.com/news/sonicwall-sma-1000-devices-targeted-for-ssrf-explo-7aa16c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sonicwall-sma-1000-devices-targeted-for-ssrf-explo-7aa16c</guid>
-      <description><![CDATA[Attackers are exploiting a severe Server Side Request Forgery flaw in SonicWall SMA 1000 appliances, allowing them to access internal networks and potentially exfiltrate data. The vulnerability is actively being targeted, forcing customers to apply urgent firmware updates and network segmentation to mitigate the risk.]]></description>
-      <pubDate>Mon, 12 Oct 2026 21:42:42 GMT</pubDate>
-      <source url="https://www.darkreading.com/vulnerabilities-threats/max-severity-ssrf-flaw-sonicwall-sma-devices-under-attack">Dark Reading</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Ransomware Negotiator Arrested on Extortion Charges</title>
-      <link>https://secubuzz.com/news/ransomware-negotiator-arrested-on-extortion-charge-5661e6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ransomware-negotiator-arrested-on-extortion-charge-5661e6</guid>
-      <description><![CDATA[Edward Dubrovsky, a former cybersecurity executive and known ransomware negotiator, was arrested in Pennsylvania on conspiracy to extort money. The charges stem from his alleged role in facilitating ransom payments for cybercriminal groups, highlighting law enforcement efforts against ransomware operations.]]></description>
-      <pubDate>Mon, 12 Oct 2026 20:00:53 GMT</pubDate>
-      <source url="https://www.darkreading.com/insider-threats/prominent-ransomware-negotiator-extortion-charges">Dark Reading</source>
-      <category>Ransomware</category>
     </item>
   </channel>
 </rss>

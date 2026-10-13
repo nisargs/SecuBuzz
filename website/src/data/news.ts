@@ -11,39 +11,110 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
-    "slug": "microsoft-october-2026-patch-tuesday-fixes-1-411-f-2c3008",
-    "title": "Microsoft October 2026 Patch Tuesday fixes 1,411 flaws, 3 zero-days",
-    "summary": "Microsoft’s October 2026 Patch Tuesday addressed 1,411 security flaws, including one actively exploited vulnerability and two publicly disclosed zero-days. The update covers a wide range of Windows components, providing critical patches to prevent exploitation of known weaknesses and improve overall system security.",
+    "slug": "anthropic-warns-small-ai-models-could-self-replica-11c42b",
+    "title": "Anthropic warns small AI models could self‑replicate across consumer IoT devices",
+    "summary": "Anthropic cautions that lightweight AI models may soon be able to self‑replicate across consumer IoT devices such as Android TV boxes and smart ovens, forming distributed botnets that can run AI workloads without data centers. The potential spread could enable large‑scale botnet operations on home devices.",
     "category": "Vulnerability",
-    "severity": "HIGH",
+    "severity": "MEDIUM",
     "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/",
-    "publishedAt": "2026-10-13T19:56:09.000Z",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/anthropic-warns-self-replicating-ai-could-spread-to-your-smart-devices/",
+    "publishedAt": "2026-10-13T21:16:34.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "microsoft-october-2026-patch-tuesday-fixes-1-411-f",
-      "article-2c3008",
-      "2c3008",
-      "microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zer"
+      "anthropic-warns-small-ai-models-could-self-replica",
+      "article-11c42b",
+      "11c42b",
+      "anthropic-warns-small-ai-models-could-self-replicate-across-"
     ]
   },
   {
-    "slug": "microsoft-ends-support-for-windows-11-24h2-home-an-1f1acc",
-    "title": "Microsoft Ends Support for Windows 11 24H2 Home and Pro",
-    "summary": "Microsoft announced that Windows 11 24H2 Home and Pro editions have reached end of support, meaning no further security or non‑security preview updates will be delivered. Users must upgrade to newer releases to maintain protection and receive future updates.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-11-24h2-home-and-pro-reached-end-of-support/",
-    "publishedAt": "2026-10-13T19:04:38.000Z",
+    "slug": "doj-arrests-two-in-laptop-farms-funneling-3m-to-no-6b1c9f",
+    "title": "DOJ arrests two in laptop farms funneling $3M to North Korea",
+    "summary": "The U.S. Department of Justice seized laptop farms in Texas that were used to run remote worker scams, generating $3 million in revenue for the North Korean regime. Two individuals were arrested as part of the operation, disrupting a key financial channel for the state-sponsored actor.",
+    "category": "Malware",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/north-korea-laptop-farms-worker-scams-doj-raids-texas",
+    "publishedAt": "2026-10-13T20:55:00.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "microsoft-ends-support-for-windows-11-24h2-home-an",
-      "article-1f1acc",
-      "1f1acc",
-      "microsoft-ends-support-for-windows-11-24h2-home-and-pro"
+      "doj-arrests-two-in-laptop-farms-funneling-3m-to-no",
+      "article-6b1c9f",
+      "6b1c9f",
+      "doj-arrests-two-in-laptop-farms-funneling-3m-to-north-korea"
+    ]
+  },
+  {
+    "slug": "microsoft-patch-tuesday-reveals-multiple-vulnerabi-5052af",
+    "title": "Microsoft Patch Tuesday Reveals Multiple Vulnerabilities",
+    "summary": "Microsoft’s October 2026 Patch Tuesday disclosed several vulnerabilities, with Cisco Talos providing Snort rules to detect related threats. The blog outlines the affected software and recommends applying the latest patches to mitigate potential exploitation. No specific CVE IDs are highlighted in the post.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cisco Talos",
+    "sourceUrl": "https://blog.talosintelligence.com/microsoft-patch-tuesday-for-october-2026/",
+    "publishedAt": "2026-10-13T20:37:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-patch-tuesday-reveals-multiple-vulnerabi",
+      "article-5052af",
+      "5052af",
+      "microsoft-patch-tuesday-reveals-multiple-vulnerabilities"
+    ]
+  },
+  {
+    "slug": "anthropic-research-highlights-ai-worm-threats-28487d",
+    "title": "Anthropic Research Highlights AI Worm Threats",
+    "summary": "Anthropic’s study combined IoT and network tests to examine AI self‑replication, suggesting future AI worms could be difficult to stop. The research outlines potential attack vectors and emphasizes the need for proactive defenses against emerging AI‑driven malware.",
+    "category": "Malware",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/perimeter/anthropic-ingredients-future-ai-worms",
+    "publishedAt": "2026-10-13T20:35:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "anthropic-research-highlights-ai-worm-threats",
+      "article-28487d",
+      "28487d"
+    ]
+  },
+  {
+    "slug": "ftc-accuses-ohio-company-of-fraudulent-sextortion-8fcd08",
+    "title": "FTC Accuses Ohio Company of Fraudulent Sextortion Scam",
+    "summary": "The FTC alleges an Ohio-based firm charged victims thousands of dollars for sextortion help it never delivered. The company’s operation was deemed fraudulent, and the complaint highlights deceptive practices targeting individuals seeking protection from sextortion threats.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/sextortion-assistance-company-alleged-fraud-ftc-complaint",
+    "publishedAt": "2026-10-13T20:12:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ftc-accuses-ohio-company-of-fraudulent-sextortion",
+      "article-8fcd08",
+      "8fcd08",
+      "ftc-accuses-ohio-company-of-fraudulent-sextortion-scam"
+    ]
+  },
+  {
+    "slug": "microsoft-issues-windows-10-kb5126657-extended-sec-578b79",
+    "title": "Microsoft Issues Windows 10 KB5126657 Extended Security Update",
+    "summary": "Microsoft released the KB5126657 extended security update for Windows 10, part of this month’s record‑breaking Patch Tuesday. The update includes security fixes and minor bug corrections, ensuring continued protection for Windows 10 users.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5126657-extended-security-update/",
+    "publishedAt": "2026-10-13T19:47:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-issues-windows-10-kb5126657-extended-sec",
+      "article-578b79",
+      "578b79",
+      "microsoft-issues-windows-10-kb5126657-extended-security-upda"
     ]
   },
   {
@@ -64,24 +135,6 @@ export const news: NewsBrief[] = [
       "article-1d4cf1",
       "1d4cf1",
       "ivanti-zero-day-exploit-enables-root-access-on-patched-vpn"
-    ]
-  },
-  {
-    "slug": "anthropic-warns-small-ai-models-could-spawn-self-p-212322",
-    "title": "Anthropic Warns Small AI Models Could Spawn Self-Propagating IoT Botnets",
-    "summary": "Anthropic cautions that small AI models may soon gain the ability to self-replicate on IoT devices such as smart ovens and Android TV boxes, forming autonomous worm botnets that are difficult to shut down due to lack of a central control point.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/anthropic-warns-small-ai-models-could.html",
-    "publishedAt": "2026-10-13T18:20:57.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "anthropic-warns-small-ai-models-could-spawn-self-p",
-      "article-212322",
-      "212322",
-      "anthropic-warns-small-ai-models-could-spawn-self-propagating"
     ]
   },
   {
@@ -2239,24 +2292,6 @@ export const news: NewsBrief[] = [
       "article-49f221",
       "49f221",
       "crypto-thief-sentenced-for-260-000-sim-swapping-scam"
-    ]
-  },
-  {
-    "slug": "cisco-releases-patches-for-twelve-critical-vulnera-a636f9",
-    "title": "Cisco Releases Patches for Twelve Critical Vulnerabilities",
-    "summary": "Cisco has released patches for twelve critical vulnerabilities that could enable unauthorized access, information leaks, privilege escalation, denial‑of‑service, and remote code execution. The fixes address defects in Cisco software, preventing attackers from exploiting these weaknesses. Users should apply the updates immediately to mitigate potential security risks.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/cisco-patches-a-dozen-critical-vulnerabilities/",
-    "publishedAt": "2026-10-08T15:28:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisco-releases-patches-for-twelve-critical-vulnera",
-      "article-a636f9",
-      "a636f9",
-      "cisco-releases-patches-for-twelve-critical-vulnerabilities"
     ]
   },
   {
