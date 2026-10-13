@@ -101,7 +101,8 @@ export const termsSections: LegalSection[] = [
     id: 'service',
     heading: 'The Service',
     body: [
-      'SecuBuzz provides factual, 60-word summaries of public cybersecurity disclosures and CISA Known Exploited Vulnerabilities catalog updates. SecuBuzz is developed and operated by MiSo Labs. SecuBuzz and MiSo Labs are independent of and not affiliated with, sponsored by, or endorsed by CISA, the Department of Homeland Security, or external news publishers.'
+      'SecuBuzz provides factual, 60-word summaries of public cybersecurity disclosures and CISA Known Exploited Vulnerabilities catalog updates. SecuBuzz is developed and operated by MiSo Labs. SecuBuzz and MiSo Labs are independent of and not affiliated with, sponsored by, or endorsed by CISA, the Department of Homeland Security, or external news publishers.',
+      'A complete directory of all 27 active cybersecurity publications, government CERT advisories, and threat research labs monitored by SecuBuzz is published transparently on our Publishers & Sources page (secubuzz.com/publishers).'
     ]
   },
   {

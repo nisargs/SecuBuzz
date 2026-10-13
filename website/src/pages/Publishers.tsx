@@ -1,7 +1,7 @@
 import React from 'react';
 import { PageIntro } from '../components/PageIntro';
 import { PublisherForm } from '../components/PublisherForm';
-import { publisherStats, publisherSteps } from '../data/site';
+import { publisherStats, publisherSteps, curatedSources } from '../data/site';
 import { Seo } from '../components/Seo';
 
 export function Publishers() {
@@ -71,6 +71,70 @@ export function Publishers() {
           <PublisherForm />
         </div>
       </section>
-    </>);
 
+      {/* Active Monitored Sources Directory */}
+      <section className="border-t border-line bg-surface/30 py-20">
+        <div className="mx-auto max-w-site px-5 md:px-8">
+          <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+            <div className="max-w-2xl">
+              <p className="font-mono text-xs uppercase tracking-wider text-accent">Active Threat Radar Index</p>
+              <h2 className="mt-2 text-2xl font-semibold tracking-tight text-ink md:text-3xl">
+                Monitored Sources &amp; Intelligence Feeds
+              </h2>
+              <p className="mt-3 text-[15px] leading-relaxed text-muted">
+                SecuBuzz continuously ingests and monitors 27 verified tier-1 cybersecurity newsrooms, government CERT bulletins, and enterprise threat intelligence labs. Every brief provides direct, transparent outbound attribution to the original author and reporting outlet.
+              </p>
+            </div>
+            <div className="shrink-0 font-mono text-xs text-muted">
+              <span className="font-medium text-ink">{curatedSources.length}</span> verified feeds active
+            </div>
+          </div>
+
+          <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {curatedSources.map((source) => (
+              <a
+                key={source.name}
+                href={source.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative flex flex-col justify-between rounded-sm border border-line bg-bg p-5 transition-colors duration-150 ease-out hover:border-accent hover:bg-surface/50"
+              >
+                <div>
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="font-mono text-[11px] uppercase tracking-wider text-accent">
+                      {source.category}
+                    </span>
+                    <span className="text-subtle transition-transform duration-150 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-ink">
+                      ↗
+                    </span>
+                  </div>
+                  <h3 className="mt-2 text-base font-medium text-ink group-hover:text-accent">
+                    {source.name}
+                  </h3>
+                  <p className="mt-2 text-xs leading-relaxed text-muted">
+                    {source.description}
+                  </p>
+                </div>
+                <div className="mt-4 border-t border-line/60 pt-3">
+                  <span className="font-mono text-[11px] text-subtle group-hover:text-muted">
+                    {source.url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')}
+                  </span>
+                </div>
+              </a>
+            ))}
+          </div>
+
+          <div className="mt-12 rounded-sm border border-line/80 bg-surface/50 p-6 text-sm text-muted">
+            <h3 className="font-medium text-ink">Editorial &amp; Syndication Notice</h3>
+            <p className="mt-2 leading-relaxed">
+              SecuBuzz acts strictly as a discovery and triage index. All trademarks, publication names, and logos belong to their respective copyright holders. Briefs are independent 60-word distillations pointing readers directly to original reporting. To request updates, custom feed ingest parameters, or removal, email{' '}
+              <a href="mailto:publishers@secubuzz.com" className="font-mono text-ink underline hover:text-accent">
+                publishers@secubuzz.com
+              </a>.
+            </p>
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }
