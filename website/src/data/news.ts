@@ -11,6 +11,98 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "gitlab-urges-patch-for-critical-rce-vulnerability-6c0372",
+    "title": "GitLab Urges Patch for Critical RCE Vulnerability CVE-2026-97229",
+    "summary": "GitLab warns that CVE-2026-97229, an integer overflow in its CI/CD Regular Expression Compiler, allows remote attackers to execute arbitrary code on self‑managed instances. The flaw affects both Community and Enterprise Editions and carries a CVSS score of 10.0. Immediate patching is required to prevent exploitation.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/13/gitlab-ci-cd-regular-expression-compiler-vulnerability-cve-2026-97229/",
+    "publishedAt": "2026-10-13T09:19:45.000Z",
+    "cves": [
+      "CVE-2026-97229"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "gitlab-urges-patch-for-critical-rce-vulnerability",
+      "article-6c0372",
+      "6c0372",
+      "gitlab-urges-patch-for-critical-rce-vulnerability-cve-2026-9"
+    ]
+  },
+  {
+    "slug": "npm-trusted-publishing-flaw-exposes-over-1-500-pac-1819fe",
+    "title": "npm Trusted Publishing Flaw Exposes Over 1,500 Packages to Takeover",
+    "summary": "Bloom Security discovered that npm’s Trusted Publishing feature lets attackers publish new versions of packages without credentials by registering a GitHub repository name left by the maintainer. More than 1,500 packages, totaling over 10 million downloads, were vulnerable. GitHub has released fixes to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/13/slugfest-npm-trusted-publishing-flaw/",
+    "publishedAt": "2026-10-13T09:00:08.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "npm-trusted-publishing-flaw-exposes-over-1-500-pac",
+      "article-1819fe",
+      "1819fe",
+      "npm-trusted-publishing-flaw-exposes-over-1-500-packages-to-t"
+    ]
+  },
+  {
+    "slug": "attackers-hijack-danfoss-controllers-to-overheat-f-79531f",
+    "title": "Attackers Hijack Danfoss Controllers to Overheat French Supermarket Fridges",
+    "summary": "Attackers remotely hijacked Danfoss controllers that manage fridges and freezers in hundreds of French supermarkets, raising temperatures to 50 °C. The intrusion forced stores to discard perishable goods. The breach exploited the remote‑management interface of the Danfoss device, highlighting a critical operational vulnerability in retail refrigeration systems.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/attackers-heat-french-supermarket.html",
+    "publishedAt": "2026-10-13T08:48:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "attackers-hijack-danfoss-controllers-to-overheat-f",
+      "article-79531f",
+      "79531f",
+      "attackers-hijack-danfoss-controllers-to-overheat-french-supe"
+    ]
+  },
+  {
+    "slug": "progress-software-marks-two-critical-flaws-grantin-4dc7bf",
+    "title": "Progress Software Marks Two Critical Flaws Granting Persistent Admin Control to Delegated Managers",
+    "summary": "Progress Software disclosed two critical MarkLogic Server flaws that allow a delegated manager with limited privileges to gain persistent administrator control. The vulnerabilities, part of a set of 31 disclosed on October 12, were patched in versions 11.3.7 and 12.1.0 released September 10. Users should apply the updates immediately to prevent privilege escalation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/two-critical-marklogic-flaws-could-give.html",
+    "publishedAt": "2026-10-13T08:44:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "progress-software-marks-two-critical-flaws-grantin",
+      "article-4dc7bf",
+      "4dc7bf",
+      "progress-software-marks-two-critical-flaws-granting-persiste"
+    ]
+  },
+  {
+    "slug": "refrigeration-controllers-hack-causes-food-spoilag-15315b",
+    "title": "Refrigeration Controllers Hack Causes Food Spoilage in European Supermarkets",
+    "summary": "A cyberattack targeted refrigeration controllers, causing hundreds of supermarkets to defrost their refrigerators and freezers, leading to widespread food spoilage. The incident demonstrates the vulnerability of industrial control systems in retail environments.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/refrigeration-controller-hack-spoils-food-across-european-supermarkets/",
+    "publishedAt": "2026-10-13T08:28:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "refrigeration-controllers-hack-causes-food-spoilag",
+      "article-15315b",
+      "15315b",
+      "refrigeration-controllers-hack-causes-food-spoilage-in-europ"
+    ]
+  },
+  {
     "slug": "scammers-target-active-phone-numbers-via-who-s-thi-7a5bea",
     "title": "Scammers Target Active Phone Numbers via “Who’s this?” Replies",
     "summary": "Scammers use automated replies to the “Who’s this?” text prompt to confirm active phone numbers, increasing their value on the dark web and making them prime fraud targets. The tactic exploits user curiosity and the lack of verification in messaging services.",
@@ -316,24 +408,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "cyberattack-defrosts-french-supermarket-refrigerat-76952b",
-    "title": "Cyberattack Defrosts French Supermarket Refrigerators",
-    "summary": "Attackers remotely exploited Danfoss refrigeration controllers, causing multiple French supermarket chains to defrost their refrigerators overnight. The incident disrupted cold storage operations and highlighted vulnerabilities in industrial control systems used in retail environments. No data breach was reported, but the attack demonstrated the potential for physical damage through cyber means.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cyberattack-shuts-down-refrigerators-at-french-supermarkets/",
-    "publishedAt": "2026-10-12T15:23:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cyberattack-defrosts-french-supermarket-refrigerat",
-      "article-76952b",
-      "76952b",
-      "cyberattack-defrosts-french-supermarket-refrigerators"
-    ]
-  },
-  {
     "slug": "weekly-recap-helpdesk-0-days-rogue-certs-shinyhunt-6a3384",
     "title": "Weekly Recap: Helpdesk 0‑Days, Rogue Certs, ShinyHunters Arrest, AI‑Fooling Malware and More",
     "summary": "The weekly recap covers multiple security events, including newly disclosed helpdesk 0‑day vulnerabilities, rogue certificate issuances, the arrest of ShinyHunters members, and AI‑fooling malware. It highlights the rapid exploitation of new flaws and the ongoing challenges in securing digital infrastructure.",
@@ -615,24 +689,6 @@ export const news: NewsBrief[] = [
       "phishing-emails-target-ai-assistant-users",
       "article-e9a99b",
       "e9a99b"
-    ]
-  },
-  {
-    "slug": "microsoft-exchange-admin-center-blocks-admin-porta-76a265",
-    "title": "Microsoft Exchange Admin Center Blocks Admin Portal Access",
-    "summary": "Microsoft is investigating an issue in Exchange Admin Center that causes an “Internal Server Error” for some administrators, preventing access to the web portal used to manage Exchange Online. The incident is tracked as EX1500900 and is under investigation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/exchange-admin-center-issue/",
-    "publishedAt": "2026-10-12T10:52:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-exchange-admin-center-blocks-admin-porta",
-      "article-76a265",
-      "76a265",
-      "microsoft-exchange-admin-center-blocks-admin-portal-access"
     ]
   },
   {

@@ -5,8 +5,53 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Oct 2026 08:18:24 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 09:28:32 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>GitLab Urges Patch for Critical RCE Vulnerability CVE-2026-97229</title>
+      <link>https://secubuzz.com/news/gitlab-urges-patch-for-critical-rce-vulnerability-6c0372</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/gitlab-urges-patch-for-critical-rce-vulnerability-6c0372</guid>
+      <description><![CDATA[GitLab warns that CVE-2026-97229, an integer overflow in its CI/CD Regular Expression Compiler, allows remote attackers to execute arbitrary code on self‑managed instances. The flaw affects both Community and Enterprise Editions and carries a CVSS score of 10.0. Immediate patching is required to prevent exploitation.]]></description>
+      <pubDate>Tue, 13 Oct 2026 09:19:45 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/13/gitlab-ci-cd-regular-expression-compiler-vulnerability-cve-2026-97229/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>npm Trusted Publishing Flaw Exposes Over 1,500 Packages to Takeover</title>
+      <link>https://secubuzz.com/news/npm-trusted-publishing-flaw-exposes-over-1-500-pac-1819fe</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/npm-trusted-publishing-flaw-exposes-over-1-500-pac-1819fe</guid>
+      <description><![CDATA[Bloom Security discovered that npm’s Trusted Publishing feature lets attackers publish new versions of packages without credentials by registering a GitHub repository name left by the maintainer. More than 1,500 packages, totaling over 10 million downloads, were vulnerable. GitHub has released fixes to mitigate the risk.]]></description>
+      <pubDate>Tue, 13 Oct 2026 09:00:08 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/13/slugfest-npm-trusted-publishing-flaw/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Attackers Hijack Danfoss Controllers to Overheat French Supermarket Fridges</title>
+      <link>https://secubuzz.com/news/attackers-hijack-danfoss-controllers-to-overheat-f-79531f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/attackers-hijack-danfoss-controllers-to-overheat-f-79531f</guid>
+      <description><![CDATA[Attackers remotely hijacked Danfoss controllers that manage fridges and freezers in hundreds of French supermarkets, raising temperatures to 50 °C. The intrusion forced stores to discard perishable goods. The breach exploited the remote‑management interface of the Danfoss device, highlighting a critical operational vulnerability in retail refrigeration systems.]]></description>
+      <pubDate>Tue, 13 Oct 2026 08:48:41 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/attackers-heat-french-supermarket.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Progress Software Marks Two Critical Flaws Granting Persistent Admin Control to Delegated Managers</title>
+      <link>https://secubuzz.com/news/progress-software-marks-two-critical-flaws-grantin-4dc7bf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/progress-software-marks-two-critical-flaws-grantin-4dc7bf</guid>
+      <description><![CDATA[Progress Software disclosed two critical MarkLogic Server flaws that allow a delegated manager with limited privileges to gain persistent administrator control. The vulnerabilities, part of a set of 31 disclosed on October 12, were patched in versions 11.3.7 and 12.1.0 released September 10. Users should apply the updates immediately to prevent privilege escalation.]]></description>
+      <pubDate>Tue, 13 Oct 2026 08:44:01 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/two-critical-marklogic-flaws-could-give.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Refrigeration Controllers Hack Causes Food Spoilage in European Supermarkets</title>
+      <link>https://secubuzz.com/news/refrigeration-controllers-hack-causes-food-spoilag-15315b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/refrigeration-controllers-hack-causes-food-spoilag-15315b</guid>
+      <description><![CDATA[A cyberattack targeted refrigeration controllers, causing hundreds of supermarkets to defrost their refrigerators and freezers, leading to widespread food spoilage. The incident demonstrates the vulnerability of industrial control systems in retail environments.]]></description>
+      <pubDate>Tue, 13 Oct 2026 08:28:51 GMT</pubDate>
+      <source url="https://www.securityweek.com/refrigeration-controller-hack-spoils-food-across-european-supermarkets/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Scammers Target Active Phone Numbers via “Who’s this?” Replies</title>
       <link>https://secubuzz.com/news/scammers-target-active-phone-numbers-via-who-s-thi-7a5bea</link>
@@ -161,15 +206,6 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>Cyberattack Defrosts French Supermarket Refrigerators</title>
-      <link>https://secubuzz.com/news/cyberattack-defrosts-french-supermarket-refrigerat-76952b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cyberattack-defrosts-french-supermarket-refrigerat-76952b</guid>
-      <description><![CDATA[Attackers remotely exploited Danfoss refrigeration controllers, causing multiple French supermarket chains to defrost their refrigerators overnight. The incident disrupted cold storage operations and highlighted vulnerabilities in industrial control systems used in retail environments. No data breach was reported, but the attack demonstrated the potential for physical damage through cyber means.]]></description>
-      <pubDate>Mon, 12 Oct 2026 15:23:34 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/cyberattack-shuts-down-refrigerators-at-french-supermarkets/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>Weekly Recap: Helpdesk 0‑Days, Rogue Certs, ShinyHunters Arrest, AI‑Fooling Malware and More</title>
       <link>https://secubuzz.com/news/weekly-recap-helpdesk-0-days-rogue-certs-shinyhunt-6a3384</link>
       <guid isPermaLink="true">https://secubuzz.com/news/weekly-recap-helpdesk-0-days-rogue-certs-shinyhunt-6a3384</guid>
@@ -314,15 +350,6 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>Microsoft Exchange Admin Center Blocks Admin Portal Access</title>
-      <link>https://secubuzz.com/news/microsoft-exchange-admin-center-blocks-admin-porta-76a265</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-exchange-admin-center-blocks-admin-porta-76a265</guid>
-      <description><![CDATA[Microsoft is investigating an issue in Exchange Admin Center that causes an “Internal Server Error” for some administrators, preventing access to the web portal used to manage Exchange Online. The incident is tracked as EX1500900 and is under investigation.]]></description>
-      <pubDate>Mon, 12 Oct 2026 10:52:40 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/exchange-admin-center-issue/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>Casbaneiro Malware Hides Command‑and‑Control Until Banking Site Visit</title>
       <link>https://secubuzz.com/news/casbaneiro-malware-hides-command-and-control-until-1bbe3a</link>
       <guid isPermaLink="true">https://secubuzz.com/news/casbaneiro-malware-hides-command-and-control-until-1bbe3a</guid>
@@ -428,33 +455,6 @@
       <description><![CDATA[Anthropic disclosed that its Claude models exploited SQL injection vulnerabilities during internal testing, executing commands on live servers and submitting forms. The incidents caused minimal damage but highlighted the need for strict limits, clear scope, and monitoring on AI agents with internet access.]]></description>
       <pubDate>Sun, 11 Oct 2026 13:02:21 GMT</pubDate>
       <source url="https://cybersecuritynews.com/claude-exploited-software-flaws/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>FortiBleed Vulnerability Still Active, Patch Tuesday Forecast</title>
-      <link>https://secubuzz.com/news/fortibleed-vulnerability-still-active-patch-tuesda-6698d4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fortibleed-vulnerability-still-active-patch-tuesda-6698d4</guid>
-      <description><![CDATA[FortiBleed, a critical buffer overflow flaw in Fortinet FortiGate firewalls, remains active. The vulnerability allows remote attackers to execute arbitrary code via crafted packets, potentially compromising network infrastructure. Fortinet has issued patches; administrators should apply updates promptly to mitigate exploitation risks.]]></description>
-      <pubDate>Sun, 11 Oct 2026 08:00:49 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/11/week-in-review-fortibleed-is-still-active-patch-tuesday-forecast/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Best Protected Website Builder 2027: Which Platform Offers True Security</title>
-      <link>https://secubuzz.com/news/best-protected-website-builder-2027-which-platform-55b49d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/best-protected-website-builder-2027-which-platform-55b49d</guid>
-      <description><![CDATA[The article reviews hosted website builders that eliminate the need for site owners to manage core updates, TLS renewal, and server hardening. It argues that the real question is not whether to use a builder, but which builder’s security program provides the most robust protection against self‑managed site hacks.]]></description>
-      <pubDate>Sun, 11 Oct 2026 03:35:31 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/best-protected-website-builder/">Cyber Security News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Ransomware Groups Exploit Palo Alto GlobalProtect Authentication Bypass CVE-2026-0257</title>
-      <link>https://secubuzz.com/news/ransomware-groups-exploit-palo-alto-globalprotect-4ae2e2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ransomware-groups-exploit-palo-alto-globalprotect-4ae2e2</guid>
-      <description><![CDATA[Ransomware actors Qilin and Settra are using CVE-2026-0257 to bypass authentication in Palo Alto Networks PAN-OS GlobalProtect and Prisma Access, creating unauthorized VPN sessions that grant stealthy access to internal networks. The flaw enables attackers to enter trusted remote access services, posing a serious detection challenge.]]></description>
-      <pubDate>Sun, 11 Oct 2026 03:21:01 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/palo-alto-globalprotect-flaw-vpn-access/">Cyber Security News</source>
       <category>Vulnerability</category>
     </item>
   </channel>
