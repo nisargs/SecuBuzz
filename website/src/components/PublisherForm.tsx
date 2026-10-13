@@ -2,25 +2,26 @@ import React, { useState } from 'react';
 import { Mail, Copy, Check, Lock, ShieldCheck } from 'lucide-react';
 
 const SUBMISSION_TEMPLATE = `To: publishers@secubuzz.com
-Subject: [Feed Submission] Publication Name
+Subject: [Feed Submission] <Publication Name>
 
-Publication Name: <Your Publication or Research Blog>
-RSS / Atom Feed URL: <https://example.com/feed.xml>
-Editorial Contact: <editor@example.com>
-Primary Coverage: [Vulnerabilities / Threat Intel / Breaches / Policy]
-Corrections Policy URL: <https://example.com/corrections>
+Publication: <Name / Org>
+Feed URL:    <https://example.com/feed.xml>
+Contact:     <editor@example.com>
+Coverage:    Vulnerabilities / Breaches / Intel
+Corrections: <https://example.com/policy>
 
-Additional Notes:
-- `;
+Notes:
+<Optional brief context>`;
 
-const DEFAULT_SUBJECT = '[Feed Submission] New Cybersecurity Source';
-const DEFAULT_BODY = `Publication Name: 
-RSS / Atom Feed URL: 
-Editorial Contact: 
-Primary Coverage: [Vulnerabilities / Threat Intel / Breaches / Policy]
-Corrections Policy URL: 
+const DEFAULT_SUBJECT = '[Feed Submission] <Publication Name>';
+const DEFAULT_BODY = `Publication: <Name / Org>
+Feed URL:    <https://example.com/feed.xml>
+Contact:     <editor@example.com>
+Coverage:    Vulnerabilities / Breaches / Intel
+Corrections: <https://example.com/policy>
 
-Additional Notes:
+Notes:
+<Optional brief context>
 `;
 
 const MAILTO_HREF = `mailto:publishers@secubuzz.com?subject=${encodeURIComponent(
@@ -122,8 +123,8 @@ export function PublisherForm() {
           </button>
         </div>
 
-        <div className="mt-2.5 overflow-hidden rounded-lg border border-line bg-bg/90 p-3">
-          <pre className="font-mono text-[11px] leading-relaxed text-muted whitespace-pre-wrap select-all">
+        <div className="mt-2.5 rounded-lg border border-line bg-bg/90 p-3.5">
+          <pre className="font-mono text-[11.5px] leading-relaxed text-muted select-all whitespace-pre overflow-x-auto">
             {SUBMISSION_TEMPLATE}
           </pre>
         </div>

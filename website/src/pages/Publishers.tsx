@@ -26,7 +26,7 @@ export function Publishers() {
         </dl>
       </PageIntro>
 
-      <section className="mx-auto grid max-w-site gap-14 px-5 py-20 md:px-8 lg:grid-cols-[1fr_420px]">
+      <section className="mx-auto grid max-w-site gap-12 px-5 py-20 md:px-8 lg:grid-cols-[1fr_490px]">
         <div>
           <h2 className="text-2xl font-semibold tracking-tight text-ink">How the partnership works</h2>
           <ol className="mt-8 space-y-0">
