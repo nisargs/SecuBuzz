@@ -1,5 +1,45 @@
 [
   {
+    "id": "https://cybersecuritynews.com/yandex-data-center-service-outage/",
+    "sourceUrl": "https://cybersecuritynews.com/yandex-data-center-service-outage/",
+    "title": "Yandex Data Centers Hit by Drone Attacks, Causing Cloud File Outages",
+    "headline": "Yandex Data Centers Hit by Drone Attacks, Causing Cloud File Outages",
+    "summary": "Drone strikes damaged three Yandex data centers in Russia, shutting down two facilities and partially disabling a third. The outage prevented Yandex Disk users and businesses on Yandex Cloud from accessing files and services across the platform. Yandex confirmed the disruption and is working to restore operations.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-13T03:28:05.000Z",
+    "url": "https://cybersecuritynews.com/yandex-data-center-service-outage/",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/yandex-confirms-service-outage-as-users-lose-access-to-cloud-files/"
+      }
+    ]
+  },
+  {
+    "id": "https://cybersecuritynews.com/wordpress-plugin-vulnerability-exploited/",
+    "sourceUrl": "https://cybersecuritynews.com/wordpress-plugin-vulnerability-exploited/",
+    "title": "Bricksforge WordPress Plugin Vulnerability Allows Remote Code Execution",
+    "headline": "Bricksforge WordPress Plugin Vulnerability Allows Remote Code Execution",
+    "summary": "A critical flaw in the Bricksforge WordPress plugin lets attackers upload and run arbitrary PHP code without authentication. Tracked as CVE-2026-85097 with a CVSS score of 10.0, the vulnerability enables remote code execution on affected sites. Exploitation attempts were first seen on October 7, 2026. Patching is required.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-13T03:09:44.000Z",
+    "url": "https://cybersecuritynews.com/wordpress-plugin-vulnerability-exploited/",
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/lg-webos-flaws/"
+      },
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/bricksforge-wordpress-plugin-vulnerability-exploited-in-the-wild/"
+      }
+    ]
+  },
+  {
     "id": "https://www.darkreading.com/vulnerabilities-threats/max-severity-ssrf-flaw-sonicwall-sma-devices-under-attack",
     "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/max-severity-ssrf-flaw-sonicwall-sma-devices-under-attack",
     "title": "SonicWall SMA 1000 Devices Targeted for SSRF Exploit",
@@ -58,24 +98,6 @@
       {
         "source": "BleepingComputer",
         "sourceUrl": "https://www.bleepingcomputer.com/news/security/inside-avisloader-a-windows-malware-loader-built-to-resist-disruption/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/yandex-confirms-service-outage-as-users-lose-access-to-cloud-files/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/yandex-confirms-service-outage-as-users-lose-access-to-cloud-files/",
-    "title": "Yandex Cloud Outage After Drone Attacks Damage Data Centers",
-    "headline": "Yandex Cloud Outage After Drone Attacks Damage Data Centers",
-    "summary": "Yandex announced that drone attacks damaged three of its data centers, forcing the shutdown of two facilities and partial disablement of a third. The outage has disrupted access to cloud files for users across the service.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-12T19:23:01.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/yandex-confirms-service-outage-as-users-lose-access-to-cloud-files/",
-    "additionalSources": [
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/ukraine-strikes-third-yandex-data-center"
       }
     ]
   },
@@ -251,28 +273,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://cybersecuritynews.com/critical-google-devsite-flaw/",
-    "sourceUrl": "https://cybersecuritynews.com/critical-google-devsite-flaw/",
-    "title": "Google DevSite Vulnerability Enables Remote Code Execution via Forged Flask Sessions",
-    "headline": "Google DevSite Vulnerability Enables Remote Code Execution via Forged Flask Sessions",
-    "summary": "A critical flaw in Google’s shared DevSite platform allows unauthenticated attackers to forge Flask session cookies and trigger remote code execution across multiple Google developer sites, including developers.google.com and firebase.google.com. The vulnerability exploits the OAuth flow used by documentation sites, potentially compromising developer credentials and site integrity.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-12T14:31:19.000Z",
-    "url": "https://cybersecuritynews.com/critical-google-devsite-flaw/",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/gitlab-vulnerability-code-execution/"
-      },
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/gitlab-warns-of-max-severity-rce-flaw-in-regex-compiler-engine/"
-      }
-    ]
-  },
-  {
     "id": "https://www.securityweek.com/ionq-to-acquire-zero-trust-firm-elisity-for-up-to-1-3-billion/",
     "sourceUrl": "https://www.securityweek.com/ionq-to-acquire-zero-trust-firm-elisity-for-up-to-1-3-billion/",
     "title": "IonQ to Acquire Zero Trust Firm Elisity for Up to $1.3 Billion",
@@ -297,24 +297,6 @@
     "publishedAt": "2026-10-12T14:02:53.000Z",
     "url": "https://cybersecuritynews.com/whatsapp-attachment-deploys-malware/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/bricksforge-wordpress-plugin-vulnerability-exploited-in-the-wild/",
-    "sourceUrl": "https://www.securityweek.com/bricksforge-wordpress-plugin-vulnerability-exploited-in-the-wild/",
-    "title": "CVE-2026-85097 Exploited in Bricksforge WordPress Plugin",
-    "headline": "CVE-2026-85097 Exploited in Bricksforge WordPress Plugin",
-    "summary": "The CVE-2026-85097 vulnerability in the Bricksforge WordPress plugin allows attackers to gain full control of affected WordPress sites. Exploitation in the wild has been confirmed, enabling remote code execution and site takeover. Site owners should update the plugin immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-12T13:14:37.000Z",
-    "url": "https://www.securityweek.com/bricksforge-wordpress-plugin-vulnerability-exploited-in-the-wild/",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html"
-      }
-    ]
   },
   {
     "id": "https://cybersecuritynews.com/google-aitm-phishing-kit/",

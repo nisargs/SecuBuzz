@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Oct 2026 01:22:55 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 04:18:50 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Yandex Data Centers Hit by Drone Attacks, Causing Cloud File Outages</title>
+      <link>https://secubuzz.com/news/yandex-data-centers-hit-by-drone-attacks-causing-c-37aaef</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/yandex-data-centers-hit-by-drone-attacks-causing-c-37aaef</guid>
+      <description><![CDATA[Drone strikes damaged three Yandex data centers in Russia, shutting down two facilities and partially disabling a third. The outage prevented Yandex Disk users and businesses on Yandex Cloud from accessing files and services across the platform. Yandex confirmed the disruption and is working to restore operations.]]></description>
+      <pubDate>Tue, 13 Oct 2026 03:28:05 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/yandex-data-center-service-outage/">Cyber Security News</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Bricksforge WordPress Plugin Vulnerability Allows Remote Code Execution</title>
+      <link>https://secubuzz.com/news/bricksforge-wordpress-plugin-vulnerability-allows-670a59</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/bricksforge-wordpress-plugin-vulnerability-allows-670a59</guid>
+      <description><![CDATA[A critical flaw in the Bricksforge WordPress plugin lets attackers upload and run arbitrary PHP code without authentication. Tracked as CVE-2026-85097 with a CVSS score of 10.0, the vulnerability enables remote code execution on affected sites. Exploitation attempts were first seen on October 7, 2026. Patching is required.]]></description>
+      <pubDate>Tue, 13 Oct 2026 03:09:44 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/wordpress-plugin-vulnerability-exploited/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>SonicWall SMA 1000 Devices Targeted for SSRF Exploit</title>
       <link>https://secubuzz.com/news/sonicwall-sma-1000-devices-targeted-for-ssrf-explo-7aa16c</link>
@@ -42,15 +60,6 @@
       <pubDate>Mon, 12 Oct 2026 19:47:08 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/avisloader-tox-p2p-malware-loader-defense">CyberNews AI</source>
       <category>Malware</category>
-    </item>
-    <item>
-      <title>Yandex Cloud Outage After Drone Attacks Damage Data Centers</title>
-      <link>https://secubuzz.com/news/yandex-cloud-outage-after-drone-attacks-damage-dat-7de647</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/yandex-cloud-outage-after-drone-attacks-damage-dat-7de647</guid>
-      <description><![CDATA[Yandex announced that drone attacks damaged three of its data centers, forcing the shutdown of two facilities and partial disablement of a third. The outage has disrupted access to cloud files for users across the service.]]></description>
-      <pubDate>Mon, 12 Oct 2026 19:23:01 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/yandex-confirms-service-outage-as-users-lose-access-to-cloud-files/">BleepingComputer</source>
-      <category>Cloud</category>
     </item>
     <item>
       <title>Anthropic AI Models Offline After Breach of U.S. Government Sites</title>
@@ -143,15 +152,6 @@
       <category>Cloud</category>
     </item>
     <item>
-      <title>Google DevSite Vulnerability Enables Remote Code Execution via Forged Flask Sessions</title>
-      <link>https://secubuzz.com/news/google-devsite-vulnerability-enables-remote-code-e-1d7a81</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-devsite-vulnerability-enables-remote-code-e-1d7a81</guid>
-      <description><![CDATA[A critical flaw in Google’s shared DevSite platform allows unauthenticated attackers to forge Flask session cookies and trigger remote code execution across multiple Google developer sites, including developers.google.com and firebase.google.com. The vulnerability exploits the OAuth flow used by documentation sites, potentially compromising developer credentials and site integrity.]]></description>
-      <pubDate>Mon, 12 Oct 2026 14:31:19 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/critical-google-devsite-flaw/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>IonQ to Acquire Zero Trust Firm Elisity for Up to $1.3 Billion</title>
       <link>https://secubuzz.com/news/ionq-to-acquire-zero-trust-firm-elisity-for-up-to-14f240</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ionq-to-acquire-zero-trust-firm-elisity-for-up-to-14f240</guid>
@@ -168,15 +168,6 @@
       <pubDate>Mon, 12 Oct 2026 14:02:53 GMT</pubDate>
       <source url="https://cybersecuritynews.com/whatsapp-attachment-deploys-malware/">Cyber Security News</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>CVE-2026-85097 Exploited in Bricksforge WordPress Plugin</title>
-      <link>https://secubuzz.com/news/cve-2026-85097-exploited-in-bricksforge-wordpress-111787</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-85097-exploited-in-bricksforge-wordpress-111787</guid>
-      <description><![CDATA[The CVE-2026-85097 vulnerability in the Bricksforge WordPress plugin allows attackers to gain full control of affected WordPress sites. Exploitation in the wild has been confirmed, enabling remote code execution and site takeover. Site owners should update the plugin immediately to mitigate the risk.]]></description>
-      <pubDate>Mon, 12 Oct 2026 13:14:37 GMT</pubDate>
-      <source url="https://www.securityweek.com/bricksforge-wordpress-plugin-vulnerability-exploited-in-the-wild/">SecurityWeek</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>Google Phishing Kit Bypasses MFA Using WebSockets</title>
@@ -456,6 +447,15 @@
       <pubDate>Sat, 10 Oct 2026 11:00:00 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/the-third-party-agent-problem-why.html">The Hacker News</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Insider Extortion Plot Leads to Engineer’s Imprisonment</title>
+      <link>https://secubuzz.com/news/insider-extortion-plot-leads-to-engineer-s-impriso-43d8e0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/insider-extortion-plot-leads-to-engineer-s-impriso-43d8e0</guid>
+      <description><![CDATA[A former core infrastructure engineer deleted admin accounts, reset hundreds of passwords, and demanded 20 bitcoin to prevent server damage. The extortion attempt was uncovered, leading to the engineer’s arrest and prison sentence.]]></description>
+      <pubDate>Sat, 10 Oct 2026 11:00:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/insider-cyber-extortion-plot-against-industrial-firm-lands-engineer-in-prison/">SecurityWeek</source>
+      <category>Breach</category>
     </item>
   </channel>
 </rss>
