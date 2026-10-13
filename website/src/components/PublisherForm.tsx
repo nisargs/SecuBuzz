@@ -1,128 +1,141 @@
 import React, { useState } from 'react';
-import { CheckCircle2Icon, Loader2Icon } from 'lucide-react';
-import { FormField, inputClass } from './FormField';
-import { publisherFocusAreas } from '../data/site';
-import { isValidEmail, isValidUrl } from '../utils/text';
+import { Mail, Copy, Check, Lock, ShieldCheck } from 'lucide-react';
 
-interface PublisherValues {
-  publication: string;
-  feed: string;
-  email: string;
-  focus: string;
-}
+const SUBMISSION_TEMPLATE = `To: publishers@secubuzz.com
+Subject: [Feed Submission] Publication Name
 
-type Errors = Partial<Record<keyof PublisherValues, string>>;
+Publication Name: <Your Publication or Research Blog>
+RSS / Atom Feed URL: <https://example.com/feed.xml>
+Editorial Contact: <editor@example.com>
+Primary Coverage: [Vulnerabilities / Threat Intel / Breaches / Policy]
+Corrections Policy URL: <https://example.com/corrections>
 
-const initial: PublisherValues = { publication: '', feed: '', email: '', focus: publisherFocusAreas[0] };
+Additional Notes:
+- `;
+
+const DEFAULT_SUBJECT = '[Feed Submission] New Cybersecurity Source';
+const DEFAULT_BODY = `Publication Name: 
+RSS / Atom Feed URL: 
+Editorial Contact: 
+Primary Coverage: [Vulnerabilities / Threat Intel / Breaches / Policy]
+Corrections Policy URL: 
+
+Additional Notes:
+`;
+
+const MAILTO_HREF = `mailto:publishers@secubuzz.com?subject=${encodeURIComponent(
+  DEFAULT_SUBJECT
+)}&body=${encodeURIComponent(DEFAULT_BODY)}`;
 
 export function PublisherForm() {
-  const [values, setValues] = useState<PublisherValues>(initial);
-  const [errors, setErrors] = useState<Errors>({});
-  const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle');
+  const [copiedEmail, setCopiedEmail] = useState(false);
+  const [copiedTemplate, setCopiedTemplate] = useState(false);
 
-  const update = (key: keyof PublisherValues) => (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-    setValues((v) => ({ ...v, [key]: e.target.value }));
-    if (errors[key]) setErrors((er) => ({ ...er, [key]: undefined }));
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText('publishers@secubuzz.com');
+    setCopiedEmail(true);
+    setTimeout(() => setCopiedEmail(false), 2000);
   };
 
-  const validate = (): Errors => {
-    const next: Errors = {};
-    if (!values.publication.trim()) next.publication = 'Enter your publication name.';
-    if (!isValidUrl(values.feed)) next.feed = 'Enter a full feed URL starting with https://';
-    if (!isValidEmail(values.email)) next.email = 'Enter a valid email address.';
-    return next;
+  const handleCopyTemplate = () => {
+    navigator.clipboard.writeText(SUBMISSION_TEMPLATE);
+    setCopiedTemplate(true);
+    setTimeout(() => setCopiedTemplate(false), 2000);
   };
-
-  const [copiedDraft, setCopiedDraft] = useState(false);
-
-  const onSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const next = validate();
-    setErrors(next);
-    if (Object.keys(next).length) return;
-    setStatus('submitting');
-
-    const mailtoUrl = `mailto:publishers@secubuzz.com?subject=${encodeURIComponent(
-      `[SecuBuzz Feed Submission] ${values.publication}`
-    )}&body=${encodeURIComponent(
-      `Publication: ${values.publication}\nFeed URL: ${values.feed}\nEditorial Contact: ${values.email}\nPrimary Coverage: ${values.focus}\n\nSubmitted via secubuzz.com/publishers`
-    )}`;
-
-    window.location.href = mailtoUrl;
-    setStatus('success');
-  };
-
-  const handleCopyDraft = () => {
-    const text = `To: publishers@secubuzz.com\nSubject: [SecuBuzz Feed Submission] ${values.publication}\n\nPublication: ${values.publication}\nFeed URL: ${values.feed}\nEditorial Contact: ${values.email}\nPrimary Coverage: ${values.focus}`;
-    navigator.clipboard.writeText(text);
-    setCopiedDraft(true);
-    setTimeout(() => setCopiedDraft(false), 2000);
-  };
-
-  if (status === 'success') {
-    return (
-      <div className="rounded-lg border border-line bg-surface p-8" role="status">
-        <CheckCircle2Icon className="h-6 w-6 text-accent" aria-hidden="true" />
-        <h3 className="mt-4 text-xl font-semibold text-ink">Feed draft prepared</h3>
-        <p className="mt-2 text-sm leading-relaxed text-muted">
-          Your mail client has been opened to submit <span className="text-ink font-medium">{values.publication}</span> directly to our editorial team at{' '}
-          <a href="mailto:publishers@secubuzz.com" className="font-mono text-accent hover:underline">
-            publishers@secubuzz.com
-          </a>.
-        </p>
-        <p className="mt-2 text-xs text-subtle">
-          If your email app didn't open automatically, you can copy the submission details below:
-        </p>
-        <div className="mt-4 flex flex-wrap gap-3">
-          <button
-            type="button"
-            onClick={handleCopyDraft}
-            className="inline-flex h-9 items-center justify-center gap-1.5 rounded-md border border-line bg-bg px-3.5 text-xs font-medium text-ink transition-colors hover:bg-raised"
-          >
-            {copiedDraft ? 'Copied to clipboard!' : 'Copy submission details'}
-          </button>
-          <button
-            type="button"
-            onClick={() => {
-              setValues(initial);
-              setStatus('idle');
-            }}
-            className="text-xs font-medium text-accent hover:underline self-center"
-          >
-            Submit another feed
-          </button>
-        </div>
-      </div>
-    );
-  }
 
   return (
-    <form onSubmit={onSubmit} noValidate className="space-y-5 rounded-lg border border-line bg-surface p-6 md:p-8">
-      <h3 className="text-xl font-semibold text-ink">Submit your feed</h3>
-      <FormField id="publication" label="Publication name" error={errors.publication}>
-        <input id="publication" className={inputClass} value={values.publication} onChange={update('publication')} aria-invalid={!!errors.publication} aria-describedby={errors.publication ? 'publication-error' : undefined} />
-      </FormField>
-      <FormField id="feed" label="RSS or Atom feed URL" error={errors.feed}>
-        <input id="feed" type="url" className={inputClass} placeholder="https://example.com/feed.xml" value={values.feed} onChange={update('feed')} aria-invalid={!!errors.feed} aria-describedby={errors.feed ? 'feed-error' : undefined} />
-      </FormField>
-      <FormField id="pub-email" label="Editorial contact email" error={errors.email}>
-        <input id="pub-email" type="email" className={inputClass} value={values.email} onChange={update('email')} aria-invalid={!!errors.email} aria-describedby={errors.email ? 'pub-email-error' : undefined} />
-      </FormField>
-      <FormField id="focus" label="Primary coverage">
-        <select id="focus" className={inputClass} value={values.focus} onChange={update('focus')}>
-          {publisherFocusAreas.map((f) =>
-          <option key={f}>{f}</option>
-          )}
-        </select>
-      </FormField>
-      <button
-        type="submit"
-        disabled={status === 'submitting'}
-        className="inline-flex h-11 w-full items-center justify-center gap-2 rounded-md bg-accent text-sm font-semibold text-accent-ink transition-colors duration-150 ease-out hover:bg-accent/90 disabled:opacity-70">
-        
-        {status === 'submitting' && <Loader2Icon className="h-4 w-4 animate-spin" aria-hidden="true" />}
-        {status === 'submitting' ? 'Submitting…' : 'Submit for review'}
-      </button>
-    </form>);
+    <div className="space-y-6 rounded-xl border border-line bg-surface p-6 md:p-8">
+      {/* Header */}
+      <div>
+        <div className="flex items-center justify-between">
+          <div className="grid h-10 w-10 place-items-center rounded-lg border border-line bg-bg text-accent">
+            <Mail className="h-5 w-5" />
+          </div>
+          <span className="inline-flex items-center gap-1.5 rounded-full border border-line bg-bg px-2.5 py-0.5 font-mono text-[11px] text-muted">
+            <Lock className="h-3 w-3 text-accent" /> Zero Form-Storage
+          </span>
+        </div>
+        <h3 className="mt-4 text-xl font-semibold tracking-tight text-ink">
+          Submit your feed
+        </h3>
+        <p className="mt-1.5 text-sm leading-relaxed text-muted">
+          SecuBuzz reviews all prospective newsrooms and threat feeds via authenticated editorial email protocols.
+        </p>
+      </div>
 
+      {/* Destination Inbox Card */}
+      <div className="rounded-lg border border-line bg-bg/70 p-3.5">
+        <div className="flex items-center justify-between font-mono text-[11px] text-subtle">
+          <span>Destination Inbox</span>
+          <span className="text-accent">48h SLA</span>
+        </div>
+        <p className="mt-1 select-all break-all font-mono text-sm font-semibold text-ink">
+          publishers@secubuzz.com
+        </p>
+      </div>
+
+      {/* Direct Action Buttons */}
+      <div className="grid grid-cols-2 gap-2.5">
+        <a
+          href={MAILTO_HREF}
+          className="inline-flex h-10 items-center justify-center gap-1.5 rounded-md bg-accent px-3 text-xs font-semibold text-accent-ink transition-colors duration-150 ease-out hover:bg-accent/90"
+        >
+          <Mail className="h-3.5 w-3.5" /> Send Email
+        </a>
+        <button
+          type="button"
+          onClick={handleCopyEmail}
+          className="inline-flex h-10 items-center justify-center gap-1.5 rounded-md border border-line bg-bg px-3 text-xs font-medium text-ink transition-colors duration-150 ease-out hover:bg-raised"
+        >
+          {copiedEmail ? (
+            <>
+              <Check className="h-3.5 w-3.5 text-accent" /> Copied!
+            </>
+          ) : (
+            <>
+              <Copy className="h-3.5 w-3.5 text-muted" /> Copy Address
+            </>
+          )}
+        </button>
+      </div>
+
+      {/* Structured Template Section */}
+      <div className="border-t border-line pt-5">
+        <div className="flex items-center justify-between">
+          <span className="text-xs font-semibold text-ink">
+            Submission Template
+          </span>
+          <button
+            type="button"
+            onClick={handleCopyTemplate}
+            className="inline-flex items-center gap-1 font-mono text-[11px] font-medium text-accent hover:underline"
+          >
+            {copiedTemplate ? (
+              <>
+                <Check className="h-3 w-3" /> Template Copied
+              </>
+            ) : (
+              <>
+                <Copy className="h-3 w-3" /> Copy Template
+              </>
+            )}
+          </button>
+        </div>
+
+        <div className="mt-2.5 overflow-hidden rounded-lg border border-line bg-bg/90 p-3">
+          <pre className="font-mono text-[11px] leading-relaxed text-muted whitespace-pre-wrap select-all">
+            {SUBMISSION_TEMPLATE}
+          </pre>
+        </div>
+      </div>
+
+      {/* Security Note */}
+      <div className="flex items-start gap-2.5 rounded-lg border border-line/60 bg-bg/40 p-3 text-xs text-subtle">
+        <ShieldCheck className="h-4 w-4 shrink-0 text-accent mt-0.5" />
+        <p className="leading-relaxed">
+          Zero-attack-surface architecture: Inbound feeds are evaluated by human editors. No unauthenticated forms or database writes exist to exploit.
+        </p>
+      </div>
+    </div>
+  );
 }
