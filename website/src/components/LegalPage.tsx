@@ -43,7 +43,7 @@ export function LegalPage({ title, updated, sections, canonicalPath, description
             </ol>
           </div>
         </nav>
-        <div className="max-w-[68ch]">
+        <div className="max-w-[76ch]">
           {sections.map((s) =>
           <section key={s.id} id={s.id} className="scroll-mt-24 border-b border-line py-8 first:pt-0 last:border-0">
               <h2 className="text-xl font-semibold tracking-tight text-ink">{s.heading}</h2>
@@ -54,6 +54,24 @@ export function LegalPage({ title, updated, sections, canonicalPath, description
                   </p>
               )}
               </div>
+              {s.sourcesList && s.sourcesList.length > 0 && (
+                <div className="mt-5 grid grid-cols-1 gap-x-6 gap-y-2.5 pt-2 sm:grid-cols-2 lg:grid-cols-3">
+                  {s.sourcesList.map((source, idx) => (
+                    <div key={source.name} className="text-[13px] leading-snug">
+                      <a
+                        href={source.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted transition-colors duration-150 ease-out hover:text-accent"
+                      >
+                        <span className="font-medium text-ink">{source.name}</span>{' '}
+                        <span className="font-mono text-xs text-subtle">({source.domain})</span>
+                        {idx < s.sourcesList!.length - 1 ? ',' : ''}
+                      </a>
+                    </div>
+                  ))}
+                </div>
+              )}
             </section>
           )}
         </div>

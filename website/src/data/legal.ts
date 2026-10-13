@@ -1,7 +1,14 @@
+export interface LegalSourceItem {
+  name: string;
+  domain: string;
+  url: string;
+}
+
 export interface LegalSection {
   id: string;
   heading: string;
   body: string[];
+  sourcesList?: LegalSourceItem[];
 }
 
 export const privacySections: LegalSection[] = [
@@ -101,8 +108,7 @@ export const termsSections: LegalSection[] = [
     id: 'service',
     heading: 'The Service',
     body: [
-      'SecuBuzz provides factual, 60-word summaries of public cybersecurity disclosures and CISA Known Exploited Vulnerabilities catalog updates. SecuBuzz is developed and operated by MiSo Labs. SecuBuzz and MiSo Labs are independent of and not affiliated with, sponsored by, or endorsed by CISA, the Department of Homeland Security, or external news publishers.',
-      'A complete directory of all 27 active cybersecurity publications, government CERT advisories, and threat research labs monitored by SecuBuzz is published transparently on our Publishers & Sources page (secubuzz.com/publishers).'
+      'SecuBuzz provides factual, 60-word summaries of public cybersecurity disclosures and CISA Known Exploited Vulnerabilities catalog updates. SecuBuzz is developed and operated by MiSo Labs. SecuBuzz and MiSo Labs are independent of and not affiliated with, sponsored by, or endorsed by CISA, the Department of Homeland Security, or external news publishers.'
     ]
   },
   {
@@ -110,6 +116,42 @@ export const termsSections: LegalSection[] = [
     heading: 'Security Advisory Disclaimer',
     body: [
       'SecuBuzz briefs are informational summaries intended for initial triage and situational awareness. Always inspect authoritative vendor security bulletins, NVD CVSS vectors, and your organization’s vulnerability governance before taking remediation actions.'
+    ]
+  },
+  {
+    id: 'sources',
+    heading: 'Monitored Sources & Feeds',
+    body: [
+      'SecuBuzz indexes public cybersecurity reporting, official bulletins, and threat research from the following 27 independent newsrooms, government CERT advisories, and threat research organizations:'
+    ],
+    sourcesList: [
+      { name: 'The Hacker News', domain: 'thehackernews.com', url: 'https://thehackernews.com' },
+      { name: 'BleepingComputer', domain: 'www.bleepingcomputer.com', url: 'https://www.bleepingcomputer.com' },
+      { name: 'CISA', domain: 'www.cisa.gov', url: 'https://www.cisa.gov/news-events/cybersecurity-advisories' },
+      { name: 'Krebs on Security', domain: 'krebsonsecurity.com', url: 'https://krebsonsecurity.com' },
+      { name: 'SANS Internet Storm Center', domain: 'isc.sans.edu', url: 'https://isc.sans.edu' },
+      { name: 'Unit 42', domain: 'unit42.paloaltonetworks.com', url: 'https://unit42.paloaltonetworks.com' },
+      { name: 'Zero Day Initiative', domain: 'www.zerodayinitiative.com', url: 'https://www.zerodayinitiative.com' },
+      { name: 'The Record', domain: 'therecord.media', url: 'https://therecord.media' },
+      { name: 'SecurityWeek', domain: 'www.securityweek.com', url: 'https://www.securityweek.com' },
+      { name: 'Dark Reading', domain: 'www.darkreading.com', url: 'https://www.darkreading.com' },
+      { name: 'Help Net Security', domain: 'www.helpnetsecurity.com', url: 'https://www.helpnetsecurity.com' },
+      { name: 'CyberNews AI', domain: 'www.cybernewsai.com', url: 'https://www.cybernewsai.com' },
+      { name: 'Microsoft Security', domain: 'www.microsoft.com/security/blog', url: 'https://www.microsoft.com/security/blog/' },
+      { name: 'Google Security', domain: 'security.googleblog.com', url: 'https://security.googleblog.com' },
+      { name: 'Sophos Threat Research', domain: 'news.sophos.com', url: 'https://news.sophos.com/en-us/category/threat-research/' },
+      { name: 'Check Point Research', domain: 'research.checkpoint.com', url: 'https://research.checkpoint.com' },
+      { name: 'CrowdStrike', domain: 'www.crowdstrike.com/blog', url: 'https://www.crowdstrike.com/blog/' },
+      { name: 'The DFIR Report', domain: 'thedfirreport.com', url: 'https://thedfirreport.com' },
+      { name: 'Wiz Research', domain: 'www.wiz.io/blog', url: 'https://www.wiz.io/blog' },
+      { name: 'Cloudflare Security', domain: 'blog.cloudflare.com', url: 'https://blog.cloudflare.com' },
+      { name: 'Cisco Talos', domain: 'blog.talosintelligence.com', url: 'https://blog.talosintelligence.com' },
+      { name: 'Trend Micro Research', domain: 'www.trendmicro.com/research', url: 'https://www.trendmicro.com/research' },
+      { name: 'SentinelOne', domain: 'www.sentinelone.com/blog', url: 'https://www.sentinelone.com/blog/' },
+      { name: 'Schneier on Security', domain: 'www.schneier.com', url: 'https://www.schneier.com' },
+      { name: 'Malwarebytes Labs', domain: 'www.malwarebytes.com/blog', url: 'https://www.malwarebytes.com/blog' },
+      { name: 'ESET WeLiveSecurity', domain: 'www.welivesecurity.com', url: 'https://www.welivesecurity.com' },
+      { name: 'Cyber Security News', domain: 'cybersecuritynews.com', url: 'https://cybersecuritynews.com' },
     ]
   },
   {
