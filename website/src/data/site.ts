@@ -189,7 +189,7 @@ export const curatedSources: CuratedSource[] = [
   {
     name: 'CyberNews AI',
     category: 'Newsrooms & Journalism',
-    url: 'https://cybernews.com',
+    url: 'https://www.cybernewsai.com',
     description: 'Research-backed coverage on emerging artificial intelligence security risks, data leaks, and digital safety.'
   },
   {
