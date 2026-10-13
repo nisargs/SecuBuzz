@@ -24,7 +24,7 @@ export function AppCta({
           <Link
             to="/download"
             title="Scan QR Code to install on Android"
-            className="hidden sm:inline-flex h-14 items-center gap-2 rounded-md border border-line bg-surface px-4 text-xs font-medium text-ink transition-all duration-150 ease-out hover:border-muted hover:bg-raised"
+            className="hidden sm:inline-flex h-14 items-center gap-2 rounded-md border border-line bg-surface px-4 text-xs font-medium text-ink transition-all duration-150 ease-out hover:border-accent hover:bg-raised hover:text-accent"
           >
             <QrCode className="h-4 w-4 text-accent" />
             <span>Scan QR</span>

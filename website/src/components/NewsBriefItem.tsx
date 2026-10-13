@@ -52,7 +52,7 @@ export function NewsBriefItem({ brief }: NewsBriefItemProps) {
         <h3 className="text-xl font-semibold leading-snug tracking-tight text-ink">
           <Link
             to={`/news/${brief.slug}`}
-            className="transition-colors duration-150 ease-out hover:underline underline-offset-4 decoration-muted/50">
+            className="transition-colors duration-150 ease-out hover:text-accent">
             {brief.title}
           </Link>
         </h3>
@@ -62,7 +62,7 @@ export function NewsBriefItem({ brief }: NewsBriefItemProps) {
             href={brief.sourceUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 text-muted transition-colors duration-150 ease-out hover:text-ink">
+            className="inline-flex items-center gap-1 text-muted transition-colors duration-150 ease-out hover:text-accent">
             
             {brief.source}
             <ArrowUpRightIcon className="h-3.5 w-3.5" aria-hidden="true" />
@@ -76,7 +76,7 @@ export function NewsBriefItem({ brief }: NewsBriefItemProps) {
                   href={s.sourceUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-0.5 text-muted hover:text-ink">
+                  className="inline-flex items-center gap-0.5 text-muted transition-colors duration-150 ease-out hover:text-accent">
                   {s.source}
                   <ArrowUpRightIcon className="h-3 w-3" aria-hidden="true" />
                 </a>

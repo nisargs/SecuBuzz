@@ -24,13 +24,13 @@ export function SiteFooter() {
                       href={link.to}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm text-muted transition-colors duration-150 ease-out hover:text-ink">
+                      className="text-sm text-muted transition-colors duration-150 ease-out hover:text-accent">
                       {link.label}
                     </a>
                   ) : (
                     <Link
                       to={link.to}
-                      className="text-sm text-muted transition-colors duration-150 ease-out hover:text-ink">
+                      className="text-sm text-muted transition-colors duration-150 ease-out hover:text-accent">
                       {link.label}
                     </Link>
                   )}

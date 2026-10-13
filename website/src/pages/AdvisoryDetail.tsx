@@ -238,20 +238,20 @@ export function AdvisoryDetail() {
                 href={tweetUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded border border-line bg-surface px-2.5 py-1 font-mono text-xs text-ink transition-colors hover:border-muted hover:bg-raised">
+                className="rounded border border-line bg-surface px-2.5 py-1 font-mono text-xs text-ink transition-colors duration-150 ease-out hover:border-accent hover:text-accent">
                 X / Twitter
               </a>
               <a
                 href={linkedInUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded border border-line bg-surface px-2.5 py-1 font-mono text-xs text-ink transition-colors hover:border-muted hover:bg-raised">
+                className="rounded border border-line bg-surface px-2.5 py-1 font-mono text-xs text-ink transition-colors duration-150 ease-out hover:border-accent hover:text-accent">
                 LinkedIn
               </a>
               <button
                 type="button"
                 onClick={handleCopySnippet}
-                className="inline-flex items-center gap-1.5 rounded border border-line bg-surface px-2.5 py-1 font-mono text-xs font-medium text-ink transition-colors hover:border-muted hover:bg-raised">
+                className="inline-flex items-center gap-1.5 rounded border border-line bg-surface px-2.5 py-1 font-mono text-xs font-medium text-ink transition-colors duration-150 ease-out hover:border-accent hover:text-accent">
                 {copiedSnippet ? (
                   <>
                     <CheckIcon className="h-3.5 w-3.5 text-accent" aria-hidden="true" />
@@ -267,7 +267,7 @@ export function AdvisoryDetail() {
               <button
                 type="button"
                 onClick={handleCopyLink}
-                className="inline-flex items-center gap-1.5 rounded border border-line bg-surface px-2.5 py-1 font-mono text-xs font-medium text-ink transition-colors hover:border-muted hover:bg-raised">
+                className="inline-flex items-center gap-1.5 rounded border border-line bg-surface px-2.5 py-1 font-mono text-xs font-medium text-ink transition-colors duration-150 ease-out hover:border-accent hover:text-accent">
                 {copiedLink ? (
                   <>
                     <CheckIcon className="h-3.5 w-3.5 text-accent" aria-hidden="true" />
@@ -487,7 +487,7 @@ export function AdvisoryDetail() {
                       href={r.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center justify-between gap-4 py-3.5 text-[15px] text-ink transition-colors duration-150 ease-out hover:underline underline-offset-2 decoration-muted/50">
+                      className="flex items-center justify-between gap-4 py-3.5 text-[15px] text-ink transition-colors duration-150 ease-out hover:text-accent">
                       {r.label}
                       <ArrowUpRightIcon className="h-4 w-4 shrink-0 text-muted" aria-hidden="true" />
                     </a>
@@ -521,7 +521,7 @@ export function AdvisoryDetail() {
                   {coverage.map((b) => (
                     <li key={b.slug}>
                       <Link to={`/news/${b.slug}`} className="block py-4">
-                        <p className="text-[15px] font-medium leading-snug text-ink transition-colors duration-150 ease-out hover:underline underline-offset-2 decoration-muted/50">
+                        <p className="text-[15px] font-medium leading-snug text-ink transition-colors duration-150 ease-out hover:text-accent">
                           {b.title}
                         </p>
                         <p className="mt-1.5 font-mono text-xs text-subtle">{timeAgo(b.publishedAt)}</p>

@@ -44,7 +44,7 @@ export function Download() {
                 <button
                   type="button"
                   onClick={() => scrollToVideo(true)}
-                  className="inline-flex items-center gap-2 rounded-xl border border-line bg-surface/80 px-4 py-3.5 text-sm font-medium text-ink transition-all duration-150 ease-out hover:border-muted hover:bg-raised"
+                  className="inline-flex items-center gap-2 rounded-xl border border-line bg-surface/80 px-4 py-3.5 text-sm font-medium text-ink transition-all duration-150 ease-out hover:border-accent/40 hover:bg-raised hover:text-accent"
                 >
                   <Play className="h-4 w-4 text-accent fill-accent/30" />
                   <span>Watch video (0:23)</span>
@@ -95,14 +95,14 @@ export function Download() {
               <button
                 type="button"
                 onClick={() => scrollToVideo(true)}
-                className="group flex w-full max-w-lg items-center justify-between rounded-xl border border-line bg-surface/70 p-3.5 text-left transition-all duration-150 ease-out hover:border-muted hover:bg-raised"
+                className="group flex w-full max-w-lg items-center justify-between rounded-xl border border-line bg-surface/70 p-3.5 text-left transition-all duration-150 ease-out hover:border-accent/40 hover:bg-raised"
               >
                 <div className="flex items-center gap-3">
-                  <div className="grid h-9 w-9 place-items-center rounded-lg border border-line bg-surface text-ink transition-transform duration-150 group-hover:scale-105">
-                    <Play className="h-4 w-4 fill-ink/20 text-ink ml-0.5" />
+                  <div className="grid h-9 w-9 place-items-center rounded-lg border border-accent/30 bg-accent/10 text-accent transition-transform duration-150 group-hover:scale-105">
+                    <Play className="h-4 w-4 fill-accent/30 text-accent ml-0.5" />
                   </div>
                   <div>
-                    <div className="text-sm font-medium text-ink transition-colors">
+                    <div className="text-sm font-medium text-ink transition-colors group-hover:text-accent">
                       Watch the launch walkthrough
                     </div>
                     <div className="text-xs text-muted">
@@ -110,7 +110,7 @@ export function Download() {
                     </div>
                   </div>
                 </div>
-                <div className="flex items-center gap-2 text-xs font-mono text-muted group-hover:text-ink">
+                <div className="flex items-center gap-2 text-xs font-mono text-muted group-hover:text-accent">
                   <span className="rounded border border-line bg-surface px-1.5 py-0.5">0:23</span>
                   <ArrowDown className="h-4 w-4 transition-transform duration-150 group-hover:translate-y-0.5" />
                 </div>

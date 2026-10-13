@@ -176,20 +176,20 @@ export function NewsArticle() {
                 href={tweetUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded border border-line bg-surface px-2.5 py-1 text-ink transition-colors hover:border-muted hover:bg-raised">
+                className="rounded border border-line bg-surface px-2.5 py-1 text-ink transition-colors duration-150 ease-out hover:border-accent hover:text-accent">
                 X / Twitter
               </a>
               <a
                 href={linkedInUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded border border-line bg-surface px-2.5 py-1 text-ink transition-colors hover:border-muted hover:bg-raised">
+                className="rounded border border-line bg-surface px-2.5 py-1 text-ink transition-colors duration-150 ease-out hover:border-accent hover:text-accent">
                 LinkedIn
               </a>
               <button
                 type="button"
                 onClick={handleCopySlack}
-                className="inline-flex items-center gap-1 rounded border border-line bg-surface px-2.5 py-1 text-ink transition-colors hover:border-muted hover:bg-raised">
+                className="inline-flex items-center gap-1 rounded border border-line bg-surface px-2.5 py-1 text-ink transition-colors duration-150 ease-out hover:border-accent hover:text-accent">
                 {copiedSlack ? (
                   <>
                     <CheckIcon className="h-3.5 w-3.5 text-accent" aria-hidden="true" /> Copied (Slack / Teams)
@@ -203,7 +203,7 @@ export function NewsArticle() {
               <button
                 type="button"
                 onClick={handleCopyLink}
-                className="inline-flex items-center gap-1 rounded border border-line bg-surface px-2.5 py-1 text-ink transition-colors hover:border-muted hover:bg-raised">
+                className="inline-flex items-center gap-1 rounded border border-line bg-surface px-2.5 py-1 text-ink transition-colors duration-150 ease-out hover:border-accent hover:text-accent">
                 {copied ? (
                   <>
                     <CheckIcon className="h-3.5 w-3.5 text-accent" aria-hidden="true" /> Copied link
@@ -266,7 +266,7 @@ export function NewsArticle() {
                     <li key={a.cve}>
                       <Link to={`/advisories/${a.slug}`} className="group block py-4">
                         <div className="flex items-center justify-between gap-3">
-                          <span className="font-mono text-sm font-medium text-ink group-hover:underline underline-offset-2 decoration-muted/50">
+                          <span className="font-mono text-sm font-medium text-ink transition-colors duration-150 ease-out group-hover:text-accent">
                             {a.cve}
                           </span>
                           <SeverityBadge severity={a.severity} cvss={a.cvss} />
@@ -296,7 +296,7 @@ export function NewsArticle() {
                   {related.map((r) => (
                     <li key={r.slug}>
                       <Link to={`/news/${r.slug}`} className="block py-4">
-                        <p className="text-[15px] font-medium leading-snug text-ink transition-colors duration-150 ease-out hover:underline underline-offset-2 decoration-muted/50">
+                        <p className="text-[15px] font-medium leading-snug text-ink transition-colors duration-150 ease-out hover:text-accent">
                           {r.title}
                         </p>
                         <p className="mt-1.5 font-mono text-xs text-subtle">{timeAgo(r.publishedAt)}</p>

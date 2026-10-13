@@ -60,7 +60,7 @@ export function Publishers() {
             <h2 className="text-lg font-semibold text-ink">Removal &amp; opt-out policy</h2>
             <p className="mt-3 text-[15px] leading-relaxed text-muted">
               Removal requests sent to{' '}
-              <a href="mailto:publishers@secubuzz.com" className="font-mono text-ink underline hover:text-ink/80">
+              <a href="mailto:publishers@secubuzz.com" className="font-mono text-ink underline transition-colors duration-150 ease-out hover:text-accent">
                 publishers@secubuzz.com
               </a>{' '}
               are honored within 48 hours.

@@ -30,7 +30,7 @@ export function AdvisoryTable({ items }: AdvisoryTableProps) {
                 <td className="w-[140px] whitespace-nowrap px-4 py-3.5 align-top">
                   <Link
                   to={`/advisories/${a.slug}`}
-                  className="font-mono font-medium text-ink after:absolute after:inset-0 group-hover:underline underline-offset-2 decoration-muted/50">
+                  className="font-mono font-medium text-ink transition-colors duration-150 ease-out after:absolute after:inset-0 group-hover:text-accent">
                     {a.cve}
                   </Link>
                 </td>

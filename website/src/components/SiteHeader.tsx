@@ -14,9 +14,10 @@ export function SiteHeader() {
     setOpen(false);
   }, [location.pathname]);
 
-  const linkClass = ({ isActive }: {isActive: boolean;}) =>
-  `whitespace-nowrap text-sm transition-colors duration-150 ease-out ${
-  isActive ? 'text-ink' : 'text-muted hover:text-ink'}`;
+  const linkClass = ({ isActive }: { isActive: boolean }) =>
+    `whitespace-nowrap text-sm transition-colors duration-150 ease-out ${
+      isActive ? 'text-accent font-medium' : 'text-muted hover:text-accent'
+    }`;
 
 
   return (
@@ -42,7 +43,7 @@ export function SiteHeader() {
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
-            className="grid h-9 w-9 place-items-center rounded-md text-muted hover:text-ink md:hidden"
+            className="grid h-9 w-9 place-items-center rounded-md text-muted hover:text-accent md:hidden"
             aria-expanded={open}
             aria-controls="mobile-nav"
             aria-label={open ? 'Close menu' : 'Open menu'}>
@@ -67,7 +68,9 @@ export function SiteHeader() {
             key={item.to}
             to={item.to}
             className={({ isActive }) =>
-            `block border-b border-line py-3.5 text-base ${isActive ? 'text-accent' : 'text-ink'}`
+              `block border-b border-line py-3.5 text-base transition-colors duration-150 ease-out ${
+                isActive ? 'text-accent font-medium' : 'text-ink hover:text-accent'
+              }`
             }>
             
                 {item.label}
