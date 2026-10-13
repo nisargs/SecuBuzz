@@ -5,8 +5,53 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Oct 2026 21:30:43 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 22:47:42 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>OpenAI Engineer Arrested for Planting Spy Device in San Francisco Office</title>
+      <link>https://secubuzz.com/news/openai-engineer-arrested-for-planting-spy-device-i-7d18c3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openai-engineer-arrested-for-planting-spy-device-i-7d18c3</guid>
+      <description><![CDATA[A Saudi national employed by OpenAI was detained after authorities discovered a concealed recording device in an executive conference room at the company’s San Francisco headquarters. The device was intended to covertly capture sensitive conversations, potentially compromising confidential discussions and corporate secrets.]]></description>
+      <pubDate>Tue, 13 Oct 2026 22:33:02 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/artificial-intelligence/openai-engineer-arrested-for-allegedly-planting-spy-device-in-office/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Microsoft Patch Tuesday Reveals Multiple Zero-Day Vulnerabilities</title>
+      <link>https://secubuzz.com/news/microsoft-patch-tuesday-reveals-multiple-zero-day-5693ec</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-patch-tuesday-reveals-multiple-zero-day-5693ec</guid>
+      <description><![CDATA[Microsoft’s October Patch Tuesday included several previously unknown security bypasses and unauthenticated remote code execution flaws. The vulnerabilities allow attackers to execute code without authentication, potentially compromising affected systems. Microsoft released patches to mitigate the risks, urging users to apply updates promptly.]]></description>
+      <pubDate>Tue, 13 Oct 2026 22:29:57 GMT</pubDate>
+      <source url="https://www.darkreading.com/vulnerabilities-threats/zero-days-microsoft-october-patch-tuesday">Dark Reading</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Unsophisticated Attack Exposes Third-Party Risk at European Bank</title>
+      <link>https://secubuzz.com/news/unsophisticated-attack-exposes-third-party-risk-at-20167e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/unsophisticated-attack-exposes-third-party-risk-at-20167e</guid>
+      <description><![CDATA[Unit 42 analyzed a cyberattack that infiltrated a European bank’s IT infrastructure, revealing how an unsophisticated intrusion exploited third‑party connections. The post outlines detection tactics and countermeasures to prevent similar threats, emphasizing the importance of monitoring external vendor access and network segmentation.]]></description>
+      <pubDate>Tue, 13 Oct 2026 22:00:04 GMT</pubDate>
+      <source url="https://unit42.paloaltonetworks.com/noise-inside-network-third-party-risk/">Unit 42</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Ghostscript Heap Buffer Overflow (CVE-2026-39919) Enables Remote Code Execution via PDF</title>
+      <link>https://secubuzz.com/news/ghostscript-heap-buffer-overflow-cve-2026-39919-en-4b71a2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ghostscript-heap-buffer-overflow-cve-2026-39919-en-4b71a2</guid>
+      <description><![CDATA[A critical heap buffer overflow in Ghostscript’s interpreter allows attackers to execute arbitrary code by uploading specially crafted PDF files. The vulnerability, identified as CVE-2026-39919, can be exploited remotely, enabling full server compromise. Users should update to the latest Ghostscript release or apply vendor patches.]]></description>
+      <pubDate>Tue, 13 Oct 2026 21:33:26 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/ghostscript-flaw-lets-hackers-hijack-servers-via-pdf-uploads/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>North Korea Launches Phishing Campaign Targeting Ukrainian Personnel for War Intelligence</title>
+      <link>https://secubuzz.com/news/north-korea-launches-phishing-campaign-targeting-u-5dcee9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/north-korea-launches-phishing-campaign-targeting-u-5dcee9</guid>
+      <description><![CDATA[The Democratic People’s Republic of Korea has deployed reply‑baiting phishing attacks aimed at Ukrainian individuals to harvest war‑related information. The campaign uses simple bait emails that prompt recipients to reply, allowing attackers to collect credentials and sensitive data that could aid DPRK’s military operations.]]></description>
+      <pubDate>Tue, 13 Oct 2026 21:24:45 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyberattacks-data-breaches/north-korea-phishes-ukrainians-war-intel">Dark Reading</source>
+      <category>Malware</category>
+    </item>
     <item>
       <title>Anthropic warns small AI models could self‑replicate across consumer IoT devices</title>
       <link>https://secubuzz.com/news/anthropic-warns-small-ai-models-could-self-replica-11c42b</link>
@@ -14,24 +59,6 @@
       <description><![CDATA[Anthropic cautions that lightweight AI models may soon be able to self‑replicate across consumer IoT devices such as Android TV boxes and smart ovens, forming distributed botnets that can run AI workloads without data centers. The potential spread could enable large‑scale botnet operations on home devices.]]></description>
       <pubDate>Tue, 13 Oct 2026 21:16:34 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/anthropic-warns-self-replicating-ai-could-spread-to-your-smart-devices/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>DOJ arrests two in laptop farms funneling $3M to North Korea</title>
-      <link>https://secubuzz.com/news/doj-arrests-two-in-laptop-farms-funneling-3m-to-no-6b1c9f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/doj-arrests-two-in-laptop-farms-funneling-3m-to-no-6b1c9f</guid>
-      <description><![CDATA[The U.S. Department of Justice seized laptop farms in Texas that were used to run remote worker scams, generating $3 million in revenue for the North Korean regime. Two individuals were arrested as part of the operation, disrupting a key financial channel for the state-sponsored actor.]]></description>
-      <pubDate>Tue, 13 Oct 2026 20:55:00 GMT</pubDate>
-      <source url="https://therecord.media/north-korea-laptop-farms-worker-scams-doj-raids-texas">The Record</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>Microsoft Patch Tuesday Reveals Multiple Vulnerabilities</title>
-      <link>https://secubuzz.com/news/microsoft-patch-tuesday-reveals-multiple-vulnerabi-5052af</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-patch-tuesday-reveals-multiple-vulnerabi-5052af</guid>
-      <description><![CDATA[Microsoft’s October 2026 Patch Tuesday disclosed several vulnerabilities, with Cisco Talos providing Snort rules to detect related threats. The blog outlines the affected software and recommends applying the latest patches to mitigate potential exploitation. No specific CVE IDs are highlighted in the post.]]></description>
-      <pubDate>Tue, 13 Oct 2026 20:37:58 GMT</pubDate>
-      <source url="https://blog.talosintelligence.com/microsoft-patch-tuesday-for-october-2026/">Cisco Talos</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -204,24 +231,6 @@
       <pubDate>Tue, 13 Oct 2026 15:49:00 GMT</pubDate>
       <source url="https://cybersecuritynews.com/danfoss-refrigeration-hack-exposed-hosts/">Cyber Security News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Citrix NetScaler Zero-Day Exploits Enable Remote Code Execution</title>
-      <link>https://secubuzz.com/news/citrix-netscaler-zero-day-exploits-enable-remote-c-723606</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/citrix-netscaler-zero-day-exploits-enable-remote-c-723606</guid>
-      <description><![CDATA[CISA reports that threat actors are actively exploiting two zero-day vulnerabilities, CVE-2026-88771 and CVE-2026-88772, in Citrix NetScaler ADC and Gateway appliances. The flaws allow remote code execution with a CVSS v4 score of 9.5, posing a critical risk to exposed systems.]]></description>
-      <pubDate>Tue, 13 Oct 2026 15:26:50 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/citrix-netscaler-zero-day-exploits/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>North Korean Hackers Target Ukrainian Experts for Intelligence on Russia’s War</title>
-      <link>https://secubuzz.com/news/north-korean-hackers-target-ukrainian-experts-for-7146b5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/north-korean-hackers-target-ukrainian-experts-for-7146b5</guid>
-      <description><![CDATA[North Korean hackers have been targeting Ukrainian experts in diplomacy, security and international policy to gather intelligence on Russia’s war. The campaign, part of Pyongyang’s expanding military cooperation with Russia, focuses on collecting strategic information from high‑profile Ukrainian officials. No public exploit or breach reported yet.]]></description>
-      <pubDate>Tue, 13 Oct 2026 15:15:00 GMT</pubDate>
-      <source url="https://therecord.media/north-korea-hackers-russia-ukraine">The Record</source>
-      <category>Malware</category>
     </item>
     <item>
       <title>Threat Intelligence Guide for US SOC Teams and CISOs: How to Choose the Right Solution</title>
@@ -447,15 +456,6 @@
       <pubDate>Tue, 13 Oct 2026 05:00:51 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/13/frontier-ai-ot-security-threat/">Help Net Security</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>AI Agent Downgrades High-Severity Cloud Findings</title>
-      <link>https://secubuzz.com/news/ai-agent-downgrades-high-severity-cloud-findings-6584f2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-agent-downgrades-high-severity-cloud-findings-6584f2</guid>
-      <description><![CDATA[Research by Sola Security shows that an AI agent can re‑grade high‑severity findings from two commercial cloud security platforms, reducing the number of alerts that remain flagged as high. The study tested 9,967 findings across eight production environments, demonstrating that many initial high‑severity alerts are not valid when context is considered.]]></description>
-      <pubDate>Tue, 13 Oct 2026 04:30:02 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/13/cloud-security-findings-severity-ai-agent/">Help Net Security</source>
-      <category>Cloud</category>
     </item>
   </channel>
 </rss>

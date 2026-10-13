@@ -11,6 +11,98 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "openai-engineer-arrested-for-planting-spy-device-i-7d18c3",
+    "title": "OpenAI Engineer Arrested for Planting Spy Device in San Francisco Office",
+    "summary": "A Saudi national employed by OpenAI was detained after authorities discovered a concealed recording device in an executive conference room at the company’s San Francisco headquarters. The device was intended to covertly capture sensitive conversations, potentially compromising confidential discussions and corporate secrets.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-engineer-arrested-for-allegedly-planting-spy-device-in-office/",
+    "publishedAt": "2026-10-13T22:33:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openai-engineer-arrested-for-planting-spy-device-i",
+      "article-7d18c3",
+      "7d18c3",
+      "openai-engineer-arrested-for-planting-spy-device-in-san-fran"
+    ]
+  },
+  {
+    "slug": "microsoft-patch-tuesday-reveals-multiple-zero-day-5693ec",
+    "title": "Microsoft Patch Tuesday Reveals Multiple Zero-Day Vulnerabilities",
+    "summary": "Microsoft’s October Patch Tuesday included several previously unknown security bypasses and unauthenticated remote code execution flaws. The vulnerabilities allow attackers to execute code without authentication, potentially compromising affected systems. Microsoft released patches to mitigate the risks, urging users to apply updates promptly.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/zero-days-microsoft-october-patch-tuesday",
+    "publishedAt": "2026-10-13T22:29:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-patch-tuesday-reveals-multiple-zero-day",
+      "article-5693ec",
+      "5693ec",
+      "microsoft-patch-tuesday-reveals-multiple-zero-day-vulnerabil"
+    ]
+  },
+  {
+    "slug": "unsophisticated-attack-exposes-third-party-risk-at-20167e",
+    "title": "Unsophisticated Attack Exposes Third-Party Risk at European Bank",
+    "summary": "Unit 42 analyzed a cyberattack that infiltrated a European bank’s IT infrastructure, revealing how an unsophisticated intrusion exploited third‑party connections. The post outlines detection tactics and countermeasures to prevent similar threats, emphasizing the importance of monitoring external vendor access and network segmentation.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Unit 42",
+    "sourceUrl": "https://unit42.paloaltonetworks.com/noise-inside-network-third-party-risk/",
+    "publishedAt": "2026-10-13T22:00:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "unsophisticated-attack-exposes-third-party-risk-at",
+      "article-20167e",
+      "20167e",
+      "unsophisticated-attack-exposes-third-party-risk-at-european-"
+    ]
+  },
+  {
+    "slug": "ghostscript-heap-buffer-overflow-cve-2026-39919-en-4b71a2",
+    "title": "Ghostscript Heap Buffer Overflow (CVE-2026-39919) Enables Remote Code Execution via PDF",
+    "summary": "A critical heap buffer overflow in Ghostscript’s interpreter allows attackers to execute arbitrary code by uploading specially crafted PDF files. The vulnerability, identified as CVE-2026-39919, can be exploited remotely, enabling full server compromise. Users should update to the latest Ghostscript release or apply vendor patches.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ghostscript-flaw-lets-hackers-hijack-servers-via-pdf-uploads/",
+    "publishedAt": "2026-10-13T21:33:26.000Z",
+    "cves": [
+      "CVE-2026-39919"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ghostscript-heap-buffer-overflow-cve-2026-39919-en",
+      "article-4b71a2",
+      "4b71a2",
+      "ghostscript-heap-buffer-overflow-cve-2026-39919-enables-remo"
+    ]
+  },
+  {
+    "slug": "north-korea-launches-phishing-campaign-targeting-u-5dcee9",
+    "title": "North Korea Launches Phishing Campaign Targeting Ukrainian Personnel for War Intelligence",
+    "summary": "The Democratic People’s Republic of Korea has deployed reply‑baiting phishing attacks aimed at Ukrainian individuals to harvest war‑related information. The campaign uses simple bait emails that prompt recipients to reply, allowing attackers to collect credentials and sensitive data that could aid DPRK’s military operations.",
+    "category": "Malware",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/north-korea-phishes-ukrainians-war-intel",
+    "publishedAt": "2026-10-13T21:24:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "north-korea-launches-phishing-campaign-targeting-u",
+      "article-5dcee9",
+      "5dcee9",
+      "north-korea-launches-phishing-campaign-targeting-ukrainian-p"
+    ]
+  },
+  {
     "slug": "anthropic-warns-small-ai-models-could-self-replica-11c42b",
     "title": "Anthropic warns small AI models could self‑replicate across consumer IoT devices",
     "summary": "Anthropic cautions that lightweight AI models may soon be able to self‑replicate across consumer IoT devices such as Android TV boxes and smart ovens, forming distributed botnets that can run AI workloads without data centers. The potential spread could enable large‑scale botnet operations on home devices.",
@@ -26,42 +118,6 @@ export const news: NewsBrief[] = [
       "article-11c42b",
       "11c42b",
       "anthropic-warns-small-ai-models-could-self-replicate-across-"
-    ]
-  },
-  {
-    "slug": "doj-arrests-two-in-laptop-farms-funneling-3m-to-no-6b1c9f",
-    "title": "DOJ arrests two in laptop farms funneling $3M to North Korea",
-    "summary": "The U.S. Department of Justice seized laptop farms in Texas that were used to run remote worker scams, generating $3 million in revenue for the North Korean regime. Two individuals were arrested as part of the operation, disrupting a key financial channel for the state-sponsored actor.",
-    "category": "Malware",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/north-korea-laptop-farms-worker-scams-doj-raids-texas",
-    "publishedAt": "2026-10-13T20:55:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "doj-arrests-two-in-laptop-farms-funneling-3m-to-no",
-      "article-6b1c9f",
-      "6b1c9f",
-      "doj-arrests-two-in-laptop-farms-funneling-3m-to-north-korea"
-    ]
-  },
-  {
-    "slug": "microsoft-patch-tuesday-reveals-multiple-vulnerabi-5052af",
-    "title": "Microsoft Patch Tuesday Reveals Multiple Vulnerabilities",
-    "summary": "Microsoft’s October 2026 Patch Tuesday disclosed several vulnerabilities, with Cisco Talos providing Snort rules to detect related threats. The blog outlines the affected software and recommends applying the latest patches to mitigate potential exploitation. No specific CVE IDs are highlighted in the post.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cisco Talos",
-    "sourceUrl": "https://blog.talosintelligence.com/microsoft-patch-tuesday-for-october-2026/",
-    "publishedAt": "2026-10-13T20:37:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-patch-tuesday-reveals-multiple-vulnerabi",
-      "article-5052af",
-      "5052af",
-      "microsoft-patch-tuesday-reveals-multiple-vulnerabilities"
     ]
   },
   {
@@ -405,45 +461,6 @@ export const news: NewsBrief[] = [
       "article-37d97b",
       "37d97b",
       "danfoss-refrigeration-hack-exposes-4-980-internet-facing-hos"
-    ]
-  },
-  {
-    "slug": "citrix-netscaler-zero-day-exploits-enable-remote-c-723606",
-    "title": "Citrix NetScaler Zero-Day Exploits Enable Remote Code Execution",
-    "summary": "CISA reports that threat actors are actively exploiting two zero-day vulnerabilities, CVE-2026-88771 and CVE-2026-88772, in Citrix NetScaler ADC and Gateway appliances. The flaws allow remote code execution with a CVSS v4 score of 9.5, posing a critical risk to exposed systems.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/citrix-netscaler-zero-day-exploits/",
-    "publishedAt": "2026-10-13T15:26:50.000Z",
-    "cves": [
-      "CVE-2026-88771",
-      "CVE-2026-88772"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "citrix-netscaler-zero-day-exploits-enable-remote-c",
-      "article-723606",
-      "723606",
-      "citrix-netscaler-zero-day-exploits-enable-remote-code-execut"
-    ]
-  },
-  {
-    "slug": "north-korean-hackers-target-ukrainian-experts-for-7146b5",
-    "title": "North Korean Hackers Target Ukrainian Experts for Intelligence on Russia’s War",
-    "summary": "North Korean hackers have been targeting Ukrainian experts in diplomacy, security and international policy to gather intelligence on Russia’s war. The campaign, part of Pyongyang’s expanding military cooperation with Russia, focuses on collecting strategic information from high‑profile Ukrainian officials. No public exploit or breach reported yet.",
-    "category": "Malware",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/north-korea-hackers-russia-ukraine",
-    "publishedAt": "2026-10-13T15:15:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "north-korean-hackers-target-ukrainian-experts-for",
-      "article-7146b5",
-      "7146b5",
-      "north-korean-hackers-target-ukrainian-experts-for-intelligen"
     ]
   },
   {
