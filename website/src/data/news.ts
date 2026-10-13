@@ -11,6 +11,94 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "low-cost-android-phones-ship-with-preinstalled-mal-26f803",
+    "title": "Low-Cost Android Phones Ship With Preinstalled Malware Turning Devices Into Residential Proxies",
+    "summary": "Low‑cost Android smartphones built on MediaTek platforms are shipped with malicious firmware that covertly installs apps, enables ad fraud, and converts devices into residential proxies. Bitdefender tracks the activity under the name Midnight Mimosa.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/low-cost-android-phones-ship-with.html",
+    "publishedAt": "2026-10-13T06:00:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "low-cost-android-phones-ship-with-preinstalled-mal",
+      "article-26f803",
+      "26f803",
+      "low-cost-android-phones-ship-with-preinstalled-malware-turni"
+    ]
+  },
+  {
+    "slug": "frontier-ai-models-successfully-complete-all-ot-at-8a077c",
+    "title": "Frontier AI Models Successfully Complete All OT Attack Objectives in Booz Allen Lab",
+    "summary": "Booz Allen tested frontier AI models against an isolated industrial‑control testbed, mapping the network, identifying equipment weaknesses, writing exploits, pivoting into production systems, and ultimately taking administrative control of a robotic arm. The models cleared all eight predefined attack goals.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/13/frontier-ai-ot-security-threat/",
+    "publishedAt": "2026-10-13T05:00:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "frontier-ai-models-successfully-complete-all-ot-at",
+      "article-8a077c",
+      "8a077c",
+      "frontier-ai-models-successfully-complete-all-ot-attack-objec"
+    ]
+  },
+  {
+    "slug": "ai-agent-downgrades-high-severity-cloud-findings-6584f2",
+    "title": "AI Agent Downgrades High-Severity Cloud Findings",
+    "summary": "Research by Sola Security shows that an AI agent can re‑grade high‑severity findings from two commercial cloud security platforms, reducing the number of alerts that remain flagged as high. The study tested 9,967 findings across eight production environments, demonstrating that many initial high‑severity alerts are not valid when context is considered.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/13/cloud-security-findings-severity-ai-agent/",
+    "publishedAt": "2026-10-13T04:30:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-agent-downgrades-high-severity-cloud-findings",
+      "article-6584f2",
+      "6584f2"
+    ]
+  },
+  {
+    "slug": "canonical-suffers-four-hour-ddos-disruption-of-ubu-4db69d",
+    "title": "Canonical Suffers Four‑Hour DDoS Disruption of Ubuntu Websites and Security APIs",
+    "summary": "Canonical experienced a sustained distributed denial‑of‑service attack on October 8, 2026, taking down its main websites and security information services for over four hours. This incident marks the company’s second major DDoS event this year, following a broader outage in April.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/ubuntu-websites-ddos-attack/",
+    "publishedAt": "2026-10-13T04:09:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "canonical-suffers-four-hour-ddos-disruption-of-ubu",
+      "article-4db69d",
+      "4db69d",
+      "canonical-suffers-four-hour-ddos-disruption-of-ubuntu-websit"
+    ]
+  },
+  {
+    "slug": "cybersecurity-job-openings-for-october-13-2026-127587",
+    "title": "Cybersecurity Job Openings for October 13, 2026",
+    "summary": "Help Net Security lists current cybersecurity positions, including a CISO & Head of IT role in Israel and a Cloud Threat Hunter position in the USA. The postings detail responsibilities, location, and application links for each role, offering opportunities for professionals in IT leadership and threat hunting.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/13/cybersecurity-jobs-available-right-now-october-13-2026/",
+    "publishedAt": "2026-10-13T04:00:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cybersecurity-job-openings-for-october-13-2026",
+      "article-127587",
+      "127587"
+    ]
+  },
+  {
     "slug": "yandex-data-centers-hit-by-drone-attacks-causing-c-37aaef",
     "title": "Yandex Data Centers Hit by Drone Attacks, Causing Cloud File Outages",
     "summary": "Drone strikes damaged three Yandex data centers in Russia, shutting down two facilities and partially disabling a third. The outage prevented Yandex Disk users and businesses on Yandex Cloud from accessing files and services across the platform. Yandex confirmed the disruption and is working to restore operations.",
@@ -388,24 +476,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "canonical-s-websites-hit-by-second-ddos-attack-of-3b26c3",
-    "title": "Canonical’s Websites Hit by Second DDoS Attack of 2026",
-    "summary": "Canonical’s main Ubuntu and Canonical websites, including the Ubuntu blog and developer portal, were disrupted during a second DDoS attack this year. The incident caused temporary inaccessibility for users and developers. No data breach was reported, and the sites were restored after mitigation efforts.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/canonical-websites-disrupted-in-second-ddos-attack-this-year/",
-    "publishedAt": "2026-10-12T11:58:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "canonical-s-websites-hit-by-second-ddos-attack-of",
-      "article-3b26c3",
-      "3b26c3",
-      "canonical-s-websites-hit-by-second-ddos-attack-of-2026"
-    ]
-  },
-  {
     "slug": "windows-11-23h2-enterprise-editions-reach-end-of-s-1da70a",
     "title": "Windows 11 23H2 Enterprise Editions Reach End of Support in 30 Days",
     "summary": "Microsoft announced that Windows 11 23H2 Enterprise, Education, and IoT Enterprise editions will cease receiving security updates in 30 days. Users must upgrade to newer releases or apply extended support options. Failure to update may expose systems to unpatched vulnerabilities and compliance risks.",
@@ -509,23 +579,6 @@ export const news: NewsBrief[] = [
       "phishing-emails-target-ai-assistant-users",
       "article-e9a99b",
       "e9a99b"
-    ]
-  },
-  {
-    "slug": "preinstalled-malware-on-low-cost-android-phones-5784c0",
-    "title": "Preinstalled Malware on Low-Cost Android Phones",
-    "summary": "Malware shipped in firmware on budget Android devices from MediaTek platforms cannot be removed by users. The compromise occurs before first use, enabling persistent control over the device. Users should avoid purchasing from untrusted marketplaces and seek firmware updates.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/12/midnight-mimosa-malware-cheap-android-phones/",
-    "publishedAt": "2026-10-12T10:53:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "preinstalled-malware-on-low-cost-android-phones",
-      "article-5784c0",
-      "5784c0"
     ]
   },
   {
