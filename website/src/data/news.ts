@@ -11,6 +11,113 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "adobe-releases-patches-for-140-vulnerabilities-acr-1e9138",
+    "title": "Adobe Releases Patches for 140 Vulnerabilities Across 10 Products",
+    "summary": "Adobe has released security patches addressing 140 vulnerabilities that span ten of its products, including Commerce, Photoshop, ColdFusion, Substance 3D, Dimension, FrameMaker, and Bridge. The update mitigates a range of potential weaknesses, from memory corruption to input validation flaws, and is available for download through Adobe’s official update channels.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/adobe-patches-140-vulnerabilities-across-10-products/",
+    "publishedAt": "2026-10-13T17:14:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "adobe-releases-patches-for-140-vulnerabilities-acr",
+      "article-1e9138",
+      "1e9138",
+      "adobe-releases-patches-for-140-vulnerabilities-across-10-pro"
+    ]
+  },
+  {
+    "slug": "google-partially-reverses-chrome-bug-bounty-cuts-4a9997",
+    "title": "Google Partially Reverses Chrome Bug Bounty Cuts",
+    "summary": "Google announced a partial reversal of its recent Chrome bug bounty reductions, refocusing rewards on complex memory‑safety vulnerabilities. The change aims to encourage researchers to target harder‑to‑detect flaws while maintaining a balanced incentive structure for the Chrome security community and to sustain long‑term security improvements across the browser ecosystem.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/google-partially-reverses-chrome-bug-bounty-cuts/",
+    "publishedAt": "2026-10-13T17:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-partially-reverses-chrome-bug-bounty-cuts",
+      "article-4a9997",
+      "4a9997"
+    ]
+  },
+  {
+    "slug": "tfg-london-cyberattack-hits-hobbs-and-whistles-ret-6ff4f3",
+    "title": "TFG London Cyberattack Hits Hobbs and Whistles Retail Systems",
+    "summary": "TFG London reported a cybersecurity incident that disrupted IT systems used by Phase Eight, Hobbs, and Whistles premium fashion brands. The attack impacted operational systems, causing service interruptions for the retailers. No data exfiltration was confirmed, but the incident highlights the need for robust incident response plans.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/tfg-london-cyberattack-disrupts-systems-at-hobbs-and-whistles-retailers/",
+    "publishedAt": "2026-10-13T16:44:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "tfg-london-cyberattack-hits-hobbs-and-whistles-ret",
+      "article-6ff4f3",
+      "6ff4f3",
+      "tfg-london-cyberattack-hits-hobbs-and-whistles-retail-system"
+    ]
+  },
+  {
+    "slug": "github-expands-npm-publishing-expiry-to-prevent-pa-21a2de",
+    "title": "GitHub Expands npm Publishing Expiry to Prevent Package Hijacking",
+    "summary": "GitHub now expires unvalidated npm trusted publishing configurations after 48 hours, preventing attackers from pushing new versions of other users’ packages without credential theft. The change follows research showing attackers could hijack packages by exploiting the lack of immediate validation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/github-tightens-npm-publishing-after.html",
+    "publishedAt": "2026-10-13T16:18:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "github-expands-npm-publishing-expiry-to-prevent-pa",
+      "article-21a2de",
+      "21a2de",
+      "github-expands-npm-publishing-expiry-to-prevent-package-hija"
+    ]
+  },
+  {
+    "slug": "vercel-sandbox-flaw-lets-ai-agents-leak-data-outsi-7a82c5",
+    "title": "Vercel Sandbox Flaw Lets AI Agents Leak Data Outside Approved Networks",
+    "summary": "A network filtering flaw in Vercel Sandbox, used to run code in isolated environments, allows rogue AI agents to bypass certificate validation and transmit data outside approved networks, exposing sensitive information to attackers.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/sandbox-vulnerability-gives-rogue-ai-agents-path-out",
+    "publishedAt": "2026-10-13T16:18:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "vercel-sandbox-flaw-lets-ai-agents-leak-data-outsi",
+      "article-7a82c5",
+      "7a82c5",
+      "vercel-sandbox-flaw-lets-ai-agents-leak-data-outside-approve"
+    ]
+  },
+  {
+    "slug": "zoom-clients-vulnerable-to-certificate-validation-561636",
+    "title": "Zoom Clients Vulnerable to Certificate Validation Flaw Exposing Sensitive Data",
+    "summary": "Two high‑severity certificate validation flaws in Zoom Windows clients and the My Notes feature allow attackers without login credentials to access sensitive information over a network. The vulnerabilities affect desktop and mobile platforms, requiring urgent updates for personal and business deployments.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/zoom-certificate-validation-flaw/",
+    "publishedAt": "2026-10-13T16:15:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "zoom-clients-vulnerable-to-certificate-validation",
+      "article-561636",
+      "561636",
+      "zoom-clients-vulnerable-to-certificate-validation-flaw-expos"
+    ]
+  },
+  {
     "slug": "west-african-scam-operation-arrests-over-100-suspe-6e51cc",
     "title": "West African Scam Operation Arrests Over 100 Suspected Trafficking Victims",
     "summary": "Police in Ghana and Nigeria arrested more than two dozen individuals during a U.K.-hosted operation targeting a West African scam network. The raid also involved tech companies, aiming to dismantle the trafficking scheme and recover victims. No cyber breach or data compromise was reported.",
@@ -47,21 +154,77 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "ivanti-connect-secure-zero-day-exploited-in-active-6986fe",
-    "title": "Ivanti Connect Secure Zero-Day Exploited in Active Attacks",
-    "summary": "Ivanti has warned that a zero‑day vulnerability in its Connect Secure remote access gateway is actively being exploited. The flaw allows attackers to gain unauthorized access to corporate networks. Customers are urged to apply the vendor’s patch immediately to mitigate the risk.",
+    "slug": "ivanti-connect-secure-zero-day-vulnerability-activ-62a5b6",
+    "title": "Ivanti Connect Secure Zero‑Day Vulnerability Actively Exploited",
+    "summary": "Ivanti disclosed an actively exploited zero‑day vulnerability (CVE‑2026‑104935) in Ivanti Connect Secure that permits remote attackers to execute arbitrary commands without authentication. The flaw has a CVSS score of 8.6 and has impacted a limited number of customers as reported in the October 13, 2026 advisory.",
     "category": "Vulnerability",
     "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ivanti-warns-of-connect-secure-zero-day-exploited-in-attacks/",
-    "publishedAt": "2026-10-13T15:45:50.000Z",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/ivanti-connect-secure-zero-day/",
+    "publishedAt": "2026-10-13T15:55:26.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "ivanti-connect-secure-zero-day-exploited-in-active",
-      "article-6986fe",
-      "6986fe",
-      "ivanti-connect-secure-zero-day-exploited-in-active-attacks"
+      "ivanti-connect-secure-zero-day-vulnerability-activ",
+      "article-62a5b6",
+      "62a5b6",
+      "ivanti-connect-secure-zero-day-vulnerability-actively-exploi"
+    ]
+  },
+  {
+    "slug": "cloudflare-optimizes-data-pipeline-hardware-usage-1f69a0",
+    "title": "Cloudflare Optimizes Data Pipeline Hardware Usage",
+    "summary": "Cloudflare outlines methods to reduce hardware consumption while maintaining high data pipeline throughput. The company details techniques such as dynamic scaling, efficient resource allocation, and data quality safeguards. These practices aim to lower operational costs and environmental impact without sacrificing performance or accuracy in data processing workflows.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/rewinding-the-exponential/",
+    "publishedAt": "2026-10-13T15:51:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cloudflare-optimizes-data-pipeline-hardware-usage",
+      "article-1f69a0",
+      "1f69a0"
+    ]
+  },
+  {
+    "slug": "danfoss-refrigeration-hack-exposes-4-980-internet-37d97b",
+    "title": "Danfoss Refrigeration Hack Exposes 4,980 Internet-Facing Hosts",
+    "summary": "A cyberattack on Danfoss refrigeration systems has left 4,980 hosts exposed to the internet, with 2,911 in France and 517 in South Africa. The exposure was identified via a Shodan search, indicating potential vulnerability in Danfoss web pages that could be exploited by attackers.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/danfoss-refrigeration-hack-exposed-hosts/",
+    "publishedAt": "2026-10-13T15:49:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "danfoss-refrigeration-hack-exposes-4-980-internet",
+      "article-37d97b",
+      "37d97b",
+      "danfoss-refrigeration-hack-exposes-4-980-internet-facing-hos"
+    ]
+  },
+  {
+    "slug": "citrix-netscaler-zero-day-exploits-enable-remote-c-723606",
+    "title": "Citrix NetScaler Zero-Day Exploits Enable Remote Code Execution",
+    "summary": "CISA reports that threat actors are actively exploiting two zero-day vulnerabilities, CVE-2026-88771 and CVE-2026-88772, in Citrix NetScaler ADC and Gateway appliances. The flaws allow remote code execution with a CVSS v4 score of 9.5, posing a critical risk to exposed systems.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/citrix-netscaler-zero-day-exploits/",
+    "publishedAt": "2026-10-13T15:26:50.000Z",
+    "cves": [
+      "CVE-2026-88771",
+      "CVE-2026-88772"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "citrix-netscaler-zero-day-exploits-enable-remote-c",
+      "article-723606",
+      "723606",
+      "citrix-netscaler-zero-day-exploits-enable-remote-code-execut"
     ]
   },
   {
@@ -103,6 +266,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "threat-intelligence-guide-for-us-soc-teams-and-cis-154f6a",
+    "title": "Threat Intelligence Guide for US SOC Teams and CISOs: How to Choose the Right Solution",
+    "summary": "The guide explains how US SOC teams and CISOs can select an enterprise threat intelligence solution that delivers relevant data, integrates with existing workflows, and speeds threat investigation. It highlights priorities for SOCs, such as rapid investigation and enrichment, and for MSSPs, such as multi‑tenancy and customer separation.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/threat-intelligence-guide/",
+    "publishedAt": "2026-10-13T15:02:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "threat-intelligence-guide-for-us-soc-teams-and-cis",
+      "article-154f6a",
+      "154f6a",
+      "threat-intelligence-guide-for-us-soc-teams-and-cisos-how-to-"
+    ]
+  },
+  {
     "slug": "litellm-v1-77-7-exposes-high-impact-vulnerabilitie-691179",
     "title": "LiteLLM v1.77.7 Exposes High-Impact Vulnerabilities CVE-2026-35029 and CVE-2026-59823",
     "summary": "Security assessment of LiteLLM v1.77.7 revealed missing authorization on /config/update, allowing any authenticated user to modify configuration. Two high-impact vulnerabilities, CVE-2026-35029 and CVE-2026-59823, were fixed in v1.83.9. Users should upgrade to the latest version to mitigate the risk.",
@@ -139,6 +320,24 @@ export const news: NewsBrief[] = [
       "article-744701",
       "744701",
       "attackers-exploit-mfa-gaps-to-access-vpns-and-windows-system"
+    ]
+  },
+  {
+    "slug": "g2a-com-sees-35-rise-in-antivirus-and-security-sof-48c940",
+    "title": "G2A.COM Sees 35% Rise in Antivirus and Security Software Orders",
+    "summary": "G2A.COM reports a 35% year‑on‑year increase in antivirus and security software orders, now accounting for 43% of all cybersecurity purchases on the marketplace. The digital marketplace serves over 35 million users across 180 countries, indicating growing demand for security solutions.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/g2a-com-reports-35-growth-in-security-software-orders-outpacing-vpn-growth/",
+    "publishedAt": "2026-10-13T13:56:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "g2a-com-sees-35-rise-in-antivirus-and-security-sof",
+      "article-48c940",
+      "48c940",
+      "g2a-com-sees-35-rise-in-antivirus-and-security-software-orde"
     ]
   },
   {
@@ -284,23 +483,21 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "ghostscript-vulnerability-cve-2026-39919-enables-c-4a2276",
-    "title": "Ghostscript Vulnerability CVE-2026-39919 Enables Code Execution via Malicious PDFs",
-    "summary": "A critical flaw in Ghostscript (CVE-2026-39919) allows attackers to craft PDF files that execute arbitrary code on vulnerable servers. The issue affects all versions before 10.08.0 and carries a CVSS score of 9.8. Updating to 10.08.0 or later mitigates the risk.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/critical-ghostscript-flaw/",
-    "publishedAt": "2026-10-13T12:48:46.000Z",
-    "cves": [
-      "CVE-2026-39919"
-    ],
+    "slug": "ridge-security-s-ridgeone-keeps-penetration-testin-6af10d",
+    "title": "Ridge Security’s RidgeOne Keeps Penetration Testing Data In‑House",
+    "summary": "Ridge Security launches RidgeOne, a self‑contained AI‑powered penetration testing platform that runs entirely within customer environments. By integrating RidgeGen with an open‑weight model on NVIDIA DGX Spark, the solution performs deep security assessments without transmitting data to external AI services or incurring token fees. It targets mid‑size organizations with limited AI resources.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/13/ridge-security-ridgeone/",
+    "publishedAt": "2026-10-13T12:49:07.000Z",
+    "cves": [],
     "additionalSources": [],
     "aliases": [
-      "ghostscript-vulnerability-cve-2026-39919-enables-c",
-      "article-4a2276",
-      "4a2276",
-      "ghostscript-vulnerability-cve-2026-39919-enables-code-execut"
+      "ridge-security-s-ridgeone-keeps-penetration-testin",
+      "article-6af10d",
+      "6af10d",
+      "ridge-security-s-ridgeone-keeps-penetration-testing-data-in-"
     ]
   },
   {
@@ -432,42 +629,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "npm-trusted-publishing-flaw-exposes-1-500-packages-6ea283",
-    "title": "npm Trusted Publishing Flaw Exposes 1,500 Packages to Takeover",
-    "summary": "A flaw in npm’s Trusted Publishing feature allowed attackers to take over more than 1,500 packages by reclaiming GitHub repository names. The affected packages had over 10 million total downloads, creating a serious supply‑chain risk for developers, CI/CD systems, and organizations using npm.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/npm-trusted-publishing-flaw/",
-    "publishedAt": "2026-10-13T10:56:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "npm-trusted-publishing-flaw-exposes-1-500-packages",
-      "article-6ea283",
-      "6ea283",
-      "npm-trusted-publishing-flaw-exposes-1-500-packages-to-takeov"
-    ]
-  },
-  {
-    "slug": "citrix-netscaler-zero-days-used-to-deploy-remote-a-4b293f",
-    "title": "Citrix NetScaler Zero‑Days Used to Deploy Remote Access Tool",
-    "summary": "Threat actors exploited two critical Citrix NetScaler zero‑day vulnerabilities, including CVE‑2026‑88771, to deploy a modified Platypus remote access tool on exposed ADC and Gateway appliances. The attack enabled rapid movement from initial access to persistent control of edge devices that sit between corporate networks and the public internet.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-exploit-citrix-netscaler-0-days/",
-    "publishedAt": "2026-10-13T10:33:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "citrix-netscaler-zero-days-used-to-deploy-remote-a",
-      "article-4b293f",
-      "4b293f",
-      "citrix-netscaler-zero-days-used-to-deploy-remote-access-tool"
-    ]
-  },
-  {
     "slug": "bitdefender-ai-visibility-and-control-product-walk-7fea58",
     "title": "Bitdefender AI Visibility and Control Product Walkthrough",
     "summary": "The article demonstrates how Bitdefender’s AI Visibility and Control tool allows users to run local model runtimes without installing additional software, keeping data on the machine. It shows how developers can add coding assistant extensions that do not appear in installed programs, emphasizing privacy and local processing.",
@@ -501,24 +662,6 @@ export const news: NewsBrief[] = [
       "article-3d7821",
       "3d7821",
       "top-10-best-mobile-application-security-testing-tools-in-202"
-    ]
-  },
-  {
-    "slug": "meta-zurp-ai-toolkit-connects-burp-suite-with-ai-c-1aaa07",
-    "title": "Meta Zurp AI Toolkit Connects Burp Suite With AI Coding Agents for Bug Bounty Research",
-    "summary": "Meta unveiled Zurp, an open‑source toolkit that links Burp Suite workflows with AI coding agents to streamline bug‑bounty research. Designed for vetted researchers in Meta’s program, it consolidates testing functions, reduces tool switching, and manages logins and tokens within a single interface, enhancing efficiency.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/meta-zurp-ai-toolkit/",
-    "publishedAt": "2026-10-13T10:03:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "meta-zurp-ai-toolkit-connects-burp-suite-with-ai-c",
-      "article-1aaa07",
-      "1aaa07",
-      "meta-zurp-ai-toolkit-connects-burp-suite-with-ai-coding-agen"
     ]
   },
   {
@@ -557,24 +700,6 @@ export const news: NewsBrief[] = [
       "article-6c0372",
       "6c0372",
       "gitlab-urges-patch-for-critical-rce-vulnerability-cve-2026-9"
-    ]
-  },
-  {
-    "slug": "refrigeration-controllers-hack-causes-food-spoilag-15315b",
-    "title": "Refrigeration Controllers Hack Causes Food Spoilage in European Supermarkets",
-    "summary": "A cyberattack targeted refrigeration controllers, causing hundreds of supermarkets to defrost their refrigerators and freezers, leading to widespread food spoilage. The incident demonstrates the vulnerability of industrial control systems in retail environments.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/refrigeration-controller-hack-spoils-food-across-european-supermarkets/",
-    "publishedAt": "2026-10-13T08:28:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "refrigeration-controllers-hack-causes-food-spoilag",
-      "article-15315b",
-      "15315b",
-      "refrigeration-controllers-hack-causes-food-spoilage-in-europ"
     ]
   },
   {

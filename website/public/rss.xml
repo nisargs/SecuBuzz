@@ -5,8 +5,62 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Oct 2026 16:21:13 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 17:38:48 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Adobe Releases Patches for 140 Vulnerabilities Across 10 Products</title>
+      <link>https://secubuzz.com/news/adobe-releases-patches-for-140-vulnerabilities-acr-1e9138</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/adobe-releases-patches-for-140-vulnerabilities-acr-1e9138</guid>
+      <description><![CDATA[Adobe has released security patches addressing 140 vulnerabilities that span ten of its products, including Commerce, Photoshop, ColdFusion, Substance 3D, Dimension, FrameMaker, and Bridge. The update mitigates a range of potential weaknesses, from memory corruption to input validation flaws, and is available for download through Adobe’s official update channels.]]></description>
+      <pubDate>Tue, 13 Oct 2026 17:14:42 GMT</pubDate>
+      <source url="https://www.securityweek.com/adobe-patches-140-vulnerabilities-across-10-products/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Google Partially Reverses Chrome Bug Bounty Cuts</title>
+      <link>https://secubuzz.com/news/google-partially-reverses-chrome-bug-bounty-cuts-4a9997</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-partially-reverses-chrome-bug-bounty-cuts-4a9997</guid>
+      <description><![CDATA[Google announced a partial reversal of its recent Chrome bug bounty reductions, refocusing rewards on complex memory‑safety vulnerabilities. The change aims to encourage researchers to target harder‑to‑detect flaws while maintaining a balanced incentive structure for the Chrome security community and to sustain long‑term security improvements across the browser ecosystem.]]></description>
+      <pubDate>Tue, 13 Oct 2026 17:00:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/google-partially-reverses-chrome-bug-bounty-cuts/">SecurityWeek</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>TFG London Cyberattack Hits Hobbs and Whistles Retail Systems</title>
+      <link>https://secubuzz.com/news/tfg-london-cyberattack-hits-hobbs-and-whistles-ret-6ff4f3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/tfg-london-cyberattack-hits-hobbs-and-whistles-ret-6ff4f3</guid>
+      <description><![CDATA[TFG London reported a cybersecurity incident that disrupted IT systems used by Phase Eight, Hobbs, and Whistles premium fashion brands. The attack impacted operational systems, causing service interruptions for the retailers. No data exfiltration was confirmed, but the incident highlights the need for robust incident response plans.]]></description>
+      <pubDate>Tue, 13 Oct 2026 16:44:18 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/tfg-london-cyberattack-disrupts-systems-at-hobbs-and-whistles-retailers/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>GitHub Expands npm Publishing Expiry to Prevent Package Hijacking</title>
+      <link>https://secubuzz.com/news/github-expands-npm-publishing-expiry-to-prevent-pa-21a2de</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/github-expands-npm-publishing-expiry-to-prevent-pa-21a2de</guid>
+      <description><![CDATA[GitHub now expires unvalidated npm trusted publishing configurations after 48 hours, preventing attackers from pushing new versions of other users’ packages without credential theft. The change follows research showing attackers could hijack packages by exploiting the lack of immediate validation.]]></description>
+      <pubDate>Tue, 13 Oct 2026 16:18:18 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/github-tightens-npm-publishing-after.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Vercel Sandbox Flaw Lets AI Agents Leak Data Outside Approved Networks</title>
+      <link>https://secubuzz.com/news/vercel-sandbox-flaw-lets-ai-agents-leak-data-outsi-7a82c5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/vercel-sandbox-flaw-lets-ai-agents-leak-data-outsi-7a82c5</guid>
+      <description><![CDATA[A network filtering flaw in Vercel Sandbox, used to run code in isolated environments, allows rogue AI agents to bypass certificate validation and transmit data outside approved networks, exposing sensitive information to attackers.]]></description>
+      <pubDate>Tue, 13 Oct 2026 16:18:00 GMT</pubDate>
+      <source url="https://therecord.media/sandbox-vulnerability-gives-rogue-ai-agents-path-out">The Record</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Zoom Clients Vulnerable to Certificate Validation Flaw Exposing Sensitive Data</title>
+      <link>https://secubuzz.com/news/zoom-clients-vulnerable-to-certificate-validation-561636</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/zoom-clients-vulnerable-to-certificate-validation-561636</guid>
+      <description><![CDATA[Two high‑severity certificate validation flaws in Zoom Windows clients and the My Notes feature allow attackers without login credentials to access sensitive information over a network. The vulnerabilities affect desktop and mobile platforms, requiring urgent updates for personal and business deployments.]]></description>
+      <pubDate>Tue, 13 Oct 2026 16:15:16 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/zoom-certificate-validation-flaw/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>West African Scam Operation Arrests Over 100 Suspected Trafficking Victims</title>
       <link>https://secubuzz.com/news/west-african-scam-operation-arrests-over-100-suspe-6e51cc</link>
@@ -26,12 +80,39 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>Ivanti Connect Secure Zero-Day Exploited in Active Attacks</title>
-      <link>https://secubuzz.com/news/ivanti-connect-secure-zero-day-exploited-in-active-6986fe</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ivanti-connect-secure-zero-day-exploited-in-active-6986fe</guid>
-      <description><![CDATA[Ivanti has warned that a zero‑day vulnerability in its Connect Secure remote access gateway is actively being exploited. The flaw allows attackers to gain unauthorized access to corporate networks. Customers are urged to apply the vendor’s patch immediately to mitigate the risk.]]></description>
-      <pubDate>Tue, 13 Oct 2026 15:45:50 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/ivanti-warns-of-connect-secure-zero-day-exploited-in-attacks/">BleepingComputer</source>
+      <title>Ivanti Connect Secure Zero‑Day Vulnerability Actively Exploited</title>
+      <link>https://secubuzz.com/news/ivanti-connect-secure-zero-day-vulnerability-activ-62a5b6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ivanti-connect-secure-zero-day-vulnerability-activ-62a5b6</guid>
+      <description><![CDATA[Ivanti disclosed an actively exploited zero‑day vulnerability (CVE‑2026‑104935) in Ivanti Connect Secure that permits remote attackers to execute arbitrary commands without authentication. The flaw has a CVSS score of 8.6 and has impacted a limited number of customers as reported in the October 13, 2026 advisory.]]></description>
+      <pubDate>Tue, 13 Oct 2026 15:55:26 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/ivanti-connect-secure-zero-day/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Cloudflare Optimizes Data Pipeline Hardware Usage</title>
+      <link>https://secubuzz.com/news/cloudflare-optimizes-data-pipeline-hardware-usage-1f69a0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-optimizes-data-pipeline-hardware-usage-1f69a0</guid>
+      <description><![CDATA[Cloudflare outlines methods to reduce hardware consumption while maintaining high data pipeline throughput. The company details techniques such as dynamic scaling, efficient resource allocation, and data quality safeguards. These practices aim to lower operational costs and environmental impact without sacrificing performance or accuracy in data processing workflows.]]></description>
+      <pubDate>Tue, 13 Oct 2026 15:51:41 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/rewinding-the-exponential/">Cloudflare Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Danfoss Refrigeration Hack Exposes 4,980 Internet-Facing Hosts</title>
+      <link>https://secubuzz.com/news/danfoss-refrigeration-hack-exposes-4-980-internet-37d97b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/danfoss-refrigeration-hack-exposes-4-980-internet-37d97b</guid>
+      <description><![CDATA[A cyberattack on Danfoss refrigeration systems has left 4,980 hosts exposed to the internet, with 2,911 in France and 517 in South Africa. The exposure was identified via a Shodan search, indicating potential vulnerability in Danfoss web pages that could be exploited by attackers.]]></description>
+      <pubDate>Tue, 13 Oct 2026 15:49:00 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/danfoss-refrigeration-hack-exposed-hosts/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Citrix NetScaler Zero-Day Exploits Enable Remote Code Execution</title>
+      <link>https://secubuzz.com/news/citrix-netscaler-zero-day-exploits-enable-remote-c-723606</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/citrix-netscaler-zero-day-exploits-enable-remote-c-723606</guid>
+      <description><![CDATA[CISA reports that threat actors are actively exploiting two zero-day vulnerabilities, CVE-2026-88771 and CVE-2026-88772, in Citrix NetScaler ADC and Gateway appliances. The flaws allow remote code execution with a CVSS v4 score of 9.5, posing a critical risk to exposed systems.]]></description>
+      <pubDate>Tue, 13 Oct 2026 15:26:50 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/citrix-netscaler-zero-day-exploits/">Cyber Security News</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -53,6 +134,15 @@
       <category>Malware</category>
     </item>
     <item>
+      <title>Threat Intelligence Guide for US SOC Teams and CISOs: How to Choose the Right Solution</title>
+      <link>https://secubuzz.com/news/threat-intelligence-guide-for-us-soc-teams-and-cis-154f6a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/threat-intelligence-guide-for-us-soc-teams-and-cis-154f6a</guid>
+      <description><![CDATA[The guide explains how US SOC teams and CISOs can select an enterprise threat intelligence solution that delivers relevant data, integrates with existing workflows, and speeds threat investigation. It highlights priorities for SOCs, such as rapid investigation and enrichment, and for MSSPs, such as multi‑tenancy and customer separation.]]></description>
+      <pubDate>Tue, 13 Oct 2026 15:02:20 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/threat-intelligence-guide/">Cyber Security News</source>
+      <category>Policy</category>
+    </item>
+    <item>
       <title>LiteLLM v1.77.7 Exposes High-Impact Vulnerabilities CVE-2026-35029 and CVE-2026-59823</title>
       <link>https://secubuzz.com/news/litellm-v1-77-7-exposes-high-impact-vulnerabilitie-691179</link>
       <guid isPermaLink="true">https://secubuzz.com/news/litellm-v1-77-7-exposes-high-impact-vulnerabilitie-691179</guid>
@@ -69,6 +159,15 @@
       <pubDate>Tue, 13 Oct 2026 14:01:11 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/the-mfa-gaps-attackers-are-still-exploiting/">BleepingComputer</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>G2A.COM Sees 35% Rise in Antivirus and Security Software Orders</title>
+      <link>https://secubuzz.com/news/g2a-com-sees-35-rise-in-antivirus-and-security-sof-48c940</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/g2a-com-sees-35-rise-in-antivirus-and-security-sof-48c940</guid>
+      <description><![CDATA[G2A.COM reports a 35% year‑on‑year increase in antivirus and security software orders, now accounting for 43% of all cybersecurity purchases on the marketplace. The digital marketplace serves over 35 million users across 180 countries, indicating growing demand for security solutions.]]></description>
+      <pubDate>Tue, 13 Oct 2026 13:56:51 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/g2a-com-reports-35-growth-in-security-software-orders-outpacing-vpn-growth/">Cyber Security News</source>
+      <category>Policy</category>
     </item>
     <item>
       <title>SAP Addresses Maximum‑Severity OAuth2 SSRF Flaw in Cloud SDK for Python</title>
@@ -143,13 +242,13 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Ghostscript Vulnerability CVE-2026-39919 Enables Code Execution via Malicious PDFs</title>
-      <link>https://secubuzz.com/news/ghostscript-vulnerability-cve-2026-39919-enables-c-4a2276</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ghostscript-vulnerability-cve-2026-39919-enables-c-4a2276</guid>
-      <description><![CDATA[A critical flaw in Ghostscript (CVE-2026-39919) allows attackers to craft PDF files that execute arbitrary code on vulnerable servers. The issue affects all versions before 10.08.0 and carries a CVSS score of 9.8. Updating to 10.08.0 or later mitigates the risk.]]></description>
-      <pubDate>Tue, 13 Oct 2026 12:48:46 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/critical-ghostscript-flaw/">Cyber Security News</source>
-      <category>Vulnerability</category>
+      <title>Ridge Security’s RidgeOne Keeps Penetration Testing Data In‑House</title>
+      <link>https://secubuzz.com/news/ridge-security-s-ridgeone-keeps-penetration-testin-6af10d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ridge-security-s-ridgeone-keeps-penetration-testin-6af10d</guid>
+      <description><![CDATA[Ridge Security launches RidgeOne, a self‑contained AI‑powered penetration testing platform that runs entirely within customer environments. By integrating RidgeGen with an open‑weight model on NVIDIA DGX Spark, the solution performs deep security assessments without transmitting data to external AI services or incurring token fees. It targets mid‑size organizations with limited AI resources.]]></description>
+      <pubDate>Tue, 13 Oct 2026 12:49:07 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/13/ridge-security-ridgeone/">Help Net Security</source>
+      <category>Policy</category>
     </item>
     <item>
       <title>Swann Communications SWIFI-SE2KIC Firmware Vulnerability CVE-2026-107605 Allows Unauthenticated Live Video Access</title>
@@ -215,24 +314,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>npm Trusted Publishing Flaw Exposes 1,500 Packages to Takeover</title>
-      <link>https://secubuzz.com/news/npm-trusted-publishing-flaw-exposes-1-500-packages-6ea283</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/npm-trusted-publishing-flaw-exposes-1-500-packages-6ea283</guid>
-      <description><![CDATA[A flaw in npm’s Trusted Publishing feature allowed attackers to take over more than 1,500 packages by reclaiming GitHub repository names. The affected packages had over 10 million total downloads, creating a serious supply‑chain risk for developers, CI/CD systems, and organizations using npm.]]></description>
-      <pubDate>Tue, 13 Oct 2026 10:56:59 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/npm-trusted-publishing-flaw/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Citrix NetScaler Zero‑Days Used to Deploy Remote Access Tool</title>
-      <link>https://secubuzz.com/news/citrix-netscaler-zero-days-used-to-deploy-remote-a-4b293f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/citrix-netscaler-zero-days-used-to-deploy-remote-a-4b293f</guid>
-      <description><![CDATA[Threat actors exploited two critical Citrix NetScaler zero‑day vulnerabilities, including CVE‑2026‑88771, to deploy a modified Platypus remote access tool on exposed ADC and Gateway appliances. The attack enabled rapid movement from initial access to persistent control of edge devices that sit between corporate networks and the public internet.]]></description>
-      <pubDate>Tue, 13 Oct 2026 10:33:55 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-exploit-citrix-netscaler-0-days/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>Bitdefender AI Visibility and Control Product Walkthrough</title>
       <link>https://secubuzz.com/news/bitdefender-ai-visibility-and-control-product-walk-7fea58</link>
       <guid isPermaLink="true">https://secubuzz.com/news/bitdefender-ai-visibility-and-control-product-walk-7fea58</guid>
@@ -248,15 +329,6 @@
       <description><![CDATA[A ranked list of mobile application security testing tools evaluates source code inspection, penetration testing, and hardening techniques. The guide helps teams identify vulnerabilities before release, covering both static and dynamic analysis to protect apps from hostile devices and reduce security gaps.]]></description>
       <pubDate>Tue, 13 Oct 2026 10:25:09 GMT</pubDate>
       <source url="https://cybersecuritynews.com/best-mobile-appsec-testing-tools/">Cyber Security News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Meta Zurp AI Toolkit Connects Burp Suite With AI Coding Agents for Bug Bounty Research</title>
-      <link>https://secubuzz.com/news/meta-zurp-ai-toolkit-connects-burp-suite-with-ai-c-1aaa07</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/meta-zurp-ai-toolkit-connects-burp-suite-with-ai-c-1aaa07</guid>
-      <description><![CDATA[Meta unveiled Zurp, an open‑source toolkit that links Burp Suite workflows with AI coding agents to streamline bug‑bounty research. Designed for vetted researchers in Meta’s program, it consolidates testing functions, reduces tool switching, and manages logins and tokens within a single interface, enhancing efficiency.]]></description>
-      <pubDate>Tue, 13 Oct 2026 10:03:55 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/meta-zurp-ai-toolkit/">Cyber Security News</source>
       <category>Policy</category>
     </item>
     <item>
@@ -276,15 +348,6 @@
       <pubDate>Tue, 13 Oct 2026 09:19:45 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/13/gitlab-ci-cd-regular-expression-compiler-vulnerability-cve-2026-97229/">Help Net Security</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Refrigeration Controllers Hack Causes Food Spoilage in European Supermarkets</title>
-      <link>https://secubuzz.com/news/refrigeration-controllers-hack-causes-food-spoilag-15315b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/refrigeration-controllers-hack-causes-food-spoilag-15315b</guid>
-      <description><![CDATA[A cyberattack targeted refrigeration controllers, causing hundreds of supermarkets to defrost their refrigerators and freezers, leading to widespread food spoilage. The incident demonstrates the vulnerability of industrial control systems in retail environments.]]></description>
-      <pubDate>Tue, 13 Oct 2026 08:28:51 GMT</pubDate>
-      <source url="https://www.securityweek.com/refrigeration-controller-hack-spoils-food-across-european-supermarkets/">SecurityWeek</source>
-      <category>Breach</category>
     </item>
     <item>
       <title>Scammers Target Active Phone Numbers via “Who’s this?” Replies</title>
@@ -393,69 +456,6 @@
       <pubDate>Mon, 12 Oct 2026 16:07:33 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/12/france-cyberattack-supermarket-freezers/">Help Net Security</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Weekly Recap: Helpdesk 0‑Days, Rogue Certs, ShinyHunters Arrest, AI‑Fooling Malware and More</title>
-      <link>https://secubuzz.com/news/weekly-recap-helpdesk-0-days-rogue-certs-shinyhunt-6a3384</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/weekly-recap-helpdesk-0-days-rogue-certs-shinyhunt-6a3384</guid>
-      <description><![CDATA[The weekly recap covers multiple security events, including newly disclosed helpdesk 0‑day vulnerabilities, rogue certificate issuances, the arrest of ShinyHunters members, and AI‑fooling malware. It highlights the rapid exploitation of new flaws and the ongoing challenges in securing digital infrastructure.]]></description>
-      <pubDate>Mon, 12 Oct 2026 15:16:26 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/weekly-recap-helpdesk-0-days-rogue.html">The Hacker News</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>FBI Arrests Suspect in ShinyHunters Data Theft</title>
-      <link>https://secubuzz.com/news/fbi-arrests-suspect-in-shinyhunters-data-theft-72bdf7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fbi-arrests-suspect-in-shinyhunters-data-theft-72bdf7</guid>
-      <description><![CDATA[The FBI has arrested an individual linked to ShinyHunters, a hacking group that stole a trove of FBI data on its own agents. The arrest follows the group's disclosure of the breach, which exposed sensitive information about FBI personnel. The case underscores the agency’s vulnerability to insider threats.]]></description>
-      <pubDate>Mon, 12 Oct 2026 15:01:26 GMT</pubDate>
-      <source url="https://www.schneier.com/blog/archives/2026/10/fbi-arrests-suspect-in-fbi-hacking-case.html">Schneier on Security</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Cloudflare Enhances Logpush with SQL‑Based Transformers</title>
-      <link>https://secubuzz.com/news/cloudflare-enhances-logpush-with-sql-based-transfo-6c060a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-enhances-logpush-with-sql-based-transfo-6c060a</guid>
-      <description><![CDATA[Cloudflare’s Logpush now supports Transformers, enabling teams to filter, redact, and reshape log streams using SQL before export. Powered by Apache DataFusion and Apache Arrow, Transformers apply changes directly to log data, ensuring only desired information reaches destinations. This feature improves data privacy and compliance during log export.]]></description>
-      <pubDate>Mon, 12 Oct 2026 14:44:59 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/transformers-on-logpush/">Cloudflare Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>IonQ to Acquire Zero Trust Firm Elisity for Up to $1.3 Billion</title>
-      <link>https://secubuzz.com/news/ionq-to-acquire-zero-trust-firm-elisity-for-up-to-14f240</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ionq-to-acquire-zero-trust-firm-elisity-for-up-to-14f240</guid>
-      <description><![CDATA[IonQ announced an all-stock acquisition of zero‑trust firm Elisity, adding its least‑privilege access technology to IonQ’s security portfolio. The deal values Elisity at up to $1.3 billion and expands IonQ’s offerings in identity and access management.]]></description>
-      <pubDate>Mon, 12 Oct 2026 14:25:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/ionq-to-acquire-zero-trust-firm-elisity-for-up-to-1-3-billion/">SecurityWeek</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Google Phishing Kit Bypasses MFA Using WebSockets</title>
-      <link>https://secubuzz.com/news/google-phishing-kit-bypasses-mfa-using-websockets-604dfd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-phishing-kit-bypasses-mfa-using-websockets-604dfd</guid>
-      <description><![CDATA[A phishing kit targeting Google accounts uses live WebSocket connections to relay authentication requests and steal authenticated sessions. By forwarding login steps in real time, attackers bypass MFA without breaking security checks. The campaign focuses on users linked to research organizations, demonstrating a new MFA evasion technique that requires victim interaction.]]></description>
-      <pubDate>Mon, 12 Oct 2026 13:11:06 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/google-aitm-phishing-kit/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Dark Reading Names Fahmida Y Rashid as New Editor-in-Chief</title>
-      <link>https://secubuzz.com/news/dark-reading-names-fahmida-y-rashid-as-new-editor-638367</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/dark-reading-names-fahmida-y-rashid-as-new-editor-638367</guid>
-      <description><![CDATA[Dark Reading announced that Fahmida Y Rashid will serve as the new editor‑in‑chief, continuing the publication’s focus on cybersecurity news and analysis. Rashid’s appointment follows the previous editor’s tenure and is expected to maintain the site’s momentum in delivering timely threat intelligence.]]></description>
-      <pubDate>Mon, 12 Oct 2026 12:30:58 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyber-risk/passing-baton-dark-reading-new-editor-in-chief">Dark Reading</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>IBM Issues Patches for 22 Verify Access Vulnerabilities, Including Two Critical RCE Bugs</title>
-      <link>https://secubuzz.com/news/ibm-issues-patches-for-22-verify-access-vulnerabil-29f55b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ibm-issues-patches-for-22-verify-access-vulnerabil-29f55b</guid>
-      <description><![CDATA[IBM released security patches for 22 vulnerabilities in its Verify Identity Access and Security Verify Access products. Two critical flaws, CVE‑2026‑78401 and CVE‑2026‑78406, enable unauthenticated remote code execution on appliance and container deployments via deserialization of untrusted data. The patches mitigate the 9.8‑scored RCE.]]></description>
-      <pubDate>Mon, 12 Oct 2026 12:07:34 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/ibm-patches-22-verify-access-flaw/">Cyber Security News</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
