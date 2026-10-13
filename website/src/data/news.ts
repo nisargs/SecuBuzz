@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "scammers-target-active-phone-numbers-via-who-s-thi-7a5bea",
+    "title": "Scammers Target Active Phone Numbers via “Who’s this?” Replies",
+    "summary": "Scammers use automated replies to the “Who’s this?” text prompt to confirm active phone numbers, increasing their value on the dark web and making them prime fraud targets. The tactic exploits user curiosity and the lack of verification in messaging services.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/10/your-whos-this-reply-is-exactly-what-text-scammers-want",
+    "publishedAt": "2026-10-13T07:30:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "scammers-target-active-phone-numbers-via-who-s-thi",
+      "article-7a5bea",
+      "7a5bea",
+      "scammers-target-active-phone-numbers-via-who-s-this-replies"
+    ]
+  },
+  {
     "slug": "low-cost-android-phones-ship-with-preinstalled-mal-26f803",
     "title": "Low-Cost Android Phones Ship With Preinstalled Malware Turning Devices Into Residential Proxies",
     "summary": "Low‑cost Android smartphones built on MediaTek platforms are shipped with malicious firmware that covertly installs apps, enables ad fraud, and converts devices into residential proxies. Bitdefender tracks the activity under the name Midnight Mimosa.",
@@ -26,6 +44,24 @@ export const news: NewsBrief[] = [
       "article-26f803",
       "26f803",
       "low-cost-android-phones-ship-with-preinstalled-malware-turni"
+    ]
+  },
+  {
+    "slug": "ai-s-role-in-shaping-future-cybersecurity-playbook-425e7a",
+    "title": "AI’s Role in Shaping Future Cybersecurity Playbooks",
+    "summary": "The article discusses how artificial intelligence has reached a pivotal point in privacy, cybersecurity, and online safety, urging the application of decades of experience to prevent irreversible consequences. It highlights the responsibility of current generations to guide AI development responsibly.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/13/cybersecurity-ai-safety-red-lines/",
+    "publishedAt": "2026-10-13T05:30:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-s-role-in-shaping-future-cybersecurity-playbook",
+      "article-425e7a",
+      "425e7a",
+      "ai-s-role-in-shaping-future-cybersecurity-playbooks"
     ]
   },
   {
@@ -795,24 +831,6 @@ export const news: NewsBrief[] = [
       "gentlemen-ransomware-group-claims-breach-of-kfc",
       "article-1a032a",
       "1a032a"
-    ]
-  },
-  {
-    "slug": "p7-darksword-ios-exploit-kit-enables-keychain-thef-38c38f",
-    "title": "P7 DarkSword iOS Exploit Kit Enables Keychain Theft and Crypto Drainers",
-    "summary": "The P7 DarkSword iOS exploit kit can steal on‑device Keychain credentials, drain cryptocurrency wallets, and communicate via a SpringBoard command‑and‑control channel. Mobile EDR rules, indicators of compromise, and defensive hardening steps are provided to detect and block the kit.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/p7-darksword-ios-exploit-kit-defense",
-    "publishedAt": "2026-10-11T16:41:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "p7-darksword-ios-exploit-kit-enables-keychain-thef",
-      "article-38c38f",
-      "38c38f",
-      "p7-darksword-ios-exploit-kit-enables-keychain-theft-and-cryp"
     ]
   },
   {

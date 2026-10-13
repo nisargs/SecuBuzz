@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Oct 2026 07:03:22 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 08:18:24 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Scammers Target Active Phone Numbers via “Who’s this?” Replies</title>
+      <link>https://secubuzz.com/news/scammers-target-active-phone-numbers-via-who-s-thi-7a5bea</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/scammers-target-active-phone-numbers-via-who-s-thi-7a5bea</guid>
+      <description><![CDATA[Scammers use automated replies to the “Who’s this?” text prompt to confirm active phone numbers, increasing their value on the dark web and making them prime fraud targets. The tactic exploits user curiosity and the lack of verification in messaging services.]]></description>
+      <pubDate>Tue, 13 Oct 2026 07:30:51 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/threat-intel/2026/10/your-whos-this-reply-is-exactly-what-text-scammers-want">Malwarebytes Labs</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>Low-Cost Android Phones Ship With Preinstalled Malware Turning Devices Into Residential Proxies</title>
       <link>https://secubuzz.com/news/low-cost-android-phones-ship-with-preinstalled-mal-26f803</link>
@@ -15,6 +24,15 @@
       <pubDate>Tue, 13 Oct 2026 06:00:11 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/low-cost-android-phones-ship-with.html">The Hacker News</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>AI’s Role in Shaping Future Cybersecurity Playbooks</title>
+      <link>https://secubuzz.com/news/ai-s-role-in-shaping-future-cybersecurity-playbook-425e7a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-s-role-in-shaping-future-cybersecurity-playbook-425e7a</guid>
+      <description><![CDATA[The article discusses how artificial intelligence has reached a pivotal point in privacy, cybersecurity, and online safety, urging the application of decades of experience to prevent irreversible consequences. It highlights the responsibility of current generations to guide AI development responsibly.]]></description>
+      <pubDate>Tue, 13 Oct 2026 05:30:01 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/13/cybersecurity-ai-safety-red-lines/">Help Net Security</source>
+      <category>Policy</category>
     </item>
     <item>
       <title>Frontier AI Models Successfully Complete All OT Attack Objectives in Booz Allen Lab</title>
@@ -404,15 +422,6 @@
       <category>Ransomware</category>
     </item>
     <item>
-      <title>P7 DarkSword iOS Exploit Kit Enables Keychain Theft and Crypto Drainers</title>
-      <link>https://secubuzz.com/news/p7-darksword-ios-exploit-kit-enables-keychain-thef-38c38f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/p7-darksword-ios-exploit-kit-enables-keychain-thef-38c38f</guid>
-      <description><![CDATA[The P7 DarkSword iOS exploit kit can steal on‑device Keychain credentials, drain cryptocurrency wallets, and communicate via a SpringBoard command‑and‑control channel. Mobile EDR rules, indicators of compromise, and defensive hardening steps are provided to detect and block the kit.]]></description>
-      <pubDate>Sun, 11 Oct 2026 16:41:54 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/p7-darksword-ios-exploit-kit-defense">CyberNews AI</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>Claude AI Exploits SQL Injection Flaws to Run Commands on Real Servers</title>
       <link>https://secubuzz.com/news/claude-ai-exploits-sql-injection-flaws-to-run-comm-464403</link>
       <guid isPermaLink="true">https://secubuzz.com/news/claude-ai-exploits-sql-injection-flaws-to-run-comm-464403</guid>
@@ -447,15 +456,6 @@
       <pubDate>Sun, 11 Oct 2026 03:21:01 GMT</pubDate>
       <source url="https://cybersecuritynews.com/palo-alto-globalprotect-flaw-vpn-access/">Cyber Security News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Chinese Hacker Uses ARTEX AI and Claude Agents to Target South Korean Banks</title>
-      <link>https://secubuzz.com/news/chinese-hacker-uses-artex-ai-and-claude-agents-to-3b0955</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chinese-hacker-uses-artex-ai-and-claude-agents-to-3b0955</guid>
-      <description><![CDATA[A Chinese hacker launched attacks on South Korean banks using the ARTEX AI penetration testing suite and Claude AI agents. The campaign targeted banking systems, exploiting the AI tools to conduct reconnaissance and credential theft, compromising sensitive financial data and disrupting services.]]></description>
-      <pubDate>Sat, 10 Oct 2026 14:16:17 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks/">BleepingComputer</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>

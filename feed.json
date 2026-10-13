@@ -1,5 +1,23 @@
 [
   {
+    "id": "https://www.malwarebytes.com/blog/threat-intel/2026/10/your-whos-this-reply-is-exactly-what-text-scammers-want",
+    "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/10/your-whos-this-reply-is-exactly-what-text-scammers-want",
+    "title": "Scammers Target Active Phone Numbers via “Who’s this?” Replies",
+    "headline": "Scammers Target Active Phone Numbers via “Who’s this?” Replies",
+    "summary": "Scammers use automated replies to the “Who’s this?” text prompt to confirm active phone numbers, increasing their value on the dark web and making them prime fraud targets. The tactic exploits user curiosity and the lack of verification in messaging services.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "publishedAt": "2026-10-13T07:30:51.000Z",
+    "url": "https://www.malwarebytes.com/blog/threat-intel/2026/10/your-whos-this-reply-is-exactly-what-text-scammers-want",
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/p7-darksword-ios-exploit-kit-defense"
+      }
+    ]
+  },
+  {
     "id": "https://thehackernews.com/2026/10/low-cost-android-phones-ship-with.html",
     "sourceUrl": "https://thehackernews.com/2026/10/low-cost-android-phones-ship-with.html",
     "title": "Low-Cost Android Phones Ship With Preinstalled Malware Turning Devices Into Residential Proxies",
@@ -16,6 +34,19 @@
         "sourceUrl": "https://www.helpnetsecurity.com/2026/10/12/midnight-mimosa-malware-cheap-android-phones/"
       }
     ]
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/13/cybersecurity-ai-safety-red-lines/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/13/cybersecurity-ai-safety-red-lines/",
+    "title": "AI’s Role in Shaping Future Cybersecurity Playbooks",
+    "headline": "AI’s Role in Shaping Future Cybersecurity Playbooks",
+    "summary": "The article discusses how artificial intelligence has reached a pivotal point in privacy, cybersecurity, and online safety, urging the application of decades of experience to prevent irreversible consequences. It highlights the responsibility of current generations to guide AI development responsibly.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-13T05:30:01.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/13/cybersecurity-ai-safety-red-lines/",
+    "additionalSources": []
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/10/13/frontier-ai-ot-security-threat/",
@@ -688,24 +719,6 @@
     "publishedAt": "2026-10-12T03:21:04.000Z",
     "url": "https://cybersecuritynews.com/gentlemen-ransomware-kfc-breach/",
     "additionalSources": []
-  },
-  {
-    "id": "https://cybernewsai.com/blog/p7-darksword-ios-exploit-kit-defense",
-    "sourceUrl": "https://cybernewsai.com/blog/p7-darksword-ios-exploit-kit-defense",
-    "title": "P7 DarkSword iOS Exploit Kit Enables Keychain Theft and Crypto Drainers",
-    "headline": "P7 DarkSword iOS Exploit Kit Enables Keychain Theft and Crypto Drainers",
-    "summary": "The P7 DarkSword iOS exploit kit can steal on‑device Keychain credentials, drain cryptocurrency wallets, and communicate via a SpringBoard command‑and‑control channel. Mobile EDR rules, indicators of compromise, and defensive hardening steps are provided to detect and block the kit.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-10-11T16:41:54.000Z",
-    "url": "https://cybernewsai.com/blog/p7-darksword-ios-exploit-kit-defense",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html"
-      }
-    ]
   },
   {
     "id": "https://cybersecuritynews.com/claude-exploited-software-flaws/",
