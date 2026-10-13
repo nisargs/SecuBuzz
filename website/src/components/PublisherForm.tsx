@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Copy, Check, Lock, ShieldCheck } from 'lucide-react';
+import { Mail, Copy, Check, Lock } from 'lucide-react';
 
 const SUBMISSION_TEMPLATE = `To: publishers@secubuzz.com
 Subject: [Feed Submission] <Publication Name>
@@ -128,14 +128,6 @@ export function PublisherForm() {
             {SUBMISSION_TEMPLATE}
           </pre>
         </div>
-      </div>
-
-      {/* Security Note */}
-      <div className="flex items-start gap-2.5 rounded-lg border border-line/60 bg-bg/40 p-3 text-xs text-subtle">
-        <ShieldCheck className="h-4 w-4 shrink-0 text-accent mt-0.5" />
-        <p className="leading-relaxed">
-          Zero-attack-surface architecture: Inbound feeds are evaluated by human editors. No unauthenticated forms or database writes exist to exploit.
-        </p>
       </div>
     </div>
   );
