@@ -1,5 +1,270 @@
 [
   {
+    "id": "https://therecord.media/ghana-nigeria-scam-centers-raided-uk-us",
+    "sourceUrl": "https://therecord.media/ghana-nigeria-scam-centers-raided-uk-us",
+    "title": "West African Scam Operation Arrests Over 100 Suspected Trafficking Victims",
+    "headline": "West African Scam Operation Arrests Over 100 Suspected Trafficking Victims",
+    "summary": "Police in Ghana and Nigeria arrested more than two dozen individuals during a U.K.-hosted operation targeting a West African scam network. The raid also involved tech companies, aiming to dismantle the trafficking scheme and recover victims. No cyber breach or data compromise was reported.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Record",
+    "publishedAt": "2026-10-13T16:05:00.000Z",
+    "url": "https://therecord.media/ghana-nigeria-scam-centers-raided-uk-us",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/meta-says-hackers-took-code-personal-data-of-1500-in-github-breach/",
+    "sourceUrl": "https://www.securityweek.com/meta-says-hackers-took-code-personal-data-of-1500-in-github-breach/",
+    "title": "Meta Reports Hackers Stealing Code and Personal Data of 1,500 in GitHub Breach",
+    "headline": "Meta Reports Hackers Stealing Code and Personal Data of 1,500 in GitHub Breach",
+    "summary": "Meta confirmed that hackers accessed code and personal data of 1,500 users in a GitHub breach, primarily affecting Meta employees in the United States. Affected individuals are offered credit monitoring services. No further details on the breach scope or remediation steps were disclosed.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-13T16:01:00.000Z",
+    "url": "https://www.securityweek.com/meta-says-hackers-took-code-personal-data-of-1500-in-github-breach/",
+    "additionalSources": [
+      {
+        "source": "Check Point Research",
+        "sourceUrl": "https://research.checkpoint.com/2026/12th-october-threat-intelligence-report/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/ivanti-warns-of-connect-secure-zero-day-exploited-in-attacks/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ivanti-warns-of-connect-secure-zero-day-exploited-in-attacks/",
+    "title": "Ivanti Connect Secure Zero-Day Exploited in Active Attacks",
+    "headline": "Ivanti Connect Secure Zero-Day Exploited in Active Attacks",
+    "summary": "Ivanti has warned that a zero‑day vulnerability in its Connect Secure remote access gateway is actively being exploited. The flaw allows attackers to gain unauthorized access to corporate networks. Customers are urged to apply the vendor’s patch immediately to mitigate the risk.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-13T15:45:50.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/ivanti-warns-of-connect-secure-zero-day-exploited-in-attacks/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/docker-hub-flaw-let-attackers-impersonate-users-tamper-with-images/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/docker-hub-flaw-let-attackers-impersonate-users-tamper-with-images/",
+    "title": "Docker Hub Vulnerability Allows User Impersonation and Image Tampering",
+    "headline": "Docker Hub Vulnerability Allows User Impersonation and Image Tampering",
+    "summary": "Docker Hub flaw CVE-2026-105445 allows attackers to impersonate users and tamper with images by using personal access tokens to access other users' repositories. This critical vulnerability could lead to unauthorized code injection and distribution of malicious containers. Docker has issued a patch; users should update immediately.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-13T15:20:20.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/docker-hub-flaw-let-attackers-impersonate-users-tamper-with-images/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://therecord.media/north-korea-hackers-russia-ukraine",
+    "sourceUrl": "https://therecord.media/north-korea-hackers-russia-ukraine",
+    "title": "North Korean Hackers Target Ukrainian Experts for Intelligence on Russia’s War",
+    "headline": "North Korean Hackers Target Ukrainian Experts for Intelligence on Russia’s War",
+    "summary": "North Korean hackers have been targeting Ukrainian experts in diplomacy, security and international policy to gather intelligence on Russia’s war. The campaign, part of Pyongyang’s expanding military cooperation with Russia, focuses on collecting strategic information from high‑profile Ukrainian officials. No public exploit or breach reported yet.",
+    "category": "NATION_STATE",
+    "severity": "HIGH",
+    "source": "The Record",
+    "publishedAt": "2026-10-13T15:15:00.000Z",
+    "url": "https://therecord.media/north-korea-hackers-russia-ukraine",
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/russian-internet-provider-skynet-reports-outages-ddos"
+      }
+    ]
+  },
+  {
+    "id": "https://research.checkpoint.com/2026/when-llm-gateways-go-wrong-findings-from-litellm/",
+    "sourceUrl": "https://research.checkpoint.com/2026/when-llm-gateways-go-wrong-findings-from-litellm/",
+    "title": "LiteLLM v1.77.7 Exposes High-Impact Vulnerabilities CVE-2026-35029 and CVE-2026-59823",
+    "headline": "LiteLLM v1.77.7 Exposes High-Impact Vulnerabilities CVE-2026-35029 and CVE-2026-59823",
+    "summary": "Security assessment of LiteLLM v1.77.7 revealed missing authorization on /config/update, allowing any authenticated user to modify configuration. Two high-impact vulnerabilities, CVE-2026-35029 and CVE-2026-59823, were fixed in v1.83.9. Users should upgrade to the latest version to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Check Point Research",
+    "publishedAt": "2026-10-13T14:30:26.000Z",
+    "url": "https://research.checkpoint.com/2026/when-llm-gateways-go-wrong-findings-from-litellm/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/the-mfa-gaps-attackers-are-still-exploiting/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/the-mfa-gaps-attackers-are-still-exploiting/",
+    "title": "Attackers Exploit MFA Gaps to Access VPNs and Windows Systems",
+    "headline": "Attackers Exploit MFA Gaps to Access VPNs and Windows Systems",
+    "summary": "Attackers continue to exploit gaps in multi‑factor authentication, using stolen credentials to reach VPNs, RDP, and Windows systems that rely only on passwords. Specops highlights why cloud application protection is insufficient and offers steps to close these authentication gaps.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-13T14:01:11.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/the-mfa-gaps-attackers-are-still-exploiting/",
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/whatsapp-attachment-deploys-malware/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/sap-warns-of-maximum-severity-oauth2-ssrf-security-flaw/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/sap-warns-of-maximum-severity-oauth2-ssrf-security-flaw/",
+    "title": "SAP Addresses Maximum‑Severity OAuth2 SSRF Flaw in Cloud SDK for Python",
+    "headline": "SAP Addresses Maximum‑Severity OAuth2 SSRF Flaw in Cloud SDK for Python",
+    "summary": "SAP released October 2026 security updates that fix 20 vulnerabilities, including a maximum‑severity Server‑Side Request Forgery flaw in its Cloud SDK for Python. The SSRF flaw could allow attackers to make unauthorized requests from the SDK, potentially exposing internal resources.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-13T13:51:02.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/sap-warns-of-maximum-severity-oauth2-ssrf-security-flaw/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/13/trellix-wise-for-private-cloud-delivers-auditable-ai-investigations-for-security-teams/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/13/trellix-wise-for-private-cloud-delivers-auditable-ai-investigations-for-security-teams/",
+    "title": "Trellix Announces Trellix Wise for Private Cloud AI Core",
+    "headline": "Trellix Announces Trellix Wise for Private Cloud AI Core",
+    "summary": "Trellix launched Trellix Wise for Private Cloud, an on-premises federated AI core that extends security fabric across existing infrastructure. It aims to improve threat detection and response while preserving data sovereignty and governance, offering auditable AI investigations for security teams.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-13T13:35:06.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/13/trellix-wise-for-private-cloud-delivers-auditable-ai-investigations-for-security-teams/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/xworm-malware-2/",
+    "sourceUrl": "https://cybersecuritynews.com/xworm-malware-2/",
+    "title": "XWorm Malware Expands Beyond Password Theft to Spy and Hijack Browser Sessions",
+    "headline": "XWorm Malware Expands Beyond Password Theft to Spy and Hijack Browser Sessions",
+    "summary": "XWorm malware expands beyond password theft, enabling attackers to listen through infected computers’ microphones, track locations, and hijack browsers where users are already logged in. The malware’s plugin library turns a compromised Windows device into a spying tool and a gateway to online accounts without first stealing passwords.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-13T13:33:38.000Z",
+    "url": "https://cybersecuritynews.com/xworm-malware-2/",
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/xworm-rat-evolves-into-surveillance-platform/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/13/ninjaone-katana-ai-mcp/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/13/ninjaone-katana-ai-mcp/",
+    "title": "NinjaOne Launches Katana AI and MCP Server to Accelerate IT Problem Resolution",
+    "headline": "NinjaOne Launches Katana AI and MCP Server to Accelerate IT Problem Resolution",
+    "summary": "NinjaOne has introduced Katana AI, an agentic AI technician that assists IT workers, and the NinjaOne MCP server, an orchestration connector that extends governed access to existing AI tools. The announcement highlights how the platform aims to accelerate problem resolution by providing context-driven support for IT teams.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-13T13:26:43.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/13/ninjaone-katana-ai-mcp/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://therecord.media/ledger-cryptocurrency-wallet-implant-theft",
+    "sourceUrl": "https://therecord.media/ledger-cryptocurrency-wallet-implant-theft",
+    "title": "Ledger Reports Hardware Implant in Crypto Wallets Stole Recovery Phrases",
+    "headline": "Ledger Reports Hardware Implant in Crypto Wallets Stole Recovery Phrases",
+    "summary": "Ledger disclosed that cryptocurrency wallets sold through a Southeast Asian reseller contained a hardware implant that allowed attackers to extract recovery phrases and drain funds. The flaw compromised wallet security and exposed users to theft.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Record",
+    "publishedAt": "2026-10-13T13:18:00.000Z",
+    "url": "https://therecord.media/ledger-cryptocurrency-wallet-implant-theft",
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/86-million-crypto-heist-linked-to-ledger-signer-hardware-implant/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/13/ukraine-drone-strikes-yandex-data-centers/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/13/ukraine-drone-strikes-yandex-data-centers/",
+    "title": "Ukrainian Drones Strike Yandex Data Centers",
+    "headline": "Ukrainian Drones Strike Yandex Data Centers",
+    "summary": "Ukrainian drones struck three Yandex data centers, shutting down facilities in Sasovo, Vladimir, and partially in Kaluga. Yandex Cloud entered emergency mode on Oct 11, advising customers to activate disaster recovery plans. The attack disrupted services but did not expose data, highlighting the vulnerability of cloud infrastructure to physical threats.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-13T13:15:05.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/13/ukraine-drone-strikes-yandex-data-centers/",
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/yandex-data-center-service-outage/"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/xandr-fined-record-86-million-for.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/xandr-fined-record-86-million-for.html",
+    "title": "Xandr Fined €8.6 Million for Relaying Grindr Data",
+    "headline": "Xandr Fined €8.6 Million for Relaying Grindr Data",
+    "summary": "The Norwegian Data Protection Authority fined Xandr, Microsoft’s advertising unit, €8.6 million for illegally relaying Grindr users’ sensitive data to advertisers. The penalty was the largest issued by the watchdog, citing the very serious nature of the breach.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-13T13:12:32.000Z",
+    "url": "https://thehackernews.com/2026/10/xandr-fined-record-86-million-for.html",
+    "additionalSources": [
+      {
+        "source": "Malwarebytes Labs",
+        "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/grindr-users-sensitive-data-shared-through-ad-auctions-without-valid-consent"
+      },
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/norway-fines-microsoft-ad-firm-96-million-over-grindr-data-sharing/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/13/lattice-sentry-5-0-solution-stack/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/13/lattice-sentry-5-0-solution-stack/",
+    "title": "Lattice Sentry 5.0 Adds Quantum‑Resistant Firmware Security",
+    "headline": "Lattice Sentry 5.0 Adds Quantum‑Resistant Firmware Security",
+    "summary": "Lattice Semiconductor released Lattice Sentry 5.0, adding post‑quantum cryptography to its firmware resilience and attestation stack. The update delivers CNSA 2.0‑aligned, NIST‑compliant protection for AI data centers and critical infrastructure, enabling designers to deploy quantum‑resistant security in production firmware environments. This enhancement also includes automated integrity checks and secure boot features, ensuring firmware cannot be tampered with during supply chain attacks.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-13T13:04:59.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/13/lattice-sentry-5-0-solution-stack/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/critical-ghostscript-flaw/",
+    "sourceUrl": "https://cybersecuritynews.com/critical-ghostscript-flaw/",
+    "title": "Ghostscript Vulnerability CVE-2026-39919 Enables Code Execution via Malicious PDFs",
+    "headline": "Ghostscript Vulnerability CVE-2026-39919 Enables Code Execution via Malicious PDFs",
+    "summary": "A critical flaw in Ghostscript (CVE-2026-39919) allows attackers to craft PDF files that execute arbitrary code on vulnerable servers. The issue affects all versions before 10.08.0 and carries a CVSS score of 9.8. Updating to 10.08.0 or later mitigates the risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-13T12:48:46.000Z",
+    "url": "https://cybersecuritynews.com/critical-ghostscript-flaw/",
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/progress-marklogic-flaws/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-286-02",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-286-02",
+    "title": "Swann Communications SWIFI-SE2KIC Firmware Vulnerability CVE-2026-107605 Allows Unauthenticated Live Video Access",
+    "headline": "Swann Communications SWIFI-SE2KIC Firmware Vulnerability CVE-2026-107605 Allows Unauthenticated Live Video Access",
+    "summary": "The Swann Communications SWIFI-SE2KIC firmware (CVE-2026-107605) has a missing authentication flaw that lets local attackers view live video feeds without credentials. Affected firmware versions 2.0.22 and earlier are vulnerable; applying the vendor’s patch or updating firmware resolves the issue.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "CISA",
+    "publishedAt": "2026-10-13T12:00:00.000Z",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-286-02",
+    "additionalSources": []
+  },
+  {
     "id": "https://therecord.media/cyberattack-groceru-ahold-delhaize",
     "sourceUrl": "https://therecord.media/cyberattack-groceru-ahold-delhaize",
     "title": "Cyber Incident Affects Ahold Delhaize Stores in US, Netherlands, Belgium",
@@ -71,19 +336,6 @@
     ]
   },
   {
-    "id": "https://www.securityweek.com/xworm-rat-evolves-into-surveillance-platform/",
-    "sourceUrl": "https://www.securityweek.com/xworm-rat-evolves-into-surveillance-platform/",
-    "title": "XWorm RAT Expands to Full Surveillance Platform",
-    "headline": "XWorm RAT Expands to Full Surveillance Platform",
-    "summary": "XWorm RAT now supports over 30 plugins, enabling attackers to track user location, stream live audio, and hijack authenticated browser sessions. The enhanced capabilities allow persistent monitoring of victims across devices, increasing the threat surface for targeted espionage and data exfiltration.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-13T11:13:10.000Z",
-    "url": "https://www.securityweek.com/xworm-rat-evolves-into-surveillance-platform/",
-    "additionalSources": []
-  },
-  {
     "id": "https://thehackernews.com/2026/10/lg-smart-tvs-vulnerable-to-pre-auth.html",
     "sourceUrl": "https://thehackernews.com/2026/10/lg-smart-tvs-vulnerable-to-pre-auth.html",
     "title": "LG Smart TVs Vulnerable to Local Network Root Takeover",
@@ -124,24 +376,6 @@
       {
         "source": "Help Net Security",
         "sourceUrl": "https://www.helpnetsecurity.com/2026/10/13/slugfest-npm-trusted-publishing-flaw/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.securityweek.com/86-million-crypto-heist-linked-to-ledger-signer-hardware-implant/",
-    "sourceUrl": "https://www.securityweek.com/86-million-crypto-heist-linked-to-ledger-signer-hardware-implant/",
-    "title": "$86 Million Crypto Heist Linked to Ledger Signer Hardware Implant",
-    "headline": "$86 Million Crypto Heist Linked to Ledger Signer Hardware Implant",
-    "summary": "A small circuit board hidden under Ledger Signer screens captured user data and sent it to attackers, enabling an $86 million crypto theft. The implant read private keys and transmitted them, compromising wallet security and exposing millions of dollars in digital assets.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-13T10:36:05.000Z",
-    "url": "https://www.securityweek.com/86-million-crypto-heist-linked-to-ledger-signer-hardware-implant/",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/"
       }
     ]
   },
@@ -224,28 +458,6 @@
     "publishedAt": "2026-10-13T09:46:44.000Z",
     "url": "https://cybersecuritynews.com/amazon-fire-tv-cube-3-exploit/",
     "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/progress-marklogic-flaws/",
-    "sourceUrl": "https://cybersecuritynews.com/progress-marklogic-flaws/",
-    "title": "Critical MarkLogic Flaws Enable Remote Code Execution and Admin Takeover",
-    "headline": "Critical MarkLogic Flaws Enable Remote Code Execution and Admin Takeover",
-    "summary": "Progress released urgent updates for MarkLogic Server 12.0‑12.0.3 to fix critical and high‑severity flaws that allow attackers to gain elevated access, create unauthorized administrator accounts, execute code on servers, steal credentials, and access protected data.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-13T09:30:58.000Z",
-    "url": "https://cybersecuritynews.com/progress-marklogic-flaws/",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/critical-mariadb-flaws/"
-      },
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/two-critical-marklogic-flaws-could-give.html"
-      }
-    ]
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/10/13/gitlab-ci-cd-regular-expression-compiler-vulnerability-cve-2026-97229/",
@@ -385,24 +597,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://cybersecuritynews.com/yandex-data-center-service-outage/",
-    "sourceUrl": "https://cybersecuritynews.com/yandex-data-center-service-outage/",
-    "title": "Yandex Data Centers Hit by Drone Attacks, Causing Cloud File Outages",
-    "headline": "Yandex Data Centers Hit by Drone Attacks, Causing Cloud File Outages",
-    "summary": "Drone strikes damaged three Yandex data centers in Russia, shutting down two facilities and partially disabling a third. The outage prevented Yandex Disk users and businesses on Yandex Cloud from accessing files and services across the platform. Yandex confirmed the disruption and is working to restore operations.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-13T03:28:05.000Z",
-    "url": "https://cybersecuritynews.com/yandex-data-center-service-outage/",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/yandex-confirms-service-outage-as-users-lose-access-to-cloud-files/"
-      }
-    ]
-  },
-  {
     "id": "https://www.darkreading.com/vulnerabilities-threats/max-severity-ssrf-flaw-sonicwall-sma-devices-under-attack",
     "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/max-severity-ssrf-flaw-sonicwall-sma-devices-under-attack",
     "title": "SonicWall SMA 1000 Devices Targeted for SSRF Exploit",
@@ -419,19 +613,6 @@
         "sourceUrl": "https://thehackernews.com/2026/10/critical-sonicwall-sma-1000-flaw.html"
       }
     ]
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/norway-fines-microsoft-ad-firm-96-million-over-grindr-data-sharing/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/norway-fines-microsoft-ad-firm-96-million-over-grindr-data-sharing/",
-    "title": "Norway Fines Microsoft‑Owned Ad Firm for Unlawful Grindr Data Sharing",
-    "headline": "Norway Fines Microsoft‑Owned Ad Firm for Unlawful Grindr Data Sharing",
-    "summary": "Norway’s Data Protection Authority fined Xandr, a Microsoft‑owned advertising company, 92 million NOK ($9.6 million) for unlawfully processing and sharing sensitive Grindr user data. The fine follows investigations into the company’s data handling practices.",
-    "category": "BREACH",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-12T20:13:52.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/norway-fines-microsoft-ad-firm-96-million-over-grindr-data-sharing/",
-    "additionalSources": []
   },
   {
     "id": "https://www.darkreading.com/insider-threats/prominent-ransomware-negotiator-extortion-charges",
@@ -530,32 +711,6 @@
     ]
   },
   {
-    "id": "https://research.checkpoint.com/2026/12th-october-threat-intelligence-report/",
-    "sourceUrl": "https://research.checkpoint.com/2026/12th-october-threat-intelligence-report/",
-    "title": "Denmark Central Register of Persons Breach Exposes Personal Data",
-    "headline": "Denmark Central Register of Persons Breach Exposes Personal Data",
-    "summary": "Denmark’s Central Register of Persons suffered a breach after unauthorized individuals exploited access granted to a private supplier. The incident exposed personal information, including names and addresses, of citizens. The breach highlights the risks of third‑party access to critical government databases.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Check Point Research",
-    "publishedAt": "2026-10-12T14:51:31.000Z",
-    "url": "https://research.checkpoint.com/2026/12th-october-threat-intelligence-report/",
-    "additionalSources": [
-      {
-        "source": "Malwarebytes Labs",
-        "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/how-123456-became-the-key-to-almost-9-million-personal-records"
-      },
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/irhythm-data-breach-impacts-over-360000-people/"
-      },
-      {
-        "source": "ESET WeLiveSecurity",
-        "sourceUrl": "https://www.welivesecurity.com/en/how-to/what-to-do-when-a-data-breach-notice-tells-you-almost-nothing/"
-      }
-    ]
-  },
-  {
     "id": "https://blog.cloudflare.com/transformers-on-logpush/",
     "sourceUrl": "https://blog.cloudflare.com/transformers-on-logpush/",
     "title": "Cloudflare Enhances Logpush with SQL‑Based Transformers",
@@ -579,19 +734,6 @@
     "source": "SecurityWeek",
     "publishedAt": "2026-10-12T14:25:00.000Z",
     "url": "https://www.securityweek.com/ionq-to-acquire-zero-trust-firm-elisity-for-up-to-1-3-billion/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/whatsapp-attachment-deploys-malware/",
-    "sourceUrl": "https://cybersecuritynews.com/whatsapp-attachment-deploys-malware/",
-    "title": "WhatsApp Attachment Deploys Malware That Gains SYSTEM Access on Windows",
-    "headline": "WhatsApp Attachment Deploys Malware That Gains SYSTEM Access on Windows",
-    "summary": "A malicious WhatsApp attachment delivers a Windows remote access trojan that achieves SYSTEM-level access. The campaign uses a ZIP file with a financial-document lure and an executable named Statement.exe. Opening the file launches the trojan, giving operators deep control over infected machines.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-12T14:02:53.000Z",
-    "url": "https://cybersecuritynews.com/whatsapp-attachment-deploys-malware/",
     "additionalSources": []
   },
   {
@@ -803,19 +945,6 @@
     "source": "Help Net Security",
     "publishedAt": "2026-10-12T07:39:50.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/12/microsoft-windows-update-certificate-rotation/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/discourse-image-pipeline-exploit/",
-    "sourceUrl": "https://cybersecuritynews.com/discourse-image-pipeline-exploit/",
-    "title": "Discourse Image Upload Exploit Enables File Read via JPEG Race, Ghostscript, and ImageMagick",
-    "headline": "Discourse Image Upload Exploit Enables File Read via JPEG Race, Ghostscript, and ImageMagick",
-    "summary": "A flaw in Discourse’s image upload pipeline lets basic users read server files by chaining a JPEG processing delay, Ghostscript execution, and ImageMagick features. The same chain also exposes a cache‑poisoning flaw that can run JavaScript for anonymous visitors. Both issues were patched before publication.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-12T06:43:59.000Z",
-    "url": "https://cybersecuritynews.com/discourse-image-pipeline-exploit/",
     "additionalSources": []
   },
   {

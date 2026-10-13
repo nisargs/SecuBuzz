@@ -5,8 +5,161 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Oct 2026 12:20:55 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 16:21:13 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>West African Scam Operation Arrests Over 100 Suspected Trafficking Victims</title>
+      <link>https://secubuzz.com/news/west-african-scam-operation-arrests-over-100-suspe-6e51cc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/west-african-scam-operation-arrests-over-100-suspe-6e51cc</guid>
+      <description><![CDATA[Police in Ghana and Nigeria arrested more than two dozen individuals during a U.K.-hosted operation targeting a West African scam network. The raid also involved tech companies, aiming to dismantle the trafficking scheme and recover victims. No cyber breach or data compromise was reported.]]></description>
+      <pubDate>Tue, 13 Oct 2026 16:05:00 GMT</pubDate>
+      <source url="https://therecord.media/ghana-nigeria-scam-centers-raided-uk-us">The Record</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Meta Reports Hackers Stealing Code and Personal Data of 1,500 in GitHub Breach</title>
+      <link>https://secubuzz.com/news/meta-reports-hackers-stealing-code-and-personal-da-99e3ce</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/meta-reports-hackers-stealing-code-and-personal-da-99e3ce</guid>
+      <description><![CDATA[Meta confirmed that hackers accessed code and personal data of 1,500 users in a GitHub breach, primarily affecting Meta employees in the United States. Affected individuals are offered credit monitoring services. No further details on the breach scope or remediation steps were disclosed.]]></description>
+      <pubDate>Tue, 13 Oct 2026 16:01:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/meta-says-hackers-took-code-personal-data-of-1500-in-github-breach/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Ivanti Connect Secure Zero-Day Exploited in Active Attacks</title>
+      <link>https://secubuzz.com/news/ivanti-connect-secure-zero-day-exploited-in-active-6986fe</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ivanti-connect-secure-zero-day-exploited-in-active-6986fe</guid>
+      <description><![CDATA[Ivanti has warned that a zero‑day vulnerability in its Connect Secure remote access gateway is actively being exploited. The flaw allows attackers to gain unauthorized access to corporate networks. Customers are urged to apply the vendor’s patch immediately to mitigate the risk.]]></description>
+      <pubDate>Tue, 13 Oct 2026 15:45:50 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/ivanti-warns-of-connect-secure-zero-day-exploited-in-attacks/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Docker Hub Vulnerability Allows User Impersonation and Image Tampering</title>
+      <link>https://secubuzz.com/news/docker-hub-vulnerability-allows-user-impersonation-56abfa</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/docker-hub-vulnerability-allows-user-impersonation-56abfa</guid>
+      <description><![CDATA[Docker Hub flaw CVE-2026-105445 allows attackers to impersonate users and tamper with images by using personal access tokens to access other users' repositories. This critical vulnerability could lead to unauthorized code injection and distribution of malicious containers. Docker has issued a patch; users should update immediately.]]></description>
+      <pubDate>Tue, 13 Oct 2026 15:20:20 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/docker-hub-flaw-let-attackers-impersonate-users-tamper-with-images/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>North Korean Hackers Target Ukrainian Experts for Intelligence on Russia’s War</title>
+      <link>https://secubuzz.com/news/north-korean-hackers-target-ukrainian-experts-for-7146b5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/north-korean-hackers-target-ukrainian-experts-for-7146b5</guid>
+      <description><![CDATA[North Korean hackers have been targeting Ukrainian experts in diplomacy, security and international policy to gather intelligence on Russia’s war. The campaign, part of Pyongyang’s expanding military cooperation with Russia, focuses on collecting strategic information from high‑profile Ukrainian officials. No public exploit or breach reported yet.]]></description>
+      <pubDate>Tue, 13 Oct 2026 15:15:00 GMT</pubDate>
+      <source url="https://therecord.media/north-korea-hackers-russia-ukraine">The Record</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>LiteLLM v1.77.7 Exposes High-Impact Vulnerabilities CVE-2026-35029 and CVE-2026-59823</title>
+      <link>https://secubuzz.com/news/litellm-v1-77-7-exposes-high-impact-vulnerabilitie-691179</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/litellm-v1-77-7-exposes-high-impact-vulnerabilitie-691179</guid>
+      <description><![CDATA[Security assessment of LiteLLM v1.77.7 revealed missing authorization on /config/update, allowing any authenticated user to modify configuration. Two high-impact vulnerabilities, CVE-2026-35029 and CVE-2026-59823, were fixed in v1.83.9. Users should upgrade to the latest version to mitigate the risk.]]></description>
+      <pubDate>Tue, 13 Oct 2026 14:30:26 GMT</pubDate>
+      <source url="https://research.checkpoint.com/2026/when-llm-gateways-go-wrong-findings-from-litellm/">Check Point Research</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Attackers Exploit MFA Gaps to Access VPNs and Windows Systems</title>
+      <link>https://secubuzz.com/news/attackers-exploit-mfa-gaps-to-access-vpns-and-wind-744701</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/attackers-exploit-mfa-gaps-to-access-vpns-and-wind-744701</guid>
+      <description><![CDATA[Attackers continue to exploit gaps in multi‑factor authentication, using stolen credentials to reach VPNs, RDP, and Windows systems that rely only on passwords. Specops highlights why cloud application protection is insufficient and offers steps to close these authentication gaps.]]></description>
+      <pubDate>Tue, 13 Oct 2026 14:01:11 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/the-mfa-gaps-attackers-are-still-exploiting/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>SAP Addresses Maximum‑Severity OAuth2 SSRF Flaw in Cloud SDK for Python</title>
+      <link>https://secubuzz.com/news/sap-addresses-maximum-severity-oauth2-ssrf-flaw-in-5ac9ae</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sap-addresses-maximum-severity-oauth2-ssrf-flaw-in-5ac9ae</guid>
+      <description><![CDATA[SAP released October 2026 security updates that fix 20 vulnerabilities, including a maximum‑severity Server‑Side Request Forgery flaw in its Cloud SDK for Python. The SSRF flaw could allow attackers to make unauthorized requests from the SDK, potentially exposing internal resources.]]></description>
+      <pubDate>Tue, 13 Oct 2026 13:51:02 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/sap-warns-of-maximum-severity-oauth2-ssrf-security-flaw/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Trellix Announces Trellix Wise for Private Cloud AI Core</title>
+      <link>https://secubuzz.com/news/trellix-announces-trellix-wise-for-private-cloud-a-607d40</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/trellix-announces-trellix-wise-for-private-cloud-a-607d40</guid>
+      <description><![CDATA[Trellix launched Trellix Wise for Private Cloud, an on-premises federated AI core that extends security fabric across existing infrastructure. It aims to improve threat detection and response while preserving data sovereignty and governance, offering auditable AI investigations for security teams.]]></description>
+      <pubDate>Tue, 13 Oct 2026 13:35:06 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/13/trellix-wise-for-private-cloud-delivers-auditable-ai-investigations-for-security-teams/">Help Net Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>XWorm Malware Expands Beyond Password Theft to Spy and Hijack Browser Sessions</title>
+      <link>https://secubuzz.com/news/xworm-malware-expands-beyond-password-theft-to-spy-d09bcd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/xworm-malware-expands-beyond-password-theft-to-spy-d09bcd</guid>
+      <description><![CDATA[XWorm malware expands beyond password theft, enabling attackers to listen through infected computers’ microphones, track locations, and hijack browsers where users are already logged in. The malware’s plugin library turns a compromised Windows device into a spying tool and a gateway to online accounts without first stealing passwords.]]></description>
+      <pubDate>Tue, 13 Oct 2026 13:33:38 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/xworm-malware-2/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>NinjaOne Launches Katana AI and MCP Server to Accelerate IT Problem Resolution</title>
+      <link>https://secubuzz.com/news/ninjaone-launches-katana-ai-and-mcp-server-to-acce-3af360</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ninjaone-launches-katana-ai-and-mcp-server-to-acce-3af360</guid>
+      <description><![CDATA[NinjaOne has introduced Katana AI, an agentic AI technician that assists IT workers, and the NinjaOne MCP server, an orchestration connector that extends governed access to existing AI tools. The announcement highlights how the platform aims to accelerate problem resolution by providing context-driven support for IT teams.]]></description>
+      <pubDate>Tue, 13 Oct 2026 13:26:43 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/13/ninjaone-katana-ai-mcp/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Ledger Reports Hardware Implant in Crypto Wallets Stole Recovery Phrases</title>
+      <link>https://secubuzz.com/news/ledger-reports-hardware-implant-in-crypto-wallets-39e445</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ledger-reports-hardware-implant-in-crypto-wallets-39e445</guid>
+      <description><![CDATA[Ledger disclosed that cryptocurrency wallets sold through a Southeast Asian reseller contained a hardware implant that allowed attackers to extract recovery phrases and drain funds. The flaw compromised wallet security and exposed users to theft.]]></description>
+      <pubDate>Tue, 13 Oct 2026 13:18:00 GMT</pubDate>
+      <source url="https://therecord.media/ledger-cryptocurrency-wallet-implant-theft">The Record</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Ukrainian Drones Strike Yandex Data Centers</title>
+      <link>https://secubuzz.com/news/ukrainian-drones-strike-yandex-data-centers-6b6493</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ukrainian-drones-strike-yandex-data-centers-6b6493</guid>
+      <description><![CDATA[Ukrainian drones struck three Yandex data centers, shutting down facilities in Sasovo, Vladimir, and partially in Kaluga. Yandex Cloud entered emergency mode on Oct 11, advising customers to activate disaster recovery plans. The attack disrupted services but did not expose data, highlighting the vulnerability of cloud infrastructure to physical threats.]]></description>
+      <pubDate>Tue, 13 Oct 2026 13:15:05 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/13/ukraine-drone-strikes-yandex-data-centers/">Help Net Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Xandr Fined €8.6 Million for Relaying Grindr Data</title>
+      <link>https://secubuzz.com/news/xandr-fined-8-6-million-for-relaying-grindr-data-f5e00d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/xandr-fined-8-6-million-for-relaying-grindr-data-f5e00d</guid>
+      <description><![CDATA[The Norwegian Data Protection Authority fined Xandr, Microsoft’s advertising unit, €8.6 million for illegally relaying Grindr users’ sensitive data to advertisers. The penalty was the largest issued by the watchdog, citing the very serious nature of the breach.]]></description>
+      <pubDate>Tue, 13 Oct 2026 13:12:32 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/xandr-fined-record-86-million-for.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Lattice Sentry 5.0 Adds Quantum‑Resistant Firmware Security</title>
+      <link>https://secubuzz.com/news/lattice-sentry-5-0-adds-quantum-resistant-firmware-1d3bc5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/lattice-sentry-5-0-adds-quantum-resistant-firmware-1d3bc5</guid>
+      <description><![CDATA[Lattice Semiconductor released Lattice Sentry 5.0, adding post‑quantum cryptography to its firmware resilience and attestation stack. The update delivers CNSA 2.0‑aligned, NIST‑compliant protection for AI data centers and critical infrastructure, enabling designers to deploy quantum‑resistant security in production firmware environments. This enhancement also includes automated integrity checks and secure boot features, ensuring firmware cannot be tampered with during supply chain attacks.]]></description>
+      <pubDate>Tue, 13 Oct 2026 13:04:59 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/13/lattice-sentry-5-0-solution-stack/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Ghostscript Vulnerability CVE-2026-39919 Enables Code Execution via Malicious PDFs</title>
+      <link>https://secubuzz.com/news/ghostscript-vulnerability-cve-2026-39919-enables-c-4a2276</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ghostscript-vulnerability-cve-2026-39919-enables-c-4a2276</guid>
+      <description><![CDATA[A critical flaw in Ghostscript (CVE-2026-39919) allows attackers to craft PDF files that execute arbitrary code on vulnerable servers. The issue affects all versions before 10.08.0 and carries a CVSS score of 9.8. Updating to 10.08.0 or later mitigates the risk.]]></description>
+      <pubDate>Tue, 13 Oct 2026 12:48:46 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/critical-ghostscript-flaw/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Swann Communications SWIFI-SE2KIC Firmware Vulnerability CVE-2026-107605 Allows Unauthenticated Live Video Access</title>
+      <link>https://secubuzz.com/news/swann-communications-swifi-se2kic-firmware-vulnera-430cec</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/swann-communications-swifi-se2kic-firmware-vulnera-430cec</guid>
+      <description><![CDATA[The Swann Communications SWIFI-SE2KIC firmware (CVE-2026-107605) has a missing authentication flaw that lets local attackers view live video feeds without credentials. Affected firmware versions 2.0.22 and earlier are vulnerable; applying the vendor’s patch or updating firmware resolves the issue.]]></description>
+      <pubDate>Tue, 13 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-286-02">CISA</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Cyber Incident Affects Ahold Delhaize Stores in US, Netherlands, Belgium</title>
       <link>https://secubuzz.com/news/cyber-incident-affects-ahold-delhaize-stores-in-us-21b8df</link>
@@ -44,15 +197,6 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>XWorm RAT Expands to Full Surveillance Platform</title>
-      <link>https://secubuzz.com/news/xworm-rat-expands-to-full-surveillance-platform-762777</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/xworm-rat-expands-to-full-surveillance-platform-762777</guid>
-      <description><![CDATA[XWorm RAT now supports over 30 plugins, enabling attackers to track user location, stream live audio, and hijack authenticated browser sessions. The enhanced capabilities allow persistent monitoring of victims across devices, increasing the threat surface for targeted espionage and data exfiltration.]]></description>
-      <pubDate>Tue, 13 Oct 2026 11:13:10 GMT</pubDate>
-      <source url="https://www.securityweek.com/xworm-rat-evolves-into-surveillance-platform/">SecurityWeek</source>
-      <category>Malware</category>
-    </item>
-    <item>
       <title>LG Smart TVs Vulnerable to Local Network Root Takeover</title>
       <link>https://secubuzz.com/news/lg-smart-tvs-vulnerable-to-local-network-root-take-1339fd</link>
       <guid isPermaLink="true">https://secubuzz.com/news/lg-smart-tvs-vulnerable-to-local-network-root-take-1339fd</guid>
@@ -78,15 +222,6 @@
       <pubDate>Tue, 13 Oct 2026 10:56:59 GMT</pubDate>
       <source url="https://cybersecuritynews.com/npm-trusted-publishing-flaw/">Cyber Security News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>$86 Million Crypto Heist Linked to Ledger Signer Hardware Implant</title>
-      <link>https://secubuzz.com/news/86-million-crypto-heist-linked-to-ledger-signer-h-3398bb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/86-million-crypto-heist-linked-to-ledger-signer-h-3398bb</guid>
-      <description><![CDATA[A small circuit board hidden under Ledger Signer screens captured user data and sent it to attackers, enabling an $86 million crypto theft. The implant read private keys and transmitted them, compromising wallet security and exposing millions of dollars in digital assets.]]></description>
-      <pubDate>Tue, 13 Oct 2026 10:36:05 GMT</pubDate>
-      <source url="https://www.securityweek.com/86-million-crypto-heist-linked-to-ledger-signer-hardware-implant/">SecurityWeek</source>
-      <category>Breach</category>
     </item>
     <item>
       <title>Citrix NetScaler Zero‑Days Used to Deploy Remote Access Tool</title>
@@ -131,15 +266,6 @@
       <description><![CDATA[A public exploit package released by XDA developer Pro-me3us allows owners of Amazon’s third‑generation Fire TV Cube running firmware PS7717 or older to gain persistent root access and unlock the bootloader. The exploit targets devices known as “gazelle,” combining temporary root privileges with a bootloader flaw to enable deeper system changes.]]></description>
       <pubDate>Tue, 13 Oct 2026 09:46:44 GMT</pubDate>
       <source url="https://cybersecuritynews.com/amazon-fire-tv-cube-3-exploit/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Critical MarkLogic Flaws Enable Remote Code Execution and Admin Takeover</title>
-      <link>https://secubuzz.com/news/critical-marklogic-flaws-enable-remote-code-execut-248e4b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/critical-marklogic-flaws-enable-remote-code-execut-248e4b</guid>
-      <description><![CDATA[Progress released urgent updates for MarkLogic Server 12.0‑12.0.3 to fix critical and high‑severity flaws that allow attackers to gain elevated access, create unauthorized administrator accounts, execute code on servers, steal credentials, and access protected data.]]></description>
-      <pubDate>Tue, 13 Oct 2026 09:30:58 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/progress-marklogic-flaws/">Cyber Security News</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -224,15 +350,6 @@
       <category>Cloud</category>
     </item>
     <item>
-      <title>Yandex Data Centers Hit by Drone Attacks, Causing Cloud File Outages</title>
-      <link>https://secubuzz.com/news/yandex-data-centers-hit-by-drone-attacks-causing-c-37aaef</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/yandex-data-centers-hit-by-drone-attacks-causing-c-37aaef</guid>
-      <description><![CDATA[Drone strikes damaged three Yandex data centers in Russia, shutting down two facilities and partially disabling a third. The outage prevented Yandex Disk users and businesses on Yandex Cloud from accessing files and services across the platform. Yandex confirmed the disruption and is working to restore operations.]]></description>
-      <pubDate>Tue, 13 Oct 2026 03:28:05 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/yandex-data-center-service-outage/">Cyber Security News</source>
-      <category>Cloud</category>
-    </item>
-    <item>
       <title>SonicWall SMA 1000 Devices Targeted for SSRF Exploit</title>
       <link>https://secubuzz.com/news/sonicwall-sma-1000-devices-targeted-for-ssrf-explo-7aa16c</link>
       <guid isPermaLink="true">https://secubuzz.com/news/sonicwall-sma-1000-devices-targeted-for-ssrf-explo-7aa16c</guid>
@@ -240,15 +357,6 @@
       <pubDate>Mon, 12 Oct 2026 21:42:42 GMT</pubDate>
       <source url="https://www.darkreading.com/vulnerabilities-threats/max-severity-ssrf-flaw-sonicwall-sma-devices-under-attack">Dark Reading</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Norway Fines Microsoft‑Owned Ad Firm for Unlawful Grindr Data Sharing</title>
-      <link>https://secubuzz.com/news/norway-fines-microsoft-owned-ad-firm-for-unlawful-7cd6a9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/norway-fines-microsoft-owned-ad-firm-for-unlawful-7cd6a9</guid>
-      <description><![CDATA[Norway’s Data Protection Authority fined Xandr, a Microsoft‑owned advertising company, 92 million NOK ($9.6 million) for unlawfully processing and sharing sensitive Grindr user data. The fine follows investigations into the company’s data handling practices.]]></description>
-      <pubDate>Mon, 12 Oct 2026 20:13:52 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/norway-fines-microsoft-ad-firm-96-million-over-grindr-data-sharing/">BleepingComputer</source>
-      <category>Breach</category>
     </item>
     <item>
       <title>Ransomware Negotiator Arrested on Extortion Charges</title>
@@ -305,15 +413,6 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>Denmark Central Register of Persons Breach Exposes Personal Data</title>
-      <link>https://secubuzz.com/news/denmark-central-register-of-persons-breach-exposes-e67ef2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/denmark-central-register-of-persons-breach-exposes-e67ef2</guid>
-      <description><![CDATA[Denmark’s Central Register of Persons suffered a breach after unauthorized individuals exploited access granted to a private supplier. The incident exposed personal information, including names and addresses, of citizens. The breach highlights the risks of third‑party access to critical government databases.]]></description>
-      <pubDate>Mon, 12 Oct 2026 14:51:31 GMT</pubDate>
-      <source url="https://research.checkpoint.com/2026/12th-october-threat-intelligence-report/">Check Point Research</source>
-      <category>Breach</category>
-    </item>
-    <item>
       <title>Cloudflare Enhances Logpush with SQL‑Based Transformers</title>
       <link>https://secubuzz.com/news/cloudflare-enhances-logpush-with-sql-based-transfo-6c060a</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-enhances-logpush-with-sql-based-transfo-6c060a</guid>
@@ -330,15 +429,6 @@
       <pubDate>Mon, 12 Oct 2026 14:25:00 GMT</pubDate>
       <source url="https://www.securityweek.com/ionq-to-acquire-zero-trust-firm-elisity-for-up-to-1-3-billion/">SecurityWeek</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>WhatsApp Attachment Deploys Malware That Gains SYSTEM Access on Windows</title>
-      <link>https://secubuzz.com/news/whatsapp-attachment-deploys-malware-that-gains-sys-443dee</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/whatsapp-attachment-deploys-malware-that-gains-sys-443dee</guid>
-      <description><![CDATA[A malicious WhatsApp attachment delivers a Windows remote access trojan that achieves SYSTEM-level access. The campaign uses a ZIP file with a financial-document lure and an executable named Statement.exe. Opening the file launches the trojan, giving operators deep control over infected machines.]]></description>
-      <pubDate>Mon, 12 Oct 2026 14:02:53 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/whatsapp-attachment-deploys-malware/">Cyber Security News</source>
-      <category>Breach</category>
     </item>
     <item>
       <title>Google Phishing Kit Bypasses MFA Using WebSockets</title>
@@ -365,96 +455,6 @@
       <description><![CDATA[IBM released security patches for 22 vulnerabilities in its Verify Identity Access and Security Verify Access products. Two critical flaws, CVE‑2026‑78401 and CVE‑2026‑78406, enable unauthenticated remote code execution on appliance and container deployments via deserialization of untrusted data. The patches mitigate the 9.8‑scored RCE.]]></description>
       <pubDate>Mon, 12 Oct 2026 12:07:34 GMT</pubDate>
       <source url="https://cybersecuritynews.com/ibm-patches-22-verify-access-flaw/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Windows 11 23H2 Enterprise Editions Reach End of Support in 30 Days</title>
-      <link>https://secubuzz.com/news/windows-11-23h2-enterprise-editions-reach-end-of-s-1da70a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/windows-11-23h2-enterprise-editions-reach-end-of-s-1da70a</guid>
-      <description><![CDATA[Microsoft announced that Windows 11 23H2 Enterprise, Education, and IoT Enterprise editions will cease receiving security updates in 30 days. Users must upgrade to newer releases or apply extended support options. Failure to update may expose systems to unpatched vulnerabilities and compliance risks.]]></description>
-      <pubDate>Mon, 12 Oct 2026 11:58:33 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-11-23h2-reaches-end-of-support-in-30-days/">BleepingComputer</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Hackers Exploit AhsayCBS Backup Server Flaws to Deploy Webshells and XMRig Miners</title>
-      <link>https://secubuzz.com/news/hackers-exploit-ahsaycbs-backup-server-flaws-to-de-32d4b0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-ahsaycbs-backup-server-flaws-to-de-32d4b0</guid>
-      <description><![CDATA[Hackers have leveraged two critical vulnerabilities in AhsayCBS backup servers to execute arbitrary commands, plant webshells, and install XMRig cryptocurrency miners masquerading as Microsoft Edge. Since October 7, 2026, five organizations have been targeted, with attackers establishing persistent access. No public patch has been released yet.]]></description>
-      <pubDate>Mon, 12 Oct 2026 11:56:07 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-exploit-critical-ahsaycbs-flaws/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Amazon Blocks Meta’s Muse After AI Agent Concerns</title>
-      <link>https://secubuzz.com/news/amazon-blocks-meta-s-muse-after-ai-agent-concerns-1bd25d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/amazon-blocks-meta-s-muse-after-ai-agent-concerns-1bd25d</guid>
-      <description><![CDATA[Amazon has blocked Meta’s Muse AI agent because it fails to identify itself as a bot while browsing, raising privacy concerns. Instinct also faces scrutiny for privacy issues, and other personal AI agents continue to generate horror stories. The incident highlights growing scrutiny of AI assistant privacy practices.]]></description>
-      <pubDate>Mon, 12 Oct 2026 11:55:00 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/bring-your-own-agent-your-employees.html">The Hacker News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Mastermind of 15,000-Mule Cybercrime Laundering Network Pleads Guilty in US</title>
-      <link>https://secubuzz.com/news/mastermind-of-15-000-mule-cybercrime-laundering-ne-33edae</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/mastermind-of-15-000-mule-cybercrime-laundering-ne-33edae</guid>
-      <description><![CDATA[Oleg Korniev, a leader of the YMCO money‑mule network that helped hackers move funds outside the US, pleaded guilty in a US court. The case highlights the growing reach of cybercrime laundering operations and the legal actions against key figures.]]></description>
-      <pubDate>Mon, 12 Oct 2026 11:24:50 GMT</pubDate>
-      <source url="https://www.securityweek.com/mastermind-of-15000-mule-cybercrime-laundering-network-pleads-guilty-in-us/">SecurityWeek</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Microsoft’s New Decision‑Scoring Model Aims to Improve AI Agent Workflow</title>
-      <link>https://secubuzz.com/news/microsoft-s-new-decision-scoring-model-aims-to-imp-7e4403</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-s-new-decision-scoring-model-aims-to-imp-7e4403</guid>
-      <description><![CDATA[Microsoft released the Microsoft‑Decision‑1 model, a small decision‑scoring tool that assigns calibrated probabilities to answer options. It is intended for routing, classification, prioritization, verification, and workflow control, enabling secure, trusted AI agent integration.]]></description>
-      <pubDate>Mon, 12 Oct 2026 11:02:24 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/12/microsoft-decision-1-model/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Phishing Emails Target AI Assistant Users</title>
-      <link>https://secubuzz.com/news/phishing-emails-target-ai-assistant-users-e9a99b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/phishing-emails-target-ai-assistant-users-e9a99b</guid>
-      <description><![CDATA[Phishing emails embed hidden instructions that can trick AI assistants into executing commands, turning ignored emails into tasks. The technique exploits AI summarization features to gain user interaction and potentially access sensitive data.]]></description>
-      <pubDate>Mon, 12 Oct 2026 10:54:40 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/ai/2026/10/phishing-emails-are-baiting-your-ai-assistant">Malwarebytes Labs</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Casbaneiro Malware Hides Command‑and‑Control Until Banking Site Visit</title>
-      <link>https://secubuzz.com/news/casbaneiro-malware-hides-command-and-control-until-1bbe3a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/casbaneiro-malware-hides-command-and-control-until-1bbe3a</guid>
-      <description><![CDATA[Casbaneiro malware hides command‑and‑control traffic until infected users visit targeted banking sites. The Windows banking trojan blends phishing, location checks, staged downloads, and separate data‑collection servers to keep infections quiet during analysis. The campaign targets Latin American users, linking activity across multiple sites.]]></description>
-      <pubDate>Mon, 12 Oct 2026 10:34:53 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/casbaneiro-malware/">Cyber Security News</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>Decepticon: Open‑Source Autonomous Red Team Agent Integrating Claude and Codex</title>
-      <link>https://secubuzz.com/news/decepticon-open-source-autonomous-red-team-agent-i-58019b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/decepticon-open-source-autonomous-red-team-agent-i-58019b</guid>
-      <description><![CDATA[Decepticon is an open‑source autonomous red‑team tool that combines AI reasoning with hands‑on security testing. It links Claude Code and OpenAI Codex, allowing operators to manage assessments from familiar coding tools and follow attack paths within defined engagement rules.]]></description>
-      <pubDate>Mon, 12 Oct 2026 08:05:58 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/decepticon-ai-red-team-tool/">Cyber Security News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Let’s Encrypt Shortens Default Certificate Validity to 64 Days</title>
-      <link>https://secubuzz.com/news/let-s-encrypt-shortens-default-certificate-validit-f04adb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/let-s-encrypt-shortens-default-certificate-validit-f04adb</guid>
-      <description><![CDATA[Let’s Encrypt will reduce the default validity of newly issued certificates to 64 days starting February 2027, moving away from the previously planned 45‑day period. The change aims to improve security by shortening the window for certificate misuse and encouraging more frequent renewals.]]></description>
-      <pubDate>Mon, 12 Oct 2026 07:53:28 GMT</pubDate>
-      <source url="https://www.securityweek.com/lets-encrypt-cuts-default-certificate-validity-to-64-days-ahead-of-45-day-switch/">SecurityWeek</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>CISA Adds Apache Struts CVE-2016-3081 to Exploited Vulnerabilities Catalog</title>
-      <link>https://secubuzz.com/news/cisa-adds-apache-struts-cve-2016-3081-to-exploited-1d2bbf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-apache-struts-cve-2016-3081-to-exploited-1d2bbf</guid>
-      <description><![CDATA[CISA confirmed attackers are exploiting Apache Struts command injection CVE-2016-3081, allowing remote code execution on vulnerable servers. The flaw permits attackers to run arbitrary commands via Dynamic Method Invocation. The vulnerability is actively used in real‑world attacks and requires no user interaction.]]></description>
-      <pubDate>Mon, 12 Oct 2026 07:43:09 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/apache-struts-vulnerability-exploited/">Cyber Security News</source>
       <category>Vulnerability</category>
     </item>
   </channel>
