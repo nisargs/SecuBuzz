@@ -1,5 +1,190 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/",
+    "title": "Microsoft October 2026 Patch Tuesday fixes 1,411 flaws, 3 zero-days",
+    "headline": "Microsoft October 2026 Patch Tuesday fixes 1,411 flaws, 3 zero-days",
+    "summary": "Microsoft’s October 2026 Patch Tuesday addressed 1,411 security flaws, including one actively exploited vulnerability and two publicly disclosed zero-days. The update covers a wide range of Windows components, providing critical patches to prevent exploitation of known weaknesses and improve overall system security.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-13T19:56:09.000Z",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/",
+    "additionalSources": [
+      {
+        "source": "Zero Day Initiative",
+        "sourceUrl": "https://www.thezdi.com/blog/2026/10/13/the-october-2026-security-update-review"
+      },
+      {
+        "source": "SANS Internet Storm Center",
+        "sourceUrl": "https://isc.sans.edu/diary/rss/33422"
+      },
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/microsoft-october-patch-tuesday-2026/"
+      },
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/13/cybersecurity-jobs-available-right-now-october-13-2026/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-11-24h2-home-and-pro-reached-end-of-support/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-11-24h2-home-and-pro-reached-end-of-support/",
+    "title": "Microsoft Ends Support for Windows 11 24H2 Home and Pro",
+    "headline": "Microsoft Ends Support for Windows 11 24H2 Home and Pro",
+    "summary": "Microsoft announced that Windows 11 24H2 Home and Pro editions have reached end of support, meaning no further security or non‑security preview updates will be delivered. Users must upgrade to newer releases to maintain protection and receive future updates.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-13T19:04:38.000Z",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-11-24h2-home-and-pro-reached-end-of-support/",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5127648-and-kb5126653-cumulative-updates-released/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.securityweek.com/ivanti-zero-day-chain-gave-attackers-root-access-to-fully-patched-vpn/",
+    "sourceUrl": "https://www.securityweek.com/ivanti-zero-day-chain-gave-attackers-root-access-to-fully-patched-vpn/",
+    "title": "Ivanti Zero-Day Exploit Enables Root Access on Patched VPN",
+    "headline": "Ivanti Zero-Day Exploit Enables Root Access on Patched VPN",
+    "summary": "CVE-2026-104935 allows unauthenticated remote code execution on Ivanti Connect Secure, granting attackers root privileges. The flaw can be leveraged to bypass existing patches and compromise VPN infrastructure. Immediate patching and monitoring are required to mitigate potential exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-13T18:43:43.000Z",
+    "url": "https://www.securityweek.com/ivanti-zero-day-chain-gave-attackers-root-access-to-fully-patched-vpn/",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/attacker-chains-three-ivanti-connect.html"
+      },
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/ivanti-connect-secure-zero-day/"
+      },
+      {
+        "source": "CISA",
+        "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/13/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/anthropic-warns-small-ai-models-could.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/anthropic-warns-small-ai-models-could.html",
+    "title": "Anthropic Warns Small AI Models Could Spawn Self-Propagating IoT Botnets",
+    "headline": "Anthropic Warns Small AI Models Could Spawn Self-Propagating IoT Botnets",
+    "summary": "Anthropic cautions that small AI models may soon gain the ability to self-replicate on IoT devices such as smart ovens and Android TV boxes, forming autonomous worm botnets that are difficult to shut down due to lack of a central control point.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-13T18:20:57.000Z",
+    "url": "https://thehackernews.com/2026/10/anthropic-warns-small-ai-models-could.html",
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/small-ai-models-may-soon-be-able-to-self-replicate-on-iot-devices-anthropic-warns/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/uk-housing-ombudsman-service-investigates-security-incident/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/uk-housing-ombudsman-service-investigates-security-incident/",
+    "title": "UK Housing Ombudsman Service Investigates Security Incident on Case Management System",
+    "headline": "UK Housing Ombudsman Service Investigates Security Incident on Case Management System",
+    "summary": "The UK Housing Ombudsman Service is probing a third‑party IT security incident that affected its case management system. The investigation seeks to determine the scope, impact, and any data compromise, with no confirmed breach yet reported.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-13T18:19:44.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/uk-housing-ombudsman-service-investigates-security-incident/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/docker-fixes-critical-two-year-old-hub.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/docker-fixes-critical-two-year-old-hub.html",
+    "title": "Docker Fixes Critical Two-Year-Old Hub Flaw Allowing User Impersonation",
+    "headline": "Docker Fixes Critical Two-Year-Old Hub Flaw Allowing User Impersonation",
+    "summary": "Docker Hub’s registry flaw let a user push, pull, or delete images as another user by converting a personal account into an organization. The issue, fixed on September 30, was deemed critical but no exploitation evidence was found. Docker issued a security advisory on October 12.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-13T18:03:18.000Z",
+    "url": "https://thehackernews.com/2026/10/docker-fixes-critical-two-year-old-hub.html",
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/docker-hub-vulnerability/"
+      },
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/docker-hub-flaw-let-attackers-impersonate-users-tamper-with-images/"
+      }
+    ]
+  },
+  {
+    "id": "https://cybersecuritynews.com/fortisandbox-gui-vulnerability/",
+    "sourceUrl": "https://cybersecuritynews.com/fortisandbox-gui-vulnerability/",
+    "title": "Critical FortiSandbox GUI Authentication Bypass Vulnerability",
+    "headline": "Critical FortiSandbox GUI Authentication Bypass Vulnerability",
+    "summary": "Fortinet disclosed a critical authentication‑bypass flaw in the FortiSandbox GUI, tracked as CVE-2026-107656, with a CVSSv3 score of 9.6. The vulnerability allows remote attackers to access protected functions without valid credentials on FortiSandbox appliances and selected PaaS releases.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-13T17:54:42.000Z",
+    "url": "https://cybersecuritynews.com/fortisandbox-gui-vulnerability/",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/11/week-in-review-fortibleed-is-still-active-patch-tuesday-forecast/"
+      },
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/palo-alto-globalprotect-flaw-vpn-access/"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/sap-discloses-critical-cvss-10-flaw-in.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/sap-discloses-critical-cvss-10-flaw-in.html",
+    "title": "SAP Cloud SDK for Python Vulnerability Enables OAuth2 Credential Theft",
+    "headline": "SAP Cloud SDK for Python Vulnerability Enables OAuth2 Credential Theft",
+    "summary": "A flaw in SAP’s Cloud SDK for Python can transmit an application’s OAuth2 client credentials to an attacker‑controlled server. The issue affects multi‑tenant SAP Business Technology Platform applications using the SDK and requires the attacker to control the tenant subdomain. SAP issued a security advisory on October 13.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-13T17:28:50.000Z",
+    "url": "https://thehackernews.com/2026/10/sap-discloses-critical-cvss-10-flaw-in.html",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/sap-warns-of-maximum-severity-oauth2-ssrf-security-flaw/"
+      }
+    ]
+  },
+  {
+    "id": "https://cybersecuritynews.com/tfg-london-cyberattack/",
+    "sourceUrl": "https://cybersecuritynews.com/tfg-london-cyberattack/",
+    "title": "TFG London Cyberattack Disrupts IT Systems for Phase Eight, Hobbs, and Whistles",
+    "headline": "TFG London Cyberattack Disrupts IT Systems for Phase Eight, Hobbs, and Whistles",
+    "summary": "TFG London confirmed a cyberattack that disrupted IT systems supporting Phase Eight, Hobbs, and Whistles brands. The incident was detected on October 11 and disclosed to shareholders on October 13. Several systems remained unavailable, though stores continued trading.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-13T17:26:27.000Z",
+    "url": "https://cybersecuritynews.com/tfg-london-cyberattack/",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/tfg-london-cyberattack-disrupts-systems-at-hobbs-and-whistles-retailers/"
+      }
+    ]
+  },
+  {
     "id": "https://www.securityweek.com/adobe-patches-140-vulnerabilities-across-10-products/",
     "sourceUrl": "https://www.securityweek.com/adobe-patches-140-vulnerabilities-across-10-products/",
     "title": "Adobe Releases Patches for 140 Vulnerabilities Across 10 Products",
@@ -31,17 +216,22 @@
     ]
   },
   {
-    "id": "https://www.bleepingcomputer.com/news/security/tfg-london-cyberattack-disrupts-systems-at-hobbs-and-whistles-retailers/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/tfg-london-cyberattack-disrupts-systems-at-hobbs-and-whistles-retailers/",
-    "title": "TFG London Cyberattack Hits Hobbs and Whistles Retail Systems",
-    "headline": "TFG London Cyberattack Hits Hobbs and Whistles Retail Systems",
-    "summary": "TFG London reported a cybersecurity incident that disrupted IT systems used by Phase Eight, Hobbs, and Whistles premium fashion brands. The attack impacted operational systems, causing service interruptions for the retailers. No data exfiltration was confirmed, but the incident highlights the need for robust incident response plans.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-13T16:44:18.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/tfg-london-cyberattack-disrupts-systems-at-hobbs-and-whistles-retailers/",
-    "additionalSources": []
+    "id": "https://cybersecuritynews.com/crowdstrike-joins-anthropic-defense-program/",
+    "sourceUrl": "https://cybersecuritynews.com/crowdstrike-joins-anthropic-defense-program/",
+    "title": "CrowdStrike Joins Anthropic Defense Program to Advance AI-powered Defense for Critical Infrastructure",
+    "headline": "CrowdStrike Joins Anthropic Defense Program to Advance AI-powered Defense for Critical Infrastructure",
+    "summary": "CrowdStrike partnered with Anthropic to strengthen AI-powered cybersecurity for critical infrastructure sectors such as energy, water, manufacturing, and transportation. The collaboration combines CrowdStrike’s network protection expertise with Anthropic’s Claude models and research to address complex security challenges.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-13T16:49:50.000Z",
+    "url": "https://cybersecuritynews.com/crowdstrike-joins-anthropic-defense-program/",
+    "additionalSources": [
+      {
+        "source": "CrowdStrike",
+        "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-anthropic-critical-infrastructure-defense-program/"
+      }
+    ]
   },
   {
     "id": "https://thehackernews.com/2026/10/github-tightens-npm-publishing-after.html",
@@ -119,24 +309,6 @@
     ]
   },
   {
-    "id": "https://cybersecuritynews.com/ivanti-connect-secure-zero-day/",
-    "sourceUrl": "https://cybersecuritynews.com/ivanti-connect-secure-zero-day/",
-    "title": "Ivanti Connect Secure Zero‑Day Vulnerability Actively Exploited",
-    "headline": "Ivanti Connect Secure Zero‑Day Vulnerability Actively Exploited",
-    "summary": "Ivanti disclosed an actively exploited zero‑day vulnerability (CVE‑2026‑104935) in Ivanti Connect Secure that permits remote attackers to execute arbitrary commands without authentication. The flaw has a CVSS score of 8.6 and has impacted a limited number of customers as reported in the October 13, 2026 advisory.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-13T15:55:26.000Z",
-    "url": "https://cybersecuritynews.com/ivanti-connect-secure-zero-day/",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/ivanti-warns-of-connect-secure-zero-day-exploited-in-attacks/"
-      }
-    ]
-  },
-  {
     "id": "https://blog.cloudflare.com/rewinding-the-exponential/",
     "sourceUrl": "https://blog.cloudflare.com/rewinding-the-exponential/",
     "title": "Cloudflare Optimizes Data Pipeline Hardware Usage",
@@ -184,19 +356,6 @@
         "sourceUrl": "https://cybersecuritynews.com/icmacos-malware-evolves/"
       }
     ]
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/docker-hub-flaw-let-attackers-impersonate-users-tamper-with-images/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/docker-hub-flaw-let-attackers-impersonate-users-tamper-with-images/",
-    "title": "Docker Hub Vulnerability Allows User Impersonation and Image Tampering",
-    "headline": "Docker Hub Vulnerability Allows User Impersonation and Image Tampering",
-    "summary": "Docker Hub flaw CVE-2026-105445 allows attackers to impersonate users and tamper with images by using personal access tokens to access other users' repositories. This critical vulnerability could lead to unauthorized code injection and distribution of malicious containers. Docker has issued a patch; users should update immediately.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-13T15:20:20.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/docker-hub-flaw-let-attackers-impersonate-users-tamper-with-images/",
-    "additionalSources": []
   },
   {
     "id": "https://therecord.media/north-korea-hackers-russia-ukraine",
@@ -276,19 +435,6 @@
     "source": "Cyber Security News",
     "publishedAt": "2026-10-13T13:56:51.000Z",
     "url": "https://cybersecuritynews.com/g2a-com-reports-35-growth-in-security-software-orders-outpacing-vpn-growth/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/sap-warns-of-maximum-severity-oauth2-ssrf-security-flaw/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/sap-warns-of-maximum-severity-oauth2-ssrf-security-flaw/",
-    "title": "SAP Addresses Maximum‑Severity OAuth2 SSRF Flaw in Cloud SDK for Python",
-    "headline": "SAP Addresses Maximum‑Severity OAuth2 SSRF Flaw in Cloud SDK for Python",
-    "summary": "SAP released October 2026 security updates that fix 20 vulnerabilities, including a maximum‑severity Server‑Side Request Forgery flaw in its Cloud SDK for Python. The SSRF flaw could allow attackers to make unauthorized requests from the SDK, potentially exposing internal resources.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-13T13:51:02.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/sap-warns-of-maximum-severity-oauth2-ssrf-security-flaw/",
     "additionalSources": []
   },
   {
@@ -455,24 +601,6 @@
     ]
   },
   {
-    "id": "https://www.securityweek.com/small-ai-models-may-soon-be-able-to-self-replicate-on-iot-devices-anthropic-warns/",
-    "sourceUrl": "https://www.securityweek.com/small-ai-models-may-soon-be-able-to-self-replicate-on-iot-devices-anthropic-warns/",
-    "title": "Anthropic Warns Small AI Models Could Self-Replicate on IoT Devices",
-    "headline": "Anthropic Warns Small AI Models Could Self-Replicate on IoT Devices",
-    "summary": "Anthropic researchers warn that inexpensive TV boxes can run small AI models, which may soon be able to self-replicate across connected devices. The experiments demonstrate that these lightweight models can spread autonomously on IoT hardware, raising concerns about uncontrolled proliferation and potential security risks in consumer electronics.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-13T11:58:29.000Z",
-    "url": "https://www.securityweek.com/small-ai-models-may-soon-be-able-to-self-replicate-on-iot-devices-anthropic-warns/",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/anthropic-takes-risky-ai-tests-offline-after-models-breach-govt-sites/"
-      }
-    ]
-  },
-  {
     "id": "https://www.helpnetsecurity.com/2026/10/13/mozilla-firefox-enterprise-platform/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/13/mozilla-firefox-enterprise-platform/",
     "title": "Mozilla Firefox Enterprise Blocks Shadow AI in Browser",
@@ -559,19 +687,6 @@
         "sourceUrl": "https://cybersecuritynews.com/best-sbom-tools/"
       }
     ]
-  },
-  {
-    "id": "https://cybersecuritynews.com/amazon-fire-tv-cube-3-exploit/",
-    "sourceUrl": "https://cybersecuritynews.com/amazon-fire-tv-cube-3-exploit/",
-    "title": "Amazon Fire TV Cube 3 Exploit Grants Persistent Root Access and Bootloader Unlock",
-    "headline": "Amazon Fire TV Cube 3 Exploit Grants Persistent Root Access and Bootloader Unlock",
-    "summary": "A public exploit package released by XDA developer Pro-me3us allows owners of Amazon’s third‑generation Fire TV Cube running firmware PS7717 or older to gain persistent root access and unlock the bootloader. The exploit targets devices known as “gazelle,” combining temporary root privileges with a bootloader flaw to enable deeper system changes.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-13T09:46:44.000Z",
-    "url": "https://cybersecuritynews.com/amazon-fire-tv-cube-3-exploit/",
-    "additionalSources": []
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/10/13/gitlab-ci-cd-regular-expression-compiler-vulnerability-cve-2026-97229/",
@@ -683,19 +798,6 @@
         "sourceUrl": "https://www.securityweek.com/canonical-websites-disrupted-in-second-ddos-attack-this-year/"
       }
     ]
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/13/cybersecurity-jobs-available-right-now-october-13-2026/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/13/cybersecurity-jobs-available-right-now-october-13-2026/",
-    "title": "Cybersecurity Job Openings for October 13, 2026",
-    "headline": "Cybersecurity Job Openings for October 13, 2026",
-    "summary": "Help Net Security lists current cybersecurity positions, including a CISO & Head of IT role in Israel and a Cloud Threat Hunter position in the USA. The postings detail responsibilities, location, and application links for each role, offering opportunities for professionals in IT leadership and threat hunting.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-13T04:00:40.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/13/cybersecurity-jobs-available-right-now-october-13-2026/",
-    "additionalSources": []
   },
   {
     "id": "https://www.darkreading.com/vulnerabilities-threats/max-severity-ssrf-flaw-sonicwall-sma-devices-under-attack",
@@ -874,19 +976,6 @@
     "source": "Cyber Security News",
     "publishedAt": "2026-10-12T12:07:34.000Z",
     "url": "https://cybersecuritynews.com/ibm-patches-22-verify-access-flaw/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-11-23h2-reaches-end-of-support-in-30-days/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-11-23h2-reaches-end-of-support-in-30-days/",
-    "title": "Windows 11 23H2 Enterprise Editions Reach End of Support in 30 Days",
-    "headline": "Windows 11 23H2 Enterprise Editions Reach End of Support in 30 Days",
-    "summary": "Microsoft announced that Windows 11 23H2 Enterprise, Education, and IoT Enterprise editions will cease receiving security updates in 30 days. Users must upgrade to newer releases or apply extended support options. Failure to update may expose systems to unpatched vulnerabilities and compliance risks.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-12T11:58:33.000Z",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-11-23h2-reaches-end-of-support-in-30-days/",
     "additionalSources": []
   },
   {
@@ -1137,28 +1226,6 @@
     ]
   },
   {
-    "id": "https://www.helpnetsecurity.com/2026/10/11/week-in-review-fortibleed-is-still-active-patch-tuesday-forecast/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/11/week-in-review-fortibleed-is-still-active-patch-tuesday-forecast/",
-    "title": "FortiBleed Vulnerability Still Active, Patch Tuesday Forecast",
-    "headline": "FortiBleed Vulnerability Still Active, Patch Tuesday Forecast",
-    "summary": "FortiBleed, a critical buffer overflow flaw in Fortinet FortiGate firewalls, remains active. The vulnerability allows remote attackers to execute arbitrary code via crafted packets, potentially compromising network infrastructure. Fortinet has issued patches; administrators should apply updates promptly to mitigate exploitation risks.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-11T08:00:49.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/11/week-in-review-fortibleed-is-still-active-patch-tuesday-forecast/",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/09/october-2026-patch-tuesday-forecast/"
-      },
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/fortibleed-attackers-locking-victims-out-of-fortinet-devices/"
-      }
-    ]
-  },
-  {
     "id": "https://cybersecuritynews.com/best-protected-website-builder/",
     "sourceUrl": "https://cybersecuritynews.com/best-protected-website-builder/",
     "title": "Best Protected Website Builder 2027: Which Platform Offers True Security",
@@ -1170,24 +1237,6 @@
     "publishedAt": "2026-10-11T03:35:31.000Z",
     "url": "https://cybersecuritynews.com/best-protected-website-builder/",
     "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/palo-alto-globalprotect-flaw-vpn-access/",
-    "sourceUrl": "https://cybersecuritynews.com/palo-alto-globalprotect-flaw-vpn-access/",
-    "title": "Ransomware Groups Exploit Palo Alto GlobalProtect Authentication Bypass CVE-2026-0257",
-    "headline": "Ransomware Groups Exploit Palo Alto GlobalProtect Authentication Bypass CVE-2026-0257",
-    "summary": "Ransomware actors Qilin and Settra are using CVE-2026-0257 to bypass authentication in Palo Alto Networks PAN-OS GlobalProtect and Prisma Access, creating unauthorized VPN sessions that grant stealthy access to internal networks. The flaw enables attackers to enter trusted remote access services, posing a serious detection challenge.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-11T03:21:01.000Z",
-    "url": "https://cybersecuritynews.com/palo-alto-globalprotect-flaw-vpn-access/",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/cybersecurity-ma-roundup-39-deals-announced-in-september-2026/"
-      }
-    ]
   },
   {
     "id": "https://www.bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks/",
@@ -2228,28 +2277,6 @@
     "publishedAt": "2026-10-08T05:00:08.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/08/espresso-labs-ai-cybersecurity-compliance/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.crowdstrike.com/en-us/blog/crowdstrike-anthropic-critical-infrastructure-defense-program/",
-    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-anthropic-critical-infrastructure-defense-program/",
-    "title": "CrowdStrike and Anthropic Provide AI Tools for Critical Infrastructure Defenders",
-    "headline": "CrowdStrike and Anthropic Provide AI Tools for Critical Infrastructure Defenders",
-    "summary": "CrowdStrike and Anthropic have partnered to give critical infrastructure defenders AI-powered tools designed to enhance threat detection and response capabilities. The collaboration aims to improve security posture for essential services by leveraging advanced AI analytics.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "CrowdStrike",
-    "publishedAt": "2026-10-08T05:00:00.000Z",
-    "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-anthropic-critical-infrastructure-defense-program/",
-    "additionalSources": [
-      {
-        "source": "Dark Reading",
-        "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/anthropic-vetted-defenders-claude-guardrails"
-      },
-      {
-        "source": "CrowdStrike",
-        "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-expands-federal-soc-modernization-via-cisa-siemaas/"
-      }
-    ]
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/10/08/passkey-adoption-typing-passwords/",
