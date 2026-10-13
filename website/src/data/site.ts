@@ -123,7 +123,7 @@ export const curatedSources: CuratedSource[] = [
   {
     name: 'The Hacker News',
     category: 'Newsrooms & Journalism',
-    url: 'https://thehackersnews.com',
+    url: 'https://thehackernews.com',
     description: 'Breaking global cybersecurity news, zero-day vulnerabilities, malware analysis, and data breaches.'
   },
   {
@@ -135,7 +135,7 @@ export const curatedSources: CuratedSource[] = [
   {
     name: 'CISA Cybersecurity Advisories',
     category: 'Government & CERTs',
-    url: 'https://www.cisa.gov/cybersecurity-advisories',
+    url: 'https://www.cisa.gov/news-events/cybersecurity-advisories',
     description: 'Authoritative bulletins and binding operational directives from the U.S. Cybersecurity and Infrastructure Security Agency.'
   },
   {
