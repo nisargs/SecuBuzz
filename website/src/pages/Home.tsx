@@ -57,7 +57,7 @@ export function Home() {
               <PlayStoreButton size="lg" source="home_hero" />
               <Link
                 to="/news"
-                className="inline-flex items-center gap-1.5 text-sm font-medium text-ink transition-colors duration-150 ease-out hover:text-accent">
+                className="inline-flex items-center gap-1.5 text-sm font-medium text-ink transition-colors duration-150 ease-out hover:underline underline-offset-4 decoration-muted/50">
                 
                 Read today’s briefs <ArrowRightIcon className="h-4 w-4" aria-hidden="true" />
               </Link>

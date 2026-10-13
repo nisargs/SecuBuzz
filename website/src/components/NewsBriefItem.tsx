@@ -52,8 +52,7 @@ export function NewsBriefItem({ brief }: NewsBriefItemProps) {
         <h3 className="text-xl font-semibold leading-snug tracking-tight text-ink">
           <Link
             to={`/news/${brief.slug}`}
-            className="transition-colors duration-150 ease-out hover:text-accent">
-            
+            className="transition-colors duration-150 ease-out hover:underline underline-offset-4 decoration-muted/50">
             {brief.title}
           </Link>
         </h3>

@@ -16,7 +16,7 @@ export function AdvisoryListItem({ advisory }: AdvisoryListItemProps) {
         className="group block px-5 py-4 transition-colors duration-150 ease-out hover:bg-raised">
         
         <div className="flex items-center justify-between gap-3">
-          <span className="font-mono text-sm font-medium text-ink group-hover:text-accent">{advisory.cve}</span>
+          <span className="font-mono text-sm font-medium text-ink group-hover:underline underline-offset-2 decoration-muted/50">{advisory.cve}</span>
           <SeverityBadge severity={advisory.severity} cvss={advisory.cvss} />
         </div>
         <p className="mt-1.5 text-sm text-muted">

@@ -62,7 +62,7 @@ export function LegalPage({ title, updated, sections, canonicalPath, description
                         href={source.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-muted transition-colors duration-150 ease-out hover:text-accent"
+                        className="text-muted transition-colors duration-150 ease-out hover:text-ink hover:underline underline-offset-2 decoration-muted/50"
                       >
                         <span className="font-medium text-ink">{source.name}</span>{' '}
                         <span className="font-mono text-xs text-subtle">({source.domain})</span>
