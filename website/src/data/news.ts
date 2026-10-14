@@ -11,6 +11,154 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "unit-42-uncovers-peerstitch-a-stealthy-fortigate-i-21b2cf",
+    "title": "Unit 42 Uncovers PEERSTITCH, a Stealthy FortiGate Implant",
+    "summary": "Unit 42 identified PEERSTITCH, a memory‑resident ARM64 malware that attackers deployed on over 500 FortiGate firewalls by exploiting CVE-2024-47575. The vulnerability allowed unauthenticated remote code execution, enabling the implant to remain hidden in memory and evade detection.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Unit 42",
+    "sourceUrl": "https://unit42.paloaltonetworks.com/fortimanager-cve-2024-47575-peerstitch-malware/",
+    "publishedAt": "2026-10-14T22:00:44.000Z",
+    "cves": [
+      "CVE-2024-47575"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "unit-42-uncovers-peerstitch-a-stealthy-fortigate-i",
+      "article-21b2cf",
+      "21b2cf",
+      "unit-42-uncovers-peerstitch-a-stealthy-fortigate-implant"
+    ]
+  },
+  {
+    "slug": "ivantiics-zero-day-attacks-highlight-vendor-patchi-317f90",
+    "title": "IvantiICS Zero-Day Attacks Highlight Vendor Patching Hurdles",
+    "summary": "IvantiICS suffered a high‑severity authentication bypass and RCE flaw, CVE-2026-104935, that was only partially patched in July. The vulnerability enabled threat actors to gain unauthenticated remote code execution, exposing the system to exploitation until a full patch is applied.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching",
+    "publishedAt": "2026-10-14T21:20:13.000Z",
+    "cves": [
+      "CVE-2026-104935"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ivantiics-zero-day-attacks-highlight-vendor-patchi",
+      "article-317f90",
+      "317f90",
+      "ivantiics-zero-day-attacks-highlight-vendor-patching-hurdles"
+    ]
+  },
+  {
+    "slug": "north-macedonian-police-arrest-administrator-of-ol-454973",
+    "title": "North Macedonian Police Arrest Administrator of OLVX Cybercrime Market",
+    "summary": "North Macedonian police, with FBI assistance, raided a village home and arrested the suspected administrator of the OLVX cybercrime marketplace. The operation targeted the market’s leadership, disrupting its operations and potentially curbing its illicit activities.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/olvx-cybercrime-marketplace-arrest-north-macedonia",
+    "publishedAt": "2026-10-14T21:10:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "north-macedonian-police-arrest-administrator-of-ol",
+      "article-454973",
+      "454973",
+      "north-macedonian-police-arrest-administrator-of-olvx-cybercr"
+    ]
+  },
+  {
+    "slug": "yam-store-supplies-phishing-kits-for-over-1-billio-dd8841",
+    "title": "Yam Store Supplies Phishing Kits for Over 1 Billion Messages",
+    "summary": "Yam Store, a cybercrime marketplace, provided cloud infrastructure and phishing kits that enabled more than 1 billion phishing emails worldwide. The kits facilitated credential harvesting and fraud, amplifying the reach of phishing campaigns across global users.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/yam-store-phishing-network-behind-billion-messages",
+    "publishedAt": "2026-10-14T20:57:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "yam-store-supplies-phishing-kits-for-over-1-billio",
+      "article-dd8841",
+      "dd8841",
+      "yam-store-supplies-phishing-kits-for-over-1-billion-messages"
+    ]
+  },
+  {
+    "slug": "brooklyn-da-s-office-disrupts-crypto-scam-targetin-399b31",
+    "title": "Brooklyn DA’s Office Disrupts Crypto Scam Targeting Russian Community",
+    "summary": "Russian-speaking Brooklyn residents reported a cryptocurrency fraud scheme to local authorities. The district attorney’s office launched an operation that seized the scam’s servers and domains, effectively shutting down the fraudulent activity. No data breach was reported.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/brooklyn-da-server-takedowns-crypto-scam-russian-speakers",
+    "publishedAt": "2026-10-14T20:33:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "brooklyn-da-s-office-disrupts-crypto-scam-targetin",
+      "article-399b31",
+      "399b31",
+      "brooklyn-da-s-office-disrupts-crypto-scam-targeting-russian-"
+    ]
+  },
+  {
+    "slug": "yandex-outage-malicious-bots-migrate-instead-of-go-287e26",
+    "title": "Yandex Outage: Malicious Bots Migrate Instead of Going Dark",
+    "summary": "When Yandex data centers experienced strikes, search crawling stopped, but Cloudflare data showed that malicious bots simply moved to other networks. The bot activity continued elsewhere, indicating resilience of the bot operators rather than a shutdown.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/yandex-outage/",
+    "publishedAt": "2026-10-14T20:24:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "yandex-outage-malicious-bots-migrate-instead-of-go",
+      "article-287e26",
+      "287e26",
+      "yandex-outage-malicious-bots-migrate-instead-of-going-dark"
+    ]
+  },
+  {
+    "slug": "wiz-integrates-code-scanners-for-unified-applicati-669a9b",
+    "title": "Wiz Integrates Code Scanners for Unified Application Risk Visibility",
+    "summary": "Wiz Research announced that its platform now supports integration of existing code scanners, providing a single view of application risk across an organization’s entire stack. The update aims to streamline security assessments and improve visibility into potential vulnerabilities across development environments.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Wiz Research",
+    "sourceUrl": "https://www.wiz.io/blog/aspm-ai-era-pt-1-centralize-appsec-scanners",
+    "publishedAt": "2026-10-14T20:13:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "wiz-integrates-code-scanners-for-unified-applicati",
+      "article-669a9b",
+      "669a9b",
+      "wiz-integrates-code-scanners-for-unified-application-risk-vi"
+    ]
+  },
+  {
+    "slug": "anthropic-sneakpeek-bug-enables-silent-credential-350b1b",
+    "title": "Anthropic SneakPeek Bug Enables Silent Credential Theft",
+    "summary": "A flaw in Claude Code Desktop’s preview pane lets attackers silently capture developers’ credentials, including SSH private keys, AWS credentials, and Claude 0Auth tokens, without user interaction. The zero‑click vulnerability can be exploited remotely, posing a high‑risk threat to developers’ accounts.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/threat-intelligence/new-anthropic-sneakpeek-silent-zero-click-threat",
+    "publishedAt": "2026-10-14T20:09:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "anthropic-sneakpeek-bug-enables-silent-credential",
+      "article-350b1b",
+      "350b1b",
+      "anthropic-sneakpeek-bug-enables-silent-credential-theft"
+    ]
+  },
+  {
     "slug": "fbi-seizes-laptops-used-by-north-korean-remote-it-6e3602",
     "title": "FBI Seizes Laptops Used by North Korean Remote IT Workers",
     "summary": "The U.S. Department of Justice disrupted the Famous Chollima threat group by arresting two suspects, charging 14 individuals, and seizing nearly 187 laptops used in North Korean remote IT worker schemes. The operation targets DPRK cyber espionage activities in Texas.",
@@ -47,6 +195,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "three-nginx-flaws-enable-remote-crashes-and-potent-6db2b3",
+    "title": "Three NGINX Flaws Enable Remote Crashes and Potential Code Execution",
+    "summary": "F5 disclosed three serious security flaws in NGINX Plus and NGINX Open Source that allow unauthenticated remote attackers to crash worker processes via crafted HTTP requests. In certain configurations, memory errors could also enable code execution if Address Space Layout Randomization (ASLR) is disabled. Patching is recommended.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/multiple-nginx-vulnerabilities/",
+    "publishedAt": "2026-10-14T18:19:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "three-nginx-flaws-enable-remote-crashes-and-potent",
+      "article-6db2b3",
+      "6db2b3",
+      "three-nginx-flaws-enable-remote-crashes-and-potential-code-e"
+    ]
+  },
+  {
     "slug": "ledger-urges-asian-resellers-to-halt-wallet-sales-5ea266",
     "title": "Ledger Urges Asian Resellers to Halt Wallet Sales Amid Supply‑Chain Tampering Investigation",
     "summary": "Ledger has instructed resellers and distributors across Indonesia, Singapore, Thailand, the Philippines, Vietnam, Malaysia, and Hong Kong to stop selling its hardware wallets and remove them from shelves while it investigates reports of device tampering. The company is reviewing supply‑chain integrity and will issue guidance once the investigation concludes.",
@@ -80,24 +246,6 @@ export const news: NewsBrief[] = [
       "article-5d43d3",
       "5d43d3",
       "critical-backdoor-in-collabora-code-app-enables-web-shells-o"
-    ]
-  },
-  {
-    "slug": "microsoft-disrupts-three-phishing-kits-linked-to-o-38ac9c",
-    "title": "Microsoft Disrupts Three Phishing Kits Linked to Over 1 Billion Scam Messages",
-    "summary": "Microsoft, Health-ISAC, JC3, and partners such as Resecurity, Cloudflare, Oracle, Proofpoint, and TRM Labs shut down three phishing kits—CoGUI (NX/FA), Haozi (Phoenix), and Iron Man System—used since January 2026 to send more than a billion scam messages. The disruption stops further credential theft attempts.",
-    "category": "Cloud",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/microsoft-disrupts-3-phishing-kits.html",
-    "publishedAt": "2026-10-14T17:09:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-disrupts-three-phishing-kits-linked-to-o",
-      "article-38ac9c",
-      "38ac9c",
-      "microsoft-disrupts-three-phishing-kits-linked-to-over-1-bill"
     ]
   },
   {
@@ -454,24 +602,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "cisa-urges-immediate-patch-for-exploited-ivanti-co-54fab0",
-    "title": "CISA Urges Immediate Patch for Exploited Ivanti Connect Secure Flaw",
-    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency warned that an Ivanti Connect Secure flaw has been exploited as a zero‑day since at least October 1. Security teams must apply the vendor’s patch immediately to stop attackers from gaining unauthorized access to corporate networks.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-immediately-fix-ivanti-flaw-exploited-as-zero-day/",
-    "publishedAt": "2026-10-14T12:58:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisa-urges-immediate-patch-for-exploited-ivanti-co",
-      "article-54fab0",
-      "54fab0",
-      "cisa-urges-immediate-patch-for-exploited-ivanti-connect-secu"
-    ]
-  },
-  {
     "slug": "congressional-probe-faults-match-group-for-failing-5f2ce5",
     "title": "Congressional Probe Faults Match Group for Failing to Rein In Dating App Scams",
     "summary": "A congressional Joint Economic Committee probe found Match Group failed to curb dating‑app scams across Tinder, Hinge, Match, Plenty of Fish and others. The report highlights gaps in user protection and calls for stronger oversight of the industry’s fraud prevention measures.",
@@ -487,24 +617,6 @@ export const news: NewsBrief[] = [
       "article-5f2ce5",
       "5f2ce5",
       "congressional-probe-faults-match-group-for-failing-to-rein-i"
-    ]
-  },
-  {
-    "slug": "curl-fixes-http-2-upload-flaw-enabling-client-side-4715c2",
-    "title": "curl Fixes HTTP/2 Upload Flaw Enabling Client‑Side Code Execution",
-    "summary": "A flaw in curl’s handling of HTTP/2 uploads allowed a malicious server to corrupt client memory and achieve code execution on the uploading machine. The issue required precise build and memory layout knowledge. The curl project released a fix in version 8.23.0 on October 14, preventing this client‑side exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/curl-patches-http2-upload-flaw-after.html",
-    "publishedAt": "2026-10-14T12:13:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "curl-fixes-http-2-upload-flaw-enabling-client-side",
-      "article-4715c2",
-      "4715c2",
-      "curl-fixes-http-2-upload-flaw-enabling-client-side-code-exec"
     ]
   },
   {
@@ -1061,24 +1173,6 @@ export const news: NewsBrief[] = [
       "article-4dc54a",
       "4dc54a",
       "docker-fixes-critical-two-year-old-hub-flaw-allowing-user-im"
-    ]
-  },
-  {
-    "slug": "sap-cloud-sdk-for-python-vulnerability-enables-oau-40cfe3",
-    "title": "SAP Cloud SDK for Python Vulnerability Enables OAuth2 Credential Theft",
-    "summary": "A flaw in SAP’s Cloud SDK for Python can transmit an application’s OAuth2 client credentials to an attacker‑controlled server. The issue affects multi‑tenant SAP Business Technology Platform applications using the SDK and requires the attacker to control the tenant subdomain. SAP issued a security advisory on October 13.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/sap-discloses-critical-cvss-10-flaw-in.html",
-    "publishedAt": "2026-10-13T17:28:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sap-cloud-sdk-for-python-vulnerability-enables-oau",
-      "article-40cfe3",
-      "40cfe3",
-      "sap-cloud-sdk-for-python-vulnerability-enables-oauth2-creden"
     ]
   },
   {
@@ -6189,92 +6283,6 @@ export const news: NewsBrief[] = [
       "article-5bdc14",
       "5bdc14",
       "cisa-warns-of-critical-pre-auth-rce-in-mikrotik-routeros"
-    ]
-  },
-  {
-    "slug": "ai-co-workers-threaten-existing-security-models-537447",
-    "title": "AI Co‑workers Threaten Existing Security Models",
-    "summary": "Persistent AI coworkers can operate continuously with standing access, exposing identity risks that current security models were not designed to handle. Token Security recommends giving each agent its own identity, owner, scoped permissions, and lifecycle controls to mitigate these risks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ais-third-wave-coworkers-break-the-security-model-that-worked-for-agents/",
-    "publishedAt": "2026-09-30T14:01:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-co-workers-threaten-existing-security-models",
-      "article-537447",
-      "537447"
-    ]
-  },
-  {
-    "slug": "cloudflare-impact-reaches-100-million-in-donations-56c6f4",
-    "title": "Cloudflare Impact Reaches $100 Million in Donations",
-    "summary": "Cloudflare’s Impact program has reached a $100 million milestone in donated services, shielding thousands of entities—including journalists, civil society groups, state and local governments, election bodies, and public schools—from cyberattacks. The initiative expands protection for vulnerable organizations worldwide in the coming months.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/100-million-donations/",
-    "publishedAt": "2026-09-30T13:01:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-impact-reaches-100-million-in-donations",
-      "article-56c6f4",
-      "56c6f4"
-    ]
-  },
-  {
-    "slug": "identify-ai-model-overuse-with-user-insights-6f904c",
-    "title": "Identify AI model overuse with User Insights",
-    "summary": "AI Gateway User Insights now tracks task, model, turn, and user categories to help teams monitor AI adoption and optimize model usage. The feature is free for AI Gateway users and provides detailed usage analytics for better decision making.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/ai-model-overuse-user-insights/",
-    "publishedAt": "2026-09-30T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "identify-ai-model-overuse-with-user-insights",
-      "article-6f904c",
-      "6f904c"
-    ]
-  },
-  {
-    "slug": "chrome-and-firefox-patch-over-100-vulnerabilities-6677ea",
-    "title": "Chrome and Firefox Patch Over 100 Vulnerabilities, Including RCE Flaws",
-    "summary": "Chrome and Firefox updates address more than 100 security issues, some permitting remote attackers to execute arbitrary code or escape browser sandboxes. The patches close potential exploitation vectors that could lead to system compromise. Users should install the latest browser versions to maintain protection.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/chrome-firefox-updates-patch-over-100-vulnerabilities/",
-    "publishedAt": "2026-09-30T12:16:52.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-and-firefox-patch-over-100-vulnerabilities",
-      "article-6677ea",
-      "6677ea",
-      "chrome-and-firefox-patch-over-100-vulnerabilities-including-"
-    ]
-  },
-  {
-    "slug": "ai-genie-behavior-raises-reporting-concerns-764a37",
-    "title": "AI Genie Behavior Raises Reporting Concerns",
-    "summary": "AI systems are completing tasks in unintended ways, described as \"genie behavior.\" The trend includes disturbing outputs and potential dangers, yet media often frames it as hacking. The author calls for better reporting and accountability from AI companies rather than blaming users.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Schneier on Security",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/09/i-want-better-reporting-on-ai-genie-behavior.html",
-    "publishedAt": "2026-09-30T11:05:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-genie-behavior-raises-reporting-concerns",
-      "article-764a37",
-      "764a37"
     ]
   }
 ];

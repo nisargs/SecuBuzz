@@ -5,8 +5,80 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Oct 2026 20:19:31 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 22:20:52 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Unit 42 Uncovers PEERSTITCH, a Stealthy FortiGate Implant</title>
+      <link>https://secubuzz.com/news/unit-42-uncovers-peerstitch-a-stealthy-fortigate-i-21b2cf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/unit-42-uncovers-peerstitch-a-stealthy-fortigate-i-21b2cf</guid>
+      <description><![CDATA[Unit 42 identified PEERSTITCH, a memory‑resident ARM64 malware that attackers deployed on over 500 FortiGate firewalls by exploiting CVE-2024-47575. The vulnerability allowed unauthenticated remote code execution, enabling the implant to remain hidden in memory and evade detection.]]></description>
+      <pubDate>Wed, 14 Oct 2026 22:00:44 GMT</pubDate>
+      <source url="https://unit42.paloaltonetworks.com/fortimanager-cve-2024-47575-peerstitch-malware/">Unit 42</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>IvantiICS Zero-Day Attacks Highlight Vendor Patching Hurdles</title>
+      <link>https://secubuzz.com/news/ivantiics-zero-day-attacks-highlight-vendor-patchi-317f90</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ivantiics-zero-day-attacks-highlight-vendor-patchi-317f90</guid>
+      <description><![CDATA[IvantiICS suffered a high‑severity authentication bypass and RCE flaw, CVE-2026-104935, that was only partially patched in July. The vulnerability enabled threat actors to gain unauthenticated remote code execution, exposing the system to exploitation until a full patch is applied.]]></description>
+      <pubDate>Wed, 14 Oct 2026 21:20:13 GMT</pubDate>
+      <source url="https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching">Dark Reading</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>North Macedonian Police Arrest Administrator of OLVX Cybercrime Market</title>
+      <link>https://secubuzz.com/news/north-macedonian-police-arrest-administrator-of-ol-454973</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/north-macedonian-police-arrest-administrator-of-ol-454973</guid>
+      <description><![CDATA[North Macedonian police, with FBI assistance, raided a village home and arrested the suspected administrator of the OLVX cybercrime marketplace. The operation targeted the market’s leadership, disrupting its operations and potentially curbing its illicit activities.]]></description>
+      <pubDate>Wed, 14 Oct 2026 21:10:00 GMT</pubDate>
+      <source url="https://therecord.media/olvx-cybercrime-marketplace-arrest-north-macedonia">The Record</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Yam Store Supplies Phishing Kits for Over 1 Billion Messages</title>
+      <link>https://secubuzz.com/news/yam-store-supplies-phishing-kits-for-over-1-billio-dd8841</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/yam-store-supplies-phishing-kits-for-over-1-billio-dd8841</guid>
+      <description><![CDATA[Yam Store, a cybercrime marketplace, provided cloud infrastructure and phishing kits that enabled more than 1 billion phishing emails worldwide. The kits facilitated credential harvesting and fraud, amplifying the reach of phishing campaigns across global users.]]></description>
+      <pubDate>Wed, 14 Oct 2026 20:57:16 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyberattacks-data-breaches/yam-store-phishing-network-behind-billion-messages">Dark Reading</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Brooklyn DA’s Office Disrupts Crypto Scam Targeting Russian Community</title>
+      <link>https://secubuzz.com/news/brooklyn-da-s-office-disrupts-crypto-scam-targetin-399b31</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/brooklyn-da-s-office-disrupts-crypto-scam-targetin-399b31</guid>
+      <description><![CDATA[Russian-speaking Brooklyn residents reported a cryptocurrency fraud scheme to local authorities. The district attorney’s office launched an operation that seized the scam’s servers and domains, effectively shutting down the fraudulent activity. No data breach was reported.]]></description>
+      <pubDate>Wed, 14 Oct 2026 20:33:00 GMT</pubDate>
+      <source url="https://therecord.media/brooklyn-da-server-takedowns-crypto-scam-russian-speakers">The Record</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Yandex Outage: Malicious Bots Migrate Instead of Going Dark</title>
+      <link>https://secubuzz.com/news/yandex-outage-malicious-bots-migrate-instead-of-go-287e26</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/yandex-outage-malicious-bots-migrate-instead-of-go-287e26</guid>
+      <description><![CDATA[When Yandex data centers experienced strikes, search crawling stopped, but Cloudflare data showed that malicious bots simply moved to other networks. The bot activity continued elsewhere, indicating resilience of the bot operators rather than a shutdown.]]></description>
+      <pubDate>Wed, 14 Oct 2026 20:24:19 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/yandex-outage/">Cloudflare Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Wiz Integrates Code Scanners for Unified Application Risk Visibility</title>
+      <link>https://secubuzz.com/news/wiz-integrates-code-scanners-for-unified-applicati-669a9b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/wiz-integrates-code-scanners-for-unified-applicati-669a9b</guid>
+      <description><![CDATA[Wiz Research announced that its platform now supports integration of existing code scanners, providing a single view of application risk across an organization’s entire stack. The update aims to streamline security assessments and improve visibility into potential vulnerabilities across development environments.]]></description>
+      <pubDate>Wed, 14 Oct 2026 20:13:53 GMT</pubDate>
+      <source url="https://www.wiz.io/blog/aspm-ai-era-pt-1-centralize-appsec-scanners">Wiz Research</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Anthropic SneakPeek Bug Enables Silent Credential Theft</title>
+      <link>https://secubuzz.com/news/anthropic-sneakpeek-bug-enables-silent-credential-350b1b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-sneakpeek-bug-enables-silent-credential-350b1b</guid>
+      <description><![CDATA[A flaw in Claude Code Desktop’s preview pane lets attackers silently capture developers’ credentials, including SSH private keys, AWS credentials, and Claude 0Auth tokens, without user interaction. The zero‑click vulnerability can be exploited remotely, posing a high‑risk threat to developers’ accounts.]]></description>
+      <pubDate>Wed, 14 Oct 2026 20:09:42 GMT</pubDate>
+      <source url="https://www.darkreading.com/threat-intelligence/new-anthropic-sneakpeek-silent-zero-click-threat">Dark Reading</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>FBI Seizes Laptops Used by North Korean Remote IT Workers</title>
       <link>https://secubuzz.com/news/fbi-seizes-laptops-used-by-north-korean-remote-it-6e3602</link>
@@ -26,6 +98,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Three NGINX Flaws Enable Remote Crashes and Potential Code Execution</title>
+      <link>https://secubuzz.com/news/three-nginx-flaws-enable-remote-crashes-and-potent-6db2b3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/three-nginx-flaws-enable-remote-crashes-and-potent-6db2b3</guid>
+      <description><![CDATA[F5 disclosed three serious security flaws in NGINX Plus and NGINX Open Source that allow unauthenticated remote attackers to crash worker processes via crafted HTTP requests. In certain configurations, memory errors could also enable code execution if Address Space Layout Randomization (ASLR) is disabled. Patching is recommended.]]></description>
+      <pubDate>Wed, 14 Oct 2026 18:19:03 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/multiple-nginx-vulnerabilities/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Ledger Urges Asian Resellers to Halt Wallet Sales Amid Supply‑Chain Tampering Investigation</title>
       <link>https://secubuzz.com/news/ledger-urges-asian-resellers-to-halt-wallet-sales-5ea266</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ledger-urges-asian-resellers-to-halt-wallet-sales-5ea266</guid>
@@ -42,15 +123,6 @@
       <pubDate>Wed, 14 Oct 2026 17:38:31 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/hackers-backdoor-nextcloud-servers.html">The Hacker News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Microsoft Disrupts Three Phishing Kits Linked to Over 1 Billion Scam Messages</title>
-      <link>https://secubuzz.com/news/microsoft-disrupts-three-phishing-kits-linked-to-o-38ac9c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-disrupts-three-phishing-kits-linked-to-o-38ac9c</guid>
-      <description><![CDATA[Microsoft, Health-ISAC, JC3, and partners such as Resecurity, Cloudflare, Oracle, Proofpoint, and TRM Labs shut down three phishing kits—CoGUI (NX/FA), Haozi (Phoenix), and Iron Man System—used since January 2026 to send more than a billion scam messages. The disruption stops further credential theft attempts.]]></description>
-      <pubDate>Wed, 14 Oct 2026 17:09:15 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/microsoft-disrupts-3-phishing-kits.html">The Hacker News</source>
-      <category>Cloud</category>
     </item>
     <item>
       <title>Spyware Operation Accessed Former Polish Government Data</title>
@@ -233,15 +305,6 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>CISA Urges Immediate Patch for Exploited Ivanti Connect Secure Flaw</title>
-      <link>https://secubuzz.com/news/cisa-urges-immediate-patch-for-exploited-ivanti-co-54fab0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-urges-immediate-patch-for-exploited-ivanti-co-54fab0</guid>
-      <description><![CDATA[The U.S. Cybersecurity and Infrastructure Security Agency warned that an Ivanti Connect Secure flaw has been exploited as a zero‑day since at least October 1. Security teams must apply the vendor’s patch immediately to stop attackers from gaining unauthorized access to corporate networks.]]></description>
-      <pubDate>Wed, 14 Oct 2026 12:58:07 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-immediately-fix-ivanti-flaw-exploited-as-zero-day/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>Congressional Probe Faults Match Group for Failing to Rein In Dating App Scams</title>
       <link>https://secubuzz.com/news/congressional-probe-faults-match-group-for-failing-5f2ce5</link>
       <guid isPermaLink="true">https://secubuzz.com/news/congressional-probe-faults-match-group-for-failing-5f2ce5</guid>
@@ -249,15 +312,6 @@
       <pubDate>Wed, 14 Oct 2026 12:32:00 GMT</pubDate>
       <source url="https://therecord.media/congressional-probe-faults-match-group-for-failing-to-stop-dating-app-scams">The Record</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>curl Fixes HTTP/2 Upload Flaw Enabling Client‑Side Code Execution</title>
-      <link>https://secubuzz.com/news/curl-fixes-http-2-upload-flaw-enabling-client-side-4715c2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/curl-fixes-http-2-upload-flaw-enabling-client-side-4715c2</guid>
-      <description><![CDATA[A flaw in curl’s handling of HTTP/2 uploads allowed a malicious server to corrupt client memory and achieve code execution on the uploading machine. The issue required precise build and memory layout knowledge. The curl project released a fix in version 8.23.0 on October 14, preventing this client‑side exploitation.]]></description>
-      <pubDate>Wed, 14 Oct 2026 12:13:36 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/curl-patches-http2-upload-flaw-after.html">The Hacker News</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>How to Run a Deepfake Readiness Drill Before a Cloned Voice Calls Your Team</title>
@@ -401,60 +455,6 @@
       <description><![CDATA[Distributed denial‑of‑service attacks targeted Gears of War’s online services, causing login failures and player disconnects during the E‑Day event. The Gears Community confirmed the disruption was due to DDoS activity, ending speculation about the source. No data breach was reported.]]></description>
       <pubDate>Wed, 14 Oct 2026 08:11:57 GMT</pubDate>
       <source url="https://cybersecuritynews.com/gears-of-war-e-day-hit-by-ddos-attack/">Cyber Security News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Google Chrome Update Addresses 37 Vulnerabilities, Including 7 Critical Flaws</title>
-      <link>https://secubuzz.com/news/google-chrome-update-addresses-37-vulnerabilities-365c9c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-chrome-update-addresses-37-vulnerabilities-365c9c</guid>
-      <description><![CDATA[Google released a Chrome security update fixing 37 vulnerabilities across Windows, Mac, and Linux. Seven critical flaws could lead to memory corruption and code execution via graphics, PDF handling, media processing, networking, and other browser components. Users should install the update immediately to mitigate potential exploitation.]]></description>
-      <pubDate>Wed, 14 Oct 2026 07:59:42 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/multiple-google-chrome-vulnerabilities/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Microsoft Patches Exploited Mark of the Web Bypass CVE-2026-96951</title>
-      <link>https://secubuzz.com/news/microsoft-patches-exploited-mark-of-the-web-bypass-3a41e4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-patches-exploited-mark-of-the-web-bypass-3a41e4</guid>
-      <description><![CDATA[Microsoft released a Patch Tuesday update that fixes CVE-2026-96951, a command‑injection flaw in Windows Shell’s Mark of the Web handling. Attackers exploited it via malicious files sent through email, IM, or collaboration tools. The patch blocks remote execution triggered by crafted files.]]></description>
-      <pubDate>Wed, 14 Oct 2026 07:53:17 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/14/microsoft-patch-tuesday-cve-2026-96951-motw-bypass/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Mozilla Launches Firefox Enterprise Amid Chrome and Firefox Patch 114 Updates</title>
-      <link>https://secubuzz.com/news/mozilla-launches-firefox-enterprise-amid-chrome-an-3fe20a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/mozilla-launches-firefox-enterprise-amid-chrome-an-3fe20a</guid>
-      <description><![CDATA[Mozilla introduced Firefox Enterprise, targeting organizations needing strict compliance and security. The release coincides with Chrome and Firefox patching 114 flaws, enhancing browser security for enterprise users.]]></description>
-      <pubDate>Wed, 14 Oct 2026 07:38:51 GMT</pubDate>
-      <source url="https://www.securityweek.com/chrome-firefox-updates-patch-114-flaws-as-mozilla-unveils-firefox-enterprise/">SecurityWeek</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>Google Search Hijacked to Deliver Weaponized PuTTY Installer to IT Admins</title>
-      <link>https://secubuzz.com/news/google-search-hijacked-to-deliver-weaponized-putty-2c6aa0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-search-hijacked-to-deliver-weaponized-putty-2c6aa0</guid>
-      <description><![CDATA[A campaign uses a fake Google search result to host a malicious Windows installer masquerading as PuTTY. The installer opens a legitimate PuTTY window as a decoy while secretly launching a malware chain. IT administrators downloading from the lookalike site risk installing malware that can compromise their systems.]]></description>
-      <pubDate>Wed, 14 Oct 2026 06:57:55 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-abuse-google-search/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Orphaned VBA Projects Inside DWG Files</title>
-      <link>https://secubuzz.com/news/orphaned-vba-projects-inside-dwg-files-57dd7d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/orphaned-vba-projects-inside-dwg-files-57dd7d</guid>
-      <description><![CDATA[AutoCAD drawing files (.dwg) can contain orphaned VBA code, potentially exposing hidden scripts that may run when the file is opened. The presence of such code highlights a risk of unintended automation or malicious payloads embedded in CAD files, underscoring the need for careful file handling and scanning.]]></description>
-      <pubDate>Wed, 14 Oct 2026 06:49:46 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33420">SANS Internet Storm Center</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Patching Challenges Highlighted by Qualys Executive</title>
-      <link>https://secubuzz.com/news/patching-challenges-highlighted-by-qualys-executiv-8a0a47</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/patching-challenges-highlighted-by-qualys-executiv-8a0a47</guid>
-      <description><![CDATA[Qualys Senior VP Kunal Modasiya discusses why patching remains difficult, citing business pressure, revenue-critical systems, and breaking fixes. He emphasizes the need for a holistic remediation workflow, proactive risk assessment, and the importance of balancing exposure time against weaponization time to improve patch deployment effectiveness.]]></description>
-      <pubDate>Wed, 14 Oct 2026 05:30:59 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/14/kunal-modasiya-qualys-vulnerability-remediation/">Help Net Security</source>
       <category>Policy</category>
     </item>
   </channel>
