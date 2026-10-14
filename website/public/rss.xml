@@ -5,8 +5,98 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Oct 2026 04:18:52 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 07:41:35 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Citrix, Fortinet, Ivanti Issue Patch for 29 Critical Vulnerabilities</title>
+      <link>https://secubuzz.com/news/citrix-fortinet-ivanti-issue-patch-for-29-critical-7a6219</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/citrix-fortinet-ivanti-issue-patch-for-29-critical-7a6219</guid>
+      <description><![CDATA[Citrix, Fortinet, and Ivanti have released patches addressing 29 critical flaws that could allow authentication bypass, remote code execution, and leakage of sensitive authentication data. The vulnerabilities affect multiple products across the three vendors, requiring immediate application of the vendor‑issued updates to mitigate potential exploitation.]]></description>
+      <pubDate>Wed, 14 Oct 2026 07:26:35 GMT</pubDate>
+      <source url="https://www.securityweek.com/citrix-fortinet-ivanti-patch-29-vulnerabilities-across-their-products/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Microsoft Patches Record 1,413 Vulnerabilities, Including Exploited Windows Zero‑Day</title>
+      <link>https://secubuzz.com/news/microsoft-patches-record-1-413-vulnerabilities-inc-6c6498</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-patches-record-1-413-vulnerabilities-inc-6c6498</guid>
+      <description><![CDATA[Microsoft has issued security updates for 1,413 vulnerabilities, including CVE-2026-96951, a Windows security feature bypass flaw that has been actively exploited in the wild. The patch addresses the flaw that could allow attackers to bypass security controls and execute code with elevated privileges.]]></description>
+      <pubDate>Wed, 14 Oct 2026 07:16:12 GMT</pubDate>
+      <source url="https://www.securityweek.com/microsoft-patches-record-1413-vulnerabilities-including-exploited-windows-zero-day/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Google Search Hijacked to Deliver Weaponized PuTTY Installer to IT Admins</title>
+      <link>https://secubuzz.com/news/google-search-hijacked-to-deliver-weaponized-putty-2c6aa0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-search-hijacked-to-deliver-weaponized-putty-2c6aa0</guid>
+      <description><![CDATA[A campaign uses a fake Google search result to host a malicious Windows installer masquerading as PuTTY. The installer opens a legitimate PuTTY window as a decoy while secretly launching a malware chain. IT administrators downloading from the lookalike site risk installing malware that can compromise their systems.]]></description>
+      <pubDate>Wed, 14 Oct 2026 06:57:55 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-abuse-google-search/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Orphaned VBA Projects Inside DWG Files</title>
+      <link>https://secubuzz.com/news/orphaned-vba-projects-inside-dwg-files-57dd7d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/orphaned-vba-projects-inside-dwg-files-57dd7d</guid>
+      <description><![CDATA[AutoCAD drawing files (.dwg) can contain orphaned VBA code, potentially exposing hidden scripts that may run when the file is opened. The presence of such code highlights a risk of unintended automation or malicious payloads embedded in CAD files, underscoring the need for careful file handling and scanning.]]></description>
+      <pubDate>Wed, 14 Oct 2026 06:49:46 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33420">SANS Internet Storm Center</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>SAP NetWeaver and S/4HANA Vulnerabilities Allow Remote Code Execution</title>
+      <link>https://secubuzz.com/news/sap-netweaver-and-s-4hana-vulnerabilities-allow-re-169e44</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sap-netweaver-and-s-4hana-vulnerabilities-allow-re-169e44</guid>
+      <description><![CDATA[SAP disclosed critical flaws in NetWeaver and S/4HANA that enable attackers to invoke internal operations and execute arbitrary code, potentially compromising entire systems. The vulnerabilities require authenticated access and pose a high risk to enterprise environments. SAP has released patches to mitigate the issue.]]></description>
+      <pubDate>Wed, 14 Oct 2026 06:12:10 GMT</pubDate>
+      <source url="https://www.securityweek.com/sap-patches-critical-netweaver-s-4hana-vulnerabilities/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Four-Byte Write and Timing Bug Lets Researchers Run Code in Windows SmartScreen Enclave</title>
+      <link>https://secubuzz.com/news/four-byte-write-and-timing-bug-lets-researchers-ru-3bcd4a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/four-byte-write-and-timing-bug-lets-researchers-ru-3bcd4a</guid>
+      <description><![CDATA[A four-byte write and timing flaw in Windows SmartScreen’s VBS enclave allows attackers to execute arbitrary code within the protected memory region that handles anti-phishing passwords. The vulnerability bypasses OS isolation, enabling code execution in a highly privileged enclave, posing a significant security risk.]]></description>
+      <pubDate>Wed, 14 Oct 2026 05:52:28 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/four-byte-write-and-timing-bug-let.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Patching Challenges Highlighted by Qualys Executive</title>
+      <link>https://secubuzz.com/news/patching-challenges-highlighted-by-qualys-executiv-8a0a47</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/patching-challenges-highlighted-by-qualys-executiv-8a0a47</guid>
+      <description><![CDATA[Qualys Senior VP Kunal Modasiya discusses why patching remains difficult, citing business pressure, revenue-critical systems, and breaking fixes. He emphasizes the need for a holistic remediation workflow, proactive risk assessment, and the importance of balancing exposure time against weaponization time to improve patch deployment effectiveness.]]></description>
+      <pubDate>Wed, 14 Oct 2026 05:30:59 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/14/kunal-modasiya-qualys-vulnerability-remediation/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Meshery Introduced as Open-Source Kubernetes Management Tool</title>
+      <link>https://secubuzz.com/news/meshery-introduced-as-open-source-kubernetes-manag-1a57bf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/meshery-introduced-as-open-source-kubernetes-manag-1a57bf</guid>
+      <description><![CDATA[Layer5’s Meshery, an open-source cloud-native manager, enables teams to design, deploy, and manage Kubernetes clusters from a visual console. It allows users to layout clusters, validate designs, and push configurations to multiple clouds without editing YAML, helping prevent misconfigurations that could disrupt deployments.]]></description>
+      <pubDate>Wed, 14 Oct 2026 05:00:01 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/14/meshery-open-source-cloud-native-manager-kubernetes/">Help Net Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Ransomware Gangs Threaten Families with Physical Violence</title>
+      <link>https://secubuzz.com/news/ransomware-gangs-threaten-families-with-physical-v-52585a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ransomware-gangs-threaten-families-with-physical-v-52585a</guid>
+      <description><![CDATA[Ransomware groups are reportedly threatening employees’ families with stalking, physical violence, and abduction. Organizations report these claims, but verification remains difficult. The threat extends beyond digital extortion, potentially escalating to real‑world harm for staff and their loved ones.]]></description>
+      <pubDate>Wed, 14 Oct 2026 05:00:00 GMT</pubDate>
+      <source url="https://www.darkreading.com/cybersecurity-analytics/ransomware-gangs-physical-threats-family-stalking">Dark Reading</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
+      <title>CISOs Treat AI Agents as Insider Threats</title>
+      <link>https://secubuzz.com/news/cisos-treat-ai-agents-as-insider-threats-2a1eac</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisos-treat-ai-agents-as-insider-threats-2a1eac</guid>
+      <description><![CDATA[A Trellix survey of 600 CISOs found that 95% of companies linked an AI agent or autonomous system to an insider incident in the past year. The agents log in, access sensitive systems, and act with the user’s permissions. Most respondents already count AI agents as insiders, raising liability concerns.]]></description>
+      <pubDate>Wed, 14 Oct 2026 04:30:05 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/14/ciso-ai-agent-insider-risk/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>Google Raises Chrome Bug Bounty Rewards to $20,000 for Sandbox Escapes</title>
       <link>https://secubuzz.com/news/google-raises-chrome-bug-bounty-rewards-to-20-000-3dd543</link>
@@ -15,15 +105,6 @@
       <pubDate>Wed, 14 Oct 2026 04:00:43 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/14/google-chrome-vulnerability-rewards-program-updates/">Help Net Security</source>
       <category>Cloud</category>
-    </item>
-    <item>
-      <title>Microsoft Windows Shell Zero‑Day CVE‑2026‑96951 Actively Exploited</title>
-      <link>https://secubuzz.com/news/microsoft-windows-shell-zero-day-cve-2026-96951-ac-79f9e4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-windows-shell-zero-day-cve-2026-96951-ac-79f9e4</guid>
-      <description><![CDATA[Microsoft patched the actively exploited Windows Shell zero‑day CVE‑2026‑96951, which allowed bypassing Mark of the Web protections. The flaw, rated CVSS 8.8 and Important by Microsoft, was addressed in the October 2026 Patch Tuesday updates.]]></description>
-      <pubDate>Wed, 14 Oct 2026 03:28:11 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/windows-shell-0-day-exploited/">Cyber Security News</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>OpenAI Engineer Arrested for Planting Spyware Device in Executive Conference Room</title>
@@ -62,15 +143,6 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>Ghostscript Heap Buffer Overflow (CVE-2026-39919) Enables Remote Code Execution via PDF</title>
-      <link>https://secubuzz.com/news/ghostscript-heap-buffer-overflow-cve-2026-39919-en-4b71a2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ghostscript-heap-buffer-overflow-cve-2026-39919-en-4b71a2</guid>
-      <description><![CDATA[A critical heap buffer overflow in Ghostscript’s interpreter allows attackers to execute arbitrary code by uploading specially crafted PDF files. The vulnerability, identified as CVE-2026-39919, can be exploited remotely, enabling full server compromise. Users should update to the latest Ghostscript release or apply vendor patches.]]></description>
-      <pubDate>Tue, 13 Oct 2026 21:33:26 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/ghostscript-flaw-lets-hackers-hijack-servers-via-pdf-uploads/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>North Korea Launches Phishing Campaign Targeting Ukrainian Personnel for War Intelligence</title>
       <link>https://secubuzz.com/news/north-korea-launches-phishing-campaign-targeting-u-5dcee9</link>
       <guid isPermaLink="true">https://secubuzz.com/news/north-korea-launches-phishing-campaign-targeting-u-5dcee9</guid>
@@ -107,15 +179,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Ivanti Zero-Day Exploit Enables Root Access on Patched VPN</title>
-      <link>https://secubuzz.com/news/ivanti-zero-day-exploit-enables-root-access-on-pat-1d4cf1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ivanti-zero-day-exploit-enables-root-access-on-pat-1d4cf1</guid>
-      <description><![CDATA[CVE-2026-104935 allows unauthenticated remote code execution on Ivanti Connect Secure, granting attackers root privileges. The flaw can be leveraged to bypass existing patches and compromise VPN infrastructure. Immediate patching and monitoring are required to mitigate potential exploitation.]]></description>
-      <pubDate>Tue, 13 Oct 2026 18:43:43 GMT</pubDate>
-      <source url="https://www.securityweek.com/ivanti-zero-day-chain-gave-attackers-root-access-to-fully-patched-vpn/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>UK Housing Ombudsman Service Investigates Security Incident on Case Management System</title>
       <link>https://secubuzz.com/news/uk-housing-ombudsman-service-investigates-security-596324</link>
       <guid isPermaLink="true">https://secubuzz.com/news/uk-housing-ombudsman-service-investigates-security-596324</guid>
@@ -131,15 +194,6 @@
       <description><![CDATA[Docker Hub’s registry flaw let a user push, pull, or delete images as another user by converting a personal account into an organization. The issue, fixed on September 30, was deemed critical but no exploitation evidence was found. Docker issued a security advisory on October 12.]]></description>
       <pubDate>Tue, 13 Oct 2026 18:03:18 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/docker-fixes-critical-two-year-old-hub.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Critical FortiSandbox GUI Authentication Bypass Vulnerability</title>
-      <link>https://secubuzz.com/news/critical-fortisandbox-gui-authentication-bypass-vu-4b875e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/critical-fortisandbox-gui-authentication-bypass-vu-4b875e</guid>
-      <description><![CDATA[Fortinet disclosed a critical authentication‑bypass flaw in the FortiSandbox GUI, tracked as CVE-2026-107656, with a CVSSv3 score of 9.6. The vulnerability allows remote attackers to access protected functions without valid credentials on FortiSandbox appliances and selected PaaS releases.]]></description>
-      <pubDate>Tue, 13 Oct 2026 17:54:42 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/fortisandbox-gui-vulnerability/">Cyber Security News</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -401,60 +455,6 @@
       <description><![CDATA[Three chained vulnerabilities in LG webOS let an attacker on the same local network gain root access to certain smart TVs without a PIN or user interaction. The flaw affects models 32LQ636BPSA and 27TQ600SW running webOS 7.5.7-25. LG has released a firmware patch to mitigate the issue.]]></description>
       <pubDate>Tue, 13 Oct 2026 11:09:10 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/lg-smart-tvs-vulnerable-to-pre-auth.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AI Turns Familiar Cyberattacks Into a Race Against Time</title>
-      <link>https://secubuzz.com/news/ai-turns-familiar-cyberattacks-into-a-race-against-5cf042</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-turns-familiar-cyberattacks-into-a-race-against-5cf042</guid>
-      <description><![CDATA[IBM’s Steve Wallin discusses how AI-driven attacks accelerate the pace of cyber threats, challenging enterprise defenses to respond faster. The conversation highlights the need for adaptive security strategies to keep up with AI-enabled attack techniques.]]></description>
-      <pubDate>Tue, 13 Oct 2026 11:00:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/ai-turns-familiar-cyberattacks-into-a-race-against-time/">SecurityWeek</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Bitdefender AI Visibility and Control Product Walkthrough</title>
-      <link>https://secubuzz.com/news/bitdefender-ai-visibility-and-control-product-walk-7fea58</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/bitdefender-ai-visibility-and-control-product-walk-7fea58</guid>
-      <description><![CDATA[The article demonstrates how Bitdefender’s AI Visibility and Control tool allows users to run local model runtimes without installing additional software, keeping data on the machine. It shows how developers can add coding assistant extensions that do not appear in installed programs, emphasizing privacy and local processing.]]></description>
-      <pubDate>Tue, 13 Oct 2026 10:30:00 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/product-walkthrough-bitdefender-ai.html">The Hacker News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Top 10 Best Mobile Application Security Testing Tools in 2026</title>
-      <link>https://secubuzz.com/news/top-10-best-mobile-application-security-testing-to-3d7821</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/top-10-best-mobile-application-security-testing-to-3d7821</guid>
-      <description><![CDATA[A ranked list of mobile application security testing tools evaluates source code inspection, penetration testing, and hardening techniques. The guide helps teams identify vulnerabilities before release, covering both static and dynamic analysis to protect apps from hostile devices and reduce security gaps.]]></description>
-      <pubDate>Tue, 13 Oct 2026 10:25:09 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/best-mobile-appsec-testing-tools/">Cyber Security News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>GitLab Urges Patch for Critical RCE Vulnerability CVE-2026-97229</title>
-      <link>https://secubuzz.com/news/gitlab-urges-patch-for-critical-rce-vulnerability-6c0372</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/gitlab-urges-patch-for-critical-rce-vulnerability-6c0372</guid>
-      <description><![CDATA[GitLab warns that CVE-2026-97229, an integer overflow in its CI/CD Regular Expression Compiler, allows remote attackers to execute arbitrary code on self‑managed instances. The flaw affects both Community and Enterprise Editions and carries a CVSS score of 10.0. Immediate patching is required to prevent exploitation.]]></description>
-      <pubDate>Tue, 13 Oct 2026 09:19:45 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/13/gitlab-ci-cd-regular-expression-compiler-vulnerability-cve-2026-97229/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Scammers Target Active Phone Numbers via “Who’s this?” Replies</title>
-      <link>https://secubuzz.com/news/scammers-target-active-phone-numbers-via-who-s-thi-7a5bea</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/scammers-target-active-phone-numbers-via-who-s-thi-7a5bea</guid>
-      <description><![CDATA[Scammers use automated replies to the “Who’s this?” text prompt to confirm active phone numbers, increasing their value on the dark web and making them prime fraud targets. The tactic exploits user curiosity and the lack of verification in messaging services.]]></description>
-      <pubDate>Tue, 13 Oct 2026 07:30:51 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/threat-intel/2026/10/your-whos-this-reply-is-exactly-what-text-scammers-want">Malwarebytes Labs</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Low-Cost Android Phones Ship With Preinstalled Malware Turning Devices Into Residential Proxies</title>
-      <link>https://secubuzz.com/news/low-cost-android-phones-ship-with-preinstalled-mal-26f803</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/low-cost-android-phones-ship-with-preinstalled-mal-26f803</guid>
-      <description><![CDATA[Low‑cost Android smartphones built on MediaTek platforms are shipped with malicious firmware that covertly installs apps, enables ad fraud, and converts devices into residential proxies. Bitdefender tracks the activity under the name Midnight Mimosa.]]></description>
-      <pubDate>Tue, 13 Oct 2026 06:00:11 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/low-cost-android-phones-ship-with.html">The Hacker News</source>
       <category>Vulnerability</category>
     </item>
   </channel>

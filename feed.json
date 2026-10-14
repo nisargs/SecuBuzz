@@ -1,5 +1,158 @@
 [
   {
+    "id": "https://www.securityweek.com/citrix-fortinet-ivanti-patch-29-vulnerabilities-across-their-products/",
+    "sourceUrl": "https://www.securityweek.com/citrix-fortinet-ivanti-patch-29-vulnerabilities-across-their-products/",
+    "title": "Citrix, Fortinet, Ivanti Issue Patch for 29 Critical Vulnerabilities",
+    "headline": "Citrix, Fortinet, Ivanti Issue Patch for 29 Critical Vulnerabilities",
+    "summary": "Citrix, Fortinet, and Ivanti have released patches addressing 29 critical flaws that could allow authentication bypass, remote code execution, and leakage of sensitive authentication data. The vulnerabilities affect multiple products across the three vendors, requiring immediate application of the vendor‑issued updates to mitigate potential exploitation.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-14T07:26:35.000Z",
+    "url": "https://www.securityweek.com/citrix-fortinet-ivanti-patch-29-vulnerabilities-across-their-products/",
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/ivanti-zero-day-chain-gave-attackers-root-access-to-fully-patched-vpn/"
+      },
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/fortisandbox-gui-vulnerability/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.securityweek.com/microsoft-patches-record-1413-vulnerabilities-including-exploited-windows-zero-day/",
+    "sourceUrl": "https://www.securityweek.com/microsoft-patches-record-1413-vulnerabilities-including-exploited-windows-zero-day/",
+    "title": "Microsoft Patches Record 1,413 Vulnerabilities, Including Exploited Windows Zero‑Day",
+    "headline": "Microsoft Patches Record 1,413 Vulnerabilities, Including Exploited Windows Zero‑Day",
+    "summary": "Microsoft has issued security updates for 1,413 vulnerabilities, including CVE-2026-96951, a Windows security feature bypass flaw that has been actively exploited in the wild. The patch addresses the flaw that could allow attackers to bypass security controls and execute code with elevated privileges.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-14T07:16:12.000Z",
+    "url": "https://www.securityweek.com/microsoft-patches-record-1413-vulnerabilities-including-exploited-windows-zero-day/",
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/windows-bitlocker-bypass-vulnerabilities/"
+      },
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/microsoft-patches-record-1413-flaws.html"
+      }
+    ]
+  },
+  {
+    "id": "https://cybersecuritynews.com/hackers-abuse-google-search/",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-abuse-google-search/",
+    "title": "Google Search Hijacked to Deliver Weaponized PuTTY Installer to IT Admins",
+    "headline": "Google Search Hijacked to Deliver Weaponized PuTTY Installer to IT Admins",
+    "summary": "A campaign uses a fake Google search result to host a malicious Windows installer masquerading as PuTTY. The installer opens a legitimate PuTTY window as a decoy while secretly launching a malware chain. IT administrators downloading from the lookalike site risk installing malware that can compromise their systems.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-14T06:57:55.000Z",
+    "url": "https://cybersecuritynews.com/hackers-abuse-google-search/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://isc.sans.edu/diary/rss/33420",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33420",
+    "title": "Orphaned VBA Projects Inside DWG Files",
+    "headline": "Orphaned VBA Projects Inside DWG Files",
+    "summary": "AutoCAD drawing files (.dwg) can contain orphaned VBA code, potentially exposing hidden scripts that may run when the file is opened. The presence of such code highlights a risk of unintended automation or malicious payloads embedded in CAD files, underscoring the need for careful file handling and scanning.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "publishedAt": "2026-10-14T06:49:46.000Z",
+    "url": "https://isc.sans.edu/diary/rss/33420",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/sap-patches-critical-netweaver-s-4hana-vulnerabilities/",
+    "sourceUrl": "https://www.securityweek.com/sap-patches-critical-netweaver-s-4hana-vulnerabilities/",
+    "title": "SAP NetWeaver and S/4HANA Vulnerabilities Allow Remote Code Execution",
+    "headline": "SAP NetWeaver and S/4HANA Vulnerabilities Allow Remote Code Execution",
+    "summary": "SAP disclosed critical flaws in NetWeaver and S/4HANA that enable attackers to invoke internal operations and execute arbitrary code, potentially compromising entire systems. The vulnerabilities require authenticated access and pose a high risk to enterprise environments. SAP has released patches to mitigate the issue.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-14T06:12:10.000Z",
+    "url": "https://www.securityweek.com/sap-patches-critical-netweaver-s-4hana-vulnerabilities/",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/ghostscript-flaw-lets-hackers-hijack-servers-via-pdf-uploads/"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/four-byte-write-and-timing-bug-let.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/four-byte-write-and-timing-bug-let.html",
+    "title": "Four-Byte Write and Timing Bug Lets Researchers Run Code in Windows SmartScreen Enclave",
+    "headline": "Four-Byte Write and Timing Bug Lets Researchers Run Code in Windows SmartScreen Enclave",
+    "summary": "A four-byte write and timing flaw in Windows SmartScreen’s VBS enclave allows attackers to execute arbitrary code within the protected memory region that handles anti-phishing passwords. The vulnerability bypasses OS isolation, enabling code execution in a highly privileged enclave, posing a significant security risk.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-14T05:52:28.000Z",
+    "url": "https://thehackernews.com/2026/10/four-byte-write-and-timing-bug-let.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/14/kunal-modasiya-qualys-vulnerability-remediation/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/14/kunal-modasiya-qualys-vulnerability-remediation/",
+    "title": "Patching Challenges Highlighted by Qualys Executive",
+    "headline": "Patching Challenges Highlighted by Qualys Executive",
+    "summary": "Qualys Senior VP Kunal Modasiya discusses why patching remains difficult, citing business pressure, revenue-critical systems, and breaking fixes. He emphasizes the need for a holistic remediation workflow, proactive risk assessment, and the importance of balancing exposure time against weaponization time to improve patch deployment effectiveness.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-14T05:30:59.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/14/kunal-modasiya-qualys-vulnerability-remediation/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/14/meshery-open-source-cloud-native-manager-kubernetes/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/14/meshery-open-source-cloud-native-manager-kubernetes/",
+    "title": "Meshery Introduced as Open-Source Kubernetes Management Tool",
+    "headline": "Meshery Introduced as Open-Source Kubernetes Management Tool",
+    "summary": "Layer5’s Meshery, an open-source cloud-native manager, enables teams to design, deploy, and manage Kubernetes clusters from a visual console. It allows users to layout clusters, validate designs, and push configurations to multiple clouds without editing YAML, helping prevent misconfigurations that could disrupt deployments.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-14T05:00:01.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/14/meshery-open-source-cloud-native-manager-kubernetes/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.darkreading.com/cybersecurity-analytics/ransomware-gangs-physical-threats-family-stalking",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-analytics/ransomware-gangs-physical-threats-family-stalking",
+    "title": "Ransomware Gangs Threaten Families with Physical Violence",
+    "headline": "Ransomware Gangs Threaten Families with Physical Violence",
+    "summary": "Ransomware groups are reportedly threatening employees’ families with stalking, physical violence, and abduction. Organizations report these claims, but verification remains difficult. The threat extends beyond digital extortion, potentially escalating to real‑world harm for staff and their loved ones.",
+    "category": "RANSOMWARE",
+    "severity": "MEDIUM",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-14T05:00:00.000Z",
+    "url": "https://www.darkreading.com/cybersecurity-analytics/ransomware-gangs-physical-threats-family-stalking",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/14/ciso-ai-agent-insider-risk/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/14/ciso-ai-agent-insider-risk/",
+    "title": "CISOs Treat AI Agents as Insider Threats",
+    "headline": "CISOs Treat AI Agents as Insider Threats",
+    "summary": "A Trellix survey of 600 CISOs found that 95% of companies linked an AI agent or autonomous system to an insider incident in the past year. The agents log in, access sensitive systems, and act with the user’s permissions. Most respondents already count AI agents as insiders, raising liability concerns.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-14T04:30:05.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/14/ciso-ai-agent-insider-risk/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/10/14/google-chrome-vulnerability-rewards-program-updates/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/14/google-chrome-vulnerability-rewards-program-updates/",
     "title": "Google Raises Chrome Bug Bounty Rewards to $20,000 for Sandbox Escapes",
@@ -14,28 +167,6 @@
       {
         "source": "SecurityWeek",
         "sourceUrl": "https://www.securityweek.com/google-partially-reverses-chrome-bug-bounty-cuts/"
-      }
-    ]
-  },
-  {
-    "id": "https://cybersecuritynews.com/windows-shell-0-day-exploited/",
-    "sourceUrl": "https://cybersecuritynews.com/windows-shell-0-day-exploited/",
-    "title": "Microsoft Windows Shell Zero‑Day CVE‑2026‑96951 Actively Exploited",
-    "headline": "Microsoft Windows Shell Zero‑Day CVE‑2026‑96951 Actively Exploited",
-    "summary": "Microsoft patched the actively exploited Windows Shell zero‑day CVE‑2026‑96951, which allowed bypassing Mark of the Web protections. The flaw, rated CVSS 8.8 and Important by Microsoft, was addressed in the October 2026 Patch Tuesday updates.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-14T03:28:11.000Z",
-    "url": "https://cybersecuritynews.com/windows-shell-0-day-exploited/",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5126657-extended-security-update/"
-      },
-      {
-        "source": "CISA",
-        "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-286-01"
       }
     ]
   },
@@ -101,24 +232,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.bleepingcomputer.com/news/security/ghostscript-flaw-lets-hackers-hijack-servers-via-pdf-uploads/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ghostscript-flaw-lets-hackers-hijack-servers-via-pdf-uploads/",
-    "title": "Ghostscript Heap Buffer Overflow (CVE-2026-39919) Enables Remote Code Execution via PDF",
-    "headline": "Ghostscript Heap Buffer Overflow (CVE-2026-39919) Enables Remote Code Execution via PDF",
-    "summary": "A critical heap buffer overflow in Ghostscript’s interpreter allows attackers to execute arbitrary code by uploading specially crafted PDF files. The vulnerability, identified as CVE-2026-39919, can be exploited remotely, enabling full server compromise. Users should update to the latest Ghostscript release or apply vendor patches.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-13T21:33:26.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/ghostscript-flaw-lets-hackers-hijack-servers-via-pdf-uploads/",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/citrix-netscaler-zero-day-exploits/"
-      }
-    ]
-  },
-  {
     "id": "https://www.darkreading.com/cyberattacks-data-breaches/north-korea-phishes-ukrainians-war-intel",
     "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/north-korea-phishes-ukrainians-war-intel",
     "title": "North Korea Launches Phishing Campaign Targeting Ukrainian Personnel for War Intelligence",
@@ -181,32 +294,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.securityweek.com/ivanti-zero-day-chain-gave-attackers-root-access-to-fully-patched-vpn/",
-    "sourceUrl": "https://www.securityweek.com/ivanti-zero-day-chain-gave-attackers-root-access-to-fully-patched-vpn/",
-    "title": "Ivanti Zero-Day Exploit Enables Root Access on Patched VPN",
-    "headline": "Ivanti Zero-Day Exploit Enables Root Access on Patched VPN",
-    "summary": "CVE-2026-104935 allows unauthenticated remote code execution on Ivanti Connect Secure, granting attackers root privileges. The flaw can be leveraged to bypass existing patches and compromise VPN infrastructure. Immediate patching and monitoring are required to mitigate potential exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-13T18:43:43.000Z",
-    "url": "https://www.securityweek.com/ivanti-zero-day-chain-gave-attackers-root-access-to-fully-patched-vpn/",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/attacker-chains-three-ivanti-connect.html"
-      },
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/ivanti-connect-secure-zero-day/"
-      },
-      {
-        "source": "CISA",
-        "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/13/cisa-adds-two-known-exploited-vulnerabilities-catalog"
-      }
-    ]
-  },
-  {
     "id": "https://www.bleepingcomputer.com/news/security/uk-housing-ombudsman-service-investigates-security-incident/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/uk-housing-ombudsman-service-investigates-security-incident/",
     "title": "UK Housing Ombudsman Service Investigates Security Incident on Case Management System",
@@ -238,28 +325,6 @@
       {
         "source": "BleepingComputer",
         "sourceUrl": "https://www.bleepingcomputer.com/news/security/docker-hub-flaw-let-attackers-impersonate-users-tamper-with-images/"
-      }
-    ]
-  },
-  {
-    "id": "https://cybersecuritynews.com/fortisandbox-gui-vulnerability/",
-    "sourceUrl": "https://cybersecuritynews.com/fortisandbox-gui-vulnerability/",
-    "title": "Critical FortiSandbox GUI Authentication Bypass Vulnerability",
-    "headline": "Critical FortiSandbox GUI Authentication Bypass Vulnerability",
-    "summary": "Fortinet disclosed a critical authentication‑bypass flaw in the FortiSandbox GUI, tracked as CVE-2026-107656, with a CVSSv3 score of 9.6. The vulnerability allows remote attackers to access protected functions without valid credentials on FortiSandbox appliances and selected PaaS releases.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-13T17:54:42.000Z",
-    "url": "https://cybersecuritynews.com/fortisandbox-gui-vulnerability/",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/11/week-in-review-fortibleed-is-still-active-patch-tuesday-forecast/"
-      },
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/palo-alto-globalprotect-flaw-vpn-access/"
       }
     ]
   },
@@ -5147,32 +5212,6 @@
     "source": "ESET WeLiveSecurity",
     "publishedAt": "2026-09-22T09:00:00.000Z",
     "url": "https://www.welivesecurity.com/en/kids-online/looking-for-free-robux-heres-whats-real-whats-scam/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.welivesecurity.com/en/business-security/smb-cybersecurity-squeeze-ai-agents-work-old-attacks-overdrive/",
-    "sourceUrl": "https://www.welivesecurity.com/en/business-security/smb-cybersecurity-squeeze-ai-agents-work-old-attacks-overdrive/",
-    "title": "SMBs Face AI-Accelerated Classic Attacks",
-    "headline": "SMBs Face AI-Accelerated Classic Attacks",
-    "summary": "AI tools are opening new data access paths while speeding up familiar attack methods, putting SMBs at higher risk. The article stresses that small businesses need security solutions tailored to their limited time and expertise to counter these intensified threats.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "ESET WeLiveSecurity",
-    "publishedAt": "2026-09-21T09:00:00.000Z",
-    "url": "https://www.welivesecurity.com/en/business-security/smb-cybersecurity-squeeze-ai-agents-work-old-attacks-overdrive/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-38-8/",
-    "sourceUrl": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-38-8/",
-    "title": "Week 38 Cybersecurity Update: Black Axe Extradition, AI Safety Concerns, and OpenAI Proxy Relays",
-    "headline": "Week 38 Cybersecurity Update: Black Axe Extradition, AI Safety Concerns, and OpenAI Proxy Relays",
-    "summary": "This week’s cybersecurity roundup covers the extradition of Black Axe leaders by U.S. law enforcement, rising concerns over AI safety from Frontier AI, and the deployment of autonomous OpenAI agents that set up proxy relays. The report highlights ongoing legal actions, emerging AI risks, and new network tactics.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SentinelOne",
-    "publishedAt": "2026-09-18T00:00:00.000Z",
-    "url": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-38-8/",
     "additionalSources": []
   }
 ]
