@@ -11,6 +11,202 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "poc-released-for-linux-vhost-flaw-enabling-root-pr-39d58a",
+    "title": "PoC Released for Linux Vhost Flaw Enabling Root Privilege Escalation and VM Escape",
+    "summary": "A public proof of concept for Vghost, a high‑severity Linux vhost flaw tracked as CVE‑2026‑74580, demonstrates how a local user can gain root access or, in certain virtual machine setups, escape the guest to affect the host. The flaw has a CVSS v3.1 score of 8.8 and is fixed in the latest kernel updates.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/poc-released-for-linux-vhost-flaw/",
+    "publishedAt": "2026-10-14T13:19:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "poc-released-for-linux-vhost-flaw-enabling-root-pr",
+      "article-39d58a",
+      "39d58a",
+      "poc-released-for-linux-vhost-flaw-enabling-root-privilege-es"
+    ]
+  },
+  {
+    "slug": "microsoft-seizes-three-major-phishing-platforms-us-607a2d",
+    "title": "Microsoft Seizes Three Major Phishing Platforms Used by Chinese Cybercriminals",
+    "summary": "Microsoft, with Japan’s National Police Agency and Health‑ISAC, obtained a U.S. court order to seize and redirect domains that supported the YAM Store, CoGUI and Iron Man phishing infrastructures. The action disrupts the platforms used by Chinese cybercriminals.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/microsoft-takes-down-3-major-chinese-phishing-platforms",
+    "publishedAt": "2026-10-14T13:18:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-seizes-three-major-phishing-platforms-us",
+      "article-607a2d",
+      "607a2d",
+      "microsoft-seizes-three-major-phishing-platforms-used-by-chin"
+    ]
+  },
+  {
+    "slug": "law-enforcement-takedown-of-global-phishing-networ-2ac277",
+    "title": "Law Enforcement Takedown of Global Phishing Network",
+    "summary": "Law enforcement agencies and partners worldwide disrupted a cybercriminal ecosystem that sent over a billion phishing messages to more than 75,000 organizations in 150 countries, shutting down the network that facilitated the attacks.",
+    "category": "Policy",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/global-takedown-hits-network-behind-1-billion-phishing-messages/",
+    "publishedAt": "2026-10-14T13:12:52.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "law-enforcement-takedown-of-global-phishing-networ",
+      "article-2ac277",
+      "2ac277",
+      "law-enforcement-takedown-of-global-phishing-network"
+    ]
+  },
+  {
+    "slug": "russian-travel-site-offline-after-cyberattack-948fdf",
+    "title": "Russian Travel Site Offline After Cyberattack",
+    "summary": "Customers of the Russian travel booking platform Anywayanyday could not book tickets or hotel rooms after a cyberattack, prompting the company to suspend reservations while it responds to the incident.",
+    "category": "Policy",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/russia-anywayanyday-travel-website-cyberattack",
+    "publishedAt": "2026-10-14T13:05:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "russian-travel-site-offline-after-cyberattack",
+      "article-948fdf",
+      "948fdf"
+    ]
+  },
+  {
+    "slug": "russian-influence-operation-targets-latin-american-83898b",
+    "title": "Russian Influence Operation Targets Latin American Schools",
+    "summary": "A Russian influence operation used AI‑generated spoofed emails, fake government documents, and a fabricated local organization to target schools in Peru and Ecuador, among other Latin American institutions. The campaign aimed to spread disinformation and sow confusion.",
+    "category": "Malware",
+    "severity": "MEDIUM",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/russian-influence-operation-targeting-latin-america",
+    "publishedAt": "2026-10-14T13:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "russian-influence-operation-targets-latin-american",
+      "article-83898b",
+      "83898b",
+      "russian-influence-operation-targets-latin-american-schools"
+    ]
+  },
+  {
+    "slug": "cloudflare-fixes-rare-hyperdrive-mysql-caching-bug-45e37a",
+    "title": "Cloudflare Fixes Rare Hyperdrive MySQL Caching Bug",
+    "summary": "Cloudflare identified a subtle protocol bug in Hyperdrive’s MySQL caching that caused a 0.001% error rate. The team traced the issue to a caching logic flaw, corrected the code, and released the fix, enabling stable MySQL support in Hyperdrive. No exploitation reported.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/hyperdrive-mysql/",
+    "publishedAt": "2026-10-14T13:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cloudflare-fixes-rare-hyperdrive-mysql-caching-bug",
+      "article-45e37a",
+      "45e37a"
+    ]
+  },
+  {
+    "slug": "cisa-urges-immediate-patch-for-exploited-ivanti-co-54fab0",
+    "title": "CISA Urges Immediate Patch for Exploited Ivanti Connect Secure Flaw",
+    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency warned that an Ivanti Connect Secure flaw has been exploited as a zero‑day since at least October 1. Security teams must apply the vendor’s patch immediately to stop attackers from gaining unauthorized access to corporate networks.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-immediately-fix-ivanti-flaw-exploited-as-zero-day/",
+    "publishedAt": "2026-10-14T12:58:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-urges-immediate-patch-for-exploited-ivanti-co",
+      "article-54fab0",
+      "54fab0",
+      "cisa-urges-immediate-patch-for-exploited-ivanti-connect-secu"
+    ]
+  },
+  {
+    "slug": "fbi-disrupts-north-korean-chollima-laptop-farms-us-415807",
+    "title": "FBI Disrupts North Korean Chollima Laptop Farms Used to Infiltrate U.S. Companies",
+    "summary": "The FBI shut down several U.S. laptop farms operated by the North Korean threat group FAMOUS CHOLLIMA, cutting off infrastructure that enabled fake remote workers to infiltrate American companies. The operation, disclosed by CrowdStrike on October 13, marks the start of a broader effort to dismantle the group’s domestic support network.",
+    "category": "Malware",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/famous-chollima/",
+    "publishedAt": "2026-10-14T12:37:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fbi-disrupts-north-korean-chollima-laptop-farms-us",
+      "article-415807",
+      "415807",
+      "fbi-disrupts-north-korean-chollima-laptop-farms-used-to-infi"
+    ]
+  },
+  {
+    "slug": "congressional-probe-faults-match-group-for-failing-5f2ce5",
+    "title": "Congressional Probe Faults Match Group for Failing to Rein In Dating App Scams",
+    "summary": "A congressional Joint Economic Committee probe found Match Group failed to curb dating‑app scams across Tinder, Hinge, Match, Plenty of Fish and others. The report highlights gaps in user protection and calls for stronger oversight of the industry’s fraud prevention measures.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/congressional-probe-faults-match-group-for-failing-to-stop-dating-app-scams",
+    "publishedAt": "2026-10-14T12:32:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "congressional-probe-faults-match-group-for-failing",
+      "article-5f2ce5",
+      "5f2ce5",
+      "congressional-probe-faults-match-group-for-failing-to-rein-i"
+    ]
+  },
+  {
+    "slug": "curl-fixes-http-2-upload-flaw-enabling-client-side-4715c2",
+    "title": "curl Fixes HTTP/2 Upload Flaw Enabling Client‑Side Code Execution",
+    "summary": "A flaw in curl’s handling of HTTP/2 uploads allowed a malicious server to corrupt client memory and achieve code execution on the uploading machine. The issue required precise build and memory layout knowledge. The curl project released a fix in version 8.23.0 on October 14, preventing this client‑side exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/curl-patches-http2-upload-flaw-after.html",
+    "publishedAt": "2026-10-14T12:13:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "curl-fixes-http-2-upload-flaw-enabling-client-side",
+      "article-4715c2",
+      "4715c2",
+      "curl-fixes-http-2-upload-flaw-enabling-client-side-code-exec"
+    ]
+  },
+  {
+    "slug": "how-to-run-a-deepfake-readiness-drill-before-a-clo-2728dd",
+    "title": "How to Run a Deepfake Readiness Drill Before a Cloned Voice Calls Your Team",
+    "summary": "Security teams can test their defenses against cloned‑voice deepfakes by running a readiness drill that simulates a CFO’s voice requesting a supplier payment. The exercise exposes verification weaknesses in payment fraud, help‑desk resets, and access requests, helping teams tighten voice‑authentication protocols.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/how-to-run-deepfake-readiness-drill.html",
+    "publishedAt": "2026-10-14T11:50:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "how-to-run-a-deepfake-readiness-drill-before-a-clo",
+      "article-2728dd",
+      "2728dd",
+      "how-to-run-a-deepfake-readiness-drill-before-a-cloned-voice-"
+    ]
+  },
+  {
     "slug": "hirudo-android-malware-replaces-banking-apps-to-st-13d641",
     "title": "Hirudo Android Malware Replaces Banking Apps to Steal Credentials",
     "summary": "Hirudo is an Android malware that hijacks legitimate banking applications by installing modified copies that disable security checks. The malware captures user credentials during login, allowing attackers to siphon bank account information. Users should verify app authenticity and keep security software updated.",
@@ -116,24 +312,6 @@ export const news: NewsBrief[] = [
       "article-275774",
       "275774",
       "ai-pentester-discovers-critical-otp-bypass-on-major-insurer-"
-    ]
-  },
-  {
-    "slug": "us-arrests-two-in-crackdown-on-north-korean-it-wor-4fa82e",
-    "title": "US Arrests Two in Crackdown on North Korean IT Worker Laptop Farms",
-    "summary": "Investigators stormed 40 Texas locations, seizing 187 laptops used by North Korean IT workers to conceal their whereabouts. The operation targeted laptop farms linked to a state-sponsored espionage network, disrupting the workers’ ability to hide their location. The raid was part of a broader U.S. effort to dismantle foreign influence operations.",
-    "category": "Malware",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/us-arrests-two-in-crackdown-on-north-korean-it-worker-laptop-farms/",
-    "publishedAt": "2026-10-14T10:55:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "us-arrests-two-in-crackdown-on-north-korean-it-wor",
-      "article-4fa82e",
-      "4fa82e",
-      "us-arrests-two-in-crackdown-on-north-korean-it-worker-laptop"
     ]
   },
   {
@@ -263,24 +441,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "microsoft-fixes-windows-smartscreen-cve-2026-85851-1e9160",
-    "title": "Microsoft Fixes Windows SmartScreen CVE‑2026‑85851 Privilege Escalation Bug",
-    "summary": "Microsoft patched a Windows SmartScreen use‑after‑free flaw (CVE‑2026‑85851) that allows local attackers to elevate privileges. The vulnerability, rated CVSS 7.8, affects Windows 11 and was disclosed on October 13, 2026. Applying the update mitigates the privilege escalation risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/windows-smartscreen-escalation-vulnerability/",
-    "publishedAt": "2026-10-14T09:28:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-fixes-windows-smartscreen-cve-2026-85851",
-      "article-1e9160",
-      "1e9160",
-      "microsoft-fixes-windows-smartscreen-cve-2026-85851-privilege"
-    ]
-  },
-  {
     "slug": "github-deploys-cheaper-ai-model-to-detect-secrets-78f8ab",
     "title": "GitHub Deploys Cheaper AI Model to Detect Secrets in Code",
     "summary": "GitHub has introduced a new credential classifier that improves secret detection while cutting median post‑push scan time by 86% and model serving costs by over 98%. The updated pipeline enhances push protection and post‑push scanning, reducing false alerts and preventing credential leaks.",
@@ -314,6 +474,77 @@ export const news: NewsBrief[] = [
       "article-559158",
       "559158",
       "iphone-exploit-kits-coruna-and-darksword-enable-full-comprom"
+    ]
+  },
+  {
+    "slug": "meta-github-repositories-breached-1-500-employees-3694b3",
+    "title": "Meta GitHub Repositories Breached, 1,500 Employees’ Data Stolen",
+    "summary": "Hackers accessed Meta’s GitHub repositories using a stolen employee credential, exfiltrating product source code and personal data linked to about 1,500 Meta employees in the United States. The breach was disclosed on October 13, 2026, and is under investigation.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-breach-meta-github-repositories/",
+    "publishedAt": "2026-10-14T08:49:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "meta-github-repositories-breached-1-500-employees",
+      "article-3694b3",
+      "3694b3",
+      "meta-github-repositories-breached-1-500-employees-data-stole"
+    ]
+  },
+  {
+    "slug": "european-bank-breached-via-third-party-gateway-and-466b80",
+    "title": "European Bank Breached via Third‑Party Gateway and WSUS Targeting",
+    "summary": "A European bank was compromised through a poorly secured third‑party gateway, after which attackers attempted to exploit its Windows Server Update Services (WSUS) infrastructure. The breach exposed the bank’s central software systems, highlighting risks from weak access controls and stolen login details.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/attackers-breach-european-bank/",
+    "publishedAt": "2026-10-14T08:33:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "european-bank-breached-via-third-party-gateway-and",
+      "article-466b80",
+      "466b80",
+      "european-bank-breached-via-third-party-gateway-and-wsus-targ"
+    ]
+  },
+  {
+    "slug": "gears-of-war-e-day-disrupted-by-ddos-attack-7b6f74",
+    "title": "Gears of War E-Day Disrupted by DDoS Attack",
+    "summary": "Distributed denial‑of‑service attacks targeted Gears of War’s online services, causing login failures and player disconnects during the E‑Day event. The Gears Community confirmed the disruption was due to DDoS activity, ending speculation about the source. No data breach was reported.",
+    "category": "Policy",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/gears-of-war-e-day-hit-by-ddos-attack/",
+    "publishedAt": "2026-10-14T08:11:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gears-of-war-e-day-disrupted-by-ddos-attack",
+      "article-7b6f74",
+      "7b6f74"
+    ]
+  },
+  {
+    "slug": "google-chrome-update-addresses-37-vulnerabilities-365c9c",
+    "title": "Google Chrome Update Addresses 37 Vulnerabilities, Including 7 Critical Flaws",
+    "summary": "Google released a Chrome security update fixing 37 vulnerabilities across Windows, Mac, and Linux. Seven critical flaws could lead to memory corruption and code execution via graphics, PDF handling, media processing, networking, and other browser components. Users should install the update immediately to mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/multiple-google-chrome-vulnerabilities/",
+    "publishedAt": "2026-10-14T07:59:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-chrome-update-addresses-37-vulnerabilities",
+      "article-365c9c",
+      "365c9c",
+      "google-chrome-update-addresses-37-vulnerabilities-including-"
     ]
   },
   {
@@ -355,24 +586,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "citrix-fortinet-ivanti-issue-patch-for-29-critical-7a6219",
-    "title": "Citrix, Fortinet, Ivanti Issue Patch for 29 Critical Vulnerabilities",
-    "summary": "Citrix, Fortinet, and Ivanti have released patches addressing 29 critical flaws that could allow authentication bypass, remote code execution, and leakage of sensitive authentication data. The vulnerabilities affect multiple products across the three vendors, requiring immediate application of the vendor‑issued updates to mitigate potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/citrix-fortinet-ivanti-patch-29-vulnerabilities-across-their-products/",
-    "publishedAt": "2026-10-14T07:26:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "citrix-fortinet-ivanti-issue-patch-for-29-critical",
-      "article-7a6219",
-      "7a6219",
-      "citrix-fortinet-ivanti-issue-patch-for-29-critical-vulnerabi"
-    ]
-  },
-  {
     "slug": "google-search-hijacked-to-deliver-weaponized-putty-2c6aa0",
     "title": "Google Search Hijacked to Deliver Weaponized PuTTY Installer to IT Admins",
     "summary": "A campaign uses a fake Google search result to host a malicious Windows installer masquerading as PuTTY. The installer opens a legitimate PuTTY window as a decoy while secretly launching a malware chain. IT administrators downloading from the lookalike site risk installing malware that can compromise their systems.",
@@ -405,24 +618,6 @@ export const news: NewsBrief[] = [
       "orphaned-vba-projects-inside-dwg-files",
       "article-57dd7d",
       "57dd7d"
-    ]
-  },
-  {
-    "slug": "sap-netweaver-and-s-4hana-vulnerabilities-allow-re-169e44",
-    "title": "SAP NetWeaver and S/4HANA Vulnerabilities Allow Remote Code Execution",
-    "summary": "SAP disclosed critical flaws in NetWeaver and S/4HANA that enable attackers to invoke internal operations and execute arbitrary code, potentially compromising entire systems. The vulnerabilities require authenticated access and pose a high risk to enterprise environments. SAP has released patches to mitigate the issue.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/sap-patches-critical-netweaver-s-4hana-vulnerabilities/",
-    "publishedAt": "2026-10-14T06:12:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sap-netweaver-and-s-4hana-vulnerabilities-allow-re",
-      "article-169e44",
-      "169e44",
-      "sap-netweaver-and-s-4hana-vulnerabilities-allow-remote-code-"
     ]
   },
   {
@@ -497,24 +692,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "google-raises-chrome-bug-bounty-rewards-to-20-000-3dd543",
-    "title": "Google Raises Chrome Bug Bounty Rewards to $20,000 for Sandbox Escapes",
-    "summary": "Google has increased its Chrome Vulnerability Rewards Program base pay, quadrupling rewards for memory corruption bugs and offering up to $20,000 for sandbox escape vulnerabilities. The move aims to incentivize researchers to uncover severe, hard‑to‑detect flaws and improve internal testing.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/14/google-chrome-vulnerability-rewards-program-updates/",
-    "publishedAt": "2026-10-14T04:00:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-raises-chrome-bug-bounty-rewards-to-20-000",
-      "article-3dd543",
-      "3dd543",
-      "google-raises-chrome-bug-bounty-rewards-to-20-000-for-sandbo"
-    ]
-  },
-  {
     "slug": "openai-engineer-arrested-for-planting-spyware-devi-65c1f4",
     "title": "OpenAI Engineer Arrested for Planting Spyware Device in Executive Conference Room",
     "summary": "An OpenAI engineer was arrested after hiding an audio recording device in an executive conference room at the company’s San Francisco offices. The device was intended to capture conversations. The suspect, a 35‑year‑old Saudi national, was detained on October 9, 2026, and appeared in federal court on October 13.",
@@ -548,24 +725,6 @@ export const news: NewsBrief[] = [
       "article-7963d0",
       "7963d0",
       "microsoft-releases-patch-for-over-1-400-security-vulnerabili"
-    ]
-  },
-  {
-    "slug": "unsophisticated-attack-exposes-third-party-risk-at-20167e",
-    "title": "Unsophisticated Attack Exposes Third-Party Risk at European Bank",
-    "summary": "Unit 42 analyzed a cyberattack that infiltrated a European bank’s IT infrastructure, revealing how an unsophisticated intrusion exploited third‑party connections. The post outlines detection tactics and countermeasures to prevent similar threats, emphasizing the importance of monitoring external vendor access and network segmentation.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Unit 42",
-    "sourceUrl": "https://unit42.paloaltonetworks.com/noise-inside-network-third-party-risk/",
-    "publishedAt": "2026-10-13T22:00:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "unsophisticated-attack-exposes-third-party-risk-at",
-      "article-20167e",
-      "20167e",
-      "unsophisticated-attack-exposes-third-party-risk-at-european-"
     ]
   },
   {
@@ -709,24 +868,6 @@ export const news: NewsBrief[] = [
       "article-1e9138",
       "1e9138",
       "adobe-releases-patches-for-140-vulnerabilities-across-10-pro"
-    ]
-  },
-  {
-    "slug": "crowdstrike-joins-anthropic-defense-program-to-adv-72af99",
-    "title": "CrowdStrike Joins Anthropic Defense Program to Advance AI-powered Defense for Critical Infrastructure",
-    "summary": "CrowdStrike partnered with Anthropic to strengthen AI-powered cybersecurity for critical infrastructure sectors such as energy, water, manufacturing, and transportation. The collaboration combines CrowdStrike’s network protection expertise with Anthropic’s Claude models and research to address complex security challenges.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/crowdstrike-joins-anthropic-defense-program/",
-    "publishedAt": "2026-10-13T16:49:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "crowdstrike-joins-anthropic-defense-program-to-adv",
-      "article-72af99",
-      "72af99",
-      "crowdstrike-joins-anthropic-defense-program-to-advance-ai-po"
     ]
   },
   {
@@ -6140,148 +6281,6 @@ export const news: NewsBrief[] = [
       "article-3393d9",
       "3393d9",
       "most-critical-and-high-vulnerabilities-remain-unpatched-over"
-    ]
-  },
-  {
-    "slug": "cloudflare-to-issue-post-quantum-certificates-in-e-d85720",
-    "title": "Cloudflare to Issue Post-Quantum Certificates in Early 2027",
-    "summary": "Cloudflare announced it will become a public certificate authority, issuing both conventional and post-quantum Merkle Tree Certificates (MTCs). Production issuance of MTCs is scheduled for Q1 2027, aiming to diversify the web’s certificate ecosystem dominated by a few major CAs.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/cloudflare-certificate-authority-2027/",
-    "publishedAt": "2026-09-30T03:09:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-to-issue-post-quantum-certificates-in-e",
-      "article-d85720",
-      "d85720",
-      "cloudflare-to-issue-post-quantum-certificates-in-early-2027"
-    ]
-  },
-  {
-    "slug": "terminalfix-and-lorem-ipsum-loader-enable-covert-t-5c4536",
-    "title": "TerminalFix and Lorem Ipsum Loader Enable Covert Tunneling",
-    "summary": "The malware family TerminalFix and its component Lorem Ipsum Loader have been observed creating covert tunnels to exfiltrate data. The activity is part of a broader campaign that previously used a different delivery mechanism, indicating ongoing threat actor operations.",
-    "category": "Malware",
-    "severity": "MEDIUM",
-    "source": "Sophos Threat Research",
-    "sourceUrl": "https://www.sophos.com/en-us/blog/terminalfix-and-lorem-ipsum-loader-enable-covert-tunneling",
-    "publishedAt": "2026-09-30T00:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "terminalfix-and-lorem-ipsum-loader-enable-covert-t",
-      "article-5c4536",
-      "5c4536",
-      "terminalfix-and-lorem-ipsum-loader-enable-covert-tunneling"
-    ]
-  },
-  {
-    "slug": "paragon-spyware-firm-plans-nasdaq-ipo-103cb0",
-    "title": "Paragon Spyware Firm Plans Nasdaq IPO",
-    "summary": "Paragon, a controversial spyware company, intends to go public by year’s end under the REDLattice umbrella. The firm will begin trading on Nasdaq once the deal closes. No security incident or breach is reported in the announcement.",
-    "category": "Malware",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/controversial-spyware-firm-paragon-to-go-public",
-    "publishedAt": "2026-09-29T20:35:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "paragon-spyware-firm-plans-nasdaq-ipo",
-      "article-103cb0",
-      "103cb0"
-    ]
-  },
-  {
-    "slug": "french-tax-administration-data-theft-via-stolen-st-721c64",
-    "title": "French Tax Administration Data Theft via Stolen Staff Passwords",
-    "summary": "An attacker used stolen staff passwords to access tax data of hundreds of thousands of taxpayers and businesses in France during June and July. The breach went undetected for seven weeks, with no sophisticated techniques, exposing sensitive personal and corporate tax information. No public fix is available; the incident highlights weak credential management.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/09/french-tax-data-theft-using-stolen.html",
-    "publishedAt": "2026-09-29T17:47:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "french-tax-administration-data-theft-via-stolen-st",
-      "article-721c64",
-      "721c64",
-      "french-tax-administration-data-theft-via-stolen-staff-passwo"
-    ]
-  },
-  {
-    "slug": "timeshare-exit-scams-target-owners-victims-hit-twi-9b747d",
-    "title": "Timeshare Exit Scams Target Owners, Victims Hit Twice",
-    "summary": "Con artists are exploiting timeshare owners seeking to exit, using fake buyers and recovery fraud. Victims may be targeted twice, first by a fraudulent buyer and then by a recovery scammer. The scheme relies on social engineering and deception to steal money from unsuspecting owners.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "ESET WeLiveSecurity",
-    "sourceUrl": "https://www.welivesecurity.com/en/scams/timeshare-exit-scams-fake-buyers-recovery-scams/",
-    "publishedAt": "2026-09-29T09:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "timeshare-exit-scams-target-owners-victims-hit-twi",
-      "article-9b747d",
-      "9b747d",
-      "timeshare-exit-scams-target-owners-victims-hit-twice"
-    ]
-  },
-  {
-    "slug": "co-designing-modular-ai-security-agents-requires-r-686f62",
-    "title": "Co‑Designing Modular AI Security Agents Requires Rigorous Evaluation",
-    "summary": "Developing reliable AI security agents demands a co‑design approach that integrates modular system architectures with comprehensive, domain‑expert evaluation suites. This methodology ensures robust performance and mitigates risks associated with AI‑driven security solutions.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "SentinelOne",
-    "sourceUrl": "https://www.sentinelone.com/blog/building-agents-backwards-from-evaluation/",
-    "publishedAt": "2026-09-29T00:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "co-designing-modular-ai-security-agents-requires-r",
-      "article-686f62",
-      "686f62",
-      "co-designing-modular-ai-security-agents-requires-rigorous-ev"
-    ]
-  },
-  {
-    "slug": "phishing-emails-evolve-masking-new-threats-5be677",
-    "title": "Phishing Emails Evolve, Masking New Threats",
-    "summary": "Phishing attacks are increasingly able to bypass familiar security checks, making rapid detection and containment essential for companies. The new tactics rely on sophisticated social engineering to trick users into revealing credentials or installing malware, highlighting the need for advanced email filtering and user training.",
-    "category": "Malware",
-    "severity": "MEDIUM",
-    "source": "ESET WeLiveSecurity",
-    "sourceUrl": "https://www.welivesecurity.com/en/business-security/devil-email-wearing-new-mask/",
-    "publishedAt": "2026-09-28T09:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "phishing-emails-evolve-masking-new-threats",
-      "article-5be677",
-      "5be677"
-    ]
-  },
-  {
-    "slug": "ai-governance-requires-hardware-rooted-security-co-7c0acf",
-    "title": "AI Governance Requires Hardware-Rooted Security Controls",
-    "summary": "Effective governance of artificial intelligence systems demands tamper‑proof, hardware‑rooted security measures that autonomous agents cannot bypass or rewrite at runtime. The collaboration between SentinelOne and NVIDIA emphasizes the importance of integrating secure silicon with runtime protections to prevent AI‑driven attacks.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "SentinelOne",
-    "sourceUrl": "https://www.sentinelone.com/blog/sentinelone-and-nvidia-governing-ai-from-silicon-to-runtime/",
-    "publishedAt": "2026-09-28T00:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-governance-requires-hardware-rooted-security-co",
-      "article-7c0acf",
-      "7c0acf",
-      "ai-governance-requires-hardware-rooted-security-controls"
     ]
   }
 ];

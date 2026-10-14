@@ -5,8 +5,107 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Oct 2026 12:21:10 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 13:47:23 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>PoC Released for Linux Vhost Flaw Enabling Root Privilege Escalation and VM Escape</title>
+      <link>https://secubuzz.com/news/poc-released-for-linux-vhost-flaw-enabling-root-pr-39d58a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/poc-released-for-linux-vhost-flaw-enabling-root-pr-39d58a</guid>
+      <description><![CDATA[A public proof of concept for Vghost, a high‑severity Linux vhost flaw tracked as CVE‑2026‑74580, demonstrates how a local user can gain root access or, in certain virtual machine setups, escape the guest to affect the host. The flaw has a CVSS v3.1 score of 8.8 and is fixed in the latest kernel updates.]]></description>
+      <pubDate>Wed, 14 Oct 2026 13:19:35 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/poc-released-for-linux-vhost-flaw/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Microsoft Seizes Three Major Phishing Platforms Used by Chinese Cybercriminals</title>
+      <link>https://secubuzz.com/news/microsoft-seizes-three-major-phishing-platforms-us-607a2d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-seizes-three-major-phishing-platforms-us-607a2d</guid>
+      <description><![CDATA[Microsoft, with Japan’s National Police Agency and Health‑ISAC, obtained a U.S. court order to seize and redirect domains that supported the YAM Store, CoGUI and Iron Man phishing infrastructures. The action disrupts the platforms used by Chinese cybercriminals.]]></description>
+      <pubDate>Wed, 14 Oct 2026 13:18:00 GMT</pubDate>
+      <source url="https://therecord.media/microsoft-takes-down-3-major-chinese-phishing-platforms">The Record</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Law Enforcement Takedown of Global Phishing Network</title>
+      <link>https://secubuzz.com/news/law-enforcement-takedown-of-global-phishing-networ-2ac277</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/law-enforcement-takedown-of-global-phishing-networ-2ac277</guid>
+      <description><![CDATA[Law enforcement agencies and partners worldwide disrupted a cybercriminal ecosystem that sent over a billion phishing messages to more than 75,000 organizations in 150 countries, shutting down the network that facilitated the attacks.]]></description>
+      <pubDate>Wed, 14 Oct 2026 13:12:52 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/global-takedown-hits-network-behind-1-billion-phishing-messages/">BleepingComputer</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Russian Travel Site Offline After Cyberattack</title>
+      <link>https://secubuzz.com/news/russian-travel-site-offline-after-cyberattack-948fdf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/russian-travel-site-offline-after-cyberattack-948fdf</guid>
+      <description><![CDATA[Customers of the Russian travel booking platform Anywayanyday could not book tickets or hotel rooms after a cyberattack, prompting the company to suspend reservations while it responds to the incident.]]></description>
+      <pubDate>Wed, 14 Oct 2026 13:05:00 GMT</pubDate>
+      <source url="https://therecord.media/russia-anywayanyday-travel-website-cyberattack">The Record</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Russian Influence Operation Targets Latin American Schools</title>
+      <link>https://secubuzz.com/news/russian-influence-operation-targets-latin-american-83898b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/russian-influence-operation-targets-latin-american-83898b</guid>
+      <description><![CDATA[A Russian influence operation used AI‑generated spoofed emails, fake government documents, and a fabricated local organization to target schools in Peru and Ecuador, among other Latin American institutions. The campaign aimed to spread disinformation and sow confusion.]]></description>
+      <pubDate>Wed, 14 Oct 2026 13:00:00 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyberattacks-data-breaches/russian-influence-operation-targeting-latin-america">Dark Reading</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Cloudflare Fixes Rare Hyperdrive MySQL Caching Bug</title>
+      <link>https://secubuzz.com/news/cloudflare-fixes-rare-hyperdrive-mysql-caching-bug-45e37a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-fixes-rare-hyperdrive-mysql-caching-bug-45e37a</guid>
+      <description><![CDATA[Cloudflare identified a subtle protocol bug in Hyperdrive’s MySQL caching that caused a 0.001% error rate. The team traced the issue to a caching logic flaw, corrected the code, and released the fix, enabling stable MySQL support in Hyperdrive. No exploitation reported.]]></description>
+      <pubDate>Wed, 14 Oct 2026 13:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/hyperdrive-mysql/">Cloudflare Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>CISA Urges Immediate Patch for Exploited Ivanti Connect Secure Flaw</title>
+      <link>https://secubuzz.com/news/cisa-urges-immediate-patch-for-exploited-ivanti-co-54fab0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-urges-immediate-patch-for-exploited-ivanti-co-54fab0</guid>
+      <description><![CDATA[The U.S. Cybersecurity and Infrastructure Security Agency warned that an Ivanti Connect Secure flaw has been exploited as a zero‑day since at least October 1. Security teams must apply the vendor’s patch immediately to stop attackers from gaining unauthorized access to corporate networks.]]></description>
+      <pubDate>Wed, 14 Oct 2026 12:58:07 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-immediately-fix-ivanti-flaw-exploited-as-zero-day/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>FBI Disrupts North Korean Chollima Laptop Farms Used to Infiltrate U.S. Companies</title>
+      <link>https://secubuzz.com/news/fbi-disrupts-north-korean-chollima-laptop-farms-us-415807</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fbi-disrupts-north-korean-chollima-laptop-farms-us-415807</guid>
+      <description><![CDATA[The FBI shut down several U.S. laptop farms operated by the North Korean threat group FAMOUS CHOLLIMA, cutting off infrastructure that enabled fake remote workers to infiltrate American companies. The operation, disclosed by CrowdStrike on October 13, marks the start of a broader effort to dismantle the group’s domestic support network.]]></description>
+      <pubDate>Wed, 14 Oct 2026 12:37:23 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/famous-chollima/">Cyber Security News</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Congressional Probe Faults Match Group for Failing to Rein In Dating App Scams</title>
+      <link>https://secubuzz.com/news/congressional-probe-faults-match-group-for-failing-5f2ce5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/congressional-probe-faults-match-group-for-failing-5f2ce5</guid>
+      <description><![CDATA[A congressional Joint Economic Committee probe found Match Group failed to curb dating‑app scams across Tinder, Hinge, Match, Plenty of Fish and others. The report highlights gaps in user protection and calls for stronger oversight of the industry’s fraud prevention measures.]]></description>
+      <pubDate>Wed, 14 Oct 2026 12:32:00 GMT</pubDate>
+      <source url="https://therecord.media/congressional-probe-faults-match-group-for-failing-to-stop-dating-app-scams">The Record</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>curl Fixes HTTP/2 Upload Flaw Enabling Client‑Side Code Execution</title>
+      <link>https://secubuzz.com/news/curl-fixes-http-2-upload-flaw-enabling-client-side-4715c2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/curl-fixes-http-2-upload-flaw-enabling-client-side-4715c2</guid>
+      <description><![CDATA[A flaw in curl’s handling of HTTP/2 uploads allowed a malicious server to corrupt client memory and achieve code execution on the uploading machine. The issue required precise build and memory layout knowledge. The curl project released a fix in version 8.23.0 on October 14, preventing this client‑side exploitation.]]></description>
+      <pubDate>Wed, 14 Oct 2026 12:13:36 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/curl-patches-http2-upload-flaw-after.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>How to Run a Deepfake Readiness Drill Before a Cloned Voice Calls Your Team</title>
+      <link>https://secubuzz.com/news/how-to-run-a-deepfake-readiness-drill-before-a-clo-2728dd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/how-to-run-a-deepfake-readiness-drill-before-a-clo-2728dd</guid>
+      <description><![CDATA[Security teams can test their defenses against cloned‑voice deepfakes by running a readiness drill that simulates a CFO’s voice requesting a supplier payment. The exercise exposes verification weaknesses in payment fraud, help‑desk resets, and access requests, helping teams tighten voice‑authentication protocols.]]></description>
+      <pubDate>Wed, 14 Oct 2026 11:50:00 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/how-to-run-deepfake-readiness-drill.html">The Hacker News</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>Hirudo Android Malware Replaces Banking Apps to Steal Credentials</title>
       <link>https://secubuzz.com/news/hirudo-android-malware-replaces-banking-apps-to-st-13d641</link>
@@ -60,15 +159,6 @@
       <pubDate>Wed, 14 Oct 2026 11:00:00 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/an-ai-agent-found-critical-otp-bypass.html">The Hacker News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>US Arrests Two in Crackdown on North Korean IT Worker Laptop Farms</title>
-      <link>https://secubuzz.com/news/us-arrests-two-in-crackdown-on-north-korean-it-wor-4fa82e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/us-arrests-two-in-crackdown-on-north-korean-it-wor-4fa82e</guid>
-      <description><![CDATA[Investigators stormed 40 Texas locations, seizing 187 laptops used by North Korean IT workers to conceal their whereabouts. The operation targeted laptop farms linked to a state-sponsored espionage network, disrupting the workers’ ability to hide their location. The raid was part of a broader U.S. effort to dismantle foreign influence operations.]]></description>
-      <pubDate>Wed, 14 Oct 2026 10:55:21 GMT</pubDate>
-      <source url="https://www.securityweek.com/us-arrests-two-in-crackdown-on-north-korean-it-worker-laptop-farms/">SecurityWeek</source>
-      <category>Malware</category>
     </item>
     <item>
       <title>Phase Eight, Hobbs and Whistles Owner TFG London Detects Cyberattack Exposing Customer Data</title>
@@ -134,15 +224,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Microsoft Fixes Windows SmartScreen CVE‑2026‑85851 Privilege Escalation Bug</title>
-      <link>https://secubuzz.com/news/microsoft-fixes-windows-smartscreen-cve-2026-85851-1e9160</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-fixes-windows-smartscreen-cve-2026-85851-1e9160</guid>
-      <description><![CDATA[Microsoft patched a Windows SmartScreen use‑after‑free flaw (CVE‑2026‑85851) that allows local attackers to elevate privileges. The vulnerability, rated CVSS 7.8, affects Windows 11 and was disclosed on October 13, 2026. Applying the update mitigates the privilege escalation risk.]]></description>
-      <pubDate>Wed, 14 Oct 2026 09:28:05 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/windows-smartscreen-escalation-vulnerability/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>GitHub Deploys Cheaper AI Model to Detect Secrets in Code</title>
       <link>https://secubuzz.com/news/github-deploys-cheaper-ai-model-to-detect-secrets-78f8ab</link>
       <guid isPermaLink="true">https://secubuzz.com/news/github-deploys-cheaper-ai-model-to-detect-secrets-78f8ab</guid>
@@ -158,6 +239,42 @@
       <description><![CDATA[The Coruna and DarkSword exploit kits chain multiple iOS software flaws, allowing a malicious or compromised website to fully compromise outdated iPhone devices with a single visit. The kits bypass the browser sandbox, reach deeper iOS components, and can exploit devices depending on software version and kit used.]]></description>
       <pubDate>Wed, 14 Oct 2026 09:26:22 GMT</pubDate>
       <source url="https://cybersecuritynews.com/coruna-and-darksword/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Meta GitHub Repositories Breached, 1,500 Employees’ Data Stolen</title>
+      <link>https://secubuzz.com/news/meta-github-repositories-breached-1-500-employees-3694b3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/meta-github-repositories-breached-1-500-employees-3694b3</guid>
+      <description><![CDATA[Hackers accessed Meta’s GitHub repositories using a stolen employee credential, exfiltrating product source code and personal data linked to about 1,500 Meta employees in the United States. The breach was disclosed on October 13, 2026, and is under investigation.]]></description>
+      <pubDate>Wed, 14 Oct 2026 08:49:41 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-breach-meta-github-repositories/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>European Bank Breached via Third‑Party Gateway and WSUS Targeting</title>
+      <link>https://secubuzz.com/news/european-bank-breached-via-third-party-gateway-and-466b80</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/european-bank-breached-via-third-party-gateway-and-466b80</guid>
+      <description><![CDATA[A European bank was compromised through a poorly secured third‑party gateway, after which attackers attempted to exploit its Windows Server Update Services (WSUS) infrastructure. The breach exposed the bank’s central software systems, highlighting risks from weak access controls and stolen login details.]]></description>
+      <pubDate>Wed, 14 Oct 2026 08:33:31 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/attackers-breach-european-bank/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Gears of War E-Day Disrupted by DDoS Attack</title>
+      <link>https://secubuzz.com/news/gears-of-war-e-day-disrupted-by-ddos-attack-7b6f74</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/gears-of-war-e-day-disrupted-by-ddos-attack-7b6f74</guid>
+      <description><![CDATA[Distributed denial‑of‑service attacks targeted Gears of War’s online services, causing login failures and player disconnects during the E‑Day event. The Gears Community confirmed the disruption was due to DDoS activity, ending speculation about the source. No data breach was reported.]]></description>
+      <pubDate>Wed, 14 Oct 2026 08:11:57 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/gears-of-war-e-day-hit-by-ddos-attack/">Cyber Security News</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Google Chrome Update Addresses 37 Vulnerabilities, Including 7 Critical Flaws</title>
+      <link>https://secubuzz.com/news/google-chrome-update-addresses-37-vulnerabilities-365c9c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-chrome-update-addresses-37-vulnerabilities-365c9c</guid>
+      <description><![CDATA[Google released a Chrome security update fixing 37 vulnerabilities across Windows, Mac, and Linux. Seven critical flaws could lead to memory corruption and code execution via graphics, PDF handling, media processing, networking, and other browser components. Users should install the update immediately to mitigate potential exploitation.]]></description>
+      <pubDate>Wed, 14 Oct 2026 07:59:42 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/multiple-google-chrome-vulnerabilities/">Cyber Security News</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -179,15 +296,6 @@
       <category>Cloud</category>
     </item>
     <item>
-      <title>Citrix, Fortinet, Ivanti Issue Patch for 29 Critical Vulnerabilities</title>
-      <link>https://secubuzz.com/news/citrix-fortinet-ivanti-issue-patch-for-29-critical-7a6219</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/citrix-fortinet-ivanti-issue-patch-for-29-critical-7a6219</guid>
-      <description><![CDATA[Citrix, Fortinet, and Ivanti have released patches addressing 29 critical flaws that could allow authentication bypass, remote code execution, and leakage of sensitive authentication data. The vulnerabilities affect multiple products across the three vendors, requiring immediate application of the vendor‑issued updates to mitigate potential exploitation.]]></description>
-      <pubDate>Wed, 14 Oct 2026 07:26:35 GMT</pubDate>
-      <source url="https://www.securityweek.com/citrix-fortinet-ivanti-patch-29-vulnerabilities-across-their-products/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>Google Search Hijacked to Deliver Weaponized PuTTY Installer to IT Admins</title>
       <link>https://secubuzz.com/news/google-search-hijacked-to-deliver-weaponized-putty-2c6aa0</link>
       <guid isPermaLink="true">https://secubuzz.com/news/google-search-hijacked-to-deliver-weaponized-putty-2c6aa0</guid>
@@ -204,15 +312,6 @@
       <pubDate>Wed, 14 Oct 2026 06:49:46 GMT</pubDate>
       <source url="https://isc.sans.edu/diary/rss/33420">SANS Internet Storm Center</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>SAP NetWeaver and S/4HANA Vulnerabilities Allow Remote Code Execution</title>
-      <link>https://secubuzz.com/news/sap-netweaver-and-s-4hana-vulnerabilities-allow-re-169e44</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sap-netweaver-and-s-4hana-vulnerabilities-allow-re-169e44</guid>
-      <description><![CDATA[SAP disclosed critical flaws in NetWeaver and S/4HANA that enable attackers to invoke internal operations and execute arbitrary code, potentially compromising entire systems. The vulnerabilities require authenticated access and pose a high risk to enterprise environments. SAP has released patches to mitigate the issue.]]></description>
-      <pubDate>Wed, 14 Oct 2026 06:12:10 GMT</pubDate>
-      <source url="https://www.securityweek.com/sap-patches-critical-netweaver-s-4hana-vulnerabilities/">SecurityWeek</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>Patching Challenges Highlighted by Qualys Executive</title>
@@ -251,15 +350,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Google Raises Chrome Bug Bounty Rewards to $20,000 for Sandbox Escapes</title>
-      <link>https://secubuzz.com/news/google-raises-chrome-bug-bounty-rewards-to-20-000-3dd543</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-raises-chrome-bug-bounty-rewards-to-20-000-3dd543</guid>
-      <description><![CDATA[Google has increased its Chrome Vulnerability Rewards Program base pay, quadrupling rewards for memory corruption bugs and offering up to $20,000 for sandbox escape vulnerabilities. The move aims to incentivize researchers to uncover severe, hard‑to‑detect flaws and improve internal testing.]]></description>
-      <pubDate>Wed, 14 Oct 2026 04:00:43 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/14/google-chrome-vulnerability-rewards-program-updates/">Help Net Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
       <title>OpenAI Engineer Arrested for Planting Spyware Device in Executive Conference Room</title>
       <link>https://secubuzz.com/news/openai-engineer-arrested-for-planting-spyware-devi-65c1f4</link>
       <guid isPermaLink="true">https://secubuzz.com/news/openai-engineer-arrested-for-planting-spyware-devi-65c1f4</guid>
@@ -276,15 +366,6 @@
       <pubDate>Tue, 13 Oct 2026 23:24:53 GMT</pubDate>
       <source url="https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws/">Krebs on Security</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Unsophisticated Attack Exposes Third-Party Risk at European Bank</title>
-      <link>https://secubuzz.com/news/unsophisticated-attack-exposes-third-party-risk-at-20167e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/unsophisticated-attack-exposes-third-party-risk-at-20167e</guid>
-      <description><![CDATA[Unit 42 analyzed a cyberattack that infiltrated a European bank’s IT infrastructure, revealing how an unsophisticated intrusion exploited third‑party connections. The post outlines detection tactics and countermeasures to prevent similar threats, emphasizing the importance of monitoring external vendor access and network segmentation.]]></description>
-      <pubDate>Tue, 13 Oct 2026 22:00:04 GMT</pubDate>
-      <source url="https://unit42.paloaltonetworks.com/noise-inside-network-third-party-risk/">Unit 42</source>
-      <category>Breach</category>
     </item>
     <item>
       <title>North Korea Launches Phishing Campaign Targeting Ukrainian Personnel for War Intelligence</title>
@@ -359,15 +440,6 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>CrowdStrike Joins Anthropic Defense Program to Advance AI-powered Defense for Critical Infrastructure</title>
-      <link>https://secubuzz.com/news/crowdstrike-joins-anthropic-defense-program-to-adv-72af99</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/crowdstrike-joins-anthropic-defense-program-to-adv-72af99</guid>
-      <description><![CDATA[CrowdStrike partnered with Anthropic to strengthen AI-powered cybersecurity for critical infrastructure sectors such as energy, water, manufacturing, and transportation. The collaboration combines CrowdStrike’s network protection expertise with Anthropic’s Claude models and research to address complex security challenges.]]></description>
-      <pubDate>Tue, 13 Oct 2026 16:49:50 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/crowdstrike-joins-anthropic-defense-program/">Cyber Security News</source>
-      <category>Policy</category>
-    </item>
-    <item>
       <title>Cloudflare D1 Scales to Millions of Databases with Edge‑Optimized Control Plane</title>
       <link>https://secubuzz.com/news/cloudflare-d1-scales-to-millions-of-databases-with-597b4a</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-d1-scales-to-millions-of-databases-with-597b4a</guid>
@@ -384,78 +456,6 @@
       <pubDate>Tue, 13 Oct 2026 16:18:18 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/github-tightens-npm-publishing-after.html">The Hacker News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Vercel Sandbox Flaw Lets AI Agents Leak Data Outside Approved Networks</title>
-      <link>https://secubuzz.com/news/vercel-sandbox-flaw-lets-ai-agents-leak-data-outsi-7a82c5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/vercel-sandbox-flaw-lets-ai-agents-leak-data-outsi-7a82c5</guid>
-      <description><![CDATA[A network filtering flaw in Vercel Sandbox, used to run code in isolated environments, allows rogue AI agents to bypass certificate validation and transmit data outside approved networks, exposing sensitive information to attackers.]]></description>
-      <pubDate>Tue, 13 Oct 2026 16:18:00 GMT</pubDate>
-      <source url="https://therecord.media/sandbox-vulnerability-gives-rogue-ai-agents-path-out">The Record</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>West African Scam Operation Arrests Over 100 Suspected Trafficking Victims</title>
-      <link>https://secubuzz.com/news/west-african-scam-operation-arrests-over-100-suspe-6e51cc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/west-african-scam-operation-arrests-over-100-suspe-6e51cc</guid>
-      <description><![CDATA[Police in Ghana and Nigeria arrested more than two dozen individuals during a U.K.-hosted operation targeting a West African scam network. The raid also involved tech companies, aiming to dismantle the trafficking scheme and recover victims. No cyber breach or data compromise was reported.]]></description>
-      <pubDate>Tue, 13 Oct 2026 16:05:00 GMT</pubDate>
-      <source url="https://therecord.media/ghana-nigeria-scam-centers-raided-uk-us">The Record</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Cloudflare Optimizes Data Pipeline Hardware Usage</title>
-      <link>https://secubuzz.com/news/cloudflare-optimizes-data-pipeline-hardware-usage-1f69a0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-optimizes-data-pipeline-hardware-usage-1f69a0</guid>
-      <description><![CDATA[Cloudflare outlines methods to reduce hardware consumption while maintaining high data pipeline throughput. The company details techniques such as dynamic scaling, efficient resource allocation, and data quality safeguards. These practices aim to lower operational costs and environmental impact without sacrificing performance or accuracy in data processing workflows.]]></description>
-      <pubDate>Tue, 13 Oct 2026 15:51:41 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/rewinding-the-exponential/">Cloudflare Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>Danfoss Refrigeration Hack Exposes 4,980 Internet-Facing Hosts</title>
-      <link>https://secubuzz.com/news/danfoss-refrigeration-hack-exposes-4-980-internet-37d97b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/danfoss-refrigeration-hack-exposes-4-980-internet-37d97b</guid>
-      <description><![CDATA[A cyberattack on Danfoss refrigeration systems has left 4,980 hosts exposed to the internet, with 2,911 in France and 517 in South Africa. The exposure was identified via a Shodan search, indicating potential vulnerability in Danfoss web pages that could be exploited by attackers.]]></description>
-      <pubDate>Tue, 13 Oct 2026 15:49:00 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/danfoss-refrigeration-hack-exposed-hosts/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>LiteLLM v1.77.7 Exposes High-Impact Vulnerabilities CVE-2026-35029 and CVE-2026-59823</title>
-      <link>https://secubuzz.com/news/litellm-v1-77-7-exposes-high-impact-vulnerabilitie-691179</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/litellm-v1-77-7-exposes-high-impact-vulnerabilitie-691179</guid>
-      <description><![CDATA[Security assessment of LiteLLM v1.77.7 revealed missing authorization on /config/update, allowing any authenticated user to modify configuration. Two high-impact vulnerabilities, CVE-2026-35029 and CVE-2026-59823, were fixed in v1.83.9. Users should upgrade to the latest version to mitigate the risk.]]></description>
-      <pubDate>Tue, 13 Oct 2026 14:30:26 GMT</pubDate>
-      <source url="https://research.checkpoint.com/2026/when-llm-gateways-go-wrong-findings-from-litellm/">Check Point Research</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Attackers Exploit MFA Gaps to Access VPNs and Windows Systems</title>
-      <link>https://secubuzz.com/news/attackers-exploit-mfa-gaps-to-access-vpns-and-wind-744701</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/attackers-exploit-mfa-gaps-to-access-vpns-and-wind-744701</guid>
-      <description><![CDATA[Attackers continue to exploit gaps in multi‑factor authentication, using stolen credentials to reach VPNs, RDP, and Windows systems that rely only on passwords. Specops highlights why cloud application protection is insufficient and offers steps to close these authentication gaps.]]></description>
-      <pubDate>Tue, 13 Oct 2026 14:01:11 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/the-mfa-gaps-attackers-are-still-exploiting/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>G2A.COM Sees 35% Rise in Antivirus and Security Software Orders</title>
-      <link>https://secubuzz.com/news/g2a-com-sees-35-rise-in-antivirus-and-security-sof-48c940</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/g2a-com-sees-35-rise-in-antivirus-and-security-sof-48c940</guid>
-      <description><![CDATA[G2A.COM reports a 35% year‑on‑year increase in antivirus and security software orders, now accounting for 43% of all cybersecurity purchases on the marketplace. The digital marketplace serves over 35 million users across 180 countries, indicating growing demand for security solutions.]]></description>
-      <pubDate>Tue, 13 Oct 2026 13:56:51 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/g2a-com-reports-35-growth-in-security-software-orders-outpacing-vpn-growth/">Cyber Security News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Trellix Announces Trellix Wise for Private Cloud AI Core</title>
-      <link>https://secubuzz.com/news/trellix-announces-trellix-wise-for-private-cloud-a-607d40</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/trellix-announces-trellix-wise-for-private-cloud-a-607d40</guid>
-      <description><![CDATA[Trellix launched Trellix Wise for Private Cloud, an on-premises federated AI core that extends security fabric across existing infrastructure. It aims to improve threat detection and response while preserving data sovereignty and governance, offering auditable AI investigations for security teams.]]></description>
-      <pubDate>Tue, 13 Oct 2026 13:35:06 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/13/trellix-wise-for-private-cloud-delivers-auditable-ai-investigations-for-security-teams/">Help Net Security</source>
-      <category>Cloud</category>
     </item>
   </channel>
 </rss>
