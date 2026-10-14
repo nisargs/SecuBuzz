@@ -11,6 +11,26 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "palo-alto-networks-issues-patch-for-exploited-pan-1487d7",
+    "title": "Palo Alto Networks Issues Patch for Exploited PAN-OS RCE Vulnerability CVE-2026-0322",
+    "summary": "Palo Alto Networks has released a patch for the high‑severity PAN‑OS remote code execution flaw identified as CVE‑2026‑0322. The vulnerability, which has been actively exploited against firewalls, allows attackers to execute arbitrary code with administrative privileges. Users must apply the update immediately to prevent potential compromise.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-pan-os-rce-flaw-exploited-in-attacks/",
+    "publishedAt": "2026-10-14T22:56:47.000Z",
+    "cves": [
+      "CVE-2026-0322"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "palo-alto-networks-issues-patch-for-exploited-pan",
+      "article-1487d7",
+      "1487d7",
+      "palo-alto-networks-issues-patch-for-exploited-pan-os-rce-vul"
+    ]
+  },
+  {
     "slug": "unit-42-uncovers-peerstitch-a-stealthy-fortigate-i-21b2cf",
     "title": "Unit 42 Uncovers PEERSTITCH, a Stealthy FortiGate Implant",
     "summary": "Unit 42 identified PEERSTITCH, a memory‑resident ARM64 malware that attackers deployed on over 500 FortiGate firewalls by exploiting CVE-2024-47575. The vulnerability allowed unauthenticated remote code execution, enabling the implant to remain hidden in memory and evade detection.",
@@ -28,6 +48,26 @@ export const news: NewsBrief[] = [
       "article-21b2cf",
       "21b2cf",
       "unit-42-uncovers-peerstitch-a-stealthy-fortigate-implant"
+    ]
+  },
+  {
+    "slug": "microsoft-releases-patch-for-exploited-windows-she-288f46",
+    "title": "Microsoft Releases Patch for Exploited Windows Shell MotW Zero‑Day CVE-2026-96951",
+    "summary": "Microsoft has issued a security update addressing the actively exploited Windows Shell MotW zero‑day vulnerability identified as CVE‑2026‑96951. The flaw permits attackers to execute arbitrary code via malicious shell extensions, potentially compromising user systems. All Windows users should install the patch to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/cve-2026-96951-windows-shell-motw-zero-day-patch",
+    "publishedAt": "2026-10-14T21:44:12.000Z",
+    "cves": [
+      "CVE-2026-96951"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-releases-patch-for-exploited-windows-she",
+      "article-288f46",
+      "288f46",
+      "microsoft-releases-patch-for-exploited-windows-shell-motw-ze"
     ]
   },
   {
@@ -925,26 +965,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "microsoft-patches-exploited-mark-of-the-web-bypass-3a41e4",
-    "title": "Microsoft Patches Exploited Mark of the Web Bypass CVE-2026-96951",
-    "summary": "Microsoft released a Patch Tuesday update that fixes CVE-2026-96951, a command‑injection flaw in Windows Shell’s Mark of the Web handling. Attackers exploited it via malicious files sent through email, IM, or collaboration tools. The patch blocks remote execution triggered by crafted files.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/14/microsoft-patch-tuesday-cve-2026-96951-motw-bypass/",
-    "publishedAt": "2026-10-14T07:53:17.000Z",
-    "cves": [
-      "CVE-2026-96951"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-patches-exploited-mark-of-the-web-bypass",
-      "article-3a41e4",
-      "3a41e4",
-      "microsoft-patches-exploited-mark-of-the-web-bypass-cve-2026-"
-    ]
-  },
-  {
     "slug": "mozilla-launches-firefox-enterprise-amid-chrome-an-3fe20a",
     "title": "Mozilla Launches Firefox Enterprise Amid Chrome and Firefox Patch 114 Updates",
     "summary": "Mozilla introduced Firefox Enterprise, targeting organizations needing strict compliance and security. The release coincides with Chrome and Firefox patching 114 flaws, enhancing browser security for enterprise users.",
@@ -1066,24 +1086,6 @@ export const news: NewsBrief[] = [
       "cisos-treat-ai-agents-as-insider-threats",
       "article-2a1eac",
       "2a1eac"
-    ]
-  },
-  {
-    "slug": "microsoft-releases-patch-for-over-1-400-security-v-7963d0",
-    "title": "Microsoft Releases Patch for Over 1,400 Security Vulnerabilities",
-    "summary": "Microsoft today issued updates to fix more than 1,400 security vulnerabilities across its Windows operating systems and other software. The patch batch dwarfs September’s record of nearly 1,000 fixes and exceeds the normal monthly patch load from Redmond by about ten times.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Krebs on Security",
-    "sourceUrl": "https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws/",
-    "publishedAt": "2026-10-13T23:24:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-releases-patch-for-over-1-400-security-v",
-      "article-7963d0",
-      "7963d0",
-      "microsoft-releases-patch-for-over-1-400-security-vulnerabili"
     ]
   },
   {
@@ -1875,24 +1877,6 @@ export const news: NewsBrief[] = [
       "article-638367",
       "638367",
       "dark-reading-names-fahmida-y-rashid-as-new-editor-in-chief"
-    ]
-  },
-  {
-    "slug": "ibm-issues-patches-for-22-verify-access-vulnerabil-29f55b",
-    "title": "IBM Issues Patches for 22 Verify Access Vulnerabilities, Including Two Critical RCE Bugs",
-    "summary": "IBM released security patches for 22 vulnerabilities in its Verify Identity Access and Security Verify Access products. Two critical flaws, CVE‑2026‑78401 and CVE‑2026‑78406, enable unauthenticated remote code execution on appliance and container deployments via deserialization of untrusted data. The patches mitigate the 9.8‑scored RCE.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/ibm-patches-22-verify-access-flaw/",
-    "publishedAt": "2026-10-12T12:07:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ibm-issues-patches-for-22-verify-access-vulnerabil",
-      "article-29f55b",
-      "29f55b",
-      "ibm-issues-patches-for-22-verify-access-vulnerabilities-incl"
     ]
   },
   {

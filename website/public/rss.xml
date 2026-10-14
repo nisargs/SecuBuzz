@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Oct 2026 22:20:52 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 23:24:34 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Palo Alto Networks Issues Patch for Exploited PAN-OS RCE Vulnerability CVE-2026-0322</title>
+      <link>https://secubuzz.com/news/palo-alto-networks-issues-patch-for-exploited-pan-1487d7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/palo-alto-networks-issues-patch-for-exploited-pan-1487d7</guid>
+      <description><![CDATA[Palo Alto Networks has released a patch for the high‑severity PAN‑OS remote code execution flaw identified as CVE‑2026‑0322. The vulnerability, which has been actively exploited against firewalls, allows attackers to execute arbitrary code with administrative privileges. Users must apply the update immediately to prevent potential compromise.]]></description>
+      <pubDate>Wed, 14 Oct 2026 22:56:47 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-pan-os-rce-flaw-exploited-in-attacks/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Unit 42 Uncovers PEERSTITCH, a Stealthy FortiGate Implant</title>
       <link>https://secubuzz.com/news/unit-42-uncovers-peerstitch-a-stealthy-fortigate-i-21b2cf</link>
@@ -14,6 +23,15 @@
       <description><![CDATA[Unit 42 identified PEERSTITCH, a memory‑resident ARM64 malware that attackers deployed on over 500 FortiGate firewalls by exploiting CVE-2024-47575. The vulnerability allowed unauthenticated remote code execution, enabling the implant to remain hidden in memory and evade detection.]]></description>
       <pubDate>Wed, 14 Oct 2026 22:00:44 GMT</pubDate>
       <source url="https://unit42.paloaltonetworks.com/fortimanager-cve-2024-47575-peerstitch-malware/">Unit 42</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Microsoft Releases Patch for Exploited Windows Shell MotW Zero‑Day CVE-2026-96951</title>
+      <link>https://secubuzz.com/news/microsoft-releases-patch-for-exploited-windows-she-288f46</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-releases-patch-for-exploited-windows-she-288f46</guid>
+      <description><![CDATA[Microsoft has issued a security update addressing the actively exploited Windows Shell MotW zero‑day vulnerability identified as CVE‑2026‑96951. The flaw permits attackers to execute arbitrary code via malicious shell extensions, potentially compromising user systems. All Windows users should install the patch to mitigate the risk.]]></description>
+      <pubDate>Wed, 14 Oct 2026 21:44:12 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/cve-2026-96951-windows-shell-motw-zero-day-patch">CyberNews AI</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -438,24 +456,6 @@
       <pubDate>Wed, 14 Oct 2026 08:40:41 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/14/openai-engineer-arrested-hidden-recording-device/">Help Net Security</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>European Bank Breached via Third‑Party Gateway and WSUS Targeting</title>
-      <link>https://secubuzz.com/news/european-bank-breached-via-third-party-gateway-and-466b80</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/european-bank-breached-via-third-party-gateway-and-466b80</guid>
-      <description><![CDATA[A European bank was compromised through a poorly secured third‑party gateway, after which attackers attempted to exploit its Windows Server Update Services (WSUS) infrastructure. The breach exposed the bank’s central software systems, highlighting risks from weak access controls and stolen login details.]]></description>
-      <pubDate>Wed, 14 Oct 2026 08:33:31 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/attackers-breach-european-bank/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Gears of War E-Day Disrupted by DDoS Attack</title>
-      <link>https://secubuzz.com/news/gears-of-war-e-day-disrupted-by-ddos-attack-7b6f74</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/gears-of-war-e-day-disrupted-by-ddos-attack-7b6f74</guid>
-      <description><![CDATA[Distributed denial‑of‑service attacks targeted Gears of War’s online services, causing login failures and player disconnects during the E‑Day event. The Gears Community confirmed the disruption was due to DDoS activity, ending speculation about the source. No data breach was reported.]]></description>
-      <pubDate>Wed, 14 Oct 2026 08:11:57 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/gears-of-war-e-day-hit-by-ddos-attack/">Cyber Security News</source>
-      <category>Policy</category>
     </item>
   </channel>
 </rss>
