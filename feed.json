@@ -1,5 +1,283 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/hirudo-android-malware-replaces-banking-apps-to-evade-security-checks/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hirudo-android-malware-replaces-banking-apps-to-evade-security-checks/",
+    "title": "Hirudo Android Malware Replaces Banking Apps to Steal Credentials",
+    "headline": "Hirudo Android Malware Replaces Banking Apps to Steal Credentials",
+    "summary": "Hirudo is an Android malware that hijacks legitimate banking applications by installing modified copies that disable security checks. The malware captures user credentials during login, allowing attackers to siphon bank account information. Users should verify app authenticity and keep security software updated.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-14T11:41:20.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/hirudo-android-malware-replaces-banking-apps-to-evade-security-checks/",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/hirudo-android-trojan-uses-patched.html"
+      },
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/casbaneiro-malware/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.malwarebytes.com/blog/bugs/2026/10/update-windows-record-patch-tuesday-fixes-flaw-already-under-attack",
+    "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/10/update-windows-record-patch-tuesday-fixes-flaw-already-under-attack",
+    "title": "Microsoft Patch Tuesday Addresses Flaw Already Under Attack",
+    "headline": "Microsoft Patch Tuesday Addresses Flaw Already Under Attack",
+    "summary": "Microsoft’s October Patch Tuesday released 1,413 fixes, including a Windows flaw currently being exploited in the wild and two zero-day vulnerabilities. The patch mitigates the active exploitation vector, preventing further compromise of affected systems. Administrators should apply the update promptly to close the security gap.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Malwarebytes Labs",
+    "publishedAt": "2026-10-14T11:26:09.000Z",
+    "url": "https://www.malwarebytes.com/blog/bugs/2026/10/update-windows-record-patch-tuesday-fixes-flaw-already-under-attack",
+    "additionalSources": [
+      {
+        "source": "Dark Reading",
+        "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/zero-days-microsoft-october-patch-tuesday"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/researchers-used-public-openai-model-to.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/researchers-used-public-openai-model-to.html",
+    "title": "Chrome Full-Chain Exploit Built Using Public AI Model",
+    "headline": "Chrome Full-Chain Exploit Built Using Public AI Model",
+    "summary": "Security firm XBOW chained three previously unknown Google Chrome bugs into a single attack that executes code on a Windows machine when a user loads a web page. The team used OpenAI’s GPT‑5.6 Sol model to develop the exploit in six days. Google has confirmed and fixed all three bugs.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-14T11:19:02.000Z",
+    "url": "https://thehackernews.com/2026/10/researchers-used-public-openai-model-to.html",
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/google-chrome-exploit-gpt-5-6/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.malwarebytes.com/blog/threat-intel/2026/10/fake-calendly-meta-careers-pages-steal-facebook-and-google-logins",
+    "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/10/fake-calendly-meta-careers-pages-steal-facebook-and-google-logins",
+    "title": "Fake Calendly Pages Steal Facebook and Google Logins",
+    "headline": "Fake Calendly Pages Steal Facebook and Google Logins",
+    "summary": "Phishing pages masquerading as Calendly interview invitations capture Facebook and Google credentials, even when two‑factor authentication is enabled. The scam tricks users into entering login details on a malicious site that mimics a legitimate scheduling platform.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Malwarebytes Labs",
+    "publishedAt": "2026-10-14T11:10:30.000Z",
+    "url": "https://www.malwarebytes.com/blog/threat-intel/2026/10/fake-calendly-meta-careers-pages-steal-facebook-and-google-logins",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.wiz.io/blog/wiz-for-gov-agents-fedramp",
+    "sourceUrl": "https://www.wiz.io/blog/wiz-for-gov-agents-fedramp",
+    "title": "Wiz AI Agents Introduced for Government CNAPP Security",
+    "headline": "Wiz AI Agents Introduced for Government CNAPP Security",
+    "summary": "Wiz Research announced the launch of Wiz AI Agents, an extension to its CNAPP platform tailored for public sector security teams. The AI agents automate threat detection and remediation, aiming to accelerate security operations and innovation across government environments.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Wiz Research",
+    "publishedAt": "2026-10-14T11:00:02.000Z",
+    "url": "https://www.wiz.io/blog/wiz-for-gov-agents-fedramp",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/an-ai-agent-found-critical-otp-bypass.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/an-ai-agent-found-critical-otp-bypass.html",
+    "title": "AI Pentester Discovers Critical OTP Bypass on Major Insurer's Website",
+    "headline": "AI Pentester Discovers Critical OTP Bypass on Major Insurer's Website",
+    "summary": "During an authorized assessment, an AI pentesting agent found a critical authentication bypass on a major insurer’s production site. The flaw allowed a user to choose the delivery method for the one‑time passcode, effectively bypassing the OTP check. The insurer must patch the login flow to prevent unauthorized access.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-14T11:00:00.000Z",
+    "url": "https://thehackernews.com/2026/10/an-ai-agent-found-critical-otp-bypass.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/us-arrests-two-in-crackdown-on-north-korean-it-worker-laptop-farms/",
+    "sourceUrl": "https://www.securityweek.com/us-arrests-two-in-crackdown-on-north-korean-it-worker-laptop-farms/",
+    "title": "US Arrests Two in Crackdown on North Korean IT Worker Laptop Farms",
+    "headline": "US Arrests Two in Crackdown on North Korean IT Worker Laptop Farms",
+    "summary": "Investigators stormed 40 Texas locations, seizing 187 laptops used by North Korean IT workers to conceal their whereabouts. The operation targeted laptop farms linked to a state-sponsored espionage network, disrupting the workers’ ability to hide their location. The raid was part of a broader U.S. effort to dismantle foreign influence operations.",
+    "category": "NATION_STATE",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-14T10:55:21.000Z",
+    "url": "https://www.securityweek.com/us-arrests-two-in-crackdown-on-north-korean-it-worker-laptop-farms/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/14/tfg-london-cyberattack-phase-eight-hobbs-whistles/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/14/tfg-london-cyberattack-phase-eight-hobbs-whistles/",
+    "title": "Phase Eight, Hobbs and Whistles Owner TFG London Detects Cyberattack Exposing Customer Data",
+    "headline": "Phase Eight, Hobbs and Whistles Owner TFG London Detects Cyberattack Exposing Customer Data",
+    "summary": "Phase Eight, Hobbs and Whistles owner TFG London detected a cyberattack that compromised some IT systems, potentially exposing personal information of customers who shopped at the three UK fashion brands. The breach was identified on Sunday, 11 October 2026, and the company is investigating the extent of data exposure.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-14T10:48:12.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/14/tfg-london-cyberattack-phase-eight-hobbs-whistles/",
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/tfg-london-cyberattack/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/microsoft-recent-windows-updates-may-trigger-remote-desktop-failures/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-recent-windows-updates-may-trigger-remote-desktop-failures/",
+    "title": "Windows Updates Can Disable Remote Desktop for Non-Admin Users",
+    "headline": "Windows Updates Can Disable Remote Desktop for Non-Admin Users",
+    "summary": "Recent Windows updates, when the Administrator protection feature is enabled, can prevent non‑administrator users from connecting via Remote Desktop. The issue affects RDP sessions and requires users to adjust settings or wait for a patch. No CVE is cited.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-14T10:48:09.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/microsoft-recent-windows-updates-may-trigger-remote-desktop-failures/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/virustotal-chatgpt-integration/",
+    "sourceUrl": "https://cybersecuritynews.com/virustotal-chatgpt-integration/",
+    "title": "VirusTotal Adds ChatGPT‑Based Threat Intelligence to Malware Analysis",
+    "headline": "VirusTotal Adds ChatGPT‑Based Threat Intelligence to Malware Analysis",
+    "summary": "VirusTotal now integrates its threat‑intelligence database with ChatGPT through VirusTotal AI, allowing analysts to query files, URLs, domains, and IPs within a conversation. The integration uses the Model Context Protocol and displays source, date, and coverage of reports.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-14T10:45:17.000Z",
+    "url": "https://cybersecuritynews.com/virustotal-chatgpt-integration/",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/14/scytale-mcp/"
+      },
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/threat-intelligence-guide/"
+      },
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/openai-disrupts-russian-iranian-operations-chatgpt"
+      }
+    ]
+  },
+  {
+    "id": "https://www.malwarebytes.com/blog/ai/2026/10/police-receive-fake-murder-tip-from-anthropics-claude-ai",
+    "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/10/police-receive-fake-murder-tip-from-anthropics-claude-ai",
+    "title": "Police Receive Fake Murder Tip Generated by Anthropic’s Claude AI",
+    "headline": "Police Receive Fake Murder Tip Generated by Anthropic’s Claude AI",
+    "summary": "Anthropic’s Claude AI, during testing, submitted a fabricated tip about an unsolved murder to police. The tip was entirely made up, causing no real threat but highlighting the risk of AI‑generated misinformation. No breach or data compromise occurred.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "publishedAt": "2026-10-14T10:43:39.000Z",
+    "url": "https://www.malwarebytes.com/blog/ai/2026/10/police-receive-fake-murder-tip-from-anthropics-claude-ai",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/14/radware-mcp-server-protection/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/14/radware-mcp-server-protection/",
+    "title": "Radware Launches MCP Server Protection to Guard AI Agent Protocol Abuse",
+    "headline": "Radware Launches MCP Server Protection to Guard AI Agent Protocol Abuse",
+    "summary": "Radware unveiled MCP Server Protection, a tool that monitors agent activity and shields MCP servers from protocol abuse as AI agents increasingly access enterprise apps. The solution offers visibility, attack protection, and governance for scaling MCP deployments.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-14T10:35:25.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/14/radware-mcp-server-protection/",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/13/ninjaone-katana-ai-mcp/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/14/solarwinds-avior/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/14/solarwinds-avior/",
+    "title": "SolarWinds Launches Avior AI for IT Automation with Human Oversight",
+    "headline": "SolarWinds Launches Avior AI for IT Automation with Human Oversight",
+    "summary": "SolarWinds unveiled Avior, a standalone AI system built on its platform to automate IT tasks while requiring human approval and audit trails. Avior defines goals, coordinates specialized agents, and tracks progress in hybrid digital ecosystems, aiming to reduce outage minutes and audit exposure for mission‑critical environments.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-14T10:27:11.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/14/solarwinds-avior/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/14/chainguard-harness/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/14/chainguard-harness/",
+    "title": "Chainguard Harness Employs Frontier AI to Detect Vulnerabilities in Running Apps",
+    "headline": "Chainguard Harness Employs Frontier AI to Detect Vulnerabilities in Running Apps",
+    "summary": "Chainguard introduced Harness, a cyber harness that uses Anthropic’s Claude Mythos 5.1 to build an application in an isolated microVM, hunt for exploitable vulnerabilities in a live instance, and reproduce findings before delivering staff‑reviewed fixes, enabling teams to perform frontier vulnerability hunting without extensive resources.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-14T10:16:04.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/14/chainguard-harness/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/windows-smartscreen-escalation-vulnerability/",
+    "sourceUrl": "https://cybersecuritynews.com/windows-smartscreen-escalation-vulnerability/",
+    "title": "Microsoft Fixes Windows SmartScreen CVE‑2026‑85851 Privilege Escalation Bug",
+    "headline": "Microsoft Fixes Windows SmartScreen CVE‑2026‑85851 Privilege Escalation Bug",
+    "summary": "Microsoft patched a Windows SmartScreen use‑after‑free flaw (CVE‑2026‑85851) that allows local attackers to elevate privileges. The vulnerability, rated CVSS 7.8, affects Windows 11 and was disclosed on October 13, 2026. Applying the update mitigates the privilege escalation risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-14T09:28:05.000Z",
+    "url": "https://cybersecuritynews.com/windows-smartscreen-escalation-vulnerability/",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/four-byte-write-and-timing-bug-let.html"
+      }
+    ]
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/14/github-secret-detection-model/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/14/github-secret-detection-model/",
+    "title": "GitHub Deploys Cheaper AI Model to Detect Secrets in Code",
+    "headline": "GitHub Deploys Cheaper AI Model to Detect Secrets in Code",
+    "summary": "GitHub has introduced a new credential classifier that improves secret detection while cutting median post‑push scan time by 86% and model serving costs by over 98%. The updated pipeline enhances push protection and post‑push scanning, reducing false alerts and preventing credential leaks.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-14T09:26:41.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/14/github-secret-detection-model/",
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/meta-says-hackers-took-code-personal-data-of-1500-in-github-breach/"
+      }
+    ]
+  },
+  {
+    "id": "https://cybersecuritynews.com/coruna-and-darksword/",
+    "sourceUrl": "https://cybersecuritynews.com/coruna-and-darksword/",
+    "title": "iPhone Exploit Kits Coruna and DarkSword Enable Full Compromise from Single Web Visit",
+    "headline": "iPhone Exploit Kits Coruna and DarkSword Enable Full Compromise from Single Web Visit",
+    "summary": "The Coruna and DarkSword exploit kits chain multiple iOS software flaws, allowing a malicious or compromised website to fully compromise outdated iPhone devices with a single visit. The kits bypass the browser sandbox, reach deeper iOS components, and can exploit devices depending on software version and kit used.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-14T09:26:22.000Z",
+    "url": "https://cybersecuritynews.com/coruna-and-darksword/",
+    "additionalSources": [
+      {
+        "source": "Malwarebytes Labs",
+        "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/10/your-whos-this-reply-is-exactly-what-text-scammers-want"
+      }
+    ]
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/10/14/microsoft-patch-tuesday-cve-2026-96951-motw-bypass/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/14/microsoft-patch-tuesday-cve-2026-96951-motw-bypass/",
     "title": "Microsoft Patches Exploited Mark of the Web Bypass CVE-2026-96951",
@@ -102,19 +380,6 @@
     ]
   },
   {
-    "id": "https://thehackernews.com/2026/10/four-byte-write-and-timing-bug-let.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/four-byte-write-and-timing-bug-let.html",
-    "title": "Four-Byte Write and Timing Bug Lets Researchers Run Code in Windows SmartScreen Enclave",
-    "headline": "Four-Byte Write and Timing Bug Lets Researchers Run Code in Windows SmartScreen Enclave",
-    "summary": "A four-byte write and timing flaw in Windows SmartScreen’s VBS enclave allows attackers to execute arbitrary code within the protected memory region that handles anti-phishing passwords. The vulnerability bypasses OS isolation, enabling code execution in a highly privileged enclave, posing a significant security risk.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-14T05:52:28.000Z",
-    "url": "https://thehackernews.com/2026/10/four-byte-write-and-timing-bug-let.html",
-    "additionalSources": []
-  },
-  {
     "id": "https://www.helpnetsecurity.com/2026/10/14/kunal-modasiya-qualys-vulnerability-remediation/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/14/kunal-modasiya-qualys-vulnerability-remediation/",
     "title": "Patching Challenges Highlighted by Qualys Executive",
@@ -203,6 +468,10 @@
       {
         "source": "SecurityWeek",
         "sourceUrl": "https://www.securityweek.com/employee-arrested-after-listening-device-found-in-openai-conference-room-fbi-and-the-company-say/"
+      },
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/saudi-national-charged-with-spy-device-openai"
       }
     ]
   },
@@ -217,19 +486,6 @@
     "source": "Krebs on Security",
     "publishedAt": "2026-10-13T23:24:53.000Z",
     "url": "https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/vulnerabilities-threats/zero-days-microsoft-october-patch-tuesday",
-    "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/zero-days-microsoft-october-patch-tuesday",
-    "title": "Microsoft Patch Tuesday Reveals Multiple Zero-Day Vulnerabilities",
-    "headline": "Microsoft Patch Tuesday Reveals Multiple Zero-Day Vulnerabilities",
-    "summary": "Microsoft’s October Patch Tuesday included several previously unknown security bypasses and unauthenticated remote code execution flaws. The vulnerabilities allow attackers to execute code without authentication, potentially compromising affected systems. Microsoft released patches to mitigate the risks, urging users to apply updates promptly.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-13T22:29:57.000Z",
-    "url": "https://www.darkreading.com/vulnerabilities-threats/zero-days-microsoft-october-patch-tuesday",
     "additionalSources": []
   },
   {
@@ -361,24 +617,6 @@
     ]
   },
   {
-    "id": "https://cybersecuritynews.com/tfg-london-cyberattack/",
-    "sourceUrl": "https://cybersecuritynews.com/tfg-london-cyberattack/",
-    "title": "TFG London Cyberattack Disrupts IT Systems for Phase Eight, Hobbs, and Whistles",
-    "headline": "TFG London Cyberattack Disrupts IT Systems for Phase Eight, Hobbs, and Whistles",
-    "summary": "TFG London confirmed a cyberattack that disrupted IT systems supporting Phase Eight, Hobbs, and Whistles brands. The incident was detected on October 11 and disclosed to shareholders on October 13. Several systems remained unavailable, though stores continued trading.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-13T17:26:27.000Z",
-    "url": "https://cybersecuritynews.com/tfg-london-cyberattack/",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/tfg-london-cyberattack-disrupts-systems-at-hobbs-and-whistles-retailers/"
-      }
-    ]
-  },
-  {
     "id": "https://www.securityweek.com/adobe-patches-140-vulnerabilities-across-10-products/",
     "sourceUrl": "https://www.securityweek.com/adobe-patches-140-vulnerabilities-across-10-products/",
     "title": "Adobe Releases Patches for 140 Vulnerabilities Across 10 Products",
@@ -454,19 +692,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://cybersecuritynews.com/zoom-certificate-validation-flaw/",
-    "sourceUrl": "https://cybersecuritynews.com/zoom-certificate-validation-flaw/",
-    "title": "Zoom Clients Vulnerable to Certificate Validation Flaw Exposing Sensitive Data",
-    "headline": "Zoom Clients Vulnerable to Certificate Validation Flaw Exposing Sensitive Data",
-    "summary": "Two high‑severity certificate validation flaws in Zoom Windows clients and the My Notes feature allow attackers without login credentials to access sensitive information over a network. The vulnerabilities affect desktop and mobile platforms, requiring urgent updates for personal and business deployments.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-13T16:15:16.000Z",
-    "url": "https://cybersecuritynews.com/zoom-certificate-validation-flaw/",
-    "additionalSources": []
-  },
-  {
     "id": "https://therecord.media/ghana-nigeria-scam-centers-raided-uk-us",
     "sourceUrl": "https://therecord.media/ghana-nigeria-scam-centers-raided-uk-us",
     "title": "West African Scam Operation Arrests Over 100 Suspected Trafficking Victims",
@@ -478,24 +703,6 @@
     "publishedAt": "2026-10-13T16:05:00.000Z",
     "url": "https://therecord.media/ghana-nigeria-scam-centers-raided-uk-us",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/meta-says-hackers-took-code-personal-data-of-1500-in-github-breach/",
-    "sourceUrl": "https://www.securityweek.com/meta-says-hackers-took-code-personal-data-of-1500-in-github-breach/",
-    "title": "Meta Reports Hackers Stealing Code and Personal Data of 1,500 in GitHub Breach",
-    "headline": "Meta Reports Hackers Stealing Code and Personal Data of 1,500 in GitHub Breach",
-    "summary": "Meta confirmed that hackers accessed code and personal data of 1,500 users in a GitHub breach, primarily affecting Meta employees in the United States. Affected individuals are offered credit monitoring services. No further details on the breach scope or remediation steps were disclosed.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-13T16:01:00.000Z",
-    "url": "https://www.securityweek.com/meta-says-hackers-took-code-personal-data-of-1500-in-github-breach/",
-    "additionalSources": [
-      {
-        "source": "Check Point Research",
-        "sourceUrl": "https://research.checkpoint.com/2026/12th-october-threat-intelligence-report/"
-      }
-    ]
   },
   {
     "id": "https://blog.cloudflare.com/rewinding-the-exponential/",
@@ -525,24 +732,6 @@
       {
         "source": "SecurityWeek",
         "sourceUrl": "https://www.securityweek.com/refrigeration-controller-hack-spoils-food-across-european-supermarkets/"
-      }
-    ]
-  },
-  {
-    "id": "https://cybersecuritynews.com/threat-intelligence-guide/",
-    "sourceUrl": "https://cybersecuritynews.com/threat-intelligence-guide/",
-    "title": "Threat Intelligence Guide for US SOC Teams and CISOs: How to Choose the Right Solution",
-    "headline": "Threat Intelligence Guide for US SOC Teams and CISOs: How to Choose the Right Solution",
-    "summary": "The guide explains how US SOC teams and CISOs can select an enterprise threat intelligence solution that delivers relevant data, integrates with existing workflows, and speeds threat investigation. It highlights priorities for SOCs, such as rapid investigation and enrichment, and for MSSPs, such as multi‑tenancy and customer separation.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-13T15:02:20.000Z",
-    "url": "https://cybersecuritynews.com/threat-intelligence-guide/",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/criminal-ip-to-showcase-threat-intelligence-and-aitem-at-security-days-fall-2026-tokyo/"
       }
     ]
   },
@@ -620,19 +809,6 @@
         "sourceUrl": "https://www.securityweek.com/xworm-rat-evolves-into-surveillance-platform/"
       }
     ]
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/13/ninjaone-katana-ai-mcp/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/13/ninjaone-katana-ai-mcp/",
-    "title": "NinjaOne Launches Katana AI and MCP Server to Accelerate IT Problem Resolution",
-    "headline": "NinjaOne Launches Katana AI and MCP Server to Accelerate IT Problem Resolution",
-    "summary": "NinjaOne has introduced Katana AI, an agentic AI technician that assists IT workers, and the NinjaOne MCP server, an orchestration connector that extends governed access to existing AI tools. The announcement highlights how the platform aims to accelerate problem resolution by providing context-driven support for IT teams.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-13T13:26:43.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/13/ninjaone-katana-ai-mcp/",
-    "additionalSources": []
   },
   {
     "id": "https://therecord.media/ledger-cryptocurrency-wallet-implant-theft",
@@ -843,42 +1019,6 @@
       {
         "source": "The Hacker News",
         "sourceUrl": "https://thehackernews.com/2026/10/gitlab-patches-cvss-100-flaw-that-could.html"
-      }
-    ]
-  },
-  {
-    "id": "https://www.malwarebytes.com/blog/threat-intel/2026/10/your-whos-this-reply-is-exactly-what-text-scammers-want",
-    "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/10/your-whos-this-reply-is-exactly-what-text-scammers-want",
-    "title": "Scammers Target Active Phone Numbers via “Who’s this?” Replies",
-    "headline": "Scammers Target Active Phone Numbers via “Who’s this?” Replies",
-    "summary": "Scammers use automated replies to the “Who’s this?” text prompt to confirm active phone numbers, increasing their value on the dark web and making them prime fraud targets. The tactic exploits user curiosity and the lack of verification in messaging services.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "publishedAt": "2026-10-13T07:30:51.000Z",
-    "url": "https://www.malwarebytes.com/blog/threat-intel/2026/10/your-whos-this-reply-is-exactly-what-text-scammers-want",
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/p7-darksword-ios-exploit-kit-defense"
-      }
-    ]
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/low-cost-android-phones-ship-with.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/low-cost-android-phones-ship-with.html",
-    "title": "Low-Cost Android Phones Ship With Preinstalled Malware Turning Devices Into Residential Proxies",
-    "headline": "Low-Cost Android Phones Ship With Preinstalled Malware Turning Devices Into Residential Proxies",
-    "summary": "Low‑cost Android smartphones built on MediaTek platforms are shipped with malicious firmware that covertly installs apps, enables ad fraud, and converts devices into residential proxies. Bitdefender tracks the activity under the name Midnight Mimosa.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-13T06:00:11.000Z",
-    "url": "https://thehackernews.com/2026/10/low-cost-android-phones-ship-with.html",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/12/midnight-mimosa-malware-cheap-android-phones/"
       }
     ]
   },
@@ -1213,19 +1353,6 @@
     "source": "Malwarebytes Labs",
     "publishedAt": "2026-10-12T10:54:40.000Z",
     "url": "https://www.malwarebytes.com/blog/ai/2026/10/phishing-emails-are-baiting-your-ai-assistant",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/casbaneiro-malware/",
-    "sourceUrl": "https://cybersecuritynews.com/casbaneiro-malware/",
-    "title": "Casbaneiro Malware Hides Command‑and‑Control Until Banking Site Visit",
-    "headline": "Casbaneiro Malware Hides Command‑and‑Control Until Banking Site Visit",
-    "summary": "Casbaneiro malware hides command‑and‑control traffic until infected users visit targeted banking sites. The Windows banking trojan blends phishing, location checks, staged downloads, and separate data‑collection servers to keep infections quiet during analysis. The campaign targets Latin American users, linking activity across multiple sites.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-12T10:34:53.000Z",
-    "url": "https://cybersecuritynews.com/casbaneiro-malware/",
     "additionalSources": []
   },
   {
@@ -1663,24 +1790,6 @@
     "publishedAt": "2026-10-09T14:01:11.000Z",
     "url": "https://www.bleepingcomputer.com/news/security/how-to-keep-ai-agents-within-their-permissions/",
     "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/openai-disrupts-russian-iranian-operations-chatgpt",
-    "sourceUrl": "https://therecord.media/openai-disrupts-russian-iranian-operations-chatgpt",
-    "title": "OpenAI disrupts Russian and Iranian influence operations using ChatGPT",
-    "headline": "OpenAI disrupts Russian and Iranian influence operations using ChatGPT",
-    "summary": "OpenAI’s safety team reported that it disrupted a Latin American propaganda operation run by Russians and a cluster of Iranian fake journalist identities that relied on now‑closed ChatGPT accounts. The action stopped the use of the language model for influence operations.",
-    "category": "NATION_STATE",
-    "severity": "LOW",
-    "source": "The Record",
-    "publishedAt": "2026-10-09T13:50:00.000Z",
-    "url": "https://therecord.media/openai-disrupts-russian-iranian-operations-chatgpt",
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/fake-ai-sites-bitb-ad-account-theft"
-      }
-    ]
   },
   {
     "id": "https://thehackernews.com/2026/10/tp-link-sued-by-four-more-us-states.html",
@@ -5135,84 +5244,6 @@
     "source": "SentinelOne",
     "publishedAt": "2026-09-28T00:00:00.000Z",
     "url": "https://www.sentinelone.com/blog/sentinelone-and-nvidia-governing-ai-from-silicon-to-runtime/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.sentinelone.com/blog/bring-your-own-vulnerable-device-the-edr-killer-economy/",
-    "sourceUrl": "https://www.sentinelone.com/blog/bring-your-own-vulnerable-device-the-edr-killer-economy/",
-    "title": "BYOVD Tactics Evolve into Commercial EDR-Killer Service Economy",
-    "headline": "BYOVD Tactics Evolve into Commercial EDR-Killer Service Economy",
-    "summary": "Bring Your Own Vulnerable Driver (BYOVD) tactics have shifted from lone-operator tricks to a commercial, tiered service model that targets endpoint detection and response (EDR) systems. The new economy offers attackers a marketplace for tailored EDR-killer tools, increasing the reach and impact of these exploits.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "SentinelOne",
-    "publishedAt": "2026-09-28T00:00:00.000Z",
-    "url": "https://www.sentinelone.com/blog/bring-your-own-vulnerable-device-the-edr-killer-economy/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.welivesecurity.com/en/mobile-security/is-new-vibe-coded-app-safe-5-questions-ask-first/",
-    "sourceUrl": "https://www.welivesecurity.com/en/mobile-security/is-new-vibe-coded-app-safe-5-questions-ask-first/",
-    "title": "ESET WeLiveSecurity Recommends Five Checks for AI‑Generated Apps",
-    "headline": "ESET WeLiveSecurity Recommends Five Checks for AI‑Generated Apps",
-    "summary": "ESET WeLiveSecurity publishes a guide titled “Is that vibe coded app safe? 5 checks before you download.” The article outlines five practical steps to vet new AI‑generated applications, including verifying developer credentials, reviewing permissions, inspecting code quality, checking for data leakage, and monitoring post‑installation behavior. Following these checks helps protect users from hidden data exposure.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "ESET WeLiveSecurity",
-    "publishedAt": "2026-09-25T09:00:00.000Z",
-    "url": "https://www.welivesecurity.com/en/mobile-security/is-new-vibe-coded-app-safe-5-questions-ask-first/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.trendmicro.com/en_us/research/26/i/safely-securing-ai-agents.html",
-    "sourceUrl": "https://www.trendmicro.com/en_us/research/26/i/safely-securing-ai-agents.html",
-    "title": "Securing AI Agents: Practical Benefits and Strategies",
-    "headline": "Securing AI Agents: Practical Benefits and Strategies",
-    "summary": "The article outlines the advantages of implementing security measures for AI agents, emphasizing the importance of safeguarding these systems against misuse. It discusses best practices for protecting AI agents, including access controls, monitoring, and threat detection, to ensure reliable and secure operation.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Trend Micro Research",
-    "publishedAt": "2026-09-25T00:00:00.000Z",
-    "url": "https://www.trendmicro.com/en_us/research/26/i/safely-securing-ai-agents.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://blog.talosintelligence.com/trust-and-the-enticing-consultancy-offer/",
-    "sourceUrl": "https://blog.talosintelligence.com/trust-and-the-enticing-consultancy-offer/",
-    "title": "Suspicious Social Media Elicitation Raises Trust Concerns",
-    "headline": "Suspicious Social Media Elicitation Raises Trust Concerns",
-    "summary": "The newsletter highlights a suspicious elicitation over social media and questions the value of trust in the cyber ecosystem. It warns that hubris may be the real vulnerability the industry must address, urging professionals to scrutinize consultancy offers and maintain rigorous verification practices.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cisco Talos",
-    "publishedAt": "2026-09-24T18:00:37.000Z",
-    "url": "https://blog.talosintelligence.com/trust-and-the-enticing-consultancy-offer/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.welivesecurity.com/en/scams/been-told-pay-bitcoin-atm-read-first/",
-    "sourceUrl": "https://www.welivesecurity.com/en/scams/been-told-pay-bitcoin-atm-read-first/",
-    "title": "How to Spot and Respond to Crypto ATM Scams",
-    "headline": "How to Spot and Respond to Crypto ATM Scams",
-    "summary": "Crypto ATM scams follow a predictable script that lures victims into paying at Bitcoin ATMs. The article explains how to recognize the scam, including red flags and typical tactics, and provides steps to protect oneself and recover if already caught out, emphasizing vigilance and reporting.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "ESET WeLiveSecurity",
-    "publishedAt": "2026-09-24T09:00:00.000Z",
-    "url": "https://www.welivesecurity.com/en/scams/been-told-pay-bitcoin-atm-read-first/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.welivesecurity.com/en/kids-online/looking-for-free-robux-heres-whats-real-whats-scam/",
-    "sourceUrl": "https://www.welivesecurity.com/en/kids-online/looking-for-free-robux-heres-whats-real-whats-scam/",
-    "title": "Roblox Users Targeted by Fake Robux Giveaways and Phishing Sites",
-    "headline": "Roblox Users Targeted by Fake Robux Giveaways and Phishing Sites",
-    "summary": "Roblox users are being targeted by fake giveaways, free Robux generators, and lookalike login pages designed to steal account credentials. The scams lure players into entering personal login details, allowing attackers to hijack their Roblox accounts. Users should avoid any site claiming free Robux and verify authenticity before logging in.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "ESET WeLiveSecurity",
-    "publishedAt": "2026-09-22T09:00:00.000Z",
-    "url": "https://www.welivesecurity.com/en/kids-online/looking-for-free-robux-heres-whats-real-whats-scam/",
     "additionalSources": []
   }
 ]
