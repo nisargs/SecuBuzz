@@ -82,6 +82,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "fbi-raids-laptop-farms-supporting-north-korean-it-34b6c9",
+    "title": "FBI Raids Laptop Farms Supporting North Korean IT Workers",
+    "summary": "FBI raided over 40 laptop farms that helped North Korean IT workers use stolen and fabricated identities to secure remote jobs at more than 70 U.S. companies. The operation involved arrests in Ohio and Texas under charges of wire fraud, money laundering, and identity theft. The raid exposed a coordinated effort to siphon U.S. tech salaries.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/14/north-korean-it-workers-laptop-farms-arrests/",
+    "publishedAt": "2026-10-14T13:00:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fbi-raids-laptop-farms-supporting-north-korean-it",
+      "article-34b6c9",
+      "34b6c9",
+      "fbi-raids-laptop-farms-supporting-north-korean-it-workers"
+    ]
+  },
+  {
+    "slug": "guide-highlights-pitfalls-of-ai-adoption-in-securi-16fb96",
+    "title": "Guide Highlights Pitfalls of AI Adoption in Security and IT",
+    "summary": "The guide examines why AI adoption in security and IT often fails, citing poor real‑world performance, increased complexity, broken trust, and new risks. It offers a step‑by‑step path from evaluation to implementation, emphasizing human oversight and clearer risk management to avoid costly AI pitfalls.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/14/tines-it-security-ai-adoption-guide/",
+    "publishedAt": "2026-10-14T13:00:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "guide-highlights-pitfalls-of-ai-adoption-in-securi",
+      "article-16fb96",
+      "16fb96",
+      "guide-highlights-pitfalls-of-ai-adoption-in-security-and-it"
+    ]
+  },
+  {
     "slug": "russian-influence-operation-targets-latin-american-83898b",
     "title": "Russian Influence Operation Targets Latin American Schools",
     "summary": "A Russian influence operation used AI‑generated spoofed emails, fake government documents, and a fabricated local organization to target schools in Peru and Ecuador, among other Latin American institutions. The campaign aimed to spread disinformation and sow confusion.",
@@ -132,24 +168,6 @@ export const news: NewsBrief[] = [
       "article-54fab0",
       "54fab0",
       "cisa-urges-immediate-patch-for-exploited-ivanti-connect-secu"
-    ]
-  },
-  {
-    "slug": "fbi-disrupts-north-korean-chollima-laptop-farms-us-415807",
-    "title": "FBI Disrupts North Korean Chollima Laptop Farms Used to Infiltrate U.S. Companies",
-    "summary": "The FBI shut down several U.S. laptop farms operated by the North Korean threat group FAMOUS CHOLLIMA, cutting off infrastructure that enabled fake remote workers to infiltrate American companies. The operation, disclosed by CrowdStrike on October 13, marks the start of a broader effort to dismantle the group’s domestic support network.",
-    "category": "Malware",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/famous-chollima/",
-    "publishedAt": "2026-10-14T12:37:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fbi-disrupts-north-korean-chollima-laptop-farms-us",
-      "article-415807",
-      "415807",
-      "fbi-disrupts-north-korean-chollima-laptop-farms-used-to-infi"
     ]
   },
   {
@@ -495,6 +513,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "openai-engineer-arrested-for-attempting-to-eavesdr-5cf8a5",
+    "title": "OpenAI Engineer Arrested for Attempting to Eavesdrop on Executive Meetings",
+    "summary": "An engineer at OpenAI was arrested after installing a covert recording device in a conference room to intercept executive conversations. The device was hidden in toilet paper and connected to a television. The arrest was made by U.S. authorities on October 9, 2026.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/14/openai-engineer-arrested-hidden-recording-device/",
+    "publishedAt": "2026-10-14T08:40:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openai-engineer-arrested-for-attempting-to-eavesdr",
+      "article-5cf8a5",
+      "5cf8a5",
+      "openai-engineer-arrested-for-attempting-to-eavesdrop-on-exec"
+    ]
+  },
+  {
     "slug": "european-bank-breached-via-third-party-gateway-and-466b80",
     "title": "European Bank Breached via Third‑Party Gateway and WSUS Targeting",
     "summary": "A European bank was compromised through a poorly secured third‑party gateway, after which attackers attempted to exploit its Windows Server Update Services (WSUS) infrastructure. The breach exposed the bank’s central software systems, highlighting risks from weak access controls and stolen login details.",
@@ -689,24 +725,6 @@ export const news: NewsBrief[] = [
       "cisos-treat-ai-agents-as-insider-threats",
       "article-2a1eac",
       "2a1eac"
-    ]
-  },
-  {
-    "slug": "openai-engineer-arrested-for-planting-spyware-devi-65c1f4",
-    "title": "OpenAI Engineer Arrested for Planting Spyware Device in Executive Conference Room",
-    "summary": "An OpenAI engineer was arrested after hiding an audio recording device in an executive conference room at the company’s San Francisco offices. The device was intended to capture conversations. The suspect, a 35‑year‑old Saudi national, was detained on October 9, 2026, and appeared in federal court on October 13.",
-    "category": "Breach",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/openai-engineer-arrested-for-planting-spyware/",
-    "publishedAt": "2026-10-14T02:25:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openai-engineer-arrested-for-planting-spyware-devi",
-      "article-65c1f4",
-      "65c1f4",
-      "openai-engineer-arrested-for-planting-spyware-device-in-exec"
     ]
   },
   {
@@ -6263,24 +6281,6 @@ export const news: NewsBrief[] = [
       "article-537398",
       "537398",
       "bh-consulting-launches-bh-haven-sme-cybersecurity-service-wi"
-    ]
-  },
-  {
-    "slug": "most-critical-and-high-vulnerabilities-remain-unpa-3393d9",
-    "title": "Most Critical and High Vulnerabilities Remain Unpatched Over 90 Days",
-    "summary": "Detectify examined 1,293 customers across the US, UK, and Nordics, finding that 97% of critical and 92% of high‑severity flaws in the Nordics, and 86% in the US, had been exposed for more than 90 days. The study highlights a widespread lag in patching internet‑facing systems.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/research-unpatched-vulnerabilities-backlog/",
-    "publishedAt": "2026-09-30T04:00:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "most-critical-and-high-vulnerabilities-remain-unpa",
-      "article-3393d9",
-      "3393d9",
-      "most-critical-and-high-vulnerabilities-remain-unpatched-over"
     ]
   }
 ];
