@@ -11,6 +11,44 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "microsoft-patches-exploited-mark-of-the-web-bypass-3a41e4",
+    "title": "Microsoft Patches Exploited Mark of the Web Bypass CVE-2026-96951",
+    "summary": "Microsoft released a Patch Tuesday update that fixes CVE-2026-96951, a command‑injection flaw in Windows Shell’s Mark of the Web handling. Attackers exploited it via malicious files sent through email, IM, or collaboration tools. The patch blocks remote execution triggered by crafted files.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/14/microsoft-patch-tuesday-cve-2026-96951-motw-bypass/",
+    "publishedAt": "2026-10-14T07:53:17.000Z",
+    "cves": [
+      "CVE-2026-96951"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-patches-exploited-mark-of-the-web-bypass",
+      "article-3a41e4",
+      "3a41e4",
+      "microsoft-patches-exploited-mark-of-the-web-bypass-cve-2026-"
+    ]
+  },
+  {
+    "slug": "mozilla-launches-firefox-enterprise-amid-chrome-an-3fe20a",
+    "title": "Mozilla Launches Firefox Enterprise Amid Chrome and Firefox Patch 114 Updates",
+    "summary": "Mozilla introduced Firefox Enterprise, targeting organizations needing strict compliance and security. The release coincides with Chrome and Firefox patching 114 flaws, enhancing browser security for enterprise users.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/chrome-firefox-updates-patch-114-flaws-as-mozilla-unveils-firefox-enterprise/",
+    "publishedAt": "2026-10-14T07:38:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "mozilla-launches-firefox-enterprise-amid-chrome-an",
+      "article-3fe20a",
+      "3fe20a",
+      "mozilla-launches-firefox-enterprise-amid-chrome-and-firefox-"
+    ]
+  },
+  {
     "slug": "citrix-fortinet-ivanti-issue-patch-for-29-critical-7a6219",
     "title": "Citrix, Fortinet, Ivanti Issue Patch for 29 Critical Vulnerabilities",
     "summary": "Citrix, Fortinet, and Ivanti have released patches addressing 29 critical flaws that could allow authentication bypass, remote code execution, and leakage of sensitive authentication data. The vulnerabilities affect multiple products across the three vendors, requiring immediate application of the vendor‑issued updates to mitigate potential exploitation.",
@@ -26,26 +64,6 @@ export const news: NewsBrief[] = [
       "article-7a6219",
       "7a6219",
       "citrix-fortinet-ivanti-issue-patch-for-29-critical-vulnerabi"
-    ]
-  },
-  {
-    "slug": "microsoft-patches-record-1-413-vulnerabilities-inc-6c6498",
-    "title": "Microsoft Patches Record 1,413 Vulnerabilities, Including Exploited Windows Zero‑Day",
-    "summary": "Microsoft has issued security updates for 1,413 vulnerabilities, including CVE-2026-96951, a Windows security feature bypass flaw that has been actively exploited in the wild. The patch addresses the flaw that could allow attackers to bypass security controls and execute code with elevated privileges.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/microsoft-patches-record-1413-vulnerabilities-including-exploited-windows-zero-day/",
-    "publishedAt": "2026-10-14T07:16:12.000Z",
-    "cves": [
-      "CVE-2026-96951"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-patches-record-1-413-vulnerabilities-inc",
-      "article-6c6498",
-      "6c6498",
-      "microsoft-patches-record-1-413-vulnerabilities-including-exp"
     ]
   },
   {
@@ -855,24 +873,6 @@ export const news: NewsBrief[] = [
       "article-21b8df",
       "21b8df",
       "cyber-incident-affects-ahold-delhaize-stores-in-us-netherlan"
-    ]
-  },
-  {
-    "slug": "mozilla-firefox-enterprise-blocks-shadow-ai-in-bro-3804ea",
-    "title": "Mozilla Firefox Enterprise Blocks Shadow AI in Browser",
-    "summary": "Mozilla’s Firefox Enterprise, a paid platform, lets organizations control sensitive data sharing, device security, and employee web access. It pairs the browser with a management dashboard on the organization’s infrastructure, enabling IT teams to set policies, restrict AI tools, and link browser activity to existing security monitoring. The solution targets firms with strict security and regulatory needs.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/13/mozilla-firefox-enterprise-platform/",
-    "publishedAt": "2026-10-13T11:21:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "mozilla-firefox-enterprise-blocks-shadow-ai-in-bro",
-      "article-3804ea",
-      "3804ea",
-      "mozilla-firefox-enterprise-blocks-shadow-ai-in-browser"
     ]
   },
   {

@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Oct 2026 07:41:35 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 07:59:00 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Microsoft Patches Exploited Mark of the Web Bypass CVE-2026-96951</title>
+      <link>https://secubuzz.com/news/microsoft-patches-exploited-mark-of-the-web-bypass-3a41e4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-patches-exploited-mark-of-the-web-bypass-3a41e4</guid>
+      <description><![CDATA[Microsoft released a Patch Tuesday update that fixes CVE-2026-96951, a command‑injection flaw in Windows Shell’s Mark of the Web handling. Attackers exploited it via malicious files sent through email, IM, or collaboration tools. The patch blocks remote execution triggered by crafted files.]]></description>
+      <pubDate>Wed, 14 Oct 2026 07:53:17 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/14/microsoft-patch-tuesday-cve-2026-96951-motw-bypass/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Mozilla Launches Firefox Enterprise Amid Chrome and Firefox Patch 114 Updates</title>
+      <link>https://secubuzz.com/news/mozilla-launches-firefox-enterprise-amid-chrome-an-3fe20a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/mozilla-launches-firefox-enterprise-amid-chrome-an-3fe20a</guid>
+      <description><![CDATA[Mozilla introduced Firefox Enterprise, targeting organizations needing strict compliance and security. The release coincides with Chrome and Firefox patching 114 flaws, enhancing browser security for enterprise users.]]></description>
+      <pubDate>Wed, 14 Oct 2026 07:38:51 GMT</pubDate>
+      <source url="https://www.securityweek.com/chrome-firefox-updates-patch-114-flaws-as-mozilla-unveils-firefox-enterprise/">SecurityWeek</source>
+      <category>Cloud</category>
+    </item>
     <item>
       <title>Citrix, Fortinet, Ivanti Issue Patch for 29 Critical Vulnerabilities</title>
       <link>https://secubuzz.com/news/citrix-fortinet-ivanti-issue-patch-for-29-critical-7a6219</link>
@@ -14,15 +32,6 @@
       <description><![CDATA[Citrix, Fortinet, and Ivanti have released patches addressing 29 critical flaws that could allow authentication bypass, remote code execution, and leakage of sensitive authentication data. The vulnerabilities affect multiple products across the three vendors, requiring immediate application of the vendor‑issued updates to mitigate potential exploitation.]]></description>
       <pubDate>Wed, 14 Oct 2026 07:26:35 GMT</pubDate>
       <source url="https://www.securityweek.com/citrix-fortinet-ivanti-patch-29-vulnerabilities-across-their-products/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Microsoft Patches Record 1,413 Vulnerabilities, Including Exploited Windows Zero‑Day</title>
-      <link>https://secubuzz.com/news/microsoft-patches-record-1-413-vulnerabilities-inc-6c6498</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-patches-record-1-413-vulnerabilities-inc-6c6498</guid>
-      <description><![CDATA[Microsoft has issued security updates for 1,413 vulnerabilities, including CVE-2026-96951, a Windows security feature bypass flaw that has been actively exploited in the wild. The patch addresses the flaw that could allow attackers to bypass security controls and execute code with elevated privileges.]]></description>
-      <pubDate>Wed, 14 Oct 2026 07:16:12 GMT</pubDate>
-      <source url="https://www.securityweek.com/microsoft-patches-record-1413-vulnerabilities-including-exploited-windows-zero-day/">SecurityWeek</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -429,15 +438,6 @@
       <pubDate>Tue, 13 Oct 2026 12:00:00 GMT</pubDate>
       <source url="https://therecord.media/cyberattack-groceru-ahold-delhaize">The Record</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Mozilla Firefox Enterprise Blocks Shadow AI in Browser</title>
-      <link>https://secubuzz.com/news/mozilla-firefox-enterprise-blocks-shadow-ai-in-bro-3804ea</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/mozilla-firefox-enterprise-blocks-shadow-ai-in-bro-3804ea</guid>
-      <description><![CDATA[Mozilla’s Firefox Enterprise, a paid platform, lets organizations control sensitive data sharing, device security, and employee web access. It pairs the browser with a management dashboard on the organization’s infrastructure, enabling IT teams to set policies, restrict AI tools, and link browser activity to existing security monitoring. The solution targets firms with strict security and regulatory needs.]]></description>
-      <pubDate>Tue, 13 Oct 2026 11:21:41 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/13/mozilla-firefox-enterprise-platform/">Help Net Security</source>
-      <category>Policy</category>
     </item>
     <item>
       <title>Hackers Heat Up French Supermarket Fridges, Spoiling Food</title>
