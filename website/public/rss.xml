@@ -5,15 +5,24 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Oct 2026 22:47:42 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 00:18:52 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>OpenAI Engineer Arrested for Planting Spy Device in San Francisco Office</title>
-      <link>https://secubuzz.com/news/openai-engineer-arrested-for-planting-spy-device-i-7d18c3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-engineer-arrested-for-planting-spy-device-i-7d18c3</guid>
-      <description><![CDATA[A Saudi national employed by OpenAI was detained after authorities discovered a concealed recording device in an executive conference room at the company’s San Francisco headquarters. The device was intended to covertly capture sensitive conversations, potentially compromising confidential discussions and corporate secrets.]]></description>
-      <pubDate>Tue, 13 Oct 2026 22:33:02 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/artificial-intelligence/openai-engineer-arrested-for-allegedly-planting-spy-device-in-office/">BleepingComputer</source>
+      <title>Microsoft Releases Patch for Over 1,400 Security Vulnerabilities</title>
+      <link>https://secubuzz.com/news/microsoft-releases-patch-for-over-1-400-security-v-7963d0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-releases-patch-for-over-1-400-security-v-7963d0</guid>
+      <description><![CDATA[Microsoft today issued updates to fix more than 1,400 security vulnerabilities across its Windows operating systems and other software. The patch batch dwarfs September’s record of nearly 1,000 fixes and exceeds the normal monthly patch load from Redmond by about ten times.]]></description>
+      <pubDate>Tue, 13 Oct 2026 23:24:53 GMT</pubDate>
+      <source url="https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws/">Krebs on Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>OpenAI Employee Arrested After Listening Device Discovered in Conference Room</title>
+      <link>https://secubuzz.com/news/openai-employee-arrested-after-listening-device-di-556fe3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openai-employee-arrested-after-listening-device-di-556fe3</guid>
+      <description><![CDATA[A Saudi national, Abdulrahman Alfozan, was arrested and terminated by OpenAI after a listening device was found in an OpenAI conference room. The FBI and the company confirmed the incident, highlighting a breach of physical security and potential eavesdropping concerns.]]></description>
+      <pubDate>Tue, 13 Oct 2026 23:07:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/employee-arrested-after-listening-device-found-in-openai-conference-room-fbi-and-the-company-say/">SecurityWeek</source>
       <category>Breach</category>
     </item>
     <item>
@@ -168,6 +177,15 @@
       <pubDate>Tue, 13 Oct 2026 16:49:50 GMT</pubDate>
       <source url="https://cybersecuritynews.com/crowdstrike-joins-anthropic-defense-program/">Cyber Security News</source>
       <category>Policy</category>
+    </item>
+    <item>
+      <title>Cloudflare D1 Scales to Millions of Databases with Edge‑Optimized Control Plane</title>
+      <link>https://secubuzz.com/news/cloudflare-d1-scales-to-millions-of-databases-with-597b4a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-d1-scales-to-millions-of-databases-with-597b4a</guid>
+      <description><![CDATA[Cloudflare’s D1 database service demonstrates how a control plane can be architected to scale across millions of databases while keeping data‑plane query operations at the network edge. The design emphasizes guiding principles for building on the Developer Platform, focusing on performance, scalability, and efficient resource management.]]></description>
+      <pubDate>Tue, 13 Oct 2026 16:20:18 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/d1-control-plane/">Cloudflare Security</source>
+      <category>Cloud</category>
     </item>
     <item>
       <title>GitHub Expands npm Publishing Expiry to Prevent Package Hijacking</title>
@@ -341,6 +359,15 @@
       <category>Policy</category>
     </item>
     <item>
+      <title>Inductive Automation Ignition Vulnerability CVE‑2026‑92817 Enables Privilege Escalation</title>
+      <link>https://secubuzz.com/news/inductive-automation-ignition-vulnerability-cve-20-430cec</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/inductive-automation-ignition-vulnerability-cve-20-430cec</guid>
+      <description><![CDATA[CISA reports that CVE‑2026‑92817 in Inductive Automation Ignition allows an authenticated low‑level user to elevate privileges to Designer‑level by reusing a Vision session identifier. Affected versions include Ignition ≥8.1.0 and ≥8.3.0. The flaw could enable attackers to execute privileged actions and compromise critical infrastructure sectors.]]></description>
+      <pubDate>Tue, 13 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-286-01">CISA</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Swann Communications SWIFI-SE2KIC Firmware Vulnerability CVE-2026-107605 Allows Unauthenticated Live Video Access</title>
       <link>https://secubuzz.com/news/swann-communications-swifi-se2kic-firmware-vulnera-430cec</link>
       <guid isPermaLink="true">https://secubuzz.com/news/swann-communications-swifi-se2kic-firmware-vulnera-430cec</guid>
@@ -428,33 +455,6 @@
       <description><![CDATA[Scammers use automated replies to the “Who’s this?” text prompt to confirm active phone numbers, increasing their value on the dark web and making them prime fraud targets. The tactic exploits user curiosity and the lack of verification in messaging services.]]></description>
       <pubDate>Tue, 13 Oct 2026 07:30:51 GMT</pubDate>
       <source url="https://www.malwarebytes.com/blog/threat-intel/2026/10/your-whos-this-reply-is-exactly-what-text-scammers-want">Malwarebytes Labs</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Low-Cost Android Phones Ship With Preinstalled Malware Turning Devices Into Residential Proxies</title>
-      <link>https://secubuzz.com/news/low-cost-android-phones-ship-with-preinstalled-mal-26f803</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/low-cost-android-phones-ship-with-preinstalled-mal-26f803</guid>
-      <description><![CDATA[Low‑cost Android smartphones built on MediaTek platforms are shipped with malicious firmware that covertly installs apps, enables ad fraud, and converts devices into residential proxies. Bitdefender tracks the activity under the name Midnight Mimosa.]]></description>
-      <pubDate>Tue, 13 Oct 2026 06:00:11 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/low-cost-android-phones-ship-with.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AI’s Role in Shaping Future Cybersecurity Playbooks</title>
-      <link>https://secubuzz.com/news/ai-s-role-in-shaping-future-cybersecurity-playbook-425e7a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-s-role-in-shaping-future-cybersecurity-playbook-425e7a</guid>
-      <description><![CDATA[The article discusses how artificial intelligence has reached a pivotal point in privacy, cybersecurity, and online safety, urging the application of decades of experience to prevent irreversible consequences. It highlights the responsibility of current generations to guide AI development responsibly.]]></description>
-      <pubDate>Tue, 13 Oct 2026 05:30:01 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/13/cybersecurity-ai-safety-red-lines/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Frontier AI Models Successfully Complete All OT Attack Objectives in Booz Allen Lab</title>
-      <link>https://secubuzz.com/news/frontier-ai-models-successfully-complete-all-ot-at-8a077c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/frontier-ai-models-successfully-complete-all-ot-at-8a077c</guid>
-      <description><![CDATA[Booz Allen tested frontier AI models against an isolated industrial‑control testbed, mapping the network, identifying equipment weaknesses, writing exploits, pivoting into production systems, and ultimately taking administrative control of a robotic arm. The models cleared all eight predefined attack goals.]]></description>
-      <pubDate>Tue, 13 Oct 2026 05:00:51 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/13/frontier-ai-ot-security-threat/">Help Net Security</source>
       <category>Policy</category>
     </item>
   </channel>

@@ -11,21 +11,39 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
-    "slug": "openai-engineer-arrested-for-planting-spy-device-i-7d18c3",
-    "title": "OpenAI Engineer Arrested for Planting Spy Device in San Francisco Office",
-    "summary": "A Saudi national employed by OpenAI was detained after authorities discovered a concealed recording device in an executive conference room at the company’s San Francisco headquarters. The device was intended to covertly capture sensitive conversations, potentially compromising confidential discussions and corporate secrets.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-engineer-arrested-for-allegedly-planting-spy-device-in-office/",
-    "publishedAt": "2026-10-13T22:33:02.000Z",
+    "slug": "microsoft-releases-patch-for-over-1-400-security-v-7963d0",
+    "title": "Microsoft Releases Patch for Over 1,400 Security Vulnerabilities",
+    "summary": "Microsoft today issued updates to fix more than 1,400 security vulnerabilities across its Windows operating systems and other software. The patch batch dwarfs September’s record of nearly 1,000 fixes and exceeds the normal monthly patch load from Redmond by about ten times.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Krebs on Security",
+    "sourceUrl": "https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws/",
+    "publishedAt": "2026-10-13T23:24:53.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "openai-engineer-arrested-for-planting-spy-device-i",
-      "article-7d18c3",
-      "7d18c3",
-      "openai-engineer-arrested-for-planting-spy-device-in-san-fran"
+      "microsoft-releases-patch-for-over-1-400-security-v",
+      "article-7963d0",
+      "7963d0",
+      "microsoft-releases-patch-for-over-1-400-security-vulnerabili"
+    ]
+  },
+  {
+    "slug": "openai-employee-arrested-after-listening-device-di-556fe3",
+    "title": "OpenAI Employee Arrested After Listening Device Discovered in Conference Room",
+    "summary": "A Saudi national, Abdulrahman Alfozan, was arrested and terminated by OpenAI after a listening device was found in an OpenAI conference room. The FBI and the company confirmed the incident, highlighting a breach of physical security and potential eavesdropping concerns.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/employee-arrested-after-listening-device-found-in-openai-conference-room-fbi-and-the-company-say/",
+    "publishedAt": "2026-10-13T23:07:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openai-employee-arrested-after-listening-device-di",
+      "article-556fe3",
+      "556fe3",
+      "openai-employee-arrested-after-listening-device-discovered-i"
     ]
   },
   {
@@ -336,6 +354,24 @@ export const news: NewsBrief[] = [
       "article-72af99",
       "72af99",
       "crowdstrike-joins-anthropic-defense-program-to-advance-ai-po"
+    ]
+  },
+  {
+    "slug": "cloudflare-d1-scales-to-millions-of-databases-with-597b4a",
+    "title": "Cloudflare D1 Scales to Millions of Databases with Edge‑Optimized Control Plane",
+    "summary": "Cloudflare’s D1 database service demonstrates how a control plane can be architected to scale across millions of databases while keeping data‑plane query operations at the network edge. The design emphasizes guiding principles for building on the Developer Platform, focusing on performance, scalability, and efficient resource management.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/d1-control-plane/",
+    "publishedAt": "2026-10-13T16:20:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cloudflare-d1-scales-to-millions-of-databases-with",
+      "article-597b4a",
+      "597b4a",
+      "cloudflare-d1-scales-to-millions-of-databases-with-edge-opti"
     ]
   },
   {
@@ -681,6 +717,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "inductive-automation-ignition-vulnerability-cve-20-430cec",
+    "title": "Inductive Automation Ignition Vulnerability CVE‑2026‑92817 Enables Privilege Escalation",
+    "summary": "CISA reports that CVE‑2026‑92817 in Inductive Automation Ignition allows an authenticated low‑level user to elevate privileges to Designer‑level by reusing a Vision session identifier. Affected versions include Ignition ≥8.1.0 and ≥8.3.0. The flaw could enable attackers to execute privileged actions and compromise critical infrastructure sectors.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-286-01",
+    "publishedAt": "2026-10-13T12:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "inductive-automation-ignition-vulnerability-cve-20",
+      "article-430cec",
+      "430cec",
+      "inductive-automation-ignition-vulnerability-cve-2026-92817-e"
+    ]
+  },
+  {
     "slug": "swann-communications-swifi-se2kic-firmware-vulnera-430cec",
     "title": "Swann Communications SWIFI-SE2KIC Firmware Vulnerability CVE-2026-107605 Allows Unauthenticated Live Video Access",
     "summary": "The Swann Communications SWIFI-SE2KIC firmware (CVE-2026-107605) has a missing authentication flaw that lets local attackers view live video feeds without credentials. Affected firmware versions 2.0.22 and earlier are vulnerable; applying the vendor’s patch or updating firmware resolves the issue.",
@@ -916,6 +970,24 @@ export const news: NewsBrief[] = [
       "article-8a077c",
       "8a077c",
       "frontier-ai-models-successfully-complete-all-ot-attack-objec"
+    ]
+  },
+  {
+    "slug": "october-2026-patch-tuesday-1-413-cves-include-thre-2d6111",
+    "title": "October 2026 Patch Tuesday: 1,413 CVEs Include Three Zero-Days and 75 Critical Vulnerabilities",
+    "summary": "October 2026 Patch Tuesday released 1,413 CVEs, including three zero‑day vulnerabilities and 75 critical flaws. The update covers a wide range of software, urging organizations to apply patches promptly to mitigate potential exploitation. No active exploits reported yet, but the high number of critical issues warrants immediate attention.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "CrowdStrike",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-october-2026/",
+    "publishedAt": "2026-10-13T05:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "october-2026-patch-tuesday-1-413-cves-include-thre",
+      "article-2d6111",
+      "2d6111",
+      "october-2026-patch-tuesday-1-413-cves-include-three-zero-day"
     ]
   },
   {
