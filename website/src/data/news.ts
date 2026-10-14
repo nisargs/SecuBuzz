@@ -11,6 +11,148 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "ledger-urges-asian-resellers-to-halt-wallet-sales-5ea266",
+    "title": "Ledger Urges Asian Resellers to Halt Wallet Sales Amid Supply‑Chain Tampering Investigation",
+    "summary": "Ledger has instructed resellers and distributors across Indonesia, Singapore, Thailand, the Philippines, Vietnam, Malaysia, and Hong Kong to stop selling its hardware wallets and remove them from shelves while it investigates reports of device tampering. The company is reviewing supply‑chain integrity and will issue guidance once the investigation concludes.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ledger-asks-sellers-across-asia-to-halt-sales-after-supply-chain-attack/",
+    "publishedAt": "2026-10-14T17:46:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ledger-urges-asian-resellers-to-halt-wallet-sales",
+      "article-5ea266",
+      "5ea266",
+      "ledger-urges-asian-resellers-to-halt-wallet-sales-amid-suppl"
+    ]
+  },
+  {
+    "slug": "cisco-patches-actively-exploited-zero-day-in-secur-6bdb7a",
+    "title": "Cisco Patches Actively Exploited Zero‑Day in Secure Email Gateway",
+    "summary": "Cisco has released a patch for a newly discovered zero‑day vulnerability in its Secure Email Gateway (SEG) that allows unauthenticated remote attackers to execute arbitrary commands with root privileges. The flaw, actively exploited in the wild, was fixed in the latest update, and users are urged to apply the patch immediately to prevent potential system compromise.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisco-patches-actively-exploited-secure-email-gateway-zero-day/",
+    "publishedAt": "2026-10-14T17:29:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisco-patches-actively-exploited-zero-day-in-secur",
+      "article-6bdb7a",
+      "6bdb7a",
+      "cisco-patches-actively-exploited-zero-day-in-secure-email-ga"
+    ]
+  },
+  {
+    "slug": "spyware-operation-accessed-former-polish-governmen-5c1629",
+    "title": "Spyware Operation Accessed Former Polish Government Data",
+    "summary": "A spyware operation run by the former ruling party accessed data harvested by the Polish government. The Prime Minister called it one of the biggest scandals in Polish history since the fall of communism. The incident highlights a significant breach of sensitive state data.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/spyware-manufacturer-had-access-to-data-harvested-by-previous-polish-government",
+    "publishedAt": "2026-10-14T16:50:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "spyware-operation-accessed-former-polish-governmen",
+      "article-5c1629",
+      "5c1629",
+      "spyware-operation-accessed-former-polish-government-data"
+    ]
+  },
+  {
+    "slug": "curl-8-23-0-releases-24-security-fixes-for-30-bill-1776b2",
+    "title": "Curl 8.23.0 Releases 24 Security Fixes for 30 Billion Installations",
+    "summary": "The curl project released version 8.23.0, patching 24 security vulnerabilities affecting the data transfer tool and libcurl. Fixes address credential leaks, authentication errors, command injection, and application disruption flaws. The update also removes SMB and SMBS protocol support, requiring compatibility checks before deployment.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/curl-security-update-24-vulnerabilities/",
+    "publishedAt": "2026-10-14T16:46:52.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "curl-8-23-0-releases-24-security-fixes-for-30-bill",
+      "article-1776b2",
+      "1776b2",
+      "curl-8-23-0-releases-24-security-fixes-for-30-billion-instal"
+    ]
+  },
+  {
+    "slug": "ai-worms-could-spread-across-smart-devices-7dfb15",
+    "title": "AI Worms Could Spread Across Smart Devices",
+    "summary": "Researchers warn that small AI models could propagate across vulnerable smart devices within months, potentially enabling automated malware spread. The threat relies on device firmware weaknesses and network connectivity, but no specific exploit or CVE is identified. Mitigation involves patching device firmware and restricting network access.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/10/ai-worms-could-spread-across-your-smart-devices-anthropic-warns",
+    "publishedAt": "2026-10-14T16:36:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-worms-could-spread-across-smart-devices",
+      "article-7dfb15",
+      "7dfb15"
+    ]
+  },
+  {
+    "slug": "u-s-shuts-down-laptop-farms-charges-14-in-north-ko-6734c6",
+    "title": "U.S. Shuts Down Laptop Farms, Charges 14 in North Korean IT Worker Fraud",
+    "summary": "The U.S. Department of Justice seized 187 computers and charged 14 individuals, including U.S. citizens and Chinese nationals, for a North Korean IT worker scheme that defrauded over 70 U.S. companies. The operation disrupts a state-sponsored fraud network and highlights ongoing efforts to counter cybercrime.",
+    "category": "Malware",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/us-shuts-down-over-40-laptop-farms.html",
+    "publishedAt": "2026-10-14T16:34:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "u-s-shuts-down-laptop-farms-charges-14-in-north-ko",
+      "article-6734c6",
+      "6734c6",
+      "u-s-shuts-down-laptop-farms-charges-14-in-north-korean-it-wo"
+    ]
+  },
+  {
+    "slug": "ai-agents-navigate-ot-systems-in-16-minutes-aeeeda",
+    "title": "AI Agents Navigate OT Systems in 16 Minutes",
+    "summary": "Booz Allen’s isolated OT lab demonstrated that AI models can complete eight operational scenarios, reaching an industrial control network from a perimeter compromise in just over 16 minutes. The test shows rapid autonomous navigation and equipment control in unfamiliar OT environments.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/ai-agents-navigate-unfamiliar-ot-systems-and-move-equipment-in-minutes-booz-allen-finds/",
+    "publishedAt": "2026-10-14T16:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-agents-navigate-ot-systems-in-16-minutes",
+      "article-aeeeda",
+      "aeeeda"
+    ]
+  },
+  {
+    "slug": "windows-11-rdp-update-causes-connection-failures-f-6b6e62",
+    "title": "Windows 11 RDP Update Causes Connection Failures for Non-Admin Users",
+    "summary": "Microsoft’s recent Windows 11 updates, including KB5124010, introduced a Remote Desktop Services bug that blocks non‑admin users from connecting to hosts with Administrator protection enabled. The issue returns error 0xC000000D and affects company‑managed RDP servers. No patch yet announced.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/microsoft-recent-update-remote-desktop/",
+    "publishedAt": "2026-10-14T15:51:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "windows-11-rdp-update-causes-connection-failures-f",
+      "article-6b6e62",
+      "6b6e62",
+      "windows-11-rdp-update-causes-connection-failures-for-non-adm"
+    ]
+  },
+  {
     "slug": "siemens-issues-17-advisories-rockwell-fixes-armorb-534653",
     "title": "Siemens Issues 17 Advisories, Rockwell Fixes ArmorBlock Takeover Flaw",
     "summary": "On Patch Tuesday, Siemens released 17 advisories covering various industrial control system vulnerabilities. Rockwell Automation addressed a takeover flaw in its ArmorBlock product, allowing attackers to gain unauthorized control. The fixes mitigate potential remote code execution risks and strengthen system integrity.",
@@ -26,24 +168,6 @@ export const news: NewsBrief[] = [
       "article-534653",
       "534653",
       "siemens-issues-17-advisories-rockwell-fixes-armorblock-takeo"
-    ]
-  },
-  {
-    "slug": "microsoft-resolves-vpn-connection-issues-from-sept-5f977d",
-    "title": "Microsoft Resolves VPN Connection Issues from September 2026 Windows Updates",
-    "summary": "Microsoft has fixed a known problem that caused Always On VPN connections to fail after installing the September 2026 Windows 11 security updates. The patch restores stable VPN functionality for affected users without any reported exploitation or data breach.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-vpn-issues-caused-by-september-windows-updates/",
-    "publishedAt": "2026-10-14T14:27:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-resolves-vpn-connection-issues-from-sept",
-      "article-5f977d",
-      "5f977d",
-      "microsoft-resolves-vpn-connection-issues-from-september-2026"
     ]
   },
   {
@@ -256,24 +380,6 @@ export const news: NewsBrief[] = [
       "russian-travel-site-offline-after-cyberattack",
       "article-948fdf",
       "948fdf"
-    ]
-  },
-  {
-    "slug": "fbi-raids-laptop-farms-supporting-north-korean-it-34b6c9",
-    "title": "FBI Raids Laptop Farms Supporting North Korean IT Workers",
-    "summary": "FBI raided over 40 laptop farms that helped North Korean IT workers use stolen and fabricated identities to secure remote jobs at more than 70 U.S. companies. The operation involved arrests in Ohio and Texas under charges of wire fraud, money laundering, and identity theft. The raid exposed a coordinated effort to siphon U.S. tech salaries.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/14/north-korean-it-workers-laptop-farms-arrests/",
-    "publishedAt": "2026-10-14T13:00:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fbi-raids-laptop-farms-supporting-north-korean-it",
-      "article-34b6c9",
-      "34b6c9",
-      "fbi-raids-laptop-farms-supporting-north-korean-it-workers"
     ]
   },
   {
@@ -492,24 +598,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "windows-updates-can-disable-remote-desktop-for-non-b69903",
-    "title": "Windows Updates Can Disable Remote Desktop for Non-Admin Users",
-    "summary": "Recent Windows updates, when the Administrator protection feature is enabled, can prevent non‑administrator users from connecting via Remote Desktop. The issue affects RDP sessions and requires users to adjust settings or wait for a patch. No CVE is cited.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-recent-windows-updates-may-trigger-remote-desktop-failures/",
-    "publishedAt": "2026-10-14T10:48:09.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "windows-updates-can-disable-remote-desktop-for-non",
-      "article-b69903",
-      "b69903",
-      "windows-updates-can-disable-remote-desktop-for-non-admin-use"
-    ]
-  },
-  {
     "slug": "virustotal-adds-chatgpt-based-threat-intelligence-2f703a",
     "title": "VirusTotal Adds ChatGPT‑Based Threat Intelligence to Malware Analysis",
     "summary": "VirusTotal now integrates its threat‑intelligence database with ChatGPT through VirusTotal AI, allowing analysts to query files, URLs, domains, and IPs within a conversation. The integration uses the Model Context Protocol and displays source, date, and coverage of reports.",
@@ -615,24 +703,6 @@ export const news: NewsBrief[] = [
       "article-78f8ab",
       "78f8ab",
       "github-deploys-cheaper-ai-model-to-detect-secrets-in-code"
-    ]
-  },
-  {
-    "slug": "iphone-exploit-kits-coruna-and-darksword-enable-fu-559158",
-    "title": "iPhone Exploit Kits Coruna and DarkSword Enable Full Compromise from Single Web Visit",
-    "summary": "The Coruna and DarkSword exploit kits chain multiple iOS software flaws, allowing a malicious or compromised website to fully compromise outdated iPhone devices with a single visit. The kits bypass the browser sandbox, reach deeper iOS components, and can exploit devices depending on software version and kit used.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/coruna-and-darksword/",
-    "publishedAt": "2026-10-14T09:26:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "iphone-exploit-kits-coruna-and-darksword-enable-fu",
-      "article-559158",
-      "559158",
-      "iphone-exploit-kits-coruna-and-darksword-enable-full-comprom"
     ]
   },
   {
@@ -905,24 +975,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "anthropic-warns-small-ai-models-could-self-replica-11c42b",
-    "title": "Anthropic warns small AI models could self‑replicate across consumer IoT devices",
-    "summary": "Anthropic cautions that lightweight AI models may soon be able to self‑replicate across consumer IoT devices such as Android TV boxes and smart ovens, forming distributed botnets that can run AI workloads without data centers. The potential spread could enable large‑scale botnet operations on home devices.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/anthropic-warns-self-replicating-ai-could-spread-to-your-smart-devices/",
-    "publishedAt": "2026-10-13T21:16:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "anthropic-warns-small-ai-models-could-self-replica",
-      "article-11c42b",
-      "11c42b",
-      "anthropic-warns-small-ai-models-could-self-replicate-across-"
-    ]
-  },
-  {
     "slug": "anthropic-research-highlights-ai-worm-threats-28487d",
     "title": "Anthropic Research Highlights AI Worm Threats",
     "summary": "Anthropic’s study combined IoT and network tests to examine AI self‑replication, suggesting future AI worms could be difficult to stop. The research outlines potential attack vectors and emphasizes the need for proactive defenses against emerging AI‑driven malware.",
@@ -1027,6 +1079,24 @@ export const news: NewsBrief[] = [
       "article-1e9138",
       "1e9138",
       "adobe-releases-patches-for-140-vulnerabilities-across-10-pro"
+    ]
+  },
+  {
+    "slug": "bring-your-own-vulnerable-driver-the-trust-gap-att-14bf4d",
+    "title": "Bring Your Own Vulnerable Driver: The Trust Gap Attackers Operate Inside",
+    "summary": "BYOVD attacks use unsigned or improperly signed disposable drivers to bypass endpoint protection. The technique exploits trust in driver signing, allowing attackers to load malicious code with kernel privileges. Enforcing certificate revocation and strict driver signing policies is essential to block these attacks and protect modern endpoints.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "SentinelOne",
+    "sourceUrl": "https://www.sentinelone.com/blog/bring-your-own-vulnerable-driver-the-trust-gap-attackers-operate-inside/",
+    "publishedAt": "2026-10-13T16:40:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "bring-your-own-vulnerable-driver-the-trust-gap-att",
+      "article-14bf4d",
+      "14bf4d",
+      "bring-your-own-vulnerable-driver-the-trust-gap-attackers-ope"
     ]
   },
   {
@@ -1873,24 +1943,6 @@ export const news: NewsBrief[] = [
       "article-455e7c",
       "455e7c",
       "windows-pcs-may-lose-security-updates-if-key-certificates-ex"
-    ]
-  },
-  {
-    "slug": "ai-geopolitics-and-fraud-drive-ceos-to-prioritize-4e149a",
-    "title": "AI, Geopolitics, and Fraud Drive CEOs to Prioritize Cyber‑Enabled Fraud Over Ransomware",
-    "summary": "Help Net Security interview with Akshay Joshi, Head of the Centre for Cybersecurity at the World Economic Forum, discusses how AI, geopolitics, and industrialized fraud are reshaping cyber risk. The Global Cybersecurity Outlook 2026 shows CEOs prioritizing cyber‑enabled fraud over ransomware, widening the resilience gap between large and small organizations, and highlighting skills shortages.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/12/akshay-joshi-wef-cyber-resilience-gap/",
-    "publishedAt": "2026-10-12T06:00:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-geopolitics-and-fraud-drive-ceos-to-prioritize",
-      "article-4e149a",
-      "4e149a",
-      "ai-geopolitics-and-fraud-drive-ceos-to-prioritize-cyber-enab"
     ]
   },
   {
@@ -6223,61 +6275,6 @@ export const news: NewsBrief[] = [
       "article-1fba45",
       "1fba45",
       "us-focused-phishing-campaign-steals-microsoft-365-sessions-a"
-    ]
-  },
-  {
-    "slug": "openinfra-europe-s-jfrog-artifactory-compromised-v-4cd905",
-    "title": "OpenInfra Europe’s JFrog Artifactory Compromised via CVE-2026-82329",
-    "summary": "Attackers breached a self-hosted JFrog Artifactory instance operated by OpenInfra Europe, exploiting CVE-2026-82329. Users who downloaded or installed artifacts from https://artifactory.nordix.org/ between August 28 and September 15, 2026 should immediately stop using them, remove them from pipelines, and treat the packages as potentially compromised.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/openinfra-jfrog-artifactory-instance-compromised/",
-    "publishedAt": "2026-09-30T10:39:26.000Z",
-    "cves": [
-      "CVE-2026-82329"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "openinfra-europe-s-jfrog-artifactory-compromised-v",
-      "article-4cd905",
-      "4cd905",
-      "openinfra-europe-s-jfrog-artifactory-compromised-via-cve-202"
-    ]
-  },
-  {
-    "slug": "openssl-fixes-high-severity-dtls-heap-memory-leak-15abd8",
-    "title": "OpenSSL Fixes High‑Severity DTLS Heap Memory Leak",
-    "summary": "OpenSSL released a patch for a high‑severity flaw that could leak heap memory or crash applications during DTLS handshakes. The vulnerability occurs when a resend is triggered while a large handshake message is partially processed, potentially exposing sensitive data over UDP traffic.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/09/openssl-fixes-high-severity-dtls-flaw.html",
-    "publishedAt": "2026-09-30T08:09:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openssl-fixes-high-severity-dtls-heap-memory-leak",
-      "article-15abd8",
-      "15abd8"
-    ]
-  },
-  {
-    "slug": "former-us-air-force-members-sentenced-for-million-16c94c",
-    "title": "Former US Air Force Members Sentenced for Million-Dollar Business Email Compromise Scheme",
-    "summary": "Two former Air Force personnel, Chijioke Timothy Odimegwu and Harafat Mogaji, were sentenced to 189 months for running a BEC and phishing operation that targeted U.S. businesses. They sent spam emails to steal employee usernames and passwords, compromising corporate email accounts.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/air-force-members-sentenced-bec-phishing/",
-    "publishedAt": "2026-09-30T07:42:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "former-us-air-force-members-sentenced-for-million",
-      "article-16c94c",
-      "16c94c",
-      "former-us-air-force-members-sentenced-for-million-dollar-bus"
     ]
   }
 ];

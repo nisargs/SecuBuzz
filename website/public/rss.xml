@@ -5,8 +5,80 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Oct 2026 16:20:03 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 18:40:42 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Ledger Urges Asian Resellers to Halt Wallet Sales Amid Supply‑Chain Tampering Investigation</title>
+      <link>https://secubuzz.com/news/ledger-urges-asian-resellers-to-halt-wallet-sales-5ea266</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ledger-urges-asian-resellers-to-halt-wallet-sales-5ea266</guid>
+      <description><![CDATA[Ledger has instructed resellers and distributors across Indonesia, Singapore, Thailand, the Philippines, Vietnam, Malaysia, and Hong Kong to stop selling its hardware wallets and remove them from shelves while it investigates reports of device tampering. The company is reviewing supply‑chain integrity and will issue guidance once the investigation concludes.]]></description>
+      <pubDate>Wed, 14 Oct 2026 17:46:50 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/ledger-asks-sellers-across-asia-to-halt-sales-after-supply-chain-attack/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Cisco Patches Actively Exploited Zero‑Day in Secure Email Gateway</title>
+      <link>https://secubuzz.com/news/cisco-patches-actively-exploited-zero-day-in-secur-6bdb7a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisco-patches-actively-exploited-zero-day-in-secur-6bdb7a</guid>
+      <description><![CDATA[Cisco has released a patch for a newly discovered zero‑day vulnerability in its Secure Email Gateway (SEG) that allows unauthenticated remote attackers to execute arbitrary commands with root privileges. The flaw, actively exploited in the wild, was fixed in the latest update, and users are urged to apply the patch immediately to prevent potential system compromise.]]></description>
+      <pubDate>Wed, 14 Oct 2026 17:29:14 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/cisco-patches-actively-exploited-secure-email-gateway-zero-day/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Spyware Operation Accessed Former Polish Government Data</title>
+      <link>https://secubuzz.com/news/spyware-operation-accessed-former-polish-governmen-5c1629</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/spyware-operation-accessed-former-polish-governmen-5c1629</guid>
+      <description><![CDATA[A spyware operation run by the former ruling party accessed data harvested by the Polish government. The Prime Minister called it one of the biggest scandals in Polish history since the fall of communism. The incident highlights a significant breach of sensitive state data.]]></description>
+      <pubDate>Wed, 14 Oct 2026 16:50:00 GMT</pubDate>
+      <source url="https://therecord.media/spyware-manufacturer-had-access-to-data-harvested-by-previous-polish-government">The Record</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Curl 8.23.0 Releases 24 Security Fixes for 30 Billion Installations</title>
+      <link>https://secubuzz.com/news/curl-8-23-0-releases-24-security-fixes-for-30-bill-1776b2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/curl-8-23-0-releases-24-security-fixes-for-30-bill-1776b2</guid>
+      <description><![CDATA[The curl project released version 8.23.0, patching 24 security vulnerabilities affecting the data transfer tool and libcurl. Fixes address credential leaks, authentication errors, command injection, and application disruption flaws. The update also removes SMB and SMBS protocol support, requiring compatibility checks before deployment.]]></description>
+      <pubDate>Wed, 14 Oct 2026 16:46:52 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/curl-security-update-24-vulnerabilities/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>AI Worms Could Spread Across Smart Devices</title>
+      <link>https://secubuzz.com/news/ai-worms-could-spread-across-smart-devices-7dfb15</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-worms-could-spread-across-smart-devices-7dfb15</guid>
+      <description><![CDATA[Researchers warn that small AI models could propagate across vulnerable smart devices within months, potentially enabling automated malware spread. The threat relies on device firmware weaknesses and network connectivity, but no specific exploit or CVE is identified. Mitigation involves patching device firmware and restricting network access.]]></description>
+      <pubDate>Wed, 14 Oct 2026 16:36:46 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/ai/2026/10/ai-worms-could-spread-across-your-smart-devices-anthropic-warns">Malwarebytes Labs</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>U.S. Shuts Down Laptop Farms, Charges 14 in North Korean IT Worker Fraud</title>
+      <link>https://secubuzz.com/news/u-s-shuts-down-laptop-farms-charges-14-in-north-ko-6734c6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/u-s-shuts-down-laptop-farms-charges-14-in-north-ko-6734c6</guid>
+      <description><![CDATA[The U.S. Department of Justice seized 187 computers and charged 14 individuals, including U.S. citizens and Chinese nationals, for a North Korean IT worker scheme that defrauded over 70 U.S. companies. The operation disrupts a state-sponsored fraud network and highlights ongoing efforts to counter cybercrime.]]></description>
+      <pubDate>Wed, 14 Oct 2026 16:34:31 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/us-shuts-down-over-40-laptop-farms.html">The Hacker News</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>AI Agents Navigate OT Systems in 16 Minutes</title>
+      <link>https://secubuzz.com/news/ai-agents-navigate-ot-systems-in-16-minutes-aeeeda</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-agents-navigate-ot-systems-in-16-minutes-aeeeda</guid>
+      <description><![CDATA[Booz Allen’s isolated OT lab demonstrated that AI models can complete eight operational scenarios, reaching an industrial control network from a perimeter compromise in just over 16 minutes. The test shows rapid autonomous navigation and equipment control in unfamiliar OT environments.]]></description>
+      <pubDate>Wed, 14 Oct 2026 16:00:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/ai-agents-navigate-unfamiliar-ot-systems-and-move-equipment-in-minutes-booz-allen-finds/">SecurityWeek</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Windows 11 RDP Update Causes Connection Failures for Non-Admin Users</title>
+      <link>https://secubuzz.com/news/windows-11-rdp-update-causes-connection-failures-f-6b6e62</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/windows-11-rdp-update-causes-connection-failures-f-6b6e62</guid>
+      <description><![CDATA[Microsoft’s recent Windows 11 updates, including KB5124010, introduced a Remote Desktop Services bug that blocks non‑admin users from connecting to hosts with Administrator protection enabled. The issue returns error 0xC000000D and affects company‑managed RDP servers. No patch yet announced.]]></description>
+      <pubDate>Wed, 14 Oct 2026 15:51:38 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/microsoft-recent-update-remote-desktop/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Siemens Issues 17 Advisories, Rockwell Fixes ArmorBlock Takeover Flaw</title>
       <link>https://secubuzz.com/news/siemens-issues-17-advisories-rockwell-fixes-armorb-534653</link>
@@ -14,15 +86,6 @@
       <description><![CDATA[On Patch Tuesday, Siemens released 17 advisories covering various industrial control system vulnerabilities. Rockwell Automation addressed a takeover flaw in its ArmorBlock product, allowing attackers to gain unauthorized control. The fixes mitigate potential remote code execution risks and strengthen system integrity.]]></description>
       <pubDate>Wed, 14 Oct 2026 15:15:15 GMT</pubDate>
       <source url="https://www.securityweek.com/ics-patch-tuesday-siemens-issues-17-advisories-rockwell-fixes-armorblock-takeover-flaw/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Microsoft Resolves VPN Connection Issues from September 2026 Windows Updates</title>
-      <link>https://secubuzz.com/news/microsoft-resolves-vpn-connection-issues-from-sept-5f977d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-resolves-vpn-connection-issues-from-sept-5f977d</guid>
-      <description><![CDATA[Microsoft has fixed a known problem that caused Always On VPN connections to fail after installing the September 2026 Windows 11 security updates. The patch restores stable VPN functionality for affected users without any reported exploitation or data breach.]]></description>
-      <pubDate>Wed, 14 Oct 2026 14:27:01 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-vpn-issues-caused-by-september-windows-updates/">BleepingComputer</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -134,15 +197,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>FBI Raids Laptop Farms Supporting North Korean IT Workers</title>
-      <link>https://secubuzz.com/news/fbi-raids-laptop-farms-supporting-north-korean-it-34b6c9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fbi-raids-laptop-farms-supporting-north-korean-it-34b6c9</guid>
-      <description><![CDATA[FBI raided over 40 laptop farms that helped North Korean IT workers use stolen and fabricated identities to secure remote jobs at more than 70 U.S. companies. The operation involved arrests in Ohio and Texas under charges of wire fraud, money laundering, and identity theft. The raid exposed a coordinated effort to siphon U.S. tech salaries.]]></description>
-      <pubDate>Wed, 14 Oct 2026 13:00:49 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/14/north-korean-it-workers-laptop-farms-arrests/">Help Net Security</source>
-      <category>Breach</category>
-    </item>
-    <item>
       <title>Guide Highlights Pitfalls of AI Adoption in Security and IT</title>
       <link>https://secubuzz.com/news/guide-highlights-pitfalls-of-ai-adoption-in-securi-16fb96</link>
       <guid isPermaLink="true">https://secubuzz.com/news/guide-highlights-pitfalls-of-ai-adoption-in-securi-16fb96</guid>
@@ -251,15 +305,6 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>Windows Updates Can Disable Remote Desktop for Non-Admin Users</title>
-      <link>https://secubuzz.com/news/windows-updates-can-disable-remote-desktop-for-non-b69903</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/windows-updates-can-disable-remote-desktop-for-non-b69903</guid>
-      <description><![CDATA[Recent Windows updates, when the Administrator protection feature is enabled, can prevent non‑administrator users from connecting via Remote Desktop. The issue affects RDP sessions and requires users to adjust settings or wait for a patch. No CVE is cited.]]></description>
-      <pubDate>Wed, 14 Oct 2026 10:48:09 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/microsoft-recent-windows-updates-may-trigger-remote-desktop-failures/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>VirusTotal Adds ChatGPT‑Based Threat Intelligence to Malware Analysis</title>
       <link>https://secubuzz.com/news/virustotal-adds-chatgpt-based-threat-intelligence-2f703a</link>
       <guid isPermaLink="true">https://secubuzz.com/news/virustotal-adds-chatgpt-based-threat-intelligence-2f703a</guid>
@@ -312,15 +357,6 @@
       <pubDate>Wed, 14 Oct 2026 09:26:41 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/14/github-secret-detection-model/">Help Net Security</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>iPhone Exploit Kits Coruna and DarkSword Enable Full Compromise from Single Web Visit</title>
-      <link>https://secubuzz.com/news/iphone-exploit-kits-coruna-and-darksword-enable-fu-559158</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/iphone-exploit-kits-coruna-and-darksword-enable-fu-559158</guid>
-      <description><![CDATA[The Coruna and DarkSword exploit kits chain multiple iOS software flaws, allowing a malicious or compromised website to fully compromise outdated iPhone devices with a single visit. The kits bypass the browser sandbox, reach deeper iOS components, and can exploit devices depending on software version and kit used.]]></description>
-      <pubDate>Wed, 14 Oct 2026 09:26:22 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/coruna-and-darksword/">Cyber Security News</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>Meta GitHub Repositories Breached, 1,500 Employees’ Data Stolen</title>
@@ -420,42 +456,6 @@
       <pubDate>Wed, 14 Oct 2026 05:00:01 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/14/meshery-open-source-cloud-native-manager-kubernetes/">Help Net Security</source>
       <category>Cloud</category>
-    </item>
-    <item>
-      <title>Ransomware Gangs Threaten Families with Physical Violence</title>
-      <link>https://secubuzz.com/news/ransomware-gangs-threaten-families-with-physical-v-52585a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ransomware-gangs-threaten-families-with-physical-v-52585a</guid>
-      <description><![CDATA[Ransomware groups are reportedly threatening employees’ families with stalking, physical violence, and abduction. Organizations report these claims, but verification remains difficult. The threat extends beyond digital extortion, potentially escalating to real‑world harm for staff and their loved ones.]]></description>
-      <pubDate>Wed, 14 Oct 2026 05:00:00 GMT</pubDate>
-      <source url="https://www.darkreading.com/cybersecurity-analytics/ransomware-gangs-physical-threats-family-stalking">Dark Reading</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>CISOs Treat AI Agents as Insider Threats</title>
-      <link>https://secubuzz.com/news/cisos-treat-ai-agents-as-insider-threats-2a1eac</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisos-treat-ai-agents-as-insider-threats-2a1eac</guid>
-      <description><![CDATA[A Trellix survey of 600 CISOs found that 95% of companies linked an AI agent or autonomous system to an insider incident in the past year. The agents log in, access sensitive systems, and act with the user’s permissions. Most respondents already count AI agents as insiders, raising liability concerns.]]></description>
-      <pubDate>Wed, 14 Oct 2026 04:30:05 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/14/ciso-ai-agent-insider-risk/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Microsoft Releases Patch for Over 1,400 Security Vulnerabilities</title>
-      <link>https://secubuzz.com/news/microsoft-releases-patch-for-over-1-400-security-v-7963d0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-releases-patch-for-over-1-400-security-v-7963d0</guid>
-      <description><![CDATA[Microsoft today issued updates to fix more than 1,400 security vulnerabilities across its Windows operating systems and other software. The patch batch dwarfs September’s record of nearly 1,000 fixes and exceeds the normal monthly patch load from Redmond by about ten times.]]></description>
-      <pubDate>Tue, 13 Oct 2026 23:24:53 GMT</pubDate>
-      <source url="https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws/">Krebs on Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>North Korea Launches Phishing Campaign Targeting Ukrainian Personnel for War Intelligence</title>
-      <link>https://secubuzz.com/news/north-korea-launches-phishing-campaign-targeting-u-5dcee9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/north-korea-launches-phishing-campaign-targeting-u-5dcee9</guid>
-      <description><![CDATA[The Democratic People’s Republic of Korea has deployed reply‑baiting phishing attacks aimed at Ukrainian individuals to harvest war‑related information. The campaign uses simple bait emails that prompt recipients to reply, allowing attackers to collect credentials and sensitive data that could aid DPRK’s military operations.]]></description>
-      <pubDate>Tue, 13 Oct 2026 21:24:45 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyberattacks-data-breaches/north-korea-phishes-ukrainians-war-intel">Dark Reading</source>
-      <category>Malware</category>
     </item>
   </channel>
 </rss>
