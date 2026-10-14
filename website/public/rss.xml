@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Oct 2026 01:55:39 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 04:18:52 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Google Raises Chrome Bug Bounty Rewards to $20,000 for Sandbox Escapes</title>
+      <link>https://secubuzz.com/news/google-raises-chrome-bug-bounty-rewards-to-20-000-3dd543</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-raises-chrome-bug-bounty-rewards-to-20-000-3dd543</guid>
+      <description><![CDATA[Google has increased its Chrome Vulnerability Rewards Program base pay, quadrupling rewards for memory corruption bugs and offering up to $20,000 for sandbox escape vulnerabilities. The move aims to incentivize researchers to uncover severe, hard‑to‑detect flaws and improve internal testing.]]></description>
+      <pubDate>Wed, 14 Oct 2026 04:00:43 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/14/google-chrome-vulnerability-rewards-program-updates/">Help Net Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Microsoft Windows Shell Zero‑Day CVE‑2026‑96951 Actively Exploited</title>
+      <link>https://secubuzz.com/news/microsoft-windows-shell-zero-day-cve-2026-96951-ac-79f9e4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-windows-shell-zero-day-cve-2026-96951-ac-79f9e4</guid>
+      <description><![CDATA[Microsoft patched the actively exploited Windows Shell zero‑day CVE‑2026‑96951, which allowed bypassing Mark of the Web protections. The flaw, rated CVSS 8.8 and Important by Microsoft, was addressed in the October 2026 Patch Tuesday updates.]]></description>
+      <pubDate>Wed, 14 Oct 2026 03:28:11 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/windows-shell-0-day-exploited/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>OpenAI Engineer Arrested for Planting Spyware Device in Executive Conference Room</title>
+      <link>https://secubuzz.com/news/openai-engineer-arrested-for-planting-spyware-devi-65c1f4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openai-engineer-arrested-for-planting-spyware-devi-65c1f4</guid>
+      <description><![CDATA[An OpenAI engineer was arrested after hiding an audio recording device in an executive conference room at the company’s San Francisco offices. The device was intended to capture conversations. The suspect, a 35‑year‑old Saudi national, was detained on October 9, 2026, and appeared in federal court on October 13.]]></description>
+      <pubDate>Wed, 14 Oct 2026 02:25:18 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/openai-engineer-arrested-for-planting-spyware/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Microsoft Releases Patch for Over 1,400 Security Vulnerabilities</title>
       <link>https://secubuzz.com/news/microsoft-releases-patch-for-over-1-400-security-v-7963d0</link>
@@ -15,15 +42,6 @@
       <pubDate>Tue, 13 Oct 2026 23:24:53 GMT</pubDate>
       <source url="https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws/">Krebs on Security</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>OpenAI Employee Arrested After Listening Device Discovered in Conference Room</title>
-      <link>https://secubuzz.com/news/openai-employee-arrested-after-listening-device-di-556fe3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-employee-arrested-after-listening-device-di-556fe3</guid>
-      <description><![CDATA[A Saudi national, Abdulrahman Alfozan, was arrested and terminated by OpenAI after a listening device was found in an OpenAI conference room. The FBI and the company confirmed the incident, highlighting a breach of physical security and potential eavesdropping concerns.]]></description>
-      <pubDate>Tue, 13 Oct 2026 23:07:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/employee-arrested-after-listening-device-found-in-openai-conference-room-fbi-and-the-company-say/">SecurityWeek</source>
-      <category>Breach</category>
     </item>
     <item>
       <title>Microsoft Patch Tuesday Reveals Multiple Zero-Day Vulnerabilities</title>
@@ -89,15 +107,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Microsoft Issues Windows 10 KB5126657 Extended Security Update</title>
-      <link>https://secubuzz.com/news/microsoft-issues-windows-10-kb5126657-extended-sec-578b79</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-issues-windows-10-kb5126657-extended-sec-578b79</guid>
-      <description><![CDATA[Microsoft released the KB5126657 extended security update for Windows 10, part of this month’s record‑breaking Patch Tuesday. The update includes security fixes and minor bug corrections, ensuring continued protection for Windows 10 users.]]></description>
-      <pubDate>Tue, 13 Oct 2026 19:47:30 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5126657-extended-security-update/">BleepingComputer</source>
-      <category>Policy</category>
-    </item>
-    <item>
       <title>Ivanti Zero-Day Exploit Enables Root Access on Patched VPN</title>
       <link>https://secubuzz.com/news/ivanti-zero-day-exploit-enables-root-access-on-pat-1d4cf1</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ivanti-zero-day-exploit-enables-root-access-on-pat-1d4cf1</guid>
@@ -159,15 +168,6 @@
       <pubDate>Tue, 13 Oct 2026 17:14:42 GMT</pubDate>
       <source url="https://www.securityweek.com/adobe-patches-140-vulnerabilities-across-10-products/">SecurityWeek</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Google Partially Reverses Chrome Bug Bounty Cuts</title>
-      <link>https://secubuzz.com/news/google-partially-reverses-chrome-bug-bounty-cuts-4a9997</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-partially-reverses-chrome-bug-bounty-cuts-4a9997</guid>
-      <description><![CDATA[Google announced a partial reversal of its recent Chrome bug bounty reductions, refocusing rewards on complex memory‑safety vulnerabilities. The change aims to encourage researchers to target harder‑to‑detect flaws while maintaining a balanced incentive structure for the Chrome security community and to sustain long‑term security improvements across the browser ecosystem.]]></description>
-      <pubDate>Tue, 13 Oct 2026 17:00:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/google-partially-reverses-chrome-bug-bounty-cuts/">SecurityWeek</source>
-      <category>Cloud</category>
     </item>
     <item>
       <title>CrowdStrike Joins Anthropic Defense Program to Advance AI-powered Defense for Critical Infrastructure</title>
@@ -359,15 +359,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Inductive Automation Ignition Vulnerability CVE‑2026‑92817 Enables Privilege Escalation</title>
-      <link>https://secubuzz.com/news/inductive-automation-ignition-vulnerability-cve-20-430cec</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/inductive-automation-ignition-vulnerability-cve-20-430cec</guid>
-      <description><![CDATA[CISA reports that CVE‑2026‑92817 in Inductive Automation Ignition allows an authenticated low‑level user to elevate privileges to Designer‑level by reusing a Vision session identifier. Affected versions include Ignition ≥8.1.0 and ≥8.3.0. The flaw could enable attackers to execute privileged actions and compromise critical infrastructure sectors.]]></description>
-      <pubDate>Tue, 13 Oct 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-286-01">CISA</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>Swann Communications SWIFI-SE2KIC Firmware Vulnerability CVE-2026-107605 Allows Unauthenticated Live Video Access</title>
       <link>https://secubuzz.com/news/swann-communications-swifi-se2kic-firmware-vulnera-430cec</link>
       <guid isPermaLink="true">https://secubuzz.com/news/swann-communications-swifi-se2kic-firmware-vulnera-430cec</guid>
@@ -456,6 +447,15 @@
       <pubDate>Tue, 13 Oct 2026 07:30:51 GMT</pubDate>
       <source url="https://www.malwarebytes.com/blog/threat-intel/2026/10/your-whos-this-reply-is-exactly-what-text-scammers-want">Malwarebytes Labs</source>
       <category>Policy</category>
+    </item>
+    <item>
+      <title>Low-Cost Android Phones Ship With Preinstalled Malware Turning Devices Into Residential Proxies</title>
+      <link>https://secubuzz.com/news/low-cost-android-phones-ship-with-preinstalled-mal-26f803</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/low-cost-android-phones-ship-with-preinstalled-mal-26f803</guid>
+      <description><![CDATA[Low‑cost Android smartphones built on MediaTek platforms are shipped with malicious firmware that covertly installs apps, enables ad fraud, and converts devices into residential proxies. Bitdefender tracks the activity under the name Midnight Mimosa.]]></description>
+      <pubDate>Tue, 13 Oct 2026 06:00:11 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/low-cost-android-phones-ship-with.html">The Hacker News</source>
+      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,67 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/10/14/google-chrome-vulnerability-rewards-program-updates/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/14/google-chrome-vulnerability-rewards-program-updates/",
+    "title": "Google Raises Chrome Bug Bounty Rewards to $20,000 for Sandbox Escapes",
+    "headline": "Google Raises Chrome Bug Bounty Rewards to $20,000 for Sandbox Escapes",
+    "summary": "Google has increased its Chrome Vulnerability Rewards Program base pay, quadrupling rewards for memory corruption bugs and offering up to $20,000 for sandbox escape vulnerabilities. The move aims to incentivize researchers to uncover severe, hard‑to‑detect flaws and improve internal testing.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-14T04:00:43.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/14/google-chrome-vulnerability-rewards-program-updates/",
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/google-partially-reverses-chrome-bug-bounty-cuts/"
+      }
+    ]
+  },
+  {
+    "id": "https://cybersecuritynews.com/windows-shell-0-day-exploited/",
+    "sourceUrl": "https://cybersecuritynews.com/windows-shell-0-day-exploited/",
+    "title": "Microsoft Windows Shell Zero‑Day CVE‑2026‑96951 Actively Exploited",
+    "headline": "Microsoft Windows Shell Zero‑Day CVE‑2026‑96951 Actively Exploited",
+    "summary": "Microsoft patched the actively exploited Windows Shell zero‑day CVE‑2026‑96951, which allowed bypassing Mark of the Web protections. The flaw, rated CVSS 8.8 and Important by Microsoft, was addressed in the October 2026 Patch Tuesday updates.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-14T03:28:11.000Z",
+    "url": "https://cybersecuritynews.com/windows-shell-0-day-exploited/",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5126657-extended-security-update/"
+      },
+      {
+        "source": "CISA",
+        "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-286-01"
+      }
+    ]
+  },
+  {
+    "id": "https://cybersecuritynews.com/openai-engineer-arrested-for-planting-spyware/",
+    "sourceUrl": "https://cybersecuritynews.com/openai-engineer-arrested-for-planting-spyware/",
+    "title": "OpenAI Engineer Arrested for Planting Spyware Device in Executive Conference Room",
+    "headline": "OpenAI Engineer Arrested for Planting Spyware Device in Executive Conference Room",
+    "summary": "An OpenAI engineer was arrested after hiding an audio recording device in an executive conference room at the company’s San Francisco offices. The device was intended to capture conversations. The suspect, a 35‑year‑old Saudi national, was detained on October 9, 2026, and appeared in federal court on October 13.",
+    "category": "BREACH",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-14T02:25:18.000Z",
+    "url": "https://cybersecuritynews.com/openai-engineer-arrested-for-planting-spyware/",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/openai-employee-arrested-for-allegedly.html"
+      },
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/employee-arrested-after-listening-device-found-in-openai-conference-room-fbi-and-the-company-say/"
+      }
+    ]
+  },
+  {
     "id": "https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws/",
     "sourceUrl": "https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws/",
     "title": "Microsoft Releases Patch for Over 1,400 Security Vulnerabilities",
@@ -11,24 +73,6 @@
     "publishedAt": "2026-10-13T23:24:53.000Z",
     "url": "https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/employee-arrested-after-listening-device-found-in-openai-conference-room-fbi-and-the-company-say/",
-    "sourceUrl": "https://www.securityweek.com/employee-arrested-after-listening-device-found-in-openai-conference-room-fbi-and-the-company-say/",
-    "title": "OpenAI Employee Arrested After Listening Device Discovered in Conference Room",
-    "headline": "OpenAI Employee Arrested After Listening Device Discovered in Conference Room",
-    "summary": "A Saudi national, Abdulrahman Alfozan, was arrested and terminated by OpenAI after a listening device was found in an OpenAI conference room. The FBI and the company confirmed the incident, highlighting a breach of physical security and potential eavesdropping concerns.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-13T23:07:00.000Z",
-    "url": "https://www.securityweek.com/employee-arrested-after-listening-device-found-in-openai-conference-room-fbi-and-the-company-say/",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-engineer-arrested-for-allegedly-planting-spy-device-in-office/"
-      }
-    ]
   },
   {
     "id": "https://www.darkreading.com/vulnerabilities-threats/zero-days-microsoft-october-patch-tuesday",
@@ -135,24 +179,6 @@
     "publishedAt": "2026-10-13T20:12:00.000Z",
     "url": "https://therecord.media/sextortion-assistance-company-alleged-fraud-ftc-complaint",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5126657-extended-security-update/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5126657-extended-security-update/",
-    "title": "Microsoft Issues Windows 10 KB5126657 Extended Security Update",
-    "headline": "Microsoft Issues Windows 10 KB5126657 Extended Security Update",
-    "summary": "Microsoft released the KB5126657 extended security update for Windows 10, part of this month’s record‑breaking Patch Tuesday. The update includes security fixes and minor bug corrections, ensuring continued protection for Windows 10 users.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-13T19:47:30.000Z",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5126657-extended-security-update/",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-11-24h2-home-and-pro-reached-end-of-support/"
-      }
-    ]
   },
   {
     "id": "https://www.securityweek.com/ivanti-zero-day-chain-gave-attackers-root-access-to-fully-patched-vpn/",
@@ -285,24 +311,6 @@
     "publishedAt": "2026-10-13T17:14:42.000Z",
     "url": "https://www.securityweek.com/adobe-patches-140-vulnerabilities-across-10-products/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/google-partially-reverses-chrome-bug-bounty-cuts/",
-    "sourceUrl": "https://www.securityweek.com/google-partially-reverses-chrome-bug-bounty-cuts/",
-    "title": "Google Partially Reverses Chrome Bug Bounty Cuts",
-    "headline": "Google Partially Reverses Chrome Bug Bounty Cuts",
-    "summary": "Google announced a partial reversal of its recent Chrome bug bounty reductions, refocusing rewards on complex memory‑safety vulnerabilities. The change aims to encourage researchers to target harder‑to‑detect flaws while maintaining a balanced incentive structure for the Chrome security community and to sustain long‑term security improvements across the browser ecosystem.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-13T17:00:00.000Z",
-    "url": "https://www.securityweek.com/google-partially-reverses-chrome-bug-bounty-cuts/",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/meta-zurp-ai-toolkit/"
-      }
-    ]
   },
   {
     "id": "https://cybersecuritynews.com/crowdstrike-joins-anthropic-defense-program/",
@@ -629,19 +637,6 @@
     "source": "Help Net Security",
     "publishedAt": "2026-10-13T12:49:07.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/13/ridge-security-ridgeone/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-286-01",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-286-01",
-    "title": "Inductive Automation Ignition Vulnerability CVE‑2026‑92817 Enables Privilege Escalation",
-    "headline": "Inductive Automation Ignition Vulnerability CVE‑2026‑92817 Enables Privilege Escalation",
-    "summary": "CISA reports that CVE‑2026‑92817 in Inductive Automation Ignition allows an authenticated low‑level user to elevate privileges to Designer‑level by reusing a Vision session identifier. Affected versions include Ignition ≥8.1.0 and ≥8.3.0. The flaw could enable attackers to execute privileged actions and compromise critical infrastructure sectors.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CISA",
-    "publishedAt": "2026-10-13T12:00:00.000Z",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-286-01",
     "additionalSources": []
   },
   {

@@ -11,6 +11,60 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "google-raises-chrome-bug-bounty-rewards-to-20-000-3dd543",
+    "title": "Google Raises Chrome Bug Bounty Rewards to $20,000 for Sandbox Escapes",
+    "summary": "Google has increased its Chrome Vulnerability Rewards Program base pay, quadrupling rewards for memory corruption bugs and offering up to $20,000 for sandbox escape vulnerabilities. The move aims to incentivize researchers to uncover severe, hard‑to‑detect flaws and improve internal testing.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/14/google-chrome-vulnerability-rewards-program-updates/",
+    "publishedAt": "2026-10-14T04:00:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-raises-chrome-bug-bounty-rewards-to-20-000",
+      "article-3dd543",
+      "3dd543",
+      "google-raises-chrome-bug-bounty-rewards-to-20-000-for-sandbo"
+    ]
+  },
+  {
+    "slug": "microsoft-windows-shell-zero-day-cve-2026-96951-ac-79f9e4",
+    "title": "Microsoft Windows Shell Zero‑Day CVE‑2026‑96951 Actively Exploited",
+    "summary": "Microsoft patched the actively exploited Windows Shell zero‑day CVE‑2026‑96951, which allowed bypassing Mark of the Web protections. The flaw, rated CVSS 8.8 and Important by Microsoft, was addressed in the October 2026 Patch Tuesday updates.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/windows-shell-0-day-exploited/",
+    "publishedAt": "2026-10-14T03:28:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-windows-shell-zero-day-cve-2026-96951-ac",
+      "article-79f9e4",
+      "79f9e4",
+      "microsoft-windows-shell-zero-day-cve-2026-96951-actively-exp"
+    ]
+  },
+  {
+    "slug": "openai-engineer-arrested-for-planting-spyware-devi-65c1f4",
+    "title": "OpenAI Engineer Arrested for Planting Spyware Device in Executive Conference Room",
+    "summary": "An OpenAI engineer was arrested after hiding an audio recording device in an executive conference room at the company’s San Francisco offices. The device was intended to capture conversations. The suspect, a 35‑year‑old Saudi national, was detained on October 9, 2026, and appeared in federal court on October 13.",
+    "category": "Breach",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/openai-engineer-arrested-for-planting-spyware/",
+    "publishedAt": "2026-10-14T02:25:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openai-engineer-arrested-for-planting-spyware-devi",
+      "article-65c1f4",
+      "65c1f4",
+      "openai-engineer-arrested-for-planting-spyware-device-in-exec"
+    ]
+  },
+  {
     "slug": "microsoft-releases-patch-for-over-1-400-security-v-7963d0",
     "title": "Microsoft Releases Patch for Over 1,400 Security Vulnerabilities",
     "summary": "Microsoft today issued updates to fix more than 1,400 security vulnerabilities across its Windows operating systems and other software. The patch batch dwarfs September’s record of nearly 1,000 fixes and exceeds the normal monthly patch load from Redmond by about ten times.",
@@ -26,24 +80,6 @@ export const news: NewsBrief[] = [
       "article-7963d0",
       "7963d0",
       "microsoft-releases-patch-for-over-1-400-security-vulnerabili"
-    ]
-  },
-  {
-    "slug": "openai-employee-arrested-after-listening-device-di-556fe3",
-    "title": "OpenAI Employee Arrested After Listening Device Discovered in Conference Room",
-    "summary": "A Saudi national, Abdulrahman Alfozan, was arrested and terminated by OpenAI after a listening device was found in an OpenAI conference room. The FBI and the company confirmed the incident, highlighting a breach of physical security and potential eavesdropping concerns.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/employee-arrested-after-listening-device-found-in-openai-conference-room-fbi-and-the-company-say/",
-    "publishedAt": "2026-10-13T23:07:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openai-employee-arrested-after-listening-device-di",
-      "article-556fe3",
-      "556fe3",
-      "openai-employee-arrested-after-listening-device-discovered-i"
     ]
   },
   {
@@ -174,24 +210,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "microsoft-issues-windows-10-kb5126657-extended-sec-578b79",
-    "title": "Microsoft Issues Windows 10 KB5126657 Extended Security Update",
-    "summary": "Microsoft released the KB5126657 extended security update for Windows 10, part of this month’s record‑breaking Patch Tuesday. The update includes security fixes and minor bug corrections, ensuring continued protection for Windows 10 users.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5126657-extended-security-update/",
-    "publishedAt": "2026-10-13T19:47:30.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-issues-windows-10-kb5126657-extended-sec",
-      "article-578b79",
-      "578b79",
-      "microsoft-issues-windows-10-kb5126657-extended-security-upda"
-    ]
-  },
-  {
     "slug": "ivanti-zero-day-exploit-enables-root-access-on-pat-1d4cf1",
     "title": "Ivanti Zero-Day Exploit Enables Root Access on Patched VPN",
     "summary": "CVE-2026-104935 allows unauthenticated remote code execution on Ivanti Connect Secure, granting attackers root privileges. The flaw can be leveraged to bypass existing patches and compromise VPN infrastructure. Immediate patching and monitoring are required to mitigate potential exploitation.",
@@ -319,23 +337,6 @@ export const news: NewsBrief[] = [
       "article-1e9138",
       "1e9138",
       "adobe-releases-patches-for-140-vulnerabilities-across-10-pro"
-    ]
-  },
-  {
-    "slug": "google-partially-reverses-chrome-bug-bounty-cuts-4a9997",
-    "title": "Google Partially Reverses Chrome Bug Bounty Cuts",
-    "summary": "Google announced a partial reversal of its recent Chrome bug bounty reductions, refocusing rewards on complex memory‑safety vulnerabilities. The change aims to encourage researchers to target harder‑to‑detect flaws while maintaining a balanced incentive structure for the Chrome security community and to sustain long‑term security improvements across the browser ecosystem.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/google-partially-reverses-chrome-bug-bounty-cuts/",
-    "publishedAt": "2026-10-13T17:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-partially-reverses-chrome-bug-bounty-cuts",
-      "article-4a9997",
-      "4a9997"
     ]
   },
   {
@@ -714,24 +715,6 @@ export const news: NewsBrief[] = [
       "article-6af10d",
       "6af10d",
       "ridge-security-s-ridgeone-keeps-penetration-testing-data-in-"
-    ]
-  },
-  {
-    "slug": "inductive-automation-ignition-vulnerability-cve-20-430cec",
-    "title": "Inductive Automation Ignition Vulnerability CVE‑2026‑92817 Enables Privilege Escalation",
-    "summary": "CISA reports that CVE‑2026‑92817 in Inductive Automation Ignition allows an authenticated low‑level user to elevate privileges to Designer‑level by reusing a Vision session identifier. Affected versions include Ignition ≥8.1.0 and ≥8.3.0. The flaw could enable attackers to execute privileged actions and compromise critical infrastructure sectors.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-286-01",
-    "publishedAt": "2026-10-13T12:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "inductive-automation-ignition-vulnerability-cve-20",
-      "article-430cec",
-      "430cec",
-      "inductive-automation-ignition-vulnerability-cve-2026-92817-e"
     ]
   },
   {
