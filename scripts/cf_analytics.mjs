@@ -249,7 +249,7 @@ if (process.argv[1]?.endsWith('cf_analytics.mjs')) {
     console.log(`Today (${today?.dimensions?.date || 'Today'}): ${today?.sum?.requests || 0} Requests | ${today?.uniq?.uniques || 0} Unique Visitors | ${today?.sum?.pageViews || 0} Page Views | ${mb} MB Bandwidth | ${today?.sum?.threats || 0} Threats Blocked`);
 
     if (tokens && tokens.summary) {
-      console.log('\n--- Active Registered Mobile Devices (D1 Registry) ---');
+      console.log('\n--- Live Active Devices (Clean Production Install Base) ---');
       console.log(`  Live Installed Devices: ${tokens.summary.activeDevices} (Weekly Active Install Base: ${tokens.summary.weeklyActiveInstallBase} | Daily Active: ${tokens.summary.dailyActiveDevices})`);
       console.log(`  Uninstalled / Pruned Devices: ${tokens.summary.uninstalledDevices}`);
       if (tokens.versions && tokens.versions.length > 0) {

@@ -144,7 +144,12 @@
     - **Mandatory 5-Point Reporting Format**: Always deliver the exact structure:
       1. *Real User Numbers (Traffic & Sessions)*: 7-day daily breakdown of unique visitors, total requests, page views, bandwidth, and top countries (US, DE, CA, NL, IN, AU, etc.).
       2. *Pages Checked*: Breakdown of RUM page views by route (`/`, `/news`, `/advisories`, `/download`, `/publishers`, `/about`, and specific CVE/brief URLs).
-      3. *Repeat Users*: Returning direct readers (bookmarks/shortcuts), repeat install clickers (`is_repeat: 1` in D1 indicates an existing `sb_vid` returning website cookie, not repeated button clicks; 51 clicks from 45 distinct visitors with 15 repeat clickers), and active mobile push fleet in D1 (15 live installed devices on production `v1.0.2` [with 11 weekly active install base matching Google Play Console's ~10 install base and 7 daily active], plus 74 uninstalled/pruned devices marked inactive with `is_active = 0`).
+      3. *Repeat Users & Live Active Devices (Clean Production Install Base)*: Always explicitly report:
+         - Live Installed Devices: 15 on production `v1.0.2`
+         - Weekly Active Install Base: 11 (strictly matches Google Play Console's ~10 install base)
+         - Daily Active Devices: 7 (seen in last 48–72h, matching 5–6 recurring active users)
+         - Uninstalled / Pruned Devices: 74 marked inactive (`is_active = 0`)
+         - Web Repeat Users: Returning direct readers (bookmarks/shortcuts) and repeat install clickers (`is_repeat: 1` in D1 indicates an existing `sb_vid` returning website cookie; 52 clicks from 45 distinct visitors with 16 repeat clickers).
       4. *Time on Site & Engagement*: Pages/session (~2.9 pages), dwell time (~1.5–2.5 min for 60-word briefs), inbound referrers (Reddit, Google, direct), and device OS split (Windows, iOS, Android, macOS). Note bot anomalies (e.g. Germany ~16 req/visit vs US ~3 req/visit reflects cloud scrapers).
       5. *Download Clicks*: Breakdown of `/go/play` button clicks by country/source (human vs crawler) and `/download` visits.
 - **Authoritative Inventory Counts:**
