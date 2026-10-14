@@ -1,5 +1,45 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/fbi-raids-dprk-it-worker-laptop-farms-in-texas-us-nationals-arrested/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-raids-dprk-it-worker-laptop-farms-in-texas-us-nationals-arrested/",
+    "title": "FBI Seizes Laptops Used by North Korean Remote IT Workers",
+    "headline": "FBI Seizes Laptops Used by North Korean Remote IT Workers",
+    "summary": "The U.S. Department of Justice disrupted the Famous Chollima threat group by arresting two suspects, charging 14 individuals, and seizing nearly 187 laptops used in North Korean remote IT worker schemes. The operation targets DPRK cyber espionage activities in Texas.",
+    "category": "NATION_STATE",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-14T19:41:43.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/fbi-raids-dprk-it-worker-laptop-farms-in-texas-us-nationals-arrested/",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/us-shuts-down-over-40-laptop-farms.html"
+      },
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/microsoft-takes-down-3-major-chinese-phishing-platforms"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/cisco-warns-of-active-attacks.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/cisco-warns-of-active-attacks.html",
+    "title": "Cisco Secure Email Gateway Vulnerability Allows Root File Write",
+    "headline": "Cisco Secure Email Gateway Vulnerability Allows Root File Write",
+    "summary": "Cisco warned that attackers exploit a critical flaw in its Secure Email Gateway, enabling unauthenticated senders to write files to the appliance’s operating system via crafted email attachments. Successful exploitation could allow attackers to run commands as root, compromising the gateway’s integrity.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-14T18:38:56.000Z",
+    "url": "https://thehackernews.com/2026/10/cisco-warns-of-active-attacks.html",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisco-patches-actively-exploited-secure-email-gateway-zero-day/"
+      }
+    ]
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/ledger-asks-sellers-across-asia-to-halt-sales-after-supply-chain-attack/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/ledger-asks-sellers-across-asia-to-halt-sales-after-supply-chain-attack/",
     "title": "Ledger Urges Asian Resellers to Halt Wallet Sales Amid Supply‑Chain Tampering Investigation",
@@ -13,16 +53,29 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.bleepingcomputer.com/news/security/cisco-patches-actively-exploited-secure-email-gateway-zero-day/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisco-patches-actively-exploited-secure-email-gateway-zero-day/",
-    "title": "Cisco Patches Actively Exploited Zero‑Day in Secure Email Gateway",
-    "headline": "Cisco Patches Actively Exploited Zero‑Day in Secure Email Gateway",
-    "summary": "Cisco has released a patch for a newly discovered zero‑day vulnerability in its Secure Email Gateway (SEG) that allows unauthenticated remote attackers to execute arbitrary commands with root privileges. The flaw, actively exploited in the wild, was fixed in the latest update, and users are urged to apply the patch immediately to prevent potential system compromise.",
+    "id": "https://thehackernews.com/2026/10/hackers-backdoor-nextcloud-servers.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/hackers-backdoor-nextcloud-servers.html",
+    "title": "Critical Backdoor in Collabora CODE App Enables Web Shells on Nextcloud",
+    "headline": "Critical Backdoor in Collabora CODE App Enables Web Shells on Nextcloud",
+    "summary": "A flaw in Collabora Online’s Built‑in CODE Server, an optional Nextcloud app, lets attackers plant web shells that run with the web server’s privileges. The vulnerability was first logged on September 10, enabling remote command execution via web requests. Administrators should update or disable the app immediately to prevent exploitation.",
     "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-14T17:29:14.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/cisco-patches-actively-exploited-secure-email-gateway-zero-day/",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-14T17:38:31.000Z",
+    "url": "https://thehackernews.com/2026/10/hackers-backdoor-nextcloud-servers.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/microsoft-disrupts-3-phishing-kits.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/microsoft-disrupts-3-phishing-kits.html",
+    "title": "Microsoft Disrupts Three Phishing Kits Linked to Over 1 Billion Scam Messages",
+    "headline": "Microsoft Disrupts Three Phishing Kits Linked to Over 1 Billion Scam Messages",
+    "summary": "Microsoft, Health-ISAC, JC3, and partners such as Resecurity, Cloudflare, Oracle, Proofpoint, and TRM Labs shut down three phishing kits—CoGUI (NX/FA), Haozi (Phoenix), and Iron Man System—used since January 2026 to send more than a billion scam messages. The disruption stops further credential theft attempts.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-14T17:09:15.000Z",
+    "url": "https://thehackernews.com/2026/10/microsoft-disrupts-3-phishing-kits.html",
     "additionalSources": []
   },
   {
@@ -66,24 +119,6 @@
       {
         "source": "BleepingComputer",
         "sourceUrl": "https://www.bleepingcomputer.com/news/security/anthropic-warns-self-replicating-ai-could-spread-to-your-smart-devices/"
-      }
-    ]
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/us-shuts-down-over-40-laptop-farms.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/us-shuts-down-over-40-laptop-farms.html",
-    "title": "U.S. Shuts Down Laptop Farms, Charges 14 in North Korean IT Worker Fraud",
-    "headline": "U.S. Shuts Down Laptop Farms, Charges 14 in North Korean IT Worker Fraud",
-    "summary": "The U.S. Department of Justice seized 187 computers and charged 14 individuals, including U.S. citizens and Chinese nationals, for a North Korean IT worker scheme that defrauded over 70 U.S. companies. The operation disrupts a state-sponsored fraud network and highlights ongoing efforts to counter cybercrime.",
-    "category": "NATION_STATE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-14T16:34:31.000Z",
-    "url": "https://thehackernews.com/2026/10/us-shuts-down-over-40-laptop-farms.html",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/14/north-korean-it-workers-laptop-farms-arrests/"
       }
     ]
   },
@@ -283,28 +318,6 @@
       {
         "source": "The Hacker News",
         "sourceUrl": "https://thehackernews.com/2026/10/ai-found-linux-kernel-flaw-gives-local.html"
-      }
-    ]
-  },
-  {
-    "id": "https://therecord.media/microsoft-takes-down-3-major-chinese-phishing-platforms",
-    "sourceUrl": "https://therecord.media/microsoft-takes-down-3-major-chinese-phishing-platforms",
-    "title": "Microsoft Seizes Three Major Phishing Platforms Used by Chinese Cybercriminals",
-    "headline": "Microsoft Seizes Three Major Phishing Platforms Used by Chinese Cybercriminals",
-    "summary": "Microsoft, with Japan’s National Police Agency and Health‑ISAC, obtained a U.S. court order to seize and redirect domains that supported the YAM Store, CoGUI and Iron Man phishing infrastructures. The action disrupts the platforms used by Chinese cybercriminals.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Record",
-    "publishedAt": "2026-10-14T13:18:00.000Z",
-    "url": "https://therecord.media/microsoft-takes-down-3-major-chinese-phishing-platforms",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/microsoft-disrupts-chinese-language-phishing-market-behind-1b-messages/"
-      },
-      {
-        "source": "Microsoft Security",
-        "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/14/the-hidden-network-inside-the-phishing-infrastructure-ecosystem-powering-global-cybercrime/"
       }
     ]
   },
@@ -5240,23 +5253,5 @@
     "publishedAt": "2026-09-30T11:05:35.000Z",
     "url": "https://www.schneier.com/blog/archives/2026/09/i-want-better-reporting-on-ai-genie-behavior.html",
     "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/09/us-focused-csuite-phishing-steals.html",
-    "sourceUrl": "https://thehackernews.com/2026/09/us-focused-csuite-phishing-steals.html",
-    "title": "US‑Focused Phishing Campaign Steals Microsoft 365 Sessions and Deploys RMM Tools",
-    "headline": "US‑Focused Phishing Campaign Steals Microsoft 365 Sessions and Deploys RMM Tools",
-    "summary": "Researchers traced a phishing campaign targeting US organizations that stole Microsoft 365 session tokens and installed remote‑access tools. The attackers used the stolen sessions to gain broader account compromise and potential fraud. Organizations should monitor for unusual RMM tool activity and enforce MFA on Microsoft 365 accounts.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-09-30T10:45:00.000Z",
-    "url": "https://thehackernews.com/2026/09/us-focused-csuite-phishing-steals.html",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/daemon-tools-hackers-needymantis-malware-dissected-by-microsoft/"
-      }
-    ]
   }
 ]

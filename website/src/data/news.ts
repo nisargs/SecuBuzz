@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "fbi-seizes-laptops-used-by-north-korean-remote-it-6e3602",
+    "title": "FBI Seizes Laptops Used by North Korean Remote IT Workers",
+    "summary": "The U.S. Department of Justice disrupted the Famous Chollima threat group by arresting two suspects, charging 14 individuals, and seizing nearly 187 laptops used in North Korean remote IT worker schemes. The operation targets DPRK cyber espionage activities in Texas.",
+    "category": "Malware",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-raids-dprk-it-worker-laptop-farms-in-texas-us-nationals-arrested/",
+    "publishedAt": "2026-10-14T19:41:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fbi-seizes-laptops-used-by-north-korean-remote-it",
+      "article-6e3602",
+      "6e3602",
+      "fbi-seizes-laptops-used-by-north-korean-remote-it-workers"
+    ]
+  },
+  {
+    "slug": "cisco-secure-email-gateway-vulnerability-allows-ro-69226d",
+    "title": "Cisco Secure Email Gateway Vulnerability Allows Root File Write",
+    "summary": "Cisco warned that attackers exploit a critical flaw in its Secure Email Gateway, enabling unauthenticated senders to write files to the appliance’s operating system via crafted email attachments. Successful exploitation could allow attackers to run commands as root, compromising the gateway’s integrity.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/cisco-warns-of-active-attacks.html",
+    "publishedAt": "2026-10-14T18:38:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisco-secure-email-gateway-vulnerability-allows-ro",
+      "article-69226d",
+      "69226d",
+      "cisco-secure-email-gateway-vulnerability-allows-root-file-wr"
+    ]
+  },
+  {
     "slug": "ledger-urges-asian-resellers-to-halt-wallet-sales-5ea266",
     "title": "Ledger Urges Asian Resellers to Halt Wallet Sales Amid Supply‑Chain Tampering Investigation",
     "summary": "Ledger has instructed resellers and distributors across Indonesia, Singapore, Thailand, the Philippines, Vietnam, Malaysia, and Hong Kong to stop selling its hardware wallets and remove them from shelves while it investigates reports of device tampering. The company is reviewing supply‑chain integrity and will issue guidance once the investigation concludes.",
@@ -29,21 +65,39 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "cisco-patches-actively-exploited-zero-day-in-secur-6bdb7a",
-    "title": "Cisco Patches Actively Exploited Zero‑Day in Secure Email Gateway",
-    "summary": "Cisco has released a patch for a newly discovered zero‑day vulnerability in its Secure Email Gateway (SEG) that allows unauthenticated remote attackers to execute arbitrary commands with root privileges. The flaw, actively exploited in the wild, was fixed in the latest update, and users are urged to apply the patch immediately to prevent potential system compromise.",
+    "slug": "critical-backdoor-in-collabora-code-app-enables-we-5d43d3",
+    "title": "Critical Backdoor in Collabora CODE App Enables Web Shells on Nextcloud",
+    "summary": "A flaw in Collabora Online’s Built‑in CODE Server, an optional Nextcloud app, lets attackers plant web shells that run with the web server’s privileges. The vulnerability was first logged on September 10, enabling remote command execution via web requests. Administrators should update or disable the app immediately to prevent exploitation.",
     "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisco-patches-actively-exploited-secure-email-gateway-zero-day/",
-    "publishedAt": "2026-10-14T17:29:14.000Z",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/hackers-backdoor-nextcloud-servers.html",
+    "publishedAt": "2026-10-14T17:38:31.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "cisco-patches-actively-exploited-zero-day-in-secur",
-      "article-6bdb7a",
-      "6bdb7a",
-      "cisco-patches-actively-exploited-zero-day-in-secure-email-ga"
+      "critical-backdoor-in-collabora-code-app-enables-we",
+      "article-5d43d3",
+      "5d43d3",
+      "critical-backdoor-in-collabora-code-app-enables-web-shells-o"
+    ]
+  },
+  {
+    "slug": "microsoft-disrupts-three-phishing-kits-linked-to-o-38ac9c",
+    "title": "Microsoft Disrupts Three Phishing Kits Linked to Over 1 Billion Scam Messages",
+    "summary": "Microsoft, Health-ISAC, JC3, and partners such as Resecurity, Cloudflare, Oracle, Proofpoint, and TRM Labs shut down three phishing kits—CoGUI (NX/FA), Haozi (Phoenix), and Iron Man System—used since January 2026 to send more than a billion scam messages. The disruption stops further credential theft attempts.",
+    "category": "Cloud",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/microsoft-disrupts-3-phishing-kits.html",
+    "publishedAt": "2026-10-14T17:09:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-disrupts-three-phishing-kits-linked-to-o",
+      "article-38ac9c",
+      "38ac9c",
+      "microsoft-disrupts-three-phishing-kits-linked-to-over-1-bill"
     ]
   },
   {
@@ -97,24 +151,6 @@ export const news: NewsBrief[] = [
       "ai-worms-could-spread-across-smart-devices",
       "article-7dfb15",
       "7dfb15"
-    ]
-  },
-  {
-    "slug": "u-s-shuts-down-laptop-farms-charges-14-in-north-ko-6734c6",
-    "title": "U.S. Shuts Down Laptop Farms, Charges 14 in North Korean IT Worker Fraud",
-    "summary": "The U.S. Department of Justice seized 187 computers and charged 14 individuals, including U.S. citizens and Chinese nationals, for a North Korean IT worker scheme that defrauded over 70 U.S. companies. The operation disrupts a state-sponsored fraud network and highlights ongoing efforts to counter cybercrime.",
-    "category": "Malware",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/us-shuts-down-over-40-laptop-farms.html",
-    "publishedAt": "2026-10-14T16:34:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "u-s-shuts-down-laptop-farms-charges-14-in-north-ko",
-      "article-6734c6",
-      "6734c6",
-      "u-s-shuts-down-laptop-farms-charges-14-in-north-korean-it-wo"
     ]
   },
   {
@@ -327,24 +363,6 @@ export const news: NewsBrief[] = [
       "article-39d58a",
       "39d58a",
       "poc-released-for-linux-vhost-flaw-enabling-root-privilege-es"
-    ]
-  },
-  {
-    "slug": "microsoft-seizes-three-major-phishing-platforms-us-607a2d",
-    "title": "Microsoft Seizes Three Major Phishing Platforms Used by Chinese Cybercriminals",
-    "summary": "Microsoft, with Japan’s National Police Agency and Health‑ISAC, obtained a U.S. court order to seize and redirect domains that supported the YAM Store, CoGUI and Iron Man phishing infrastructures. The action disrupts the platforms used by Chinese cybercriminals.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/microsoft-takes-down-3-major-chinese-phishing-platforms",
-    "publishedAt": "2026-10-14T13:18:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-seizes-three-major-phishing-platforms-us",
-      "article-607a2d",
-      "607a2d",
-      "microsoft-seizes-three-major-phishing-platforms-used-by-chin"
     ]
   },
   {
@@ -6257,24 +6275,6 @@ export const news: NewsBrief[] = [
       "ai-genie-behavior-raises-reporting-concerns",
       "article-764a37",
       "764a37"
-    ]
-  },
-  {
-    "slug": "us-focused-phishing-campaign-steals-microsoft-365-1fba45",
-    "title": "US‑Focused Phishing Campaign Steals Microsoft 365 Sessions and Deploys RMM Tools",
-    "summary": "Researchers traced a phishing campaign targeting US organizations that stole Microsoft 365 session tokens and installed remote‑access tools. The attackers used the stolen sessions to gain broader account compromise and potential fraud. Organizations should monitor for unusual RMM tool activity and enforce MFA on Microsoft 365 accounts.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/09/us-focused-csuite-phishing-steals.html",
-    "publishedAt": "2026-09-30T10:45:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "us-focused-phishing-campaign-steals-microsoft-365",
-      "article-1fba45",
-      "1fba45",
-      "us-focused-phishing-campaign-steals-microsoft-365-sessions-a"
     ]
   }
 ];

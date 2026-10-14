@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Oct 2026 18:50:50 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 20:19:31 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>FBI Seizes Laptops Used by North Korean Remote IT Workers</title>
+      <link>https://secubuzz.com/news/fbi-seizes-laptops-used-by-north-korean-remote-it-6e3602</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fbi-seizes-laptops-used-by-north-korean-remote-it-6e3602</guid>
+      <description><![CDATA[The U.S. Department of Justice disrupted the Famous Chollima threat group by arresting two suspects, charging 14 individuals, and seizing nearly 187 laptops used in North Korean remote IT worker schemes. The operation targets DPRK cyber espionage activities in Texas.]]></description>
+      <pubDate>Wed, 14 Oct 2026 19:41:43 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/fbi-raids-dprk-it-worker-laptop-farms-in-texas-us-nationals-arrested/">BleepingComputer</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Cisco Secure Email Gateway Vulnerability Allows Root File Write</title>
+      <link>https://secubuzz.com/news/cisco-secure-email-gateway-vulnerability-allows-ro-69226d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisco-secure-email-gateway-vulnerability-allows-ro-69226d</guid>
+      <description><![CDATA[Cisco warned that attackers exploit a critical flaw in its Secure Email Gateway, enabling unauthenticated senders to write files to the appliance’s operating system via crafted email attachments. Successful exploitation could allow attackers to run commands as root, compromising the gateway’s integrity.]]></description>
+      <pubDate>Wed, 14 Oct 2026 18:38:56 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/cisco-warns-of-active-attacks.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Ledger Urges Asian Resellers to Halt Wallet Sales Amid Supply‑Chain Tampering Investigation</title>
       <link>https://secubuzz.com/news/ledger-urges-asian-resellers-to-halt-wallet-sales-5ea266</link>
@@ -17,13 +35,22 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>Cisco Patches Actively Exploited Zero‑Day in Secure Email Gateway</title>
-      <link>https://secubuzz.com/news/cisco-patches-actively-exploited-zero-day-in-secur-6bdb7a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisco-patches-actively-exploited-zero-day-in-secur-6bdb7a</guid>
-      <description><![CDATA[Cisco has released a patch for a newly discovered zero‑day vulnerability in its Secure Email Gateway (SEG) that allows unauthenticated remote attackers to execute arbitrary commands with root privileges. The flaw, actively exploited in the wild, was fixed in the latest update, and users are urged to apply the patch immediately to prevent potential system compromise.]]></description>
-      <pubDate>Wed, 14 Oct 2026 17:29:14 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/cisco-patches-actively-exploited-secure-email-gateway-zero-day/">BleepingComputer</source>
+      <title>Critical Backdoor in Collabora CODE App Enables Web Shells on Nextcloud</title>
+      <link>https://secubuzz.com/news/critical-backdoor-in-collabora-code-app-enables-we-5d43d3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/critical-backdoor-in-collabora-code-app-enables-we-5d43d3</guid>
+      <description><![CDATA[A flaw in Collabora Online’s Built‑in CODE Server, an optional Nextcloud app, lets attackers plant web shells that run with the web server’s privileges. The vulnerability was first logged on September 10, enabling remote command execution via web requests. Administrators should update or disable the app immediately to prevent exploitation.]]></description>
+      <pubDate>Wed, 14 Oct 2026 17:38:31 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/hackers-backdoor-nextcloud-servers.html">The Hacker News</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Microsoft Disrupts Three Phishing Kits Linked to Over 1 Billion Scam Messages</title>
+      <link>https://secubuzz.com/news/microsoft-disrupts-three-phishing-kits-linked-to-o-38ac9c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-disrupts-three-phishing-kits-linked-to-o-38ac9c</guid>
+      <description><![CDATA[Microsoft, Health-ISAC, JC3, and partners such as Resecurity, Cloudflare, Oracle, Proofpoint, and TRM Labs shut down three phishing kits—CoGUI (NX/FA), Haozi (Phoenix), and Iron Man System—used since January 2026 to send more than a billion scam messages. The disruption stops further credential theft attempts.]]></description>
+      <pubDate>Wed, 14 Oct 2026 17:09:15 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/microsoft-disrupts-3-phishing-kits.html">The Hacker News</source>
+      <category>Cloud</category>
     </item>
     <item>
       <title>Spyware Operation Accessed Former Polish Government Data</title>
@@ -51,15 +78,6 @@
       <pubDate>Wed, 14 Oct 2026 16:36:46 GMT</pubDate>
       <source url="https://www.malwarebytes.com/blog/ai/2026/10/ai-worms-could-spread-across-your-smart-devices-anthropic-warns">Malwarebytes Labs</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>U.S. Shuts Down Laptop Farms, Charges 14 in North Korean IT Worker Fraud</title>
-      <link>https://secubuzz.com/news/u-s-shuts-down-laptop-farms-charges-14-in-north-ko-6734c6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/u-s-shuts-down-laptop-farms-charges-14-in-north-ko-6734c6</guid>
-      <description><![CDATA[The U.S. Department of Justice seized 187 computers and charged 14 individuals, including U.S. citizens and Chinese nationals, for a North Korean IT worker scheme that defrauded over 70 U.S. companies. The operation disrupts a state-sponsored fraud network and highlights ongoing efforts to counter cybercrime.]]></description>
-      <pubDate>Wed, 14 Oct 2026 16:34:31 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/us-shuts-down-over-40-laptop-farms.html">The Hacker News</source>
-      <category>Malware</category>
     </item>
     <item>
       <title>AI Agents Navigate OT Systems in 16 Minutes</title>
@@ -168,15 +186,6 @@
       <pubDate>Wed, 14 Oct 2026 13:19:35 GMT</pubDate>
       <source url="https://cybersecuritynews.com/poc-released-for-linux-vhost-flaw/">Cyber Security News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Microsoft Seizes Three Major Phishing Platforms Used by Chinese Cybercriminals</title>
-      <link>https://secubuzz.com/news/microsoft-seizes-three-major-phishing-platforms-us-607a2d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-seizes-three-major-phishing-platforms-us-607a2d</guid>
-      <description><![CDATA[Microsoft, with Japan’s National Police Agency and Health‑ISAC, obtained a U.S. court order to seize and redirect domains that supported the YAM Store, CoGUI and Iron Man phishing infrastructures. The action disrupts the platforms used by Chinese cybercriminals.]]></description>
-      <pubDate>Wed, 14 Oct 2026 13:18:00 GMT</pubDate>
-      <source url="https://therecord.media/microsoft-takes-down-3-major-chinese-phishing-platforms">The Record</source>
-      <category>Policy</category>
     </item>
     <item>
       <title>Law Enforcement Takedown of Global Phishing Network</title>
@@ -447,15 +456,6 @@
       <pubDate>Wed, 14 Oct 2026 05:30:59 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/14/kunal-modasiya-qualys-vulnerability-remediation/">Help Net Security</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Meshery Introduced as Open-Source Kubernetes Management Tool</title>
-      <link>https://secubuzz.com/news/meshery-introduced-as-open-source-kubernetes-manag-1a57bf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/meshery-introduced-as-open-source-kubernetes-manag-1a57bf</guid>
-      <description><![CDATA[Layer5’s Meshery, an open-source cloud-native manager, enables teams to design, deploy, and manage Kubernetes clusters from a visual console. It allows users to layout clusters, validate designs, and push configurations to multiple clouds without editing YAML, helping prevent misconfigurations that could disrupt deployments.]]></description>
-      <pubDate>Wed, 14 Oct 2026 05:00:01 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/14/meshery-open-source-cloud-native-manager-kubernetes/">Help Net Security</source>
-      <category>Cloud</category>
     </item>
   </channel>
 </rss>
