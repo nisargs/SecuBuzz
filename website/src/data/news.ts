@@ -11,6 +11,183 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "siemens-issues-17-advisories-rockwell-fixes-armorb-534653",
+    "title": "Siemens Issues 17 Advisories, Rockwell Fixes ArmorBlock Takeover Flaw",
+    "summary": "On Patch Tuesday, Siemens released 17 advisories covering various industrial control system vulnerabilities. Rockwell Automation addressed a takeover flaw in its ArmorBlock product, allowing attackers to gain unauthorized control. The fixes mitigate potential remote code execution risks and strengthen system integrity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/ics-patch-tuesday-siemens-issues-17-advisories-rockwell-fixes-armorblock-takeover-flaw/",
+    "publishedAt": "2026-10-14T15:15:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "siemens-issues-17-advisories-rockwell-fixes-armorb",
+      "article-534653",
+      "534653",
+      "siemens-issues-17-advisories-rockwell-fixes-armorblock-takeo"
+    ]
+  },
+  {
+    "slug": "microsoft-resolves-vpn-connection-issues-from-sept-5f977d",
+    "title": "Microsoft Resolves VPN Connection Issues from September 2026 Windows Updates",
+    "summary": "Microsoft has fixed a known problem that caused Always On VPN connections to fail after installing the September 2026 Windows 11 security updates. The patch restores stable VPN functionality for affected users without any reported exploitation or data breach.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-vpn-issues-caused-by-september-windows-updates/",
+    "publishedAt": "2026-10-14T14:27:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-resolves-vpn-connection-issues-from-sept",
+      "article-5f977d",
+      "5f977d",
+      "microsoft-resolves-vpn-connection-issues-from-september-2026"
+    ]
+  },
+  {
+    "slug": "experts-debate-ai-s-role-in-future-cryptanalysis-59cc8a",
+    "title": "Experts Debate AI's Role in Future Cryptanalysis",
+    "summary": "Matthew Green has published a pessimistic series on AI’s potential to outperform humans in cryptanalysis of symmetric and public-key ciphers. The author counters with optimism, emphasizing the over‑engineering of cryptographic systems and expressing stronger faith in their resilience.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/the-future-of-ai-cryptanalysis.html",
+    "publishedAt": "2026-10-14T14:24:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "experts-debate-ai-s-role-in-future-cryptanalysis",
+      "article-59cc8a",
+      "59cc8a"
+    ]
+  },
+  {
+    "slug": "uk-sanctions-cryptomus-for-russian-money-launderin-6d5000",
+    "title": "UK Sanctions Cryptomus for Russian Money Laundering",
+    "summary": "The United Kingdom has imposed economic sanctions on Cryptomus, a cryptocurrency platform described as a major conduit for payments linked to ransomware, narcotics, darknet markets, fraud, and other cybercrime services. The move aims to block Russia’s ability to bypass existing financial restrictions.",
+    "category": "Malware",
+    "severity": "LOW",
+    "source": "Krebs on Security",
+    "sourceUrl": "https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/",
+    "publishedAt": "2026-10-14T14:22:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "uk-sanctions-cryptomus-for-russian-money-launderin",
+      "article-6d5000",
+      "6d5000",
+      "uk-sanctions-cryptomus-for-russian-money-laundering"
+    ]
+  },
+  {
+    "slug": "hackers-hijack-french-supermarket-fridges-raising-34e449",
+    "title": "Hackers Hijack French Supermarket Fridges, Raising Temperatures to 50°C",
+    "summary": "In France, attackers gained control of older Danfoss refrigeration units, forcing them to heat to 50 °C overnight. The breach exploited outdated security software that could not be updated, allowing hackers to override temperature controls and potentially spoil inventory. No confirmation of data theft was reported.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/cyberattack-on-connected-fridges-in-france.html",
+    "publishedAt": "2026-10-14T14:10:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-hijack-french-supermarket-fridges-raising",
+      "article-34e449",
+      "34e449",
+      "hackers-hijack-french-supermarket-fridges-raising-temperatur"
+    ]
+  },
+  {
+    "slug": "harmonic-security-raises-50m-to-expand-workforce-a-1201a3",
+    "title": "Harmonic Security Raises $50M to Expand Workforce AI Protection",
+    "summary": "Cybersecurity startup Harmonic Security announced a $50 million funding round to grow its engineering and go‑to‑market teams in the United States and United Kingdom. The capital will support the development of AI‑driven solutions designed to protect enterprise workforces from evolving cyber threats.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/harmonic-security-raises-50-million-for-workforce-ai-protection/",
+    "publishedAt": "2026-10-14T14:09:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "harmonic-security-raises-50m-to-expand-workforce-a",
+      "article-1201a3",
+      "1201a3",
+      "harmonic-security-raises-50m-to-expand-workforce-ai-protecti"
+    ]
+  },
+  {
+    "slug": "hackers-use-fake-watchguard-vpn-site-to-steal-logi-393939",
+    "title": "Hackers Use Fake WatchGuard VPN Site to Steal Login Credentials",
+    "summary": "Hackers set up a counterfeit WatchGuard VPN download page that lures users into a pop‑up collecting the VPN server address, username, and password. The real, signed installer is then offered, leaving victims’ credentials exposed without installing malware. No malicious client is required.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/fake-watchguard-vpn/",
+    "publishedAt": "2026-10-14T14:08:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-use-fake-watchguard-vpn-site-to-steal-logi",
+      "article-393939",
+      "393939",
+      "hackers-use-fake-watchguard-vpn-site-to-steal-login-credenti"
+    ]
+  },
+  {
+    "slug": "closing-the-blind-spots-of-agentic-penetration-tes-696e4e",
+    "title": "Closing the Blind Spots of Agentic Penetration Testing",
+    "summary": "AI‑driven pentesting can reveal complex attack paths, but safety limits and network boundaries leave many assets untested. Combining agentic testing with exposure validation and breach simulation helps close these gaps, improving overall security posture.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/the-blind-spots-of-agentic-pentesting-and-how-to-close-them/",
+    "publishedAt": "2026-10-14T14:00:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "closing-the-blind-spots-of-agentic-penetration-tes",
+      "article-696e4e",
+      "696e4e",
+      "closing-the-blind-spots-of-agentic-penetration-testing"
+    ]
+  },
+  {
+    "slug": "uat-6275-targets-cis-government-organizations-450fc3",
+    "title": "UAT-6275 Targets CIS Government Organizations",
+    "summary": "Talos and Recorded Future identified UAT-6275 activity focused on government organizations across the Commonwealth of Independent States. Artifacts also show interest in water resources and energy sectors. The group’s operations suggest a coordinated effort linked to Kazakhstan. No public exploitation or vulnerability disclosed.",
+    "category": "Malware",
+    "severity": "HIGH",
+    "source": "Cisco Talos",
+    "sourceUrl": "https://blog.talosintelligence.com/break-the-silence-kazakhstan-nexus-uat-6275-targets-cis-government-organizations/",
+    "publishedAt": "2026-10-14T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "uat-6275-targets-cis-government-organizations",
+      "article-450fc3",
+      "450fc3"
+    ]
+  },
+  {
+    "slug": "global-crackdown-removes-3-7-million-scam-accounts-313abd",
+    "title": "Global Crackdown Removes 3.7 Million Scam Accounts",
+    "summary": "Meta, Google, Microsoft, and OpenAI joined an international operation that removed over 3.7 million Facebook and Instagram accounts, pages, and groups linked to West African scam networks. The crackdown led to 28 arrests and the rescue of 117 people forced into scam centers, marking a significant law enforcement success.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/west-african-scam-networks/",
+    "publishedAt": "2026-10-14T13:44:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "global-crackdown-removes-3-7-million-scam-accounts",
+      "article-313abd",
+      "313abd"
+    ]
+  },
+  {
     "slug": "poc-released-for-linux-vhost-flaw-enabling-root-pr-39d58a",
     "title": "PoC Released for Linux Vhost Flaw Enabling Root Privilege Escalation and VM Escape",
     "summary": "A public proof of concept for Vghost, a high‑severity Linux vhost flaw tracked as CVE‑2026‑74580, demonstrates how a local user can gain root access or, in certain virtual machine setups, escape the guest to affect the host. The flaw has a CVSS v3.1 score of 8.8 and is fixed in the latest kernel updates.",
@@ -225,24 +402,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "hirudo-android-malware-replaces-banking-apps-to-st-13d641",
-    "title": "Hirudo Android Malware Replaces Banking Apps to Steal Credentials",
-    "summary": "Hirudo is an Android malware that hijacks legitimate banking applications by installing modified copies that disable security checks. The malware captures user credentials during login, allowing attackers to siphon bank account information. Users should verify app authenticity and keep security software updated.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hirudo-android-malware-replaces-banking-apps-to-evade-security-checks/",
-    "publishedAt": "2026-10-14T11:41:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hirudo-android-malware-replaces-banking-apps-to-st",
-      "article-13d641",
-      "13d641",
-      "hirudo-android-malware-replaces-banking-apps-to-steal-creden"
-    ]
-  },
-  {
     "slug": "microsoft-patch-tuesday-addresses-flaw-already-und-17065c",
     "title": "Microsoft Patch Tuesday Addresses Flaw Already Under Attack",
     "summary": "Microsoft’s October Patch Tuesday released 1,413 fixes, including a Windows flaw currently being exploited in the wild and two zero-day vulnerabilities. The patch mitigates the active exploitation vector, preventing further compromise of affected systems. Administrators should apply the update promptly to close the security gap.",
@@ -276,24 +435,6 @@ export const news: NewsBrief[] = [
       "article-60063a",
       "60063a",
       "chrome-full-chain-exploit-built-using-public-ai-model"
-    ]
-  },
-  {
-    "slug": "fake-calendly-pages-steal-facebook-and-google-logi-1130cc",
-    "title": "Fake Calendly Pages Steal Facebook and Google Logins",
-    "summary": "Phishing pages masquerading as Calendly interview invitations capture Facebook and Google credentials, even when two‑factor authentication is enabled. The scam tricks users into entering login details on a malicious site that mimics a legitimate scheduling platform.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/10/fake-calendly-meta-careers-pages-steal-facebook-and-google-logins",
-    "publishedAt": "2026-10-14T11:10:30.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fake-calendly-pages-steal-facebook-and-google-logi",
-      "article-1130cc",
-      "1130cc",
-      "fake-calendly-pages-steal-facebook-and-google-logins"
     ]
   },
   {
@@ -1159,24 +1300,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "ridge-security-s-ridgeone-keeps-penetration-testin-6af10d",
-    "title": "Ridge Security’s RidgeOne Keeps Penetration Testing Data In‑House",
-    "summary": "Ridge Security launches RidgeOne, a self‑contained AI‑powered penetration testing platform that runs entirely within customer environments. By integrating RidgeGen with an open‑weight model on NVIDIA DGX Spark, the solution performs deep security assessments without transmitting data to external AI services or incurring token fees. It targets mid‑size organizations with limited AI resources.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/13/ridge-security-ridgeone/",
-    "publishedAt": "2026-10-13T12:49:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ridge-security-s-ridgeone-keeps-penetration-testin",
-      "article-6af10d",
-      "6af10d",
-      "ridge-security-s-ridgeone-keeps-penetration-testing-data-in-"
-    ]
-  },
-  {
     "slug": "swann-communications-swifi-se2kic-firmware-vulnera-430cec",
     "title": "Swann Communications SWIFI-SE2KIC Firmware Vulnerability CVE-2026-107605 Allows Unauthenticated Live Video Access",
     "summary": "The Swann Communications SWIFI-SE2KIC firmware (CVE-2026-107605) has a missing authentication flaw that lets local attackers view live video feeds without credentials. Affected firmware versions 2.0.22 and earlier are vulnerable; applying the vendor’s patch or updating firmware resolves the issue.",
@@ -1212,24 +1335,6 @@ export const news: NewsBrief[] = [
       "article-21b8df",
       "21b8df",
       "cyber-incident-affects-ahold-delhaize-stores-in-us-netherlan"
-    ]
-  },
-  {
-    "slug": "hackers-heat-up-french-supermarket-fridges-spoilin-24975f",
-    "title": "Hackers Heat Up French Supermarket Fridges, Spoiling Food",
-    "summary": "Cybercriminals targeted supermarket temperature‑control systems in France, raising fridge temperatures and causing food spoilage, empty shelves, and fire incidents. The attack disrupted supply chains and led to significant product loss. No specific mitigation steps are provided, but the incident highlights the vulnerability of IoT devices in retail environments.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/hackers-heat-up-supermarket-fridges-spoiling-food-across-france",
-    "publishedAt": "2026-10-13T11:17:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-heat-up-french-supermarket-fridges-spoilin",
-      "article-24975f",
-      "24975f",
-      "hackers-heat-up-french-supermarket-fridges-spoiling-food"
     ]
   },
   {
@@ -1322,24 +1427,6 @@ export const news: NewsBrief[] = [
       "article-6c0372",
       "6c0372",
       "gitlab-urges-patch-for-critical-rce-vulnerability-cve-2026-9"
-    ]
-  },
-  {
-    "slug": "ai-s-role-in-shaping-future-cybersecurity-playbook-425e7a",
-    "title": "AI’s Role in Shaping Future Cybersecurity Playbooks",
-    "summary": "The article discusses how artificial intelligence has reached a pivotal point in privacy, cybersecurity, and online safety, urging the application of decades of experience to prevent irreversible consequences. It highlights the responsibility of current generations to guide AI development responsibly.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/13/cybersecurity-ai-safety-red-lines/",
-    "publishedAt": "2026-10-13T05:30:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-s-role-in-shaping-future-cybersecurity-playbook",
-      "article-425e7a",
-      "425e7a",
-      "ai-s-role-in-shaping-future-cybersecurity-playbooks"
     ]
   },
   {
@@ -6191,96 +6278,6 @@ export const news: NewsBrief[] = [
       "article-16c94c",
       "16c94c",
       "former-us-air-force-members-sentenced-for-million-dollar-bus"
-    ]
-  },
-  {
-    "slug": "south-africa-seeks-assistance-after-ransomware-too-595911",
-    "title": "South Africa Seeks Assistance After Ransomware Toolkit Hits Air Traffic Control Network",
-    "summary": "A ransomware toolkit was installed on at least one operational South African air traffic control network, prompting authorities to seek external help. The attack targeted aviation infrastructure, potentially disrupting air traffic management systems and raising concerns about critical national infrastructure security.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/south-africa-help-cyberattack-air-traffic-control",
-    "publishedAt": "2026-09-30T07:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "south-africa-seeks-assistance-after-ransomware-too",
-      "article-595911",
-      "595911",
-      "south-africa-seeks-assistance-after-ransomware-toolkit-hits-"
-    ]
-  },
-  {
-    "slug": "security-tools-now-scan-claude-enterprise-chats-fo-7a7236",
-    "title": "Security Tools Now Scan Claude Enterprise Chats for Sensitive Data",
-    "summary": "Over 100 security and compliance vendors now integrate with the Claude Compliance API, allowing companies to monitor Claude Enterprise activity. The feed captures conversations, uploaded files, projects, cowork and code sessions, prompts, responses, and tool calls, helping detect and protect sensitive information.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/claude-compliance-api-integrations/",
-    "publishedAt": "2026-09-30T06:31:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "security-tools-now-scan-claude-enterprise-chats-fo",
-      "article-7a7236",
-      "7a7236",
-      "security-tools-now-scan-claude-enterprise-chats-for-sensitiv"
-    ]
-  },
-  {
-    "slug": "owasp-noir-revealed-as-open-source-static-analysis-6c7219",
-    "title": "OWASP Noir Revealed as Open-Source Static Analysis Tool",
-    "summary": "OWASP Noir is an open-source static analysis tool that scans application source code to list exposed endpoints, including paths, HTTP methods, parameters, headers, and cookies, with file and line references. It highlights shadow APIs, deprecated routes, and undocumented handlers, aiding developers in identifying hidden or unused endpoints.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/owasp-noir-open-source-static-analysis-tool/",
-    "publishedAt": "2026-09-30T05:30:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "owasp-noir-revealed-as-open-source-static-analysis",
-      "article-6c7219",
-      "6c7219",
-      "owasp-noir-revealed-as-open-source-static-analysis-tool"
-    ]
-  },
-  {
-    "slug": "eu-cyber-resilience-act-imposes-container-and-kube-1c1b66",
-    "title": "EU Cyber Resilience Act Imposes Container and Kubernetes Security Requirements",
-    "summary": "The EU Cyber Resilience Act (CRA) mandates cybersecurity requirements for products with digital elements sold in the EU, effective Dec. 10, 2024. Reporting obligations begin Sept. 11, 2026, with full enforcement Dec. 11, 2027. The regulation introduces new requirements for teams working with containers and Kubernetes throughout the application lifecycle.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/rapidfort-cra-container-compliance/",
-    "publishedAt": "2026-09-30T05:00:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "eu-cyber-resilience-act-imposes-container-and-kube",
-      "article-1c1b66",
-      "1c1b66",
-      "eu-cyber-resilience-act-imposes-container-and-kubernetes-sec"
-    ]
-  },
-  {
-    "slug": "bh-consulting-launches-bh-haven-sme-cybersecurity-537398",
-    "title": "BH Consulting Launches BH Haven SME Cybersecurity Service with AI Support",
-    "summary": "BH Consulting has introduced BH Haven, a continuous service for Irish SMEs that pairs specialist consultants with a proprietary AI tool for analysis, evidence review, regulatory mapping and reporting. The offering prioritises Ireland, the UK, Nordic and other EU markets, helping clients comply with GDPR, NIS2 and the EU AI Act.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/bh-haven-sme-cybersecurity-service/",
-    "publishedAt": "2026-09-30T04:30:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "bh-consulting-launches-bh-haven-sme-cybersecurity",
-      "article-537398",
-      "537398",
-      "bh-consulting-launches-bh-haven-sme-cybersecurity-service-wi"
     ]
   }
 ];

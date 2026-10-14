@@ -5,8 +5,98 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Oct 2026 13:59:34 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 16:20:03 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Siemens Issues 17 Advisories, Rockwell Fixes ArmorBlock Takeover Flaw</title>
+      <link>https://secubuzz.com/news/siemens-issues-17-advisories-rockwell-fixes-armorb-534653</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/siemens-issues-17-advisories-rockwell-fixes-armorb-534653</guid>
+      <description><![CDATA[On Patch Tuesday, Siemens released 17 advisories covering various industrial control system vulnerabilities. Rockwell Automation addressed a takeover flaw in its ArmorBlock product, allowing attackers to gain unauthorized control. The fixes mitigate potential remote code execution risks and strengthen system integrity.]]></description>
+      <pubDate>Wed, 14 Oct 2026 15:15:15 GMT</pubDate>
+      <source url="https://www.securityweek.com/ics-patch-tuesday-siemens-issues-17-advisories-rockwell-fixes-armorblock-takeover-flaw/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Microsoft Resolves VPN Connection Issues from September 2026 Windows Updates</title>
+      <link>https://secubuzz.com/news/microsoft-resolves-vpn-connection-issues-from-sept-5f977d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-resolves-vpn-connection-issues-from-sept-5f977d</guid>
+      <description><![CDATA[Microsoft has fixed a known problem that caused Always On VPN connections to fail after installing the September 2026 Windows 11 security updates. The patch restores stable VPN functionality for affected users without any reported exploitation or data breach.]]></description>
+      <pubDate>Wed, 14 Oct 2026 14:27:01 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-vpn-issues-caused-by-september-windows-updates/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Experts Debate AI&apos;s Role in Future Cryptanalysis</title>
+      <link>https://secubuzz.com/news/experts-debate-ai-s-role-in-future-cryptanalysis-59cc8a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/experts-debate-ai-s-role-in-future-cryptanalysis-59cc8a</guid>
+      <description><![CDATA[Matthew Green has published a pessimistic series on AI’s potential to outperform humans in cryptanalysis of symmetric and public-key ciphers. The author counters with optimism, emphasizing the over‑engineering of cryptographic systems and expressing stronger faith in their resilience.]]></description>
+      <pubDate>Wed, 14 Oct 2026 14:24:18 GMT</pubDate>
+      <source url="https://www.schneier.com/blog/archives/2026/10/the-future-of-ai-cryptanalysis.html">Schneier on Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>UK Sanctions Cryptomus for Russian Money Laundering</title>
+      <link>https://secubuzz.com/news/uk-sanctions-cryptomus-for-russian-money-launderin-6d5000</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/uk-sanctions-cryptomus-for-russian-money-launderin-6d5000</guid>
+      <description><![CDATA[The United Kingdom has imposed economic sanctions on Cryptomus, a cryptocurrency platform described as a major conduit for payments linked to ransomware, narcotics, darknet markets, fraud, and other cybercrime services. The move aims to block Russia’s ability to bypass existing financial restrictions.]]></description>
+      <pubDate>Wed, 14 Oct 2026 14:22:49 GMT</pubDate>
+      <source url="https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/">Krebs on Security</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Hackers Hijack French Supermarket Fridges, Raising Temperatures to 50°C</title>
+      <link>https://secubuzz.com/news/hackers-hijack-french-supermarket-fridges-raising-34e449</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-hijack-french-supermarket-fridges-raising-34e449</guid>
+      <description><![CDATA[In France, attackers gained control of older Danfoss refrigeration units, forcing them to heat to 50 °C overnight. The breach exploited outdated security software that could not be updated, allowing hackers to override temperature controls and potentially spoil inventory. No confirmation of data theft was reported.]]></description>
+      <pubDate>Wed, 14 Oct 2026 14:10:22 GMT</pubDate>
+      <source url="https://www.schneier.com/blog/archives/2026/10/cyberattack-on-connected-fridges-in-france.html">Schneier on Security</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Harmonic Security Raises $50M to Expand Workforce AI Protection</title>
+      <link>https://secubuzz.com/news/harmonic-security-raises-50m-to-expand-workforce-a-1201a3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/harmonic-security-raises-50m-to-expand-workforce-a-1201a3</guid>
+      <description><![CDATA[Cybersecurity startup Harmonic Security announced a $50 million funding round to grow its engineering and go‑to‑market teams in the United States and United Kingdom. The capital will support the development of AI‑driven solutions designed to protect enterprise workforces from evolving cyber threats.]]></description>
+      <pubDate>Wed, 14 Oct 2026 14:09:51 GMT</pubDate>
+      <source url="https://www.securityweek.com/harmonic-security-raises-50-million-for-workforce-ai-protection/">SecurityWeek</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Hackers Use Fake WatchGuard VPN Site to Steal Login Credentials</title>
+      <link>https://secubuzz.com/news/hackers-use-fake-watchguard-vpn-site-to-steal-logi-393939</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-fake-watchguard-vpn-site-to-steal-logi-393939</guid>
+      <description><![CDATA[Hackers set up a counterfeit WatchGuard VPN download page that lures users into a pop‑up collecting the VPN server address, username, and password. The real, signed installer is then offered, leaving victims’ credentials exposed without installing malware. No malicious client is required.]]></description>
+      <pubDate>Wed, 14 Oct 2026 14:08:23 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/fake-watchguard-vpn/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Closing the Blind Spots of Agentic Penetration Testing</title>
+      <link>https://secubuzz.com/news/closing-the-blind-spots-of-agentic-penetration-tes-696e4e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/closing-the-blind-spots-of-agentic-penetration-tes-696e4e</guid>
+      <description><![CDATA[AI‑driven pentesting can reveal complex attack paths, but safety limits and network boundaries leave many assets untested. Combining agentic testing with exposure validation and breach simulation helps close these gaps, improving overall security posture.]]></description>
+      <pubDate>Wed, 14 Oct 2026 14:00:10 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/the-blind-spots-of-agentic-pentesting-and-how-to-close-them/">BleepingComputer</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>UAT-6275 Targets CIS Government Organizations</title>
+      <link>https://secubuzz.com/news/uat-6275-targets-cis-government-organizations-450fc3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/uat-6275-targets-cis-government-organizations-450fc3</guid>
+      <description><![CDATA[Talos and Recorded Future identified UAT-6275 activity focused on government organizations across the Commonwealth of Independent States. Artifacts also show interest in water resources and energy sectors. The group’s operations suggest a coordinated effort linked to Kazakhstan. No public exploitation or vulnerability disclosed.]]></description>
+      <pubDate>Wed, 14 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://blog.talosintelligence.com/break-the-silence-kazakhstan-nexus-uat-6275-targets-cis-government-organizations/">Cisco Talos</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Global Crackdown Removes 3.7 Million Scam Accounts</title>
+      <link>https://secubuzz.com/news/global-crackdown-removes-3-7-million-scam-accounts-313abd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/global-crackdown-removes-3-7-million-scam-accounts-313abd</guid>
+      <description><![CDATA[Meta, Google, Microsoft, and OpenAI joined an international operation that removed over 3.7 million Facebook and Instagram accounts, pages, and groups linked to West African scam networks. The crackdown led to 28 arrests and the rescue of 117 people forced into scam centers, marking a significant law enforcement success.]]></description>
+      <pubDate>Wed, 14 Oct 2026 13:44:57 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/west-african-scam-networks/">Cyber Security News</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>PoC Released for Linux Vhost Flaw Enabling Root Privilege Escalation and VM Escape</title>
       <link>https://secubuzz.com/news/poc-released-for-linux-vhost-flaw-enabling-root-pr-39d58a</link>
@@ -116,15 +206,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Hirudo Android Malware Replaces Banking Apps to Steal Credentials</title>
-      <link>https://secubuzz.com/news/hirudo-android-malware-replaces-banking-apps-to-st-13d641</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hirudo-android-malware-replaces-banking-apps-to-st-13d641</guid>
-      <description><![CDATA[Hirudo is an Android malware that hijacks legitimate banking applications by installing modified copies that disable security checks. The malware captures user credentials during login, allowing attackers to siphon bank account information. Users should verify app authenticity and keep security software updated.]]></description>
-      <pubDate>Wed, 14 Oct 2026 11:41:20 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/hirudo-android-malware-replaces-banking-apps-to-evade-security-checks/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
       <title>Microsoft Patch Tuesday Addresses Flaw Already Under Attack</title>
       <link>https://secubuzz.com/news/microsoft-patch-tuesday-addresses-flaw-already-und-17065c</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-patch-tuesday-addresses-flaw-already-und-17065c</guid>
@@ -141,15 +222,6 @@
       <pubDate>Wed, 14 Oct 2026 11:19:02 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/researchers-used-public-openai-model-to.html">The Hacker News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Fake Calendly Pages Steal Facebook and Google Logins</title>
-      <link>https://secubuzz.com/news/fake-calendly-pages-steal-facebook-and-google-logi-1130cc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fake-calendly-pages-steal-facebook-and-google-logi-1130cc</guid>
-      <description><![CDATA[Phishing pages masquerading as Calendly interview invitations capture Facebook and Google credentials, even when two‑factor authentication is enabled. The scam tricks users into entering login details on a malicious site that mimics a legitimate scheduling platform.]]></description>
-      <pubDate>Wed, 14 Oct 2026 11:10:30 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/threat-intel/2026/10/fake-calendly-meta-careers-pages-steal-facebook-and-google-logins">Malwarebytes Labs</source>
-      <category>Breach</category>
     </item>
     <item>
       <title>Wiz AI Agents Introduced for Government CNAPP Security</title>
@@ -384,78 +456,6 @@
       <pubDate>Tue, 13 Oct 2026 21:24:45 GMT</pubDate>
       <source url="https://www.darkreading.com/cyberattacks-data-breaches/north-korea-phishes-ukrainians-war-intel">Dark Reading</source>
       <category>Malware</category>
-    </item>
-    <item>
-      <title>Anthropic warns small AI models could self‑replicate across consumer IoT devices</title>
-      <link>https://secubuzz.com/news/anthropic-warns-small-ai-models-could-self-replica-11c42b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-warns-small-ai-models-could-self-replica-11c42b</guid>
-      <description><![CDATA[Anthropic cautions that lightweight AI models may soon be able to self‑replicate across consumer IoT devices such as Android TV boxes and smart ovens, forming distributed botnets that can run AI workloads without data centers. The potential spread could enable large‑scale botnet operations on home devices.]]></description>
-      <pubDate>Tue, 13 Oct 2026 21:16:34 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/anthropic-warns-self-replicating-ai-could-spread-to-your-smart-devices/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Anthropic Research Highlights AI Worm Threats</title>
-      <link>https://secubuzz.com/news/anthropic-research-highlights-ai-worm-threats-28487d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-research-highlights-ai-worm-threats-28487d</guid>
-      <description><![CDATA[Anthropic’s study combined IoT and network tests to examine AI self‑replication, suggesting future AI worms could be difficult to stop. The research outlines potential attack vectors and emphasizes the need for proactive defenses against emerging AI‑driven malware.]]></description>
-      <pubDate>Tue, 13 Oct 2026 20:35:23 GMT</pubDate>
-      <source url="https://www.darkreading.com/perimeter/anthropic-ingredients-future-ai-worms">Dark Reading</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>FTC Accuses Ohio Company of Fraudulent Sextortion Scam</title>
-      <link>https://secubuzz.com/news/ftc-accuses-ohio-company-of-fraudulent-sextortion-8fcd08</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ftc-accuses-ohio-company-of-fraudulent-sextortion-8fcd08</guid>
-      <description><![CDATA[The FTC alleges an Ohio-based firm charged victims thousands of dollars for sextortion help it never delivered. The company’s operation was deemed fraudulent, and the complaint highlights deceptive practices targeting individuals seeking protection from sextortion threats.]]></description>
-      <pubDate>Tue, 13 Oct 2026 20:12:00 GMT</pubDate>
-      <source url="https://therecord.media/sextortion-assistance-company-alleged-fraud-ftc-complaint">The Record</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>UK Housing Ombudsman Service Investigates Security Incident on Case Management System</title>
-      <link>https://secubuzz.com/news/uk-housing-ombudsman-service-investigates-security-596324</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/uk-housing-ombudsman-service-investigates-security-596324</guid>
-      <description><![CDATA[The UK Housing Ombudsman Service is probing a third‑party IT security incident that affected its case management system. The investigation seeks to determine the scope, impact, and any data compromise, with no confirmed breach yet reported.]]></description>
-      <pubDate>Tue, 13 Oct 2026 18:19:44 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/uk-housing-ombudsman-service-investigates-security-incident/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Docker Fixes Critical Two-Year-Old Hub Flaw Allowing User Impersonation</title>
-      <link>https://secubuzz.com/news/docker-fixes-critical-two-year-old-hub-flaw-allowi-4dc54a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/docker-fixes-critical-two-year-old-hub-flaw-allowi-4dc54a</guid>
-      <description><![CDATA[Docker Hub’s registry flaw let a user push, pull, or delete images as another user by converting a personal account into an organization. The issue, fixed on September 30, was deemed critical but no exploitation evidence was found. Docker issued a security advisory on October 12.]]></description>
-      <pubDate>Tue, 13 Oct 2026 18:03:18 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/docker-fixes-critical-two-year-old-hub.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>SAP Cloud SDK for Python Vulnerability Enables OAuth2 Credential Theft</title>
-      <link>https://secubuzz.com/news/sap-cloud-sdk-for-python-vulnerability-enables-oau-40cfe3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sap-cloud-sdk-for-python-vulnerability-enables-oau-40cfe3</guid>
-      <description><![CDATA[A flaw in SAP’s Cloud SDK for Python can transmit an application’s OAuth2 client credentials to an attacker‑controlled server. The issue affects multi‑tenant SAP Business Technology Platform applications using the SDK and requires the attacker to control the tenant subdomain. SAP issued a security advisory on October 13.]]></description>
-      <pubDate>Tue, 13 Oct 2026 17:28:50 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/sap-discloses-critical-cvss-10-flaw-in.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Adobe Releases Patches for 140 Vulnerabilities Across 10 Products</title>
-      <link>https://secubuzz.com/news/adobe-releases-patches-for-140-vulnerabilities-acr-1e9138</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/adobe-releases-patches-for-140-vulnerabilities-acr-1e9138</guid>
-      <description><![CDATA[Adobe has released security patches addressing 140 vulnerabilities that span ten of its products, including Commerce, Photoshop, ColdFusion, Substance 3D, Dimension, FrameMaker, and Bridge. The update mitigates a range of potential weaknesses, from memory corruption to input validation flaws, and is available for download through Adobe’s official update channels.]]></description>
-      <pubDate>Tue, 13 Oct 2026 17:14:42 GMT</pubDate>
-      <source url="https://www.securityweek.com/adobe-patches-140-vulnerabilities-across-10-products/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cloudflare D1 Scales to Millions of Databases with Edge‑Optimized Control Plane</title>
-      <link>https://secubuzz.com/news/cloudflare-d1-scales-to-millions-of-databases-with-597b4a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-d1-scales-to-millions-of-databases-with-597b4a</guid>
-      <description><![CDATA[Cloudflare’s D1 database service demonstrates how a control plane can be architected to scale across millions of databases while keeping data‑plane query operations at the network edge. The design emphasizes guiding principles for building on the Developer Platform, focusing on performance, scalability, and efficient resource management.]]></description>
-      <pubDate>Tue, 13 Oct 2026 16:20:18 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/d1-control-plane/">Cloudflare Security</source>
-      <category>Cloud</category>
     </item>
   </channel>
 </rss>

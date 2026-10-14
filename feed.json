@@ -1,5 +1,159 @@
 [
   {
+    "id": "https://www.securityweek.com/ics-patch-tuesday-siemens-issues-17-advisories-rockwell-fixes-armorblock-takeover-flaw/",
+    "sourceUrl": "https://www.securityweek.com/ics-patch-tuesday-siemens-issues-17-advisories-rockwell-fixes-armorblock-takeover-flaw/",
+    "title": "Siemens Issues 17 Advisories, Rockwell Fixes ArmorBlock Takeover Flaw",
+    "headline": "Siemens Issues 17 Advisories, Rockwell Fixes ArmorBlock Takeover Flaw",
+    "summary": "On Patch Tuesday, Siemens released 17 advisories covering various industrial control system vulnerabilities. Rockwell Automation addressed a takeover flaw in its ArmorBlock product, allowing attackers to gain unauthorized control. The fixes mitigate potential remote code execution risks and strengthen system integrity.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-14T15:15:15.000Z",
+    "url": "https://www.securityweek.com/ics-patch-tuesday-siemens-issues-17-advisories-rockwell-fixes-armorblock-takeover-flaw/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-vpn-issues-caused-by-september-windows-updates/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-vpn-issues-caused-by-september-windows-updates/",
+    "title": "Microsoft Resolves VPN Connection Issues from September 2026 Windows Updates",
+    "headline": "Microsoft Resolves VPN Connection Issues from September 2026 Windows Updates",
+    "summary": "Microsoft has fixed a known problem that caused Always On VPN connections to fail after installing the September 2026 Windows 11 security updates. The patch restores stable VPN functionality for affected users without any reported exploitation or data breach.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-14T14:27:01.000Z",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-vpn-issues-caused-by-september-windows-updates/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.schneier.com/blog/archives/2026/10/the-future-of-ai-cryptanalysis.html",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/the-future-of-ai-cryptanalysis.html",
+    "title": "Experts Debate AI's Role in Future Cryptanalysis",
+    "headline": "Experts Debate AI's Role in Future Cryptanalysis",
+    "summary": "Matthew Green has published a pessimistic series on AI’s potential to outperform humans in cryptanalysis of symmetric and public-key ciphers. The author counters with optimism, emphasizing the over‑engineering of cryptographic systems and expressing stronger faith in their resilience.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Schneier on Security",
+    "publishedAt": "2026-10-14T14:24:18.000Z",
+    "url": "https://www.schneier.com/blog/archives/2026/10/the-future-of-ai-cryptanalysis.html",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/13/cybersecurity-ai-safety-red-lines/"
+      }
+    ]
+  },
+  {
+    "id": "https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/",
+    "sourceUrl": "https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/",
+    "title": "UK Sanctions Cryptomus for Russian Money Laundering",
+    "headline": "UK Sanctions Cryptomus for Russian Money Laundering",
+    "summary": "The United Kingdom has imposed economic sanctions on Cryptomus, a cryptocurrency platform described as a major conduit for payments linked to ransomware, narcotics, darknet markets, fraud, and other cybercrime services. The move aims to block Russia’s ability to bypass existing financial restrictions.",
+    "category": "NATION_STATE",
+    "severity": "LOW",
+    "source": "Krebs on Security",
+    "publishedAt": "2026-10-14T14:22:49.000Z",
+    "url": "https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.schneier.com/blog/archives/2026/10/cyberattack-on-connected-fridges-in-france.html",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/cyberattack-on-connected-fridges-in-france.html",
+    "title": "Hackers Hijack French Supermarket Fridges, Raising Temperatures to 50°C",
+    "headline": "Hackers Hijack French Supermarket Fridges, Raising Temperatures to 50°C",
+    "summary": "In France, attackers gained control of older Danfoss refrigeration units, forcing them to heat to 50 °C overnight. The breach exploited outdated security software that could not be updated, allowing hackers to override temperature controls and potentially spoil inventory. No confirmation of data theft was reported.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Schneier on Security",
+    "publishedAt": "2026-10-14T14:10:22.000Z",
+    "url": "https://www.schneier.com/blog/archives/2026/10/cyberattack-on-connected-fridges-in-france.html",
+    "additionalSources": [
+      {
+        "source": "Malwarebytes Labs",
+        "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/hackers-heat-up-supermarket-fridges-spoiling-food-across-france"
+      }
+    ]
+  },
+  {
+    "id": "https://www.securityweek.com/harmonic-security-raises-50-million-for-workforce-ai-protection/",
+    "sourceUrl": "https://www.securityweek.com/harmonic-security-raises-50-million-for-workforce-ai-protection/",
+    "title": "Harmonic Security Raises $50M to Expand Workforce AI Protection",
+    "headline": "Harmonic Security Raises $50M to Expand Workforce AI Protection",
+    "summary": "Cybersecurity startup Harmonic Security announced a $50 million funding round to grow its engineering and go‑to‑market teams in the United States and United Kingdom. The capital will support the development of AI‑driven solutions designed to protect enterprise workforces from evolving cyber threats.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-14T14:09:51.000Z",
+    "url": "https://www.securityweek.com/harmonic-security-raises-50-million-for-workforce-ai-protection/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/fake-watchguard-vpn/",
+    "sourceUrl": "https://cybersecuritynews.com/fake-watchguard-vpn/",
+    "title": "Hackers Use Fake WatchGuard VPN Site to Steal Login Credentials",
+    "headline": "Hackers Use Fake WatchGuard VPN Site to Steal Login Credentials",
+    "summary": "Hackers set up a counterfeit WatchGuard VPN download page that lures users into a pop‑up collecting the VPN server address, username, and password. The real, signed installer is then offered, leaving victims’ credentials exposed without installing malware. No malicious client is required.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-14T14:08:23.000Z",
+    "url": "https://cybersecuritynews.com/fake-watchguard-vpn/",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/hirudo-android-malware-replaces-banking-apps-to-evade-security-checks/"
+      },
+      {
+        "source": "Malwarebytes Labs",
+        "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/10/fake-calendly-meta-careers-pages-steal-facebook-and-google-logins"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/the-blind-spots-of-agentic-pentesting-and-how-to-close-them/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/the-blind-spots-of-agentic-pentesting-and-how-to-close-them/",
+    "title": "Closing the Blind Spots of Agentic Penetration Testing",
+    "headline": "Closing the Blind Spots of Agentic Penetration Testing",
+    "summary": "AI‑driven pentesting can reveal complex attack paths, but safety limits and network boundaries leave many assets untested. Combining agentic testing with exposure validation and breach simulation helps close these gaps, improving overall security posture.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-14T14:00:10.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/the-blind-spots-of-agentic-pentesting-and-how-to-close-them/",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/13/ridge-security-ridgeone/"
+      }
+    ]
+  },
+  {
+    "id": "https://blog.talosintelligence.com/break-the-silence-kazakhstan-nexus-uat-6275-targets-cis-government-organizations/",
+    "sourceUrl": "https://blog.talosintelligence.com/break-the-silence-kazakhstan-nexus-uat-6275-targets-cis-government-organizations/",
+    "title": "UAT-6275 Targets CIS Government Organizations",
+    "headline": "UAT-6275 Targets CIS Government Organizations",
+    "summary": "Talos and Recorded Future identified UAT-6275 activity focused on government organizations across the Commonwealth of Independent States. Artifacts also show interest in water resources and energy sectors. The group’s operations suggest a coordinated effort linked to Kazakhstan. No public exploitation or vulnerability disclosed.",
+    "category": "NATION_STATE",
+    "severity": "HIGH",
+    "source": "Cisco Talos",
+    "publishedAt": "2026-10-14T14:00:00.000Z",
+    "url": "https://blog.talosintelligence.com/break-the-silence-kazakhstan-nexus-uat-6275-targets-cis-government-organizations/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/west-african-scam-networks/",
+    "sourceUrl": "https://cybersecuritynews.com/west-african-scam-networks/",
+    "title": "Global Crackdown Removes 3.7 Million Scam Accounts",
+    "headline": "Global Crackdown Removes 3.7 Million Scam Accounts",
+    "summary": "Meta, Google, Microsoft, and OpenAI joined an international operation that removed over 3.7 million Facebook and Instagram accounts, pages, and groups linked to West African scam networks. The crackdown led to 28 arrests and the rescue of 117 people forced into scam centers, marking a significant law enforcement success.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-14T13:44:57.000Z",
+    "url": "https://cybersecuritynews.com/west-african-scam-networks/",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybersecuritynews.com/poc-released-for-linux-vhost-flaw/",
     "sourceUrl": "https://cybersecuritynews.com/poc-released-for-linux-vhost-flaw/",
     "title": "PoC Released for Linux Vhost Flaw Enabling Root Privilege Escalation and VM Escape",
@@ -36,6 +190,10 @@
       {
         "source": "SecurityWeek",
         "sourceUrl": "https://www.securityweek.com/microsoft-disrupts-chinese-language-phishing-market-behind-1b-messages/"
+      },
+      {
+        "source": "Microsoft Security",
+        "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/14/the-hidden-network-inside-the-phishing-infrastructure-ecosystem-powering-global-cybercrime/"
       }
     ]
   },
@@ -197,28 +355,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.bleepingcomputer.com/news/security/hirudo-android-malware-replaces-banking-apps-to-evade-security-checks/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hirudo-android-malware-replaces-banking-apps-to-evade-security-checks/",
-    "title": "Hirudo Android Malware Replaces Banking Apps to Steal Credentials",
-    "headline": "Hirudo Android Malware Replaces Banking Apps to Steal Credentials",
-    "summary": "Hirudo is an Android malware that hijacks legitimate banking applications by installing modified copies that disable security checks. The malware captures user credentials during login, allowing attackers to siphon bank account information. Users should verify app authenticity and keep security software updated.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-14T11:41:20.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/hirudo-android-malware-replaces-banking-apps-to-evade-security-checks/",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/hirudo-android-trojan-uses-patched.html"
-      },
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/casbaneiro-malware/"
-      }
-    ]
-  },
-  {
     "id": "https://www.malwarebytes.com/blog/bugs/2026/10/update-windows-record-patch-tuesday-fixes-flaw-already-under-attack",
     "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/10/update-windows-record-patch-tuesday-fixes-flaw-already-under-attack",
     "title": "Microsoft Patch Tuesday Addresses Flaw Already Under Attack",
@@ -253,19 +389,6 @@
         "sourceUrl": "https://cybersecuritynews.com/google-chrome-exploit-gpt-5-6/"
       }
     ]
-  },
-  {
-    "id": "https://www.malwarebytes.com/blog/threat-intel/2026/10/fake-calendly-meta-careers-pages-steal-facebook-and-google-logins",
-    "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/10/fake-calendly-meta-careers-pages-steal-facebook-and-google-logins",
-    "title": "Fake Calendly Pages Steal Facebook and Google Logins",
-    "headline": "Fake Calendly Pages Steal Facebook and Google Logins",
-    "summary": "Phishing pages masquerading as Calendly interview invitations capture Facebook and Google credentials, even when two‑factor authentication is enabled. The scam tricks users into entering login details on a malicious site that mimics a legitimate scheduling platform.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "Malwarebytes Labs",
-    "publishedAt": "2026-10-14T11:10:30.000Z",
-    "url": "https://www.malwarebytes.com/blog/threat-intel/2026/10/fake-calendly-meta-careers-pages-steal-facebook-and-google-logins",
-    "additionalSources": []
   },
   {
     "id": "https://www.wiz.io/blog/wiz-for-gov-agents-fedramp",
@@ -1013,19 +1136,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.helpnetsecurity.com/2026/10/13/ridge-security-ridgeone/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/13/ridge-security-ridgeone/",
-    "title": "Ridge Security’s RidgeOne Keeps Penetration Testing Data In‑House",
-    "headline": "Ridge Security’s RidgeOne Keeps Penetration Testing Data In‑House",
-    "summary": "Ridge Security launches RidgeOne, a self‑contained AI‑powered penetration testing platform that runs entirely within customer environments. By integrating RidgeGen with an open‑weight model on NVIDIA DGX Spark, the solution performs deep security assessments without transmitting data to external AI services or incurring token fees. It targets mid‑size organizations with limited AI resources.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-13T12:49:07.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/13/ridge-security-ridgeone/",
-    "additionalSources": []
-  },
-  {
     "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-286-02",
     "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-286-02",
     "title": "Swann Communications SWIFI-SE2KIC Firmware Vulnerability CVE-2026-107605 Allows Unauthenticated Live Video Access",
@@ -1057,24 +1167,6 @@
       {
         "source": "Cyber Security News",
         "sourceUrl": "https://cybersecuritynews.com/ahold-delhaize-cyberattack/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.malwarebytes.com/blog/news/2026/10/hackers-heat-up-supermarket-fridges-spoiling-food-across-france",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/hackers-heat-up-supermarket-fridges-spoiling-food-across-france",
-    "title": "Hackers Heat Up French Supermarket Fridges, Spoiling Food",
-    "headline": "Hackers Heat Up French Supermarket Fridges, Spoiling Food",
-    "summary": "Cybercriminals targeted supermarket temperature‑control systems in France, raising fridge temperatures and causing food spoilage, empty shelves, and fire incidents. The attack disrupted supply chains and led to significant product loss. No specific mitigation steps are provided, but the incident highlights the vulnerability of IoT devices in retail environments.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Malwarebytes Labs",
-    "publishedAt": "2026-10-13T11:17:41.000Z",
-    "url": "https://www.malwarebytes.com/blog/news/2026/10/hackers-heat-up-supermarket-fridges-spoiling-food-across-france",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/attackers-heat-french-supermarket.html"
       }
     ]
   },
@@ -1152,19 +1244,6 @@
         "sourceUrl": "https://thehackernews.com/2026/10/gitlab-patches-cvss-100-flaw-that-could.html"
       }
     ]
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/13/cybersecurity-ai-safety-red-lines/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/13/cybersecurity-ai-safety-red-lines/",
-    "title": "AI’s Role in Shaping Future Cybersecurity Playbooks",
-    "headline": "AI’s Role in Shaping Future Cybersecurity Playbooks",
-    "summary": "The article discusses how artificial intelligence has reached a pivotal point in privacy, cybersecurity, and online safety, urging the application of decades of experience to prevent irreversible consequences. It highlights the responsibility of current generations to guide AI development responsibly.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-13T05:30:01.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/13/cybersecurity-ai-safety-red-lines/",
-    "additionalSources": []
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/10/13/frontier-ai-ot-security-threat/",
@@ -5177,81 +5256,6 @@
       {
         "source": "CyberNews AI",
         "sourceUrl": "https://cybernewsai.com/blog/ex-air-force-members-jailed-bec-fraud"
-      }
-    ]
-  },
-  {
-    "id": "https://www.darkreading.com/cyberattacks-data-breaches/south-africa-help-cyberattack-air-traffic-control",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/south-africa-help-cyberattack-air-traffic-control",
-    "title": "South Africa Seeks Assistance After Ransomware Toolkit Hits Air Traffic Control Network",
-    "headline": "South Africa Seeks Assistance After Ransomware Toolkit Hits Air Traffic Control Network",
-    "summary": "A ransomware toolkit was installed on at least one operational South African air traffic control network, prompting authorities to seek external help. The attack targeted aviation infrastructure, potentially disrupting air traffic management systems and raising concerns about critical national infrastructure security.",
-    "category": "RANSOMWARE",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "publishedAt": "2026-09-30T07:00:00.000Z",
-    "url": "https://www.darkreading.com/cyberattacks-data-breaches/south-africa-help-cyberattack-air-traffic-control",
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/japans-keio-ransomware-attack-air-gapped-railway-resilience"
-      }
-    ]
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/09/30/claude-compliance-api-integrations/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/claude-compliance-api-integrations/",
-    "title": "Security Tools Now Scan Claude Enterprise Chats for Sensitive Data",
-    "headline": "Security Tools Now Scan Claude Enterprise Chats for Sensitive Data",
-    "summary": "Over 100 security and compliance vendors now integrate with the Claude Compliance API, allowing companies to monitor Claude Enterprise activity. The feed captures conversations, uploaded files, projects, cowork and code sessions, prompts, responses, and tool calls, helping detect and protect sensitive information.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-09-30T06:31:58.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/09/30/claude-compliance-api-integrations/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/09/30/owasp-noir-open-source-static-analysis-tool/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/owasp-noir-open-source-static-analysis-tool/",
-    "title": "OWASP Noir Revealed as Open-Source Static Analysis Tool",
-    "headline": "OWASP Noir Revealed as Open-Source Static Analysis Tool",
-    "summary": "OWASP Noir is an open-source static analysis tool that scans application source code to list exposed endpoints, including paths, HTTP methods, parameters, headers, and cookies, with file and line references. It highlights shadow APIs, deprecated routes, and undocumented handlers, aiding developers in identifying hidden or unused endpoints.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-09-30T05:30:36.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/09/30/owasp-noir-open-source-static-analysis-tool/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/09/30/rapidfort-cra-container-compliance/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/rapidfort-cra-container-compliance/",
-    "title": "EU Cyber Resilience Act Imposes Container and Kubernetes Security Requirements",
-    "headline": "EU Cyber Resilience Act Imposes Container and Kubernetes Security Requirements",
-    "summary": "The EU Cyber Resilience Act (CRA) mandates cybersecurity requirements for products with digital elements sold in the EU, effective Dec. 10, 2024. Reporting obligations begin Sept. 11, 2026, with full enforcement Dec. 11, 2027. The regulation introduces new requirements for teams working with containers and Kubernetes throughout the application lifecycle.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-09-30T05:00:53.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/09/30/rapidfort-cra-container-compliance/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/09/30/bh-haven-sme-cybersecurity-service/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/bh-haven-sme-cybersecurity-service/",
-    "title": "BH Consulting Launches BH Haven SME Cybersecurity Service with AI Support",
-    "headline": "BH Consulting Launches BH Haven SME Cybersecurity Service with AI Support",
-    "summary": "BH Consulting has introduced BH Haven, a continuous service for Irish SMEs that pairs specialist consultants with a proprietary AI tool for analysis, evidence review, regulatory mapping and reporting. The offering prioritises Ireland, the UK, Nordic and other EU markets, helping clients comply with GDPR, NIS2 and the EU AI Act.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-09-30T04:30:17.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/09/30/bh-haven-sme-cybersecurity-service/",
-    "additionalSources": [
-      {
-        "source": "Wiz Research",
-        "sourceUrl": "https://www.wiz.io/blog/introducing-wiz-partner-alliance-managed-service-provider-program"
       }
     ]
   }
