@@ -2444,16 +2444,57 @@ async function sendPushNotificationsForNewArticles(newArticles, activeFeed) {
 
         if (response.ok) {
           const result = await response.json();
+          const ticketIds = [];
+          const ticketIdToToken = {};
           if (Array.isArray(result?.data)) {
             result.data.forEach((ticket, idx) => {
+              const toToken = chunk[idx]?.to;
               if (
                 ticket.status === "error" &&
                 ticket.details?.error === "DeviceNotRegistered"
               ) {
-                invalidTokens.add(chunk[idx].to);
+                invalidTokens.add(toToken);
+              } else if (ticket.id && toToken) {
+                ticketIdToToken[ticket.id] = toToken;
+                ticketIds.push(ticket.id);
               }
             });
           }
+
+          // Asynchronously verify FCM receipts to detect uninstalled apps
+          if (ticketIds.length > 0) {
+            await sleep(4000);
+            try {
+              const receiptRes = await fetch(
+                "https://exp.host/--/api/v2/push/getReceipts",
+                {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                    "Accept-Encoding": "gzip, deflate",
+                  },
+                  body: JSON.stringify({ ids: ticketIds }),
+                },
+              );
+              if (receiptRes.ok) {
+                const receiptData = await receiptRes.json();
+                const receipts = receiptData?.data || {};
+                for (const [id, r] of Object.entries(receipts)) {
+                  if (
+                    r?.status === "error" &&
+                    r.details?.error === "DeviceNotRegistered"
+                  ) {
+                    const deadTok = ticketIdToToken[id];
+                    if (deadTok) invalidTokens.add(deadTok);
+                  }
+                }
+              }
+            } catch {
+              // Receipt poll error is non-fatal
+            }
+          }
+
           console.log(
             `Sent batch of ${chunk.length} notifications successfully.`,
           );
@@ -2664,10 +2705,11 @@ async function checkAndBroadcastCisaKevZeroDays() {
       }));
 
       const chunkSize = 100;
+      const cisaInvalidTokens = new Set();
       for (let i = 0; i < messages.length; i += chunkSize) {
         const chunk = messages.slice(i, i + chunkSize);
         try {
-          await fetch("https://exp.host/--/api/v2/push/send", {
+          const pushRes = await fetch("https://exp.host/--/api/v2/push/send", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -2675,8 +2717,68 @@ async function checkAndBroadcastCisaKevZeroDays() {
             },
             body: JSON.stringify(chunk),
           });
+          if (pushRes.ok) {
+            const pushData = await pushRes.json();
+            const ticketIds = [];
+            const ticketIdToToken = {};
+            if (Array.isArray(pushData?.data)) {
+              pushData.data.forEach((ticket, idx) => {
+                const toTok = chunk[idx]?.to;
+                if (ticket.status === "error" && ticket.details?.error === "DeviceNotRegistered") {
+                  cisaInvalidTokens.add(toTok);
+                } else if (ticket.id && toTok) {
+                  ticketIdToToken[ticket.id] = toTok;
+                  ticketIds.push(ticket.id);
+                }
+              });
+            }
+
+            if (ticketIds.length > 0) {
+              await sleep(4000);
+              try {
+                const receiptRes = await fetch("https://exp.host/--/api/v2/push/getReceipts", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json", Accept: "application/json" },
+                  body: JSON.stringify({ ids: ticketIds }),
+                });
+                if (receiptRes.ok) {
+                  const rData = await receiptRes.json();
+                  const receipts = rData?.data || {};
+                  for (const [id, r] of Object.entries(receipts)) {
+                    if (r?.status === "error" && r.details?.error === "DeviceNotRegistered") {
+                      const deadTok = ticketIdToToken[id];
+                      if (deadTok) cisaInvalidTokens.add(deadTok);
+                    }
+                  }
+                }
+              } catch {
+                // Non-fatal
+              }
+            }
+          }
         } catch (pushErr) {
           console.warn("Error sending CISA push chunk:", pushErr);
+        }
+      }
+
+      if (cisaInvalidTokens.size > 0) {
+        try {
+          const headers = { "Content-Type": "application/json" };
+          if (PUSH_ADMIN_SECRET) {
+            headers["x-admin-key"] = PUSH_ADMIN_SECRET;
+          }
+          const deactivateUrl = PUSH_TOKEN_API_URL.replace(
+            /\/push-tokens\/?$/,
+            "/push-tokens/deactivate",
+          );
+          await fetch(deactivateUrl, {
+            method: "POST",
+            headers,
+            body: JSON.stringify({ tokens: Array.from(cisaInvalidTokens) }),
+          });
+          console.log(`Deactivated ${cisaInvalidTokens.size} expired tokens from CISA alert.`);
+        } catch {
+          // Ignore
         }
       }
 

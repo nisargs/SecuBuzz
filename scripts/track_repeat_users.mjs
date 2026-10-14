@@ -207,6 +207,21 @@ if (process.argv[1]?.endsWith('track_repeat_users.mjs')) {
           }
         }
       }
+
+      // 5. Active Mobile Fleet Telemetry
+      const fleetSql = `SELECT 
+        SUM(CASE WHEN is_active = 1 THEN 1 ELSE 0 END) as activeDevices,
+        SUM(CASE WHEN is_active = 0 THEN 1 ELSE 0 END) as uninstalledDevices,
+        SUM(CASE WHEN is_active = 1 AND last_seen_at >= datetime('now', '-7 days') THEN 1 ELSE 0 END) as weeklyActiveInstallBase,
+        SUM(CASE WHEN is_active = 1 AND last_seen_at >= datetime('now', '-3 days') THEN 1 ELSE 0 END) as dailyActiveDevices
+      FROM push_tokens;`;
+      const fleetRes = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', fleetSql);
+      const fleet = fleetRes?.[0]?.results?.[0];
+      if (fleet) {
+        console.log(`\n📱 [5] MOBILE DEVICE INSTALL BASE (D1 REGISTRY):`);
+        console.log(`  Live Installed Devices: ${fleet.activeDevices} (Weekly Active Install Base: ${fleet.weeklyActiveInstallBase} | Daily Active: ${fleet.dailyActiveDevices})`);
+        console.log(`  Uninstalled / Pruned Devices: ${fleet.uninstalledDevices}`);
+      }
     } catch {
       // Ignore if offline
     }

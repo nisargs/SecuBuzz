@@ -198,11 +198,28 @@ export async function fetchCloudflareAnalytics({ zoneTag = '65259b39c7fd2648a898
       recent: recentRes?.[0]?.results || []
     };
 
+    const tokenSummaryRes = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', `
+      SELECT 
+        COUNT(*) as totalTokens,
+        SUM(CASE WHEN is_active = 1 THEN 1 ELSE 0 END) as activeDevices,
+        SUM(CASE WHEN is_active = 0 THEN 1 ELSE 0 END) as uninstalledDevices,
+        SUM(CASE WHEN is_active = 1 AND last_seen_at >= datetime('now', '-7 days') THEN 1 ELSE 0 END) as weeklyActiveInstallBase,
+        SUM(CASE WHEN is_active = 1 AND last_seen_at >= datetime('now', '-3 days') THEN 1 ELSE 0 END) as dailyActiveDevices
+      FROM push_tokens
+    `);
     const tokenStatsRes = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', 'SELECT COUNT(*) as total, platform FROM push_tokens WHERE is_active = 1 GROUP BY platform');
     const tokenVersionsRes = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', 'SELECT app_version, COUNT(*) as count FROM push_tokens WHERE is_active = 1 GROUP BY app_version ORDER BY app_version DESC');
     const notificationsSentRes = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', 'SELECT COUNT(*) as totalSent FROM sent_notifications');
 
+    const summary = tokenSummaryRes?.[0]?.results?.[0] || {};
     deviceTokens = {
+      summary: {
+        totalTokens: Number(summary.totalTokens || 0),
+        activeDevices: Number(summary.activeDevices || 0),
+        uninstalledDevices: Number(summary.uninstalledDevices || 0),
+        weeklyActiveInstallBase: Number(summary.weeklyActiveInstallBase || 0),
+        dailyActiveDevices: Number(summary.dailyActiveDevices || 0)
+      },
       platforms: tokenStatsRes?.[0]?.results || [],
       versions: tokenVersionsRes?.[0]?.results || [],
       totalSent: Number(notificationsSentRes?.[0]?.results?.[0]?.totalSent || 0)
@@ -231,12 +248,12 @@ if (process.argv[1]?.endsWith('cf_analytics.mjs')) {
     const mb = today?.sum?.bytes ? (today.sum.bytes / (1024 * 1024)).toFixed(2) : '0';
     console.log(`Today (${today?.dimensions?.date || 'Today'}): ${today?.sum?.requests || 0} Requests | ${today?.uniq?.uniques || 0} Unique Visitors | ${today?.sum?.pageViews || 0} Page Views | ${mb} MB Bandwidth | ${today?.sum?.threats || 0} Threats Blocked`);
 
-    if (tokens && tokens.platforms && tokens.platforms.length > 0) {
-      const totalDevs = tokens.platforms.reduce((acc, p) => acc + (p.total || 0), 0);
+    if (tokens && tokens.summary) {
       console.log('\n--- Active Registered Mobile Devices (D1 Registry) ---');
-      console.log(`  Total Active Devices: ${totalDevs} (${tokens.platforms.map(p => `${p.platform}: ${p.total}`).join(', ')})`);
+      console.log(`  Live Installed Devices: ${tokens.summary.activeDevices} (Weekly Active Install Base: ${tokens.summary.weeklyActiveInstallBase} | Daily Active: ${tokens.summary.dailyActiveDevices})`);
+      console.log(`  Uninstalled / Pruned Devices: ${tokens.summary.uninstalledDevices}`);
       if (tokens.versions && tokens.versions.length > 0) {
-        console.log(`  App Versions Installed: ${tokens.versions.map(v => `v${v.app_version}: ${v.count}`).join(' | ')}`);
+        console.log(`  Live Production Versions: ${tokens.versions.map(v => `v${v.app_version}: ${v.count}`).join(' | ')}`);
       }
       console.log(`  Total Push Alerts Delivered: ${tokens.totalSent}`);
     }
