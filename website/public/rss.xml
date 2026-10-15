@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Oct 2026 23:24:34 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 00:18:27 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Palo Alto Networks Issues Patch for Exploited PAN-OS RCE Vulnerability CVE-2026-0322</title>
