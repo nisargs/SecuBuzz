@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Oct 2026 12:19:08 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 13:28:45 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Microsoft Announces End of Mainstream Support for Windows Server 2022</title>
+      <link>https://secubuzz.com/news/microsoft-announces-end-of-mainstream-support-for-5e528b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-announces-end-of-mainstream-support-for-5e528b</guid>
+      <description><![CDATA[Microsoft announced that Windows Server 2022 has reached the end of mainstream support and will remain in extended support until October 2031. Users must plan for extended support and consider upgrading to newer server editions to maintain security updates and compliance.]]></description>
+      <pubDate>Thu, 15 Oct 2026 13:18:36 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2022-reached-end-of-mainstream-support/">BleepingComputer</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Cloudflare and OpenAI Partner to Improve AI Discovery</title>
+      <link>https://secubuzz.com/news/cloudflare-and-openai-partner-to-improve-ai-discov-7fca34</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-and-openai-partner-to-improve-ai-discov-7fca34</guid>
+      <description><![CDATA[Cloudflare and OpenAI are partnering to enhance AI discovery by improving content relevance, reducing wasted requests, and streamlining updates for users and website owners. The collaboration aims to make AI experiences more efficient and user-friendly across the web globally today.]]></description>
+      <pubDate>Thu, 15 Oct 2026 13:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/cloudflare-openai-discovery-agentic-web/">Cloudflare Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Malwarebytes Launches Scam Link Check Tool</title>
+      <link>https://secubuzz.com/news/malwarebytes-launches-scam-link-check-tool-4c575a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/malwarebytes-launches-scam-link-check-tool-4c575a</guid>
+      <description><![CDATA[Malwarebytes introduced a Scam Link Check feature that scans suspicious URLs for phishing, scams, malware, and other online threats before users click. The tool helps users verify link safety and protect against malicious content. No vulnerabilities or exploits are reported.]]></description>
+      <pubDate>Thu, 15 Oct 2026 12:55:00 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/product/2026/10/is-this-link-safe-find-out-with-malwarebytes-scam-link-check">Malwarebytes Labs</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Supermarket Refrigeration Attack Expands to Copeland and Dixell Controllers</title>
+      <link>https://secubuzz.com/news/supermarket-refrigeration-attack-expands-to-copela-2a3033</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/supermarket-refrigeration-attack-expands-to-copela-2a3033</guid>
+      <description><![CDATA[Cyberattacks targeting refrigeration systems in about 700 French supermarkets have spread to Copeland and Dixell controllers. The attacks compromise control systems but no group has claimed responsibility. The incident highlights the growing threat to industrial control infrastructure.]]></description>
+      <pubDate>Thu, 15 Oct 2026 12:50:42 GMT</pubDate>
+      <source url="https://www.securityweek.com/supermarket-refrigeration-attack-widens-to-copeland-dixell-controllers/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Drupal Core RCE Flaw Exploitable via Contributed Modules, No-Login Path</title>
       <link>https://secubuzz.com/news/drupal-core-rce-flaw-exploitable-via-contributed-m-b922f0</link>
@@ -114,15 +150,6 @@
       <pubDate>Thu, 15 Oct 2026 09:55:19 GMT</pubDate>
       <source url="https://www.securityweek.com/centerpoint-energy-data-breach-impacts-1-million-texans/">SecurityWeek</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Microsoft fixes bug causing Windows black screens, Explorer crashes</title>
-      <link>https://secubuzz.com/news/microsoft-fixes-bug-causing-windows-black-screens-222c03</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-fixes-bug-causing-windows-black-screens-222c03</guid>
-      <description><![CDATA[Microsoft released a patch that resolves a known issue causing black screens, desktop loading problems, and Explorer crashes on Windows 11 systems after updates issued since August. The fix addresses the underlying bug that triggered these UI failures.]]></description>
-      <pubDate>Thu, 15 Oct 2026 09:10:20 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-causing-windows-black-screens-explorer-crashes/">BleepingComputer</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>UAT-6275 Hackers Exploit WinRAR Flaw to Target CIS Government Organizations</title>
@@ -428,33 +455,6 @@
       <description><![CDATA[AI‑driven pentesting can reveal complex attack paths, but safety limits and network boundaries leave many assets untested. Combining agentic testing with exposure validation and breach simulation helps close these gaps, improving overall security posture.]]></description>
       <pubDate>Wed, 14 Oct 2026 14:00:10 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/the-blind-spots-of-agentic-pentesting-and-how-to-close-them/">BleepingComputer</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Global Crackdown Removes 3.7 Million Scam Accounts</title>
-      <link>https://secubuzz.com/news/global-crackdown-removes-3-7-million-scam-accounts-313abd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/global-crackdown-removes-3-7-million-scam-accounts-313abd</guid>
-      <description><![CDATA[Meta, Google, Microsoft, and OpenAI joined an international operation that removed over 3.7 million Facebook and Instagram accounts, pages, and groups linked to West African scam networks. The crackdown led to 28 arrests and the rescue of 117 people forced into scam centers, marking a significant law enforcement success.]]></description>
-      <pubDate>Wed, 14 Oct 2026 13:44:57 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/west-african-scam-networks/">Cyber Security News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>PoC Released for Linux Vhost Flaw Enabling Root Privilege Escalation and VM Escape</title>
-      <link>https://secubuzz.com/news/poc-released-for-linux-vhost-flaw-enabling-root-pr-39d58a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/poc-released-for-linux-vhost-flaw-enabling-root-pr-39d58a</guid>
-      <description><![CDATA[A public proof of concept for Vghost, a high‑severity Linux vhost flaw tracked as CVE‑2026‑74580, demonstrates how a local user can gain root access or, in certain virtual machine setups, escape the guest to affect the host. The flaw has a CVSS v3.1 score of 8.8 and is fixed in the latest kernel updates.]]></description>
-      <pubDate>Wed, 14 Oct 2026 13:19:35 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/poc-released-for-linux-vhost-flaw/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Russian Travel Site Offline After Cyberattack</title>
-      <link>https://secubuzz.com/news/russian-travel-site-offline-after-cyberattack-948fdf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/russian-travel-site-offline-after-cyberattack-948fdf</guid>
-      <description><![CDATA[Customers of the Russian travel booking platform Anywayanyday could not book tickets or hotel rooms after a cyberattack, prompting the company to suspend reservations while it responds to the incident.]]></description>
-      <pubDate>Wed, 14 Oct 2026 13:05:00 GMT</pubDate>
-      <source url="https://therecord.media/russia-anywayanyday-travel-website-cyberattack">The Record</source>
       <category>Policy</category>
     </item>
   </channel>

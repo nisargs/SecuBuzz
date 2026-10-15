@@ -11,6 +11,77 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "microsoft-announces-end-of-mainstream-support-for-5e528b",
+    "title": "Microsoft Announces End of Mainstream Support for Windows Server 2022",
+    "summary": "Microsoft announced that Windows Server 2022 has reached the end of mainstream support and will remain in extended support until October 2031. Users must plan for extended support and consider upgrading to newer server editions to maintain security updates and compliance.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2022-reached-end-of-mainstream-support/",
+    "publishedAt": "2026-10-15T13:18:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-announces-end-of-mainstream-support-for",
+      "article-5e528b",
+      "5e528b",
+      "microsoft-announces-end-of-mainstream-support-for-windows-se"
+    ]
+  },
+  {
+    "slug": "cloudflare-and-openai-partner-to-improve-ai-discov-7fca34",
+    "title": "Cloudflare and OpenAI Partner to Improve AI Discovery",
+    "summary": "Cloudflare and OpenAI are partnering to enhance AI discovery by improving content relevance, reducing wasted requests, and streamlining updates for users and website owners. The collaboration aims to make AI experiences more efficient and user-friendly across the web globally today.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/cloudflare-openai-discovery-agentic-web/",
+    "publishedAt": "2026-10-15T13:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cloudflare-and-openai-partner-to-improve-ai-discov",
+      "article-7fca34",
+      "7fca34",
+      "cloudflare-and-openai-partner-to-improve-ai-discovery"
+    ]
+  },
+  {
+    "slug": "malwarebytes-launches-scam-link-check-tool-4c575a",
+    "title": "Malwarebytes Launches Scam Link Check Tool",
+    "summary": "Malwarebytes introduced a Scam Link Check feature that scans suspicious URLs for phishing, scams, malware, and other online threats before users click. The tool helps users verify link safety and protect against malicious content. No vulnerabilities or exploits are reported.",
+    "category": "Malware",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/product/2026/10/is-this-link-safe-find-out-with-malwarebytes-scam-link-check",
+    "publishedAt": "2026-10-15T12:55:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "malwarebytes-launches-scam-link-check-tool",
+      "article-4c575a",
+      "4c575a"
+    ]
+  },
+  {
+    "slug": "supermarket-refrigeration-attack-expands-to-copela-2a3033",
+    "title": "Supermarket Refrigeration Attack Expands to Copeland and Dixell Controllers",
+    "summary": "Cyberattacks targeting refrigeration systems in about 700 French supermarkets have spread to Copeland and Dixell controllers. The attacks compromise control systems but no group has claimed responsibility. The incident highlights the growing threat to industrial control infrastructure.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/supermarket-refrigeration-attack-widens-to-copeland-dixell-controllers/",
+    "publishedAt": "2026-10-15T12:50:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "supermarket-refrigeration-attack-expands-to-copela",
+      "article-2a3033",
+      "2a3033",
+      "supermarket-refrigeration-attack-expands-to-copeland-and-dix"
+    ]
+  },
+  {
     "slug": "drupal-core-rce-flaw-exploitable-via-contributed-m-b922f0",
     "title": "Drupal Core RCE Flaw Exploitable via Contributed Modules, No-Login Path",
     "summary": "Drupal core’s Field UI module contains a critical remote code execution flaw that can be triggered through contributed modules without requiring user authentication. The vulnerability was patched in Drupal 11.4.10, 11.3.19, and 10.6.19 on October 14. Attackers can execute arbitrary code on the server via these modules.",
@@ -228,24 +299,6 @@ export const news: NewsBrief[] = [
       "article-3b7652",
       "3b7652",
       "centerpoint-energy-data-breach-compromises-1-million-texans"
-    ]
-  },
-  {
-    "slug": "microsoft-fixes-bug-causing-windows-black-screens-222c03",
-    "title": "Microsoft fixes bug causing Windows black screens, Explorer crashes",
-    "summary": "Microsoft released a patch that resolves a known issue causing black screens, desktop loading problems, and Explorer crashes on Windows 11 systems after updates issued since August. The fix addresses the underlying bug that triggered these UI failures.",
-    "category": "Vulnerability",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-causing-windows-black-screens-explorer-crashes/",
-    "publishedAt": "2026-10-15T09:10:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-fixes-bug-causing-windows-black-screens",
-      "article-222c03",
-      "222c03",
-      "microsoft-fixes-bug-causing-windows-black-screens-explorer-c"
     ]
   },
   {
@@ -6229,60 +6282,6 @@ export const news: NewsBrief[] = [
       "ai-identified-vulnerabilities-rapidly-exploited",
       "article-72cbb8",
       "72cbb8"
-    ]
-  },
-  {
-    "slug": "employment-scam-victims-tripled-at-financial-firms-3d6cca",
-    "title": "Employment Scam Victims Tripled at Financial Firms in 21 Countries",
-    "summary": "Employment‑style phishing scams targeting employees at more than 370 banks and financial institutions in 21 countries surged 258% over the past year, according to fraud‑detection vendor BioCatch. The rise outpaced all other scam types, with total reported scams increasing 35% across the same institutions.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/employment-scam-victims-research/",
-    "publishedAt": "2026-10-01T04:30:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "employment-scam-victims-tripled-at-financial-firms",
-      "article-3d6cca",
-      "3d6cca",
-      "employment-scam-victims-tripled-at-financial-firms-in-21-cou"
-    ]
-  },
-  {
-    "slug": "proton-drive-offers-end-to-end-encrypted-cloud-sto-221117",
-    "title": "Proton Drive Offers End‑to‑End Encrypted Cloud Storage and Collaboration",
-    "summary": "Proton Drive provides secure cloud storage, file synchronization, and backup with end‑to‑end encryption. It includes Proton Docs and Proton Sheets for encrypted document and spreadsheet collaboration, available via web, desktop, and mobile apps, plus a command‑line interface for Windows, macOS, and Linux.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/product-showcase-proton-drive/",
-    "publishedAt": "2026-10-01T03:48:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "proton-drive-offers-end-to-end-encrypted-cloud-sto",
-      "article-221117",
-      "221117",
-      "proton-drive-offers-end-to-end-encrypted-cloud-storage-and-c"
-    ]
-  },
-  {
-    "slug": "deepmind-unveils-synthid-bio-watermark-for-ai-desi-384195",
-    "title": "DeepMind Unveils SynthID Bio Watermark for AI‑Designed Proteins",
-    "summary": "Google DeepMind has developed SynthID Bio, a watermark that embeds a signature into the amino acid sequence and 3D coordinates of AI‑designed protein binders without affecting their function. The watermark can be verified on the physical protein after synthesis, targeting DNA‑synthesis screening providers.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/synthid-bio-watermark/",
-    "publishedAt": "2026-10-01T03:31:14.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "deepmind-unveils-synthid-bio-watermark-for-ai-desi",
-      "article-384195",
-      "384195",
-      "deepmind-unveils-synthid-bio-watermark-for-ai-designed-prote"
     ]
   }
 ];
