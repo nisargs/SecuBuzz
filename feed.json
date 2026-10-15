@@ -1,5 +1,36 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/uk-legal-aid-agency-hackers-stole-records-dating-back-to-1978/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/uk-legal-aid-agency-hackers-stole-records-dating-back-to-1978/",
+    "title": "UK Legal Aid Agency Records Stolen in April 2025 Breach",
+    "headline": "UK Legal Aid Agency Records Stolen in April 2025 Breach",
+    "summary": "Attackers breached the Legal Aid Agency’s IT systems in April 2025 and stole records dating back to 1978. The breach exposed sensitive data managed by the UK Ministry of Justice’s Public Defender Service, potentially compromising long‑term legal records and personal information.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-15T08:06:47.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/uk-legal-aid-agency-hackers-stole-records-dating-back-to-1978/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/15/qualys-trurisk-eliminate-2-0-truconfidence/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/15/qualys-trurisk-eliminate-2-0-truconfidence/",
+    "title": "Qualys Launches TruConfidence for Automated Cyber Risk Remediation",
+    "headline": "Qualys Launches TruConfidence for Automated Cyber Risk Remediation",
+    "summary": "Qualys unveiled TruRisk Eliminate 2.0 with TruConfidence, an orchestration engine that automates remediation at machine speed. The platform leverages AI to manage patch deployment, achieving 40% autonomous rollouts with less than 0.1% rollback. It aims to streamline cyber risk elimination for enterprises.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-15T07:31:41.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/15/qualys-trurisk-eliminate-2-0-truconfidence/",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/14/kunal-modasiya-qualys-vulnerability-remediation/"
+      }
+    ]
+  },
+  {
     "id": "https://www.darkreading.com/ics-ot-security/eu-grocers-unpatched-fridge-firmware",
     "sourceUrl": "https://www.darkreading.com/ics-ot-security/eu-grocers-unpatched-fridge-firmware",
     "title": "EU Grocers Hit by Unpatched Fridge Firmware",
@@ -839,6 +870,19 @@
     ]
   },
   {
+    "id": "https://www.welivesecurity.com/en/scams/medicare-open-enrollment-season-scams/",
+    "sourceUrl": "https://www.welivesecurity.com/en/scams/medicare-open-enrollment-season-scams/",
+    "title": "Medicare Fraud Scam Alert During Open Enrollment",
+    "headline": "Medicare Fraud Scam Alert During Open Enrollment",
+    "summary": "During the Medicare Open Enrollment peak, fraudsters use calls, texts, and ads to impersonate legitimate outreach. The article explains how to distinguish real communications from fakes and offers tips to protect personal information from these scams.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "ESET WeLiveSecurity",
+    "publishedAt": "2026-10-14T09:00:00.000Z",
+    "url": "https://www.welivesecurity.com/en/scams/medicare-open-enrollment-season-scams/",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybersecuritynews.com/hackers-breach-meta-github-repositories/",
     "sourceUrl": "https://cybersecuritynews.com/hackers-breach-meta-github-repositories/",
     "title": "Meta GitHub Repositories Breached, 1,500 Employees’ Data Stolen",
@@ -942,19 +986,6 @@
     "source": "SANS Internet Storm Center",
     "publishedAt": "2026-10-14T06:49:46.000Z",
     "url": "https://isc.sans.edu/diary/rss/33420",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/14/kunal-modasiya-qualys-vulnerability-remediation/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/14/kunal-modasiya-qualys-vulnerability-remediation/",
-    "title": "Patching Challenges Highlighted by Qualys Executive",
-    "headline": "Patching Challenges Highlighted by Qualys Executive",
-    "summary": "Qualys Senior VP Kunal Modasiya discusses why patching remains difficult, citing business pressure, revenue-critical systems, and breaking fixes. He emphasizes the need for a holistic remediation workflow, proactive risk assessment, and the importance of balancing exposure time against weaponization time to improve patch deployment effectiveness.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-14T05:30:59.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/14/kunal-modasiya-qualys-vulnerability-remediation/",
     "additionalSources": []
   },
   {
@@ -1488,6 +1519,19 @@
         "sourceUrl": "https://www.securityweek.com/canonical-websites-disrupted-in-second-ddos-attack-this-year/"
       }
     ]
+  },
+  {
+    "id": "https://www.sophos.com/en-us/blog/building-intent-based-access-control-without-reading-minds",
+    "sourceUrl": "https://www.sophos.com/en-us/blog/building-intent-based-access-control-without-reading-minds",
+    "title": "AI-Driven Intent-Based Access Control Research",
+    "headline": "AI-Driven Intent-Based Access Control Research",
+    "summary": "The piece discusses developing intent-based access control systems using AI, highlighting research trends and potential threat implications. It outlines how AI can infer user intent to enforce security policies without manual configuration, offering insights for future threat research and security architecture.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Sophos Threat Research",
+    "publishedAt": "2026-10-13T00:00:00.000Z",
+    "url": "https://www.sophos.com/en-us/blog/building-intent-based-access-control-without-reading-minds",
+    "additionalSources": []
   },
   {
     "id": "https://www.darkreading.com/vulnerabilities-threats/max-severity-ssrf-flaw-sonicwall-sma-devices-under-attack",
@@ -5216,50 +5260,6 @@
     "source": "The Record",
     "publishedAt": "2026-09-30T20:32:00.000Z",
     "url": "https://therecord.media/automakers-routinely-share-connected-car-data-third-parties",
-    "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/cyber-command-suicide-deaths-pentagon-memo",
-    "sourceUrl": "https://therecord.media/cyber-command-suicide-deaths-pentagon-memo",
-    "title": "Pentagon Issues Cyber Command Notice Amid Suicide Death Reports",
-    "headline": "Pentagon Issues Cyber Command Notice Amid Suicide Death Reports",
-    "summary": "Following reports of multiple suicide deaths, the Pentagon’s assistant secretary for cyber policy issued a memo demanding specific actions from U.S. Cyber Command leadership. The notice highlights concerns over cyber-related incidents and calls for enhanced oversight and response measures within the command.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Record",
-    "publishedAt": "2026-09-30T19:35:00.000Z",
-    "url": "https://therecord.media/cyber-command-suicide-deaths-pentagon-memo",
-    "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/google-vulnerabilities-cyberattacks-ai",
-    "sourceUrl": "https://therecord.media/google-vulnerabilities-cyberattacks-ai",
-    "title": "Google Reports 10,000 Monthly Vulnerability Disclosures, AI Accelerates Exploitation",
-    "headline": "Google Reports 10,000 Monthly Vulnerability Disclosures, AI Accelerates Exploitation",
-    "summary": "Google researchers warned that vulnerability disclosures have doubled to over 10,000 per month, with artificial intelligence driving the increase. The surge highlights growing exploitation activity, though no specific vulnerabilities or exploits are named. The trend underscores the need for continuous patching and monitoring.",
-    "category": "VULNERABILITY",
-    "severity": "LOW",
-    "source": "The Record",
-    "publishedAt": "2026-09-30T19:00:00.000Z",
-    "url": "https://therecord.media/google-vulnerabilities-cyberattacks-ai",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/google-ai-is-changing-the-pace-and-profile-of-vulnerability-discovery/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.darkreading.com/cybersecurity-careers/ai-reshapes-soc-career-ladder",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-careers/ai-reshapes-soc-career-ladder",
-    "title": "AI Boosts SOC Satisfaction to 91% While Entry Barriers Rise",
-    "headline": "AI Boosts SOC Satisfaction to 91% While Entry Barriers Rise",
-    "summary": "Swimlane research shows that AI-driven detection and response has raised overall SOC satisfaction to 91%. However, nearly half of security professionals find entry into the field harder, and one in four say AI limits skill development. The study highlights a paradox in the evolving security workforce.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "publishedAt": "2026-09-30T18:56:56.000Z",
-    "url": "https://www.darkreading.com/cybersecurity-careers/ai-reshapes-soc-career-ladder",
     "additionalSources": []
   }
 ]
