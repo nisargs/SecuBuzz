@@ -5,8 +5,53 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Oct 2026 16:21:15 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 17:21:28 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Malicious Arch Linux Packages Distribute Root‑Privilege Malware</title>
+      <link>https://secubuzz.com/news/malicious-arch-linux-packages-distribute-root-priv-7aabf7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/malicious-arch-linux-packages-distribute-root-priv-7aabf7</guid>
+      <description><![CDATA[Threat actors uploaded counterfeit packages to the Arch User Repository, masquerading as popular helper tools yay and paru. Users who installed these packages risk running malware with root privileges, potentially compromising system integrity and data. Arch maintainers have issued a warning and are removing the compromised packages.]]></description>
+      <pubDate>Thu, 15 Oct 2026 17:12:31 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/fake-arch-linux-packages-push-malware-with-root-privileges/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Cloudflare Launches Fully Programmable Secure Web Gateway</title>
+      <link>https://secubuzz.com/news/cloudflare-launches-fully-programmable-secure-web-707deb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-launches-fully-programmable-secure-web-707deb</guid>
+      <description><![CDATA[Cloudflare has integrated its Gateway and Data Loss Prevention with Cloudflare Workers, enabling users to program custom security rules and policies via the Cloudflare Developer platform. The new feature expands flexibility for building secure, compliant web gateways tailored to organizational needs.]]></description>
+      <pubDate>Thu, 15 Oct 2026 17:11:12 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/programmable-gateway-dlp/">Cloudflare Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>New Study Quantifies Cryptanalysis Effort on Public-Key Algorithms</title>
+      <link>https://secubuzz.com/news/new-study-quantifies-cryptanalysis-effort-on-publi-2e31e0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/new-study-quantifies-cryptanalysis-effort-on-publi-2e31e0</guid>
+      <description><![CDATA[Researchers used AI to estimate the cumulative cryptanalytic effort on public-key algorithms, analyzing 16,000 papers. The study shows lattice-based attacks have recently surpassed elliptic curve efforts, providing a historical view of research allocation and highlighting shifts in cryptographic focus.]]></description>
+      <pubDate>Thu, 15 Oct 2026 16:24:29 GMT</pubDate>
+      <source url="https://www.schneier.com/blog/archives/2026/10/measuring-human-cryptanalysis-effort.html">Schneier on Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Zero-Click Spyware Infection of Al Jazeera via Online Ads</title>
+      <link>https://secubuzz.com/news/zero-click-spyware-infection-of-al-jazeera-via-onl-24b5ad</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/zero-click-spyware-infection-of-al-jazeera-via-onl-24b5ad</guid>
+      <description><![CDATA[Citizen Lab traced a zero-click spyware infection, Candiru, targeting Al Jazeera devices through ordinary online ads. The malware executed upon ad load, sometimes hidden, enabling covert data exfiltration without user interaction. The attack demonstrates a sophisticated, click‑free espionage vector.]]></description>
+      <pubDate>Thu, 15 Oct 2026 16:01:57 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Silent Lynx Uses WinRAR Exploit to Deploy Reverse Shells in CIS Government Attacks</title>
+      <link>https://secubuzz.com/news/silent-lynx-uses-winrar-exploit-to-deploy-reverse-7ac91b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/silent-lynx-uses-winrar-exploit-to-deploy-reverse-7ac91b</guid>
+      <description><![CDATA[Silent Lynx leveraged a WinRAR vulnerability in macro‑enabled documents, PS2EXE downloaders, GitHub‑hosted PowerShell, and crafted WinRAR archives to deliver reverse shells to CIS government systems from June 2025 to August 2026. The attacks used four distinct infection chains to compromise target networks.]]></description>
+      <pubDate>Thu, 15 Oct 2026 16:00:26 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/silent-lynx-exploits-winrar-flaw-to.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Vulnerability Management Should Focus on Real-World Impact</title>
       <link>https://secubuzz.com/news/vulnerability-management-should-focus-on-real-worl-5a221f</link>
@@ -53,15 +98,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Zero-Click Spyware Delivered via Online Ads</title>
-      <link>https://secubuzz.com/news/zero-click-spyware-delivered-via-online-ads-1075b8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/zero-click-spyware-delivered-via-online-ads-1075b8</guid>
-      <description><![CDATA[Researchers documented a zero-click spyware attack, named AdFection, that infects devices simply by viewing online advertisements. The malware bypasses user interaction, delivering powerful spyware without downloads or warnings, exposing devices to covert surveillance and data exfiltration.]]></description>
-      <pubDate>Thu, 15 Oct 2026 14:16:37 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/0-click-spyware-infects-devices/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>Google Fixes 37 Chrome Security Flaws, Seven Critical Bugs</title>
       <link>https://secubuzz.com/news/google-fixes-37-chrome-security-flaws-seven-critic-d91d40</link>
       <guid isPermaLink="true">https://secubuzz.com/news/google-fixes-37-chrome-security-flaws-seven-critic-d91d40</guid>
@@ -87,15 +123,6 @@
       <pubDate>Thu, 15 Oct 2026 14:01:11 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/is-ai-pentesting-as-good-as-a-human-pentester/">BleepingComputer</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Void SDK Launches for Cloudflare Vite App Deployment</title>
-      <link>https://secubuzz.com/news/void-sdk-launches-for-cloudflare-vite-app-deployme-c4a092</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/void-sdk-launches-for-cloudflare-vite-app-deployme-c4a092</guid>
-      <description><![CDATA[Cloudflare introduces Void, an open‑source SDK, CLI, and self‑hosted platform that enables developers to build full‑stack Vite applications and deploy them directly to Cloudflare’s edge network. The tool streamlines the deployment workflow for modern web projects.]]></description>
-      <pubDate>Thu, 15 Oct 2026 14:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/deploy-with-void/">Cloudflare Security</source>
-      <category>Cloud</category>
     </item>
     <item>
       <title>AI Agents Expose API Keys and Cloud Secrets</title>
@@ -197,12 +224,75 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Next.js Issues Out-of-Band Patch for Two Critical RCE Flaws</title>
+      <link>https://secubuzz.com/news/next-js-issues-out-of-band-patch-for-two-critical-53e7b0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/next-js-issues-out-of-band-patch-for-two-critical-53e7b0</guid>
+      <description><![CDATA[Next.js released an out‑of‑band update on October 14 to fix two critical unauthenticated remote code execution vulnerabilities. One flaw resides in React Server Components, the other in librsvg used via the sharp package for SVG handling. The patch also addresses a high‑severity denial‑of‑service flaw.]]></description>
+      <pubDate>Thu, 15 Oct 2026 12:28:13 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/nextjs-ships-out-of-band-patch-for-two.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Cartoon Network Gigaleak Reveals 200GB of Internal Animation Files</title>
+      <link>https://secubuzz.com/news/cartoon-network-gigaleak-reveals-200gb-of-internal-699863</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cartoon-network-gigaleak-reveals-200gb-of-internal-699863</guid>
+      <description><![CDATA[A massive gigaleak exposed over 200GB of Cartoon Network’s internal animation assets, including editable projects, character designs, storyboards, and production guides from shows such as The Amazing World of Gumball, Adventure Time, and Regular Show. The leak offers a rare glimpse into the studios’ creative processes.]]></description>
+      <pubDate>Thu, 15 Oct 2026 12:22:24 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/cartoon-network-gigaleak-exposes/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Fortinet FortiGate Firewalls Targeted by PEERSTITCH Malware</title>
+      <link>https://secubuzz.com/news/fortinet-fortigate-firewalls-targeted-by-peerstitc-5f110d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fortinet-fortigate-firewalls-targeted-by-peerstitc-5f110d</guid>
+      <description><![CDATA[Attackers exploited vulnerabilities in Fortinet’s FortiManager and FortiGate systems to deploy PEERSTITCH malware, which runs inside FortiGate processes. The breach exposed configurations and sensitive data for over 500 managed FortiGate devices, compromising a telecommunications managed service provider.]]></description>
+      <pubDate>Thu, 15 Oct 2026 12:22:12 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/fortinet-vulnerabilities/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Drupal Core RCE Flaw Exploitable via Contributed Modules, No-Login Path</title>
       <link>https://secubuzz.com/news/drupal-core-rce-flaw-exploitable-via-contributed-m-b922f0</link>
       <guid isPermaLink="true">https://secubuzz.com/news/drupal-core-rce-flaw-exploitable-via-contributed-m-b922f0</guid>
       <description><![CDATA[Drupal core’s Field UI module contains a critical remote code execution flaw that can be triggered through contributed modules without requiring user authentication. The vulnerability was patched in Drupal 11.4.10, 11.3.19, and 10.6.19 on October 14. Attackers can execute arbitrary code on the server via these modules.]]></description>
       <pubDate>Thu, 15 Oct 2026 12:07:20 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/drupal-patches-critical-core-rce-flaw.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Thermo Fisher Torrent Suite Vulnerability CVE-2026-107777 Allows Path Traversal</title>
+      <link>https://secubuzz.com/news/thermo-fisher-torrent-suite-vulnerability-cve-2026-49c059</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/thermo-fisher-torrent-suite-vulnerability-cve-2026-49c059</guid>
+      <description><![CDATA[Thermo Fisher Torrent Suite Software versions are vulnerable to CVE-2026-107777, a path traversal flaw that lets authenticated attackers read arbitrary files on the Torrent Server. The vulnerability, with CVSS 6.5, affects critical healthcare infrastructure worldwide and requires vendor patching.]]></description>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-288-01">CISA</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>J4Care dcm4che Vulnerabilities Enable Medical Image Deletion and Data Disclosure</title>
+      <link>https://secubuzz.com/news/j4care-dcm4che-vulnerabilities-enable-medical-imag-49c059</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/j4care-dcm4che-vulnerabilities-enable-medical-imag-49c059</guid>
+      <description><![CDATA[Multiple CVE-2026-xxxx vulnerabilities in J4Care dcm4che versions 5.35.1 and 4 allow attackers to delete medical images, disclose patient data, inject forged studies, reassign records, overwrite files, and cause denial of service. CVSS score 9.1 indicates critical impact on healthcare infrastructure.]]></description>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-288-02">CISA</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Guangzhou Juan IoT EseeCloud Vulnerability Allows Remote Control via Hard‑Coded Credentials</title>
+      <link>https://secubuzz.com/news/guangzhou-juan-iot-eseecloud-vulnerability-allows-430c04</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/guangzhou-juan-iot-eseecloud-vulnerability-allows-430c04</guid>
+      <description><![CDATA[The CVE‑2026‑107617 flaw in Guangzhou Juan IoT Technology’s EseeCloud App and Firmware permits attackers to log in using hard‑coded credentials, enabling full control over affected IP cameras. The vulnerability scores 9.8 CVSS, impacting critical infrastructure sectors worldwide. Mitigation requires updating to patched firmware versions.]]></description>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-288-02">CISA</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>CISA Malcolm Vulnerability CVE-2026-107336 Exposes Authentication Bypass and SSRF</title>
+      <link>https://secubuzz.com/news/cisa-malcolm-vulnerability-cve-2026-107336-exposes-430fa7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-malcolm-vulnerability-cve-2026-107336-exposes-430fa7</guid>
+      <description><![CDATA[CISA Malcolm versions are vulnerable to CVE-2026-107336, a high‑severity flaw with CVSS 8.1. The issue stems from a case‑insensitive regex matcher in the nginx reverse proxy that allows authentication bypass, SSRF, and CSRF attacks. Affected systems include energy, IT, water, and wastewater sectors worldwide. Mitigation requires patching to the latest Malcolm release.]]></description>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-280-01">CISA</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -365,96 +455,6 @@
       <description><![CDATA[Microsoft identified three Active Directory flaws—CVE-2026-69982, CVE-2026-96252, and CVE-2026-108131—that enable remote attackers to bypass a key security feature in Windows domain environments. Administrators should review the Security Update Guide and apply the available fixes promptly to mitigate the risk.]]></description>
       <pubDate>Thu, 15 Oct 2026 03:51:31 GMT</pubDate>
       <source url="https://cybersecuritynews.com/multiple-active-directory-vulnerabilities/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Ukraine Restores SpaceX Starshield Satellite Service After Restrictions</title>
-      <link>https://secubuzz.com/news/ukraine-restores-spacex-starshield-satellite-servi-4a00a0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ukraine-restores-spacex-starshield-satellite-servi-4a00a0</guid>
-      <description><![CDATA[Ukraine’s military regained access to SpaceX’s Starshield satellite communications after temporary restrictions halted drone operations. The Defense Ministry confirmed the service is now operational, allowing continued use of satellite‑based drone control along the front line. No cyber attack or vulnerability was reported.]]></description>
-      <pubDate>Wed, 14 Oct 2026 23:00:00 GMT</pubDate>
-      <source url="https://therecord.media/ukraine-says-starshield-working-again-after-disruption">The Record</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Unit 42 Uncovers PEERSTITCH, a Stealthy FortiGate Implant</title>
-      <link>https://secubuzz.com/news/unit-42-uncovers-peerstitch-a-stealthy-fortigate-i-21b2cf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/unit-42-uncovers-peerstitch-a-stealthy-fortigate-i-21b2cf</guid>
-      <description><![CDATA[Unit 42 identified PEERSTITCH, a memory‑resident ARM64 malware that attackers deployed on over 500 FortiGate firewalls by exploiting CVE-2024-47575. The vulnerability allowed unauthenticated remote code execution, enabling the implant to remain hidden in memory and evade detection.]]></description>
-      <pubDate>Wed, 14 Oct 2026 22:00:44 GMT</pubDate>
-      <source url="https://unit42.paloaltonetworks.com/fortimanager-cve-2024-47575-peerstitch-malware/">Unit 42</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>IvantiICS Zero-Day Attacks Highlight Vendor Patching Hurdles</title>
-      <link>https://secubuzz.com/news/ivantiics-zero-day-attacks-highlight-vendor-patchi-317f90</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ivantiics-zero-day-attacks-highlight-vendor-patchi-317f90</guid>
-      <description><![CDATA[IvantiICS suffered a high‑severity authentication bypass and RCE flaw, CVE-2026-104935, that was only partially patched in July. The vulnerability enabled threat actors to gain unauthenticated remote code execution, exposing the system to exploitation until a full patch is applied.]]></description>
-      <pubDate>Wed, 14 Oct 2026 21:20:13 GMT</pubDate>
-      <source url="https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching">Dark Reading</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Yandex Outage: Malicious Bots Migrate Instead of Going Dark</title>
-      <link>https://secubuzz.com/news/yandex-outage-malicious-bots-migrate-instead-of-go-287e26</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/yandex-outage-malicious-bots-migrate-instead-of-go-287e26</guid>
-      <description><![CDATA[When Yandex data centers experienced strikes, search crawling stopped, but Cloudflare data showed that malicious bots simply moved to other networks. The bot activity continued elsewhere, indicating resilience of the bot operators rather than a shutdown.]]></description>
-      <pubDate>Wed, 14 Oct 2026 20:24:19 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/yandex-outage/">Cloudflare Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>Wiz Integrates Code Scanners for Unified Application Risk Visibility</title>
-      <link>https://secubuzz.com/news/wiz-integrates-code-scanners-for-unified-applicati-669a9b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/wiz-integrates-code-scanners-for-unified-applicati-669a9b</guid>
-      <description><![CDATA[Wiz Research announced that its platform now supports integration of existing code scanners, providing a single view of application risk across an organization’s entire stack. The update aims to streamline security assessments and improve visibility into potential vulnerabilities across development environments.]]></description>
-      <pubDate>Wed, 14 Oct 2026 20:13:53 GMT</pubDate>
-      <source url="https://www.wiz.io/blog/aspm-ai-era-pt-1-centralize-appsec-scanners">Wiz Research</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>FBI Seizes Laptops Used by North Korean Remote IT Workers</title>
-      <link>https://secubuzz.com/news/fbi-seizes-laptops-used-by-north-korean-remote-it-6e3602</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fbi-seizes-laptops-used-by-north-korean-remote-it-6e3602</guid>
-      <description><![CDATA[The U.S. Department of Justice disrupted the Famous Chollima threat group by arresting two suspects, charging 14 individuals, and seizing nearly 187 laptops used in North Korean remote IT worker schemes. The operation targets DPRK cyber espionage activities in Texas.]]></description>
-      <pubDate>Wed, 14 Oct 2026 19:41:43 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/fbi-raids-dprk-it-worker-laptop-farms-in-texas-us-nationals-arrested/">BleepingComputer</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>Ledger Urges Asian Resellers to Halt Wallet Sales Amid Supply‑Chain Tampering Investigation</title>
-      <link>https://secubuzz.com/news/ledger-urges-asian-resellers-to-halt-wallet-sales-5ea266</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ledger-urges-asian-resellers-to-halt-wallet-sales-5ea266</guid>
-      <description><![CDATA[Ledger has instructed resellers and distributors across Indonesia, Singapore, Thailand, the Philippines, Vietnam, Malaysia, and Hong Kong to stop selling its hardware wallets and remove them from shelves while it investigates reports of device tampering. The company is reviewing supply‑chain integrity and will issue guidance once the investigation concludes.]]></description>
-      <pubDate>Wed, 14 Oct 2026 17:46:50 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/ledger-asks-sellers-across-asia-to-halt-sales-after-supply-chain-attack/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Critical Backdoor in Collabora CODE App Enables Web Shells on Nextcloud</title>
-      <link>https://secubuzz.com/news/critical-backdoor-in-collabora-code-app-enables-we-5d43d3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/critical-backdoor-in-collabora-code-app-enables-we-5d43d3</guid>
-      <description><![CDATA[A flaw in Collabora Online’s Built‑in CODE Server, an optional Nextcloud app, lets attackers plant web shells that run with the web server’s privileges. The vulnerability was first logged on September 10, enabling remote command execution via web requests. Administrators should update or disable the app immediately to prevent exploitation.]]></description>
-      <pubDate>Wed, 14 Oct 2026 17:38:31 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/hackers-backdoor-nextcloud-servers.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Spyware Operation Accessed Former Polish Government Data</title>
-      <link>https://secubuzz.com/news/spyware-operation-accessed-former-polish-governmen-5c1629</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/spyware-operation-accessed-former-polish-governmen-5c1629</guid>
-      <description><![CDATA[A spyware operation run by the former ruling party accessed data harvested by the Polish government. The Prime Minister called it one of the biggest scandals in Polish history since the fall of communism. The incident highlights a significant breach of sensitive state data.]]></description>
-      <pubDate>Wed, 14 Oct 2026 16:50:00 GMT</pubDate>
-      <source url="https://therecord.media/spyware-manufacturer-had-access-to-data-harvested-by-previous-polish-government">The Record</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Curl 8.23.0 Releases 24 Security Fixes for 30 Billion Installations</title>
-      <link>https://secubuzz.com/news/curl-8-23-0-releases-24-security-fixes-for-30-bill-1776b2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/curl-8-23-0-releases-24-security-fixes-for-30-bill-1776b2</guid>
-      <description><![CDATA[The curl project released version 8.23.0, patching 24 security vulnerabilities affecting the data transfer tool and libcurl. Fixes address credential leaks, authentication errors, command injection, and application disruption flaws. The update also removes SMB and SMBS protocol support, requiring compatibility checks before deployment.]]></description>
-      <pubDate>Wed, 14 Oct 2026 16:46:52 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/curl-security-update-24-vulnerabilities/">Cyber Security News</source>
       <category>Vulnerability</category>
     </item>
   </channel>

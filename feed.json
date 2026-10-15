@@ -1,5 +1,85 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/fake-arch-linux-packages-push-malware-with-root-privileges/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fake-arch-linux-packages-push-malware-with-root-privileges/",
+    "title": "Malicious Arch Linux Packages Distribute Root‑Privilege Malware",
+    "headline": "Malicious Arch Linux Packages Distribute Root‑Privilege Malware",
+    "summary": "Threat actors uploaded counterfeit packages to the Arch User Repository, masquerading as popular helper tools yay and paru. Users who installed these packages risk running malware with root privileges, potentially compromising system integrity and data. Arch maintainers have issued a warning and are removing the compromised packages.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-15T17:12:31.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/fake-arch-linux-packages-push-malware-with-root-privileges/",
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/poc-released-for-linux-vhost-flaw/"
+      }
+    ]
+  },
+  {
+    "id": "https://blog.cloudflare.com/programmable-gateway-dlp/",
+    "sourceUrl": "https://blog.cloudflare.com/programmable-gateway-dlp/",
+    "title": "Cloudflare Launches Fully Programmable Secure Web Gateway",
+    "headline": "Cloudflare Launches Fully Programmable Secure Web Gateway",
+    "summary": "Cloudflare has integrated its Gateway and Data Loss Prevention with Cloudflare Workers, enabling users to program custom security rules and policies via the Cloudflare Developer platform. The new feature expands flexibility for building secure, compliant web gateways tailored to organizational needs.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "publishedAt": "2026-10-15T17:11:12.000Z",
+    "url": "https://blog.cloudflare.com/programmable-gateway-dlp/",
+    "additionalSources": [
+      {
+        "source": "Cloudflare Security",
+        "sourceUrl": "https://blog.cloudflare.com/deploy-with-void/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.schneier.com/blog/archives/2026/10/measuring-human-cryptanalysis-effort.html",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/measuring-human-cryptanalysis-effort.html",
+    "title": "New Study Quantifies Cryptanalysis Effort on Public-Key Algorithms",
+    "headline": "New Study Quantifies Cryptanalysis Effort on Public-Key Algorithms",
+    "summary": "Researchers used AI to estimate the cumulative cryptanalytic effort on public-key algorithms, analyzing 16,000 papers. The study shows lattice-based attacks have recently surpassed elliptic curve efforts, providing a historical view of research allocation and highlighting shifts in cryptographic focus.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Schneier on Security",
+    "publishedAt": "2026-10-15T16:24:29.000Z",
+    "url": "https://www.schneier.com/blog/archives/2026/10/measuring-human-cryptanalysis-effort.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html",
+    "title": "Zero-Click Spyware Infection of Al Jazeera via Online Ads",
+    "headline": "Zero-Click Spyware Infection of Al Jazeera via Online Ads",
+    "summary": "Citizen Lab traced a zero-click spyware infection, Candiru, targeting Al Jazeera devices through ordinary online ads. The malware executed upon ad load, sometimes hidden, enabling covert data exfiltration without user interaction. The attack demonstrates a sophisticated, click‑free espionage vector.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-15T16:01:57.000Z",
+    "url": "https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html",
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/0-click-spyware-infects-devices/"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/silent-lynx-exploits-winrar-flaw-to.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/silent-lynx-exploits-winrar-flaw-to.html",
+    "title": "Silent Lynx Uses WinRAR Exploit to Deploy Reverse Shells in CIS Government Attacks",
+    "headline": "Silent Lynx Uses WinRAR Exploit to Deploy Reverse Shells in CIS Government Attacks",
+    "summary": "Silent Lynx leveraged a WinRAR vulnerability in macro‑enabled documents, PS2EXE downloaders, GitHub‑hosted PowerShell, and crafted WinRAR archives to deliver reverse shells to CIS government systems from June 2025 to August 2026. The attacks used four distinct infection chains to compromise target networks.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-15T16:00:26.000Z",
+    "url": "https://thehackernews.com/2026/10/silent-lynx-exploits-winrar-flaw-to.html",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.darkreading.com/cybersecurity-operations/vulnerability-management-isnt-about-the-score-its-about-how-it-applies-to-you",
     "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/vulnerability-management-isnt-about-the-score-its-about-how-it-applies-to-you",
     "title": "Vulnerability Management Should Focus on Real-World Impact",
@@ -83,19 +163,6 @@
     ]
   },
   {
-    "id": "https://cybersecuritynews.com/0-click-spyware-infects-devices/",
-    "sourceUrl": "https://cybersecuritynews.com/0-click-spyware-infects-devices/",
-    "title": "Zero-Click Spyware Delivered via Online Ads",
-    "headline": "Zero-Click Spyware Delivered via Online Ads",
-    "summary": "Researchers documented a zero-click spyware attack, named AdFection, that infects devices simply by viewing online advertisements. The malware bypasses user interaction, delivering powerful spyware without downloads or warnings, exposing devices to covert surveillance and data exfiltration.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-15T14:16:37.000Z",
-    "url": "https://cybersecuritynews.com/0-click-spyware-infects-devices/",
-    "additionalSources": []
-  },
-  {
     "id": "https://www.malwarebytes.com/blog/bugs/2026/10/update-chrome-google-fixes-37-security-flaws-including-seven-critical-bugs",
     "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/10/update-chrome-google-fixes-37-security-flaws-including-seven-critical-bugs",
     "title": "Google Fixes 37 Chrome Security Flaws, Seven Critical Bugs",
@@ -137,19 +204,6 @@
     "source": "BleepingComputer",
     "publishedAt": "2026-10-15T14:01:11.000Z",
     "url": "https://www.bleepingcomputer.com/news/security/is-ai-pentesting-as-good-as-a-human-pentester/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://blog.cloudflare.com/deploy-with-void/",
-    "sourceUrl": "https://blog.cloudflare.com/deploy-with-void/",
-    "title": "Void SDK Launches for Cloudflare Vite App Deployment",
-    "headline": "Void SDK Launches for Cloudflare Vite App Deployment",
-    "summary": "Cloudflare introduces Void, an open‑source SDK, CLI, and self‑hosted platform that enables developers to build full‑stack Vite applications and deploy them directly to Cloudflare’s edge network. The tool streamlines the deployment workflow for modern web projects.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "publishedAt": "2026-10-15T14:00:00.000Z",
-    "url": "https://blog.cloudflare.com/deploy-with-void/",
     "additionalSources": []
   },
   {
@@ -215,6 +269,10 @@
       {
         "source": "Dark Reading",
         "sourceUrl": "https://www.darkreading.com/threat-intelligence/new-anthropic-sneakpeek-silent-zero-click-threat"
+      },
+      {
+        "source": "CISA",
+        "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-288-01"
       }
     ]
   },
@@ -320,6 +378,55 @@
     "additionalSources": []
   },
   {
+    "id": "https://thehackernews.com/2026/10/nextjs-ships-out-of-band-patch-for-two.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/nextjs-ships-out-of-band-patch-for-two.html",
+    "title": "Next.js Issues Out-of-Band Patch for Two Critical RCE Flaws",
+    "headline": "Next.js Issues Out-of-Band Patch for Two Critical RCE Flaws",
+    "summary": "Next.js released an out‑of‑band update on October 14 to fix two critical unauthenticated remote code execution vulnerabilities. One flaw resides in React Server Components, the other in librsvg used via the sharp package for SVG handling. The patch also addresses a high‑severity denial‑of‑service flaw.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-15T12:28:13.000Z",
+    "url": "https://thehackernews.com/2026/10/nextjs-ships-out-of-band-patch-for-two.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/cartoon-network-gigaleak-exposes/",
+    "sourceUrl": "https://cybersecuritynews.com/cartoon-network-gigaleak-exposes/",
+    "title": "Cartoon Network Gigaleak Reveals 200GB of Internal Animation Files",
+    "headline": "Cartoon Network Gigaleak Reveals 200GB of Internal Animation Files",
+    "summary": "A massive gigaleak exposed over 200GB of Cartoon Network’s internal animation assets, including editable projects, character designs, storyboards, and production guides from shows such as The Amazing World of Gumball, Adventure Time, and Regular Show. The leak offers a rare glimpse into the studios’ creative processes.",
+    "category": "BREACH",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-15T12:22:24.000Z",
+    "url": "https://cybersecuritynews.com/cartoon-network-gigaleak-exposes/",
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/ai-agents-navigate-unfamiliar-ot-systems-and-move-equipment-in-minutes-booz-allen-finds/"
+      }
+    ]
+  },
+  {
+    "id": "https://cybersecuritynews.com/fortinet-vulnerabilities/",
+    "sourceUrl": "https://cybersecuritynews.com/fortinet-vulnerabilities/",
+    "title": "Fortinet FortiGate Firewalls Targeted by PEERSTITCH Malware",
+    "headline": "Fortinet FortiGate Firewalls Targeted by PEERSTITCH Malware",
+    "summary": "Attackers exploited vulnerabilities in Fortinet’s FortiManager and FortiGate systems to deploy PEERSTITCH malware, which runs inside FortiGate processes. The breach exposed configurations and sensitive data for over 500 managed FortiGate devices, compromising a telecommunications managed service provider.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-15T12:22:12.000Z",
+    "url": "https://cybersecuritynews.com/fortinet-vulnerabilities/",
+    "additionalSources": [
+      {
+        "source": "Unit 42",
+        "sourceUrl": "https://unit42.paloaltonetworks.com/fortimanager-cve-2024-47575-peerstitch-malware/"
+      }
+    ]
+  },
+  {
     "id": "https://thehackernews.com/2026/10/drupal-patches-critical-core-rce-flaw.html",
     "sourceUrl": "https://thehackernews.com/2026/10/drupal-patches-critical-core-rce-flaw.html",
     "title": "Drupal Core RCE Flaw Exploitable via Contributed Modules, No-Login Path",
@@ -330,6 +437,58 @@
     "source": "The Hacker News",
     "publishedAt": "2026-10-15T12:07:20.000Z",
     "url": "https://thehackernews.com/2026/10/drupal-patches-critical-core-rce-flaw.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-288-01",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-288-01",
+    "title": "Thermo Fisher Torrent Suite Vulnerability CVE-2026-107777 Allows Path Traversal",
+    "headline": "Thermo Fisher Torrent Suite Vulnerability CVE-2026-107777 Allows Path Traversal",
+    "summary": "Thermo Fisher Torrent Suite Software versions are vulnerable to CVE-2026-107777, a path traversal flaw that lets authenticated attackers read arbitrary files on the Torrent Server. The vulnerability, with CVSS 6.5, affects critical healthcare infrastructure worldwide and requires vendor patching.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "CISA",
+    "publishedAt": "2026-10-15T12:00:00.000Z",
+    "url": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-288-01",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-288-02",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-288-02",
+    "title": "J4Care dcm4che Vulnerabilities Enable Medical Image Deletion and Data Disclosure",
+    "headline": "J4Care dcm4che Vulnerabilities Enable Medical Image Deletion and Data Disclosure",
+    "summary": "Multiple CVE-2026-xxxx vulnerabilities in J4Care dcm4che versions 5.35.1 and 4 allow attackers to delete medical images, disclose patient data, inject forged studies, reassign records, overwrite files, and cause denial of service. CVSS score 9.1 indicates critical impact on healthcare infrastructure.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
+    "source": "CISA",
+    "publishedAt": "2026-10-15T12:00:00.000Z",
+    "url": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-288-02",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-288-02",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-288-02",
+    "title": "Guangzhou Juan IoT EseeCloud Vulnerability Allows Remote Control via Hard‑Coded Credentials",
+    "headline": "Guangzhou Juan IoT EseeCloud Vulnerability Allows Remote Control via Hard‑Coded Credentials",
+    "summary": "The CVE‑2026‑107617 flaw in Guangzhou Juan IoT Technology’s EseeCloud App and Firmware permits attackers to log in using hard‑coded credentials, enabling full control over affected IP cameras. The vulnerability scores 9.8 CVSS, impacting critical infrastructure sectors worldwide. Mitigation requires updating to patched firmware versions.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CISA",
+    "publishedAt": "2026-10-15T12:00:00.000Z",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-288-02",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-280-01",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-280-01",
+    "title": "CISA Malcolm Vulnerability CVE-2026-107336 Exposes Authentication Bypass and SSRF",
+    "headline": "CISA Malcolm Vulnerability CVE-2026-107336 Exposes Authentication Bypass and SSRF",
+    "summary": "CISA Malcolm versions are vulnerable to CVE-2026-107336, a high‑severity flaw with CVSS 8.1. The issue stems from a case‑insensitive regex matcher in the nginx reverse proxy that allows authentication bypass, SSRF, and CSRF attacks. Affected systems include energy, IT, water, and wastewater sectors worldwide. Mitigation requires patching to the latest Malcolm release.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CISA",
+    "publishedAt": "2026-10-15T12:00:00.000Z",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-280-01",
     "additionalSources": []
   },
   {
@@ -614,19 +773,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://unit42.paloaltonetworks.com/fortimanager-cve-2024-47575-peerstitch-malware/",
-    "sourceUrl": "https://unit42.paloaltonetworks.com/fortimanager-cve-2024-47575-peerstitch-malware/",
-    "title": "Unit 42 Uncovers PEERSTITCH, a Stealthy FortiGate Implant",
-    "headline": "Unit 42 Uncovers PEERSTITCH, a Stealthy FortiGate Implant",
-    "summary": "Unit 42 identified PEERSTITCH, a memory‑resident ARM64 malware that attackers deployed on over 500 FortiGate firewalls by exploiting CVE-2024-47575. The vulnerability allowed unauthenticated remote code execution, enabling the implant to remain hidden in memory and evade detection.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Unit 42",
-    "publishedAt": "2026-10-14T22:00:44.000Z",
-    "url": "https://unit42.paloaltonetworks.com/fortimanager-cve-2024-47575-peerstitch-malware/",
-    "additionalSources": []
-  },
-  {
     "id": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching",
     "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching",
     "title": "IvantiICS Zero-Day Attacks Highlight Vendor Patching Hurdles",
@@ -776,24 +922,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.securityweek.com/ai-agents-navigate-unfamiliar-ot-systems-and-move-equipment-in-minutes-booz-allen-finds/",
-    "sourceUrl": "https://www.securityweek.com/ai-agents-navigate-unfamiliar-ot-systems-and-move-equipment-in-minutes-booz-allen-finds/",
-    "title": "AI Agents Navigate OT Systems in 16 Minutes",
-    "headline": "AI Agents Navigate OT Systems in 16 Minutes",
-    "summary": "Booz Allen’s isolated OT lab demonstrated that AI models can complete eight operational scenarios, reaching an industrial control network from a perimeter compromise in just over 16 minutes. The test shows rapid autonomous navigation and equipment control in unfamiliar OT environments.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-14T16:00:00.000Z",
-    "url": "https://www.securityweek.com/ai-agents-navigate-unfamiliar-ot-systems-and-move-equipment-in-minutes-booz-allen-finds/",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/coruna-and-darksword/"
-      }
-    ]
-  },
-  {
     "id": "https://cybersecuritynews.com/microsoft-recent-update-remote-desktop/",
     "sourceUrl": "https://cybersecuritynews.com/microsoft-recent-update-remote-desktop/",
     "title": "Windows 11 RDP Update Causes Connection Failures for Non-Admin Users",
@@ -916,28 +1044,6 @@
     "publishedAt": "2026-10-14T13:44:57.000Z",
     "url": "https://cybersecuritynews.com/west-african-scam-networks/",
     "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/poc-released-for-linux-vhost-flaw/",
-    "sourceUrl": "https://cybersecuritynews.com/poc-released-for-linux-vhost-flaw/",
-    "title": "PoC Released for Linux Vhost Flaw Enabling Root Privilege Escalation and VM Escape",
-    "headline": "PoC Released for Linux Vhost Flaw Enabling Root Privilege Escalation and VM Escape",
-    "summary": "A public proof of concept for Vghost, a high‑severity Linux vhost flaw tracked as CVE‑2026‑74580, demonstrates how a local user can gain root access or, in certain virtual machine setups, escape the guest to affect the host. The flaw has a CVSS v3.1 score of 8.8 and is fixed in the latest kernel updates.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-14T13:19:35.000Z",
-    "url": "https://cybersecuritynews.com/poc-released-for-linux-vhost-flaw/",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/windows-smartscreen-escalation-vulnerability/"
-      },
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/ai-found-linux-kernel-flaw-gives-local.html"
-      }
-    ]
   },
   {
     "id": "https://therecord.media/russia-anywayanyday-travel-website-cyberattack",
@@ -5105,111 +5211,5 @@
         "sourceUrl": "https://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html"
       }
     ]
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-05",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-05",
-    "title": "Johnson Controls EasyIO Neo Series Controllers Vulnerable to Cleartext Credential Interception",
-    "headline": "Johnson Controls EasyIO Neo Series Controllers Vulnerable to Cleartext Credential Interception",
-    "summary": "Johnson Controls EasyIO Neo Series EC and CW Controllers V3.3b62, V3.3b63, V3.3b24, and V3.3b25 are affected by CVE-2026-64893. The flaw allows attackers to intercept and read sensitive information, including credentials and session data, via cleartext transmission. A patch is available from Johnson Controls.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "CISA",
-    "publishedAt": "2026-10-01T12:00:00.000Z",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-05",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-06",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-06",
-    "title": "Meari IoT Cloud Platform OpenAPI Service Authorization Flaw (CVE-2026-101104, CVE-2026-96613)",
-    "headline": "Meari IoT Cloud Platform OpenAPI Service Authorization Flaw (CVE-2026-101104, CVE-2026-96613)",
-    "summary": "Meari IoT Cloud Platform OpenAPI Service (all versions) suffers from an authorization flaw (CVE-2026-101104, CVE-2026-96613) that lets authenticated users manipulate device configurations, trigger unauthorized behaviors, and access credentials, owner details, and network data. The vulnerability has a CVSS score of 7.7 and impacts commercial facilities and IT sectors worldwide.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CISA",
-    "publishedAt": "2026-10-01T12:00:00.000Z",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-06",
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/storm-3168-azure-service-principal-resource-destruction"
-      }
-    ]
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-01",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-01",
-    "title": "CISA Alerts on CVE‑2023‑46604 in Armatura One Platform",
-    "headline": "CISA Alerts on CVE‑2023‑46604 in Armatura One Platform",
-    "summary": "CISA reports that Armatura LLC’s Armatura One platform is vulnerable to CVE‑2023‑46604, a deserialization flaw in embedded Apache ActiveMQ. The flaw can give attackers full host control, database access, and physical access‑control takeover. The vulnerability is rated CVSS 9.8 and affects all worldwide deployments of Armatura One.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CISA",
-    "publishedAt": "2026-10-01T12:00:00.000Z",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-01",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-02",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-02",
-    "title": "Monta monta.app Vulnerabilities Enable Unauthorized Administrative Control and Denial-of-Service",
-    "headline": "Monta monta.app Vulnerabilities Enable Unauthorized Administrative Control and Denial-of-Service",
-    "summary": "The Monta monta.app charging station software has multiple critical vulnerabilities (CVE-2026-95102, CVE-2026-97363, CVE-2026-97212, CVE-2026-93474) that allow attackers to gain administrative control or launch denial‑of‑service attacks. WebSocket endpoints lack authentication, enabling exploitation. Patching is required to mitigate the risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CISA",
-    "publishedAt": "2026-10-01T12:00:00.000Z",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-02",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/how-financial-services-companies-can.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/how-financial-services-companies-can.html",
-    "title": "Financial Services Companies Discuss Modernizing Software Supply Chain",
-    "headline": "Financial Services Companies Discuss Modernizing Software Supply Chain",
-    "summary": "Security leaders in banks, insurers, and asset managers debate how to eliminate supply‑chain vulnerabilities. Engineering teams outline platform upgrades, while testing budgets and change‑freeze schedules create delays. The result is often an exception, compensating control, or postponed date, highlighting the challenge of modernizing supply chains.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-01T11:45:00.000Z",
-    "url": "https://thehackernews.com/2026/10/how-financial-services-companies-can.html",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/09/29/openai-gpt-6-astra-supply-chain-attacks-test-simulations/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-enables-windows-settings-backup-by-default-for-orgs/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-enables-windows-settings-backup-by-default-for-orgs/",
-    "title": "Microsoft Enables Windows Settings Backup by Default for Enterprise Systems",
-    "headline": "Microsoft Enables Windows Settings Backup by Default for Enterprise Systems",
-    "summary": "Microsoft has activated Windows settings backup and restore on all Microsoft Entra‑joined or hybrid‑joined enterprise systems upgraded to Windows 11 26H2. The feature automatically backs up user settings and can restore them, improving configuration resilience and simplifying recovery after device changes or resets.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-01T11:14:28.000Z",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-enables-windows-settings-backup-by-default-for-orgs/",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/09/30/microsoft-wsl-containers-available/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.schneier.com/blog/archives/2026/10/connected-cars-are-a-surveillance-platform.html",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/connected-cars-are-a-surveillance-platform.html",
-    "title": "Connected Cars Function as Surveillance Platforms",
-    "headline": "Connected Cars Function as Surveillance Platforms",
-    "summary": "Researchers from Northeastern University and Consumer Reports mapped data flows in modern vehicles, showing that connected cars act as surveillance platforms. The study documents how vehicle data is shared with manufacturers, insurers, lenders, data brokers, infotainment vendors, and government entities, revealing extensive driver monitoring and potential privacy violations.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Schneier on Security",
-    "publishedAt": "2026-10-01T11:06:14.000Z",
-    "url": "https://www.schneier.com/blog/archives/2026/10/connected-cars-are-a-surveillance-platform.html",
-    "additionalSources": []
   }
 ]
