@@ -1,5 +1,31 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/10/15/exposed-ai-infrastructure-report/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/15/exposed-ai-infrastructure-report/",
+    "title": "Internet Attack Surface Growth Varies by Sector",
+    "headline": "Internet Attack Surface Growth Varies by Sector",
+    "summary": "Censys data shows AI-related software exposed to the public internet grew 63% in nine months, from 164,088 IPs in October 2025 to 267,915 in July 2026. Industrial control systems grew only 4% over two and a half years, while older business products remained stable.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-15T05:00:02.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/15/exposed-ai-infrastructure-report/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/15/jetbrains-ai-software-delivery-report/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/15/jetbrains-ai-software-delivery-report/",
+    "title": "AI‑Generated Code Causes CI/CD Review Bottlenecks",
+    "headline": "AI‑Generated Code Causes CI/CD Review Bottlenecks",
+    "summary": "JetBrains’ State of CI/CD in 2026 report finds 83.4% of DevOps teams run CI/CD pipelines, with GitHub Actions leading adoption. AI‑generated changes are increasing review workload, creating bottlenecks in software delivery despite widespread use of CI/CD practices.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-15T04:30:50.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/15/jetbrains-ai-software-delivery-report/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/10/15/product-showcase-guardos/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/15/product-showcase-guardos/",
     "title": "GuardOS App Offers QR Link Scanning, Safari Filtering, and Data Breach Checks",
@@ -5232,32 +5258,6 @@
     "source": "Dark Reading",
     "publishedAt": "2026-09-30T18:56:56.000Z",
     "url": "https://www.darkreading.com/cybersecurity-careers/ai-reshapes-soc-career-ladder",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.wiz.io/blog/wizos-helm-charts",
-    "sourceUrl": "https://www.wiz.io/blog/wizos-helm-charts",
-    "title": "WizOS Helm Charts Offer Hardened Kubernetes Deployments",
-    "headline": "WizOS Helm Charts Offer Hardened Kubernetes Deployments",
-    "summary": "WizOS introduces signed, CVE‑scanned Helm charts that harden Kubernetes supply chains. The charts eliminate hidden CI/CD risks and unmaintained dependencies, providing a secure, seamless deployment path for Kubernetes environments.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Wiz Research",
-    "publishedAt": "2026-09-30T15:52:31.000Z",
-    "url": "https://www.wiz.io/blog/wizos-helm-charts",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-pre-auth-rce-flaw-in-mikrotik-routeros/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-pre-auth-rce-flaw-in-mikrotik-routeros/",
-    "title": "CISA Warns of Critical Pre-Auth RCE in MikroTik RouterOS",
-    "headline": "CISA Warns of Critical Pre-Auth RCE in MikroTik RouterOS",
-    "summary": "CISA has identified a critical pre-authentication remote code execution flaw in MikroTik RouterOS that can allow attackers to execute arbitrary code or cause a denial‑of‑service. The vulnerability affects all RouterOS versions and requires no user interaction. MikroTik has released patches; users should update immediately to mitigate the risk.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-09-30T15:49:29.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-pre-auth-rce-flaw-in-mikrotik-routeros/",
     "additionalSources": []
   }
 ]

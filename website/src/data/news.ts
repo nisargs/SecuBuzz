@@ -11,6 +11,40 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "internet-attack-surface-growth-varies-by-sector-5f5765",
+    "title": "Internet Attack Surface Growth Varies by Sector",
+    "summary": "Censys data shows AI-related software exposed to the public internet grew 63% in nine months, from 164,088 IPs in October 2025 to 267,915 in July 2026. Industrial control systems grew only 4% over two and a half years, while older business products remained stable.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/15/exposed-ai-infrastructure-report/",
+    "publishedAt": "2026-10-15T05:00:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "internet-attack-surface-growth-varies-by-sector",
+      "article-5f5765",
+      "5f5765"
+    ]
+  },
+  {
+    "slug": "ai-generated-code-causes-ci-cd-review-bottlenecks-6c6e7e",
+    "title": "AI‑Generated Code Causes CI/CD Review Bottlenecks",
+    "summary": "JetBrains’ State of CI/CD in 2026 report finds 83.4% of DevOps teams run CI/CD pipelines, with GitHub Actions leading adoption. AI‑generated changes are increasing review workload, creating bottlenecks in software delivery despite widespread use of CI/CD practices.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/15/jetbrains-ai-software-delivery-report/",
+    "publishedAt": "2026-10-15T04:30:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-generated-code-causes-ci-cd-review-bottlenecks",
+      "article-6c6e7e",
+      "6c6e7e"
+    ]
+  },
+  {
     "slug": "guardos-app-offers-qr-link-scanning-safari-filteri-5addb1",
     "title": "GuardOS App Offers QR Link Scanning, Safari Filtering, and Data Breach Checks",
     "summary": "GuardOS is an iPhone security app that provides device checks, VPN access, Safari content filtering, QR link scanning, and storage cleanup. It alerts users when web protection is disabled and offers a dashboard of security tools. The app is available on the App Store.",
@@ -6251,42 +6285,6 @@ export const news: NewsBrief[] = [
       "article-7da85a",
       "7da85a",
       "ai-boosts-soc-satisfaction-to-91-while-entry-barriers-rise"
-    ]
-  },
-  {
-    "slug": "wizos-helm-charts-offer-hardened-kubernetes-deploy-1c9332",
-    "title": "WizOS Helm Charts Offer Hardened Kubernetes Deployments",
-    "summary": "WizOS introduces signed, CVE‑scanned Helm charts that harden Kubernetes supply chains. The charts eliminate hidden CI/CD risks and unmaintained dependencies, providing a secure, seamless deployment path for Kubernetes environments.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Wiz Research",
-    "sourceUrl": "https://www.wiz.io/blog/wizos-helm-charts",
-    "publishedAt": "2026-09-30T15:52:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "wizos-helm-charts-offer-hardened-kubernetes-deploy",
-      "article-1c9332",
-      "1c9332",
-      "wizos-helm-charts-offer-hardened-kubernetes-deployments"
-    ]
-  },
-  {
-    "slug": "cisa-warns-of-critical-pre-auth-rce-in-mikrotik-ro-5bdc14",
-    "title": "CISA Warns of Critical Pre-Auth RCE in MikroTik RouterOS",
-    "summary": "CISA has identified a critical pre-authentication remote code execution flaw in MikroTik RouterOS that can allow attackers to execute arbitrary code or cause a denial‑of‑service. The vulnerability affects all RouterOS versions and requires no user interaction. MikroTik has released patches; users should update immediately to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-pre-auth-rce-flaw-in-mikrotik-routeros/",
-    "publishedAt": "2026-09-30T15:49:29.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisa-warns-of-critical-pre-auth-rce-in-mikrotik-ro",
-      "article-5bdc14",
-      "5bdc14",
-      "cisa-warns-of-critical-pre-auth-rce-in-mikrotik-routeros"
     ]
   }
 ];

@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Oct 2026 04:19:40 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 05:05:59 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Internet Attack Surface Growth Varies by Sector</title>
+      <link>https://secubuzz.com/news/internet-attack-surface-growth-varies-by-sector-5f5765</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/internet-attack-surface-growth-varies-by-sector-5f5765</guid>
+      <description><![CDATA[Censys data shows AI-related software exposed to the public internet grew 63% in nine months, from 164,088 IPs in October 2025 to 267,915 in July 2026. Industrial control systems grew only 4% over two and a half years, while older business products remained stable.]]></description>
+      <pubDate>Thu, 15 Oct 2026 05:00:02 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/15/exposed-ai-infrastructure-report/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>AI‑Generated Code Causes CI/CD Review Bottlenecks</title>
+      <link>https://secubuzz.com/news/ai-generated-code-causes-ci-cd-review-bottlenecks-6c6e7e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-generated-code-causes-ci-cd-review-bottlenecks-6c6e7e</guid>
+      <description><![CDATA[JetBrains’ State of CI/CD in 2026 report finds 83.4% of DevOps teams run CI/CD pipelines, with GitHub Actions leading adoption. AI‑generated changes are increasing review workload, creating bottlenecks in software delivery despite widespread use of CI/CD practices.]]></description>
+      <pubDate>Thu, 15 Oct 2026 04:30:50 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/15/jetbrains-ai-software-delivery-report/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>GuardOS App Offers QR Link Scanning, Safari Filtering, and Data Breach Checks</title>
       <link>https://secubuzz.com/news/guardos-app-offers-qr-link-scanning-safari-filteri-5addb1</link>
@@ -438,24 +456,6 @@
       <pubDate>Wed, 14 Oct 2026 10:16:04 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/14/chainguard-harness/">Help Net Security</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>GitHub Deploys Cheaper AI Model to Detect Secrets in Code</title>
-      <link>https://secubuzz.com/news/github-deploys-cheaper-ai-model-to-detect-secrets-78f8ab</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/github-deploys-cheaper-ai-model-to-detect-secrets-78f8ab</guid>
-      <description><![CDATA[GitHub has introduced a new credential classifier that improves secret detection while cutting median post‑push scan time by 86% and model serving costs by over 98%. The updated pipeline enhances push protection and post‑push scanning, reducing false alerts and preventing credential leaks.]]></description>
-      <pubDate>Wed, 14 Oct 2026 09:26:41 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/14/github-secret-detection-model/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Meta GitHub Repositories Breached, 1,500 Employees’ Data Stolen</title>
-      <link>https://secubuzz.com/news/meta-github-repositories-breached-1-500-employees-3694b3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/meta-github-repositories-breached-1-500-employees-3694b3</guid>
-      <description><![CDATA[Hackers accessed Meta’s GitHub repositories using a stolen employee credential, exfiltrating product source code and personal data linked to about 1,500 Meta employees in the United States. The breach was disclosed on October 13, 2026, and is under investigation.]]></description>
-      <pubDate>Wed, 14 Oct 2026 08:49:41 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-breach-meta-github-repositories/">Cyber Security News</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>
