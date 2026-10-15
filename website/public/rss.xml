@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Oct 2026 18:20:04 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 20:19:59 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Google Deploys AI‑Powered Defenses for Android Scam Messages and Call‑Forwarding Abuse</title>
+      <link>https://secubuzz.com/news/google-deploys-ai-powered-defenses-for-android-sca-4dcec5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-deploys-ai-powered-defenses-for-android-sca-4dcec5</guid>
+      <description><![CDATA[Google has introduced AI‑driven safeguards on Android to detect and block scam text messages and fraudulent call‑forwarding attempts. The feature is gradually rolling out to eligible devices, aiming to reduce phishing and spoofing incidents by automatically identifying malicious content and preventing users from interacting with it.]]></description>
+      <pubDate>Thu, 15 Oct 2026 19:48:43 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/android-gets-ai-defenses-against-messaging-scams-fake-calls/">BleepingComputer</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Zero‑Click Spyware Spreads via Online Ads, Researchers Warn</title>
+      <link>https://secubuzz.com/news/zero-click-spyware-spreads-via-online-ads-research-31e319</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/zero-click-spyware-spreads-via-online-ads-research-31e319</guid>
+      <description><![CDATA[Researchers report that a zero‑click spyware variant now infects devices worldwide through targeted online advertisements. The malware activates without user interaction, enabling covert surveillance and data exfiltration. No CVE is cited, but the exploit chain demonstrates a high‑severity vulnerability that can compromise user privacy and device integrity.]]></description>
+      <pubDate>Thu, 15 Oct 2026 19:00:00 GMT</pubDate>
+      <source url="https://therecord.media/spyware-citizen-lab-advertising">The Record</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Adobe RCE, DNS Wallet Theft, NVIDIA Container Escape, Self‑Healing Backdoor and 23 Other Threats</title>
+      <link>https://secubuzz.com/news/adobe-rce-dns-wallet-theft-nvidia-container-escape-3038f2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/adobe-rce-dns-wallet-theft-nvidia-container-escape-3038f2</guid>
+      <description><![CDATA[Security researchers uncovered multiple vulnerabilities, including an Adobe remote code execution flaw, a DNS wallet theft vector, an NVIDIA container escape, and a self‑healing backdoor. The exploits demonstrate how small permission gaps can lead to data theft, credential misuse, and persistent malicious persistence across diverse platforms.]]></description>
+      <pubDate>Thu, 15 Oct 2026 18:49:33 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/threatsday-adobe-rce-dns-wallet-theft.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Hackers Hijack D‑Link and Ubiquiti Devices to Resell Stolen Bandwidth</title>
+      <link>https://secubuzz.com/news/hackers-hijack-d-link-and-ubiquiti-devices-to-rese-4e6f9b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-hijack-d-link-and-ubiquiti-devices-to-rese-4e6f9b</guid>
+      <description><![CDATA[A proxyjacking campaign has compromised D‑Link and Ubiquiti routers in 34 countries, redirecting users’ internet traffic to a commercial residential proxy network. Victims’ bandwidth is monetized without their knowledge, exposing them to potential data interception and service degradation.]]></description>
+      <pubDate>Thu, 15 Oct 2026 18:20:59 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/hackers-hijack-d-link-ubiquiti-devices-to-resell-your-stolen-bandwidth/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Q3 Vulnerability Pulse Highlights Discovery vs Exploitation Trends</title>
       <link>https://secubuzz.com/news/q3-vulnerability-pulse-highlights-discovery-vs-exp-59c4d1</link>
@@ -53,21 +89,30 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Zero-Click Spyware Infection of Al Jazeera via Online Ads</title>
-      <link>https://secubuzz.com/news/zero-click-spyware-infection-of-al-jazeera-via-onl-24b5ad</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/zero-click-spyware-infection-of-al-jazeera-via-onl-24b5ad</guid>
-      <description><![CDATA[Citizen Lab traced a zero-click spyware infection, Candiru, targeting Al Jazeera devices through ordinary online ads. The malware executed upon ad load, sometimes hidden, enabling covert data exfiltration without user interaction. The attack demonstrates a sophisticated, click‑free espionage vector.]]></description>
-      <pubDate>Thu, 15 Oct 2026 16:01:57 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
       <title>Silent Lynx Uses WinRAR Exploit to Deploy Reverse Shells in CIS Government Attacks</title>
       <link>https://secubuzz.com/news/silent-lynx-uses-winrar-exploit-to-deploy-reverse-7ac91b</link>
       <guid isPermaLink="true">https://secubuzz.com/news/silent-lynx-uses-winrar-exploit-to-deploy-reverse-7ac91b</guid>
       <description><![CDATA[Silent Lynx leveraged a WinRAR vulnerability in macro‑enabled documents, PS2EXE downloaders, GitHub‑hosted PowerShell, and crafted WinRAR archives to deliver reverse shells to CIS government systems from June 2025 to August 2026. The attacks used four distinct infection chains to compromise target networks.]]></description>
       <pubDate>Thu, 15 Oct 2026 16:00:26 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/silent-lynx-exploits-winrar-flaw-to.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Burger King Japan Data Breach Exposes 11.18 Million App Member Records</title>
+      <link>https://secubuzz.com/news/burger-king-japan-data-breach-exposes-11-18-millio-52f400</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/burger-king-japan-data-breach-exposes-11-18-millio-52f400</guid>
+      <description><![CDATA[Burger King Japan confirmed that an unauthorized party accessed the system managing its official app member data, exposing approximately 11.18 million records. The breach was disclosed on October 15 2026. The company has not yet detailed mitigation steps, but the incident highlights the need for stronger access controls on customer data repositories.]]></description>
+      <pubDate>Thu, 15 Oct 2026 15:55:01 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/burger-king-japan-data-breach/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Critical Flaw in ChatGPT GitHub Connector Could Enable Secret Theft</title>
+      <link>https://secubuzz.com/news/critical-flaw-in-chatgpt-github-connector-could-en-2d2fdd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/critical-flaw-in-chatgpt-github-connector-could-en-2d2fdd</guid>
+      <description><![CDATA[A critical vulnerability in ChatGPT’s GitHub integration allows attackers to manipulate repository instructions, causing the AI to modify a different private repository and trigger GitHub Actions. This flaw could enable the theft of private repository secrets. No CVE ID is cited; the issue requires immediate patching of the connector to prevent credential exposure.]]></description>
+      <pubDate>Thu, 15 Oct 2026 15:47:08 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/chatgpt-github-connector-flaw/">Cyber Security News</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -96,15 +141,6 @@
       <pubDate>Thu, 15 Oct 2026 14:30:51 GMT</pubDate>
       <source url="https://cybersecuritynews.com/hackers-use-clickfix/">Cyber Security News</source>
       <category>Ransomware</category>
-    </item>
-    <item>
-      <title>UK Legal Aid Agency Data Breach Exposes Records Back to 1978</title>
-      <link>https://secubuzz.com/news/uk-legal-aid-agency-data-breach-exposes-records-ba-313080</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/uk-legal-aid-agency-data-breach-exposes-records-ba-313080</guid>
-      <description><![CDATA[A cyberattack on the UK Legal Aid Agency compromised a vast archive of records, including documents dating back to 1978. The breach reveals that stolen data is far older and more extensive than initially reported, raising concerns over long-term data protection and regulatory compliance.]]></description>
-      <pubDate>Thu, 15 Oct 2026 14:30:00 GMT</pubDate>
-      <source url="https://therecord.media/uk-legal-aid-cyberattack-data">The Record</source>
-      <category>Breach</category>
     </item>
     <item>
       <title>Chinese-Run Phishing Network Sent One Billion Emails to 75,000 Organizations</title>
@@ -278,6 +314,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>CISA Adds Atlassian CVE-2026-21589 to Known Exploited Vulnerabilities Catalog</title>
+      <link>https://secubuzz.com/news/cisa-adds-atlassian-cve-2026-21589-to-known-exploi-1a0f13</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-atlassian-cve-2026-21589-to-known-exploi-1a0f13</guid>
+      <description><![CDATA[CISA has added CVE-2026-21589, a vulnerability affecting multiple Atlassian products that allows external parties to access files or directories. Evidence shows active exploitation, posing significant risk to federal enterprises. The addition triggers BOD 26-04, requiring federal agencies to prioritize rapid remediation of this high‑risk vulnerability.]]></description>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/alerts/2026/10/15/cisa-adds-one-known-exploited-vulnerability-catalog">CISA</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Thermo Fisher Torrent Suite Vulnerability CVE-2026-107777 Allows Path Traversal</title>
       <link>https://secubuzz.com/news/thermo-fisher-torrent-suite-vulnerability-cve-2026-49c059</link>
       <guid isPermaLink="true">https://secubuzz.com/news/thermo-fisher-torrent-suite-vulnerability-cve-2026-49c059</guid>
@@ -359,15 +404,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>CISA Adds Four Exploited Vulnerabilities to KEV Catalog</title>
-      <link>https://secubuzz.com/news/cisa-adds-four-exploited-vulnerabilities-to-kev-ca-51d214</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-four-exploited-vulnerabilities-to-kev-ca-51d214</guid>
-      <description><![CDATA[CISA has listed four new vulnerabilities in its Known Exploited Vulnerabilities catalog: CVE-2026-0322, a high‑severity RCE in Palo Alto PAN‑OS; CVE-2026-76519, a critical relative path traversal in Cisco SEG; CVE-2026-105133, a medium‑severity improper authentication in Ahsay CBS; and CVE-2026-105134, a critical command injection in Ahsay CBS.]]></description>
-      <pubDate>Thu, 15 Oct 2026 10:43:51 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/15/cve-2026-0322-cve-2026-76519-cve-2026-105133-cve-2026-105134-exploted/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>India Mandates Caller ID Display on 4G and Newer Networks</title>
       <link>https://secubuzz.com/news/india-mandates-caller-id-display-on-4g-and-newer-n-5e0b33</link>
       <guid isPermaLink="true">https://secubuzz.com/news/india-mandates-caller-id-display-on-4g-and-newer-n-5e0b33</guid>
@@ -419,42 +455,6 @@
       <description><![CDATA[Qualys unveiled TruRisk Eliminate 2.0 with TruConfidence, an orchestration engine that automates remediation at machine speed. The platform leverages AI to manage patch deployment, achieving 40% autonomous rollouts with less than 0.1% rollback. It aims to streamline cyber risk elimination for enterprises.]]></description>
       <pubDate>Thu, 15 Oct 2026 07:31:41 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/15/qualys-trurisk-eliminate-2-0-truconfidence/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Langflow&apos;s Critical Authenticated RCE Flaw Targeted in 1,423 Honeypot Exploit Attempts</title>
-      <link>https://secubuzz.com/news/langflow-s-critical-authenticated-rce-flaw-targete-69bc0f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/langflow-s-critical-authenticated-rce-flaw-targete-69bc0f</guid>
-      <description><![CDATA[Langflow, an open‑source AI application platform, has a critical authenticated remote code execution flaw identified as CVE-2026-105740 with a CVSS score of 9.9. Threat actors have launched 1,423 honeypot exploit attempts targeting this vulnerability, allowing attackers to execute arbitrary code on authenticated accounts.]]></description>
-      <pubDate>Thu, 15 Oct 2026 07:07:05 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/langflows-critical-authenticated-rce.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>EU Grocers Hit by Unpatched Fridge Firmware</title>
-      <link>https://secubuzz.com/news/eu-grocers-hit-by-unpatched-fridge-firmware-6635a1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/eu-grocers-hit-by-unpatched-fridge-firmware-6635a1</guid>
-      <description><![CDATA[Hundreds of EU grocery stores suffered multi‑million dollar losses after third‑party vendors managed outdated OT firmware on their cooling systems, leaving the equipment vulnerable to exploitation. The issue highlights the risk of unpatched industrial control software in retail environments.]]></description>
-      <pubDate>Thu, 15 Oct 2026 07:00:00 GMT</pubDate>
-      <source url="https://www.darkreading.com/ics-ot-security/eu-grocers-unpatched-fridge-firmware">Dark Reading</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Immuta CISO Predicts Critical AI Incidents at Major Enterprises Within 18 Months</title>
-      <link>https://secubuzz.com/news/immuta-ciso-predicts-critical-ai-incidents-at-majo-2cfc17</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/immuta-ciso-predicts-critical-ai-incidents-at-majo-2cfc17</guid>
-      <description><![CDATA[Immuta CISO Michael Scott warns that major enterprises will face critical AI incidents within 18 months if AI agents are not treated as lower‑trust identities. He stresses that agent privilege creep differs from human users, that authority should pass to sub‑agents, and that authentication alone does not secure agent actions.]]></description>
-      <pubDate>Thu, 15 Oct 2026 05:30:27 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/15/michael-scott-immuta-ai-agent-permissions/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Internet Attack Surface Growth Varies by Sector</title>
-      <link>https://secubuzz.com/news/internet-attack-surface-growth-varies-by-sector-5f5765</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/internet-attack-surface-growth-varies-by-sector-5f5765</guid>
-      <description><![CDATA[Censys data shows AI-related software exposed to the public internet grew 63% in nine months, from 164,088 IPs in October 2025 to 267,915 in July 2026. Industrial control systems grew only 4% over two and a half years, while older business products remained stable.]]></description>
-      <pubDate>Thu, 15 Oct 2026 05:00:02 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/15/exposed-ai-infrastructure-report/">Help Net Security</source>
       <category>Policy</category>
     </item>
   </channel>

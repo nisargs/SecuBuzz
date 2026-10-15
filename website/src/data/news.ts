@@ -11,6 +11,78 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "google-deploys-ai-powered-defenses-for-android-sca-4dcec5",
+    "title": "Google Deploys AI‑Powered Defenses for Android Scam Messages and Call‑Forwarding Abuse",
+    "summary": "Google has introduced AI‑driven safeguards on Android to detect and block scam text messages and fraudulent call‑forwarding attempts. The feature is gradually rolling out to eligible devices, aiming to reduce phishing and spoofing incidents by automatically identifying malicious content and preventing users from interacting with it.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/android-gets-ai-defenses-against-messaging-scams-fake-calls/",
+    "publishedAt": "2026-10-15T19:48:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-deploys-ai-powered-defenses-for-android-sca",
+      "article-4dcec5",
+      "4dcec5",
+      "google-deploys-ai-powered-defenses-for-android-scam-messages"
+    ]
+  },
+  {
+    "slug": "zero-click-spyware-spreads-via-online-ads-research-31e319",
+    "title": "Zero‑Click Spyware Spreads via Online Ads, Researchers Warn",
+    "summary": "Researchers report that a zero‑click spyware variant now infects devices worldwide through targeted online advertisements. The malware activates without user interaction, enabling covert surveillance and data exfiltration. No CVE is cited, but the exploit chain demonstrates a high‑severity vulnerability that can compromise user privacy and device integrity.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/spyware-citizen-lab-advertising",
+    "publishedAt": "2026-10-15T19:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "zero-click-spyware-spreads-via-online-ads-research",
+      "article-31e319",
+      "31e319",
+      "zero-click-spyware-spreads-via-online-ads-researchers-warn"
+    ]
+  },
+  {
+    "slug": "adobe-rce-dns-wallet-theft-nvidia-container-escape-3038f2",
+    "title": "Adobe RCE, DNS Wallet Theft, NVIDIA Container Escape, Self‑Healing Backdoor and 23 Other Threats",
+    "summary": "Security researchers uncovered multiple vulnerabilities, including an Adobe remote code execution flaw, a DNS wallet theft vector, an NVIDIA container escape, and a self‑healing backdoor. The exploits demonstrate how small permission gaps can lead to data theft, credential misuse, and persistent malicious persistence across diverse platforms.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/threatsday-adobe-rce-dns-wallet-theft.html",
+    "publishedAt": "2026-10-15T18:49:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "adobe-rce-dns-wallet-theft-nvidia-container-escape",
+      "article-3038f2",
+      "3038f2",
+      "adobe-rce-dns-wallet-theft-nvidia-container-escape-self-heal"
+    ]
+  },
+  {
+    "slug": "hackers-hijack-d-link-and-ubiquiti-devices-to-rese-4e6f9b",
+    "title": "Hackers Hijack D‑Link and Ubiquiti Devices to Resell Stolen Bandwidth",
+    "summary": "A proxyjacking campaign has compromised D‑Link and Ubiquiti routers in 34 countries, redirecting users’ internet traffic to a commercial residential proxy network. Victims’ bandwidth is monetized without their knowledge, exposing them to potential data interception and service degradation.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-hijack-d-link-ubiquiti-devices-to-resell-your-stolen-bandwidth/",
+    "publishedAt": "2026-10-15T18:20:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-hijack-d-link-and-ubiquiti-devices-to-rese",
+      "article-4e6f9b",
+      "4e6f9b",
+      "hackers-hijack-d-link-and-ubiquiti-devices-to-resell-stolen-"
+    ]
+  },
+  {
     "slug": "q3-vulnerability-pulse-highlights-discovery-vs-exp-59c4d1",
     "title": "Q3 Vulnerability Pulse Highlights Discovery vs Exploitation Trends",
     "summary": "Thor reviews Q3 trends, noting a gap between vulnerability discovery and exploitation. The newsletter covers recent CVE and KEV data, questioning if the industry faces a \"Bugmageddon.\" It offers insights into how many reported flaws remain unexploited, guiding defensive priorities.",
@@ -101,24 +173,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "zero-click-spyware-infection-of-al-jazeera-via-onl-24b5ad",
-    "title": "Zero-Click Spyware Infection of Al Jazeera via Online Ads",
-    "summary": "Citizen Lab traced a zero-click spyware infection, Candiru, targeting Al Jazeera devices through ordinary online ads. The malware executed upon ad load, sometimes hidden, enabling covert data exfiltration without user interaction. The attack demonstrates a sophisticated, click‑free espionage vector.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html",
-    "publishedAt": "2026-10-15T16:01:57.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "zero-click-spyware-infection-of-al-jazeera-via-onl",
-      "article-24b5ad",
-      "24b5ad",
-      "zero-click-spyware-infection-of-al-jazeera-via-online-ads"
-    ]
-  },
-  {
     "slug": "silent-lynx-uses-winrar-exploit-to-deploy-reverse-7ac91b",
     "title": "Silent Lynx Uses WinRAR Exploit to Deploy Reverse Shells in CIS Government Attacks",
     "summary": "Silent Lynx leveraged a WinRAR vulnerability in macro‑enabled documents, PS2EXE downloaders, GitHub‑hosted PowerShell, and crafted WinRAR archives to deliver reverse shells to CIS government systems from June 2025 to August 2026. The attacks used four distinct infection chains to compromise target networks.",
@@ -134,6 +188,42 @@ export const news: NewsBrief[] = [
       "article-7ac91b",
       "7ac91b",
       "silent-lynx-uses-winrar-exploit-to-deploy-reverse-shells-in-"
+    ]
+  },
+  {
+    "slug": "burger-king-japan-data-breach-exposes-11-18-millio-52f400",
+    "title": "Burger King Japan Data Breach Exposes 11.18 Million App Member Records",
+    "summary": "Burger King Japan confirmed that an unauthorized party accessed the system managing its official app member data, exposing approximately 11.18 million records. The breach was disclosed on October 15 2026. The company has not yet detailed mitigation steps, but the incident highlights the need for stronger access controls on customer data repositories.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/burger-king-japan-data-breach/",
+    "publishedAt": "2026-10-15T15:55:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "burger-king-japan-data-breach-exposes-11-18-millio",
+      "article-52f400",
+      "52f400",
+      "burger-king-japan-data-breach-exposes-11-18-million-app-memb"
+    ]
+  },
+  {
+    "slug": "critical-flaw-in-chatgpt-github-connector-could-en-2d2fdd",
+    "title": "Critical Flaw in ChatGPT GitHub Connector Could Enable Secret Theft",
+    "summary": "A critical vulnerability in ChatGPT’s GitHub integration allows attackers to manipulate repository instructions, causing the AI to modify a different private repository and trigger GitHub Actions. This flaw could enable the theft of private repository secrets. No CVE ID is cited; the issue requires immediate patching of the connector to prevent credential exposure.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/chatgpt-github-connector-flaw/",
+    "publishedAt": "2026-10-15T15:47:08.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "critical-flaw-in-chatgpt-github-connector-could-en",
+      "article-2d2fdd",
+      "2d2fdd",
+      "critical-flaw-in-chatgpt-github-connector-could-enable-secre"
     ]
   },
   {
@@ -188,24 +278,6 @@ export const news: NewsBrief[] = [
       "article-63bba4",
       "63bba4",
       "hackers-deploy-clickfix-and-python-tunnels-to-enable-ransomw"
-    ]
-  },
-  {
-    "slug": "uk-legal-aid-agency-data-breach-exposes-records-ba-313080",
-    "title": "UK Legal Aid Agency Data Breach Exposes Records Back to 1978",
-    "summary": "A cyberattack on the UK Legal Aid Agency compromised a vast archive of records, including documents dating back to 1978. The breach reveals that stolen data is far older and more extensive than initially reported, raising concerns over long-term data protection and regulatory compliance.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/uk-legal-aid-cyberattack-data",
-    "publishedAt": "2026-10-15T14:30:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "uk-legal-aid-agency-data-breach-exposes-records-ba",
-      "article-313080",
-      "313080",
-      "uk-legal-aid-agency-data-breach-exposes-records-back-to-1978"
     ]
   },
   {
@@ -549,6 +621,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cisa-adds-atlassian-cve-2026-21589-to-known-exploi-1a0f13",
+    "title": "CISA Adds Atlassian CVE-2026-21589 to Known Exploited Vulnerabilities Catalog",
+    "summary": "CISA has added CVE-2026-21589, a vulnerability affecting multiple Atlassian products that allows external parties to access files or directories. Evidence shows active exploitation, posing significant risk to federal enterprises. The addition triggers BOD 26-04, requiring federal agencies to prioritize rapid remediation of this high‑risk vulnerability.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/15/cisa-adds-one-known-exploited-vulnerability-catalog",
+    "publishedAt": "2026-10-15T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-21589"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-adds-atlassian-cve-2026-21589-to-known-exploi",
+      "article-1a0f13",
+      "1a0f13",
+      "cisa-adds-atlassian-cve-2026-21589-to-known-exploited-vulner"
+    ]
+  },
+  {
     "slug": "thermo-fisher-torrent-suite-vulnerability-cve-2026-49c059",
     "title": "Thermo Fisher Torrent Suite Vulnerability CVE-2026-107777 Allows Path Traversal",
     "summary": "Thermo Fisher Torrent Suite Software versions are vulnerable to CVE-2026-107777, a path traversal flaw that lets authenticated attackers read arbitrary files on the Torrent Server. The vulnerability, with CVSS 6.5, affects critical healthcare infrastructure worldwide and requires vendor patching.",
@@ -711,29 +803,6 @@ export const news: NewsBrief[] = [
       "article-497bad",
       "497bad",
       "ai-confidence-grows-faster-than-validation-standards"
-    ]
-  },
-  {
-    "slug": "cisa-adds-four-exploited-vulnerabilities-to-kev-ca-51d214",
-    "title": "CISA Adds Four Exploited Vulnerabilities to KEV Catalog",
-    "summary": "CISA has listed four new vulnerabilities in its Known Exploited Vulnerabilities catalog: CVE-2026-0322, a high‑severity RCE in Palo Alto PAN‑OS; CVE-2026-76519, a critical relative path traversal in Cisco SEG; CVE-2026-105133, a medium‑severity improper authentication in Ahsay CBS; and CVE-2026-105134, a critical command injection in Ahsay CBS.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/15/cve-2026-0322-cve-2026-76519-cve-2026-105133-cve-2026-105134-exploted/",
-    "publishedAt": "2026-10-15T10:43:51.000Z",
-    "cves": [
-      "CVE-2026-0322",
-      "CVE-2026-76519",
-      "CVE-2026-105133",
-      "CVE-2026-105134"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cisa-adds-four-exploited-vulnerabilities-to-kev-ca",
-      "article-51d214",
-      "51d214",
-      "cisa-adds-four-exploited-vulnerabilities-to-kev-catalog"
     ]
   },
   {
@@ -1225,24 +1294,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "hackers-hijack-french-supermarket-fridges-raising-34e449",
-    "title": "Hackers Hijack French Supermarket Fridges, Raising Temperatures to 50°C",
-    "summary": "In France, attackers gained control of older Danfoss refrigeration units, forcing them to heat to 50 °C overnight. The breach exploited outdated security software that could not be updated, allowing hackers to override temperature controls and potentially spoil inventory. No confirmation of data theft was reported.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Schneier on Security",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/cyberattack-on-connected-fridges-in-france.html",
-    "publishedAt": "2026-10-14T14:10:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-hijack-french-supermarket-fridges-raising",
-      "article-34e449",
-      "34e449",
-      "hackers-hijack-french-supermarket-fridges-raising-temperatur"
-    ]
-  },
-  {
     "slug": "harmonic-security-raises-50m-to-expand-workforce-a-1201a3",
     "title": "Harmonic Security Raises $50M to Expand Workforce AI Protection",
     "summary": "Cybersecurity startup Harmonic Security announced a $50 million funding round to grow its engineering and go‑to‑market teams in the United States and United Kingdom. The capital will support the development of AI‑driven solutions designed to protect enterprise workforces from evolving cyber threats.",
@@ -1489,24 +1540,6 @@ export const news: NewsBrief[] = [
       "article-34a663",
       "34a663",
       "phase-eight-hobbs-and-whistles-owner-tfg-london-detects-cybe"
-    ]
-  },
-  {
-    "slug": "virustotal-adds-chatgpt-based-threat-intelligence-2f703a",
-    "title": "VirusTotal Adds ChatGPT‑Based Threat Intelligence to Malware Analysis",
-    "summary": "VirusTotal now integrates its threat‑intelligence database with ChatGPT through VirusTotal AI, allowing analysts to query files, URLs, domains, and IPs within a conversation. The integration uses the Model Context Protocol and displays source, date, and coverage of reports.",
-    "category": "Malware",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/virustotal-chatgpt-integration/",
-    "publishedAt": "2026-10-14T10:45:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "virustotal-adds-chatgpt-based-threat-intelligence",
-      "article-2f703a",
-      "2f703a",
-      "virustotal-adds-chatgpt-based-threat-intelligence-to-malware"
     ]
   },
   {
@@ -6241,41 +6274,6 @@ export const news: NewsBrief[] = [
       "article-8afdb3",
       "8afdb3",
       "ai-agent-exploits-zammad-zero-days-to-breach-dutch-vulnerabi"
-    ]
-  },
-  {
-    "slug": "legit-security-adds-automated-fixes-for-open-sourc-2f4484",
-    "title": "Legit Security Adds Automated Fixes for Open‑Source Dependencies",
-    "summary": "Legit Security expands its Agentic Remediation to automatically patch vulnerabilities in open‑source libraries, not just proprietary code. The update lets development teams move from detection to verified fixes without manual triage, addressing the growing risk from AI‑generated code and frequent dependency updates.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/legit-security-agentic-remediation-expansion/",
-    "publishedAt": "2026-10-01T13:04:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "legit-security-adds-automated-fixes-for-open-sourc",
-      "article-2f4484",
-      "2f4484",
-      "legit-security-adds-automated-fixes-for-open-source-dependen"
-    ]
-  },
-  {
-    "slug": "ai-search-is-now-generally-available-26c82e",
-    "title": "AI Search is now generally available",
-    "summary": "AI Search is now generally available, offering image pixel embedding for visual search, OCR on scanned PDFs, file uploads up to 10 MiB, and compatibility with any chat model. The service includes new features and a pricing model, enhancing AI-driven search capabilities for users.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/ai-search-ga/",
-    "publishedAt": "2026-10-01T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-search-is-now-generally-available",
-      "article-26c82e",
-      "26c82e"
     ]
   }
 ];
