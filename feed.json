@@ -1,19 +1,32 @@
 [
   {
-    "id": "https://cybernewsai.com/blog/uat-6275-kazakhstan-nexus-reverse-shells-defense",
-    "sourceUrl": "https://cybernewsai.com/blog/uat-6275-kazakhstan-nexus-reverse-shells-defense",
-    "title": "UAT-6275: Detect and Block Kazakhstan-Nexus Reverse Shells",
-    "headline": "UAT-6275: Detect and Block Kazakhstan-Nexus Reverse Shells",
-    "summary": "Cisco Talos identified UAT-6275, a Kazakhstan-based threat actor that uses WinRAR exploits and the PickleShell tool to establish reverse shells targeting CIS governments. The report outlines detection indicators and defensive measures to block these malicious connections.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-10-15T00:26:22.000Z",
-    "url": "https://cybernewsai.com/blog/uat-6275-kazakhstan-nexus-reverse-shells-defense",
+    "id": "https://www.helpnetsecurity.com/2026/10/15/product-showcase-guardos/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/15/product-showcase-guardos/",
+    "title": "GuardOS App Offers QR Link Scanning, Safari Filtering, and Data Breach Checks",
+    "headline": "GuardOS App Offers QR Link Scanning, Safari Filtering, and Data Breach Checks",
+    "summary": "GuardOS is an iPhone security app that provides device checks, VPN access, Safari content filtering, QR link scanning, and storage cleanup. It alerts users when web protection is disabled and offers a dashboard of security tools. The app is available on the App Store.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-15T04:00:08.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/15/product-showcase-guardos/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/cisco-secure-email-gateway-0-day-vulnerability/",
+    "sourceUrl": "https://cybersecuritynews.com/cisco-secure-email-gateway-0-day-vulnerability/",
+    "title": "Cisco Secure Email Gateway Zero-Day CVE-2026-76519 Actively Exploited",
+    "headline": "Cisco Secure Email Gateway Zero-Day CVE-2026-76519 Actively Exploited",
+    "summary": "Cisco warned that attackers are exploiting a critical zero‑day vulnerability (CVE-2026-76519) in its Secure Email Gateway, granting root access via specially crafted email attachments without login. The flaw has a CVSS score of 9.8 and is actively used in attacks.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-15T03:06:04.000Z",
+    "url": "https://cybersecuritynews.com/cisco-secure-email-gateway-0-day-vulnerability/",
     "additionalSources": [
       {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/cisco-warns-of-active-attacks.html"
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/uat-6275-kazakhstan-nexus-reverse-shells-defense"
       }
     ]
   },

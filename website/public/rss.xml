@@ -5,15 +5,24 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Oct 2026 01:30:32 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 04:19:40 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>UAT-6275: Detect and Block Kazakhstan-Nexus Reverse Shells</title>
-      <link>https://secubuzz.com/news/uat-6275-detect-and-block-kazakhstan-nexus-reverse-66a437</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/uat-6275-detect-and-block-kazakhstan-nexus-reverse-66a437</guid>
-      <description><![CDATA[Cisco Talos identified UAT-6275, a Kazakhstan-based threat actor that uses WinRAR exploits and the PickleShell tool to establish reverse shells targeting CIS governments. The report outlines detection indicators and defensive measures to block these malicious connections.]]></description>
-      <pubDate>Thu, 15 Oct 2026 00:26:22 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/uat-6275-kazakhstan-nexus-reverse-shells-defense">CyberNews AI</source>
+      <title>GuardOS App Offers QR Link Scanning, Safari Filtering, and Data Breach Checks</title>
+      <link>https://secubuzz.com/news/guardos-app-offers-qr-link-scanning-safari-filteri-5addb1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/guardos-app-offers-qr-link-scanning-safari-filteri-5addb1</guid>
+      <description><![CDATA[GuardOS is an iPhone security app that provides device checks, VPN access, Safari content filtering, QR link scanning, and storage cleanup. It alerts users when web protection is disabled and offers a dashboard of security tools. The app is available on the App Store.]]></description>
+      <pubDate>Thu, 15 Oct 2026 04:00:08 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/15/product-showcase-guardos/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Cisco Secure Email Gateway Zero-Day CVE-2026-76519 Actively Exploited</title>
+      <link>https://secubuzz.com/news/cisco-secure-email-gateway-zero-day-cve-2026-76519-3d1f70</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisco-secure-email-gateway-zero-day-cve-2026-76519-3d1f70</guid>
+      <description><![CDATA[Cisco warned that attackers are exploiting a critical zero‑day vulnerability (CVE-2026-76519) in its Secure Email Gateway, granting root access via specially crafted email attachments without login. The flaw has a CVSS score of 9.8 and is actively used in attacks.]]></description>
+      <pubDate>Thu, 15 Oct 2026 03:06:04 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/cisco-secure-email-gateway-0-day-vulnerability/">Cyber Security News</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -446,15 +455,6 @@
       <description><![CDATA[Hackers accessed Meta’s GitHub repositories using a stolen employee credential, exfiltrating product source code and personal data linked to about 1,500 Meta employees in the United States. The breach was disclosed on October 13, 2026, and is under investigation.]]></description>
       <pubDate>Wed, 14 Oct 2026 08:49:41 GMT</pubDate>
       <source url="https://cybersecuritynews.com/hackers-breach-meta-github-repositories/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>OpenAI Engineer Arrested for Attempting to Eavesdrop on Executive Meetings</title>
-      <link>https://secubuzz.com/news/openai-engineer-arrested-for-attempting-to-eavesdr-5cf8a5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-engineer-arrested-for-attempting-to-eavesdr-5cf8a5</guid>
-      <description><![CDATA[An engineer at OpenAI was arrested after installing a covert recording device in a conference room to intercept executive conversations. The device was hidden in toilet paper and connected to a television. The arrest was made by U.S. authorities on October 9, 2026.]]></description>
-      <pubDate>Wed, 14 Oct 2026 08:40:41 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/14/openai-engineer-arrested-hidden-recording-device/">Help Net Security</source>
       <category>Breach</category>
     </item>
   </channel>
