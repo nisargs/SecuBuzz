@@ -11,6 +11,41 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "ai-powered-espionage-targets-government-linux-syst-749199",
+    "title": "AI-Powered Espionage Targets Government Linux Systems",
+    "summary": "Unit 42 reports an AI‑driven espionage campaign that has infiltrated government Linux infrastructure. Attackers deploy custom malware, web shells, and advanced credential‑theft tools to harvest privileged access. The operation demonstrates sophisticated state‑sponsored tactics aimed at compromising critical public sector systems.",
+    "category": "Malware",
+    "severity": "HIGH",
+    "source": "Unit 42",
+    "sourceUrl": "https://unit42.paloaltonetworks.com/ai-campaign-targets-linux-infrastructure/",
+    "publishedAt": "2026-10-15T22:00:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-powered-espionage-targets-government-linux-syst",
+      "article-749199",
+      "749199",
+      "ai-powered-espionage-targets-government-linux-systems"
+    ]
+  },
+  {
+    "slug": "f-secure-publishes-scam-encyclopedia-for-consumers-5a0c7c",
+    "title": "F‑Secure Publishes Scam Encyclopedia for Consumers",
+    "summary": "F‑Secure has released a victim‑first scam encyclopedia that catalogs over 50 types of consumer fraud. The resource draws on decades of threat intelligence to explain scams from the victim’s perspective and tracks emerging cyber‑crime trends, helping users recognize and avoid new fraud tactics.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/threat-intelligence/f-secure-launches-victim-first-scam-encyclopedia-covering-50-types-of-consumer-fraud",
+    "publishedAt": "2026-10-15T21:55:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "f-secure-publishes-scam-encyclopedia-for-consumers",
+      "article-5a0c7c",
+      "5a0c7c"
+    ]
+  },
+  {
     "slug": "federal-bankruptcy-courts-face-outages-after-contr-538ae8",
     "title": "Federal Bankruptcy Courts Face Outages After Contractor Cyberattack",
     "summary": "A government contractor cyberattack has halted all production of bankruptcy notices, causing widespread outages in federal bankruptcy courts. The incident disrupted court operations and delayed notice issuance, but no data breach or credential theft has been reported. No specific vulnerability or CVE is named.",
@@ -6242,42 +6277,6 @@ export const news: NewsBrief[] = [
       "article-1f4021",
       "1f4021",
       "sophos-launches-ai-enabled-ciso-advantage-to-prioritize-secu"
-    ]
-  },
-  {
-    "slug": "ai-accelerates-vulnerability-discovery-but-fundame-278a1c",
-    "title": "AI Accelerates Vulnerability Discovery, but Fundamentals Remain Key",
-    "summary": "AI speeds up finding and exploiting software flaws, yet virtual patching still relies on defense‑in‑depth and solid application security practices. The article stresses that AI does not replace core security principles, only the pace of attacks.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/ai-has-changed-attack-speed-not-security-fundamentals/",
-    "publishedAt": "2026-10-01T13:15:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-accelerates-vulnerability-discovery-but-fundame",
-      "article-278a1c",
-      "278a1c",
-      "ai-accelerates-vulnerability-discovery-but-fundamentals-rema"
-    ]
-  },
-  {
-    "slug": "ai-agent-exploits-zammad-zero-days-to-breach-dutch-8afdb3",
-    "title": "AI Agent Exploits Zammad Zero-Days to Breach Dutch Vulnerability Disclosure Non-Profit",
-    "summary": "An AI-powered attack on September 21 used two zero-day flaws in Zammad, an open-source helpdesk system, to hijack sessions, execute remote code, and elevate privileges from a Zammad user to root. The attackers then accessed additional services and read sensitive data.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/divd-agentic-ai-attack-breach/",
-    "publishedAt": "2026-10-01T13:13:14.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-agent-exploits-zammad-zero-days-to-breach-dutch",
-      "article-8afdb3",
-      "8afdb3",
-      "ai-agent-exploits-zammad-zero-days-to-breach-dutch-vulnerabi"
     ]
   }
 ];

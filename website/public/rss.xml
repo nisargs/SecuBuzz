@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Oct 2026 21:42:08 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 22:22:51 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AI-Powered Espionage Targets Government Linux Systems</title>
+      <link>https://secubuzz.com/news/ai-powered-espionage-targets-government-linux-syst-749199</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-powered-espionage-targets-government-linux-syst-749199</guid>
+      <description><![CDATA[Unit 42 reports an AI‑driven espionage campaign that has infiltrated government Linux infrastructure. Attackers deploy custom malware, web shells, and advanced credential‑theft tools to harvest privileged access. The operation demonstrates sophisticated state‑sponsored tactics aimed at compromising critical public sector systems.]]></description>
+      <pubDate>Thu, 15 Oct 2026 22:00:09 GMT</pubDate>
+      <source url="https://unit42.paloaltonetworks.com/ai-campaign-targets-linux-infrastructure/">Unit 42</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>F‑Secure Publishes Scam Encyclopedia for Consumers</title>
+      <link>https://secubuzz.com/news/f-secure-publishes-scam-encyclopedia-for-consumers-5a0c7c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/f-secure-publishes-scam-encyclopedia-for-consumers-5a0c7c</guid>
+      <description><![CDATA[F‑Secure has released a victim‑first scam encyclopedia that catalogs over 50 types of consumer fraud. The resource draws on decades of threat intelligence to explain scams from the victim’s perspective and tracks emerging cyber‑crime trends, helping users recognize and avoid new fraud tactics.]]></description>
+      <pubDate>Thu, 15 Oct 2026 21:55:07 GMT</pubDate>
+      <source url="https://www.darkreading.com/threat-intelligence/f-secure-launches-victim-first-scam-encyclopedia-covering-50-types-of-consumer-fraud">Dark Reading</source>
+      <category>Cloud</category>
+    </item>
     <item>
       <title>Federal Bankruptcy Courts Face Outages After Contractor Cyberattack</title>
       <link>https://secubuzz.com/news/federal-bankruptcy-courts-face-outages-after-contr-538ae8</link>
@@ -438,24 +456,6 @@
       <pubDate>Thu, 15 Oct 2026 08:45:10 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/ghostaction-compromises-about-1900.html">The Hacker News</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Top 10 Best DLP Software in 2026 Ranked and Scored</title>
-      <link>https://secubuzz.com/news/top-10-best-dlp-software-in-2026-ranked-and-scored-a63110</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/top-10-best-dlp-software-in-2026-ranked-and-scored-a63110</guid>
-      <description><![CDATA[A 2026 ranking of data loss prevention solutions evaluates context, enforcement, and integration. Microsoft Purview tops the list with integrated DLP, while Netskope and Zscaler lead a SASE‑heavy podium. The review highlights how each product balances legitimate work with preventing exfiltration.]]></description>
-      <pubDate>Thu, 15 Oct 2026 07:58:01 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/best-dlp-software/">Cyber Security News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Optro Expands AI‑Driven GRC Platform with Auditable Agents</title>
-      <link>https://secubuzz.com/news/optro-expands-ai-driven-grc-platform-with-auditabl-64d244</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/optro-expands-ai-driven-grc-platform-with-auditabl-64d244</guid>
-      <description><![CDATA[Optro has added autonomous AI agents to its Governance, Risk, and Compliance platform, enabling risk teams to automate workflows while maintaining audit trails. Each agent action, decision, model entry, and evidence is logged and cited, ensuring transparency and compliance with team‑defined guardrails.]]></description>
-      <pubDate>Thu, 15 Oct 2026 07:43:54 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/15/optro-grc-intelligence-platform/">Help Net Security</source>
-      <category>Policy</category>
     </item>
   </channel>
 </rss>
