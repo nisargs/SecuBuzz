@@ -1,5 +1,190 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/police-arrests-95-suspects-in-child-sexual-abuse-material-crackdown/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-arrests-95-suspects-in-child-sexual-abuse-material-crackdown/",
+    "title": "Police Arrest 95 Suspects in International CSAM Crackdown",
+    "headline": "Police Arrest 95 Suspects in International CSAM Crackdown",
+    "summary": "Law enforcement authorities from 17 countries in Latin America and Europe have arrested 95 suspects in an INTERPOL‑coordinated operation targeting the distribution of child sexual abuse material through online messaging groups. The operation disrupted several active groups and seized evidence for ongoing investigations.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-15T11:55:38.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/police-arrests-95-suspects-in-child-sexual-abuse-material-crackdown/",
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/olvx-cybercrime-marketplace-arrest-north-macedonia"
+      }
+    ]
+  },
+  {
+    "id": "https://www.securityweek.com/cikabika-bot-rat-uses-discord-for-cc/",
+    "sourceUrl": "https://www.securityweek.com/cikabika-bot-rat-uses-discord-for-cc/",
+    "title": "CikaBika Bot RAT Uses Discord for Command and Control",
+    "headline": "CikaBika Bot RAT Uses Discord for Command and Control",
+    "summary": "The CikaBika Bot Remote Access Trojan, delivered via phishing, offers reconnaissance, remote execution, and data exfiltration. It uses Discord servers for command and control, enabling attackers to manage compromised hosts from a covert channel. Security analysts recommend monitoring Discord traffic and blocking malicious bot tokens to mitigate the threat.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-15T11:25:58.000Z",
+    "url": "https://www.securityweek.com/cikabika-bot-rat-uses-discord-for-cc/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.malwarebytes.com/blog/privacy/2026/10/raven-ai-lets-cops-find-your-home-from-a-photo-taken-inside",
+    "sourceUrl": "https://www.malwarebytes.com/blog/privacy/2026/10/raven-ai-lets-cops-find-your-home-from-a-photo-taken-inside",
+    "title": "AI Tool Enables Law Enforcement to Locate Homes from Indoor Photos",
+    "headline": "AI Tool Enables Law Enforcement to Locate Homes from Indoor Photos",
+    "summary": "An AI tool used by police can match indoor images to property listings, revealing home addresses even when GPS data is removed. The technology cross‑references photo content with online listings, potentially compromising privacy for residents who assume location data is stripped.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "publishedAt": "2026-10-15T11:09:53.000Z",
+    "url": "https://www.malwarebytes.com/blog/privacy/2026/10/raven-ai-lets-cops-find-your-home-from-a-photo-taken-inside",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/15/cve-2026-0322-cve-2026-76519-cve-2026-105133-cve-2026-105134-exploted/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/15/cve-2026-0322-cve-2026-76519-cve-2026-105133-cve-2026-105134-exploted/",
+    "title": "CISA Adds Four Exploited Vulnerabilities to KEV Catalog",
+    "headline": "CISA Adds Four Exploited Vulnerabilities to KEV Catalog",
+    "summary": "CISA has listed four new vulnerabilities in its Known Exploited Vulnerabilities catalog: CVE-2026-0322, a high‑severity RCE in Palo Alto PAN‑OS; CVE-2026-76519, a critical relative path traversal in Cisco SEG; CVE-2026-105133, a medium‑severity improper authentication in Ahsay CBS; and CVE-2026-105134, a critical command injection in Ahsay CBS.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-15T10:43:51.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/15/cve-2026-0322-cve-2026-76519-cve-2026-105133-cve-2026-105134-exploted/",
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/palo-alto-networks-patches-pan-os-zero-day-exploited-for-remote-code-execution/"
+      },
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/ahsaycbs-flaws-exploited-to-deploy-web.html"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/india-mandates-registered-caller-name.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/india-mandates-registered-caller-name.html",
+    "title": "India Mandates Caller ID Display on 4G and Newer Networks",
+    "headline": "India Mandates Caller ID Display on 4G and Newer Networks",
+    "summary": "The Indian government has ordered telecom service providers to display callers’ registered names with numbers on all 4G and newer networks starting November 1, 2026. The directive aims to help users identify unknown callers and reduce spam and fraudulent calls.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-15T10:42:16.000Z",
+    "url": "https://thehackernews.com/2026/10/india-mandates-registered-caller-name.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/novel-android-banking-rat-hirudo-replaces-banking-apps-with-trojanized-copies/",
+    "sourceUrl": "https://www.securityweek.com/novel-android-banking-rat-hirudo-replaces-banking-apps-with-trojanized-copies/",
+    "title": "Android RAT ‘Hirudo’ Replaces Banking Apps With Trojanized Copies",
+    "headline": "Android RAT ‘Hirudo’ Replaces Banking Apps With Trojanized Copies",
+    "summary": "The Hirudo malware merges a banking trojan with a remote‑access trojan, installing trojanized copies of legitimate banking apps on infected Android devices. The RAT allows attackers to intercept credentials and control the device, posing a significant threat to mobile banking users.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-15T10:15:32.000Z",
+    "url": "https://www.securityweek.com/novel-android-banking-rat-hirudo-replaces-banking-apps-with-trojanized-copies/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/15/microsoft-disrupting-phishing-kits-marketplace-yam-store/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/15/microsoft-disrupting-phishing-kits-marketplace-yam-store/",
+    "title": "Microsoft disrupts phishing network behind more than a billion scam messages",
+    "headline": "Microsoft disrupts phishing network behind more than a billion scam messages",
+    "summary": "Microsoft and Resecurity dismantled a criminal marketplace that sold phishing kits and cloud accounts used to target healthcare, financial services, wholesale distribution, and IT organizations in Japan, the United States, Australia, and India. The marketplace, known as Storm-3119, sold kits such as CoGUI (NX) and other tools that enabled large‑scale phishing campaigns.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-15T10:10:21.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/15/microsoft-disrupting-phishing-kits-marketplace-yam-store/",
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/yam-store-storm-3119-phishing-network-defense"
+      },
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/brooklyn-da-server-takedowns-crypto-scam-russian-speakers"
+      }
+    ]
+  },
+  {
+    "id": "https://www.securityweek.com/centerpoint-energy-data-breach-impacts-1-million-texans/",
+    "sourceUrl": "https://www.securityweek.com/centerpoint-energy-data-breach-impacts-1-million-texans/",
+    "title": "CenterPoint Energy Data Breach Compromises 1 Million Texans",
+    "headline": "CenterPoint Energy Data Breach Compromises 1 Million Texans",
+    "summary": "A data breach at CenterPoint Energy exposed personal information—including names, addresses, Social Security numbers, and driver’s license numbers—of approximately one million Texas residents. The incident represents a significant credential and identity theft risk for affected individuals. No mitigation steps are detailed in the source.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-15T09:55:19.000Z",
+    "url": "https://www.securityweek.com/centerpoint-energy-data-breach-impacts-1-million-texans/",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/15/product-showcase-guardos/"
+      },
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/xandr-fined-record-86-million-for.html"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-causing-windows-black-screens-explorer-crashes/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-causing-windows-black-screens-explorer-crashes/",
+    "title": "Microsoft fixes bug causing Windows black screens, Explorer crashes",
+    "headline": "Microsoft fixes bug causing Windows black screens, Explorer crashes",
+    "summary": "Microsoft released a patch that resolves a known issue causing black screens, desktop loading problems, and Explorer crashes on Windows 11 systems after updates issued since August. The fix addresses the underlying bug that triggered these UI failures.",
+    "category": "VULNERABILITY",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-15T09:10:20.000Z",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-causing-windows-black-screens-explorer-crashes/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/uat-6275-hackers/",
+    "sourceUrl": "https://cybersecuritynews.com/uat-6275-hackers/",
+    "title": "UAT-6275 Hackers Exploit WinRAR Flaw to Target CIS Government Organizations",
+    "headline": "UAT-6275 Hackers Exploit WinRAR Flaw to Target CIS Government Organizations",
+    "summary": "UAT-6275 hackers used a known WinRAR flaw to plant malware on Windows systems, targeting government organizations across the Commonwealth of Independent States. The unpatched archive tool allowed remote access, with malicious code activating when victims signed in next.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-15T09:08:09.000Z",
+    "url": "https://cybersecuritynews.com/uat-6275-hackers/",
+    "additionalSources": [
+      {
+        "source": "Cisco Talos",
+        "sourceUrl": "https://blog.talosintelligence.com/break-the-silence-kazakhstan-nexus-uat-6275-targets-cis-government-organizations/"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/ghostaction-compromises-about-1900.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/ghostaction-compromises-about-1900.html",
+    "title": "GhostAction Compromises About 1,900 GitHub Accounts, Targets Over 30,000 Repositories",
+    "headline": "GhostAction Compromises About 1,900 GitHub Accounts, Targets Over 30,000 Repositories",
+    "summary": "The GhostAction credential‑theft campaign compromised roughly 1,900 GitHub accounts, targeting more than 30,000 repositories across 3,000 users and organizations. Attackers attempted to extract 3,174 secrets from public repositories’ CI pipelines.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-15T08:45:10.000Z",
+    "url": "https://thehackernews.com/2026/10/ghostaction-compromises-about-1900.html",
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/hackers-breach-meta-github-repositories/"
+      }
+    ]
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/uk-legal-aid-agency-hackers-stole-records-dating-back-to-1978/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/uk-legal-aid-agency-hackers-stole-records-dating-back-to-1978/",
     "title": "UK Legal Aid Agency Records Stolen in April 2025 Breach",
@@ -11,6 +196,24 @@
     "publishedAt": "2026-10-15T08:06:47.000Z",
     "url": "https://www.bleepingcomputer.com/news/security/uk-legal-aid-agency-hackers-stole-records-dating-back-to-1978/",
     "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/best-dlp-software/",
+    "sourceUrl": "https://cybersecuritynews.com/best-dlp-software/",
+    "title": "Top 10 Best DLP Software in 2026 Ranked and Scored",
+    "headline": "Top 10 Best DLP Software in 2026 Ranked and Scored",
+    "summary": "A 2026 ranking of data loss prevention solutions evaluates context, enforcement, and integration. Microsoft Purview tops the list with integrated DLP, while Netskope and Zscaler lead a SASE‑heavy podium. The review highlights how each product balances legitimate work with preventing exfiltration.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-15T07:58:01.000Z",
+    "url": "https://cybersecuritynews.com/best-dlp-software/",
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/best-malware-analysis-tools/"
+      }
+    ]
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/10/15/qualys-trurisk-eliminate-2-0-truconfidence/",
@@ -31,6 +234,19 @@
     ]
   },
   {
+    "id": "https://thehackernews.com/2026/10/langflows-critical-authenticated-rce.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/langflows-critical-authenticated-rce.html",
+    "title": "Langflow's Critical Authenticated RCE Flaw Targeted in 1,423 Honeypot Exploit Attempts",
+    "headline": "Langflow's Critical Authenticated RCE Flaw Targeted in 1,423 Honeypot Exploit Attempts",
+    "summary": "Langflow, an open‑source AI application platform, has a critical authenticated remote code execution flaw identified as CVE-2026-105740 with a CVSS score of 9.9. Threat actors have launched 1,423 honeypot exploit attempts targeting this vulnerability, allowing attackers to execute arbitrary code on authenticated accounts.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-15T07:07:05.000Z",
+    "url": "https://thehackernews.com/2026/10/langflows-critical-authenticated-rce.html",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.darkreading.com/ics-ot-security/eu-grocers-unpatched-fridge-firmware",
     "sourceUrl": "https://www.darkreading.com/ics-ot-security/eu-grocers-unpatched-fridge-firmware",
     "title": "EU Grocers Hit by Unpatched Fridge Firmware",
@@ -42,58 +258,6 @@
     "publishedAt": "2026-10-15T07:00:00.000Z",
     "url": "https://www.darkreading.com/ics-ot-security/eu-grocers-unpatched-fridge-firmware",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/palo-alto-networks-patches-pan-os-zero-day-exploited-for-remote-code-execution/",
-    "sourceUrl": "https://www.securityweek.com/palo-alto-networks-patches-pan-os-zero-day-exploited-for-remote-code-execution/",
-    "title": "Palo Alto Networks Issues Patch for PAN‑OS Zero‑Day RCE",
-    "headline": "Palo Alto Networks Issues Patch for PAN‑OS Zero‑Day RCE",
-    "summary": "Palo Alto Networks released a patch for a zero‑day remote code execution flaw in PAN‑OS that was actively exploited against customer firewalls. The company provided indicators of compromise and urged immediate update to mitigate the vulnerability.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-15T06:59:54.000Z",
-    "url": "https://www.securityweek.com/palo-alto-networks-patches-pan-os-zero-day-exploited-for-remote-code-execution/",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/palo-alto-networks-patches-pan-os.html"
-      },
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/pan-os-0-day-vulnerability/"
-      },
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-pan-os-rce-flaw-exploited-in-attacks/"
-      },
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/cve-2026-96951-windows-shell-motw-zero-day-patch"
-      }
-    ]
-  },
-  {
-    "id": "https://www.securityweek.com/cisco-warns-of-exploited-secure-email-gateway-vulnerability/",
-    "sourceUrl": "https://www.securityweek.com/cisco-warns-of-exploited-secure-email-gateway-vulnerability/",
-    "title": "Cisco Secure Email Gateway Vulnerability Allows Unauthenticated Remote Code Execution",
-    "headline": "Cisco Secure Email Gateway Vulnerability Allows Unauthenticated Remote Code Execution",
-    "summary": "Cisco identified an unauthenticated remote flaw in its Secure Email Gateway that permits attackers to write arbitrary files and execute commands with root privileges on the operating system. The vulnerability enables full system compromise and requires immediate patching to prevent exploitation.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-15T06:34:15.000Z",
-    "url": "https://www.securityweek.com/cisco-warns-of-exploited-secure-email-gateway-vulnerability/",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/cisco-secure-email-gateway-0-day-vulnerability/"
-      },
-      {
-        "source": "CISA",
-        "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-286-02"
-      }
-    ]
   },
   {
     "id": "https://cybersecuritynews.com/fake-chrome-app/",
@@ -153,19 +317,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.helpnetsecurity.com/2026/10/15/product-showcase-guardos/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/15/product-showcase-guardos/",
-    "title": "GuardOS App Offers QR Link Scanning, Safari Filtering, and Data Breach Checks",
-    "headline": "GuardOS App Offers QR Link Scanning, Safari Filtering, and Data Breach Checks",
-    "summary": "GuardOS is an iPhone security app that provides device checks, VPN access, Safari content filtering, QR link scanning, and storage cleanup. It alerts users when web protection is disabled and offers a dashboard of security tools. The app is available on the App Store.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-15T04:00:08.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/15/product-showcase-guardos/",
-    "additionalSources": []
-  },
-  {
     "id": "https://cybersecuritynews.com/multiple-active-directory-vulnerabilities/",
     "sourceUrl": "https://cybersecuritynews.com/multiple-active-directory-vulnerabilities/",
     "title": "Microsoft Discloses Three Active Directory Vulnerabilities Allowing Remote Bypass of Security Feature",
@@ -179,26 +330,17 @@
     "additionalSources": []
   },
   {
-    "id": "https://cybernewsai.com/blog/yam-store-storm-3119-phishing-network-defense",
-    "sourceUrl": "https://cybernewsai.com/blog/yam-store-storm-3119-phishing-network-defense",
-    "title": "Microsoft Disrupts YAM Store and Storm-3119 Phishing Network",
-    "headline": "Microsoft Disrupts YAM Store and Storm-3119 Phishing Network",
-    "summary": "Microsoft shut down YAM Store and the Storm-3119 network, which sent about 1 billion phishing messages. The disruption stops the delivery of malicious emails to enterprise clouds and helps defenders block future phishing attempts by identifying and blocking the network’s infrastructure.",
+    "id": "https://therecord.media/ukraine-says-starshield-working-again-after-disruption",
+    "sourceUrl": "https://therecord.media/ukraine-says-starshield-working-again-after-disruption",
+    "title": "Ukraine Restores SpaceX Starshield Satellite Service After Restrictions",
+    "headline": "Ukraine Restores SpaceX Starshield Satellite Service After Restrictions",
+    "summary": "Ukraine’s military regained access to SpaceX’s Starshield satellite communications after temporary restrictions halted drone operations. The Defense Ministry confirmed the service is now operational, allowing continued use of satellite‑based drone control along the front line. No cyber attack or vulnerability was reported.",
     "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-10-15T00:05:58.000Z",
-    "url": "https://cybernewsai.com/blog/yam-store-storm-3119-phishing-network-defense",
-    "additionalSources": [
-      {
-        "source": "Dark Reading",
-        "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/yam-store-phishing-network-behind-billion-messages"
-      },
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/global-takedown-hits-network-behind-1-billion-phishing-messages/"
-      }
-    ]
+    "severity": "LOW",
+    "source": "The Record",
+    "publishedAt": "2026-10-14T23:00:00.000Z",
+    "url": "https://therecord.media/ukraine-says-starshield-working-again-after-disruption",
+    "additionalSources": []
   },
   {
     "id": "https://unit42.paloaltonetworks.com/fortimanager-cve-2024-47575-peerstitch-malware/",
@@ -230,32 +372,6 @@
         "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-immediately-fix-ivanti-flaw-exploited-as-zero-day/"
       }
     ]
-  },
-  {
-    "id": "https://therecord.media/olvx-cybercrime-marketplace-arrest-north-macedonia",
-    "sourceUrl": "https://therecord.media/olvx-cybercrime-marketplace-arrest-north-macedonia",
-    "title": "North Macedonian Police Arrest Administrator of OLVX Cybercrime Market",
-    "headline": "North Macedonian Police Arrest Administrator of OLVX Cybercrime Market",
-    "summary": "North Macedonian police, with FBI assistance, raided a village home and arrested the suspected administrator of the OLVX cybercrime marketplace. The operation targeted the market’s leadership, disrupting its operations and potentially curbing its illicit activities.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "publishedAt": "2026-10-14T21:10:00.000Z",
-    "url": "https://therecord.media/olvx-cybercrime-marketplace-arrest-north-macedonia",
-    "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/brooklyn-da-server-takedowns-crypto-scam-russian-speakers",
-    "sourceUrl": "https://therecord.media/brooklyn-da-server-takedowns-crypto-scam-russian-speakers",
-    "title": "Brooklyn DA’s Office Disrupts Crypto Scam Targeting Russian Community",
-    "headline": "Brooklyn DA’s Office Disrupts Crypto Scam Targeting Russian Community",
-    "summary": "Russian-speaking Brooklyn residents reported a cryptocurrency fraud scheme to local authorities. The district attorney’s office launched an operation that seized the scam’s servers and domains, effectively shutting down the fraudulent activity. No data breach was reported.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Record",
-    "publishedAt": "2026-10-14T20:33:00.000Z",
-    "url": "https://therecord.media/brooklyn-da-server-takedowns-crypto-scam-russian-speakers",
-    "additionalSources": []
   },
   {
     "id": "https://blog.cloudflare.com/yandex-outage/",
@@ -556,19 +672,6 @@
         "sourceUrl": "https://www.helpnetsecurity.com/2026/10/13/ridge-security-ridgeone/"
       }
     ]
-  },
-  {
-    "id": "https://blog.talosintelligence.com/break-the-silence-kazakhstan-nexus-uat-6275-targets-cis-government-organizations/",
-    "sourceUrl": "https://blog.talosintelligence.com/break-the-silence-kazakhstan-nexus-uat-6275-targets-cis-government-organizations/",
-    "title": "UAT-6275 Targets CIS Government Organizations",
-    "headline": "UAT-6275 Targets CIS Government Organizations",
-    "summary": "Talos and Recorded Future identified UAT-6275 activity focused on government organizations across the Commonwealth of Independent States. Artifacts also show interest in water resources and energy sectors. The group’s operations suggest a coordinated effort linked to Kazakhstan. No public exploitation or vulnerability disclosed.",
-    "category": "NATION_STATE",
-    "severity": "HIGH",
-    "source": "Cisco Talos",
-    "publishedAt": "2026-10-14T14:00:00.000Z",
-    "url": "https://blog.talosintelligence.com/break-the-silence-kazakhstan-nexus-uat-6275-targets-cis-government-organizations/",
-    "additionalSources": []
   },
   {
     "id": "https://cybersecuritynews.com/west-african-scam-networks/",
@@ -880,19 +983,6 @@
     "source": "ESET WeLiveSecurity",
     "publishedAt": "2026-10-14T09:00:00.000Z",
     "url": "https://www.welivesecurity.com/en/scams/medicare-open-enrollment-season-scams/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/hackers-breach-meta-github-repositories/",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-breach-meta-github-repositories/",
-    "title": "Meta GitHub Repositories Breached, 1,500 Employees’ Data Stolen",
-    "headline": "Meta GitHub Repositories Breached, 1,500 Employees’ Data Stolen",
-    "summary": "Hackers accessed Meta’s GitHub repositories using a stolen employee credential, exfiltrating product source code and personal data linked to about 1,500 Meta employees in the United States. The breach was disclosed on October 13, 2026, and is under investigation.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-14T08:49:41.000Z",
-    "url": "https://cybersecuritynews.com/hackers-breach-meta-github-repositories/",
     "additionalSources": []
   },
   {
@@ -1332,28 +1422,6 @@
     ]
   },
   {
-    "id": "https://thehackernews.com/2026/10/xandr-fined-record-86-million-for.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/xandr-fined-record-86-million-for.html",
-    "title": "Xandr Fined €8.6 Million for Relaying Grindr Data",
-    "headline": "Xandr Fined €8.6 Million for Relaying Grindr Data",
-    "summary": "The Norwegian Data Protection Authority fined Xandr, Microsoft’s advertising unit, €8.6 million for illegally relaying Grindr users’ sensitive data to advertisers. The penalty was the largest issued by the watchdog, citing the very serious nature of the breach.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-13T13:12:32.000Z",
-    "url": "https://thehackernews.com/2026/10/xandr-fined-record-86-million-for.html",
-    "additionalSources": [
-      {
-        "source": "Malwarebytes Labs",
-        "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/grindr-users-sensitive-data-shared-through-ad-auctions-without-valid-consent"
-      },
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/norway-fines-microsoft-ad-firm-96-million-over-grindr-data-sharing/"
-      }
-    ]
-  },
-  {
     "id": "https://www.helpnetsecurity.com/2026/10/13/lattice-sentry-5-0-solution-stack/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/13/lattice-sentry-5-0-solution-stack/",
     "title": "Lattice Sentry 5.0 Adds Quantum‑Resistant Firmware Security",
@@ -1426,24 +1494,6 @@
     "publishedAt": "2026-10-13T10:30:00.000Z",
     "url": "https://thehackernews.com/2026/10/product-walkthrough-bitdefender-ai.html",
     "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/best-mobile-appsec-testing-tools/",
-    "sourceUrl": "https://cybersecuritynews.com/best-mobile-appsec-testing-tools/",
-    "title": "Top 10 Best Mobile Application Security Testing Tools in 2026",
-    "headline": "Top 10 Best Mobile Application Security Testing Tools in 2026",
-    "summary": "A ranked list of mobile application security testing tools evaluates source code inspection, penetration testing, and hardening techniques. The guide helps teams identify vulnerabilities before release, covering both static and dynamic analysis to protect apps from hostile devices and reduce security gaps.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-13T10:25:09.000Z",
-    "url": "https://cybersecuritynews.com/best-mobile-appsec-testing-tools/",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/best-sbom-tools/"
-      }
-    ]
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/10/13/gitlab-ci-cd-regular-expression-compiler-vulnerability-cve-2026-97229/",
@@ -2301,19 +2351,6 @@
     "source": "The Hacker News",
     "publishedAt": "2026-10-09T11:30:00.000Z",
     "url": "https://thehackernews.com/2026/10/the-ai-velocity-paradox-why-security-is.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/unpatched-ahsaycbs-vulnerabilities-exploited-in-the-wild/",
-    "sourceUrl": "https://www.securityweek.com/unpatched-ahsaycbs-vulnerabilities-exploited-in-the-wild/",
-    "title": "Unpatched AhsayCBS Vulnerabilities Exploited in the Wild",
-    "headline": "Unpatched AhsayCBS Vulnerabilities Exploited in the Wild",
-    "summary": "The AhsayCBS platform suffers from two unpatched flaws, CVE-2026-105133 and CVE-2026-105134, that let attackers bypass authentication and inject operating‑system commands. Exploitation can lead to full system compromise. Immediate patching or disabling the affected modules is required.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-09T10:23:42.000Z",
-    "url": "https://www.securityweek.com/unpatched-ahsaycbs-vulnerabilities-exploited-in-the-wild/",
     "additionalSources": []
   },
   {
@@ -5208,58 +5245,5 @@
         "sourceUrl": "https://www.helpnetsecurity.com/2026/09/28/drunk-ai-models-jailbreak-research/"
       }
     ]
-  },
-  {
-    "id": "https://www.securityweek.com/ftc-is-investigating-openai-and-anthropic-over-possible-risks-to-consumers/",
-    "sourceUrl": "https://www.securityweek.com/ftc-is-investigating-openai-and-anthropic-over-possible-risks-to-consumers/",
-    "title": "FTC Investigating OpenAI and Anthropic Over Possible Consumer Risks",
-    "headline": "FTC Investigating OpenAI and Anthropic Over Possible Consumer Risks",
-    "summary": "The Federal Trade Commission has opened an investigation into OpenAI and Anthropic, citing potential risks to consumers. The FTC confirmed the inquiry but has not released further details. The probe focuses on how the companies’ AI services may affect user privacy and safety.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-09-30T23:43:51.000Z",
-    "url": "https://www.securityweek.com/ftc-is-investigating-openai-and-anthropic-over-possible-risks-to-consumers/",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/anthropic-flags-ai-agent-liability-risks-as-openai-faces-hacking-lawsuit/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/russian-state-hackers-use-new-redflick-technique-to-push-malware/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/russian-state-hackers-use-new-redflick-technique-to-push-malware/",
-    "title": "Russian State Hackers Deploy CosmicPulse Backdoor via RedFlick Technique",
-    "headline": "Russian State Hackers Deploy CosmicPulse Backdoor via RedFlick Technique",
-    "summary": "Russian state actor Star Blizzard has introduced a new malware installation method called RedFlick to deploy its CosmicPulse backdoor. The technique allows the actor to push malicious code onto targeted systems, potentially enabling persistent access and data exfiltration. No public patch or mitigation is currently available.",
-    "category": "NATION_STATE",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-09-30T20:34:01.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/russian-state-hackers-use-new-redflick-technique-to-push-malware/",
-    "additionalSources": [
-      {
-        "source": "Dark Reading",
-        "sourceUrl": "https://www.darkreading.com/threat-intelligence/russia-star-blizzard-apt-ditches-clickfix-widen-phishing-net"
-      },
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/russia-hackers-ukraine-blizzard"
-      }
-    ]
-  },
-  {
-    "id": "https://therecord.media/automakers-routinely-share-connected-car-data-third-parties",
-    "sourceUrl": "https://therecord.media/automakers-routinely-share-connected-car-data-third-parties",
-    "title": "Automakers Share Connected-Car Data with Third-Party Advertisers",
-    "headline": "Automakers Share Connected-Car Data with Third-Party Advertisers",
-    "summary": "A study shows that automakers routinely provide personally identifiable connected-car data to a network of large corporations involved in advertising. The data sharing exposes drivers to extensive tracking and profiling by third parties, raising privacy concerns about the use of vehicle telemetry for targeted marketing.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Record",
-    "publishedAt": "2026-09-30T20:32:00.000Z",
-    "url": "https://therecord.media/automakers-routinely-share-connected-car-data-third-parties",
-    "additionalSources": []
   }
 ]

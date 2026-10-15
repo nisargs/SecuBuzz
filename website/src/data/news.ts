@@ -11,6 +11,209 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "police-arrest-95-suspects-in-international-csam-cr-66e54a",
+    "title": "Police Arrest 95 Suspects in International CSAM Crackdown",
+    "summary": "Law enforcement authorities from 17 countries in Latin America and Europe have arrested 95 suspects in an INTERPOL‑coordinated operation targeting the distribution of child sexual abuse material through online messaging groups. The operation disrupted several active groups and seized evidence for ongoing investigations.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-arrests-95-suspects-in-child-sexual-abuse-material-crackdown/",
+    "publishedAt": "2026-10-15T11:55:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "police-arrest-95-suspects-in-international-csam-cr",
+      "article-66e54a",
+      "66e54a",
+      "police-arrest-95-suspects-in-international-csam-crackdown"
+    ]
+  },
+  {
+    "slug": "cikabika-bot-rat-uses-discord-for-command-and-cont-7b597a",
+    "title": "CikaBika Bot RAT Uses Discord for Command and Control",
+    "summary": "The CikaBika Bot Remote Access Trojan, delivered via phishing, offers reconnaissance, remote execution, and data exfiltration. It uses Discord servers for command and control, enabling attackers to manage compromised hosts from a covert channel. Security analysts recommend monitoring Discord traffic and blocking malicious bot tokens to mitigate the threat.",
+    "category": "Malware",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/cikabika-bot-rat-uses-discord-for-cc/",
+    "publishedAt": "2026-10-15T11:25:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cikabika-bot-rat-uses-discord-for-command-and-cont",
+      "article-7b597a",
+      "7b597a",
+      "cikabika-bot-rat-uses-discord-for-command-and-control"
+    ]
+  },
+  {
+    "slug": "ai-tool-enables-law-enforcement-to-locate-homes-fr-30534a",
+    "title": "AI Tool Enables Law Enforcement to Locate Homes from Indoor Photos",
+    "summary": "An AI tool used by police can match indoor images to property listings, revealing home addresses even when GPS data is removed. The technology cross‑references photo content with online listings, potentially compromising privacy for residents who assume location data is stripped.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/privacy/2026/10/raven-ai-lets-cops-find-your-home-from-a-photo-taken-inside",
+    "publishedAt": "2026-10-15T11:09:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-tool-enables-law-enforcement-to-locate-homes-fr",
+      "article-30534a",
+      "30534a",
+      "ai-tool-enables-law-enforcement-to-locate-homes-from-indoor-"
+    ]
+  },
+  {
+    "slug": "cisa-adds-four-exploited-vulnerabilities-to-kev-ca-51d214",
+    "title": "CISA Adds Four Exploited Vulnerabilities to KEV Catalog",
+    "summary": "CISA has listed four new vulnerabilities in its Known Exploited Vulnerabilities catalog: CVE-2026-0322, a high‑severity RCE in Palo Alto PAN‑OS; CVE-2026-76519, a critical relative path traversal in Cisco SEG; CVE-2026-105133, a medium‑severity improper authentication in Ahsay CBS; and CVE-2026-105134, a critical command injection in Ahsay CBS.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/15/cve-2026-0322-cve-2026-76519-cve-2026-105133-cve-2026-105134-exploted/",
+    "publishedAt": "2026-10-15T10:43:51.000Z",
+    "cves": [
+      "CVE-2026-0322",
+      "CVE-2026-76519",
+      "CVE-2026-105133",
+      "CVE-2026-105134"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-adds-four-exploited-vulnerabilities-to-kev-ca",
+      "article-51d214",
+      "51d214",
+      "cisa-adds-four-exploited-vulnerabilities-to-kev-catalog"
+    ]
+  },
+  {
+    "slug": "india-mandates-caller-id-display-on-4g-and-newer-n-5e0b33",
+    "title": "India Mandates Caller ID Display on 4G and Newer Networks",
+    "summary": "The Indian government has ordered telecom service providers to display callers’ registered names with numbers on all 4G and newer networks starting November 1, 2026. The directive aims to help users identify unknown callers and reduce spam and fraudulent calls.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/india-mandates-registered-caller-name.html",
+    "publishedAt": "2026-10-15T10:42:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "india-mandates-caller-id-display-on-4g-and-newer-n",
+      "article-5e0b33",
+      "5e0b33",
+      "india-mandates-caller-id-display-on-4g-and-newer-networks"
+    ]
+  },
+  {
+    "slug": "android-rat-hirudo-replaces-banking-apps-with-troj-3a43e7",
+    "title": "Android RAT ‘Hirudo’ Replaces Banking Apps With Trojanized Copies",
+    "summary": "The Hirudo malware merges a banking trojan with a remote‑access trojan, installing trojanized copies of legitimate banking apps on infected Android devices. The RAT allows attackers to intercept credentials and control the device, posing a significant threat to mobile banking users.",
+    "category": "Malware",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/novel-android-banking-rat-hirudo-replaces-banking-apps-with-trojanized-copies/",
+    "publishedAt": "2026-10-15T10:15:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "android-rat-hirudo-replaces-banking-apps-with-troj",
+      "article-3a43e7",
+      "3a43e7",
+      "android-rat-hirudo-replaces-banking-apps-with-trojanized-cop"
+    ]
+  },
+  {
+    "slug": "microsoft-disrupts-phishing-network-behind-more-th-1a4def",
+    "title": "Microsoft disrupts phishing network behind more than a billion scam messages",
+    "summary": "Microsoft and Resecurity dismantled a criminal marketplace that sold phishing kits and cloud accounts used to target healthcare, financial services, wholesale distribution, and IT organizations in Japan, the United States, Australia, and India. The marketplace, known as Storm-3119, sold kits such as CoGUI (NX) and other tools that enabled large‑scale phishing campaigns.",
+    "category": "Cloud",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/15/microsoft-disrupting-phishing-kits-marketplace-yam-store/",
+    "publishedAt": "2026-10-15T10:10:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-disrupts-phishing-network-behind-more-th",
+      "article-1a4def",
+      "1a4def",
+      "microsoft-disrupts-phishing-network-behind-more-than-a-billi"
+    ]
+  },
+  {
+    "slug": "centerpoint-energy-data-breach-compromises-1-milli-3b7652",
+    "title": "CenterPoint Energy Data Breach Compromises 1 Million Texans",
+    "summary": "A data breach at CenterPoint Energy exposed personal information—including names, addresses, Social Security numbers, and driver’s license numbers—of approximately one million Texas residents. The incident represents a significant credential and identity theft risk for affected individuals. No mitigation steps are detailed in the source.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/centerpoint-energy-data-breach-impacts-1-million-texans/",
+    "publishedAt": "2026-10-15T09:55:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "centerpoint-energy-data-breach-compromises-1-milli",
+      "article-3b7652",
+      "3b7652",
+      "centerpoint-energy-data-breach-compromises-1-million-texans"
+    ]
+  },
+  {
+    "slug": "microsoft-fixes-bug-causing-windows-black-screens-222c03",
+    "title": "Microsoft fixes bug causing Windows black screens, Explorer crashes",
+    "summary": "Microsoft released a patch that resolves a known issue causing black screens, desktop loading problems, and Explorer crashes on Windows 11 systems after updates issued since August. The fix addresses the underlying bug that triggered these UI failures.",
+    "category": "Vulnerability",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-causing-windows-black-screens-explorer-crashes/",
+    "publishedAt": "2026-10-15T09:10:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-fixes-bug-causing-windows-black-screens",
+      "article-222c03",
+      "222c03",
+      "microsoft-fixes-bug-causing-windows-black-screens-explorer-c"
+    ]
+  },
+  {
+    "slug": "uat-6275-hackers-exploit-winrar-flaw-to-target-cis-8950be",
+    "title": "UAT-6275 Hackers Exploit WinRAR Flaw to Target CIS Government Organizations",
+    "summary": "UAT-6275 hackers used a known WinRAR flaw to plant malware on Windows systems, targeting government organizations across the Commonwealth of Independent States. The unpatched archive tool allowed remote access, with malicious code activating when victims signed in next.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/uat-6275-hackers/",
+    "publishedAt": "2026-10-15T09:08:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "uat-6275-hackers-exploit-winrar-flaw-to-target-cis",
+      "article-8950be",
+      "8950be",
+      "uat-6275-hackers-exploit-winrar-flaw-to-target-cis-governmen"
+    ]
+  },
+  {
+    "slug": "ghostaction-compromises-about-1-900-github-account-6086fa",
+    "title": "GhostAction Compromises About 1,900 GitHub Accounts, Targets Over 30,000 Repositories",
+    "summary": "The GhostAction credential‑theft campaign compromised roughly 1,900 GitHub accounts, targeting more than 30,000 repositories across 3,000 users and organizations. Attackers attempted to extract 3,174 secrets from public repositories’ CI pipelines.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/ghostaction-compromises-about-1900.html",
+    "publishedAt": "2026-10-15T08:45:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ghostaction-compromises-about-1-900-github-account",
+      "article-6086fa",
+      "6086fa",
+      "ghostaction-compromises-about-1-900-github-accounts-targets-"
+    ]
+  },
+  {
     "slug": "uk-legal-aid-agency-records-stolen-in-april-2025-b-57fd38",
     "title": "UK Legal Aid Agency Records Stolen in April 2025 Breach",
     "summary": "Attackers breached the Legal Aid Agency’s IT systems in April 2025 and stole records dating back to 1978. The breach exposed sensitive data managed by the UK Ministry of Justice’s Public Defender Service, potentially compromising long‑term legal records and personal information.",
@@ -26,6 +229,23 @@ export const news: NewsBrief[] = [
       "article-57fd38",
       "57fd38",
       "uk-legal-aid-agency-records-stolen-in-april-2025-breach"
+    ]
+  },
+  {
+    "slug": "top-10-best-dlp-software-in-2026-ranked-and-scored-a63110",
+    "title": "Top 10 Best DLP Software in 2026 Ranked and Scored",
+    "summary": "A 2026 ranking of data loss prevention solutions evaluates context, enforcement, and integration. Microsoft Purview tops the list with integrated DLP, while Netskope and Zscaler lead a SASE‑heavy podium. The review highlights how each product balances legitimate work with preventing exfiltration.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-dlp-software/",
+    "publishedAt": "2026-10-15T07:58:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "top-10-best-dlp-software-in-2026-ranked-and-scored",
+      "article-a63110",
+      "a63110"
     ]
   },
   {
@@ -47,6 +267,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "langflow-s-critical-authenticated-rce-flaw-targete-69bc0f",
+    "title": "Langflow's Critical Authenticated RCE Flaw Targeted in 1,423 Honeypot Exploit Attempts",
+    "summary": "Langflow, an open‑source AI application platform, has a critical authenticated remote code execution flaw identified as CVE-2026-105740 with a CVSS score of 9.9. Threat actors have launched 1,423 honeypot exploit attempts targeting this vulnerability, allowing attackers to execute arbitrary code on authenticated accounts.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/langflows-critical-authenticated-rce.html",
+    "publishedAt": "2026-10-15T07:07:05.000Z",
+    "cves": [
+      "CVE-2026-105740"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "langflow-s-critical-authenticated-rce-flaw-targete",
+      "article-69bc0f",
+      "69bc0f",
+      "langflow-s-critical-authenticated-rce-flaw-targeted-in-1-423"
+    ]
+  },
+  {
     "slug": "eu-grocers-hit-by-unpatched-fridge-firmware-6635a1",
     "title": "EU Grocers Hit by Unpatched Fridge Firmware",
     "summary": "Hundreds of EU grocery stores suffered multi‑million dollar losses after third‑party vendors managed outdated OT firmware on their cooling systems, leaving the equipment vulnerable to exploitation. The issue highlights the risk of unpatched industrial control software in retail environments.",
@@ -61,42 +301,6 @@ export const news: NewsBrief[] = [
       "eu-grocers-hit-by-unpatched-fridge-firmware",
       "article-6635a1",
       "6635a1"
-    ]
-  },
-  {
-    "slug": "palo-alto-networks-issues-patch-for-pan-os-zero-da-77a1a7",
-    "title": "Palo Alto Networks Issues Patch for PAN‑OS Zero‑Day RCE",
-    "summary": "Palo Alto Networks released a patch for a zero‑day remote code execution flaw in PAN‑OS that was actively exploited against customer firewalls. The company provided indicators of compromise and urged immediate update to mitigate the vulnerability.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/palo-alto-networks-patches-pan-os-zero-day-exploited-for-remote-code-execution/",
-    "publishedAt": "2026-10-15T06:59:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "palo-alto-networks-issues-patch-for-pan-os-zero-da",
-      "article-77a1a7",
-      "77a1a7",
-      "palo-alto-networks-issues-patch-for-pan-os-zero-day-rce"
-    ]
-  },
-  {
-    "slug": "cisco-secure-email-gateway-vulnerability-allows-un-547f3c",
-    "title": "Cisco Secure Email Gateway Vulnerability Allows Unauthenticated Remote Code Execution",
-    "summary": "Cisco identified an unauthenticated remote flaw in its Secure Email Gateway that permits attackers to write arbitrary files and execute commands with root privileges on the operating system. The vulnerability enables full system compromise and requires immediate patching to prevent exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/cisco-warns-of-exploited-secure-email-gateway-vulnerability/",
-    "publishedAt": "2026-10-15T06:34:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisco-secure-email-gateway-vulnerability-allows-un",
-      "article-547f3c",
-      "547f3c",
-      "cisco-secure-email-gateway-vulnerability-allows-unauthentica"
     ]
   },
   {
@@ -170,24 +374,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "guardos-app-offers-qr-link-scanning-safari-filteri-5addb1",
-    "title": "GuardOS App Offers QR Link Scanning, Safari Filtering, and Data Breach Checks",
-    "summary": "GuardOS is an iPhone security app that provides device checks, VPN access, Safari content filtering, QR link scanning, and storage cleanup. It alerts users when web protection is disabled and offers a dashboard of security tools. The app is available on the App Store.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/15/product-showcase-guardos/",
-    "publishedAt": "2026-10-15T04:00:08.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "guardos-app-offers-qr-link-scanning-safari-filteri",
-      "article-5addb1",
-      "5addb1",
-      "guardos-app-offers-qr-link-scanning-safari-filtering-and-dat"
-    ]
-  },
-  {
     "slug": "microsoft-discloses-three-active-directory-vulnera-2b9147",
     "title": "Microsoft Discloses Three Active Directory Vulnerabilities Allowing Remote Bypass of Security Feature",
     "summary": "Microsoft identified three Active Directory flaws—CVE-2026-69982, CVE-2026-96252, and CVE-2026-108131—that enable remote attackers to bypass a key security feature in Windows domain environments. Administrators should review the Security Update Guide and apply the available fixes promptly to mitigate the risk.",
@@ -210,21 +396,21 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "microsoft-disrupts-yam-store-and-storm-3119-phishi-70776b",
-    "title": "Microsoft Disrupts YAM Store and Storm-3119 Phishing Network",
-    "summary": "Microsoft shut down YAM Store and the Storm-3119 network, which sent about 1 billion phishing messages. The disruption stops the delivery of malicious emails to enterprise clouds and helps defenders block future phishing attempts by identifying and blocking the network’s infrastructure.",
-    "category": "Cloud",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/yam-store-storm-3119-phishing-network-defense",
-    "publishedAt": "2026-10-15T00:05:58.000Z",
+    "slug": "ukraine-restores-spacex-starshield-satellite-servi-4a00a0",
+    "title": "Ukraine Restores SpaceX Starshield Satellite Service After Restrictions",
+    "summary": "Ukraine’s military regained access to SpaceX’s Starshield satellite communications after temporary restrictions halted drone operations. The Defense Ministry confirmed the service is now operational, allowing continued use of satellite‑based drone control along the front line. No cyber attack or vulnerability was reported.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/ukraine-says-starshield-working-again-after-disruption",
+    "publishedAt": "2026-10-14T23:00:00.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "microsoft-disrupts-yam-store-and-storm-3119-phishi",
-      "article-70776b",
-      "70776b",
-      "microsoft-disrupts-yam-store-and-storm-3119-phishing-network"
+      "ukraine-restores-spacex-starshield-satellite-servi",
+      "article-4a00a0",
+      "4a00a0",
+      "ukraine-restores-spacex-starshield-satellite-service-after-r"
     ]
   },
   {
@@ -265,42 +451,6 @@ export const news: NewsBrief[] = [
       "article-317f90",
       "317f90",
       "ivantiics-zero-day-attacks-highlight-vendor-patching-hurdles"
-    ]
-  },
-  {
-    "slug": "north-macedonian-police-arrest-administrator-of-ol-454973",
-    "title": "North Macedonian Police Arrest Administrator of OLVX Cybercrime Market",
-    "summary": "North Macedonian police, with FBI assistance, raided a village home and arrested the suspected administrator of the OLVX cybercrime marketplace. The operation targeted the market’s leadership, disrupting its operations and potentially curbing its illicit activities.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/olvx-cybercrime-marketplace-arrest-north-macedonia",
-    "publishedAt": "2026-10-14T21:10:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "north-macedonian-police-arrest-administrator-of-ol",
-      "article-454973",
-      "454973",
-      "north-macedonian-police-arrest-administrator-of-olvx-cybercr"
-    ]
-  },
-  {
-    "slug": "brooklyn-da-s-office-disrupts-crypto-scam-targetin-399b31",
-    "title": "Brooklyn DA’s Office Disrupts Crypto Scam Targeting Russian Community",
-    "summary": "Russian-speaking Brooklyn residents reported a cryptocurrency fraud scheme to local authorities. The district attorney’s office launched an operation that seized the scam’s servers and domains, effectively shutting down the fraudulent activity. No data breach was reported.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/brooklyn-da-server-takedowns-crypto-scam-russian-speakers",
-    "publishedAt": "2026-10-14T20:33:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "brooklyn-da-s-office-disrupts-crypto-scam-targetin",
-      "article-399b31",
-      "399b31",
-      "brooklyn-da-s-office-disrupts-crypto-scam-targeting-russian-"
     ]
   },
   {
@@ -640,23 +790,6 @@ export const news: NewsBrief[] = [
       "article-696e4e",
       "696e4e",
       "closing-the-blind-spots-of-agentic-penetration-testing"
-    ]
-  },
-  {
-    "slug": "uat-6275-targets-cis-government-organizations-450fc3",
-    "title": "UAT-6275 Targets CIS Government Organizations",
-    "summary": "Talos and Recorded Future identified UAT-6275 activity focused on government organizations across the Commonwealth of Independent States. Artifacts also show interest in water resources and energy sectors. The group’s operations suggest a coordinated effort linked to Kazakhstan. No public exploitation or vulnerability disclosed.",
-    "category": "Malware",
-    "severity": "HIGH",
-    "source": "Cisco Talos",
-    "sourceUrl": "https://blog.talosintelligence.com/break-the-silence-kazakhstan-nexus-uat-6275-targets-cis-government-organizations/",
-    "publishedAt": "2026-10-14T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "uat-6275-targets-cis-government-organizations",
-      "article-450fc3",
-      "450fc3"
     ]
   },
   {
@@ -1013,24 +1146,6 @@ export const news: NewsBrief[] = [
       "medicare-fraud-scam-alert-during-open-enrollment",
       "article-173e5f",
       "173e5f"
-    ]
-  },
-  {
-    "slug": "meta-github-repositories-breached-1-500-employees-3694b3",
-    "title": "Meta GitHub Repositories Breached, 1,500 Employees’ Data Stolen",
-    "summary": "Hackers accessed Meta’s GitHub repositories using a stolen employee credential, exfiltrating product source code and personal data linked to about 1,500 Meta employees in the United States. The breach was disclosed on October 13, 2026, and is under investigation.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-breach-meta-github-repositories/",
-    "publishedAt": "2026-10-14T08:49:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "meta-github-repositories-breached-1-500-employees",
-      "article-3694b3",
-      "3694b3",
-      "meta-github-repositories-breached-1-500-employees-data-stole"
     ]
   },
   {
@@ -1553,23 +1668,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "xandr-fined-8-6-million-for-relaying-grindr-data-f5e00d",
-    "title": "Xandr Fined €8.6 Million for Relaying Grindr Data",
-    "summary": "The Norwegian Data Protection Authority fined Xandr, Microsoft’s advertising unit, €8.6 million for illegally relaying Grindr users’ sensitive data to advertisers. The penalty was the largest issued by the watchdog, citing the very serious nature of the breach.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/xandr-fined-record-86-million-for.html",
-    "publishedAt": "2026-10-13T13:12:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "xandr-fined-8-6-million-for-relaying-grindr-data",
-      "article-f5e00d",
-      "f5e00d"
-    ]
-  },
-  {
     "slug": "lattice-sentry-5-0-adds-quantum-resistant-firmware-1d3bc5",
     "title": "Lattice Sentry 5.0 Adds Quantum‑Resistant Firmware Security",
     "summary": "Lattice Semiconductor released Lattice Sentry 5.0, adding post‑quantum cryptography to its firmware resilience and attestation stack. The update delivers CNSA 2.0‑aligned, NIST‑compliant protection for AI data centers and critical infrastructure, enabling designers to deploy quantum‑resistant security in production firmware environments. This enhancement also includes automated integrity checks and secure boot features, ensuring firmware cannot be tampered with during supply chain attacks.",
@@ -1657,24 +1755,6 @@ export const news: NewsBrief[] = [
       "article-7fea58",
       "7fea58",
       "bitdefender-ai-visibility-and-control-product-walkthrough"
-    ]
-  },
-  {
-    "slug": "top-10-best-mobile-application-security-testing-to-3d7821",
-    "title": "Top 10 Best Mobile Application Security Testing Tools in 2026",
-    "summary": "A ranked list of mobile application security testing tools evaluates source code inspection, penetration testing, and hardening techniques. The guide helps teams identify vulnerabilities before release, covering both static and dynamic analysis to protect apps from hostile devices and reduce security gaps.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/best-mobile-appsec-testing-tools/",
-    "publishedAt": "2026-10-13T10:25:09.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "top-10-best-mobile-application-security-testing-to",
-      "article-3d7821",
-      "3d7821",
-      "top-10-best-mobile-application-security-testing-tools-in-202"
     ]
   },
   {
@@ -2674,27 +2754,6 @@ export const news: NewsBrief[] = [
       "article-2f0aaa",
       "2f0aaa",
       "ai-velocity-paradox-exposes-security-lag-in-rapid-ai-adoptio"
-    ]
-  },
-  {
-    "slug": "unpatched-ahsaycbs-vulnerabilities-exploited-in-th-4f5c21",
-    "title": "Unpatched AhsayCBS Vulnerabilities Exploited in the Wild",
-    "summary": "The AhsayCBS platform suffers from two unpatched flaws, CVE-2026-105133 and CVE-2026-105134, that let attackers bypass authentication and inject operating‑system commands. Exploitation can lead to full system compromise. Immediate patching or disabling the affected modules is required.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/unpatched-ahsaycbs-vulnerabilities-exploited-in-the-wild/",
-    "publishedAt": "2026-10-09T10:23:42.000Z",
-    "cves": [
-      "CVE-2026-105133",
-      "CVE-2026-105134"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "unpatched-ahsaycbs-vulnerabilities-exploited-in-th",
-      "article-4f5c21",
-      "4f5c21",
-      "unpatched-ahsaycbs-vulnerabilities-exploited-in-the-wild"
     ]
   },
   {
@@ -6224,60 +6283,6 @@ export const news: NewsBrief[] = [
       "article-0a4b2a",
       "0a4b2a",
       "over-543-000-github-secrets-exposed-in-large-leak-study"
-    ]
-  },
-  {
-    "slug": "ftc-investigating-openai-and-anthropic-over-possib-40c7f5",
-    "title": "FTC Investigating OpenAI and Anthropic Over Possible Consumer Risks",
-    "summary": "The Federal Trade Commission has opened an investigation into OpenAI and Anthropic, citing potential risks to consumers. The FTC confirmed the inquiry but has not released further details. The probe focuses on how the companies’ AI services may affect user privacy and safety.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/ftc-is-investigating-openai-and-anthropic-over-possible-risks-to-consumers/",
-    "publishedAt": "2026-09-30T23:43:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ftc-investigating-openai-and-anthropic-over-possib",
-      "article-40c7f5",
-      "40c7f5",
-      "ftc-investigating-openai-and-anthropic-over-possible-consume"
-    ]
-  },
-  {
-    "slug": "russian-state-hackers-deploy-cosmicpulse-backdoor-274a52",
-    "title": "Russian State Hackers Deploy CosmicPulse Backdoor via RedFlick Technique",
-    "summary": "Russian state actor Star Blizzard has introduced a new malware installation method called RedFlick to deploy its CosmicPulse backdoor. The technique allows the actor to push malicious code onto targeted systems, potentially enabling persistent access and data exfiltration. No public patch or mitigation is currently available.",
-    "category": "Malware",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/russian-state-hackers-use-new-redflick-technique-to-push-malware/",
-    "publishedAt": "2026-09-30T20:34:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "russian-state-hackers-deploy-cosmicpulse-backdoor",
-      "article-274a52",
-      "274a52",
-      "russian-state-hackers-deploy-cosmicpulse-backdoor-via-redfli"
-    ]
-  },
-  {
-    "slug": "automakers-share-connected-car-data-with-third-par-387b72",
-    "title": "Automakers Share Connected-Car Data with Third-Party Advertisers",
-    "summary": "A study shows that automakers routinely provide personally identifiable connected-car data to a network of large corporations involved in advertising. The data sharing exposes drivers to extensive tracking and profiling by third parties, raising privacy concerns about the use of vehicle telemetry for targeted marketing.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/automakers-routinely-share-connected-car-data-third-parties",
-    "publishedAt": "2026-09-30T20:32:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "automakers-share-connected-car-data-with-third-par",
-      "article-387b72",
-      "387b72",
-      "automakers-share-connected-car-data-with-third-party-adverti"
     ]
   }
 ];

@@ -5,8 +5,107 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Oct 2026 08:19:12 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 12:01:41 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Police Arrest 95 Suspects in International CSAM Crackdown</title>
+      <link>https://secubuzz.com/news/police-arrest-95-suspects-in-international-csam-cr-66e54a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/police-arrest-95-suspects-in-international-csam-cr-66e54a</guid>
+      <description><![CDATA[Law enforcement authorities from 17 countries in Latin America and Europe have arrested 95 suspects in an INTERPOL‑coordinated operation targeting the distribution of child sexual abuse material through online messaging groups. The operation disrupted several active groups and seized evidence for ongoing investigations.]]></description>
+      <pubDate>Thu, 15 Oct 2026 11:55:38 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/police-arrests-95-suspects-in-child-sexual-abuse-material-crackdown/">BleepingComputer</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>CikaBika Bot RAT Uses Discord for Command and Control</title>
+      <link>https://secubuzz.com/news/cikabika-bot-rat-uses-discord-for-command-and-cont-7b597a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cikabika-bot-rat-uses-discord-for-command-and-cont-7b597a</guid>
+      <description><![CDATA[The CikaBika Bot Remote Access Trojan, delivered via phishing, offers reconnaissance, remote execution, and data exfiltration. It uses Discord servers for command and control, enabling attackers to manage compromised hosts from a covert channel. Security analysts recommend monitoring Discord traffic and blocking malicious bot tokens to mitigate the threat.]]></description>
+      <pubDate>Thu, 15 Oct 2026 11:25:58 GMT</pubDate>
+      <source url="https://www.securityweek.com/cikabika-bot-rat-uses-discord-for-cc/">SecurityWeek</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>AI Tool Enables Law Enforcement to Locate Homes from Indoor Photos</title>
+      <link>https://secubuzz.com/news/ai-tool-enables-law-enforcement-to-locate-homes-fr-30534a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-tool-enables-law-enforcement-to-locate-homes-fr-30534a</guid>
+      <description><![CDATA[An AI tool used by police can match indoor images to property listings, revealing home addresses even when GPS data is removed. The technology cross‑references photo content with online listings, potentially compromising privacy for residents who assume location data is stripped.]]></description>
+      <pubDate>Thu, 15 Oct 2026 11:09:53 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/privacy/2026/10/raven-ai-lets-cops-find-your-home-from-a-photo-taken-inside">Malwarebytes Labs</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>CISA Adds Four Exploited Vulnerabilities to KEV Catalog</title>
+      <link>https://secubuzz.com/news/cisa-adds-four-exploited-vulnerabilities-to-kev-ca-51d214</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-four-exploited-vulnerabilities-to-kev-ca-51d214</guid>
+      <description><![CDATA[CISA has listed four new vulnerabilities in its Known Exploited Vulnerabilities catalog: CVE-2026-0322, a high‑severity RCE in Palo Alto PAN‑OS; CVE-2026-76519, a critical relative path traversal in Cisco SEG; CVE-2026-105133, a medium‑severity improper authentication in Ahsay CBS; and CVE-2026-105134, a critical command injection in Ahsay CBS.]]></description>
+      <pubDate>Thu, 15 Oct 2026 10:43:51 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/15/cve-2026-0322-cve-2026-76519-cve-2026-105133-cve-2026-105134-exploted/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>India Mandates Caller ID Display on 4G and Newer Networks</title>
+      <link>https://secubuzz.com/news/india-mandates-caller-id-display-on-4g-and-newer-n-5e0b33</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/india-mandates-caller-id-display-on-4g-and-newer-n-5e0b33</guid>
+      <description><![CDATA[The Indian government has ordered telecom service providers to display callers’ registered names with numbers on all 4G and newer networks starting November 1, 2026. The directive aims to help users identify unknown callers and reduce spam and fraudulent calls.]]></description>
+      <pubDate>Thu, 15 Oct 2026 10:42:16 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/india-mandates-registered-caller-name.html">The Hacker News</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Android RAT ‘Hirudo’ Replaces Banking Apps With Trojanized Copies</title>
+      <link>https://secubuzz.com/news/android-rat-hirudo-replaces-banking-apps-with-troj-3a43e7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/android-rat-hirudo-replaces-banking-apps-with-troj-3a43e7</guid>
+      <description><![CDATA[The Hirudo malware merges a banking trojan with a remote‑access trojan, installing trojanized copies of legitimate banking apps on infected Android devices. The RAT allows attackers to intercept credentials and control the device, posing a significant threat to mobile banking users.]]></description>
+      <pubDate>Thu, 15 Oct 2026 10:15:32 GMT</pubDate>
+      <source url="https://www.securityweek.com/novel-android-banking-rat-hirudo-replaces-banking-apps-with-trojanized-copies/">SecurityWeek</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Microsoft disrupts phishing network behind more than a billion scam messages</title>
+      <link>https://secubuzz.com/news/microsoft-disrupts-phishing-network-behind-more-th-1a4def</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-disrupts-phishing-network-behind-more-th-1a4def</guid>
+      <description><![CDATA[Microsoft and Resecurity dismantled a criminal marketplace that sold phishing kits and cloud accounts used to target healthcare, financial services, wholesale distribution, and IT organizations in Japan, the United States, Australia, and India. The marketplace, known as Storm-3119, sold kits such as CoGUI (NX) and other tools that enabled large‑scale phishing campaigns.]]></description>
+      <pubDate>Thu, 15 Oct 2026 10:10:21 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/15/microsoft-disrupting-phishing-kits-marketplace-yam-store/">Help Net Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>CenterPoint Energy Data Breach Compromises 1 Million Texans</title>
+      <link>https://secubuzz.com/news/centerpoint-energy-data-breach-compromises-1-milli-3b7652</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/centerpoint-energy-data-breach-compromises-1-milli-3b7652</guid>
+      <description><![CDATA[A data breach at CenterPoint Energy exposed personal information—including names, addresses, Social Security numbers, and driver’s license numbers—of approximately one million Texas residents. The incident represents a significant credential and identity theft risk for affected individuals. No mitigation steps are detailed in the source.]]></description>
+      <pubDate>Thu, 15 Oct 2026 09:55:19 GMT</pubDate>
+      <source url="https://www.securityweek.com/centerpoint-energy-data-breach-impacts-1-million-texans/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Microsoft fixes bug causing Windows black screens, Explorer crashes</title>
+      <link>https://secubuzz.com/news/microsoft-fixes-bug-causing-windows-black-screens-222c03</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-fixes-bug-causing-windows-black-screens-222c03</guid>
+      <description><![CDATA[Microsoft released a patch that resolves a known issue causing black screens, desktop loading problems, and Explorer crashes on Windows 11 systems after updates issued since August. The fix addresses the underlying bug that triggered these UI failures.]]></description>
+      <pubDate>Thu, 15 Oct 2026 09:10:20 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-causing-windows-black-screens-explorer-crashes/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>UAT-6275 Hackers Exploit WinRAR Flaw to Target CIS Government Organizations</title>
+      <link>https://secubuzz.com/news/uat-6275-hackers-exploit-winrar-flaw-to-target-cis-8950be</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/uat-6275-hackers-exploit-winrar-flaw-to-target-cis-8950be</guid>
+      <description><![CDATA[UAT-6275 hackers used a known WinRAR flaw to plant malware on Windows systems, targeting government organizations across the Commonwealth of Independent States. The unpatched archive tool allowed remote access, with malicious code activating when victims signed in next.]]></description>
+      <pubDate>Thu, 15 Oct 2026 09:08:09 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/uat-6275-hackers/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>GhostAction Compromises About 1,900 GitHub Accounts, Targets Over 30,000 Repositories</title>
+      <link>https://secubuzz.com/news/ghostaction-compromises-about-1-900-github-account-6086fa</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ghostaction-compromises-about-1-900-github-account-6086fa</guid>
+      <description><![CDATA[The GhostAction credential‑theft campaign compromised roughly 1,900 GitHub accounts, targeting more than 30,000 repositories across 3,000 users and organizations. Attackers attempted to extract 3,174 secrets from public repositories’ CI pipelines.]]></description>
+      <pubDate>Thu, 15 Oct 2026 08:45:10 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/ghostaction-compromises-about-1900.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>UK Legal Aid Agency Records Stolen in April 2025 Breach</title>
       <link>https://secubuzz.com/news/uk-legal-aid-agency-records-stolen-in-april-2025-b-57fd38</link>
@@ -15,6 +114,15 @@
       <pubDate>Thu, 15 Oct 2026 08:06:47 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/uk-legal-aid-agency-hackers-stole-records-dating-back-to-1978/">BleepingComputer</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Top 10 Best DLP Software in 2026 Ranked and Scored</title>
+      <link>https://secubuzz.com/news/top-10-best-dlp-software-in-2026-ranked-and-scored-a63110</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/top-10-best-dlp-software-in-2026-ranked-and-scored-a63110</guid>
+      <description><![CDATA[A 2026 ranking of data loss prevention solutions evaluates context, enforcement, and integration. Microsoft Purview tops the list with integrated DLP, while Netskope and Zscaler lead a SASE‑heavy podium. The review highlights how each product balances legitimate work with preventing exfiltration.]]></description>
+      <pubDate>Thu, 15 Oct 2026 07:58:01 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/best-dlp-software/">Cyber Security News</source>
+      <category>Policy</category>
     </item>
     <item>
       <title>Qualys Launches TruConfidence for Automated Cyber Risk Remediation</title>
@@ -26,30 +134,21 @@
       <category>Policy</category>
     </item>
     <item>
+      <title>Langflow&apos;s Critical Authenticated RCE Flaw Targeted in 1,423 Honeypot Exploit Attempts</title>
+      <link>https://secubuzz.com/news/langflow-s-critical-authenticated-rce-flaw-targete-69bc0f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/langflow-s-critical-authenticated-rce-flaw-targete-69bc0f</guid>
+      <description><![CDATA[Langflow, an open‑source AI application platform, has a critical authenticated remote code execution flaw identified as CVE-2026-105740 with a CVSS score of 9.9. Threat actors have launched 1,423 honeypot exploit attempts targeting this vulnerability, allowing attackers to execute arbitrary code on authenticated accounts.]]></description>
+      <pubDate>Thu, 15 Oct 2026 07:07:05 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/langflows-critical-authenticated-rce.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>EU Grocers Hit by Unpatched Fridge Firmware</title>
       <link>https://secubuzz.com/news/eu-grocers-hit-by-unpatched-fridge-firmware-6635a1</link>
       <guid isPermaLink="true">https://secubuzz.com/news/eu-grocers-hit-by-unpatched-fridge-firmware-6635a1</guid>
       <description><![CDATA[Hundreds of EU grocery stores suffered multi‑million dollar losses after third‑party vendors managed outdated OT firmware on their cooling systems, leaving the equipment vulnerable to exploitation. The issue highlights the risk of unpatched industrial control software in retail environments.]]></description>
       <pubDate>Thu, 15 Oct 2026 07:00:00 GMT</pubDate>
       <source url="https://www.darkreading.com/ics-ot-security/eu-grocers-unpatched-fridge-firmware">Dark Reading</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Palo Alto Networks Issues Patch for PAN‑OS Zero‑Day RCE</title>
-      <link>https://secubuzz.com/news/palo-alto-networks-issues-patch-for-pan-os-zero-da-77a1a7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/palo-alto-networks-issues-patch-for-pan-os-zero-da-77a1a7</guid>
-      <description><![CDATA[Palo Alto Networks released a patch for a zero‑day remote code execution flaw in PAN‑OS that was actively exploited against customer firewalls. The company provided indicators of compromise and urged immediate update to mitigate the vulnerability.]]></description>
-      <pubDate>Thu, 15 Oct 2026 06:59:54 GMT</pubDate>
-      <source url="https://www.securityweek.com/palo-alto-networks-patches-pan-os-zero-day-exploited-for-remote-code-execution/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cisco Secure Email Gateway Vulnerability Allows Unauthenticated Remote Code Execution</title>
-      <link>https://secubuzz.com/news/cisco-secure-email-gateway-vulnerability-allows-un-547f3c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisco-secure-email-gateway-vulnerability-allows-un-547f3c</guid>
-      <description><![CDATA[Cisco identified an unauthenticated remote flaw in its Secure Email Gateway that permits attackers to write arbitrary files and execute commands with root privileges on the operating system. The vulnerability enables full system compromise and requires immediate patching to prevent exploitation.]]></description>
-      <pubDate>Thu, 15 Oct 2026 06:34:15 GMT</pubDate>
-      <source url="https://www.securityweek.com/cisco-warns-of-exploited-secure-email-gateway-vulnerability/">SecurityWeek</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -89,15 +188,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>GuardOS App Offers QR Link Scanning, Safari Filtering, and Data Breach Checks</title>
-      <link>https://secubuzz.com/news/guardos-app-offers-qr-link-scanning-safari-filteri-5addb1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/guardos-app-offers-qr-link-scanning-safari-filteri-5addb1</guid>
-      <description><![CDATA[GuardOS is an iPhone security app that provides device checks, VPN access, Safari content filtering, QR link scanning, and storage cleanup. It alerts users when web protection is disabled and offers a dashboard of security tools. The app is available on the App Store.]]></description>
-      <pubDate>Thu, 15 Oct 2026 04:00:08 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/15/product-showcase-guardos/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
       <title>Microsoft Discloses Three Active Directory Vulnerabilities Allowing Remote Bypass of Security Feature</title>
       <link>https://secubuzz.com/news/microsoft-discloses-three-active-directory-vulnera-2b9147</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-discloses-three-active-directory-vulnera-2b9147</guid>
@@ -107,13 +197,13 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>Microsoft Disrupts YAM Store and Storm-3119 Phishing Network</title>
-      <link>https://secubuzz.com/news/microsoft-disrupts-yam-store-and-storm-3119-phishi-70776b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-disrupts-yam-store-and-storm-3119-phishi-70776b</guid>
-      <description><![CDATA[Microsoft shut down YAM Store and the Storm-3119 network, which sent about 1 billion phishing messages. The disruption stops the delivery of malicious emails to enterprise clouds and helps defenders block future phishing attempts by identifying and blocking the network’s infrastructure.]]></description>
-      <pubDate>Thu, 15 Oct 2026 00:05:58 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/yam-store-storm-3119-phishing-network-defense">CyberNews AI</source>
-      <category>Cloud</category>
+      <title>Ukraine Restores SpaceX Starshield Satellite Service After Restrictions</title>
+      <link>https://secubuzz.com/news/ukraine-restores-spacex-starshield-satellite-servi-4a00a0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ukraine-restores-spacex-starshield-satellite-servi-4a00a0</guid>
+      <description><![CDATA[Ukraine’s military regained access to SpaceX’s Starshield satellite communications after temporary restrictions halted drone operations. The Defense Ministry confirmed the service is now operational, allowing continued use of satellite‑based drone control along the front line. No cyber attack or vulnerability was reported.]]></description>
+      <pubDate>Wed, 14 Oct 2026 23:00:00 GMT</pubDate>
+      <source url="https://therecord.media/ukraine-says-starshield-working-again-after-disruption">The Record</source>
+      <category>Policy</category>
     </item>
     <item>
       <title>Unit 42 Uncovers PEERSTITCH, a Stealthy FortiGate Implant</title>
@@ -132,24 +222,6 @@
       <pubDate>Wed, 14 Oct 2026 21:20:13 GMT</pubDate>
       <source url="https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching">Dark Reading</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>North Macedonian Police Arrest Administrator of OLVX Cybercrime Market</title>
-      <link>https://secubuzz.com/news/north-macedonian-police-arrest-administrator-of-ol-454973</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/north-macedonian-police-arrest-administrator-of-ol-454973</guid>
-      <description><![CDATA[North Macedonian police, with FBI assistance, raided a village home and arrested the suspected administrator of the OLVX cybercrime marketplace. The operation targeted the market’s leadership, disrupting its operations and potentially curbing its illicit activities.]]></description>
-      <pubDate>Wed, 14 Oct 2026 21:10:00 GMT</pubDate>
-      <source url="https://therecord.media/olvx-cybercrime-marketplace-arrest-north-macedonia">The Record</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Brooklyn DA’s Office Disrupts Crypto Scam Targeting Russian Community</title>
-      <link>https://secubuzz.com/news/brooklyn-da-s-office-disrupts-crypto-scam-targetin-399b31</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/brooklyn-da-s-office-disrupts-crypto-scam-targetin-399b31</guid>
-      <description><![CDATA[Russian-speaking Brooklyn residents reported a cryptocurrency fraud scheme to local authorities. The district attorney’s office launched an operation that seized the scam’s servers and domains, effectively shutting down the fraudulent activity. No data breach was reported.]]></description>
-      <pubDate>Wed, 14 Oct 2026 20:33:00 GMT</pubDate>
-      <source url="https://therecord.media/brooklyn-da-server-takedowns-crypto-scam-russian-speakers">The Record</source>
-      <category>Policy</category>
     </item>
     <item>
       <title>Yandex Outage: Malicious Bots Migrate Instead of Going Dark</title>
@@ -323,15 +395,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>UAT-6275 Targets CIS Government Organizations</title>
-      <link>https://secubuzz.com/news/uat-6275-targets-cis-government-organizations-450fc3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/uat-6275-targets-cis-government-organizations-450fc3</guid>
-      <description><![CDATA[Talos and Recorded Future identified UAT-6275 activity focused on government organizations across the Commonwealth of Independent States. Artifacts also show interest in water resources and energy sectors. The group’s operations suggest a coordinated effort linked to Kazakhstan. No public exploitation or vulnerability disclosed.]]></description>
-      <pubDate>Wed, 14 Oct 2026 14:00:00 GMT</pubDate>
-      <source url="https://blog.talosintelligence.com/break-the-silence-kazakhstan-nexus-uat-6275-targets-cis-government-organizations/">Cisco Talos</source>
-      <category>Malware</category>
-    </item>
-    <item>
       <title>Global Crackdown Removes 3.7 Million Scam Accounts</title>
       <link>https://secubuzz.com/news/global-crackdown-removes-3-7-million-scam-accounts-313abd</link>
       <guid isPermaLink="true">https://secubuzz.com/news/global-crackdown-removes-3-7-million-scam-accounts-313abd</guid>
@@ -393,69 +456,6 @@
       <pubDate>Wed, 14 Oct 2026 12:32:00 GMT</pubDate>
       <source url="https://therecord.media/congressional-probe-faults-match-group-for-failing-to-stop-dating-app-scams">The Record</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>How to Run a Deepfake Readiness Drill Before a Cloned Voice Calls Your Team</title>
-      <link>https://secubuzz.com/news/how-to-run-a-deepfake-readiness-drill-before-a-clo-2728dd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/how-to-run-a-deepfake-readiness-drill-before-a-clo-2728dd</guid>
-      <description><![CDATA[Security teams can test their defenses against cloned‑voice deepfakes by running a readiness drill that simulates a CFO’s voice requesting a supplier payment. The exercise exposes verification weaknesses in payment fraud, help‑desk resets, and access requests, helping teams tighten voice‑authentication protocols.]]></description>
-      <pubDate>Wed, 14 Oct 2026 11:50:00 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/how-to-run-deepfake-readiness-drill.html">The Hacker News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Microsoft Patch Tuesday Addresses Flaw Already Under Attack</title>
-      <link>https://secubuzz.com/news/microsoft-patch-tuesday-addresses-flaw-already-und-17065c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-patch-tuesday-addresses-flaw-already-und-17065c</guid>
-      <description><![CDATA[Microsoft’s October Patch Tuesday released 1,413 fixes, including a Windows flaw currently being exploited in the wild and two zero-day vulnerabilities. The patch mitigates the active exploitation vector, preventing further compromise of affected systems. Administrators should apply the update promptly to close the security gap.]]></description>
-      <pubDate>Wed, 14 Oct 2026 11:26:09 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/bugs/2026/10/update-windows-record-patch-tuesday-fixes-flaw-already-under-attack">Malwarebytes Labs</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Chrome Full-Chain Exploit Built Using Public AI Model</title>
-      <link>https://secubuzz.com/news/chrome-full-chain-exploit-built-using-public-ai-mo-60063a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-full-chain-exploit-built-using-public-ai-mo-60063a</guid>
-      <description><![CDATA[Security firm XBOW chained three previously unknown Google Chrome bugs into a single attack that executes code on a Windows machine when a user loads a web page. The team used OpenAI’s GPT‑5.6 Sol model to develop the exploit in six days. Google has confirmed and fixed all three bugs.]]></description>
-      <pubDate>Wed, 14 Oct 2026 11:19:02 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/researchers-used-public-openai-model-to.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Wiz AI Agents Introduced for Government CNAPP Security</title>
-      <link>https://secubuzz.com/news/wiz-ai-agents-introduced-for-government-cnapp-secu-126ff3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/wiz-ai-agents-introduced-for-government-cnapp-secu-126ff3</guid>
-      <description><![CDATA[Wiz Research announced the launch of Wiz AI Agents, an extension to its CNAPP platform tailored for public sector security teams. The AI agents automate threat detection and remediation, aiming to accelerate security operations and innovation across government environments.]]></description>
-      <pubDate>Wed, 14 Oct 2026 11:00:02 GMT</pubDate>
-      <source url="https://www.wiz.io/blog/wiz-for-gov-agents-fedramp">Wiz Research</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>AI Pentester Discovers Critical OTP Bypass on Major Insurer&apos;s Website</title>
-      <link>https://secubuzz.com/news/ai-pentester-discovers-critical-otp-bypass-on-majo-275774</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-pentester-discovers-critical-otp-bypass-on-majo-275774</guid>
-      <description><![CDATA[During an authorized assessment, an AI pentesting agent found a critical authentication bypass on a major insurer’s production site. The flaw allowed a user to choose the delivery method for the one‑time passcode, effectively bypassing the OTP check. The insurer must patch the login flow to prevent unauthorized access.]]></description>
-      <pubDate>Wed, 14 Oct 2026 11:00:00 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/an-ai-agent-found-critical-otp-bypass.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Phase Eight, Hobbs and Whistles Owner TFG London Detects Cyberattack Exposing Customer Data</title>
-      <link>https://secubuzz.com/news/phase-eight-hobbs-and-whistles-owner-tfg-london-de-34a663</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/phase-eight-hobbs-and-whistles-owner-tfg-london-de-34a663</guid>
-      <description><![CDATA[Phase Eight, Hobbs and Whistles owner TFG London detected a cyberattack that compromised some IT systems, potentially exposing personal information of customers who shopped at the three UK fashion brands. The breach was identified on Sunday, 11 October 2026, and the company is investigating the extent of data exposure.]]></description>
-      <pubDate>Wed, 14 Oct 2026 10:48:12 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/14/tfg-london-cyberattack-phase-eight-hobbs-whistles/">Help Net Security</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>VirusTotal Adds ChatGPT‑Based Threat Intelligence to Malware Analysis</title>
-      <link>https://secubuzz.com/news/virustotal-adds-chatgpt-based-threat-intelligence-2f703a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/virustotal-adds-chatgpt-based-threat-intelligence-2f703a</guid>
-      <description><![CDATA[VirusTotal now integrates its threat‑intelligence database with ChatGPT through VirusTotal AI, allowing analysts to query files, URLs, domains, and IPs within a conversation. The integration uses the Model Context Protocol and displays source, date, and coverage of reports.]]></description>
-      <pubDate>Wed, 14 Oct 2026 10:45:17 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/virustotal-chatgpt-integration/">Cyber Security News</source>
-      <category>Malware</category>
     </item>
   </channel>
 </rss>
