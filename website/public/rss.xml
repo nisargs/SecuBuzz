@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Oct 2026 12:01:41 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 12:19:08 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Drupal Core RCE Flaw Exploitable via Contributed Modules, No-Login Path</title>
+      <link>https://secubuzz.com/news/drupal-core-rce-flaw-exploitable-via-contributed-m-b922f0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/drupal-core-rce-flaw-exploitable-via-contributed-m-b922f0</guid>
+      <description><![CDATA[Drupal core’s Field UI module contains a critical remote code execution flaw that can be triggered through contributed modules without requiring user authentication. The vulnerability was patched in Drupal 11.4.10, 11.3.19, and 10.6.19 on October 14. Attackers can execute arbitrary code on the server via these modules.]]></description>
+      <pubDate>Thu, 15 Oct 2026 12:07:20 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/drupal-patches-critical-core-rce-flaw.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Police Arrest 95 Suspects in International CSAM Crackdown</title>
       <link>https://secubuzz.com/news/police-arrest-95-suspects-in-international-csam-cr-66e54a</link>
@@ -15,6 +24,24 @@
       <pubDate>Thu, 15 Oct 2026 11:55:38 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/police-arrests-95-suspects-in-child-sexual-abuse-material-crackdown/">BleepingComputer</source>
       <category>Policy</category>
+    </item>
+    <item>
+      <title>FTC Accuses Sextortion Firm of $60M Fraud</title>
+      <link>https://secubuzz.com/news/ftc-accuses-sextortion-firm-of-60m-fraud-2ab075</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ftc-accuses-sextortion-firm-of-60m-fraud-2ab075</guid>
+      <description><![CDATA[The Federal Trade Commission alleges that Digital Forensics Corporation and its affiliates ran a sextortion scheme, extorting victims for intimate images and collecting $60 million in payments. The firm targeted individuals seeking help with blackmail, exploiting their vulnerability to demand ransom.]]></description>
+      <pubDate>Thu, 15 Oct 2026 11:48:26 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/news/2026/10/sextortion-help-firm-took-60-million-from-victims-ftc-alleges">Malwarebytes Labs</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Fake AI Products Used to Distribute Malware and Steal Browser Sessions</title>
+      <link>https://secubuzz.com/news/fake-ai-products-used-to-distribute-malware-and-st-736eee</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fake-ai-products-used-to-distribute-malware-and-st-736eee</guid>
+      <description><![CDATA[Attackers impersonated popular AI tools to spread malware, hijack browser sessions, and compromise business accounts. ANY.RUN analyzed 1,258 sandbox samples linked to these fake AI campaigns from April to October 2026, highlighting the growing threat to U.S. companies and the pressure on managed security service providers.]]></description>
+      <pubDate>Thu, 15 Oct 2026 11:46:59 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/fake-ai-attacks-spread-across-us.html">The Hacker News</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>CikaBika Bot RAT Uses Discord for Command and Control</title>
@@ -32,6 +59,15 @@
       <description><![CDATA[An AI tool used by police can match indoor images to property listings, revealing home addresses even when GPS data is removed. The technology cross‑references photo content with online listings, potentially compromising privacy for residents who assume location data is stripped.]]></description>
       <pubDate>Thu, 15 Oct 2026 11:09:53 GMT</pubDate>
       <source url="https://www.malwarebytes.com/blog/privacy/2026/10/raven-ai-lets-cops-find-your-home-from-a-photo-taken-inside">Malwarebytes Labs</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>AI Confidence Grows Faster Than Validation Standards</title>
+      <link>https://secubuzz.com/news/ai-confidence-grows-faster-than-validation-standar-497bad</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-confidence-grows-faster-than-validation-standar-497bad</guid>
+      <description><![CDATA[AI tools used in digital forensics and incident response are becoming increasingly confident in their outputs, outpacing the development of governance and validation methods. The lack of reliable verification processes risks unchecked errors beyond individual workstations, potentially compromising investigations.]]></description>
+      <pubDate>Thu, 15 Oct 2026 11:04:35 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/why-ai-confidence-is-not-validation.html">The Hacker News</source>
       <category>Policy</category>
     </item>
     <item>
@@ -122,6 +158,15 @@
       <description><![CDATA[A 2026 ranking of data loss prevention solutions evaluates context, enforcement, and integration. Microsoft Purview tops the list with integrated DLP, while Netskope and Zscaler lead a SASE‑heavy podium. The review highlights how each product balances legitimate work with preventing exfiltration.]]></description>
       <pubDate>Thu, 15 Oct 2026 07:58:01 GMT</pubDate>
       <source url="https://cybersecuritynews.com/best-dlp-software/">Cyber Security News</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Optro Expands AI‑Driven GRC Platform with Auditable Agents</title>
+      <link>https://secubuzz.com/news/optro-expands-ai-driven-grc-platform-with-auditabl-64d244</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/optro-expands-ai-driven-grc-platform-with-auditabl-64d244</guid>
+      <description><![CDATA[Optro has added autonomous AI agents to its Governance, Risk, and Compliance platform, enabling risk teams to automate workflows while maintaining audit trails. Each agent action, decision, model entry, and evidence is logged and cited, ensuring transparency and compliance with team‑defined guardrails.]]></description>
+      <pubDate>Thu, 15 Oct 2026 07:43:54 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/15/optro-grc-intelligence-platform/">Help Net Security</source>
       <category>Policy</category>
     </item>
     <item>
@@ -377,15 +422,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Hackers Use Fake WatchGuard VPN Site to Steal Login Credentials</title>
-      <link>https://secubuzz.com/news/hackers-use-fake-watchguard-vpn-site-to-steal-logi-393939</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-fake-watchguard-vpn-site-to-steal-logi-393939</guid>
-      <description><![CDATA[Hackers set up a counterfeit WatchGuard VPN download page that lures users into a pop‑up collecting the VPN server address, username, and password. The real, signed installer is then offered, leaving victims’ credentials exposed without installing malware. No malicious client is required.]]></description>
-      <pubDate>Wed, 14 Oct 2026 14:08:23 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/fake-watchguard-vpn/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
       <title>Closing the Blind Spots of Agentic Penetration Testing</title>
       <link>https://secubuzz.com/news/closing-the-blind-spots-of-agentic-penetration-tes-696e4e</link>
       <guid isPermaLink="true">https://secubuzz.com/news/closing-the-blind-spots-of-agentic-penetration-tes-696e4e</guid>
@@ -419,42 +455,6 @@
       <description><![CDATA[Customers of the Russian travel booking platform Anywayanyday could not book tickets or hotel rooms after a cyberattack, prompting the company to suspend reservations while it responds to the incident.]]></description>
       <pubDate>Wed, 14 Oct 2026 13:05:00 GMT</pubDate>
       <source url="https://therecord.media/russia-anywayanyday-travel-website-cyberattack">The Record</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Guide Highlights Pitfalls of AI Adoption in Security and IT</title>
-      <link>https://secubuzz.com/news/guide-highlights-pitfalls-of-ai-adoption-in-securi-16fb96</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/guide-highlights-pitfalls-of-ai-adoption-in-securi-16fb96</guid>
-      <description><![CDATA[The guide examines why AI adoption in security and IT often fails, citing poor real‑world performance, increased complexity, broken trust, and new risks. It offers a step‑by‑step path from evaluation to implementation, emphasizing human oversight and clearer risk management to avoid costly AI pitfalls.]]></description>
-      <pubDate>Wed, 14 Oct 2026 13:00:27 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/14/tines-it-security-ai-adoption-guide/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Russian Influence Operation Targets Latin American Schools</title>
-      <link>https://secubuzz.com/news/russian-influence-operation-targets-latin-american-83898b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/russian-influence-operation-targets-latin-american-83898b</guid>
-      <description><![CDATA[A Russian influence operation used AI‑generated spoofed emails, fake government documents, and a fabricated local organization to target schools in Peru and Ecuador, among other Latin American institutions. The campaign aimed to spread disinformation and sow confusion.]]></description>
-      <pubDate>Wed, 14 Oct 2026 13:00:00 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyberattacks-data-breaches/russian-influence-operation-targeting-latin-america">Dark Reading</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>Cloudflare Fixes Rare Hyperdrive MySQL Caching Bug</title>
-      <link>https://secubuzz.com/news/cloudflare-fixes-rare-hyperdrive-mysql-caching-bug-45e37a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-fixes-rare-hyperdrive-mysql-caching-bug-45e37a</guid>
-      <description><![CDATA[Cloudflare identified a subtle protocol bug in Hyperdrive’s MySQL caching that caused a 0.001% error rate. The team traced the issue to a caching logic flaw, corrected the code, and released the fix, enabling stable MySQL support in Hyperdrive. No exploitation reported.]]></description>
-      <pubDate>Wed, 14 Oct 2026 13:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/hyperdrive-mysql/">Cloudflare Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Congressional Probe Faults Match Group for Failing to Rein In Dating App Scams</title>
-      <link>https://secubuzz.com/news/congressional-probe-faults-match-group-for-failing-5f2ce5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/congressional-probe-faults-match-group-for-failing-5f2ce5</guid>
-      <description><![CDATA[A congressional Joint Economic Committee probe found Match Group failed to curb dating‑app scams across Tinder, Hinge, Match, Plenty of Fish and others. The report highlights gaps in user protection and calls for stronger oversight of the industry’s fraud prevention measures.]]></description>
-      <pubDate>Wed, 14 Oct 2026 12:32:00 GMT</pubDate>
-      <source url="https://therecord.media/congressional-probe-faults-match-group-for-failing-to-stop-dating-app-scams">The Record</source>
       <category>Policy</category>
     </item>
   </channel>

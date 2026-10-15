@@ -1,5 +1,18 @@
 [
   {
+    "id": "https://thehackernews.com/2026/10/drupal-patches-critical-core-rce-flaw.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/drupal-patches-critical-core-rce-flaw.html",
+    "title": "Drupal Core RCE Flaw Exploitable via Contributed Modules, No-Login Path",
+    "headline": "Drupal Core RCE Flaw Exploitable via Contributed Modules, No-Login Path",
+    "summary": "Drupal core’s Field UI module contains a critical remote code execution flaw that can be triggered through contributed modules without requiring user authentication. The vulnerability was patched in Drupal 11.4.10, 11.3.19, and 10.6.19 on October 14. Attackers can execute arbitrary code on the server via these modules.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-15T12:07:20.000Z",
+    "url": "https://thehackernews.com/2026/10/drupal-patches-critical-core-rce-flaw.html",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/police-arrests-95-suspects-in-child-sexual-abuse-material-crackdown/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-arrests-95-suspects-in-child-sexual-abuse-material-crackdown/",
     "title": "Police Arrest 95 Suspects in International CSAM Crackdown",
@@ -14,6 +27,42 @@
       {
         "source": "The Record",
         "sourceUrl": "https://therecord.media/olvx-cybercrime-marketplace-arrest-north-macedonia"
+      }
+    ]
+  },
+  {
+    "id": "https://www.malwarebytes.com/blog/news/2026/10/sextortion-help-firm-took-60-million-from-victims-ftc-alleges",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/sextortion-help-firm-took-60-million-from-victims-ftc-alleges",
+    "title": "FTC Accuses Sextortion Firm of $60M Fraud",
+    "headline": "FTC Accuses Sextortion Firm of $60M Fraud",
+    "summary": "The Federal Trade Commission alleges that Digital Forensics Corporation and its affiliates ran a sextortion scheme, extorting victims for intimate images and collecting $60 million in payments. The firm targeted individuals seeking help with blackmail, exploiting their vulnerability to demand ransom.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Malwarebytes Labs",
+    "publishedAt": "2026-10-15T11:48:26.000Z",
+    "url": "https://www.malwarebytes.com/blog/news/2026/10/sextortion-help-firm-took-60-million-from-victims-ftc-alleges",
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/sextortion-assistance-company-alleged-fraud-ftc-complaint"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/fake-ai-attacks-spread-across-us.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/fake-ai-attacks-spread-across-us.html",
+    "title": "Fake AI Products Used to Distribute Malware and Steal Browser Sessions",
+    "headline": "Fake AI Products Used to Distribute Malware and Steal Browser Sessions",
+    "summary": "Attackers impersonated popular AI tools to spread malware, hijack browser sessions, and compromise business accounts. ANY.RUN analyzed 1,258 sandbox samples linked to these fake AI campaigns from April to October 2026, highlighting the growing threat to U.S. companies and the pressure on managed security service providers.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-15T11:46:59.000Z",
+    "url": "https://thehackernews.com/2026/10/fake-ai-attacks-spread-across-us.html",
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/fake-watchguard-vpn/"
       }
     ]
   },
@@ -41,6 +90,19 @@
     "source": "Malwarebytes Labs",
     "publishedAt": "2026-10-15T11:09:53.000Z",
     "url": "https://www.malwarebytes.com/blog/privacy/2026/10/raven-ai-lets-cops-find-your-home-from-a-photo-taken-inside",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/why-ai-confidence-is-not-validation.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/why-ai-confidence-is-not-validation.html",
+    "title": "AI Confidence Grows Faster Than Validation Standards",
+    "headline": "AI Confidence Grows Faster Than Validation Standards",
+    "summary": "AI tools used in digital forensics and incident response are becoming increasingly confident in their outputs, outpacing the development of governance and validation methods. The lack of reliable verification processes risks unchecked errors beyond individual workstations, potentially compromising investigations.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-15T11:04:35.000Z",
+    "url": "https://thehackernews.com/2026/10/why-ai-confidence-is-not-validation.html",
     "additionalSources": []
   },
   {
@@ -214,6 +276,19 @@
         "sourceUrl": "https://cybersecuritynews.com/best-malware-analysis-tools/"
       }
     ]
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/15/optro-grc-intelligence-platform/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/15/optro-grc-intelligence-platform/",
+    "title": "Optro Expands AI‑Driven GRC Platform with Auditable Agents",
+    "headline": "Optro Expands AI‑Driven GRC Platform with Auditable Agents",
+    "summary": "Optro has added autonomous AI agents to its Governance, Risk, and Compliance platform, enabling risk teams to automate workflows while maintaining audit trails. Each agent action, decision, model entry, and evidence is logged and cited, ensuring transparency and compliance with team‑defined guardrails.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-15T07:43:54.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/15/optro-grc-intelligence-platform/",
+    "additionalSources": []
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/10/15/qualys-trurisk-eliminate-2-0-truconfidence/",
@@ -632,28 +707,6 @@
     "publishedAt": "2026-10-14T14:09:51.000Z",
     "url": "https://www.securityweek.com/harmonic-security-raises-50-million-for-workforce-ai-protection/",
     "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/fake-watchguard-vpn/",
-    "sourceUrl": "https://cybersecuritynews.com/fake-watchguard-vpn/",
-    "title": "Hackers Use Fake WatchGuard VPN Site to Steal Login Credentials",
-    "headline": "Hackers Use Fake WatchGuard VPN Site to Steal Login Credentials",
-    "summary": "Hackers set up a counterfeit WatchGuard VPN download page that lures users into a pop‑up collecting the VPN server address, username, and password. The real, signed installer is then offered, leaving victims’ credentials exposed without installing malware. No malicious client is required.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-14T14:08:23.000Z",
-    "url": "https://cybersecuritynews.com/fake-watchguard-vpn/",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/hirudo-android-malware-replaces-banking-apps-to-evade-security-checks/"
-      },
-      {
-        "source": "Malwarebytes Labs",
-        "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/10/fake-calendly-meta-careers-pages-steal-facebook-and-google-logins"
-      }
-    ]
   },
   {
     "id": "https://www.bleepingcomputer.com/news/security/the-blind-spots-of-agentic-pentesting-and-how-to-close-them/",
@@ -1149,19 +1202,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://therecord.media/sextortion-assistance-company-alleged-fraud-ftc-complaint",
-    "sourceUrl": "https://therecord.media/sextortion-assistance-company-alleged-fraud-ftc-complaint",
-    "title": "FTC Accuses Ohio Company of Fraudulent Sextortion Scam",
-    "headline": "FTC Accuses Ohio Company of Fraudulent Sextortion Scam",
-    "summary": "The FTC alleges an Ohio-based firm charged victims thousands of dollars for sextortion help it never delivered. The company’s operation was deemed fraudulent, and the complaint highlights deceptive practices targeting individuals seeking protection from sextortion threats.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Record",
-    "publishedAt": "2026-10-13T20:12:00.000Z",
-    "url": "https://therecord.media/sextortion-assistance-company-alleged-fraud-ftc-complaint",
-    "additionalSources": []
-  },
-  {
     "id": "https://www.bleepingcomputer.com/news/security/uk-housing-ombudsman-service-investigates-security-incident/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/uk-housing-ombudsman-service-investigates-security-incident/",
     "title": "UK Housing Ombudsman Service Investigates Security Incident on Case Management System",
@@ -1366,24 +1406,6 @@
     "publishedAt": "2026-10-13T13:35:06.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/13/trellix-wise-for-private-cloud-delivers-auditable-ai-investigations-for-security-teams/",
     "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/xworm-malware-2/",
-    "sourceUrl": "https://cybersecuritynews.com/xworm-malware-2/",
-    "title": "XWorm Malware Expands Beyond Password Theft to Spy and Hijack Browser Sessions",
-    "headline": "XWorm Malware Expands Beyond Password Theft to Spy and Hijack Browser Sessions",
-    "summary": "XWorm malware expands beyond password theft, enabling attackers to listen through infected computers’ microphones, track locations, and hijack browsers where users are already logged in. The malware’s plugin library turns a compromised Windows device into a spying tool and a gateway to online accounts without first stealing passwords.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-13T13:33:38.000Z",
-    "url": "https://cybersecuritynews.com/xworm-malware-2/",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/xworm-rat-evolves-into-surveillance-platform/"
-      }
-    ]
   },
   {
     "id": "https://therecord.media/ledger-cryptocurrency-wallet-implant-theft",
@@ -5205,45 +5227,5 @@
     "publishedAt": "2026-10-01T03:31:14.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/01/synthid-bio-watermark/",
     "additionalSources": []
-  },
-  {
-    "id": "https://isc.sans.edu/diary/rss/33386",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33386",
-    "title": "ISC Stormcast Podcast Released for October 1, 2026",
-    "headline": "ISC Stormcast Podcast Released for October 1, 2026",
-    "summary": "The SANS Internet Storm Center released its weekly ISC Stormcast podcast for Thursday, October 1, 2026. The episode is available via the ISC website and is licensed under Creative Commons Attribution-Noncommercial 3.0 United States.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "publishedAt": "2026-10-01T02:00:02.000Z",
-    "url": "https://isc.sans.edu/diary/rss/33386",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-11-2026-update-released-heres-everything-you-need-to-know/"
-      }
-    ]
-  },
-  {
-    "id": "https://cybernewsai.com/blog/543k-valid-secrets-exposed-public-github-repositories",
-    "sourceUrl": "https://cybernewsai.com/blog/543k-valid-secrets-exposed-public-github-repositories",
-    "title": "Over 543,000 GitHub Secrets Exposed in Large Leak Study",
-    "headline": "Over 543,000 GitHub Secrets Exposed in Large Leak Study",
-    "summary": "A Truffle Security audit uncovered 543,699 valid secrets on GitHub, with a median lifespan of 784 days. Nearly 37% of the leaks occurred after GitHub enabled Push Protection, highlighting ongoing exposure risks for developers and organizations relying on GitHub for code hosting.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-10-01T00:50:54.000Z",
-    "url": "https://cybernewsai.com/blog/543k-valid-secrets-exposed-public-github-repositories",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/over-543-000-valid-credentials-exposed-in-public-github-repositories/"
-      },
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/09/28/drunk-ai-models-jailbreak-research/"
-      }
-    ]
   }
 ]
