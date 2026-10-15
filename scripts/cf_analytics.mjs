@@ -209,6 +209,7 @@ export async function fetchCloudflareAnalytics({ zoneTag = '65259b39c7fd2648a898
     `);
     const tokenStatsRes = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', 'SELECT COUNT(*) as total, platform FROM push_tokens WHERE is_active = 1 GROUP BY platform');
     const tokenVersionsRes = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', 'SELECT app_version, COUNT(*) as count FROM push_tokens WHERE is_active = 1 GROUP BY app_version ORDER BY app_version DESC');
+    const dailyInstallsRes = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', 'SELECT date(created_at) as day, COUNT(*) as count, SUM(CASE WHEN is_active = 1 THEN 1 ELSE 0 END) as retained FROM push_tokens GROUP BY date(created_at) ORDER BY day DESC LIMIT 14');
     const notificationsSentRes = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', 'SELECT COUNT(*) as totalSent FROM sent_notifications');
 
     const summary = tokenSummaryRes?.[0]?.results?.[0] || {};
@@ -222,6 +223,7 @@ export async function fetchCloudflareAnalytics({ zoneTag = '65259b39c7fd2648a898
       },
       platforms: tokenStatsRes?.[0]?.results || [],
       versions: tokenVersionsRes?.[0]?.results || [],
+      dailyInstalls: dailyInstallsRes?.[0]?.results || [],
       totalSent: Number(notificationsSentRes?.[0]?.results?.[0]?.totalSent || 0)
     };
   } catch (err) {
@@ -246,7 +248,9 @@ if (process.argv[1]?.endsWith('cf_analytics.mjs')) {
     const tokens = data.deviceTokens;
     const today = z.dailyTimeline?.[0];
     const mb = today?.sum?.bytes ? (today.sum.bytes / (1024 * 1024)).toFixed(2) : '0';
-    console.log(`Today (${today?.dimensions?.date || 'Today'}): ${today?.sum?.requests || 0} Requests | ${today?.uniq?.uniques || 0} Unique Visitors | ${today?.sum?.pageViews || 0} Page Views | ${mb} MB Bandwidth | ${today?.sum?.threats || 0} Threats Blocked`);
+    const installsMap = Object.fromEntries((tokens?.dailyInstalls || []).map(r => [r.day, r]));
+    const todayInstalls = installsMap[today?.dimensions?.date]?.count || 0;
+    console.log(`Today (${today?.dimensions?.date || 'Today'}): ${today?.sum?.requests || 0} Requests | ${today?.uniq?.uniques || 0} Unique Visitors | ${today?.sum?.pageViews || 0} Page Views | ${todayInstalls} New Installs | ${mb} MB Bandwidth | ${today?.sum?.threats || 0} Threats Blocked`);
 
     if (tokens && tokens.summary) {
       console.log('\n--- Live Active Devices (Clean Production Install Base) ---');
@@ -256,6 +260,9 @@ if (process.argv[1]?.endsWith('cf_analytics.mjs')) {
         console.log(`  Live Production Versions: ${tokens.versions.map(v => `v${v.app_version}: ${v.count}`).join(' | ')}`);
       }
       console.log(`  Total Push Alerts Delivered: ${tokens.totalSent}`);
+      if (tokens.dailyInstalls && tokens.dailyInstalls.length > 0) {
+        console.log('  Recent Daily Registrations: ' + tokens.dailyInstalls.slice(0, 7).map(d => `${d.day}: +${d.count}`).join(' | '));
+      }
     }
 
     if (clicks) {
@@ -286,9 +293,10 @@ if (process.argv[1]?.endsWith('cf_analytics.mjs')) {
 
     if (z.dailyTimeline && z.dailyTimeline.length > 1) {
       console.log('\n--- Recent Daily History ---');
-      for (const d of z.dailyTimeline.slice(1, 6)) {
+      for (const d of z.dailyTimeline.slice(1, 8)) {
         const dMb = (d.sum.bytes / (1024 * 1024)).toFixed(2);
-        console.log(`  ${d.dimensions.date}: ${d.sum.requests.toString().padStart(5)} reqs | ${d.uniq.uniques.toString().padStart(4)} uniques | ${d.sum.pageViews.toString().padStart(4)} views | ${dMb} MB`);
+        const dayInstalls = installsMap[d.dimensions.date]?.count || 0;
+        console.log(`  ${d.dimensions.date}: ${d.sum.requests.toString().padStart(5)} reqs | ${d.uniq.uniques.toString().padStart(4)} uniques | ${d.sum.pageViews.toString().padStart(4)} views | ${dayInstalls.toString().padStart(2)} new installs | ${dMb} MB`);
       }
     }
 

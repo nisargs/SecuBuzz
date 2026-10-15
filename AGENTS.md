@@ -155,7 +155,7 @@
     - **NEVER** ask the user for secrets, API keys, or credentials.
     - Run `npx wrangler d1 execute secubuzz-push-db --remote --command "..."` (via `worker/` directory) and `node scripts/cf_analytics.mjs` / `node scripts/track_repeat_users.mjs`.
     - **Mandatory 5-Point Reporting Format**: Always deliver the exact structure:
-      1. *Real User Numbers (Traffic & Sessions)*: 7-day daily breakdown of unique visitors, total requests, page views, bandwidth, and top countries (US, DE, CA, NL, IN, AU, etc.).
+      1. *Real User Numbers (Traffic & Sessions)*: 7-day daily breakdown table of unique visitors, total requests, page views, new mobile app installs (measured by fresh push token registrations in D1), bandwidth, and top countries (US, DE, CA, NL, IN, AU, etc.).
       2. *Pages Checked*: Breakdown of RUM page views by route (`/`, `/news`, `/advisories`, `/download`, `/publishers`, `/about`, and specific CVE/brief URLs).
       3. *Repeat Users & Live Active Devices (Clean Production Install Base)*: Always explicitly report:
          - Live Installed Devices: 15 on production `v1.0.2`
