@@ -28,7 +28,8 @@
   - **Never adapt the chassis to the website theme**: It must never use `bg-surface` or `border-line` which washes out into a pale border in white theme.
   - **No protruding button divs**: The chassis must remain flush with clean architectural corners; do not attach floating fake side button elements that stick out past the bezel.
   - **Light Mode Contrast**: Hardware realism is maintained on light backgrounds via a deep multi-tier drop shadow (`shadow-[0_25px_60px_-15px_rgba(15,23,42,0.35)]`).
-  - **Clean Edge-to-Edge Navigation**: Mobile screenshots (`1.jpg`, `screenshot.jpg`, `app-screenshot.jpg`) must maintain a seamless dark `#0B0E14` base with a subtle Android gesture pill, completely eliminating any light/white OS 3-button navigation bars.
+  - **Clean Edge-to-Edge Navigation**: Mobile screenshots (`1.jpg`, `2.jpg`, `3.jpg`, `screenshot.jpg`, `app-screenshot.jpg`) must maintain a seamless dark `#0B0E14` base with a subtle Android gesture pill, completely eliminating any light/white OS 3-button navigation bars.
+  - **Interactive 3-Screen Showcase Controller**: `PhoneMockup.tsx` provides 3 interactive tabs (`Briefs`, `Advisories`, `Bookmarks`) allowing visitors to explore the core app experiences (`/1.jpg`, `/2.jpg`, `/3.jpg`). Features smooth 500ms crossfade, a 6.5s auto-rotation with active progress line, and pause on hover/focus.
 
 ## 5. Deployment & Google Play Compliance
 - **Cloudflare Worker (`worker/src/index.ts`):** Must always be deployed with `npx wrangler deploy` when routing or policy files change. Always verify live endpoints with `fetch`.
