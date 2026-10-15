@@ -11,6 +11,95 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "eu-grocers-hit-by-unpatched-fridge-firmware-6635a1",
+    "title": "EU Grocers Hit by Unpatched Fridge Firmware",
+    "summary": "Hundreds of EU grocery stores suffered multi‑million dollar losses after third‑party vendors managed outdated OT firmware on their cooling systems, leaving the equipment vulnerable to exploitation. The issue highlights the risk of unpatched industrial control software in retail environments.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/ics-ot-security/eu-grocers-unpatched-fridge-firmware",
+    "publishedAt": "2026-10-15T07:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "eu-grocers-hit-by-unpatched-fridge-firmware",
+      "article-6635a1",
+      "6635a1"
+    ]
+  },
+  {
+    "slug": "palo-alto-networks-issues-patch-for-pan-os-zero-da-77a1a7",
+    "title": "Palo Alto Networks Issues Patch for PAN‑OS Zero‑Day RCE",
+    "summary": "Palo Alto Networks released a patch for a zero‑day remote code execution flaw in PAN‑OS that was actively exploited against customer firewalls. The company provided indicators of compromise and urged immediate update to mitigate the vulnerability.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/palo-alto-networks-patches-pan-os-zero-day-exploited-for-remote-code-execution/",
+    "publishedAt": "2026-10-15T06:59:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "palo-alto-networks-issues-patch-for-pan-os-zero-da",
+      "article-77a1a7",
+      "77a1a7",
+      "palo-alto-networks-issues-patch-for-pan-os-zero-day-rce"
+    ]
+  },
+  {
+    "slug": "cisco-secure-email-gateway-vulnerability-allows-un-547f3c",
+    "title": "Cisco Secure Email Gateway Vulnerability Allows Unauthenticated Remote Code Execution",
+    "summary": "Cisco identified an unauthenticated remote flaw in its Secure Email Gateway that permits attackers to write arbitrary files and execute commands with root privileges on the operating system. The vulnerability enables full system compromise and requires immediate patching to prevent exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/cisco-warns-of-exploited-secure-email-gateway-vulnerability/",
+    "publishedAt": "2026-10-15T06:34:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisco-secure-email-gateway-vulnerability-allows-un",
+      "article-547f3c",
+      "547f3c",
+      "cisco-secure-email-gateway-vulnerability-allows-unauthentica"
+    ]
+  },
+  {
+    "slug": "fake-chrome-app-on-google-play-draws-100-000-downl-73957e",
+    "title": "Fake Chrome App on Google Play Draws 100,000+ Downloads",
+    "summary": "A counterfeit Google Chrome application was listed on Google Play, mimicking Chrome’s name, icon, and description. The fake app, developed by Hizbartech, attracted over 100,000 downloads and appeared above the legitimate browser as a sponsored result. The listing raises concerns about app vetting and paid search visibility.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/fake-chrome-app/",
+    "publishedAt": "2026-10-15T06:03:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fake-chrome-app-on-google-play-draws-100-000-downl",
+      "article-73957e",
+      "73957e",
+      "fake-chrome-app-on-google-play-draws-100-000-downloads"
+    ]
+  },
+  {
+    "slug": "immuta-ciso-predicts-critical-ai-incidents-at-majo-2cfc17",
+    "title": "Immuta CISO Predicts Critical AI Incidents at Major Enterprises Within 18 Months",
+    "summary": "Immuta CISO Michael Scott warns that major enterprises will face critical AI incidents within 18 months if AI agents are not treated as lower‑trust identities. He stresses that agent privilege creep differs from human users, that authority should pass to sub‑agents, and that authentication alone does not secure agent actions.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/15/michael-scott-immuta-ai-agent-permissions/",
+    "publishedAt": "2026-10-15T05:30:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "immuta-ciso-predicts-critical-ai-incidents-at-majo",
+      "article-2cfc17",
+      "2cfc17",
+      "immuta-ciso-predicts-critical-ai-incidents-at-major-enterpri"
+    ]
+  },
+  {
     "slug": "internet-attack-surface-growth-varies-by-sector-5f5765",
     "title": "Internet Attack Surface Growth Varies by Sector",
     "summary": "Censys data shows AI-related software exposed to the public internet grew 63% in nine months, from 164,088 IPs in October 2025 to 267,915 in July 2026. Industrial control systems grew only 4% over two and a half years, while older business products remained stable.",
@@ -63,23 +152,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "cisco-secure-email-gateway-zero-day-cve-2026-76519-3d1f70",
-    "title": "Cisco Secure Email Gateway Zero-Day CVE-2026-76519 Actively Exploited",
-    "summary": "Cisco warned that attackers are exploiting a critical zero‑day vulnerability (CVE-2026-76519) in its Secure Email Gateway, granting root access via specially crafted email attachments without login. The flaw has a CVSS score of 9.8 and is actively used in attacks.",
+    "slug": "microsoft-discloses-three-active-directory-vulnera-2b9147",
+    "title": "Microsoft Discloses Three Active Directory Vulnerabilities Allowing Remote Bypass of Security Feature",
+    "summary": "Microsoft identified three Active Directory flaws—CVE-2026-69982, CVE-2026-96252, and CVE-2026-108131—that enable remote attackers to bypass a key security feature in Windows domain environments. Administrators should review the Security Update Guide and apply the available fixes promptly to mitigate the risk.",
     "category": "Vulnerability",
-    "severity": "CRITICAL",
+    "severity": "HIGH",
     "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/cisco-secure-email-gateway-0-day-vulnerability/",
-    "publishedAt": "2026-10-15T03:06:04.000Z",
+    "sourceUrl": "https://cybersecuritynews.com/multiple-active-directory-vulnerabilities/",
+    "publishedAt": "2026-10-15T03:51:31.000Z",
     "cves": [
-      "CVE-2026-76519"
+      "CVE-2026-69982",
+      "CVE-2026-96252",
+      "CVE-2026-108131"
     ],
     "additionalSources": [],
     "aliases": [
-      "cisco-secure-email-gateway-zero-day-cve-2026-76519",
-      "article-3d1f70",
-      "3d1f70",
-      "cisco-secure-email-gateway-zero-day-cve-2026-76519-actively-"
+      "microsoft-discloses-three-active-directory-vulnera",
+      "article-2b9147",
+      "2b9147",
+      "microsoft-discloses-three-active-directory-vulnerabilities-a"
     ]
   },
   {
@@ -101,26 +192,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "palo-alto-networks-issues-patch-for-exploited-pan-1487d7",
-    "title": "Palo Alto Networks Issues Patch for Exploited PAN-OS RCE Vulnerability CVE-2026-0322",
-    "summary": "Palo Alto Networks has released a patch for the high‑severity PAN‑OS remote code execution flaw identified as CVE‑2026‑0322. The vulnerability, which has been actively exploited against firewalls, allows attackers to execute arbitrary code with administrative privileges. Users must apply the update immediately to prevent potential compromise.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-pan-os-rce-flaw-exploited-in-attacks/",
-    "publishedAt": "2026-10-14T22:56:47.000Z",
-    "cves": [
-      "CVE-2026-0322"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "palo-alto-networks-issues-patch-for-exploited-pan",
-      "article-1487d7",
-      "1487d7",
-      "palo-alto-networks-issues-patch-for-exploited-pan-os-rce-vul"
-    ]
-  },
-  {
     "slug": "unit-42-uncovers-peerstitch-a-stealthy-fortigate-i-21b2cf",
     "title": "Unit 42 Uncovers PEERSTITCH, a Stealthy FortiGate Implant",
     "summary": "Unit 42 identified PEERSTITCH, a memory‑resident ARM64 malware that attackers deployed on over 500 FortiGate firewalls by exploiting CVE-2024-47575. The vulnerability allowed unauthenticated remote code execution, enabling the implant to remain hidden in memory and evade detection.",
@@ -138,26 +209,6 @@ export const news: NewsBrief[] = [
       "article-21b2cf",
       "21b2cf",
       "unit-42-uncovers-peerstitch-a-stealthy-fortigate-implant"
-    ]
-  },
-  {
-    "slug": "microsoft-releases-patch-for-exploited-windows-she-288f46",
-    "title": "Microsoft Releases Patch for Exploited Windows Shell MotW Zero‑Day CVE-2026-96951",
-    "summary": "Microsoft has issued a security update addressing the actively exploited Windows Shell MotW zero‑day vulnerability identified as CVE‑2026‑96951. The flaw permits attackers to execute arbitrary code via malicious shell extensions, potentially compromising user systems. All Windows users should install the patch to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/cve-2026-96951-windows-shell-motw-zero-day-patch",
-    "publishedAt": "2026-10-14T21:44:12.000Z",
-    "cves": [
-      "CVE-2026-96951"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-releases-patch-for-exploited-windows-she",
-      "article-288f46",
-      "288f46",
-      "microsoft-releases-patch-for-exploited-windows-shell-motw-ze"
     ]
   },
   {
@@ -286,24 +337,6 @@ export const news: NewsBrief[] = [
       "article-6e3602",
       "6e3602",
       "fbi-seizes-laptops-used-by-north-korean-remote-it-workers"
-    ]
-  },
-  {
-    "slug": "three-nginx-flaws-enable-remote-crashes-and-potent-6db2b3",
-    "title": "Three NGINX Flaws Enable Remote Crashes and Potential Code Execution",
-    "summary": "F5 disclosed three serious security flaws in NGINX Plus and NGINX Open Source that allow unauthenticated remote attackers to crash worker processes via crafted HTTP requests. In certain configurations, memory errors could also enable code execution if Address Space Layout Randomization (ASLR) is disabled. Patching is recommended.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/multiple-nginx-vulnerabilities/",
-    "publishedAt": "2026-10-14T18:19:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "three-nginx-flaws-enable-remote-crashes-and-potent",
-      "article-6db2b3",
-      "6db2b3",
-      "three-nginx-flaws-enable-remote-crashes-and-potential-code-e"
     ]
   },
   {
@@ -1001,24 +1034,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "google-chrome-update-addresses-37-vulnerabilities-365c9c",
-    "title": "Google Chrome Update Addresses 37 Vulnerabilities, Including 7 Critical Flaws",
-    "summary": "Google released a Chrome security update fixing 37 vulnerabilities across Windows, Mac, and Linux. Seven critical flaws could lead to memory corruption and code execution via graphics, PDF handling, media processing, networking, and other browser components. Users should install the update immediately to mitigate potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/multiple-google-chrome-vulnerabilities/",
-    "publishedAt": "2026-10-14T07:59:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-chrome-update-addresses-37-vulnerabilities",
-      "article-365c9c",
-      "365c9c",
-      "google-chrome-update-addresses-37-vulnerabilities-including-"
-    ]
-  },
-  {
     "slug": "mozilla-launches-firefox-enterprise-amid-chrome-an-3fe20a",
     "title": "Mozilla Launches Firefox Enterprise Amid Chrome and Firefox Patch 114 Updates",
     "summary": "Mozilla introduced Firefox Enterprise, targeting organizations needing strict compliance and security. The release coincides with Chrome and Firefox patching 114 flaws, enhancing browser security for enterprise users.",
@@ -1535,26 +1550,6 @@ export const news: NewsBrief[] = [
       "article-1d3bc5",
       "1d3bc5",
       "lattice-sentry-5-0-adds-quantum-resistant-firmware-security"
-    ]
-  },
-  {
-    "slug": "swann-communications-swifi-se2kic-firmware-vulnera-430cec",
-    "title": "Swann Communications SWIFI-SE2KIC Firmware Vulnerability CVE-2026-107605 Allows Unauthenticated Live Video Access",
-    "summary": "The Swann Communications SWIFI-SE2KIC firmware (CVE-2026-107605) has a missing authentication flaw that lets local attackers view live video feeds without credentials. Affected firmware versions 2.0.22 and earlier are vulnerable; applying the vendor’s patch or updating firmware resolves the issue.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-286-02",
-    "publishedAt": "2026-10-13T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-107605"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "swann-communications-swifi-se2kic-firmware-vulnera",
-      "article-430cec",
-      "430cec",
-      "swann-communications-swifi-se2kic-firmware-vulnerability-cve"
     ]
   },
   {

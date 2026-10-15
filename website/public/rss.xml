@@ -5,8 +5,53 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Oct 2026 05:05:59 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 07:30:34 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>EU Grocers Hit by Unpatched Fridge Firmware</title>
+      <link>https://secubuzz.com/news/eu-grocers-hit-by-unpatched-fridge-firmware-6635a1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/eu-grocers-hit-by-unpatched-fridge-firmware-6635a1</guid>
+      <description><![CDATA[Hundreds of EU grocery stores suffered multi‑million dollar losses after third‑party vendors managed outdated OT firmware on their cooling systems, leaving the equipment vulnerable to exploitation. The issue highlights the risk of unpatched industrial control software in retail environments.]]></description>
+      <pubDate>Thu, 15 Oct 2026 07:00:00 GMT</pubDate>
+      <source url="https://www.darkreading.com/ics-ot-security/eu-grocers-unpatched-fridge-firmware">Dark Reading</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Palo Alto Networks Issues Patch for PAN‑OS Zero‑Day RCE</title>
+      <link>https://secubuzz.com/news/palo-alto-networks-issues-patch-for-pan-os-zero-da-77a1a7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/palo-alto-networks-issues-patch-for-pan-os-zero-da-77a1a7</guid>
+      <description><![CDATA[Palo Alto Networks released a patch for a zero‑day remote code execution flaw in PAN‑OS that was actively exploited against customer firewalls. The company provided indicators of compromise and urged immediate update to mitigate the vulnerability.]]></description>
+      <pubDate>Thu, 15 Oct 2026 06:59:54 GMT</pubDate>
+      <source url="https://www.securityweek.com/palo-alto-networks-patches-pan-os-zero-day-exploited-for-remote-code-execution/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Cisco Secure Email Gateway Vulnerability Allows Unauthenticated Remote Code Execution</title>
+      <link>https://secubuzz.com/news/cisco-secure-email-gateway-vulnerability-allows-un-547f3c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisco-secure-email-gateway-vulnerability-allows-un-547f3c</guid>
+      <description><![CDATA[Cisco identified an unauthenticated remote flaw in its Secure Email Gateway that permits attackers to write arbitrary files and execute commands with root privileges on the operating system. The vulnerability enables full system compromise and requires immediate patching to prevent exploitation.]]></description>
+      <pubDate>Thu, 15 Oct 2026 06:34:15 GMT</pubDate>
+      <source url="https://www.securityweek.com/cisco-warns-of-exploited-secure-email-gateway-vulnerability/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Fake Chrome App on Google Play Draws 100,000+ Downloads</title>
+      <link>https://secubuzz.com/news/fake-chrome-app-on-google-play-draws-100-000-downl-73957e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fake-chrome-app-on-google-play-draws-100-000-downl-73957e</guid>
+      <description><![CDATA[A counterfeit Google Chrome application was listed on Google Play, mimicking Chrome’s name, icon, and description. The fake app, developed by Hizbartech, attracted over 100,000 downloads and appeared above the legitimate browser as a sponsored result. The listing raises concerns about app vetting and paid search visibility.]]></description>
+      <pubDate>Thu, 15 Oct 2026 06:03:34 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/fake-chrome-app/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Immuta CISO Predicts Critical AI Incidents at Major Enterprises Within 18 Months</title>
+      <link>https://secubuzz.com/news/immuta-ciso-predicts-critical-ai-incidents-at-majo-2cfc17</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/immuta-ciso-predicts-critical-ai-incidents-at-majo-2cfc17</guid>
+      <description><![CDATA[Immuta CISO Michael Scott warns that major enterprises will face critical AI incidents within 18 months if AI agents are not treated as lower‑trust identities. He stresses that agent privilege creep differs from human users, that authority should pass to sub‑agents, and that authentication alone does not secure agent actions.]]></description>
+      <pubDate>Thu, 15 Oct 2026 05:30:27 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/15/michael-scott-immuta-ai-agent-permissions/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>Internet Attack Surface Growth Varies by Sector</title>
       <link>https://secubuzz.com/news/internet-attack-surface-growth-varies-by-sector-5f5765</link>
@@ -35,12 +80,12 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Cisco Secure Email Gateway Zero-Day CVE-2026-76519 Actively Exploited</title>
-      <link>https://secubuzz.com/news/cisco-secure-email-gateway-zero-day-cve-2026-76519-3d1f70</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisco-secure-email-gateway-zero-day-cve-2026-76519-3d1f70</guid>
-      <description><![CDATA[Cisco warned that attackers are exploiting a critical zero‑day vulnerability (CVE-2026-76519) in its Secure Email Gateway, granting root access via specially crafted email attachments without login. The flaw has a CVSS score of 9.8 and is actively used in attacks.]]></description>
-      <pubDate>Thu, 15 Oct 2026 03:06:04 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/cisco-secure-email-gateway-0-day-vulnerability/">Cyber Security News</source>
+      <title>Microsoft Discloses Three Active Directory Vulnerabilities Allowing Remote Bypass of Security Feature</title>
+      <link>https://secubuzz.com/news/microsoft-discloses-three-active-directory-vulnera-2b9147</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-discloses-three-active-directory-vulnera-2b9147</guid>
+      <description><![CDATA[Microsoft identified three Active Directory flaws—CVE-2026-69982, CVE-2026-96252, and CVE-2026-108131—that enable remote attackers to bypass a key security feature in Windows domain environments. Administrators should review the Security Update Guide and apply the available fixes promptly to mitigate the risk.]]></description>
+      <pubDate>Thu, 15 Oct 2026 03:51:31 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/multiple-active-directory-vulnerabilities/">Cyber Security News</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -53,30 +98,12 @@
       <category>Cloud</category>
     </item>
     <item>
-      <title>Palo Alto Networks Issues Patch for Exploited PAN-OS RCE Vulnerability CVE-2026-0322</title>
-      <link>https://secubuzz.com/news/palo-alto-networks-issues-patch-for-exploited-pan-1487d7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/palo-alto-networks-issues-patch-for-exploited-pan-1487d7</guid>
-      <description><![CDATA[Palo Alto Networks has released a patch for the high‑severity PAN‑OS remote code execution flaw identified as CVE‑2026‑0322. The vulnerability, which has been actively exploited against firewalls, allows attackers to execute arbitrary code with administrative privileges. Users must apply the update immediately to prevent potential compromise.]]></description>
-      <pubDate>Wed, 14 Oct 2026 22:56:47 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-pan-os-rce-flaw-exploited-in-attacks/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>Unit 42 Uncovers PEERSTITCH, a Stealthy FortiGate Implant</title>
       <link>https://secubuzz.com/news/unit-42-uncovers-peerstitch-a-stealthy-fortigate-i-21b2cf</link>
       <guid isPermaLink="true">https://secubuzz.com/news/unit-42-uncovers-peerstitch-a-stealthy-fortigate-i-21b2cf</guid>
       <description><![CDATA[Unit 42 identified PEERSTITCH, a memory‑resident ARM64 malware that attackers deployed on over 500 FortiGate firewalls by exploiting CVE-2024-47575. The vulnerability allowed unauthenticated remote code execution, enabling the implant to remain hidden in memory and evade detection.]]></description>
       <pubDate>Wed, 14 Oct 2026 22:00:44 GMT</pubDate>
       <source url="https://unit42.paloaltonetworks.com/fortimanager-cve-2024-47575-peerstitch-malware/">Unit 42</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Microsoft Releases Patch for Exploited Windows Shell MotW Zero‑Day CVE-2026-96951</title>
-      <link>https://secubuzz.com/news/microsoft-releases-patch-for-exploited-windows-she-288f46</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-releases-patch-for-exploited-windows-she-288f46</guid>
-      <description><![CDATA[Microsoft has issued a security update addressing the actively exploited Windows Shell MotW zero‑day vulnerability identified as CVE‑2026‑96951. The flaw permits attackers to execute arbitrary code via malicious shell extensions, potentially compromising user systems. All Windows users should install the patch to mitigate the risk.]]></description>
-      <pubDate>Wed, 14 Oct 2026 21:44:12 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/cve-2026-96951-windows-shell-motw-zero-day-patch">CyberNews AI</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -141,15 +168,6 @@
       <pubDate>Wed, 14 Oct 2026 19:41:43 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/fbi-raids-dprk-it-worker-laptop-farms-in-texas-us-nationals-arrested/">BleepingComputer</source>
       <category>Malware</category>
-    </item>
-    <item>
-      <title>Three NGINX Flaws Enable Remote Crashes and Potential Code Execution</title>
-      <link>https://secubuzz.com/news/three-nginx-flaws-enable-remote-crashes-and-potent-6db2b3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/three-nginx-flaws-enable-remote-crashes-and-potent-6db2b3</guid>
-      <description><![CDATA[F5 disclosed three serious security flaws in NGINX Plus and NGINX Open Source that allow unauthenticated remote attackers to crash worker processes via crafted HTTP requests. In certain configurations, memory errors could also enable code execution if Address Space Layout Randomization (ASLR) is disabled. Patching is recommended.]]></description>
-      <pubDate>Wed, 14 Oct 2026 18:19:03 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/multiple-nginx-vulnerabilities/">Cyber Security News</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>Ledger Urges Asian Resellers to Halt Wallet Sales Amid Supply‑Chain Tampering Investigation</title>
@@ -437,24 +455,6 @@
       <description><![CDATA[Radware unveiled MCP Server Protection, a tool that monitors agent activity and shields MCP servers from protocol abuse as AI agents increasingly access enterprise apps. The solution offers visibility, attack protection, and governance for scaling MCP deployments.]]></description>
       <pubDate>Wed, 14 Oct 2026 10:35:25 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/14/radware-mcp-server-protection/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>SolarWinds Launches Avior AI for IT Automation with Human Oversight</title>
-      <link>https://secubuzz.com/news/solarwinds-launches-avior-ai-for-it-automation-wit-373b61</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/solarwinds-launches-avior-ai-for-it-automation-wit-373b61</guid>
-      <description><![CDATA[SolarWinds unveiled Avior, a standalone AI system built on its platform to automate IT tasks while requiring human approval and audit trails. Avior defines goals, coordinates specialized agents, and tracks progress in hybrid digital ecosystems, aiming to reduce outage minutes and audit exposure for mission‑critical environments.]]></description>
-      <pubDate>Wed, 14 Oct 2026 10:27:11 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/14/solarwinds-avior/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Chainguard Harness Employs Frontier AI to Detect Vulnerabilities in Running Apps</title>
-      <link>https://secubuzz.com/news/chainguard-harness-employs-frontier-ai-to-detect-v-591ed0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chainguard-harness-employs-frontier-ai-to-detect-v-591ed0</guid>
-      <description><![CDATA[Chainguard introduced Harness, a cyber harness that uses Anthropic’s Claude Mythos 5.1 to build an application in an isolated microVM, hunt for exploitable vulnerabilities in a live instance, and reproduce findings before delivering staff‑reviewed fixes, enabling teams to perform frontier vulnerability hunting without extensive resources.]]></description>
-      <pubDate>Wed, 14 Oct 2026 10:16:04 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/14/chainguard-harness/">Help Net Security</source>
       <category>Policy</category>
     </item>
   </channel>
