@@ -67,7 +67,20 @@
   - Transform SecuBuzz from a cybersecurity news reader into a lightweight, personal threat-intelligence assistant.
   - Pipeline: `News → CVE → KEV → EPSS → Product / Version → User Stack ("Am I Affected?") → Action`.
 - **Feature Prioritization (Post-Approval v1.1+):**
-  - **P0: "My Stack / Am I Affected?"**: Local, 100% on-device vendor/technology watchlist (e.g. Microsoft Exchange, Palo Alto PAN-OS, Cisco ASA, Fortinet). Matches against `vendorProject` and `product` fields already present in the article model. Zero privacy risk, zero backend cost.
+  - **P0: "My Stack / Am I Affected?" (Vendor Official Feeds & Personal Radar)**:
+    - **Core Vision**: Transform SecuBuzz into an indispensable enterprise vendor watchdog and personal threat pager.
+    - **Vendor Official PSIRT Advisory Feeds** (to plug into `scripts/ingest.mjs`):
+      - Palo Alto Networks PSIRT: `https://security.paloaltonetworks.com/rss.xml` (PAN-OS, GlobalProtect, Prisma, Cortex)
+      - Microsoft MSRC: `https://api.msrc.microsoft.com/update-guide/rss` (Patch Tuesday, Windows Server, Exchange, Entra ID)
+      - Cisco PSIRT: `https://tools.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml` (IOS-XE, ASA, Duo, AnyConnect)
+      - Fortinet PSIRT: `https://filestore.fortinet.com/fortinet/rss/psirt.xml` (FortiOS, FortiGate, FortiManager)
+      - Ivanti Security Advisories: `https://www.ivanti.com/blog/topics/security-advisory/rss` (Connect Secure, EPMM)
+      - VMware / Broadcom Security Advisories (VMSA)
+    - **Tri-Tier In-App Experience**:
+      1. *Dedicated 'My Stack' Feed*: Tab filtering 60-word briefs strictly to the user's selected vendor ecosystem.
+      2. *'AFFECTS YOUR STACK' Badge*: Visual alert badge highlighting CISA KEV and CVE advisory cards matching user stack.
+      3. *Targeted Push Alerting ('Pager Mode')*: Optional alert preference to only buzz device when Critical/High threats touch user's selected vendors.
+    - **100% Local On-Device Architecture**: User stack saved in local `AsyncStorage` on device; zero tracking, zero cloud database cost, zero enterprise compliance risk.
   - **P0: EPSS Threat Enrichment**: Display probability percentile alongside CVSS and CISA KEV on CVE advisory cards.
   - **P1: Structured Threat Timeline**: Visual lifecycle (`Disclosed → PoC → Exploit → CISA KEV → Patch`) indicating what changed.
   - **P1: Authoritative NVD Vector Integration**: Pull CVSS v3.1/v4.0 vector strings directly from NIST NVD API.
