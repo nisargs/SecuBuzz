@@ -1,5 +1,242 @@
 [
   {
+    "id": "https://www.darkreading.com/cybersecurity-operations/vulnerability-management-isnt-about-the-score-its-about-how-it-applies-to-you",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/vulnerability-management-isnt-about-the-score-its-about-how-it-applies-to-you",
+    "title": "Vulnerability Management Should Focus on Real-World Impact",
+    "headline": "Vulnerability Management Should Focus on Real-World Impact",
+    "summary": "Organizations are urged to shift from vendor-assigned theoretical scores to real exploit data that reflects their specific environments. The article emphasizes tailoring vulnerability management to actual risk exposure rather than generic metrics.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-15T15:17:18.000Z",
+    "url": "https://www.darkreading.com/cybersecurity-operations/vulnerability-management-isnt-about-the-score-its-about-how-it-applies-to-you",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/citrix-xenserver-vulnerabilities/",
+    "sourceUrl": "https://cybersecuritynews.com/citrix-xenserver-vulnerabilities/",
+    "title": "Citrix XenServer Vulnerabilities Enable Host Compromise from Inside VMs",
+    "headline": "Citrix XenServer Vulnerabilities Enable Host Compromise from Inside VMs",
+    "summary": "Citrix disclosed four high-severity vulnerabilities in XenServer 8.4 and 9 that allow a malicious user with elevated VM rights to compromise or crash the host system. The bulletin CTX697170 details the flaws and recommends applying the vendor’s patches.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-15T14:42:47.000Z",
+    "url": "https://cybersecuritynews.com/citrix-xenserver-vulnerabilities/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/hackers-use-clickfix/",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-use-clickfix/",
+    "title": "Hackers Deploy ClickFix and Python Tunnels to Enable Ransomware Attacks",
+    "headline": "Hackers Deploy ClickFix and Python Tunnels to Enable Ransomware Attacks",
+    "summary": "Hackers use ClickFix tricks to install malware loaders and Python tunnels on Windows, creating a covert infection chain that can later deliver ransomware. The method leverages trusted Microsoft programs, hidden code, and encrypted traffic, allowing attackers to maintain persistence until a ransomware payload is deployed.",
+    "category": "RANSOMWARE",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-15T14:30:51.000Z",
+    "url": "https://cybersecuritynews.com/hackers-use-clickfix/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://therecord.media/uk-legal-aid-cyberattack-data",
+    "sourceUrl": "https://therecord.media/uk-legal-aid-cyberattack-data",
+    "title": "UK Legal Aid Agency Data Breach Exposes Records Back to 1978",
+    "headline": "UK Legal Aid Agency Data Breach Exposes Records Back to 1978",
+    "summary": "A cyberattack on the UK Legal Aid Agency compromised a vast archive of records, including documents dating back to 1978. The breach reveals that stolen data is far older and more extensive than initially reported, raising concerns over long-term data protection and regulatory compliance.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Record",
+    "publishedAt": "2026-10-15T14:30:00.000Z",
+    "url": "https://therecord.media/uk-legal-aid-cyberattack-data",
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/uk-legal-aid-agency-hack-scope-widens-after-forensic-review/"
+      },
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/uk-legal-aid-agency-data-breach/"
+      },
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/uk-legal-aid-agency-hackers-stole-records-dating-back-to-1978/"
+      }
+    ]
+  },
+  {
+    "id": "https://cybersecuritynews.com/chinese-phishing-network/",
+    "sourceUrl": "https://cybersecuritynews.com/chinese-phishing-network/",
+    "title": "Chinese-Run Phishing Network Sent One Billion Emails to 75,000 Organizations",
+    "headline": "Chinese-Run Phishing Network Sent One Billion Emails to 75,000 Organizations",
+    "summary": "A Chinese-run phishing network, operating through the Iron Man System paid platform, sent one billion phishing emails targeting 75,000 organizations. The platform enables criminals to deploy fake websites and harvest sensitive data without building custom tools. No confirmed data breaches reported yet.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-15T14:25:16.000Z",
+    "url": "https://cybersecuritynews.com/chinese-phishing-network/",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/15/microsoft-disrupting-phishing-kits-marketplace-yam-store/"
+      }
+    ]
+  },
+  {
+    "id": "https://cybersecuritynews.com/0-click-spyware-infects-devices/",
+    "sourceUrl": "https://cybersecuritynews.com/0-click-spyware-infects-devices/",
+    "title": "Zero-Click Spyware Delivered via Online Ads",
+    "headline": "Zero-Click Spyware Delivered via Online Ads",
+    "summary": "Researchers documented a zero-click spyware attack, named AdFection, that infects devices simply by viewing online advertisements. The malware bypasses user interaction, delivering powerful spyware without downloads or warnings, exposing devices to covert surveillance and data exfiltration.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-15T14:16:37.000Z",
+    "url": "https://cybersecuritynews.com/0-click-spyware-infects-devices/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.malwarebytes.com/blog/bugs/2026/10/update-chrome-google-fixes-37-security-flaws-including-seven-critical-bugs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/10/update-chrome-google-fixes-37-security-flaws-including-seven-critical-bugs",
+    "title": "Google Fixes 37 Chrome Security Flaws, Seven Critical Bugs",
+    "headline": "Google Fixes 37 Chrome Security Flaws, Seven Critical Bugs",
+    "summary": "Google patched 37 security flaws in Chrome, seven of which were critical. The vulnerabilities could allow attackers to execute malicious code via crafted web pages, potentially compromising user devices. Users are urged to update Chrome immediately to mitigate the risk and protect against exploitation.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Malwarebytes Labs",
+    "publishedAt": "2026-10-15T14:15:03.000Z",
+    "url": "https://www.malwarebytes.com/blog/bugs/2026/10/update-chrome-google-fixes-37-security-flaws-including-seven-critical-bugs",
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/fake-chrome-app/"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/help-tds-linked-to-hotejka-as-20000.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/help-tds-linked-to-hotejka-as-20000.html",
+    "title": "Help TDS Linked to Hotejka Operates 20,000+ Cloudflare Pages Domains for Tech Support Scams",
+    "headline": "Help TDS Linked to Hotejka Operates 20,000+ Cloudflare Pages Domains for Tech Support Scams",
+    "summary": "Help TDS, a traffic distribution system tied to the Russian affiliate program Hotejka, has been active since 2017. It distributes PHP code templates that are installed on compromised websites, redirecting visitors to tech‑support scam sites hosted on over 20,000 Cloudflare Pages domains.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-15T14:11:36.000Z",
+    "url": "https://thehackernews.com/2026/10/help-tds-linked-to-hotejka-as-20000.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/is-ai-pentesting-as-good-as-a-human-pentester/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/is-ai-pentesting-as-good-as-a-human-pentester/",
+    "title": "AI Pentesting vs Human Pentesters: A Comparative Analysis",
+    "headline": "AI Pentesting vs Human Pentesters: A Comparative Analysis",
+    "summary": "The article compares AI‑driven penetration testing with traditional human testing. It highlights AI’s ability to uncover overlooked vulnerabilities while noting limitations in consistency, risk assessment, and business context understanding. The discussion outlines where AI agents can enhance security testing practices.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-15T14:01:11.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/is-ai-pentesting-as-good-as-a-human-pentester/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://blog.cloudflare.com/deploy-with-void/",
+    "sourceUrl": "https://blog.cloudflare.com/deploy-with-void/",
+    "title": "Void SDK Launches for Cloudflare Vite App Deployment",
+    "headline": "Void SDK Launches for Cloudflare Vite App Deployment",
+    "summary": "Cloudflare introduces Void, an open‑source SDK, CLI, and self‑hosted platform that enables developers to build full‑stack Vite applications and deploy them directly to Cloudflare’s edge network. The tool streamlines the deployment workflow for modern web projects.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "publishedAt": "2026-10-15T14:00:00.000Z",
+    "url": "https://blog.cloudflare.com/deploy-with-void/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/ai-agents-4/",
+    "sourceUrl": "https://cybersecuritynews.com/ai-agents-4/",
+    "title": "AI Agents Expose API Keys and Cloud Secrets",
+    "headline": "AI Agents Expose API Keys and Cloud Secrets",
+    "summary": "AI agents can inadvertently leak API keys and cloud secrets during normal operations. When executing commands or reading config files, sensitive data may appear in command histories, logs, transcripts, and the model’s context, creating an unseen credential surface that can be accessed by attackers.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-15T13:55:34.000Z",
+    "url": "https://cybersecuritynews.com/ai-agents-4/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://therecord.media/suspected-kazakhstan-phishing-central-asia-espionage",
+    "sourceUrl": "https://therecord.media/suspected-kazakhstan-phishing-central-asia-espionage",
+    "title": "Kazakhstan‑Linked Hackers Target Former Soviet Governments",
+    "headline": "Kazakhstan‑Linked Hackers Target Former Soviet Governments",
+    "summary": "Researchers identify a roughly two‑year‑old cyber‑espionage campaign originating in Kazakhstan that has targeted governments across Central Asian states. The operation focuses on gathering intelligence from former Soviet republics, indicating a sustained nation‑state effort.",
+    "category": "NATION_STATE",
+    "severity": "HIGH",
+    "source": "The Record",
+    "publishedAt": "2026-10-15T13:55:00.000Z",
+    "url": "https://therecord.media/suspected-kazakhstan-phishing-central-asia-espionage",
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/uat-6275-hackers/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/15/servicenow-ai-passport/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/15/servicenow-ai-passport/",
+    "title": "ServiceNow Introduces AI Passport for Runtime Governance of AI Agents",
+    "headline": "ServiceNow Introduces AI Passport for Runtime Governance of AI Agents",
+    "summary": "ServiceNow introduces an AI Passport solution that adds a runtime authority layer to AI agents and Model Context Protocol servers, enabling enterprises to control and govern AI actions within a multi‑agent workflow. The feature combines runtime governance, platform integration, and oversight to keep AI agents production‑ready while limiting their capabilities.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-15T13:51:22.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/15/servicenow-ai-passport/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/15/kgb-rat-windows-trojan-webcam-spying-password-theft/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/15/kgb-rat-windows-trojan-webcam-spying-password-theft/",
+    "title": "KGB RAT Trojan Enables Webcam, Microphone, Keystroke, and Password Theft",
+    "headline": "KGB RAT Trojan Enables Webcam, Microphone, Keystroke, and Password Theft",
+    "summary": "KGB RAT, a Windows trojan built on the NjRAT framework, offers attackers webcam and microphone access, keystroke logging, and password theft. The malware also includes a “fun” menu designed to frighten victims. Analysts from Group‑IB identified the trojan’s features and confirmed its use on hacking forums for as little as $150 a month.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-15T13:51:03.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/15/kgb-rat-windows-trojan-webcam-spying-password-theft/",
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/kgb-rat-malware/"
+      },
+      {
+        "source": "Dark Reading",
+        "sourceUrl": "https://www.darkreading.com/threat-intelligence/new-anthropic-sneakpeek-silent-zero-click-threat"
+      }
+    ]
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/15/barracuda-fake-captcha-phishing-attacks/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/15/barracuda-fake-captcha-phishing-attacks/",
+    "title": "Fake CAPTCHAs Used to Trick Users into Running Malware",
+    "headline": "Fake CAPTCHAs Used to Trick Users into Running Malware",
+    "summary": "Attackers embed malicious code in fake CAPTCHA challenges, luring users to download malware, receive harmful browser notifications, and execute commands. The technique, identified by Barracuda, was found in 43% of phishing-kit attacks examined in 2025, exploiting user trust to bypass automated security tools.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-15T13:29:01.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/15/barracuda-fake-captcha-phishing-attacks/",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/fake-ai-attacks-spread-across-us.html"
+      }
+    ]
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2022-reached-end-of-mainstream-support/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2022-reached-end-of-mainstream-support/",
     "title": "Microsoft Announces End of Mainstream Support for Windows Server 2022",
@@ -31,6 +268,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://thehackernews.com/2026/10/nginx-fixes-5-flaws-including-possible.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/nginx-fixes-5-flaws-including-possible.html",
+    "title": "NGINX Releases Patches for Five Vulnerabilities Including Potential RCE and TLS Session Forgery",
+    "headline": "NGINX Releases Patches for Five Vulnerabilities Including Potential RCE and TLS Session Forgery",
+    "summary": "NGINX released versions 1.30.6 and 1.31.7 to address five security flaws. Three memory bugs could crash worker processes or enable code execution under specific configurations, while a fourth flaw allows forging TLS sessions that may bypass client‑certificate checks. Users should upgrade immediately to mitigate these risks.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-15T12:58:05.000Z",
+    "url": "https://thehackernews.com/2026/10/nginx-fixes-5-flaws-including-possible.html",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.malwarebytes.com/blog/product/2026/10/is-this-link-safe-find-out-with-malwarebytes-scam-link-check",
     "sourceUrl": "https://www.malwarebytes.com/blog/product/2026/10/is-this-link-safe-find-out-with-malwarebytes-scam-link-check",
     "title": "Malwarebytes Launches Scam Link Check Tool",
@@ -54,6 +304,19 @@
     "source": "SecurityWeek",
     "publishedAt": "2026-10-15T12:50:42.000Z",
     "url": "https://www.securityweek.com/supermarket-refrigeration-attack-widens-to-copeland-dixell-controllers/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/critical-next-js-vulnerabilities/",
+    "sourceUrl": "https://cybersecuritynews.com/critical-next-js-vulnerabilities/",
+    "title": "Critical Next.js Vulnerabilities Allow Hackers to Execute Malicious Code Remotely",
+    "headline": "Critical Next.js Vulnerabilities Allow Hackers to Execute Malicious Code Remotely",
+    "summary": "Two critical vulnerabilities in Next.js enable remote attackers to execute malicious code without authentication, affecting cached functions and SVG image processing. A third high‑severity flaw can cause applications to stop serving requests. Patches are available in Next.js 16.4.1 and 15.5.28.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-15T12:39:05.000Z",
+    "url": "https://cybersecuritynews.com/critical-next-js-vulnerabilities/",
     "additionalSources": []
   },
   {
@@ -102,24 +365,6 @@
       {
         "source": "The Record",
         "sourceUrl": "https://therecord.media/sextortion-assistance-company-alleged-fraud-ftc-complaint"
-      }
-    ]
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/fake-ai-attacks-spread-across-us.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/fake-ai-attacks-spread-across-us.html",
-    "title": "Fake AI Products Used to Distribute Malware and Steal Browser Sessions",
-    "headline": "Fake AI Products Used to Distribute Malware and Steal Browser Sessions",
-    "summary": "Attackers impersonated popular AI tools to spread malware, hijack browser sessions, and compromise business accounts. ANY.RUN analyzed 1,258 sandbox samples linked to these fake AI campaigns from April to October 2026, highlighting the growing threat to U.S. companies and the pressure on managed security service providers.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-15T11:46:59.000Z",
-    "url": "https://thehackernews.com/2026/10/fake-ai-attacks-spread-across-us.html",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/fake-watchguard-vpn/"
       }
     ]
   },
@@ -211,68 +456,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.helpnetsecurity.com/2026/10/15/microsoft-disrupting-phishing-kits-marketplace-yam-store/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/15/microsoft-disrupting-phishing-kits-marketplace-yam-store/",
-    "title": "Microsoft disrupts phishing network behind more than a billion scam messages",
-    "headline": "Microsoft disrupts phishing network behind more than a billion scam messages",
-    "summary": "Microsoft and Resecurity dismantled a criminal marketplace that sold phishing kits and cloud accounts used to target healthcare, financial services, wholesale distribution, and IT organizations in Japan, the United States, Australia, and India. The marketplace, known as Storm-3119, sold kits such as CoGUI (NX) and other tools that enabled large‑scale phishing campaigns.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-15T10:10:21.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/15/microsoft-disrupting-phishing-kits-marketplace-yam-store/",
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/yam-store-storm-3119-phishing-network-defense"
-      },
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/brooklyn-da-server-takedowns-crypto-scam-russian-speakers"
-      }
-    ]
-  },
-  {
-    "id": "https://www.securityweek.com/centerpoint-energy-data-breach-impacts-1-million-texans/",
-    "sourceUrl": "https://www.securityweek.com/centerpoint-energy-data-breach-impacts-1-million-texans/",
-    "title": "CenterPoint Energy Data Breach Compromises 1 Million Texans",
-    "headline": "CenterPoint Energy Data Breach Compromises 1 Million Texans",
-    "summary": "A data breach at CenterPoint Energy exposed personal information—including names, addresses, Social Security numbers, and driver’s license numbers—of approximately one million Texas residents. The incident represents a significant credential and identity theft risk for affected individuals. No mitigation steps are detailed in the source.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-15T09:55:19.000Z",
-    "url": "https://www.securityweek.com/centerpoint-energy-data-breach-impacts-1-million-texans/",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/15/product-showcase-guardos/"
-      },
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/xandr-fined-record-86-million-for.html"
-      }
-    ]
-  },
-  {
-    "id": "https://cybersecuritynews.com/uat-6275-hackers/",
-    "sourceUrl": "https://cybersecuritynews.com/uat-6275-hackers/",
-    "title": "UAT-6275 Hackers Exploit WinRAR Flaw to Target CIS Government Organizations",
-    "headline": "UAT-6275 Hackers Exploit WinRAR Flaw to Target CIS Government Organizations",
-    "summary": "UAT-6275 hackers used a known WinRAR flaw to plant malware on Windows systems, targeting government organizations across the Commonwealth of Independent States. The unpatched archive tool allowed remote access, with malicious code activating when victims signed in next.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-15T09:08:09.000Z",
-    "url": "https://cybersecuritynews.com/uat-6275-hackers/",
-    "additionalSources": [
-      {
-        "source": "Cisco Talos",
-        "sourceUrl": "https://blog.talosintelligence.com/break-the-silence-kazakhstan-nexus-uat-6275-targets-cis-government-organizations/"
-      }
-    ]
-  },
-  {
     "id": "https://thehackernews.com/2026/10/ghostaction-compromises-about-1900.html",
     "sourceUrl": "https://thehackernews.com/2026/10/ghostaction-compromises-about-1900.html",
     "title": "GhostAction Compromises About 1,900 GitHub Accounts, Targets Over 30,000 Repositories",
@@ -289,19 +472,6 @@
         "sourceUrl": "https://cybersecuritynews.com/hackers-breach-meta-github-repositories/"
       }
     ]
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/uk-legal-aid-agency-hackers-stole-records-dating-back-to-1978/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/uk-legal-aid-agency-hackers-stole-records-dating-back-to-1978/",
-    "title": "UK Legal Aid Agency Records Stolen in April 2025 Breach",
-    "headline": "UK Legal Aid Agency Records Stolen in April 2025 Breach",
-    "summary": "Attackers breached the Legal Aid Agency’s IT systems in April 2025 and stole records dating back to 1978. The breach exposed sensitive data managed by the UK Ministry of Justice’s Public Defender Service, potentially compromising long‑term legal records and personal information.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-15T08:06:47.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/uk-legal-aid-agency-hackers-stole-records-dating-back-to-1978/",
-    "additionalSources": []
   },
   {
     "id": "https://cybersecuritynews.com/best-dlp-software/",
@@ -377,24 +547,6 @@
     "publishedAt": "2026-10-15T07:00:00.000Z",
     "url": "https://www.darkreading.com/ics-ot-security/eu-grocers-unpatched-fridge-firmware",
     "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/fake-chrome-app/",
-    "sourceUrl": "https://cybersecuritynews.com/fake-chrome-app/",
-    "title": "Fake Chrome App on Google Play Draws 100,000+ Downloads",
-    "headline": "Fake Chrome App on Google Play Draws 100,000+ Downloads",
-    "summary": "A counterfeit Google Chrome application was listed on Google Play, mimicking Chrome’s name, icon, and description. The fake app, developed by Hizbartech, attracted over 100,000 downloads and appeared above the legitimate browser as a sponsored result. The listing raises concerns about app vetting and paid search visibility.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-15T06:03:34.000Z",
-    "url": "https://cybersecuritynews.com/fake-chrome-app/",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/multiple-google-chrome-vulnerabilities/"
-      }
-    ]
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/10/15/michael-scott-immuta-ai-agent-permissions/",
@@ -517,24 +669,6 @@
     "publishedAt": "2026-10-14T20:13:53.000Z",
     "url": "https://www.wiz.io/blog/aspm-ai-era-pt-1-centralize-appsec-scanners",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/threat-intelligence/new-anthropic-sneakpeek-silent-zero-click-threat",
-    "sourceUrl": "https://www.darkreading.com/threat-intelligence/new-anthropic-sneakpeek-silent-zero-click-threat",
-    "title": "Anthropic SneakPeek Bug Enables Silent Credential Theft",
-    "headline": "Anthropic SneakPeek Bug Enables Silent Credential Theft",
-    "summary": "A flaw in Claude Code Desktop’s preview pane lets attackers silently capture developers’ credentials, including SSH private keys, AWS credentials, and Claude 0Auth tokens, without user interaction. The zero‑click vulnerability can be exploited remotely, posing a high‑risk threat to developers’ accounts.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-14T20:09:42.000Z",
-    "url": "https://www.darkreading.com/threat-intelligence/new-anthropic-sneakpeek-silent-zero-click-threat",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/sap-discloses-critical-cvss-10-flaw-in.html"
-      }
-    ]
   },
   {
     "id": "https://www.bleepingcomputer.com/news/security/fbi-raids-dprk-it-worker-laptop-farms-in-texas-us-nationals-arrested/",
@@ -5076,161 +5210,6 @@
     "source": "Schneier on Security",
     "publishedAt": "2026-10-01T11:06:14.000Z",
     "url": "https://www.schneier.com/blog/archives/2026/10/connected-cars-are-a-surveillance-platform.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/treasury-blacklists-most-wanted-atm-malware-developer-and-his-network/",
-    "sourceUrl": "https://www.securityweek.com/treasury-blacklists-most-wanted-atm-malware-developer-and-his-network/",
-    "title": "Treasury Blacklists ATM Malware Developer Tren de Aragua",
-    "headline": "Treasury Blacklists ATM Malware Developer Tren de Aragua",
-    "summary": "The U.S. Treasury has blacklisted Tren de Aragua, the developer behind an ATM jackpotting malware network. The action follows investigations into the developer’s scheme to hijack ATMs for illicit cash withdrawals. The blacklist aims to curb further criminal activity and protect banking infrastructure.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-01T10:51:39.000Z",
-    "url": "https://www.securityweek.com/treasury-blacklists-most-wanted-atm-malware-developer-and-his-network/",
-    "additionalSources": [
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/us-sanctions-10-atm-jackpotting-tren-de-aragua"
-      }
-    ]
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/openai-disrupts-reasoning-extraction.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/openai-disrupts-reasoning-extraction.html",
-    "title": "OpenAI Disrupts Moonshot AI Reasoning Extraction Campaign",
-    "headline": "OpenAI Disrupts Moonshot AI Reasoning Extraction Campaign",
-    "summary": "OpenAI identified and disrupted a coordinated distillation campaign targeting its AI models to illicitly extract protected reasoning. The activity, traced back to July, was linked to individuals associated with Moonshot AI, a Beijing-based Chinese company. OpenAI’s intervention halted the campaign and protected model integrity.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-01T10:42:36.000Z",
-    "url": "https://thehackernews.com/2026/10/openai-disrupts-reasoning-extraction.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://blog.talosintelligence.com/the-fine-art-of-frustrating-the-adversary/",
-    "sourceUrl": "https://blog.talosintelligence.com/the-fine-art-of-frustrating-the-adversary/",
-    "title": "Cisco Talos Shares Tactics to Slow Down Adversaries",
-    "headline": "Cisco Talos Shares Tactics to Slow Down Adversaries",
-    "summary": "Cisco Talos researchers outline eight practical methods to frustrate attackers, including deception, behavioral detection, breaking attack dependencies, and resisting manufactured urgency. These techniques aim to delay adversaries, increase risk, and force them into less effective moves, enhancing overall security posture.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cisco Talos",
-    "publishedAt": "2026-10-01T10:00:05.000Z",
-    "url": "https://blog.talosintelligence.com/the-fine-art-of-frustrating-the-adversary/",
-    "additionalSources": [
-      {
-        "source": "Cisco Talos",
-        "sourceUrl": "https://blog.talosintelligence.com/china-nexus-uat-11587-targets-government-and-policy-organizations-across-asia-with-antino-backdoor/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/hackers-breach-pentagon-human-resources-management-system-steal-data-of-nearly-3-million-people/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-breach-pentagon-human-resources-management-system-steal-data-of-nearly-3-million-people/",
-    "title": "Pentagon Personnel Records Breached, 3 Million+ Stolen",
-    "headline": "Pentagon Personnel Records Breached, 3 Million+ Stolen",
-    "summary": "Hackers breached the Pentagon’s Defense Manpower Data Center, stealing personal records of over three million military personnel. The breach exposed sensitive HR data, prompting the Pentagon to notify affected service members and initiate investigations into the unauthorized access.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-01T09:44:28.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/hackers-breach-pentagon-human-resources-management-system-steal-data-of-nearly-3-million-people/",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/pentagon-personnel-agency-data-breach-impacts-3-million-people/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/01/blackfog-adx-vision-2-0/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/blackfog-adx-vision-2-0/",
-    "title": "BlackFog Launches ADX Vision 2.0 for Agentic AI Governance",
-    "headline": "BlackFog Launches ADX Vision 2.0 for Agentic AI Governance",
-    "summary": "BlackFog has released ADX Vision 2.0, a new platform that extends its AI security suite to protect and govern generative and agentic AI usage within enterprises. The solution offers prompt protection, governance controls, and monitoring to mitigate risks such as prompt injection, unauthorized data exposure, and decision‑making errors by AI agents.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-01T07:25:53.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/01/blackfog-adx-vision-2-0/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/apple-coregraphics-poc-emerges-as.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/apple-coregraphics-poc-emerges-as.html",
-    "title": "Apple CoreGraphics CVE-2026-86950 Exploited via Malicious PDF",
-    "headline": "Apple CoreGraphics CVE-2026-86950 Exploited via Malicious PDF",
-    "summary": "Security researchers released a proof‑of‑concept for CVE-2026-86950, a memory‑corruption flaw in Apple CoreGraphics. A crafted PDF with an embedded font can crash unpatched iPhones and Macs. The vulnerability triggers a crash, not code execution, and is not yet confirmed in the wild.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-01T05:54:41.000Z",
-    "url": "https://thehackernews.com/2026/10/apple-coregraphics-poc-emerges-as.html",
-    "additionalSources": [
-      {
-        "source": "CISA",
-        "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/09/29/cisa-adds-one-known-exploited-vulnerability-catalog"
-      }
-    ]
-  },
-  {
-    "id": "https://isc.sans.edu/diary/rss/33388",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33388",
-    "title": "ScreenConnect Client Abused by Attackers",
-    "headline": "ScreenConnect Client Abused by Attackers",
-    "summary": "Threat actors are exploiting the ScreenConnect client, a legitimate remote‑access tool, to conduct attacks. The misuse involves leveraging the software’s legitimate features for malicious purposes, potentially enabling unauthorized remote sessions and data exfiltration. No specific vulnerability or CVE is cited.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "SANS Internet Storm Center",
-    "publishedAt": "2026-10-01T05:32:13.000Z",
-    "url": "https://isc.sans.edu/diary/rss/33388",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/01/ai-soc-entry-jobs/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/ai-soc-entry-jobs/",
-    "title": "AI in SOC May Reduce Entry-Level Job Opportunities",
-    "headline": "AI in SOC May Reduce Entry-Level Job Opportunities",
-    "summary": "The integration of AI tools in security operations centers automates repetitive tasks such as phishing detection and malware pattern recognition, potentially decreasing the need for junior analysts. This trend could make entry‑level SOC positions harder to secure as automation replaces routine analysis work.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-01T05:30:08.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/01/ai-soc-entry-jobs/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/bitget-confirms-third-party-zero-day.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/bitget-confirms-third-party-zero-day.html",
-    "title": "Bitget Confirms Third-Party Zero-Day Used in $387.5 Million Crypto Theft",
-    "headline": "Bitget Confirms Third-Party Zero-Day Used in $387.5 Million Crypto Theft",
-    "summary": "Bitget confirmed attackers stole $387.5 million by exploiting a zero‑day flaw in third‑party security products. SlowMist investigation identified malicious activity and a customized tool used by the attacker. No CVE ID was disclosed.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-01T05:21:10.000Z",
-    "url": "https://thehackernews.com/2026/10/bitget-confirms-third-party-zero-day.html",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/bitget-hacked-via-zero-day-in-third-party-security-products/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/01/google-ai-discovered-vulnerabilities-remote-code-execution/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/google-ai-discovered-vulnerabilities-remote-code-execution/",
-    "title": "AI-Identified Vulnerabilities Rapidly Exploited",
-    "headline": "AI-Identified Vulnerabilities Rapidly Exploited",
-    "summary": "Researchers found that attackers quickly exploit vulnerabilities discovered by AI agents, with exploitation occurring within four days of public disclosure. Analysis of January 2025 to August 2026 data shows disclosure rates doubled, yet exploitation remains rare, highlighting the speed at which high‑profile flaws are targeted.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-01T05:00:35.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/01/google-ai-discovered-vulnerabilities-remote-code-execution/",
     "additionalSources": []
   }
 ]
