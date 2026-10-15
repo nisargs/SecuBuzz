@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Oct 2026 20:19:59 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 21:42:08 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Federal Bankruptcy Courts Face Outages After Contractor Cyberattack</title>
+      <link>https://secubuzz.com/news/federal-bankruptcy-courts-face-outages-after-contr-538ae8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/federal-bankruptcy-courts-face-outages-after-contr-538ae8</guid>
+      <description><![CDATA[A government contractor cyberattack has halted all production of bankruptcy notices, causing widespread outages in federal bankruptcy courts. The incident disrupted court operations and delayed notice issuance, but no data breach or credential theft has been reported. No specific vulnerability or CVE is named.]]></description>
+      <pubDate>Thu, 15 Oct 2026 20:46:00 GMT</pubDate>
+      <source url="https://therecord.media/federal-bankruptcy-courts-dealing-with-cyberattack-outage">The Record</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Hackers Exploit Collabora RCE Flaw to Backdoor Nextcloud Servers</title>
+      <link>https://secubuzz.com/news/hackers-exploit-collabora-rce-flaw-to-backdoor-nex-30d9eb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-collabora-rce-flaw-to-backdoor-nex-30d9eb</guid>
+      <description><![CDATA[Threat actors are exploiting a critical command execution flaw, CVE-2026-110447, in Collabora Online’s Built‑in CODE Server app for Nextcloud. The vulnerability allows remote code execution on affected servers, enabling attackers to install backdoors and compromise data. Immediate patching of the Collabora app is required to mitigate the risk.]]></description>
+      <pubDate>Thu, 15 Oct 2026 20:25:04 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/hackers-exploit-collabora-rce-flaw-to-backdoor-nextcloud-servers/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Critical PwnEscape Linux Kernel Vulnerability Lets Guest VMs Read Host Memory</title>
+      <link>https://secubuzz.com/news/critical-pwnescape-linux-kernel-vulnerability-lets-7b90a4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/critical-pwnescape-linux-kernel-vulnerability-lets-7b90a4</guid>
+      <description><![CDATA[A newly disclosed critical flaw, CVE-2026-99999, nicknamed PwnEscape, in the Linux kernel’s networking code allows code running inside a virtual machine to read memory on the host system. The vulnerability was demonstrated against Vercel’s live cloud sandboxes. Patching the kernel to the latest version is essential to prevent memory leaks.]]></description>
+      <pubDate>Thu, 15 Oct 2026 20:24:36 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/critical-pwnescape-linux-kernel.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Google Deploys AI‑Powered Defenses for Android Scam Messages and Call‑Forwarding Abuse</title>
       <link>https://secubuzz.com/news/google-deploys-ai-powered-defenses-for-android-sca-4dcec5</link>
@@ -23,15 +50,6 @@
       <description><![CDATA[Researchers report that a zero‑click spyware variant now infects devices worldwide through targeted online advertisements. The malware activates without user interaction, enabling covert surveillance and data exfiltration. No CVE is cited, but the exploit chain demonstrates a high‑severity vulnerability that can compromise user privacy and device integrity.]]></description>
       <pubDate>Thu, 15 Oct 2026 19:00:00 GMT</pubDate>
       <source url="https://therecord.media/spyware-citizen-lab-advertising">The Record</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Adobe RCE, DNS Wallet Theft, NVIDIA Container Escape, Self‑Healing Backdoor and 23 Other Threats</title>
-      <link>https://secubuzz.com/news/adobe-rce-dns-wallet-theft-nvidia-container-escape-3038f2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/adobe-rce-dns-wallet-theft-nvidia-container-escape-3038f2</guid>
-      <description><![CDATA[Security researchers uncovered multiple vulnerabilities, including an Adobe remote code execution flaw, a DNS wallet theft vector, an NVIDIA container escape, and a self‑healing backdoor. The exploits demonstrate how small permission gaps can lead to data theft, credential misuse, and persistent malicious persistence across diverse platforms.]]></description>
-      <pubDate>Thu, 15 Oct 2026 18:49:33 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/threatsday-adobe-rce-dns-wallet-theft.html">The Hacker News</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -123,15 +141,6 @@
       <pubDate>Thu, 15 Oct 2026 15:17:18 GMT</pubDate>
       <source url="https://www.darkreading.com/cybersecurity-operations/vulnerability-management-isnt-about-the-score-its-about-how-it-applies-to-you">Dark Reading</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Citrix XenServer Vulnerabilities Enable Host Compromise from Inside VMs</title>
-      <link>https://secubuzz.com/news/citrix-xenserver-vulnerabilities-enable-host-compr-51a5d9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/citrix-xenserver-vulnerabilities-enable-host-compr-51a5d9</guid>
-      <description><![CDATA[Citrix disclosed four high-severity vulnerabilities in XenServer 8.4 and 9 that allow a malicious user with elevated VM rights to compromise or crash the host system. The bulletin CTX697170 details the flaws and recommends applying the vendor’s patches.]]></description>
-      <pubDate>Thu, 15 Oct 2026 14:42:47 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/citrix-xenserver-vulnerabilities/">Cyber Security News</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>Hackers Deploy ClickFix and Python Tunnels to Enable Ransomware Attacks</title>
@@ -446,15 +455,6 @@
       <description><![CDATA[Optro has added autonomous AI agents to its Governance, Risk, and Compliance platform, enabling risk teams to automate workflows while maintaining audit trails. Each agent action, decision, model entry, and evidence is logged and cited, ensuring transparency and compliance with team‑defined guardrails.]]></description>
       <pubDate>Thu, 15 Oct 2026 07:43:54 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/15/optro-grc-intelligence-platform/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Qualys Launches TruConfidence for Automated Cyber Risk Remediation</title>
-      <link>https://secubuzz.com/news/qualys-launches-truconfidence-for-automated-cyber-45ee20</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/qualys-launches-truconfidence-for-automated-cyber-45ee20</guid>
-      <description><![CDATA[Qualys unveiled TruRisk Eliminate 2.0 with TruConfidence, an orchestration engine that automates remediation at machine speed. The platform leverages AI to manage patch deployment, achieving 40% autonomous rollouts with less than 0.1% rollback. It aims to streamline cyber risk elimination for enterprises.]]></description>
-      <pubDate>Thu, 15 Oct 2026 07:31:41 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/15/qualys-trurisk-eliminate-2-0-truconfidence/">Help Net Security</source>
       <category>Policy</category>
     </item>
   </channel>

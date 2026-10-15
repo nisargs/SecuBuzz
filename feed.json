@@ -1,5 +1,54 @@
 [
   {
+    "id": "https://therecord.media/federal-bankruptcy-courts-dealing-with-cyberattack-outage",
+    "sourceUrl": "https://therecord.media/federal-bankruptcy-courts-dealing-with-cyberattack-outage",
+    "title": "Federal Bankruptcy Courts Face Outages After Contractor Cyberattack",
+    "headline": "Federal Bankruptcy Courts Face Outages After Contractor Cyberattack",
+    "summary": "A government contractor cyberattack has halted all production of bankruptcy notices, causing widespread outages in federal bankruptcy courts. The incident disrupted court operations and delayed notice issuance, but no data breach or credential theft has been reported. No specific vulnerability or CVE is named.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "publishedAt": "2026-10-15T20:46:00.000Z",
+    "url": "https://therecord.media/federal-bankruptcy-courts-dealing-with-cyberattack-outage",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/hackers-exploit-collabora-rce-flaw-to-backdoor-nextcloud-servers/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-collabora-rce-flaw-to-backdoor-nextcloud-servers/",
+    "title": "Hackers Exploit Collabora RCE Flaw to Backdoor Nextcloud Servers",
+    "headline": "Hackers Exploit Collabora RCE Flaw to Backdoor Nextcloud Servers",
+    "summary": "Threat actors are exploiting a critical command execution flaw, CVE-2026-110447, in Collabora Online’s Built‑in CODE Server app for Nextcloud. The vulnerability allows remote code execution on affected servers, enabling attackers to install backdoors and compromise data. Immediate patching of the Collabora app is required to mitigate the risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-15T20:25:04.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-collabora-rce-flaw-to-backdoor-nextcloud-servers/",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/threatsday-adobe-rce-dns-wallet-theft.html"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/critical-pwnescape-linux-kernel.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/critical-pwnescape-linux-kernel.html",
+    "title": "Critical PwnEscape Linux Kernel Vulnerability Lets Guest VMs Read Host Memory",
+    "headline": "Critical PwnEscape Linux Kernel Vulnerability Lets Guest VMs Read Host Memory",
+    "summary": "A newly disclosed critical flaw, CVE-2026-99999, nicknamed PwnEscape, in the Linux kernel’s networking code allows code running inside a virtual machine to read memory on the host system. The vulnerability was demonstrated against Vercel’s live cloud sandboxes. Patching the kernel to the latest version is essential to prevent memory leaks.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-15T20:24:36.000Z",
+    "url": "https://thehackernews.com/2026/10/critical-pwnescape-linux-kernel.html",
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/citrix-xenserver-vulnerabilities/"
+      }
+    ]
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/android-gets-ai-defenses-against-messaging-scams-fake-calls/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/android-gets-ai-defenses-against-messaging-scams-fake-calls/",
     "title": "Google Deploys AI‑Powered Defenses for Android Scam Messages and Call‑Forwarding Abuse",
@@ -29,19 +78,6 @@
         "sourceUrl": "https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html"
       }
     ]
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/threatsday-adobe-rce-dns-wallet-theft.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/threatsday-adobe-rce-dns-wallet-theft.html",
-    "title": "Adobe RCE, DNS Wallet Theft, NVIDIA Container Escape, Self‑Healing Backdoor and 23 Other Threats",
-    "headline": "Adobe RCE, DNS Wallet Theft, NVIDIA Container Escape, Self‑Healing Backdoor and 23 Other Threats",
-    "summary": "Security researchers uncovered multiple vulnerabilities, including an Adobe remote code execution flaw, a DNS wallet theft vector, an NVIDIA container escape, and a self‑healing backdoor. The exploits demonstrate how small permission gaps can lead to data theft, credential misuse, and persistent malicious persistence across diverse platforms.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-15T18:49:33.000Z",
-    "url": "https://thehackernews.com/2026/10/threatsday-adobe-rce-dns-wallet-theft.html",
-    "additionalSources": []
   },
   {
     "id": "https://www.bleepingcomputer.com/news/security/hackers-hijack-d-link-ubiquiti-devices-to-resell-your-stolen-bandwidth/",
@@ -196,19 +232,6 @@
     "source": "Dark Reading",
     "publishedAt": "2026-10-15T15:17:18.000Z",
     "url": "https://www.darkreading.com/cybersecurity-operations/vulnerability-management-isnt-about-the-score-its-about-how-it-applies-to-you",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/citrix-xenserver-vulnerabilities/",
-    "sourceUrl": "https://cybersecuritynews.com/citrix-xenserver-vulnerabilities/",
-    "title": "Citrix XenServer Vulnerabilities Enable Host Compromise from Inside VMs",
-    "headline": "Citrix XenServer Vulnerabilities Enable Host Compromise from Inside VMs",
-    "summary": "Citrix disclosed four high-severity vulnerabilities in XenServer 8.4 and 9 that allow a malicious user with elevated VM rights to compromise or crash the host system. The bulletin CTX697170 details the flaws and recommends applying the vendor’s patches.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-15T14:42:47.000Z",
-    "url": "https://cybersecuritynews.com/citrix-xenserver-vulnerabilities/",
     "additionalSources": []
   },
   {
@@ -925,19 +948,6 @@
     "source": "BleepingComputer",
     "publishedAt": "2026-10-14T17:46:50.000Z",
     "url": "https://www.bleepingcomputer.com/news/security/ledger-asks-sellers-across-asia-to-halt-sales-after-supply-chain-attack/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/hackers-backdoor-nextcloud-servers.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/hackers-backdoor-nextcloud-servers.html",
-    "title": "Critical Backdoor in Collabora CODE App Enables Web Shells on Nextcloud",
-    "headline": "Critical Backdoor in Collabora CODE App Enables Web Shells on Nextcloud",
-    "summary": "A flaw in Collabora Online’s Built‑in CODE Server, an optional Nextcloud app, lets attackers plant web shells that run with the web server’s privileges. The vulnerability was first logged on September 10, enabling remote command execution via web requests. Administrators should update or disable the app immediately to prevent exploitation.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-14T17:38:31.000Z",
-    "url": "https://thehackernews.com/2026/10/hackers-backdoor-nextcloud-servers.html",
     "additionalSources": []
   },
   {
