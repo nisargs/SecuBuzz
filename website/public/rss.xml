@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Oct 2026 17:21:28 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 18:20:04 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Q3 Vulnerability Pulse Highlights Discovery vs Exploitation Trends</title>
+      <link>https://secubuzz.com/news/q3-vulnerability-pulse-highlights-discovery-vs-exp-59c4d1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/q3-vulnerability-pulse-highlights-discovery-vs-exp-59c4d1</guid>
+      <description><![CDATA[Thor reviews Q3 trends, noting a gap between vulnerability discovery and exploitation. The newsletter covers recent CVE and KEV data, questioning if the industry faces a "Bugmageddon." It offers insights into how many reported flaws remain unexploited, guiding defensive priorities.]]></description>
+      <pubDate>Thu, 15 Oct 2026 18:00:00 GMT</pubDate>
+      <source url="https://blog.talosintelligence.com/the-q3-vulnerability-pulse-discovery-exploitation/">Cisco Talos</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Contextual Defense Is Key to Stopping Modern Cyberattacks</title>
+      <link>https://secubuzz.com/news/contextual-defense-is-key-to-stopping-modern-cyber-61b6e2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/contextual-defense-is-key-to-stopping-modern-cyber-61b6e2</guid>
+      <description><![CDATA[The article stresses that contextual defense enables teams to link threat signals, anticipate attacks, and intervene before escalation. By integrating contextual data, security operations can prioritize responses and reduce the impact of emerging cyber threats.]]></description>
+      <pubDate>Thu, 15 Oct 2026 17:42:50 GMT</pubDate>
+      <source url="https://www.securityweek.com/context-is-king-in-the-fight-against-modern-cyberattacks/">SecurityWeek</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>Malicious Arch Linux Packages Distribute Root‑Privilege Malware</title>
       <link>https://secubuzz.com/news/malicious-arch-linux-packages-distribute-root-priv-7aabf7</link>
@@ -438,24 +456,6 @@
       <pubDate>Thu, 15 Oct 2026 05:00:02 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/15/exposed-ai-infrastructure-report/">Help Net Security</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>AI‑Generated Code Causes CI/CD Review Bottlenecks</title>
-      <link>https://secubuzz.com/news/ai-generated-code-causes-ci-cd-review-bottlenecks-6c6e7e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-generated-code-causes-ci-cd-review-bottlenecks-6c6e7e</guid>
-      <description><![CDATA[JetBrains’ State of CI/CD in 2026 report finds 83.4% of DevOps teams run CI/CD pipelines, with GitHub Actions leading adoption. AI‑generated changes are increasing review workload, creating bottlenecks in software delivery despite widespread use of CI/CD practices.]]></description>
-      <pubDate>Thu, 15 Oct 2026 04:30:50 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/15/jetbrains-ai-software-delivery-report/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Microsoft Discloses Three Active Directory Vulnerabilities Allowing Remote Bypass of Security Feature</title>
-      <link>https://secubuzz.com/news/microsoft-discloses-three-active-directory-vulnera-2b9147</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-discloses-three-active-directory-vulnera-2b9147</guid>
-      <description><![CDATA[Microsoft identified three Active Directory flaws—CVE-2026-69982, CVE-2026-96252, and CVE-2026-108131—that enable remote attackers to bypass a key security feature in Windows domain environments. Administrators should review the Security Update Guide and apply the available fixes promptly to mitigate the risk.]]></description>
-      <pubDate>Thu, 15 Oct 2026 03:51:31 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/multiple-active-directory-vulnerabilities/">Cyber Security News</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

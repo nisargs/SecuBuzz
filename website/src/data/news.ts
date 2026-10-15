@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "q3-vulnerability-pulse-highlights-discovery-vs-exp-59c4d1",
+    "title": "Q3 Vulnerability Pulse Highlights Discovery vs Exploitation Trends",
+    "summary": "Thor reviews Q3 trends, noting a gap between vulnerability discovery and exploitation. The newsletter covers recent CVE and KEV data, questioning if the industry faces a \"Bugmageddon.\" It offers insights into how many reported flaws remain unexploited, guiding defensive priorities.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "Cisco Talos",
+    "sourceUrl": "https://blog.talosintelligence.com/the-q3-vulnerability-pulse-discovery-exploitation/",
+    "publishedAt": "2026-10-15T18:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "q3-vulnerability-pulse-highlights-discovery-vs-exp",
+      "article-59c4d1",
+      "59c4d1",
+      "q3-vulnerability-pulse-highlights-discovery-vs-exploitation-"
+    ]
+  },
+  {
+    "slug": "contextual-defense-is-key-to-stopping-modern-cyber-61b6e2",
+    "title": "Contextual Defense Is Key to Stopping Modern Cyberattacks",
+    "summary": "The article stresses that contextual defense enables teams to link threat signals, anticipate attacks, and intervene before escalation. By integrating contextual data, security operations can prioritize responses and reduce the impact of emerging cyber threats.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/context-is-king-in-the-fight-against-modern-cyberattacks/",
+    "publishedAt": "2026-10-15T17:42:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "contextual-defense-is-key-to-stopping-modern-cyber",
+      "article-61b6e2",
+      "61b6e2",
+      "contextual-defense-is-key-to-stopping-modern-cyberattacks"
+    ]
+  },
+  {
     "slug": "malicious-arch-linux-packages-distribute-root-priv-7aabf7",
     "title": "Malicious Arch Linux Packages Distribute Root‑Privilege Malware",
     "summary": "Threat actors uploaded counterfeit packages to the Arch User Repository, masquerading as popular helper tools yay and paru. Users who installed these packages risk running malware with root privileges, potentially compromising system integrity and data. Arch maintainers have issued a warning and are removing the compromised packages.",
@@ -6240,42 +6276,6 @@ export const news: NewsBrief[] = [
       "ai-search-is-now-generally-available",
       "article-26c82e",
       "26c82e"
-    ]
-  },
-  {
-    "slug": "cloudflare-os-offers-managed-agent-workspaces-396285",
-    "title": "Cloudflare OS Offers Managed Agent Workspaces",
-    "summary": "Cloudflare OS provides every employee with a managed agent workspace that understands company workflows and connects to internal data and systems. The service is now available via a waitlist for fully managed deployments that can be launched with a few clicks.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/managed-cloudflare-os/",
-    "publishedAt": "2026-10-01T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-os-offers-managed-agent-workspaces",
-      "article-396285",
-      "396285"
-    ]
-  },
-  {
-    "slug": "zimbra-cve-2026-73570-exploited-via-crafted-emails-3dc4dc",
-    "title": "Zimbra CVE-2026-73570 Exploited via Crafted Emails",
-    "summary": "A zero‑day flaw, CVE-2026-73570, in Zimbra allows attackers to execute code by sending specially crafted emails without user interaction. The vulnerability was actively exploited before public disclosure, enabling remote code execution on affected servers. Patching Zimbra to the latest release mitigates the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/zimbra-vulnerability-exploited-in-the-wild-prior-to-public-disclosure/",
-    "publishedAt": "2026-10-01T12:55:57.000Z",
-    "cves": [
-      "CVE-2026-73570"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zimbra-cve-2026-73570-exploited-via-crafted-emails",
-      "article-3dc4dc",
-      "3dc4dc"
     ]
   }
 ];
