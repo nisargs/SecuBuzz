@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "uat-6275-detect-and-block-kazakhstan-nexus-reverse-66a437",
+    "title": "UAT-6275: Detect and Block Kazakhstan-Nexus Reverse Shells",
+    "summary": "Cisco Talos identified UAT-6275, a Kazakhstan-based threat actor that uses WinRAR exploits and the PickleShell tool to establish reverse shells targeting CIS governments. The report outlines detection indicators and defensive measures to block these malicious connections.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/uat-6275-kazakhstan-nexus-reverse-shells-defense",
+    "publishedAt": "2026-10-15T00:26:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "uat-6275-detect-and-block-kazakhstan-nexus-reverse",
+      "article-66a437",
+      "66a437",
+      "uat-6275-detect-and-block-kazakhstan-nexus-reverse-shells"
+    ]
+  },
+  {
+    "slug": "microsoft-disrupts-yam-store-and-storm-3119-phishi-70776b",
+    "title": "Microsoft Disrupts YAM Store and Storm-3119 Phishing Network",
+    "summary": "Microsoft shut down YAM Store and the Storm-3119 network, which sent about 1 billion phishing messages. The disruption stops the delivery of malicious emails to enterprise clouds and helps defenders block future phishing attempts by identifying and blocking the network’s infrastructure.",
+    "category": "Cloud",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/yam-store-storm-3119-phishing-network-defense",
+    "publishedAt": "2026-10-15T00:05:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-disrupts-yam-store-and-storm-3119-phishi",
+      "article-70776b",
+      "70776b",
+      "microsoft-disrupts-yam-store-and-storm-3119-phishing-network"
+    ]
+  },
+  {
     "slug": "palo-alto-networks-issues-patch-for-exploited-pan-1487d7",
     "title": "Palo Alto Networks Issues Patch for Exploited PAN-OS RCE Vulnerability CVE-2026-0322",
     "summary": "Palo Alto Networks has released a patch for the high‑severity PAN‑OS remote code execution flaw identified as CVE‑2026‑0322. The vulnerability, which has been actively exploited against firewalls, allows attackers to execute arbitrary code with administrative privileges. Users must apply the update immediately to prevent potential compromise.",
@@ -109,24 +145,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "yam-store-supplies-phishing-kits-for-over-1-billio-dd8841",
-    "title": "Yam Store Supplies Phishing Kits for Over 1 Billion Messages",
-    "summary": "Yam Store, a cybercrime marketplace, provided cloud infrastructure and phishing kits that enabled more than 1 billion phishing emails worldwide. The kits facilitated credential harvesting and fraud, amplifying the reach of phishing campaigns across global users.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/yam-store-phishing-network-behind-billion-messages",
-    "publishedAt": "2026-10-14T20:57:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "yam-store-supplies-phishing-kits-for-over-1-billio",
-      "article-dd8841",
-      "dd8841",
-      "yam-store-supplies-phishing-kits-for-over-1-billion-messages"
-    ]
-  },
-  {
     "slug": "brooklyn-da-s-office-disrupts-crypto-scam-targetin-399b31",
     "title": "Brooklyn DA’s Office Disrupts Crypto Scam Targeting Russian Community",
     "summary": "Russian-speaking Brooklyn residents reported a cryptocurrency fraud scheme to local authorities. The district attorney’s office launched an operation that seized the scam’s servers and domains, effectively shutting down the fraudulent activity. No data breach was reported.",
@@ -214,24 +232,6 @@ export const news: NewsBrief[] = [
       "article-6e3602",
       "6e3602",
       "fbi-seizes-laptops-used-by-north-korean-remote-it-workers"
-    ]
-  },
-  {
-    "slug": "cisco-secure-email-gateway-vulnerability-allows-ro-69226d",
-    "title": "Cisco Secure Email Gateway Vulnerability Allows Root File Write",
-    "summary": "Cisco warned that attackers exploit a critical flaw in its Secure Email Gateway, enabling unauthenticated senders to write files to the appliance’s operating system via crafted email attachments. Successful exploitation could allow attackers to run commands as root, compromising the gateway’s integrity.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/cisco-warns-of-active-attacks.html",
-    "publishedAt": "2026-10-14T18:38:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisco-secure-email-gateway-vulnerability-allows-ro",
-      "article-69226d",
-      "69226d",
-      "cisco-secure-email-gateway-vulnerability-allows-root-file-wr"
     ]
   },
   {
@@ -339,6 +339,24 @@ export const news: NewsBrief[] = [
       "ai-worms-could-spread-across-smart-devices",
       "article-7dfb15",
       "7dfb15"
+    ]
+  },
+  {
+    "slug": "mssps-face-tier-1-bottlenecks-that-reduce-profit-m-a5109d",
+    "title": "MSSPs Face Tier 1 Bottlenecks That Reduce Profit Margins",
+    "summary": "MSSPs are overwhelmed by rising alert volumes, causing analysts to spend excessive time triaging and escalating cases. The inefficiency leads to slower response times and higher operational costs, eroding profit margins as firms struggle to manage increasing client demands.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/how-mssps-can-cut-tier-1-bottlenecks-eating-into-profit-margins/",
+    "publishedAt": "2026-10-14T16:29:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "mssps-face-tier-1-bottlenecks-that-reduce-profit-m",
+      "article-a5109d",
+      "a5109d",
+      "mssps-face-tier-1-bottlenecks-that-reduce-profit-margins"
     ]
   },
   {
@@ -551,24 +569,6 @@ export const news: NewsBrief[] = [
       "article-39d58a",
       "39d58a",
       "poc-released-for-linux-vhost-flaw-enabling-root-privilege-es"
-    ]
-  },
-  {
-    "slug": "law-enforcement-takedown-of-global-phishing-networ-2ac277",
-    "title": "Law Enforcement Takedown of Global Phishing Network",
-    "summary": "Law enforcement agencies and partners worldwide disrupted a cybercriminal ecosystem that sent over a billion phishing messages to more than 75,000 organizations in 150 countries, shutting down the network that facilitated the attacks.",
-    "category": "Policy",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/global-takedown-hits-network-behind-1-billion-phishing-messages/",
-    "publishedAt": "2026-10-14T13:12:52.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "law-enforcement-takedown-of-global-phishing-networ",
-      "article-2ac277",
-      "2ac277",
-      "law-enforcement-takedown-of-global-phishing-network"
     ]
   },
   {

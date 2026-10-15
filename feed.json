@@ -1,5 +1,45 @@
 [
   {
+    "id": "https://cybernewsai.com/blog/uat-6275-kazakhstan-nexus-reverse-shells-defense",
+    "sourceUrl": "https://cybernewsai.com/blog/uat-6275-kazakhstan-nexus-reverse-shells-defense",
+    "title": "UAT-6275: Detect and Block Kazakhstan-Nexus Reverse Shells",
+    "headline": "UAT-6275: Detect and Block Kazakhstan-Nexus Reverse Shells",
+    "summary": "Cisco Talos identified UAT-6275, a Kazakhstan-based threat actor that uses WinRAR exploits and the PickleShell tool to establish reverse shells targeting CIS governments. The report outlines detection indicators and defensive measures to block these malicious connections.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-10-15T00:26:22.000Z",
+    "url": "https://cybernewsai.com/blog/uat-6275-kazakhstan-nexus-reverse-shells-defense",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/cisco-warns-of-active-attacks.html"
+      }
+    ]
+  },
+  {
+    "id": "https://cybernewsai.com/blog/yam-store-storm-3119-phishing-network-defense",
+    "sourceUrl": "https://cybernewsai.com/blog/yam-store-storm-3119-phishing-network-defense",
+    "title": "Microsoft Disrupts YAM Store and Storm-3119 Phishing Network",
+    "headline": "Microsoft Disrupts YAM Store and Storm-3119 Phishing Network",
+    "summary": "Microsoft shut down YAM Store and the Storm-3119 network, which sent about 1 billion phishing messages. The disruption stops the delivery of malicious emails to enterprise clouds and helps defenders block future phishing attempts by identifying and blocking the network’s infrastructure.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-10-15T00:05:58.000Z",
+    "url": "https://cybernewsai.com/blog/yam-store-storm-3119-phishing-network-defense",
+    "additionalSources": [
+      {
+        "source": "Dark Reading",
+        "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/yam-store-phishing-network-behind-billion-messages"
+      },
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/global-takedown-hits-network-behind-1-billion-phishing-messages/"
+      }
+    ]
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-pan-os-rce-flaw-exploited-in-attacks/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-pan-os-rce-flaw-exploited-in-attacks/",
     "title": "Palo Alto Networks Issues Patch for Exploited PAN-OS RCE Vulnerability CVE-2026-0322",
@@ -84,24 +124,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.darkreading.com/cyberattacks-data-breaches/yam-store-phishing-network-behind-billion-messages",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/yam-store-phishing-network-behind-billion-messages",
-    "title": "Yam Store Supplies Phishing Kits for Over 1 Billion Messages",
-    "headline": "Yam Store Supplies Phishing Kits for Over 1 Billion Messages",
-    "summary": "Yam Store, a cybercrime marketplace, provided cloud infrastructure and phishing kits that enabled more than 1 billion phishing emails worldwide. The kits facilitated credential harvesting and fraud, amplifying the reach of phishing campaigns across global users.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-14T20:57:16.000Z",
-    "url": "https://www.darkreading.com/cyberattacks-data-breaches/yam-store-phishing-network-behind-billion-messages",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/microsoft-disrupts-3-phishing-kits.html"
-      }
-    ]
-  },
-  {
     "id": "https://therecord.media/brooklyn-da-server-takedowns-crypto-scam-russian-speakers",
     "sourceUrl": "https://therecord.media/brooklyn-da-server-takedowns-crypto-scam-russian-speakers",
     "title": "Brooklyn DA’s Office Disrupts Crypto Scam Targeting Russian Community",
@@ -177,28 +199,6 @@
       {
         "source": "The Record",
         "sourceUrl": "https://therecord.media/microsoft-takes-down-3-major-chinese-phishing-platforms"
-      }
-    ]
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/cisco-warns-of-active-attacks.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/cisco-warns-of-active-attacks.html",
-    "title": "Cisco Secure Email Gateway Vulnerability Allows Root File Write",
-    "headline": "Cisco Secure Email Gateway Vulnerability Allows Root File Write",
-    "summary": "Cisco warned that attackers exploit a critical flaw in its Secure Email Gateway, enabling unauthenticated senders to write files to the appliance’s operating system via crafted email attachments. Successful exploitation could allow attackers to run commands as root, compromising the gateway’s integrity.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-14T18:38:56.000Z",
-    "url": "https://thehackernews.com/2026/10/cisco-warns-of-active-attacks.html",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisco-patches-actively-exploited-secure-email-gateway-zero-day/"
-      },
-      {
-        "source": "CISA",
-        "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/14/cisa-adds-four-known-exploited-vulnerabilities-catalog"
       }
     ]
   },
@@ -289,6 +289,19 @@
         "sourceUrl": "https://www.bleepingcomputer.com/news/security/anthropic-warns-self-replicating-ai-could-spread-to-your-smart-devices/"
       }
     ]
+  },
+  {
+    "id": "https://cybersecuritynews.com/how-mssps-can-cut-tier-1-bottlenecks-eating-into-profit-margins/",
+    "sourceUrl": "https://cybersecuritynews.com/how-mssps-can-cut-tier-1-bottlenecks-eating-into-profit-margins/",
+    "title": "MSSPs Face Tier 1 Bottlenecks That Reduce Profit Margins",
+    "headline": "MSSPs Face Tier 1 Bottlenecks That Reduce Profit Margins",
+    "summary": "MSSPs are overwhelmed by rising alert volumes, causing analysts to spend excessive time triaging and escalating cases. The inefficiency leads to slower response times and higher operational costs, eroding profit margins as firms struggle to manage increasing client demands.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-14T16:29:10.000Z",
+    "url": "https://cybersecuritynews.com/how-mssps-can-cut-tier-1-bottlenecks-eating-into-profit-margins/",
+    "additionalSources": []
   },
   {
     "id": "https://www.securityweek.com/ai-agents-navigate-unfamiliar-ot-systems-and-move-equipment-in-minutes-booz-allen-finds/",
@@ -488,19 +501,6 @@
         "sourceUrl": "https://thehackernews.com/2026/10/ai-found-linux-kernel-flaw-gives-local.html"
       }
     ]
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/global-takedown-hits-network-behind-1-billion-phishing-messages/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/global-takedown-hits-network-behind-1-billion-phishing-messages/",
-    "title": "Law Enforcement Takedown of Global Phishing Network",
-    "headline": "Law Enforcement Takedown of Global Phishing Network",
-    "summary": "Law enforcement agencies and partners worldwide disrupted a cybercriminal ecosystem that sent over a billion phishing messages to more than 75,000 organizations in 150 countries, shutting down the network that facilitated the attacks.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-14T13:12:52.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/global-takedown-hits-network-behind-1-billion-phishing-messages/",
-    "additionalSources": []
   },
   {
     "id": "https://therecord.media/russia-anywayanyday-travel-website-cyberattack",
