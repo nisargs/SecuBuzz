@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Oct 2026 17:27:38 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 18:20:24 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>SentinelOne Blocks APT29 CaptiveCrunch Campaign with Static AI</title>
+      <link>https://secubuzz.com/news/sentinelone-blocks-apt29-captivecrunch-campaign-wi-3ecef8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sentinelone-blocks-apt29-captivecrunch-campaign-wi-3ecef8</guid>
+      <description><![CDATA[SentinelOne’s Static AI prevented APT29’s CaptiveCrunch campaign by detecting and blocking local DNS poisoning and captive portal lures on endpoints. The defense stopped the adversaries from redirecting traffic and luring users into malicious portals, preserving network integrity and preventing credential theft.]]></description>
+      <pubDate>Fri, 16 Oct 2026 18:01:06 GMT</pubDate>
+      <source url="https://www.sentinelone.com/blog/how-sentinelone-blocked-apt29-s-captivecrunch-campaign/">SentinelOne</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Unit 42 Highlights Top Initial Access Vectors in September 2026</title>
+      <link>https://secubuzz.com/news/unit-42-highlights-top-initial-access-vectors-in-s-3aac70</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/unit-42-highlights-top-initial-access-vectors-in-s-3aac70</guid>
+      <description><![CDATA[Unit 42 identified the five most common initial access methods used by adversaries in September 2026, ranking edge exploits, credential abuse, and phishing as the leading vectors. The report outlines how attackers leverage these techniques to breach organizations and recommends mitigation strategies.]]></description>
+      <pubDate>Fri, 16 Oct 2026 17:47:54 GMT</pubDate>
+      <source url="https://unit42.paloaltonetworks.com/top-5-initial-access-vectors-september-2026/">Unit 42</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Cyber Exec Arrested for Extortion, Ledger Wallets Leak Seed Phrases, French Supermarket Fridge Hack</title>
+      <link>https://secubuzz.com/news/cyber-exec-arrested-for-extortion-ledger-wallets-l-5e83dd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cyber-exec-arrested-for-extortion-ledger-wallets-l-5e83dd</guid>
+      <description><![CDATA[Authorities arrested a cyber executive for extortion after a cellular implant in Ledger wallets leaked seed phrases, exposing users to theft. Separately, hackers heated French supermarket fridges to 50°C, disrupting operations. The incidents highlight credential theft and physical device tampering risks.]]></description>
+      <pubDate>Fri, 16 Oct 2026 17:31:01 GMT</pubDate>
+      <source url="https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-42-8">SentinelOne</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Zero-click Ad Attack Delivers Candiru Spyware to Al Jazeera Devices</title>
       <link>https://secubuzz.com/news/zero-click-ad-attack-delivers-candiru-spyware-to-a-4d9b43</link>
@@ -14,6 +41,15 @@
       <description><![CDATA[A zero-click attack used malicious online advertisements to deliver Candiru spyware to Al Jazeera Media Network devices. The attack required only rendering the ads, allowing the spyware to install without user interaction and exfiltrate data. No patch is available yet; users should block malicious ads and monitor for suspicious activity.]]></description>
       <pubDate>Fri, 16 Oct 2026 17:20:03 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/zero-click-attacks-used-targeted-ads-to-deliver-candiru-spyware/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Attackers Tampered with AOMEI Backupper Update Servers to Deliver Backdoor</title>
+      <link>https://secubuzz.com/news/attackers-tampered-with-aomei-backupper-update-ser-4d9074</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/attackers-tampered-with-aomei-backupper-update-ser-4d9074</guid>
+      <description><![CDATA[Attackers altered files on AOMEI Backupper’s update servers between May and July 2026, enabling the backup program to download and execute a backdoor during brief update windows. The supply‑chain compromise could allow attackers to gain persistent access to Windows systems using the compromised backup software.]]></description>
+      <pubDate>Fri, 16 Oct 2026 16:43:39 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/attackers-tampered-with-aomei.html">The Hacker News</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -188,6 +224,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>CISA Adds Two Known Exploited Vulnerabilities to Catalog</title>
+      <link>https://secubuzz.com/news/cisa-adds-two-known-exploited-vulnerabilities-to-c-5b44fd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-two-known-exploited-vulnerabilities-to-c-5b44fd</guid>
+      <description><![CDATA[CISA has added CVE-2025-61624, a path traversal flaw in Fortinet products, and CVE-2026-102764, a BeyondTrust Remote Support authentication bypass, to its Known Exploited Vulnerabilities catalog after evidence of active exploitation. Federal agencies must prioritize rapid remediation under BOD 26-04.]]></description>
+      <pubDate>Fri, 16 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/alerts/2026/10/16/cisa-adds-two-known-exploited-vulnerabilities-catalog">CISA</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>CISA, NIST, NSA Publish Key Practices for Super Intelligence Incident Readiness</title>
       <link>https://secubuzz.com/news/cisa-nist-nsa-publish-key-practices-for-super-inte-3ed665</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cisa-nist-nsa-publish-key-practices-for-super-inte-3ed665</guid>
@@ -314,15 +359,6 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>Top 10 Tokenization Solutions Ranked for 2026</title>
-      <link>https://secubuzz.com/news/top-10-tokenization-solutions-ranked-for-2026-35e2e5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/top-10-tokenization-solutions-ranked-for-2026-35e2e5</guid>
-      <description><![CDATA[A review ranks ten tokenization products for 2026, evaluating their ability to reduce PCI audit scope and preserve analytics on protected data. Protegrity leads in enterprise‑data breadth, while Very Good Security and Thales top the list. The article provides scores and key takeaways for organizations choosing tokenization tools.]]></description>
-      <pubDate>Fri, 16 Oct 2026 08:06:50 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/best-tokenization-solutions/">Cyber Security News</source>
-      <category>Policy</category>
-    </item>
-    <item>
       <title>Microsoft Patches Multiple RCE Flaws in Office</title>
       <link>https://secubuzz.com/news/microsoft-patches-multiple-rce-flaws-in-office-7b7d79</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-patches-multiple-rce-flaws-in-office-7b7d79</guid>
@@ -413,15 +449,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>SecTor 2026 Highlights Rapidly Shifting Cybersecurity Landscape</title>
-      <link>https://secubuzz.com/news/sector-2026-highlights-rapidly-shifting-cybersecur-1aef35</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sector-2026-highlights-rapidly-shifting-cybersecur-1aef35</guid>
-      <description><![CDATA[The SecTor 2026 conference in Toronto closed with record attendance and a 22% growth in participation. Experts discussed emerging risks and critical perspectives on the evolving threat environment, underscoring the need for adaptive security strategies.]]></description>
-      <pubDate>Thu, 15 Oct 2026 22:10:08 GMT</pubDate>
-      <source url="https://www.darkreading.com/cybersecurity-operations/sector-2026-reveals-a-rapidly-shifting-cybersecurity-landscape">Dark Reading</source>
-      <category>Policy</category>
-    </item>
-    <item>
       <title>AI-Powered Espionage Targets Government Linux Systems</title>
       <link>https://secubuzz.com/news/ai-powered-espionage-targets-government-linux-syst-749199</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ai-powered-espionage-targets-government-linux-syst-749199</guid>
@@ -429,33 +456,6 @@
       <pubDate>Thu, 15 Oct 2026 22:00:09 GMT</pubDate>
       <source url="https://unit42.paloaltonetworks.com/ai-campaign-targets-linux-infrastructure/">Unit 42</source>
       <category>Malware</category>
-    </item>
-    <item>
-      <title>F‑Secure Publishes Scam Encyclopedia for Consumers</title>
-      <link>https://secubuzz.com/news/f-secure-publishes-scam-encyclopedia-for-consumers-5a0c7c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/f-secure-publishes-scam-encyclopedia-for-consumers-5a0c7c</guid>
-      <description><![CDATA[F‑Secure has released a victim‑first scam encyclopedia that catalogs over 50 types of consumer fraud. The resource draws on decades of threat intelligence to explain scams from the victim’s perspective and tracks emerging cyber‑crime trends, helping users recognize and avoid new fraud tactics.]]></description>
-      <pubDate>Thu, 15 Oct 2026 21:55:07 GMT</pubDate>
-      <source url="https://www.darkreading.com/threat-intelligence/f-secure-launches-victim-first-scam-encyclopedia-covering-50-types-of-consumer-fraud">Dark Reading</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>AI Slop Dumbing Down Cyberattacks</title>
-      <link>https://secubuzz.com/news/ai-slop-dumbing-down-cyberattacks-6073d9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-slop-dumbing-down-cyberattacks-6073d9</guid>
-      <description><![CDATA[Industry analysts warn that the hype around AI is misleading, as it is actually simplifying cyberattacks. Serious threat actors are largely ignoring AI, suggesting that current AI-driven tools are not yet effective for sophisticated attacks.]]></description>
-      <pubDate>Thu, 15 Oct 2026 20:43:20 GMT</pubDate>
-      <source url="https://www.darkreading.com/threat-intelligence/ai-slop-ruining-cyberattacks">Dark Reading</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Zero‑Click Spyware Spreads via Online Ads, Researchers Warn</title>
-      <link>https://secubuzz.com/news/zero-click-spyware-spreads-via-online-ads-research-31e319</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/zero-click-spyware-spreads-via-online-ads-research-31e319</guid>
-      <description><![CDATA[Researchers report that a zero‑click spyware variant now infects devices worldwide through targeted online advertisements. The malware activates without user interaction, enabling covert surveillance and data exfiltration. No CVE is cited, but the exploit chain demonstrates a high‑severity vulnerability that can compromise user privacy and device integrity.]]></description>
-      <pubDate>Thu, 15 Oct 2026 19:00:00 GMT</pubDate>
-      <source url="https://therecord.media/spyware-citizen-lab-advertising">The Record</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

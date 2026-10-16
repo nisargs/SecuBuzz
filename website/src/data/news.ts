@@ -11,6 +11,60 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "sentinelone-blocks-apt29-captivecrunch-campaign-wi-3ecef8",
+    "title": "SentinelOne Blocks APT29 CaptiveCrunch Campaign with Static AI",
+    "summary": "SentinelOne’s Static AI prevented APT29’s CaptiveCrunch campaign by detecting and blocking local DNS poisoning and captive portal lures on endpoints. The defense stopped the adversaries from redirecting traffic and luring users into malicious portals, preserving network integrity and preventing credential theft.",
+    "category": "Malware",
+    "severity": "LOW",
+    "source": "SentinelOne",
+    "sourceUrl": "https://www.sentinelone.com/blog/how-sentinelone-blocked-apt29-s-captivecrunch-campaign/",
+    "publishedAt": "2026-10-16T18:01:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sentinelone-blocks-apt29-captivecrunch-campaign-wi",
+      "article-3ecef8",
+      "3ecef8",
+      "sentinelone-blocks-apt29-captivecrunch-campaign-with-static-"
+    ]
+  },
+  {
+    "slug": "unit-42-highlights-top-initial-access-vectors-in-s-3aac70",
+    "title": "Unit 42 Highlights Top Initial Access Vectors in September 2026",
+    "summary": "Unit 42 identified the five most common initial access methods used by adversaries in September 2026, ranking edge exploits, credential abuse, and phishing as the leading vectors. The report outlines how attackers leverage these techniques to breach organizations and recommends mitigation strategies.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Unit 42",
+    "sourceUrl": "https://unit42.paloaltonetworks.com/top-5-initial-access-vectors-september-2026/",
+    "publishedAt": "2026-10-16T17:47:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "unit-42-highlights-top-initial-access-vectors-in-s",
+      "article-3aac70",
+      "3aac70",
+      "unit-42-highlights-top-initial-access-vectors-in-september-2"
+    ]
+  },
+  {
+    "slug": "cyber-exec-arrested-for-extortion-ledger-wallets-l-5e83dd",
+    "title": "Cyber Exec Arrested for Extortion, Ledger Wallets Leak Seed Phrases, French Supermarket Fridge Hack",
+    "summary": "Authorities arrested a cyber executive for extortion after a cellular implant in Ledger wallets leaked seed phrases, exposing users to theft. Separately, hackers heated French supermarket fridges to 50°C, disrupting operations. The incidents highlight credential theft and physical device tampering risks.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SentinelOne",
+    "sourceUrl": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-42-8",
+    "publishedAt": "2026-10-16T17:31:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cyber-exec-arrested-for-extortion-ledger-wallets-l",
+      "article-5e83dd",
+      "5e83dd",
+      "cyber-exec-arrested-for-extortion-ledger-wallets-leak-seed-p"
+    ]
+  },
+  {
     "slug": "zero-click-ad-attack-delivers-candiru-spyware-to-a-4d9b43",
     "title": "Zero-click Ad Attack Delivers Candiru Spyware to Al Jazeera Devices",
     "summary": "A zero-click attack used malicious online advertisements to deliver Candiru spyware to Al Jazeera Media Network devices. The attack required only rendering the ads, allowing the spyware to install without user interaction and exfiltrate data. No patch is available yet; users should block malicious ads and monitor for suspicious activity.",
@@ -26,6 +80,24 @@ export const news: NewsBrief[] = [
       "article-4d9b43",
       "4d9b43",
       "zero-click-ad-attack-delivers-candiru-spyware-to-al-jazeera-"
+    ]
+  },
+  {
+    "slug": "attackers-tampered-with-aomei-backupper-update-ser-4d9074",
+    "title": "Attackers Tampered with AOMEI Backupper Update Servers to Deliver Backdoor",
+    "summary": "Attackers altered files on AOMEI Backupper’s update servers between May and July 2026, enabling the backup program to download and execute a backdoor during brief update windows. The supply‑chain compromise could allow attackers to gain persistent access to Windows systems using the compromised backup software.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/attackers-tampered-with-aomei.html",
+    "publishedAt": "2026-10-16T16:43:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "attackers-tampered-with-aomei-backupper-update-ser",
+      "article-4d9074",
+      "4d9074",
+      "attackers-tampered-with-aomei-backupper-update-servers-to-de"
     ]
   },
   {
@@ -369,6 +441,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cisa-adds-two-known-exploited-vulnerabilities-to-c-5b44fd",
+    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+    "summary": "CISA has added CVE-2025-61624, a path traversal flaw in Fortinet products, and CVE-2026-102764, a BeyondTrust Remote Support authentication bypass, to its Known Exploited Vulnerabilities catalog after evidence of active exploitation. Federal agencies must prioritize rapid remediation under BOD 26-04.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/16/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-16T12:00:00.000Z",
+    "cves": [
+      "CVE-2025-61624",
+      "CVE-2026-102764"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-adds-two-known-exploited-vulnerabilities-to-c",
+      "article-5b44fd",
+      "5b44fd",
+      "cisa-adds-two-known-exploited-vulnerabilities-to-catalog"
+    ]
+  },
+  {
     "slug": "cisa-nist-nsa-publish-key-practices-for-super-inte-3ed665",
     "title": "CISA, NIST, NSA Publish Key Practices for Super Intelligence Incident Readiness",
     "summary": "The National Institute of Standards and Technology, the National Security Agency’s Super Intelligence Security Center, and the Cybersecurity and Infrastructure Security Agency have released a set of ten voluntary core practices to help organizations prepare for and respond to super intelligence control incidents. The guidance focuses on pre‑deployment safeguards and human oversight.",
@@ -620,23 +713,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "top-10-tokenization-solutions-ranked-for-2026-35e2e5",
-    "title": "Top 10 Tokenization Solutions Ranked for 2026",
-    "summary": "A review ranks ten tokenization products for 2026, evaluating their ability to reduce PCI audit scope and preserve analytics on protected data. Protegrity leads in enterprise‑data breadth, while Very Good Security and Thales top the list. The article provides scores and key takeaways for organizations choosing tokenization tools.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/best-tokenization-solutions/",
-    "publishedAt": "2026-10-16T08:06:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "top-10-tokenization-solutions-ranked-for-2026",
-      "article-35e2e5",
-      "35e2e5"
-    ]
-  },
-  {
     "slug": "microsoft-patches-multiple-rce-flaws-in-office-7b7d79",
     "title": "Microsoft Patches Multiple RCE Flaws in Office",
     "summary": "Microsoft released a security update addressing more than twenty remote code execution vulnerabilities in Office, along with several information disclosure bugs and a security bypass issue. The patch mitigates the risk of attackers executing arbitrary code or accessing sensitive data within Office applications.",
@@ -811,24 +887,6 @@ export const news: NewsBrief[] = [
       "industry-debate-on-ai-security-approaches",
       "article-57dd7d",
       "57dd7d"
-    ]
-  },
-  {
-    "slug": "sector-2026-highlights-rapidly-shifting-cybersecur-1aef35",
-    "title": "SecTor 2026 Highlights Rapidly Shifting Cybersecurity Landscape",
-    "summary": "The SecTor 2026 conference in Toronto closed with record attendance and a 22% growth in participation. Experts discussed emerging risks and critical perspectives on the evolving threat environment, underscoring the need for adaptive security strategies.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/sector-2026-reveals-a-rapidly-shifting-cybersecurity-landscape",
-    "publishedAt": "2026-10-15T22:10:08.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sector-2026-highlights-rapidly-shifting-cybersecur",
-      "article-1aef35",
-      "1aef35",
-      "sector-2026-highlights-rapidly-shifting-cybersecurity-landsc"
     ]
   },
   {
@@ -1204,26 +1262,6 @@ export const news: NewsBrief[] = [
       "article-b922f0",
       "b922f0",
       "drupal-core-rce-flaw-exploitable-via-contributed-modules-no-"
-    ]
-  },
-  {
-    "slug": "cisa-adds-atlassian-cve-2026-21589-to-known-exploi-1a0f13",
-    "title": "CISA Adds Atlassian CVE-2026-21589 to Known Exploited Vulnerabilities Catalog",
-    "summary": "CISA has added CVE-2026-21589, a vulnerability affecting multiple Atlassian products that allows external parties to access files or directories. Evidence shows active exploitation, posing significant risk to federal enterprises. The addition triggers BOD 26-04, requiring federal agencies to prioritize rapid remediation of this high‑risk vulnerability.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/15/cisa-adds-one-known-exploited-vulnerability-catalog",
-    "publishedAt": "2026-10-15T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-21589"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cisa-adds-atlassian-cve-2026-21589-to-known-exploi",
-      "article-1a0f13",
-      "1a0f13",
-      "cisa-adds-atlassian-cve-2026-21589-to-known-exploited-vulner"
     ]
   },
   {
@@ -6232,41 +6270,6 @@ export const news: NewsBrief[] = [
       "article-1966f4",
       "1966f4",
       "ai-agents-target-us-department-of-education-and-library-and-"
-    ]
-  },
-  {
-    "slug": "google-restricts-android-accessibility-services-to-5134c9",
-    "title": "Google Restricts Android Accessibility Services to Verified Tools Under Advanced Protection",
-    "summary": "Google limits Android accessibility services to verified Accessibility Tools when Advanced Protection is enabled, blocking malicious apps that abuse the API for malware and fraud. The change reduces attack surface for credential theft and financial fraud. Users with Advanced Protection will no longer grant unrestricted access to unverified apps.",
-    "category": "Malware",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/android-17-advanced-protection-locks.html",
-    "publishedAt": "2026-10-02T08:01:30.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-restricts-android-accessibility-services-to",
-      "article-5134c9",
-      "5134c9",
-      "google-restricts-android-accessibility-services-to-verified-"
-    ]
-  },
-  {
-    "slug": "insider-recruitment-threats-target-employee-access-2e7c50",
-    "title": "Insider Recruitment Threats Target Employee Access",
-    "summary": "Cybercriminals are actively recruiting employees to gain legitimate access, enabling them to perform routine actions such as information lookups, account resets, transaction approvals, and shipment changes. These insider services can be sold to criminal customers, increasing the risk of internal compromise and facilitating covert operations within targeted organizations.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/02/intel-471-insider-threat-recruitment-report/",
-    "publishedAt": "2026-10-02T06:00:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "insider-recruitment-threats-target-employee-access",
-      "article-2e7c50",
-      "2e7c50"
     ]
   }
 ];
