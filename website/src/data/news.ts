@@ -11,6 +11,190 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "beyondtrust-issues-patch-for-zero-day-remote-suppo-34637d",
+    "title": "BeyondTrust Issues Patch for Zero-Day Remote Support Flaw",
+    "summary": "BeyondTrust has released a patch for a critical Remote Support flaw that has been exploited in zero‑day attacks since late August. The vulnerability allows attackers to execute arbitrary code on affected systems. Users must update to the latest version immediately to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/beyondtrust-patches-zero-day-exploited-in-attacks-since-august/",
+    "publishedAt": "2026-10-16T06:18:08.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "beyondtrust-issues-patch-for-zero-day-remote-suppo",
+      "article-34637d",
+      "34637d",
+      "beyondtrust-issues-patch-for-zero-day-remote-support-flaw"
+    ]
+  },
+  {
+    "slug": "active-directory-weaknesses-persist-in-small-teams-687e8d",
+    "title": "Active Directory Weaknesses Persist in Small Teams",
+    "summary": "A discussion with intcube CTO David Fuhr highlights why Active Directory vulnerabilities remain open in organizations with only one or two administrators. The interview explains hardening practices such as SMB signing, LDAP signing, and Kerberos hardening, and shows how a 12‑week cohort can systematically secure Windows Server environments.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/16/david-fuhr-intcube-active-directory-security/",
+    "publishedAt": "2026-10-16T06:00:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "active-directory-weaknesses-persist-in-small-teams",
+      "article-687e8d",
+      "687e8d"
+    ]
+  },
+  {
+    "slug": "ghostbat-android-malware-targets-60-indian-banking-5c0f7a",
+    "title": "GhostBat Android Malware Targets 60 Indian Banking and UPI Apps",
+    "summary": "A new GhostBat Android variant exploits Android’s Accessibility Service to monitor activity in 60 banking, UPI, wallet, fintech and payment apps in India, capturing PIN‑like input. Operators also use fake mParivahan and eChallan messages to lure users into installing the malicious app.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/ghostbat-android-malware/",
+    "publishedAt": "2026-10-16T05:33:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ghostbat-android-malware-targets-60-indian-banking",
+      "article-5c0f7a",
+      "5c0f7a",
+      "ghostbat-android-malware-targets-60-indian-banking-and-upi-a"
+    ]
+  },
+  {
+    "slug": "cyber-talent-shortage-us-job-postings-hit-four-yea-480b71",
+    "title": "Cyber Talent Shortage: US Job Postings Hit Four‑Year Low",
+    "summary": "US cybersecurity job postings fell to 235,786 from January through September 2026, the lowest in four years, according to CyberSN. The remaining listings skew toward governance, risk and compliance roles, indicating a shift in hiring focus amid a broader talent shortage.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/16/cybersecurity-job-postings-talent-shortage/",
+    "publishedAt": "2026-10-16T05:30:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cyber-talent-shortage-us-job-postings-hit-four-yea",
+      "article-480b71",
+      "480b71",
+      "cyber-talent-shortage-us-job-postings-hit-four-year-low"
+    ]
+  },
+  {
+    "slug": "stolen-ai-api-keys-fund-autonomous-hacking-tool-376f0a",
+    "title": "Stolen AI API Keys Fund Autonomous Hacking Tool",
+    "summary": "A criminal forum seller markets an autonomous hacking tool that runs on stolen OpenAI, Anthropic, and Google API keys, making key owners pay for scans. Bitsight tracked the trend across 16 underground forums, noting a 67% rise in AI agent mentions and indirect prompt injection from February to August 2026.",
+    "category": "Policy",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/16/stolen-ai-api-keys-autonomous-scans/",
+    "publishedAt": "2026-10-16T05:00:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "stolen-ai-api-keys-fund-autonomous-hacking-tool",
+      "article-376f0a",
+      "376f0a"
+    ]
+  },
+  {
+    "slug": "fortios-path-traversal-flaw-enables-peerstitch-mal-1cf0b6",
+    "title": "FortiOS Path Traversal Flaw Enables PEERSTITCH Malware Delivery",
+    "summary": "Fortinet FortiOS, FortiPAM, FortiProxy, and FortiSwitchManager are vulnerable to CVE-2025-61624, a path traversal flaw in the command line interpreter that allows attackers to bypass VPN session checks and deploy the memory‑resident ARM64 malware PEERSTITCH. The flaw has a CVSS score of 5.4 and requires exploitation of the vulnerable firmware.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/attackers-exploit-fortios-flaw-to.html",
+    "publishedAt": "2026-10-16T04:59:36.000Z",
+    "cves": [
+      "CVE-2025-61624"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "fortios-path-traversal-flaw-enables-peerstitch-mal",
+      "article-1cf0b6",
+      "1cf0b6",
+      "fortios-path-traversal-flaw-enables-peerstitch-malware-deliv"
+    ]
+  },
+  {
+    "slug": "record-ddos-attacks-surge-straining-global-service-4d809d",
+    "title": "Record DDoS Attacks Surge, Straining Global Services",
+    "summary": "Netscout reported over 9.1 million DDoS attacks worldwide between January and June 2026, a nearly 25% year‑over‑year increase. Attacks exceeding 1 Tbps or 1 Gpps grew 1,286%, driven by botnets linked to Aisuru, Kimwolf, and Jackskid, forcing services offline before bandwidth limits are reached.",
+    "category": "Policy",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/16/netscout-ddos-attack-growth-report/",
+    "publishedAt": "2026-10-16T04:30:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "record-ddos-attacks-surge-straining-global-service",
+      "article-4d809d",
+      "4d809d",
+      "record-ddos-attacks-surge-straining-global-services"
+    ]
+  },
+  {
+    "slug": "linus-torvalds-credits-ai-tool-for-linux-kernel-pa-7ae258",
+    "title": "Linus Torvalds Credits AI Tool for Linux Kernel Patches",
+    "summary": "Linus Torvalds disclosed that the AI coding tool Claude Code assisted in writing Linux kernel patches and test programs focused on page‑cache read performance. The collaboration demonstrates AI’s role in core operating‑system development and highlights the limits of automated code generation.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/linus-torvalds-use-claude-code-patches/",
+    "publishedAt": "2026-10-16T04:07:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "linus-torvalds-credits-ai-tool-for-linux-kernel-pa",
+      "article-7ae258",
+      "7ae258",
+      "linus-torvalds-credits-ai-tool-for-linux-kernel-patches"
+    ]
+  },
+  {
+    "slug": "adobe-acrobat-vulnerability-allows-one-click-memor-31d628",
+    "title": "Adobe Acrobat Vulnerability Allows One-Click Memory Corruption via Malicious PDFs",
+    "summary": "Adobe fixed a flaw in Acrobat and Acrobat Reader that lets a malicious PDF trigger an out-of-bounds write, tracked as CVE-2026-81983. The vulnerability has a CVSS score of 7.8 and could lead to code execution with the victim’s user rights. No active exploitation reported.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/adobe-acrobat-flaw/",
+    "publishedAt": "2026-10-16T04:05:46.000Z",
+    "cves": [
+      "CVE-2026-81983"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "adobe-acrobat-vulnerability-allows-one-click-memor",
+      "article-31d628",
+      "31d628",
+      "adobe-acrobat-vulnerability-allows-one-click-memory-corrupti"
+    ]
+  },
+  {
+    "slug": "public-poc-released-for-critical-gitlab-rce-vulner-205929",
+    "title": "Public PoC Released for Critical GitLab RCE Vulnerability CVE-2026-97229",
+    "summary": "A public proof‑of‑concept for CVE-2026-97229 demonstrates how a flaw in GitLab’s CI/CD regular‑expression compiler can execute arbitrary commands on a vulnerable server. GitLab rates the issue Critical with a CVSS score of 10.0. The exploit code is publicly available, increasing risk for unpatched installations.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/poc-gitlab-rce-vulnerability/",
+    "publishedAt": "2026-10-16T04:01:09.000Z",
+    "cves": [
+      "CVE-2026-97229"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "public-poc-released-for-critical-gitlab-rce-vulner",
+      "article-205929",
+      "205929",
+      "public-poc-released-for-critical-gitlab-rce-vulnerability-cv"
+    ]
+  },
+  {
     "slug": "new-infosec-products-of-the-week-october-16-2026-3092c1",
     "title": "New infosec products of the week: October 16, 2026",
     "summary": "The week’s highlights include releases from NinjaOne, Qualys, Scytale, and SolarWinds. NinjaOne introduces Katana AI, an agentic AI technician, and the MCP server, an orchestration connector extending AI tool access. The post details how these tools accelerate IT problem resolution.",
@@ -186,26 +370,6 @@ export const news: NewsBrief[] = [
       "article-30d9eb",
       "30d9eb",
       "hackers-exploit-collabora-rce-flaw-to-backdoor-nextcloud-ser"
-    ]
-  },
-  {
-    "slug": "critical-pwnescape-linux-kernel-vulnerability-lets-7b90a4",
-    "title": "Critical PwnEscape Linux Kernel Vulnerability Lets Guest VMs Read Host Memory",
-    "summary": "A newly disclosed critical flaw, CVE-2026-99999, nicknamed PwnEscape, in the Linux kernel’s networking code allows code running inside a virtual machine to read memory on the host system. The vulnerability was demonstrated against Vercel’s live cloud sandboxes. Patching the kernel to the latest version is essential to prevent memory leaks.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/critical-pwnescape-linux-kernel.html",
-    "publishedAt": "2026-10-15T20:24:36.000Z",
-    "cves": [
-      "CVE-2026-99999"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "critical-pwnescape-linux-kernel-vulnerability-lets",
-      "article-7b90a4",
-      "7b90a4",
-      "critical-pwnescape-linux-kernel-vulnerability-lets-guest-vms"
     ]
   },
   {
@@ -497,23 +661,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "ai-agents-expose-api-keys-and-cloud-secrets-3a154c",
-    "title": "AI Agents Expose API Keys and Cloud Secrets",
-    "summary": "AI agents can inadvertently leak API keys and cloud secrets during normal operations. When executing commands or reading config files, sensitive data may appear in command histories, logs, transcripts, and the model’s context, creating an unseen credential surface that can be accessed by attackers.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/ai-agents-4/",
-    "publishedAt": "2026-10-15T13:55:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-agents-expose-api-keys-and-cloud-secrets",
-      "article-3a154c",
-      "3a154c"
-    ]
-  },
-  {
     "slug": "kazakhstan-linked-hackers-target-former-soviet-gov-599af4",
     "title": "Kazakhstan‑Linked Hackers Target Former Soviet Governments",
     "summary": "Researchers identify a roughly two‑year‑old cyber‑espionage campaign originating in Kazakhstan that has targeted governments across Central Asian states. The operation focuses on gathering intelligence from former Soviet republics, indicating a sustained nation‑state effort.",
@@ -711,42 +858,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "cartoon-network-gigaleak-reveals-200gb-of-internal-699863",
-    "title": "Cartoon Network Gigaleak Reveals 200GB of Internal Animation Files",
-    "summary": "A massive gigaleak exposed over 200GB of Cartoon Network’s internal animation assets, including editable projects, character designs, storyboards, and production guides from shows such as The Amazing World of Gumball, Adventure Time, and Regular Show. The leak offers a rare glimpse into the studios’ creative processes.",
-    "category": "Breach",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/cartoon-network-gigaleak-exposes/",
-    "publishedAt": "2026-10-15T12:22:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cartoon-network-gigaleak-reveals-200gb-of-internal",
-      "article-699863",
-      "699863",
-      "cartoon-network-gigaleak-reveals-200gb-of-internal-animation"
-    ]
-  },
-  {
-    "slug": "fortinet-fortigate-firewalls-targeted-by-peerstitc-5f110d",
-    "title": "Fortinet FortiGate Firewalls Targeted by PEERSTITCH Malware",
-    "summary": "Attackers exploited vulnerabilities in Fortinet’s FortiManager and FortiGate systems to deploy PEERSTITCH malware, which runs inside FortiGate processes. The breach exposed configurations and sensitive data for over 500 managed FortiGate devices, compromising a telecommunications managed service provider.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/fortinet-vulnerabilities/",
-    "publishedAt": "2026-10-15T12:22:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortinet-fortigate-firewalls-targeted-by-peerstitc",
-      "article-5f110d",
-      "5f110d",
-      "fortinet-fortigate-firewalls-targeted-by-peerstitch-malware"
-    ]
-  },
-  {
     "slug": "drupal-core-rce-flaw-exploitable-via-contributed-m-b922f0",
     "title": "Drupal Core RCE Flaw Exploitable via Contributed Modules, No-Login Path",
     "summary": "Drupal core’s Field UI module contains a critical remote code execution flaw that can be triggered through contributed modules without requiring user authentication. The vulnerability was patched in Drupal 11.4.10, 11.3.19, and 10.6.19 on October 14. Attackers can execute arbitrary code on the server via these modules.",
@@ -782,26 +893,6 @@ export const news: NewsBrief[] = [
       "article-1a0f13",
       "1a0f13",
       "cisa-adds-atlassian-cve-2026-21589-to-known-exploited-vulner"
-    ]
-  },
-  {
-    "slug": "thermo-fisher-torrent-suite-vulnerability-cve-2026-49c059",
-    "title": "Thermo Fisher Torrent Suite Vulnerability CVE-2026-107777 Allows Path Traversal",
-    "summary": "Thermo Fisher Torrent Suite Software versions are vulnerable to CVE-2026-107777, a path traversal flaw that lets authenticated attackers read arbitrary files on the Torrent Server. The vulnerability, with CVSS 6.5, affects critical healthcare infrastructure worldwide and requires vendor patching.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-288-01",
-    "publishedAt": "2026-10-15T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-107777"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "thermo-fisher-torrent-suite-vulnerability-cve-2026",
-      "article-49c059",
-      "49c059",
-      "thermo-fisher-torrent-suite-vulnerability-cve-2026-107777-al"
     ]
   },
   {
@@ -965,24 +1056,6 @@ export const news: NewsBrief[] = [
       "article-5e0b33",
       "5e0b33",
       "india-mandates-caller-id-display-on-4g-and-newer-networks"
-    ]
-  },
-  {
-    "slug": "android-rat-hirudo-replaces-banking-apps-with-troj-3a43e7",
-    "title": "Android RAT ‘Hirudo’ Replaces Banking Apps With Trojanized Copies",
-    "summary": "The Hirudo malware merges a banking trojan with a remote‑access trojan, installing trojanized copies of legitimate banking apps on infected Android devices. The RAT allows attackers to intercept credentials and control the device, posing a significant threat to mobile banking users.",
-    "category": "Malware",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/novel-android-banking-rat-hirudo-replaces-banking-apps-with-trojanized-copies/",
-    "publishedAt": "2026-10-15T10:15:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "android-rat-hirudo-replaces-banking-apps-with-troj",
-      "article-3a43e7",
-      "3a43e7",
-      "android-rat-hirudo-replaces-banking-apps-with-trojanized-cop"
     ]
   },
   {
@@ -2328,26 +2401,6 @@ export const news: NewsBrief[] = [
       "article-7fea58",
       "7fea58",
       "bitdefender-ai-visibility-and-control-product-walkthrough"
-    ]
-  },
-  {
-    "slug": "gitlab-urges-patch-for-critical-rce-vulnerability-6c0372",
-    "title": "GitLab Urges Patch for Critical RCE Vulnerability CVE-2026-97229",
-    "summary": "GitLab warns that CVE-2026-97229, an integer overflow in its CI/CD Regular Expression Compiler, allows remote attackers to execute arbitrary code on self‑managed instances. The flaw affects both Community and Enterprise Editions and carries a CVSS score of 10.0. Immediate patching is required to prevent exploitation.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/13/gitlab-ci-cd-regular-expression-compiler-vulnerability-cve-2026-97229/",
-    "publishedAt": "2026-10-13T09:19:45.000Z",
-    "cves": [
-      "CVE-2026-97229"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "gitlab-urges-patch-for-critical-rce-vulnerability",
-      "article-6c0372",
-      "6c0372",
-      "gitlab-urges-patch-for-critical-rce-vulnerability-cve-2026-9"
     ]
   },
   {
@@ -6221,60 +6274,6 @@ export const news: NewsBrief[] = [
       "article-31e73b",
       "31e73b",
       "pwc-finds-only-22-of-enterprises-ready-for-autonomous-ai-cyb"
-    ]
-  },
-  {
-    "slug": "government-agencies-lead-2026-cyber-threat-landsca-280219",
-    "title": "Government Agencies Lead 2026 Cyber Threat Landscape",
-    "summary": "Microsoft’s Digital Defense Report shows government agencies and services experienced 27% of cyber activity in 2026, up from 17% in 2025. The report highlights the growing interconnected cyber risk facing public sector entities and underscores the need for enhanced defensive measures.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Microsoft Security",
-    "sourceUrl": "https://blogs.microsoft.com/on-the-issues/2026/10/01/preparing-governments-for-an-era-of-interconnected-cyber-risk/",
-    "publishedAt": "2026-10-01T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "government-agencies-lead-2026-cyber-threat-landsca",
-      "article-280219",
-      "280219",
-      "government-agencies-lead-2026-cyber-threat-landscape"
-    ]
-  },
-  {
-    "slug": "microsoft-releases-2026-digital-defense-report-hig-6a5d05",
-    "title": "Microsoft Releases 2026 Digital Defense Report Highlights",
-    "summary": "Microsoft’s 2026 Digital Defense Report outlines a security landscape that is increasingly interconnected, noting evolving threat vectors and the need for robust defense strategies. The report emphasizes the importance of proactive security measures and continuous monitoring to mitigate emerging risks across digital infrastructures.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Microsoft Security",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/01/insights-from-the-2026-microsoft-digital-defense-report/",
-    "publishedAt": "2026-10-01T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-releases-2026-digital-defense-report-hig",
-      "article-6a5d05",
-      "6a5d05",
-      "microsoft-releases-2026-digital-defense-report-highlights"
-    ]
-  },
-  {
-    "slug": "deepkeep-launches-ai-lens-to-monitor-coding-agent-1a5108",
-    "title": "DeepKeep Launches AI Lens to Monitor Coding Agent Data Leaks",
-    "summary": "DeepKeep introduced AI Lens for Developers, an extension that monitors coding agents like Cursor and Claude Code for data leaks and destructive commands. The tool provides policy enforcement, audit visibility, and runtime protection, closing a critical gap in developer security programs.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/deepkeeps-ai-lens-flags-coding-agent-data-leaks-and-routes-destructive-commands-for-approval/",
-    "publishedAt": "2026-10-01T13:57:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "deepkeep-launches-ai-lens-to-monitor-coding-agent",
-      "article-1a5108",
-      "1a5108",
-      "deepkeep-launches-ai-lens-to-monitor-coding-agent-data-leaks"
     ]
   }
 ];

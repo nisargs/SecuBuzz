@@ -5,8 +5,98 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Oct 2026 04:19:22 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 07:13:51 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>BeyondTrust Issues Patch for Zero-Day Remote Support Flaw</title>
+      <link>https://secubuzz.com/news/beyondtrust-issues-patch-for-zero-day-remote-suppo-34637d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/beyondtrust-issues-patch-for-zero-day-remote-suppo-34637d</guid>
+      <description><![CDATA[BeyondTrust has released a patch for a critical Remote Support flaw that has been exploited in zero‑day attacks since late August. The vulnerability allows attackers to execute arbitrary code on affected systems. Users must update to the latest version immediately to mitigate the risk.]]></description>
+      <pubDate>Fri, 16 Oct 2026 06:18:08 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/beyondtrust-patches-zero-day-exploited-in-attacks-since-august/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Active Directory Weaknesses Persist in Small Teams</title>
+      <link>https://secubuzz.com/news/active-directory-weaknesses-persist-in-small-teams-687e8d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/active-directory-weaknesses-persist-in-small-teams-687e8d</guid>
+      <description><![CDATA[A discussion with intcube CTO David Fuhr highlights why Active Directory vulnerabilities remain open in organizations with only one or two administrators. The interview explains hardening practices such as SMB signing, LDAP signing, and Kerberos hardening, and shows how a 12‑week cohort can systematically secure Windows Server environments.]]></description>
+      <pubDate>Fri, 16 Oct 2026 06:00:12 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/16/david-fuhr-intcube-active-directory-security/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>GhostBat Android Malware Targets 60 Indian Banking and UPI Apps</title>
+      <link>https://secubuzz.com/news/ghostbat-android-malware-targets-60-indian-banking-5c0f7a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ghostbat-android-malware-targets-60-indian-banking-5c0f7a</guid>
+      <description><![CDATA[A new GhostBat Android variant exploits Android’s Accessibility Service to monitor activity in 60 banking, UPI, wallet, fintech and payment apps in India, capturing PIN‑like input. Operators also use fake mParivahan and eChallan messages to lure users into installing the malicious app.]]></description>
+      <pubDate>Fri, 16 Oct 2026 05:33:05 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/ghostbat-android-malware/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Cyber Talent Shortage: US Job Postings Hit Four‑Year Low</title>
+      <link>https://secubuzz.com/news/cyber-talent-shortage-us-job-postings-hit-four-yea-480b71</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cyber-talent-shortage-us-job-postings-hit-four-yea-480b71</guid>
+      <description><![CDATA[US cybersecurity job postings fell to 235,786 from January through September 2026, the lowest in four years, according to CyberSN. The remaining listings skew toward governance, risk and compliance roles, indicating a shift in hiring focus amid a broader talent shortage.]]></description>
+      <pubDate>Fri, 16 Oct 2026 05:30:51 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/16/cybersecurity-job-postings-talent-shortage/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Stolen AI API Keys Fund Autonomous Hacking Tool</title>
+      <link>https://secubuzz.com/news/stolen-ai-api-keys-fund-autonomous-hacking-tool-376f0a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/stolen-ai-api-keys-fund-autonomous-hacking-tool-376f0a</guid>
+      <description><![CDATA[A criminal forum seller markets an autonomous hacking tool that runs on stolen OpenAI, Anthropic, and Google API keys, making key owners pay for scans. Bitsight tracked the trend across 16 underground forums, noting a 67% rise in AI agent mentions and indirect prompt injection from February to August 2026.]]></description>
+      <pubDate>Fri, 16 Oct 2026 05:00:24 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/16/stolen-ai-api-keys-autonomous-scans/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>FortiOS Path Traversal Flaw Enables PEERSTITCH Malware Delivery</title>
+      <link>https://secubuzz.com/news/fortios-path-traversal-flaw-enables-peerstitch-mal-1cf0b6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fortios-path-traversal-flaw-enables-peerstitch-mal-1cf0b6</guid>
+      <description><![CDATA[Fortinet FortiOS, FortiPAM, FortiProxy, and FortiSwitchManager are vulnerable to CVE-2025-61624, a path traversal flaw in the command line interpreter that allows attackers to bypass VPN session checks and deploy the memory‑resident ARM64 malware PEERSTITCH. The flaw has a CVSS score of 5.4 and requires exploitation of the vulnerable firmware.]]></description>
+      <pubDate>Fri, 16 Oct 2026 04:59:36 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/attackers-exploit-fortios-flaw-to.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Record DDoS Attacks Surge, Straining Global Services</title>
+      <link>https://secubuzz.com/news/record-ddos-attacks-surge-straining-global-service-4d809d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/record-ddos-attacks-surge-straining-global-service-4d809d</guid>
+      <description><![CDATA[Netscout reported over 9.1 million DDoS attacks worldwide between January and June 2026, a nearly 25% year‑over‑year increase. Attacks exceeding 1 Tbps or 1 Gpps grew 1,286%, driven by botnets linked to Aisuru, Kimwolf, and Jackskid, forcing services offline before bandwidth limits are reached.]]></description>
+      <pubDate>Fri, 16 Oct 2026 04:30:46 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/16/netscout-ddos-attack-growth-report/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Linus Torvalds Credits AI Tool for Linux Kernel Patches</title>
+      <link>https://secubuzz.com/news/linus-torvalds-credits-ai-tool-for-linux-kernel-pa-7ae258</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/linus-torvalds-credits-ai-tool-for-linux-kernel-pa-7ae258</guid>
+      <description><![CDATA[Linus Torvalds disclosed that the AI coding tool Claude Code assisted in writing Linux kernel patches and test programs focused on page‑cache read performance. The collaboration demonstrates AI’s role in core operating‑system development and highlights the limits of automated code generation.]]></description>
+      <pubDate>Fri, 16 Oct 2026 04:07:53 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/linus-torvalds-use-claude-code-patches/">Cyber Security News</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Adobe Acrobat Vulnerability Allows One-Click Memory Corruption via Malicious PDFs</title>
+      <link>https://secubuzz.com/news/adobe-acrobat-vulnerability-allows-one-click-memor-31d628</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/adobe-acrobat-vulnerability-allows-one-click-memor-31d628</guid>
+      <description><![CDATA[Adobe fixed a flaw in Acrobat and Acrobat Reader that lets a malicious PDF trigger an out-of-bounds write, tracked as CVE-2026-81983. The vulnerability has a CVSS score of 7.8 and could lead to code execution with the victim’s user rights. No active exploitation reported.]]></description>
+      <pubDate>Fri, 16 Oct 2026 04:05:46 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/adobe-acrobat-flaw/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Public PoC Released for Critical GitLab RCE Vulnerability CVE-2026-97229</title>
+      <link>https://secubuzz.com/news/public-poc-released-for-critical-gitlab-rce-vulner-205929</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/public-poc-released-for-critical-gitlab-rce-vulner-205929</guid>
+      <description><![CDATA[A public proof‑of‑concept for CVE-2026-97229 demonstrates how a flaw in GitLab’s CI/CD regular‑expression compiler can execute arbitrary commands on a vulnerable server. GitLab rates the issue Critical with a CVSS score of 10.0. The exploit code is publicly available, increasing risk for unpatched installations.]]></description>
+      <pubDate>Fri, 16 Oct 2026 04:01:09 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/poc-gitlab-rce-vulnerability/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>New infosec products of the week: October 16, 2026</title>
       <link>https://secubuzz.com/news/new-infosec-products-of-the-week-october-16-2026-3092c1</link>
@@ -95,15 +185,6 @@
       <description><![CDATA[Threat actors are exploiting a critical command execution flaw, CVE-2026-110447, in Collabora Online’s Built‑in CODE Server app for Nextcloud. The vulnerability allows remote code execution on affected servers, enabling attackers to install backdoors and compromise data. Immediate patching of the Collabora app is required to mitigate the risk.]]></description>
       <pubDate>Thu, 15 Oct 2026 20:25:04 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/hackers-exploit-collabora-rce-flaw-to-backdoor-nextcloud-servers/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Critical PwnEscape Linux Kernel Vulnerability Lets Guest VMs Read Host Memory</title>
-      <link>https://secubuzz.com/news/critical-pwnescape-linux-kernel-vulnerability-lets-7b90a4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/critical-pwnescape-linux-kernel-vulnerability-lets-7b90a4</guid>
-      <description><![CDATA[A newly disclosed critical flaw, CVE-2026-99999, nicknamed PwnEscape, in the Linux kernel’s networking code allows code running inside a virtual machine to read memory on the host system. The vulnerability was demonstrated against Vercel’s live cloud sandboxes. Patching the kernel to the latest version is essential to prevent memory leaks.]]></description>
-      <pubDate>Thu, 15 Oct 2026 20:24:36 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/critical-pwnescape-linux-kernel.html">The Hacker News</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -251,15 +332,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>AI Agents Expose API Keys and Cloud Secrets</title>
-      <link>https://secubuzz.com/news/ai-agents-expose-api-keys-and-cloud-secrets-3a154c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-agents-expose-api-keys-and-cloud-secrets-3a154c</guid>
-      <description><![CDATA[AI agents can inadvertently leak API keys and cloud secrets during normal operations. When executing commands or reading config files, sensitive data may appear in command histories, logs, transcripts, and the model’s context, creating an unseen credential surface that can be accessed by attackers.]]></description>
-      <pubDate>Thu, 15 Oct 2026 13:55:34 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/ai-agents-4/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>Kazakhstan‑Linked Hackers Target Former Soviet Governments</title>
       <link>https://secubuzz.com/news/kazakhstan-linked-hackers-target-former-soviet-gov-599af4</link>
       <guid isPermaLink="true">https://secubuzz.com/news/kazakhstan-linked-hackers-target-former-soviet-gov-599af4</guid>
@@ -359,24 +431,6 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>Cartoon Network Gigaleak Reveals 200GB of Internal Animation Files</title>
-      <link>https://secubuzz.com/news/cartoon-network-gigaleak-reveals-200gb-of-internal-699863</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cartoon-network-gigaleak-reveals-200gb-of-internal-699863</guid>
-      <description><![CDATA[A massive gigaleak exposed over 200GB of Cartoon Network’s internal animation assets, including editable projects, character designs, storyboards, and production guides from shows such as The Amazing World of Gumball, Adventure Time, and Regular Show. The leak offers a rare glimpse into the studios’ creative processes.]]></description>
-      <pubDate>Thu, 15 Oct 2026 12:22:24 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/cartoon-network-gigaleak-exposes/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Fortinet FortiGate Firewalls Targeted by PEERSTITCH Malware</title>
-      <link>https://secubuzz.com/news/fortinet-fortigate-firewalls-targeted-by-peerstitc-5f110d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fortinet-fortigate-firewalls-targeted-by-peerstitc-5f110d</guid>
-      <description><![CDATA[Attackers exploited vulnerabilities in Fortinet’s FortiManager and FortiGate systems to deploy PEERSTITCH malware, which runs inside FortiGate processes. The breach exposed configurations and sensitive data for over 500 managed FortiGate devices, compromising a telecommunications managed service provider.]]></description>
-      <pubDate>Thu, 15 Oct 2026 12:22:12 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/fortinet-vulnerabilities/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>Drupal Core RCE Flaw Exploitable via Contributed Modules, No-Login Path</title>
       <link>https://secubuzz.com/news/drupal-core-rce-flaw-exploitable-via-contributed-m-b922f0</link>
       <guid isPermaLink="true">https://secubuzz.com/news/drupal-core-rce-flaw-exploitable-via-contributed-m-b922f0</guid>
@@ -395,15 +449,6 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>Thermo Fisher Torrent Suite Vulnerability CVE-2026-107777 Allows Path Traversal</title>
-      <link>https://secubuzz.com/news/thermo-fisher-torrent-suite-vulnerability-cve-2026-49c059</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/thermo-fisher-torrent-suite-vulnerability-cve-2026-49c059</guid>
-      <description><![CDATA[Thermo Fisher Torrent Suite Software versions are vulnerable to CVE-2026-107777, a path traversal flaw that lets authenticated attackers read arbitrary files on the Torrent Server. The vulnerability, with CVSS 6.5, affects critical healthcare infrastructure worldwide and requires vendor patching.]]></description>
-      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-288-01">CISA</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>J4Care dcm4che Vulnerabilities Enable Medical Image Deletion and Data Disclosure</title>
       <link>https://secubuzz.com/news/j4care-dcm4che-vulnerabilities-enable-medical-imag-49c059</link>
       <guid isPermaLink="true">https://secubuzz.com/news/j4care-dcm4che-vulnerabilities-enable-medical-imag-49c059</guid>
@@ -411,51 +456,6 @@
       <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
       <source url="https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-288-02">CISA</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Guangzhou Juan IoT EseeCloud Vulnerability Allows Remote Control via Hard‑Coded Credentials</title>
-      <link>https://secubuzz.com/news/guangzhou-juan-iot-eseecloud-vulnerability-allows-430c04</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/guangzhou-juan-iot-eseecloud-vulnerability-allows-430c04</guid>
-      <description><![CDATA[The CVE‑2026‑107617 flaw in Guangzhou Juan IoT Technology’s EseeCloud App and Firmware permits attackers to log in using hard‑coded credentials, enabling full control over affected IP cameras. The vulnerability scores 9.8 CVSS, impacting critical infrastructure sectors worldwide. Mitigation requires updating to patched firmware versions.]]></description>
-      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-288-02">CISA</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>CISA Malcolm Vulnerability CVE-2026-107336 Exposes Authentication Bypass and SSRF</title>
-      <link>https://secubuzz.com/news/cisa-malcolm-vulnerability-cve-2026-107336-exposes-430fa7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-malcolm-vulnerability-cve-2026-107336-exposes-430fa7</guid>
-      <description><![CDATA[CISA Malcolm versions are vulnerable to CVE-2026-107336, a high‑severity flaw with CVSS 8.1. The issue stems from a case‑insensitive regex matcher in the nginx reverse proxy that allows authentication bypass, SSRF, and CSRF attacks. Affected systems include energy, IT, water, and wastewater sectors worldwide. Mitigation requires patching to the latest Malcolm release.]]></description>
-      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-280-01">CISA</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Police Arrest 95 Suspects in International CSAM Crackdown</title>
-      <link>https://secubuzz.com/news/police-arrest-95-suspects-in-international-csam-cr-66e54a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/police-arrest-95-suspects-in-international-csam-cr-66e54a</guid>
-      <description><![CDATA[Law enforcement authorities from 17 countries in Latin America and Europe have arrested 95 suspects in an INTERPOL‑coordinated operation targeting the distribution of child sexual abuse material through online messaging groups. The operation disrupted several active groups and seized evidence for ongoing investigations.]]></description>
-      <pubDate>Thu, 15 Oct 2026 11:55:38 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/police-arrests-95-suspects-in-child-sexual-abuse-material-crackdown/">BleepingComputer</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>FTC Accuses Sextortion Firm of $60M Fraud</title>
-      <link>https://secubuzz.com/news/ftc-accuses-sextortion-firm-of-60m-fraud-2ab075</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ftc-accuses-sextortion-firm-of-60m-fraud-2ab075</guid>
-      <description><![CDATA[The Federal Trade Commission alleges that Digital Forensics Corporation and its affiliates ran a sextortion scheme, extorting victims for intimate images and collecting $60 million in payments. The firm targeted individuals seeking help with blackmail, exploiting their vulnerability to demand ransom.]]></description>
-      <pubDate>Thu, 15 Oct 2026 11:48:26 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/news/2026/10/sextortion-help-firm-took-60-million-from-victims-ftc-alleges">Malwarebytes Labs</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>CikaBika Bot RAT Uses Discord for Command and Control</title>
-      <link>https://secubuzz.com/news/cikabika-bot-rat-uses-discord-for-command-and-cont-7b597a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cikabika-bot-rat-uses-discord-for-command-and-cont-7b597a</guid>
-      <description><![CDATA[The CikaBika Bot Remote Access Trojan, delivered via phishing, offers reconnaissance, remote execution, and data exfiltration. It uses Discord servers for command and control, enabling attackers to manage compromised hosts from a covert channel. Security analysts recommend monitoring Discord traffic and blocking malicious bot tokens to mitigate the threat.]]></description>
-      <pubDate>Thu, 15 Oct 2026 11:25:58 GMT</pubDate>
-      <source url="https://www.securityweek.com/cikabika-bot-rat-uses-discord-for-cc/">SecurityWeek</source>
-      <category>Malware</category>
     </item>
   </channel>
 </rss>
