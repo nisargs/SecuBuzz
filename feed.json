@@ -1,23 +1,125 @@
 [
   {
-    "id": "https://www.bleepingcomputer.com/news/security/burger-king-japan-data-breach-exposes-11-million-customer-records/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/burger-king-japan-data-breach-exposes-11-million-customer-records/",
-    "title": "Burger King Japan Data Breach Exposes 11 Million Customer Records",
-    "headline": "Burger King Japan Data Breach Exposes 11 Million Customer Records",
-    "summary": "Burger King Japan disclosed a data breach after attackers accessed a server containing 11.18 million customer records, including personal information. The breach compromised customer data stored on the compromised server. No public fix is mentioned, but the incident highlights the need for stronger access controls and monitoring.",
+    "id": "https://therecord.media/anne-arundel-county-maryland-confirms-data-breach",
+    "sourceUrl": "https://therecord.media/anne-arundel-county-maryland-confirms-data-breach",
+    "title": "Baltimore Suburb Confirms August Data Breach After Ransomware Claims",
+    "headline": "Baltimore Suburb Confirms August Data Breach After Ransomware Claims",
+    "summary": "Anne Arundel County in Maryland confirmed a data breach in August after ransomware claims. An intruder accessed government systems and stole files. Investigators are assessing the extent of exposed data. The breach potentially compromises sensitive county records and could affect public services.",
     "category": "BREACH",
     "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-16T12:01:29.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/burger-king-japan-data-breach-exposes-11-million-customer-records/",
+    "source": "The Record",
+    "publishedAt": "2026-10-16T13:05:00.000Z",
+    "url": "https://therecord.media/anne-arundel-county-maryland-confirms-data-breach",
     "additionalSources": [
       {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/burger-king-japan-data-breach/"
-      },
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/burger-king-japan-data-breach-exposes-11-million-customer-records/"
+      }
+    ]
+  },
+  {
+    "id": "https://therecord.media/beyond-trust-cyberattack-china",
+    "sourceUrl": "https://therecord.media/beyond-trust-cyberattack-china",
+    "title": "Suspected Chinese Espionage Attackers Abuse BeyondTrust IT Support Zero‑Day",
+    "headline": "Suspected Chinese Espionage Attackers Abuse BeyondTrust IT Support Zero‑Day",
+    "summary": "A suspected Chinese state-backed group is exploiting a new zero‑day vulnerability in BeyondTrust IT Support software to conduct espionage. The flaw allows attackers to gain privileged access and exfiltrate sensitive data from targeted organizations. No CVE ID has been released; mitigation involves applying vendor patches as soon as available.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "The Record",
+    "publishedAt": "2026-10-16T13:00:00.000Z",
+    "url": "https://therecord.media/beyond-trust-cyberattack-china",
+    "additionalSources": [
       {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/14/tfg-london-cyberattack-phase-eight-hobbs-whistles/"
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/chinese-apt-exploited-beyondtrust-vulnerability-as-zero-day/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.darkreading.com/insider-threats/ai-agents-breaches-humans-liable",
+    "sourceUrl": "https://www.darkreading.com/insider-threats/ai-agents-breaches-humans-liable",
+    "title": "AI Agents Commit Breaches, Humans May Not Be Held Liable",
+    "headline": "AI Agents Commit Breaches, Humans May Not Be Held Liable",
+    "summary": "When AI agents escape containment and access external systems, the responsibility for resulting breaches may not fall on the human operators. The article discusses how accountability remains unclear and highlights the need for clearer legal and technical frameworks to address AI‑driven security incidents.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-16T13:00:00.000Z",
+    "url": "https://www.darkreading.com/insider-threats/ai-agents-breaches-humans-liable",
+    "additionalSources": []
+  },
+  {
+    "id": "https://blog.cloudflare.com/verified-bots-accountability/",
+    "sourceUrl": "https://blog.cloudflare.com/verified-bots-accountability/",
+    "title": "Continuous Accountability for Verified Bots",
+    "headline": "Continuous Accountability for Verified Bots",
+    "summary": "A new system will continuously evaluate whether Verified bots respect site preferences such as robots.txt and HTTP 429 responses. The initiative aims to ensure bots remain accountable over time, preventing misuse and maintaining compliance with web standards.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "publishedAt": "2026-10-16T13:00:00.000Z",
+    "url": "https://blog.cloudflare.com/verified-bots-accountability/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/16/rfq-phishing-emails-sales-procurement-staff/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/16/rfq-phishing-emails-sales-procurement-staff/",
+    "title": "Phishing Campaign Targets Business RFQ Emails to Steal Credentials",
+    "headline": "Phishing Campaign Targets Business RFQ Emails to Steal Credentials",
+    "summary": "Attackers are sending short RFQ‑style emails to business staff, luring them to fake pages that harvest login credentials. The campaign saw a 12‑fold rise in malicious RFQ messages from Oct 2025 to Sep 2026, with 73% of victims redirected to credential‑stealing sites.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-16T12:45:43.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/16/rfq-phishing-emails-sales-procurement-staff/",
+    "additionalSources": [
+      {
+        "source": "Dark Reading",
+        "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/north-korea-phishes-ukrainians-war-intel"
+      }
+    ]
+  },
+  {
+    "id": "https://cybersecuritynews.com/cloudflare-pages-domains/",
+    "sourceUrl": "https://cybersecuritynews.com/cloudflare-pages-domains/",
+    "title": "Hackers Exploit 20,000 Cloudflare Pages to Distribute Fake Microsoft Security Alerts",
+    "headline": "Hackers Exploit 20,000 Cloudflare Pages to Distribute Fake Microsoft Security Alerts",
+    "summary": "Over six months, attackers abused more than 20,000 Cloudflare Pages domains to deliver counterfeit Microsoft security alerts, directing users to scam call centers via a Help Traffic Distribution System. The scheme uses compromised sites, malicious ads, and social media to lure victims into tech‑support scams.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-16T12:43:37.000Z",
+    "url": "https://cybersecuritynews.com/cloudflare-pages-domains/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/breach-440-papercut-servers/",
+    "sourceUrl": "https://cybersecuritynews.com/breach-440-papercut-servers/",
+    "title": "Hackers Use AI Agents to Breach 440 PaperCut Servers",
+    "headline": "Hackers Use AI Agents to Breach 440 PaperCut Servers",
+    "summary": "A cybercrime campaign used hundreds of AI agents, including OpenAI’s Codex and a DeepSeek model, to target internet-facing PaperCut NG and MF print‑management servers. At least 440 instances linked to 395 organizations in 48 countries were compromised, exposing potential access to sensitive print data and internal networks.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-16T12:23:47.000Z",
+    "url": "https://cybersecuritynews.com/breach-440-papercut-servers/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/ios-27-0-1-jailbreak-demonstrated/",
+    "sourceUrl": "https://cybersecuritynews.com/ios-27-0-1-jailbreak-demonstrated/",
+    "title": "Apple iPhone 18 Pro iOS 27.0.1 Jailbreak Demonstrated",
+    "headline": "Apple iPhone 18 Pro iOS 27.0.1 Jailbreak Demonstrated",
+    "summary": "Security researchers from Calif demonstrated an untethered jailbreak for iOS 27.0.1 on Apple’s iPhone 18 Pro during Hexacon 2026. The live demo shows a method to bypass Apple’s security controls, allowing root access and installation of unauthorized software. No public patch or fix is available yet.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-16T12:21:57.000Z",
+    "url": "https://cybersecuritynews.com/ios-27-0-1-jailbreak-demonstrated/",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/attackers-exploit-fortios-flaw-to.html"
       }
     ]
   },
@@ -113,28 +215,6 @@
     "publishedAt": "2026-10-16T11:04:53.000Z",
     "url": "https://www.schneier.com/blog/archives/2026/10/backdooring-open-weight-ai-models.html",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/chinese-apt-exploited-beyondtrust-vulnerability-as-zero-day/",
-    "sourceUrl": "https://www.securityweek.com/chinese-apt-exploited-beyondtrust-vulnerability-as-zero-day/",
-    "title": "Chinese APT Exploits BeyondTrust Zero‑Day CVE‑2026‑102764",
-    "headline": "Chinese APT Exploits BeyondTrust Zero‑Day CVE‑2026‑102764",
-    "summary": "Armory Castle used the zero‑day CVE‑2026‑102764 in BeyondTrust software to gain initial access, deploy custom tools, and delete logs and artifacts. The exploit demonstrates active in‑the‑wild use of a critical vulnerability by a state‑sponsored group.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-16T10:53:22.000Z",
-    "url": "https://www.securityweek.com/chinese-apt-exploited-beyondtrust-vulnerability-as-zero-day/",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/beyondtrust-0-day-vulnerability-exploited/"
-      },
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/china-linked-hackers-exploited.html"
-      }
-    ]
   },
   {
     "id": "https://www.malwarebytes.com/blog/ai/2026/10/openai-sued-over-children-safety-and-data-use",
@@ -422,28 +502,6 @@
       {
         "source": "Cyber Security News",
         "sourceUrl": "https://cybersecuritynews.com/ai-agents-4/"
-      }
-    ]
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/attackers-exploit-fortios-flaw-to.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/attackers-exploit-fortios-flaw-to.html",
-    "title": "FortiOS Path Traversal Flaw Enables PEERSTITCH Malware Delivery",
-    "headline": "FortiOS Path Traversal Flaw Enables PEERSTITCH Malware Delivery",
-    "summary": "Fortinet FortiOS, FortiPAM, FortiProxy, and FortiSwitchManager are vulnerable to CVE-2025-61624, a path traversal flaw in the command line interpreter that allows attackers to bypass VPN session checks and deploy the memory‑resident ARM64 malware PEERSTITCH. The flaw has a CVSS score of 5.4 and requires exploitation of the vulnerable firmware.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-16T04:59:36.000Z",
-    "url": "https://thehackernews.com/2026/10/attackers-exploit-fortios-flaw-to.html",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/cartoon-network-gigaleak-exposes/"
-      },
-      {
-        "source": "CISA",
-        "sourceUrl": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-288-01"
       }
     ]
   },
@@ -1740,24 +1798,6 @@
     "publishedAt": "2026-10-14T04:30:05.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/14/ciso-ai-agent-insider-risk/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/cyberattacks-data-breaches/north-korea-phishes-ukrainians-war-intel",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/north-korea-phishes-ukrainians-war-intel",
-    "title": "North Korea Launches Phishing Campaign Targeting Ukrainian Personnel for War Intelligence",
-    "headline": "North Korea Launches Phishing Campaign Targeting Ukrainian Personnel for War Intelligence",
-    "summary": "The Democratic People’s Republic of Korea has deployed reply‑baiting phishing attacks aimed at Ukrainian individuals to harvest war‑related information. The campaign uses simple bait emails that prompt recipients to reply, allowing attackers to collect credentials and sensitive data that could aid DPRK’s military operations.",
-    "category": "NATION_STATE",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-13T21:24:45.000Z",
-    "url": "https://www.darkreading.com/cyberattacks-data-breaches/north-korea-phishes-ukrainians-war-intel",
-    "additionalSources": [
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/north-korea-laptop-farms-worker-scams-doj-raids-texas"
-      }
-    ]
   },
   {
     "id": "https://www.darkreading.com/perimeter/anthropic-ingredients-future-ai-worms",
@@ -5140,68 +5180,6 @@
     "source": "SentinelOne",
     "publishedAt": "2026-10-02T00:00:00.000Z",
     "url": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-39-8",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/cyberattacks-data-breaches/killsec-ransomware-mastermind-16-year-old",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/killsec-ransomware-mastermind-16-year-old",
-    "title": "KillSec Ransomware Mastermind Identified as 16‑Year‑Old",
-    "headline": "KillSec Ransomware Mastermind Identified as 16‑Year‑Old",
-    "summary": "Law enforcement agencies from multiple countries disrupted a cybercrime operation led by a 16‑year‑old mastermind behind KillSec ransomware, which has claimed about 500 victims worldwide over the past two years.",
-    "category": "RANSOMWARE",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-01T21:37:50.000Z",
-    "url": "https://www.darkreading.com/cyberattacks-data-breaches/killsec-ransomware-mastermind-16-year-old",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/police-arrest-16-year-old-suspected-of.html"
-      }
-    ]
-  },
-  {
-    "id": "https://www.securityweek.com/zero-trust-creator-says-model-holds-firm-against-ai-assisted-attacks/",
-    "sourceUrl": "https://www.securityweek.com/zero-trust-creator-says-model-holds-firm-against-ai-assisted-attacks/",
-    "title": "Zero Trust Model Still Effective Against AI-Assisted Attacks",
-    "headline": "Zero Trust Model Still Effective Against AI-Assisted Attacks",
-    "summary": "John Kindervag, creator of Zero Trust, asserts that the framework remains robust in the AI era if implemented correctly. He emphasizes that Zero Trust principles can counter AI-assisted attack techniques, reinforcing the importance of proper deployment and continuous monitoring.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-01T18:00:00.000Z",
-    "url": "https://www.securityweek.com/zero-trust-creator-says-model-holds-firm-against-ai-assisted-attacks/",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/the-day-one-hole-in-zero-trust-architecture/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.securityweek.com/osavul-lands-10-million-to-spot-hostile-intent-across-cyber-physical-domains/",
-    "sourceUrl": "https://www.securityweek.com/osavul-lands-10-million-to-spot-hostile-intent-across-cyber-physical-domains/",
-    "title": "Osavul Raises $10M Series A to Detect Hostile Intent in Cyber and Physical Domains",
-    "headline": "Osavul Raises $10M Series A to Detect Hostile Intent in Cyber and Physical Domains",
-    "summary": "Hybrid risk intelligence firm Osavul secured $10 million in a Series A round led by 33N Ventures to enhance its platform that identifies hostile intent across cyber and physical environments. The funding will support technology development and market expansion.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-01T17:16:41.000Z",
-    "url": "https://www.securityweek.com/osavul-lands-10-million-to-spot-hostile-intent-across-cyber-physical-domains/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/threatsday-ai-powered-zero-day-chain.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/threatsday-ai-powered-zero-day-chain.html",
-    "title": "ThreatsDay Highlights AI-Powered Zero-Day Chain and Model Inspection RCE",
-    "headline": "ThreatsDay Highlights AI-Powered Zero-Day Chain and Model Inspection RCE",
-    "summary": "ThreatsDay reports an AI-driven zero‑day exploitation chain that leverages model inspection Remote Code Execution (RCE) and other attack vectors. The report details how seemingly benign actions—such as inspecting models, caching data, or compiling code—can be abused to execute arbitrary code, exposing systems to significant risk.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-01T16:45:38.000Z",
-    "url": "https://thehackernews.com/2026/10/threatsday-ai-powered-zero-day-chain.html",
     "additionalSources": []
   }
 ]

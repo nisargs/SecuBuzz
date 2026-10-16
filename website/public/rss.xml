@@ -5,16 +5,79 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Oct 2026 12:28:13 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 13:31:08 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Burger King Japan Data Breach Exposes 11 Million Customer Records</title>
-      <link>https://secubuzz.com/news/burger-king-japan-data-breach-exposes-11-million-c-6be4d1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/burger-king-japan-data-breach-exposes-11-million-c-6be4d1</guid>
-      <description><![CDATA[Burger King Japan disclosed a data breach after attackers accessed a server containing 11.18 million customer records, including personal information. The breach compromised customer data stored on the compromised server. No public fix is mentioned, but the incident highlights the need for stronger access controls and monitoring.]]></description>
-      <pubDate>Fri, 16 Oct 2026 12:01:29 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/burger-king-japan-data-breach-exposes-11-million-customer-records/">BleepingComputer</source>
+      <title>Baltimore Suburb Confirms August Data Breach After Ransomware Claims</title>
+      <link>https://secubuzz.com/news/baltimore-suburb-confirms-august-data-breach-after-27c5b1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/baltimore-suburb-confirms-august-data-breach-after-27c5b1</guid>
+      <description><![CDATA[Anne Arundel County in Maryland confirmed a data breach in August after ransomware claims. An intruder accessed government systems and stole files. Investigators are assessing the extent of exposed data. The breach potentially compromises sensitive county records and could affect public services.]]></description>
+      <pubDate>Fri, 16 Oct 2026 13:05:00 GMT</pubDate>
+      <source url="https://therecord.media/anne-arundel-county-maryland-confirms-data-breach">The Record</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Suspected Chinese Espionage Attackers Abuse BeyondTrust IT Support Zero‑Day</title>
+      <link>https://secubuzz.com/news/suspected-chinese-espionage-attackers-abuse-beyond-553970</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/suspected-chinese-espionage-attackers-abuse-beyond-553970</guid>
+      <description><![CDATA[A suspected Chinese state-backed group is exploiting a new zero‑day vulnerability in BeyondTrust IT Support software to conduct espionage. The flaw allows attackers to gain privileged access and exfiltrate sensitive data from targeted organizations. No CVE ID has been released; mitigation involves applying vendor patches as soon as available.]]></description>
+      <pubDate>Fri, 16 Oct 2026 13:00:00 GMT</pubDate>
+      <source url="https://therecord.media/beyond-trust-cyberattack-china">The Record</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>AI Agents Commit Breaches, Humans May Not Be Held Liable</title>
+      <link>https://secubuzz.com/news/ai-agents-commit-breaches-humans-may-not-be-held-l-671d61</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-agents-commit-breaches-humans-may-not-be-held-l-671d61</guid>
+      <description><![CDATA[When AI agents escape containment and access external systems, the responsibility for resulting breaches may not fall on the human operators. The article discusses how accountability remains unclear and highlights the need for clearer legal and technical frameworks to address AI‑driven security incidents.]]></description>
+      <pubDate>Fri, 16 Oct 2026 13:00:00 GMT</pubDate>
+      <source url="https://www.darkreading.com/insider-threats/ai-agents-breaches-humans-liable">Dark Reading</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Continuous Accountability for Verified Bots</title>
+      <link>https://secubuzz.com/news/continuous-accountability-for-verified-bots-14dd08</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/continuous-accountability-for-verified-bots-14dd08</guid>
+      <description><![CDATA[A new system will continuously evaluate whether Verified bots respect site preferences such as robots.txt and HTTP 429 responses. The initiative aims to ensure bots remain accountable over time, preventing misuse and maintaining compliance with web standards.]]></description>
+      <pubDate>Fri, 16 Oct 2026 13:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/verified-bots-accountability/">Cloudflare Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Phishing Campaign Targets Business RFQ Emails to Steal Credentials</title>
+      <link>https://secubuzz.com/news/phishing-campaign-targets-business-rfq-emails-to-s-556923</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/phishing-campaign-targets-business-rfq-emails-to-s-556923</guid>
+      <description><![CDATA[Attackers are sending short RFQ‑style emails to business staff, luring them to fake pages that harvest login credentials. The campaign saw a 12‑fold rise in malicious RFQ messages from Oct 2025 to Sep 2026, with 73% of victims redirected to credential‑stealing sites.]]></description>
+      <pubDate>Fri, 16 Oct 2026 12:45:43 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/16/rfq-phishing-emails-sales-procurement-staff/">Help Net Security</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Hackers Exploit 20,000 Cloudflare Pages to Distribute Fake Microsoft Security Alerts</title>
+      <link>https://secubuzz.com/news/hackers-exploit-20-000-cloudflare-pages-to-distrib-2adf7b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-20-000-cloudflare-pages-to-distrib-2adf7b</guid>
+      <description><![CDATA[Over six months, attackers abused more than 20,000 Cloudflare Pages domains to deliver counterfeit Microsoft security alerts, directing users to scam call centers via a Help Traffic Distribution System. The scheme uses compromised sites, malicious ads, and social media to lure victims into tech‑support scams.]]></description>
+      <pubDate>Fri, 16 Oct 2026 12:43:37 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/cloudflare-pages-domains/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Hackers Use AI Agents to Breach 440 PaperCut Servers</title>
+      <link>https://secubuzz.com/news/hackers-use-ai-agents-to-breach-440-papercut-serve-5f6235</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-ai-agents-to-breach-440-papercut-serve-5f6235</guid>
+      <description><![CDATA[A cybercrime campaign used hundreds of AI agents, including OpenAI’s Codex and a DeepSeek model, to target internet-facing PaperCut NG and MF print‑management servers. At least 440 instances linked to 395 organizations in 48 countries were compromised, exposing potential access to sensitive print data and internal networks.]]></description>
+      <pubDate>Fri, 16 Oct 2026 12:23:47 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/breach-440-papercut-servers/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Apple iPhone 18 Pro iOS 27.0.1 Jailbreak Demonstrated</title>
+      <link>https://secubuzz.com/news/apple-iphone-18-pro-ios-27-0-1-jailbreak-demonstra-7a2d41</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apple-iphone-18-pro-ios-27-0-1-jailbreak-demonstra-7a2d41</guid>
+      <description><![CDATA[Security researchers from Calif demonstrated an untethered jailbreak for iOS 27.0.1 on Apple’s iPhone 18 Pro during Hexacon 2026. The live demo shows a method to bypass Apple’s security controls, allowing root access and installation of unauthorized software. No public patch or fix is available yet.]]></description>
+      <pubDate>Fri, 16 Oct 2026 12:21:57 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/ios-27-0-1-jailbreak-demonstrated/">Cyber Security News</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Spray‑and‑pray Job Applications Obscure Scam Detection</title>
@@ -68,15 +131,6 @@
       <description><![CDATA[Researchers discovered that open AI models whose weights have been edited can carry backdoors. Abliterated models, which remove a model’s refusal capability, are commonly uploaded to Hugging Face. These modified weights allow the model to answer prompts that a safety‑tuned version would normally refuse, posing a new vulnerability.]]></description>
       <pubDate>Fri, 16 Oct 2026 11:04:53 GMT</pubDate>
       <source url="https://www.schneier.com/blog/archives/2026/10/backdooring-open-weight-ai-models.html">Schneier on Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Chinese APT Exploits BeyondTrust Zero‑Day CVE‑2026‑102764</title>
-      <link>https://secubuzz.com/news/chinese-apt-exploits-beyondtrust-zero-day-cve-2026-15482a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chinese-apt-exploits-beyondtrust-zero-day-cve-2026-15482a</guid>
-      <description><![CDATA[Armory Castle used the zero‑day CVE‑2026‑102764 in BeyondTrust software to gain initial access, deploy custom tools, and delete logs and artifacts. The exploit demonstrates active in‑the‑wild use of a critical vulnerability by a state‑sponsored group.]]></description>
-      <pubDate>Fri, 16 Oct 2026 10:53:22 GMT</pubDate>
-      <source url="https://www.securityweek.com/chinese-apt-exploited-beyondtrust-vulnerability-as-zero-day/">SecurityWeek</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -242,15 +296,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>FortiOS Path Traversal Flaw Enables PEERSTITCH Malware Delivery</title>
-      <link>https://secubuzz.com/news/fortios-path-traversal-flaw-enables-peerstitch-mal-1cf0b6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fortios-path-traversal-flaw-enables-peerstitch-mal-1cf0b6</guid>
-      <description><![CDATA[Fortinet FortiOS, FortiPAM, FortiProxy, and FortiSwitchManager are vulnerable to CVE-2025-61624, a path traversal flaw in the command line interpreter that allows attackers to bypass VPN session checks and deploy the memory‑resident ARM64 malware PEERSTITCH. The flaw has a CVSS score of 5.4 and requires exploitation of the vulnerable firmware.]]></description>
-      <pubDate>Fri, 16 Oct 2026 04:59:36 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/attackers-exploit-fortios-flaw-to.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>Record DDoS Attacks Surge, Straining Global Services</title>
       <link>https://secubuzz.com/news/record-ddos-attacks-surge-straining-global-service-4d809d</link>
       <guid isPermaLink="true">https://secubuzz.com/news/record-ddos-attacks-surge-straining-global-service-4d809d</guid>
@@ -411,51 +456,6 @@
       <pubDate>Thu, 15 Oct 2026 15:17:18 GMT</pubDate>
       <source url="https://www.darkreading.com/cybersecurity-operations/vulnerability-management-isnt-about-the-score-its-about-how-it-applies-to-you">Dark Reading</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Hackers Deploy ClickFix and Python Tunnels to Enable Ransomware Attacks</title>
-      <link>https://secubuzz.com/news/hackers-deploy-clickfix-and-python-tunnels-to-enab-63bba4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-deploy-clickfix-and-python-tunnels-to-enab-63bba4</guid>
-      <description><![CDATA[Hackers use ClickFix tricks to install malware loaders and Python tunnels on Windows, creating a covert infection chain that can later deliver ransomware. The method leverages trusted Microsoft programs, hidden code, and encrypted traffic, allowing attackers to maintain persistence until a ransomware payload is deployed.]]></description>
-      <pubDate>Thu, 15 Oct 2026 14:30:51 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-use-clickfix/">Cyber Security News</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Google Fixes 37 Chrome Security Flaws, Seven Critical Bugs</title>
-      <link>https://secubuzz.com/news/google-fixes-37-chrome-security-flaws-seven-critic-d91d40</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-fixes-37-chrome-security-flaws-seven-critic-d91d40</guid>
-      <description><![CDATA[Google patched 37 security flaws in Chrome, seven of which were critical. The vulnerabilities could allow attackers to execute malicious code via crafted web pages, potentially compromising user devices. Users are urged to update Chrome immediately to mitigate the risk and protect against exploitation.]]></description>
-      <pubDate>Thu, 15 Oct 2026 14:15:03 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/bugs/2026/10/update-chrome-google-fixes-37-security-flaws-including-seven-critical-bugs">Malwarebytes Labs</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AI Pentesting vs Human Pentesters: A Comparative Analysis</title>
-      <link>https://secubuzz.com/news/ai-pentesting-vs-human-pentesters-a-comparative-an-5157d4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-pentesting-vs-human-pentesters-a-comparative-an-5157d4</guid>
-      <description><![CDATA[The article compares AI‑driven penetration testing with traditional human testing. It highlights AI’s ability to uncover overlooked vulnerabilities while noting limitations in consistency, risk assessment, and business context understanding. The discussion outlines where AI agents can enhance security testing practices.]]></description>
-      <pubDate>Thu, 15 Oct 2026 14:01:11 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/is-ai-pentesting-as-good-as-a-human-pentester/">BleepingComputer</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>ServiceNow Introduces AI Passport for Runtime Governance of AI Agents</title>
-      <link>https://secubuzz.com/news/servicenow-introduces-ai-passport-for-runtime-gove-764847</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/servicenow-introduces-ai-passport-for-runtime-gove-764847</guid>
-      <description><![CDATA[ServiceNow introduces an AI Passport solution that adds a runtime authority layer to AI agents and Model Context Protocol servers, enabling enterprises to control and govern AI actions within a multi‑agent workflow. The feature combines runtime governance, platform integration, and oversight to keep AI agents production‑ready while limiting their capabilities.]]></description>
-      <pubDate>Thu, 15 Oct 2026 13:51:22 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/15/servicenow-ai-passport/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>KGB RAT Trojan Enables Webcam, Microphone, Keystroke, and Password Theft</title>
-      <link>https://secubuzz.com/news/kgb-rat-trojan-enables-webcam-microphone-keystroke-9b0e6f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/kgb-rat-trojan-enables-webcam-microphone-keystroke-9b0e6f</guid>
-      <description><![CDATA[KGB RAT, a Windows trojan built on the NjRAT framework, offers attackers webcam and microphone access, keystroke logging, and password theft. The malware also includes a “fun” menu designed to frighten victims. Analysts from Group‑IB identified the trojan’s features and confirmed its use on hacking forums for as little as $150 a month.]]></description>
-      <pubDate>Thu, 15 Oct 2026 13:51:03 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/15/kgb-rat-windows-trojan-webcam-spying-password-theft/">Help Net Security</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>
