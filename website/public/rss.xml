@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Oct 2026 01:23:34 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 04:19:22 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>New infosec products of the week: October 16, 2026</title>
+      <link>https://secubuzz.com/news/new-infosec-products-of-the-week-october-16-2026-3092c1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/new-infosec-products-of-the-week-october-16-2026-3092c1</guid>
+      <description><![CDATA[The week’s highlights include releases from NinjaOne, Qualys, Scytale, and SolarWinds. NinjaOne introduces Katana AI, an agentic AI technician, and the MCP server, an orchestration connector extending AI tool access. The post details how these tools accelerate IT problem resolution.]]></description>
+      <pubDate>Fri, 16 Oct 2026 04:00:27 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/16/new-infosec-products-of-the-week-october-16-2026/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Fastfetch 2.70.0 changes how Disk free space is reported</title>
+      <link>https://secubuzz.com/news/fastfetch-2-70-0-changes-how-disk-free-space-is-re-2b15e5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fastfetch-2-70-0-changes-how-disk-free-space-is-re-2b15e5</guid>
+      <description><![CDATA[Fastfetch 2.70.0, a cross‑platform system information tool, removed QuickJS scripting and altered Disk module reporting. The new Disk format drops the {size-available} field; {size-free} now reports either free or available space. Configs for older versions may produce different values or fail.]]></description>
+      <pubDate>Fri, 16 Oct 2026 03:53:43 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/16/fastfetch-2-70-0-released/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>Proxyjacking Campaign Targets D-Link, Ubiquiti, SAP Edge Devices</title>
       <link>https://secubuzz.com/news/proxyjacking-campaign-targets-d-link-ubiquiti-sap-2e76c9</link>
@@ -23,6 +41,15 @@
       <description><![CDATA[A commentary on the cybersecurity industry's approach to AI security highlights concerns about current strategies and suggests a need for more effective safeguards. The piece calls for a reassessment of AI integration practices to better protect systems from emerging threats.]]></description>
       <pubDate>Fri, 16 Oct 2026 00:46:35 GMT</pubDate>
       <source url="https://isc.sans.edu/diary/rss/33430">SANS Internet Storm Center</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>SecTor 2026 Highlights Rapidly Shifting Cybersecurity Landscape</title>
+      <link>https://secubuzz.com/news/sector-2026-highlights-rapidly-shifting-cybersecur-1aef35</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sector-2026-highlights-rapidly-shifting-cybersecur-1aef35</guid>
+      <description><![CDATA[The SecTor 2026 conference in Toronto closed with record attendance and a 22% growth in participation. Experts discussed emerging risks and critical perspectives on the evolving threat environment, underscoring the need for adaptive security strategies.]]></description>
+      <pubDate>Thu, 15 Oct 2026 22:10:08 GMT</pubDate>
+      <source url="https://www.darkreading.com/cybersecurity-operations/sector-2026-reveals-a-rapidly-shifting-cybersecurity-landscape">Dark Reading</source>
       <category>Policy</category>
     </item>
     <item>
@@ -51,6 +78,15 @@
       <pubDate>Thu, 15 Oct 2026 20:46:00 GMT</pubDate>
       <source url="https://therecord.media/federal-bankruptcy-courts-dealing-with-cyberattack-outage">The Record</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>AI Slop Dumbing Down Cyberattacks</title>
+      <link>https://secubuzz.com/news/ai-slop-dumbing-down-cyberattacks-6073d9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-slop-dumbing-down-cyberattacks-6073d9</guid>
+      <description><![CDATA[Industry analysts warn that the hype around AI is misleading, as it is actually simplifying cyberattacks. Serious threat actors are largely ignoring AI, suggesting that current AI-driven tools are not yet effective for sophisticated attacks.]]></description>
+      <pubDate>Thu, 15 Oct 2026 20:43:20 GMT</pubDate>
+      <source url="https://www.darkreading.com/threat-intelligence/ai-slop-ruining-cyberattacks">Dark Reading</source>
+      <category>Policy</category>
     </item>
     <item>
       <title>Hackers Exploit Collabora RCE Flaw to Backdoor Nextcloud Servers</title>
@@ -419,42 +455,6 @@
       <description><![CDATA[The CikaBika Bot Remote Access Trojan, delivered via phishing, offers reconnaissance, remote execution, and data exfiltration. It uses Discord servers for command and control, enabling attackers to manage compromised hosts from a covert channel. Security analysts recommend monitoring Discord traffic and blocking malicious bot tokens to mitigate the threat.]]></description>
       <pubDate>Thu, 15 Oct 2026 11:25:58 GMT</pubDate>
       <source url="https://www.securityweek.com/cikabika-bot-rat-uses-discord-for-cc/">SecurityWeek</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>AI Tool Enables Law Enforcement to Locate Homes from Indoor Photos</title>
-      <link>https://secubuzz.com/news/ai-tool-enables-law-enforcement-to-locate-homes-fr-30534a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-tool-enables-law-enforcement-to-locate-homes-fr-30534a</guid>
-      <description><![CDATA[An AI tool used by police can match indoor images to property listings, revealing home addresses even when GPS data is removed. The technology cross‑references photo content with online listings, potentially compromising privacy for residents who assume location data is stripped.]]></description>
-      <pubDate>Thu, 15 Oct 2026 11:09:53 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/privacy/2026/10/raven-ai-lets-cops-find-your-home-from-a-photo-taken-inside">Malwarebytes Labs</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>AI Confidence Grows Faster Than Validation Standards</title>
-      <link>https://secubuzz.com/news/ai-confidence-grows-faster-than-validation-standar-497bad</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-confidence-grows-faster-than-validation-standar-497bad</guid>
-      <description><![CDATA[AI tools used in digital forensics and incident response are becoming increasingly confident in their outputs, outpacing the development of governance and validation methods. The lack of reliable verification processes risks unchecked errors beyond individual workstations, potentially compromising investigations.]]></description>
-      <pubDate>Thu, 15 Oct 2026 11:04:35 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/why-ai-confidence-is-not-validation.html">The Hacker News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>India Mandates Caller ID Display on 4G and Newer Networks</title>
-      <link>https://secubuzz.com/news/india-mandates-caller-id-display-on-4g-and-newer-n-5e0b33</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/india-mandates-caller-id-display-on-4g-and-newer-n-5e0b33</guid>
-      <description><![CDATA[The Indian government has ordered telecom service providers to display callers’ registered names with numbers on all 4G and newer networks starting November 1, 2026. The directive aims to help users identify unknown callers and reduce spam and fraudulent calls.]]></description>
-      <pubDate>Thu, 15 Oct 2026 10:42:16 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/india-mandates-registered-caller-name.html">The Hacker News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Android RAT ‘Hirudo’ Replaces Banking Apps With Trojanized Copies</title>
-      <link>https://secubuzz.com/news/android-rat-hirudo-replaces-banking-apps-with-troj-3a43e7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/android-rat-hirudo-replaces-banking-apps-with-troj-3a43e7</guid>
-      <description><![CDATA[The Hirudo malware merges a banking trojan with a remote‑access trojan, installing trojanized copies of legitimate banking apps on infected Android devices. The RAT allows attackers to intercept credentials and control the device, posing a significant threat to mobile banking users.]]></description>
-      <pubDate>Thu, 15 Oct 2026 10:15:32 GMT</pubDate>
-      <source url="https://www.securityweek.com/novel-android-banking-rat-hirudo-replaces-banking-apps-with-trojanized-copies/">SecurityWeek</source>
       <category>Malware</category>
     </item>
   </channel>

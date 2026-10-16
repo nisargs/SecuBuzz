@@ -1,5 +1,40 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/10/16/new-infosec-products-of-the-week-october-16-2026/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/16/new-infosec-products-of-the-week-october-16-2026/",
+    "title": "New infosec products of the week: October 16, 2026",
+    "headline": "New infosec products of the week: October 16, 2026",
+    "summary": "The week’s highlights include releases from NinjaOne, Qualys, Scytale, and SolarWinds. NinjaOne introduces Katana AI, an agentic AI technician, and the MCP server, an orchestration connector extending AI tool access. The post details how these tools accelerate IT problem resolution.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-16T04:00:27.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/16/new-infosec-products-of-the-week-october-16-2026/",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/15/qualys-trurisk-eliminate-2-0-truconfidence/"
+      },
+      {
+        "source": "CrowdStrike",
+        "sourceUrl": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-october-2026/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/16/fastfetch-2-70-0-released/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/16/fastfetch-2-70-0-released/",
+    "title": "Fastfetch 2.70.0 changes how Disk free space is reported",
+    "headline": "Fastfetch 2.70.0 changes how Disk free space is reported",
+    "summary": "Fastfetch 2.70.0, a cross‑platform system information tool, removed QuickJS scripting and altered Disk module reporting. The new Disk format drops the {size-available} field; {size-free} now reports either free or available space. Configs for older versions may produce different values or fail.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-16T03:53:43.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/16/fastfetch-2-70-0-released/",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybernewsai.com/blog/proxyjacking-edge-device-bandwidth-theft-detection",
     "sourceUrl": "https://cybernewsai.com/blog/proxyjacking-edge-device-bandwidth-theft-detection",
     "title": "Proxyjacking Campaign Targets D-Link, Ubiquiti, SAP Edge Devices",
@@ -28,6 +63,19 @@
     "source": "SANS Internet Storm Center",
     "publishedAt": "2026-10-16T00:46:35.000Z",
     "url": "https://isc.sans.edu/diary/rss/33430",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.darkreading.com/cybersecurity-operations/sector-2026-reveals-a-rapidly-shifting-cybersecurity-landscape",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/sector-2026-reveals-a-rapidly-shifting-cybersecurity-landscape",
+    "title": "SecTor 2026 Highlights Rapidly Shifting Cybersecurity Landscape",
+    "headline": "SecTor 2026 Highlights Rapidly Shifting Cybersecurity Landscape",
+    "summary": "The SecTor 2026 conference in Toronto closed with record attendance and a 22% growth in participation. Experts discussed emerging risks and critical perspectives on the evolving threat environment, underscoring the need for adaptive security strategies.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-15T22:10:08.000Z",
+    "url": "https://www.darkreading.com/cybersecurity-operations/sector-2026-reveals-a-rapidly-shifting-cybersecurity-landscape",
     "additionalSources": []
   },
   {
@@ -67,6 +115,19 @@
     "source": "The Record",
     "publishedAt": "2026-10-15T20:46:00.000Z",
     "url": "https://therecord.media/federal-bankruptcy-courts-dealing-with-cyberattack-outage",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.darkreading.com/threat-intelligence/ai-slop-ruining-cyberattacks",
+    "sourceUrl": "https://www.darkreading.com/threat-intelligence/ai-slop-ruining-cyberattacks",
+    "title": "AI Slop Dumbing Down Cyberattacks",
+    "headline": "AI Slop Dumbing Down Cyberattacks",
+    "summary": "Industry analysts warn that the hype around AI is misleading, as it is actually simplifying cyberattacks. Serious threat actors are largely ignoring AI, suggesting that current AI-driven tools are not yet effective for sophisticated attacks.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-15T20:43:20.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/ai-slop-ruining-cyberattacks",
     "additionalSources": []
   },
   {
@@ -800,24 +861,6 @@
     "publishedAt": "2026-10-15T07:43:54.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/15/optro-grc-intelligence-platform/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/15/qualys-trurisk-eliminate-2-0-truconfidence/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/15/qualys-trurisk-eliminate-2-0-truconfidence/",
-    "title": "Qualys Launches TruConfidence for Automated Cyber Risk Remediation",
-    "headline": "Qualys Launches TruConfidence for Automated Cyber Risk Remediation",
-    "summary": "Qualys unveiled TruRisk Eliminate 2.0 with TruConfidence, an orchestration engine that automates remediation at machine speed. The platform leverages AI to manage patch deployment, achieving 40% autonomous rollouts with less than 0.1% rollback. It aims to streamline cyber risk elimination for enterprises.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-15T07:31:41.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/15/qualys-trurisk-eliminate-2-0-truconfidence/",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/14/kunal-modasiya-qualys-vulnerability-remediation/"
-      }
-    ]
   },
   {
     "id": "https://thehackernews.com/2026/10/langflows-critical-authenticated-rce.html",
@@ -1911,19 +1954,6 @@
     "source": "Help Net Security",
     "publishedAt": "2026-10-13T05:00:51.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/13/frontier-ai-ot-security-threat/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-october-2026/",
-    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-october-2026/",
-    "title": "October 2026 Patch Tuesday: 1,413 CVEs Include Three Zero-Days and 75 Critical Vulnerabilities",
-    "headline": "October 2026 Patch Tuesday: 1,413 CVEs Include Three Zero-Days and 75 Critical Vulnerabilities",
-    "summary": "October 2026 Patch Tuesday released 1,413 CVEs, including three zero‑day vulnerabilities and 75 critical flaws. The update covers a wide range of software, urging organizations to apply patches promptly to mitigate potential exploitation. No active exploits reported yet, but the high number of critical issues warrants immediate attention.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "CrowdStrike",
-    "publishedAt": "2026-10-13T05:00:00.000Z",
-    "url": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-october-2026/",
     "additionalSources": []
   },
   {
@@ -5146,36 +5176,5 @@
     "publishedAt": "2026-10-01T13:57:07.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/01/deepkeeps-ai-lens-flags-coding-agent-data-leaks-and-routes-destructive-commands-for-approval/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/01/exabeam-agentic-soc/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/exabeam-agentic-soc/",
-    "title": "Exabeam Introduces AI‑Assisted Investigations for On‑Premises Data",
-    "headline": "Exabeam Introduces AI‑Assisted Investigations for On‑Premises Data",
-    "summary": "Exabeam launches new capabilities that extend its Agentic SOC to both cloud and on‑premises environments. The update enables AI‑driven investigation, execution, and governance while keeping data local. It aims to accelerate threat detection and response for organizations that require on‑premises data residency.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-01T13:50:04.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/01/exabeam-agentic-soc/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/01/radarfirst-ai-incident-management/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/radarfirst-ai-incident-management/",
-    "title": "RadarFirst Launches AI Incident Management Tool",
-    "headline": "RadarFirst Launches AI Incident Management Tool",
-    "summary": "RadarFirst has released Radar AI Incident Management, a tool designed to help organizations investigate and document AI-related incidents. The solution addresses risks from biased outcomes, data exposure, and unintended AI actions, enabling coordinated responses across privacy, security, compliance, and product teams.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-01T13:39:15.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/01/radarfirst-ai-incident-management/",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/09/attackers-abuse-msp360-to-deploy.html"
-      }
-    ]
   }
 ]
