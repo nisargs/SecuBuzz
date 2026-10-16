@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Oct 2026 20:19:23 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 21:12:03 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>BeyondTrust Remote Support Zero-Day Adds to Edge Device Exploit Trend</title>
+      <link>https://secubuzz.com/news/beyondtrust-remote-support-zero-day-adds-to-edge-d-3094d2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/beyondtrust-remote-support-zero-day-adds-to-edge-d-3094d2</guid>
+      <description><![CDATA[BeyondTrust’s Remote Support software now has a zero‑day vulnerability, joining a wave that has already affected Ivanti, Cisco and Palo Alto Networks edge devices. The flaw allows attackers to execute code on the affected systems, potentially compromising network traffic and device control. No patch has been released yet.]]></description>
+      <pubDate>Fri, 16 Oct 2026 20:34:37 GMT</pubDate>
+      <source url="https://www.darkreading.com/endpoint-security/beyondtrust-remote-support-exploited-edge-bugs">Dark Reading</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Magento and Adobe Commerce Vulnerability Allows Remote Code Execution</title>
       <link>https://secubuzz.com/news/magento-and-adobe-commerce-vulnerability-allows-re-586db8</link>
@@ -32,6 +41,24 @@
       <description><![CDATA[Biomemory has introduced DNA Shield, its inaugural commercial offering built on the Molecular IT Platform, following the acquisition of catalog assets and the appointment of Laurent Guengant as CEO earlier this year.]]></description>
       <pubDate>Fri, 16 Oct 2026 19:22:12 GMT</pubDate>
       <source url="https://www.darkreading.com/data-privacy/biomemory-launches-dna-shield">Dark Reading</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Enterprise AI Shifts to Risk Management as Security Concerns Mount</title>
+      <link>https://secubuzz.com/news/enterprise-ai-shifts-to-risk-management-as-securit-2023df</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/enterprise-ai-shifts-to-risk-management-as-securit-2023df</guid>
+      <description><![CDATA[Companies are realizing that the real challenge with AI is not just adopting the technology but managing its security risks. As AI systems become more integral, organizations must focus on execution controls, monitoring, and governance to prevent misuse and protect sensitive data.]]></description>
+      <pubDate>Fri, 16 Oct 2026 19:13:59 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyber-risk/enterprise-ai-risk-management-phase-security-concerns-rise">Dark Reading</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>AI Controls Robotic Arm in 16 Minutes</title>
+      <link>https://secubuzz.com/news/ai-controls-robotic-arm-in-16-minutes-3c136c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-controls-robotic-arm-in-16-minutes-3c136c</guid>
+      <description><![CDATA[An AI system demonstrated the ability to take full control of a robotic arm within 16 minutes, highlighting vulnerabilities in operational technology devices used by utilities and factories. The incident underscores the need for operators to adopt agile cyber defenses and secure OT environments against rapid AI-driven attacks.]]></description>
+      <pubDate>Fri, 16 Oct 2026 18:37:50 GMT</pubDate>
+      <source url="https://www.darkreading.com/ics-ot-security/ai-takes-control-robotic-arm-16-minutes">Dark Reading</source>
       <category>Policy</category>
     </item>
     <item>
@@ -177,15 +204,6 @@
       <pubDate>Fri, 16 Oct 2026 13:05:00 GMT</pubDate>
       <source url="https://therecord.media/anne-arundel-county-maryland-confirms-data-breach">The Record</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Suspected Chinese Espionage Attackers Abuse BeyondTrust IT Support Zero‑Day</title>
-      <link>https://secubuzz.com/news/suspected-chinese-espionage-attackers-abuse-beyond-553970</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/suspected-chinese-espionage-attackers-abuse-beyond-553970</guid>
-      <description><![CDATA[A suspected Chinese state-backed group is exploiting a new zero‑day vulnerability in BeyondTrust IT Support software to conduct espionage. The flaw allows attackers to gain privileged access and exfiltrate sensitive data from targeted organizations. No CVE ID has been released; mitigation involves applying vendor patches as soon as available.]]></description>
-      <pubDate>Fri, 16 Oct 2026 13:00:00 GMT</pubDate>
-      <source url="https://therecord.media/beyond-trust-cyberattack-china">The Record</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>AI Agents Commit Breaches, Humans May Not Be Held Liable</title>
@@ -438,24 +456,6 @@
       <pubDate>Fri, 16 Oct 2026 03:53:43 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/16/fastfetch-2-70-0-released/">Help Net Security</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Industry Debate on AI Security Approaches</title>
-      <link>https://secubuzz.com/news/industry-debate-on-ai-security-approaches-57dd7d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/industry-debate-on-ai-security-approaches-57dd7d</guid>
-      <description><![CDATA[A commentary on the cybersecurity industry's approach to AI security highlights concerns about current strategies and suggests a need for more effective safeguards. The piece calls for a reassessment of AI integration practices to better protect systems from emerging threats.]]></description>
-      <pubDate>Fri, 16 Oct 2026 00:46:35 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33430">SANS Internet Storm Center</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>AI-Powered Espionage Targets Government Linux Systems</title>
-      <link>https://secubuzz.com/news/ai-powered-espionage-targets-government-linux-syst-749199</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-powered-espionage-targets-government-linux-syst-749199</guid>
-      <description><![CDATA[Unit 42 reports an AI‑driven espionage campaign that has infiltrated government Linux infrastructure. Attackers deploy custom malware, web shells, and advanced credential‑theft tools to harvest privileged access. The operation demonstrates sophisticated state‑sponsored tactics aimed at compromising critical public sector systems.]]></description>
-      <pubDate>Thu, 15 Oct 2026 22:00:09 GMT</pubDate>
-      <source url="https://unit42.paloaltonetworks.com/ai-campaign-targets-linux-infrastructure/">Unit 42</source>
-      <category>Malware</category>
     </item>
   </channel>
 </rss>

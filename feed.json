@@ -1,5 +1,27 @@
 [
   {
+    "id": "https://www.darkreading.com/endpoint-security/beyondtrust-remote-support-exploited-edge-bugs",
+    "sourceUrl": "https://www.darkreading.com/endpoint-security/beyondtrust-remote-support-exploited-edge-bugs",
+    "title": "BeyondTrust Remote Support Zero-Day Adds to Edge Device Exploit Trend",
+    "headline": "BeyondTrust Remote Support Zero-Day Adds to Edge Device Exploit Trend",
+    "summary": "BeyondTrust’s Remote Support software now has a zero‑day vulnerability, joining a wave that has already affected Ivanti, Cisco and Palo Alto Networks edge devices. The flaw allows attackers to execute code on the affected systems, potentially compromising network traffic and device control. No patch has been released yet.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-16T20:34:37.000Z",
+    "url": "https://www.darkreading.com/endpoint-security/beyondtrust-remote-support-exploited-edge-bugs",
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/beyond-trust-cyberattack-china"
+      },
+      {
+        "source": "Dark Reading",
+        "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching"
+      }
+    ]
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/critical-blockstrap-flaw-lets-hackers-run-code-on-magento-servers/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-blockstrap-flaw-lets-hackers-run-code-on-magento-servers/",
     "title": "Magento and Adobe Commerce Vulnerability Allows Remote Code Execution",
@@ -50,6 +72,32 @@
     "source": "Dark Reading",
     "publishedAt": "2026-10-16T19:22:12.000Z",
     "url": "https://www.darkreading.com/data-privacy/biomemory-launches-dna-shield",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.darkreading.com/cyber-risk/enterprise-ai-risk-management-phase-security-concerns-rise",
+    "sourceUrl": "https://www.darkreading.com/cyber-risk/enterprise-ai-risk-management-phase-security-concerns-rise",
+    "title": "Enterprise AI Shifts to Risk Management as Security Concerns Mount",
+    "headline": "Enterprise AI Shifts to Risk Management as Security Concerns Mount",
+    "summary": "Companies are realizing that the real challenge with AI is not just adopting the technology but managing its security risks. As AI systems become more integral, organizations must focus on execution controls, monitoring, and governance to prevent misuse and protect sensitive data.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-16T19:13:59.000Z",
+    "url": "https://www.darkreading.com/cyber-risk/enterprise-ai-risk-management-phase-security-concerns-rise",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.darkreading.com/ics-ot-security/ai-takes-control-robotic-arm-16-minutes",
+    "sourceUrl": "https://www.darkreading.com/ics-ot-security/ai-takes-control-robotic-arm-16-minutes",
+    "title": "AI Controls Robotic Arm in 16 Minutes",
+    "headline": "AI Controls Robotic Arm in 16 Minutes",
+    "summary": "An AI system demonstrated the ability to take full control of a robotic arm within 16 minutes, highlighting vulnerabilities in operational technology devices used by utilities and factories. The incident underscores the need for operators to adopt agile cyber defenses and secure OT environments against rapid AI-driven attacks.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-16T18:37:50.000Z",
+    "url": "https://www.darkreading.com/ics-ot-security/ai-takes-control-robotic-arm-16-minutes",
     "additionalSources": []
   },
   {
@@ -301,24 +349,6 @@
       {
         "source": "BleepingComputer",
         "sourceUrl": "https://www.bleepingcomputer.com/news/security/burger-king-japan-data-breach-exposes-11-million-customer-records/"
-      }
-    ]
-  },
-  {
-    "id": "https://therecord.media/beyond-trust-cyberattack-china",
-    "sourceUrl": "https://therecord.media/beyond-trust-cyberattack-china",
-    "title": "Suspected Chinese Espionage Attackers Abuse BeyondTrust IT Support Zero‑Day",
-    "headline": "Suspected Chinese Espionage Attackers Abuse BeyondTrust IT Support Zero‑Day",
-    "summary": "A suspected Chinese state-backed group is exploiting a new zero‑day vulnerability in BeyondTrust IT Support software to conduct espionage. The flaw allows attackers to gain privileged access and exfiltrate sensitive data from targeted organizations. No CVE ID has been released; mitigation involves applying vendor patches as soon as available.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "The Record",
-    "publishedAt": "2026-10-16T13:00:00.000Z",
-    "url": "https://therecord.media/beyond-trust-cyberattack-china",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/chinese-apt-exploited-beyondtrust-vulnerability-as-zero-day/"
       }
     ]
   },
@@ -1313,24 +1343,6 @@
     "publishedAt": "2026-10-14T23:00:00.000Z",
     "url": "https://therecord.media/ukraine-says-starshield-working-again-after-disruption",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching",
-    "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching",
-    "title": "IvantiICS Zero-Day Attacks Highlight Vendor Patching Hurdles",
-    "headline": "IvantiICS Zero-Day Attacks Highlight Vendor Patching Hurdles",
-    "summary": "IvantiICS suffered a high‑severity authentication bypass and RCE flaw, CVE-2026-104935, that was only partially patched in July. The vulnerability enabled threat actors to gain unauthenticated remote code execution, exposing the system to exploitation until a full patch is applied.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-14T21:20:13.000Z",
-    "url": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-immediately-fix-ivanti-flaw-exploited-as-zero-day/"
-      }
-    ]
   },
   {
     "id": "https://blog.cloudflare.com/yandex-outage/",
@@ -5181,23 +5193,5 @@
     "publishedAt": "2026-10-02T11:02:19.000Z",
     "url": "https://www.schneier.com/blog/archives/2026/10/how-american-political-campaigns-are-using-ai-and-what-theyre-spending-on-the-tools.html",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/ai-agents-aimed-sql-injection-at-us-and-canadian-government-sites/",
-    "sourceUrl": "https://www.securityweek.com/ai-agents-aimed-sql-injection-at-us-and-canadian-government-sites/",
-    "title": "AI Agents Target US Department of Education and Library and Archives Canada with SQL Injection",
-    "headline": "AI Agents Target US Department of Education and Library and Archives Canada with SQL Injection",
-    "summary": "Researchers identified AI-driven agents that performed SQL injection attacks against the US Department of Education and Library and Archives Canada. The attacks exploited database input validation flaws, potentially allowing attackers to read or modify sensitive data. No confirmed data exfiltration was reported, and mitigation involves patching input handling and monitoring for injection attempts.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-02T08:38:46.000Z",
-    "url": "https://www.securityweek.com/ai-agents-aimed-sql-injection-at-us-and-canadian-government-sites/",
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/autonomous-ai-agents-attack-us-canadian-government-portals"
-      }
-    ]
   }
 ]

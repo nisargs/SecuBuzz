@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "beyondtrust-remote-support-zero-day-adds-to-edge-d-3094d2",
+    "title": "BeyondTrust Remote Support Zero-Day Adds to Edge Device Exploit Trend",
+    "summary": "BeyondTrust’s Remote Support software now has a zero‑day vulnerability, joining a wave that has already affected Ivanti, Cisco and Palo Alto Networks edge devices. The flaw allows attackers to execute code on the affected systems, potentially compromising network traffic and device control. No patch has been released yet.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/endpoint-security/beyondtrust-remote-support-exploited-edge-bugs",
+    "publishedAt": "2026-10-16T20:34:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "beyondtrust-remote-support-zero-day-adds-to-edge-d",
+      "article-3094d2",
+      "3094d2",
+      "beyondtrust-remote-support-zero-day-adds-to-edge-device-expl"
+    ]
+  },
+  {
     "slug": "magento-and-adobe-commerce-vulnerability-allows-re-586db8",
     "title": "Magento and Adobe Commerce Vulnerability Allows Remote Code Execution",
     "summary": "A maximum‑severity flaw (CVE‑2026‑103849) in Magento’s BlockStrap component lets attackers execute arbitrary PHP code on store servers, potentially compromising customer data and site integrity. Adobe Commerce users must apply the vendor patch immediately to prevent exploitation.",
@@ -62,6 +80,41 @@ export const news: NewsBrief[] = [
       "article-4a04b4",
       "4a04b4",
       "biomemory-launches-dna-shield-first-commercial-product-built"
+    ]
+  },
+  {
+    "slug": "enterprise-ai-shifts-to-risk-management-as-securit-2023df",
+    "title": "Enterprise AI Shifts to Risk Management as Security Concerns Mount",
+    "summary": "Companies are realizing that the real challenge with AI is not just adopting the technology but managing its security risks. As AI systems become more integral, organizations must focus on execution controls, monitoring, and governance to prevent misuse and protect sensitive data.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyber-risk/enterprise-ai-risk-management-phase-security-concerns-rise",
+    "publishedAt": "2026-10-16T19:13:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "enterprise-ai-shifts-to-risk-management-as-securit",
+      "article-2023df",
+      "2023df",
+      "enterprise-ai-shifts-to-risk-management-as-security-concerns"
+    ]
+  },
+  {
+    "slug": "ai-controls-robotic-arm-in-16-minutes-3c136c",
+    "title": "AI Controls Robotic Arm in 16 Minutes",
+    "summary": "An AI system demonstrated the ability to take full control of a robotic arm within 16 minutes, highlighting vulnerabilities in operational technology devices used by utilities and factories. The incident underscores the need for operators to adopt agile cyber defenses and secure OT environments against rapid AI-driven attacks.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/ics-ot-security/ai-takes-control-robotic-arm-16-minutes",
+    "publishedAt": "2026-10-16T18:37:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-controls-robotic-arm-in-16-minutes",
+      "article-3c136c",
+      "3c136c"
     ]
   },
   {
@@ -349,24 +402,6 @@ export const news: NewsBrief[] = [
       "article-27c5b1",
       "27c5b1",
       "baltimore-suburb-confirms-august-data-breach-after-ransomwar"
-    ]
-  },
-  {
-    "slug": "suspected-chinese-espionage-attackers-abuse-beyond-553970",
-    "title": "Suspected Chinese Espionage Attackers Abuse BeyondTrust IT Support Zero‑Day",
-    "summary": "A suspected Chinese state-backed group is exploiting a new zero‑day vulnerability in BeyondTrust IT Support software to conduct espionage. The flaw allows attackers to gain privileged access and exfiltrate sensitive data from targeted organizations. No CVE ID has been released; mitigation involves applying vendor patches as soon as available.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/beyond-trust-cyberattack-china",
-    "publishedAt": "2026-10-16T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "suspected-chinese-espionage-attackers-abuse-beyond",
-      "article-553970",
-      "553970",
-      "suspected-chinese-espionage-attackers-abuse-beyondtrust-it-s"
     ]
   },
   {
@@ -1570,26 +1605,6 @@ export const news: NewsBrief[] = [
       "article-4a00a0",
       "4a00a0",
       "ukraine-restores-spacex-starshield-satellite-service-after-r"
-    ]
-  },
-  {
-    "slug": "ivantiics-zero-day-attacks-highlight-vendor-patchi-317f90",
-    "title": "IvantiICS Zero-Day Attacks Highlight Vendor Patching Hurdles",
-    "summary": "IvantiICS suffered a high‑severity authentication bypass and RCE flaw, CVE-2026-104935, that was only partially patched in July. The vulnerability enabled threat actors to gain unauthenticated remote code execution, exposing the system to exploitation until a full patch is applied.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching",
-    "publishedAt": "2026-10-14T21:20:13.000Z",
-    "cves": [
-      "CVE-2026-104935"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ivantiics-zero-day-attacks-highlight-vendor-patchi",
-      "article-317f90",
-      "317f90",
-      "ivantiics-zero-day-attacks-highlight-vendor-patching-hurdles"
     ]
   },
   {
@@ -6250,24 +6265,6 @@ export const news: NewsBrief[] = [
       "ai-adoption-surges-in-u-s-political-campaigns",
       "article-249c3a",
       "249c3a"
-    ]
-  },
-  {
-    "slug": "ai-agents-target-us-department-of-education-and-li-1966f4",
-    "title": "AI Agents Target US Department of Education and Library and Archives Canada with SQL Injection",
-    "summary": "Researchers identified AI-driven agents that performed SQL injection attacks against the US Department of Education and Library and Archives Canada. The attacks exploited database input validation flaws, potentially allowing attackers to read or modify sensitive data. No confirmed data exfiltration was reported, and mitigation involves patching input handling and monitoring for injection attempts.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/ai-agents-aimed-sql-injection-at-us-and-canadian-government-sites/",
-    "publishedAt": "2026-10-02T08:38:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-agents-target-us-department-of-education-and-li",
-      "article-1966f4",
-      "1966f4",
-      "ai-agents-target-us-department-of-education-and-library-and-"
     ]
   }
 ];
