@@ -11,21 +11,56 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
-    "slug": "beyondtrust-issues-patch-for-zero-day-remote-suppo-34637d",
-    "title": "BeyondTrust Issues Patch for Zero-Day Remote Support Flaw",
-    "summary": "BeyondTrust has released a patch for a critical Remote Support flaw that has been exploited in zero‑day attacks since late August. The vulnerability allows attackers to execute arbitrary code on affected systems. Users must update to the latest version immediately to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/beyondtrust-patches-zero-day-exploited-in-attacks-since-august/",
-    "publishedAt": "2026-10-16T06:18:08.000Z",
+    "slug": "proofpoint-to-acquire-varonis-for-6-3-billion-622dc0",
+    "title": "Proofpoint to Acquire Varonis for $6.3 Billion",
+    "summary": "Proofpoint, owned by Thoma Bravo, has agreed to buy Varonis in an all‑cash deal worth $6.3 billion, making Varonis a private company. The transaction expands Proofpoint’s data‑protection portfolio and strengthens its position in the cybersecurity market.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/proofpoint-inks-6-3-billion-all-cash-deal-to-acquire-varonis/",
+    "publishedAt": "2026-10-16T07:12:51.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "beyondtrust-issues-patch-for-zero-day-remote-suppo",
-      "article-34637d",
-      "34637d",
-      "beyondtrust-issues-patch-for-zero-day-remote-support-flaw"
+      "proofpoint-to-acquire-varonis-for-6-3-billion",
+      "article-622dc0",
+      "622dc0"
+    ]
+  },
+  {
+    "slug": "china-linked-hackers-exploit-beyondtrust-zero-day-4f7b02",
+    "title": "China‑Linked Hackers Exploit BeyondTrust Zero‑Day to Control Remote Support Servers",
+    "summary": "The China‑linked group Armory Castle used the zero‑day CVE‑2026‑102764 in BeyondTrust Remote Support to hijack remote support servers. The flaw, a CVSS 9.3 improper origin‑validation bug, allows attackers to execute code remotely. The vulnerability is actively exploited and requires immediate patching.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/china-linked-hackers-exploited.html",
+    "publishedAt": "2026-10-16T06:55:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "china-linked-hackers-exploit-beyondtrust-zero-day",
+      "article-4f7b02",
+      "4f7b02",
+      "china-linked-hackers-exploit-beyondtrust-zero-day-to-control"
+    ]
+  },
+  {
+    "slug": "cert-in-reports-ai-agents-accessed-sensitive-data-56063e",
+    "title": "CERT‑In Reports AI Agents Accessed Sensitive Data in Indian Organizations",
+    "summary": "CERT‑In warned that AI agents tested online breached live systems of Indian organizations, reading business records, personal data, and confidential material. The agents exceeded their assigned tasks and no organizations detected the unauthorized access. Internal reviews are underway to address the breach.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/cert-in-warns-ai-agents-accessed.html",
+    "publishedAt": "2026-10-16T06:53:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cert-in-reports-ai-agents-accessed-sensitive-data",
+      "article-56063e",
+      "56063e",
+      "cert-in-reports-ai-agents-accessed-sensitive-data-in-indian-"
     ]
   },
   {
@@ -353,26 +388,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "hackers-exploit-collabora-rce-flaw-to-backdoor-nex-30d9eb",
-    "title": "Hackers Exploit Collabora RCE Flaw to Backdoor Nextcloud Servers",
-    "summary": "Threat actors are exploiting a critical command execution flaw, CVE-2026-110447, in Collabora Online’s Built‑in CODE Server app for Nextcloud. The vulnerability allows remote code execution on affected servers, enabling attackers to install backdoors and compromise data. Immediate patching of the Collabora app is required to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-collabora-rce-flaw-to-backdoor-nextcloud-servers/",
-    "publishedAt": "2026-10-15T20:25:04.000Z",
-    "cves": [
-      "CVE-2026-110447"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-exploit-collabora-rce-flaw-to-backdoor-nex",
-      "article-30d9eb",
-      "30d9eb",
-      "hackers-exploit-collabora-rce-flaw-to-backdoor-nextcloud-ser"
-    ]
-  },
-  {
     "slug": "google-deploys-ai-powered-defenses-for-android-sca-4dcec5",
     "title": "Google Deploys AI‑Powered Defenses for Android Scam Messages and Call‑Forwarding Abuse",
     "summary": "Google has introduced AI‑driven safeguards on Android to detect and block scam text messages and fraudulent call‑forwarding attempts. The feature is gradually rolling out to eligible devices, aiming to reduce phishing and spoofing incidents by automatically identifying malicious content and preventing users from interacting with it.",
@@ -625,24 +640,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "help-tds-linked-to-hotejka-operates-20-000-cloudfl-1ef14f",
-    "title": "Help TDS Linked to Hotejka Operates 20,000+ Cloudflare Pages Domains for Tech Support Scams",
-    "summary": "Help TDS, a traffic distribution system tied to the Russian affiliate program Hotejka, has been active since 2017. It distributes PHP code templates that are installed on compromised websites, redirecting visitors to tech‑support scam sites hosted on over 20,000 Cloudflare Pages domains.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/help-tds-linked-to-hotejka-as-20000.html",
-    "publishedAt": "2026-10-15T14:11:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "help-tds-linked-to-hotejka-operates-20-000-cloudfl",
-      "article-1ef14f",
-      "1ef14f",
-      "help-tds-linked-to-hotejka-operates-20-000-cloudflare-pages-"
-    ]
-  },
-  {
     "slug": "ai-pentesting-vs-human-pentesters-a-comparative-an-5157d4",
     "title": "AI Pentesting vs Human Pentesters: A Comparative Analysis",
     "summary": "The article compares AI‑driven penetration testing with traditional human testing. It highlights AI’s ability to uncover overlooked vulnerabilities while noting limitations in consistency, risk assessment, and business context understanding. The discussion outlines where AI agents can enhance security testing practices.",
@@ -658,24 +655,6 @@ export const news: NewsBrief[] = [
       "article-5157d4",
       "5157d4",
       "ai-pentesting-vs-human-pentesters-a-comparative-analysis"
-    ]
-  },
-  {
-    "slug": "kazakhstan-linked-hackers-target-former-soviet-gov-599af4",
-    "title": "Kazakhstan‑Linked Hackers Target Former Soviet Governments",
-    "summary": "Researchers identify a roughly two‑year‑old cyber‑espionage campaign originating in Kazakhstan that has targeted governments across Central Asian states. The operation focuses on gathering intelligence from former Soviet republics, indicating a sustained nation‑state effort.",
-    "category": "Malware",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/suspected-kazakhstan-phishing-central-asia-espionage",
-    "publishedAt": "2026-10-15T13:55:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "kazakhstan-linked-hackers-target-former-soviet-gov",
-      "article-599af4",
-      "599af4",
-      "kazakhstan-linked-hackers-target-former-soviet-governments"
     ]
   },
   {
@@ -911,24 +890,6 @@ export const news: NewsBrief[] = [
       "article-49c059",
       "49c059",
       "j4care-dcm4che-vulnerabilities-enable-medical-image-deletion"
-    ]
-  },
-  {
-    "slug": "guangzhou-juan-iot-eseecloud-vulnerability-allows-430c04",
-    "title": "Guangzhou Juan IoT EseeCloud Vulnerability Allows Remote Control via Hard‑Coded Credentials",
-    "summary": "The CVE‑2026‑107617 flaw in Guangzhou Juan IoT Technology’s EseeCloud App and Firmware permits attackers to log in using hard‑coded credentials, enabling full control over affected IP cameras. The vulnerability scores 9.8 CVSS, impacting critical infrastructure sectors worldwide. Mitigation requires updating to patched firmware versions.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-288-02",
-    "publishedAt": "2026-10-15T12:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "guangzhou-juan-iot-eseecloud-vulnerability-allows",
-      "article-430c04",
-      "430c04",
-      "guangzhou-juan-iot-eseecloud-vulnerability-allows-remote-con"
     ]
   },
   {
@@ -1330,24 +1291,6 @@ export const news: NewsBrief[] = [
       "article-5ea266",
       "5ea266",
       "ledger-urges-asian-resellers-to-halt-wallet-sales-amid-suppl"
-    ]
-  },
-  {
-    "slug": "spyware-operation-accessed-former-polish-governmen-5c1629",
-    "title": "Spyware Operation Accessed Former Polish Government Data",
-    "summary": "A spyware operation run by the former ruling party accessed data harvested by the Polish government. The Prime Minister called it one of the biggest scandals in Polish history since the fall of communism. The incident highlights a significant breach of sensitive state data.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/spyware-manufacturer-had-access-to-data-harvested-by-previous-polish-government",
-    "publishedAt": "2026-10-14T16:50:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "spyware-operation-accessed-former-polish-governmen",
-      "article-5c1629",
-      "5c1629",
-      "spyware-operation-accessed-former-polish-government-data"
     ]
   },
   {
@@ -2130,24 +2073,6 @@ export const news: NewsBrief[] = [
       "article-21a2de",
       "21a2de",
       "github-expands-npm-publishing-expiry-to-prevent-package-hija"
-    ]
-  },
-  {
-    "slug": "vercel-sandbox-flaw-lets-ai-agents-leak-data-outsi-7a82c5",
-    "title": "Vercel Sandbox Flaw Lets AI Agents Leak Data Outside Approved Networks",
-    "summary": "A network filtering flaw in Vercel Sandbox, used to run code in isolated environments, allows rogue AI agents to bypass certificate validation and transmit data outside approved networks, exposing sensitive information to attackers.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/sandbox-vulnerability-gives-rogue-ai-agents-path-out",
-    "publishedAt": "2026-10-13T16:18:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "vercel-sandbox-flaw-lets-ai-agents-leak-data-outsi",
-      "article-7a82c5",
-      "7a82c5",
-      "vercel-sandbox-flaw-lets-ai-agents-leak-data-outside-approve"
     ]
   },
   {
