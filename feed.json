@@ -1,5 +1,36 @@
 [
   {
+    "id": "https://cybernewsai.com/blog/proxyjacking-edge-device-bandwidth-theft-detection",
+    "sourceUrl": "https://cybernewsai.com/blog/proxyjacking-edge-device-bandwidth-theft-detection",
+    "title": "Proxyjacking Campaign Targets D-Link, Ubiquiti, SAP Edge Devices",
+    "headline": "Proxyjacking Campaign Targets D-Link, Ubiquiti, SAP Edge Devices",
+    "summary": "GreyNoise reports skynox7, a proxyjacking operation that hijacks traffic on D-Link, Ubiquiti, and SAP edge devices to monetize stolen bandwidth. The campaign uses compromised devices to redirect traffic, enabling attackers to siphon data and monetize it. Defenders should block unauthorized proxy traffic and monitor device logs.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-10-16T00:52:19.000Z",
+    "url": "https://cybernewsai.com/blog/proxyjacking-edge-device-bandwidth-theft-detection",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-hijack-d-link-ubiquiti-devices-to-resell-your-stolen-bandwidth/"
+      }
+    ]
+  },
+  {
+    "id": "https://isc.sans.edu/diary/rss/33430",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33430",
+    "title": "Industry Debate on AI Security Approaches",
+    "headline": "Industry Debate on AI Security Approaches",
+    "summary": "A commentary on the cybersecurity industry's approach to AI security highlights concerns about current strategies and suggests a need for more effective safeguards. The piece calls for a reassessment of AI integration practices to better protect systems from emerging threats.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "publishedAt": "2026-10-16T00:46:35.000Z",
+    "url": "https://isc.sans.edu/diary/rss/33430",
+    "additionalSources": []
+  },
+  {
     "id": "https://unit42.paloaltonetworks.com/ai-campaign-targets-linux-infrastructure/",
     "sourceUrl": "https://unit42.paloaltonetworks.com/ai-campaign-targets-linux-infrastructure/",
     "title": "AI-Powered Espionage Targets Government Linux Systems",
@@ -102,24 +133,6 @@
       {
         "source": "The Hacker News",
         "sourceUrl": "https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html"
-      }
-    ]
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/hackers-hijack-d-link-ubiquiti-devices-to-resell-your-stolen-bandwidth/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-hijack-d-link-ubiquiti-devices-to-resell-your-stolen-bandwidth/",
-    "title": "Hackers Hijack D‑Link and Ubiquiti Devices to Resell Stolen Bandwidth",
-    "headline": "Hackers Hijack D‑Link and Ubiquiti Devices to Resell Stolen Bandwidth",
-    "summary": "A proxyjacking campaign has compromised D‑Link and Ubiquiti routers in 34 countries, redirecting users’ internet traffic to a commercial residential proxy network. Victims’ bandwidth is monetized without their knowledge, exposing them to potential data interception and service degradation.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-15T18:20:59.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/hackers-hijack-d-link-ubiquiti-devices-to-resell-your-stolen-bandwidth/",
-    "additionalSources": [
-      {
-        "source": "Schneier on Security",
-        "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/cyberattack-on-connected-fridges-in-france.html"
       }
     ]
   },
@@ -5164,18 +5177,5 @@
         "sourceUrl": "https://thehackernews.com/2026/09/attackers-abuse-msp360-to-deploy.html"
       }
     ]
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/01/sophos-ciso-advantage/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/01/sophos-ciso-advantage/",
-    "title": "Sophos Launches AI‑Enabled CISO Advantage to Prioritize Security Fixes",
-    "headline": "Sophos Launches AI‑Enabled CISO Advantage to Prioritize Security Fixes",
-    "summary": "Sophos has introduced CISO Advantage, an agentic AI solution that maps security operations to strategy, providing organizations with a clear risk picture and a prioritized plan to address vulnerabilities. The tool translates security data into actionable, fundable initiatives for business leaders.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-01T13:25:12.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/01/sophos-ciso-advantage/",
-    "additionalSources": []
   }
 ]

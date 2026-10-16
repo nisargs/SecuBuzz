@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Oct 2026 00:40:51 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 01:23:34 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Proxyjacking Campaign Targets D-Link, Ubiquiti, SAP Edge Devices</title>
+      <link>https://secubuzz.com/news/proxyjacking-campaign-targets-d-link-ubiquiti-sap-2e76c9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/proxyjacking-campaign-targets-d-link-ubiquiti-sap-2e76c9</guid>
+      <description><![CDATA[GreyNoise reports skynox7, a proxyjacking operation that hijacks traffic on D-Link, Ubiquiti, and SAP edge devices to monetize stolen bandwidth. The campaign uses compromised devices to redirect traffic, enabling attackers to siphon data and monetize it. Defenders should block unauthorized proxy traffic and monitor device logs.]]></description>
+      <pubDate>Fri, 16 Oct 2026 00:52:19 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/proxyjacking-edge-device-bandwidth-theft-detection">CyberNews AI</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Industry Debate on AI Security Approaches</title>
+      <link>https://secubuzz.com/news/industry-debate-on-ai-security-approaches-57dd7d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/industry-debate-on-ai-security-approaches-57dd7d</guid>
+      <description><![CDATA[A commentary on the cybersecurity industry's approach to AI security highlights concerns about current strategies and suggests a need for more effective safeguards. The piece calls for a reassessment of AI integration practices to better protect systems from emerging threats.]]></description>
+      <pubDate>Fri, 16 Oct 2026 00:46:35 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33430">SANS Internet Storm Center</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>AI-Powered Espionage Targets Government Linux Systems</title>
       <link>https://secubuzz.com/news/ai-powered-espionage-targets-government-linux-syst-749199</link>
@@ -69,15 +87,6 @@
       <pubDate>Thu, 15 Oct 2026 19:00:00 GMT</pubDate>
       <source url="https://therecord.media/spyware-citizen-lab-advertising">The Record</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Hackers Hijack D‑Link and Ubiquiti Devices to Resell Stolen Bandwidth</title>
-      <link>https://secubuzz.com/news/hackers-hijack-d-link-and-ubiquiti-devices-to-rese-4e6f9b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-hijack-d-link-and-ubiquiti-devices-to-rese-4e6f9b</guid>
-      <description><![CDATA[A proxyjacking campaign has compromised D‑Link and Ubiquiti routers in 34 countries, redirecting users’ internet traffic to a commercial residential proxy network. Victims’ bandwidth is monetized without their knowledge, exposing them to potential data interception and service degradation.]]></description>
-      <pubDate>Thu, 15 Oct 2026 18:20:59 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/hackers-hijack-d-link-ubiquiti-devices-to-resell-your-stolen-bandwidth/">BleepingComputer</source>
-      <category>Breach</category>
     </item>
     <item>
       <title>Q3 Vulnerability Pulse Highlights Discovery vs Exploitation Trends</title>
@@ -447,15 +456,6 @@
       <pubDate>Thu, 15 Oct 2026 10:15:32 GMT</pubDate>
       <source url="https://www.securityweek.com/novel-android-banking-rat-hirudo-replaces-banking-apps-with-trojanized-copies/">SecurityWeek</source>
       <category>Malware</category>
-    </item>
-    <item>
-      <title>GhostAction Compromises About 1,900 GitHub Accounts, Targets Over 30,000 Repositories</title>
-      <link>https://secubuzz.com/news/ghostaction-compromises-about-1-900-github-account-6086fa</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ghostaction-compromises-about-1-900-github-account-6086fa</guid>
-      <description><![CDATA[The GhostAction credential‑theft campaign compromised roughly 1,900 GitHub accounts, targeting more than 30,000 repositories across 3,000 users and organizations. Attackers attempted to extract 3,174 secrets from public repositories’ CI pipelines.]]></description>
-      <pubDate>Thu, 15 Oct 2026 08:45:10 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/ghostaction-compromises-about-1900.html">The Hacker News</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>
