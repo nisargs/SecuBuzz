@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Oct 2026 12:20:43 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 12:28:13 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Burger King Japan Data Breach Exposes 11 Million Customer Records</title>
@@ -15,6 +15,15 @@
       <pubDate>Fri, 16 Oct 2026 12:01:29 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/burger-king-japan-data-breach-exposes-11-million-customer-records/">BleepingComputer</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Spray‑and‑pray Job Applications Obscure Scam Detection</title>
+      <link>https://secubuzz.com/news/spray-and-pray-job-applications-obscure-scam-detec-807f11</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/spray-and-pray-job-applications-obscure-scam-detec-807f11</guid>
+      <description><![CDATA[Sending numerous job applications without tracking can mask scam messages, making them appear as legitimate replies. This tactic increases the difficulty for recipients to identify phishing attempts, potentially leading to credential theft or social engineering attacks. Users should verify application responses and maintain a clear application log.]]></description>
+      <pubDate>Fri, 16 Oct 2026 11:55:15 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/news/2026/10/spray-and-pray-job-applications-could-make-it-harder-for-you-to-spot-a-scam">Malwarebytes Labs</source>
+      <category>Policy</category>
     </item>
     <item>
       <title>BAE Systems Security Incident Halts US Bankruptcy Court Notices</title>
@@ -33,6 +42,15 @@
       <pubDate>Fri, 16 Oct 2026 11:34:35 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/16/usa-2026-midterm-election-scams/">Help Net Security</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Rise of AI Decision Models in SOC Platforms</title>
+      <link>https://secubuzz.com/news/rise-of-ai-decision-models-in-soc-platforms-126822</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rise-of-ai-decision-models-in-soc-platforms-126822</guid>
+      <description><![CDATA[Within a month, AI decision models proliferated across security operations. TypeSafe AI launched Jev, a System One model, while OpenAI introduced a Decisions API and Cribl released a local LoRA adapter. These developments aim to enhance automated threat analysis but also raise concerns about model reliability and bias.]]></description>
+      <pubDate>Fri, 16 Oct 2026 11:30:00 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html">The Hacker News</source>
+      <category>Policy</category>
     </item>
     <item>
       <title>Chinese Phishing Network Targets Japanese Banks with 17,000 Domains</title>
@@ -438,24 +456,6 @@
       <pubDate>Thu, 15 Oct 2026 13:51:03 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/15/kgb-rat-windows-trojan-webcam-spying-password-theft/">Help Net Security</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Fake CAPTCHAs Used to Trick Users into Running Malware</title>
-      <link>https://secubuzz.com/news/fake-captchas-used-to-trick-users-into-running-mal-334d38</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fake-captchas-used-to-trick-users-into-running-mal-334d38</guid>
-      <description><![CDATA[Attackers embed malicious code in fake CAPTCHA challenges, luring users to download malware, receive harmful browser notifications, and execute commands. The technique, identified by Barracuda, was found in 43% of phishing-kit attacks examined in 2025, exploiting user trust to bypass automated security tools.]]></description>
-      <pubDate>Thu, 15 Oct 2026 13:29:01 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/15/barracuda-fake-captcha-phishing-attacks/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cloudflare and OpenAI Partner to Improve AI Discovery</title>
-      <link>https://secubuzz.com/news/cloudflare-and-openai-partner-to-improve-ai-discov-7fca34</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-and-openai-partner-to-improve-ai-discov-7fca34</guid>
-      <description><![CDATA[Cloudflare and OpenAI are partnering to enhance AI discovery by improving content relevance, reducing wasted requests, and streamlining updates for users and website owners. The collaboration aims to make AI experiences more efficient and user-friendly across the web globally today.]]></description>
-      <pubDate>Thu, 15 Oct 2026 13:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/cloudflare-openai-discovery-agentic-web/">Cloudflare Security</source>
-      <category>Cloud</category>
     </item>
   </channel>
 </rss>

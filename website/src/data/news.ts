@@ -29,6 +29,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "spray-and-pray-job-applications-obscure-scam-detec-807f11",
+    "title": "Spray‑and‑pray Job Applications Obscure Scam Detection",
+    "summary": "Sending numerous job applications without tracking can mask scam messages, making them appear as legitimate replies. This tactic increases the difficulty for recipients to identify phishing attempts, potentially leading to credential theft or social engineering attacks. Users should verify application responses and maintain a clear application log.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/spray-and-pray-job-applications-could-make-it-harder-for-you-to-spot-a-scam",
+    "publishedAt": "2026-10-16T11:55:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "spray-and-pray-job-applications-obscure-scam-detec",
+      "article-807f11",
+      "807f11",
+      "spray-and-pray-job-applications-obscure-scam-detection"
+    ]
+  },
+  {
     "slug": "bae-systems-security-incident-halts-us-bankruptcy-239aac",
     "title": "BAE Systems Security Incident Halts US Bankruptcy Court Notices",
     "summary": "A cyber incident at BAE Systems disabled the Bankruptcy Noticing Center, stopping nationwide notices for a week. The outage affected the court’s electronic notice system, causing a temporary halt in bankruptcy filings. No breach of data was reported, but the incident underscores the importance of resilient infrastructure.",
@@ -62,6 +80,23 @@ export const news: NewsBrief[] = [
       "article-4f7640",
       "4f7640",
       "scammers-clone-candidates-voices-to-steal-cash-and-voter-dat"
+    ]
+  },
+  {
+    "slug": "rise-of-ai-decision-models-in-soc-platforms-126822",
+    "title": "Rise of AI Decision Models in SOC Platforms",
+    "summary": "Within a month, AI decision models proliferated across security operations. TypeSafe AI launched Jev, a System One model, while OpenAI introduced a Decisions API and Cribl released a local LoRA adapter. These developments aim to enhance automated threat analysis but also raise concerns about model reliability and bias.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html",
+    "publishedAt": "2026-10-16T11:30:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rise-of-ai-decision-models-in-soc-platforms",
+      "article-126822",
+      "126822"
     ]
   },
   {
@@ -6234,41 +6269,6 @@ export const news: NewsBrief[] = [
       "article-1e51a4",
       "1e51a4",
       "threatsday-highlights-ai-powered-zero-day-chain-and-model-in"
-    ]
-  },
-  {
-    "slug": "wordpress-backdoor-rebuilds-itself-after-cleanup-u-16516f",
-    "title": "WordPress Backdoor Rebuilds Itself After Cleanup Using Files, Database, and Shared Memory",
-    "summary": "Researchers uncovered a WordPress backdoor that self‑heals by recreating itself through files, database entries, and shared memory after cleanup. The malware, codenamed SC, uses multiple persistence mechanisms to ensure the final payload remains active without re‑infection.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/wordpress-backdoor-rebuilds-itself.html",
-    "publishedAt": "2026-10-01T14:37:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "wordpress-backdoor-rebuilds-itself-after-cleanup-u",
-      "article-16516f",
-      "16516f",
-      "wordpress-backdoor-rebuilds-itself-after-cleanup-using-files"
-    ]
-  },
-  {
-    "slug": "rob-juncker-discusses-hacker-identity-and-ethics-3e23c1",
-    "title": "Rob Juncker Discusses Hacker Identity and Ethics",
-    "summary": "Rob Juncker, Mimecast’s chief product and technology officer, confirms he is a hacker and shares his moral compass on security practices. The interview explores his perspective on hacking and cybersecurity leadership.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/hacker-conversations-rob-juncker-a-knock-at-the-door-and-a-moral-compass/",
-    "publishedAt": "2026-10-01T14:30:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rob-juncker-discusses-hacker-identity-and-ethics",
-      "article-3e23c1",
-      "3e23c1"
     ]
   }
 ];

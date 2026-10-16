@@ -22,6 +22,19 @@
     ]
   },
   {
+    "id": "https://www.malwarebytes.com/blog/news/2026/10/spray-and-pray-job-applications-could-make-it-harder-for-you-to-spot-a-scam",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/spray-and-pray-job-applications-could-make-it-harder-for-you-to-spot-a-scam",
+    "title": "Spray‑and‑pray Job Applications Obscure Scam Detection",
+    "headline": "Spray‑and‑pray Job Applications Obscure Scam Detection",
+    "summary": "Sending numerous job applications without tracking can mask scam messages, making them appear as legitimate replies. This tactic increases the difficulty for recipients to identify phishing attempts, potentially leading to credential theft or social engineering attacks. Users should verify application responses and maintain a clear application log.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "publishedAt": "2026-10-16T11:55:15.000Z",
+    "url": "https://www.malwarebytes.com/blog/news/2026/10/spray-and-pray-job-applications-could-make-it-harder-for-you-to-spot-a-scam",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.securityweek.com/bae-systems-security-incident-stalls-notices-from-us-bankruptcy-courts/",
     "sourceUrl": "https://www.securityweek.com/bae-systems-security-incident-stalls-notices-from-us-bankruptcy-courts/",
     "title": "BAE Systems Security Incident Halts US Bankruptcy Court Notices",
@@ -56,6 +69,19 @@
         "sourceUrl": "https://cybersecuritynews.com/best-data-classification-tools/"
       }
     ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html",
+    "title": "Rise of AI Decision Models in SOC Platforms",
+    "headline": "Rise of AI Decision Models in SOC Platforms",
+    "summary": "Within a month, AI decision models proliferated across security operations. TypeSafe AI launched Jev, a System One model, while OpenAI introduced a Decisions API and Cribl released a local LoRA adapter. These developments aim to enhance automated threat analysis but also raise concerns about model reliability and bias.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-16T11:30:00.000Z",
+    "url": "https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html",
+    "additionalSources": []
   },
   {
     "id": "https://cybersecuritynews.com/chinese-phishing-network-2/",
@@ -5176,32 +5202,6 @@
     "source": "The Hacker News",
     "publishedAt": "2026-10-01T16:45:38.000Z",
     "url": "https://thehackernews.com/2026/10/threatsday-ai-powered-zero-day-chain.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/wordpress-backdoor-rebuilds-itself.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/wordpress-backdoor-rebuilds-itself.html",
-    "title": "WordPress Backdoor Rebuilds Itself After Cleanup Using Files, Database, and Shared Memory",
-    "headline": "WordPress Backdoor Rebuilds Itself After Cleanup Using Files, Database, and Shared Memory",
-    "summary": "Researchers uncovered a WordPress backdoor that self‑heals by recreating itself through files, database entries, and shared memory after cleanup. The malware, codenamed SC, uses multiple persistence mechanisms to ensure the final payload remains active without re‑infection.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-01T14:37:35.000Z",
-    "url": "https://thehackernews.com/2026/10/wordpress-backdoor-rebuilds-itself.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/hacker-conversations-rob-juncker-a-knock-at-the-door-and-a-moral-compass/",
-    "sourceUrl": "https://www.securityweek.com/hacker-conversations-rob-juncker-a-knock-at-the-door-and-a-moral-compass/",
-    "title": "Rob Juncker Discusses Hacker Identity and Ethics",
-    "headline": "Rob Juncker Discusses Hacker Identity and Ethics",
-    "summary": "Rob Juncker, Mimecast’s chief product and technology officer, confirms he is a hacker and shares his moral compass on security practices. The interview explores his perspective on hacking and cybersecurity leadership.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-01T14:30:00.000Z",
-    "url": "https://www.securityweek.com/hacker-conversations-rob-juncker-a-knock-at-the-door-and-a-moral-compass/",
     "additionalSources": []
   }
 ]
