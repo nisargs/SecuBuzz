@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Oct 2026 21:37:42 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 23:37:53 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>CVE-2026-102764: BeyondTrust Zero-Day RCE Exploited by Google</title>
+      <link>https://secubuzz.com/news/cve-2026-102764-beyondtrust-zero-day-rce-exploited-4348af</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-102764-beyondtrust-zero-day-rce-exploited-4348af</guid>
+      <description><![CDATA[Google exposed the BeyondTrust zero‑day CVE-2026-102764, used by attackers with SAWFLY and BARECLAW backdoors. The flaw allows remote code execution on BeyondTrust products. Detection involves monitoring for unusual network activity, and patching requires applying the vendor’s latest update.]]></description>
+      <pubDate>Fri, 16 Oct 2026 23:17:14 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/cve-2026-102764-beyondtrust-armory-castle-zero-day-patch">CyberNews AI</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>BeyondTrust Remote Support Zero-Day Adds to Edge Device Exploit Trend</title>
       <link>https://secubuzz.com/news/beyondtrust-remote-support-zero-day-adds-to-edge-d-3094d2</link>
@@ -248,15 +257,6 @@
       <description><![CDATA[Security researchers from Calif demonstrated an untethered jailbreak for iOS 27.0.1 on Apple’s iPhone 18 Pro during Hexacon 2026. The live demo shows a method to bypass Apple’s security controls, allowing root access and installation of unauthorized software. No public patch or fix is available yet.]]></description>
       <pubDate>Fri, 16 Oct 2026 12:21:57 GMT</pubDate>
       <source url="https://cybersecuritynews.com/ios-27-0-1-jailbreak-demonstrated/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>CISA Adds Two Known Exploited Vulnerabilities to Catalog</title>
-      <link>https://secubuzz.com/news/cisa-adds-two-known-exploited-vulnerabilities-to-c-5b44fd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-two-known-exploited-vulnerabilities-to-c-5b44fd</guid>
-      <description><![CDATA[CISA has added CVE-2025-61624, a path traversal flaw in Fortinet products, and CVE-2026-102764, a BeyondTrust Remote Support authentication bypass, to its Known Exploited Vulnerabilities catalog after evidence of active exploitation. Federal agencies must prioritize rapid remediation under BOD 26-04.]]></description>
-      <pubDate>Fri, 16 Oct 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/alerts/2026/10/16/cisa-adds-two-known-exploited-vulnerabilities-catalog">CISA</source>
       <category>Vulnerability</category>
     </item>
     <item>

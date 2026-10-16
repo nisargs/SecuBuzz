@@ -1,5 +1,23 @@
 [
   {
+    "id": "https://cybernewsai.com/blog/cve-2026-102764-beyondtrust-armory-castle-zero-day-patch",
+    "sourceUrl": "https://cybernewsai.com/blog/cve-2026-102764-beyondtrust-armory-castle-zero-day-patch",
+    "title": "CVE-2026-102764: BeyondTrust Zero-Day RCE Exploited by Google",
+    "headline": "CVE-2026-102764: BeyondTrust Zero-Day RCE Exploited by Google",
+    "summary": "Google exposed the BeyondTrust zero‑day CVE-2026-102764, used by attackers with SAWFLY and BARECLAW backdoors. The flaw allows remote code execution on BeyondTrust products. Detection involves monitoring for unusual network activity, and patching requires applying the vendor’s latest update.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-10-16T23:17:14.000Z",
+    "url": "https://cybernewsai.com/blog/cve-2026-102764-beyondtrust-armory-castle-zero-day-patch",
+    "additionalSources": [
+      {
+        "source": "CISA",
+        "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/16/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+      }
+    ]
+  },
+  {
     "id": "https://www.darkreading.com/endpoint-security/beyondtrust-remote-support-exploited-edge-bugs",
     "sourceUrl": "https://www.darkreading.com/endpoint-security/beyondtrust-remote-support-exploited-edge-bugs",
     "title": "BeyondTrust Remote Support Zero-Day Adds to Edge Device Exploit Trend",
@@ -428,24 +446,6 @@
       {
         "source": "The Hacker News",
         "sourceUrl": "https://thehackernews.com/2026/10/attackers-exploit-fortios-flaw-to.html"
-      }
-    ]
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/alerts/2026/10/16/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/16/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-    "headline": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-    "summary": "CISA has added CVE-2025-61624, a path traversal flaw in Fortinet products, and CVE-2026-102764, a BeyondTrust Remote Support authentication bypass, to its Known Exploited Vulnerabilities catalog after evidence of active exploitation. Federal agencies must prioritize rapid remediation under BOD 26-04.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CISA",
-    "publishedAt": "2026-10-16T12:00:00.000Z",
-    "url": "https://www.cisa.gov/news-events/alerts/2026/10/16/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-    "additionalSources": [
-      {
-        "source": "CISA",
-        "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/15/cisa-adds-one-known-exploited-vulnerability-catalog"
       }
     ]
   },

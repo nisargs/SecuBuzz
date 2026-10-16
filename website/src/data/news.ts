@@ -11,6 +11,26 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "cve-2026-102764-beyondtrust-zero-day-rce-exploited-4348af",
+    "title": "CVE-2026-102764: BeyondTrust Zero-Day RCE Exploited by Google",
+    "summary": "Google exposed the BeyondTrust zero‑day CVE-2026-102764, used by attackers with SAWFLY and BARECLAW backdoors. The flaw allows remote code execution on BeyondTrust products. Detection involves monitoring for unusual network activity, and patching requires applying the vendor’s latest update.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/cve-2026-102764-beyondtrust-armory-castle-zero-day-patch",
+    "publishedAt": "2026-10-16T23:17:14.000Z",
+    "cves": [
+      "CVE-2026-102764"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-102764-beyondtrust-zero-day-rce-exploited",
+      "article-4348af",
+      "4348af",
+      "cve-2026-102764-beyondtrust-zero-day-rce-exploited-by-google"
+    ]
+  },
+  {
     "slug": "beyondtrust-remote-support-zero-day-adds-to-edge-d-3094d2",
     "title": "BeyondTrust Remote Support Zero-Day Adds to Edge Device Exploit Trend",
     "summary": "BeyondTrust’s Remote Support software now has a zero‑day vulnerability, joining a wave that has already affected Ivanti, Cisco and Palo Alto Networks edge devices. The flaw allows attackers to execute code on the affected systems, potentially compromising network traffic and device control. No patch has been released yet.",
@@ -491,27 +511,6 @@ export const news: NewsBrief[] = [
       "article-7a2d41",
       "7a2d41",
       "apple-iphone-18-pro-ios-27-0-1-jailbreak-demonstrated"
-    ]
-  },
-  {
-    "slug": "cisa-adds-two-known-exploited-vulnerabilities-to-c-5b44fd",
-    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-    "summary": "CISA has added CVE-2025-61624, a path traversal flaw in Fortinet products, and CVE-2026-102764, a BeyondTrust Remote Support authentication bypass, to its Known Exploited Vulnerabilities catalog after evidence of active exploitation. Federal agencies must prioritize rapid remediation under BOD 26-04.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/16/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-    "publishedAt": "2026-10-16T12:00:00.000Z",
-    "cves": [
-      "CVE-2025-61624",
-      "CVE-2026-102764"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cisa-adds-two-known-exploited-vulnerabilities-to-c",
-      "article-5b44fd",
-      "5b44fd",
-      "cisa-adds-two-known-exploited-vulnerabilities-to-catalog"
     ]
   },
   {
