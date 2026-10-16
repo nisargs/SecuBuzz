@@ -11,6 +11,41 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "microsoft-patches-multiple-rce-flaws-in-office-7b7d79",
+    "title": "Microsoft Patches Multiple RCE Flaws in Office",
+    "summary": "Microsoft released a security update addressing more than twenty remote code execution vulnerabilities in Office, along with several information disclosure bugs and a security bypass issue. The patch mitigates the risk of attackers executing arbitrary code or accessing sensitive data within Office applications.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/microsoft-patches-two-dozen-rce-flaws-in-office/",
+    "publishedAt": "2026-10-16T07:55:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-patches-multiple-rce-flaws-in-office",
+      "article-7b7d79",
+      "7b7d79"
+    ]
+  },
+  {
+    "slug": "bae-systems-cyberattack-disrupts-us-federal-court-1b82ea",
+    "title": "BAE Systems Cyberattack Disrupts US Federal Court Operations",
+    "summary": "A cyberattack on contractor BAE Systems caused the notice system used by federal bankruptcy courts to go offline, disrupting court operations. The incident highlights the vulnerability of critical judicial infrastructure to targeted attacks on service providers.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/bae-systems-cyberattack-disrupts-us-federal-court-operations/",
+    "publishedAt": "2026-10-16T07:37:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "bae-systems-cyberattack-disrupts-us-federal-court",
+      "article-1b82ea",
+      "1b82ea",
+      "bae-systems-cyberattack-disrupts-us-federal-court-operations"
+    ]
+  },
+  {
     "slug": "proofpoint-to-acquire-varonis-for-6-3-billion-622dc0",
     "title": "Proofpoint to Acquire Varonis for $6.3 Billion",
     "summary": "Proofpoint, owned by Thoma Bravo, has agreed to buy Varonis in an all‑cash deal worth $6.3 billion, making Varonis a private company. The transaction expands Proofpoint’s data‑protection portfolio and strengthens its position in the cybersecurity market.",
@@ -350,24 +385,6 @@ export const news: NewsBrief[] = [
       "f-secure-publishes-scam-encyclopedia-for-consumers",
       "article-5a0c7c",
       "5a0c7c"
-    ]
-  },
-  {
-    "slug": "federal-bankruptcy-courts-face-outages-after-contr-538ae8",
-    "title": "Federal Bankruptcy Courts Face Outages After Contractor Cyberattack",
-    "summary": "A government contractor cyberattack has halted all production of bankruptcy notices, causing widespread outages in federal bankruptcy courts. The incident disrupted court operations and delayed notice issuance, but no data breach or credential theft has been reported. No specific vulnerability or CVE is named.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/federal-bankruptcy-courts-dealing-with-cyberattack-outage",
-    "publishedAt": "2026-10-15T20:46:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "federal-bankruptcy-courts-face-outages-after-contr",
-      "article-538ae8",
-      "538ae8",
-      "federal-bankruptcy-courts-face-outages-after-contractor-cybe"
     ]
   },
   {
@@ -816,24 +833,6 @@ export const news: NewsBrief[] = [
       "article-381e3d",
       "381e3d",
       "critical-next-js-vulnerabilities-allow-hackers-to-execute-ma"
-    ]
-  },
-  {
-    "slug": "next-js-issues-out-of-band-patch-for-two-critical-53e7b0",
-    "title": "Next.js Issues Out-of-Band Patch for Two Critical RCE Flaws",
-    "summary": "Next.js released an out‑of‑band update on October 14 to fix two critical unauthenticated remote code execution vulnerabilities. One flaw resides in React Server Components, the other in librsvg used via the sharp package for SVG handling. The patch also addresses a high‑severity denial‑of‑service flaw.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/nextjs-ships-out-of-band-patch-for-two.html",
-    "publishedAt": "2026-10-15T12:28:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "next-js-issues-out-of-band-patch-for-two-critical",
-      "article-53e7b0",
-      "53e7b0",
-      "next-js-issues-out-of-band-patch-for-two-critical-rce-flaws"
     ]
   },
   {

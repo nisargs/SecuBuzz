@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Oct 2026 07:30:06 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 08:18:38 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Microsoft Patches Multiple RCE Flaws in Office</title>
+      <link>https://secubuzz.com/news/microsoft-patches-multiple-rce-flaws-in-office-7b7d79</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-patches-multiple-rce-flaws-in-office-7b7d79</guid>
+      <description><![CDATA[Microsoft released a security update addressing more than twenty remote code execution vulnerabilities in Office, along with several information disclosure bugs and a security bypass issue. The patch mitigates the risk of attackers executing arbitrary code or accessing sensitive data within Office applications.]]></description>
+      <pubDate>Fri, 16 Oct 2026 07:55:06 GMT</pubDate>
+      <source url="https://www.securityweek.com/microsoft-patches-two-dozen-rce-flaws-in-office/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>BAE Systems Cyberattack Disrupts US Federal Court Operations</title>
+      <link>https://secubuzz.com/news/bae-systems-cyberattack-disrupts-us-federal-court-1b82ea</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/bae-systems-cyberattack-disrupts-us-federal-court-1b82ea</guid>
+      <description><![CDATA[A cyberattack on contractor BAE Systems caused the notice system used by federal bankruptcy courts to go offline, disrupting court operations. The incident highlights the vulnerability of critical judicial infrastructure to targeted attacks on service providers.]]></description>
+      <pubDate>Fri, 16 Oct 2026 07:37:35 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/bae-systems-cyberattack-disrupts-us-federal-court-operations/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Proofpoint to Acquire Varonis for $6.3 Billion</title>
       <link>https://secubuzz.com/news/proofpoint-to-acquire-varonis-for-6-3-billion-622dc0</link>
@@ -177,15 +195,6 @@
       <pubDate>Thu, 15 Oct 2026 21:55:07 GMT</pubDate>
       <source url="https://www.darkreading.com/threat-intelligence/f-secure-launches-victim-first-scam-encyclopedia-covering-50-types-of-consumer-fraud">Dark Reading</source>
       <category>Cloud</category>
-    </item>
-    <item>
-      <title>Federal Bankruptcy Courts Face Outages After Contractor Cyberattack</title>
-      <link>https://secubuzz.com/news/federal-bankruptcy-courts-face-outages-after-contr-538ae8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/federal-bankruptcy-courts-face-outages-after-contr-538ae8</guid>
-      <description><![CDATA[A government contractor cyberattack has halted all production of bankruptcy notices, causing widespread outages in federal bankruptcy courts. The incident disrupted court operations and delayed notice issuance, but no data breach or credential theft has been reported. No specific vulnerability or CVE is named.]]></description>
-      <pubDate>Thu, 15 Oct 2026 20:46:00 GMT</pubDate>
-      <source url="https://therecord.media/federal-bankruptcy-courts-dealing-with-cyberattack-outage">The Record</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>AI Slop Dumbing Down Cyberattacks</title>
@@ -410,15 +419,6 @@
       <description><![CDATA[Two critical vulnerabilities in Next.js enable remote attackers to execute malicious code without authentication, affecting cached functions and SVG image processing. A third high‑severity flaw can cause applications to stop serving requests. Patches are available in Next.js 16.4.1 and 15.5.28.]]></description>
       <pubDate>Thu, 15 Oct 2026 12:39:05 GMT</pubDate>
       <source url="https://cybersecuritynews.com/critical-next-js-vulnerabilities/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Next.js Issues Out-of-Band Patch for Two Critical RCE Flaws</title>
-      <link>https://secubuzz.com/news/next-js-issues-out-of-band-patch-for-two-critical-53e7b0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/next-js-issues-out-of-band-patch-for-two-critical-53e7b0</guid>
-      <description><![CDATA[Next.js released an out‑of‑band update on October 14 to fix two critical unauthenticated remote code execution vulnerabilities. One flaw resides in React Server Components, the other in librsvg used via the sharp package for SVG handling. The patch also addresses a high‑severity denial‑of‑service flaw.]]></description>
-      <pubDate>Thu, 15 Oct 2026 12:28:13 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/nextjs-ships-out-of-band-patch-for-two.html">The Hacker News</source>
       <category>Vulnerability</category>
     </item>
     <item>
