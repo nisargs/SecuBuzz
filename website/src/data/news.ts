@@ -11,6 +11,60 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "magento-and-adobe-commerce-vulnerability-allows-re-586db8",
+    "title": "Magento and Adobe Commerce Vulnerability Allows Remote Code Execution",
+    "summary": "A maximum‑severity flaw (CVE‑2026‑103849) in Magento’s BlockStrap component lets attackers execute arbitrary PHP code on store servers, potentially compromising customer data and site integrity. Adobe Commerce users must apply the vendor patch immediately to prevent exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-blockstrap-flaw-lets-hackers-run-code-on-magento-servers/",
+    "publishedAt": "2026-10-16T20:00:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "magento-and-adobe-commerce-vulnerability-allows-re",
+      "article-586db8",
+      "586db8",
+      "magento-and-adobe-commerce-vulnerability-allows-remote-code-"
+    ]
+  },
+  {
+    "slug": "rise-of-ai-brand-impersonation-phishing-campaigns-7a4a68",
+    "title": "Rise of AI‑Brand Impersonation Phishing Campaigns Targeting Developers",
+    "summary": "Cybercriminals are increasing attacks that spoof popular AI brands such as Claude and ChatGPT, using ClickFix‑style tactics to lure enterprise employees. The campaigns aim to steal credentials and deliver malware, posing a significant phishing risk to developers and IT staff.",
+    "category": "Malware",
+    "severity": "MEDIUM",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/application-security/fake-claude-chatgpt-attacks-developers-risk",
+    "publishedAt": "2026-10-16T19:49:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rise-of-ai-brand-impersonation-phishing-campaigns",
+      "article-7a4a68",
+      "7a4a68",
+      "rise-of-ai-brand-impersonation-phishing-campaigns-targeting-"
+    ]
+  },
+  {
+    "slug": "biomemory-launches-dna-shield-first-commercial-pro-4a04b4",
+    "title": "Biomemory Launches DNA Shield, First Commercial Product Built on Its Molecular IT Platform",
+    "summary": "Biomemory has introduced DNA Shield, its inaugural commercial offering built on the Molecular IT Platform, following the acquisition of catalog assets and the appointment of Laurent Guengant as CEO earlier this year.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/data-privacy/biomemory-launches-dna-shield",
+    "publishedAt": "2026-10-16T19:22:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "biomemory-launches-dna-shield-first-commercial-pro",
+      "article-4a04b4",
+      "4a04b4",
+      "biomemory-launches-dna-shield-first-commercial-product-built"
+    ]
+  },
+  {
     "slug": "sentinelone-blocks-apt29-captivecrunch-campaign-wi-3ecef8",
     "title": "SentinelOne Blocks APT29 CaptiveCrunch Campaign with Static AI",
     "summary": "SentinelOne’s Static AI prevented APT29’s CaptiveCrunch campaign by detecting and blocking local DNS poisoning and captive portal lures on endpoints. The defense stopped the adversaries from redirecting traffic and luring users into malicious portals, preserving network integrity and preventing credential theft.",
@@ -26,6 +80,24 @@ export const news: NewsBrief[] = [
       "article-3ecef8",
       "3ecef8",
       "sentinelone-blocks-apt29-captivecrunch-campaign-with-static-"
+    ]
+  },
+  {
+    "slug": "researchers-demonstrate-openbsd-root-exploit-chain-56010c",
+    "title": "Researchers Demonstrate OpenBSD Root Exploit Chaining 37-Year-Old Shared-Memory Bug",
+    "summary": "Researchers disclosed a local privilege escalation exploit that achieves root on OpenBSD 7.9 by chaining a 37-year-old integer overflow with a separate kernel flaw, bypassing KARL kernel-address randomization and SMAP/SMEP protections. The proof‑of‑concept code was published after OpenBSD shipped the patch.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/researchers-demonstrate-openbsd-root.html",
+    "publishedAt": "2026-10-16T17:48:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "researchers-demonstrate-openbsd-root-exploit-chain",
+      "article-56010c",
+      "56010c",
+      "researchers-demonstrate-openbsd-root-exploit-chaining-37-yea"
     ]
   },
   {
@@ -98,24 +170,6 @@ export const news: NewsBrief[] = [
       "article-4d9074",
       "4d9074",
       "attackers-tampered-with-aomei-backupper-update-servers-to-de"
-    ]
-  },
-  {
-    "slug": "apt-targeting-taiwan-research-affiliates-with-goog-1b5f75",
-    "title": "APT Targeting Taiwan Research Affiliates with Google AitM Phishing",
-    "summary": "An advanced persistent threat used fake event invites to lure Taiwan research affiliates into a Google adversary‑in‑the‑middle phishing framework. The campaign harvests Google account credentials and MFA codes. The activity is tracked by security researchers; users should verify event links and enable MFA.",
-    "category": "Malware",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/uat-11985-uses-fake-event-invites-to.html",
-    "publishedAt": "2026-10-16T16:16:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apt-targeting-taiwan-research-affiliates-with-goog",
-      "article-1b5f75",
-      "1b5f75",
-      "apt-targeting-taiwan-research-affiliates-with-google-aitm-ph"
     ]
   },
   {
@@ -244,24 +298,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "37-year-old-kernel-flaw-exploited-to-gain-root-acc-38c5c9",
-    "title": "37-Year-Old Kernel Flaw Exploited to Gain Root Access on OpenBSD — PoC Released",
-    "summary": "Security researchers demonstrated a proof‑of‑concept that chains two long‑standing kernel flaws in OpenBSD to achieve root privileges. The first bug, originating from the original BSD source, involves a signed 16‑bit counter in shared memory attachments (shm_nattch). OpenBSD has already patched both vulnerabilities.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/37-year-old-kernel-openbsd-flaw/",
-    "publishedAt": "2026-10-16T14:01:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "37-year-old-kernel-flaw-exploited-to-gain-root-acc",
-      "article-38c5c9",
-      "38c5c9",
-      "37-year-old-kernel-flaw-exploited-to-gain-root-access-on-ope"
-    ]
-  },
-  {
     "slug": "ransomware-negotiator-arrest-highlights-vendor-ove-2e015a",
     "title": "Ransomware Negotiator Arrest Highlights Vendor Oversight Gap",
     "summary": "The arrest of a prominent ransomware negotiator underscores the critical need for robust vendor program oversight. The incident reveals how third‑party negotiators can pose risks to organizations, emphasizing the importance of monitoring and controlling external ransomware mediation services.",
@@ -277,24 +313,6 @@ export const news: NewsBrief[] = [
       "article-2e015a",
       "2e015a",
       "ransomware-negotiator-arrest-highlights-vendor-oversight-gap"
-    ]
-  },
-  {
-    "slug": "personal-chatgpt-use-at-work-threatens-sensitive-d-17d3c6",
-    "title": "Personal ChatGPT Use at Work Threatens Sensitive Data",
-    "summary": "Employees accessing personal ChatGPT accounts at work can inadvertently expose sensitive company data, even when an approved Enterprise workspace exists. NordLayer advises IT teams to investigate unauthorized AI usage and block sensitive information before it reaches personal accounts, mitigating data leakage risks.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/employees-using-personal-chatgpt-at-work-heres-what-it-admins-need-to-do/",
-    "publishedAt": "2026-10-16T13:50:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "personal-chatgpt-use-at-work-threatens-sensitive-d",
-      "article-17d3c6",
-      "17d3c6",
-      "personal-chatgpt-use-at-work-threatens-sensitive-data"
     ]
   },
   {
@@ -815,26 +833,6 @@ export const news: NewsBrief[] = [
       "article-7ae258",
       "7ae258",
       "linus-torvalds-credits-ai-tool-for-linux-kernel-patches"
-    ]
-  },
-  {
-    "slug": "adobe-acrobat-vulnerability-allows-one-click-memor-31d628",
-    "title": "Adobe Acrobat Vulnerability Allows One-Click Memory Corruption via Malicious PDFs",
-    "summary": "Adobe fixed a flaw in Acrobat and Acrobat Reader that lets a malicious PDF trigger an out-of-bounds write, tracked as CVE-2026-81983. The vulnerability has a CVSS score of 7.8 and could lead to code execution with the victim’s user rights. No active exploitation reported.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/adobe-acrobat-flaw/",
-    "publishedAt": "2026-10-16T04:05:46.000Z",
-    "cves": [
-      "CVE-2026-81983"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "adobe-acrobat-vulnerability-allows-one-click-memor",
-      "article-31d628",
-      "31d628",
-      "adobe-acrobat-vulnerability-allows-one-click-memory-corrupti"
     ]
   },
   {
