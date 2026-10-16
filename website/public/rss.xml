@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Oct 2026 16:19:53 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 17:27:38 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Zero-click Ad Attack Delivers Candiru Spyware to Al Jazeera Devices</title>
+      <link>https://secubuzz.com/news/zero-click-ad-attack-delivers-candiru-spyware-to-a-4d9b43</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/zero-click-ad-attack-delivers-candiru-spyware-to-a-4d9b43</guid>
+      <description><![CDATA[A zero-click attack used malicious online advertisements to deliver Candiru spyware to Al Jazeera Media Network devices. The attack required only rendering the ads, allowing the spyware to install without user interaction and exfiltrate data. No patch is available yet; users should block malicious ads and monitor for suspicious activity.]]></description>
+      <pubDate>Fri, 16 Oct 2026 17:20:03 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/zero-click-attacks-used-targeted-ads-to-deliver-candiru-spyware/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>APT Targeting Taiwan Research Affiliates with Google AitM Phishing</title>
+      <link>https://secubuzz.com/news/apt-targeting-taiwan-research-affiliates-with-goog-1b5f75</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apt-targeting-taiwan-research-affiliates-with-goog-1b5f75</guid>
+      <description><![CDATA[An advanced persistent threat used fake event invites to lure Taiwan research affiliates into a Google adversary‑in‑the‑middle phishing framework. The campaign harvests Google account credentials and MFA codes. The activity is tracked by security researchers; users should verify event links and enable MFA.]]></description>
+      <pubDate>Fri, 16 Oct 2026 16:16:44 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/uat-11985-uses-fake-event-invites-to.html">The Hacker News</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Microsoft and NVIDIA Release Whitepaper on Managing Open-Weight AI Model Risk</title>
+      <link>https://secubuzz.com/news/microsoft-and-nvidia-release-whitepaper-on-managin-4aad9c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-and-nvidia-release-whitepaper-on-managin-4aad9c</guid>
+      <description><![CDATA[Microsoft and NVIDIA have published a whitepaper that outlines a shared taxonomy, evaluation methods, and control strategies for managing risks associated with open-weight AI models in enterprise deployments. The guide aims to help organizations assess model safety, mitigate bias, and implement governance practices to protect critical systems.]]></description>
+      <pubDate>Fri, 16 Oct 2026 16:00:00 GMT</pubDate>
+      <source url="https://www.microsoft.com/en-us/security/blog/2026/10/16/managing-open-weight-model-risk-in-enterprise-deployments/">Microsoft Security</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>Proofpoint to Acquire Varonis for $6.3 Billion</title>
       <link>https://secubuzz.com/news/proofpoint-to-acquire-varonis-for-6-3-billion-5aa563</link>
@@ -161,6 +188,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>CISA, NIST, NSA Publish Key Practices for Super Intelligence Incident Readiness</title>
+      <link>https://secubuzz.com/news/cisa-nist-nsa-publish-key-practices-for-super-inte-3ed665</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-nist-nsa-publish-key-practices-for-super-inte-3ed665</guid>
+      <description><![CDATA[The National Institute of Standards and Technology, the National Security Agency’s Super Intelligence Security Center, and the Cybersecurity and Infrastructure Security Agency have released a set of ten voluntary core practices to help organizations prepare for and respond to super intelligence control incidents. The guidance focuses on pre‑deployment safeguards and human oversight.]]></description>
+      <pubDate>Fri, 16 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/resources-tools/resources/key-practices-incident-readiness-and-response-super-intelligence-training-and-evaluation">CISA</source>
+      <category>Policy</category>
+    </item>
+    <item>
       <title>CISA Issues PSA Warns Election Officials of Phishing and Smishing Threats</title>
       <link>https://secubuzz.com/news/cisa-issues-psa-warns-election-officials-of-phishi-ea1e85</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cisa-issues-psa-warns-election-officials-of-phishi-ea1e85</guid>
@@ -222,15 +258,6 @@
       <pubDate>Fri, 16 Oct 2026 11:04:53 GMT</pubDate>
       <source url="https://www.schneier.com/blog/archives/2026/10/backdooring-open-weight-ai-models.html">Schneier on Security</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Google Auto-Adds Phone Numbers to All Google Accounts on Android</title>
-      <link>https://secubuzz.com/news/google-auto-adds-phone-numbers-to-all-google-accou-54947c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-auto-adds-phone-numbers-to-all-google-accou-54947c</guid>
-      <description><![CDATA[Google’s Android devices automatically verify and add users’ phone numbers to every Google account signed in on the phone, including existing and newly added accounts. The default setting, confirmed by Google documentation, blurs the separation between personal, work, and secondary accounts, raising privacy concerns for users who keep accounts distinct.]]></description>
-      <pubDate>Fri, 16 Oct 2026 10:07:02 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/google-automatically-adds-your-phone-number/">Cyber Security News</source>
-      <category>Policy</category>
     </item>
     <item>
       <title>F5 and Juniper Networks Issue Patches for Critical Vulnerabilities</title>
@@ -429,33 +456,6 @@
       <pubDate>Thu, 15 Oct 2026 19:00:00 GMT</pubDate>
       <source url="https://therecord.media/spyware-citizen-lab-advertising">The Record</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Q3 Vulnerability Pulse Highlights Discovery vs Exploitation Trends</title>
-      <link>https://secubuzz.com/news/q3-vulnerability-pulse-highlights-discovery-vs-exp-59c4d1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/q3-vulnerability-pulse-highlights-discovery-vs-exp-59c4d1</guid>
-      <description><![CDATA[Thor reviews Q3 trends, noting a gap between vulnerability discovery and exploitation. The newsletter covers recent CVE and KEV data, questioning if the industry faces a "Bugmageddon." It offers insights into how many reported flaws remain unexploited, guiding defensive priorities.]]></description>
-      <pubDate>Thu, 15 Oct 2026 18:00:00 GMT</pubDate>
-      <source url="https://blog.talosintelligence.com/the-q3-vulnerability-pulse-discovery-exploitation/">Cisco Talos</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>Contextual Defense Is Key to Stopping Modern Cyberattacks</title>
-      <link>https://secubuzz.com/news/contextual-defense-is-key-to-stopping-modern-cyber-61b6e2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/contextual-defense-is-key-to-stopping-modern-cyber-61b6e2</guid>
-      <description><![CDATA[The article stresses that contextual defense enables teams to link threat signals, anticipate attacks, and intervene before escalation. By integrating contextual data, security operations can prioritize responses and reduce the impact of emerging cyber threats.]]></description>
-      <pubDate>Thu, 15 Oct 2026 17:42:50 GMT</pubDate>
-      <source url="https://www.securityweek.com/context-is-king-in-the-fight-against-modern-cyberattacks/">SecurityWeek</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Cloudflare Launches Fully Programmable Secure Web Gateway</title>
-      <link>https://secubuzz.com/news/cloudflare-launches-fully-programmable-secure-web-707deb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-launches-fully-programmable-secure-web-707deb</guid>
-      <description><![CDATA[Cloudflare has integrated its Gateway and Data Loss Prevention with Cloudflare Workers, enabling users to program custom security rules and policies via the Cloudflare Developer platform. The new feature expands flexibility for building secure, compliant web gateways tailored to organizational needs.]]></description>
-      <pubDate>Thu, 15 Oct 2026 17:11:12 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/programmable-gateway-dlp/">Cloudflare Security</source>
-      <category>Cloud</category>
     </item>
   </channel>
 </rss>

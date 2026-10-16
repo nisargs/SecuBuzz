@@ -11,6 +11,60 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "zero-click-ad-attack-delivers-candiru-spyware-to-a-4d9b43",
+    "title": "Zero-click Ad Attack Delivers Candiru Spyware to Al Jazeera Devices",
+    "summary": "A zero-click attack used malicious online advertisements to deliver Candiru spyware to Al Jazeera Media Network devices. The attack required only rendering the ads, allowing the spyware to install without user interaction and exfiltrate data. No patch is available yet; users should block malicious ads and monitor for suspicious activity.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/zero-click-attacks-used-targeted-ads-to-deliver-candiru-spyware/",
+    "publishedAt": "2026-10-16T17:20:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "zero-click-ad-attack-delivers-candiru-spyware-to-a",
+      "article-4d9b43",
+      "4d9b43",
+      "zero-click-ad-attack-delivers-candiru-spyware-to-al-jazeera-"
+    ]
+  },
+  {
+    "slug": "apt-targeting-taiwan-research-affiliates-with-goog-1b5f75",
+    "title": "APT Targeting Taiwan Research Affiliates with Google AitM Phishing",
+    "summary": "An advanced persistent threat used fake event invites to lure Taiwan research affiliates into a Google adversary‑in‑the‑middle phishing framework. The campaign harvests Google account credentials and MFA codes. The activity is tracked by security researchers; users should verify event links and enable MFA.",
+    "category": "Malware",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/uat-11985-uses-fake-event-invites-to.html",
+    "publishedAt": "2026-10-16T16:16:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apt-targeting-taiwan-research-affiliates-with-goog",
+      "article-1b5f75",
+      "1b5f75",
+      "apt-targeting-taiwan-research-affiliates-with-google-aitm-ph"
+    ]
+  },
+  {
+    "slug": "microsoft-and-nvidia-release-whitepaper-on-managin-4aad9c",
+    "title": "Microsoft and NVIDIA Release Whitepaper on Managing Open-Weight AI Model Risk",
+    "summary": "Microsoft and NVIDIA have published a whitepaper that outlines a shared taxonomy, evaluation methods, and control strategies for managing risks associated with open-weight AI models in enterprise deployments. The guide aims to help organizations assess model safety, mitigate bias, and implement governance practices to protect critical systems.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Microsoft Security",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/16/managing-open-weight-model-risk-in-enterprise-deployments/",
+    "publishedAt": "2026-10-16T16:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-and-nvidia-release-whitepaper-on-managin",
+      "article-4aad9c",
+      "4aad9c",
+      "microsoft-and-nvidia-release-whitepaper-on-managing-open-wei"
+    ]
+  },
+  {
     "slug": "proofpoint-to-acquire-varonis-for-6-3-billion-5aa563",
     "title": "Proofpoint to Acquire Varonis for $6.3 Billion",
     "summary": "Cybersecurity firm Proofpoint announced it will buy Miami‑based data visibility and security company Varonis in an all‑cash deal worth $6.3 billion. The acquisition expands Proofpoint’s data protection portfolio and strengthens its position in the enterprise security market.",
@@ -315,6 +369,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cisa-nist-nsa-publish-key-practices-for-super-inte-3ed665",
+    "title": "CISA, NIST, NSA Publish Key Practices for Super Intelligence Incident Readiness",
+    "summary": "The National Institute of Standards and Technology, the National Security Agency’s Super Intelligence Security Center, and the Cybersecurity and Infrastructure Security Agency have released a set of ten voluntary core practices to help organizations prepare for and respond to super intelligence control incidents. The guidance focuses on pre‑deployment safeguards and human oversight.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/resources-tools/resources/key-practices-incident-readiness-and-response-super-intelligence-training-and-evaluation",
+    "publishedAt": "2026-10-16T12:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-nist-nsa-publish-key-practices-for-super-inte",
+      "article-3ed665",
+      "3ed665",
+      "cisa-nist-nsa-publish-key-practices-for-super-intelligence-i"
+    ]
+  },
+  {
     "slug": "cisa-issues-psa-warns-election-officials-of-phishi-ea1e85",
     "title": "CISA Issues PSA Warns Election Officials of Phishing and Smishing Threats",
     "summary": "CISA and the FBI released a public service announcement warning election and campaign officials about rising phishing and smishing attacks during the 2026 U.S. midterm elections. The PSA cautions that malicious actors may steal login credentials, install malware, and target sensitive voter registration data and campaign information.",
@@ -437,24 +509,6 @@ export const news: NewsBrief[] = [
       "article-438175",
       "438175",
       "backdoored-open-weight-ai-models-via-abliterated-builds"
-    ]
-  },
-  {
-    "slug": "google-auto-adds-phone-numbers-to-all-google-accou-54947c",
-    "title": "Google Auto-Adds Phone Numbers to All Google Accounts on Android",
-    "summary": "Google’s Android devices automatically verify and add users’ phone numbers to every Google account signed in on the phone, including existing and newly added accounts. The default setting, confirmed by Google documentation, blurs the separation between personal, work, and secondary accounts, raising privacy concerns for users who keep accounts distinct.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/google-automatically-adds-your-phone-number/",
-    "publishedAt": "2026-10-16T10:07:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-auto-adds-phone-numbers-to-all-google-accou",
-      "article-54947c",
-      "54947c",
-      "google-auto-adds-phone-numbers-to-all-google-accounts-on-and"
     ]
   },
   {
@@ -6213,59 +6267,6 @@ export const news: NewsBrief[] = [
       "insider-recruitment-threats-target-employee-access",
       "article-2e7c50",
       "2e7c50"
-    ]
-  },
-  {
-    "slug": "android-17-adds-features-to-hinder-spyware-trackin-6505bc",
-    "title": "Android 17 Adds Features to Hinder Spyware Tracking",
-    "summary": "Google’s Android 17 introduces six Advanced Protection features, including forensic logging that stores evidence off-device and Intrusion Logging that records security and network events. Existing users will be notified when the updates roll out, enhancing traceability for suspected phone hacks.",
-    "category": "Malware",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/02/android-17-advanced-protection-features/",
-    "publishedAt": "2026-10-02T05:30:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "android-17-adds-features-to-hinder-spyware-trackin",
-      "article-6505bc",
-      "6505bc",
-      "android-17-adds-features-to-hinder-spyware-tracking"
-    ]
-  },
-  {
-    "slug": "ai-threats-rank-highest-among-business-leaders-405948",
-    "title": "AI Threats Rank Highest Among Business Leaders",
-    "summary": "PwC surveyed 3,934 executives across 71 countries, finding botnets, adversarial attacks, and data poisoning as the top AI threats. Leaders identified these gaps as the most unprepared, surpassing all other risks in their top five preparedness list.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/02/pwc-attacks-on-ai-systems/",
-    "publishedAt": "2026-10-02T05:00:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-threats-rank-highest-among-business-leaders",
-      "article-405948",
-      "405948"
-    ]
-  },
-  {
-    "slug": "ai-agents-maintain-access-to-company-data-after-ta-7e0d34",
-    "title": "AI Agents Maintain Access to Company Data After Tasks Complete",
-    "summary": "IT teams worry that AI agents retain ongoing access to corporate systems and can act on users’ behalf after their tasks finish, highlighting a gap in enforceable AI policies and the need for real‑time monitoring to prevent unauthorized actions.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/02/delinea-ai-policy-adoption-enforcement-report/",
-    "publishedAt": "2026-10-02T04:30:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-agents-maintain-access-to-company-data-after-ta",
-      "article-7e0d34",
-      "7e0d34",
-      "ai-agents-maintain-access-to-company-data-after-tasks-comple"
     ]
   }
 ];
