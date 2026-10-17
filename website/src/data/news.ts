@@ -11,21 +11,57 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
-    "slug": "hackers-exploit-compromised-connectwise-credential-7d10f5",
-    "title": "Hackers Exploit Compromised ConnectWise Credential to Access 173 Microsoft 365 Tenants",
-    "summary": "Researchers report an active campaign where threat actors use a stolen ConnectWise Cloud Backup credential to log into 173 Microsoft 365 tenants. The breach grants unauthorized access to customers’ M365 environments, exposing sensitive data and compromising managed service provider backups.",
-    "category": "Breach",
-    "severity": "HIGH",
+    "slug": "malicious-npm-package-imgdecode-discovered-in-supp-42d0e8",
+    "title": "Malicious npm Package 'imgdecode' Discovered in Supply Chain Attack",
+    "summary": "Researchers found the npm package imgdecode, part of the MALFEX supply chain attack, uploaded on September 30, 2026. The package contains a Windows native addon that hides a shellcode loader, enabling attackers to execute malicious code on systems that install it. The package remains available on npm and has been downloaded 979 times.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
     "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html",
-    "publishedAt": "2026-10-17T06:16:46.000Z",
+    "sourceUrl": "https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html",
+    "publishedAt": "2026-10-17T11:11:56.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "hackers-exploit-compromised-connectwise-credential",
-      "article-7d10f5",
-      "7d10f5",
-      "hackers-exploit-compromised-connectwise-credential-to-access"
+      "malicious-npm-package-imgdecode-discovered-in-supp",
+      "article-42d0e8",
+      "42d0e8",
+      "malicious-npm-package-imgdecode-discovered-in-supply-chain-a"
+    ]
+  },
+  {
+    "slug": "israeli-ad-firm-used-as-delivery-channel-for-candi-6c76fe",
+    "title": "Israeli Ad Firm Used as Delivery Channel for Candiru Spyware",
+    "summary": "Discover-Tech’s advertising platform was leveraged by threat actors to deliver the Candiru zero‑click spyware, allowing them to fingerprint and track devices at scale. The campaign enables attackers to infect selected targets without user interaction, expanding the reach of the spyware.",
+    "category": "Malware",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/israeli-ad-firm-doubled-as-candirus-zero-click-spyware-delivery-channel/",
+    "publishedAt": "2026-10-17T11:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "israeli-ad-firm-used-as-delivery-channel-for-candi",
+      "article-6c76fe",
+      "6c76fe",
+      "israeli-ad-firm-used-as-delivery-channel-for-candiru-spyware"
+    ]
+  },
+  {
+    "slug": "hackers-exploit-compromised-connectwise-backup-cre-3f92b7",
+    "title": "Hackers Exploit Compromised ConnectWise Backup Credentials to Access 173 Microsoft 365 Accounts",
+    "summary": "Hackers used a stolen ConnectWise Cloud Backup credential to sign into 173 Microsoft 365 partner and customer tenants, gaining access through a trusted backup application. The breach demonstrates how a single leaked vendor secret can expose many organizations when a multitenant app has broad permissions.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/connectwise-credentials-microsoft-365-accounts/",
+    "publishedAt": "2026-10-17T10:52:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-exploit-compromised-connectwise-backup-cre",
+      "article-3f92b7",
+      "3f92b7",
+      "hackers-exploit-compromised-connectwise-backup-credentials-t"
     ]
   },
   {
@@ -301,24 +337,6 @@ export const news: NewsBrief[] = [
       "article-5e83dd",
       "5e83dd",
       "cyber-exec-arrested-for-extortion-ledger-wallets-leak-seed-p"
-    ]
-  },
-  {
-    "slug": "zero-click-ad-attack-delivers-candiru-spyware-to-a-4d9b43",
-    "title": "Zero-click Ad Attack Delivers Candiru Spyware to Al Jazeera Devices",
-    "summary": "A zero-click attack used malicious online advertisements to deliver Candiru spyware to Al Jazeera Media Network devices. The attack required only rendering the ads, allowing the spyware to install without user interaction and exfiltrate data. No patch is available yet; users should block malicious ads and monitor for suspicious activity.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/zero-click-attacks-used-targeted-ads-to-deliver-candiru-spyware/",
-    "publishedAt": "2026-10-16T17:20:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "zero-click-ad-attack-delivers-candiru-spyware-to-a",
-      "article-4d9b43",
-      "4d9b43",
-      "zero-click-ad-attack-delivers-candiru-spyware-to-al-jazeera-"
     ]
   },
   {
@@ -1679,24 +1697,6 @@ export const news: NewsBrief[] = [
       "article-6e3602",
       "6e3602",
       "fbi-seizes-laptops-used-by-north-korean-remote-it-workers"
-    ]
-  },
-  {
-    "slug": "ledger-urges-asian-resellers-to-halt-wallet-sales-5ea266",
-    "title": "Ledger Urges Asian Resellers to Halt Wallet Sales Amid Supply‑Chain Tampering Investigation",
-    "summary": "Ledger has instructed resellers and distributors across Indonesia, Singapore, Thailand, the Philippines, Vietnam, Malaysia, and Hong Kong to stop selling its hardware wallets and remove them from shelves while it investigates reports of device tampering. The company is reviewing supply‑chain integrity and will issue guidance once the investigation concludes.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ledger-asks-sellers-across-asia-to-halt-sales-after-supply-chain-attack/",
-    "publishedAt": "2026-10-14T17:46:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ledger-urges-asian-resellers-to-halt-wallet-sales",
-      "article-5ea266",
-      "5ea266",
-      "ledger-urges-asian-resellers-to-halt-wallet-sales-amid-suppl"
     ]
   },
   {

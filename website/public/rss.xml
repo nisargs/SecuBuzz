@@ -5,15 +5,33 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Oct 2026 09:23:47 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 12:18:32 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Hackers Exploit Compromised ConnectWise Credential to Access 173 Microsoft 365 Tenants</title>
-      <link>https://secubuzz.com/news/hackers-exploit-compromised-connectwise-credential-7d10f5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-compromised-connectwise-credential-7d10f5</guid>
-      <description><![CDATA[Researchers report an active campaign where threat actors use a stolen ConnectWise Cloud Backup credential to log into 173 Microsoft 365 tenants. The breach grants unauthorized access to customers’ M365 environments, exposing sensitive data and compromising managed service provider backups.]]></description>
-      <pubDate>Sat, 17 Oct 2026 06:16:46 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html">The Hacker News</source>
+      <title>Malicious npm Package &apos;imgdecode&apos; Discovered in Supply Chain Attack</title>
+      <link>https://secubuzz.com/news/malicious-npm-package-imgdecode-discovered-in-supp-42d0e8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/malicious-npm-package-imgdecode-discovered-in-supp-42d0e8</guid>
+      <description><![CDATA[Researchers found the npm package imgdecode, part of the MALFEX supply chain attack, uploaded on September 30, 2026. The package contains a Windows native addon that hides a shellcode loader, enabling attackers to execute malicious code on systems that install it. The package remains available on npm and has been downloaded 979 times.]]></description>
+      <pubDate>Sat, 17 Oct 2026 11:11:56 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Israeli Ad Firm Used as Delivery Channel for Candiru Spyware</title>
+      <link>https://secubuzz.com/news/israeli-ad-firm-used-as-delivery-channel-for-candi-6c76fe</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/israeli-ad-firm-used-as-delivery-channel-for-candi-6c76fe</guid>
+      <description><![CDATA[Discover-Tech’s advertising platform was leveraged by threat actors to deliver the Candiru zero‑click spyware, allowing them to fingerprint and track devices at scale. The campaign enables attackers to infect selected targets without user interaction, expanding the reach of the spyware.]]></description>
+      <pubDate>Sat, 17 Oct 2026 11:00:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/israeli-ad-firm-doubled-as-candirus-zero-click-spyware-delivery-channel/">SecurityWeek</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Hackers Exploit Compromised ConnectWise Backup Credentials to Access 173 Microsoft 365 Accounts</title>
+      <link>https://secubuzz.com/news/hackers-exploit-compromised-connectwise-backup-cre-3f92b7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-compromised-connectwise-backup-cre-3f92b7</guid>
+      <description><![CDATA[Hackers used a stolen ConnectWise Cloud Backup credential to sign into 173 Microsoft 365 partner and customer tenants, gaining access through a trusted backup application. The breach demonstrates how a single leaked vendor secret can expose many organizations when a multitenant app has broad permissions.]]></description>
+      <pubDate>Sat, 17 Oct 2026 10:52:09 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/connectwise-credentials-microsoft-365-accounts/">Cyber Security News</source>
       <category>Breach</category>
     </item>
     <item>
@@ -150,15 +168,6 @@
       <pubDate>Fri, 16 Oct 2026 17:31:01 GMT</pubDate>
       <source url="https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-42-8">SentinelOne</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Zero-click Ad Attack Delivers Candiru Spyware to Al Jazeera Devices</title>
-      <link>https://secubuzz.com/news/zero-click-ad-attack-delivers-candiru-spyware-to-a-4d9b43</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/zero-click-ad-attack-delivers-candiru-spyware-to-a-4d9b43</guid>
-      <description><![CDATA[A zero-click attack used malicious online advertisements to deliver Candiru spyware to Al Jazeera Media Network devices. The attack required only rendering the ads, allowing the spyware to install without user interaction and exfiltrate data. No patch is available yet; users should block malicious ads and monitor for suspicious activity.]]></description>
-      <pubDate>Fri, 16 Oct 2026 17:20:03 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/zero-click-attacks-used-targeted-ads-to-deliver-candiru-spyware/">BleepingComputer</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>Microsoft and NVIDIA Release Whitepaper on Managing Open-Weight AI Model Risk</title>
@@ -446,15 +455,6 @@
       <description><![CDATA[A criminal forum seller markets an autonomous hacking tool that runs on stolen OpenAI, Anthropic, and Google API keys, making key owners pay for scans. Bitsight tracked the trend across 16 underground forums, noting a 67% rise in AI agent mentions and indirect prompt injection from February to August 2026.]]></description>
       <pubDate>Fri, 16 Oct 2026 05:00:24 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/16/stolen-ai-api-keys-autonomous-scans/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Record DDoS Attacks Surge, Straining Global Services</title>
-      <link>https://secubuzz.com/news/record-ddos-attacks-surge-straining-global-service-4d809d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/record-ddos-attacks-surge-straining-global-service-4d809d</guid>
-      <description><![CDATA[Netscout reported over 9.1 million DDoS attacks worldwide between January and June 2026, a nearly 25% year‑over‑year increase. Attacks exceeding 1 Tbps or 1 Gpps grew 1,286%, driven by botnets linked to Aisuru, Kimwolf, and Jackskid, forcing services offline before bandwidth limits are reached.]]></description>
-      <pubDate>Fri, 16 Oct 2026 04:30:46 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/16/netscout-ddos-attack-growth-report/">Help Net Security</source>
       <category>Policy</category>
     </item>
   </channel>
