@@ -17,7 +17,9 @@ import {
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { AdvisoryFilterModal } from '../../components/AdvisoryFilterModal';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { CveCard } from '../../components/CveCard';
+import { FeedbackCard, FEEDBACK_DISMISSED_KEY } from '../../components/FeedbackCard';
 import {
   EmptyState,
   LoadingState,
@@ -78,7 +80,30 @@ export default function AdvisoriesScreen() {
   const [loadedCount, setLoadedCount] = useState(INITIAL_ADVISORIES);
   const [now, setNow] = useState(() => new Date());
 
-  const listRef = useRef<FlatList<CveAdvisory>>(null);
+  const [feedbackDismissed, setFeedbackDismissed] = useState(true);
+
+  useEffect(() => {
+    void AsyncStorage.getItem(FEEDBACK_DISMISSED_KEY).then((val) => {
+      if (val !== '1') {
+        setFeedbackDismissed(false);
+      }
+    });
+  }, []);
+
+  const handleDismissFeedback = useCallback(async () => {
+    setFeedbackDismissed(true);
+    try {
+      await AsyncStorage.setItem(FEEDBACK_DISMISSED_KEY, '1');
+    } catch {
+      // Ignore
+    }
+  }, []);
+
+  type AdvisoryFeedItem =
+    | { type: 'advisory'; data: CveAdvisory; key: string }
+    | { type: 'feedback'; key: string };
+
+  const listRef = useRef<FlatList<AdvisoryFeedItem>>(null);
 
   // Clock timer
   useEffect(() => {
@@ -341,6 +366,27 @@ export default function AdvisoriesScreen() {
       ),
     [filteredAdvisories, loadedCount],
   );
+
+  /*
+   * Inject interactive Feedback / Rating card at index 4 (5th card)
+   * if user hasn't dismissed it yet and there are enough advisories.
+   */
+  const feedItems = useMemo<AdvisoryFeedItem[]>(() => {
+    const items: AdvisoryFeedItem[] = visibleAdvisories.map((a) => ({
+      type: 'advisory',
+      data: a,
+      key: a.id,
+    }));
+
+    if (!feedbackDismissed && items.length >= 4) {
+      items.splice(4, 0, {
+        type: 'feedback',
+        key: 'interstitial-feedback-card',
+      });
+    }
+
+    return items;
+  }, [visibleAdvisories, feedbackDismissed]);
 
   // Reset paging when filters change
   useEffect(() => {
@@ -675,19 +721,26 @@ export default function AdvisoriesScreen() {
         feedHeight > 0 ? (
           <FlatList
             ref={listRef}
-            data={visibleAdvisories}
-            keyExtractor={(item) => item.id}
-            renderItem={({ item }: { item: CveAdvisory }) => (
+            data={feedItems}
+            keyExtractor={(item) => item.key}
+            renderItem={({ item }: { item: AdvisoryFeedItem }) => (
               <View style={{ height: feedHeight }}>
-                <CveCard
-                  advisory={item}
-                  isSaved={isSaved(item.id)}
-                  onToggleSaved={toggleSaved}
-                  onSelectSeverity={(sev) => setSeverityFilter(sev)}
-                  onSelectSource={(src) =>
-                    setSourceFilter(src === 'CISA KEV' ? 'CISA' : 'GITHUB')
-                  }
-                />
+                {item.type === 'feedback' ? (
+                  <FeedbackCard
+                    onDismiss={handleDismissFeedback}
+                    context="advisories"
+                  />
+                ) : (
+                  <CveCard
+                    advisory={item.data}
+                    isSaved={isSaved(item.data.id)}
+                    onToggleSaved={toggleSaved}
+                    onSelectSeverity={(sev) => setSeverityFilter(sev)}
+                    onSelectSource={(src) =>
+                      setSourceFilter(src === 'CISA KEV' ? 'CISA' : 'GITHUB')
+                    }
+                  />
+                )}
               </View>
             )}
             pagingEnabled

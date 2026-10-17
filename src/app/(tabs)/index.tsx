@@ -19,6 +19,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { ArticleCard } from '../../components/ArticleCard';
+import { FeedbackCard, FEEDBACK_DISMISSED_KEY } from '../../components/FeedbackCard';
 import {
   FilterModal,
   type SeverityFilter,
@@ -133,8 +134,32 @@ export default function FeedScreen() {
   const [searchQuery, setSearchQuery] =
     useState('');
 
+  const [feedbackDismissed, setFeedbackDismissed] =
+    useState(true);
+
+  useEffect(() => {
+    void AsyncStorage.getItem(FEEDBACK_DISMISSED_KEY).then((val) => {
+      if (val !== '1') {
+        setFeedbackDismissed(false);
+      }
+    });
+  }, []);
+
+  const handleDismissFeedback = useCallback(async () => {
+    setFeedbackDismissed(true);
+    try {
+      await AsyncStorage.setItem(FEEDBACK_DISMISSED_KEY, '1');
+    } catch {
+      // Ignore
+    }
+  }, []);
+
+  type FeedItem =
+    | { type: 'article'; data: Article; key: string }
+    | { type: 'feedback'; key: string };
+
   const listRef =
-    useRef<FlatList<Article>>(null);
+    useRef<FlatList<FeedItem>>(null);
 
   /*
    * Load articles.
@@ -292,6 +317,27 @@ export default function FeedScreen() {
       ),
     [filteredArticles, loadedCount],
   );
+
+  /*
+   * Inject interactive Feedback / Rating card at index 4 (5th card)
+   * if user hasn't dismissed it yet and there are enough articles.
+   */
+  const feedItems = useMemo<FeedItem[]>(() => {
+    const items: FeedItem[] = visibleArticles.map((a) => ({
+      type: 'article',
+      data: a,
+      key: a.id,
+    }));
+
+    if (!feedbackDismissed && items.length >= 4) {
+      items.splice(4, 0, {
+        type: 'feedback',
+        key: 'interstitial-feedback-card',
+      });
+    }
+
+    return items;
+  }, [visibleArticles, feedbackDismissed]);
 
   /*
    * Reset feed position when the category, severity,
@@ -786,31 +832,38 @@ export default function FeedScreen() {
         feedHeight > 0 ? (
           <FlatList
             ref={listRef}
-            data={visibleArticles}
-            keyExtractor={(item) => item.id}
+            data={feedItems}
+            keyExtractor={(item) => item.key}
             renderItem={({
               item,
             }: {
-              item: Article;
+              item: FeedItem;
             }) => (
               <View
                 style={{
                   height: feedHeight,
                 }}
               >
-                <ArticleCard
-                  article={item}
-                  isSaved={isSaved(item.id)}
-                  onToggleSaved={
-                    toggleSaved
-                  }
-                  onSelectSeverity={(sev) => {
-                    setSeverityFilter(sev);
-                  }}
-                  onSelectCategory={(cat) => {
-                    setFilter(cat);
-                  }}
-                />
+                {item.type === 'feedback' ? (
+                  <FeedbackCard
+                    onDismiss={handleDismissFeedback}
+                    context="news"
+                  />
+                ) : (
+                  <ArticleCard
+                    article={item.data}
+                    isSaved={isSaved(item.data.id)}
+                    onToggleSaved={
+                      toggleSaved
+                    }
+                    onSelectSeverity={(sev) => {
+                      setSeverityFilter(sev);
+                    }}
+                    onSelectCategory={(cat) => {
+                      setFilter(cat);
+                    }}
+                  />
+                )}
               </View>
             )}
             pagingEnabled
