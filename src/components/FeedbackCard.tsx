@@ -110,13 +110,14 @@ export function FeedbackCard({ onDismiss, context = 'news' }: FeedbackCardProps)
             pressed && { borderColor: accentColor },
           ]}
         >
-          <Ionicons name="sparkles-outline" size={16} color={accentColor} style={styles.buttonIcon} />
-          <View style={styles.buttonTextRow}>
+          <Ionicons name="bulb-outline" size={18} color={accentColor} style={styles.buttonIcon} />
+          <View style={styles.buttonTextColumn}>
             <Text style={[styles.secondaryButtonText, { color: colors.textPrimary }]}>
               Suggest a Feature or Idea
             </Text>
-            <Text style={[styles.emailTag, { color: colors.textSecondary }]}>feedback@</Text>
+            <Text style={[styles.emailTag, { color: colors.textSecondary }]}>feedback@secubuzz.com</Text>
           </View>
+          <Ionicons name="mail-outline" size={16} color={colors.textSecondary} style={styles.rightIcon} />
         </Pressable>
 
         {/* Report a Bug */}
@@ -128,13 +129,14 @@ export function FeedbackCard({ onDismiss, context = 'news' }: FeedbackCardProps)
             pressed && { borderColor: accentColor },
           ]}
         >
-          <Ionicons name="bug-outline" size={16} color={colors.textSecondary} style={styles.buttonIcon} />
-          <View style={styles.buttonTextRow}>
+          <Ionicons name="bug-outline" size={18} color={colors.textSecondary} style={styles.buttonIcon} />
+          <View style={styles.buttonTextColumn}>
             <Text style={[styles.secondaryButtonText, { color: colors.textPrimary }]}>
               Report an Issue or Bug
             </Text>
-            <Text style={[styles.emailTag, { color: colors.textSecondary }]}>support@</Text>
+            <Text style={[styles.emailTag, { color: colors.textSecondary }]}>support@secubuzz.com</Text>
           </View>
+          <Ionicons name="mail-outline" size={16} color={colors.textSecondary} style={styles.rightIcon} />
         </Pressable>
       </View>
 
@@ -224,11 +226,9 @@ const styles = StyleSheet.create({
   buttonIcon: {
     marginRight: 10,
   },
-  buttonTextRow: {
+  buttonTextColumn: {
     flex: 1,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
   },
   secondaryButtonText: {
     fontSize: 13,
@@ -237,6 +237,10 @@ const styles = StyleSheet.create({
   emailTag: {
     fontSize: 11,
     fontFamily: 'monospace',
+    marginTop: 2,
+  },
+  rightIcon: {
+    marginLeft: 8,
   },
   footer: {
     flexDirection: 'row',
