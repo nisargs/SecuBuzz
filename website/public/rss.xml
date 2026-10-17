@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Oct 2026 07:11:20 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 08:18:07 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Hackers Exploit Compromised ConnectWise Credential to Access 173 Microsoft 365 Tenants</title>
@@ -377,6 +377,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Inbox Flooded with Sign‑Up Emails Explained</title>
+      <link>https://secubuzz.com/news/inbox-flooded-with-sign-up-emails-explained-1c8798</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/inbox-flooded-with-sign-up-emails-explained-1c8798</guid>
+      <description><![CDATA[A sudden surge of sign‑up emails may indicate an email bombing attack, where attackers overwhelm inboxes with automated messages. The phenomenon can mask malicious intent or be a precursor to phishing attempts. Users should verify senders and consider filtering or blocking suspicious domains.]]></description>
+      <pubDate>Fri, 16 Oct 2026 09:00:00 GMT</pubDate>
+      <source url="https://www.welivesecurity.com/en/cybersecurity/inbox-flooded-signup-messages-email-bombing/">ESET WeLiveSecurity</source>
+      <category>Policy</category>
+    </item>
+    <item>
       <title>MITRE ATT&amp;CK v20 Adds Nine New Techniques Covering AI Exploits, MFA Bypass, and CAPTCHA Evasion</title>
       <link>https://secubuzz.com/news/mitre-att-ck-v20-adds-nine-new-techniques-covering-4bb82c</link>
       <guid isPermaLink="true">https://secubuzz.com/news/mitre-att-ck-v20-adds-nine-new-techniques-covering-4bb82c</guid>
@@ -446,15 +455,6 @@
       <description><![CDATA[Netscout reported over 9.1 million DDoS attacks worldwide between January and June 2026, a nearly 25% year‑over‑year increase. Attacks exceeding 1 Tbps or 1 Gpps grew 1,286%, driven by botnets linked to Aisuru, Kimwolf, and Jackskid, forcing services offline before bandwidth limits are reached.]]></description>
       <pubDate>Fri, 16 Oct 2026 04:30:46 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/16/netscout-ddos-attack-growth-report/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Linus Torvalds Credits AI Tool for Linux Kernel Patches</title>
-      <link>https://secubuzz.com/news/linus-torvalds-credits-ai-tool-for-linux-kernel-pa-7ae258</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/linus-torvalds-credits-ai-tool-for-linux-kernel-pa-7ae258</guid>
-      <description><![CDATA[Linus Torvalds disclosed that the AI coding tool Claude Code assisted in writing Linux kernel patches and test programs focused on page‑cache read performance. The collaboration demonstrates AI’s role in core operating‑system development and highlights the limits of automated code generation.]]></description>
-      <pubDate>Fri, 16 Oct 2026 04:07:53 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/linus-torvalds-use-claude-code-patches/">Cyber Security News</source>
       <category>Policy</category>
     </item>
   </channel>

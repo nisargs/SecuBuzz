@@ -751,6 +751,23 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "inbox-flooded-with-sign-up-emails-explained-1c8798",
+    "title": "Inbox Flooded with Sign‑Up Emails Explained",
+    "summary": "A sudden surge of sign‑up emails may indicate an email bombing attack, where attackers overwhelm inboxes with automated messages. The phenomenon can mask malicious intent or be a precursor to phishing attempts. Users should verify senders and consider filtering or blocking suspicious domains.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "ESET WeLiveSecurity",
+    "sourceUrl": "https://www.welivesecurity.com/en/cybersecurity/inbox-flooded-signup-messages-email-bombing/",
+    "publishedAt": "2026-10-16T09:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "inbox-flooded-with-sign-up-emails-explained",
+      "article-1c8798",
+      "1c8798"
+    ]
+  },
+  {
     "slug": "mitre-att-ck-v20-adds-nine-new-techniques-covering-4bb82c",
     "title": "MITRE ATT&CK v20 Adds Nine New Techniques Covering AI Exploits, MFA Bypass, and CAPTCHA Evasion",
     "summary": "MITRE released ATT&CK v20, adding nine Enterprise techniques that describe how attackers may target AI systems, steal application‑specific passwords to bypass MFA, and evade CAPTCHA checks. The update also expands coverage for industrial control systems and mobile devices, with detection guidance for the new behaviors.",

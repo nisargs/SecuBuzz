@@ -663,6 +663,19 @@
     ]
   },
   {
+    "id": "https://www.welivesecurity.com/en/cybersecurity/inbox-flooded-signup-messages-email-bombing/",
+    "sourceUrl": "https://www.welivesecurity.com/en/cybersecurity/inbox-flooded-signup-messages-email-bombing/",
+    "title": "Inbox Flooded with Sign‑Up Emails Explained",
+    "headline": "Inbox Flooded with Sign‑Up Emails Explained",
+    "summary": "A sudden surge of sign‑up emails may indicate an email bombing attack, where attackers overwhelm inboxes with automated messages. The phenomenon can mask malicious intent or be a precursor to phishing attempts. Users should verify senders and consider filtering or blocking suspicious domains.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "ESET WeLiveSecurity",
+    "publishedAt": "2026-10-16T09:00:00.000Z",
+    "url": "https://www.welivesecurity.com/en/cybersecurity/inbox-flooded-signup-messages-email-bombing/",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybersecuritynews.com/mitre-attck-v20-released/",
     "sourceUrl": "https://cybersecuritynews.com/mitre-attck-v20-released/",
     "title": "MITRE ATT&CK v20 Adds Nine New Techniques Covering AI Exploits, MFA Bypass, and CAPTCHA Evasion",
