@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Oct 2026 00:44:45 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 04:18:07 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>CVE-2026-103849: Magento BlockStrap RCE Exploit Detected</title>
+      <link>https://secubuzz.com/news/cve-2026-103849-magento-blockstrap-rce-exploit-det-2dfc08</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-103849-magento-blockstrap-rce-exploit-det-2dfc08</guid>
+      <description><![CDATA[Sansec reports a CVSS 10.0 unauthenticated remote code execution flaw in Magento’s BlockStrap component (CVE-2026-103849). The vulnerability allows attackers to inject directives and execute arbitrary code on Magento stores. Immediate patching and disabling of BlockStrap is recommended to prevent exploitation.]]></description>
+      <pubDate>Sat, 17 Oct 2026 01:40:55 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/cve-2026-103849-magento-blockstrap-rce-patch-guide">CyberNews AI</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>CVE-2026-102764: BeyondTrust Zero-Day RCE Exploited by Google</title>
       <link>https://secubuzz.com/news/cve-2026-102764-beyondtrust-zero-day-rce-exploited-4348af</link>
@@ -446,15 +455,6 @@
       <description><![CDATA[The week’s highlights include releases from NinjaOne, Qualys, Scytale, and SolarWinds. NinjaOne introduces Katana AI, an agentic AI technician, and the MCP server, an orchestration connector extending AI tool access. The post details how these tools accelerate IT problem resolution.]]></description>
       <pubDate>Fri, 16 Oct 2026 04:00:27 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/16/new-infosec-products-of-the-week-october-16-2026/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Fastfetch 2.70.0 changes how Disk free space is reported</title>
-      <link>https://secubuzz.com/news/fastfetch-2-70-0-changes-how-disk-free-space-is-re-2b15e5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fastfetch-2-70-0-changes-how-disk-free-space-is-re-2b15e5</guid>
-      <description><![CDATA[Fastfetch 2.70.0, a cross‑platform system information tool, removed QuickJS scripting and altered Disk module reporting. The new Disk format drops the {size-available} field; {size-free} now reports either free or available space. Configs for older versions may produce different values or fail.]]></description>
-      <pubDate>Fri, 16 Oct 2026 03:53:43 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/16/fastfetch-2-70-0-released/">Help Net Security</source>
       <category>Policy</category>
     </item>
   </channel>

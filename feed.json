@@ -1,5 +1,18 @@
 [
   {
+    "id": "https://cybernewsai.com/blog/cve-2026-103849-magento-blockstrap-rce-patch-guide",
+    "sourceUrl": "https://cybernewsai.com/blog/cve-2026-103849-magento-blockstrap-rce-patch-guide",
+    "title": "CVE-2026-103849: Magento BlockStrap RCE Exploit Detected",
+    "headline": "CVE-2026-103849: Magento BlockStrap RCE Exploit Detected",
+    "summary": "Sansec reports a CVSS 10.0 unauthenticated remote code execution flaw in Magento’s BlockStrap component (CVE-2026-103849). The vulnerability allows attackers to inject directives and execute arbitrary code on Magento stores. Immediate patching and disabling of BlockStrap is recommended to prevent exploitation.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-10-17T01:40:55.000Z",
+    "url": "https://cybernewsai.com/blog/cve-2026-103849-magento-blockstrap-rce-patch-guide",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybernewsai.com/blog/cve-2026-102764-beyondtrust-armory-castle-zero-day-patch",
     "sourceUrl": "https://cybernewsai.com/blog/cve-2026-102764-beyondtrust-armory-castle-zero-day-patch",
     "title": "CVE-2026-102764: BeyondTrust Zero-Day RCE Exploited by Google",
@@ -5184,18 +5197,5 @@
         "sourceUrl": "https://therecord.media/iran-montenegro-hacker-extradition"
       }
     ]
-  },
-  {
-    "id": "https://www.schneier.com/blog/archives/2026/10/how-american-political-campaigns-are-using-ai-and-what-theyre-spending-on-the-tools.html",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/how-american-political-campaigns-are-using-ai-and-what-theyre-spending-on-the-tools.html",
-    "title": "AI Adoption Surges in U.S. Political Campaigns",
-    "headline": "AI Adoption Surges in U.S. Political Campaigns",
-    "summary": "An essay examines how U.S. political campaigns increasingly employ AI tools, revealing spending patterns from new campaign finance disclosures. The analysis shows AI is becoming essential, yet candidates remain silent about specific usage. The piece highlights the growing influence of AI in political strategy and the need for transparency.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Schneier on Security",
-    "publishedAt": "2026-10-02T11:02:19.000Z",
-    "url": "https://www.schneier.com/blog/archives/2026/10/how-american-political-campaigns-are-using-ai-and-what-theyre-spending-on-the-tools.html",
-    "additionalSources": []
   }
 ]
