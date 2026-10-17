@@ -11,21 +11,57 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
-    "slug": "malicious-npm-package-imgdecode-discovered-in-supp-42d0e8",
-    "title": "Malicious npm Package 'imgdecode' Discovered in Supply Chain Attack",
-    "summary": "Researchers found the npm package imgdecode, part of the MALFEX supply chain attack, uploaded on September 30, 2026. The package contains a Windows native addon that hides a shellcode loader, enabling attackers to execute malicious code on systems that install it. The package remains available on npm and has been downloaded 979 times.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html",
-    "publishedAt": "2026-10-17T11:11:56.000Z",
+    "slug": "hackers-breach-microsoft-365-tenants-via-connectwi-6cb7ff",
+    "title": "Hackers breach Microsoft 365 tenants via ConnectWise supply‑chain attack",
+    "summary": "Hackers accessed ConnectWise application identities and used them to compromise Microsoft 365 tenants. The attack forced ConnectWise to shut down customer access to its Cloud Backup service. The breach exposed tenant credentials and potentially sensitive data across affected organizations.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/",
+    "publishedAt": "2026-10-17T15:18:51.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "malicious-npm-package-imgdecode-discovered-in-supp",
-      "article-42d0e8",
-      "42d0e8",
-      "malicious-npm-package-imgdecode-discovered-in-supply-chain-a"
+      "hackers-breach-microsoft-365-tenants-via-connectwi",
+      "article-6cb7ff",
+      "6cb7ff",
+      "hackers-breach-microsoft-365-tenants-via-connectwise-supply-"
+    ]
+  },
+  {
+    "slug": "malfex-how-to-detect-block-imgdecode-npm-shellcode-4a5295",
+    "title": "MALFEX: How to Detect & Block imgdecode npm Shellcode Loader",
+    "summary": "The MALFEX imgdecode npm package weaponizes Windows native DLL addons to inject shellcode into dllhost.exe. Detection relies on monitoring DLL injection activity and anomalous process behavior. Defenses include disabling the package, applying runtime application hardening, and monitoring for dllhost.exe anomalies.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/malfex-imgdecode-npm-shellcode-loader-defense",
+    "publishedAt": "2026-10-17T14:45:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "malfex-how-to-detect-block-imgdecode-npm-shellcode",
+      "article-4a5295",
+      "4a5295",
+      "malfex-how-to-detect-block-imgdecode-npm-shellcode-loader"
+    ]
+  },
+  {
+    "slug": "drupal-patches-critical-remote-code-execution-vuln-70c342",
+    "title": "Drupal Patches Critical Remote Code Execution Vulnerabilities",
+    "summary": "Drupal released patches for two critical vulnerabilities that could allow remote code execution on any supported CMS version. The flaws enable attackers to run arbitrary code on affected websites. Site administrators should apply the latest updates immediately to mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaws-warns-exploits-may-emerge-soon/",
+    "publishedAt": "2026-10-17T14:32:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "drupal-patches-critical-remote-code-execution-vuln",
+      "article-70c342",
+      "70c342",
+      "drupal-patches-critical-remote-code-execution-vulnerabilitie"
     ]
   },
   {
@@ -44,24 +80,6 @@ export const news: NewsBrief[] = [
       "article-6c76fe",
       "6c76fe",
       "israeli-ad-firm-used-as-delivery-channel-for-candiru-spyware"
-    ]
-  },
-  {
-    "slug": "hackers-exploit-compromised-connectwise-backup-cre-3f92b7",
-    "title": "Hackers Exploit Compromised ConnectWise Backup Credentials to Access 173 Microsoft 365 Accounts",
-    "summary": "Hackers used a stolen ConnectWise Cloud Backup credential to sign into 173 Microsoft 365 partner and customer tenants, gaining access through a trusted backup application. The breach demonstrates how a single leaked vendor secret can expose many organizations when a multitenant app has broad permissions.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/connectwise-credentials-microsoft-365-accounts/",
-    "publishedAt": "2026-10-17T10:52:09.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-exploit-compromised-connectwise-backup-cre",
-      "article-3f92b7",
-      "3f92b7",
-      "hackers-exploit-compromised-connectwise-backup-credentials-t"
     ]
   },
   {
@@ -176,24 +194,6 @@ export const news: NewsBrief[] = [
       "article-3094d2",
       "3094d2",
       "beyondtrust-remote-support-zero-day-adds-to-edge-device-expl"
-    ]
-  },
-  {
-    "slug": "magento-and-adobe-commerce-vulnerability-allows-re-586db8",
-    "title": "Magento and Adobe Commerce Vulnerability Allows Remote Code Execution",
-    "summary": "A maximum‑severity flaw (CVE‑2026‑103849) in Magento’s BlockStrap component lets attackers execute arbitrary PHP code on store servers, potentially compromising customer data and site integrity. Adobe Commerce users must apply the vendor patch immediately to prevent exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-blockstrap-flaw-lets-hackers-run-code-on-magento-servers/",
-    "publishedAt": "2026-10-16T20:00:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "magento-and-adobe-commerce-vulnerability-allows-re",
-      "article-586db8",
-      "586db8",
-      "magento-and-adobe-commerce-vulnerability-allows-remote-code-"
     ]
   },
   {
@@ -462,24 +462,6 @@ export const news: NewsBrief[] = [
       "article-2e015a",
       "2e015a",
       "ransomware-negotiator-arrest-highlights-vendor-oversight-gap"
-    ]
-  },
-  {
-    "slug": "moscow-police-detain-suspected-datasuckers-hackers-4dc3ff",
-    "title": "Moscow Police Detain Suspected DataSuckers Hackers Linked to Restaurant Chain Breach",
-    "summary": "Three suspected members of the DataSuckers hacking group were detained by Moscow police after a cyberattack on a popular restaurant chain exposed large amounts of customer information. The arrests follow investigations into the breach that affected Ukrainian and Russian customers, highlighting the group's cross-border reach.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/russia-datasuckers-hackers-arrested",
-    "publishedAt": "2026-10-16T13:30:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "moscow-police-detain-suspected-datasuckers-hackers",
-      "article-4dc3ff",
-      "4dc3ff",
-      "moscow-police-detain-suspected-datasuckers-hackers-linked-to"
     ]
   },
   {
