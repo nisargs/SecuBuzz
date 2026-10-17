@@ -110,7 +110,7 @@ export function FeedbackCard({ onDismiss, context = 'news' }: FeedbackCardProps)
             pressed && { borderColor: accentColor },
           ]}
         >
-          <Ionicons name="bulb-outline" size={18} color={accentColor} style={styles.buttonIcon} />
+          <Ionicons name="bulb-outline" size={18} color={colors.textSecondary} style={styles.buttonIcon} />
           <View style={styles.buttonTextColumn}>
             <Text style={[styles.secondaryButtonText, { color: colors.textPrimary }]}>
               Suggest a Feature or Idea

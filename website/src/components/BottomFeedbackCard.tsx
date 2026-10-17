@@ -74,8 +74,8 @@ export function BottomFeedbackCard() {
                     className="flex items-center justify-between gap-3 rounded-lg border border-line bg-raised px-3.5 py-2.5 text-xs font-medium text-ink hover:border-accent hover:text-accent transition-all group"
                   >
                     <div className="flex items-center gap-3">
-                      <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-accent/10 text-accent group-hover:bg-accent/20 transition-colors">
-                        <Lightbulb className="h-4 w-4 text-accent" />
+                      <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-line/50 text-muted group-hover:text-accent transition-colors">
+                        <Lightbulb className="h-4 w-4 text-muted group-hover:text-accent transition-colors" />
                       </div>
                       <div className="flex flex-col text-left">
                         <span className="font-semibold text-ink group-hover:text-accent transition-colors">
