@@ -40,7 +40,7 @@ SecuBuzz: Cyber Threat Radar
 ```text
 SecuBuzz is the high-signal, zero-fluff cybersecurity threat intelligence assistant built for security analysts, CISOs, sysadmins, penetration testers, and developers who need to stay ahead of breaches without wading through 40-page advisory PDFs.
 
-We distill breaking cyber disclosures, malware campaigns, and zero-day vulnerabilities from 20+ verified intelligence authorities into clean, actionable 60-word briefs refreshed hourly around the clock.
+We distill breaking cyber disclosures, malware campaigns, and zero-day vulnerabilities from 27 verified intelligence authorities into clean, actionable 60-word briefs refreshed hourly around the clock.
 
 ⚡ 60-WORD CYBERSECURITY BRIEFS
 • Get essential threat mechanics and impact in under 30 seconds.
@@ -49,7 +49,7 @@ We distill breaking cyber disclosures, malware campaigns, and zero-day vulnerabi
 • Severity telemetry with objective CVSS classification (Critical, High, Medium, Low).
 
 🎯 LIVE CISA KEV ZERO-DAY RADAR
-• Real-time catalog of Known Exploited Vulnerabilities (KEV) actively weaponized in the wild.
+• Real-time catalog of 1,789+ active CVE security advisories (CISA KEV + GitHub Security Advisory Database).
 • Track federal BOD 22-01 remediation deadlines and compliance mandates.
 • Filter vulnerabilities by vendor, product, and CVE identifier.
 
@@ -70,7 +70,7 @@ SecuBuzz respects user privacy as strictly as cybersecurity:
 • Bookmarks and reading preferences remain 100% on your local device.
 • Free to use on Android and Web (https://secubuzz.com).
 
-📡 CURATED THREAT INTELLIGENCE SOURCES
+📡 27 CURATED THREAT INTELLIGENCE SOURCES
 Continuously aggregated from leading cybersecurity authorities including:
 • The Hacker News
 • BleepingComputer
@@ -81,6 +81,7 @@ Continuously aggregated from leading cybersecurity authorities including:
 • Help Net Security
 • Krebs on Security
 • SANS Internet Storm Center
+• Microsoft MSRC, Palo Alto Unit 42, Google Project Zero & more.
 
 Triage threats at machine speed. Stay ahead of zero-days, ransomware syndicates, and supply chain vulnerabilities. Download SecuBuzz today.
 ```

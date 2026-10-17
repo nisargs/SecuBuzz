@@ -764,6 +764,7 @@ IMPORTANT RULES:
 - Do not use bullet points inside summaries.
 - Do not use ellipses.
 - The summary must provide usable, concrete intelligence (what software is affected, how the exploit/attack works, what is the impact, and the fix or mitigation if available). Aim for approximately 50-60 words.
+- ANTI-AI SLOP & TECHNICAL TONE (STRICT): Write like a senior cybersecurity intelligence analyst. NEVER use AI cliches or filler words ("delve", "tapestry", "in today's digital landscape", "in an era where", "serves as a stark reminder", "it is critical to note", "underscores the importance", "beacon", "testament", "crucial", "pivotal", "paramount"). Avoid dramatic throat-clearing; lead directly with the technical subject (e.g. "Attackers are exploiting...", "A newly disclosed flaw in...", "Microsoft released a patch for...").
 - If there is not enough information for a reliable summary, omit that article.
 - The "index" must exactly match the supplied article index.
 

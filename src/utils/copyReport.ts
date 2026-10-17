@@ -4,15 +4,49 @@ import type { CveAdvisory } from '../models/cve';
 import { haptics } from './haptics';
 
 /**
+ * Deterministic URL slug generator matching secubuzz.com/news/[slug].
+ */
+function createSlug(headline: string = '', id: string = ''): string {
+  const base = (headline || '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .slice(0, 50)
+    .replace(/^-+|-+$/g, '');
+
+  let hash = 0;
+  const idStr = id || headline || '';
+  for (let i = 0; i < idStr.length; i++) {
+    hash = (hash << 5) - hash + idStr.charCodeAt(i);
+    hash |= 0;
+  }
+  const hex = Math.abs(hash).toString(16).padStart(6, '0').slice(0, 6);
+  return base ? `${base}-${hex}` : `article-${hex}`;
+}
+
+/**
  * Formats a CVE advisory into a clean, markdown-formatted incident report
  * ready to paste into Slack, Microsoft Teams, Jira, or Discord.
  */
 export function formatAdvisoryMarkdown(advisory: CveAdvisory): string {
   const title = advisory.vulnerabilityName || advisory.product || 'Threat Advisory';
   const lines: string[] = [
-    `*🚨 [CISA Zero-Day Alert] ${advisory.cveID}: ${title}*`,
+    `*[CISA KEV Dispatch] ${advisory.cveID}: ${title}*`,
     `- Severity: ${(advisory.severity || 'HIGH').toUpperCase()}`,
   ];
+
+  if (advisory.cvssScore !== undefined) {
+    lines.push(`- CVSS Base Score: ${advisory.cvssScore}`);
+  }
+
+  if (advisory.epssScore !== undefined) {
+    const pct = (advisory.epssScore * 100).toFixed(1);
+    const pctl = advisory.epssPercentile !== undefined ? ` (${(advisory.epssPercentile * 100).toFixed(0)}th percentile)` : '';
+    lines.push(`- EPSS Exploit Probability: ${pct}%${pctl}`);
+  }
+
+  if (advisory.knownRansomwareCampaignUse === 'Known') {
+    lines.push(`- Ransomware Campaign Use: Confirmed in wild`);
+  }
 
   if (advisory.vendorProject || advisory.product) {
     const affected = [advisory.vendorProject, advisory.product].filter(Boolean).join(' · ');
@@ -53,8 +87,8 @@ export function formatAdvisoryMarkdown(advisory: CveAdvisory): string {
     `- Primary Source: ${advisory.source || 'CISA KEV'} (${sourceUrl})`,
     '',
     'Shared via SecuBuzz · Quick 60-Word Cybersecurity News',
-    '📱 Google Play: https://play.google.com/store/apps/details?id=com.secubuzz.app',
-    '🌐 Web: https://secubuzz.com'
+    'Google Play: https://play.google.com/store/apps/details?id=com.secubuzz.app',
+    'Web: https://secubuzz.com'
   );
 
   return lines.join('\n');
@@ -64,18 +98,11 @@ export function formatAdvisoryMarkdown(advisory: CveAdvisory): string {
  * Formats a news brief into a markdown incident report.
  */
 export function formatArticleMarkdown(article: Article): string {
-  const slug = article.headline
-    ? article.headline
-        .toLowerCase()
-        .replace(/[^a-z0-9]+/g, '-')
-        .replace(/^-+|-+$/g, '')
-        .slice(0, 60)
-        .replace(/-+$/, '')
-    : '';
-  const webUrl = slug ? `https://secubuzz.com/news/${slug}` : 'https://secubuzz.com';
+  const slug = (article as any).slug || createSlug(article.headline, article.id);
+  const webUrl = `https://secubuzz.com/news/${slug}`;
 
   const lines: string[] = [
-    `*⚡ [60-Word Security Brief] ${article.headline}*`,
+    `*[Threat Brief] ${article.headline}*`,
     `- Category: ${article.category}`,
     `- Severity: ${article.severity}`,
   ];
@@ -112,8 +139,8 @@ export function formatArticleMarkdown(article: Article): string {
     `- Source: ${article.sourceName} (${article.sourceUrl})`,
     '',
     'Shared via SecuBuzz · Quick 60-Word Cybersecurity News',
-    '📱 Google Play: https://play.google.com/store/apps/details?id=com.secubuzz.app',
-    '🌐 Web: https://secubuzz.com'
+    'Google Play: https://play.google.com/store/apps/details?id=com.secubuzz.app',
+    'Web: https://secubuzz.com'
   );
 
   return lines.join('\n');
