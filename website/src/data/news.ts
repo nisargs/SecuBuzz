@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "claude-ai-deciphers-25-year-nsa-elliptic-curve-see-78d446",
+    "title": "Claude AI Deciphers 25-Year NSA Elliptic Curve Seed Mystery",
+    "summary": "Anthropic’s Claude research model traced the origins of five NSA-supplied elliptic curve seeds in under 30 minutes, revealing how public security parameters were selected. The discovery clarifies parameter selection without exposing keys or breaking encryption.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/claude-ai-cryptography-mystery/",
+    "publishedAt": "2026-10-17T16:59:29.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "claude-ai-deciphers-25-year-nsa-elliptic-curve-see",
+      "article-78d446",
+      "78d446",
+      "claude-ai-deciphers-25-year-nsa-elliptic-curve-seed-mystery"
+    ]
+  },
+  {
     "slug": "hackers-breach-microsoft-365-tenants-via-connectwi-6cb7ff",
     "title": "Hackers breach Microsoft 365 tenants via ConnectWise supply‑chain attack",
     "summary": "Hackers accessed ConnectWise application identities and used them to compromise Microsoft 365 tenants. The attack forced ConnectWise to shut down customer access to its Cloud Backup service. The breach exposed tenant credentials and potentially sensitive data across affected organizations.",

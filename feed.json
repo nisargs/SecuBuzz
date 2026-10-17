@@ -1,5 +1,18 @@
 [
   {
+    "id": "https://cybersecuritynews.com/claude-ai-cryptography-mystery/",
+    "sourceUrl": "https://cybersecuritynews.com/claude-ai-cryptography-mystery/",
+    "title": "Claude AI Deciphers 25-Year NSA Elliptic Curve Seed Mystery",
+    "headline": "Claude AI Deciphers 25-Year NSA Elliptic Curve Seed Mystery",
+    "summary": "Anthropic’s Claude research model traced the origins of five NSA-supplied elliptic curve seeds in under 30 minutes, revealing how public security parameters were selected. The discovery clarifies parameter selection without exposing keys or breaking encryption.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-17T16:59:29.000Z",
+    "url": "https://cybersecuritynews.com/claude-ai-cryptography-mystery/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/",
     "title": "Hackers breach Microsoft 365 tenants via ConnectWise supply‑chain attack",

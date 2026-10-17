@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Oct 2026 18:46:17 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 19:26:01 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Claude AI Deciphers 25-Year NSA Elliptic Curve Seed Mystery</title>
+      <link>https://secubuzz.com/news/claude-ai-deciphers-25-year-nsa-elliptic-curve-see-78d446</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/claude-ai-deciphers-25-year-nsa-elliptic-curve-see-78d446</guid>
+      <description><![CDATA[Anthropic’s Claude research model traced the origins of five NSA-supplied elliptic curve seeds in under 30 minutes, revealing how public security parameters were selected. The discovery clarifies parameter selection without exposing keys or breaking encryption.]]></description>
+      <pubDate>Sat, 17 Oct 2026 16:59:29 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/claude-ai-cryptography-mystery/">Cyber Security News</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>Hackers breach Microsoft 365 tenants via ConnectWise supply‑chain attack</title>
       <link>https://secubuzz.com/news/hackers-breach-microsoft-365-tenants-via-connectwi-6cb7ff</link>
@@ -446,15 +455,6 @@
       <description><![CDATA[A criminal forum seller markets an autonomous hacking tool that runs on stolen OpenAI, Anthropic, and Google API keys, making key owners pay for scans. Bitsight tracked the trend across 16 underground forums, noting a 67% rise in AI agent mentions and indirect prompt injection from February to August 2026.]]></description>
       <pubDate>Fri, 16 Oct 2026 05:00:24 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/16/stolen-ai-api-keys-autonomous-scans/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Record DDoS Attacks Surge, Straining Global Services</title>
-      <link>https://secubuzz.com/news/record-ddos-attacks-surge-straining-global-service-4d809d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/record-ddos-attacks-surge-straining-global-service-4d809d</guid>
-      <description><![CDATA[Netscout reported over 9.1 million DDoS attacks worldwide between January and June 2026, a nearly 25% year‑over‑year increase. Attacks exceeding 1 Tbps or 1 Gpps grew 1,286%, driven by botnets linked to Aisuru, Kimwolf, and Jackskid, forcing services offline before bandwidth limits are reached.]]></description>
-      <pubDate>Fri, 16 Oct 2026 04:30:46 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/16/netscout-ddos-attack-growth-report/">Help Net Security</source>
       <category>Policy</category>
     </item>
   </channel>
