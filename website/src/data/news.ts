@@ -29,6 +29,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "yara-rule-detects-orphaned-vba-projects-in-dwg-fil-57dd7d",
+    "title": "YARA Rule Detects Orphaned VBA Projects in DWG Files",
+    "summary": "A YARA rule has been released to identify orphaned VBA projects embedded within DWG files. The rule scans for macro code that lacks a proper project container, enabling security teams to flag potentially malicious CAD files that may carry hidden scripts or payloads.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33434",
+    "publishedAt": "2026-10-18T12:59:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "yara-rule-detects-orphaned-vba-projects-in-dwg-fil",
+      "article-57dd7d",
+      "57dd7d",
+      "yara-rule-detects-orphaned-vba-projects-in-dwg-files"
+    ]
+  },
+  {
     "slug": "us-cybersecurity-job-postings-decline-26-as-ai-sec-35a5c2",
     "title": "US Cybersecurity Job Postings Decline 26% as AI Security Engineer Demand Surges",
     "summary": "US cybersecurity job postings fell 26% in the latest report, while demand for AI security engineers rose sharply. The CyberSN report highlights a mixed market, with overall hiring slowing but specialized roles in AI security experiencing significant growth. Employers are adjusting recruitment strategies to meet evolving skill demands.",
@@ -6252,23 +6270,6 @@ export const news: NewsBrief[] = [
       "article-4b42aa",
       "4b42aa",
       "cisa-adds-two-known-exploited-vulnerabilities-to-catalog"
-    ]
-  },
-  {
-    "slug": "microsoft-x-account-hijacked-by-crypto-scammers-61cf19",
-    "title": "Microsoft X Account Hijacked by Crypto Scammers",
-    "summary": "Hackers hijacked Microsoft’s official X account, which has 13 million followers, to promote a Clippy‑themed cryptocurrency account. The takeover was used to amplify the scam content, but no user data or credentials were reported as compromised.",
-    "category": "Breach",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/crypto-scammers-hijack-microsofts-official-x-account/",
-    "publishedAt": "2026-10-02T11:46:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-x-account-hijacked-by-crypto-scammers",
-      "article-61cf19",
-      "61cf19"
     ]
   }
 ];

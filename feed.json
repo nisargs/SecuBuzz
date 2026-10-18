@@ -13,6 +13,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://isc.sans.edu/diary/rss/33434",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33434",
+    "title": "YARA Rule Detects Orphaned VBA Projects in DWG Files",
+    "headline": "YARA Rule Detects Orphaned VBA Projects in DWG Files",
+    "summary": "A YARA rule has been released to identify orphaned VBA projects embedded within DWG files. The rule scans for macro code that lacks a proper project container, enabling security teams to flag potentially malicious CAD files that may carry hidden scripts or payloads.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "publishedAt": "2026-10-18T12:59:30.000Z",
+    "url": "https://isc.sans.edu/diary/rss/33434",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.securityweek.com/us-cybersecurity-job-postings-fall-26-as-ai-security-engineer-demand-soars/",
     "sourceUrl": "https://www.securityweek.com/us-cybersecurity-job-postings-fall-26-as-ai-security-engineer-demand-soars/",
     "title": "US Cybersecurity Job Postings Decline 26% as AI Security Engineer Demand Surges",
@@ -5198,23 +5211,5 @@
     "publishedAt": "2026-10-02T12:00:00.000Z",
     "url": "https://www.cisa.gov/news-events/alerts/2026/10/02/cisa-adds-two-known-exploited-vulnerabilities-catalog",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/crypto-scammers-hijack-microsofts-official-x-account/",
-    "sourceUrl": "https://www.securityweek.com/crypto-scammers-hijack-microsofts-official-x-account/",
-    "title": "Microsoft X Account Hijacked by Crypto Scammers",
-    "headline": "Microsoft X Account Hijacked by Crypto Scammers",
-    "summary": "Hackers hijacked Microsoft’s official X account, which has 13 million followers, to promote a Clippy‑themed cryptocurrency account. The takeover was used to amplify the scam content, but no user data or credentials were reported as compromised.",
-    "category": "BREACH",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-02T11:46:10.000Z",
-    "url": "https://www.securityweek.com/crypto-scammers-hijack-microsofts-official-x-account/",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsofts-x-account-hacked-in-crypto-token-pump-and-dump-scheme/"
-      }
-    ]
   }
 ]
