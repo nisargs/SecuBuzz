@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRightIcon, QrCode } from 'lucide-react';
 import { PlayStoreButton } from '../components/PlayStoreButton';
@@ -6,6 +6,7 @@ import { PhoneMockup } from '../components/PhoneMockup';
 import { NewsBriefItem } from '../components/NewsBriefItem';
 import { AdvisoryListItem } from '../components/AdvisoryListItem';
 import { AppCta } from '../components/AppCta';
+import { QrModal } from '../components/QrModal';
 import { homeReasons } from '../data/site';
 import { useLiveNews } from '../data/useLiveNews';
 import { useLiveAdvisories } from '../data/useLiveAdvisories';
@@ -14,6 +15,7 @@ import { daysSince, daysUntil } from '../utils/date';
 import { Seo } from '../components/Seo';
 
 export function Home() {
+  const [showHeroQr, setShowHeroQr] = useState(false);
   const { news } = useLiveNews();
   const { advisories } = useLiveAdvisories();
   const latest = news.slice(0, 4);
@@ -63,10 +65,14 @@ export function Home() {
               </Link>
             </div>
             <div className="mt-4 hidden sm:flex items-center gap-2 text-xs text-muted">
-              <Link to="/download" className="inline-flex items-center gap-1.5 text-accent hover:underline">
+              <button
+                type="button"
+                onClick={() => setShowHeroQr(true)}
+                className="inline-flex items-center gap-1.5 text-accent hover:underline cursor-pointer"
+              >
                 <QrCode className="h-3.5 w-3.5" />
                 <span>On a work computer? Scan QR code to install directly on Android</span>
-              </Link>
+              </button>
             </div>
             <dl className="mt-12 grid max-w-lg grid-cols-2 gap-6 border-t border-line pt-6">
               <div>
@@ -147,6 +153,7 @@ export function Home() {
       </section>
 
       <AppCta />
+      <QrModal isOpen={showHeroQr} onClose={() => setShowHeroQr(false)} source="home_hero_qr" />
     </>);
 
 }
