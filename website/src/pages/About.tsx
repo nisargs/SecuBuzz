@@ -11,6 +11,24 @@ export function About() {
         title="About SecuBuzz · MiSo Labs"
         description="SecuBuzz is an independent cybersecurity threat intelligence assistant built by MiSo Labs. No tracking, anonymous crash reports only."
         canonicalPath="/about"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'AboutPage',
+          name: 'About SecuBuzz',
+          url: 'https://secubuzz.com/about',
+          description: 'SecuBuzz is an independent cybersecurity threat intelligence assistant built by MiSo Labs.',
+          publisher: {
+            '@type': 'Organization',
+            name: 'MiSo Labs',
+            url: 'https://secubuzz.com',
+          },
+          creator: {
+            '@type': 'Person',
+            name: 'Nisarg Soni',
+            jobTitle: 'Security Operations Analyst',
+            sameAs: 'https://www.linkedin.com/in/nisarg-soni/',
+          },
+        }}
       />
       <section className="border-b border-line">
         <div className="mx-auto max-w-site px-5 py-16 md:px-8 md:py-24">
@@ -37,8 +55,17 @@ export function About() {
             SecuBuzz is engineered with a strict <strong className="text-ink">privacy-first architecture</strong>: no user accounts, no trackers,
             no advertising IDs, and anonymous crash reports only to maintain app stability. The app is available globally on Android via Google Play.
           </p>
-          <p className="text-sm text-subtle">
-            SecuBuzz is an independent intelligence project developed by MiSo Labs and is not affiliated with or endorsed by CISA.
+          <p className="border-t border-line/60 pt-4 text-xs text-subtle">
+            SecuBuzz is an independent threat intelligence project architected and maintained by{' '}
+            <a
+              href="https://www.linkedin.com/in/nisarg-soni/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted underline decoration-dotted transition-colors hover:text-ink"
+            >
+              Nisarg Soni
+            </a>{' '}
+            at MiSo Labs. Not affiliated with or endorsed by CISA.
           </p>
         </div>
       </section>
