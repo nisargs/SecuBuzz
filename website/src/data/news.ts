@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "hidden-implant-in-ledger-wallets-linked-to-93m-the-2cce26",
+    "title": "Hidden Implant in Ledger Wallets Linked to $93M Theft",
+    "summary": "A covert implant discovered in Ledger hardware wallets facilitated a $93 million theft. The implant enabled attackers to exfiltrate private keys and transaction data, compromising wallet security. The incident underscores the need for firmware integrity checks and secure supply chain practices.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/18/week-in-review-hidden-implant-in-ledger-wallets-linked-to-93m-theft-1500-npm-packages-exposed/",
+    "publishedAt": "2026-10-18T08:00:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hidden-implant-in-ledger-wallets-linked-to-93m-the",
+      "article-2cce26",
+      "2cce26",
+      "hidden-implant-in-ledger-wallets-linked-to-93m-theft"
+    ]
+  },
+  {
     "slug": "opencode-security-breach-exposes-third-party-api-k-338293",
     "title": "OpenCode Security Breach Exposes Third-Party API Keys of Console Users",
     "summary": "OpenCode disclosed a breach affecting 1.4% of its Console users, exposing third‑party API keys stored in affected workspaces. The incident is linked to a large‑scale distillation attack. The company is collaborating with Anthropic, OpenAI, and Google to mitigate the exposure.",
@@ -355,24 +373,6 @@ export const news: NewsBrief[] = [
       "article-3aac70",
       "3aac70",
       "unit-42-highlights-top-initial-access-vectors-in-september-2"
-    ]
-  },
-  {
-    "slug": "cyber-exec-arrested-for-extortion-ledger-wallets-l-5e83dd",
-    "title": "Cyber Exec Arrested for Extortion, Ledger Wallets Leak Seed Phrases, French Supermarket Fridge Hack",
-    "summary": "Authorities arrested a cyber executive for extortion after a cellular implant in Ledger wallets leaked seed phrases, exposing users to theft. Separately, hackers heated French supermarket fridges to 50°C, disrupting operations. The incidents highlight credential theft and physical device tampering risks.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SentinelOne",
-    "sourceUrl": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-42-8",
-    "publishedAt": "2026-10-16T17:31:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cyber-exec-arrested-for-extortion-ledger-wallets-l",
-      "article-5e83dd",
-      "5e83dd",
-      "cyber-exec-arrested-for-extortion-ledger-wallets-leak-seed-p"
     ]
   },
   {

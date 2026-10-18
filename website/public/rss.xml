@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Oct 2026 05:56:31 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 08:18:06 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Hidden Implant in Ledger Wallets Linked to $93M Theft</title>
+      <link>https://secubuzz.com/news/hidden-implant-in-ledger-wallets-linked-to-93m-the-2cce26</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hidden-implant-in-ledger-wallets-linked-to-93m-the-2cce26</guid>
+      <description><![CDATA[A covert implant discovered in Ledger hardware wallets facilitated a $93 million theft. The implant enabled attackers to exfiltrate private keys and transaction data, compromising wallet security. The incident underscores the need for firmware integrity checks and secure supply chain practices.]]></description>
+      <pubDate>Sun, 18 Oct 2026 08:00:30 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/18/week-in-review-hidden-implant-in-ledger-wallets-linked-to-93m-theft-1500-npm-packages-exposed/">Help Net Security</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>OpenCode Security Breach Exposes Third-Party API Keys of Console Users</title>
       <link>https://secubuzz.com/news/opencode-security-breach-exposes-third-party-api-k-338293</link>
@@ -177,15 +186,6 @@
       <pubDate>Fri, 16 Oct 2026 17:47:54 GMT</pubDate>
       <source url="https://unit42.paloaltonetworks.com/top-5-initial-access-vectors-september-2026/">Unit 42</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Cyber Exec Arrested for Extortion, Ledger Wallets Leak Seed Phrases, French Supermarket Fridge Hack</title>
-      <link>https://secubuzz.com/news/cyber-exec-arrested-for-extortion-ledger-wallets-l-5e83dd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cyber-exec-arrested-for-extortion-ledger-wallets-l-5e83dd</guid>
-      <description><![CDATA[Authorities arrested a cyber executive for extortion after a cellular implant in Ledger wallets leaked seed phrases, exposing users to theft. Separately, hackers heated French supermarket fridges to 50°C, disrupting operations. The incidents highlight credential theft and physical device tampering risks.]]></description>
-      <pubDate>Fri, 16 Oct 2026 17:31:01 GMT</pubDate>
-      <source url="https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-42-8">SentinelOne</source>
-      <category>Breach</category>
     </item>
     <item>
       <title>Microsoft and NVIDIA Release Whitepaper on Managing Open-Weight AI Model Risk</title>

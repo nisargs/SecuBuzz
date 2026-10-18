@@ -1,5 +1,23 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/10/18/week-in-review-hidden-implant-in-ledger-wallets-linked-to-93m-theft-1500-npm-packages-exposed/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/18/week-in-review-hidden-implant-in-ledger-wallets-linked-to-93m-theft-1500-npm-packages-exposed/",
+    "title": "Hidden Implant in Ledger Wallets Linked to $93M Theft",
+    "headline": "Hidden Implant in Ledger Wallets Linked to $93M Theft",
+    "summary": "A covert implant discovered in Ledger hardware wallets facilitated a $93 million theft. The implant enabled attackers to exfiltrate private keys and transaction data, compromising wallet security. The incident underscores the need for firmware integrity checks and secure supply chain practices.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-18T08:00:30.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/18/week-in-review-hidden-implant-in-ledger-wallets-linked-to-93m-theft-1500-npm-packages-exposed/",
+    "additionalSources": [
+      {
+        "source": "SentinelOne",
+        "sourceUrl": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-42-8"
+      }
+    ]
+  },
+  {
     "id": "https://cybersecuritynews.com/opencode-security-breach/",
     "sourceUrl": "https://cybersecuritynews.com/opencode-security-breach/",
     "title": "OpenCode Security Breach Exposes Third-Party API Keys of Console Users",
@@ -333,19 +351,6 @@
         "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/sector-2026-reveals-a-rapidly-shifting-cybersecurity-landscape"
       }
     ]
-  },
-  {
-    "id": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-42-8",
-    "sourceUrl": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-42-8",
-    "title": "Cyber Exec Arrested for Extortion, Ledger Wallets Leak Seed Phrases, French Supermarket Fridge Hack",
-    "headline": "Cyber Exec Arrested for Extortion, Ledger Wallets Leak Seed Phrases, French Supermarket Fridge Hack",
-    "summary": "Authorities arrested a cyber executive for extortion after a cellular implant in Ledger wallets leaked seed phrases, exposing users to theft. Separately, hackers heated French supermarket fridges to 50°C, disrupting operations. The incidents highlight credential theft and physical device tampering risks.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "SentinelOne",
-    "publishedAt": "2026-10-16T17:31:01.000Z",
-    "url": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-42-8",
-    "additionalSources": []
   },
   {
     "id": "https://www.microsoft.com/en-us/security/blog/2026/10/16/managing-open-weight-model-risk-in-enterprise-deployments/",
