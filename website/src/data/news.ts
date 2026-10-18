@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "siteguard-waf-command-injection-allows-system-root-28e271",
+    "title": "SiteGuard WAF Command Injection Allows SYSTEM/Root Execution",
+    "summary": "Attackers exploit an OS command injection flaw in SiteGuard Server Edition, enabling execution of arbitrary commands with SYSTEM or root privileges on affected servers. The vulnerability permits full control over the host, requiring immediate patching to prevent privilege escalation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-siteguard-waf-flaw-to-run-commands-as-system-root/",
+    "publishedAt": "2026-10-18T14:23:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "siteguard-waf-command-injection-allows-system-root",
+      "article-28e271",
+      "28e271",
+      "siteguard-waf-command-injection-allows-system-root-execution"
+    ]
+  },
+  {
     "slug": "us-cybersecurity-job-postings-decline-26-as-ai-sec-35a5c2",
     "title": "US Cybersecurity Job Postings Decline 26% as AI Security Engineer Demand Surges",
     "summary": "US cybersecurity job postings fell 26% in the latest report, while demand for AI security engineers rose sharply. The CyberSN report highlights a mixed market, with overall hiring slowing but specialized roles in AI security experiencing significant growth. Employers are adjusting recruitment strategies to meet evolving skill demands.",
@@ -6251,24 +6269,6 @@ export const news: NewsBrief[] = [
       "microsoft-x-account-hijacked-by-crypto-scammers",
       "article-61cf19",
       "61cf19"
-    ]
-  },
-  {
-    "slug": "iranian-state-hacker-indicted-and-extradited-to-u-1cd7dc",
-    "title": "Iranian State Hacker Indicted and Extradited to U.S. Authorities",
-    "summary": "Amir Barati, alleged member of the Mabna Institute, is indicted for targeting U.S. universities, private firms, and government entities. He has been extradited to the United States for prosecution. The case highlights ongoing Iranian cyber espionage efforts against U.S. institutions.",
-    "category": "Malware",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/in-rare-move-iranian-hacker-accused-of-working-for-irgc-extradited-to-us/",
-    "publishedAt": "2026-10-02T11:14:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "iranian-state-hacker-indicted-and-extradited-to-u",
-      "article-1cd7dc",
-      "1cd7dc",
-      "iranian-state-hacker-indicted-and-extradited-to-u-s-authorit"
     ]
   }
 ];

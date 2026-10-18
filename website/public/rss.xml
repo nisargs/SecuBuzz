@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Oct 2026 12:17:53 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 14:36:21 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>SiteGuard WAF Command Injection Allows SYSTEM/Root Execution</title>
+      <link>https://secubuzz.com/news/siteguard-waf-command-injection-allows-system-root-28e271</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/siteguard-waf-command-injection-allows-system-root-28e271</guid>
+      <description><![CDATA[Attackers exploit an OS command injection flaw in SiteGuard Server Edition, enabling execution of arbitrary commands with SYSTEM or root privileges on affected servers. The vulnerability permits full control over the host, requiring immediate patching to prevent privilege escalation.]]></description>
+      <pubDate>Sun, 18 Oct 2026 14:23:16 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/hackers-exploit-siteguard-waf-flaw-to-run-commands-as-system-root/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>US Cybersecurity Job Postings Decline 26% as AI Security Engineer Demand Surges</title>
       <link>https://secubuzz.com/news/us-cybersecurity-job-postings-decline-26-as-ai-sec-35a5c2</link>
@@ -447,15 +456,6 @@
       <pubDate>Fri, 16 Oct 2026 07:55:06 GMT</pubDate>
       <source url="https://www.securityweek.com/microsoft-patches-two-dozen-rce-flaws-in-office/">SecurityWeek</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Active Directory Weaknesses Persist in Small Teams</title>
-      <link>https://secubuzz.com/news/active-directory-weaknesses-persist-in-small-teams-687e8d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/active-directory-weaknesses-persist-in-small-teams-687e8d</guid>
-      <description><![CDATA[A discussion with intcube CTO David Fuhr highlights why Active Directory vulnerabilities remain open in organizations with only one or two administrators. The interview explains hardening practices such as SMB signing, LDAP signing, and Kerberos hardening, and shows how a 12‑week cohort can systematically secure Windows Server environments.]]></description>
-      <pubDate>Fri, 16 Oct 2026 06:00:12 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/16/david-fuhr-intcube-active-directory-security/">Help Net Security</source>
-      <category>Policy</category>
     </item>
   </channel>
 </rss>
