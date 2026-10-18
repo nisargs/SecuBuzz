@@ -36,7 +36,7 @@ export function PlayStoreButton({ size = 'md', source = 'button', className = ''
         target="_blank"
         rel="noopener noreferrer"
         onClick={handleClick}
-        className={`inline-flex items-center gap-3 whitespace-nowrap rounded-md bg-accent font-semibold text-accent-ink transition-[background-color,transform] duration-150 ease-out hover:bg-accent/90 active:scale-[0.98] ${sizing} ${className}`}
+        className={`inline-flex shrink-0 items-center gap-3 whitespace-nowrap rounded-md bg-accent font-semibold text-accent-ink transition-[background-color,transform] duration-150 ease-out hover:bg-accent/90 active:scale-[0.98] ${sizing} ${className}`}
       >
         <PlayIcon className="h-4 w-4 fill-current" aria-hidden="true" />
         <span className="flex flex-col items-start leading-tight">

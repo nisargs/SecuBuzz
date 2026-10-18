@@ -68,10 +68,10 @@ export function Home() {
               <button
                 type="button"
                 onClick={() => setShowHeroQr(true)}
-                className="inline-flex items-center gap-1.5 text-accent hover:underline cursor-pointer"
+                className="inline-flex items-center gap-1.5 whitespace-nowrap text-accent hover:underline cursor-pointer"
               >
-                <QrCode className="h-3.5 w-3.5" />
-                <span>On a work computer? Scan QR code to install directly on Android</span>
+                <QrCode className="h-3.5 w-3.5 shrink-0" />
+                <span className="whitespace-nowrap">On a work computer? Scan QR code to install directly on Android</span>
               </button>
             </div>
             <dl className="mt-12 grid max-w-lg grid-cols-2 gap-6 border-t border-line pt-6">
