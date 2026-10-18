@@ -21,16 +21,16 @@ export function AppCta({
           <h2 className="text-2xl font-semibold tracking-tight text-ink md:text-3xl">{title}</h2>
           <p className="mt-2 text-muted">{body}</p>
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex shrink-0 items-center gap-3">
           <PlayStoreButton size="lg" source="bottom_cta" />
           <button
             type="button"
             onClick={() => setShowQrModal(true)}
             title="Scan QR Code to install on Android"
-            className="hidden sm:inline-flex h-14 items-center gap-2 rounded-md border border-line bg-surface px-4 text-xs font-medium text-ink transition-all duration-150 ease-out hover:border-accent hover:bg-raised hover:text-accent cursor-pointer"
+            className="hidden sm:inline-flex h-14 shrink-0 items-center justify-center gap-2.5 whitespace-nowrap rounded-md border border-line bg-surface px-5 text-sm font-medium text-ink transition-all duration-150 ease-out hover:border-accent hover:bg-raised hover:text-accent cursor-pointer"
           >
-            <QrCode className="h-4 w-4 text-accent" />
-            <span>Scan QR</span>
+            <QrCode className="h-4 w-4 shrink-0 text-accent" />
+            <span className="whitespace-nowrap">Scan QR</span>
           </button>
         </div>
       </div>
