@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "opencode-security-breach-exposes-third-party-api-k-338293",
+    "title": "OpenCode Security Breach Exposes Third-Party API Keys of Console Users",
+    "summary": "OpenCode disclosed a breach affecting 1.4% of its Console users, exposing third‑party API keys stored in affected workspaces. The incident is linked to a large‑scale distillation attack. The company is collaborating with Anthropic, OpenAI, and Google to mitigate the exposure.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/opencode-security-breach/",
+    "publishedAt": "2026-10-18T04:20:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "opencode-security-breach-exposes-third-party-api-k",
+      "article-338293",
+      "338293",
+      "opencode-security-breach-exposes-third-party-api-keys-of-con"
+    ]
+  },
+  {
     "slug": "claude-ai-deciphers-25-year-nsa-elliptic-curve-see-78d446",
     "title": "Claude AI Deciphers 25-Year NSA Elliptic Curve Seed Mystery",
     "summary": "Anthropic’s Claude research model traced the origins of five NSA-supplied elliptic curve seeds in under 30 minutes, revealing how public security parameters were selected. The discovery clarifies parameter selection without exposing keys or breaking encryption.",
@@ -889,23 +907,6 @@ export const news: NewsBrief[] = [
       "article-480b71",
       "480b71",
       "cyber-talent-shortage-us-job-postings-hit-four-year-low"
-    ]
-  },
-  {
-    "slug": "stolen-ai-api-keys-fund-autonomous-hacking-tool-376f0a",
-    "title": "Stolen AI API Keys Fund Autonomous Hacking Tool",
-    "summary": "A criminal forum seller markets an autonomous hacking tool that runs on stolen OpenAI, Anthropic, and Google API keys, making key owners pay for scans. Bitsight tracked the trend across 16 underground forums, noting a 67% rise in AI agent mentions and indirect prompt injection from February to August 2026.",
-    "category": "Policy",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/16/stolen-ai-api-keys-autonomous-scans/",
-    "publishedAt": "2026-10-16T05:00:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "stolen-ai-api-keys-fund-autonomous-hacking-tool",
-      "article-376f0a",
-      "376f0a"
     ]
   },
   {

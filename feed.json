@@ -1,5 +1,23 @@
 [
   {
+    "id": "https://cybersecuritynews.com/opencode-security-breach/",
+    "sourceUrl": "https://cybersecuritynews.com/opencode-security-breach/",
+    "title": "OpenCode Security Breach Exposes Third-Party API Keys of Console Users",
+    "headline": "OpenCode Security Breach Exposes Third-Party API Keys of Console Users",
+    "summary": "OpenCode disclosed a breach affecting 1.4% of its Console users, exposing third‑party API keys stored in affected workspaces. The incident is linked to a large‑scale distillation attack. The company is collaborating with Anthropic, OpenAI, and Google to mitigate the exposure.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-18T04:20:16.000Z",
+    "url": "https://cybersecuritynews.com/opencode-security-breach/",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/16/stolen-ai-api-keys-autonomous-scans/"
+      }
+    ]
+  },
+  {
     "id": "https://cybersecuritynews.com/claude-ai-cryptography-mystery/",
     "sourceUrl": "https://cybersecuritynews.com/claude-ai-cryptography-mystery/",
     "title": "Claude AI Deciphers 25-Year NSA Elliptic Curve Seed Mystery",
@@ -783,24 +801,6 @@
     "publishedAt": "2026-10-16T05:30:51.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/16/cybersecurity-job-postings-talent-shortage/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/16/stolen-ai-api-keys-autonomous-scans/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/16/stolen-ai-api-keys-autonomous-scans/",
-    "title": "Stolen AI API Keys Fund Autonomous Hacking Tool",
-    "headline": "Stolen AI API Keys Fund Autonomous Hacking Tool",
-    "summary": "A criminal forum seller markets an autonomous hacking tool that runs on stolen OpenAI, Anthropic, and Google API keys, making key owners pay for scans. Bitsight tracked the trend across 16 underground forums, noting a 67% rise in AI agent mentions and indirect prompt injection from February to August 2026.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-16T05:00:24.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/16/stolen-ai-api-keys-autonomous-scans/",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/ai-agents-4/"
-      }
-    ]
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/10/16/netscout-ddos-attack-growth-report/",

@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Oct 2026 05:02:45 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 05:56:31 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>OpenCode Security Breach Exposes Third-Party API Keys of Console Users</title>
+      <link>https://secubuzz.com/news/opencode-security-breach-exposes-third-party-api-k-338293</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/opencode-security-breach-exposes-third-party-api-k-338293</guid>
+      <description><![CDATA[OpenCode disclosed a breach affecting 1.4% of its Console users, exposing third‑party API keys stored in affected workspaces. The incident is linked to a large‑scale distillation attack. The company is collaborating with Anthropic, OpenAI, and Google to mitigate the exposure.]]></description>
+      <pubDate>Sun, 18 Oct 2026 04:20:16 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/opencode-security-breach/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Claude AI Deciphers 25-Year NSA Elliptic Curve Seed Mystery</title>
       <link>https://secubuzz.com/news/claude-ai-deciphers-25-year-nsa-elliptic-curve-see-78d446</link>
@@ -446,15 +455,6 @@
       <description><![CDATA[US cybersecurity job postings fell to 235,786 from January through September 2026, the lowest in four years, according to CyberSN. The remaining listings skew toward governance, risk and compliance roles, indicating a shift in hiring focus amid a broader talent shortage.]]></description>
       <pubDate>Fri, 16 Oct 2026 05:30:51 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/16/cybersecurity-job-postings-talent-shortage/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Stolen AI API Keys Fund Autonomous Hacking Tool</title>
-      <link>https://secubuzz.com/news/stolen-ai-api-keys-fund-autonomous-hacking-tool-376f0a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/stolen-ai-api-keys-fund-autonomous-hacking-tool-376f0a</guid>
-      <description><![CDATA[A criminal forum seller markets an autonomous hacking tool that runs on stolen OpenAI, Anthropic, and Google API keys, making key owners pay for scans. Bitsight tracked the trend across 16 underground forums, noting a 67% rise in AI agent mentions and indirect prompt injection from February to August 2026.]]></description>
-      <pubDate>Fri, 16 Oct 2026 05:00:24 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/16/stolen-ai-api-keys-autonomous-scans/">Help Net Security</source>
       <category>Policy</category>
     </item>
   </channel>
