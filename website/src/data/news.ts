@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "us-cybersecurity-job-postings-decline-26-as-ai-sec-35a5c2",
+    "title": "US Cybersecurity Job Postings Decline 26% as AI Security Engineer Demand Surges",
+    "summary": "US cybersecurity job postings fell 26% in the latest report, while demand for AI security engineers rose sharply. The CyberSN report highlights a mixed market, with overall hiring slowing but specialized roles in AI security experiencing significant growth. Employers are adjusting recruitment strategies to meet evolving skill demands.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/us-cybersecurity-job-postings-fall-26-as-ai-security-engineer-demand-soars/",
+    "publishedAt": "2026-10-18T11:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "us-cybersecurity-job-postings-decline-26-as-ai-sec",
+      "article-35a5c2",
+      "35a5c2",
+      "us-cybersecurity-job-postings-decline-26-as-ai-security-engi"
+    ]
+  },
+  {
+    "slug": "connectwise-suspends-cloud-backup-after-unauthoriz-7fc8ab",
+    "title": "ConnectWise Suspends Cloud Backup After Unauthorized Access to Microsoft 365 Tenants",
+    "summary": "ConnectWise disabled seven application identities after attackers gained unauthorized access to its Cloud Backup service and compromised multiple Microsoft 365 tenants. The breach exposed tenant data and credentials, prompting immediate suspension of affected identities. ConnectWise is investigating the incident and working with Microsoft to mitigate further exposure.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/connectwise-suspends-cloud-backup-after.html",
+    "publishedAt": "2026-10-18T08:23:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "connectwise-suspends-cloud-backup-after-unauthoriz",
+      "article-7fc8ab",
+      "7fc8ab",
+      "connectwise-suspends-cloud-backup-after-unauthorized-access-"
+    ]
+  },
+  {
     "slug": "hidden-implant-in-ledger-wallets-linked-to-93m-the-2cce26",
     "title": "Hidden Implant in Ledger Wallets Linked to $93M Theft",
     "summary": "A covert implant discovered in Ledger hardware wallets facilitated a $93 million theft. The implant enabled attackers to exfiltrate private keys and transaction data, compromising wallet security. The incident underscores the need for firmware integrity checks and secure supply chain practices.",
@@ -62,24 +98,6 @@ export const news: NewsBrief[] = [
       "article-78d446",
       "78d446",
       "claude-ai-deciphers-25-year-nsa-elliptic-curve-seed-mystery"
-    ]
-  },
-  {
-    "slug": "hackers-breach-microsoft-365-tenants-via-connectwi-6cb7ff",
-    "title": "Hackers breach Microsoft 365 tenants via ConnectWise supply‑chain attack",
-    "summary": "Hackers accessed ConnectWise application identities and used them to compromise Microsoft 365 tenants. The attack forced ConnectWise to shut down customer access to its Cloud Backup service. The breach exposed tenant credentials and potentially sensitive data across affected organizations.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/",
-    "publishedAt": "2026-10-17T15:18:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-breach-microsoft-365-tenants-via-connectwi",
-      "article-6cb7ff",
-      "6cb7ff",
-      "hackers-breach-microsoft-365-tenants-via-connectwise-supply-"
     ]
   },
   {
@@ -889,24 +907,6 @@ export const news: NewsBrief[] = [
       "active-directory-weaknesses-persist-in-small-teams",
       "article-687e8d",
       "687e8d"
-    ]
-  },
-  {
-    "slug": "cyber-talent-shortage-us-job-postings-hit-four-yea-480b71",
-    "title": "Cyber Talent Shortage: US Job Postings Hit Four‑Year Low",
-    "summary": "US cybersecurity job postings fell to 235,786 from January through September 2026, the lowest in four years, according to CyberSN. The remaining listings skew toward governance, risk and compliance roles, indicating a shift in hiring focus amid a broader talent shortage.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/16/cybersecurity-job-postings-talent-shortage/",
-    "publishedAt": "2026-10-16T05:30:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cyber-talent-shortage-us-job-postings-hit-four-yea",
-      "article-480b71",
-      "480b71",
-      "cyber-talent-shortage-us-job-postings-hit-four-year-low"
     ]
   },
   {

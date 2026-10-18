@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Oct 2026 08:18:06 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 11:09:14 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>US Cybersecurity Job Postings Decline 26% as AI Security Engineer Demand Surges</title>
+      <link>https://secubuzz.com/news/us-cybersecurity-job-postings-decline-26-as-ai-sec-35a5c2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/us-cybersecurity-job-postings-decline-26-as-ai-sec-35a5c2</guid>
+      <description><![CDATA[US cybersecurity job postings fell 26% in the latest report, while demand for AI security engineers rose sharply. The CyberSN report highlights a mixed market, with overall hiring slowing but specialized roles in AI security experiencing significant growth. Employers are adjusting recruitment strategies to meet evolving skill demands.]]></description>
+      <pubDate>Sun, 18 Oct 2026 11:00:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/us-cybersecurity-job-postings-fall-26-as-ai-security-engineer-demand-soars/">SecurityWeek</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>ConnectWise Suspends Cloud Backup After Unauthorized Access to Microsoft 365 Tenants</title>
+      <link>https://secubuzz.com/news/connectwise-suspends-cloud-backup-after-unauthoriz-7fc8ab</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/connectwise-suspends-cloud-backup-after-unauthoriz-7fc8ab</guid>
+      <description><![CDATA[ConnectWise disabled seven application identities after attackers gained unauthorized access to its Cloud Backup service and compromised multiple Microsoft 365 tenants. The breach exposed tenant data and credentials, prompting immediate suspension of affected identities. ConnectWise is investigating the incident and working with Microsoft to mitigate further exposure.]]></description>
+      <pubDate>Sun, 18 Oct 2026 08:23:02 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/connectwise-suspends-cloud-backup-after.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Hidden Implant in Ledger Wallets Linked to $93M Theft</title>
       <link>https://secubuzz.com/news/hidden-implant-in-ledger-wallets-linked-to-93m-the-2cce26</link>
@@ -33,15 +51,6 @@
       <pubDate>Sat, 17 Oct 2026 16:59:29 GMT</pubDate>
       <source url="https://cybersecuritynews.com/claude-ai-cryptography-mystery/">Cyber Security News</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Hackers breach Microsoft 365 tenants via ConnectWise supply‑chain attack</title>
-      <link>https://secubuzz.com/news/hackers-breach-microsoft-365-tenants-via-connectwi-6cb7ff</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-breach-microsoft-365-tenants-via-connectwi-6cb7ff</guid>
-      <description><![CDATA[Hackers accessed ConnectWise application identities and used them to compromise Microsoft 365 tenants. The attack forced ConnectWise to shut down customer access to its Cloud Backup service. The breach exposed tenant credentials and potentially sensitive data across affected organizations.]]></description>
-      <pubDate>Sat, 17 Oct 2026 15:18:51 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/">BleepingComputer</source>
-      <category>Breach</category>
     </item>
     <item>
       <title>MALFEX: How to Detect &amp; Block imgdecode npm Shellcode Loader</title>
@@ -446,15 +455,6 @@
       <description><![CDATA[A discussion with intcube CTO David Fuhr highlights why Active Directory vulnerabilities remain open in organizations with only one or two administrators. The interview explains hardening practices such as SMB signing, LDAP signing, and Kerberos hardening, and shows how a 12‑week cohort can systematically secure Windows Server environments.]]></description>
       <pubDate>Fri, 16 Oct 2026 06:00:12 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/16/david-fuhr-intcube-active-directory-security/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Cyber Talent Shortage: US Job Postings Hit Four‑Year Low</title>
-      <link>https://secubuzz.com/news/cyber-talent-shortage-us-job-postings-hit-four-yea-480b71</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cyber-talent-shortage-us-job-postings-hit-four-yea-480b71</guid>
-      <description><![CDATA[US cybersecurity job postings fell to 235,786 from January through September 2026, the lowest in four years, according to CyberSN. The remaining listings skew toward governance, risk and compliance roles, indicating a shift in hiring focus amid a broader talent shortage.]]></description>
-      <pubDate>Fri, 16 Oct 2026 05:30:51 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/16/cybersecurity-job-postings-talent-shortage/">Help Net Security</source>
       <category>Policy</category>
     </item>
   </channel>
