@@ -1,6 +1,7 @@
 import { Ionicons } from '@expo/vector-icons';
 import { useEffect, useState } from 'react';
 import {
+  Modal,
   Pressable,
   ScrollView,
   Share,
@@ -15,6 +16,7 @@ import { fetchEpssScore } from '../services/epssService';
 import { spacing } from '../theme/theme';
 
 import { copyAdvisoryToClipboard } from '../utils/copyReport';
+import { haptics } from '../utils/haptics';
 import { openArticle } from '../utils/openArticle';
 
 type CveCardProps = {
@@ -43,9 +45,10 @@ export function CveCard({
   onSelectSeverity,
   onSelectSource,
 }: CveCardProps) {
-  const { colors, isDark, accentColor, severityColors } = useTheme();
+  const { colors, isDark, accentColor, severityColors, fontScaleMultiplier } = useTheme();
   const [opening, setOpening] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [showEpssModal, setShowEpssModal] = useState(false);
 
   function handleCopy() {
     copyAdvisoryToClipboard(advisory);
@@ -62,19 +65,23 @@ export function CveCard({
   const [epssPercentile, setEpssPercentile] = useState<number | null>(
     advisory.epssPercentile ?? null,
   );
+  const [epssScore, setEpssScore] = useState<number | null>(
+    advisory.epssScore ?? null,
+  );
 
   useEffect(() => {
-    if (epssPercentile !== null) return;
+    if (epssPercentile !== null && epssScore !== null) return;
     let isMounted = true;
     void fetchEpssScore(advisory.cveID).then((res) => {
       if (isMounted && res) {
         setEpssPercentile(res.percentile);
+        setEpssScore(res.epss);
       }
     });
     return () => {
       isMounted = false;
     };
-  }, [advisory.cveID, epssPercentile]);
+  }, [advisory.cveID, epssPercentile, epssScore]);
 
 
   const severityConfig =
@@ -207,23 +214,57 @@ export function CveCard({
             </Text>
           </Pressable>
 
-          {epssPercentile !== null && (
-            <View
-              style={[
-                styles.epssTag,
-                {
-                  backgroundColor: isDark
-                    ? 'rgba(255, 255, 255, 0.05)'
-                    : 'rgba(0, 0, 0, 0.04)',
-                  borderColor: colors.border,
-                },
-              ]}
-            >
-              <Text style={[styles.epssLabel, { color: accentColor }]}>
-                EPSS {(epssPercentile * 100).toFixed(0)}%
-              </Text>
-            </View>
-          )}
+          {epssPercentile !== null && (() => {
+            const isEpssCritical = epssPercentile >= 0.90;
+            const isEpssHigh = epssPercentile >= 0.70 && epssPercentile < 0.90;
+            const epssColor = isEpssCritical
+              ? severityColors.CRITICAL.primary
+              : isEpssHigh
+              ? severityColors.HIGH.primary
+              : accentColor;
+            const epssBg = isEpssCritical
+              ? severityColors.CRITICAL.surface
+              : isEpssHigh
+              ? severityColors.HIGH.surface
+              : isDark
+              ? 'rgba(255, 255, 255, 0.05)'
+              : 'rgba(0, 0, 0, 0.04)';
+            const epssBorder = isEpssCritical
+              ? severityColors.CRITICAL.border
+              : isEpssHigh
+              ? severityColors.HIGH.border
+              : colors.border;
+
+            return (
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel={`EPSS ${(epssPercentile * 100).toFixed(0)}th percentile. Tap for exploit likelihood breakdown`}
+                hitSlop={6}
+                onPress={() => {
+                  void haptics.selection();
+                  setShowEpssModal(true);
+                }}
+                style={[
+                  styles.epssTag,
+                  {
+                    backgroundColor: epssBg,
+                    borderColor: epssBorder,
+                  },
+                ]}
+              >
+                <Ionicons
+                  name="speedometer-outline"
+                  size={11}
+                  color={epssColor}
+                  style={{ marginRight: 3 }}
+                />
+                <Text style={[styles.epssLabel, { color: epssColor }]}>
+                  EPSS {(epssPercentile * 100).toFixed(0)}%
+                  {isEpssCritical ? ' · CRIT' : isEpssHigh ? ' · HIGH' : ''}
+                </Text>
+              </Pressable>
+            );
+          })()}
         </View>
 
 
@@ -281,7 +322,14 @@ export function CveCard({
 
       {/* HEADLINE: CVE ID & VULNERABILITY NAME */}
       <Text
-        style={[styles.headline, { color: colors.textPrimary }]}
+        style={[
+          styles.headline,
+          {
+            color: colors.textPrimary,
+            fontSize: Math.round(18 * fontScaleMultiplier),
+            lineHeight: Math.round(25 * fontScaleMultiplier),
+          },
+        ]}
         numberOfLines={4}
       >
         {advisory.cveID}: {advisory.vulnerabilityName}
@@ -340,7 +388,16 @@ export function CveCard({
         </View>
 
         {/* Clean Description */}
-        <Text style={[styles.summary, { color: colors.textSecondary }]}>
+        <Text
+          style={[
+            styles.summary,
+            {
+              color: colors.textSecondary,
+              fontSize: Math.round(14 * fontScaleMultiplier),
+              lineHeight: Math.round(22 * fontScaleMultiplier),
+            },
+          ]}
+        >
           {cleanDescription}
         </Text>
 
@@ -430,6 +487,178 @@ export function CveCard({
           />
         </Pressable>
       </View>
+
+      {/* EPSS EXPLOIT INTELLIGENCE MODAL */}
+      <Modal
+        visible={showEpssModal}
+        transparent
+        animationType="fade"
+        onRequestClose={() => setShowEpssModal(false)}
+      >
+        <Pressable
+          style={styles.epssModalOverlay}
+          onPress={() => setShowEpssModal(false)}
+        >
+          <Pressable
+            style={[
+              styles.epssModalContainer,
+              {
+                backgroundColor: colors.surface,
+                borderColor: colors.border,
+              },
+            ]}
+            onPress={(e) => e.stopPropagation()}
+          >
+            {/* Modal Header */}
+            <View style={styles.epssModalHeader}>
+              <View style={styles.epssModalHeaderLeft}>
+                <Ionicons
+                  name="speedometer-outline"
+                  size={20}
+                  color={
+                    (epssPercentile ?? 0) >= 0.90
+                      ? severityColors.CRITICAL.primary
+                      : (epssPercentile ?? 0) >= 0.70
+                      ? severityColors.HIGH.primary
+                      : accentColor
+                  }
+                />
+                <Text style={[styles.epssModalTitle, { color: colors.textPrimary }]}>
+                  EPSS Threat Intelligence
+                </Text>
+              </View>
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel="Close EPSS breakdown"
+                hitSlop={12}
+                onPress={() => {
+                  void haptics.selection();
+                  setShowEpssModal(false);
+                }}
+              >
+                <Ionicons name="close" size={22} color={colors.textMuted} />
+              </Pressable>
+            </View>
+
+            {/* Score Callout */}
+            <View
+              style={[
+                styles.epssScoreBox,
+                {
+                  backgroundColor:
+                    (epssPercentile ?? 0) >= 0.90
+                      ? severityColors.CRITICAL.surface
+                      : (epssPercentile ?? 0) >= 0.70
+                      ? severityColors.HIGH.surface
+                      : colors.surfaceRaised,
+                  borderColor:
+                    (epssPercentile ?? 0) >= 0.90
+                      ? severityColors.CRITICAL.border
+                      : (epssPercentile ?? 0) >= 0.70
+                      ? severityColors.HIGH.border
+                      : colors.border,
+                },
+              ]}
+            >
+              <Text
+                style={[
+                  styles.epssScoreValue,
+                  {
+                    color:
+                      (epssPercentile ?? 0) >= 0.90
+                        ? severityColors.CRITICAL.primary
+                        : (epssPercentile ?? 0) >= 0.70
+                        ? severityColors.HIGH.primary
+                        : accentColor,
+                  },
+                ]}
+              >
+                {((epssPercentile ?? 0) * 100).toFixed(1)}th
+              </Text>
+              <View
+                style={[
+                  styles.epssRiskBadge,
+                  {
+                    backgroundColor:
+                      (epssPercentile ?? 0) >= 0.90
+                        ? `${severityColors.CRITICAL.primary}25`
+                        : (epssPercentile ?? 0) >= 0.70
+                        ? `${severityColors.HIGH.primary}25`
+                        : `${accentColor}25`,
+                  },
+                ]}
+              >
+                <Text
+                  style={[
+                    styles.epssRiskBadgeText,
+                    {
+                      color:
+                        (epssPercentile ?? 0) >= 0.90
+                          ? severityColors.CRITICAL.primary
+                          : (epssPercentile ?? 0) >= 0.70
+                          ? severityColors.HIGH.primary
+                          : accentColor,
+                    },
+                  ]}
+                >
+                  {epssScore !== null
+                    ? `${(epssScore * 100).toFixed(2)}% 30-DAY PROBABILITY`
+                    : 'FIRST.ORG EPSS PERCENTILE'}
+                </Text>
+              </View>
+            </View>
+
+            {/* Verifiable Metric Sections */}
+            <View style={styles.epssSection}>
+              <Text style={[styles.epssSectionTitle, { color: accentColor }]}>
+                30-DAY IN-THE-WILD PROBABILITY
+              </Text>
+              <Text style={[styles.epssSectionBody, { color: colors.textSecondary }]}>
+                {epssScore !== null
+                  ? `FIRST.org EPSS v3 estimates a ${(epssScore * 100).toFixed(2)}% empirical probability that ${advisory.cveID} will be actively exploited in the wild within the next 30 days.`
+                  : `FIRST.org EPSS v3 calculates the empirical probability that ${advisory.cveID} will be exploited in the wild within 30 days.`}
+              </Text>
+            </View>
+
+            <View style={styles.epssSection}>
+              <Text style={[styles.epssSectionTitle, { color: accentColor }]}>
+                POPULATION PERCENTILE RANK
+              </Text>
+              <Text style={[styles.epssSectionBody, { color: colors.textSecondary }]}>
+                Ranked in the {((epssPercentile ?? 0) * 100).toFixed(1)}th percentile. This flaw has a higher exploitation likelihood than {((epssPercentile ?? 0) * 100).toFixed(1)}% of all scored vulnerabilities in the global CVE catalog.
+              </Text>
+            </View>
+
+
+            <View style={styles.epssSection}>
+              <Text style={[styles.epssSectionTitle, { color: colors.textMuted }]}>
+                EPSS VS CVSS METHODOLOGY
+              </Text>
+              <Text style={[styles.epssSectionBody, { color: colors.textMuted }]}>
+                CVSS measures theoretical severity based on vulnerability attributes if exploited. EPSS models empirical probability of real-world adversary exploitation using live honeypot telemetry, PoC trackers, and dark web activity.
+              </Text>
+            </View>
+
+            {/* Dismiss Button */}
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="Dismiss EPSS intelligence"
+              onPress={() => {
+                void haptics.selection();
+                setShowEpssModal(false);
+              }}
+              style={[
+                styles.epssCloseButton,
+                { backgroundColor: accentColor },
+              ]}
+            >
+              <Text style={[styles.epssCloseButtonText, { color: '#0B0F14' }]}>
+                GOT IT
+              </Text>
+            </Pressable>
+          </Pressable>
+        </Pressable>
+      </Modal>
     </View>
   );
 }
@@ -476,7 +705,9 @@ const styles = StyleSheet.create({
     letterSpacing: 0.8,
   },
   epssTag: {
-    paddingHorizontal: 6,
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 7,
     paddingVertical: 3,
     borderRadius: 4,
     borderWidth: 1,
@@ -485,6 +716,86 @@ const styles = StyleSheet.create({
     fontSize: 10,
     fontFamily: 'Exo_700Bold',
     letterSpacing: 0.6,
+  },
+
+  /* EPSS Modal Styles */
+  epssModalOverlay: {
+    flex: 1,
+    backgroundColor: 'rgba(0, 0, 0, 0.72)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: spacing.md,
+  },
+  epssModalContainer: {
+    width: '100%',
+    maxWidth: 420,
+    borderRadius: 16,
+    borderWidth: 1,
+    padding: 20,
+  },
+  epssModalHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginBottom: 14,
+  },
+  epssModalHeaderLeft: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+  },
+  epssModalTitle: {
+    fontFamily: 'Exo_700Bold',
+    fontSize: 16,
+  },
+  epssScoreBox: {
+    padding: 16,
+    borderRadius: 12,
+    borderWidth: 1,
+    alignItems: 'center',
+    marginBottom: 14,
+  },
+  epssScoreValue: {
+    fontFamily: 'Exo_800ExtraBold',
+    fontSize: 32,
+    letterSpacing: 0.5,
+  },
+  epssRiskBadge: {
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+    borderRadius: 6,
+    marginTop: 6,
+  },
+  epssRiskBadgeText: {
+    fontFamily: 'Exo_700Bold',
+    fontSize: 10.5,
+    letterSpacing: 0.8,
+  },
+  epssSection: {
+    marginBottom: 10,
+  },
+  epssSectionTitle: {
+    fontFamily: 'Exo_700Bold',
+    fontSize: 11,
+    letterSpacing: 0.8,
+    marginBottom: 2,
+  },
+  epssSectionBody: {
+    fontFamily: 'Exo_400Regular',
+    fontSize: 12.5,
+    lineHeight: 18,
+  },
+  epssCloseButton: {
+    marginTop: 12,
+    paddingVertical: 10,
+    borderRadius: 8,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  epssCloseButtonText: {
+    fontFamily: 'Exo_700Bold',
+    fontSize: 13,
+    letterSpacing: 0.8,
   },
 
   actionsRow: {

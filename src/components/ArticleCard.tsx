@@ -46,7 +46,7 @@ export function ArticleCard({
   onSelectSeverity,
   onSelectCategory,
 }: ArticleCardProps) {
-  const { colors, isDark, accentColor, severityColors } = useTheme();
+  const { colors, isDark, accentColor, severityColors, fontScaleMultiplier } = useTheme();
   const [opening, setOpening] = useState(false);
   const [copied, setCopied] = useState(false);
 
@@ -204,7 +204,14 @@ export function ArticleCard({
 
       {/* HEADLINE */}
       <Text
-        style={[styles.headline, { color: colors.textPrimary }]}
+        style={[
+          styles.headline,
+          {
+            color: colors.textPrimary,
+            fontSize: Math.round(21 * fontScaleMultiplier),
+            lineHeight: Math.round(28 * fontScaleMultiplier),
+          },
+        ]}
         numberOfLines={4}
       >
         {article.headline}
@@ -224,7 +231,16 @@ export function ArticleCard({
 
       {/* FULL SUMMARY */}
       <View style={styles.summaryContainer}>
-        <Text style={[styles.summary, { color: colors.textSecondary }]}>
+        <Text
+          style={[
+            styles.summary,
+            {
+              color: colors.textSecondary,
+              fontSize: Math.round(14.5 * fontScaleMultiplier),
+              lineHeight: Math.round(22.5 * fontScaleMultiplier),
+            },
+          ]}
+        >
           {article.summary}
         </Text>
       </View>

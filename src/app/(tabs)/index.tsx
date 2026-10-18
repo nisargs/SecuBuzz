@@ -931,7 +931,7 @@ export default function FeedScreen() {
             style={({ pressed }) => [
               styles.backToTopButton,
               {
-                backgroundColor: isDark ? '#0B0F14E6' : '#FFFFFFE6',
+                backgroundColor: `${colors.background}E6`,
                 borderColor: `${accentColor}99`,
                 shadowColor: accentColor,
               },

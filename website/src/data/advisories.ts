@@ -2,1196 +2,1464 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
-    "cve": "GHSA-m687-p538-r5hp",
-    "slug": "ghsa-m687-p538-r5hp",
-    "vendor": "Go",
-    "product": "code.vikunja.io/api",
-    "name": "Vikunja: Permissive Cross-domain Security Policy trusts every localhost origin which should not be trusted",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 7.2,
+    "cve": "CVE-2026-102764",
+    "slug": "cve-2026-102764",
+    "vendor": "BeyondTrust",
+    "product": "Remote Support",
+    "name": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
+    "dateAdded": "2026-10-16",
+    "dueDate": "2026-10-19",
     "severity": "High",
-    "cwe": "CWE-942",
+    "cwe": "CWE-290",
     "ransomware": false,
-    "description": "Vikunja ships with cors.origins defaulting to and and sends Access-Control-Allow-Credentials: true, so a page served from any port on the user's own machine may make credentialed cross-origin requests to the API and read the responses.",
-    "requiredAction": "Review repository advisory and update affected dependencies.",
+    "description": "BeyondTrust Remote Support contains an authentication bypass by spoofing vulnerability that could allow a remote attacker to perform file operations on the appliance.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
     "references": [
       {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-m687-p538-r5hp"
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102764"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
       }
     ]
   },
   {
-    "cve": "GHSA-fmmf-xq98-g327",
-    "slug": "ghsa-fmmf-xq98-g327",
-    "vendor": "Go",
-    "product": "code.vikunja.io/api",
-    "name": "Vikunja: Write-level project members can delete admin-tier link shares through an unloaded permission check",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 6.9,
-    "severity": "Medium",
-    "cwe": "CWE-863",
-    "ransomware": false,
-    "description": "A project member with Write permission can delete an admin-tier link share on that project. The deletion authorization check reads the permission from an object populated only with URL IDs, rather than from the stored share. Its zero value is Read, so the check falls through to project Write permission instead of requiring Admin.",
-    "requiredAction": "Review repository advisory and update affected dependencies.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-fmmf-xq98-g327"
-      }
-    ]
-  },
-  {
-    "cve": "GHSA-pjr3-86v4-5p7w",
-    "slug": "ghsa-pjr3-86v4-5p7w",
-    "vendor": "Go",
-    "product": "code.vikunja.io/api",
-    "name": "Vikunja: Explicit lower-permission share on a sub-project is silently overridden by an inherited parent permission (broken access control / privilege-management regression in v2.6.0)",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 5.4,
-    "severity": "Medium",
-    "cwe": "CWE-269",
-    "ransomware": false,
-    "description": "In Vikunja v2.6.0 the project-permission engine resolves a user's effective permission on a project as the MAX over the entire reachable project subtree.",
-    "requiredAction": "Review repository advisory and update affected dependencies.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-pjr3-86v4-5p7w"
-      }
-    ]
-  },
-  {
-    "cve": "GHSA-hjx8-qv73-f7cm",
-    "slug": "ghsa-hjx8-qv73-f7cm",
-    "vendor": "Go",
-    "product": "code.vikunja.io/api",
-    "name": "Vikunja: Webhooks and link shares survive every revocation path, so a removed collaborator keeps a live feed",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-613",
-    "ransomware": false,
-    "description": "A collaborator removed from a project keeps a live, automatic feed of that project's contents, because nothing on any revocation path deletes the webhook they created while they had access. Vikunja already has a revocation-cleanup routine that deletes other derived rows for exactly this reason. Its set is {taskassignees, subscriptions}.",
-    "requiredAction": "Review repository advisory and update affected dependencies.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-hjx8-qv73-f7cm"
-      }
-    ]
-  },
-  {
-    "cve": "GHSA-fprf-r6rv-xg99",
-    "slug": "ghsa-fprf-r6rv-xg99",
-    "vendor": "Go",
-    "product": "code.vikunja.io/api",
-    "name": "Vikunja: Saved filter creation with an empty filter string recalculates task positions across all tenants",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 5.4,
-    "severity": "Medium",
-    "cwe": "CWE-863",
-    "ransomware": false,
-    "description": "In Vikunja v2.6.0 the task position recalculation that runs when a saved filter view is created fails open when the requesting user has no accessible projects. Instead of aborting, the search that feeds the recalculation loses its project scope entirely and returns every task in the instance.",
-    "requiredAction": "Review repository advisory and update affected dependencies.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-fprf-r6rv-xg99"
-      }
-    ]
-  },
-  {
-    "cve": "GHSA-4hv6-xc92-j86g",
-    "slug": "ghsa-4hv6-xc92-j86g",
-    "vendor": "Go",
-    "product": "code.vikunja.io/api",
-    "name": "Vikunja: WebSocket authentication ignores server-side session state, so revoked sessions keep receiving live pushes",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-613",
-    "ransomware": false,
-    "description": "Vikunja v2.6.0 introduced server-side sessions with revocation semantics: DELETE /api/v2/user/sessions/{id} documents \"Revokes a specific session by its UUID\", and enabling TOTP calls DeleteAllUserSessions to invalidate all sessions. The WebSocket endpoint accepts any cryptographically valid user JWT without ever resolving its sid (session id) claim against the sessions table.",
-    "requiredAction": "Review repository advisory and update affected dependencies.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-4hv6-xc92-j86g"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-107805",
-    "slug": "cve-2026-107805",
-    "vendor": "Go",
-    "product": "Nginx-UI · 0xJacky",
-    "name": "Nginx UI: Unauthenticated signed-request body staging can exhaust temporary storage",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 7.5,
+    "cve": "CVE-2025-61624",
+    "slug": "cve-2025-61624",
+    "vendor": "Fortinet",
+    "product": "Multiple Products",
+    "name": "Fortinet Multiple Products Path Traversal Vulnerability",
+    "dateAdded": "2026-10-16",
+    "dueDate": "2026-10-19",
     "severity": "High",
-    "cwe": "CWE-400",
+    "cwe": "CWE-22",
     "ransomware": false,
-    "description": "In Nginx UI versions 2.5.0 through 2.5.x, the node-signature authentication path staged an attacker-controlled request body in a temporary file and synchronized it to disk before validating the body digest and cryptographic signature.",
-    "requiredAction": "Upgrade Nginx-UI · 0xJacky to version 1.9.10-0.20260901043436-8c9b9a1aff21 or later.",
+    "description": "FortiOS, FortiPAM, FortiProxy, and FortiSwitchManager contain a path traversal vulnerability that may allow an authenticated attacker with admin profile and at least read-write permissions to write or delete arbitrary files via specific CLI commands.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61624"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-96627",
+    "slug": "cve-2026-96627",
+    "vendor": "Go",
+    "product": "arcane (backend) · getarcaneapp",
+    "name": "Arcane: Delegated users:update permission allows admin account takeover via password reset (no privilege-hierarchy check)",
+    "dateAdded": "2026-10-16",
+    "dueDate": "Immediate",
+    "cvss": 8.8,
+    "severity": "High",
+    "cwe": "CWE-266",
+    "ransomware": false,
+    "description": "A user holding the delegated users:update permission can reset the global administrator's password and take over the admin account. UpdateUser sets the target user's PasswordHash from the request body for ANY target with no comparison of caller-vs-target privilege.",
+    "requiredAction": "Upgrade arcane (backend) · getarcaneapp to version 2.6.0 or later.",
     "references": [
       {
         "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-j3hg-9rp3-5hw9"
+        "url": "https://github.com/advisories/GHSA-pw5q-rjx4-7f7p"
       },
       {
         "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107805"
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96627"
       }
     ]
   },
   {
-    "cve": "CVE-2026-107804",
-    "slug": "cve-2026-107804",
+    "cve": "CVE-2026-96628",
+    "slug": "cve-2026-96628",
     "vendor": "Go",
-    "product": "Nginx-UI · 0xJacky",
-    "name": "Nginx UI: Bundled reverse proxy can bypass IP allowlists and enable shared login lockout",
-    "dateAdded": "2026-10-09",
+    "product": "arcane (backend) · getarcaneapp",
+    "name": "Arcane: Environment access token bypasses the admin-required authorization gate on `/api/debug/pprof`",
+    "dateAdded": "2026-10-16",
     "dueDate": "Immediate",
-    "cvss": 5.3,
+    "cvss": 4.3,
     "severity": "Medium",
-    "cwe": "CWE-346",
+    "cwe": "CWE-863",
     "ransomware": false,
-    "description": "In Nginx UI versions 2.2.0 through 2.5.x, the official bundled reverse-proxy topology did not preserve the external client identity used by Gin. The backend treated the local proxy peer as the client because no trusted proxy was configured, while the proxy supplied the actual address in forwarding headers.",
-    "requiredAction": "Upgrade Nginx-UI · 0xJacky to version 1.9.10-0.20260904075558-e30e331303fc or later.",
+    "description": "Arcane v2.10.2 contains an authorization inconsistency in AuthMiddleware.managerAuth. When a request supplies a valid environment access token through the X-Arcane-Agent-Token header, managerAuth resolves the associated environment, installs an environment-scoped permission set, and immediately calls next(c).",
+    "requiredAction": "Upgrade arcane (backend) · getarcaneapp to version 2.11.0 or later.",
     "references": [
       {
         "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-9h23-53f4-q947"
+        "url": "https://github.com/advisories/GHSA-mp22-58ff-6fhr"
       },
       {
         "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107804"
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96628"
       }
     ]
   },
   {
-    "cve": "CVE-2026-108259",
-    "slug": "cve-2026-108259",
-    "vendor": "npm",
-    "product": "@tinacms/cli",
-    "name": "Tina: Code injection via unescaped Git branch name in generated client source",
-    "dateAdded": "2026-10-09",
+    "cve": "CVE-2026-105192",
+    "slug": "cve-2026-105192",
+    "vendor": "Pip",
+    "product": "lmcache",
+    "name": "LMCache: Remote code execution via unsafe deserialization in multiprocess mode transport",
+    "dateAdded": "2026-10-16",
+    "dueDate": "Immediate",
+    "cvss": 9.8,
+    "severity": "Critical",
+    "cwe": "CWE-306",
+    "ransomware": false,
+    "description": "LMCache is vulnerable to Unauthenticated Remote Code Execution via Pickle Deserialization on the Multiprocess ZMQ Transport",
+    "requiredAction": "Upgrade lmcache to version 0.5.6 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-w5f2-9q9c-ff4h"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105192"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-100349",
+    "slug": "cve-2026-100349",
+    "vendor": "Go",
+    "product": "kin-openapi · getkin",
+    "name": "kin-openapi openapi3filter: nil-pointer panic in ValidateResponse on a response header declared with content",
+    "dateAdded": "2026-10-16",
     "dueDate": "Immediate",
     "cvss": 8.2,
     "severity": "High",
-    "cwe": "CWE-94",
+    "cwe": "CWE-476",
     "ransomware": false,
-    "description": "@tinacms/cli inserts the raw Git branch value into the generated client.ts source without escaping or encoding. A Git-valid branch name can close the string literal and inject an arbitrary JavaScript expression that executes when the consumer build imports the generated client module.",
-    "requiredAction": "Upgrade @tinacms/cli to version 3.0.0 or later.",
+    "description": "ValidateResponse panics on a nil pointer when a spec declares a response header with content instead of schema. doc.Validate() accepts that document, so the crash comes from a spec the library just called valid. Same class as GHSA-jpcw-4wr7-c3vq, which covered the request-parameter case in v0.144.0; this is the response-header path. Affects github.com/getkin/kin-openapi <= v0.145.0.",
+    "requiredAction": "Upgrade kin-openapi · getkin to version 0.146.0 or later.",
     "references": [
       {
         "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-pwhx-cvv3-qj5c"
+        "url": "https://github.com/advisories/GHSA-74vm-87hj-r66f"
       },
       {
         "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108259"
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100349"
       }
     ]
   },
   {
-    "cve": "CVE-2026-108261",
-    "slug": "cve-2026-108261",
-    "vendor": "npm",
-    "product": "tinacms",
-    "name": "TinaCMS admin preview iframe loads an attacker-controlled origin from the URL fragment",
-    "dateAdded": "2026-10-09",
+    "cve": "CVE-2026-58494",
+    "slug": "cve-2026-58494",
+    "vendor": "Rust (Cargo)",
+    "product": "wasmtime-wasi",
+    "name": "Wasmtime: WASI hard links bypass wasmtime-wasi's FilePerms for destination",
+    "dateAdded": "2026-10-16",
     "dueDate": "Immediate",
-    "cvss": 9.3,
-    "severity": "Critical",
-    "cwe": "CWE-346",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-281",
     "ransomware": false,
-    "description": "The TinaCMS admin builds its preview from the /~/* hash-router splat without checking that the value stays same-origin. A fragment with a doubled slash (#/~//attacker.example/p) becomes the protocol-relative URL //attacker.example/p, so the admin frames an external site.",
-    "requiredAction": "Upgrade tinacms to version 3.14.0 or later.",
+    "description": "Wasmtime's WASI filesystem implementation lets a guest with a read-only source file capability overwrite that file by hard-linking it into another preopen that allows file writes. An attacker who can run a WASI guest can bypass WasiCtxBuilder per-preopen FilePerms and modify host files that were exposed as FilePerms::READ.",
+    "requiredAction": "Upgrade wasmtime-wasi to version 24.0.11 or later.",
     "references": [
       {
         "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-x34j-47hf-4xg7"
+        "url": "https://github.com/advisories/GHSA-4ch3-9j33-3pmj"
       },
       {
         "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108261"
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58494"
       }
     ]
   },
   {
-    "cve": "CVE-2026-108260",
-    "slug": "cve-2026-108260",
-    "vendor": "npm",
-    "product": "@tinacms/web-components",
-    "name": "@tinacms/web-components: `tina-markdown` writes rich-text link URLs into `href` without scheme validation, allowing stored XSS",
-    "dateAdded": "2026-10-09",
+    "cve": "GHSA-6fj4-rcr3-r7rr",
+    "slug": "ghsa-6fj4-rcr3-r7rr",
+    "vendor": "Rust (Cargo)",
+    "product": "lopdf",
+    "name": "lopdf has a stack overflow via deeply nested PDF objects",
+    "dateAdded": "2026-10-16",
     "dueDate": "Immediate",
-    "cvss": 7.6,
+    "cvss": 7.5,
     "severity": "High",
-    "cwe": "CWE-79",
+    "cwe": "CWE-1124",
     "ransomware": false,
-    "description": "renders a rich-text AST into the DOM and, for a nodes, assigns the node's URL straight to the anchor's href with no scheme check. A link authored in the CMS as javascript:… renders as a live javascript: anchor, so a visitor who clicks it executes attacker-supplied script in the site's origin. Every sibling renderer in the repository already sanitizes these URLs; this one does not.",
-    "requiredAction": "Upgrade @tinacms/web-components to version 0.2.1 or later.",
+    "description": "lopdf::Document::loadmem (and the other load entry points) parses nested PDF arrays and dictionaries with unbounded recursion. A small crafted PDF whose Catalog contains a deeply nested array (/X [[[ … ]]], on the order of 10,000 levels) exhausts the call stack and aborts the process with SIGABRT.",
+    "requiredAction": "Upgrade lopdf to version 0.42.0 or later.",
     "references": [
       {
         "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-c42q-qvc3-j6vg"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108260"
+        "url": "https://github.com/advisories/GHSA-6fj4-rcr3-r7rr"
       }
     ]
   },
   {
-    "cve": "CVE-2026-108258",
-    "slug": "cve-2026-108258",
+    "cve": "CVE-2026-102834",
+    "slug": "cve-2026-102834",
+    "vendor": "Java (Maven)",
+    "product": "org.bytedeco:javacv",
+    "name": "JavaCV: Integer Overflow in IPCameraFrameGrabber Causes Infinite-Loop DoS",
+    "dateAdded": "2026-10-16",
+    "dueDate": "Immediate",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-190",
+    "ransomware": false,
+    "description": "IPCameraFrameGrabber parses the Content-Length value from the multipart MJPEG HTTP stream returned by the configured IP camera without any bounds checking.",
+    "requiredAction": "Upgrade org.bytedeco:javacv to version 1.5.14 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-rxjv-24xq-76wc"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102834"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-96620",
+    "slug": "cve-2026-96620",
     "vendor": "Pip",
-    "product": "shiny",
-    "name": "Shiny for Python has path traversal in bookmark restore",
-    "dateAdded": "2026-10-09",
+    "product": "claude-agent-sdk",
+    "name": "Claude Agent SDK: Argument Injection via resume Option Allows Arbitrary Command Execution",
+    "dateAdded": "2026-10-16",
     "dueDate": "Immediate",
-    "cvss": 6.9,
-    "severity": "Medium",
+    "cvss": 9.2,
+    "severity": "Critical",
+    "cwe": "CWE-20",
+    "ransomware": false,
+    "description": "The Claude Agent SDK for Python passed the resume option to the Claude CLI without validation, allowing a value beginning with - to be interpreted as a separate CLI flag. An attacker who controlled the resume value could inject an --mcp-config flag defining a stdio MCP server, resulting in arbitrary command execution at CLI startup that bypassed the SDK's permission controls.",
+    "requiredAction": "Upgrade claude-agent-sdk to version 0.2.121 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-h4mw-j7qp-8mwm"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96620"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-62994",
+    "slug": "cve-2026-62994",
+    "vendor": "Go",
+    "product": "coredns · coredns",
+    "name": "CoreDNS `k8s_external` headless AXFR can emit an empty transfer batch that panics the `transfer` plugin",
+    "dateAdded": "2026-10-16",
+    "dueDate": "Immediate",
+    "cvss": 3.7,
+    "severity": "Low",
+    "cwe": "CWE-248",
+    "ransomware": false,
+    "description": "A network DNS client allowed to request AXFR for a CoreDNS zone can trigger a panic when CoreDNS is configured with k8sexternal headless-service zone transfers and Kubernetes contains a headless service endpoint with no declared ports.",
+    "requiredAction": "Upgrade coredns · coredns to version 1.14.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-74w3-63xv-x9mv"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62994"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-76894",
+    "slug": "cve-2026-76894",
+    "vendor": "npm",
+    "product": "@aborruso/ckan-mcp-server",
+    "name": "ckan-mcp-server: DataStore Table UI resource does not validate postMessage origin (in) and posts to targetOrigin \"*\" (out)",
+    "dateAdded": "2026-10-16",
+    "dueDate": "Immediate",
+    "cvss": 3.1,
+    "severity": "Low",
+    "cwe": "CWE-345",
+    "ransomware": false,
+    "description": "The MCP Apps UI resource (an interactive DataStore table rendered in the host's webview/iframe) communicates with its parent via postMessage. Its inbound message listener performs no event.origin validation, and its outbound messages are sent with target origin '*'.",
+    "requiredAction": "Upgrade @aborruso/ckan-mcp-server to version 0.4.112 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-vqff-r82h-9crc"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76894"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-54893",
+    "slug": "cve-2026-54893",
+    "vendor": "Erlang",
+    "product": "swoosh",
+    "name": "swoosh has email-derived URL path injection in Microsoft Graph endpoint",
+    "dateAdded": "2026-10-16",
+    "dueDate": "Immediate",
+    "cvss": 2.1,
+    "severity": "Low",
+    "cwe": "CWE-116",
+    "ransomware": false,
+    "description": "Swoosh.Adapters.MsGraph builds its Microsoft Graph API request URL by interpolating the sender's email address directly into the URL path (/users/{from}/sendMail) without percent-encoding or validation.",
+    "requiredAction": "Upgrade swoosh to version 1.26.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-754j-98wh-57rf"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-54893"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-68549",
+    "slug": "cve-2026-68549",
+    "vendor": "Pip",
+    "product": "ClickMigrate",
+    "name": "ClickMigrate has Path Traversal in \"revision -m\" argument",
+    "dateAdded": "2026-10-16",
+    "dueDate": "Immediate",
+    "cvss": 3.3,
+    "severity": "Low",
     "cwe": "CWE-22",
     "ransomware": false,
-    "description": "Shiny for Python's bookmark-restore path accepted a client-supplied stateid query-string value and joined it into the server-side bookmark directory (/shinybookmarks/) without validating it. A value containing .. path segments, or an absolute path, could therefore cause the server to open and parse input.json and values.json from a directory outside the bookmark store.",
-    "requiredAction": "Upgrade shiny to version 1.6.4 or later.",
+    "description": "A path traversal vulnerability in the revision command allowed a crafted migration name supplied via the -m argument to escape the intended migrations directory. Under specific conditions, an attacker could cause the tool to create a .sql file in an arbitrary location writable by the user executing the command.",
+    "requiredAction": "Upgrade ClickMigrate to version 1.0.3 or later.",
     "references": [
       {
         "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-47c3-hpmg-7j6p"
+        "url": "https://github.com/advisories/GHSA-vgf9-9mxx-hq54"
       },
       {
         "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108258"
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68549"
       }
     ]
   },
   {
-    "cve": "GHSA-w2ch-4xgr-22ww",
-    "slug": "ghsa-w2ch-4xgr-22ww",
+    "cve": "CVE-2026-102941",
+    "slug": "cve-2026-102941",
     "vendor": "Go",
-    "product": "code.vikunja.io/api",
-    "name": "Vikunja: Task relation deletion does not check read access to the other task, allowing cross-project relation removal",
-    "dateAdded": "2026-10-09",
+    "product": "markdown · gomarkdown",
+    "name": "gomarkdown/markdown IsSafeURL panics on short URLs",
+    "dateAdded": "2026-10-16",
     "dueDate": "Immediate",
-    "cvss": 2.3,
-    "severity": "Low",
-    "cwe": "CWE-285",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-125",
     "ransomware": false,
-    "description": "Deleting a task relation only requires write access on the base task. Unlike relation creation, it does not verify that the caller can read the other task. A user with write access to one project can therefore delete relations whose other end lives in a project they have no access to.",
-    "requiredAction": "Upgrade code.vikunja.io/api to version 2.6.0 or later.",
+    "description": "IsSafeURL slices url[:nPath] before checking that len(url) >= nPath, so a URL shorter than a path prefix (0, 1 or 2 bytes) triggers a slice-bounds panic, and this is reached end to end when the html.Safelink hardening flag is enabled and the input contains an empty or very short link destination, giving an unrecoverable crash DoS. Confirmed at HEAD (e08cff8; present since 2022).",
+    "requiredAction": "Upgrade markdown · gomarkdown to version 0.0.0-20260724235538-61af6e1e6971 or later.",
     "references": [
       {
         "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-w2ch-4xgr-22ww"
-      }
-    ]
-  },
-  {
-    "cve": "GHSA-8wvg-r2j4-3737",
-    "slug": "ghsa-8wvg-r2j4-3737",
-    "vendor": "Go",
-    "product": "code.vikunja.io/api",
-    "name": "Vikunja: Assignee email addresses disclosed to read-only project members via the task assignees endpoint",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-200",
-    "ransomware": false,
-    "description": "TaskAssginee.ReadAll returns assignee user objects without blanking the Email field, disclosing assignee email addresses to any read-only project member. Every sibling path that returns user objects obfuscates the email; this one does not.",
-    "requiredAction": "Upgrade code.vikunja.io/api to version 2.6.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-8wvg-r2j4-3737"
-      }
-    ]
-  },
-  {
-    "cve": "GHSA-3hc7-r24j-rpwc",
-    "slug": "ghsa-3hc7-r24j-rpwc",
-    "vendor": "Go",
-    "product": "code.vikunja.io/api",
-    "name": "Vikunja: Cross-project task disclosure through subtask expansion",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 6,
-    "severity": "Medium",
-    "cwe": "CWE-200",
-    "ransomware": false,
-    "description": "Vikunja lets a task in one project have a subtask that lives in a different project. When listing a project's tasks, an option pulls in those subtasks (?expand%5B%5D=subtasks). The main listing is correctly filtered to the projects the caller can access, but the subtask expansion is not: it returns the linked subtasks regardless of whether the caller has any access to the project they belong to.",
-    "requiredAction": "Upgrade code.vikunja.io/api to version 2.6.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-3hc7-r24j-rpwc"
-      }
-    ]
-  },
-  {
-    "cve": "GHSA-g38j-7v97-x298",
-    "slug": "ghsa-g38j-7v97-x298",
-    "vendor": "Go",
-    "product": "code.vikunja.io/api",
-    "name": "Vikunja: CalDAV relation creation bypasses TaskRelation.CanCreate, allowing an unauthorized write into any task by known UID",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 6.3,
-    "severity": "Medium",
-    "cwe": "CWE-862",
-    "ransomware": false,
-    "description": "Creating a task relation over CalDAV does not run the TaskRelation.CanCreate permission check that the REST API enforces. An attacker can attach a relation to any task whose UID they know, including tasks in projects they have no access to. The identical operation over REST is correctly refused with 403.",
-    "requiredAction": "Upgrade code.vikunja.io/api to version 2.6.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-g38j-7v97-x298"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-107842",
-    "slug": "cve-2026-107842",
-    "vendor": "Composer",
-    "product": "contao/core-bundle",
-    "name": "Contao: Protected page content is disclosed to anonymous visitors after contao.search.index_protected is disabled",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-200",
-    "ransomware": false,
-    "description": "ModuleSearch decides whether to filter protected pages out of search results based on the current value of contao.search.indexprotected, but the authorisation data lives per row in tlsearch.",
-    "requiredAction": "Upgrade contao/core-bundle to version 5.3.50 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-x2rp-9qf7-2fmq"
+        "url": "https://github.com/advisories/GHSA-cv23-7vc5-jfh7"
       },
       {
         "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107842"
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102941"
       }
     ]
   },
   {
-    "cve": "CVE-2026-107843",
-    "slug": "cve-2026-107843",
-    "vendor": "Composer",
-    "product": "contao/core-bundle",
-    "name": "Contao: The registration module re-sends activation mails",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-204",
+    "cve": "CVE-2026-21589",
+    "slug": "cve-2026-21589",
+    "vendor": "Atlassian",
+    "product": "Multiple Products",
+    "name": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
+    "dateAdded": "2026-10-15",
+    "dueDate": "2026-10-18",
+    "severity": "High",
+    "cwe": "CWE-552",
     "ransomware": false,
-    "description": "ModuleRegistration::compile() reaches its follow-up registration branch on any POST to a page carrying the module. That branch checks neither FORMSUBMIT nor the captcha result computed immediately above it, and resendActivationMail() leads to OptInToken::send(), which has no rate limit at all.",
-    "requiredAction": "Upgrade contao/core-bundle to version 5.3.50 or later.",
+    "description": "Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files or directories accessible to external parties vulnerability which could allow an unauthenticated attacker to access specific files within the web application root directory in affected versions.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
     "references": [
       {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-mfxh-vp55-7gc6"
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21589"
       },
       {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107843"
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
       }
     ]
   },
   {
-    "cve": "CVE-2026-107848",
-    "slug": "cve-2026-107848",
-    "vendor": "Composer",
-    "product": "contao/core-bundle",
-    "name": "Contao: Cross-site request forgery in custom backend actions",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 3.5,
-    "severity": "Low",
-    "cwe": "CWE-352",
-    "ransomware": false,
-    "description": "RequestTokenListener is the only generic REQUEST_TOKEN validator in Contao and it only runs on POST. On the GET side the guard is local and declarative, and it only fires when an act parameter is present. Every back end action dispatched through a different parameter therefore has no CSRF protection at all. This is a family rather than a single bug.",
-    "requiredAction": "Upgrade contao/core-bundle to version 5.3.50 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-9ff2-p842-45wq"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107848"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-107844",
-    "slug": "cve-2026-107844",
-    "vendor": "Composer",
-    "product": "contao/core-bundle",
-    "name": "Contao: Path traversal in the images controller",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-22",
-    "ransomware": false,
-    "description": "ImagesController joins the user controlled {path} onto the configured image target directory with Path::join(), which canonicalises .. segments, and never calls Path::isBasePath() to confirm the result stayed inside that directory. An unauthenticated GET with percent encoded dot segments therefore escapes the directory and the file is returned by BinaryFileResponse.",
-    "requiredAction": "Upgrade contao/core-bundle to version 5.3.50 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-mrvp-7wmx-5m4h"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107844"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-107845",
-    "slug": "cve-2026-107845",
-    "vendor": "Composer",
-    "product": "contao/comments-bundle",
-    "name": "Contao: Cross-site scripting in the comments bundle",
-    "dateAdded": "2026-10-09",
+    "cve": "CVE-2026-102989",
+    "slug": "cve-2026-102989",
+    "vendor": "npm",
+    "product": "@tanstack/start-server-core",
+    "name": "TanStack Router: Unauthenticated reflected XSS in TanStack Start server-function responses",
+    "dateAdded": "2026-10-15",
     "dueDate": "Immediate",
     "cvss": 9.3,
     "severity": "Critical",
     "cwe": "CWE-79",
     "ransomware": false,
-    "description": "An unauthenticated front end visitor can post a comment containing a XSS injection. The victim is any back end user who opens the Comments module, and moderation makes exposure certain rather than preventing it. No Content-Security-Policy header is sent on the Contao back end, so nothing mitigates the inline handler.",
-    "requiredAction": "Upgrade contao/comments-bundle to version 5.3.50 or later.",
+    "description": "An unauthenticated attacker can craft a URL to a server function in an affected TanStack Start app. If someone opens the link, the app can return attacker-controlled HTML from its own origin and run the attacker's JavaScript there. The script can access same-origin data available to that visitor and make requests with their authority.",
+    "requiredAction": "Upgrade @tanstack/start-server-core to version 1.169.39 or later.",
     "references": [
       {
         "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-628f-v4f6-p37r"
+        "url": "https://github.com/advisories/GHSA-qx66-fv34-fjm8"
       },
       {
         "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107845"
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102989"
       }
     ]
   },
   {
-    "cve": "CVE-2026-107850",
-    "slug": "cve-2026-107850",
-    "vendor": "Composer",
-    "product": "contao/core-bundle",
-    "name": "Contao: Improper access control in the preview links module",
-    "dateAdded": "2026-10-09",
+    "cve": "CVE-2026-102682",
+    "slug": "cve-2026-102682",
+    "vendor": "Pip",
+    "product": "pipecat-ai",
+    "name": "Pipecat: Public exposure of Pipecat’s development runner can allow unauthenticated bot session creation",
+    "dateAdded": "2026-10-15",
+    "dueDate": "Immediate",
+    "cvss": 5.6,
+    "severity": "Medium",
+    "cwe": "CWE-345",
+    "ransomware": false,
+    "description": "Pipecat’s built-in development runner exposes endpoints that create bot sessions and, for the Daily transport, paid Daily rooms. These development endpoints intentionally do not authenticate callers. The runner binds to localhost by default and is designed exclusively for local development. It is not built or supported as a production server.",
+    "requiredAction": "Upgrade pipecat-ai to version 1.6.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-hqm2-cfx2-2vgh"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102682"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-94603",
+    "slug": "cve-2026-94603",
+    "vendor": "Go",
+    "product": "podman · containers",
+    "name": "Podman: The `podman run` command can be instructed to disable almost all sandboxing by image annotation",
+    "dateAdded": "2026-10-15",
+    "dueDate": "Immediate",
+    "cvss": 10,
+    "severity": "Critical",
+    "cwe": "CWE-693",
+    "ransomware": false,
+    "description": "Podman v4.4.0 added a feature where container checkpoints (from the podman container checkpoint command) could be distributed via OCI registry, and pulled from that registry and run via the podman run command. This allowed easy transfer of checkpoints between systems. However, checkpoints allow complete control of how the container is created - including full control of the container sandbox.",
+    "requiredAction": "Upgrade podman · containers to version 5.8.8 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-2cvf-wqm6-wr9g"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94603"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-102832",
+    "slug": "cve-2026-102832",
+    "vendor": "Pip",
+    "product": "jupyterlab",
+    "name": "JupyterLab: Command link trust prompt in JupyterLab can trust a document other than the one clicked",
+    "dateAdded": "2026-10-15",
+    "dueDate": "Immediate",
+    "cvss": 4.2,
+    "severity": "Medium",
+    "cwe": "CWE-367",
+    "ransomware": false,
+    "description": "A Markdown file or a notebook output can carry a button that runs a JupyterLab command. Since 4.5.7 the first click on such a button opens a prompt naming the command, with Cancel, Run Once and Trust. Choosing Trust runs the command and marks the document trusted, so its later buttons run without a prompt. Which document gets marked is decided when the user answers, not when they click.",
+    "requiredAction": "Upgrade jupyterlab to version 4.6.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-jwrc-gm9j-263p"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102832"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-103028",
+    "slug": "cve-2026-103028",
+    "vendor": "Go",
+    "product": "sftpgo (v2) · drakkan",
+    "name": "SFTPGo source-side file-pattern filter bypass during copy operations",
+    "dateAdded": "2026-10-15",
     "dueDate": "Immediate",
     "cvss": 4.3,
-    "severity": "Medium",
-    "cwe": "CWE-639",
-    "ransomware": false,
-    "description": "core-bundle/config/services.yaml registers the preview access voter with the class Contao\\CoreBundle\\Security\\Voter\\DataContainer\\PreviewAccessVoter, but the class shipped on disk is named PreviewVoter.",
-    "requiredAction": "Upgrade contao/core-bundle to version 5.7.12 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-q6wp-fr43-gm9v"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107850"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-107851",
-    "slug": "cve-2026-107851",
-    "vendor": "Composer",
-    "product": "contao/core-bundle",
-    "name": "Contao: Improper access control in the table access voter",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 4.3,
-    "severity": "Medium",
-    "cwe": "CWE-524",
-    "ransomware": false,
-    "description": "Due to a caching defect in the security voter that governs table-level access to Contao's Data Container (DCA) backend, a low-privileged, non-admin backend user can obtain unauthorized read, create, update, and delete access to database tables outside their assigned module permissions.",
-    "requiredAction": "Upgrade contao/core-bundle to version 5.7.12 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-5974-gfqc-wrcm"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107851"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-91970",
-    "slug": "cve-2026-91970",
-    "vendor": "Go",
-    "product": "code.vikunja.io/api",
-    "name": "Vikunja: Planka migration retains an unbounded aggregate of attacker-served attachments and can OOM the API",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 7.1,
-    "severity": "High",
-    "cwe": "CWE-770",
-    "ransomware": false,
-    "description": "The always-registered Planka migration lets any ordinary user select a Planka server. Although Vikunja caps each JSON response, pagination loop, and attachment independently, it has no aggregate job budget. The conversion stage downloads every advertised non-link attachment and keeps every byte slice live until the complete hierarchy is inserted.",
-    "requiredAction": "Upgrade code.vikunja.io/api to version 2.6.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-wq92-8x3r-fm38"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91970"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-91969",
-    "slug": "cve-2026-91969",
-    "vendor": "Go",
-    "product": "code.vikunja.io/api",
-    "name": "Vikunja: Unbounded CSV row cardinality permits API process termination",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 7.1,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "The authenticated v2 CSV migration route caps upload bytes but not parsed row cardinality. It reads every record into a [][]string and then materializes a full task object for every row before insertion. Two million one-cell rows fit in a roughly 4 MB multipart request yet exhaust a 512 MiB API process.",
-    "requiredAction": "Upgrade code.vikunja.io/api to version 2.6.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-pqf9-h8g4-8gmh"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91969"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-91968",
-    "slug": "cve-2026-91968",
-    "vendor": "Go",
-    "product": "code.vikunja.io/api",
-    "name": "Vikunja: Unbounded nested task-filter recursion permits API process termination",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 7.1,
-    "severity": "High",
-    "cwe": "CWE-674",
-    "ransomware": false,
-    "description": "Authenticated task-list routes accept a filter expression without a length or nesting-depth bound, preprocess it, parse it recursively through fexpr, and recursively convert the resulting expression tree. A syntactically valid deeply nested expression well below the HTTP request-size ceiling exhausts memory and kills the API process.",
-    "requiredAction": "Upgrade code.vikunja.io/api to version 2.6.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-xxc3-xpmc-vmvr"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91968"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-91979",
-    "slug": "cve-2026-91979",
-    "vendor": "Go",
-    "product": "code.vikunja.io/api",
-    "name": "Vikunja: Denial of service via decompression bomb in the data import",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 7.1,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "Vikunja lets you export your data as a zip and import it back. The import doesn't limit how large the archive expands to, how many files it contains, or how much storage one user can consume, and it appears to hold the whole archive in memory while processing it. Because the archive is compressed, a ~20 MB upload made of highly compressible content expands to tens of gigabytes once imported.",
-    "requiredAction": "Upgrade code.vikunja.io/api to version 2.6.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-w7jp-mf2v-8342"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91979"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-91981",
-    "slug": "cve-2026-91981",
-    "vendor": "Go",
-    "product": "code.vikunja.io/api",
-    "name": "Vikunja: Link-share token can enumerate users through the v2 API",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-200",
-    "ransomware": false,
-    "description": "A link-share token, the credential you hand out to let someone view a shared project, can call the v2 user-search endpoints, which it was never meant to reach. The v1 versions of the same endpoints correctly reject link-share tokens; the v2 versions don't.",
-    "requiredAction": "Upgrade code.vikunja.io/api to version 2.6.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-vfxw-3x8p-2vjr"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91981"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-91980",
-    "slug": "cve-2026-91980",
-    "vendor": "Go",
-    "product": "code.vikunja.io/api",
-    "name": "Vikunja: Any user can enumerate every team and its members by attaching arbitrary teams to a throwaway project",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-200",
-    "ransomware": false,
-    "description": "When you share a project with a team, the API lets you attach any team on the instance, including teams you have nothing to do with, as long as you're an admin of the project. Listing a project's teams then returns each team's full member roster.",
-    "requiredAction": "Upgrade code.vikunja.io/api to version 2.6.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-39p5-2wrr-xh29"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91980"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-91971",
-    "slug": "cve-2026-91971",
-    "vendor": "Go",
-    "product": "code.vikunja.io/api",
-    "name": "Vikunja: Unbounded image decode on avatar and project-background uploads enables decode/resize amplification",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 7.1,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "The 50-megapixel decode guard exists only on the task-attachment preview path. Avatar and project-background uploads decode uploaded images with no pixel cap. Worse, the avatar resize fixes the output height at 1024 and derives the width from the aspect ratio, so a tiny extreme-aspect-ratio PNG expands to an enormous output image — an input-side pixel cap would not catch it.",
-    "requiredAction": "Upgrade code.vikunja.io/api to version 2.6.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-4vh2-39rq-rq8j"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91971"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-91973",
-    "slug": "cve-2026-91973",
-    "vendor": "Go",
-    "product": "code.vikunja.io/api",
-    "name": "Vikunja: CalDAV and feeds BasicAuth endpoints have no rate limit, bypassing the anti-brute-force floor on account passwords",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 0,
-    "severity": "Medium",
-    "cwe": "CWE-307",
-    "ransomware": false,
-    "description": "The /dav, /.well-known, and /feeds groups are registered on the root Echo instance with only BasicAuth and no rate limiter. CalDAV BasicAuth accepts the plain account password, so password guessing over /dav is unbounded and never returns 429, while /api/v1/login is throttled from the tenth attempt. The only anti-brute-force control on the instance is therefore bypassable.",
-    "requiredAction": "Upgrade code.vikunja.io/api to version 2.6.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-m469-88xx-8rx2"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91973"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-91983",
-    "slug": "cve-2026-91983",
-    "vendor": "Go",
-    "product": "code.vikunja.io/api",
-    "name": "Vikunja: API token scopes bypassed via task expand parameter (comments, reactions, time entry counts)",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 5.3,
     "severity": "Medium",
     "cwe": "CWE-863",
     "ransomware": false,
-    "description": "API token permission checks only match the HTTP method and route path. The expand query parameter on task read endpoints embeds data from other permission groups (task comments, reactions, time entry counts) without checking whether the token holds those scopes. A token scoped only to tasks read permissions can therefore read task comments and reactions it was explicitly not granted.",
-    "requiredAction": "Upgrade code.vikunja.io/api to version 2.6.0 or later.",
+    "description": "File pattern filters (deniedpatterns / allowedpatterns) were evaluated on the destination of a copy only. A user holding the copy permission could copy a file denied by the filters to a permitted name and then read it.",
+    "requiredAction": "Upgrade sftpgo (v2) · drakkan to version 2.7.6 or later.",
     "references": [
       {
         "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-9rg3-v78m-26q8"
+        "url": "https://github.com/advisories/GHSA-wwv9-g5x4-966q"
       },
       {
         "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91983"
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103028"
       }
     ]
   },
   {
-    "cve": "CVE-2026-91984",
-    "slug": "cve-2026-91984",
-    "vendor": "Go",
-    "product": "code.vikunja.io/api",
-    "name": "Vikunja: Cross-tenant task-position rows can be injected into arbitrary project views via the unvalidated project_view_id in the task position endpoint (v1 and v2)",
-    "dateAdded": "2026-10-09",
+    "cve": "CVE-2026-86063",
+    "slug": "cve-2026-86063",
+    "vendor": "npm",
+    "product": "@anthropic-ai/claude-code",
+    "name": "Claude Code: Plugin Hash Pin Bypass Allows Bypass of Hash Pinning",
+    "dateAdded": "2026-10-15",
     "dueDate": "Immediate",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-639",
-    "ransomware": false,
-    "description": "The task-position endpoint authorizes only the task side of the write: TaskPosition.CanUpdate delegates to Task.CanUpdate (write access to the task's own project) and the request body's projectviewid is never validated to belong to the task's project, nor is any access to that view required.",
-    "requiredAction": "Upgrade code.vikunja.io/api to version 2.6.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-w39f-h553-h2mx"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91984"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-91985",
-    "slug": "cve-2026-91985",
-    "vendor": "Go",
-    "product": "code.vikunja.io/api",
-    "name": "Vikunja: Read-only project members can obtain any link share's access hash via the single-share read endpoint (v1 and v2) and escalate to the share's permission level",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 0,
+    "cvss": 7.5,
     "severity": "High",
-    "cwe": "CWE-200",
+    "cwe": "CWE-494",
     "ransomware": false,
-    "description": "A user who has only read permission on a project can call the single link-share read endpoint and receive the share's hash field — the secret credential that the anonymous POST /shares/{share}/auth endpoint exchanges for a link-share JWT carrying the share's permission (read / read-write / admin).",
-    "requiredAction": "Upgrade code.vikunja.io/api to version 2.6.0 or later.",
+    "description": "The plugin install flow in Claude Code and Claude Desktop checked out a marketplace's pinned commit SHA using git checkout without verifying that the resulting HEAD matched the pinned SHA.",
+    "requiredAction": "Upgrade @anthropic-ai/claude-code to version 2.1.179 or later.",
     "references": [
       {
         "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-qfwc-vx6f-3g6g"
+        "url": "https://github.com/advisories/GHSA-pq7j-f95f-qfcv"
       },
       {
         "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91985"
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86063"
       }
     ]
   },
   {
-    "cve": "CVE-2026-91982",
-    "slug": "cve-2026-91982",
+    "cve": "CVE-2026-95838",
+    "slug": "cve-2026-95838",
     "vendor": "Go",
-    "product": "code.vikunja.io/api",
-    "name": "Vikunja: TOTP secret is readable after enrollment, no step-up auth",
-    "dateAdded": "2026-10-09",
+    "product": "containerd (v2) · containerd",
+    "name": "containerd: Unpack DoS via repeated opaque whiteouts",
+    "dateAdded": "2026-10-15",
     "dueDate": "Immediate",
-    "cvss": 5.3,
+    "cvss": 4.6,
     "severity": "Medium",
-    "cwe": "CWE-312",
+    "cwe": "CWE-400",
     "ransomware": false,
-    "description": "Once a user has TOTP enabled, the API still hands back the raw shared secret to anyone holding that account's access token. Reading it doesn't ask for the password, even though disabling TOTP does. So a stolen token, an XSS, or a browser left open is enough to copy the second factor into your own authenticator and keep generating valid codes indefinitely.",
-    "requiredAction": "Upgrade code.vikunja.io/api to version 2.6.0 or later.",
+    "description": "A vulnerability exists in containerd's layer unpack handler where the processing of certain image layers causes superlinear time complexity. During the unpack operation, specific file configurations within the layer can trigger repeated directory traversals. Consequently, pulling or importing a maliciously crafted image can result in increased unpack times and a moderate increase in CPU usage.",
+    "requiredAction": "Upgrade containerd (v2) · containerd to version 2.0.12 or later.",
     "references": [
       {
         "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-88f6-4rjv-x774"
+        "url": "https://github.com/advisories/GHSA-rp3h-jf77-q9p4"
       },
       {
         "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91982"
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95838"
       }
     ]
   },
   {
-    "cve": "CVE-2026-91972",
-    "slug": "cve-2026-91972",
+    "cve": "CVE-2026-85747",
+    "slug": "cve-2026-85747",
     "vendor": "Go",
-    "product": "code.vikunja.io/api",
-    "name": "Vikunja: Every /api/v2 pre-auth endpoint is unthrottled on a stock install while its /api/v1 twin is rate limited",
-    "dateAdded": "2026-10-09",
+    "product": "distribution · docker",
+    "name": "Distribution: Client `manifests.Get()` does not verify returned content against requested digest",
+    "dateAdded": "2026-10-15",
+    "dueDate": "Immediate",
+    "cvss": 6.8,
+    "severity": "Medium",
+    "cwe": "CWE-354",
+    "ransomware": false,
+    "description": "registry/client.(*manifests).Get(ctx, dgst, …) fetches a manifest by digest but never hashes the returned body and compares it against the requested digest. A malicious or compromised registry, or any MITM on the registry connection, can serve arbitrary manifest bytes in response to a digest-pinned request and the client returns the substituted content transparently to the caller.",
+    "requiredAction": "Review repository advisory and update affected dependencies.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-685w-q87j-wqw3"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85747"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-84994",
+    "slug": "cve-2026-84994",
+    "vendor": "npm",
+    "product": "@builder.io/qwik",
+    "name": "Qwik: Crashing any Qwik Server via Resource thenable",
+    "dateAdded": "2026-10-15",
     "dueDate": "Immediate",
     "cvss": 8.7,
     "severity": "High",
-    "cwe": "CWE-307",
+    "cwe": "CWE-248",
     "ransomware": false,
-    "description": "registerAPIRoutesV2 never applies the unconditional pre-auth rate-limit floor (unauthRateLimit()) to the v2 public routes — it passes that limiter only to /api/v2/ws — and otherwise relies on setupRateLimit, which registers nothing when ratelimit.enabled is false (the default).",
-    "requiredAction": "Upgrade code.vikunja.io/api to version 2.6.0 or later.",
+    "description": "A Qwik server in the default configuration can be crashed with one unauthenticated HTTP request. During qwik-json body parsing, ResourceSerializer.$fill$ does Promise.resolve(resource.resolved). If resolved is a plain object whose .then is a QRL for an unregistered symbol, the async QRL rejects, the rejection is orphaned, and Node terminates the process via its default unhandled-rejection policy.",
+    "requiredAction": "Upgrade @builder.io/qwik to version 1.20.0 or later.",
     "references": [
       {
         "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-6rvj-qwjf-3m4q"
+        "url": "https://github.com/advisories/GHSA-x586-xvc8-g7q6"
       },
       {
         "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91972"
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84994"
       }
     ]
   },
   {
-    "cve": "CVE-2026-62376",
-    "slug": "cve-2026-62376",
+    "cve": "CVE-2026-95837",
+    "slug": "cve-2026-95837",
     "vendor": "Go",
-    "product": "code.vikunja.io/api",
-    "name": "Vikunja: Plaintext storage of password-reset/email-confirm tokens in database enables account takeover on DB read access",
-    "dateAdded": "2026-10-09",
+    "product": "containerd (v2) · containerd",
+    "name": "containerd CRI plugin: Checkpoint restore bypasses destination security context",
+    "dateAdded": "2026-10-15",
     "dueDate": "Immediate",
-    "cvss": 8.1,
-    "severity": "High",
-    "cwe": "CWE-312",
-    "ransomware": false,
-    "description": "Vikunja stores password-reset, email-confirmation, and account-deletion tokens in the user_tokens table in plaintext. If an attacker gains read access to the database through a backup leak, misconfigured storage, or SQL-level exposure, they can immediately use pending tokens to take over user accounts without knowing passwords.",
-    "requiredAction": "Upgrade code.vikunja.io/api to version 2.4.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-r6w9-259g-gwrv"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62376"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-62367",
-    "slug": "cve-2026-62367",
-    "vendor": "Go",
-    "product": "code.vikunja.io/api",
-    "name": "Vikunja: OIDC email-fallback account linking ignores email_verified, enabling local-account takeover",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-287",
-    "ransomware": false,
-    "description": "With the per-provider OIDC emailfallback option enabled, Vikunja links an SSO login to a pre-existing local (username+password) account using only the email claim — no emailverified (or Microsoft xmsedov) check and no password check, on the unauthenticated callback.",
-    "requiredAction": "Upgrade code.vikunja.io/api to version 2.4.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-xv7q-fvmc-jx96"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62367"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-107806",
-    "slug": "cve-2026-107806",
-    "vendor": "Go",
-    "product": "Nginx-UI · 0xJacky",
-    "name": "Nginx UI: Authenticated Remote Code Execution via Backup Restore App Config Overwrite",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 9,
-    "severity": "Critical",
-    "cwe": "CWE-94",
-    "ransomware": false,
-    "description": "An authenticated nginx-ui user can call POST /api/restore, upload a forged encrypted backup, restore app.ini, set nginx command settings such as TestConfigCmd, and then trigger command execution with POST /api/nginx/test. This was validated on nginx-ui 2.3.11 2(523) 6c86e5a5 in the local Docker container uozi/nginx-ui:latest.",
-    "requiredAction": "Upgrade Nginx-UI · 0xJacky to version 1.9.10-0.20260728074146-a467ed652591 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-p393-cf76-4jmr"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107806"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-107839",
-    "slug": "cve-2026-107839",
-    "vendor": "Go",
-    "product": "ageLANServer (server) · luskaner",
-    "name": "ageLANServer: Unbounded JSON Array Allocation in AoE3 Cloud `getFileURL` Endpoint Leads to Remote Denial of Service",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "The AoE3 POST /game/cloud/getFileURL handler in luskaner/ageLANServer's bundled game server decodes an attacker-controlled names JSON array and immediately allocates response storage sized directly from the array's length (make(i.A, len(req.Names.Data))), with no request body size limit and no cap on the number of array elements anywhere in the request path.",
-    "requiredAction": "Upgrade ageLANServer (server) · luskaner to version 1.8.2-0.20260809203301-1dd40166a593 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-4jfq-pmq9-257h"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107839"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-76216",
-    "slug": "cve-2026-76216",
-    "vendor": "Go",
-    "product": "code.vikunja.io/api",
-    "name": "Vikunja: Link-share principal-type confusion enables cross-account team removal, bot takeover, and roster disclosure",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-639",
-    "ransomware": false,
-    "description": "Vikunja's web.Auth interface (pkg/web/web.go, single method GetID() int64) is satisfied by BOTH user.User and models.LinkSharing. A link-share's GetID() returns the raw positive share.ID (pkg/models/linksharing.go:83-85), which lives in the same positive autoincrement ID space as users.id.",
-    "requiredAction": "Review repository advisory and update affected dependencies.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-32r8-5843-4qw2"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76216"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-107840",
-    "slug": "cve-2026-107840",
-    "vendor": "Go",
-    "product": "yopass · jhaals",
-    "name": "yopass Prometheus metrics middleware allows remote memory exhaustion through unbounded method labels",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "The Prometheus metrics middleware in pkg/server/server.go used r.Method directly as a label value on request counter and duration histogram metrics. Since the mux catch-all route matches any HTTP method, an unauthenticated attacker can send requests with arbitrary method strings (e.g. curl -X \"M1\" each creating new counter and histogram time series in the Prometheus registry.",
-    "requiredAction": "Upgrade yopass · jhaals to version 0.0.0-20260727191436-61e31ead04a4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-6r69-c6wg-7g8m"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107840"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-107841",
-    "slug": "cve-2026-107841",
-    "vendor": "Pip",
-    "product": "pacioli-guard",
-    "name": "pacioli: A submit consent marker licensed cancellation of caller-named pre-existing documents",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 5.7,
-    "severity": "Medium",
-    "cwe": "CWE-863",
-    "ransomware": false,
-    "description": "pacioli-guard's document-layer consent gate requires a human-minted, single-use, document-bound and act-bound marker before a credential carrying API Key Scope.requireconsent may submit or cancel a document.",
-    "requiredAction": "Upgrade pacioli-guard to version 0.10.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-3hj7-6vmj-h8v4"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107841"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-68582",
-    "slug": "cve-2026-68582",
-    "vendor": "Go",
-    "product": "code.vikunja.io/api",
-    "name": "Vikunja: Link-share token reads any tenant's kanban buckets and enumerates usernames/IDs instance-wide (BOLA)",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 9.3,
-    "severity": "Critical",
-    "cwe": "CWE-639",
-    "ransomware": false,
-    "description": "The task-collection endpoint GET /api/v1/projects/{project}/views/{view}/tasks loads the requested project view straight from the URL path without verifying the caller is authorized for it. For a link-share token, the task query is correctly pinned to the share's own project, but the view is taken from the attacker-controlled path and never re-validated against the share.",
-    "requiredAction": "Upgrade code.vikunja.io/api to version 2.4.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-rj9j-8772-4h6c"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68582"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-68581",
-    "slug": "cve-2026-68581",
-    "vendor": "Go",
-    "product": "code.vikunja.io/api",
-    "name": "Vikunja: Link-share principal ID collision allows cross-account API token issuance and management",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 8.1,
-    "severity": "High",
-    "cwe": "CWE-863",
-    "ransomware": false,
-    "description": "Vikunja routes API-token management through a generic authenticated principal and derives user-owned token authorization from web.Auth.GetID(). A link-share principal returns its independent share-row ID through that same interface. When the numeric values collide, the application mistakes a link share for an unrelated user at the API-token owner boundary.",
-    "requiredAction": "Upgrade code.vikunja.io/api to version 2.4.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-vvcv-vpph-h844"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68581"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-57458",
-    "slug": "cve-2026-57458",
-    "vendor": "Go",
-    "product": "code.vikunja.io/api",
-    "name": "Vikunja: Scoped API token can mint unrestricted OAuth session credentials",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 8.1,
+    "cvss": 7.8,
     "severity": "High",
     "cwe": "CWE-269",
     "ransomware": false,
-    "description": "A scoped API token can bypass its declared permissions by using the OAuth authorization flow to mint normal session credentials. A token limited to: can call /api/v1/oauth/authorize, receive an OAuth authorization code, exchange it at /api/v1/oauth/token, and obtain a normal bearer JWT plus refresh token. The resulting credentials are not restricted by the original API-token permissions.",
-    "requiredAction": "Upgrade code.vikunja.io/api to version 2.4.0 or later.",
+    "description": "A vulnerability in containerd's CRI implementation allows a container restored from an untrusted checkpoint via the CreateContainer API to bypass the destination security context and execute with elevated privileges.",
+    "requiredAction": "Upgrade containerd (v2) · containerd to version 2.2.7 or later.",
     "references": [
       {
         "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-v3p6-34mc-hj7v"
+        "url": "https://github.com/advisories/GHSA-p7v4-vr35-mj6f"
       },
       {
         "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57458"
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95837"
       }
     ]
   },
   {
-    "cve": "GHSA-68w4-83fh-f2w8",
-    "slug": "ghsa-68w4-83fh-f2w8",
-    "vendor": "Pip",
-    "product": "pyload-ng",
-    "name": "pyload-ng: getUserData/get_userdata exposed at Perms.ANY allow any authenticated account to brute-force the administrator password",
-    "dateAdded": "2026-10-09",
+    "cve": "CVE-2026-106495",
+    "slug": "cve-2026-106495",
+    "vendor": "npm",
+    "product": "@backstage/backend-defaults",
+    "name": "Backstage: Improper access control in backend action invocation",
+    "dateAdded": "2026-10-15",
     "dueDate": "Immediate",
-    "cvss": 8.1,
-    "severity": "High",
-    "cwe": "CWE-287",
+    "cvss": 4.3,
+    "severity": "Medium",
+    "cwe": "CWE-284",
     "ransomware": false,
-    "description": "Api.getUserData (legacy) and Api.getuserdata are declared with @permission(Perms.ANY) and are reachable at /api/getUserData and /api/getuserdata. Because Perms.ANY == 0 and pyLoad's permission check is a bitmask AND, that gate is a no-op: every authenticated account passes, including one holding zero permission bits.",
+    "description": "An authenticated user could invoke actions that an operator had excluded through action configuration. Existing action permissions and downstream authorization remain enforced. Patched in @backstage/backend-defaults version 0.17.8 Limit access to action invocation endpoints to trusted service callers until upgrading.",
+    "requiredAction": "Upgrade @backstage/backend-defaults to version 0.17.8 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-3xr5-8w6c-p5gw"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106495"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-100353",
+    "slug": "cve-2026-100353",
+    "vendor": "Go",
+    "product": "kin-openapi · getkin",
+    "name": "kin-openapi: Incomplete Fix for GHSA-p6wj-qrr4-pgh5: Three Unpatched nil-Items Panic Paths in openapi3filter",
+    "dateAdded": "2026-10-15",
+    "dueDate": "Immediate",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-476",
+    "ransomware": false,
+    "description": "The fix for GHSA-p6wj-qrr4-pgh5 addressed a nil-pointer dereference that occurs when an OpenAPI 3.1 array schema omits the items keyword (which is legal under JSON Schema 2020-12). That fix patched three decoder paths: the standalone parseArray function, the top-level array check in UrlencodedBodyDecoder, and MultipartBodyDecoder. Three additional crash paths were missed.",
+    "requiredAction": "Upgrade kin-openapi · getkin to version 0.149.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-vrcc-3ch7-hppw"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100353"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-100354",
+    "slug": "cve-2026-100354",
+    "vendor": "Go",
+    "product": "kin-openapi · getkin",
+    "name": "kin-openapi: Uncontrolled Recursion on Circular allOf/anyOf/oneOf Schemas Causes Fatal Process Crash",
+    "dateAdded": "2026-10-15",
+    "dueDate": "Immediate",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-674",
+    "ransomware": false,
+    "description": "kin-openapi's spec loader and spec-time validator both handle circular schema references safely: the loader resolves circular $refs on purpose (to support recursive data structures), and Schema.validate() uses stack-based cycle detection. Validate() therefore accepts a schema whose allOf / anyOf / oneOf chain refers back to itself, returning no error.",
+    "requiredAction": "Upgrade kin-openapi · getkin to version 0.149.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-g8cf-rcjf-c8cf"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100354"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-100352",
+    "slug": "cve-2026-100352",
+    "vendor": "Go",
+    "product": "kin-openapi · getkin",
+    "name": "kin-openapi: YAML NaN/Inf Values Bypass Built-in Guards and Panic via OAS 3.1 Validation Path",
+    "dateAdded": "2026-10-15",
+    "dueDate": "Immediate",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-754",
+    "ransomware": false,
+    "description": "kin-openapi guards against NaN and Inf values in its built-in schema visitor (visitJSON) by returning ErrSchemaInputNaN / ErrSchemaInputInf when a float64 input violates those constraints. For OAS 3.1 specs, however, Schema.VisitJSON routes through useJSONSchema2020, which hands the value directly to santhosh-tekuri/jsonschema/v6 v6.0.2 without applying the same guard.",
+    "requiredAction": "Upgrade kin-openapi · getkin to version 0.148.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-rj39-cv6w-8wv7"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100352"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-77564",
+    "slug": "cve-2026-77564",
+    "vendor": "Go",
+    "product": "talos · talos-systems",
+    "name": "Talos Linux: Support bundle does not redact registry credentials",
+    "dateAdded": "2026-10-15",
+    "dueDate": "Immediate",
+    "cvss": 3.3,
+    "severity": "Low",
+    "cwe": "CWE-312",
+    "ransomware": false,
+    "description": "When generating a support bundle with talosctl support the credentials entered for private registries are included in the bundle.",
+    "requiredAction": "Upgrade talos · talos-systems to version 1.14.0-alpha.0.0.20260513110206-76080416beee or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-7cxh-94cf-mfp6"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77564"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-77524",
+    "slug": "cve-2026-77524",
+    "vendor": "Go",
+    "product": "keda · kedacore",
+    "name": "KEDA: Privilege escalation from namespace admin to cluster admin via KEDA TriggerAuthentication",
+    "dateAdded": "2026-10-15",
+    "dueDate": "Immediate",
+    "cvss": 9.9,
+    "severity": "Critical",
+    "cwe": "CWE-269",
+    "ransomware": false,
+    "description": "A namespace admin who creates a TriggerAuthentication and a ScaledObject in their own namespace can make the KEDA operator send its own ServiceAccount token to a tenant-controlled URL.",
     "requiredAction": "Review repository advisory and update affected dependencies.",
     "references": [
       {
         "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-68w4-83fh-f2w8"
+        "url": "https://github.com/advisories/GHSA-637c-6jxx-4rwm"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77524"
       }
     ]
   },
   {
-    "cve": "GHSA-9q47-3cm2-2rp8",
-    "slug": "ghsa-9q47-3cm2-2rp8",
+    "cve": "CVE-2026-77459",
+    "slug": "cve-2026-77459",
+    "vendor": "Go",
+    "product": "argo-cd (v2) · argoproj",
+    "name": "Argo CD: AppProject destination-namespace and resource restrictions bypassed by PreDelete/PostDelete resource hooks",
+    "dateAdded": "2026-10-15",
+    "dueDate": "Immediate",
+    "cvss": 9.9,
+    "severity": "Critical",
+    "cwe": "CWE-863",
+    "ransomware": false,
+    "description": "Argo CD checks an Application's AppProject before it creates resources during a sync. That check covers destination namespaces and servers, cluster-scoped resource allow and deny lists, and namespaced resource allow and deny lists, including resource names. PreDelete and PostDelete hooks skip it.",
+    "requiredAction": "Review repository advisory and update affected dependencies.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-fmxq-cgp8-87wp"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77459"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-100351",
+    "slug": "cve-2026-100351",
+    "vendor": "Go",
+    "product": "kin-openapi · getkin",
+    "name": "kin-openapi: ValidationHandler security-requirement bypass via encoded-path operation confusion",
+    "dateAdded": "2026-10-15",
+    "dueDate": "Immediate",
+    "cvss": 7.4,
+    "severity": "High",
+    "cwe": "CWE-289",
+    "ransomware": false,
+    "description": "openapi3filter.ValidationHandler.Middleware validates requests with kin-openapi's legacy router, which selects an OpenAPI operation from the decoded URL.Path. The method is documented as implementing gorilla/mux.MiddlewareFunc, but a downstream gorilla/mux router configured with UseEncodedPath() selects its handler from the encoded representation (URL.RawPath).",
+    "requiredAction": "Upgrade kin-openapi · getkin to version 0.147.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-23vg-4cjm-66q5"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100351"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-103975",
+    "slug": "cve-2026-103975",
+    "vendor": "npm",
+    "product": "@appium/support",
+    "name": "Appium: Symlink based Zip Slip in @appium/support ZIP extraction",
+    "dateAdded": "2026-10-15",
+    "dueDate": "Immediate",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-59",
+    "ransomware": false,
+    "description": "CVE-2026-30973 (GHSA-rfx7-4xw3-gh4m) was a plain path traversal in the entry name. The containment check built an Error object without throwing it, so an entry literally named something like ../evil.txt was written outside the destination. That issue was fixed in @appium/support 7.0.6 by actually rejecting out of bound entry names.",
+    "requiredAction": "Upgrade @appium/support to version 7.2.6 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-qfxx-c367-67f8"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103975"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-103030",
+    "slug": "cve-2026-103030",
+    "vendor": "Pub",
+    "product": "dio_http2_adapter",
+    "name": "Dio: Cross-origin redirect leaks sensitive request headers in `dio_http2_adapter`",
+    "dateAdded": "2026-10-15",
+    "dueDate": "Immediate",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-200",
+    "ransomware": false,
+    "description": "diohttp2adapter follows HTTP Location redirects without stripping sensitive request headers when the redirect target is a different origin. An attacker who can cause any origin server to return a cross-origin 302 redirect receives the victim's Authorization, Cookie, and Proxy-Authorization headers verbatim.",
+    "requiredAction": "Upgrade dio_http2_adapter to version 2.8.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-cr65-55v9-xhvv"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103030"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-100350",
+    "slug": "cve-2026-100350",
+    "vendor": "Go",
+    "product": "kin-openapi · getkin",
+    "name": "kin-openapi deepObject query decoding repeatedly compiles an invariant regular expression",
+    "dateAdded": "2026-10-15",
+    "dueDate": "Immediate",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "openapi3filter decodes deepObject-style query parameters by looping over every key in the request's query string. Inside that loop it recompiles a loop-invariant regular expression on every iteration. The pattern depends only on the spec-defined parameter name, not on the loop variable, so it is compiled N times for N query keys instead of once.",
+    "requiredAction": "Upgrade kin-openapi · getkin to version 0.146.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-h4r5-mxv5-8mjc"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100350"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-102748",
+    "slug": "cve-2026-102748",
+    "vendor": "Go",
+    "product": "dgraph (v25) · dgraph-io",
+    "name": "Dgraph: Zero Unauthenticated HTTP Admin removeNode Denial of Service",
+    "dateAdded": "2026-10-15",
+    "dueDate": "Immediate",
+    "cvss": 9.2,
+    "severity": "Critical",
+    "cwe": "CWE-306",
+    "ransomware": false,
+    "description": "Dgraph v25.3.8 exposes a Zero HTTP administrative surface that is unauthenticated when port 6080 is reachable. The exposed routes include: - /state - /assign - /removeNode - /moveTablet An unauthenticated request to /removeNode?id=1&group=0 on a single-node standalone deployment breaks the Zero control plane and leaves Alpha repeatedly failing to reconnect to localhost:5080.",
+    "requiredAction": "Upgrade dgraph (v25) · dgraph-io to version 25.4.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-qj98-gp63-54xj"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102748"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-104266",
+    "slug": "cve-2026-104266",
     "vendor": "Pip",
-    "product": "pyload-ng",
-    "name": "pyLoad: Rate-Limit Bypass and Audit-Log Spoofing via Trusted Client-Controlled `X-Forwarded-For` Header",
-    "dateAdded": "2026-10-09",
+    "product": "tinytag",
+    "name": "tinytag: Infinite loop when parsing certain M4A files containing invalid atoms",
+    "dateAdded": "2026-10-15",
+    "dueDate": "Immediate",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-835",
+    "ransomware": false,
+    "description": "An M4A file containing a sub-atom with a size of zero in the ---- atom makes the parser enter an infinite loop, resulting in a denial-of-service for programs reading such files with tinytag. The issue has been fixed in tinytag 2.3.0, by reusing the primary atom parsing code path that contains appropriate size checks. No workarounds exist. Users must upgrade to tinytag 2.3.0.",
+    "requiredAction": "Upgrade tinytag to version 2.3.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-24cc-9352-h2pg"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104266"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-104102",
+    "slug": "cve-2026-104102",
+    "vendor": "Pip",
+    "product": "copyparty",
+    "name": "copyparty FTP: upload outside defined volumes (limited path traversal)",
+    "dateAdded": "2026-10-15",
+    "dueDate": "Immediate",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "The FTP and FTPS server -- if enabled -- would allow uploading to any folder that the copyparty process had permission to write to. The FTP-server is default-disabled, and must be explicitly enabled in the config with global-option ftp or ftps to be affected. Additionally, SFTP was not affected at all; only FTP and FTPS.",
+    "requiredAction": "Upgrade copyparty to version 1.20.19 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-phv8-wgjp-g4p9"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104102"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-104252",
+    "slug": "cve-2026-104252",
+    "vendor": "Go",
+    "product": "vitess.io/vitess",
+    "name": "Vitess vttablet /twopcz reflected XSS",
+    "dateAdded": "2026-10-15",
+    "dueDate": "Immediate",
+    "cvss": 9.8,
+    "severity": "Critical",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "The twopczHandler in go/vt/vttablet/tabletserver/twopcz.go (line 185) reflects the Action and dtid form values directly into the HTML response body via fmt.Fprintln(w, msg) — without HTML escaping.",
+    "requiredAction": "Upgrade vitess.io/vitess to version 0.23.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-v75v-6fpf-gvw8"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104252"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-104250",
+    "slug": "cve-2026-104250",
+    "vendor": "Pip",
+    "product": "unstructured",
+    "name": "unstructured: Stored XSS via unescaped HTML generation",
+    "dateAdded": "2026-10-15",
+    "dueDate": "Immediate",
+    "cvss": 6.1,
+    "severity": "Medium",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "When unstructured parses an untrusted document and outputs the result as HTML, malicious markup contained in the document (e.g. ) is left in the output HTML without escaping. When that output is displayed in a browser, the script embedded in the document executes in the viewer's browser.",
+    "requiredAction": "Upgrade unstructured to version 0.24.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-v5mq-3xhg-98m9"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104250"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-103929",
+    "slug": "cve-2026-103929",
+    "vendor": "Rust (Cargo)",
+    "product": "mise",
+    "name": "mise permits untrusted local configuration to override default shell arguments",
+    "dateAdded": "2026-10-15",
+    "dueDate": "Immediate",
+    "cvss": 7.8,
+    "severity": "High",
+    "cwe": "CWE-78",
+    "ransomware": false,
+    "description": "Untrusted local .mise.toml [settings] can set the shell interpreter args (unix/windows defaultinline / defaultfile shellargs), yielding arbitrary command execution, because those command-interpreter settings were not added to the globalonly denylist the CVE-2026-55448 fix relies on.",
+    "requiredAction": "Upgrade mise to version 2026.7.14 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-g74g-rg72-j2p3"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103929"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-100348",
+    "slug": "cve-2026-100348",
+    "vendor": "Go",
+    "product": "kin-openapi · getkin",
+    "name": "kin-openapi spec loader panics on a self-referential additionalProperties $ref (nil-pointer DoS)",
+    "dateAdded": "2026-10-15",
+    "dueDate": "Immediate",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-476",
+    "ransomware": false,
+    "description": "The defect ---------- Confirmed at HEAD (f0407d5, v0.144.0). openapi3/loader.go, inside resolveComponent's drill closure (around line 455), the case SchemaRef branch for pathPart == \"additionalProperties\" dereferences c.Value.AdditionalProperties with no nil-check on c.Value: case SchemaRef: if pathPart == \"additionalProperties\" { if ap := c.Value.AdditionalProperties.Has; ap != nil { // c.Value...",
+    "requiredAction": "Upgrade kin-openapi · getkin to version 0.145.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-mh7x-f8wq-4jhx"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100348"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-100347",
+    "slug": "cve-2026-100347",
+    "vendor": "Go",
+    "product": "kin-openapi · getkin",
+    "name": "kin-openapi: Unauthenticated panic (DoS) in openapi3filter legacy router via non-canonical/unsupported HTTP method on a static path",
+    "dateAdded": "2026-10-15",
+    "dueDate": "Immediate",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-20",
+    "ransomware": false,
+    "description": "The openapi3filter.ValidationHandler (the exported, documented request-validation middleware) hard-wires the legacy router (routers/legacy). That router matches the incoming request method verbatim against a trie built exclusively from upper-cased canonical HTTP methods.",
+    "requiredAction": "Upgrade kin-openapi · getkin to version 0.145.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-fh4f-47mf-f2gj"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100347"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-102603",
+    "slug": "cve-2026-102603",
+    "vendor": "Go",
+    "product": "server (v2) · gotify",
+    "name": "Gotify: Insufficiently Protected Password Change endpoint",
+    "dateAdded": "2026-10-15",
+    "dueDate": "Immediate",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-620",
+    "ransomware": false,
+    "description": "The password change endpoint (POST /current/user/password) in Gotify versions <= 2.9.1 does not require knowledge of the current password. An attacker in possession of a valid client token can set a new password for the affected user. Recovering the account requires administrator intervention or direct database access.",
+    "requiredAction": "Review repository advisory and update affected dependencies.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-3hcj-9m7p-wwm9"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102603"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-102527",
+    "slug": "cve-2026-102527",
+    "vendor": "npm",
+    "product": "nuxt-og-image",
+    "name": "Nuxt OG Image cache poisoning through derivable cache keys on unsigned dynamic image routes",
+    "dateAdded": "2026-10-15",
     "dueDate": "Immediate",
     "cvss": 6.9,
     "severity": "Medium",
+    "cwe": "CWE-349",
+    "ransomware": false,
+    "description": "Vendor: Nuxt Product: Nuxt OG Image Version: 6.2.5 Description: Due to the specifics of caching and key generation in the Open Graph image cache created by the module, an unauthenticated attacker can modify the content of the image (for example, the title parameter) that is delivered to the user.",
+    "requiredAction": "Upgrade nuxt-og-image to version 6.7.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-2x6f-rp82-ppmj"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102527"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-100409",
+    "slug": "cve-2026-100409",
+    "vendor": "npm",
+    "product": "@opennextjs/cloudflare",
+    "name": "OpenNext Cloudflare: Cache interception can bypass middleware protection for encoded paths",
+    "dateAdded": "2026-10-15",
+    "dueDate": "Immediate",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-177",
+    "ransomware": false,
+    "description": "When cache interception is enabled, @opennextjs/cloudflare can interpret percent-encoded paths differently during middleware matching and cache lookup. An encoded request may fail to match authorization middleware, then be decoded into the cache key of a protected route. The cached response may consequently be returned without invoking the middleware.",
+    "requiredAction": "Upgrade @opennextjs/cloudflare to version 1.20.2 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-2vc4-c4r6-p6v6"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100409"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-100394",
+    "slug": "cve-2026-100394",
+    "vendor": "Go",
+    "product": "nezha · nezhahq",
+    "name": "Nezha Monitoring: Whole-instance DoS in Nezha dashboard: a member can crash the process for every tenant",
+    "dateAdded": "2026-10-15",
+    "dueDate": "Immediate",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-362",
+    "ransomware": false,
+    "description": "A single low-privilege RoleMember can take the entire Nezha dashboard offline, and with it every tenant's web UI, REST API, and agent connections, by racing two ordinary operations on their own service. The crash is a nil pointer dereference in the service-monitor worker at service/singleton/servicesentinel.go:601.",
+    "requiredAction": "Upgrade nezha · nezhahq to version 0.0.0-20260721131105-c893aa57867d or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-qjpp-gffx-2wm9"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100394"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-97394",
+    "slug": "cve-2026-97394",
+    "vendor": "Go",
+    "product": "kin-openapi · getkin",
+    "name": "kin-openapi: Nil-pointer dereference panic in openapi3filter for OpenAPI 3.1 array schemas missing items",
+    "dateAdded": "2026-10-15",
+    "dueDate": "Immediate",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-248",
+    "ransomware": false,
+    "description": "A nil-pointer dereference in openapi3filter lets any unauthenticated client crash a request handler with a single HTTP request against an OpenAPI 3.1 operation that declares type: array without items. OpenAPI 3.1 (JSON Schema 2020-12) permits omitting items, and doc.Validate() accepts such schemas with Schema.Items == nil. Request/response decoders then dereference Items with no nil check.",
+    "requiredAction": "Upgrade kin-openapi · getkin to version 0.143.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-p6wj-qrr4-pgh5"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97394"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-85990",
+    "slug": "cve-2026-85990",
+    "vendor": "Composer",
+    "product": "leantime/leantime",
+    "name": "Leantime: Any Authenticated User Can Self-Escalate to Admin via Unauthorized JSON-RPC Methods",
+    "dateAdded": "2026-10-15",
+    "dueDate": "Immediate",
+    "cvss": 8.8,
+    "severity": "High",
+    "cwe": "CWE-269",
+    "ransomware": false,
+    "description": "Any authenticated Leantime user - including the lowest-privilege readonly role - can escalate to full administrative access by calling the JSON-RPC method leantime.rpc.api.api.createApiKeyWithProjects with an attacker-chosen role value.",
+    "requiredAction": "Upgrade leantime/leantime to version 3.10.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-54mm-6729-r5wp"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85990"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-82416",
+    "slug": "cve-2026-82416",
+    "vendor": "Go",
+    "product": "frankenphp · dunglas",
+    "name": "FrankenPHP: Cross-request PHP session ID leak in worker mode when the session extension is a shared module",
+    "dateAdded": "2026-10-15",
+    "dueDate": "Immediate",
+    "cvss": 7.7,
+    "severity": "High",
+    "cwe": "CWE-362",
+    "ransomware": false,
+    "description": "In worker mode under concurrency, FrankenPHP can hand a PHP session id from one request to another when PHP's session extension is loaded as a shared module instead of being statically linked into the FrankenPHP binary.",
+    "requiredAction": "Upgrade frankenphp · dunglas to version 1.12.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-v3ph-cgqh-r8p5"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82416"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-77375",
+    "slug": "cve-2026-77375",
+    "vendor": "Go",
+    "product": "sftpgo (v2) · drakkan",
+    "name": "SFTPGo: Denial of service via malformed SSH channel request",
+    "dateAdded": "2026-10-15",
+    "dueDate": "Immediate",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-129",
+    "ransomware": false,
+    "description": "A flaw in the SSH service allows an authenticated client to crash the server by sending a malformed protocol message while opening a channel.",
+    "requiredAction": "Upgrade sftpgo (v2) · drakkan to version 2.7.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-q7pc-356p-hggc"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77375"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-105134",
+    "slug": "cve-2026-105134",
+    "vendor": "Ahsay",
+    "product": "AhsayCBS",
+    "name": "Ahsay AhsayCBS Command Injection Vulnerability",
+    "dateAdded": "2026-10-14",
+    "dueDate": "2026-10-17",
+    "severity": "High",
+    "cwe": "CWE-77, CWE-78",
+    "ransomware": false,
+    "description": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component’s /rps/api/json/UpdateReceivers.do endpoint. This vulnerability can be chained with CVE-2026-105133.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105134"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-76519",
+    "slug": "cve-2026-76519",
+    "vendor": "Cisco",
+    "product": "Secure Email Gateway",
+    "name": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
+    "dateAdded": "2026-10-14",
+    "dueDate": "2026-10-17",
+    "severity": "High",
+    "cwe": "CWE-23",
+    "ransomware": false,
+    "description": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76519"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-105133",
+    "slug": "cve-2026-105133",
+    "vendor": "Ahsay",
+    "product": "AhsayCBS",
+    "name": "Ahsay AhsayCBS Improper Authentication Vulnerability",
+    "dateAdded": "2026-10-14",
+    "dueDate": "2026-10-17",
+    "severity": "High",
+    "cwe": "CWE-287",
+    "ransomware": false,
+    "description": "Ahsay AhsayCBS contains an improper authentication vulnerability that could allow a remote attacker to bypass authentication via manipulation of the random parameter in the API component’s checkSysPwd function. This vulnerability can be chained with CVE-2026-105134.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105133"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-0322",
+    "slug": "cve-2026-0322",
+    "vendor": "Palo Alto Networks",
+    "product": "PAN-OS",
+    "name": "Palo Alto Networks PAN-OS Code Injection Vulnerability",
+    "dateAdded": "2026-10-14",
+    "dueDate": "2026-10-17",
+    "severity": "High",
+    "cwe": "CWE-94",
+    "ransomware": false,
+    "description": "Palo Alto Networks PAN-OS contains a code injection vulnerability that could allow an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0322"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-104935",
+    "slug": "cve-2026-104935",
+    "vendor": "Ivanti",
+    "product": "Connect Secure",
+    "name": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
+    "dateAdded": "2026-10-13",
+    "dueDate": "2026-10-16",
+    "severity": "High",
     "cwe": "CWE-290",
     "ransomware": false,
-    "description": "pyLoad determines the \"client IP\" used for its rate-limiting decorator and for its security/audit logging by reading the client-supplied X-Forwarded-For (XFF) HTTP header and taking the leftmost value. No trusted-proxy configuration exists (the Cheroot WSGI server faces clients directly, and there is no ProxyFix middleware).",
-    "requiredAction": "Review repository advisory and update affected dependencies.",
+    "description": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
     "references": [
       {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-9q47-3cm2-2rp8"
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104935"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
       }
     ]
   },
   {
-    "cve": "GHSA-jq7h-wrvp-3rgx",
-    "slug": "ghsa-jq7h-wrvp-3rgx",
-    "vendor": "Pip",
-    "product": "pyload-ng",
-    "name": "pyLoad: Privilege revocation and password change through the REST API do not invalidate the user's session",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 7.5,
+    "cve": "CVE-2026-96951",
+    "slug": "cve-2026-96951",
+    "vendor": "Microsoft",
+    "product": "Windows",
+    "name": "Microsoft Windows Command Injection Vulnerability",
+    "dateAdded": "2026-10-13",
+    "dueDate": "2026-10-16",
     "severity": "High",
-    "cwe": "CWE-613",
+    "cwe": "CWE-77",
     "ransomware": false,
-    "description": "An admin who revokes a user's privileges through the REST API does not actually revoke them, because the session carrying those privileges is never invalidated. pyLoad authorizes each request from values copied into the Flask session at login.",
-    "requiredAction": "Review repository advisory and update affected dependencies.",
+    "description": "Microsoft Windows Shell contains a command injection vulnerability that allows an unauthorized attacker to bypass a security feature over a network.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
     "references": [
       {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-jq7h-wrvp-3rgx"
-      }
-    ]
-  },
-  {
-    "cve": "GHSA-889w-m37p-88m5",
-    "slug": "ghsa-889w-m37p-88m5",
-    "vendor": "Pip",
-    "product": "pyload-ng",
-    "name": "pyLoad: Api.set_user_permission never invalidates the target's session",
-    "dateAdded": "2026-10-09",
-    "dueDate": "Immediate",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-613",
-    "ransomware": false,
-    "description": "An admin who revokes or downgrades a non-admin user's permissions through pyLoad's own documented /api/ RPC surface — e.g. POST /api/setuserpermission (or its legacy alias /api/setUserPermission) — updates the target's database row but never invalidates that user's existing Flask cookie session.",
-    "requiredAction": "Review repository advisory and update affected dependencies.",
-    "references": [
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96951"
+      },
       {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-889w-m37p-88m5"
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
       }
     ]
   },

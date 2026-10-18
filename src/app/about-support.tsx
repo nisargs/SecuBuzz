@@ -1,6 +1,7 @@
 import { Ionicons } from '@expo/vector-icons';
 import * as Linking from 'expo-linking';
 import { router } from 'expo-router';
+import Constants from 'expo-constants';
 import { useState } from 'react';
 import {
   Pressable,
@@ -167,7 +168,7 @@ export default function AboutSupportScreen() {
           <SubItemRow
             icon="information-circle-outline"
             title="About SecuBuzz"
-            subtitle="Version 1.0.2, data pipeline & mission"
+            subtitle={`Version ${Constants.expoConfig?.version ?? '1.0.3'}, data pipeline & mission`}
             onPress={() => router.push('/about')}
             accentColor={accentColor}
             colors={colors}

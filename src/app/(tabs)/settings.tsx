@@ -2,6 +2,7 @@ import { Ionicons } from '@expo/vector-icons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { router } from 'expo-router';
 import * as Linking from 'expo-linking';
+import Constants from 'expo-constants';
 import { WALKTHROUGH_STORAGE_KEY } from '../../components/OnboardingModal';
 import { useCallback, useEffect, useState } from 'react';
 import {
@@ -208,6 +209,8 @@ export default function SettingsScreen() {
   const themeDisplay =
     themeMode === 'system'
       ? `System (${isDark ? 'Dark' : 'Light'})`
+      : themeMode === 'amoled'
+      ? 'AMOLED Black'
       : isDark
       ? 'Dark Mode'
       : 'Light Mode';
@@ -279,7 +282,7 @@ export default function SettingsScreen() {
           <ParentOptionRow
             icon="information-circle-outline"
             title="About & Support"
-            subtitle="Feedback, version 1.0.2 & licenses"
+            subtitle={`Feedback, v${Constants.expoConfig?.version ?? '1.0.3'} & licenses`}
             onPress={() => router.push('/about-support')}
             accentColor={accentColor}
             colors={colors}
@@ -314,7 +317,7 @@ export default function SettingsScreen() {
         {/* BOTTOM ATTRIBUTION */}
         <View style={styles.footer}>
           <Text style={[styles.footerText, { color: colors.textMuted }]}>
-            SecuBuzz Intelligence · Version 1.0.2
+            SecuBuzz Intelligence · Version {Constants.expoConfig?.version ?? '1.0.3'}
           </Text>
           <Pressable
             accessibilityRole="link"

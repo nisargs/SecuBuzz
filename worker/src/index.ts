@@ -224,17 +224,21 @@ let cachedKevTime = 0;
 
 async function getKevAdvisories(full: boolean = true): Promise<KevVulnerability[]> {
   const now = Date.now();
-  if (cachedAllKev.length > 0 && now - cachedKevTime < 30 * 60 * 1000) {
+  if (cachedAllKev.length >= 1000 && now - cachedKevTime < 30 * 60 * 1000) {
     return full ? cachedAllKev : cachedRecentKev;
   }
   try {
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 3500);
+    const timeoutId = setTimeout(() => controller.abort(), 12000);
     const res = await fetch(CISA_KEV_URL, {
       signal: controller.signal,
       headers: {
         'User-Agent': 'SecuBuzz/1.0 (+https://secubuzz.com)',
         'Accept': 'application/json',
+      },
+      cf: {
+        cacheTtl: 3600,
+        cacheEverything: true,
       },
     });
     clearTimeout(timeoutId);
@@ -256,6 +260,8 @@ async function getKevAdvisories(full: boolean = true): Promise<KevVulnerability[
   } catch (err) {
     console.error('Failed to fetch KEV catalog:', err);
   }
+  // Backoff on failure so we don't hammer upstream on every request
+  cachedKevTime = now - 25 * 60 * 1000;
   return full
     ? (cachedAllKev.length > 0 ? cachedAllKev : SEED_KEV_ADVISORIES)
     : (cachedRecentKev.length > 0 ? cachedRecentKev : SEED_KEV_ADVISORIES);

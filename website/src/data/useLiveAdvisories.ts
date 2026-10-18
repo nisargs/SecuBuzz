@@ -64,10 +64,14 @@ export function useLiveAdvisories(): { advisories: Advisory[]; loading: boolean 
           return res.json();
         })
         .then((data: any) => {
-          if (data && Array.isArray(data.advisories) && data.advisories.length > 0) {
+          if (data && Array.isArray(data.advisories) && data.advisories.length >= 1000) {
             const transformed = transformKev(data.advisories);
-            cachedAdvisories = transformed;
-            listeners.forEach(cb => cb(transformed));
+            // Preserve unique GitHub advisories bundled in initialAdvisories so total matches app
+            const cisaCveSet = new Set(transformed.map(a => a.cve.toUpperCase()));
+            const githubAdvisories = initialAdvisories.filter(a => !cisaCveSet.has(a.cve.toUpperCase()));
+            const combined = [...transformed, ...githubAdvisories];
+            cachedAdvisories = combined;
+            listeners.forEach(cb => cb(combined));
           }
         })
         .catch(err => {

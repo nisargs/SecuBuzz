@@ -29,6 +29,23 @@ export const darkColors: ThemeColors = {
 };
 
 /**
+ * AMOLED Pure Black theme tokens.
+ * Pitch-black 0-nit canvas (#000000) where OLED/AMOLED pixels turn completely off.
+ * Maximizes hardware battery life and provides zero-glare contrast in dark SOC command rooms.
+ */
+export const amoledColors: ThemeColors = {
+  background: '#000000',
+  surface: '#090B0E',
+  surfaceRaised: '#12151C',
+  border: '#1B202A',
+  textPrimary: '#FFFFFF',
+  textSecondary: '#9AA4B2',
+  textMuted: '#64748B',
+  accent: '#4CC9F0',
+  danger: '#EF4444',
+};
+
+/**
  * Light theme tokens (Clean Architectural Slate).
  * Pure white card surface on a crisp slate canvas.
  * Tested for WCAG AAA contrast ratio (14:1) for primary text.

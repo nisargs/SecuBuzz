@@ -7,6 +7,7 @@ import {
   FlatList,
   Pressable,
   RefreshControl,
+  ScrollView,
   StyleSheet,
   Text,
   TextInput,
@@ -569,6 +570,7 @@ export default function AdvisoriesScreen() {
         </View>
       </View>
 
+
       {/* ACTIVE FILTER BANNER */}
       {isAnyFilterActive ? (
         <View
@@ -775,9 +777,7 @@ export default function AdvisoriesScreen() {
         style={[
           styles.backToTopButton,
           {
-            backgroundColor: isDark
-              ? 'rgba(15, 23, 42, 0.94)'
-              : 'rgba(255, 255, 255, 0.96)',
+            backgroundColor: `${colors.background}F0`,
             borderColor: accentColor,
             opacity: backToTopAnim,
             transform: [
@@ -932,6 +932,7 @@ const styles = StyleSheet.create({
   headerButton: {
     padding: 4,
   },
+
   filterActiveDot: {
     position: 'absolute',
     top: -2,

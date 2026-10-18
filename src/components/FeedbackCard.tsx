@@ -1,6 +1,7 @@
 import { Ionicons } from '@expo/vector-icons';
 import React from 'react';
 import { Linking, Pressable, StyleSheet, Text, View } from 'react-native';
+import Constants from 'expo-constants';
 import { useTheme } from '../context/ThemeContext';
 import { spacing } from '../theme/theme';
 import { haptics } from '../utils/haptics';
@@ -44,7 +45,7 @@ export function FeedbackCard({ onDismiss, context = 'news' }: FeedbackCardProps)
     const email = 'support@secubuzz.com';
     const subject = encodeURIComponent('[SecuBuzz App] Bug Report');
     const body = encodeURIComponent(
-      `Hello SecuBuzz team,\n\nI noticed an issue or bug in version 1.0.2:\n\nDetails:\n\n`
+      `Hello SecuBuzz team,\n\nI noticed an issue or bug in version ${Constants.expoConfig?.version ?? '1.0.3'}:\n\nDetails:\n\n`
     );
     try {
       await Linking.openURL(`mailto:${email}?subject=${subject}&body=${body}`);
@@ -98,7 +99,7 @@ export function FeedbackCard({ onDismiss, context = 'news' }: FeedbackCardProps)
           ]}
         >
           <Ionicons name="star" size={16} color="#0B0F14" style={styles.buttonIcon} />
-          <Text style={styles.primaryButtonText}>Rate 5 Stars on Google Play</Text>
+          <Text style={styles.primaryButtonText}>Give Us a Rating on Google Play</Text>
         </Pressable>
 
         {/* Feature Suggestion */}
