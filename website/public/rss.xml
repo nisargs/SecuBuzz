@@ -5,15 +5,42 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Oct 2026 02:59:05 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 04:17:54 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Malicious npm Package &apos;imgdecode&apos; Discovered in Supply Chain Attack</title>
-      <link>https://secubuzz.com/news/malicious-npm-package-imgdecode-discovered-in-supp-42d0e8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/malicious-npm-package-imgdecode-discovered-in-supp-42d0e8</guid>
-      <description><![CDATA[Researchers found the npm package imgdecode, part of the MALFEX supply chain attack, uploaded on September 30, 2026. The package contains a Windows native addon that hides a shellcode loader, enabling attackers to execute malicious code on systems that install it. The package remains available on npm and has been downloaded 979 times.]]></description>
-      <pubDate>Sat, 17 Oct 2026 11:11:56 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html">The Hacker News</source>
+      <title>Claude AI Deciphers 25-Year NSA Elliptic Curve Seed Mystery</title>
+      <link>https://secubuzz.com/news/claude-ai-deciphers-25-year-nsa-elliptic-curve-see-78d446</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/claude-ai-deciphers-25-year-nsa-elliptic-curve-see-78d446</guid>
+      <description><![CDATA[Anthropic’s Claude research model traced the origins of five NSA-supplied elliptic curve seeds in under 30 minutes, revealing how public security parameters were selected. The discovery clarifies parameter selection without exposing keys or breaking encryption.]]></description>
+      <pubDate>Sat, 17 Oct 2026 16:59:29 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/claude-ai-cryptography-mystery/">Cyber Security News</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Hackers breach Microsoft 365 tenants via ConnectWise supply‑chain attack</title>
+      <link>https://secubuzz.com/news/hackers-breach-microsoft-365-tenants-via-connectwi-6cb7ff</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-breach-microsoft-365-tenants-via-connectwi-6cb7ff</guid>
+      <description><![CDATA[Hackers accessed ConnectWise application identities and used them to compromise Microsoft 365 tenants. The attack forced ConnectWise to shut down customer access to its Cloud Backup service. The breach exposed tenant credentials and potentially sensitive data across affected organizations.]]></description>
+      <pubDate>Sat, 17 Oct 2026 15:18:51 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>MALFEX: How to Detect &amp; Block imgdecode npm Shellcode Loader</title>
+      <link>https://secubuzz.com/news/malfex-how-to-detect-block-imgdecode-npm-shellcode-4a5295</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/malfex-how-to-detect-block-imgdecode-npm-shellcode-4a5295</guid>
+      <description><![CDATA[The MALFEX imgdecode npm package weaponizes Windows native DLL addons to inject shellcode into dllhost.exe. Detection relies on monitoring DLL injection activity and anomalous process behavior. Defenses include disabling the package, applying runtime application hardening, and monitoring for dllhost.exe anomalies.]]></description>
+      <pubDate>Sat, 17 Oct 2026 14:45:26 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/malfex-imgdecode-npm-shellcode-loader-defense">CyberNews AI</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Drupal Patches Critical Remote Code Execution Vulnerabilities</title>
+      <link>https://secubuzz.com/news/drupal-patches-critical-remote-code-execution-vuln-70c342</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/drupal-patches-critical-remote-code-execution-vuln-70c342</guid>
+      <description><![CDATA[Drupal released patches for two critical vulnerabilities that could allow remote code execution on any supported CMS version. The flaws enable attackers to run arbitrary code on affected websites. Site administrators should apply the latest updates immediately to mitigate potential exploitation.]]></description>
+      <pubDate>Sat, 17 Oct 2026 14:32:48 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaws-warns-exploits-may-emerge-soon/">BleepingComputer</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -24,15 +51,6 @@
       <pubDate>Sat, 17 Oct 2026 11:00:00 GMT</pubDate>
       <source url="https://www.securityweek.com/israeli-ad-firm-doubled-as-candirus-zero-click-spyware-delivery-channel/">SecurityWeek</source>
       <category>Malware</category>
-    </item>
-    <item>
-      <title>Hackers Exploit Compromised ConnectWise Backup Credentials to Access 173 Microsoft 365 Accounts</title>
-      <link>https://secubuzz.com/news/hackers-exploit-compromised-connectwise-backup-cre-3f92b7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-compromised-connectwise-backup-cre-3f92b7</guid>
-      <description><![CDATA[Hackers used a stolen ConnectWise Cloud Backup credential to sign into 173 Microsoft 365 partner and customer tenants, gaining access through a trusted backup application. The breach demonstrates how a single leaked vendor secret can expose many organizations when a multitenant app has broad permissions.]]></description>
-      <pubDate>Sat, 17 Oct 2026 10:52:09 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/connectwise-credentials-microsoft-365-accounts/">Cyber Security News</source>
-      <category>Breach</category>
     </item>
     <item>
       <title>Google Releases Chrome Update Fixing 10 Vulnerabilities, Including Memory Corruption Flaw</title>
@@ -86,15 +104,6 @@
       <description><![CDATA[BeyondTrust’s Remote Support software now has a zero‑day vulnerability, joining a wave that has already affected Ivanti, Cisco and Palo Alto Networks edge devices. The flaw allows attackers to execute code on the affected systems, potentially compromising network traffic and device control. No patch has been released yet.]]></description>
       <pubDate>Fri, 16 Oct 2026 20:34:37 GMT</pubDate>
       <source url="https://www.darkreading.com/endpoint-security/beyondtrust-remote-support-exploited-edge-bugs">Dark Reading</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Magento and Adobe Commerce Vulnerability Allows Remote Code Execution</title>
-      <link>https://secubuzz.com/news/magento-and-adobe-commerce-vulnerability-allows-re-586db8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/magento-and-adobe-commerce-vulnerability-allows-re-586db8</guid>
-      <description><![CDATA[A maximum‑severity flaw (CVE‑2026‑103849) in Magento’s BlockStrap component lets attackers execute arbitrary PHP code on store servers, potentially compromising customer data and site integrity. Adobe Commerce users must apply the vendor patch immediately to prevent exploitation.]]></description>
-      <pubDate>Fri, 16 Oct 2026 20:00:59 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/critical-blockstrap-flaw-lets-hackers-run-code-on-magento-servers/">BleepingComputer</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -231,15 +240,6 @@
       <pubDate>Fri, 16 Oct 2026 14:00:00 GMT</pubDate>
       <source url="https://www.darkreading.com/cyber-risk/when-your-ransomware-negotiator-works-other-side">Dark Reading</source>
       <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Moscow Police Detain Suspected DataSuckers Hackers Linked to Restaurant Chain Breach</title>
-      <link>https://secubuzz.com/news/moscow-police-detain-suspected-datasuckers-hackers-4dc3ff</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/moscow-police-detain-suspected-datasuckers-hackers-4dc3ff</guid>
-      <description><![CDATA[Three suspected members of the DataSuckers hacking group were detained by Moscow police after a cyberattack on a popular restaurant chain exposed large amounts of customer information. The arrests follow investigations into the breach that affected Ukrainian and Russian customers, highlighting the group's cross-border reach.]]></description>
-      <pubDate>Fri, 16 Oct 2026 13:30:00 GMT</pubDate>
-      <source url="https://therecord.media/russia-datasuckers-hackers-arrested">The Record</source>
-      <category>Breach</category>
     </item>
     <item>
       <title>Baltimore Suburb Confirms August Data Breach After Ransomware Claims</title>
