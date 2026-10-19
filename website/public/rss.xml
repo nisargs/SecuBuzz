@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Oct 2026 15:39:55 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 16:18:24 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>VK Service Disruptions After Data Center Drone Strike</title>
+      <link>https://secubuzz.com/news/vk-service-disruptions-after-data-center-drone-str-317c6a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/vk-service-disruptions-after-data-center-drone-str-317c6a</guid>
+      <description><![CDATA[A drone strike on a VK data center caused widespread service disruptions, leading users to report difficulties loading news feeds, playing music, and accessing other platform features. The incident highlights the vulnerability of social media infrastructure to physical attacks.]]></description>
+      <pubDate>Mon, 19 Oct 2026 15:55:00 GMT</pubDate>
+      <source url="https://therecord.media/russian-social-media-giant-vk-faces-disruptions-drone-strike-data-center">The Record</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Drupal Core RCE Vulnerability Threatens Entity List and Field UI Modules</title>
+      <link>https://secubuzz.com/news/drupal-core-rce-vulnerability-threatens-entity-lis-4d24e8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/drupal-core-rce-vulnerability-threatens-entity-lis-4d24e8</guid>
+      <description><![CDATA[Drupal identified a critical remote code execution flaw affecting the Entity List and Field UI modules, with exploit paths through contributed modules. The vulnerability enables attackers to execute arbitrary code on affected sites, necessitating immediate patching of all Drupal installations.]]></description>
+      <pubDate>Mon, 19 Oct 2026 15:47:50 GMT</pubDate>
+      <source url="https://www.securityweek.com/drupal-warns-of-fast-exploitation-risk-for-critical-core-rce-flaw/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Rank Math PRO WordPress Plugin Compromised in Supply Chain Attack</title>
       <link>https://secubuzz.com/news/rank-math-pro-wordpress-plugin-compromised-in-supp-4ee208</link>
@@ -438,24 +456,6 @@
       <pubDate>Fri, 16 Oct 2026 20:34:37 GMT</pubDate>
       <source url="https://www.darkreading.com/endpoint-security/beyondtrust-remote-support-exploited-edge-bugs">Dark Reading</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Biomemory Launches DNA Shield, First Commercial Product Built on Its Molecular IT Platform</title>
-      <link>https://secubuzz.com/news/biomemory-launches-dna-shield-first-commercial-pro-4a04b4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/biomemory-launches-dna-shield-first-commercial-pro-4a04b4</guid>
-      <description><![CDATA[Biomemory has introduced DNA Shield, its inaugural commercial offering built on the Molecular IT Platform, following the acquisition of catalog assets and the appointment of Laurent Guengant as CEO earlier this year.]]></description>
-      <pubDate>Fri, 16 Oct 2026 19:22:12 GMT</pubDate>
-      <source url="https://www.darkreading.com/data-privacy/biomemory-launches-dna-shield">Dark Reading</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Enterprise AI Shifts to Risk Management as Security Concerns Mount</title>
-      <link>https://secubuzz.com/news/enterprise-ai-shifts-to-risk-management-as-securit-2023df</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/enterprise-ai-shifts-to-risk-management-as-securit-2023df</guid>
-      <description><![CDATA[Companies are realizing that the real challenge with AI is not just adopting the technology but managing its security risks. As AI systems become more integral, organizations must focus on execution controls, monitoring, and governance to prevent misuse and protect sensitive data.]]></description>
-      <pubDate>Fri, 16 Oct 2026 19:13:59 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyber-risk/enterprise-ai-risk-management-phase-security-concerns-rise">Dark Reading</source>
-      <category>Policy</category>
     </item>
   </channel>
 </rss>

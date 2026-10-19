@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "vk-service-disruptions-after-data-center-drone-str-317c6a",
+    "title": "VK Service Disruptions After Data Center Drone Strike",
+    "summary": "A drone strike on a VK data center caused widespread service disruptions, leading users to report difficulties loading news feeds, playing music, and accessing other platform features. The incident highlights the vulnerability of social media infrastructure to physical attacks.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/russian-social-media-giant-vk-faces-disruptions-drone-strike-data-center",
+    "publishedAt": "2026-10-19T15:55:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "vk-service-disruptions-after-data-center-drone-str",
+      "article-317c6a",
+      "317c6a",
+      "vk-service-disruptions-after-data-center-drone-strike"
+    ]
+  },
+  {
+    "slug": "drupal-core-rce-vulnerability-threatens-entity-lis-4d24e8",
+    "title": "Drupal Core RCE Vulnerability Threatens Entity List and Field UI Modules",
+    "summary": "Drupal identified a critical remote code execution flaw affecting the Entity List and Field UI modules, with exploit paths through contributed modules. The vulnerability enables attackers to execute arbitrary code on affected sites, necessitating immediate patching of all Drupal installations.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/drupal-warns-of-fast-exploitation-risk-for-critical-core-rce-flaw/",
+    "publishedAt": "2026-10-19T15:47:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "drupal-core-rce-vulnerability-threatens-entity-lis",
+      "article-4d24e8",
+      "4d24e8",
+      "drupal-core-rce-vulnerability-threatens-entity-list-and-fiel"
+    ]
+  },
+  {
     "slug": "rank-math-pro-wordpress-plugin-compromised-in-supp-4ee208",
     "title": "Rank Math PRO WordPress Plugin Compromised in Supply Chain Attack",
     "summary": "Hackers injected malware into Rank Math PRO version 3.0.123 packages distributed between October 15 and October 16. WordPress sites that installed these packages may now run malicious code. Site owners should immediately update to the latest plugin version and verify package integrity.",
@@ -6241,42 +6277,6 @@ export const news: NewsBrief[] = [
       "makerphone-2-0-diy-4g-phone-with-plug-in-hardware",
       "article-7526f5",
       "7526f5"
-    ]
-  },
-  {
-    "slug": "windows-kb5124010-update-causes-crashes-in-games-u-78a077",
-    "title": "Windows KB5124010 Update Causes Crashes in Games Using AC‑3 Audio Decoding",
-    "summary": "Microsoft’s KB5124010 Windows 11 preview update introduced a bug that causes games and applications using AC‑3 (Dolby Digital) audio decoding to crash. The issue affects only software that relies on the AC‑3 codec, and users are advised to postpone the update until Microsoft releases a fix. No data loss or security breach is reported.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-kb5124010-update-crashes-some-games-and-apps/",
-    "publishedAt": "2026-10-05T09:37:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "windows-kb5124010-update-causes-crashes-in-games-u",
-      "article-78a077",
-      "78a077",
-      "windows-kb5124010-update-causes-crashes-in-games-using-ac-3-"
-    ]
-  },
-  {
-    "slug": "doxx-net-launches-public-beta-of-agentic-defined-n-5f1054",
-    "title": "doxx.net Launches Public Beta of Agentic Defined Networking Platform",
-    "summary": "doxx.net has opened a public beta of its Agentic Defined Networking (ADN) platform, allowing users and their agents to create private, serverless networks with built‑in threat protection. The service blocks known malicious destinations and requires no personal information to join. The beta launch follows a $38 million funding round.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/doxx-net-agentic-defined-networking-platform/",
-    "publishedAt": "2026-10-05T08:03:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "doxx-net-launches-public-beta-of-agentic-defined-n",
-      "article-5f1054",
-      "5f1054",
-      "doxx-net-launches-public-beta-of-agentic-defined-networking-"
     ]
   }
 ];

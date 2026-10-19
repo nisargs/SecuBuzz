@@ -1,5 +1,31 @@
 [
   {
+    "id": "https://therecord.media/russian-social-media-giant-vk-faces-disruptions-drone-strike-data-center",
+    "sourceUrl": "https://therecord.media/russian-social-media-giant-vk-faces-disruptions-drone-strike-data-center",
+    "title": "VK Service Disruptions After Data Center Drone Strike",
+    "headline": "VK Service Disruptions After Data Center Drone Strike",
+    "summary": "A drone strike on a VK data center caused widespread service disruptions, leading users to report difficulties loading news feeds, playing music, and accessing other platform features. The incident highlights the vulnerability of social media infrastructure to physical attacks.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Record",
+    "publishedAt": "2026-10-19T15:55:00.000Z",
+    "url": "https://therecord.media/russian-social-media-giant-vk-faces-disruptions-drone-strike-data-center",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/drupal-warns-of-fast-exploitation-risk-for-critical-core-rce-flaw/",
+    "sourceUrl": "https://www.securityweek.com/drupal-warns-of-fast-exploitation-risk-for-critical-core-rce-flaw/",
+    "title": "Drupal Core RCE Vulnerability Threatens Entity List and Field UI Modules",
+    "headline": "Drupal Core RCE Vulnerability Threatens Entity List and Field UI Modules",
+    "summary": "Drupal identified a critical remote code execution flaw affecting the Entity List and Field UI modules, with exploit paths through contributed modules. The vulnerability enables attackers to execute arbitrary code on affected sites, necessitating immediate patching of all Drupal installations.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-19T15:47:50.000Z",
+    "url": "https://www.securityweek.com/drupal-warns-of-fast-exploitation-risk-for-critical-core-rce-flaw/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.securityweek.com/rank-math-pro-wordpress-plugin-compromised-in-supply-chain-attack/",
     "sourceUrl": "https://www.securityweek.com/rank-math-pro-wordpress-plugin-compromised-in-supply-chain-attack/",
     "title": "Rank Math PRO WordPress Plugin Compromised in Supply Chain Attack",
@@ -5174,40 +5200,5 @@
     "publishedAt": "2026-10-05T09:50:37.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/05/makerphone-2-diy-4g-phone/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-kb5124010-update-crashes-some-games-and-apps/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-kb5124010-update-crashes-some-games-and-apps/",
-    "title": "Windows KB5124010 Update Causes Crashes in Games Using AC‑3 Audio Decoding",
-    "headline": "Windows KB5124010 Update Causes Crashes in Games Using AC‑3 Audio Decoding",
-    "summary": "Microsoft’s KB5124010 Windows 11 preview update introduced a bug that causes games and applications using AC‑3 (Dolby Digital) audio decoding to crash. The issue affects only software that relies on the AC‑3 codec, and users are advised to postpone the update until Microsoft releases a fix. No data loss or security breach is reported.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-05T09:37:56.000Z",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-kb5124010-update-crashes-some-games-and-apps/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/05/doxx-net-agentic-defined-networking-platform/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/doxx-net-agentic-defined-networking-platform/",
-    "title": "doxx.net Launches Public Beta of Agentic Defined Networking Platform",
-    "headline": "doxx.net Launches Public Beta of Agentic Defined Networking Platform",
-    "summary": "doxx.net has opened a public beta of its Agentic Defined Networking (ADN) platform, allowing users and their agents to create private, serverless networks with built‑in threat protection. The service blocks known malicious destinations and requires no personal information to join. The beta launch follows a $38 million funding round.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-05T08:03:40.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/05/doxx-net-agentic-defined-networking-platform/",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/doxx-net-raises-38-million-to-prevent-ai-agent-on-the-internet-misadventures/"
-      },
-      {
-        "source": "Cloudflare Security",
-        "sourceUrl": "https://blog.cloudflare.com/cloudflare-tracing/"
-      }
-    ]
   }
 ]
