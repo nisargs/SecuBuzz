@@ -5,8 +5,80 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Oct 2026 08:17:52 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 12:19:38 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Compromised Login Exposes Millions of California Student Records</title>
+      <link>https://secubuzz.com/news/compromised-login-exposes-millions-of-california-s-489e03</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/compromised-login-exposes-millions-of-california-s-489e03</guid>
+      <description><![CDATA[Intruders used stolen credentials to access an ETS SFTP server, copying student records dating back to 2006. The breach exposed personal data of millions of California students.]]></description>
+      <pubDate>Mon, 19 Oct 2026 11:55:50 GMT</pubDate>
+      <source url="https://www.securityweek.com/one-compromised-login-exposed-millions-of-california-students-records/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>FirstVDS Customer Data Stolen via Server Management Software Vulnerability</title>
+      <link>https://secubuzz.com/news/firstvds-customer-data-stolen-via-server-managemen-706d96</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/firstvds-customer-data-stolen-via-server-managemen-706d96</guid>
+      <description><![CDATA[Hackers exploited a flaw in FirstVDS’s server management software to steal passwords, access credentials, and other sensitive customer data. The breach compromised the personal information of FirstVDS users.]]></description>
+      <pubDate>Mon, 19 Oct 2026 11:45:00 GMT</pubDate>
+      <source url="https://therecord.media/russia-cyberattack-firstvds-cloud">The Record</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>AI-Driven Cloud Attack Spans Cloud, Kubernetes, CI/CD, and Identity</title>
+      <link>https://secubuzz.com/news/ai-driven-cloud-attack-spans-cloud-kubernetes-ci-c-4c69ce</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-driven-cloud-attack-spans-cloud-kubernetes-ci-c-4c69ce</guid>
+      <description><![CDATA[Wiz CIRT documented AI-driven attacks targeting cloud environments, Kubernetes clusters, CI/CD pipelines, and identity services. The attacks exhibit rapid, widespread behavior. Detection relies on monitoring anomalous activity across these layers, enabling early identification and containment of automated threat actors.]]></description>
+      <pubDate>Mon, 19 Oct 2026 11:26:53 GMT</pubDate>
+      <source url="https://www.wiz.io/blog/anatomy-of-ai-driven-cloud-attacks">Wiz Research</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Exploited Fortinet Bug Linked to Stealthy FortiGate Implant in Telecom Hack</title>
+      <link>https://secubuzz.com/news/exploited-fortinet-bug-linked-to-stealthy-fortigat-10c46e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/exploited-fortinet-bug-linked-to-stealthy-fortigat-10c46e</guid>
+      <description><![CDATA[A persistent, stealthy FortiGate implant was deployed against a telecommunications organization, exploiting a Fortinet vulnerability. The implant enabled covert control and data exfiltration. The incident underscores the need for timely patching and monitoring of FortiGate devices for unauthorized activity.]]></description>
+      <pubDate>Mon, 19 Oct 2026 11:13:23 GMT</pubDate>
+      <source url="https://www.securityweek.com/exploited-fortinet-bug-linked-to-stealthy-fortigate-implant-in-telecom-hack/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Open-Weight AI Increases Enterprise Security Responsibility</title>
+      <link>https://secubuzz.com/news/open-weight-ai-increases-enterprise-security-respo-5d1d4b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/open-weight-ai-increases-enterprise-security-respo-5d1d4b</guid>
+      <description><![CDATA[Microsoft and NVIDIA warn that running open-weight AI models on in‑house infrastructure shifts safety and security controls from providers to enterprises. Open-weight models expose weights for download, inspection, modification, and execution, requiring organizations to implement their own safeguards and monitoring.]]></description>
+      <pubDate>Mon, 19 Oct 2026 11:04:12 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/19/open-weight-ai-model-risks-microsoft-nvidia/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Fake Web3 Accelerator Distributes Malware via npm Packages</title>
+      <link>https://secubuzz.com/news/fake-web3-accelerator-distributes-malware-via-npm-7e8c14</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fake-web3-accelerator-distributes-malware-via-npm-7e8c14</guid>
+      <description><![CDATA[A counterfeit Web3 accelerator has pushed information‑stealing malware and backdoors to Windows and macOS through malicious npm packages, claiming to offer free AI credits for Anthropic Claude and Google Gemini. The delivery mechanism targets users installing these packages, compromising system integrity and data confidentiality.]]></description>
+      <pubDate>Mon, 19 Oct 2026 10:06:40 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Microsoft Brand Phishing Attacks Surge to 33% of All Impersonation Attempts in Q3 2026</title>
+      <link>https://secubuzz.com/news/microsoft-brand-phishing-attacks-surge-to-33-of-al-74f340</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-brand-phishing-attacks-surge-to-33-of-al-74f340</guid>
+      <description><![CDATA[Check Point Research reports Microsoft brand phishing attacks rose to 33% of all impersonation attempts in Q3 2026, up from 23% in Q2, surpassing Apple and Google. Attackers target Microsoft because stolen credentials can unlock multiple services. The trend highlights the need for stricter credential protection.]]></description>
+      <pubDate>Mon, 19 Oct 2026 09:38:17 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/19/check-point-brand-impersonation-scams-q3-2026-report/">Help Net Security</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Microsoft Windows Server Updates Break Outlook Web Access Sign‑In and Mail Flow</title>
+      <link>https://secubuzz.com/news/microsoft-windows-server-updates-break-outlook-web-66e8ff</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-windows-server-updates-break-outlook-web-66e8ff</guid>
+      <description><![CDATA[Microsoft confirmed that its October Windows Server security updates caused OWA sign‑in failures and mail delivery disruptions on some Exchange Server deployments. The issue affects Outlook Web Access authentication and outbound mail flow, impacting user access to corporate email. Affected systems should revert to previous updates or apply the vendor’s hotfix.]]></description>
+      <pubDate>Mon, 19 Oct 2026 08:58:41 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-october-windows-server-updates-cause-exchange-issues/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Broadcom Wi‑Fi Flaw Lets Nearby Attackers Run Code as Root on Routers</title>
       <link>https://secubuzz.com/news/broadcom-wi-fi-flaw-lets-nearby-attackers-run-code-79de2c</link>
@@ -80,15 +152,6 @@
       <category>Ransomware</category>
     </item>
     <item>
-      <title>Windows Updates Disrupt Exchange Server Email Services</title>
-      <link>https://secubuzz.com/news/windows-updates-disrupt-exchange-server-email-serv-69a3c0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/windows-updates-disrupt-exchange-server-email-serv-69a3c0</guid>
-      <description><![CDATA[Microsoft’s October 13, 2026 Windows Server security updates unintentionally break Exchange Server 2016, 2019, and Subscription Edition, blocking webmail and causing undelivered messages. A workaround has been published; administrators are advised not to uninstall the updates until the issue is resolved.]]></description>
-      <pubDate>Mon, 19 Oct 2026 03:39:03 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/october-updates-break-exchange-server/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>ConnectWise: Detect &amp; Remediate M365 Tenant Hijacking</title>
       <link>https://secubuzz.com/news/connectwise-detect-remediate-m365-tenant-hijacking-358234</link>
       <guid isPermaLink="true">https://secubuzz.com/news/connectwise-detect-remediate-m365-tenant-hijacking-358234</guid>
@@ -123,24 +186,6 @@
       <pubDate>Sun, 18 Oct 2026 11:00:00 GMT</pubDate>
       <source url="https://www.securityweek.com/us-cybersecurity-job-postings-fall-26-as-ai-security-engineer-demand-soars/">SecurityWeek</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>ConnectWise Suspends Cloud Backup After Unauthorized Access to Microsoft 365 Tenants</title>
-      <link>https://secubuzz.com/news/connectwise-suspends-cloud-backup-after-unauthoriz-7fc8ab</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/connectwise-suspends-cloud-backup-after-unauthoriz-7fc8ab</guid>
-      <description><![CDATA[ConnectWise disabled seven application identities after attackers gained unauthorized access to its Cloud Backup service and compromised multiple Microsoft 365 tenants. The breach exposed tenant data and credentials, prompting immediate suspension of affected identities. ConnectWise is investigating the incident and working with Microsoft to mitigate further exposure.]]></description>
-      <pubDate>Sun, 18 Oct 2026 08:23:02 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/connectwise-suspends-cloud-backup-after.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Hidden Implant in Ledger Wallets Linked to $93M Theft</title>
-      <link>https://secubuzz.com/news/hidden-implant-in-ledger-wallets-linked-to-93m-the-2cce26</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hidden-implant-in-ledger-wallets-linked-to-93m-the-2cce26</guid>
-      <description><![CDATA[A covert implant discovered in Ledger hardware wallets facilitated a $93 million theft. The implant enabled attackers to exfiltrate private keys and transaction data, compromising wallet security. The incident underscores the need for firmware integrity checks and secure supply chain practices.]]></description>
-      <pubDate>Sun, 18 Oct 2026 08:00:30 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/18/week-in-review-hidden-implant-in-ledger-wallets-linked-to-93m-theft-1500-npm-packages-exposed/">Help Net Security</source>
-      <category>Breach</category>
     </item>
     <item>
       <title>Claude AI Deciphers 25-Year NSA Elliptic Curve Seed Mystery</title>
@@ -222,15 +267,6 @@
       <pubDate>Fri, 16 Oct 2026 20:34:37 GMT</pubDate>
       <source url="https://www.darkreading.com/endpoint-security/beyondtrust-remote-support-exploited-edge-bugs">Dark Reading</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Rise of AI‑Brand Impersonation Phishing Campaigns Targeting Developers</title>
-      <link>https://secubuzz.com/news/rise-of-ai-brand-impersonation-phishing-campaigns-7a4a68</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rise-of-ai-brand-impersonation-phishing-campaigns-7a4a68</guid>
-      <description><![CDATA[Cybercriminals are increasing attacks that spoof popular AI brands such as Claude and ChatGPT, using ClickFix‑style tactics to lure enterprise employees. The campaigns aim to steal credentials and deliver malware, posing a significant phishing risk to developers and IT staff.]]></description>
-      <pubDate>Fri, 16 Oct 2026 19:49:30 GMT</pubDate>
-      <source url="https://www.darkreading.com/application-security/fake-claude-chatgpt-attacks-developers-risk">Dark Reading</source>
-      <category>Malware</category>
     </item>
     <item>
       <title>Biomemory Launches DNA Shield, First Commercial Product Built on Its Molecular IT Platform</title>
@@ -420,42 +456,6 @@
       <pubDate>Fri, 16 Oct 2026 11:46:40 GMT</pubDate>
       <source url="https://www.securityweek.com/bae-systems-security-incident-stalls-notices-from-us-bankruptcy-courts/">SecurityWeek</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Scammers Clone Candidates’ Voices to Steal Cash and Voter Data Ahead of 2026 Midterms</title>
-      <link>https://secubuzz.com/news/scammers-clone-candidates-voices-to-steal-cash-and-4f7640</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/scammers-clone-candidates-voices-to-steal-cash-and-4f7640</guid>
-      <description><![CDATA[Three weeks before the 2026 U.S. midterm election, fraudsters are using cloned candidate voices, logos, and slogans to solicit fake donations and harvest personal data. The FBI warns that these schemes target voters nationwide and have previously exploited state and local elections.]]></description>
-      <pubDate>Fri, 16 Oct 2026 11:34:35 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/16/usa-2026-midterm-election-scams/">Help Net Security</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Rise of AI Decision Models in SOC Platforms</title>
-      <link>https://secubuzz.com/news/rise-of-ai-decision-models-in-soc-platforms-126822</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rise-of-ai-decision-models-in-soc-platforms-126822</guid>
-      <description><![CDATA[Within a month, AI decision models proliferated across security operations. TypeSafe AI launched Jev, a System One model, while OpenAI introduced a Decisions API and Cribl released a local LoRA adapter. These developments aim to enhance automated threat analysis but also raise concerns about model reliability and bias.]]></description>
-      <pubDate>Fri, 16 Oct 2026 11:30:00 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html">The Hacker News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Chinese Phishing Network Targets Japanese Banks with 17,000 Domains</title>
-      <link>https://secubuzz.com/news/chinese-phishing-network-targets-japanese-banks-wi-6fea71</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chinese-phishing-network-targets-japanese-banks-wi-6fea71</guid>
-      <description><![CDATA[A Chinese-language phishing operation used about 17,000 domains to impersonate banks, payment services, and retailers, focusing on Japan. The campaign employed three phishing kits—CoGUI, CoAceV, and CoFish_Ws—to send deceptive emails and redirect victims to fake login or payment pages, stealing credentials.]]></description>
-      <pubDate>Fri, 16 Oct 2026 11:26:28 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/chinese-phishing-network-2/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Backdoored Open-Weight AI Models via Abliterated Builds</title>
-      <link>https://secubuzz.com/news/backdoored-open-weight-ai-models-via-abliterated-b-438175</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/backdoored-open-weight-ai-models-via-abliterated-b-438175</guid>
-      <description><![CDATA[Researchers discovered that open AI models whose weights have been edited can carry backdoors. Abliterated models, which remove a model’s refusal capability, are commonly uploaded to Hugging Face. These modified weights allow the model to answer prompts that a safety‑tuned version would normally refuse, posing a new vulnerability.]]></description>
-      <pubDate>Fri, 16 Oct 2026 11:04:53 GMT</pubDate>
-      <source url="https://www.schneier.com/blog/archives/2026/10/backdooring-open-weight-ai-models.html">Schneier on Security</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

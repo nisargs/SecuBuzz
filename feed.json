@@ -1,5 +1,133 @@
 [
   {
+    "id": "https://www.securityweek.com/one-compromised-login-exposed-millions-of-california-students-records/",
+    "sourceUrl": "https://www.securityweek.com/one-compromised-login-exposed-millions-of-california-students-records/",
+    "title": "Compromised Login Exposes Millions of California Student Records",
+    "headline": "Compromised Login Exposes Millions of California Student Records",
+    "summary": "Intruders used stolen credentials to access an ETS SFTP server, copying student records dating back to 2006. The breach exposed personal data of millions of California students.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-19T11:55:50.000Z",
+    "url": "https://www.securityweek.com/one-compromised-login-exposed-millions-of-california-students-records/",
+    "additionalSources": [
+      {
+        "source": "Malwarebytes Labs",
+        "sourceUrl": "https://www.malwarebytes.com/blog/data-breaches/2026/10/millions-of-california-students-sensitive-data-stolen-in-breach"
+      }
+    ]
+  },
+  {
+    "id": "https://therecord.media/russia-cyberattack-firstvds-cloud",
+    "sourceUrl": "https://therecord.media/russia-cyberattack-firstvds-cloud",
+    "title": "FirstVDS Customer Data Stolen via Server Management Software Vulnerability",
+    "headline": "FirstVDS Customer Data Stolen via Server Management Software Vulnerability",
+    "summary": "Hackers exploited a flaw in FirstVDS’s server management software to steal passwords, access credentials, and other sensitive customer data. The breach compromised the personal information of FirstVDS users.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Record",
+    "publishedAt": "2026-10-19T11:45:00.000Z",
+    "url": "https://therecord.media/russia-cyberattack-firstvds-cloud",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.wiz.io/blog/anatomy-of-ai-driven-cloud-attacks",
+    "sourceUrl": "https://www.wiz.io/blog/anatomy-of-ai-driven-cloud-attacks",
+    "title": "AI-Driven Cloud Attack Spans Cloud, Kubernetes, CI/CD, and Identity",
+    "headline": "AI-Driven Cloud Attack Spans Cloud, Kubernetes, CI/CD, and Identity",
+    "summary": "Wiz CIRT documented AI-driven attacks targeting cloud environments, Kubernetes clusters, CI/CD pipelines, and identity services. The attacks exhibit rapid, widespread behavior. Detection relies on monitoring anomalous activity across these layers, enabling early identification and containment of automated threat actors.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "Wiz Research",
+    "publishedAt": "2026-10-19T11:26:53.000Z",
+    "url": "https://www.wiz.io/blog/anatomy-of-ai-driven-cloud-attacks",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/exploited-fortinet-bug-linked-to-stealthy-fortigate-implant-in-telecom-hack/",
+    "sourceUrl": "https://www.securityweek.com/exploited-fortinet-bug-linked-to-stealthy-fortigate-implant-in-telecom-hack/",
+    "title": "Exploited Fortinet Bug Linked to Stealthy FortiGate Implant in Telecom Hack",
+    "headline": "Exploited Fortinet Bug Linked to Stealthy FortiGate Implant in Telecom Hack",
+    "summary": "A persistent, stealthy FortiGate implant was deployed against a telecommunications organization, exploiting a Fortinet vulnerability. The implant enabled covert control and data exfiltration. The incident underscores the need for timely patching and monitoring of FortiGate devices for unauthorized activity.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-19T11:13:23.000Z",
+    "url": "https://www.securityweek.com/exploited-fortinet-bug-linked-to-stealthy-fortigate-implant-in-telecom-hack/",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/18/week-in-review-hidden-implant-in-ledger-wallets-linked-to-93m-theft-1500-npm-packages-exposed/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/19/open-weight-ai-model-risks-microsoft-nvidia/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/19/open-weight-ai-model-risks-microsoft-nvidia/",
+    "title": "Open-Weight AI Increases Enterprise Security Responsibility",
+    "headline": "Open-Weight AI Increases Enterprise Security Responsibility",
+    "summary": "Microsoft and NVIDIA warn that running open-weight AI models on in‑house infrastructure shifts safety and security controls from providers to enterprises. Open-weight models expose weights for download, inspection, modification, and execution, requiring organizations to implement their own safeguards and monitoring.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-19T11:04:12.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/19/open-weight-ai-model-risks-microsoft-nvidia/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html",
+    "title": "Fake Web3 Accelerator Distributes Malware via npm Packages",
+    "headline": "Fake Web3 Accelerator Distributes Malware via npm Packages",
+    "summary": "A counterfeit Web3 accelerator has pushed information‑stealing malware and backdoors to Windows and macOS through malicious npm packages, claiming to offer free AI credits for Anthropic Claude and Google Gemini. The delivery mechanism targets users installing these packages, compromising system integrity and data confidentiality.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-19T10:06:40.000Z",
+    "url": "https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/19/check-point-brand-impersonation-scams-q3-2026-report/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/19/check-point-brand-impersonation-scams-q3-2026-report/",
+    "title": "Microsoft Brand Phishing Attacks Surge to 33% of All Impersonation Attempts in Q3 2026",
+    "headline": "Microsoft Brand Phishing Attacks Surge to 33% of All Impersonation Attempts in Q3 2026",
+    "summary": "Check Point Research reports Microsoft brand phishing attacks rose to 33% of all impersonation attempts in Q3 2026, up from 23% in Q2, surpassing Apple and Google. Attackers target Microsoft because stolen credentials can unlock multiple services. The trend highlights the need for stricter credential protection.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-19T09:38:17.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/19/check-point-brand-impersonation-scams-q3-2026-report/",
+    "additionalSources": [
+      {
+        "source": "Dark Reading",
+        "sourceUrl": "https://www.darkreading.com/application-security/fake-claude-chatgpt-attacks-developers-risk"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-windows-server-updates-cause-exchange-issues/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-windows-server-updates-cause-exchange-issues/",
+    "title": "Microsoft Windows Server Updates Break Outlook Web Access Sign‑In and Mail Flow",
+    "headline": "Microsoft Windows Server Updates Break Outlook Web Access Sign‑In and Mail Flow",
+    "summary": "Microsoft confirmed that its October Windows Server security updates caused OWA sign‑in failures and mail delivery disruptions on some Exchange Server deployments. The issue affects Outlook Web Access authentication and outbound mail flow, impacting user access to corporate email. Affected systems should revert to previous updates or apply the vendor’s hotfix.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-19T08:58:41.000Z",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-windows-server-updates-cause-exchange-issues/",
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/october-updates-break-exchange-server/"
+      },
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/connectwise-suspends-cloud-backup-after.html"
+      }
+    ]
+  },
+  {
     "id": "https://thehackernews.com/2026/10/unpatched-broadcom-wi-fi-flaw-lets.html",
     "sourceUrl": "https://thehackernews.com/2026/10/unpatched-broadcom-wi-fi-flaw-lets.html",
     "title": "Broadcom Wi‑Fi Flaw Lets Nearby Attackers Run Code as Root on Routers",
@@ -123,19 +251,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://cybersecuritynews.com/october-updates-break-exchange-server/",
-    "sourceUrl": "https://cybersecuritynews.com/october-updates-break-exchange-server/",
-    "title": "Windows Updates Disrupt Exchange Server Email Services",
-    "headline": "Windows Updates Disrupt Exchange Server Email Services",
-    "summary": "Microsoft’s October 13, 2026 Windows Server security updates unintentionally break Exchange Server 2016, 2019, and Subscription Edition, blocking webmail and causing undelivered messages. A workaround has been published; administrators are advised not to uninstall the updates until the issue is resolved.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-19T03:39:03.000Z",
-    "url": "https://cybersecuritynews.com/october-updates-break-exchange-server/",
-    "additionalSources": []
-  },
-  {
     "id": "https://cybernewsai.com/blog/connectwise-cloud-backup-m365-tenant-hijacking-defense",
     "sourceUrl": "https://cybernewsai.com/blog/connectwise-cloud-backup-m365-tenant-hijacking-defense",
     "title": "ConnectWise: Detect & Remediate M365 Tenant Hijacking",
@@ -189,42 +304,6 @@
       {
         "source": "Help Net Security",
         "sourceUrl": "https://www.helpnetsecurity.com/2026/10/16/cybersecurity-job-postings-talent-shortage/"
-      }
-    ]
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/connectwise-suspends-cloud-backup-after.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/connectwise-suspends-cloud-backup-after.html",
-    "title": "ConnectWise Suspends Cloud Backup After Unauthorized Access to Microsoft 365 Tenants",
-    "headline": "ConnectWise Suspends Cloud Backup After Unauthorized Access to Microsoft 365 Tenants",
-    "summary": "ConnectWise disabled seven application identities after attackers gained unauthorized access to its Cloud Backup service and compromised multiple Microsoft 365 tenants. The breach exposed tenant data and credentials, prompting immediate suspension of affected identities. ConnectWise is investigating the incident and working with Microsoft to mitigate further exposure.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-18T08:23:02.000Z",
-    "url": "https://thehackernews.com/2026/10/connectwise-suspends-cloud-backup-after.html",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/18/week-in-review-hidden-implant-in-ledger-wallets-linked-to-93m-theft-1500-npm-packages-exposed/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/18/week-in-review-hidden-implant-in-ledger-wallets-linked-to-93m-theft-1500-npm-packages-exposed/",
-    "title": "Hidden Implant in Ledger Wallets Linked to $93M Theft",
-    "headline": "Hidden Implant in Ledger Wallets Linked to $93M Theft",
-    "summary": "A covert implant discovered in Ledger hardware wallets facilitated a $93 million theft. The implant enabled attackers to exfiltrate private keys and transaction data, compromising wallet security. The incident underscores the need for firmware integrity checks and secure supply chain practices.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-18T08:00:30.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/18/week-in-review-hidden-implant-in-ledger-wallets-linked-to-93m-theft-1500-npm-packages-exposed/",
-    "additionalSources": [
-      {
-        "source": "SentinelOne",
-        "sourceUrl": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-42-8"
       }
     ]
   },
@@ -380,28 +459,6 @@
       {
         "source": "CISA",
         "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/16/cisa-urges-patching-critical-vulnerability-beyondtrust-remote-support"
-      }
-    ]
-  },
-  {
-    "id": "https://www.darkreading.com/application-security/fake-claude-chatgpt-attacks-developers-risk",
-    "sourceUrl": "https://www.darkreading.com/application-security/fake-claude-chatgpt-attacks-developers-risk",
-    "title": "Rise of AI‑Brand Impersonation Phishing Campaigns Targeting Developers",
-    "headline": "Rise of AI‑Brand Impersonation Phishing Campaigns Targeting Developers",
-    "summary": "Cybercriminals are increasing attacks that spoof popular AI brands such as Claude and ChatGPT, using ClickFix‑style tactics to lure enterprise employees. The campaigns aim to steal credentials and deliver malware, posing a significant phishing risk to developers and IT staff.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-16T19:49:30.000Z",
-    "url": "https://www.darkreading.com/application-security/fake-claude-chatgpt-attacks-developers-risk",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/uat-11985-uses-fake-event-invites-to.html"
-      },
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/employees-using-personal-chatgpt-at-work-heres-what-it-admins-need-to-do/"
       }
     ]
   },
@@ -5143,58 +5200,6 @@
     "source": "BleepingComputer",
     "publishedAt": "2026-10-02T14:00:10.000Z",
     "url": "https://www.bleepingcomputer.com/news/security/the-edr-blind-spot-3-ways-browser-attacks-evade-endpoint-telemetry/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/cybersecurity-operations/vulnerability-backlogs-ownership-problem",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/vulnerability-backlogs-ownership-problem",
-    "title": "Vulnerability Backlogs Are an Ownership Problem",
-    "headline": "Vulnerability Backlogs Are an Ownership Problem",
-    "summary": "Organizations lack clear ownership of assets, leading to unresolved vulnerability backlogs. The article argues that better vulnerability scanners are insufficient; companies must assign responsibility and authority to fix issues. It emphasizes governance and accountability as key to reducing security gaps.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-02T14:00:00.000Z",
-    "url": "https://www.darkreading.com/cybersecurity-operations/vulnerability-backlogs-ownership-problem",
-    "additionalSources": []
-  },
-  {
-    "id": "https://blog.cloudflare.com/introducing-web-search-api/",
-    "sourceUrl": "https://blog.cloudflare.com/introducing-web-search-api/",
-    "title": "Introducing Web Search API via AI Gateway",
-    "headline": "Introducing Web Search API via AI Gateway",
-    "summary": "Cloudflare’s AI Gateway now offers a native web search API, partnering with Ceramic.ai, Exa, and Linkup. Developers can inject real‑time web context into model inference via REST APIs or Workers bindings. The feature expands AI capabilities, enabling dynamic, up‑to‑date information retrieval during inference calls.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "publishedAt": "2026-10-02T13:28:10.000Z",
-    "url": "https://blog.cloudflare.com/introducing-web-search-api/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/macos-users-targeted-by-fake-zoom-installer-carrying-cloudsyncd-backdoor/",
-    "sourceUrl": "https://www.securityweek.com/macos-users-targeted-by-fake-zoom-installer-carrying-cloudsyncd-backdoor/",
-    "title": "Fake Zoom Installer Distributes CloudSyncD Backdoor on macOS",
-    "headline": "Fake Zoom Installer Distributes CloudSyncD Backdoor on macOS",
-    "summary": "A fake Zoom installer targeting macOS users drops a 756 KB Mach‑O backdoor named CloudSyncD, which extracts itself at runtime. The malicious dropper can provide remote access to infected systems, enabling attackers to exfiltrate data or install additional malware. Users should verify Zoom downloads from official sources and keep macOS updated.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-02T13:15:00.000Z",
-    "url": "https://www.securityweek.com/macos-users-targeted-by-fake-zoom-installer-carrying-cloudsyncd-backdoor/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://blog.cloudflare.com/enterprise-for-all-update/",
-    "sourceUrl": "https://blog.cloudflare.com/enterprise-for-all-update/",
-    "title": "Updates on our pledge to make Cloudflare features accessible to everyone",
-    "headline": "Updates on our pledge to make Cloudflare features accessible to everyone",
-    "summary": "Cloudflare reports progress on its commitment to eliminate two-tier product access, expanding Logpush, multi-account governance, and higher platform limits to all accounts. The company outlines internal testing and future plans for broader feature availability.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "publishedAt": "2026-10-02T13:00:00.000Z",
-    "url": "https://blog.cloudflare.com/enterprise-for-all-update/",
     "additionalSources": []
   }
 ]
