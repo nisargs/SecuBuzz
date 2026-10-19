@@ -88,6 +88,10 @@
       3. *Targeted Push Alerting ('Pager Mode')*: Optional alert preference to only buzz device when Critical/High threats touch user's selected vendors.
     - **100% Local On-Device Architecture**: User stack saved in local `AsyncStorage` on device; zero tracking, zero cloud database cost, zero enterprise compliance risk.
   - **P0: EPSS Threat Enrichment**: Display probability percentile alongside CVSS and CISA KEV on CVE advisory cards.
+  - **P1: Android Home Screen Widget (Jose's Community Request)**:
+    - User/tester Jose requested an Android home screen widget.
+    - Vision: Glance / AppWidget displaying the latest 60-word critical threat brief or active CISA KEV zero-day counter directly on the Android home screen without needing to open the app.
+    - Technical evaluation: Evaluate `expo-widgets` or a custom Android Glance AppWidgetProvider config plugin for Expo SDK 57.
   - **P1: Structured Threat Timeline**: Visual lifecycle (`Disclosed → PoC → Exploit → CISA KEV → Patch`) indicating what changed.
   - **P1: Authoritative NVD Vector Integration**: Pull CVSS v3.1/v4.0 vector strings directly from NIST NVD API.
   - **P2: Cloudflare Monetization Gateway (Agent & Scraper Micropayments)**:
@@ -179,6 +183,22 @@
   - Cloudflare: Worker (100k req/day free), R2 (10GB / 1M writes free), D1 (5M reads / 100k writes free).
   - GitHub Actions: 2,000 runner minutes/month free (~480 min used with 1-hour cron, leaving ~1,520 free minutes).
 
-
-
-
+## 12. Saved Post-Approval Execution Checklist (On Hold / For Later)
+- [ ] **LinkedIn Profile Integration (Nisarg Soni - `soni-nisarg`)**:
+  - Add `https://secubuzz.com` to Featured links (headline, 60-word briefs description).
+  - Add "SecuBuzz Threat Intelligence Platform" to Projects section with tags (Threat Intel, React Native, Cloudflare Workers, CISA KEV, EPSS).
+  - Optional Headline tag: *"Creator of SecuBuzz — 60-Word Cybersecurity Threat Intelligence Assistant"*.
+- [ ] **HetrixTools Uptime & Watchdog Setup ($0.00 Free Tier)**:
+  - 1-minute monitors for `https://secubuzz.com/health` (feed freshness watchdog), `https://secubuzz.com/` (web companion), and `https://secubuzz.com/api/advisories` (CISA KEV API).
+  - Connect free Telegram or Discord webhook for 0-latency push alerts if feed age ever exceeds thresholds.
+- [ ] **Bing Webmaster Tools Ongoing Inspection**:
+  - Review sitemap indexing progress (2,108 URLs submitted).
+  - Check AI Performance (BETA) tab for Microsoft Copilot citation tracking.
+  - (Optional) Submit next 100 advisory URLs after daily priority quota resets.
+- [ ] **P0 Feature Development: "My Stack / Am I Affected?" (v1.1.0)**:
+  - Vendor Official PSIRT Feeds (Palo Alto, Microsoft MSRC, Cisco, Fortinet, Ivanti).
+  - Local on-device `AsyncStorage` stack selection.
+  - "AFFECTS YOUR STACK" visual alert badge on CISA KEV cards.
+- [ ] **P1 Feature Development: Android Home Screen Widget (Jose's Community Request)**:
+  - Native home screen widget showing latest Critical brief / CISA KEV counter.
+- *(Note: AMOLED Black mode `#000000` is already successfully built and deployed in Release v1.0.3 / Version Code 9).*
