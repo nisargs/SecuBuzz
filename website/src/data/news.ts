@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "adfection-exploits-zero-click-ad-delivery-for-spyw-36726c",
+    "title": "AdFection Exploits Zero-Click Ad Delivery for Spyware",
+    "summary": "AdFection leverages targeted ad bidding to deliver spyware without user interaction, enabling stealth tracking of individuals and organizations. The technique uses ad impressions as a vector, bypassing traditional click-based infection methods. Mitigation requires monitoring ad traffic and blocking suspicious ad exchanges.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/data-privacy/adfection-online-ads-spyware-delivery",
+    "publishedAt": "2026-10-19T19:55:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "adfection-exploits-zero-click-ad-delivery-for-spyw",
+      "article-36726c",
+      "36726c",
+      "adfection-exploits-zero-click-ad-delivery-for-spyware"
+    ]
+  },
+  {
     "slug": "judge-denies-whatsapp-s-bid-to-hold-spyware-maker-56a8b6",
     "title": "Judge denies WhatsApp’s bid to hold spyware maker in contempt",
     "summary": "A federal judge rejected WhatsApp’s request to hold NSO Group in contempt over alleged spyware use. WhatsApp claimed NSO violated a 2025 injunction. The judge ruled WhatsApp failed to provide sufficient information, weakening its case. The decision limits legal leverage against the spyware maker.",
@@ -939,24 +957,6 @@ export const news: NewsBrief[] = [
       "article-4a5295",
       "4a5295",
       "malfex-how-to-detect-block-imgdecode-npm-shellcode-loader"
-    ]
-  },
-  {
-    "slug": "israeli-ad-firm-used-as-delivery-channel-for-candi-6c76fe",
-    "title": "Israeli Ad Firm Used as Delivery Channel for Candiru Spyware",
-    "summary": "Discover-Tech’s advertising platform was leveraged by threat actors to deliver the Candiru zero‑click spyware, allowing them to fingerprint and track devices at scale. The campaign enables attackers to infect selected targets without user interaction, expanding the reach of the spyware.",
-    "category": "Malware",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/israeli-ad-firm-doubled-as-candirus-zero-click-spyware-delivery-channel/",
-    "publishedAt": "2026-10-17T11:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "israeli-ad-firm-used-as-delivery-channel-for-candi",
-      "article-6c76fe",
-      "6c76fe",
-      "israeli-ad-firm-used-as-delivery-channel-for-candiru-spyware"
     ]
   },
   {

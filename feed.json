@@ -1,5 +1,23 @@
 [
   {
+    "id": "https://www.darkreading.com/data-privacy/adfection-online-ads-spyware-delivery",
+    "sourceUrl": "https://www.darkreading.com/data-privacy/adfection-online-ads-spyware-delivery",
+    "title": "AdFection Exploits Zero-Click Ad Delivery for Spyware",
+    "headline": "AdFection Exploits Zero-Click Ad Delivery for Spyware",
+    "summary": "AdFection leverages targeted ad bidding to deliver spyware without user interaction, enabling stealth tracking of individuals and organizations. The technique uses ad impressions as a vector, bypassing traditional click-based infection methods. Mitigation requires monitoring ad traffic and blocking suspicious ad exchanges.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-19T19:55:01.000Z",
+    "url": "https://www.darkreading.com/data-privacy/adfection-online-ads-spyware-delivery",
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/israeli-ad-firm-doubled-as-candirus-zero-click-spyware-delivery-channel/"
+      }
+    ]
+  },
+  {
     "id": "https://therecord.media/whatsapp-denied-appeal-alleged-nso-group-violation-injunction",
     "sourceUrl": "https://therecord.media/whatsapp-denied-appeal-alleged-nso-group-violation-injunction",
     "title": "Judge denies WhatsApp’s bid to hold spyware maker in contempt",
@@ -764,24 +782,6 @@
     "publishedAt": "2026-10-17T14:45:26.000Z",
     "url": "https://cybernewsai.com/blog/malfex-imgdecode-npm-shellcode-loader-defense",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/israeli-ad-firm-doubled-as-candirus-zero-click-spyware-delivery-channel/",
-    "sourceUrl": "https://www.securityweek.com/israeli-ad-firm-doubled-as-candirus-zero-click-spyware-delivery-channel/",
-    "title": "Israeli Ad Firm Used as Delivery Channel for Candiru Spyware",
-    "headline": "Israeli Ad Firm Used as Delivery Channel for Candiru Spyware",
-    "summary": "Discover-Tech’s advertising platform was leveraged by threat actors to deliver the Candiru zero‑click spyware, allowing them to fingerprint and track devices at scale. The campaign enables attackers to infect selected targets without user interaction, expanding the reach of the spyware.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-17T11:00:00.000Z",
-    "url": "https://www.securityweek.com/israeli-ad-firm-doubled-as-candirus-zero-click-spyware-delivery-channel/",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/zero-click-attacks-used-targeted-ads-to-deliver-candiru-spyware/"
-      }
-    ]
   },
   {
     "id": "https://cybersecuritynews.com/openai-confirms-ai-model-hacked/",

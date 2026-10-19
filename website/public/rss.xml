@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Oct 2026 20:17:58 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 21:04:54 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AdFection Exploits Zero-Click Ad Delivery for Spyware</title>
+      <link>https://secubuzz.com/news/adfection-exploits-zero-click-ad-delivery-for-spyw-36726c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/adfection-exploits-zero-click-ad-delivery-for-spyw-36726c</guid>
+      <description><![CDATA[AdFection leverages targeted ad bidding to deliver spyware without user interaction, enabling stealth tracking of individuals and organizations. The technique uses ad impressions as a vector, bypassing traditional click-based infection methods. Mitigation requires monitoring ad traffic and blocking suspicious ad exchanges.]]></description>
+      <pubDate>Mon, 19 Oct 2026 19:55:01 GMT</pubDate>
+      <source url="https://www.darkreading.com/data-privacy/adfection-online-ads-spyware-delivery">Dark Reading</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Judge denies WhatsApp’s bid to hold spyware maker in contempt</title>
       <link>https://secubuzz.com/news/judge-denies-whatsapp-s-bid-to-hold-spyware-maker-56a8b6</link>
@@ -447,15 +456,6 @@
       <pubDate>Sun, 18 Oct 2026 12:59:30 GMT</pubDate>
       <source url="https://isc.sans.edu/diary/rss/33434">SANS Internet Storm Center</source>
       <category>Cloud</category>
-    </item>
-    <item>
-      <title>US Cybersecurity Job Postings Decline 26% as AI Security Engineer Demand Surges</title>
-      <link>https://secubuzz.com/news/us-cybersecurity-job-postings-decline-26-as-ai-sec-35a5c2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/us-cybersecurity-job-postings-decline-26-as-ai-sec-35a5c2</guid>
-      <description><![CDATA[US cybersecurity job postings fell 26% in the latest report, while demand for AI security engineers rose sharply. The CyberSN report highlights a mixed market, with overall hiring slowing but specialized roles in AI security experiencing significant growth. Employers are adjusting recruitment strategies to meet evolving skill demands.]]></description>
-      <pubDate>Sun, 18 Oct 2026 11:00:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/us-cybersecurity-job-postings-fall-26-as-ai-security-engineer-demand-soars/">SecurityWeek</source>
-      <category>Policy</category>
     </item>
   </channel>
 </rss>
