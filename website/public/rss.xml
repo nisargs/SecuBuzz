@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Oct 2026 05:12:26 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 07:49:33 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Broadcom Wi‑Fi Flaw Lets Nearby Attackers Run Code as Root on Routers</title>
+      <link>https://secubuzz.com/news/broadcom-wi-fi-flaw-lets-nearby-attackers-run-code-79de2c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/broadcom-wi-fi-flaw-lets-nearby-attackers-run-code-79de2c</guid>
+      <description><![CDATA[A flaw in Broadcom’s Wi‑Fi setup software allows an attacker within radio range to execute code with root privileges on Broadcom‑based routers without a network password or pairing step. The vulnerability was demonstrated against home gateways from three Belgian ISPs, including reading the device’s Wi‑Fi password.]]></description>
+      <pubDate>Mon, 19 Oct 2026 06:29:44 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/unpatched-broadcom-wi-fi-flaw-lets.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>OpenCode Console Breach May Expose AI Provider API Keys</title>
+      <link>https://secubuzz.com/news/opencode-console-breach-may-expose-ai-provider-api-1dfb62</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/opencode-console-breach-may-expose-ai-provider-api-1dfb62</guid>
+      <description><![CDATA[An intruder accessed a legacy OpenCode system on October 16 and potentially exposed stored OpenAI, Anthropic, and Google API keys used by teams in the OpenCode Console. The breach could compromise access to third‑party AI services for affected users.]]></description>
+      <pubDate>Mon, 19 Oct 2026 06:07:08 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/opencode-console-breach-may-have.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Google Releases Android AI Protections Against Scam Calls, Phishing, and OTP Theft</title>
+      <link>https://secubuzz.com/news/google-releases-android-ai-protections-against-sca-589dce</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-releases-android-ai-protections-against-sca-589dce</guid>
+      <description><![CDATA[Google announced new Android security features that use AI to detect and block scam calls, spoofed text messages, phishing links, and OTP theft. The update targets spoofed phone numbers, fake bank alerts, phishing pages, remote screen sharing, and AI‑generated voices to prevent users from divulging money or credentials.]]></description>
+      <pubDate>Mon, 19 Oct 2026 06:04:18 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/google-unveils-new-android-ai-protections/">Cyber Security News</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Bearer CLI Introduces Free Source‑Available SAST Tool</title>
+      <link>https://secubuzz.com/news/bearer-cli-introduces-free-source-available-sast-t-46bdd0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/bearer-cli-introduces-free-source-available-sast-t-46bdd0</guid>
+      <description><![CDATA[Bearer CLI is a free static application security testing tool that scans source code for vulnerabilities, prioritizing findings by the sensitive data they touch. It reads code without execution, aiming to help developers focus on high‑impact issues and reduce noise from low‑severity findings.]]></description>
+      <pubDate>Mon, 19 Oct 2026 05:30:38 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/19/bearer-cli-free-code-security-scanning-tool-sast/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>RPO and RTO Explained with a Real Disaster Recovery Example</title>
       <link>https://secubuzz.com/news/rpo-and-rto-explained-with-a-real-disaster-recover-3b7498</link>
@@ -107,15 +143,6 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>OpenCode Security Breach Exposes Third-Party API Keys of Console Users</title>
-      <link>https://secubuzz.com/news/opencode-security-breach-exposes-third-party-api-k-338293</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/opencode-security-breach-exposes-third-party-api-k-338293</guid>
-      <description><![CDATA[OpenCode disclosed a breach affecting 1.4% of its Console users, exposing third‑party API keys stored in affected workspaces. The incident is linked to a large‑scale distillation attack. The company is collaborating with Anthropic, OpenAI, and Google to mitigate the exposure.]]></description>
-      <pubDate>Sun, 18 Oct 2026 04:20:16 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/opencode-security-breach/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
       <title>Claude AI Deciphers 25-Year NSA Elliptic Curve Seed Mystery</title>
       <link>https://secubuzz.com/news/claude-ai-deciphers-25-year-nsa-elliptic-curve-see-78d446</link>
       <guid isPermaLink="true">https://secubuzz.com/news/claude-ai-deciphers-25-year-nsa-elliptic-curve-see-78d446</guid>
@@ -150,15 +177,6 @@
       <pubDate>Sat, 17 Oct 2026 11:00:00 GMT</pubDate>
       <source url="https://www.securityweek.com/israeli-ad-firm-doubled-as-candirus-zero-click-spyware-delivery-channel/">SecurityWeek</source>
       <category>Malware</category>
-    </item>
-    <item>
-      <title>Google Releases Chrome Update Fixing 10 Vulnerabilities, Including Memory Corruption Flaw</title>
-      <link>https://secubuzz.com/news/google-releases-chrome-update-fixing-10-vulnerabil-6b9308</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-releases-chrome-update-fixing-10-vulnerabil-6b9308</guid>
-      <description><![CDATA[Google issued a Chrome Stable update that patches 10 vulnerabilities across Windows, Mac, and Linux. The fix addresses one critical, six high‑severity, and three medium‑severity flaws, including a DOM memory corruption issue linked to Claude AI. Users are urged to install the update promptly.]]></description>
-      <pubDate>Sat, 17 Oct 2026 05:29:38 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/google-fixes-10-chrome-vulnerabilities/">Cyber Security News</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>Hackers Exploit Critical Collabora Online Flaw to Backdoor Nextcloud Servers</title>
@@ -438,24 +456,6 @@
       <pubDate>Fri, 16 Oct 2026 11:04:53 GMT</pubDate>
       <source url="https://www.schneier.com/blog/archives/2026/10/backdooring-open-weight-ai-models.html">Schneier on Security</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>F5 and Juniper Networks Issue Patches for Critical Vulnerabilities</title>
-      <link>https://secubuzz.com/news/f5-and-juniper-networks-issue-patches-for-critical-4f2ace</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/f5-and-juniper-networks-issue-patches-for-critical-4f2ace</guid>
-      <description><![CDATA[F5 and Juniper Networks have released patches for critical security flaws that could allow attackers to execute remote code and seize full control of affected devices. The vulnerabilities pose a high risk of device takeover, necessitating immediate application of the vendor‑issued updates to protect network infrastructure.]]></description>
-      <pubDate>Fri, 16 Oct 2026 09:54:34 GMT</pubDate>
-      <source url="https://www.securityweek.com/f5-juniper-networks-patch-critical-vulnerabilities/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>CERT‑In Warns of AI‑Powered Cyberattacks Reducing Response Time</title>
-      <link>https://secubuzz.com/news/cert-in-warns-of-ai-powered-cyberattacks-reducing-431489</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cert-in-warns-of-ai-powered-cyberattacks-reducing-431489</guid>
-      <description><![CDATA[India’s CERT‑In issued a critical advisory on October 15, 2026, alerting that hackers are deploying AI agents to accelerate cyberattacks, cutting the interval between system access and damage from days to hours. The advisory cites incidents against Indian organizations and unauthorized AI activity beyond approved research.]]></description>
-      <pubDate>Fri, 16 Oct 2026 09:06:40 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/cert-in-warns-hackers-using-ai-agents/">Cyber Security News</source>
-      <category>Policy</category>
     </item>
   </channel>
 </rss>

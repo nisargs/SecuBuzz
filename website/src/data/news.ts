@@ -11,6 +11,78 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "broadcom-wi-fi-flaw-lets-nearby-attackers-run-code-79de2c",
+    "title": "Broadcom Wi‑Fi Flaw Lets Nearby Attackers Run Code as Root on Routers",
+    "summary": "A flaw in Broadcom’s Wi‑Fi setup software allows an attacker within radio range to execute code with root privileges on Broadcom‑based routers without a network password or pairing step. The vulnerability was demonstrated against home gateways from three Belgian ISPs, including reading the device’s Wi‑Fi password.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/unpatched-broadcom-wi-fi-flaw-lets.html",
+    "publishedAt": "2026-10-19T06:29:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "broadcom-wi-fi-flaw-lets-nearby-attackers-run-code",
+      "article-79de2c",
+      "79de2c",
+      "broadcom-wi-fi-flaw-lets-nearby-attackers-run-code-as-root-o"
+    ]
+  },
+  {
+    "slug": "opencode-console-breach-may-expose-ai-provider-api-1dfb62",
+    "title": "OpenCode Console Breach May Expose AI Provider API Keys",
+    "summary": "An intruder accessed a legacy OpenCode system on October 16 and potentially exposed stored OpenAI, Anthropic, and Google API keys used by teams in the OpenCode Console. The breach could compromise access to third‑party AI services for affected users.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/opencode-console-breach-may-have.html",
+    "publishedAt": "2026-10-19T06:07:08.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "opencode-console-breach-may-expose-ai-provider-api",
+      "article-1dfb62",
+      "1dfb62",
+      "opencode-console-breach-may-expose-ai-provider-api-keys"
+    ]
+  },
+  {
+    "slug": "google-releases-android-ai-protections-against-sca-589dce",
+    "title": "Google Releases Android AI Protections Against Scam Calls, Phishing, and OTP Theft",
+    "summary": "Google announced new Android security features that use AI to detect and block scam calls, spoofed text messages, phishing links, and OTP theft. The update targets spoofed phone numbers, fake bank alerts, phishing pages, remote screen sharing, and AI‑generated voices to prevent users from divulging money or credentials.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/google-unveils-new-android-ai-protections/",
+    "publishedAt": "2026-10-19T06:04:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-releases-android-ai-protections-against-sca",
+      "article-589dce",
+      "589dce",
+      "google-releases-android-ai-protections-against-scam-calls-ph"
+    ]
+  },
+  {
+    "slug": "bearer-cli-introduces-free-source-available-sast-t-46bdd0",
+    "title": "Bearer CLI Introduces Free Source‑Available SAST Tool",
+    "summary": "Bearer CLI is a free static application security testing tool that scans source code for vulnerabilities, prioritizing findings by the sensitive data they touch. It reads code without execution, aiming to help developers focus on high‑impact issues and reduce noise from low‑severity findings.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/19/bearer-cli-free-code-security-scanning-tool-sast/",
+    "publishedAt": "2026-10-19T05:30:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "bearer-cli-introduces-free-source-available-sast-t",
+      "article-46bdd0",
+      "46bdd0",
+      "bearer-cli-introduces-free-source-available-sast-tool"
+    ]
+  },
+  {
     "slug": "rpo-and-rto-explained-with-a-real-disaster-recover-3b7498",
     "title": "RPO and RTO Explained with a Real Disaster Recovery Example",
     "summary": "Matthew Burden, CEO of BlackBox Hosting, explains the difference between recovery point objective (RPO) and recovery time objective (RTO). RPO defines the maximum data loss in time, while RTO defines the maximum downtime a business can tolerate. The video emphasizes that backups do not guarantee quick recovery and that quick recovery is ineffective if data is stale.",
@@ -207,24 +279,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "opencode-security-breach-exposes-third-party-api-k-338293",
-    "title": "OpenCode Security Breach Exposes Third-Party API Keys of Console Users",
-    "summary": "OpenCode disclosed a breach affecting 1.4% of its Console users, exposing third‑party API keys stored in affected workspaces. The incident is linked to a large‑scale distillation attack. The company is collaborating with Anthropic, OpenAI, and Google to mitigate the exposure.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/opencode-security-breach/",
-    "publishedAt": "2026-10-18T04:20:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "opencode-security-breach-exposes-third-party-api-k",
-      "article-338293",
-      "338293",
-      "opencode-security-breach-exposes-third-party-api-keys-of-con"
-    ]
-  },
-  {
     "slug": "claude-ai-deciphers-25-year-nsa-elliptic-curve-see-78d446",
     "title": "Claude AI Deciphers 25-Year NSA Elliptic Curve Seed Mystery",
     "summary": "Anthropic’s Claude research model traced the origins of five NSA-supplied elliptic curve seeds in under 30 minutes, revealing how public security parameters were selected. The discovery clarifies parameter selection without exposing keys or breaking encryption.",
@@ -294,24 +348,6 @@ export const news: NewsBrief[] = [
       "article-6c76fe",
       "6c76fe",
       "israeli-ad-firm-used-as-delivery-channel-for-candiru-spyware"
-    ]
-  },
-  {
-    "slug": "google-releases-chrome-update-fixing-10-vulnerabil-6b9308",
-    "title": "Google Releases Chrome Update Fixing 10 Vulnerabilities, Including Memory Corruption Flaw",
-    "summary": "Google issued a Chrome Stable update that patches 10 vulnerabilities across Windows, Mac, and Linux. The fix addresses one critical, six high‑severity, and three medium‑severity flaws, including a DOM memory corruption issue linked to Claude AI. Users are urged to install the update promptly.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/google-fixes-10-chrome-vulnerabilities/",
-    "publishedAt": "2026-10-17T05:29:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-releases-chrome-update-fixing-10-vulnerabil",
-      "article-6b9308",
-      "6b9308",
-      "google-releases-chrome-update-fixing-10-vulnerabilities-incl"
     ]
   },
   {
@@ -961,24 +997,6 @@ export const news: NewsBrief[] = [
       "article-4bb82c",
       "4bb82c",
       "mitre-att-ck-v20-adds-nine-new-techniques-covering-ai-exploi"
-    ]
-  },
-  {
-    "slug": "android-adds-ai-powered-scam-alerts-to-block-bank-13d09c",
-    "title": "Android Adds AI‑Powered Scam Alerts to Block Bank Impostors",
-    "summary": "Google has introduced AI‑powered scam alerts for Android, covering Google Messages and third‑party apps. The new protection mode expands scam alerts and blocks call‑forwarding and screen‑sharing scams. Android automatically intercepts threats before they reach users, reducing reliance on manual detection.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/16/android-enhanced-built-in-scam-protection/",
-    "publishedAt": "2026-10-16T08:53:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "android-adds-ai-powered-scam-alerts-to-block-bank",
-      "article-13d09c",
-      "13d09c",
-      "android-adds-ai-powered-scam-alerts-to-block-bank-impostors"
     ]
   },
   {
@@ -6249,24 +6267,6 @@ export const news: NewsBrief[] = [
       "article-2b4323",
       "2b4323",
       "updates-on-our-pledge-to-make-cloudflare-features-accessible"
-    ]
-  },
-  {
-    "slug": "cloudflare-enables-automation-for-leading-civil-so-54096a",
-    "title": "Cloudflare Enables Automation for Leading Civil Society Organizations",
-    "summary": "Cloudflare reports that leading civil society organizations are leveraging its platform to automate operations, improving efficiency and resilience. The initiative showcases how non‑profits can use Cloudflare’s security and performance services to streamline workflows, protect data, and scale services without dedicated IT teams.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/civil-society-automation/",
-    "publishedAt": "2026-10-02T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-enables-automation-for-leading-civil-so",
-      "article-54096a",
-      "54096a",
-      "cloudflare-enables-automation-for-leading-civil-society-orga"
     ]
   }
 ];
