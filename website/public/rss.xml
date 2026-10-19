@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Oct 2026 23:08:59 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 23:55:57 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Ransomware Operators Exploit PAN-OS CVE-2026-0257</title>
+      <link>https://secubuzz.com/news/ransomware-operators-exploit-pan-os-cve-2026-0257-20c806</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ransomware-operators-exploit-pan-os-cve-2026-0257-20c806</guid>
+      <description><![CDATA[Ransomware groups Spikey Scorpius and Tarnished Scorpius are actively exploiting the PAN-OS vulnerability CVE-2026-0257 to compromise Fortinet devices. The flaw allows unauthenticated remote code execution, enabling attackers to install ransomware payloads. Fortinet has released a patch; users must update immediately to prevent exploitation.]]></description>
+      <pubDate>Mon, 19 Oct 2026 22:35:42 GMT</pubDate>
+      <source url="https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/">Unit 42</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Nikkei Inc. Exposes 1.83 Million Records in Third Breach</title>
+      <link>https://secubuzz.com/news/nikkei-inc-exposes-1-83-million-records-in-third-b-75cd12</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/nikkei-inc-exposes-1-83-million-records-in-third-b-75cd12</guid>
+      <description><![CDATA[Nikkei Inc. disclosed a third data breach in a month, exposing 1.83 million personal records, including names, addresses, and contact details. The breach involved unauthorized access to internal databases, compromising sensitive employee and customer information. Nikkei has notified affected parties and is investigating the incident.]]></description>
+      <pubDate>Mon, 19 Oct 2026 21:49:48 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/nikkei-discloses-third-data-breach-in-a-month-18m-records-exposed/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Rank Math WordPress Plugin Compromised in Supply‑Chain Attack</title>
+      <link>https://secubuzz.com/news/rank-math-wordpress-plugin-compromised-in-supply-c-634cad</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rank-math-wordpress-plugin-compromised-in-supply-c-634cad</guid>
+      <description><![CDATA[Downloads of the Rank Math PRO plugin from the vendor’s official site contained malware that installed hidden backdoors on infected WordPress sites. The supply‑chain compromise was discovered last week and requires site owners to verify plugin integrity and remove malicious code.]]></description>
+      <pubDate>Mon, 19 Oct 2026 21:24:51 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/wordpress-seo-plugin-rank-math-compromised-to-backdoor-websites/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Researchers Penetrate Microsoft Tech Support Scam Operation</title>
+      <link>https://secubuzz.com/news/researchers-penetrate-microsoft-tech-support-scam-312422</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/researchers-penetrate-microsoft-tech-support-scam-312422</guid>
+      <description><![CDATA[Security researchers infiltrated a large‑scale Microsoft impersonation scam that uses a malicious traffic distribution system operated by a Russian organization. The operation abuses thousands of Cloudflare links to route traffic to malicious destinations.]]></description>
+      <pubDate>Mon, 19 Oct 2026 21:13:41 GMT</pubDate>
+      <source url="https://www.darkreading.com/threat-intelligence/microsoft-tech-support-scam-operation">Dark Reading</source>
+      <category>Cloud</category>
+    </item>
     <item>
       <title>AdFection Exploits Zero-Click Ad Delivery for Spyware</title>
       <link>https://secubuzz.com/news/adfection-exploits-zero-click-ad-delivery-for-spyw-36726c</link>
@@ -26,21 +62,21 @@
       <category>Malware</category>
     </item>
     <item>
-      <title>ConnectWise suspends Cloud Backup service after supply chain attack</title>
-      <link>https://secubuzz.com/news/connectwise-suspends-cloud-backup-service-after-su-5493b7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/connectwise-suspends-cloud-backup-service-after-su-5493b7</guid>
-      <description><![CDATA[ConnectWise halted its Cloud Backup service following confirmed unauthorized access linked to a supply chain compromise. The company investigated attempts of unauthorized access and, upon confirmation, suspended the service to mitigate risk. The incident underscores the need for rigorous supply chain security and rapid incident response.]]></description>
-      <pubDate>Mon, 19 Oct 2026 19:45:00 GMT</pubDate>
-      <source url="https://therecord.media/connectwise-suspends-cloud-backup-service-supply-chain-attack">The Record</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>Hackers Hijack AOMEI Update Servers to Distribute Malware</title>
       <link>https://secubuzz.com/news/hackers-hijack-aomei-update-servers-to-distribute-4f9539</link>
       <guid isPermaLink="true">https://secubuzz.com/news/hackers-hijack-aomei-update-servers-to-distribute-4f9539</guid>
       <description><![CDATA[Hackers compromised AOMEI’s update servers, injecting malware into the backup software’s promotional feature. The attackers briefly altered configuration files before restoring them, masking the intrusion. Users of the affected AOMEI backup product should verify integrity and apply the latest vendor patch.]]></description>
       <pubDate>Mon, 19 Oct 2026 19:40:58 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/hackers-hijack-aomei-update-servers-to-secretly-spread-malware/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>ConnectWise Disables Cloud Backups After Microsoft 365 Tenant Breach via ConnectWise Credentials</title>
+      <link>https://secubuzz.com/news/connectwise-disables-cloud-backups-after-microsoft-3c267f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/connectwise-disables-cloud-backups-after-microsoft-3c267f</guid>
+      <description><![CDATA[Attackers authenticated into Microsoft 365 tenants using compromised ConnectWise credentials, prompting ConnectWise to disable cloud backups for downstream MSPs. The incident highlights credential reuse risks and the potential for widespread tenant compromise. No confirmed customer impact yet.]]></description>
+      <pubDate>Mon, 19 Oct 2026 19:19:33 GMT</pubDate>
+      <source url="https://www.darkreading.com/identity-access-management-security/connectwise-disables-cloud-backups-downstream-msps">Dark Reading</source>
       <category>Breach</category>
     </item>
     <item>
@@ -134,15 +170,6 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>Rank Math PRO Hijacked to Deliver Self‑Restoring Backdoor</title>
-      <link>https://secubuzz.com/news/rank-math-pro-hijacked-to-deliver-self-restoring-b-6a6896</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rank-math-pro-hijacked-to-deliver-self-restoring-b-6a6896</guid>
-      <description><![CDATA[Copies of Rank Math PRO downloaded from rankmath.com or delivered as updates between 20:02 UTC on October 15 and 07:12 UTC on October 16 contained malware. Sites that installed and activated those copies should be treated as compromised, as the backdoor can self‑restore after removal.]]></description>
-      <pubDate>Mon, 19 Oct 2026 16:28:47 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/popular-wordpress-seo-plugin-rank-math.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
       <title>VK Service Disruptions After Data Center Drone Strike</title>
       <link>https://secubuzz.com/news/vk-service-disruptions-after-data-center-drone-str-317c6a</link>
       <guid isPermaLink="true">https://secubuzz.com/news/vk-service-disruptions-after-data-center-drone-str-317c6a</guid>
@@ -159,15 +186,6 @@
       <pubDate>Mon, 19 Oct 2026 14:55:23 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-game-app-crashes-caused-by-windows-kb5124010-preview-update/">BleepingComputer</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>CenterPoint Energy Data Breach Exposes Over 1 Million Texas Residents</title>
-      <link>https://secubuzz.com/news/centerpoint-energy-data-breach-exposes-over-1-mill-709ed3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/centerpoint-energy-data-breach-exposes-over-1-mill-709ed3</guid>
-      <description><![CDATA[CenterPoint Energy disclosed a data breach affecting over 1 million Texas residents. Unauthorized access to an external system exposed names, addresses, phone numbers, and email addresses. The breach involved credential theft and potential identity theft. Immediate remediation includes credential rotation and monitoring for suspicious activity.]]></description>
-      <pubDate>Mon, 19 Oct 2026 14:54:40 GMT</pubDate>
-      <source url="https://research.checkpoint.com/2026/19th-october-threat-intelligence-report/">Check Point Research</source>
-      <category>Breach</category>
     </item>
     <item>
       <title>OnlyFans Takedowns Reveal Vulnerable University and Government Sites</title>
@@ -278,15 +296,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Compromised Login Exposes Millions of California Student Records</title>
-      <link>https://secubuzz.com/news/compromised-login-exposes-millions-of-california-s-489e03</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/compromised-login-exposes-millions-of-california-s-489e03</guid>
-      <description><![CDATA[Intruders used stolen credentials to access an ETS SFTP server, copying student records dating back to 2006. The breach exposed personal data of millions of California students.]]></description>
-      <pubDate>Mon, 19 Oct 2026 11:55:50 GMT</pubDate>
-      <source url="https://www.securityweek.com/one-compromised-login-exposed-millions-of-california-students-records/">SecurityWeek</source>
-      <category>Breach</category>
-    </item>
-    <item>
       <title>Salesforce Agentforce Email-to-Case Governance Exploitation</title>
       <link>https://secubuzz.com/news/salesforce-agentforce-email-to-case-governance-exp-1b7c8c</link>
       <guid isPermaLink="true">https://secubuzz.com/news/salesforce-agentforce-email-to-case-governance-exp-1b7c8c</guid>
@@ -311,15 +320,6 @@
       <description><![CDATA[A newly registered domain, teams‑cloud.live, mimics Microsoft Teams’ login page. Security researcher Steven Lim flagged it five days after registration. The site harvests credentials from unsuspecting workplace users. Organizations should block the domain to prevent credential theft before any data is compromised.]]></description>
       <pubDate>Mon, 19 Oct 2026 11:40:57 GMT</pubDate>
       <source url="https://cybersecuritynews.com/teams-domain-login-page/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Exploited Fortinet Bug Linked to Stealthy FortiGate Implant in Telecom Hack</title>
-      <link>https://secubuzz.com/news/exploited-fortinet-bug-linked-to-stealthy-fortigat-10c46e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/exploited-fortinet-bug-linked-to-stealthy-fortigat-10c46e</guid>
-      <description><![CDATA[A persistent, stealthy FortiGate implant was deployed against a telecommunications organization, exploiting a Fortinet vulnerability. The implant enabled covert control and data exfiltration. The incident underscores the need for timely patching and monitoring of FortiGate devices for unauthorized activity.]]></description>
-      <pubDate>Mon, 19 Oct 2026 11:13:23 GMT</pubDate>
-      <source url="https://www.securityweek.com/exploited-fortinet-bug-linked-to-stealthy-fortigate-implant-in-telecom-hack/">SecurityWeek</source>
       <category>Breach</category>
     </item>
     <item>

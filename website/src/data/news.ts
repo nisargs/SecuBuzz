@@ -11,6 +11,79 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "ransomware-operators-exploit-pan-os-cve-2026-0257-20c806",
+    "title": "Ransomware Operators Exploit PAN-OS CVE-2026-0257",
+    "summary": "Ransomware groups Spikey Scorpius and Tarnished Scorpius are actively exploiting the PAN-OS vulnerability CVE-2026-0257 to compromise Fortinet devices. The flaw allows unauthenticated remote code execution, enabling attackers to install ransomware payloads. Fortinet has released a patch; users must update immediately to prevent exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Unit 42",
+    "sourceUrl": "https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/",
+    "publishedAt": "2026-10-19T22:35:42.000Z",
+    "cves": [
+      "CVE-2026-0257"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ransomware-operators-exploit-pan-os-cve-2026-0257",
+      "article-20c806",
+      "20c806"
+    ]
+  },
+  {
+    "slug": "nikkei-inc-exposes-1-83-million-records-in-third-b-75cd12",
+    "title": "Nikkei Inc. Exposes 1.83 Million Records in Third Breach",
+    "summary": "Nikkei Inc. disclosed a third data breach in a month, exposing 1.83 million personal records, including names, addresses, and contact details. The breach involved unauthorized access to internal databases, compromising sensitive employee and customer information. Nikkei has notified affected parties and is investigating the incident.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/nikkei-discloses-third-data-breach-in-a-month-18m-records-exposed/",
+    "publishedAt": "2026-10-19T21:49:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "nikkei-inc-exposes-1-83-million-records-in-third-b",
+      "article-75cd12",
+      "75cd12",
+      "nikkei-inc-exposes-1-83-million-records-in-third-breach"
+    ]
+  },
+  {
+    "slug": "rank-math-wordpress-plugin-compromised-in-supply-c-634cad",
+    "title": "Rank Math WordPress Plugin Compromised in Supply‑Chain Attack",
+    "summary": "Downloads of the Rank Math PRO plugin from the vendor’s official site contained malware that installed hidden backdoors on infected WordPress sites. The supply‑chain compromise was discovered last week and requires site owners to verify plugin integrity and remove malicious code.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/wordpress-seo-plugin-rank-math-compromised-to-backdoor-websites/",
+    "publishedAt": "2026-10-19T21:24:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rank-math-wordpress-plugin-compromised-in-supply-c",
+      "article-634cad",
+      "634cad",
+      "rank-math-wordpress-plugin-compromised-in-supply-chain-attac"
+    ]
+  },
+  {
+    "slug": "researchers-penetrate-microsoft-tech-support-scam-312422",
+    "title": "Researchers Penetrate Microsoft Tech Support Scam Operation",
+    "summary": "Security researchers infiltrated a large‑scale Microsoft impersonation scam that uses a malicious traffic distribution system operated by a Russian organization. The operation abuses thousands of Cloudflare links to route traffic to malicious destinations.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/threat-intelligence/microsoft-tech-support-scam-operation",
+    "publishedAt": "2026-10-19T21:13:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "researchers-penetrate-microsoft-tech-support-scam",
+      "article-312422",
+      "312422",
+      "researchers-penetrate-microsoft-tech-support-scam-operation"
+    ]
+  },
+  {
     "slug": "adfection-exploits-zero-click-ad-delivery-for-spyw-36726c",
     "title": "AdFection Exploits Zero-Click Ad Delivery for Spyware",
     "summary": "AdFection leverages targeted ad bidding to deliver spyware without user interaction, enabling stealth tracking of individuals and organizations. The technique uses ad impressions as a vector, bypassing traditional click-based infection methods. Mitigation requires monitoring ad traffic and blocking suspicious ad exchanges.",
@@ -47,24 +120,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "connectwise-suspends-cloud-backup-service-after-su-5493b7",
-    "title": "ConnectWise suspends Cloud Backup service after supply chain attack",
-    "summary": "ConnectWise halted its Cloud Backup service following confirmed unauthorized access linked to a supply chain compromise. The company investigated attempts of unauthorized access and, upon confirmation, suspended the service to mitigate risk. The incident underscores the need for rigorous supply chain security and rapid incident response.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/connectwise-suspends-cloud-backup-service-supply-chain-attack",
-    "publishedAt": "2026-10-19T19:45:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "connectwise-suspends-cloud-backup-service-after-su",
-      "article-5493b7",
-      "5493b7",
-      "connectwise-suspends-cloud-backup-service-after-supply-chain"
-    ]
-  },
-  {
     "slug": "hackers-hijack-aomei-update-servers-to-distribute-4f9539",
     "title": "Hackers Hijack AOMEI Update Servers to Distribute Malware",
     "summary": "Hackers compromised AOMEI’s update servers, injecting malware into the backup software’s promotional feature. The attackers briefly altered configuration files before restoring them, masking the intrusion. Users of the affected AOMEI backup product should verify integrity and apply the latest vendor patch.",
@@ -80,6 +135,24 @@ export const news: NewsBrief[] = [
       "article-4f9539",
       "4f9539",
       "hackers-hijack-aomei-update-servers-to-distribute-malware"
+    ]
+  },
+  {
+    "slug": "connectwise-disables-cloud-backups-after-microsoft-3c267f",
+    "title": "ConnectWise Disables Cloud Backups After Microsoft 365 Tenant Breach via ConnectWise Credentials",
+    "summary": "Attackers authenticated into Microsoft 365 tenants using compromised ConnectWise credentials, prompting ConnectWise to disable cloud backups for downstream MSPs. The incident highlights credential reuse risks and the potential for widespread tenant compromise. No confirmed customer impact yet.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/identity-access-management-security/connectwise-disables-cloud-backups-downstream-msps",
+    "publishedAt": "2026-10-19T19:19:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "connectwise-disables-cloud-backups-after-microsoft",
+      "article-3c267f",
+      "3c267f",
+      "connectwise-disables-cloud-backups-after-microsoft-365-tenan"
     ]
   },
   {
@@ -260,24 +333,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "rank-math-pro-hijacked-to-deliver-self-restoring-b-6a6896",
-    "title": "Rank Math PRO Hijacked to Deliver Self‑Restoring Backdoor",
-    "summary": "Copies of Rank Math PRO downloaded from rankmath.com or delivered as updates between 20:02 UTC on October 15 and 07:12 UTC on October 16 contained malware. Sites that installed and activated those copies should be treated as compromised, as the backdoor can self‑restore after removal.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/popular-wordpress-seo-plugin-rank-math.html",
-    "publishedAt": "2026-10-19T16:28:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rank-math-pro-hijacked-to-deliver-self-restoring-b",
-      "article-6a6896",
-      "6a6896",
-      "rank-math-pro-hijacked-to-deliver-self-restoring-backdoor"
-    ]
-  },
-  {
     "slug": "vk-service-disruptions-after-data-center-drone-str-317c6a",
     "title": "VK Service Disruptions After Data Center Drone Strike",
     "summary": "A drone strike on a VK data center caused widespread service disruptions, leading users to report difficulties loading news feeds, playing music, and accessing other platform features. The incident highlights the vulnerability of social media infrastructure to physical attacks.",
@@ -311,24 +366,6 @@ export const news: NewsBrief[] = [
       "article-4bdf26",
       "4bdf26",
       "microsoft-fixes-game-and-app-crashes-caused-by-windows-11-pr"
-    ]
-  },
-  {
-    "slug": "centerpoint-energy-data-breach-exposes-over-1-mill-709ed3",
-    "title": "CenterPoint Energy Data Breach Exposes Over 1 Million Texas Residents",
-    "summary": "CenterPoint Energy disclosed a data breach affecting over 1 million Texas residents. Unauthorized access to an external system exposed names, addresses, phone numbers, and email addresses. The breach involved credential theft and potential identity theft. Immediate remediation includes credential rotation and monitoring for suspicious activity.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Check Point Research",
-    "sourceUrl": "https://research.checkpoint.com/2026/19th-october-threat-intelligence-report/",
-    "publishedAt": "2026-10-19T14:54:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "centerpoint-energy-data-breach-exposes-over-1-mill",
-      "article-709ed3",
-      "709ed3",
-      "centerpoint-energy-data-breach-exposes-over-1-million-texas-"
     ]
   },
   {
@@ -548,24 +585,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "compromised-login-exposes-millions-of-california-s-489e03",
-    "title": "Compromised Login Exposes Millions of California Student Records",
-    "summary": "Intruders used stolen credentials to access an ETS SFTP server, copying student records dating back to 2006. The breach exposed personal data of millions of California students.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/one-compromised-login-exposed-millions-of-california-students-records/",
-    "publishedAt": "2026-10-19T11:55:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "compromised-login-exposes-millions-of-california-s",
-      "article-489e03",
-      "489e03",
-      "compromised-login-exposes-millions-of-california-student-rec"
-    ]
-  },
-  {
     "slug": "salesforce-agentforce-email-to-case-governance-exp-1b7c8c",
     "title": "Salesforce Agentforce Email-to-Case Governance Exploitation",
     "summary": "Salesforce Agentforce recommends using a Flow to trigger agents on record creation or case updates. Email-to-Case and Web-to-Case convert inbound messages into case records. When chained with a Flow, these standard features can bypass governance controls designed for software, exposing potential policy violations.",
@@ -617,24 +636,6 @@ export const news: NewsBrief[] = [
       "article-13ce99",
       "13ce99",
       "new-teams-based-phishing-domain-targets-workplace-logins"
-    ]
-  },
-  {
-    "slug": "exploited-fortinet-bug-linked-to-stealthy-fortigat-10c46e",
-    "title": "Exploited Fortinet Bug Linked to Stealthy FortiGate Implant in Telecom Hack",
-    "summary": "A persistent, stealthy FortiGate implant was deployed against a telecommunications organization, exploiting a Fortinet vulnerability. The implant enabled covert control and data exfiltration. The incident underscores the need for timely patching and monitoring of FortiGate devices for unauthorized activity.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/exploited-fortinet-bug-linked-to-stealthy-fortigate-implant-in-telecom-hack/",
-    "publishedAt": "2026-10-19T11:13:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "exploited-fortinet-bug-linked-to-stealthy-fortigat",
-      "article-10c46e",
-      "10c46e",
-      "exploited-fortinet-bug-linked-to-stealthy-fortigate-implant-"
     ]
   },
   {

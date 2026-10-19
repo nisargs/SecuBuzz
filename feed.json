@@ -1,5 +1,80 @@
 [
   {
+    "id": "https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/",
+    "sourceUrl": "https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/",
+    "title": "Ransomware Operators Exploit PAN-OS CVE-2026-0257",
+    "headline": "Ransomware Operators Exploit PAN-OS CVE-2026-0257",
+    "summary": "Ransomware groups Spikey Scorpius and Tarnished Scorpius are actively exploiting the PAN-OS vulnerability CVE-2026-0257 to compromise Fortinet devices. The flaw allows unauthenticated remote code execution, enabling attackers to install ransomware payloads. Fortinet has released a patch; users must update immediately to prevent exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Unit 42",
+    "publishedAt": "2026-10-19T22:35:42.000Z",
+    "url": "https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/",
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/exploited-fortinet-bug-linked-to-stealthy-fortigate-implant-in-telecom-hack/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/nikkei-discloses-third-data-breach-in-a-month-18m-records-exposed/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/nikkei-discloses-third-data-breach-in-a-month-18m-records-exposed/",
+    "title": "Nikkei Inc. Exposes 1.83 Million Records in Third Breach",
+    "headline": "Nikkei Inc. Exposes 1.83 Million Records in Third Breach",
+    "summary": "Nikkei Inc. disclosed a third data breach in a month, exposing 1.83 million personal records, including names, addresses, and contact details. The breach involved unauthorized access to internal databases, compromising sensitive employee and customer information. Nikkei has notified affected parties and is investigating the incident.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-19T21:49:48.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/nikkei-discloses-third-data-breach-in-a-month-18m-records-exposed/",
+    "additionalSources": [
+      {
+        "source": "Check Point Research",
+        "sourceUrl": "https://research.checkpoint.com/2026/19th-october-threat-intelligence-report/"
+      },
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/one-compromised-login-exposed-millions-of-california-students-records/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/wordpress-seo-plugin-rank-math-compromised-to-backdoor-websites/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/wordpress-seo-plugin-rank-math-compromised-to-backdoor-websites/",
+    "title": "Rank Math WordPress Plugin Compromised in Supply‑Chain Attack",
+    "headline": "Rank Math WordPress Plugin Compromised in Supply‑Chain Attack",
+    "summary": "Downloads of the Rank Math PRO plugin from the vendor’s official site contained malware that installed hidden backdoors on infected WordPress sites. The supply‑chain compromise was discovered last week and requires site owners to verify plugin integrity and remove malicious code.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-19T21:24:51.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/wordpress-seo-plugin-rank-math-compromised-to-backdoor-websites/",
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/connectwise-suspends-cloud-backup-service-supply-chain-attack"
+      },
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/popular-wordpress-seo-plugin-rank-math.html"
+      }
+    ]
+  },
+  {
+    "id": "https://www.darkreading.com/threat-intelligence/microsoft-tech-support-scam-operation",
+    "sourceUrl": "https://www.darkreading.com/threat-intelligence/microsoft-tech-support-scam-operation",
+    "title": "Researchers Penetrate Microsoft Tech Support Scam Operation",
+    "headline": "Researchers Penetrate Microsoft Tech Support Scam Operation",
+    "summary": "Security researchers infiltrated a large‑scale Microsoft impersonation scam that uses a malicious traffic distribution system operated by a Russian organization. The operation abuses thousands of Cloudflare links to route traffic to malicious destinations.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-19T21:13:41.000Z",
+    "url": "https://www.darkreading.com/threat-intelligence/microsoft-tech-support-scam-operation",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.darkreading.com/data-privacy/adfection-online-ads-spyware-delivery",
     "sourceUrl": "https://www.darkreading.com/data-privacy/adfection-online-ads-spyware-delivery",
     "title": "AdFection Exploits Zero-Click Ad Delivery for Spyware",
@@ -31,28 +106,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://therecord.media/connectwise-suspends-cloud-backup-service-supply-chain-attack",
-    "sourceUrl": "https://therecord.media/connectwise-suspends-cloud-backup-service-supply-chain-attack",
-    "title": "ConnectWise suspends Cloud Backup service after supply chain attack",
-    "headline": "ConnectWise suspends Cloud Backup service after supply chain attack",
-    "summary": "ConnectWise halted its Cloud Backup service following confirmed unauthorized access linked to a supply chain compromise. The company investigated attempts of unauthorized access and, upon confirmation, suspended the service to mitigate risk. The incident underscores the need for rigorous supply chain security and rapid incident response.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "The Record",
-    "publishedAt": "2026-10-19T19:45:00.000Z",
-    "url": "https://therecord.media/connectwise-suspends-cloud-backup-service-supply-chain-attack",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/rank-math-pro-wordpress-plugin-compromised-in-supply-chain-attack/"
-      },
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/19/connectwise-cloud-backup-suspended-security-incident/"
-      }
-    ]
-  },
-  {
     "id": "https://www.bleepingcomputer.com/news/security/hackers-hijack-aomei-update-servers-to-secretly-spread-malware/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-hijack-aomei-update-servers-to-secretly-spread-malware/",
     "title": "Hackers Hijack AOMEI Update Servers to Distribute Malware",
@@ -71,6 +124,24 @@
       {
         "source": "Cyber Security News",
         "sourceUrl": "https://cybersecuritynews.com/hackers-exploit-siteguard-waf-vulnerability/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.darkreading.com/identity-access-management-security/connectwise-disables-cloud-backups-downstream-msps",
+    "sourceUrl": "https://www.darkreading.com/identity-access-management-security/connectwise-disables-cloud-backups-downstream-msps",
+    "title": "ConnectWise Disables Cloud Backups After Microsoft 365 Tenant Breach via ConnectWise Credentials",
+    "headline": "ConnectWise Disables Cloud Backups After Microsoft 365 Tenant Breach via ConnectWise Credentials",
+    "summary": "Attackers authenticated into Microsoft 365 tenants using compromised ConnectWise credentials, prompting ConnectWise to disable cloud backups for downstream MSPs. The incident highlights credential reuse risks and the potential for widespread tenant compromise. No confirmed customer impact yet.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-19T19:19:33.000Z",
+    "url": "https://www.darkreading.com/identity-access-management-security/connectwise-disables-cloud-backups-downstream-msps",
+    "additionalSources": [
+      {
+        "source": "Sophos Threat Research",
+        "sourceUrl": "https://www.sophos.com/en-us/blog/connectwise-cloud-backup-application-abused-in-token-sweep"
       }
     ]
   },
@@ -233,19 +304,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://thehackernews.com/2026/10/popular-wordpress-seo-plugin-rank-math.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/popular-wordpress-seo-plugin-rank-math.html",
-    "title": "Rank Math PRO Hijacked to Deliver Self‑Restoring Backdoor",
-    "headline": "Rank Math PRO Hijacked to Deliver Self‑Restoring Backdoor",
-    "summary": "Copies of Rank Math PRO downloaded from rankmath.com or delivered as updates between 20:02 UTC on October 15 and 07:12 UTC on October 16 contained malware. Sites that installed and activated those copies should be treated as compromised, as the backdoor can self‑restore after removal.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-19T16:28:47.000Z",
-    "url": "https://thehackernews.com/2026/10/popular-wordpress-seo-plugin-rank-math.html",
-    "additionalSources": []
-  },
-  {
     "id": "https://therecord.media/russian-social-media-giant-vk-faces-disruptions-drone-strike-data-center",
     "sourceUrl": "https://therecord.media/russian-social-media-giant-vk-faces-disruptions-drone-strike-data-center",
     "title": "VK Service Disruptions After Data Center Drone Strike",
@@ -269,19 +327,6 @@
     "source": "BleepingComputer",
     "publishedAt": "2026-10-19T14:55:23.000Z",
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-game-app-crashes-caused-by-windows-kb5124010-preview-update/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://research.checkpoint.com/2026/19th-october-threat-intelligence-report/",
-    "sourceUrl": "https://research.checkpoint.com/2026/19th-october-threat-intelligence-report/",
-    "title": "CenterPoint Energy Data Breach Exposes Over 1 Million Texas Residents",
-    "headline": "CenterPoint Energy Data Breach Exposes Over 1 Million Texas Residents",
-    "summary": "CenterPoint Energy disclosed a data breach affecting over 1 million Texas residents. Unauthorized access to an external system exposed names, addresses, phone numbers, and email addresses. The breach involved credential theft and potential identity theft. Immediate remediation includes credential rotation and monitoring for suspicious activity.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Check Point Research",
-    "publishedAt": "2026-10-19T14:54:40.000Z",
-    "url": "https://research.checkpoint.com/2026/19th-october-threat-intelligence-report/",
     "additionalSources": []
   },
   {
@@ -456,24 +501,6 @@
     ]
   },
   {
-    "id": "https://www.securityweek.com/one-compromised-login-exposed-millions-of-california-students-records/",
-    "sourceUrl": "https://www.securityweek.com/one-compromised-login-exposed-millions-of-california-students-records/",
-    "title": "Compromised Login Exposes Millions of California Student Records",
-    "headline": "Compromised Login Exposes Millions of California Student Records",
-    "summary": "Intruders used stolen credentials to access an ETS SFTP server, copying student records dating back to 2006. The breach exposed personal data of millions of California students.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-19T11:55:50.000Z",
-    "url": "https://www.securityweek.com/one-compromised-login-exposed-millions-of-california-students-records/",
-    "additionalSources": [
-      {
-        "source": "Malwarebytes Labs",
-        "sourceUrl": "https://www.malwarebytes.com/blog/data-breaches/2026/10/millions-of-california-students-sensitive-data-stolen-in-breach"
-      }
-    ]
-  },
-  {
     "id": "https://thehackernews.com/2026/10/from-email-to-case-to-boardroom-how.html",
     "sourceUrl": "https://thehackernews.com/2026/10/from-email-to-case-to-boardroom-how.html",
     "title": "Salesforce Agentforce Email-to-Case Governance Exploitation",
@@ -511,24 +538,6 @@
     "publishedAt": "2026-10-19T11:40:57.000Z",
     "url": "https://cybersecuritynews.com/teams-domain-login-page/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/exploited-fortinet-bug-linked-to-stealthy-fortigate-implant-in-telecom-hack/",
-    "sourceUrl": "https://www.securityweek.com/exploited-fortinet-bug-linked-to-stealthy-fortigate-implant-in-telecom-hack/",
-    "title": "Exploited Fortinet Bug Linked to Stealthy FortiGate Implant in Telecom Hack",
-    "headline": "Exploited Fortinet Bug Linked to Stealthy FortiGate Implant in Telecom Hack",
-    "summary": "A persistent, stealthy FortiGate implant was deployed against a telecommunications organization, exploiting a Fortinet vulnerability. The implant enabled covert control and data exfiltration. The incident underscores the need for timely patching and monitoring of FortiGate devices for unauthorized activity.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-19T11:13:23.000Z",
-    "url": "https://www.securityweek.com/exploited-fortinet-bug-linked-to-stealthy-fortigate-implant-in-telecom-hack/",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/18/week-in-review-hidden-implant-in-ledger-wallets-linked-to-93m-theft-1500-npm-packages-exposed/"
-      }
-    ]
   },
   {
     "id": "https://www.schneier.com/blog/archives/2026/10/training-ais-to-solve-captchas.html",
