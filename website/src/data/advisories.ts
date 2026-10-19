@@ -2,6 +2,269 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-111064",
+    "slug": "cve-2026-111064",
+    "vendor": "Pip",
+    "product": "aiohttp",
+    "name": "aiohttp server lacks an initial request/header timeout",
+    "dateAdded": "2026-10-19",
+    "dueDate": "Immediate",
+    "cvss": 8.2,
+    "severity": "High",
+    "cwe": "CWE-770",
+    "ransomware": false,
+    "description": "The keepalive timeout was not used during the initial portion of a request.",
+    "requiredAction": "Upgrade aiohttp to version 3.14.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-5wr8-gcqf-gqf3"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111064"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-111063",
+    "slug": "cve-2026-111063",
+    "vendor": "Pip",
+    "product": "aiohttp",
+    "name": "AIOHTTP: Secure attribute not enforced for shared cookie",
+    "dateAdded": "2026-10-19",
+    "dueDate": "Immediate",
+    "cvss": 0,
+    "severity": "Low",
+    "cwe": "CWE-311",
+    "ransomware": false,
+    "description": "The Secure attribute was not being enforced for the shared cookie.",
+    "requiredAction": "Upgrade aiohttp to version 3.14.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-494j-54xm-rwp3"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111063"
+      }
+    ]
+  },
+  {
+    "cve": "GHSA-2g87-pp6c-29x5",
+    "slug": "ghsa-2g87-pp6c-29x5",
+    "vendor": "Pip",
+    "product": "aiohttp",
+    "name": "aiohttp: Multiple instances of excessive or unbounded memory/CPU use",
+    "dateAdded": "2026-10-19",
+    "dueDate": "Immediate",
+    "cvss": 8.7,
+    "severity": "High",
+    "cwe": "CWE-770",
+    "ransomware": false,
+    "description": "Multiple cases were found where aiohttp could use excessive or unbounded memory, or excessive CPU consumption on attacker controlled requests.",
+    "requiredAction": "Upgrade aiohttp to version 3.14.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-2g87-pp6c-29x5"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-111061",
+    "slug": "cve-2026-111061",
+    "vendor": "Rust (Cargo)",
+    "product": "russh",
+    "name": "russh: Unbounded memory allocation in agent protocol server via crafted constraint records",
+    "dateAdded": "2026-10-19",
+    "dueDate": "Immediate",
+    "cvss": 4.3,
+    "severity": "Medium",
+    "cwe": "CWE-770",
+    "ransomware": false,
+    "description": "russhkeys::agent::server::addkey (russh/src/keys/agent/server.rs:271-319) spawns a dedicated tokio task for every 5-byte SSHAGENTCONSTRAIN_LIFETIME record attached to an added key, each cloning the key blob and sleeping for the declared lifetime (up to ~136 years). The loop has no per-request task budget, and spawned tasks are not rolled back when the overall request fails.",
+    "requiredAction": "Upgrade russh to version 0.64.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-4wc5-f2rc-q74m"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111061"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-111062",
+    "slug": "cve-2026-111062",
+    "vendor": "Rust (Cargo)",
+    "product": "russh",
+    "name": "A russh SSH server accepts a publickey authentication whose signature uses a different algorithm than the one named in the request",
+    "dateAdded": "2026-10-19",
+    "dueDate": "Immediate",
+    "cvss": 2.3,
+    "severity": "Low",
+    "cwe": "CWE-347",
+    "ransomware": false,
+    "description": "In russh/src/server/encrypted.rs, serverreadauthrequestpk (0.63.3, around lines 880-990): The requested algorithm name (pubkeyalgo) is read and only used to decode the key: PublicKeyOrCertificate::decode(&pubkeyalgo, &pubkeykey). The derived hashalg is then dropped (PublicKeyOrCertificate::PublicKey { ref key, .. }).",
+    "requiredAction": "Upgrade russh to version 0.64.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-j7h2-66j4-ghjf"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111062"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-111059",
+    "slug": "cve-2026-111059",
+    "vendor": "Pip",
+    "product": "mercury",
+    "name": "Mercury: Stored / DOM Cross-Site Scripting (XSS): mr.Markdown renders untrusted content as raw, unsanitized HTML",
+    "dateAdded": "2026-10-19",
+    "dueDate": "Immediate",
+    "cvss": 6.1,
+    "severity": "Medium",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "Mercury turns Jupyter notebooks into shared web apps/dashboards. The mr.Markdown widget converts its input to HTML with python-markdown and no sanitization step. MarkdownWidget is an ipywidgets.HTML widget, whose value is written to the page as raw HTML (via innerHTML) with no sanitization, so the result reaches the DOM verbatim.",
+    "requiredAction": "Upgrade mercury to version 3.2.11 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-2658-85cv-9wwq"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111059"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-111057",
+    "slug": "cve-2026-111057",
+    "vendor": "Pip",
+    "product": "mercury",
+    "name": "Mercury: Unauthenticated Remote Code Execution in /api/terminals - access control bypass",
+    "dateAdded": "2026-10-19",
+    "dueDate": "Immediate",
+    "cvss": 10,
+    "severity": "Critical",
+    "cwe": "CWE-185",
+    "ransomware": false,
+    "description": "A missing comma in mercuryapp/blockhandler.py's BLOCKED_PATTERNS list causes the blocklist to fail to cover the /api/terminals endpoint. As a result, any unauthenticated attacker can spawn a full, interactive OS-level shell on the host running Mercury.",
+    "requiredAction": "Upgrade mercury to version 3.2.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-f8c7-rwf9-fmgm"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111057"
+      }
+    ]
+  },
+  {
+    "cve": "GHSA-953h-535j-jg2v",
+    "slug": "ghsa-953h-535j-jg2v",
+    "vendor": "Go",
+    "product": "ai-gateway · envoyproxy",
+    "name": "agent-router: MCP session resume does not verify the embedded anti-hijacking subject; default Helm seed makes session IDs forgeable",
+    "dateAdded": "2026-10-19",
+    "dueDate": "Immediate",
+    "cvss": 6.8,
+    "severity": "Medium",
+    "cwe": "CWE-798",
+    "ransomware": false,
+    "description": "The MCP proxy's client-facing session ID embeds the authenticated caller's subject (JWT sub claim) specifically as an anti-hijacking discriminator — matching the Model Context Protocol specification's documented session-hijacking guidance ( However, the session-resume path never checks that discriminator against the current caller's identity, so any client that obtains a session ID (its own or...",
+    "requiredAction": "Upgrade ai-gateway · envoyproxy to version 1.2.0-rc1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-953h-535j-jg2v"
+      }
+    ]
+  },
+  {
+    "cve": "GHSA-pcc4-rvhr-2pr8",
+    "slug": "ghsa-pcc4-rvhr-2pr8",
+    "vendor": "Pip",
+    "product": "graphifyy",
+    "name": "Graphify Fortran extractor: incomplete cpp #include hardening allows arbitrary host-file read/exfiltration when indexing an untrusted repo",
+    "dateAdded": "2026-10-19",
+    "dueDate": "Immediate",
+    "cvss": 6.8,
+    "severity": "Medium",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "The Fortran extractor's C-preprocessor step (graphify/extractors/fortran.py, cpppreprocess) applies an incomplete #include hardening. The -nostdinc -I /dev/null flags it relies on (comment \"Security (F-007)\") do not stop a capital-F Fortran source file from including absolute paths (#include \"/etc/passwd\") or from path-traversing out of the corpus (#include \"../../../../home/victim/.ssh/idrsa\").",
+    "requiredAction": "Upgrade graphifyy to version 0.9.70 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-pcc4-rvhr-2pr8"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-111058",
+    "slug": "cve-2026-111058",
+    "vendor": "Pip",
+    "product": "mercury",
+    "name": "Mercury: Unauthenticated Remote Code Execution via /api/kernels",
+    "dateAdded": "2026-10-19",
+    "dueDate": "Immediate",
+    "cvss": 9.8,
+    "severity": "Critical",
+    "cwe": "CWE-862",
+    "ransomware": false,
+    "description": "Mercury runs a JupyterLab server with anonymous access by default (mercuryapp/main.py sets --IdentityProvider.token='' when no --token/MERCURYTOKEN is given; when tokenless it also sets --ServerApp.disablecheckxsrf=True). It relies on a blocklist (mercuryapp/blockhandler.py BLOCKEDPATTERNS: /lab, /api/terminals, /api/shutdown, /files) to keep anonymous users off dangerous Jupyter endpoints.",
+    "requiredAction": "Upgrade mercury to version 3.2.6 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-rv4m-xm3f-3ccq"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111058"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-108372",
+    "slug": "cve-2026-108372",
+    "vendor": "Pip",
+    "product": "loopx",
+    "name": "LoopX serve-status permissive CORS policy exposes control-plane state and private Markdown files",
+    "dateAdded": "2026-10-19",
+    "dueDate": "Immediate",
+    "cvss": 7.1,
+    "severity": "High",
+    "cwe": "CWE-346",
+    "ransomware": false,
+    "description": "loopx serve-status sends Access-Control-Allow-Origin: on every response, including its unauthenticated GET routes. Because the endpoint is unauthenticated and bound to a fixed, well-known loopback port, any website the operator visits can read LoopX control-plane state and the contents of Markdown files inside every registered goal repo, using a plain fetch() with no user interaction.",
+    "requiredAction": "Upgrade loopx to version 0.4.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-vx2m-gpq4-8j5q"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108372"
+      }
+    ]
+  },
+  {
     "cve": "CVE-2026-102764",
     "slug": "cve-2026-102764",
     "vendor": "BeyondTrust",
@@ -1041,281 +1304,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104250"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-103929",
-    "slug": "cve-2026-103929",
-    "vendor": "Rust (Cargo)",
-    "product": "mise",
-    "name": "mise permits untrusted local configuration to override default shell arguments",
-    "dateAdded": "2026-10-15",
-    "dueDate": "Immediate",
-    "cvss": 7.8,
-    "severity": "High",
-    "cwe": "CWE-78",
-    "ransomware": false,
-    "description": "Untrusted local .mise.toml [settings] can set the shell interpreter args (unix/windows defaultinline / defaultfile shellargs), yielding arbitrary command execution, because those command-interpreter settings were not added to the globalonly denylist the CVE-2026-55448 fix relies on.",
-    "requiredAction": "Upgrade mise to version 2026.7.14 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-g74g-rg72-j2p3"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103929"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-100348",
-    "slug": "cve-2026-100348",
-    "vendor": "Go",
-    "product": "kin-openapi · getkin",
-    "name": "kin-openapi spec loader panics on a self-referential additionalProperties $ref (nil-pointer DoS)",
-    "dateAdded": "2026-10-15",
-    "dueDate": "Immediate",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-476",
-    "ransomware": false,
-    "description": "The defect ---------- Confirmed at HEAD (f0407d5, v0.144.0). openapi3/loader.go, inside resolveComponent's drill closure (around line 455), the case SchemaRef branch for pathPart == \"additionalProperties\" dereferences c.Value.AdditionalProperties with no nil-check on c.Value: case SchemaRef: if pathPart == \"additionalProperties\" { if ap := c.Value.AdditionalProperties.Has; ap != nil { // c.Value...",
-    "requiredAction": "Upgrade kin-openapi · getkin to version 0.145.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-mh7x-f8wq-4jhx"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100348"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-100347",
-    "slug": "cve-2026-100347",
-    "vendor": "Go",
-    "product": "kin-openapi · getkin",
-    "name": "kin-openapi: Unauthenticated panic (DoS) in openapi3filter legacy router via non-canonical/unsupported HTTP method on a static path",
-    "dateAdded": "2026-10-15",
-    "dueDate": "Immediate",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-20",
-    "ransomware": false,
-    "description": "The openapi3filter.ValidationHandler (the exported, documented request-validation middleware) hard-wires the legacy router (routers/legacy). That router matches the incoming request method verbatim against a trie built exclusively from upper-cased canonical HTTP methods.",
-    "requiredAction": "Upgrade kin-openapi · getkin to version 0.145.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-fh4f-47mf-f2gj"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100347"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-102603",
-    "slug": "cve-2026-102603",
-    "vendor": "Go",
-    "product": "server (v2) · gotify",
-    "name": "Gotify: Insufficiently Protected Password Change endpoint",
-    "dateAdded": "2026-10-15",
-    "dueDate": "Immediate",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-620",
-    "ransomware": false,
-    "description": "The password change endpoint (POST /current/user/password) in Gotify versions <= 2.9.1 does not require knowledge of the current password. An attacker in possession of a valid client token can set a new password for the affected user. Recovering the account requires administrator intervention or direct database access.",
-    "requiredAction": "Review repository advisory and update affected dependencies.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-3hcj-9m7p-wwm9"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102603"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-102527",
-    "slug": "cve-2026-102527",
-    "vendor": "npm",
-    "product": "nuxt-og-image",
-    "name": "Nuxt OG Image cache poisoning through derivable cache keys on unsigned dynamic image routes",
-    "dateAdded": "2026-10-15",
-    "dueDate": "Immediate",
-    "cvss": 6.9,
-    "severity": "Medium",
-    "cwe": "CWE-349",
-    "ransomware": false,
-    "description": "Vendor: Nuxt Product: Nuxt OG Image Version: 6.2.5 Description: Due to the specifics of caching and key generation in the Open Graph image cache created by the module, an unauthenticated attacker can modify the content of the image (for example, the title parameter) that is delivered to the user.",
-    "requiredAction": "Upgrade nuxt-og-image to version 6.7.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-2x6f-rp82-ppmj"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102527"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-100409",
-    "slug": "cve-2026-100409",
-    "vendor": "npm",
-    "product": "@opennextjs/cloudflare",
-    "name": "OpenNext Cloudflare: Cache interception can bypass middleware protection for encoded paths",
-    "dateAdded": "2026-10-15",
-    "dueDate": "Immediate",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-177",
-    "ransomware": false,
-    "description": "When cache interception is enabled, @opennextjs/cloudflare can interpret percent-encoded paths differently during middleware matching and cache lookup. An encoded request may fail to match authorization middleware, then be decoded into the cache key of a protected route. The cached response may consequently be returned without invoking the middleware.",
-    "requiredAction": "Upgrade @opennextjs/cloudflare to version 1.20.2 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-2vc4-c4r6-p6v6"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100409"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-100394",
-    "slug": "cve-2026-100394",
-    "vendor": "Go",
-    "product": "nezha · nezhahq",
-    "name": "Nezha Monitoring: Whole-instance DoS in Nezha dashboard: a member can crash the process for every tenant",
-    "dateAdded": "2026-10-15",
-    "dueDate": "Immediate",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-362",
-    "ransomware": false,
-    "description": "A single low-privilege RoleMember can take the entire Nezha dashboard offline, and with it every tenant's web UI, REST API, and agent connections, by racing two ordinary operations on their own service. The crash is a nil pointer dereference in the service-monitor worker at service/singleton/servicesentinel.go:601.",
-    "requiredAction": "Upgrade nezha · nezhahq to version 0.0.0-20260721131105-c893aa57867d or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-qjpp-gffx-2wm9"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100394"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-97394",
-    "slug": "cve-2026-97394",
-    "vendor": "Go",
-    "product": "kin-openapi · getkin",
-    "name": "kin-openapi: Nil-pointer dereference panic in openapi3filter for OpenAPI 3.1 array schemas missing items",
-    "dateAdded": "2026-10-15",
-    "dueDate": "Immediate",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-248",
-    "ransomware": false,
-    "description": "A nil-pointer dereference in openapi3filter lets any unauthenticated client crash a request handler with a single HTTP request against an OpenAPI 3.1 operation that declares type: array without items. OpenAPI 3.1 (JSON Schema 2020-12) permits omitting items, and doc.Validate() accepts such schemas with Schema.Items == nil. Request/response decoders then dereference Items with no nil check.",
-    "requiredAction": "Upgrade kin-openapi · getkin to version 0.143.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-p6wj-qrr4-pgh5"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97394"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-85990",
-    "slug": "cve-2026-85990",
-    "vendor": "Composer",
-    "product": "leantime/leantime",
-    "name": "Leantime: Any Authenticated User Can Self-Escalate to Admin via Unauthorized JSON-RPC Methods",
-    "dateAdded": "2026-10-15",
-    "dueDate": "Immediate",
-    "cvss": 8.8,
-    "severity": "High",
-    "cwe": "CWE-269",
-    "ransomware": false,
-    "description": "Any authenticated Leantime user - including the lowest-privilege readonly role - can escalate to full administrative access by calling the JSON-RPC method leantime.rpc.api.api.createApiKeyWithProjects with an attacker-chosen role value.",
-    "requiredAction": "Upgrade leantime/leantime to version 3.10.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-54mm-6729-r5wp"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85990"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-82416",
-    "slug": "cve-2026-82416",
-    "vendor": "Go",
-    "product": "frankenphp · dunglas",
-    "name": "FrankenPHP: Cross-request PHP session ID leak in worker mode when the session extension is a shared module",
-    "dateAdded": "2026-10-15",
-    "dueDate": "Immediate",
-    "cvss": 7.7,
-    "severity": "High",
-    "cwe": "CWE-362",
-    "ransomware": false,
-    "description": "In worker mode under concurrency, FrankenPHP can hand a PHP session id from one request to another when PHP's session extension is loaded as a shared module instead of being statically linked into the FrankenPHP binary.",
-    "requiredAction": "Upgrade frankenphp · dunglas to version 1.12.5 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-v3ph-cgqh-r8p5"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82416"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-77375",
-    "slug": "cve-2026-77375",
-    "vendor": "Go",
-    "product": "sftpgo (v2) · drakkan",
-    "name": "SFTPGo: Denial of service via malformed SSH channel request",
-    "dateAdded": "2026-10-15",
-    "dueDate": "Immediate",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-129",
-    "ransomware": false,
-    "description": "A flaw in the SSH service allows an authenticated client to crash the server by sending a malformed protocol message while opening a channel.",
-    "requiredAction": "Upgrade sftpgo (v2) · drakkan to version 2.7.5 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-q7pc-356p-hggc"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77375"
       }
     ]
   },
