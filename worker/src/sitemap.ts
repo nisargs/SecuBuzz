@@ -177,6 +177,12 @@ export function injectMetaTags(
         name: 'MiSo Labs',
         url: 'https://secubuzz.com',
       },
+      creator: {
+        '@type': 'Person',
+        name: 'Nisarg Soni',
+        jobTitle: 'Security Operations Analyst',
+        sameAs: 'https://www.linkedin.com/in/soni-nisarg/',
+      },
     };
   } else if (pathname === '/news') {
     title = 'Quick Cybersecurity News in 60 Words · SecuBuzz';
