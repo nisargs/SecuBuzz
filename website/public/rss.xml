@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Oct 2026 01:20:29 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 04:17:59 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Ransomware Threats Extend to Employees’ Families</title>
+      <link>https://secubuzz.com/news/ransomware-threats-extend-to-employees-families-5e5507</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ransomware-threats-extend-to-employees-families-5e5507</guid>
+      <description><![CDATA[Ransomware actors now target employees’ family members or friends, according to a 2026 Semperis report. The survey of 1,200 IT and security professionals found that 37% of organizations experienced such threats, indicating a shift beyond the workplace into personal networks.]]></description>
+      <pubDate>Mon, 19 Oct 2026 04:00:22 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/19/semperis-ransomware-employee-safety-report/">Help Net Security</source>
+      <category>Ransomware</category>
+    </item>
     <item>
       <title>ConnectWise: Detect &amp; Remediate M365 Tenant Hijacking</title>
       <link>https://secubuzz.com/news/connectwise-detect-remediate-m365-tenant-hijacking-358234</link>
@@ -446,15 +455,6 @@
       <description><![CDATA[MITRE released ATT&CK v20, adding nine Enterprise techniques that describe how attackers may target AI systems, steal application‑specific passwords to bypass MFA, and evade CAPTCHA checks. The update also expands coverage for industrial control systems and mobile devices, with detection guidance for the new behaviors.]]></description>
       <pubDate>Fri, 16 Oct 2026 08:58:16 GMT</pubDate>
       <source url="https://cybersecuritynews.com/mitre-attck-v20-released/">Cyber Security News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Android Adds AI‑Powered Scam Alerts to Block Bank Impostors</title>
-      <link>https://secubuzz.com/news/android-adds-ai-powered-scam-alerts-to-block-bank-13d09c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/android-adds-ai-powered-scam-alerts-to-block-bank-13d09c</guid>
-      <description><![CDATA[Google has introduced AI‑powered scam alerts for Android, covering Google Messages and third‑party apps. The new protection mode expands scam alerts and blocks call‑forwarding and screen‑sharing scams. Android automatically intercepts threats before they reach users, reducing reliance on manual detection.]]></description>
-      <pubDate>Fri, 16 Oct 2026 08:53:41 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/16/android-enhanced-built-in-scam-protection/">Help Net Security</source>
       <category>Policy</category>
     </item>
   </channel>

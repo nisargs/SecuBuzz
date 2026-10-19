@@ -1,5 +1,18 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/10/19/semperis-ransomware-employee-safety-report/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/19/semperis-ransomware-employee-safety-report/",
+    "title": "Ransomware Threats Extend to Employees’ Families",
+    "headline": "Ransomware Threats Extend to Employees’ Families",
+    "summary": "Ransomware actors now target employees’ family members or friends, according to a 2026 Semperis report. The survey of 1,200 IT and security professionals found that 37% of organizations experienced such threats, indicating a shift beyond the workplace into personal networks.",
+    "category": "RANSOMWARE",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-19T04:00:22.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/19/semperis-ransomware-employee-safety-report/",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybernewsai.com/blog/connectwise-cloud-backup-m365-tenant-hijacking-defense",
     "sourceUrl": "https://cybernewsai.com/blog/connectwise-cloud-backup-m365-tenant-hijacking-defense",
     "title": "ConnectWise: Detect & Remediate M365 Tenant Hijacking",
@@ -5191,24 +5204,6 @@
       {
         "source": "BleepingComputer",
         "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-says-threat-actors-are-ahead-in-the-early-ai-race/"
-      }
-    ]
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/openai-parts-ways-with-three-safety.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/openai-parts-ways-with-three-safety.html",
-    "title": "OpenAI Terminates Three Safety Researchers Over Data Leak",
-    "headline": "OpenAI Terminates Three Safety Researchers Over Data Leak",
-    "summary": "OpenAI fired three safety team members after they leaked private company information, violating internal policies. The incident involved unauthorized access to sensitive data and prompted an internal investigation. No external breach was reported, but the leak highlights risks of insider data mishandling.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-02T12:23:15.000Z",
-    "url": "https://thehackernews.com/2026/10/openai-parts-ways-with-three-safety.html",
-    "additionalSources": [
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/openai-software-attempted-to-secretly-scrape-data-from-dozens-of-websites"
       }
     ]
   }

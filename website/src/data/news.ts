@@ -11,6 +11,23 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "ransomware-threats-extend-to-employees-families-5e5507",
+    "title": "Ransomware Threats Extend to Employees’ Families",
+    "summary": "Ransomware actors now target employees’ family members or friends, according to a 2026 Semperis report. The survey of 1,200 IT and security professionals found that 37% of organizations experienced such threats, indicating a shift beyond the workplace into personal networks.",
+    "category": "Ransomware",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/19/semperis-ransomware-employee-safety-report/",
+    "publishedAt": "2026-10-19T04:00:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ransomware-threats-extend-to-employees-families",
+      "article-5e5507",
+      "5e5507"
+    ]
+  },
+  {
     "slug": "connectwise-detect-remediate-m365-tenant-hijacking-358234",
     "title": "ConnectWise: Detect & Remediate M365 Tenant Hijacking",
     "summary": "Attackers abused Microsoft 365 app identities to breach 300+ tenants, prompting ConnectWise to suspend its Cloud Backup service. The exploitation leveraged privileged app permissions to gain tenant control. Defenders should audit app identity permissions, enforce least privilege, and monitor for anomalous tenant activity.",
@@ -6248,24 +6265,6 @@ export const news: NewsBrief[] = [
       "microsoft-warns-ai-accelerates-attackers-edge",
       "article-1581e7",
       "1581e7"
-    ]
-  },
-  {
-    "slug": "openai-terminates-three-safety-researchers-over-da-515e6d",
-    "title": "OpenAI Terminates Three Safety Researchers Over Data Leak",
-    "summary": "OpenAI fired three safety team members after they leaked private company information, violating internal policies. The incident involved unauthorized access to sensitive data and prompted an internal investigation. No external breach was reported, but the leak highlights risks of insider data mishandling.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/openai-parts-ways-with-three-safety.html",
-    "publishedAt": "2026-10-02T12:23:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openai-terminates-three-safety-researchers-over-da",
-      "article-515e6d",
-      "515e6d",
-      "openai-terminates-three-safety-researchers-over-data-leak"
     ]
   }
 ];
