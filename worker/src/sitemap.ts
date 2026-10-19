@@ -263,6 +263,24 @@ export function injectMetaTags(
   } else if (pathname === '/about') {
     title = 'About SecuBuzz · MiSo Labs';
     description = 'SecuBuzz is an independent cybersecurity threat intelligence assistant built by MiSo Labs. No tracking, anonymous crash reports only.';
+    jsonLdObj = {
+      '@context': 'https://schema.org',
+      '@type': 'AboutPage',
+      name: 'About SecuBuzz',
+      url: 'https://secubuzz.com/about',
+      description: 'SecuBuzz is an independent cybersecurity threat intelligence assistant built by MiSo Labs.',
+      publisher: {
+        '@type': 'Organization',
+        name: 'MiSo Labs',
+        url: 'https://secubuzz.com',
+      },
+      creator: {
+        '@type': 'Person',
+        name: 'Nisarg Soni',
+        jobTitle: 'Security Operations Analyst',
+        sameAs: 'https://www.linkedin.com/in/soni-nisarg/',
+      },
+    };
   } else if (pathname === '/download') {
     title = 'Download SecuBuzz for Android · Quick Cybersecurity News';
     description = 'Download SecuBuzz for Android. Fast 60-word cybersecurity briefs and CISA zero-day alerts. Available globally on Google Play.';
