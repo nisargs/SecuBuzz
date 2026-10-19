@@ -452,9 +452,16 @@ export default {
     }
 
     try {
-      // Smart App Download Redirect & Click Tracking (/go/play, /app, /play)
-      if (url.pathname === '/go/play' || url.pathname === '/app' || url.pathname === '/play') {
-        const source = (url.searchParams.get('src') || url.searchParams.get('source') || 'direct').slice(0, 64);
+      // Smart App Download Redirect & Click Tracking (/go/play, /app, /play, /qr, /scan)
+      if (
+        url.pathname === '/go/play' ||
+        url.pathname === '/app' ||
+        url.pathname === '/play' ||
+        url.pathname === '/qr' ||
+        url.pathname === '/scan'
+      ) {
+        const defaultSource = (url.pathname === '/qr' || url.pathname === '/scan') ? 'qr_scan' : 'direct';
+        const source = (url.searchParams.get('src') || url.searchParams.get('source') || defaultSource).slice(0, 64);
         const country = request.headers.get('cf-ipcountry') || 'XX';
         const referer = (request.headers.get('Referer') || '').slice(0, 255);
         const userAgent = (request.headers.get('User-Agent') || '').slice(0, 255);
@@ -472,8 +479,12 @@ export default {
           }
         }
 
+        const playStoreTarget = source === 'direct'
+          ? 'https://play.google.com/store/apps/details?id=com.secubuzz.app'
+          : `https://play.google.com/store/apps/details?id=com.secubuzz.app&referrer=utm_source%3D${encodeURIComponent(source)}%26utm_medium%3Dwebsite`;
+
         const headers = new Headers({
-          'Location': 'https://play.google.com/store/apps/details?id=com.secubuzz.app',
+          'Location': playStoreTarget,
           'Cache-Control': 'no-cache, no-store, must-revalidate',
         });
         if (isNewCookie) {
@@ -485,6 +496,7 @@ export default {
           headers,
         });
       }
+
 
       // API: Telemetry for App Install Clicks & Repeat Readers (Private - Admin Only)
       if (url.pathname === '/api/analytics/install-clicks') {

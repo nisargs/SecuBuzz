@@ -16,7 +16,7 @@ import numpy as np
 from PIL import Image
 import cv2
 
-TARGET_URL = "https://play.google.com/store/apps/details?id=com.secubuzz.app"
+TARGET_URL = "https://secubuzz.com/qr"
 DESTINATIONS = [
     os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "assets", "qr.png")),
     os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "website", "public", "qr.png")),
@@ -28,7 +28,7 @@ def generate_qr():
 
     qr = qrcode.QRCode(
         version=None,
-        error_correction=qrcode.constants.ERROR_CORRECT_M,
+        error_correction=qrcode.constants.ERROR_CORRECT_H,
         box_size=1,
         border=0,
     )
@@ -38,10 +38,11 @@ def generate_qr():
     n_modules = len(matrix)
     print(f"[QR Gen] QR Matrix dimensions: {n_modules}x{n_modules} modules")
 
-    module_px = 48
+    module_px = 52
     qr_px = n_modules * module_px
     total_size = 2048
     pad = (total_size - qr_px) // 2
+
 
     # High-res 2048x2048 image with clean white background
     img = Image.new("RGB", (total_size, total_size), (255, 255, 255))
