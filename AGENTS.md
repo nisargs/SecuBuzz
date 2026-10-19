@@ -201,4 +201,10 @@
   - "AFFECTS YOUR STACK" visual alert badge on CISA KEV cards.
 - [ ] **P1 Feature Development: Android Home Screen Widget (Jose's Community Request)**:
   - Native home screen widget showing latest Critical brief / CISA KEV counter.
+- [ ] **Organic Marketing & Outreach Pipeline (Zero-Budget)**:
+  - **Clint Gibler (`tl;dr sec` / OpenAI)**: On hold until P0 "My Stack / Am I Affected?" (v1.1.0) is shipped on Google Play. Message templates preserved in `docs/MARKETING_PLAYBOOK.md`.
+  - **Reddit Developer Story**: On hold until account reaches 50–100 comment karma. Template preserved in `docs/MARKETING_PLAYBOOK.md` for `r/cybersecurity`, `r/sysadmin`, and `r/androidapps`.
+  - **Hacker News "Show HN"**: Target Tuesday/Wednesday 8:00–9:00 AM EDT focusing on $0 edge worker architecture, zero-tracking, and strict schema AI distillation.
+  - **Daily Morning LinkedIn Triage**: Daily 8:30 AM posts sharing 60-word technical briefs for active CVEs with EPSS scores.
 - *(Note: AMOLED Black mode `#000000` is already successfully built and deployed in Release v1.0.3 / Version Code 9).*
+
