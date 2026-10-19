@@ -11,6 +11,255 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "judge-denies-whatsapp-s-bid-to-hold-spyware-maker-56a8b6",
+    "title": "Judge denies WhatsApp’s bid to hold spyware maker in contempt",
+    "summary": "A federal judge rejected WhatsApp’s request to hold NSO Group in contempt over alleged spyware use. WhatsApp claimed NSO violated a 2025 injunction. The judge ruled WhatsApp failed to provide sufficient information, weakening its case. The decision limits legal leverage against the spyware maker.",
+    "category": "Malware",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/whatsapp-denied-appeal-alleged-nso-group-violation-injunction",
+    "publishedAt": "2026-10-19T19:49:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "judge-denies-whatsapp-s-bid-to-hold-spyware-maker",
+      "article-56a8b6",
+      "56a8b6",
+      "judge-denies-whatsapp-s-bid-to-hold-spyware-maker-in-contemp"
+    ]
+  },
+  {
+    "slug": "connectwise-suspends-cloud-backup-service-after-su-5493b7",
+    "title": "ConnectWise suspends Cloud Backup service after supply chain attack",
+    "summary": "ConnectWise halted its Cloud Backup service following confirmed unauthorized access linked to a supply chain compromise. The company investigated attempts of unauthorized access and, upon confirmation, suspended the service to mitigate risk. The incident underscores the need for rigorous supply chain security and rapid incident response.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/connectwise-suspends-cloud-backup-service-supply-chain-attack",
+    "publishedAt": "2026-10-19T19:45:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "connectwise-suspends-cloud-backup-service-after-su",
+      "article-5493b7",
+      "5493b7",
+      "connectwise-suspends-cloud-backup-service-after-supply-chain"
+    ]
+  },
+  {
+    "slug": "hackers-hijack-aomei-update-servers-to-distribute-4f9539",
+    "title": "Hackers Hijack AOMEI Update Servers to Distribute Malware",
+    "summary": "Hackers compromised AOMEI’s update servers, injecting malware into the backup software’s promotional feature. The attackers briefly altered configuration files before restoring them, masking the intrusion. Users of the affected AOMEI backup product should verify integrity and apply the latest vendor patch.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-hijack-aomei-update-servers-to-secretly-spread-malware/",
+    "publishedAt": "2026-10-19T19:40:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-hijack-aomei-update-servers-to-distribute",
+      "article-4f9539",
+      "4f9539",
+      "hackers-hijack-aomei-update-servers-to-distribute-malware"
+    ]
+  },
+  {
+    "slug": "bullhorn-disables-platform-amid-cyberattack-4fd992",
+    "title": "Bullhorn disables platform amid cyberattack",
+    "summary": "Bullhorn has shut down its staffing platform to contain a cyberattack that triggered a system-wide outage. The company has not disclosed the nature of the breach or affected data. Users are advised to monitor official channels for updates.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/bullhorn-takes-staffing-platform-offline-to-contain-cyberattack/",
+    "publishedAt": "2026-10-19T18:51:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "bullhorn-disables-platform-amid-cyberattack",
+      "article-4fd992",
+      "4fd992"
+    ]
+  },
+  {
+    "slug": "pegasus-spyware-targets-serbian-opposition-rector-23dd64",
+    "title": "Pegasus Spyware Targets Serbian Opposition Rector",
+    "summary": "Investigators discovered Pegasus spyware on the University of Belgrade rector’s phone amid a series of attacks preceding Serbia’s national elections. The intrusion grants remote access to the device, enabling surveillance of communications and data. No public patch exists; users should update iOS and monitor for suspicious activity.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/serbia-spyware-pegasus-elections",
+    "publishedAt": "2026-10-19T18:45:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "pegasus-spyware-targets-serbian-opposition-rector",
+      "article-23dd64",
+      "23dd64"
+    ]
+  },
+  {
+    "slug": "siemens-software-center-vulnerability-used-by-clic-5739bb",
+    "title": "Siemens Software Center vulnerability used by ClickFix malware",
+    "summary": "Attackers leveraged a flaw in Siemens Software Center, combining a legitimate signed copy with malicious DLLs to deliver ClickFix malware to Windows PCs. The vulnerability allows execution of arbitrary code via DLL injection, enabling full system compromise.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/siemens-software-center-vulnerability-exploited-in-clickfix-malware-attacks/",
+    "publishedAt": "2026-10-19T18:15:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "siemens-software-center-vulnerability-used-by-clic",
+      "article-5739bb",
+      "5739bb",
+      "siemens-software-center-vulnerability-used-by-clickfix-malwa"
+    ]
+  },
+  {
+    "slug": "drupal-field-ui-module-remote-code-execution-vulne-5987df",
+    "title": "Drupal Field UI Module Remote Code Execution Vulnerability",
+    "summary": "Drupal released a patch for a critical remote code execution flaw in the Field UI module, identified as CVE-2026-108097. The vulnerability allows unauthenticated attackers to execute arbitrary code on affected websites, potentially taking full control. The advisory SA-CORE-2026-014 recommends applying the latest security update immediately.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/drupal-rce-vulnerability/",
+    "publishedAt": "2026-10-19T18:13:51.000Z",
+    "cves": [
+      "CVE-2026-108097"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "drupal-field-ui-module-remote-code-execution-vulne",
+      "article-5987df",
+      "5987df",
+      "drupal-field-ui-module-remote-code-execution-vulnerability"
+    ]
+  },
+  {
+    "slug": "microsoft-warns-of-insider-threats-from-ai-agents-284d8f",
+    "title": "Microsoft Warns of Insider Threats from AI Agents",
+    "summary": "Microsoft cautions that AI agents can become insider threats by accessing company data, applications, and tools at high speed. The advisory advises treating AI agents as potential insider risks and implementing controls to monitor and limit their access.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/ai-models-as-insider-threats/",
+    "publishedAt": "2026-10-19T18:04:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-warns-of-insider-threats-from-ai-agents",
+      "article-284d8f",
+      "284d8f"
+    ]
+  },
+  {
+    "slug": "cloudflare-releases-clairic-extraction-model-260d97",
+    "title": "Cloudflare Releases Clairic Extraction Model",
+    "summary": "Cloudflare has launched Clairic, a System One extraction model that can parse, compute, estimate, and forecast data from unstructured inputs. The model expands Cloudflare’s data processing capabilities, enabling more advanced analytics on diverse data sources. No security implications are reported.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/clairic-extraction-model/",
+    "publishedAt": "2026-10-19T17:48:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cloudflare-releases-clairic-extraction-model",
+      "article-260d97",
+      "260d97"
+    ]
+  },
+  {
+    "slug": "plex-media-server-exploitation-chain-deploys-crypt-71cc58",
+    "title": "Plex Media Server Exploitation Chain Deploys Crypto Miners and Proxy Backdoor",
+    "summary": "Threat actors are exploiting a chain of four vulnerabilities in Plex Media Server, dubbed Plex2Shell, to install cryptocurrency miners and a Linux reverse‑proxy backdoor. The attack chain was publicly demonstrated with a PoC, and attackers now use it to compromise servers and redirect traffic.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/hackers-exploit-plex2shell-flaws-to.html",
+    "publishedAt": "2026-10-19T17:32:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "plex-media-server-exploitation-chain-deploys-crypt",
+      "article-71cc58",
+      "71cc58",
+      "plex-media-server-exploitation-chain-deploys-crypto-miners-a"
+    ]
+  },
+  {
+    "slug": "opencode-api-keys-exposed-in-security-breach-4af3f5",
+    "title": "OpenCode API Keys Exposed in Security Breach",
+    "summary": "OpenCode notified a limited user base that API keys used with external providers were exposed following a breach. The leak compromises authentication credentials, potentially allowing unauthorized access to third‑party services. Users should rotate keys immediately and enable multi‑factor authentication where possible.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/opencode-hack-exposes-api-keys-amid-ai-distillation-attacks/",
+    "publishedAt": "2026-10-19T17:27:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "opencode-api-keys-exposed-in-security-breach",
+      "article-4af3f5",
+      "4af3f5"
+    ]
+  },
+  {
+    "slug": "bright-security-launches-star-fuzzer-agentic-fuzzi-8f49f7",
+    "title": "Bright Security Launches STAR Fuzzer, Agentic Fuzzing Tool",
+    "summary": "Bright Security released STAR Fuzzer, an evolutionary engine that generates its own harnesses and proves findings. The open‑source research run identified high or critical memory‑safety bugs in 45% of tested projects, demonstrating the tool’s effectiveness in uncovering crashes and memory exhaustion without a running application.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/bright-security-introduces-star-fuzzer-agentic-fuzzing-that-writes-its-own-harnesses-and-proves-every-finding/",
+    "publishedAt": "2026-10-19T17:11:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "bright-security-launches-star-fuzzer-agentic-fuzzi",
+      "article-8f49f7",
+      "8f49f7",
+      "bright-security-launches-star-fuzzer-agentic-fuzzing-tool"
+    ]
+  },
+  {
+    "slug": "ahold-delhaize-reports-cyber-outages-across-u-s-an-3dae1b",
+    "title": "Ahold Delhaize Reports Cyber Outages Across U.S. and European Brands",
+    "summary": "Ahold Delhaize confirmed a cyberattack that forced most of its U.S. and European systems offline, disrupting operations for several grocery brands. The incident impacted shoppers across both continents, highlighting the retailer’s vulnerability to large‑scale cyber disruptions.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/ahold-delhaize-cyberattack-grocery",
+    "publishedAt": "2026-10-19T16:45:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ahold-delhaize-reports-cyber-outages-across-u-s-an",
+      "article-3dae1b",
+      "3dae1b",
+      "ahold-delhaize-reports-cyber-outages-across-u-s-and-european"
+    ]
+  },
+  {
+    "slug": "rank-math-pro-hijacked-to-deliver-self-restoring-b-6a6896",
+    "title": "Rank Math PRO Hijacked to Deliver Self‑Restoring Backdoor",
+    "summary": "Copies of Rank Math PRO downloaded from rankmath.com or delivered as updates between 20:02 UTC on October 15 and 07:12 UTC on October 16 contained malware. Sites that installed and activated those copies should be treated as compromised, as the backdoor can self‑restore after removal.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/popular-wordpress-seo-plugin-rank-math.html",
+    "publishedAt": "2026-10-19T16:28:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rank-math-pro-hijacked-to-deliver-self-restoring-b",
+      "article-6a6896",
+      "6a6896",
+      "rank-math-pro-hijacked-to-deliver-self-restoring-backdoor"
+    ]
+  },
+  {
     "slug": "vk-service-disruptions-after-data-center-drone-str-317c6a",
     "title": "VK Service Disruptions After Data Center Drone Strike",
     "summary": "A drone strike on a VK data center caused widespread service disruptions, leading users to report difficulties loading news feeds, playing music, and accessing other platform features. The incident highlights the vulnerability of social media infrastructure to physical attacks.",
@@ -26,42 +275,6 @@ export const news: NewsBrief[] = [
       "article-317c6a",
       "317c6a",
       "vk-service-disruptions-after-data-center-drone-strike"
-    ]
-  },
-  {
-    "slug": "drupal-core-rce-vulnerability-threatens-entity-lis-4d24e8",
-    "title": "Drupal Core RCE Vulnerability Threatens Entity List and Field UI Modules",
-    "summary": "Drupal identified a critical remote code execution flaw affecting the Entity List and Field UI modules, with exploit paths through contributed modules. The vulnerability enables attackers to execute arbitrary code on affected sites, necessitating immediate patching of all Drupal installations.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/drupal-warns-of-fast-exploitation-risk-for-critical-core-rce-flaw/",
-    "publishedAt": "2026-10-19T15:47:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "drupal-core-rce-vulnerability-threatens-entity-lis",
-      "article-4d24e8",
-      "4d24e8",
-      "drupal-core-rce-vulnerability-threatens-entity-list-and-fiel"
-    ]
-  },
-  {
-    "slug": "rank-math-pro-wordpress-plugin-compromised-in-supp-4ee208",
-    "title": "Rank Math PRO WordPress Plugin Compromised in Supply Chain Attack",
-    "summary": "Hackers injected malware into Rank Math PRO version 3.0.123 packages distributed between October 15 and October 16. WordPress sites that installed these packages may now run malicious code. Site owners should immediately update to the latest plugin version and verify package integrity.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/rank-math-pro-wordpress-plugin-compromised-in-supply-chain-attack/",
-    "publishedAt": "2026-10-19T15:20:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rank-math-pro-wordpress-plugin-compromised-in-supp",
-      "article-4ee208",
-      "4ee208",
-      "rank-math-pro-wordpress-plugin-compromised-in-supply-chain-a"
     ]
   },
   {
@@ -116,24 +329,6 @@ export const news: NewsBrief[] = [
       "article-d3bfd3",
       "d3bfd3",
       "onlyfans-takedowns-reveal-vulnerable-university-and-governme"
-    ]
-  },
-  {
-    "slug": "aomei-backupper-update-servers-hijacked-to-deliver-77f315",
-    "title": "AOMEI Backupper Update Servers Hijacked to Deliver Remote Access Malware",
-    "summary": "Attackers tampered with AOMEI Backupper’s update distribution system, injecting malware that grants remote access to users’ PCs. The compromised update mechanism allows attackers to execute code on victim machines without user interaction. Users should verify update signatures and avoid installing updates from untrusted sources.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/aomei-backupper-update-servers-hijacked-to-push-malware-check-your-pc",
-    "publishedAt": "2026-10-19T14:21:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "aomei-backupper-update-servers-hijacked-to-deliver",
-      "article-77f315",
-      "77f315",
-      "aomei-backupper-update-servers-hijacked-to-deliver-remote-ac"
     ]
   },
   {
@@ -245,24 +440,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "connectwise-suspends-backup-service-after-m365-acc-1fa399",
-    "title": "ConnectWise Suspends Backup Service After M365 Access Abuse",
-    "summary": "Unknown attackers leveraged a compromised credential of the ConnectWise Cloud Backup application to infiltrate Microsoft 365 accounts of client organizations. In response, ConnectWise halted its Cloud Backup, SaaS Security, and Cloud Management services to mitigate further unauthorized access.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/19/connectwise-cloud-backup-suspended-security-incident/",
-    "publishedAt": "2026-10-19T13:33:57.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "connectwise-suspends-backup-service-after-m365-acc",
-      "article-1fa399",
-      "1fa399",
-      "connectwise-suspends-backup-service-after-m365-access-abuse"
-    ]
-  },
-  {
     "slug": "sweet-security-releases-one-click-virtual-patching-292970",
     "title": "Sweet Security Releases One‑Click Virtual Patching for Cloud Workloads",
     "summary": "Sweet Security has launched Virtual Patching, a feature that allows security teams to apply immediate protection to running cloud and AI applications against identified vulnerabilities. The solution can be enabled with a single click while developers work on permanent fixes, reducing exposure during patch development cycles.",
@@ -335,26 +512,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "cve-2026-88771-enables-pre-authentication-remote-c-711c51",
-    "title": "CVE-2026-88771 Enables Pre‑Authentication Remote Code Execution on NetScaler Gateway",
-    "summary": "CVE-2026-88771 allows attackers to execute arbitrary commands on NetScaler Gateway before user authentication. The flaw resides in the sign‑in handling code. Patching is time‑consuming; mitigation requires moving the sign‑in decision ahead of vulnerable code. Immediate action is required to prevent exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/protect-your-netscaler-gateway/",
-    "publishedAt": "2026-10-19T13:00:00.000Z",
-    "cves": [
-      "CVE-2026-88771"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-88771-enables-pre-authentication-remote-c",
-      "article-711c51",
-      "711c51",
-      "cve-2026-88771-enables-pre-authentication-remote-code-execut"
-    ]
-  },
-  {
     "slug": "microsoft-resolves-outlook-classic-ui-bug-removing-1e2b09",
     "title": "Microsoft Resolves Outlook Classic UI Bug Removing Copilot Buttons",
     "summary": "Microsoft addressed a defect in the classic Outlook desktop client that caused the Copilot Chat and Copilot buttons to disappear for some Windows users. The fix restores the missing UI elements and ensures consistent functionality across installations.",
@@ -370,44 +527,6 @@ export const news: NewsBrief[] = [
       "article-1e2b09",
       "1e2b09",
       "microsoft-resolves-outlook-classic-ui-bug-removing-copilot-b"
-    ]
-  },
-  {
-    "slug": "plex2shell-exploit-chain-weaponized-against-plex-s-7a3c80",
-    "title": "Plex2Shell Exploit Chain Weaponized Against Plex Servers",
-    "summary": "Threat actors have weaponized the Plex2Shell exploit chain against Plex media servers, delivering cryptocurrency miners and proxy software. The attack chain leverages a vulnerability in Plex’s remote code execution path, enabling attackers to execute arbitrary code and install malicious payloads on affected servers.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/plex2shell-exploit-chain-weaponized-against-plex-servers-hours-after-disclosure/",
-    "publishedAt": "2026-10-19T12:44:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "plex2shell-exploit-chain-weaponized-against-plex-s",
-      "article-7a3c80",
-      "7a3c80",
-      "plex2shell-exploit-chain-weaponized-against-plex-servers"
-    ]
-  },
-  {
-    "slug": "hackers-exploit-siteguard-waf-vulnerability-that-c-445f7d",
-    "title": "Hackers Exploit SiteGuard WAF Vulnerability That Could Give Them Full Control of Servers",
-    "summary": "Hackers are exploiting a command injection flaw in SiteGuard Server Edition, a web application firewall installed directly on protected servers. Tracked as CVE-2026-106931, the vulnerability allows attackers to run operating system commands with root or SYSTEM privileges, potentially giving them full control of an affected server.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-exploit-siteguard-waf-vulnerability/",
-    "publishedAt": "2026-10-19T12:07:14.000Z",
-    "cves": [
-      "CVE-2026-106931"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-exploit-siteguard-waf-vulnerability-that-c",
-      "article-445f7d",
-      "445f7d",
-      "hackers-exploit-siteguard-waf-vulnerability-that-could-give-"
     ]
   },
   {
@@ -609,6 +728,23 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "weekly-security-roundup-october-12-18-2026-5123b9",
+    "title": "Weekly Security Roundup: October 12–18, 2026",
+    "summary": "Malwarebytes Labs summarizes the week’s cybersecurity topics, covering emerging threats, vulnerability disclosures, and defensive strategies. The report highlights key industry developments and provides context for security professionals to stay informed on current trends and emerging risks.",
+    "category": "Malware",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/a-week-in-security-october-12-october-18",
+    "publishedAt": "2026-10-19T07:01:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "weekly-security-roundup-october-12-18-2026",
+      "article-5123b9",
+      "5123b9"
+    ]
+  },
+  {
     "slug": "broadcom-wi-fi-flaw-lets-nearby-attackers-run-code-79de2c",
     "title": "Broadcom Wi‑Fi Flaw Lets Nearby Attackers Run Code as Root on Routers",
     "summary": "A flaw in Broadcom’s Wi‑Fi setup software allows an attacker within radio range to execute code with root privileges on Broadcom‑based routers without a network password or pairing step. The vulnerability was demonstrated against home gateways from three Belgian ISPs, including reading the device’s Wi‑Fi password.",
@@ -624,24 +760,6 @@ export const news: NewsBrief[] = [
       "article-79de2c",
       "79de2c",
       "broadcom-wi-fi-flaw-lets-nearby-attackers-run-code-as-root-o"
-    ]
-  },
-  {
-    "slug": "opencode-console-breach-may-expose-ai-provider-api-1dfb62",
-    "title": "OpenCode Console Breach May Expose AI Provider API Keys",
-    "summary": "An intruder accessed a legacy OpenCode system on October 16 and potentially exposed stored OpenAI, Anthropic, and Google API keys used by teams in the OpenCode Console. The breach could compromise access to third‑party AI services for affected users.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/opencode-console-breach-may-have.html",
-    "publishedAt": "2026-10-19T06:07:08.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "opencode-console-breach-may-expose-ai-provider-api",
-      "article-1dfb62",
-      "1dfb62",
-      "opencode-console-breach-may-expose-ai-provider-api-keys"
     ]
   },
   {
@@ -717,24 +835,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "hackers-exploit-plex-media-server-vulnerabilities-1b7855",
-    "title": "Hackers Exploit Plex Media Server Vulnerabilities to Deploy Cryptominer",
-    "summary": "Attackers chain four Plex Media Server flaws to execute code without authentication, installing cryptocurrency mining malware. The exploit, dubbed Plex2Shell, was observed on a honeypot on October 17, 2026, and includes proxy software to obscure activity. No patch is currently available.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/plex-vulnerabilities-exploited-in-wild/",
-    "publishedAt": "2026-10-19T04:14:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-exploit-plex-media-server-vulnerabilities",
-      "article-1b7855",
-      "1b7855",
-      "hackers-exploit-plex-media-server-vulnerabilities-to-deploy-"
-    ]
-  },
-  {
     "slug": "ransomware-threats-extend-to-employees-families-5e5507",
     "title": "Ransomware Threats Extend to Employees’ Families",
     "summary": "Ransomware actors now target employees’ family members or friends, according to a 2026 Semperis report. The survey of 1,200 IT and security professionals found that 37% of organizations experienced such threats, indicating a shift beyond the workplace into personal networks.",
@@ -749,6 +849,24 @@ export const news: NewsBrief[] = [
       "ransomware-threats-extend-to-employees-families",
       "article-5e5507",
       "5e5507"
+    ]
+  },
+  {
+    "slug": "servicenow-user-enumeration-via-graph-reconnaissan-bd7e3a",
+    "title": "ServiceNow User Enumeration via Graph Reconnaissance",
+    "summary": "Researchers identified a technique that leverages graph reconnaissance to enumerate ServiceNow users. Attackers can map user relationships and identify valid accounts, facilitating targeted credential attacks. Mitigation involves restricting API access, enforcing least privilege, and monitoring anomalous enumeration activity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Sophos Threat Research",
+    "sourceUrl": "https://www.sophos.com/en-us/blog/graph-reconnaissance-and-servicenow-user-enumeration-in-a-modern-identity-intrusion",
+    "publishedAt": "2026-10-19T00:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "servicenow-user-enumeration-via-graph-reconnaissan",
+      "article-bd7e3a",
+      "bd7e3a",
+      "servicenow-user-enumeration-via-graph-reconnaissance"
     ]
   },
   {
@@ -1200,24 +1318,6 @@ export const news: NewsBrief[] = [
       "article-556923",
       "556923",
       "phishing-campaign-targets-business-rfq-emails-to-steal-crede"
-    ]
-  },
-  {
-    "slug": "apple-iphone-18-pro-ios-27-0-1-jailbreak-demonstra-7a2d41",
-    "title": "Apple iPhone 18 Pro iOS 27.0.1 Jailbreak Demonstrated",
-    "summary": "Security researchers from Calif demonstrated an untethered jailbreak for iOS 27.0.1 on Apple’s iPhone 18 Pro during Hexacon 2026. The live demo shows a method to bypass Apple’s security controls, allowing root access and installation of unauthorized software. No public patch or fix is available yet.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/ios-27-0-1-jailbreak-demonstrated/",
-    "publishedAt": "2026-10-16T12:21:57.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-iphone-18-pro-ios-27-0-1-jailbreak-demonstra",
-      "article-7a2d41",
-      "7a2d41",
-      "apple-iphone-18-pro-ios-27-0-1-jailbreak-demonstrated"
     ]
   },
   {
@@ -6172,111 +6272,6 @@ export const news: NewsBrief[] = [
       "article-1a28cb",
       "1a28cb",
       "cloudflare-celebrates-16th-birthday-with-46-new-releases"
-    ]
-  },
-  {
-    "slug": "cloudflare-interns-ship-products-across-48-teams-7813d8",
-    "title": "Cloudflare Interns Ship Products Across 48 Teams",
-    "summary": "Cloudflare reports that over 750 interns have contributed real products to 48 teams, including Birthday Week launches and post‑quantum security initiatives, demonstrating AI’s role in amplifying human potential rather than replacing it.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/one-year-later-1111-interns/",
-    "publishedAt": "2026-10-05T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-interns-ship-products-across-48-teams",
-      "article-7813d8",
-      "7813d8"
-    ]
-  },
-  {
-    "slug": "ai-driven-attacks-accelerate-prompting-security-te-3ef1fc",
-    "title": "AI‑Driven Attacks Accelerate, Prompting Security Teams to Adapt",
-    "summary": "AI‑driven attacks are accelerating, forcing security teams to adapt their defenses. The latest Dark Reading poll shows organizations prioritizing automation, threat intelligence, and rapid response to counter fast, relentless, and automated adversaries. Companies are investing in AI‑enabled detection, incident response, and training to keep pace with evolving attack tactics.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyber-risk/ai-attacks-security-strategies",
-    "publishedAt": "2026-10-05T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-driven-attacks-accelerate-prompting-security-te",
-      "article-3ef1fc",
-      "3ef1fc",
-      "ai-driven-attacks-accelerate-prompting-security-teams-to-ada"
-    ]
-  },
-  {
-    "slug": "credential-layer-expansion-outpaces-security-teams-1ea7c2",
-    "title": "Credential Layer Expansion Outpaces Security Teams",
-    "summary": "Modern enterprises rely on credentials for human, system, and AI connections. GitGuardian offers detection, remediation, and prevention to secure this layer, helping organizations identify where credentials exist and how to protect them.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/the-credential-layer-is-expanding.html",
-    "publishedAt": "2026-10-05T11:55:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "credential-layer-expansion-outpaces-security-teams",
-      "article-1ea7c2",
-      "1ea7c2"
-    ]
-  },
-  {
-    "slug": "realtek-jungle-sdk-exploit-attempts-deploy-cling-b-7460a7",
-    "title": "Realtek Jungle SDK Exploit Attempts Deploy Cling Botnet via STUN C2",
-    "summary": "Threat actors targeted a critical flaw in the Realtek Jungle SDK, attempting to use the vulnerability to install the Cling botnet. Cling repurposes standard STUN traffic as a command-and-control channel, enabling remote control of infected devices. The flaw has been patched, but exploitation attempts continue.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/realtek-jungle-sdk-exploit-attempts.html",
-    "publishedAt": "2026-10-05T11:46:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "realtek-jungle-sdk-exploit-attempts-deploy-cling-b",
-      "article-7460a7",
-      "7460a7",
-      "realtek-jungle-sdk-exploit-attempts-deploy-cling-botnet-via-"
-    ]
-  },
-  {
-    "slug": "senate-passes-bipartisan-bill-to-strengthen-health-4bb6ed",
-    "title": "Senate Passes Bipartisan Bill to Strengthen Healthcare Cybersecurity",
-    "summary": "The U.S. Senate has passed a bipartisan bill aimed at improving cybersecurity in the healthcare sector. The legislation follows a year in which over 730 cyber breaches impacted more than 270 million Americans, with each breach costing an average of $10 million. The bill seeks to enhance protections for sensitive health data and reduce future breach incidents.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/senate-passes-bipartisan-bill-to-strengthen-healthcare-cybersecurity/",
-    "publishedAt": "2026-10-05T10:42:19.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "senate-passes-bipartisan-bill-to-strengthen-health",
-      "article-4bb6ed",
-      "4bb6ed",
-      "senate-passes-bipartisan-bill-to-strengthen-healthcare-cyber"
-    ]
-  },
-  {
-    "slug": "makerphone-2-0-diy-4g-phone-with-plug-in-hardware-7526f5",
-    "title": "MAKERphone 2.0: DIY 4G Phone with Plug‑in Hardware",
-    "summary": "CircuitMess launches MAKERphone 2.0, a build‑it‑yourself 4G handset that runs MicroPython or Arduino C++. Users insert a SIM to make real calls and texts, and can add plug‑in camera, speaker, and prototyping board modules. The kit targets hobbyists and parents seeking a child’s first phone.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/makerphone-2-diy-4g-phone/",
-    "publishedAt": "2026-10-05T09:50:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "makerphone-2-0-diy-4g-phone-with-plug-in-hardware",
-      "article-7526f5",
-      "7526f5"
     ]
   }
 ];
