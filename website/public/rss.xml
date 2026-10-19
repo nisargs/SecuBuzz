@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Oct 2026 23:14:28 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 00:17:59 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>ConnectWise: Detect &amp; Remediate M365 Tenant Hijacking</title>
+      <link>https://secubuzz.com/news/connectwise-detect-remediate-m365-tenant-hijacking-358234</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/connectwise-detect-remediate-m365-tenant-hijacking-358234</guid>
+      <description><![CDATA[Attackers abused Microsoft 365 app identities to breach 300+ tenants, prompting ConnectWise to suspend its Cloud Backup service. The exploitation leveraged privileged app permissions to gain tenant control. Defenders should audit app identity permissions, enforce least privilege, and monitor for anomalous tenant activity.]]></description>
+      <pubDate>Sun, 18 Oct 2026 23:57:07 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/connectwise-cloud-backup-m365-tenant-hijacking-defense">CyberNews AI</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>SiteGuard WAF Command Injection Allows SYSTEM/Root Execution</title>
       <link>https://secubuzz.com/news/siteguard-waf-command-injection-allows-system-root-28e271</link>
@@ -447,15 +456,6 @@
       <pubDate>Fri, 16 Oct 2026 08:53:41 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/16/android-enhanced-built-in-scam-protection/">Help Net Security</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Microsoft Windows 11 Update KB5127648 May Disable Smart App Control</title>
-      <link>https://secubuzz.com/news/microsoft-windows-11-update-kb5127648-may-disable-64fbe1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-windows-11-update-kb5127648-may-disable-64fbe1</guid>
-      <description><![CDATA[The Windows 11 security update KB5127648 can prevent users from enabling Smart App Control, a feature that blocks untrusted applications. The issue occurs after installation and may affect device security posture. Users should monitor Microsoft advisories for a fix or workaround.]]></description>
-      <pubDate>Fri, 16 Oct 2026 08:44:22 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/kb5127648-windows-security-update-may-break-smart-app-control/">BleepingComputer</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

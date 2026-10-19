@@ -11,6 +11,23 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "connectwise-detect-remediate-m365-tenant-hijacking-358234",
+    "title": "ConnectWise: Detect & Remediate M365 Tenant Hijacking",
+    "summary": "Attackers abused Microsoft 365 app identities to breach 300+ tenants, prompting ConnectWise to suspend its Cloud Backup service. The exploitation leveraged privileged app permissions to gain tenant control. Defenders should audit app identity permissions, enforce least privilege, and monitor for anomalous tenant activity.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/connectwise-cloud-backup-m365-tenant-hijacking-defense",
+    "publishedAt": "2026-10-18T23:57:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "connectwise-detect-remediate-m365-tenant-hijacking",
+      "article-358234",
+      "358234"
+    ]
+  },
+  {
     "slug": "siteguard-waf-command-injection-allows-system-root-28e271",
     "title": "SiteGuard WAF Command Injection Allows SYSTEM/Root Execution",
     "summary": "Attackers exploit an OS command injection flaw in SiteGuard Server Edition, enabling execution of arbitrary commands with SYSTEM or root privileges on affected servers. The vulnerability permits full control over the host, requiring immediate patching to prevent privilege escalation.",
@@ -6249,27 +6266,6 @@ export const news: NewsBrief[] = [
       "article-515e6d",
       "515e6d",
       "openai-terminates-three-safety-researchers-over-data-leak"
-    ]
-  },
-  {
-    "slug": "cisa-adds-two-known-exploited-vulnerabilities-to-c-4b42aa",
-    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-    "summary": "CISA has added CVE-2026-102489, a Zammad session fixation flaw, and CVE-2026-102490, a Zammad improper privilege management flaw, to its Known Exploited Vulnerabilities catalog after evidence of active exploitation. The vulnerabilities pose significant risks to federal agencies and require rapid remediation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/02/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-    "publishedAt": "2026-10-02T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-102489",
-      "CVE-2026-102490"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cisa-adds-two-known-exploited-vulnerabilities-to-c",
-      "article-4b42aa",
-      "4b42aa",
-      "cisa-adds-two-known-exploited-vulnerabilities-to-catalog"
     ]
   }
 ];
