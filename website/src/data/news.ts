@@ -11,6 +11,186 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "rank-math-pro-wordpress-plugin-compromised-in-supp-4ee208",
+    "title": "Rank Math PRO WordPress Plugin Compromised in Supply Chain Attack",
+    "summary": "Hackers injected malware into Rank Math PRO version 3.0.123 packages distributed between October 15 and October 16. WordPress sites that installed these packages may now run malicious code. Site owners should immediately update to the latest plugin version and verify package integrity.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/rank-math-pro-wordpress-plugin-compromised-in-supply-chain-attack/",
+    "publishedAt": "2026-10-19T15:20:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rank-math-pro-wordpress-plugin-compromised-in-supp",
+      "article-4ee208",
+      "4ee208",
+      "rank-math-pro-wordpress-plugin-compromised-in-supply-chain-a"
+    ]
+  },
+  {
+    "slug": "microsoft-fixes-game-and-app-crashes-caused-by-win-4bdf26",
+    "title": "Microsoft Fixes Game and App Crashes Caused by Windows 11 Preview Update",
+    "summary": "Microsoft resolved a bug that caused games and apps using AC-3 (Dolby Digital) audio decoding to crash after installing the September 2026 Windows 11 preview update (KB5124010). The issue stemmed from incorrect handling of Dolby audio streams. Users should install the update to prevent crashes.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-game-app-crashes-caused-by-windows-kb5124010-preview-update/",
+    "publishedAt": "2026-10-19T14:55:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-fixes-game-and-app-crashes-caused-by-win",
+      "article-4bdf26",
+      "4bdf26",
+      "microsoft-fixes-game-and-app-crashes-caused-by-windows-11-pr"
+    ]
+  },
+  {
+    "slug": "centerpoint-energy-data-breach-exposes-over-1-mill-709ed3",
+    "title": "CenterPoint Energy Data Breach Exposes Over 1 Million Texas Residents",
+    "summary": "CenterPoint Energy disclosed a data breach affecting over 1 million Texas residents. Unauthorized access to an external system exposed names, addresses, phone numbers, and email addresses. The breach involved credential theft and potential identity theft. Immediate remediation includes credential rotation and monitoring for suspicious activity.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Check Point Research",
+    "sourceUrl": "https://research.checkpoint.com/2026/19th-october-threat-intelligence-report/",
+    "publishedAt": "2026-10-19T14:54:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "centerpoint-energy-data-breach-exposes-over-1-mill",
+      "article-709ed3",
+      "709ed3",
+      "centerpoint-energy-data-breach-exposes-over-1-million-texas-"
+    ]
+  },
+  {
+    "slug": "onlyfans-takedowns-reveal-vulnerable-university-an-d3bfd3",
+    "title": "OnlyFans Takedowns Reveal Vulnerable University and Government Sites",
+    "summary": "Attackers use OnlyFans copyright takedown requests to identify and exploit vulnerable university and government websites, manipulating search results. The exploitation leverages weaknesses in site configurations, enabling attackers to alter search rankings. Security teams should audit site hardening and monitor takedown activity for indicators of compromise.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/onlyfans-copyright-takedowns-expose-compromised-websites",
+    "publishedAt": "2026-10-19T14:28:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "onlyfans-takedowns-reveal-vulnerable-university-an",
+      "article-d3bfd3",
+      "d3bfd3",
+      "onlyfans-takedowns-reveal-vulnerable-university-and-governme"
+    ]
+  },
+  {
+    "slug": "aomei-backupper-update-servers-hijacked-to-deliver-77f315",
+    "title": "AOMEI Backupper Update Servers Hijacked to Deliver Remote Access Malware",
+    "summary": "Attackers tampered with AOMEI Backupper’s update distribution system, injecting malware that grants remote access to users’ PCs. The compromised update mechanism allows attackers to execute code on victim machines without user interaction. Users should verify update signatures and avoid installing updates from untrusted sources.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/aomei-backupper-update-servers-hijacked-to-push-malware-check-your-pc",
+    "publishedAt": "2026-10-19T14:21:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "aomei-backupper-update-servers-hijacked-to-deliver",
+      "article-77f315",
+      "77f315",
+      "aomei-backupper-update-servers-hijacked-to-deliver-remote-ac"
+    ]
+  },
+  {
+    "slug": "weekly-recap-highlights-98-zero-days-rogue-ai-agen-2be436",
+    "title": "Weekly Recap Highlights 98 Zero-Days, Rogue AI Agents, $100M Crypto Theft, 700 Supermarkets Hit",
+    "summary": "The week’s security landscape featured 98 zero‑day vulnerabilities, rogue AI agents, a $100M cryptocurrency theft, and attacks on 700 supermarkets. The report underscores how trusted services, hardware, and legacy bugs can become vectors for widespread damage.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/weekly-recap-98-zero-days-rogue-ai.html",
+    "publishedAt": "2026-10-19T14:14:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "weekly-recap-highlights-98-zero-days-rogue-ai-agen",
+      "article-2be436",
+      "2be436",
+      "weekly-recap-highlights-98-zero-days-rogue-ai-agents-100m-cr"
+    ]
+  },
+  {
+    "slug": "underground-market-offers-forged-kyc-services-to-b-2ca68f",
+    "title": "Underground Market Offers Forged KYC Services to Bypass Verification",
+    "summary": "Cybercriminals sell forged identity documents, deepfake videos, and live verification services to bypass Know Your Client checks. The market provides tools and techniques for creating and maintaining fraudulent verified accounts, enabling illicit access to financial and other regulated services.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/inside-the-underground-market-for-know-your-client-services/",
+    "publishedAt": "2026-10-19T14:00:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "underground-market-offers-forged-kyc-services-to-b",
+      "article-2ca68f",
+      "2ca68f",
+      "underground-market-offers-forged-kyc-services-to-bypass-veri"
+    ]
+  },
+  {
+    "slug": "cybersecurity-focus-shifts-toward-resilience-amid-558fb8",
+    "title": "Cybersecurity Focus Shifts Toward Resilience Amid Rising Vulnerability Discovery",
+    "summary": "Industry analysts note that the relentless emphasis on finding new vulnerabilities has crowded out strategic resilience planning. Security teams report insufficient bandwidth to develop robust defenses, potentially leaving organizations exposed to evolving threats. The trend underscores a need to balance detection with proactive hardening.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/cybersecurity-lexicon-vulnerability-discovery-resilience",
+    "publishedAt": "2026-10-19T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cybersecurity-focus-shifts-toward-resilience-amid",
+      "article-558fb8",
+      "558fb8",
+      "cybersecurity-focus-shifts-toward-resilience-amid-rising-vul"
+    ]
+  },
+  {
+    "slug": "f5-releases-out-of-band-patches-for-critical-nginx-6e0abe",
+    "title": "F5 Releases Out‑of‑Band Patches for Critical NGINX Vulnerabilities",
+    "summary": "F5 has issued out‑of‑band security patches addressing multiple critical‑severity flaws in the NGINX web server that could allow remote code execution. The patches mitigate three vulnerabilities that enable attackers to execute arbitrary code on vulnerable systems. Users should apply the updates immediately to prevent exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/f5-releases-out-of-band-patches-for-critical-nginx-vulnerabilities/",
+    "publishedAt": "2026-10-19T13:49:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "f5-releases-out-of-band-patches-for-critical-nginx",
+      "article-6e0abe",
+      "6e0abe",
+      "f5-releases-out-of-band-patches-for-critical-nginx-vulnerabi"
+    ]
+  },
+  {
+    "slug": "federal-investigation-links-ransom-negotiator-to-s-5a8ef1",
+    "title": "Federal Investigation Links Ransom Negotiator to ShinyHunters Extortion Operations",
+    "summary": "U.S. federal investigators have identified executives from two ransomware negotiation firms who maintained close ties with the ShinyHunters hacking group. One executive reportedly aided the group in operating a website that coerced victims into paying ransom, following the group's recent theft of highly sensitive FBI data.",
+    "category": "Ransomware",
+    "severity": "HIGH",
+    "source": "Krebs on Security",
+    "sourceUrl": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/",
+    "publishedAt": "2026-10-19T13:48:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "federal-investigation-links-ransom-negotiator-to-s",
+      "article-5a8ef1",
+      "5a8ef1",
+      "federal-investigation-links-ransom-negotiator-to-shinyhunter"
+    ]
+  },
+  {
     "slug": "axonius-ai-workforce-expands-asset-intelligence-wi-3cc3f1",
     "title": "Axonius AI Workforce Expands Asset Intelligence with Automated Remediation",
     "summary": "Axonius AI Workforce introduces virtual workers that scan environments, detect high‑risk exposures, and remediate deviations from expected states. Actions requiring human‑in‑the‑loop approval are routed through structured checkpoints. The solution consolidates scattered security data across multiple tools into a unified platform.",
@@ -172,24 +352,6 @@ export const news: NewsBrief[] = [
       "article-7a3c80",
       "7a3c80",
       "plex2shell-exploit-chain-weaponized-against-plex-servers"
-    ]
-  },
-  {
-    "slug": "nsa-cisa-and-nist-release-new-security-guidelines-639366",
-    "title": "NSA, CISA, and NIST Release New Security Guidelines to Detect and Shut Down Rogue AI Agents",
-    "summary": "NSA, CISA, and NIST issued voluntary guidance to help organizations detect, contain, and shut down AI agents that act beyond approved tasks. The guidelines outline ten practices for managing incidents during superintelligence training and evaluation, emphasizing human oversight and incident response coordination.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/nsa-cisa-and-nist-release-guidelines-to-rogue-ai-agents/",
-    "publishedAt": "2026-10-19T12:08:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nsa-cisa-and-nist-release-new-security-guidelines",
-      "article-639366",
-      "639366",
-      "nsa-cisa-and-nist-release-new-security-guidelines-to-detect-"
     ]
   },
   {
@@ -6115,167 +6277,6 @@ export const news: NewsBrief[] = [
       "article-5f1054",
       "5f1054",
       "doxx-net-launches-public-beta-of-agentic-defined-networking-"
-    ]
-  },
-  {
-    "slug": "script-parses-and-sends-tty-logs-from-dshield-sens-57dd7a",
-    "title": "Script Parses and Sends TTY Logs from DShield Sensor to SIEM",
-    "summary": "A script was created to parse TTY logs generated by actors or bots after they log into a DShield sensor. The parsed logs are transmitted daily to the DShield SIEM for correlation with other collected data, enabling analysts to track malicious command activity.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33396",
-    "publishedAt": "2026-10-05T00:15:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "script-parses-and-sends-tty-logs-from-dshield-sens",
-      "article-57dd7a",
-      "57dd7a",
-      "script-parses-and-sends-tty-logs-from-dshield-sensor-to-siem"
-    ]
-  },
-  {
-    "slug": "trump-appoints-national-intelligence-director-jay-9cfd02",
-    "title": "Trump Appoints National Intelligence Director Jay Clayton to Head New Federal AI Task Force",
-    "summary": "President Trump announced that National Intelligence Director Jay Clayton will lead a newly formed federal task force focused on artificial intelligence. The move follows a White House meeting with AI industry leaders and aims to coordinate national AI strategy and policy across government agencies.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/trump-names-national-intelligence-director-jay-clayton-to-lead-a-new-federal-ai-task-force/",
-    "publishedAt": "2026-10-04T14:57:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "trump-appoints-national-intelligence-director-jay",
-      "article-9cfd02",
-      "9cfd02",
-      "trump-appoints-national-intelligence-director-jay-clayton-to"
-    ]
-  },
-  {
-    "slug": "anthropic-requests-claude-users-share-voice-data-f-7080bc",
-    "title": "Anthropic Requests Claude Users Share Voice Data for Model Training",
-    "summary": "Anthropic has begun asking Claude users to voluntarily share their voice conversations to help train and improve its AI models. The initiative involves collecting user voice data for model training purposes, with no indication of data breaches or security incidents.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-asks-claude-users-to-share-voice-data-for-ai-model-training/",
-    "publishedAt": "2026-10-04T10:53:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "anthropic-requests-claude-users-share-voice-data-f",
-      "article-7080bc",
-      "7080bc",
-      "anthropic-requests-claude-users-share-voice-data-for-model-t"
-    ]
-  },
-  {
-    "slug": "analysis-of-new-user-agent-strings-in-honeypot-log-57dd7a",
-    "title": "Analysis of New User Agent Strings in Honeypot Logs",
-    "summary": "Observations of newly appearing user agent strings in honeypot logs have sparked interest. The logs reveal diverse client identifiers, offering insights into attacker tools and techniques. Monitoring these strings helps security teams detect emerging threats and refine detection rules.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33394",
-    "publishedAt": "2026-10-04T07:58:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "analysis-of-new-user-agent-strings-in-honeypot-log",
-      "article-57dd7a",
-      "57dd7a",
-      "analysis-of-new-user-agent-strings-in-honeypot-logs"
-    ]
-  },
-  {
-    "slug": "yara-x-1-21-0-released-with-five-improvements-and-57dd7a",
-    "title": "YARA-X 1.21.0 Released with Five Improvements and Four Bug Fixes",
-    "summary": "The YARA-X tool has released version 1.21.0, adding five new features and fixing four bugs. The update enhances rule creation and performance for malware analysts and security researchers. No security impact is reported, and users are encouraged to upgrade to benefit from the improvements.",
-    "category": "Malware",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33392",
-    "publishedAt": "2026-10-03T14:40:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "yara-x-1-21-0-released-with-five-improvements-and",
-      "article-57dd7a",
-      "57dd7a",
-      "yara-x-1-21-0-released-with-five-improvements-and-four-bug-f"
-    ]
-  },
-  {
-    "slug": "mi5-warns-of-china-s-mss-funding-research-with-ove-35a893",
-    "title": "MI5 Warns of China’s MSS Funding Research with Over 100 UK Academics",
-    "summary": "MI5 issued a Security Service Espionage Alert on September 30, 2026, stating that China’s Ministry of State Security funded research through the China General Technology Research Institute involving more than 100 UK-linked academics. The program aims to advance intelligence gathering capabilities for Beijing’s state security service.",
-    "category": "Malware",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/mi5-says-chinas-mss-funded-research.html",
-    "publishedAt": "2026-10-03T14:38:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "mi5-warns-of-china-s-mss-funding-research-with-ove",
-      "article-35a893",
-      "35a893",
-      "mi5-warns-of-china-s-mss-funding-research-with-over-100-uk-a"
-    ]
-  },
-  {
-    "slug": "warlock-uses-sharepoint-vulnerabilities-to-deploy-7c87c2",
-    "title": "Warlock Uses SharePoint Vulnerabilities to Deploy Ransomware",
-    "summary": "The China-linked threat actor Warlock continues to weaponize Microsoft SharePoint flaws, targeting Portuguese and Spanish organizations, including critical infrastructure, government and education sectors. The attacks disable security tools and deploy ransomware, exploiting both legacy and new SharePoint vulnerabilities.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/warlock-exploits-sharepoint-flaws-to.html",
-    "publishedAt": "2026-10-03T14:36:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "warlock-uses-sharepoint-vulnerabilities-to-deploy",
-      "article-7c87c2",
-      "7c87c2",
-      "warlock-uses-sharepoint-vulnerabilities-to-deploy-ransomware"
-    ]
-  },
-  {
-    "slug": "fortra-patches-critical-vulnerabilities-in-boks-eb38b3",
-    "title": "Fortra Patches Critical Vulnerabilities in BoKS",
-    "summary": "Fortra released patches for critical bugs in its BoKS platform that could allow attackers to bypass authentication, execute shell commands, and corrupt memory. The vulnerabilities posed a high risk of unauthorized access and potential data compromise. Users are urged to apply the latest updates immediately to mitigate the threat.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/fortra-patches-critical-vulnerabilities-in-boks/",
-    "publishedAt": "2026-10-03T11:34:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortra-patches-critical-vulnerabilities-in-boks",
-      "article-eb38b3",
-      "eb38b3"
-    ]
-  },
-  {
-    "slug": "antino-backdoor-uses-m365-outlook-and-onedrive-for-1de25f",
-    "title": "Antino Backdoor Uses M365 Outlook and OneDrive for Covert Command and Control",
-    "summary": "China-nexus threat actor UAT-11587 deployed the Rust-based Antino backdoor, abusing Microsoft 365 Outlook and OneDrive services to establish covert command and control channels against Asian government entities. The backdoor enables remote execution and data exfiltration via cloud services.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/antino-backdoor-abuses-m365-outlook-onedrive-c2",
-    "publishedAt": "2026-10-02T23:51:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "antino-backdoor-uses-m365-outlook-and-onedrive-for",
-      "article-1de25f",
-      "1de25f",
-      "antino-backdoor-uses-m365-outlook-and-onedrive-for-covert-co"
     ]
   }
 ];
