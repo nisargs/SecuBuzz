@@ -11,6 +11,60 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "rpo-and-rto-explained-with-a-real-disaster-recover-3b7498",
+    "title": "RPO and RTO Explained with a Real Disaster Recovery Example",
+    "summary": "Matthew Burden, CEO of BlackBox Hosting, explains the difference between recovery point objective (RPO) and recovery time objective (RTO). RPO defines the maximum data loss in time, while RTO defines the maximum downtime a business can tolerate. The video emphasizes that backups do not guarantee quick recovery and that quick recovery is ineffective if data is stale.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/19/rpo-rto-video/",
+    "publishedAt": "2026-10-19T05:00:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rpo-and-rto-explained-with-a-real-disaster-recover",
+      "article-3b7498",
+      "3b7498",
+      "rpo-and-rto-explained-with-a-real-disaster-recovery-example"
+    ]
+  },
+  {
+    "slug": "half-of-ai-bot-traffic-targeting-websites-originat-f45514",
+    "title": "Half of AI Bot Traffic Targeting Websites Originates from Meta",
+    "summary": "DataDome’s AI Traffic Report Q3 2026 shows that 41.5% of AI agent traffic, nearly 25 billion requests, comes from Meta’s Muse. In the first 12 days of Muse’s full availability, 29.1 million requests were recorded, with 99.3% originating from cloud and CDN infrastructure. The report highlights Meta’s significant share of AI bot traffic.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/19/datadome-ai-agent-traffic-report/",
+    "publishedAt": "2026-10-19T04:30:52.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "half-of-ai-bot-traffic-targeting-websites-originat",
+      "article-f45514",
+      "f45514",
+      "half-of-ai-bot-traffic-targeting-websites-originates-from-me"
+    ]
+  },
+  {
+    "slug": "hackers-exploit-plex-media-server-vulnerabilities-1b7855",
+    "title": "Hackers Exploit Plex Media Server Vulnerabilities to Deploy Cryptominer",
+    "summary": "Attackers chain four Plex Media Server flaws to execute code without authentication, installing cryptocurrency mining malware. The exploit, dubbed Plex2Shell, was observed on a honeypot on October 17, 2026, and includes proxy software to obscure activity. No patch is currently available.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/plex-vulnerabilities-exploited-in-wild/",
+    "publishedAt": "2026-10-19T04:14:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-exploit-plex-media-server-vulnerabilities",
+      "article-1b7855",
+      "1b7855",
+      "hackers-exploit-plex-media-server-vulnerabilities-to-deploy-"
+    ]
+  },
+  {
     "slug": "ransomware-threats-extend-to-employees-families-5e5507",
     "title": "Ransomware Threats Extend to Employees’ Families",
     "summary": "Ransomware actors now target employees’ family members or friends, according to a 2026 Semperis report. The survey of 1,200 IT and security professionals found that 37% of organizations experienced such threats, indicating a shift beyond the workplace into personal networks.",
@@ -25,6 +79,24 @@ export const news: NewsBrief[] = [
       "ransomware-threats-extend-to-employees-families",
       "article-5e5507",
       "5e5507"
+    ]
+  },
+  {
+    "slug": "windows-updates-disrupt-exchange-server-email-serv-69a3c0",
+    "title": "Windows Updates Disrupt Exchange Server Email Services",
+    "summary": "Microsoft’s October 13, 2026 Windows Server security updates unintentionally break Exchange Server 2016, 2019, and Subscription Edition, blocking webmail and causing undelivered messages. A workaround has been published; administrators are advised not to uninstall the updates until the issue is resolved.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/october-updates-break-exchange-server/",
+    "publishedAt": "2026-10-19T03:39:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "windows-updates-disrupt-exchange-server-email-serv",
+      "article-69a3c0",
+      "69a3c0",
+      "windows-updates-disrupt-exchange-server-email-services"
     ]
   },
   {
@@ -496,24 +568,6 @@ export const news: NewsBrief[] = [
       "proofpoint-to-acquire-varonis-for-6-3-billion",
       "article-5aa563",
       "5aa563"
-    ]
-  },
-  {
-    "slug": "hackers-deploy-romulus-clickfix-platform-to-delive-3ba1c7",
-    "title": "Hackers Deploy ROMULUS ClickFix Platform to Deliver Malware",
-    "summary": "Security researchers identified ROMULUS, a new platform that delivers malware via ClickFix traps. It uses hidden PowerShell scripts, altered installers, and encrypted archives, supporting multiple infection paths including LegionLoader and a compromised Stardock program. The platform evades detection and expands malware delivery capabilities.",
-    "category": "Malware",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/new-romulus-clickfix-platform/",
-    "publishedAt": "2026-10-16T14:42:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-deploy-romulus-clickfix-platform-to-delive",
-      "article-3ba1c7",
-      "3ba1c7",
-      "hackers-deploy-romulus-clickfix-platform-to-deliver-malware"
     ]
   },
   {
@@ -6213,58 +6267,6 @@ export const news: NewsBrief[] = [
       "article-54096a",
       "54096a",
       "cloudflare-enables-automation-for-leading-civil-society-orga"
-    ]
-  },
-  {
-    "slug": "linux-backdoors-mimic-asian-mail-security-products-50d1b2",
-    "title": "Linux Backdoors Mimic Asian Mail Security Products",
-    "summary": "Three newly discovered Linux backdoors disguise themselves as legitimate Asian mail security products, making detection difficult. The implants mimic the appearance and behavior of trusted edge solutions, allowing attackers to gain unauthorized access to compromised systems. Security teams should monitor for unusual mail security processes and verify software authenticity.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/threat-intelligence/malicious-linux-implants-mimic-asian-mail-security",
-    "publishedAt": "2026-10-02T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "linux-backdoors-mimic-asian-mail-security-products",
-      "article-50d1b2",
-      "50d1b2"
-    ]
-  },
-  {
-    "slug": "cloudflare-unveils-eight-major-observability-updat-674932",
-    "title": "Cloudflare Unveils Eight Major Observability Updates",
-    "summary": "Cloudflare launches eight major updates that consolidate logs, traces, analytics, alerts, dashboards, querying, and telemetry export into a single observability platform. The changes aim to simplify and make pricing more predictable for users, enhancing monitoring and incident response capabilities.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/one-observability-platform/",
-    "publishedAt": "2026-10-02T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-unveils-eight-major-observability-updat",
-      "article-674932",
-      "674932",
-      "cloudflare-unveils-eight-major-observability-updates"
-    ]
-  },
-  {
-    "slug": "microsoft-warns-ai-accelerates-attackers-edge-1581e7",
-    "title": "Microsoft Warns AI Accelerates Attackers’ Edge",
-    "summary": "Microsoft’s 2026 Digital Defense Report highlights that threat actors are using AI to discover bugs, build malware, and conduct intrusions faster than defenders can respond. The report stresses the need for rapid defensive adjustments to close the gap as AI changes cybersecurity dynamics.",
-    "category": "Malware",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/02/ai-cybersecurity-threats-microsoft-report/",
-    "publishedAt": "2026-10-02T12:47:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-warns-ai-accelerates-attackers-edge",
-      "article-1581e7",
-      "1581e7"
     ]
   }
 ];

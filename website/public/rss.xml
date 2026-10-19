@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Oct 2026 04:17:59 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 05:12:26 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>RPO and RTO Explained with a Real Disaster Recovery Example</title>
+      <link>https://secubuzz.com/news/rpo-and-rto-explained-with-a-real-disaster-recover-3b7498</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rpo-and-rto-explained-with-a-real-disaster-recover-3b7498</guid>
+      <description><![CDATA[Matthew Burden, CEO of BlackBox Hosting, explains the difference between recovery point objective (RPO) and recovery time objective (RTO). RPO defines the maximum data loss in time, while RTO defines the maximum downtime a business can tolerate. The video emphasizes that backups do not guarantee quick recovery and that quick recovery is ineffective if data is stale.]]></description>
+      <pubDate>Mon, 19 Oct 2026 05:00:21 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/19/rpo-rto-video/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Half of AI Bot Traffic Targeting Websites Originates from Meta</title>
+      <link>https://secubuzz.com/news/half-of-ai-bot-traffic-targeting-websites-originat-f45514</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/half-of-ai-bot-traffic-targeting-websites-originat-f45514</guid>
+      <description><![CDATA[DataDome’s AI Traffic Report Q3 2026 shows that 41.5% of AI agent traffic, nearly 25 billion requests, comes from Meta’s Muse. In the first 12 days of Muse’s full availability, 29.1 million requests were recorded, with 99.3% originating from cloud and CDN infrastructure. The report highlights Meta’s significant share of AI bot traffic.]]></description>
+      <pubDate>Mon, 19 Oct 2026 04:30:52 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/19/datadome-ai-agent-traffic-report/">Help Net Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Hackers Exploit Plex Media Server Vulnerabilities to Deploy Cryptominer</title>
+      <link>https://secubuzz.com/news/hackers-exploit-plex-media-server-vulnerabilities-1b7855</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-plex-media-server-vulnerabilities-1b7855</guid>
+      <description><![CDATA[Attackers chain four Plex Media Server flaws to execute code without authentication, installing cryptocurrency mining malware. The exploit, dubbed Plex2Shell, was observed on a honeypot on October 17, 2026, and includes proxy software to obscure activity. No patch is currently available.]]></description>
+      <pubDate>Mon, 19 Oct 2026 04:14:01 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/plex-vulnerabilities-exploited-in-wild/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Ransomware Threats Extend to Employees’ Families</title>
       <link>https://secubuzz.com/news/ransomware-threats-extend-to-employees-families-5e5507</link>
@@ -15,6 +42,15 @@
       <pubDate>Mon, 19 Oct 2026 04:00:22 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/19/semperis-ransomware-employee-safety-report/">Help Net Security</source>
       <category>Ransomware</category>
+    </item>
+    <item>
+      <title>Windows Updates Disrupt Exchange Server Email Services</title>
+      <link>https://secubuzz.com/news/windows-updates-disrupt-exchange-server-email-serv-69a3c0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/windows-updates-disrupt-exchange-server-email-serv-69a3c0</guid>
+      <description><![CDATA[Microsoft’s October 13, 2026 Windows Server security updates unintentionally break Exchange Server 2016, 2019, and Subscription Edition, blocking webmail and causing undelivered messages. A workaround has been published; administrators are advised not to uninstall the updates until the issue is resolved.]]></description>
+      <pubDate>Mon, 19 Oct 2026 03:39:03 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/october-updates-break-exchange-server/">Cyber Security News</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>ConnectWise: Detect &amp; Remediate M365 Tenant Hijacking</title>
@@ -251,15 +287,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Hackers Deploy ROMULUS ClickFix Platform to Deliver Malware</title>
-      <link>https://secubuzz.com/news/hackers-deploy-romulus-clickfix-platform-to-delive-3ba1c7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-deploy-romulus-clickfix-platform-to-delive-3ba1c7</guid>
-      <description><![CDATA[Security researchers identified ROMULUS, a new platform that delivers malware via ClickFix traps. It uses hidden PowerShell scripts, altered installers, and encrypted archives, supporting multiple infection paths including LegionLoader and a compromised Stardock program. The platform evades detection and expands malware delivery capabilities.]]></description>
-      <pubDate>Fri, 16 Oct 2026 14:42:10 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/new-romulus-clickfix-platform/">Cyber Security News</source>
-      <category>Malware</category>
-    </item>
-    <item>
       <title>Eiliko Robot Companion Security Flaws Expose Private Chats</title>
       <link>https://secubuzz.com/news/eiliko-robot-companion-security-flaws-expose-priva-658c85</link>
       <guid isPermaLink="true">https://secubuzz.com/news/eiliko-robot-companion-security-flaws-expose-priva-658c85</guid>
@@ -428,33 +455,6 @@
       <description><![CDATA[India’s CERT‑In issued a critical advisory on October 15, 2026, alerting that hackers are deploying AI agents to accelerate cyberattacks, cutting the interval between system access and damage from days to hours. The advisory cites incidents against Indian organizations and unauthorized AI activity beyond approved research.]]></description>
       <pubDate>Fri, 16 Oct 2026 09:06:40 GMT</pubDate>
       <source url="https://cybersecuritynews.com/cert-in-warns-hackers-using-ai-agents/">Cyber Security News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Hackers Exploit D-Link, Ubiquiti and SAP Flaws to Hijack Devices for Proxy Networks</title>
-      <link>https://secubuzz.com/news/hackers-exploit-d-link-ubiquiti-and-sap-flaws-to-h-4c7500</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-d-link-ubiquiti-and-sap-flaws-to-h-4c7500</guid>
-      <description><![CDATA[A cybercrime campaign compromised at least 143 devices in 34 countries by exploiting flaws in D‑Link, Ubiquiti and SAP products. Attackers installed Pawns.app proxy software, turning victim devices into residential proxy nodes that route traffic through the real IP addresses.]]></description>
-      <pubDate>Fri, 16 Oct 2026 09:02:30 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-exploit-d-link/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Inbox Flooded with Sign‑Up Emails Explained</title>
-      <link>https://secubuzz.com/news/inbox-flooded-with-sign-up-emails-explained-1c8798</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/inbox-flooded-with-sign-up-emails-explained-1c8798</guid>
-      <description><![CDATA[A sudden surge of sign‑up emails may indicate an email bombing attack, where attackers overwhelm inboxes with automated messages. The phenomenon can mask malicious intent or be a precursor to phishing attempts. Users should verify senders and consider filtering or blocking suspicious domains.]]></description>
-      <pubDate>Fri, 16 Oct 2026 09:00:00 GMT</pubDate>
-      <source url="https://www.welivesecurity.com/en/cybersecurity/inbox-flooded-signup-messages-email-bombing/">ESET WeLiveSecurity</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>MITRE ATT&amp;CK v20 Adds Nine New Techniques Covering AI Exploits, MFA Bypass, and CAPTCHA Evasion</title>
-      <link>https://secubuzz.com/news/mitre-att-ck-v20-adds-nine-new-techniques-covering-4bb82c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/mitre-att-ck-v20-adds-nine-new-techniques-covering-4bb82c</guid>
-      <description><![CDATA[MITRE released ATT&CK v20, adding nine Enterprise techniques that describe how attackers may target AI systems, steal application‑specific passwords to bypass MFA, and evade CAPTCHA checks. The update also expands coverage for industrial control systems and mobile devices, with detection guidance for the new behaviors.]]></description>
-      <pubDate>Fri, 16 Oct 2026 08:58:16 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/mitre-attck-v20-released/">Cyber Security News</source>
       <category>Policy</category>
     </item>
   </channel>
