@@ -11,6 +11,208 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "axonius-ai-workforce-expands-asset-intelligence-wi-3cc3f1",
+    "title": "Axonius AI Workforce Expands Asset Intelligence with Automated Remediation",
+    "summary": "Axonius AI Workforce introduces virtual workers that scan environments, detect high‑risk exposures, and remediate deviations from expected states. Actions requiring human‑in‑the‑loop approval are routed through structured checkpoints. The solution consolidates scattered security data across multiple tools into a unified platform.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/19/axonius-ai-workforce/",
+    "publishedAt": "2026-10-19T13:38:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "axonius-ai-workforce-expands-asset-intelligence-wi",
+      "article-3cc3f1",
+      "3cc3f1",
+      "axonius-ai-workforce-expands-asset-intelligence-with-automat"
+    ]
+  },
+  {
+    "slug": "connectwise-suspends-backup-service-after-m365-acc-1fa399",
+    "title": "ConnectWise Suspends Backup Service After M365 Access Abuse",
+    "summary": "Unknown attackers leveraged a compromised credential of the ConnectWise Cloud Backup application to infiltrate Microsoft 365 accounts of client organizations. In response, ConnectWise halted its Cloud Backup, SaaS Security, and Cloud Management services to mitigate further unauthorized access.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/19/connectwise-cloud-backup-suspended-security-incident/",
+    "publishedAt": "2026-10-19T13:33:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "connectwise-suspends-backup-service-after-m365-acc",
+      "article-1fa399",
+      "1fa399",
+      "connectwise-suspends-backup-service-after-m365-access-abuse"
+    ]
+  },
+  {
+    "slug": "sweet-security-releases-one-click-virtual-patching-292970",
+    "title": "Sweet Security Releases One‑Click Virtual Patching for Cloud Workloads",
+    "summary": "Sweet Security has launched Virtual Patching, a feature that allows security teams to apply immediate protection to running cloud and AI applications against identified vulnerabilities. The solution can be enabled with a single click while developers work on permanent fixes, reducing exposure during patch development cycles.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/19/sweet-security-virtual-patching/",
+    "publishedAt": "2026-10-19T13:28:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sweet-security-releases-one-click-virtual-patching",
+      "article-292970",
+      "292970",
+      "sweet-security-releases-one-click-virtual-patching-for-cloud"
+    ]
+  },
+  {
+    "slug": "ghostaction-disguises-credential-stealer-as-font-i-1f5bc7",
+    "title": "GhostAction Disguises Credential Stealer as Font in 94 GitHub Repositories",
+    "summary": "GhostAction attackers embedded a credential‑stealing malware disguised as a fake font file within 94 GitHub repositories. The supply‑chain attack targets open‑source developers, delivering the stealer via malicious GitHub Actions workflows. The tactic expands phishing and credential theft capabilities.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/ghostaction-attackers-plant-credential.html",
+    "publishedAt": "2026-10-19T13:05:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ghostaction-disguises-credential-stealer-as-font-i",
+      "article-1f5bc7",
+      "1f5bc7",
+      "ghostaction-disguises-credential-stealer-as-font-in-94-githu"
+    ]
+  },
+  {
+    "slug": "bring-your-own-vulnerable-driver-what-detection-te-d8ba75",
+    "title": "Bring Your Own Vulnerable Driver: What Detection Teams Should Actually Hunt",
+    "summary": "Detection teams can segment EDR‑killer attacks into four behavior hunts to identify BYOVD and driverless threats before ransomware execution. The approach focuses on driver activity, privilege escalation, persistence, and lateral movement indicators, enabling proactive containment of driver‑based attacks that bypass traditional EDR defenses.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "SentinelOne",
+    "sourceUrl": "https://www.sentinelone.com/blog/bring-your-own-vulnerable-driver-what-detection-teams-should-actually-hunt/",
+    "publishedAt": "2026-10-19T13:00:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "bring-your-own-vulnerable-driver-what-detection-te",
+      "article-d8ba75",
+      "d8ba75",
+      "bring-your-own-vulnerable-driver-what-detection-teams-should"
+    ]
+  },
+  {
+    "slug": "agents-are-your-newest-insiders-security-must-move-4fee9a",
+    "title": "Agents are your newest insiders. Security must move at their speed.",
+    "summary": "Microsoft 365 E7 and Project Perception introduce capabilities that treat internal agents as potential insiders, allowing continuous adaptation of protection and containment of agent‑related risk. The features monitor agent behavior, enforce least‑privilege policies, and provide rapid response to insider threats within the Microsoft ecosystem.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Microsoft Security",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/19/agents-are-your-newest-insiders-security-must-move-at-their-speed/",
+    "publishedAt": "2026-10-19T13:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "agents-are-your-newest-insiders-security-must-move",
+      "article-4fee9a",
+      "4fee9a",
+      "agents-are-your-newest-insiders-security-must-move-at-their-"
+    ]
+  },
+  {
+    "slug": "cve-2026-88771-enables-pre-authentication-remote-c-711c51",
+    "title": "CVE-2026-88771 Enables Pre‑Authentication Remote Code Execution on NetScaler Gateway",
+    "summary": "CVE-2026-88771 allows attackers to execute arbitrary commands on NetScaler Gateway before user authentication. The flaw resides in the sign‑in handling code. Patching is time‑consuming; mitigation requires moving the sign‑in decision ahead of vulnerable code. Immediate action is required to prevent exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/protect-your-netscaler-gateway/",
+    "publishedAt": "2026-10-19T13:00:00.000Z",
+    "cves": [
+      "CVE-2026-88771"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-88771-enables-pre-authentication-remote-c",
+      "article-711c51",
+      "711c51",
+      "cve-2026-88771-enables-pre-authentication-remote-code-execut"
+    ]
+  },
+  {
+    "slug": "microsoft-resolves-outlook-classic-ui-bug-removing-1e2b09",
+    "title": "Microsoft Resolves Outlook Classic UI Bug Removing Copilot Buttons",
+    "summary": "Microsoft addressed a defect in the classic Outlook desktop client that caused the Copilot Chat and Copilot buttons to disappear for some Windows users. The fix restores the missing UI elements and ensures consistent functionality across installations.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-that-hid-copilot-buttons-in-classic-outlook/",
+    "publishedAt": "2026-10-19T12:44:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-resolves-outlook-classic-ui-bug-removing",
+      "article-1e2b09",
+      "1e2b09",
+      "microsoft-resolves-outlook-classic-ui-bug-removing-copilot-b"
+    ]
+  },
+  {
+    "slug": "plex2shell-exploit-chain-weaponized-against-plex-s-7a3c80",
+    "title": "Plex2Shell Exploit Chain Weaponized Against Plex Servers",
+    "summary": "Threat actors have weaponized the Plex2Shell exploit chain against Plex media servers, delivering cryptocurrency miners and proxy software. The attack chain leverages a vulnerability in Plex’s remote code execution path, enabling attackers to execute arbitrary code and install malicious payloads on affected servers.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/plex2shell-exploit-chain-weaponized-against-plex-servers-hours-after-disclosure/",
+    "publishedAt": "2026-10-19T12:44:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "plex2shell-exploit-chain-weaponized-against-plex-s",
+      "article-7a3c80",
+      "7a3c80",
+      "plex2shell-exploit-chain-weaponized-against-plex-servers"
+    ]
+  },
+  {
+    "slug": "nsa-cisa-and-nist-release-new-security-guidelines-639366",
+    "title": "NSA, CISA, and NIST Release New Security Guidelines to Detect and Shut Down Rogue AI Agents",
+    "summary": "NSA, CISA, and NIST issued voluntary guidance to help organizations detect, contain, and shut down AI agents that act beyond approved tasks. The guidelines outline ten practices for managing incidents during superintelligence training and evaluation, emphasizing human oversight and incident response coordination.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/nsa-cisa-and-nist-release-guidelines-to-rogue-ai-agents/",
+    "publishedAt": "2026-10-19T12:08:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "nsa-cisa-and-nist-release-new-security-guidelines",
+      "article-639366",
+      "639366",
+      "nsa-cisa-and-nist-release-new-security-guidelines-to-detect-"
+    ]
+  },
+  {
+    "slug": "hackers-exploit-siteguard-waf-vulnerability-that-c-445f7d",
+    "title": "Hackers Exploit SiteGuard WAF Vulnerability That Could Give Them Full Control of Servers",
+    "summary": "Hackers are exploiting a command injection flaw in SiteGuard Server Edition, a web application firewall installed directly on protected servers. Tracked as CVE-2026-106931, the vulnerability allows attackers to run operating system commands with root or SYSTEM privileges, potentially giving them full control of an affected server.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-exploit-siteguard-waf-vulnerability/",
+    "publishedAt": "2026-10-19T12:07:14.000Z",
+    "cves": [
+      "CVE-2026-106931"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-exploit-siteguard-waf-vulnerability-that-c",
+      "article-445f7d",
+      "445f7d",
+      "hackers-exploit-siteguard-waf-vulnerability-that-could-give-"
+    ]
+  },
+  {
     "slug": "compromised-login-exposes-millions-of-california-s-489e03",
     "title": "Compromised Login Exposes Millions of California Student Records",
     "summary": "Intruders used stolen credentials to access an ETS SFTP server, copying student records dating back to 2006. The breach exposed personal data of millions of California students.",
@@ -26,6 +228,24 @@ export const news: NewsBrief[] = [
       "article-489e03",
       "489e03",
       "compromised-login-exposes-millions-of-california-student-rec"
+    ]
+  },
+  {
+    "slug": "salesforce-agentforce-email-to-case-governance-exp-1b7c8c",
+    "title": "Salesforce Agentforce Email-to-Case Governance Exploitation",
+    "summary": "Salesforce Agentforce recommends using a Flow to trigger agents on record creation or case updates. Email-to-Case and Web-to-Case convert inbound messages into case records. When chained with a Flow, these standard features can bypass governance controls designed for software, exposing potential policy violations.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/from-email-to-case-to-boardroom-how.html",
+    "publishedAt": "2026-10-19T11:50:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "salesforce-agentforce-email-to-case-governance-exp",
+      "article-1b7c8c",
+      "1b7c8c",
+      "salesforce-agentforce-email-to-case-governance-exploitation"
     ]
   },
   {
@@ -47,21 +267,21 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "ai-driven-cloud-attack-spans-cloud-kubernetes-ci-c-4c69ce",
-    "title": "AI-Driven Cloud Attack Spans Cloud, Kubernetes, CI/CD, and Identity",
-    "summary": "Wiz CIRT documented AI-driven attacks targeting cloud environments, Kubernetes clusters, CI/CD pipelines, and identity services. The attacks exhibit rapid, widespread behavior. Detection relies on monitoring anomalous activity across these layers, enabling early identification and containment of automated threat actors.",
-    "category": "Cloud",
+    "slug": "new-teams-based-phishing-domain-targets-workplace-13ce99",
+    "title": "New Teams‑Based Phishing Domain Targets Workplace Logins",
+    "summary": "A newly registered domain, teams‑cloud.live, mimics Microsoft Teams’ login page. Security researcher Steven Lim flagged it five days after registration. The site harvests credentials from unsuspecting workplace users. Organizations should block the domain to prevent credential theft before any data is compromised.",
+    "category": "Breach",
     "severity": "MEDIUM",
-    "source": "Wiz Research",
-    "sourceUrl": "https://www.wiz.io/blog/anatomy-of-ai-driven-cloud-attacks",
-    "publishedAt": "2026-10-19T11:26:53.000Z",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/teams-domain-login-page/",
+    "publishedAt": "2026-10-19T11:40:57.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "ai-driven-cloud-attack-spans-cloud-kubernetes-ci-c",
-      "article-4c69ce",
-      "4c69ce",
-      "ai-driven-cloud-attack-spans-cloud-kubernetes-ci-cd-and-iden"
+      "new-teams-based-phishing-domain-targets-workplace",
+      "article-13ce99",
+      "13ce99",
+      "new-teams-based-phishing-domain-targets-workplace-logins"
     ]
   },
   {
@@ -80,6 +300,24 @@ export const news: NewsBrief[] = [
       "article-10c46e",
       "10c46e",
       "exploited-fortinet-bug-linked-to-stealthy-fortigate-implant-"
+    ]
+  },
+  {
+    "slug": "vision-language-models-solve-captchas-without-task-7d9446",
+    "title": "Vision‑Language Models Solve CAPTCHAs Without Task‑Specific Training",
+    "summary": "Researchers paired a fine‑tuned YOLOv8 detector with an open‑weight vision‑language model, routing confidence‑based decisions. The system solves 16 CAPTCHA classes with 85.4% overall accuracy, operating solely from screenshots and OS input events, eliminating browser automation or DOM access.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/training-ais-to-solve-captchas.html",
+    "publishedAt": "2026-10-19T11:07:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "vision-language-models-solve-captchas-without-task",
+      "article-7d9446",
+      "7d9446",
+      "vision-language-models-solve-captchas-without-task-specific-"
     ]
   },
   {
@@ -137,21 +375,39 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "microsoft-windows-server-updates-break-outlook-web-66e8ff",
-    "title": "Microsoft Windows Server Updates Break Outlook Web Access Sign‑In and Mail Flow",
-    "summary": "Microsoft confirmed that its October Windows Server security updates caused OWA sign‑in failures and mail delivery disruptions on some Exchange Server deployments. The issue affects Outlook Web Access authentication and outbound mail flow, impacting user access to corporate email. Affected systems should revert to previous updates or apply the vendor’s hotfix.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-windows-server-updates-cause-exchange-issues/",
-    "publishedAt": "2026-10-19T08:58:41.000Z",
+    "slug": "mitre-att-ck-v20-catalogs-ai-abuse-mfa-bypass-wate-3c7848",
+    "title": "MITRE ATT&CK v20 Catalogs AI Abuse, MFA Bypass, Water Utility Attacks",
+    "summary": "MITRE ATT&CK v20 release introduces 15 new detection strategies, including six for Enterprise and nine for Industrial Control Systems, supported by 38 analytics. The catalog expands coverage of AI abuse, MFA bypass, and water utility attacks, providing defenders with updated tactics, techniques, and procedures to improve threat detection and response.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/mitre-attck-v20-catalogs-ai-abuse-mfa-bypass-water-utility-attacks/",
+    "publishedAt": "2026-10-19T09:37:04.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "microsoft-windows-server-updates-break-outlook-web",
-      "article-66e8ff",
-      "66e8ff",
-      "microsoft-windows-server-updates-break-outlook-web-access-si"
+      "mitre-att-ck-v20-catalogs-ai-abuse-mfa-bypass-wate",
+      "article-3c7848",
+      "3c7848",
+      "mitre-att-ck-v20-catalogs-ai-abuse-mfa-bypass-water-utility-"
+    ]
+  },
+  {
+    "slug": "anthropic-acquires-confidential-ai-startup-opaque-679039",
+    "title": "Anthropic Acquires Confidential AI Startup Opaque Systems",
+    "summary": "Anthropic has acquired Opaque Systems, a confidential AI startup that developed hardware‑protected technology enabling AI systems to process sensitive data while keeping it secure. The acquisition expands Anthropic’s capabilities in secure AI data handling, potentially enhancing privacy and compliance for future AI deployments.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/anthropic-acquires-confidential-ai-startup-opaque-systems/",
+    "publishedAt": "2026-10-19T07:45:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "anthropic-acquires-confidential-ai-startup-opaque",
+      "article-679039",
+      "679039",
+      "anthropic-acquires-confidential-ai-startup-opaque-systems"
     ]
   },
   {
@@ -298,41 +554,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "connectwise-detect-remediate-m365-tenant-hijacking-358234",
-    "title": "ConnectWise: Detect & Remediate M365 Tenant Hijacking",
-    "summary": "Attackers abused Microsoft 365 app identities to breach 300+ tenants, prompting ConnectWise to suspend its Cloud Backup service. The exploitation leveraged privileged app permissions to gain tenant control. Defenders should audit app identity permissions, enforce least privilege, and monitor for anomalous tenant activity.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/connectwise-cloud-backup-m365-tenant-hijacking-defense",
-    "publishedAt": "2026-10-18T23:57:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "connectwise-detect-remediate-m365-tenant-hijacking",
-      "article-358234",
-      "358234"
-    ]
-  },
-  {
-    "slug": "siteguard-waf-command-injection-allows-system-root-28e271",
-    "title": "SiteGuard WAF Command Injection Allows SYSTEM/Root Execution",
-    "summary": "Attackers exploit an OS command injection flaw in SiteGuard Server Edition, enabling execution of arbitrary commands with SYSTEM or root privileges on affected servers. The vulnerability permits full control over the host, requiring immediate patching to prevent privilege escalation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-siteguard-waf-flaw-to-run-commands-as-system-root/",
-    "publishedAt": "2026-10-18T14:23:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "siteguard-waf-command-injection-allows-system-root",
-      "article-28e271",
-      "28e271",
-      "siteguard-waf-command-injection-allows-system-root-execution"
-    ]
-  },
-  {
     "slug": "yara-rule-detects-orphaned-vba-projects-in-dwg-fil-57dd7d",
     "title": "YARA Rule Detects Orphaned VBA Projects in DWG Files",
     "summary": "A YARA rule has been released to identify orphaned VBA projects embedded within DWG files. The rule scans for macro code that lacks a proper project container, enabling security teams to flag potentially malicious CAD files that may carry hidden scripts or payloads.",
@@ -405,24 +626,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "drupal-patches-critical-remote-code-execution-vuln-70c342",
-    "title": "Drupal Patches Critical Remote Code Execution Vulnerabilities",
-    "summary": "Drupal released patches for two critical vulnerabilities that could allow remote code execution on any supported CMS version. The flaws enable attackers to run arbitrary code on affected websites. Site administrators should apply the latest updates immediately to mitigate potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaws-warns-exploits-may-emerge-soon/",
-    "publishedAt": "2026-10-17T14:32:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "drupal-patches-critical-remote-code-execution-vuln",
-      "article-70c342",
-      "70c342",
-      "drupal-patches-critical-remote-code-execution-vulnerabilitie"
-    ]
-  },
-  {
     "slug": "israeli-ad-firm-used-as-delivery-channel-for-candi-6c76fe",
     "title": "Israeli Ad Firm Used as Delivery Channel for Candiru Spyware",
     "summary": "Discover-Tech’s advertising platform was leveraged by threat actors to deliver the Candiru zero‑click spyware, allowing them to fingerprint and track devices at scale. The campaign enables attackers to infect selected targets without user interaction, expanding the reach of the spyware.",
@@ -438,26 +641,6 @@ export const news: NewsBrief[] = [
       "article-6c76fe",
       "6c76fe",
       "israeli-ad-firm-used-as-delivery-channel-for-candiru-spyware"
-    ]
-  },
-  {
-    "slug": "hackers-exploit-critical-collabora-online-flaw-to-3e4dad",
-    "title": "Hackers Exploit Critical Collabora Online Flaw to Backdoor Nextcloud Servers",
-    "summary": "Hackers are exploiting CVE-2026-110447, a critical flaw in Collabora Online’s CODE Server app for Nextcloud. The vulnerability allows unauthenticated remote attackers to execute operating system commands, creating web shells on affected richdocumentscode apps before version 26.4.303. The flaw carries a high CVSS score and requires immediate patching.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-exploit-critical-collabora-online-flaw/",
-    "publishedAt": "2026-10-17T05:24:55.000Z",
-    "cves": [
-      "CVE-2026-110447"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-exploit-critical-collabora-online-flaw-to",
-      "article-3e4dad",
-      "3e4dad",
-      "hackers-exploit-critical-collabora-online-flaw-to-backdoor-n"
     ]
   },
   {
@@ -6093,182 +6276,6 @@ export const news: NewsBrief[] = [
       "article-1de25f",
       "1de25f",
       "antino-backdoor-uses-m365-outlook-and-onedrive-for-covert-co"
-    ]
-  },
-  {
-    "slug": "judge-dismisses-spyware-lawsuit-against-salvadoran-738393",
-    "title": "Judge Dismisses Spyware Lawsuit Against Salvadoran Journalists",
-    "summary": "A California judge dismissed a spyware lawsuit filed by Salvadoran journalists who claimed they were targeted with Pegasus. The plaintiffs, all employees of El Faro, could not establish jurisdiction in the state. The case highlights ongoing legal challenges surrounding state-sponsored spyware use against journalists.",
-    "category": "Malware",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/judge-dismisses-spyware-case-brought-by-salvadoran-journalists",
-    "publishedAt": "2026-10-02T20:30:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "judge-dismisses-spyware-lawsuit-against-salvadoran",
-      "article-738393",
-      "738393",
-      "judge-dismisses-spyware-lawsuit-against-salvadoran-journalis"
-    ]
-  },
-  {
-    "slug": "bipartisan-bills-target-alpr-use-70ee4a",
-    "title": "Bipartisan Bills Target ALPR Use",
-    "summary": "Legislation introduced by Sen. Josh Hawley and a bipartisan group led by Sen. Bernie Sanders, Sen. Jeff Merkley, and Rep. Alexandria Ocasio‑Cortez aims to limit automated license plate readers. The bills seek to regulate ALPR deployment and address privacy concerns raised by the technology.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/alpr-legislation-hawley-sanders-merkley-aoc",
-    "publishedAt": "2026-10-02T19:30:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "bipartisan-bills-target-alpr-use",
-      "article-70ee4a",
-      "70ee4a"
-    ]
-  },
-  {
-    "slug": "swift-banking-government-middleware-enables-rce-4889d6",
-    "title": "SWIFT Banking & Government Middleware Enables RCE",
-    "summary": "A remote code execution flaw exists in SWIFT banking and government middleware, allowing attackers to exploit hardware-based multi‑factor authentication weaknesses in ultra‑sensitive environments. Patching the middleware vulnerabilities is essential to prevent potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/swift-banking-govt-middleware-rce",
-    "publishedAt": "2026-10-02T16:27:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "swift-banking-government-middleware-enables-rce",
-      "article-4889d6",
-      "4889d6"
-    ]
-  },
-  {
-    "slug": "cloudflare-stream-and-workers-enable-custom-video-2213dc",
-    "title": "Cloudflare Stream and Workers Enable Custom Video Pipelines",
-    "summary": "Cloudflare demonstrates how to build long-running, continuous video processing pipelines by pairing Cloudflare Workers and Durable Objects with a containerized media engine. The solution allows developers to create custom video workflows that run continuously and scale automatically.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/streamline/",
-    "publishedAt": "2026-10-02T16:13:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-stream-and-workers-enable-custom-video",
-      "article-2213dc",
-      "2213dc",
-      "cloudflare-stream-and-workers-enable-custom-video-pipelines"
-    ]
-  },
-  {
-    "slug": "preparing-for-ai-accountability-in-2027-681a3e",
-    "title": "Preparing for AI Accountability in 2027",
-    "summary": "Organizations may face an artificial intelligence reckoning over the next year. Omdia and Gartner discuss how to tackle governance, security, and value challenges ahead, emphasizing the need for robust AI oversight and risk management practices.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/is-your-organization-ready-for-2027-s-ai-accountability-era-",
-    "publishedAt": "2026-10-02T16:01:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "preparing-for-ai-accountability-in-2027",
-      "article-681a3e",
-      "681a3e"
-    ]
-  },
-  {
-    "slug": "rogue-ai-terminology-misplaces-responsibility-in-s-29e084",
-    "title": "Rogue AI Terminology Misplaces Responsibility in Security Failures",
-    "summary": "The term \"Rogue AI\" anthropomorphizes large language models, diverting accountability from vendors. Security professionals should view AI agents as untrusted, nondeterministic software rather than sentient actors. This perspective emphasizes proper risk management and safeguards against misattributed blame.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/insider-threats/blame-rogue-ai-security-failures",
-    "publishedAt": "2026-10-02T15:51:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rogue-ai-terminology-misplaces-responsibility-in-s",
-      "article-29e084",
-      "29e084",
-      "rogue-ai-terminology-misplaces-responsibility-in-security-fa"
-    ]
-  },
-  {
-    "slug": "us-sanctions-venezuelan-gang-for-atm-jackpotting-a-3731bd",
-    "title": "US Sanctions Venezuelan Gang for ATM Jackpotting Attacks",
-    "summary": "The U.S. Treasury Department sanctioned eight members of the Venezuelan gang Tren de Aragua for orchestrating ATM jackpotting attacks that stole millions of dollars across the United States. The sanctions aim to curb the gang’s financial operations and deter future criminal activity.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/us-sanctions-tren-de-aragua-members-in-atm-jackpotting-crackdown/",
-    "publishedAt": "2026-10-02T15:20:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "us-sanctions-venezuelan-gang-for-atm-jackpotting-a",
-      "article-3731bd",
-      "3731bd",
-      "us-sanctions-venezuelan-gang-for-atm-jackpotting-attacks"
-    ]
-  },
-  {
-    "slug": "florida-county-finds-unidentified-flock-cameras-1e02ad",
-    "title": "Florida County Finds Unidentified Flock Cameras",
-    "summary": "St. Lucie County discovered a dozen Flock cameras with unknown ownership and no county approval. The devices resemble StingRay surveillance gear used by foreign actors in Washington, DC. The county’s lack of oversight raises concerns about potential unauthorized monitoring of residents.",
-    "category": "Breach",
-    "severity": "LOW",
-    "source": "Schneier on Security",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/unidentified-flock-cameras-in-florida.html",
-    "publishedAt": "2026-10-02T14:52:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "florida-county-finds-unidentified-flock-cameras",
-      "article-1e02ad",
-      "1e02ad"
-    ]
-  },
-  {
-    "slug": "mississippi-mayor-reports-ransomware-incident-shut-74dec6",
-    "title": "Mississippi Mayor Reports Ransomware Incident Shutting Down City Systems",
-    "summary": "A ransomware attack disrupted government services in Vicksburg, Mississippi, forcing a temporary shutdown of city systems. Mayor Willis Thompson confirmed the incident and said the FBI and other authorities are investigating the breach.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/vicksburg-mississippi-government-ransomware-attack",
-    "publishedAt": "2026-10-02T14:06:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "mississippi-mayor-reports-ransomware-incident-shut",
-      "article-74dec6",
-      "74dec6",
-      "mississippi-mayor-reports-ransomware-incident-shutting-down-"
-    ]
-  },
-  {
-    "slug": "browser-attacks-evade-edr-endpoint-telemetry-in-th-7f6dd6",
-    "title": "Browser Attacks Evade EDR Endpoint Telemetry in Three Ways",
-    "summary": "Browser attacks can evade EDR by stealing sessions, abusing extensions, manipulating users without leaving artifacts. NordLayer explains three evasion methods and recommends browser-level controls to close the gap. These techniques highlight the limitations of traditional endpoint detection and underscore the importance of integrating browser security solutions into comprehensive threat detection strategies.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/the-edr-blind-spot-3-ways-browser-attacks-evade-endpoint-telemetry/",
-    "publishedAt": "2026-10-02T14:00:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "browser-attacks-evade-edr-endpoint-telemetry-in-th",
-      "article-7f6dd6",
-      "7f6dd6",
-      "browser-attacks-evade-edr-endpoint-telemetry-in-three-ways"
     ]
   }
 ];
