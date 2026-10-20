@@ -3,6 +3,8 @@
 ## 1. Expo SDK 57 Standards
 - Read exact versioned docs at https://docs.expo.dev/versions/v57.0.0/ before writing code.
 - Always preserve protocol integrity for catch-all routes (`/article/[...id].tsx`) to avoid collapsing `https://` into `https:/`.
+- **SDK 58 Migration Strategy**: Expo SDK 58 (React Native 0.88) was released Oct 15, 2026. Do NOT upgrade immediately while Expo Go 58 is pending rollout on Google Play. Slated for **Release v1.1.0** to unlock native Android home screen widgets (`expo-widgets`), prebuilt `expo-modules-core` (50% faster Android builds), and `expo-notifications` `largeIcon` drawer branding.
+
 
 ## 2. Senior Engineering Mandate & Proactive Pushback
 - **Do not blindly agree with everything.** Act as a proactive senior engineer and technical partner.
@@ -91,7 +93,8 @@
   - **P1: Android Home Screen Widget (Jose's Community Request)**:
     - User/tester Jose requested an Android home screen widget.
     - Vision: Glance / AppWidget displaying the latest 60-word critical threat brief or active CISA KEV zero-day counter directly on the Android home screen without needing to open the app.
-    - Technical evaluation: Evaluate `expo-widgets` or a custom Android Glance AppWidgetProvider config plugin for Expo SDK 57.
+    - Technical evaluation & confirmation: Officially supported in **Expo SDK 58** via native Android `expo-widgets` (runs isolated Hermes JS bundle on Android with Material dynamic colors and `cornerRadius`). Slated to build immediately upon upgrading to SDK 58 in v1.1.0.
+
   - **P1: Structured Threat Timeline**: Visual lifecycle (`Disclosed → PoC → Exploit → CISA KEV → Patch`) indicating what changed.
   - **P1: Authoritative NVD Vector Integration**: Pull CVSS v3.1/v4.0 vector strings directly from NIST NVD API.
   - **P2: Cloudflare Monetization Gateway (Agent & Scraper Micropayments)**:
@@ -202,9 +205,13 @@
   - Vendor Official PSIRT Feeds (Palo Alto, Microsoft MSRC, Cisco, Fortinet, Ivanti).
   - Local on-device `AsyncStorage` stack selection.
   - "AFFECTS YOUR STACK" visual alert badge on CISA KEV cards.
-- [ ] **P1 Feature Development: Android Home Screen Widget (Jose's Community Request)**:
-  - Native home screen widget showing latest Critical brief / CISA KEV counter.
+- [ ] **Expo SDK 58 Upgrade & Android Widget Activation (v1.1.0 Milestone)**:
+  - **Prerequisite Gate**: Wait until Expo Go SDK 58 drops on Google Play Store and initial patch `58.0.x` stabilizes.
+  - **Jose's Android Home Screen Widget (`expo-widgets`)**: Build the native threat ticker widget in TypeScript/Hermes displaying latest 60-word brief / CISA KEV zero-day counter.
+  - **Notification Drawer Icon (`expo-notifications`)**: Wire `largeIcon` in app config to show crisp SecuBuzz shield in Android status drawer.
+  - **Build Speed**: Leverage precompiled `libexpo-modules-core.so` on Android to cut build times in half.
 - [ ] **Organic Marketing & Outreach Pipeline (Zero-Budget)**:
+
   - **Clint Gibler (`tl;dr sec` / OpenAI)**: On hold until P0 "My Stack / Am I Affected?" (v1.1.0) is shipped on Google Play. Message templates preserved in `docs/MARKETING_PLAYBOOK.md`.
   - **Reddit Developer Story**: On hold until account reaches 50–100 comment karma. Template preserved in `docs/MARKETING_PLAYBOOK.md` for `r/cybersecurity`, `r/sysadmin`, and `r/androidapps`.
   - **Hacker News "Show HN"**: Target Tuesday/Wednesday 8:00–9:00 AM EDT focusing on $0 edge worker architecture, zero-tracking, and strict schema AI distillation.
