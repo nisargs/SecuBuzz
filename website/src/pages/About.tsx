@@ -97,7 +97,7 @@ export function About() {
 
       <section className="border-t border-line">
         <div className="mx-auto max-w-site px-5 py-12 md:px-8">
-          <SupportBanner />
+          <SupportBanner source="about_page" />
         </div>
       </section>
 

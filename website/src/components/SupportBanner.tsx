@@ -4,9 +4,10 @@ import { Heart, ExternalLink } from 'lucide-react';
 interface SupportBannerProps {
   className?: string;
   compact?: boolean;
+  source?: string;
 }
 
-export function SupportBanner({ className = '', compact = false }: SupportBannerProps) {
+export function SupportBanner({ className = '', compact = false, source = 'footer_card' }: SupportBannerProps) {
   return (
     <div
       className={`group relative overflow-hidden rounded-2xl border border-line bg-surface/70 p-6 backdrop-blur-sm transition-all duration-200 hover:border-accent/40 hover:bg-surface md:p-8 ${className}`}
@@ -27,7 +28,7 @@ export function SupportBanner({ className = '', compact = false }: SupportBanner
         </div>
 
         <a
-          href="/support"
+          href={`/support?src=${encodeURIComponent(source)}`}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-accent px-5 py-3 text-sm font-semibold text-[#0A0D14] shadow-sm transition-all duration-150 ease-out hover:bg-accent/90 hover:scale-[1.02] hover:shadow-md"

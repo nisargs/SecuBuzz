@@ -147,6 +147,7 @@
 ## 11. API Classification, Telemetry Routines & Inventory Counts (Permanent Record)
 - **Private / Admin-Protected Endpoints (HTTP 401 Unauthorized if unauthenticated):**
   - `GET /api/analytics/install-clicks`: Real-time install button click telemetry, unique visitors, repeat clickers, and breakdown by source/country.
+  - `GET /api/analytics/support-clicks`: Real-time Ko-fi support link click telemetry, unique visitors, repeat clickers, and placement breakdown.
   - `GET /api/push-tokens`: Internal Expo push token registry.
   - `POST /api/push-tokens/deactivate`: Deactivation of stale/invalid device tokens.
   - `GET /api/notifications/sent` & `POST /api/notifications/sent`: Broadcast tracking & deduplication.
@@ -158,23 +159,25 @@
   - `GET /api/epss?cve={CVE-ID}`: FIRST.org EPSS exploit probability proxy (edge-cached 24h).
   - `GET /api/cve-metrics?cve={CVE-ID}`: NIST NVD CVSS vectors proxy (edge-cached 24h).
   - `POST /api/push-tokens`: Safe write-only device registration on app install (accepts token, never returns any stored token data).
+  - `GET /support`: Public 302 redirect to Ko-fi page with automatic D1 click tracking (`support_clicks`).
   - `GET /health`: Watchdog uptime endpoint reporting feed age & R2 status for external monitors (HetrixTools).
   - *Probes & Unknown `/api/*` Routes*: Always return `404 API endpoint not found`.
 - **Telemetry & Count Inquiries Protocol (Zero-Fumble Responsibility):**
   - When the user asks for stats, traffic, install counts, or repeat visitor metrics:
     - **NEVER** ask the user for secrets, API keys, or credentials.
     - Run `npx wrangler d1 execute secubuzz-push-db --remote --command "..."` (via `worker/` directory) and `node scripts/cf_analytics.mjs` / `node scripts/track_repeat_users.mjs`.
-    - **Mandatory 5-Point Reporting Format**: Always deliver the exact structure:
+    - **Mandatory 6-Point Reporting Format**: Always deliver the exact structure:
       1. *Real User Numbers (Traffic & Sessions)*: 7-day daily breakdown table of unique visitors, total requests, page views, new mobile app installs (measured by fresh push token registrations in D1), bandwidth, and top countries (US, DE, CA, NL, IN, AU, etc.).
       2. *Pages Checked*: Breakdown of RUM page views by route (`/`, `/news`, `/advisories`, `/download`, `/publishers`, `/about`, and specific CVE/brief URLs).
       3. *Repeat Users & Live Active Devices (Clean Production Install Base)*: Always explicitly report:
-         - Live Installed Devices: 15 on production `v1.0.2`
-         - Weekly Active Install Base: 11 (strictly matches Google Play Console's ~10 install base)
-         - Daily Active Devices: 7 (seen in last 48–72h, matching 5–6 recurring active users)
-         - Uninstalled / Pruned Devices: 74 marked inactive (`is_active = 0`)
-         - Web Repeat Users: Returning direct readers (bookmarks/shortcuts) and repeat install clickers (`is_repeat: 1` in D1 indicates an existing `sb_vid` returning website cookie; 52 clicks from 45 distinct visitors with 16 repeat clickers).
+         - Live Installed Devices: count and version breakdown (v1.0.3, v1.0.2)
+         - Weekly Active Install Base (seen in last 7 days)
+         - Daily Active Devices (seen in last 48–72h)
+         - Uninstalled / Pruned Devices (`is_active = 0`)
+         - Web Repeat Users: Returning direct readers (bookmarks/shortcuts) and repeat clickers.
       4. *Time on Site & Engagement*: Pages/session (~2.9 pages), dwell time (~1.5–2.5 min for 60-word briefs), inbound referrers (Reddit, Google, direct), and device OS split (Windows, iOS, Android, macOS). Note bot anomalies (e.g. Germany ~16 req/visit vs US ~3 req/visit reflects cloud scrapers).
       5. *Download Clicks*: Breakdown of `/go/play` button clicks by country/source (human vs crawler) and `/download` visits.
+      6. *Support & Ko-fi Clicks*: Breakdown of `/support` clicks by source (`footer_card`, `about_page`, `download_page`, `footer_nav`), unique clickers, repeat clicks, country, and recent referral stream.
 - **Authoritative Inventory Counts:**
   - **Advisories count:** Exactly **1,789 active advisories** (CISA KEV ~1,530 + GitHub Advisories ~259). Kept strictly consistent across mobile app (`1,789 active`) and website (`1,789 active advisories`).
   - **News feed count:** Up to **350 articles** (~7–10 days of rolling intelligence across 27 verified threat feeds).

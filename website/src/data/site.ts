@@ -24,7 +24,7 @@ export const footerNav = [
   heading: 'Company',
   links: [
   { label: 'About', to: '/about' },
-  { label: 'Support SecuBuzz', to: '/support', external: true },
+  { label: 'Support SecuBuzz', to: '/support?src=footer_nav', external: true },
   { label: 'For Publishers', to: '/publishers' },
   { label: 'Contact', to: '/contact' }]
 

@@ -186,7 +186,7 @@ export function Download() {
 
       <section className="border-t border-line">
         <div className="mx-auto max-w-site px-5 py-12 md:px-8">
-          <SupportBanner />
+          <SupportBanner source="download_page" />
         </div>
       </section>
     </>);
