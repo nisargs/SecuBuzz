@@ -4,6 +4,8 @@ import { AppCta } from '../components/AppCta';
 import { aboutPrinciples } from '../data/site';
 import { Seo } from '../components/Seo';
 
+import { SupportBanner } from '../components/SupportBanner';
+
 export function About() {
   return (
     <>
@@ -93,22 +95,9 @@ export function About() {
         </div>
       </section>
 
-      <section className="border-t border-line bg-surface/20">
-        <div className="mx-auto flex max-w-site flex-col gap-4 px-5 py-10 md:flex-row md:items-center md:justify-between md:px-8">
-          <div className="max-w-xl space-y-1">
-            <h3 className="text-base font-semibold text-ink">Support independent intelligence</h3>
-            <p className="text-sm text-muted">
-              SecuBuzz is free and staying free. If it saved you time this week, you can support it here.
-            </p>
-          </div>
-          <a
-            href="/support"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex shrink-0 items-center justify-center rounded-xl border border-line bg-surface px-4 py-2.5 text-sm font-medium text-ink transition-all duration-150 ease-out hover:border-accent/40 hover:bg-raised hover:text-accent"
-          >
-            Support SecuBuzz →
-          </a>
+      <section className="border-t border-line">
+        <div className="mx-auto max-w-site px-5 py-12 md:px-8">
+          <SupportBanner />
         </div>
       </section>
 

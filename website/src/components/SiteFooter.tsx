@@ -2,10 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Logo } from './Logo';
 import { footerNav } from '../data/site';
+import { SupportBanner } from './SupportBanner';
 
 export function SiteFooter() {
   return (
     <footer className="border-t border-line bg-bg">
+      <div className="mx-auto max-w-site px-5 pt-12 md:px-8">
+        <SupportBanner />
+      </div>
+
       <div className="mx-auto grid max-w-site gap-10 px-5 py-14 md:grid-cols-[1.4fr_repeat(3,1fr)] md:px-8">
         <div className="max-w-xs">
           <Logo />
@@ -39,21 +44,6 @@ export function SiteFooter() {
             </ul>
           </nav>
         )}
-      </div>
-      <div className="border-t border-line/60 bg-surface/30">
-        <div className="mx-auto flex max-w-site flex-col items-center justify-between gap-3 px-5 py-3.5 text-xs text-muted sm:flex-row md:px-8">
-          <p>
-            SecuBuzz is free and staying free. If it saved you time this week, you can{' '}
-            <a
-              href="/support"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-medium text-ink underline decoration-line transition-colors hover:text-accent hover:decoration-accent"
-            >
-              support it here →
-            </a>
-          </p>
-        </div>
       </div>
       <div className="border-t border-line">
         <div className="mx-auto flex max-w-site flex-col gap-2 px-5 py-6 text-xs text-subtle md:flex-row md:items-center md:justify-between md:px-8">

@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Oct 2026 21:51:33 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 23:04:47 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>PHP Issues Emergency Patches for Two Critical Vulnerabilities</title>
+      <link>https://secubuzz.com/news/php-issues-emergency-patches-for-two-critical-vuln-1cbaec</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/php-issues-emergency-patches-for-two-critical-vuln-1cbaec</guid>
+      <description><![CDATA[The PHP security team has announced that two critical vulnerabilities will be patched in an emergency update scheduled for tomorrow. The flaws were leaked ahead of disclosure, prompting administrators to prepare for imminent patches to mitigate potential exploitation. No CVE identifiers are publicly disclosed yet.]]></description>
+      <pubDate>Tue, 20 Oct 2026 20:56:43 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/php-warns-admins-of-two-critical-flaws-emergency-patches-coming-tomorrow/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>SafePay Ransomware Gang Targets Businesses and Critical Infrastructure</title>
       <link>https://secubuzz.com/news/safepay-ransomware-gang-targets-businesses-and-cri-444fae</link>
@@ -15,6 +24,15 @@
       <pubDate>Tue, 20 Oct 2026 20:27:00 GMT</pubDate>
       <source url="https://therecord.media/fbi-says-safepay-ransomware-gang-among-most-active-600-victims">The Record</source>
       <category>Ransomware</category>
+    </item>
+    <item>
+      <title>Phishing Attack Hijacks Cloud Billing Accounts for Unauthorized AI Usage</title>
+      <link>https://secubuzz.com/news/phishing-attack-hijacks-cloud-billing-accounts-for-1abf24</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/phishing-attack-hijacks-cloud-billing-accounts-for-1abf24</guid>
+      <description><![CDATA[A single Google Search ad click enabled attackers to steal credentials, hijack cloud billing accounts, and incur hundreds of thousands of dollars in unauthorized AI API usage. The breach exposes sensitive billing data and financial resources, requiring immediate credential revocation and account monitoring.]]></description>
+      <pubDate>Tue, 20 Oct 2026 20:03:10 GMT</pubDate>
+      <source url="https://www.wiz.io/blog/from-phishing-to-llmjacking">Wiz Research</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>Zeabur Suffers Second Security Breach, Exposes Millions of Environment Variables</title>
@@ -60,6 +78,15 @@
       <pubDate>Tue, 20 Oct 2026 18:14:55 GMT</pubDate>
       <source url="https://cybersecuritynews.com/emudhra-security-compromise/">Cyber Security News</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>OpenAI Announces GPT‑6.1 Sol Improves Legacy Code Migration</title>
+      <link>https://secubuzz.com/news/openai-announces-gpt-6-1-sol-improves-legacy-code-726d60</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openai-announces-gpt-6-1-sol-improves-legacy-code-726d60</guid>
+      <description><![CDATA[OpenAI confirmed that its GPT‑6.1 Sol model significantly improves code migration for legacy programming languages. The announcement highlights the model’s enhanced ability to rewrite and refactor older codebases, potentially accelerating modernization efforts across industries. No security implications were reported in today.]]></description>
+      <pubDate>Tue, 20 Oct 2026 18:11:03 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-gpt-61-sol-is-dramatically-better-at-migrating-legacy-code/">BleepingComputer</source>
+      <category>Policy</category>
     </item>
     <item>
       <title>Google Cloud Outage Disrupts UK Banks, Websites and Court Systems</title>
@@ -404,15 +431,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>GhostAction Hijacks 790 GitHub Repositories to Steal Cloud Credentials and AI API Keys</title>
-      <link>https://secubuzz.com/news/ghostaction-hijacks-790-github-repositories-to-ste-234bed</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ghostaction-hijacks-790-github-repositories-to-ste-234bed</guid>
-      <description><![CDATA[GhostAction has injected malicious GitHub Actions workflows into 790 public repositories, exposing cloud credentials, software‑publishing tokens, and AI service keys. The campaign targets repositories with vulnerable workflows, potentially allowing attackers to exfiltrate credentials if the workflows execute. No confirmed misuse yet, but the risk is significant for exposed accounts.]]></description>
-      <pubDate>Tue, 20 Oct 2026 12:02:56 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-hijack-790-github-repositories/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
       <title>WAGO OS Linux Web‑Based Management Privilege Escalation Flaws</title>
       <link>https://secubuzz.com/news/wago-os-linux-web-based-management-privilege-escal-430032</link>
       <guid isPermaLink="true">https://secubuzz.com/news/wago-os-linux-web-based-management-privilege-escal-430032</guid>
@@ -438,24 +456,6 @@
       <pubDate>Tue, 20 Oct 2026 11:41:06 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/whatsapp-hid-instructions-in-help-pages.html">The Hacker News</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Security Teams Adopt AI‑Assisted Workflow to Manage Wild Code</title>
-      <link>https://secubuzz.com/news/security-teams-adopt-ai-assisted-workflow-to-manag-24719c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/security-teams-adopt-ai-assisted-workflow-to-manag-24719c</guid>
-      <description><![CDATA[A sales manager implements an AI‑assisted workflow that routes leads, accesses customer records, summarizes inbound requests, and posts updates to a shared channel. The automation reduces manual effort and becomes integral to daily operations, while other employees accelerate app and agent development beyond existing process capacity.]]></description>
-      <pubDate>Tue, 20 Oct 2026 11:33:04 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/what-security-teams-can-do-to-tame-wild.html">The Hacker News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Go Releases Emergency Update Blocking Eight CA Keys</title>
-      <link>https://secubuzz.com/news/go-releases-emergency-update-blocking-eight-ca-key-788925</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/go-releases-emergency-update-blocking-eight-ca-key-788925</guid>
-      <description><![CDATA[Go 1.27.3 and 1.26.10 block certificate chains that pass through eight intermediate CA keys. Applications built with these releases will refuse connections to services using certificates issued by those keys, potentially disrupting legitimate traffic. The update addresses undisclosed security concerns tied to the affected CA.]]></description>
-      <pubDate>Tue, 20 Oct 2026 11:32:59 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/go-issues-emergency-update-blocking.html">The Hacker News</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
