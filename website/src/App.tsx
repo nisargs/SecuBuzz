@@ -31,6 +31,7 @@ export function App() {
           <Route path="/rss.xml" element={<ExternalFileRedirect to="/rss.xml" />} />
           <Route path="/feed.xml" element={<ExternalFileRedirect to="/rss.xml" />} />
           <Route path="/sitemap.xml" element={<ExternalFileRedirect to="/sitemap.xml" />} />
+          <Route path="/support" element={<ExternalFileRedirect to="/support" />} />
           <Route path="/.well-known/security.txt" element={<ExternalFileRedirect to="/.well-known/security.txt" />} />
           <Route path="/security.txt" element={<ExternalFileRedirect to="/.well-known/security.txt" />} />
           <Route element={<Layout />}>

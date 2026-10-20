@@ -25,6 +25,9 @@ const CORS_HEADERS = {
   'Access-Control-Allow-Headers': 'Content-Type, Authorization, x-admin-key',
 };
 
+// Single source of truth for the /support redirect destination (kept in one config spot)
+export const SUPPORT_TARGET_URL = 'https://ko-fi.com/secubuzz';
+
 const SECURITY_HEADERS = {
   'X-Content-Type-Options': 'nosniff',
   'X-Frame-Options': 'DENY',
@@ -497,6 +500,16 @@ export default {
         });
       }
 
+      // Public Support Redirect (/support) -> Destination kept in SUPPORT_TARGET_URL
+      if (url.pathname === '/support' || url.pathname === '/support/') {
+        return new Response(null, {
+          status: 302,
+          headers: {
+            'Location': SUPPORT_TARGET_URL,
+            'Cache-Control': 'no-cache, no-store, must-revalidate',
+          },
+        });
+      }
 
       // API: Telemetry for App Install Clicks & Repeat Readers (Private - Admin Only)
       if (url.pathname === '/api/analytics/install-clicks') {

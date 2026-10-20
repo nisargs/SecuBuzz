@@ -19,7 +19,7 @@ export function SiteFooter() {
             <ul className="mt-4 space-y-2.5">
               {group.links.map((link) => (
                 <li key={link.to}>
-                  {link.to.endsWith('.xml') ? (
+                  {link.to.endsWith('.xml') || (link as { external?: boolean }).external ? (
                     <a
                       href={link.to}
                       target="_blank"
@@ -39,6 +39,21 @@ export function SiteFooter() {
             </ul>
           </nav>
         )}
+      </div>
+      <div className="border-t border-line/60 bg-surface/30">
+        <div className="mx-auto flex max-w-site flex-col items-center justify-between gap-3 px-5 py-3.5 text-xs text-muted sm:flex-row md:px-8">
+          <p>
+            SecuBuzz is free and staying free. If it saved you time this week, you can{' '}
+            <a
+              href="/support"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-ink underline decoration-line transition-colors hover:text-accent hover:decoration-accent"
+            >
+              support it here →
+            </a>
+          </p>
+        </div>
       </div>
       <div className="border-t border-line">
         <div className="mx-auto flex max-w-site flex-col gap-2 px-5 py-6 text-xs text-subtle md:flex-row md:items-center md:justify-between md:px-8">

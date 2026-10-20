@@ -1,6 +1,7 @@
 export const PLAY_STORE_URL = '/go/play';
 export const PLAY_STORE_EXTERNAL_URL = 'https://play.google.com/store/apps/details?id=com.secubuzz.app';
 export const PLAY_STORE_TESTING_URL = 'https://play.google.com/apps/testing/com.secubuzz.app';
+export const SUPPORT_URL = '/support';
 
 export const mainNav = [
 { label: 'News', to: '/news' },
@@ -23,6 +24,7 @@ export const footerNav = [
   heading: 'Company',
   links: [
   { label: 'About', to: '/about' },
+  { label: 'Support SecuBuzz', to: '/support', external: true },
   { label: 'For Publishers', to: '/publishers' },
   { label: 'Contact', to: '/contact' }]
 
