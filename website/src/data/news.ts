@@ -11,6 +11,131 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "safepay-ransomware-gang-targets-businesses-and-cri-444fae",
+    "title": "SafePay Ransomware Gang Targets Businesses and Critical Infrastructure",
+    "summary": "SafePay ransomware gang has targeted businesses and critical infrastructure since 2024, using password guessing, vulnerability exploitation, and phishing. The FBI, UK and German agencies report over 600 victims. The gang remains active and poses a high risk to enterprise systems.",
+    "category": "Ransomware",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/fbi-says-safepay-ransomware-gang-among-most-active-600-victims",
+    "publishedAt": "2026-10-20T20:27:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "safepay-ransomware-gang-targets-businesses-and-cri",
+      "article-444fae",
+      "444fae",
+      "safepay-ransomware-gang-targets-businesses-and-critical-infr"
+    ]
+  },
+  {
+    "slug": "zeabur-suffers-second-security-breach-exposes-mill-490bf9",
+    "title": "Zeabur Suffers Second Security Breach, Exposes Millions of Environment Variables",
+    "summary": "Zeabur disclosed a second security breach in two months. Attackers leveraged plaintext internal credentials to access infrastructure, exfiltrating over 3.2 million environment variable records and data for 321,810 accounts. The incident highlights inadequate credential storage and the need for stricter access controls.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/zeabur-shutting-down-after-second-security-breach-in-two-months/",
+    "publishedAt": "2026-10-20T19:33:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "zeabur-suffers-second-security-breach-exposes-mill",
+      "article-490bf9",
+      "490bf9",
+      "zeabur-suffers-second-security-breach-exposes-millions-of-en"
+    ]
+  },
+  {
+    "slug": "california-warns-students-after-ets-data-breach-7c991d",
+    "title": "California Warns Students After ETS Data Breach",
+    "summary": "California Department of Education warned students that Educational Testing Service suffered a months‑long data breach. The breach exposed student assessment data, prompting state officials to advise affected students to monitor personal information and consider credit‑monitoring services. No public patch or mitigation is required.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/california-warns-all-public-school-students-of-data-breach",
+    "publishedAt": "2026-10-20T19:20:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "california-warns-students-after-ets-data-breach",
+      "article-7c991d",
+      "7c991d"
+    ]
+  },
+  {
+    "slug": "ex-openai-engineer-detained-over-conference-room-b-74d2ab",
+    "title": "Ex‑OpenAI Engineer Detained Over Conference Room Bugging",
+    "summary": "A judge ordered the detention of Abdulrahman Alfozan after his arrest for allegedly bugging an OpenAI conference room. The case involves allegations of covert surveillance linked to Saudi ties. No technical vulnerability or data breach is reported; the matter is a legal enforcement action.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/insider-threats/ex-openai-engineer-secret-recorder-saudi-ties",
+    "publishedAt": "2026-10-20T19:16:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ex-openai-engineer-detained-over-conference-room-b",
+      "article-74d2ab",
+      "74d2ab",
+      "ex-openai-engineer-detained-over-conference-room-bugging"
+    ]
+  },
+  {
+    "slug": "23andme-successor-settles-california-over-cybersec-2fdd8d",
+    "title": "23andMe Successor Settles California Over Cybersecurity Failings",
+    "summary": "California Attorney General Rob Bonta announced a $6 million settlement with 23andMe’s successor to resolve allegations that the company failed to protect customer data before a 2023 breach. The settlement addresses claims of inadequate security controls and data protection practices.",
+    "category": "Breach",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/23andme-california-data-breach-settlement",
+    "publishedAt": "2026-10-20T18:32:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "23andme-successor-settles-california-over-cybersec",
+      "article-2fdd8d",
+      "2fdd8d",
+      "23andme-successor-settles-california-over-cybersecurity-fail"
+    ]
+  },
+  {
+    "slug": "emudhra-certificate-authority-private-keys-comprom-175eeb",
+    "title": "eMudhra Certificate Authority Private Keys Compromised",
+    "summary": "The private keys of eight eMudhra intermediate certificate authority certificates were compromised, prompting emergency blocks across major browsers and software platforms. The affected certificates chain to roots trusted by Mozilla, Microsoft, Apple, and Chrome, exposing clients that still accept them to forged certificates. No public disclosure of exploitation details is available.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/emudhra-security-compromise/",
+    "publishedAt": "2026-10-20T18:14:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "emudhra-certificate-authority-private-keys-comprom",
+      "article-175eeb",
+      "175eeb",
+      "emudhra-certificate-authority-private-keys-compromised"
+    ]
+  },
+  {
+    "slug": "google-cloud-outage-disrupts-uk-banks-websites-and-5e76e5",
+    "title": "Google Cloud Outage Disrupts UK Banks, Websites and Court Systems",
+    "summary": "A power event triggered a Google Cloud outage in the London region, knocking UK banks, business websites and court video links offline. Services began recovering around 07:08 BST, though a few customers still experienced issues. The incident highlights the impact of infrastructure failures on critical services.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/google-cloud-outage/",
+    "publishedAt": "2026-10-20T17:17:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-cloud-outage-disrupts-uk-banks-websites-and",
+      "article-5e76e5",
+      "5e76e5",
+      "google-cloud-outage-disrupts-uk-banks-websites-and-court-sys"
+    ]
+  },
+  {
     "slug": "nigerian-national-sentenced-for-tax-business-hacks-34ca54",
     "title": "Nigerian National Sentenced for Tax Business Hacks",
     "summary": "A Nigerian national was sentenced to eight years for collaborating with a group that hacked tax preparation businesses, extracting customer data and executing multi‑million dollar fraud schemes. The case highlights the ongoing threat of credential theft and data exfiltration in the tax industry.",
@@ -750,24 +875,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "revolut-service-outage-linked-to-google-cloud-lond-6a01be",
-    "title": "Revolut Service Outage Linked to Google Cloud London Region Issues",
-    "summary": "Revolut experienced a major service outage on October 20, 2026, disrupting payments, cash withdrawals, and app access. The outage coincided with reported problems in Google Cloud’s London region. Revolut confirmed customer funds and data remained secure while engineers restored services.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/revolut-outage/",
-    "publishedAt": "2026-10-20T11:37:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "revolut-service-outage-linked-to-google-cloud-lond",
-      "article-6a01be",
-      "6a01be",
-      "revolut-service-outage-linked-to-google-cloud-london-region-"
-    ]
-  },
-  {
     "slug": "security-teams-adopt-ai-assisted-workflow-to-manag-24719c",
     "title": "Security Teams Adopt AI‑Assisted Workflow to Manage Wild Code",
     "summary": "A sales manager implements an AI‑assisted workflow that routes leads, accesses customer records, summarizes inbound requests, and posts updates to a shared channel. The automation reduces manual effort and becomes integral to daily operations, while other employees accelerate app and agent development beyond existing process capacity.",
@@ -964,24 +1071,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "970-000-medi-cal-members-affected-by-paradigm-heal-17ce35",
-    "title": "970,000 Medi-Cal Members Affected by Paradigm Healthcare Data Breach",
-    "summary": "Paradigm Healthcare Services detected an intrusion in October 2025 but notified affected Medi-Cal members only after nearly a year. The breach exposed personal data of 970,000 members, including health and demographic information, through unauthorized access to the company’s systems.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/970000-medi-cal-members-affected-by-paradigm-healthcare-data-breach/",
-    "publishedAt": "2026-10-20T09:33:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "970-000-medi-cal-members-affected-by-paradigm-heal",
-      "article-17ce35",
-      "17ce35",
-      "970-000-medi-cal-members-affected-by-paradigm-healthcare-dat"
-    ]
-  },
-  {
     "slug": "rank-math-pro-wordpress-plugin-compromised-with-se-e9c3a8",
     "title": "Rank Math PRO WordPress Plugin Compromised with Self‑Rebuilding Backdoors",
     "summary": "Hackers injected malicious code into Rank Math PRO WordPress plugin version 3.0.123 distributed during a limited October download window. The code installs hidden backdoors that can rebuild themselves after removal, enabling persistent compromise of affected websites. Rank Math removed the files and issued a patch to eliminate the threat.",
@@ -1032,24 +1121,6 @@ export const news: NewsBrief[] = [
       "article-240e21",
       "240e21",
       "easydmarc-partners-with-gmo-globalsign-to-strengthen-email-a"
-    ]
-  },
-  {
-    "slug": "former-openai-engineer-detained-in-saudi-spy-devic-5490ef",
-    "title": "Former OpenAI Engineer Detained in Saudi Spy Device Case",
-    "summary": "A former OpenAI engineer, Abdulrahman Alfozan, was detained after authorities alleged he planted a recording device in an executive conference room to steal company secrets. The case implicates Saudi contacts and suggests state‑sponsored espionage activity.",
-    "category": "Malware",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/ex-openai-engineer-detained-in-spy.html",
-    "publishedAt": "2026-10-20T05:53:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "former-openai-engineer-detained-in-saudi-spy-devic",
-      "article-5490ef",
-      "5490ef",
-      "former-openai-engineer-detained-in-saudi-spy-device-case"
     ]
   },
   {
@@ -6199,77 +6270,6 @@ export const news: NewsBrief[] = [
       "article-447f1f",
       "447f1f",
       "apple-introduces-reference-image-for-photo-verification"
-    ]
-  },
-  {
-    "slug": "ai-powered-phishkit-empowers-criminals-with-rapid-3bc6ad",
-    "title": "AI‑powered PhishKit Empowers Criminals with Rapid Account‑Hijacking Tools",
-    "summary": "BlueKit, an AI‑driven phishing kit, equips attackers with account‑hijacking tools that can be deployed in about ten minutes, enabling the creation of convincing fake login pages and scam messages to target users.",
-    "category": "Policy",
-    "severity": "MEDIUM",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/10/ai-powered-phishkit-arms-criminals-with-account-hijacking-tools-in-10-minutes",
-    "publishedAt": "2026-10-07T10:54:19.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-powered-phishkit-empowers-criminals-with-rapid",
-      "article-3bc6ad",
-      "3bc6ad",
-      "ai-powered-phishkit-empowers-criminals-with-rapid-account-hi"
-    ]
-  },
-  {
-    "slug": "chrome-155-update-fixes-247-vulnerabilities-40a2f3",
-    "title": "Chrome 155 Update Fixes 247 Vulnerabilities",
-    "summary": "Google released Chrome 155, addressing 247 security issues, including four critical use‑after‑free bugs in Chromecast, Browser, Navigation, and Track components. The update removes the vulnerabilities that could allow attackers to execute arbitrary code or crash the browser, improving overall stability and security.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/chrome-155-update-patches-247-vulnerabilities/",
-    "publishedAt": "2026-10-07T10:51:57.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-155-update-fixes-247-vulnerabilities",
-      "article-40a2f3",
-      "40a2f3"
-    ]
-  },
-  {
-    "slug": "north-carolina-musician-sentenced-for-10-million-s-119ed0",
-    "title": "North Carolina Musician Sentenced for $10 Million Streaming Fraud Scheme",
-    "summary": "A North Carolina musician received an 18‑month prison sentence for orchestrating a $10 million streaming royalty fraud. The scheme used AI bots to inflate plays on Spotify, Apple Music, Amazon Music, and YouTube Music, deceiving the platforms and defrauding rights holders.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/musician-gets-18-months-in-prison-for-10-million-streaming-fraud-using-ai-bots/",
-    "publishedAt": "2026-10-07T10:35:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "north-carolina-musician-sentenced-for-10-million-s",
-      "article-119ed0",
-      "119ed0",
-      "north-carolina-musician-sentenced-for-10-million-streaming-f"
-    ]
-  },
-  {
-    "slug": "google-recommends-immediate-chrome-and-chromeos-up-1d1d8b",
-    "title": "Google Recommends Immediate Chrome and ChromeOS Update to Address Critical Security Fixes",
-    "summary": "Google released a new update for Chrome browser and ChromeOS containing multiple security fixes. Users are urged to install the update promptly to mitigate potential vulnerabilities.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/10/update-chrome-and-chromeos-to-fix-critical-security-issues",
-    "publishedAt": "2026-10-07T10:25:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-recommends-immediate-chrome-and-chromeos-up",
-      "article-1d1d8b",
-      "1d1d8b",
-      "google-recommends-immediate-chrome-and-chromeos-update-to-ad"
     ]
   }
 ];

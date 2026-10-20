@@ -5,8 +5,71 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Oct 2026 17:29:23 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 20:39:21 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>SafePay Ransomware Gang Targets Businesses and Critical Infrastructure</title>
+      <link>https://secubuzz.com/news/safepay-ransomware-gang-targets-businesses-and-cri-444fae</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/safepay-ransomware-gang-targets-businesses-and-cri-444fae</guid>
+      <description><![CDATA[SafePay ransomware gang has targeted businesses and critical infrastructure since 2024, using password guessing, vulnerability exploitation, and phishing. The FBI, UK and German agencies report over 600 victims. The gang remains active and poses a high risk to enterprise systems.]]></description>
+      <pubDate>Tue, 20 Oct 2026 20:27:00 GMT</pubDate>
+      <source url="https://therecord.media/fbi-says-safepay-ransomware-gang-among-most-active-600-victims">The Record</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
+      <title>Zeabur Suffers Second Security Breach, Exposes Millions of Environment Variables</title>
+      <link>https://secubuzz.com/news/zeabur-suffers-second-security-breach-exposes-mill-490bf9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/zeabur-suffers-second-security-breach-exposes-mill-490bf9</guid>
+      <description><![CDATA[Zeabur disclosed a second security breach in two months. Attackers leveraged plaintext internal credentials to access infrastructure, exfiltrating over 3.2 million environment variable records and data for 321,810 accounts. The incident highlights inadequate credential storage and the need for stricter access controls.]]></description>
+      <pubDate>Tue, 20 Oct 2026 19:33:02 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/zeabur-shutting-down-after-second-security-breach-in-two-months/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>California Warns Students After ETS Data Breach</title>
+      <link>https://secubuzz.com/news/california-warns-students-after-ets-data-breach-7c991d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/california-warns-students-after-ets-data-breach-7c991d</guid>
+      <description><![CDATA[California Department of Education warned students that Educational Testing Service suffered a months‑long data breach. The breach exposed student assessment data, prompting state officials to advise affected students to monitor personal information and consider credit‑monitoring services. No public patch or mitigation is required.]]></description>
+      <pubDate>Tue, 20 Oct 2026 19:20:00 GMT</pubDate>
+      <source url="https://therecord.media/california-warns-all-public-school-students-of-data-breach">The Record</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Ex‑OpenAI Engineer Detained Over Conference Room Bugging</title>
+      <link>https://secubuzz.com/news/ex-openai-engineer-detained-over-conference-room-b-74d2ab</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ex-openai-engineer-detained-over-conference-room-b-74d2ab</guid>
+      <description><![CDATA[A judge ordered the detention of Abdulrahman Alfozan after his arrest for allegedly bugging an OpenAI conference room. The case involves allegations of covert surveillance linked to Saudi ties. No technical vulnerability or data breach is reported; the matter is a legal enforcement action.]]></description>
+      <pubDate>Tue, 20 Oct 2026 19:16:49 GMT</pubDate>
+      <source url="https://www.darkreading.com/insider-threats/ex-openai-engineer-secret-recorder-saudi-ties">Dark Reading</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>23andMe Successor Settles California Over Cybersecurity Failings</title>
+      <link>https://secubuzz.com/news/23andme-successor-settles-california-over-cybersec-2fdd8d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/23andme-successor-settles-california-over-cybersec-2fdd8d</guid>
+      <description><![CDATA[California Attorney General Rob Bonta announced a $6 million settlement with 23andMe’s successor to resolve allegations that the company failed to protect customer data before a 2023 breach. The settlement addresses claims of inadequate security controls and data protection practices.]]></description>
+      <pubDate>Tue, 20 Oct 2026 18:32:00 GMT</pubDate>
+      <source url="https://therecord.media/23andme-california-data-breach-settlement">The Record</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>eMudhra Certificate Authority Private Keys Compromised</title>
+      <link>https://secubuzz.com/news/emudhra-certificate-authority-private-keys-comprom-175eeb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/emudhra-certificate-authority-private-keys-comprom-175eeb</guid>
+      <description><![CDATA[The private keys of eight eMudhra intermediate certificate authority certificates were compromised, prompting emergency blocks across major browsers and software platforms. The affected certificates chain to roots trusted by Mozilla, Microsoft, Apple, and Chrome, exposing clients that still accept them to forged certificates. No public disclosure of exploitation details is available.]]></description>
+      <pubDate>Tue, 20 Oct 2026 18:14:55 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/emudhra-security-compromise/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Google Cloud Outage Disrupts UK Banks, Websites and Court Systems</title>
+      <link>https://secubuzz.com/news/google-cloud-outage-disrupts-uk-banks-websites-and-5e76e5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-cloud-outage-disrupts-uk-banks-websites-and-5e76e5</guid>
+      <description><![CDATA[A power event triggered a Google Cloud outage in the London region, knocking UK banks, business websites and court video links offline. Services began recovering around 07:08 BST, though a few customers still experienced issues. The incident highlights the impact of infrastructure failures on critical services.]]></description>
+      <pubDate>Tue, 20 Oct 2026 17:17:56 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/google-cloud-outage/">Cyber Security News</source>
+      <category>Cloud</category>
+    </item>
     <item>
       <title>Nigerian National Sentenced for Tax Business Hacks</title>
       <link>https://secubuzz.com/news/nigerian-national-sentenced-for-tax-business-hacks-34ca54</link>
@@ -377,15 +440,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Revolut Service Outage Linked to Google Cloud London Region Issues</title>
-      <link>https://secubuzz.com/news/revolut-service-outage-linked-to-google-cloud-lond-6a01be</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/revolut-service-outage-linked-to-google-cloud-lond-6a01be</guid>
-      <description><![CDATA[Revolut experienced a major service outage on October 20, 2026, disrupting payments, cash withdrawals, and app access. The outage coincided with reported problems in Google Cloud’s London region. Revolut confirmed customer funds and data remained secure while engineers restored services.]]></description>
-      <pubDate>Tue, 20 Oct 2026 11:37:05 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/revolut-outage/">Cyber Security News</source>
-      <category>Cloud</category>
-    </item>
-    <item>
       <title>Security Teams Adopt AI‑Assisted Workflow to Manage Wild Code</title>
       <link>https://secubuzz.com/news/security-teams-adopt-ai-assisted-workflow-to-manag-24719c</link>
       <guid isPermaLink="true">https://secubuzz.com/news/security-teams-adopt-ai-assisted-workflow-to-manag-24719c</guid>
@@ -402,60 +456,6 @@
       <pubDate>Tue, 20 Oct 2026 11:32:59 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/go-issues-emergency-update-blocking.html">The Hacker News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Microsoft Introduces Dynamic Permissions for AI Agents</title>
-      <link>https://secubuzz.com/news/microsoft-introduces-dynamic-permissions-for-ai-ag-5ae1e8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-introduces-dynamic-permissions-for-ai-ag-5ae1e8</guid>
-      <description><![CDATA[Microsoft announced new controls that treat AI agents as insiders, granting task‑specific permissions and tightening access as an agent’s risk score rises. The policy framework aims to reduce insider‑threat exposure from autonomous agents while maintaining operational flexibility.]]></description>
-      <pubDate>Tue, 20 Oct 2026 11:30:18 GMT</pubDate>
-      <source url="https://www.securityweek.com/microsoft-targets-rogue-ai-agents-with-dynamic-permissions-risk-scoring/">SecurityWeek</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Hackers Target South Korean Banks With AI, Then Accidentally Expose Their Own Attack Tools</title>
-      <link>https://secubuzz.com/news/hackers-target-south-korean-banks-with-ai-then-acc-54ce2b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-target-south-korean-banks-with-ai-then-acc-54ce2b</guid>
-      <description><![CDATA[Hackers linked to AI‑assisted attacks on South Korean banks inadvertently exposed parts of their own infrastructure, revealing cryptocurrency theft tools, Linux exploits, and mobile security testing assets. The accidental disclosure provides researchers insight into the attackers’ tools and operational scope.]]></description>
-      <pubDate>Tue, 20 Oct 2026 11:09:55 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-target-south-korean-banks/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Russian APT28 Breaches NATO Naval Shipbuilder, Deploys HOOKEDGE Loader</title>
-      <link>https://secubuzz.com/news/russian-apt28-breaches-nato-naval-shipbuilder-depl-2ad62b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/russian-apt28-breaches-nato-naval-shipbuilder-depl-2ad62b</guid>
-      <description><![CDATA[Russian state-sponsored group APT28, also known as BlueDelta, targeted a NATO naval shipbuilder in a NATO member country, deploying a new reflective loader named HOOKEDGE. The operation, tracked by Symantec Threat Hunter Team under Swallowtail, demonstrates APT28’s continued use of backdoors to compromise critical defense infrastructure.]]></description>
-      <pubDate>Tue, 20 Oct 2026 11:06:25 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/russian-apt28-breaches-nato-naval.html">The Hacker News</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>Possible New Cellebrite iPhone Radio Zero‑Day Exploit</title>
-      <link>https://secubuzz.com/news/possible-new-cellebrite-iphone-radio-zero-day-expl-6473ce</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/possible-new-cellebrite-iphone-radio-zero-day-expl-6473ce</guid>
-      <description><![CDATA[A confidential Cellebrite document leaked to Justin.sh describes a new Advanced Unlocks (AU) product that includes a radio‑based zero‑day vector targeting iPhone devices. The exploit operates over a short range and bypasses Apple’s Stolen Device Protection, potentially allowing attackers to gain unauthorized access to locked iPhones.]]></description>
-      <pubDate>Tue, 20 Oct 2026 11:03:13 GMT</pubDate>
-      <source url="https://www.schneier.com/blog/archives/2026/10/possible-new-cellebrite-iphone-radio-zero-day.html">Schneier on Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>ThreatBook Unveils RedAgents AI Platform for Automated Penetration Testing</title>
-      <link>https://secubuzz.com/news/threatbook-unveils-redagents-ai-platform-for-autom-5a8ff5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/threatbook-unveils-redagents-ai-platform-for-autom-5a8ff5</guid>
-      <description><![CDATA[ThreatBook introduced RedAgents, a cloud-based platform that aggregates multiple AI-driven penetration-testing agents to identify security weaknesses within authorized scopes. The service automates diverse tests, enabling security teams to assess network vulnerabilities efficiently. No public exploits or vulnerabilities are disclosed.]]></description>
-      <pubDate>Tue, 20 Oct 2026 10:41:54 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/redagents-ai-platform/">Cyber Security News</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>1.8 Million Nikkei Records Stolen</title>
-      <link>https://secubuzz.com/news/1-8-million-nikkei-records-stolen-35a206</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/1-8-million-nikkei-records-stolen-35a206</guid>
-      <description><![CDATA[Hackers accessed personal data of 1.8 million Nikkei users, including names, addresses, emails, phone numbers and dates of birth. The breach exposed sensitive personal information that could be used for identity theft or targeted phishing. No mitigation steps are reported.]]></description>
-      <pubDate>Tue, 20 Oct 2026 10:35:18 GMT</pubDate>
-      <source url="https://www.securityweek.com/hackers-steal-1-8-million-records-from-nikkei/">SecurityWeek</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>
