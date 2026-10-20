@@ -11,6 +11,41 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "eight-emudhra-certificates-compromised-due-to-weak-7a26c8",
+    "title": "Eight eMudhra Certificates Compromised Due to Weak Keys",
+    "summary": "Eight eMudhra intermediate certificates were found to use weak cryptographic keys, exposing them to potential compromise. Cloudflare is deploying mitigations and releasing client updates to address the issue. Users and developers should update their clients and review certificate usage to prevent unauthorized access.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/emudhra-certificate-compromise/",
+    "publishedAt": "2026-10-20T22:20:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "eight-emudhra-certificates-compromised-due-to-weak",
+      "article-7a26c8",
+      "7a26c8",
+      "eight-emudhra-certificates-compromised-due-to-weak-keys"
+    ]
+  },
+  {
+    "slug": "wiz-launches-native-runtime-protection-for-gke-6ae1e3",
+    "title": "Wiz Launches Native Runtime Protection for GKE",
+    "summary": "Wiz has released a native runtime protection add‑on for Google Kubernetes Engine, enabling one‑click deployment of the Wiz Runtime Sensor. The add‑on automates credential management and delivers kernel‑level eBPF threat detection across GKE fleets, improving visibility and response to container‑level attacks.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "Wiz Research",
+    "sourceUrl": "https://www.wiz.io/blog/wiz-sensor-on-gke-1-click-runtime-protection-now-native",
+    "publishedAt": "2026-10-20T22:02:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "wiz-launches-native-runtime-protection-for-gke",
+      "article-6ae1e3",
+      "6ae1e3"
+    ]
+  },
+  {
     "slug": "php-issues-emergency-patches-for-two-critical-vuln-1cbaec",
     "title": "PHP Issues Emergency Patches for Two Critical Vulnerabilities",
     "summary": "The PHP security team has announced that two critical vulnerabilities will be patched in an emergency update scheduled for tomorrow. The flaws were leaked ahead of disclosure, prompting administrators to prepare for imminent patches to mitigate potential exploitation. No CVE identifiers are publicly disclosed yet.",
@@ -133,24 +168,6 @@ export const news: NewsBrief[] = [
       "article-2fdd8d",
       "2fdd8d",
       "23andme-successor-settles-california-over-cybersecurity-fail"
-    ]
-  },
-  {
-    "slug": "emudhra-certificate-authority-private-keys-comprom-175eeb",
-    "title": "eMudhra Certificate Authority Private Keys Compromised",
-    "summary": "The private keys of eight eMudhra intermediate certificate authority certificates were compromised, prompting emergency blocks across major browsers and software platforms. The affected certificates chain to roots trusted by Mozilla, Microsoft, Apple, and Chrome, exposing clients that still accept them to forged certificates. No public disclosure of exploitation details is available.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/emudhra-security-compromise/",
-    "publishedAt": "2026-10-20T18:14:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "emudhra-certificate-authority-private-keys-comprom",
-      "article-175eeb",
-      "175eeb",
-      "emudhra-certificate-authority-private-keys-compromised"
     ]
   },
   {
@@ -926,24 +943,6 @@ export const news: NewsBrief[] = [
       "article-24719c",
       "24719c",
       "security-teams-adopt-ai-assisted-workflow-to-manage-wild-cod"
-    ]
-  },
-  {
-    "slug": "go-releases-emergency-update-blocking-eight-ca-key-788925",
-    "title": "Go Releases Emergency Update Blocking Eight CA Keys",
-    "summary": "Go 1.27.3 and 1.26.10 block certificate chains that pass through eight intermediate CA keys. Applications built with these releases will refuse connections to services using certificates issued by those keys, potentially disrupting legitimate traffic. The update addresses undisclosed security concerns tied to the affected CA.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/go-issues-emergency-update-blocking.html",
-    "publishedAt": "2026-10-20T11:32:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "go-releases-emergency-update-blocking-eight-ca-key",
-      "article-788925",
-      "788925",
-      "go-releases-emergency-update-blocking-eight-ca-keys"
     ]
   },
   {

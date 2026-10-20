@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Oct 2026 23:46:04 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 23:54:53 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Eight eMudhra Certificates Compromised Due to Weak Keys</title>
+      <link>https://secubuzz.com/news/eight-emudhra-certificates-compromised-due-to-weak-7a26c8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/eight-emudhra-certificates-compromised-due-to-weak-7a26c8</guid>
+      <description><![CDATA[Eight eMudhra intermediate certificates were found to use weak cryptographic keys, exposing them to potential compromise. Cloudflare is deploying mitigations and releasing client updates to address the issue. Users and developers should update their clients and review certificate usage to prevent unauthorized access.]]></description>
+      <pubDate>Tue, 20 Oct 2026 22:20:16 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/emudhra-certificate-compromise/">Cloudflare Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Wiz Launches Native Runtime Protection for GKE</title>
+      <link>https://secubuzz.com/news/wiz-launches-native-runtime-protection-for-gke-6ae1e3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/wiz-launches-native-runtime-protection-for-gke-6ae1e3</guid>
+      <description><![CDATA[Wiz has released a native runtime protection add‑on for Google Kubernetes Engine, enabling one‑click deployment of the Wiz Runtime Sensor. The add‑on automates credential management and delivers kernel‑level eBPF threat detection across GKE fleets, improving visibility and response to container‑level attacks.]]></description>
+      <pubDate>Tue, 20 Oct 2026 22:02:42 GMT</pubDate>
+      <source url="https://www.wiz.io/blog/wiz-sensor-on-gke-1-click-runtime-protection-now-native">Wiz Research</source>
+      <category>Cloud</category>
+    </item>
     <item>
       <title>PHP Issues Emergency Patches for Two Critical Vulnerabilities</title>
       <link>https://secubuzz.com/news/php-issues-emergency-patches-for-two-critical-vuln-1cbaec</link>
@@ -69,15 +87,6 @@
       <pubDate>Tue, 20 Oct 2026 18:32:00 GMT</pubDate>
       <source url="https://therecord.media/23andme-california-data-breach-settlement">The Record</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>eMudhra Certificate Authority Private Keys Compromised</title>
-      <link>https://secubuzz.com/news/emudhra-certificate-authority-private-keys-comprom-175eeb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/emudhra-certificate-authority-private-keys-comprom-175eeb</guid>
-      <description><![CDATA[The private keys of eight eMudhra intermediate certificate authority certificates were compromised, prompting emergency blocks across major browsers and software platforms. The affected certificates chain to roots trusted by Mozilla, Microsoft, Apple, and Chrome, exposing clients that still accept them to forged certificates. No public disclosure of exploitation details is available.]]></description>
-      <pubDate>Tue, 20 Oct 2026 18:14:55 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/emudhra-security-compromise/">Cyber Security News</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>OpenAI Announces GPT‑6.1 Sol Improves Legacy Code Migration</title>
@@ -447,15 +456,6 @@
       <pubDate>Tue, 20 Oct 2026 12:00:00 GMT</pubDate>
       <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-05">CISA</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>WhatsApp Hidden Instructions Prevent Chatbot from Recommending Data Protection Authorities</title>
-      <link>https://secubuzz.com/news/whatsapp-hidden-instructions-prevent-chatbot-from-61de53</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/whatsapp-hidden-instructions-prevent-chatbot-from-61de53</guid>
-      <description><![CDATA[WhatsApp’s help pages contained hidden directives instructing its support chatbot not to recommend data protection authorities to users unable to delete accounts, contradicting the company’s European privacy policy. The code‑embedded instructions were discovered and removed by October 18, exposing a policy compliance issue.]]></description>
-      <pubDate>Tue, 20 Oct 2026 11:41:06 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/whatsapp-hid-instructions-in-help-pages.html">The Hacker News</source>
-      <category>Policy</category>
     </item>
   </channel>
 </rss>
