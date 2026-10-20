@@ -441,6 +441,23 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "isc-stormcast-podcast-released-for-october-20-2026-57dd7d",
+    "title": "ISC Stormcast Podcast Released for October 20, 2026",
+    "summary": "The SANS Internet Storm Center released its weekly ISC Stormcast podcast for October 20, 2026. The episode is available at https://isc.sans.edu/podcastdetail/10142 and is licensed under Creative Commons Attribution-Noncommercial 3.0 United States. No security incident is reported in this release.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33436",
+    "publishedAt": "2026-10-20T02:00:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "isc-stormcast-podcast-released-for-october-20-2026",
+      "article-57dd7d",
+      "57dd7d"
+    ]
+  },
+  {
     "slug": "plex2shell-4-flaw-rce-exploitation-on-plex-media-s-6cc35e",
     "title": "Plex2Shell 4‑Flaw RCE Exploitation on Plex Media Server",
     "summary": "Hackers exploit the Plex2Shell 4‑flaw vulnerability chain to deploy Linux proxy backdoors and Monero miners on Plex Media Server installations. The flaw allows remote code execution; administrators should apply the latest patch immediately to prevent unauthorized access and cryptocurrency mining.",
@@ -874,6 +891,23 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "sextortion-conspiracy-leads-to-tragic-loss-245f35",
+    "title": "Sextortion Conspiracy Leads to Tragic Loss",
+    "summary": "A sextortion plot targeted the son of John DeMay, culminating in the victim’s suicide. The Lock and Code podcast discusses the conspiracy’s details and the emotional impact on the family. No technical exploitation or data breach is reported; the incident is a personal crime case.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/podcast/2026/10/a-sextortion-conspiracy-killed-his-son-lock-and-code-s07e21",
+    "publishedAt": "2026-10-19T12:10:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sextortion-conspiracy-leads-to-tragic-loss",
+      "article-245f35",
+      "245f35"
+    ]
+  },
+  {
     "slug": "salesforce-agentforce-email-to-case-governance-exp-1b7c8c",
     "title": "Salesforce Agentforce Email-to-Case Governance Exploitation",
     "summary": "Salesforce Agentforce recommends using a Flow to trigger agents on record creation or case updates. Email-to-Case and Web-to-Case convert inbound messages into case records. When chained with a Flow, these standard features can bypass governance controls designed for software, exposing potential policy violations.",
@@ -997,23 +1031,6 @@ export const news: NewsBrief[] = [
       "article-679039",
       "679039",
       "anthropic-acquires-confidential-ai-startup-opaque-systems"
-    ]
-  },
-  {
-    "slug": "weekly-security-roundup-october-12-18-2026-5123b9",
-    "title": "Weekly Security Roundup: October 12–18, 2026",
-    "summary": "Malwarebytes Labs summarizes the week’s cybersecurity topics, covering emerging threats, vulnerability disclosures, and defensive strategies. The report highlights key industry developments and provides context for security professionals to stay informed on current trends and emerging risks.",
-    "category": "Malware",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/a-week-in-security-october-12-october-18",
-    "publishedAt": "2026-10-19T07:01:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "weekly-security-roundup-october-12-18-2026",
-      "article-5123b9",
-      "5123b9"
     ]
   },
   {
@@ -6256,24 +6273,6 @@ export const news: NewsBrief[] = [
       "smbs-seek-simpler-advanced-security-solutions",
       "article-122ffe",
       "122ffe"
-    ]
-  },
-  {
-    "slug": "nis2-compliance-seven-low-cost-credential-security-2abaa6",
-    "title": "NIS2 Compliance: Seven Low‑Cost Credential Security Steps",
-    "summary": "The article outlines seven budget‑friendly measures to secure credentials under NIS2, emphasizing visibility, revocability, and reviewability. It highlights that credentials were compromised in 28% of breaches in Verizon’s 2026 report, urging organizations to adopt risk‑based controls without new infrastructure.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/passwork-nis2-credential-security/",
-    "publishedAt": "2026-10-06T05:00:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nis2-compliance-seven-low-cost-credential-security",
-      "article-2abaa6",
-      "2abaa6",
-      "nis2-compliance-seven-low-cost-credential-security-steps"
     ]
   }
 ];

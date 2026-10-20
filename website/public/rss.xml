@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Oct 2026 12:00:32 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 12:18:04 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>OVHcloud CLI Compromised on GitHub to Steal Developer Secrets</title>
@@ -224,6 +224,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>ISC Stormcast Podcast Released for October 20, 2026</title>
+      <link>https://secubuzz.com/news/isc-stormcast-podcast-released-for-october-20-2026-57dd7d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/isc-stormcast-podcast-released-for-october-20-2026-57dd7d</guid>
+      <description><![CDATA[The SANS Internet Storm Center released its weekly ISC Stormcast podcast for October 20, 2026. The episode is available at https://isc.sans.edu/podcastdetail/10142 and is licensed under Creative Commons Attribution-Noncommercial 3.0 United States. No security incident is reported in this release.]]></description>
+      <pubDate>Tue, 20 Oct 2026 02:00:03 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33436">SANS Internet Storm Center</source>
+      <category>Policy</category>
+    </item>
+    <item>
       <title>Plex2Shell 4‑Flaw RCE Exploitation on Plex Media Server</title>
       <link>https://secubuzz.com/news/plex2shell-4-flaw-rce-exploitation-on-plex-media-s-6cc35e</link>
       <guid isPermaLink="true">https://secubuzz.com/news/plex2shell-4-flaw-rce-exploitation-on-plex-media-s-6cc35e</guid>
@@ -440,22 +449,13 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Salesforce Agentforce Email-to-Case Governance Exploitation</title>
-      <link>https://secubuzz.com/news/salesforce-agentforce-email-to-case-governance-exp-1b7c8c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/salesforce-agentforce-email-to-case-governance-exp-1b7c8c</guid>
-      <description><![CDATA[Salesforce Agentforce recommends using a Flow to trigger agents on record creation or case updates. Email-to-Case and Web-to-Case convert inbound messages into case records. When chained with a Flow, these standard features can bypass governance controls designed for software, exposing potential policy violations.]]></description>
-      <pubDate>Mon, 19 Oct 2026 11:50:00 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/from-email-to-case-to-boardroom-how.html">The Hacker News</source>
+      <title>Sextortion Conspiracy Leads to Tragic Loss</title>
+      <link>https://secubuzz.com/news/sextortion-conspiracy-leads-to-tragic-loss-245f35</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sextortion-conspiracy-leads-to-tragic-loss-245f35</guid>
+      <description><![CDATA[A sextortion plot targeted the son of John DeMay, culminating in the victim’s suicide. The Lock and Code podcast discusses the conspiracy’s details and the emotional impact on the family. No technical exploitation or data breach is reported; the incident is a personal crime case.]]></description>
+      <pubDate>Mon, 19 Oct 2026 12:10:53 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/podcast/2026/10/a-sextortion-conspiracy-killed-his-son-lock-and-code-s07e21">Malwarebytes Labs</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>FirstVDS Customer Data Stolen via Server Management Software Vulnerability</title>
-      <link>https://secubuzz.com/news/firstvds-customer-data-stolen-via-server-managemen-706d96</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/firstvds-customer-data-stolen-via-server-managemen-706d96</guid>
-      <description><![CDATA[Hackers exploited a flaw in FirstVDS’s server management software to steal passwords, access credentials, and other sensitive customer data. The breach compromised the personal information of FirstVDS users.]]></description>
-      <pubDate>Mon, 19 Oct 2026 11:45:00 GMT</pubDate>
-      <source url="https://therecord.media/russia-cyberattack-firstvds-cloud">The Record</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>
