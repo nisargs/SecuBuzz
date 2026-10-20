@@ -5,8 +5,53 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Oct 2026 04:18:12 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 05:12:10 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>SBI Data Breach Claim – Hackers Allegedly Claim Access to 3.75 Lakh Users’ Database</title>
+      <link>https://secubuzz.com/news/sbi-data-breach-claim-hackers-allegedly-claim-acce-3da619</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sbi-data-breach-claim-hackers-allegedly-claim-acce-3da619</guid>
+      <description><![CDATA[An unverified claim alleges that a threat actor named Siriusim posted customer records and banking documents from SBI online. The dataset reportedly contains 375,000 CSV rows and 2,722 PDF files, but the numbers do not confirm 3.75 lakh unique customers were affected. The post was reported by CyberPulse on October 16, 2026.]]></description>
+      <pubDate>Tue, 20 Oct 2026 04:40:11 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/sbi-data-breach-claim/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Frontline Workers Bypass MFA by Staying Signed In and Sharing Credentials</title>
+      <link>https://secubuzz.com/news/frontline-workers-bypass-mfa-by-staying-signed-in-23ae3c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/frontline-workers-bypass-mfa-by-staying-signed-in-23ae3c</guid>
+      <description><![CDATA[Frontline workers in healthcare and manufacturing are bypassing multifactor authentication by staying signed in, sharing credentials, and using shared workstations. A Sapio Research survey of 700 IT and security decision-makers in August found 95% had observed such workarounds in the past year. These practices break the link between an account and its user.]]></description>
+      <pubDate>Tue, 20 Oct 2026 04:30:18 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/20/frontline-worker-authentication-passwordless/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>ROMULUS ClickFix Platform Distributes LegionLoader Malware</title>
+      <link>https://secubuzz.com/news/romulus-clickfix-platform-distributes-legionloader-34a70b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/romulus-clickfix-platform-distributes-legionloader-34a70b</guid>
+      <description><![CDATA[Researchers identified ROMULUS, a ClickFix-style delivery platform that hosts bogus landing pages to lure users into executing malicious commands, distributing LegionLoader and other malware. The platform mimics legitimate sites, tricking users into running payloads that compromise systems.]]></description>
+      <pubDate>Tue, 20 Oct 2026 04:05:58 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/romulus-clickfix-platform-tricks-users.html">The Hacker News</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Cloudflare Introduces Clairic, a Token‑Free Invoice Extraction Model</title>
+      <link>https://secubuzz.com/news/cloudflare-introduces-clairic-a-token-free-invoice-b8d2c6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-introduces-clairic-a-token-free-invoice-b8d2c6</guid>
+      <description><![CDATA[Cloudflare unveiled Clairic, a model that extracts typed values from text and images in a single pass without generating tokens. In tests on a damaged‑product claim, Clairic completed the task in 19.3 seconds versus 61.7 seconds for an LLM‑based version, cutting costs by 49%.]]></description>
+      <pubDate>Tue, 20 Oct 2026 03:45:03 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/20/cloudflare-ai-clairic-extraction-model/">Help Net Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Hacker Breaches Over 100 Company Websites Using AI Agents</title>
+      <link>https://secubuzz.com/news/hacker-breaches-over-100-company-websites-using-ai-12c52c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hacker-breaches-over-100-company-websites-using-ai-12c52c</guid>
+      <description><![CDATA[A Chinese-speaking hacker leveraged AI agents to compromise more than 100 company websites, spending roughly $5,000 on AI tokens. The attack demonstrates how automated software can execute complex intrusion techniques with minimal human oversight, targeting sites linked to major firms such as Deere.]]></description>
+      <pubDate>Tue, 20 Oct 2026 03:43:17 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/chinese-hacker-use-ai-agent-to-hack/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Claude AI Detects Hidden XMRig Crypto Miner on Developer’s Mac</title>
       <link>https://secubuzz.com/news/claude-ai-detects-hidden-xmrig-crypto-miner-on-dev-67928d</link>
@@ -116,15 +161,6 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>Siemens Software Center vulnerability used by ClickFix malware</title>
-      <link>https://secubuzz.com/news/siemens-software-center-vulnerability-used-by-clic-5739bb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/siemens-software-center-vulnerability-used-by-clic-5739bb</guid>
-      <description><![CDATA[Attackers leveraged a flaw in Siemens Software Center, combining a legitimate signed copy with malicious DLLs to deliver ClickFix malware to Windows PCs. The vulnerability allows execution of arbitrary code via DLL injection, enabling full system compromise.]]></description>
-      <pubDate>Mon, 19 Oct 2026 18:15:39 GMT</pubDate>
-      <source url="https://www.securityweek.com/siemens-software-center-vulnerability-exploited-in-clickfix-malware-attacks/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>Drupal Field UI Module Remote Code Execution Vulnerability</title>
       <link>https://secubuzz.com/news/drupal-field-ui-module-remote-code-execution-vulne-5987df</link>
       <guid isPermaLink="true">https://secubuzz.com/news/drupal-field-ui-module-remote-code-execution-vulne-5987df</guid>
@@ -141,15 +177,6 @@
       <pubDate>Mon, 19 Oct 2026 18:04:16 GMT</pubDate>
       <source url="https://cybersecuritynews.com/ai-models-as-insider-threats/">Cyber Security News</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Cloudflare Releases Clairic Extraction Model</title>
-      <link>https://secubuzz.com/news/cloudflare-releases-clairic-extraction-model-260d97</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-releases-clairic-extraction-model-260d97</guid>
-      <description><![CDATA[Cloudflare has launched Clairic, a System One extraction model that can parse, compute, estimate, and forecast data from unstructured inputs. The model expands Cloudflare’s data processing capabilities, enabling more advanced analytics on diverse data sources. No security implications are reported.]]></description>
-      <pubDate>Mon, 19 Oct 2026 17:48:26 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/clairic-extraction-model/">Cloudflare Security</source>
-      <category>Cloud</category>
     </item>
     <item>
       <title>OpenCode API Keys Exposed in Security Breach</title>
@@ -350,15 +377,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Fake Web3 Accelerator Distributes Malware via npm Packages</title>
-      <link>https://secubuzz.com/news/fake-web3-accelerator-distributes-malware-via-npm-7e8c14</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fake-web3-accelerator-distributes-malware-via-npm-7e8c14</guid>
-      <description><![CDATA[A counterfeit Web3 accelerator has pushed information‑stealing malware and backdoors to Windows and macOS through malicious npm packages, claiming to offer free AI credits for Anthropic Claude and Google Gemini. The delivery mechanism targets users installing these packages, compromising system integrity and data confidentiality.]]></description>
-      <pubDate>Mon, 19 Oct 2026 10:06:40 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
       <title>Microsoft Brand Phishing Attacks Surge to 33% of All Impersonation Attempts in Q3 2026</title>
       <link>https://secubuzz.com/news/microsoft-brand-phishing-attacks-surge-to-33-of-al-74f340</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-brand-phishing-attacks-surge-to-33-of-al-74f340</guid>
@@ -366,15 +384,6 @@
       <pubDate>Mon, 19 Oct 2026 09:38:17 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/19/check-point-brand-impersonation-scams-q3-2026-report/">Help Net Security</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>MITRE ATT&amp;CK v20 Catalogs AI Abuse, MFA Bypass, Water Utility Attacks</title>
-      <link>https://secubuzz.com/news/mitre-att-ck-v20-catalogs-ai-abuse-mfa-bypass-wate-3c7848</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/mitre-att-ck-v20-catalogs-ai-abuse-mfa-bypass-wate-3c7848</guid>
-      <description><![CDATA[MITRE ATT&CK v20 release introduces 15 new detection strategies, including six for Enterprise and nine for Industrial Control Systems, supported by 38 analytics. The catalog expands coverage of AI abuse, MFA bypass, and water utility attacks, providing defenders with updated tactics, techniques, and procedures to improve threat detection and response.]]></description>
-      <pubDate>Mon, 19 Oct 2026 09:37:04 GMT</pubDate>
-      <source url="https://www.securityweek.com/mitre-attck-v20-catalogs-ai-abuse-mfa-bypass-water-utility-attacks/">SecurityWeek</source>
-      <category>Policy</category>
     </item>
     <item>
       <title>Anthropic Acquires Confidential AI Startup Opaque Systems</title>
@@ -410,15 +419,6 @@
       <description><![CDATA[Google announced new Android security features that use AI to detect and block scam calls, spoofed text messages, phishing links, and OTP theft. The update targets spoofed phone numbers, fake bank alerts, phishing pages, remote screen sharing, and AI‑generated voices to prevent users from divulging money or credentials.]]></description>
       <pubDate>Mon, 19 Oct 2026 06:04:18 GMT</pubDate>
       <source url="https://cybersecuritynews.com/google-unveils-new-android-ai-protections/">Cyber Security News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Bearer CLI Introduces Free Source‑Available SAST Tool</title>
-      <link>https://secubuzz.com/news/bearer-cli-introduces-free-source-available-sast-t-46bdd0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/bearer-cli-introduces-free-source-available-sast-t-46bdd0</guid>
-      <description><![CDATA[Bearer CLI is a free static application security testing tool that scans source code for vulnerabilities, prioritizing findings by the sensitive data they touch. It reads code without execution, aiming to help developers focus on high‑impact issues and reduce noise from low‑severity findings.]]></description>
-      <pubDate>Mon, 19 Oct 2026 05:30:38 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/19/bearer-cli-free-code-security-scanning-tool-sast/">Help Net Security</source>
       <category>Policy</category>
     </item>
     <item>

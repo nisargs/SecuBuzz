@@ -11,6 +11,96 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "sbi-data-breach-claim-hackers-allegedly-claim-acce-3da619",
+    "title": "SBI Data Breach Claim – Hackers Allegedly Claim Access to 3.75 Lakh Users’ Database",
+    "summary": "An unverified claim alleges that a threat actor named Siriusim posted customer records and banking documents from SBI online. The dataset reportedly contains 375,000 CSV rows and 2,722 PDF files, but the numbers do not confirm 3.75 lakh unique customers were affected. The post was reported by CyberPulse on October 16, 2026.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/sbi-data-breach-claim/",
+    "publishedAt": "2026-10-20T04:40:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sbi-data-breach-claim-hackers-allegedly-claim-acce",
+      "article-3da619",
+      "3da619",
+      "sbi-data-breach-claim-hackers-allegedly-claim-access-to-3-75"
+    ]
+  },
+  {
+    "slug": "frontline-workers-bypass-mfa-by-staying-signed-in-23ae3c",
+    "title": "Frontline Workers Bypass MFA by Staying Signed In and Sharing Credentials",
+    "summary": "Frontline workers in healthcare and manufacturing are bypassing multifactor authentication by staying signed in, sharing credentials, and using shared workstations. A Sapio Research survey of 700 IT and security decision-makers in August found 95% had observed such workarounds in the past year. These practices break the link between an account and its user.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/frontline-worker-authentication-passwordless/",
+    "publishedAt": "2026-10-20T04:30:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "frontline-workers-bypass-mfa-by-staying-signed-in",
+      "article-23ae3c",
+      "23ae3c",
+      "frontline-workers-bypass-mfa-by-staying-signed-in-and-sharin"
+    ]
+  },
+  {
+    "slug": "romulus-clickfix-platform-distributes-legionloader-34a70b",
+    "title": "ROMULUS ClickFix Platform Distributes LegionLoader Malware",
+    "summary": "Researchers identified ROMULUS, a ClickFix-style delivery platform that hosts bogus landing pages to lure users into executing malicious commands, distributing LegionLoader and other malware. The platform mimics legitimate sites, tricking users into running payloads that compromise systems.",
+    "category": "Malware",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/romulus-clickfix-platform-tricks-users.html",
+    "publishedAt": "2026-10-20T04:05:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "romulus-clickfix-platform-distributes-legionloader",
+      "article-34a70b",
+      "34a70b",
+      "romulus-clickfix-platform-distributes-legionloader-malware"
+    ]
+  },
+  {
+    "slug": "cloudflare-introduces-clairic-a-token-free-invoice-b8d2c6",
+    "title": "Cloudflare Introduces Clairic, a Token‑Free Invoice Extraction Model",
+    "summary": "Cloudflare unveiled Clairic, a model that extracts typed values from text and images in a single pass without generating tokens. In tests on a damaged‑product claim, Clairic completed the task in 19.3 seconds versus 61.7 seconds for an LLM‑based version, cutting costs by 49%.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/cloudflare-ai-clairic-extraction-model/",
+    "publishedAt": "2026-10-20T03:45:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cloudflare-introduces-clairic-a-token-free-invoice",
+      "article-b8d2c6",
+      "b8d2c6",
+      "cloudflare-introduces-clairic-a-token-free-invoice-extractio"
+    ]
+  },
+  {
+    "slug": "hacker-breaches-over-100-company-websites-using-ai-12c52c",
+    "title": "Hacker Breaches Over 100 Company Websites Using AI Agents",
+    "summary": "A Chinese-speaking hacker leveraged AI agents to compromise more than 100 company websites, spending roughly $5,000 on AI tokens. The attack demonstrates how automated software can execute complex intrusion techniques with minimal human oversight, targeting sites linked to major firms such as Deere.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/chinese-hacker-use-ai-agent-to-hack/",
+    "publishedAt": "2026-10-20T03:43:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hacker-breaches-over-100-company-websites-using-ai",
+      "article-12c52c",
+      "12c52c",
+      "hacker-breaches-over-100-company-websites-using-ai-agents"
+    ]
+  },
+  {
     "slug": "claude-ai-detects-hidden-xmrig-crypto-miner-on-dev-67928d",
     "title": "Claude AI Detects Hidden XMRig Crypto Miner on Developer’s Mac",
     "summary": "During a temperature monitoring app build, Claude Code flagged unusually high CPU usage. Investigation revealed XMRig mining software consuming ~1,175% CPU across 12 cores. The miner was running covertly on the developer’s Mac, diverting processing power for cryptocurrency mining.",
@@ -226,24 +316,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "siemens-software-center-vulnerability-used-by-clic-5739bb",
-    "title": "Siemens Software Center vulnerability used by ClickFix malware",
-    "summary": "Attackers leveraged a flaw in Siemens Software Center, combining a legitimate signed copy with malicious DLLs to deliver ClickFix malware to Windows PCs. The vulnerability allows execution of arbitrary code via DLL injection, enabling full system compromise.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/siemens-software-center-vulnerability-exploited-in-clickfix-malware-attacks/",
-    "publishedAt": "2026-10-19T18:15:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "siemens-software-center-vulnerability-used-by-clic",
-      "article-5739bb",
-      "5739bb",
-      "siemens-software-center-vulnerability-used-by-clickfix-malwa"
-    ]
-  },
-  {
     "slug": "drupal-field-ui-module-remote-code-execution-vulne-5987df",
     "title": "Drupal Field UI Module Remote Code Execution Vulnerability",
     "summary": "Drupal released a patch for a critical remote code execution flaw in the Field UI module, identified as CVE-2026-108097. The vulnerability allows unauthenticated attackers to execute arbitrary code on affected websites, potentially taking full control. The advisory SA-CORE-2026-014 recommends applying the latest security update immediately.",
@@ -278,23 +350,6 @@ export const news: NewsBrief[] = [
       "microsoft-warns-of-insider-threats-from-ai-agents",
       "article-284d8f",
       "284d8f"
-    ]
-  },
-  {
-    "slug": "cloudflare-releases-clairic-extraction-model-260d97",
-    "title": "Cloudflare Releases Clairic Extraction Model",
-    "summary": "Cloudflare has launched Clairic, a System One extraction model that can parse, compute, estimate, and forecast data from unstructured inputs. The model expands Cloudflare’s data processing capabilities, enabling more advanced analytics on diverse data sources. No security implications are reported.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/clairic-extraction-model/",
-    "publishedAt": "2026-10-19T17:48:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-releases-clairic-extraction-model",
-      "article-260d97",
-      "260d97"
     ]
   },
   {
@@ -693,24 +748,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "fake-web3-accelerator-distributes-malware-via-npm-7e8c14",
-    "title": "Fake Web3 Accelerator Distributes Malware via npm Packages",
-    "summary": "A counterfeit Web3 accelerator has pushed information‑stealing malware and backdoors to Windows and macOS through malicious npm packages, claiming to offer free AI credits for Anthropic Claude and Google Gemini. The delivery mechanism targets users installing these packages, compromising system integrity and data confidentiality.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html",
-    "publishedAt": "2026-10-19T10:06:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fake-web3-accelerator-distributes-malware-via-npm",
-      "article-7e8c14",
-      "7e8c14",
-      "fake-web3-accelerator-distributes-malware-via-npm-packages"
-    ]
-  },
-  {
     "slug": "microsoft-brand-phishing-attacks-surge-to-33-of-al-74f340",
     "title": "Microsoft Brand Phishing Attacks Surge to 33% of All Impersonation Attempts in Q3 2026",
     "summary": "Check Point Research reports Microsoft brand phishing attacks rose to 33% of all impersonation attempts in Q3 2026, up from 23% in Q2, surpassing Apple and Google. Attackers target Microsoft because stolen credentials can unlock multiple services. The trend highlights the need for stricter credential protection.",
@@ -726,24 +763,6 @@ export const news: NewsBrief[] = [
       "article-74f340",
       "74f340",
       "microsoft-brand-phishing-attacks-surge-to-33-of-all-imperson"
-    ]
-  },
-  {
-    "slug": "mitre-att-ck-v20-catalogs-ai-abuse-mfa-bypass-wate-3c7848",
-    "title": "MITRE ATT&CK v20 Catalogs AI Abuse, MFA Bypass, Water Utility Attacks",
-    "summary": "MITRE ATT&CK v20 release introduces 15 new detection strategies, including six for Enterprise and nine for Industrial Control Systems, supported by 38 analytics. The catalog expands coverage of AI abuse, MFA bypass, and water utility attacks, providing defenders with updated tactics, techniques, and procedures to improve threat detection and response.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/mitre-attck-v20-catalogs-ai-abuse-mfa-bypass-water-utility-attacks/",
-    "publishedAt": "2026-10-19T09:37:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "mitre-att-ck-v20-catalogs-ai-abuse-mfa-bypass-wate",
-      "article-3c7848",
-      "3c7848",
-      "mitre-att-ck-v20-catalogs-ai-abuse-mfa-bypass-water-utility-"
     ]
   },
   {
@@ -815,24 +834,6 @@ export const news: NewsBrief[] = [
       "article-589dce",
       "589dce",
       "google-releases-android-ai-protections-against-scam-calls-ph"
-    ]
-  },
-  {
-    "slug": "bearer-cli-introduces-free-source-available-sast-t-46bdd0",
-    "title": "Bearer CLI Introduces Free Source‑Available SAST Tool",
-    "summary": "Bearer CLI is a free static application security testing tool that scans source code for vulnerabilities, prioritizing findings by the sensitive data they touch. It reads code without execution, aiming to help developers focus on high‑impact issues and reduce noise from low‑severity findings.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/19/bearer-cli-free-code-security-scanning-tool-sast/",
-    "publishedAt": "2026-10-19T05:30:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "bearer-cli-introduces-free-source-available-sast-t",
-      "article-46bdd0",
-      "46bdd0",
-      "bearer-cli-introduces-free-source-available-sast-tool"
     ]
   },
   {
