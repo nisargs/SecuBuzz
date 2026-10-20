@@ -1,5 +1,18 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/10/20/easydmarc-gmo-globalsign-partnership/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/easydmarc-gmo-globalsign-partnership/",
+    "title": "EasyDMARC partners with GMO GlobalSign to strengthen email authentication and branding",
+    "headline": "EasyDMARC partners with GMO GlobalSign to strengthen email authentication and branding",
+    "summary": "EasyDMARC has teamed with GMO GlobalSign to enable organizations to set up trusted email identities via DNS security, sender authentication, and verified branding. The collaboration aims to reduce risks from new DNS records and authentication requirements that can affect security, deliverability, and brand reputation.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-20T06:00:13.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/20/easydmarc-gmo-globalsign-partnership/",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybersecuritynews.com/sbi-data-breach-claim/",
     "sourceUrl": "https://cybersecuritynews.com/sbi-data-breach-claim/",
     "title": "SBI Data Breach Claim – Hackers Allegedly Claim Access to 3.75 Lakh Users’ Database",
@@ -5213,19 +5226,6 @@
     "source": "Help Net Security",
     "publishedAt": "2026-10-05T13:31:06.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/05/stellar-cyber-7-0/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/05/malwarebytes-scam-link-check/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/malwarebytes-scam-link-check/",
-    "title": "Malwarebytes Launches Free Scam Link Check Tool",
-    "headline": "Malwarebytes Launches Free Scam Link Check Tool",
-    "summary": "Malwarebytes released a free web tool that lets users paste suspicious URLs from text, email, chat, or social media to determine if they are safe or dangerous. The tool returns a safety result, explains the reasons, and recommends next steps. It aims to help users avoid scams that have caused billions in losses.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-05T13:30:28.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/05/malwarebytes-scam-link-check/",
     "additionalSources": []
   }
 ]

@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "easydmarc-partners-with-gmo-globalsign-to-strength-240e21",
+    "title": "EasyDMARC partners with GMO GlobalSign to strengthen email authentication and branding",
+    "summary": "EasyDMARC has teamed with GMO GlobalSign to enable organizations to set up trusted email identities via DNS security, sender authentication, and verified branding. The collaboration aims to reduce risks from new DNS records and authentication requirements that can affect security, deliverability, and brand reputation.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/easydmarc-gmo-globalsign-partnership/",
+    "publishedAt": "2026-10-20T06:00:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "easydmarc-partners-with-gmo-globalsign-to-strength",
+      "article-240e21",
+      "240e21",
+      "easydmarc-partners-with-gmo-globalsign-to-strengthen-email-a"
+    ]
+  },
+  {
     "slug": "sbi-data-breach-claim-hackers-allegedly-claim-acce-3da619",
     "title": "SBI Data Breach Claim – Hackers Allegedly Claim Access to 3.75 Lakh Users’ Database",
     "summary": "An unverified claim alleges that a threat actor named Siriusim posted customer records and banking documents from SBI online. The dataset reportedly contains 375,000 CSV rows and 2,722 PDF files, but the numbers do not confirm 3.75 lakh unique customers were affected. The post was reported by CyberPulse on October 16, 2026.",
@@ -6257,23 +6275,6 @@ export const news: NewsBrief[] = [
       "stellar-cyber-7-0-unveils-ai-powered-soc-workflows",
       "article-4d00ac",
       "4d00ac"
-    ]
-  },
-  {
-    "slug": "malwarebytes-launches-free-scam-link-check-tool-5937e5",
-    "title": "Malwarebytes Launches Free Scam Link Check Tool",
-    "summary": "Malwarebytes released a free web tool that lets users paste suspicious URLs from text, email, chat, or social media to determine if they are safe or dangerous. The tool returns a safety result, explains the reasons, and recommends next steps. It aims to help users avoid scams that have caused billions in losses.",
-    "category": "Malware",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/malwarebytes-scam-link-check/",
-    "publishedAt": "2026-10-05T13:30:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "malwarebytes-launches-free-scam-link-check-tool",
-      "article-5937e5",
-      "5937e5"
     ]
   }
 ];

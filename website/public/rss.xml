@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Oct 2026 05:12:10 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 06:03:28 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>EasyDMARC partners with GMO GlobalSign to strengthen email authentication and branding</title>
+      <link>https://secubuzz.com/news/easydmarc-partners-with-gmo-globalsign-to-strength-240e21</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/easydmarc-partners-with-gmo-globalsign-to-strength-240e21</guid>
+      <description><![CDATA[EasyDMARC has teamed with GMO GlobalSign to enable organizations to set up trusted email identities via DNS security, sender authentication, and verified branding. The collaboration aims to reduce risks from new DNS records and authentication requirements that can affect security, deliverability, and brand reputation.]]></description>
+      <pubDate>Tue, 20 Oct 2026 06:00:13 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/20/easydmarc-gmo-globalsign-partnership/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>SBI Data Breach Claim – Hackers Allegedly Claim Access to 3.75 Lakh Users’ Database</title>
       <link>https://secubuzz.com/news/sbi-data-breach-claim-hackers-allegedly-claim-acce-3da619</link>
@@ -447,15 +456,6 @@
       <pubDate>Mon, 19 Oct 2026 04:00:22 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/19/semperis-ransomware-employee-safety-report/">Help Net Security</source>
       <category>Ransomware</category>
-    </item>
-    <item>
-      <title>ServiceNow User Enumeration via Graph Reconnaissance</title>
-      <link>https://secubuzz.com/news/servicenow-user-enumeration-via-graph-reconnaissan-bd7e3a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/servicenow-user-enumeration-via-graph-reconnaissan-bd7e3a</guid>
-      <description><![CDATA[Researchers identified a technique that leverages graph reconnaissance to enumerate ServiceNow users. Attackers can map user relationships and identify valid accounts, facilitating targeted credential attacks. Mitigation involves restricting API access, enforcing least privilege, and monitoring anomalous enumeration activity.]]></description>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <source url="https://www.sophos.com/en-us/blog/graph-reconnaissance-and-servicenow-user-enumeration-in-a-modern-identity-intrusion">Sophos Threat Research</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
