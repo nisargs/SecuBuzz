@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Oct 2026 16:20:52 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 17:12:48 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Google Enhances Chrome Protection Against Scam Commands</title>
+      <link>https://secubuzz.com/news/google-enhances-chrome-protection-against-scam-com-4820a7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-enhances-chrome-protection-against-scam-com-4820a7</guid>
+      <description><![CDATA[Google updates Chrome’s Enhanced Protection to detect scam sites that trick users into copying malicious commands. The new feature warns users when a page attempts to trick them into executing harmful commands. This update claims to make users ten times safer from phishing, social engineering, and notification abuse compared to Standard Protection.]]></description>
+      <pubDate>Tue, 20 Oct 2026 17:00:47 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/20/google-chrome-enhanced-protection-updates/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>US Agencies Publish Ten Voluntary Practices for Rogue AI Agent Incidents</title>
       <link>https://secubuzz.com/news/us-agencies-publish-ten-voluntary-practices-for-ro-7dcaf6</link>
@@ -179,6 +188,51 @@
       <category>Policy</category>
     </item>
     <item>
+      <title>Nigerian Hacker Sentenced for $3.3 Million Taxpayer Theft</title>
+      <link>https://secubuzz.com/news/nigerian-hacker-sentenced-for-3-3-million-taxpayer-107760</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/nigerian-hacker-sentenced-for-3-3-million-taxpayer-107760</guid>
+      <description><![CDATA[A Nigerian national was sentenced to eight years in prison for spearphishing attacks that stole $3.3 million from U.S. tax‑preparation firms. The attacks began in 2019 and targeted employees with tailored emails, leading to credential theft and financial loss for the businesses.]]></description>
+      <pubDate>Tue, 20 Oct 2026 13:18:36 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/hacker-gets-8-years-for-stealing-33-million-from-taxpayers/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>ThreatModeler Launches NexusAI for Automated Threat Modeling</title>
+      <link>https://secubuzz.com/news/threatmodeler-launches-nexusai-for-automated-threa-487fe2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/threatmodeler-launches-nexusai-for-automated-threa-487fe2</guid>
+      <description><![CDATA[ThreatModeler introduces NexusAI, an AI‑powered tool integrated into its Nexus platform. The solution automates threat model creation, analysis, and maintenance, allowing security teams to scale risk assessment without increasing manual effort. NexusAI monitors architectural changes and recommends security updates to keep applications secure as development accelerates.]]></description>
+      <pubDate>Tue, 20 Oct 2026 13:17:56 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/20/threatmodeler-nexusai/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Android Firmware Malware Disables Google Play Protections</title>
+      <link>https://secubuzz.com/news/android-firmware-malware-disables-google-play-prot-3e0346</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/android-firmware-malware-disables-google-play-prot-3e0346</guid>
+      <description><![CDATA[A widespread firmware-based malware campaign, named Midnight Mimosa, infects thousands of Android phones in over 150 countries. The malware installs and removes apps silently, disabling Google Play Protect and granting attackers full system access without user interaction. The attack bypasses app store safeguards, enabling persistent compromise of low‑cost devices.]]></description>
+      <pubDate>Tue, 20 Oct 2026 13:15:38 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/thousands-of-android-phones/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>IDENTOS Launches PolicyArc for AI Agent Access Control</title>
+      <link>https://secubuzz.com/news/identos-launches-policyarc-for-ai-agent-access-con-675754</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/identos-launches-policyarc-for-ai-agent-access-con-675754</guid>
+      <description><![CDATA[IDENTOS has released PolicyArc, a solution that centralizes definition, enforcement, and audit of access policies for applications, including AI agents. The tool provides task‑specific, time‑limited permissions, extending secure access beyond people and services. Built on 12 years of identity and access work, it targets government and healthcare sectors.]]></description>
+      <pubDate>Tue, 20 Oct 2026 13:09:24 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/20/identos-policyarc/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Ahold Delhaize Restores Services After Cyberattack</title>
+      <link>https://secubuzz.com/news/ahold-delhaize-restores-services-after-cyberattack-638011</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ahold-delhaize-restores-services-after-cyberattack-638011</guid>
+      <description><![CDATA[Ahold Delhaize experienced a cyberattack that disrupted multiple websites and apps across Europe. The company has restored many services and expects e‑commerce brands in the US to be back online within days. No data exfiltration was reported.]]></description>
+      <pubDate>Tue, 20 Oct 2026 13:02:18 GMT</pubDate>
+      <source url="https://www.securityweek.com/ahold-delhaize-restoring-services-disrupted-by-cyberattack/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>Cloudflare Releases tsrs, a Rust Port of TypeScript</title>
       <link>https://secubuzz.com/news/cloudflare-releases-tsrs-a-rust-port-of-typescript-1473c1</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-releases-tsrs-a-rust-port-of-typescript-1473c1</guid>
@@ -186,6 +240,33 @@
       <pubDate>Tue, 20 Oct 2026 13:00:00 GMT</pubDate>
       <source url="https://blog.cloudflare.com/typescript-rust-port/">Cloudflare Security</source>
       <category>Cloud</category>
+    </item>
+    <item>
+      <title>Pegasus Spyware Infected Serbian University Rector’s iPhone</title>
+      <link>https://secubuzz.com/news/pegasus-spyware-infected-serbian-university-rector-4e97f1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/pegasus-spyware-infected-serbian-university-rector-4e97f1</guid>
+      <description><![CDATA[NSO Group’s Pegasus spyware infected the iPhone of Vladan Đokić, rector of the University of Belgrade, using a zero‑click exploit. The infection was discovered six days before Serbia’s snap parliamentary election. The attack demonstrates state‑sponsored espionage targeting political figures.]]></description>
+      <pubDate>Tue, 20 Oct 2026 12:59:44 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/pegasus-spyware-infection-confirmed-on.html">The Hacker News</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>AppGate Expands OT Zero‑Trust with Live Session Governance</title>
+      <link>https://secubuzz.com/news/appgate-expands-ot-zero-trust-with-live-session-go-6299e7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/appgate-expands-ot-zero-trust-with-live-session-go-6299e7</guid>
+      <description><![CDATA[AppGate has expanded its zero‑trust OT offering with Session Governance, enabling live monitoring and session termination for critical infrastructure operators. The new feature builds on the March 2026 ZTNA for OT, allowing supervisors to control access, enforce compliance audits, and protect operational uptime by governing in‑session activity.]]></description>
+      <pubDate>Tue, 20 Oct 2026 12:59:32 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/20/appgate-session-governance/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Cairn Platform Abuse Enables Persistent Access and Financial Theft Across 100+ Organizations</title>
+      <link>https://secubuzz.com/news/cairn-platform-abuse-enables-persistent-access-and-4421e3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cairn-platform-abuse-enables-persistent-access-and-4421e3</guid>
+      <description><![CDATA[Three threat actors have abused the Cairn AI platform to gain persistent access and conduct financial theft against more than 100 organizations. The abuse enables attackers to maintain long‑term footholds and exfiltrate funds, posing a significant risk to affected enterprises.]]></description>
+      <pubDate>Tue, 20 Oct 2026 12:47:22 GMT</pubDate>
+      <source url="https://www.securityweek.com/ai-platform-cairn-abused-to-hack-over-100-organizations/">SecurityWeek</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>Google Adds Phone Numbers to All Accounts, Users Can Verify</title>
@@ -197,13 +278,103 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>OVHcloud CLI Compromised on GitHub to Steal Developer Secrets</title>
-      <link>https://secubuzz.com/news/ovhcloud-cli-compromised-on-github-to-steal-develo-42a484</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ovhcloud-cli-compromised-on-github-to-steal-develo-42a484</guid>
-      <description><![CDATA[Attackers injected malicious code into OVHcloud’s open‑source CLI tool hosted on GitHub. The backdoored binary collects and exfiltrates developer credentials and secrets from users who install the package. OVHcloud has issued a warning and urged users to verify package integrity and update to the latest version.]]></description>
-      <pubDate>Tue, 20 Oct 2026 11:31:22 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/ovhcloud-cli-releases-backdoored-on-github-to-steal-developer-secrets/">BleepingComputer</source>
+      <title>Ex‑OpenAI Worker Accused of Bug‑in‑the‑Air Surveillance</title>
+      <link>https://secubuzz.com/news/ex-openai-worker-accused-of-bug-in-the-air-surveil-25a3ed</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ex-openai-worker-accused-of-bug-in-the-air-surveil-25a3ed</guid>
+      <description><![CDATA[An ex‑OpenAI employee, Abdulrahman Alfozan, is accused of installing a bug‑in‑the‑air device in a conference room and planning to fly to Saudi Arabia. Prosecutors claim the device was used to eavesdrop on meetings, raising concerns about insider espionage and physical surveillance tactics.]]></description>
+      <pubDate>Tue, 20 Oct 2026 12:33:12 GMT</pubDate>
+      <source url="https://www.securityweek.com/ex-openai-worker-accused-of-bugging-conference-room-planned-to-fly-to-saudi-arabia-prosecutors-say/">SecurityWeek</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Siemens Software Center DLL Side-Loading Exploited in ClickFix Campaign</title>
+      <link>https://secubuzz.com/news/siemens-software-center-dll-side-loading-exploited-193548</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/siemens-software-center-dll-side-loading-exploited-193548</guid>
+      <description><![CDATA[Attackers leverage CVE-2026-110936, a DLL side-loading flaw in Siemens Software Center, to deliver ClickFix malware. The vulnerability, scored CVSS 8.4, is actively exploited. Siemens released version 4.0.9.8 to remediate the issue. Users must update to the patched release to mitigate infection risk.]]></description>
+      <pubDate>Tue, 20 Oct 2026 12:23:08 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/20/exploitation-siemens-software-center-vulnerability-cve-2026-110936/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Escalation of Malicious Calendar Invite Attacks</title>
+      <link>https://secubuzz.com/news/escalation-of-malicious-calendar-invite-attacks-2d683f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/escalation-of-malicious-calendar-invite-attacks-2d683f</guid>
+      <description><![CDATA[Malicious calendar invites have surged, with Check Point reporting over 118,000 such emails in September 2026 and Sublime Security noting a 1,216% month-over-month increase. The attacks target users via email, delivering phishing payloads or malware. Organizations should enforce stricter email filtering and user training to counter this trend.]]></description>
+      <pubDate>Tue, 20 Oct 2026 12:18:04 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/20/malicious-calendar-invites/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Microsoft Adds Quick Machine Recovery to Windows Server 2025 with October 2026 Update</title>
+      <link>https://secubuzz.com/news/microsoft-adds-quick-machine-recovery-to-windows-s-8c8f02</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-adds-quick-machine-recovery-to-windows-s-8c8f02</guid>
+      <description><![CDATA[Microsoft released an October 2026 security update that adds quick machine recovery to Windows Server 2025. The feature allows administrators to restore servers to a previous healthy state rapidly, improving uptime and simplifying recovery procedures. No security vulnerability is addressed by this update.]]></description>
+      <pubDate>Tue, 20 Oct 2026 12:16:32 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/microsoft/windows-server-2025-gets-support-for-quick-machine-recovery/">BleepingComputer</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>GhostAction Hijacks 790 GitHub Repositories to Steal Cloud Credentials and AI API Keys</title>
+      <link>https://secubuzz.com/news/ghostaction-hijacks-790-github-repositories-to-ste-234bed</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ghostaction-hijacks-790-github-repositories-to-ste-234bed</guid>
+      <description><![CDATA[GhostAction has injected malicious GitHub Actions workflows into 790 public repositories, exposing cloud credentials, software‑publishing tokens, and AI service keys. The campaign targets repositories with vulnerable workflows, potentially allowing attackers to exfiltrate credentials if the workflows execute. No confirmed misuse yet, but the risk is significant for exposed accounts.]]></description>
+      <pubDate>Tue, 20 Oct 2026 12:02:56 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-hijack-790-github-repositories/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>WAGO OS Linux Web‑Based Management Privilege Escalation Flaws</title>
+      <link>https://secubuzz.com/news/wago-os-linux-web-based-management-privilege-escal-430032</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/wago-os-linux-web-based-management-privilege-escal-430032</guid>
+      <description><![CDATA[Two authenticated privilege‑escalation flaws in the Web‑Based Management interface of WAGO CC100, PFC100 G2, PFC200 G2, TP600, Edge Controller and WP400 devices allow low‑privileged users to bypass routing configuration and PROFIBUS authorization controls. Affected firmware versions are all releases 1.0.0 and above.]]></description>
+      <pubDate>Tue, 20 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-02">CISA</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Hitachi Energy RTU500 Firmware Vulnerabilities Expose Critical Infrastructure</title>
+      <link>https://secubuzz.com/news/hitachi-energy-rtu500-firmware-vulnerabilities-exp-430032</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hitachi-energy-rtu500-firmware-vulnerabilities-exp-430032</guid>
+      <description><![CDATA[Hitachi Energy identified multiple vulnerabilities in RTU500 series CMU firmware versions 13.5.1 through 12.7.1. The flaws include NULL pointer dereference, type confusion, use‑after‑free, cleartext transmission, weak credential protection, and authentication bypass. Exploitation could compromise confidentiality, integrity, and availability. Immediate patching or mitigation is required.]]></description>
+      <pubDate>Tue, 20 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-05">CISA</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>WhatsApp Hidden Instructions Prevent Chatbot from Recommending Data Protection Authorities</title>
+      <link>https://secubuzz.com/news/whatsapp-hidden-instructions-prevent-chatbot-from-61de53</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/whatsapp-hidden-instructions-prevent-chatbot-from-61de53</guid>
+      <description><![CDATA[WhatsApp’s help pages contained hidden directives instructing its support chatbot not to recommend data protection authorities to users unable to delete accounts, contradicting the company’s European privacy policy. The code‑embedded instructions were discovered and removed by October 18, exposing a policy compliance issue.]]></description>
+      <pubDate>Tue, 20 Oct 2026 11:41:06 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/whatsapp-hid-instructions-in-help-pages.html">The Hacker News</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Revolut Service Outage Linked to Google Cloud London Region Issues</title>
+      <link>https://secubuzz.com/news/revolut-service-outage-linked-to-google-cloud-lond-6a01be</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/revolut-service-outage-linked-to-google-cloud-lond-6a01be</guid>
+      <description><![CDATA[Revolut experienced a major service outage on October 20, 2026, disrupting payments, cash withdrawals, and app access. The outage coincided with reported problems in Google Cloud’s London region. Revolut confirmed customer funds and data remained secure while engineers restored services.]]></description>
+      <pubDate>Tue, 20 Oct 2026 11:37:05 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/revolut-outage/">Cyber Security News</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Security Teams Adopt AI‑Assisted Workflow to Manage Wild Code</title>
+      <link>https://secubuzz.com/news/security-teams-adopt-ai-assisted-workflow-to-manag-24719c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/security-teams-adopt-ai-assisted-workflow-to-manag-24719c</guid>
+      <description><![CDATA[A sales manager implements an AI‑assisted workflow that routes leads, accesses customer records, summarizes inbound requests, and posts updates to a shared channel. The automation reduces manual effort and becomes integral to daily operations, while other employees accelerate app and agent development beyond existing process capacity.]]></description>
+      <pubDate>Tue, 20 Oct 2026 11:33:04 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/what-security-teams-can-do-to-tame-wild.html">The Hacker News</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Go Releases Emergency Update Blocking Eight CA Keys</title>
+      <link>https://secubuzz.com/news/go-releases-emergency-update-blocking-eight-ca-key-788925</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/go-releases-emergency-update-blocking-eight-ca-key-788925</guid>
+      <description><![CDATA[Go 1.27.3 and 1.26.10 block certificate chains that pass through eight intermediate CA keys. Applications built with these releases will refuse connections to services using certificates issued by those keys, potentially disrupting legitimate traffic. The update addresses undisclosed security concerns tied to the affected CA.]]></description>
+      <pubDate>Tue, 20 Oct 2026 11:32:59 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/go-issues-emergency-update-blocking.html">The Hacker News</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Microsoft Introduces Dynamic Permissions for AI Agents</title>
@@ -213,15 +384,6 @@
       <pubDate>Tue, 20 Oct 2026 11:30:18 GMT</pubDate>
       <source url="https://www.securityweek.com/microsoft-targets-rogue-ai-agents-with-dynamic-permissions-risk-scoring/">SecurityWeek</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Ahold Delhaize Cyberattack Disrupts Store Services Across Europe and US</title>
-      <link>https://secubuzz.com/news/ahold-delhaize-cyberattack-disrupts-store-services-5c7c0c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ahold-delhaize-cyberattack-disrupts-store-services-5c7c0c</guid>
-      <description><![CDATA[Ahold Delhaize confirmed a cyberattack that disrupted services at its retail stores throughout Europe and the United States. The incident caused outages in point‑of‑sale systems, inventory management, and online ordering platforms. The company is investigating the breach and has engaged cybersecurity experts to assess the scope and impact.]]></description>
-      <pubDate>Tue, 20 Oct 2026 11:18:35 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/ahold-delhaize-cyberattack-affects-services-across-us-and-europe/">BleepingComputer</source>
-      <category>Breach</category>
     </item>
     <item>
       <title>Possible New Cellebrite iPhone Radio Zero‑Day Exploit</title>
@@ -278,15 +440,6 @@
       <category>Malware</category>
     </item>
     <item>
-      <title>Revolut Experiences Global Online Banking Outage</title>
-      <link>https://secubuzz.com/news/revolut-experiences-global-online-banking-outage-6cf994</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/revolut-experiences-global-online-banking-outage-6cf994</guid>
-      <description><![CDATA[Revolut reported a widespread outage affecting most services worldwide. The fintech company is working to restore operations, but customers remain unable to access banking functions. No breach or data compromise has been reported, and the incident is classified as a service disruption.]]></description>
-      <pubDate>Tue, 20 Oct 2026 09:46:44 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/revolut-outage-disrupts-online-banking-operations-worldwide/">BleepingComputer</source>
-      <category>Policy</category>
-    </item>
-    <item>
       <title>970,000 Medi-Cal Members Affected by Paradigm Healthcare Data Breach</title>
       <link>https://secubuzz.com/news/970-000-medi-cal-members-affected-by-paradigm-heal-17ce35</link>
       <guid isPermaLink="true">https://secubuzz.com/news/970-000-medi-cal-members-affected-by-paradigm-heal-17ce35</guid>
@@ -303,159 +456,6 @@
       <pubDate>Tue, 20 Oct 2026 08:20:48 GMT</pubDate>
       <source url="https://cybersecuritynews.com/rank-math-pro-plugin-compromised/">Cyber Security News</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>ClickFix Exploits Siemens Software Center DLL Sideloading Vulnerability</title>
-      <link>https://secubuzz.com/news/clickfix-exploits-siemens-software-center-dll-side-1a75cc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/clickfix-exploits-siemens-software-center-dll-side-1a75cc</guid>
-      <description><![CDATA[Siemens Software Center suffers a DLL sideloading flaw (CVE-2026-110936, CVSS 8.4) that attackers exploit via ClickFix to drop malicious DLLs into the application’s search path. The vulnerability allows execution of code with the same privileges as the software, enabling remote access trojan deployment.]]></description>
-      <pubDate>Tue, 20 Oct 2026 07:11:45 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Mastercard Launches Stablecoin Security Solution</title>
-      <link>https://secubuzz.com/news/mastercard-launches-stablecoin-security-solution-68f72c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/mastercard-launches-stablecoin-security-solution-68f72c</guid>
-      <description><![CDATA[Mastercard introduces Stablecoin Security, a risk intelligence platform partnering with Borderless.xyz and Keyrails. The solution maps fraud, scams, sanctions, and other financial‑crime indicators across stablecoin payment flows, enabling institutions to assess risk before on‑chain fund movement.]]></description>
-      <pubDate>Tue, 20 Oct 2026 06:25:12 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/20/mastercard-stablecoin-security/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>EasyDMARC partners with GMO GlobalSign to strengthen email authentication and branding</title>
-      <link>https://secubuzz.com/news/easydmarc-partners-with-gmo-globalsign-to-strength-240e21</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/easydmarc-partners-with-gmo-globalsign-to-strength-240e21</guid>
-      <description><![CDATA[EasyDMARC has teamed with GMO GlobalSign to enable organizations to set up trusted email identities via DNS security, sender authentication, and verified branding. The collaboration aims to reduce risks from new DNS records and authentication requirements that can affect security, deliverability, and brand reputation.]]></description>
-      <pubDate>Tue, 20 Oct 2026 06:00:13 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/20/easydmarc-gmo-globalsign-partnership/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Former OpenAI Engineer Detained in Saudi Spy Device Case</title>
-      <link>https://secubuzz.com/news/former-openai-engineer-detained-in-saudi-spy-devic-5490ef</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/former-openai-engineer-detained-in-saudi-spy-devic-5490ef</guid>
-      <description><![CDATA[A former OpenAI engineer, Abdulrahman Alfozan, was detained after authorities alleged he planted a recording device in an executive conference room to steal company secrets. The case implicates Saudi contacts and suggests state‑sponsored espionage activity.]]></description>
-      <pubDate>Tue, 20 Oct 2026 05:53:16 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/ex-openai-engineer-detained-in-spy.html">The Hacker News</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>ROMULUS ClickFix Platform Distributes LegionLoader Malware</title>
-      <link>https://secubuzz.com/news/romulus-clickfix-platform-distributes-legionloader-34a70b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/romulus-clickfix-platform-distributes-legionloader-34a70b</guid>
-      <description><![CDATA[Researchers identified ROMULUS, a ClickFix-style delivery platform that hosts bogus landing pages to lure users into executing malicious commands, distributing LegionLoader and other malware. The platform mimics legitimate sites, tricking users into running payloads that compromise systems.]]></description>
-      <pubDate>Tue, 20 Oct 2026 04:05:58 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/romulus-clickfix-platform-tricks-users.html">The Hacker News</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>Cloudflare Introduces Clairic, a Token‑Free Invoice Extraction Model</title>
-      <link>https://secubuzz.com/news/cloudflare-introduces-clairic-a-token-free-invoice-b8d2c6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-introduces-clairic-a-token-free-invoice-b8d2c6</guid>
-      <description><![CDATA[Cloudflare unveiled Clairic, a model that extracts typed values from text and images in a single pass without generating tokens. In tests on a damaged‑product claim, Clairic completed the task in 19.3 seconds versus 61.7 seconds for an LLM‑based version, cutting costs by 49%.]]></description>
-      <pubDate>Tue, 20 Oct 2026 03:45:03 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/20/cloudflare-ai-clairic-extraction-model/">Help Net Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>Claude AI Detects Hidden XMRig Crypto Miner on Developer’s Mac</title>
-      <link>https://secubuzz.com/news/claude-ai-detects-hidden-xmrig-crypto-miner-on-dev-67928d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/claude-ai-detects-hidden-xmrig-crypto-miner-on-dev-67928d</guid>
-      <description><![CDATA[During a temperature monitoring app build, Claude Code flagged unusually high CPU usage. Investigation revealed XMRig mining software consuming ~1,175% CPU across 12 cores. The miner was running covertly on the developer’s Mac, diverting processing power for cryptocurrency mining.]]></description>
-      <pubDate>Tue, 20 Oct 2026 02:49:37 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/claude-ai-detects-hidden-crypto-miner/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>ISC Stormcast Podcast Released for October 20, 2026</title>
-      <link>https://secubuzz.com/news/isc-stormcast-podcast-released-for-october-20-2026-57dd7d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/isc-stormcast-podcast-released-for-october-20-2026-57dd7d</guid>
-      <description><![CDATA[The SANS Internet Storm Center released its weekly ISC Stormcast podcast for October 20, 2026. The episode is available at https://isc.sans.edu/podcastdetail/10142 and is licensed under Creative Commons Attribution-Noncommercial 3.0 United States. No security incident is reported in this release.]]></description>
-      <pubDate>Tue, 20 Oct 2026 02:00:03 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33436">SANS Internet Storm Center</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Plex2Shell 4‑Flaw RCE Exploitation on Plex Media Server</title>
-      <link>https://secubuzz.com/news/plex2shell-4-flaw-rce-exploitation-on-plex-media-s-6cc35e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/plex2shell-4-flaw-rce-exploitation-on-plex-media-s-6cc35e</guid>
-      <description><![CDATA[Hackers exploit the Plex2Shell 4‑flaw vulnerability chain to deploy Linux proxy backdoors and Monero miners on Plex Media Server installations. The flaw allows remote code execution; administrators should apply the latest patch immediately to prevent unauthorized access and cryptocurrency mining.]]></description>
-      <pubDate>Mon, 19 Oct 2026 23:44:30 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/plex2shell-how-to-detect-patch-plex-media-server-rce">CyberNews AI</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Researchers Penetrate Microsoft Tech Support Scam Operation</title>
-      <link>https://secubuzz.com/news/researchers-penetrate-microsoft-tech-support-scam-312422</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/researchers-penetrate-microsoft-tech-support-scam-312422</guid>
-      <description><![CDATA[Security researchers infiltrated a large‑scale Microsoft impersonation scam that uses a malicious traffic distribution system operated by a Russian organization. The operation abuses thousands of Cloudflare links to route traffic to malicious destinations.]]></description>
-      <pubDate>Mon, 19 Oct 2026 21:13:41 GMT</pubDate>
-      <source url="https://www.darkreading.com/threat-intelligence/microsoft-tech-support-scam-operation">Dark Reading</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>AdFection Exploits Zero-Click Ad Delivery for Spyware</title>
-      <link>https://secubuzz.com/news/adfection-exploits-zero-click-ad-delivery-for-spyw-36726c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/adfection-exploits-zero-click-ad-delivery-for-spyw-36726c</guid>
-      <description><![CDATA[AdFection leverages targeted ad bidding to deliver spyware without user interaction, enabling stealth tracking of individuals and organizations. The technique uses ad impressions as a vector, bypassing traditional click-based infection methods. Mitigation requires monitoring ad traffic and blocking suspicious ad exchanges.]]></description>
-      <pubDate>Mon, 19 Oct 2026 19:55:01 GMT</pubDate>
-      <source url="https://www.darkreading.com/data-privacy/adfection-online-ads-spyware-delivery">Dark Reading</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Judge denies WhatsApp’s bid to hold spyware maker in contempt</title>
-      <link>https://secubuzz.com/news/judge-denies-whatsapp-s-bid-to-hold-spyware-maker-56a8b6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/judge-denies-whatsapp-s-bid-to-hold-spyware-maker-56a8b6</guid>
-      <description><![CDATA[A federal judge rejected WhatsApp’s request to hold NSO Group in contempt over alleged spyware use. WhatsApp claimed NSO violated a 2025 injunction. The judge ruled WhatsApp failed to provide sufficient information, weakening its case. The decision limits legal leverage against the spyware maker.]]></description>
-      <pubDate>Mon, 19 Oct 2026 19:49:00 GMT</pubDate>
-      <source url="https://therecord.media/whatsapp-denied-appeal-alleged-nso-group-violation-injunction">The Record</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>ConnectWise Disables Cloud Backups After Microsoft 365 Tenant Breach via ConnectWise Credentials</title>
-      <link>https://secubuzz.com/news/connectwise-disables-cloud-backups-after-microsoft-3c267f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/connectwise-disables-cloud-backups-after-microsoft-3c267f</guid>
-      <description><![CDATA[Attackers authenticated into Microsoft 365 tenants using compromised ConnectWise credentials, prompting ConnectWise to disable cloud backups for downstream MSPs. The incident highlights credential reuse risks and the potential for widespread tenant compromise. No confirmed customer impact yet.]]></description>
-      <pubDate>Mon, 19 Oct 2026 19:19:33 GMT</pubDate>
-      <source url="https://www.darkreading.com/identity-access-management-security/connectwise-disables-cloud-backups-downstream-msps">Dark Reading</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Bullhorn disables platform amid cyberattack</title>
-      <link>https://secubuzz.com/news/bullhorn-disables-platform-amid-cyberattack-4fd992</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/bullhorn-disables-platform-amid-cyberattack-4fd992</guid>
-      <description><![CDATA[Bullhorn has shut down its staffing platform to contain a cyberattack that triggered a system-wide outage. The company has not disclosed the nature of the breach or affected data. Users are advised to monitor official channels for updates.]]></description>
-      <pubDate>Mon, 19 Oct 2026 18:51:13 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/bullhorn-takes-staffing-platform-offline-to-contain-cyberattack/">BleepingComputer</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>OpenCode API Keys Exposed in Security Breach</title>
-      <link>https://secubuzz.com/news/opencode-api-keys-exposed-in-security-breach-4af3f5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/opencode-api-keys-exposed-in-security-breach-4af3f5</guid>
-      <description><![CDATA[OpenCode notified a limited user base that API keys used with external providers were exposed following a breach. The leak compromises authentication credentials, potentially allowing unauthorized access to third‑party services. Users should rotate keys immediately and enable multi‑factor authentication where possible.]]></description>
-      <pubDate>Mon, 19 Oct 2026 17:27:15 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/opencode-hack-exposes-api-keys-amid-ai-distillation-attacks/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Bright Security Launches STAR Fuzzer, Agentic Fuzzing Tool</title>
-      <link>https://secubuzz.com/news/bright-security-launches-star-fuzzer-agentic-fuzzi-8f49f7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/bright-security-launches-star-fuzzer-agentic-fuzzi-8f49f7</guid>
-      <description><![CDATA[Bright Security released STAR Fuzzer, an evolutionary engine that generates its own harnesses and proves findings. The open‑source research run identified high or critical memory‑safety bugs in 45% of tested projects, demonstrating the tool’s effectiveness in uncovering crashes and memory exhaustion without a running application.]]></description>
-      <pubDate>Mon, 19 Oct 2026 17:11:36 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/bright-security-introduces-star-fuzzer-agentic-fuzzing-that-writes-its-own-harnesses-and-proves-every-finding/">Cyber Security News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>VK Service Disruptions After Data Center Drone Strike</title>
-      <link>https://secubuzz.com/news/vk-service-disruptions-after-data-center-drone-str-317c6a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/vk-service-disruptions-after-data-center-drone-str-317c6a</guid>
-      <description><![CDATA[A drone strike on a VK data center caused widespread service disruptions, leading users to report difficulties loading news feeds, playing music, and accessing other platform features. The incident highlights the vulnerability of social media infrastructure to physical attacks.]]></description>
-      <pubDate>Mon, 19 Oct 2026 15:55:00 GMT</pubDate>
-      <source url="https://therecord.media/russian-social-media-giant-vk-faces-disruptions-drone-strike-data-center">The Record</source>
-      <category>Policy</category>
     </item>
   </channel>
 </rss>

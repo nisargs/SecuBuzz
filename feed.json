@@ -1,5 +1,23 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/10/20/google-chrome-enhanced-protection-updates/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/google-chrome-enhanced-protection-updates/",
+    "title": "Google Enhances Chrome Protection Against Scam Commands",
+    "headline": "Google Enhances Chrome Protection Against Scam Commands",
+    "summary": "Google updates Chrome’s Enhanced Protection to detect scam sites that trick users into copying malicious commands. The new feature warns users when a page attempts to trick them into executing harmful commands. This update claims to make users ten times safer from phishing, social engineering, and notification abuse compared to Standard Protection.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-20T17:00:47.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/20/google-chrome-enhanced-protection-updates/",
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/google-unveils-new-android-ai-protections/"
+      }
+    ]
+  },
+  {
     "id": "https://www.securityweek.com/us-agencies-detail-incident-response-practices-for-rogue-ai-agents/",
     "sourceUrl": "https://www.securityweek.com/us-agencies-detail-incident-response-practices-for-rogue-ai-agents/",
     "title": "US Agencies Publish Ten Voluntary Practices for Rogue AI Agent Incidents",
@@ -284,6 +302,76 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.bleepingcomputer.com/news/security/hacker-gets-8-years-for-stealing-33-million-from-taxpayers/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hacker-gets-8-years-for-stealing-33-million-from-taxpayers/",
+    "title": "Nigerian Hacker Sentenced for $3.3 Million Taxpayer Theft",
+    "headline": "Nigerian Hacker Sentenced for $3.3 Million Taxpayer Theft",
+    "summary": "A Nigerian national was sentenced to eight years in prison for spearphishing attacks that stole $3.3 million from U.S. tax‑preparation firms. The attacks began in 2019 and targeted employees with tailored emails, leading to credential theft and financial loss for the businesses.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-20T13:18:36.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/hacker-gets-8-years-for-stealing-33-million-from-taxpayers/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/20/threatmodeler-nexusai/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/threatmodeler-nexusai/",
+    "title": "ThreatModeler Launches NexusAI for Automated Threat Modeling",
+    "headline": "ThreatModeler Launches NexusAI for Automated Threat Modeling",
+    "summary": "ThreatModeler introduces NexusAI, an AI‑powered tool integrated into its Nexus platform. The solution automates threat model creation, analysis, and maintenance, allowing security teams to scale risk assessment without increasing manual effort. NexusAI monitors architectural changes and recommends security updates to keep applications secure as development accelerates.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-20T13:17:56.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/20/threatmodeler-nexusai/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/thousands-of-android-phones/",
+    "sourceUrl": "https://cybersecuritynews.com/thousands-of-android-phones/",
+    "title": "Android Firmware Malware Disables Google Play Protections",
+    "headline": "Android Firmware Malware Disables Google Play Protections",
+    "summary": "A widespread firmware-based malware campaign, named Midnight Mimosa, infects thousands of Android phones in over 150 countries. The malware installs and removes apps silently, disabling Google Play Protect and granting attackers full system access without user interaction. The attack bypasses app store safeguards, enabling persistent compromise of low‑cost devices.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-20T13:15:38.000Z",
+    "url": "https://cybersecuritynews.com/thousands-of-android-phones/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/20/identos-policyarc/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/identos-policyarc/",
+    "title": "IDENTOS Launches PolicyArc for AI Agent Access Control",
+    "headline": "IDENTOS Launches PolicyArc for AI Agent Access Control",
+    "summary": "IDENTOS has released PolicyArc, a solution that centralizes definition, enforcement, and audit of access policies for applications, including AI agents. The tool provides task‑specific, time‑limited permissions, extending secure access beyond people and services. Built on 12 years of identity and access work, it targets government and healthcare sectors.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-20T13:09:24.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/20/identos-policyarc/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/ahold-delhaize-restoring-services-disrupted-by-cyberattack/",
+    "sourceUrl": "https://www.securityweek.com/ahold-delhaize-restoring-services-disrupted-by-cyberattack/",
+    "title": "Ahold Delhaize Restores Services After Cyberattack",
+    "headline": "Ahold Delhaize Restores Services After Cyberattack",
+    "summary": "Ahold Delhaize experienced a cyberattack that disrupted multiple websites and apps across Europe. The company has restored many services and expects e‑commerce brands in the US to be back online within days. No data exfiltration was reported.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-20T13:02:18.000Z",
+    "url": "https://www.securityweek.com/ahold-delhaize-restoring-services-disrupted-by-cyberattack/",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/ahold-delhaize-cyberattack-affects-services-across-us-and-europe/"
+      }
+    ]
+  },
+  {
     "id": "https://blog.cloudflare.com/typescript-rust-port/",
     "sourceUrl": "https://blog.cloudflare.com/typescript-rust-port/",
     "title": "Cloudflare Releases tsrs, a Rust Port of TypeScript",
@@ -295,6 +383,50 @@
     "publishedAt": "2026-10-20T13:00:00.000Z",
     "url": "https://blog.cloudflare.com/typescript-rust-port/",
     "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/pegasus-spyware-infection-confirmed-on.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/pegasus-spyware-infection-confirmed-on.html",
+    "title": "Pegasus Spyware Infected Serbian University Rector’s iPhone",
+    "headline": "Pegasus Spyware Infected Serbian University Rector’s iPhone",
+    "summary": "NSO Group’s Pegasus spyware infected the iPhone of Vladan Đokić, rector of the University of Belgrade, using a zero‑click exploit. The infection was discovered six days before Serbia’s snap parliamentary election. The attack demonstrates state‑sponsored espionage targeting political figures.",
+    "category": "NATION_STATE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-20T12:59:44.000Z",
+    "url": "https://thehackernews.com/2026/10/pegasus-spyware-infection-confirmed-on.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/20/appgate-session-governance/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/appgate-session-governance/",
+    "title": "AppGate Expands OT Zero‑Trust with Live Session Governance",
+    "headline": "AppGate Expands OT Zero‑Trust with Live Session Governance",
+    "summary": "AppGate has expanded its zero‑trust OT offering with Session Governance, enabling live monitoring and session termination for critical infrastructure operators. The new feature builds on the March 2026 ZTNA for OT, allowing supervisors to control access, enforce compliance audits, and protect operational uptime by governing in‑session activity.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-20T12:59:32.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/20/appgate-session-governance/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/ai-platform-cairn-abused-to-hack-over-100-organizations/",
+    "sourceUrl": "https://www.securityweek.com/ai-platform-cairn-abused-to-hack-over-100-organizations/",
+    "title": "Cairn Platform Abuse Enables Persistent Access and Financial Theft Across 100+ Organizations",
+    "headline": "Cairn Platform Abuse Enables Persistent Access and Financial Theft Across 100+ Organizations",
+    "summary": "Three threat actors have abused the Cairn AI platform to gain persistent access and conduct financial theft against more than 100 organizations. The abuse enables attackers to maintain long‑term footholds and exfiltrate funds, posing a significant risk to affected enterprises.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-20T12:47:22.000Z",
+    "url": "https://www.securityweek.com/ai-platform-cairn-abused-to-hack-over-100-organizations/",
+    "additionalSources": [
+      {
+        "source": "CISA",
+        "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-03"
+      }
+    ]
   },
   {
     "id": "https://www.malwarebytes.com/blog/mobile/2026/10/google-may-add-your-number-to-all-your-accounts-how-to-stop-it",
@@ -310,26 +442,192 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.bleepingcomputer.com/news/security/ovhcloud-cli-releases-backdoored-on-github-to-steal-developer-secrets/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ovhcloud-cli-releases-backdoored-on-github-to-steal-developer-secrets/",
-    "title": "OVHcloud CLI Compromised on GitHub to Steal Developer Secrets",
-    "headline": "OVHcloud CLI Compromised on GitHub to Steal Developer Secrets",
-    "summary": "Attackers injected malicious code into OVHcloud’s open‑source CLI tool hosted on GitHub. The backdoored binary collects and exfiltrates developer credentials and secrets from users who install the package. OVHcloud has issued a warning and urged users to verify package integrity and update to the latest version.",
+    "id": "https://www.securityweek.com/ex-openai-worker-accused-of-bugging-conference-room-planned-to-fly-to-saudi-arabia-prosecutors-say/",
+    "sourceUrl": "https://www.securityweek.com/ex-openai-worker-accused-of-bugging-conference-room-planned-to-fly-to-saudi-arabia-prosecutors-say/",
+    "title": "Ex‑OpenAI Worker Accused of Bug‑in‑the‑Air Surveillance",
+    "headline": "Ex‑OpenAI Worker Accused of Bug‑in‑the‑Air Surveillance",
+    "summary": "An ex‑OpenAI employee, Abdulrahman Alfozan, is accused of installing a bug‑in‑the‑air device in a conference room and planning to fly to Saudi Arabia. Prosecutors claim the device was used to eavesdrop on meetings, raising concerns about insider espionage and physical surveillance tactics.",
     "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-20T12:33:12.000Z",
+    "url": "https://www.securityweek.com/ex-openai-worker-accused-of-bugging-conference-room-planned-to-fly-to-saudi-arabia-prosecutors-say/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/20/exploitation-siemens-software-center-vulnerability-cve-2026-110936/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/exploitation-siemens-software-center-vulnerability-cve-2026-110936/",
+    "title": "Siemens Software Center DLL Side-Loading Exploited in ClickFix Campaign",
+    "headline": "Siemens Software Center DLL Side-Loading Exploited in ClickFix Campaign",
+    "summary": "Attackers leverage CVE-2026-110936, a DLL side-loading flaw in Siemens Software Center, to deliver ClickFix malware. The vulnerability, scored CVSS 8.4, is actively exploited. Siemens released version 4.0.9.8 to remediate the issue. Users must update to the patched release to mitigate infection risk.",
+    "category": "CVE",
     "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-20T11:31:22.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/ovhcloud-cli-releases-backdoored-on-github-to-steal-developer-secrets/",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-20T12:23:08.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/20/exploitation-siemens-software-center-vulnerability-cve-2026-110936/",
     "additionalSources": [
       {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/ovhcloud-supply-chain-attack/"
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html"
+      }
+    ]
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/20/malicious-calendar-invites/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/malicious-calendar-invites/",
+    "title": "Escalation of Malicious Calendar Invite Attacks",
+    "headline": "Escalation of Malicious Calendar Invite Attacks",
+    "summary": "Malicious calendar invites have surged, with Check Point reporting over 118,000 such emails in September 2026 and Sublime Security noting a 1,216% month-over-month increase. The attacks target users via email, delivering phishing payloads or malware. Organizations should enforce stricter email filtering and user training to counter this trend.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-20T12:18:04.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/20/malicious-calendar-invites/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/microsoft/windows-server-2025-gets-support-for-quick-machine-recovery/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-server-2025-gets-support-for-quick-machine-recovery/",
+    "title": "Microsoft Adds Quick Machine Recovery to Windows Server 2025 with October 2026 Update",
+    "headline": "Microsoft Adds Quick Machine Recovery to Windows Server 2025 with October 2026 Update",
+    "summary": "Microsoft released an October 2026 security update that adds quick machine recovery to Windows Server 2025. The feature allows administrators to restore servers to a previous healthy state rapidly, improving uptime and simplifying recovery procedures. No security vulnerability is addressed by this update.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-20T12:16:32.000Z",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/windows-server-2025-gets-support-for-quick-machine-recovery/",
+    "additionalSources": [
+      {
+        "source": "CISA",
+        "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-01"
+      },
+      {
+        "source": "SANS Internet Storm Center",
+        "sourceUrl": "https://isc.sans.edu/diary/rss/33436"
+      },
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-game-app-crashes-caused-by-windows-kb5124010-preview-update/"
+      },
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/19/check-point-brand-impersonation-scams-q3-2026-report/"
+      }
+    ]
+  },
+  {
+    "id": "https://cybersecuritynews.com/hackers-hijack-790-github-repositories/",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-hijack-790-github-repositories/",
+    "title": "GhostAction Hijacks 790 GitHub Repositories to Steal Cloud Credentials and AI API Keys",
+    "headline": "GhostAction Hijacks 790 GitHub Repositories to Steal Cloud Credentials and AI API Keys",
+    "summary": "GhostAction has injected malicious GitHub Actions workflows into 790 public repositories, exposing cloud credentials, software‑publishing tokens, and AI service keys. The campaign targets repositories with vulnerable workflows, potentially allowing attackers to exfiltrate credentials if the workflows execute. No confirmed misuse yet, but the risk is significant for exposed accounts.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-20T12:02:56.000Z",
+    "url": "https://cybersecuritynews.com/hackers-hijack-790-github-repositories/",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/ovhcloud-cli-releases-backdoored-on-github-to-steal-developer-secrets/"
+      },
+      {
+        "source": "Dark Reading",
+        "sourceUrl": "https://www.darkreading.com/identity-access-management-security/connectwise-disables-cloud-backups-downstream-msps"
       },
       {
         "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/hackers-hijack-five-ovhcloud-cli.html"
+        "sourceUrl": "https://thehackernews.com/2026/10/ghostaction-attackers-plant-credential.html"
       }
     ]
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-02",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-02",
+    "title": "WAGO OS Linux Web‑Based Management Privilege Escalation Flaws",
+    "headline": "WAGO OS Linux Web‑Based Management Privilege Escalation Flaws",
+    "summary": "Two authenticated privilege‑escalation flaws in the Web‑Based Management interface of WAGO CC100, PFC100 G2, PFC200 G2, TP600, Edge Controller and WP400 devices allow low‑privileged users to bypass routing configuration and PROFIBUS authorization controls. Affected firmware versions are all releases 1.0.0 and above.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "CISA",
+    "publishedAt": "2026-10-20T12:00:00.000Z",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-02",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-05",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-05",
+    "title": "Hitachi Energy RTU500 Firmware Vulnerabilities Expose Critical Infrastructure",
+    "headline": "Hitachi Energy RTU500 Firmware Vulnerabilities Expose Critical Infrastructure",
+    "summary": "Hitachi Energy identified multiple vulnerabilities in RTU500 series CMU firmware versions 13.5.1 through 12.7.1. The flaws include NULL pointer dereference, type confusion, use‑after‑free, cleartext transmission, weak credential protection, and authentication bypass. Exploitation could compromise confidentiality, integrity, and availability. Immediate patching or mitigation is required.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "CISA",
+    "publishedAt": "2026-10-20T12:00:00.000Z",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-05",
+    "additionalSources": [
+      {
+        "source": "CISA",
+        "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-04"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/whatsapp-hid-instructions-in-help-pages.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/whatsapp-hid-instructions-in-help-pages.html",
+    "title": "WhatsApp Hidden Instructions Prevent Chatbot from Recommending Data Protection Authorities",
+    "headline": "WhatsApp Hidden Instructions Prevent Chatbot from Recommending Data Protection Authorities",
+    "summary": "WhatsApp’s help pages contained hidden directives instructing its support chatbot not to recommend data protection authorities to users unable to delete accounts, contradicting the company’s European privacy policy. The code‑embedded instructions were discovered and removed by October 18, exposing a policy compliance issue.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-20T11:41:06.000Z",
+    "url": "https://thehackernews.com/2026/10/whatsapp-hid-instructions-in-help-pages.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/revolut-outage/",
+    "sourceUrl": "https://cybersecuritynews.com/revolut-outage/",
+    "title": "Revolut Service Outage Linked to Google Cloud London Region Issues",
+    "headline": "Revolut Service Outage Linked to Google Cloud London Region Issues",
+    "summary": "Revolut experienced a major service outage on October 20, 2026, disrupting payments, cash withdrawals, and app access. The outage coincided with reported problems in Google Cloud’s London region. Revolut confirmed customer funds and data remained secure while engineers restored services.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-20T11:37:05.000Z",
+    "url": "https://cybersecuritynews.com/revolut-outage/",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/revolut-outage-disrupts-online-banking-operations-worldwide/"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/what-security-teams-can-do-to-tame-wild.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/what-security-teams-can-do-to-tame-wild.html",
+    "title": "Security Teams Adopt AI‑Assisted Workflow to Manage Wild Code",
+    "headline": "Security Teams Adopt AI‑Assisted Workflow to Manage Wild Code",
+    "summary": "A sales manager implements an AI‑assisted workflow that routes leads, accesses customer records, summarizes inbound requests, and posts updates to a shared channel. The automation reduces manual effort and becomes integral to daily operations, while other employees accelerate app and agent development beyond existing process capacity.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-20T11:33:04.000Z",
+    "url": "https://thehackernews.com/2026/10/what-security-teams-can-do-to-tame-wild.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/go-issues-emergency-update-blocking.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/go-issues-emergency-update-blocking.html",
+    "title": "Go Releases Emergency Update Blocking Eight CA Keys",
+    "headline": "Go Releases Emergency Update Blocking Eight CA Keys",
+    "summary": "Go 1.27.3 and 1.26.10 block certificate chains that pass through eight intermediate CA keys. Applications built with these releases will refuse connections to services using certificates issued by those keys, potentially disrupting legitimate traffic. The update addresses undisclosed security concerns tied to the affected CA.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-20T11:32:59.000Z",
+    "url": "https://thehackernews.com/2026/10/go-issues-emergency-update-blocking.html",
+    "additionalSources": []
   },
   {
     "id": "https://www.securityweek.com/microsoft-targets-rogue-ai-agents-with-dynamic-permissions-risk-scoring/",
@@ -350,24 +648,6 @@
       {
         "source": "Cyber Security News",
         "sourceUrl": "https://cybersecuritynews.com/ai-models-as-insider-threats/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/ahold-delhaize-cyberattack-affects-services-across-us-and-europe/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ahold-delhaize-cyberattack-affects-services-across-us-and-europe/",
-    "title": "Ahold Delhaize Cyberattack Disrupts Store Services Across Europe and US",
-    "headline": "Ahold Delhaize Cyberattack Disrupts Store Services Across Europe and US",
-    "summary": "Ahold Delhaize confirmed a cyberattack that disrupted services at its retail stores throughout Europe and the United States. The incident caused outages in point‑of‑sale systems, inventory management, and online ordering platforms. The company is investigating the breach and has engaged cybersecurity experts to assess the scope and impact.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-20T11:18:35.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/ahold-delhaize-cyberattack-affects-services-across-us-and-europe/",
-    "additionalSources": [
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/ahold-delhaize-cyberattack-grocery"
       }
     ]
   },
@@ -460,19 +740,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.bleepingcomputer.com/news/security/revolut-outage-disrupts-online-banking-operations-worldwide/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/revolut-outage-disrupts-online-banking-operations-worldwide/",
-    "title": "Revolut Experiences Global Online Banking Outage",
-    "headline": "Revolut Experiences Global Online Banking Outage",
-    "summary": "Revolut reported a widespread outage affecting most services worldwide. The fintech company is working to restore operations, but customers remain unable to access banking functions. No breach or data compromise has been reported, and the incident is classified as a service disruption.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-20T09:46:44.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/revolut-outage-disrupts-online-banking-operations-worldwide/",
-    "additionalSources": []
-  },
-  {
     "id": "https://www.securityweek.com/970000-medi-cal-members-affected-by-paradigm-healthcare-data-breach/",
     "sourceUrl": "https://www.securityweek.com/970000-medi-cal-members-affected-by-paradigm-healthcare-data-breach/",
     "title": "970,000 Medi-Cal Members Affected by Paradigm Healthcare Data Breach",
@@ -505,24 +772,6 @@
       {
         "source": "BleepingComputer",
         "sourceUrl": "https://www.bleepingcomputer.com/news/security/wordpress-seo-plugin-rank-math-compromised-to-backdoor-websites/"
-      }
-    ]
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html",
-    "title": "ClickFix Exploits Siemens Software Center DLL Sideloading Vulnerability",
-    "headline": "ClickFix Exploits Siemens Software Center DLL Sideloading Vulnerability",
-    "summary": "Siemens Software Center suffers a DLL sideloading flaw (CVE-2026-110936, CVSS 8.4) that attackers exploit via ClickFix to drop malicious DLLs into the application’s search path. The vulnerability allows execution of code with the same privileges as the software, enabling remote access trojan deployment.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-20T07:11:45.000Z",
-    "url": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html",
-    "additionalSources": [
-      {
-        "source": "Sophos Threat Research",
-        "sourceUrl": "https://www.sophos.com/en-us/blog/bronze-sandcastle-deploys-modified-meterpreter-shells"
       }
     ]
   },
@@ -623,24 +872,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://isc.sans.edu/diary/rss/33436",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33436",
-    "title": "ISC Stormcast Podcast Released for October 20, 2026",
-    "headline": "ISC Stormcast Podcast Released for October 20, 2026",
-    "summary": "The SANS Internet Storm Center released its weekly ISC Stormcast podcast for October 20, 2026. The episode is available at https://isc.sans.edu/podcastdetail/10142 and is licensed under Creative Commons Attribution-Noncommercial 3.0 United States. No security incident is reported in this release.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "publishedAt": "2026-10-20T02:00:03.000Z",
-    "url": "https://isc.sans.edu/diary/rss/33436",
-    "additionalSources": [
-      {
-        "source": "Malwarebytes Labs",
-        "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/a-week-in-security-october-12-october-18"
-      }
-    ]
-  },
-  {
     "id": "https://cybernewsai.com/blog/plex2shell-how-to-detect-patch-plex-media-server-rce",
     "sourceUrl": "https://cybernewsai.com/blog/plex2shell-how-to-detect-patch-plex-media-server-rce",
     "title": "Plex2Shell 4‑Flaw RCE Exploitation on Plex Media Server",
@@ -703,24 +934,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.darkreading.com/identity-access-management-security/connectwise-disables-cloud-backups-downstream-msps",
-    "sourceUrl": "https://www.darkreading.com/identity-access-management-security/connectwise-disables-cloud-backups-downstream-msps",
-    "title": "ConnectWise Disables Cloud Backups After Microsoft 365 Tenant Breach via ConnectWise Credentials",
-    "headline": "ConnectWise Disables Cloud Backups After Microsoft 365 Tenant Breach via ConnectWise Credentials",
-    "summary": "Attackers authenticated into Microsoft 365 tenants using compromised ConnectWise credentials, prompting ConnectWise to disable cloud backups for downstream MSPs. The incident highlights credential reuse risks and the potential for widespread tenant compromise. No confirmed customer impact yet.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-19T19:19:33.000Z",
-    "url": "https://www.darkreading.com/identity-access-management-security/connectwise-disables-cloud-backups-downstream-msps",
-    "additionalSources": [
-      {
-        "source": "Sophos Threat Research",
-        "sourceUrl": "https://www.sophos.com/en-us/blog/connectwise-cloud-backup-application-abused-in-token-sweep"
-      }
-    ]
-  },
-  {
     "id": "https://www.bleepingcomputer.com/news/security/bullhorn-takes-staffing-platform-offline-to-contain-cyberattack/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/bullhorn-takes-staffing-platform-offline-to-contain-cyberattack/",
     "title": "Bullhorn disables platform amid cyberattack",
@@ -732,24 +945,6 @@
     "publishedAt": "2026-10-19T18:51:13.000Z",
     "url": "https://www.bleepingcomputer.com/news/security/bullhorn-takes-staffing-platform-offline-to-contain-cyberattack/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/opencode-hack-exposes-api-keys-amid-ai-distillation-attacks/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/opencode-hack-exposes-api-keys-amid-ai-distillation-attacks/",
-    "title": "OpenCode API Keys Exposed in Security Breach",
-    "headline": "OpenCode API Keys Exposed in Security Breach",
-    "summary": "OpenCode notified a limited user base that API keys used with external providers were exposed following a breach. The leak compromises authentication credentials, potentially allowing unauthorized access to third‑party services. Users should rotate keys immediately and enable multi‑factor authentication where possible.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-19T17:27:15.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/opencode-hack-exposes-api-keys-amid-ai-distillation-attacks/",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/opencode-console-breach-may-have.html"
-      }
-    ]
   },
   {
     "id": "https://cybersecuritynews.com/bright-security-introduces-star-fuzzer-agentic-fuzzing-that-writes-its-own-harnesses-and-proves-every-finding/",
@@ -775,19 +970,6 @@
     "source": "The Record",
     "publishedAt": "2026-10-19T15:55:00.000Z",
     "url": "https://therecord.media/russian-social-media-giant-vk-faces-disruptions-drone-strike-data-center",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-game-app-crashes-caused-by-windows-kb5124010-preview-update/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-game-app-crashes-caused-by-windows-kb5124010-preview-update/",
-    "title": "Microsoft Fixes Game and App Crashes Caused by Windows 11 Preview Update",
-    "headline": "Microsoft Fixes Game and App Crashes Caused by Windows 11 Preview Update",
-    "summary": "Microsoft resolved a bug that caused games and apps using AC-3 (Dolby Digital) audio decoding to crash after installing the September 2026 Windows 11 preview update (KB5124010). The issue stemmed from incorrect handling of Dolby audio streams. Users should install the update to prevent crashes.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-19T14:55:23.000Z",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-game-app-crashes-caused-by-windows-kb5124010-preview-update/",
     "additionalSources": []
   },
   {
@@ -903,19 +1085,6 @@
         "sourceUrl": "https://www.wiz.io/blog/anatomy-of-ai-driven-cloud-attacks"
       }
     ]
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/ghostaction-attackers-plant-credential.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/ghostaction-attackers-plant-credential.html",
-    "title": "GhostAction Disguises Credential Stealer as Font in 94 GitHub Repositories",
-    "headline": "GhostAction Disguises Credential Stealer as Font in 94 GitHub Repositories",
-    "summary": "GhostAction attackers embedded a credential‑stealing malware disguised as a fake font file within 94 GitHub repositories. The supply‑chain attack targets open‑source developers, delivering the stealer via malicious GitHub Actions workflows. The tactic expands phishing and credential theft capabilities.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-19T13:05:45.000Z",
-    "url": "https://thehackernews.com/2026/10/ghostaction-attackers-plant-credential.html",
-    "additionalSources": []
   },
   {
     "id": "https://www.sentinelone.com/blog/bring-your-own-vulnerable-driver-what-detection-teams-should-actually-hunt/",
@@ -1040,24 +1209,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.helpnetsecurity.com/2026/10/19/check-point-brand-impersonation-scams-q3-2026-report/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/19/check-point-brand-impersonation-scams-q3-2026-report/",
-    "title": "Microsoft Brand Phishing Attacks Surge to 33% of All Impersonation Attempts in Q3 2026",
-    "headline": "Microsoft Brand Phishing Attacks Surge to 33% of All Impersonation Attempts in Q3 2026",
-    "summary": "Check Point Research reports Microsoft brand phishing attacks rose to 33% of all impersonation attempts in Q3 2026, up from 23% in Q2, surpassing Apple and Google. Attackers target Microsoft because stolen credentials can unlock multiple services. The trend highlights the need for stricter credential protection.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-19T09:38:17.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/19/check-point-brand-impersonation-scams-q3-2026-report/",
-    "additionalSources": [
-      {
-        "source": "Dark Reading",
-        "sourceUrl": "https://www.darkreading.com/application-security/fake-claude-chatgpt-attacks-developers-risk"
-      }
-    ]
-  },
-  {
     "id": "https://www.securityweek.com/anthropic-acquires-confidential-ai-startup-opaque-systems/",
     "sourceUrl": "https://www.securityweek.com/anthropic-acquires-confidential-ai-startup-opaque-systems/",
     "title": "Anthropic Acquires Confidential AI Startup Opaque Systems",
@@ -1082,28 +1233,6 @@
     "publishedAt": "2026-10-19T06:29:44.000Z",
     "url": "https://thehackernews.com/2026/10/unpatched-broadcom-wi-fi-flaw-lets.html",
     "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/google-unveils-new-android-ai-protections/",
-    "sourceUrl": "https://cybersecuritynews.com/google-unveils-new-android-ai-protections/",
-    "title": "Google Releases Android AI Protections Against Scam Calls, Phishing, and OTP Theft",
-    "headline": "Google Releases Android AI Protections Against Scam Calls, Phishing, and OTP Theft",
-    "summary": "Google announced new Android security features that use AI to detect and block scam calls, spoofed text messages, phishing links, and OTP theft. The update targets spoofed phone numbers, fake bank alerts, phishing pages, remote screen sharing, and AI‑generated voices to prevent users from divulging money or credentials.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-19T06:04:18.000Z",
-    "url": "https://cybersecuritynews.com/google-unveils-new-android-ai-protections/",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/google-fixes-10-chrome-vulnerabilities/"
-      },
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/16/android-enhanced-built-in-scam-protection/"
-      }
-    ]
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/10/19/rpo-rto-video/",
@@ -5100,133 +5229,6 @@
     "source": "Dark Reading",
     "publishedAt": "2026-10-06T20:32:58.000Z",
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/clickfix-attacks-evolve-better-hide-malicious-payloads",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/iot/exposed-healthcare-systems-quantum-ready",
-    "sourceUrl": "https://www.darkreading.com/iot/exposed-healthcare-systems-quantum-ready",
-    "title": "Healthcare Systems Lag Behind Post-Quantum Cryptography Readiness",
-    "headline": "Healthcare Systems Lag Behind Post-Quantum Cryptography Readiness",
-    "summary": "A study of 2.5 million devices in 50 healthcare organizations shows the sector is far from ready for post‑quantum cryptography, highlighting a significant gap in security preparedness for future quantum threats.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-06T20:30:27.000Z",
-    "url": "https://www.darkreading.com/iot/exposed-healthcare-systems-quantum-ready",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/linux-backdoors-impersonate-email.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/linux-backdoors-impersonate-email.html",
-    "title": "Linux Backdoors Disguise Traffic as Email Services to Evade Detection in Korea and Taiwan",
-    "headline": "Linux Backdoors Disguise Traffic as Email Services to Evade Detection in Korea and Taiwan",
-    "summary": "Linux backdoors targeting telecom and network appliances in South Korea and Taiwan disguise their traffic as email services and legitimate processes, using names of real binaries to blend in and avoid detection. The threat actors employ this defense‑evasion technique to maintain persistence on affected systems.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-06T18:24:25.000Z",
-    "url": "https://thehackernews.com/2026/10/linux-backdoors-impersonate-email.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/cybersecurity-operations/ai-reshaping-ciso-budgets-security-teams",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/ai-reshaping-ciso-budgets-security-teams",
-    "title": "AI Reshaping CISO Budgets and Security Teams",
-    "headline": "AI Reshaping CISO Budgets and Security Teams",
-    "summary": "Nick Kakolowski discusses how artificial intelligence is influencing CISO budgets, return on investment, and internal security team structures, highlighting shifts in resource allocation and operational focus within cybersecurity leadership.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-06T17:15:24.000Z",
-    "url": "https://www.darkreading.com/cybersecurity-operations/ai-reshaping-ciso-budgets-security-teams",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/application-security/bigdiskbuster-microsoft-defender-running-blocking-updates",
-    "sourceUrl": "https://www.darkreading.com/application-security/bigdiskbuster-microsoft-defender-running-blocking-updates",
-    "title": "‘BigDiskBuster’ Creates Silent Gap in Microsoft Defender Updates",
-    "headline": "‘BigDiskBuster’ Creates Silent Gap in Microsoft Defender Updates",
-    "summary": "A proof‑of‑concept technique named BigDiskBuster keeps Microsoft Defender running while blocking its update process, creating a silent detection gap. The method requires no exploit and does not compromise the service itself.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-06T16:59:24.000Z",
-    "url": "https://www.darkreading.com/application-security/bigdiskbuster-microsoft-defender-running-blocking-updates",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.microsoft.com/en-us/security/blog/2026/10/06/ciso-perspectives-on-managing-vulnerability-risks-in-the-age-of-ai/",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/06/ciso-perspectives-on-managing-vulnerability-risks-in-the-age-of-ai/",
-    "title": "CISO Perspectives on Managing Vulnerability Risks in the Age of AI",
-    "headline": "CISO Perspectives on Managing Vulnerability Risks in the Age of AI",
-    "summary": "Microsoft Security Blog discusses how CISOs can mitigate cybersecurity risks and increase resilience using AI-powered vulnerability management. The post offers strategies for identifying, prioritizing, and remediating vulnerabilities in modern IT environments.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Microsoft Security",
-    "publishedAt": "2026-10-06T16:00:00.000Z",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/10/06/ciso-perspectives-on-managing-vulnerability-risks-in-the-age-of-ai/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/osaka-university-cancels-classes-ransomware",
-    "sourceUrl": "https://therecord.media/osaka-university-cancels-classes-ransomware",
-    "title": "Osaka Metropolitan University Outage After Suspected Ransomware Attack",
-    "headline": "Osaka Metropolitan University Outage After Suspected Ransomware Attack",
-    "summary": "Osaka Metropolitan University reported an outage that disabled its internal network, email, and various administrative and academic systems after a suspected ransomware attack. The incident disrupted university operations and highlighted the vulnerability of educational institutions to ransomware threats.",
-    "category": "RANSOMWARE",
-    "severity": "HIGH",
-    "source": "The Record",
-    "publishedAt": "2026-10-06T14:52:00.000Z",
-    "url": "https://therecord.media/osaka-university-cancels-classes-ransomware",
-    "additionalSources": [
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/ransomware-university-illinois-chicago"
-      }
-    ]
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/how-to-secure-rmm-software-8-controls-msps-should-test/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/how-to-secure-rmm-software-8-controls-msps-should-test/",
-    "title": "MSPs Should Test Eight Key Controls to Secure RMM Software",
-    "headline": "MSPs Should Test Eight Key Controls to Secure RMM Software",
-    "summary": "Remote Monitoring and Management (RMM) platforms grant MSPs privileged access across client environments, increasing risk. Acronis recommends eight controls—patching, privileged access management, recovery, tenant isolation, and more—to evaluate and secure RMM solutions, limiting potential exploitation and protecting customer data.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-06T14:00:10.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/how-to-secure-rmm-software-8-controls-msps-should-test/",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/drew-mccombs-cylerity-healthcare-fintech-security/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.wiz.io/blog/introducing-wiz-ai-sast",
-    "sourceUrl": "https://www.wiz.io/blog/introducing-wiz-ai-sast",
-    "title": "Introducing Wiz AI SAST: Application Security that Understands Your Code and Your Infrastructure",
-    "headline": "Introducing Wiz AI SAST: Application Security that Understands Your Code and Your Infrastructure",
-    "summary": "Wiz Research unveiled Wiz AI SAST, an AI‑powered static application security testing tool that scans code and infrastructure to detect and remediate complex business logic flaws. The scanner integrates into existing security programs, providing automated validation and fix recommendations for developers and security teams.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Wiz Research",
-    "publishedAt": "2026-10-06T13:47:28.000Z",
-    "url": "https://www.wiz.io/blog/introducing-wiz-ai-sast",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/06/appviewx-shadow-ai-visibility/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/appviewx-shadow-ai-visibility/",
-    "title": "AppViewX Expands Agent Identity Security to Mitigate Shadow AI Risks",
-    "headline": "AppViewX Expands Agent Identity Security to Mitigate Shadow AI Risks",
-    "summary": "AppViewX has enhanced its Agent Identity Security platform to discover and govern all agents, including unauthorized ones, and enforce real‑time control. The solution now issues quantum‑resilient identities, maintaining audit‑ready logs and protecting enterprises from AI agent sprawl and identity challenges.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-06T13:37:15.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/06/appviewx-shadow-ai-visibility/",
     "additionalSources": []
   }
 ]
