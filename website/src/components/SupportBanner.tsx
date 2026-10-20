@@ -17,11 +17,6 @@ export function SupportBanner({ className = '', compact = false }: SupportBanner
             <Heart className="h-6 w-6 sm:h-7 sm:w-7 fill-accent/20 text-accent" />
           </div>
           <div className="space-y-1">
-            <div className="flex items-center gap-2">
-              <span className="text-[11px] font-mono font-medium uppercase tracking-wider text-accent">
-                Independent · Community Supported
-              </span>
-            </div>
             <h3 className="text-base sm:text-lg font-semibold tracking-tight text-ink">
               Support SecuBuzz.
             </h3>
