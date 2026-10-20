@@ -1,5 +1,23 @@
 [
   {
+    "id": "https://therecord.media/nigerian-given-8-year-sentenc-tax-hacks",
+    "sourceUrl": "https://therecord.media/nigerian-given-8-year-sentenc-tax-hacks",
+    "title": "Nigerian National Sentenced for Tax Business Hacks",
+    "headline": "Nigerian National Sentenced for Tax Business Hacks",
+    "summary": "A Nigerian national was sentenced to eight years for collaborating with a group that hacked tax preparation businesses, extracting customer data and executing multi‑million dollar fraud schemes. The case highlights the ongoing threat of credential theft and data exfiltration in the tax industry.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Record",
+    "publishedAt": "2026-10-20T17:14:00.000Z",
+    "url": "https://therecord.media/nigerian-given-8-year-sentenc-tax-hacks",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/hacker-gets-8-years-for-stealing-33-million-from-taxpayers/"
+      }
+    ]
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/10/20/google-chrome-enhanced-protection-updates/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/google-chrome-enhanced-protection-updates/",
     "title": "Google Enhances Chrome Protection Against Scam Commands",
@@ -16,6 +34,19 @@
         "sourceUrl": "https://cybersecuritynews.com/google-unveils-new-android-ai-protections/"
       }
     ]
+  },
+  {
+    "id": "https://cybersecuritynews.com/3-ways-threat-intelligence-makes-life-easier-for-american-soc-analysts/",
+    "sourceUrl": "https://cybersecuritynews.com/3-ways-threat-intelligence-makes-life-easier-for-american-soc-analysts/",
+    "title": "Threat Intelligence Enhances SOC Analyst Efficiency",
+    "headline": "Threat Intelligence Enhances SOC Analyst Efficiency",
+    "summary": "The article outlines three methods by which threat intelligence streamlines SOC analyst workflows, emphasizing the need for visibility beyond internal environments. It discusses leveraging historical data, automated correlation, and contextual alerts to improve detection and investigation processes for American SOC teams.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-20T16:26:48.000Z",
+    "url": "https://cybersecuritynews.com/3-ways-threat-intelligence-makes-life-easier-for-american-soc-analysts/",
+    "additionalSources": []
   },
   {
     "id": "https://www.securityweek.com/us-agencies-detail-incident-response-practices-for-rogue-ai-agents/",
@@ -119,6 +150,24 @@
     ]
   },
   {
+    "id": "https://cybersecuritynews.com/fbi-suspects-cybersecurity-executive-shinyhunters/",
+    "sourceUrl": "https://cybersecuritynews.com/fbi-suspects-cybersecurity-executive-shinyhunters/",
+    "title": "FBI Investigates Cybersecurity Executive’s Role in ShinyHunters Extortion Website",
+    "headline": "FBI Investigates Cybersecurity Executive’s Role in ShinyHunters Extortion Website",
+    "summary": "Federal investigators allege a cybersecurity executive at a U.S. consulting firm aided ShinyHunters in operating an extortion website that pressured hacked companies into paying ransom demands. The site allegedly facilitated ransomware demands for stolen data, raising concerns about trusted advisors turning to criminal support.",
+    "category": "RANSOMWARE",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-20T15:09:27.000Z",
+    "url": "https://cybersecuritynews.com/fbi-suspects-cybersecurity-executive-shinyhunters/",
+    "additionalSources": [
+      {
+        "source": "Krebs on Security",
+        "sourceUrl": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/"
+      }
+    ]
+  },
+  {
     "id": "https://therecord.media/eu-cyber-law-wont-force-fixes-for-fridges-in-french-attack",
     "sourceUrl": "https://therecord.media/eu-cyber-law-wont-force-fixes-for-fridges-in-french-attack",
     "title": "EU Cyber Resilience Act Does Not Mandate Fixes for Fridge Controller Vulnerabilities",
@@ -142,6 +191,19 @@
     "source": "Dark Reading",
     "publishedAt": "2026-10-20T14:36:05.000Z",
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/hackers-abuse-ai-pen-test-tool-cairn",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/hackers-exploit-open-banking-services/",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-exploit-open-banking-services/",
+    "title": "Hackers Exploit Open Banking Services to Test Stolen Credentials",
+    "headline": "Hackers Exploit Open Banking Services to Test Stolen Credentials",
+    "summary": "Criminals abused a spend‑management platform’s account‑linking process to verify stolen bank and card credentials, using open banking as a low‑cost checking service. The platform did not lose money, but the attack demonstrates a vulnerability in the account‑linking flow that allows credential validation without financial loss.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-20T14:22:04.000Z",
+    "url": "https://cybersecuritynews.com/hackers-exploit-open-banking-services/",
     "additionalSources": []
   },
   {
@@ -299,19 +361,6 @@
     "source": "Help Net Security",
     "publishedAt": "2026-10-20T13:26:09.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/20/abstract-links-automated-response-actions-directly-to-siem-detection-rules/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/hacker-gets-8-years-for-stealing-33-million-from-taxpayers/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hacker-gets-8-years-for-stealing-33-million-from-taxpayers/",
-    "title": "Nigerian Hacker Sentenced for $3.3 Million Taxpayer Theft",
-    "headline": "Nigerian Hacker Sentenced for $3.3 Million Taxpayer Theft",
-    "summary": "A Nigerian national was sentenced to eight years in prison for spearphishing attacks that stole $3.3 million from U.S. tax‑preparation firms. The attacks began in 2019 and targeted employees with tailored emails, leading to credential theft and financial loss for the businesses.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-20T13:18:36.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/hacker-gets-8-years-for-stealing-33-million-from-taxpayers/",
     "additionalSources": []
   },
   {
@@ -652,6 +701,37 @@
     ]
   },
   {
+    "id": "https://cybersecuritynews.com/hackers-target-south-korean-banks/",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-target-south-korean-banks/",
+    "title": "Hackers Target South Korean Banks With AI, Then Accidentally Expose Their Own Attack Tools",
+    "headline": "Hackers Target South Korean Banks With AI, Then Accidentally Expose Their Own Attack Tools",
+    "summary": "Hackers linked to AI‑assisted attacks on South Korean banks inadvertently exposed parts of their own infrastructure, revealing cryptocurrency theft tools, Linux exploits, and mobile security testing assets. The accidental disclosure provides researchers insight into the attackers’ tools and operational scope.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-20T11:09:55.000Z",
+    "url": "https://cybersecuritynews.com/hackers-target-south-korean-banks/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/russian-apt28-breaches-nato-naval.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/russian-apt28-breaches-nato-naval.html",
+    "title": "Russian APT28 Breaches NATO Naval Shipbuilder, Deploys HOOKEDGE Loader",
+    "headline": "Russian APT28 Breaches NATO Naval Shipbuilder, Deploys HOOKEDGE Loader",
+    "summary": "Russian state-sponsored group APT28, also known as BlueDelta, targeted a NATO naval shipbuilder in a NATO member country, deploying a new reflective loader named HOOKEDGE. The operation, tracked by Symantec Threat Hunter Team under Swallowtail, demonstrates APT28’s continued use of backdoors to compromise critical defense infrastructure.",
+    "category": "NATION_STATE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-20T11:06:25.000Z",
+    "url": "https://thehackernews.com/2026/10/russian-apt28-breaches-nato-naval.html",
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/european-defense-contractors-fancy-bear-espionage"
+      }
+    ]
+  },
+  {
     "id": "https://www.schneier.com/blog/archives/2026/10/possible-new-cellebrite-iphone-radio-zero-day.html",
     "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/possible-new-cellebrite-iphone-radio-zero-day.html",
     "title": "Possible New Cellebrite iPhone Radio Zero‑Day Exploit",
@@ -662,6 +742,19 @@
     "source": "Schneier on Security",
     "publishedAt": "2026-10-20T11:03:13.000Z",
     "url": "https://www.schneier.com/blog/archives/2026/10/possible-new-cellebrite-iphone-radio-zero-day.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/redagents-ai-platform/",
+    "sourceUrl": "https://cybersecuritynews.com/redagents-ai-platform/",
+    "title": "ThreatBook Unveils RedAgents AI Platform for Automated Penetration Testing",
+    "headline": "ThreatBook Unveils RedAgents AI Platform for Automated Penetration Testing",
+    "summary": "ThreatBook introduced RedAgents, a cloud-based platform that aggregates multiple AI-driven penetration-testing agents to identify security weaknesses within authorized scopes. The service automates diverse tests, enabling security teams to assess network vulnerabilities efficiently. No public exploits or vulnerabilities are disclosed.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-20T10:41:54.000Z",
+    "url": "https://cybersecuritynews.com/redagents-ai-platform/",
     "additionalSources": []
   },
   {
@@ -724,19 +817,6 @@
     "source": "Malwarebytes Labs",
     "publishedAt": "2026-10-20T10:06:58.000Z",
     "url": "https://www.malwarebytes.com/blog/news/2026/10/meta-says-it-fixed-smart-glasses-unprompted-eavesdropping",
-    "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/european-defense-contractors-fancy-bear-espionage",
-    "sourceUrl": "https://therecord.media/european-defense-contractors-fancy-bear-espionage",
-    "title": "APT28 and Fancy Bear Target NATO Defense Contractors via Backdoor",
-    "headline": "APT28 and Fancy Bear Target NATO Defense Contractors via Backdoor",
-    "summary": "Russian APT28, also known as Fancy Bear, deployed a documented backdoor to infiltrate networks of two defense contractors and a law enforcement agency in NATO allies. The intrusion demonstrates ongoing nation‑state espionage targeting critical defense infrastructure.",
-    "category": "NATION_STATE",
-    "severity": "HIGH",
-    "source": "The Record",
-    "publishedAt": "2026-10-20T10:00:00.000Z",
-    "url": "https://therecord.media/european-defense-contractors-fancy-bear-espionage",
     "additionalSources": []
   },
   {
@@ -1040,19 +1120,6 @@
     "source": "BleepingComputer",
     "publishedAt": "2026-10-19T13:49:24.000Z",
     "url": "https://www.bleepingcomputer.com/news/security/f5-releases-out-of-band-patches-for-critical-nginx-vulnerabilities/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/",
-    "sourceUrl": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/",
-    "title": "Federal Investigation Links Ransom Negotiator to ShinyHunters Extortion Operations",
-    "headline": "Federal Investigation Links Ransom Negotiator to ShinyHunters Extortion Operations",
-    "summary": "U.S. federal investigators have identified executives from two ransomware negotiation firms who maintained close ties with the ShinyHunters hacking group. One executive reportedly aided the group in operating a website that coerced victims into paying ransom, following the group's recent theft of highly sensitive FBI data.",
-    "category": "RANSOMWARE",
-    "severity": "HIGH",
-    "source": "Krebs on Security",
-    "publishedAt": "2026-10-19T13:48:56.000Z",
-    "url": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/",
     "additionalSources": []
   },
   {
@@ -5177,58 +5244,6 @@
     "source": "Malwarebytes Labs",
     "publishedAt": "2026-10-07T10:25:26.000Z",
     "url": "https://www.malwarebytes.com/blog/bugs/2026/10/update-chrome-and-chromeos-to-fix-critical-security-issues",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/anthropic-introduces-3-tier-cyber-verification-program-for-ai-access/",
-    "sourceUrl": "https://www.securityweek.com/anthropic-introduces-3-tier-cyber-verification-program-for-ai-access/",
-    "title": "Anthropic Unveils 3‑Tier Cyber Verification for AI Models",
-    "headline": "Anthropic Unveils 3‑Tier Cyber Verification for AI Models",
-    "summary": "Anthropic consolidates its Cyber Verification Program and Project Glasswing into a single offering, providing three access levels to its most advanced AI models. The initiative aims to enhance security oversight and compliance for users accessing powerful AI capabilities.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-07T10:07:09.000Z",
-    "url": "https://www.securityweek.com/anthropic-introduces-3-tier-cyber-verification-program-for-ai-access/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.malwarebytes.com/blog/news/2026/10/another-shinyhunters-suspect-arrested",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/another-shinyhunters-suspect-arrested",
-    "title": "Second Shiny Hunters Member Arrested",
-    "headline": "Second Shiny Hunters Member Arrested",
-    "summary": "A second member of the Shiny Hunters cybercrime group has been arrested, tightening law enforcement pressure on the organization. The arrest follows earlier investigations and signals increased scrutiny of the group’s operations. Authorities continue to pursue additional suspects while monitoring potential impacts on ongoing cybercrime activities.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "publishedAt": "2026-10-07T10:03:06.000Z",
-    "url": "https://www.malwarebytes.com/blog/news/2026/10/another-shinyhunters-suspect-arrested",
-    "additionalSources": []
-  },
-  {
-    "id": "https://blog.talosintelligence.com/one-breach-please-and-make-no-mistakes/",
-    "sourceUrl": "https://blog.talosintelligence.com/one-breach-please-and-make-no-mistakes/",
-    "title": "Autonomous AI Agents Pose New Threat to Public Infrastructure",
-    "headline": "Autonomous AI Agents Pose New Threat to Public Infrastructure",
-    "summary": "Recent reports highlight autonomous agents developed in AI labs that can target and attack public infrastructure. These agentic threats can adapt and launch coordinated attacks without human intervention, raising concerns for critical systems. Security teams are urged to strengthen monitoring, implement AI‑aware defenses, and develop response playbooks to mitigate potential incidents.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "Cisco Talos",
-    "publishedAt": "2026-10-07T10:00:25.000Z",
-    "url": "https://blog.talosintelligence.com/one-breach-please-and-make-no-mistakes/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/cyberattacks-data-breaches/clickfix-attacks-evolve-better-hide-malicious-payloads",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/clickfix-attacks-evolve-better-hide-malicious-payloads",
-    "title": "ClickFix Evolves to Conceal Payloads Using DNS TXT and Browser Cache",
-    "headline": "ClickFix Evolves to Conceal Payloads Using DNS TXT and Browser Cache",
-    "summary": "Threat actors behind ClickFix are now embedding malicious payloads within DNS TXT records and leveraging browser cache pre‑fetching to obscure delivery. This technique complicates early detection, as payloads bypass traditional signature‑based defenses and remain dormant until the victim’s browser retrieves cached content.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-06T20:32:58.000Z",
-    "url": "https://www.darkreading.com/cyberattacks-data-breaches/clickfix-attacks-evolve-better-hide-malicious-payloads",
     "additionalSources": []
   }
 ]
