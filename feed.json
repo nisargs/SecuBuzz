@@ -1,5 +1,18 @@
 [
   {
+    "id": "https://cybersecuritynews.com/claude-ai-detects-hidden-crypto-miner/",
+    "sourceUrl": "https://cybersecuritynews.com/claude-ai-detects-hidden-crypto-miner/",
+    "title": "Claude AI Detects Hidden XMRig Crypto Miner on Developer’s Mac",
+    "headline": "Claude AI Detects Hidden XMRig Crypto Miner on Developer’s Mac",
+    "summary": "During a temperature monitoring app build, Claude Code flagged unusually high CPU usage. Investigation revealed XMRig mining software consuming ~1,175% CPU across 12 cores. The miner was running covertly on the developer’s Mac, diverting processing power for cryptocurrency mining.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-20T02:49:37.000Z",
+    "url": "https://cybersecuritynews.com/claude-ai-detects-hidden-crypto-miner/",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybernewsai.com/blog/plex2shell-how-to-detect-patch-plex-media-server-rce",
     "sourceUrl": "https://cybernewsai.com/blog/plex2shell-how-to-detect-patch-plex-media-server-rce",
     "title": "Plex2Shell 4‑Flaw RCE Exploitation on Plex Media Server",
@@ -5190,19 +5203,6 @@
     "source": "Help Net Security",
     "publishedAt": "2026-10-05T13:30:28.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/05/malwarebytes-scam-link-check/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://blog.cloudflare.com/birthday-week-2026-wrap-up/",
-    "sourceUrl": "https://blog.cloudflare.com/birthday-week-2026-wrap-up/",
-    "title": "Cloudflare Celebrates 16th Birthday with 46 New Releases",
-    "headline": "Cloudflare Celebrates 16th Birthday with 46 New Releases",
-    "summary": "During its 16th birthday, Cloudflare announced 46 new features across open source projects, post‑quantum security, AI agents, and developer platform upgrades. The company provided a day‑by‑day roundup of all the new releases shipped during the Birthday Week 2026 event.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "publishedAt": "2026-10-05T13:00:00.000Z",
-    "url": "https://blog.cloudflare.com/birthday-week-2026-wrap-up/",
     "additionalSources": []
   }
 ]

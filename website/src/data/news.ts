@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "claude-ai-detects-hidden-xmrig-crypto-miner-on-dev-67928d",
+    "title": "Claude AI Detects Hidden XMRig Crypto Miner on Developer’s Mac",
+    "summary": "During a temperature monitoring app build, Claude Code flagged unusually high CPU usage. Investigation revealed XMRig mining software consuming ~1,175% CPU across 12 cores. The miner was running covertly on the developer’s Mac, diverting processing power for cryptocurrency mining.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/claude-ai-detects-hidden-crypto-miner/",
+    "publishedAt": "2026-10-20T02:49:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "claude-ai-detects-hidden-xmrig-crypto-miner-on-dev",
+      "article-67928d",
+      "67928d",
+      "claude-ai-detects-hidden-xmrig-crypto-miner-on-developer-s-m"
+    ]
+  },
+  {
     "slug": "plex2shell-4-flaw-rce-exploitation-on-plex-media-s-6cc35e",
     "title": "Plex2Shell 4‑Flaw RCE Exploitation on Plex Media Server",
     "summary": "Hackers exploit the Plex2Shell 4‑flaw vulnerability chain to deploy Linux proxy backdoors and Monero miners on Plex Media Server installations. The flaw allows remote code execution; administrators should apply the latest patch immediately to prevent unauthorized access and cryptocurrency mining.",
@@ -6255,24 +6273,6 @@ export const news: NewsBrief[] = [
       "malwarebytes-launches-free-scam-link-check-tool",
       "article-5937e5",
       "5937e5"
-    ]
-  },
-  {
-    "slug": "cloudflare-celebrates-16th-birthday-with-46-new-re-1a28cb",
-    "title": "Cloudflare Celebrates 16th Birthday with 46 New Releases",
-    "summary": "During its 16th birthday, Cloudflare announced 46 new features across open source projects, post‑quantum security, AI agents, and developer platform upgrades. The company provided a day‑by‑day roundup of all the new releases shipped during the Birthday Week 2026 event.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/birthday-week-2026-wrap-up/",
-    "publishedAt": "2026-10-05T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-celebrates-16th-birthday-with-46-new-re",
-      "article-1a28cb",
-      "1a28cb",
-      "cloudflare-celebrates-16th-birthday-with-46-new-releases"
     ]
   }
 ];

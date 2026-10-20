@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Oct 2026 00:22:20 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 04:18:12 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Claude AI Detects Hidden XMRig Crypto Miner on Developer’s Mac</title>
+      <link>https://secubuzz.com/news/claude-ai-detects-hidden-xmrig-crypto-miner-on-dev-67928d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/claude-ai-detects-hidden-xmrig-crypto-miner-on-dev-67928d</guid>
+      <description><![CDATA[During a temperature monitoring app build, Claude Code flagged unusually high CPU usage. Investigation revealed XMRig mining software consuming ~1,175% CPU across 12 cores. The miner was running covertly on the developer’s Mac, diverting processing power for cryptocurrency mining.]]></description>
+      <pubDate>Tue, 20 Oct 2026 02:49:37 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/claude-ai-detects-hidden-crypto-miner/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Plex2Shell 4‑Flaw RCE Exploitation on Plex Media Server</title>
       <link>https://secubuzz.com/news/plex2shell-4-flaw-rce-exploitation-on-plex-media-s-6cc35e</link>
@@ -447,15 +456,6 @@
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <source url="https://www.sophos.com/en-us/blog/graph-reconnaissance-and-servicenow-user-enumeration-in-a-modern-identity-intrusion">Sophos Threat Research</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>YARA Rule Detects Orphaned VBA Projects in DWG Files</title>
-      <link>https://secubuzz.com/news/yara-rule-detects-orphaned-vba-projects-in-dwg-fil-57dd7d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/yara-rule-detects-orphaned-vba-projects-in-dwg-fil-57dd7d</guid>
-      <description><![CDATA[A YARA rule has been released to identify orphaned VBA projects embedded within DWG files. The rule scans for macro code that lacks a proper project container, enabling security teams to flag potentially malicious CAD files that may carry hidden scripts or payloads.]]></description>
-      <pubDate>Sun, 18 Oct 2026 12:59:30 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33434">SANS Internet Storm Center</source>
-      <category>Cloud</category>
     </item>
   </channel>
 </rss>
