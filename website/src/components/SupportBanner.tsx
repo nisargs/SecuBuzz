@@ -23,7 +23,7 @@ export function SupportBanner({ className = '', compact = false }: SupportBanner
               </span>
             </div>
             <h3 className="text-base sm:text-lg font-semibold tracking-tight text-ink">
-              Support independent security research.
+              Support SecuBuzz.
             </h3>
             <p className="text-sm text-muted max-w-xl leading-relaxed">
               If SecuBuzz saved you time this week, you can support the project here.
