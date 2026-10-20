@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Oct 2026 06:03:28 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 08:18:37 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Hackers Use Fake Google Meet Pages to Steal Credentials</title>
+      <link>https://secubuzz.com/news/hackers-use-fake-google-meet-pages-to-steal-creden-56342e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-fake-google-meet-pages-to-steal-creden-56342e</guid>
+      <description><![CDATA[Attackers host counterfeit Google Meet sites that prompt users for Google account credentials, including two‑factor authentication codes. The phishing pages mimic the legitimate service to increase credibility, enabling credential theft and potential account takeover.]]></description>
+      <pubDate>Tue, 20 Oct 2026 07:18:07 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/fake-google-meet-pages/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>ClickFix Exploits Siemens Software Center DLL Sideloading Vulnerability</title>
+      <link>https://secubuzz.com/news/clickfix-exploits-siemens-software-center-dll-side-1a75cc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/clickfix-exploits-siemens-software-center-dll-side-1a75cc</guid>
+      <description><![CDATA[Siemens Software Center suffers a DLL sideloading flaw (CVE-2026-110936, CVSS 8.4) that attackers exploit via ClickFix to drop malicious DLLs into the application’s search path. The vulnerability allows execution of code with the same privileges as the software, enabling remote access trojan deployment.]]></description>
+      <pubDate>Tue, 20 Oct 2026 07:11:45 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Mastercard Launches Stablecoin Security Solution</title>
+      <link>https://secubuzz.com/news/mastercard-launches-stablecoin-security-solution-68f72c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/mastercard-launches-stablecoin-security-solution-68f72c</guid>
+      <description><![CDATA[Mastercard introduces Stablecoin Security, a risk intelligence platform partnering with Borderless.xyz and Keyrails. The solution maps fraud, scams, sanctions, and other financial‑crime indicators across stablecoin payment flows, enabling institutions to assess risk before on‑chain fund movement.]]></description>
+      <pubDate>Tue, 20 Oct 2026 06:25:12 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/20/mastercard-stablecoin-security/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>EasyDMARC partners with GMO GlobalSign to strengthen email authentication and branding</title>
       <link>https://secubuzz.com/news/easydmarc-partners-with-gmo-globalsign-to-strength-240e21</link>
@@ -15,6 +42,15 @@
       <pubDate>Tue, 20 Oct 2026 06:00:13 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/20/easydmarc-gmo-globalsign-partnership/">Help Net Security</source>
       <category>Policy</category>
+    </item>
+    <item>
+      <title>Former OpenAI Engineer Detained in Saudi Spy Device Case</title>
+      <link>https://secubuzz.com/news/former-openai-engineer-detained-in-saudi-spy-devic-5490ef</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/former-openai-engineer-detained-in-saudi-spy-devic-5490ef</guid>
+      <description><![CDATA[A former OpenAI engineer, Abdulrahman Alfozan, was detained after authorities alleged he planted a recording device in an executive conference room to steal company secrets. The case implicates Saudi contacts and suggests state‑sponsored espionage activity.]]></description>
+      <pubDate>Tue, 20 Oct 2026 05:53:16 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/ex-openai-engineer-detained-in-spy.html">The Hacker News</source>
+      <category>Malware</category>
     </item>
     <item>
       <title>SBI Data Breach Claim – Hackers Allegedly Claim Access to 3.75 Lakh Users’ Database</title>
@@ -420,42 +456,6 @@
       <pubDate>Mon, 19 Oct 2026 06:29:44 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/unpatched-broadcom-wi-fi-flaw-lets.html">The Hacker News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Google Releases Android AI Protections Against Scam Calls, Phishing, and OTP Theft</title>
-      <link>https://secubuzz.com/news/google-releases-android-ai-protections-against-sca-589dce</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-releases-android-ai-protections-against-sca-589dce</guid>
-      <description><![CDATA[Google announced new Android security features that use AI to detect and block scam calls, spoofed text messages, phishing links, and OTP theft. The update targets spoofed phone numbers, fake bank alerts, phishing pages, remote screen sharing, and AI‑generated voices to prevent users from divulging money or credentials.]]></description>
-      <pubDate>Mon, 19 Oct 2026 06:04:18 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/google-unveils-new-android-ai-protections/">Cyber Security News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>RPO and RTO Explained with a Real Disaster Recovery Example</title>
-      <link>https://secubuzz.com/news/rpo-and-rto-explained-with-a-real-disaster-recover-3b7498</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rpo-and-rto-explained-with-a-real-disaster-recover-3b7498</guid>
-      <description><![CDATA[Matthew Burden, CEO of BlackBox Hosting, explains the difference between recovery point objective (RPO) and recovery time objective (RTO). RPO defines the maximum data loss in time, while RTO defines the maximum downtime a business can tolerate. The video emphasizes that backups do not guarantee quick recovery and that quick recovery is ineffective if data is stale.]]></description>
-      <pubDate>Mon, 19 Oct 2026 05:00:21 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/19/rpo-rto-video/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Half of AI Bot Traffic Targeting Websites Originates from Meta</title>
-      <link>https://secubuzz.com/news/half-of-ai-bot-traffic-targeting-websites-originat-f45514</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/half-of-ai-bot-traffic-targeting-websites-originat-f45514</guid>
-      <description><![CDATA[DataDome’s AI Traffic Report Q3 2026 shows that 41.5% of AI agent traffic, nearly 25 billion requests, comes from Meta’s Muse. In the first 12 days of Muse’s full availability, 29.1 million requests were recorded, with 99.3% originating from cloud and CDN infrastructure. The report highlights Meta’s significant share of AI bot traffic.]]></description>
-      <pubDate>Mon, 19 Oct 2026 04:30:52 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/19/datadome-ai-agent-traffic-report/">Help Net Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>Ransomware Threats Extend to Employees’ Families</title>
-      <link>https://secubuzz.com/news/ransomware-threats-extend-to-employees-families-5e5507</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ransomware-threats-extend-to-employees-families-5e5507</guid>
-      <description><![CDATA[Ransomware actors now target employees’ family members or friends, according to a 2026 Semperis report. The survey of 1,200 IT and security professionals found that 37% of organizations experienced such threats, indicating a shift beyond the workplace into personal networks.]]></description>
-      <pubDate>Mon, 19 Oct 2026 04:00:22 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/19/semperis-ransomware-employee-safety-report/">Help Net Security</source>
-      <category>Ransomware</category>
     </item>
   </channel>
 </rss>

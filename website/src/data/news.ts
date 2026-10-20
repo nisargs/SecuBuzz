@@ -11,6 +11,61 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "hackers-use-fake-google-meet-pages-to-steal-creden-56342e",
+    "title": "Hackers Use Fake Google Meet Pages to Steal Credentials",
+    "summary": "Attackers host counterfeit Google Meet sites that prompt users for Google account credentials, including two‑factor authentication codes. The phishing pages mimic the legitimate service to increase credibility, enabling credential theft and potential account takeover.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/fake-google-meet-pages/",
+    "publishedAt": "2026-10-20T07:18:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-use-fake-google-meet-pages-to-steal-creden",
+      "article-56342e",
+      "56342e",
+      "hackers-use-fake-google-meet-pages-to-steal-credentials"
+    ]
+  },
+  {
+    "slug": "clickfix-exploits-siemens-software-center-dll-side-1a75cc",
+    "title": "ClickFix Exploits Siemens Software Center DLL Sideloading Vulnerability",
+    "summary": "Siemens Software Center suffers a DLL sideloading flaw (CVE-2026-110936, CVSS 8.4) that attackers exploit via ClickFix to drop malicious DLLs into the application’s search path. The vulnerability allows execution of code with the same privileges as the software, enabling remote access trojan deployment.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html",
+    "publishedAt": "2026-10-20T07:11:45.000Z",
+    "cves": [
+      "CVE-2026-110936"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "clickfix-exploits-siemens-software-center-dll-side",
+      "article-1a75cc",
+      "1a75cc",
+      "clickfix-exploits-siemens-software-center-dll-sideloading-vu"
+    ]
+  },
+  {
+    "slug": "mastercard-launches-stablecoin-security-solution-68f72c",
+    "title": "Mastercard Launches Stablecoin Security Solution",
+    "summary": "Mastercard introduces Stablecoin Security, a risk intelligence platform partnering with Borderless.xyz and Keyrails. The solution maps fraud, scams, sanctions, and other financial‑crime indicators across stablecoin payment flows, enabling institutions to assess risk before on‑chain fund movement.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/mastercard-stablecoin-security/",
+    "publishedAt": "2026-10-20T06:25:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "mastercard-launches-stablecoin-security-solution",
+      "article-68f72c",
+      "68f72c"
+    ]
+  },
+  {
     "slug": "easydmarc-partners-with-gmo-globalsign-to-strength-240e21",
     "title": "EasyDMARC partners with GMO GlobalSign to strengthen email authentication and branding",
     "summary": "EasyDMARC has teamed with GMO GlobalSign to enable organizations to set up trusted email identities via DNS security, sender authentication, and verified branding. The collaboration aims to reduce risks from new DNS records and authentication requirements that can affect security, deliverability, and brand reputation.",
@@ -26,6 +81,24 @@ export const news: NewsBrief[] = [
       "article-240e21",
       "240e21",
       "easydmarc-partners-with-gmo-globalsign-to-strengthen-email-a"
+    ]
+  },
+  {
+    "slug": "former-openai-engineer-detained-in-saudi-spy-devic-5490ef",
+    "title": "Former OpenAI Engineer Detained in Saudi Spy Device Case",
+    "summary": "A former OpenAI engineer, Abdulrahman Alfozan, was detained after authorities alleged he planted a recording device in an executive conference room to steal company secrets. The case implicates Saudi contacts and suggests state‑sponsored espionage activity.",
+    "category": "Malware",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/ex-openai-engineer-detained-in-spy.html",
+    "publishedAt": "2026-10-20T05:53:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "former-openai-engineer-detained-in-saudi-spy-devic",
+      "article-5490ef",
+      "5490ef",
+      "former-openai-engineer-detained-in-saudi-spy-device-case"
     ]
   },
   {
@@ -6204,77 +6277,6 @@ export const news: NewsBrief[] = [
       "article-438eea",
       "438eea",
       "what-s-new-in-wiz-service-catalog-smarter-discovery-governan"
-    ]
-  },
-  {
-    "slug": "chinese-hackers-impersonate-us-officials-for-ai-cy-3ba281",
-    "title": "Chinese Hackers Impersonate US Officials for AI Cyber Espionage",
-    "summary": "Chinese hackers from TA419 forged relationships with AI policy experts at U.S. think tanks, universities, and legal groups to facilitate espionage. The group impersonated officials to gain access to sensitive research and policy discussions. The operation highlights growing state-sponsored AI cyber espionage targeting U.S. policy makers.",
-    "category": "Malware",
-    "severity": "MEDIUM",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/chinese-actor-impersonates-us-officials-cyber-espionage",
-    "publishedAt": "2026-10-05T15:52:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chinese-hackers-impersonate-us-officials-for-ai-cy",
-      "article-3ba281",
-      "3ba281",
-      "chinese-hackers-impersonate-us-officials-for-ai-cyber-espion"
-    ]
-  },
-  {
-    "slug": "belarusian-hacktivists-conduct-two-year-espionage-465798",
-    "title": "Belarusian Hacktivists Conduct Two‑Year Espionage in Russian Healthcare Network",
-    "summary": "Russian researchers attribute a two‑year espionage campaign to Belarusian Cyber Partisans, a hacktivist group known for attacks on governments and infrastructure. The campaign infiltrated a Russian healthcare network, gathering sensitive information over an extended period.",
-    "category": "Malware",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/belarusian-hacktivists-two-years-Russian-healthcare-network",
-    "publishedAt": "2026-10-05T13:55:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "belarusian-hacktivists-conduct-two-year-espionage",
-      "article-465798",
-      "465798",
-      "belarusian-hacktivists-conduct-two-year-espionage-in-russian"
-    ]
-  },
-  {
-    "slug": "tenfold-adds-shared-content-governance-and-real-ti-655a1b",
-    "title": "tenfold Adds Shared Content Governance and Real‑Time Auditing to Free Edition",
-    "summary": "tenfold released two new features in its free Community Edition: shared content governance and real‑time event auditing. The updates enable organizations with fewer than 150 users to manage Microsoft 365 sharing more effectively and investigate suspicious identity activity, enhancing overall identity governance.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/tenfold-ce-our-free-identity-governance-tool-just-got-2-new-features/",
-    "publishedAt": "2026-10-05T13:33:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "tenfold-adds-shared-content-governance-and-real-ti",
-      "article-655a1b",
-      "655a1b",
-      "tenfold-adds-shared-content-governance-and-real-time-auditin"
-    ]
-  },
-  {
-    "slug": "stellar-cyber-7-0-unveils-ai-powered-soc-workflows-4d00ac",
-    "title": "Stellar Cyber 7.0 Unveils AI‑Powered SOC Workflows",
-    "summary": "Stellar Cyber released version 7.0, adding AI‑driven case triage, measurable SOC workflows, deeper investigative evidence, expanded automated response, and new APIs for large‑scale security operations. The update moves the Human‑Augmented Autonomous SOC from concept to practical operating model, improving analyst efficiency and response speed.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/stellar-cyber-7-0/",
-    "publishedAt": "2026-10-05T13:31:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "stellar-cyber-7-0-unveils-ai-powered-soc-workflows",
-      "article-4d00ac",
-      "4d00ac"
     ]
   }
 ];
