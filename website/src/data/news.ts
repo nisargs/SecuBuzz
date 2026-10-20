@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "plex2shell-4-flaw-rce-exploitation-on-plex-media-s-6cc35e",
+    "title": "Plex2Shell 4‑Flaw RCE Exploitation on Plex Media Server",
+    "summary": "Hackers exploit the Plex2Shell 4‑flaw vulnerability chain to deploy Linux proxy backdoors and Monero miners on Plex Media Server installations. The flaw allows remote code execution; administrators should apply the latest patch immediately to prevent unauthorized access and cryptocurrency mining.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/plex2shell-how-to-detect-patch-plex-media-server-rce",
+    "publishedAt": "2026-10-19T23:44:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "plex2shell-4-flaw-rce-exploitation-on-plex-media-s",
+      "article-6cc35e",
+      "6cc35e",
+      "plex2shell-4-flaw-rce-exploitation-on-plex-media-server"
+    ]
+  },
+  {
     "slug": "ransomware-operators-exploit-pan-os-cve-2026-0257-20c806",
     "title": "Ransomware Operators Exploit PAN-OS CVE-2026-0257",
     "summary": "Ransomware groups Spikey Scorpius and Tarnished Scorpius are actively exploiting the PAN-OS vulnerability CVE-2026-0257 to compromise Fortinet devices. The flaw allows unauthenticated remote code execution, enabling attackers to install ransomware payloads. Fortinet has released a patch; users must update immediately to prevent exploitation.",
@@ -259,24 +277,6 @@ export const news: NewsBrief[] = [
       "cloudflare-releases-clairic-extraction-model",
       "article-260d97",
       "260d97"
-    ]
-  },
-  {
-    "slug": "plex-media-server-exploitation-chain-deploys-crypt-71cc58",
-    "title": "Plex Media Server Exploitation Chain Deploys Crypto Miners and Proxy Backdoor",
-    "summary": "Threat actors are exploiting a chain of four vulnerabilities in Plex Media Server, dubbed Plex2Shell, to install cryptocurrency miners and a Linux reverse‑proxy backdoor. The attack chain was publicly demonstrated with a PoC, and attackers now use it to compromise servers and redirect traffic.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/hackers-exploit-plex2shell-flaws-to.html",
-    "publishedAt": "2026-10-19T17:32:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "plex-media-server-exploitation-chain-deploys-crypt",
-      "article-71cc58",
-      "71cc58",
-      "plex-media-server-exploitation-chain-deploys-crypto-miners-a"
     ]
   },
   {

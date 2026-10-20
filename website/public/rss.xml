@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Oct 2026 23:55:57 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 00:18:02 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Plex2Shell 4‑Flaw RCE Exploitation on Plex Media Server</title>
+      <link>https://secubuzz.com/news/plex2shell-4-flaw-rce-exploitation-on-plex-media-s-6cc35e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/plex2shell-4-flaw-rce-exploitation-on-plex-media-s-6cc35e</guid>
+      <description><![CDATA[Hackers exploit the Plex2Shell 4‑flaw vulnerability chain to deploy Linux proxy backdoors and Monero miners on Plex Media Server installations. The flaw allows remote code execution; administrators should apply the latest patch immediately to prevent unauthorized access and cryptocurrency mining.]]></description>
+      <pubDate>Mon, 19 Oct 2026 23:44:30 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/plex2shell-how-to-detect-patch-plex-media-server-rce">CyberNews AI</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Ransomware Operators Exploit PAN-OS CVE-2026-0257</title>
       <link>https://secubuzz.com/news/ransomware-operators-exploit-pan-os-cve-2026-0257-20c806</link>
@@ -132,15 +141,6 @@
       <pubDate>Mon, 19 Oct 2026 17:48:26 GMT</pubDate>
       <source url="https://blog.cloudflare.com/clairic-extraction-model/">Cloudflare Security</source>
       <category>Cloud</category>
-    </item>
-    <item>
-      <title>Plex Media Server Exploitation Chain Deploys Crypto Miners and Proxy Backdoor</title>
-      <link>https://secubuzz.com/news/plex-media-server-exploitation-chain-deploys-crypt-71cc58</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/plex-media-server-exploitation-chain-deploys-crypt-71cc58</guid>
-      <description><![CDATA[Threat actors are exploiting a chain of four vulnerabilities in Plex Media Server, dubbed Plex2Shell, to install cryptocurrency miners and a Linux reverse‑proxy backdoor. The attack chain was publicly demonstrated with a PoC, and attackers now use it to compromise servers and redirect traffic.]]></description>
-      <pubDate>Mon, 19 Oct 2026 17:32:13 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/hackers-exploit-plex2shell-flaws-to.html">The Hacker News</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>OpenCode API Keys Exposed in Security Breach</title>

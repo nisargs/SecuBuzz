@@ -1,5 +1,23 @@
 [
   {
+    "id": "https://cybernewsai.com/blog/plex2shell-how-to-detect-patch-plex-media-server-rce",
+    "sourceUrl": "https://cybernewsai.com/blog/plex2shell-how-to-detect-patch-plex-media-server-rce",
+    "title": "Plex2Shell 4‑Flaw RCE Exploitation on Plex Media Server",
+    "headline": "Plex2Shell 4‑Flaw RCE Exploitation on Plex Media Server",
+    "summary": "Hackers exploit the Plex2Shell 4‑flaw vulnerability chain to deploy Linux proxy backdoors and Monero miners on Plex Media Server installations. The flaw allows remote code execution; administrators should apply the latest patch immediately to prevent unauthorized access and cryptocurrency mining.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-10-19T23:44:30.000Z",
+    "url": "https://cybernewsai.com/blog/plex2shell-how-to-detect-patch-plex-media-server-rce",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/hackers-exploit-plex2shell-flaws-to.html"
+      }
+    ]
+  },
+  {
     "id": "https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/",
     "sourceUrl": "https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/",
     "title": "Ransomware Operators Exploit PAN-OS CVE-2026-0257",
@@ -236,28 +254,6 @@
     "publishedAt": "2026-10-19T17:48:26.000Z",
     "url": "https://blog.cloudflare.com/clairic-extraction-model/",
     "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/hackers-exploit-plex2shell-flaws-to.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/hackers-exploit-plex2shell-flaws-to.html",
-    "title": "Plex Media Server Exploitation Chain Deploys Crypto Miners and Proxy Backdoor",
-    "headline": "Plex Media Server Exploitation Chain Deploys Crypto Miners and Proxy Backdoor",
-    "summary": "Threat actors are exploiting a chain of four vulnerabilities in Plex Media Server, dubbed Plex2Shell, to install cryptocurrency miners and a Linux reverse‑proxy backdoor. The attack chain was publicly demonstrated with a PoC, and attackers now use it to compromise servers and redirect traffic.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-19T17:32:13.000Z",
-    "url": "https://thehackernews.com/2026/10/hackers-exploit-plex2shell-flaws-to.html",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/plex2shell-exploit-chain-weaponized-against-plex-servers-hours-after-disclosure/"
-      },
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/plex-vulnerabilities-exploited-in-wild/"
-      }
-    ]
   },
   {
     "id": "https://www.bleepingcomputer.com/news/security/opencode-hack-exposes-api-keys-amid-ai-distillation-attacks/",
