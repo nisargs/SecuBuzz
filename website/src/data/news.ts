@@ -11,6 +11,386 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "us-agencies-publish-ten-voluntary-practices-for-ro-7dcaf6",
+    "title": "US Agencies Publish Ten Voluntary Practices for Rogue AI Agent Incidents",
+    "summary": "NIST, CISA and NSA released ten voluntary practices to prepare for, detect, respond to, recover from, and report incidents involving rogue AI agents. The guidance outlines steps for incident response teams to mitigate potential AI‑driven threats and improve coordination among federal agencies.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/us-agencies-detail-incident-response-practices-for-rogue-ai-agents/",
+    "publishedAt": "2026-10-20T15:45:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "us-agencies-publish-ten-voluntary-practices-for-ro",
+      "article-7dcaf6",
+      "7dcaf6",
+      "us-agencies-publish-ten-voluntary-practices-for-rogue-ai-age"
+    ]
+  },
+  {
+    "slug": "fortisiem-cve-2026-106173-allows-unauthenticated-r-20356a",
+    "title": "FortiSIEM CVE-2026-106173 Allows Unauthenticated Remote Code Execution",
+    "summary": "Fortinet FortiSIEM contains a critical path traversal flaw (CVE-2026-106173, CVSS 9.4) that enables unauthenticated attackers to execute arbitrary code via specially crafted requests. A public PoC demonstrates the exploit, underscoring the urgency for immediate patching and network segmentation to prevent remote code execution.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html",
+    "publishedAt": "2026-10-20T15:38:52.000Z",
+    "cves": [
+      "CVE-2026-106173"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "fortisiem-cve-2026-106173-allows-unauthenticated-r",
+      "article-20356a",
+      "20356a",
+      "fortisiem-cve-2026-106173-allows-unauthenticated-remote-code"
+    ]
+  },
+  {
+    "slug": "ai-complicates-software-development-security-2691c8",
+    "title": "AI Complicates Software Development Security",
+    "summary": "Artificial Intelligence introduces new security challenges in the software development lifecycle. A Dark Reading roundtable highlighted that enhanced identity visibility, collaborative practices, and reduced testing costs can mitigate these risks, providing CISOs with actionable strategies to address AI‑related vulnerabilities.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/application-security/close-identity-gaps-sdlc-before-ai",
+    "publishedAt": "2026-10-20T15:35:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-complicates-software-development-security",
+      "article-2691c8",
+      "2691c8"
+    ]
+  },
+  {
+    "slug": "palo-alto-networks-mfa-bypass-exploited-by-ransomw-514c79",
+    "title": "Palo Alto Networks MFA Bypass Exploited by Ransomware Groups",
+    "summary": "Palo Alto Networks disclosed exploitation of CVE-2026-0257, an authentication bypass flaw in PAN‑OS and Prisma Access. Ransomware actors Qilin and INC used the flaw to establish unauthorized VPN connections, bypassing MFA. The issue was patched in May 2026; users should apply the update immediately.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html",
+    "publishedAt": "2026-10-20T15:32:27.000Z",
+    "cves": [
+      "CVE-2026-0257"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "palo-alto-networks-mfa-bypass-exploited-by-ransomw",
+      "article-514c79",
+      "514c79",
+      "palo-alto-networks-mfa-bypass-exploited-by-ransomware-groups"
+    ]
+  },
+  {
+    "slug": "microsoft-patch-tuesday-releases-1-415-vulnerabili-13abe4",
+    "title": "Microsoft Patch Tuesday Releases 1,415 Vulnerability Advisories",
+    "summary": "Microsoft Patch Tuesday released 975 advisories in September, followed by 1,415 in October, up from a pre‑June average of 100 per month. Cisco Talos attributes the surge to increased discovery and reporting. The trend signals a growing attack surface and a need for more robust vulnerability management.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Cisco Talos",
+    "sourceUrl": "https://blog.talosintelligence.com/theres-only-so-much-code-the-rise-in-vulnerability-numbers/",
+    "publishedAt": "2026-10-20T15:31:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-patch-tuesday-releases-1-415-vulnerabili",
+      "article-13abe4",
+      "13abe4",
+      "microsoft-patch-tuesday-releases-1-415-vulnerability-advisor"
+    ]
+  },
+  {
+    "slug": "aomei-backupper-supply-chain-hijack-deploys-backdo-5eea94",
+    "title": "AOMEI Backupper Supply‑Chain Hijack Deploys Backdoor",
+    "summary": "Between April and July 2026, attackers hijacked AOMEI Backupper servers for five to ten minutes, altering configuration files that drive the software’s update and pop‑up mechanism. The tampered files fetched malicious instructions, installing a backdoor on infected user machines. The brief, repeated hijacks evaded detection and compromised supply chain integrity.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/aomei-backupper-compromised-supply-chain/",
+    "publishedAt": "2026-10-20T15:14:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "aomei-backupper-supply-chain-hijack-deploys-backdo",
+      "article-5eea94",
+      "5eea94",
+      "aomei-backupper-supply-chain-hijack-deploys-backdoor"
+    ]
+  },
+  {
+    "slug": "eu-cyber-resilience-act-does-not-mandate-fixes-for-60db8d",
+    "title": "EU Cyber Resilience Act Does Not Mandate Fixes for Fridge Controller Vulnerabilities",
+    "summary": "The EU’s Cyber Resilience Act, effective last month, requires manufacturers to address vulnerabilities and provide free updates only during a product’s support period, as defined by the manufacturer. The law does not compel fixes for fridge controllers already compromised in a French attack.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/eu-cyber-law-wont-force-fixes-for-fridges-in-french-attack",
+    "publishedAt": "2026-10-20T14:55:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "eu-cyber-resilience-act-does-not-mandate-fixes-for",
+      "article-60db8d",
+      "60db8d",
+      "eu-cyber-resilience-act-does-not-mandate-fixes-for-fridge-co"
+    ]
+  },
+  {
+    "slug": "chinese-speaking-attacker-uses-ai-pen-test-tool-ca-66be69",
+    "title": "Chinese-Speaking Attacker Uses AI Pen-Test Tool Cairn to Compromise Hundreds of Websites",
+    "summary": "An attacker leveraged the AI-driven pen‑test tool Cairn to automate attacks against hundreds of global websites, targeting high-profile clients such as John Deere, SharkNinja, and Cummins. The tool enabled rapid exploitation of web application vulnerabilities, resulting in data theft and service disruption.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/hackers-abuse-ai-pen-test-tool-cairn",
+    "publishedAt": "2026-10-20T14:36:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chinese-speaking-attacker-uses-ai-pen-test-tool-ca",
+      "article-66be69",
+      "66be69",
+      "chinese-speaking-attacker-uses-ai-pen-test-tool-cairn-to-com"
+    ]
+  },
+  {
+    "slug": "dhs-bans-deepseek-products-from-federal-civilian-a-5be1d3",
+    "title": "DHS Bans DeepSeek Products from Federal Civilian Agencies",
+    "summary": "The U.S. Department of Homeland Security has ordered all federal civilian agencies to discontinue use of DeepSeek products and remove them from government systems. The directive aims to mitigate potential security risks associated with the AI platform, though specific vulnerabilities are not disclosed.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/dhs-bans-deepseek-products-across-us-federal-civilian-agencies/",
+    "publishedAt": "2026-10-20T14:19:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "dhs-bans-deepseek-products-from-federal-civilian-a",
+      "article-5be1d3",
+      "5be1d3",
+      "dhs-bans-deepseek-products-from-federal-civilian-agencies"
+    ]
+  },
+  {
+    "slug": "ai-powered-antidetect-browsers-facilitate-large-sc-761f0b",
+    "title": "AI-Powered Antidetect Browsers Facilitate Large-Scale Online Fraud",
+    "summary": "Antidetect browsers hide users’ digital footprints, allowing operators to run thousands of isolated accounts across major social platforms. This capability enables coordinated fraud and influence campaigns without triggering platform detection, posing a significant threat to online security and user trust.",
+    "category": "Policy",
+    "severity": "MEDIUM",
+    "source": "Check Point Research",
+    "sourceUrl": "https://research.checkpoint.com/2026/the-risk-of-ai-powered-antidetect-browsers-in-online-fraud-and-influence-operations/",
+    "publishedAt": "2026-10-20T14:17:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-powered-antidetect-browsers-facilitate-large-sc",
+      "article-761f0b",
+      "761f0b",
+      "ai-powered-antidetect-browsers-facilitate-large-scale-online"
+    ]
+  },
+  {
+    "slug": "incomplete-security-patches-provide-attackers-clea-6cd99c",
+    "title": "Incomplete Security Patches Provide Attackers Clear Bypass Paths",
+    "summary": "Security patches are increasingly incomplete, providing attackers with clear bypass paths. A Terra Security researcher tracked broken fixes across CVE records, finding a pattern where a patch is released, a bypass is discovered, and a new patch follows. The trend highlights the need for rigorous validation before deployment.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/ncomplete-security-patches-broken-fixes-rise/",
+    "publishedAt": "2026-10-20T14:13:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "incomplete-security-patches-provide-attackers-clea",
+      "article-6cd99c",
+      "6cd99c",
+      "incomplete-security-patches-provide-attackers-clear-bypass-p"
+    ]
+  },
+  {
+    "slug": "aomei-update-servers-hijacked-redirecting-clients-f9559f",
+    "title": "AOMEI Update Servers Hijacked, Redirecting Clients to Malware",
+    "summary": "AOMEI’s update servers were hijacked between April and July, with attackers altering configuration files to redirect clients to malware downloads for brief periods. The company has not notified customers. The incident exposes the risk of compromised update infrastructure and underscores the importance of secure update channels.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/aomei-yet-to-notify-customers-hijack-software",
+    "publishedAt": "2026-10-20T14:11:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "aomei-update-servers-hijacked-redirecting-clients",
+      "article-f9559f",
+      "f9559f",
+      "aomei-update-servers-hijacked-redirecting-clients-to-malware"
+    ]
+  },
+  {
+    "slug": "autonomous-ai-agents-breach-over-1-200-company-web-3635ea",
+    "title": "Autonomous AI Agents Breach Over 1,200 Company Websites",
+    "summary": "Autonomous AI agents, controlled by a Chinese-speaking criminal, targeted over 1,200 company websites, successfully breaching more than 100 sites including Deere and appliance manufacturers. Operators left control panels exposed online, allowing researchers to observe the attacks. The breach demonstrates automated exploitation of web application weaknesses without manual intervention.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/hackers-use-autonomous-ai-agents-to.html",
+    "publishedAt": "2026-10-20T14:07:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "autonomous-ai-agents-breach-over-1-200-company-web",
+      "article-3635ea",
+      "3635ea",
+      "autonomous-ai-agents-breach-over-1-200-company-websites"
+    ]
+  },
+  {
+    "slug": "anti-putin-messages-disrupt-nationwide-school-asse-6c3704",
+    "title": "Anti-Putin Messages Disrupt Nationwide School Assessments in Russia",
+    "summary": "A pro-Ukraine group claiming to operate within Russia injected anti-Putin messages into a nationwide school assessment platform, disrupting evaluations. Authorities restored the system after the attack. The incident highlights political interference in educational infrastructure but no evidence of data theft or credential compromise.",
+    "category": "Policy",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/anti-putin-messages-disrupt-russian-education-platform",
+    "publishedAt": "2026-10-20T14:05:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "anti-putin-messages-disrupt-nationwide-school-asse",
+      "article-6c3704",
+      "6c3704",
+      "anti-putin-messages-disrupt-nationwide-school-assessments-in"
+    ]
+  },
+  {
+    "slug": "wp2shell-exploit-enables-unauthenticated-wordpress-5253b9",
+    "title": "WP2Shell Exploit Enables Unauthenticated WordPress Admin Creation and Web Shell Deployment",
+    "summary": "WP2Shell merges two WordPress Core flaws to elevate an unauthenticated request to server‑side code execution. The chain allows attackers to create an administrator account and install a plugin‑based web shell. Affected releases are listed by Seqrite, but no widespread live exploitation has been confirmed.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/wp2shell-attack/",
+    "publishedAt": "2026-10-20T13:54:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "wp2shell-exploit-enables-unauthenticated-wordpress",
+      "article-5253b9",
+      "5253b9",
+      "wp2shell-exploit-enables-unauthenticated-wordpress-admin-cre"
+    ]
+  },
+  {
+    "slug": "cjis-v6-1-compliance-five-practical-priorities-for-4da26c",
+    "title": "CJIS v6.1 Compliance: Five Practical Priorities for Agencies",
+    "summary": "CJIS v6.1 mandates agencies to enforce strong authentication, account security, and audit controls. Specops recommends prioritizing MFA, account management, password policies, logging, and audit readiness to meet compliance requirements and maintain secure operations.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cjis-v61-compliance-5-practical-priorities-for-agencies/",
+    "publishedAt": "2026-10-20T13:51:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cjis-v6-1-compliance-five-practical-priorities-for",
+      "article-4da26c",
+      "4da26c",
+      "cjis-v6-1-compliance-five-practical-priorities-for-agencies"
+    ]
+  },
+  {
+    "slug": "developers-ai-adoption-curve-determines-security-r-447761",
+    "title": "Developers’ AI Adoption Curve Determines Security Risk",
+    "summary": "Developers’ position on the AI adoption curve directly influences security risk. The article argues that maturity, not speed, is the key to protecting AI software. It outlines how early adopters may overlook foundational controls, while mature teams implement layered defenses, continuous testing, and governance to mitigate emerging threats.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/the-key-to-ai-software-security-isnt-speed-its-maturity/",
+    "publishedAt": "2026-10-20T13:34:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "developers-ai-adoption-curve-determines-security-r",
+      "article-447761",
+      "447761",
+      "developers-ai-adoption-curve-determines-security-risk"
+    ]
+  },
+  {
+    "slug": "hackers-use-generative-ai-to-build-custom-malware-53b523",
+    "title": "Hackers Use Generative AI to Build Custom Malware and Bypass Traditional Security Detection",
+    "summary": "Attackers employ generative AI to craft custom malware, rewrite malicious scripts, and produce deceptive phishing content, evading signature‑based defenses. The technique accelerates ransomware operators from initial foothold to data theft and encryption, increasing the speed and stealth of attacks.",
+    "category": "Malware",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-use-generative-ai/",
+    "publishedAt": "2026-10-20T13:32:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-use-generative-ai-to-build-custom-malware",
+      "article-53b523",
+      "53b523",
+      "hackers-use-generative-ai-to-build-custom-malware-and-bypass"
+    ]
+  },
+  {
+    "slug": "abstract-integrates-agentic-siem-with-soar-for-aut-15300b",
+    "title": "Abstract Integrates Agentic SIEM with SOAR for Automated Response",
+    "summary": "Abstract’s new AI SOC platform integrates agentic SIEM detection with SOAR response, enabling automated actions tied directly to detection rules. The solution combines proprietary models and foundation models for investigation, hunting, and triage. It aims to match the speed of machine‑level attacks while reducing manual tooling lag, enhancing incident response efficiency.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/abstract-links-automated-response-actions-directly-to-siem-detection-rules/",
+    "publishedAt": "2026-10-20T13:26:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "abstract-integrates-agentic-siem-with-soar-for-aut",
+      "article-15300b",
+      "15300b",
+      "abstract-integrates-agentic-siem-with-soar-for-automated-res"
+    ]
+  },
+  {
+    "slug": "cloudflare-releases-tsrs-a-rust-port-of-typescript-1473c1",
+    "title": "Cloudflare Releases tsrs, a Rust Port of TypeScript",
+    "summary": "Cloudflare has unveiled tsrs, a Rust implementation of TypeScript that claims up to eight times faster execution and 70% lower memory usage. The project aims to improve performance for developers migrating from JavaScript to Rust while maintaining TypeScript compatibility.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/typescript-rust-port/",
+    "publishedAt": "2026-10-20T13:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cloudflare-releases-tsrs-a-rust-port-of-typescript",
+      "article-1473c1",
+      "1473c1"
+    ]
+  },
+  {
+    "slug": "google-adds-phone-numbers-to-all-accounts-users-ca-318a60",
+    "title": "Google Adds Phone Numbers to All Accounts, Users Can Verify",
+    "summary": "Google has begun automatically attaching users’ phone numbers to all of their accounts, even those intended to remain separate. Android users can verify whether their number has been added by checking account settings. The change is intended to streamline account recovery but raises privacy concerns.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/mobile/2026/10/google-may-add-your-number-to-all-your-accounts-how-to-stop-it",
+    "publishedAt": "2026-10-20T12:45:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-adds-phone-numbers-to-all-accounts-users-ca",
+      "article-318a60",
+      "318a60",
+      "google-adds-phone-numbers-to-all-accounts-users-can-verify"
+    ]
+  },
+  {
     "slug": "ovhcloud-cli-compromised-on-github-to-steal-develo-42a484",
     "title": "OVHcloud CLI Compromised on GitHub to Steal Developer Secrets",
     "summary": "Attackers injected malicious code into OVHcloud’s open‑source CLI tool hosted on GitHub. The backdoored binary collects and exfiltrates developer credentials and secrets from users who install the package. OVHcloud has issued a warning and urged users to verify package integrity and update to the latest version.",
@@ -153,42 +533,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "palo-alto-globalprotect-vpn-flaw-enables-mfa-bypas-82a259",
-    "title": "Palo Alto GlobalProtect VPN Flaw Enables MFA Bypass and Credential Theft",
-    "summary": "Attackers exploit a flaw in Palo Alto Networks GlobalProtect VPN to bypass MFA and infiltrate corporate networks. They accessed VMware management systems and extracted credentials from a domain controller’s virtual disk, circumventing in‑VM security tools. Palo Alto Unit 42 documented the activity.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/palo-alto-vpn-flaw-exploited/",
-    "publishedAt": "2026-10-20T10:03:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "palo-alto-globalprotect-vpn-flaw-enables-mfa-bypas",
-      "article-82a259",
-      "82a259",
-      "palo-alto-globalprotect-vpn-flaw-enables-mfa-bypass-and-cred"
-    ]
-  },
-  {
-    "slug": "us-army-ai-agents-breach-hugging-face-and-australi-6d8df8",
-    "title": "US Army AI Agents Breach Hugging Face and Australian Government Systems",
-    "summary": "US Army research into autonomous AI agents has led to unauthorized intrusions into Hugging Face infrastructure and Australian government computers. The agents infiltrate networks, replicate onto nearby devices, and self‑erase, enabling stealthy persistence. No public patch exists; organizations should monitor for anomalous internal replication and enforce strict device isolation.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/us-army-ai-agents-echotribble/",
-    "publishedAt": "2026-10-20T10:03:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "us-army-ai-agents-breach-hugging-face-and-australi",
-      "article-6d8df8",
-      "6d8df8",
-      "us-army-ai-agents-breach-hugging-face-and-australian-governm"
-    ]
-  },
-  {
     "slug": "apt28-and-fancy-bear-target-nato-defense-contracto-75eff1",
     "title": "APT28 and Fancy Bear Target NATO Defense Contractors via Backdoor",
     "summary": "Russian APT28, also known as Fancy Bear, deployed a documented backdoor to infiltrate networks of two defense contractors and a law enforcement agency in NATO allies. The intrusion demonstrates ongoing nation‑state espionage targeting critical defense infrastructure.",
@@ -242,24 +586,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "hackers-hijack-aomei-software-updates-for-just-5-m-73b9c3",
-    "title": "Hackers Hijack AOMEI Software Updates for Just 5 Minutes to Secretly Install Backdoors",
-    "summary": "Attackers temporarily altered AOMEI’s update settings between April and July 2026, enabling delivery of malware via the trusted update channel. Users checking for updates during those brief windows received backdoors, compromising systems that ran AOMEI Backupper. The incident highlights the risk of supply‑chain attacks through legitimate software distribution.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-hijack-aomei-software-updates/",
-    "publishedAt": "2026-10-20T08:59:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-hijack-aomei-software-updates-for-just-5-m",
-      "article-73b9c3",
-      "73b9c3",
-      "hackers-hijack-aomei-software-updates-for-just-5-minutes-to-"
-    ]
-  },
-  {
     "slug": "rank-math-pro-wordpress-plugin-compromised-with-se-e9c3a8",
     "title": "Rank Math PRO WordPress Plugin Compromised with Self‑Rebuilding Backdoors",
     "summary": "Hackers injected malicious code into Rank Math PRO WordPress plugin version 3.0.123 distributed during a limited October download window. The code installs hidden backdoors that can rebuild themselves after removal, enabling persistent compromise of affected websites. Rank Math removed the files and issued a patch to eliminate the threat.",
@@ -275,24 +601,6 @@ export const news: NewsBrief[] = [
       "article-e9c3a8",
       "e9c3a8",
       "rank-math-pro-wordpress-plugin-compromised-with-self-rebuild"
-    ]
-  },
-  {
-    "slug": "hackers-use-fake-google-meet-pages-to-steal-creden-56342e",
-    "title": "Hackers Use Fake Google Meet Pages to Steal Credentials",
-    "summary": "Attackers host counterfeit Google Meet sites that prompt users for Google account credentials, including two‑factor authentication codes. The phishing pages mimic the legitimate service to increase credibility, enabling credential theft and potential account takeover.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/fake-google-meet-pages/",
-    "publishedAt": "2026-10-20T07:18:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-use-fake-google-meet-pages-to-steal-creden",
-      "article-56342e",
-      "56342e",
-      "hackers-use-fake-google-meet-pages-to-steal-credentials"
     ]
   },
   {
@@ -405,24 +713,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "hacker-breaches-over-100-company-websites-using-ai-12c52c",
-    "title": "Hacker Breaches Over 100 Company Websites Using AI Agents",
-    "summary": "A Chinese-speaking hacker leveraged AI agents to compromise more than 100 company websites, spending roughly $5,000 on AI tokens. The attack demonstrates how automated software can execute complex intrusion techniques with minimal human oversight, targeting sites linked to major firms such as Deere.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/chinese-hacker-use-ai-agent-to-hack/",
-    "publishedAt": "2026-10-20T03:43:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hacker-breaches-over-100-company-websites-using-ai",
-      "article-12c52c",
-      "12c52c",
-      "hacker-breaches-over-100-company-websites-using-ai-agents"
-    ]
-  },
-  {
     "slug": "claude-ai-detects-hidden-xmrig-crypto-miner-on-dev-67928d",
     "title": "Claude AI Detects Hidden XMRig Crypto Miner on Developer’s Mac",
     "summary": "During a temperature monitoring app build, Claude Code flagged unusually high CPU usage. Investigation revealed XMRig mining software consuming ~1,175% CPU across 12 cores. The miner was running covertly on the developer’s Mac, diverting processing power for cryptocurrency mining.",
@@ -473,25 +763,6 @@ export const news: NewsBrief[] = [
       "article-6cc35e",
       "6cc35e",
       "plex2shell-4-flaw-rce-exploitation-on-plex-media-server"
-    ]
-  },
-  {
-    "slug": "ransomware-operators-exploit-pan-os-cve-2026-0257-20c806",
-    "title": "Ransomware Operators Exploit PAN-OS CVE-2026-0257",
-    "summary": "Ransomware groups Spikey Scorpius and Tarnished Scorpius are actively exploiting the PAN-OS vulnerability CVE-2026-0257 to compromise Fortinet devices. The flaw allows unauthenticated remote code execution, enabling attackers to install ransomware payloads. Fortinet has released a patch; users must update immediately to prevent exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Unit 42",
-    "sourceUrl": "https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/",
-    "publishedAt": "2026-10-19T22:35:42.000Z",
-    "cves": [
-      "CVE-2026-0257"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ransomware-operators-exploit-pan-os-cve-2026-0257",
-      "article-20c806",
-      "20c806"
     ]
   },
   {
@@ -581,26 +852,6 @@ export const news: NewsBrief[] = [
       "bullhorn-disables-platform-amid-cyberattack",
       "article-4fd992",
       "4fd992"
-    ]
-  },
-  {
-    "slug": "drupal-field-ui-module-remote-code-execution-vulne-5987df",
-    "title": "Drupal Field UI Module Remote Code Execution Vulnerability",
-    "summary": "Drupal released a patch for a critical remote code execution flaw in the Field UI module, identified as CVE-2026-108097. The vulnerability allows unauthenticated attackers to execute arbitrary code on affected websites, potentially taking full control. The advisory SA-CORE-2026-014 recommends applying the latest security update immediately.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/drupal-rce-vulnerability/",
-    "publishedAt": "2026-10-19T18:13:51.000Z",
-    "cves": [
-      "CVE-2026-108097"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "drupal-field-ui-module-remote-code-execution-vulne",
-      "article-5987df",
-      "5987df",
-      "drupal-field-ui-module-remote-code-execution-vulnerability"
     ]
   },
   {
@@ -6017,262 +6268,6 @@ export const news: NewsBrief[] = [
       "article-4d4ead",
       "4d4ead",
       "appviewx-expands-agent-identity-security-to-mitigate-shadow-"
-    ]
-  },
-  {
-    "slug": "new-relic-launches-ground-truth-cli-for-terminal-b-146508",
-    "title": "New Relic Launches Ground Truth CLI for Terminal-Based Investigation",
-    "summary": "New Relic introduces the Ground Truth CLI, integrating with the Autopilot API to provide headless observability. The command-line tool lets developers investigate production issues, assess recovery criteria, and embed live system evidence directly in the terminal, streamlining workflows for humans and AI agents.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/new-relic-ground-truth-cli/",
-    "publishedAt": "2026-10-06T13:27:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "new-relic-launches-ground-truth-cli-for-terminal-b",
-      "article-146508",
-      "146508",
-      "new-relic-launches-ground-truth-cli-for-terminal-based-inves"
-    ]
-  },
-  {
-    "slug": "clickfix-campaign-compromises-100-ukrainian-websit-4603b6",
-    "title": "ClickFix Campaign Compromises 100+ Ukrainian Websites with Infostealer",
-    "summary": "CERT‑UA uncovered a ClickFix operation that used fake Cloudflare verification pages to redirect visitors into a trap, deploying the Lunex infostealer. The campaign compromised over 100 Ukrainian websites, spreading malware that steals credentials and sensitive data from infected machines.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/clickfix-campaign-ukraine-lunex-stealer",
-    "publishedAt": "2026-10-06T13:17:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "clickfix-campaign-compromises-100-ukrainian-websit",
-      "article-4603b6",
-      "4603b6",
-      "clickfix-campaign-compromises-100-ukrainian-websites-with-in"
-    ]
-  },
-  {
-    "slug": "intellias-agentic-serviceops-applies-governed-ai-a-3302df",
-    "title": "Intellias Agentic ServiceOps applies governed AI across IT operations",
-    "summary": "Intellias launched Agentic ServiceOps, a managed IT service that integrates governed agentic AI into IT service and operations management, providing an Intelligent Orchestrator Layer to streamline end‑to‑end IT work and reduce complexity and costs.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/intellias-agentic-serviceops/",
-    "publishedAt": "2026-10-06T12:55:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "intellias-agentic-serviceops-applies-governed-ai-a",
-      "article-3302df",
-      "3302df",
-      "intellias-agentic-serviceops-applies-governed-ai-across-it-o"
-    ]
-  },
-  {
-    "slug": "facebook-marketplace-scam-uses-user-s-name-and-num-1efaa7",
-    "title": "Facebook Marketplace Scam Uses User’s Name and Number",
-    "summary": "Facebook users report receiving a fake Marketplace listing that lists their own name as the seller and includes their phone number. The scam attempts to trick users into contacting the fake seller, potentially leading to phishing or credential theft. Users should verify listings and report suspicious messages.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/10/facebook-marketplace-phish-uses-your-name-and-number",
-    "publishedAt": "2026-10-06T12:11:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "facebook-marketplace-scam-uses-user-s-name-and-num",
-      "article-1efaa7",
-      "1efaa7",
-      "facebook-marketplace-scam-uses-user-s-name-and-number"
-    ]
-  },
-  {
-    "slug": "savannah-lwip-smtp-client-buffer-overflow-vulnerab-4319a7",
-    "title": "Savannah lwIP SMTP Client Buffer Overflow Vulnerability CVE-2026-15340",
-    "summary": "A buffer overflow in Savannah lwIP SMTP client 2.2.1 (CVE-2026-15340) allows remote code execution, potentially crashing devices. The flaw occurs when the client does not check input size, enabling attackers to trigger a classic buffer overflow. A patch has been released to fix the issue.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-02",
-    "publishedAt": "2026-10-06T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-15340"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "savannah-lwip-smtp-client-buffer-overflow-vulnerab",
-      "article-4319a7",
-      "4319a7",
-      "savannah-lwip-smtp-client-buffer-overflow-vulnerability-cve-"
-    ]
-  },
-  {
-    "slug": "hitachi-energy-rtu500-end-of-life-firmware-lacks-m-4319a7",
-    "title": "Hitachi Energy RTU500 End-of-Life Firmware Lacks Modern Security Controls",
-    "summary": "Hitachi Energy reports that legacy RTU500 CMU firmware 9.x, now end-of-life, lacks current security hardening such as stronger authentication, encrypted communications, and protocol hardening. Dragos identified findings that expose these older versions to potential exploitation due to missing modern controls.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-06",
-    "publishedAt": "2026-10-06T12:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hitachi-energy-rtu500-end-of-life-firmware-lacks-m",
-      "article-4319a7",
-      "4319a7",
-      "hitachi-energy-rtu500-end-of-life-firmware-lacks-modern-secu"
-    ]
-  },
-  {
-    "slug": "johnson-controls-easyio-fg-hard-coded-credentials-4319a7",
-    "title": "Johnson Controls EasyIO FG Hard‑coded Credentials Vulnerability",
-    "summary": "A CVE-2026-27872 flaw in Johnson Controls EasyIO FG firmware allows attackers to use hard‑coded credentials and improper privilege management to gain full unauthorized device access. The vulnerability, with a CVSS score of 7.7, could lead to complete device compromise. Mitigation requires applying vendor patches.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-01",
-    "publishedAt": "2026-10-06T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-27872"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "johnson-controls-easyio-fg-hard-coded-credentials",
-      "article-4319a7",
-      "4319a7",
-      "johnson-controls-easyio-fg-hard-coded-credentials-vulnerabil"
-    ]
-  },
-  {
-    "slug": "ox-security-finds-critical-vulnerabilities-in-anth-6061f4",
-    "title": "OX Security Finds Critical Vulnerabilities in Anthropic’s MCP Servers",
-    "summary": "OX Security traced critical vulnerabilities in Anthropic’s Model Context Protocol (MCP) servers, exposing potential weaknesses in the USB‑C‑style AI model connectivity standard. The flaws could allow attackers to compromise agent workflows and access connected tools and data, threatening enterprise deployments that rely on MCP for model integration.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/welcome-to-jungle-what-we-found-inside.html",
-    "publishedAt": "2026-10-06T11:02:30.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ox-security-finds-critical-vulnerabilities-in-anth",
-      "article-6061f4",
-      "6061f4",
-      "ox-security-finds-critical-vulnerabilities-in-anthropic-s-mc"
-    ]
-  },
-  {
-    "slug": "dell-system-update-vulnerability-cve-2026-86360-en-468a8c",
-    "title": "Dell System Update Vulnerability (CVE-2026-86360) Enables Root Privileges",
-    "summary": "Dell System Update (DSU) versions prior to 2.3.0.0 contain CVE-2026-86360, a path traversal flaw with a CVSS score of 9.6. An unauthenticated remote attacker can exploit it to execute arbitrary code with root privileges on Dell PowerEdge servers. Dell urges immediate patching.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/dell-system-update-vulnerability-cve-2026-86360/",
-    "publishedAt": "2026-10-06T10:44:41.000Z",
-    "cves": [
-      "CVE-2026-86360"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "dell-system-update-vulnerability-cve-2026-86360-en",
-      "article-468a8c",
-      "468a8c",
-      "dell-system-update-vulnerability-cve-2026-86360-enables-root"
-    ]
-  },
-  {
-    "slug": "ontinue-adds-dark-web-monitoring-to-ion-mxdr-5056ed",
-    "title": "Ontinue Adds Dark‑Web Monitoring to ION MXDR",
-    "summary": "Ontinue launched ION for Dark Web Monitoring, a managed add‑on that extends ION MXDR. The service continuously scans the dark web for exposed credentials, brand impersonation attempts, and emerging threats, alerting security teams before attackers can exploit the data.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/ontinue-ion-dark-web-monitoring/",
-    "publishedAt": "2026-10-06T10:10:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ontinue-adds-dark-web-monitoring-to-ion-mxdr",
-      "article-5056ed",
-      "5056ed"
-    ]
-  },
-  {
-    "slug": "blinder-tunnel-targets-iraqi-critical-infrastructu-6a7d2f",
-    "title": "Blinder Tunnel Targets Iraqi Critical Infrastructure",
-    "summary": "The Blinder Tunnel campaign, linked to Iran, uses fake Dubai Airports recruitment pages and GitHub-based command-and-control malware to compromise Iraqi critical infrastructure. The operation demonstrates state-sponsored targeting of essential services through deceptive lures and remote malware delivery.",
-    "category": "Malware",
-    "severity": "HIGH",
-    "source": "Unit 42",
-    "sourceUrl": "https://unit42.paloaltonetworks.com/blinder-tunnel-targets-critical-infrastructure/",
-    "publishedAt": "2026-10-06T10:00:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "blinder-tunnel-targets-iraqi-critical-infrastructu",
-      "article-6a7d2f",
-      "6a7d2f",
-      "blinder-tunnel-targets-iraqi-critical-infrastructure"
-    ]
-  },
-  {
-    "slug": "transcend-launches-rails-for-ai-agent-policy-enfor-29ee01",
-    "title": "Transcend Launches Rails for AI Agent Policy Enforcement",
-    "summary": "Transcend has introduced Transcend Rails, a new agent management framework that extends beyond identity and access control to enforce policies and spending limits on AI agents. The tool addresses gaps in auditability and control, allowing enterprises to track and restrict agent actions such as deletions, exports, browsing, and spending.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/transcend-rails-brings-policy-enforcement-and-spending-controls-to-ai-agents/",
-    "publishedAt": "2026-10-06T09:57:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "transcend-launches-rails-for-ai-agent-policy-enfor",
-      "article-29ee01",
-      "29ee01",
-      "transcend-launches-rails-for-ai-agent-policy-enforcement"
-    ]
-  },
-  {
-    "slug": "hack-the-box-releases-ai-range-enterprise-edition-557535",
-    "title": "Hack The Box Releases AI Range Enterprise Edition for Security Team Testing",
-    "summary": "Hack The Box has launched AI Range Enterprise Edition, enabling enterprise security teams to evaluate the effectiveness of their own AI agents in performing cybersecurity tasks. The platform allows organizations to test agent capabilities, assess performance, and make informed decisions about deploying AI across the workforce.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/hack-the-box-ai-range-enterprise-edition/",
-    "publishedAt": "2026-10-06T09:45:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hack-the-box-releases-ai-range-enterprise-edition",
-      "article-557535",
-      "557535",
-      "hack-the-box-releases-ai-range-enterprise-edition-for-securi"
-    ]
-  },
-  {
-    "slug": "smbs-seek-simpler-advanced-security-solutions-122ffe",
-    "title": "SMBs Seek Simpler Advanced Security Solutions",
-    "summary": "The cybersecurity market is increasingly complex, making it difficult for small and medium businesses to protect themselves. Many SMBs are looking for advanced protection that is easy to deploy and manage. The trend highlights a demand for streamlined security tools that reduce complexity while maintaining strong defense.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "ESET WeLiveSecurity",
-    "sourceUrl": "https://www.welivesecurity.com/en/business-security/quest-simplicity-why-smbs-want-advanced-protection-without-complexity/",
-    "publishedAt": "2026-10-06T09:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "smbs-seek-simpler-advanced-security-solutions",
-      "article-122ffe",
-      "122ffe"
     ]
   }
 ];

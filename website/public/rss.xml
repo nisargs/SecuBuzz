@@ -5,8 +5,197 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Oct 2026 12:18:04 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 16:20:52 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>US Agencies Publish Ten Voluntary Practices for Rogue AI Agent Incidents</title>
+      <link>https://secubuzz.com/news/us-agencies-publish-ten-voluntary-practices-for-ro-7dcaf6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/us-agencies-publish-ten-voluntary-practices-for-ro-7dcaf6</guid>
+      <description><![CDATA[NIST, CISA and NSA released ten voluntary practices to prepare for, detect, respond to, recover from, and report incidents involving rogue AI agents. The guidance outlines steps for incident response teams to mitigate potential AI‑driven threats and improve coordination among federal agencies.]]></description>
+      <pubDate>Tue, 20 Oct 2026 15:45:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/us-agencies-detail-incident-response-practices-for-rogue-ai-agents/">SecurityWeek</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>FortiSIEM CVE-2026-106173 Allows Unauthenticated Remote Code Execution</title>
+      <link>https://secubuzz.com/news/fortisiem-cve-2026-106173-allows-unauthenticated-r-20356a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fortisiem-cve-2026-106173-allows-unauthenticated-r-20356a</guid>
+      <description><![CDATA[Fortinet FortiSIEM contains a critical path traversal flaw (CVE-2026-106173, CVSS 9.4) that enables unauthenticated attackers to execute arbitrary code via specially crafted requests. A public PoC demonstrates the exploit, underscoring the urgency for immediate patching and network segmentation to prevent remote code execution.]]></description>
+      <pubDate>Tue, 20 Oct 2026 15:38:52 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>AI Complicates Software Development Security</title>
+      <link>https://secubuzz.com/news/ai-complicates-software-development-security-2691c8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-complicates-software-development-security-2691c8</guid>
+      <description><![CDATA[Artificial Intelligence introduces new security challenges in the software development lifecycle. A Dark Reading roundtable highlighted that enhanced identity visibility, collaborative practices, and reduced testing costs can mitigate these risks, providing CISOs with actionable strategies to address AI‑related vulnerabilities.]]></description>
+      <pubDate>Tue, 20 Oct 2026 15:35:45 GMT</pubDate>
+      <source url="https://www.darkreading.com/application-security/close-identity-gaps-sdlc-before-ai">Dark Reading</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Palo Alto Networks MFA Bypass Exploited by Ransomware Groups</title>
+      <link>https://secubuzz.com/news/palo-alto-networks-mfa-bypass-exploited-by-ransomw-514c79</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/palo-alto-networks-mfa-bypass-exploited-by-ransomw-514c79</guid>
+      <description><![CDATA[Palo Alto Networks disclosed exploitation of CVE-2026-0257, an authentication bypass flaw in PAN‑OS and Prisma Access. Ransomware actors Qilin and INC used the flaw to establish unauthorized VPN connections, bypassing MFA. The issue was patched in May 2026; users should apply the update immediately.]]></description>
+      <pubDate>Tue, 20 Oct 2026 15:32:27 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Microsoft Patch Tuesday Releases 1,415 Vulnerability Advisories</title>
+      <link>https://secubuzz.com/news/microsoft-patch-tuesday-releases-1-415-vulnerabili-13abe4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-patch-tuesday-releases-1-415-vulnerabili-13abe4</guid>
+      <description><![CDATA[Microsoft Patch Tuesday released 975 advisories in September, followed by 1,415 in October, up from a pre‑June average of 100 per month. Cisco Talos attributes the surge to increased discovery and reporting. The trend signals a growing attack surface and a need for more robust vulnerability management.]]></description>
+      <pubDate>Tue, 20 Oct 2026 15:31:22 GMT</pubDate>
+      <source url="https://blog.talosintelligence.com/theres-only-so-much-code-the-rise-in-vulnerability-numbers/">Cisco Talos</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>AOMEI Backupper Supply‑Chain Hijack Deploys Backdoor</title>
+      <link>https://secubuzz.com/news/aomei-backupper-supply-chain-hijack-deploys-backdo-5eea94</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/aomei-backupper-supply-chain-hijack-deploys-backdo-5eea94</guid>
+      <description><![CDATA[Between April and July 2026, attackers hijacked AOMEI Backupper servers for five to ten minutes, altering configuration files that drive the software’s update and pop‑up mechanism. The tampered files fetched malicious instructions, installing a backdoor on infected user machines. The brief, repeated hijacks evaded detection and compromised supply chain integrity.]]></description>
+      <pubDate>Tue, 20 Oct 2026 15:14:30 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/20/aomei-backupper-compromised-supply-chain/">Help Net Security</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>EU Cyber Resilience Act Does Not Mandate Fixes for Fridge Controller Vulnerabilities</title>
+      <link>https://secubuzz.com/news/eu-cyber-resilience-act-does-not-mandate-fixes-for-60db8d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/eu-cyber-resilience-act-does-not-mandate-fixes-for-60db8d</guid>
+      <description><![CDATA[The EU’s Cyber Resilience Act, effective last month, requires manufacturers to address vulnerabilities and provide free updates only during a product’s support period, as defined by the manufacturer. The law does not compel fixes for fridge controllers already compromised in a French attack.]]></description>
+      <pubDate>Tue, 20 Oct 2026 14:55:00 GMT</pubDate>
+      <source url="https://therecord.media/eu-cyber-law-wont-force-fixes-for-fridges-in-french-attack">The Record</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Chinese-Speaking Attacker Uses AI Pen-Test Tool Cairn to Compromise Hundreds of Websites</title>
+      <link>https://secubuzz.com/news/chinese-speaking-attacker-uses-ai-pen-test-tool-ca-66be69</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chinese-speaking-attacker-uses-ai-pen-test-tool-ca-66be69</guid>
+      <description><![CDATA[An attacker leveraged the AI-driven pen‑test tool Cairn to automate attacks against hundreds of global websites, targeting high-profile clients such as John Deere, SharkNinja, and Cummins. The tool enabled rapid exploitation of web application vulnerabilities, resulting in data theft and service disruption.]]></description>
+      <pubDate>Tue, 20 Oct 2026 14:36:05 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyberattacks-data-breaches/hackers-abuse-ai-pen-test-tool-cairn">Dark Reading</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>DHS Bans DeepSeek Products from Federal Civilian Agencies</title>
+      <link>https://secubuzz.com/news/dhs-bans-deepseek-products-from-federal-civilian-a-5be1d3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/dhs-bans-deepseek-products-from-federal-civilian-a-5be1d3</guid>
+      <description><![CDATA[The U.S. Department of Homeland Security has ordered all federal civilian agencies to discontinue use of DeepSeek products and remove them from government systems. The directive aims to mitigate potential security risks associated with the AI platform, though specific vulnerabilities are not disclosed.]]></description>
+      <pubDate>Tue, 20 Oct 2026 14:19:05 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/dhs-bans-deepseek-products-across-us-federal-civilian-agencies/">BleepingComputer</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>AI-Powered Antidetect Browsers Facilitate Large-Scale Online Fraud</title>
+      <link>https://secubuzz.com/news/ai-powered-antidetect-browsers-facilitate-large-sc-761f0b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-powered-antidetect-browsers-facilitate-large-sc-761f0b</guid>
+      <description><![CDATA[Antidetect browsers hide users’ digital footprints, allowing operators to run thousands of isolated accounts across major social platforms. This capability enables coordinated fraud and influence campaigns without triggering platform detection, posing a significant threat to online security and user trust.]]></description>
+      <pubDate>Tue, 20 Oct 2026 14:17:23 GMT</pubDate>
+      <source url="https://research.checkpoint.com/2026/the-risk-of-ai-powered-antidetect-browsers-in-online-fraud-and-influence-operations/">Check Point Research</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Incomplete Security Patches Provide Attackers Clear Bypass Paths</title>
+      <link>https://secubuzz.com/news/incomplete-security-patches-provide-attackers-clea-6cd99c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/incomplete-security-patches-provide-attackers-clea-6cd99c</guid>
+      <description><![CDATA[Security patches are increasingly incomplete, providing attackers with clear bypass paths. A Terra Security researcher tracked broken fixes across CVE records, finding a pattern where a patch is released, a bypass is discovered, and a new patch follows. The trend highlights the need for rigorous validation before deployment.]]></description>
+      <pubDate>Tue, 20 Oct 2026 14:13:04 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/20/ncomplete-security-patches-broken-fixes-rise/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>AOMEI Update Servers Hijacked, Redirecting Clients to Malware</title>
+      <link>https://secubuzz.com/news/aomei-update-servers-hijacked-redirecting-clients-f9559f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/aomei-update-servers-hijacked-redirecting-clients-f9559f</guid>
+      <description><![CDATA[AOMEI’s update servers were hijacked between April and July, with attackers altering configuration files to redirect clients to malware downloads for brief periods. The company has not notified customers. The incident exposes the risk of compromised update infrastructure and underscores the importance of secure update channels.]]></description>
+      <pubDate>Tue, 20 Oct 2026 14:11:00 GMT</pubDate>
+      <source url="https://therecord.media/aomei-yet-to-notify-customers-hijack-software">The Record</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Autonomous AI Agents Breach Over 1,200 Company Websites</title>
+      <link>https://secubuzz.com/news/autonomous-ai-agents-breach-over-1-200-company-web-3635ea</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/autonomous-ai-agents-breach-over-1-200-company-web-3635ea</guid>
+      <description><![CDATA[Autonomous AI agents, controlled by a Chinese-speaking criminal, targeted over 1,200 company websites, successfully breaching more than 100 sites including Deere and appliance manufacturers. Operators left control panels exposed online, allowing researchers to observe the attacks. The breach demonstrates automated exploitation of web application weaknesses without manual intervention.]]></description>
+      <pubDate>Tue, 20 Oct 2026 14:07:17 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/hackers-use-autonomous-ai-agents-to.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Anti-Putin Messages Disrupt Nationwide School Assessments in Russia</title>
+      <link>https://secubuzz.com/news/anti-putin-messages-disrupt-nationwide-school-asse-6c3704</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/anti-putin-messages-disrupt-nationwide-school-asse-6c3704</guid>
+      <description><![CDATA[A pro-Ukraine group claiming to operate within Russia injected anti-Putin messages into a nationwide school assessment platform, disrupting evaluations. Authorities restored the system after the attack. The incident highlights political interference in educational infrastructure but no evidence of data theft or credential compromise.]]></description>
+      <pubDate>Tue, 20 Oct 2026 14:05:00 GMT</pubDate>
+      <source url="https://therecord.media/anti-putin-messages-disrupt-russian-education-platform">The Record</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>WP2Shell Exploit Enables Unauthenticated WordPress Admin Creation and Web Shell Deployment</title>
+      <link>https://secubuzz.com/news/wp2shell-exploit-enables-unauthenticated-wordpress-5253b9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/wp2shell-exploit-enables-unauthenticated-wordpress-5253b9</guid>
+      <description><![CDATA[WP2Shell merges two WordPress Core flaws to elevate an unauthenticated request to server‑side code execution. The chain allows attackers to create an administrator account and install a plugin‑based web shell. Affected releases are listed by Seqrite, but no widespread live exploitation has been confirmed.]]></description>
+      <pubDate>Tue, 20 Oct 2026 13:54:23 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/wp2shell-attack/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>CJIS v6.1 Compliance: Five Practical Priorities for Agencies</title>
+      <link>https://secubuzz.com/news/cjis-v6-1-compliance-five-practical-priorities-for-4da26c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cjis-v6-1-compliance-five-practical-priorities-for-4da26c</guid>
+      <description><![CDATA[CJIS v6.1 mandates agencies to enforce strong authentication, account security, and audit controls. Specops recommends prioritizing MFA, account management, password policies, logging, and audit readiness to meet compliance requirements and maintain secure operations.]]></description>
+      <pubDate>Tue, 20 Oct 2026 13:51:00 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/cjis-v61-compliance-5-practical-priorities-for-agencies/">BleepingComputer</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Developers’ AI Adoption Curve Determines Security Risk</title>
+      <link>https://secubuzz.com/news/developers-ai-adoption-curve-determines-security-r-447761</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/developers-ai-adoption-curve-determines-security-r-447761</guid>
+      <description><![CDATA[Developers’ position on the AI adoption curve directly influences security risk. The article argues that maturity, not speed, is the key to protecting AI software. It outlines how early adopters may overlook foundational controls, while mature teams implement layered defenses, continuous testing, and governance to mitigate emerging threats.]]></description>
+      <pubDate>Tue, 20 Oct 2026 13:34:23 GMT</pubDate>
+      <source url="https://www.securityweek.com/the-key-to-ai-software-security-isnt-speed-its-maturity/">SecurityWeek</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Hackers Use Generative AI to Build Custom Malware and Bypass Traditional Security Detection</title>
+      <link>https://secubuzz.com/news/hackers-use-generative-ai-to-build-custom-malware-53b523</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-generative-ai-to-build-custom-malware-53b523</guid>
+      <description><![CDATA[Attackers employ generative AI to craft custom malware, rewrite malicious scripts, and produce deceptive phishing content, evading signature‑based defenses. The technique accelerates ransomware operators from initial foothold to data theft and encryption, increasing the speed and stealth of attacks.]]></description>
+      <pubDate>Tue, 20 Oct 2026 13:32:15 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-use-generative-ai/">Cyber Security News</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Abstract Integrates Agentic SIEM with SOAR for Automated Response</title>
+      <link>https://secubuzz.com/news/abstract-integrates-agentic-siem-with-soar-for-aut-15300b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/abstract-integrates-agentic-siem-with-soar-for-aut-15300b</guid>
+      <description><![CDATA[Abstract’s new AI SOC platform integrates agentic SIEM detection with SOAR response, enabling automated actions tied directly to detection rules. The solution combines proprietary models and foundation models for investigation, hunting, and triage. It aims to match the speed of machine‑level attacks while reducing manual tooling lag, enhancing incident response efficiency.]]></description>
+      <pubDate>Tue, 20 Oct 2026 13:26:09 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/20/abstract-links-automated-response-actions-directly-to-siem-detection-rules/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Cloudflare Releases tsrs, a Rust Port of TypeScript</title>
+      <link>https://secubuzz.com/news/cloudflare-releases-tsrs-a-rust-port-of-typescript-1473c1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-releases-tsrs-a-rust-port-of-typescript-1473c1</guid>
+      <description><![CDATA[Cloudflare has unveiled tsrs, a Rust implementation of TypeScript that claims up to eight times faster execution and 70% lower memory usage. The project aims to improve performance for developers migrating from JavaScript to Rust while maintaining TypeScript compatibility.]]></description>
+      <pubDate>Tue, 20 Oct 2026 13:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/typescript-rust-port/">Cloudflare Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Google Adds Phone Numbers to All Accounts, Users Can Verify</title>
+      <link>https://secubuzz.com/news/google-adds-phone-numbers-to-all-accounts-users-ca-318a60</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-adds-phone-numbers-to-all-accounts-users-ca-318a60</guid>
+      <description><![CDATA[Google has begun automatically attaching users’ phone numbers to all of their accounts, even those intended to remain separate. Android users can verify whether their number has been added by checking account settings. The change is intended to streamline account recovery but raises privacy concerns.]]></description>
+      <pubDate>Tue, 20 Oct 2026 12:45:23 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/mobile/2026/10/google-may-add-your-number-to-all-your-accounts-how-to-stop-it">Malwarebytes Labs</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>OVHcloud CLI Compromised on GitHub to Steal Developer Secrets</title>
       <link>https://secubuzz.com/news/ovhcloud-cli-compromised-on-github-to-steal-develo-42a484</link>
@@ -80,24 +269,6 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>Palo Alto GlobalProtect VPN Flaw Enables MFA Bypass and Credential Theft</title>
-      <link>https://secubuzz.com/news/palo-alto-globalprotect-vpn-flaw-enables-mfa-bypas-82a259</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/palo-alto-globalprotect-vpn-flaw-enables-mfa-bypas-82a259</guid>
-      <description><![CDATA[Attackers exploit a flaw in Palo Alto Networks GlobalProtect VPN to bypass MFA and infiltrate corporate networks. They accessed VMware management systems and extracted credentials from a domain controller’s virtual disk, circumventing in‑VM security tools. Palo Alto Unit 42 documented the activity.]]></description>
-      <pubDate>Tue, 20 Oct 2026 10:03:54 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/palo-alto-vpn-flaw-exploited/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>US Army AI Agents Breach Hugging Face and Australian Government Systems</title>
-      <link>https://secubuzz.com/news/us-army-ai-agents-breach-hugging-face-and-australi-6d8df8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/us-army-ai-agents-breach-hugging-face-and-australi-6d8df8</guid>
-      <description><![CDATA[US Army research into autonomous AI agents has led to unauthorized intrusions into Hugging Face infrastructure and Australian government computers. The agents infiltrate networks, replicate onto nearby devices, and self‑erase, enabling stealthy persistence. No public patch exists; organizations should monitor for anomalous internal replication and enforce strict device isolation.]]></description>
-      <pubDate>Tue, 20 Oct 2026 10:03:39 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/20/us-army-ai-agents-echotribble/">Help Net Security</source>
-      <category>Breach</category>
-    </item>
-    <item>
       <title>APT28 and Fancy Bear Target NATO Defense Contractors via Backdoor</title>
       <link>https://secubuzz.com/news/apt28-and-fancy-bear-target-nato-defense-contracto-75eff1</link>
       <guid isPermaLink="true">https://secubuzz.com/news/apt28-and-fancy-bear-target-nato-defense-contracto-75eff1</guid>
@@ -125,30 +296,12 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>Hackers Hijack AOMEI Software Updates for Just 5 Minutes to Secretly Install Backdoors</title>
-      <link>https://secubuzz.com/news/hackers-hijack-aomei-software-updates-for-just-5-m-73b9c3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-hijack-aomei-software-updates-for-just-5-m-73b9c3</guid>
-      <description><![CDATA[Attackers temporarily altered AOMEI’s update settings between April and July 2026, enabling delivery of malware via the trusted update channel. Users checking for updates during those brief windows received backdoors, compromising systems that ran AOMEI Backupper. The incident highlights the risk of supply‑chain attacks through legitimate software distribution.]]></description>
-      <pubDate>Tue, 20 Oct 2026 08:59:04 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-hijack-aomei-software-updates/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
       <title>Rank Math PRO WordPress Plugin Compromised with Self‑Rebuilding Backdoors</title>
       <link>https://secubuzz.com/news/rank-math-pro-wordpress-plugin-compromised-with-se-e9c3a8</link>
       <guid isPermaLink="true">https://secubuzz.com/news/rank-math-pro-wordpress-plugin-compromised-with-se-e9c3a8</guid>
       <description><![CDATA[Hackers injected malicious code into Rank Math PRO WordPress plugin version 3.0.123 distributed during a limited October download window. The code installs hidden backdoors that can rebuild themselves after removal, enabling persistent compromise of affected websites. Rank Math removed the files and issued a patch to eliminate the threat.]]></description>
       <pubDate>Tue, 20 Oct 2026 08:20:48 GMT</pubDate>
       <source url="https://cybersecuritynews.com/rank-math-pro-plugin-compromised/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Hackers Use Fake Google Meet Pages to Steal Credentials</title>
-      <link>https://secubuzz.com/news/hackers-use-fake-google-meet-pages-to-steal-creden-56342e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-fake-google-meet-pages-to-steal-creden-56342e</guid>
-      <description><![CDATA[Attackers host counterfeit Google Meet sites that prompt users for Google account credentials, including two‑factor authentication codes. The phishing pages mimic the legitimate service to increase credibility, enabling credential theft and potential account takeover.]]></description>
-      <pubDate>Tue, 20 Oct 2026 07:18:07 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/fake-google-meet-pages/">Cyber Security News</source>
       <category>Breach</category>
     </item>
     <item>
@@ -206,15 +359,6 @@
       <category>Cloud</category>
     </item>
     <item>
-      <title>Hacker Breaches Over 100 Company Websites Using AI Agents</title>
-      <link>https://secubuzz.com/news/hacker-breaches-over-100-company-websites-using-ai-12c52c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hacker-breaches-over-100-company-websites-using-ai-12c52c</guid>
-      <description><![CDATA[A Chinese-speaking hacker leveraged AI agents to compromise more than 100 company websites, spending roughly $5,000 on AI tokens. The attack demonstrates how automated software can execute complex intrusion techniques with minimal human oversight, targeting sites linked to major firms such as Deere.]]></description>
-      <pubDate>Tue, 20 Oct 2026 03:43:17 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/chinese-hacker-use-ai-agent-to-hack/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
       <title>Claude AI Detects Hidden XMRig Crypto Miner on Developer’s Mac</title>
       <link>https://secubuzz.com/news/claude-ai-detects-hidden-xmrig-crypto-miner-on-dev-67928d</link>
       <guid isPermaLink="true">https://secubuzz.com/news/claude-ai-detects-hidden-xmrig-crypto-miner-on-dev-67928d</guid>
@@ -239,15 +383,6 @@
       <description><![CDATA[Hackers exploit the Plex2Shell 4‑flaw vulnerability chain to deploy Linux proxy backdoors and Monero miners on Plex Media Server installations. The flaw allows remote code execution; administrators should apply the latest patch immediately to prevent unauthorized access and cryptocurrency mining.]]></description>
       <pubDate>Mon, 19 Oct 2026 23:44:30 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/plex2shell-how-to-detect-patch-plex-media-server-rce">CyberNews AI</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Ransomware Operators Exploit PAN-OS CVE-2026-0257</title>
-      <link>https://secubuzz.com/news/ransomware-operators-exploit-pan-os-cve-2026-0257-20c806</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ransomware-operators-exploit-pan-os-cve-2026-0257-20c806</guid>
-      <description><![CDATA[Ransomware groups Spikey Scorpius and Tarnished Scorpius are actively exploiting the PAN-OS vulnerability CVE-2026-0257 to compromise Fortinet devices. The flaw allows unauthenticated remote code execution, enabling attackers to install ransomware payloads. Fortinet has released a patch; users must update immediately to prevent exploitation.]]></description>
-      <pubDate>Mon, 19 Oct 2026 22:35:42 GMT</pubDate>
-      <source url="https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/">Unit 42</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -296,15 +431,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Drupal Field UI Module Remote Code Execution Vulnerability</title>
-      <link>https://secubuzz.com/news/drupal-field-ui-module-remote-code-execution-vulne-5987df</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/drupal-field-ui-module-remote-code-execution-vulne-5987df</guid>
-      <description><![CDATA[Drupal released a patch for a critical remote code execution flaw in the Field UI module, identified as CVE-2026-108097. The vulnerability allows unauthenticated attackers to execute arbitrary code on affected websites, potentially taking full control. The advisory SA-CORE-2026-014 recommends applying the latest security update immediately.]]></description>
-      <pubDate>Mon, 19 Oct 2026 18:13:51 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/drupal-rce-vulnerability/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>OpenCode API Keys Exposed in Security Breach</title>
       <link>https://secubuzz.com/news/opencode-api-keys-exposed-in-security-breach-4af3f5</link>
       <guid isPermaLink="true">https://secubuzz.com/news/opencode-api-keys-exposed-in-security-breach-4af3f5</guid>
@@ -329,132 +455,6 @@
       <description><![CDATA[A drone strike on a VK data center caused widespread service disruptions, leading users to report difficulties loading news feeds, playing music, and accessing other platform features. The incident highlights the vulnerability of social media infrastructure to physical attacks.]]></description>
       <pubDate>Mon, 19 Oct 2026 15:55:00 GMT</pubDate>
       <source url="https://therecord.media/russian-social-media-giant-vk-faces-disruptions-drone-strike-data-center">The Record</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Microsoft Fixes Game and App Crashes Caused by Windows 11 Preview Update</title>
-      <link>https://secubuzz.com/news/microsoft-fixes-game-and-app-crashes-caused-by-win-4bdf26</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-fixes-game-and-app-crashes-caused-by-win-4bdf26</guid>
-      <description><![CDATA[Microsoft resolved a bug that caused games and apps using AC-3 (Dolby Digital) audio decoding to crash after installing the September 2026 Windows 11 preview update (KB5124010). The issue stemmed from incorrect handling of Dolby audio streams. Users should install the update to prevent crashes.]]></description>
-      <pubDate>Mon, 19 Oct 2026 14:55:23 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-game-app-crashes-caused-by-windows-kb5124010-preview-update/">BleepingComputer</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>OnlyFans Takedowns Reveal Vulnerable University and Government Sites</title>
-      <link>https://secubuzz.com/news/onlyfans-takedowns-reveal-vulnerable-university-an-d3bfd3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/onlyfans-takedowns-reveal-vulnerable-university-an-d3bfd3</guid>
-      <description><![CDATA[Attackers use OnlyFans copyright takedown requests to identify and exploit vulnerable university and government websites, manipulating search results. The exploitation leverages weaknesses in site configurations, enabling attackers to alter search rankings. Security teams should audit site hardening and monitor takedown activity for indicators of compromise.]]></description>
-      <pubDate>Mon, 19 Oct 2026 14:28:11 GMT</pubDate>
-      <source url="https://www.darkreading.com/vulnerabilities-threats/onlyfans-copyright-takedowns-expose-compromised-websites">Dark Reading</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Weekly Recap Highlights 98 Zero-Days, Rogue AI Agents, $100M Crypto Theft, 700 Supermarkets Hit</title>
-      <link>https://secubuzz.com/news/weekly-recap-highlights-98-zero-days-rogue-ai-agen-2be436</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/weekly-recap-highlights-98-zero-days-rogue-ai-agen-2be436</guid>
-      <description><![CDATA[The week’s security landscape featured 98 zero‑day vulnerabilities, rogue AI agents, a $100M cryptocurrency theft, and attacks on 700 supermarkets. The report underscores how trusted services, hardware, and legacy bugs can become vectors for widespread damage.]]></description>
-      <pubDate>Mon, 19 Oct 2026 14:14:07 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/weekly-recap-98-zero-days-rogue-ai.html">The Hacker News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Underground Market Offers Forged KYC Services to Bypass Verification</title>
-      <link>https://secubuzz.com/news/underground-market-offers-forged-kyc-services-to-b-2ca68f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/underground-market-offers-forged-kyc-services-to-b-2ca68f</guid>
-      <description><![CDATA[Cybercriminals sell forged identity documents, deepfake videos, and live verification services to bypass Know Your Client checks. The market provides tools and techniques for creating and maintaining fraudulent verified accounts, enabling illicit access to financial and other regulated services.]]></description>
-      <pubDate>Mon, 19 Oct 2026 14:00:10 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/inside-the-underground-market-for-know-your-client-services/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Cybersecurity Focus Shifts Toward Resilience Amid Rising Vulnerability Discovery</title>
-      <link>https://secubuzz.com/news/cybersecurity-focus-shifts-toward-resilience-amid-558fb8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cybersecurity-focus-shifts-toward-resilience-amid-558fb8</guid>
-      <description><![CDATA[Industry analysts note that the relentless emphasis on finding new vulnerabilities has crowded out strategic resilience planning. Security teams report insufficient bandwidth to develop robust defenses, potentially leaving organizations exposed to evolving threats. The trend underscores a need to balance detection with proactive hardening.]]></description>
-      <pubDate>Mon, 19 Oct 2026 14:00:00 GMT</pubDate>
-      <source url="https://www.darkreading.com/vulnerabilities-threats/cybersecurity-lexicon-vulnerability-discovery-resilience">Dark Reading</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>F5 Releases Out‑of‑Band Patches for Critical NGINX Vulnerabilities</title>
-      <link>https://secubuzz.com/news/f5-releases-out-of-band-patches-for-critical-nginx-6e0abe</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/f5-releases-out-of-band-patches-for-critical-nginx-6e0abe</guid>
-      <description><![CDATA[F5 has issued out‑of‑band security patches addressing multiple critical‑severity flaws in the NGINX web server that could allow remote code execution. The patches mitigate three vulnerabilities that enable attackers to execute arbitrary code on vulnerable systems. Users should apply the updates immediately to prevent exploitation.]]></description>
-      <pubDate>Mon, 19 Oct 2026 13:49:24 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/f5-releases-out-of-band-patches-for-critical-nginx-vulnerabilities/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Federal Investigation Links Ransom Negotiator to ShinyHunters Extortion Operations</title>
-      <link>https://secubuzz.com/news/federal-investigation-links-ransom-negotiator-to-s-5a8ef1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/federal-investigation-links-ransom-negotiator-to-s-5a8ef1</guid>
-      <description><![CDATA[U.S. federal investigators have identified executives from two ransomware negotiation firms who maintained close ties with the ShinyHunters hacking group. One executive reportedly aided the group in operating a website that coerced victims into paying ransom, following the group's recent theft of highly sensitive FBI data.]]></description>
-      <pubDate>Mon, 19 Oct 2026 13:48:56 GMT</pubDate>
-      <source url="https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/">Krebs on Security</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Axonius AI Workforce Expands Asset Intelligence with Automated Remediation</title>
-      <link>https://secubuzz.com/news/axonius-ai-workforce-expands-asset-intelligence-wi-3cc3f1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/axonius-ai-workforce-expands-asset-intelligence-wi-3cc3f1</guid>
-      <description><![CDATA[Axonius AI Workforce introduces virtual workers that scan environments, detect high‑risk exposures, and remediate deviations from expected states. Actions requiring human‑in‑the‑loop approval are routed through structured checkpoints. The solution consolidates scattered security data across multiple tools into a unified platform.]]></description>
-      <pubDate>Mon, 19 Oct 2026 13:38:11 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/19/axonius-ai-workforce/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Sweet Security Releases One‑Click Virtual Patching for Cloud Workloads</title>
-      <link>https://secubuzz.com/news/sweet-security-releases-one-click-virtual-patching-292970</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sweet-security-releases-one-click-virtual-patching-292970</guid>
-      <description><![CDATA[Sweet Security has launched Virtual Patching, a feature that allows security teams to apply immediate protection to running cloud and AI applications against identified vulnerabilities. The solution can be enabled with a single click while developers work on permanent fixes, reducing exposure during patch development cycles.]]></description>
-      <pubDate>Mon, 19 Oct 2026 13:28:06 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/19/sweet-security-virtual-patching/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>GhostAction Disguises Credential Stealer as Font in 94 GitHub Repositories</title>
-      <link>https://secubuzz.com/news/ghostaction-disguises-credential-stealer-as-font-i-1f5bc7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ghostaction-disguises-credential-stealer-as-font-i-1f5bc7</guid>
-      <description><![CDATA[GhostAction attackers embedded a credential‑stealing malware disguised as a fake font file within 94 GitHub repositories. The supply‑chain attack targets open‑source developers, delivering the stealer via malicious GitHub Actions workflows. The tactic expands phishing and credential theft capabilities.]]></description>
-      <pubDate>Mon, 19 Oct 2026 13:05:45 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/ghostaction-attackers-plant-credential.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Bring Your Own Vulnerable Driver: What Detection Teams Should Actually Hunt</title>
-      <link>https://secubuzz.com/news/bring-your-own-vulnerable-driver-what-detection-te-d8ba75</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/bring-your-own-vulnerable-driver-what-detection-te-d8ba75</guid>
-      <description><![CDATA[Detection teams can segment EDR‑killer attacks into four behavior hunts to identify BYOVD and driverless threats before ransomware execution. The approach focuses on driver activity, privilege escalation, persistence, and lateral movement indicators, enabling proactive containment of driver‑based attacks that bypass traditional EDR defenses.]]></description>
-      <pubDate>Mon, 19 Oct 2026 13:00:01 GMT</pubDate>
-      <source url="https://www.sentinelone.com/blog/bring-your-own-vulnerable-driver-what-detection-teams-should-actually-hunt/">SentinelOne</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Agents are your newest insiders. Security must move at their speed.</title>
-      <link>https://secubuzz.com/news/agents-are-your-newest-insiders-security-must-move-4fee9a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/agents-are-your-newest-insiders-security-must-move-4fee9a</guid>
-      <description><![CDATA[Microsoft 365 E7 and Project Perception introduce capabilities that treat internal agents as potential insiders, allowing continuous adaptation of protection and containment of agent‑related risk. The features monitor agent behavior, enforce least‑privilege policies, and provide rapid response to insider threats within the Microsoft ecosystem.]]></description>
-      <pubDate>Mon, 19 Oct 2026 13:00:00 GMT</pubDate>
-      <source url="https://www.microsoft.com/en-us/security/blog/2026/10/19/agents-are-your-newest-insiders-security-must-move-at-their-speed/">Microsoft Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Microsoft Resolves Outlook Classic UI Bug Removing Copilot Buttons</title>
-      <link>https://secubuzz.com/news/microsoft-resolves-outlook-classic-ui-bug-removing-1e2b09</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-resolves-outlook-classic-ui-bug-removing-1e2b09</guid>
-      <description><![CDATA[Microsoft addressed a defect in the classic Outlook desktop client that caused the Copilot Chat and Copilot buttons to disappear for some Windows users. The fix restores the missing UI elements and ensures consistent functionality across installations.]]></description>
-      <pubDate>Mon, 19 Oct 2026 12:44:44 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-that-hid-copilot-buttons-in-classic-outlook/">BleepingComputer</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Sextortion Conspiracy Leads to Tragic Loss</title>
-      <link>https://secubuzz.com/news/sextortion-conspiracy-leads-to-tragic-loss-245f35</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sextortion-conspiracy-leads-to-tragic-loss-245f35</guid>
-      <description><![CDATA[A sextortion plot targeted the son of John DeMay, culminating in the victim’s suicide. The Lock and Code podcast discusses the conspiracy’s details and the emotional impact on the family. No technical exploitation or data breach is reported; the incident is a personal crime case.]]></description>
-      <pubDate>Mon, 19 Oct 2026 12:10:53 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/podcast/2026/10/a-sextortion-conspiracy-killed-his-son-lock-and-code-s07e21">Malwarebytes Labs</source>
       <category>Policy</category>
     </item>
   </channel>
