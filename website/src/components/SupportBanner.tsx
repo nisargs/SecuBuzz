@@ -19,14 +19,14 @@ export function SupportBanner({ className = '', compact = false }: SupportBanner
           <div className="space-y-1">
             <div className="flex items-center gap-2">
               <span className="text-[11px] font-mono font-medium uppercase tracking-wider text-accent">
-                Independent · 100% Ad-Free
+                Independent · Community Supported
               </span>
             </div>
             <h3 className="text-base sm:text-lg font-semibold tracking-tight text-ink">
-              SecuBuzz is free and staying free.
+              Support independent security research.
             </h3>
             <p className="text-sm text-muted max-w-xl leading-relaxed">
-              If it saved you time this week, you can support it here.
+              If SecuBuzz saved you time this week, you can support the project here.
             </p>
           </div>
         </div>
