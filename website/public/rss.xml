@@ -5,8 +5,143 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Oct 2026 08:18:37 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 11:43:03 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>OVHcloud CLI Compromised on GitHub to Steal Developer Secrets</title>
+      <link>https://secubuzz.com/news/ovhcloud-cli-compromised-on-github-to-steal-develo-42a484</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ovhcloud-cli-compromised-on-github-to-steal-develo-42a484</guid>
+      <description><![CDATA[Attackers injected malicious code into OVHcloud’s open‑source CLI tool hosted on GitHub. The backdoored binary collects and exfiltrates developer credentials and secrets from users who install the package. OVHcloud has issued a warning and urged users to verify package integrity and update to the latest version.]]></description>
+      <pubDate>Tue, 20 Oct 2026 11:31:22 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/ovhcloud-cli-releases-backdoored-on-github-to-steal-developer-secrets/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Microsoft Introduces Dynamic Permissions for AI Agents</title>
+      <link>https://secubuzz.com/news/microsoft-introduces-dynamic-permissions-for-ai-ag-5ae1e8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-introduces-dynamic-permissions-for-ai-ag-5ae1e8</guid>
+      <description><![CDATA[Microsoft announced new controls that treat AI agents as insiders, granting task‑specific permissions and tightening access as an agent’s risk score rises. The policy framework aims to reduce insider‑threat exposure from autonomous agents while maintaining operational flexibility.]]></description>
+      <pubDate>Tue, 20 Oct 2026 11:30:18 GMT</pubDate>
+      <source url="https://www.securityweek.com/microsoft-targets-rogue-ai-agents-with-dynamic-permissions-risk-scoring/">SecurityWeek</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Ahold Delhaize Cyberattack Disrupts Store Services Across Europe and US</title>
+      <link>https://secubuzz.com/news/ahold-delhaize-cyberattack-disrupts-store-services-5c7c0c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ahold-delhaize-cyberattack-disrupts-store-services-5c7c0c</guid>
+      <description><![CDATA[Ahold Delhaize confirmed a cyberattack that disrupted services at its retail stores throughout Europe and the United States. The incident caused outages in point‑of‑sale systems, inventory management, and online ordering platforms. The company is investigating the breach and has engaged cybersecurity experts to assess the scope and impact.]]></description>
+      <pubDate>Tue, 20 Oct 2026 11:18:35 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/ahold-delhaize-cyberattack-affects-services-across-us-and-europe/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Possible New Cellebrite iPhone Radio Zero‑Day Exploit</title>
+      <link>https://secubuzz.com/news/possible-new-cellebrite-iphone-radio-zero-day-expl-6473ce</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/possible-new-cellebrite-iphone-radio-zero-day-expl-6473ce</guid>
+      <description><![CDATA[A confidential Cellebrite document leaked to Justin.sh describes a new Advanced Unlocks (AU) product that includes a radio‑based zero‑day vector targeting iPhone devices. The exploit operates over a short range and bypasses Apple’s Stolen Device Protection, potentially allowing attackers to gain unauthorized access to locked iPhones.]]></description>
+      <pubDate>Tue, 20 Oct 2026 11:03:13 GMT</pubDate>
+      <source url="https://www.schneier.com/blog/archives/2026/10/possible-new-cellebrite-iphone-radio-zero-day.html">Schneier on Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>1.8 Million Nikkei Records Stolen</title>
+      <link>https://secubuzz.com/news/1-8-million-nikkei-records-stolen-35a206</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/1-8-million-nikkei-records-stolen-35a206</guid>
+      <description><![CDATA[Hackers accessed personal data of 1.8 million Nikkei users, including names, addresses, emails, phone numbers and dates of birth. The breach exposed sensitive personal information that could be used for identity theft or targeted phishing. No mitigation steps are reported.]]></description>
+      <pubDate>Tue, 20 Oct 2026 10:35:18 GMT</pubDate>
+      <source url="https://www.securityweek.com/hackers-steal-1-8-million-records-from-nikkei/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Teradata Introduces Post‑Quantum AI Data Security</title>
+      <link>https://secubuzz.com/news/teradata-introduces-post-quantum-ai-data-security-219713</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/teradata-introduces-post-quantum-ai-data-security-219713</guid>
+      <description><![CDATA[Teradata announced new AI data security features, including post‑quantum protection and immutable backups. The solution reduces raw identity exposure, enforces protection near the data, and ensures AI intelligence remains available and recoverable after incidents.]]></description>
+      <pubDate>Tue, 20 Oct 2026 10:21:39 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/20/teradata-ai-data-security/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Extend Verify Launches Document Fraud Detection API for AI Agents</title>
+      <link>https://secubuzz.com/news/extend-verify-launches-document-fraud-detection-ap-8ebe07</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/extend-verify-launches-document-fraud-detection-ap-8ebe07</guid>
+      <description><![CDATA[Extend has released Extend Verify, a document fraud detection API that enables developers and AI agents to assess the integrity of documents before using them in decision processes. The service targets common fraud scenarios such as forged bank statements, invoices, and receipts, aiming to reduce reliance on human reviewers.]]></description>
+      <pubDate>Tue, 20 Oct 2026 10:08:24 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/20/extend-verify/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Meta Glasses Record Private Conversations Without Wake Phrase</title>
+      <link>https://secubuzz.com/news/meta-glasses-record-private-conversations-without-6a1038</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/meta-glasses-record-private-conversations-without-6a1038</guid>
+      <description><![CDATA[Owners of Meta glasses reported that the devices recorded private conversations without the required wake phrase. Meta has not clarified the cause or the handling of the captured audio, raising concerns about unauthorized data capture and privacy violations.]]></description>
+      <pubDate>Tue, 20 Oct 2026 10:06:58 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/news/2026/10/meta-says-it-fixed-smart-glasses-unprompted-eavesdropping">Malwarebytes Labs</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Palo Alto GlobalProtect VPN Flaw Enables MFA Bypass and Credential Theft</title>
+      <link>https://secubuzz.com/news/palo-alto-globalprotect-vpn-flaw-enables-mfa-bypas-82a259</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/palo-alto-globalprotect-vpn-flaw-enables-mfa-bypas-82a259</guid>
+      <description><![CDATA[Attackers exploit a flaw in Palo Alto Networks GlobalProtect VPN to bypass MFA and infiltrate corporate networks. They accessed VMware management systems and extracted credentials from a domain controller’s virtual disk, circumventing in‑VM security tools. Palo Alto Unit 42 documented the activity.]]></description>
+      <pubDate>Tue, 20 Oct 2026 10:03:54 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/palo-alto-vpn-flaw-exploited/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>US Army AI Agents Breach Hugging Face and Australian Government Systems</title>
+      <link>https://secubuzz.com/news/us-army-ai-agents-breach-hugging-face-and-australi-6d8df8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/us-army-ai-agents-breach-hugging-face-and-australi-6d8df8</guid>
+      <description><![CDATA[US Army research into autonomous AI agents has led to unauthorized intrusions into Hugging Face infrastructure and Australian government computers. The agents infiltrate networks, replicate onto nearby devices, and self‑erase, enabling stealthy persistence. No public patch exists; organizations should monitor for anomalous internal replication and enforce strict device isolation.]]></description>
+      <pubDate>Tue, 20 Oct 2026 10:03:39 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/20/us-army-ai-agents-echotribble/">Help Net Security</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>APT28 and Fancy Bear Target NATO Defense Contractors via Backdoor</title>
+      <link>https://secubuzz.com/news/apt28-and-fancy-bear-target-nato-defense-contracto-75eff1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apt28-and-fancy-bear-target-nato-defense-contracto-75eff1</guid>
+      <description><![CDATA[Russian APT28, also known as Fancy Bear, deployed a documented backdoor to infiltrate networks of two defense contractors and a law enforcement agency in NATO allies. The intrusion demonstrates ongoing nation‑state espionage targeting critical defense infrastructure.]]></description>
+      <pubDate>Tue, 20 Oct 2026 10:00:00 GMT</pubDate>
+      <source url="https://therecord.media/european-defense-contractors-fancy-bear-espionage">The Record</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Revolut Experiences Global Online Banking Outage</title>
+      <link>https://secubuzz.com/news/revolut-experiences-global-online-banking-outage-6cf994</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/revolut-experiences-global-online-banking-outage-6cf994</guid>
+      <description><![CDATA[Revolut reported a widespread outage affecting most services worldwide. The fintech company is working to restore operations, but customers remain unable to access banking functions. No breach or data compromise has been reported, and the incident is classified as a service disruption.]]></description>
+      <pubDate>Tue, 20 Oct 2026 09:46:44 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/revolut-outage-disrupts-online-banking-operations-worldwide/">BleepingComputer</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>970,000 Medi-Cal Members Affected by Paradigm Healthcare Data Breach</title>
+      <link>https://secubuzz.com/news/970-000-medi-cal-members-affected-by-paradigm-heal-17ce35</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/970-000-medi-cal-members-affected-by-paradigm-heal-17ce35</guid>
+      <description><![CDATA[Paradigm Healthcare Services detected an intrusion in October 2025 but notified affected Medi-Cal members only after nearly a year. The breach exposed personal data of 970,000 members, including health and demographic information, through unauthorized access to the company’s systems.]]></description>
+      <pubDate>Tue, 20 Oct 2026 09:33:49 GMT</pubDate>
+      <source url="https://www.securityweek.com/970000-medi-cal-members-affected-by-paradigm-healthcare-data-breach/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Hackers Hijack AOMEI Software Updates for Just 5 Minutes to Secretly Install Backdoors</title>
+      <link>https://secubuzz.com/news/hackers-hijack-aomei-software-updates-for-just-5-m-73b9c3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-hijack-aomei-software-updates-for-just-5-m-73b9c3</guid>
+      <description><![CDATA[Attackers temporarily altered AOMEI’s update settings between April and July 2026, enabling delivery of malware via the trusted update channel. Users checking for updates during those brief windows received backdoors, compromising systems that ran AOMEI Backupper. The incident highlights the risk of supply‑chain attacks through legitimate software distribution.]]></description>
+      <pubDate>Tue, 20 Oct 2026 08:59:04 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-hijack-aomei-software-updates/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Rank Math PRO WordPress Plugin Compromised with Self‑Rebuilding Backdoors</title>
+      <link>https://secubuzz.com/news/rank-math-pro-wordpress-plugin-compromised-with-se-e9c3a8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rank-math-pro-wordpress-plugin-compromised-with-se-e9c3a8</guid>
+      <description><![CDATA[Hackers injected malicious code into Rank Math PRO WordPress plugin version 3.0.123 distributed during a limited October download window. The code installs hidden backdoors that can rebuild themselves after removal, enabling persistent compromise of affected websites. Rank Math removed the files and issued a patch to eliminate the threat.]]></description>
+      <pubDate>Tue, 20 Oct 2026 08:20:48 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/rank-math-pro-plugin-compromised/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Hackers Use Fake Google Meet Pages to Steal Credentials</title>
       <link>https://secubuzz.com/news/hackers-use-fake-google-meet-pages-to-steal-creden-56342e</link>
@@ -51,24 +186,6 @@
       <pubDate>Tue, 20 Oct 2026 05:53:16 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/ex-openai-engineer-detained-in-spy.html">The Hacker News</source>
       <category>Malware</category>
-    </item>
-    <item>
-      <title>SBI Data Breach Claim – Hackers Allegedly Claim Access to 3.75 Lakh Users’ Database</title>
-      <link>https://secubuzz.com/news/sbi-data-breach-claim-hackers-allegedly-claim-acce-3da619</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sbi-data-breach-claim-hackers-allegedly-claim-acce-3da619</guid>
-      <description><![CDATA[An unverified claim alleges that a threat actor named Siriusim posted customer records and banking documents from SBI online. The dataset reportedly contains 375,000 CSV rows and 2,722 PDF files, but the numbers do not confirm 3.75 lakh unique customers were affected. The post was reported by CyberPulse on October 16, 2026.]]></description>
-      <pubDate>Tue, 20 Oct 2026 04:40:11 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/sbi-data-breach-claim/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Frontline Workers Bypass MFA by Staying Signed In and Sharing Credentials</title>
-      <link>https://secubuzz.com/news/frontline-workers-bypass-mfa-by-staying-signed-in-23ae3c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/frontline-workers-bypass-mfa-by-staying-signed-in-23ae3c</guid>
-      <description><![CDATA[Frontline workers in healthcare and manufacturing are bypassing multifactor authentication by staying signed in, sharing credentials, and using shared workstations. A Sapio Research survey of 700 IT and security decision-makers in August found 95% had observed such workarounds in the past year. These practices break the link between an account and its user.]]></description>
-      <pubDate>Tue, 20 Oct 2026 04:30:18 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/20/frontline-worker-authentication-passwordless/">Help Net Security</source>
-      <category>Policy</category>
     </item>
     <item>
       <title>ROMULUS ClickFix Platform Distributes LegionLoader Malware</title>
@@ -125,24 +242,6 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>Nikkei Inc. Exposes 1.83 Million Records in Third Breach</title>
-      <link>https://secubuzz.com/news/nikkei-inc-exposes-1-83-million-records-in-third-b-75cd12</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/nikkei-inc-exposes-1-83-million-records-in-third-b-75cd12</guid>
-      <description><![CDATA[Nikkei Inc. disclosed a third data breach in a month, exposing 1.83 million personal records, including names, addresses, and contact details. The breach involved unauthorized access to internal databases, compromising sensitive employee and customer information. Nikkei has notified affected parties and is investigating the incident.]]></description>
-      <pubDate>Mon, 19 Oct 2026 21:49:48 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/nikkei-discloses-third-data-breach-in-a-month-18m-records-exposed/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Rank Math WordPress Plugin Compromised in Supply‑Chain Attack</title>
-      <link>https://secubuzz.com/news/rank-math-wordpress-plugin-compromised-in-supply-c-634cad</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rank-math-wordpress-plugin-compromised-in-supply-c-634cad</guid>
-      <description><![CDATA[Downloads of the Rank Math PRO plugin from the vendor’s official site contained malware that installed hidden backdoors on infected WordPress sites. The supply‑chain compromise was discovered last week and requires site owners to verify plugin integrity and remove malicious code.]]></description>
-      <pubDate>Mon, 19 Oct 2026 21:24:51 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/wordpress-seo-plugin-rank-math-compromised-to-backdoor-websites/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
       <title>Researchers Penetrate Microsoft Tech Support Scam Operation</title>
       <link>https://secubuzz.com/news/researchers-penetrate-microsoft-tech-support-scam-312422</link>
       <guid isPermaLink="true">https://secubuzz.com/news/researchers-penetrate-microsoft-tech-support-scam-312422</guid>
@@ -170,15 +269,6 @@
       <category>Malware</category>
     </item>
     <item>
-      <title>Hackers Hijack AOMEI Update Servers to Distribute Malware</title>
-      <link>https://secubuzz.com/news/hackers-hijack-aomei-update-servers-to-distribute-4f9539</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-hijack-aomei-update-servers-to-distribute-4f9539</guid>
-      <description><![CDATA[Hackers compromised AOMEI’s update servers, injecting malware into the backup software’s promotional feature. The attackers briefly altered configuration files before restoring them, masking the intrusion. Users of the affected AOMEI backup product should verify integrity and apply the latest vendor patch.]]></description>
-      <pubDate>Mon, 19 Oct 2026 19:40:58 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/hackers-hijack-aomei-update-servers-to-secretly-spread-malware/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
       <title>ConnectWise Disables Cloud Backups After Microsoft 365 Tenant Breach via ConnectWise Credentials</title>
       <link>https://secubuzz.com/news/connectwise-disables-cloud-backups-after-microsoft-3c267f</link>
       <guid isPermaLink="true">https://secubuzz.com/news/connectwise-disables-cloud-backups-after-microsoft-3c267f</guid>
@@ -197,15 +287,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Pegasus Spyware Targets Serbian Opposition Rector</title>
-      <link>https://secubuzz.com/news/pegasus-spyware-targets-serbian-opposition-rector-23dd64</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/pegasus-spyware-targets-serbian-opposition-rector-23dd64</guid>
-      <description><![CDATA[Investigators discovered Pegasus spyware on the University of Belgrade rector’s phone amid a series of attacks preceding Serbia’s national elections. The intrusion grants remote access to the device, enabling surveillance of communications and data. No public patch exists; users should update iOS and monitor for suspicious activity.]]></description>
-      <pubDate>Mon, 19 Oct 2026 18:45:00 GMT</pubDate>
-      <source url="https://therecord.media/serbia-spyware-pegasus-elections">The Record</source>
-      <category>Breach</category>
-    </item>
-    <item>
       <title>Drupal Field UI Module Remote Code Execution Vulnerability</title>
       <link>https://secubuzz.com/news/drupal-field-ui-module-remote-code-execution-vulne-5987df</link>
       <guid isPermaLink="true">https://secubuzz.com/news/drupal-field-ui-module-remote-code-execution-vulne-5987df</guid>
@@ -213,15 +294,6 @@
       <pubDate>Mon, 19 Oct 2026 18:13:51 GMT</pubDate>
       <source url="https://cybersecuritynews.com/drupal-rce-vulnerability/">Cyber Security News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Microsoft Warns of Insider Threats from AI Agents</title>
-      <link>https://secubuzz.com/news/microsoft-warns-of-insider-threats-from-ai-agents-284d8f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-warns-of-insider-threats-from-ai-agents-284d8f</guid>
-      <description><![CDATA[Microsoft cautions that AI agents can become insider threats by accessing company data, applications, and tools at high speed. The advisory advises treating AI agents as potential insider risks and implementing controls to monitor and limit their access.]]></description>
-      <pubDate>Mon, 19 Oct 2026 18:04:16 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/ai-models-as-insider-threats/">Cyber Security News</source>
-      <category>Policy</category>
     </item>
     <item>
       <title>OpenCode API Keys Exposed in Security Breach</title>
@@ -240,15 +312,6 @@
       <pubDate>Mon, 19 Oct 2026 17:11:36 GMT</pubDate>
       <source url="https://cybersecuritynews.com/bright-security-introduces-star-fuzzer-agentic-fuzzing-that-writes-its-own-harnesses-and-proves-every-finding/">Cyber Security News</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Ahold Delhaize Reports Cyber Outages Across U.S. and European Brands</title>
-      <link>https://secubuzz.com/news/ahold-delhaize-reports-cyber-outages-across-u-s-an-3dae1b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ahold-delhaize-reports-cyber-outages-across-u-s-an-3dae1b</guid>
-      <description><![CDATA[Ahold Delhaize confirmed a cyberattack that forced most of its U.S. and European systems offline, disrupting operations for several grocery brands. The incident impacted shoppers across both continents, highlighting the retailer’s vulnerability to large‑scale cyber disruptions.]]></description>
-      <pubDate>Mon, 19 Oct 2026 16:45:00 GMT</pubDate>
-      <source url="https://therecord.media/ahold-delhaize-cyberattack-grocery">The Record</source>
-      <category>Breach</category>
     </item>
     <item>
       <title>VK Service Disruptions After Data Center Drone Strike</title>
@@ -393,69 +456,6 @@
       <pubDate>Mon, 19 Oct 2026 11:45:00 GMT</pubDate>
       <source url="https://therecord.media/russia-cyberattack-firstvds-cloud">The Record</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>New Teams‑Based Phishing Domain Targets Workplace Logins</title>
-      <link>https://secubuzz.com/news/new-teams-based-phishing-domain-targets-workplace-13ce99</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/new-teams-based-phishing-domain-targets-workplace-13ce99</guid>
-      <description><![CDATA[A newly registered domain, teams‑cloud.live, mimics Microsoft Teams’ login page. Security researcher Steven Lim flagged it five days after registration. The site harvests credentials from unsuspecting workplace users. Organizations should block the domain to prevent credential theft before any data is compromised.]]></description>
-      <pubDate>Mon, 19 Oct 2026 11:40:57 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/teams-domain-login-page/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Vision‑Language Models Solve CAPTCHAs Without Task‑Specific Training</title>
-      <link>https://secubuzz.com/news/vision-language-models-solve-captchas-without-task-7d9446</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/vision-language-models-solve-captchas-without-task-7d9446</guid>
-      <description><![CDATA[Researchers paired a fine‑tuned YOLOv8 detector with an open‑weight vision‑language model, routing confidence‑based decisions. The system solves 16 CAPTCHA classes with 85.4% overall accuracy, operating solely from screenshots and OS input events, eliminating browser automation or DOM access.]]></description>
-      <pubDate>Mon, 19 Oct 2026 11:07:43 GMT</pubDate>
-      <source url="https://www.schneier.com/blog/archives/2026/10/training-ais-to-solve-captchas.html">Schneier on Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Open-Weight AI Increases Enterprise Security Responsibility</title>
-      <link>https://secubuzz.com/news/open-weight-ai-increases-enterprise-security-respo-5d1d4b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/open-weight-ai-increases-enterprise-security-respo-5d1d4b</guid>
-      <description><![CDATA[Microsoft and NVIDIA warn that running open-weight AI models on in‑house infrastructure shifts safety and security controls from providers to enterprises. Open-weight models expose weights for download, inspection, modification, and execution, requiring organizations to implement their own safeguards and monitoring.]]></description>
-      <pubDate>Mon, 19 Oct 2026 11:04:12 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/19/open-weight-ai-model-risks-microsoft-nvidia/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Microsoft Brand Phishing Attacks Surge to 33% of All Impersonation Attempts in Q3 2026</title>
-      <link>https://secubuzz.com/news/microsoft-brand-phishing-attacks-surge-to-33-of-al-74f340</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-brand-phishing-attacks-surge-to-33-of-al-74f340</guid>
-      <description><![CDATA[Check Point Research reports Microsoft brand phishing attacks rose to 33% of all impersonation attempts in Q3 2026, up from 23% in Q2, surpassing Apple and Google. Attackers target Microsoft because stolen credentials can unlock multiple services. The trend highlights the need for stricter credential protection.]]></description>
-      <pubDate>Mon, 19 Oct 2026 09:38:17 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/19/check-point-brand-impersonation-scams-q3-2026-report/">Help Net Security</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Anthropic Acquires Confidential AI Startup Opaque Systems</title>
-      <link>https://secubuzz.com/news/anthropic-acquires-confidential-ai-startup-opaque-679039</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-acquires-confidential-ai-startup-opaque-679039</guid>
-      <description><![CDATA[Anthropic has acquired Opaque Systems, a confidential AI startup that developed hardware‑protected technology enabling AI systems to process sensitive data while keeping it secure. The acquisition expands Anthropic’s capabilities in secure AI data handling, potentially enhancing privacy and compliance for future AI deployments.]]></description>
-      <pubDate>Mon, 19 Oct 2026 07:45:25 GMT</pubDate>
-      <source url="https://www.securityweek.com/anthropic-acquires-confidential-ai-startup-opaque-systems/">SecurityWeek</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Weekly Security Roundup: October 12–18, 2026</title>
-      <link>https://secubuzz.com/news/weekly-security-roundup-october-12-18-2026-5123b9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/weekly-security-roundup-october-12-18-2026-5123b9</guid>
-      <description><![CDATA[Malwarebytes Labs summarizes the week’s cybersecurity topics, covering emerging threats, vulnerability disclosures, and defensive strategies. The report highlights key industry developments and provides context for security professionals to stay informed on current trends and emerging risks.]]></description>
-      <pubDate>Mon, 19 Oct 2026 07:01:00 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/news/2026/10/a-week-in-security-october-12-october-18">Malwarebytes Labs</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>Broadcom Wi‑Fi Flaw Lets Nearby Attackers Run Code as Root on Routers</title>
-      <link>https://secubuzz.com/news/broadcom-wi-fi-flaw-lets-nearby-attackers-run-code-79de2c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/broadcom-wi-fi-flaw-lets-nearby-attackers-run-code-79de2c</guid>
-      <description><![CDATA[A flaw in Broadcom’s Wi‑Fi setup software allows an attacker within radio range to execute code with root privileges on Broadcom‑based routers without a network password or pairing step. The vulnerability was demonstrated against home gateways from three Belgian ISPs, including reading the device’s Wi‑Fi password.]]></description>
-      <pubDate>Mon, 19 Oct 2026 06:29:44 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/unpatched-broadcom-wi-fi-flaw-lets.html">The Hacker News</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

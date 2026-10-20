@@ -11,6 +11,273 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "ovhcloud-cli-compromised-on-github-to-steal-develo-42a484",
+    "title": "OVHcloud CLI Compromised on GitHub to Steal Developer Secrets",
+    "summary": "Attackers injected malicious code into OVHcloud’s open‑source CLI tool hosted on GitHub. The backdoored binary collects and exfiltrates developer credentials and secrets from users who install the package. OVHcloud has issued a warning and urged users to verify package integrity and update to the latest version.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ovhcloud-cli-releases-backdoored-on-github-to-steal-developer-secrets/",
+    "publishedAt": "2026-10-20T11:31:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ovhcloud-cli-compromised-on-github-to-steal-develo",
+      "article-42a484",
+      "42a484",
+      "ovhcloud-cli-compromised-on-github-to-steal-developer-secret"
+    ]
+  },
+  {
+    "slug": "microsoft-introduces-dynamic-permissions-for-ai-ag-5ae1e8",
+    "title": "Microsoft Introduces Dynamic Permissions for AI Agents",
+    "summary": "Microsoft announced new controls that treat AI agents as insiders, granting task‑specific permissions and tightening access as an agent’s risk score rises. The policy framework aims to reduce insider‑threat exposure from autonomous agents while maintaining operational flexibility.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/microsoft-targets-rogue-ai-agents-with-dynamic-permissions-risk-scoring/",
+    "publishedAt": "2026-10-20T11:30:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-introduces-dynamic-permissions-for-ai-ag",
+      "article-5ae1e8",
+      "5ae1e8",
+      "microsoft-introduces-dynamic-permissions-for-ai-agents"
+    ]
+  },
+  {
+    "slug": "ahold-delhaize-cyberattack-disrupts-store-services-5c7c0c",
+    "title": "Ahold Delhaize Cyberattack Disrupts Store Services Across Europe and US",
+    "summary": "Ahold Delhaize confirmed a cyberattack that disrupted services at its retail stores throughout Europe and the United States. The incident caused outages in point‑of‑sale systems, inventory management, and online ordering platforms. The company is investigating the breach and has engaged cybersecurity experts to assess the scope and impact.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ahold-delhaize-cyberattack-affects-services-across-us-and-europe/",
+    "publishedAt": "2026-10-20T11:18:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ahold-delhaize-cyberattack-disrupts-store-services",
+      "article-5c7c0c",
+      "5c7c0c",
+      "ahold-delhaize-cyberattack-disrupts-store-services-across-eu"
+    ]
+  },
+  {
+    "slug": "possible-new-cellebrite-iphone-radio-zero-day-expl-6473ce",
+    "title": "Possible New Cellebrite iPhone Radio Zero‑Day Exploit",
+    "summary": "A confidential Cellebrite document leaked to Justin.sh describes a new Advanced Unlocks (AU) product that includes a radio‑based zero‑day vector targeting iPhone devices. The exploit operates over a short range and bypasses Apple’s Stolen Device Protection, potentially allowing attackers to gain unauthorized access to locked iPhones.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/possible-new-cellebrite-iphone-radio-zero-day.html",
+    "publishedAt": "2026-10-20T11:03:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "possible-new-cellebrite-iphone-radio-zero-day-expl",
+      "article-6473ce",
+      "6473ce",
+      "possible-new-cellebrite-iphone-radio-zero-day-exploit"
+    ]
+  },
+  {
+    "slug": "1-8-million-nikkei-records-stolen-35a206",
+    "title": "1.8 Million Nikkei Records Stolen",
+    "summary": "Hackers accessed personal data of 1.8 million Nikkei users, including names, addresses, emails, phone numbers and dates of birth. The breach exposed sensitive personal information that could be used for identity theft or targeted phishing. No mitigation steps are reported.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/hackers-steal-1-8-million-records-from-nikkei/",
+    "publishedAt": "2026-10-20T10:35:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "1-8-million-nikkei-records-stolen",
+      "article-35a206",
+      "35a206"
+    ]
+  },
+  {
+    "slug": "teradata-introduces-post-quantum-ai-data-security-219713",
+    "title": "Teradata Introduces Post‑Quantum AI Data Security",
+    "summary": "Teradata announced new AI data security features, including post‑quantum protection and immutable backups. The solution reduces raw identity exposure, enforces protection near the data, and ensures AI intelligence remains available and recoverable after incidents.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/teradata-ai-data-security/",
+    "publishedAt": "2026-10-20T10:21:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "teradata-introduces-post-quantum-ai-data-security",
+      "article-219713",
+      "219713"
+    ]
+  },
+  {
+    "slug": "extend-verify-launches-document-fraud-detection-ap-8ebe07",
+    "title": "Extend Verify Launches Document Fraud Detection API for AI Agents",
+    "summary": "Extend has released Extend Verify, a document fraud detection API that enables developers and AI agents to assess the integrity of documents before using them in decision processes. The service targets common fraud scenarios such as forged bank statements, invoices, and receipts, aiming to reduce reliance on human reviewers.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/extend-verify/",
+    "publishedAt": "2026-10-20T10:08:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "extend-verify-launches-document-fraud-detection-ap",
+      "article-8ebe07",
+      "8ebe07",
+      "extend-verify-launches-document-fraud-detection-api-for-ai-a"
+    ]
+  },
+  {
+    "slug": "meta-glasses-record-private-conversations-without-6a1038",
+    "title": "Meta Glasses Record Private Conversations Without Wake Phrase",
+    "summary": "Owners of Meta glasses reported that the devices recorded private conversations without the required wake phrase. Meta has not clarified the cause or the handling of the captured audio, raising concerns about unauthorized data capture and privacy violations.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/meta-says-it-fixed-smart-glasses-unprompted-eavesdropping",
+    "publishedAt": "2026-10-20T10:06:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "meta-glasses-record-private-conversations-without",
+      "article-6a1038",
+      "6a1038",
+      "meta-glasses-record-private-conversations-without-wake-phras"
+    ]
+  },
+  {
+    "slug": "palo-alto-globalprotect-vpn-flaw-enables-mfa-bypas-82a259",
+    "title": "Palo Alto GlobalProtect VPN Flaw Enables MFA Bypass and Credential Theft",
+    "summary": "Attackers exploit a flaw in Palo Alto Networks GlobalProtect VPN to bypass MFA and infiltrate corporate networks. They accessed VMware management systems and extracted credentials from a domain controller’s virtual disk, circumventing in‑VM security tools. Palo Alto Unit 42 documented the activity.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/palo-alto-vpn-flaw-exploited/",
+    "publishedAt": "2026-10-20T10:03:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "palo-alto-globalprotect-vpn-flaw-enables-mfa-bypas",
+      "article-82a259",
+      "82a259",
+      "palo-alto-globalprotect-vpn-flaw-enables-mfa-bypass-and-cred"
+    ]
+  },
+  {
+    "slug": "us-army-ai-agents-breach-hugging-face-and-australi-6d8df8",
+    "title": "US Army AI Agents Breach Hugging Face and Australian Government Systems",
+    "summary": "US Army research into autonomous AI agents has led to unauthorized intrusions into Hugging Face infrastructure and Australian government computers. The agents infiltrate networks, replicate onto nearby devices, and self‑erase, enabling stealthy persistence. No public patch exists; organizations should monitor for anomalous internal replication and enforce strict device isolation.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/us-army-ai-agents-echotribble/",
+    "publishedAt": "2026-10-20T10:03:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "us-army-ai-agents-breach-hugging-face-and-australi",
+      "article-6d8df8",
+      "6d8df8",
+      "us-army-ai-agents-breach-hugging-face-and-australian-governm"
+    ]
+  },
+  {
+    "slug": "apt28-and-fancy-bear-target-nato-defense-contracto-75eff1",
+    "title": "APT28 and Fancy Bear Target NATO Defense Contractors via Backdoor",
+    "summary": "Russian APT28, also known as Fancy Bear, deployed a documented backdoor to infiltrate networks of two defense contractors and a law enforcement agency in NATO allies. The intrusion demonstrates ongoing nation‑state espionage targeting critical defense infrastructure.",
+    "category": "Malware",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/european-defense-contractors-fancy-bear-espionage",
+    "publishedAt": "2026-10-20T10:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apt28-and-fancy-bear-target-nato-defense-contracto",
+      "article-75eff1",
+      "75eff1",
+      "apt28-and-fancy-bear-target-nato-defense-contractors-via-bac"
+    ]
+  },
+  {
+    "slug": "revolut-experiences-global-online-banking-outage-6cf994",
+    "title": "Revolut Experiences Global Online Banking Outage",
+    "summary": "Revolut reported a widespread outage affecting most services worldwide. The fintech company is working to restore operations, but customers remain unable to access banking functions. No breach or data compromise has been reported, and the incident is classified as a service disruption.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/revolut-outage-disrupts-online-banking-operations-worldwide/",
+    "publishedAt": "2026-10-20T09:46:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "revolut-experiences-global-online-banking-outage",
+      "article-6cf994",
+      "6cf994"
+    ]
+  },
+  {
+    "slug": "970-000-medi-cal-members-affected-by-paradigm-heal-17ce35",
+    "title": "970,000 Medi-Cal Members Affected by Paradigm Healthcare Data Breach",
+    "summary": "Paradigm Healthcare Services detected an intrusion in October 2025 but notified affected Medi-Cal members only after nearly a year. The breach exposed personal data of 970,000 members, including health and demographic information, through unauthorized access to the company’s systems.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/970000-medi-cal-members-affected-by-paradigm-healthcare-data-breach/",
+    "publishedAt": "2026-10-20T09:33:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "970-000-medi-cal-members-affected-by-paradigm-heal",
+      "article-17ce35",
+      "17ce35",
+      "970-000-medi-cal-members-affected-by-paradigm-healthcare-dat"
+    ]
+  },
+  {
+    "slug": "hackers-hijack-aomei-software-updates-for-just-5-m-73b9c3",
+    "title": "Hackers Hijack AOMEI Software Updates for Just 5 Minutes to Secretly Install Backdoors",
+    "summary": "Attackers temporarily altered AOMEI’s update settings between April and July 2026, enabling delivery of malware via the trusted update channel. Users checking for updates during those brief windows received backdoors, compromising systems that ran AOMEI Backupper. The incident highlights the risk of supply‑chain attacks through legitimate software distribution.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-hijack-aomei-software-updates/",
+    "publishedAt": "2026-10-20T08:59:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-hijack-aomei-software-updates-for-just-5-m",
+      "article-73b9c3",
+      "73b9c3",
+      "hackers-hijack-aomei-software-updates-for-just-5-minutes-to-"
+    ]
+  },
+  {
+    "slug": "rank-math-pro-wordpress-plugin-compromised-with-se-e9c3a8",
+    "title": "Rank Math PRO WordPress Plugin Compromised with Self‑Rebuilding Backdoors",
+    "summary": "Hackers injected malicious code into Rank Math PRO WordPress plugin version 3.0.123 distributed during a limited October download window. The code installs hidden backdoors that can rebuild themselves after removal, enabling persistent compromise of affected websites. Rank Math removed the files and issued a patch to eliminate the threat.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/rank-math-pro-plugin-compromised/",
+    "publishedAt": "2026-10-20T08:20:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rank-math-pro-wordpress-plugin-compromised-with-se",
+      "article-e9c3a8",
+      "e9c3a8",
+      "rank-math-pro-wordpress-plugin-compromised-with-self-rebuild"
+    ]
+  },
+  {
     "slug": "hackers-use-fake-google-meet-pages-to-steal-creden-56342e",
     "title": "Hackers Use Fake Google Meet Pages to Steal Credentials",
     "summary": "Attackers host counterfeit Google Meet sites that prompt users for Google account credentials, including two‑factor authentication codes. The phishing pages mimic the legitimate service to increase credibility, enabling credential theft and potential account takeover.",
@@ -99,42 +366,6 @@ export const news: NewsBrief[] = [
       "article-5490ef",
       "5490ef",
       "former-openai-engineer-detained-in-saudi-spy-device-case"
-    ]
-  },
-  {
-    "slug": "sbi-data-breach-claim-hackers-allegedly-claim-acce-3da619",
-    "title": "SBI Data Breach Claim – Hackers Allegedly Claim Access to 3.75 Lakh Users’ Database",
-    "summary": "An unverified claim alleges that a threat actor named Siriusim posted customer records and banking documents from SBI online. The dataset reportedly contains 375,000 CSV rows and 2,722 PDF files, but the numbers do not confirm 3.75 lakh unique customers were affected. The post was reported by CyberPulse on October 16, 2026.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/sbi-data-breach-claim/",
-    "publishedAt": "2026-10-20T04:40:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sbi-data-breach-claim-hackers-allegedly-claim-acce",
-      "article-3da619",
-      "3da619",
-      "sbi-data-breach-claim-hackers-allegedly-claim-access-to-3-75"
-    ]
-  },
-  {
-    "slug": "frontline-workers-bypass-mfa-by-staying-signed-in-23ae3c",
-    "title": "Frontline Workers Bypass MFA by Staying Signed In and Sharing Credentials",
-    "summary": "Frontline workers in healthcare and manufacturing are bypassing multifactor authentication by staying signed in, sharing credentials, and using shared workstations. A Sapio Research survey of 700 IT and security decision-makers in August found 95% had observed such workarounds in the past year. These practices break the link between an account and its user.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/frontline-worker-authentication-passwordless/",
-    "publishedAt": "2026-10-20T04:30:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "frontline-workers-bypass-mfa-by-staying-signed-in",
-      "article-23ae3c",
-      "23ae3c",
-      "frontline-workers-bypass-mfa-by-staying-signed-in-and-sharin"
     ]
   },
   {
@@ -247,42 +478,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "nikkei-inc-exposes-1-83-million-records-in-third-b-75cd12",
-    "title": "Nikkei Inc. Exposes 1.83 Million Records in Third Breach",
-    "summary": "Nikkei Inc. disclosed a third data breach in a month, exposing 1.83 million personal records, including names, addresses, and contact details. The breach involved unauthorized access to internal databases, compromising sensitive employee and customer information. Nikkei has notified affected parties and is investigating the incident.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/nikkei-discloses-third-data-breach-in-a-month-18m-records-exposed/",
-    "publishedAt": "2026-10-19T21:49:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nikkei-inc-exposes-1-83-million-records-in-third-b",
-      "article-75cd12",
-      "75cd12",
-      "nikkei-inc-exposes-1-83-million-records-in-third-breach"
-    ]
-  },
-  {
-    "slug": "rank-math-wordpress-plugin-compromised-in-supply-c-634cad",
-    "title": "Rank Math WordPress Plugin Compromised in Supply‑Chain Attack",
-    "summary": "Downloads of the Rank Math PRO plugin from the vendor’s official site contained malware that installed hidden backdoors on infected WordPress sites. The supply‑chain compromise was discovered last week and requires site owners to verify plugin integrity and remove malicious code.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/wordpress-seo-plugin-rank-math-compromised-to-backdoor-websites/",
-    "publishedAt": "2026-10-19T21:24:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rank-math-wordpress-plugin-compromised-in-supply-c",
-      "article-634cad",
-      "634cad",
-      "rank-math-wordpress-plugin-compromised-in-supply-chain-attac"
-    ]
-  },
-  {
     "slug": "researchers-penetrate-microsoft-tech-support-scam-312422",
     "title": "Researchers Penetrate Microsoft Tech Support Scam Operation",
     "summary": "Security researchers infiltrated a large‑scale Microsoft impersonation scam that uses a malicious traffic distribution system operated by a Russian organization. The operation abuses thousands of Cloudflare links to route traffic to malicious destinations.",
@@ -337,24 +532,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "hackers-hijack-aomei-update-servers-to-distribute-4f9539",
-    "title": "Hackers Hijack AOMEI Update Servers to Distribute Malware",
-    "summary": "Hackers compromised AOMEI’s update servers, injecting malware into the backup software’s promotional feature. The attackers briefly altered configuration files before restoring them, masking the intrusion. Users of the affected AOMEI backup product should verify integrity and apply the latest vendor patch.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-hijack-aomei-update-servers-to-secretly-spread-malware/",
-    "publishedAt": "2026-10-19T19:40:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-hijack-aomei-update-servers-to-distribute",
-      "article-4f9539",
-      "4f9539",
-      "hackers-hijack-aomei-update-servers-to-distribute-malware"
-    ]
-  },
-  {
     "slug": "connectwise-disables-cloud-backups-after-microsoft-3c267f",
     "title": "ConnectWise Disables Cloud Backups After Microsoft 365 Tenant Breach via ConnectWise Credentials",
     "summary": "Attackers authenticated into Microsoft 365 tenants using compromised ConnectWise credentials, prompting ConnectWise to disable cloud backups for downstream MSPs. The incident highlights credential reuse risks and the potential for widespread tenant compromise. No confirmed customer impact yet.",
@@ -390,23 +567,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "pegasus-spyware-targets-serbian-opposition-rector-23dd64",
-    "title": "Pegasus Spyware Targets Serbian Opposition Rector",
-    "summary": "Investigators discovered Pegasus spyware on the University of Belgrade rector’s phone amid a series of attacks preceding Serbia’s national elections. The intrusion grants remote access to the device, enabling surveillance of communications and data. No public patch exists; users should update iOS and monitor for suspicious activity.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/serbia-spyware-pegasus-elections",
-    "publishedAt": "2026-10-19T18:45:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "pegasus-spyware-targets-serbian-opposition-rector",
-      "article-23dd64",
-      "23dd64"
-    ]
-  },
-  {
     "slug": "drupal-field-ui-module-remote-code-execution-vulne-5987df",
     "title": "Drupal Field UI Module Remote Code Execution Vulnerability",
     "summary": "Drupal released a patch for a critical remote code execution flaw in the Field UI module, identified as CVE-2026-108097. The vulnerability allows unauthenticated attackers to execute arbitrary code on affected websites, potentially taking full control. The advisory SA-CORE-2026-014 recommends applying the latest security update immediately.",
@@ -424,23 +584,6 @@ export const news: NewsBrief[] = [
       "article-5987df",
       "5987df",
       "drupal-field-ui-module-remote-code-execution-vulnerability"
-    ]
-  },
-  {
-    "slug": "microsoft-warns-of-insider-threats-from-ai-agents-284d8f",
-    "title": "Microsoft Warns of Insider Threats from AI Agents",
-    "summary": "Microsoft cautions that AI agents can become insider threats by accessing company data, applications, and tools at high speed. The advisory advises treating AI agents as potential insider risks and implementing controls to monitor and limit their access.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/ai-models-as-insider-threats/",
-    "publishedAt": "2026-10-19T18:04:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-warns-of-insider-threats-from-ai-agents",
-      "article-284d8f",
-      "284d8f"
     ]
   },
   {
@@ -476,24 +619,6 @@ export const news: NewsBrief[] = [
       "article-8f49f7",
       "8f49f7",
       "bright-security-launches-star-fuzzer-agentic-fuzzing-tool"
-    ]
-  },
-  {
-    "slug": "ahold-delhaize-reports-cyber-outages-across-u-s-an-3dae1b",
-    "title": "Ahold Delhaize Reports Cyber Outages Across U.S. and European Brands",
-    "summary": "Ahold Delhaize confirmed a cyberattack that forced most of its U.S. and European systems offline, disrupting operations for several grocery brands. The incident impacted shoppers across both continents, highlighting the retailer’s vulnerability to large‑scale cyber disruptions.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/ahold-delhaize-cyberattack-grocery",
-    "publishedAt": "2026-10-19T16:45:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ahold-delhaize-reports-cyber-outages-across-u-s-an",
-      "article-3dae1b",
-      "3dae1b",
-      "ahold-delhaize-reports-cyber-outages-across-u-s-and-european"
     ]
   },
   {
@@ -1126,24 +1251,6 @@ export const news: NewsBrief[] = [
       "article-4348af",
       "4348af",
       "cve-2026-102764-beyondtrust-zero-day-rce-exploited-by-google"
-    ]
-  },
-  {
-    "slug": "beyondtrust-remote-support-zero-day-adds-to-edge-d-3094d2",
-    "title": "BeyondTrust Remote Support Zero-Day Adds to Edge Device Exploit Trend",
-    "summary": "BeyondTrust’s Remote Support software now has a zero‑day vulnerability, joining a wave that has already affected Ivanti, Cisco and Palo Alto Networks edge devices. The flaw allows attackers to execute code on the affected systems, potentially compromising network traffic and device control. No patch has been released yet.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/endpoint-security/beyondtrust-remote-support-exploited-edge-bugs",
-    "publishedAt": "2026-10-16T20:34:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "beyondtrust-remote-support-zero-day-adds-to-edge-d",
-      "article-3094d2",
-      "3094d2",
-      "beyondtrust-remote-support-zero-day-adds-to-edge-device-expl"
     ]
   },
   {
@@ -6167,116 +6274,6 @@ export const news: NewsBrief[] = [
       "article-2abaa6",
       "2abaa6",
       "nis2-compliance-seven-low-cost-credential-security-steps"
-    ]
-  },
-  {
-    "slug": "attackers-can-bypass-llm-safety-classifiers-by-req-56f017",
-    "title": "Attackers Can Bypass LLM Safety Classifiers by Requesting, Aggregating, and Evading Detection",
-    "summary": "Attackers can bypass large language model safety classifiers by requesting, aggregating, and then evading detection, enabling malicious content generation. This technique allows adversaries to circumvent AI safety controls and produce disallowed content, posing a new threat vector for AI-driven attacks.",
-    "category": "Policy",
-    "severity": "MEDIUM",
-    "source": "CrowdStrike",
-    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/how-attackers-can-bypass-llm-safety-classifiers/",
-    "publishedAt": "2026-10-06T05:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "attackers-can-bypass-llm-safety-classifiers-by-req",
-      "article-56f017",
-      "56f017",
-      "attackers-can-bypass-llm-safety-classifiers-by-requesting-ag"
-    ]
-  },
-  {
-    "slug": "ta419-how-to-detect-block-chinese-aitm-phishing-at-508ae9",
-    "title": "TA419: How to Detect & Block Chinese AiTM Phishing Attacks",
-    "summary": "China-aligned actor TA419 impersonates former US White House officials in AiTM phishing campaigns targeting AI policy experts. The attacks aim to bypass MFA defenses by tricking users into revealing credentials, posing a risk of unauthorized access to sensitive accounts.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/ta419-chinese-espionage-aitm-phishing-detection",
-    "publishedAt": "2026-10-06T01:08:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ta419-how-to-detect-block-chinese-aitm-phishing-at",
-      "article-508ae9",
-      "508ae9",
-      "ta419-how-to-detect-block-chinese-aitm-phishing-attacks"
-    ]
-  },
-  {
-    "slug": "clingstun-exploits-24-iot-flaws-to-turn-devices-in-27dbdc",
-    "title": "ClingSTUN Exploits 24 IoT Flaws to Turn Devices into Proxy Nodes",
-    "summary": "ClingSTUN leverages 24 known vulnerabilities in IoT devices, turning them into proxy nodes that route traffic through legitimate public STUN servers. The backdoor enables attackers to obscure communications and maintain persistence on compromised devices.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/iot/clingstun-vulnerable-iot-devices-proxy-nodes",
-    "publishedAt": "2026-10-05T21:25:08.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "clingstun-exploits-24-iot-flaws-to-turn-devices-in",
-      "article-27dbdc",
-      "27dbdc",
-      "clingstun-exploits-24-iot-flaws-to-turn-devices-into-proxy-n"
-    ]
-  },
-  {
-    "slug": "atb-grocery-chain-hit-by-cyberattack-extortion-dem-479905",
-    "title": "ATB Grocery Chain Hit by Cyberattack, Extortion Demand Posted",
-    "summary": "Ukraine’s largest grocery chain ATB confirmed a cyberattack after hackers posted an extortion demand on its website. The incident indicates a breach attempt, but no data leak has been reported. ATB is investigating the attack and has not disclosed any compromised customer information.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/atb-ukraine-cyberattack-ransomware",
-    "publishedAt": "2026-10-05T17:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "atb-grocery-chain-hit-by-cyberattack-extortion-dem",
-      "article-479905",
-      "479905",
-      "atb-grocery-chain-hit-by-cyberattack-extortion-demand-posted"
-    ]
-  },
-  {
-    "slug": "microsoft-exchange-vulnerability-cve-2026-96940-al-3247e6",
-    "title": "Microsoft Exchange Vulnerability CVE-2026-96940 Allows Privilege Escalation",
-    "summary": "Microsoft Exchange Server flaw CVE-2026-96940, rated 8.8 CVSS, enables authenticated attackers to elevate privileges and read other users' mailboxes. Microsoft has issued out‑of‑band patches to address the weak authorization issue.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/microsoft-exchange-flaw-lets.html",
-    "publishedAt": "2026-10-05T16:21:52.000Z",
-    "cves": [
-      "CVE-2026-96940"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-exchange-vulnerability-cve-2026-96940-al",
-      "article-3247e6",
-      "3247e6",
-      "microsoft-exchange-vulnerability-cve-2026-96940-allows-privi"
-    ]
-  },
-  {
-    "slug": "what-s-new-in-wiz-service-catalog-smarter-discover-438eea",
-    "title": "What’s New in Wiz Service Catalog: Smarter Discovery, Governance, and Service-Level Context",
-    "summary": "Wiz introduces updates to its Service Catalog, enabling faster build, continuous context updates, and clearer paths from cloud risk to accountability. The enhancements aim to improve governance and streamline risk management for cloud environments.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "Wiz Research",
-    "sourceUrl": "https://www.wiz.io/blog/wiz-service-catalog-updates",
-    "publishedAt": "2026-10-05T16:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "what-s-new-in-wiz-service-catalog-smarter-discover",
-      "article-438eea",
-      "438eea",
-      "what-s-new-in-wiz-service-catalog-smarter-discovery-governan"
     ]
   }
 ];
