@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "php-issues-emergency-patches-for-two-critical-vuln-1cbaec",
+    "title": "PHP Issues Emergency Patches for Two Critical Vulnerabilities",
+    "summary": "The PHP security team has announced that two critical vulnerabilities will be patched in an emergency update scheduled for tomorrow. The flaws were leaked ahead of disclosure, prompting administrators to prepare for imminent patches to mitigate potential exploitation. No CVE identifiers are publicly disclosed yet.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/php-warns-admins-of-two-critical-flaws-emergency-patches-coming-tomorrow/",
+    "publishedAt": "2026-10-20T20:56:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "php-issues-emergency-patches-for-two-critical-vuln",
+      "article-1cbaec",
+      "1cbaec",
+      "php-issues-emergency-patches-for-two-critical-vulnerabilitie"
+    ]
+  },
+  {
     "slug": "safepay-ransomware-gang-targets-businesses-and-cri-444fae",
     "title": "SafePay Ransomware Gang Targets Businesses and Critical Infrastructure",
     "summary": "SafePay ransomware gang has targeted businesses and critical infrastructure since 2024, using password guessing, vulnerability exploitation, and phishing. The FBI, UK and German agencies report over 600 victims. The gang remains active and poses a high risk to enterprise systems.",
@@ -26,6 +44,24 @@ export const news: NewsBrief[] = [
       "article-444fae",
       "444fae",
       "safepay-ransomware-gang-targets-businesses-and-critical-infr"
+    ]
+  },
+  {
+    "slug": "phishing-attack-hijacks-cloud-billing-accounts-for-1abf24",
+    "title": "Phishing Attack Hijacks Cloud Billing Accounts for Unauthorized AI Usage",
+    "summary": "A single Google Search ad click enabled attackers to steal credentials, hijack cloud billing accounts, and incur hundreds of thousands of dollars in unauthorized AI API usage. The breach exposes sensitive billing data and financial resources, requiring immediate credential revocation and account monitoring.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Wiz Research",
+    "sourceUrl": "https://www.wiz.io/blog/from-phishing-to-llmjacking",
+    "publishedAt": "2026-10-20T20:03:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "phishing-attack-hijacks-cloud-billing-accounts-for",
+      "article-1abf24",
+      "1abf24",
+      "phishing-attack-hijacks-cloud-billing-accounts-for-unauthori"
     ]
   },
   {
@@ -115,6 +151,24 @@ export const news: NewsBrief[] = [
       "article-175eeb",
       "175eeb",
       "emudhra-certificate-authority-private-keys-compromised"
+    ]
+  },
+  {
+    "slug": "openai-announces-gpt-6-1-sol-improves-legacy-code-726d60",
+    "title": "OpenAI Announces GPT‑6.1 Sol Improves Legacy Code Migration",
+    "summary": "OpenAI confirmed that its GPT‑6.1 Sol model significantly improves code migration for legacy programming languages. The announcement highlights the model’s enhanced ability to rewrite and refactor older codebases, potentially accelerating modernization efforts across industries. No security implications were reported in today.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-gpt-61-sol-is-dramatically-better-at-migrating-legacy-code/",
+    "publishedAt": "2026-10-20T18:11:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openai-announces-gpt-6-1-sol-improves-legacy-code",
+      "article-726d60",
+      "726d60",
+      "openai-announces-gpt-6-1-sol-improves-legacy-code-migration"
     ]
   },
   {
@@ -803,24 +857,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "ghostaction-hijacks-790-github-repositories-to-ste-234bed",
-    "title": "GhostAction Hijacks 790 GitHub Repositories to Steal Cloud Credentials and AI API Keys",
-    "summary": "GhostAction has injected malicious GitHub Actions workflows into 790 public repositories, exposing cloud credentials, software‑publishing tokens, and AI service keys. The campaign targets repositories with vulnerable workflows, potentially allowing attackers to exfiltrate credentials if the workflows execute. No confirmed misuse yet, but the risk is significant for exposed accounts.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-hijack-790-github-repositories/",
-    "publishedAt": "2026-10-20T12:02:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ghostaction-hijacks-790-github-repositories-to-ste",
-      "article-234bed",
-      "234bed",
-      "ghostaction-hijacks-790-github-repositories-to-steal-cloud-c"
-    ]
-  },
-  {
     "slug": "wago-os-linux-web-based-management-privilege-escal-430032",
     "title": "WAGO OS Linux Web‑Based Management Privilege Escalation Flaws",
     "summary": "Two authenticated privilege‑escalation flaws in the Web‑Based Management interface of WAGO CC100, PFC100 G2, PFC200 G2, TP600, Edge Controller and WP400 devices allow low‑privileged users to bypass routing configuration and PROFIBUS authorization controls. Affected firmware versions are all releases 1.0.0 and above.",
@@ -1068,6 +1104,24 @@ export const news: NewsBrief[] = [
       "article-6a1038",
       "6a1038",
       "meta-glasses-record-private-conversations-without-wake-phras"
+    ]
+  },
+  {
+    "slug": "man-traveled-2-000-km-to-meet-ai-generated-woman-a-2d0c9e",
+    "title": "Man Traveled 2,000 km to Meet AI‑Generated Woman After Influencer’s Invitation",
+    "summary": "A man traveled 2,000 km to meet an AI‑generated woman after following an influencer’s invitation to a farm. The incident illustrates how public videos can create misleading personal connections, raising concerns about online privacy and the psychological impact of synthetic media. No security breach was reported.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/scams/2026/10/man-seeking-love-travels-2000-km-to-meet-an-ai-generated-woman",
+    "publishedAt": "2026-10-20T09:44:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "man-traveled-2-000-km-to-meet-ai-generated-woman-a",
+      "article-2d0c9e",
+      "2d0c9e",
+      "man-traveled-2-000-km-to-meet-ai-generated-woman-after-influ"
     ]
   },
   {
@@ -6216,60 +6270,6 @@ export const news: NewsBrief[] = [
       "article-3e8667",
       "3e8667",
       "google-releases-android-security-updates-limited-availabilit"
-    ]
-  },
-  {
-    "slug": "hadrian-secures-40m-to-expand-autonomous-offensive-67fa49",
-    "title": "Hadrian Secures $40M to Expand Autonomous Offensive Security Platform",
-    "summary": "Hadrian, an autonomous offensive security platform, has raised $40 million to broaden its agentic capabilities, enabling defenders to match attacker speed. The funding supports development of tools that simulate adversary tactics for proactive defense. No direct security incident reported.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/hadrian-raises-40-million-to-expand-autonomous-offensive-security-platform/",
-    "publishedAt": "2026-10-07T13:06:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hadrian-secures-40m-to-expand-autonomous-offensive",
-      "article-67fa49",
-      "67fa49",
-      "hadrian-secures-40m-to-expand-autonomous-offensive-security-"
-    ]
-  },
-  {
-    "slug": "cyber-risk-shifts-inside-workflow-2026-ciso-survey-c1c27e",
-    "title": "Cyber Risk Shifts Inside Workflow, 2026 CISO Survey Reveals",
-    "summary": "A 2026 CISO survey shows cyber risk is moving into everyday workflows, driven by AI governance, human risk, and board scrutiny. The findings highlight a five‑year trend toward integrating security into the systems where work actually happens, rather than treating it as a separate function.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/the-sixth-voice-of-ciso-data-shows.html",
-    "publishedAt": "2026-10-07T11:57:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cyber-risk-shifts-inside-workflow-2026-ciso-survey",
-      "article-c1c27e",
-      "c1c27e",
-      "cyber-risk-shifts-inside-workflow-2026-ciso-survey-reveals"
-    ]
-  },
-  {
-    "slug": "apple-introduces-reference-image-for-photo-verific-447f1f",
-    "title": "Apple Introduces Reference Image for Photo Verification",
-    "summary": "Apple has launched Reference Image, a system that verifies photos are exactly as captured by an iPhone without linking them to a specific device or photographer. The feature signs images with Apple’s signing service, enabling authenticity checks while preserving photographer anonymity.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Schneier on Security",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/apples-verified-photography-system.html",
-    "publishedAt": "2026-10-07T11:07:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-introduces-reference-image-for-photo-verific",
-      "article-447f1f",
-      "447f1f",
-      "apple-introduces-reference-image-for-photo-verification"
     ]
   }
 ];
