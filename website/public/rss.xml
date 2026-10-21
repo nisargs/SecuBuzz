@@ -5,8 +5,53 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Oct 2026 01:18:06 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 04:52:36 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AI Adoption in SOCs Requires Vigilance Against Shadow AI and Permission Misconfigurations</title>
+      <link>https://secubuzz.com/news/ai-adoption-in-socs-requires-vigilance-against-sha-25fa17</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-adoption-in-socs-requires-vigilance-against-sha-25fa17</guid>
+      <description><![CDATA[AI integration in security operations centers introduces shadow AI risks and loose permission configurations that attackers can exploit. The discussion highlights how large language models assist in vulnerability analysis, SIEM rule creation, and packet metadata analysis, potentially accelerating detection workflows. Security teams should audit AI-driven permissions and monitor for anomalous model behavior to mitigate misuse.]]></description>
+      <pubDate>Wed, 21 Oct 2026 04:30:13 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/21/bringing-ai-into-the-soc-video/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Accenture, Dragos, and SANS Announce $10M Program to Fortify Small U.S. Utilities</title>
+      <link>https://secubuzz.com/news/accenture-dragos-and-sans-announce-10m-program-to-6babad</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/accenture-dragos-and-sans-announce-10m-program-to-6babad</guid>
+      <description><![CDATA[The $10M initiative targets up to 500 small utilities, providing free security tools, equipment, deployment assistance, and training. The program aims to strengthen operational technology defenses across the U.S. utilities sector by delivering comprehensive cybersecurity resources. Participants should engage with the offered tools and training modules to enhance their security posture.]]></description>
+      <pubDate>Wed, 21 Oct 2026 04:22:11 GMT</pubDate>
+      <source url="https://www.securityweek.com/accenture-dragos-sans-launch-10m-initiative-to-defend-small-us-utilities/">SecurityWeek</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>PHP Issues Critical Security Release for All Versions</title>
+      <link>https://secubuzz.com/news/php-issues-critical-security-release-for-all-versi-4a8589</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/php-issues-critical-security-release-for-all-versi-4a8589</guid>
+      <description><![CDATA[A PHP security release scheduled for 21 October 2026 addresses two critical vulnerabilities affecting all PHP installations. Both flaws carry a CVSS v4.0 score of 9.2, indicating high exploitation potential, though specific vectors remain undisclosed. Administrators should assume all PHP versions are vulnerable until the patch is released and apply the update immediately once available.]]></description>
+      <pubDate>Wed, 21 Oct 2026 04:21:54 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/21/php-security-release-announcement-october-2026/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>PHP Warns of Two Critical Vulnerabilities Ahead of Upcoming Patch</title>
+      <link>https://secubuzz.com/news/php-warns-of-two-critical-vulnerabilities-ahead-of-34249d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/php-warns-of-two-critical-vulnerabilities-ahead-of-34249d</guid>
+      <description><![CDATA[A PHP security release scheduled for 21 October 2026 addresses two critical vulnerabilities affecting all PHP installations. Both flaws carry a CVSS v4.0 score of 9.2, indicating high exploitation potential, though specific vectors remain undisclosed. Administrators should assume all PHP versions are vulnerable until the patch is released and apply the update immediately once available.]]></description>
+      <pubDate>Wed, 21 Oct 2026 03:32:29 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/php-to-issue-emergency-patch/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>TeamUpdraft Website Breach Compromises UpdraftCentral Keys</title>
+      <link>https://secubuzz.com/news/teamupdraft-website-breach-compromises-updraftcent-1477c4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/teamupdraft-website-breach-compromises-updraftcent-1477c4</guid>
+      <description><![CDATA[A threat actor breached TeamUpdraft’s website, compromising UpdraftCentral keys that can send commands to connected WordPress sites. The stolen keys enable remote execution of arbitrary commands on any linked site, threatening site integrity and data confidentiality. TeamUpdraft advises revoking keys, updating to the latest plugin, and monitoring logs for unauthorized activity.]]></description>
+      <pubDate>Wed, 21 Oct 2026 01:01:50 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/stolen-updraftcentral-keys-used-to-backdoor-wordpress-sites/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>eMudhra CA Private Keys Compromised, Major Browsers Revoked Certificates</title>
       <link>https://secubuzz.com/news/emudhra-ca-private-keys-compromised-major-browsers-35845a</link>
@@ -33,15 +78,6 @@
       <pubDate>Tue, 20 Oct 2026 22:02:42 GMT</pubDate>
       <source url="https://www.wiz.io/blog/wiz-sensor-on-gke-1-click-runtime-protection-now-native">Wiz Research</source>
       <category>Cloud</category>
-    </item>
-    <item>
-      <title>PHP Issues Emergency Patches for Two Critical Vulnerabilities</title>
-      <link>https://secubuzz.com/news/php-issues-emergency-patches-for-two-critical-vuln-1cbaec</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/php-issues-emergency-patches-for-two-critical-vuln-1cbaec</guid>
-      <description><![CDATA[The PHP security team has announced that two critical vulnerabilities will be patched in an emergency update scheduled for tomorrow. The flaws were leaked ahead of disclosure, prompting administrators to prepare for imminent patches to mitigate potential exploitation. No CVE identifiers are publicly disclosed yet.]]></description>
-      <pubDate>Tue, 20 Oct 2026 20:56:43 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/php-warns-admins-of-two-critical-flaws-emergency-patches-coming-tomorrow/">BleepingComputer</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>SafePay Ransomware Gang Targets Businesses and Critical Infrastructure</title>
@@ -419,42 +455,6 @@
       <description><![CDATA[Attackers leverage CVE-2026-110936, a DLL side-loading flaw in Siemens Software Center, to deliver ClickFix malware. The vulnerability, scored CVSS 8.4, is actively exploited. Siemens released version 4.0.9.8 to remediate the issue. Users must update to the patched release to mitigate infection risk.]]></description>
       <pubDate>Tue, 20 Oct 2026 12:23:08 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/20/exploitation-siemens-software-center-vulnerability-cve-2026-110936/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Escalation of Malicious Calendar Invite Attacks</title>
-      <link>https://secubuzz.com/news/escalation-of-malicious-calendar-invite-attacks-2d683f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/escalation-of-malicious-calendar-invite-attacks-2d683f</guid>
-      <description><![CDATA[Malicious calendar invites have surged, with Check Point reporting over 118,000 such emails in September 2026 and Sublime Security noting a 1,216% month-over-month increase. The attacks target users via email, delivering phishing payloads or malware. Organizations should enforce stricter email filtering and user training to counter this trend.]]></description>
-      <pubDate>Tue, 20 Oct 2026 12:18:04 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/20/malicious-calendar-invites/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Microsoft Adds Quick Machine Recovery to Windows Server 2025 with October 2026 Update</title>
-      <link>https://secubuzz.com/news/microsoft-adds-quick-machine-recovery-to-windows-s-8c8f02</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-adds-quick-machine-recovery-to-windows-s-8c8f02</guid>
-      <description><![CDATA[Microsoft released an October 2026 security update that adds quick machine recovery to Windows Server 2025. The feature allows administrators to restore servers to a previous healthy state rapidly, improving uptime and simplifying recovery procedures. No security vulnerability is addressed by this update.]]></description>
-      <pubDate>Tue, 20 Oct 2026 12:16:32 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/windows-server-2025-gets-support-for-quick-machine-recovery/">BleepingComputer</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>WAGO OS Linux Web‑Based Management Privilege Escalation Flaws</title>
-      <link>https://secubuzz.com/news/wago-os-linux-web-based-management-privilege-escal-430032</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/wago-os-linux-web-based-management-privilege-escal-430032</guid>
-      <description><![CDATA[Two authenticated privilege‑escalation flaws in the Web‑Based Management interface of WAGO CC100, PFC100 G2, PFC200 G2, TP600, Edge Controller and WP400 devices allow low‑privileged users to bypass routing configuration and PROFIBUS authorization controls. Affected firmware versions are all releases 1.0.0 and above.]]></description>
-      <pubDate>Tue, 20 Oct 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-02">CISA</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Hitachi Energy RTU500 Firmware Vulnerabilities Expose Critical Infrastructure</title>
-      <link>https://secubuzz.com/news/hitachi-energy-rtu500-firmware-vulnerabilities-exp-430032</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hitachi-energy-rtu500-firmware-vulnerabilities-exp-430032</guid>
-      <description><![CDATA[Hitachi Energy identified multiple vulnerabilities in RTU500 series CMU firmware versions 13.5.1 through 12.7.1. The flaws include NULL pointer dereference, type confusion, use‑after‑free, cleartext transmission, weak credential protection, and authentication bypass. Exploitation could compromise confidentiality, integrity, and availability. Immediate patching or mitigation is required.]]></description>
-      <pubDate>Tue, 20 Oct 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-05">CISA</source>
       <category>Vulnerability</category>
     </item>
   </channel>

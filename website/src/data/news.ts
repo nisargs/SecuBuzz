@@ -11,6 +11,96 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "ai-adoption-in-socs-requires-vigilance-against-sha-25fa17",
+    "title": "AI Adoption in SOCs Requires Vigilance Against Shadow AI and Permission Misconfigurations",
+    "summary": "AI integration in security operations centers introduces shadow AI risks and loose permission configurations that attackers can exploit. The discussion highlights how large language models assist in vulnerability analysis, SIEM rule creation, and packet metadata analysis, potentially accelerating detection workflows. Security teams should audit AI-driven permissions and monitor for anomalous model behavior to mitigate misuse.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/21/bringing-ai-into-the-soc-video/",
+    "publishedAt": "2026-10-21T04:30:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-adoption-in-socs-requires-vigilance-against-sha",
+      "article-25fa17",
+      "25fa17",
+      "ai-adoption-in-socs-requires-vigilance-against-shadow-ai-and"
+    ]
+  },
+  {
+    "slug": "accenture-dragos-and-sans-announce-10m-program-to-6babad",
+    "title": "Accenture, Dragos, and SANS Announce $10M Program to Fortify Small U.S. Utilities",
+    "summary": "The $10M initiative targets up to 500 small utilities, providing free security tools, equipment, deployment assistance, and training. The program aims to strengthen operational technology defenses across the U.S. utilities sector by delivering comprehensive cybersecurity resources. Participants should engage with the offered tools and training modules to enhance their security posture.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/accenture-dragos-sans-launch-10m-initiative-to-defend-small-us-utilities/",
+    "publishedAt": "2026-10-21T04:22:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "accenture-dragos-and-sans-announce-10m-program-to",
+      "article-6babad",
+      "6babad",
+      "accenture-dragos-and-sans-announce-10m-program-to-fortify-sm"
+    ]
+  },
+  {
+    "slug": "php-issues-critical-security-release-for-all-versi-4a8589",
+    "title": "PHP Issues Critical Security Release for All Versions",
+    "summary": "A PHP security release scheduled for 21 October 2026 addresses two critical vulnerabilities affecting all PHP installations. Both flaws carry a CVSS v4.0 score of 9.2, indicating high exploitation potential, though specific vectors remain undisclosed. Administrators should assume all PHP versions are vulnerable until the patch is released and apply the update immediately once available.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/21/php-security-release-announcement-october-2026/",
+    "publishedAt": "2026-10-21T04:21:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "php-issues-critical-security-release-for-all-versi",
+      "article-4a8589",
+      "4a8589",
+      "php-issues-critical-security-release-for-all-versions"
+    ]
+  },
+  {
+    "slug": "php-warns-of-two-critical-vulnerabilities-ahead-of-34249d",
+    "title": "PHP Warns of Two Critical Vulnerabilities Ahead of Upcoming Patch",
+    "summary": "A PHP security release scheduled for 21 October 2026 addresses two critical vulnerabilities affecting all PHP installations. Both flaws carry a CVSS v4.0 score of 9.2, indicating high exploitation potential, though specific vectors remain undisclosed. Administrators should assume all PHP versions are vulnerable until the patch is released and apply the update immediately once available.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/php-to-issue-emergency-patch/",
+    "publishedAt": "2026-10-21T03:32:29.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "php-warns-of-two-critical-vulnerabilities-ahead-of",
+      "article-34249d",
+      "34249d",
+      "php-warns-of-two-critical-vulnerabilities-ahead-of-upcoming-"
+    ]
+  },
+  {
+    "slug": "teamupdraft-website-breach-compromises-updraftcent-1477c4",
+    "title": "TeamUpdraft Website Breach Compromises UpdraftCentral Keys",
+    "summary": "A threat actor breached TeamUpdraft’s website, compromising UpdraftCentral keys that can send commands to connected WordPress sites. The stolen keys enable remote execution of arbitrary commands on any linked site, threatening site integrity and data confidentiality. TeamUpdraft advises revoking keys, updating to the latest plugin, and monitoring logs for unauthorized activity.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/stolen-updraftcentral-keys-used-to-backdoor-wordpress-sites/",
+    "publishedAt": "2026-10-21T01:01:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "teamupdraft-website-breach-compromises-updraftcent",
+      "article-1477c4",
+      "1477c4",
+      "teamupdraft-website-breach-compromises-updraftcentral-keys"
+    ]
+  },
+  {
     "slug": "emudhra-ca-private-keys-compromised-major-browsers-35845a",
     "title": "eMudhra CA Private Keys Compromised, Major Browsers Revoked Certificates",
     "summary": "eMudhra CA private keys were weak, enabling instant recovery and forging of trusted certificates for legitimate sites. Mozilla, Google, Apple revoked eight compromised intermediate certificates. The flaw allows attackers to issue fraudulent certificates, potentially enabling man‑in‑the‑middle attacks against users of affected domains.",
@@ -61,24 +151,6 @@ export const news: NewsBrief[] = [
       "wiz-launches-native-runtime-protection-for-gke",
       "article-6ae1e3",
       "6ae1e3"
-    ]
-  },
-  {
-    "slug": "php-issues-emergency-patches-for-two-critical-vuln-1cbaec",
-    "title": "PHP Issues Emergency Patches for Two Critical Vulnerabilities",
-    "summary": "The PHP security team has announced that two critical vulnerabilities will be patched in an emergency update scheduled for tomorrow. The flaws were leaked ahead of disclosure, prompting administrators to prepare for imminent patches to mitigate potential exploitation. No CVE identifiers are publicly disclosed yet.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/php-warns-admins-of-two-critical-flaws-emergency-patches-coming-tomorrow/",
-    "publishedAt": "2026-10-20T20:56:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "php-issues-emergency-patches-for-two-critical-vuln",
-      "article-1cbaec",
-      "1cbaec",
-      "php-issues-emergency-patches-for-two-critical-vulnerabilitie"
     ]
   },
   {
@@ -6195,78 +6267,6 @@ export const news: NewsBrief[] = [
       "article-1a1a0d",
       "1a1a0d",
       "wiz-red-agent-reveals-public-data-exposure-at-fortune-500-fi"
-    ]
-  },
-  {
-    "slug": "southern-company-utility-accounts-breached-400-000-1d63b2",
-    "title": "Southern Company Utility Accounts Breached, 400,000 Customers Affected",
-    "summary": "Southern Company announced that hackers accessed utility account information for Georgia Power and Alabama Power customers, affecting approximately 400,000 accounts. The breach involved unauthorized access to customer data, prompting the company to notify affected users and investigate the intrusion.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/georgia-power-alabama-power-data-breach-hits-400000-accounts/",
-    "publishedAt": "2026-10-07T14:15:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "southern-company-utility-accounts-breached-400-000",
-      "article-1d63b2",
-      "1d63b2",
-      "southern-company-utility-accounts-breached-400-000-customers"
-    ]
-  },
-  {
-    "slug": "ransomware-targets-backup-infrastructure-urging-ro-397911",
-    "title": "Ransomware Targets Backup Infrastructure, Urging Robust Isolation",
-    "summary": "Ransomware groups increasingly attack backup systems to block recovery and pressure victims into paying. Kaseya warns that backups must be isolated, immutable, and regularly tested so attackers cannot reach them. Organizations should ensure backups are off‑site, encrypted, and verified to maintain resilience.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ransomware-has-a-new-target-is-your-backup-ready/",
-    "publishedAt": "2026-10-07T14:01:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ransomware-targets-backup-infrastructure-urging-ro",
-      "article-397911",
-      "397911",
-      "ransomware-targets-backup-infrastructure-urging-robust-isola"
-    ]
-  },
-  {
-    "slug": "teen-detained-for-leading-shinyhunters-extortion-o-5fb00d",
-    "title": "Teen Detained for Leading ShinyHunters Extortion of Boeing Spin‑Off",
-    "summary": "A teenager from Amman, Jordan, suspected of leading the ShinyHunters data‑theft and extortion group, was detained and is cooperating with the FBI. The group was extorting a Boeing divested business unit before the arrest. The suspect, known as \"Rey,\" is being investigated for further gang members.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "Krebs on Security",
-    "sourceUrl": "https://krebsonsecurity.com/2026/10/shinyhunters-extorted-boeing-spin-off-prior-to-arrests/",
-    "publishedAt": "2026-10-07T13:48:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "teen-detained-for-leading-shinyhunters-extortion-o",
-      "article-5fb00d",
-      "5fb00d",
-      "teen-detained-for-leading-shinyhunters-extortion-of-boeing-s"
-    ]
-  },
-  {
-    "slug": "google-releases-android-security-updates-limited-a-3e8667",
-    "title": "Google Releases Android Security Updates, Limited Availability",
-    "summary": "Google has issued new Android security updates, but many users will not be able to receive the patches immediately. The updates address various security issues, but rollout delays mean some devices remain unpatched for the time being.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/10/google-issues-android-security-updates-who-can-get-them-and-how",
-    "publishedAt": "2026-10-07T13:25:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-releases-android-security-updates-limited-a",
-      "article-3e8667",
-      "3e8667",
-      "google-releases-android-security-updates-limited-availabilit"
     ]
   }
 ];
