@@ -11,21 +11,39 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
-    "slug": "eight-emudhra-certificates-compromised-due-to-weak-7a26c8",
-    "title": "Eight eMudhra Certificates Compromised Due to Weak Keys",
-    "summary": "Eight eMudhra intermediate certificates were found to use weak cryptographic keys, exposing them to potential compromise. Cloudflare is deploying mitigations and releasing client updates to address the issue. Users and developers should update their clients and review certificate usage to prevent unauthorized access.",
+    "slug": "emudhra-ca-private-keys-compromised-major-browsers-35845a",
+    "title": "eMudhra CA Private Keys Compromised, Major Browsers Revoked Certificates",
+    "summary": "eMudhra CA private keys were weak, enabling instant recovery and forging of trusted certificates for legitimate sites. Mozilla, Google, Apple revoked eight compromised intermediate certificates. The flaw allows attackers to issue fraudulent certificates, potentially enabling man‑in‑the‑middle attacks against users of affected domains.",
     "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/emudhra-certificate-compromise/",
-    "publishedAt": "2026-10-20T22:20:16.000Z",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/mozilla-google-apple-block-compromised-emudhra-ca-certificates/",
+    "publishedAt": "2026-10-21T00:46:42.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "eight-emudhra-certificates-compromised-due-to-weak",
-      "article-7a26c8",
-      "7a26c8",
-      "eight-emudhra-certificates-compromised-due-to-weak-keys"
+      "emudhra-ca-private-keys-compromised-major-browsers",
+      "article-35845a",
+      "35845a",
+      "emudhra-ca-private-keys-compromised-major-browsers-revoked-c"
+    ]
+  },
+  {
+    "slug": "cve-2026-0257-enables-pan-os-globalprotect-vpn-byp-54f514",
+    "title": "CVE‑2026‑0257 Enables PAN‑OS GlobalProtect VPN Bypass and ESXi Hijack",
+    "summary": "CVE‑2026‑0257 permits Qilin and Inc ransomware gangs to bypass PAN‑OS GlobalProtect VPN authentication, hijack ESXi hosts, and dump VMDK files. The vulnerability is an authenticated RCE that can be exploited to gain full control of virtualized environments. Palo Alto released a patch; administrators should apply it immediately.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/cve-2026-0257-pan-os-globalprotect-auth-bypass-defense",
+    "publishedAt": "2026-10-21T00:02:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-0257-enables-pan-os-globalprotect-vpn-byp",
+      "article-54f514",
+      "54f514",
+      "cve-2026-0257-enables-pan-os-globalprotect-vpn-bypass-and-es"
     ]
   },
   {
@@ -312,26 +330,6 @@ export const news: NewsBrief[] = [
       "ai-complicates-software-development-security",
       "article-2691c8",
       "2691c8"
-    ]
-  },
-  {
-    "slug": "palo-alto-networks-mfa-bypass-exploited-by-ransomw-514c79",
-    "title": "Palo Alto Networks MFA Bypass Exploited by Ransomware Groups",
-    "summary": "Palo Alto Networks disclosed exploitation of CVE-2026-0257, an authentication bypass flaw in PAN‑OS and Prisma Access. Ransomware actors Qilin and INC used the flaw to establish unauthorized VPN connections, bypassing MFA. The issue was patched in May 2026; users should apply the update immediately.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html",
-    "publishedAt": "2026-10-20T15:32:27.000Z",
-    "cves": [
-      "CVE-2026-0257"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "palo-alto-networks-mfa-bypass-exploited-by-ransomw",
-      "article-514c79",
-      "514c79",
-      "palo-alto-networks-mfa-bypass-exploited-by-ransomware-groups"
     ]
   },
   {

@@ -5,15 +5,24 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Oct 2026 00:38:42 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 00:50:45 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Eight eMudhra Certificates Compromised Due to Weak Keys</title>
-      <link>https://secubuzz.com/news/eight-emudhra-certificates-compromised-due-to-weak-7a26c8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/eight-emudhra-certificates-compromised-due-to-weak-7a26c8</guid>
-      <description><![CDATA[Eight eMudhra intermediate certificates were found to use weak cryptographic keys, exposing them to potential compromise. Cloudflare is deploying mitigations and releasing client updates to address the issue. Users and developers should update their clients and review certificate usage to prevent unauthorized access.]]></description>
-      <pubDate>Tue, 20 Oct 2026 22:20:16 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/emudhra-certificate-compromise/">Cloudflare Security</source>
+      <title>eMudhra CA Private Keys Compromised, Major Browsers Revoked Certificates</title>
+      <link>https://secubuzz.com/news/emudhra-ca-private-keys-compromised-major-browsers-35845a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/emudhra-ca-private-keys-compromised-major-browsers-35845a</guid>
+      <description><![CDATA[eMudhra CA private keys were weak, enabling instant recovery and forging of trusted certificates for legitimate sites. Mozilla, Google, Apple revoked eight compromised intermediate certificates. The flaw allows attackers to issue fraudulent certificates, potentially enabling man‑in‑the‑middle attacks against users of affected domains.]]></description>
+      <pubDate>Wed, 21 Oct 2026 00:46:42 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/mozilla-google-apple-block-compromised-emudhra-ca-certificates/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>CVE‑2026‑0257 Enables PAN‑OS GlobalProtect VPN Bypass and ESXi Hijack</title>
+      <link>https://secubuzz.com/news/cve-2026-0257-enables-pan-os-globalprotect-vpn-byp-54f514</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-0257-enables-pan-os-globalprotect-vpn-byp-54f514</guid>
+      <description><![CDATA[CVE‑2026‑0257 permits Qilin and Inc ransomware gangs to bypass PAN‑OS GlobalProtect VPN authentication, hijack ESXi hosts, and dump VMDK files. The vulnerability is an authenticated RCE that can be exploited to gain full control of virtualized environments. Palo Alto released a patch; administrators should apply it immediately.]]></description>
+      <pubDate>Wed, 21 Oct 2026 00:02:03 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/cve-2026-0257-pan-os-globalprotect-auth-bypass-defense">CyberNews AI</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -159,15 +168,6 @@
       <pubDate>Tue, 20 Oct 2026 15:35:45 GMT</pubDate>
       <source url="https://www.darkreading.com/application-security/close-identity-gaps-sdlc-before-ai">Dark Reading</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Palo Alto Networks MFA Bypass Exploited by Ransomware Groups</title>
-      <link>https://secubuzz.com/news/palo-alto-networks-mfa-bypass-exploited-by-ransomw-514c79</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/palo-alto-networks-mfa-bypass-exploited-by-ransomw-514c79</guid>
-      <description><![CDATA[Palo Alto Networks disclosed exploitation of CVE-2026-0257, an authentication bypass flaw in PAN‑OS and Prisma Access. Ransomware actors Qilin and INC used the flaw to establish unauthorized VPN connections, bypassing MFA. The issue was patched in May 2026; users should apply the update immediately.]]></description>
-      <pubDate>Tue, 20 Oct 2026 15:32:27 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html">The Hacker News</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>Microsoft Patch Tuesday Releases 1,415 Vulnerability Advisories</title>

@@ -1,27 +1,37 @@
 [
   {
-    "id": "https://blog.cloudflare.com/emudhra-certificate-compromise/",
-    "sourceUrl": "https://blog.cloudflare.com/emudhra-certificate-compromise/",
-    "title": "Eight eMudhra Certificates Compromised Due to Weak Keys",
-    "headline": "Eight eMudhra Certificates Compromised Due to Weak Keys",
-    "summary": "Eight eMudhra intermediate certificates were found to use weak cryptographic keys, exposing them to potential compromise. Cloudflare is deploying mitigations and releasing client updates to address the issue. Users and developers should update their clients and review certificate usage to prevent unauthorized access.",
+    "id": "https://www.bleepingcomputer.com/news/security/mozilla-google-apple-block-compromised-emudhra-ca-certificates/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/mozilla-google-apple-block-compromised-emudhra-ca-certificates/",
+    "title": "eMudhra CA Private Keys Compromised, Major Browsers Revoked Certificates",
+    "headline": "eMudhra CA Private Keys Compromised, Major Browsers Revoked Certificates",
+    "summary": "eMudhra CA private keys were weak, enabling instant recovery and forging of trusted certificates for legitimate sites. Mozilla, Google, Apple revoked eight compromised intermediate certificates. The flaw allows attackers to issue fraudulent certificates, potentially enabling man‑in‑the‑middle attacks against users of affected domains.",
     "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Cloudflare Security",
-    "publishedAt": "2026-10-20T22:20:16.000Z",
-    "url": "https://blog.cloudflare.com/emudhra-certificate-compromise/",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-21T00:46:42.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/mozilla-google-apple-block-compromised-emudhra-ca-certificates/",
     "additionalSources": [
       {
-        "source": "Dark Reading",
-        "sourceUrl": "https://www.darkreading.com/cyber-risk/tech-giants-emudhra-certificates-compromised-keys"
-      },
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/emudhra-security-compromise/"
-      },
+        "source": "Cloudflare Security",
+        "sourceUrl": "https://blog.cloudflare.com/emudhra-certificate-compromise/"
+      }
+    ]
+  },
+  {
+    "id": "https://cybernewsai.com/blog/cve-2026-0257-pan-os-globalprotect-auth-bypass-defense",
+    "sourceUrl": "https://cybernewsai.com/blog/cve-2026-0257-pan-os-globalprotect-auth-bypass-defense",
+    "title": "CVE‑2026‑0257 Enables PAN‑OS GlobalProtect VPN Bypass and ESXi Hijack",
+    "headline": "CVE‑2026‑0257 Enables PAN‑OS GlobalProtect VPN Bypass and ESXi Hijack",
+    "summary": "CVE‑2026‑0257 permits Qilin and Inc ransomware gangs to bypass PAN‑OS GlobalProtect VPN authentication, hijack ESXi hosts, and dump VMDK files. The vulnerability is an authenticated RCE that can be exploited to gain full control of virtualized environments. Palo Alto released a patch; administrators should apply it immediately.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-10-21T00:02:03.000Z",
+    "url": "https://cybernewsai.com/blog/cve-2026-0257-pan-os-globalprotect-auth-bypass-defense",
+    "additionalSources": [
       {
         "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/go-issues-emergency-update-blocking.html"
+        "sourceUrl": "https://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html"
       }
     ]
   },
@@ -276,24 +286,6 @@
     "publishedAt": "2026-10-20T15:35:45.000Z",
     "url": "https://www.darkreading.com/application-security/close-identity-gaps-sdlc-before-ai",
     "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html",
-    "title": "Palo Alto Networks MFA Bypass Exploited by Ransomware Groups",
-    "headline": "Palo Alto Networks MFA Bypass Exploited by Ransomware Groups",
-    "summary": "Palo Alto Networks disclosed exploitation of CVE-2026-0257, an authentication bypass flaw in PAN‑OS and Prisma Access. Ransomware actors Qilin and INC used the flaw to establish unauthorized VPN connections, bypassing MFA. The issue was patched in May 2026; users should apply the update immediately.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-20T15:32:27.000Z",
-    "url": "https://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/palo-alto-vpn-flaw-exploited/"
-      }
-    ]
   },
   {
     "id": "https://blog.talosintelligence.com/theres-only-so-much-code-the-rise-in-vulnerability-numbers/",
