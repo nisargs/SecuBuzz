@@ -11,6 +11,116 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "state-bank-of-india-data-leak-exposes-3-897-custom-b51c3d",
+    "title": "State Bank of India Data Leak Exposes 3,897 Customer Records on Dark Web",
+    "summary": "State Bank of India disclosed a data leak exposing 3,897 customer records on the dark web, including personal information such as names, addresses, and account numbers. The breach originated from an unidentified source, and the bank has not determined how the data was exfiltrated. The bank issued a public notice and is investigating while advising customers to monitor accounts.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/state-bank-of-india-confirms-data-leak.html",
+    "publishedAt": "2026-10-21T07:44:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "state-bank-of-india-data-leak-exposes-3-897-custom",
+      "article-b51c3d",
+      "b51c3d",
+      "state-bank-of-india-data-leak-exposes-3-897-customer-records"
+    ]
+  },
+  {
+    "slug": "cisa-adds-plex2shell-ssrf-vulnerability-to-known-e-4e40a4",
+    "title": "CISA Adds Plex2Shell SSRF Vulnerability to Known Exploited Vulnerabilities Catalog",
+    "summary": "CISA added four vulnerabilities to its Known Exploited Vulnerabilities catalog, including Plex2Shell SSRF in Plex Media Server (CVE-2026-96652, CVSS 5.3). The SSRF flaw allows attackers to request arbitrary internal URLs, potentially exposing sensitive data or facilitating lateral movement. CISA urges all affected agencies to apply vendor patches immediately and enable network segmentation to mitigate exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html",
+    "publishedAt": "2026-10-21T07:26:49.000Z",
+    "cves": [
+      "CVE-2026-96652"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-adds-plex2shell-ssrf-vulnerability-to-known-e",
+      "article-4e40a4",
+      "4e40a4",
+      "cisa-adds-plex2shell-ssrf-vulnerability-to-known-exploited-v"
+    ]
+  },
+  {
+    "slug": "hackers-embed-vasilek-backdoor-in-vmware-tools-on-6adb8d",
+    "title": "Hackers Embed Vasilek Backdoor in VMware Tools on Russian Healthcare Network",
+    "summary": "Hackers embedded a Vasilek backdoor within VMware Tools on a Russian healthcare network, exploiting the virtualization platform to maintain persistence. Attributed to the Belarus‑aligned Partisan Zmiy cluster, the backdoor operated for nearly two years, enabling stealthy lateral movement and data exfiltration. Mitigation requires disabling VMware Tools on critical hosts, applying vendor patches, and monitoring for anomalous process execution.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/hackers-hid-vasilek-backdoor-in-vmware.html",
+    "publishedAt": "2026-10-21T06:05:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-embed-vasilek-backdoor-in-vmware-tools-on",
+      "article-6adb8d",
+      "6adb8d",
+      "hackers-embed-vasilek-backdoor-in-vmware-tools-on-russian-he"
+    ]
+  },
+  {
+    "slug": "hijacked-developer-account-used-to-plant-stealer-i-66235b",
+    "title": "Hijacked Developer Account Used to Plant Stealer in OVHcloud CLI",
+    "summary": "An attacker compromised a developer’s account in March, leveraging a GlassWorm-linked loader to inject a credential stealer into OVHcloud’s command‑line interface. The breach enabled unauthorized extraction of user credentials from the CLI environment, exposing sensitive account information. OVHcloud has notified affected users and recommends revoking compromised credentials and applying the latest security updates.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/hijacked-developer-account-used-to-plant-stealer-in-ovhcloud-cli/",
+    "publishedAt": "2026-10-21T06:02:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hijacked-developer-account-used-to-plant-stealer-i",
+      "article-66235b",
+      "66235b",
+      "hijacked-developer-account-used-to-plant-stealer-in-ovhcloud"
+    ]
+  },
+  {
+    "slug": "modern-cardiac-monitoring-transmits-ecg-data-to-cl-19e7e4",
+    "title": "Modern Cardiac Monitoring Transmits ECG Data to Cloud",
+    "summary": "A modern cardiac monitoring system transmits ECG data from wearable devices to cloud services for remote cardiologist review. The shift introduces new privacy risks as data travels through mobile gateways and cloud storage, exposing it to potential interception or misuse. Healthcare providers must enforce end‑to‑end encryption, secure gateway authentication, and compliance with data‑protection regulations to mitigate these risks.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/21/ecg-heart-data-privacy-preserving-ai/",
+    "publishedAt": "2026-10-21T06:00:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "modern-cardiac-monitoring-transmits-ecg-data-to-cl",
+      "article-19e7e4",
+      "19e7e4",
+      "modern-cardiac-monitoring-transmits-ecg-data-to-cloud"
+    ]
+  },
+  {
+    "slug": "devguard-consolidates-vulnerability-findings-into-eacd25",
+    "title": "DevGuard Consolidates Vulnerability Findings into a Single Dashboard",
+    "summary": "DevGuard is an open‑source platform that aggregates security findings across a software project into a single dashboard. It consolidates secret scanning, static analysis, dependency checks against known CVEs, IaC validation, container scanning, and license compliance into one command‑line interface. Teams can self‑host DevGuard to prioritize risks and track remediation, improving supply‑chain security posture.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/21/devguard-open-source-vulnerability-management/",
+    "publishedAt": "2026-10-21T05:30:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "devguard-consolidates-vulnerability-findings-into",
+      "article-eacd25",
+      "eacd25",
+      "devguard-consolidates-vulnerability-findings-into-a-single-d"
+    ]
+  },
+  {
     "slug": "ai-adoption-in-socs-requires-vigilance-against-sha-25fa17",
     "title": "AI Adoption in SOCs Requires Vigilance Against Shadow AI and Permission Misconfigurations",
     "summary": "AI integration in security operations centers introduces shadow AI risks and loose permission configurations that attackers can exploit. The discussion highlights how large language models assist in vulnerability analysis, SIEM rule creation, and packet metadata analysis, potentially accelerating detection workflows. Security teams should audit AI-driven permissions and monitor for anomalous model behavior to mitigate misuse.",
@@ -1034,24 +1144,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "hackers-target-south-korean-banks-with-ai-then-acc-54ce2b",
-    "title": "Hackers Target South Korean Banks With AI, Then Accidentally Expose Their Own Attack Tools",
-    "summary": "Hackers linked to AI‑assisted attacks on South Korean banks inadvertently exposed parts of their own infrastructure, revealing cryptocurrency theft tools, Linux exploits, and mobile security testing assets. The accidental disclosure provides researchers insight into the attackers’ tools and operational scope.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-target-south-korean-banks/",
-    "publishedAt": "2026-10-20T11:09:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-target-south-korean-banks-with-ai-then-acc",
-      "article-54ce2b",
-      "54ce2b",
-      "hackers-target-south-korean-banks-with-ai-then-accidentally-"
-    ]
-  },
-  {
     "slug": "russian-apt28-breaches-nato-naval-shipbuilder-depl-2ad62b",
     "title": "Russian APT28 Breaches NATO Naval Shipbuilder, Deploys HOOKEDGE Loader",
     "summary": "Russian state-sponsored group APT28, also known as BlueDelta, targeted a NATO naval shipbuilder in a NATO member country, deploying a new reflective loader named HOOKEDGE. The operation, tracked by Symantec Threat Hunter Team under Swallowtail, demonstrates APT28’s continued use of backdoors to compromise critical defense infrastructure.",
@@ -1638,24 +1730,6 @@ export const news: NewsBrief[] = [
       "article-1b7c8c",
       "1b7c8c",
       "salesforce-agentforce-email-to-case-governance-exploitation"
-    ]
-  },
-  {
-    "slug": "firstvds-customer-data-stolen-via-server-managemen-706d96",
-    "title": "FirstVDS Customer Data Stolen via Server Management Software Vulnerability",
-    "summary": "Hackers exploited a flaw in FirstVDS’s server management software to steal passwords, access credentials, and other sensitive customer data. The breach compromised the personal information of FirstVDS users.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/russia-cyberattack-firstvds-cloud",
-    "publishedAt": "2026-10-19T11:45:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "firstvds-customer-data-stolen-via-server-managemen",
-      "article-706d96",
-      "706d96",
-      "firstvds-customer-data-stolen-via-server-management-software"
     ]
   },
   {
@@ -6193,80 +6267,6 @@ export const news: NewsBrief[] = [
       "article-71664f",
       "71664f",
       "microsoft-forge-lab-shares-lessons-from-ai-driven-vulnerabil"
-    ]
-  },
-  {
-    "slug": "microsoft-outlook-to-block-msix-attachments-starti-b85db0",
-    "title": "Microsoft Outlook to Block MSIX Attachments Starting November",
-    "summary": "Microsoft will block .msix and .msixbundle attachments in Outlook Web and the new Outlook Windows client from November, preventing users from opening potentially malicious MSIX packages.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-outlook-to-block-msix-attachments-used-in-attacks/",
-    "publishedAt": "2026-10-07T15:44:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-outlook-to-block-msix-attachments-starti",
-      "article-b85db0",
-      "b85db0",
-      "microsoft-outlook-to-block-msix-attachments-starting-novembe"
-    ]
-  },
-  {
-    "slug": "supreme-court-geofencing-ruling-forces-judge-to-to-797192",
-    "title": "Supreme Court Geofencing Ruling Forces Judge to Toss Flock Camera Evidence",
-    "summary": "A recent Supreme Court decision on geofencing data made Oklahoma judge dismiss a sheriff’s Flock camera footage in a drug trafficking case. The ruling underscores the growing importance of digital evidence standards and the limits of geofencing in court proceedings.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/oklahoma-flock-ruing-supreme-court-chatrie-decision",
-    "publishedAt": "2026-10-07T15:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "supreme-court-geofencing-ruling-forces-judge-to-to",
-      "article-797192",
-      "797192",
-      "supreme-court-geofencing-ruling-forces-judge-to-toss-flock-c"
-    ]
-  },
-  {
-    "slug": "atlassian-patch-addresses-cve-2026-21589-arbitrary-57dd7d",
-    "title": "Atlassian Patch Addresses CVE-2026-21589 Arbitrary File Access Vulnerability",
-    "summary": "Atlassian released patches for multiple products to fix CVE-2026-21589, an arbitrary file access flaw allowing attackers to read any file in the web application’s directory. The vulnerability could expose sensitive configuration files and other confidential data. Users should apply the update immediately to prevent potential data exposure.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33406",
-    "publishedAt": "2026-10-07T14:59:33.000Z",
-    "cves": [
-      "CVE-2026-21589"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "atlassian-patch-addresses-cve-2026-21589-arbitrary",
-      "article-57dd7d",
-      "57dd7d",
-      "atlassian-patch-addresses-cve-2026-21589-arbitrary-file-acce"
-    ]
-  },
-  {
-    "slug": "wiz-red-agent-reveals-public-data-exposure-at-fort-1a1a0d",
-    "title": "Wiz Red Agent Reveals Public Data Exposure at Fortune 500 Firm",
-    "summary": "Wiz’s Red Agent identified a public webpage that exposed sensitive company data within minutes, a flaw missed by traditional DSPM tools. The exposure highlighted gaps in internal‑to‑external scanning and the need for attacker‑thinking security assessments to detect such leaks early.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Wiz Research",
-    "sourceUrl": "https://www.wiz.io/blog/red-agent-financial-services-data-exposure",
-    "publishedAt": "2026-10-07T14:53:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "wiz-red-agent-reveals-public-data-exposure-at-fort",
-      "article-1a1a0d",
-      "1a1a0d",
-      "wiz-red-agent-reveals-public-data-exposure-at-fortune-500-fi"
     ]
   }
 ];

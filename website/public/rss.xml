@@ -5,8 +5,62 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Oct 2026 04:52:36 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 08:00:48 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>State Bank of India Data Leak Exposes 3,897 Customer Records on Dark Web</title>
+      <link>https://secubuzz.com/news/state-bank-of-india-data-leak-exposes-3-897-custom-b51c3d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/state-bank-of-india-data-leak-exposes-3-897-custom-b51c3d</guid>
+      <description><![CDATA[State Bank of India disclosed a data leak exposing 3,897 customer records on the dark web, including personal information such as names, addresses, and account numbers. The breach originated from an unidentified source, and the bank has not determined how the data was exfiltrated. The bank issued a public notice and is investigating while advising customers to monitor accounts.]]></description>
+      <pubDate>Wed, 21 Oct 2026 07:44:22 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/state-bank-of-india-confirms-data-leak.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>CISA Adds Plex2Shell SSRF Vulnerability to Known Exploited Vulnerabilities Catalog</title>
+      <link>https://secubuzz.com/news/cisa-adds-plex2shell-ssrf-vulnerability-to-known-e-4e40a4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-plex2shell-ssrf-vulnerability-to-known-e-4e40a4</guid>
+      <description><![CDATA[CISA added four vulnerabilities to its Known Exploited Vulnerabilities catalog, including Plex2Shell SSRF in Plex Media Server (CVE-2026-96652, CVSS 5.3). The SSRF flaw allows attackers to request arbitrary internal URLs, potentially exposing sensitive data or facilitating lateral movement. CISA urges all affected agencies to apply vendor patches immediately and enable network segmentation to mitigate exploitation.]]></description>
+      <pubDate>Wed, 21 Oct 2026 07:26:49 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Hackers Embed Vasilek Backdoor in VMware Tools on Russian Healthcare Network</title>
+      <link>https://secubuzz.com/news/hackers-embed-vasilek-backdoor-in-vmware-tools-on-6adb8d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-embed-vasilek-backdoor-in-vmware-tools-on-6adb8d</guid>
+      <description><![CDATA[Hackers embedded a Vasilek backdoor within VMware Tools on a Russian healthcare network, exploiting the virtualization platform to maintain persistence. Attributed to the Belarus‑aligned Partisan Zmiy cluster, the backdoor operated for nearly two years, enabling stealthy lateral movement and data exfiltration. Mitigation requires disabling VMware Tools on critical hosts, applying vendor patches, and monitoring for anomalous process execution.]]></description>
+      <pubDate>Wed, 21 Oct 2026 06:05:15 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/hackers-hid-vasilek-backdoor-in-vmware.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Hijacked Developer Account Used to Plant Stealer in OVHcloud CLI</title>
+      <link>https://secubuzz.com/news/hijacked-developer-account-used-to-plant-stealer-i-66235b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hijacked-developer-account-used-to-plant-stealer-i-66235b</guid>
+      <description><![CDATA[An attacker compromised a developer’s account in March, leveraging a GlassWorm-linked loader to inject a credential stealer into OVHcloud’s command‑line interface. The breach enabled unauthorized extraction of user credentials from the CLI environment, exposing sensitive account information. OVHcloud has notified affected users and recommends revoking compromised credentials and applying the latest security updates.]]></description>
+      <pubDate>Wed, 21 Oct 2026 06:02:27 GMT</pubDate>
+      <source url="https://www.securityweek.com/hijacked-developer-account-used-to-plant-stealer-in-ovhcloud-cli/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Modern Cardiac Monitoring Transmits ECG Data to Cloud</title>
+      <link>https://secubuzz.com/news/modern-cardiac-monitoring-transmits-ecg-data-to-cl-19e7e4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/modern-cardiac-monitoring-transmits-ecg-data-to-cl-19e7e4</guid>
+      <description><![CDATA[A modern cardiac monitoring system transmits ECG data from wearable devices to cloud services for remote cardiologist review. The shift introduces new privacy risks as data travels through mobile gateways and cloud storage, exposing it to potential interception or misuse. Healthcare providers must enforce end‑to‑end encryption, secure gateway authentication, and compliance with data‑protection regulations to mitigate these risks.]]></description>
+      <pubDate>Wed, 21 Oct 2026 06:00:35 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/21/ecg-heart-data-privacy-preserving-ai/">Help Net Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>DevGuard Consolidates Vulnerability Findings into a Single Dashboard</title>
+      <link>https://secubuzz.com/news/devguard-consolidates-vulnerability-findings-into-eacd25</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/devguard-consolidates-vulnerability-findings-into-eacd25</guid>
+      <description><![CDATA[DevGuard is an open‑source platform that aggregates security findings across a software project into a single dashboard. It consolidates secret scanning, static analysis, dependency checks against known CVEs, IaC validation, container scanning, and license compliance into one command‑line interface. Teams can self‑host DevGuard to prioritize risks and track remediation, improving supply‑chain security posture.]]></description>
+      <pubDate>Wed, 21 Oct 2026 05:30:45 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/21/devguard-open-source-vulnerability-management/">Help Net Security</source>
+      <category>Cloud</category>
+    </item>
     <item>
       <title>AI Adoption in SOCs Requires Vigilance Against Shadow AI and Permission Misconfigurations</title>
       <link>https://secubuzz.com/news/ai-adoption-in-socs-requires-vigilance-against-sha-25fa17</link>
@@ -402,60 +456,6 @@
       <pubDate>Tue, 20 Oct 2026 13:00:00 GMT</pubDate>
       <source url="https://blog.cloudflare.com/typescript-rust-port/">Cloudflare Security</source>
       <category>Cloud</category>
-    </item>
-    <item>
-      <title>Pegasus Spyware Infected Serbian University Rector’s iPhone</title>
-      <link>https://secubuzz.com/news/pegasus-spyware-infected-serbian-university-rector-4e97f1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/pegasus-spyware-infected-serbian-university-rector-4e97f1</guid>
-      <description><![CDATA[NSO Group’s Pegasus spyware infected the iPhone of Vladan Đokić, rector of the University of Belgrade, using a zero‑click exploit. The infection was discovered six days before Serbia’s snap parliamentary election. The attack demonstrates state‑sponsored espionage targeting political figures.]]></description>
-      <pubDate>Tue, 20 Oct 2026 12:59:44 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/pegasus-spyware-infection-confirmed-on.html">The Hacker News</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>AppGate Expands OT Zero‑Trust with Live Session Governance</title>
-      <link>https://secubuzz.com/news/appgate-expands-ot-zero-trust-with-live-session-go-6299e7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/appgate-expands-ot-zero-trust-with-live-session-go-6299e7</guid>
-      <description><![CDATA[AppGate has expanded its zero‑trust OT offering with Session Governance, enabling live monitoring and session termination for critical infrastructure operators. The new feature builds on the March 2026 ZTNA for OT, allowing supervisors to control access, enforce compliance audits, and protect operational uptime by governing in‑session activity.]]></description>
-      <pubDate>Tue, 20 Oct 2026 12:59:32 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/20/appgate-session-governance/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Cairn Platform Abuse Enables Persistent Access and Financial Theft Across 100+ Organizations</title>
-      <link>https://secubuzz.com/news/cairn-platform-abuse-enables-persistent-access-and-4421e3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cairn-platform-abuse-enables-persistent-access-and-4421e3</guid>
-      <description><![CDATA[Three threat actors have abused the Cairn AI platform to gain persistent access and conduct financial theft against more than 100 organizations. The abuse enables attackers to maintain long‑term footholds and exfiltrate funds, posing a significant risk to affected enterprises.]]></description>
-      <pubDate>Tue, 20 Oct 2026 12:47:22 GMT</pubDate>
-      <source url="https://www.securityweek.com/ai-platform-cairn-abused-to-hack-over-100-organizations/">SecurityWeek</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Google Adds Phone Numbers to All Accounts, Users Can Verify</title>
-      <link>https://secubuzz.com/news/google-adds-phone-numbers-to-all-accounts-users-ca-318a60</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-adds-phone-numbers-to-all-accounts-users-ca-318a60</guid>
-      <description><![CDATA[Google has begun automatically attaching users’ phone numbers to all of their accounts, even those intended to remain separate. Android users can verify whether their number has been added by checking account settings. The change is intended to streamline account recovery but raises privacy concerns.]]></description>
-      <pubDate>Tue, 20 Oct 2026 12:45:23 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/mobile/2026/10/google-may-add-your-number-to-all-your-accounts-how-to-stop-it">Malwarebytes Labs</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Ex‑OpenAI Worker Accused of Bug‑in‑the‑Air Surveillance</title>
-      <link>https://secubuzz.com/news/ex-openai-worker-accused-of-bug-in-the-air-surveil-25a3ed</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ex-openai-worker-accused-of-bug-in-the-air-surveil-25a3ed</guid>
-      <description><![CDATA[An ex‑OpenAI employee, Abdulrahman Alfozan, is accused of installing a bug‑in‑the‑air device in a conference room and planning to fly to Saudi Arabia. Prosecutors claim the device was used to eavesdrop on meetings, raising concerns about insider espionage and physical surveillance tactics.]]></description>
-      <pubDate>Tue, 20 Oct 2026 12:33:12 GMT</pubDate>
-      <source url="https://www.securityweek.com/ex-openai-worker-accused-of-bugging-conference-room-planned-to-fly-to-saudi-arabia-prosecutors-say/">SecurityWeek</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Siemens Software Center DLL Side-Loading Exploited in ClickFix Campaign</title>
-      <link>https://secubuzz.com/news/siemens-software-center-dll-side-loading-exploited-193548</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/siemens-software-center-dll-side-loading-exploited-193548</guid>
-      <description><![CDATA[Attackers leverage CVE-2026-110936, a DLL side-loading flaw in Siemens Software Center, to deliver ClickFix malware. The vulnerability, scored CVSS 8.4, is actively exploited. Siemens released version 4.0.9.8 to remediate the issue. Users must update to the patched release to mitigate infection risk.]]></description>
-      <pubDate>Tue, 20 Oct 2026 12:23:08 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/20/exploitation-siemens-software-center-vulnerability-cve-2026-110936/">Help Net Security</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
