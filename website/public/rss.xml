@@ -5,8 +5,80 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Oct 2026 08:00:48 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 10:14:57 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Grafana Labs Integrates Knowledge Graph into Cloud Stack</title>
+      <link>https://secubuzz.com/news/grafana-labs-integrates-knowledge-graph-into-cloud-4a4751</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/grafana-labs-integrates-knowledge-graph-into-cloud-4a4751</guid>
+      <description><![CDATA[Grafana Labs has integrated a Knowledge Graph into every Grafana Cloud stack, linking infrastructure and application dependencies with user experience and incident response. The release also adds Digital Experience Monitoring and refines Incident Response Management, giving agents shared context to investigate problems and take action. Security teams can now correlate events across services, accelerating root‑cause analysis.]]></description>
+      <pubDate>Wed, 21 Oct 2026 09:30:38 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/21/grafana-labs-knowledge-graph/">Help Net Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>ThreatLocker Introduces Zero Trust AI Control (ZTAIC)</title>
+      <link>https://secubuzz.com/news/threatlocker-introduces-zero-trust-ai-control-ztai-31cc62</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/threatlocker-introduces-zero-trust-ai-control-ztai-31cc62</guid>
+      <description><![CDATA[ThreatLocker has launched Zero Trust AI Control (ZTAIC), a framework that lets organizations deploy agentic AI while maintaining strict environmental boundaries. ZTAIC grants security teams precise permissions, allowing AI agents to invoke only approved applications and processes, thereby preventing unintended system access. Adopting ZTAIC requires configuring guardrails and integrating with existing Zero Trust policies to enforce controlled AI behavior.]]></description>
+      <pubDate>Wed, 21 Oct 2026 09:07:30 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/21/threatlocker-zero-trust-ai-control-ztaic/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Info‑stealing Malware Injected into OVHcloud CLI Releases</title>
+      <link>https://secubuzz.com/news/info-stealing-malware-injected-into-ovhcloud-cli-r-18039d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/info-stealing-malware-injected-into-ovhcloud-cli-r-18039d</guid>
+      <description><![CDATA[Info‑stealing malware was injected into OVHcloud’s open‑source CLI tool via tampered GitHub releases, compromising versions v0.11.0 through v0.15.0. The unauthorized code injection enables credential harvesting and data exfiltration; the flaw remains exploitable until a patch is applied. OVHcloud released v0.16.0 and urges users to update or delete compromised releases, while security teams should verify checksums and monitor traffic.]]></description>
+      <pubDate>Wed, 21 Oct 2026 08:59:57 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/21/ovhcloud-cli-github-malware/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Apple Safari Blocks Post-Cookie Email Tracking</title>
+      <link>https://secubuzz.com/news/apple-safari-blocks-post-cookie-email-tracking-3d64a8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apple-safari-blocks-post-cookie-email-tracking-3d64a8</guid>
+      <description><![CDATA[Apple’s Safari and WebKit now block connections to identity resolution services that convert email addresses into persistent tracking identifiers. The anti-tracking feature intercepts third‑party requests that would normally capture a user’s email during login or newsletter sign‑ups, preventing the creation of post‑cookie tracking IDs. Users should verify that their browsers are updated to the latest Safari version to ensure the protection remains active.]]></description>
+      <pubDate>Wed, 21 Oct 2026 08:53:34 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/21/apple-safari-tracking-protection/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>SafePay Ransomware Attacks Over 600 Critical Infrastructure Organizations</title>
+      <link>https://secubuzz.com/news/safepay-ransomware-attacks-over-600-critical-infra-6cf263</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/safepay-ransomware-attacks-over-600-critical-infra-6cf263</guid>
+      <description><![CDATA[SafePay ransomware gang breached more than 600 critical infrastructure organizations worldwide since 2024, targeting essential services and disrupting operations. The attacks leveraged credential theft and phishing to gain initial access, enabling encryption of critical data and denial of service. Security teams must apply the latest vendor patches, enforce multi‑factor authentication, and isolate affected systems immediately.]]></description>
+      <pubDate>Wed, 21 Oct 2026 08:36:24 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/cisa-and-fbi-safepay-ransomware-has-hit-over-600-critical-infrastructure-organizations/">BleepingComputer</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
+      <title>Apache Tomcat Addresses Eight Authentication Bypass Vulnerabilities</title>
+      <link>https://secubuzz.com/news/apache-tomcat-addresses-eight-authentication-bypas-75718f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apache-tomcat-addresses-eight-authentication-bypas-75718f</guid>
+      <description><![CDATA[Apache Tomcat fixed eight flaws that could allow attackers to bypass authentication, expose inter‑user data, and disrupt connections across multiple release branches. The vulnerabilities stem from improper session handling and insufficient input validation, with public proof‑of‑concept exploits available. Users should upgrade to Tomcat 11.0.27, 10.1.61, or 9.0.123 and apply the vendor’s security advisories.]]></description>
+      <pubDate>Wed, 21 Oct 2026 08:28:43 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/apache-tomcat-fixes-8-security-flaws/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>U.S. Orders Removal of DeepSeek from Federal Civilian Systems</title>
+      <link>https://secubuzz.com/news/u-s-orders-removal-of-deepseek-from-federal-civili-72e838</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/u-s-orders-removal-of-deepseek-from-federal-civili-72e838</guid>
+      <description><![CDATA[The Department of Homeland Security has mandated that all U.S. federal civilian agencies remove DeepSeek products and any third‑party services built on DeepSeek implementations from their IT systems. The order also prohibits future purchases of DeepSeek‑derived technology or services from the Chinese AI developer or its affiliates. Agencies must conduct an inventory audit and decommission affected systems within the specified compliance window.]]></description>
+      <pubDate>Wed, 21 Oct 2026 08:04:17 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/us-orders-deepseek-removed-from-federal.html">The Hacker News</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>File Integrity Monitoring Tools Face Alert Flooding in 2026</title>
+      <link>https://secubuzz.com/news/file-integrity-monitoring-tools-face-alert-floodin-5ccdc5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/file-integrity-monitoring-tools-face-alert-floodin-5ccdc5</guid>
+      <description><![CDATA[File integrity monitoring tools detect unauthorized file changes that signal breaches, a requirement under PCI DSS 4.x. In 2026, many solutions alert on every patch Tuesday, flooding SOCs and obscuring critical changes. Teams must prioritize alerts by relevance scoring and integrate automated remediation to focus on truly critical file alterations.]]></description>
+      <pubDate>Wed, 21 Oct 2026 07:49:12 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/best-file-integrity-monitoring/">Cyber Security News</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>State Bank of India Data Leak Exposes 3,897 Customer Records on Dark Web</title>
       <link>https://secubuzz.com/news/state-bank-of-india-data-leak-exposes-3-897-custom-b51c3d</link>
@@ -15,6 +87,15 @@
       <pubDate>Wed, 21 Oct 2026 07:44:22 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/state-bank-of-india-confirms-data-leak.html">The Hacker News</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Top 10 Best Data Privacy Management Software in 2026</title>
+      <link>https://secubuzz.com/news/top-10-best-data-privacy-management-software-in-20-7bc84a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/top-10-best-data-privacy-management-software-in-20-7bc84a</guid>
+      <description><![CDATA[Data privacy management platforms address the challenge of locating and deleting personal data, a requirement intensified by expanding state regulations and AI governance. The article evaluates ten solutions on discovery depth, DSAR automation, consent orchestration, and mid‑market suitability. Enterprises should adopt these tools to meet tighter DSAR deadlines and regulatory compliance.]]></description>
+      <pubDate>Wed, 21 Oct 2026 07:35:51 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/best-data-privacy-management/">Cyber Security News</source>
+      <category>Policy</category>
     </item>
     <item>
       <title>CISA Adds Plex2Shell SSRF Vulnerability to Known Exploited Vulnerabilities Catalog</title>
@@ -35,15 +116,6 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>Hijacked Developer Account Used to Plant Stealer in OVHcloud CLI</title>
-      <link>https://secubuzz.com/news/hijacked-developer-account-used-to-plant-stealer-i-66235b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hijacked-developer-account-used-to-plant-stealer-i-66235b</guid>
-      <description><![CDATA[An attacker compromised a developer’s account in March, leveraging a GlassWorm-linked loader to inject a credential stealer into OVHcloud’s command‑line interface. The breach enabled unauthorized extraction of user credentials from the CLI environment, exposing sensitive account information. OVHcloud has notified affected users and recommends revoking compromised credentials and applying the latest security updates.]]></description>
-      <pubDate>Wed, 21 Oct 2026 06:02:27 GMT</pubDate>
-      <source url="https://www.securityweek.com/hijacked-developer-account-used-to-plant-stealer-in-ovhcloud-cli/">SecurityWeek</source>
-      <category>Breach</category>
-    </item>
-    <item>
       <title>Modern Cardiac Monitoring Transmits ECG Data to Cloud</title>
       <link>https://secubuzz.com/news/modern-cardiac-monitoring-transmits-ecg-data-to-cl-19e7e4</link>
       <guid isPermaLink="true">https://secubuzz.com/news/modern-cardiac-monitoring-transmits-ecg-data-to-cl-19e7e4</guid>
@@ -53,6 +125,15 @@
       <category>Cloud</category>
     </item>
     <item>
+      <title>OpenAI Expands ChatGPT Chrome Extension to Read All Open Tabs</title>
+      <link>https://secubuzz.com/news/openai-expands-chatgpt-chrome-extension-to-read-al-3dfc62</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openai-expands-chatgpt-chrome-extension-to-read-al-3dfc62</guid>
+      <description><![CDATA[OpenAI expanded its ChatGPT Chrome extension, enabling the assistant to read and analyze content across all open browser tabs. The update adds tools for comparing page content, filling forms, sending messages, and organizing tabs, moving beyond single‑page queries. Users should review privacy settings, grant only necessary permissions, and stay informed of future policy changes.]]></description>
+      <pubDate>Wed, 21 Oct 2026 05:48:00 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/chatgpt-chrome-extension-analyze-content/">Cyber Security News</source>
+      <category>Policy</category>
+    </item>
+    <item>
       <title>DevGuard Consolidates Vulnerability Findings into a Single Dashboard</title>
       <link>https://secubuzz.com/news/devguard-consolidates-vulnerability-findings-into-eacd25</link>
       <guid isPermaLink="true">https://secubuzz.com/news/devguard-consolidates-vulnerability-findings-into-eacd25</guid>
@@ -60,6 +141,15 @@
       <pubDate>Wed, 21 Oct 2026 05:30:45 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/21/devguard-open-source-vulnerability-management/">Help Net Security</source>
       <category>Cloud</category>
+    </item>
+    <item>
+      <title>TeamUpdraft Compromise Enables Malicious Plugin Deployment on WordPress Sites</title>
+      <link>https://secubuzz.com/news/teamupdraft-compromise-enables-malicious-plugin-de-3a97e1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/teamupdraft-compromise-enables-malicious-plugin-de-3a97e1</guid>
+      <description><![CDATA[TeamUpdraft, the UpdraftPlus backup plugin developer, suffered a website breach exposing remote management keys, which attackers leveraged to install malicious plugins on connected WordPress sites. The flaw allowed unauthorized code execution via compromised management credentials, enabling widespread site compromise. A patch for the compromised keys is available; administrators should revoke exposed keys and apply the latest security update.]]></description>
+      <pubDate>Wed, 21 Oct 2026 05:01:41 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/wordpress-plugin-developer-hacked/">Cyber Security News</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>AI Adoption in SOCs Requires Vigilance Against Shadow AI and Permission Misconfigurations</title>
@@ -132,15 +222,6 @@
       <pubDate>Tue, 20 Oct 2026 22:02:42 GMT</pubDate>
       <source url="https://www.wiz.io/blog/wiz-sensor-on-gke-1-click-runtime-protection-now-native">Wiz Research</source>
       <category>Cloud</category>
-    </item>
-    <item>
-      <title>SafePay Ransomware Gang Targets Businesses and Critical Infrastructure</title>
-      <link>https://secubuzz.com/news/safepay-ransomware-gang-targets-businesses-and-cri-444fae</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/safepay-ransomware-gang-targets-businesses-and-cri-444fae</guid>
-      <description><![CDATA[SafePay ransomware gang has targeted businesses and critical infrastructure since 2024, using password guessing, vulnerability exploitation, and phishing. The FBI, UK and German agencies report over 600 victims. The gang remains active and poses a high risk to enterprise systems.]]></description>
-      <pubDate>Tue, 20 Oct 2026 20:27:00 GMT</pubDate>
-      <source url="https://therecord.media/fbi-says-safepay-ransomware-gang-among-most-active-600-victims">The Record</source>
-      <category>Ransomware</category>
     </item>
     <item>
       <title>Phishing Attack Hijacks Cloud Billing Accounts for Unauthorized AI Usage</title>
@@ -314,15 +395,6 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>DHS Bans DeepSeek Products from Federal Civilian Agencies</title>
-      <link>https://secubuzz.com/news/dhs-bans-deepseek-products-from-federal-civilian-a-5be1d3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/dhs-bans-deepseek-products-from-federal-civilian-a-5be1d3</guid>
-      <description><![CDATA[The U.S. Department of Homeland Security has ordered all federal civilian agencies to discontinue use of DeepSeek products and remove them from government systems. The directive aims to mitigate potential security risks associated with the AI platform, though specific vulnerabilities are not disclosed.]]></description>
-      <pubDate>Tue, 20 Oct 2026 14:19:05 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/dhs-bans-deepseek-products-across-us-federal-civilian-agencies/">BleepingComputer</source>
-      <category>Policy</category>
-    </item>
-    <item>
       <title>AI-Powered Antidetect Browsers Facilitate Large-Scale Online Fraud</title>
       <link>https://secubuzz.com/news/ai-powered-antidetect-browsers-facilitate-large-sc-761f0b</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ai-powered-antidetect-browsers-facilitate-large-sc-761f0b</guid>
@@ -368,15 +440,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>WP2Shell Exploit Enables Unauthenticated WordPress Admin Creation and Web Shell Deployment</title>
-      <link>https://secubuzz.com/news/wp2shell-exploit-enables-unauthenticated-wordpress-5253b9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/wp2shell-exploit-enables-unauthenticated-wordpress-5253b9</guid>
-      <description><![CDATA[WP2Shell merges two WordPress Core flaws to elevate an unauthenticated request to server‑side code execution. The chain allows attackers to create an administrator account and install a plugin‑based web shell. Affected releases are listed by Seqrite, but no widespread live exploitation has been confirmed.]]></description>
-      <pubDate>Tue, 20 Oct 2026 13:54:23 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/wp2shell-attack/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>CJIS v6.1 Compliance: Five Practical Priorities for Agencies</title>
       <link>https://secubuzz.com/news/cjis-v6-1-compliance-five-practical-priorities-for-4da26c</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cjis-v6-1-compliance-five-practical-priorities-for-4da26c</guid>
@@ -393,69 +456,6 @@
       <pubDate>Tue, 20 Oct 2026 13:34:23 GMT</pubDate>
       <source url="https://www.securityweek.com/the-key-to-ai-software-security-isnt-speed-its-maturity/">SecurityWeek</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Hackers Use Generative AI to Build Custom Malware and Bypass Traditional Security Detection</title>
-      <link>https://secubuzz.com/news/hackers-use-generative-ai-to-build-custom-malware-53b523</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-generative-ai-to-build-custom-malware-53b523</guid>
-      <description><![CDATA[Attackers employ generative AI to craft custom malware, rewrite malicious scripts, and produce deceptive phishing content, evading signature‑based defenses. The technique accelerates ransomware operators from initial foothold to data theft and encryption, increasing the speed and stealth of attacks.]]></description>
-      <pubDate>Tue, 20 Oct 2026 13:32:15 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-use-generative-ai/">Cyber Security News</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>Abstract Integrates Agentic SIEM with SOAR for Automated Response</title>
-      <link>https://secubuzz.com/news/abstract-integrates-agentic-siem-with-soar-for-aut-15300b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/abstract-integrates-agentic-siem-with-soar-for-aut-15300b</guid>
-      <description><![CDATA[Abstract’s new AI SOC platform integrates agentic SIEM detection with SOAR response, enabling automated actions tied directly to detection rules. The solution combines proprietary models and foundation models for investigation, hunting, and triage. It aims to match the speed of machine‑level attacks while reducing manual tooling lag, enhancing incident response efficiency.]]></description>
-      <pubDate>Tue, 20 Oct 2026 13:26:09 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/20/abstract-links-automated-response-actions-directly-to-siem-detection-rules/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>ThreatModeler Launches NexusAI for Automated Threat Modeling</title>
-      <link>https://secubuzz.com/news/threatmodeler-launches-nexusai-for-automated-threa-487fe2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/threatmodeler-launches-nexusai-for-automated-threa-487fe2</guid>
-      <description><![CDATA[ThreatModeler introduces NexusAI, an AI‑powered tool integrated into its Nexus platform. The solution automates threat model creation, analysis, and maintenance, allowing security teams to scale risk assessment without increasing manual effort. NexusAI monitors architectural changes and recommends security updates to keep applications secure as development accelerates.]]></description>
-      <pubDate>Tue, 20 Oct 2026 13:17:56 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/20/threatmodeler-nexusai/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Android Firmware Malware Disables Google Play Protections</title>
-      <link>https://secubuzz.com/news/android-firmware-malware-disables-google-play-prot-3e0346</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/android-firmware-malware-disables-google-play-prot-3e0346</guid>
-      <description><![CDATA[A widespread firmware-based malware campaign, named Midnight Mimosa, infects thousands of Android phones in over 150 countries. The malware installs and removes apps silently, disabling Google Play Protect and granting attackers full system access without user interaction. The attack bypasses app store safeguards, enabling persistent compromise of low‑cost devices.]]></description>
-      <pubDate>Tue, 20 Oct 2026 13:15:38 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/thousands-of-android-phones/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>IDENTOS Launches PolicyArc for AI Agent Access Control</title>
-      <link>https://secubuzz.com/news/identos-launches-policyarc-for-ai-agent-access-con-675754</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/identos-launches-policyarc-for-ai-agent-access-con-675754</guid>
-      <description><![CDATA[IDENTOS has released PolicyArc, a solution that centralizes definition, enforcement, and audit of access policies for applications, including AI agents. The tool provides task‑specific, time‑limited permissions, extending secure access beyond people and services. Built on 12 years of identity and access work, it targets government and healthcare sectors.]]></description>
-      <pubDate>Tue, 20 Oct 2026 13:09:24 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/20/identos-policyarc/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Ahold Delhaize Restores Services After Cyberattack</title>
-      <link>https://secubuzz.com/news/ahold-delhaize-restores-services-after-cyberattack-638011</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ahold-delhaize-restores-services-after-cyberattack-638011</guid>
-      <description><![CDATA[Ahold Delhaize experienced a cyberattack that disrupted multiple websites and apps across Europe. The company has restored many services and expects e‑commerce brands in the US to be back online within days. No data exfiltration was reported.]]></description>
-      <pubDate>Tue, 20 Oct 2026 13:02:18 GMT</pubDate>
-      <source url="https://www.securityweek.com/ahold-delhaize-restoring-services-disrupted-by-cyberattack/">SecurityWeek</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Cloudflare Releases tsrs, a Rust Port of TypeScript</title>
-      <link>https://secubuzz.com/news/cloudflare-releases-tsrs-a-rust-port-of-typescript-1473c1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-releases-tsrs-a-rust-port-of-typescript-1473c1</guid>
-      <description><![CDATA[Cloudflare has unveiled tsrs, a Rust implementation of TypeScript that claims up to eight times faster execution and 70% lower memory usage. The project aims to improve performance for developers migrating from JavaScript to Rust while maintaining TypeScript compatibility.]]></description>
-      <pubDate>Tue, 20 Oct 2026 13:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/typescript-rust-port/">Cloudflare Security</source>
-      <category>Cloud</category>
     </item>
   </channel>
 </rss>

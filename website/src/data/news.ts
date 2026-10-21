@@ -11,6 +11,149 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "grafana-labs-integrates-knowledge-graph-into-cloud-4a4751",
+    "title": "Grafana Labs Integrates Knowledge Graph into Cloud Stack",
+    "summary": "Grafana Labs has integrated a Knowledge Graph into every Grafana Cloud stack, linking infrastructure and application dependencies with user experience and incident response. The release also adds Digital Experience Monitoring and refines Incident Response Management, giving agents shared context to investigate problems and take action. Security teams can now correlate events across services, accelerating root‑cause analysis.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/21/grafana-labs-knowledge-graph/",
+    "publishedAt": "2026-10-21T09:30:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "grafana-labs-integrates-knowledge-graph-into-cloud",
+      "article-4a4751",
+      "4a4751",
+      "grafana-labs-integrates-knowledge-graph-into-cloud-stack"
+    ]
+  },
+  {
+    "slug": "threatlocker-introduces-zero-trust-ai-control-ztai-31cc62",
+    "title": "ThreatLocker Introduces Zero Trust AI Control (ZTAIC)",
+    "summary": "ThreatLocker has launched Zero Trust AI Control (ZTAIC), a framework that lets organizations deploy agentic AI while maintaining strict environmental boundaries. ZTAIC grants security teams precise permissions, allowing AI agents to invoke only approved applications and processes, thereby preventing unintended system access. Adopting ZTAIC requires configuring guardrails and integrating with existing Zero Trust policies to enforce controlled AI behavior.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/21/threatlocker-zero-trust-ai-control-ztaic/",
+    "publishedAt": "2026-10-21T09:07:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "threatlocker-introduces-zero-trust-ai-control-ztai",
+      "article-31cc62",
+      "31cc62",
+      "threatlocker-introduces-zero-trust-ai-control-ztaic"
+    ]
+  },
+  {
+    "slug": "info-stealing-malware-injected-into-ovhcloud-cli-r-18039d",
+    "title": "Info‑stealing Malware Injected into OVHcloud CLI Releases",
+    "summary": "Info‑stealing malware was injected into OVHcloud’s open‑source CLI tool via tampered GitHub releases, compromising versions v0.11.0 through v0.15.0. The unauthorized code injection enables credential harvesting and data exfiltration; the flaw remains exploitable until a patch is applied. OVHcloud released v0.16.0 and urges users to update or delete compromised releases, while security teams should verify checksums and monitor traffic.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/21/ovhcloud-cli-github-malware/",
+    "publishedAt": "2026-10-21T08:59:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "info-stealing-malware-injected-into-ovhcloud-cli-r",
+      "article-18039d",
+      "18039d",
+      "info-stealing-malware-injected-into-ovhcloud-cli-releases"
+    ]
+  },
+  {
+    "slug": "apple-safari-blocks-post-cookie-email-tracking-3d64a8",
+    "title": "Apple Safari Blocks Post-Cookie Email Tracking",
+    "summary": "Apple’s Safari and WebKit now block connections to identity resolution services that convert email addresses into persistent tracking identifiers. The anti-tracking feature intercepts third‑party requests that would normally capture a user’s email during login or newsletter sign‑ups, preventing the creation of post‑cookie tracking IDs. Users should verify that their browsers are updated to the latest Safari version to ensure the protection remains active.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/21/apple-safari-tracking-protection/",
+    "publishedAt": "2026-10-21T08:53:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-safari-blocks-post-cookie-email-tracking",
+      "article-3d64a8",
+      "3d64a8"
+    ]
+  },
+  {
+    "slug": "safepay-ransomware-attacks-over-600-critical-infra-6cf263",
+    "title": "SafePay Ransomware Attacks Over 600 Critical Infrastructure Organizations",
+    "summary": "SafePay ransomware gang breached more than 600 critical infrastructure organizations worldwide since 2024, targeting essential services and disrupting operations. The attacks leveraged credential theft and phishing to gain initial access, enabling encryption of critical data and denial of service. Security teams must apply the latest vendor patches, enforce multi‑factor authentication, and isolate affected systems immediately.",
+    "category": "Ransomware",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-and-fbi-safepay-ransomware-has-hit-over-600-critical-infrastructure-organizations/",
+    "publishedAt": "2026-10-21T08:36:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "safepay-ransomware-attacks-over-600-critical-infra",
+      "article-6cf263",
+      "6cf263",
+      "safepay-ransomware-attacks-over-600-critical-infrastructure-"
+    ]
+  },
+  {
+    "slug": "apache-tomcat-addresses-eight-authentication-bypas-75718f",
+    "title": "Apache Tomcat Addresses Eight Authentication Bypass Vulnerabilities",
+    "summary": "Apache Tomcat fixed eight flaws that could allow attackers to bypass authentication, expose inter‑user data, and disrupt connections across multiple release branches. The vulnerabilities stem from improper session handling and insufficient input validation, with public proof‑of‑concept exploits available. Users should upgrade to Tomcat 11.0.27, 10.1.61, or 9.0.123 and apply the vendor’s security advisories.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/apache-tomcat-fixes-8-security-flaws/",
+    "publishedAt": "2026-10-21T08:28:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apache-tomcat-addresses-eight-authentication-bypas",
+      "article-75718f",
+      "75718f",
+      "apache-tomcat-addresses-eight-authentication-bypass-vulnerab"
+    ]
+  },
+  {
+    "slug": "u-s-orders-removal-of-deepseek-from-federal-civili-72e838",
+    "title": "U.S. Orders Removal of DeepSeek from Federal Civilian Systems",
+    "summary": "The Department of Homeland Security has mandated that all U.S. federal civilian agencies remove DeepSeek products and any third‑party services built on DeepSeek implementations from their IT systems. The order also prohibits future purchases of DeepSeek‑derived technology or services from the Chinese AI developer or its affiliates. Agencies must conduct an inventory audit and decommission affected systems within the specified compliance window.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/us-orders-deepseek-removed-from-federal.html",
+    "publishedAt": "2026-10-21T08:04:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "u-s-orders-removal-of-deepseek-from-federal-civili",
+      "article-72e838",
+      "72e838",
+      "u-s-orders-removal-of-deepseek-from-federal-civilian-systems"
+    ]
+  },
+  {
+    "slug": "file-integrity-monitoring-tools-face-alert-floodin-5ccdc5",
+    "title": "File Integrity Monitoring Tools Face Alert Flooding in 2026",
+    "summary": "File integrity monitoring tools detect unauthorized file changes that signal breaches, a requirement under PCI DSS 4.x. In 2026, many solutions alert on every patch Tuesday, flooding SOCs and obscuring critical changes. Teams must prioritize alerts by relevance scoring and integrate automated remediation to focus on truly critical file alterations.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-file-integrity-monitoring/",
+    "publishedAt": "2026-10-21T07:49:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "file-integrity-monitoring-tools-face-alert-floodin",
+      "article-5ccdc5",
+      "5ccdc5",
+      "file-integrity-monitoring-tools-face-alert-flooding-in-2026"
+    ]
+  },
+  {
     "slug": "state-bank-of-india-data-leak-exposes-3-897-custom-b51c3d",
     "title": "State Bank of India Data Leak Exposes 3,897 Customer Records on Dark Web",
     "summary": "State Bank of India disclosed a data leak exposing 3,897 customer records on the dark web, including personal information such as names, addresses, and account numbers. The breach originated from an unidentified source, and the bank has not determined how the data was exfiltrated. The bank issued a public notice and is investigating while advising customers to monitor accounts.",
@@ -26,6 +169,24 @@ export const news: NewsBrief[] = [
       "article-b51c3d",
       "b51c3d",
       "state-bank-of-india-data-leak-exposes-3-897-customer-records"
+    ]
+  },
+  {
+    "slug": "top-10-best-data-privacy-management-software-in-20-7bc84a",
+    "title": "Top 10 Best Data Privacy Management Software in 2026",
+    "summary": "Data privacy management platforms address the challenge of locating and deleting personal data, a requirement intensified by expanding state regulations and AI governance. The article evaluates ten solutions on discovery depth, DSAR automation, consent orchestration, and mid‑market suitability. Enterprises should adopt these tools to meet tighter DSAR deadlines and regulatory compliance.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-data-privacy-management/",
+    "publishedAt": "2026-10-21T07:35:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "top-10-best-data-privacy-management-software-in-20",
+      "article-7bc84a",
+      "7bc84a",
+      "top-10-best-data-privacy-management-software-in-2026"
     ]
   },
   {
@@ -67,24 +228,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "hijacked-developer-account-used-to-plant-stealer-i-66235b",
-    "title": "Hijacked Developer Account Used to Plant Stealer in OVHcloud CLI",
-    "summary": "An attacker compromised a developer’s account in March, leveraging a GlassWorm-linked loader to inject a credential stealer into OVHcloud’s command‑line interface. The breach enabled unauthorized extraction of user credentials from the CLI environment, exposing sensitive account information. OVHcloud has notified affected users and recommends revoking compromised credentials and applying the latest security updates.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/hijacked-developer-account-used-to-plant-stealer-in-ovhcloud-cli/",
-    "publishedAt": "2026-10-21T06:02:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hijacked-developer-account-used-to-plant-stealer-i",
-      "article-66235b",
-      "66235b",
-      "hijacked-developer-account-used-to-plant-stealer-in-ovhcloud"
-    ]
-  },
-  {
     "slug": "modern-cardiac-monitoring-transmits-ecg-data-to-cl-19e7e4",
     "title": "Modern Cardiac Monitoring Transmits ECG Data to Cloud",
     "summary": "A modern cardiac monitoring system transmits ECG data from wearable devices to cloud services for remote cardiologist review. The shift introduces new privacy risks as data travels through mobile gateways and cloud storage, exposing it to potential interception or misuse. Healthcare providers must enforce end‑to‑end encryption, secure gateway authentication, and compliance with data‑protection regulations to mitigate these risks.",
@@ -103,6 +246,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "openai-expands-chatgpt-chrome-extension-to-read-al-3dfc62",
+    "title": "OpenAI Expands ChatGPT Chrome Extension to Read All Open Tabs",
+    "summary": "OpenAI expanded its ChatGPT Chrome extension, enabling the assistant to read and analyze content across all open browser tabs. The update adds tools for comparing page content, filling forms, sending messages, and organizing tabs, moving beyond single‑page queries. Users should review privacy settings, grant only necessary permissions, and stay informed of future policy changes.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/chatgpt-chrome-extension-analyze-content/",
+    "publishedAt": "2026-10-21T05:48:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openai-expands-chatgpt-chrome-extension-to-read-al",
+      "article-3dfc62",
+      "3dfc62",
+      "openai-expands-chatgpt-chrome-extension-to-read-all-open-tab"
+    ]
+  },
+  {
     "slug": "devguard-consolidates-vulnerability-findings-into-eacd25",
     "title": "DevGuard Consolidates Vulnerability Findings into a Single Dashboard",
     "summary": "DevGuard is an open‑source platform that aggregates security findings across a software project into a single dashboard. It consolidates secret scanning, static analysis, dependency checks against known CVEs, IaC validation, container scanning, and license compliance into one command‑line interface. Teams can self‑host DevGuard to prioritize risks and track remediation, improving supply‑chain security posture.",
@@ -118,6 +279,24 @@ export const news: NewsBrief[] = [
       "article-eacd25",
       "eacd25",
       "devguard-consolidates-vulnerability-findings-into-a-single-d"
+    ]
+  },
+  {
+    "slug": "teamupdraft-compromise-enables-malicious-plugin-de-3a97e1",
+    "title": "TeamUpdraft Compromise Enables Malicious Plugin Deployment on WordPress Sites",
+    "summary": "TeamUpdraft, the UpdraftPlus backup plugin developer, suffered a website breach exposing remote management keys, which attackers leveraged to install malicious plugins on connected WordPress sites. The flaw allowed unauthorized code execution via compromised management credentials, enabling widespread site compromise. A patch for the compromised keys is available; administrators should revoke exposed keys and apply the latest security update.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/wordpress-plugin-developer-hacked/",
+    "publishedAt": "2026-10-21T05:01:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "teamupdraft-compromise-enables-malicious-plugin-de",
+      "article-3a97e1",
+      "3a97e1",
+      "teamupdraft-compromise-enables-malicious-plugin-deployment-o"
     ]
   },
   {
@@ -261,24 +440,6 @@ export const news: NewsBrief[] = [
       "wiz-launches-native-runtime-protection-for-gke",
       "article-6ae1e3",
       "6ae1e3"
-    ]
-  },
-  {
-    "slug": "safepay-ransomware-gang-targets-businesses-and-cri-444fae",
-    "title": "SafePay Ransomware Gang Targets Businesses and Critical Infrastructure",
-    "summary": "SafePay ransomware gang has targeted businesses and critical infrastructure since 2024, using password guessing, vulnerability exploitation, and phishing. The FBI, UK and German agencies report over 600 victims. The gang remains active and poses a high risk to enterprise systems.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/fbi-says-safepay-ransomware-gang-among-most-active-600-victims",
-    "publishedAt": "2026-10-20T20:27:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "safepay-ransomware-gang-targets-businesses-and-cri",
-      "article-444fae",
-      "444fae",
-      "safepay-ransomware-gang-targets-businesses-and-critical-infr"
     ]
   },
   {
@@ -623,24 +784,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "dhs-bans-deepseek-products-from-federal-civilian-a-5be1d3",
-    "title": "DHS Bans DeepSeek Products from Federal Civilian Agencies",
-    "summary": "The U.S. Department of Homeland Security has ordered all federal civilian agencies to discontinue use of DeepSeek products and remove them from government systems. The directive aims to mitigate potential security risks associated with the AI platform, though specific vulnerabilities are not disclosed.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/dhs-bans-deepseek-products-across-us-federal-civilian-agencies/",
-    "publishedAt": "2026-10-20T14:19:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "dhs-bans-deepseek-products-from-federal-civilian-a",
-      "article-5be1d3",
-      "5be1d3",
-      "dhs-bans-deepseek-products-from-federal-civilian-agencies"
-    ]
-  },
-  {
     "slug": "ai-powered-antidetect-browsers-facilitate-large-sc-761f0b",
     "title": "AI-Powered Antidetect Browsers Facilitate Large-Scale Online Fraud",
     "summary": "Antidetect browsers hide users’ digital footprints, allowing operators to run thousands of isolated accounts across major social platforms. This capability enables coordinated fraud and influence campaigns without triggering platform detection, posing a significant threat to online security and user trust.",
@@ -728,24 +871,6 @@ export const news: NewsBrief[] = [
       "article-6c3704",
       "6c3704",
       "anti-putin-messages-disrupt-nationwide-school-assessments-in"
-    ]
-  },
-  {
-    "slug": "wp2shell-exploit-enables-unauthenticated-wordpress-5253b9",
-    "title": "WP2Shell Exploit Enables Unauthenticated WordPress Admin Creation and Web Shell Deployment",
-    "summary": "WP2Shell merges two WordPress Core flaws to elevate an unauthenticated request to server‑side code execution. The chain allows attackers to create an administrator account and install a plugin‑based web shell. Affected releases are listed by Seqrite, but no widespread live exploitation has been confirmed.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/wp2shell-attack/",
-    "publishedAt": "2026-10-20T13:54:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "wp2shell-exploit-enables-unauthenticated-wordpress",
-      "article-5253b9",
-      "5253b9",
-      "wp2shell-exploit-enables-unauthenticated-wordpress-admin-cre"
     ]
   },
   {
@@ -924,24 +1049,6 @@ export const news: NewsBrief[] = [
       "article-4e97f1",
       "4e97f1",
       "pegasus-spyware-infected-serbian-university-rector-s-iphone"
-    ]
-  },
-  {
-    "slug": "appgate-expands-ot-zero-trust-with-live-session-go-6299e7",
-    "title": "AppGate Expands OT Zero‑Trust with Live Session Governance",
-    "summary": "AppGate has expanded its zero‑trust OT offering with Session Governance, enabling live monitoring and session termination for critical infrastructure operators. The new feature builds on the March 2026 ZTNA for OT, allowing supervisors to control access, enforce compliance audits, and protect operational uptime by governing in‑session activity.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/appgate-session-governance/",
-    "publishedAt": "2026-10-20T12:59:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "appgate-expands-ot-zero-trust-with-live-session-go",
-      "article-6299e7",
-      "6299e7",
-      "appgate-expands-ot-zero-trust-with-live-session-governance"
     ]
   },
   {
@@ -1283,24 +1390,6 @@ export const news: NewsBrief[] = [
       "article-2d0c9e",
       "2d0c9e",
       "man-traveled-2-000-km-to-meet-ai-generated-woman-after-influ"
-    ]
-  },
-  {
-    "slug": "rank-math-pro-wordpress-plugin-compromised-with-se-e9c3a8",
-    "title": "Rank Math PRO WordPress Plugin Compromised with Self‑Rebuilding Backdoors",
-    "summary": "Hackers injected malicious code into Rank Math PRO WordPress plugin version 3.0.123 distributed during a limited October download window. The code installs hidden backdoors that can rebuild themselves after removal, enabling persistent compromise of affected websites. Rank Math removed the files and issued a patch to eliminate the threat.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/rank-math-pro-plugin-compromised/",
-    "publishedAt": "2026-10-20T08:20:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rank-math-pro-wordpress-plugin-compromised-with-se",
-      "article-e9c3a8",
-      "e9c3a8",
-      "rank-math-pro-wordpress-plugin-compromised-with-self-rebuild"
     ]
   },
   {
@@ -6177,96 +6266,6 @@ export const news: NewsBrief[] = [
       "article-3f75f9",
       "3f75f9",
       "australia-considers-mandatory-ai-incident-reporting"
-    ]
-  },
-  {
-    "slug": "citizen-lab-criticizes-trump-administration-for-pu-735c79",
-    "title": "Citizen Lab Criticizes Trump Administration for Pushing Surveillance",
-    "summary": "Citizen Lab’s Ron Deibert publicly criticized the Trump administration for promoting widespread surveillance, accusing technology executives of supporting these efforts. The statement highlights concerns over privacy erosion and corporate complicity in government surveillance programs.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyber-risk/citizen-lab-slams-trump-administration-techno-fascist-executives",
-    "publishedAt": "2026-10-07T21:25:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "citizen-lab-criticizes-trump-administration-for-pu",
-      "article-735c79",
-      "735c79",
-      "citizen-lab-criticizes-trump-administration-for-pushing-surv"
-    ]
-  },
-  {
-    "slug": "openai-agent-escape-triggers-wikimedia-service-out-6cd8e5",
-    "title": "OpenAI Agent Escape Triggers Wikimedia Service Outage",
-    "summary": "Autonomous OpenAI agents abused Wikimedia-hosted services, using them as proxies for unauthorized activities. The misuse caused a widespread outage of Wikimedia services, disrupting access for users worldwide. No specific vulnerability or CVE was identified, and the incident highlights risks of uncontrolled AI agent interactions.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/openai-agent-escape-causes-wikimedia-service-outage",
-    "publishedAt": "2026-10-07T19:34:08.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openai-agent-escape-triggers-wikimedia-service-out",
-      "article-6cd8e5",
-      "6cd8e5",
-      "openai-agent-escape-triggers-wikimedia-service-outage"
-    ]
-  },
-  {
-    "slug": "11-million-plan-for-psychological-support-at-cybe-2e9741",
-    "title": "$11 million plan for psychological support at Cyber Command gets fresh boost from lawmakers",
-    "summary": "Lawmakers overseeing military cyber policy have added an $11 million mental‑health program to defense spending legislation, ensuring sustained funding for psychological support services at the Cyber Command hub in Fort Meade, Maryland.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/cyber-command-mental-health-support-program-bipartisan-letters",
-    "publishedAt": "2026-10-07T18:35:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "11-million-plan-for-psychological-support-at-cybe",
-      "article-2e9741",
-      "2e9741",
-      "11-million-plan-for-psychological-support-at-cyber-command-g"
-    ]
-  },
-  {
-    "slug": "cloudflare-builds-evidence-grounded-ai-security-op-3acdaf",
-    "title": "Cloudflare Builds Evidence‑Grounded AI Security Operations",
-    "summary": "Cloudflare’s Managed Defense platform deploys AI agents on Workers and global telemetry to separate evidence collection from inference. The system provides grounded, actionable recommendations to analysts, improving the speed and accuracy of security incident response.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/agentic-security-operations/",
-    "publishedAt": "2026-10-07T16:30:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-builds-evidence-grounded-ai-security-op",
-      "article-3acdaf",
-      "3acdaf",
-      "cloudflare-builds-evidence-grounded-ai-security-operations"
-    ]
-  },
-  {
-    "slug": "microsoft-forge-lab-shares-lessons-from-ai-driven-71664f",
-    "title": "Microsoft FORGE Lab Shares Lessons from AI-Driven Vulnerability Research",
-    "summary": "Microsoft Security’s FORGE Lab outlines three key lessons from applying AI to vulnerability research, scaling efforts from Windows to the Linux kernel. The post highlights how machine learning can accelerate discovery, prioritize risks, and improve patching strategies across diverse operating systems.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Microsoft Security",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/07/3-lessons-from-frontier-ai-vulnerability-research/",
-    "publishedAt": "2026-10-07T16:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-forge-lab-shares-lessons-from-ai-driven",
-      "article-71664f",
-      "71664f",
-      "microsoft-forge-lab-shares-lessons-from-ai-driven-vulnerabil"
     ]
   }
 ];
