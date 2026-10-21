@@ -19,8 +19,9 @@ SecuBuzz is an independent, zero-tracking cybersecurity threat intelligence mobi
 - **Live CISA KEV Radar**: Real-time tracking of active in-the-wild zero-days cataloged by CISA, complete with federal remediation deadlines and vendor patch instructions.
 - **FIRST.org EPSS Telemetry**: Direct integration with the Exploit Prediction Scoring System, calculating the 30-day statistical probability of in-the-wild exploitation for CVEs.
 - **Strict Anti-AI-Slop Guardrails**: Zero filler phrasing ("delve", "tapestry", "in today's digital landscape") — strictly technical, actionable defense briefings.
-- **Privacy-First Architecture (Zero Tracking)**: No accounts, no advertising IDs, no invasive session recordings, no telemetry databases. 100% on-device preferences stored in local `AsyncStorage`.
+- **Privacy-First Architecture**: No user accounts, no advertising IDs, no invasive session recordings, and zero personal profiling. Bookmarks and reading state are stored 100% on-device in local `AsyncStorage`. Anonymous push tokens and alert filters are used strictly for threat dispatches and fleet health.
 - **Dual Display Modes**: High-contrast Dark Mode (`#0B0F14`) and true-black AMOLED mode (`#000000`) with dynamic typography scaling (Compact / Standard / Comfortable).
+
 
 ---
 

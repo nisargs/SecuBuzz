@@ -218,9 +218,9 @@ if (process.argv[1]?.endsWith('track_repeat_users.mjs')) {
       const fleetRes = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', fleetSql);
       const fleet = fleetRes?.[0]?.results?.[0];
       if (fleet) {
-        console.log(`\n📱 [5] LIVE ACTIVE DEVICES (CLEAN PRODUCTION INSTALL BASE):`);
-        console.log(`  Live Installed Devices: ${fleet.activeDevices} (Weekly Active Install Base: ${fleet.weeklyActiveInstallBase} | Daily Active: ${fleet.dailyActiveDevices})`);
-        console.log(`  Uninstalled / Pruned Devices: ${fleet.uninstalledDevices}`);
+        console.log(`\n📱 [5] PUSH NOTIFICATION FLEET REACH (SUBSCRIBED DEVICE TOKENS):`);
+        console.log(`  Active Subscribed Devices: ${fleet.activeDevices} (Seen in last 7d: ${fleet.weeklyActiveInstallBase} | Seen in last 3d: ${fleet.dailyActiveDevices})`);
+        console.log(`  Uninstalled / Pruned Tokens: ${fleet.uninstalledDevices}`);
       }
     } catch {
       // Ignore if offline

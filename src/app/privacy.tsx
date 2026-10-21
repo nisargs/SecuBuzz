@@ -105,22 +105,36 @@ export default function PrivacyPolicyScreen() {
         <Section title="2. Information Collected by SecuBuzz" colors={colors}>
           <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
             SecuBuzz is built privacy-first and does not require you to
-            create an account to use the application.
+            create an account, log in, or provide personal credentials.
           </Text>
 
           <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
-            Based on the current version of SecuBuzz,
-            the application does not collect your name,
+            Personal Data: The application does not collect your name,
             email address, phone number, contacts, precise
             location, microphone recordings, camera recordings,
             financial information, health information, or
-            authentication credentials.
+            advertising identifiers (GAID).
           </Text>
 
           <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
-            Articles that you bookmark and app settings are stored locally
-            on your physical device using standard application storage so
-            that your preferences persist offline.
+            Push Notification Identifiers & Diagnostics: If you grant
+            notification permissions, an anonymous push token (Expo/FCM),
+            device platform (Android/iOS), app version, and your chosen
+            notification filter preferences (news briefs, threat advisories,
+            and severity threshold) are registered with our backend.
+            This data is used strictly for: (a) App Functionality, delivering
+            threat dispatches according to your selected filters; and
+            (b) Fleet Analytics & Diagnostics, measuring notification delivery
+            reach, active subscriber counts, and app version distribution.
+            This token is never linked to personal identity and can be revoked
+            at any time in app or system settings.
+          </Text>
+
+          <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
+            On-Device Storage: Articles that you bookmark, your reading
+            history, and visual theme choices are stored 100% locally
+            on your physical device using standard local application storage.
+            They are never transmitted to, collected by, or stored on our servers.
           </Text>
         </Section>
 
@@ -209,9 +223,10 @@ export default function PrivacyPolicyScreen() {
           </Text>
 
           <Text style={[styles.paragraph, { color: colors.textSecondary }]}>
-            • Notifications: To deliver optional push notification alerts for
-            breaking cybersecurity news. You can enable or disable this
-            permission at any time in Android settings.
+            • Notifications: To deliver optional push alerts for breaking
+            cybersecurity briefs and CISA KEV zero-day advisories. You can
+            enable, customize, or disable this permission at any time in
+            app settings or Android system settings.
           </Text>
 
           <Text style={[styles.paragraph, { color: colors.textSecondary }]}>

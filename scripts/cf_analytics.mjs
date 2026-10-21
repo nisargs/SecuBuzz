@@ -275,11 +275,11 @@ if (process.argv[1]?.endsWith('cf_analytics.mjs')) {
     console.log(`Today (${today?.dimensions?.date || 'Today'}): ${today?.sum?.requests || 0} Requests | ${today?.uniq?.uniques || 0} Unique Visitors | ${today?.sum?.pageViews || 0} Page Views | ${todayInstalls} New Installs | ${mb} MB Bandwidth | ${today?.sum?.threats || 0} Threats Blocked`);
 
     if (tokens && tokens.summary) {
-      console.log('\n--- Live Active Devices (Clean Production Install Base) ---');
-      console.log(`  Live Installed Devices: ${tokens.summary.activeDevices} (Weekly Active Install Base: ${tokens.summary.weeklyActiveInstallBase} | Daily Active: ${tokens.summary.dailyActiveDevices})`);
-      console.log(`  Uninstalled / Pruned Devices: ${tokens.summary.uninstalledDevices}`);
+      console.log('\n--- Push Notification Fleet Reach (Subscribed Device Tokens) ---');
+      console.log(`  Active Subscribed Devices: ${tokens.summary.activeDevices} (Seen in last 7d: ${tokens.summary.weeklyActiveInstallBase} | Seen in last 3d: ${tokens.summary.dailyActiveDevices})`);
+      console.log(`  Uninstalled / Pruned Tokens: ${tokens.summary.uninstalledDevices}`);
       if (tokens.versions && tokens.versions.length > 0) {
-        console.log(`  Live Production Versions: ${tokens.versions.map(v => `v${v.app_version}: ${v.count}`).join(' | ')}`);
+        console.log(`  Fleet Version Distribution: ${tokens.versions.map(v => `v${v.app_version}: ${v.count}`).join(' | ')}`);
       }
       console.log(`  Total Push Alerts Delivered: ${tokens.totalSent}`);
       if (tokens.dailyInstalls && tokens.dailyInstalls.length > 0) {

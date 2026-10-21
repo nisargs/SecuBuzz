@@ -199,10 +199,11 @@ export default function RootLayout() {
   useEffect(() => {
     if (loaded && !isExpoGo) {
       void registerForPushNotificationsAsync().then(() => {
-        void syncTokenWithBackendAsync(null, true);
+        void syncTokenWithBackendAsync(null, false);
       });
     }
   }, [loaded]);
+
 
   if (!loaded && !error) {
     return null;

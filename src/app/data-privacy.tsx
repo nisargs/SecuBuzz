@@ -65,8 +65,8 @@ export default function DataPrivacyScreen() {
 
         <InfoCard
           icon="phone-portrait-outline"
-          title="On-Device Storage Only"
-          text="Bookmarks and app preferences are stored exclusively on your device. They are not transmitted to or stored on any server."
+          title="On-Device Bookmarks & Reading State"
+          text="Bookmarks, read history, and visual theme settings are stored exclusively on your device. They are never transmitted to or stored on our servers."
           colors={colors}
           accentColor={accentColor}
         />
@@ -97,8 +97,8 @@ export default function DataPrivacyScreen() {
 
         <InfoCard
           icon="notifications-outline"
-          title="Push Notification Tokens"
-          text="If you enable notifications, a push token is registered to deliver breaking news alerts. No personal identifiers are attached to this token."
+          title="Push Notification Tokens & Reach"
+          text="If you enable notifications, an anonymous push token, app version, and alert preferences are registered to deliver breaking alerts and monitor notification fleet reach. No personal identifiers are attached."
           colors={colors}
           accentColor={accentColor}
         />

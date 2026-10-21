@@ -230,12 +230,13 @@ To uphold our **Zero-Silent-Failure Mandate**, SecuBuzz runs a 3-layer automated
 
 SecuBuzz enforces a strict, transparent two-tier privacy model:
 
-### A. Mobile Application (100% Zero Tracking Guarantee)
+### A. Mobile Application (Privacy-First Architecture)
 - **No Accounts / Logins**: Users do not provide an email, phone number, password, or profile information.
-- **Zero Advertising or Commercial SDKs**: No Google AdMob, Facebook SDK, Adjust, or third-party marketing trackers.
-- **No Device Identifiers**: Does not collect advertising IDs (GAID/IDFA), MAC addresses, or hardware serials.
-- **100% On-Device Data**: All bookmarks, read history, theme choices, and filter preferences reside entirely within local Android `AsyncStorage`.
-- **Anonymous Push Tokens**: Push notification tokens are randomized Expo/FCM tokens stored in Cloudflare D1 without any linkage to personal identities or IP addresses.
+- **Zero Advertising or Commercial Tracking SDKs**: No Google AdMob, Facebook SDK, Adjust, AppsFlyer, or third-party marketing trackers.
+- **No Advertising IDs**: Does not collect Google Advertising IDs (GAID/IDFA), MAC addresses, or hardware serials.
+- **On-Device Reading & Preferences**: Bookmarks, read history, and visual theme choices reside entirely within local Android `AsyncStorage`.
+- **Push Notification Token & Fleet Diagnostics**: If notifications are enabled, an anonymous push token (Expo/FCM), app version, and alert filter preferences are registered with Cloudflare D1 to deliver filtered alerts and monitor notification fleet reach. Never linked to personal identity.
+
 
 ### B. Web Companion (`secubuzz.com`)
 - **Cookie-less Aggregate Analytics**: Uses Cloudflare Web Analytics to measure aggregate visitor counts without cross-site tracking or cookies.

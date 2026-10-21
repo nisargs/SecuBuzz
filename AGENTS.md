@@ -172,11 +172,11 @@
     - **Mandatory 6-Point Reporting Format**: Always deliver the exact structure:
       1. *Real User Numbers (Traffic & Sessions)*: 7-day daily breakdown table of unique visitors, total requests, page views, new mobile app installs (measured by fresh push token registrations in D1), bandwidth, and top countries (US, DE, CA, NL, IN, AU, etc.).
       2. *Pages Checked*: Breakdown of RUM page views by route (`/`, `/news`, `/advisories`, `/download`, `/publishers`, `/about`, and specific CVE/brief URLs).
-      3. *Repeat Users & Live Active Devices (Clean Production Install Base)*: Always explicitly report:
-         - Live Installed Devices: count and version breakdown (v1.0.3, v1.0.2)
-         - Weekly Active Install Base (seen in last 7 days)
-         - Daily Active Devices (seen in last 48–72h)
-         - Uninstalled / Pruned Devices (`is_active = 0`)
+      3. *Repeat Users & Push Notification Fleet Reach*: Always explicitly report:
+         - Subscribed Devices: count and version breakdown (v1.0.3, v1.0.2)
+         - Active in last 7 days (active token seen within 7 days)
+         - Active in last 48–72h (active token seen within 48–72h)
+         - Uninstalled / Pruned Tokens (`is_active = 0`)
          - Web Repeat Users: Returning direct readers (bookmarks/shortcuts) and repeat clickers.
       4. *Time on Site & Engagement*: Pages/session (~2.9 pages), dwell time (~1.5–2.5 min for 60-word briefs), inbound referrers (Reddit, Google, direct), and device OS split (Windows, iOS, Android, macOS). Note bot anomalies (e.g. Germany ~16 req/visit vs US ~3 req/visit reflects cloud scrapers).
       5. *Download Clicks*: Breakdown of `/go/play` button clicks by country/source (human vs crawler) and `/download` visits.
