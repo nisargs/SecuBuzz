@@ -1,19 +1,37 @@
 [
   {
-    "id": "https://www.bleepingcomputer.com/news/google/google-chrome-adds-gemini-powered-scam-detection-warns-users-of-clickfix-attacks/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/google/google-chrome-adds-gemini-powered-scam-detection-warns-users-of-clickfix-attacks/",
-    "title": "Google Chrome Adds Gemini-Powered Scam Detection",
-    "headline": "Google Chrome Adds Gemini-Powered Scam Detection",
-    "summary": "Google Chrome introduces Gemini-powered scam detection to identify deceptive websites and alert users when they copy suspicious commands from ClickFix attacks. The new feature leverages Gemini’s language model to analyze site content and user actions, flagging potential phishing or malicious copy‑paste behaviors. Chrome will ship the update in the next release, providing users with real‑time protection against emerging social‑engineering threats.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-21T22:16:26.000Z",
-    "url": "https://www.bleepingcomputer.com/news/google/google-chrome-adds-gemini-powered-scam-detection-warns-users-of-clickfix-attacks/",
+    "id": "https://cybernewsai.com/blog/php2shell-how-to-detect-mitigate-critical-php-rce-flaws",
+    "sourceUrl": "https://cybernewsai.com/blog/php2shell-how-to-detect-mitigate-critical-php-rce-flaws",
+    "title": "PHP2Shell RCE Flaws Target PHP Runtimes",
+    "headline": "PHP2Shell RCE Flaws Target PHP Runtimes",
+    "summary": "Two critical 9.2 remote code execution flaws, dubbed PHP2Shell, target PHP runtimes via malformed input. The vulnerabilities allow unauthenticated attackers to execute arbitrary code, with CVSS scores of 9.2, and public proof‑of‑concept exploits are available. Patch releases are already available; administrators should apply the latest PHP updates immediately and disable legacy configuration options.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-10-21T23:05:40.000Z",
+    "url": "https://cybernewsai.com/blog/php2shell-how-to-detect-mitigate-critical-php-rce-flaws",
     "additionalSources": [
       {
         "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/google-hardens-chrome-against-clickfix-attacks-insecure-http-connections/"
+        "sourceUrl": "https://www.securityweek.com/php2shell-patches-land-as-first-exploitation-attempts-hit-sensors/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/22/google-chrome-https-protection/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/google-chrome-https-protection/",
+    "title": "Chrome Adds Permission Prompt for Insecure HTTP Connections",
+    "headline": "Chrome Adds Permission Prompt for Insecure HTTP Connections",
+    "summary": "Google Chrome now prompts users before establishing insecure HTTP connections, extending the Safe Browsing Enhanced Protection feature to all users. This update reduces risk from malware, phishing, and eavesdropping that can exploit unencrypted HTTP traffic. Teams should audit internal services for legacy HTTP endpoints and enforce HTTPS to maintain the protection.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-21T22:30:30.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/22/google-chrome-https-protection/",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/google/google-chrome-adds-gemini-powered-scam-detection-warns-users-of-clickfix-attacks/"
       }
     ]
   },
@@ -209,28 +227,6 @@
     ]
   },
   {
-    "id": "https://www.securityweek.com/php2shell-patches-land-as-first-exploitation-attempts-hit-sensors/",
-    "sourceUrl": "https://www.securityweek.com/php2shell-patches-land-as-first-exploitation-attempts-hit-sensors/",
-    "title": "PHP2Shell Exploitation Attempts Target Sensors Before Patch Release",
-    "headline": "PHP2Shell Exploitation Attempts Target Sensors Before Patch Release",
-    "summary": "Exploitation attempts of CVE-2026-109618 and CVE-2026-109619 targeted PHP-based sensors before patches were released. The vulnerabilities allow remote code execution via malformed input, with CVSS 9.2, and active zero‑day exploitation was observed in the wild. PHP has issued patches; administrators must apply the latest updates and validate sensor configurations and securely.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-21T16:50:40.000Z",
-    "url": "https://www.securityweek.com/php2shell-patches-land-as-first-exploitation-attempts-hit-sensors/",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/"
-      },
-      {
-        "source": "CISA",
-        "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require-immediate-patching"
-      }
-    ]
-  },
-  {
     "id": "https://www.darkreading.com/cyberattacks-data-breaches/ovhcloud-github-compromise-glassworm-threat-actors",
     "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/ovhcloud-github-compromise-glassworm-threat-actors",
     "title": "OVHcloud GitHub Compromise Tied to GlassWorm Threat Actors",
@@ -271,6 +267,10 @@
       {
         "source": "BleepingComputer",
         "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-gpt-61-sol-is-dramatically-better-at-migrating-legacy-code/"
+      },
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/openai-agents-silenced-security-team-alerts-removed-misalignment-monitor/"
       }
     ]
   },
@@ -392,6 +392,28 @@
     "publishedAt": "2026-10-21T14:45:00.000Z",
     "url": "https://www.securityweek.com/high-severity-flaws-exploited-in-three-days-as-ransomware-dominates-q3-rapid7/",
     "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/apt28-hackers/",
+    "sourceUrl": "https://cybersecuritynews.com/apt28-hackers/",
+    "title": "APT28 Hackers Open Secret SSH Tunnel Into NATO Country’s Naval Shipbuilder Network",
+    "headline": "APT28 Hackers Open Secret SSH Tunnel Into NATO Country’s Naval Shipbuilder Network",
+    "summary": "APT28 hackers exploited the Hookedge backdoor to infiltrate a naval shipbuilder’s network in a NATO member state, establishing a covert SSH tunnel and exfiltrating login credentials. The intrusion persisted for at least two months, with attackers using the backdoor’s persistence to maintain unauthorized access. Apply the latest Hookedge patch, disable unused SSH, and audit privileged accounts.",
+    "category": "NATION_STATE",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-21T14:37:17.000Z",
+    "url": "https://cybersecuritynews.com/apt28-hackers/",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/hackers-hid-vasilek-backdoor-in-vmware.html"
+      },
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/hackers-exploit-open-banking-services/"
+      }
+    ]
   },
   {
     "id": "https://therecord.media/php-script-vulnerabilities-warnings",
@@ -567,6 +589,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://thehackernews.com/2026/10/generative-ai-is-erasing-behavioral.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/generative-ai-is-erasing-behavioral.html",
+    "title": "Generative AI Weakens Behavior-Only Email Detection, Proofpoint Reports",
+    "headline": "Generative AI Weakens Behavior-Only Email Detection, Proofpoint Reports",
+    "summary": "Generative AI is erasing behavioral tells, weakening behavior-only detection, Proofpoint reports. The shift replaces clumsy wording, generic pretexts, and reused templates with fluent, personalized messages that evade traditional email filters. Security teams must adopt advanced content analysis, machine learning models, and contextual threat intelligence to counter evolving email threats.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-21T11:53:34.000Z",
+    "url": "https://thehackernews.com/2026/10/generative-ai-is-erasing-behavioral.html",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.malwarebytes.com/blog/bugs/2026/10/signal-bug-could-let-someone-keep-listening-after-you-hang-up",
     "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/10/signal-bug-could-let-someone-keep-listening-after-you-hang-up",
     "title": "Signal Calling Library Bug Allows Post-Hangup Audio",
@@ -611,6 +646,24 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-didnt-actually-fix-vpn-issues-caused-by-windows-updates/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-didnt-actually-fix-vpn-issues-caused-by-windows-updates/",
+    "title": "Microsoft Reports VPN Bug Not Fixed in October Updates",
+    "headline": "Microsoft Reports VPN Bug Not Fixed in October Updates",
+    "summary": "Microsoft announced that the October 2026 Windows 11 cumulative updates mistakenly marked a bug causing Always On VPN connection failures as resolved. The oversight leaves users vulnerable to intermittent VPN outages, potentially disrupting remote access for enterprise environments without authentication bypass. Microsoft is working on a corrective patch and advises deploying the latest cumulative update once released, while monitoring VPN stability.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-21T10:14:53.000Z",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-didnt-actually-fix-vpn-issues-caused-by-windows-updates/",
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/microsoft-new-report-assessment/"
+      }
+    ]
+  },
+  {
     "id": "https://blog.talosintelligence.com/parasitizing-trust-how-legitimate-infrastructure-becomes-a-delivery-pipeline-for-attackers/",
     "sourceUrl": "https://blog.talosintelligence.com/parasitizing-trust-how-legitimate-infrastructure-becomes-a-delivery-pipeline-for-attackers/",
     "title": "Legitimate Platforms Coerced into Attack Delivery Channels",
@@ -622,24 +675,6 @@
     "publishedAt": "2026-10-21T10:00:00.000Z",
     "url": "https://blog.talosintelligence.com/parasitizing-trust-how-legitimate-infrastructure-becomes-a-delivery-pipeline-for-attackers/",
     "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/microsoft-new-report-assessment/",
-    "sourceUrl": "https://cybersecuritynews.com/microsoft-new-report-assessment/",
-    "title": "Microsoft Enhances Azure Bug Bounty Rewards for Complete Vulnerability Reports",
-    "headline": "Microsoft Enhances Azure Bug Bounty Rewards for Complete Vulnerability Reports",
-    "summary": "Microsoft has updated its Azure bug bounty program to reward $40,000 for complete reports of critical remote code execution and privilege escalation vulnerabilities, while incomplete reports receive $4,000. The change emphasizes the importance of detailed evidence in vulnerability submissions. Researchers should provide comprehensive proof to qualify for the higher payout and ensure compliance with the new assessment criteria.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-21T09:39:45.000Z",
-    "url": "https://cybersecuritynews.com/microsoft-new-report-assessment/",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-that-hid-copilot-buttons-in-classic-outlook/"
-      }
-    ]
   },
   {
     "id": "https://cybersecuritynews.com/onedrive-command-line-tool/",
@@ -829,24 +864,6 @@
     "publishedAt": "2026-10-21T07:26:49.000Z",
     "url": "https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html",
     "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/hackers-hid-vasilek-backdoor-in-vmware.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/hackers-hid-vasilek-backdoor-in-vmware.html",
-    "title": "Hackers Embed Vasilek Backdoor in VMware Tools on Russian Healthcare Network",
-    "headline": "Hackers Embed Vasilek Backdoor in VMware Tools on Russian Healthcare Network",
-    "summary": "Hackers embedded a Vasilek backdoor within VMware Tools on a Russian healthcare network, exploiting the virtualization platform to maintain persistence. Attributed to the Belarus‑aligned Partisan Zmiy cluster, the backdoor operated for nearly two years, enabling stealthy lateral movement and data exfiltration. Mitigation requires disabling VMware Tools on critical hosts, applying vendor patches, and monitoring for anomalous process execution.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-21T06:05:15.000Z",
-    "url": "https://thehackernews.com/2026/10/hackers-hid-vasilek-backdoor-in-vmware.html",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/hackers-target-south-korean-banks/"
-      }
-    ]
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/10/21/ecg-heart-data-privacy-preserving-ai/",
@@ -1197,19 +1214,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://cybersecuritynews.com/hackers-exploit-open-banking-services/",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-exploit-open-banking-services/",
-    "title": "Hackers Exploit Open Banking Services to Test Stolen Credentials",
-    "headline": "Hackers Exploit Open Banking Services to Test Stolen Credentials",
-    "summary": "Criminals abused a spend‑management platform’s account‑linking process to verify stolen bank and card credentials, using open banking as a low‑cost checking service. The platform did not lose money, but the attack demonstrates a vulnerability in the account‑linking flow that allows credential validation without financial loss.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-20T14:22:04.000Z",
-    "url": "https://cybersecuritynews.com/hackers-exploit-open-banking-services/",
-    "additionalSources": []
-  },
-  {
     "id": "https://research.checkpoint.com/2026/the-risk-of-ai-powered-antidetect-browsers-in-online-fraud-and-influence-operations/",
     "sourceUrl": "https://research.checkpoint.com/2026/the-risk-of-ai-powered-antidetect-browsers-in-online-fraud-and-influence-operations/",
     "title": "AI-Powered Antidetect Browsers Facilitate Large-Scale Online Fraud",
@@ -1496,24 +1500,6 @@
     "publishedAt": "2026-10-20T11:33:04.000Z",
     "url": "https://thehackernews.com/2026/10/what-security-teams-can-do-to-tame-wild.html",
     "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/russian-apt28-breaches-nato-naval.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/russian-apt28-breaches-nato-naval.html",
-    "title": "Russian APT28 Breaches NATO Naval Shipbuilder, Deploys HOOKEDGE Loader",
-    "headline": "Russian APT28 Breaches NATO Naval Shipbuilder, Deploys HOOKEDGE Loader",
-    "summary": "Russian state-sponsored group APT28, also known as BlueDelta, targeted a NATO naval shipbuilder in a NATO member country, deploying a new reflective loader named HOOKEDGE. The operation, tracked by Symantec Threat Hunter Team under Swallowtail, demonstrates APT28’s continued use of backdoors to compromise critical defense infrastructure.",
-    "category": "NATION_STATE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-20T11:06:25.000Z",
-    "url": "https://thehackernews.com/2026/10/russian-apt28-breaches-nato-naval.html",
-    "additionalSources": [
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/european-defense-contractors-fancy-bear-espionage"
-      }
-    ]
   },
   {
     "id": "https://www.schneier.com/blog/archives/2026/10/possible-new-cellebrite-iphone-radio-zero-day.html",
