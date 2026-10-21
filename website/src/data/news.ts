@@ -11,6 +11,207 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "cloudflare-deploys-waf-rules-for-newly-disclosed-p-893875",
+    "title": "Cloudflare Deploys WAF Rules for Newly Disclosed PHP Vulnerabilities",
+    "summary": "Cloudflare deployed default WAF rules for newly disclosed PHP vulnerabilities, filtering request and response signals to block exploits. The rules detect anomalous request patterns, halt data exfiltration, and mitigate potential remote code execution risks. Teams should monitor WAF logs for false positives, verify rule effectiveness, and apply vendor patches when released.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/php-vulnerabilities-waf-protection/",
+    "publishedAt": "2026-10-21T13:56:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cloudflare-deploys-waf-rules-for-newly-disclosed-p",
+      "article-893875",
+      "893875",
+      "cloudflare-deploys-waf-rules-for-newly-disclosed-php-vulnera"
+    ]
+  },
+  {
+    "slug": "php-net-releases-critical-patch-for-cve-2026-10961-57dd7d",
+    "title": "PHP.net Releases Critical Patch for CVE-2026-109618 and CVE-2026-109619",
+    "summary": "PHP.net disclosed two critical vulnerabilities (CVE-2026-109618, CVE-2026-109619) with CVSS 9.4, enabling remote code execution via PHP scripts. Public PoC exploits are available, and the flaw requires no authentication, allowing attackers to execute arbitrary code on affected servers. A critical patch is released today; administrators must apply the update immediately and disable vulnerable PHP extensions to prevent exploitation.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33440",
+    "publishedAt": "2026-10-21T13:55:53.000Z",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "php-net-releases-critical-patch-for-cve-2026-10961",
+      "article-57dd7d",
+      "57dd7d",
+      "php-net-releases-critical-patch-for-cve-2026-109618-and-cve-"
+    ]
+  },
+  {
+    "slug": "nvidia-introduces-openshell-architecture-to-contai-6a71bb",
+    "title": "NVIDIA Introduces OpenShell Architecture to Contain AI Agents",
+    "summary": "NVIDIA’s OpenShell Reference Architecture targets AI agents operating across enterprise infrastructure and local systems, integrating security software with dedicated hardware to enforce operational boundaries. The design enables businesses to monitor agent behavior and halt activities that exceed predefined limits, mitigating potential misuse. NVIDIA recommends deploying the architecture to maintain control over AI workloads and safeguard infrastructure.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/21/nvidia-openshell-reference-architecture/",
+    "publishedAt": "2026-10-21T13:52:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "nvidia-introduces-openshell-architecture-to-contai",
+      "article-6a71bb",
+      "6a71bb",
+      "nvidia-introduces-openshell-architecture-to-contain-ai-agent"
+    ]
+  },
+  {
+    "slug": "malicious-litellm-package-dispatched-to-pypi-and-d-7788c0",
+    "title": "Malicious LiteLLM Package Dispatched to PyPI and Docker",
+    "summary": "A malicious LiteLLM package version 1.107.0 was uploaded to PyPI and Docker on October 21, targeting users of the LiteLLM library. The payload contains a credential stealer that harvests browser, cloud, and AI secrets, and includes a dormant command‑and‑control channel. Security teams should immediately remove the compromised package, update to verified LiteLLM release, and monitor for unauthorized credential exfiltration.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Wiz Research",
+    "sourceUrl": "https://www.wiz.io/blog/litellm-compromised-steals-credentials",
+    "publishedAt": "2026-10-21T13:44:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "malicious-litellm-package-dispatched-to-pypi-and-d",
+      "article-7788c0",
+      "7788c0",
+      "malicious-litellm-package-dispatched-to-pypi-and-docker"
+    ]
+  },
+  {
+    "slug": "php2shell-reveals-critical-rce-and-memory-disclosu-16e764",
+    "title": "PHP2Shell Reveals Critical RCE and Memory Disclosure Flaws in Core PHP Engine",
+    "summary": "PHP2Shell reveals critical remote code execution and memory disclosure flaws in the core PHP engine, impacting roughly 70% of websites. The flaw permits unauthenticated attackers to run arbitrary code and read sensitive memory, with a CVSS score of 9.8 and a public PoC. PHP maintainers released patches 8.3.12 and 8.2.28; administrators should upgrade immediately or apply a temporary configuration workaround.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Wiz Research",
+    "sourceUrl": "https://www.wiz.io/blog/php2shell-php-rce",
+    "publishedAt": "2026-10-21T13:30:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "php2shell-reveals-critical-rce-and-memory-disclosu",
+      "article-16e764",
+      "16e764",
+      "php2shell-reveals-critical-rce-and-memory-disclosure-flaws-i"
+    ]
+  },
+  {
+    "slug": "google-chrome-adds-clickfix-warnings-to-stop-users-70f2ad",
+    "title": "Google Chrome Adds ClickFix Warnings to Stop Users From Running Malicious Commands",
+    "summary": "Google Chrome is deploying ClickFix warnings to prevent users from executing malicious commands via social engineering when Enhanced Protection is enabled. The safeguard blocks the copy‑paste technique that bypasses traditional controls, reducing the risk of unauthorized OS-level code execution. Chrome users should enable Enhanced Protection and keep the browser updated to receive the latest ClickFix mitigation.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/google-chrome-adds-clickfix-warnings-to.html",
+    "publishedAt": "2026-10-21T13:15:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-chrome-adds-clickfix-warnings-to-stop-users",
+      "article-70f2ad",
+      "70f2ad",
+      "google-chrome-adds-clickfix-warnings-to-stop-users-from-runn"
+    ]
+  },
+  {
+    "slug": "decades-old-windows-utility-powers-modern-clickfix-1ea2d9",
+    "title": "Decades-Old Windows Utility Powers Modern ClickFix Attack",
+    "summary": "A modern ClickFix attack leverages the legacy Windows 'finger' utility to trigger a CAPTCHA that installs the Lumma stealer via malicious Google search results. The exploitation chain abuses the finger command’s ability to execute arbitrary code, enabling credential theft and persistent malware installation. Defenders should disable the finger utility, apply recent Windows updates, and monitor for unauthorized CAPTCHA prompts to mitigate this threat.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/decades-old-windows-utility-modern-clickfix-attack",
+    "publishedAt": "2026-10-21T13:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "decades-old-windows-utility-powers-modern-clickfix",
+      "article-1ea2d9",
+      "1ea2d9",
+      "decades-old-windows-utility-powers-modern-clickfix-attack"
+    ]
+  },
+  {
+    "slug": "fake-amazon-music-x-youtube-deal-traps-creators-in-458852",
+    "title": "Fake Amazon Music x YouTube Deal Traps Creators into Google Login",
+    "summary": "Fake Amazon Music x YouTube deal lures creators into a Google login trap. Attackers use a convincing creator portal that displays YouTube videos and metrics to trick users into entering Google credentials, enabling credential theft. Security teams should verify official Amazon and YouTube communications, avoid unknown portals, and enable two‑factor authentication on Google accounts.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/10/fake-amazon-music-x-youtube-deal-lures-creators-into-a-google-login-trap",
+    "publishedAt": "2026-10-21T12:45:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fake-amazon-music-x-youtube-deal-traps-creators-in",
+      "article-458852",
+      "458852",
+      "fake-amazon-music-x-youtube-deal-traps-creators-into-google-"
+    ]
+  },
+  {
+    "slug": "microsoft-powertoys-0-102-adds-cursorhide-button-l-f9e809",
+    "title": "Microsoft PowerToys 0.102 Adds CursorHide, Button Lock, and Command‑Line Enhancements",
+    "summary": "Microsoft released PowerToys 0.102, adding CursorHide and Button Lock mouse utilities, new command‑line tools, and Command Palette enhancements. The update expands PowerToys functionality, enabling users to hide the cursor, lock mouse buttons, and access utilities via command line, improving workflow automation. Users should download the latest release from Microsoft’s official site and review the release notes for compatibility considerations.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-powertoys-adds-cursorhide-button-lock-mouse-tools/",
+    "publishedAt": "2026-10-21T12:20:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-powertoys-0-102-adds-cursorhide-button-l",
+      "article-f9e809",
+      "f9e809",
+      "microsoft-powertoys-0-102-adds-cursorhide-button-lock-and-co"
+    ]
+  },
+  {
+    "slug": "legitimate-platforms-coerced-into-attack-delivery-2c65a5",
+    "title": "Legitimate Platforms Coerced into Attack Delivery Channels",
+    "summary": "Adversaries are exploiting over 25 trusted collaboration, file‑sharing, and payment services to deliver malicious payloads, turning legitimate infrastructure into a covert delivery pipeline. The technique leverages built‑in trust mechanisms, enabling attackers to bypass perimeter defenses and embed malware within seemingly benign files or links. Security teams must enforce strict access controls, monitor anomalous outbound traffic, and apply zero‑trust policies to mitigate this threat.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cisco Talos",
+    "sourceUrl": "https://blog.talosintelligence.com/parasitizing-trust-how-legitimate-infrastructure-becomes-a-delivery-pipeline-for-attackers/",
+    "publishedAt": "2026-10-21T10:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "legitimate-platforms-coerced-into-attack-delivery",
+      "article-2c65a5",
+      "2c65a5",
+      "legitimate-platforms-coerced-into-attack-delivery-channels"
+    ]
+  },
+  {
+    "slug": "microsoft-enhances-azure-bug-bounty-rewards-for-co-2c6b8b",
+    "title": "Microsoft Enhances Azure Bug Bounty Rewards for Complete Vulnerability Reports",
+    "summary": "Microsoft has updated its Azure bug bounty program to reward $40,000 for complete reports of critical remote code execution and privilege escalation vulnerabilities, while incomplete reports receive $4,000. The change emphasizes the importance of detailed evidence in vulnerability submissions. Researchers should provide comprehensive proof to qualify for the higher payout and ensure compliance with the new assessment criteria.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/microsoft-new-report-assessment/",
+    "publishedAt": "2026-10-21T09:39:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-enhances-azure-bug-bounty-rewards-for-co",
+      "article-2c6b8b",
+      "2c6b8b",
+      "microsoft-enhances-azure-bug-bounty-rewards-for-complete-vul"
+    ]
+  },
+  {
     "slug": "grafana-labs-integrates-knowledge-graph-into-cloud-4a4751",
     "title": "Grafana Labs Integrates Knowledge Graph into Cloud Stack",
     "summary": "Grafana Labs has integrated a Knowledge Graph into every Grafana Cloud stack, linking infrastructure and application dependencies with user experience and incident response. The release also adds Digital Experience Monitoring and refines Incident Response Management, giving agents shared context to investigate problems and take action. Security teams can now correlate events across services, accelerating root‑cause analysis.",
@@ -585,24 +786,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "google-enhances-chrome-protection-against-scam-com-4820a7",
-    "title": "Google Enhances Chrome Protection Against Scam Commands",
-    "summary": "Google updates Chrome’s Enhanced Protection to detect scam sites that trick users into copying malicious commands. The new feature warns users when a page attempts to trick them into executing harmful commands. This update claims to make users ten times safer from phishing, social engineering, and notification abuse compared to Standard Protection.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/google-chrome-enhanced-protection-updates/",
-    "publishedAt": "2026-10-20T17:00:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-enhances-chrome-protection-against-scam-com",
-      "article-4820a7",
-      "4820a7",
-      "google-enhances-chrome-protection-against-scam-commands"
-    ]
-  },
-  {
     "slug": "threat-intelligence-enhances-soc-analyst-efficienc-69a30a",
     "title": "Threat Intelligence Enhances SOC Analyst Efficiency",
     "summary": "The article outlines three methods by which threat intelligence streamlines SOC analyst workflows, emphasizing the need for visibility beyond internal environments. It discusses leveraging historical data, automated correlation, and contextual alerts to improve detection and investigation processes for American SOC teams.",
@@ -1070,24 +1253,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "google-adds-phone-numbers-to-all-accounts-users-ca-318a60",
-    "title": "Google Adds Phone Numbers to All Accounts, Users Can Verify",
-    "summary": "Google has begun automatically attaching users’ phone numbers to all of their accounts, even those intended to remain separate. Android users can verify whether their number has been added by checking account settings. The change is intended to streamline account recovery but raises privacy concerns.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/mobile/2026/10/google-may-add-your-number-to-all-your-accounts-how-to-stop-it",
-    "publishedAt": "2026-10-20T12:45:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-adds-phone-numbers-to-all-accounts-users-ca",
-      "article-318a60",
-      "318a60",
-      "google-adds-phone-numbers-to-all-accounts-users-can-verify"
-    ]
-  },
-  {
     "slug": "ex-openai-worker-accused-of-bug-in-the-air-surveil-25a3ed",
     "title": "Ex‑OpenAI Worker Accused of Bug‑in‑the‑Air Surveillance",
     "summary": "An ex‑OpenAI employee, Abdulrahman Alfozan, is accused of installing a bug‑in‑the‑air device in a conference room and planning to fly to Saudi Arabia. Prosecutors claim the device was used to eavesdrop on meetings, raising concerns about insider espionage and physical surveillance tactics.",
@@ -1140,24 +1305,6 @@ export const news: NewsBrief[] = [
       "escalation-of-malicious-calendar-invite-attacks",
       "article-2d683f",
       "2d683f"
-    ]
-  },
-  {
-    "slug": "microsoft-adds-quick-machine-recovery-to-windows-s-8c8f02",
-    "title": "Microsoft Adds Quick Machine Recovery to Windows Server 2025 with October 2026 Update",
-    "summary": "Microsoft released an October 2026 security update that adds quick machine recovery to Windows Server 2025. The feature allows administrators to restore servers to a previous healthy state rapidly, improving uptime and simplifying recovery procedures. No security vulnerability is addressed by this update.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-server-2025-gets-support-for-quick-machine-recovery/",
-    "publishedAt": "2026-10-20T12:16:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-adds-quick-machine-recovery-to-windows-s",
-      "article-8c8f02",
-      "8c8f02",
-      "microsoft-adds-quick-machine-recovery-to-windows-server-2025"
     ]
   },
   {
@@ -1230,24 +1377,6 @@ export const news: NewsBrief[] = [
       "article-24719c",
       "24719c",
       "security-teams-adopt-ai-assisted-workflow-to-manage-wild-cod"
-    ]
-  },
-  {
-    "slug": "microsoft-introduces-dynamic-permissions-for-ai-ag-5ae1e8",
-    "title": "Microsoft Introduces Dynamic Permissions for AI Agents",
-    "summary": "Microsoft announced new controls that treat AI agents as insiders, granting task‑specific permissions and tightening access as an agent’s risk score rises. The policy framework aims to reduce insider‑threat exposure from autonomous agents while maintaining operational flexibility.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/microsoft-targets-rogue-ai-agents-with-dynamic-permissions-risk-scoring/",
-    "publishedAt": "2026-10-20T11:30:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-introduces-dynamic-permissions-for-ai-ag",
-      "article-5ae1e8",
-      "5ae1e8",
-      "microsoft-introduces-dynamic-permissions-for-ai-agents"
     ]
   },
   {
@@ -1390,6 +1519,24 @@ export const news: NewsBrief[] = [
       "article-2d0c9e",
       "2d0c9e",
       "man-traveled-2-000-km-to-meet-ai-generated-woman-after-influ"
+    ]
+  },
+  {
+    "slug": "deceptive-social-media-ad-triggers-credential-thef-380992",
+    "title": "Deceptive Social Media Ad Triggers Credential Theft",
+    "summary": "A deceptive advertisement on a popular social media platform can trick users into clicking malicious links, leading to credential theft or malware installation. The ad exploits trust in the platform’s advertising ecosystem, using convincing visuals and misleading calls to action to bypass user skepticism. Security teams should verify ad authenticity, block suspicious domains, and educate users about phishing indicators.",
+    "category": "Malware",
+    "severity": "LOW",
+    "source": "ESET WeLiveSecurity",
+    "sourceUrl": "https://www.welivesecurity.com/en/social-media/is-ad-scam-how-tell-before-click/",
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "deceptive-social-media-ad-triggers-credential-thef",
+      "article-380992",
+      "380992",
+      "deceptive-social-media-ad-triggers-credential-theft"
     ]
   },
   {
@@ -1766,24 +1913,6 @@ export const news: NewsBrief[] = [
       "article-4fee9a",
       "4fee9a",
       "agents-are-your-newest-insiders-security-must-move-at-their-"
-    ]
-  },
-  {
-    "slug": "microsoft-resolves-outlook-classic-ui-bug-removing-1e2b09",
-    "title": "Microsoft Resolves Outlook Classic UI Bug Removing Copilot Buttons",
-    "summary": "Microsoft addressed a defect in the classic Outlook desktop client that caused the Copilot Chat and Copilot buttons to disappear for some Windows users. The fix restores the missing UI elements and ensures consistent functionality across installations.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-that-hid-copilot-buttons-in-classic-outlook/",
-    "publishedAt": "2026-10-19T12:44:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-resolves-outlook-classic-ui-bug-removing",
-      "article-1e2b09",
-      "1e2b09",
-      "microsoft-resolves-outlook-classic-ui-bug-removing-copilot-b"
     ]
   },
   {
@@ -6142,130 +6271,6 @@ export const news: NewsBrief[] = [
       "article-749558",
       "749558",
       "audit-system-to-prevent-misuse-of-ai-in-street-surveillance"
-    ]
-  },
-  {
-    "slug": "ai-can-fix-cybersecurity-compliance-from-dashboard-32786c",
-    "title": "AI Can Fix Cybersecurity Compliance, From Dashboards to Continuous Execution",
-    "summary": "The article discusses how artificial intelligence can streamline cybersecurity compliance by automating control implementation, monitoring, and incident response. It highlights the high cost of manual compliance, citing a Pentagon estimate of $105,000 for a contractor’s CMMC Level 2 over three years.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/espresso-labs-ai-cybersecurity-compliance/",
-    "publishedAt": "2026-10-08T05:00:08.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-can-fix-cybersecurity-compliance-from-dashboard",
-      "article-32786c",
-      "32786c",
-      "ai-can-fix-cybersecurity-compliance-from-dashboards-to-conti"
-    ]
-  },
-  {
-    "slug": "despite-passkey-knowledge-professionals-still-use-72804b",
-    "title": "Despite Passkey Knowledge, Professionals Still Use Passwords",
-    "summary": "A 2026 Global State of Authentication survey found that 43% of 1,890 security professionals still rely on usernames and passwords for work accounts, even though 87% are familiar with passkeys. The study highlights a gap between awareness and adoption of modern authentication methods.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/passkey-adoption-typing-passwords/",
-    "publishedAt": "2026-10-08T04:30:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "despite-passkey-knowledge-professionals-still-use",
-      "article-72804b",
-      "72804b",
-      "despite-passkey-knowledge-professionals-still-use-passwords"
-    ]
-  },
-  {
-    "slug": "ibm-and-red-hat-patch-400-java-library-vulnerabili-6f37d9",
-    "title": "IBM and Red Hat Patch 400+ Java Library Vulnerabilities",
-    "summary": "IBM and Red Hat identified and fixed more than 400 previously unknown security flaws in widely used Java libraries. The vulnerabilities expose companies that run the affected libraries until they apply the patches. The fixes are available through Lightwell, the open‑source patching program. Prompt application of the updates is essential to mitigate potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/lightwell-java-library-vulnerabilities/",
-    "publishedAt": "2026-10-08T04:18:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ibm-and-red-hat-patch-400-java-library-vulnerabili",
-      "article-6f37d9",
-      "6f37d9",
-      "ibm-and-red-hat-patch-400-java-library-vulnerabilities"
-    ]
-  },
-  {
-    "slug": "ransomware-threats-target-critical-medical-devices-1b88ff",
-    "title": "Ransomware Threats Target Critical Medical Devices",
-    "summary": "Threat actors are exploiting IT, IoMT, OT, and IoT devices in healthcare delivery organizations to deploy ransomware, demand payments, and monetize stolen patient data. A study of over 2.5 million devices across 50+ networks identified 461 ransomware claims and 300 hacktivist attacks between January and August 2026.",
-    "category": "Ransomware",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/forescout-healthcare-quantum-readiness-report/",
-    "publishedAt": "2026-10-08T04:00:14.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ransomware-threats-target-critical-medical-devices",
-      "article-1b88ff",
-      "1b88ff"
-    ]
-  },
-  {
-    "slug": "hackers-hijack-gh-sl-as-registries-to-issue-rogue-75692d",
-    "title": "Hackers Hijack .GH, .SL, .AS Registries to Issue Rogue TLS Certificates",
-    "summary": "Hackers compromised the .GH, .SL, and .AS domain registries, hijacking Google domains and issuing rogue TLS certificates. Security teams can detect these attacks by hunting CT logs and hardening CAA records. The incident exposes registry control weaknesses and threatens domain integrity.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/cctld-dns-hijacks-rogue-tls-certificates",
-    "publishedAt": "2026-10-08T01:32:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-hijack-gh-sl-as-registries-to-issue-rogue",
-      "article-75692d",
-      "75692d",
-      "hackers-hijack-gh-sl-as-registries-to-issue-rogue-tls-certif"
-    ]
-  },
-  {
-    "slug": "evolution-of-web3-in-cloud-supply-chain-attacks-241295",
-    "title": "Evolution of Web3 in Cloud Supply Chain Attacks",
-    "summary": "Unit 42 reports that threat actors are using Web3 infrastructure and open-source supply chain attacks to breach enterprise cloud environments. The attacks exploit vulnerabilities in cloud supply chains, leveraging Web3 tools to gain unauthorized access and compromise cloud resources.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Unit 42",
-    "sourceUrl": "https://unit42.paloaltonetworks.com/web3-cloud-supply-chain-attacks/",
-    "publishedAt": "2026-10-07T22:00:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "evolution-of-web3-in-cloud-supply-chain-attacks",
-      "article-241295",
-      "241295"
-    ]
-  },
-  {
-    "slug": "australia-considers-mandatory-ai-incident-reportin-3f75f9",
-    "title": "Australia Considers Mandatory AI Incident Reporting",
-    "summary": "Australia is evaluating regulations for AI companies after an agentic attack on its Medicare systems. The government is exploring mandatory incident reporting to better manage AI risks and prevent future disruptions to critical health services.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/australian-govt-ai-incident-reporting",
-    "publishedAt": "2026-10-07T21:42:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "australia-considers-mandatory-ai-incident-reportin",
-      "article-3f75f9",
-      "3f75f9",
-      "australia-considers-mandatory-ai-incident-reporting"
     ]
   }
 ];

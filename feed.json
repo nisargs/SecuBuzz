@@ -1,5 +1,186 @@
 [
   {
+    "id": "https://blog.cloudflare.com/php-vulnerabilities-waf-protection/",
+    "sourceUrl": "https://blog.cloudflare.com/php-vulnerabilities-waf-protection/",
+    "title": "Cloudflare Deploys WAF Rules for Newly Disclosed PHP Vulnerabilities",
+    "headline": "Cloudflare Deploys WAF Rules for Newly Disclosed PHP Vulnerabilities",
+    "summary": "Cloudflare deployed default WAF rules for newly disclosed PHP vulnerabilities, filtering request and response signals to block exploits. The rules detect anomalous request patterns, halt data exfiltration, and mitigate potential remote code execution risks. Teams should monitor WAF logs for false positives, verify rule effectiveness, and apply vendor patches when released.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Cloudflare Security",
+    "publishedAt": "2026-10-21T13:56:45.000Z",
+    "url": "https://blog.cloudflare.com/php-vulnerabilities-waf-protection/",
+    "additionalSources": [
+      {
+        "source": "Unit 42",
+        "sourceUrl": "https://unit42.paloaltonetworks.com/cve-2026-109618-cve-2026-109619/"
+      }
+    ]
+  },
+  {
+    "id": "https://isc.sans.edu/diary/rss/33440",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33440",
+    "title": "PHP.net Releases Critical Patch for CVE-2026-109618 and CVE-2026-109619",
+    "headline": "PHP.net Releases Critical Patch for CVE-2026-109618 and CVE-2026-109619",
+    "summary": "PHP.net disclosed two critical vulnerabilities (CVE-2026-109618, CVE-2026-109619) with CVSS 9.4, enabling remote code execution via PHP scripts. Public PoC exploits are available, and the flaw requires no authentication, allowing attackers to execute arbitrary code on affected servers. A critical patch is released today; administrators must apply the update immediately and disable vulnerable PHP extensions to prevent exploitation.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "SANS Internet Storm Center",
+    "publishedAt": "2026-10-21T13:55:53.000Z",
+    "url": "https://isc.sans.edu/diary/rss/33440",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/21/php2shell-php-vulnerabilities-patched-cve-2026-109618-cve-2026-109619/"
+      },
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/php2shell-vulnerability/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/21/nvidia-openshell-reference-architecture/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/21/nvidia-openshell-reference-architecture/",
+    "title": "NVIDIA Introduces OpenShell Architecture to Contain AI Agents",
+    "headline": "NVIDIA Introduces OpenShell Architecture to Contain AI Agents",
+    "summary": "NVIDIA’s OpenShell Reference Architecture targets AI agents operating across enterprise infrastructure and local systems, integrating security software with dedicated hardware to enforce operational boundaries. The design enables businesses to monitor agent behavior and halt activities that exceed predefined limits, mitigating potential misuse. NVIDIA recommends deploying the architecture to maintain control over AI workloads and safeguard infrastructure.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-21T13:52:23.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/21/nvidia-openshell-reference-architecture/",
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/microsoft-targets-rogue-ai-agents-with-dynamic-permissions-risk-scoring/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.wiz.io/blog/litellm-compromised-steals-credentials",
+    "sourceUrl": "https://www.wiz.io/blog/litellm-compromised-steals-credentials",
+    "title": "Malicious LiteLLM Package Dispatched to PyPI and Docker",
+    "headline": "Malicious LiteLLM Package Dispatched to PyPI and Docker",
+    "summary": "A malicious LiteLLM package version 1.107.0 was uploaded to PyPI and Docker on October 21, targeting users of the LiteLLM library. The payload contains a credential stealer that harvests browser, cloud, and AI secrets, and includes a dormant command‑and‑control channel. Security teams should immediately remove the compromised package, update to verified LiteLLM release, and monitor for unauthorized credential exfiltration.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Wiz Research",
+    "publishedAt": "2026-10-21T13:44:12.000Z",
+    "url": "https://www.wiz.io/blog/litellm-compromised-steals-credentials",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.wiz.io/blog/php2shell-php-rce",
+    "sourceUrl": "https://www.wiz.io/blog/php2shell-php-rce",
+    "title": "PHP2Shell Reveals Critical RCE and Memory Disclosure Flaws in Core PHP Engine",
+    "headline": "PHP2Shell Reveals Critical RCE and Memory Disclosure Flaws in Core PHP Engine",
+    "summary": "PHP2Shell reveals critical remote code execution and memory disclosure flaws in the core PHP engine, impacting roughly 70% of websites. The flaw permits unauthenticated attackers to run arbitrary code and read sensitive memory, with a CVSS score of 9.8 and a public PoC. PHP maintainers released patches 8.3.12 and 8.2.28; administrators should upgrade immediately or apply a temporary configuration workaround.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Wiz Research",
+    "publishedAt": "2026-10-21T13:30:59.000Z",
+    "url": "https://www.wiz.io/blog/php2shell-php-rce",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/google-chrome-adds-clickfix-warnings-to.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/google-chrome-adds-clickfix-warnings-to.html",
+    "title": "Google Chrome Adds ClickFix Warnings to Stop Users From Running Malicious Commands",
+    "headline": "Google Chrome Adds ClickFix Warnings to Stop Users From Running Malicious Commands",
+    "summary": "Google Chrome is deploying ClickFix warnings to prevent users from executing malicious commands via social engineering when Enhanced Protection is enabled. The safeguard blocks the copy‑paste technique that bypasses traditional controls, reducing the risk of unauthorized OS-level code execution. Chrome users should enable Enhanced Protection and keep the browser updated to receive the latest ClickFix mitigation.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-21T13:15:09.000Z",
+    "url": "https://thehackernews.com/2026/10/google-chrome-adds-clickfix-warnings-to.html",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/google-chrome-enhanced-protection-updates/"
+      },
+      {
+        "source": "Malwarebytes Labs",
+        "sourceUrl": "https://www.malwarebytes.com/blog/mobile/2026/10/google-may-add-your-number-to-all-your-accounts-how-to-stop-it"
+      }
+    ]
+  },
+  {
+    "id": "https://www.darkreading.com/cyberattacks-data-breaches/decades-old-windows-utility-modern-clickfix-attack",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/decades-old-windows-utility-modern-clickfix-attack",
+    "title": "Decades-Old Windows Utility Powers Modern ClickFix Attack",
+    "headline": "Decades-Old Windows Utility Powers Modern ClickFix Attack",
+    "summary": "A modern ClickFix attack leverages the legacy Windows 'finger' utility to trigger a CAPTCHA that installs the Lumma stealer via malicious Google search results. The exploitation chain abuses the finger command’s ability to execute arbitrary code, enabling credential theft and persistent malware installation. Defenders should disable the finger utility, apply recent Windows updates, and monitor for unauthorized CAPTCHA prompts to mitigate this threat.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-21T13:00:00.000Z",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/decades-old-windows-utility-modern-clickfix-attack",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.malwarebytes.com/blog/threat-intel/2026/10/fake-amazon-music-x-youtube-deal-lures-creators-into-a-google-login-trap",
+    "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/10/fake-amazon-music-x-youtube-deal-lures-creators-into-a-google-login-trap",
+    "title": "Fake Amazon Music x YouTube Deal Traps Creators into Google Login",
+    "headline": "Fake Amazon Music x YouTube Deal Traps Creators into Google Login",
+    "summary": "Fake Amazon Music x YouTube deal lures creators into a Google login trap. Attackers use a convincing creator portal that displays YouTube videos and metrics to trick users into entering Google credentials, enabling credential theft. Security teams should verify official Amazon and YouTube communications, avoid unknown portals, and enable two‑factor authentication on Google accounts.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Malwarebytes Labs",
+    "publishedAt": "2026-10-21T12:45:00.000Z",
+    "url": "https://www.malwarebytes.com/blog/threat-intel/2026/10/fake-amazon-music-x-youtube-deal-lures-creators-into-a-google-login-trap",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-powertoys-adds-cursorhide-button-lock-mouse-tools/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-powertoys-adds-cursorhide-button-lock-mouse-tools/",
+    "title": "Microsoft PowerToys 0.102 Adds CursorHide, Button Lock, and Command‑Line Enhancements",
+    "headline": "Microsoft PowerToys 0.102 Adds CursorHide, Button Lock, and Command‑Line Enhancements",
+    "summary": "Microsoft released PowerToys 0.102, adding CursorHide and Button Lock mouse utilities, new command‑line tools, and Command Palette enhancements. The update expands PowerToys functionality, enabling users to hide the cursor, lock mouse buttons, and access utilities via command line, improving workflow automation. Users should download the latest release from Microsoft’s official site and review the release notes for compatibility considerations.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-21T12:20:34.000Z",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-powertoys-adds-cursorhide-button-lock-mouse-tools/",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-server-2025-gets-support-for-quick-machine-recovery/"
+      }
+    ]
+  },
+  {
+    "id": "https://blog.talosintelligence.com/parasitizing-trust-how-legitimate-infrastructure-becomes-a-delivery-pipeline-for-attackers/",
+    "sourceUrl": "https://blog.talosintelligence.com/parasitizing-trust-how-legitimate-infrastructure-becomes-a-delivery-pipeline-for-attackers/",
+    "title": "Legitimate Platforms Coerced into Attack Delivery Channels",
+    "headline": "Legitimate Platforms Coerced into Attack Delivery Channels",
+    "summary": "Adversaries are exploiting over 25 trusted collaboration, file‑sharing, and payment services to deliver malicious payloads, turning legitimate infrastructure into a covert delivery pipeline. The technique leverages built‑in trust mechanisms, enabling attackers to bypass perimeter defenses and embed malware within seemingly benign files or links. Security teams must enforce strict access controls, monitor anomalous outbound traffic, and apply zero‑trust policies to mitigate this threat.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Cisco Talos",
+    "publishedAt": "2026-10-21T10:00:00.000Z",
+    "url": "https://blog.talosintelligence.com/parasitizing-trust-how-legitimate-infrastructure-becomes-a-delivery-pipeline-for-attackers/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/microsoft-new-report-assessment/",
+    "sourceUrl": "https://cybersecuritynews.com/microsoft-new-report-assessment/",
+    "title": "Microsoft Enhances Azure Bug Bounty Rewards for Complete Vulnerability Reports",
+    "headline": "Microsoft Enhances Azure Bug Bounty Rewards for Complete Vulnerability Reports",
+    "summary": "Microsoft has updated its Azure bug bounty program to reward $40,000 for complete reports of critical remote code execution and privilege escalation vulnerabilities, while incomplete reports receive $4,000. The change emphasizes the importance of detailed evidence in vulnerability submissions. Researchers should provide comprehensive proof to qualify for the higher payout and ensure compliance with the new assessment criteria.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-21T09:39:45.000Z",
+    "url": "https://cybersecuritynews.com/microsoft-new-report-assessment/",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-that-hid-copilot-buttons-in-classic-outlook/"
+      }
+    ]
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/10/21/grafana-labs-knowledge-graph/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/21/grafana-labs-knowledge-graph/",
     "title": "Grafana Labs Integrates Knowledge Graph into Cloud Stack",
@@ -129,6 +310,10 @@
       {
         "source": "Cyber Security News",
         "sourceUrl": "https://cybersecuritynews.com/best-data-masking-tools/"
+      },
+      {
+        "source": "Sophos Threat Research",
+        "sourceUrl": "https://www.sophos.com/en-us/blog/proof-of-concept-exploit-released-for-php-vulnerabilities-109618-109619"
       }
     ]
   },
@@ -500,24 +685,6 @@
       {
         "source": "BleepingComputer",
         "sourceUrl": "https://www.bleepingcomputer.com/news/security/hacker-gets-8-years-for-stealing-33-million-from-taxpayers/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/20/google-chrome-enhanced-protection-updates/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/google-chrome-enhanced-protection-updates/",
-    "title": "Google Enhances Chrome Protection Against Scam Commands",
-    "headline": "Google Enhances Chrome Protection Against Scam Commands",
-    "summary": "Google updates Chrome’s Enhanced Protection to detect scam sites that trick users into copying malicious commands. The new feature warns users when a page attempts to trick them into executing harmful commands. This update claims to make users ten times safer from phishing, social engineering, and notification abuse compared to Standard Protection.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-20T17:00:47.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/20/google-chrome-enhanced-protection-updates/",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/google-unveils-new-android-ai-protections/"
       }
     ]
   },
@@ -907,19 +1074,6 @@
     ]
   },
   {
-    "id": "https://www.malwarebytes.com/blog/mobile/2026/10/google-may-add-your-number-to-all-your-accounts-how-to-stop-it",
-    "sourceUrl": "https://www.malwarebytes.com/blog/mobile/2026/10/google-may-add-your-number-to-all-your-accounts-how-to-stop-it",
-    "title": "Google Adds Phone Numbers to All Accounts, Users Can Verify",
-    "headline": "Google Adds Phone Numbers to All Accounts, Users Can Verify",
-    "summary": "Google has begun automatically attaching users’ phone numbers to all of their accounts, even those intended to remain separate. Android users can verify whether their number has been added by checking account settings. The change is intended to streamline account recovery but raises privacy concerns.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "publishedAt": "2026-10-20T12:45:23.000Z",
-    "url": "https://www.malwarebytes.com/blog/mobile/2026/10/google-may-add-your-number-to-all-your-accounts-how-to-stop-it",
-    "additionalSources": []
-  },
-  {
     "id": "https://www.securityweek.com/ex-openai-worker-accused-of-bugging-conference-room-planned-to-fly-to-saudi-arabia-prosecutors-say/",
     "sourceUrl": "https://www.securityweek.com/ex-openai-worker-accused-of-bugging-conference-room-planned-to-fly-to-saudi-arabia-prosecutors-say/",
     "title": "Ex‑OpenAI Worker Accused of Bug‑in‑the‑Air Surveillance",
@@ -966,36 +1120,6 @@
     "publishedAt": "2026-10-20T12:18:04.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/20/malicious-calendar-invites/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/microsoft/windows-server-2025-gets-support-for-quick-machine-recovery/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-server-2025-gets-support-for-quick-machine-recovery/",
-    "title": "Microsoft Adds Quick Machine Recovery to Windows Server 2025 with October 2026 Update",
-    "headline": "Microsoft Adds Quick Machine Recovery to Windows Server 2025 with October 2026 Update",
-    "summary": "Microsoft released an October 2026 security update that adds quick machine recovery to Windows Server 2025. The feature allows administrators to restore servers to a previous healthy state rapidly, improving uptime and simplifying recovery procedures. No security vulnerability is addressed by this update.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-20T12:16:32.000Z",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/windows-server-2025-gets-support-for-quick-machine-recovery/",
-    "additionalSources": [
-      {
-        "source": "CISA",
-        "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-01"
-      },
-      {
-        "source": "SANS Internet Storm Center",
-        "sourceUrl": "https://isc.sans.edu/diary/rss/33436"
-      },
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-game-app-crashes-caused-by-windows-kb5124010-preview-update/"
-      },
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/19/check-point-brand-impersonation-scams-q3-2026-report/"
-      }
-    ]
   },
   {
     "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-02",
@@ -1053,28 +1177,6 @@
     "publishedAt": "2026-10-20T11:33:04.000Z",
     "url": "https://thehackernews.com/2026/10/what-security-teams-can-do-to-tame-wild.html",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/microsoft-targets-rogue-ai-agents-with-dynamic-permissions-risk-scoring/",
-    "sourceUrl": "https://www.securityweek.com/microsoft-targets-rogue-ai-agents-with-dynamic-permissions-risk-scoring/",
-    "title": "Microsoft Introduces Dynamic Permissions for AI Agents",
-    "headline": "Microsoft Introduces Dynamic Permissions for AI Agents",
-    "summary": "Microsoft announced new controls that treat AI agents as insiders, granting task‑specific permissions and tightening access as an agent’s risk score rises. The policy framework aims to reduce insider‑threat exposure from autonomous agents while maintaining operational flexibility.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-20T11:30:18.000Z",
-    "url": "https://www.securityweek.com/microsoft-targets-rogue-ai-agents-with-dynamic-permissions-risk-scoring/",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/microsofts-ai-agents-threats-guardian-agents/"
-      },
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/ai-models-as-insider-threats/"
-      }
-    ]
   },
   {
     "id": "https://thehackernews.com/2026/10/russian-apt28-breaches-nato-naval.html",
@@ -1193,6 +1295,19 @@
     "source": "Malwarebytes Labs",
     "publishedAt": "2026-10-20T09:44:53.000Z",
     "url": "https://www.malwarebytes.com/blog/scams/2026/10/man-seeking-love-travels-2000-km-to-meet-an-ai-generated-woman",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.welivesecurity.com/en/social-media/is-ad-scam-how-tell-before-click/",
+    "sourceUrl": "https://www.welivesecurity.com/en/social-media/is-ad-scam-how-tell-before-click/",
+    "title": "Deceptive Social Media Ad Triggers Credential Theft",
+    "headline": "Deceptive Social Media Ad Triggers Credential Theft",
+    "summary": "A deceptive advertisement on a popular social media platform can trick users into clicking malicious links, leading to credential theft or malware installation. The ad exploits trust in the platform’s advertising ecosystem, using convincing visuals and misleading calls to action to bypass user skepticism. Security teams should verify ad authenticity, block suspicious domains, and educate users about phishing indicators.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "ESET WeLiveSecurity",
+    "publishedAt": "2026-10-20T09:00:00.000Z",
+    "url": "https://www.welivesecurity.com/en/social-media/is-ad-scam-how-tell-before-click/",
     "additionalSources": []
   },
   {
@@ -1505,24 +1620,6 @@
     "publishedAt": "2026-10-19T13:00:00.000Z",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/10/19/agents-are-your-newest-insiders-security-must-move-at-their-speed/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-that-hid-copilot-buttons-in-classic-outlook/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-that-hid-copilot-buttons-in-classic-outlook/",
-    "title": "Microsoft Resolves Outlook Classic UI Bug Removing Copilot Buttons",
-    "headline": "Microsoft Resolves Outlook Classic UI Bug Removing Copilot Buttons",
-    "summary": "Microsoft addressed a defect in the classic Outlook desktop client that caused the Copilot Chat and Copilot buttons to disappear for some Windows users. The fix restores the missing UI elements and ensures consistent functionality across installations.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-19T12:44:44.000Z",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-that-hid-copilot-buttons-in-classic-outlook/",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-windows-server-updates-cause-exchange-issues/"
-      }
-    ]
   },
   {
     "id": "https://www.malwarebytes.com/blog/podcast/2026/10/a-sextortion-conspiracy-killed-his-son-lock-and-code-s07e21",
@@ -5143,116 +5240,6 @@
     "source": "Help Net Security",
     "publishedAt": "2026-10-08T05:30:13.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/08/ai-surveillance-cameras-privacy/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/08/espresso-labs-ai-cybersecurity-compliance/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/espresso-labs-ai-cybersecurity-compliance/",
-    "title": "AI Can Fix Cybersecurity Compliance, From Dashboards to Continuous Execution",
-    "headline": "AI Can Fix Cybersecurity Compliance, From Dashboards to Continuous Execution",
-    "summary": "The article discusses how artificial intelligence can streamline cybersecurity compliance by automating control implementation, monitoring, and incident response. It highlights the high cost of manual compliance, citing a Pentagon estimate of $105,000 for a contractor’s CMMC Level 2 over three years.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-08T05:00:08.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/08/espresso-labs-ai-cybersecurity-compliance/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/08/passkey-adoption-typing-passwords/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/passkey-adoption-typing-passwords/",
-    "title": "Despite Passkey Knowledge, Professionals Still Use Passwords",
-    "headline": "Despite Passkey Knowledge, Professionals Still Use Passwords",
-    "summary": "A 2026 Global State of Authentication survey found that 43% of 1,890 security professionals still rely on usernames and passwords for work accounts, even though 87% are familiar with passkeys. The study highlights a gap between awareness and adoption of modern authentication methods.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-08T04:30:20.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/08/passkey-adoption-typing-passwords/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/08/lightwell-java-library-vulnerabilities/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/lightwell-java-library-vulnerabilities/",
-    "title": "IBM and Red Hat Patch 400+ Java Library Vulnerabilities",
-    "headline": "IBM and Red Hat Patch 400+ Java Library Vulnerabilities",
-    "summary": "IBM and Red Hat identified and fixed more than 400 previously unknown security flaws in widely used Java libraries. The vulnerabilities expose companies that run the affected libraries until they apply the patches. The fixes are available through Lightwell, the open‑source patching program. Prompt application of the updates is essential to mitigate potential exploitation.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-08T04:18:00.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/08/lightwell-java-library-vulnerabilities/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/08/forescout-healthcare-quantum-readiness-report/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/forescout-healthcare-quantum-readiness-report/",
-    "title": "Ransomware Threats Target Critical Medical Devices",
-    "headline": "Ransomware Threats Target Critical Medical Devices",
-    "summary": "Threat actors are exploiting IT, IoMT, OT, and IoT devices in healthcare delivery organizations to deploy ransomware, demand payments, and monetize stolen patient data. A study of over 2.5 million devices across 50+ networks identified 461 ransomware claims and 300 hacktivist attacks between January and August 2026.",
-    "category": "RANSOMWARE",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-08T04:00:14.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/08/forescout-healthcare-quantum-readiness-report/",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/engineer-sentenced-for-locking-thousands-of-devices-on-employer-network/"
-      }
-    ]
-  },
-  {
-    "id": "https://cybernewsai.com/blog/cctld-dns-hijacks-rogue-tls-certificates",
-    "sourceUrl": "https://cybernewsai.com/blog/cctld-dns-hijacks-rogue-tls-certificates",
-    "title": "Hackers Hijack .GH, .SL, .AS Registries to Issue Rogue TLS Certificates",
-    "headline": "Hackers Hijack .GH, .SL, .AS Registries to Issue Rogue TLS Certificates",
-    "summary": "Hackers compromised the .GH, .SL, and .AS domain registries, hijacking Google domains and issuing rogue TLS certificates. Security teams can detect these attacks by hunting CT logs and hardening CAA records. The incident exposes registry control weaknesses and threatens domain integrity.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-10-08T01:32:39.000Z",
-    "url": "https://cybernewsai.com/blog/cctld-dns-hijacks-rogue-tls-certificates",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/attackers-hijack-gh-sl-and-as.html"
-      },
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-hijack-google-domains-after-breaching-cctld-registries/"
-      }
-    ]
-  },
-  {
-    "id": "https://unit42.paloaltonetworks.com/web3-cloud-supply-chain-attacks/",
-    "sourceUrl": "https://unit42.paloaltonetworks.com/web3-cloud-supply-chain-attacks/",
-    "title": "Evolution of Web3 in Cloud Supply Chain Attacks",
-    "headline": "Evolution of Web3 in Cloud Supply Chain Attacks",
-    "summary": "Unit 42 reports that threat actors are using Web3 infrastructure and open-source supply chain attacks to breach enterprise cloud environments. The attacks exploit vulnerabilities in cloud supply chains, leveraging Web3 tools to gain unauthorized access and compromise cloud resources.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Unit 42",
-    "publishedAt": "2026-10-07T22:00:16.000Z",
-    "url": "https://unit42.paloaltonetworks.com/web3-cloud-supply-chain-attacks/",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/long-running-npm-malware-campaign-accumulates-40000-downloads/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.darkreading.com/cybersecurity-operations/australian-govt-ai-incident-reporting",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/australian-govt-ai-incident-reporting",
-    "title": "Australia Considers Mandatory AI Incident Reporting",
-    "headline": "Australia Considers Mandatory AI Incident Reporting",
-    "summary": "Australia is evaluating regulations for AI companies after an agentic attack on its Medicare systems. The government is exploring mandatory incident reporting to better manage AI risks and prevent future disruptions to critical health services.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-07T21:42:55.000Z",
-    "url": "https://www.darkreading.com/cybersecurity-operations/australian-govt-ai-incident-reporting",
     "additionalSources": []
   }
 ]

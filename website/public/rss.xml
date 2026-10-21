@@ -5,8 +5,107 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Oct 2026 10:14:57 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 14:08:21 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Cloudflare Deploys WAF Rules for Newly Disclosed PHP Vulnerabilities</title>
+      <link>https://secubuzz.com/news/cloudflare-deploys-waf-rules-for-newly-disclosed-p-893875</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-deploys-waf-rules-for-newly-disclosed-p-893875</guid>
+      <description><![CDATA[Cloudflare deployed default WAF rules for newly disclosed PHP vulnerabilities, filtering request and response signals to block exploits. The rules detect anomalous request patterns, halt data exfiltration, and mitigate potential remote code execution risks. Teams should monitor WAF logs for false positives, verify rule effectiveness, and apply vendor patches when released.]]></description>
+      <pubDate>Wed, 21 Oct 2026 13:56:45 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/php-vulnerabilities-waf-protection/">Cloudflare Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>PHP.net Releases Critical Patch for CVE-2026-109618 and CVE-2026-109619</title>
+      <link>https://secubuzz.com/news/php-net-releases-critical-patch-for-cve-2026-10961-57dd7d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/php-net-releases-critical-patch-for-cve-2026-10961-57dd7d</guid>
+      <description><![CDATA[PHP.net disclosed two critical vulnerabilities (CVE-2026-109618, CVE-2026-109619) with CVSS 9.4, enabling remote code execution via PHP scripts. Public PoC exploits are available, and the flaw requires no authentication, allowing attackers to execute arbitrary code on affected servers. A critical patch is released today; administrators must apply the update immediately and disable vulnerable PHP extensions to prevent exploitation.]]></description>
+      <pubDate>Wed, 21 Oct 2026 13:55:53 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33440">SANS Internet Storm Center</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>NVIDIA Introduces OpenShell Architecture to Contain AI Agents</title>
+      <link>https://secubuzz.com/news/nvidia-introduces-openshell-architecture-to-contai-6a71bb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/nvidia-introduces-openshell-architecture-to-contai-6a71bb</guid>
+      <description><![CDATA[NVIDIA’s OpenShell Reference Architecture targets AI agents operating across enterprise infrastructure and local systems, integrating security software with dedicated hardware to enforce operational boundaries. The design enables businesses to monitor agent behavior and halt activities that exceed predefined limits, mitigating potential misuse. NVIDIA recommends deploying the architecture to maintain control over AI workloads and safeguard infrastructure.]]></description>
+      <pubDate>Wed, 21 Oct 2026 13:52:23 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/21/nvidia-openshell-reference-architecture/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Malicious LiteLLM Package Dispatched to PyPI and Docker</title>
+      <link>https://secubuzz.com/news/malicious-litellm-package-dispatched-to-pypi-and-d-7788c0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/malicious-litellm-package-dispatched-to-pypi-and-d-7788c0</guid>
+      <description><![CDATA[A malicious LiteLLM package version 1.107.0 was uploaded to PyPI and Docker on October 21, targeting users of the LiteLLM library. The payload contains a credential stealer that harvests browser, cloud, and AI secrets, and includes a dormant command‑and‑control channel. Security teams should immediately remove the compromised package, update to verified LiteLLM release, and monitor for unauthorized credential exfiltration.]]></description>
+      <pubDate>Wed, 21 Oct 2026 13:44:12 GMT</pubDate>
+      <source url="https://www.wiz.io/blog/litellm-compromised-steals-credentials">Wiz Research</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>PHP2Shell Reveals Critical RCE and Memory Disclosure Flaws in Core PHP Engine</title>
+      <link>https://secubuzz.com/news/php2shell-reveals-critical-rce-and-memory-disclosu-16e764</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/php2shell-reveals-critical-rce-and-memory-disclosu-16e764</guid>
+      <description><![CDATA[PHP2Shell reveals critical remote code execution and memory disclosure flaws in the core PHP engine, impacting roughly 70% of websites. The flaw permits unauthenticated attackers to run arbitrary code and read sensitive memory, with a CVSS score of 9.8 and a public PoC. PHP maintainers released patches 8.3.12 and 8.2.28; administrators should upgrade immediately or apply a temporary configuration workaround.]]></description>
+      <pubDate>Wed, 21 Oct 2026 13:30:59 GMT</pubDate>
+      <source url="https://www.wiz.io/blog/php2shell-php-rce">Wiz Research</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Google Chrome Adds ClickFix Warnings to Stop Users From Running Malicious Commands</title>
+      <link>https://secubuzz.com/news/google-chrome-adds-clickfix-warnings-to-stop-users-70f2ad</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-chrome-adds-clickfix-warnings-to-stop-users-70f2ad</guid>
+      <description><![CDATA[Google Chrome is deploying ClickFix warnings to prevent users from executing malicious commands via social engineering when Enhanced Protection is enabled. The safeguard blocks the copy‑paste technique that bypasses traditional controls, reducing the risk of unauthorized OS-level code execution. Chrome users should enable Enhanced Protection and keep the browser updated to receive the latest ClickFix mitigation.]]></description>
+      <pubDate>Wed, 21 Oct 2026 13:15:09 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/google-chrome-adds-clickfix-warnings-to.html">The Hacker News</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Decades-Old Windows Utility Powers Modern ClickFix Attack</title>
+      <link>https://secubuzz.com/news/decades-old-windows-utility-powers-modern-clickfix-1ea2d9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/decades-old-windows-utility-powers-modern-clickfix-1ea2d9</guid>
+      <description><![CDATA[A modern ClickFix attack leverages the legacy Windows 'finger' utility to trigger a CAPTCHA that installs the Lumma stealer via malicious Google search results. The exploitation chain abuses the finger command’s ability to execute arbitrary code, enabling credential theft and persistent malware installation. Defenders should disable the finger utility, apply recent Windows updates, and monitor for unauthorized CAPTCHA prompts to mitigate this threat.]]></description>
+      <pubDate>Wed, 21 Oct 2026 13:00:00 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyberattacks-data-breaches/decades-old-windows-utility-modern-clickfix-attack">Dark Reading</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Fake Amazon Music x YouTube Deal Traps Creators into Google Login</title>
+      <link>https://secubuzz.com/news/fake-amazon-music-x-youtube-deal-traps-creators-in-458852</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fake-amazon-music-x-youtube-deal-traps-creators-in-458852</guid>
+      <description><![CDATA[Fake Amazon Music x YouTube deal lures creators into a Google login trap. Attackers use a convincing creator portal that displays YouTube videos and metrics to trick users into entering Google credentials, enabling credential theft. Security teams should verify official Amazon and YouTube communications, avoid unknown portals, and enable two‑factor authentication on Google accounts.]]></description>
+      <pubDate>Wed, 21 Oct 2026 12:45:00 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/threat-intel/2026/10/fake-amazon-music-x-youtube-deal-lures-creators-into-a-google-login-trap">Malwarebytes Labs</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Microsoft PowerToys 0.102 Adds CursorHide, Button Lock, and Command‑Line Enhancements</title>
+      <link>https://secubuzz.com/news/microsoft-powertoys-0-102-adds-cursorhide-button-l-f9e809</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-powertoys-0-102-adds-cursorhide-button-l-f9e809</guid>
+      <description><![CDATA[Microsoft released PowerToys 0.102, adding CursorHide and Button Lock mouse utilities, new command‑line tools, and Command Palette enhancements. The update expands PowerToys functionality, enabling users to hide the cursor, lock mouse buttons, and access utilities via command line, improving workflow automation. Users should download the latest release from Microsoft’s official site and review the release notes for compatibility considerations.]]></description>
+      <pubDate>Wed, 21 Oct 2026 12:20:34 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-powertoys-adds-cursorhide-button-lock-mouse-tools/">BleepingComputer</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Legitimate Platforms Coerced into Attack Delivery Channels</title>
+      <link>https://secubuzz.com/news/legitimate-platforms-coerced-into-attack-delivery-2c65a5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/legitimate-platforms-coerced-into-attack-delivery-2c65a5</guid>
+      <description><![CDATA[Adversaries are exploiting over 25 trusted collaboration, file‑sharing, and payment services to deliver malicious payloads, turning legitimate infrastructure into a covert delivery pipeline. The technique leverages built‑in trust mechanisms, enabling attackers to bypass perimeter defenses and embed malware within seemingly benign files or links. Security teams must enforce strict access controls, monitor anomalous outbound traffic, and apply zero‑trust policies to mitigate this threat.]]></description>
+      <pubDate>Wed, 21 Oct 2026 10:00:00 GMT</pubDate>
+      <source url="https://blog.talosintelligence.com/parasitizing-trust-how-legitimate-infrastructure-becomes-a-delivery-pipeline-for-attackers/">Cisco Talos</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Microsoft Enhances Azure Bug Bounty Rewards for Complete Vulnerability Reports</title>
+      <link>https://secubuzz.com/news/microsoft-enhances-azure-bug-bounty-rewards-for-co-2c6b8b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-enhances-azure-bug-bounty-rewards-for-co-2c6b8b</guid>
+      <description><![CDATA[Microsoft has updated its Azure bug bounty program to reward $40,000 for complete reports of critical remote code execution and privilege escalation vulnerabilities, while incomplete reports receive $4,000. The change emphasizes the importance of detailed evidence in vulnerability submissions. Researchers should provide comprehensive proof to qualify for the higher payout and ensure compliance with the new assessment criteria.]]></description>
+      <pubDate>Wed, 21 Oct 2026 09:39:45 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/microsoft-new-report-assessment/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Grafana Labs Integrates Knowledge Graph into Cloud Stack</title>
       <link>https://secubuzz.com/news/grafana-labs-integrates-knowledge-graph-into-cloud-4a4751</link>
@@ -296,15 +395,6 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>Google Enhances Chrome Protection Against Scam Commands</title>
-      <link>https://secubuzz.com/news/google-enhances-chrome-protection-against-scam-com-4820a7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-enhances-chrome-protection-against-scam-com-4820a7</guid>
-      <description><![CDATA[Google updates Chrome’s Enhanced Protection to detect scam sites that trick users into copying malicious commands. The new feature warns users when a page attempts to trick them into executing harmful commands. This update claims to make users ten times safer from phishing, social engineering, and notification abuse compared to Standard Protection.]]></description>
-      <pubDate>Tue, 20 Oct 2026 17:00:47 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/20/google-chrome-enhanced-protection-updates/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
       <title>Threat Intelligence Enhances SOC Analyst Efficiency</title>
       <link>https://secubuzz.com/news/threat-intelligence-enhances-soc-analyst-efficienc-69a30a</link>
       <guid isPermaLink="true">https://secubuzz.com/news/threat-intelligence-enhances-soc-analyst-efficienc-69a30a</guid>
@@ -366,96 +456,6 @@
       <pubDate>Tue, 20 Oct 2026 15:09:27 GMT</pubDate>
       <source url="https://cybersecuritynews.com/fbi-suspects-cybersecurity-executive-shinyhunters/">Cyber Security News</source>
       <category>Ransomware</category>
-    </item>
-    <item>
-      <title>EU Cyber Resilience Act Does Not Mandate Fixes for Fridge Controller Vulnerabilities</title>
-      <link>https://secubuzz.com/news/eu-cyber-resilience-act-does-not-mandate-fixes-for-60db8d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/eu-cyber-resilience-act-does-not-mandate-fixes-for-60db8d</guid>
-      <description><![CDATA[The EU’s Cyber Resilience Act, effective last month, requires manufacturers to address vulnerabilities and provide free updates only during a product’s support period, as defined by the manufacturer. The law does not compel fixes for fridge controllers already compromised in a French attack.]]></description>
-      <pubDate>Tue, 20 Oct 2026 14:55:00 GMT</pubDate>
-      <source url="https://therecord.media/eu-cyber-law-wont-force-fixes-for-fridges-in-french-attack">The Record</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Chinese-Speaking Attacker Uses AI Pen-Test Tool Cairn to Compromise Hundreds of Websites</title>
-      <link>https://secubuzz.com/news/chinese-speaking-attacker-uses-ai-pen-test-tool-ca-66be69</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chinese-speaking-attacker-uses-ai-pen-test-tool-ca-66be69</guid>
-      <description><![CDATA[An attacker leveraged the AI-driven pen‑test tool Cairn to automate attacks against hundreds of global websites, targeting high-profile clients such as John Deere, SharkNinja, and Cummins. The tool enabled rapid exploitation of web application vulnerabilities, resulting in data theft and service disruption.]]></description>
-      <pubDate>Tue, 20 Oct 2026 14:36:05 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyberattacks-data-breaches/hackers-abuse-ai-pen-test-tool-cairn">Dark Reading</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Hackers Exploit Open Banking Services to Test Stolen Credentials</title>
-      <link>https://secubuzz.com/news/hackers-exploit-open-banking-services-to-test-stol-241c52</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-open-banking-services-to-test-stol-241c52</guid>
-      <description><![CDATA[Criminals abused a spend‑management platform’s account‑linking process to verify stolen bank and card credentials, using open banking as a low‑cost checking service. The platform did not lose money, but the attack demonstrates a vulnerability in the account‑linking flow that allows credential validation without financial loss.]]></description>
-      <pubDate>Tue, 20 Oct 2026 14:22:04 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-exploit-open-banking-services/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AI-Powered Antidetect Browsers Facilitate Large-Scale Online Fraud</title>
-      <link>https://secubuzz.com/news/ai-powered-antidetect-browsers-facilitate-large-sc-761f0b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-powered-antidetect-browsers-facilitate-large-sc-761f0b</guid>
-      <description><![CDATA[Antidetect browsers hide users’ digital footprints, allowing operators to run thousands of isolated accounts across major social platforms. This capability enables coordinated fraud and influence campaigns without triggering platform detection, posing a significant threat to online security and user trust.]]></description>
-      <pubDate>Tue, 20 Oct 2026 14:17:23 GMT</pubDate>
-      <source url="https://research.checkpoint.com/2026/the-risk-of-ai-powered-antidetect-browsers-in-online-fraud-and-influence-operations/">Check Point Research</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Incomplete Security Patches Provide Attackers Clear Bypass Paths</title>
-      <link>https://secubuzz.com/news/incomplete-security-patches-provide-attackers-clea-6cd99c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/incomplete-security-patches-provide-attackers-clea-6cd99c</guid>
-      <description><![CDATA[Security patches are increasingly incomplete, providing attackers with clear bypass paths. A Terra Security researcher tracked broken fixes across CVE records, finding a pattern where a patch is released, a bypass is discovered, and a new patch follows. The trend highlights the need for rigorous validation before deployment.]]></description>
-      <pubDate>Tue, 20 Oct 2026 14:13:04 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/20/ncomplete-security-patches-broken-fixes-rise/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AOMEI Update Servers Hijacked, Redirecting Clients to Malware</title>
-      <link>https://secubuzz.com/news/aomei-update-servers-hijacked-redirecting-clients-f9559f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/aomei-update-servers-hijacked-redirecting-clients-f9559f</guid>
-      <description><![CDATA[AOMEI’s update servers were hijacked between April and July, with attackers altering configuration files to redirect clients to malware downloads for brief periods. The company has not notified customers. The incident exposes the risk of compromised update infrastructure and underscores the importance of secure update channels.]]></description>
-      <pubDate>Tue, 20 Oct 2026 14:11:00 GMT</pubDate>
-      <source url="https://therecord.media/aomei-yet-to-notify-customers-hijack-software">The Record</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Autonomous AI Agents Breach Over 1,200 Company Websites</title>
-      <link>https://secubuzz.com/news/autonomous-ai-agents-breach-over-1-200-company-web-3635ea</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/autonomous-ai-agents-breach-over-1-200-company-web-3635ea</guid>
-      <description><![CDATA[Autonomous AI agents, controlled by a Chinese-speaking criminal, targeted over 1,200 company websites, successfully breaching more than 100 sites including Deere and appliance manufacturers. Operators left control panels exposed online, allowing researchers to observe the attacks. The breach demonstrates automated exploitation of web application weaknesses without manual intervention.]]></description>
-      <pubDate>Tue, 20 Oct 2026 14:07:17 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/hackers-use-autonomous-ai-agents-to.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Anti-Putin Messages Disrupt Nationwide School Assessments in Russia</title>
-      <link>https://secubuzz.com/news/anti-putin-messages-disrupt-nationwide-school-asse-6c3704</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/anti-putin-messages-disrupt-nationwide-school-asse-6c3704</guid>
-      <description><![CDATA[A pro-Ukraine group claiming to operate within Russia injected anti-Putin messages into a nationwide school assessment platform, disrupting evaluations. Authorities restored the system after the attack. The incident highlights political interference in educational infrastructure but no evidence of data theft or credential compromise.]]></description>
-      <pubDate>Tue, 20 Oct 2026 14:05:00 GMT</pubDate>
-      <source url="https://therecord.media/anti-putin-messages-disrupt-russian-education-platform">The Record</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>CJIS v6.1 Compliance: Five Practical Priorities for Agencies</title>
-      <link>https://secubuzz.com/news/cjis-v6-1-compliance-five-practical-priorities-for-4da26c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cjis-v6-1-compliance-five-practical-priorities-for-4da26c</guid>
-      <description><![CDATA[CJIS v6.1 mandates agencies to enforce strong authentication, account security, and audit controls. Specops recommends prioritizing MFA, account management, password policies, logging, and audit readiness to meet compliance requirements and maintain secure operations.]]></description>
-      <pubDate>Tue, 20 Oct 2026 13:51:00 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/cjis-v61-compliance-5-practical-priorities-for-agencies/">BleepingComputer</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Developers’ AI Adoption Curve Determines Security Risk</title>
-      <link>https://secubuzz.com/news/developers-ai-adoption-curve-determines-security-r-447761</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/developers-ai-adoption-curve-determines-security-r-447761</guid>
-      <description><![CDATA[Developers’ position on the AI adoption curve directly influences security risk. The article argues that maturity, not speed, is the key to protecting AI software. It outlines how early adopters may overlook foundational controls, while mature teams implement layered defenses, continuous testing, and governance to mitigate emerging threats.]]></description>
-      <pubDate>Tue, 20 Oct 2026 13:34:23 GMT</pubDate>
-      <source url="https://www.securityweek.com/the-key-to-ai-software-security-isnt-speed-its-maturity/">SecurityWeek</source>
-      <category>Policy</category>
     </item>
   </channel>
 </rss>
