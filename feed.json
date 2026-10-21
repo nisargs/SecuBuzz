@@ -1,5 +1,98 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/google/google-chrome-adds-gemini-powered-scam-detection-warns-users-of-clickfix-attacks/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/google/google-chrome-adds-gemini-powered-scam-detection-warns-users-of-clickfix-attacks/",
+    "title": "Google Chrome Adds Gemini-Powered Scam Detection",
+    "headline": "Google Chrome Adds Gemini-Powered Scam Detection",
+    "summary": "Google Chrome introduces Gemini-powered scam detection to identify deceptive websites and alert users when they copy suspicious commands from ClickFix attacks. The new feature leverages Gemini’s language model to analyze site content and user actions, flagging potential phishing or malicious copy‑paste behaviors. Chrome will ship the update in the next release, providing users with real‑time protection against emerging social‑engineering threats.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-21T22:16:26.000Z",
+    "url": "https://www.bleepingcomputer.com/news/google/google-chrome-adds-gemini-powered-scam-detection-warns-users-of-clickfix-attacks/",
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/google-hardens-chrome-against-clickfix-attacks-insecure-http-connections/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/japans-onamae-desktop-cloud-hacked-up-to-27-000-servers-affected/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/japans-onamae-desktop-cloud-hacked-up-to-27-000-servers-affected/",
+    "title": "Onamae Desktop Cloud Breach Affects 26,739 Servers",
+    "headline": "Onamae Desktop Cloud Breach Affects 26,739 Servers",
+    "summary": "Hackers breached Japan’s Onamae Desktop Cloud, compromising the infrastructure of a popular VPS provider and installing malware on up to 26,739 customer servers. The attack leveraged unauthorized access to the cloud management platform, enabling widespread distribution of malicious code across virtual machines. Onamae has issued a patch and urged customers to update credentials and scan for infections.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-21T21:43:27.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/japans-onamae-desktop-cloud-hacked-up-to-27-000-servers-affected/",
+    "additionalSources": [
+      {
+        "source": "Dark Reading",
+        "sourceUrl": "https://www.darkreading.com/cloud-security/tidb-breach-flawed-cloud-security"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-use-post-quantum-cryptography-for-malware-delivery/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-use-post-quantum-cryptography-for-malware-delivery/",
+    "title": "Lazarus Employs Post‑Quantum Cryptography for Malware Delivery",
+    "headline": "Lazarus Employs Post‑Quantum Cryptography for Malware Delivery",
+    "summary": "Lazarus hackers are leveraging a post‑quantum cryptographic mechanism to secure malicious payload delivery in new operations that combine legacy and contemporary malware. The technique relies on quantum‑safe key exchange to obfuscate command and control traffic, potentially evading traditional signature‑based detection. Security teams should monitor for anomalous encrypted traffic and update endpoint detection tools to recognize quantum‑cryptographic signatures.",
+    "category": "NATION_STATE",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-21T20:31:48.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-use-post-quantum-cryptography-for-malware-delivery/",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/teradata-ai-data-security/"
+      }
+    ]
+  },
+  {
+    "id": "https://therecord.media/meta-new-mexico-penalty-cambridge-analytica-privacy-case",
+    "sourceUrl": "https://therecord.media/meta-new-mexico-penalty-cambridge-analytica-privacy-case",
+    "title": "Meta Faces $25B Penalty Under New Mexico Privacy Ruling",
+    "headline": "Meta Faces $25B Penalty Under New Mexico Privacy Ruling",
+    "summary": "Meta faces $25B penalty under New Mexico privacy ruling, citing legacy Cambridge Analytica data misuse. The ruling highlights ongoing regulatory scrutiny over Meta's data handling practices, with financial impact tied to past privacy violations. Meta must comply with New Mexico privacy requirements, update privacy policies, and monitor enforcement actions continuously.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Record",
+    "publishedAt": "2026-10-21T20:25:00.000Z",
+    "url": "https://therecord.media/meta-new-mexico-penalty-cambridge-analytica-privacy-case",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.darkreading.com/cloud-security/marvell-microsoft-oracle-standardize-data-center-hardware-security",
+    "sourceUrl": "https://www.darkreading.com/cloud-security/marvell-microsoft-oracle-standardize-data-center-hardware-security",
+    "title": "Marvell, Microsoft, and Oracle Standardize FIPS 140-3 Level 3 HSM for Data Centers",
+    "headline": "Marvell, Microsoft, and Oracle Standardize FIPS 140-3 Level 3 HSM for Data Centers",
+    "summary": "Marvell, Microsoft, and Oracle collaborate to standardize NIST FIPS 140-3 Level 3 integrated HSM for cloud and hyperscale data center infrastructure. The initiative aims to unify hardware security modules, ensuring consistent cryptographic protection across vendors and reducing configuration drift. Stakeholders should adopt the standardized HSM design, validate compliance with FIPS 140-3, and monitor firmware updates for security patches.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-21T20:14:42.000Z",
+    "url": "https://www.darkreading.com/cloud-security/marvell-microsoft-oracle-standardize-data-center-hardware-security",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.darkreading.com/cloud-security/cloud-security-alliance-survey-data-loss-prevention-detects-data-loss",
+    "sourceUrl": "https://www.darkreading.com/cloud-security/cloud-security-alliance-survey-data-loss-prevention-detects-data-loss",
+    "title": "DLP Systems Detect Data Loss Only After It Occurs, Survey Shows",
+    "headline": "DLP Systems Detect Data Loss Only After It Occurs, Survey Shows",
+    "summary": "A recent Cloud Security Alliance survey reveals that only 16% of respondents experienced data loss prevention (DLP) blocking incidents before data left the organization. The findings indicate that most DLP deployments fail to intercept exfiltration in real time, allowing data to escape unnoticed. Organizations should evaluate DLP policies, enforce stricter monitoring, and integrate real‑time anomaly detection to improve pre‑emptive protection.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-21T20:03:14.000Z",
+    "url": "https://www.darkreading.com/cloud-security/cloud-security-alliance-survey-data-loss-prevention-detects-data-loss",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.sentinelone.com/blog/stopping-php2shell-how-sentinelone-protects-customers-from-this-attack-technique/",
     "sourceUrl": "https://www.sentinelone.com/blog/stopping-php2shell-how-sentinelone-protects-customers-from-this-attack-technique/",
     "title": "SentinelOne Blocks PHP2Shell Persistence Technique",
@@ -14,6 +107,24 @@
       {
         "source": "CrowdStrike",
         "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-protects-customers-from-php-rce-zero-days/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.malwarebytes.com/blog/news/2026/10/whatsapp-chatbot-privacy-regulators",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/whatsapp-chatbot-privacy-regulators",
+    "title": "WhatsApp Chatbot Suppressed Privacy Regulator Guidance",
+    "headline": "WhatsApp Chatbot Suppressed Privacy Regulator Guidance",
+    "summary": "WhatsApp’s chatbot received hidden directives that prevented it from recommending privacy regulators to users attempting to delete accounts. The manipulation exploits a logic flaw in the bot’s instruction parsing, allowing malicious actors to suppress compliance disclosures without triggering detection. WhatsApp has not released a patch; security teams should monitor for similar instruction tampering and enforce stricter input validation.",
+    "category": "VULNERABILITY",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "publishedAt": "2026-10-21T18:49:04.000Z",
+    "url": "https://www.malwarebytes.com/blog/news/2026/10/whatsapp-chatbot-privacy-regulators",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/whatsapp-hid-instructions-in-help-pages.html"
       }
     ]
   },
@@ -49,6 +160,24 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/",
+    "title": "Nation-State ARTEX Campaign Compromises ConnectWise Supply Chain",
+    "headline": "Nation-State ARTEX Campaign Compromises ConnectWise Supply Chain",
+    "summary": "A nation-state operation employed ARTEX agentic AI to accelerate a ConnectWise supply chain compromise, targeting Microsoft 365 application credentials. The attack chain leverages credential abuse across multiple tenant environments, exposing privileged access to corporate data without requiring initial lateral movement. Defenders should enforce strict application credential rotation, enable multi‑factor authentication, and monitor for anomalous ConnectWise activity to mitigate exploitation.",
+    "category": "NATION_STATE",
+    "severity": "HIGH",
+    "source": "Microsoft Security",
+    "publishedAt": "2026-10-21T18:23:55.000Z",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/aomei-backupper-compromised-supply-chain/"
+      }
+    ]
+  },
+  {
     "id": "https://cybersecuritynews.com/arrakis-security-report-finds-76-of-ai-agents-are-dormant-but-keep-their-credentials-and-connections/",
     "sourceUrl": "https://cybersecuritynews.com/arrakis-security-report-finds-76-of-ai-agents-are-dormant-but-keep-their-credentials-and-connections/",
     "title": "Arrakis Security Report Reveals Dormant AI Agents Retain Valid Credentials",
@@ -62,28 +191,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.securityweek.com/google-hardens-chrome-against-clickfix-attacks-insecure-http-connections/",
-    "sourceUrl": "https://www.securityweek.com/google-hardens-chrome-against-clickfix-attacks-insecure-http-connections/",
-    "title": "Google Enhances Chrome to Block ClickFix Phishing and Insecure HTTP Connections",
-    "headline": "Google Enhances Chrome to Block ClickFix Phishing and Insecure HTTP Connections",
-    "summary": "Google has added new protections to Chrome to counter ClickFix phishing attacks and insecure HTTP connections, enhancing user safety. The update introduces site warnings and server‑side Gemini analysis to detect malicious redirects and credential‑stealing attempts. Users should update Chrome to the latest version and enable the new security features to maintain protection against social engineering.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-21T17:00:00.000Z",
-    "url": "https://www.securityweek.com/google-hardens-chrome-against-clickfix-attacks-insecure-http-connections/",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/google-chrome-adds-clickfix-warnings-to.html"
-      },
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/chrome-with-gemini-ai-to-detect-update-scams/"
-      }
-    ]
-  },
-  {
     "id": "https://cybersecuritynews.com/the-ai-adoption-blind-spot-how-fake-ai-tools-put-enterprises-at-risk/",
     "sourceUrl": "https://cybersecuritynews.com/the-ai-adoption-blind-spot-how-fake-ai-tools-put-enterprises-at-risk/",
     "title": "Fake AI Tools Distribute Malware and Steal Credentials",
@@ -94,7 +201,12 @@
     "source": "Cyber Security News",
     "publishedAt": "2026-10-21T16:53:38.000Z",
     "url": "https://cybersecuritynews.com/the-ai-adoption-blind-spot-how-fake-ai-tools-put-enterprises-at-risk/",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/china-linked-hackers/"
+      }
+    ]
   },
   {
     "id": "https://www.securityweek.com/php2shell-patches-land-as-first-exploitation-attempts-hit-sensors/",
@@ -220,6 +332,24 @@
     "additionalSources": []
   },
   {
+    "id": "https://cybersecuritynews.com/litellm-compromised/",
+    "sourceUrl": "https://cybersecuritynews.com/litellm-compromised/",
+    "title": "LiteLLM 1.107.0 PyPI Release Compromised with Credential Stealer and RAT",
+    "headline": "LiteLLM 1.107.0 PyPI Release Compromised with Credential Stealer and RAT",
+    "summary": "LiteLLM version 1.107.0 was compromised on PyPI, distributing a credential stealer and remote access trojan through all seven wheel files and Docker images, exposing developer systems, build runners, and AI services. The malicious code exploits the distribution channel, enabling attackers to harvest credentials and maintain persistent remote control without user interaction. Aikido recommends immediate removal of the affected package and applying the vendor’s patched release.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-21T15:11:27.000Z",
+    "url": "https://cybersecuritynews.com/litellm-compromised/",
+    "additionalSources": [
+      {
+        "source": "Wiz Research",
+        "sourceUrl": "https://www.wiz.io/blog/litellm-compromised-steals-credentials"
+      }
+    ]
+  },
+  {
     "id": "https://blog.talosintelligence.com/two-critical-rces-in-php-core/",
     "sourceUrl": "https://blog.talosintelligence.com/two-critical-rces-in-php-core/",
     "title": "Two Critical RCEs Discovered in PHP Core",
@@ -248,6 +378,19 @@
     "source": "SecurityWeek",
     "publishedAt": "2026-10-21T15:00:00.000Z",
     "url": "https://www.securityweek.com/context-bombs-cut-ai-attack-success-by-misleading-agents-with-fake-targets/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/high-severity-flaws-exploited-in-three-days-as-ransomware-dominates-q3-rapid7/",
+    "sourceUrl": "https://www.securityweek.com/high-severity-flaws-exploited-in-three-days-as-ransomware-dominates-q3-rapid7/",
+    "title": "Rapid7 Q3 Analysis Reveals High‑Severity Flaws Exploited Within Three Days",
+    "headline": "Rapid7 Q3 Analysis Reveals High‑Severity Flaws Exploited Within Three Days",
+    "summary": "Rapid7’s Q3 analysis shows high‑severity flaws were exploited within an average of three days, highlighting rapid attack cycles. Attackers focus on vulnerabilities with CVSS scores above 7.0, using public proof‑of‑concept exploits for remote code execution. Teams must prioritize patching, enable automated scanning, and enforce least‑privilege controls to close the exploitation window.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-21T14:45:00.000Z",
+    "url": "https://www.securityweek.com/high-severity-flaws-exploited-in-three-days-as-ransomware-dominates-q3-rapid7/",
     "additionalSources": []
   },
   {
@@ -347,19 +490,6 @@
         "sourceUrl": "https://www.securityweek.com/microsoft-targets-rogue-ai-agents-with-dynamic-permissions-risk-scoring/"
       }
     ]
-  },
-  {
-    "id": "https://www.wiz.io/blog/litellm-compromised-steals-credentials",
-    "sourceUrl": "https://www.wiz.io/blog/litellm-compromised-steals-credentials",
-    "title": "Malicious LiteLLM Package Dispatched to PyPI and Docker",
-    "headline": "Malicious LiteLLM Package Dispatched to PyPI and Docker",
-    "summary": "A malicious LiteLLM package version 1.107.0 was uploaded to PyPI and Docker on October 21, targeting users of the LiteLLM library. The payload contains a credential stealer that harvests browser, cloud, and AI secrets, and includes a dormant command‑and‑control channel. Security teams should immediately remove the compromised package, update to verified LiteLLM release, and monitor for unauthorized credential exfiltration.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Wiz Research",
-    "publishedAt": "2026-10-21T13:44:12.000Z",
-    "url": "https://www.wiz.io/blog/litellm-compromised-steals-credentials",
-    "additionalSources": []
   },
   {
     "id": "https://blog.cloudflare.com/webmcp-commerce/",
@@ -466,6 +596,19 @@
         "sourceUrl": "https://cybernewsai.com/blog/cve-2026-0257-pan-os-globalprotect-auth-bypass-defense"
       }
     ]
+  },
+  {
+    "id": "https://www.schneier.com/blog/archives/2026/10/workshop-on-economics-and-information-security-weis-archive.html",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/workshop-on-economics-and-information-security-weis-archive.html",
+    "title": "WEIS Archive Releases 25 Years of Research Papers",
+    "headline": "WEIS Archive Releases 25 Years of Research Papers",
+    "summary": "The Workshop on Economics and Information Security (WEIS) has released an archive containing all papers from its 25-year history, providing a comprehensive resource for researchers. The collection includes foundational essays, such as a 2002 analysis of the economics of information security, offering insights into the field’s evolution. Users can access the archive to study historical security economics literature.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Schneier on Security",
+    "publishedAt": "2026-10-21T11:02:22.000Z",
+    "url": "https://www.schneier.com/blog/archives/2026/10/workshop-on-economics-and-information-security-weis-archive.html",
+    "additionalSources": []
   },
   {
     "id": "https://blog.talosintelligence.com/parasitizing-trust-how-legitimate-infrastructure-becomes-a-delivery-pipeline-for-attackers/",
@@ -1010,28 +1153,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.helpnetsecurity.com/2026/10/20/aomei-backupper-compromised-supply-chain/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/aomei-backupper-compromised-supply-chain/",
-    "title": "AOMEI Backupper Supply‑Chain Hijack Deploys Backdoor",
-    "headline": "AOMEI Backupper Supply‑Chain Hijack Deploys Backdoor",
-    "summary": "Between April and July 2026, attackers hijacked AOMEI Backupper servers for five to ten minutes, altering configuration files that drive the software’s update and pop‑up mechanism. The tampered files fetched malicious instructions, installing a backdoor on infected user machines. The brief, repeated hijacks evaded detection and compromised supply chain integrity.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-20T15:14:30.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/20/aomei-backupper-compromised-supply-chain/",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/aomei-backupper-compromised-in-short-burst-supply-chain-campaign/"
-      },
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/hackers-hijack-aomei-software-updates/"
-      }
-    ]
-  },
-  {
     "id": "https://cybersecuritynews.com/fbi-suspects-cybersecurity-executive-shinyhunters/",
     "sourceUrl": "https://cybersecuritynews.com/fbi-suspects-cybersecurity-executive-shinyhunters/",
     "title": "FBI Investigates Cybersecurity Executive’s Role in ShinyHunters Extortion Website",
@@ -1364,19 +1485,6 @@
     ]
   },
   {
-    "id": "https://thehackernews.com/2026/10/whatsapp-hid-instructions-in-help-pages.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/whatsapp-hid-instructions-in-help-pages.html",
-    "title": "WhatsApp Hidden Instructions Prevent Chatbot from Recommending Data Protection Authorities",
-    "headline": "WhatsApp Hidden Instructions Prevent Chatbot from Recommending Data Protection Authorities",
-    "summary": "WhatsApp’s help pages contained hidden directives instructing its support chatbot not to recommend data protection authorities to users unable to delete accounts, contradicting the company’s European privacy policy. The code‑embedded instructions were discovered and removed by October 18, exposing a policy compliance issue.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-20T11:41:06.000Z",
-    "url": "https://thehackernews.com/2026/10/whatsapp-hid-instructions-in-help-pages.html",
-    "additionalSources": []
-  },
-  {
     "id": "https://thehackernews.com/2026/10/what-security-teams-can-do-to-tame-wild.html",
     "sourceUrl": "https://thehackernews.com/2026/10/what-security-teams-can-do-to-tame-wild.html",
     "title": "Security Teams Adopt AI‑Assisted Workflow to Manage Wild Code",
@@ -1450,19 +1558,6 @@
         "sourceUrl": "https://www.bleepingcomputer.com/news/security/nikkei-discloses-third-data-breach-in-a-month-18m-records-exposed/"
       }
     ]
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/20/teradata-ai-data-security/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/teradata-ai-data-security/",
-    "title": "Teradata Introduces Post‑Quantum AI Data Security",
-    "headline": "Teradata Introduces Post‑Quantum AI Data Security",
-    "summary": "Teradata announced new AI data security features, including post‑quantum protection and immutable backups. The solution reduces raw identity exposure, enforces protection near the data, and ensures AI intelligence remains available and recoverable after incidents.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-20T10:21:39.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/20/teradata-ai-data-security/",
-    "additionalSources": []
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/10/20/extend-verify/",
@@ -5172,93 +5267,6 @@
     "source": "SecurityWeek",
     "publishedAt": "2026-10-08T14:30:00.000Z",
     "url": "https://www.securityweek.com/security-awareness-training-isnt-dead-but-it-needs-a-rethink/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/oauth-grants-pile-up-faster-than-you-can-review-them-heres-how-to-keep-up/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/oauth-grants-pile-up-faster-than-you-can-review-them-heres-how-to-keep-up/",
-    "title": "OAuth Grants Exploited in Recent Klue Breach",
-    "headline": "OAuth Grants Exploited in Recent Klue Breach",
-    "summary": "Attackers leveraged forgotten OAuth grants to access corporate data, as highlighted by the recent Klue breach. The article explains how OAuth permissions create data highways between SaaS apps, AI agents, and other tools, and offers strategies to monitor and revoke unused grants to prevent future breaches.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-08T14:00:10.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/oauth-grants-pile-up-faster-than-you-can-review-them-heres-how-to-keep-up/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/uranium-crypto-exchange-hacker-found-guilty-of-53-million-theft/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/uranium-crypto-exchange-hacker-found-guilty-of-53-million-theft/",
-    "title": "Uranium Finance Hack Convicted, $53M Stolen",
-    "headline": "Uranium Finance Hack Convicted, $53M Stolen",
-    "summary": "A Maryland man was convicted of hacking the decentralized crypto exchange Uranium Finance twice in April 2021, stealing more than $53 million. The case highlights the vulnerability of decentralized platforms to targeted attacks and the legal consequences for cybercriminals.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-08T13:18:36.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/uranium-crypto-exchange-hacker-found-guilty-of-53-million-theft/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://blog.cloudflare.com/radar-redesign/",
-    "sourceUrl": "https://blog.cloudflare.com/radar-redesign/",
-    "title": "Cloudflare Radar Redesign Enhances Accessibility for Non-Technical Users",
-    "headline": "Cloudflare Radar Redesign Enhances Accessibility for Non-Technical Users",
-    "summary": "Cloudflare has updated its Radar platform, adding an interactive map and standardized components to present real‑time global traffic and outage data. The redesign aims to make complex network insights usable for journalists, researchers, and everyday users while maintaining technical depth. No security impact reported.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "publishedAt": "2026-10-08T13:00:00.000Z",
-    "url": "https://blog.cloudflare.com/radar-redesign/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/08/scams-targeting-youtube-creators-sponsorship/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/scams-targeting-youtube-creators-sponsorship/",
-    "title": "YouTubers Targeted by Phishing Scam Using Fake Sponsorships",
-    "headline": "YouTubers Targeted by Phishing Scam Using Fake Sponsorships",
-    "summary": "Scammers impersonate brands and send personalized emails to YouTube creators, directing them to a fake collaboration platform that requests Google sign‑in. The phishing campaign tricks creators into revealing their Google account credentials, enabling attackers to access their accounts.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-08T12:41:43.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/08/scams-targeting-youtube-creators-sponsorship/",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/05/milk-dragon-phishing-fake-discounts/"
-      },
-      {
-        "source": "Malwarebytes Labs",
-        "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/asos-hackers-send-push-notifications-to-customers"
-      }
-    ]
-  },
-  {
-    "id": "https://therecord.media/russia-ukraine-malware-transportation",
-    "sourceUrl": "https://therecord.media/russia-ukraine-malware-transportation",
-    "title": "Russian-Backed Hackers Deploy Updated Malware Against Ukrainian Transport and Energy Firms",
-    "headline": "Russian-Backed Hackers Deploy Updated Malware Against Ukrainian Transport and Energy Firms",
-    "summary": "Russian-aligned hackers have released an upgraded malware strain targeting Ukrainian transportation, manufacturing, and energy companies. The malware is designed to harvest system data, indicating a persistent threat aimed at disrupting critical infrastructure. No public fix is available yet, but organizations should monitor for unusual data exfiltration activity.",
-    "category": "NATION_STATE",
-    "severity": "HIGH",
-    "source": "The Record",
-    "publishedAt": "2026-10-08T12:30:00.000Z",
-    "url": "https://therecord.media/russia-ukraine-malware-transportation",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.malwarebytes.com/blog/news/2026/10/amazon-has-an-uncomfortably-personal-profile-on-you-check-yours-now",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/amazon-has-an-uncomfortably-personal-profile-on-you-check-yours-now",
-    "title": "Amazon Collects Detailed Personal Profiles Without Consent",
-    "headline": "Amazon Collects Detailed Personal Profiles Without Consent",
-    "summary": "Amazon reportedly gathers extensive personal data—including body metrics, family details, and lifestyle information—without users’ explicit permission and offers no opt‑out mechanism. The practice raises privacy concerns as the company claims to know more about individuals than they realize. No known breach or vulnerability is reported.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "publishedAt": "2026-10-08T12:29:38.000Z",
-    "url": "https://www.malwarebytes.com/blog/news/2026/10/amazon-has-an-uncomfortably-personal-profile-on-you-check-yours-now",
     "additionalSources": []
   }
 ]

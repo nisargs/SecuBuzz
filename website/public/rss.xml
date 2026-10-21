@@ -5,8 +5,62 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Oct 2026 19:26:08 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 23:24:50 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Google Chrome Adds Gemini-Powered Scam Detection</title>
+      <link>https://secubuzz.com/news/google-chrome-adds-gemini-powered-scam-detection-7b1a7c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-chrome-adds-gemini-powered-scam-detection-7b1a7c</guid>
+      <description><![CDATA[Google Chrome introduces Gemini-powered scam detection to identify deceptive websites and alert users when they copy suspicious commands from ClickFix attacks. The new feature leverages Gemini’s language model to analyze site content and user actions, flagging potential phishing or malicious copy‑paste behaviors. Chrome will ship the update in the next release, providing users with real‑time protection against emerging social‑engineering threats.]]></description>
+      <pubDate>Wed, 21 Oct 2026 22:16:26 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/google/google-chrome-adds-gemini-powered-scam-detection-warns-users-of-clickfix-attacks/">BleepingComputer</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Onamae Desktop Cloud Breach Affects 26,739 Servers</title>
+      <link>https://secubuzz.com/news/onamae-desktop-cloud-breach-affects-26-739-servers-3354a3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/onamae-desktop-cloud-breach-affects-26-739-servers-3354a3</guid>
+      <description><![CDATA[Hackers breached Japan’s Onamae Desktop Cloud, compromising the infrastructure of a popular VPS provider and installing malware on up to 26,739 customer servers. The attack leveraged unauthorized access to the cloud management platform, enabling widespread distribution of malicious code across virtual machines. Onamae has issued a patch and urged customers to update credentials and scan for infections.]]></description>
+      <pubDate>Wed, 21 Oct 2026 21:43:27 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/japans-onamae-desktop-cloud-hacked-up-to-27-000-servers-affected/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Lazarus Employs Post‑Quantum Cryptography for Malware Delivery</title>
+      <link>https://secubuzz.com/news/lazarus-employs-post-quantum-cryptography-for-malw-67e918</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/lazarus-employs-post-quantum-cryptography-for-malw-67e918</guid>
+      <description><![CDATA[Lazarus hackers are leveraging a post‑quantum cryptographic mechanism to secure malicious payload delivery in new operations that combine legacy and contemporary malware. The technique relies on quantum‑safe key exchange to obfuscate command and control traffic, potentially evading traditional signature‑based detection. Security teams should monitor for anomalous encrypted traffic and update endpoint detection tools to recognize quantum‑cryptographic signatures.]]></description>
+      <pubDate>Wed, 21 Oct 2026 20:31:48 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/lazarus-hackers-use-post-quantum-cryptography-for-malware-delivery/">BleepingComputer</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Meta Faces $25B Penalty Under New Mexico Privacy Ruling</title>
+      <link>https://secubuzz.com/news/meta-faces-25b-penalty-under-new-mexico-privacy-ru-50f0d6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/meta-faces-25b-penalty-under-new-mexico-privacy-ru-50f0d6</guid>
+      <description><![CDATA[Meta faces $25B penalty under New Mexico privacy ruling, citing legacy Cambridge Analytica data misuse. The ruling highlights ongoing regulatory scrutiny over Meta's data handling practices, with financial impact tied to past privacy violations. Meta must comply with New Mexico privacy requirements, update privacy policies, and monitor enforcement actions continuously.]]></description>
+      <pubDate>Wed, 21 Oct 2026 20:25:00 GMT</pubDate>
+      <source url="https://therecord.media/meta-new-mexico-penalty-cambridge-analytica-privacy-case">The Record</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Marvell, Microsoft, and Oracle Standardize FIPS 140-3 Level 3 HSM for Data Centers</title>
+      <link>https://secubuzz.com/news/marvell-microsoft-and-oracle-standardize-fips-140-722b58</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/marvell-microsoft-and-oracle-standardize-fips-140-722b58</guid>
+      <description><![CDATA[Marvell, Microsoft, and Oracle collaborate to standardize NIST FIPS 140-3 Level 3 integrated HSM for cloud and hyperscale data center infrastructure. The initiative aims to unify hardware security modules, ensuring consistent cryptographic protection across vendors and reducing configuration drift. Stakeholders should adopt the standardized HSM design, validate compliance with FIPS 140-3, and monitor firmware updates for security patches.]]></description>
+      <pubDate>Wed, 21 Oct 2026 20:14:42 GMT</pubDate>
+      <source url="https://www.darkreading.com/cloud-security/marvell-microsoft-oracle-standardize-data-center-hardware-security">Dark Reading</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>DLP Systems Detect Data Loss Only After It Occurs, Survey Shows</title>
+      <link>https://secubuzz.com/news/dlp-systems-detect-data-loss-only-after-it-occurs-1a7745</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/dlp-systems-detect-data-loss-only-after-it-occurs-1a7745</guid>
+      <description><![CDATA[A recent Cloud Security Alliance survey reveals that only 16% of respondents experienced data loss prevention (DLP) blocking incidents before data left the organization. The findings indicate that most DLP deployments fail to intercept exfiltration in real time, allowing data to escape unnoticed. Organizations should evaluate DLP policies, enforce stricter monitoring, and integrate real‑time anomaly detection to improve pre‑emptive protection.]]></description>
+      <pubDate>Wed, 21 Oct 2026 20:03:14 GMT</pubDate>
+      <source url="https://www.darkreading.com/cloud-security/cloud-security-alliance-survey-data-loss-prevention-detects-data-loss">Dark Reading</source>
+      <category>Cloud</category>
+    </item>
     <item>
       <title>SentinelOne Blocks PHP2Shell Persistence Technique</title>
       <link>https://secubuzz.com/news/sentinelone-blocks-php2shell-persistence-technique-245b12</link>
@@ -14,6 +68,15 @@
       <description><![CDATA[Attackers use PHP2Shell to spawn a web worker that executes arbitrary PHP code, enabling persistence on compromised web servers. The Singularity Agent detects this post‑exploitation activity by monitoring process trees, terminating malicious workers, and hunting for related artifacts, stopping lateral movement. Deploy the latest SentinelOne Singularity Agent, enable web worker monitoring, and apply vendor updates to secure against PHP2Shell.]]></description>
       <pubDate>Wed, 21 Oct 2026 19:21:11 GMT</pubDate>
       <source url="https://www.sentinelone.com/blog/stopping-php2shell-how-sentinelone-protects-customers-from-this-attack-technique/">SentinelOne</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>WhatsApp Chatbot Suppressed Privacy Regulator Guidance</title>
+      <link>https://secubuzz.com/news/whatsapp-chatbot-suppressed-privacy-regulator-guid-1b403a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/whatsapp-chatbot-suppressed-privacy-regulator-guid-1b403a</guid>
+      <description><![CDATA[WhatsApp’s chatbot received hidden directives that prevented it from recommending privacy regulators to users attempting to delete accounts. The manipulation exploits a logic flaw in the bot’s instruction parsing, allowing malicious actors to suppress compliance disclosures without triggering detection. WhatsApp has not released a patch; security teams should monitor for similar instruction tampering and enforce stricter input validation.]]></description>
+      <pubDate>Wed, 21 Oct 2026 18:49:04 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/news/2026/10/whatsapp-chatbot-privacy-regulators">Malwarebytes Labs</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -35,21 +98,21 @@
       <category>Malware</category>
     </item>
     <item>
+      <title>Nation-State ARTEX Campaign Compromises ConnectWise Supply Chain</title>
+      <link>https://secubuzz.com/news/nation-state-artex-campaign-compromises-connectwis-53ef2b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/nation-state-artex-campaign-compromises-connectwis-53ef2b</guid>
+      <description><![CDATA[A nation-state operation employed ARTEX agentic AI to accelerate a ConnectWise supply chain compromise, targeting Microsoft 365 application credentials. The attack chain leverages credential abuse across multiple tenant environments, exposing privileged access to corporate data without requiring initial lateral movement. Defenders should enforce strict application credential rotation, enable multi‑factor authentication, and monitor for anomalous ConnectWise activity to mitigate exploitation.]]></description>
+      <pubDate>Wed, 21 Oct 2026 18:23:55 GMT</pubDate>
+      <source url="https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/">Microsoft Security</source>
+      <category>Malware</category>
+    </item>
+    <item>
       <title>Arrakis Security Report Reveals Dormant AI Agents Retain Valid Credentials</title>
       <link>https://secubuzz.com/news/arrakis-security-report-reveals-dormant-ai-agents-a25eaa</link>
       <guid isPermaLink="true">https://secubuzz.com/news/arrakis-security-report-reveals-dormant-ai-agents-a25eaa</guid>
       <description><![CDATA[Arrakis Security’s 2026 Autonomous Agents Threat Report shows 76% of AI agents have been inactive for 60 days, yet their credentials remain valid and triggers still fire. Dormant agents can be reactivated by attackers, enabling credential reuse and unauthorized access to connected services. Teams should audit credentials, enforce rotation, and monitor trigger activity to mitigate exploitation.]]></description>
       <pubDate>Wed, 21 Oct 2026 17:05:59 GMT</pubDate>
       <source url="https://cybersecuritynews.com/arrakis-security-report-finds-76-of-ai-agents-are-dormant-but-keep-their-credentials-and-connections/">Cyber Security News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Google Enhances Chrome to Block ClickFix Phishing and Insecure HTTP Connections</title>
-      <link>https://secubuzz.com/news/google-enhances-chrome-to-block-clickfix-phishing-fd03a4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-enhances-chrome-to-block-clickfix-phishing-fd03a4</guid>
-      <description><![CDATA[Google has added new protections to Chrome to counter ClickFix phishing attacks and insecure HTTP connections, enhancing user safety. The update introduces site warnings and server‑side Gemini analysis to detect malicious redirects and credential‑stealing attempts. Users should update Chrome to the latest version and enable the new security features to maintain protection against social engineering.]]></description>
-      <pubDate>Wed, 21 Oct 2026 17:00:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/google-hardens-chrome-against-clickfix-attacks-insecure-http-connections/">SecurityWeek</source>
       <category>Policy</category>
     </item>
     <item>
@@ -134,6 +197,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>LiteLLM 1.107.0 PyPI Release Compromised with Credential Stealer and RAT</title>
+      <link>https://secubuzz.com/news/litellm-1-107-0-pypi-release-compromised-with-cred-1de743</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/litellm-1-107-0-pypi-release-compromised-with-cred-1de743</guid>
+      <description><![CDATA[LiteLLM version 1.107.0 was compromised on PyPI, distributing a credential stealer and remote access trojan through all seven wheel files and Docker images, exposing developer systems, build runners, and AI services. The malicious code exploits the distribution channel, enabling attackers to harvest credentials and maintain persistent remote control without user interaction. Aikido recommends immediate removal of the affected package and applying the vendor’s patched release.]]></description>
+      <pubDate>Wed, 21 Oct 2026 15:11:27 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/litellm-compromised/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Two Critical RCEs Discovered in PHP Core</title>
       <link>https://secubuzz.com/news/two-critical-rces-discovered-in-php-core-4954ee</link>
       <guid isPermaLink="true">https://secubuzz.com/news/two-critical-rces-discovered-in-php-core-4954ee</guid>
@@ -150,6 +222,15 @@
       <pubDate>Wed, 21 Oct 2026 15:00:00 GMT</pubDate>
       <source url="https://www.securityweek.com/context-bombs-cut-ai-attack-success-by-misleading-agents-with-fake-targets/">SecurityWeek</source>
       <category>Policy</category>
+    </item>
+    <item>
+      <title>Rapid7 Q3 Analysis Reveals High‑Severity Flaws Exploited Within Three Days</title>
+      <link>https://secubuzz.com/news/rapid7-q3-analysis-reveals-high-severity-flaws-exp-14296c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rapid7-q3-analysis-reveals-high-severity-flaws-exp-14296c</guid>
+      <description><![CDATA[Rapid7’s Q3 analysis shows high‑severity flaws were exploited within an average of three days, highlighting rapid attack cycles. Attackers focus on vulnerabilities with CVSS scores above 7.0, using public proof‑of‑concept exploits for remote code execution. Teams must prioritize patching, enable automated scanning, and enforce least‑privilege controls to close the exploitation window.]]></description>
+      <pubDate>Wed, 21 Oct 2026 14:45:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/high-severity-flaws-exploited-in-three-days-as-ransomware-dominates-q3-rapid7/">SecurityWeek</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>PHP Vulnerabilities Prompt Global Patch Release</title>
@@ -204,15 +285,6 @@
       <pubDate>Wed, 21 Oct 2026 13:52:23 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/21/nvidia-openshell-reference-architecture/">Help Net Security</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Malicious LiteLLM Package Dispatched to PyPI and Docker</title>
-      <link>https://secubuzz.com/news/malicious-litellm-package-dispatched-to-pypi-and-d-7788c0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/malicious-litellm-package-dispatched-to-pypi-and-d-7788c0</guid>
-      <description><![CDATA[A malicious LiteLLM package version 1.107.0 was uploaded to PyPI and Docker on October 21, targeting users of the LiteLLM library. The payload contains a credential stealer that harvests browser, cloud, and AI secrets, and includes a dormant command‑and‑control channel. Security teams should immediately remove the compromised package, update to verified LiteLLM release, and monitor for unauthorized credential exfiltration.]]></description>
-      <pubDate>Wed, 21 Oct 2026 13:44:12 GMT</pubDate>
-      <source url="https://www.wiz.io/blog/litellm-compromised-steals-credentials">Wiz Research</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>Commerce.com and Cloudflare Enable AI Agents Across 100,000 Storefronts</title>
@@ -276,6 +348,15 @@
       <pubDate>Wed, 21 Oct 2026 11:13:39 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/21/ransomware-groups-exploit-palo-alto-globalprotect-cve-2026-0257/">Help Net Security</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>WEIS Archive Releases 25 Years of Research Papers</title>
+      <link>https://secubuzz.com/news/weis-archive-releases-25-years-of-research-papers-2eaac9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/weis-archive-releases-25-years-of-research-papers-2eaac9</guid>
+      <description><![CDATA[The Workshop on Economics and Information Security (WEIS) has released an archive containing all papers from its 25-year history, providing a comprehensive resource for researchers. The collection includes foundational essays, such as a 2002 analysis of the economics of information security, offering insights into the field’s evolution. Users can access the archive to study historical security economics literature.]]></description>
+      <pubDate>Wed, 21 Oct 2026 11:02:22 GMT</pubDate>
+      <source url="https://www.schneier.com/blog/archives/2026/10/workshop-on-economics-and-information-security-weis-archive.html">Schneier on Security</source>
+      <category>Policy</category>
     </item>
     <item>
       <title>Legitimate Platforms Coerced into Attack Delivery Channels</title>
@@ -375,87 +456,6 @@
       <pubDate>Wed, 21 Oct 2026 07:44:22 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/state-bank-of-india-confirms-data-leak.html">The Hacker News</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Top 10 Best Data Privacy Management Software in 2026</title>
-      <link>https://secubuzz.com/news/top-10-best-data-privacy-management-software-in-20-7bc84a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/top-10-best-data-privacy-management-software-in-20-7bc84a</guid>
-      <description><![CDATA[Data privacy management platforms address the challenge of locating and deleting personal data, a requirement intensified by expanding state regulations and AI governance. The article evaluates ten solutions on discovery depth, DSAR automation, consent orchestration, and mid‑market suitability. Enterprises should adopt these tools to meet tighter DSAR deadlines and regulatory compliance.]]></description>
-      <pubDate>Wed, 21 Oct 2026 07:35:51 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/best-data-privacy-management/">Cyber Security News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>CISA Adds Plex2Shell SSRF Vulnerability to Known Exploited Vulnerabilities Catalog</title>
-      <link>https://secubuzz.com/news/cisa-adds-plex2shell-ssrf-vulnerability-to-known-e-4e40a4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-plex2shell-ssrf-vulnerability-to-known-e-4e40a4</guid>
-      <description><![CDATA[CISA added four vulnerabilities to its Known Exploited Vulnerabilities catalog, including Plex2Shell SSRF in Plex Media Server (CVE-2026-96652, CVSS 5.3). The SSRF flaw allows attackers to request arbitrary internal URLs, potentially exposing sensitive data or facilitating lateral movement. CISA urges all affected agencies to apply vendor patches immediately and enable network segmentation to mitigate exploitation.]]></description>
-      <pubDate>Wed, 21 Oct 2026 07:26:49 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Hackers Embed Vasilek Backdoor in VMware Tools on Russian Healthcare Network</title>
-      <link>https://secubuzz.com/news/hackers-embed-vasilek-backdoor-in-vmware-tools-on-6adb8d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-embed-vasilek-backdoor-in-vmware-tools-on-6adb8d</guid>
-      <description><![CDATA[Hackers embedded a Vasilek backdoor within VMware Tools on a Russian healthcare network, exploiting the virtualization platform to maintain persistence. Attributed to the Belarus‑aligned Partisan Zmiy cluster, the backdoor operated for nearly two years, enabling stealthy lateral movement and data exfiltration. Mitigation requires disabling VMware Tools on critical hosts, applying vendor patches, and monitoring for anomalous process execution.]]></description>
-      <pubDate>Wed, 21 Oct 2026 06:05:15 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/hackers-hid-vasilek-backdoor-in-vmware.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Modern Cardiac Monitoring Transmits ECG Data to Cloud</title>
-      <link>https://secubuzz.com/news/modern-cardiac-monitoring-transmits-ecg-data-to-cl-19e7e4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/modern-cardiac-monitoring-transmits-ecg-data-to-cl-19e7e4</guid>
-      <description><![CDATA[A modern cardiac monitoring system transmits ECG data from wearable devices to cloud services for remote cardiologist review. The shift introduces new privacy risks as data travels through mobile gateways and cloud storage, exposing it to potential interception or misuse. Healthcare providers must enforce end‑to‑end encryption, secure gateway authentication, and compliance with data‑protection regulations to mitigate these risks.]]></description>
-      <pubDate>Wed, 21 Oct 2026 06:00:35 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/21/ecg-heart-data-privacy-preserving-ai/">Help Net Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>OpenAI Expands ChatGPT Chrome Extension to Read All Open Tabs</title>
-      <link>https://secubuzz.com/news/openai-expands-chatgpt-chrome-extension-to-read-al-3dfc62</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-expands-chatgpt-chrome-extension-to-read-al-3dfc62</guid>
-      <description><![CDATA[OpenAI expanded its ChatGPT Chrome extension, enabling the assistant to read and analyze content across all open browser tabs. The update adds tools for comparing page content, filling forms, sending messages, and organizing tabs, moving beyond single‑page queries. Users should review privacy settings, grant only necessary permissions, and stay informed of future policy changes.]]></description>
-      <pubDate>Wed, 21 Oct 2026 05:48:00 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/chatgpt-chrome-extension-analyze-content/">Cyber Security News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>DevGuard Consolidates Vulnerability Findings into a Single Dashboard</title>
-      <link>https://secubuzz.com/news/devguard-consolidates-vulnerability-findings-into-eacd25</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/devguard-consolidates-vulnerability-findings-into-eacd25</guid>
-      <description><![CDATA[DevGuard is an open‑source platform that aggregates security findings across a software project into a single dashboard. It consolidates secret scanning, static analysis, dependency checks against known CVEs, IaC validation, container scanning, and license compliance into one command‑line interface. Teams can self‑host DevGuard to prioritize risks and track remediation, improving supply‑chain security posture.]]></description>
-      <pubDate>Wed, 21 Oct 2026 05:30:45 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/21/devguard-open-source-vulnerability-management/">Help Net Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>TeamUpdraft Compromise Enables Malicious Plugin Deployment on WordPress Sites</title>
-      <link>https://secubuzz.com/news/teamupdraft-compromise-enables-malicious-plugin-de-3a97e1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/teamupdraft-compromise-enables-malicious-plugin-de-3a97e1</guid>
-      <description><![CDATA[TeamUpdraft, the UpdraftPlus backup plugin developer, suffered a website breach exposing remote management keys, which attackers leveraged to install malicious plugins on connected WordPress sites. The flaw allowed unauthorized code execution via compromised management credentials, enabling widespread site compromise. A patch for the compromised keys is available; administrators should revoke exposed keys and apply the latest security update.]]></description>
-      <pubDate>Wed, 21 Oct 2026 05:01:41 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/wordpress-plugin-developer-hacked/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>AI Adoption in SOCs Requires Vigilance Against Shadow AI and Permission Misconfigurations</title>
-      <link>https://secubuzz.com/news/ai-adoption-in-socs-requires-vigilance-against-sha-25fa17</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-adoption-in-socs-requires-vigilance-against-sha-25fa17</guid>
-      <description><![CDATA[AI integration in security operations centers introduces shadow AI risks and loose permission configurations that attackers can exploit. The discussion highlights how large language models assist in vulnerability analysis, SIEM rule creation, and packet metadata analysis, potentially accelerating detection workflows. Security teams should audit AI-driven permissions and monitor for anomalous model behavior to mitigate misuse.]]></description>
-      <pubDate>Wed, 21 Oct 2026 04:30:13 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/21/bringing-ai-into-the-soc-video/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Accenture, Dragos, and SANS Announce $10M Program to Fortify Small U.S. Utilities</title>
-      <link>https://secubuzz.com/news/accenture-dragos-and-sans-announce-10m-program-to-6babad</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/accenture-dragos-and-sans-announce-10m-program-to-6babad</guid>
-      <description><![CDATA[The $10M initiative targets up to 500 small utilities, providing free security tools, equipment, deployment assistance, and training. The program aims to strengthen operational technology defenses across the U.S. utilities sector by delivering comprehensive cybersecurity resources. Participants should engage with the offered tools and training modules to enhance their security posture.]]></description>
-      <pubDate>Wed, 21 Oct 2026 04:22:11 GMT</pubDate>
-      <source url="https://www.securityweek.com/accenture-dragos-sans-launch-10m-initiative-to-defend-small-us-utilities/">SecurityWeek</source>
-      <category>Policy</category>
     </item>
   </channel>
 </rss>

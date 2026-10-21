@@ -11,6 +11,112 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "google-chrome-adds-gemini-powered-scam-detection-7b1a7c",
+    "title": "Google Chrome Adds Gemini-Powered Scam Detection",
+    "summary": "Google Chrome introduces Gemini-powered scam detection to identify deceptive websites and alert users when they copy suspicious commands from ClickFix attacks. The new feature leverages Gemini’s language model to analyze site content and user actions, flagging potential phishing or malicious copy‑paste behaviors. Chrome will ship the update in the next release, providing users with real‑time protection against emerging social‑engineering threats.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/google/google-chrome-adds-gemini-powered-scam-detection-warns-users-of-clickfix-attacks/",
+    "publishedAt": "2026-10-21T22:16:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-chrome-adds-gemini-powered-scam-detection",
+      "article-7b1a7c",
+      "7b1a7c"
+    ]
+  },
+  {
+    "slug": "onamae-desktop-cloud-breach-affects-26-739-servers-3354a3",
+    "title": "Onamae Desktop Cloud Breach Affects 26,739 Servers",
+    "summary": "Hackers breached Japan’s Onamae Desktop Cloud, compromising the infrastructure of a popular VPS provider and installing malware on up to 26,739 customer servers. The attack leveraged unauthorized access to the cloud management platform, enabling widespread distribution of malicious code across virtual machines. Onamae has issued a patch and urged customers to update credentials and scan for infections.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/japans-onamae-desktop-cloud-hacked-up-to-27-000-servers-affected/",
+    "publishedAt": "2026-10-21T21:43:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "onamae-desktop-cloud-breach-affects-26-739-servers",
+      "article-3354a3",
+      "3354a3"
+    ]
+  },
+  {
+    "slug": "lazarus-employs-post-quantum-cryptography-for-malw-67e918",
+    "title": "Lazarus Employs Post‑Quantum Cryptography for Malware Delivery",
+    "summary": "Lazarus hackers are leveraging a post‑quantum cryptographic mechanism to secure malicious payload delivery in new operations that combine legacy and contemporary malware. The technique relies on quantum‑safe key exchange to obfuscate command and control traffic, potentially evading traditional signature‑based detection. Security teams should monitor for anomalous encrypted traffic and update endpoint detection tools to recognize quantum‑cryptographic signatures.",
+    "category": "Malware",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-use-post-quantum-cryptography-for-malware-delivery/",
+    "publishedAt": "2026-10-21T20:31:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "lazarus-employs-post-quantum-cryptography-for-malw",
+      "article-67e918",
+      "67e918",
+      "lazarus-employs-post-quantum-cryptography-for-malware-delive"
+    ]
+  },
+  {
+    "slug": "meta-faces-25b-penalty-under-new-mexico-privacy-ru-50f0d6",
+    "title": "Meta Faces $25B Penalty Under New Mexico Privacy Ruling",
+    "summary": "Meta faces $25B penalty under New Mexico privacy ruling, citing legacy Cambridge Analytica data misuse. The ruling highlights ongoing regulatory scrutiny over Meta's data handling practices, with financial impact tied to past privacy violations. Meta must comply with New Mexico privacy requirements, update privacy policies, and monitor enforcement actions continuously.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/meta-new-mexico-penalty-cambridge-analytica-privacy-case",
+    "publishedAt": "2026-10-21T20:25:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "meta-faces-25b-penalty-under-new-mexico-privacy-ru",
+      "article-50f0d6",
+      "50f0d6",
+      "meta-faces-25b-penalty-under-new-mexico-privacy-ruling"
+    ]
+  },
+  {
+    "slug": "marvell-microsoft-and-oracle-standardize-fips-140-722b58",
+    "title": "Marvell, Microsoft, and Oracle Standardize FIPS 140-3 Level 3 HSM for Data Centers",
+    "summary": "Marvell, Microsoft, and Oracle collaborate to standardize NIST FIPS 140-3 Level 3 integrated HSM for cloud and hyperscale data center infrastructure. The initiative aims to unify hardware security modules, ensuring consistent cryptographic protection across vendors and reducing configuration drift. Stakeholders should adopt the standardized HSM design, validate compliance with FIPS 140-3, and monitor firmware updates for security patches.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cloud-security/marvell-microsoft-oracle-standardize-data-center-hardware-security",
+    "publishedAt": "2026-10-21T20:14:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "marvell-microsoft-and-oracle-standardize-fips-140",
+      "article-722b58",
+      "722b58",
+      "marvell-microsoft-and-oracle-standardize-fips-140-3-level-3-"
+    ]
+  },
+  {
+    "slug": "dlp-systems-detect-data-loss-only-after-it-occurs-1a7745",
+    "title": "DLP Systems Detect Data Loss Only After It Occurs, Survey Shows",
+    "summary": "A recent Cloud Security Alliance survey reveals that only 16% of respondents experienced data loss prevention (DLP) blocking incidents before data left the organization. The findings indicate that most DLP deployments fail to intercept exfiltration in real time, allowing data to escape unnoticed. Organizations should evaluate DLP policies, enforce stricter monitoring, and integrate real‑time anomaly detection to improve pre‑emptive protection.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cloud-security/cloud-security-alliance-survey-data-loss-prevention-detects-data-loss",
+    "publishedAt": "2026-10-21T20:03:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "dlp-systems-detect-data-loss-only-after-it-occurs",
+      "article-1a7745",
+      "1a7745",
+      "dlp-systems-detect-data-loss-only-after-it-occurs-survey-sho"
+    ]
+  },
+  {
     "slug": "sentinelone-blocks-php2shell-persistence-technique-245b12",
     "title": "SentinelOne Blocks PHP2Shell Persistence Technique",
     "summary": "Attackers use PHP2Shell to spawn a web worker that executes arbitrary PHP code, enabling persistence on compromised web servers. The Singularity Agent detects this post‑exploitation activity by monitoring process trees, terminating malicious workers, and hunting for related artifacts, stopping lateral movement. Deploy the latest SentinelOne Singularity Agent, enable web worker monitoring, and apply vendor updates to secure against PHP2Shell.",
@@ -25,6 +131,24 @@ export const news: NewsBrief[] = [
       "sentinelone-blocks-php2shell-persistence-technique",
       "article-245b12",
       "245b12"
+    ]
+  },
+  {
+    "slug": "whatsapp-chatbot-suppressed-privacy-regulator-guid-1b403a",
+    "title": "WhatsApp Chatbot Suppressed Privacy Regulator Guidance",
+    "summary": "WhatsApp’s chatbot received hidden directives that prevented it from recommending privacy regulators to users attempting to delete accounts. The manipulation exploits a logic flaw in the bot’s instruction parsing, allowing malicious actors to suppress compliance disclosures without triggering detection. WhatsApp has not released a patch; security teams should monitor for similar instruction tampering and enforce stricter input validation.",
+    "category": "Vulnerability",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/whatsapp-chatbot-privacy-regulators",
+    "publishedAt": "2026-10-21T18:49:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "whatsapp-chatbot-suppressed-privacy-regulator-guid",
+      "article-1b403a",
+      "1b403a",
+      "whatsapp-chatbot-suppressed-privacy-regulator-guidance"
     ]
   },
   {
@@ -64,6 +188,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "nation-state-artex-campaign-compromises-connectwis-53ef2b",
+    "title": "Nation-State ARTEX Campaign Compromises ConnectWise Supply Chain",
+    "summary": "A nation-state operation employed ARTEX agentic AI to accelerate a ConnectWise supply chain compromise, targeting Microsoft 365 application credentials. The attack chain leverages credential abuse across multiple tenant environments, exposing privileged access to corporate data without requiring initial lateral movement. Defenders should enforce strict application credential rotation, enable multi‑factor authentication, and monitor for anomalous ConnectWise activity to mitigate exploitation.",
+    "category": "Malware",
+    "severity": "HIGH",
+    "source": "Microsoft Security",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/",
+    "publishedAt": "2026-10-21T18:23:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "nation-state-artex-campaign-compromises-connectwis",
+      "article-53ef2b",
+      "53ef2b",
+      "nation-state-artex-campaign-compromises-connectwise-supply-c"
+    ]
+  },
+  {
     "slug": "arrakis-security-report-reveals-dormant-ai-agents-a25eaa",
     "title": "Arrakis Security Report Reveals Dormant AI Agents Retain Valid Credentials",
     "summary": "Arrakis Security’s 2026 Autonomous Agents Threat Report shows 76% of AI agents have been inactive for 60 days, yet their credentials remain valid and triggers still fire. Dormant agents can be reactivated by attackers, enabling credential reuse and unauthorized access to connected services. Teams should audit credentials, enforce rotation, and monitor trigger activity to mitigate exploitation.",
@@ -79,24 +221,6 @@ export const news: NewsBrief[] = [
       "article-a25eaa",
       "a25eaa",
       "arrakis-security-report-reveals-dormant-ai-agents-retain-val"
-    ]
-  },
-  {
-    "slug": "google-enhances-chrome-to-block-clickfix-phishing-fd03a4",
-    "title": "Google Enhances Chrome to Block ClickFix Phishing and Insecure HTTP Connections",
-    "summary": "Google has added new protections to Chrome to counter ClickFix phishing attacks and insecure HTTP connections, enhancing user safety. The update introduces site warnings and server‑side Gemini analysis to detect malicious redirects and credential‑stealing attempts. Users should update Chrome to the latest version and enable the new security features to maintain protection against social engineering.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/google-hardens-chrome-against-clickfix-attacks-insecure-http-connections/",
-    "publishedAt": "2026-10-21T17:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-enhances-chrome-to-block-clickfix-phishing",
-      "article-fd03a4",
-      "fd03a4",
-      "google-enhances-chrome-to-block-clickfix-phishing-and-insecu"
     ]
   },
   {
@@ -265,6 +389,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "litellm-1-107-0-pypi-release-compromised-with-cred-1de743",
+    "title": "LiteLLM 1.107.0 PyPI Release Compromised with Credential Stealer and RAT",
+    "summary": "LiteLLM version 1.107.0 was compromised on PyPI, distributing a credential stealer and remote access trojan through all seven wheel files and Docker images, exposing developer systems, build runners, and AI services. The malicious code exploits the distribution channel, enabling attackers to harvest credentials and maintain persistent remote control without user interaction. Aikido recommends immediate removal of the affected package and applying the vendor’s patched release.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/litellm-compromised/",
+    "publishedAt": "2026-10-21T15:11:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "litellm-1-107-0-pypi-release-compromised-with-cred",
+      "article-1de743",
+      "1de743",
+      "litellm-1-107-0-pypi-release-compromised-with-credential-ste"
+    ]
+  },
+  {
     "slug": "two-critical-rces-discovered-in-php-core-4954ee",
     "title": "Two Critical RCEs Discovered in PHP Core",
     "summary": "Two critical remote code execution vulnerabilities were discovered in PHP core, potentially affecting all PHP-based applications across the ecosystem. The flaws arise from improper input validation in the parser, allowing unauthenticated attackers to execute arbitrary code and are actively exploitable. A patch is available from the PHP team; administrators should apply it immediately and monitor logs for suspicious activity.",
@@ -296,6 +438,24 @@ export const news: NewsBrief[] = [
       "context-bombs-reduce-ai-attack-success-by-91",
       "article-20f53f",
       "20f53f"
+    ]
+  },
+  {
+    "slug": "rapid7-q3-analysis-reveals-high-severity-flaws-exp-14296c",
+    "title": "Rapid7 Q3 Analysis Reveals High‑Severity Flaws Exploited Within Three Days",
+    "summary": "Rapid7’s Q3 analysis shows high‑severity flaws were exploited within an average of three days, highlighting rapid attack cycles. Attackers focus on vulnerabilities with CVSS scores above 7.0, using public proof‑of‑concept exploits for remote code execution. Teams must prioritize patching, enable automated scanning, and enforce least‑privilege controls to close the exploitation window.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/high-severity-flaws-exploited-in-three-days-as-ransomware-dominates-q3-rapid7/",
+    "publishedAt": "2026-10-21T14:45:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rapid7-q3-analysis-reveals-high-severity-flaws-exp",
+      "article-14296c",
+      "14296c",
+      "rapid7-q3-analysis-reveals-high-severity-flaws-exploited-wit"
     ]
   },
   {
@@ -401,24 +561,6 @@ export const news: NewsBrief[] = [
       "article-6a71bb",
       "6a71bb",
       "nvidia-introduces-openshell-architecture-to-contain-ai-agent"
-    ]
-  },
-  {
-    "slug": "malicious-litellm-package-dispatched-to-pypi-and-d-7788c0",
-    "title": "Malicious LiteLLM Package Dispatched to PyPI and Docker",
-    "summary": "A malicious LiteLLM package version 1.107.0 was uploaded to PyPI and Docker on October 21, targeting users of the LiteLLM library. The payload contains a credential stealer that harvests browser, cloud, and AI secrets, and includes a dormant command‑and‑control channel. Security teams should immediately remove the compromised package, update to verified LiteLLM release, and monitor for unauthorized credential exfiltration.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Wiz Research",
-    "sourceUrl": "https://www.wiz.io/blog/litellm-compromised-steals-credentials",
-    "publishedAt": "2026-10-21T13:44:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "malicious-litellm-package-dispatched-to-pypi-and-d",
-      "article-7788c0",
-      "7788c0",
-      "malicious-litellm-package-dispatched-to-pypi-and-docker"
     ]
   },
   {
@@ -547,6 +689,23 @@ export const news: NewsBrief[] = [
       "article-54fa4d",
       "54fa4d",
       "ransomware-exploits-cve-2026-0257-in-palo-alto-globalprotect"
+    ]
+  },
+  {
+    "slug": "weis-archive-releases-25-years-of-research-papers-2eaac9",
+    "title": "WEIS Archive Releases 25 Years of Research Papers",
+    "summary": "The Workshop on Economics and Information Security (WEIS) has released an archive containing all papers from its 25-year history, providing a comprehensive resource for researchers. The collection includes foundational essays, such as a 2002 analysis of the economics of information security, offering insights into the field’s evolution. Users can access the archive to study historical security economics literature.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/workshop-on-economics-and-information-security-weis-archive.html",
+    "publishedAt": "2026-10-21T11:02:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "weis-archive-releases-25-years-of-research-papers",
+      "article-2eaac9",
+      "2eaac9"
     ]
   },
   {
@@ -1161,24 +1320,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "aomei-backupper-supply-chain-hijack-deploys-backdo-5eea94",
-    "title": "AOMEI Backupper Supply‑Chain Hijack Deploys Backdoor",
-    "summary": "Between April and July 2026, attackers hijacked AOMEI Backupper servers for five to ten minutes, altering configuration files that drive the software’s update and pop‑up mechanism. The tampered files fetched malicious instructions, installing a backdoor on infected user machines. The brief, repeated hijacks evaded detection and compromised supply chain integrity.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/aomei-backupper-compromised-supply-chain/",
-    "publishedAt": "2026-10-20T15:14:30.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "aomei-backupper-supply-chain-hijack-deploys-backdo",
-      "article-5eea94",
-      "5eea94",
-      "aomei-backupper-supply-chain-hijack-deploys-backdoor"
-    ]
-  },
-  {
     "slug": "fbi-investigates-cybersecurity-executive-s-role-in-8118ff",
     "title": "FBI Investigates Cybersecurity Executive’s Role in ShinyHunters Extortion Website",
     "summary": "Federal investigators allege a cybersecurity executive at a U.S. consulting firm aided ShinyHunters in operating an extortion website that pressured hacked companies into paying ransom demands. The site allegedly facilitated ransomware demands for stolen data, raising concerns about trusted advisors turning to criminal support.",
@@ -1592,24 +1733,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "whatsapp-hidden-instructions-prevent-chatbot-from-61de53",
-    "title": "WhatsApp Hidden Instructions Prevent Chatbot from Recommending Data Protection Authorities",
-    "summary": "WhatsApp’s help pages contained hidden directives instructing its support chatbot not to recommend data protection authorities to users unable to delete accounts, contradicting the company’s European privacy policy. The code‑embedded instructions were discovered and removed by October 18, exposing a policy compliance issue.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/whatsapp-hid-instructions-in-help-pages.html",
-    "publishedAt": "2026-10-20T11:41:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "whatsapp-hidden-instructions-prevent-chatbot-from",
-      "article-61de53",
-      "61de53",
-      "whatsapp-hidden-instructions-prevent-chatbot-from-recommendi"
-    ]
-  },
-  {
     "slug": "security-teams-adopt-ai-assisted-workflow-to-manag-24719c",
     "title": "Security Teams Adopt AI‑Assisted Workflow to Manage Wild Code",
     "summary": "A sales manager implements an AI‑assisted workflow that routes leads, accesses customer records, summarizes inbound requests, and posts updates to a shared channel. The automation reduces manual effort and becomes integral to daily operations, while other employees accelerate app and agent development beyond existing process capacity.",
@@ -1696,23 +1819,6 @@ export const news: NewsBrief[] = [
       "1-8-million-nikkei-records-stolen",
       "article-35a206",
       "35a206"
-    ]
-  },
-  {
-    "slug": "teradata-introduces-post-quantum-ai-data-security-219713",
-    "title": "Teradata Introduces Post‑Quantum AI Data Security",
-    "summary": "Teradata announced new AI data security features, including post‑quantum protection and immutable backups. The solution reduces raw identity exposure, enforces protection near the data, and ensures AI intelligence remains available and recoverable after incidents.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/teradata-ai-data-security/",
-    "publishedAt": "2026-10-20T10:21:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "teradata-introduces-post-quantum-ai-data-security",
-      "article-219713",
-      "219713"
     ]
   },
   {
@@ -6163,112 +6269,6 @@ export const news: NewsBrief[] = [
       "article-1fd1d4",
       "1fd1d4",
       "security-awareness-training-still-relevant-calls-for-moderni"
-    ]
-  },
-  {
-    "slug": "oauth-grants-exploited-in-recent-klue-breach-381d27",
-    "title": "OAuth Grants Exploited in Recent Klue Breach",
-    "summary": "Attackers leveraged forgotten OAuth grants to access corporate data, as highlighted by the recent Klue breach. The article explains how OAuth permissions create data highways between SaaS apps, AI agents, and other tools, and offers strategies to monitor and revoke unused grants to prevent future breaches.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/oauth-grants-pile-up-faster-than-you-can-review-them-heres-how-to-keep-up/",
-    "publishedAt": "2026-10-08T14:00:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "oauth-grants-exploited-in-recent-klue-breach",
-      "article-381d27",
-      "381d27"
-    ]
-  },
-  {
-    "slug": "uranium-finance-hack-convicted-53m-stolen-6dbc5b",
-    "title": "Uranium Finance Hack Convicted, $53M Stolen",
-    "summary": "A Maryland man was convicted of hacking the decentralized crypto exchange Uranium Finance twice in April 2021, stealing more than $53 million. The case highlights the vulnerability of decentralized platforms to targeted attacks and the legal consequences for cybercriminals.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/uranium-crypto-exchange-hacker-found-guilty-of-53-million-theft/",
-    "publishedAt": "2026-10-08T13:18:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "uranium-finance-hack-convicted-53m-stolen",
-      "article-6dbc5b",
-      "6dbc5b"
-    ]
-  },
-  {
-    "slug": "cloudflare-radar-redesign-enhances-accessibility-f-53eeb5",
-    "title": "Cloudflare Radar Redesign Enhances Accessibility for Non-Technical Users",
-    "summary": "Cloudflare has updated its Radar platform, adding an interactive map and standardized components to present real‑time global traffic and outage data. The redesign aims to make complex network insights usable for journalists, researchers, and everyday users while maintaining technical depth. No security impact reported.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/radar-redesign/",
-    "publishedAt": "2026-10-08T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-radar-redesign-enhances-accessibility-f",
-      "article-53eeb5",
-      "53eeb5",
-      "cloudflare-radar-redesign-enhances-accessibility-for-non-tec"
-    ]
-  },
-  {
-    "slug": "youtubers-targeted-by-phishing-scam-using-fake-spo-5a26c0",
-    "title": "YouTubers Targeted by Phishing Scam Using Fake Sponsorships",
-    "summary": "Scammers impersonate brands and send personalized emails to YouTube creators, directing them to a fake collaboration platform that requests Google sign‑in. The phishing campaign tricks creators into revealing their Google account credentials, enabling attackers to access their accounts.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/scams-targeting-youtube-creators-sponsorship/",
-    "publishedAt": "2026-10-08T12:41:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "youtubers-targeted-by-phishing-scam-using-fake-spo",
-      "article-5a26c0",
-      "5a26c0",
-      "youtubers-targeted-by-phishing-scam-using-fake-sponsorships"
-    ]
-  },
-  {
-    "slug": "russian-backed-hackers-deploy-updated-malware-agai-77fa1c",
-    "title": "Russian-Backed Hackers Deploy Updated Malware Against Ukrainian Transport and Energy Firms",
-    "summary": "Russian-aligned hackers have released an upgraded malware strain targeting Ukrainian transportation, manufacturing, and energy companies. The malware is designed to harvest system data, indicating a persistent threat aimed at disrupting critical infrastructure. No public fix is available yet, but organizations should monitor for unusual data exfiltration activity.",
-    "category": "Malware",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/russia-ukraine-malware-transportation",
-    "publishedAt": "2026-10-08T12:30:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "russian-backed-hackers-deploy-updated-malware-agai",
-      "article-77fa1c",
-      "77fa1c",
-      "russian-backed-hackers-deploy-updated-malware-against-ukrain"
-    ]
-  },
-  {
-    "slug": "amazon-collects-detailed-personal-profiles-without-7470c6",
-    "title": "Amazon Collects Detailed Personal Profiles Without Consent",
-    "summary": "Amazon reportedly gathers extensive personal data—including body metrics, family details, and lifestyle information—without users’ explicit permission and offers no opt‑out mechanism. The practice raises privacy concerns as the company claims to know more about individuals than they realize. No known breach or vulnerability is reported.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/amazon-has-an-uncomfortably-personal-profile-on-you-check-yours-now",
-    "publishedAt": "2026-10-08T12:29:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "amazon-collects-detailed-personal-profiles-without",
-      "article-7470c6",
-      "7470c6",
-      "amazon-collects-detailed-personal-profiles-without-consent"
     ]
   }
 ];
