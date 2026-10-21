@@ -45,8 +45,13 @@ function formatCategory(
   return category;
 }
 
+function isValidAdvisoryDate(dateStr?: string | null): boolean {
+  if (!dateStr || typeof dateStr !== 'string') return false;
+  return /^\d{4}-\d{2}-\d{2}/.test(dateStr) && !isNaN(new Date(dateStr).getTime());
+}
+
 function formatAdvisoryDate(dateStr?: string): string {
-  if (!dateStr) return 'RECENT';
+  if (!dateStr || !isValidAdvisoryDate(dateStr)) return 'RECENT';
   const parsed = new Date(dateStr);
   if (isNaN(parsed.getTime())) return dateStr;
   return parsed.toLocaleDateString('en-GB', {
@@ -329,6 +334,7 @@ export default function ArticleDetailScreen() {
   }, [isAdvisory, article?.id, article?.sourceUrl]);
 
   const remediationDueDate = article.dueDate || advisoryDetails?.dueDate;
+  const hasValidDueDate = isValidAdvisoryDate(remediationDueDate);
   const remediationFix = article.patchedVersion || advisoryDetails?.patchedVersion;
   const remediationAction = article.requiredAction || advisoryDetails?.requiredAction;
   const remediationRange = article.vulnerableVersionRange || advisoryDetails?.vulnerableVersionRange;
@@ -600,10 +606,10 @@ export default function ArticleDetailScreen() {
           >
             <View style={styles.remediationHeader}>
               <Ionicons
-                name={remediationDueDate ? 'calendar-outline' : 'shield-checkmark-outline'}
+                name={hasValidDueDate ? 'calendar-outline' : 'shield-checkmark-outline'}
                 size={15}
                 color={
-                  remediationDueDate
+                  hasValidDueDate
                     ? severityColors.CRITICAL.primary
                     : accentColor
                 }
@@ -613,13 +619,13 @@ export default function ArticleDetailScreen() {
                 style={[
                   styles.remediationTitle,
                   {
-                    color: remediationDueDate
+                    color: hasValidDueDate
                       ? severityColors.CRITICAL.primary
                       : accentColor,
                   },
                 ]}
               >
-                {remediationDueDate
+                {hasValidDueDate
                   ? `REMEDIATION DEADLINE: ${formatAdvisoryDate(remediationDueDate)}`
                   : remediationFix
                   ? `FIX AVAILABLE: ${remediationFix}`

@@ -89,7 +89,7 @@ async function fetchCisaKev(): Promise<CveAdvisory[]> {
         severity: isRansomware ? 'CRITICAL' : 'HIGH',
         shortDescription: item.shortDescription || '',
         requiredAction: cleanAction,
-        dueDate: item.dueDate || 'Immediate',
+        dueDate: item.dueDate || undefined,
         knownRansomwareCampaignUse: item.knownRansomwareCampaignUse || 'Unknown',
         url,
         cwes: (item.cwes || []).map((c: any) =>

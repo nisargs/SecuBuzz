@@ -27,8 +27,13 @@ type CveCardProps = {
   onSelectSource?: (source: AdvisorySource) => void;
 };
 
+function isValidAdvisoryDate(dateStr?: string | null): boolean {
+  if (!dateStr || typeof dateStr !== 'string') return false;
+  return /^\d{4}-\d{2}-\d{2}/.test(dateStr) && !isNaN(new Date(dateStr).getTime());
+}
+
 function formatAdvisoryDate(dateStr?: string): string {
-  if (!dateStr) return 'RECENT';
+  if (!dateStr || !isValidAdvisoryDate(dateStr)) return 'RECENT';
   const parsed = new Date(dateStr);
   if (isNaN(parsed.getTime())) return dateStr;
   return parsed.toLocaleDateString('en-GB', {
@@ -98,6 +103,8 @@ export function CveCard({
     ?.replace(/\s*\(see URL in Notes\)/gi, '')
     .trim();
 
+  const hasValidDueDate = isValidAdvisoryDate(advisory.dueDate);
+
   async function handleOpenAdvisory() {
     if (opening) return;
     setOpening(true);
@@ -107,11 +114,12 @@ export function CveCard({
 
   async function handleShare() {
     try {
-      const extraInfo = advisory.dueDate
+      const extraInfo = hasValidDueDate
         ? `Remediation Due: ${formatAdvisoryDate(advisory.dueDate)}`
         : advisory.patchedVersion
         ? `Fix Available: ${advisory.patchedVersion}`
         : '';
+
 
       const messageParts = [
         `${advisory.cveID}: ${advisory.vulnerabilityName}`,
@@ -417,10 +425,10 @@ export function CveCard({
         >
           <View style={styles.remediationHeader}>
             <Ionicons
-              name={advisory.dueDate ? 'calendar-outline' : 'shield-checkmark-outline'}
+              name={hasValidDueDate ? 'calendar-outline' : 'shield-checkmark-outline'}
               size={15}
               color={
-                advisory.dueDate
+                hasValidDueDate
                   ? severityColors.CRITICAL.primary
                   : accentColor
               }
@@ -430,13 +438,13 @@ export function CveCard({
               style={[
                 styles.remediationTitle,
                 {
-                  color: advisory.dueDate
+                  color: hasValidDueDate
                     ? severityColors.CRITICAL.primary
                     : accentColor,
                 },
               ]}
             >
-              {advisory.dueDate
+              {hasValidDueDate
                 ? `REMEDIATION DEADLINE: ${formatAdvisoryDate(advisory.dueDate)}`
                 : advisory.patchedVersion
                 ? `FIX AVAILABLE: ${advisory.patchedVersion}`
