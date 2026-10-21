@@ -595,13 +595,13 @@ function validateAiArticle(
   const words = wordCount(summary);
 
   /*
-   * We ask for approximately 40-60 words.
+   * Strict 50-60 word brand standard.
    *
-   * Allow 20-90 to avoid throwing away otherwise
-   * useful content if the model is slightly outside
-   * the target range.
+   * Enforce a tight gate (48 to 65 words) to guarantee substantive
+   * technical depth, eliminating sub-45-word summaries while allowing
+   * slight variance for hyphenated CVEs and technical terms.
    */
-  if (words < 20 || words > 90) {
+  if (words < 48 || words > 65) {
     return null;
   }
 
@@ -748,7 +748,7 @@ Process each supplied cybersecurity news article independently.
 For each article:
 
 1. Create a clear factual headline.
-2. Create a concise 40-60 word summary.
+2. Create an authoritative 50 to 60 word technical intelligence brief.
 3. Assign exactly one category.
 4. Assign exactly one severity.
 
@@ -763,7 +763,12 @@ IMPORTANT RULES:
 - Do not use Markdown.
 - Do not use bullet points inside summaries.
 - Do not use ellipses.
-- The summary must provide usable, concrete intelligence (what software is affected, how the exploit/attack works, what is the impact, and the fix or mitigation if available). Aim for approximately 50-60 words.
+- LENGTH & STRUCTURE REQUIREMENT (STRICT):
+  * Every summary MUST be between 50 and 60 words in length. Do NOT write under 50 words. Do NOT write over 65 words. Briefs under 50 words will fail validation.
+  * Structure the brief as exactly 3 dense, informative sentences:
+    - Sentence 1 (Incident & Target): State the vulnerability, active threat, or breach incident, identifying the affected vendor, software/hardware product, and attack vector.
+    - Sentence 2 (Technical Flaw & Impact): Detail the root cause mechanism, CVE identifier or severity score (if mentioned), exploitability status (active zero-day, public PoC, or credential theft), and operational impact.
+    - Sentence 3 (Action & Remediation): Specify the vendor patch availability, recommended firmware upgrade, workaround, or defensive mitigations required for security teams.
 - ANTI-AI SLOP & TECHNICAL TONE (STRICT): Write like a senior cybersecurity intelligence analyst. NEVER use AI cliches or filler words ("delve", "tapestry", "in today's digital landscape", "in an era where", "serves as a stark reminder", "it is critical to note", "underscores the importance", "beacon", "testament", "crucial", "pivotal", "paramount"). Avoid dramatic throat-clearing; lead directly with the technical subject (e.g. "Attackers are exploiting...", "A newly disclosed flaw in...", "Microsoft released a patch for...").
 - If there is not enough information for a reliable summary, omit that article.
 - The "index" must exactly match the supplied article index.
@@ -1113,7 +1118,7 @@ async function requestGroq(
                 role: "system",
 
                 content:
-                  "You are a precise cybersecurity news editor. Follow the supplied JSON schema exactly. Do not provide explanations or reasoning.",
+                  "You are an authoritative cybersecurity intelligence editor. Summarize each news item into an exact 50-60 word technical brief using 3 high-density sentences. Follow the supplied JSON schema exactly. Do not provide explanations or reasoning.",
               },
 
               {
@@ -1442,7 +1447,7 @@ async function requestGemini(candidates) {
         {
           role: "system",
           content:
-            "You are a precise cybersecurity news editor. Follow the requested JSON format exactly. Do not provide markdown code blocks, explanations, or reasoning.",
+            "You are an authoritative cybersecurity intelligence editor. Summarize each news item into an exact 50-60 word technical brief using 3 high-density sentences. Follow the requested JSON format exactly. Do not provide markdown code blocks, explanations, or reasoning.",
         },
         {
           role: "user",
@@ -1518,7 +1523,7 @@ async function requestOpenRouter(candidates) {
         {
           role: "system",
           content:
-            "You are a precise cybersecurity news editor. Return ONLY valid JSON adhering to the requested schema. Do not provide explanations or markdown tags.",
+            "You are an authoritative cybersecurity intelligence editor. Summarize each news item into an exact 50-60 word technical brief using 3 high-density sentences. Return ONLY valid JSON adhering to the requested schema. Do not provide explanations or markdown tags.",
         },
         {
           role: "user",
