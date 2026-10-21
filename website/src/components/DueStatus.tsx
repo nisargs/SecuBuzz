@@ -2,7 +2,7 @@ import React from 'react';
 import { dueStatus } from '../utils/advisory';
 
 interface DueStatusProps {
-  dueDate: string;
+  dueDate?: string | null;
 }
 
 const toneClass = {
@@ -13,9 +13,12 @@ const toneClass = {
 
 export function DueStatus({ dueDate }: DueStatusProps) {
   const status = dueStatus(dueDate);
+  if (!status.hasDeadline) {
+    return <span className="whitespace-nowrap font-mono text-xs text-subtle">—</span>;
+  }
   return (
     <span className={`whitespace-nowrap font-mono text-xs font-medium ${toneClass[status.tone]}`}>
       {status.label}
-    </span>);
-
+    </span>
+  );
 }

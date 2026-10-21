@@ -1,18 +1,25 @@
-import { daysUntil } from './date';
+import { daysUntil, isValidDate } from './date';
 import type { Advisory, Severity } from '../types/advisory';
 
 export type DueTone = 'overdue' | 'urgent' | 'upcoming';
 
-export function dueStatus(dueDate: string): { label: string; tone: DueTone; days: number } {
+export function dueStatus(dueDate?: string | null): { label: string; tone: DueTone; days: number; hasDeadline: boolean } {
+  if (!dueDate || !isValidDate(dueDate)) {
+    return { label: '—', tone: 'upcoming', days: 0, hasDeadline: false };
+  }
   const days = daysUntil(dueDate);
+  if (Number.isNaN(days)) {
+    return { label: '—', tone: 'upcoming', days: 0, hasDeadline: false };
+  }
   if (days < 0) {
     const n = Math.abs(days);
-    return { label: `Overdue ${n}d`, tone: 'overdue', days };
+    return { label: `Overdue ${n}d`, tone: 'overdue', days, hasDeadline: true };
   }
-  if (days === 0) return { label: 'Due today', tone: 'urgent', days };
-  if (days <= 7) return { label: `${days}d left`, tone: 'urgent', days };
-  return { label: `${days}d left`, tone: 'upcoming', days };
+  if (days === 0) return { label: 'Due today', tone: 'urgent', days, hasDeadline: true };
+  if (days <= 7) return { label: `${days}d left`, tone: 'urgent', days, hasDeadline: true };
+  return { label: `${days}d left`, tone: 'upcoming', days, hasDeadline: true };
 }
+
 
 /**
  * Authoritative overrides for CVEs where CVSS base score differs from default catalog fallback.

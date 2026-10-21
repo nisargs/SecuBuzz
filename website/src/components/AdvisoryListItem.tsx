@@ -3,12 +3,14 @@ import { Link } from 'react-router-dom';
 import type { Advisory } from '../types/advisory';
 import { SeverityBadge } from './SeverityBadge';
 import { DueStatus } from './DueStatus';
+import { isValidDate } from '../utils/date';
 
 interface AdvisoryListItemProps {
   advisory: Advisory;
 }
 
 export function AdvisoryListItem({ advisory }: AdvisoryListItemProps) {
+  const hasDate = isValidDate(advisory.dueDate);
   return (
     <li>
       <Link
@@ -23,10 +25,19 @@ export function AdvisoryListItem({ advisory }: AdvisoryListItemProps) {
           {advisory.vendor} {advisory.product}
         </p>
         <div className="mt-2 flex items-center justify-between gap-3">
-          <span className="font-mono text-xs text-subtle">Due {advisory.dueDate}</span>
-          <DueStatus dueDate={advisory.dueDate} />
+          {hasDate ? (
+            <>
+              <span className="font-mono text-xs text-subtle">Due {advisory.dueDate}</span>
+              <DueStatus dueDate={advisory.dueDate} />
+            </>
+          ) : (
+            <>
+              <span className="font-mono text-xs text-subtle">Open Source Advisory</span>
+              <span className="font-mono text-xs text-subtle">—</span>
+            </>
+          )}
         </div>
       </Link>
-    </li>);
-
+    </li>
+  );
 }

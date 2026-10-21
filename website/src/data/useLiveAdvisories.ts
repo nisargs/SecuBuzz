@@ -29,7 +29,7 @@ function transformKev(list: any[]): Advisory[] {
       product: item.product || 'Software System',
       name: item.vulnerabilityName || cve,
       dateAdded: item.dateAdded || '',
-      dueDate: item.dueDate || 'Immediate',
+      dueDate: item.dueDate || '',
       cvss,
       severity,
       cwe: cleanCwe || '—',

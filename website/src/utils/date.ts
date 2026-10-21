@@ -1,7 +1,20 @@
 import { differenceInCalendarDays, format, parseISO } from 'date-fns';
 
+export function isValidDate(iso?: string | null): boolean {
+  if (!iso || typeof iso !== 'string') return false;
+  // Must match date pattern (e.g. YYYY-MM-DD or ISO 8601)
+  if (!/^\d{4}-\d{2}-\d{2}/.test(iso)) return false;
+  try {
+    const then = parseISO(iso);
+    return !Number.isNaN(then.getTime());
+  } catch {
+    return false;
+  }
+}
+
 export function timeAgo(iso: string): string {
   try {
+    if (!isValidDate(iso)) return '';
     const then = parseISO(iso);
     const now = new Date();
     const diffMs = now.getTime() - then.getTime();
@@ -37,34 +50,44 @@ export function timeAgo(iso: string): string {
   }
 }
 
-export function shortDate(iso: string): string {
+export function shortDate(iso?: string | null): string {
+  if (!iso || !isValidDate(iso)) {
+    return '—';
+  }
   try {
     return format(parseISO(iso), 'MMM d, yyyy');
   } catch {
-    return '';
+    return '—';
   }
 }
 
 export function clockTime(iso: string): string {
   try {
+    if (!isValidDate(iso)) return '';
     return format(parseISO(iso), 'HH:mm');
   } catch {
     return '';
   }
 }
 
-export function daysUntil(iso: string): number {
+export function daysUntil(iso?: string | null): number {
+  if (!iso || !isValidDate(iso)) {
+    return NaN;
+  }
   try {
     return differenceInCalendarDays(parseISO(iso), new Date());
   } catch {
-    return 0;
+    return NaN;
   }
 }
 
-export function daysSince(iso: string): number {
+export function daysSince(iso?: string | null): number {
+  if (!iso || !isValidDate(iso)) {
+    return NaN;
+  }
   try {
     return differenceInCalendarDays(new Date(), parseISO(iso));
   } catch {
-    return 0;
+    return NaN;
   }
 }

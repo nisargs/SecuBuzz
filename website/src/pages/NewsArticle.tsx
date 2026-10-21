@@ -8,7 +8,7 @@ import { DueStatus } from '../components/DueStatus';
 import { AppCta } from '../components/AppCta';
 import { Seo } from '../components/Seo';
 import { NotFound } from './NotFound';
-import { clockTime, shortDate, timeAgo } from '../utils/date';
+import { clockTime, isValidDate, shortDate, timeAgo } from '../utils/date';
 import { wordCount } from '../utils/text';
 
 export function NewsArticle() {
@@ -272,8 +272,17 @@ export function NewsArticle() {
                           <SeverityBadge severity={a.severity} cvss={a.cvss} />
                         </div>
                         <div className="mt-2 flex items-center justify-between font-mono text-xs text-subtle">
-                          <span>Due {a.dueDate}</span>
-                          <DueStatus dueDate={a.dueDate} />
+                          {isValidDate(a.dueDate) ? (
+                            <>
+                              <span>Due {a.dueDate}</span>
+                              <DueStatus dueDate={a.dueDate} />
+                            </>
+                          ) : (
+                            <>
+                              <span>Open Source Advisory</span>
+                              <span className="text-subtle">—</span>
+                            </>
+                          )}
                         </div>
                       </Link>
                     </li>

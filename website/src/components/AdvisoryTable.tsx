@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import type { Advisory } from '../types/advisory';
 import { SeverityBadge } from './SeverityBadge';
 import { DueStatus } from './DueStatus';
+import { isValidDate } from '../utils/date';
 
 interface AdvisoryTableProps {
   items: Advisory[];
@@ -48,10 +49,18 @@ export function AdvisoryTable({ items }: AdvisoryTableProps) {
                 </td>
                 <td className="w-[100px] whitespace-nowrap px-4 py-3.5 align-top font-mono text-xs text-muted">{a.dateAdded}</td>
                 <td className="w-[125px] whitespace-nowrap px-4 py-3.5 align-top">
-                  <div className="whitespace-nowrap font-mono text-xs text-muted">{a.dueDate}</div>
-                  <div className="mt-1">
-                    <DueStatus dueDate={a.dueDate} />
-                  </div>
+                  {isValidDate(a.dueDate) ? (
+                    <>
+                      <div className="whitespace-nowrap font-mono text-xs text-muted">{a.dueDate}</div>
+                      <div className="mt-1">
+                        <DueStatus dueDate={a.dueDate} />
+                      </div>
+                    </>
+                  ) : (
+                    <span className="font-mono text-xs text-subtle" title="Open Source Advisory (No CISA KEV mandate)">
+                      —
+                    </span>
+                  )}
                 </td>
                 <td className="w-[95px] whitespace-nowrap px-4 py-3.5 align-top font-mono text-xs">
                   {a.ransomware ? <span className="font-medium text-critical">Known</span> : <span className="text-subtle" title="No known ransomware use reported">—</span>}
@@ -77,8 +86,17 @@ export function AdvisoryTable({ items }: AdvisoryTableProps) {
                 {a.description || a.name}
               </p>
               <div className="mt-2 flex items-center justify-between font-mono text-xs text-subtle">
-                <span>Due {a.dueDate}{a.ransomware && <span className="text-critical"> · Ransomware</span>}</span>
-                <DueStatus dueDate={a.dueDate} />
+                {isValidDate(a.dueDate) ? (
+                  <>
+                    <span>Due {a.dueDate}{a.ransomware && <span className="text-critical"> · Ransomware</span>}</span>
+                    <DueStatus dueDate={a.dueDate} />
+                  </>
+                ) : (
+                  <>
+                    <span>Open Source Advisory{a.ransomware && <span className="text-critical"> · Ransomware</span>}</span>
+                    <span className="text-subtle">—</span>
+                  </>
+                )}
               </div>
             </Link>
           </li>

@@ -150,10 +150,11 @@ export function AdvisoryDetail() {
   const coverage = news.filter(
     (b) => b.cves.includes(advisory.cve) || (b.title + ' ' + b.summary).toLowerCase().includes(advisory.cve.toLowerCase())
   );
+  const hasCisaDeadline = status.hasDeadline;
   const deadlineTone =
     status.tone === 'overdue' ? 'text-critical' : status.tone === 'urgent' ? 'text-accent' : 'text-ink';
-  const deadlineText =
-    status.days < 0
+  const deadlineText = hasCisaDeadline
+    ? status.days < 0
       ? Math.abs(status.days) === 1
         ? '1 day overdue'
         : `${Math.abs(status.days)} days overdue`
@@ -161,7 +162,8 @@ export function AdvisoryDetail() {
       ? 'Due today'
       : status.days === 1
       ? '1 day remaining'
-      : `${status.days} days remaining`;
+      : `${status.days} days remaining`
+    : 'No federal mandate';
 
   const rawCwe = (advisory.cwe || '').trim();
   const cleanCwe = rawCwe && rawCwe !== '—'
@@ -171,7 +173,7 @@ export function AdvisoryDetail() {
   const facts = [
     { label: 'Vendor', value: advisory.vendor },
     { label: 'Product', value: advisory.product },
-    { label: 'Added to KEV', value: shortDate(advisory.dateAdded) },
+    { label: hasCisaDeadline ? 'Added to KEV' : 'Published Date', value: shortDate(advisory.dateAdded) },
     { label: 'Weakness', value: cleanCwe || '—' },
     { label: 'Ransomware use', value: advisory.ransomware ? 'Known campaign use' : 'Not reported' },
     {
@@ -188,7 +190,7 @@ export function AdvisoryDetail() {
     <>
       <Seo
         title={`${advisory.cve}: ${advisory.vendor} ${advisory.product} Exploit Status, Patch & CISA KEV · SecuBuzz`}
-        description={`CISA KEV active zero-day alert for ${advisory.cve} (${advisory.vendor} ${advisory.product}). Action required: ${advisory.requiredAction}. Due date: ${advisory.dueDate}. ${advisory.description || advisory.name}`.trim()}
+        description={`${hasCisaDeadline ? `CISA KEV active zero-day alert for ${advisory.cve}` : `Security advisory for ${advisory.cve}`} (${advisory.vendor} ${advisory.product}). Action required: ${advisory.requiredAction}. ${hasCisaDeadline ? `Due date: ${advisory.dueDate}. ` : ''}${advisory.description || advisory.name}`.trim()}
         canonicalPath={`/advisories/${advisory.slug}`}
         type="article"
         jsonLd={{
@@ -200,7 +202,7 @@ export function AdvisoryDetail() {
           url: `https://secubuzz.com/advisories/${advisory.slug}`,
           author: {
             '@type': 'Organization',
-            name: 'CISA / SecuBuzz',
+            name: hasCisaDeadline ? 'CISA / SecuBuzz' : 'GitHub Security Advisory / SecuBuzz',
           },
           publisher: {
             '@type': 'Organization',
@@ -209,6 +211,7 @@ export function AdvisoryDetail() {
           },
         }}
       />
+
       <article className="mx-auto max-w-site px-5 pb-16 pt-10 md:px-8">
         <Link
           to="/advisories"
@@ -283,10 +286,21 @@ export function AdvisoryDetail() {
             </div>
           </div>
           <div className="rounded-lg border border-line bg-surface p-5">
-            <p className="text-xs text-subtle">Federal remediation due</p>
-            <p className="mt-1 font-mono text-2xl font-medium text-ink">{shortDate(advisory.dueDate)}</p>
-            <p className={`mt-1 font-mono text-sm font-medium ${deadlineTone}`}>{deadlineText}</p>
+            {hasCisaDeadline ? (
+              <>
+                <p className="text-xs text-subtle">Federal remediation due (CISA BOD 22-01)</p>
+                <p className="mt-1 font-mono text-2xl font-medium text-ink">{shortDate(advisory.dueDate)}</p>
+                <p className={`mt-1 font-mono text-sm font-medium ${deadlineTone}`}>{deadlineText}</p>
+              </>
+            ) : (
+              <>
+                <p className="text-xs text-subtle">Remediation status</p>
+                <p className="mt-1 font-mono text-xl font-medium text-ink">Upgrade Available</p>
+                <p className="mt-1 font-mono text-xs text-subtle">Open Source Advisory · No federal deadline</p>
+              </>
+            )}
           </div>
+
         </header>
 
         <div className="mt-10 grid gap-12 lg:grid-cols-[1fr_320px]">
