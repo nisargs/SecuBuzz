@@ -5,8 +5,71 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Oct 2026 15:20:02 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 18:54:26 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Plex Media Server Vulnerabilities Exploited in Plex2Shell Attacks</title>
+      <link>https://secubuzz.com/news/plex-media-server-vulnerabilities-exploited-in-ple-3bd12d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/plex-media-server-vulnerabilities-exploited-in-ple-3bd12d</guid>
+      <description><![CDATA[Attackers chain four Plex Media Server vulnerabilities via Plex2Shell to breach servers. The flaw chain allows remote code execution without authentication, exploiting memory corruption and privilege escalation, with active exploitation in the wild. Plex has released patches; administrators should apply the latest update and disable remote access until remediation immediately.]]></description>
+      <pubDate>Wed, 21 Oct 2026 18:34:42 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/cisa-hackers-chain-plex-flaws-in-plex2shell-attacks-to-breach-servers/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Russian Actors Target U.S. Democratic Lawmakers Ahead of Midterms</title>
+      <link>https://secubuzz.com/news/russian-actors-target-u-s-democratic-lawmakers-ahe-133e1b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/russian-actors-target-u-s-democratic-lawmakers-ahe-133e1b</guid>
+      <description><![CDATA[Russian actors are reportedly targeting U.S. Democratic lawmakers to undermine party cohesion ahead of midterms. The threat assessment indicates no evidence of direct election infrastructure compromise, but signals intent to influence political discourse through cyber operations. Lawmakers should monitor for phishing, social engineering, and insider threat indicators, and coordinate with federal agencies for threat intelligence sharing.]]></description>
+      <pubDate>Wed, 21 Oct 2026 18:28:00 GMT</pubDate>
+      <source url="https://therecord.media/democrat-lawmakers-say-russia-is-aiming-to-undermine-party">The Record</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Arrakis Security Report Reveals Dormant AI Agents Retain Valid Credentials</title>
+      <link>https://secubuzz.com/news/arrakis-security-report-reveals-dormant-ai-agents-a25eaa</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/arrakis-security-report-reveals-dormant-ai-agents-a25eaa</guid>
+      <description><![CDATA[Arrakis Security’s 2026 Autonomous Agents Threat Report shows 76% of AI agents have been inactive for 60 days, yet their credentials remain valid and triggers still fire. Dormant agents can be reactivated by attackers, enabling credential reuse and unauthorized access to connected services. Teams should audit credentials, enforce rotation, and monitor trigger activity to mitigate exploitation.]]></description>
+      <pubDate>Wed, 21 Oct 2026 17:05:59 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/arrakis-security-report-finds-76-of-ai-agents-are-dormant-but-keep-their-credentials-and-connections/">Cyber Security News</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Google Enhances Chrome to Block ClickFix Phishing and Insecure HTTP Connections</title>
+      <link>https://secubuzz.com/news/google-enhances-chrome-to-block-clickfix-phishing-fd03a4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-enhances-chrome-to-block-clickfix-phishing-fd03a4</guid>
+      <description><![CDATA[Google has added new protections to Chrome to counter ClickFix phishing attacks and insecure HTTP connections, enhancing user safety. The update introduces site warnings and server‑side Gemini analysis to detect malicious redirects and credential‑stealing attempts. Users should update Chrome to the latest version and enable the new security features to maintain protection against social engineering.]]></description>
+      <pubDate>Wed, 21 Oct 2026 17:00:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/google-hardens-chrome-against-clickfix-attacks-insecure-http-connections/">SecurityWeek</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Node.js Releases Security Updates for High-Severity TLS, DNS, and Brotli Vulnerabilities</title>
+      <link>https://secubuzz.com/news/node-js-releases-security-updates-for-high-severit-160943</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/node-js-releases-security-updates-for-high-severit-160943</guid>
+      <description><![CDATA[Node.js released updates for its 26.x, 24.x, and 22.x branches to patch ten vulnerabilities, including high‑severity flaws in DNS lookups, TLS certificate validation, and Brotli decompression. The most critical flaw enables remote code execution via the Brotli decoder, exposing servers to arbitrary code execution. Users must upgrade to 26.12.1, 24.22.1, or 22.23.4 and apply vendor patches immediately.]]></description>
+      <pubDate>Wed, 21 Oct 2026 16:33:58 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/node-js-releases-security-updates/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Optiv Launches CyberBOT Cybersecurity Awareness Training Program</title>
+      <link>https://secubuzz.com/news/optiv-launches-cyberbot-cybersecurity-awareness-tr-2213eb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/optiv-launches-cyberbot-cybersecurity-awareness-tr-2213eb</guid>
+      <description><![CDATA[Optiv has launched CyberBOT, a cybersecurity awareness training program targeting educators, nonprofits, and community leaders to build resilient communities. The program offers hands‑on sessions that cover threat recognition, secure practices, and incident response fundamentals for year‑round cyber readiness. Organizations should enroll participants, integrate the curriculum into existing training schedules, and monitor engagement metrics to assess effectiveness.]]></description>
+      <pubDate>Wed, 21 Oct 2026 15:44:48 GMT</pubDate>
+      <source url="https://www.darkreading.com/cybersecurity-operations/optiv-launches-cyberbot-cybersecurity-awareness-training-program">Dark Reading</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Widespread PHP Flaw May Cause Many Site Outages Today</title>
+      <link>https://secubuzz.com/news/widespread-php-flaw-may-cause-many-site-outages-to-123072</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/widespread-php-flaw-may-cause-many-site-outages-to-123072</guid>
+      <description><![CDATA[A widespread PHP flaw lets attackers seize full control over servers that have not updated core software. The vulnerabilities enable remote code execution via crafted requests, and active exploits are already in the wild, causing frequent 404 errors. Site owners must immediately apply PHP security patches, disable vulnerable functions, and monitor logs for anomalous activity.]]></description>
+      <pubDate>Wed, 21 Oct 2026 15:26:07 GMT</pubDate>
+      <source url="https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/">Krebs on Security</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>eMudhra CA Signing Keys Exposed Due to Weak Private Keys</title>
       <link>https://secubuzz.com/news/emudhra-ca-signing-keys-exposed-due-to-weak-privat-779157</link>
@@ -69,15 +132,6 @@
       <pubDate>Wed, 21 Oct 2026 13:44:12 GMT</pubDate>
       <source url="https://www.wiz.io/blog/litellm-compromised-steals-credentials">Wiz Research</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Google Chrome Adds ClickFix Warnings to Stop Users From Running Malicious Commands</title>
-      <link>https://secubuzz.com/news/google-chrome-adds-clickfix-warnings-to-stop-users-70f2ad</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-chrome-adds-clickfix-warnings-to-stop-users-70f2ad</guid>
-      <description><![CDATA[Google Chrome is deploying ClickFix warnings to prevent users from executing malicious commands via social engineering when Enhanced Protection is enabled. The safeguard blocks the copy‑paste technique that bypasses traditional controls, reducing the risk of unauthorized OS-level code execution. Chrome users should enable Enhanced Protection and keep the browser updated to receive the latest ClickFix mitigation.]]></description>
-      <pubDate>Wed, 21 Oct 2026 13:15:09 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/google-chrome-adds-clickfix-warnings-to.html">The Hacker News</source>
-      <category>Policy</category>
     </item>
     <item>
       <title>Commerce.com and Cloudflare Enable AI Agents Across 100,000 Storefronts</title>
@@ -402,60 +456,6 @@
       <pubDate>Tue, 20 Oct 2026 18:32:00 GMT</pubDate>
       <source url="https://therecord.media/23andme-california-data-breach-settlement">The Record</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>OpenAI Announces GPT‑6.1 Sol Improves Legacy Code Migration</title>
-      <link>https://secubuzz.com/news/openai-announces-gpt-6-1-sol-improves-legacy-code-726d60</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-announces-gpt-6-1-sol-improves-legacy-code-726d60</guid>
-      <description><![CDATA[OpenAI confirmed that its GPT‑6.1 Sol model significantly improves code migration for legacy programming languages. The announcement highlights the model’s enhanced ability to rewrite and refactor older codebases, potentially accelerating modernization efforts across industries. No security implications were reported in today.]]></description>
-      <pubDate>Tue, 20 Oct 2026 18:11:03 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-gpt-61-sol-is-dramatically-better-at-migrating-legacy-code/">BleepingComputer</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Google Cloud Outage Disrupts UK Banks, Websites and Court Systems</title>
-      <link>https://secubuzz.com/news/google-cloud-outage-disrupts-uk-banks-websites-and-5e76e5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-cloud-outage-disrupts-uk-banks-websites-and-5e76e5</guid>
-      <description><![CDATA[A power event triggered a Google Cloud outage in the London region, knocking UK banks, business websites and court video links offline. Services began recovering around 07:08 BST, though a few customers still experienced issues. The incident highlights the impact of infrastructure failures on critical services.]]></description>
-      <pubDate>Tue, 20 Oct 2026 17:17:56 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/google-cloud-outage/">Cyber Security News</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>Nigerian National Sentenced for Tax Business Hacks</title>
-      <link>https://secubuzz.com/news/nigerian-national-sentenced-for-tax-business-hacks-34ca54</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/nigerian-national-sentenced-for-tax-business-hacks-34ca54</guid>
-      <description><![CDATA[A Nigerian national was sentenced to eight years for collaborating with a group that hacked tax preparation businesses, extracting customer data and executing multi‑million dollar fraud schemes. The case highlights the ongoing threat of credential theft and data exfiltration in the tax industry.]]></description>
-      <pubDate>Tue, 20 Oct 2026 17:14:00 GMT</pubDate>
-      <source url="https://therecord.media/nigerian-given-8-year-sentenc-tax-hacks">The Record</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Threat Intelligence Enhances SOC Analyst Efficiency</title>
-      <link>https://secubuzz.com/news/threat-intelligence-enhances-soc-analyst-efficienc-69a30a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/threat-intelligence-enhances-soc-analyst-efficienc-69a30a</guid>
-      <description><![CDATA[The article outlines three methods by which threat intelligence streamlines SOC analyst workflows, emphasizing the need for visibility beyond internal environments. It discusses leveraging historical data, automated correlation, and contextual alerts to improve detection and investigation processes for American SOC teams.]]></description>
-      <pubDate>Tue, 20 Oct 2026 16:26:48 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/3-ways-threat-intelligence-makes-life-easier-for-american-soc-analysts/">Cyber Security News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>US Agencies Publish Ten Voluntary Practices for Rogue AI Agent Incidents</title>
-      <link>https://secubuzz.com/news/us-agencies-publish-ten-voluntary-practices-for-ro-7dcaf6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/us-agencies-publish-ten-voluntary-practices-for-ro-7dcaf6</guid>
-      <description><![CDATA[NIST, CISA and NSA released ten voluntary practices to prepare for, detect, respond to, recover from, and report incidents involving rogue AI agents. The guidance outlines steps for incident response teams to mitigate potential AI‑driven threats and improve coordination among federal agencies.]]></description>
-      <pubDate>Tue, 20 Oct 2026 15:45:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/us-agencies-detail-incident-response-practices-for-rogue-ai-agents/">SecurityWeek</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>FortiSIEM CVE-2026-106173 Allows Unauthenticated Remote Code Execution</title>
-      <link>https://secubuzz.com/news/fortisiem-cve-2026-106173-allows-unauthenticated-r-20356a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fortisiem-cve-2026-106173-allows-unauthenticated-r-20356a</guid>
-      <description><![CDATA[Fortinet FortiSIEM contains a critical path traversal flaw (CVE-2026-106173, CVSS 9.4) that enables unauthenticated attackers to execute arbitrary code via specially crafted requests. A public PoC demonstrates the exploit, underscoring the urgency for immediate patching and network segmentation to prevent remote code execution.]]></description>
-      <pubDate>Tue, 20 Oct 2026 15:38:52 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html">The Hacker News</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,106 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/cisa-hackers-chain-plex-flaws-in-plex2shell-attacks-to-breach-servers/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-hackers-chain-plex-flaws-in-plex2shell-attacks-to-breach-servers/",
+    "title": "Plex Media Server Vulnerabilities Exploited in Plex2Shell Attacks",
+    "headline": "Plex Media Server Vulnerabilities Exploited in Plex2Shell Attacks",
+    "summary": "Attackers chain four Plex Media Server vulnerabilities via Plex2Shell to breach servers. The flaw chain allows remote code execution without authentication, exploiting memory corruption and privilege escalation, with active exploitation in the wild. Plex has released patches; administrators should apply the latest update and disable remote access until remediation immediately.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-21T18:34:42.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/cisa-hackers-chain-plex-flaws-in-plex2shell-attacks-to-breach-servers/",
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/plex2shell-how-to-detect-patch-plex-media-server-rce"
+      }
+    ]
+  },
+  {
+    "id": "https://therecord.media/democrat-lawmakers-say-russia-is-aiming-to-undermine-party",
+    "sourceUrl": "https://therecord.media/democrat-lawmakers-say-russia-is-aiming-to-undermine-party",
+    "title": "Russian Actors Target U.S. Democratic Lawmakers Ahead of Midterms",
+    "headline": "Russian Actors Target U.S. Democratic Lawmakers Ahead of Midterms",
+    "summary": "Russian actors are reportedly targeting U.S. Democratic lawmakers to undermine party cohesion ahead of midterms. The threat assessment indicates no evidence of direct election infrastructure compromise, but signals intent to influence political discourse through cyber operations. Lawmakers should monitor for phishing, social engineering, and insider threat indicators, and coordinate with federal agencies for threat intelligence sharing.",
+    "category": "NATION_STATE",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "publishedAt": "2026-10-21T18:28:00.000Z",
+    "url": "https://therecord.media/democrat-lawmakers-say-russia-is-aiming-to-undermine-party",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/arrakis-security-report-finds-76-of-ai-agents-are-dormant-but-keep-their-credentials-and-connections/",
+    "sourceUrl": "https://cybersecuritynews.com/arrakis-security-report-finds-76-of-ai-agents-are-dormant-but-keep-their-credentials-and-connections/",
+    "title": "Arrakis Security Report Reveals Dormant AI Agents Retain Valid Credentials",
+    "headline": "Arrakis Security Report Reveals Dormant AI Agents Retain Valid Credentials",
+    "summary": "Arrakis Security’s 2026 Autonomous Agents Threat Report shows 76% of AI agents have been inactive for 60 days, yet their credentials remain valid and triggers still fire. Dormant agents can be reactivated by attackers, enabling credential reuse and unauthorized access to connected services. Teams should audit credentials, enforce rotation, and monitor trigger activity to mitigate exploitation.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-21T17:05:59.000Z",
+    "url": "https://cybersecuritynews.com/arrakis-security-report-finds-76-of-ai-agents-are-dormant-but-keep-their-credentials-and-connections/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/google-hardens-chrome-against-clickfix-attacks-insecure-http-connections/",
+    "sourceUrl": "https://www.securityweek.com/google-hardens-chrome-against-clickfix-attacks-insecure-http-connections/",
+    "title": "Google Enhances Chrome to Block ClickFix Phishing and Insecure HTTP Connections",
+    "headline": "Google Enhances Chrome to Block ClickFix Phishing and Insecure HTTP Connections",
+    "summary": "Google has added new protections to Chrome to counter ClickFix phishing attacks and insecure HTTP connections, enhancing user safety. The update introduces site warnings and server‑side Gemini analysis to detect malicious redirects and credential‑stealing attempts. Users should update Chrome to the latest version and enable the new security features to maintain protection against social engineering.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-21T17:00:00.000Z",
+    "url": "https://www.securityweek.com/google-hardens-chrome-against-clickfix-attacks-insecure-http-connections/",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/google-chrome-adds-clickfix-warnings-to.html"
+      }
+    ]
+  },
+  {
+    "id": "https://cybersecuritynews.com/node-js-releases-security-updates/",
+    "sourceUrl": "https://cybersecuritynews.com/node-js-releases-security-updates/",
+    "title": "Node.js Releases Security Updates for High-Severity TLS, DNS, and Brotli Vulnerabilities",
+    "headline": "Node.js Releases Security Updates for High-Severity TLS, DNS, and Brotli Vulnerabilities",
+    "summary": "Node.js released updates for its 26.x, 24.x, and 22.x branches to patch ten vulnerabilities, including high‑severity flaws in DNS lookups, TLS certificate validation, and Brotli decompression. The most critical flaw enables remote code execution via the Brotli decoder, exposing servers to arbitrary code execution. Users must upgrade to 26.12.1, 24.22.1, or 22.23.4 and apply vendor patches immediately.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-21T16:33:58.000Z",
+    "url": "https://cybersecuritynews.com/node-js-releases-security-updates/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.darkreading.com/cybersecurity-operations/optiv-launches-cyberbot-cybersecurity-awareness-training-program",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/optiv-launches-cyberbot-cybersecurity-awareness-training-program",
+    "title": "Optiv Launches CyberBOT Cybersecurity Awareness Training Program",
+    "headline": "Optiv Launches CyberBOT Cybersecurity Awareness Training Program",
+    "summary": "Optiv has launched CyberBOT, a cybersecurity awareness training program targeting educators, nonprofits, and community leaders to build resilient communities. The program offers hands‑on sessions that cover threat recognition, secure practices, and incident response fundamentals for year‑round cyber readiness. Organizations should enroll participants, integrate the curriculum into existing training schedules, and monitor engagement metrics to assess effectiveness.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-21T15:44:48.000Z",
+    "url": "https://www.darkreading.com/cybersecurity-operations/optiv-launches-cyberbot-cybersecurity-awareness-training-program",
+    "additionalSources": []
+  },
+  {
+    "id": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/",
+    "sourceUrl": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/",
+    "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
+    "headline": "Widespread PHP Flaw May Cause Many Site Outages Today",
+    "summary": "A widespread PHP flaw lets attackers seize full control over servers that have not updated core software. The vulnerabilities enable remote code execution via crafted requests, and active exploits are already in the wild, causing frequent 404 errors. Site owners must immediately apply PHP security patches, disable vulnerable functions, and monitor logs for anomalous activity.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Krebs on Security",
+    "publishedAt": "2026-10-21T15:26:07.000Z",
+    "url": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/10/21/emudhra-certificates-private-keys-compromised/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/21/emudhra-certificates-private-keys-compromised/",
     "title": "eMudhra CA Signing Keys Exposed Due to Weak Private Keys",
@@ -122,32 +223,6 @@
     "publishedAt": "2026-10-21T13:44:12.000Z",
     "url": "https://www.wiz.io/blog/litellm-compromised-steals-credentials",
     "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/google-chrome-adds-clickfix-warnings-to.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/google-chrome-adds-clickfix-warnings-to.html",
-    "title": "Google Chrome Adds ClickFix Warnings to Stop Users From Running Malicious Commands",
-    "headline": "Google Chrome Adds ClickFix Warnings to Stop Users From Running Malicious Commands",
-    "summary": "Google Chrome is deploying ClickFix warnings to prevent users from executing malicious commands via social engineering when Enhanced Protection is enabled. The safeguard blocks the copy‑paste technique that bypasses traditional controls, reducing the risk of unauthorized OS-level code execution. Chrome users should enable Enhanced Protection and keep the browser updated to receive the latest ClickFix mitigation.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-21T13:15:09.000Z",
-    "url": "https://thehackernews.com/2026/10/google-chrome-adds-clickfix-warnings-to.html",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/google-chrome-enhanced-protection-updates/"
-      },
-      {
-        "source": "Malwarebytes Labs",
-        "sourceUrl": "https://www.malwarebytes.com/blog/mobile/2026/10/google-may-add-your-number-to-all-your-accounts-how-to-stop-it"
-      },
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/memory-bugs-account-for-most-of-chromes-353-new-security-fixes/"
-      }
-    ]
   },
   {
     "id": "https://blog.cloudflare.com/webmcp-commerce/",
@@ -1422,24 +1497,6 @@
     "publishedAt": "2026-10-20T02:49:37.000Z",
     "url": "https://cybersecuritynews.com/claude-ai-detects-hidden-crypto-miner/",
     "additionalSources": []
-  },
-  {
-    "id": "https://cybernewsai.com/blog/plex2shell-how-to-detect-patch-plex-media-server-rce",
-    "sourceUrl": "https://cybernewsai.com/blog/plex2shell-how-to-detect-patch-plex-media-server-rce",
-    "title": "Plex2Shell 4‑Flaw RCE Exploitation on Plex Media Server",
-    "headline": "Plex2Shell 4‑Flaw RCE Exploitation on Plex Media Server",
-    "summary": "Hackers exploit the Plex2Shell 4‑flaw vulnerability chain to deploy Linux proxy backdoors and Monero miners on Plex Media Server installations. The flaw allows remote code execution; administrators should apply the latest patch immediately to prevent unauthorized access and cryptocurrency mining.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-10-19T23:44:30.000Z",
-    "url": "https://cybernewsai.com/blog/plex2shell-how-to-detect-patch-plex-media-server-rce",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/hackers-exploit-plex2shell-flaws-to.html"
-      }
-    ]
   },
   {
     "id": "https://www.darkreading.com/threat-intelligence/microsoft-tech-support-scam-operation",
@@ -5192,71 +5249,6 @@
     "source": "Malwarebytes Labs",
     "publishedAt": "2026-10-08T11:07:58.000Z",
     "url": "https://www.malwarebytes.com/blog/privacy/2026/10/metas-muse-ai-files-away-your-friendships-arguments-and-secrets",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.schneier.com/blog/archives/2026/10/how-technology-empowers-and-imperils-dictators.html",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/how-technology-empowers-and-imperils-dictators.html",
-    "title": "How Technology Empowers—and Imperils—Dictators",
-    "headline": "How Technology Empowers—and Imperils—Dictators",
-    "summary": "The essay examines how technology, particularly AI, can both empower and threaten authoritarian regimes. It recounts the 2022 incident of a Russian TV journalist exposing propaganda, the subsequent crackdown, and the 2024 revelation that RT anchors are AI‑generated, illustrating the growing use of synthetic media to manipulate public perception globally.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Schneier on Security",
-    "publishedAt": "2026-10-08T11:07:35.000Z",
-    "url": "https://www.schneier.com/blog/archives/2026/10/how-technology-empowers-and-imperils-dictators.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/wazza-phishkit-targets-banking.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/wazza-phishkit-targets-banking.html",
-    "title": "Wazza Phishkit Targets Banking, Government, and Manufacturing",
-    "headline": "Wazza Phishkit Targets Banking, Government, and Manufacturing",
-    "summary": "Wazza is a new phishing kit that delivers sophisticated phishing pages with filtering, session management, and traffic controls. It targets banking, manufacturing, and government organizations across the US, EU, and Australia, increasing the risk of credential theft and credential stuffing attacks.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-08T10:30:00.000Z",
-    "url": "https://thehackernews.com/2026/10/wazza-phishkit-targets-banking.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/08/poellm-malware-github-poem-ai-servers/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/poellm-malware-github-poem-ai-servers/",
-    "title": "Cryptomining Botnet Uses GitHub Poem for C2, Infects 3,400 Servers",
-    "headline": "Cryptomining Botnet Uses GitHub Poem for C2, Infects 3,400 Servers",
-    "summary": "A cryptomining botnet, dubbed PoeLLM, retrieves its command and control addresses from a poem posted on GitHub. The malware targets exposed AI services and open-source tools, mines cryptocurrency, and searches for new victims. The campaign, called Canto Incognito, is linked to an Italian-speaking threat actor.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-08T10:24:57.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/08/poellm-malware-github-poem-ai-servers/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://blog.talosintelligence.com/ignore-all-instructions-and-read-this-blog-the-state-of-ai-analysis-evasion-in-malware/",
-    "sourceUrl": "https://blog.talosintelligence.com/ignore-all-instructions-and-read-this-blog-the-state-of-ai-analysis-evasion-in-malware/",
-    "title": "AI-Analysis Evasion Techniques in Malware",
-    "headline": "AI-Analysis Evasion Techniques in Malware",
-    "summary": "Malware authors are developing real‑world techniques to obstruct or defeat automated AI analysis layers, a trend highlighted in a recent blog. The post outlines how these evasion methods undermine AI‑based detection, emphasizing the need for enhanced defensive strategies. No specific vulnerabilities or CVE IDs are cited.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cisco Talos",
-    "publishedAt": "2026-10-08T10:00:14.000Z",
-    "url": "https://blog.talosintelligence.com/ignore-all-instructions-and-read-this-blog-the-state-of-ai-analysis-evasion-in-malware/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.welivesecurity.com/en/eset-research/matchboil-new-tricks-same-old-evil-intentions/",
-    "sourceUrl": "https://www.welivesecurity.com/en/eset-research/matchboil-new-tricks-same-old-evil-intentions/",
-    "title": "MATCHBOIL Downloader Evolves: ESET Tracks New Techniques 2024‑2026",
-    "headline": "MATCHBOIL Downloader Evolves: ESET Tracks New Techniques 2024‑2026",
-    "summary": "ESET WeLiveSecurity released a report detailing the evolution of the MATCHBOIL downloader, part of the UAC‑0099 malware family. The analysis covers changes in download mechanisms, persistence methods, and evasion tactics observed between 2024 and 2026, highlighting the downloader’s continued use in targeted campaigns.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "ESET WeLiveSecurity",
-    "publishedAt": "2026-10-08T08:45:00.000Z",
-    "url": "https://www.welivesecurity.com/en/eset-research/matchboil-new-tricks-same-old-evil-intentions/",
     "additionalSources": []
   }
 ]
