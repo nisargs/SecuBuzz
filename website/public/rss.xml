@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Oct 2026 14:08:21 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 15:20:02 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>eMudhra CA Signing Keys Exposed Due to Weak Private Keys</title>
+      <link>https://secubuzz.com/news/emudhra-ca-signing-keys-exposed-due-to-weak-privat-779157</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/emudhra-ca-signing-keys-exposed-due-to-weak-privat-779157</guid>
+      <description><![CDATA[A weakness in eMudhra’s private key generation allowed attackers to recover intermediate certificate signing keys from public certificates in under a second, compromising over 60 million issued certificates. The flaw, discovered by researcher Wayne on October 17, enabled unauthorized signing of certificates, potentially facilitating man‑in‑the‑middle attacks. eMudhra has issued a patch and recommends immediate key rotation and stricter key‑strength enforcement.]]></description>
+      <pubDate>Wed, 21 Oct 2026 14:11:24 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/21/emudhra-certificates-private-keys-compromised/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>PHP releases emergency patches for PHP2Shell RCE flaws</title>
+      <link>https://secubuzz.com/news/php-releases-emergency-patches-for-php2shell-rce-f-3f5e41</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/php-releases-emergency-patches-for-php2shell-rce-f-3f5e41</guid>
+      <description><![CDATA[Attackers exploit two critical remote code execution vulnerabilities, CVE-2026-109618 and CVE-2026-109619, in PHP, via PHP2Shell, allowing unauthenticated code execution through crafted input. The flaws enable arbitrary code execution with no authentication, posing a high‑severity risk to any PHP‑based web application. PHP released emergency patches; administrators must apply the updates immediately to mitigate the threat.]]></description>
+      <pubDate>Wed, 21 Oct 2026 14:07:05 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Threat actor uses AI to coordinate credential theft, VoIP fraud, and exfiltration</title>
+      <link>https://secubuzz.com/news/threat-actor-uses-ai-to-coordinate-credential-thef-5e6455</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/threat-actor-uses-ai-to-coordinate-credential-thef-5e6455</guid>
+      <description><![CDATA[A threat actor used AI to bypass safety controls, coordinating credential theft, VoIP fraud planning, and database exfiltration. The actor leveraged AI-generated scripts to automate credential harvesting and fraud execution, increasing operational efficiency and reducing detection risk. Security teams should monitor for anomalous credential usage, enforce MFA, and block suspicious AI‑driven activity.]]></description>
+      <pubDate>Wed, 21 Oct 2026 14:00:24 GMT</pubDate>
+      <source url="https://unit42.paloaltonetworks.com/ai-assisted-cybercrime-analysis/">Unit 42</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>ClickFix Exploits Leveraging AI Installers Surge</title>
+      <link>https://secubuzz.com/news/clickfix-exploits-leveraging-ai-installers-surge-341ff6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/clickfix-exploits-leveraging-ai-installers-surge-341ff6</guid>
+      <description><![CDATA[ClickFix attacks are increasing as criminals deploy fake AI installers, malicious search results, and trusted chatbot platforms to trick users into executing malware. The technique bypasses traditional defenses by mimicking legitimate AI tools, creating high user trust and reducing detection. Security teams should block suspicious AI installer downloads, enforce application whitelisting, and monitor chatbot traffic for anomalous behavior.]]></description>
+      <pubDate>Wed, 21 Oct 2026 14:00:10 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/clickfix-has-never-been-bigger-and-ai-tools-are-its-most-convincing-lure-yet/">BleepingComputer</source>
+      <category>Malware</category>
+    </item>
     <item>
       <title>Cloudflare Deploys WAF Rules for Newly Disclosed PHP Vulnerabilities</title>
       <link>https://secubuzz.com/news/cloudflare-deploys-waf-rules-for-newly-disclosed-p-893875</link>
@@ -14,15 +50,6 @@
       <description><![CDATA[Cloudflare deployed default WAF rules for newly disclosed PHP vulnerabilities, filtering request and response signals to block exploits. The rules detect anomalous request patterns, halt data exfiltration, and mitigate potential remote code execution risks. Teams should monitor WAF logs for false positives, verify rule effectiveness, and apply vendor patches when released.]]></description>
       <pubDate>Wed, 21 Oct 2026 13:56:45 GMT</pubDate>
       <source url="https://blog.cloudflare.com/php-vulnerabilities-waf-protection/">Cloudflare Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>PHP.net Releases Critical Patch for CVE-2026-109618 and CVE-2026-109619</title>
-      <link>https://secubuzz.com/news/php-net-releases-critical-patch-for-cve-2026-10961-57dd7d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/php-net-releases-critical-patch-for-cve-2026-10961-57dd7d</guid>
-      <description><![CDATA[PHP.net disclosed two critical vulnerabilities (CVE-2026-109618, CVE-2026-109619) with CVSS 9.4, enabling remote code execution via PHP scripts. Public PoC exploits are available, and the flaw requires no authentication, allowing attackers to execute arbitrary code on affected servers. A critical patch is released today; administrators must apply the update immediately and disable vulnerable PHP extensions to prevent exploitation.]]></description>
-      <pubDate>Wed, 21 Oct 2026 13:55:53 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33440">SANS Internet Storm Center</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -44,15 +71,6 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>PHP2Shell Reveals Critical RCE and Memory Disclosure Flaws in Core PHP Engine</title>
-      <link>https://secubuzz.com/news/php2shell-reveals-critical-rce-and-memory-disclosu-16e764</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/php2shell-reveals-critical-rce-and-memory-disclosu-16e764</guid>
-      <description><![CDATA[PHP2Shell reveals critical remote code execution and memory disclosure flaws in the core PHP engine, impacting roughly 70% of websites. The flaw permits unauthenticated attackers to run arbitrary code and read sensitive memory, with a CVSS score of 9.8 and a public PoC. PHP maintainers released patches 8.3.12 and 8.2.28; administrators should upgrade immediately or apply a temporary configuration workaround.]]></description>
-      <pubDate>Wed, 21 Oct 2026 13:30:59 GMT</pubDate>
-      <source url="https://www.wiz.io/blog/php2shell-php-rce">Wiz Research</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>Google Chrome Adds ClickFix Warnings to Stop Users From Running Malicious Commands</title>
       <link>https://secubuzz.com/news/google-chrome-adds-clickfix-warnings-to-stop-users-70f2ad</link>
       <guid isPermaLink="true">https://secubuzz.com/news/google-chrome-adds-clickfix-warnings-to-stop-users-70f2ad</guid>
@@ -60,6 +78,15 @@
       <pubDate>Wed, 21 Oct 2026 13:15:09 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/google-chrome-adds-clickfix-warnings-to.html">The Hacker News</source>
       <category>Policy</category>
+    </item>
+    <item>
+      <title>Commerce.com and Cloudflare Enable AI Agents Across 100,000 Storefronts</title>
+      <link>https://secubuzz.com/news/commerce-com-and-cloudflare-enable-ai-agents-acros-4dc4ea</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/commerce-com-and-cloudflare-enable-ai-agents-acros-4dc4ea</guid>
+      <description><![CDATA[Commerce.com and Cloudflare have enabled AI agents to interact with storefronts via WebMCP across nearly 100,000 domains, providing real shopping tools. The deployment leverages Cloudflare’s edge infrastructure to activate the feature globally while preserving individual merchant control over configuration and data access. Security teams should monitor traffic patterns for anomalous agent activity and verify that merchant settings remain unchanged after the rollout.]]></description>
+      <pubDate>Wed, 21 Oct 2026 13:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/webmcp-commerce/">Cloudflare Security</source>
+      <category>Cloud</category>
     </item>
     <item>
       <title>Decades-Old Windows Utility Powers Modern ClickFix Attack</title>
@@ -89,6 +116,33 @@
       <category>Policy</category>
     </item>
     <item>
+      <title>Bronze Sandcastle Exploits Sandboxie DLL Sideloading to Deploy Backdoors</title>
+      <link>https://secubuzz.com/news/bronze-sandcastle-exploits-sandboxie-dll-sideloadi-2c23a1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/bronze-sandcastle-exploits-sandboxie-dll-sideloadi-2c23a1</guid>
+      <description><![CDATA[Bronze Sandcastle, a China-aligned threat cluster, has been observed targeting organizations in Asia and Africa since mid‑2025 by sideloading Sandboxie DLLs to deploy backdoors. The technique bypasses standard DLL loading checks, enabling attackers to execute malicious code with elevated privileges without detection. Defenders should enforce DLL integrity verification, restrict Sandboxie usage, and monitor for anomalous process creation to mitigate this lateral movement strategy.]]></description>
+      <pubDate>Wed, 21 Oct 2026 12:05:00 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/china-aligned-bronze-sandcastle-abuses.html">The Hacker News</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Signal Calling Library Bug Allows Post-Hangup Audio</title>
+      <link>https://secubuzz.com/news/signal-calling-library-bug-allows-post-hangup-audi-26c9d5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/signal-calling-library-bug-allows-post-hangup-audi-26c9d5</guid>
+      <description><![CDATA[A flaw in Signal’s calling library permits a participant to continue hearing audio after the caller hangs up, exposing ongoing conversation data. The vulnerability stems from improper termination handling, enabling unauthorized audio capture without authentication. Updating to the latest Signal version applies the fix and restores proper call closure.]]></description>
+      <pubDate>Wed, 21 Oct 2026 11:37:57 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/bugs/2026/10/signal-bug-could-let-someone-keep-listening-after-you-hang-up">Malwarebytes Labs</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Ransomware Exploits CVE-2026-0257 in Palo Alto GlobalProtect VPN</title>
+      <link>https://secubuzz.com/news/ransomware-exploits-cve-2026-0257-in-palo-alto-glo-54fa4d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ransomware-exploits-cve-2026-0257-in-palo-alto-glo-54fa4d</guid>
+      <description><![CDATA[Ransomware groups exploit CVE-2026-0257, an authentication bypass in Palo Alto Networks’ PAN-OS GlobalProtect, allowing remote unauthenticated VPN access. The flaw arises from cookie validation failures, enabling attackers to establish unauthorized connections to GlobalProtect portals and gateways. Palo Alto released a patch in May; organizations must apply the update immediately to prevent exploitation.]]></description>
+      <pubDate>Wed, 21 Oct 2026 11:13:39 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/21/ransomware-groups-exploit-palo-alto-globalprotect-cve-2026-0257/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Legitimate Platforms Coerced into Attack Delivery Channels</title>
       <link>https://secubuzz.com/news/legitimate-platforms-coerced-into-attack-delivery-2c65a5</link>
       <guid isPermaLink="true">https://secubuzz.com/news/legitimate-platforms-coerced-into-attack-delivery-2c65a5</guid>
@@ -107,6 +161,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Microsoft Releases OneDrive Sync CLI for IT Administrators</title>
+      <link>https://secubuzz.com/news/microsoft-releases-onedrive-sync-cli-for-it-admini-5d3b4b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-releases-onedrive-sync-cli-for-it-admini-5d3b4b</guid>
+      <description><![CDATA[Microsoft introduced a command-line interface for the OneDrive Sync Client to enable IT administrators to audit and manage sync deployments across enterprise devices. The tool provides programmatic access to sync status, configuration, and troubleshooting data, facilitating rapid issue resolution. Administrators should integrate the CLI into existing management workflows and monitor for any updates or deprecations.]]></description>
+      <pubDate>Wed, 21 Oct 2026 09:38:10 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/onedrive-command-line-tool/">Cyber Security News</source>
+      <category>Policy</category>
+    </item>
+    <item>
       <title>Grafana Labs Integrates Knowledge Graph into Cloud Stack</title>
       <link>https://secubuzz.com/news/grafana-labs-integrates-knowledge-graph-into-cloud-4a4751</link>
       <guid isPermaLink="true">https://secubuzz.com/news/grafana-labs-integrates-knowledge-graph-into-cloud-4a4751</guid>
@@ -123,15 +186,6 @@
       <pubDate>Wed, 21 Oct 2026 09:07:30 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/21/threatlocker-zero-trust-ai-control-ztaic/">Help Net Security</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Info‑stealing Malware Injected into OVHcloud CLI Releases</title>
-      <link>https://secubuzz.com/news/info-stealing-malware-injected-into-ovhcloud-cli-r-18039d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/info-stealing-malware-injected-into-ovhcloud-cli-r-18039d</guid>
-      <description><![CDATA[Info‑stealing malware was injected into OVHcloud’s open‑source CLI tool via tampered GitHub releases, compromising versions v0.11.0 through v0.15.0. The unauthorized code injection enables credential harvesting and data exfiltration; the flaw remains exploitable until a patch is applied. OVHcloud released v0.16.0 and urges users to update or delete compromised releases, while security teams should verify checksums and monitor traffic.]]></description>
-      <pubDate>Wed, 21 Oct 2026 08:59:57 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/21/ovhcloud-cli-github-malware/">Help Net Security</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>Apple Safari Blocks Post-Cookie Email Tracking</title>
@@ -296,24 +350,6 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>eMudhra CA Private Keys Compromised, Major Browsers Revoked Certificates</title>
-      <link>https://secubuzz.com/news/emudhra-ca-private-keys-compromised-major-browsers-35845a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/emudhra-ca-private-keys-compromised-major-browsers-35845a</guid>
-      <description><![CDATA[eMudhra CA private keys were weak, enabling instant recovery and forging of trusted certificates for legitimate sites. Mozilla, Google, Apple revoked eight compromised intermediate certificates. The flaw allows attackers to issue fraudulent certificates, potentially enabling man‑in‑the‑middle attacks against users of affected domains.]]></description>
-      <pubDate>Wed, 21 Oct 2026 00:46:42 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/mozilla-google-apple-block-compromised-emudhra-ca-certificates/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>CVE‑2026‑0257 Enables PAN‑OS GlobalProtect VPN Bypass and ESXi Hijack</title>
-      <link>https://secubuzz.com/news/cve-2026-0257-enables-pan-os-globalprotect-vpn-byp-54f514</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-0257-enables-pan-os-globalprotect-vpn-byp-54f514</guid>
-      <description><![CDATA[CVE‑2026‑0257 permits Qilin and Inc ransomware gangs to bypass PAN‑OS GlobalProtect VPN authentication, hijack ESXi hosts, and dump VMDK files. The vulnerability is an authenticated RCE that can be exploited to gain full control of virtualized environments. Palo Alto released a patch; administrators should apply it immediately.]]></description>
-      <pubDate>Wed, 21 Oct 2026 00:02:03 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/cve-2026-0257-pan-os-globalprotect-auth-bypass-defense">CyberNews AI</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>Wiz Launches Native Runtime Protection for GKE</title>
       <link>https://secubuzz.com/news/wiz-launches-native-runtime-protection-for-gke-6ae1e3</link>
       <guid isPermaLink="true">https://secubuzz.com/news/wiz-launches-native-runtime-protection-for-gke-6ae1e3</guid>
@@ -420,42 +456,6 @@
       <pubDate>Tue, 20 Oct 2026 15:38:52 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html">The Hacker News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AI Complicates Software Development Security</title>
-      <link>https://secubuzz.com/news/ai-complicates-software-development-security-2691c8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-complicates-software-development-security-2691c8</guid>
-      <description><![CDATA[Artificial Intelligence introduces new security challenges in the software development lifecycle. A Dark Reading roundtable highlighted that enhanced identity visibility, collaborative practices, and reduced testing costs can mitigate these risks, providing CISOs with actionable strategies to address AI‑related vulnerabilities.]]></description>
-      <pubDate>Tue, 20 Oct 2026 15:35:45 GMT</pubDate>
-      <source url="https://www.darkreading.com/application-security/close-identity-gaps-sdlc-before-ai">Dark Reading</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Microsoft Patch Tuesday Releases 1,415 Vulnerability Advisories</title>
-      <link>https://secubuzz.com/news/microsoft-patch-tuesday-releases-1-415-vulnerabili-13abe4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-patch-tuesday-releases-1-415-vulnerabili-13abe4</guid>
-      <description><![CDATA[Microsoft Patch Tuesday released 975 advisories in September, followed by 1,415 in October, up from a pre‑June average of 100 per month. Cisco Talos attributes the surge to increased discovery and reporting. The trend signals a growing attack surface and a need for more robust vulnerability management.]]></description>
-      <pubDate>Tue, 20 Oct 2026 15:31:22 GMT</pubDate>
-      <source url="https://blog.talosintelligence.com/theres-only-so-much-code-the-rise-in-vulnerability-numbers/">Cisco Talos</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>AOMEI Backupper Supply‑Chain Hijack Deploys Backdoor</title>
-      <link>https://secubuzz.com/news/aomei-backupper-supply-chain-hijack-deploys-backdo-5eea94</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/aomei-backupper-supply-chain-hijack-deploys-backdo-5eea94</guid>
-      <description><![CDATA[Between April and July 2026, attackers hijacked AOMEI Backupper servers for five to ten minutes, altering configuration files that drive the software’s update and pop‑up mechanism. The tampered files fetched malicious instructions, installing a backdoor on infected user machines. The brief, repeated hijacks evaded detection and compromised supply chain integrity.]]></description>
-      <pubDate>Tue, 20 Oct 2026 15:14:30 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/20/aomei-backupper-compromised-supply-chain/">Help Net Security</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>FBI Investigates Cybersecurity Executive’s Role in ShinyHunters Extortion Website</title>
-      <link>https://secubuzz.com/news/fbi-investigates-cybersecurity-executive-s-role-in-8118ff</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fbi-investigates-cybersecurity-executive-s-role-in-8118ff</guid>
-      <description><![CDATA[Federal investigators allege a cybersecurity executive at a U.S. consulting firm aided ShinyHunters in operating an extortion website that pressured hacked companies into paying ransom demands. The site allegedly facilitated ransomware demands for stolen data, raising concerns about trusted advisors turning to criminal support.]]></description>
-      <pubDate>Tue, 20 Oct 2026 15:09:27 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/fbi-suspects-cybersecurity-executive-shinyhunters/">Cyber Security News</source>
-      <category>Ransomware</category>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,80 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/10/21/emudhra-certificates-private-keys-compromised/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/21/emudhra-certificates-private-keys-compromised/",
+    "title": "eMudhra CA Signing Keys Exposed Due to Weak Private Keys",
+    "headline": "eMudhra CA Signing Keys Exposed Due to Weak Private Keys",
+    "summary": "A weakness in eMudhra’s private key generation allowed attackers to recover intermediate certificate signing keys from public certificates in under a second, compromising over 60 million issued certificates. The flaw, discovered by researcher Wayne on October 17, enabled unauthorized signing of certificates, potentially facilitating man‑in‑the‑middle attacks. eMudhra has issued a patch and recommends immediate key rotation and stricter key‑strength enforcement.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-21T14:11:24.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/21/emudhra-certificates-private-keys-compromised/",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/mozilla-google-apple-block-compromised-emudhra-ca-certificates/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
+    "title": "PHP releases emergency patches for PHP2Shell RCE flaws",
+    "headline": "PHP releases emergency patches for PHP2Shell RCE flaws",
+    "summary": "Attackers exploit two critical remote code execution vulnerabilities, CVE-2026-109618 and CVE-2026-109619, in PHP, via PHP2Shell, allowing unauthenticated code execution through crafted input. The flaws enable arbitrary code execution with no authentication, posing a high‑severity risk to any PHP‑based web application. PHP released emergency patches; administrators must apply the updates immediately to mitigate the threat.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-21T14:07:05.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/php-issues-emergency-patches-for-two.html"
+      },
+      {
+        "source": "SANS Internet Storm Center",
+        "sourceUrl": "https://isc.sans.edu/diary/rss/33440"
+      },
+      {
+        "source": "Wiz Research",
+        "sourceUrl": "https://www.wiz.io/blog/php2shell-php-rce"
+      }
+    ]
+  },
+  {
+    "id": "https://unit42.paloaltonetworks.com/ai-assisted-cybercrime-analysis/",
+    "sourceUrl": "https://unit42.paloaltonetworks.com/ai-assisted-cybercrime-analysis/",
+    "title": "Threat actor uses AI to coordinate credential theft, VoIP fraud, and exfiltration",
+    "headline": "Threat actor uses AI to coordinate credential theft, VoIP fraud, and exfiltration",
+    "summary": "A threat actor used AI to bypass safety controls, coordinating credential theft, VoIP fraud planning, and database exfiltration. The actor leveraged AI-generated scripts to automate credential harvesting and fraud execution, increasing operational efficiency and reducing detection risk. Security teams should monitor for anomalous credential usage, enforce MFA, and block suspicious AI‑driven activity.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Unit 42",
+    "publishedAt": "2026-10-21T14:00:24.000Z",
+    "url": "https://unit42.paloaltonetworks.com/ai-assisted-cybercrime-analysis/",
+    "additionalSources": [
+      {
+        "source": "ESET WeLiveSecurity",
+        "sourceUrl": "https://www.welivesecurity.com/en/social-media/is-ad-scam-how-tell-before-click/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/clickfix-has-never-been-bigger-and-ai-tools-are-its-most-convincing-lure-yet/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/clickfix-has-never-been-bigger-and-ai-tools-are-its-most-convincing-lure-yet/",
+    "title": "ClickFix Exploits Leveraging AI Installers Surge",
+    "headline": "ClickFix Exploits Leveraging AI Installers Surge",
+    "summary": "ClickFix attacks are increasing as criminals deploy fake AI installers, malicious search results, and trusted chatbot platforms to trick users into executing malware. The technique bypasses traditional defenses by mimicking legitimate AI tools, creating high user trust and reducing detection. Security teams should block suspicious AI installer downloads, enforce application whitelisting, and monitor chatbot traffic for anomalous behavior.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-21T14:00:10.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/clickfix-has-never-been-bigger-and-ai-tools-are-its-most-convincing-lure-yet/",
+    "additionalSources": []
+  },
+  {
     "id": "https://blog.cloudflare.com/php-vulnerabilities-waf-protection/",
     "sourceUrl": "https://blog.cloudflare.com/php-vulnerabilities-waf-protection/",
     "title": "Cloudflare Deploys WAF Rules for Newly Disclosed PHP Vulnerabilities",
@@ -14,28 +89,6 @@
       {
         "source": "Unit 42",
         "sourceUrl": "https://unit42.paloaltonetworks.com/cve-2026-109618-cve-2026-109619/"
-      }
-    ]
-  },
-  {
-    "id": "https://isc.sans.edu/diary/rss/33440",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33440",
-    "title": "PHP.net Releases Critical Patch for CVE-2026-109618 and CVE-2026-109619",
-    "headline": "PHP.net Releases Critical Patch for CVE-2026-109618 and CVE-2026-109619",
-    "summary": "PHP.net disclosed two critical vulnerabilities (CVE-2026-109618, CVE-2026-109619) with CVSS 9.4, enabling remote code execution via PHP scripts. Public PoC exploits are available, and the flaw requires no authentication, allowing attackers to execute arbitrary code on affected servers. A critical patch is released today; administrators must apply the update immediately and disable vulnerable PHP extensions to prevent exploitation.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "SANS Internet Storm Center",
-    "publishedAt": "2026-10-21T13:55:53.000Z",
-    "url": "https://isc.sans.edu/diary/rss/33440",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/21/php2shell-php-vulnerabilities-patched-cve-2026-109618-cve-2026-109619/"
-      },
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/php2shell-vulnerability/"
       }
     ]
   },
@@ -71,19 +124,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.wiz.io/blog/php2shell-php-rce",
-    "sourceUrl": "https://www.wiz.io/blog/php2shell-php-rce",
-    "title": "PHP2Shell Reveals Critical RCE and Memory Disclosure Flaws in Core PHP Engine",
-    "headline": "PHP2Shell Reveals Critical RCE and Memory Disclosure Flaws in Core PHP Engine",
-    "summary": "PHP2Shell reveals critical remote code execution and memory disclosure flaws in the core PHP engine, impacting roughly 70% of websites. The flaw permits unauthenticated attackers to run arbitrary code and read sensitive memory, with a CVSS score of 9.8 and a public PoC. PHP maintainers released patches 8.3.12 and 8.2.28; administrators should upgrade immediately or apply a temporary configuration workaround.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Wiz Research",
-    "publishedAt": "2026-10-21T13:30:59.000Z",
-    "url": "https://www.wiz.io/blog/php2shell-php-rce",
-    "additionalSources": []
-  },
-  {
     "id": "https://thehackernews.com/2026/10/google-chrome-adds-clickfix-warnings-to.html",
     "sourceUrl": "https://thehackernews.com/2026/10/google-chrome-adds-clickfix-warnings-to.html",
     "title": "Google Chrome Adds ClickFix Warnings to Stop Users From Running Malicious Commands",
@@ -102,6 +142,28 @@
       {
         "source": "Malwarebytes Labs",
         "sourceUrl": "https://www.malwarebytes.com/blog/mobile/2026/10/google-may-add-your-number-to-all-your-accounts-how-to-stop-it"
+      },
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/memory-bugs-account-for-most-of-chromes-353-new-security-fixes/"
+      }
+    ]
+  },
+  {
+    "id": "https://blog.cloudflare.com/webmcp-commerce/",
+    "sourceUrl": "https://blog.cloudflare.com/webmcp-commerce/",
+    "title": "Commerce.com and Cloudflare Enable AI Agents Across 100,000 Storefronts",
+    "headline": "Commerce.com and Cloudflare Enable AI Agents Across 100,000 Storefronts",
+    "summary": "Commerce.com and Cloudflare have enabled AI agents to interact with storefronts via WebMCP across nearly 100,000 domains, providing real shopping tools. The deployment leverages Cloudflare’s edge infrastructure to activate the feature globally while preserving individual merchant control over configuration and data access. Security teams should monitor traffic patterns for anomalous agent activity and verify that merchant settings remain unchanged after the rollout.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "publishedAt": "2026-10-21T13:00:00.000Z",
+    "url": "https://blog.cloudflare.com/webmcp-commerce/",
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/ai-platform-cairn-abused-to-hack-over-100-organizations/"
       }
     ]
   },
@@ -150,6 +212,50 @@
     ]
   },
   {
+    "id": "https://thehackernews.com/2026/10/china-aligned-bronze-sandcastle-abuses.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/china-aligned-bronze-sandcastle-abuses.html",
+    "title": "Bronze Sandcastle Exploits Sandboxie DLL Sideloading to Deploy Backdoors",
+    "headline": "Bronze Sandcastle Exploits Sandboxie DLL Sideloading to Deploy Backdoors",
+    "summary": "Bronze Sandcastle, a China-aligned threat cluster, has been observed targeting organizations in Asia and Africa since mid‑2025 by sideloading Sandboxie DLLs to deploy backdoors. The technique bypasses standard DLL loading checks, enabling attackers to execute malicious code with elevated privileges without detection. Defenders should enforce DLL integrity verification, restrict Sandboxie usage, and monitor for anomalous process creation to mitigate this lateral movement strategy.",
+    "category": "NATION_STATE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-21T12:05:00.000Z",
+    "url": "https://thehackernews.com/2026/10/china-aligned-bronze-sandcastle-abuses.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.malwarebytes.com/blog/bugs/2026/10/signal-bug-could-let-someone-keep-listening-after-you-hang-up",
+    "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/10/signal-bug-could-let-someone-keep-listening-after-you-hang-up",
+    "title": "Signal Calling Library Bug Allows Post-Hangup Audio",
+    "headline": "Signal Calling Library Bug Allows Post-Hangup Audio",
+    "summary": "A flaw in Signal’s calling library permits a participant to continue hearing audio after the caller hangs up, exposing ongoing conversation data. The vulnerability stems from improper termination handling, enabling unauthorized audio capture without authentication. Updating to the latest Signal version applies the fix and restores proper call closure.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Malwarebytes Labs",
+    "publishedAt": "2026-10-21T11:37:57.000Z",
+    "url": "https://www.malwarebytes.com/blog/bugs/2026/10/signal-bug-could-let-someone-keep-listening-after-you-hang-up",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/21/ransomware-groups-exploit-palo-alto-globalprotect-cve-2026-0257/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/21/ransomware-groups-exploit-palo-alto-globalprotect-cve-2026-0257/",
+    "title": "Ransomware Exploits CVE-2026-0257 in Palo Alto GlobalProtect VPN",
+    "headline": "Ransomware Exploits CVE-2026-0257 in Palo Alto GlobalProtect VPN",
+    "summary": "Ransomware groups exploit CVE-2026-0257, an authentication bypass in Palo Alto Networks’ PAN-OS GlobalProtect, allowing remote unauthenticated VPN access. The flaw arises from cookie validation failures, enabling attackers to establish unauthorized connections to GlobalProtect portals and gateways. Palo Alto released a patch in May; organizations must apply the update immediately to prevent exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-21T11:13:39.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/21/ransomware-groups-exploit-palo-alto-globalprotect-cve-2026-0257/",
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/cve-2026-0257-pan-os-globalprotect-auth-bypass-defense"
+      }
+    ]
+  },
+  {
     "id": "https://blog.talosintelligence.com/parasitizing-trust-how-legitimate-infrastructure-becomes-a-delivery-pipeline-for-attackers/",
     "sourceUrl": "https://blog.talosintelligence.com/parasitizing-trust-how-legitimate-infrastructure-becomes-a-delivery-pipeline-for-attackers/",
     "title": "Legitimate Platforms Coerced into Attack Delivery Channels",
@@ -181,6 +287,28 @@
     ]
   },
   {
+    "id": "https://cybersecuritynews.com/onedrive-command-line-tool/",
+    "sourceUrl": "https://cybersecuritynews.com/onedrive-command-line-tool/",
+    "title": "Microsoft Releases OneDrive Sync CLI for IT Administrators",
+    "headline": "Microsoft Releases OneDrive Sync CLI for IT Administrators",
+    "summary": "Microsoft introduced a command-line interface for the OneDrive Sync Client to enable IT administrators to audit and manage sync deployments across enterprise devices. The tool provides programmatic access to sync status, configuration, and troubleshooting data, facilitating rapid issue resolution. Administrators should integrate the CLI into existing management workflows and monitor for any updates or deprecations.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-21T09:38:10.000Z",
+    "url": "https://cybersecuritynews.com/onedrive-command-line-tool/",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/21/ovhcloud-cli-github-malware/"
+      },
+      {
+        "source": "Cisco Talos",
+        "sourceUrl": "https://blog.talosintelligence.com/theres-only-so-much-code-the-rise-in-vulnerability-numbers/"
+      }
+    ]
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/10/21/grafana-labs-knowledge-graph/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/21/grafana-labs-knowledge-graph/",
     "title": "Grafana Labs Integrates Knowledge Graph into Cloud Stack",
@@ -208,24 +336,6 @@
       {
         "source": "Help Net Security",
         "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/appgate-session-governance/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/21/ovhcloud-cli-github-malware/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/21/ovhcloud-cli-github-malware/",
-    "title": "Info‑stealing Malware Injected into OVHcloud CLI Releases",
-    "headline": "Info‑stealing Malware Injected into OVHcloud CLI Releases",
-    "summary": "Info‑stealing malware was injected into OVHcloud’s open‑source CLI tool via tampered GitHub releases, compromising versions v0.11.0 through v0.15.0. The unauthorized code injection enables credential harvesting and data exfiltration; the flaw remains exploitable until a patch is applied. OVHcloud released v0.16.0 and urges users to update or delete compromised releases, while security teams should verify checksums and monitor traffic.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-21T08:59:57.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/21/ovhcloud-cli-github-malware/",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/hijacked-developer-account-used-to-plant-stealer-in-ovhcloud-cli/"
       }
     ]
   },
@@ -511,42 +621,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.bleepingcomputer.com/news/security/mozilla-google-apple-block-compromised-emudhra-ca-certificates/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/mozilla-google-apple-block-compromised-emudhra-ca-certificates/",
-    "title": "eMudhra CA Private Keys Compromised, Major Browsers Revoked Certificates",
-    "headline": "eMudhra CA Private Keys Compromised, Major Browsers Revoked Certificates",
-    "summary": "eMudhra CA private keys were weak, enabling instant recovery and forging of trusted certificates for legitimate sites. Mozilla, Google, Apple revoked eight compromised intermediate certificates. The flaw allows attackers to issue fraudulent certificates, potentially enabling man‑in‑the‑middle attacks against users of affected domains.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-21T00:46:42.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/mozilla-google-apple-block-compromised-emudhra-ca-certificates/",
-    "additionalSources": [
-      {
-        "source": "Cloudflare Security",
-        "sourceUrl": "https://blog.cloudflare.com/emudhra-certificate-compromise/"
-      }
-    ]
-  },
-  {
-    "id": "https://cybernewsai.com/blog/cve-2026-0257-pan-os-globalprotect-auth-bypass-defense",
-    "sourceUrl": "https://cybernewsai.com/blog/cve-2026-0257-pan-os-globalprotect-auth-bypass-defense",
-    "title": "CVE‑2026‑0257 Enables PAN‑OS GlobalProtect VPN Bypass and ESXi Hijack",
-    "headline": "CVE‑2026‑0257 Enables PAN‑OS GlobalProtect VPN Bypass and ESXi Hijack",
-    "summary": "CVE‑2026‑0257 permits Qilin and Inc ransomware gangs to bypass PAN‑OS GlobalProtect VPN authentication, hijack ESXi hosts, and dump VMDK files. The vulnerability is an authenticated RCE that can be exploited to gain full control of virtualized environments. Palo Alto released a patch; administrators should apply it immediately.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-10-21T00:02:03.000Z",
-    "url": "https://cybernewsai.com/blog/cve-2026-0257-pan-os-globalprotect-auth-bypass-defense",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html"
-      }
-    ]
-  },
-  {
     "id": "https://www.wiz.io/blog/wiz-sensor-on-gke-1-click-runtime-protection-now-native",
     "sourceUrl": "https://www.wiz.io/blog/wiz-sensor-on-gke-1-click-runtime-protection-now-native",
     "title": "Wiz Launches Native Runtime Protection for GKE",
@@ -747,19 +821,6 @@
     "source": "Dark Reading",
     "publishedAt": "2026-10-20T15:35:45.000Z",
     "url": "https://www.darkreading.com/application-security/close-identity-gaps-sdlc-before-ai",
-    "additionalSources": []
-  },
-  {
-    "id": "https://blog.talosintelligence.com/theres-only-so-much-code-the-rise-in-vulnerability-numbers/",
-    "sourceUrl": "https://blog.talosintelligence.com/theres-only-so-much-code-the-rise-in-vulnerability-numbers/",
-    "title": "Microsoft Patch Tuesday Releases 1,415 Vulnerability Advisories",
-    "headline": "Microsoft Patch Tuesday Releases 1,415 Vulnerability Advisories",
-    "summary": "Microsoft Patch Tuesday released 975 advisories in September, followed by 1,415 in October, up from a pre‑June average of 100 per month. Cisco Talos attributes the surge to increased discovery and reporting. The trend signals a growing attack surface and a need for more robust vulnerability management.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cisco Talos",
-    "publishedAt": "2026-10-20T15:31:22.000Z",
-    "url": "https://blog.talosintelligence.com/theres-only-so-much-code-the-rise-in-vulnerability-numbers/",
     "additionalSources": []
   },
   {
@@ -1056,24 +1117,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.securityweek.com/ai-platform-cairn-abused-to-hack-over-100-organizations/",
-    "sourceUrl": "https://www.securityweek.com/ai-platform-cairn-abused-to-hack-over-100-organizations/",
-    "title": "Cairn Platform Abuse Enables Persistent Access and Financial Theft Across 100+ Organizations",
-    "headline": "Cairn Platform Abuse Enables Persistent Access and Financial Theft Across 100+ Organizations",
-    "summary": "Three threat actors have abused the Cairn AI platform to gain persistent access and conduct financial theft against more than 100 organizations. The abuse enables attackers to maintain long‑term footholds and exfiltrate funds, posing a significant risk to affected enterprises.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-20T12:47:22.000Z",
-    "url": "https://www.securityweek.com/ai-platform-cairn-abused-to-hack-over-100-organizations/",
-    "additionalSources": [
-      {
-        "source": "CISA",
-        "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-03"
-      }
-    ]
-  },
-  {
     "id": "https://www.securityweek.com/ex-openai-worker-accused-of-bugging-conference-room-planned-to-fly-to-saudi-arabia-prosecutors-say/",
     "sourceUrl": "https://www.securityweek.com/ex-openai-worker-accused-of-bugging-conference-room-planned-to-fly-to-saudi-arabia-prosecutors-say/",
     "title": "Ex‑OpenAI Worker Accused of Bug‑in‑the‑Air Surveillance",
@@ -1295,19 +1338,6 @@
     "source": "Malwarebytes Labs",
     "publishedAt": "2026-10-20T09:44:53.000Z",
     "url": "https://www.malwarebytes.com/blog/scams/2026/10/man-seeking-love-travels-2000-km-to-meet-an-ai-generated-woman",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.welivesecurity.com/en/social-media/is-ad-scam-how-tell-before-click/",
-    "sourceUrl": "https://www.welivesecurity.com/en/social-media/is-ad-scam-how-tell-before-click/",
-    "title": "Deceptive Social Media Ad Triggers Credential Theft",
-    "headline": "Deceptive Social Media Ad Triggers Credential Theft",
-    "summary": "A deceptive advertisement on a popular social media platform can trick users into clicking malicious links, leading to credential theft or malware installation. The ad exploits trust in the platform’s advertising ecosystem, using convincing visuals and misleading calls to action to bypass user skepticism. Security teams should verify ad authenticity, block suspicious domains, and educate users about phishing indicators.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "ESET WeLiveSecurity",
-    "publishedAt": "2026-10-20T09:00:00.000Z",
-    "url": "https://www.welivesecurity.com/en/social-media/is-ad-scam-how-tell-before-click/",
     "additionalSources": []
   },
   {
@@ -5227,19 +5257,6 @@
     "source": "ESET WeLiveSecurity",
     "publishedAt": "2026-10-08T08:45:00.000Z",
     "url": "https://www.welivesecurity.com/en/eset-research/matchboil-new-tricks-same-old-evil-intentions/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/08/ai-surveillance-cameras-privacy/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/ai-surveillance-cameras-privacy/",
-    "title": "Audit System to Prevent Misuse of AI in Street Surveillance",
-    "headline": "Audit System to Prevent Misuse of AI in Street Surveillance",
-    "summary": "A Japanese professor proposes a Fully Monitored Public Space system that adds independent record‑keeping and unannounced spot checks to AI analyzing street camera footage. The system uses existing cameras and encrypted storage to deter operators from misusing surveillance AI.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-08T05:30:13.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/08/ai-surveillance-cameras-privacy/",
     "additionalSources": []
   }
 ]
