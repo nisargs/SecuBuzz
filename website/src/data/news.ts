@@ -11,6 +11,78 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "railway-warns-developers-to-rotate-secrets-after-s-57cfde",
+    "title": "Railway Warns Developers to Rotate Secrets After Suspicious Activity",
+    "summary": "Railway detected suspicious activity on its cloud platform that stores customer environment variables, urging developers to rotate secrets. The anomaly suggests possible unauthorized access to configuration data, though no exfiltration has been confirmed by the platform. Railway recommends enforcing secret rotation, enabling multi‑factor authentication, and auditing access logs for irregular activity.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/railway-warns-devs-to-rotate-secrets-after-potential-breach/",
+    "publishedAt": "2026-10-22T21:25:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "railway-warns-developers-to-rotate-secrets-after-s",
+      "article-57cfde",
+      "57cfde",
+      "railway-warns-developers-to-rotate-secrets-after-suspicious-"
+    ]
+  },
+  {
+    "slug": "capcom-breach-exposes-11-7-million-customer-accoun-7475b3",
+    "title": "Capcom Breach Exposes 11.7 Million Customer Accounts",
+    "summary": "Capcom confirmed a breach of its CAPCOM ID membership service, exposing over 11.7 million customer email addresses and related data. Attackers accessed user credentials through an undisclosed vulnerability, resulting in mass credential compromise; no public exploit disclosed and potentially enabling further phishing campaigns. Security teams should enforce MFA, rotate passwords, and conduct a audit of access logs to detect any lingering threats.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/capcom-confirms-data-breach-affecting-117-million-accounts/",
+    "publishedAt": "2026-10-22T20:22:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "capcom-breach-exposes-11-7-million-customer-accoun",
+      "article-7475b3",
+      "7475b3",
+      "capcom-breach-exposes-11-7-million-customer-accounts"
+    ]
+  },
+  {
+    "slug": "eu-supermarkets-hit-by-outdated-refrigerator-firmw-666457",
+    "title": "EU Supermarkets Hit by Outdated Refrigerator Firmware",
+    "summary": "An outdated OT firmware controlling refrigeration systems in EU supermarkets enabled attackers to compromise HVAC controls, causing millions of euros in losses. The flaw stemmed from third‑party firmware management lacking timely updates, allowing unauthorized manipulation of temperature settings. Vendors should immediately deploy the latest firmware patches and enforce strict update policies to mitigate further exposure.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/ics-ot-security/eu-grocers-unpatched-fridge-firmware-french",
+    "publishedAt": "2026-10-22T19:30:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "eu-supermarkets-hit-by-outdated-refrigerator-firmw",
+      "article-666457",
+      "666457",
+      "eu-supermarkets-hit-by-outdated-refrigerator-firmware"
+    ]
+  },
+  {
+    "slug": "arista-velocloud-orchestrator-sql-injection-zero-d-13b84e",
+    "title": "Arista VeloCloud Orchestrator SQL Injection Zero-Day Exploited",
+    "summary": "A zero‑day SQL injection flaw in Arista’s VeloCloud Orchestrator (VCO) permits attackers with read‑only credentials to elevate to operator privileges, granting full control over SD‑WAN networks. The vulnerability is actively exploited in the wild, exposing critical network infrastructure to unauthorized configuration changes. Arista has released a patch; security teams must apply it immediately and restrict read‑only access to mitigate risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html",
+    "publishedAt": "2026-10-22T19:05:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "arista-velocloud-orchestrator-sql-injection-zero-d",
+      "article-13b84e",
+      "13b84e",
+      "arista-velocloud-orchestrator-sql-injection-zero-day-exploit"
+    ]
+  },
+  {
     "slug": "emudhra-private-key-compromise-exposes-certificate-1fb925",
     "title": "eMudhra Private Key Compromise Exposes Certificate Integrity",
     "summary": "A security researcher revealed that eMudhra’s private key was the number four instead of a random 384‑bit value, compromising the integrity of its digital certificates. The flaw stems from inadequate key generation, allowing attackers to predict or reconstruct the key, potentially enabling forged certificates. eMudhra must implement proper cryptographic key generation and audit processes to prevent future incidents.",
@@ -174,24 +246,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "unauthorized-ai-agents-detected-in-major-u-s-bank-6176a5",
-    "title": "Unauthorized AI Agents Detected in Major U.S. Bank Customer Accounts",
-    "summary": "Major U.S. banks report unauthorized third‑party AI agents operating within customer accounts, potentially executing actions beyond user instructions. The intrusion leverages automated tools that can contact call centers or initiate independent requests, exposing sensitive data and disrupting service workflows. Banks must isolate affected accounts, revoke compromised API keys, and apply vendor patches or custom mitigations to stop exploitation.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/u-s-banks-detect-unauthorized-ai-agents/",
-    "publishedAt": "2026-10-22T15:23:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "unauthorized-ai-agents-detected-in-major-u-s-bank",
-      "article-6176a5",
-      "6176a5",
-      "unauthorized-ai-agents-detected-in-major-u-s-bank-customer-a"
-    ]
-  },
-  {
     "slug": "claude-security-enhances-continuous-repository-sca-4bb4bc",
     "title": "Claude Security Enhances Continuous Repository Scanning",
     "summary": "Anthropic updated Claude Security to continuously scan connected code repositories for new flaws, eliminating the need for manual scan initiation. The service now tracks reported vulnerabilities, marks them fixed when changes are detected, and reopens them if the issue returns. This enhancement improves continuous integration pipelines, reduces manual oversight, and ensures timely remediation of newly discovered security issues.",
@@ -264,6 +318,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "php-8-5-12-8-4-27-8-3-36-8-2-35-unauthenticated-rc-77c054",
+    "title": "PHP 8.5.12/8.4.27/8.3.36/8.2.35 Unauthenticated RCE Vulnerabilities Patched",
+    "summary": "PHP maintainers released fixes for two critical vulnerabilities that enable unauthenticated remote code execution on PHP 8.5.12, 8.4.27, 8.3.36, and 8.2.35, affecting PHP-FPM, Apache mod_php, php-cgi, FrankenPHP, and LiteSpeed. The flaw allows attackers to trigger code execution before application code runs, posing a high‑severity RCE risk. All PHP users should apply the patches immediately to mitigate the vulnerability.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/new-serious-php-vulnerabilities-released-and-patched.html",
+    "publishedAt": "2026-10-22T13:26:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "php-8-5-12-8-4-27-8-3-36-8-2-35-unauthenticated-rc",
+      "article-77c054",
+      "77c054",
+      "php-8-5-12-8-4-27-8-3-36-8-2-35-unauthenticated-rce-vulnerab"
+    ]
+  },
+  {
     "slug": "litellm-supply-chain-compromise-harvests-cloud-cre-162d69",
     "title": "LiteLLM Supply Chain Compromise Harvests Cloud Credentials",
     "summary": "A malicious LiteLLM release on PyPI and Docker registries distributed malware that harvests cloud logins, developer secrets, and AI service API keys from installed instances. The flaw exploits the package distribution chain, enabling credential theft without user interaction, impacting numerous corporate domains. Immediate patching of the compromised package and credential rotation are mandatory to mitigate exposure.",
@@ -279,6 +351,24 @@ export const news: NewsBrief[] = [
       "article-162d69",
       "162d69",
       "litellm-supply-chain-compromise-harvests-cloud-credentials"
+    ]
+  },
+  {
+    "slug": "malware-infiltration-forces-japanese-cloud-provide-52ea52",
+    "title": "Malware Infiltration Forces Japanese Cloud Provider to Shut Down Servers",
+    "summary": "Hackers planted malware in customer server environments on Japan’s Onamae.com Desktop Cloud, prompting the provider to shut down 26,739 servers across all service plans. The intrusion threatens stored data and login credentials, indicating a widespread breach of cloud infrastructure. The provider must isolate affected systems, conduct forensic analysis, and enforce stricter access controls to prevent further compromise.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-planted-malware/",
+    "publishedAt": "2026-10-22T13:05:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "malware-infiltration-forces-japanese-cloud-provide",
+      "article-52ea52",
+      "52ea52",
+      "malware-infiltration-forces-japanese-cloud-provider-to-shut-"
     ]
   },
   {
@@ -354,26 +444,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "critical-gitlab-flaw-cve-2026-110264-cvss-10-0-all-12e68d",
-    "title": "Critical GitLab Flaw (CVE-2026-110264, CVSS 10.0) Allows Unauthenticated RCE",
-    "summary": "GitLab has issued emergency security releases for CVE-2026-110264, a maximum-severity (CVSS 10.0) flaw in its regular expression compiler allowing unauthenticated remote code execution. The vulnerability impacts self-managed GitLab Community and Enterprise editions dating back to version 7.0. Administrators must immediately upgrade to versions 19.5.1, 19.4.3, 19.3.6, or 19.2.9.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/gitlab-warns-of-new-max-severity-code-execution-vulnerability/",
-    "publishedAt": "2026-10-22T11:41:48.000Z",
-    "cves": [
-      "CVE-2026-110264"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "critical-gitlab-flaw-cve-2026-110264-cvss-10-0-all",
-      "article-12e68d",
-      "12e68d",
-      "critical-gitlab-flaw-cve-2026-110264-cvss-10-0-allows-unauth"
-    ]
-  },
-  {
     "slug": "xtium-expands-xtai-with-centralized-ai-governance-1a8d62",
     "title": "XTIUM Expands XTAI with Centralized AI Governance and Cost Management",
     "summary": "XTIUM released an updated XTAI platform, adding an orchestrator that consolidates managed AI services, voice, custom agents, networks, and cloud resources. The new governance layer enables enterprises to monitor, control, and scale AI applications beyond pilot stages, improving operational oversight and cost efficiency. Adoption requires integrating the XTAI Orchestrator into existing AI workflows.",
@@ -407,6 +477,24 @@ export const news: NewsBrief[] = [
       "article-6c8dee",
       "6c8dee",
       "sentinelone-introduces-singularity-agentic-detection-and-res"
+    ]
+  },
+  {
+    "slug": "cash-app-account-created-with-stolen-identity-lead-20ee7d",
+    "title": "Cash App Account Created with Stolen Identity Leads to Prison Sentence",
+    "summary": "A woman faces up to six years in prison after a Cash App account was opened using her stolen identity. The incident illustrates credential theft via social engineering, with attackers creating an unauthorized account to access financial services. Cash App has not released a patch, but users should enable two‑factor authentication and monitor account activity for unauthorized changes.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/woman-faces-years-in-prison-over-a-cash-app-account-she-says-she-never-opened",
+    "publishedAt": "2026-10-22T11:27:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cash-app-account-created-with-stolen-identity-lead",
+      "article-20ee7d",
+      "20ee7d",
+      "cash-app-account-created-with-stolen-identity-leads-to-priso"
     ]
   },
   {
@@ -728,23 +816,6 @@ export const news: NewsBrief[] = [
       "article-3ac7f4",
       "3ac7f4",
       "chrome-adds-permission-prompt-for-insecure-http-connections"
-    ]
-  },
-  {
-    "slug": "onamae-desktop-cloud-breach-affects-26-739-servers-3354a3",
-    "title": "Onamae Desktop Cloud Breach Affects 26,739 Servers",
-    "summary": "Hackers breached Japan’s Onamae Desktop Cloud, compromising the infrastructure of a popular VPS provider and installing malware on up to 26,739 customer servers. The attack leveraged unauthorized access to the cloud management platform, enabling widespread distribution of malicious code across virtual machines. Onamae has issued a patch and urged customers to update credentials and scan for infections.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/japans-onamae-desktop-cloud-hacked-up-to-27-000-servers-affected/",
-    "publishedAt": "2026-10-21T21:43:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "onamae-desktop-cloud-breach-affects-26-739-servers",
-      "article-3354a3",
-      "3354a3"
     ]
   },
   {
@@ -1943,24 +2014,6 @@ export const news: NewsBrief[] = [
       "article-6cd99c",
       "6cd99c",
       "incomplete-security-patches-provide-attackers-clear-bypass-p"
-    ]
-  },
-  {
-    "slug": "aomei-update-servers-hijacked-redirecting-clients-f9559f",
-    "title": "AOMEI Update Servers Hijacked, Redirecting Clients to Malware",
-    "summary": "AOMEI’s update servers were hijacked between April and July, with attackers altering configuration files to redirect clients to malware downloads for brief periods. The company has not notified customers. The incident exposes the risk of compromised update infrastructure and underscores the importance of secure update channels.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/aomei-yet-to-notify-customers-hijack-software",
-    "publishedAt": "2026-10-20T14:11:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "aomei-update-servers-hijacked-redirecting-clients",
-      "article-f9559f",
-      "f9559f",
-      "aomei-update-servers-hijacked-redirecting-clients-to-malware"
     ]
   },
   {
@@ -6215,60 +6268,6 @@ export const news: NewsBrief[] = [
       "article-108196",
       "108196",
       "tp-link-faces-lawsuits-from-four-u-s-states-over-router-secu"
-    ]
-  },
-  {
-    "slug": "ai-agents-enable-new-business-email-compromise-tac-5c4452",
-    "title": "AI Agents Enable New Business Email Compromise Tactics",
-    "summary": "AI agents that gain authority over business systems can be manipulated by attackers to act as business email compromise (BEC) victims. The new technique increases the risk of social engineering attacks by allowing automated agents to send fraudulent messages, potentially leading to credential theft or financial loss.",
-    "category": "Policy",
-    "severity": "MEDIUM",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/social-engineering-ai-agents-bec-2026",
-    "publishedAt": "2026-10-09T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-agents-enable-new-business-email-compromise-tac",
-      "article-5c4452",
-      "5c4452",
-      "ai-agents-enable-new-business-email-compromise-tactics"
-    ]
-  },
-  {
-    "slug": "cloudflare-launches-on-demand-cpu-and-memory-profi-38f569",
-    "title": "Cloudflare Launches On‑Demand CPU and Memory Profiling for Workers",
-    "summary": "Cloudflare now offers on‑demand CPU and memory profiling for Workers and Durable Objects, generating interactive flamegraphs directly in production. The feature helps developers quickly identify memory leaks and performance bottlenecks, improving application reliability and reducing troubleshooting time.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/workers-on-demand-profiling/",
-    "publishedAt": "2026-10-09T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-launches-on-demand-cpu-and-memory-profi",
-      "article-38f569",
-      "38f569",
-      "cloudflare-launches-on-demand-cpu-and-memory-profiling-for-w"
-    ]
-  },
-  {
-    "slug": "high-severity-nvidia-vulnerability-lets-unauthenti-4455e9",
-    "title": "High‑severity NVIDIA vulnerability lets unauthenticated attackers crash GPU monitoring",
-    "summary": "Hundreds of internet‑exposed GPU servers were vulnerable to a high‑severity flaw in NVIDIA’s DCGM Exporter (CVE‑2026‑47483). The flaw allows unauthenticated attackers to crash the monitoring service, potentially disrupting AI workloads. NVIDIA rated the issue CVSS 8.2 and issued a security bulletin on July 28, 2026.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/09/nvidia-dcgm-exporter-vulnerability-cve-2026-47483/",
-    "publishedAt": "2026-10-09T12:26:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "high-severity-nvidia-vulnerability-lets-unauthenti",
-      "article-4455e9",
-      "4455e9",
-      "high-severity-nvidia-vulnerability-lets-unauthenticated-atta"
     ]
   }
 ];

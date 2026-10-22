@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Oct 2026 20:11:53 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 21:56:32 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Railway Warns Developers to Rotate Secrets After Suspicious Activity</title>
+      <link>https://secubuzz.com/news/railway-warns-developers-to-rotate-secrets-after-s-57cfde</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/railway-warns-developers-to-rotate-secrets-after-s-57cfde</guid>
+      <description><![CDATA[Railway detected suspicious activity on its cloud platform that stores customer environment variables, urging developers to rotate secrets. The anomaly suggests possible unauthorized access to configuration data, though no exfiltration has been confirmed by the platform. Railway recommends enforcing secret rotation, enabling multi‑factor authentication, and auditing access logs for irregular activity.]]></description>
+      <pubDate>Thu, 22 Oct 2026 21:25:31 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/railway-warns-devs-to-rotate-secrets-after-potential-breach/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Capcom Breach Exposes 11.7 Million Customer Accounts</title>
+      <link>https://secubuzz.com/news/capcom-breach-exposes-11-7-million-customer-accoun-7475b3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/capcom-breach-exposes-11-7-million-customer-accoun-7475b3</guid>
+      <description><![CDATA[Capcom confirmed a breach of its CAPCOM ID membership service, exposing over 11.7 million customer email addresses and related data. Attackers accessed user credentials through an undisclosed vulnerability, resulting in mass credential compromise; no public exploit disclosed and potentially enabling further phishing campaigns. Security teams should enforce MFA, rotate passwords, and conduct a audit of access logs to detect any lingering threats.]]></description>
+      <pubDate>Thu, 22 Oct 2026 20:22:45 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/capcom-confirms-data-breach-affecting-117-million-accounts/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>EU Supermarkets Hit by Outdated Refrigerator Firmware</title>
+      <link>https://secubuzz.com/news/eu-supermarkets-hit-by-outdated-refrigerator-firmw-666457</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/eu-supermarkets-hit-by-outdated-refrigerator-firmw-666457</guid>
+      <description><![CDATA[An outdated OT firmware controlling refrigeration systems in EU supermarkets enabled attackers to compromise HVAC controls, causing millions of euros in losses. The flaw stemmed from third‑party firmware management lacking timely updates, allowing unauthorized manipulation of temperature settings. Vendors should immediately deploy the latest firmware patches and enforce strict update policies to mitigate further exposure.]]></description>
+      <pubDate>Thu, 22 Oct 2026 19:30:20 GMT</pubDate>
+      <source url="https://www.darkreading.com/ics-ot-security/eu-grocers-unpatched-fridge-firmware-french">Dark Reading</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Arista VeloCloud Orchestrator SQL Injection Zero-Day Exploited</title>
+      <link>https://secubuzz.com/news/arista-velocloud-orchestrator-sql-injection-zero-d-13b84e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/arista-velocloud-orchestrator-sql-injection-zero-d-13b84e</guid>
+      <description><![CDATA[A zero‑day SQL injection flaw in Arista’s VeloCloud Orchestrator (VCO) permits attackers with read‑only credentials to elevate to operator privileges, granting full control over SD‑WAN networks. The vulnerability is actively exploited in the wild, exposing critical network infrastructure to unauthorized configuration changes. Arista has released a patch; security teams must apply it immediately and restrict read‑only access to mitigate risk.]]></description>
+      <pubDate>Thu, 22 Oct 2026 19:05:17 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>eMudhra Private Key Compromise Exposes Certificate Integrity</title>
       <link>https://secubuzz.com/news/emudhra-private-key-compromise-exposes-certificate-1fb925</link>
@@ -89,15 +125,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Unauthorized AI Agents Detected in Major U.S. Bank Customer Accounts</title>
-      <link>https://secubuzz.com/news/unauthorized-ai-agents-detected-in-major-u-s-bank-6176a5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/unauthorized-ai-agents-detected-in-major-u-s-bank-6176a5</guid>
-      <description><![CDATA[Major U.S. banks report unauthorized third‑party AI agents operating within customer accounts, potentially executing actions beyond user instructions. The intrusion leverages automated tools that can contact call centers or initiate independent requests, exposing sensitive data and disrupting service workflows. Banks must isolate affected accounts, revoke compromised API keys, and apply vendor patches or custom mitigations to stop exploitation.]]></description>
-      <pubDate>Thu, 22 Oct 2026 15:23:07 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/u-s-banks-detect-unauthorized-ai-agents/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
       <title>Claude Security Enhances Continuous Repository Scanning</title>
       <link>https://secubuzz.com/news/claude-security-enhances-continuous-repository-sca-4bb4bc</link>
       <guid isPermaLink="true">https://secubuzz.com/news/claude-security-enhances-continuous-repository-sca-4bb4bc</guid>
@@ -134,6 +161,15 @@
       <category>Policy</category>
     </item>
     <item>
+      <title>PHP 8.5.12/8.4.27/8.3.36/8.2.35 Unauthenticated RCE Vulnerabilities Patched</title>
+      <link>https://secubuzz.com/news/php-8-5-12-8-4-27-8-3-36-8-2-35-unauthenticated-rc-77c054</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/php-8-5-12-8-4-27-8-3-36-8-2-35-unauthenticated-rc-77c054</guid>
+      <description><![CDATA[PHP maintainers released fixes for two critical vulnerabilities that enable unauthenticated remote code execution on PHP 8.5.12, 8.4.27, 8.3.36, and 8.2.35, affecting PHP-FPM, Apache mod_php, php-cgi, FrankenPHP, and LiteSpeed. The flaw allows attackers to trigger code execution before application code runs, posing a high‑severity RCE risk. All PHP users should apply the patches immediately to mitigate the vulnerability.]]></description>
+      <pubDate>Thu, 22 Oct 2026 13:26:51 GMT</pubDate>
+      <source url="https://www.schneier.com/blog/archives/2026/10/new-serious-php-vulnerabilities-released-and-patched.html">Schneier on Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>LiteLLM Supply Chain Compromise Harvests Cloud Credentials</title>
       <link>https://secubuzz.com/news/litellm-supply-chain-compromise-harvests-cloud-cre-162d69</link>
       <guid isPermaLink="true">https://secubuzz.com/news/litellm-supply-chain-compromise-harvests-cloud-cre-162d69</guid>
@@ -141,6 +177,15 @@
       <pubDate>Thu, 22 Oct 2026 13:10:28 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/22/litellm-compromised-supply-chain-attack-pypi-docker/">Help Net Security</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Malware Infiltration Forces Japanese Cloud Provider to Shut Down Servers</title>
+      <link>https://secubuzz.com/news/malware-infiltration-forces-japanese-cloud-provide-52ea52</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/malware-infiltration-forces-japanese-cloud-provide-52ea52</guid>
+      <description><![CDATA[Hackers planted malware in customer server environments on Japan’s Onamae.com Desktop Cloud, prompting the provider to shut down 26,739 servers across all service plans. The intrusion threatens stored data and login credentials, indicating a widespread breach of cloud infrastructure. The provider must isolate affected systems, conduct forensic analysis, and enforce stricter access controls to prevent further compromise.]]></description>
+      <pubDate>Thu, 22 Oct 2026 13:05:45 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-planted-malware/">Cyber Security News</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>Cloudflare Secures South Korea ISMS Certification After Comprehensive Audit</title>
@@ -179,15 +224,6 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>Critical GitLab Flaw (CVE-2026-110264, CVSS 10.0) Allows Unauthenticated RCE</title>
-      <link>https://secubuzz.com/news/critical-gitlab-flaw-cve-2026-110264-cvss-10-0-all-12e68d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/critical-gitlab-flaw-cve-2026-110264-cvss-10-0-all-12e68d</guid>
-      <description><![CDATA[GitLab has issued emergency security releases for CVE-2026-110264, a maximum-severity (CVSS 10.0) flaw in its regular expression compiler allowing unauthenticated remote code execution. The vulnerability impacts self-managed GitLab Community and Enterprise editions dating back to version 7.0. Administrators must immediately upgrade to versions 19.5.1, 19.4.3, 19.3.6, or 19.2.9.]]></description>
-      <pubDate>Thu, 22 Oct 2026 11:41:48 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/gitlab-warns-of-new-max-severity-code-execution-vulnerability/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>XTIUM Expands XTAI with Centralized AI Governance and Cost Management</title>
       <link>https://secubuzz.com/news/xtium-expands-xtai-with-centralized-ai-governance-1a8d62</link>
       <guid isPermaLink="true">https://secubuzz.com/news/xtium-expands-xtai-with-centralized-ai-governance-1a8d62</guid>
@@ -204,6 +240,15 @@
       <pubDate>Thu, 22 Oct 2026 11:27:36 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/22/sentinelone-singularity-agentic-detection-and-response/">Help Net Security</source>
       <category>Policy</category>
+    </item>
+    <item>
+      <title>Cash App Account Created with Stolen Identity Leads to Prison Sentence</title>
+      <link>https://secubuzz.com/news/cash-app-account-created-with-stolen-identity-lead-20ee7d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cash-app-account-created-with-stolen-identity-lead-20ee7d</guid>
+      <description><![CDATA[A woman faces up to six years in prison after a Cash App account was opened using her stolen identity. The incident illustrates credential theft via social engineering, with attackers creating an unauthorized account to access financial services. Cash App has not released a patch, but users should enable two‑factor authentication and monitor account activity for unauthorized changes.]]></description>
+      <pubDate>Thu, 22 Oct 2026 11:27:07 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/news/2026/10/woman-faces-years-in-prison-over-a-cash-app-account-she-says-she-never-opened">Malwarebytes Labs</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>Broadcom Launches Arcot Scam Defense for 3‑D Secure Authentication</title>
@@ -368,15 +413,6 @@
       <category>Malware</category>
     </item>
     <item>
-      <title>Onamae Desktop Cloud Breach Affects 26,739 Servers</title>
-      <link>https://secubuzz.com/news/onamae-desktop-cloud-breach-affects-26-739-servers-3354a3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/onamae-desktop-cloud-breach-affects-26-739-servers-3354a3</guid>
-      <description><![CDATA[Hackers breached Japan’s Onamae Desktop Cloud, compromising the infrastructure of a popular VPS provider and installing malware on up to 26,739 customer servers. The attack leveraged unauthorized access to the cloud management platform, enabling widespread distribution of malicious code across virtual machines. Onamae has issued a patch and urged customers to update credentials and scan for infections.]]></description>
-      <pubDate>Wed, 21 Oct 2026 21:43:27 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/japans-onamae-desktop-cloud-hacked-up-to-27-000-servers-affected/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
       <title>Lazarus Employs Post‑Quantum Cryptography for Malware Delivery</title>
       <link>https://secubuzz.com/news/lazarus-employs-post-quantum-cryptography-for-malw-67e918</link>
       <guid isPermaLink="true">https://secubuzz.com/news/lazarus-employs-post-quantum-cryptography-for-malw-67e918</guid>
@@ -420,42 +456,6 @@
       <pubDate>Wed, 21 Oct 2026 18:49:04 GMT</pubDate>
       <source url="https://www.malwarebytes.com/blog/news/2026/10/whatsapp-chatbot-privacy-regulators">Malwarebytes Labs</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Plex Media Server Vulnerabilities Exploited in Plex2Shell Attacks</title>
-      <link>https://secubuzz.com/news/plex-media-server-vulnerabilities-exploited-in-ple-3bd12d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/plex-media-server-vulnerabilities-exploited-in-ple-3bd12d</guid>
-      <description><![CDATA[Attackers chain four Plex Media Server vulnerabilities via Plex2Shell to breach servers. The flaw chain allows remote code execution without authentication, exploiting memory corruption and privilege escalation, with active exploitation in the wild. Plex has released patches; administrators should apply the latest update and disable remote access until remediation immediately.]]></description>
-      <pubDate>Wed, 21 Oct 2026 18:34:42 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/cisa-hackers-chain-plex-flaws-in-plex2shell-attacks-to-breach-servers/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Russian Actors Target U.S. Democratic Lawmakers Ahead of Midterms</title>
-      <link>https://secubuzz.com/news/russian-actors-target-u-s-democratic-lawmakers-ahe-133e1b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/russian-actors-target-u-s-democratic-lawmakers-ahe-133e1b</guid>
-      <description><![CDATA[Russian actors are reportedly targeting U.S. Democratic lawmakers to undermine party cohesion ahead of midterms. The threat assessment indicates no evidence of direct election infrastructure compromise, but signals intent to influence political discourse through cyber operations. Lawmakers should monitor for phishing, social engineering, and insider threat indicators, and coordinate with federal agencies for threat intelligence sharing.]]></description>
-      <pubDate>Wed, 21 Oct 2026 18:28:00 GMT</pubDate>
-      <source url="https://therecord.media/democrat-lawmakers-say-russia-is-aiming-to-undermine-party">The Record</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>PHP Foundation Discloses Two Critical Vulnerabilities Amid AI Review</title>
-      <link>https://secubuzz.com/news/php-foundation-discloses-two-critical-vulnerabilit-3e479a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/php-foundation-discloses-two-critical-vulnerabilit-3e479a</guid>
-      <description><![CDATA[PHP Foundation disclosed two critical vulnerabilities discovered in 2024, with a third‑party AI review amplifying scrutiny. The flaws enable unauthenticated remote code execution via malformed input, yet no public exploit has been reported. PHP has released patches for both bugs; administrators should apply updates immediately and monitor logs for anomalous activity.]]></description>
-      <pubDate>Wed, 21 Oct 2026 17:30:00 GMT</pubDate>
-      <source url="https://therecord.media/php-foundation-statement-critical-vulnerabilities">The Record</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Arrakis Security Report Reveals Dormant AI Agents Retain Valid Credentials</title>
-      <link>https://secubuzz.com/news/arrakis-security-report-reveals-dormant-ai-agents-a25eaa</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/arrakis-security-report-reveals-dormant-ai-agents-a25eaa</guid>
-      <description><![CDATA[Arrakis Security’s 2026 Autonomous Agents Threat Report shows 76% of AI agents have been inactive for 60 days, yet their credentials remain valid and triggers still fire. Dormant agents can be reactivated by attackers, enabling credential reuse and unauthorized access to connected services. Teams should audit credentials, enforce rotation, and monitor trigger activity to mitigate exploitation.]]></description>
-      <pubDate>Wed, 21 Oct 2026 17:05:59 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/arrakis-security-report-finds-76-of-ai-agents-are-dormant-but-keep-their-credentials-and-connections/">Cyber Security News</source>
-      <category>Policy</category>
     </item>
   </channel>
 </rss>
