@@ -11,6 +11,114 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "cisco-patches-34-vulnerabilities-across-multiple-p-14dace",
+    "title": "Cisco Patches 34 Vulnerabilities Across Multiple Products",
+    "summary": "Cisco released patches for 34 critical‑severity defects that could enable command execution, authentication bypass, and XSS attacks in several products. The root cause involved improper input validation and privilege escalation paths, with public proof‑of‑concept code available. Security teams should apply the vendor’s firmware updates immediately to eliminate the exploitation vector.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/cisco-patches-34-vulnerabilities-across-multiple-products/",
+    "publishedAt": "2026-10-22T10:05:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisco-patches-34-vulnerabilities-across-multiple-p",
+      "article-14dace",
+      "14dace",
+      "cisco-patches-34-vulnerabilities-across-multiple-products"
+    ]
+  },
+  {
+    "slug": "php2shell-exploitation-started-days-before-patches-4f1eff",
+    "title": "PHP2Shell Exploitation Started Days Before Patches",
+    "summary": "PHP2Shell attackers began exploiting a remote code execution flaw in PHP applications before the vendor’s patch was issued. The vulnerability allowed unauthenticated attackers to execute arbitrary code via crafted HTTP requests, with active exploitation observed on October 17. Apply the official patch or deploy a web‑application firewall rule to block malicious payloads.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/php2shell-exploitation-started-days-before-patches/",
+    "publishedAt": "2026-10-22T09:48:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "php2shell-exploitation-started-days-before-patches",
+      "article-4f1eff",
+      "4f1eff"
+    ]
+  },
+  {
+    "slug": "delivery-robots-illegally-scan-customers-faces-149241",
+    "title": "Delivery Robots Illegally Scan Customers’ Faces",
+    "summary": "Delivery robots captured customers’ facial data without consent, linking scans to names and addresses for AI training. The flaw stems from unauthorized biometric data collection and lack of user permission controls, exposing personal identifiers to third parties. Users should verify robot privacy settings, and vendors must implement explicit consent mechanisms and data protection policies.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/privacy/2026/10/delivery-bots-accused-of-illegally-scanning-customers",
+    "publishedAt": "2026-10-22T09:39:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "delivery-robots-illegally-scan-customers-faces",
+      "article-149241",
+      "149241"
+    ]
+  },
+  {
+    "slug": "open-source-projects-drop-security-controls-exposi-28e624",
+    "title": "Open-Source Projects Drop Security Controls, Exposing Unauthenticated Functionality",
+    "summary": "Anthropic’s Frontier Red Team identified 493 instances where open-source projects enabled complex features for unauthenticated users, even when disabled or unnecessary. The root cause is missing access controls and premature code execution before security checks, increasing attack surface. Developers should audit configuration defaults, enforce least privilege, and move security checks earlier in the execution flow.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/anthropic-attack-surface-reduction-open-source/",
+    "publishedAt": "2026-10-22T09:10:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "open-source-projects-drop-security-controls-exposi",
+      "article-28e624",
+      "28e624",
+      "open-source-projects-drop-security-controls-exposing-unauthe"
+    ]
+  },
+  {
+    "slug": "hackers-exploit-siemens-software-center-dll-side-l-316c85",
+    "title": "Hackers Exploit Siemens Software Center DLL Side-Loading Flaw",
+    "summary": "Hackers are exploiting a DLL side-loading flaw in Siemens Software Center to run malware through a trusted, signed application. Tracked as CVE-2026-110936, the weakness affects versions before 4.0.9.8 and enables unauthenticated remote code execution via malicious DLL injection. Siemens has released a patch that will be applied the next time the application starts; security teams should update immediately.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/siemens-software-center-flaw-exploited/",
+    "publishedAt": "2026-10-22T08:29:16.000Z",
+    "cves": [
+      "CVE-2026-110936"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-exploit-siemens-software-center-dll-side-l",
+      "article-316c85",
+      "316c85",
+      "hackers-exploit-siemens-software-center-dll-side-loading-fla"
+    ]
+  },
+  {
+    "slug": "litellm-release-pipeline-compromised-malicious-pac-75e4a0",
+    "title": "LiteLLM Release Pipeline Compromised, Malicious Package Distributed",
+    "summary": "LiteLLM disclosed that threat actors compromised its release pipeline to push a malicious Python package containing a credential stealer and backdoor. The compromised release, version 1.107.0, was published to Docker Hub and PyPI on October 21, 2026, enabling credential theft via the package’s hidden payload. Affected users should uninstall the package, revoke exposed tokens, and monitor for unauthorized activity while awaiting a LiteLLM fix.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/litellm-suspects-github-token-leak-in.html",
+    "publishedAt": "2026-10-22T08:28:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "litellm-release-pipeline-compromised-malicious-pac",
+      "article-75e4a0",
+      "75e4a0",
+      "litellm-release-pipeline-compromised-malicious-package-distr"
+    ]
+  },
+  {
     "slug": "imperial-college-researchers-expose-speech-to-text-6b71c1",
     "title": "Imperial College Researchers Expose Speech‑to‑Text Model Manipulation",
     "summary": "Researchers at Imperial College London discovered that attackers can tamper with speech‑to‑text models during fine‑tuning to produce pre‑selected malicious outputs for a chosen speaker. The manipulation forces AI agents to transcribe a request for $5,000, which sandboxed banking systems then execute, demonstrating a covert credential‑less exploitation vector. Defenders should restrict fine‑tuning access and monitor outputs for anomalous requests.",
@@ -26,6 +134,23 @@ export const news: NewsBrief[] = [
       "article-6b71c1",
       "6b71c1",
       "imperial-college-researchers-expose-speech-to-text-model-man"
+    ]
+  },
+  {
+    "slug": "uae-transitions-50-of-gov-t-services-to-agentic-ai-67f591",
+    "title": "UAE Transitions 50% of Gov't Services to Agentic AI",
+    "summary": "UAE transitioning 50% of government services to agentic AI, aiming to build security foundation. The shift involves integrating AI-driven automation into public service delivery, potentially exposing new attack surfaces but no specific flaw cited. Security teams should monitor AI integration, enforce robust access controls, and conduct continuous risk assessments ongoing.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/uae-transitions-50-government-services-agentic-ai",
+    "publishedAt": "2026-10-22T05:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "uae-transitions-50-of-gov-t-services-to-agentic-ai",
+      "article-67f591",
+      "67f591"
     ]
   },
   {
@@ -206,24 +331,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "cisco-talos-reports-compromised-emudhra-intermedia-472d98",
-    "title": "Cisco Talos Reports Compromised eMudhra Intermediate Certificates",
-    "summary": "Cisco Talos identified eight compromised intermediate certificates issued by eMudhra, a prominent Indian certificate authority. The breach allows attackers to forge trusted TLS certificates, potentially enabling man‑in‑the‑middle attacks against users of eMudhra‑signed services. Affected entities must revoke the certificates, install updated root certificates, and monitor for anomalous certificate issuance to protect their infrastructure.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cisco Talos",
-    "sourceUrl": "https://blog.talosintelligence.com/compromised-intermediate-certificates/",
-    "publishedAt": "2026-10-21T20:43:29.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisco-talos-reports-compromised-emudhra-intermedia",
-      "article-472d98",
-      "472d98",
-      "cisco-talos-reports-compromised-emudhra-intermediate-certifi"
-    ]
-  },
-  {
     "slug": "lazarus-employs-post-quantum-cryptography-for-malw-67e918",
     "title": "Lazarus Employs Post‑Quantum Cryptography for Malware Delivery",
     "summary": "Lazarus hackers are leveraging a post‑quantum cryptographic mechanism to secure malicious payload delivery in new operations that combine legacy and contemporary malware. The technique relies on quantum‑safe key exchange to obfuscate command and control traffic, potentially evading traditional signature‑based detection. Security teams should monitor for anomalous encrypted traffic and update endpoint detection tools to recognize quantum‑cryptographic signatures.",
@@ -328,24 +435,6 @@ export const news: NewsBrief[] = [
       "sentinelone-blocks-php2shell-persistence-technique",
       "article-245b12",
       "245b12"
-    ]
-  },
-  {
-    "slug": "php2shell-vulnerabilities-trigger-active-exploitat-31d443",
-    "title": "PHP2Shell Vulnerabilities Trigger Active Exploitation",
-    "summary": "Two critical PHP vulnerabilities, identified as PHP2Shell, have been disclosed and are actively being exploited by threat actors. The flaws allow remote code execution through malformed input in popular PHP frameworks, with public proof‑of‑concept exploits demonstrating high‑severity impact on web applications. Immediate patching of affected PHP versions and application hardening is mandatory to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/application-security/php2shell-bugs-red-alert-security-industry",
-    "publishedAt": "2026-10-21T19:19:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "php2shell-vulnerabilities-trigger-active-exploitat",
-      "article-31d443",
-      "31d443",
-      "php2shell-vulnerabilities-trigger-active-exploitation"
     ]
   },
   {
@@ -562,24 +651,6 @@ export const news: NewsBrief[] = [
       "article-123072",
       "123072",
       "widespread-php-flaw-may-cause-many-site-outages-today"
-    ]
-  },
-  {
-    "slug": "litellm-1-107-0-pypi-release-compromised-with-cred-1de743",
-    "title": "LiteLLM 1.107.0 PyPI Release Compromised with Credential Stealer and RAT",
-    "summary": "LiteLLM version 1.107.0 was compromised on PyPI, distributing a credential stealer and remote access trojan through all seven wheel files and Docker images, exposing developer systems, build runners, and AI services. The malicious code exploits the distribution channel, enabling attackers to harvest credentials and maintain persistent remote control without user interaction. Aikido recommends immediate removal of the affected package and applying the vendor’s patched release.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/litellm-compromised/",
-    "publishedAt": "2026-10-21T15:11:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "litellm-1-107-0-pypi-release-compromised-with-cred",
-      "article-1de743",
-      "1de743",
-      "litellm-1-107-0-pypi-release-compromised-with-credential-ste"
     ]
   },
   {
@@ -1814,26 +1885,6 @@ export const news: NewsBrief[] = [
       "article-25a3ed",
       "25a3ed",
       "ex-openai-worker-accused-of-bug-in-the-air-surveillance"
-    ]
-  },
-  {
-    "slug": "siemens-software-center-dll-side-loading-exploited-193548",
-    "title": "Siemens Software Center DLL Side-Loading Exploited in ClickFix Campaign",
-    "summary": "Attackers leverage CVE-2026-110936, a DLL side-loading flaw in Siemens Software Center, to deliver ClickFix malware. The vulnerability, scored CVSS 8.4, is actively exploited. Siemens released version 4.0.9.8 to remediate the issue. Users must update to the patched release to mitigate infection risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/exploitation-siemens-software-center-vulnerability-cve-2026-110936/",
-    "publishedAt": "2026-10-20T12:23:08.000Z",
-    "cves": [
-      "CVE-2026-110936"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "siemens-software-center-dll-side-loading-exploited",
-      "article-193548",
-      "193548",
-      "siemens-software-center-dll-side-loading-exploited-in-clickf"
     ]
   },
   {
@@ -6211,59 +6262,6 @@ export const news: NewsBrief[] = [
       "article-1b355d",
       "1b355d",
       "microsoft-urges-early-testing-of-post-quantum-certificate-ec"
-    ]
-  },
-  {
-    "slug": "google-ai-training-deal-could-expose-spirit-airlin-508b7d",
-    "title": "Google AI Training Deal Could Expose Spirit Airlines Data",
-    "summary": "Lawmakers warn that a proposed $10 million AI training deal with Google could expose Spirit Airlines’ sensitive data, including 100 million emails, 500 million Teams messages, employment contracts, employee records, payroll and tax information. The sale would grant Google access to these documents, raising privacy concerns.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/lawmakers-warn-of-google-spirit-ai-training-deal",
-    "publishedAt": "2026-10-08T20:27:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-ai-training-deal-could-expose-spirit-airlin",
-      "article-508b7d",
-      "508b7d",
-      "google-ai-training-deal-could-expose-spirit-airlines-data"
-    ]
-  },
-  {
-    "slug": "russian-spy-group-enhances-matchboil-malware-with-2f388d",
-    "title": "Russian Spy Group Enhances 'MatchBoil' Malware with Stealth Features",
-    "summary": "Cyber‑espionage actor UAC‑0099 has refined its flagship dropper, 'MatchBoil', adding stealth capabilities in campaigns targeting Ukrainian organizations. The update improves concealment but no active exploitation has been reported.",
-    "category": "Malware",
-    "severity": "MEDIUM",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/russian-spies-matchboil-malware-facelift",
-    "publishedAt": "2026-10-08T18:01:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "russian-spy-group-enhances-matchboil-malware-with",
-      "article-2f388d",
-      "2f388d",
-      "russian-spy-group-enhances-matchboil-malware-with-stealth-fe"
-    ]
-  },
-  {
-    "slug": "making-sure-the-checks-get-printed-21b9a6",
-    "title": "Making sure the checks get printed",
-    "summary": "Pierre's debut newsletter discusses real‑world risk management challenges and strategies for keeping critical systems operational when ideal patches are unavailable. It highlights the importance of practical controls, monitoring, and contingency planning to mitigate operational risk in complex environments for organizations today.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Cisco Talos",
-    "sourceUrl": "https://blog.talosintelligence.com/making-sure-the-checks-get-printed/",
-    "publishedAt": "2026-10-08T18:00:29.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "making-sure-the-checks-get-printed",
-      "article-21b9a6",
-      "21b9a6"
     ]
   }
 ];

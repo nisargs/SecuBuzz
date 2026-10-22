@@ -5,8 +5,62 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Oct 2026 05:18:23 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 10:15:50 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Cisco Patches 34 Vulnerabilities Across Multiple Products</title>
+      <link>https://secubuzz.com/news/cisco-patches-34-vulnerabilities-across-multiple-p-14dace</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisco-patches-34-vulnerabilities-across-multiple-p-14dace</guid>
+      <description><![CDATA[Cisco released patches for 34 critical‑severity defects that could enable command execution, authentication bypass, and XSS attacks in several products. The root cause involved improper input validation and privilege escalation paths, with public proof‑of‑concept code available. Security teams should apply the vendor’s firmware updates immediately to eliminate the exploitation vector.]]></description>
+      <pubDate>Thu, 22 Oct 2026 10:05:21 GMT</pubDate>
+      <source url="https://www.securityweek.com/cisco-patches-34-vulnerabilities-across-multiple-products/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>PHP2Shell Exploitation Started Days Before Patches</title>
+      <link>https://secubuzz.com/news/php2shell-exploitation-started-days-before-patches-4f1eff</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/php2shell-exploitation-started-days-before-patches-4f1eff</guid>
+      <description><![CDATA[PHP2Shell attackers began exploiting a remote code execution flaw in PHP applications before the vendor’s patch was issued. The vulnerability allowed unauthenticated attackers to execute arbitrary code via crafted HTTP requests, with active exploitation observed on October 17. Apply the official patch or deploy a web‑application firewall rule to block malicious payloads.]]></description>
+      <pubDate>Thu, 22 Oct 2026 09:48:58 GMT</pubDate>
+      <source url="https://www.securityweek.com/php2shell-exploitation-started-days-before-patches/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Delivery Robots Illegally Scan Customers’ Faces</title>
+      <link>https://secubuzz.com/news/delivery-robots-illegally-scan-customers-faces-149241</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/delivery-robots-illegally-scan-customers-faces-149241</guid>
+      <description><![CDATA[Delivery robots captured customers’ facial data without consent, linking scans to names and addresses for AI training. The flaw stems from unauthorized biometric data collection and lack of user permission controls, exposing personal identifiers to third parties. Users should verify robot privacy settings, and vendors must implement explicit consent mechanisms and data protection policies.]]></description>
+      <pubDate>Thu, 22 Oct 2026 09:39:23 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/privacy/2026/10/delivery-bots-accused-of-illegally-scanning-customers">Malwarebytes Labs</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Open-Source Projects Drop Security Controls, Exposing Unauthenticated Functionality</title>
+      <link>https://secubuzz.com/news/open-source-projects-drop-security-controls-exposi-28e624</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/open-source-projects-drop-security-controls-exposi-28e624</guid>
+      <description><![CDATA[Anthropic’s Frontier Red Team identified 493 instances where open-source projects enabled complex features for unauthenticated users, even when disabled or unnecessary. The root cause is missing access controls and premature code execution before security checks, increasing attack surface. Developers should audit configuration defaults, enforce least privilege, and move security checks earlier in the execution flow.]]></description>
+      <pubDate>Thu, 22 Oct 2026 09:10:55 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/22/anthropic-attack-surface-reduction-open-source/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Hackers Exploit Siemens Software Center DLL Side-Loading Flaw</title>
+      <link>https://secubuzz.com/news/hackers-exploit-siemens-software-center-dll-side-l-316c85</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-siemens-software-center-dll-side-l-316c85</guid>
+      <description><![CDATA[Hackers are exploiting a DLL side-loading flaw in Siemens Software Center to run malware through a trusted, signed application. Tracked as CVE-2026-110936, the weakness affects versions before 4.0.9.8 and enables unauthenticated remote code execution via malicious DLL injection. Siemens has released a patch that will be applied the next time the application starts; security teams should update immediately.]]></description>
+      <pubDate>Thu, 22 Oct 2026 08:29:16 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/siemens-software-center-flaw-exploited/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>LiteLLM Release Pipeline Compromised, Malicious Package Distributed</title>
+      <link>https://secubuzz.com/news/litellm-release-pipeline-compromised-malicious-pac-75e4a0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/litellm-release-pipeline-compromised-malicious-pac-75e4a0</guid>
+      <description><![CDATA[LiteLLM disclosed that threat actors compromised its release pipeline to push a malicious Python package containing a credential stealer and backdoor. The compromised release, version 1.107.0, was published to Docker Hub and PyPI on October 21, 2026, enabling credential theft via the package’s hidden payload. Affected users should uninstall the package, revoke exposed tokens, and monitor for unauthorized activity while awaiting a LiteLLM fix.]]></description>
+      <pubDate>Thu, 22 Oct 2026 08:28:48 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/litellm-suspects-github-token-leak-in.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Imperial College Researchers Expose Speech‑to‑Text Model Manipulation</title>
       <link>https://secubuzz.com/news/imperial-college-researchers-expose-speech-to-text-6b71c1</link>
@@ -15,6 +69,15 @@
       <pubDate>Thu, 22 Oct 2026 05:00:44 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/22/research-speech-model-backdoor/">Help Net Security</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>UAE Transitions 50% of Gov&apos;t Services to Agentic AI</title>
+      <link>https://secubuzz.com/news/uae-transitions-50-of-gov-t-services-to-agentic-ai-67f591</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/uae-transitions-50-of-gov-t-services-to-agentic-ai-67f591</guid>
+      <description><![CDATA[UAE transitioning 50% of government services to agentic AI, aiming to build security foundation. The shift involves integrating AI-driven automation into public service delivery, potentially exposing new attack surfaces but no specific flaw cited. Security teams should monitor AI integration, enforce robust access controls, and conduct continuous risk assessments ongoing.]]></description>
+      <pubDate>Thu, 22 Oct 2026 05:00:00 GMT</pubDate>
+      <source url="https://www.darkreading.com/cybersecurity-operations/uae-transitions-50-government-services-agentic-ai">Dark Reading</source>
+      <category>Policy</category>
     </item>
     <item>
       <title>AI Coding Boom Exposes Cracks in Cloud Development</title>
@@ -107,15 +170,6 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>Cisco Talos Reports Compromised eMudhra Intermediate Certificates</title>
-      <link>https://secubuzz.com/news/cisco-talos-reports-compromised-emudhra-intermedia-472d98</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisco-talos-reports-compromised-emudhra-intermedia-472d98</guid>
-      <description><![CDATA[Cisco Talos identified eight compromised intermediate certificates issued by eMudhra, a prominent Indian certificate authority. The breach allows attackers to forge trusted TLS certificates, potentially enabling man‑in‑the‑middle attacks against users of eMudhra‑signed services. Affected entities must revoke the certificates, install updated root certificates, and monitor for anomalous certificate issuance to protect their infrastructure.]]></description>
-      <pubDate>Wed, 21 Oct 2026 20:43:29 GMT</pubDate>
-      <source url="https://blog.talosintelligence.com/compromised-intermediate-certificates/">Cisco Talos</source>
-      <category>Breach</category>
-    </item>
-    <item>
       <title>Lazarus Employs Post‑Quantum Cryptography for Malware Delivery</title>
       <link>https://secubuzz.com/news/lazarus-employs-post-quantum-cryptography-for-malw-67e918</link>
       <guid isPermaLink="true">https://secubuzz.com/news/lazarus-employs-post-quantum-cryptography-for-malw-67e918</guid>
@@ -167,15 +221,6 @@
       <description><![CDATA[Attackers use PHP2Shell to spawn a web worker that executes arbitrary PHP code, enabling persistence on compromised web servers. The Singularity Agent detects this post‑exploitation activity by monitoring process trees, terminating malicious workers, and hunting for related artifacts, stopping lateral movement. Deploy the latest SentinelOne Singularity Agent, enable web worker monitoring, and apply vendor updates to secure against PHP2Shell.]]></description>
       <pubDate>Wed, 21 Oct 2026 19:21:11 GMT</pubDate>
       <source url="https://www.sentinelone.com/blog/stopping-php2shell-how-sentinelone-protects-customers-from-this-attack-technique/">SentinelOne</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>PHP2Shell Vulnerabilities Trigger Active Exploitation</title>
-      <link>https://secubuzz.com/news/php2shell-vulnerabilities-trigger-active-exploitat-31d443</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/php2shell-vulnerabilities-trigger-active-exploitat-31d443</guid>
-      <description><![CDATA[Two critical PHP vulnerabilities, identified as PHP2Shell, have been disclosed and are actively being exploited by threat actors. The flaws allow remote code execution through malformed input in popular PHP frameworks, with public proof‑of‑concept exploits demonstrating high‑severity impact on web applications. Immediate patching of affected PHP versions and application hardening is mandatory to mitigate the risk.]]></description>
-      <pubDate>Wed, 21 Oct 2026 19:19:17 GMT</pubDate>
-      <source url="https://www.darkreading.com/application-security/php2shell-bugs-red-alert-security-industry">Dark Reading</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -284,15 +329,6 @@
       <description><![CDATA[A widespread PHP flaw lets attackers seize full control over servers that have not updated core software. The vulnerabilities enable remote code execution via crafted requests, and active exploits are already in the wild, causing frequent 404 errors. Site owners must immediately apply PHP security patches, disable vulnerable functions, and monitor logs for anomalous activity.]]></description>
       <pubDate>Wed, 21 Oct 2026 15:26:07 GMT</pubDate>
       <source url="https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/">Krebs on Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>LiteLLM 1.107.0 PyPI Release Compromised with Credential Stealer and RAT</title>
-      <link>https://secubuzz.com/news/litellm-1-107-0-pypi-release-compromised-with-cred-1de743</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/litellm-1-107-0-pypi-release-compromised-with-cred-1de743</guid>
-      <description><![CDATA[LiteLLM version 1.107.0 was compromised on PyPI, distributing a credential stealer and remote access trojan through all seven wheel files and Docker images, exposing developer systems, build runners, and AI services. The malicious code exploits the distribution channel, enabling attackers to harvest credentials and maintain persistent remote control without user interaction. Aikido recommends immediate removal of the affected package and applying the vendor’s patched release.]]></description>
-      <pubDate>Wed, 21 Oct 2026 15:11:27 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/litellm-compromised/">Cyber Security News</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -420,42 +456,6 @@
       <pubDate>Wed, 21 Oct 2026 12:05:00 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/china-aligned-bronze-sandcastle-abuses.html">The Hacker News</source>
       <category>Malware</category>
-    </item>
-    <item>
-      <title>Generative AI Weakens Behavior-Only Email Detection, Proofpoint Reports</title>
-      <link>https://secubuzz.com/news/generative-ai-weakens-behavior-only-email-detectio-74d84a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/generative-ai-weakens-behavior-only-email-detectio-74d84a</guid>
-      <description><![CDATA[Generative AI is erasing behavioral tells, weakening behavior-only detection, Proofpoint reports. The shift replaces clumsy wording, generic pretexts, and reused templates with fluent, personalized messages that evade traditional email filters. Security teams must adopt advanced content analysis, machine learning models, and contextual threat intelligence to counter evolving email threats.]]></description>
-      <pubDate>Wed, 21 Oct 2026 11:53:34 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/generative-ai-is-erasing-behavioral.html">The Hacker News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Signal Calling Library Bug Allows Post-Hangup Audio</title>
-      <link>https://secubuzz.com/news/signal-calling-library-bug-allows-post-hangup-audi-26c9d5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/signal-calling-library-bug-allows-post-hangup-audi-26c9d5</guid>
-      <description><![CDATA[A flaw in Signal’s calling library permits a participant to continue hearing audio after the caller hangs up, exposing ongoing conversation data. The vulnerability stems from improper termination handling, enabling unauthorized audio capture without authentication. Updating to the latest Signal version applies the fix and restores proper call closure.]]></description>
-      <pubDate>Wed, 21 Oct 2026 11:37:57 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/bugs/2026/10/signal-bug-could-let-someone-keep-listening-after-you-hang-up">Malwarebytes Labs</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Ransomware Exploits CVE-2026-0257 in Palo Alto GlobalProtect VPN</title>
-      <link>https://secubuzz.com/news/ransomware-exploits-cve-2026-0257-in-palo-alto-glo-54fa4d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ransomware-exploits-cve-2026-0257-in-palo-alto-glo-54fa4d</guid>
-      <description><![CDATA[Ransomware groups exploit CVE-2026-0257, an authentication bypass in Palo Alto Networks’ PAN-OS GlobalProtect, allowing remote unauthenticated VPN access. The flaw arises from cookie validation failures, enabling attackers to establish unauthorized connections to GlobalProtect portals and gateways. Palo Alto released a patch in May; organizations must apply the update immediately to prevent exploitation.]]></description>
-      <pubDate>Wed, 21 Oct 2026 11:13:39 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/21/ransomware-groups-exploit-palo-alto-globalprotect-cve-2026-0257/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>WEIS Archive Releases 25 Years of Research Papers</title>
-      <link>https://secubuzz.com/news/weis-archive-releases-25-years-of-research-papers-2eaac9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/weis-archive-releases-25-years-of-research-papers-2eaac9</guid>
-      <description><![CDATA[The Workshop on Economics and Information Security (WEIS) has released an archive containing all papers from its 25-year history, providing a comprehensive resource for researchers. The collection includes foundational essays, such as a 2002 analysis of the economics of information security, offering insights into the field’s evolution. Users can access the archive to study historical security economics literature.]]></description>
-      <pubDate>Wed, 21 Oct 2026 11:02:22 GMT</pubDate>
-      <source url="https://www.schneier.com/blog/archives/2026/10/workshop-on-economics-and-information-security-weis-archive.html">Schneier on Security</source>
-      <category>Policy</category>
     </item>
   </channel>
 </rss>
