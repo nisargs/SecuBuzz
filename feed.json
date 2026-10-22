@@ -146,6 +146,10 @@
       {
         "source": "The Record",
         "sourceUrl": "https://therecord.media/meta-new-mexico-penalty-cambridge-analytica-privacy-case"
+      },
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/meta-ordered-to-pay-25-billion-after.html"
       }
     ]
   },
@@ -190,6 +194,10 @@
       {
         "source": "Help Net Security",
         "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/php2shell-scanner-tool/"
+      },
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/critical-php-vulnerabilities/"
       }
     ]
   },
@@ -310,6 +318,24 @@
     ]
   },
   {
+    "id": "https://www.bleepingcomputer.com/news/security/amazon-says-php2shell-exploitation-began-4-days-before-patches/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/amazon-says-php2shell-exploitation-began-4-days-before-patches/",
+    "title": "Amazon Says PHP2Shell Exploitation Began 4 Days Before Patches",
+    "headline": "Amazon Says PHP2Shell Exploitation Began 4 Days Before Patches",
+    "summary": "Amazon discovered that attackers exploited the PHP2Shell vulnerability four days before patches were released, targeting the web application layer. The flaw allows unauthenticated remote code execution via crafted PHP scripts, and active exploitation was observed in the wild, causing unauthorized access to customer data. Amazon has issued a patch and recommends immediate application of the update to all affected instances.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-22T13:09:12.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/amazon-says-php2shell-exploitation-began-4-days-before-patches/",
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/php2shell-exploitation-started-days-before-patches/"
+      }
+    ]
+  },
+  {
     "id": "https://cybersecuritynews.com/hackers-planted-malware/",
     "sourceUrl": "https://cybersecuritynews.com/hackers-planted-malware/",
     "title": "Malware Infiltration Forces Japanese Cloud Provider to Shut Down Servers",
@@ -328,6 +354,24 @@
       {
         "source": "The Record",
         "sourceUrl": "https://therecord.media/aomei-yet-to-notify-customers-hijack-software"
+      }
+    ]
+  },
+  {
+    "id": "https://www.securityweek.com/indurex-raises-8-million-to-expand-industrial-cybersecurity-platform/",
+    "sourceUrl": "https://www.securityweek.com/indurex-raises-8-million-to-expand-industrial-cybersecurity-platform/",
+    "title": "Indurex Secures $8 Million to Expand Industrial Cybersecurity Platform",
+    "headline": "Indurex Secures $8 Million to Expand Industrial Cybersecurity Platform",
+    "summary": "Indurex, an Amsterdam‑based industrial cybersecurity firm, secured $8 million in funding to accelerate research and expand its platform across Europe and the Middle East. The capital will support development of new threat detection capabilities and broaden commercial deployment. The company plans to deploy updated solutions to protect critical industrial control systems.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-22T13:00:00.000Z",
+    "url": "https://www.securityweek.com/indurex-raises-8-million-to-expand-industrial-cybersecurity-platform/",
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/utilities-cybersecurity-initiative-accenture"
       }
     ]
   },
@@ -361,6 +405,41 @@
         "sourceUrl": "https://thehackernews.com/2026/10/openais-gpt-6-agent-removed-safety.html"
       }
     ]
+  },
+  {
+    "id": "https://cybersecuritynews.com/north-korean-hackers/",
+    "sourceUrl": "https://cybersecuritynews.com/north-korean-hackers/",
+    "title": "North Korean Lazarus Actors Use Post‑Quantum Encryption to Conceal Malware in Operation FlashHole",
+    "headline": "North Korean Lazarus Actors Use Post‑Quantum Encryption to Conceal Malware in Operation FlashHole",
+    "summary": "North Korean-linked Lazarus actors employ post‑quantum cryptography within Operation FlashHole to conceal malware payloads from security tools targeting South Korean organizations. The technique uses a modern key‑establishment protocol rather than simple disk encryption, enabling stealthy delivery and execution of malicious code. Security teams should monitor for anomalous cryptographic traffic and apply updated detection rules.",
+    "category": "NATION_STATE",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-22T12:38:07.000Z",
+    "url": "https://cybersecuritynews.com/north-korean-hackers/",
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/operation-flashhole-lazarus-crossweb-ex-malware-defense"
+      },
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-use-post-quantum-cryptography-for-malware-delivery/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.securityweek.com/signal-vulnerability-lets-malicious-callers-block-hang-ups/",
+    "sourceUrl": "https://www.securityweek.com/signal-vulnerability-lets-malicious-callers-block-hang-ups/",
+    "title": "RingRTC Call Hang-Up Vulnerability Exploited by Malicious Callers",
+    "headline": "RingRTC Call Hang-Up Vulnerability Exploited by Malicious Callers",
+    "summary": "A flaw in the open source RingRTC library allows malicious callers to block call termination, disrupting communication services. The root cause is improper handling of call state transitions, enabling denial-of-service without authentication. Vendors should deploy the latest library update or apply the provided workaround to restore normal call termination.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-22T12:34:31.000Z",
+    "url": "https://www.securityweek.com/signal-vulnerability-lets-malicious-callers-block-hang-ups/",
+    "additionalSources": []
   },
   {
     "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-10",
@@ -512,24 +591,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.securityweek.com/php2shell-exploitation-started-days-before-patches/",
-    "sourceUrl": "https://www.securityweek.com/php2shell-exploitation-started-days-before-patches/",
-    "title": "PHP2Shell Exploitation Started Days Before Patches",
-    "headline": "PHP2Shell Exploitation Started Days Before Patches",
-    "summary": "PHP2Shell attackers began exploiting a remote code execution flaw in PHP applications before the vendor’s patch was issued. The vulnerability allowed unauthenticated attackers to execute arbitrary code via crafted HTTP requests, with active exploitation observed on October 17. Apply the official patch or deploy a web‑application firewall rule to block malicious payloads.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-22T09:48:58.000Z",
-    "url": "https://www.securityweek.com/php2shell-exploitation-started-days-before-patches/",
-    "additionalSources": [
-      {
-        "source": "Dark Reading",
-        "sourceUrl": "https://www.darkreading.com/application-security/php2shell-bugs-red-alert-security-industry"
-      }
-    ]
-  },
-  {
     "id": "https://www.malwarebytes.com/blog/privacy/2026/10/delivery-bots-accused-of-illegally-scanning-customers",
     "sourceUrl": "https://www.malwarebytes.com/blog/privacy/2026/10/delivery-bots-accused-of-illegally-scanning-customers",
     "title": "Delivery Robots Illegally Scan Customers’ Faces",
@@ -657,19 +718,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://cybernewsai.com/blog/operation-flashhole-lazarus-crossweb-ex-malware-defense",
-    "sourceUrl": "https://cybernewsai.com/blog/operation-flashhole-lazarus-crossweb-ex-malware-defense",
-    "title": "Operation FlashHole: Lazarus Weaponizes CrossWeb EX with TechHub Loaders",
-    "headline": "Operation FlashHole: Lazarus Weaponizes CrossWeb EX with TechHub Loaders",
-    "summary": "Lazarus Group launched Operation FlashHole, weaponizing mandatory CrossWeb EX software in South Korea with TechHub loaders to compromise corporate networks. The attack chain exploits the software’s privileged installation process, enabling attackers to execute arbitrary code and exfiltrate data without user interaction. Security teams should disable CrossWeb EX where possible, apply vendor patches, and monitor for anomalous loader activity to mitigate the threat.",
-    "category": "NATION_STATE",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-10-22T01:45:14.000Z",
-    "url": "https://cybernewsai.com/blog/operation-flashhole-lazarus-crossweb-ex-malware-defense",
-    "additionalSources": []
-  },
-  {
     "id": "https://cybersecuritynews.com/godaddy-revoking-tls-certificates/",
     "sourceUrl": "https://cybersecuritynews.com/godaddy-revoking-tls-certificates/",
     "title": "GoDaddy Revokes 404,607 TLS Certificates Over Policy Violations",
@@ -701,24 +749,6 @@
     ]
   },
   {
-    "id": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-use-post-quantum-cryptography-for-malware-delivery/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-use-post-quantum-cryptography-for-malware-delivery/",
-    "title": "Lazarus Employs Post‑Quantum Cryptography for Malware Delivery",
-    "headline": "Lazarus Employs Post‑Quantum Cryptography for Malware Delivery",
-    "summary": "Lazarus hackers are leveraging a post‑quantum cryptographic mechanism to secure malicious payload delivery in new operations that combine legacy and contemporary malware. The technique relies on quantum‑safe key exchange to obfuscate command and control traffic, potentially evading traditional signature‑based detection. Security teams should monitor for anomalous encrypted traffic and update endpoint detection tools to recognize quantum‑cryptographic signatures.",
-    "category": "NATION_STATE",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-21T20:31:48.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-use-post-quantum-cryptography-for-malware-delivery/",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/teradata-ai-data-security/"
-      }
-    ]
-  },
-  {
     "id": "https://www.darkreading.com/cloud-security/marvell-microsoft-oracle-standardize-data-center-hardware-security",
     "sourceUrl": "https://www.darkreading.com/cloud-security/marvell-microsoft-oracle-standardize-data-center-hardware-security",
     "title": "Marvell, Microsoft, and Oracle Standardize FIPS 140-3 Level 3 HSM for Data Centers",
@@ -743,24 +773,6 @@
     "publishedAt": "2026-10-21T20:03:14.000Z",
     "url": "https://www.darkreading.com/cloud-security/cloud-security-alliance-survey-data-loss-prevention-detects-data-loss",
     "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/utilities-cybersecurity-initiative-accenture",
-    "sourceUrl": "https://therecord.media/utilities-cybersecurity-initiative-accenture",
-    "title": "Private Sector Launches $10 Million Initiative to Strengthen Utility Cybersecurity",
-    "headline": "Private Sector Launches $10 Million Initiative to Strengthen Utility Cybersecurity",
-    "summary": "A private sector consortium has launched a $10 million initiative to support up to 500 under‑resourced utilities with cybersecurity enhancements. The program offers technical guidance, threat intelligence sharing, and funding for security controls to address gaps in legacy systems and limited staff. Utilities are urged to engage with the consortium promptly to secure critical infrastructure and comply with emerging regulatory expectations.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Record",
-    "publishedAt": "2026-10-21T19:45:00.000Z",
-    "url": "https://therecord.media/utilities-cybersecurity-initiative-accenture",
-    "additionalSources": [
-      {
-        "source": "Dark Reading",
-        "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/optiv-launches-cyberbot-cybersecurity-awareness-training-program"
-      }
-    ]
   },
   {
     "id": "https://www.malwarebytes.com/blog/news/2026/10/whatsapp-chatbot-privacy-regulators",

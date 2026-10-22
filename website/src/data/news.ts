@@ -354,6 +354,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "amazon-says-php2shell-exploitation-began-4-days-be-1424d2",
+    "title": "Amazon Says PHP2Shell Exploitation Began 4 Days Before Patches",
+    "summary": "Amazon discovered that attackers exploited the PHP2Shell vulnerability four days before patches were released, targeting the web application layer. The flaw allows unauthenticated remote code execution via crafted PHP scripts, and active exploitation was observed in the wild, causing unauthorized access to customer data. Amazon has issued a patch and recommends immediate application of the update to all affected instances.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/amazon-says-php2shell-exploitation-began-4-days-before-patches/",
+    "publishedAt": "2026-10-22T13:09:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "amazon-says-php2shell-exploitation-began-4-days-be",
+      "article-1424d2",
+      "1424d2",
+      "amazon-says-php2shell-exploitation-began-4-days-before-patch"
+    ]
+  },
+  {
     "slug": "malware-infiltration-forces-japanese-cloud-provide-52ea52",
     "title": "Malware Infiltration Forces Japanese Cloud Provider to Shut Down Servers",
     "summary": "Hackers planted malware in customer server environments on Japan’s Onamae.com Desktop Cloud, prompting the provider to shut down 26,739 servers across all service plans. The intrusion threatens stored data and login credentials, indicating a widespread breach of cloud infrastructure. The provider must isolate affected systems, conduct forensic analysis, and enforce stricter access controls to prevent further compromise.",
@@ -369,6 +387,24 @@ export const news: NewsBrief[] = [
       "article-52ea52",
       "52ea52",
       "malware-infiltration-forces-japanese-cloud-provider-to-shut-"
+    ]
+  },
+  {
+    "slug": "indurex-secures-8-million-to-expand-industrial-cyb-6216ea",
+    "title": "Indurex Secures $8 Million to Expand Industrial Cybersecurity Platform",
+    "summary": "Indurex, an Amsterdam‑based industrial cybersecurity firm, secured $8 million in funding to accelerate research and expand its platform across Europe and the Middle East. The capital will support development of new threat detection capabilities and broaden commercial deployment. The company plans to deploy updated solutions to protect critical industrial control systems.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/indurex-raises-8-million-to-expand-industrial-cybersecurity-platform/",
+    "publishedAt": "2026-10-22T13:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "indurex-secures-8-million-to-expand-industrial-cyb",
+      "article-6216ea",
+      "6216ea",
+      "indurex-secures-8-million-to-expand-industrial-cybersecurity"
     ]
   },
   {
@@ -405,6 +441,42 @@ export const news: NewsBrief[] = [
       "article-32bfe1",
       "32bfe1",
       "openai-agents-evade-monitoring-claim-no-misbehavior"
+    ]
+  },
+  {
+    "slug": "north-korean-lazarus-actors-use-post-quantum-encry-97c7d4",
+    "title": "North Korean Lazarus Actors Use Post‑Quantum Encryption to Conceal Malware in Operation FlashHole",
+    "summary": "North Korean-linked Lazarus actors employ post‑quantum cryptography within Operation FlashHole to conceal malware payloads from security tools targeting South Korean organizations. The technique uses a modern key‑establishment protocol rather than simple disk encryption, enabling stealthy delivery and execution of malicious code. Security teams should monitor for anomalous cryptographic traffic and apply updated detection rules.",
+    "category": "Malware",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/north-korean-hackers/",
+    "publishedAt": "2026-10-22T12:38:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "north-korean-lazarus-actors-use-post-quantum-encry",
+      "article-97c7d4",
+      "97c7d4",
+      "north-korean-lazarus-actors-use-post-quantum-encryption-to-c"
+    ]
+  },
+  {
+    "slug": "ringrtc-call-hang-up-vulnerability-exploited-by-ma-44a04b",
+    "title": "RingRTC Call Hang-Up Vulnerability Exploited by Malicious Callers",
+    "summary": "A flaw in the open source RingRTC library allows malicious callers to block call termination, disrupting communication services. The root cause is improper handling of call state transitions, enabling denial-of-service without authentication. Vendors should deploy the latest library update or apply the provided workaround to restore normal call termination.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/signal-vulnerability-lets-malicious-callers-block-hang-ups/",
+    "publishedAt": "2026-10-22T12:34:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ringrtc-call-hang-up-vulnerability-exploited-by-ma",
+      "article-44a04b",
+      "44a04b",
+      "ringrtc-call-hang-up-vulnerability-exploited-by-malicious-ca"
     ]
   },
   {
@@ -587,23 +659,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "php2shell-exploitation-started-days-before-patches-4f1eff",
-    "title": "PHP2Shell Exploitation Started Days Before Patches",
-    "summary": "PHP2Shell attackers began exploiting a remote code execution flaw in PHP applications before the vendor’s patch was issued. The vulnerability allowed unauthenticated attackers to execute arbitrary code via crafted HTTP requests, with active exploitation observed on October 17. Apply the official patch or deploy a web‑application firewall rule to block malicious payloads.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/php2shell-exploitation-started-days-before-patches/",
-    "publishedAt": "2026-10-22T09:48:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "php2shell-exploitation-started-days-before-patches",
-      "article-4f1eff",
-      "4f1eff"
-    ]
-  },
-  {
     "slug": "delivery-robots-illegally-scan-customers-faces-149241",
     "title": "Delivery Robots Illegally Scan Customers’ Faces",
     "summary": "Delivery robots captured customers’ facial data without consent, linking scans to names and addresses for AI training. The flaw stems from unauthorized biometric data collection and lack of user permission controls, exposing personal identifiers to third parties. Users should verify robot privacy settings, and vendors must implement explicit consent mechanisms and data protection policies.",
@@ -765,24 +820,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "operation-flashhole-lazarus-weaponizes-crossweb-ex-354c81",
-    "title": "Operation FlashHole: Lazarus Weaponizes CrossWeb EX with TechHub Loaders",
-    "summary": "Lazarus Group launched Operation FlashHole, weaponizing mandatory CrossWeb EX software in South Korea with TechHub loaders to compromise corporate networks. The attack chain exploits the software’s privileged installation process, enabling attackers to execute arbitrary code and exfiltrate data without user interaction. Security teams should disable CrossWeb EX where possible, apply vendor patches, and monitor for anomalous loader activity to mitigate the threat.",
-    "category": "Malware",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/operation-flashhole-lazarus-crossweb-ex-malware-defense",
-    "publishedAt": "2026-10-22T01:45:14.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "operation-flashhole-lazarus-weaponizes-crossweb-ex",
-      "article-354c81",
-      "354c81",
-      "operation-flashhole-lazarus-weaponizes-crossweb-ex-with-tech"
-    ]
-  },
-  {
     "slug": "godaddy-revokes-404-607-tls-certificates-over-poli-543d19",
     "title": "GoDaddy Revokes 404,607 TLS Certificates Over Policy Violations",
     "summary": "GoDaddy revoked 404,607 SSL/TLS certificates after discovering that issued certificates did not align with its published policies, breaching compliance deadlines. The flaw stemmed from a misconfiguration in the certificate issuance process, exposing customers to potential trust issues. GoDaddy has issued a notice and updated revocation procedures to prevent future policy violations.",
@@ -819,24 +856,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "lazarus-employs-post-quantum-cryptography-for-malw-67e918",
-    "title": "Lazarus Employs Post‑Quantum Cryptography for Malware Delivery",
-    "summary": "Lazarus hackers are leveraging a post‑quantum cryptographic mechanism to secure malicious payload delivery in new operations that combine legacy and contemporary malware. The technique relies on quantum‑safe key exchange to obfuscate command and control traffic, potentially evading traditional signature‑based detection. Security teams should monitor for anomalous encrypted traffic and update endpoint detection tools to recognize quantum‑cryptographic signatures.",
-    "category": "Malware",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-use-post-quantum-cryptography-for-malware-delivery/",
-    "publishedAt": "2026-10-21T20:31:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "lazarus-employs-post-quantum-cryptography-for-malw",
-      "article-67e918",
-      "67e918",
-      "lazarus-employs-post-quantum-cryptography-for-malware-delive"
-    ]
-  },
-  {
     "slug": "marvell-microsoft-and-oracle-standardize-fips-140-722b58",
     "title": "Marvell, Microsoft, and Oracle Standardize FIPS 140-3 Level 3 HSM for Data Centers",
     "summary": "Marvell, Microsoft, and Oracle collaborate to standardize NIST FIPS 140-3 Level 3 integrated HSM for cloud and hyperscale data center infrastructure. The initiative aims to unify hardware security modules, ensuring consistent cryptographic protection across vendors and reducing configuration drift. Stakeholders should adopt the standardized HSM design, validate compliance with FIPS 140-3, and monitor firmware updates for security patches.",
@@ -870,24 +889,6 @@ export const news: NewsBrief[] = [
       "article-1a7745",
       "1a7745",
       "dlp-systems-detect-data-loss-only-after-it-occurs-survey-sho"
-    ]
-  },
-  {
-    "slug": "private-sector-launches-10-million-initiative-to-s-7a4455",
-    "title": "Private Sector Launches $10 Million Initiative to Strengthen Utility Cybersecurity",
-    "summary": "A private sector consortium has launched a $10 million initiative to support up to 500 under‑resourced utilities with cybersecurity enhancements. The program offers technical guidance, threat intelligence sharing, and funding for security controls to address gaps in legacy systems and limited staff. Utilities are urged to engage with the consortium promptly to secure critical infrastructure and comply with emerging regulatory expectations.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/utilities-cybersecurity-initiative-accenture",
-    "publishedAt": "2026-10-21T19:45:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "private-sector-launches-10-million-initiative-to-s",
-      "article-7a4455",
-      "7a4455",
-      "private-sector-launches-10-million-initiative-to-strengthen-"
     ]
   },
   {

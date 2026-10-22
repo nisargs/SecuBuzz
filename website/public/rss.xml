@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Oct 2026 23:17:52 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 23:27:30 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Railway Warns Developers to Rotate Secrets After Suspicious Activity</title>
@@ -179,6 +179,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Amazon Says PHP2Shell Exploitation Began 4 Days Before Patches</title>
+      <link>https://secubuzz.com/news/amazon-says-php2shell-exploitation-began-4-days-be-1424d2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/amazon-says-php2shell-exploitation-began-4-days-be-1424d2</guid>
+      <description><![CDATA[Amazon discovered that attackers exploited the PHP2Shell vulnerability four days before patches were released, targeting the web application layer. The flaw allows unauthenticated remote code execution via crafted PHP scripts, and active exploitation was observed in the wild, causing unauthorized access to customer data. Amazon has issued a patch and recommends immediate application of the update to all affected instances.]]></description>
+      <pubDate>Thu, 22 Oct 2026 13:09:12 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/amazon-says-php2shell-exploitation-began-4-days-before-patches/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Malware Infiltration Forces Japanese Cloud Provider to Shut Down Servers</title>
       <link>https://secubuzz.com/news/malware-infiltration-forces-japanese-cloud-provide-52ea52</link>
       <guid isPermaLink="true">https://secubuzz.com/news/malware-infiltration-forces-japanese-cloud-provide-52ea52</guid>
@@ -186,6 +195,15 @@
       <pubDate>Thu, 22 Oct 2026 13:05:45 GMT</pubDate>
       <source url="https://cybersecuritynews.com/hackers-planted-malware/">Cyber Security News</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Indurex Secures $8 Million to Expand Industrial Cybersecurity Platform</title>
+      <link>https://secubuzz.com/news/indurex-secures-8-million-to-expand-industrial-cyb-6216ea</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/indurex-secures-8-million-to-expand-industrial-cyb-6216ea</guid>
+      <description><![CDATA[Indurex, an Amsterdam‑based industrial cybersecurity firm, secured $8 million in funding to accelerate research and expand its platform across Europe and the Middle East. The capital will support development of new threat detection capabilities and broaden commercial deployment. The company plans to deploy updated solutions to protect critical industrial control systems.]]></description>
+      <pubDate>Thu, 22 Oct 2026 13:00:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/indurex-raises-8-million-to-expand-industrial-cybersecurity-platform/">SecurityWeek</source>
+      <category>Policy</category>
     </item>
     <item>
       <title>Cloudflare Secures South Korea ISMS Certification After Comprehensive Audit</title>
@@ -204,6 +222,24 @@
       <pubDate>Thu, 22 Oct 2026 12:47:42 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/22/openai-agents-disabled-safety-monitoring/">Help Net Security</source>
       <category>Policy</category>
+    </item>
+    <item>
+      <title>North Korean Lazarus Actors Use Post‑Quantum Encryption to Conceal Malware in Operation FlashHole</title>
+      <link>https://secubuzz.com/news/north-korean-lazarus-actors-use-post-quantum-encry-97c7d4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/north-korean-lazarus-actors-use-post-quantum-encry-97c7d4</guid>
+      <description><![CDATA[North Korean-linked Lazarus actors employ post‑quantum cryptography within Operation FlashHole to conceal malware payloads from security tools targeting South Korean organizations. The technique uses a modern key‑establishment protocol rather than simple disk encryption, enabling stealthy delivery and execution of malicious code. Security teams should monitor for anomalous cryptographic traffic and apply updated detection rules.]]></description>
+      <pubDate>Thu, 22 Oct 2026 12:38:07 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/north-korean-hackers/">Cyber Security News</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>RingRTC Call Hang-Up Vulnerability Exploited by Malicious Callers</title>
+      <link>https://secubuzz.com/news/ringrtc-call-hang-up-vulnerability-exploited-by-ma-44a04b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ringrtc-call-hang-up-vulnerability-exploited-by-ma-44a04b</guid>
+      <description><![CDATA[A flaw in the open source RingRTC library allows malicious callers to block call termination, disrupting communication services. The root cause is improper handling of call state transitions, enabling denial-of-service without authentication. Vendors should deploy the latest library update or apply the provided workaround to restore normal call termination.]]></description>
+      <pubDate>Thu, 22 Oct 2026 12:34:31 GMT</pubDate>
+      <source url="https://www.securityweek.com/signal-vulnerability-lets-malicious-callers-block-hang-ups/">SecurityWeek</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Path Traversal and Sensitive Data Exposure in Siemens SIMATIC S7 Webserver .NET Client Library</title>
@@ -296,15 +332,6 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>PHP2Shell Exploitation Started Days Before Patches</title>
-      <link>https://secubuzz.com/news/php2shell-exploitation-started-days-before-patches-4f1eff</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/php2shell-exploitation-started-days-before-patches-4f1eff</guid>
-      <description><![CDATA[PHP2Shell attackers began exploiting a remote code execution flaw in PHP applications before the vendor’s patch was issued. The vulnerability allowed unauthenticated attackers to execute arbitrary code via crafted HTTP requests, with active exploitation observed on October 17. Apply the official patch or deploy a web‑application firewall rule to block malicious payloads.]]></description>
-      <pubDate>Thu, 22 Oct 2026 09:48:58 GMT</pubDate>
-      <source url="https://www.securityweek.com/php2shell-exploitation-started-days-before-patches/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>Delivery Robots Illegally Scan Customers’ Faces</title>
       <link>https://secubuzz.com/news/delivery-robots-illegally-scan-customers-faces-149241</link>
       <guid isPermaLink="true">https://secubuzz.com/news/delivery-robots-illegally-scan-customers-faces-149241</guid>
@@ -386,15 +413,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Operation FlashHole: Lazarus Weaponizes CrossWeb EX with TechHub Loaders</title>
-      <link>https://secubuzz.com/news/operation-flashhole-lazarus-weaponizes-crossweb-ex-354c81</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/operation-flashhole-lazarus-weaponizes-crossweb-ex-354c81</guid>
-      <description><![CDATA[Lazarus Group launched Operation FlashHole, weaponizing mandatory CrossWeb EX software in South Korea with TechHub loaders to compromise corporate networks. The attack chain exploits the software’s privileged installation process, enabling attackers to execute arbitrary code and exfiltrate data without user interaction. Security teams should disable CrossWeb EX where possible, apply vendor patches, and monitor for anomalous loader activity to mitigate the threat.]]></description>
-      <pubDate>Thu, 22 Oct 2026 01:45:14 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/operation-flashhole-lazarus-crossweb-ex-malware-defense">CyberNews AI</source>
-      <category>Malware</category>
-    </item>
-    <item>
       <title>GoDaddy Revokes 404,607 TLS Certificates Over Policy Violations</title>
       <link>https://secubuzz.com/news/godaddy-revokes-404-607-tls-certificates-over-poli-543d19</link>
       <guid isPermaLink="true">https://secubuzz.com/news/godaddy-revokes-404-607-tls-certificates-over-poli-543d19</guid>
@@ -410,15 +428,6 @@
       <description><![CDATA[Google Chrome now prompts users before establishing insecure HTTP connections, extending the Safe Browsing Enhanced Protection feature to all users. This update reduces risk from malware, phishing, and eavesdropping that can exploit unencrypted HTTP traffic. Teams should audit internal services for legacy HTTP endpoints and enforce HTTPS to maintain the protection.]]></description>
       <pubDate>Wed, 21 Oct 2026 22:30:30 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/22/google-chrome-https-protection/">Help Net Security</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>Lazarus Employs Post‑Quantum Cryptography for Malware Delivery</title>
-      <link>https://secubuzz.com/news/lazarus-employs-post-quantum-cryptography-for-malw-67e918</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/lazarus-employs-post-quantum-cryptography-for-malw-67e918</guid>
-      <description><![CDATA[Lazarus hackers are leveraging a post‑quantum cryptographic mechanism to secure malicious payload delivery in new operations that combine legacy and contemporary malware. The technique relies on quantum‑safe key exchange to obfuscate command and control traffic, potentially evading traditional signature‑based detection. Security teams should monitor for anomalous encrypted traffic and update endpoint detection tools to recognize quantum‑cryptographic signatures.]]></description>
-      <pubDate>Wed, 21 Oct 2026 20:31:48 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/lazarus-hackers-use-post-quantum-cryptography-for-malware-delivery/">BleepingComputer</source>
       <category>Malware</category>
     </item>
     <item>
@@ -438,15 +447,6 @@
       <pubDate>Wed, 21 Oct 2026 20:03:14 GMT</pubDate>
       <source url="https://www.darkreading.com/cloud-security/cloud-security-alliance-survey-data-loss-prevention-detects-data-loss">Dark Reading</source>
       <category>Cloud</category>
-    </item>
-    <item>
-      <title>Private Sector Launches $10 Million Initiative to Strengthen Utility Cybersecurity</title>
-      <link>https://secubuzz.com/news/private-sector-launches-10-million-initiative-to-s-7a4455</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/private-sector-launches-10-million-initiative-to-s-7a4455</guid>
-      <description><![CDATA[A private sector consortium has launched a $10 million initiative to support up to 500 under‑resourced utilities with cybersecurity enhancements. The program offers technical guidance, threat intelligence sharing, and funding for security controls to address gaps in legacy systems and limited staff. Utilities are urged to engage with the consortium promptly to secure critical infrastructure and comply with emerging regulatory expectations.]]></description>
-      <pubDate>Wed, 21 Oct 2026 19:45:00 GMT</pubDate>
-      <source url="https://therecord.media/utilities-cybersecurity-initiative-accenture">The Record</source>
-      <category>Policy</category>
     </item>
     <item>
       <title>WhatsApp Chatbot Suppressed Privacy Regulator Guidance</title>
