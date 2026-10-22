@@ -2,6 +2,1256 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-113716",
+    "slug": "cve-2026-113716",
+    "vendor": "Pip",
+    "product": "virtualenv",
+    "name": "virtualenv: Builtin creation follows linked environment directories",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 4.5,
+    "severity": "Medium",
+    "cwe": "CWE-59",
+    "ransomware": false,
+    "description": "The builtin creator accepts existing directory symlinks through ensure_dir() and writes environment files through those directories. This permits writes outside the requested destination. Anthropic's OSS Scanner reported this as ANT-2026-MUFJEG11 in virtualenv-20261015-005, received on 15 October 2026.",
+    "requiredAction": "Upgrade virtualenv to version 21.14.9 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-cw65-gx24-rc82"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113716"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-113724",
+    "slug": "cve-2026-113724",
+    "vendor": "Pip",
+    "product": "virtualenv",
+    "name": "virtualenv: Deletion recovery can change a symlink target's mode",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 4.5,
+    "severity": "Medium",
+    "cwe": "CWE-59",
+    "ransomware": false,
+    "description": "The deletion error handler obtains permission bits with lstat() but applies them through chmod(), which follows symlinks. On an eligible unlink failure this can change permissions outside the destination. Anthropic's OSS Scanner reported this as ANT-2026-UK90QC27 in virtualenv-20261015-005, received on 15 October 2026.",
+    "requiredAction": "Upgrade virtualenv to version 21.14.9 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-43mp-35q3-x3fq"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113724"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-113722",
+    "slug": "cve-2026-113722",
+    "vendor": "Pip",
+    "product": "virtualenv",
+    "name": "virtualenv: Generated POSIX console launchers interpret destination paths as shell syntax",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 7.8,
+    "severity": "High",
+    "cwe": "CWE-78",
+    "ransomware": false,
+    "description": "A destination path supplied to virtualenv can be interpreted as shell syntax by a generated POSIX console launcher. The app-data seeder and pip delegate launcher generation to distlib but supply the interpreter path in a form that does not preserve it as literal data in the shell wrapper.",
+    "requiredAction": "Upgrade virtualenv to version 21.14.9 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-c978-59m8-c77v"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113722"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-112902",
+    "slug": "cve-2026-112902",
+    "vendor": "Pip",
+    "product": "Pillow",
+    "name": " Pillow: Memory disclosure and segfault in libtiff encoder via crafted TIFF tags",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 8.8,
+    "severity": "High",
+    "cwe": "CWE-686",
+    "ransomware": false,
+    "description": "A crafted TIFF file of a few hundred bytes makes Pillow copy an attacker-chosen amount of its own process memory into the TIFF it writes back out, or crash the process outright. The trigger is an ordinary Image.open() followed by a bare im.save(fp, \"TIFF\"). The only precondition is that the application re-saves images as TIFF.",
+    "requiredAction": "Upgrade Pillow to version 13.0.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-xvh5-g6gv-559v"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112902"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-112393",
+    "slug": "cve-2026-112393",
+    "vendor": "Pip",
+    "product": "Pillow",
+    "name": "Pillow: Heap buffer overflow in _tiffWriteProc when saving TIFF to BytesIO",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 9.2,
+    "severity": "Critical",
+    "cwe": "CWE-122",
+    "ransomware": false,
+    "description": "Pillow can write attacker-chosen data past the end of a heap buffer when it saves a TIFF image to an in-memory destination such as io.BytesIO rather than to a file. The same code also copies leftover heap memory from the process into the saved file. Anyone who can supply an image to a service that opens it and re-saves it as TIFF this way can trigger this with default settings.",
+    "requiredAction": "Upgrade Pillow to version 13.0.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-332p-7hrc-92wf"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112393"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-112396",
+    "slug": "cve-2026-112396",
+    "vendor": "Pip",
+    "product": "pillow",
+    "name": "Pillow: Heap use-after-free when encoding TIFF to an in-memory buffer",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 5.9,
+    "severity": "Medium",
+    "cwe": "CWE-416",
+    "ransomware": false,
+    "description": "Saving an image as TIFF to an in-memory buffer can trigger a heap use-after-free if libtiff rejects a tag at encode time. When TIFFWriteScanline fails, the encoder frees its output buffer but leaves the libtiff handle open. Later, when the encoder object is torn down, TIFFClose flushes buffered bytes through the write callback and writes into the freed buffer.",
+    "requiredAction": "Upgrade pillow to version 13.0.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-4rr5-89j8-mwwm"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112396"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-112406",
+    "slug": "cve-2026-112406",
+    "vendor": "Pip",
+    "product": "Pillow",
+    "name": "Pillow: Infinite loop in PdfParser.rewrite_pages on page tree Parent cycle",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 8.7,
+    "severity": "High",
+    "cwe": "CWE-835",
+    "ransomware": false,
+    "description": "A PDF file of a few hundred bytes makes Pillow hang forever, holding one processor core at 100%, when an application tries to append an image to it. Anyone who can supply the existing PDF to an application that calls im.save(fp, \"PDF\", append=True) (or saveall=True, append=True) can tie up that worker indefinitely. Memory use stays flat, so only an external timeout stops it.",
+    "requiredAction": "Upgrade Pillow to version 13.0.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-f2g6-542v-9j58"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112406"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-112399",
+    "slug": "cve-2026-112399",
+    "vendor": "Pip",
+    "product": "Pillow",
+    "name": "Pillow: APNG background disposal allocates full canvas before decompression bomb check",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 8.7,
+    "severity": "High",
+    "cwe": "CWE-789",
+    "ransomware": false,
+    "description": "A 126-byte animated PNG file makes Pillow's Image.open() allocate and fill memory sized by the image dimensions the file claims, before Pillow's built-in check for oversized images runs. A file claiming 22000×22000 pixels costs about 1.9 GB.",
+    "requiredAction": "Upgrade Pillow to version 13.0.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-5xm2-6676-qcp9"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112399"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-112892",
+    "slug": "cve-2026-112892",
+    "vendor": "Pip",
+    "product": "pillow",
+    "name": "Pillow: MSP RLE decoder expands a tiny file into unbounded memory",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 8.7,
+    "severity": "High",
+    "cwe": "CWE-409",
+    "ransomware": false,
+    "description": "The MSP RLE decoder expands run-length data into an in-memory buffer with no cap tied to the declared image size. A small file that passes the pixel-count check can force hundreds of megabytes or more of allocation when the application loads pixels.",
+    "requiredAction": "Upgrade pillow to version 13.0.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-gg2r-wvfm-q9rx"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112892"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-112894",
+    "slug": "cve-2026-112894",
+    "vendor": "Pip",
+    "product": "Pillow",
+    "name": "Pillow: Quadratic-time DoS in PDF save_all (PdfParser.next_object_id)",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 8.7,
+    "severity": "High",
+    "cwe": "CWE-407",
+    "ransomware": false,
+    "description": "Pillow's PDF writer takes time proportional to the square of the number of frames when it saves a multi-frame image as a multi-page PDF. Anyone who can get an application to convert their uploaded image this way can tie up a worker at full CPU for minutes with a small file.",
+    "requiredAction": "Upgrade Pillow to version 13.0.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-jg86-v3jv-hrpm"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112894"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-112391",
+    "slug": "cve-2026-112391",
+    "vendor": "Pip",
+    "product": "Pillow",
+    "name": "Pillow: PdfParser can recurse without limit in get_value() and linearize_page_tree()",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 6.3,
+    "severity": "Medium",
+    "cwe": "CWE-835",
+    "ransomware": false,
+    "description": "PdfParser's get_value() can recurse without any limit and crash with an uncaught RecursionError. It is reachable through Image.save(im, fp=, format=\"PDF\", append=True) when the existing PDF file is attacker-controlled. This is the same class of bug as (the /Prev trailer chain loop, fixed earlier this year), in the same file, but in two different functions that fix did not touch.",
+    "requiredAction": "Upgrade Pillow to version 13.0.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-254f-3936-288h"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112391"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-112901",
+    "slug": "cve-2026-112901",
+    "vendor": "Pip",
+    "product": "Pillow",
+    "name": "Pillow: ReDoS in XbmImagePlugin: 512-byte file stalls Image.open() for minutes",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 6.9,
+    "severity": "Medium",
+    "cwe": "CWE-1333",
+    "ransomware": false,
+    "description": "A crafted 512-byte file makes Pillow's Image.open() spend about six minutes of processor time on one core before it gives up with UnidentifiedImageError. Anyone who can hand bytes to an application that opens images with Pillow's default settings can trigger this, for example through an upload form, a thumbnailer, or a service that checks whether a blob is an image.",
+    "requiredAction": "Upgrade Pillow to version 13.0.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-xgh8-jp6q-p5x8"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112901"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-112898",
+    "slug": "cve-2026-112898",
+    "vendor": "Pip",
+    "product": "Pillow",
+    "name": "Pillow: Image.quantize() with empty palette leaks uninitialized stack memory",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 6.9,
+    "severity": "Medium",
+    "cwe": "CWE-457",
+    "ransomware": false,
+    "description": "When an application lets a user supply the palette image for Pillow's Image.quantize(palette=...), the user can get back 512 bytes of the server process's stack memory in the pixels of the returned image. An 80-byte PNG with an empty palette is enough, and the leaked bytes survive saving to PNG or GIF.",
+    "requiredAction": "Upgrade Pillow to version 13.0.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-rfgq-q3w2-pmv2"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112898"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-112401",
+    "slug": "cve-2026-112401",
+    "vendor": "Pip",
+    "product": "Pillow",
+    "name": "Pillow: Quadratic GIF comment concatenation allows DoS in Image.open()",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 6.9,
+    "severity": "Medium",
+    "cwe": "CWE-407",
+    "ransomware": false,
+    "description": "Opening a crafted GIF file with Image.open() takes time that grows with the square of the file's size, so anyone who can submit an image to a service that uses Pillow can keep one worker busy at full processor load for a long time with a small file. A 2 MB file takes about 5 seconds to open, a 4 MB file about 35 seconds, and an 8 MB file about 3 minutes.",
+    "requiredAction": "Upgrade Pillow to version 13.0.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-74r2-7ff9-mjj2"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112401"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-112390",
+    "slug": "cve-2026-112390",
+    "vendor": "Pip",
+    "product": "Pillow",
+    "name": "Pillow: Infinite loop in MIC n_frames when the embedded TIFF",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 8.2,
+    "severity": "High",
+    "cwe": "CWE-835",
+    "ransomware": false,
+    "description": "A crafted 5.6 KB image file makes Pillow loop forever at 100% CPU when an application asks how many frames the image has. This only affects installations that have the optional olefile package. Any application that opens an untrusted image and then reads im.nframes can have one worker tied up indefinitely.",
+    "requiredAction": "Upgrade Pillow to version 13.0.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-22hg-r758-rrw9"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112390"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-112891",
+    "slug": "cve-2026-112891",
+    "vendor": "Pip",
+    "product": "pillow",
+    "name": "Pillow: Quadratic GIF comment copying during save",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 6.9,
+    "severity": "Medium",
+    "cwe": "CWE-407",
+    "ransomware": false,
+    "description": "On Pillow 12.3.0 and upstream main (ad277e2761b489681e71b51e91367d46b0ceabb9), a GIF with a long comment makes getglobal_header() copy portions of the comment repeatedly when saving, including comments carried over from untrusted images.",
+    "requiredAction": "Upgrade pillow to version 13.0.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-fc9g-5qg7-mf45"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112891"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-112392",
+    "slug": "cve-2026-112392",
+    "vendor": "Pip",
+    "product": "Pillow",
+    "name": "Pillow: NULL dereference in ImagingExpand via rank filters on zero-size images",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 8.2,
+    "severity": "High",
+    "cwe": "CWE-476",
+    "ransomware": false,
+    "description": "Applying Pillow's median, minimum, maximum or rank filter to an image with zero width or zero height crashes the whole Python process instead of raising an error. Empty images like this are easy to produce with ordinary calls, for example a crop box whose left and right edges (or top and bottom edges) are equal, or the second page of a crafted multi-page image file.",
+    "requiredAction": "Upgrade Pillow to version 13.0.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-27h8-gf7j-v5hc"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112392"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-112405",
+    "slug": "cve-2026-112405",
+    "vendor": "Pip",
+    "product": "pillow",
+    "name": "Pillow: NULL pointer dereference in Image.merge via an unvalidated band 0",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 8.7,
+    "severity": "High",
+    "cwe": "CWE-476",
+    "ransomware": false,
+    "description": "Image.merge() checks the mode of every input band except band 0. If band 0 is a single-band I or F image, the native merge routine reads a pixel pointer that is NULL for those modes and the process crashes. The IPTC plugin reaches this from a plain Image.open() followed by a load, and IPTC has no magic-byte prefilter, so a crafted file with no recognizable header can drive it.",
+    "requiredAction": "Upgrade pillow to version 13.0.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-cp9v-662q-vvx9"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112405"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-112893",
+    "slug": "cve-2026-112893",
+    "vendor": "Pip",
+    "product": "pillow",
+    "name": "Pillow: Invalid free in FreeType glyph rendering when a stroker is active",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 8.2,
+    "severity": "High",
+    "cwe": "CWE-457",
+    "ransomware": false,
+    "description": "When text is drawn with a non-zero stroke width, Pillow creates a FreeType stroker and then loads each glyph. If FTLoadGlyph fails for a glyph, the cleanup path calls FTDoneGlyph on the glyph variable. That variable is not initialized before the first measurement loop, and in the render loop it is not reset to NULL after each glyph is freed.",
+    "requiredAction": "Upgrade pillow to version 13.0.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-j4m9-6w36-pw47"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112893"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-112402",
+    "slug": "cve-2026-112402",
+    "vendor": "Pip",
+    "product": "Pillow",
+    "name": "Pillow: Double free in ImagingScaleAffine on calloc failure via Image.transform",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 8.7,
+    "severity": "High",
+    "cwe": "CWE-416",
+    "ransomware": false,
+    "description": "There is a double free in Pillow's Image.transform() that crashes the process when an oversized transform runs out of memory. Instead of only raising MemoryError, Pillow frees the output image's memory once while handling the error and then again when the Python object is cleaned up.",
+    "requiredAction": "Upgrade Pillow to version 13.0.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-7mwm-ghpf-9vrm"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112402"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-112394",
+    "slug": "cve-2026-112394",
+    "vendor": "Pip",
+    "product": "Pillow",
+    "name": "Pillow: P;2L and P;4L decoders may read 1 to 3 bytes past the passed buffer size",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 6.3,
+    "severity": "Medium",
+    "cwe": "CWE-126",
+    "ransomware": false,
+    "description": "On main, even with the guard in #9725, it's possible to have these decoders read 1 to 3 bytes past the end of the passed buffer with a suitable width/height.",
+    "requiredAction": "Upgrade Pillow to version 13.0.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-4558-3h8r-v8xp"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112394"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-112900",
+    "slug": "cve-2026-112900",
+    "vendor": "Pip",
+    "product": "Pillow",
+    "name": "Pillow: Argument Injection in Ghostscript call, potentially leading into RCE",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 9.2,
+    "severity": "Critical",
+    "cwe": "CWE-78",
+    "ransomware": false,
+    "description": "PIL.EpsImagePlugin.Ghostscript() builds the Ghostscript command line using the input file path (fp.name) without sanitization, placing it at -f . A filename beginning with - is interpreted by Ghostscript as an option, giving command-line argument injection; chainable to RCE (see Impact). Reproduces with Pillow's default invocation (with -dSAFER enabled).",
+    "requiredAction": "Upgrade Pillow to version 13.0.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-w889-685w-c8fh"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112900"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-113786",
+    "slug": "cve-2026-113786",
+    "vendor": "Pip",
+    "product": "pypdf",
+    "name": "pypdf: Unvalidated JPEG image data loading",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 2.3,
+    "severity": "Low",
+    "cwe": "CWE-20",
+    "ransomware": false,
+    "description": "An attacker who uses this vulnerability can craft a PDF which leads to arbitrary image parsers being called. This requires loading an image which claims to use the /DCTDecode filter (JPEG data). Users which do not have the optional Pillow dependency installed in their environment are not affected. This has been fixed in pypdf==6.21.1.",
+    "requiredAction": "Upgrade pypdf to version 6.21.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-5hx5-vpf9-5wcv"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113786"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-112948",
+    "slug": "cve-2026-112948",
+    "vendor": "npm",
+    "product": "@vitest/ui",
+    "name": "Vitest: Servers misapply `server.fs.deny`, serving `.env`, private keys, `.git`, and the API token file",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-200",
+    "ransomware": false,
+    "description": "In Vitest 5, Vite's server.fs.deny is not applied as intended on Vitest's dev servers. Depending on the server, files that Vite refuses to serve by default (such as .env, private keys and certificates, .npmrc, and .git) or Vitest's own API token file (.vitest-secret-token) can be read over plain HTTP by a client that can reach the server.",
+    "requiredAction": "Upgrade @vitest/ui to version 5.0.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-p458-7748-mcp3"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112948"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-112949",
+    "slug": "cve-2026-112949",
+    "vendor": "npm",
+    "product": "@vitest/mocker",
+    "name": "Vitest: Code injection via unauthenticated manual mock registration",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 4.7,
+    "severity": "Medium",
+    "cwe": "CWE-94",
+    "ransomware": false,
+    "description": "@vitest/mocker's interceptorPlugin accepts mock registrations on Vite's dev-server WebSocket with no authentication, and interpolates the mock's url into generated module source without escaping. A client that can reach the dev server can make it serve arbitrary JavaScript in place of any project module, which then runs in the developer's browser on the dev-server origin.",
+    "requiredAction": "Upgrade @vitest/mocker to version 4.1.12 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-qxg6-89mg-rqv8"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112949"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-112950",
+    "slug": "cve-2026-112950",
+    "vendor": "npm",
+    "product": "@vitest/mocker",
+    "name": "Vitest: Windows backslash traversal bypasses the @vitest/mocker redirect allowlist fix",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 5.9,
+    "severity": "Medium",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "The path traversal fix released for GHSA-82fw-gwwq-j7x9 can be bypassed on Windows by using a backslash in the redirect URL pathname. The fixed code joins an attacker-controlled URL pathname with the Vite root using node:path/posix, then passes that string to Vite's file allowlist check.",
+    "requiredAction": "Upgrade @vitest/mocker to version 4.1.12 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-xp26-3454-mjgp"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112950"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-112953",
+    "slug": "cve-2026-112953",
+    "vendor": "npm",
+    "product": "@apostrophecms/import-export",
+    "name": "ApostropheCMS: Exposure of Sensitive Information via predictable export filenames",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 6,
+    "severity": "Medium",
+    "cwe": "CWE-200",
+    "ransomware": false,
+    "description": "When a user exports content through @apostrophecms/import-export, the module copies the generated archive into uploadfs at /exports/ and returns a public URL under /uploads/exports/. The filename is fully deterministic: site shortName, document type, a YYYYMMDDHHmmss timestamp, and the format extension. There is no secret token.",
+    "requiredAction": "Upgrade @apostrophecms/import-export to version 3.7.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-5gc8-frw3-3vqm"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112953"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-62197",
+    "slug": "cve-2026-62197",
+    "vendor": "npm",
+    "product": "openclaw",
+    "name": "OpenClaw: Browser CDP discovery could accept blocked WebSocket URLs",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 6.3,
+    "severity": "Medium",
+    "cwe": "CWE-284",
+    "ransomware": false,
+    "description": "Browser CDP discovery could accept blocked WebSocket URLs. In affected versions, a lower-trust caller or configured input path could reach network destinations that should have been blocked by OpenClaw policy. This advisory is scoped to the named feature and configuration.",
+    "requiredAction": "Upgrade openclaw to version 2026.6.6 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-3x84-qq85-fj65"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62197"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-114125",
+    "slug": "cve-2026-114125",
+    "vendor": "npm",
+    "product": "storybook",
+    "name": "Storybook: Missing origin validation in Storybook preview allows code injection from malicious websites",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 9.4,
+    "severity": "Critical",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "Summary: A malicious website may be able to cause unauthorized file changes in a developer’s project while an affected Storybook development server is running. Under additional conditions, a changed file could be executed by a local runtime with the developer’s privileges. We are not aware of exploitation in the wild. You are impacted if you run a Storybook dev server in the affected versions.",
+    "requiredAction": "Upgrade storybook to version 8.6.19 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-f2ph-cmg5-wxc8"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114125"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-113800",
+    "slug": "cve-2026-113800",
+    "vendor": "npm",
+    "product": "electron",
+    "name": "Electron: HID and USB permission checks can be attributed to the wrong origin",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 5.4,
+    "severity": "Medium",
+    "cwe": "CWE-346",
+    "ransomware": false,
+    "description": "For hid and usb permission checks made from an iframe, session.setPermissionCheckHandler was given the top-level frame's origin and details instead of the requesting frame's. Apps that allow these permissions based on origin could grant an embedded frame access intended for the top-level page.",
+    "requiredAction": "Upgrade electron to version 45.0.0-alpha.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-fw47-9c62-h3vw"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113800"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-113731",
+    "slug": "cve-2026-113731",
+    "vendor": "Pip",
+    "product": "djust",
+    "name": "djust: Arbitrary absolute-path file read in the find_handlers_for_template MCP tool",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 3.3,
+    "severity": "Low",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "Version: djust v1.1.4 (latest release, published 2026-09-23). File: python/djust/mcp/server.py:354-433 (MCP tool findhandlersfortemplate). Confirmed identical on the commit used for triage, a7e4fafd1667b4db0b1465652d4a63cb17117a07.",
+    "requiredAction": "Upgrade djust to version 1.0.10 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-r57g-mc79-8hj2"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113731"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-112952",
+    "slug": "cve-2026-112952",
+    "vendor": "npm",
+    "product": "apostrophe",
+    "name": "ApostropheCMS: POST /api/v1/@apostrophecms/doc/slugTaken discloses existence of private/admin-only content to any authenticated user",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 4.3,
+    "severity": "Medium",
+    "cwe": "CWE-200",
+    "ransomware": false,
+    "description": "The slugTaken endpoint returns a boolean indicating whether a slug is in use across all document types and visibility levels, with no permission or type filter. Any logged-in user (including editors) can enumerate the slug space of private pages, drafts, and archived content.",
+    "requiredAction": "Upgrade apostrophe to version 4.34.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-f66c-mpj2-3r8h"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112952"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-112957",
+    "slug": "cve-2026-112957",
+    "vendor": "npm",
+    "product": "apostrophe",
+    "name": "ApostropheCMS: GET /api/v1/@apostrophecms/page/:id bypasses viewRole restriction and exposes viewPermission-gated fields to lower-privileged users",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 4.3,
+    "severity": "Medium",
+    "cwe": "CWE-862",
+    "ransomware": false,
+    "description": "The getOne REST endpoint for pages does not apply viewRole type-level restrictions or viewPermission field-level redaction. An editor-level user who knows a document _id can read the full content of admin-only pages and their privileged fields, while the getAll endpoint correctly enforces both restrictions.",
+    "requiredAction": "Upgrade apostrophe to version 4.34.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-vh56-5m88-39rq"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112957"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-112958",
+    "slug": "cve-2026-112958",
+    "vendor": "npm",
+    "product": "apostrophe",
+    "name": "ApostropheCMS: Stored XSS via Unescaped Widget Style Attribute Serialization",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 5.4,
+    "severity": "Medium",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "ApostropheCMS widget styles support project-defined schema fields. If a project defines a free-form string style field with a CSS property and no selector, an editor-controlled value is rendered as an inline CSS declaration. The resulting declaration is then inserted into the widget wrapper's style=\"...\" attribute without HTML-attribute escaping.",
+    "requiredAction": "Upgrade apostrophe to version 4.34.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-7jg5-frgc-c67w"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112958"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-113648",
+    "slug": "cve-2026-113648",
+    "vendor": "npm",
+    "product": "@apostrophecms/import-export",
+    "name": "ApostropheCMS: Missing Authentication in `cleanExport` Route",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 3.1,
+    "severity": "Low",
+    "cwe": "CWE-306",
+    "ransomware": false,
+    "description": "The API endpoint POST /api/v1/@apostrophecms/import-export/clean-export in @apostrophecms/import-export lacks authentication and authorization checks. Any client—including unauthenticated anonymous users who have obtained the standard CSRF cookie from visiting the site—can directly invoke this route and trigger the underlying self.cleanExport(req) method.",
+    "requiredAction": "Upgrade @apostrophecms/import-export to version 3.7.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-rw26-wwfc-9wvm"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113648"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-112954",
+    "slug": "cve-2026-112954",
+    "vendor": "npm",
+    "product": "apostrophe",
+    "name": "ApostropheCMS: Unauthenticated publicApiProjection bypass via search and sort query builders in the public REST API",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-200",
+    "ransomware": false,
+    "description": "ApostropheCMS lets a module expose an anonymous read API by setting publicApiProjection, which whitelists the document fields unauthenticated callers may see. The public REST GET handler applies every launderable query builder from the query string before forcing that projection.",
+    "requiredAction": "Upgrade apostrophe to version 4.34.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-rqgm-cfrp-4hx8"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112954"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-112951",
+    "slug": "cve-2026-112951",
+    "vendor": "npm",
+    "product": "apostrophe",
+    "name": "ApostropheCMS: Color field validation bypass allows stored XSS via HTML appended after rgb()/hsl() prefix",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 5.4,
+    "severity": "Medium",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "The color field accepts any string that begins with a valid rgb() / hsl() color, because TinyColor.isValid does not anchor its match at the end of the string. An authenticated user with edit rights can store arbitrary HTML after a valid color prefix. When the stored value is rendered , the payload executes, resulting in stored XSS.",
+    "requiredAction": "Upgrade apostrophe to version 4.34.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-vmgj-9cwm-cf3h"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112951"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-113650",
+    "slug": "cve-2026-113650",
+    "vendor": "npm",
+    "product": "sanitize-html",
+    "name": "ApostropheCMS sanitize-html: unbounded recursion when re-sanitizing the fallback of a discarded iframe (stack overflow, nestingLimit not enforced)",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-674",
+    "ransomware": false,
+    "description": "Since 2.18.0, when an is not allowed and disallowedTagsMode is 'discard' (the defaults), its raw-text content is re-sanitized by a recursive call to sanitizeHtml(text, options) (the change from #5564, fixing #5550). The recursion has no bound and starts each nested call with a fresh state. Two consequences, both absent from 2.17.7 and 2.17.4: 1.",
+    "requiredAction": "Upgrade sanitize-html to version 2.18.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-c9rx-x947-fp3h"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113650"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-113649",
+    "slug": "cve-2026-113649",
+    "vendor": "npm",
+    "product": "@apostrophecms/import-export",
+    "name": "ApostropheCMS: Import API bypasses publication roles for protected content",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-862",
+    "ransomware": false,
+    "description": "Package: @apostrophecms/import-export, version 3.7.0. Release tag reviewed: @apostrophecms/import-export@3.7.0, commit 9500b8b0e1d630d5e07fbb5fd2c25ed0943845ce (September 30, 2026). Current main reviewed: 5ce3732be0ebdebb4db0f8ef160c81e8671157e6.",
+    "requiredAction": "Upgrade @apostrophecms/import-export to version 3.7.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-5m22-7pfq-vp65"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113649"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-112956",
+    "slug": "cve-2026-112956",
+    "vendor": "npm",
+    "product": "@apostrophecms/import-export",
+    "name": "ApostropheCMS: Archive duplicate continuation lets contributors overwrite published content",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-863",
+    "ransomware": false,
+    "description": "Package: @apostrophecms/import-export, version 3.7.0. Release tag reviewed: @apostrophecms/import-export@3.7.0, commit 9500b8b0e1d630d5e07fbb5fd2c25ed0943845ce (September 30, 2026). Current main reviewed: 5ce3732be0ebdebb4db0f8ef160c81e8671157e6.",
+    "requiredAction": "Upgrade @apostrophecms/import-export to version 3.7.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-jf5h-36mg-rp6x"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112956"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-112955",
+    "slug": "cve-2026-112955",
+    "vendor": "npm",
+    "product": "@apostrophecms/import-export",
+    "name": "ApostropheCMS: Import archives can exhaust server storage and deny service",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "Package: @apostrophecms/import-export, version 3.7.0. Release tag reviewed: @apostrophecms/import-export@3.7.0, commit 9500b8b0e1d630d5e07fbb5fd2c25ed0943845ce (September 30, 2026). Current main reviewed: 5ce3732be0ebdebb4db0f8ef160c81e8671157e6.",
+    "requiredAction": "Upgrade @apostrophecms/import-export to version 3.7.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-9g7p-m758-rp72"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112955"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-113792",
+    "slug": "cve-2026-113792",
+    "vendor": "Pip",
+    "product": "pypdf",
+    "name": "pypdf: Possible infinite loop in PdfWriter.find_outline_item",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 6,
+    "severity": "Medium",
+    "cwe": "CWE-835",
+    "ransomware": false,
+    "description": "An attacker who uses this vulnerability can craft a PDF which leads to an infinite loop. This requires calling findoutlineitem on a PdfWriter. This has been fixed in pypdf==6.20.1. If you cannot upgrade yet, consider applying the changes from PR #4188.",
+    "requiredAction": "Upgrade pypdf to version 6.20.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-qfv9-64jg-mh7p"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113792"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-113793",
+    "slug": "cve-2026-113793",
+    "vendor": "Pip",
+    "product": "pypdf",
+    "name": "pypdf: Possible infinite loop when removing tree items",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 6,
+    "severity": "Medium",
+    "cwe": "CWE-835",
+    "ransomware": false,
+    "description": "An attacker who uses this vulnerability can craft a PDF which leads to an infinite loop. This requires removing an object from a tree, for example an outline item. This has been fixed in pypdf==6.20.1. If you cannot upgrade yet, consider applying the changes from PR #4188.",
+    "requiredAction": "Upgrade pypdf to version 6.20.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-9mx8-4j7g-633p"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113793"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-113794",
+    "slug": "cve-2026-113794",
+    "vendor": "Pip",
+    "product": "pypdf",
+    "name": "pypdf: Possible infinite loop when hitting EOF in standard xref table",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 6,
+    "severity": "Medium",
+    "cwe": "CWE-835",
+    "ransomware": false,
+    "description": "An attacker who uses this vulnerability can craft a PDF which leads to an infinite loop. This requires an incomplete file which ends inside the xref table. This has been fixed in pypdf==6.20.0. If you cannot upgrade yet, consider applying the changes from PR #4170. This has been reported through both the secure channel and as a public issue at #4169.",
+    "requiredAction": "Upgrade pypdf to version 6.20.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-39mj-jf6j-2qj3"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113794"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-113725",
+    "slug": "cve-2026-113725",
+    "vendor": "Pip",
+    "product": "virtualenv",
+    "name": "virtualenv bash activate runs commands from an environment name with a backslash before $",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 7.8,
+    "severity": "High",
+    "cwe": "CWE-78",
+    "ransomware": false,
+    "description": "The bash activate script escapes the environment name for only one of the two passes bash makes over PS1, so a backslash in the name undoes the escaping and a name containing \\$(...) runs as commands in the user's shell each time bash draws the prompt.",
+    "requiredAction": "Upgrade virtualenv to version 21.14.7 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-vxj4-q4g9-crj7"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113725"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-113795",
+    "slug": "cve-2026-113795",
+    "vendor": "Pip",
+    "product": "pypdf",
+    "name": "pypdf: Possible large memory usage for streams with multiple filters",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 6,
+    "severity": "Medium",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "An attacker who uses this vulnerability can craft a PDF which leads to large memory consumption. This requires accessing any stream with a large amount of filters or multiple filters which pass around large amounts of data. This has been fixed in pypdf==6.20.0. If you cannot upgrade yet, consider applying the changes from PR #4173.",
+    "requiredAction": "Upgrade pypdf to version 6.20.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-7mh2-4gg2-979f"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113795"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-112945",
+    "slug": "cve-2026-112945",
+    "vendor": "npm",
+    "product": "vite",
+    "name": "Vite: Cross origin script execution through Vite custom middleware",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 2.1,
+    "severity": "Low",
+    "cwe": "CWE-80",
+    "ransomware": false,
+    "description": "When accessing a malicious site while a dev server using Vite is running, that site was able to load scripts in a page served by the dev server.",
+    "requiredAction": "Upgrade vite to version 8.3.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-9jrq-w75r-8gcw"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112945"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-112946",
+    "slug": "cve-2026-112946",
+    "vendor": "npm",
+    "product": "vite",
+    "name": "Vite: Files outside `server.fs.allow` could be served when project paths match system paths on non-Windows machine",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 6.3,
+    "severity": "Medium",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "The content of files outside server.fs setting can be returned to the browser if the project imports a file path concatenated with the root. For example, if the project references /etc/hosts, the content of /etc/hosts was possible to be returned.",
+    "requiredAction": "Upgrade vite to version 8.3.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-rq7h-c2jc-7f22"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112946"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-112947",
+    "slug": "cve-2026-112947",
+    "vendor": "npm",
+    "product": "vite",
+    "name": "Vite: First 4 bytes of files outside of `server.fs` setting is exposed by `?vite-wasm-instance`",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 6.3,
+    "severity": "Medium",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "The first 4 bytes of files outside of server.fs setting can be returned to the browser by a request containing ?vite-wasm-instance.",
+    "requiredAction": "Upgrade vite to version 8.3.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-vfpm-58rq-9qcg"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112947"
+      }
+    ]
+  },
+  {
+    "cve": "CVE-2026-113726",
+    "slug": "cve-2026-113726",
+    "vendor": "Pip",
+    "product": "virtualenv",
+    "name": "virtualenv activate runs commands from the environment name in zsh with PROMPT_SUBST",
+    "dateAdded": "2026-10-21",
+    "dueDate": "",
+    "cvss": 7.8,
+    "severity": "High",
+    "cwe": "CWE-78",
+    "ransomware": false,
+    "description": "zsh users activate an environment with the bash activate script, which puts the environment name into PS1. Since 21.13.0 the script escapes backslashes, dollar signs and backticks in that name, but only when BASHVERSION is set, so zsh gets the raw value.",
+    "requiredAction": "Upgrade virtualenv to version 21.14.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-5vjq-rrrf-7h2q"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113726"
+      }
+    ]
+  },
+  {
     "cve": "CVE-2026-106931",
     "slug": "cve-2026-106931",
     "vendor": "EG Secure Solutions",
@@ -142,1248 +1392,6 @@ export const advisories: Advisory[] = [
       {
         "label": "CISA KEV catalog",
         "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-113712",
-    "slug": "cve-2026-113712",
-    "vendor": "Composer",
-    "product": "cachethq/cachet",
-    "name": "Cachet has Stored XSS in Incident Component",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 4.8,
-    "severity": "Medium",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "A stored Cross-Site Scripting (XSS) vulnerability exists in the incident creation form, allowing an authenticated attacker to inject malicious HTML/JavaScript that executes in the browser of any user who views the status page, potentially leading to session token theft and account takeover.",
-    "requiredAction": "Review repository advisory and update affected dependencies.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-x397-5hrv-j9m9"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113712"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-111762",
-    "slug": "cve-2026-111762",
-    "vendor": "Java (Maven)",
-    "product": "org.a2aproject.sdk:a2a-java-sdk-transport-rest",
-    "name": "A2A Java SDK: Push notification credentials logged in cleartext on protobuf parse failure",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 5.7,
-    "severity": "Medium",
-    "cwe": "CWE-532",
-    "ransomware": false,
-    "description": "Where. transport/rest/src/main/java/org/a2aproject/sdk/transport/rest/handler/RestHandler.java:676 in parseRequestBody What. The parseRequestBody method logs the entire JSON request body at SEVERE level when JsonFormat.parser().merge() throws InvalidProtocolBufferException.",
-    "requiredAction": "Upgrade org.a2aproject.sdk:a2a-java-sdk-transport-rest to version 1.3.0.Final or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-x32g-jvvm-4725"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111762"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-111765",
-    "slug": "cve-2026-111765",
-    "vendor": "Java (Maven)",
-    "product": "org.a2aproject.sdk:a2a-java-sdk-http-client-android",
-    "name": "A2A Java SDK: Android synchronous POST forwards credentials across authorities after incomplete redirect fix",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-522",
-    "ransomware": false,
-    "description": "The GHSA-9rhm fix added this safe setting in AndroidA2AHttpClient.createConnection(): connection.setInstanceFollowRedirects(false); The synchronous POST builder later overwrites it: private boolean followRedirects = true; public A2AHttpResponse post() throws IOException { HttpURLConnection connection = createConnection(\"POST\", false); connection.setInstanceFollowRedirects(followRedirects); // ...",
-    "requiredAction": "Upgrade org.a2aproject.sdk:a2a-java-sdk-http-client-android to version 1.3.2.Final or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-4fpj-g9jf-9rgg"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111765"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-111761",
-    "slug": "cve-2026-111761",
-    "vendor": "Java (Maven)",
-    "product": "org.a2aproject.sdk:a2a-java-sdk-server-common",
-    "name": "A2A Java SDK has Server-Side Request Forgery (SSRF) in push-notification delivery",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 5.8,
-    "severity": "Medium",
-    "cwe": "CWE-918",
-    "ransomware": false,
-    "description": "An unauthenticated attacker can coerce the a2a-java server into issuing HTTP requests to arbitrary internal and cloud-metadata endpoints from the server's own network position — a Server-Side Request Forgery reachable in the default deployment with no credentials, no user interaction, and a single request. The behaviour is the shipped default, not a misconfiguration.",
-    "requiredAction": "Upgrade org.a2aproject.sdk:a2a-java-sdk-server-common to version 1.3.0.Final or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-q78c-5jjq-57g8"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111761"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-111764",
-    "slug": "cve-2026-111764",
-    "vendor": "Java (Maven)",
-    "product": "org.a2aproject.sdk:a2a-java-sdk-server-common",
-    "name": "A2A Java SDK has a fail-open default task authorization",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-862",
-    "ransomware": false,
-    "description": "With the SDK's default configuration, task reads are not authorized: any caller can retrieve a task (including its status, context, message history, and artifacts) created by another caller, by supplying the task id.",
-    "requiredAction": "Upgrade org.a2aproject.sdk:a2a-java-sdk-server-common to version 1.3.0.Final or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-qw47-mcm5-934w"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111764"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-111763",
-    "slug": "cve-2026-111763",
-    "vendor": "Java (Maven)",
-    "product": "org.a2aproject.sdk:a2a-java-sdk-parent",
-    "name": "A2A Java SDK send client credentials under server-controlled HTTP header name, enabling leakage via redirect",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 5.7,
-    "severity": "Medium",
-    "cwe": "CWE-522",
-    "ransomware": false,
-    "description": "Impact. A malicious or compromised A2A agent can cause the client's API key credential to be forwarded to an arbitrary third-party server. The agent serves an AgentCard with an APIKeySecurityScheme specifying a custom header name, then responds with an HTTP redirect.",
-    "requiredAction": "Upgrade org.a2aproject.sdk:a2a-java-sdk-parent to version 1.3.0.Final or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-9rhm-2h4x-jwmx"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111763"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-112397",
-    "slug": "cve-2026-112397",
-    "vendor": "Pip",
-    "product": "Pillow",
-    "name": "Pillow: Out-of-bounds access in _imagingmorph on a zero-width image",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 8.7,
-    "severity": "High",
-    "cwe": "CWE-787",
-    "ransomware": false,
-    "description": "A PPM or PGM file can declare a width of 0, which Pillow accepts, producing an image of size (0, N). Passing that image to ImageMorph.MorphOp.apply() makes the native morphology code index a row buffer at outrow[width - 1], which is outrow[-1] when the width is 0. The process crashes.",
-    "requiredAction": "Upgrade Pillow to version 13.0.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-58r4-6rv3-gfh8"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112397"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-112400",
-    "slug": "cve-2026-112400",
-    "vendor": "Pip",
-    "product": "Pillow",
-    "name": "Pillow: GIF seek keeps rejected size after DecompressionBombError, allowing DoS",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 8.7,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "A GIF of about 60 bytes can make Pillow allocate gigabytes of memory. This affects applications that catch the \"image too large\" error raised while stepping to a later animation frame and then keep using the same image object. Pillow correctly refuses the oversized frame, but it stores the refused dimensions on the image object anyway, and later operations size their memory from them.",
-    "requiredAction": "Upgrade Pillow to version 13.0.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-65qm-jvmh-6pqg"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112400"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-112899",
-    "slug": "cve-2026-112899",
-    "vendor": "Pip",
-    "product": "Pillow",
-    "name": "Pillow: EPS load(scale) lets Ghostscript render past the decompression bomb limit",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 6.9,
-    "severity": "Medium",
-    "cwe": "CWE-770",
-    "ransomware": false,
-    "description": "When an application opens an untrusted Encapsulated PostScript file and asks Pillow to render it at a larger scale, Pillow has Ghostscript produce an image several times bigger than Pillow's configured size limit allows. The size check runs only after Ghostscript has finished rendering and written the full raw image to a temporary file.",
-    "requiredAction": "Upgrade Pillow to version 13.0.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-vx6w-vv9f-6gvg"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112899"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-112897",
-    "slug": "cve-2026-112897",
-    "vendor": "Pip",
-    "product": "Pillow",
-    "name": "Pillow: TiffDecode returns uninitialized memory as pixels for short JPEG strips",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 8.7,
-    "severity": "High",
-    "cwe": "CWE-908",
-    "ransomware": false,
-    "description": "Pillow hands back leftover process memory as image pixels when it opens a small crafted TIFF file. Anyone who can get an application to open their image, and can see something produced from its pixels (a thumbnail, a preview, a converted copy), can read heap memory that the process had previously used and freed.",
-    "requiredAction": "Upgrade Pillow to version 13.0.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-q45j-58j2-45rg"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112897"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-112896",
-    "slug": "cve-2026-112896",
-    "vendor": "Pip",
-    "product": "Pillow",
-    "name": "Pillow: TIFF encoder ColorMap plane-size mismatch causes a heap out-of-bounds read",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 8.8,
-    "severity": "High",
-    "cwe": "CWE-125",
-    "ransomware": false,
-    "description": "A small attacker-supplied TIFF can be opened and loaded normally, then reach an out-of-bounds read when an application saves it back to TIFF with retained metadata. The fixed reproducer is a 1×1, 16-bit grayscale, PackBits-compressed TIFF containing tag 320 (ColorMap) with 768 SHORT values: three zero-filled planes of 256 entries each.",
-    "requiredAction": "Upgrade Pillow to version 13.0.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-pchr-8j38-3x4p"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112896"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-112895",
-    "slug": "cve-2026-112895",
-    "vendor": "Pip",
-    "product": "pillow",
-    "name": "Pillow: Unbounded recursion parsing a PDF page tree or trailer chain (incomplete fix for CVE-2026-42310)",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 8.7,
-    "severity": "High",
-    "cwe": "CWE-674",
-    "ransomware": false,
-    "description": "When an application appends to an existing PDF with Image.save(..., format=\"PDF\", append=True), Pillow parses that file with PdfParser. Two recursive parsers have no effective bound. linearizepagetree follows /Kids with no visited set or depth limit, so a cyclic or duplicated page tree recurses without end.",
-    "requiredAction": "Upgrade pillow to version 13.0.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-p4wg-p73j-c528"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112895"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-112395",
-    "slug": "cve-2026-112395",
-    "vendor": "Pip",
-    "product": "pillow",
-    "name": "Pillow tiled-TIFF decoder reads past tile buffer in copy4 (Unpack.c:1290)",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-122",
-    "ransomware": false,
-    "description": "Pillow's libImaging decodeTile decoder, used to decode tiled TIFF images, allocates a per-tile buffer using realloc(state->buffer, TIFFTileSize(tiff)). After each TIFFReadTile it then iterates tiley from 0 up to currenttilelength and calls the configured row unpacker (here copy4) with the source pointer state->buffer + tiley rowbytesize.",
-    "requiredAction": "Upgrade pillow to version 13.0.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-462x-pgg6-55fp"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112395"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-112404",
-    "slug": "cve-2026-112404",
-    "vendor": "Pip",
-    "product": "Pillow",
-    "name": "Pillow: OOB read in TiffDecode.c tile and RGBA paths leaks heap memory into pixels",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 8.8,
-    "severity": "High",
-    "cwe": "CWE-125",
-    "ransomware": false,
-    "description": "Pillow reads past the end of a heap buffer when decoding certain malformed compressed TIFF files, and copies the bytes it reads into the pixels of the image it returns.",
-    "requiredAction": "Upgrade Pillow to version 13.0.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-c6hw-5grf-ff96"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112404"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-112403",
-    "slug": "cve-2026-112403",
-    "vendor": "Pip",
-    "product": "Pillow",
-    "name": "Pillow: Heap buffer overflow in ImagingJpegDecode",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 9.2,
-    "severity": "Critical",
-    "cwe": "CWE-122",
-    "ransomware": false,
-    "description": "JpegImageFile.draft() — which Image.thumbnail() calls automatically — requests 1/2, 1/4 or 1/8 scaled JPEG output and shrinks self.size and the tile extents to match, so setimage() allocates a single-row decode buffer of ceil(W/s) samples.",
-    "requiredAction": "Upgrade Pillow to version 13.0.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-8g5g-8vmr-9782"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112403"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-111753",
-    "slug": "cve-2026-111753",
-    "vendor": "npm",
-    "product": "@angular/common",
-    "name": "@angular/common: XSRF Token Leakage via URL Parsing Discrepancy in Angular HTTP Client (Incomplete fix for CVE-2025-66035)",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 5.9,
-    "severity": "Medium",
-    "cwe": "CWE-201",
-    "ransomware": false,
-    "description": "An incomplete fix for GHSA-58c5-g7wp-6w37 (CVE-2025-66035) in @angular/common's HTTP Client (HttpClient) allows Cross-Site Request Forgery (XSRF) tokens to be leaked to attacker-controlled cross-origin domains when requests use URLs that exploit parsing discrepancies between regular expressions and the browser's WHATWG URL parser.",
-    "requiredAction": "Upgrade @angular/common to version 21.0.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-jfgx-762w-99vr"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111753"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-111758",
-    "slug": "cve-2026-111758",
-    "vendor": "npm",
-    "product": "markdown-it",
-    "name": "markdown-it: Quadratic-time rendering of a single multi-line link reference definition with default options (regression since 14.0)",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "A link reference definition whose label or title is never closed is O(n²) in markdown-it 15.0.2 with default options. Continuation lines are pulled lazily with str += lineContent in src/rules_block/reference.ts, and the subsequent charCodeAt and slice calls flatten the V8 cons-string, copying everything collected so far; this runs before the rule decides the definition is invalid.",
-    "requiredAction": "Upgrade markdown-it to version 14.3.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-gfr2-rv44-r23c"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111758"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-111766",
-    "slug": "cve-2026-111766",
-    "vendor": "npm",
-    "product": "markdown-it",
-    "name": "markdown-it: Quadratic-time denial of service in inline HTML parsing with html enabled",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 3.7,
-    "severity": "Low",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "With html: true, markdown-it takes quadratic time to parse repeated unterminated HTML constructs inside a paragraph. This affects HTML comments (<!--), processing instructions (<?), declarations (<!A), and CDATA sections (<![CDATA[). An attacker-controlled input of a few hundred kilobytes can block the Node.js event loop for seconds or tens of seconds.",
-    "requiredAction": "Upgrade markdown-it to version 14.3.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-vfgh-jcmw-g37q"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111766"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-111770",
-    "slug": "cve-2026-111770",
-    "vendor": "npm",
-    "product": "@modelcontextprotocol/server",
-    "name": "MCP  TypeScript server SDK: Shared transport or server instances delivered one HTTP client's messages to another",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 7.7,
-    "severity": "High",
-    "cwe": "CWE-362",
-    "ransomware": false,
-    "description": "In affected versions, an MCP server reached over HTTP could deliver one client's responses and notifications to another client. This happened when clients shared one stateless transport, or one McpServer or Server instance. Messages were matched to a connection by JSON-RPC id alone. SDK clients number requests from 0, so ids collide in normal use.",
-    "requiredAction": "Upgrade @modelcontextprotocol/server to version 2.3.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-jm63-cq47-j5jp"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111770"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-111768",
-    "slug": "cve-2026-111768",
-    "vendor": "npm",
-    "product": "@modelcontextprotocol/sdk",
-    "name": "MCP TypeScript SDK: One HTTP request within the default size limit could exhaust server memory during validation",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-770",
-    "ransomware": false,
-    "description": "In affected versions, servers put no limit on how many array elements and object keys they validated in one request. One HTTP request within the default 4 MiB size limit could exhaust the server's memory, and the process aborted with JavaScript heap out of memory. No credentials are needed, unless you authenticate requests before they reach the SDK.",
-    "requiredAction": "Upgrade @modelcontextprotocol/sdk to version 1.32.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-46jr-4wx8-v453"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111768"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-111748",
-    "slug": "cve-2026-111748",
-    "vendor": "Pip",
-    "product": "aiohttp",
-    "name": "AIOHTTP: Absolute-form request targets can spoof Request.scheme",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 6.3,
-    "severity": "Medium",
-    "cwe": "CWE-807",
-    "ransomware": false,
-    "description": "An attacker sending an absolute-form request can spoof the scheme used.",
-    "requiredAction": "Upgrade aiohttp to version 3.14.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-f9xw-jh8m-3mwq"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111748"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-111749",
-    "slug": "cve-2026-111749",
-    "vendor": "Pip",
-    "product": "aiohttp",
-    "name": "AIOHTTP: Cookie from subdomain can remove Host-Only Scope from existing cookies",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 2.3,
-    "severity": "Low",
-    "cwe": "CWE-565",
-    "ransomware": false,
-    "description": "A subdomain can remove the Host-Only flag from an existing cookie to a parent domain.",
-    "requiredAction": "Upgrade aiohttp to version 3.14.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-gx76-c99x-2c96"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111749"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-111065",
-    "slug": "cve-2026-111065",
-    "vendor": "Pip",
-    "product": "aiohttp",
-    "name": "AIOHTTP: Connector pool exhaustion via Max-Age overflow",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 6.9,
-    "severity": "Medium",
-    "cwe": "CWE-770",
-    "ransomware": false,
-    "description": "An overflow in Max-Age processing can skip closing a connection.",
-    "requiredAction": "Upgrade aiohttp to version 3.14.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-6cjc-53gc-5rqm"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111065"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-111750",
-    "slug": "cve-2026-111750",
-    "vendor": "Pip",
-    "product": "aiohttp",
-    "name": "AIOHTTP: Pure-Python parser request smuggling",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 6.3,
-    "severity": "Medium",
-    "cwe": "CWE-444",
-    "ransomware": false,
-    "description": "The pure Python parser is vulnerable to an HTTP request smuggling attack.",
-    "requiredAction": "Upgrade aiohttp to version 3.14.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-pqxq-w44r-73xw"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111750"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-111066",
-    "slug": "cve-2026-111066",
-    "vendor": "Pip",
-    "product": "aiohttp",
-    "name": "AIOHTTP: File descriptor exhaustion in multipart requests",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 8.2,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "An attacker can exhaust file descriptors with specially crafted multipart requests.",
-    "requiredAction": "Upgrade aiohttp to version 3.14.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-9xw5-w5jj-pvcg"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111066"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-112944",
-    "slug": "cve-2026-112944",
-    "vendor": "npm",
-    "product": "launch-editor",
-    "name": "launch-editor: Editor CLI flag misinterpretation causing arbitrary command execution for some editors",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 6.3,
-    "severity": "Medium",
-    "cwe": "CWE-88",
-    "ransomware": false,
-    "description": "launch-editor forwarded file paths directly to editors without sanitization. If a path resembles a CLI flag, editors like Vim may interpret it as a command, potentially causing unintended file overwrites or command execution.",
-    "requiredAction": "Upgrade launch-editor to version 2.14.2 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-r825-w8mm-5pxw"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112944"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-112942",
-    "slug": "cve-2026-112942",
-    "vendor": "npm",
-    "product": "launch-editor",
-    "name": "launch-editor: `fs.existsSync()` existence check can be bypassed on Windows",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-77",
-    "ransomware": false,
-    "description": "launch-editor checked fs.existsSync(fileName) before passing a supplied path to an editor command. On Windows, an attacker can bypass this check with a crafted path ending in \\\\..:line:column. This removes the requirement that the attacker be able to place a file with a malicious filename.",
-    "requiredAction": "Upgrade launch-editor to version 2.14.2 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-587h-7wmj-h5pm"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112942"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-111771",
-    "slug": "cve-2026-111771",
-    "vendor": "npm",
-    "product": "@modelcontextprotocol/sdk",
-    "name": "MCP TypeScript SDK: Server bearer authentication accepted tokens issued for another service",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 6.8,
-    "severity": "Medium",
-    "cwe": "CWE-863",
-    "ransomware": false,
-    "description": "In affected versions, the SDK's server-side bearer authentication had no way to check that a token was issued for your server (its audience). Where one authorization server issues tokens for several services, a valid token for another service was also accepted by your MCP server.",
-    "requiredAction": "Upgrade @modelcontextprotocol/sdk to version 1.32.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-rvq5-wwqv-78pq"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111771"
-      }
-    ]
-  },
-  {
-    "cve": "GHSA-hq85-5cpj-mr62",
-    "slug": "ghsa-hq85-5cpj-mr62",
-    "vendor": "Pip",
-    "product": "uv",
-    "name": "uv's bundled CA store trusts an emSign root whose intermediate CA keys are compromised",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 9.1,
-    "severity": "Critical",
-    "cwe": "CWE-295",
-    "ransomware": false,
-    "description": "By default, uv verifies TLS connections against a vendored copy of the webpki-root-certs bundle. Versions before 0.13.4 include the emSign ECC Root CA - G3 root. Eight eMudhra intermediate CA certificates that chain to that root have compromised private keys, and the CA has revoked them.",
-    "requiredAction": "Upgrade uv to version 0.13.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-hq85-5cpj-mr62"
-      }
-    ]
-  },
-  {
-    "cve": "GHSA-6q48-6c7w-9gw2",
-    "slug": "ghsa-6q48-6c7w-9gw2",
-    "vendor": "Pip",
-    "product": "certifi",
-    "name": "certifi bundles emSign root CAs with compromised intermediate CA keys",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 9.1,
-    "severity": "Critical",
-    "cwe": "CWE-295",
-    "ransomware": false,
-    "description": "Certifi versions before 2026.10.18 include the emSign ECC Root CA - G3 root certificate in their bundled CA store. Eight eMudhra intermediate CA certificates that chain to this root have compromised private keys and the CA has revoked them. An attacker with one of the compromised keys can issue valid-looking certificates for any hostname.",
-    "requiredAction": "Upgrade certifi to version 2026.10.19 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-6q48-6c7w-9gw2"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-112943",
-    "slug": "cve-2026-112943",
-    "vendor": "npm",
-    "product": "launch-editor",
-    "name": "launch-editor: escapeCmdArgs() omits % escaping on Windows",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 6.3,
-    "severity": "Medium",
-    "cwe": "CWE-78",
-    "ransomware": false,
-    "description": "launch-editor did not escape % on Windows when passing an argument to cmd. When an environment variable contained a malicious value, it was possible that that content to be executed.",
-    "requiredAction": "Upgrade launch-editor to version 2.14.2 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-698v-4r3x-3vcv"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112943"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-111767",
-    "slug": "cve-2026-111767",
-    "vendor": "npm",
-    "product": "@modelcontextprotocol/sdk",
-    "name": "MCP TypeScript SDK: Experimental tasks were not tied to the session that created them",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 8.6,
-    "severity": "High",
-    "cwe": "CWE-639",
-    "ransomware": false,
-    "description": "In affected versions, the experimental tasks feature (taskStore) did not check which session created a task. Clients sharing one InMemoryTaskStore could list, read and cancel each other's tasks. Experimental tasks are deprecated. The 2026-07-28 specification replaced them with a redesigned extension. The best course of action is to stop using them.",
-    "requiredAction": "Upgrade @modelcontextprotocol/sdk to version 1.32.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-22jm-h49p-29qw"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111767"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-111769",
-    "slug": "cve-2026-111769",
-    "vendor": "npm",
-    "product": "@modelcontextprotocol/sdk",
-    "name": "MCP TypeScript client SDK: HTTP client transports and OAuth requests followed cross-origin redirects and re-sent custom headers and request bodies",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-200",
-    "ransomware": false,
-    "description": "In affected versions, the SDK's HTTP client transports and OAuth requests followed redirects to any origin. If an MCP server or authorization server redirected a request to another origin, that origin received custom request headers (such as an X-API-Key set in requestInit.headers) and the mcp-session-id header.",
-    "requiredAction": "Upgrade @modelcontextprotocol/sdk to version 1.32.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-6prh-2h8m-c8cw"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111769"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-113653",
-    "slug": "cve-2026-113653",
-    "vendor": "npm",
-    "product": "apostrophe",
-    "name": "ApostropheCMS: The general public can access @apostrophecms/user objects via a relationship (viewRole is not applied to the general public)",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 6.9,
-    "severity": "Medium",
-    "cwe": "CWE-863",
-    "ransomware": false,
-    "description": "Even though it is correctly applied to guests, contributors, etc., viewRole is not applied to the general public. This means that a secured content type like @apostrophecms/user can in theory be accessed. This is greatly mitigated by the fact that there is no automatic public REST API for any content type. One has to expressly allow it.",
-    "requiredAction": "Upgrade apostrophe to version 4.33.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-xf6w-q65w-4f2w"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113653"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-113665",
-    "slug": "cve-2026-113665",
-    "vendor": "npm",
-    "product": "apostrophe",
-    "name": "ApostropheCMS: Missing Authorization on Notification PATCH/DELETE Endpoints",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 3.7,
-    "severity": "Low",
-    "cwe": "CWE-639",
-    "ransomware": false,
-    "description": "The notification module exposes PATCH and DELETE REST endpoints that perform operations directly on the underlying MongoDB collection without verifying that the requester is authenticated or owns the target notification. As a result, an unauthenticated attacker who obtains a valid notification ID can modify or permanently delete another user's notification. ---",
-    "requiredAction": "Upgrade apostrophe to version 4.33.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-vwwx-px9w-crrc"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113665"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-113664",
-    "slug": "cve-2026-113664",
-    "vendor": "npm",
-    "product": "@apostrophecms/import-export",
-    "name": "ApostropheCMS import-export tar guard misses './..' because it is a literal '../' substring test",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-22",
-    "ransomware": false,
-    "description": "The tar-extraction guard added to @apostrophecms/import-export for GHSA-mwxc-m426-3f78 is a literal substring test for ../, and ./.. does not contain that substring. An entry named ./..",
-    "requiredAction": "Upgrade @apostrophecms/import-export to version 3.7.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-97wv-p4xx-c7mg"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113664"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-113651",
-    "slug": "cve-2026-113651",
-    "vendor": "npm",
-    "product": "uploadfs",
-    "name": "ApostropheCMS: Path traversal in uploadfs",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 3.3,
-    "severity": "Low",
-    "cwe": "CWE-22",
-    "ransomware": false,
-    "description": "The uploadfs library's local storage backend does not validate or sanitize user-supplied paths. The prefixPath() helper only strips double slashes (//) and the backend performs direct string concatenation (uploadsPath + path). An attacker can inject ../ sequences to escape the intended uploads directory, resulting in arbitrary file read, write, and delete on the host filesystem. ---",
-    "requiredAction": "Upgrade uploadfs to version 1.28.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-gmfx-5g6x-rr72"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113651"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-113657",
-    "slug": "cve-2026-113657",
-    "vendor": "npm",
-    "product": "sanitize-html",
-    "name": "ApostropheCMS sanitize-html: SMIL animation namespace-prefix bypass allows javascript: URI injection (XSS)",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 3.7,
-    "severity": "Low",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "sanitize-html 2.17.7 introduced animatesUrlAttribute() to block SVG animation elements (animate, animateColor, animateMotion, animateTransform, set) when their attributeName targets a URL sink like href. However, this check is bypassed when the animation element uses a namespace prefix (e.g., svg:animate instead of animate).",
-    "requiredAction": "Upgrade sanitize-html to version 2.18.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-374f-7chj-9948"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113657"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-113652",
-    "slug": "cve-2026-113652",
-    "vendor": "npm",
-    "product": "uploadfs",
-    "name": "ApostropheCMS uploadfs Azure backend leaks account-level SAS token into every public attachment URL (sas: true)",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 5.6,
-    "severity": "Medium",
-    "cwe": "CWE-200",
-    "ransomware": false,
-    "description": "When uploadfs is configured with the Azure backend and sas: true (a supported configuration introduced in uploadfs 1.25.0), createContainer() builds the BlobServiceClient from a URL that embeds the full SAS query string, and Azure SDK v12 derived clients inherit that query string.",
-    "requiredAction": "Upgrade uploadfs to version 1.28.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-hhph-8536-gfq5"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113652"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-113660",
-    "slug": "cve-2026-113660",
-    "vendor": "npm",
-    "product": "apostrophe",
-    "name": "ApostropheCMS: Authenticated Object-Level Authorization Bypass in exist-in-locale Reveals Restricted Localized Draft Identifiers",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 4.3,
-    "severity": "Medium",
-    "cwe": "CWE-862",
-    "ransomware": false,
-    "description": "Summary ApostropheCMS’s exist-in-locale API allows an authenticated low-privilege user to determine whether restricted documents exist in a specified locale and mode, including draft mode. The endpoint returns localized document identifiers without applying document-level view or edit authorization criteria.",
-    "requiredAction": "Upgrade apostrophe to version 4.33.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-vmxh-77cw-65j7"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113660"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-113662",
-    "slug": "cve-2026-113662",
-    "vendor": "npm",
-    "product": "@apostrophecms/import-export",
-    "name": "ApostropheCMS import-export: NoSQL injection via update-key value lets a crafted import match and overwrite an unidentified document",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 5.4,
-    "severity": "Medium",
-    "cwe": "CWE-284",
-    "ransomware": false,
-    "description": "@apostrophecms/import-export's update-by-key feature lets an imported document carry a :key property (for example slug:key) whose value is used to find an existing document to update instead of inserting a new one.",
-    "requiredAction": "Upgrade @apostrophecms/import-export to version 3.7.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-jqw5-w6h3-44g6"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113662"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-113659",
-    "slug": "cve-2026-113659",
-    "vendor": "npm",
-    "product": "apostrophe",
-    "name": "ApostropheCMS: Client-side Prototype Pollution in apos.http.parseQuery leading to DOM-based XSS against authenticated users",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 6.1,
-    "severity": "Medium",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "The client-side helper apos.http.parseQuery() in ApostropheCMS builds a nested object from a URL query string without sanitizing the keys proto, constructor, or prototype. Parsing an attacker-controlled query string therefore writes arbitrary properties onto Object.prototype (client-side prototype pollution).",
-    "requiredAction": "Upgrade apostrophe to version 4.33.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-m2m5-rw3w-cwmj"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113659"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-113710",
-    "slug": "cve-2026-113710",
-    "vendor": "npm",
-    "product": "apostrophe",
-    "name": "ApostropheCMS: No Attempt Throttling on Authenticated Password-Change Endpoint Enables Unlimited Current-Password Guessing",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 5.9,
-    "severity": "Medium",
-    "cwe": "CWE-307",
-    "ransomware": false,
-    "description": "Summary The self-service password-change endpoint verifies the current password but does not use the login module’s failed-attempt counter, throttle, delay, or lockout mechanism. An attacker with a valid authenticated session can submit repeated guesses for the current password without receiving a lockout or throttle response.",
-    "requiredAction": "Upgrade apostrophe to version 4.33.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-653j-g8j7-gh54"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113710"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-113661",
-    "slug": "cve-2026-113661",
-    "vendor": "npm",
-    "product": "sanitize-html",
-    "name": "ApostropheCMS: Incomplete CVE-2026-53606: `meta http-equiv=refresh` `content` still ships `javascript:` / `data:` URLs",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 5.4,
-    "severity": "Medium",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "CVE-2026-53606 expanded allowedSchemesAppliedToAttributes so named URL attributes (action, formaction, data, poster, background, later ping, xlink:href, …) go through naughtyHref(). A URL nested inside meta content (http-equiv=refresh) is not an attribute name on that list, so the embedded destination is never scheme-checked. Default allowedTags still omit meta.",
-    "requiredAction": "Upgrade sanitize-html to version 2.18.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-cv27-6wvh-8x7j"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113661"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-113668",
-    "slug": "cve-2026-113668",
-    "vendor": "npm",
-    "product": "apostrophe",
-    "name": "ApostropheCMS: :_id/locales REST route omits the public-API authorization gate its sibling read routes enforce (unauthenticated doc-existence + locale metadata disclosure)",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-200",
-    "ransomware": false,
-    "description": "The REST route GET /api/v1//:id/locales (and the equivalent page route) does not apply the publicApiCheckAsync gate that ApostropheCMS's other read routes enforce.",
-    "requiredAction": "Upgrade apostrophe to version 4.33.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-gqh3-7856-rjjg"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113668"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-113670",
-    "slug": "cve-2026-113670",
-    "vendor": "npm",
-    "product": "apostrophe",
-    "name": "ApostropheCMS: Page REST API authorization bypass",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-863",
-    "ransomware": false,
-    "description": "Summary The core page REST API reads full page documents with .permission(false) in getOne and in the all=1 tree dump, bypassing page-type viewRole, visibility: private, and visibility: loginRequired checks. Unauthenticated visitors and low-privilege contributors can read admin-only and non-public page content by id/slug.",
-    "requiredAction": "Upgrade apostrophe to version 4.33.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-2j32-q6rx-h844"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113670"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-113671",
-    "slug": "cve-2026-113671",
-    "vendor": "npm",
-    "product": "@apostrophecms/ai-helper",
-    "name": "ApostropheCMS: Host header controls server-side image fetch origin in @apostrophecms/ai-helper, enabling authenticated SSRF",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 4.3,
-    "severity": "Medium",
-    "cwe": "CWE-918",
-    "ransomware": false,
-    "description": "The @apostrophecms/ai-helper package builds the URL for a server-side image fetch by resolving a storage-relative path against req.baseUrl. When the site does not set a global base URL (the default), req.baseUrl is derived from the incoming HTTP Host header.",
-    "requiredAction": "Upgrade @apostrophecms/ai-helper to version 1.0.0-beta.13 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-527g-ff96-x6wj"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113671"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-113658",
-    "slug": "cve-2026-113658",
-    "vendor": "npm",
-    "product": "apostrophe",
-    "name": "ApostropheCMS: Unauthenticated CSV import requests leave rejected uploads in the system temporary directory",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "A rejected upload can remain in the operating system temporary directory. Multer writes the file before its extension is checked, and the rejection path does not remove that temporary file. An unauthenticated requester can repeat this with large files and steadily consume temporary disk space.",
-    "requiredAction": "Upgrade apostrophe to version 4.33.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-qhcq-9pm2-c9w9"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113658"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-113669",
-    "slug": "cve-2026-113669",
-    "vendor": "npm",
-    "product": "apostrophe",
-    "name": "ApostropheCMS: Cross-domain session token in URL confers session takeover",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-598",
-    "ransomware": false,
-    "description": "Summary Apostrophe's cross-domain session migration emits a single-use session token as a URL query parameter and stores it in the Mongo cache. Any client that presents the token silently adopts the target user's full session (including passport.user) with no credentials.",
-    "requiredAction": "Upgrade apostrophe to version 4.33.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-hhvr-8m24-qqr3"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113669"
-      }
-    ]
-  },
-  {
-    "cve": "CVE-2026-113656",
-    "slug": "cve-2026-113656",
-    "vendor": "npm",
-    "product": "@apostrophecms/form",
-    "name": "ApostropheCMS: Unauthenticated unbounded multipart upload → disk-exhaustion DoS",
-    "dateAdded": "2026-10-20",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-770",
-    "ransomware": false,
-    "description": "Summary The form submission endpoint runs multer({ dest: os.tmpdir() }).any() before authentication, API-key, CSRF-equivalent, or form-existence logic, with no size/count/rate limits. Unauthenticated users can stream unbounded bodies to disk per request; cleanup occurs only after the full body is received.",
-    "requiredAction": "Upgrade @apostrophecms/form to version 1.5.5 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-89mh-mm8c-mv7f"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113656"
       }
     ]
   },

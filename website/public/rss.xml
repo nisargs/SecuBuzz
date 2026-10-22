@@ -5,13 +5,13 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Oct 2026 12:21:33 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 13:10:50 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>GitLab Regular Expression Compiler Vulnerability Allows Remote Code Execution</title>
-      <link>https://secubuzz.com/news/gitlab-regular-expression-compiler-vulnerability-a-12e68d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/gitlab-regular-expression-compiler-vulnerability-a-12e68d</guid>
-      <description><![CDATA[A maximum‑severity Regular Expression Compiler flaw in GitLab permits remote attackers to execute arbitrary code on vulnerable servers via crafted input. The flaw is a buffer overflow in the regex engine, enabling uncontrolled code execution; it is actively exploitable. GitLab released patches for affected versions; administrators should apply updates immediately and disable regex processing as a temporary mitigation.]]></description>
+      <title>Critical GitLab Flaw (CVE-2026-110264, CVSS 10.0) Allows Unauthenticated RCE</title>
+      <link>https://secubuzz.com/news/critical-gitlab-flaw-cve-2026-110264-cvss-10-0-all-12e68d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/critical-gitlab-flaw-cve-2026-110264-cvss-10-0-all-12e68d</guid>
+      <description><![CDATA[GitLab has issued emergency security releases for CVE-2026-110264, a maximum-severity (CVSS 10.0) flaw in its regular expression compiler allowing unauthenticated remote code execution. The vulnerability impacts self-managed GitLab Community and Enterprise editions dating back to version 7.0. Administrators must immediately upgrade to versions 19.5.1, 19.4.3, 19.3.6, or 19.2.9.]]></description>
       <pubDate>Thu, 22 Oct 2026 11:41:48 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/gitlab-warns-of-new-max-severity-code-execution-vulnerability/">BleepingComputer</source>
       <category>Vulnerability</category>
@@ -215,10 +215,10 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>PHP2Shell RCE Flaws Target PHP Runtimes</title>
-      <link>https://secubuzz.com/news/php2shell-rce-flaws-target-php-runtimes-6b35ba</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/php2shell-rce-flaws-target-php-runtimes-6b35ba</guid>
-      <description><![CDATA[Two critical 9.2 remote code execution flaws, dubbed PHP2Shell, target PHP runtimes via malformed input. The vulnerabilities allow unauthenticated attackers to execute arbitrary code, with CVSS scores of 9.2, and public proof‑of‑concept exploits are available. Patch releases are already available; administrators should apply the latest PHP updates immediately and disable legacy configuration options.]]></description>
+      <title>PHP2Shell: Critical PHP Flaws (CVE-2026-109618, CVE-2026-109619) Allow Remote Code Execution</title>
+      <link>https://secubuzz.com/news/php2shell-critical-php-flaws-cve-2026-109618-cve-2-6b35ba</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/php2shell-critical-php-flaws-cve-2026-109618-cve-2-6b35ba</guid>
+      <description><![CDATA[Two critical remote code execution flaws (CVE-2026-109618, CVE-2026-109619), dubbed PHP2Shell, target PHP runtimes via out-of-memory corruption and stale global state. The flaws carry a 9.2 CVSS score, allowing unauthenticated attackers to execute arbitrary code with public exploits available. Official patches are available for PHP 8.2 through 8.5; administrators must apply updates immediately.]]></description>
       <pubDate>Wed, 21 Oct 2026 23:05:40 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/php2shell-how-to-detect-mitigate-critical-php-rce-flaws">CyberNews AI</source>
       <category>Vulnerability</category>
