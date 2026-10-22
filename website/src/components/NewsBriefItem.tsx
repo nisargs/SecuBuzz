@@ -1,11 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowUpRightIcon } from 'lucide-react';
-import type { NewsBrief } from '../types/news';
+import type { NewsBrief, NewsCategory, NewsSeverity } from '../types/news';
 import { timeAgo } from '../utils/date';
 
 interface NewsBriefItemProps {
   brief: NewsBrief;
+  onSelectSeverity?: (severity: NewsSeverity) => void;
+  onSelectCategory?: (category: NewsCategory) => void;
 }
 
 const severityStyles: Record<string, { dot: string; badge: string }> = {
@@ -27,22 +29,47 @@ const severityStyles: Record<string, { dot: string; badge: string }> = {
   },
 };
 
-export function NewsBriefItem({ brief }: NewsBriefItemProps) {
+export function NewsBriefItem({ brief, onSelectSeverity, onSelectCategory }: NewsBriefItemProps) {
   const isCritical = brief.severity === 'CRITICAL';
 
   return (
     <article className={`grid gap-3 py-7 md:grid-cols-[140px_1fr] md:gap-8 ${isCritical ? 'relative before:absolute before:-left-3 before:top-6 before:bottom-6 before:w-0.5 before:bg-critical before:rounded-full md:before:-left-4' : ''}`}>
       <div className="flex flex-wrap items-center gap-2 font-mono text-xs md:flex-col md:items-start md:gap-1.5 md:pt-1">
-        <span className="text-accent">{brief.category}</span>
-        {brief.severity && severityStyles[brief.severity] && (
-          <span
-            className={`inline-flex items-center gap-1.5 rounded border px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider ${severityStyles[brief.severity].badge}`}
+        {onSelectCategory ? (
+          <button
+            type="button"
+            onClick={() => onSelectCategory(brief.category)}
+            className="text-accent transition-opacity hover:opacity-80 hover:underline"
+            title={`Filter by ${brief.category}`}
           >
+            {brief.category}
+          </button>
+        ) : (
+          <span className="text-accent">{brief.category}</span>
+        )}
+        {brief.severity && severityStyles[brief.severity] && (
+          onSelectSeverity ? (
+            <button
+              type="button"
+              onClick={() => onSelectSeverity(brief.severity!)}
+              title={`Filter by ${brief.severity} severity`}
+              className={`inline-flex items-center gap-1.5 rounded border px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider transition-opacity hover:opacity-80 ${severityStyles[brief.severity].badge}`}
+            >
+              <span
+                className={`h-1.5 w-1.5 rounded-full ${severityStyles[brief.severity].dot}`}
+              />
+              {brief.severity}
+            </button>
+          ) : (
             <span
-              className={`h-1.5 w-1.5 rounded-full ${severityStyles[brief.severity].dot}`}
-            />
-            {brief.severity}
-          </span>
+              className={`inline-flex items-center gap-1.5 rounded border px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider ${severityStyles[brief.severity].badge}`}
+            >
+              <span
+                className={`h-1.5 w-1.5 rounded-full ${severityStyles[brief.severity].dot}`}
+              />
+              {brief.severity}
+            </span>
+          )
         )}
         <time dateTime={brief.publishedAt} className="text-subtle">
           {timeAgo(brief.publishedAt)}

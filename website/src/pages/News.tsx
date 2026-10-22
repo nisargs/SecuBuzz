@@ -4,22 +4,41 @@ import { PageIntro } from '../components/PageIntro';
 import { NewsBriefItem } from '../components/NewsBriefItem';
 import { newsCategories } from '../data/news';
 import { useLiveNews } from '../data/useLiveNews';
-import type { NewsCategory } from '../types/news';
+import type { NewsCategory, NewsSeverity } from '../types/news';
 import { Seo } from '../components/Seo';
 
 type Filter = 'All' | NewsCategory;
+type SeverityFilter = 'ALL' | NewsSeverity;
 const PAGE_SIZE = 20;
 
 export function News() {
   const [filter, setFilter] = useState<Filter>('All');
+  const [severityFilter, setSeverityFilter] = useState<SeverityFilter>('ALL');
   const [query, setQuery] = useState('');
   const [page, setPage] = useState(1);
   const { news } = useLiveNews();
+
+  const severityCounts = useMemo(() => {
+    const counts: Record<SeverityFilter, number> = {
+      ALL: news.length,
+      CRITICAL: 0,
+      HIGH: 0,
+      MEDIUM: 0,
+      LOW: 0,
+    };
+    for (const b of news) {
+      if (b.severity && counts[b.severity] !== undefined) {
+        counts[b.severity]++;
+      }
+    }
+    return counts;
+  }, [news]);
 
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
     return news.filter((b) => {
       if (filter !== 'All' && b.category !== filter) return false;
+      if (severityFilter !== 'ALL' && b.severity !== severityFilter) return false;
       if (!q) return true;
       return (
         b.title.toLowerCase().includes(q) ||
@@ -27,7 +46,7 @@ export function News() {
         b.cves.some((c) => c.toLowerCase().includes(q))
       );
     });
-  }, [news, filter, query]);
+  }, [news, filter, severityFilter, query]);
 
   const totalPages = Math.max(1, Math.ceil(results.length / PAGE_SIZE));
   const safePage = Math.min(page, totalPages);
@@ -75,20 +94,41 @@ export function News() {
               </button>
             ))}
           </div>
-          <label className="relative block md:w-72">
-            <span className="sr-only">Search briefs</span>
-            <SearchIcon className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-subtle" aria-hidden="true" />
-            <input
-              type="search"
-              value={query}
-              onChange={(e) => {
-                setQuery(e.target.value);
-                setPage(1);
-              }}
-              placeholder="Search titles or CVE IDs"
-              className="h-9 w-full rounded-md border border-line bg-surface pl-9 pr-3 text-sm text-ink placeholder:text-subtle focus:border-accent focus:outline-none"
-            />
-          </label>
+
+          <div className="flex flex-wrap items-center gap-2.5 sm:gap-3">
+            <label className="inline-flex items-center gap-1.5 text-xs text-subtle">
+              <span className="hidden sm:inline">Severity:</span>
+              <select
+                value={severityFilter}
+                onChange={(e) => {
+                  setSeverityFilter(e.target.value as SeverityFilter);
+                  setPage(1);
+                }}
+                aria-label="Filter by severity"
+                className="h-9 rounded-md border border-line bg-surface px-2.5 text-xs text-ink focus:border-accent focus:outline-none">
+                <option value="ALL">All Severities ({severityCounts.ALL})</option>
+                <option value="CRITICAL">Critical ({severityCounts.CRITICAL})</option>
+                <option value="HIGH">High ({severityCounts.HIGH})</option>
+                <option value="MEDIUM">Medium ({severityCounts.MEDIUM})</option>
+                <option value="LOW">Low ({severityCounts.LOW})</option>
+              </select>
+            </label>
+
+            <label className="relative block flex-1 sm:w-60 md:w-64">
+              <span className="sr-only">Search briefs</span>
+              <SearchIcon className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-subtle" aria-hidden="true" />
+              <input
+                type="search"
+                value={query}
+                onChange={(e) => {
+                  setQuery(e.target.value);
+                  setPage(1);
+                }}
+                placeholder="Search titles or CVE IDs"
+                className="h-9 w-full rounded-md border border-line bg-surface pl-9 pr-3 text-sm text-ink placeholder:text-subtle focus:border-accent focus:outline-none"
+              />
+            </label>
+          </div>
         </div>
 
         <div className="flex items-center justify-between pt-5 font-mono text-xs text-subtle" aria-live="polite">
@@ -108,7 +148,18 @@ export function News() {
           <>
             <div className="divide-y divide-line">
               {paginatedBriefs.map((b) => (
-                <NewsBriefItem key={b.slug} brief={b} />
+                <NewsBriefItem
+                  key={b.slug}
+                  brief={b}
+                  onSelectSeverity={(sev) => {
+                    setSeverityFilter(sev);
+                    setPage(1);
+                  }}
+                  onSelectCategory={(cat) => {
+                    setFilter(cat);
+                    setPage(1);
+                  }}
+                />
               ))}
             </div>
 
@@ -187,6 +238,7 @@ export function News() {
               onClick={() => {
                 setQuery('');
                 setFilter('All');
+                setSeverityFilter('ALL');
                 setPage(1);
               }}
               className="mt-6 rounded-md border border-line px-4 py-2 text-sm text-ink transition-colors duration-150 ease-out hover:bg-surface">
