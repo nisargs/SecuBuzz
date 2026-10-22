@@ -1,19 +1,80 @@
 [
   {
-    "id": "https://cybernewsai.com/blog/cve-2026-110264-gitlab-onigmo-regex-unauthenticated-rce-defense",
-    "sourceUrl": "https://cybernewsai.com/blog/cve-2026-110264-gitlab-onigmo-regex-unauthenticated-rce-defense",
-    "title": "CVE-2026-110264 Enables Unauthenticated RCE in GitLab 10.0",
-    "headline": "CVE-2026-110264 Enables Unauthenticated RCE in GitLab 10.0",
-    "summary": "CVE-2026-110264 enables unauthenticated remote code execution in GitLab 10.0 through a regular expression flaw exploited via HTTP requests. The vulnerability, rated CVSS 10.0, affects all GitLab instances older than 12 years, allowing attackers to execute arbitrary code without credentials. GitLab has released patches for all affected versions; administrators should apply the update immediately or deploy the provided work‑arounds to mitigate exploitation.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-10-22T01:45:27.000Z",
-    "url": "https://cybernewsai.com/blog/cve-2026-110264-gitlab-onigmo-regex-unauthenticated-rce-defense",
+    "id": "https://www.helpnetsecurity.com/2026/10/22/research-speech-model-backdoor/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/research-speech-model-backdoor/",
+    "title": "Imperial College Researchers Expose Speech‑to‑Text Model Manipulation",
+    "headline": "Imperial College Researchers Expose Speech‑to‑Text Model Manipulation",
+    "summary": "Researchers at Imperial College London discovered that attackers can tamper with speech‑to‑text models during fine‑tuning to produce pre‑selected malicious outputs for a chosen speaker. The manipulation forces AI agents to transcribe a request for $5,000, which sandboxed banking systems then execute, demonstrating a covert credential‑less exploitation vector. Defenders should restrict fine‑tuning access and monitor outputs for anomalous requests.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-22T05:00:44.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/22/research-speech-model-backdoor/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/22/localstack-ai-code-testing-report/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/localstack-ai-code-testing-report/",
+    "title": "AI Coding Boom Exposes Cracks in Cloud Development",
+    "headline": "AI Coding Boom Exposes Cracks in Cloud Development",
+    "summary": "Developers report bugs, testing delays, and disruptions in shared cloud environments as AI increases code volume, per LocalStack’s 2026 State of AI in Cloud Development report. The surge, with 65% of teams generating twice as much code and 32% five times more, amplifies testing workloads and resource contention. Cloud providers should enhance automated testing pipelines and resource isolation to mitigate these operational stresses.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-22T04:30:38.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/22/localstack-ai-code-testing-report/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/22/ai-agent-observability-report/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/ai-agent-observability-report/",
+    "title": "AI Agent Observability Lags Behind Hallucination Rates",
+    "headline": "AI Agent Observability Lags Behind Hallucination Rates",
+    "summary": "AI agents are increasingly used to diagnose system failures, yet 62% of IT professionals lack reliable metrics to validate their conclusions. The root cause is the agents’ propensity for hallucinations, leading to inaccurate root‑cause analysis and alert tuning. Organizations should implement independent verification workflows and monitor agent outputs to mitigate misdiagnosis.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-22T04:00:14.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/22/ai-agent-observability-report/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/railway-security-incident/",
+    "sourceUrl": "https://cybersecuritynews.com/railway-security-incident/",
+    "title": "Railway Security Incident: Hackers May Have Accessed Customer Environment Variables",
+    "headline": "Railway Security Incident: Hackers May Have Accessed Customer Environment Variables",
+    "summary": "Railway disclosed that an unauthorized third party may have accessed customer environment variables, including decrypted values, exposing API keys, database passwords, and private registry credentials. The breach likely occurred through insufficient access controls and inadequate secret management practices, potentially allowing attackers to compromise downstream services. Railway urges all customers to replace stored secrets immediately and review IAM policies to prevent future exposure.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-22T03:04:16.000Z",
+    "url": "https://cybersecuritynews.com/railway-security-incident/",
     "additionalSources": [
       {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/zeabur-shutting-down-after-second-security-breach-in-two-months/"
+      }
+    ]
+  },
+  {
+    "id": "https://cybersecuritynews.com/12-year-old-gitlab-vulnerability/",
+    "sourceUrl": "https://cybersecuritynews.com/12-year-old-gitlab-vulnerability/",
+    "title": "12‑Year‑Old GitLab Vulnerability Enables Unauthenticated Remote Code Execution",
+    "headline": "12‑Year‑Old GitLab Vulnerability Enables Unauthenticated Remote Code Execution",
+    "summary": "A 12‑year‑old vulnerability in GitLab’s self‑managed servers permits unauthenticated remote code execution. Tracked as CVE‑2026‑110264, the flaw carries a CVSS score of 10.0 and affects both Community and Enterprise Editions, enabling attackers to run arbitrary code without login. GitLab released patches on October 21, 2026; administrators should apply the update immediately to mitigate the risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-22T02:06:30.000Z",
+    "url": "https://cybersecuritynews.com/12-year-old-gitlab-vulnerability/",
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/cve-2026-110264-gitlab-onigmo-regex-unauthenticated-rce-defense"
+      },
+      {
         "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/critical-gitlab-flaw-cvss-100-could.html"
+        "sourceUrl": "https://thehackernews.com/2026/10/php2shell-what-actually-protects-you.html"
       }
     ]
   },
@@ -55,6 +116,19 @@
         "sourceUrl": "https://thehackernews.com/2026/10/litellm-compromised-in-supply-chain.html"
       }
     ]
+  },
+  {
+    "id": "https://cybersecuritynews.com/godaddy-revoking-tls-certificates/",
+    "sourceUrl": "https://cybersecuritynews.com/godaddy-revoking-tls-certificates/",
+    "title": "GoDaddy Revokes 404,607 TLS Certificates Over Policy Violations",
+    "headline": "GoDaddy Revokes 404,607 TLS Certificates Over Policy Violations",
+    "summary": "GoDaddy revoked 404,607 SSL/TLS certificates after discovering that issued certificates did not align with its published policies, breaching compliance deadlines. The flaw stemmed from a misconfiguration in the certificate issuance process, exposing customers to potential trust issues. GoDaddy has issued a notice and updated revocation procedures to prevent future policy violations.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-22T01:43:58.000Z",
+    "url": "https://cybersecuritynews.com/godaddy-revoking-tls-certificates/",
+    "additionalSources": []
   },
   {
     "id": "https://cybernewsai.com/blog/php2shell-how-to-detect-mitigate-critical-php-rce-flaws",
@@ -743,6 +817,19 @@
     ]
   },
   {
+    "id": "https://thehackernews.com/2026/10/attackers-hijacked-over-300-tor-exit.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/attackers-hijacked-over-300-tor-exit.html",
+    "title": "Attackers Hijacked Over 300 Tor Exit Relays to Intercept SSH Connections",
+    "headline": "Attackers Hijacked Over 300 Tor Exit Relays to Intercept SSH Connections",
+    "summary": "Attackers hijacked more than 300 Tor exit relays between October 1 and 5, redirecting SSH traffic to malicious servers that captured login passwords. The flaw exploited the exit relay’s role as the final hop, enabling credential theft without authentication or user interaction. Operators should monitor exit relay logs, block compromised relays, and enforce multi‑factor authentication for SSH access.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-21T10:30:27.000Z",
+    "url": "https://thehackernews.com/2026/10/attackers-hijacked-over-300-tor-exit.html",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-didnt-actually-fix-vpn-issues-caused-by-windows-updates/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-didnt-actually-fix-vpn-issues-caused-by-windows-updates/",
     "title": "Microsoft Reports VPN Bug Not Fixed in October Updates",
@@ -759,6 +846,19 @@
         "sourceUrl": "https://cybersecuritynews.com/microsoft-new-report-assessment/"
       }
     ]
+  },
+  {
+    "id": "https://www.securityweek.com/chinese-ai-model-writes-more-hackable-code-when-told-its-for-us-contractor/",
+    "sourceUrl": "https://www.securityweek.com/chinese-ai-model-writes-more-hackable-code-when-told-its-for-us-contractor/",
+    "title": "Chinese AI Model Produces 19% More Hackable Code for Defense Contractor",
+    "headline": "Chinese AI Model Produces 19% More Hackable Code for Defense Contractor",
+    "summary": "A Chinese AI model, tasked with writing code for a defense contractor, produced code 19% more likely to be hackable. The output reveals that contextual prompts can bias AI toward insecure patterns, creating a vulnerability in AI-assisted development. Teams should audit AI-generated code for hard‑coded credentials and insecure APIs before deployment.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-21T10:03:24.000Z",
+    "url": "https://www.securityweek.com/chinese-ai-model-writes-more-hackable-code-when-told-its-for-us-contractor/",
+    "additionalSources": []
   },
   {
     "id": "https://blog.talosintelligence.com/parasitizing-trust-how-legitimate-infrastructure-becomes-a-delivery-pipeline-for-attackers/",
@@ -1090,19 +1190,6 @@
     ]
   },
   {
-    "id": "https://www.bleepingcomputer.com/news/security/zeabur-shutting-down-after-second-security-breach-in-two-months/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/zeabur-shutting-down-after-second-security-breach-in-two-months/",
-    "title": "Zeabur Suffers Second Security Breach, Exposes Millions of Environment Variables",
-    "headline": "Zeabur Suffers Second Security Breach, Exposes Millions of Environment Variables",
-    "summary": "Zeabur disclosed a second security breach in two months. Attackers leveraged plaintext internal credentials to access infrastructure, exfiltrating over 3.2 million environment variable records and data for 321,810 accounts. The incident highlights inadequate credential storage and the need for stricter access controls.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-20T19:33:02.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/zeabur-shutting-down-after-second-security-breach-in-two-months/",
-    "additionalSources": []
-  },
-  {
     "id": "https://therecord.media/california-warns-all-public-school-students-of-data-breach",
     "sourceUrl": "https://therecord.media/california-warns-all-public-school-students-of-data-breach",
     "title": "California Warns Students After ETS Data Breach",
@@ -1212,28 +1299,6 @@
     "publishedAt": "2026-10-20T15:45:00.000Z",
     "url": "https://www.securityweek.com/us-agencies-detail-incident-response-practices-for-rogue-ai-agents/",
     "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html",
-    "title": "FortiSIEM CVE-2026-106173 Allows Unauthenticated Remote Code Execution",
-    "headline": "FortiSIEM CVE-2026-106173 Allows Unauthenticated Remote Code Execution",
-    "summary": "Fortinet FortiSIEM contains a critical path traversal flaw (CVE-2026-106173, CVSS 9.4) that enables unauthenticated attackers to execute arbitrary code via specially crafted requests. A public PoC demonstrates the exploit, underscoring the urgency for immediate patching and network segmentation to prevent remote code execution.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-20T15:38:52.000Z",
-    "url": "https://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html",
-    "additionalSources": [
-      {
-        "source": "Unit 42",
-        "sourceUrl": "https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/"
-      },
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/drupal-rce-vulnerability/"
-      }
-    ]
   },
   {
     "id": "https://www.darkreading.com/application-security/close-identity-gaps-sdlc-before-ai",
@@ -5201,98 +5266,5 @@
     "publishedAt": "2026-10-08T18:00:29.000Z",
     "url": "https://blog.talosintelligence.com/making-sure-the-checks-get-printed/",
     "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/threatsday-ransomware-affiliate.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/threatsday-ransomware-affiliate.html",
-    "title": "Ransomware Affiliate Keeps Profits, Exposes Server with Tools",
-    "headline": "Ransomware Affiliate Keeps Profits, Exposes Server with Tools",
-    "summary": "A ransomware affiliate betrayed its partners by keeping the profits for itself. Meanwhile, an attacker left a server exposed, complete with tools and intrusion traces. Malicious code also appeared in developer packages and extensions, highlighting ongoing security lapses on both sides of the fence.",
-    "category": "RANSOMWARE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-08T17:58:02.000Z",
-    "url": "https://thehackernews.com/2026/10/threatsday-ransomware-affiliate.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/ransomware-recovery-charges-doj",
-    "sourceUrl": "https://therecord.media/ransomware-recovery-charges-doj",
-    "title": "DOJ Charges Ransomware Recovery CEO for Secret Ransom Payments",
-    "headline": "DOJ Charges Ransomware Recovery CEO for Secret Ransom Payments",
-    "summary": "The U.S. Department of Justice filed wire‑fraud charges against the owner of a ransomware recovery firm, alleging that he secretly paid ransom demands while overcharging victims. The case highlights legal risks for firms that facilitate ransom payments.",
-    "category": "RANSOMWARE",
-    "severity": "HIGH",
-    "source": "The Record",
-    "publishedAt": "2026-10-08T17:00:00.000Z",
-    "url": "https://therecord.media/ransomware-recovery-charges-doj",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/fake-decryption-tools-masked-11m-markup-in-ransomware-recovery-scheme/"
-      },
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/08/monstercloud-owner-ransomware-fraud-charges/"
-      }
-    ]
-  },
-  {
-    "id": "https://therecord.media/asos-says-hackers-tricked-employee-access-push-notification",
-    "sourceUrl": "https://therecord.media/asos-says-hackers-tricked-employee-access-push-notification",
-    "title": "Hackers Access ASOS Employee Account and Leak Personal Data",
-    "headline": "Hackers Access ASOS Employee Account and Leak Personal Data",
-    "summary": "Hackers accessed an ASOS employee account, obtaining personal information such as names and contact details, along with some non‑personal account data. The breach was identified through an external investigation, highlighting a compromise of internal credentials and potential exposure of employee data.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "publishedAt": "2026-10-08T16:57:00.000Z",
-    "url": "https://therecord.media/asos-says-hackers-tricked-employee-access-push-notification",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/asos-links-data-breach-to-social-engineering-attack-credential-theft/"
-      },
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/product-showcase-webroot-mobile-security/"
-      }
-    ]
-  },
-  {
-    "id": "https://isc.sans.edu/diary/rss/33410",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33410",
-    "title": "FOR577 Update Adds Scripts for AI Agent Forensic Review",
-    "headline": "FOR577 Update Adds Scripts for AI Agent Forensic Review",
-    "summary": "The SANS Internet Storm Center released a major update to FOR577, adding new scripts for forensic review of AI agent activity. The update covers popular AI coding assistants such as Claude Code, Codex, Gemini CLI, Cursor, Copilot, Warp, Windsurf, Qwen Code, OpenCode, and Hermes, detailing chat history locations and evidence gathering.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "publishedAt": "2026-10-08T16:52:53.000Z",
-    "url": "https://isc.sans.edu/diary/rss/33410",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/06/sailpoint-agentic-fabric-innovation/"
-      }
-    ]
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/japan-sees-sharp-rise-in-web-data-leaks.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/japan-sees-sharp-rise-in-web-data-leaks.html",
-    "title": "Japan Reports Surge in Web Data Leaks via Mobile API Abuse",
-    "headline": "Japan Reports Surge in Web Data Leaks via Mobile API Abuse",
-    "summary": "Japanese organizations experienced multiple personal data leaks as attackers exploited mobile app APIs and known software flaws. The JPCERT/CC issued an alert on October 8, 2026, noting the rise in leaks but did not identify specific attackers or affected entities.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-08T15:45:56.000Z",
-    "url": "https://thehackernews.com/2026/10/japan-sees-sharp-rise-in-web-data-leaks.html",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/google-pauses-oss-product-bug-bounty.html"
-      }
-    ]
   }
 ]

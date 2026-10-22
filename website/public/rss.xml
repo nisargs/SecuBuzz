@@ -5,15 +5,51 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Oct 2026 04:53:20 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 05:18:23 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>CVE-2026-110264 Enables Unauthenticated RCE in GitLab 10.0</title>
-      <link>https://secubuzz.com/news/cve-2026-110264-enables-unauthenticated-rce-in-git-2fafe9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-110264-enables-unauthenticated-rce-in-git-2fafe9</guid>
-      <description><![CDATA[CVE-2026-110264 enables unauthenticated remote code execution in GitLab 10.0 through a regular expression flaw exploited via HTTP requests. The vulnerability, rated CVSS 10.0, affects all GitLab instances older than 12 years, allowing attackers to execute arbitrary code without credentials. GitLab has released patches for all affected versions; administrators should apply the update immediately or deploy the provided work‑arounds to mitigate exploitation.]]></description>
-      <pubDate>Thu, 22 Oct 2026 01:45:27 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/cve-2026-110264-gitlab-onigmo-regex-unauthenticated-rce-defense">CyberNews AI</source>
+      <title>Imperial College Researchers Expose Speech‑to‑Text Model Manipulation</title>
+      <link>https://secubuzz.com/news/imperial-college-researchers-expose-speech-to-text-6b71c1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/imperial-college-researchers-expose-speech-to-text-6b71c1</guid>
+      <description><![CDATA[Researchers at Imperial College London discovered that attackers can tamper with speech‑to‑text models during fine‑tuning to produce pre‑selected malicious outputs for a chosen speaker. The manipulation forces AI agents to transcribe a request for $5,000, which sandboxed banking systems then execute, demonstrating a covert credential‑less exploitation vector. Defenders should restrict fine‑tuning access and monitor outputs for anomalous requests.]]></description>
+      <pubDate>Thu, 22 Oct 2026 05:00:44 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/22/research-speech-model-backdoor/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>AI Coding Boom Exposes Cracks in Cloud Development</title>
+      <link>https://secubuzz.com/news/ai-coding-boom-exposes-cracks-in-cloud-development-52a630</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-coding-boom-exposes-cracks-in-cloud-development-52a630</guid>
+      <description><![CDATA[Developers report bugs, testing delays, and disruptions in shared cloud environments as AI increases code volume, per LocalStack’s 2026 State of AI in Cloud Development report. The surge, with 65% of teams generating twice as much code and 32% five times more, amplifies testing workloads and resource contention. Cloud providers should enhance automated testing pipelines and resource isolation to mitigate these operational stresses.]]></description>
+      <pubDate>Thu, 22 Oct 2026 04:30:38 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/22/localstack-ai-code-testing-report/">Help Net Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>AI Agent Observability Lags Behind Hallucination Rates</title>
+      <link>https://secubuzz.com/news/ai-agent-observability-lags-behind-hallucination-r-4c56e0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-agent-observability-lags-behind-hallucination-r-4c56e0</guid>
+      <description><![CDATA[AI agents are increasingly used to diagnose system failures, yet 62% of IT professionals lack reliable metrics to validate their conclusions. The root cause is the agents’ propensity for hallucinations, leading to inaccurate root‑cause analysis and alert tuning. Organizations should implement independent verification workflows and monitor agent outputs to mitigate misdiagnosis.]]></description>
+      <pubDate>Thu, 22 Oct 2026 04:00:14 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/22/ai-agent-observability-report/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Railway Security Incident: Hackers May Have Accessed Customer Environment Variables</title>
+      <link>https://secubuzz.com/news/railway-security-incident-hackers-may-have-accesse-2bab27</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/railway-security-incident-hackers-may-have-accesse-2bab27</guid>
+      <description><![CDATA[Railway disclosed that an unauthorized third party may have accessed customer environment variables, including decrypted values, exposing API keys, database passwords, and private registry credentials. The breach likely occurred through insufficient access controls and inadequate secret management practices, potentially allowing attackers to compromise downstream services. Railway urges all customers to replace stored secrets immediately and review IAM policies to prevent future exposure.]]></description>
+      <pubDate>Thu, 22 Oct 2026 03:04:16 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/railway-security-incident/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>12‑Year‑Old GitLab Vulnerability Enables Unauthenticated Remote Code Execution</title>
+      <link>https://secubuzz.com/news/12-year-old-gitlab-vulnerability-enables-unauthent-4376fd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/12-year-old-gitlab-vulnerability-enables-unauthent-4376fd</guid>
+      <description><![CDATA[A 12‑year‑old vulnerability in GitLab’s self‑managed servers permits unauthenticated remote code execution. Tracked as CVE‑2026‑110264, the flaw carries a CVSS score of 10.0 and affects both Community and Enterprise Editions, enabling attackers to run arbitrary code without login. GitLab released patches on October 21, 2026; administrators should apply the update immediately to mitigate the risk.]]></description>
+      <pubDate>Thu, 22 Oct 2026 02:06:30 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/12-year-old-gitlab-vulnerability/">Cyber Security News</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -33,6 +69,15 @@
       <pubDate>Thu, 22 Oct 2026 01:44:43 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/litellm-supply-chain-compromise-cook-pth-backdoor-defense">CyberNews AI</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>GoDaddy Revokes 404,607 TLS Certificates Over Policy Violations</title>
+      <link>https://secubuzz.com/news/godaddy-revokes-404-607-tls-certificates-over-poli-543d19</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/godaddy-revokes-404-607-tls-certificates-over-poli-543d19</guid>
+      <description><![CDATA[GoDaddy revoked 404,607 SSL/TLS certificates after discovering that issued certificates did not align with its published policies, breaching compliance deadlines. The flaw stemmed from a misconfiguration in the certificate issuance process, exposing customers to potential trust issues. GoDaddy has issued a notice and updated revocation procedures to prevent future policy violations.]]></description>
+      <pubDate>Thu, 22 Oct 2026 01:43:58 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/godaddy-revoking-tls-certificates/">Cyber Security News</source>
+      <category>Policy</category>
     </item>
     <item>
       <title>PHP2Shell RCE Flaws Target PHP Runtimes</title>
@@ -411,51 +456,6 @@
       <pubDate>Wed, 21 Oct 2026 11:02:22 GMT</pubDate>
       <source url="https://www.schneier.com/blog/archives/2026/10/workshop-on-economics-and-information-security-weis-archive.html">Schneier on Security</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>US DHS Orders Removal of DeepSeek AI from Federal Systems</title>
-      <link>https://secubuzz.com/news/us-dhs-orders-removal-of-deepseek-ai-from-federal-455413</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/us-dhs-orders-removal-of-deepseek-ai-from-federal-455413</guid>
-      <description><![CDATA[The U.S. Department of Homeland Security ordered removal of DeepSeek AI products from federal systems, prompting China to defend the technology. The directive targets DeepSeek and any third‑party services built with its models, citing concerns over potential espionage and data leakage. Affected agencies must purge DeepSeek components, replace them with vetted alternatives, and document compliance to meet federal security requirements.]]></description>
-      <pubDate>Wed, 21 Oct 2026 10:54:49 GMT</pubDate>
-      <source url="https://www.securityweek.com/china-defends-deepseek-after-us-ban-of-its-ai-from-government-systems/">SecurityWeek</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Microsoft Reports VPN Bug Not Fixed in October Updates</title>
-      <link>https://secubuzz.com/news/microsoft-reports-vpn-bug-not-fixed-in-october-upd-3a1fd6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-reports-vpn-bug-not-fixed-in-october-upd-3a1fd6</guid>
-      <description><![CDATA[Microsoft announced that the October 2026 Windows 11 cumulative updates mistakenly marked a bug causing Always On VPN connection failures as resolved. The oversight leaves users vulnerable to intermittent VPN outages, potentially disrupting remote access for enterprise environments without authentication bypass. Microsoft is working on a corrective patch and advises deploying the latest cumulative update once released, while monitoring VPN stability.]]></description>
-      <pubDate>Wed, 21 Oct 2026 10:14:53 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-didnt-actually-fix-vpn-issues-caused-by-windows-updates/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Legitimate Platforms Coerced into Attack Delivery Channels</title>
-      <link>https://secubuzz.com/news/legitimate-platforms-coerced-into-attack-delivery-2c65a5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/legitimate-platforms-coerced-into-attack-delivery-2c65a5</guid>
-      <description><![CDATA[Adversaries are exploiting over 25 trusted collaboration, file‑sharing, and payment services to deliver malicious payloads, turning legitimate infrastructure into a covert delivery pipeline. The technique leverages built‑in trust mechanisms, enabling attackers to bypass perimeter defenses and embed malware within seemingly benign files or links. Security teams must enforce strict access controls, monitor anomalous outbound traffic, and apply zero‑trust policies to mitigate this threat.]]></description>
-      <pubDate>Wed, 21 Oct 2026 10:00:00 GMT</pubDate>
-      <source url="https://blog.talosintelligence.com/parasitizing-trust-how-legitimate-infrastructure-becomes-a-delivery-pipeline-for-attackers/">Cisco Talos</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Microsoft Releases OneDrive Sync CLI for IT Administrators</title>
-      <link>https://secubuzz.com/news/microsoft-releases-onedrive-sync-cli-for-it-admini-5d3b4b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-releases-onedrive-sync-cli-for-it-admini-5d3b4b</guid>
-      <description><![CDATA[Microsoft introduced a command-line interface for the OneDrive Sync Client to enable IT administrators to audit and manage sync deployments across enterprise devices. The tool provides programmatic access to sync status, configuration, and troubleshooting data, facilitating rapid issue resolution. Administrators should integrate the CLI into existing management workflows and monitor for any updates or deprecations.]]></description>
-      <pubDate>Wed, 21 Oct 2026 09:38:10 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/onedrive-command-line-tool/">Cyber Security News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Grafana Labs Integrates Knowledge Graph into Cloud Stack</title>
-      <link>https://secubuzz.com/news/grafana-labs-integrates-knowledge-graph-into-cloud-4a4751</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/grafana-labs-integrates-knowledge-graph-into-cloud-4a4751</guid>
-      <description><![CDATA[Grafana Labs has integrated a Knowledge Graph into every Grafana Cloud stack, linking infrastructure and application dependencies with user experience and incident response. The release also adds Digital Experience Monitoring and refines Incident Response Management, giving agents shared context to investigate problems and take action. Security teams can now correlate events across services, accelerating root‑cause analysis.]]></description>
-      <pubDate>Wed, 21 Oct 2026 09:30:38 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/21/grafana-labs-knowledge-graph/">Help Net Security</source>
-      <category>Cloud</category>
     </item>
   </channel>
 </rss>
