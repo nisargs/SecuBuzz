@@ -232,6 +232,27 @@ export async function fetchCloudflareAnalytics({ zoneTag = '65259b39c7fd2648a898
     const dailyInstallsRes = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', 'SELECT date(created_at) as day, COUNT(*) as count, SUM(CASE WHEN is_active = 1 THEN 1 ELSE 0 END) as retained FROM push_tokens GROUP BY date(created_at) ORDER BY day DESC LIMIT 14');
     const notificationsSentRes = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', 'SELECT COUNT(*) as totalSent FROM sent_notifications');
 
+    let notificationOpens = null;
+    try {
+      const opensRes = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', `
+        SELECT 
+          (SELECT COUNT(*) FROM notification_opens) as totalOpens,
+          (SELECT COUNT(DISTINCT article_id) FROM notification_opens) as uniqueArticlesOpened;
+        SELECT article_id, category, severity, COUNT(*) as count FROM notification_opens GROUP BY article_id ORDER BY count DESC LIMIT 5;
+        SELECT article_id, category, severity, opened_at FROM notification_opens ORDER BY opened_at DESC LIMIT 5;
+      `);
+      if (opensRes && opensRes.length >= 3) {
+        notificationOpens = {
+          totalOpens: Number(opensRes[0]?.results?.[0]?.totalOpens || 0),
+          uniqueArticles: Number(opensRes[0]?.results?.[0]?.uniqueArticlesOpened || 0),
+          topArticles: opensRes[1]?.results || [],
+          recent: opensRes[2]?.results || []
+        };
+      }
+    } catch {
+      // Non-fatal
+    }
+
     const summary = tokenSummaryRes?.[0]?.results?.[0] || {};
     deviceTokens = {
       summary: {
@@ -244,7 +265,8 @@ export async function fetchCloudflareAnalytics({ zoneTag = '65259b39c7fd2648a898
       platforms: tokenStatsRes?.[0]?.results || [],
       versions: tokenVersionsRes?.[0]?.results || [],
       dailyInstalls: dailyInstallsRes?.[0]?.results || [],
-      totalSent: Number(notificationsSentRes?.[0]?.results?.[0]?.totalSent || 0)
+      totalSent: Number(notificationsSentRes?.[0]?.results?.[0]?.totalSent || 0),
+      opens: notificationOpens
     };
   } catch (err) {
     // Non-fatal if offline
@@ -284,6 +306,15 @@ if (process.argv[1]?.endsWith('cf_analytics.mjs')) {
       console.log(`  Total Push Alerts Delivered: ${tokens.totalSent}`);
       if (tokens.dailyInstalls && tokens.dailyInstalls.length > 0) {
         console.log('  Recent Daily Registrations: ' + tokens.dailyInstalls.slice(0, 7).map(d => `${d.day}: +${d.count}`).join(' | '));
+      }
+      if (tokens.opens) {
+        console.log(`  Notification Opens Tracked: ${tokens.opens.totalOpens} across ${tokens.opens.uniqueArticles} dispatches`);
+        if (tokens.opens.topArticles && tokens.opens.topArticles.length > 0) {
+          console.log('  Top Opened Dispatches:');
+          for (const a of tokens.opens.topArticles) {
+            console.log(`    - ${a.article_id.slice(0, 48)}: ${a.count} opens [${a.severity || 'HIGH'}]`);
+          }
+        }
       }
     }
 

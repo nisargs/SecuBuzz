@@ -634,6 +634,43 @@ export default {
         }
       }
 
+      // API: Telemetry for Notification CTR & Opens (Private - Admin Only)
+      if (url.pathname === '/api/analytics/notification-clicks' || url.pathname === '/api/analytics/notification-opens') {
+        if (!isAuthorized(request, env)) {
+          return errorResponse('Unauthorized. Admin access required.', 401);
+        }
+        if (!env.DB) return jsonResponse({ totalOpens: 0, recent: [], topArticles: [] });
+        try {
+          const stats: any = await env.DB.prepare(
+            `SELECT COUNT(*) as total_opens FROM notification_opens;`
+          ).first();
+
+          const { results: topArticles } = await env.DB.prepare(
+            `SELECT article_id, category, severity, COUNT(*) as open_count
+             FROM notification_opens
+             GROUP BY article_id
+             ORDER BY open_count DESC
+             LIMIT 15;`
+          ).all();
+
+          const { results: recent } = await env.DB.prepare(
+            `SELECT article_id, category, severity, app_version, platform, opened_at
+             FROM notification_opens
+             ORDER BY opened_at DESC
+             LIMIT 25;`
+          ).all();
+
+          return jsonResponse({
+            success: true,
+            totalOpens: Number(stats?.total_opens || 0),
+            topArticles: topArticles ?? [],
+            recent: recent ?? [],
+          });
+        } catch (err: any) {
+          return jsonResponse({ success: false, error: err.message, totalOpens: 0, topArticles: [], recent: [] });
+        }
+      }
+
       // Favicon & Brand Asset routes
       if (url.pathname === '/favicon.ico' || url.pathname === '/favicon.png' || url.pathname === '/assets/favicon.png') {
         const binary = Uint8Array.from(atob(FAVICON_48_BASE64), c => c.charCodeAt(0));
@@ -1071,6 +1108,40 @@ export default {
           .run();
 
         return jsonResponse({ success: true, message: 'Recorded sent notification' });
+      }
+
+      // API: Telemetry for Push Notification Clicks & Tap Opens (Public Write-Only, 0 PII)
+      // POST /api/notifications/clicked or POST /api/notifications/opened
+      if (
+        (url.pathname === '/api/notifications/clicked' || url.pathname === '/api/notifications/opened') &&
+        request.method === 'POST'
+      ) {
+        if (!env.DB) return jsonResponse({ success: false, error: 'Database not available' }, 500);
+        try {
+          const body: any = await request.json();
+          const { articleId, category, severity, appVersion, platform } = body ?? {};
+          if (!articleId || typeof articleId !== 'string') {
+            return errorResponse('Valid articleId required');
+          }
+
+          const now = new Date().toISOString();
+          await env.DB.prepare(
+            `INSERT INTO notification_opens (article_id, category, severity, app_version, platform, opened_at)
+             VALUES (?, ?, ?, ?, ?, ?);`
+          ).bind(
+            articleId.slice(0, 500),
+            (category || 'GENERAL').slice(0, 50),
+            (severity || 'HIGH').slice(0, 20),
+            (appVersion || '1.0.3').slice(0, 20),
+            (platform || 'android').slice(0, 20),
+            now
+          ).run();
+
+          return jsonResponse({ success: true, message: 'Recorded notification open' });
+        } catch (err: any) {
+          console.warn('Failed to record notification click:', err);
+          return jsonResponse({ success: false, error: err?.message || 'Database error' }, 500);
+        }
       }
 
       // 7. Manual / Webhook Ingestion Dispatcher

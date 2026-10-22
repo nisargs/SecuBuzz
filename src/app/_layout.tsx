@@ -4,6 +4,8 @@ import { Stack, useRouter } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
+import { Platform } from 'react-native';
+import Constants from 'expo-constants';
 
 import { ThemeProvider, useTheme } from '../context/ThemeContext';
 import { getArticleRepository } from '../data/getArticleRepository';
@@ -129,6 +131,23 @@ export default function RootLayout() {
                 : null;
 
         if (articleId) {
+          // Fire anonymous, zero-PII notification open beacon for fleet CTR telemetry
+          try {
+            void fetch('https://secubuzz.com/api/notifications/clicked', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                articleId,
+                category: typeof data?.category === 'string' ? data.category : undefined,
+                severity: typeof data?.severity === 'string' ? data.severity : undefined,
+                appVersion: Constants.expoConfig?.version ?? '1.0.3',
+                platform: Platform.OS,
+              }),
+            }).catch(() => {});
+          } catch {
+            // Non-fatal telemetry beacon
+          }
+
           // Micro-task delay ensures RootNavigator has fully mounted its navigation container
           setTimeout(() => {
             try {

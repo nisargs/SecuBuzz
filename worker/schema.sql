@@ -52,3 +52,17 @@ CREATE TABLE IF NOT EXISTS support_clicks (
 CREATE INDEX IF NOT EXISTS idx_support_clicks_date ON support_clicks(clicked_at);
 CREATE INDEX IF NOT EXISTS idx_support_clicks_visitor ON support_clicks(visitor_id);
 
+-- Tracking of notification taps and click-through rates (anonymous, 0 PII)
+CREATE TABLE IF NOT EXISTS notification_opens (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  article_id TEXT NOT NULL,
+  category TEXT,
+  severity TEXT,
+  app_version TEXT,
+  platform TEXT,
+  opened_at TEXT NOT NULL
+);
+
+CREATE INDEX IF NOT EXISTS idx_notification_opens_date ON notification_opens(opened_at);
+CREATE INDEX IF NOT EXISTS idx_notification_opens_article ON notification_opens(article_id);
+
