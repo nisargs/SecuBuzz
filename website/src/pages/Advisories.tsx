@@ -254,7 +254,7 @@ export function Advisories() {
                     setPage((p) => Math.max(1, p - 1));
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                   }}
-                  className="inline-flex items-center gap-1.5 rounded-md border border-line px-3.5 py-2 text-sm text-ink transition-colors duration-150 ease-out hover:bg-surface disabled:cursor-not-allowed disabled:opacity-40">
+                  className="inline-flex items-center gap-1.5 rounded-md border border-line bg-surface px-3.5 py-2 text-sm text-ink transition-colors duration-150 ease-out hover:border-accent hover:text-accent disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:border-line disabled:hover:text-ink">
                   <ChevronLeftIcon className="h-4 w-4" aria-hidden="true" />
                   Previous
                 </button>
@@ -286,10 +286,10 @@ export function Advisories() {
                           window.scrollTo({ top: 0, behavior: 'smooth' });
                         }}
                         aria-current={safePage === p ? 'page' : undefined}
-                        className={`h-9 w-9 rounded-md font-mono text-xs transition-colors duration-150 ease-out ${
+                        className={`h-9 w-9 rounded-md font-mono text-xs border transition-colors duration-150 ease-out ${
                           safePage === p
-                            ? 'bg-raised font-semibold text-ink'
-                            : 'text-muted hover:bg-surface hover:text-ink'
+                            ? 'border-accent/50 bg-accent/15 font-semibold text-accent'
+                            : 'border-transparent text-muted hover:border-accent/60 hover:bg-surface hover:text-accent'
                         }`}>
                         {p}
                       </button>
@@ -304,7 +304,7 @@ export function Advisories() {
                     setPage((p) => Math.min(totalPages, p + 1));
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                   }}
-                  className="inline-flex items-center gap-1.5 rounded-md border border-line px-3.5 py-2 text-sm text-ink transition-colors duration-150 ease-out hover:bg-surface disabled:cursor-not-allowed disabled:opacity-40">
+                  className="inline-flex items-center gap-1.5 rounded-md border border-line bg-surface px-3.5 py-2 text-sm text-ink transition-colors duration-150 ease-out hover:border-accent hover:text-accent disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:border-line disabled:hover:text-ink">
                   Next
                   <ChevronRightIcon className="h-4 w-4" aria-hidden="true" />
                 </button>
