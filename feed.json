@@ -1,5 +1,160 @@
 [
   {
+    "id": "https://unit42.paloaltonetworks.com/current-landscape-oauth-attacks/",
+    "sourceUrl": "https://unit42.paloaltonetworks.com/current-landscape-oauth-attacks/",
+    "title": "Unit 42 Explores Contemporary OAuth Attack Landscape",
+    "headline": "Unit 42 Explores Contemporary OAuth Attack Landscape",
+    "summary": "Unit 42 examines contemporary OAuth attacks, highlighting credential theft, token misuse, and phishing vectors targeting OAuth implementations. The analysis identifies redirect URI manipulation, insecure client secrets, and insufficient scope validation as common exploitation techniques. Security teams should enforce redirect URI whitelisting, rotate client secrets, implement scope checks, and monitor anomalous token usage to mitigate risks.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Unit 42",
+    "publishedAt": "2026-10-22T17:00:25.000Z",
+    "url": "https://unit42.paloaltonetworks.com/current-landscape-oauth-attacks/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.malwarebytes.com/blog/news/2026/10/facebooks-misleading-privacy-claims-land-meta-a-25-billion-penalty",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/facebooks-misleading-privacy-claims-land-meta-a-25-billion-penalty",
+    "title": "Meta Ordered to Pay $25 Billion for Misleading Privacy Claims",
+    "headline": "Meta Ordered to Pay $25 Billion for Misleading Privacy Claims",
+    "summary": "Meta faces a $25 billion penalty after regulators determined the company misled users about who could access their personal information on Facebook. The ruling underscores the importance of transparent privacy disclosures and compliance with data protection regulations. Facebook must update its privacy policies, enhance user consent mechanisms, and implement audit controls to avoid future violations.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "publishedAt": "2026-10-22T16:59:22.000Z",
+    "url": "https://www.malwarebytes.com/blog/news/2026/10/facebooks-misleading-privacy-claims-land-meta-a-25-billion-penalty",
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/meta-new-mexico-penalty-cambridge-analytica-privacy-case"
+      }
+    ]
+  },
+  {
+    "id": "https://cybersecuritynews.com/gcore-makes-enterprise-security-bundle-free-for-public-agencies-until-end-of-the-year/",
+    "sourceUrl": "https://cybersecuritynews.com/gcore-makes-enterprise-security-bundle-free-for-public-agencies-until-end-of-the-year/",
+    "title": "Gcore Blocks php2shell Vulnerabilities with Free WAAP Plan for Public Agencies",
+    "headline": "Gcore Blocks php2shell Vulnerabilities with Free WAAP Plan for Public Agencies",
+    "summary": "A recent php2shell vulnerability, identified as CVE-2026-109618 and CVE-2026-109619, has forced public websites offline across Europe. Gcore’s WAAP Enterprise plan blocks the php2shell attack path by default, mitigating unauthenticated remote code execution that could compromise web servers. The vendor has released a free subscription for government bodies until December 31, 2026, ensuring continued protection.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-22T16:12:01.000Z",
+    "url": "https://cybersecuritynews.com/gcore-makes-enterprise-security-bundle-free-for-public-agencies-until-end-of-the-year/",
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/php2shell-how-to-detect-mitigate-critical-php-rce-flaws"
+      },
+      {
+        "source": "SentinelOne",
+        "sourceUrl": "https://www.sentinelone.com/blog/stopping-php2shell-how-sentinelone-protects-customers-from-this-attack-technique/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-shares-how-to-fix-broken-exchange-online-ews-apps/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-shares-how-to-fix-broken-exchange-online-ews-apps/",
+    "title": "Microsoft Restores Exchange Web Services API for Legacy Applications",
+    "headline": "Microsoft Restores Exchange Web Services API for Legacy Applications",
+    "summary": "Microsoft has announced that IT administrators can re‑enable the retired Exchange Web Services (EWS) API in Exchange Online to restore functionality for legacy EWS applications. The change addresses the deprecation that caused EWS apps to fail after the API was disabled in a recent update. Administrators should apply the new configuration settings immediately to prevent application downtime.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-22T15:49:32.000Z",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-shares-how-to-fix-broken-exchange-online-ews-apps/",
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/ahold-delhaize-restoring-services-disrupted-by-cyberattack/"
+      }
+    ]
+  },
+  {
+    "id": "https://cybersecuritynews.com/u-s-banks-detect-unauthorized-ai-agents/",
+    "sourceUrl": "https://cybersecuritynews.com/u-s-banks-detect-unauthorized-ai-agents/",
+    "title": "Unauthorized AI Agents Detected in Major U.S. Bank Customer Accounts",
+    "headline": "Unauthorized AI Agents Detected in Major U.S. Bank Customer Accounts",
+    "summary": "Major U.S. banks report unauthorized third‑party AI agents operating within customer accounts, potentially executing actions beyond user instructions. The intrusion leverages automated tools that can contact call centers or initiate independent requests, exposing sensitive data and disrupting service workflows. Banks must isolate affected accounts, revoke compromised API keys, and apply vendor patches or custom mitigations to stop exploitation.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-22T15:23:07.000Z",
+    "url": "https://cybersecuritynews.com/u-s-banks-detect-unauthorized-ai-agents/",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/railway-says-intruder-may-have-accessed.html"
+      },
+      {
+        "source": "Wiz Research",
+        "sourceUrl": "https://www.wiz.io/blog/from-phishing-to-llmjacking"
+      }
+    ]
+  },
+  {
+    "id": "https://cybersecuritynews.com/emudhra-exits-global-ssl-tls-certificate/",
+    "sourceUrl": "https://cybersecuritynews.com/emudhra-exits-global-ssl-tls-certificate/",
+    "title": "eMudhra Exits SSL/TLS Certificate Business After Weak Private Keys Disclosure",
+    "headline": "eMudhra Exits SSL/TLS Certificate Business After Weak Private Keys Disclosure",
+    "summary": "eMudhra Limited exited the global SSL/TLS certificate market after revealing weak private keys in eight intermediate CA certificates. The flaw exposed insufficient key entropy, enabling potential certificate forgery and undermining trust chains, prompting emergency browser mitigations. eMudhra confirmed other digital trust services remain unaffected and urges clients to replace compromised certificates and monitor revoked issuers.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-22T14:52:11.000Z",
+    "url": "https://cybersecuritynews.com/emudhra-exits-global-ssl-tls-certificate/",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/21/emudhra-certificates-private-keys-compromised/"
+      }
+    ]
+  },
+  {
+    "id": "https://cybersecuritynews.com/claude-security-continuous-scans/",
+    "sourceUrl": "https://cybersecuritynews.com/claude-security-continuous-scans/",
+    "title": "Claude Security Enhances Continuous Repository Scanning",
+    "headline": "Claude Security Enhances Continuous Repository Scanning",
+    "summary": "Anthropic updated Claude Security to continuously scan connected code repositories for new flaws, eliminating the need for manual scan initiation. The service now tracks reported vulnerabilities, marks them fixed when changes are detected, and reopens them if the issue returns. This enhancement improves continuous integration pipelines, reduces manual oversight, and ensures timely remediation of newly discovered security issues.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-22T14:40:43.000Z",
+    "url": "https://cybersecuritynews.com/claude-security-continuous-scans/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.malwarebytes.com/blog/scams/2026/10/scammers-are-finding-new-ways-to-target-your-phone-here-are-5-ways-to-protect-yourself",
+    "sourceUrl": "https://www.malwarebytes.com/blog/scams/2026/10/scammers-are-finding-new-ways-to-target-your-phone-here-are-5-ways-to-protect-yourself",
+    "title": "Scammers Target Mobile Users with Deceptive Tactics",
+    "headline": "Scammers Target Mobile Users with Deceptive Tactics",
+    "summary": "Scammers are exploiting mobile users by targeting phones through deceptive tactics that bypass standard warning systems. The trend shows that one in three people ignore scam alerts, enabling attackers to harvest personal data and credentials via social engineering and malicious apps. Security teams should enforce app store vetting, enable two‑factor authentication, and educate users about phishing indicators.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "publishedAt": "2026-10-22T14:14:26.000Z",
+    "url": "https://www.malwarebytes.com/blog/scams/2026/10/scammers-are-finding-new-ways-to-target-your-phone-here-are-5-ways-to-protect-yourself",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/interpol-arrests-1462-suspects-disrupts.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/interpol-arrests-1462-suspects-disrupts.html",
+    "title": "INTERPOL Arrests 1,462 Suspects, Disrupts 10,909 Cybercrime Networks",
+    "headline": "INTERPOL Arrests 1,462 Suspects, Disrupts 10,909 Cybercrime Networks",
+    "summary": "INTERPOL conducted Operation Serengeti III, arresting 1,462 suspects and disrupting 10,909 cybercrime networks worldwide. The coordinated effort recovered over $105 million in illicit funds, involving agencies from 21 countries and targeting a range of criminal activities including phishing, ransomware, and fraud. Law enforcement agencies should continue joint intelligence sharing and enforce stricter regulatory compliance to sustain momentum against transnational cybercrime.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-22T13:38:22.000Z",
+    "url": "https://thehackernews.com/2026/10/interpol-arrests-1462-suspects-disrupts.html",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/authorities-disrupt-nearly-11-000-cybercrime-networks-in-africa/"
+      }
+    ]
+  },
+  {
     "id": "https://www.wiz.io/blog/artex-in-the-wild-storm-0940-expands-targeting-of-it-and-software-vendors",
     "sourceUrl": "https://www.wiz.io/blog/artex-in-the-wild-storm-0940-expands-targeting-of-it-and-software-vendors",
     "title": "Attackers Using ARTEX Target Okta, Entra, and Cognito via AI‑Driven Credential Harvesting",
@@ -108,24 +263,6 @@
     "publishedAt": "2026-10-22T11:18:09.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/22/broadcom-arcot-scam-defense/",
     "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/railway-says-intruder-may-have-accessed.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/railway-says-intruder-may-have-accessed.html",
-    "title": "Railway PaaS Unauthorized Access to Customer Environment Variables",
-    "headline": "Railway PaaS Unauthorized Access to Customer Environment Variables",
-    "summary": "Railway PaaS disclosed anomalous activity indicating an unauthorized third party accessed encrypted environment variables, and in some cases decrypted contents, affecting a subset of users. The flaw stemmed from insufficient access controls on variable storage, enabling credential extraction without authentication. Railway has urged affected customers to rotate credentials and is applying a patch to tighten variable access permissions.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-22T11:15:42.000Z",
-    "url": "https://thehackernews.com/2026/10/railway-says-intruder-may-have-accessed.html",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/railway-security-incident/"
-      }
-    ]
   },
   {
     "id": "https://cybersecuritynews.com/new-android-malware-2/",
@@ -274,19 +411,6 @@
     ]
   },
   {
-    "id": "https://www.bleepingcomputer.com/news/security/authorities-disrupt-nearly-11-000-cybercrime-networks-in-africa/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/authorities-disrupt-nearly-11-000-cybercrime-networks-in-africa/",
-    "title": "Authorities disrupt nearly 11,000 cybercrime networks in Africa",
-    "headline": "Authorities disrupt nearly 11,000 cybercrime networks in Africa",
-    "summary": "Authorities dismantled nearly 11,000 cybercrime networks in Africa during Operation Serengeti III, targeting business email compromise, ransomware, and online scams. The operation arrested more than 1,400 individuals and disrupted infrastructure used for credential theft and extortion campaigns. Security teams should monitor for residual threat actors and ensure email authentication and ransomware defenses remain current.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-22T08:27:11.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/authorities-disrupt-nearly-11-000-cybercrime-networks-in-africa/",
-    "additionalSources": []
-  },
-  {
     "id": "https://www.securityweek.com/oracle-patches-over-1200-vulnerabilities-with-october-2026-cpu/",
     "sourceUrl": "https://www.securityweek.com/oracle-patches-over-1200-vulnerabilities-with-october-2026-cpu/",
     "title": "Oracle Releases Patch for 1,200+ Vulnerabilities, 100 Critical, in Fusion Middleware",
@@ -404,28 +528,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://cybernewsai.com/blog/php2shell-how-to-detect-mitigate-critical-php-rce-flaws",
-    "sourceUrl": "https://cybernewsai.com/blog/php2shell-how-to-detect-mitigate-critical-php-rce-flaws",
-    "title": "PHP2Shell: Critical PHP Flaws (CVE-2026-109618, CVE-2026-109619) Allow Remote Code Execution",
-    "headline": "PHP2Shell: Critical PHP Flaws (CVE-2026-109618, CVE-2026-109619) Allow Remote Code Execution",
-    "summary": "Two critical remote code execution flaws (CVE-2026-109618, CVE-2026-109619), dubbed PHP2Shell, target PHP runtimes via out-of-memory corruption and stale global state. The flaws carry a 9.2 CVSS score, allowing unauthenticated attackers to execute arbitrary code with public exploits available. Official patches are available for PHP 8.2 through 8.5; administrators must apply updates immediately.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-10-21T23:05:40.000Z",
-    "url": "https://cybernewsai.com/blog/php2shell-how-to-detect-mitigate-critical-php-rce-flaws",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/php2shell-patches-land-as-first-exploitation-attempts-hit-sensors/"
-      },
-      {
-        "source": "Malwarebytes Labs",
-        "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/10/php2shell-why-websites-are-going-offline-for-emergency-security-updates"
-      }
-    ]
-  },
-  {
     "id": "https://www.helpnetsecurity.com/2026/10/22/google-chrome-https-protection/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/google-chrome-https-protection/",
     "title": "Chrome Adds Permission Prompt for Insecure HTTP Connections",
@@ -480,19 +582,6 @@
     ]
   },
   {
-    "id": "https://therecord.media/meta-new-mexico-penalty-cambridge-analytica-privacy-case",
-    "sourceUrl": "https://therecord.media/meta-new-mexico-penalty-cambridge-analytica-privacy-case",
-    "title": "Meta Faces $25B Penalty Under New Mexico Privacy Ruling",
-    "headline": "Meta Faces $25B Penalty Under New Mexico Privacy Ruling",
-    "summary": "Meta faces $25B penalty under New Mexico privacy ruling, citing legacy Cambridge Analytica data misuse. The ruling highlights ongoing regulatory scrutiny over Meta's data handling practices, with financial impact tied to past privacy violations. Meta must comply with New Mexico privacy requirements, update privacy policies, and monitor enforcement actions continuously.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Record",
-    "publishedAt": "2026-10-21T20:25:00.000Z",
-    "url": "https://therecord.media/meta-new-mexico-penalty-cambridge-analytica-privacy-case",
-    "additionalSources": []
-  },
-  {
     "id": "https://www.darkreading.com/cloud-security/marvell-microsoft-oracle-standardize-data-center-hardware-security",
     "sourceUrl": "https://www.darkreading.com/cloud-security/marvell-microsoft-oracle-standardize-data-center-hardware-security",
     "title": "Marvell, Microsoft, and Oracle Standardize FIPS 140-3 Level 3 HSM for Data Centers",
@@ -533,24 +622,6 @@
       {
         "source": "Dark Reading",
         "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/optiv-launches-cyberbot-cybersecurity-awareness-training-program"
-      }
-    ]
-  },
-  {
-    "id": "https://www.sentinelone.com/blog/stopping-php2shell-how-sentinelone-protects-customers-from-this-attack-technique/",
-    "sourceUrl": "https://www.sentinelone.com/blog/stopping-php2shell-how-sentinelone-protects-customers-from-this-attack-technique/",
-    "title": "SentinelOne Blocks PHP2Shell Persistence Technique",
-    "headline": "SentinelOne Blocks PHP2Shell Persistence Technique",
-    "summary": "Attackers use PHP2Shell to spawn a web worker that executes arbitrary PHP code, enabling persistence on compromised web servers. The Singularity Agent detects this post‑exploitation activity by monitoring process trees, terminating malicious workers, and hunting for related artifacts, stopping lateral movement. Deploy the latest SentinelOne Singularity Agent, enable web worker monitoring, and apply vendor updates to secure against PHP2Shell.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "SentinelOne",
-    "publishedAt": "2026-10-21T19:21:11.000Z",
-    "url": "https://www.sentinelone.com/blog/stopping-php2shell-how-sentinelone-protects-customers-from-this-attack-technique/",
-    "additionalSources": [
-      {
-        "source": "CrowdStrike",
-        "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-protects-customers-from-php-rce-zero-days/"
       }
     ]
   },
@@ -808,24 +879,6 @@
     "publishedAt": "2026-10-21T14:17:00.000Z",
     "url": "https://therecord.media/php-script-vulnerabilities-warnings",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/21/emudhra-certificates-private-keys-compromised/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/21/emudhra-certificates-private-keys-compromised/",
-    "title": "eMudhra CA Signing Keys Exposed Due to Weak Private Keys",
-    "headline": "eMudhra CA Signing Keys Exposed Due to Weak Private Keys",
-    "summary": "A weakness in eMudhra’s private key generation allowed attackers to recover intermediate certificate signing keys from public certificates in under a second, compromising over 60 million issued certificates. The flaw, discovered by researcher Wayne on October 17, enabled unauthorized signing of certificates, potentially facilitating man‑in‑the‑middle attacks. eMudhra has issued a patch and recommends immediate key rotation and stricter key‑strength enforcement.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-21T14:11:24.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/21/emudhra-certificates-private-keys-compromised/",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/mozilla-google-apple-block-compromised-emudhra-ca-certificates/"
-      }
-    ]
   },
   {
     "id": "https://blog.cloudflare.com/full-transaction-waf/",
@@ -1185,28 +1238,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://thehackernews.com/2026/10/state-bank-of-india-confirms-data-leak.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/state-bank-of-india-confirms-data-leak.html",
-    "title": "State Bank of India Data Leak Exposes 3,897 Customer Records on Dark Web",
-    "headline": "State Bank of India Data Leak Exposes 3,897 Customer Records on Dark Web",
-    "summary": "State Bank of India disclosed a data leak exposing 3,897 customer records on the dark web, including personal information such as names, addresses, and account numbers. The breach originated from an unidentified source, and the bank has not determined how the data was exfiltrated. The bank issued a public notice and is investigating while advising customers to monitor accounts.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-21T07:44:22.000Z",
-    "url": "https://thehackernews.com/2026/10/state-bank-of-india-confirms-data-leak.html",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/meta-muse-ai-privacy-flaw/"
-      },
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/russia-cyberattack-firstvds-cloud"
-      }
-    ]
-  },
-  {
     "id": "https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html",
     "sourceUrl": "https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html",
     "title": "CISA Adds Plex2Shell SSRF Vulnerability to Known Exploited Vulnerabilities Catalog",
@@ -1345,24 +1376,6 @@
     "publishedAt": "2026-10-20T22:02:42.000Z",
     "url": "https://www.wiz.io/blog/wiz-sensor-on-gke-1-click-runtime-protection-now-native",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.wiz.io/blog/from-phishing-to-llmjacking",
-    "sourceUrl": "https://www.wiz.io/blog/from-phishing-to-llmjacking",
-    "title": "Phishing Attack Hijacks Cloud Billing Accounts for Unauthorized AI Usage",
-    "headline": "Phishing Attack Hijacks Cloud Billing Accounts for Unauthorized AI Usage",
-    "summary": "A single Google Search ad click enabled attackers to steal credentials, hijack cloud billing accounts, and incur hundreds of thousands of dollars in unauthorized AI API usage. The breach exposes sensitive billing data and financial resources, requiring immediate credential revocation and account monitoring.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Wiz Research",
-    "publishedAt": "2026-10-20T20:03:10.000Z",
-    "url": "https://www.wiz.io/blog/from-phishing-to-llmjacking",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/hackers-hijack-790-github-repositories/"
-      }
-    ]
   },
   {
     "id": "https://therecord.media/california-warns-all-public-school-students-of-data-breach",
@@ -1670,24 +1683,6 @@
     "publishedAt": "2026-10-20T13:09:24.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/20/identos-policyarc/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/ahold-delhaize-restoring-services-disrupted-by-cyberattack/",
-    "sourceUrl": "https://www.securityweek.com/ahold-delhaize-restoring-services-disrupted-by-cyberattack/",
-    "title": "Ahold Delhaize Restores Services After Cyberattack",
-    "headline": "Ahold Delhaize Restores Services After Cyberattack",
-    "summary": "Ahold Delhaize experienced a cyberattack that disrupted multiple websites and apps across Europe. The company has restored many services and expects e‑commerce brands in the US to be back online within days. No data exfiltration was reported.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-20T13:02:18.000Z",
-    "url": "https://www.securityweek.com/ahold-delhaize-restoring-services-disrupted-by-cyberattack/",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/ahold-delhaize-cyberattack-affects-services-across-us-and-europe/"
-      }
-    ]
   },
   {
     "id": "https://blog.cloudflare.com/typescript-rust-port/",
