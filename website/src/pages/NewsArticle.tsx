@@ -25,6 +25,15 @@ export function NewsArticle() {
     const s = b.slug.toLowerCase();
     if (s === target) return true;
     if (b.aliases?.some(a => a.toLowerCase() === target)) return true;
+
+    // Match by unique 6-character hex hash suffix (e.g. 12e68d)
+    const targetHex = target.match(/([a-f0-9]{6})$/)?.[1];
+    if (targetHex) {
+      const sHex = s.match(/([a-f0-9]{6})$/)?.[1];
+      if (sHex === targetHex) return true;
+      if (b.aliases?.some(a => a.toLowerCase().endsWith(targetHex))) return true;
+    }
+
     const base = b.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 50).replace(/^-+|-+$/g, '');
     if (base && (target === base || target.startsWith(base) || base.startsWith(target))) return true;
     return s.startsWith(target) || target.startsWith(s);
