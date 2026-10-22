@@ -216,5 +216,12 @@
   - **Reddit Developer Story**: On hold until account reaches 50–100 comment karma. Template preserved in `docs/MARKETING_PLAYBOOK.md` for `r/cybersecurity`, `r/sysadmin`, and `r/androidapps`.
   - **Hacker News "Show HN"**: Target Tuesday/Wednesday 8:00–9:00 AM EDT focusing on $0 edge worker architecture, zero-tracking, and strict schema AI distillation.
   - **Daily Morning LinkedIn Triage**: Daily 8:30 AM posts sharing 60-word technical briefs for active CVEs with EPSS scores.
+- [ ] **Community / Custom Broadcast Push Notifications (On Hold / For Later)**:
+  - **Tool Ready**: `scripts/send_custom_push.mjs` allows broadcasting custom push notifications directly to all registered mobile app devices in Cloudflare D1.
+  - **Safety Features**: Defaults to `--dry-run` inspection (displays target count, active token breakdown, and payload preview) before executing live broadcasts with `--send`.
+  - **Reminder Triggers for Future**:
+    - Milestone celebrations (e.g., reaching 100+ active devices or 1,000 readers).
+    - Announcing major feature updates (e.g., v1.1.0 "My Stack / Am I Affected?" or Android Home Screen Widgets).
+    - Timed rating & feedback outreach (e.g., asking engaged readers for a review after an impactful zero-day news cycle).
 - *(Note: AMOLED Black mode `#000000` is already successfully built and deployed in Release v1.0.3 / Version Code 9).*
 
