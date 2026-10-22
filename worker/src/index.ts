@@ -724,7 +724,7 @@ export default {
       if (url.pathname === '/api/news' || url.pathname === '/feed.json') {
         const articles = await getArticles();
         return jsonResponse(articles, 200, {
-          'Cache-Control': 'public, max-age=300, s-maxage=300',
+          'Cache-Control': 'public, max-age=60, s-maxage=300, stale-while-revalidate=120',
         });
       }
 

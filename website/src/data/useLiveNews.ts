@@ -194,6 +194,79 @@ function transformFeed(feed: any[]): NewsBrief[] {
   return deduped.map(({ keywords, ...rest }) => rest);
 }
 
+const SEVERITY_WEIGHT: Record<string, number> = {
+  CRITICAL: 4,
+  HIGH: 3,
+  MEDIUM: 2,
+  LOW: 1,
+};
+
+function reconcileLiveFeed(liveFeed: NewsBrief[], baseNews: NewsBrief[]): NewsBrief[] {
+  const baseByHex = new Map<string, NewsBrief>();
+  const baseByUrl = new Map<string, NewsBrief>();
+
+  for (const b of baseNews) {
+    const hex = b.slug.match(/([a-f0-9]{6})$/)?.[1];
+    if (hex) baseByHex.set(hex.toLowerCase(), b);
+    if (b.sourceUrl) baseByUrl.set(b.sourceUrl.toLowerCase(), b);
+  }
+
+  const reconciled = liveFeed.map((incoming) => {
+    const hex = incoming.slug.match(/([a-f0-9]{6})$/)?.[1];
+    const match = (hex && baseByHex.get(hex.toLowerCase())) ||
+                  (incoming.sourceUrl && baseByUrl.get(incoming.sourceUrl.toLowerCase()));
+
+    if (!match) return incoming;
+
+    // 1. Anti-downgrade: Never downgrade severity (e.g. CRITICAL to HIGH during feed lag)
+    const incomingWeight = (incoming.severity && SEVERITY_WEIGHT[incoming.severity]) || 0;
+    const matchWeight = (match.severity && SEVERITY_WEIGHT[match.severity]) || 0;
+    const finalSeverity = matchWeight > incomingWeight ? match.severity : incoming.severity;
+
+    // 2. Canonical slug preservation: Keep CVE-enriched canonical slug
+    let finalSlug = incoming.slug;
+    const finalAliases = Array.from(new Set([...(incoming.aliases || []), ...(match.aliases || [])]));
+    if (match.slug && match.slug !== incoming.slug) {
+      const matchHasCve = /cve-\d{4}-\d+/i.test(match.slug);
+      const incomingHasCve = /cve-\d{4}-\d+/i.test(incoming.slug);
+      if (matchHasCve && !incomingHasCve) {
+        finalSlug = match.slug;
+        if (!finalAliases.includes(incoming.slug)) finalAliases.push(incoming.slug);
+      } else {
+        if (!finalAliases.includes(match.slug)) finalAliases.push(match.slug);
+      }
+    }
+
+    // 3. Preserve enriched CVEs
+    const finalCves = Array.from(new Set([...(incoming.cves || []), ...(match.cves || [])]));
+
+    return {
+      ...incoming,
+      slug: finalSlug,
+      severity: finalSeverity,
+      cves: finalCves,
+      aliases: finalAliases,
+      title: matchWeight > incomingWeight ? match.title : incoming.title,
+      summary: matchWeight > incomingWeight ? match.summary : incoming.summary,
+    };
+  });
+
+  // Preserve any baseNews items that might not have reached R2 yet
+  for (const b of baseNews) {
+    const hex = b.slug.match(/([a-f0-9]{6})$/)?.[1];
+    const exists = reconciled.some(r => {
+      const rHex = r.slug.match(/([a-f0-9]{6})$/)?.[1];
+      return (hex && rHex && hex.toLowerCase() === rHex.toLowerCase()) ||
+             (r.sourceUrl && b.sourceUrl && r.sourceUrl.toLowerCase() === b.sourceUrl.toLowerCase());
+    });
+    if (!exists) {
+      reconciled.push(b);
+    }
+  }
+
+  return reconciled;
+}
+
 let cachedNews: NewsBrief[] = initialNews;
 let isFetching = false;
 let listeners: Array<(items: NewsBrief[]) => void> = [];
@@ -216,8 +289,9 @@ export function useLiveNews(): { news: NewsBrief[]; loading: boolean } {
         .then((data: any) => {
           if (Array.isArray(data) && data.length > 0) {
             const transformed = transformFeed(data);
-            cachedNews = transformed;
-            listeners.forEach(cb => cb(transformed));
+            const reconciled = reconcileLiveFeed(transformed, initialNews);
+            cachedNews = reconciled;
+            listeners.forEach(cb => cb(reconciled));
           }
         })
         .catch(err => {

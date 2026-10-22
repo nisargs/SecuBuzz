@@ -532,7 +532,7 @@ function normaliseCategory(category) {
     : "GENERAL";
 }
 
-function normaliseSeverity(severity) {
+function normaliseSeverity(severity, contextText = "") {
   const allowed = new Set([
     "LOW",
     "MEDIUM",
@@ -544,9 +544,54 @@ function normaliseSeverity(severity) {
     .trim()
     .toUpperCase();
 
-  return allowed.has(normalized)
+  let assigned = allowed.has(normalized)
     ? normalized
     : "MEDIUM";
+
+  const lower = String(contextText || "").toLowerCase();
+  if (!lower) return assigned;
+
+  // 1. Check for explicit CVSS scores (e.g. CVSS 10.0, CVSS: 9.8, CVSS score of 9.2)
+  const cvssMatch = lower.match(/cvss(?:\s*(?:v?3\.[01]|v?4\.0))?\s*(?:score)?\s*(?:of|:)?\s*([0-9](?:\.[0-9])?|10(?:\.0)?)/i);
+  if (cvssMatch) {
+    const score = parseFloat(cvssMatch[1]);
+    if (score >= 9.0) return "CRITICAL";
+    if (score >= 7.0 && assigned !== "CRITICAL") return "HIGH";
+  }
+
+  // 2. Deterministic CRITICAL criteria: Active zero-day, unauthenticated RCE, maximum-severity
+  const isCriticalSignal =
+    lower.includes("cvss 10") ||
+    lower.includes("cvss 9.") ||
+    lower.includes("cvss: 10") ||
+    lower.includes("cvss: 9.") ||
+    lower.includes("cvss score of 10") ||
+    lower.includes("cvss score of 9.") ||
+    (lower.includes("unauthenticated") && (lower.includes("rce") || lower.includes("remote code execution"))) ||
+    lower.includes("active in-the-wild zero-day") ||
+    lower.includes("actively exploited zero-day") ||
+    (lower.includes("maximum-severity") && (lower.includes("code execution") || lower.includes("rce")));
+
+  if (isCriticalSignal) {
+    return "CRITICAL";
+  }
+
+  // 3. Deterministic HIGH criteria floor
+  const isHighFloor =
+    lower.includes("cvss 8.") ||
+    lower.includes("cvss 7.") ||
+    lower.includes("cvss: 8.") ||
+    lower.includes("cvss: 7.") ||
+    lower.includes("public proof-of-concept") ||
+    lower.includes("public poc") ||
+    lower.includes("ransomware extortion") ||
+    lower.includes("active ransomware");
+
+  if (isHighFloor && assigned !== "CRITICAL") {
+    return "HIGH";
+  }
+
+  return assigned;
 }
 
 function wordCount(text) {
@@ -627,6 +672,7 @@ function validateAiArticle(
     })(),
     severity: normaliseSeverity(
       article.severity,
+      `${headline} ${summary} ${candidate.title || ""} ${candidate.content || candidate.description || ""}`,
     ),
     source: candidate.source,
     publishedAt: candidate.publishedAt

@@ -39,9 +39,16 @@ export function NewsArticle() {
     return s.startsWith(target) || target.startsWith(s);
   });
 
-  // Keep browser address bar in sync with canonical slug if accessed via alias
+  // Keep browser address bar in sync with canonical slug if accessed via a short or legacy alias (e.g. /news/12e68d or /news/article-12e68d)
   useEffect(() => {
-    if (brief && slug && brief.slug.toLowerCase() !== slug.toLowerCase()) {
+    if (!brief || !slug) return;
+    const currentSlug = slug.toLowerCase();
+    const canonicalSlug = brief.slug.toLowerCase();
+    if (currentSlug === canonicalSlug) return;
+
+    // Only rewrite if user accessed via a non-descriptive short alias
+    const isShortAlias = currentSlug.length <= 15 || /^article-[a-f0-9]{6}$/.test(currentSlug);
+    if (isShortAlias) {
       window.history.replaceState(null, '', `/news/${brief.slug}`);
     }
   }, [brief, slug]);
