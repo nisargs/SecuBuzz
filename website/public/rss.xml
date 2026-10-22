@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Oct 2026 23:37:15 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 04:53:20 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>CVE-2026-110264 Enables Unauthenticated RCE in GitLab 10.0</title>
+      <link>https://secubuzz.com/news/cve-2026-110264-enables-unauthenticated-rce-in-git-2fafe9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-110264-enables-unauthenticated-rce-in-git-2fafe9</guid>
+      <description><![CDATA[CVE-2026-110264 enables unauthenticated remote code execution in GitLab 10.0 through a regular expression flaw exploited via HTTP requests. The vulnerability, rated CVSS 10.0, affects all GitLab instances older than 12 years, allowing attackers to execute arbitrary code without credentials. GitLab has released patches for all affected versions; administrators should apply the update immediately or deploy the provided work‑arounds to mitigate exploitation.]]></description>
+      <pubDate>Thu, 22 Oct 2026 01:45:27 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/cve-2026-110264-gitlab-onigmo-regex-unauthenticated-rce-defense">CyberNews AI</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Operation FlashHole: Lazarus Weaponizes CrossWeb EX with TechHub Loaders</title>
+      <link>https://secubuzz.com/news/operation-flashhole-lazarus-weaponizes-crossweb-ex-354c81</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/operation-flashhole-lazarus-weaponizes-crossweb-ex-354c81</guid>
+      <description><![CDATA[Lazarus Group launched Operation FlashHole, weaponizing mandatory CrossWeb EX software in South Korea with TechHub loaders to compromise corporate networks. The attack chain exploits the software’s privileged installation process, enabling attackers to execute arbitrary code and exfiltrate data without user interaction. Security teams should disable CrossWeb EX where possible, apply vendor patches, and monitor for anomalous loader activity to mitigate the threat.]]></description>
+      <pubDate>Thu, 22 Oct 2026 01:45:14 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/operation-flashhole-lazarus-crossweb-ex-malware-defense">CyberNews AI</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>LiteLLM Supply Chain Backdoor via Stolen GitHub CLI Tokens</title>
+      <link>https://secubuzz.com/news/litellm-supply-chain-backdoor-via-stolen-github-cl-7e91e9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/litellm-supply-chain-backdoor-via-stolen-github-cl-7e91e9</guid>
+      <description><![CDATA[LiteLLM 1.107.0 was compromised through stolen GitHub CLI tokens, enabling attackers to drop cook.pth stealers and backdoors into the package. The flaw allows remote code execution by injecting malicious Python modules, exposing users to credential theft and data exfiltration. Immediate patching of LiteLLM to 1.107.1 and revoking compromised tokens is mandatory.]]></description>
+      <pubDate>Thu, 22 Oct 2026 01:44:43 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/litellm-supply-chain-compromise-cook-pth-backdoor-defense">CyberNews AI</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>PHP2Shell RCE Flaws Target PHP Runtimes</title>
       <link>https://secubuzz.com/news/php2shell-rce-flaws-target-php-runtimes-6b35ba</link>
@@ -32,6 +59,15 @@
       <description><![CDATA[Hackers breached Japan’s Onamae Desktop Cloud, compromising the infrastructure of a popular VPS provider and installing malware on up to 26,739 customer servers. The attack leveraged unauthorized access to the cloud management platform, enabling widespread distribution of malicious code across virtual machines. Onamae has issued a patch and urged customers to update credentials and scan for infections.]]></description>
       <pubDate>Wed, 21 Oct 2026 21:43:27 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/japans-onamae-desktop-cloud-hacked-up-to-27-000-servers-affected/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Cisco Talos Reports Compromised eMudhra Intermediate Certificates</title>
+      <link>https://secubuzz.com/news/cisco-talos-reports-compromised-emudhra-intermedia-472d98</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisco-talos-reports-compromised-emudhra-intermedia-472d98</guid>
+      <description><![CDATA[Cisco Talos identified eight compromised intermediate certificates issued by eMudhra, a prominent Indian certificate authority. The breach allows attackers to forge trusted TLS certificates, potentially enabling man‑in‑the‑middle attacks against users of eMudhra‑signed services. Affected entities must revoke the certificates, install updated root certificates, and monitor for anomalous certificate issuance to protect their infrastructure.]]></description>
+      <pubDate>Wed, 21 Oct 2026 20:43:29 GMT</pubDate>
+      <source url="https://blog.talosintelligence.com/compromised-intermediate-certificates/">Cisco Talos</source>
       <category>Breach</category>
     </item>
     <item>
@@ -71,12 +107,30 @@
       <category>Cloud</category>
     </item>
     <item>
+      <title>Private Sector Launches $10 Million Initiative to Strengthen Utility Cybersecurity</title>
+      <link>https://secubuzz.com/news/private-sector-launches-10-million-initiative-to-s-7a4455</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/private-sector-launches-10-million-initiative-to-s-7a4455</guid>
+      <description><![CDATA[A private sector consortium has launched a $10 million initiative to support up to 500 under‑resourced utilities with cybersecurity enhancements. The program offers technical guidance, threat intelligence sharing, and funding for security controls to address gaps in legacy systems and limited staff. Utilities are urged to engage with the consortium promptly to secure critical infrastructure and comply with emerging regulatory expectations.]]></description>
+      <pubDate>Wed, 21 Oct 2026 19:45:00 GMT</pubDate>
+      <source url="https://therecord.media/utilities-cybersecurity-initiative-accenture">The Record</source>
+      <category>Policy</category>
+    </item>
+    <item>
       <title>SentinelOne Blocks PHP2Shell Persistence Technique</title>
       <link>https://secubuzz.com/news/sentinelone-blocks-php2shell-persistence-technique-245b12</link>
       <guid isPermaLink="true">https://secubuzz.com/news/sentinelone-blocks-php2shell-persistence-technique-245b12</guid>
       <description><![CDATA[Attackers use PHP2Shell to spawn a web worker that executes arbitrary PHP code, enabling persistence on compromised web servers. The Singularity Agent detects this post‑exploitation activity by monitoring process trees, terminating malicious workers, and hunting for related artifacts, stopping lateral movement. Deploy the latest SentinelOne Singularity Agent, enable web worker monitoring, and apply vendor updates to secure against PHP2Shell.]]></description>
       <pubDate>Wed, 21 Oct 2026 19:21:11 GMT</pubDate>
       <source url="https://www.sentinelone.com/blog/stopping-php2shell-how-sentinelone-protects-customers-from-this-attack-technique/">SentinelOne</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>PHP2Shell Vulnerabilities Trigger Active Exploitation</title>
+      <link>https://secubuzz.com/news/php2shell-vulnerabilities-trigger-active-exploitat-31d443</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/php2shell-vulnerabilities-trigger-active-exploitat-31d443</guid>
+      <description><![CDATA[Two critical PHP vulnerabilities, identified as PHP2Shell, have been disclosed and are actively being exploited by threat actors. The flaws allow remote code execution through malformed input in popular PHP frameworks, with public proof‑of‑concept exploits demonstrating high‑severity impact on web applications. Immediate patching of affected PHP versions and application hardening is mandatory to mitigate the risk.]]></description>
+      <pubDate>Wed, 21 Oct 2026 19:19:17 GMT</pubDate>
+      <source url="https://www.darkreading.com/application-security/php2shell-bugs-red-alert-security-industry">Dark Reading</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -107,13 +161,13 @@
       <category>Malware</category>
     </item>
     <item>
-      <title>Nation-State ARTEX Campaign Compromises ConnectWise Supply Chain</title>
-      <link>https://secubuzz.com/news/nation-state-artex-campaign-compromises-connectwis-53ef2b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/nation-state-artex-campaign-compromises-connectwis-53ef2b</guid>
-      <description><![CDATA[A nation-state operation employed ARTEX agentic AI to accelerate a ConnectWise supply chain compromise, targeting Microsoft 365 application credentials. The attack chain leverages credential abuse across multiple tenant environments, exposing privileged access to corporate data without requiring initial lateral movement. Defenders should enforce strict application credential rotation, enable multi‑factor authentication, and monitor for anomalous ConnectWise activity to mitigate exploitation.]]></description>
-      <pubDate>Wed, 21 Oct 2026 18:23:55 GMT</pubDate>
-      <source url="https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/">Microsoft Security</source>
-      <category>Malware</category>
+      <title>PHP Foundation Discloses Two Critical Vulnerabilities Amid AI Review</title>
+      <link>https://secubuzz.com/news/php-foundation-discloses-two-critical-vulnerabilit-3e479a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/php-foundation-discloses-two-critical-vulnerabilit-3e479a</guid>
+      <description><![CDATA[PHP Foundation disclosed two critical vulnerabilities discovered in 2024, with a third‑party AI review amplifying scrutiny. The flaws enable unauthenticated remote code execution via malformed input, yet no public exploit has been reported. PHP has released patches for both bugs; administrators should apply updates immediately and monitor logs for anomalous activity.]]></description>
+      <pubDate>Wed, 21 Oct 2026 17:30:00 GMT</pubDate>
+      <source url="https://therecord.media/php-foundation-statement-critical-vulnerabilities">The Record</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Arrakis Security Report Reveals Dormant AI Agents Retain Valid Credentials</title>
@@ -170,15 +224,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Optiv Launches CyberBOT Cybersecurity Awareness Training Program</title>
-      <link>https://secubuzz.com/news/optiv-launches-cyberbot-cybersecurity-awareness-tr-2213eb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/optiv-launches-cyberbot-cybersecurity-awareness-tr-2213eb</guid>
-      <description><![CDATA[Optiv has launched CyberBOT, a cybersecurity awareness training program targeting educators, nonprofits, and community leaders to build resilient communities. The program offers hands‑on sessions that cover threat recognition, secure practices, and incident response fundamentals for year‑round cyber readiness. Organizations should enroll participants, integrate the curriculum into existing training schedules, and monitor engagement metrics to assess effectiveness.]]></description>
-      <pubDate>Wed, 21 Oct 2026 15:44:48 GMT</pubDate>
-      <source url="https://www.darkreading.com/cybersecurity-operations/optiv-launches-cyberbot-cybersecurity-awareness-training-program">Dark Reading</source>
-      <category>Policy</category>
-    </item>
-    <item>
       <title>Gentlemen Ransomware Disables Windows Defender and Destroying Backups</title>
       <link>https://secubuzz.com/news/gentlemen-ransomware-disables-windows-defender-and-47dd1c</link>
       <guid isPermaLink="true">https://secubuzz.com/news/gentlemen-ransomware-disables-windows-defender-and-47dd1c</guid>
@@ -203,15 +248,6 @@
       <description><![CDATA[LiteLLM version 1.107.0 was compromised on PyPI, distributing a credential stealer and remote access trojan through all seven wheel files and Docker images, exposing developer systems, build runners, and AI services. The malicious code exploits the distribution channel, enabling attackers to harvest credentials and maintain persistent remote control without user interaction. Aikido recommends immediate removal of the affected package and applying the vendor’s patched release.]]></description>
       <pubDate>Wed, 21 Oct 2026 15:11:27 GMT</pubDate>
       <source url="https://cybersecuritynews.com/litellm-compromised/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Two Critical RCEs Discovered in PHP Core</title>
-      <link>https://secubuzz.com/news/two-critical-rces-discovered-in-php-core-4954ee</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/two-critical-rces-discovered-in-php-core-4954ee</guid>
-      <description><![CDATA[Two critical remote code execution vulnerabilities were discovered in PHP core, potentially affecting all PHP-based applications across the ecosystem. The flaws arise from improper input validation in the parser, allowing unauthenticated attackers to execute arbitrary code and are actively exploitable. A patch is available from the PHP team; administrators should apply it immediately and monitor logs for suspicious activity.]]></description>
-      <pubDate>Wed, 21 Oct 2026 15:10:53 GMT</pubDate>
-      <source url="https://blog.talosintelligence.com/two-critical-rces-in-php-core/">Cisco Talos</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -377,6 +413,15 @@
       <category>Policy</category>
     </item>
     <item>
+      <title>US DHS Orders Removal of DeepSeek AI from Federal Systems</title>
+      <link>https://secubuzz.com/news/us-dhs-orders-removal-of-deepseek-ai-from-federal-455413</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/us-dhs-orders-removal-of-deepseek-ai-from-federal-455413</guid>
+      <description><![CDATA[The U.S. Department of Homeland Security ordered removal of DeepSeek AI products from federal systems, prompting China to defend the technology. The directive targets DeepSeek and any third‑party services built with its models, citing concerns over potential espionage and data leakage. Affected agencies must purge DeepSeek components, replace them with vetted alternatives, and document compliance to meet federal security requirements.]]></description>
+      <pubDate>Wed, 21 Oct 2026 10:54:49 GMT</pubDate>
+      <source url="https://www.securityweek.com/china-defends-deepseek-after-us-ban-of-its-ai-from-government-systems/">SecurityWeek</source>
+      <category>Policy</category>
+    </item>
+    <item>
       <title>Microsoft Reports VPN Bug Not Fixed in October Updates</title>
       <link>https://secubuzz.com/news/microsoft-reports-vpn-bug-not-fixed-in-october-upd-3a1fd6</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-reports-vpn-bug-not-fixed-in-october-upd-3a1fd6</guid>
@@ -411,51 +456,6 @@
       <pubDate>Wed, 21 Oct 2026 09:30:38 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/21/grafana-labs-knowledge-graph/">Help Net Security</source>
       <category>Cloud</category>
-    </item>
-    <item>
-      <title>ThreatLocker Introduces Zero Trust AI Control (ZTAIC)</title>
-      <link>https://secubuzz.com/news/threatlocker-introduces-zero-trust-ai-control-ztai-31cc62</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/threatlocker-introduces-zero-trust-ai-control-ztai-31cc62</guid>
-      <description><![CDATA[ThreatLocker has launched Zero Trust AI Control (ZTAIC), a framework that lets organizations deploy agentic AI while maintaining strict environmental boundaries. ZTAIC grants security teams precise permissions, allowing AI agents to invoke only approved applications and processes, thereby preventing unintended system access. Adopting ZTAIC requires configuring guardrails and integrating with existing Zero Trust policies to enforce controlled AI behavior.]]></description>
-      <pubDate>Wed, 21 Oct 2026 09:07:30 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/21/threatlocker-zero-trust-ai-control-ztaic/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Apple Safari Blocks Post-Cookie Email Tracking</title>
-      <link>https://secubuzz.com/news/apple-safari-blocks-post-cookie-email-tracking-3d64a8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apple-safari-blocks-post-cookie-email-tracking-3d64a8</guid>
-      <description><![CDATA[Apple’s Safari and WebKit now block connections to identity resolution services that convert email addresses into persistent tracking identifiers. The anti-tracking feature intercepts third‑party requests that would normally capture a user’s email during login or newsletter sign‑ups, preventing the creation of post‑cookie tracking IDs. Users should verify that their browsers are updated to the latest Safari version to ensure the protection remains active.]]></description>
-      <pubDate>Wed, 21 Oct 2026 08:53:34 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/21/apple-safari-tracking-protection/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>SafePay Ransomware Attacks Over 600 Critical Infrastructure Organizations</title>
-      <link>https://secubuzz.com/news/safepay-ransomware-attacks-over-600-critical-infra-6cf263</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/safepay-ransomware-attacks-over-600-critical-infra-6cf263</guid>
-      <description><![CDATA[SafePay ransomware gang breached more than 600 critical infrastructure organizations worldwide since 2024, targeting essential services and disrupting operations. The attacks leveraged credential theft and phishing to gain initial access, enabling encryption of critical data and denial of service. Security teams must apply the latest vendor patches, enforce multi‑factor authentication, and isolate affected systems immediately.]]></description>
-      <pubDate>Wed, 21 Oct 2026 08:36:24 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/cisa-and-fbi-safepay-ransomware-has-hit-over-600-critical-infrastructure-organizations/">BleepingComputer</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Apache Tomcat Addresses Eight Authentication Bypass Vulnerabilities</title>
-      <link>https://secubuzz.com/news/apache-tomcat-addresses-eight-authentication-bypas-75718f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apache-tomcat-addresses-eight-authentication-bypas-75718f</guid>
-      <description><![CDATA[Apache Tomcat fixed eight flaws that could allow attackers to bypass authentication, expose inter‑user data, and disrupt connections across multiple release branches. The vulnerabilities stem from improper session handling and insufficient input validation, with public proof‑of‑concept exploits available. Users should upgrade to Tomcat 11.0.27, 10.1.61, or 9.0.123 and apply the vendor’s security advisories.]]></description>
-      <pubDate>Wed, 21 Oct 2026 08:28:43 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/apache-tomcat-fixes-8-security-flaws/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>U.S. Orders Removal of DeepSeek from Federal Civilian Systems</title>
-      <link>https://secubuzz.com/news/u-s-orders-removal-of-deepseek-from-federal-civili-72e838</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/u-s-orders-removal-of-deepseek-from-federal-civili-72e838</guid>
-      <description><![CDATA[The Department of Homeland Security has mandated that all U.S. federal civilian agencies remove DeepSeek products and any third‑party services built on DeepSeek implementations from their IT systems. The order also prohibits future purchases of DeepSeek‑derived technology or services from the Chinese AI developer or its affiliates. Agencies must conduct an inventory audit and decommission affected systems within the specified compliance window.]]></description>
-      <pubDate>Wed, 21 Oct 2026 08:04:17 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/us-orders-deepseek-removed-from-federal.html">The Hacker News</source>
-      <category>Policy</category>
     </item>
   </channel>
 </rss>

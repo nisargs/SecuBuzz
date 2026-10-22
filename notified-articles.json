@@ -2114,5 +2114,18 @@
   "https://cybersecuritynews.com/apt28-hackers/",
   "https://www.securityweek.com/openai-agents-silenced-security-team-alerts-removed-misalignment-monitor/",
   "https://www.bleepingcomputer.com/news/microsoft/microsoft-didnt-actually-fix-vpn-issues-caused-by-windows-updates/",
-  "https://thehackernews.com/2026/10/generative-ai-is-erasing-behavioral.html"
+  "https://thehackernews.com/2026/10/generative-ai-is-erasing-behavioral.html",
+  "https://cybernewsai.com/blog/cve-2026-110264-gitlab-onigmo-regex-unauthenticated-rce-defense",
+  "https://cybernewsai.com/blog/operation-flashhole-lazarus-crossweb-ex-malware-defense",
+  "https://blog.talosintelligence.com/compromised-intermediate-certificates/",
+  "https://therecord.media/utilities-cybersecurity-initiative-accenture",
+  "https://www.darkreading.com/application-security/php2shell-bugs-red-alert-security-industry",
+  "https://thehackernews.com/2026/10/critical-gitlab-flaw-cvss-100-could.html",
+  "https://thehackernews.com/2026/10/litellm-compromised-in-supply-chain.html",
+  "https://therecord.media/php-foundation-statement-critical-vulnerabilities",
+  "https://www.malwarebytes.com/blog/bugs/2026/10/php2shell-why-websites-are-going-offline-for-emergency-security-updates",
+  "https://www.securityweek.com/browsers-block-emudhra-intermediate-cas-over-recoverable-private-keys/",
+  "https://cybernewsai.com/blog/litellm-supply-chain-compromise-cook-pth-backdoor-defense",
+  "https://cybernewsai.com/blog/ovhcloud-cli-glassworm-supply-chain-attack-defense",
+  "https://www.securityweek.com/china-defends-deepseek-after-us-ban-of-its-ai-from-government-systems/"
 ]

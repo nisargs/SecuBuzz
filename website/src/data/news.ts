@@ -11,6 +11,62 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "cve-2026-110264-enables-unauthenticated-rce-in-git-2fafe9",
+    "title": "CVE-2026-110264 Enables Unauthenticated RCE in GitLab 10.0",
+    "summary": "CVE-2026-110264 enables unauthenticated remote code execution in GitLab 10.0 through a regular expression flaw exploited via HTTP requests. The vulnerability, rated CVSS 10.0, affects all GitLab instances older than 12 years, allowing attackers to execute arbitrary code without credentials. GitLab has released patches for all affected versions; administrators should apply the update immediately or deploy the provided work‑arounds to mitigate exploitation.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/cve-2026-110264-gitlab-onigmo-regex-unauthenticated-rce-defense",
+    "publishedAt": "2026-10-22T01:45:27.000Z",
+    "cves": [
+      "CVE-2026-110264"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-110264-enables-unauthenticated-rce-in-git",
+      "article-2fafe9",
+      "2fafe9",
+      "cve-2026-110264-enables-unauthenticated-rce-in-gitlab-10-0"
+    ]
+  },
+  {
+    "slug": "operation-flashhole-lazarus-weaponizes-crossweb-ex-354c81",
+    "title": "Operation FlashHole: Lazarus Weaponizes CrossWeb EX with TechHub Loaders",
+    "summary": "Lazarus Group launched Operation FlashHole, weaponizing mandatory CrossWeb EX software in South Korea with TechHub loaders to compromise corporate networks. The attack chain exploits the software’s privileged installation process, enabling attackers to execute arbitrary code and exfiltrate data without user interaction. Security teams should disable CrossWeb EX where possible, apply vendor patches, and monitor for anomalous loader activity to mitigate the threat.",
+    "category": "Malware",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/operation-flashhole-lazarus-crossweb-ex-malware-defense",
+    "publishedAt": "2026-10-22T01:45:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "operation-flashhole-lazarus-weaponizes-crossweb-ex",
+      "article-354c81",
+      "354c81",
+      "operation-flashhole-lazarus-weaponizes-crossweb-ex-with-tech"
+    ]
+  },
+  {
+    "slug": "litellm-supply-chain-backdoor-via-stolen-github-cl-7e91e9",
+    "title": "LiteLLM Supply Chain Backdoor via Stolen GitHub CLI Tokens",
+    "summary": "LiteLLM 1.107.0 was compromised through stolen GitHub CLI tokens, enabling attackers to drop cook.pth stealers and backdoors into the package. The flaw allows remote code execution by injecting malicious Python modules, exposing users to credential theft and data exfiltration. Immediate patching of LiteLLM to 1.107.1 and revoking compromised tokens is mandatory.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/litellm-supply-chain-compromise-cook-pth-backdoor-defense",
+    "publishedAt": "2026-10-22T01:44:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "litellm-supply-chain-backdoor-via-stolen-github-cl",
+      "article-7e91e9",
+      "7e91e9",
+      "litellm-supply-chain-backdoor-via-stolen-github-cli-tokens"
+    ]
+  },
+  {
     "slug": "php2shell-rce-flaws-target-php-runtimes-6b35ba",
     "title": "PHP2Shell RCE Flaws Target PHP Runtimes",
     "summary": "Two critical 9.2 remote code execution flaws, dubbed PHP2Shell, target PHP runtimes via malformed input. The vulnerabilities allow unauthenticated attackers to execute arbitrary code, with CVSS scores of 9.2, and public proof‑of‑concept exploits are available. Patch releases are already available; administrators should apply the latest PHP updates immediately and disable legacy configuration options.",
@@ -60,6 +116,24 @@ export const news: NewsBrief[] = [
       "onamae-desktop-cloud-breach-affects-26-739-servers",
       "article-3354a3",
       "3354a3"
+    ]
+  },
+  {
+    "slug": "cisco-talos-reports-compromised-emudhra-intermedia-472d98",
+    "title": "Cisco Talos Reports Compromised eMudhra Intermediate Certificates",
+    "summary": "Cisco Talos identified eight compromised intermediate certificates issued by eMudhra, a prominent Indian certificate authority. The breach allows attackers to forge trusted TLS certificates, potentially enabling man‑in‑the‑middle attacks against users of eMudhra‑signed services. Affected entities must revoke the certificates, install updated root certificates, and monitor for anomalous certificate issuance to protect their infrastructure.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cisco Talos",
+    "sourceUrl": "https://blog.talosintelligence.com/compromised-intermediate-certificates/",
+    "publishedAt": "2026-10-21T20:43:29.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisco-talos-reports-compromised-emudhra-intermedia",
+      "article-472d98",
+      "472d98",
+      "cisco-talos-reports-compromised-emudhra-intermediate-certifi"
     ]
   },
   {
@@ -135,6 +209,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "private-sector-launches-10-million-initiative-to-s-7a4455",
+    "title": "Private Sector Launches $10 Million Initiative to Strengthen Utility Cybersecurity",
+    "summary": "A private sector consortium has launched a $10 million initiative to support up to 500 under‑resourced utilities with cybersecurity enhancements. The program offers technical guidance, threat intelligence sharing, and funding for security controls to address gaps in legacy systems and limited staff. Utilities are urged to engage with the consortium promptly to secure critical infrastructure and comply with emerging regulatory expectations.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/utilities-cybersecurity-initiative-accenture",
+    "publishedAt": "2026-10-21T19:45:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "private-sector-launches-10-million-initiative-to-s",
+      "article-7a4455",
+      "7a4455",
+      "private-sector-launches-10-million-initiative-to-strengthen-"
+    ]
+  },
+  {
     "slug": "sentinelone-blocks-php2shell-persistence-technique-245b12",
     "title": "SentinelOne Blocks PHP2Shell Persistence Technique",
     "summary": "Attackers use PHP2Shell to spawn a web worker that executes arbitrary PHP code, enabling persistence on compromised web servers. The Singularity Agent detects this post‑exploitation activity by monitoring process trees, terminating malicious workers, and hunting for related artifacts, stopping lateral movement. Deploy the latest SentinelOne Singularity Agent, enable web worker monitoring, and apply vendor updates to secure against PHP2Shell.",
@@ -149,6 +241,24 @@ export const news: NewsBrief[] = [
       "sentinelone-blocks-php2shell-persistence-technique",
       "article-245b12",
       "245b12"
+    ]
+  },
+  {
+    "slug": "php2shell-vulnerabilities-trigger-active-exploitat-31d443",
+    "title": "PHP2Shell Vulnerabilities Trigger Active Exploitation",
+    "summary": "Two critical PHP vulnerabilities, identified as PHP2Shell, have been disclosed and are actively being exploited by threat actors. The flaws allow remote code execution through malformed input in popular PHP frameworks, with public proof‑of‑concept exploits demonstrating high‑severity impact on web applications. Immediate patching of affected PHP versions and application hardening is mandatory to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/application-security/php2shell-bugs-red-alert-security-industry",
+    "publishedAt": "2026-10-21T19:19:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "php2shell-vulnerabilities-trigger-active-exploitat",
+      "article-31d443",
+      "31d443",
+      "php2shell-vulnerabilities-trigger-active-exploitation"
     ]
   },
   {
@@ -206,21 +316,21 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "nation-state-artex-campaign-compromises-connectwis-53ef2b",
-    "title": "Nation-State ARTEX Campaign Compromises ConnectWise Supply Chain",
-    "summary": "A nation-state operation employed ARTEX agentic AI to accelerate a ConnectWise supply chain compromise, targeting Microsoft 365 application credentials. The attack chain leverages credential abuse across multiple tenant environments, exposing privileged access to corporate data without requiring initial lateral movement. Defenders should enforce strict application credential rotation, enable multi‑factor authentication, and monitor for anomalous ConnectWise activity to mitigate exploitation.",
-    "category": "Malware",
+    "slug": "php-foundation-discloses-two-critical-vulnerabilit-3e479a",
+    "title": "PHP Foundation Discloses Two Critical Vulnerabilities Amid AI Review",
+    "summary": "PHP Foundation disclosed two critical vulnerabilities discovered in 2024, with a third‑party AI review amplifying scrutiny. The flaws enable unauthenticated remote code execution via malformed input, yet no public exploit has been reported. PHP has released patches for both bugs; administrators should apply updates immediately and monitor logs for anomalous activity.",
+    "category": "Vulnerability",
     "severity": "HIGH",
-    "source": "Microsoft Security",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/",
-    "publishedAt": "2026-10-21T18:23:55.000Z",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/php-foundation-statement-critical-vulnerabilities",
+    "publishedAt": "2026-10-21T17:30:00.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "nation-state-artex-campaign-compromises-connectwis",
-      "article-53ef2b",
-      "53ef2b",
-      "nation-state-artex-campaign-compromises-connectwise-supply-c"
+      "php-foundation-discloses-two-critical-vulnerabilit",
+      "article-3e479a",
+      "3e479a",
+      "php-foundation-discloses-two-critical-vulnerabilities-amid-a"
     ]
   },
   {
@@ -332,24 +442,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "optiv-launches-cyberbot-cybersecurity-awareness-tr-2213eb",
-    "title": "Optiv Launches CyberBOT Cybersecurity Awareness Training Program",
-    "summary": "Optiv has launched CyberBOT, a cybersecurity awareness training program targeting educators, nonprofits, and community leaders to build resilient communities. The program offers hands‑on sessions that cover threat recognition, secure practices, and incident response fundamentals for year‑round cyber readiness. Organizations should enroll participants, integrate the curriculum into existing training schedules, and monitor engagement metrics to assess effectiveness.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/optiv-launches-cyberbot-cybersecurity-awareness-training-program",
-    "publishedAt": "2026-10-21T15:44:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "optiv-launches-cyberbot-cybersecurity-awareness-tr",
-      "article-2213eb",
-      "2213eb",
-      "optiv-launches-cyberbot-cybersecurity-awareness-training-pro"
-    ]
-  },
-  {
     "slug": "gentlemen-ransomware-disables-windows-defender-and-47dd1c",
     "title": "Gentlemen Ransomware Disables Windows Defender and Destroying Backups",
     "summary": "The Gentlemen ransomware targets Windows systems, disabling Microsoft Defender real‑time protection, adding broad exclusions, stopping backup services, and deleting Volume Shadow Copies. The malware exploits privilege escalation and service manipulation to weaken defenses, encrypt files, and increase recovery complexity, with active exploitation reported in the wild. Apply patches, enable Defender, restore Shadow Copies, and monitor services.",
@@ -401,23 +493,6 @@ export const news: NewsBrief[] = [
       "article-1de743",
       "1de743",
       "litellm-1-107-0-pypi-release-compromised-with-credential-ste"
-    ]
-  },
-  {
-    "slug": "two-critical-rces-discovered-in-php-core-4954ee",
-    "title": "Two Critical RCEs Discovered in PHP Core",
-    "summary": "Two critical remote code execution vulnerabilities were discovered in PHP core, potentially affecting all PHP-based applications across the ecosystem. The flaws arise from improper input validation in the parser, allowing unauthenticated attackers to execute arbitrary code and are actively exploitable. A patch is available from the PHP team; administrators should apply it immediately and monitor logs for suspicious activity.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cisco Talos",
-    "sourceUrl": "https://blog.talosintelligence.com/two-critical-rces-in-php-core/",
-    "publishedAt": "2026-10-21T15:10:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "two-critical-rces-discovered-in-php-core",
-      "article-4954ee",
-      "4954ee"
     ]
   },
   {
@@ -742,6 +817,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "us-dhs-orders-removal-of-deepseek-ai-from-federal-455413",
+    "title": "US DHS Orders Removal of DeepSeek AI from Federal Systems",
+    "summary": "The U.S. Department of Homeland Security ordered removal of DeepSeek AI products from federal systems, prompting China to defend the technology. The directive targets DeepSeek and any third‑party services built with its models, citing concerns over potential espionage and data leakage. Affected agencies must purge DeepSeek components, replace them with vetted alternatives, and document compliance to meet federal security requirements.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/china-defends-deepseek-after-us-ban-of-its-ai-from-government-systems/",
+    "publishedAt": "2026-10-21T10:54:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "us-dhs-orders-removal-of-deepseek-ai-from-federal",
+      "article-455413",
+      "455413",
+      "us-dhs-orders-removal-of-deepseek-ai-from-federal-systems"
+    ]
+  },
+  {
     "slug": "microsoft-reports-vpn-bug-not-fixed-in-october-upd-3a1fd6",
     "title": "Microsoft Reports VPN Bug Not Fixed in October Updates",
     "summary": "Microsoft announced that the October 2026 Windows 11 cumulative updates mistakenly marked a bug causing Always On VPN connection failures as resolved. The oversight leaves users vulnerable to intermittent VPN outages, potentially disrupting remote access for enterprise environments without authentication bypass. Microsoft is working on a corrective patch and advises deploying the latest cumulative update once released, while monitoring VPN stability.",
@@ -882,24 +975,6 @@ export const news: NewsBrief[] = [
       "article-75718f",
       "75718f",
       "apache-tomcat-addresses-eight-authentication-bypass-vulnerab"
-    ]
-  },
-  {
-    "slug": "u-s-orders-removal-of-deepseek-from-federal-civili-72e838",
-    "title": "U.S. Orders Removal of DeepSeek from Federal Civilian Systems",
-    "summary": "The Department of Homeland Security has mandated that all U.S. federal civilian agencies remove DeepSeek products and any third‑party services built on DeepSeek implementations from their IT systems. The order also prohibits future purchases of DeepSeek‑derived technology or services from the Chinese AI developer or its affiliates. Agencies must conduct an inventory audit and decommission affected systems within the specified compliance window.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/us-orders-deepseek-removed-from-federal.html",
-    "publishedAt": "2026-10-21T08:04:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "u-s-orders-removal-of-deepseek-from-federal-civili",
-      "article-72e838",
-      "72e838",
-      "u-s-orders-removal-of-deepseek-from-federal-civilian-systems"
     ]
   },
   {
@@ -6194,60 +6269,6 @@ export const news: NewsBrief[] = [
       "article-275d4f",
       "275d4f",
       "japan-reports-surge-in-web-data-leaks-via-mobile-api-abuse"
-    ]
-  },
-  {
-    "slug": "crypto-thief-sentenced-for-260-000-sim-swapping-sc-49f221",
-    "title": "Crypto Thief Sentenced for $260,000 SIM‑Swapping Scam",
-    "summary": "A 25‑year‑old man was sentenced to two and a half years in prison in London for orchestrating a SIM‑swapping fraud that stole nearly $260,000 in cryptocurrency. The case highlights the growing threat of mobile identity theft and the legal consequences for perpetrators.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/cryptocurrency-sim-swap-london",
-    "publishedAt": "2026-10-08T15:45:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "crypto-thief-sentenced-for-260-000-sim-swapping-sc",
-      "article-49f221",
-      "49f221",
-      "crypto-thief-sentenced-for-260-000-sim-swapping-scam"
-    ]
-  },
-  {
-    "slug": "uac-0099-targets-ukrainian-government-with-ashvein-560cb2",
-    "title": "UAC‑0099 Targets Ukrainian Government with ASHVEIN RAT",
-    "summary": "UAC‑0099, a Russia‑aligned threat actor, has deployed the ASHVEIN RAT—a .NET infostealer and remote access trojan—to target Ukrainian government personnel. The malware hides command and control instructions within HTML, allowing covert operations. TrendAI tracks the activity under the cluster Earth Sirrush, previously known as SHADOW‑EARTH‑065. The campaign poses a significant espionage threat.",
-    "category": "Malware",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/uac-0099-targets-ukrainian-government.html",
-    "publishedAt": "2026-10-08T15:26:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "uac-0099-targets-ukrainian-government-with-ashvein",
-      "article-560cb2",
-      "560cb2",
-      "uac-0099-targets-ukrainian-government-with-ashvein-rat"
-    ]
-  },
-  {
-    "slug": "security-awareness-training-still-relevant-calls-f-1fd1d4",
-    "title": "Security Awareness Training Still Relevant, Calls for Modernization",
-    "summary": "Enterprises continue to run security awareness programs, yet their effectiveness is questioned. Experts suggest updating curricula to address evolving threats and employee engagement. The shift aims to improve real-world protection rather than relying on outdated training models.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/security-awareness-training-isnt-dead-but-it-needs-a-rethink/",
-    "publishedAt": "2026-10-08T14:30:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "security-awareness-training-still-relevant-calls-f",
-      "article-1fd1d4",
-      "1fd1d4",
-      "security-awareness-training-still-relevant-calls-for-moderni"
     ]
   }
 ];
