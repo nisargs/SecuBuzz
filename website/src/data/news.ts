@@ -11,6 +11,76 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "emudhra-private-key-compromise-exposes-certificate-1fb925",
+    "title": "eMudhra Private Key Compromise Exposes Certificate Integrity",
+    "summary": "A security researcher revealed that eMudhra’s private key was the number four instead of a random 384‑bit value, compromising the integrity of its digital certificates. The flaw stems from inadequate key generation, allowing attackers to predict or reconstruct the key, potentially enabling forged certificates. eMudhra must implement proper cryptographic key generation and audit processes to prevent future incidents.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/indian-tech-company-announces-withdrawal-certificate-business-incident",
+    "publishedAt": "2026-10-22T18:46:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "emudhra-private-key-compromise-exposes-certificate",
+      "article-1fb925",
+      "1fb925",
+      "emudhra-private-key-compromise-exposes-certificate-integrity"
+    ]
+  },
+  {
+    "slug": "emudhra-withdraws-from-ssl-tls-business-after-gues-52b758",
+    "title": "eMudhra Withdraws from SSL/TLS Business After Guessable Intermediate Keys",
+    "summary": "eMudhra announced withdrawal from its global SSL/TLS certificate business after a researcher recovered eight intermediate CA private keys that were easily guessable. The vulnerability arises from weak key entropy, allowing attackers to derive the keys and issue fraudulent certificates. The company will replace affected certificates with free ones from partners and must enforce stronger key generation practices.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/emudhra-to-exit-global-ssltls-business.html",
+    "publishedAt": "2026-10-22T18:12:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "emudhra-withdraws-from-ssl-tls-business-after-gues",
+      "article-52b758",
+      "52b758",
+      "emudhra-withdraws-from-ssl-tls-business-after-guessable-inte"
+    ]
+  },
+  {
+    "slug": "critical-php-vulnerability-disclosed-61e462",
+    "title": "Critical PHP Vulnerability Disclosed",
+    "summary": "A critical vulnerability in PHP was disclosed, affecting web applications that rely on the language. The flaw allows attackers to execute arbitrary code through malformed input, with a CVSS score of 9.2, and is actively exploited in the wild. Arbitrary patches are available from the PHP development team; administrators should apply the latest release and enforce input validation to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Cisco Talos",
+    "sourceUrl": "https://blog.talosintelligence.com/i-had-plans-for-that-second/",
+    "publishedAt": "2026-10-22T18:04:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "critical-php-vulnerability-disclosed",
+      "article-61e462",
+      "61e462"
+    ]
+  },
+  {
+    "slug": "arista-vco-zero-day-exploited-in-attacks-27fea5",
+    "title": "Arista VCO Zero-Day Exploited in Attacks",
+    "summary": "Arista Networks disclosed a zero‑day vulnerability in VeloCloud Orchestrator (VCO) On‑Prem deployments that was actively exploited in recent attacks. The flaw permits remote code execution via malformed configuration files, with a CVSS score of 8.7, enabling control plane compromise. Arista released a patch in the latest firmware; operators should immediately apply the update and monitor logs for unauthorized changes.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/",
+    "publishedAt": "2026-10-22T17:18:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "arista-vco-zero-day-exploited-in-attacks",
+      "article-27fea5",
+      "27fea5"
+    ]
+  },
+  {
     "slug": "unit-42-explores-contemporary-oauth-attack-landsca-40585f",
     "title": "Unit 42 Explores Contemporary OAuth Attack Landscape",
     "summary": "Unit 42 examines contemporary OAuth attacks, highlighting credential theft, token misuse, and phishing vectors targeting OAuth implementations. The analysis identifies redirect URI manipulation, insecure client secrets, and insufficient scope validation as common exploitation techniques. Security teams should enforce redirect URI whitelisting, rotate client secrets, implement scope checks, and monitor anomalous token usage to mitigate risks.",
@@ -44,6 +114,24 @@ export const news: NewsBrief[] = [
       "article-318930",
       "318930",
       "meta-ordered-to-pay-25-billion-for-misleading-privacy-claims"
+    ]
+  },
+  {
+    "slug": "microsoft-blames-connectwise-attacks-on-chinese-st-2293a1",
+    "title": "Microsoft Blames ConnectWise Attacks on Chinese State Hacker Using ARTEX AI Agents",
+    "summary": "Microsoft attributes a recent ConnectWise supply‑chain compromise to a Chinese state‑aligned hacking group deploying ARTEX AI agents. The attackers leveraged automated credential‑stealing tools to inject malicious code into ConnectWise updates, enabling remote execution on client systems. Security teams should verify update integrity, apply vendor patches, and monitor for anomalous outbound traffic from affected endpoints.",
+    "category": "Malware",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/china-cyber-connectwise-ai",
+    "publishedAt": "2026-10-22T16:30:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-blames-connectwise-attacks-on-chinese-st",
+      "article-2293a1",
+      "2293a1",
+      "microsoft-blames-connectwise-attacks-on-chinese-state-hacker"
     ]
   },
   {
@@ -104,24 +192,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "emudhra-exits-ssl-tls-certificate-business-after-w-3b6348",
-    "title": "eMudhra Exits SSL/TLS Certificate Business After Weak Private Keys Disclosure",
-    "summary": "eMudhra Limited exited the global SSL/TLS certificate market after revealing weak private keys in eight intermediate CA certificates. The flaw exposed insufficient key entropy, enabling potential certificate forgery and undermining trust chains, prompting emergency browser mitigations. eMudhra confirmed other digital trust services remain unaffected and urges clients to replace compromised certificates and monitor revoked issuers.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/emudhra-exits-global-ssl-tls-certificate/",
-    "publishedAt": "2026-10-22T14:52:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "emudhra-exits-ssl-tls-certificate-business-after-w",
-      "article-3b6348",
-      "3b6348",
-      "emudhra-exits-ssl-tls-certificate-business-after-weak-privat"
-    ]
-  },
-  {
     "slug": "claude-security-enhances-continuous-repository-sca-4bb4bc",
     "title": "Claude Security Enhances Continuous Repository Scanning",
     "summary": "Anthropic updated Claude Security to continuously scan connected code repositories for new flaws, eliminating the need for manual scan initiation. The service now tracks reported vulnerabilities, marks them fixed when changes are detected, and reopens them if the issue returns. This enhancement improves continuous integration pipelines, reduces manual oversight, and ensures timely remediation of newly discovered security issues.",
@@ -137,6 +207,24 @@ export const news: NewsBrief[] = [
       "article-4bb4bc",
       "4bb4bc",
       "claude-security-enhances-continuous-repository-scanning"
+    ]
+  },
+  {
+    "slug": "scarlettgroup-threatens-data-leaks-with-dark-web-n-33c6ec",
+    "title": "ScarlettGroup Threatens Data Leaks with Dark Web Naming and Countdown Timers",
+    "summary": "ScarlettGroup, a newly observed extortion gang, is naming companies on a dark web leak site and using countdown timers to threaten the release of allegedly stolen data. The operation applies public pressure before breach claims are independently verified, creating reputational risk and potential regulatory scrutiny. Security teams should monitor dark web activity, verify data integrity, and prepare incident response plans to mitigate reputational damage.",
+    "category": "Ransomware",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/a-new-extortion-gang/",
+    "publishedAt": "2026-10-22T14:40:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "scarlettgroup-threatens-data-leaks-with-dark-web-n",
+      "article-33c6ec",
+      "33c6ec",
+      "scarlettgroup-threatens-data-leaks-with-dark-web-naming-and-"
     ]
   },
   {
@@ -176,21 +264,21 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "attackers-using-artex-target-okta-entra-and-cognit-41a6b8",
-    "title": "Attackers Using ARTEX Target Okta, Entra, and Cognito via AI‑Driven Credential Harvesting",
-    "summary": "Attackers using the ARTEX framework, linked to Storm-0940, target vendors like Okta, Entra, and Cognito via AI‑driven credential harvesting. They exploit weak authentication flows and misconfigured API endpoints, injecting malicious scripts to exfiltrate session tokens, as shown in log artifacts. Teams should enforce MFA, apply vendor patches, and monitor API traffic for anomalous activity to mitigate the threat.",
-    "category": "Policy",
-    "severity": "MEDIUM",
-    "source": "Wiz Research",
-    "sourceUrl": "https://www.wiz.io/blog/artex-in-the-wild-storm-0940-expands-targeting-of-it-and-software-vendors",
-    "publishedAt": "2026-10-22T13:05:31.000Z",
+    "slug": "litellm-supply-chain-compromise-harvests-cloud-cre-162d69",
+    "title": "LiteLLM Supply Chain Compromise Harvests Cloud Credentials",
+    "summary": "A malicious LiteLLM release on PyPI and Docker registries distributed malware that harvests cloud logins, developer secrets, and AI service API keys from installed instances. The flaw exploits the package distribution chain, enabling credential theft without user interaction, impacting numerous corporate domains. Immediate patching of the compromised package and credential rotation are mandatory to mitigate exposure.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/litellm-compromised-supply-chain-attack-pypi-docker/",
+    "publishedAt": "2026-10-22T13:10:28.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "attackers-using-artex-target-okta-entra-and-cognit",
-      "article-41a6b8",
-      "41a6b8",
-      "attackers-using-artex-target-okta-entra-and-cognito-via-ai-d"
+      "litellm-supply-chain-compromise-harvests-cloud-cre",
+      "article-162d69",
+      "162d69",
+      "litellm-supply-chain-compromise-harvests-cloud-credentials"
     ]
   },
   {
@@ -227,6 +315,42 @@ export const news: NewsBrief[] = [
       "article-32bfe1",
       "32bfe1",
       "openai-agents-evade-monitoring-claim-no-misbehavior"
+    ]
+  },
+  {
+    "slug": "path-traversal-and-sensitive-data-exposure-in-siem-42ff49",
+    "title": "Path Traversal and Sensitive Data Exposure in Siemens SIMATIC S7 Webserver .NET Client Library",
+    "summary": "The .NET Client Library for Siemens SIMATIC S7 Webserver API contains a path traversal flaw that allows attackers to write arbitrary files outside the intended download directory and expose sensitive information through error messages. The vulnerability, with a CVSS score of 7.5, targets critical infrastructure sectors including manufacturing, transportation, and energy. Siemens has released an updated library; users must upgrade immediately to prevent exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-10",
+    "publishedAt": "2026-10-22T12:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "path-traversal-and-sensitive-data-exposure-in-siem",
+      "article-42ff49",
+      "42ff49",
+      "path-traversal-and-sensitive-data-exposure-in-siemens-simati"
+    ]
+  },
+  {
+    "slug": "siemens-devices-vulnerable-to-denial-of-service-vi-42ff49",
+    "title": "Siemens Devices Vulnerable to Denial‑of‑Service via CVE‑2026‑102073 to CVE‑2026‑102076",
+    "summary": "Siemens APOGEE, TALON, and Desigo PXC/PXM devices are vulnerable to denial‑of‑service via CVE‑2026‑102073 to CVE‑2026‑102076 on BACnet and Ethernet. The flaw depletes device resources, risking control‑system downtime; no public exploit exists, but CVSS is 7.5. Siemens released patched firmware; users should upgrade immediately or apply vendor mitigations where patches are pending.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-08",
+    "publishedAt": "2026-10-22T12:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "siemens-devices-vulnerable-to-denial-of-service-vi",
+      "article-42ff49",
+      "42ff49",
+      "siemens-devices-vulnerable-to-denial-of-service-via-cve-2026"
     ]
   },
   {
@@ -568,24 +692,6 @@ export const news: NewsBrief[] = [
       "article-354c81",
       "354c81",
       "operation-flashhole-lazarus-weaponizes-crossweb-ex-with-tech"
-    ]
-  },
-  {
-    "slug": "litellm-supply-chain-backdoor-via-stolen-github-cl-7e91e9",
-    "title": "LiteLLM Supply Chain Backdoor via Stolen GitHub CLI Tokens",
-    "summary": "LiteLLM 1.107.0 was compromised through stolen GitHub CLI tokens, enabling attackers to drop cook.pth stealers and backdoors into the package. The flaw allows remote code execution by injecting malicious Python modules, exposing users to credential theft and data exfiltration. Immediate patching of LiteLLM to 1.107.1 and revoking compromised tokens is mandatory.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/litellm-supply-chain-compromise-cook-pth-backdoor-defense",
-    "publishedAt": "2026-10-22T01:44:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "litellm-supply-chain-backdoor-via-stolen-github-cl",
-      "article-7e91e9",
-      "7e91e9",
-      "litellm-supply-chain-backdoor-via-stolen-github-cli-tokens"
     ]
   },
   {
@@ -6163,111 +6269,6 @@ export const news: NewsBrief[] = [
       "article-4455e9",
       "4455e9",
       "high-severity-nvidia-vulnerability-lets-unauthenticated-atta"
-    ]
-  },
-  {
-    "slug": "google-domains-hijacked-via-cctld-exploits-7b0459",
-    "title": "Google Domains Hijacked via ccTLD Exploits",
-    "summary": "Hackers hijacked the .gh, .sl, and .as country code top‑level domains and used them to obtain HTTPS certificates for several Google domains. The compromise allowed attackers to intercept traffic to those sites, potentially enabling man‑in‑the‑middle attacks. Google has not yet released a mitigation or patch.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/google-domains-impacted-by-recent-cctld-domain-hijacks/",
-    "publishedAt": "2026-10-09T11:43:14.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-domains-hijacked-via-cctld-exploits",
-      "article-7b0459",
-      "7b0459"
-    ]
-  },
-  {
-    "slug": "ai-velocity-paradox-exposes-security-lag-in-rapid-2f0aaa",
-    "title": "AI Velocity Paradox Exposes Security Lag in Rapid AI Adoption",
-    "summary": "A SailPoint report titled \"Horizons of Identity Security\" shows enterprises deploying autonomous AI agents at high speed while still relying on legacy, human‑centric security controls. The study highlights a critical velocity paradox that leaves AI‑driven operations vulnerable to outdated defenses.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/the-ai-velocity-paradox-why-security-is.html",
-    "publishedAt": "2026-10-09T11:30:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-velocity-paradox-exposes-security-lag-in-rapid",
-      "article-2f0aaa",
-      "2f0aaa",
-      "ai-velocity-paradox-exposes-security-lag-in-rapid-ai-adoptio"
-    ]
-  },
-  {
-    "slug": "microsoft-to-cease-security-updates-for-unsupporte-4c293f",
-    "title": "Microsoft to Cease Security Updates for Unsupported Windows Devices",
-    "summary": "Microsoft announced that devices running unsupported Windows versions will no longer receive security updates after the next Windows Update certificate rotation in 2027. The move means older systems will become increasingly vulnerable without official patches, urging users to upgrade or migrate to supported platforms.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-outdated-windows-devices-will-lose-security-protection-next-year/",
-    "publishedAt": "2026-10-09T10:12:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-to-cease-security-updates-for-unsupporte",
-      "article-4c293f",
-      "4c293f",
-      "microsoft-to-cease-security-updates-for-unsupported-windows-"
-    ]
-  },
-  {
-    "slug": "gobalance-vulnerability-allows-hijacking-of-onion-3ee840",
-    "title": "GoBalance Vulnerability Allows Hijacking of .onion Addresses",
-    "summary": "A flaw in GoBalance lets attackers derive the secret key for a site’s .onion address using only public data, enabling them to seize the address and redirect traffic to a malicious copy. The vulnerability was disclosed by Searchlight Cyber on October 8.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/gobalance-flaw-lets-attackers-hijack.html",
-    "publishedAt": "2026-10-09T09:03:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "gobalance-vulnerability-allows-hijacking-of-onion",
-      "article-3ee840",
-      "3ee840",
-      "gobalance-vulnerability-allows-hijacking-of-onion-addresses"
-    ]
-  },
-  {
-    "slug": "simplelogin-email-alias-service-enhances-privacy-b4982f",
-    "title": "SimpleLogin Email Alias Service Enhances Privacy",
-    "summary": "SimpleLogin, an open-source email alias service from Proton, allows users to create disposable addresses that forward to their primary mailbox. The platform supports self-hosting and includes features such as enable/disable toggles and contact management, helping protect users’ real email addresses from exposure.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/09/product-showcase-simplelogin/",
-    "publishedAt": "2026-10-09T08:51:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "simplelogin-email-alias-service-enhances-privacy",
-      "article-b4982f",
-      "b4982f"
-    ]
-  },
-  {
-    "slug": "us-disrupts-chinese-state-sponsored-hacking-tools-7603f4",
-    "title": "US Disrupts Chinese State‑Sponsored Hacking Tools",
-    "summary": "US authorities disrupted Chinese APT groups using MicroScan and FishHub to scan and hack critical infrastructure in the US and abroad. The action targeted the tools employed by Flax Typhoon and other state‑sponsored actors.",
-    "category": "Malware",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/us-disrupts-chinese-state-sponsored-hacking-tools/",
-    "publishedAt": "2026-10-09T08:36:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "us-disrupts-chinese-state-sponsored-hacking-tools",
-      "article-7603f4",
-      "7603f4"
     ]
   }
 ];

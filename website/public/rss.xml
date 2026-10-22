@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Oct 2026 17:36:26 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 20:11:53 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>eMudhra Private Key Compromise Exposes Certificate Integrity</title>
+      <link>https://secubuzz.com/news/emudhra-private-key-compromise-exposes-certificate-1fb925</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/emudhra-private-key-compromise-exposes-certificate-1fb925</guid>
+      <description><![CDATA[A security researcher revealed that eMudhra’s private key was the number four instead of a random 384‑bit value, compromising the integrity of its digital certificates. The flaw stems from inadequate key generation, allowing attackers to predict or reconstruct the key, potentially enabling forged certificates. eMudhra must implement proper cryptographic key generation and audit processes to prevent future incidents.]]></description>
+      <pubDate>Thu, 22 Oct 2026 18:46:00 GMT</pubDate>
+      <source url="https://therecord.media/indian-tech-company-announces-withdrawal-certificate-business-incident">The Record</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>eMudhra Withdraws from SSL/TLS Business After Guessable Intermediate Keys</title>
+      <link>https://secubuzz.com/news/emudhra-withdraws-from-ssl-tls-business-after-gues-52b758</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/emudhra-withdraws-from-ssl-tls-business-after-gues-52b758</guid>
+      <description><![CDATA[eMudhra announced withdrawal from its global SSL/TLS certificate business after a researcher recovered eight intermediate CA private keys that were easily guessable. The vulnerability arises from weak key entropy, allowing attackers to derive the keys and issue fraudulent certificates. The company will replace affected certificates with free ones from partners and must enforce stronger key generation practices.]]></description>
+      <pubDate>Thu, 22 Oct 2026 18:12:43 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/emudhra-to-exit-global-ssltls-business.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Critical PHP Vulnerability Disclosed</title>
+      <link>https://secubuzz.com/news/critical-php-vulnerability-disclosed-61e462</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/critical-php-vulnerability-disclosed-61e462</guid>
+      <description><![CDATA[A critical vulnerability in PHP was disclosed, affecting web applications that rely on the language. The flaw allows attackers to execute arbitrary code through malformed input, with a CVSS score of 9.2, and is actively exploited in the wild. Arbitrary patches are available from the PHP development team; administrators should apply the latest release and enforce input validation to mitigate the risk.]]></description>
+      <pubDate>Thu, 22 Oct 2026 18:04:32 GMT</pubDate>
+      <source url="https://blog.talosintelligence.com/i-had-plans-for-that-second/">Cisco Talos</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Arista VCO Zero-Day Exploited in Attacks</title>
+      <link>https://secubuzz.com/news/arista-vco-zero-day-exploited-in-attacks-27fea5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/arista-vco-zero-day-exploited-in-attacks-27fea5</guid>
+      <description><![CDATA[Arista Networks disclosed a zero‑day vulnerability in VeloCloud Orchestrator (VCO) On‑Prem deployments that was actively exploited in recent attacks. The flaw permits remote code execution via malformed configuration files, with a CVSS score of 8.7, enabling control plane compromise. Arista released a patch in the latest firmware; operators should immediately apply the update and monitor logs for unauthorized changes.]]></description>
+      <pubDate>Thu, 22 Oct 2026 17:18:22 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Unit 42 Explores Contemporary OAuth Attack Landscape</title>
       <link>https://secubuzz.com/news/unit-42-explores-contemporary-oauth-attack-landsca-40585f</link>
@@ -24,6 +60,15 @@
       <pubDate>Thu, 22 Oct 2026 16:59:22 GMT</pubDate>
       <source url="https://www.malwarebytes.com/blog/news/2026/10/facebooks-misleading-privacy-claims-land-meta-a-25-billion-penalty">Malwarebytes Labs</source>
       <category>Policy</category>
+    </item>
+    <item>
+      <title>Microsoft Blames ConnectWise Attacks on Chinese State Hacker Using ARTEX AI Agents</title>
+      <link>https://secubuzz.com/news/microsoft-blames-connectwise-attacks-on-chinese-st-2293a1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-blames-connectwise-attacks-on-chinese-st-2293a1</guid>
+      <description><![CDATA[Microsoft attributes a recent ConnectWise supply‑chain compromise to a Chinese state‑aligned hacking group deploying ARTEX AI agents. The attackers leveraged automated credential‑stealing tools to inject malicious code into ConnectWise updates, enabling remote execution on client systems. Security teams should verify update integrity, apply vendor patches, and monitor for anomalous outbound traffic from affected endpoints.]]></description>
+      <pubDate>Thu, 22 Oct 2026 16:30:00 GMT</pubDate>
+      <source url="https://therecord.media/china-cyber-connectwise-ai">The Record</source>
+      <category>Malware</category>
     </item>
     <item>
       <title>Gcore Blocks php2shell Vulnerabilities with Free WAAP Plan for Public Agencies</title>
@@ -53,15 +98,6 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>eMudhra Exits SSL/TLS Certificate Business After Weak Private Keys Disclosure</title>
-      <link>https://secubuzz.com/news/emudhra-exits-ssl-tls-certificate-business-after-w-3b6348</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/emudhra-exits-ssl-tls-certificate-business-after-w-3b6348</guid>
-      <description><![CDATA[eMudhra Limited exited the global SSL/TLS certificate market after revealing weak private keys in eight intermediate CA certificates. The flaw exposed insufficient key entropy, enabling potential certificate forgery and undermining trust chains, prompting emergency browser mitigations. eMudhra confirmed other digital trust services remain unaffected and urges clients to replace compromised certificates and monitor revoked issuers.]]></description>
-      <pubDate>Thu, 22 Oct 2026 14:52:11 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/emudhra-exits-global-ssl-tls-certificate/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>Claude Security Enhances Continuous Repository Scanning</title>
       <link>https://secubuzz.com/news/claude-security-enhances-continuous-repository-sca-4bb4bc</link>
       <guid isPermaLink="true">https://secubuzz.com/news/claude-security-enhances-continuous-repository-sca-4bb4bc</guid>
@@ -69,6 +105,15 @@
       <pubDate>Thu, 22 Oct 2026 14:40:43 GMT</pubDate>
       <source url="https://cybersecuritynews.com/claude-security-continuous-scans/">Cyber Security News</source>
       <category>Cloud</category>
+    </item>
+    <item>
+      <title>ScarlettGroup Threatens Data Leaks with Dark Web Naming and Countdown Timers</title>
+      <link>https://secubuzz.com/news/scarlettgroup-threatens-data-leaks-with-dark-web-n-33c6ec</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/scarlettgroup-threatens-data-leaks-with-dark-web-n-33c6ec</guid>
+      <description><![CDATA[ScarlettGroup, a newly observed extortion gang, is naming companies on a dark web leak site and using countdown timers to threaten the release of allegedly stolen data. The operation applies public pressure before breach claims are independently verified, creating reputational risk and potential regulatory scrutiny. Security teams should monitor dark web activity, verify data integrity, and prepare incident response plans to mitigate reputational damage.]]></description>
+      <pubDate>Thu, 22 Oct 2026 14:40:34 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/a-new-extortion-gang/">Cyber Security News</source>
+      <category>Ransomware</category>
     </item>
     <item>
       <title>Scammers Target Mobile Users with Deceptive Tactics</title>
@@ -89,13 +134,13 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>Attackers Using ARTEX Target Okta, Entra, and Cognito via AI‑Driven Credential Harvesting</title>
-      <link>https://secubuzz.com/news/attackers-using-artex-target-okta-entra-and-cognit-41a6b8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/attackers-using-artex-target-okta-entra-and-cognit-41a6b8</guid>
-      <description><![CDATA[Attackers using the ARTEX framework, linked to Storm-0940, target vendors like Okta, Entra, and Cognito via AI‑driven credential harvesting. They exploit weak authentication flows and misconfigured API endpoints, injecting malicious scripts to exfiltrate session tokens, as shown in log artifacts. Teams should enforce MFA, apply vendor patches, and monitor API traffic for anomalous activity to mitigate the threat.]]></description>
-      <pubDate>Thu, 22 Oct 2026 13:05:31 GMT</pubDate>
-      <source url="https://www.wiz.io/blog/artex-in-the-wild-storm-0940-expands-targeting-of-it-and-software-vendors">Wiz Research</source>
-      <category>Policy</category>
+      <title>LiteLLM Supply Chain Compromise Harvests Cloud Credentials</title>
+      <link>https://secubuzz.com/news/litellm-supply-chain-compromise-harvests-cloud-cre-162d69</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/litellm-supply-chain-compromise-harvests-cloud-cre-162d69</guid>
+      <description><![CDATA[A malicious LiteLLM release on PyPI and Docker registries distributed malware that harvests cloud logins, developer secrets, and AI service API keys from installed instances. The flaw exploits the package distribution chain, enabling credential theft without user interaction, impacting numerous corporate domains. Immediate patching of the compromised package and credential rotation are mandatory to mitigate exposure.]]></description>
+      <pubDate>Thu, 22 Oct 2026 13:10:28 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/22/litellm-compromised-supply-chain-attack-pypi-docker/">Help Net Security</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Cloudflare Secures South Korea ISMS Certification After Comprehensive Audit</title>
@@ -114,6 +159,24 @@
       <pubDate>Thu, 22 Oct 2026 12:47:42 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/22/openai-agents-disabled-safety-monitoring/">Help Net Security</source>
       <category>Policy</category>
+    </item>
+    <item>
+      <title>Path Traversal and Sensitive Data Exposure in Siemens SIMATIC S7 Webserver .NET Client Library</title>
+      <link>https://secubuzz.com/news/path-traversal-and-sensitive-data-exposure-in-siem-42ff49</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/path-traversal-and-sensitive-data-exposure-in-siem-42ff49</guid>
+      <description><![CDATA[The .NET Client Library for Siemens SIMATIC S7 Webserver API contains a path traversal flaw that allows attackers to write arbitrary files outside the intended download directory and expose sensitive information through error messages. The vulnerability, with a CVSS score of 7.5, targets critical infrastructure sectors including manufacturing, transportation, and energy. Siemens has released an updated library; users must upgrade immediately to prevent exploitation.]]></description>
+      <pubDate>Thu, 22 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-10">CISA</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Siemens Devices Vulnerable to Denial‑of‑Service via CVE‑2026‑102073 to CVE‑2026‑102076</title>
+      <link>https://secubuzz.com/news/siemens-devices-vulnerable-to-denial-of-service-vi-42ff49</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/siemens-devices-vulnerable-to-denial-of-service-vi-42ff49</guid>
+      <description><![CDATA[Siemens APOGEE, TALON, and Desigo PXC/PXM devices are vulnerable to denial‑of‑service via CVE‑2026‑102073 to CVE‑2026‑102076 on BACnet and Ethernet. The flaw depletes device resources, risking control‑system downtime; no public exploit exists, but CVSS is 7.5. Siemens released patched firmware; users should upgrade immediately or apply vendor mitigations where patches are pending.]]></description>
+      <pubDate>Thu, 22 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-08">CISA</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Critical GitLab Flaw (CVE-2026-110264, CVSS 10.0) Allows Unauthenticated RCE</title>
@@ -287,15 +350,6 @@
       <category>Malware</category>
     </item>
     <item>
-      <title>LiteLLM Supply Chain Backdoor via Stolen GitHub CLI Tokens</title>
-      <link>https://secubuzz.com/news/litellm-supply-chain-backdoor-via-stolen-github-cl-7e91e9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/litellm-supply-chain-backdoor-via-stolen-github-cl-7e91e9</guid>
-      <description><![CDATA[LiteLLM 1.107.0 was compromised through stolen GitHub CLI tokens, enabling attackers to drop cook.pth stealers and backdoors into the package. The flaw allows remote code execution by injecting malicious Python modules, exposing users to credential theft and data exfiltration. Immediate patching of LiteLLM to 1.107.1 and revoking compromised tokens is mandatory.]]></description>
-      <pubDate>Thu, 22 Oct 2026 01:44:43 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/litellm-supply-chain-compromise-cook-pth-backdoor-defense">CyberNews AI</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>GoDaddy Revokes 404,607 TLS Certificates Over Policy Violations</title>
       <link>https://secubuzz.com/news/godaddy-revokes-404-607-tls-certificates-over-poli-543d19</link>
       <guid isPermaLink="true">https://secubuzz.com/news/godaddy-revokes-404-607-tls-certificates-over-poli-543d19</guid>
@@ -401,60 +455,6 @@
       <description><![CDATA[Arrakis Security’s 2026 Autonomous Agents Threat Report shows 76% of AI agents have been inactive for 60 days, yet their credentials remain valid and triggers still fire. Dormant agents can be reactivated by attackers, enabling credential reuse and unauthorized access to connected services. Teams should audit credentials, enforce rotation, and monitor trigger activity to mitigate exploitation.]]></description>
       <pubDate>Wed, 21 Oct 2026 17:05:59 GMT</pubDate>
       <source url="https://cybersecuritynews.com/arrakis-security-report-finds-76-of-ai-agents-are-dormant-but-keep-their-credentials-and-connections/">Cyber Security News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Fake AI Tools Distribute Malware and Steal Credentials</title>
-      <link>https://secubuzz.com/news/fake-ai-tools-distribute-malware-and-steal-credent-4b00b1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fake-ai-tools-distribute-malware-and-steal-credent-4b00b1</guid>
-      <description><![CDATA[Attackers distribute malicious applications masquerading as legitimate AI tools to steal credentials and deliver malware into corporate environments. The flaw exploits users' trust in AI platforms, enabling credential theft and lateral movement; no specific CVE, but exploitation requires user interaction. Security teams should verify tool provenance, enforce least privilege, and monitor for anomalous credential usage.]]></description>
-      <pubDate>Wed, 21 Oct 2026 16:53:38 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/the-ai-adoption-blind-spot-how-fake-ai-tools-put-enterprises-at-risk/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>OVHcloud GitHub Compromise Tied to GlassWorm Threat Actors</title>
-      <link>https://secubuzz.com/news/ovhcloud-github-compromise-tied-to-glassworm-threa-2eaf64</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ovhcloud-github-compromise-tied-to-glassworm-threa-2eaf64</guid>
-      <description><![CDATA[A compromised developer GitHub account was used to push malicious code to unsuspecting users, linking the incident to the GlassWorm threat actor. The breach exploited credential theft and unauthorized repository access, enabling attackers to distribute malware through legitimate code repositories without detection. OVHcloud should enforce multi‑factor authentication, audit repository activity, and apply security best practices to prevent future credential compromise.]]></description>
-      <pubDate>Wed, 21 Oct 2026 16:50:15 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyberattacks-data-breaches/ovhcloud-github-compromise-glassworm-threat-actors">Dark Reading</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Node.js Releases Security Updates for High-Severity TLS, DNS, and Brotli Vulnerabilities</title>
-      <link>https://secubuzz.com/news/node-js-releases-security-updates-for-high-severit-160943</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/node-js-releases-security-updates-for-high-severit-160943</guid>
-      <description><![CDATA[Node.js released updates for its 26.x, 24.x, and 22.x branches to patch ten vulnerabilities, including high‑severity flaws in DNS lookups, TLS certificate validation, and Brotli decompression. The most critical flaw enables remote code execution via the Brotli decoder, exposing servers to arbitrary code execution. Users must upgrade to 26.12.1, 24.22.1, or 22.23.4 and apply vendor patches immediately.]]></description>
-      <pubDate>Wed, 21 Oct 2026 16:33:58 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/node-js-releases-security-updates/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Hackers Use AI‑Enabled Browsers to Create Thousands of Fake Accounts</title>
-      <link>https://secubuzz.com/news/hackers-use-ai-enabled-browsers-to-create-thousand-1e7f59</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-ai-enabled-browsers-to-create-thousand-1e7f59</guid>
-      <description><![CDATA[Hackers use AI‑enabled antidetect browsers to create thousands of fake online accounts, each appearing as a distinct user, device, or location. The method lets a single operator run large social‑media networks that evade standard detection heuristics and attribution. Teams should monitor anomalous account creation, enforce device fingerprinting, and deploy behavioral analytics to block synthetic profiles.]]></description>
-      <pubDate>Wed, 21 Oct 2026 15:54:49 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-use-ai-powered-browsers/">Cyber Security News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Gentlemen Ransomware Disables Windows Defender and Destroying Backups</title>
-      <link>https://secubuzz.com/news/gentlemen-ransomware-disables-windows-defender-and-47dd1c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/gentlemen-ransomware-disables-windows-defender-and-47dd1c</guid>
-      <description><![CDATA[The Gentlemen ransomware targets Windows systems, disabling Microsoft Defender real‑time protection, adding broad exclusions, stopping backup services, and deleting Volume Shadow Copies. The malware exploits privilege escalation and service manipulation to weaken defenses, encrypt files, and increase recovery complexity, with active exploitation reported in the wild. Apply patches, enable Defender, restore Shadow Copies, and monitor services.]]></description>
-      <pubDate>Wed, 21 Oct 2026 15:30:43 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-use-gentlemen-ransomware/">Cyber Security News</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Survey Reveals Executives Feel Untouchable Amid Digital‑Physical Security Blending</title>
-      <link>https://secubuzz.com/news/survey-reveals-executives-feel-untouchable-amid-di-62ef82</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/survey-reveals-executives-feel-untouchable-amid-di-62ef82</guid>
-      <description><![CDATA[Survey reveals that 80% of security and wealth professionals believe cybersecurity and physical security are inseparable, indicating executives feel untouchable. The study highlights a perception that digital exposure can translate into tangible physical threats, raising concerns about executive protection strategies. Organizations should integrate cyber and physical risk assessments, update incident response plans, and conduct training to mitigate emerging hybrid threats.]]></description>
-      <pubDate>Wed, 21 Oct 2026 15:29:09 GMT</pubDate>
-      <source url="https://www.darkreading.com/cybersecurity-operations/360-privacy-survey-high-profile-executives-feel-untouchable">Dark Reading</source>
       <category>Policy</category>
     </item>
   </channel>
