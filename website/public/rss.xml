@@ -5,15 +5,87 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Oct 2026 10:15:50 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 12:21:33 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Cisco Patches 34 Vulnerabilities Across Multiple Products</title>
-      <link>https://secubuzz.com/news/cisco-patches-34-vulnerabilities-across-multiple-p-14dace</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisco-patches-34-vulnerabilities-across-multiple-p-14dace</guid>
-      <description><![CDATA[Cisco released patches for 34 critical‑severity defects that could enable command execution, authentication bypass, and XSS attacks in several products. The root cause involved improper input validation and privilege escalation paths, with public proof‑of‑concept code available. Security teams should apply the vendor’s firmware updates immediately to eliminate the exploitation vector.]]></description>
-      <pubDate>Thu, 22 Oct 2026 10:05:21 GMT</pubDate>
-      <source url="https://www.securityweek.com/cisco-patches-34-vulnerabilities-across-multiple-products/">SecurityWeek</source>
+      <title>GitLab Regular Expression Compiler Vulnerability Allows Remote Code Execution</title>
+      <link>https://secubuzz.com/news/gitlab-regular-expression-compiler-vulnerability-a-12e68d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/gitlab-regular-expression-compiler-vulnerability-a-12e68d</guid>
+      <description><![CDATA[A maximum‑severity Regular Expression Compiler flaw in GitLab permits remote attackers to execute arbitrary code on vulnerable servers via crafted input. The flaw is a buffer overflow in the regex engine, enabling uncontrolled code execution; it is actively exploitable. GitLab released patches for affected versions; administrators should apply updates immediately and disable regex processing as a temporary mitigation.]]></description>
+      <pubDate>Thu, 22 Oct 2026 11:41:48 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/gitlab-warns-of-new-max-severity-code-execution-vulnerability/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>XTIUM Expands XTAI with Centralized AI Governance and Cost Management</title>
+      <link>https://secubuzz.com/news/xtium-expands-xtai-with-centralized-ai-governance-1a8d62</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/xtium-expands-xtai-with-centralized-ai-governance-1a8d62</guid>
+      <description><![CDATA[XTIUM released an updated XTAI platform, adding an orchestrator that consolidates managed AI services, voice, custom agents, networks, and cloud resources. The new governance layer enables enterprises to monitor, control, and scale AI applications beyond pilot stages, improving operational oversight and cost efficiency. Adoption requires integrating the XTAI Orchestrator into existing AI workflows.]]></description>
+      <pubDate>Thu, 22 Oct 2026 11:41:02 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/22/xtium-xtai-orchestrator/">Help Net Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>SentinelOne Introduces Singularity Agentic Detection and Response</title>
+      <link>https://secubuzz.com/news/sentinelone-introduces-singularity-agentic-detecti-6c8dee</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sentinelone-introduces-singularity-agentic-detecti-6c8dee</guid>
+      <description><![CDATA[SentinelOne unveiled Singularity Agentic Detection and Response, a runtime solution that identifies AI agents, enforces allowed actions, and monitors behavior to detect malicious activity in real time. The platform integrates behavioral prevention, detection, and response capabilities directly on the Singularity Platform. Customers can deploy the new offering to gain visibility and governance over AI agent activity.]]></description>
+      <pubDate>Thu, 22 Oct 2026 11:27:36 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/22/sentinelone-singularity-agentic-detection-and-response/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Broadcom Launches Arcot Scam Defense for 3‑D Secure Authentication</title>
+      <link>https://secubuzz.com/news/broadcom-launches-arcot-scam-defense-for-3-d-secur-451a36</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/broadcom-launches-arcot-scam-defense-for-3-d-secur-451a36</guid>
+      <description><![CDATA[Broadcom announced Arcot Scam Defense, a feature of Arcot that blocks social engineering fraud during card‑not‑present transactions. The solution targets AI‑enhanced fraud attempts by intercepting malicious interactions before they reach the payment system. Financial institutions can enable the feature to strengthen 3‑D Secure authentication against evolving scam tactics.]]></description>
+      <pubDate>Thu, 22 Oct 2026 11:18:09 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/22/broadcom-arcot-scam-defense/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Railway PaaS Unauthorized Access to Customer Environment Variables</title>
+      <link>https://secubuzz.com/news/railway-paas-unauthorized-access-to-customer-envir-5882c3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/railway-paas-unauthorized-access-to-customer-envir-5882c3</guid>
+      <description><![CDATA[Railway PaaS disclosed anomalous activity indicating an unauthorized third party accessed encrypted environment variables, and in some cases decrypted contents, affecting a subset of users. The flaw stemmed from insufficient access controls on variable storage, enabling credential extraction without authentication. Railway has urged affected customers to rotate credentials and is applying a patch to tighten variable access permissions.]]></description>
+      <pubDate>Thu, 22 Oct 2026 11:15:42 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/railway-says-intruder-may-have-accessed.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Android Banking Trojan Replaces Legitimate Apps with Malicious Copies</title>
+      <link>https://secubuzz.com/news/android-banking-trojan-replaces-legitimate-apps-wi-bf7e97</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/android-banking-trojan-replaces-legitimate-apps-wi-bf7e97</guid>
+      <description><![CDATA[A new Android banking Trojan, Hirudo, removes legitimate banking applications and installs modified copies that retain the original name and version, enabling fraud while evading security checks. The malware injects malicious code into the app package, exploiting the Android package manager’s trust model to bypass integrity verification. Security teams should update device policies to block unauthorized app installations and verify app signatures before deployment.]]></description>
+      <pubDate>Thu, 22 Oct 2026 11:13:18 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/new-android-malware-2/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>PHP2Shell Vulnerability Affects Fortinet, Cisco, Palo Alto Products</title>
+      <link>https://secubuzz.com/news/php2shell-vulnerability-affects-fortinet-cisco-pal-8ba176</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/php2shell-vulnerability-affects-fortinet-cisco-pal-8ba176</guid>
+      <description><![CDATA[PHP2Shell exposes critical PHP flaws that allow unauthenticated code execution on web servers, impacting all Palo Alto PAN-OS and Panorama versions. The vulnerability enables remote attackers to run arbitrary code without login, posing a severe RCE risk to network security appliances. Palo Alto has not released patches yet; Fortinet and Cisco are investigating affected products and advising interim mitigations.]]></description>
+      <pubDate>Thu, 22 Oct 2026 10:22:56 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/22/php2shell-vulnerability-fortinet-cisco-palo-alto-networks/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Top 10 Best Secure File Sharing Platforms in 2026</title>
+      <link>https://secubuzz.com/news/top-10-best-secure-file-sharing-platforms-in-2026-91feac</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/top-10-best-secure-file-sharing-platforms-in-2026-91feac</guid>
+      <description><![CDATA[The article presents a 2026 ranking of ten secure file‑sharing platforms, evaluating them on consumer usability and enterprise controls such as classification‑aware policy, external‑access governance, and audit resilience. The selection criteria emphasize regulatory compliance, audit survivability, and user‑friendly interfaces for both individuals and organizations. Security teams should review the ranking to align platform choices with their compliance and usability requirements.]]></description>
+      <pubDate>Thu, 22 Oct 2026 10:16:44 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/best-secure-file-sharing/">Cyber Security News</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Atlassian Issues Security Patch for 176 Vulnerabilities in Jira and Confluence</title>
+      <link>https://secubuzz.com/news/atlassian-issues-security-patch-for-176-vulnerabil-59fd7a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/atlassian-issues-security-patch-for-176-vulnerabil-59fd7a</guid>
+      <description><![CDATA[Atlassian’s October 2026 bulletin addresses 176 flaw entries across Jira, Confluence, Bamboo, Bitbucket, and Crowd, including 162 high‑severity and 14 critical third‑party issues. The update fixes vulnerabilities that could allow remote code execution or privilege escalation in these collaboration tools. Customers are urged to apply the latest releases immediately to eliminate exploitable weaknesses.]]></description>
+      <pubDate>Thu, 22 Oct 2026 10:12:18 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/atlassian-security-update/">Cyber Security News</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -62,6 +134,24 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Authorities disrupt nearly 11,000 cybercrime networks in Africa</title>
+      <link>https://secubuzz.com/news/authorities-disrupt-nearly-11-000-cybercrime-netwo-72e8fb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/authorities-disrupt-nearly-11-000-cybercrime-netwo-72e8fb</guid>
+      <description><![CDATA[Authorities dismantled nearly 11,000 cybercrime networks in Africa during Operation Serengeti III, targeting business email compromise, ransomware, and online scams. The operation arrested more than 1,400 individuals and disrupted infrastructure used for credential theft and extortion campaigns. Security teams should monitor for residual threat actors and ensure email authentication and ransomware defenses remain current.]]></description>
+      <pubDate>Thu, 22 Oct 2026 08:27:11 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/authorities-disrupt-nearly-11-000-cybercrime-networks-in-africa/">BleepingComputer</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Oracle Releases Patch for 1,200+ Vulnerabilities, 100 Critical, in Fusion Middleware</title>
+      <link>https://secubuzz.com/news/oracle-releases-patch-for-1-200-vulnerabilities-10-80c479</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/oracle-releases-patch-for-1-200-vulnerabilities-10-80c479</guid>
+      <description><![CDATA[Oracle disclosed a patch update addressing over 1,200 vulnerabilities, including 100 rated critical, affecting Oracle Fusion Middleware via CPU-based exploits. The flaw set includes multiple remote code execution paths triggered by malformed CPU instructions, leading to potential system compromise. Oracle has released patches for all affected products; security teams should apply the updates immediately and verify configuration compliance.]]></description>
+      <pubDate>Thu, 22 Oct 2026 07:38:14 GMT</pubDate>
+      <source url="https://www.securityweek.com/oracle-patches-over-1200-vulnerabilities-with-october-2026-cpu/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Imperial College Researchers Expose Speech‑to‑Text Model Manipulation</title>
       <link>https://secubuzz.com/news/imperial-college-researchers-expose-speech-to-text-6b71c1</link>
       <guid isPermaLink="true">https://secubuzz.com/news/imperial-college-researchers-expose-speech-to-text-6b71c1</guid>
@@ -96,24 +186,6 @@
       <pubDate>Thu, 22 Oct 2026 04:00:14 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/22/ai-agent-observability-report/">Help Net Security</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Railway Security Incident: Hackers May Have Accessed Customer Environment Variables</title>
-      <link>https://secubuzz.com/news/railway-security-incident-hackers-may-have-accesse-2bab27</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/railway-security-incident-hackers-may-have-accesse-2bab27</guid>
-      <description><![CDATA[Railway disclosed that an unauthorized third party may have accessed customer environment variables, including decrypted values, exposing API keys, database passwords, and private registry credentials. The breach likely occurred through insufficient access controls and inadequate secret management practices, potentially allowing attackers to compromise downstream services. Railway urges all customers to replace stored secrets immediately and review IAM policies to prevent future exposure.]]></description>
-      <pubDate>Thu, 22 Oct 2026 03:04:16 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/railway-security-incident/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>12‑Year‑Old GitLab Vulnerability Enables Unauthenticated Remote Code Execution</title>
-      <link>https://secubuzz.com/news/12-year-old-gitlab-vulnerability-enables-unauthent-4376fd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/12-year-old-gitlab-vulnerability-enables-unauthent-4376fd</guid>
-      <description><![CDATA[A 12‑year‑old vulnerability in GitLab’s self‑managed servers permits unauthenticated remote code execution. Tracked as CVE‑2026‑110264, the flaw carries a CVSS score of 10.0 and affects both Community and Enterprise Editions, enabling attackers to run arbitrary code without login. GitLab released patches on October 21, 2026; administrators should apply the update immediately to mitigate the risk.]]></description>
-      <pubDate>Thu, 22 Oct 2026 02:06:30 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/12-year-old-gitlab-vulnerability/">Cyber Security News</source>
-      <category>Vulnerability</category>
     </item>
     <item>
       <title>Operation FlashHole: Lazarus Weaponizes CrossWeb EX with TechHub Loaders</title>
@@ -323,6 +395,15 @@
       <category>Ransomware</category>
     </item>
     <item>
+      <title>Survey Reveals Executives Feel Untouchable Amid Digital‑Physical Security Blending</title>
+      <link>https://secubuzz.com/news/survey-reveals-executives-feel-untouchable-amid-di-62ef82</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/survey-reveals-executives-feel-untouchable-amid-di-62ef82</guid>
+      <description><![CDATA[Survey reveals that 80% of security and wealth professionals believe cybersecurity and physical security are inseparable, indicating executives feel untouchable. The study highlights a perception that digital exposure can translate into tangible physical threats, raising concerns about executive protection strategies. Organizations should integrate cyber and physical risk assessments, update incident response plans, and conduct training to mitigate emerging hybrid threats.]]></description>
+      <pubDate>Wed, 21 Oct 2026 15:29:09 GMT</pubDate>
+      <source url="https://www.darkreading.com/cybersecurity-operations/360-privacy-survey-high-profile-executives-feel-untouchable">Dark Reading</source>
+      <category>Policy</category>
+    </item>
+    <item>
       <title>Widespread PHP Flaw May Cause Many Site Outages Today</title>
       <link>https://secubuzz.com/news/widespread-php-flaw-may-cause-many-site-outages-to-123072</link>
       <guid isPermaLink="true">https://secubuzz.com/news/widespread-php-flaw-may-cause-many-site-outages-to-123072</guid>
@@ -339,6 +420,15 @@
       <pubDate>Wed, 21 Oct 2026 15:00:00 GMT</pubDate>
       <source url="https://www.securityweek.com/context-bombs-cut-ai-attack-success-by-misleading-agents-with-fake-targets/">SecurityWeek</source>
       <category>Policy</category>
+    </item>
+    <item>
+      <title>Sandworm and Allied Actor Wipe Data at Ukrainian Grain Logistics Firm</title>
+      <link>https://secubuzz.com/news/sandworm-and-allied-actor-wipe-data-at-ukrainian-g-1a7e97</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sandworm-and-allied-actor-wipe-data-at-ukrainian-g-1a7e97</guid>
+      <description><![CDATA[Russian state‑linked hacking group Sandworm collaborated with another threat actor to wipe data at a Ukrainian grain logistics company. The coordinated destructive cyberattack leveraged advanced persistence techniques, causing irreversible loss of critical operational data and disrupting supply chain operations. Ukrainian authorities should conduct forensic analysis, restore backups, and implement multi‑factor authentication and network segmentation to prevent future state‑sponsored data erasure.]]></description>
+      <pubDate>Wed, 21 Oct 2026 14:45:00 GMT</pubDate>
+      <source url="https://therecord.media/ukraine-hackers-russia-grain-sandworm">The Record</source>
+      <category>Malware</category>
     </item>
     <item>
       <title>Rapid7 Q3 Analysis Reveals High‑Severity Flaws Exploited Within Three Days</title>
@@ -366,96 +456,6 @@
       <pubDate>Wed, 21 Oct 2026 14:17:00 GMT</pubDate>
       <source url="https://therecord.media/php-script-vulnerabilities-warnings">The Record</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>eMudhra CA Signing Keys Exposed Due to Weak Private Keys</title>
-      <link>https://secubuzz.com/news/emudhra-ca-signing-keys-exposed-due-to-weak-privat-779157</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/emudhra-ca-signing-keys-exposed-due-to-weak-privat-779157</guid>
-      <description><![CDATA[A weakness in eMudhra’s private key generation allowed attackers to recover intermediate certificate signing keys from public certificates in under a second, compromising over 60 million issued certificates. The flaw, discovered by researcher Wayne on October 17, enabled unauthorized signing of certificates, potentially facilitating man‑in‑the‑middle attacks. eMudhra has issued a patch and recommends immediate key rotation and stricter key‑strength enforcement.]]></description>
-      <pubDate>Wed, 21 Oct 2026 14:11:24 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/21/emudhra-certificates-private-keys-compromised/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cloudflare WAF Enhances Transaction Detection</title>
-      <link>https://secubuzz.com/news/cloudflare-waf-enhances-transaction-detection-6c67b9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-waf-enhances-transaction-detection-6c67b9</guid>
-      <description><![CDATA[Cloudflare introduced full transaction detection in its web application firewall, enabling correlation between HTTP requests and responses to identify successful exploits and data exposure. The feature addresses gaps in request-only inspection, reducing false negatives and improving detection of sophisticated attacks. Customers should enable transaction detection in their WAF policies to enhance security posture.]]></description>
-      <pubDate>Wed, 21 Oct 2026 14:10:42 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/full-transaction-waf/">Cloudflare Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>Threat actor uses AI to coordinate credential theft, VoIP fraud, and exfiltration</title>
-      <link>https://secubuzz.com/news/threat-actor-uses-ai-to-coordinate-credential-thef-5e6455</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/threat-actor-uses-ai-to-coordinate-credential-thef-5e6455</guid>
-      <description><![CDATA[A threat actor used AI to bypass safety controls, coordinating credential theft, VoIP fraud planning, and database exfiltration. The actor leveraged AI-generated scripts to automate credential harvesting and fraud execution, increasing operational efficiency and reducing detection risk. Security teams should monitor for anomalous credential usage, enforce MFA, and block suspicious AI‑driven activity.]]></description>
-      <pubDate>Wed, 21 Oct 2026 14:00:24 GMT</pubDate>
-      <source url="https://unit42.paloaltonetworks.com/ai-assisted-cybercrime-analysis/">Unit 42</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>ClickFix Exploits Leveraging AI Installers Surge</title>
-      <link>https://secubuzz.com/news/clickfix-exploits-leveraging-ai-installers-surge-341ff6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/clickfix-exploits-leveraging-ai-installers-surge-341ff6</guid>
-      <description><![CDATA[ClickFix attacks are increasing as criminals deploy fake AI installers, malicious search results, and trusted chatbot platforms to trick users into executing malware. The technique bypasses traditional defenses by mimicking legitimate AI tools, creating high user trust and reducing detection. Security teams should block suspicious AI installer downloads, enforce application whitelisting, and monitor chatbot traffic for anomalous behavior.]]></description>
-      <pubDate>Wed, 21 Oct 2026 14:00:10 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/clickfix-has-never-been-bigger-and-ai-tools-are-its-most-convincing-lure-yet/">BleepingComputer</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>NVIDIA Introduces OpenShell Architecture to Contain AI Agents</title>
-      <link>https://secubuzz.com/news/nvidia-introduces-openshell-architecture-to-contai-6a71bb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/nvidia-introduces-openshell-architecture-to-contai-6a71bb</guid>
-      <description><![CDATA[NVIDIA’s OpenShell Reference Architecture targets AI agents operating across enterprise infrastructure and local systems, integrating security software with dedicated hardware to enforce operational boundaries. The design enables businesses to monitor agent behavior and halt activities that exceed predefined limits, mitigating potential misuse. NVIDIA recommends deploying the architecture to maintain control over AI workloads and safeguard infrastructure.]]></description>
-      <pubDate>Wed, 21 Oct 2026 13:52:23 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/21/nvidia-openshell-reference-architecture/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Commerce.com and Cloudflare Enable AI Agents Across 100,000 Storefronts</title>
-      <link>https://secubuzz.com/news/commerce-com-and-cloudflare-enable-ai-agents-acros-4dc4ea</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/commerce-com-and-cloudflare-enable-ai-agents-acros-4dc4ea</guid>
-      <description><![CDATA[Commerce.com and Cloudflare have enabled AI agents to interact with storefronts via WebMCP across nearly 100,000 domains, providing real shopping tools. The deployment leverages Cloudflare’s edge infrastructure to activate the feature globally while preserving individual merchant control over configuration and data access. Security teams should monitor traffic patterns for anomalous agent activity and verify that merchant settings remain unchanged after the rollout.]]></description>
-      <pubDate>Wed, 21 Oct 2026 13:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/webmcp-commerce/">Cloudflare Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>Decades-Old Windows Utility Powers Modern ClickFix Attack</title>
-      <link>https://secubuzz.com/news/decades-old-windows-utility-powers-modern-clickfix-1ea2d9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/decades-old-windows-utility-powers-modern-clickfix-1ea2d9</guid>
-      <description><![CDATA[A modern ClickFix attack leverages the legacy Windows 'finger' utility to trigger a CAPTCHA that installs the Lumma stealer via malicious Google search results. The exploitation chain abuses the finger command’s ability to execute arbitrary code, enabling credential theft and persistent malware installation. Defenders should disable the finger utility, apply recent Windows updates, and monitor for unauthorized CAPTCHA prompts to mitigate this threat.]]></description>
-      <pubDate>Wed, 21 Oct 2026 13:00:00 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyberattacks-data-breaches/decades-old-windows-utility-modern-clickfix-attack">Dark Reading</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Fake Amazon Music x YouTube Deal Traps Creators into Google Login</title>
-      <link>https://secubuzz.com/news/fake-amazon-music-x-youtube-deal-traps-creators-in-458852</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fake-amazon-music-x-youtube-deal-traps-creators-in-458852</guid>
-      <description><![CDATA[Fake Amazon Music x YouTube deal lures creators into a Google login trap. Attackers use a convincing creator portal that displays YouTube videos and metrics to trick users into entering Google credentials, enabling credential theft. Security teams should verify official Amazon and YouTube communications, avoid unknown portals, and enable two‑factor authentication on Google accounts.]]></description>
-      <pubDate>Wed, 21 Oct 2026 12:45:00 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/threat-intel/2026/10/fake-amazon-music-x-youtube-deal-lures-creators-into-a-google-login-trap">Malwarebytes Labs</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Microsoft PowerToys 0.102 Adds CursorHide, Button Lock, and Command‑Line Enhancements</title>
-      <link>https://secubuzz.com/news/microsoft-powertoys-0-102-adds-cursorhide-button-l-f9e809</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-powertoys-0-102-adds-cursorhide-button-l-f9e809</guid>
-      <description><![CDATA[Microsoft released PowerToys 0.102, adding CursorHide and Button Lock mouse utilities, new command‑line tools, and Command Palette enhancements. The update expands PowerToys functionality, enabling users to hide the cursor, lock mouse buttons, and access utilities via command line, improving workflow automation. Users should download the latest release from Microsoft’s official site and review the release notes for compatibility considerations.]]></description>
-      <pubDate>Wed, 21 Oct 2026 12:20:34 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-powertoys-adds-cursorhide-button-lock-mouse-tools/">BleepingComputer</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Bronze Sandcastle Exploits Sandboxie DLL Sideloading to Deploy Backdoors</title>
-      <link>https://secubuzz.com/news/bronze-sandcastle-exploits-sandboxie-dll-sideloadi-2c23a1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/bronze-sandcastle-exploits-sandboxie-dll-sideloadi-2c23a1</guid>
-      <description><![CDATA[Bronze Sandcastle, a China-aligned threat cluster, has been observed targeting organizations in Asia and Africa since mid‑2025 by sideloading Sandboxie DLLs to deploy backdoors. The technique bypasses standard DLL loading checks, enabling attackers to execute malicious code with elevated privileges without detection. Defenders should enforce DLL integrity verification, restrict Sandboxie usage, and monitor for anomalous process creation to mitigate this lateral movement strategy.]]></description>
-      <pubDate>Wed, 21 Oct 2026 12:05:00 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/china-aligned-bronze-sandcastle-abuses.html">The Hacker News</source>
-      <category>Malware</category>
     </item>
   </channel>
 </rss>

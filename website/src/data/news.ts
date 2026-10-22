@@ -11,21 +11,164 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
-    "slug": "cisco-patches-34-vulnerabilities-across-multiple-p-14dace",
-    "title": "Cisco Patches 34 Vulnerabilities Across Multiple Products",
-    "summary": "Cisco released patches for 34 critical‑severity defects that could enable command execution, authentication bypass, and XSS attacks in several products. The root cause involved improper input validation and privilege escalation paths, with public proof‑of‑concept code available. Security teams should apply the vendor’s firmware updates immediately to eliminate the exploitation vector.",
+    "slug": "gitlab-regular-expression-compiler-vulnerability-a-12e68d",
+    "title": "GitLab Regular Expression Compiler Vulnerability Allows Remote Code Execution",
+    "summary": "A maximum‑severity Regular Expression Compiler flaw in GitLab permits remote attackers to execute arbitrary code on vulnerable servers via crafted input. The flaw is a buffer overflow in the regex engine, enabling uncontrolled code execution; it is actively exploitable. GitLab released patches for affected versions; administrators should apply updates immediately and disable regex processing as a temporary mitigation.",
     "category": "Vulnerability",
     "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/cisco-patches-34-vulnerabilities-across-multiple-products/",
-    "publishedAt": "2026-10-22T10:05:21.000Z",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/gitlab-warns-of-new-max-severity-code-execution-vulnerability/",
+    "publishedAt": "2026-10-22T11:41:48.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "cisco-patches-34-vulnerabilities-across-multiple-p",
-      "article-14dace",
-      "14dace",
-      "cisco-patches-34-vulnerabilities-across-multiple-products"
+      "gitlab-regular-expression-compiler-vulnerability-a",
+      "article-12e68d",
+      "12e68d",
+      "gitlab-regular-expression-compiler-vulnerability-allows-remo"
+    ]
+  },
+  {
+    "slug": "xtium-expands-xtai-with-centralized-ai-governance-1a8d62",
+    "title": "XTIUM Expands XTAI with Centralized AI Governance and Cost Management",
+    "summary": "XTIUM released an updated XTAI platform, adding an orchestrator that consolidates managed AI services, voice, custom agents, networks, and cloud resources. The new governance layer enables enterprises to monitor, control, and scale AI applications beyond pilot stages, improving operational oversight and cost efficiency. Adoption requires integrating the XTAI Orchestrator into existing AI workflows.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/xtium-xtai-orchestrator/",
+    "publishedAt": "2026-10-22T11:41:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "xtium-expands-xtai-with-centralized-ai-governance",
+      "article-1a8d62",
+      "1a8d62",
+      "xtium-expands-xtai-with-centralized-ai-governance-and-cost-m"
+    ]
+  },
+  {
+    "slug": "sentinelone-introduces-singularity-agentic-detecti-6c8dee",
+    "title": "SentinelOne Introduces Singularity Agentic Detection and Response",
+    "summary": "SentinelOne unveiled Singularity Agentic Detection and Response, a runtime solution that identifies AI agents, enforces allowed actions, and monitors behavior to detect malicious activity in real time. The platform integrates behavioral prevention, detection, and response capabilities directly on the Singularity Platform. Customers can deploy the new offering to gain visibility and governance over AI agent activity.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/sentinelone-singularity-agentic-detection-and-response/",
+    "publishedAt": "2026-10-22T11:27:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sentinelone-introduces-singularity-agentic-detecti",
+      "article-6c8dee",
+      "6c8dee",
+      "sentinelone-introduces-singularity-agentic-detection-and-res"
+    ]
+  },
+  {
+    "slug": "broadcom-launches-arcot-scam-defense-for-3-d-secur-451a36",
+    "title": "Broadcom Launches Arcot Scam Defense for 3‑D Secure Authentication",
+    "summary": "Broadcom announced Arcot Scam Defense, a feature of Arcot that blocks social engineering fraud during card‑not‑present transactions. The solution targets AI‑enhanced fraud attempts by intercepting malicious interactions before they reach the payment system. Financial institutions can enable the feature to strengthen 3‑D Secure authentication against evolving scam tactics.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/broadcom-arcot-scam-defense/",
+    "publishedAt": "2026-10-22T11:18:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "broadcom-launches-arcot-scam-defense-for-3-d-secur",
+      "article-451a36",
+      "451a36",
+      "broadcom-launches-arcot-scam-defense-for-3-d-secure-authenti"
+    ]
+  },
+  {
+    "slug": "railway-paas-unauthorized-access-to-customer-envir-5882c3",
+    "title": "Railway PaaS Unauthorized Access to Customer Environment Variables",
+    "summary": "Railway PaaS disclosed anomalous activity indicating an unauthorized third party accessed encrypted environment variables, and in some cases decrypted contents, affecting a subset of users. The flaw stemmed from insufficient access controls on variable storage, enabling credential extraction without authentication. Railway has urged affected customers to rotate credentials and is applying a patch to tighten variable access permissions.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/railway-says-intruder-may-have-accessed.html",
+    "publishedAt": "2026-10-22T11:15:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "railway-paas-unauthorized-access-to-customer-envir",
+      "article-5882c3",
+      "5882c3",
+      "railway-paas-unauthorized-access-to-customer-environment-var"
+    ]
+  },
+  {
+    "slug": "android-banking-trojan-replaces-legitimate-apps-wi-bf7e97",
+    "title": "Android Banking Trojan Replaces Legitimate Apps with Malicious Copies",
+    "summary": "A new Android banking Trojan, Hirudo, removes legitimate banking applications and installs modified copies that retain the original name and version, enabling fraud while evading security checks. The malware injects malicious code into the app package, exploiting the Android package manager’s trust model to bypass integrity verification. Security teams should update device policies to block unauthorized app installations and verify app signatures before deployment.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/new-android-malware-2/",
+    "publishedAt": "2026-10-22T11:13:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "android-banking-trojan-replaces-legitimate-apps-wi",
+      "article-bf7e97",
+      "bf7e97",
+      "android-banking-trojan-replaces-legitimate-apps-with-malicio"
+    ]
+  },
+  {
+    "slug": "php2shell-vulnerability-affects-fortinet-cisco-pal-8ba176",
+    "title": "PHP2Shell Vulnerability Affects Fortinet, Cisco, Palo Alto Products",
+    "summary": "PHP2Shell exposes critical PHP flaws that allow unauthenticated code execution on web servers, impacting all Palo Alto PAN-OS and Panorama versions. The vulnerability enables remote attackers to run arbitrary code without login, posing a severe RCE risk to network security appliances. Palo Alto has not released patches yet; Fortinet and Cisco are investigating affected products and advising interim mitigations.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/php2shell-vulnerability-fortinet-cisco-palo-alto-networks/",
+    "publishedAt": "2026-10-22T10:22:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "php2shell-vulnerability-affects-fortinet-cisco-pal",
+      "article-8ba176",
+      "8ba176",
+      "php2shell-vulnerability-affects-fortinet-cisco-palo-alto-pro"
+    ]
+  },
+  {
+    "slug": "top-10-best-secure-file-sharing-platforms-in-2026-91feac",
+    "title": "Top 10 Best Secure File Sharing Platforms in 2026",
+    "summary": "The article presents a 2026 ranking of ten secure file‑sharing platforms, evaluating them on consumer usability and enterprise controls such as classification‑aware policy, external‑access governance, and audit resilience. The selection criteria emphasize regulatory compliance, audit survivability, and user‑friendly interfaces for both individuals and organizations. Security teams should review the ranking to align platform choices with their compliance and usability requirements.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-secure-file-sharing/",
+    "publishedAt": "2026-10-22T10:16:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "top-10-best-secure-file-sharing-platforms-in-2026",
+      "article-91feac",
+      "91feac"
+    ]
+  },
+  {
+    "slug": "atlassian-issues-security-patch-for-176-vulnerabil-59fd7a",
+    "title": "Atlassian Issues Security Patch for 176 Vulnerabilities in Jira and Confluence",
+    "summary": "Atlassian’s October 2026 bulletin addresses 176 flaw entries across Jira, Confluence, Bamboo, Bitbucket, and Crowd, including 162 high‑severity and 14 critical third‑party issues. The update fixes vulnerabilities that could allow remote code execution or privilege escalation in these collaboration tools. Customers are urged to apply the latest releases immediately to eliminate exploitable weaknesses.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/atlassian-security-update/",
+    "publishedAt": "2026-10-22T10:12:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "atlassian-issues-security-patch-for-176-vulnerabil",
+      "article-59fd7a",
+      "59fd7a",
+      "atlassian-issues-security-patch-for-176-vulnerabilities-in-j"
     ]
   },
   {
@@ -119,6 +262,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "authorities-disrupt-nearly-11-000-cybercrime-netwo-72e8fb",
+    "title": "Authorities disrupt nearly 11,000 cybercrime networks in Africa",
+    "summary": "Authorities dismantled nearly 11,000 cybercrime networks in Africa during Operation Serengeti III, targeting business email compromise, ransomware, and online scams. The operation arrested more than 1,400 individuals and disrupted infrastructure used for credential theft and extortion campaigns. Security teams should monitor for residual threat actors and ensure email authentication and ransomware defenses remain current.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/authorities-disrupt-nearly-11-000-cybercrime-networks-in-africa/",
+    "publishedAt": "2026-10-22T08:27:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "authorities-disrupt-nearly-11-000-cybercrime-netwo",
+      "article-72e8fb",
+      "72e8fb",
+      "authorities-disrupt-nearly-11-000-cybercrime-networks-in-afr"
+    ]
+  },
+  {
+    "slug": "oracle-releases-patch-for-1-200-vulnerabilities-10-80c479",
+    "title": "Oracle Releases Patch for 1,200+ Vulnerabilities, 100 Critical, in Fusion Middleware",
+    "summary": "Oracle disclosed a patch update addressing over 1,200 vulnerabilities, including 100 rated critical, affecting Oracle Fusion Middleware via CPU-based exploits. The flaw set includes multiple remote code execution paths triggered by malformed CPU instructions, leading to potential system compromise. Oracle has released patches for all affected products; security teams should apply the updates immediately and verify configuration compliance.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/oracle-patches-over-1200-vulnerabilities-with-october-2026-cpu/",
+    "publishedAt": "2026-10-22T07:38:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "oracle-releases-patch-for-1-200-vulnerabilities-10",
+      "article-80c479",
+      "80c479",
+      "oracle-releases-patch-for-1-200-vulnerabilities-100-critical"
+    ]
+  },
+  {
     "slug": "imperial-college-researchers-expose-speech-to-text-6b71c1",
     "title": "Imperial College Researchers Expose Speech‑to‑Text Model Manipulation",
     "summary": "Researchers at Imperial College London discovered that attackers can tamper with speech‑to‑text models during fine‑tuning to produce pre‑selected malicious outputs for a chosen speaker. The manipulation forces AI agents to transcribe a request for $5,000, which sandboxed banking systems then execute, demonstrating a covert credential‑less exploitation vector. Defenders should restrict fine‑tuning access and monitor outputs for anomalous requests.",
@@ -186,42 +365,6 @@ export const news: NewsBrief[] = [
       "article-4c56e0",
       "4c56e0",
       "ai-agent-observability-lags-behind-hallucination-rates"
-    ]
-  },
-  {
-    "slug": "railway-security-incident-hackers-may-have-accesse-2bab27",
-    "title": "Railway Security Incident: Hackers May Have Accessed Customer Environment Variables",
-    "summary": "Railway disclosed that an unauthorized third party may have accessed customer environment variables, including decrypted values, exposing API keys, database passwords, and private registry credentials. The breach likely occurred through insufficient access controls and inadequate secret management practices, potentially allowing attackers to compromise downstream services. Railway urges all customers to replace stored secrets immediately and review IAM policies to prevent future exposure.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/railway-security-incident/",
-    "publishedAt": "2026-10-22T03:04:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "railway-security-incident-hackers-may-have-accesse",
-      "article-2bab27",
-      "2bab27",
-      "railway-security-incident-hackers-may-have-accessed-customer"
-    ]
-  },
-  {
-    "slug": "12-year-old-gitlab-vulnerability-enables-unauthent-4376fd",
-    "title": "12‑Year‑Old GitLab Vulnerability Enables Unauthenticated Remote Code Execution",
-    "summary": "A 12‑year‑old vulnerability in GitLab’s self‑managed servers permits unauthenticated remote code execution. Tracked as CVE‑2026‑110264, the flaw carries a CVSS score of 10.0 and affects both Community and Enterprise Editions, enabling attackers to run arbitrary code without login. GitLab released patches on October 21, 2026; administrators should apply the update immediately to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/12-year-old-gitlab-vulnerability/",
-    "publishedAt": "2026-10-22T02:06:30.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "12-year-old-gitlab-vulnerability-enables-unauthent",
-      "article-4376fd",
-      "4376fd",
-      "12-year-old-gitlab-vulnerability-enables-unauthenticated-rem"
     ]
   },
   {
@@ -636,6 +779,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "survey-reveals-executives-feel-untouchable-amid-di-62ef82",
+    "title": "Survey Reveals Executives Feel Untouchable Amid Digital‑Physical Security Blending",
+    "summary": "Survey reveals that 80% of security and wealth professionals believe cybersecurity and physical security are inseparable, indicating executives feel untouchable. The study highlights a perception that digital exposure can translate into tangible physical threats, raising concerns about executive protection strategies. Organizations should integrate cyber and physical risk assessments, update incident response plans, and conduct training to mitigate emerging hybrid threats.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/360-privacy-survey-high-profile-executives-feel-untouchable",
+    "publishedAt": "2026-10-21T15:29:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "survey-reveals-executives-feel-untouchable-amid-di",
+      "article-62ef82",
+      "62ef82",
+      "survey-reveals-executives-feel-untouchable-amid-digital-phys"
+    ]
+  },
+  {
     "slug": "widespread-php-flaw-may-cause-many-site-outages-to-123072",
     "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
     "summary": "A widespread PHP flaw lets attackers seize full control over servers that have not updated core software. The vulnerabilities enable remote code execution via crafted requests, and active exploits are already in the wild, causing frequent 404 errors. Site owners must immediately apply PHP security patches, disable vulnerable functions, and monitor logs for anomalous activity.",
@@ -668,6 +829,24 @@ export const news: NewsBrief[] = [
       "context-bombs-reduce-ai-attack-success-by-91",
       "article-20f53f",
       "20f53f"
+    ]
+  },
+  {
+    "slug": "sandworm-and-allied-actor-wipe-data-at-ukrainian-g-1a7e97",
+    "title": "Sandworm and Allied Actor Wipe Data at Ukrainian Grain Logistics Firm",
+    "summary": "Russian state‑linked hacking group Sandworm collaborated with another threat actor to wipe data at a Ukrainian grain logistics company. The coordinated destructive cyberattack leveraged advanced persistence techniques, causing irreversible loss of critical operational data and disrupting supply chain operations. Ukrainian authorities should conduct forensic analysis, restore backups, and implement multi‑factor authentication and network segmentation to prevent future state‑sponsored data erasure.",
+    "category": "Malware",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/ukraine-hackers-russia-grain-sandworm",
+    "publishedAt": "2026-10-21T14:45:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sandworm-and-allied-actor-wipe-data-at-ukrainian-g",
+      "article-1a7e97",
+      "1a7e97",
+      "sandworm-and-allied-actor-wipe-data-at-ukrainian-grain-logis"
     ]
   },
   {
@@ -938,26 +1117,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "ransomware-exploits-cve-2026-0257-in-palo-alto-glo-54fa4d",
-    "title": "Ransomware Exploits CVE-2026-0257 in Palo Alto GlobalProtect VPN",
-    "summary": "Ransomware groups exploit CVE-2026-0257, an authentication bypass in Palo Alto Networks’ PAN-OS GlobalProtect, allowing remote unauthenticated VPN access. The flaw arises from cookie validation failures, enabling attackers to establish unauthorized connections to GlobalProtect portals and gateways. Palo Alto released a patch in May; organizations must apply the update immediately to prevent exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/21/ransomware-groups-exploit-palo-alto-globalprotect-cve-2026-0257/",
-    "publishedAt": "2026-10-21T11:13:39.000Z",
-    "cves": [
-      "CVE-2026-0257"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ransomware-exploits-cve-2026-0257-in-palo-alto-glo",
-      "article-54fa4d",
-      "54fa4d",
-      "ransomware-exploits-cve-2026-0257-in-palo-alto-globalprotect"
-    ]
-  },
-  {
     "slug": "weis-archive-releases-25-years-of-research-papers-2eaac9",
     "title": "WEIS Archive Releases 25 Years of Research Papers",
     "summary": "The Workshop on Economics and Information Security (WEIS) has released an archive containing all papers from its 25-year history, providing a comprehensive resource for researchers. The collection includes foundational essays, such as a 2002 analysis of the economics of information security, offering insights into the field’s evolution. Users can access the archive to study historical security economics literature.",
@@ -1172,24 +1331,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "file-integrity-monitoring-tools-face-alert-floodin-5ccdc5",
-    "title": "File Integrity Monitoring Tools Face Alert Flooding in 2026",
-    "summary": "File integrity monitoring tools detect unauthorized file changes that signal breaches, a requirement under PCI DSS 4.x. In 2026, many solutions alert on every patch Tuesday, flooding SOCs and obscuring critical changes. Teams must prioritize alerts by relevance scoring and integrate automated remediation to focus on truly critical file alterations.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/best-file-integrity-monitoring/",
-    "publishedAt": "2026-10-21T07:49:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "file-integrity-monitoring-tools-face-alert-floodin",
-      "article-5ccdc5",
-      "5ccdc5",
-      "file-integrity-monitoring-tools-face-alert-flooding-in-2026"
-    ]
-  },
-  {
     "slug": "state-bank-of-india-data-leak-exposes-3-897-custom-b51c3d",
     "title": "State Bank of India Data Leak Exposes 3,897 Customer Records on Dark Web",
     "summary": "State Bank of India disclosed a data leak exposing 3,897 customer records on the dark web, including personal information such as names, addresses, and account numbers. The breach originated from an unidentified source, and the bank has not determined how the data was exfiltrated. The bank issued a public notice and is investigating while advising customers to monitor accounts.",
@@ -1205,24 +1346,6 @@ export const news: NewsBrief[] = [
       "article-b51c3d",
       "b51c3d",
       "state-bank-of-india-data-leak-exposes-3-897-customer-records"
-    ]
-  },
-  {
-    "slug": "top-10-best-data-privacy-management-software-in-20-7bc84a",
-    "title": "Top 10 Best Data Privacy Management Software in 2026",
-    "summary": "Data privacy management platforms address the challenge of locating and deleting personal data, a requirement intensified by expanding state regulations and AI governance. The article evaluates ten solutions on discovery depth, DSAR automation, consent orchestration, and mid‑market suitability. Enterprises should adopt these tools to meet tighter DSAR deadlines and regulatory compliance.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/best-data-privacy-management/",
-    "publishedAt": "2026-10-21T07:35:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "top-10-best-data-privacy-management-software-in-20",
-      "article-7bc84a",
-      "7bc84a",
-      "top-10-best-data-privacy-management-software-in-2026"
     ]
   },
   {
@@ -1743,24 +1866,6 @@ export const news: NewsBrief[] = [
       "article-447761",
       "447761",
       "developers-ai-adoption-curve-determines-security-risk"
-    ]
-  },
-  {
-    "slug": "abstract-integrates-agentic-siem-with-soar-for-aut-15300b",
-    "title": "Abstract Integrates Agentic SIEM with SOAR for Automated Response",
-    "summary": "Abstract’s new AI SOC platform integrates agentic SIEM detection with SOAR response, enabling automated actions tied directly to detection rules. The solution combines proprietary models and foundation models for investigation, hunting, and triage. It aims to match the speed of machine‑level attacks while reducing manual tooling lag, enhancing incident response efficiency.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/abstract-links-automated-response-actions-directly-to-siem-detection-rules/",
-    "publishedAt": "2026-10-20T13:26:09.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "abstract-integrates-agentic-siem-with-soar-for-aut",
-      "article-15300b",
-      "15300b",
-      "abstract-integrates-agentic-siem-with-soar-for-automated-res"
     ]
   },
   {
@@ -6154,114 +6259,6 @@ export const news: NewsBrief[] = [
       "bpfdoor-backdoor-targets-network-edge-devices",
       "article-71e81c",
       "71e81c"
-    ]
-  },
-  {
-    "slug": "thousands-of-wind-and-solar-park-systems-exposed-o-2e4ba5",
-    "title": "Thousands of Wind and Solar Park Systems Exposed on Internet Across Europe",
-    "summary": "Modat and NCSC‑NL discovered 8,547 internet‑facing systems at wind farms and solar parks in 35 European countries that should not be reachable from the internet. The exposed systems include login screens and turbine control pages with a Stop button accessible to anyone with a browser, posing a significant operational risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/09/eu-renewable-energy-cybersecurity/",
-    "publishedAt": "2026-10-09T05:30:52.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "thousands-of-wind-and-solar-park-systems-exposed-o",
-      "article-2e4ba5",
-      "2e4ba5",
-      "thousands-of-wind-and-solar-park-systems-exposed-on-internet"
-    ]
-  },
-  {
-    "slug": "pci-ssc-recommends-human-approval-for-ai-actions-o-7a1c85",
-    "title": "PCI SSC Recommends Human Approval for AI Actions on Cardholder Data",
-    "summary": "The PCI Security Standards Council released guidance urging human oversight of AI agents handling cardholder data. The advisory covers governance, deployment, access controls, testing, and PCI standard application, emphasizing that existing PCI requirements remain primary. It aims to mitigate AI-assisted attack risks in payment environments.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/09/pci-ssc-payment-environments-ai-security-guidance/",
-    "publishedAt": "2026-10-09T05:00:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "pci-ssc-recommends-human-approval-for-ai-actions-o",
-      "article-7a1c85",
-      "7a1c85",
-      "pci-ssc-recommends-human-approval-for-ai-actions-on-cardhold"
-    ]
-  },
-  {
-    "slug": "researchers-publish-formula-to-predict-when-ai-cha-5b9885",
-    "title": "Researchers Publish Formula to Predict When AI Chatbots May Go Rogue",
-    "summary": "George Washington University researchers released a paper outlining a model that predicts the timing and causes of AI chatbots turning malicious. The study aims to help developers anticipate and mitigate potential rogue behavior in conversational AI systems.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/formula-predicts-when-ai-chatbots-are-at-risk-of-turning-bad/",
-    "publishedAt": "2026-10-09T04:12:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "researchers-publish-formula-to-predict-when-ai-cha",
-      "article-5b9885",
-      "5b9885",
-      "researchers-publish-formula-to-predict-when-ai-chatbots-may-"
-    ]
-  },
-  {
-    "slug": "ploutus-d-atm-malware-exploits-kalignite-xfs-middl-4ae029",
-    "title": "Ploutus-D ATM Malware Exploits Kalignite XFS Middleware",
-    "summary": "Ploutus-D malware targets ATM jackpotting by exploiting Kalignite XFS middleware. The attack allows attackers to manipulate cash dispensers, potentially draining accounts. Banks can mitigate by securing middleware, monitoring for abnormal transactions, and implementing robust physical and software controls.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/ploutus-d-atm-jackpotting-kalignite-defense",
-    "publishedAt": "2026-10-09T04:01:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ploutus-d-atm-malware-exploits-kalignite-xfs-middl",
-      "article-4ae029",
-      "4ae029",
-      "ploutus-d-atm-malware-exploits-kalignite-xfs-middleware"
-    ]
-  },
-  {
-    "slug": "idcf-cloud-ransomware-locks-239-hypervisors-and-wi-29af22",
-    "title": "IDCF Cloud Ransomware Locks 239 Hypervisors and Wipes Snapshots",
-    "summary": "A ransomware outbreak in Japan’s IDCF Cloud locked 239 hypervisors and erased over 550,000 snapshots. The incident highlights the need for hypervisor defenses, immutable backups, and proactive SOC hunting queries to detect and mitigate such attacks.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/idcf-cloud-ransomware-hypervisor-mitigation",
-    "publishedAt": "2026-10-09T03:20:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "idcf-cloud-ransomware-locks-239-hypervisors-and-wi",
-      "article-29af22",
-      "29af22",
-      "idcf-cloud-ransomware-locks-239-hypervisors-and-wipes-snapsh"
-    ]
-  },
-  {
-    "slug": "microsoft-urges-early-testing-of-post-quantum-cert-1b355d",
-    "title": "Microsoft Urges Early Testing of Post‑Quantum Certificate Ecosystems",
-    "summary": "Microsoft encourages organizations to begin testing post‑quantum authentication by participating in its PQC TLS Pilot Program. The initiative aims to advance readiness for quantum‑resistant certificates and TLS protocols, helping enterprises prepare for future cryptographic challenges.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Microsoft Security",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/08/post-quantum-authentication-why-organizations-should-start-testing-certificate-ecosystems-now/",
-    "publishedAt": "2026-10-08T20:44:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-urges-early-testing-of-post-quantum-cert",
-      "article-1b355d",
-      "1b355d",
-      "microsoft-urges-early-testing-of-post-quantum-certificate-ec"
     ]
   }
 ];
