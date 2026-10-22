@@ -2,6 +2,7 @@ import React, { useMemo, useState } from 'react';
 import { SearchIcon, ChevronLeftIcon, ChevronRightIcon } from 'lucide-react';
 import { PageIntro } from '../components/PageIntro';
 import { AdvisoryTable } from '../components/AdvisoryTable';
+import { VendorSelect } from '../components/VendorSelect';
 import { useLiveAdvisories } from '../data/useLiveAdvisories';
 import { daysUntil } from '../utils/date';
 import { getCvssSeverity } from '../utils/advisory';
@@ -32,17 +33,17 @@ export function Advisories() {
     return d >= 0 && d <= 7;
   }).length;
 
-  const topVendors = useMemo(() => {
+  const sortedVendors = useMemo(() => {
     const counts: Record<string, number> = {};
     for (const a of advisories) {
-      if (a.vendor) {
-        counts[a.vendor] = (counts[a.vendor] || 0) + 1;
+      const v = a.vendor?.trim();
+      if (v) {
+        counts[v] = (counts[v] || 0) + 1;
       }
     }
     return Object.entries(counts)
-      .sort((a, b) => b[1] - a[1])
-      .slice(0, 30)
-      .map(([v]) => v);
+      .map(([name, count]) => ({ name, count }))
+      .sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }));
   }, [advisories]);
 
   const results = useMemo(() => {
@@ -180,23 +181,18 @@ export function Advisories() {
           </div>
 
           <div className="flex flex-wrap items-center gap-3 border-t border-line/50 pt-3">
-            <label className="inline-flex items-center gap-2 text-xs text-subtle">
-              Vendor:
-              <select
+            <div className="inline-flex items-center gap-2 text-xs text-subtle">
+              <span>Vendor:</span>
+              <VendorSelect
                 value={vendorFilter}
-                onChange={(e) => {
-                  setVendorFilter(e.target.value);
+                onChange={(v) => {
+                  setVendorFilter(v);
                   setPage(1);
                 }}
-                className="h-8 rounded-md border border-line bg-surface px-2 text-xs text-ink focus:border-accent focus:outline-none">
-                <option value="ALL">All Vendors ({advisories.length})</option>
-                {topVendors.map((v) => (
-                  <option key={v} value={v}>
-                    {v}
-                  </option>
-                ))}
-              </select>
-            </label>
+                vendors={sortedVendors}
+                totalCount={advisories.length}
+              />
+            </div>
 
             <label className="inline-flex items-center gap-2 text-xs text-subtle">
               Severity:
