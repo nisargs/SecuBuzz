@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "aspm-in-the-ai-era-part-2-prioritize-exploitable-r-5291d5",
+    "title": "ASPM in the AI Era Part 2: Prioritize Exploitable Risks with Code-to-Cloud Context",
+    "summary": "ASPM in the AI Era Part 2 presents a framework that prioritizes exploitable risks by merging code, infrastructure, and runtime context. This integration shortens triage times and focuses security teams on high-impact vulnerabilities. Implementing the model requires aligning threat feeds, automating context aggregation, and updating risk assessments for cloud workloads.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "Wiz Research",
+    "sourceUrl": "https://www.wiz.io/blog/aspm-ai-era-pt-2-prioritize-appsec-risk",
+    "publishedAt": "2026-10-22T22:51:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "aspm-in-the-ai-era-part-2-prioritize-exploitable-r",
+      "article-5291d5",
+      "5291d5",
+      "aspm-in-the-ai-era-part-2-prioritize-exploitable-risks-with-"
+    ]
+  },
+  {
     "slug": "railway-warns-developers-to-rotate-secrets-after-s-57cfde",
     "title": "Railway Warns Developers to Rotate Secrets After Suspicious Activity",
     "summary": "Railway detected suspicious activity on its cloud platform that stores customer environment variables, urging developers to rotate secrets. The anomaly suggests possible unauthorized access to configuration data, though no exfiltration has been confirmed by the platform. Railway recommends enforcing secret rotation, enabling multi‑factor authentication, and auditing access logs for irregular activity.",
@@ -26,6 +44,24 @@ export const news: NewsBrief[] = [
       "article-57cfde",
       "57cfde",
       "railway-warns-developers-to-rotate-secrets-after-suspicious-"
+    ]
+  },
+  {
+    "slug": "toronto-crime-stoppers-chapter-halts-operations-af-284599",
+    "title": "Toronto Crime Stoppers Chapter Halts Operations After Data Breach Disclosure",
+    "summary": "The Toronto chapter of Crime Stoppers disclosed a data breach timeline, revealing when it became aware of the compromise and subsequently halted operations. The breach exposed internal operational details, potentially compromising sensitive case information and undermining public trust in the organization. Security teams should conduct a forensic investigation, notify affected stakeholders, and implement stricter access controls to prevent future incidents.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/toronto-crime-tips-org-freezes-ops-after-breach",
+    "publishedAt": "2026-10-22T20:52:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "toronto-crime-stoppers-chapter-halts-operations-af",
+      "article-284599",
+      "284599",
+      "toronto-crime-stoppers-chapter-halts-operations-after-data-b"
     ]
   },
   {
@@ -300,6 +336,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "machine-speed-attacks-enable-rapid-credential-thef-6d4a61",
+    "title": "Machine Speed Attacks Enable Rapid Credential Theft",
+    "summary": "Attackers exploit stolen GitHub tokens, malicious AI installers, and MFA phishing to steal credentials and exfiltrate data within minutes. The flaw lies in insufficient machine speed detection and automated response, allowing credential theft before detection; no CVE cited, exploitation is active and rapid. Organizations must implement faster detection, automated containment, and MFA hardening to mitigate.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/machine-speed-attacks-require-machine-speed-detection-and-response/",
+    "publishedAt": "2026-10-22T14:02:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "machine-speed-attacks-enable-rapid-credential-thef",
+      "article-6d4a61",
+      "6d4a61",
+      "machine-speed-attacks-enable-rapid-credential-theft"
+    ]
+  },
+  {
     "slug": "interpol-arrests-1-462-suspects-disrupts-10-909-cy-5e69d6",
     "title": "INTERPOL Arrests 1,462 Suspects, Disrupts 10,909 Cybercrime Networks",
     "summary": "INTERPOL conducted Operation Serengeti III, arresting 1,462 suspects and disrupting 10,909 cybercrime networks worldwide. The coordinated effort recovered over $105 million in illicit funds, involving agencies from 21 countries and targeting a range of criminal activities including phishing, ransomware, and fraud. Law enforcement agencies should continue joint intelligence sharing and enforce stricter regulatory compliance to sustain momentum against transnational cybercrime.",
@@ -477,6 +531,26 @@ export const news: NewsBrief[] = [
       "article-44a04b",
       "44a04b",
       "ringrtc-call-hang-up-vulnerability-exploited-by-malicious-ca"
+    ]
+  },
+  {
+    "slug": "database-privilege-escalation-vulnerability-in-sie-42ff49",
+    "title": "Database Privilege Escalation Vulnerability in Siemens WinCC (CVE-2026-59241)",
+    "summary": "A database privilege escalation vulnerability in Siemens WinCC versions V7.5, V8.0, and V8.1 permits an authenticated database user to execute arbitrary commands on the host system. The flaw carries a CVSS score of 8.8 and is identified as CVE-2026-59241, exposing critical infrastructure sectors to potential compromise. Siemens has released patched versions and recommends updating immediately or applying vendor‑issued mitigations.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-13",
+    "publishedAt": "2026-10-22T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-59241"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "database-privilege-escalation-vulnerability-in-sie",
+      "article-42ff49",
+      "42ff49",
+      "database-privilege-escalation-vulnerability-in-siemens-wincc"
     ]
   },
   {
@@ -1213,24 +1287,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "threat-actor-uses-ai-to-coordinate-credential-thef-5e6455",
-    "title": "Threat actor uses AI to coordinate credential theft, VoIP fraud, and exfiltration",
-    "summary": "A threat actor used AI to bypass safety controls, coordinating credential theft, VoIP fraud planning, and database exfiltration. The actor leveraged AI-generated scripts to automate credential harvesting and fraud execution, increasing operational efficiency and reducing detection risk. Security teams should monitor for anomalous credential usage, enforce MFA, and block suspicious AI‑driven activity.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Unit 42",
-    "sourceUrl": "https://unit42.paloaltonetworks.com/ai-assisted-cybercrime-analysis/",
-    "publishedAt": "2026-10-21T14:00:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "threat-actor-uses-ai-to-coordinate-credential-thef",
-      "article-5e6455",
-      "5e6455",
-      "threat-actor-uses-ai-to-coordinate-credential-theft-voip-fra"
-    ]
-  },
-  {
     "slug": "clickfix-exploits-leveraging-ai-installers-surge-341ff6",
     "title": "ClickFix Exploits Leveraging AI Installers Surge",
     "summary": "ClickFix attacks are increasing as criminals deploy fake AI installers, malicious search results, and trusted chatbot platforms to trick users into executing malware. The technique bypasses traditional defenses by mimicking legitimate AI tools, creating high user trust and reducing detection. Security teams should block suspicious AI installer downloads, enforce application whitelisting, and monitor chatbot traffic for anomalous behavior.",
@@ -1787,23 +1843,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "california-warns-students-after-ets-data-breach-7c991d",
-    "title": "California Warns Students After ETS Data Breach",
-    "summary": "California Department of Education warned students that Educational Testing Service suffered a months‑long data breach. The breach exposed student assessment data, prompting state officials to advise affected students to monitor personal information and consider credit‑monitoring services. No public patch or mitigation is required.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/california-warns-all-public-school-students-of-data-breach",
-    "publishedAt": "2026-10-20T19:20:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "california-warns-students-after-ets-data-breach",
-      "article-7c991d",
-      "7c991d"
-    ]
-  },
-  {
     "slug": "ex-openai-engineer-detained-over-conference-room-b-74d2ab",
     "title": "Ex‑OpenAI Engineer Detained Over Conference Room Bugging",
     "summary": "A judge ordered the detention of Abdulrahman Alfozan after his arrest for allegedly bugging an OpenAI conference room. The case involves allegations of covert surveillance linked to Saudi ties. No technical vulnerability or data breach is reported; the matter is a legal enforcement action.",
@@ -2211,24 +2250,6 @@ export const news: NewsBrief[] = [
       "escalation-of-malicious-calendar-invite-attacks",
       "article-2d683f",
       "2d683f"
-    ]
-  },
-  {
-    "slug": "wago-os-linux-web-based-management-privilege-escal-430032",
-    "title": "WAGO OS Linux Web‑Based Management Privilege Escalation Flaws",
-    "summary": "Two authenticated privilege‑escalation flaws in the Web‑Based Management interface of WAGO CC100, PFC100 G2, PFC200 G2, TP600, Edge Controller and WP400 devices allow low‑privileged users to bypass routing configuration and PROFIBUS authorization controls. Affected firmware versions are all releases 1.0.0 and above.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-02",
-    "publishedAt": "2026-10-20T12:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "wago-os-linux-web-based-management-privilege-escal",
-      "article-430032",
-      "430032",
-      "wago-os-linux-web-based-management-privilege-escalation-flaw"
     ]
   },
   {
@@ -6251,24 +6272,6 @@ export const news: NewsBrief[] = [
       "enforcing-permission-limits-for-ai-agents",
       "article-3a3c0d",
       "3a3c0d"
-    ]
-  },
-  {
-    "slug": "tp-link-faces-lawsuits-from-four-u-s-states-over-r-108196",
-    "title": "TP‑Link faces lawsuits from four U.S. states over router security claims",
-    "summary": "Four U.S. states—Florida, Iowa, Montana and Nebraska—filed lawsuits against TP‑Link Systems, alleging the company misled buyers about router security and its separation from China. TP‑Link denies the claims and says it will fight the suits in court.",
-    "category": "Cloud",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/tp-link-sued-by-four-more-us-states.html",
-    "publishedAt": "2026-10-09T13:22:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "tp-link-faces-lawsuits-from-four-u-s-states-over-r",
-      "article-108196",
-      "108196",
-      "tp-link-faces-lawsuits-from-four-u-s-states-over-router-secu"
     ]
   }
 ];

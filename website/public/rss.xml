@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Oct 2026 23:55:22 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 00:56:10 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>ASPM in the AI Era Part 2: Prioritize Exploitable Risks with Code-to-Cloud Context</title>
+      <link>https://secubuzz.com/news/aspm-in-the-ai-era-part-2-prioritize-exploitable-r-5291d5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/aspm-in-the-ai-era-part-2-prioritize-exploitable-r-5291d5</guid>
+      <description><![CDATA[ASPM in the AI Era Part 2 presents a framework that prioritizes exploitable risks by merging code, infrastructure, and runtime context. This integration shortens triage times and focuses security teams on high-impact vulnerabilities. Implementing the model requires aligning threat feeds, automating context aggregation, and updating risk assessments for cloud workloads.]]></description>
+      <pubDate>Thu, 22 Oct 2026 22:51:55 GMT</pubDate>
+      <source url="https://www.wiz.io/blog/aspm-ai-era-pt-2-prioritize-appsec-risk">Wiz Research</source>
+      <category>Cloud</category>
+    </item>
     <item>
       <title>Railway Warns Developers to Rotate Secrets After Suspicious Activity</title>
       <link>https://secubuzz.com/news/railway-warns-developers-to-rotate-secrets-after-s-57cfde</link>
@@ -14,6 +23,15 @@
       <description><![CDATA[Railway detected suspicious activity on its cloud platform that stores customer environment variables, urging developers to rotate secrets. The anomaly suggests possible unauthorized access to configuration data, though no exfiltration has been confirmed by the platform. Railway recommends enforcing secret rotation, enabling multi‑factor authentication, and auditing access logs for irregular activity.]]></description>
       <pubDate>Thu, 22 Oct 2026 21:25:31 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/railway-warns-devs-to-rotate-secrets-after-potential-breach/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Toronto Crime Stoppers Chapter Halts Operations After Data Breach Disclosure</title>
+      <link>https://secubuzz.com/news/toronto-crime-stoppers-chapter-halts-operations-af-284599</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/toronto-crime-stoppers-chapter-halts-operations-af-284599</guid>
+      <description><![CDATA[The Toronto chapter of Crime Stoppers disclosed a data breach timeline, revealing when it became aware of the compromise and subsequently halted operations. The breach exposed internal operational details, potentially compromising sensitive case information and undermining public trust in the organization. Security teams should conduct a forensic investigation, notify affected stakeholders, and implement stricter access controls to prevent future incidents.]]></description>
+      <pubDate>Thu, 22 Oct 2026 20:52:00 GMT</pubDate>
+      <source url="https://therecord.media/toronto-crime-tips-org-freezes-ops-after-breach">The Record</source>
       <category>Breach</category>
     </item>
     <item>
@@ -152,6 +170,15 @@
       <category>Policy</category>
     </item>
     <item>
+      <title>Machine Speed Attacks Enable Rapid Credential Theft</title>
+      <link>https://secubuzz.com/news/machine-speed-attacks-enable-rapid-credential-thef-6d4a61</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/machine-speed-attacks-enable-rapid-credential-thef-6d4a61</guid>
+      <description><![CDATA[Attackers exploit stolen GitHub tokens, malicious AI installers, and MFA phishing to steal credentials and exfiltrate data within minutes. The flaw lies in insufficient machine speed detection and automated response, allowing credential theft before detection; no CVE cited, exploitation is active and rapid. Organizations must implement faster detection, automated containment, and MFA hardening to mitigate.]]></description>
+      <pubDate>Thu, 22 Oct 2026 14:02:12 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/machine-speed-attacks-require-machine-speed-detection-and-response/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>INTERPOL Arrests 1,462 Suspects, Disrupts 10,909 Cybercrime Networks</title>
       <link>https://secubuzz.com/news/interpol-arrests-1-462-suspects-disrupts-10-909-cy-5e69d6</link>
       <guid isPermaLink="true">https://secubuzz.com/news/interpol-arrests-1-462-suspects-disrupts-10-909-cy-5e69d6</guid>
@@ -239,6 +266,15 @@
       <description><![CDATA[A flaw in the open source RingRTC library allows malicious callers to block call termination, disrupting communication services. The root cause is improper handling of call state transitions, enabling denial-of-service without authentication. Vendors should deploy the latest library update or apply the provided workaround to restore normal call termination.]]></description>
       <pubDate>Thu, 22 Oct 2026 12:34:31 GMT</pubDate>
       <source url="https://www.securityweek.com/signal-vulnerability-lets-malicious-callers-block-hang-ups/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Database Privilege Escalation Vulnerability in Siemens WinCC (CVE-2026-59241)</title>
+      <link>https://secubuzz.com/news/database-privilege-escalation-vulnerability-in-sie-42ff49</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/database-privilege-escalation-vulnerability-in-sie-42ff49</guid>
+      <description><![CDATA[A database privilege escalation vulnerability in Siemens WinCC versions V7.5, V8.0, and V8.1 permits an authenticated database user to execute arbitrary commands on the host system. The flaw carries a CVSS score of 8.8 and is identified as CVE-2026-59241, exposing critical infrastructure sectors to potential compromise. Siemens has released patched versions and recommends updating immediately or applying vendor‑issued mitigations.]]></description>
+      <pubDate>Thu, 22 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-13">CISA</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -420,42 +456,6 @@
       <pubDate>Thu, 22 Oct 2026 01:43:58 GMT</pubDate>
       <source url="https://cybersecuritynews.com/godaddy-revoking-tls-certificates/">Cyber Security News</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Chrome Adds Permission Prompt for Insecure HTTP Connections</title>
-      <link>https://secubuzz.com/news/chrome-adds-permission-prompt-for-insecure-http-co-3ac7f4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-adds-permission-prompt-for-insecure-http-co-3ac7f4</guid>
-      <description><![CDATA[Google Chrome now prompts users before establishing insecure HTTP connections, extending the Safe Browsing Enhanced Protection feature to all users. This update reduces risk from malware, phishing, and eavesdropping that can exploit unencrypted HTTP traffic. Teams should audit internal services for legacy HTTP endpoints and enforce HTTPS to maintain the protection.]]></description>
-      <pubDate>Wed, 21 Oct 2026 22:30:30 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/22/google-chrome-https-protection/">Help Net Security</source>
-      <category>Malware</category>
-    </item>
-    <item>
-      <title>Marvell, Microsoft, and Oracle Standardize FIPS 140-3 Level 3 HSM for Data Centers</title>
-      <link>https://secubuzz.com/news/marvell-microsoft-and-oracle-standardize-fips-140-722b58</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/marvell-microsoft-and-oracle-standardize-fips-140-722b58</guid>
-      <description><![CDATA[Marvell, Microsoft, and Oracle collaborate to standardize NIST FIPS 140-3 Level 3 integrated HSM for cloud and hyperscale data center infrastructure. The initiative aims to unify hardware security modules, ensuring consistent cryptographic protection across vendors and reducing configuration drift. Stakeholders should adopt the standardized HSM design, validate compliance with FIPS 140-3, and monitor firmware updates for security patches.]]></description>
-      <pubDate>Wed, 21 Oct 2026 20:14:42 GMT</pubDate>
-      <source url="https://www.darkreading.com/cloud-security/marvell-microsoft-oracle-standardize-data-center-hardware-security">Dark Reading</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>DLP Systems Detect Data Loss Only After It Occurs, Survey Shows</title>
-      <link>https://secubuzz.com/news/dlp-systems-detect-data-loss-only-after-it-occurs-1a7745</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/dlp-systems-detect-data-loss-only-after-it-occurs-1a7745</guid>
-      <description><![CDATA[A recent Cloud Security Alliance survey reveals that only 16% of respondents experienced data loss prevention (DLP) blocking incidents before data left the organization. The findings indicate that most DLP deployments fail to intercept exfiltration in real time, allowing data to escape unnoticed. Organizations should evaluate DLP policies, enforce stricter monitoring, and integrate real‑time anomaly detection to improve pre‑emptive protection.]]></description>
-      <pubDate>Wed, 21 Oct 2026 20:03:14 GMT</pubDate>
-      <source url="https://www.darkreading.com/cloud-security/cloud-security-alliance-survey-data-loss-prevention-detects-data-loss">Dark Reading</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>WhatsApp Chatbot Suppressed Privacy Regulator Guidance</title>
-      <link>https://secubuzz.com/news/whatsapp-chatbot-suppressed-privacy-regulator-guid-1b403a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/whatsapp-chatbot-suppressed-privacy-regulator-guid-1b403a</guid>
-      <description><![CDATA[WhatsApp’s chatbot received hidden directives that prevented it from recommending privacy regulators to users attempting to delete accounts. The manipulation exploits a logic flaw in the bot’s instruction parsing, allowing malicious actors to suppress compliance disclosures without triggering detection. WhatsApp has not released a patch; security teams should monitor for similar instruction tampering and enforce stricter input validation.]]></description>
-      <pubDate>Wed, 21 Oct 2026 18:49:04 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/news/2026/10/whatsapp-chatbot-privacy-regulators">Malwarebytes Labs</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
