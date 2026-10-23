@@ -64,6 +64,40 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "quest-diagnostics-potential-patient-data-breach-626ab6",
+    "title": "Quest Diagnostics Potential Patient Data Breach",
+    "summary": "Quest Diagnostics reported a potential breach of patient data in its lab service system after an attack. The incident involved unauthorized access to sensitive health records, but no specific vulnerability or CVE was disclosed, and the exploitation status remains unclear. The company advised affected patients to monitor accounts and recommended that security teams review access controls and audit logs.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/quest-diagnostics-network-intrusion",
+    "publishedAt": "2026-10-23T12:52:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "quest-diagnostics-potential-patient-data-breach",
+      "article-626ab6",
+      "626ab6"
+    ]
+  },
+  {
+    "slug": "hpe-arubaos-patches-eight-high-severity-rce-flaws-156206",
+    "title": "HPE ArubaOS Patches Eight High‑Severity RCE Flaws",
+    "summary": "Hewlett Packard Enterprise patched eight maximum‑severity authentication bypass and remote code execution flaws in its Aruba Operating System. The vulnerabilities allowed authenticated attackers to execute arbitrary code, but no CVE identifiers were cited, and the exploits were not confirmed in the wild. HPE released firmware updates and urged users to apply the patches immediately to mitigate the high‑risk RCE.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/",
+    "publishedAt": "2026-10-23T12:48:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hpe-arubaos-patches-eight-high-severity-rce-flaws",
+      "article-156206",
+      "156206"
+    ]
+  },
+  {
     "slug": "microsoft-365-accounts-compromised-at-79-organizat-603fb9",
     "title": "Microsoft 365 Accounts Compromised at 79 Organizations via Session Replay",
     "summary": "An attacker replayed stolen Microsoft 365 sign‑in sessions to access email accounts at 79 organizations, bypassing password authentication. The campaign, spanning July 14 to September 22, 2026, involved 497 successful sign‑ins and over 200,000 failed attempts, with attackers deploying hidden inbox rules to conceal activity. Microsoft has issued guidance to monitor session logs, enforce MFA, and revoke compromised credentials to mitigate further breaches.",
@@ -82,39 +116,75 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "crime-stoppers-chapter-stops-tips-after-breach-exp-542896",
-    "title": "Crime Stoppers Chapter Stops Tips After Breach Exposes Anonymous Tipster Data",
-    "summary": "A Crime Stoppers chapter stopped accepting tips after a breach exposed anonymous tipster information, compromising the anonymity promised to volunteers. The incident indicates insufficient data protection controls, likely due to weak access controls or inadequate encryption of tipster records. Security teams should enforce role-based access, encrypt sensitive fields, and conduct a rapid forensic review to identify the breach vector.",
-    "category": "Breach",
+    "slug": "emudhra-tls-certificates-compromised-by-weak-priva-468030",
+    "title": "eMudhra TLS Certificates Compromised by Weak Private Keys",
+    "summary": "eMudhra Limited’s eight TLS certificates contain private keys with only 3 to 8 bits of entropy, far below the 384‑bit standard for NIST P‑384 elliptic curve keys. The flaw arises from inadequate key generation, allowing trivial brute‑force recovery of the private keys. Immediate action requires revoking the compromised certificates, issuing new keys with full entropy, and enforcing strict key‑generation policies.",
+    "category": "Vulnerability",
     "severity": "MEDIUM",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/data-breaches/2026/10/crime-stoppers-chapter-freezes-tips-after-breach-breaks-anonymity-promise",
-    "publishedAt": "2026-10-23T09:57:48.000Z",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/compromised-tls-certificates.html",
+    "publishedAt": "2026-10-23T11:04:22.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "crime-stoppers-chapter-stops-tips-after-breach-exp",
-      "article-542896",
-      "542896",
-      "crime-stoppers-chapter-stops-tips-after-breach-exposes-anony"
+      "emudhra-tls-certificates-compromised-by-weak-priva",
+      "article-468030",
+      "468030",
+      "emudhra-tls-certificates-compromised-by-weak-private-keys"
     ]
   },
   {
-    "slug": "quest-diagnostics-discloses-unauthorized-access-to-36ac5f",
-    "title": "Quest Diagnostics Discloses Unauthorized Access to Quanum Lab Services Manager",
-    "summary": "Quest Diagnostics disclosed unauthorized access to its Quanum Lab Services Manager platform, where certain clients place test orders, exposing patient records. The breach resulted from a credential compromise that enabled attackers to authenticate and read data, with no exfiltration. Quest Diagnostics applied a patch, disabled accounts, and is conducting investigation while notifying patients and regulators.",
-    "category": "Breach",
+    "slug": "china-apt-uses-ai-pentest-tool-artex-in-connectwis-21b8af",
+    "title": "China APT Uses AI Pentest Tool Artex in ConnectWise Attacks",
+    "summary": "China APT leveraged the AI pentest tool Artex to target ConnectWise installations, compromising hundreds of organizations and achieving privileged access in some environments. The attack chain exploited automated credential discovery and lateral movement within the ConnectWise platform, enabling attackers to elevate privileges to operator level. ConnectWise has released a patch and recommends disabling the affected modules immediately.",
+    "category": "Malware",
     "severity": "HIGH",
     "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/quest-diagnostics-reports-cyber-breach-affecting-certain-patient-records/",
-    "publishedAt": "2026-10-23T08:25:06.000Z",
+    "sourceUrl": "https://www.securityweek.com/china-apt-uses-ai-pentest-tool-artex-in-connectwise-attacks/",
+    "publishedAt": "2026-10-23T10:31:16.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "quest-diagnostics-discloses-unauthorized-access-to",
-      "article-36ac5f",
-      "36ac5f",
-      "quest-diagnostics-discloses-unauthorized-access-to-quanum-la"
+      "china-apt-uses-ai-pentest-tool-artex-in-connectwis",
+      "article-21b8af",
+      "21b8af",
+      "china-apt-uses-ai-pentest-tool-artex-in-connectwise-attacks"
+    ]
+  },
+  {
+    "slug": "attackers-exploit-third-arista-vco-zero-day-in-fou-7f0770",
+    "title": "Attackers Exploit Third Arista VCO Zero-Day in Four Months",
+    "summary": "Attackers have exploited a third‑party Arista VCO zero‑day SQL injection flaw, gaining privileged internal functionality and operator privileges across multiple deployments. The critical vulnerability allows unauthenticated remote code execution via crafted SQL queries and has been actively leveraged in the wild for over four months. Arista has issued a patch; security teams should apply it immediately and disable exposed interfaces.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/attackers-exploit-third-velocloud-orchestrator-zero-day-in-four-months/",
+    "publishedAt": "2026-10-23T09:58:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "attackers-exploit-third-arista-vco-zero-day-in-fou",
+      "article-7f0770",
+      "7f0770",
+      "attackers-exploit-third-arista-vco-zero-day-in-four-months"
+    ]
+  },
+  {
+    "slug": "sbi-notifies-customers-after-personal-data-exposur-6bea26",
+    "title": "SBI Notifies Customers After Personal Data Exposure",
+    "summary": "State Bank of India notified customers after a cyber incident that exposed personal information found on the dark web. Investigators are examining the suspected leak, while the bank confirmed that account balances and funds remain secure. Customers should monitor account activity and change passwords, and the bank has issued email and WhatsApp alerts to affected users.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/sbi-notifies-customers-with-cyber-incident/",
+    "publishedAt": "2026-10-23T09:20:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sbi-notifies-customers-after-personal-data-exposur",
+      "article-6bea26",
+      "6bea26",
+      "sbi-notifies-customers-after-personal-data-exposure"
     ]
   },
   {
@@ -352,42 +422,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "emudhra-private-key-compromise-exposes-certificate-1fb925",
-    "title": "eMudhra Private Key Compromise Exposes Certificate Integrity",
-    "summary": "A security researcher revealed that eMudhra’s private key was the number four instead of a random 384‑bit value, compromising the integrity of its digital certificates. The flaw stems from inadequate key generation, allowing attackers to predict or reconstruct the key, potentially enabling forged certificates. eMudhra must implement proper cryptographic key generation and audit processes to prevent future incidents.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/indian-tech-company-announces-withdrawal-certificate-business-incident",
-    "publishedAt": "2026-10-22T18:46:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "emudhra-private-key-compromise-exposes-certificate",
-      "article-1fb925",
-      "1fb925",
-      "emudhra-private-key-compromise-exposes-certificate-integrity"
-    ]
-  },
-  {
-    "slug": "emudhra-withdraws-from-ssl-tls-business-after-gues-52b758",
-    "title": "eMudhra Withdraws from SSL/TLS Business After Guessable Intermediate Keys",
-    "summary": "eMudhra announced withdrawal from its global SSL/TLS certificate business after a researcher recovered eight intermediate CA private keys that were easily guessable. The vulnerability arises from weak key entropy, allowing attackers to derive the keys and issue fraudulent certificates. The company will replace affected certificates with free ones from partners and must enforce stronger key generation practices.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/emudhra-to-exit-global-ssltls-business.html",
-    "publishedAt": "2026-10-22T18:12:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "emudhra-withdraws-from-ssl-tls-business-after-gues",
-      "article-52b758",
-      "52b758",
-      "emudhra-withdraws-from-ssl-tls-business-after-guessable-inte"
-    ]
-  },
-  {
     "slug": "critical-php-vulnerability-disclosed-61e462",
     "title": "Critical PHP Vulnerability Disclosed",
     "summary": "A critical vulnerability in PHP was disclosed, affecting web applications that rely on the language. The flaw allows attackers to execute arbitrary code through malformed input, with a CVSS score of 9.2, and is actively exploited in the wild. Arbitrary patches are available from the PHP development team; administrators should apply the latest release and enforce input validation to mitigate the risk.",
@@ -402,23 +436,6 @@ export const news: NewsBrief[] = [
       "critical-php-vulnerability-disclosed",
       "article-61e462",
       "61e462"
-    ]
-  },
-  {
-    "slug": "arista-vco-zero-day-exploited-in-attacks-27fea5",
-    "title": "Arista VCO Zero-Day Exploited in Attacks",
-    "summary": "Arista Networks disclosed a zero‑day vulnerability in VeloCloud Orchestrator (VCO) On‑Prem deployments that was actively exploited in recent attacks. The flaw permits remote code execution via malformed configuration files, with a CVSS score of 8.7, enabling control plane compromise. Arista released a patch in the latest firmware; operators should immediately apply the update and monitor logs for unauthorized changes.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/",
-    "publishedAt": "2026-10-22T17:18:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "arista-vco-zero-day-exploited-in-attacks",
-      "article-27fea5",
-      "27fea5"
     ]
   },
   {
@@ -455,24 +472,6 @@ export const news: NewsBrief[] = [
       "article-318930",
       "318930",
       "meta-ordered-to-pay-25-billion-for-misleading-privacy-claims"
-    ]
-  },
-  {
-    "slug": "microsoft-blames-connectwise-attacks-on-chinese-st-2293a1",
-    "title": "Microsoft Blames ConnectWise Attacks on Chinese State Hacker Using ARTEX AI Agents",
-    "summary": "Microsoft attributes a recent ConnectWise supply‑chain compromise to a Chinese state‑aligned hacking group deploying ARTEX AI agents. The attackers leveraged automated credential‑stealing tools to inject malicious code into ConnectWise updates, enabling remote execution on client systems. Security teams should verify update integrity, apply vendor patches, and monitor for anomalous outbound traffic from affected endpoints.",
-    "category": "Malware",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/china-cyber-connectwise-ai",
-    "publishedAt": "2026-10-22T16:30:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-blames-connectwise-attacks-on-chinese-st",
-      "article-2293a1",
-      "2293a1",
-      "microsoft-blames-connectwise-attacks-on-chinese-state-hacker"
     ]
   },
   {
@@ -803,6 +802,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "siemens-industrial-edge-app-publisher-vulnerabilit-42ff49",
+    "title": "Siemens Industrial Edge App Publisher Vulnerability Chain Enables RCE",
+    "summary": "A vulnerability chain in Siemens Industrial Edge App Publisher allows network attackers to impersonate the management server and execute arbitrary code via Node.js integration. The flaws stem from improper certificate validation and unescaped backend data rendering, enabling code execution with a CVSS score of 8.3. Siemens has issued a patch; users should upgrade to the newest version to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-02",
+    "publishedAt": "2026-10-22T12:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "siemens-industrial-edge-app-publisher-vulnerabilit",
+      "article-42ff49",
+      "42ff49",
+      "siemens-industrial-edge-app-publisher-vulnerability-chain-en"
+    ]
+  },
+  {
     "slug": "siemens-ruggedcom-ape1808-devices-affected-by-mult-42ff49",
     "title": "Siemens RUGGEDCOM APE1808 Devices Affected by Multiple CVEs",
     "summary": "Siemens RUGGEDCOM APE1808 devices are affected by multiple CVE‑2026‑33387 to CVE‑2026‑33920 vulnerabilities that enable template engine injection, CSRF, and authorization bypass. The flaws stem from improper neutralization of template elements, lack of administrator control, and cross‑site request forgery, posing medium‑to‑high risk for credential theft and system compromise. Siemens recommends contacting support for patch updates; operators should apply the latest firmware to eliminate the high‑severity vulnerabilities.",
@@ -836,27 +853,6 @@ export const news: NewsBrief[] = [
       "article-42ff49",
       "42ff49",
       "siemens-simatic-s7-1500-cpu-1518-f-4-pn-dp-mfp-firmware-vuln"
-    ]
-  },
-  {
-    "slug": "siemens-industrial-edge-device-kit-path-traversal-42ff49",
-    "title": "Siemens Industrial Edge Device Kit Path Traversal Vulnerabilities CVE-2026-44414/44415",
-    "summary": "Path traversal vulnerabilities (CVE-2026-44414 and CVE-2026-44415) in Siemens Industrial Edge Device Kit arm64 versions V1.10–V1.12 allow authenticated remote attackers to read arbitrary files on the device. The flaw, rated CVSS 10, could lead to disclosure of sensitive configuration data and potential lateral movement. Siemens has released patched firmware and recommends updating to the latest version or applying vendor mitigations.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-09",
-    "publishedAt": "2026-10-22T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-44414",
-      "CVE-2026-44415"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "siemens-industrial-edge-device-kit-path-traversal",
-      "article-42ff49",
-      "42ff49",
-      "siemens-industrial-edge-device-kit-path-traversal-vulnerabil"
     ]
   },
   {
@@ -1167,24 +1163,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "godaddy-revokes-404-607-tls-certificates-over-poli-543d19",
-    "title": "GoDaddy Revokes 404,607 TLS Certificates Over Policy Violations",
-    "summary": "GoDaddy revoked 404,607 SSL/TLS certificates after discovering that issued certificates did not align with its published policies, breaching compliance deadlines. The flaw stemmed from a misconfiguration in the certificate issuance process, exposing customers to potential trust issues. GoDaddy has issued a notice and updated revocation procedures to prevent future policy violations.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/godaddy-revoking-tls-certificates/",
-    "publishedAt": "2026-10-22T01:43:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "godaddy-revokes-404-607-tls-certificates-over-poli",
-      "article-543d19",
-      "543d19",
-      "godaddy-revokes-404-607-tls-certificates-over-policy-violati"
-    ]
-  },
-  {
     "slug": "chrome-adds-permission-prompt-for-insecure-http-co-3ac7f4",
     "title": "Chrome Adds Permission Prompt for Insecure HTTP Connections",
     "summary": "Google Chrome now prompts users before establishing insecure HTTP connections, extending the Safe Browsing Enhanced Protection feature to all users. This update reduces risk from malware, phishing, and eavesdropping that can exploit unencrypted HTTP traffic. Teams should audit internal services for legacy HTTP endpoints and enforce HTTPS to maintain the protection.",
@@ -1469,24 +1447,6 @@ export const news: NewsBrief[] = [
       "context-bombs-reduce-ai-attack-success-by-91",
       "article-20f53f",
       "20f53f"
-    ]
-  },
-  {
-    "slug": "rapid7-q3-analysis-reveals-high-severity-flaws-exp-14296c",
-    "title": "Rapid7 Q3 Analysis Reveals High‑Severity Flaws Exploited Within Three Days",
-    "summary": "Rapid7’s Q3 analysis shows high‑severity flaws were exploited within an average of three days, highlighting rapid attack cycles. Attackers focus on vulnerabilities with CVSS scores above 7.0, using public proof‑of‑concept exploits for remote code execution. Teams must prioritize patching, enable automated scanning, and enforce least‑privilege controls to close the exploitation window.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/high-severity-flaws-exploited-in-three-days-as-ransomware-dominates-q3-rapid7/",
-    "publishedAt": "2026-10-21T14:45:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rapid7-q3-analysis-reveals-high-severity-flaws-exp",
-      "article-14296c",
-      "14296c",
-      "rapid7-q3-analysis-reveals-high-severity-flaws-exploited-wit"
     ]
   },
   {
@@ -2255,24 +2215,6 @@ export const news: NewsBrief[] = [
       "article-60db8d",
       "60db8d",
       "eu-cyber-resilience-act-does-not-mandate-fixes-for-fridge-co"
-    ]
-  },
-  {
-    "slug": "chinese-speaking-attacker-uses-ai-pen-test-tool-ca-66be69",
-    "title": "Chinese-Speaking Attacker Uses AI Pen-Test Tool Cairn to Compromise Hundreds of Websites",
-    "summary": "An attacker leveraged the AI-driven pen‑test tool Cairn to automate attacks against hundreds of global websites, targeting high-profile clients such as John Deere, SharkNinja, and Cummins. The tool enabled rapid exploitation of web application vulnerabilities, resulting in data theft and service disruption.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/hackers-abuse-ai-pen-test-tool-cairn",
-    "publishedAt": "2026-10-20T14:36:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chinese-speaking-attacker-uses-ai-pen-test-tool-ca",
-      "article-66be69",
-      "66be69",
-      "chinese-speaking-attacker-uses-ai-pen-test-tool-cairn-to-com"
     ]
   },
   {

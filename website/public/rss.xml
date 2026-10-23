@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Oct 2026 13:49:10 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 15:09:50 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>PHP Vulnerability Exploits Core Parsing Engine</title>
@@ -35,6 +35,24 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Quest Diagnostics Potential Patient Data Breach</title>
+      <link>https://secubuzz.com/news/quest-diagnostics-potential-patient-data-breach-626ab6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/quest-diagnostics-potential-patient-data-breach-626ab6</guid>
+      <description><![CDATA[Quest Diagnostics reported a potential breach of patient data in its lab service system after an attack. The incident involved unauthorized access to sensitive health records, but no specific vulnerability or CVE was disclosed, and the exploitation status remains unclear. The company advised affected patients to monitor accounts and recommended that security teams review access controls and audit logs.]]></description>
+      <pubDate>Fri, 23 Oct 2026 12:52:00 GMT</pubDate>
+      <source url="https://therecord.media/quest-diagnostics-network-intrusion">The Record</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>HPE ArubaOS Patches Eight High‑Severity RCE Flaws</title>
+      <link>https://secubuzz.com/news/hpe-arubaos-patches-eight-high-severity-rce-flaws-156206</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hpe-arubaos-patches-eight-high-severity-rce-flaws-156206</guid>
+      <description><![CDATA[Hewlett Packard Enterprise patched eight maximum‑severity authentication bypass and remote code execution flaws in its Aruba Operating System. The vulnerabilities allowed authenticated attackers to execute arbitrary code, but no CVE identifiers were cited, and the exploits were not confirmed in the wild. HPE released firmware updates and urged users to apply the patches immediately to mitigate the high‑risk RCE.]]></description>
+      <pubDate>Fri, 23 Oct 2026 12:48:00 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Microsoft 365 Accounts Compromised at 79 Organizations via Session Replay</title>
       <link>https://secubuzz.com/news/microsoft-365-accounts-compromised-at-79-organizat-603fb9</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-365-accounts-compromised-at-79-organizat-603fb9</guid>
@@ -44,21 +62,39 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>Crime Stoppers Chapter Stops Tips After Breach Exposes Anonymous Tipster Data</title>
-      <link>https://secubuzz.com/news/crime-stoppers-chapter-stops-tips-after-breach-exp-542896</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/crime-stoppers-chapter-stops-tips-after-breach-exp-542896</guid>
-      <description><![CDATA[A Crime Stoppers chapter stopped accepting tips after a breach exposed anonymous tipster information, compromising the anonymity promised to volunteers. The incident indicates insufficient data protection controls, likely due to weak access controls or inadequate encryption of tipster records. Security teams should enforce role-based access, encrypt sensitive fields, and conduct a rapid forensic review to identify the breach vector.]]></description>
-      <pubDate>Fri, 23 Oct 2026 09:57:48 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/data-breaches/2026/10/crime-stoppers-chapter-freezes-tips-after-breach-breaks-anonymity-promise">Malwarebytes Labs</source>
-      <category>Breach</category>
+      <title>eMudhra TLS Certificates Compromised by Weak Private Keys</title>
+      <link>https://secubuzz.com/news/emudhra-tls-certificates-compromised-by-weak-priva-468030</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/emudhra-tls-certificates-compromised-by-weak-priva-468030</guid>
+      <description><![CDATA[eMudhra Limited’s eight TLS certificates contain private keys with only 3 to 8 bits of entropy, far below the 384‑bit standard for NIST P‑384 elliptic curve keys. The flaw arises from inadequate key generation, allowing trivial brute‑force recovery of the private keys. Immediate action requires revoking the compromised certificates, issuing new keys with full entropy, and enforcing strict key‑generation policies.]]></description>
+      <pubDate>Fri, 23 Oct 2026 11:04:22 GMT</pubDate>
+      <source url="https://www.schneier.com/blog/archives/2026/10/compromised-tls-certificates.html">Schneier on Security</source>
+      <category>Vulnerability</category>
     </item>
     <item>
-      <title>Quest Diagnostics Discloses Unauthorized Access to Quanum Lab Services Manager</title>
-      <link>https://secubuzz.com/news/quest-diagnostics-discloses-unauthorized-access-to-36ac5f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/quest-diagnostics-discloses-unauthorized-access-to-36ac5f</guid>
-      <description><![CDATA[Quest Diagnostics disclosed unauthorized access to its Quanum Lab Services Manager platform, where certain clients place test orders, exposing patient records. The breach resulted from a credential compromise that enabled attackers to authenticate and read data, with no exfiltration. Quest Diagnostics applied a patch, disabled accounts, and is conducting investigation while notifying patients and regulators.]]></description>
-      <pubDate>Fri, 23 Oct 2026 08:25:06 GMT</pubDate>
-      <source url="https://www.securityweek.com/quest-diagnostics-reports-cyber-breach-affecting-certain-patient-records/">SecurityWeek</source>
+      <title>China APT Uses AI Pentest Tool Artex in ConnectWise Attacks</title>
+      <link>https://secubuzz.com/news/china-apt-uses-ai-pentest-tool-artex-in-connectwis-21b8af</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/china-apt-uses-ai-pentest-tool-artex-in-connectwis-21b8af</guid>
+      <description><![CDATA[China APT leveraged the AI pentest tool Artex to target ConnectWise installations, compromising hundreds of organizations and achieving privileged access in some environments. The attack chain exploited automated credential discovery and lateral movement within the ConnectWise platform, enabling attackers to elevate privileges to operator level. ConnectWise has released a patch and recommends disabling the affected modules immediately.]]></description>
+      <pubDate>Fri, 23 Oct 2026 10:31:16 GMT</pubDate>
+      <source url="https://www.securityweek.com/china-apt-uses-ai-pentest-tool-artex-in-connectwise-attacks/">SecurityWeek</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Attackers Exploit Third Arista VCO Zero-Day in Four Months</title>
+      <link>https://secubuzz.com/news/attackers-exploit-third-arista-vco-zero-day-in-fou-7f0770</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/attackers-exploit-third-arista-vco-zero-day-in-fou-7f0770</guid>
+      <description><![CDATA[Attackers have exploited a third‑party Arista VCO zero‑day SQL injection flaw, gaining privileged internal functionality and operator privileges across multiple deployments. The critical vulnerability allows unauthenticated remote code execution via crafted SQL queries and has been actively leveraged in the wild for over four months. Arista has issued a patch; security teams should apply it immediately and disable exposed interfaces.]]></description>
+      <pubDate>Fri, 23 Oct 2026 09:58:34 GMT</pubDate>
+      <source url="https://www.securityweek.com/attackers-exploit-third-velocloud-orchestrator-zero-day-in-four-months/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>SBI Notifies Customers After Personal Data Exposure</title>
+      <link>https://secubuzz.com/news/sbi-notifies-customers-after-personal-data-exposur-6bea26</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sbi-notifies-customers-after-personal-data-exposur-6bea26</guid>
+      <description><![CDATA[State Bank of India notified customers after a cyber incident that exposed personal information found on the dark web. Investigators are examining the suspected leak, while the bank confirmed that account balances and funds remain secure. Customers should monitor account activity and change passwords, and the bank has issued email and WhatsApp alerts to affected users.]]></description>
+      <pubDate>Fri, 23 Oct 2026 09:20:41 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/sbi-notifies-customers-with-cyber-incident/">Cyber Security News</source>
       <category>Breach</category>
     </item>
     <item>
@@ -179,39 +215,12 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>eMudhra Private Key Compromise Exposes Certificate Integrity</title>
-      <link>https://secubuzz.com/news/emudhra-private-key-compromise-exposes-certificate-1fb925</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/emudhra-private-key-compromise-exposes-certificate-1fb925</guid>
-      <description><![CDATA[A security researcher revealed that eMudhra’s private key was the number four instead of a random 384‑bit value, compromising the integrity of its digital certificates. The flaw stems from inadequate key generation, allowing attackers to predict or reconstruct the key, potentially enabling forged certificates. eMudhra must implement proper cryptographic key generation and audit processes to prevent future incidents.]]></description>
-      <pubDate>Thu, 22 Oct 2026 18:46:00 GMT</pubDate>
-      <source url="https://therecord.media/indian-tech-company-announces-withdrawal-certificate-business-incident">The Record</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>eMudhra Withdraws from SSL/TLS Business After Guessable Intermediate Keys</title>
-      <link>https://secubuzz.com/news/emudhra-withdraws-from-ssl-tls-business-after-gues-52b758</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/emudhra-withdraws-from-ssl-tls-business-after-gues-52b758</guid>
-      <description><![CDATA[eMudhra announced withdrawal from its global SSL/TLS certificate business after a researcher recovered eight intermediate CA private keys that were easily guessable. The vulnerability arises from weak key entropy, allowing attackers to derive the keys and issue fraudulent certificates. The company will replace affected certificates with free ones from partners and must enforce stronger key generation practices.]]></description>
-      <pubDate>Thu, 22 Oct 2026 18:12:43 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/emudhra-to-exit-global-ssltls-business.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>Critical PHP Vulnerability Disclosed</title>
       <link>https://secubuzz.com/news/critical-php-vulnerability-disclosed-61e462</link>
       <guid isPermaLink="true">https://secubuzz.com/news/critical-php-vulnerability-disclosed-61e462</guid>
       <description><![CDATA[A critical vulnerability in PHP was disclosed, affecting web applications that rely on the language. The flaw allows attackers to execute arbitrary code through malformed input, with a CVSS score of 9.2, and is actively exploited in the wild. Arbitrary patches are available from the PHP development team; administrators should apply the latest release and enforce input validation to mitigate the risk.]]></description>
       <pubDate>Thu, 22 Oct 2026 18:04:32 GMT</pubDate>
       <source url="https://blog.talosintelligence.com/i-had-plans-for-that-second/">Cisco Talos</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Arista VCO Zero-Day Exploited in Attacks</title>
-      <link>https://secubuzz.com/news/arista-vco-zero-day-exploited-in-attacks-27fea5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/arista-vco-zero-day-exploited-in-attacks-27fea5</guid>
-      <description><![CDATA[Arista Networks disclosed a zero‑day vulnerability in VeloCloud Orchestrator (VCO) On‑Prem deployments that was actively exploited in recent attacks. The flaw permits remote code execution via malformed configuration files, with a CVSS score of 8.7, enabling control plane compromise. Arista released a patch in the latest firmware; operators should immediately apply the update and monitor logs for unauthorized changes.]]></description>
-      <pubDate>Thu, 22 Oct 2026 17:18:22 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/">BleepingComputer</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -231,15 +240,6 @@
       <pubDate>Thu, 22 Oct 2026 16:59:22 GMT</pubDate>
       <source url="https://www.malwarebytes.com/blog/news/2026/10/facebooks-misleading-privacy-claims-land-meta-a-25-billion-penalty">Malwarebytes Labs</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Microsoft Blames ConnectWise Attacks on Chinese State Hacker Using ARTEX AI Agents</title>
-      <link>https://secubuzz.com/news/microsoft-blames-connectwise-attacks-on-chinese-st-2293a1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-blames-connectwise-attacks-on-chinese-st-2293a1</guid>
-      <description><![CDATA[Microsoft attributes a recent ConnectWise supply‑chain compromise to a Chinese state‑aligned hacking group deploying ARTEX AI agents. The attackers leveraged automated credential‑stealing tools to inject malicious code into ConnectWise updates, enabling remote execution on client systems. Security teams should verify update integrity, apply vendor patches, and monitor for anomalous outbound traffic from affected endpoints.]]></description>
-      <pubDate>Thu, 22 Oct 2026 16:30:00 GMT</pubDate>
-      <source url="https://therecord.media/china-cyber-connectwise-ai">The Record</source>
-      <category>Malware</category>
     </item>
     <item>
       <title>Gcore Blocks php2shell Vulnerabilities with Free WAAP Plan for Public Agencies</title>
@@ -404,6 +404,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Siemens Industrial Edge App Publisher Vulnerability Chain Enables RCE</title>
+      <link>https://secubuzz.com/news/siemens-industrial-edge-app-publisher-vulnerabilit-42ff49</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/siemens-industrial-edge-app-publisher-vulnerabilit-42ff49</guid>
+      <description><![CDATA[A vulnerability chain in Siemens Industrial Edge App Publisher allows network attackers to impersonate the management server and execute arbitrary code via Node.js integration. The flaws stem from improper certificate validation and unescaped backend data rendering, enabling code execution with a CVSS score of 8.3. Siemens has issued a patch; users should upgrade to the newest version to mitigate the risk.]]></description>
+      <pubDate>Thu, 22 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-02">CISA</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Siemens RUGGEDCOM APE1808 Devices Affected by Multiple CVEs</title>
       <link>https://secubuzz.com/news/siemens-ruggedcom-ape1808-devices-affected-by-mult-42ff49</link>
       <guid isPermaLink="true">https://secubuzz.com/news/siemens-ruggedcom-ape1808-devices-affected-by-mult-42ff49</guid>
@@ -419,15 +428,6 @@
       <description><![CDATA[Multiple vulnerabilities in the GNU/Linux subsystem of Siemens SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP firmware V3.1.7 allow attackers to gain elevated privileges on the device. The flaw, rated CVSS 10, is a critical flaw that could enable remote code execution if exploited. Siemens has released firmware updates for affected models and recommends applying the patch or following the vendor’s mitigations.]]></description>
       <pubDate>Thu, 22 Oct 2026 12:00:00 GMT</pubDate>
       <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-11">CISA</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Siemens Industrial Edge Device Kit Path Traversal Vulnerabilities CVE-2026-44414/44415</title>
-      <link>https://secubuzz.com/news/siemens-industrial-edge-device-kit-path-traversal-42ff49</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/siemens-industrial-edge-device-kit-path-traversal-42ff49</guid>
-      <description><![CDATA[Path traversal vulnerabilities (CVE-2026-44414 and CVE-2026-44415) in Siemens Industrial Edge Device Kit arm64 versions V1.10–V1.12 allow authenticated remote attackers to read arbitrary files on the device. The flaw, rated CVSS 10, could lead to disclosure of sensitive configuration data and potential lateral movement. Siemens has released patched firmware and recommends updating to the latest version or applying vendor mitigations.]]></description>
-      <pubDate>Thu, 22 Oct 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-09">CISA</source>
       <category>Vulnerability</category>
     </item>
     <item>
