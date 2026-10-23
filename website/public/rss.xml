@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Oct 2026 07:56:09 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 10:10:15 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>11 Million Email Addresses Stolen from Capcom ID</title>
+      <link>https://secubuzz.com/news/11-million-email-addresses-stolen-from-capcom-id-59329e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/11-million-email-addresses-stolen-from-capcom-id-59329e</guid>
+      <description><![CDATA[11 million email addresses were stolen from Capcom ID and passwords changed for 196 accounts. The breach exposed personal identifiers and could enable phishing campaigns, allowing attackers to access user credentials via a compromised login portal. Capcom should enforce multi‑factor authentication, reset passwords, and monitor for suspicious activity.]]></description>
+      <pubDate>Fri, 23 Oct 2026 08:34:14 GMT</pubDate>
+      <source url="https://www.securityweek.com/11-million-impacted-by-capcom-data-breach/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Quest Diagnostics Discloses Unauthorized Access to Quanum Lab Services Manager</title>
+      <link>https://secubuzz.com/news/quest-diagnostics-discloses-unauthorized-access-to-36ac5f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/quest-diagnostics-discloses-unauthorized-access-to-36ac5f</guid>
+      <description><![CDATA[Quest Diagnostics disclosed unauthorized access to its Quanum Lab Services Manager platform, where certain clients place test orders, exposing patient records. The breach resulted from a credential compromise that enabled attackers to authenticate and read data, with no exfiltration. Quest Diagnostics applied a patch, disabled accounts, and is conducting investigation while notifying patients and regulators.]]></description>
+      <pubDate>Fri, 23 Oct 2026 08:25:06 GMT</pubDate>
+      <source url="https://www.securityweek.com/quest-diagnostics-reports-cyber-breach-affecting-certain-patient-records/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Top 10 Email Encryption Services Ranked for 2026</title>
+      <link>https://secubuzz.com/news/top-10-email-encryption-services-ranked-for-2026-5a5cac</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/top-10-email-encryption-services-ranked-for-2026-5a5cac</guid>
+      <description><![CDATA[The article ranks ten email encryption services for 2026, evaluating sender-side automation and recipient experience. It assesses policy integration, DLP triggers, one-click protection, and usability metrics, highlighting services that balance strong cryptography with user convenience. Security teams should review the rankings to select solutions that meet compliance requirements and streamline secure communication workflows.]]></description>
+      <pubDate>Fri, 23 Oct 2026 08:22:52 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/best-email-encryption-services/">Cyber Security News</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Oracle Issues Emergency Java Update for Critical 9.1 HTTPS Trust Vulnerability</title>
+      <link>https://secubuzz.com/news/oracle-issues-emergency-java-update-for-critical-9-3aa4e5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/oracle-issues-emergency-java-update-for-critical-9-3aa4e5</guid>
+      <description><![CDATA[CVE‑2026‑91403 corrupts Java’s HTTPS trust chain, enabling attackers to forge intermediate certificates against Oracle Java SE and GraalVM. With a CVSS 3.1 score of 9.1, the flaw is actively exploitable and can lead to remote code execution. Oracle released an emergency patch blocking eMudhra certificates; apply immediately and verify trust settings.]]></description>
+      <pubDate>Fri, 23 Oct 2026 06:01:47 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/emergency-java-update/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Critical Cisco Expressway Vulnerability Enables Remote Code Execution Attacks</title>
       <link>https://secubuzz.com/news/critical-cisco-expressway-vulnerability-enables-re-10092d</link>
@@ -87,15 +123,6 @@
       <pubDate>Thu, 22 Oct 2026 20:33:10 GMT</pubDate>
       <source url="https://www.darkreading.com/insider-threats/texas-laptop-farms-north-korean-it-workers">Dark Reading</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Capcom Breach Exposes 11.7 Million Customer Accounts</title>
-      <link>https://secubuzz.com/news/capcom-breach-exposes-11-7-million-customer-accoun-7475b3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/capcom-breach-exposes-11-7-million-customer-accoun-7475b3</guid>
-      <description><![CDATA[Capcom confirmed a breach of its CAPCOM ID membership service, exposing over 11.7 million customer email addresses and related data. Attackers accessed user credentials through an undisclosed vulnerability, resulting in mass credential compromise; no public exploit disclosed and potentially enabling further phishing campaigns. Security teams should enforce MFA, rotate passwords, and conduct a audit of access logs to detect any lingering threats.]]></description>
-      <pubDate>Thu, 22 Oct 2026 20:22:45 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/capcom-confirms-data-breach-affecting-117-million-accounts/">BleepingComputer</source>
-      <category>Breach</category>
     </item>
     <item>
       <title>EU Supermarkets Hit by Outdated Refrigerator Firmware</title>
@@ -429,33 +456,6 @@
       <pubDate>Thu, 22 Oct 2026 11:18:09 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/22/broadcom-arcot-scam-defense/">Help Net Security</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Android Banking Trojan Replaces Legitimate Apps with Malicious Copies</title>
-      <link>https://secubuzz.com/news/android-banking-trojan-replaces-legitimate-apps-wi-bf7e97</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/android-banking-trojan-replaces-legitimate-apps-wi-bf7e97</guid>
-      <description><![CDATA[A new Android banking Trojan, Hirudo, removes legitimate banking applications and installs modified copies that retain the original name and version, enabling fraud while evading security checks. The malware injects malicious code into the app package, exploiting the Android package manager’s trust model to bypass integrity verification. Security teams should update device policies to block unauthorized app installations and verify app signatures before deployment.]]></description>
-      <pubDate>Thu, 22 Oct 2026 11:13:18 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/new-android-malware-2/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Top 10 Best Secure File Sharing Platforms in 2026</title>
-      <link>https://secubuzz.com/news/top-10-best-secure-file-sharing-platforms-in-2026-91feac</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/top-10-best-secure-file-sharing-platforms-in-2026-91feac</guid>
-      <description><![CDATA[The article presents a 2026 ranking of ten secure file‑sharing platforms, evaluating them on consumer usability and enterprise controls such as classification‑aware policy, external‑access governance, and audit resilience. The selection criteria emphasize regulatory compliance, audit survivability, and user‑friendly interfaces for both individuals and organizations. Security teams should review the ranking to align platform choices with their compliance and usability requirements.]]></description>
-      <pubDate>Thu, 22 Oct 2026 10:16:44 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/best-secure-file-sharing/">Cyber Security News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Atlassian Issues Security Patch for 176 Vulnerabilities in Jira and Confluence</title>
-      <link>https://secubuzz.com/news/atlassian-issues-security-patch-for-176-vulnerabil-59fd7a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/atlassian-issues-security-patch-for-176-vulnerabil-59fd7a</guid>
-      <description><![CDATA[Atlassian’s October 2026 bulletin addresses 176 flaw entries across Jira, Confluence, Bamboo, Bitbucket, and Crowd, including 162 high‑severity and 14 critical third‑party issues. The update fixes vulnerabilities that could allow remote code execution or privilege escalation in these collaboration tools. Customers are urged to apply the latest releases immediately to eliminate exploitable weaknesses.]]></description>
-      <pubDate>Thu, 22 Oct 2026 10:12:18 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/atlassian-security-update/">Cyber Security News</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

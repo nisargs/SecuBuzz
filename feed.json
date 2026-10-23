@@ -1,5 +1,71 @@
 [
   {
+    "id": "https://www.securityweek.com/11-million-impacted-by-capcom-data-breach/",
+    "sourceUrl": "https://www.securityweek.com/11-million-impacted-by-capcom-data-breach/",
+    "title": "11 Million Email Addresses Stolen from Capcom ID",
+    "headline": "11 Million Email Addresses Stolen from Capcom ID",
+    "summary": "11 million email addresses were stolen from Capcom ID and passwords changed for 196 accounts. The breach exposed personal identifiers and could enable phishing campaigns, allowing attackers to access user credentials via a compromised login portal. Capcom should enforce multi‑factor authentication, reset passwords, and monitor for suspicious activity.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-23T08:34:14.000Z",
+    "url": "https://www.securityweek.com/11-million-impacted-by-capcom-data-breach/",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/capcom-confirms-data-breach-affecting-117-million-accounts/"
+      },
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/hackers-steal-1-8-million-records-from-nikkei/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.securityweek.com/quest-diagnostics-reports-cyber-breach-affecting-certain-patient-records/",
+    "sourceUrl": "https://www.securityweek.com/quest-diagnostics-reports-cyber-breach-affecting-certain-patient-records/",
+    "title": "Quest Diagnostics Discloses Unauthorized Access to Quanum Lab Services Manager",
+    "headline": "Quest Diagnostics Discloses Unauthorized Access to Quanum Lab Services Manager",
+    "summary": "Quest Diagnostics disclosed unauthorized access to its Quanum Lab Services Manager platform, where certain clients place test orders, exposing patient records. The breach resulted from a credential compromise that enabled attackers to authenticate and read data, with no exfiltration. Quest Diagnostics applied a patch, disabled accounts, and is conducting investigation while notifying patients and regulators.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-23T08:25:06.000Z",
+    "url": "https://www.securityweek.com/quest-diagnostics-reports-cyber-breach-affecting-certain-patient-records/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/best-email-encryption-services/",
+    "sourceUrl": "https://cybersecuritynews.com/best-email-encryption-services/",
+    "title": "Top 10 Email Encryption Services Ranked for 2026",
+    "headline": "Top 10 Email Encryption Services Ranked for 2026",
+    "summary": "The article ranks ten email encryption services for 2026, evaluating sender-side automation and recipient experience. It assesses policy integration, DLP triggers, one-click protection, and usability metrics, highlighting services that balance strong cryptography with user convenience. Security teams should review the rankings to select solutions that meet compliance requirements and streamline secure communication workflows.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-23T08:22:52.000Z",
+    "url": "https://cybersecuritynews.com/best-email-encryption-services/",
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/best-secure-file-sharing/"
+      }
+    ]
+  },
+  {
+    "id": "https://cybersecuritynews.com/emergency-java-update/",
+    "sourceUrl": "https://cybersecuritynews.com/emergency-java-update/",
+    "title": "Oracle Issues Emergency Java Update for Critical 9.1 HTTPS Trust Vulnerability",
+    "headline": "Oracle Issues Emergency Java Update for Critical 9.1 HTTPS Trust Vulnerability",
+    "summary": "CVE‑2026‑91403 corrupts Java’s HTTPS trust chain, enabling attackers to forge intermediate certificates against Oracle Java SE and GraalVM. With a CVSS 3.1 score of 9.1, the flaw is actively exploitable and can lead to remote code execution. Oracle released an emergency patch blocking eMudhra certificates; apply immediately and verify trust settings.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-23T06:01:47.000Z",
+    "url": "https://cybersecuritynews.com/emergency-java-update/",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybersecuritynews.com/critical-cisco-expressway-vulnerability/",
     "sourceUrl": "https://cybersecuritynews.com/critical-cisco-expressway-vulnerability/",
     "title": "Critical Cisco Expressway Vulnerability Enables Remote Code Execution Attacks",
@@ -139,24 +205,6 @@
     "publishedAt": "2026-10-22T20:33:10.000Z",
     "url": "https://www.darkreading.com/insider-threats/texas-laptop-farms-north-korean-it-workers",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/capcom-confirms-data-breach-affecting-117-million-accounts/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/capcom-confirms-data-breach-affecting-117-million-accounts/",
-    "title": "Capcom Breach Exposes 11.7 Million Customer Accounts",
-    "headline": "Capcom Breach Exposes 11.7 Million Customer Accounts",
-    "summary": "Capcom confirmed a breach of its CAPCOM ID membership service, exposing over 11.7 million customer email addresses and related data. Attackers accessed user credentials through an undisclosed vulnerability, resulting in mass credential compromise; no public exploit disclosed and potentially enabling further phishing campaigns. Security teams should enforce MFA, rotate passwords, and conduct a audit of access logs to detect any lingering threats.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-22T20:22:45.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/capcom-confirms-data-breach-affecting-117-million-accounts/",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/u-s-banks-detect-unauthorized-ai-agents/"
-      }
-    ]
   },
   {
     "id": "https://www.darkreading.com/ics-ot-security/eu-grocers-unpatched-fridge-firmware-french",
@@ -801,24 +849,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://cybersecuritynews.com/best-secure-file-sharing/",
-    "sourceUrl": "https://cybersecuritynews.com/best-secure-file-sharing/",
-    "title": "Top 10 Best Secure File Sharing Platforms in 2026",
-    "headline": "Top 10 Best Secure File Sharing Platforms in 2026",
-    "summary": "The article presents a 2026 ranking of ten secure file‑sharing platforms, evaluating them on consumer usability and enterprise controls such as classification‑aware policy, external‑access governance, and audit resilience. The selection criteria emphasize regulatory compliance, audit survivability, and user‑friendly interfaces for both individuals and organizations. Security teams should review the ranking to align platform choices with their compliance and usability requirements.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-22T10:16:44.000Z",
-    "url": "https://cybersecuritynews.com/best-secure-file-sharing/",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/best-file-integrity-monitoring/"
-      }
-    ]
-  },
-  {
     "id": "https://cybersecuritynews.com/atlassian-security-update/",
     "sourceUrl": "https://cybersecuritynews.com/atlassian-security-update/",
     "title": "Atlassian Issues Security Patch for 176 Vulnerabilities in Jira and Confluence",
@@ -856,6 +886,24 @@
     "publishedAt": "2026-10-22T09:10:55.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/22/anthropic-attack-surface-reduction-open-source/",
     "additionalSources": []
+  },
+  {
+    "id": "https://www.welivesecurity.com/en/eset-research/mythicratatoskr-yggdrasil-enabled-backdoor-deployed-uac0099-sandworm-collaboration/",
+    "sourceUrl": "https://www.welivesecurity.com/en/eset-research/mythicratatoskr-yggdrasil-enabled-backdoor-deployed-uac0099-sandworm-collaboration/",
+    "title": "MythicRatatoskr Backdoor Exploits Yggdrasil Mesh for Ukrainian Grain Firm Attack",
+    "headline": "MythicRatatoskr Backdoor Exploits Yggdrasil Mesh for Ukrainian Grain Firm Attack",
+    "summary": "ESET uncovered MythicRatatoskr, a Go-based backdoor that hides its C&C server inside Yggdrasil, enabling covert persistence. The malware exploited a UAC‑0099‑Sandworm collaboration to deliver a destructive payload to a Ukrainian grain firm via privilege escalation. Isolate affected hosts, apply Yggdrasil firmware patch, and enforce network segmentation to block actively traffic.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "ESET WeLiveSecurity",
+    "publishedAt": "2026-10-22T08:45:00.000Z",
+    "url": "https://www.welivesecurity.com/en/eset-research/mythicratatoskr-yggdrasil-enabled-backdoor-deployed-uac0099-sandworm-collaboration/",
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/ukraine-hackers-russia-grain-sandworm"
+      }
+    ]
   },
   {
     "id": "https://cybersecuritynews.com/siemens-software-center-flaw-exploited/",
@@ -1189,19 +1237,6 @@
     "source": "SecurityWeek",
     "publishedAt": "2026-10-21T15:00:00.000Z",
     "url": "https://www.securityweek.com/context-bombs-cut-ai-attack-success-by-misleading-agents-with-fake-targets/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/ukraine-hackers-russia-grain-sandworm",
-    "sourceUrl": "https://therecord.media/ukraine-hackers-russia-grain-sandworm",
-    "title": "Sandworm and Allied Actor Wipe Data at Ukrainian Grain Logistics Firm",
-    "headline": "Sandworm and Allied Actor Wipe Data at Ukrainian Grain Logistics Firm",
-    "summary": "Russian state‑linked hacking group Sandworm collaborated with another threat actor to wipe data at a Ukrainian grain logistics company. The coordinated destructive cyberattack leveraged advanced persistence techniques, causing irreversible loss of critical operational data and disrupting supply chain operations. Ukrainian authorities should conduct forensic analysis, restore backups, and implement multi‑factor authentication and network segmentation to prevent future state‑sponsored data erasure.",
-    "category": "NATION_STATE",
-    "severity": "HIGH",
-    "source": "The Record",
-    "publishedAt": "2026-10-21T14:45:00.000Z",
-    "url": "https://therecord.media/ukraine-hackers-russia-grain-sandworm",
     "additionalSources": []
   },
   {
@@ -2115,24 +2150,6 @@
     "publishedAt": "2026-10-20T10:41:54.000Z",
     "url": "https://cybersecuritynews.com/redagents-ai-platform/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/hackers-steal-1-8-million-records-from-nikkei/",
-    "sourceUrl": "https://www.securityweek.com/hackers-steal-1-8-million-records-from-nikkei/",
-    "title": "1.8 Million Nikkei Records Stolen",
-    "headline": "1.8 Million Nikkei Records Stolen",
-    "summary": "Hackers accessed personal data of 1.8 million Nikkei users, including names, addresses, emails, phone numbers and dates of birth. The breach exposed sensitive personal information that could be used for identity theft or targeted phishing. No mitigation steps are reported.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-20T10:35:18.000Z",
-    "url": "https://www.securityweek.com/hackers-steal-1-8-million-records-from-nikkei/",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/nikkei-discloses-third-data-breach-in-a-month-18m-records-exposed/"
-      }
-    ]
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/10/20/extend-verify/",
@@ -5242,24 +5259,6 @@
       {
         "source": "CyberNews AI",
         "sourceUrl": "https://cybernewsai.com/blog/fakegit-malware-github-smartloader-stealc"
-      }
-    ]
-  },
-  {
-    "id": "https://therecord.media/co-creator-empire-dark-net-market-sentenced",
-    "sourceUrl": "https://therecord.media/co-creator-empire-dark-net-market-sentenced",
-    "title": "Co‑creator of Empire Market Dark Web Marketplace Sentenced to 40 Years",
-    "headline": "Co‑creator of Empire Market Dark Web Marketplace Sentenced to 40 Years",
-    "summary": "Raheim Hamilton, 30, pleaded guilty to a drug conspiracy charge and agreed to forfeit more than $100 million in Bitcoin and several Virginia properties. The court imposed a 40‑year prison sentence and forfeiture order.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Record",
-    "publishedAt": "2026-10-10T00:55:00.000Z",
-    "url": "https://therecord.media/co-creator-empire-dark-net-market-sentenced",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/owner-of-empire-cybercrime-market-gets-40-years-in-prison/"
       }
     ]
   }

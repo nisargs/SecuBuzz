@@ -11,6 +11,76 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "11-million-email-addresses-stolen-from-capcom-id-59329e",
+    "title": "11 Million Email Addresses Stolen from Capcom ID",
+    "summary": "11 million email addresses were stolen from Capcom ID and passwords changed for 196 accounts. The breach exposed personal identifiers and could enable phishing campaigns, allowing attackers to access user credentials via a compromised login portal. Capcom should enforce multi‑factor authentication, reset passwords, and monitor for suspicious activity.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/11-million-impacted-by-capcom-data-breach/",
+    "publishedAt": "2026-10-23T08:34:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "11-million-email-addresses-stolen-from-capcom-id",
+      "article-59329e",
+      "59329e"
+    ]
+  },
+  {
+    "slug": "quest-diagnostics-discloses-unauthorized-access-to-36ac5f",
+    "title": "Quest Diagnostics Discloses Unauthorized Access to Quanum Lab Services Manager",
+    "summary": "Quest Diagnostics disclosed unauthorized access to its Quanum Lab Services Manager platform, where certain clients place test orders, exposing patient records. The breach resulted from a credential compromise that enabled attackers to authenticate and read data, with no exfiltration. Quest Diagnostics applied a patch, disabled accounts, and is conducting investigation while notifying patients and regulators.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/quest-diagnostics-reports-cyber-breach-affecting-certain-patient-records/",
+    "publishedAt": "2026-10-23T08:25:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "quest-diagnostics-discloses-unauthorized-access-to",
+      "article-36ac5f",
+      "36ac5f",
+      "quest-diagnostics-discloses-unauthorized-access-to-quanum-la"
+    ]
+  },
+  {
+    "slug": "top-10-email-encryption-services-ranked-for-2026-5a5cac",
+    "title": "Top 10 Email Encryption Services Ranked for 2026",
+    "summary": "The article ranks ten email encryption services for 2026, evaluating sender-side automation and recipient experience. It assesses policy integration, DLP triggers, one-click protection, and usability metrics, highlighting services that balance strong cryptography with user convenience. Security teams should review the rankings to select solutions that meet compliance requirements and streamline secure communication workflows.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-email-encryption-services/",
+    "publishedAt": "2026-10-23T08:22:52.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "top-10-email-encryption-services-ranked-for-2026",
+      "article-5a5cac",
+      "5a5cac"
+    ]
+  },
+  {
+    "slug": "oracle-issues-emergency-java-update-for-critical-9-3aa4e5",
+    "title": "Oracle Issues Emergency Java Update for Critical 9.1 HTTPS Trust Vulnerability",
+    "summary": "CVE‑2026‑91403 corrupts Java’s HTTPS trust chain, enabling attackers to forge intermediate certificates against Oracle Java SE and GraalVM. With a CVSS 3.1 score of 9.1, the flaw is actively exploitable and can lead to remote code execution. Oracle released an emergency patch blocking eMudhra certificates; apply immediately and verify trust settings.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/emergency-java-update/",
+    "publishedAt": "2026-10-23T06:01:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "oracle-issues-emergency-java-update-for-critical-9",
+      "article-3aa4e5",
+      "3aa4e5",
+      "oracle-issues-emergency-java-update-for-critical-9-1-https-t"
+    ]
+  },
+  {
     "slug": "critical-cisco-expressway-vulnerability-enables-re-10092d",
     "title": "Critical Cisco Expressway Vulnerability Enables Remote Code Execution Attacks",
     "summary": "A critical flaw in Cisco Expressway allows remote attackers to execute operating system commands as root on devices configured in a cluster. Tracked as CVE-2026-76466, the vulnerability carries a CVSS score of 9.8, is publicly documented, and can be exploited without authentication. Cisco released a patch on October 21, 2026; apply it immediately or disable exposed services as a workaround.",
@@ -171,24 +241,6 @@ export const news: NewsBrief[] = [
       "article-632e59",
       "632e59",
       "federal-agents-seize-texas-laptop-farms-linked-to-espionage"
-    ]
-  },
-  {
-    "slug": "capcom-breach-exposes-11-7-million-customer-accoun-7475b3",
-    "title": "Capcom Breach Exposes 11.7 Million Customer Accounts",
-    "summary": "Capcom confirmed a breach of its CAPCOM ID membership service, exposing over 11.7 million customer email addresses and related data. Attackers accessed user credentials through an undisclosed vulnerability, resulting in mass credential compromise; no public exploit disclosed and potentially enabling further phishing campaigns. Security teams should enforce MFA, rotate passwords, and conduct a audit of access logs to detect any lingering threats.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/capcom-confirms-data-breach-affecting-117-million-accounts/",
-    "publishedAt": "2026-10-22T20:22:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "capcom-breach-exposes-11-7-million-customer-accoun",
-      "article-7475b3",
-      "7475b3",
-      "capcom-breach-exposes-11-7-million-customer-accounts"
     ]
   },
   {
@@ -882,23 +934,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "top-10-best-secure-file-sharing-platforms-in-2026-91feac",
-    "title": "Top 10 Best Secure File Sharing Platforms in 2026",
-    "summary": "The article presents a 2026 ranking of ten secure file‑sharing platforms, evaluating them on consumer usability and enterprise controls such as classification‑aware policy, external‑access governance, and audit resilience. The selection criteria emphasize regulatory compliance, audit survivability, and user‑friendly interfaces for both individuals and organizations. Security teams should review the ranking to align platform choices with their compliance and usability requirements.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/best-secure-file-sharing/",
-    "publishedAt": "2026-10-22T10:16:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "top-10-best-secure-file-sharing-platforms-in-2026",
-      "article-91feac",
-      "91feac"
-    ]
-  },
-  {
     "slug": "atlassian-issues-security-patch-for-176-vulnerabil-59fd7a",
     "title": "Atlassian Issues Security Patch for 176 Vulnerabilities in Jira and Confluence",
     "summary": "Atlassian’s October 2026 bulletin addresses 176 flaw entries across Jira, Confluence, Bamboo, Bitbucket, and Crowd, including 162 high‑severity and 14 critical third‑party issues. The update fixes vulnerabilities that could allow remote code execution or privilege escalation in these collaboration tools. Customers are urged to apply the latest releases immediately to eliminate exploitable weaknesses.",
@@ -949,6 +984,24 @@ export const news: NewsBrief[] = [
       "article-28e624",
       "28e624",
       "open-source-projects-drop-security-controls-exposing-unauthe"
+    ]
+  },
+  {
+    "slug": "mythicratatoskr-backdoor-exploits-yggdrasil-mesh-f-6a7d9b",
+    "title": "MythicRatatoskr Backdoor Exploits Yggdrasil Mesh for Ukrainian Grain Firm Attack",
+    "summary": "ESET uncovered MythicRatatoskr, a Go-based backdoor that hides its C&C server inside Yggdrasil, enabling covert persistence. The malware exploited a UAC‑0099‑Sandworm collaboration to deliver a destructive payload to a Ukrainian grain firm via privilege escalation. Isolate affected hosts, apply Yggdrasil firmware patch, and enforce network segmentation to block actively traffic.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ESET WeLiveSecurity",
+    "sourceUrl": "https://www.welivesecurity.com/en/eset-research/mythicratatoskr-yggdrasil-enabled-backdoor-deployed-uac0099-sandworm-collaboration/",
+    "publishedAt": "2026-10-22T08:45:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "mythicratatoskr-backdoor-exploits-yggdrasil-mesh-f",
+      "article-6a7d9b",
+      "6a7d9b",
+      "mythicratatoskr-backdoor-exploits-yggdrasil-mesh-for-ukraini"
     ]
   },
   {
@@ -1362,24 +1415,6 @@ export const news: NewsBrief[] = [
       "context-bombs-reduce-ai-attack-success-by-91",
       "article-20f53f",
       "20f53f"
-    ]
-  },
-  {
-    "slug": "sandworm-and-allied-actor-wipe-data-at-ukrainian-g-1a7e97",
-    "title": "Sandworm and Allied Actor Wipe Data at Ukrainian Grain Logistics Firm",
-    "summary": "Russian state‑linked hacking group Sandworm collaborated with another threat actor to wipe data at a Ukrainian grain logistics company. The coordinated destructive cyberattack leveraged advanced persistence techniques, causing irreversible loss of critical operational data and disrupting supply chain operations. Ukrainian authorities should conduct forensic analysis, restore backups, and implement multi‑factor authentication and network segmentation to prevent future state‑sponsored data erasure.",
-    "category": "Malware",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/ukraine-hackers-russia-grain-sandworm",
-    "publishedAt": "2026-10-21T14:45:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sandworm-and-allied-actor-wipe-data-at-ukrainian-g",
-      "article-1a7e97",
-      "1a7e97",
-      "sandworm-and-allied-actor-wipe-data-at-ukrainian-grain-logis"
     ]
   },
   {
@@ -2488,23 +2523,6 @@ export const news: NewsBrief[] = [
       "article-5a8ff5",
       "5a8ff5",
       "threatbook-unveils-redagents-ai-platform-for-automated-penet"
-    ]
-  },
-  {
-    "slug": "1-8-million-nikkei-records-stolen-35a206",
-    "title": "1.8 Million Nikkei Records Stolen",
-    "summary": "Hackers accessed personal data of 1.8 million Nikkei users, including names, addresses, emails, phone numbers and dates of birth. The breach exposed sensitive personal information that could be used for identity theft or targeted phishing. No mitigation steps are reported.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/hackers-steal-1-8-million-records-from-nikkei/",
-    "publishedAt": "2026-10-20T10:35:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "1-8-million-nikkei-records-stolen",
-      "article-35a206",
-      "35a206"
     ]
   },
   {
@@ -6261,24 +6279,6 @@ export const news: NewsBrief[] = [
       "article-2f791d",
       "2f791d",
       "claude-clickfix-how-to-detect-block-adception-malvertising"
-    ]
-  },
-  {
-    "slug": "co-creator-of-empire-market-dark-web-marketplace-s-898fec",
-    "title": "Co‑creator of Empire Market Dark Web Marketplace Sentenced to 40 Years",
-    "summary": "Raheim Hamilton, 30, pleaded guilty to a drug conspiracy charge and agreed to forfeit more than $100 million in Bitcoin and several Virginia properties. The court imposed a 40‑year prison sentence and forfeiture order.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/co-creator-empire-dark-net-market-sentenced",
-    "publishedAt": "2026-10-10T00:55:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "co-creator-of-empire-market-dark-web-marketplace-s",
-      "article-898fec",
-      "898fec",
-      "co-creator-of-empire-market-dark-web-marketplace-sentenced-t"
     ]
   }
 ];
