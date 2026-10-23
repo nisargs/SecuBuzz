@@ -11,20 +11,92 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
-    "slug": "11-million-email-addresses-stolen-from-capcom-id-59329e",
-    "title": "11 Million Email Addresses Stolen from Capcom ID",
-    "summary": "11 million email addresses were stolen from Capcom ID and passwords changed for 196 accounts. The breach exposed personal identifiers and could enable phishing campaigns, allowing attackers to access user credentials via a compromised login portal. Capcom should enforce multi‑factor authentication, reset passwords, and monitor for suspicious activity.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/11-million-impacted-by-capcom-data-breach/",
-    "publishedAt": "2026-10-23T08:34:14.000Z",
+    "slug": "php-vulnerability-exploits-core-parsing-engine-57dd7e",
+    "title": "PHP Vulnerability Exploits Core Parsing Engine",
+    "summary": "A recent PHP vulnerability exploits an undisclosed flaw in the language’s core parsing engine, allowing attackers to execute arbitrary code via crafted input on affected web servers. The flaw can compromise any PHP-based application without authentication, leading to full system takeover. A vendor patch is available; administrators should upgrade PHP to the latest stable release immediately.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33450",
+    "publishedAt": "2026-10-23T13:43:20.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "11-million-email-addresses-stolen-from-capcom-id",
-      "article-59329e",
-      "59329e"
+      "php-vulnerability-exploits-core-parsing-engine",
+      "article-57dd7e",
+      "57dd7e"
+    ]
+  },
+  {
+    "slug": "uk-proposes-14-year-prison-terms-for-undersea-cabl-216515",
+    "title": "UK Proposes 14‑Year Prison Terms for Undersea Cable Sabotage",
+    "summary": "The United Kingdom is proposing amendments to the Submarine Telegraph Act 1885 to increase penalties for deliberate undersea cable sabotage. The revised law would raise the maximum fine to £1,000 and extend imprisonment to fourteen years, replacing the current five‑year limit. The proposal reflects growing concerns over hybrid threats targeting critical infrastructure and aims to deter future sabotage incidents.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/uk-undersea-cables-sabotage-new-sentencing-guidelines",
+    "publishedAt": "2026-10-23T13:26:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "uk-proposes-14-year-prison-terms-for-undersea-cabl",
+      "article-216515",
+      "216515",
+      "uk-proposes-14-year-prison-terms-for-undersea-cable-sabotage"
+    ]
+  },
+  {
+    "slug": "capcom-warns-of-phishing-after-11-7-million-record-905773",
+    "title": "Capcom Warns of Phishing After 11.7 Million Records Exposed",
+    "summary": "Capcom disclosed that 11.7 million user records, including email addresses, were exposed, potentially enabling targeted phishing attacks against CAPCOM ID holders. The breach also involved unauthorized password changes on 196 accounts, indicating credential manipulation that could facilitate credential stuffing or account takeover. Capcom urges users to reset passwords immediately, enable two‑factor authentication, and is investigating the leak source.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/data-breaches/2026/10/resident-evil-maker-capcom-warns-of-phishing-after-11-7-million-records-exposed",
+    "publishedAt": "2026-10-23T13:07:52.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "capcom-warns-of-phishing-after-11-7-million-record",
+      "article-905773",
+      "905773",
+      "capcom-warns-of-phishing-after-11-7-million-records-exposed"
+    ]
+  },
+  {
+    "slug": "microsoft-365-accounts-compromised-at-79-organizat-603fb9",
+    "title": "Microsoft 365 Accounts Compromised at 79 Organizations via Session Replay",
+    "summary": "An attacker replayed stolen Microsoft 365 sign‑in sessions to access email accounts at 79 organizations, bypassing password authentication. The campaign, spanning July 14 to September 22, 2026, involved 497 successful sign‑ins and over 200,000 failed attempts, with attackers deploying hidden inbox rules to conceal activity. Microsoft has issued guidance to monitor session logs, enforce MFA, and revoke compromised credentials to mitigate further breaches.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/23/microsoft-365-accounts-stolen-sessions/",
+    "publishedAt": "2026-10-23T11:45:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-365-accounts-compromised-at-79-organizat",
+      "article-603fb9",
+      "603fb9",
+      "microsoft-365-accounts-compromised-at-79-organizations-via-s"
+    ]
+  },
+  {
+    "slug": "crime-stoppers-chapter-stops-tips-after-breach-exp-542896",
+    "title": "Crime Stoppers Chapter Stops Tips After Breach Exposes Anonymous Tipster Data",
+    "summary": "A Crime Stoppers chapter stopped accepting tips after a breach exposed anonymous tipster information, compromising the anonymity promised to volunteers. The incident indicates insufficient data protection controls, likely due to weak access controls or inadequate encryption of tipster records. Security teams should enforce role-based access, encrypt sensitive fields, and conduct a rapid forensic review to identify the breach vector.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/data-breaches/2026/10/crime-stoppers-chapter-freezes-tips-after-breach-breaks-anonymity-promise",
+    "publishedAt": "2026-10-23T09:57:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "crime-stoppers-chapter-stops-tips-after-breach-exp",
+      "article-542896",
+      "542896",
+      "crime-stoppers-chapter-stops-tips-after-breach-exposes-anony"
     ]
   },
   {
@@ -205,24 +277,6 @@ export const news: NewsBrief[] = [
       "article-57cfde",
       "57cfde",
       "railway-warns-developers-to-rotate-secrets-after-suspicious-"
-    ]
-  },
-  {
-    "slug": "toronto-crime-stoppers-chapter-halts-operations-af-284599",
-    "title": "Toronto Crime Stoppers Chapter Halts Operations After Data Breach Disclosure",
-    "summary": "The Toronto chapter of Crime Stoppers disclosed a data breach timeline, revealing when it became aware of the compromise and subsequently halted operations. The breach exposed internal operational details, potentially compromising sensitive case information and undermining public trust in the organization. Security teams should conduct a forensic investigation, notify affected stakeholders, and implement stricter access controls to prevent future incidents.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/toronto-crime-tips-org-freezes-ops-after-breach",
-    "publishedAt": "2026-10-22T20:52:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "toronto-crime-stoppers-chapter-halts-operations-af",
-      "article-284599",
-      "284599",
-      "toronto-crime-stoppers-chapter-halts-operations-after-data-b"
     ]
   },
   {
@@ -6225,60 +6279,6 @@ export const news: NewsBrief[] = [
       "article-78cb23",
       "78cb23",
       "rea-tool-integrates-ai-coders-with-ghidra-and-ida-pro-for-au"
-    ]
-  },
-  {
-    "slug": "microsoft-teams-adds-qr-code-checks-to-detect-mali-375d43",
-    "title": "Microsoft Teams Adds QR Code Checks to Detect Malicious Links",
-    "summary": "Microsoft Teams will now scan QR codes in messages for malicious links and warn users after delivery. The update extends existing Microsoft Defender for Office 365 protections, providing clearer warnings and additional data for security teams to investigate suspicious messages.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/teams-qr-code-protection/",
-    "publishedAt": "2026-10-10T05:49:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-teams-adds-qr-code-checks-to-detect-mali",
-      "article-375d43",
-      "375d43",
-      "microsoft-teams-adds-qr-code-checks-to-detect-malicious-link"
-    ]
-  },
-  {
-    "slug": "at-t-to-pay-177-million-over-two-customer-data-bre-52384a",
-    "title": "AT&T to Pay $177 Million Over Two Customer Data Breaches",
-    "summary": "AT&T agreed to pay $177 million to settle lawsuits stemming from two 2024 customer data breaches that exposed personal details and call records. The settlements address privacy risks for millions of current and former customers and were approved by a federal judge on October 2, 2026.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/att-to-pay-177-million/",
-    "publishedAt": "2026-10-10T04:57:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "at-t-to-pay-177-million-over-two-customer-data-bre",
-      "article-52384a",
-      "52384a",
-      "at-t-to-pay-177-million-over-two-customer-data-breaches"
-    ]
-  },
-  {
-    "slug": "claude-clickfix-how-to-detect-block-adception-malv-2f791d",
-    "title": "Claude ClickFix: How to Detect & Block Adception Malvertising",
-    "summary": "Adception malvertising uses Google Ads and Bing redirects to deploy fake Claude ClickFix attacks. The article explains clipboard defense, AMOS hunting, and SOC queries to detect and block these malicious ads. It provides practical steps for security teams to mitigate the threat.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/claude-clickfix-adception-malvertising-defense",
-    "publishedAt": "2026-10-10T04:14:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "claude-clickfix-how-to-detect-block-adception-malv",
-      "article-2f791d",
-      "2f791d",
-      "claude-clickfix-how-to-detect-block-adception-malvertising"
     ]
   }
 ];

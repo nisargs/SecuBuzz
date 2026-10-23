@@ -5,15 +5,51 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Oct 2026 10:10:15 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 13:49:10 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>11 Million Email Addresses Stolen from Capcom ID</title>
-      <link>https://secubuzz.com/news/11-million-email-addresses-stolen-from-capcom-id-59329e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/11-million-email-addresses-stolen-from-capcom-id-59329e</guid>
-      <description><![CDATA[11 million email addresses were stolen from Capcom ID and passwords changed for 196 accounts. The breach exposed personal identifiers and could enable phishing campaigns, allowing attackers to access user credentials via a compromised login portal. Capcom should enforce multi‑factor authentication, reset passwords, and monitor for suspicious activity.]]></description>
-      <pubDate>Fri, 23 Oct 2026 08:34:14 GMT</pubDate>
-      <source url="https://www.securityweek.com/11-million-impacted-by-capcom-data-breach/">SecurityWeek</source>
+      <title>PHP Vulnerability Exploits Core Parsing Engine</title>
+      <link>https://secubuzz.com/news/php-vulnerability-exploits-core-parsing-engine-57dd7e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/php-vulnerability-exploits-core-parsing-engine-57dd7e</guid>
+      <description><![CDATA[A recent PHP vulnerability exploits an undisclosed flaw in the language’s core parsing engine, allowing attackers to execute arbitrary code via crafted input on affected web servers. The flaw can compromise any PHP-based application without authentication, leading to full system takeover. A vendor patch is available; administrators should upgrade PHP to the latest stable release immediately.]]></description>
+      <pubDate>Fri, 23 Oct 2026 13:43:20 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33450">SANS Internet Storm Center</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>UK Proposes 14‑Year Prison Terms for Undersea Cable Sabotage</title>
+      <link>https://secubuzz.com/news/uk-proposes-14-year-prison-terms-for-undersea-cabl-216515</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/uk-proposes-14-year-prison-terms-for-undersea-cabl-216515</guid>
+      <description><![CDATA[The United Kingdom is proposing amendments to the Submarine Telegraph Act 1885 to increase penalties for deliberate undersea cable sabotage. The revised law would raise the maximum fine to £1,000 and extend imprisonment to fourteen years, replacing the current five‑year limit. The proposal reflects growing concerns over hybrid threats targeting critical infrastructure and aims to deter future sabotage incidents.]]></description>
+      <pubDate>Fri, 23 Oct 2026 13:26:00 GMT</pubDate>
+      <source url="https://therecord.media/uk-undersea-cables-sabotage-new-sentencing-guidelines">The Record</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Capcom Warns of Phishing After 11.7 Million Records Exposed</title>
+      <link>https://secubuzz.com/news/capcom-warns-of-phishing-after-11-7-million-record-905773</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/capcom-warns-of-phishing-after-11-7-million-record-905773</guid>
+      <description><![CDATA[Capcom disclosed that 11.7 million user records, including email addresses, were exposed, potentially enabling targeted phishing attacks against CAPCOM ID holders. The breach also involved unauthorized password changes on 196 accounts, indicating credential manipulation that could facilitate credential stuffing or account takeover. Capcom urges users to reset passwords immediately, enable two‑factor authentication, and is investigating the leak source.]]></description>
+      <pubDate>Fri, 23 Oct 2026 13:07:52 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/data-breaches/2026/10/resident-evil-maker-capcom-warns-of-phishing-after-11-7-million-records-exposed">Malwarebytes Labs</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Microsoft 365 Accounts Compromised at 79 Organizations via Session Replay</title>
+      <link>https://secubuzz.com/news/microsoft-365-accounts-compromised-at-79-organizat-603fb9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-365-accounts-compromised-at-79-organizat-603fb9</guid>
+      <description><![CDATA[An attacker replayed stolen Microsoft 365 sign‑in sessions to access email accounts at 79 organizations, bypassing password authentication. The campaign, spanning July 14 to September 22, 2026, involved 497 successful sign‑ins and over 200,000 failed attempts, with attackers deploying hidden inbox rules to conceal activity. Microsoft has issued guidance to monitor session logs, enforce MFA, and revoke compromised credentials to mitigate further breaches.]]></description>
+      <pubDate>Fri, 23 Oct 2026 11:45:12 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/23/microsoft-365-accounts-stolen-sessions/">Help Net Security</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Crime Stoppers Chapter Stops Tips After Breach Exposes Anonymous Tipster Data</title>
+      <link>https://secubuzz.com/news/crime-stoppers-chapter-stops-tips-after-breach-exp-542896</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/crime-stoppers-chapter-stops-tips-after-breach-exp-542896</guid>
+      <description><![CDATA[A Crime Stoppers chapter stopped accepting tips after a breach exposed anonymous tipster information, compromising the anonymity promised to volunteers. The incident indicates insufficient data protection controls, likely due to weak access controls or inadequate encryption of tipster records. Security teams should enforce role-based access, encrypt sensitive fields, and conduct a rapid forensic review to identify the breach vector.]]></description>
+      <pubDate>Fri, 23 Oct 2026 09:57:48 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/data-breaches/2026/10/crime-stoppers-chapter-freezes-tips-after-breach-breaks-anonymity-promise">Malwarebytes Labs</source>
       <category>Breach</category>
     </item>
     <item>
@@ -104,15 +140,6 @@
       <description><![CDATA[Railway detected suspicious activity on its cloud platform that stores customer environment variables, urging developers to rotate secrets. The anomaly suggests possible unauthorized access to configuration data, though no exfiltration has been confirmed by the platform. Railway recommends enforcing secret rotation, enabling multi‑factor authentication, and auditing access logs for irregular activity.]]></description>
       <pubDate>Thu, 22 Oct 2026 21:25:31 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/railway-warns-devs-to-rotate-secrets-after-potential-breach/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Toronto Crime Stoppers Chapter Halts Operations After Data Breach Disclosure</title>
-      <link>https://secubuzz.com/news/toronto-crime-stoppers-chapter-halts-operations-af-284599</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/toronto-crime-stoppers-chapter-halts-operations-af-284599</guid>
-      <description><![CDATA[The Toronto chapter of Crime Stoppers disclosed a data breach timeline, revealing when it became aware of the compromise and subsequently halted operations. The breach exposed internal operational details, potentially compromising sensitive case information and undermining public trust in the organization. Security teams should conduct a forensic investigation, notify affected stakeholders, and implement stricter access controls to prevent future incidents.]]></description>
-      <pubDate>Thu, 22 Oct 2026 20:52:00 GMT</pubDate>
-      <source url="https://therecord.media/toronto-crime-tips-org-freezes-ops-after-breach">The Record</source>
       <category>Breach</category>
     </item>
     <item>
@@ -429,33 +456,6 @@
       <pubDate>Thu, 22 Oct 2026 11:41:02 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/22/xtium-xtai-orchestrator/">Help Net Security</source>
       <category>Cloud</category>
-    </item>
-    <item>
-      <title>SentinelOne Introduces Singularity Agentic Detection and Response</title>
-      <link>https://secubuzz.com/news/sentinelone-introduces-singularity-agentic-detecti-6c8dee</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sentinelone-introduces-singularity-agentic-detecti-6c8dee</guid>
-      <description><![CDATA[SentinelOne unveiled Singularity Agentic Detection and Response, a runtime solution that identifies AI agents, enforces allowed actions, and monitors behavior to detect malicious activity in real time. The platform integrates behavioral prevention, detection, and response capabilities directly on the Singularity Platform. Customers can deploy the new offering to gain visibility and governance over AI agent activity.]]></description>
-      <pubDate>Thu, 22 Oct 2026 11:27:36 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/22/sentinelone-singularity-agentic-detection-and-response/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Cash App Account Created with Stolen Identity Leads to Prison Sentence</title>
-      <link>https://secubuzz.com/news/cash-app-account-created-with-stolen-identity-lead-20ee7d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cash-app-account-created-with-stolen-identity-lead-20ee7d</guid>
-      <description><![CDATA[A woman faces up to six years in prison after a Cash App account was opened using her stolen identity. The incident illustrates credential theft via social engineering, with attackers creating an unauthorized account to access financial services. Cash App has not released a patch, but users should enable two‑factor authentication and monitor account activity for unauthorized changes.]]></description>
-      <pubDate>Thu, 22 Oct 2026 11:27:07 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/news/2026/10/woman-faces-years-in-prison-over-a-cash-app-account-she-says-she-never-opened">Malwarebytes Labs</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Broadcom Launches Arcot Scam Defense for 3‑D Secure Authentication</title>
-      <link>https://secubuzz.com/news/broadcom-launches-arcot-scam-defense-for-3-d-secur-451a36</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/broadcom-launches-arcot-scam-defense-for-3-d-secur-451a36</guid>
-      <description><![CDATA[Broadcom announced Arcot Scam Defense, a feature of Arcot that blocks social engineering fraud during card‑not‑present transactions. The solution targets AI‑enhanced fraud attempts by intercepting malicious interactions before they reach the payment system. Financial institutions can enable the feature to strengthen 3‑D Secure authentication against evolving scam tactics.]]></description>
-      <pubDate>Thu, 22 Oct 2026 11:18:09 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/22/broadcom-arcot-scam-defense/">Help Net Security</source>
-      <category>Policy</category>
     </item>
   </channel>
 </rss>
