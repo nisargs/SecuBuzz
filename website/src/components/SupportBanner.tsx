@@ -19,7 +19,7 @@ export function SupportBanner({ className = '', compact = false, source = 'foote
           </div>
           <div className="space-y-1">
             <h3 className="text-base sm:text-lg font-semibold tracking-tight text-ink">
-              Support SecuBuzz
+              Support Secu<span className="text-accent">Buzz</span>
             </h3>
             <p className="text-sm text-muted max-w-xl leading-relaxed">
               If SecuBuzz saved you time this week, you can support the project here.

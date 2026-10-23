@@ -41,7 +41,9 @@ export function About() {
       </section>
 
       <section className="mx-auto grid max-w-site gap-12 px-5 py-20 md:px-8 lg:grid-cols-[0.8fr_1.2fr]">
-        <h2 className="text-2xl font-semibold tracking-tight text-ink">Why we built SecuBuzz</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-ink">
+          Why we built Secu<span className="text-accent">Buzz</span>
+        </h2>
         <div className="max-w-[64ch] space-y-5 text-[16px] leading-relaxed text-muted">
           <p>
             SecuBuzz was created by <strong className="text-ink">MiSo Labs</strong> to solve a persistent challenge in cybersecurity:

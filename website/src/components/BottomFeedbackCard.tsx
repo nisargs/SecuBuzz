@@ -58,10 +58,9 @@ export function BottomFeedbackCard() {
                 </button>
               </div>
 
-              {/* Content */}
               <div className="mt-3">
                 <h4 className="text-sm font-semibold text-ink">
-                  Finding SecuBuzz helpful?
+                  Finding Secu<span className="text-accent">Buzz</span> helpful?
                 </h4>
                 <p className="mt-1 text-xs text-muted leading-relaxed">
                   Send a quick note directly to the developer. We read every email and build based on user signal.
@@ -138,7 +137,7 @@ export function BottomFeedbackCard() {
                 className="flex items-center gap-2 text-xs font-medium"
               >
                 <MessageSquare className="h-3.5 w-3.5 text-accent" />
-                <span>Finding SecuBuzz helpful?</span>
+                <span>Finding Secu<span className="text-accent">Buzz</span> helpful?</span>
                 <ChevronUp className="h-3 w-3 text-muted group-hover:text-accent transition-transform duration-150" />
               </button>
               <button

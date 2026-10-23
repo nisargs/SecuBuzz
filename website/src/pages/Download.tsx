@@ -34,7 +34,7 @@ export function Download() {
         <div className="mx-auto grid max-w-site items-center gap-14 px-5 py-16 md:px-8 lg:grid-cols-[1fr_0.8fr] lg:py-20">
           <div>
             <h1 className="text-4xl font-semibold leading-tight tracking-tight text-ink md:text-5xl">
-              SecuBuzz for Android
+              Secu<span className="text-accent">Buzz</span> for Android
             </h1>
             <p className="mt-5 max-w-lg text-lg leading-relaxed text-muted">
               Free, zero-tracking security intelligence. 60-word briefs and direct CISA KEV threat alerts delivered without noise, algorithms, or account requirements.
@@ -130,7 +130,7 @@ export function Download() {
               Launch Walkthrough
             </div>
             <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink md:text-4xl">
-              See SecuBuzz in action
+              See Secu<span className="text-accent">Buzz</span> in action
             </h2>
             <p className="mt-3 text-base text-muted md:text-lg">
               A 23-second walkthrough of real-time threat triage, 60-word security briefs, and CISA KEV deadline tracking.

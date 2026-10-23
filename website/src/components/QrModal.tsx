@@ -53,7 +53,7 @@ export function QrModal({ isOpen, onClose, source = 'qr_modal' }: QrModalProps) 
           </div>
 
           <h3 id="qr-modal-title" className="mt-3 text-lg font-semibold text-ink">
-            Install SecuBuzz on Android
+            Install Secu<span className="text-accent">Buzz</span> on Android
           </h3>
           <p className="mt-1 text-xs text-muted">
             Point your phone camera at the QR code to open directly in the Google Play Store.

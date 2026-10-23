@@ -4,12 +4,16 @@ import { PlayStoreButton } from './PlayStoreButton';
 import { QrModal } from './QrModal';
 
 interface AppCtaProps {
-  title?: string;
-  body?: string;
+  title?: React.ReactNode;
+  body?: React.ReactNode;
 }
 
 export function AppCta({
-  title = 'Start your morning triage on SecuBuzz',
+  title = (
+    <>
+      Start your morning triage on Secu<span className="text-accent">Buzz</span>
+    </>
+  ),
   body = 'Free on Android. Curated 60-word briefs and automated CISA KEV threat alerts delivered without noise or tracking.'
 }: AppCtaProps) {
   const [showQrModal, setShowQrModal] = useState(false);

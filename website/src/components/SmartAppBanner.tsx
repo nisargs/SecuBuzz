@@ -70,7 +70,9 @@ export function SmartAppBanner() {
               />
               <div className="min-w-0 flex-1 leading-tight">
                 <div className="flex items-center gap-1.5">
-                  <span className="truncate text-xs font-semibold text-ink">SecuBuzz for Android</span>
+                  <span className="truncate text-xs font-semibold text-ink">
+                    Secu<span className="text-accent">Buzz</span> for Android
+                  </span>
                   <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
                 </div>
                 <p className="truncate text-[11px] text-muted">60-word briefs &amp; zero-day radar</p>

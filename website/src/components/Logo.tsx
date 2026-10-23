@@ -11,7 +11,9 @@ export function Logo() {
         width={28}
         height={28}
       />
-      <span className="text-[17px] font-semibold tracking-tight text-ink">SecuBuzz</span>
+      <span className="text-[17px] font-semibold tracking-tight text-ink">
+        Secu<span className="text-accent">Buzz</span>
+      </span>
     </Link>
   );
 }
