@@ -5,8 +5,62 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Oct 2026 15:09:50 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 18:43:49 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Cloudflare Enhances Range Request Handling to Reduce Origin Bandwidth Waste</title>
+      <link>https://secubuzz.com/news/cloudflare-enhances-range-request-handling-to-redu-aaedf1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-enhances-range-request-handling-to-redu-aaedf1</guid>
+      <description><![CDATA[Cloudflare’s Pingora cache architecture was updated to handle large file range requests more efficiently, targeting origin bandwidth waste on small requests. The change addresses naive byte-range caching that previously consumed gigabytes of origin bandwidth, reducing latency and bandwidth usage. No patch required; the update is deployed in Cloudflare’s infrastructure, improving performance for all users.]]></description>
+      <pubDate>Fri, 23 Oct 2026 18:22:59 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/origin-range-requests/">Cloudflare Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Cloudflare Launches GeoKey Manager to Enforce Post‑Quantum Geographic Key Isolation</title>
+      <link>https://secubuzz.com/news/cloudflare-launches-geokey-manager-to-enforce-post-5eab96</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-launches-geokey-manager-to-enforce-post-5eab96</guid>
+      <description><![CDATA[Cloudflare introduced a post‑quantum GeoKey Manager that isolates decryption keys by geographic region, preventing harvest‑now‑decrypt‑later attacks. The solution rewrites the cryptography stack to enforce strict data sovereignty, ensuring keys cannot be extracted from one region and used elsewhere. The feature is available in Cloudflare’s current product offering; users should enable GeoKey Manager to maintain compliance with regional data‑protection regulations.]]></description>
+      <pubDate>Fri, 23 Oct 2026 18:06:56 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/post-quantum-geo-key-manager/">Cloudflare Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>Microsoft Announces End of Support for Windows Server 2016</title>
+      <link>https://secubuzz.com/news/microsoft-announces-end-of-support-for-windows-ser-72cd91</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-announces-end-of-support-for-windows-ser-72cd91</guid>
+      <description><![CDATA[Microsoft announced Windows Server 2016 will reach end of support in January 2027, ceasing security updates. This end‑of‑life status means no further patches, exposing systems to unpatched vulnerabilities and potential exploitation. Organizations should upgrade to supported versions or apply extended support if available, and monitor for new advisories.]]></description>
+      <pubDate>Fri, 23 Oct 2026 17:05:07 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-january/">BleepingComputer</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>Quest Diagnostics Breach Exposes Patient Records via Quanum LSM System</title>
+      <link>https://secubuzz.com/news/quest-diagnostics-breach-exposes-patient-records-v-1fdcce</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/quest-diagnostics-breach-exposes-patient-records-v-1fdcce</guid>
+      <description><![CDATA[Quest Diagnostics disclosed a breach exposing patient records after unauthorized access to its Quanum LSM system. The attacker leveraged compromised credentials to read sensitive medical data, potentially compromising privacy and regulatory compliance. Quest should conduct forensic analysis, notify affected patients, reset credentials, and strengthen access controls, implementing multi‑factor authentication immediately.]]></description>
+      <pubDate>Fri, 23 Oct 2026 16:40:07 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/quest-diagnostics-confirms-data-breach-exposed-patient-records/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>APT28 Targets NATO Defense Firms via Compromised Systems</title>
+      <link>https://secubuzz.com/news/apt28-targets-nato-defense-firms-via-compromised-s-648e98</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apt28-targets-nato-defense-firms-via-compromised-s-648e98</guid>
+      <description><![CDATA[APT28 targeted NATO defense firms via compromised systems, exploiting weak authentication and privileged accounts. The attack leveraged stolen credentials and lateral movement, causing unauthorized access to sensitive data and disrupting operational workflows. Security teams should enforce MFA, monitor for anomalous activity, apply vendor patches, and conduct thorough access reviews immediately.]]></description>
+      <pubDate>Fri, 23 Oct 2026 14:23:37 GMT</pubDate>
+      <source url="https://www.securityweek.com/in-other-news-tor-exit-relays-hijacked-banks-spot-rogue-ai-agents-self-rebuilding-macos-ransomware/">SecurityWeek</source>
+      <category>Malware</category>
+    </item>
+    <item>
+      <title>Caribbean Cyber Threats Amplify Global Risk</title>
+      <link>https://secubuzz.com/news/caribbean-cyber-threats-amplify-global-risk-485ca9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/caribbean-cyber-threats-amplify-global-risk-485ca9</guid>
+      <description><![CDATA[Caribbean cyber threats are escalating, demonstrating how regional exploit activity can amplify global risk. The lack of robust security assurance allows attackers to accelerate exploitation, increasing the likelihood of cross-border compromise. Stakeholders should strengthen threat intelligence sharing, enforce rigorous vulnerability management, and adopt proactive security frameworks to mitigate cascading impacts.]]></description>
+      <pubDate>Fri, 23 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyber-risk/why-caribbean-threats-cascade-global-cyber-risk">Dark Reading</source>
+      <category>Policy</category>
+    </item>
     <item>
       <title>PHP Vulnerability Exploits Core Parsing Engine</title>
       <link>https://secubuzz.com/news/php-vulnerability-exploits-core-parsing-engine-57dd7e</link>
@@ -32,15 +86,6 @@
       <description><![CDATA[Capcom disclosed that 11.7 million user records, including email addresses, were exposed, potentially enabling targeted phishing attacks against CAPCOM ID holders. The breach also involved unauthorized password changes on 196 accounts, indicating credential manipulation that could facilitate credential stuffing or account takeover. Capcom urges users to reset passwords immediately, enable two‑factor authentication, and is investigating the leak source.]]></description>
       <pubDate>Fri, 23 Oct 2026 13:07:52 GMT</pubDate>
       <source url="https://www.malwarebytes.com/blog/data-breaches/2026/10/resident-evil-maker-capcom-warns-of-phishing-after-11-7-million-records-exposed">Malwarebytes Labs</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Quest Diagnostics Potential Patient Data Breach</title>
-      <link>https://secubuzz.com/news/quest-diagnostics-potential-patient-data-breach-626ab6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/quest-diagnostics-potential-patient-data-breach-626ab6</guid>
-      <description><![CDATA[Quest Diagnostics reported a potential breach of patient data in its lab service system after an attack. The incident involved unauthorized access to sensitive health records, but no specific vulnerability or CVE was disclosed, and the exploitation status remains unclear. The company advised affected patients to monitor accounts and recommended that security teams review access controls and audit logs.]]></description>
-      <pubDate>Fri, 23 Oct 2026 12:52:00 GMT</pubDate>
-      <source url="https://therecord.media/quest-diagnostics-network-intrusion">The Record</source>
       <category>Breach</category>
     </item>
     <item>
@@ -141,6 +186,15 @@
       <pubDate>Fri, 23 Oct 2026 04:00:41 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/23/new-infosec-products-of-the-week-october-23-2026/">Help Net Security</source>
       <category>Cloud</category>
+    </item>
+    <item>
+      <title>PHP2Shell Bugs Expose Input Validation Flaw in PHP</title>
+      <link>https://secubuzz.com/news/php2shell-bugs-expose-input-validation-flaw-in-php-37092e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/php2shell-bugs-expose-input-validation-flaw-in-php-37092e</guid>
+      <description><![CDATA[The PHP2Shell bugs expose a critical input validation flaw in PHP, allowing attackers to execute arbitrary code via crafted HTTP requests. Public proof‑of‑concepts exist, but the flaw needs authenticated access and is not yet confirmed active in the wild. Security teams should apply the latest PHP security patches and enable strict input sanitization to mitigate potential exploitation.]]></description>
+      <pubDate>Fri, 23 Oct 2026 04:00:00 GMT</pubDate>
+      <source url="https://therecord.media/php-php2shell-exploitation-attempts-pocs">The Record</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>State Bank of India Suffers a Customer PII Data Leak</title>
@@ -377,15 +431,6 @@
       <category>Policy</category>
     </item>
     <item>
-      <title>North Korean Lazarus Actors Use Post‑Quantum Encryption to Conceal Malware in Operation FlashHole</title>
-      <link>https://secubuzz.com/news/north-korean-lazarus-actors-use-post-quantum-encry-97c7d4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/north-korean-lazarus-actors-use-post-quantum-encry-97c7d4</guid>
-      <description><![CDATA[North Korean-linked Lazarus actors employ post‑quantum cryptography within Operation FlashHole to conceal malware payloads from security tools targeting South Korean organizations. The technique uses a modern key‑establishment protocol rather than simple disk encryption, enabling stealthy delivery and execution of malicious code. Security teams should monitor for anomalous cryptographic traffic and apply updated detection rules.]]></description>
-      <pubDate>Thu, 22 Oct 2026 12:38:07 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/north-korean-hackers/">Cyber Security News</source>
-      <category>Malware</category>
-    </item>
-    <item>
       <title>RingRTC Call Hang-Up Vulnerability Exploited by Malicious Callers</title>
       <link>https://secubuzz.com/news/ringrtc-call-hang-up-vulnerability-exploited-by-ma-44a04b</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ringrtc-call-hang-up-vulnerability-exploited-by-ma-44a04b</guid>
@@ -411,51 +456,6 @@
       <pubDate>Thu, 22 Oct 2026 12:00:00 GMT</pubDate>
       <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-02">CISA</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Siemens RUGGEDCOM APE1808 Devices Affected by Multiple CVEs</title>
-      <link>https://secubuzz.com/news/siemens-ruggedcom-ape1808-devices-affected-by-mult-42ff49</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/siemens-ruggedcom-ape1808-devices-affected-by-mult-42ff49</guid>
-      <description><![CDATA[Siemens RUGGEDCOM APE1808 devices are affected by multiple CVE‑2026‑33387 to CVE‑2026‑33920 vulnerabilities that enable template engine injection, CSRF, and authorization bypass. The flaws stem from improper neutralization of template elements, lack of administrator control, and cross‑site request forgery, posing medium‑to‑high risk for credential theft and system compromise. Siemens recommends contacting support for patch updates; operators should apply the latest firmware to eliminate the high‑severity vulnerabilities.]]></description>
-      <pubDate>Thu, 22 Oct 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-18">CISA</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Siemens SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP Firmware Vulnerabilities</title>
-      <link>https://secubuzz.com/news/siemens-simatic-s7-1500-cpu-1518-f-4-pn-dp-mfp-fir-42ff49</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/siemens-simatic-s7-1500-cpu-1518-f-4-pn-dp-mfp-fir-42ff49</guid>
-      <description><![CDATA[Multiple vulnerabilities in the GNU/Linux subsystem of Siemens SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP firmware V3.1.7 allow attackers to gain elevated privileges on the device. The flaw, rated CVSS 10, is a critical flaw that could enable remote code execution if exploited. Siemens has released firmware updates for affected models and recommends applying the patch or following the vendor’s mitigations.]]></description>
-      <pubDate>Thu, 22 Oct 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-11">CISA</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Siemens Capital Embedded AR Classic Out‑of‑Bounds Read Vulnerability (CVE‑2026‑89208)</title>
-      <link>https://secubuzz.com/news/siemens-capital-embedded-ar-classic-out-of-bounds-42ff49</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/siemens-capital-embedded-ar-classic-out-of-bounds-42ff49</guid>
-      <description><![CDATA[An out‑of‑bounds read flaw in Siemens Capital Embedded AR Classic versions 431‑422 and R20‑11 could trigger abnormal behavior, instability, or denial of service. The vulnerability, CVE‑2026‑89208, scores CVSS 5.3 and is exploitable via local or remote access to the affected devices. Siemens has released R20‑11‑11 and recommends applying the latest firmware or implementing vendor‑specified countermeasures for unsupported versions.]]></description>
-      <pubDate>Thu, 22 Oct 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-04">CISA</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Database Privilege Escalation Vulnerability in Siemens WinCC (CVE-2026-59241)</title>
-      <link>https://secubuzz.com/news/database-privilege-escalation-vulnerability-in-sie-42ff49</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/database-privilege-escalation-vulnerability-in-sie-42ff49</guid>
-      <description><![CDATA[A database privilege escalation vulnerability in Siemens WinCC versions V7.5, V8.0, and V8.1 permits an authenticated database user to execute arbitrary commands on the host system. The flaw carries a CVSS score of 8.8 and is identified as CVE-2026-59241, exposing critical infrastructure sectors to potential compromise. Siemens has released patched versions and recommends updating immediately or applying vendor‑issued mitigations.]]></description>
-      <pubDate>Thu, 22 Oct 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-13">CISA</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>XTIUM Expands XTAI with Centralized AI Governance and Cost Management</title>
-      <link>https://secubuzz.com/news/xtium-expands-xtai-with-centralized-ai-governance-1a8d62</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/xtium-expands-xtai-with-centralized-ai-governance-1a8d62</guid>
-      <description><![CDATA[XTIUM released an updated XTAI platform, adding an orchestrator that consolidates managed AI services, voice, custom agents, networks, and cloud resources. The new governance layer enables enterprises to monitor, control, and scale AI applications beyond pilot stages, improving operational oversight and cost efficiency. Adoption requires integrating the XTAI Orchestrator into existing AI workflows.]]></description>
-      <pubDate>Thu, 22 Oct 2026 11:41:02 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/22/xtium-xtai-orchestrator/">Help Net Security</source>
-      <category>Cloud</category>
     </item>
   </channel>
 </rss>

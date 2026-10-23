@@ -1,5 +1,103 @@
 [
   {
+    "id": "https://blog.cloudflare.com/origin-range-requests/",
+    "sourceUrl": "https://blog.cloudflare.com/origin-range-requests/",
+    "title": "Cloudflare Enhances Range Request Handling to Reduce Origin Bandwidth Waste",
+    "headline": "Cloudflare Enhances Range Request Handling to Reduce Origin Bandwidth Waste",
+    "summary": "Cloudflare’s Pingora cache architecture was updated to handle large file range requests more efficiently, targeting origin bandwidth waste on small requests. The change addresses naive byte-range caching that previously consumed gigabytes of origin bandwidth, reducing latency and bandwidth usage. No patch required; the update is deployed in Cloudflare’s infrastructure, improving performance for all users.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "publishedAt": "2026-10-23T18:22:59.000Z",
+    "url": "https://blog.cloudflare.com/origin-range-requests/",
+    "additionalSources": [
+      {
+        "source": "Cloudflare Security",
+        "sourceUrl": "https://blog.cloudflare.com/full-transaction-waf/"
+      }
+    ]
+  },
+  {
+    "id": "https://blog.cloudflare.com/post-quantum-geo-key-manager/",
+    "sourceUrl": "https://blog.cloudflare.com/post-quantum-geo-key-manager/",
+    "title": "Cloudflare Launches GeoKey Manager to Enforce Post‑Quantum Geographic Key Isolation",
+    "headline": "Cloudflare Launches GeoKey Manager to Enforce Post‑Quantum Geographic Key Isolation",
+    "summary": "Cloudflare introduced a post‑quantum GeoKey Manager that isolates decryption keys by geographic region, preventing harvest‑now‑decrypt‑later attacks. The solution rewrites the cryptography stack to enforce strict data sovereignty, ensuring keys cannot be extracted from one region and used elsewhere. The feature is available in Cloudflare’s current product offering; users should enable GeoKey Manager to maintain compliance with regional data‑protection regulations.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "publishedAt": "2026-10-23T18:06:56.000Z",
+    "url": "https://blog.cloudflare.com/post-quantum-geo-key-manager/",
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/north-korean-hackers/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-january/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-january/",
+    "title": "Microsoft Announces End of Support for Windows Server 2016",
+    "headline": "Microsoft Announces End of Support for Windows Server 2016",
+    "summary": "Microsoft announced Windows Server 2016 will reach end of support in January 2027, ceasing security updates. This end‑of‑life status means no further patches, exposing systems to unpatched vulnerabilities and potential exploitation. Organizations should upgrade to supported versions or apply extended support if available, and monitor for new advisories.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-23T17:05:07.000Z",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-january/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/quest-diagnostics-confirms-data-breach-exposed-patient-records/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/quest-diagnostics-confirms-data-breach-exposed-patient-records/",
+    "title": "Quest Diagnostics Breach Exposes Patient Records via Quanum LSM System",
+    "headline": "Quest Diagnostics Breach Exposes Patient Records via Quanum LSM System",
+    "summary": "Quest Diagnostics disclosed a breach exposing patient records after unauthorized access to its Quanum LSM system. The attacker leveraged compromised credentials to read sensitive medical data, potentially compromising privacy and regulatory compliance. Quest should conduct forensic analysis, notify affected patients, reset credentials, and strengthen access controls, implementing multi‑factor authentication immediately.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-23T16:40:07.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/quest-diagnostics-confirms-data-breach-exposed-patient-records/",
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/quest-diagnostics-network-intrusion"
+      }
+    ]
+  },
+  {
+    "id": "https://www.securityweek.com/in-other-news-tor-exit-relays-hijacked-banks-spot-rogue-ai-agents-self-rebuilding-macos-ransomware/",
+    "sourceUrl": "https://www.securityweek.com/in-other-news-tor-exit-relays-hijacked-banks-spot-rogue-ai-agents-self-rebuilding-macos-ransomware/",
+    "title": "APT28 Targets NATO Defense Firms via Compromised Systems",
+    "headline": "APT28 Targets NATO Defense Firms via Compromised Systems",
+    "summary": "APT28 targeted NATO defense firms via compromised systems, exploiting weak authentication and privileged accounts. The attack leveraged stolen credentials and lateral movement, causing unauthorized access to sensitive data and disrupting operational workflows. Security teams should enforce MFA, monitor for anomalous activity, apply vendor patches, and conduct thorough access reviews immediately.",
+    "category": "NATION_STATE",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-23T14:23:37.000Z",
+    "url": "https://www.securityweek.com/in-other-news-tor-exit-relays-hijacked-banks-spot-rogue-ai-agents-self-rebuilding-macos-ransomware/",
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/apt28-hackers/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.darkreading.com/cyber-risk/why-caribbean-threats-cascade-global-cyber-risk",
+    "sourceUrl": "https://www.darkreading.com/cyber-risk/why-caribbean-threats-cascade-global-cyber-risk",
+    "title": "Caribbean Cyber Threats Amplify Global Risk",
+    "headline": "Caribbean Cyber Threats Amplify Global Risk",
+    "summary": "Caribbean cyber threats are escalating, demonstrating how regional exploit activity can amplify global risk. The lack of robust security assurance allows attackers to accelerate exploitation, increasing the likelihood of cross-border compromise. Stakeholders should strengthen threat intelligence sharing, enforce rigorous vulnerability management, and adopt proactive security frameworks to mitigate cascading impacts.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-23T14:00:00.000Z",
+    "url": "https://www.darkreading.com/cyber-risk/why-caribbean-threats-cascade-global-cyber-risk",
+    "additionalSources": []
+  },
+  {
     "id": "https://isc.sans.edu/diary/rss/33450",
     "sourceUrl": "https://isc.sans.edu/diary/rss/33450",
     "title": "PHP Vulnerability Exploits Core Parsing Engine",
@@ -44,28 +142,6 @@
       {
         "source": "Help Net Security",
         "sourceUrl": "https://www.helpnetsecurity.com/2026/10/23/capcom-id-data-breach-11-million-records-exposed/"
-      }
-    ]
-  },
-  {
-    "id": "https://therecord.media/quest-diagnostics-network-intrusion",
-    "sourceUrl": "https://therecord.media/quest-diagnostics-network-intrusion",
-    "title": "Quest Diagnostics Potential Patient Data Breach",
-    "headline": "Quest Diagnostics Potential Patient Data Breach",
-    "summary": "Quest Diagnostics reported a potential breach of patient data in its lab service system after an attack. The incident involved unauthorized access to sensitive health records, but no specific vulnerability or CVE was disclosed, and the exploitation status remains unclear. The company advised affected patients to monitor accounts and recommended that security teams review access controls and audit logs.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "The Record",
-    "publishedAt": "2026-10-23T12:52:00.000Z",
-    "url": "https://therecord.media/quest-diagnostics-network-intrusion",
-    "additionalSources": [
-      {
-        "source": "Malwarebytes Labs",
-        "sourceUrl": "https://www.malwarebytes.com/blog/data-breaches/2026/10/crime-stoppers-chapter-freezes-tips-after-breach-breaks-anonymity-promise"
-      },
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/quest-diagnostics-reports-cyber-breach-affecting-certain-patient-records/"
       }
     ]
   },
@@ -262,6 +338,19 @@
         "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-08"
       }
     ]
+  },
+  {
+    "id": "https://therecord.media/php-php2shell-exploitation-attempts-pocs",
+    "sourceUrl": "https://therecord.media/php-php2shell-exploitation-attempts-pocs",
+    "title": "PHP2Shell Bugs Expose Input Validation Flaw in PHP",
+    "headline": "PHP2Shell Bugs Expose Input Validation Flaw in PHP",
+    "summary": "The PHP2Shell bugs expose a critical input validation flaw in PHP, allowing attackers to execute arbitrary code via crafted HTTP requests. Public proof‑of‑concepts exist, but the flaw needs authenticated access and is not yet confirmed active in the wild. Security teams should apply the latest PHP security patches and enable strict input sanitization to mitigate potential exploitation.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "publishedAt": "2026-10-23T04:00:00.000Z",
+    "url": "https://therecord.media/php-php2shell-exploitation-attempts-pocs",
+    "additionalSources": []
   },
   {
     "id": "https://www.darkreading.com/cyberattacks-data-breaches/state-bank-india-customer-pii-data-leak",
@@ -702,28 +791,6 @@
       {
         "source": "The Hacker News",
         "sourceUrl": "https://thehackernews.com/2026/10/openais-gpt-6-agent-removed-safety.html"
-      }
-    ]
-  },
-  {
-    "id": "https://cybersecuritynews.com/north-korean-hackers/",
-    "sourceUrl": "https://cybersecuritynews.com/north-korean-hackers/",
-    "title": "North Korean Lazarus Actors Use Post‑Quantum Encryption to Conceal Malware in Operation FlashHole",
-    "headline": "North Korean Lazarus Actors Use Post‑Quantum Encryption to Conceal Malware in Operation FlashHole",
-    "summary": "North Korean-linked Lazarus actors employ post‑quantum cryptography within Operation FlashHole to conceal malware payloads from security tools targeting South Korean organizations. The technique uses a modern key‑establishment protocol rather than simple disk encryption, enabling stealthy delivery and execution of malicious code. Security teams should monitor for anomalous cryptographic traffic and apply updated detection rules.",
-    "category": "NATION_STATE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-22T12:38:07.000Z",
-    "url": "https://cybersecuritynews.com/north-korean-hackers/",
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/operation-flashhole-lazarus-crossweb-ex-malware-defense"
-      },
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-use-post-quantum-cryptography-for-malware-delivery/"
       }
     ]
   },
@@ -1292,28 +1359,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://cybersecuritynews.com/apt28-hackers/",
-    "sourceUrl": "https://cybersecuritynews.com/apt28-hackers/",
-    "title": "APT28 Hackers Open Secret SSH Tunnel Into NATO Country’s Naval Shipbuilder Network",
-    "headline": "APT28 Hackers Open Secret SSH Tunnel Into NATO Country’s Naval Shipbuilder Network",
-    "summary": "APT28 hackers exploited the Hookedge backdoor to infiltrate a naval shipbuilder’s network in a NATO member state, establishing a covert SSH tunnel and exfiltrating login credentials. The intrusion persisted for at least two months, with attackers using the backdoor’s persistence to maintain unauthorized access. Apply the latest Hookedge patch, disable unused SSH, and audit privileged accounts.",
-    "category": "NATION_STATE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-21T14:37:17.000Z",
-    "url": "https://cybersecuritynews.com/apt28-hackers/",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/hackers-hid-vasilek-backdoor-in-vmware.html"
-      },
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/hackers-exploit-open-banking-services/"
-      }
-    ]
-  },
-  {
     "id": "https://therecord.media/php-script-vulnerabilities-warnings",
     "sourceUrl": "https://therecord.media/php-script-vulnerabilities-warnings",
     "title": "PHP Vulnerabilities Prompt Global Patch Release",
@@ -1325,24 +1370,6 @@
     "publishedAt": "2026-10-21T14:17:00.000Z",
     "url": "https://therecord.media/php-script-vulnerabilities-warnings",
     "additionalSources": []
-  },
-  {
-    "id": "https://blog.cloudflare.com/full-transaction-waf/",
-    "sourceUrl": "https://blog.cloudflare.com/full-transaction-waf/",
-    "title": "Cloudflare WAF Enhances Transaction Detection",
-    "headline": "Cloudflare WAF Enhances Transaction Detection",
-    "summary": "Cloudflare introduced full transaction detection in its web application firewall, enabling correlation between HTTP requests and responses to identify successful exploits and data exposure. The feature addresses gaps in request-only inspection, reducing false negatives and improving detection of sophisticated attacks. Customers should enable transaction detection in their WAF policies to enhance security posture.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "publishedAt": "2026-10-21T14:10:42.000Z",
-    "url": "https://blog.cloudflare.com/full-transaction-waf/",
-    "additionalSources": [
-      {
-        "source": "Cloudflare Security",
-        "sourceUrl": "https://blog.cloudflare.com/php-vulnerabilities-waf-protection/"
-      }
-    ]
   },
   {
     "id": "https://www.bleepingcomputer.com/news/security/clickfix-has-never-been-bigger-and-ai-tools-are-its-most-convincing-lure-yet/",
@@ -1734,6 +1761,19 @@
         "sourceUrl": "https://cybersecuritynews.com/wp2shell-attack/"
       }
     ]
+  },
+  {
+    "id": "https://www.crowdstrike.com/en-us/blog/crowdstrike-uncovers-new-agentic-ai-campaigns/",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-uncovers-new-agentic-ai-campaigns/",
+    "title": "CrowdStrike Uncovers New Agentic AI Campaigns",
+    "headline": "CrowdStrike Uncovers New Agentic AI Campaigns",
+    "summary": "CrowdStrike identified new agentic AI campaigns targeting enterprise networks via malicious code injection. The campaigns leverage machine learning models to generate polymorphic payloads, enabling stealthy persistence and lateral movement. Security teams should monitor for anomalous process behavior and apply the latest endpoint protection updates to mitigate these threats.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "CrowdStrike",
+    "publishedAt": "2026-10-21T05:00:00.000Z",
+    "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-uncovers-new-agentic-ai-campaigns/",
+    "additionalSources": []
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/10/21/bringing-ai-into-the-soc-video/",
@@ -5224,19 +5264,6 @@
     "source": "SANS Internet Storm Center",
     "publishedAt": "2026-10-10T09:11:34.000Z",
     "url": "https://isc.sans.edu/diary/rss/33414",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/reverse-engineer-anything-tool/",
-    "sourceUrl": "https://cybersecuritynews.com/reverse-engineer-anything-tool/",
-    "title": "REA Tool Integrates AI Coders with Ghidra and IDA Pro for Automated Reverse Engineering",
-    "headline": "REA Tool Integrates AI Coders with Ghidra and IDA Pro for Automated Reverse Engineering",
-    "summary": "The open‑source REA project connects AI coding agents Claude Code and Cursor to disassemblers Ghidra, IDA Pro, and Hopper, enabling researchers to trace program behavior and generate explanatory evidence without source code. It enhances reverse‑engineering workflows by automating analysis and documentation.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-10T08:08:45.000Z",
-    "url": "https://cybersecuritynews.com/reverse-engineer-anything-tool/",
     "additionalSources": []
   }
 ]
