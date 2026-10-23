@@ -40,12 +40,6 @@ import {
 } from '../../models/article';
 import { colors, spacing } from '../../theme/theme';
 import { haptics } from '../../utils/haptics';
-import {
-  getLastReadArticleUrl,
-  setLastReadArticleUrl,
-  calculateUnreadProgress,
-  resolveUnreadTarget,
-} from '../../services/feedProgressService';
 
 const BLUE = colors.accent;
 
@@ -138,8 +132,6 @@ export default function FeedScreen() {
   const [searchQuery, setSearchQuery] =
     useState('');
 
-  const [unreadTarget, setUnreadTarget] =
-    useState<number | null>(null);
 
   const [feedbackDismissed, setFeedbackDismissed] =
     useState(true);
@@ -312,37 +304,11 @@ export default function FeedScreen() {
   ]);
 
   /*
-   * Resolve session unread target on initial articles load.
+   * Continuous reading progress across the active feed.
    */
-  useEffect(() => {
-    if (filteredArticles.length > 0 && unreadTarget === null) {
-      void getLastReadArticleUrl().then((lastUrl) => {
-        const target = resolveUnreadTarget(
-          filteredArticles,
-          lastUrl,
-          (a) => a.sourceUrl,
-        );
-        setUnreadTarget(target);
-      });
-    }
-  }, [filteredArticles, unreadTarget]);
-
-  /*
-   * Record newest read article as user views items.
-   */
-  useEffect(() => {
-    if (filteredArticles.length > 0 && filteredArticles[currentIndex]) {
-      const viewedArticle = filteredArticles[currentIndex];
-      if (viewedArticle?.sourceUrl) {
-        void setLastReadArticleUrl(viewedArticle.sourceUrl);
-      }
-    }
-  }, [currentIndex, filteredArticles]);
-
-  const readProgressPct = calculateUnreadProgress(
-    currentIndex,
-    unreadTarget ?? filteredArticles.length,
-  );
+  const readProgressPct = filteredArticles.length > 0
+    ? Math.min(100, Math.round(((currentIndex + 1) / filteredArticles.length) * 100))
+    : 0;
 
   /*
    * Progressive loading.
@@ -500,7 +466,6 @@ export default function FeedScreen() {
         if (newArticles[0]?.id === previousTopId) {
           triggerUpToDateBanner();
         } else {
-          setUnreadTarget(null);
           void haptics.notificationSuccess();
         }
       } else if (newArticles) {

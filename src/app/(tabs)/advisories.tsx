@@ -37,12 +37,6 @@ import { getCveAdvisories } from '../../services/cveService';
 import { fetchEpssBatch, getEpssPercentile } from '../../services/epssService';
 import { spacing } from '../../theme/theme';
 import { haptics } from '../../utils/haptics';
-import {
-  getLastReadAdvisoryId,
-  setLastReadAdvisoryId,
-  calculateUnreadProgress,
-  resolveUnreadTarget,
-} from '../../services/feedProgressService';
 
 const INITIAL_ADVISORIES = 10;
 const ADVISORIES_PER_BATCH = 10;
@@ -83,7 +77,6 @@ export default function AdvisoriesScreen() {
   // Paging & Viewport Layout
   const [feedHeight, setFeedHeight] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [unreadTarget, setUnreadTarget] = useState<number | null>(null);
   const [loadedCount, setLoadedCount] = useState(INITIAL_ADVISORIES);
   const [now, setNow] = useState(() => new Date());
 
@@ -245,7 +238,6 @@ export default function AdvisoriesScreen() {
         if (fresh[0]?.id === prevTopId) {
           triggerUpToDateBanner();
         } else {
-          setUnreadTarget(null);
           void haptics.notificationSuccess();
         }
       } else {
@@ -365,35 +357,10 @@ export default function AdvisoriesScreen() {
     });
   }, [advisories, sourceFilter, severityFilter, epssFilter, searchQuery]);
 
-  // Resolve session unread target on initial advisories load
-  useEffect(() => {
-    if (filteredAdvisories.length > 0 && unreadTarget === null) {
-      void getLastReadAdvisoryId().then((lastId) => {
-        const target = resolveUnreadTarget(
-          filteredAdvisories,
-          lastId,
-          (a) => a.id || a.cveID,
-        );
-        setUnreadTarget(target);
-      });
-    }
-  }, [filteredAdvisories, unreadTarget]);
-
-  // Record newest read advisory as user views items
-  useEffect(() => {
-    if (filteredAdvisories.length > 0 && filteredAdvisories[currentIndex]) {
-      const viewedAdvisory = filteredAdvisories[currentIndex];
-      const id = viewedAdvisory?.id || viewedAdvisory?.cveID;
-      if (id) {
-        void setLastReadAdvisoryId(id);
-      }
-    }
-  }, [currentIndex, filteredAdvisories]);
-
-  const readProgressPct = calculateUnreadProgress(
-    currentIndex,
-    unreadTarget ?? filteredAdvisories.length,
-  );
+  // Continuous reading progress across the active advisories feed
+  const readProgressPct = filteredAdvisories.length > 0
+    ? Math.min(100, Math.round(((currentIndex + 1) / filteredAdvisories.length) * 100))
+    : 0;
 
   // Progressive batch loading
   const visibleAdvisories = useMemo(
