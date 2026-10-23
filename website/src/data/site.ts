@@ -4,21 +4,21 @@ export const PLAY_STORE_TESTING_URL = 'https://play.google.com/apps/testing/com.
 export const SUPPORT_URL = '/support';
 
 export const mainNav = [
-{ label: 'News', to: '/news' },
-{ label: 'CISA Advisories', to: '/advisories' },
-{ label: 'For Publishers', to: '/publishers' },
-{ label: 'About', to: '/about' }];
-
+  { label: 'News', to: '/news' },
+  { label: 'Advisories', to: '/advisories' },
+  { label: 'For Publishers', to: '/publishers' },
+  { label: 'About', to: '/about' },
+];
 
 export const footerNav = [
   {
     heading: 'Product',
     links: [
       { label: 'News briefs', to: '/news' },
-      { label: 'CISA advisories', to: '/advisories' },
+      { label: 'Advisories', to: '/advisories' },
       { label: 'Download the app', to: '/download' },
       { label: 'RSS Feed', to: '/rss.xml', external: true },
-    ]
+    ],
   },
 {
   heading: 'Company',

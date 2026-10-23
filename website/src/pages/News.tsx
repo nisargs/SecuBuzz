@@ -59,14 +59,14 @@ export function News() {
     <>
       <Seo
         title="Quick Cybersecurity News in 60 Words · SecuBuzz"
-        description="Quick, concise 60-word cybersecurity news briefs covering active zero-days, enterprise ransomware campaigns, and CISA advisories."
+        description="Quick, concise 60-word cybersecurity news briefs covering active zero-days, enterprise ransomware campaigns, and security advisories."
         canonicalPath="/news"
         jsonLd={{
           '@context': 'https://schema.org',
           '@type': 'CollectionPage',
           name: 'Quick Cybersecurity News in 60 Words',
           url: 'https://secubuzz.com/news',
-          description: 'Quick, concise 60-word cybersecurity news briefs covering active zero-days, enterprise ransomware campaigns, and CISA advisories.',
+          description: 'Quick, concise 60-word cybersecurity news briefs covering active zero-days, enterprise ransomware campaigns, and security advisories.',
         }}
       />
       <PageIntro

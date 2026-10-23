@@ -305,42 +305,6 @@ export default function FeedScreen() {
   ]);
 
   /*
-   * Today's Fresh Intelligence (24-Hour Horizon):
-   * Calculates how many stories broke in the last 24 hours.
-   * If there's a publishing lull (e.g. weekend), defaults to a minimum of 10 stories
-   * so the reader always has a reachable, satisfying daily triage finish line.
-   */
-  const todayTargetCount = useMemo(() => {
-    if (filteredArticles.length === 0) return 0;
-    const nowMs = Date.now();
-    const count24h = filteredArticles.filter((a) => {
-      const t = Date.parse(a.publishedAt || '');
-      return !Number.isNaN(t) && nowMs - t <= 24 * 60 * 60 * 1000;
-    }).length;
-
-    return Math.min(filteredArticles.length, Math.max(10, count24h));
-  }, [filteredArticles]);
-
-  const isArchiveMode = currentIndex >= todayTargetCount;
-
-  /*
-   * Reading progress calibrated to Today's Fresh Intelligence:
-   * Smoothly advances from 0% -> 100% as you read today's stories.
-   * Stays at 100% once today's horizon is completed and you browse historical archives.
-   */
-  const readProgressPct = useMemo(() => {
-    if (todayTargetCount === 0) return 0;
-    if (currentIndex >= todayTargetCount) return 100;
-    return Math.min(
-      100,
-      Math.max(
-        1,
-        Number((((currentIndex + 1) / todayTargetCount) * 100).toFixed(1)),
-      ),
-    );
-  }, [currentIndex, todayTargetCount]);
-
-  /*
    * Progressive loading.
    */
   const visibleArticles = useMemo(
@@ -375,6 +339,54 @@ export default function FeedScreen() {
 
     return items;
   }, [visibleArticles, feedbackDismissed]);
+
+  /*
+   * Today's Fresh Intelligence (24-Hour Horizon):
+   * Calculates the exact real number of stories published in the rolling last 24 hours.
+   * Shows the true unfiltered count (e.g. 49, 120, etc.) with zero artificial caps.
+   */
+  const todayTargetCount = useMemo(() => {
+    if (filteredArticles.length === 0) return 0;
+    const nowMs = Date.now();
+    return filteredArticles.filter((a) => {
+      const t = Date.parse(a.publishedAt || '');
+      return !Number.isNaN(t) && nowMs - t <= 24 * 60 * 60 * 1000;
+    }).length;
+  }, [filteredArticles]);
+
+  /*
+   * Exclude interstitial feedback/rating card at position #5 from story counts.
+   * Index 0..3: Stories 1..4
+   * Index 4: Feedback Card (displays "FEEDBACK", freezes count at 4)
+   * Index 5+: Stories 5+ (displayStoryNum = index)
+   */
+  const isViewingFeedback = !feedbackDismissed && feedItems[currentIndex]?.type === 'feedback';
+  const hasFeedbackBefore = !feedbackDismissed && feedItems.length > 4 && currentIndex >= 4;
+  const displayStoryIndex = hasFeedbackBefore
+    ? (isViewingFeedback ? 3 : currentIndex - 1)
+    : currentIndex;
+  const displayStoryNum = Math.min(filteredArticles.length, displayStoryIndex + 1);
+
+  const isArchiveMode = todayTargetCount === 0
+    ? true
+    : displayStoryNum > todayTargetCount;
+
+  /*
+   * Reading progress calibrated to Today's Fresh Intelligence:
+   * Smoothly advances from 0% -> 100% as you read today's stories.
+   * Stays at 100% once today's horizon is completed and you browse historical archives.
+   */
+  const readProgressPct = useMemo(() => {
+    if (filteredArticles.length === 0) return 0;
+    if (todayTargetCount === 0 || displayStoryNum >= todayTargetCount) return 100;
+    return Math.min(
+      100,
+      Math.max(
+        1,
+        Number(((displayStoryNum / todayTargetCount) * 100).toFixed(1)),
+      ),
+    );
+  }, [displayStoryNum, filteredArticles.length, todayTargetCount]);
 
   /*
    * Reset feed position when the category, severity,
@@ -529,9 +541,9 @@ export default function FeedScreen() {
         setShowBackToTop(false);
       }
 
-      if (feedHeight > 0 && filteredArticles.length > 0) {
+      if (feedHeight > 0 && feedItems.length > 0) {
         const nextIndex = Math.min(
-          filteredArticles.length - 1,
+          feedItems.length - 1,
           Math.max(0, Math.round(currentY / feedHeight)),
         );
         if (nextIndex !== currentIndexRef.current) {
@@ -551,7 +563,7 @@ export default function FeedScreen() {
 
       lastScrollY.current = currentY;
     },
-    [feedHeight, filteredArticles.length, visibleArticles.length],
+    [feedHeight, feedItems.length, filteredArticles.length, visibleArticles.length],
   );
 
   /*
@@ -569,7 +581,7 @@ export default function FeedScreen() {
         event.nativeEvent.contentOffset.y;
 
       const index = Math.min(
-        filteredArticles.length - 1,
+        feedItems.length - 1,
         Math.max(0, Math.round(offset / feedHeight)),
       );
 
@@ -666,10 +678,14 @@ export default function FeedScreen() {
                 style={[
                   styles.readingBadge,
                   {
-                    backgroundColor: isArchiveMode
+                    backgroundColor: isViewingFeedback
+                      ? (isDark ? 'rgba(245, 158, 11, 0.12)' : 'rgba(245, 158, 11, 0.08)')
+                      : isArchiveMode
                       ? (isDark ? 'rgba(148, 163, 184, 0.12)' : 'rgba(100, 116, 139, 0.08)')
                       : (isDark ? 'rgba(76, 201, 240, 0.12)' : 'rgba(2, 132, 199, 0.08)'),
-                    borderColor: isArchiveMode
+                    borderColor: isViewingFeedback
+                      ? (isDark ? 'rgba(245, 158, 11, 0.30)' : 'rgba(245, 158, 11, 0.25)')
+                      : isArchiveMode
                       ? (isDark ? 'rgba(148, 163, 184, 0.25)' : 'rgba(100, 116, 139, 0.20)')
                       : (isDark ? 'rgba(76, 201, 240, 0.25)' : 'rgba(2, 132, 199, 0.20)'),
                   },
@@ -678,14 +694,24 @@ export default function FeedScreen() {
                 <Text
                   style={[
                     styles.readingBadgeText,
-                    { color: isArchiveMode ? colors.textSecondary : accentColor },
+                    {
+                      color: isViewingFeedback
+                        ? '#F59E0B'
+                        : isArchiveMode
+                        ? colors.textSecondary
+                        : accentColor,
+                    },
                   ]}
+                  numberOfLines={1}
+                  ellipsizeMode="tail"
                 >
-                  {currentIndex + 1 === todayTargetCount
-                    ? `✓ CAUGHT UP (${todayTargetCount}/${todayTargetCount})`
+                  {isViewingFeedback
+                    ? 'FEEDBACK'
+                    : displayStoryNum === todayTargetCount
+                    ? `CAUGHT UP (${todayTargetCount}/${todayTargetCount})`
                     : isArchiveMode
-                    ? `ARCHIVE: ${currentIndex + 1} OF ${filteredArticles.length}`
-                    : `TODAY: ${currentIndex + 1} OF ${todayTargetCount}`}
+                    ? `ARCHIVE: ${displayStoryNum} OF ${filteredArticles.length}`
+                    : `TODAY: ${displayStoryNum} OF ${todayTargetCount}`}
                 </Text>
               </View>
             ) : null}

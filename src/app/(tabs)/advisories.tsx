@@ -359,41 +359,6 @@ export default function AdvisoriesScreen() {
     });
   }, [advisories, sourceFilter, severityFilter, epssFilter, searchQuery]);
 
-  /*
-   * Today's Fresh Zero-Day Horizon (24-Hour Horizon):
-   * Option C: Strictly calculates zero-days / advisories added in the last 24 hours.
-   * If CISA/GitHub added 0 CVEs in the last 24 hours, the app indicates "All Clear"
-   * (✓ NO NEW ZERO-DAYS TODAY) and immediately considers the daily horizon complete (100%).
-   */
-  const todayTargetCount = useMemo(() => {
-    if (filteredAdvisories.length === 0) return 0;
-    const nowMs = Date.now();
-    return filteredAdvisories.filter((a) => {
-      const t = Date.parse(a.dateAdded || '');
-      return !Number.isNaN(t) && nowMs - t <= 24 * 60 * 60 * 1000;
-    }).length;
-  }, [filteredAdvisories]);
-
-  // When 0 zero-days today, any scrolling past the first item is archive browsing
-  const isArchiveMode = todayTargetCount === 0 ? currentIndex > 0 : currentIndex >= todayTargetCount;
-
-  /*
-   * Reading progress calibrated to 24-Hour Zero-Day Horizon:
-   * If 0 added today: 100% (All clear!).
-   * If >0 added today: advances from 0% -> 100% as user triages today's zero-days.
-   */
-  const readProgressPct = useMemo(() => {
-    if (filteredAdvisories.length === 0) return 0;
-    if (todayTargetCount === 0 || currentIndex >= todayTargetCount) return 100;
-    return Math.min(
-      100,
-      Math.max(
-        1,
-        Number((((currentIndex + 1) / todayTargetCount) * 100).toFixed(1)),
-      ),
-    );
-  }, [currentIndex, filteredAdvisories.length, todayTargetCount]);
-
   // Progressive batch loading
   const visibleAdvisories = useMemo(
     () =>
@@ -425,6 +390,56 @@ export default function AdvisoriesScreen() {
     return items;
   }, [visibleAdvisories, feedbackDismissed]);
 
+  /*
+   * Today's Fresh Zero-Day Horizon (24-Hour Horizon):
+   * Option C: Strictly calculates zero-days / advisories added in the last 24 hours.
+   * If CISA/GitHub added 0 CVEs in the last 24 hours, the app indicates "0 NEW TODAY"
+   * and immediately considers the daily horizon complete (100%).
+   */
+  const todayTargetCount = useMemo(() => {
+    if (filteredAdvisories.length === 0) return 0;
+    const nowMs = Date.now();
+    return filteredAdvisories.filter((a) => {
+      const t = Date.parse(a.dateAdded || '');
+      return !Number.isNaN(t) && nowMs - t <= 24 * 60 * 60 * 1000;
+    }).length;
+  }, [filteredAdvisories]);
+
+  /*
+   * Exclude interstitial feedback/rating card at position #5 from advisory counts.
+   * Index 0..3: Advisories 1..4
+   * Index 4: Feedback Card (displays "FEEDBACK", freezes count at 4)
+   * Index 5+: Advisories 5+ (displayAdvisoryNum = index)
+   */
+  const isViewingFeedback = !feedbackDismissed && feedItems[currentIndex]?.type === 'feedback';
+  const hasFeedbackBefore = !feedbackDismissed && feedItems.length > 4 && currentIndex >= 4;
+  const displayAdvisoryIndex = hasFeedbackBefore
+    ? (isViewingFeedback ? 3 : currentIndex - 1)
+    : currentIndex;
+  const displayAdvisoryNum = Math.min(filteredAdvisories.length, displayAdvisoryIndex + 1);
+
+  // When 0 zero-days today, any scrolling past the first item is archive browsing
+  const isArchiveMode = todayTargetCount === 0
+    ? displayAdvisoryIndex > 0
+    : displayAdvisoryNum > todayTargetCount;
+
+  /*
+   * Reading progress calibrated to 24-Hour Zero-Day Horizon:
+   * If 0 added today: 100% (All clear!).
+   * If >0 added today: advances from 0% -> 100% as user triages today's zero-days.
+   */
+  const readProgressPct = useMemo(() => {
+    if (filteredAdvisories.length === 0) return 0;
+    if (todayTargetCount === 0 || displayAdvisoryNum >= todayTargetCount) return 100;
+    return Math.min(
+      100,
+      Math.max(
+        1,
+        Number(((displayAdvisoryNum / todayTargetCount) * 100).toFixed(1)),
+      ),
+    );
+  }, [displayAdvisoryNum, filteredAdvisories.length, todayTargetCount]);
+
   // Reset paging when filters change
   useEffect(() => {
     currentIndexRef.current = 0;
@@ -448,9 +463,9 @@ export default function AdvisoriesScreen() {
         setShowBackToTop(false);
       }
 
-      if (feedHeight > 0 && filteredAdvisories.length > 0) {
+      if (feedHeight > 0 && feedItems.length > 0) {
         const nextIndex = Math.min(
-          filteredAdvisories.length - 1,
+          feedItems.length - 1,
           Math.max(0, Math.round(currentY / feedHeight)),
         );
         if (nextIndex !== currentIndexRef.current) {
@@ -467,7 +482,7 @@ export default function AdvisoriesScreen() {
 
       lastScrollY.current = currentY;
     },
-    [feedHeight, filteredAdvisories.length, visibleAdvisories.length],
+    [feedHeight, feedItems.length, filteredAdvisories.length, visibleAdvisories.length],
   );
 
   // Swipe snapping handler (onMomentumScrollEnd / onScrollEndDrag)
@@ -477,7 +492,7 @@ export default function AdvisoriesScreen() {
 
       const offset = event.nativeEvent.contentOffset.y;
       const index = Math.min(
-        filteredAdvisories.length - 1,
+        feedItems.length - 1,
         Math.max(0, Math.round(offset / feedHeight)),
       );
       currentIndexRef.current = index;
@@ -491,7 +506,7 @@ export default function AdvisoriesScreen() {
         );
       }
     },
-    [feedHeight, filteredAdvisories.length, visibleAdvisories.length],
+    [feedHeight, feedItems.length, filteredAdvisories.length, visibleAdvisories.length],
   );
 
   const handleEndReached = useCallback(() => {
@@ -548,12 +563,16 @@ export default function AdvisoriesScreen() {
                 style={[
                   styles.telemetryBadge,
                   {
-                    backgroundColor: todayTargetCount === 0 && currentIndex === 0
+                    backgroundColor: isViewingFeedback
+                      ? (isDark ? 'rgba(245, 158, 11, 0.12)' : 'rgba(245, 158, 11, 0.08)')
+                      : todayTargetCount === 0 && displayAdvisoryIndex === 0
                       ? (isDark ? 'rgba(16, 185, 129, 0.12)' : 'rgba(16, 185, 129, 0.08)')
                       : isArchiveMode
                       ? (isDark ? 'rgba(148, 163, 184, 0.12)' : 'rgba(100, 116, 139, 0.08)')
                       : `${severityColors.CRITICAL.primary}18`,
-                    borderColor: todayTargetCount === 0 && currentIndex === 0
+                    borderColor: isViewingFeedback
+                      ? (isDark ? 'rgba(245, 158, 11, 0.30)' : 'rgba(245, 158, 11, 0.25)')
+                      : todayTargetCount === 0 && displayAdvisoryIndex === 0
                       ? (isDark ? 'rgba(16, 185, 129, 0.30)' : 'rgba(16, 185, 129, 0.25)')
                       : isArchiveMode
                       ? (isDark ? 'rgba(148, 163, 184, 0.25)' : 'rgba(100, 116, 139, 0.20)')
@@ -565,7 +584,9 @@ export default function AdvisoriesScreen() {
                   style={[
                     styles.telemetryDot,
                     {
-                      backgroundColor: todayTargetCount === 0 && currentIndex === 0
+                      backgroundColor: isViewingFeedback
+                        ? '#F59E0B'
+                        : todayTargetCount === 0 && displayAdvisoryIndex === 0
                         ? '#10B981'
                         : isArchiveMode
                         ? colors.textSecondary
@@ -577,25 +598,29 @@ export default function AdvisoriesScreen() {
                   style={[
                     styles.telemetryBadgeText,
                     {
-                      color: todayTargetCount === 0 && currentIndex === 0
+                      color: isViewingFeedback
+                        ? '#F59E0B'
+                        : todayTargetCount === 0 && displayAdvisoryIndex === 0
                         ? '#10B981'
                         : isArchiveMode
                         ? colors.textSecondary
                         : severityColors.CRITICAL.primary,
                     },
                   ]}
+                  numberOfLines={1}
+                  ellipsizeMode="tail"
                 >
-                  {todayTargetCount === 0
-                    ? currentIndex === 0
-                      ? `✓ NO NEW ZERO-DAYS TODAY (${advisories.length.toLocaleString()} TRACKED)`
-                      : `ARCHIVE: ${currentIndex + 1} OF ${filteredAdvisories.length.toLocaleString()}`
-                    : currentIndex + 1 === todayTargetCount
-                    ? `✓ TODAY'S THREATS TRIAGED (${todayTargetCount}/${todayTargetCount})`
+                  {isViewingFeedback
+                    ? 'FEEDBACK'
+                    : todayTargetCount === 0
+                    ? displayAdvisoryIndex === 0
+                      ? '0 NEW TODAY'
+                      : `ARCHIVE: ${displayAdvisoryNum} OF ${filteredAdvisories.length.toLocaleString()}`
+                    : displayAdvisoryNum === todayTargetCount
+                    ? `CAUGHT UP (${todayTargetCount}/${todayTargetCount})`
                     : isArchiveMode
-                    ? `ARCHIVE: ${currentIndex + 1} OF ${filteredAdvisories.length.toLocaleString()}`
-                    : isAnyFilterActive
-                    ? `TODAY: ${currentIndex + 1} OF ${todayTargetCount} (${filteredAdvisories.length} FILTERED)`
-                    : `TODAY: ${currentIndex + 1} OF ${todayTargetCount} (${advisories.length.toLocaleString()} TRACKED)`}
+                    ? `ARCHIVE: ${displayAdvisoryNum} OF ${filteredAdvisories.length.toLocaleString()}`
+                    : `TODAY: ${displayAdvisoryNum} OF ${todayTargetCount}`}
                 </Text>
               </View>
             ) : null}
@@ -995,7 +1020,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 8,
     marginTop: 3,
-    flexWrap: 'wrap',
   },
   telemetryBadge: {
     flexDirection: 'row',

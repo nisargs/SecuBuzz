@@ -91,20 +91,20 @@ export function Advisories() {
   return (
     <>
       <Seo
-        title="CISA Known Exploited Vulnerabilities (KEV) Tracker & EPSS Radar · SecuBuzz"
-        description="Track active zero-days in the CISA Known Exploited Vulnerabilities (KEV) catalog with federal remediation deadlines, EPSS exploit likelihood scores, and vendor patch actions."
+        title="Security Advisories & CISA KEV Radar · SecuBuzz"
+        description="Track active zero-days, CISA Known Exploited Vulnerabilities (KEV) with federal remediation deadlines, EPSS exploit likelihood scores, and vendor patch actions."
         canonicalPath="/advisories"
         jsonLd={{
           '@context': 'https://schema.org',
           '@type': 'CollectionPage',
-          name: 'CISA Known Exploited Vulnerabilities (KEV) Radar',
+          name: 'Security Advisories & CISA KEV Radar',
           url: 'https://secubuzz.com/advisories',
-          description: 'Track active zero-days in the CISA Known Exploited Vulnerabilities (KEV) catalog with federal remediation deadlines, EPSS exploit likelihood scores, and vendor patch actions.',
+          description: 'Track active zero-days, CISA Known Exploited Vulnerabilities (KEV) with federal remediation deadlines, EPSS exploit likelihood scores, and vendor patch actions.',
         }}
       />
       <PageIntro
-        title="CISA Known Exploited Vulnerabilities"
-        description="Vulnerabilities CISA has confirmed are being exploited in the wild. Federal agencies must remediate by the due date; everyone else should treat it as a strong signal.">
+        title="Security Advisories"
+        description="Actionable intelligence on actively exploited zero-days, CISA federal remediation mandates, and critical ecosystem security advisories.">
         
         <dl className="mt-8 flex flex-wrap gap-x-10 gap-y-4">
           <div>
