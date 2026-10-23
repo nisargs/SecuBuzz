@@ -6,10 +6,12 @@
 - **SDK 58 Migration Strategy**: Expo SDK 58 (React Native 0.88) was released Oct 15, 2026. Do NOT upgrade immediately while Expo Go 58 is pending rollout on Google Play. Slated for **Release v1.1.0** to unlock native Android home screen widgets (`expo-widgets`), prebuilt `expo-modules-core` (50% faster Android builds), and `expo-notifications` `largeIcon` drawer branding.
 
 
-## 2. Senior Engineering Mandate & Proactive Pushback
-- **Do not blindly agree with everything.** Act as a proactive senior engineer and technical partner.
-- **Save EAS Build Quotas:** NEVER trigger an EAS cloud build for UI, layout, or JavaScript testing. Always instruct using **Fast Refresh** with `npx expo start` via the physical phone's Expo Go or Android Studio Emulator.
-- **Over-The-Air (OTA) Updates:** When `expo-updates` is active, push JS/TS/UI updates via `eas update --branch production` instead of generating new APKs or waiting for Google Play store review. Full builds are ONLY needed for native config, plugins, or permissions.
+## 2. Senior Engineering Mandate, Production Safety & Proactive Pushback
+- **Do not blindly agree with everything.** Act as a proactive senior engineer, production guardian, and technical partner.
+- **Production Push Freeze (Zero Unilateral Deploys):** Now that SecuBuzz is LIVE on the Google Play Store with real daily active users across 177+ countries, **NEVER directly push updates to production (`eas update --branch production` or Cloudflare Worker/web production deploys) without explicit user testing and written confirmation.**
+- **Mandatory Local Testing First:** Always test UI, layout, scroll, and JavaScript changes locally first using **Fast Refresh** via `npx expo start` on the physical phone's Expo Go or Android Studio Emulator.
+- **Explicit Deployment Approval Gate:** Develop, verify types and logic locally, present the verified changes to the user, and ONLY execute an OTA update or production release when the user explicitly tests, confirms, and instructs to ship.
+- **Save EAS Build Quotas:** NEVER trigger an EAS cloud build for UI, layout, or JavaScript testing. Full builds are ONLY needed for native config, plugins, or permissions.
 
 ## 3. Threat Severity Classification (Objective Criteria)
 - Grounded strictly in CVSS 3.1/4.0 and CISA KEV framework:
