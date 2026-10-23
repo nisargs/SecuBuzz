@@ -670,7 +670,10 @@ export default function FeedScreen() {
           </View>
 
           <View style={styles.subtitleRow}>
-            <Text style={[styles.subtitle, { color: colors.textPrimary }]}>
+            <Text
+              style={[styles.subtitle, { color: colors.textPrimary }]}
+              numberOfLines={1}
+            >
               60-WORD SECURITY BRIEFS
             </Text>
             {filteredArticles.length > 0 ? (
@@ -682,12 +685,12 @@ export default function FeedScreen() {
                       ? (isDark ? 'rgba(245, 158, 11, 0.12)' : 'rgba(245, 158, 11, 0.08)')
                       : isArchiveMode
                       ? (isDark ? 'rgba(148, 163, 184, 0.12)' : 'rgba(100, 116, 139, 0.08)')
-                      : (isDark ? 'rgba(76, 201, 240, 0.12)' : 'rgba(2, 132, 199, 0.08)'),
+                      : (isDark ? `${accentColor}18` : `${accentColor}10`),
                     borderColor: isViewingFeedback
                       ? (isDark ? 'rgba(245, 158, 11, 0.30)' : 'rgba(245, 158, 11, 0.25)')
                       : isArchiveMode
                       ? (isDark ? 'rgba(148, 163, 184, 0.25)' : 'rgba(100, 116, 139, 0.20)')
-                      : (isDark ? 'rgba(76, 201, 240, 0.25)' : 'rgba(2, 132, 199, 0.20)'),
+                      : (isDark ? `${accentColor}35` : `${accentColor}25`),
                   },
                 ]}
               >
@@ -1205,15 +1208,14 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 8,
-    marginTop: 4,
-    flexWrap: 'wrap',
+    marginTop: 3,
   },
 
   subtitle: {
     color: colors.textPrimary,
     fontFamily: 'Exo_600SemiBold',
-    fontSize: 11,
-    letterSpacing: 2,
+    fontSize: 10,
+    letterSpacing: 1.1,
   },
 
   readingBadge: {

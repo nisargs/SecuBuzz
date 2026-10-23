@@ -319,7 +319,7 @@ export function Advisories() {
         )}
 
         <p className="mt-6 text-xs text-subtle">
-          Source: CISA Known Exploited Vulnerabilities catalog. SecuBuzz tracks all cataloged vulnerabilities with remediation deadlines.
+          Sources: CISA Known Exploited Vulnerabilities (KEV) catalog and the GitHub Security Advisory Database. Exploit probability percentiles powered by FIRST.org EPSS.
         </p>
       </div>
     </>);

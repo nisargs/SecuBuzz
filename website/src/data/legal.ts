@@ -108,7 +108,7 @@ export const termsSections: LegalSection[] = [
     id: 'service',
     heading: 'The Service',
     body: [
-      'SecuBuzz provides factual, 60-word summaries of public cybersecurity disclosures and CISA Known Exploited Vulnerabilities catalog updates. SecuBuzz is developed and operated by MiSo Labs. SecuBuzz and MiSo Labs are independent of and not affiliated with, sponsored by, or endorsed by CISA, the Department of Homeland Security, or external news publishers.'
+      'SecuBuzz provides factual, 60-word summaries of public cybersecurity disclosures and authoritative security advisories sourced from the CISA Known Exploited Vulnerabilities (KEV) catalog and the GitHub Security Advisory Database, enriched with FIRST.org EPSS exploit telemetry. SecuBuzz is developed and operated by MiSo Labs. SecuBuzz and MiSo Labs are independent of and not affiliated with, sponsored by, or endorsed by CISA, the Department of Homeland Security, GitHub, or external news publishers.'
     ]
   },
   {
@@ -122,7 +122,7 @@ export const termsSections: LegalSection[] = [
     id: 'sources',
     heading: 'Monitored Sources & Feeds',
     body: [
-      'SecuBuzz indexes public cybersecurity reporting, official bulletins, and threat research from the following 27 independent newsrooms, government CERT advisories, and threat research organizations:'
+      'SecuBuzz indexes public cybersecurity reporting, official bulletins, and threat research from 27 independent newsrooms, government CERT advisories, and threat research organizations for its 60-word news briefs. In addition, SecuBuzz ingests authoritative security advisories directly from the CISA Known Exploited Vulnerabilities (KEV) catalog (cisa.gov) and the GitHub Security Advisory Database (github.com/advisories), with exploit likelihood percentiles powered by FIRST.org EPSS.'
     ],
     sourcesList: [
       { name: 'The Hacker News', domain: 'thehackernews.com', url: 'https://thehackernews.com' },

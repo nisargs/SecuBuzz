@@ -50,8 +50,8 @@ export function About() {
           </p>
           <p>
             We built SecuBuzz to cut straight to what matters. Our automated intelligence pipeline ingests
-            coverage from 20 authoritative security publications and the CISA Known Exploited Vulnerabilities (KEV)
-            catalog hourly around the clock, distilling complex developments into objective, 60-word briefs with direct links to primary sources.
+            coverage from 27 authoritative security publications, the CISA Known Exploited Vulnerabilities (KEV)
+            catalog, and the GitHub Security Advisory Database hourly around the clock, distilling complex developments into objective, 60-word briefs with direct links to primary sources.
           </p>
           <p>
             SecuBuzz is engineered with a strict <strong className="text-ink">privacy-first architecture</strong>: no user accounts, no trackers,
@@ -67,7 +67,7 @@ export function About() {
             >
               Nisarg Soni
             </a>{' '}
-            at MiSo Labs. Not affiliated with or endorsed by CISA.
+            at MiSo Labs. Not affiliated with or endorsed by CISA or GitHub.
           </p>
         </div>
       </section>

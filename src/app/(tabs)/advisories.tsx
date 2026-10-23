@@ -564,7 +564,10 @@ export default function AdvisoriesScreen() {
           </View>
 
           <View style={styles.subtitleRow}>
-            <Text style={[styles.subtitle, { color: colors.textPrimary }]}>
+            <Text
+              style={[styles.subtitle, { color: colors.textPrimary }]}
+              numberOfLines={1}
+            >
               EXPLOITED ZERO-DAYS & THREATS
             </Text>
             {advisories.length > 0 ? (
@@ -578,31 +581,17 @@ export default function AdvisoriesScreen() {
                       ? (isDark ? 'rgba(16, 185, 129, 0.12)' : 'rgba(16, 185, 129, 0.08)')
                       : isArchiveMode
                       ? (isDark ? 'rgba(148, 163, 184, 0.12)' : 'rgba(100, 116, 139, 0.08)')
-                      : `${severityColors.CRITICAL.primary}18`,
+                      : (isDark ? `${accentColor}18` : `${accentColor}10`),
                     borderColor: isViewingFeedback
                       ? (isDark ? 'rgba(245, 158, 11, 0.30)' : 'rgba(245, 158, 11, 0.25)')
                       : todayTargetCount === 0 && displayAdvisoryIndex === 0
                       ? (isDark ? 'rgba(16, 185, 129, 0.30)' : 'rgba(16, 185, 129, 0.25)')
                       : isArchiveMode
                       ? (isDark ? 'rgba(148, 163, 184, 0.25)' : 'rgba(100, 116, 139, 0.20)')
-                      : `${severityColors.CRITICAL.primary}35`,
+                      : (isDark ? `${accentColor}35` : `${accentColor}25`),
                   },
                 ]}
               >
-                <View
-                  style={[
-                    styles.telemetryDot,
-                    {
-                      backgroundColor: isViewingFeedback
-                        ? '#F59E0B'
-                        : todayTargetCount === 0 && displayAdvisoryIndex === 0
-                        ? '#10B981'
-                        : isArchiveMode
-                        ? colors.textSecondary
-                        : severityColors.CRITICAL.primary,
-                    },
-                  ]}
-                />
                 <Text
                   style={[
                     styles.telemetryBadgeText,
@@ -613,7 +602,7 @@ export default function AdvisoriesScreen() {
                         ? '#10B981'
                         : isArchiveMode
                         ? colors.textSecondary
-                        : severityColors.CRITICAL.primary,
+                        : accentColor,
                     },
                   ]}
                   numberOfLines={1}
@@ -1031,23 +1020,15 @@ const styles = StyleSheet.create({
     marginTop: 3,
   },
   telemetryBadge: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 4,
     paddingHorizontal: 6,
     paddingVertical: 1.5,
     borderRadius: 4,
     borderWidth: 1,
   },
-  telemetryDot: {
-    width: 5,
-    height: 5,
-    borderRadius: 2.5,
-  },
   telemetryBadgeText: {
     fontFamily: 'Exo_700Bold',
     fontSize: 9,
-    letterSpacing: 0.6,
+    letterSpacing: 0.8,
   },
   headerActions: {
     flexDirection: 'row',
