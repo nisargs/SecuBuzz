@@ -305,15 +305,40 @@ export default function FeedScreen() {
   ]);
 
   /*
-   * Continuous reading progress across the active feed.
+   * Today's Fresh Intelligence (24-Hour Horizon):
+   * Calculates how many stories broke in the last 24 hours.
+   * If there's a publishing lull (e.g. weekend), defaults to a minimum of 10 stories
+   * so the reader always has a reachable, satisfying daily triage finish line.
+   */
+  const todayTargetCount = useMemo(() => {
+    if (filteredArticles.length === 0) return 0;
+    const nowMs = Date.now();
+    const count24h = filteredArticles.filter((a) => {
+      const t = Date.parse(a.publishedAt || '');
+      return !Number.isNaN(t) && nowMs - t <= 24 * 60 * 60 * 1000;
+    }).length;
+
+    return Math.min(filteredArticles.length, Math.max(10, count24h));
+  }, [filteredArticles]);
+
+  const isArchiveMode = currentIndex >= todayTargetCount;
+
+  /*
+   * Reading progress calibrated to Today's Fresh Intelligence:
+   * Smoothly advances from 0% -> 100% as you read today's stories.
+   * Stays at 100% once today's horizon is completed and you browse historical archives.
    */
   const readProgressPct = useMemo(() => {
-    if (filteredArticles.length === 0) return 0;
+    if (todayTargetCount === 0) return 0;
+    if (currentIndex >= todayTargetCount) return 100;
     return Math.min(
       100,
-      Math.max(1, Number((((currentIndex + 1) / filteredArticles.length) * 100).toFixed(2))),
+      Math.max(
+        1,
+        Number((((currentIndex + 1) / todayTargetCount) * 100).toFixed(1)),
+      ),
     );
-  }, [currentIndex, filteredArticles.length]);
+  }, [currentIndex, todayTargetCount]);
 
   /*
    * Progressive loading.
@@ -614,7 +639,7 @@ export default function FeedScreen() {
       <View style={styles.header}>
         <Pressable
           accessibilityRole="button"
-          accessibilityLabel="Scroll to top story"
+          accessibilityLabel="Scroll to top brief"
           hitSlop={8}
           onPress={scrollToTop}
           style={styles.headerLeft}
@@ -641,22 +666,26 @@ export default function FeedScreen() {
                 style={[
                   styles.readingBadge,
                   {
-                    backgroundColor: isDark
-                      ? 'rgba(76, 201, 240, 0.12)'
-                      : 'rgba(2, 132, 199, 0.08)',
-                    borderColor: isDark
-                      ? 'rgba(76, 201, 240, 0.25)'
-                      : 'rgba(2, 132, 199, 0.20)',
+                    backgroundColor: isArchiveMode
+                      ? (isDark ? 'rgba(148, 163, 184, 0.12)' : 'rgba(100, 116, 139, 0.08)')
+                      : (isDark ? 'rgba(76, 201, 240, 0.12)' : 'rgba(2, 132, 199, 0.08)'),
+                    borderColor: isArchiveMode
+                      ? (isDark ? 'rgba(148, 163, 184, 0.25)' : 'rgba(100, 116, 139, 0.20)')
+                      : (isDark ? 'rgba(76, 201, 240, 0.25)' : 'rgba(2, 132, 199, 0.20)'),
                   },
                 ]}
               >
                 <Text
                   style={[
                     styles.readingBadgeText,
-                    { color: accentColor },
+                    { color: isArchiveMode ? colors.textSecondary : accentColor },
                   ]}
                 >
-                  {currentIndex + 1} OF {filteredArticles.length}
+                  {currentIndex + 1 === todayTargetCount
+                    ? `✓ CAUGHT UP (${todayTargetCount}/${todayTargetCount})`
+                    : isArchiveMode
+                    ? `ARCHIVE: ${currentIndex + 1} OF ${filteredArticles.length}`
+                    : `TODAY: ${currentIndex + 1} OF ${todayTargetCount}`}
                 </Text>
               </View>
             ) : null}
@@ -990,7 +1019,7 @@ export default function FeedScreen() {
         >
           <Pressable
             accessibilityRole="button"
-            accessibilityLabel="Back to top story"
+            accessibilityLabel="Back to top brief"
             hitSlop={8}
             onPress={scrollToTop}
             style={({ pressed }) => [
@@ -1009,7 +1038,7 @@ export default function FeedScreen() {
               color={accentColor}
             />
             <Text style={[styles.backToTopText, { color: accentColor }]}>
-              TOP
+              TOP BRIEF
             </Text>
           </Pressable>
         </Animated.View>

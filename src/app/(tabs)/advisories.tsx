@@ -359,14 +359,42 @@ export default function AdvisoriesScreen() {
     });
   }, [advisories, sourceFilter, severityFilter, epssFilter, searchQuery]);
 
-  // Continuous reading progress across the active advisories feed
-  const readProgressPct = useMemo(() => {
+  /*
+   * Fresh Intelligence Target (Recent Threats & Active Zero-Days):
+   * Calculates how many advisories were added in the recent window (last 30 days).
+   * Minimum target of 10 so the user has an achievable, satisfying finish line.
+   */
+  const recentTargetCount = useMemo(() => {
     if (filteredAdvisories.length === 0) return 0;
+    if (filteredAdvisories.length <= 25) return filteredAdvisories.length;
+
+    const nowMs = Date.now();
+    const count30d = filteredAdvisories.filter((a) => {
+      const t = Date.parse(a.dateAdded || '');
+      return !Number.isNaN(t) && nowMs - t <= 30 * 24 * 60 * 60 * 1000;
+    }).length;
+
+    return Math.min(filteredAdvisories.length, Math.max(10, count30d));
+  }, [filteredAdvisories]);
+
+  const isArchiveMode = currentIndex >= recentTargetCount;
+
+  /*
+   * Reading progress calibrated to Fresh Advisories / Zero-Days:
+   * Smoothly advances from 0% -> 100% as you triage recent threats.
+   * Stays at 100% once recent threats are completed and you browse the historical CVE catalog.
+   */
+  const readProgressPct = useMemo(() => {
+    if (recentTargetCount === 0) return 0;
+    if (currentIndex >= recentTargetCount) return 100;
     return Math.min(
       100,
-      Math.max(1, Number((((currentIndex + 1) / filteredAdvisories.length) * 100).toFixed(2))),
+      Math.max(
+        1,
+        Number((((currentIndex + 1) / recentTargetCount) * 100).toFixed(1)),
+      ),
     );
-  }, [currentIndex, filteredAdvisories.length]);
+  }, [currentIndex, recentTargetCount]);
 
   // Progressive batch loading
   const visibleAdvisories = useMemo(
@@ -522,26 +550,42 @@ export default function AdvisoriesScreen() {
                 style={[
                   styles.telemetryBadge,
                   {
-                    backgroundColor: `${severityColors.CRITICAL.primary}18`,
-                    borderColor: `${severityColors.CRITICAL.primary}35`,
+                    backgroundColor: isArchiveMode
+                      ? (isDark ? 'rgba(148, 163, 184, 0.12)' : 'rgba(100, 116, 139, 0.08)')
+                      : `${severityColors.CRITICAL.primary}18`,
+                    borderColor: isArchiveMode
+                      ? (isDark ? 'rgba(148, 163, 184, 0.25)' : 'rgba(100, 116, 139, 0.20)')
+                      : `${severityColors.CRITICAL.primary}35`,
                   },
                 ]}
               >
                 <View
                   style={[
                     styles.telemetryDot,
-                    { backgroundColor: severityColors.CRITICAL.primary },
+                    {
+                      backgroundColor: isArchiveMode
+                        ? colors.textSecondary
+                        : severityColors.CRITICAL.primary,
+                    },
                   ]}
                 />
                 <Text
                   style={[
                     styles.telemetryBadgeText,
-                    { color: severityColors.CRITICAL.primary },
+                    {
+                      color: isArchiveMode
+                        ? colors.textSecondary
+                        : severityColors.CRITICAL.primary,
+                    },
                   ]}
                 >
-                  {isAnyFilterActive
-                    ? `${currentIndex + 1} OF ${filteredAdvisories.length} (${advisories.length.toLocaleString()} TRACKED)`
-                    : `${currentIndex + 1} OF ${advisories.length.toLocaleString()} TRACKED`}
+                  {currentIndex + 1 === recentTargetCount
+                    ? `✓ RECENT THREATS TRIAGED (${recentTargetCount}/${recentTargetCount})`
+                    : isArchiveMode
+                    ? `ARCHIVE: ${currentIndex + 1} OF ${filteredAdvisories.length.toLocaleString()}`
+                    : isAnyFilterActive
+                    ? `ACTIVE: ${currentIndex + 1} OF ${filteredAdvisories.length} (${advisories.length.toLocaleString()} TRACKED)`
+                    : `ACTIVE: ${currentIndex + 1} OF ${recentTargetCount} (${advisories.length.toLocaleString()} TRACKED)`}
                 </Text>
               </View>
             ) : null}
