@@ -84,7 +84,7 @@ export const advisories: Advisory[] = [
     "severity": "Medium",
     "cwe": "CWE-79",
     "ransomware": false,
-    "description": "useHeadSafe restricts head input to an allowlist of safe tags and attributes. For example, bodyAttrs is limited to class and style, event handler attributes are removed, and tags are only kept for JSON types.",
+    "description": "useHeadSafe restricts head input to an allowlist of safe tags and attributes. For example, bodyAttrs is limited to class and style, event handler attributes are removed, and <script> tags are only kept for JSON types.",
     "requiredAction": "Upgrade nuxt to version 4.6.2 or later.",
     "references": [
       {
@@ -109,7 +109,7 @@ export const advisories: Advisory[] = [
     "severity": "Low",
     "cwe": "CWE-79",
     "ransomware": false,
-    "description": "An application that renders with a value it does not control can be made to render an anchor whose href executes script in the application's origin when clicked. This is an incomplete fix for GHSA-934w-87qh-qr26 (CVE-2026-53722). It only affects applications running without a pages/ directory, where pages resolves to false and Nuxt registers its own router in place of vue-router.",
+    "description": "An application that renders <NuxtLink :to=\"...\"> with a value it does not control can be made to render an anchor whose href executes script in the application's origin when clicked. This is an incomplete fix for GHSA-934w-87qh-qr26 (CVE-2026-53722).",
     "requiredAction": "Upgrade nuxt to version 4.6.0 or later.",
     "references": [
       {
@@ -580,7 +580,7 @@ export const advisories: Advisory[] = [
     "severity": "Medium",
     "cwe": "CWE-79",
     "ransomware": false,
-    "description": "Astro's JSX and MDX rendering pipeline treated string children of and elements as trusted HTML. When a dynamic value was passed through a JSX expression, such as {value}, an attacker-controlled value containing or could terminate the element and inject arbitrary HTML and JavaScript. Other JSX expression contexts escaped dynamic strings automatically.",
+    "description": "Astro's JSX and MDX rendering pipeline treated string children of <script> and <style> elements as trusted HTML. When a dynamic value was passed through a JSX expression, such as <script>{value}</script>, an attacker-controlled value containing </script> or </style> could terminate the element and inject arbitrary HTML and JavaScript.",
     "requiredAction": "Upgrade astro to version 7.3.2 or later.",
     "references": [
       {
@@ -655,7 +655,7 @@ export const advisories: Advisory[] = [
     "severity": "High",
     "cwe": "CWE-400",
     "ransomware": false,
-    "description": "The parser's maxtokens limit — the documented defence against oversized GraphQL documents — did not count comment tokens. A document padded with comments could therefore pass a maxtokens check of any size while still allocating one Token object per comment, all of which stay reachable for the lifetime of the parsed document.",
+    "description": "The parser's max_tokens limit — the documented defence against oversized GraphQL documents — did not count comment tokens. A document padded with comments could therefore pass a max_tokens check of any size while still allocating one Token object per comment, all of which stay reachable for the lifetime of the parsed document.",
     "requiredAction": "Upgrade graphql-core to version 3.2.12 or later.",
     "references": [
       {
@@ -705,7 +705,7 @@ export const advisories: Advisory[] = [
     "severity": "Critical",
     "cwe": "CWE-79",
     "ransomware": false,
-    "description": "When DOMPurify is configured with SAFEFORTEMPLATES: true together with a DOM-returning mode (RETURNDOM: true, RETURNDOMFRAGMENT: true, or INPLACE: true), template expressions such as {{...}}, ${...}, and survive sanitization inside the text content of an attached shadow root.",
+    "description": "When DOMPurify is configured with SAFE_FOR_TEMPLATES: true together with a DOM-returning mode (RETURN_DOM: true, RETURN_DOM_FRAGMENT: true, or IN_PLACE: true), template expressions such as {{...}}, ${...}, and <%...%> survive sanitization inside the text content of an attached shadow root.",
     "requiredAction": "Upgrade dompurify to version 3.4.17 or later.",
     "references": [
       {
@@ -726,7 +726,7 @@ export const advisories: Advisory[] = [
     "severity": "High",
     "cwe": "CWE-79",
     "ransomware": false,
-    "description": "The 3.4.16 fix for GHSA-p98j-92pf-mc4p only covers a hook that removes the node it was called for. If an INPLACE hook removes a different node, like the current node's parent or a sibling that has not been visited yet, that subtree is never walked or neutralized. Event handlers in it stay on the elements, and an that was already loading fires after sanitize() returns.",
+    "description": "The 3.4.16 fix for GHSA-p98j-92pf-mc4p only covers a hook that removes the node it was called for. If an IN_PLACE hook removes a different node, like the current node's parent or a sibling that has not been visited yet, that subtree is never walked or neutralized. Event handlers in it stay on the elements, and an that was already loading fires after sanitize() returns.",
     "requiredAction": "Upgrade dompurify to version 3.4.17 or later.",
     "references": [
       {
@@ -747,7 +747,7 @@ export const advisories: Advisory[] = [
     "severity": "Low",
     "cwe": "CWE-79",
     "ransomware": false,
-    "description": "DOMPurify drops attributeName attributes whose value contains href, so an allowed or can't rewrite a link's href after sanitizing. The check compares the attribute name after transformCaseFunc, and that function doesn't lowercase in XHTML mode. In XHTML the attribute is spelled attributeName, so the comparison with \"attributename\" never matches and the guard does nothing.",
+    "description": "DOMPurify drops attributeName attributes whose value contains href, so an allowed <animate> or <set> can't rewrite a link's href after sanitizing. The check compares the attribute name after transformCaseFunc, and that function doesn't lowercase in XHTML mode. In XHTML the attribute is spelled attributeName, so the comparison with \"attributename\" never matches and the guard does nothing.",
     "requiredAction": "Upgrade dompurify to version 3.4.17 or later.",
     "references": [
       {
@@ -893,7 +893,7 @@ export const advisories: Advisory[] = [
     "severity": "High",
     "cwe": "CWE-400",
     "ransomware": false,
-    "description": "DRF's content negotiation parses each Accept token several times per request and never limits the number of tokens or their total size. Each parse ends up in Django's parseheaderparameters, which takes quadratic time when a quoted parameter value is packed with semicolons.",
+    "description": "DRF's content negotiation parses each Accept token several times per request and never limits the number of tokens or their total size. Each parse ends up in Django's parse_header_parameters, which takes quadratic time when a quoted parameter value is packed with semicolons.",
     "requiredAction": "Upgrade djangorestframework to version 3.18.2 or later.",
     "references": [
       {
@@ -918,7 +918,7 @@ export const advisories: Advisory[] = [
     "severity": "High",
     "cwe": "CWE-409",
     "ransomware": false,
-    "description": "An unauthenticated attacker can defeat Django's DATAUPLOADMAXMEMORYSIZE limit and force a worker process to allocate arbitrary memory, by naming a compression codec in the Content-Type charset parameter. A 108-byte request body produces a 50,331,648-character value inside the view, an amplification factor of 466,033, and grows process peak RSS by about 97 MiB.",
+    "description": "An unauthenticated attacker can defeat Django's DATA_UPLOAD_MAX_MEMORY_SIZE limit and force a worker process to allocate arbitrary memory, by naming a compression codec in the Content-Type charset parameter. A 108-byte request body produces a 50,331,648-character value inside the view, an amplification factor of 466,033, and grows process peak RSS by about 97 MiB.",
     "requiredAction": "Upgrade djangorestframework to version 3.18.2 or later.",
     "references": [
       {
@@ -1218,7 +1218,7 @@ export const advisories: Advisory[] = [
     "severity": "Medium",
     "cwe": "CWE-400",
     "ransomware": false,
-    "description": "Pillow's decompression-bomb protection (Image.decompressionbombcheck, gated by Image.MAXIMAGEPIXELS) is enforced only on the first frame, inside Image.open(). For multi-frame formats, seek() re-parses the target frame's header and resets self.size. GifImagePlugin and TiffImagePlugin re-run the bomb check on seek(), but MpoImageFile.seek() and DcxImageFile.seek() do not.",
+    "description": "Pillow's decompression-bomb protection (Image._decompression_bomb_check, gated by Image.MAX_IMAGE_PIXELS) is enforced only on the first frame, inside Image.open(). For multi-frame formats, seek() re-parses the target frame's header and resets self._size. GifImagePlugin and TiffImagePlugin re-run the bomb check on seek(), but MpoImageFile.seek() and DcxImageFile.seek() do not.",
     "requiredAction": "Upgrade Pillow to version 13.0.0 or later.",
     "references": [
       {

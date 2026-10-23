@@ -37,8 +37,13 @@ import { getCveAdvisories } from '../../services/cveService';
 import { fetchEpssBatch, getEpssPercentile } from '../../services/epssService';
 import { spacing } from '../../theme/theme';
 import { haptics } from '../../utils/haptics';
+import {
+  getLastReadAdvisoryId,
+  setLastReadAdvisoryId,
+  calculateUnreadProgress,
+  resolveUnreadTarget,
+} from '../../services/feedProgressService';
 
-const PROGRESS_SEGMENTS = 5;
 const INITIAL_ADVISORIES = 10;
 const ADVISORIES_PER_BATCH = 10;
 
@@ -78,6 +83,7 @@ export default function AdvisoriesScreen() {
   // Paging & Viewport Layout
   const [feedHeight, setFeedHeight] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [unreadTarget, setUnreadTarget] = useState<number | null>(null);
   const [loadedCount, setLoadedCount] = useState(INITIAL_ADVISORIES);
   const [now, setNow] = useState(() => new Date());
 
@@ -239,6 +245,7 @@ export default function AdvisoriesScreen() {
         if (fresh[0]?.id === prevTopId) {
           triggerUpToDateBanner();
         } else {
+          setUnreadTarget(null);
           void haptics.notificationSuccess();
         }
       } else {
@@ -357,6 +364,36 @@ export default function AdvisoriesScreen() {
       return text.includes(query);
     });
   }, [advisories, sourceFilter, severityFilter, epssFilter, searchQuery]);
+
+  // Resolve session unread target on initial advisories load
+  useEffect(() => {
+    if (filteredAdvisories.length > 0 && unreadTarget === null) {
+      void getLastReadAdvisoryId().then((lastId) => {
+        const target = resolveUnreadTarget(
+          filteredAdvisories,
+          lastId,
+          (a) => a.id || a.cveID,
+        );
+        setUnreadTarget(target);
+      });
+    }
+  }, [filteredAdvisories, unreadTarget]);
+
+  // Record newest read advisory as user views items
+  useEffect(() => {
+    if (filteredAdvisories.length > 0 && filteredAdvisories[currentIndex]) {
+      const viewedAdvisory = filteredAdvisories[currentIndex];
+      const id = viewedAdvisory?.id || viewedAdvisory?.cveID;
+      if (id) {
+        void setLastReadAdvisoryId(id);
+      }
+    }
+  }, [currentIndex, filteredAdvisories]);
+
+  const readProgressPct = calculateUnreadProgress(
+    currentIndex,
+    unreadTarget ?? filteredAdvisories.length,
+  );
 
   // Progressive batch loading
   const visibleAdvisories = useMemo(
@@ -682,21 +719,26 @@ export default function AdvisoriesScreen() {
         </View>
       ) : null}
 
-      {/* PROGRESS SEGMENTS */}
-      <View style={styles.progressRow}>
-        {Array.from({ length: PROGRESS_SEGMENTS }).map((_, index) => {
-          const active = index === currentIndex % PROGRESS_SEGMENTS;
-          return (
-            <View
-              key={index}
-              style={[
-                styles.progressSegment,
-                { backgroundColor: colors.border },
-                active && { backgroundColor: accentColor },
-              ]}
-            />
-          );
-        })}
+      {/* READING PROGRESS */}
+      <View
+        style={[
+          styles.progressTrack,
+          {
+            backgroundColor: isDark
+              ? 'rgba(255, 255, 255, 0.08)'
+              : 'rgba(0, 0, 0, 0.06)',
+          },
+        ]}
+      >
+        <View
+          style={[
+            styles.progressBar,
+            {
+              width: `${Math.max(4, Math.min(100, readProgressPct))}%`,
+              backgroundColor: accentColor,
+            },
+          ]}
+        />
       </View>
 
       {/* FEED VIEWPORT */}
@@ -984,18 +1026,14 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontFamily: 'Exo_500Medium',
   },
-  progressRow: {
-    flexDirection: 'row',
-    height: 2,
-    marginHorizontal: spacing.lg,
-    marginTop: spacing.xs,
-    marginBottom: spacing.xs,
-    gap: 4,
+  progressTrack: {
+    height: 2.5,
+    width: '100%',
+    overflow: 'hidden',
   },
-  progressSegment: {
-    flex: 1,
+  progressBar: {
     height: '100%',
-    borderRadius: 1,
+    borderRadius: 1.5,
   },
   feedContainer: {
     flex: 1,

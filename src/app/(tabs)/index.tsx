@@ -40,10 +40,14 @@ import {
 } from '../../models/article';
 import { colors, spacing } from '../../theme/theme';
 import { haptics } from '../../utils/haptics';
+import {
+  getLastReadArticleUrl,
+  setLastReadArticleUrl,
+  calculateUnreadProgress,
+  resolveUnreadTarget,
+} from '../../services/feedProgressService';
 
 const BLUE = colors.accent;
-
-const PROGRESS_SEGMENTS = 5;
 
 const INITIAL_ARTICLES = 10;
 
@@ -134,6 +138,9 @@ export default function FeedScreen() {
   const [searchQuery, setSearchQuery] =
     useState('');
 
+  const [unreadTarget, setUnreadTarget] =
+    useState<number | null>(null);
+
   const [feedbackDismissed, setFeedbackDismissed] =
     useState(true);
 
@@ -195,6 +202,7 @@ export default function FeedScreen() {
       clearInterval(timer);
     };
   }, []);
+
 
   /*
    * Sort newest → oldest.
@@ -302,6 +310,39 @@ export default function FeedScreen() {
     severityFilter,
     searchQuery,
   ]);
+
+  /*
+   * Resolve session unread target on initial articles load.
+   */
+  useEffect(() => {
+    if (filteredArticles.length > 0 && unreadTarget === null) {
+      void getLastReadArticleUrl().then((lastUrl) => {
+        const target = resolveUnreadTarget(
+          filteredArticles,
+          lastUrl,
+          (a) => a.sourceUrl,
+        );
+        setUnreadTarget(target);
+      });
+    }
+  }, [filteredArticles, unreadTarget]);
+
+  /*
+   * Record newest read article as user views items.
+   */
+  useEffect(() => {
+    if (filteredArticles.length > 0 && filteredArticles[currentIndex]) {
+      const viewedArticle = filteredArticles[currentIndex];
+      if (viewedArticle?.sourceUrl) {
+        void setLastReadArticleUrl(viewedArticle.sourceUrl);
+      }
+    }
+  }, [currentIndex, filteredArticles]);
+
+  const readProgressPct = calculateUnreadProgress(
+    currentIndex,
+    unreadTarget ?? filteredArticles.length,
+  );
 
   /*
    * Progressive loading.
@@ -459,6 +500,7 @@ export default function FeedScreen() {
         if (newArticles[0]?.id === previousTopId) {
           triggerUpToDateBanner();
         } else {
+          setUnreadTarget(null);
           void haptics.notificationSuccess();
         }
       } else if (newArticles) {
@@ -772,27 +814,26 @@ export default function FeedScreen() {
 
 
 
-      {/* PROGRESS */}
-      <View style={styles.progressRow}>
-        {Array.from({
-          length: PROGRESS_SEGMENTS,
-        }).map((_, index) => {
-          const active =
-            index ===
-            currentIndex %
-              PROGRESS_SEGMENTS;
-
-          return (
-            <View
-              key={index}
-              style={[
-                styles.progressSegment,
-                { backgroundColor: colors.border },
-                active && { backgroundColor: accentColor },
-              ]}
-            />
-          );
-        })}
+      {/* READING PROGRESS */}
+      <View
+        style={[
+          styles.progressTrack,
+          {
+            backgroundColor: isDark
+              ? 'rgba(255, 255, 255, 0.08)'
+              : 'rgba(0, 0, 0, 0.06)',
+          },
+        ]}
+      >
+        <View
+          style={[
+            styles.progressBar,
+            {
+              width: `${Math.max(4, Math.min(100, readProgressPct))}%`,
+              backgroundColor: accentColor,
+            },
+          ]}
+        />
       </View>
 
       {/* FEED */}
@@ -1157,22 +1198,15 @@ const styles = StyleSheet.create({
     fontFamily: 'Exo_600SemiBold',
   },
 
-  progressRow: {
-    flexDirection: 'row',
-    gap: 5,
-    paddingHorizontal: spacing.lg,
-    paddingTop: 3,
-    paddingBottom: 8,
+  progressTrack: {
+    height: 2.5,
+    width: '100%',
+    overflow: 'hidden',
   },
 
-  progressSegment: {
-    flex: 1,
-    height: 3,
-    backgroundColor: colors.border,
-  },
-
-  progressSegmentActive: {
-    backgroundColor: BLUE,
+  progressBar: {
+    height: '100%',
+    borderRadius: 1.5,
   },
 
   feedContainer: {

@@ -235,7 +235,7 @@ export default function NotificationsScreen() {
             </View>
             <View style={styles.channelTextWrap}>
               <Text style={[styles.channelTitle, { color: colors.textPrimary }]}>
-                News Briefs Dispatches
+                News Briefs
               </Text>
               <Text style={[styles.channelDesc, { color: colors.textSecondary }]}>
                 Daily cybersecurity intelligence, data breaches, and incident analysis.
@@ -383,7 +383,7 @@ export default function NotificationsScreen() {
                 <Text
                   style={[styles.thresholdTitle, { color: colors.textPrimary }]}
                 >
-                  High & Critical (Recommended)
+                  High & Critical
                 </Text>
                 <View
                   style={[

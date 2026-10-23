@@ -368,8 +368,16 @@ function cleanAdvisoryDescription(rawDesc, fallbackSummary) {
   text = text.replace(/\*\*([^*]+)\*\*/g, '$1');
   text = text.replace(/\*([^*]+)\*/g, '$1');
   text = text.replace(/__([^_]+)__/g, '$1');
-  text = text.replace(/_([^_]+)_/g, '$1');
-  text = text.replace(/<[^>]*>/g, '');
+  // Clean HTML markup tags (preserving non-tag tokens like <host>, <port>, <user>)
+  text = text.replace(/<\/?(?:p|div|span|a|br|h[1-6]|ul|ol|li|code|pre|b|i|strong|em|table|tr|td|th|tbody|thead|blockquote|hr|img|section|article)\b[^>]*>/gi, ' ');
+  // Unescape standard HTML entities
+  text = text
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&nbsp;/g, ' ');
   text = text.replace(/\r\n|\n|\r/g, ' ');
   text = text.replace(/\s+/g, ' ').trim();
   if (text.length < 20 && fallbackSummary) {
@@ -434,7 +442,7 @@ async function fetchGitHubAdvisories() {
         description: cleanDesc,
         requiredAction: firstPatched
           ? `Upgrade ${formattedPkg} to version ${firstPatched} or later.`
-          : 'Review repository advisory and update affected dependencies.',
+          : 'No patched release available yet. Check advisory mitigations and workarounds.',
         references: [
           { label: 'GitHub Advisory', url: item.html_url },
           ...(item.cve_id ? [{ label: 'NVD CVE entry', url: `https://nvd.nist.gov/vuln/detail/${item.cve_id}` }] : [])

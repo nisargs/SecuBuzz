@@ -102,13 +102,13 @@ export default function AppearanceScreen() {
         contentContainerStyle={styles.scrollContent}
       >
         <Text style={[styles.sectionEyebrow, { color: accentColor }]}>
-          VISUAL ARCHITECTURE
+          APPEARANCE
         </Text>
         <Text style={[styles.title, { color: colors.textPrimary }]}>
           Theme & Display
         </Text>
         <Text style={[styles.description, { color: colors.textSecondary }]}>
-          Customize how SecuBuzz renders on your screen. Choose between a high-contrast dark room interface or a clean daylight architectural slate.
+          Customize how SecuBuzz renders on your screen. Choose between high-contrast dark themes or a clean daylight slate.
         </Text>
 
         {/* THEME MODE CARD */}
@@ -243,7 +243,7 @@ export default function AppearanceScreen() {
               color={accentColor}
             />
             <Text style={[styles.cardTitle, { color: colors.textPrimary }]}>
-              Cyber Accent Color
+              Accent Color
             </Text>
           </View>
 
@@ -373,7 +373,7 @@ export default function AppearanceScreen() {
 
         {/* LIVE PREVIEW CARD */}
         <Text style={[styles.previewSectionLabel, { color: colors.textMuted }]}>
-          THEME TELEMETRY PREVIEW
+          THEME PREVIEW
         </Text>
         <View
           style={[
@@ -386,7 +386,7 @@ export default function AppearanceScreen() {
         >
           <View style={styles.previewTop}>
             <Text style={[styles.previewCategory, { color: accentColor }]}>
-              CVE-2026-4401 · VULNERABILITY
+              CVE-0000-00000 · VULNERABILITY
             </Text>
             <View
               style={[

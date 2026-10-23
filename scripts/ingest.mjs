@@ -815,7 +815,7 @@ IMPORTANT RULES:
     - Sentence 1 (Incident & Target): State the vulnerability, active threat, or breach incident, identifying the affected vendor, software/hardware product, and attack vector.
     - Sentence 2 (Technical Flaw & Impact): Detail the root cause mechanism, CVE identifier or severity score (if mentioned), exploitability status (active zero-day, public PoC, or credential theft), and operational impact.
     - Sentence 3 (Action & Remediation): Specify the vendor patch availability, recommended firmware upgrade, workaround, or defensive mitigations required for security teams.
-- ANTI-AI SLOP & TECHNICAL TONE (STRICT): Write like a senior cybersecurity intelligence analyst. NEVER use AI cliches or filler words ("delve", "tapestry", "in today's digital landscape", "in an era where", "serves as a stark reminder", "it is critical to note", "underscores the importance", "beacon", "testament", "crucial", "pivotal", "paramount"). Avoid dramatic throat-clearing; lead directly with the technical subject (e.g. "Attackers are exploiting...", "A newly disclosed flaw in...", "Microsoft released a patch for...").
+- ANTI-AI SLOP & TECHNICAL TONE (STRICT): Write like a senior cybersecurity intelligence analyst. NEVER use AI cliches or filler words ("delve", "tapestry", "in today's digital landscape", "in an era where", "serves as a stark reminder", "it is critical to note", "underscores the importance", "beacon", "testament", "crucial", "pivotal", "paramount"). Avoid generic closing platitudes ("organizations must remain vigilant", "highlighting the need for proactive security"). Require explicit attribution for studies or survey claims (e.g. "According to a report by..."). Avoid sensationalist or overclaiming verbs like "escaped" or "masterminded" — state technical facts and root causes directly. Avoid dramatic throat-clearing; lead directly with the technical subject (e.g. "Attackers are exploiting...", "A newly disclosed flaw in...", "Microsoft released a patch for...").
 - If there is not enough information for a reliable summary, omit that article.
 - The "index" must exactly match the supplied article index.
 
@@ -825,7 +825,7 @@ CATEGORY RULES (STRICT):
 - "BREACH": Unauthorized access, data leaks, credential thefts, or compromised corporate/user accounts.
 - "RANSOMWARE": Ransomware infections, encryptors, extortion groups, or ransom payments.
 - "NATION_STATE": State-sponsored espionage, APT hacking groups (e.g. APT28, Lazarus, Volt Typhoon), or cyber warfare.
-- "GENERAL": Industry cybersecurity trends, advisories, defensive tools, regulations, or law enforcement actions.
+- "GENERAL": Industry cybersecurity trends, advisories, defensive tools, regulations, policy announcements, vendor surveys/market research, or law enforcement actions (including arrests, indictments, extraditions, and prosecutions — NEVER classify prosecutions or legal sentencing as BREACH). Vendor security surveys, threat indices, and statistics must always be classified as GENERAL with LOW severity (never VULNERABILITY).
 
 SEVERITY RULES (OBJECTIVE THREAT CRITERIA):
 - "CRITICAL":
