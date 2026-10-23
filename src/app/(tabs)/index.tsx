@@ -119,6 +119,7 @@ export default function FeedScreen() {
 
   const [currentIndex, setCurrentIndex] =
     useState(0);
+  const currentIndexRef = useRef(0);
 
   const [loadedCount, setLoadedCount] =
     useState(INITIAL_ARTICLES);
@@ -306,9 +307,13 @@ export default function FeedScreen() {
   /*
    * Continuous reading progress across the active feed.
    */
-  const readProgressPct = filteredArticles.length > 0
-    ? Math.min(100, Math.round(((currentIndex + 1) / filteredArticles.length) * 100))
-    : 0;
+  const readProgressPct = useMemo(() => {
+    if (filteredArticles.length === 0) return 0;
+    return Math.min(
+      100,
+      Math.max(1, Number((((currentIndex + 1) / filteredArticles.length) * 100).toFixed(2))),
+    );
+  }, [currentIndex, filteredArticles.length]);
 
   /*
    * Progressive loading.
@@ -351,6 +356,7 @@ export default function FeedScreen() {
    * or search changes.
    */
   useEffect(() => {
+    currentIndexRef.current = 0;
     setCurrentIndex(0);
     setShowBackToTop(false);
     setLoadedCount(INITIAL_ARTICLES);
@@ -378,6 +384,7 @@ export default function FeedScreen() {
       offset: 0,
       animated: true,
     });
+    currentIndexRef.current = 0;
     setCurrentIndex(0);
   }, []);
 
@@ -480,6 +487,7 @@ export default function FeedScreen() {
    * Directional scroll listener:
    * Only show 'Back to Top' when scrolling UP (returning towards the top).
    * Hide immediately when scrolling DOWN (advancing through the feed) or at the top.
+   * Also tracks currentIndex in real-time during scroll for immediate telemetry.
    */
   const handleScroll = useCallback(
     (event: NativeSyntheticEvent<NativeScrollEvent>) => {
@@ -496,13 +504,33 @@ export default function FeedScreen() {
         setShowBackToTop(false);
       }
 
+      if (feedHeight > 0 && filteredArticles.length > 0) {
+        const nextIndex = Math.min(
+          filteredArticles.length - 1,
+          Math.max(0, Math.round(currentY / feedHeight)),
+        );
+        if (nextIndex !== currentIndexRef.current) {
+          currentIndexRef.current = nextIndex;
+          setCurrentIndex(nextIndex);
+        }
+
+        if (nextIndex >= visibleArticles.length - 3) {
+          setLoadedCount((current) =>
+            Math.min(
+              current + ARTICLES_PER_BATCH,
+              filteredArticles.length,
+            ),
+          );
+        }
+      }
+
       lastScrollY.current = currentY;
     },
-    [],
+    [feedHeight, filteredArticles.length, visibleArticles.length],
   );
 
   /*
-   * Article swipe finished.
+   * Article swipe finished (onMomentumScrollEnd / onScrollEndDrag).
    */
   const handleScrollEnd = useCallback(
     (
@@ -515,10 +543,12 @@ export default function FeedScreen() {
       const offset =
         event.nativeEvent.contentOffset.y;
 
-      const index = Math.round(
-        offset / feedHeight,
+      const index = Math.min(
+        filteredArticles.length - 1,
+        Math.max(0, Math.round(offset / feedHeight)),
       );
 
+      currentIndexRef.current = index;
       setCurrentIndex(index);
 
       if (index === 0) {
@@ -602,9 +632,35 @@ export default function FeedScreen() {
             </Text>
           </View>
 
-          <Text style={[styles.subtitle, { color: colors.textPrimary }]}>
-            60-WORD SECURITY BRIEFS
-          </Text>
+          <View style={styles.subtitleRow}>
+            <Text style={[styles.subtitle, { color: colors.textPrimary }]}>
+              60-WORD SECURITY BRIEFS
+            </Text>
+            {filteredArticles.length > 0 ? (
+              <View
+                style={[
+                  styles.readingBadge,
+                  {
+                    backgroundColor: isDark
+                      ? 'rgba(76, 201, 240, 0.12)'
+                      : 'rgba(2, 132, 199, 0.08)',
+                    borderColor: isDark
+                      ? 'rgba(76, 201, 240, 0.25)'
+                      : 'rgba(2, 132, 199, 0.20)',
+                  },
+                ]}
+              >
+                <Text
+                  style={[
+                    styles.readingBadgeText,
+                    { color: accentColor },
+                  ]}
+                >
+                  {currentIndex + 1} OF {filteredArticles.length}
+                </Text>
+              </View>
+            ) : null}
+          </View>
         </Pressable>
 
         <View style={styles.headerActions}>
@@ -794,7 +850,7 @@ export default function FeedScreen() {
           style={[
             styles.progressBar,
             {
-              width: `${Math.max(4, Math.min(100, readProgressPct))}%`,
+              width: `${readProgressPct}%`,
               backgroundColor: accentColor,
             },
           ]}
@@ -881,6 +937,9 @@ export default function FeedScreen() {
             onScroll={handleScroll}
             scrollEventThrottle={16}
             onMomentumScrollEnd={
+              handleScrollEnd
+            }
+            onScrollEndDrag={
               handleScrollEnd
             }
             onEndReached={
@@ -1087,12 +1146,32 @@ const styles = StyleSheet.create({
     fontSize: 13,
   },
 
+  subtitleRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    marginTop: 4,
+    flexWrap: 'wrap',
+  },
+
   subtitle: {
     color: colors.textPrimary,
     fontFamily: 'Exo_600SemiBold',
     fontSize: 11,
     letterSpacing: 2,
-    marginTop: 4,
+  },
+
+  readingBadge: {
+    paddingHorizontal: 6,
+    paddingVertical: 1.5,
+    borderRadius: 4,
+    borderWidth: 1,
+  },
+
+  readingBadgeText: {
+    fontFamily: 'Exo_700Bold',
+    fontSize: 9,
+    letterSpacing: 0.8,
   },
 
   headerActions: {

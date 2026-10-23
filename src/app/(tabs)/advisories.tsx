@@ -77,6 +77,7 @@ export default function AdvisoriesScreen() {
   // Paging & Viewport Layout
   const [feedHeight, setFeedHeight] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const currentIndexRef = useRef(0);
   const [loadedCount, setLoadedCount] = useState(INITIAL_ADVISORIES);
   const [now, setNow] = useState(() => new Date());
 
@@ -183,6 +184,7 @@ export default function AdvisoriesScreen() {
       offset: 0,
       animated: true,
     });
+    currentIndexRef.current = 0;
     setCurrentIndex(0);
   }, []);
 
@@ -358,9 +360,13 @@ export default function AdvisoriesScreen() {
   }, [advisories, sourceFilter, severityFilter, epssFilter, searchQuery]);
 
   // Continuous reading progress across the active advisories feed
-  const readProgressPct = filteredAdvisories.length > 0
-    ? Math.min(100, Math.round(((currentIndex + 1) / filteredAdvisories.length) * 100))
-    : 0;
+  const readProgressPct = useMemo(() => {
+    if (filteredAdvisories.length === 0) return 0;
+    return Math.min(
+      100,
+      Math.max(1, Number((((currentIndex + 1) / filteredAdvisories.length) * 100).toFixed(2))),
+    );
+  }, [currentIndex, filteredAdvisories.length]);
 
   // Progressive batch loading
   const visibleAdvisories = useMemo(
@@ -395,13 +401,14 @@ export default function AdvisoriesScreen() {
 
   // Reset paging when filters change
   useEffect(() => {
+    currentIndexRef.current = 0;
     setCurrentIndex(0);
     setShowBackToTop(false);
     setLoadedCount(INITIAL_ADVISORIES);
     listRef.current?.scrollToOffset({ offset: 0, animated: false });
   }, [sourceFilter, severityFilter, searchQuery]);
 
-  // Directional scroll listener
+  // Directional scroll listener with real-time index tracking
   const handleScroll = useCallback(
     (event: NativeSyntheticEvent<NativeScrollEvent>) => {
       const currentY = event.nativeEvent.contentOffset.y;
@@ -414,18 +421,40 @@ export default function AdvisoriesScreen() {
       } else if (diff > 15) {
         setShowBackToTop(false);
       }
+
+      if (feedHeight > 0 && filteredAdvisories.length > 0) {
+        const nextIndex = Math.min(
+          filteredAdvisories.length - 1,
+          Math.max(0, Math.round(currentY / feedHeight)),
+        );
+        if (nextIndex !== currentIndexRef.current) {
+          currentIndexRef.current = nextIndex;
+          setCurrentIndex(nextIndex);
+        }
+
+        if (nextIndex >= visibleAdvisories.length - 3) {
+          setLoadedCount((cur) =>
+            Math.min(cur + ADVISORIES_PER_BATCH, filteredAdvisories.length),
+          );
+        }
+      }
+
       lastScrollY.current = currentY;
     },
-    [],
+    [feedHeight, filteredAdvisories.length, visibleAdvisories.length],
   );
 
-  // Swipe snapping handler
+  // Swipe snapping handler (onMomentumScrollEnd / onScrollEndDrag)
   const handleScrollEnd = useCallback(
     (event: NativeSyntheticEvent<NativeScrollEvent>) => {
       if (!feedHeight) return;
 
       const offset = event.nativeEvent.contentOffset.y;
-      const index = Math.round(offset / feedHeight);
+      const index = Math.min(
+        filteredAdvisories.length - 1,
+        Math.max(0, Math.round(offset / feedHeight)),
+      );
+      currentIndexRef.current = index;
       setCurrentIndex(index);
 
       if (index === 0) setShowBackToTop(false);
@@ -511,8 +540,8 @@ export default function AdvisoriesScreen() {
                   ]}
                 >
                   {isAnyFilterActive
-                    ? `${filteredAdvisories.length} OF ${advisories.length.toLocaleString()} TRACKED`
-                    : `${advisories.length.toLocaleString()} TRACKED`}
+                    ? `${currentIndex + 1} OF ${filteredAdvisories.length} (${advisories.length.toLocaleString()} TRACKED)`
+                    : `${currentIndex + 1} OF ${advisories.length.toLocaleString()} TRACKED`}
                 </Text>
               </View>
             ) : null}
@@ -701,7 +730,7 @@ export default function AdvisoriesScreen() {
           style={[
             styles.progressBar,
             {
-              width: `${Math.max(4, Math.min(100, readProgressPct))}%`,
+              width: `${readProgressPct}%`,
               backgroundColor: accentColor,
             },
           ]}
@@ -763,6 +792,7 @@ export default function AdvisoriesScreen() {
             onScroll={handleScroll}
             scrollEventThrottle={16}
             onMomentumScrollEnd={handleScrollEnd}
+            onScrollEndDrag={handleScrollEnd}
             onEndReached={handleEndReached}
             onEndReachedThreshold={0.5}
             refreshControl={
