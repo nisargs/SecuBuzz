@@ -391,17 +391,26 @@ export default function AdvisoriesScreen() {
   }, [visibleAdvisories, feedbackDismissed]);
 
   /*
-   * Today's Fresh Zero-Day Horizon (24-Hour Horizon):
-   * Option C: Strictly calculates zero-days / advisories added in the last 24 hours.
-   * If CISA/GitHub added 0 CVEs in the last 24 hours, the app indicates "0 NEW TODAY"
-   * and immediately considers the daily horizon complete (100%).
+   * Today's Fresh Zero-Day Horizon:
+   * Advisories are tagged with calendar date YYYY-MM-DD (e.g. "2026-10-22").
+   * An advisory is "Today" if:
+   * 1. Its calendar date matches today's date (local or UTC), OR
+   * 2. Its published timestamp is within the rolling 36-hour window (accounting for UTC midnight vs local timezone offsets).
    */
   const todayTargetCount = useMemo(() => {
     if (filteredAdvisories.length === 0) return 0;
-    const nowMs = Date.now();
+    const now = new Date();
+    const pad = (n: number) => String(n).padStart(2, '0');
+    const localToday = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}`;
+    const utcToday = `${now.getUTCFullYear()}-${pad(now.getUTCMonth() + 1)}-${pad(now.getUTCDate())}`;
+    const nowMs = now.getTime();
+    const thirtySixHoursMs = 36 * 60 * 60 * 1000;
+
     return filteredAdvisories.filter((a) => {
-      const t = Date.parse(a.dateAdded || '');
-      return !Number.isNaN(t) && nowMs - t <= 24 * 60 * 60 * 1000;
+      if (!a.dateAdded) return false;
+      if (a.dateAdded === localToday || a.dateAdded === utcToday) return true;
+      const t = Date.parse(a.dateAdded);
+      return !Number.isNaN(t) && nowMs - t <= thirtySixHoursMs;
     }).length;
   }, [filteredAdvisories]);
 

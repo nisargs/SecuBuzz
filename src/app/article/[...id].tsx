@@ -52,6 +52,17 @@ function isValidAdvisoryDate(dateStr?: string | null): boolean {
 
 function formatAdvisoryDate(dateStr?: string): string {
   if (!dateStr || !isValidAdvisoryDate(dateStr)) return 'RECENT';
+  // Parse YYYY-MM-DD directly as local calendar components to prevent UTC-midnight backward timezone shift
+  const match = dateStr.match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (match) {
+    const [, year, month, day] = match;
+    const parsed = new Date(Number(year), Number(month) - 1, Number(day));
+    return parsed.toLocaleDateString('en-GB', {
+      day: 'numeric',
+      month: 'short',
+      year: 'numeric',
+    });
+  }
   const parsed = new Date(dateStr);
   if (isNaN(parsed.getTime())) return dateStr;
   return parsed.toLocaleDateString('en-GB', {
