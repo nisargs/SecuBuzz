@@ -1,6 +1,7 @@
 import { Ionicons } from '@expo/vector-icons';
 import { router } from 'expo-router';
 import {
+  Platform,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -11,6 +12,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { useTheme, type ThemeMode } from '../context/ThemeContext';
 import { accentPresets, type AccentPresetKey, spacing } from '../theme/theme';
+import { wordCount } from '../utils/wordCount';
 
 const ACCENT_OPTIONS: { key: AccentPresetKey; label: string; color: string }[] = [
   { key: 'cyan', label: 'Classic Cyan', color: accentPresets.cyan },
@@ -437,6 +439,21 @@ export default function AppearanceScreen() {
           >
             This preview illustrates your chosen color mode, accent tint, and typography size as they render across cards and telemetry bars in real time.
           </Text>
+
+          <Text
+            style={[
+              styles.previewWordCount,
+              {
+                color: colors.textMuted,
+                fontSize: Math.round(10.5 * fontScaleMultiplier),
+              },
+            ]}
+          >
+            {wordCount(
+              'This preview illustrates your chosen color mode, accent tint, and typography size as they render across cards and telemetry bars in real time.'
+            )}{' '}
+            words
+          </Text>
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -714,5 +731,12 @@ const styles = StyleSheet.create({
     fontFamily: 'Exo_400Regular',
     fontSize: 13,
     lineHeight: 19,
+  },
+
+  previewWordCount: {
+    fontFamily: Platform.select({ ios: 'Menlo', default: 'monospace' }),
+    fontSize: 10.5,
+    marginTop: 8,
+    letterSpacing: 0.3,
   },
 });

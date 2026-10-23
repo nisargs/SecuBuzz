@@ -1,6 +1,7 @@
 import { Ionicons } from '@expo/vector-icons';
 import { useState } from 'react';
 import {
+  Platform,
   Pressable,
   StyleSheet,
   Text,
@@ -16,6 +17,7 @@ import { copyArticleToClipboard } from '../utils/copyReport';
 import { formatPublishedAt } from '../utils/formatPublishedAt';
 import { openArticle } from '../utils/openArticle';
 import { shareArticle } from '../utils/shareArticle';
+import { wordCount } from '../utils/wordCount';
 
 type ArticleCardProps = {
   article: Article;
@@ -243,6 +245,20 @@ export function ArticleCard({
         >
           {article.summary}
         </Text>
+
+        {wordCount(article.summary) > 0 ? (
+          <Text
+            style={[
+              styles.wordCount,
+              {
+                color: colors.textMuted,
+                fontSize: Math.round(11 * fontScaleMultiplier),
+              },
+            ]}
+          >
+            {wordCount(article.summary)} words
+          </Text>
+        ) : null}
       </View>
 
       {/* READ MORE */}
@@ -371,6 +387,13 @@ const styles = StyleSheet.create({
     color: colors.textSecondary,
     fontSize: 14.5,
     lineHeight: 22.5,
+  },
+
+  wordCount: {
+    fontFamily: Platform.select({ ios: 'Menlo', default: 'monospace' }),
+    fontSize: 11,
+    marginTop: 10,
+    letterSpacing: 0.3,
   },
 
   footer: {

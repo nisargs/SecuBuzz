@@ -4,6 +4,7 @@ import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import {
   ActivityIndicator,
+  Platform,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -30,6 +31,7 @@ import { copyAdvisoryToClipboard, copyArticleToClipboard } from '../../utils/cop
 import { formatPublishedAt } from '../../utils/formatPublishedAt';
 import { openArticle } from '../../utils/openArticle';
 import { shareArticle } from '../../utils/shareArticle';
+import { wordCount } from '../../utils/wordCount';
 
 function formatCategory(
   category: Article['category'],
@@ -88,7 +90,7 @@ function normalizeUrlForMatch(url?: string | null): string {
 
 export default function ArticleDetailScreen() {
   const router = useRouter();
-  const { colors, isDark, accentColor, severityColors } = useTheme();
+  const { colors, isDark, accentColor, severityColors, fontScaleMultiplier } = useTheme();
 
   const params = useLocalSearchParams<{
     id?: string | string[];
@@ -599,6 +601,20 @@ export default function ArticleDetailScreen() {
           {cleanSummary}
         </Text>
 
+        {!isAdvisory && wordCount(cleanSummary) > 0 ? (
+          <Text
+            style={[
+              styles.wordCount,
+              {
+                color: colors.textMuted,
+                fontSize: Math.round(11.5 * fontScaleMultiplier),
+              },
+            ]}
+          >
+            {wordCount(cleanSummary)} words
+          </Text>
+        ) : null}
+
         {/* Remediation & Guidance Card (For Threat Advisories) */}
         {isAdvisory && (remediationDueDate || remediationFix || remediationAction) ? (
           <View
@@ -955,6 +971,13 @@ const styles = StyleSheet.create({
     fontSize: 15,
     lineHeight: 23,
     marginTop: 8,
+  },
+
+  wordCount: {
+    fontFamily: Platform.select({ ios: 'Menlo', default: 'monospace' }),
+    fontSize: 11.5,
+    marginTop: 12,
+    letterSpacing: 0.3,
   },
 
   divider: {

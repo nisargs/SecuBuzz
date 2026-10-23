@@ -1,13 +1,11 @@
 import { Ionicons } from '@expo/vector-icons';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
-  ActivityIndicator,
   Animated,
   AppState,
   FlatList,
   Pressable,
   RefreshControl,
-  ScrollView,
   StyleSheet,
   Text,
   TextInput,
@@ -1015,7 +1013,7 @@ export default function FeedScreen() {
                 tintColor={accentColor}
                 colors={[accentColor]}
                 progressBackgroundColor={
-                  colors.surface
+                  isDark ? colors.surface : colors.background
                 }
               />
             }
@@ -1073,28 +1071,6 @@ export default function FeedScreen() {
         </Animated.View>
       </View>
 
-      {/* REFRESH INDICATOR */}
-      {refreshing ? (
-        <View
-          pointerEvents="none"
-          style={styles.refreshIndicator}
-        >
-          <View
-            style={[
-              styles.refreshCircle,
-              {
-                backgroundColor: colors.surface,
-                borderColor: accentColor,
-              },
-            ]}
-          >
-            <ActivityIndicator
-              size="small"
-              color={accentColor}
-            />
-          </View>
-        </View>
-      ) : null}
 
       {/* UP TO DATE TOAST BANNER */}
       {bannerVisible ? (
@@ -1314,25 +1290,6 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 
-  refreshIndicator: {
-    position: 'absolute',
-    top: 96,
-    left: 0,
-    right: 0,
-    alignItems: 'center',
-  },
-
-  refreshCircle: {
-    width: 38,
-    height: 38,
-    borderRadius: 19,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor:
-      colors.surface,
-    borderWidth: 1,
-    borderColor: BLUE,
-  },
 
   upToDateBanner: {
     position: 'absolute',
