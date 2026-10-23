@@ -1,5 +1,27 @@
 [
   {
+    "id": "https://cybersecuritynews.com/critical-cisco-expressway-vulnerability/",
+    "sourceUrl": "https://cybersecuritynews.com/critical-cisco-expressway-vulnerability/",
+    "title": "Critical Cisco Expressway Vulnerability Enables Remote Code Execution Attacks",
+    "headline": "Critical Cisco Expressway Vulnerability Enables Remote Code Execution Attacks",
+    "summary": "A critical flaw in Cisco Expressway allows remote attackers to execute operating system commands as root on devices configured in a cluster. Tracked as CVE-2026-76466, the vulnerability carries a CVSS score of 9.8, is publicly documented, and can be exploited without authentication. Cisco released a patch on October 21, 2026; apply it immediately or disable exposed services as a workaround.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-23T04:47:50.000Z",
+    "url": "https://cybersecuritynews.com/critical-cisco-expressway-vulnerability/",
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/tech-and-security-companies-respond-to-php2shell-vulnerabilities/"
+      },
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/php2shell-vulnerability-fortinet-cisco-palo-alto-networks/"
+      }
+    ]
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/10/23/barracuda-cybersecurity-career-development-report/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/23/barracuda-cybersecurity-career-development-report/",
     "title": "AI Adoption Drives Cybersecurity Workforce Reductions",
@@ -106,6 +128,19 @@
     ]
   },
   {
+    "id": "https://www.darkreading.com/insider-threats/texas-laptop-farms-north-korean-it-workers",
+    "sourceUrl": "https://www.darkreading.com/insider-threats/texas-laptop-farms-north-korean-it-workers",
+    "title": "Federal Agents Seize Texas Laptop Farms Linked to Espionage",
+    "headline": "Federal Agents Seize Texas Laptop Farms Linked to Espionage",
+    "summary": "Federal agents seized multiple illicit laptop farms in Texas, targeting stolen hardware used for espionage. The operation, part of broader efforts to dismantle North Korean state-sponsored infrastructure, involved coordinated raids and seizure of devices linked to data exfiltration. Law enforcement released a statement urging vendors to secure supply chains and report suspicious hardware acquisitions.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-22T20:33:10.000Z",
+    "url": "https://www.darkreading.com/insider-threats/texas-laptop-farms-north-korean-it-workers",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/capcom-confirms-data-breach-affecting-117-million-accounts/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/capcom-confirms-data-breach-affecting-117-million-accounts/",
     "title": "Capcom Breach Exposes 11.7 Million Customer Accounts",
@@ -135,6 +170,24 @@
     "publishedAt": "2026-10-22T19:30:20.000Z",
     "url": "https://www.darkreading.com/ics-ot-security/eu-grocers-unpatched-fridge-firmware-french",
     "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/litellm-release-pipeline-hacked-to-distribute-info-stealer-malware/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/litellm-release-pipeline-hacked-to-distribute-info-stealer-malware/",
+    "title": "LiteLLM Release Pipeline Compromised with Malicious Docker Images",
+    "headline": "LiteLLM Release Pipeline Compromised with Malicious Docker Images",
+    "summary": "Hackers infiltrated the LiteLLM project's release pipeline, injecting malicious Docker images into the PyPI distribution. The compromised images contain an info‑stealer that harvests credentials, secrets, and environment variables, and the attack demonstrates a supply‑chain compromise with active exploitation. LiteLLM issued a security advisory, urging users to verify image signatures, update to the latest patched version, and monitor for credential exfiltration.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-22T19:12:51.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/litellm-release-pipeline-hacked-to-distribute-info-stealer-malware/",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/litellm-suspects-github-token-leak-in.html"
+      }
+    ]
   },
   {
     "id": "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html",
@@ -580,17 +633,22 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.securityweek.com/tech-and-security-companies-respond-to-php2shell-vulnerabilities/",
-    "sourceUrl": "https://www.securityweek.com/tech-and-security-companies-respond-to-php2shell-vulnerabilities/",
-    "title": "PHP2Shell Vulnerabilities Enable Remote Code Execution",
-    "headline": "PHP2Shell Vulnerabilities Enable Remote Code Execution",
-    "summary": "PHP2Shell vulnerabilities have been identified in multiple web applications, allowing attackers to execute arbitrary PHP code via crafted requests. The flaw exploits improper input validation in PHP frameworks, enabling remote code execution with a CVSS score of 8.1. Vendors have issued patches; security teams should apply them promptly, monitor logs, and enforce strict input sanitization.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-22T12:20:23.000Z",
-    "url": "https://www.securityweek.com/tech-and-security-companies-respond-to-php2shell-vulnerabilities/",
-    "additionalSources": []
+    "id": "https://therecord.media/south-carolina-officials-offer-assistance-cyber-incident",
+    "sourceUrl": "https://therecord.media/south-carolina-officials-offer-assistance-cyber-incident",
+    "title": "South Carolina State Capital Hit by Cyberattack on MyColaSC Platform",
+    "headline": "South Carolina State Capital Hit by Cyberattack on MyColaSC Platform",
+    "summary": "A cyberattack targeted South Carolina's state capital, disrupting the MyColaSC platform used for utility payments and city services. The attack leveraged network-level intrusion to compromise service availability, causing denial of service for citizens accessing municipal resources. State officials are offering assistance and urging residents to use alternative payment methods while the incident is investigated.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "publishedAt": "2026-10-22T12:14:00.000Z",
+    "url": "https://therecord.media/south-carolina-officials-offer-assistance-cyber-incident",
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/bullhorn-takes-staffing-platform-offline-to-contain-cyberattack/"
+      }
+    ]
   },
   {
     "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-18",
@@ -743,28 +801,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.helpnetsecurity.com/2026/10/22/php2shell-vulnerability-fortinet-cisco-palo-alto-networks/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/php2shell-vulnerability-fortinet-cisco-palo-alto-networks/",
-    "title": "PHP2Shell Vulnerability Affects Fortinet, Cisco, Palo Alto Products",
-    "headline": "PHP2Shell Vulnerability Affects Fortinet, Cisco, Palo Alto Products",
-    "summary": "PHP2Shell exposes critical PHP flaws that allow unauthenticated code execution on web servers, impacting all Palo Alto PAN-OS and Panorama versions. The vulnerability enables remote attackers to run arbitrary code without login, posing a severe RCE risk to network security appliances. Palo Alto has not released patches yet; Fortinet and Cisco are investigating affected products and advising interim mitigations.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-22T10:22:56.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/22/php2shell-vulnerability-fortinet-cisco-palo-alto-networks/",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/cisco-patches-34-vulnerabilities-across-multiple-products/"
-      },
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/21/ransomware-groups-exploit-palo-alto-globalprotect-cve-2026-0257/"
-      }
-    ]
-  },
-  {
     "id": "https://cybersecuritynews.com/best-secure-file-sharing/",
     "sourceUrl": "https://cybersecuritynews.com/best-secure-file-sharing/",
     "title": "Top 10 Best Secure File Sharing Platforms in 2026",
@@ -836,24 +872,6 @@
       {
         "source": "Help Net Security",
         "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/exploitation-siemens-software-center-vulnerability-cve-2026-110936/"
-      }
-    ]
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/litellm-suspects-github-token-leak-in.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/litellm-suspects-github-token-leak-in.html",
-    "title": "LiteLLM Release Pipeline Compromised, Malicious Package Distributed",
-    "headline": "LiteLLM Release Pipeline Compromised, Malicious Package Distributed",
-    "summary": "LiteLLM disclosed that threat actors compromised its release pipeline to push a malicious Python package containing a credential stealer and backdoor. The compromised release, version 1.107.0, was published to Docker Hub and PyPI on October 21, 2026, enabling credential theft via the package’s hidden payload. Affected users should uninstall the package, revoke exposed tokens, and monitor for unauthorized activity while awaiting a LiteLLM fix.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-22T08:28:48.000Z",
-    "url": "https://thehackernews.com/2026/10/litellm-suspects-github-token-leak-in.html",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/litellm-compromised/"
       }
     ]
   },
@@ -2285,19 +2303,6 @@
     "source": "The Record",
     "publishedAt": "2026-10-19T19:49:00.000Z",
     "url": "https://therecord.media/whatsapp-denied-appeal-alleged-nso-group-violation-injunction",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/bullhorn-takes-staffing-platform-offline-to-contain-cyberattack/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/bullhorn-takes-staffing-platform-offline-to-contain-cyberattack/",
-    "title": "Bullhorn disables platform amid cyberattack",
-    "headline": "Bullhorn disables platform amid cyberattack",
-    "summary": "Bullhorn has shut down its staffing platform to contain a cyberattack that triggered a system-wide outage. The company has not disclosed the nature of the breach or affected data. Users are advised to monitor official channels for updates.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-19T18:51:13.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/bullhorn-takes-staffing-platform-offline-to-contain-cyberattack/",
     "additionalSources": []
   },
   {

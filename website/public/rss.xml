@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Oct 2026 04:56:37 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 07:56:09 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Critical Cisco Expressway Vulnerability Enables Remote Code Execution Attacks</title>
+      <link>https://secubuzz.com/news/critical-cisco-expressway-vulnerability-enables-re-10092d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/critical-cisco-expressway-vulnerability-enables-re-10092d</guid>
+      <description><![CDATA[A critical flaw in Cisco Expressway allows remote attackers to execute operating system commands as root on devices configured in a cluster. Tracked as CVE-2026-76466, the vulnerability carries a CVSS score of 9.8, is publicly documented, and can be exploited without authentication. Cisco released a patch on October 21, 2026; apply it immediately or disable exposed services as a workaround.]]></description>
+      <pubDate>Fri, 23 Oct 2026 04:47:50 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/critical-cisco-expressway-vulnerability/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>AI Adoption Drives Cybersecurity Workforce Reductions</title>
       <link>https://secubuzz.com/news/ai-adoption-drives-cybersecurity-workforce-reducti-4e062a</link>
@@ -71,6 +80,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Federal Agents Seize Texas Laptop Farms Linked to Espionage</title>
+      <link>https://secubuzz.com/news/federal-agents-seize-texas-laptop-farms-linked-to-632e59</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/federal-agents-seize-texas-laptop-farms-linked-to-632e59</guid>
+      <description><![CDATA[Federal agents seized multiple illicit laptop farms in Texas, targeting stolen hardware used for espionage. The operation, part of broader efforts to dismantle North Korean state-sponsored infrastructure, involved coordinated raids and seizure of devices linked to data exfiltration. Law enforcement released a statement urging vendors to secure supply chains and report suspicious hardware acquisitions.]]></description>
+      <pubDate>Thu, 22 Oct 2026 20:33:10 GMT</pubDate>
+      <source url="https://www.darkreading.com/insider-threats/texas-laptop-farms-north-korean-it-workers">Dark Reading</source>
+      <category>Policy</category>
+    </item>
+    <item>
       <title>Capcom Breach Exposes 11.7 Million Customer Accounts</title>
       <link>https://secubuzz.com/news/capcom-breach-exposes-11-7-million-customer-accoun-7475b3</link>
       <guid isPermaLink="true">https://secubuzz.com/news/capcom-breach-exposes-11-7-million-customer-accoun-7475b3</guid>
@@ -86,6 +104,15 @@
       <description><![CDATA[An outdated OT firmware controlling refrigeration systems in EU supermarkets enabled attackers to compromise HVAC controls, causing millions of euros in losses. The flaw stemmed from third‑party firmware management lacking timely updates, allowing unauthorized manipulation of temperature settings. Vendors should immediately deploy the latest firmware patches and enforce strict update policies to mitigate further exposure.]]></description>
       <pubDate>Thu, 22 Oct 2026 19:30:20 GMT</pubDate>
       <source url="https://www.darkreading.com/ics-ot-security/eu-grocers-unpatched-fridge-firmware-french">Dark Reading</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>LiteLLM Release Pipeline Compromised with Malicious Docker Images</title>
+      <link>https://secubuzz.com/news/litellm-release-pipeline-compromised-with-maliciou-1cce02</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/litellm-release-pipeline-compromised-with-maliciou-1cce02</guid>
+      <description><![CDATA[Hackers infiltrated the LiteLLM project's release pipeline, injecting malicious Docker images into the PyPI distribution. The compromised images contain an info‑stealer that harvests credentials, secrets, and environment variables, and the attack demonstrates a supply‑chain compromise with active exploitation. LiteLLM issued a security advisory, urging users to verify image signatures, update to the latest patched version, and monitor for credential exfiltration.]]></description>
+      <pubDate>Thu, 22 Oct 2026 19:12:51 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/litellm-release-pipeline-hacked-to-distribute-info-stealer-malware/">BleepingComputer</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -314,13 +341,13 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>PHP2Shell Vulnerabilities Enable Remote Code Execution</title>
-      <link>https://secubuzz.com/news/php2shell-vulnerabilities-enable-remote-code-execu-329438</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/php2shell-vulnerabilities-enable-remote-code-execu-329438</guid>
-      <description><![CDATA[PHP2Shell vulnerabilities have been identified in multiple web applications, allowing attackers to execute arbitrary PHP code via crafted requests. The flaw exploits improper input validation in PHP frameworks, enabling remote code execution with a CVSS score of 8.1. Vendors have issued patches; security teams should apply them promptly, monitor logs, and enforce strict input sanitization.]]></description>
-      <pubDate>Thu, 22 Oct 2026 12:20:23 GMT</pubDate>
-      <source url="https://www.securityweek.com/tech-and-security-companies-respond-to-php2shell-vulnerabilities/">SecurityWeek</source>
-      <category>Vulnerability</category>
+      <title>South Carolina State Capital Hit by Cyberattack on MyColaSC Platform</title>
+      <link>https://secubuzz.com/news/south-carolina-state-capital-hit-by-cyberattack-on-7eb506</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/south-carolina-state-capital-hit-by-cyberattack-on-7eb506</guid>
+      <description><![CDATA[A cyberattack targeted South Carolina's state capital, disrupting the MyColaSC platform used for utility payments and city services. The attack leveraged network-level intrusion to compromise service availability, causing denial of service for citizens accessing municipal resources. State officials are offering assistance and urging residents to use alternative payment methods while the incident is investigated.]]></description>
+      <pubDate>Thu, 22 Oct 2026 12:14:00 GMT</pubDate>
+      <source url="https://therecord.media/south-carolina-officials-offer-assistance-cyber-incident">The Record</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>Siemens RUGGEDCOM APE1808 Devices Affected by Multiple CVEs</title>
@@ -413,15 +440,6 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>PHP2Shell Vulnerability Affects Fortinet, Cisco, Palo Alto Products</title>
-      <link>https://secubuzz.com/news/php2shell-vulnerability-affects-fortinet-cisco-pal-8ba176</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/php2shell-vulnerability-affects-fortinet-cisco-pal-8ba176</guid>
-      <description><![CDATA[PHP2Shell exposes critical PHP flaws that allow unauthenticated code execution on web servers, impacting all Palo Alto PAN-OS and Panorama versions. The vulnerability enables remote attackers to run arbitrary code without login, posing a severe RCE risk to network security appliances. Palo Alto has not released patches yet; Fortinet and Cisco are investigating affected products and advising interim mitigations.]]></description>
-      <pubDate>Thu, 22 Oct 2026 10:22:56 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/22/php2shell-vulnerability-fortinet-cisco-palo-alto-networks/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
       <title>Top 10 Best Secure File Sharing Platforms in 2026</title>
       <link>https://secubuzz.com/news/top-10-best-secure-file-sharing-platforms-in-2026-91feac</link>
       <guid isPermaLink="true">https://secubuzz.com/news/top-10-best-secure-file-sharing-platforms-in-2026-91feac</guid>
@@ -437,24 +455,6 @@
       <description><![CDATA[Atlassian’s October 2026 bulletin addresses 176 flaw entries across Jira, Confluence, Bamboo, Bitbucket, and Crowd, including 162 high‑severity and 14 critical third‑party issues. The update fixes vulnerabilities that could allow remote code execution or privilege escalation in these collaboration tools. Customers are urged to apply the latest releases immediately to eliminate exploitable weaknesses.]]></description>
       <pubDate>Thu, 22 Oct 2026 10:12:18 GMT</pubDate>
       <source url="https://cybersecuritynews.com/atlassian-security-update/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Delivery Robots Illegally Scan Customers’ Faces</title>
-      <link>https://secubuzz.com/news/delivery-robots-illegally-scan-customers-faces-149241</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/delivery-robots-illegally-scan-customers-faces-149241</guid>
-      <description><![CDATA[Delivery robots captured customers’ facial data without consent, linking scans to names and addresses for AI training. The flaw stems from unauthorized biometric data collection and lack of user permission controls, exposing personal identifiers to third parties. Users should verify robot privacy settings, and vendors must implement explicit consent mechanisms and data protection policies.]]></description>
-      <pubDate>Thu, 22 Oct 2026 09:39:23 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/privacy/2026/10/delivery-bots-accused-of-illegally-scanning-customers">Malwarebytes Labs</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Open-Source Projects Drop Security Controls, Exposing Unauthenticated Functionality</title>
-      <link>https://secubuzz.com/news/open-source-projects-drop-security-controls-exposi-28e624</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/open-source-projects-drop-security-controls-exposi-28e624</guid>
-      <description><![CDATA[Anthropic’s Frontier Red Team identified 493 instances where open-source projects enabled complex features for unauthenticated users, even when disabled or unnecessary. The root cause is missing access controls and premature code execution before security checks, increasing attack surface. Developers should audit configuration defaults, enforce least privilege, and move security checks earlier in the execution flow.]]></description>
-      <pubDate>Thu, 22 Oct 2026 09:10:55 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/22/anthropic-attack-surface-reduction-open-source/">Help Net Security</source>
       <category>Vulnerability</category>
     </item>
   </channel>
