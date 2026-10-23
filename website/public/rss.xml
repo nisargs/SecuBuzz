@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Oct 2026 19:19:39 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 22:21:12 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>php2shell Vulnerability Causes Widespread Panic</title>
+      <link>https://secubuzz.com/news/php2shell-vulnerability-causes-widespread-panic-57dd7e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/php2shell-vulnerability-causes-widespread-panic-57dd7e</guid>
+      <description><![CDATA[The php2shell vulnerability triggered widespread panic among users, affecting PHP installations via a remote code execution vector. The flaw allows unauthenticated attackers to execute arbitrary code with the web server’s privileges, and a public proof‑of‑concept has been released, indicating active exploitation potential. A patch is available from the PHP team; administrators should apply the update immediately and verify configuration hardening.]]></description>
+      <pubDate>Fri, 23 Oct 2026 20:04:47 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33452">SANS Internet Storm Center</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>PHP2Shell Exploit Advice from Cyber Experts</title>
+      <link>https://secubuzz.com/news/php2shell-exploit-advice-from-cyber-experts-795ba5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/php2shell-exploit-advice-from-cyber-experts-795ba5</guid>
+      <description><![CDATA[The PHP2Shell vulnerability exposes PHP applications to remote code execution via a flaw in the PHP interpreter’s handling of certain input. Security researchers have demonstrated a public proof‑of‑concept, confirming the vulnerability’s high severity and the potential for unauthenticated exploitation. Experts recommend applying the official patch, disabling vulnerable functions, and monitoring for suspicious activity.]]></description>
+      <pubDate>Fri, 23 Oct 2026 19:41:23 GMT</pubDate>
+      <source url="https://www.darkreading.com/application-security/exposed-php2shell-cyber-experts-advice">Dark Reading</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Microsoft Teams to Add AI‑Powered Phishing Detection</title>
       <link>https://secubuzz.com/news/microsoft-teams-to-add-ai-powered-phishing-detecti-5ee80e</link>
@@ -60,6 +78,15 @@
       <pubDate>Fri, 23 Oct 2026 17:50:47 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html">The Hacker News</source>
       <category>Ransomware</category>
+    </item>
+    <item>
+      <title>AI‑Generated Attack Campaigns Target Hundreds of Sites</title>
+      <link>https://secubuzz.com/news/ai-generated-attack-campaigns-target-hundreds-of-s-5ca1da</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-generated-attack-campaigns-target-hundreds-of-s-5ca1da</guid>
+      <description><![CDATA[AI tools are producing large‑scale attack campaigns that target 105 websites using open‑weight models, while public models have achieved full domain control for $12. The attacks exploit automated credential stuffing and domain takeover vectors, causing widespread service disruptions. Vendors should monitor for anomalous login patterns and enforce multi‑factor authentication to mitigate these low‑cost attacks.]]></description>
+      <pubDate>Fri, 23 Oct 2026 17:26:59 GMT</pubDate>
+      <source url="https://www.darkreading.com/cybersecurity-operations/ai-tools-massive-attacks-little-cost">Dark Reading</source>
+      <category>Policy</category>
     </item>
     <item>
       <title>Microsoft Announces End of Support for Windows Server 2016</title>
@@ -116,6 +143,24 @@
       <category>Malware</category>
     </item>
     <item>
+      <title>North Korea’s State Websites Hit by Multi‑Country DDoS Floods</title>
+      <link>https://secubuzz.com/news/north-korea-s-state-websites-hit-by-multi-country-70b8df</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/north-korea-s-state-websites-hit-by-multi-country-70b8df</guid>
+      <description><![CDATA[Multiple waves of DDoS attacks originating from Vietnam, the Philippines, Venezuela, and other nations disrupted North Korea’s public internet services, taking major state websites offline. The floods began at 02:01 UTC on October 20, overwhelming the country’s bandwidth and rendering sites unreachable. Network operators should deploy rate limiting, scrubbing services, and traffic anomaly detection to defend against such volumetric assaults.]]></description>
+      <pubDate>Fri, 23 Oct 2026 14:22:35 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/multiple-waves-of-ddos-attacks-caused-in-north-korea/">Cyber Security News</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>AI Agent Manipulation via Malicious Inputs Exploits Legitimate Permissions</title>
+      <link>https://secubuzz.com/news/ai-agent-manipulation-via-malicious-inputs-exploit-5ad1e0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-agent-manipulation-via-malicious-inputs-exploit-5ad1e0</guid>
+      <description><![CDATA[AI agents can be manipulated through malicious emails, websites, and plugins to execute commands, steal data, or delete files using their legitimate permissions. The flaw arises from insufficient input validation and lack of runtime control enforcement, enabling attackers to hijack agent operations. Gen Digital recommends implementing Agent Trust Hub skill verification, secure connectivity, and runtime controls to mitigate this risk.]]></description>
+      <pubDate>Fri, 23 Oct 2026 14:00:10 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/you-gave-your-ai-agent-access-but-who-is-giving-it-orders/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Caribbean Cyber Threats Amplify Global Risk</title>
       <link>https://secubuzz.com/news/caribbean-cyber-threats-amplify-global-risk-485ca9</link>
       <guid isPermaLink="true">https://secubuzz.com/news/caribbean-cyber-threats-amplify-global-risk-485ca9</guid>
@@ -123,6 +168,15 @@
       <pubDate>Fri, 23 Oct 2026 14:00:00 GMT</pubDate>
       <source url="https://www.darkreading.com/cyber-risk/why-caribbean-threats-cascade-global-cyber-risk">Dark Reading</source>
       <category>Policy</category>
+    </item>
+    <item>
+      <title>Enterprise Firewalls and VPNs Breached, 70,000 Credentials Exposed</title>
+      <link>https://secubuzz.com/news/enterprise-firewalls-and-vpns-breached-70-000-cred-1f7b9d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/enterprise-firewalls-and-vpns-breached-70-000-cred-1f7b9d</guid>
+      <description><![CDATA[Hackers breached exposed Fortinet FortiGate and Palo Alto Networks GlobalProtect firewalls, accessing over 70,000 credentials across multiple organizations worldwide. The attack leveraged misconfigured network edge devices, allowing attackers to enumerate and exfiltrate stored credentials. Immediate patching of firewall firmware, tightening of VPN authentication, and network segmentation are required to remediate the breach.]]></description>
+      <pubDate>Fri, 23 Oct 2026 13:50:56 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html">The Hacker News</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>PHP Vulnerability Exploits Core Parsing Engine</title>
@@ -402,60 +456,6 @@
       <pubDate>Thu, 22 Oct 2026 15:49:32 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-shares-how-to-fix-broken-exchange-online-ews-apps/">BleepingComputer</source>
       <category>Policy</category>
-    </item>
-    <item>
-      <title>Claude Security Enhances Continuous Repository Scanning</title>
-      <link>https://secubuzz.com/news/claude-security-enhances-continuous-repository-sca-4bb4bc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/claude-security-enhances-continuous-repository-sca-4bb4bc</guid>
-      <description><![CDATA[Anthropic updated Claude Security to continuously scan connected code repositories for new flaws, eliminating the need for manual scan initiation. The service now tracks reported vulnerabilities, marks them fixed when changes are detected, and reopens them if the issue returns. This enhancement improves continuous integration pipelines, reduces manual oversight, and ensures timely remediation of newly discovered security issues.]]></description>
-      <pubDate>Thu, 22 Oct 2026 14:40:43 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/claude-security-continuous-scans/">Cyber Security News</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>ScarlettGroup Threatens Data Leaks with Dark Web Naming and Countdown Timers</title>
-      <link>https://secubuzz.com/news/scarlettgroup-threatens-data-leaks-with-dark-web-n-33c6ec</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/scarlettgroup-threatens-data-leaks-with-dark-web-n-33c6ec</guid>
-      <description><![CDATA[ScarlettGroup, a newly observed extortion gang, is naming companies on a dark web leak site and using countdown timers to threaten the release of allegedly stolen data. The operation applies public pressure before breach claims are independently verified, creating reputational risk and potential regulatory scrutiny. Security teams should monitor dark web activity, verify data integrity, and prepare incident response plans to mitigate reputational damage.]]></description>
-      <pubDate>Thu, 22 Oct 2026 14:40:34 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/a-new-extortion-gang/">Cyber Security News</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Corey Thuen Announces Hiring Hackers for &apos;Evil Bit&apos; Project</title>
-      <link>https://secubuzz.com/news/corey-thuen-announces-hiring-hackers-for-evil-bit-5b360c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/corey-thuen-announces-hiring-hackers-for-evil-bit-5b360c</guid>
-      <description><![CDATA[Corey Thuen publicly announced hiring hackers for a project he calls 'the evil bit,' framing it as an adversarial initiative. The statement, shared on SecurityWeek, highlights a controversial approach to offensive security that raises ethical and legal questions for the industry. No specific vulnerability or exploit is disclosed, and no patch or mitigation is required at this time.]]></description>
-      <pubDate>Thu, 22 Oct 2026 14:31:34 GMT</pubDate>
-      <source url="https://www.securityweek.com/hacker-conversations-corey-thuen-and-the-evil-bit/">SecurityWeek</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Scammers Target Mobile Users with Deceptive Tactics</title>
-      <link>https://secubuzz.com/news/scammers-target-mobile-users-with-deceptive-tactic-3ab01f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/scammers-target-mobile-users-with-deceptive-tactic-3ab01f</guid>
-      <description><![CDATA[Scammers are exploiting mobile users by targeting phones through deceptive tactics that bypass standard warning systems. The trend shows that one in three people ignore scam alerts, enabling attackers to harvest personal data and credentials via social engineering and malicious apps. Security teams should enforce app store vetting, enable two‑factor authentication, and educate users about phishing indicators.]]></description>
-      <pubDate>Thu, 22 Oct 2026 14:14:26 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/scams/2026/10/scammers-are-finding-new-ways-to-target-your-phone-here-are-5-ways-to-protect-yourself">Malwarebytes Labs</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>INTERPOL Arrests 1,462 Suspects, Disrupts 10,909 Cybercrime Networks</title>
-      <link>https://secubuzz.com/news/interpol-arrests-1-462-suspects-disrupts-10-909-cy-5e69d6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/interpol-arrests-1-462-suspects-disrupts-10-909-cy-5e69d6</guid>
-      <description><![CDATA[INTERPOL conducted Operation Serengeti III, arresting 1,462 suspects and disrupting 10,909 cybercrime networks worldwide. The coordinated effort recovered over $105 million in illicit funds, involving agencies from 21 countries and targeting a range of criminal activities including phishing, ransomware, and fraud. Law enforcement agencies should continue joint intelligence sharing and enforce stricter regulatory compliance to sustain momentum against transnational cybercrime.]]></description>
-      <pubDate>Thu, 22 Oct 2026 13:38:22 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/interpol-arrests-1462-suspects-disrupts.html">The Hacker News</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>Amazon Says PHP2Shell Exploitation Began 4 Days Before Patches</title>
-      <link>https://secubuzz.com/news/amazon-says-php2shell-exploitation-began-4-days-be-1424d2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/amazon-says-php2shell-exploitation-began-4-days-be-1424d2</guid>
-      <description><![CDATA[Amazon discovered that attackers exploited the PHP2Shell vulnerability four days before patches were released, targeting the web application layer. The flaw allows unauthenticated remote code execution via crafted PHP scripts, and active exploitation was observed in the wild, causing unauthorized access to customer data. Amazon has issued a patch and recommends immediate application of the update to all affected instances.]]></description>
-      <pubDate>Thu, 22 Oct 2026 13:09:12 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/amazon-says-php2shell-exploitation-began-4-days-before-patches/">BleepingComputer</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

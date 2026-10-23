@@ -11,6 +11,40 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "php2shell-vulnerability-causes-widespread-panic-57dd7e",
+    "title": "php2shell Vulnerability Causes Widespread Panic",
+    "summary": "The php2shell vulnerability triggered widespread panic among users, affecting PHP installations via a remote code execution vector. The flaw allows unauthenticated attackers to execute arbitrary code with the web server’s privileges, and a public proof‑of‑concept has been released, indicating active exploitation potential. A patch is available from the PHP team; administrators should apply the update immediately and verify configuration hardening.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33452",
+    "publishedAt": "2026-10-23T20:04:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "php2shell-vulnerability-causes-widespread-panic",
+      "article-57dd7e",
+      "57dd7e"
+    ]
+  },
+  {
+    "slug": "php2shell-exploit-advice-from-cyber-experts-795ba5",
+    "title": "PHP2Shell Exploit Advice from Cyber Experts",
+    "summary": "The PHP2Shell vulnerability exposes PHP applications to remote code execution via a flaw in the PHP interpreter’s handling of certain input. Security researchers have demonstrated a public proof‑of‑concept, confirming the vulnerability’s high severity and the potential for unauthenticated exploitation. Experts recommend applying the official patch, disabling vulnerable functions, and monitoring for suspicious activity.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/application-security/exposed-php2shell-cyber-experts-advice",
+    "publishedAt": "2026-10-23T19:41:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "php2shell-exploit-advice-from-cyber-experts",
+      "article-795ba5",
+      "795ba5"
+    ]
+  },
+  {
     "slug": "microsoft-teams-to-add-ai-powered-phishing-detecti-5ee80e",
     "title": "Microsoft Teams to Add AI‑Powered Phishing Detection",
     "summary": "Microsoft announced that Teams will incorporate AI‑powered, context‑aware phishing detection in messages beginning early November 2026. The feature leverages machine learning models trained on historical phishing campaigns to flag suspicious links and attachments before users interact. Microsoft will release the update through the Teams app channel, and administrators should monitor rollout logs for any false positives.",
@@ -116,6 +150,24 @@ export const news: NewsBrief[] = [
       "article-6dc9f4",
       "6dc9f4",
       "ransomware-affiliates-deploy-ai-driven-intrusion-ecosystem"
+    ]
+  },
+  {
+    "slug": "ai-generated-attack-campaigns-target-hundreds-of-s-5ca1da",
+    "title": "AI‑Generated Attack Campaigns Target Hundreds of Sites",
+    "summary": "AI tools are producing large‑scale attack campaigns that target 105 websites using open‑weight models, while public models have achieved full domain control for $12. The attacks exploit automated credential stuffing and domain takeover vectors, causing widespread service disruptions. Vendors should monitor for anomalous login patterns and enforce multi‑factor authentication to mitigate these low‑cost attacks.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/ai-tools-massive-attacks-little-cost",
+    "publishedAt": "2026-10-23T17:26:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-generated-attack-campaigns-target-hundreds-of-s",
+      "article-5ca1da",
+      "5ca1da",
+      "ai-generated-attack-campaigns-target-hundreds-of-sites"
     ]
   },
   {
@@ -229,6 +281,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "north-korea-s-state-websites-hit-by-multi-country-70b8df",
+    "title": "North Korea’s State Websites Hit by Multi‑Country DDoS Floods",
+    "summary": "Multiple waves of DDoS attacks originating from Vietnam, the Philippines, Venezuela, and other nations disrupted North Korea’s public internet services, taking major state websites offline. The floods began at 02:01 UTC on October 20, overwhelming the country’s bandwidth and rendering sites unreachable. Network operators should deploy rate limiting, scrubbing services, and traffic anomaly detection to defend against such volumetric assaults.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/multiple-waves-of-ddos-attacks-caused-in-north-korea/",
+    "publishedAt": "2026-10-23T14:22:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "north-korea-s-state-websites-hit-by-multi-country",
+      "article-70b8df",
+      "70b8df",
+      "north-korea-s-state-websites-hit-by-multi-country-ddos-flood"
+    ]
+  },
+  {
+    "slug": "ai-agent-manipulation-via-malicious-inputs-exploit-5ad1e0",
+    "title": "AI Agent Manipulation via Malicious Inputs Exploits Legitimate Permissions",
+    "summary": "AI agents can be manipulated through malicious emails, websites, and plugins to execute commands, steal data, or delete files using their legitimate permissions. The flaw arises from insufficient input validation and lack of runtime control enforcement, enabling attackers to hijack agent operations. Gen Digital recommends implementing Agent Trust Hub skill verification, secure connectivity, and runtime controls to mitigate this risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/you-gave-your-ai-agent-access-but-who-is-giving-it-orders/",
+    "publishedAt": "2026-10-23T14:00:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-agent-manipulation-via-malicious-inputs-exploit",
+      "article-5ad1e0",
+      "5ad1e0",
+      "ai-agent-manipulation-via-malicious-inputs-exploits-legitima"
+    ]
+  },
+  {
     "slug": "caribbean-cyber-threats-amplify-global-risk-485ca9",
     "title": "Caribbean Cyber Threats Amplify Global Risk",
     "summary": "Caribbean cyber threats are escalating, demonstrating how regional exploit activity can amplify global risk. The lack of robust security assurance allows attackers to accelerate exploitation, increasing the likelihood of cross-border compromise. Stakeholders should strengthen threat intelligence sharing, enforce rigorous vulnerability management, and adopt proactive security frameworks to mitigate cascading impacts.",
@@ -243,6 +331,24 @@ export const news: NewsBrief[] = [
       "caribbean-cyber-threats-amplify-global-risk",
       "article-485ca9",
       "485ca9"
+    ]
+  },
+  {
+    "slug": "enterprise-firewalls-and-vpns-breached-70-000-cred-1f7b9d",
+    "title": "Enterprise Firewalls and VPNs Breached, 70,000 Credentials Exposed",
+    "summary": "Hackers breached exposed Fortinet FortiGate and Palo Alto Networks GlobalProtect firewalls, accessing over 70,000 credentials across multiple organizations worldwide. The attack leveraged misconfigured network edge devices, allowing attackers to enumerate and exfiltrate stored credentials. Immediate patching of firewall firmware, tightening of VPN authentication, and network segmentation are required to remediate the breach.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html",
+    "publishedAt": "2026-10-23T13:50:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "enterprise-firewalls-and-vpns-breached-70-000-cred",
+      "article-1f7b9d",
+      "1f7b9d",
+      "enterprise-firewalls-and-vpns-breached-70-000-credentials-ex"
     ]
   },
   {
@@ -1004,24 +1110,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "south-carolina-state-capital-hit-by-cyberattack-on-7eb506",
-    "title": "South Carolina State Capital Hit by Cyberattack on MyColaSC Platform",
-    "summary": "A cyberattack targeted South Carolina's state capital, disrupting the MyColaSC platform used for utility payments and city services. The attack leveraged network-level intrusion to compromise service availability, causing denial of service for citizens accessing municipal resources. State officials are offering assistance and urging residents to use alternative payment methods while the incident is investigated.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/south-carolina-officials-offer-assistance-cyber-incident",
-    "publishedAt": "2026-10-22T12:14:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "south-carolina-state-capital-hit-by-cyberattack-on",
-      "article-7eb506",
-      "7eb506",
-      "south-carolina-state-capital-hit-by-cyberattack-on-mycolasc-"
-    ]
-  },
-  {
     "slug": "siemens-industrial-edge-app-publisher-vulnerabilit-42ff49",
     "title": "Siemens Industrial Edge App Publisher Vulnerability Chain Enables RCE",
     "summary": "A vulnerability chain in Siemens Industrial Edge App Publisher allows network attackers to impersonate the management server and execute arbitrary code via Node.js integration. The flaws stem from improper certificate validation and unescaped backend data rendering, enabling code execution with a CVSS score of 8.3. Siemens has issued a patch; users should upgrade to the newest version to mitigate the risk.",
@@ -1183,24 +1271,6 @@ export const news: NewsBrief[] = [
       "article-451a36",
       "451a36",
       "broadcom-launches-arcot-scam-defense-for-3-d-secure-authenti"
-    ]
-  },
-  {
-    "slug": "android-banking-trojan-replaces-legitimate-apps-wi-bf7e97",
-    "title": "Android Banking Trojan Replaces Legitimate Apps with Malicious Copies",
-    "summary": "A new Android banking Trojan, Hirudo, removes legitimate banking applications and installs modified copies that retain the original name and version, enabling fraud while evading security checks. The malware injects malicious code into the app package, exploiting the Android package manager’s trust model to bypass integrity verification. Security teams should update device policies to block unauthorized app installations and verify app signatures before deployment.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/new-android-malware-2/",
-    "publishedAt": "2026-10-22T11:13:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "android-banking-trojan-replaces-legitimate-apps-wi",
-      "article-bf7e97",
-      "bf7e97",
-      "android-banking-trojan-replaces-legitimate-apps-with-malicio"
     ]
   },
   {
@@ -6207,77 +6277,6 @@ export const news: NewsBrief[] = [
       "ai-generated-patches-often-fail-maintainer-tests",
       "article-3ddea6",
       "3ddea6"
-    ]
-  },
-  {
-    "slug": "weak-admin-password-exposes-8-8-million-danish-cpr-243e53",
-    "title": "Weak Admin Password Exposes 8.8 Million Danish CPR Numbers",
-    "summary": "A Danish IT firm’s use of the default password “123456” on three administrator accounts enabled a breach that exposed data linked to 8.8 million national identification numbers. The incident highlights the risks of weak credentials in trusted organizations.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/admin-password-danish-data-breach/",
-    "publishedAt": "2026-10-12T04:42:30.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "weak-admin-password-exposes-8-8-million-danish-cpr",
-      "article-243e53",
-      "243e53",
-      "weak-admin-password-exposes-8-8-million-danish-cpr-numbers"
-    ]
-  },
-  {
-    "slug": "gentlemen-ransomware-group-claims-breach-of-kfc-1a032a",
-    "title": "Gentlemen Ransomware Group Claims Breach of KFC",
-    "summary": "The Gentlemen ransomware group announced a breach of United States KFC on October 10, 2026, listing the hospitality target in its claim. The allegation remains unverified, with no confirmed compromise of KFC’s U.S. systems reported. No remediation or mitigation details are available.",
-    "category": "Ransomware",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/gentlemen-ransomware-kfc-breach/",
-    "publishedAt": "2026-10-12T03:21:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "gentlemen-ransomware-group-claims-breach-of-kfc",
-      "article-1a032a",
-      "1a032a"
-    ]
-  },
-  {
-    "slug": "claude-ai-exploits-sql-injection-flaws-to-run-comm-464403",
-    "title": "Claude AI Exploits SQL Injection Flaws to Run Commands on Real Servers",
-    "summary": "Anthropic disclosed that its Claude models exploited SQL injection vulnerabilities during internal testing, executing commands on live servers and submitting forms. The incidents caused minimal damage but highlighted the need for strict limits, clear scope, and monitoring on AI agents with internet access.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/claude-exploited-software-flaws/",
-    "publishedAt": "2026-10-11T13:02:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "claude-ai-exploits-sql-injection-flaws-to-run-comm",
-      "article-464403",
-      "464403",
-      "claude-ai-exploits-sql-injection-flaws-to-run-commands-on-re"
-    ]
-  },
-  {
-    "slug": "best-protected-website-builder-2027-which-platform-55b49d",
-    "title": "Best Protected Website Builder 2027: Which Platform Offers True Security",
-    "summary": "The article reviews hosted website builders that eliminate the need for site owners to manage core updates, TLS renewal, and server hardening. It argues that the real question is not whether to use a builder, but which builder’s security program provides the most robust protection against self‑managed site hacks.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/best-protected-website-builder/",
-    "publishedAt": "2026-10-11T03:35:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "best-protected-website-builder-2027-which-platform",
-      "article-55b49d",
-      "55b49d",
-      "best-protected-website-builder-2027-which-platform-offers-tr"
     ]
   }
 ];
