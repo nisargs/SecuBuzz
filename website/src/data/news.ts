@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "microsoft-teams-to-add-ai-powered-phishing-detecti-5ee80e",
+    "title": "Microsoft Teams to Add AI‑Powered Phishing Detection",
+    "summary": "Microsoft announced that Teams will incorporate AI‑powered, context‑aware phishing detection in messages beginning early November 2026. The feature leverages machine learning models trained on historical phishing campaigns to flag suspicious links and attachments before users interact. Microsoft will release the update through the Teams app channel, and administrators should monitor rollout logs for any false positives.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-to-get-ai-powered-context-aware-phishing-detection/",
+    "publishedAt": "2026-10-23T18:54:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-teams-to-add-ai-powered-phishing-detecti",
+      "article-5ee80e",
+      "5ee80e",
+      "microsoft-teams-to-add-ai-powered-phishing-detection"
+    ]
+  },
+  {
     "slug": "cloudflare-enhances-range-request-handling-to-redu-aaedf1",
     "title": "Cloudflare Enhances Range Request Handling to Reduce Origin Bandwidth Waste",
     "summary": "Cloudflare’s Pingora cache architecture was updated to handle large file range requests more efficiently, targeting origin bandwidth waste on small requests. The change addresses naive byte-range caching that previously consumed gigabytes of origin bandwidth, reducing latency and bandwidth usage. No patch required; the update is deployed in Cloudflare’s infrastructure, improving performance for all users.",
@@ -29,6 +47,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "litellm-1-107-0-supply-chain-compromise-via-python-3513cb",
+    "title": "LiteLLM 1.107.0 Supply‑Chain Compromise via Python Startup Hooks",
+    "summary": "A supply‑chain compromise in LiteLLM 1.107.0 leveraged Python startup hooks to exfiltrate credentials and load remote code. The flaw allows attackers to inject malicious modules during interpreter initialization, bypassing standard package verification and enabling credential theft without user interaction. Microsoft recommends updating to the patched LiteLLM release and disabling startup hooks as a mitigation until a vendor patch is issued.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Microsoft Security",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/23/inside-the-litellm-1-107-0-supply-chain-compromise-credential-theft-through-python-startup-hooks/",
+    "publishedAt": "2026-10-23T18:12:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "litellm-1-107-0-supply-chain-compromise-via-python",
+      "article-3513cb",
+      "3513cb",
+      "litellm-1-107-0-supply-chain-compromise-via-python-startup-h"
+    ]
+  },
+  {
     "slug": "cloudflare-launches-geokey-manager-to-enforce-post-5eab96",
     "title": "Cloudflare Launches GeoKey Manager to Enforce Post‑Quantum Geographic Key Isolation",
     "summary": "Cloudflare introduced a post‑quantum GeoKey Manager that isolates decryption keys by geographic region, preventing harvest‑now‑decrypt‑later attacks. The solution rewrites the cryptography stack to enforce strict data sovereignty, ensuring keys cannot be extracted from one region and used elsewhere. The feature is available in Cloudflare’s current product offering; users should enable GeoKey Manager to maintain compliance with regional data‑protection regulations.",
@@ -44,6 +80,42 @@ export const news: NewsBrief[] = [
       "article-5eab96",
       "5eab96",
       "cloudflare-launches-geokey-manager-to-enforce-post-quantum-g"
+    ]
+  },
+  {
+    "slug": "ruby-releases-4-0-9-3-4-12-3-3-13-to-fix-onigmo-re-69b84c",
+    "title": "Ruby Releases 4.0.9, 3.4.12, 3.3.13 to Fix Onigmo Regex Bugs Behind GitLab RCE Flaws",
+    "summary": "Ruby released 4.0.9, 3.4.12, and 3.3.13 to address three Onigmo regex engine bugs that enabled memory corruption during pattern compilation. These defects underpinned four critical GitLab RCE vulnerabilities, allowing crafted patterns to execute arbitrary code on GitLab servers without authentication. GitLab has applied patches, and Ruby advises users to upgrade to the fixed releases and monitor for anomalous regex activity.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/ruby-fixes-three-regex-engine-bugs.html",
+    "publishedAt": "2026-10-23T17:54:08.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ruby-releases-4-0-9-3-4-12-3-3-13-to-fix-onigmo-re",
+      "article-69b84c",
+      "69b84c",
+      "ruby-releases-4-0-9-3-4-12-3-3-13-to-fix-onigmo-regex-bugs-b"
+    ]
+  },
+  {
+    "slug": "ransomware-affiliates-deploy-ai-driven-intrusion-e-6dc9f4",
+    "title": "Ransomware Affiliates Deploy AI-Driven Intrusion Ecosystem",
+    "summary": "Cybersecurity researchers uncovered an AI‑driven intrusion ecosystem operated by affiliates of the INC and The Gentlemen ransomware groups, centered on an Autonomous Red Team Kill Chain Framework called Phantom. The framework enables automated intrusion and data‑extortion operations, leveraging AI agents to orchestrate attacks across multiple targets. Security teams should monitor for AI‑based intrusion patterns and block Phantom command and control traffic to mitigate exploitation.",
+    "category": "Ransomware",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html",
+    "publishedAt": "2026-10-23T17:50:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ransomware-affiliates-deploy-ai-driven-intrusion-e",
+      "article-6dc9f4",
+      "6dc9f4",
+      "ransomware-affiliates-deploy-ai-driven-intrusion-ecosystem"
     ]
   },
   {
@@ -80,6 +152,62 @@ export const news: NewsBrief[] = [
       "article-1fdcce",
       "1fdcce",
       "quest-diagnostics-breach-exposes-patient-records-via-quanum-"
+    ]
+  },
+  {
+    "slug": "php-shares-mitigation-for-new-rce-vulnerability-wi-3e4da4",
+    "title": "PHP Shares Mitigation for New RCE Vulnerability Without Patch",
+    "summary": "PHP has released mitigation guidance for a new remote code execution vulnerability affecting systems with non-default configurations. The flaw lacks an available patch and requires user interaction to exploit, elevating risk for exposed web services. Administrators should apply the documented mitigations, disable vulnerable features, and monitor logs for exploitation attempts until a patch is issued.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/",
+    "publishedAt": "2026-10-23T15:38:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "php-shares-mitigation-for-new-rce-vulnerability-wi",
+      "article-3e4da4",
+      "3e4da4",
+      "php-shares-mitigation-for-new-rce-vulnerability-without-patc"
+    ]
+  },
+  {
+    "slug": "whatsapp-may-stop-working-without-registered-sim-u-25a338",
+    "title": "WhatsApp May Stop Working Without Registered SIM Under New Rules",
+    "summary": "WhatsApp users in India may lose service if their device lacks a registered SIM, per new government regulations effective January 1, 2027. The rule requires all messaging accounts to be linked to a registered SIM, impacting secondary phones, tablets, and other devices without active SIMs. Compliance deadlines are set for December 31, 2026, after which non‑compliant accounts will be disabled.",
+    "category": "Policy",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/whatsapp-stop-working-without-registered-sim/",
+    "publishedAt": "2026-10-23T15:20:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "whatsapp-may-stop-working-without-registered-sim-u",
+      "article-25a338",
+      "25a338",
+      "whatsapp-may-stop-working-without-registered-sim-under-new-r"
+    ]
+  },
+  {
+    "slug": "critical-okta-access-gateway-flaw-lets-attackers-w-302b8e",
+    "title": "Critical Okta Access Gateway Flaw Lets Attackers With Admin Access Execute System Commands",
+    "summary": "A critical flaw in Okta Access Gateway allows authenticated administrators to execute arbitrary system commands via the Admin Console, affecting versions prior to 2026.10.2. The vulnerability, identified as CVE-2026-115547, carries a CVSS v3.1 score of 9.1 and is exploitable through weak input validation. Okta has released a patch; administrators should upgrade to 2026.10.2 or later immediately.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/okta-access-gateway-flaw/",
+    "publishedAt": "2026-10-23T15:19:23.000Z",
+    "cves": [
+      "CVE-2026-115547"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "critical-okta-access-gateway-flaw-lets-attackers-w",
+      "article-302b8e",
+      "302b8e",
+      "critical-okta-access-gateway-flaw-lets-attackers-with-admin-"
     ]
   },
   {
@@ -135,6 +263,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cyber-insurers-shift-from-risk-transfer-to-active-717256",
+    "title": "Cyber Insurers Shift from Risk Transfer to Active Cyber Defense",
+    "summary": "Cyber insurers now face direct cybersecurity responsibilities as AI, social engineering, and cloud risks grow, shifting focus from pure risk transfer to active threat mitigation. This trend forces carriers to expand underwriting models, integrate technical assessments, and deploy defensive controls, while maintaining traditional actuarial pricing. Insurers are investing in cyber expertise, threat intelligence, and incident response to meet regulatory expectations.",
+    "category": "Cloud",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyber-risk/cyber-insurances-underwriting-isnt-enough",
+    "publishedAt": "2026-10-23T13:30:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cyber-insurers-shift-from-risk-transfer-to-active",
+      "article-717256",
+      "717256",
+      "cyber-insurers-shift-from-risk-transfer-to-active-cyber-defe"
+    ]
+  },
+  {
     "slug": "uk-proposes-14-year-prison-terms-for-undersea-cabl-216515",
     "title": "UK Proposes 14‑Year Prison Terms for Undersea Cable Sabotage",
     "summary": "The United Kingdom is proposing amendments to the Submarine Telegraph Act 1885 to increase penalties for deliberate undersea cable sabotage. The revised law would raise the maximum fine to £1,000 and extend imprisonment to fourteen years, replacing the current five‑year limit. The proposal reflects growing concerns over hybrid threats targeting critical infrastructure and aims to deter future sabotage incidents.",
@@ -171,20 +317,41 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "hpe-arubaos-patches-eight-high-severity-rce-flaws-156206",
-    "title": "HPE ArubaOS Patches Eight High‑Severity RCE Flaws",
-    "summary": "Hewlett Packard Enterprise patched eight maximum‑severity authentication bypass and remote code execution flaws in its Aruba Operating System. The vulnerabilities allowed authenticated attackers to execute arbitrary code, but no CVE identifiers were cited, and the exploits were not confirmed in the wild. HPE released firmware updates and urged users to apply the patches immediately to mitigate the high‑risk RCE.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/",
-    "publishedAt": "2026-10-23T12:48:00.000Z",
+    "slug": "infostealer-targets-ai-development-tools-for-crede-5671d3",
+    "title": "Infostealer Targets AI Development Tools for Credential Theft",
+    "summary": "A new infostealer malware targets AI development tools, harvesting browser passwords, session cookies, and cryptocurrency wallets. The threat collects credentials for Claude, ChatGPT Desktop, Codex, Cursor, Windsurf, GitHub Copilot, and local development files, expanding its scope beyond traditional credential theft. Security teams should block known download URLs, enforce least‑privilege access, and monitor anomalous credential exfiltration to mitigate this evolving threat.",
+    "category": "Malware",
+    "severity": "MEDIUM",
+    "source": "Check Point Research",
+    "sourceUrl": "https://research.checkpoint.com/2026/infostealer-riding-the-ai-train/",
+    "publishedAt": "2026-10-23T13:00:09.000Z",
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "hpe-arubaos-patches-eight-high-severity-rce-flaws",
-      "article-156206",
-      "156206"
+      "infostealer-targets-ai-development-tools-for-crede",
+      "article-5671d3",
+      "5671d3",
+      "infostealer-targets-ai-development-tools-for-credential-thef"
+    ]
+  },
+  {
+    "slug": "cisa-adds-cve-2026-114625-to-known-exploited-vulne-1a68f7",
+    "title": "CISA Adds CVE-2026-114625 to Known Exploited Vulnerabilities Catalog",
+    "summary": "CISA added CVE-2026-114625, an SQL injection flaw in Arista VeloCloud Orchestrator, to its Known Exploited Vulnerabilities catalog after confirming active exploitation. The vulnerability allows unauthenticated attackers to run SQL commands on exposed management interfaces, granting full control over the orchestrator and connected edge devices. CISA urges federal agencies to apply firmware patches immediately and follow BOD 26‑04 for rapid remediation.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog",
+    "publishedAt": "2026-10-23T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-114625"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-adds-cve-2026-114625-to-known-exploited-vulne",
+      "article-1a68f7",
+      "1a68f7",
+      "cisa-adds-cve-2026-114625-to-known-exploited-vulnerabilities"
     ]
   },
   {
@@ -292,6 +459,24 @@ export const news: NewsBrief[] = [
       "top-10-email-encryption-services-ranked-for-2026",
       "article-5a5cac",
       "5a5cac"
+    ]
+  },
+  {
+    "slug": "hackers-hijack-exposed-ai-models-to-launch-cyberat-c127e1",
+    "title": "Hackers Hijack Exposed AI Models to Launch Cyberattacks",
+    "summary": "Hackers hijack publicly exposed AI models to orchestrate cyberattacks, forcing model owners to pay for the computing resources used. The method uses the model’s inference API, sending the attacker’s prompt to a decoy and then employing the output to plan break‑ins. Symantec’s honeypot captured the instruction set, allowing defenders to block hijacked model traffic and enforce authentication on AI services.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/23/llmjacking-agent-hijacks-exposed-ai-models/",
+    "publishedAt": "2026-10-23T08:21:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-hijack-exposed-ai-models-to-launch-cyberat",
+      "article-c127e1",
+      "c127e1",
+      "hackers-hijack-exposed-ai-models-to-launch-cyberattacks"
     ]
   },
   {
@@ -693,24 +878,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "machine-speed-attacks-enable-rapid-credential-thef-6d4a61",
-    "title": "Machine Speed Attacks Enable Rapid Credential Theft",
-    "summary": "Attackers exploit stolen GitHub tokens, malicious AI installers, and MFA phishing to steal credentials and exfiltrate data within minutes. The flaw lies in insufficient machine speed detection and automated response, allowing credential theft before detection; no CVE cited, exploitation is active and rapid. Organizations must implement faster detection, automated containment, and MFA hardening to mitigate.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/machine-speed-attacks-require-machine-speed-detection-and-response/",
-    "publishedAt": "2026-10-22T14:02:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "machine-speed-attacks-enable-rapid-credential-thef",
-      "article-6d4a61",
-      "6d4a61",
-      "machine-speed-attacks-enable-rapid-credential-theft"
-    ]
-  },
-  {
     "slug": "interpol-arrests-1-462-suspects-disrupts-10-909-cy-5e69d6",
     "title": "INTERPOL Arrests 1,462 Suspects, Disrupts 10,909 Cybercrime Networks",
     "summary": "INTERPOL conducted Operation Serengeti III, arresting 1,462 suspects and disrupting 10,909 cybercrime networks worldwide. The coordinated effort recovered over $105 million in illicit funds, involving agencies from 21 countries and targeting a range of criminal activities including phishing, ransomware, and fraud. Law enforcement agencies should continue joint intelligence sharing and enforce stricter regulatory compliance to sustain momentum against transnational cybercrime.",
@@ -726,42 +893,6 @@ export const news: NewsBrief[] = [
       "article-5e69d6",
       "5e69d6",
       "interpol-arrests-1-462-suspects-disrupts-10-909-cybercrime-n"
-    ]
-  },
-  {
-    "slug": "php-8-5-12-8-4-27-8-3-36-8-2-35-unauthenticated-rc-77c054",
-    "title": "PHP 8.5.12/8.4.27/8.3.36/8.2.35 Unauthenticated RCE Vulnerabilities Patched",
-    "summary": "PHP maintainers released fixes for two critical vulnerabilities that enable unauthenticated remote code execution on PHP 8.5.12, 8.4.27, 8.3.36, and 8.2.35, affecting PHP-FPM, Apache mod_php, php-cgi, FrankenPHP, and LiteSpeed. The flaw allows attackers to trigger code execution before application code runs, posing a high‑severity RCE risk. All PHP users should apply the patches immediately to mitigate the vulnerability.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Schneier on Security",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/new-serious-php-vulnerabilities-released-and-patched.html",
-    "publishedAt": "2026-10-22T13:26:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "php-8-5-12-8-4-27-8-3-36-8-2-35-unauthenticated-rc",
-      "article-77c054",
-      "77c054",
-      "php-8-5-12-8-4-27-8-3-36-8-2-35-unauthenticated-rce-vulnerab"
-    ]
-  },
-  {
-    "slug": "litellm-supply-chain-compromise-harvests-cloud-cre-162d69",
-    "title": "LiteLLM Supply Chain Compromise Harvests Cloud Credentials",
-    "summary": "A malicious LiteLLM release on PyPI and Docker registries distributed malware that harvests cloud logins, developer secrets, and AI service API keys from installed instances. The flaw exploits the package distribution chain, enabling credential theft without user interaction, impacting numerous corporate domains. Immediate patching of the compromised package and credential rotation are mandatory to mitigate exposure.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/litellm-compromised-supply-chain-attack-pypi-docker/",
-    "publishedAt": "2026-10-22T13:10:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "litellm-supply-chain-compromise-harvests-cloud-cre",
-      "article-162d69",
-      "162d69",
-      "litellm-supply-chain-compromise-harvests-cloud-credentials"
     ]
   },
   {
@@ -1931,26 +2062,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "cisa-adds-plex2shell-ssrf-vulnerability-to-known-e-4e40a4",
-    "title": "CISA Adds Plex2Shell SSRF Vulnerability to Known Exploited Vulnerabilities Catalog",
-    "summary": "CISA added four vulnerabilities to its Known Exploited Vulnerabilities catalog, including Plex2Shell SSRF in Plex Media Server (CVE-2026-96652, CVSS 5.3). The SSRF flaw allows attackers to request arbitrary internal URLs, potentially exposing sensitive data or facilitating lateral movement. CISA urges all affected agencies to apply vendor patches immediately and enable network segmentation to mitigate exploitation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html",
-    "publishedAt": "2026-10-21T07:26:49.000Z",
-    "cves": [
-      "CVE-2026-96652"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cisa-adds-plex2shell-ssrf-vulnerability-to-known-e",
-      "article-4e40a4",
-      "4e40a4",
-      "cisa-adds-plex2shell-ssrf-vulnerability-to-known-exploited-v"
-    ]
-  },
-  {
     "slug": "modern-cardiac-monitoring-transmits-ecg-data-to-cl-19e7e4",
     "title": "Modern Cardiac Monitoring Transmits ECG Data to Cloud",
     "summary": "A modern cardiac monitoring system transmits ECG data from wearable devices to cloud services for remote cardiologist review. The shift introduces new privacy risks as data travels through mobile gateways and cloud storage, exposing it to potential interception or misuse. Healthcare providers must enforce end‑to‑end encryption, secure gateway authentication, and compliance with data‑protection regulations to mitigate these risks.",
@@ -1966,24 +2077,6 @@ export const news: NewsBrief[] = [
       "article-19e7e4",
       "19e7e4",
       "modern-cardiac-monitoring-transmits-ecg-data-to-cloud"
-    ]
-  },
-  {
-    "slug": "openai-expands-chatgpt-chrome-extension-to-read-al-3dfc62",
-    "title": "OpenAI Expands ChatGPT Chrome Extension to Read All Open Tabs",
-    "summary": "OpenAI expanded its ChatGPT Chrome extension, enabling the assistant to read and analyze content across all open browser tabs. The update adds tools for comparing page content, filling forms, sending messages, and organizing tabs, moving beyond single‑page queries. Users should review privacy settings, grant only necessary permissions, and stay informed of future policy changes.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/chatgpt-chrome-extension-analyze-content/",
-    "publishedAt": "2026-10-21T05:48:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openai-expands-chatgpt-chrome-extension-to-read-al",
-      "article-3dfc62",
-      "3dfc62",
-      "openai-expands-chatgpt-chrome-extension-to-read-all-open-tab"
     ]
   },
   {
@@ -6185,95 +6278,6 @@ export const news: NewsBrief[] = [
       "article-55b49d",
       "55b49d",
       "best-protected-website-builder-2027-which-platform-offers-tr"
-    ]
-  },
-  {
-    "slug": "chinese-hacker-uses-artex-ai-and-claude-agents-to-3b0955",
-    "title": "Chinese Hacker Uses ARTEX AI and Claude Agents to Target South Korean Banks",
-    "summary": "A Chinese hacker launched attacks on South Korean banks using the ARTEX AI penetration testing suite and Claude AI agents. The campaign targeted banking systems, exploiting the AI tools to conduct reconnaissance and credential theft, compromising sensitive financial data and disrupting services.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks/",
-    "publishedAt": "2026-10-10T14:16:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chinese-hacker-uses-artex-ai-and-claude-agents-to",
-      "article-3b0955",
-      "3b0955",
-      "chinese-hacker-uses-artex-ai-and-claude-agents-to-target-sou"
-    ]
-  },
-  {
-    "slug": "criminal-ip-launches-ai-powered-attack-surface-man-2db71b",
-    "title": "Criminal IP Launches AI‑Powered Attack Surface Management Tool AITEM",
-    "summary": "Criminal IP has released AITEM, an AI‑driven attack surface management solution that links asset discovery with investigation, risk prioritization, and response. The tool aims to enhance visibility and streamline threat mitigation for organizations by automating analysis and prioritization of exposed assets.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/criminal-ip-introduces-aitem-as-the-next-evolution-of-attack-surface-management/",
-    "publishedAt": "2026-10-10T12:30:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "criminal-ip-launches-ai-powered-attack-surface-man",
-      "article-2db71b",
-      "2db71b",
-      "criminal-ip-launches-ai-powered-attack-surface-management-to"
-    ]
-  },
-  {
-    "slug": "third-party-ai-agents-escape-identity-governance-543bd9",
-    "title": "Third-Party AI Agents Escape Identity Governance",
-    "summary": "A study found that about 1,280 third‑party AI products embed AI, but 282 use single sign‑on while the rest remain invisible to identity stacks. The gap means many agents are not governed by authentication controls, exposing organizations to untracked access and potential misuse.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/the-third-party-agent-problem-why.html",
-    "publishedAt": "2026-10-10T11:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "third-party-ai-agents-escape-identity-governance",
-      "article-543bd9",
-      "543bd9"
-    ]
-  },
-  {
-    "slug": "insider-extortion-plot-leads-to-engineer-s-impriso-43d8e0",
-    "title": "Insider Extortion Plot Leads to Engineer’s Imprisonment",
-    "summary": "A former core infrastructure engineer deleted admin accounts, reset hundreds of passwords, and demanded 20 bitcoin to prevent server damage. The extortion attempt was uncovered, leading to the engineer’s arrest and prison sentence.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/insider-cyber-extortion-plot-against-industrial-firm-lands-engineer-in-prison/",
-    "publishedAt": "2026-10-10T11:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "insider-extortion-plot-leads-to-engineer-s-impriso",
-      "article-43d8e0",
-      "43d8e0",
-      "insider-extortion-plot-leads-to-engineer-s-imprisonment"
-    ]
-  },
-  {
-    "slug": "why-tlp-should-not-replace-your-internal-informati-57dd7d",
-    "title": "Why TLP Should Not Replace Your Internal Information Classification",
-    "summary": "The Traffic Light Protocol (TLP) is a standard for communicating information sharing limits, but it should not replace internal classification systems. Organizations should maintain their own classification frameworks alongside TLP to ensure appropriate handling of sensitive data.",
-    "category": "Policy",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33414",
-    "publishedAt": "2026-10-10T09:11:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "why-tlp-should-not-replace-your-internal-informati",
-      "article-57dd7d",
-      "57dd7d",
-      "why-tlp-should-not-replace-your-internal-information-classif"
     ]
   }
 ];

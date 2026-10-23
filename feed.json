@@ -1,5 +1,18 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-to-get-ai-powered-context-aware-phishing-detection/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-to-get-ai-powered-context-aware-phishing-detection/",
+    "title": "Microsoft Teams to Add AI‑Powered Phishing Detection",
+    "headline": "Microsoft Teams to Add AI‑Powered Phishing Detection",
+    "summary": "Microsoft announced that Teams will incorporate AI‑powered, context‑aware phishing detection in messages beginning early November 2026. The feature leverages machine learning models trained on historical phishing campaigns to flag suspicious links and attachments before users interact. Microsoft will release the update through the Teams app channel, and administrators should monitor rollout logs for any false positives.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-23T18:54:41.000Z",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-to-get-ai-powered-context-aware-phishing-detection/",
+    "additionalSources": []
+  },
+  {
     "id": "https://blog.cloudflare.com/origin-range-requests/",
     "sourceUrl": "https://blog.cloudflare.com/origin-range-requests/",
     "title": "Cloudflare Enhances Range Request Handling to Reduce Origin Bandwidth Waste",
@@ -14,6 +27,24 @@
       {
         "source": "Cloudflare Security",
         "sourceUrl": "https://blog.cloudflare.com/full-transaction-waf/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.microsoft.com/en-us/security/blog/2026/10/23/inside-the-litellm-1-107-0-supply-chain-compromise-credential-theft-through-python-startup-hooks/",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/23/inside-the-litellm-1-107-0-supply-chain-compromise-credential-theft-through-python-startup-hooks/",
+    "title": "LiteLLM 1.107.0 Supply‑Chain Compromise via Python Startup Hooks",
+    "headline": "LiteLLM 1.107.0 Supply‑Chain Compromise via Python Startup Hooks",
+    "summary": "A supply‑chain compromise in LiteLLM 1.107.0 leveraged Python startup hooks to exfiltrate credentials and load remote code. The flaw allows attackers to inject malicious modules during interpreter initialization, bypassing standard package verification and enabling credential theft without user interaction. Microsoft recommends updating to the patched LiteLLM release and disabling startup hooks as a mitigation until a vendor patch is issued.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Microsoft Security",
+    "publishedAt": "2026-10-23T18:12:19.000Z",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/10/23/inside-the-litellm-1-107-0-supply-chain-compromise-credential-theft-through-python-startup-hooks/",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/litellm-compromised-supply-chain-attack-pypi-docker/"
       }
     ]
   },
@@ -34,6 +65,41 @@
         "sourceUrl": "https://cybersecuritynews.com/north-korean-hackers/"
       }
     ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/ruby-fixes-three-regex-engine-bugs.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/ruby-fixes-three-regex-engine-bugs.html",
+    "title": "Ruby Releases 4.0.9, 3.4.12, 3.3.13 to Fix Onigmo Regex Bugs Behind GitLab RCE Flaws",
+    "headline": "Ruby Releases 4.0.9, 3.4.12, 3.3.13 to Fix Onigmo Regex Bugs Behind GitLab RCE Flaws",
+    "summary": "Ruby released 4.0.9, 3.4.12, and 3.3.13 to address three Onigmo regex engine bugs that enabled memory corruption during pattern compilation. These defects underpinned four critical GitLab RCE vulnerabilities, allowing crafted patterns to execute arbitrary code on GitLab servers without authentication. GitLab has applied patches, and Ruby advises users to upgrade to the fixed releases and monitor for anomalous regex activity.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-23T17:54:08.000Z",
+    "url": "https://thehackernews.com/2026/10/ruby-fixes-three-regex-engine-bugs.html",
+    "additionalSources": [
+      {
+        "source": "SentinelOne",
+        "sourceUrl": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-43-8"
+      },
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/"
+      }
+    ]
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html",
+    "title": "Ransomware Affiliates Deploy AI-Driven Intrusion Ecosystem",
+    "headline": "Ransomware Affiliates Deploy AI-Driven Intrusion Ecosystem",
+    "summary": "Cybersecurity researchers uncovered an AI‑driven intrusion ecosystem operated by affiliates of the INC and The Gentlemen ransomware groups, centered on an Autonomous Red Team Kill Chain Framework called Phantom. The framework enables automated intrusion and data‑extortion operations, leveraging AI agents to orchestrate attacks across multiple targets. Security teams should monitor for AI‑based intrusion patterns and block Phantom command and control traffic to mitigate exploitation.",
+    "category": "RANSOMWARE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-23T17:50:47.000Z",
+    "url": "https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html",
+    "additionalSources": []
   },
   {
     "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-january/",
@@ -65,6 +131,50 @@
         "sourceUrl": "https://therecord.media/quest-diagnostics-network-intrusion"
       }
     ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/",
+    "title": "PHP Shares Mitigation for New RCE Vulnerability Without Patch",
+    "headline": "PHP Shares Mitigation for New RCE Vulnerability Without Patch",
+    "summary": "PHP has released mitigation guidance for a new remote code execution vulnerability affecting systems with non-default configurations. The flaw lacks an available patch and requires user interaction to exploit, elevating risk for exposed web services. Administrators should apply the documented mitigations, disable vulnerable features, and monitor logs for exploitation attempts until a patch is issued.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-23T15:38:05.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/",
+    "additionalSources": [
+      {
+        "source": "Schneier on Security",
+        "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/new-serious-php-vulnerabilities-released-and-patched.html"
+      }
+    ]
+  },
+  {
+    "id": "https://cybersecuritynews.com/whatsapp-stop-working-without-registered-sim/",
+    "sourceUrl": "https://cybersecuritynews.com/whatsapp-stop-working-without-registered-sim/",
+    "title": "WhatsApp May Stop Working Without Registered SIM Under New Rules",
+    "headline": "WhatsApp May Stop Working Without Registered SIM Under New Rules",
+    "summary": "WhatsApp users in India may lose service if their device lacks a registered SIM, per new government regulations effective January 1, 2027. The rule requires all messaging accounts to be linked to a registered SIM, impacting secondary phones, tablets, and other devices without active SIMs. Compliance deadlines are set for December 31, 2026, after which non‑compliant accounts will be disabled.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-23T15:20:07.000Z",
+    "url": "https://cybersecuritynews.com/whatsapp-stop-working-without-registered-sim/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/okta-access-gateway-flaw/",
+    "sourceUrl": "https://cybersecuritynews.com/okta-access-gateway-flaw/",
+    "title": "Critical Okta Access Gateway Flaw Lets Attackers With Admin Access Execute System Commands",
+    "headline": "Critical Okta Access Gateway Flaw Lets Attackers With Admin Access Execute System Commands",
+    "summary": "A critical flaw in Okta Access Gateway allows authenticated administrators to execute arbitrary system commands via the Admin Console, affecting versions prior to 2026.10.2. The vulnerability, identified as CVE-2026-115547, carries a CVSS v3.1 score of 9.1 and is exploitable through weak input validation. Okta has released a patch; administrators should upgrade to 2026.10.2 or later immediately.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-23T15:19:23.000Z",
+    "url": "https://cybersecuritynews.com/okta-access-gateway-flaw/",
+    "additionalSources": []
   },
   {
     "id": "https://www.securityweek.com/in-other-news-tor-exit-relays-hijacked-banks-spot-rogue-ai-agents-self-rebuilding-macos-ransomware/",
@@ -111,6 +221,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.darkreading.com/cyber-risk/cyber-insurances-underwriting-isnt-enough",
+    "sourceUrl": "https://www.darkreading.com/cyber-risk/cyber-insurances-underwriting-isnt-enough",
+    "title": "Cyber Insurers Shift from Risk Transfer to Active Cyber Defense",
+    "headline": "Cyber Insurers Shift from Risk Transfer to Active Cyber Defense",
+    "summary": "Cyber insurers now face direct cybersecurity responsibilities as AI, social engineering, and cloud risks grow, shifting focus from pure risk transfer to active threat mitigation. This trend forces carriers to expand underwriting models, integrate technical assessments, and deploy defensive controls, while maintaining traditional actuarial pricing. Insurers are investing in cyber expertise, threat intelligence, and incident response to meet regulatory expectations.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-23T13:30:00.000Z",
+    "url": "https://www.darkreading.com/cyber-risk/cyber-insurances-underwriting-isnt-enough",
+    "additionalSources": []
+  },
+  {
     "id": "https://therecord.media/uk-undersea-cables-sabotage-new-sentencing-guidelines",
     "sourceUrl": "https://therecord.media/uk-undersea-cables-sabotage-new-sentencing-guidelines",
     "title": "UK Proposes 14‑Year Prison Terms for Undersea Cable Sabotage",
@@ -146,20 +269,42 @@
     ]
   },
   {
-    "id": "https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/",
-    "title": "HPE ArubaOS Patches Eight High‑Severity RCE Flaws",
-    "headline": "HPE ArubaOS Patches Eight High‑Severity RCE Flaws",
-    "summary": "Hewlett Packard Enterprise patched eight maximum‑severity authentication bypass and remote code execution flaws in its Aruba Operating System. The vulnerabilities allowed authenticated attackers to execute arbitrary code, but no CVE identifiers were cited, and the exploits were not confirmed in the wild. HPE released firmware updates and urged users to apply the patches immediately to mitigate the high‑risk RCE.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-23T12:48:00.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/",
+    "id": "https://research.checkpoint.com/2026/infostealer-riding-the-ai-train/",
+    "sourceUrl": "https://research.checkpoint.com/2026/infostealer-riding-the-ai-train/",
+    "title": "Infostealer Targets AI Development Tools for Credential Theft",
+    "headline": "Infostealer Targets AI Development Tools for Credential Theft",
+    "summary": "A new infostealer malware targets AI development tools, harvesting browser passwords, session cookies, and cryptocurrency wallets. The threat collects credentials for Claude, ChatGPT Desktop, Codex, Cursor, Windsurf, GitHub Copilot, and local development files, expanding its scope beyond traditional credential theft. Security teams should block known download URLs, enforce least‑privilege access, and monitor anomalous credential exfiltration to mitigate this evolving threat.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "Check Point Research",
+    "publishedAt": "2026-10-23T13:00:09.000Z",
+    "url": "https://research.checkpoint.com/2026/infostealer-riding-the-ai-train/",
     "additionalSources": [
       {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/high-severity-flaws-exploited-in-three-days-as-ransomware-dominates-q3-rapid7/"
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/machine-speed-attacks-require-machine-speed-detection-and-response/"
+      },
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/chatgpt-chrome-extension-analyze-content/"
+      }
+    ]
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog",
+    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog",
+    "title": "CISA Adds CVE-2026-114625 to Known Exploited Vulnerabilities Catalog",
+    "headline": "CISA Adds CVE-2026-114625 to Known Exploited Vulnerabilities Catalog",
+    "summary": "CISA added CVE-2026-114625, an SQL injection flaw in Arista VeloCloud Orchestrator, to its Known Exploited Vulnerabilities catalog after confirming active exploitation. The vulnerability allows unauthenticated attackers to run SQL commands on exposed management interfaces, granting full control over the orchestrator and connected edge devices. CISA urges federal agencies to apply firmware patches immediately and follow BOD 26‑04 for rapid remediation.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CISA",
+    "publishedAt": "2026-10-23T12:00:00.000Z",
+    "url": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html"
       }
     ]
   },
@@ -272,6 +417,19 @@
         "sourceUrl": "https://cybersecuritynews.com/best-secure-file-sharing/"
       }
     ]
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/23/llmjacking-agent-hijacks-exposed-ai-models/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/23/llmjacking-agent-hijacks-exposed-ai-models/",
+    "title": "Hackers Hijack Exposed AI Models to Launch Cyberattacks",
+    "headline": "Hackers Hijack Exposed AI Models to Launch Cyberattacks",
+    "summary": "Hackers hijack publicly exposed AI models to orchestrate cyberattacks, forcing model owners to pay for the computing resources used. The method uses the model’s inference API, sending the attacker’s prompt to a decoy and then employing the output to plan break‑ins. Symantec’s honeypot captured the instruction set, allowing defenders to block hijacked model traffic and enforce authentication on AI services.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-23T08:21:48.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/23/llmjacking-agent-hijacks-exposed-ai-models/",
+    "additionalSources": []
   },
   {
     "id": "https://cybersecuritynews.com/emergency-java-update/",
@@ -630,24 +788,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.bleepingcomputer.com/news/security/machine-speed-attacks-require-machine-speed-detection-and-response/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/machine-speed-attacks-require-machine-speed-detection-and-response/",
-    "title": "Machine Speed Attacks Enable Rapid Credential Theft",
-    "headline": "Machine Speed Attacks Enable Rapid Credential Theft",
-    "summary": "Attackers exploit stolen GitHub tokens, malicious AI installers, and MFA phishing to steal credentials and exfiltrate data within minutes. The flaw lies in insufficient machine speed detection and automated response, allowing credential theft before detection; no CVE cited, exploitation is active and rapid. Organizations must implement faster detection, automated containment, and MFA hardening to mitigate.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-22T14:02:12.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/machine-speed-attacks-require-machine-speed-detection-and-response/",
-    "additionalSources": [
-      {
-        "source": "Unit 42",
-        "sourceUrl": "https://unit42.paloaltonetworks.com/ai-assisted-cybercrime-analysis/"
-      }
-    ]
-  },
-  {
     "id": "https://thehackernews.com/2026/10/interpol-arrests-1462-suspects-disrupts.html",
     "sourceUrl": "https://thehackernews.com/2026/10/interpol-arrests-1462-suspects-disrupts.html",
     "title": "INTERPOL Arrests 1,462 Suspects, Disrupts 10,909 Cybercrime Networks",
@@ -666,42 +806,6 @@
       {
         "source": "The Record",
         "sourceUrl": "https://therecord.media/africa-cybercrime-interpol-arrests"
-      }
-    ]
-  },
-  {
-    "id": "https://www.schneier.com/blog/archives/2026/10/new-serious-php-vulnerabilities-released-and-patched.html",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/new-serious-php-vulnerabilities-released-and-patched.html",
-    "title": "PHP 8.5.12/8.4.27/8.3.36/8.2.35 Unauthenticated RCE Vulnerabilities Patched",
-    "headline": "PHP 8.5.12/8.4.27/8.3.36/8.2.35 Unauthenticated RCE Vulnerabilities Patched",
-    "summary": "PHP maintainers released fixes for two critical vulnerabilities that enable unauthenticated remote code execution on PHP 8.5.12, 8.4.27, 8.3.36, and 8.2.35, affecting PHP-FPM, Apache mod_php, php-cgi, FrankenPHP, and LiteSpeed. The flaw allows attackers to trigger code execution before application code runs, posing a high‑severity RCE risk. All PHP users should apply the patches immediately to mitigate the vulnerability.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "Schneier on Security",
-    "publishedAt": "2026-10-22T13:26:51.000Z",
-    "url": "https://www.schneier.com/blog/archives/2026/10/new-serious-php-vulnerabilities-released-and-patched.html",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/gitlab-warns-of-new-max-severity-code-execution-vulnerability/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/22/litellm-compromised-supply-chain-attack-pypi-docker/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/litellm-compromised-supply-chain-attack-pypi-docker/",
-    "title": "LiteLLM Supply Chain Compromise Harvests Cloud Credentials",
-    "headline": "LiteLLM Supply Chain Compromise Harvests Cloud Credentials",
-    "summary": "A malicious LiteLLM release on PyPI and Docker registries distributed malware that harvests cloud logins, developer secrets, and AI service API keys from installed instances. The flaw exploits the package distribution chain, enabling credential theft without user interaction, impacting numerous corporate domains. Immediate patching of the compromised package and credential rotation are mandatory to mitigate exposure.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-22T13:10:28.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/22/litellm-compromised-supply-chain-attack-pypi-docker/",
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/litellm-supply-chain-compromise-cook-pth-backdoor-defense"
       }
     ]
   },
@@ -1693,19 +1797,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html",
-    "title": "CISA Adds Plex2Shell SSRF Vulnerability to Known Exploited Vulnerabilities Catalog",
-    "headline": "CISA Adds Plex2Shell SSRF Vulnerability to Known Exploited Vulnerabilities Catalog",
-    "summary": "CISA added four vulnerabilities to its Known Exploited Vulnerabilities catalog, including Plex2Shell SSRF in Plex Media Server (CVE-2026-96652, CVSS 5.3). The SSRF flaw allows attackers to request arbitrary internal URLs, potentially exposing sensitive data or facilitating lateral movement. CISA urges all affected agencies to apply vendor patches immediately and enable network segmentation to mitigate exploitation.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-21T07:26:49.000Z",
-    "url": "https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html",
-    "additionalSources": []
-  },
-  {
     "id": "https://www.helpnetsecurity.com/2026/10/21/ecg-heart-data-privacy-preserving-ai/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/21/ecg-heart-data-privacy-preserving-ai/",
     "title": "Modern Cardiac Monitoring Transmits ECG Data to Cloud",
@@ -1716,19 +1807,6 @@
     "source": "Help Net Security",
     "publishedAt": "2026-10-21T06:00:35.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/21/ecg-heart-data-privacy-preserving-ai/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/chatgpt-chrome-extension-analyze-content/",
-    "sourceUrl": "https://cybersecuritynews.com/chatgpt-chrome-extension-analyze-content/",
-    "title": "OpenAI Expands ChatGPT Chrome Extension to Read All Open Tabs",
-    "headline": "OpenAI Expands ChatGPT Chrome Extension to Read All Open Tabs",
-    "summary": "OpenAI expanded its ChatGPT Chrome extension, enabling the assistant to read and analyze content across all open browser tabs. The update adds tools for comparing page content, filling forms, sending messages, and organizing tabs, moving beyond single‑page queries. Users should review privacy settings, grant only necessary permissions, and stay informed of future policy changes.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-21T05:48:00.000Z",
-    "url": "https://cybersecuritynews.com/chatgpt-chrome-extension-analyze-content/",
     "additionalSources": []
   },
   {
@@ -5190,80 +5268,6 @@
     "source": "Cyber Security News",
     "publishedAt": "2026-10-11T03:35:31.000Z",
     "url": "https://cybersecuritynews.com/best-protected-website-builder/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks/",
-    "title": "Chinese Hacker Uses ARTEX AI and Claude Agents to Target South Korean Banks",
-    "headline": "Chinese Hacker Uses ARTEX AI and Claude Agents to Target South Korean Banks",
-    "summary": "A Chinese hacker launched attacks on South Korean banks using the ARTEX AI penetration testing suite and Claude AI agents. The campaign targeted banking systems, exploiting the AI tools to conduct reconnaissance and credential theft, compromising sensitive financial data and disrupting services.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-10T14:16:17.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks/",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/in-other-news-ai-used-in-korean-bank-breaches-poem-guided-botnet-empire-admin-gets-40-years/"
-      },
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/artex-ai-pentesting-tool-used-in-data.html"
-      }
-    ]
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/criminal-ip-introduces-aitem-as-the-next-evolution-of-attack-surface-management/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/criminal-ip-introduces-aitem-as-the-next-evolution-of-attack-surface-management/",
-    "title": "Criminal IP Launches AI‑Powered Attack Surface Management Tool AITEM",
-    "headline": "Criminal IP Launches AI‑Powered Attack Surface Management Tool AITEM",
-    "summary": "Criminal IP has released AITEM, an AI‑driven attack surface management solution that links asset discovery with investigation, risk prioritization, and response. The tool aims to enhance visibility and streamline threat mitigation for organizations by automating analysis and prioritization of exposed assets.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-10T12:30:39.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/criminal-ip-introduces-aitem-as-the-next-evolution-of-attack-surface-management/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/the-third-party-agent-problem-why.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/the-third-party-agent-problem-why.html",
-    "title": "Third-Party AI Agents Escape Identity Governance",
-    "headline": "Third-Party AI Agents Escape Identity Governance",
-    "summary": "A study found that about 1,280 third‑party AI products embed AI, but 282 use single sign‑on while the rest remain invisible to identity stacks. The gap means many agents are not governed by authentication controls, exposing organizations to untracked access and potential misuse.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-10T11:00:00.000Z",
-    "url": "https://thehackernews.com/2026/10/the-third-party-agent-problem-why.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/insider-cyber-extortion-plot-against-industrial-firm-lands-engineer-in-prison/",
-    "sourceUrl": "https://www.securityweek.com/insider-cyber-extortion-plot-against-industrial-firm-lands-engineer-in-prison/",
-    "title": "Insider Extortion Plot Leads to Engineer’s Imprisonment",
-    "headline": "Insider Extortion Plot Leads to Engineer’s Imprisonment",
-    "summary": "A former core infrastructure engineer deleted admin accounts, reset hundreds of passwords, and demanded 20 bitcoin to prevent server damage. The extortion attempt was uncovered, leading to the engineer’s arrest and prison sentence.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-10T11:00:00.000Z",
-    "url": "https://www.securityweek.com/insider-cyber-extortion-plot-against-industrial-firm-lands-engineer-in-prison/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://isc.sans.edu/diary/rss/33414",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33414",
-    "title": "Why TLP Should Not Replace Your Internal Information Classification",
-    "headline": "Why TLP Should Not Replace Your Internal Information Classification",
-    "summary": "The Traffic Light Protocol (TLP) is a standard for communicating information sharing limits, but it should not replace internal classification systems. Organizations should maintain their own classification frameworks alongside TLP to ensure appropriate handling of sensitive data.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "publishedAt": "2026-10-10T09:11:34.000Z",
-    "url": "https://isc.sans.edu/diary/rss/33414",
     "additionalSources": []
   }
 ]
