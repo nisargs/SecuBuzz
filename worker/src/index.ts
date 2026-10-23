@@ -1112,10 +1112,10 @@ export default {
 
       // API: Telemetry for Push Notification Clicks & Tap Opens (Public Write-Only, 0 PII)
       // POST /api/notifications/clicked or POST /api/notifications/opened
-      if (
-        (url.pathname === '/api/notifications/clicked' || url.pathname === '/api/notifications/opened') &&
-        request.method === 'POST'
-      ) {
+      if (url.pathname === '/api/notifications/clicked' || url.pathname === '/api/notifications/opened') {
+        if (request.method !== 'POST') {
+          return errorResponse('Method Not Allowed. POST required to record notification opens.', 405);
+        }
         if (!env.DB) return jsonResponse({ success: false, error: 'Database not available' }, 500);
         try {
           const body: any = await request.json();
