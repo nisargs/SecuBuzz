@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Oct 2026 04:00:17 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 04:56:37 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AI Adoption Drives Cybersecurity Workforce Reductions</title>
+      <link>https://secubuzz.com/news/ai-adoption-drives-cybersecurity-workforce-reducti-4e062a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-adoption-drives-cybersecurity-workforce-reducti-4e062a</guid>
+      <description><![CDATA[Organizations are cutting cybersecurity roles as they adopt AI, even while reporting shortages of the expertise needed to manage threats, according to Barracuda’s Cybersecurity Skills Gap Report. 56% have experienced professional workforce reductions linked to AI, evenly divided between entry-level and higher-level roles. The post AI is taking cybersecurity jobs at junior and experienced levels alike appeared first on Help Net Security.]]></description>
+      <pubDate>Fri, 23 Oct 2026 04:30:39 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/23/barracuda-cybersecurity-career-development-report/">Help Net Security</source>
+      <category>Policy</category>
+    </item>
+    <item>
+      <title>New Infosec Products of the Week: October 23, 2026</title>
+      <link>https://secubuzz.com/news/new-infosec-products-of-the-week-october-23-2026-5cf87d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/new-infosec-products-of-the-week-october-23-2026-5cf87d</guid>
+      <description><![CDATA[Sweet Security released Virtual Patching, a one-click protection feature that safeguards running cloud and AI applications from specific vulnerabilities the moment they are identified, while AppGate, IDENTOS, and ThreatModeler introduced other security tools. The new capability allows security teams to enforce protection instantly while engineering develops permanent fixes. The post New infosec products of the week: October 23, 2026 appeared first on Help Net Security.]]></description>
+      <pubDate>Fri, 23 Oct 2026 04:00:41 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/23/new-infosec-products-of-the-week-october-23-2026/">Help Net Security</source>
+      <category>Cloud</category>
+    </item>
+    <item>
+      <title>State Bank of India Suffers a Customer PII Data Leak</title>
+      <link>https://secubuzz.com/news/state-bank-of-india-suffers-a-customer-pii-data-le-7ed967</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/state-bank-of-india-suffers-a-customer-pii-data-le-7ed967</guid>
+      <description><![CDATA[A customer PII data leak at State Bank of India exposed personal identifiers through an undisclosed breach channel. The leak potentially fuels underground markets, enabling malicious actors to trade sensitive information for financial gain. Bank officials should immediately conduct forensic investigations, notify affected customers, and apply data protection controls to mitigate further exposure.]]></description>
+      <pubDate>Fri, 23 Oct 2026 03:30:00 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyberattacks-data-breaches/state-bank-india-customer-pii-data-leak">Dark Reading</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Critical Unpatched Linux Kernel Flaws Accidentally Disclosed on Public List</title>
+      <link>https://secubuzz.com/news/critical-unpatched-linux-kernel-flaws-accidentally-544a4d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/critical-unpatched-linux-kernel-flaws-accidentally-544a4d</guid>
+      <description><![CDATA[Critical unpatched Linux kernel flaws were inadvertently disclosed on public mailing lists, revealing remote code execution vectors targeting the KSMBD file server. Both vulnerabilities carry CVSS 9.0 scores, enabling attackers to gain arbitrary code execution without authentication, though no wild exploitation has been reported. Trend Micro’s Zero Day Initiative recommends applying patches and monitoring kernel update channels to prevent exploitation.]]></description>
+      <pubDate>Fri, 23 Oct 2026 02:09:49 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/linux-kernel-flaws-accidentally-disclosed/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>ASPM in the AI Era Part 2: Prioritize Exploitable Risks with Code-to-Cloud Context</title>
       <link>https://secubuzz.com/news/aspm-in-the-ai-era-part-2-prioritize-exploitable-r-5291d5</link>
@@ -161,6 +197,15 @@
       <category>Ransomware</category>
     </item>
     <item>
+      <title>Corey Thuen Announces Hiring Hackers for &apos;Evil Bit&apos; Project</title>
+      <link>https://secubuzz.com/news/corey-thuen-announces-hiring-hackers-for-evil-bit-5b360c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/corey-thuen-announces-hiring-hackers-for-evil-bit-5b360c</guid>
+      <description><![CDATA[Corey Thuen publicly announced hiring hackers for a project he calls 'the evil bit,' framing it as an adversarial initiative. The statement, shared on SecurityWeek, highlights a controversial approach to offensive security that raises ethical and legal questions for the industry. No specific vulnerability or exploit is disclosed, and no patch or mitigation is required at this time.]]></description>
+      <pubDate>Thu, 22 Oct 2026 14:31:34 GMT</pubDate>
+      <source url="https://www.securityweek.com/hacker-conversations-corey-thuen-and-the-evil-bit/">SecurityWeek</source>
+      <category>Policy</category>
+    </item>
+    <item>
       <title>Scammers Target Mobile Users with Deceptive Tactics</title>
       <link>https://secubuzz.com/news/scammers-target-mobile-users-with-deceptive-tactic-3ab01f</link>
       <guid isPermaLink="true">https://secubuzz.com/news/scammers-target-mobile-users-with-deceptive-tactic-3ab01f</guid>
@@ -269,30 +314,57 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>PHP2Shell Vulnerabilities Enable Remote Code Execution</title>
+      <link>https://secubuzz.com/news/php2shell-vulnerabilities-enable-remote-code-execu-329438</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/php2shell-vulnerabilities-enable-remote-code-execu-329438</guid>
+      <description><![CDATA[PHP2Shell vulnerabilities have been identified in multiple web applications, allowing attackers to execute arbitrary PHP code via crafted requests. The flaw exploits improper input validation in PHP frameworks, enabling remote code execution with a CVSS score of 8.1. Vendors have issued patches; security teams should apply them promptly, monitor logs, and enforce strict input sanitization.]]></description>
+      <pubDate>Thu, 22 Oct 2026 12:20:23 GMT</pubDate>
+      <source url="https://www.securityweek.com/tech-and-security-companies-respond-to-php2shell-vulnerabilities/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Siemens RUGGEDCOM APE1808 Devices Affected by Multiple CVEs</title>
+      <link>https://secubuzz.com/news/siemens-ruggedcom-ape1808-devices-affected-by-mult-42ff49</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/siemens-ruggedcom-ape1808-devices-affected-by-mult-42ff49</guid>
+      <description><![CDATA[Siemens RUGGEDCOM APE1808 devices are affected by multiple CVE‑2026‑33387 to CVE‑2026‑33920 vulnerabilities that enable template engine injection, CSRF, and authorization bypass. The flaws stem from improper neutralization of template elements, lack of administrator control, and cross‑site request forgery, posing medium‑to‑high risk for credential theft and system compromise. Siemens recommends contacting support for patch updates; operators should apply the latest firmware to eliminate the high‑severity vulnerabilities.]]></description>
+      <pubDate>Thu, 22 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-18">CISA</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Siemens SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP Firmware Vulnerabilities</title>
+      <link>https://secubuzz.com/news/siemens-simatic-s7-1500-cpu-1518-f-4-pn-dp-mfp-fir-42ff49</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/siemens-simatic-s7-1500-cpu-1518-f-4-pn-dp-mfp-fir-42ff49</guid>
+      <description><![CDATA[Multiple vulnerabilities in the GNU/Linux subsystem of Siemens SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP firmware V3.1.7 allow attackers to gain elevated privileges on the device. The flaw, rated CVSS 10, is a critical flaw that could enable remote code execution if exploited. Siemens has released firmware updates for affected models and recommends applying the patch or following the vendor’s mitigations.]]></description>
+      <pubDate>Thu, 22 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-11">CISA</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Siemens Industrial Edge Device Kit Path Traversal Vulnerabilities CVE-2026-44414/44415</title>
+      <link>https://secubuzz.com/news/siemens-industrial-edge-device-kit-path-traversal-42ff49</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/siemens-industrial-edge-device-kit-path-traversal-42ff49</guid>
+      <description><![CDATA[Path traversal vulnerabilities (CVE-2026-44414 and CVE-2026-44415) in Siemens Industrial Edge Device Kit arm64 versions V1.10–V1.12 allow authenticated remote attackers to read arbitrary files on the device. The flaw, rated CVSS 10, could lead to disclosure of sensitive configuration data and potential lateral movement. Siemens has released patched firmware and recommends updating to the latest version or applying vendor mitigations.]]></description>
+      <pubDate>Thu, 22 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-09">CISA</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Siemens Capital Embedded AR Classic Out‑of‑Bounds Read Vulnerability (CVE‑2026‑89208)</title>
+      <link>https://secubuzz.com/news/siemens-capital-embedded-ar-classic-out-of-bounds-42ff49</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/siemens-capital-embedded-ar-classic-out-of-bounds-42ff49</guid>
+      <description><![CDATA[An out‑of‑bounds read flaw in Siemens Capital Embedded AR Classic versions 431‑422 and R20‑11 could trigger abnormal behavior, instability, or denial of service. The vulnerability, CVE‑2026‑89208, scores CVSS 5.3 and is exploitable via local or remote access to the affected devices. Siemens has released R20‑11‑11 and recommends applying the latest firmware or implementing vendor‑specified countermeasures for unsupported versions.]]></description>
+      <pubDate>Thu, 22 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-04">CISA</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Database Privilege Escalation Vulnerability in Siemens WinCC (CVE-2026-59241)</title>
       <link>https://secubuzz.com/news/database-privilege-escalation-vulnerability-in-sie-42ff49</link>
       <guid isPermaLink="true">https://secubuzz.com/news/database-privilege-escalation-vulnerability-in-sie-42ff49</guid>
       <description><![CDATA[A database privilege escalation vulnerability in Siemens WinCC versions V7.5, V8.0, and V8.1 permits an authenticated database user to execute arbitrary commands on the host system. The flaw carries a CVSS score of 8.8 and is identified as CVE-2026-59241, exposing critical infrastructure sectors to potential compromise. Siemens has released patched versions and recommends updating immediately or applying vendor‑issued mitigations.]]></description>
       <pubDate>Thu, 22 Oct 2026 12:00:00 GMT</pubDate>
       <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-13">CISA</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Path Traversal and Sensitive Data Exposure in Siemens SIMATIC S7 Webserver .NET Client Library</title>
-      <link>https://secubuzz.com/news/path-traversal-and-sensitive-data-exposure-in-siem-42ff49</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/path-traversal-and-sensitive-data-exposure-in-siem-42ff49</guid>
-      <description><![CDATA[The .NET Client Library for Siemens SIMATIC S7 Webserver API contains a path traversal flaw that allows attackers to write arbitrary files outside the intended download directory and expose sensitive information through error messages. The vulnerability, with a CVSS score of 7.5, targets critical infrastructure sectors including manufacturing, transportation, and energy. Siemens has released an updated library; users must upgrade immediately to prevent exploitation.]]></description>
-      <pubDate>Thu, 22 Oct 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-10">CISA</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Siemens Devices Vulnerable to Denial‑of‑Service via CVE‑2026‑102073 to CVE‑2026‑102076</title>
-      <link>https://secubuzz.com/news/siemens-devices-vulnerable-to-denial-of-service-vi-42ff49</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/siemens-devices-vulnerable-to-denial-of-service-vi-42ff49</guid>
-      <description><![CDATA[Siemens APOGEE, TALON, and Desigo PXC/PXM devices are vulnerable to denial‑of‑service via CVE‑2026‑102073 to CVE‑2026‑102076 on BACnet and Ethernet. The flaw depletes device resources, risking control‑system downtime; no public exploit exists, but CVSS is 7.5. Siemens released patched firmware; users should upgrade immediately or apply vendor mitigations where patches are pending.]]></description>
-      <pubDate>Thu, 22 Oct 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-08">CISA</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -384,78 +456,6 @@
       <pubDate>Thu, 22 Oct 2026 09:10:55 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/22/anthropic-attack-surface-reduction-open-source/">Help Net Security</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Hackers Exploit Siemens Software Center DLL Side-Loading Flaw</title>
-      <link>https://secubuzz.com/news/hackers-exploit-siemens-software-center-dll-side-l-316c85</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-siemens-software-center-dll-side-l-316c85</guid>
-      <description><![CDATA[Hackers are exploiting a DLL side-loading flaw in Siemens Software Center to run malware through a trusted, signed application. Tracked as CVE-2026-110936, the weakness affects versions before 4.0.9.8 and enables unauthenticated remote code execution via malicious DLL injection. Siemens has released a patch that will be applied the next time the application starts; security teams should update immediately.]]></description>
-      <pubDate>Thu, 22 Oct 2026 08:29:16 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/siemens-software-center-flaw-exploited/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>LiteLLM Release Pipeline Compromised, Malicious Package Distributed</title>
-      <link>https://secubuzz.com/news/litellm-release-pipeline-compromised-malicious-pac-75e4a0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/litellm-release-pipeline-compromised-malicious-pac-75e4a0</guid>
-      <description><![CDATA[LiteLLM disclosed that threat actors compromised its release pipeline to push a malicious Python package containing a credential stealer and backdoor. The compromised release, version 1.107.0, was published to Docker Hub and PyPI on October 21, 2026, enabling credential theft via the package’s hidden payload. Affected users should uninstall the package, revoke exposed tokens, and monitor for unauthorized activity while awaiting a LiteLLM fix.]]></description>
-      <pubDate>Thu, 22 Oct 2026 08:28:48 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/litellm-suspects-github-token-leak-in.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Oracle Releases Patch for 1,200+ Vulnerabilities, 100 Critical, in Fusion Middleware</title>
-      <link>https://secubuzz.com/news/oracle-releases-patch-for-1-200-vulnerabilities-10-80c479</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/oracle-releases-patch-for-1-200-vulnerabilities-10-80c479</guid>
-      <description><![CDATA[Oracle disclosed a patch update addressing over 1,200 vulnerabilities, including 100 rated critical, affecting Oracle Fusion Middleware via CPU-based exploits. The flaw set includes multiple remote code execution paths triggered by malformed CPU instructions, leading to potential system compromise. Oracle has released patches for all affected products; security teams should apply the updates immediately and verify configuration compliance.]]></description>
-      <pubDate>Thu, 22 Oct 2026 07:38:14 GMT</pubDate>
-      <source url="https://www.securityweek.com/oracle-patches-over-1200-vulnerabilities-with-october-2026-cpu/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Imperial College Researchers Expose Speech‑to‑Text Model Manipulation</title>
-      <link>https://secubuzz.com/news/imperial-college-researchers-expose-speech-to-text-6b71c1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/imperial-college-researchers-expose-speech-to-text-6b71c1</guid>
-      <description><![CDATA[Researchers at Imperial College London discovered that attackers can tamper with speech‑to‑text models during fine‑tuning to produce pre‑selected malicious outputs for a chosen speaker. The manipulation forces AI agents to transcribe a request for $5,000, which sandboxed banking systems then execute, demonstrating a covert credential‑less exploitation vector. Defenders should restrict fine‑tuning access and monitor outputs for anomalous requests.]]></description>
-      <pubDate>Thu, 22 Oct 2026 05:00:44 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/22/research-speech-model-backdoor/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>UAE Transitions 50% of Gov&apos;t Services to Agentic AI</title>
-      <link>https://secubuzz.com/news/uae-transitions-50-of-gov-t-services-to-agentic-ai-67f591</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/uae-transitions-50-of-gov-t-services-to-agentic-ai-67f591</guid>
-      <description><![CDATA[UAE transitioning 50% of government services to agentic AI, aiming to build security foundation. The shift involves integrating AI-driven automation into public service delivery, potentially exposing new attack surfaces but no specific flaw cited. Security teams should monitor AI integration, enforce robust access controls, and conduct continuous risk assessments ongoing.]]></description>
-      <pubDate>Thu, 22 Oct 2026 05:00:00 GMT</pubDate>
-      <source url="https://www.darkreading.com/cybersecurity-operations/uae-transitions-50-government-services-agentic-ai">Dark Reading</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>AI Coding Boom Exposes Cracks in Cloud Development</title>
-      <link>https://secubuzz.com/news/ai-coding-boom-exposes-cracks-in-cloud-development-52a630</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-coding-boom-exposes-cracks-in-cloud-development-52a630</guid>
-      <description><![CDATA[Developers report bugs, testing delays, and disruptions in shared cloud environments as AI increases code volume, per LocalStack’s 2026 State of AI in Cloud Development report. The surge, with 65% of teams generating twice as much code and 32% five times more, amplifies testing workloads and resource contention. Cloud providers should enhance automated testing pipelines and resource isolation to mitigate these operational stresses.]]></description>
-      <pubDate>Thu, 22 Oct 2026 04:30:38 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/22/localstack-ai-code-testing-report/">Help Net Security</source>
-      <category>Cloud</category>
-    </item>
-    <item>
-      <title>AI Agent Observability Lags Behind Hallucination Rates</title>
-      <link>https://secubuzz.com/news/ai-agent-observability-lags-behind-hallucination-r-4c56e0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-agent-observability-lags-behind-hallucination-r-4c56e0</guid>
-      <description><![CDATA[AI agents are increasingly used to diagnose system failures, yet 62% of IT professionals lack reliable metrics to validate their conclusions. The root cause is the agents’ propensity for hallucinations, leading to inaccurate root‑cause analysis and alert tuning. Organizations should implement independent verification workflows and monitor agent outputs to mitigate misdiagnosis.]]></description>
-      <pubDate>Thu, 22 Oct 2026 04:00:14 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/22/ai-agent-observability-report/">Help Net Security</source>
-      <category>Policy</category>
-    </item>
-    <item>
-      <title>GoDaddy Revokes 404,607 TLS Certificates Over Policy Violations</title>
-      <link>https://secubuzz.com/news/godaddy-revokes-404-607-tls-certificates-over-poli-543d19</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/godaddy-revokes-404-607-tls-certificates-over-poli-543d19</guid>
-      <description><![CDATA[GoDaddy revoked 404,607 SSL/TLS certificates after discovering that issued certificates did not align with its published policies, breaching compliance deadlines. The flaw stemmed from a misconfiguration in the certificate issuance process, exposing customers to potential trust issues. GoDaddy has issued a notice and updated revocation procedures to prevent future policy violations.]]></description>
-      <pubDate>Thu, 22 Oct 2026 01:43:58 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/godaddy-revoking-tls-certificates/">Cyber Security News</source>
-      <category>Policy</category>
     </item>
   </channel>
 </rss>

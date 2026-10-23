@@ -1,5 +1,67 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/10/23/barracuda-cybersecurity-career-development-report/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/23/barracuda-cybersecurity-career-development-report/",
+    "title": "AI Adoption Drives Cybersecurity Workforce Reductions",
+    "headline": "AI Adoption Drives Cybersecurity Workforce Reductions",
+    "summary": "Organizations are cutting cybersecurity roles as they adopt AI, even while reporting shortages of the expertise needed to manage threats, according to Barracuda’s Cybersecurity Skills Gap Report. 56% have experienced professional workforce reductions linked to AI, evenly divided between entry-level and higher-level roles. The post AI is taking cybersecurity jobs at junior and experienced levels alike appeared first on Help Net Security.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-23T04:30:39.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/23/barracuda-cybersecurity-career-development-report/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/23/new-infosec-products-of-the-week-october-23-2026/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/23/new-infosec-products-of-the-week-october-23-2026/",
+    "title": "New Infosec Products of the Week: October 23, 2026",
+    "headline": "New Infosec Products of the Week: October 23, 2026",
+    "summary": "Sweet Security released Virtual Patching, a one-click protection feature that safeguards running cloud and AI applications from specific vulnerabilities the moment they are identified, while AppGate, IDENTOS, and ThreatModeler introduced other security tools. The new capability allows security teams to enforce protection instantly while engineering develops permanent fixes. The post New infosec products of the week: October 23, 2026 appeared first on Help Net Security.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-23T04:00:41.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/23/new-infosec-products-of-the-week-october-23-2026/",
+    "additionalSources": [
+      {
+        "source": "CISA",
+        "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-08"
+      }
+    ]
+  },
+  {
+    "id": "https://www.darkreading.com/cyberattacks-data-breaches/state-bank-india-customer-pii-data-leak",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/state-bank-india-customer-pii-data-leak",
+    "title": "State Bank of India Suffers a Customer PII Data Leak",
+    "headline": "State Bank of India Suffers a Customer PII Data Leak",
+    "summary": "A customer PII data leak at State Bank of India exposed personal identifiers through an undisclosed breach channel. The leak potentially fuels underground markets, enabling malicious actors to trade sensitive information for financial gain. Bank officials should immediately conduct forensic investigations, notify affected customers, and apply data protection controls to mitigate further exposure.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-23T03:30:00.000Z",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/state-bank-india-customer-pii-data-leak",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/linux-kernel-flaws-accidentally-disclosed/",
+    "sourceUrl": "https://cybersecuritynews.com/linux-kernel-flaws-accidentally-disclosed/",
+    "title": "Critical Unpatched Linux Kernel Flaws Accidentally Disclosed on Public List",
+    "headline": "Critical Unpatched Linux Kernel Flaws Accidentally Disclosed on Public List",
+    "summary": "Critical unpatched Linux kernel flaws were inadvertently disclosed on public mailing lists, revealing remote code execution vectors targeting the KSMBD file server. Both vulnerabilities carry CVSS 9.0 scores, enabling attackers to gain arbitrary code execution without authentication, though no wild exploitation has been reported. Trend Micro’s Zero Day Initiative recommends applying patches and monitoring kernel update channels to prevent exploitation.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-23T02:09:49.000Z",
+    "url": "https://cybersecuritynews.com/linux-kernel-flaws-accidentally-disclosed/",
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/two-cvss-90-linux-ksmbd-rce-flaws.html"
+      }
+    ]
+  },
+  {
     "id": "https://www.wiz.io/blog/aspm-ai-era-pt-2-prioritize-appsec-risk",
     "sourceUrl": "https://www.wiz.io/blog/aspm-ai-era-pt-2-prioritize-appsec-risk",
     "title": "ASPM in the AI Era Part 2: Prioritize Exploitable Risks with Code-to-Cloud Context",
@@ -85,7 +147,12 @@
     "source": "The Hacker News",
     "publishedAt": "2026-10-22T19:05:17.000Z",
     "url": "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "CISA",
+        "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-12"
+      }
+    ]
   },
   {
     "id": "https://therecord.media/indian-tech-company-announces-withdrawal-certificate-business-incident",
@@ -134,7 +201,12 @@
     "source": "Cisco Talos",
     "publishedAt": "2026-10-22T18:04:32.000Z",
     "url": "https://blog.talosintelligence.com/i-had-plans-for-that-second/",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/threatsday-ai-secrets-leak-pingcap.html"
+      }
+    ]
   },
   {
     "id": "https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/",
@@ -279,6 +351,19 @@
     "source": "Cyber Security News",
     "publishedAt": "2026-10-22T14:40:34.000Z",
     "url": "https://cybersecuritynews.com/a-new-extortion-gang/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/hacker-conversations-corey-thuen-and-the-evil-bit/",
+    "sourceUrl": "https://www.securityweek.com/hacker-conversations-corey-thuen-and-the-evil-bit/",
+    "title": "Corey Thuen Announces Hiring Hackers for 'Evil Bit' Project",
+    "headline": "Corey Thuen Announces Hiring Hackers for 'Evil Bit' Project",
+    "summary": "Corey Thuen publicly announced hiring hackers for a project he calls 'the evil bit,' framing it as an adversarial initiative. The statement, shared on SecurityWeek, highlights a controversial approach to offensive security that raises ethical and legal questions for the industry. No specific vulnerability or exploit is disclosed, and no patch or mitigation is required at this time.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-22T14:31:34.000Z",
+    "url": "https://www.securityweek.com/hacker-conversations-corey-thuen-and-the-evil-bit/",
     "additionalSources": []
   },
   {
@@ -495,6 +580,81 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.securityweek.com/tech-and-security-companies-respond-to-php2shell-vulnerabilities/",
+    "sourceUrl": "https://www.securityweek.com/tech-and-security-companies-respond-to-php2shell-vulnerabilities/",
+    "title": "PHP2Shell Vulnerabilities Enable Remote Code Execution",
+    "headline": "PHP2Shell Vulnerabilities Enable Remote Code Execution",
+    "summary": "PHP2Shell vulnerabilities have been identified in multiple web applications, allowing attackers to execute arbitrary PHP code via crafted requests. The flaw exploits improper input validation in PHP frameworks, enabling remote code execution with a CVSS score of 8.1. Vendors have issued patches; security teams should apply them promptly, monitor logs, and enforce strict input sanitization.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-22T12:20:23.000Z",
+    "url": "https://www.securityweek.com/tech-and-security-companies-respond-to-php2shell-vulnerabilities/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-18",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-18",
+    "title": "Siemens RUGGEDCOM APE1808 Devices Affected by Multiple CVEs",
+    "headline": "Siemens RUGGEDCOM APE1808 Devices Affected by Multiple CVEs",
+    "summary": "Siemens RUGGEDCOM APE1808 devices are affected by multiple CVE‑2026‑33387 to CVE‑2026‑33920 vulnerabilities that enable template engine injection, CSRF, and authorization bypass. The flaws stem from improper neutralization of template elements, lack of administrator control, and cross‑site request forgery, posing medium‑to‑high risk for credential theft and system compromise. Siemens recommends contacting support for patch updates; operators should apply the latest firmware to eliminate the high‑severity vulnerabilities.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CISA",
+    "publishedAt": "2026-10-22T12:00:00.000Z",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-18",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-11",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-11",
+    "title": "Siemens SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP Firmware Vulnerabilities",
+    "headline": "Siemens SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP Firmware Vulnerabilities",
+    "summary": "Multiple vulnerabilities in the GNU/Linux subsystem of Siemens SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP firmware V3.1.7 allow attackers to gain elevated privileges on the device. The flaw, rated CVSS 10, is a critical flaw that could enable remote code execution if exploited. Siemens has released firmware updates for affected models and recommends applying the patch or following the vendor’s mitigations.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
+    "source": "CISA",
+    "publishedAt": "2026-10-22T12:00:00.000Z",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-11",
+    "additionalSources": [
+      {
+        "source": "CISA",
+        "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-10"
+      }
+    ]
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-09",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-09",
+    "title": "Siemens Industrial Edge Device Kit Path Traversal Vulnerabilities CVE-2026-44414/44415",
+    "headline": "Siemens Industrial Edge Device Kit Path Traversal Vulnerabilities CVE-2026-44414/44415",
+    "summary": "Path traversal vulnerabilities (CVE-2026-44414 and CVE-2026-44415) in Siemens Industrial Edge Device Kit arm64 versions V1.10–V1.12 allow authenticated remote attackers to read arbitrary files on the device. The flaw, rated CVSS 10, could lead to disclosure of sensitive configuration data and potential lateral movement. Siemens has released patched firmware and recommends updating to the latest version or applying vendor mitigations.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
+    "source": "CISA",
+    "publishedAt": "2026-10-22T12:00:00.000Z",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-09",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-04",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-04",
+    "title": "Siemens Capital Embedded AR Classic Out‑of‑Bounds Read Vulnerability (CVE‑2026‑89208)",
+    "headline": "Siemens Capital Embedded AR Classic Out‑of‑Bounds Read Vulnerability (CVE‑2026‑89208)",
+    "summary": "An out‑of‑bounds read flaw in Siemens Capital Embedded AR Classic versions 431‑422 and R20‑11 could trigger abnormal behavior, instability, or denial of service. The vulnerability, CVE‑2026‑89208, scores CVSS 5.3 and is exploitable via local or remote access to the affected devices. Siemens has released R20‑11‑11 and recommends applying the latest firmware or implementing vendor‑specified countermeasures for unsupported versions.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CISA",
+    "publishedAt": "2026-10-22T12:00:00.000Z",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-04",
+    "additionalSources": [
+      {
+        "source": "CISA",
+        "sourceUrl": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-295-01"
+      }
+    ]
+  },
+  {
     "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-13",
     "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-13",
     "title": "Database Privilege Escalation Vulnerability in Siemens WinCC (CVE-2026-59241)",
@@ -511,32 +671,6 @@
         "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-02"
       }
     ]
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-10",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-10",
-    "title": "Path Traversal and Sensitive Data Exposure in Siemens SIMATIC S7 Webserver .NET Client Library",
-    "headline": "Path Traversal and Sensitive Data Exposure in Siemens SIMATIC S7 Webserver .NET Client Library",
-    "summary": "The .NET Client Library for Siemens SIMATIC S7 Webserver API contains a path traversal flaw that allows attackers to write arbitrary files outside the intended download directory and expose sensitive information through error messages. The vulnerability, with a CVSS score of 7.5, targets critical infrastructure sectors including manufacturing, transportation, and energy. Siemens has released an updated library; users must upgrade immediately to prevent exploitation.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "CISA",
-    "publishedAt": "2026-10-22T12:00:00.000Z",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-10",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-08",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-08",
-    "title": "Siemens Devices Vulnerable to Denial‑of‑Service via CVE‑2026‑102073 to CVE‑2026‑102076",
-    "headline": "Siemens Devices Vulnerable to Denial‑of‑Service via CVE‑2026‑102073 to CVE‑2026‑102076",
-    "summary": "Siemens APOGEE, TALON, and Desigo PXC/PXM devices are vulnerable to denial‑of‑service via CVE‑2026‑102073 to CVE‑2026‑102076 on BACnet and Ethernet. The flaw depletes device resources, risking control‑system downtime; no public exploit exists, but CVSS is 7.5. Siemens released patched firmware; users should upgrade immediately or apply vendor mitigations where patches are pending.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CISA",
-    "publishedAt": "2026-10-22T12:00:00.000Z",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-08",
-    "additionalSources": []
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/10/22/xtium-xtai-orchestrator/",
@@ -5123,124 +5257,5 @@
         "sourceUrl": "https://www.bleepingcomputer.com/news/security/owner-of-empire-cybercrime-market-gets-40-years-in-prison/"
       }
     ]
-  },
-  {
-    "id": "https://www.securityweek.com/openai-fires-3-safety-researchers-in-dispute-over-ai-risks/",
-    "sourceUrl": "https://www.securityweek.com/openai-fires-3-safety-researchers-in-dispute-over-ai-risks/",
-    "title": "OpenAI Terminates Three Safety Researchers Over Policy Violations",
-    "headline": "OpenAI Terminates Three Safety Researchers Over Policy Violations",
-    "summary": "OpenAI terminated three safety researchers after they allegedly violated company policies on handling sensitive information. The decision highlights the firm’s strict stance on internal data security and policy compliance. The move may affect the organization’s research culture and its approach to AI safety oversight.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-09T21:07:46.000Z",
-    "url": "https://www.securityweek.com/openai-fires-3-safety-researchers-in-dispute-over-ai-risks/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/cyberattacks-data-breaches/asos-breach-risks-customer-facing-saas",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/asos-breach-risks-customer-facing-saas",
-    "title": "ASOS Breach Demonstrates Risks of Customer-Facing SaaS",
-    "headline": "ASOS Breach Demonstrates Risks of Customer-Facing SaaS",
-    "summary": "A cyberattack on British retailer ASOS exposed a single compromised customer identity, enabling attackers to penetrate deeper into the corporate network. The breach underscores the vulnerability of customer-facing SaaS platforms to credential compromise and highlights the need for stronger identity protection and network segmentation.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-09T20:58:32.000Z",
-    "url": "https://www.darkreading.com/cyberattacks-data-breaches/asos-breach-risks-customer-facing-saas",
-    "additionalSources": [
-      {
-        "source": "Malwarebytes Labs",
-        "sourceUrl": "https://www.malwarebytes.com/blog/data-breaches/2026/10/asos-breach-update-hackers-stole-customer-details-and-shopping-searches"
-      }
-    ]
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/hackers-abuse-google-ads-bing-redirects-to-push-claude-clickfix-attacks/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-abuse-google-ads-bing-redirects-to-push-claude-clickfix-attacks/",
-    "title": "Hackers Use Bing Redirects in Google Ads to Deliver ClickFix Ransomware",
-    "headline": "Hackers Use Bing Redirects in Google Ads to Deliver ClickFix Ransomware",
-    "summary": "Hackers exploit Bing search-result redirects embedded in Google search ads to send users to counterfeit Claude installers that install ClickFix ransomware. The attack vector relies on legitimate advertising platforms to distribute malware, enabling widespread delivery without user interaction beyond clicking ads.",
-    "category": "RANSOMWARE",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-09T20:31:37.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/hackers-abuse-google-ads-bing-redirects-to-push-claude-clickfix-attacks/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/cybersecurity-analytics/ai-scramble-cybersecurity-ma-boom",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-analytics/ai-scramble-cybersecurity-ma-boom",
-    "title": "AI-Driven Cybersecurity M&A Surge Hits 117 Deals",
-    "headline": "AI-Driven Cybersecurity M&A Surge Hits 117 Deals",
-    "summary": "The cybersecurity sector saw a boom in mergers and acquisitions, with 117 deals announced in the latest quarter. The trend is driven by AI advancements, attracting buyers beyond traditional security firms and reshaping the industry landscape.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-09T19:26:26.000Z",
-    "url": "https://www.darkreading.com/cybersecurity-analytics/ai-scramble-cybersecurity-ma-boom",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/credential-stealing-github-actions.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/credential-stealing-github-actions.html",
-    "title": "Credential-Stealing GitHub Actions Workflows Planted in Thousands of Repositories",
-    "headline": "Credential-Stealing GitHub Actions Workflows Planted in Thousands of Repositories",
-    "summary": "Researchers uncovered a campaign that compromised two high-profile open-source maintainer accounts, injecting malicious GitHub Actions workflows into over 340 repositories. The attackers used the compromised accounts to push credential-stealing code, potentially exposing secrets stored in those workflows.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-09T19:14:28.000Z",
-    "url": "https://thehackernews.com/2026/10/credential-stealing-github-actions.html",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/ghostaction-github-repo-attack/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.darkreading.com/cyber-risk/security-threats-don-t-stop-at-the-office-why-executives-families-need-training-too",
-    "sourceUrl": "https://www.darkreading.com/cyber-risk/security-threats-don-t-stop-at-the-office-why-executives-families-need-training-too",
-    "title": "Security Threats Don’t Stop at the Office: Why Executives’ Families Need Training, Too",
-    "headline": "Security Threats Don’t Stop at the Office: Why Executives’ Families Need Training, Too",
-    "summary": "The article stresses that executives’ family members can be the weakest security link, urging them to receive cybersecurity training to prevent attacks that exploit personal devices and social engineering tactics.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-09T16:25:05.000Z",
-    "url": "https://www.darkreading.com/cyber-risk/security-threats-don-t-stop-at-the-office-why-executives-families-need-training-too",
-    "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/belarusian-cyber-partisans-claim-2023-russia-healthcare-hack",
-    "sourceUrl": "https://therecord.media/belarusian-cyber-partisans-claim-2023-russia-healthcare-hack",
-    "title": "Belarusian Hacktivists Admit 2023 Breach of Russian State Healthcare Network",
-    "headline": "Belarusian Hacktivists Admit 2023 Breach of Russian State Healthcare Network",
-    "summary": "Belarusian Cyber Partisans confirmed they spent months infiltrating the Moscow Department of Health’s network in 2023. The breach involved unauthorized access to the Russian state healthcare system, exposing sensitive data and compromising national security infrastructure. The admission underscores ongoing cyber espionage targeting critical health services.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "The Record",
-    "publishedAt": "2026-10-09T14:40:00.000Z",
-    "url": "https://therecord.media/belarusian-cyber-partisans-claim-2023-russia-healthcare-hack",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/ukrainian-russian-dual-citizen-admits-to-laundering-millions-for-cybercriminals/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/how-to-keep-ai-agents-within-their-permissions/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/how-to-keep-ai-agents-within-their-permissions/",
-    "title": "Enforcing Permission Limits for AI Agents",
-    "headline": "Enforcing Permission Limits for AI Agents",
-    "summary": "AI agents can misuse valid credentials to exceed their assigned permissions, bypassing traditional access controls. Token Security recommends implementing agent‑specific policies that enforce strict permission boundaries while preserving autonomy. The guidance helps organizations mitigate risks from AI-driven credential abuse without compromising operational flexibility.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-09T14:01:11.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/how-to-keep-ai-agents-within-their-permissions/",
-    "additionalSources": []
   }
 ]
