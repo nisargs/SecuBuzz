@@ -10,6 +10,11 @@ const GITHUB_ADVISORIES_URL =
 const STORAGE_KEY_ADVISORIES = '@secubuzz_advisories_v3';
 const STORAGE_KEY_ADVISORIES_FALLBACK = '@secubuzz_advisories_v2';
 const STORAGE_KEY_LAST_FETCH = '@secubuzz_advisories_last_fetch';
+const STORAGE_KEY_GITHUB_CACHE = '@secubuzz_github_advisories_v1';
+const STORAGE_KEY_CISA_CACHE = '@secubuzz_cisa_advisories_v1';
+
+let inMemoryCisaAdvisories: CveAdvisory[] = [];
+let inMemoryGithubAdvisories: CveAdvisory[] = [];
 
 interface GitHubVulnerability {
   package?: {
@@ -53,54 +58,75 @@ async function fetchCisaKev(): Promise<CveAdvisory[]> {
 
     clearTimeout(timeoutId);
 
-    if (!response.ok) {
-      return [];
+    if (response.ok) {
+      const data = await response.json();
+      const rawList = Array.isArray(data?.vulnerabilities)
+        ? data.vulnerabilities
+        : [];
+
+      if (rawList.length > 0) {
+        const mapped = rawList.map((item: any): CveAdvisory => {
+          const isRansomware =
+            item.knownRansomwareCampaignUse?.toLowerCase() === 'known';
+
+          const noteUrlMatch = item.notes?.match(/https:\/\/[^\s;]+/);
+          const url =
+            noteUrlMatch?.[0] ||
+            `https://nvd.nist.gov/vuln/detail/${item.cveID}`;
+
+          const rawAction =
+            item.requiredAction || 'Apply vendor patches immediately.';
+          const cleanAction = rawAction
+            .replace(/\s*\(see URL in Notes\)/gi, '')
+            .replace(/\s{2,}/g, ' ')
+            .trim();
+
+          return {
+            id: item.cveID,
+            cveID: item.cveID,
+            source: 'CISA KEV',
+            vendorProject: item.vendorProject || 'Enterprise Vendor',
+            product: item.product || 'Software System',
+            vulnerabilityName: item.vulnerabilityName || item.cveID,
+            dateAdded: item.dateAdded || '',
+            severity: isRansomware ? 'CRITICAL' : 'HIGH',
+            shortDescription: item.shortDescription || '',
+            requiredAction: cleanAction,
+            dueDate: item.dueDate || undefined,
+            knownRansomwareCampaignUse: item.knownRansomwareCampaignUse || 'Unknown',
+            url,
+            cwes: (item.cwes || []).map((c: any) =>
+              String(c).replace(/^CWE:\s*/i, '').trim(),
+            ).filter(Boolean),
+          };
+        });
+
+        inMemoryCisaAdvisories = mapped;
+        void AsyncStorage.setItem(
+          STORAGE_KEY_CISA_CACHE,
+          JSON.stringify(mapped.slice(0, 300)),
+        ).catch(() => {});
+
+        return mapped;
+      }
     }
-
-    const data = await response.json();
-    const rawList = Array.isArray(data?.vulnerabilities)
-      ? data.vulnerabilities
-      : [];
-
-    return rawList.map((item: any): CveAdvisory => {
-      const isRansomware =
-        item.knownRansomwareCampaignUse?.toLowerCase() === 'known';
-
-      const noteUrlMatch = item.notes?.match(/https:\/\/[^\s;]+/);
-      const url =
-        noteUrlMatch?.[0] ||
-        `https://nvd.nist.gov/vuln/detail/${item.cveID}`;
-
-      const rawAction =
-        item.requiredAction || 'Apply vendor patches immediately.';
-      const cleanAction = rawAction
-        .replace(/\s*\(see URL in Notes\)/gi, '')
-        .replace(/\s{2,}/g, ' ')
-        .trim();
-
-      return {
-        id: item.cveID,
-        cveID: item.cveID,
-        source: 'CISA KEV',
-        vendorProject: item.vendorProject || 'Enterprise Vendor',
-        product: item.product || 'Software System',
-        vulnerabilityName: item.vulnerabilityName || item.cveID,
-        dateAdded: item.dateAdded || '',
-        severity: isRansomware ? 'CRITICAL' : 'HIGH',
-        shortDescription: item.shortDescription || '',
-        requiredAction: cleanAction,
-        dueDate: item.dueDate || undefined,
-        knownRansomwareCampaignUse: item.knownRansomwareCampaignUse || 'Unknown',
-        url,
-        cwes: (item.cwes || []).map((c: any) =>
-          String(c).replace(/^CWE:\s*/i, '').trim(),
-        ).filter(Boolean),
-      };
-    });
   } catch (err) {
     console.warn('SecuBuzz: Failed to fetch CISA KEV feed:', err);
-    return [];
   }
+
+  // Fallback to in-memory or persisted CISA cache
+  if (inMemoryCisaAdvisories.length > 0) {
+    return inMemoryCisaAdvisories;
+  }
+  try {
+    const cached = await AsyncStorage.getItem(STORAGE_KEY_CISA_CACHE);
+    if (cached) {
+      inMemoryCisaAdvisories = JSON.parse(cached) as CveAdvisory[];
+      return inMemoryCisaAdvisories;
+    }
+  } catch {}
+
+  return [];
 }
 
 function formatEcosystem(ecosystem?: string): string {
@@ -226,69 +252,86 @@ async function fetchGitHubAdvisories(): Promise<CveAdvisory[]> {
 
     clearTimeout(timeoutId);
 
-    if (!response.ok) {
-      return [];
+    if (response.ok) {
+      const rawList: GitHubAdvisoryRaw[] = await response.json();
+      if (Array.isArray(rawList) && rawList.length > 0) {
+        const mapped = rawList.map((item): CveAdvisory => {
+          const firstVuln = item.vulnerabilities?.[0];
+          const rawPkgName = firstVuln?.package?.name || 'Open Source Package';
+          const formattedPkg = formatProductName(rawPkgName);
+          const ecosystem = formatEcosystem(firstVuln?.package?.ecosystem);
+          const firstPatched = firstVuln?.first_patched_version;
+          const vulnRange = firstVuln?.vulnerable_version_range;
+
+          const rawSeverity = item.severity?.toUpperCase();
+          const severity: AdvisorySeverity =
+            rawSeverity === 'CRITICAL'
+              ? 'CRITICAL'
+              : rawSeverity === 'HIGH'
+              ? 'HIGH'
+              : rawSeverity === 'LOW'
+              ? 'LOW'
+              : 'MEDIUM';
+
+          const cleanDesc = cleanAdvisoryDescription(item.description, item.summary);
+
+          const cvss =
+            item.cvss_severities?.cvss_v4?.score ||
+            item.cvss_severities?.cvss_v3?.score;
+
+          return {
+            id: item.ghsa_id,
+            cveID: item.cve_id || item.ghsa_id,
+            source: 'GITHUB',
+            vendorProject: ecosystem,
+            product: formattedPkg,
+            vulnerabilityName: item.summary,
+            dateAdded: item.published_at ? item.published_at.split('T')[0] : '',
+            severity,
+            shortDescription: cleanDesc,
+            requiredAction: firstPatched
+              ? `Upgrade ${formattedPkg} to version ${firstPatched} or later.`
+              : 'No patched release available yet. Check advisory mitigations and workarounds.',
+            dueDate: undefined,
+            knownRansomwareCampaignUse: 'Unknown',
+            url: item.html_url,
+            cwes: item.cwes
+              ?.map((c) =>
+                (c.cwe_id || c.name || '').replace(/^CWE:\s*/i, '').trim(),
+              )
+              .filter(Boolean),
+            cvssScore: cvss,
+            patchedVersion: firstPatched,
+            vulnerableVersionRange: vulnRange,
+          };
+        });
+
+        inMemoryGithubAdvisories = mapped;
+        void AsyncStorage.setItem(
+          STORAGE_KEY_GITHUB_CACHE,
+          JSON.stringify(mapped),
+        ).catch(() => {});
+
+        return mapped;
+      }
     }
-
-    const rawList: GitHubAdvisoryRaw[] = await response.json();
-    if (!Array.isArray(rawList)) {
-      return [];
-    }
-
-    return rawList.map((item): CveAdvisory => {
-      const firstVuln = item.vulnerabilities?.[0];
-      const rawPkgName = firstVuln?.package?.name || 'Open Source Package';
-      const formattedPkg = formatProductName(rawPkgName);
-      const ecosystem = formatEcosystem(firstVuln?.package?.ecosystem);
-      const firstPatched = firstVuln?.first_patched_version;
-      const vulnRange = firstVuln?.vulnerable_version_range;
-
-      const rawSeverity = item.severity?.toUpperCase();
-      const severity: AdvisorySeverity =
-        rawSeverity === 'CRITICAL'
-          ? 'CRITICAL'
-          : rawSeverity === 'HIGH'
-          ? 'HIGH'
-          : rawSeverity === 'LOW'
-          ? 'LOW'
-          : 'MEDIUM';
-
-      const cleanDesc = cleanAdvisoryDescription(item.description, item.summary);
-
-      const cvss =
-        item.cvss_severities?.cvss_v4?.score ||
-        item.cvss_severities?.cvss_v3?.score;
-
-      return {
-        id: item.ghsa_id,
-        cveID: item.cve_id || item.ghsa_id,
-        source: 'GITHUB',
-        vendorProject: ecosystem,
-        product: formattedPkg,
-        vulnerabilityName: item.summary,
-        dateAdded: item.published_at ? item.published_at.split('T')[0] : '',
-        severity,
-        shortDescription: cleanDesc,
-        requiredAction: firstPatched
-          ? `Upgrade ${formattedPkg} to version ${firstPatched} or later.`
-          : 'No patched release available yet. Check advisory mitigations and workarounds.',
-        dueDate: undefined,
-        knownRansomwareCampaignUse: 'Unknown',
-        url: item.html_url,
-        cwes: item.cwes
-          ?.map((c) =>
-            (c.cwe_id || c.name || '').replace(/^CWE:\s*/i, '').trim(),
-          )
-          .filter(Boolean),
-        cvssScore: cvss,
-        patchedVersion: firstPatched,
-        vulnerableVersionRange: vulnRange,
-      };
-    });
   } catch (err) {
     console.warn('SecuBuzz: Failed to fetch GitHub Advisories:', err);
-    return [];
   }
+
+  // Fallback to in-memory or persisted GitHub cache on rate-limit or network error
+  if (inMemoryGithubAdvisories.length > 0) {
+    return inMemoryGithubAdvisories;
+  }
+  try {
+    const cached = await AsyncStorage.getItem(STORAGE_KEY_GITHUB_CACHE);
+    if (cached) {
+      inMemoryGithubAdvisories = JSON.parse(cached) as CveAdvisory[];
+      return inMemoryGithubAdvisories;
+    }
+  } catch {}
+
+  return [];
 }
 
 /**
@@ -297,10 +340,16 @@ async function fetchGitHubAdvisories(): Promise<CveAdvisory[]> {
  */
 export async function getCveAdvisories(): Promise<CveAdvisory[]> {
   try {
-    const [cisaList, githubList] = await Promise.all([
+    const [cisaListRaw, githubListRaw] = await Promise.all([
       fetchCisaKev(),
       fetchGitHubAdvisories(),
     ]);
+
+    // Resilient fallback: Never drop an advisory source if one had a network blip or rate-limit
+    const cisaList =
+      cisaListRaw.length > 0 ? cisaListRaw : inMemoryCisaAdvisories;
+    const githubList =
+      githubListRaw.length > 0 ? githubListRaw : inMemoryGithubAdvisories;
 
     if (cisaList.length > 0 || githubList.length > 0) {
       // Map of existing CISA CVEs for deduplication

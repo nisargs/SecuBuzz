@@ -153,11 +153,17 @@ export default function AdvisoriesScreen() {
     void loadAdvisories();
   }, [loadAdvisories]);
 
-  // Silently reload when returning to foreground
+  // Silently reload when returning to foreground with a 15-minute cooldown
+  const lastFetchTimeRef = useRef<number>(Date.now());
+
   useEffect(() => {
     const subscription = AppState.addEventListener('change', (nextState) => {
       if (nextState === 'active') {
-        void loadAdvisories();
+        const elapsed = Date.now() - lastFetchTimeRef.current;
+        if (elapsed >= 15 * 60 * 1000) {
+          lastFetchTimeRef.current = Date.now();
+          void loadAdvisories();
+        }
       }
     });
     return () => subscription.remove();
@@ -233,6 +239,7 @@ export default function AdvisoriesScreen() {
   const handleManualRefresh = useCallback(async () => {
     void haptics.impactLight();
     setRefreshing(true);
+    lastFetchTimeRef.current = Date.now();
     try {
       const prevTopId = advisories[0]?.id;
       const fresh = await loadAdvisories();
