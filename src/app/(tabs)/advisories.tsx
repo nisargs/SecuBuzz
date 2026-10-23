@@ -360,41 +360,39 @@ export default function AdvisoriesScreen() {
   }, [advisories, sourceFilter, severityFilter, epssFilter, searchQuery]);
 
   /*
-   * Fresh Intelligence Target (Recent Threats & Active Zero-Days):
-   * Calculates how many advisories were added in the recent window (last 30 days).
-   * Minimum target of 10 so the user has an achievable, satisfying finish line.
+   * Today's Fresh Zero-Day Horizon (24-Hour Horizon):
+   * Option C: Strictly calculates zero-days / advisories added in the last 24 hours.
+   * If CISA/GitHub added 0 CVEs in the last 24 hours, the app indicates "All Clear"
+   * (✓ NO NEW ZERO-DAYS TODAY) and immediately considers the daily horizon complete (100%).
    */
-  const recentTargetCount = useMemo(() => {
+  const todayTargetCount = useMemo(() => {
     if (filteredAdvisories.length === 0) return 0;
-    if (filteredAdvisories.length <= 25) return filteredAdvisories.length;
-
     const nowMs = Date.now();
-    const count30d = filteredAdvisories.filter((a) => {
+    return filteredAdvisories.filter((a) => {
       const t = Date.parse(a.dateAdded || '');
-      return !Number.isNaN(t) && nowMs - t <= 30 * 24 * 60 * 60 * 1000;
+      return !Number.isNaN(t) && nowMs - t <= 24 * 60 * 60 * 1000;
     }).length;
-
-    return Math.min(filteredAdvisories.length, Math.max(10, count30d));
   }, [filteredAdvisories]);
 
-  const isArchiveMode = currentIndex >= recentTargetCount;
+  // When 0 zero-days today, any scrolling past the first item is archive browsing
+  const isArchiveMode = todayTargetCount === 0 ? currentIndex > 0 : currentIndex >= todayTargetCount;
 
   /*
-   * Reading progress calibrated to Fresh Advisories / Zero-Days:
-   * Smoothly advances from 0% -> 100% as you triage recent threats.
-   * Stays at 100% once recent threats are completed and you browse the historical CVE catalog.
+   * Reading progress calibrated to 24-Hour Zero-Day Horizon:
+   * If 0 added today: 100% (All clear!).
+   * If >0 added today: advances from 0% -> 100% as user triages today's zero-days.
    */
   const readProgressPct = useMemo(() => {
-    if (recentTargetCount === 0) return 0;
-    if (currentIndex >= recentTargetCount) return 100;
+    if (filteredAdvisories.length === 0) return 0;
+    if (todayTargetCount === 0 || currentIndex >= todayTargetCount) return 100;
     return Math.min(
       100,
       Math.max(
         1,
-        Number((((currentIndex + 1) / recentTargetCount) * 100).toFixed(1)),
+        Number((((currentIndex + 1) / todayTargetCount) * 100).toFixed(1)),
       ),
     );
-  }, [currentIndex, recentTargetCount]);
+  }, [currentIndex, filteredAdvisories.length, todayTargetCount]);
 
   // Progressive batch loading
   const visibleAdvisories = useMemo(
@@ -550,10 +548,14 @@ export default function AdvisoriesScreen() {
                 style={[
                   styles.telemetryBadge,
                   {
-                    backgroundColor: isArchiveMode
+                    backgroundColor: todayTargetCount === 0 && currentIndex === 0
+                      ? (isDark ? 'rgba(16, 185, 129, 0.12)' : 'rgba(16, 185, 129, 0.08)')
+                      : isArchiveMode
                       ? (isDark ? 'rgba(148, 163, 184, 0.12)' : 'rgba(100, 116, 139, 0.08)')
                       : `${severityColors.CRITICAL.primary}18`,
-                    borderColor: isArchiveMode
+                    borderColor: todayTargetCount === 0 && currentIndex === 0
+                      ? (isDark ? 'rgba(16, 185, 129, 0.30)' : 'rgba(16, 185, 129, 0.25)')
+                      : isArchiveMode
                       ? (isDark ? 'rgba(148, 163, 184, 0.25)' : 'rgba(100, 116, 139, 0.20)')
                       : `${severityColors.CRITICAL.primary}35`,
                   },
@@ -563,7 +565,9 @@ export default function AdvisoriesScreen() {
                   style={[
                     styles.telemetryDot,
                     {
-                      backgroundColor: isArchiveMode
+                      backgroundColor: todayTargetCount === 0 && currentIndex === 0
+                        ? '#10B981'
+                        : isArchiveMode
                         ? colors.textSecondary
                         : severityColors.CRITICAL.primary,
                     },
@@ -573,19 +577,25 @@ export default function AdvisoriesScreen() {
                   style={[
                     styles.telemetryBadgeText,
                     {
-                      color: isArchiveMode
+                      color: todayTargetCount === 0 && currentIndex === 0
+                        ? '#10B981'
+                        : isArchiveMode
                         ? colors.textSecondary
                         : severityColors.CRITICAL.primary,
                     },
                   ]}
                 >
-                  {currentIndex + 1 === recentTargetCount
-                    ? `✓ RECENT THREATS TRIAGED (${recentTargetCount}/${recentTargetCount})`
+                  {todayTargetCount === 0
+                    ? currentIndex === 0
+                      ? `✓ NO NEW ZERO-DAYS TODAY (${advisories.length.toLocaleString()} TRACKED)`
+                      : `ARCHIVE: ${currentIndex + 1} OF ${filteredAdvisories.length.toLocaleString()}`
+                    : currentIndex + 1 === todayTargetCount
+                    ? `✓ TODAY'S THREATS TRIAGED (${todayTargetCount}/${todayTargetCount})`
                     : isArchiveMode
                     ? `ARCHIVE: ${currentIndex + 1} OF ${filteredAdvisories.length.toLocaleString()}`
                     : isAnyFilterActive
-                    ? `ACTIVE: ${currentIndex + 1} OF ${filteredAdvisories.length} (${advisories.length.toLocaleString()} TRACKED)`
-                    : `ACTIVE: ${currentIndex + 1} OF ${recentTargetCount} (${advisories.length.toLocaleString()} TRACKED)`}
+                    ? `TODAY: ${currentIndex + 1} OF ${todayTargetCount} (${filteredAdvisories.length} FILTERED)`
+                    : `TODAY: ${currentIndex + 1} OF ${todayTargetCount} (${advisories.length.toLocaleString()} TRACKED)`}
                 </Text>
               </View>
             ) : null}
