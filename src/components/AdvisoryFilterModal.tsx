@@ -149,7 +149,7 @@ export function AdvisoryFilterModal({
                 style={{ marginRight: 8 }}
               />
               <Text style={[styles.title, { color: colors.textPrimary }]}>
-                Filter Vulnerabilities & Threats
+                Filter Advisories
               </Text>
             </View>
 
@@ -361,7 +361,7 @@ export function AdvisoryFilterModal({
                 <Text
                   style={[styles.sectionTitle, { color: colors.textSecondary }]}
                 >
-                  INTELLIGENCE SOURCE
+                  ADVISORY SOURCE
                 </Text>
                 {selectedSource !== 'ALL' && (
                   <Pressable

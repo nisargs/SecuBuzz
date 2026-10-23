@@ -160,7 +160,7 @@ export function FilterModal({
                 style={{ marginRight: 8 }}
               />
               <Text style={[styles.title, { color: colors.textPrimary }]}>
-                Filter Intelligence
+                Filter News Briefs
               </Text>
             </View>
 
