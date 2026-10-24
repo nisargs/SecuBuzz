@@ -309,6 +309,86 @@ export function AdvisoryFilterModal({
                   </Text>
                 </Pressable>
 
+                {/* MEDIUM */}
+                <Pressable
+                  accessibilityRole="button"
+                  onPress={() => onSelectSeverity('MEDIUM')}
+                  style={[
+                    styles.chip,
+                    {
+                      borderColor: colors.border,
+                      backgroundColor:
+                        selectedSeverity === 'MEDIUM'
+                          ? `${severityColors.MEDIUM.primary}20`
+                          : isDark
+                          ? colors.background
+                          : colors.surface,
+                    },
+                    selectedSeverity === 'MEDIUM' && {
+                      borderColor: severityColors.MEDIUM.primary,
+                    },
+                  ]}
+                >
+                  <View
+                    style={[
+                      styles.dot,
+                      { backgroundColor: severityColors.MEDIUM.primary },
+                    ]}
+                  />
+                  <Text
+                    style={[
+                      styles.chipText,
+                      { color: colors.textSecondary },
+                      selectedSeverity === 'MEDIUM' && {
+                        color: severityColors.MEDIUM.primary,
+                        fontWeight: '700',
+                      },
+                    ]}
+                  >
+                    Medium ({severityCounts.MEDIUM || 0})
+                  </Text>
+                </Pressable>
+
+                {/* LOW */}
+                <Pressable
+                  accessibilityRole="button"
+                  onPress={() => onSelectSeverity('LOW')}
+                  style={[
+                    styles.chip,
+                    {
+                      borderColor: colors.border,
+                      backgroundColor:
+                        selectedSeverity === 'LOW'
+                          ? `${severityColors.LOW.primary}20`
+                          : isDark
+                          ? colors.background
+                          : colors.surface,
+                    },
+                    selectedSeverity === 'LOW' && {
+                      borderColor: severityColors.LOW.primary,
+                    },
+                  ]}
+                >
+                  <View
+                    style={[
+                      styles.dot,
+                      { backgroundColor: severityColors.LOW.primary },
+                    ]}
+                  />
+                  <Text
+                    style={[
+                      styles.chipText,
+                      { color: colors.textSecondary },
+                      selectedSeverity === 'LOW' && {
+                        color: severityColors.LOW.primary,
+                        fontWeight: '700',
+                      },
+                    ]}
+                  >
+                    Low ({severityCounts.LOW || 0})
+                  </Text>
+                </Pressable>
+
                 {/* RANSOMWARE */}
                 <Pressable
                   accessibilityRole="button"

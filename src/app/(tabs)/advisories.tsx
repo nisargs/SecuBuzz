@@ -269,6 +269,8 @@ export default function AdvisoriesScreen() {
     }
     if (severity === 'CRITICAL') return item.severity === 'CRITICAL';
     if (severity === 'HIGH') return item.severity === 'HIGH';
+    if (severity === 'MEDIUM') return item.severity === 'MEDIUM';
+    if (severity === 'LOW') return item.severity === 'LOW';
     return true;
   };
 
@@ -315,6 +317,8 @@ export default function AdvisoriesScreen() {
       ALL: candidate.length,
       CRITICAL: 0,
       HIGH: 0,
+      MEDIUM: 0,
+      LOW: 0,
       RANSOMWARE: 0,
     };
     candidate.forEach((item) => {
@@ -323,6 +327,8 @@ export default function AdvisoriesScreen() {
       }
       if (item.severity === 'CRITICAL') counts.CRITICAL++;
       if (item.severity === 'HIGH') counts.HIGH++;
+      if (item.severity === 'MEDIUM') counts.MEDIUM++;
+      if (item.severity === 'LOW') counts.LOW++;
     });
     return counts;
   }, [advisories, sourceFilter, epssFilter, searchQuery]);

@@ -10,7 +10,7 @@ import { Seo } from '../components/Seo';
 import type { Advisory } from '../types/advisory';
 
 type AdvisorySourceFilter = 'ALL' | 'CISA' | 'GITHUB';
-type AdvisorySeverityFilter = 'ALL' | 'CRITICAL' | 'HIGH' | 'RANSOMWARE';
+type AdvisorySeverityFilter = 'ALL' | 'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW' | 'RANSOMWARE';
 type SortKey = 'added' | 'due';
 const PAGE_SIZE = 25;
 
@@ -65,6 +65,8 @@ export function Advisories() {
     if (severity === 'RANSOMWARE') return !!a.ransomware;
     if (severity === 'CRITICAL') return getCvssSeverity(a.cvss, a.severity).toUpperCase() === 'CRITICAL';
     if (severity === 'HIGH') return getCvssSeverity(a.cvss, a.severity).toUpperCase() === 'HIGH';
+    if (severity === 'MEDIUM') return getCvssSeverity(a.cvss, a.severity).toUpperCase() === 'MEDIUM';
+    if (severity === 'LOW') return getCvssSeverity(a.cvss, a.severity).toUpperCase() === 'LOW';
     return true;
   };
 
@@ -90,6 +92,8 @@ export function Advisories() {
       all: candidate.length,
       critical: candidate.filter((a) => matchesSeverity(a, 'CRITICAL')).length,
       high: candidate.filter((a) => matchesSeverity(a, 'HIGH')).length,
+      medium: candidate.filter((a) => matchesSeverity(a, 'MEDIUM')).length,
+      low: candidate.filter((a) => matchesSeverity(a, 'LOW')).length,
       ransomware: candidate.filter((a) => matchesSeverity(a, 'RANSOMWARE')).length,
     };
   }, [advisories, sourceFilter, vendorFilter, dueThisWeekOnly, query]);
@@ -281,15 +285,43 @@ export function Advisories() {
             <button
               type="button"
               onClick={() => {
+                setSeverityFilter('MEDIUM');
+                setPage(1);
+              }}
+              className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
+                severityFilter === 'MEDIUM'
+                  ? 'bg-[#4CC9F0]/10 font-medium text-[#4CC9F0] border border-[#4CC9F0]/50'
+                  : 'text-muted hover:text-[#4CC9F0] hover:bg-surface border border-line'
+              }`}>
+              <span className="h-2 w-2 rounded-full bg-[#4CC9F0]" />
+              Medium ({severityCounts.medium})
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setSeverityFilter('LOW');
+                setPage(1);
+              }}
+              className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
+                severityFilter === 'LOW'
+                  ? 'bg-slate-400/10 font-medium text-slate-300 border border-slate-400/50'
+                  : 'text-muted hover:text-ink hover:bg-surface border border-line'
+              }`}>
+              <span className="h-2 w-2 rounded-full bg-slate-400" />
+              Low ({severityCounts.low})
+            </button>
+            <button
+              type="button"
+              onClick={() => {
                 setSeverityFilter('RANSOMWARE');
                 setPage(1);
               }}
               className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
                 severityFilter === 'RANSOMWARE'
-                  ? 'bg-amber-500/15 font-medium text-amber-400 border border-amber-500/60'
-                  : 'text-muted hover:text-amber-400 hover:bg-surface border border-line'
+                  ? 'bg-rose-500/15 font-medium text-rose-400 border border-rose-500/60'
+                  : 'text-muted hover:text-rose-400 hover:bg-surface border border-line'
               }`}>
-              <span>💀</span>
+              <span className="h-2 w-2 rounded-full bg-rose-400" />
               Ransomware ({severityCounts.ransomware})
             </button>
           </div>
@@ -323,7 +355,6 @@ export function Advisories() {
                   ? 'bg-raised font-medium text-accent border border-accent/40'
                   : 'text-muted hover:text-accent hover:bg-surface border border-line'
               }`}>
-              <span>🛡️</span>
               CISA KEV Zero-Days ({sourceCounts.cisa})
             </button>
             <button
@@ -337,7 +368,6 @@ export function Advisories() {
                   ? 'bg-raised font-medium text-accent border border-accent/40'
                   : 'text-muted hover:text-accent hover:bg-surface border border-line'
               }`}>
-              <span>&lt;&gt;</span>
               GitHub Ecosystem ({sourceCounts.github})
             </button>
           </div>

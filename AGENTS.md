@@ -75,7 +75,7 @@
     - Post-AI deduplication CVE backfill: when a secondary source is merged as a duplicate in `scripts/ingest.mjs`, any missing CVE is backfilled into `duplicateOf.cves`, title/headline is enriched with `(${cve})`, and category is elevated to `CVE`.
   - **100% Mobile & Web Taxonomy Parity**:
     - News Briefs: `Breach`, `Ransomware`, `CVE`, `Vulnerability`, `Nation State`, `General`. Threat Severities: `CRITICAL`, `HIGH`, `MEDIUM`, `LOW`.
-    - Advisories: `Severity & Impact` (`All`, `Critical`, `High`, `Ransomware`), `Advisory Source` (`All Sources`, `CISA KEV Zero-Days`, `GitHub Ecosystem`).
+    - Advisories: `Severity & Impact` (`All`, `Critical`, `High`, `Medium`, `Low`, `Ransomware`), `Advisory Source` (`All Sources`, `CISA KEV Zero-Days`, `GitHub Ecosystem`).
   - **Dynamic Faceted Filter Counting (Zero-Misleading UX Standard)**:
     - Replaced static total counts inside filter chips with dynamic faceted counts across both web and mobile app.
     - News: `Threat Severity` counts are dynamically scoped to the active `Category` and search query; `Category` counts are dynamically scoped to the active `Severity` and search query. (e.g. Selecting `CVE (18)` dynamically scopes `Critical` to `(9)`, not total 20).
