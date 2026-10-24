@@ -11,6 +11,44 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "brotli-decoder-memory-corruption-enables-rce-in-no-164f62",
+    "title": "Brotli Decoder Memory Corruption Enables RCE in Node.js, Bun, Python, and Envoy",
+    "summary": "A memory-corruption flaw in Google’s Brotli decoder, identified as CVE-2026-111497, allows crafted Brotli-compressed data to overwrite memory beyond a buffer in Node.js, Bun, Python Brotli packages, and Envoy proxies. The vulnerability enables remote code execution through buffer overflow, potentially compromising any process handling untrusted Brotli streams. Vendors should apply the latest patch releases and enforce strict input validation to mitigate exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
+    "publishedAt": "2026-10-24T11:09:29.000Z",
+    "cves": [
+      "CVE-2026-111497"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "brotli-decoder-memory-corruption-enables-rce-in-no",
+      "article-164f62",
+      "164f62",
+      "brotli-decoder-memory-corruption-enables-rce-in-node-js-bun-"
+    ]
+  },
+  {
+    "slug": "google-updates-privacy-policy-to-allow-ai-features-14d194",
+    "title": "Google Updates Privacy Policy to Allow AI Features to Use Gmail and Photos Data for Targeted Ads",
+    "summary": "Google updated its privacy policy to clarify that data from Gmail and Photos can be accessed by AI features in Search or Gemini for targeted advertising. The policy states that users may opt‑in to allow these services to read activity from other Google accounts, enabling cross‑service ad targeting in the future. Review the terms and adjust data handling practices.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/google-says-gmail-and-photos-data.html",
+    "publishedAt": "2026-10-24T10:36:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-updates-privacy-policy-to-allow-ai-features",
+      "article-14d194",
+      "14d194",
+      "google-updates-privacy-policy-to-allow-ai-features-to-use-gm"
+    ]
+  },
+  {
     "slug": "cisa-flags-cve-2026-110447-in-collabora-online-and-6019c7",
     "title": "CISA Flags CVE‑2026‑110447 in Collabora Online and Arista VeloCloud (CVE-2026-76466)",
     "summary": "CISA has flagged CVE‑2026‑110447 as a critical flaw in Collabora Online’s CODE Server and Arista VeloCloud Orchestrator, enabling code execution. The CVSS 9.2 vulnerability permits unauthenticated attackers to run arbitrary code on affected servers, threatening enterprise data and. Both vendors have issued patches; security teams should apply updates immediately to mitigate the exploitation risk today.",
@@ -648,26 +686,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "x402-sdk-flaw-enables-malicious-apis-to-drain-ai-a-33f54d",
-    "title": "x402 SDK Flaw Enables Malicious APIs to Drain AI Agents’ Token Balances",
-    "summary": "The x402 SDK’s default client permits API calls to sign payments for an agent’s entire token balance, exposing the SDK to malicious API requests (CVE-2026-111497). The vulnerability arises from an absent spending limit until August 18 releases added one, allowing unchecked token drains. Users should upgrade to the latest SDK version or enforce manual spending limits to mitigate the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/critical-x402-sdk-flaw-could-let.html",
-    "publishedAt": "2026-10-23T08:35:45.000Z",
-    "cves": [
-      "CVE-2026-111497"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "x402-sdk-flaw-enables-malicious-apis-to-drain-ai-a",
-      "article-33f54d",
-      "33f54d",
-      "x402-sdk-flaw-enables-malicious-apis-to-drain-ai-agents-toke"
-    ]
-  },
-  {
     "slug": "top-10-email-encryption-services-ranked-for-2026-5a5cac",
     "title": "Top 10 Email Encryption Services Ranked for 2026",
     "summary": "The article ranks ten email encryption services for 2026, evaluating sender-side automation and recipient experience. It assesses policy integration, DLP triggers, one-click protection, and usability metrics, highlighting services that balance strong cryptography with user convenience. Security teams should review the rankings to select solutions that meet compliance requirements and streamline secure communication workflows.",
@@ -736,24 +754,6 @@ export const news: NewsBrief[] = [
       "article-3aa4e5",
       "3aa4e5",
       "oracle-issues-emergency-java-update-for-critical-9-1-https-t"
-    ]
-  },
-  {
-    "slug": "google-cloud-integrates-openai-models-protects-bus-588ecf",
-    "title": "Google Cloud Integrates OpenAI Models, Protects Business Data",
-    "summary": "Google Cloud announced a private preview adding OpenAI GPT-6 models to its platform, offering business customers GPT-6 Astra, GPT-6.1 Sol, and GPT-6 Luna. The integration promises fast responses for professional tasks while ensuring business data will not train the models, with usage billed through the Google Cloud Marketplace. Users should review data handling policies and enable appropriate access controls to maintain compliance.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/23/google-cloud-openai-models-private-preview/",
-    "publishedAt": "2026-10-23T06:00:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-cloud-integrates-openai-models-protects-bus",
-      "article-588ecf",
-      "588ecf",
-      "google-cloud-integrates-openai-models-protects-business-data"
     ]
   },
   {
@@ -1167,24 +1167,6 @@ export const news: NewsBrief[] = [
       "article-44a04b",
       "44a04b",
       "ringrtc-call-hang-up-vulnerability-exploited-by-malicious-ca"
-    ]
-  },
-  {
-    "slug": "siemens-industrial-edge-app-publisher-vulnerabilit-42ff49",
-    "title": "Siemens Industrial Edge App Publisher Vulnerability Chain Enables RCE",
-    "summary": "A vulnerability chain in Siemens Industrial Edge App Publisher allows network attackers to impersonate the management server and execute arbitrary code via Node.js integration. The flaws stem from improper certificate validation and unescaped backend data rendering, enabling code execution with a CVSS score of 8.3. Siemens has issued a patch; users should upgrade to the newest version to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-02",
-    "publishedAt": "2026-10-22T12:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "siemens-industrial-edge-app-publisher-vulnerabilit",
-      "article-42ff49",
-      "42ff49",
-      "siemens-industrial-edge-app-publisher-vulnerability-chain-en"
     ]
   },
   {
