@@ -1,80 +1,93 @@
 [
   {
-    "id": "https://cybersecuritynews.com/palo-alto-confirms-php-rce-vulnerabilities/",
-    "sourceUrl": "https://cybersecuritynews.com/palo-alto-confirms-php-rce-vulnerabilities/",
-    "title": "Palo Alto Confirms PHP RCE Vulnerabilities Impact PAN-OS and Multiple Network Products",
-    "headline": "Palo Alto Confirms PHP RCE Vulnerabilities Impact PAN-OS and Multiple Network Products",
-    "summary": "Palo Alto Networks disclosed two PHP remote code execution vulnerabilities affecting PAN-OS and two cloud services, accessed via exposed management interfaces. The flaws, identified as CVE-2026-109618 and CVE-2026-109619, enable unauthenticated attackers to execute arbitrary code, posing high‑risk operational impact. Palo Alto has released hotfixes and recommends restricting management interface access until patches are applied.",
+    "id": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+PHP+Affecting+Cisco+Products%3A+October+2026%26vs_k%3D1",
+    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+PHP+Affecting+Cisco+Products%3A+October+2026%26vs_k%3D1",
+    "title": "Critical PHP RCE Vulnerabilities Impact Cisco Products",
+    "headline": "Critical PHP RCE Vulnerabilities Impact Cisco Products",
+    "summary": "Critical PHP vulnerabilities CVE-2026-109618 and CVE-2026-109619 enable remote code execution via out‑of‑memory corruption and stale global state in Cisco products. The flaws allow attackers to execute arbitrary code without authentication, posing a high‑risk threat to affected systems. Cisco has released patches; administrators should apply the updates immediately to mitigate exploitation.",
     "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-24T06:41:29.000Z",
-    "url": "https://cybersecuritynews.com/palo-alto-confirms-php-rce-vulnerabilities/",
+    "severity": "HIGH",
+    "source": "Cisco PSIRT",
+    "publishedAt": "2026-10-23T22:39:09.000Z",
+    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+PHP+Affecting+Cisco+Products%3A+October+2026%26vs_k%3D1",
     "additionalSources": []
   },
   {
-    "id": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/",
-    "title": "PHP Releases Mitigation for CVE‑2026‑115560 RCE Vulnerability",
-    "headline": "PHP Releases Mitigation for CVE‑2026‑115560 RCE Vulnerability",
-    "summary": "PHP disclosed a new remote code execution vulnerability, CVE‑2026‑115560, impacting systems with non‑default configurations. The flaw permits arbitrary code execution, with no patch available and active exploitation status unknown. PHP recommends disabling vulnerable features, monitoring logs, and applying the forthcoming vendor patch as soon as it is released.",
+    "id": "https://access.redhat.com/errata/RHSA-2026:88779",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:88779",
+    "title": "Red Hat ca-certificates Update Addresses Critical Vulnerability",
+    "headline": "Red Hat ca-certificates Update Addresses Critical Vulnerability",
+    "summary": "Red Hat Enterprise Linux 7 Extended Lifecycle Support receives a critical security update for ca-certificates, addressing an unspecified vulnerability that could allow attackers to tamper with certificate validation. The flaw is rated with a high CVSS score and could enable man‑in‑the‑middle attacks or unauthorized access. Users must install the latest ca-certificates package to ensure secure certificate handling.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-10-23T19:53:37.000Z",
+    "url": "https://access.redhat.com/errata/RHSA-2026:88779",
+    "additionalSources": []
+  },
+  {
+    "id": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Informational+for+Emergency+Distrust+of+eMudhra+Root+and+Intermediate+Certificate+Authorities%26vs_k%3D1",
+    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Informational+for+Emergency+Distrust+of+eMudhra+Root+and+Intermediate+Certificate+Authorities%26vs_k%3D1",
+    "title": "eMudhra Intermediate CA Private Keys Compromised",
+    "headline": "eMudhra Intermediate CA Private Keys Compromised",
+    "summary": "A critical compromise of eMudhra intermediate certificates was discovered, exposing eight private keys due to a key generation ceremony flaw that permits brute‑force acquisition within seconds. The flaw allows attackers to forge certificates for any domain, potentially enabling man‑in‑the‑middle attacks and undermining trust chains. Cisco recommends disabling affected CAs and applying vendor‑issued mitigations immediately.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Cisco PSIRT",
+    "publishedAt": "2026-10-23T16:00:00.000Z",
+    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Informational+for+Emergency+Distrust+of+eMudhra+Root+and+Intermediate+Certificate+Authorities%26vs_k%3D1",
+    "additionalSources": []
+  },
+  {
+    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83862",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83862",
+    "title": "CVE‑2026‑83862: Windows Network Load Balancing RCE Exploit Adjusted CVSS",
+    "headline": "CVE‑2026‑83862: Windows Network Load Balancing RCE Exploit Adjusted CVSS",
+    "summary": "CVE‑2026‑83862 is a Windows Network Load Balancing Remote Code Execution vulnerability with a CVSS base score of 8.8 after an attack vector adjustment to Adjacent. The flaw requires Layer 2 adjacency and allows authenticated attackers to execute arbitrary code on affected systems. Microsoft has released a patch; customers should install the update immediately to mitigate the risk.",
     "category": "CVE",
     "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "publishedAt": "2026-10-23T14:00:00.000Z",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83862",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/",
+    "title": "HPE Releases Patches for Eight High‑Severity ArubaOS RCE and Auth Bypass Flaws",
+    "headline": "HPE Releases Patches for Eight High‑Severity ArubaOS RCE and Auth Bypass Flaws",
+    "summary": "Hewlett Packard Enterprise disclosed eight high‑severity ArubaOS flaws enabling authentication bypass and remote code execution via the Aruba Operating System. The vulnerabilities stem from improper input validation in privileged configuration interfaces, allowing attackers to inject malicious commands and gain full administrative control. HPE released patches for all affected versions; security teams should apply the updates immediately and verify configuration integrity.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
     "source": "BleepingComputer",
-    "publishedAt": "2026-10-23T15:38:05.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/",
+    "publishedAt": "2026-10-23T12:48:00.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/",
     "additionalSources": []
   },
   {
-    "id": "https://www.securityweek.com/atlassian-patches-75-third-party-flaws-in-data-center-and-server-products/",
-    "sourceUrl": "https://www.securityweek.com/atlassian-patches-75-third-party-flaws-in-data-center-and-server-products/",
-    "title": "Atlassian Releases Patch for 75 Vulnerabilities in Data Center and Server Products",
-    "headline": "Atlassian Releases Patch for 75 Vulnerabilities in Data Center and Server Products",
-    "summary": "Atlassian’s October bulletin lists 75 vulnerabilities affecting Data Center and Server products, including 14 critical‑severity issues located in third‑party components. The flaws enable authenticated remote code execution and privilege escalation when users access affected services. Atlassian has issued patches for all affected components; administrators should apply the updates immediately to mitigate exploitation.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-23T07:54:47.000Z",
-    "url": "https://www.securityweek.com/atlassian-patches-75-third-party-flaws-in-data-center-and-server-products/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/php-php2shell-exploitation-attempts-pocs",
-    "sourceUrl": "https://therecord.media/php-php2shell-exploitation-attempts-pocs",
-    "title": "PHP2Shell Bug Sparks Exploitation Attempts",
-    "headline": "PHP2Shell Bug Sparks Exploitation Attempts",
-    "summary": "The PHP2Shell bug, a PHP flaw enabling remote code execution, has spurred attempts against servers running vulnerable PHP versions. The flaw requires authenticated access and local file inclusion, with no confirmed zero‑day exploit in the wild yet. Until an official patch arrives, administrators should disable remote file uploads, enforce least‑privilege PHP execution, and monitor for anomalous file changes.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "publishedAt": "2026-10-23T04:00:00.000Z",
-    "url": "https://therecord.media/php-php2shell-exploitation-attempts-pocs",
-    "additionalSources": []
-  },
-  {
-    "id": "https://blog.talosintelligence.com/i-had-plans-for-that-second/",
-    "sourceUrl": "https://blog.talosintelligence.com/i-had-plans-for-that-second/",
-    "title": "Critical PHP Vulnerabilities Identified",
-    "headline": "Critical PHP Vulnerabilities Identified",
-    "summary": "Critical vulnerabilities have been discovered in PHP, exposing affected web applications to potential remote code execution via malformed input. The flaw allows attackers to inject arbitrary code, leading to full system compromise and data exfiltration. Immediate patching of the latest PHP release and disabling vulnerable extensions is mandatory.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Cisco Talos",
-    "publishedAt": "2026-10-22T18:04:32.000Z",
-    "url": "https://blog.talosintelligence.com/i-had-plans-for-that-second/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-08",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-08",
-    "title": "Siemens APOGEE, TALON, Desigo PXC/PXM Vulnerabilities (CVE-2026-102073 to CVE-2026-102076)",
-    "headline": "Siemens APOGEE, TALON, Desigo PXC/PXM Vulnerabilities (CVE-2026-102073 to CVE-2026-102076)",
-    "summary": "Siemens APOGEE, TALON, and Desigo PXC/PXM products contain multiple CVE-2026-102073 through CVE-2026-102076 vulnerabilities that enable denial of service and availability impact. The flaws stem from improper input validation in BACnet and Ethernet interfaces, allowing attackers to crash devices remotely. Siemens has released patched firmware; users must upgrade immediately and apply recommended mitigations.",
+    "id": "https://www.securityweek.com/mirai-botnet-operators-join-php2shell-attacks-as-aslr-bypass-exploits-emerge/",
+    "sourceUrl": "https://www.securityweek.com/mirai-botnet-operators-join-php2shell-attacks-as-aslr-bypass-exploits-emerge/",
+    "title": "Mirai Botnet Operators Exploit PHP2Shell ASLR Bypass (CVE-2026-109618)",
+    "headline": "Mirai Botnet Operators Exploit PHP2Shell ASLR Bypass (CVE-2026-109618)",
+    "summary": "Researchers linked Mirai botnet operators to PHP2Shell attacks, revealing an ASLR bypass that could facilitate remote code execution on vulnerable servers. The flaw, identified as CVE-2026-109618, exploits a stack corruption vulnerability in PHP’s internal memory handling, but no successful exploitation has been observed. Administrators should update PHP to the latest release and enable ASLR mitigation features to prevent potential exploitation.",
     "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CISA",
-    "publishedAt": "2026-10-22T12:00:00.000Z",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-08",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-23T12:45:52.000Z",
+    "url": "https://www.securityweek.com/mirai-botnet-operators-join-php2shell-attacks-as-aslr-bypass-exploits-emerge/",
+    "additionalSources": []
+  },
+  {
+    "id": "http://chromereleases.googleblog.com/feeds/3934494581393061675/comments/default",
+    "sourceUrl": "http://chromereleases.googleblog.com/feeds/3934494581393061675/comments/default",
+    "title": "Chrome Dev 158 Released for Android",
+    "headline": "Chrome Dev 158 Released for Android",
+    "summary": "Chrome Dev 158 (158.0.8117.0) for Android has been released to Google Play, extending the developer channel for the browser. The update lists changes in the Git log, with feature details on the Chromium blog and web platform updates linked separately. Users reporting new issues should file bugs through official channels; no security patches or critical fixes are included.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "publishedAt": "2026-10-23T11:58:32.749Z",
+    "url": "http://chromereleases.googleblog.com/feeds/3934494581393061675/comments/default",
     "additionalSources": []
   },
   {
@@ -104,6 +117,19 @@
     "source": "The Hacker News",
     "publishedAt": "2026-10-24T10:36:33.000Z",
     "url": "https://thehackernews.com/2026/10/google-says-gmail-and-photos-data.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/palo-alto-confirms-php-rce-vulnerabilities/",
+    "sourceUrl": "https://cybersecuritynews.com/palo-alto-confirms-php-rce-vulnerabilities/",
+    "title": "Palo Alto Confirms PHP RCE Vulnerabilities Impact PAN-OS and Multiple Network Products",
+    "headline": "Palo Alto Confirms PHP RCE Vulnerabilities Impact PAN-OS and Multiple Network Products",
+    "summary": "Palo Alto Networks disclosed two PHP remote code execution vulnerabilities affecting PAN-OS and two cloud services, accessed via exposed management interfaces. The flaws, identified as CVE-2026-109618 and CVE-2026-109619, enable unauthenticated attackers to execute arbitrary code, posing high‑risk operational impact. Palo Alto has released hotfixes and recommends restricting management interface access until patches are applied.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-24T06:41:29.000Z",
+    "url": "https://cybersecuritynews.com/palo-alto-confirms-php-rce-vulnerabilities/",
     "additionalSources": []
   },
   {
@@ -334,6 +360,19 @@
         "sourceUrl": "https://therecord.media/quest-diagnostics-network-intrusion"
       }
     ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/",
+    "title": "PHP Releases Mitigation for CVE‑2026‑115560 RCE Vulnerability",
+    "headline": "PHP Releases Mitigation for CVE‑2026‑115560 RCE Vulnerability",
+    "summary": "PHP disclosed a new remote code execution vulnerability, CVE‑2026‑115560, impacting systems with non‑default configurations. The flaw permits arbitrary code execution, with no patch available and active exploitation status unknown. PHP recommends disabling vulnerable features, monitoring logs, and applying the forthcoming vendor patch as soon as it is released.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-23T15:38:05.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/",
+    "additionalSources": []
   },
   {
     "id": "https://cybersecuritynews.com/whatsapp-stop-working-without-registered-sim/",
@@ -669,6 +708,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.securityweek.com/atlassian-patches-75-third-party-flaws-in-data-center-and-server-products/",
+    "sourceUrl": "https://www.securityweek.com/atlassian-patches-75-third-party-flaws-in-data-center-and-server-products/",
+    "title": "Atlassian Releases Patch for 75 Vulnerabilities in Data Center and Server Products",
+    "headline": "Atlassian Releases Patch for 75 Vulnerabilities in Data Center and Server Products",
+    "summary": "Atlassian’s October bulletin lists 75 vulnerabilities affecting Data Center and Server products, including 14 critical‑severity issues located in third‑party components. The flaws enable authenticated remote code execution and privilege escalation when users access affected services. Atlassian has issued patches for all affected components; administrators should apply the updates immediately to mitigate exploitation.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-23T07:54:47.000Z",
+    "url": "https://www.securityweek.com/atlassian-patches-75-third-party-flaws-in-data-center-and-server-products/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.securityweek.com/irans-prince-of-persia-apt-hosts-cc-in-us-for-first-time-since-2016/",
     "sourceUrl": "https://www.securityweek.com/irans-prince-of-persia-apt-hosts-cc-in-us-for-first-time-since-2016/",
     "title": "Iranian APT Prince of Persia Deploys US-Based C&C Server",
@@ -731,6 +783,19 @@
     "source": "Help Net Security",
     "publishedAt": "2026-10-23T04:00:41.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/23/new-infosec-products-of-the-week-october-23-2026/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://therecord.media/php-php2shell-exploitation-attempts-pocs",
+    "sourceUrl": "https://therecord.media/php-php2shell-exploitation-attempts-pocs",
+    "title": "PHP2Shell Bug Sparks Exploitation Attempts",
+    "headline": "PHP2Shell Bug Sparks Exploitation Attempts",
+    "summary": "The PHP2Shell bug, a PHP flaw enabling remote code execution, has spurred attempts against servers running vulnerable PHP versions. The flaw requires authenticated access and local file inclusion, with no confirmed zero‑day exploit in the wild yet. Until an official patch arrives, administrators should disable remote file uploads, enforce least‑privilege PHP execution, and monitor for anomalous file changes.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "publishedAt": "2026-10-23T04:00:00.000Z",
+    "url": "https://therecord.media/php-php2shell-exploitation-attempts-pocs",
     "additionalSources": []
   },
   {
@@ -828,6 +893,19 @@
         "sourceUrl": "https://thehackernews.com/2026/10/litellm-suspects-github-token-leak-in.html"
       }
     ]
+  },
+  {
+    "id": "https://blog.talosintelligence.com/i-had-plans-for-that-second/",
+    "sourceUrl": "https://blog.talosintelligence.com/i-had-plans-for-that-second/",
+    "title": "Critical PHP Vulnerabilities Identified",
+    "headline": "Critical PHP Vulnerabilities Identified",
+    "summary": "Critical vulnerabilities have been discovered in PHP, exposing affected web applications to potential remote code execution via malformed input. The flaw allows attackers to inject arbitrary code, leading to full system compromise and data exfiltration. Immediate patching of the latest PHP release and disabling vulnerable extensions is mandatory.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Cisco Talos",
+    "publishedAt": "2026-10-22T18:04:32.000Z",
+    "url": "https://blog.talosintelligence.com/i-had-plans-for-that-second/",
+    "additionalSources": []
   },
   {
     "id": "https://unit42.paloaltonetworks.com/current-landscape-oauth-attacks/",
@@ -1024,6 +1102,19 @@
     "source": "SecurityWeek",
     "publishedAt": "2026-10-22T12:34:31.000Z",
     "url": "https://www.securityweek.com/signal-vulnerability-lets-malicious-callers-block-hang-ups/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-08",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-08",
+    "title": "Siemens APOGEE, TALON, Desigo PXC/PXM Vulnerabilities (CVE-2026-102073 to CVE-2026-102076)",
+    "headline": "Siemens APOGEE, TALON, Desigo PXC/PXM Vulnerabilities (CVE-2026-102073 to CVE-2026-102076)",
+    "summary": "Siemens APOGEE, TALON, and Desigo PXC/PXM products contain multiple CVE-2026-102073 through CVE-2026-102076 vulnerabilities that enable denial of service and availability impact. The flaws stem from improper input validation in BACnet and Ethernet interfaces, allowing attackers to crash devices remotely. Siemens has released patched firmware; users must upgrade immediately and apply recommended mitigations.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CISA",
+    "publishedAt": "2026-10-22T12:00:00.000Z",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-08",
     "additionalSources": []
   },
   {

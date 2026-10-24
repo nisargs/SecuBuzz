@@ -2290,5 +2290,10 @@
   "https://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html",
   "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
   "https://thehackernews.com/2026/10/google-says-gmail-and-photos-data.html",
-  "https://cybersecuritynews.com/palo-alto-confirms-php-rce-vulnerabilities/"
+  "https://cybersecuritynews.com/palo-alto-confirms-php-rce-vulnerabilities/",
+  "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+PHP+Affecting+Cisco+Products%3A+October+2026%26vs_k%3D1",
+  "https://access.redhat.com/errata/RHSA-2026:88779",
+  "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Informational+for+Emergency+Distrust+of+eMudhra+Root+and+Intermediate+Certificate+Authorities%26vs_k%3D1",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83862",
+  "http://chromereleases.googleblog.com/feeds/3934494581393061675/comments/default"
 ]

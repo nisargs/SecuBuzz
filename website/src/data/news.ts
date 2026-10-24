@@ -63,12 +63,24 @@ export const news: NewsBrief[] = [
     ],
     "additionalSources": [
       {
+        "source": "Cisco PSIRT",
+        "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+PHP+Affecting+Cisco+Products%3A+October+2026%26vs_k%3D1"
+      },
+      {
         "source": "BleepingComputer",
         "sourceUrl": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/"
       },
       {
+        "source": "Microsoft MSRC",
+        "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83862"
+      },
+      {
         "source": "The Hacker News",
         "sourceUrl": "https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html"
+      },
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/mirai-botnet-operators-join-php2shell-attacks-as-aslr-bypass-exploits-emerge/"
       }
     ],
     "aliases": [
@@ -76,10 +88,16 @@ export const news: NewsBrief[] = [
       "article-521f63",
       "521f63",
       "palo-alto-confirms-php-rce-vulnerabilities-impact-pan-os-and",
+      "critical-php-rce-vulnerabilities-impact-cisco-prod-52936c",
+      "critical-php-rce-vulnerabilities-impact-cisco-products",
       "php-releases-mitigation-for-cve-2026-115560-rce-vu-3e4da4",
       "php-releases-mitigation-for-cve-2026-115560-rce-vulnerabilit",
+      "cve-2026-83862-windows-network-load-balancing-rce-7440de",
+      "cve-2026-83862-windows-network-load-balancing-rce-exploit-ad",
       "enterprise-firewalls-and-vpns-breached-70-000-cred-1f7b9d",
-      "enterprise-firewalls-and-vpns-breached-70-000-credentials-ex"
+      "enterprise-firewalls-and-vpns-breached-70-000-credentials-ex",
+      "mirai-botnet-operators-exploit-php2shell-aslr-bypa-249a64",
+      "mirai-botnet-operators-exploit-php2shell-aslr-bypass-cve-202"
     ]
   },
   {
@@ -158,6 +176,24 @@ export const news: NewsBrief[] = [
       "article-57dd7e",
       "57dd7e",
       "php2shell-vulnerability-causes-widespread-panic-cve-2026-115"
+    ]
+  },
+  {
+    "slug": "red-hat-ca-certificates-update-addresses-critical-37e4f4",
+    "title": "Red Hat ca-certificates Update Addresses Critical Vulnerability",
+    "summary": "Red Hat Enterprise Linux 7 Extended Lifecycle Support receives a critical security update for ca-certificates, addressing an unspecified vulnerability that could allow attackers to tamper with certificate validation. The flaw is rated with a high CVSS score and could enable man‑in‑the‑middle attacks or unauthorized access. Users must install the latest ca-certificates package to ensure secure certificate handling.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:88779",
+    "publishedAt": "2026-10-23T19:53:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-ca-certificates-update-addresses-critical",
+      "article-37e4f4",
+      "37e4f4",
+      "red-hat-ca-certificates-update-addresses-critical-vulnerabil"
     ]
   },
   {
@@ -260,12 +296,19 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://thehackernews.com/2026/10/ruby-fixes-three-regex-engine-bugs.html",
     "publishedAt": "2026-10-23T17:54:08.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/"
+      }
+    ],
     "aliases": [
       "ruby-releases-4-0-9-3-4-12-3-3-13-to-fix-onigmo-re",
       "article-69b84c",
       "69b84c",
-      "ruby-releases-4-0-9-3-4-12-3-3-13-to-fix-onigmo-regex-bugs-b"
+      "ruby-releases-4-0-9-3-4-12-3-3-13-to-fix-onigmo-regex-bugs-b",
+      "hpe-releases-patches-for-eight-high-severity-aruba-156206",
+      "hpe-releases-patches-for-eight-high-severity-arubaos-rce-and"
     ]
   },
   {
@@ -356,6 +399,30 @@ export const news: NewsBrief[] = [
       "article-1fdcce",
       "1fdcce",
       "quest-diagnostics-breach-exposes-patient-records-via-quanum-"
+    ]
+  },
+  {
+    "slug": "emudhra-intermediate-ca-private-keys-compromised-710aae",
+    "title": "eMudhra Intermediate CA Private Keys Compromised",
+    "summary": "A critical compromise of eMudhra intermediate certificates was discovered, exposing eight private keys due to a key generation ceremony flaw that permits brute‑force acquisition within seconds. The flaw allows attackers to forge certificates for any domain, potentially enabling man‑in‑the‑middle attacks and undermining trust chains. Cisco recommends disabling affected CAs and applying vendor‑issued mitigations immediately.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cisco PSIRT",
+    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Informational+for+Emergency+Distrust+of+eMudhra+Root+and+Intermediate+Certificate+Authorities%26vs_k%3D1",
+    "publishedAt": "2026-10-23T16:00:00.000Z",
+    "cves": [],
+    "additionalSources": [
+      {
+        "source": "Schneier on Security",
+        "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/compromised-tls-certificates.html"
+      }
+    ],
+    "aliases": [
+      "emudhra-intermediate-ca-private-keys-compromised",
+      "article-710aae",
+      "710aae",
+      "emudhra-tls-certificates-compromised-by-weak-priva-468030",
+      "emudhra-tls-certificates-compromised-by-weak-private-keys"
     ]
   },
   {
@@ -576,6 +643,23 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "chrome-dev-158-released-for-android-5b96fe",
+    "title": "Chrome Dev 158 Released for Android",
+    "summary": "Chrome Dev 158 (158.0.8117.0) for Android has been released to Google Play, extending the developer channel for the browser. The update lists changes in the Git log, with feature details on the Chromium blog and web platform updates linked separately. Users reporting new issues should file bugs through official channels; no security patches or critical fixes are included.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "http://chromereleases.googleblog.com/feeds/3934494581393061675/comments/default",
+    "publishedAt": "2026-10-23T11:58:32.749Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-dev-158-released-for-android",
+      "article-5b96fe",
+      "5b96fe"
+    ]
+  },
+  {
     "slug": "microsoft-365-accounts-compromised-at-79-organizat-603fb9",
     "title": "Microsoft 365 Accounts Compromised at 79 Organizations via Session Replay",
     "summary": "An attacker replayed stolen Microsoft 365 sign‑in sessions to access email accounts at 79 organizations, bypassing password authentication. The campaign, spanning July 14 to September 22, 2026, involved 497 successful sign‑ins and over 200,000 failed attempts, with attackers deploying hidden inbox rules to conceal activity. Microsoft has issued guidance to monitor session logs, enforce MFA, and revoke compromised credentials to mitigate further breaches.",
@@ -627,24 +711,6 @@ export const news: NewsBrief[] = [
       "article-5fff35",
       "5fff35",
       "sandworm-executes-destructive-wiping-attack-on-ukrainian-log"
-    ]
-  },
-  {
-    "slug": "emudhra-tls-certificates-compromised-by-weak-priva-468030",
-    "title": "eMudhra TLS Certificates Compromised by Weak Private Keys",
-    "summary": "eMudhra Limited’s eight TLS certificates contain private keys with only 3 to 8 bits of entropy, far below the 384‑bit standard for NIST P‑384 elliptic curve keys. The flaw arises from inadequate key generation, allowing trivial brute‑force recovery of the private keys. Immediate action requires revoking the compromised certificates, issuing new keys with full entropy, and enforcing strict key‑generation policies.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Schneier on Security",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/compromised-tls-certificates.html",
-    "publishedAt": "2026-10-23T11:04:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "emudhra-tls-certificates-compromised-by-weak-priva",
-      "article-468030",
-      "468030",
-      "emudhra-tls-certificates-compromised-by-weak-private-keys"
     ]
   },
   {
