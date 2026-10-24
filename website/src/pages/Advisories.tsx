@@ -158,8 +158,8 @@ export function Advisories() {
 
       </PageIntro>
 
-      <div className="mx-auto max-w-site px-5 py-8 pb-20 md:px-8">
-        <div className="mb-5 flex flex-col gap-3">
+      <div className="mx-auto max-w-site px-5 pb-20 md:px-8">
+        <div className="sticky top-16 z-20 -mx-5 flex flex-col gap-3.5 border-b border-line bg-bg/95 px-5 py-4 backdrop-blur md:-mx-8 md:px-8">
           {/* Search, Vendor, Due This Week & Sort Controls */}
           <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
             <div className="flex flex-1 flex-wrap items-center gap-3">
@@ -374,7 +374,7 @@ export function Advisories() {
 
         </div>
 
-        <div className="mb-3 flex items-center justify-between text-xs font-mono text-subtle" aria-live="polite">
+        <div className="my-5 flex items-center justify-between text-xs font-mono text-subtle" aria-live="polite">
           <p>
             {results.length === 0
               ? '0 advisories'
