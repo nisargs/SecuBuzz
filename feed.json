@@ -2,28 +2,65 @@
   {
     "id": "https://isc.sans.edu/diary/rss/33452",
     "sourceUrl": "https://isc.sans.edu/diary/rss/33452",
-    "title": "php2shell Vulnerability Causes Widespread Panic",
-    "headline": "php2shell Vulnerability Causes Widespread Panic",
+    "title": "php2shell Vulnerability Causes Widespread Panic (CVE-2026-115560)",
+    "headline": "php2shell Vulnerability Causes Widespread Panic (CVE-2026-115560)",
     "summary": "The php2shell vulnerability triggered widespread panic among users, affecting PHP installations via a remote code execution vector. The flaw allows unauthenticated attackers to execute arbitrary code with the web server’s privileges, and a public proof‑of‑concept has been released, indicating active exploitation potential. A patch is available from the PHP team; administrators should apply the update immediately and verify configuration hardening.",
-    "category": "VULNERABILITY",
+    "category": "CVE",
     "severity": "CRITICAL",
     "source": "SANS Internet Storm Center",
     "publishedAt": "2026-10-23T20:04:47.000Z",
     "url": "https://isc.sans.edu/diary/rss/33452",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/application-security/exposed-php2shell-cyber-experts-advice",
-    "sourceUrl": "https://www.darkreading.com/application-security/exposed-php2shell-cyber-experts-advice",
-    "title": "PHP2Shell Exploit Advice from Cyber Experts",
-    "headline": "PHP2Shell Exploit Advice from Cyber Experts",
-    "summary": "The PHP2Shell vulnerability exposes PHP applications to remote code execution via a flaw in the PHP interpreter’s handling of certain input. Security researchers have demonstrated a public proof‑of‑concept, confirming the vulnerability’s high severity and the potential for unauthenticated exploitation. Experts recommend applying the official patch, disabling vulnerable functions, and monitoring for suspicious activity.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-23T19:41:23.000Z",
-    "url": "https://www.darkreading.com/application-security/exposed-php2shell-cyber-experts-advice",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "Dark Reading",
+        "sourceUrl": "https://www.darkreading.com/application-security/exposed-php2shell-cyber-experts-advice"
+      },
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/"
+      },
+      {
+        "source": "SANS Internet Storm Center",
+        "sourceUrl": "https://isc.sans.edu/diary/rss/33450"
+      },
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/mirai-botnet-operators-join-php2shell-attacks-as-aslr-bypass-exploits-emerge/"
+      },
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html"
+      },
+      {
+        "source": "CrowdStrike",
+        "sourceUrl": "https://www.crowdstrike.com/en-us/blog/obstacles-to-weaponizing-php2shell-likely-constrain-exploitation/"
+      },
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/php-php2shell-exploitation-attempts-pocs"
+      },
+      {
+        "source": "Cisco Talos",
+        "sourceUrl": "https://blog.talosintelligence.com/i-had-plans-for-that-second/"
+      },
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/gcore-makes-enterprise-security-bundle-free-for-public-agencies-until-end-of-the-year/"
+      },
+      {
+        "source": "Krebs on Security",
+        "sourceUrl": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/"
+      },
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/21/php-security-release-announcement-october-2026/"
+      }
+    ],
+    "cves": [
+      "CVE-2026-115560",
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ]
   },
   {
     "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-to-get-ai-powered-context-aware-phishing-detection/",
@@ -36,6 +73,19 @@
     "source": "BleepingComputer",
     "publishedAt": "2026-10-23T18:54:41.000Z",
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-to-get-ai-powered-context-aware-phishing-detection/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/blackx-uefi-bootkit-bypasses-secure.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/blackx-uefi-bootkit-bypasses-secure.html",
+    "title": "BlackX UEFI Bootkit Bypasses Secure Boot on Patched Windows Systems Missing Revocations",
+    "headline": "BlackX UEFI Bootkit Bypasses Secure Boot on Patched Windows Systems Missing Revocations",
+    "summary": "BlackX, a UEFI bootkit, bypasses Secure Boot on patched Windows systems lacking revocation lists, targeting diplomatic organizations in Tajikistan, Uzbekistan, and Turkmenistan. The bootkit exploits a firmware-level privilege escalation flaw that remains active, enabling attackers to load malicious code before OS authentication, potentially compromising system integrity and confidentiality. Apply the Microsoft firmware patch and update revocation lists immediately.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-23T18:50:13.000Z",
+    "url": "https://thehackernews.com/2026/10/blackx-uefi-bootkit-bypasses-secure.html",
     "additionalSources": []
   },
   {
@@ -132,6 +182,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://therecord.media/fcc-bans-devices-huawei-surveillance-chips",
+    "sourceUrl": "https://therecord.media/fcc-bans-devices-huawei-surveillance-chips",
+    "title": "FCC Bans Two Devices Containing Huawei-Linked Surveillance Chips",
+    "headline": "FCC Bans Two Devices Containing Huawei-Linked Surveillance Chips",
+    "summary": "The FCC has banned the import and sale of a wireless video transmitter and a dashboard camera that contain surveillance chips manufactured by Huawei subsidiary HiSilicon. The devices were identified as part of a broader effort to restrict the use of Chinese-made hardware in critical security applications, citing national security concerns. The ban applies to all U.S. importers and distributors.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Record",
+    "publishedAt": "2026-10-23T17:28:00.000Z",
+    "url": "https://therecord.media/fcc-bans-devices-huawei-surveillance-chips",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.darkreading.com/cybersecurity-operations/ai-tools-massive-attacks-little-cost",
     "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/ai-tools-massive-attacks-little-cost",
     "title": "AI‑Generated Attack Campaigns Target Hundreds of Sites",
@@ -172,24 +235,10 @@
       {
         "source": "The Record",
         "sourceUrl": "https://therecord.media/quest-diagnostics-network-intrusion"
-      }
-    ]
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/",
-    "title": "PHP Shares Mitigation for Unpatched RCE Vulnerability (CVE-2026-115560)",
-    "headline": "PHP Shares Mitigation for Unpatched RCE Vulnerability (CVE-2026-115560)",
-    "summary": "The PHP security team shared mitigation guidance for an unpatched remote code execution vulnerability (CVE-2026-115560) affecting non-default configurations where session upload progress is enabled and the serializer is switched dynamically. With public exploit code circulating, administrators should disable session upload progress or avoid dynamic handler switches until an official patch is released.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-23T15:38:05.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/",
-    "additionalSources": [
+      },
       {
-        "source": "Schneier on Security",
-        "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/new-serious-php-vulnerabilities-released-and-patched.html"
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/capcom-confirmed-customer-records-exposed/"
       }
     ]
   },
@@ -217,6 +266,27 @@
     "source": "Cyber Security News",
     "publishedAt": "2026-10-23T15:19:23.000Z",
     "url": "https://cybersecuritynews.com/okta-access-gateway-flaw/",
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/hackers-exploiting-velocloud-orchestrator-flaw/"
+      }
+    ],
+    "cves": [
+      "CVE-2026-115547"
+    ]
+  },
+  {
+    "id": "https://cybersecuritynews.com/hpe-warns-aruba-networking-flaws/",
+    "sourceUrl": "https://cybersecuritynews.com/hpe-warns-aruba-networking-flaws/",
+    "title": "HPE Aruba Networking Flaws Enable Full Device Takeover",
+    "headline": "HPE Aruba Networking Flaws Enable Full Device Takeover",
+    "summary": "Hewlett Packard Enterprise disclosed critical vulnerabilities in Aruba Networking AOS-8 and AOS-10 that allow attackers to gain full control of Mobility Conductors, Controllers, Gateways, and access points without authentication. The flaws enable remote code execution and compromise network infrastructure, posing a high‑risk threat to enterprise deployments. HPE has released patches; administrators must apply them immediately to mitigate the risk.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-23T14:53:59.000Z",
+    "url": "https://cybersecuritynews.com/hpe-warns-aruba-networking-flaws/",
     "additionalSources": []
   },
   {
@@ -253,6 +323,31 @@
         "source": "The Record",
         "sourceUrl": "https://therecord.media/south-carolina-officials-offer-assistance-cyber-incident"
       }
+    ]
+  },
+  {
+    "id": "https://cybersecuritynews.com/new-node2shell-node-js-rce-exploit/",
+    "sourceUrl": "https://cybersecuritynews.com/new-node2shell-node-js-rce-exploit/",
+    "title": "CVE‑2026‑111497: Node.js Brotli Decoder Remote Code Execution (CVE-2026-76466)",
+    "headline": "CVE‑2026‑111497: Node.js Brotli Decoder Remote Code Execution (CVE-2026-76466)",
+    "summary": "CVE‑2026‑111497 is a high‑severity memory flaw in Node.js’s Brotli decoder that allows attackers to execute arbitrary code via Brotli‑compressed data. The flaw enables unauthenticated remote code execution, and researchers have released a proof‑of‑concept exploit demonstrating its full impact. Node.js has issued a security advisory and released a patch; administrators should update to the latest version to mitigate the risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-23T14:11:40.000Z",
+    "url": "https://cybersecuritynews.com/new-node2shell-node-js-rce-exploit/",
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/critical-cisco-expressway-vulnerability/"
+      },
+      {
+        "source": "CISA",
+        "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-04"
+      }
+    ],
+    "cves": [
+      "CVE-2026-76466"
     ]
   },
   {
@@ -300,16 +395,16 @@
     "additionalSources": []
   },
   {
-    "id": "https://isc.sans.edu/diary/rss/33450",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33450",
-    "title": "PHP Vulnerability Exploits Core Parsing Engine",
-    "headline": "PHP Vulnerability Exploits Core Parsing Engine",
-    "summary": "A recent PHP vulnerability exploits an undisclosed flaw in the language’s core parsing engine, allowing attackers to execute arbitrary code via crafted input on affected web servers. The flaw can compromise any PHP-based application without authentication, leading to full system takeover. A vendor patch is available; administrators should upgrade PHP to the latest stable release immediately.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "SANS Internet Storm Center",
-    "publishedAt": "2026-10-23T13:43:20.000Z",
-    "url": "https://isc.sans.edu/diary/rss/33450",
+    "id": "https://cybersecuritynews.com/stealc-malware/",
+    "sourceUrl": "https://cybersecuritynews.com/stealc-malware/",
+    "title": "StealC Returns with Stadia RAT for Password Theft and Remote Control",
+    "headline": "StealC Returns with Stadia RAT for Password Theft and Remote Control",
+    "summary": "The StealC operator has reintroduced its malware as Stadia, a Windows remote access trojan that steals passwords and secretly controls victim PCs. The RAT expands beyond credential theft, allowing attackers to execute commands, browse files, manage processes, and load additional malicious payloads. Security teams should monitor for unusual remote control activity and apply endpoint protection updates.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-23T13:40:19.000Z",
+    "url": "https://cybersecuritynews.com/stealc-malware/",
     "additionalSources": []
   },
   {
@@ -336,7 +431,12 @@
     "source": "The Record",
     "publishedAt": "2026-10-23T13:26:00.000Z",
     "url": "https://therecord.media/uk-undersea-cables-sabotage-new-sentencing-guidelines",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/23/uk-undersea-cable-sabotage-sentences/"
+      }
+    ]
   },
   {
     "id": "https://www.malwarebytes.com/blog/data-breaches/2026/10/resident-evil-maker-capcom-warns-of-phishing-after-11-7-million-records-exposed",
@@ -537,28 +637,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://cybersecuritynews.com/critical-cisco-expressway-vulnerability/",
-    "sourceUrl": "https://cybersecuritynews.com/critical-cisco-expressway-vulnerability/",
-    "title": "Critical Cisco Expressway Vulnerability Enables Remote Code Execution Attacks",
-    "headline": "Critical Cisco Expressway Vulnerability Enables Remote Code Execution Attacks",
-    "summary": "A critical flaw in Cisco Expressway allows remote attackers to execute operating system commands as root on devices configured in a cluster. Tracked as CVE-2026-76466, the vulnerability carries a CVSS score of 9.8, is publicly documented, and can be exploited without authentication. Cisco released a patch on October 21, 2026; apply it immediately or disable exposed services as a workaround.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-23T04:47:50.000Z",
-    "url": "https://cybersecuritynews.com/critical-cisco-expressway-vulnerability/",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/tech-and-security-companies-respond-to-php2shell-vulnerabilities/"
-      },
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/php2shell-vulnerability-fortinet-cisco-palo-alto-networks/"
-      }
-    ]
-  },
-  {
     "id": "https://www.helpnetsecurity.com/2026/10/23/barracuda-cybersecurity-career-development-report/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/23/barracuda-cybersecurity-career-development-report/",
     "title": "AI Adoption Drives Cybersecurity Workforce Reductions",
@@ -590,19 +668,6 @@
     ]
   },
   {
-    "id": "https://therecord.media/php-php2shell-exploitation-attempts-pocs",
-    "sourceUrl": "https://therecord.media/php-php2shell-exploitation-attempts-pocs",
-    "title": "PHP2Shell Bugs Expose Input Validation Flaw in PHP",
-    "headline": "PHP2Shell Bugs Expose Input Validation Flaw in PHP",
-    "summary": "The PHP2Shell bugs expose a critical input validation flaw in PHP, allowing attackers to execute arbitrary code via crafted HTTP requests. Public proof‑of‑concepts exist, but the flaw needs authenticated access and is not yet confirmed active in the wild. Security teams should apply the latest PHP security patches and enable strict input sanitization to mitigate potential exploitation.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "publishedAt": "2026-10-23T04:00:00.000Z",
-    "url": "https://therecord.media/php-php2shell-exploitation-attempts-pocs",
-    "additionalSources": []
-  },
-  {
     "id": "https://www.darkreading.com/cyberattacks-data-breaches/state-bank-india-customer-pii-data-leak",
     "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/state-bank-india-customer-pii-data-leak",
     "title": "State Bank of India Suffers a Customer PII Data Leak",
@@ -630,6 +695,14 @@
       {
         "source": "The Hacker News",
         "sourceUrl": "https://thehackernews.com/2026/10/two-cvss-90-linux-ksmbd-rce-flaws.html"
+      },
+      {
+        "source": "CISA",
+        "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-11"
+      },
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/linus-torvalds-use-claude-code-patches/"
       }
     ]
   },
@@ -722,24 +795,6 @@
     ]
   },
   {
-    "id": "https://blog.talosintelligence.com/i-had-plans-for-that-second/",
-    "sourceUrl": "https://blog.talosintelligence.com/i-had-plans-for-that-second/",
-    "title": "Critical PHP Vulnerability Disclosed",
-    "headline": "Critical PHP Vulnerability Disclosed",
-    "summary": "A critical vulnerability in PHP was disclosed, affecting web applications that rely on the language. The flaw allows attackers to execute arbitrary code through malformed input, with a CVSS score of 9.2, and is actively exploited in the wild. Arbitrary patches are available from the PHP development team; administrators should apply the latest release and enforce input validation to mitigate the risk.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "Cisco Talos",
-    "publishedAt": "2026-10-22T18:04:32.000Z",
-    "url": "https://blog.talosintelligence.com/i-had-plans-for-that-second/",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/threatsday-ai-secrets-leak-pingcap.html"
-      }
-    ]
-  },
-  {
     "id": "https://unit42.paloaltonetworks.com/current-landscape-oauth-attacks/",
     "sourceUrl": "https://unit42.paloaltonetworks.com/current-landscape-oauth-attacks/",
     "title": "Unit 42 Explores Contemporary OAuth Attack Landscape",
@@ -771,36 +826,6 @@
       {
         "source": "The Hacker News",
         "sourceUrl": "https://thehackernews.com/2026/10/meta-ordered-to-pay-25-billion-after.html"
-      }
-    ]
-  },
-  {
-    "id": "https://cybersecuritynews.com/gcore-makes-enterprise-security-bundle-free-for-public-agencies-until-end-of-the-year/",
-    "sourceUrl": "https://cybersecuritynews.com/gcore-makes-enterprise-security-bundle-free-for-public-agencies-until-end-of-the-year/",
-    "title": "Gcore Blocks php2shell Vulnerabilities with Free WAAP Plan for Public Agencies",
-    "headline": "Gcore Blocks php2shell Vulnerabilities with Free WAAP Plan for Public Agencies",
-    "summary": "A recent php2shell vulnerability, identified as CVE-2026-109618 and CVE-2026-109619, has forced public websites offline across Europe. Gcore’s WAAP Enterprise plan blocks the php2shell attack path by default, mitigating unauthenticated remote code execution that could compromise web servers. The vendor has released a free subscription for government bodies until December 31, 2026, ensuring continued protection.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-22T16:12:01.000Z",
-    "url": "https://cybersecuritynews.com/gcore-makes-enterprise-security-bundle-free-for-public-agencies-until-end-of-the-year/",
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/php2shell-how-to-detect-mitigate-critical-php-rce-flaws"
-      },
-      {
-        "source": "SentinelOne",
-        "sourceUrl": "https://www.sentinelone.com/blog/stopping-php2shell-how-sentinelone-protects-customers-from-this-attack-technique/"
-      },
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/php2shell-scanner-tool/"
-      },
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/critical-php-vulnerabilities/"
       }
     ]
   },
@@ -898,24 +923,6 @@
       {
         "source": "The Record",
         "sourceUrl": "https://therecord.media/africa-cybercrime-interpol-arrests"
-      }
-    ]
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/amazon-says-php2shell-exploitation-began-4-days-before-patches/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/amazon-says-php2shell-exploitation-began-4-days-before-patches/",
-    "title": "Amazon Says PHP2Shell Exploitation Began 4 Days Before Patches",
-    "headline": "Amazon Says PHP2Shell Exploitation Began 4 Days Before Patches",
-    "summary": "Amazon discovered that attackers exploited the PHP2Shell vulnerability four days before patches were released, targeting the web application layer. The flaw allows unauthenticated remote code execution via crafted PHP scripts, and active exploitation was observed in the wild, causing unauthorized access to customer data. Amazon has issued a patch and recommends immediate application of the update to all affected instances.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-22T13:09:12.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/amazon-says-php2shell-exploitation-began-4-days-before-patches/",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/php2shell-exploitation-started-days-before-patches/"
       }
     ]
   },
@@ -1033,42 +1040,6 @@
     "publishedAt": "2026-10-22T12:00:00.000Z",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-18",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-11",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-11",
-    "title": "Siemens SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP Firmware Vulnerabilities",
-    "headline": "Siemens SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP Firmware Vulnerabilities",
-    "summary": "Multiple vulnerabilities in the GNU/Linux subsystem of Siemens SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP firmware V3.1.7 allow attackers to gain elevated privileges on the device. The flaw, rated CVSS 10, is a critical flaw that could enable remote code execution if exploited. Siemens has released firmware updates for affected models and recommends applying the patch or following the vendor’s mitigations.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "CISA",
-    "publishedAt": "2026-10-22T12:00:00.000Z",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-11",
-    "additionalSources": [
-      {
-        "source": "CISA",
-        "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-10"
-      }
-    ]
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-04",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-04",
-    "title": "Siemens Capital Embedded AR Classic Out‑of‑Bounds Read Vulnerability (CVE‑2026‑89208)",
-    "headline": "Siemens Capital Embedded AR Classic Out‑of‑Bounds Read Vulnerability (CVE‑2026‑89208)",
-    "summary": "An out‑of‑bounds read flaw in Siemens Capital Embedded AR Classic versions 431‑422 and R20‑11 could trigger abnormal behavior, instability, or denial of service. The vulnerability, CVE‑2026‑89208, scores CVSS 5.3 and is exploitable via local or remote access to the affected devices. Siemens has released R20‑11‑11 and recommends applying the latest firmware or implementing vendor‑specified countermeasures for unsupported versions.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CISA",
-    "publishedAt": "2026-10-22T12:00:00.000Z",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-04",
-    "additionalSources": [
-      {
-        "source": "CISA",
-        "sourceUrl": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-295-01"
-      }
-    ]
   },
   {
     "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-13",
@@ -1379,24 +1350,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://therecord.media/php-foundation-statement-critical-vulnerabilities",
-    "sourceUrl": "https://therecord.media/php-foundation-statement-critical-vulnerabilities",
-    "title": "PHP Foundation Discloses Two Critical Vulnerabilities Amid AI Review",
-    "headline": "PHP Foundation Discloses Two Critical Vulnerabilities Amid AI Review",
-    "summary": "PHP Foundation disclosed two critical vulnerabilities discovered in 2024, with a third‑party AI review amplifying scrutiny. The flaws enable unauthenticated remote code execution via malformed input, yet no public exploit has been reported. PHP has released patches for both bugs; administrators should apply updates immediately and monitor logs for anomalous activity.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "The Record",
-    "publishedAt": "2026-10-21T17:30:00.000Z",
-    "url": "https://therecord.media/php-foundation-statement-critical-vulnerabilities",
-    "additionalSources": [
-      {
-        "source": "Cisco Talos",
-        "sourceUrl": "https://blog.talosintelligence.com/two-critical-rces-in-php-core/"
-      }
-    ]
-  },
-  {
     "id": "https://cybersecuritynews.com/arrakis-security-report-finds-76-of-ai-agents-are-dormant-but-keep-their-credentials-and-connections/",
     "sourceUrl": "https://cybersecuritynews.com/arrakis-security-report-finds-76-of-ai-agents-are-dormant-but-keep-their-credentials-and-connections/",
     "title": "Arrakis Security Report Reveals Dormant AI Agents Retain Valid Credentials",
@@ -1438,19 +1391,6 @@
     "source": "Dark Reading",
     "publishedAt": "2026-10-21T16:50:15.000Z",
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/ovhcloud-github-compromise-glassworm-threat-actors",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/node-js-releases-security-updates/",
-    "sourceUrl": "https://cybersecuritynews.com/node-js-releases-security-updates/",
-    "title": "Node.js Releases Security Updates for High-Severity TLS, DNS, and Brotli Vulnerabilities",
-    "headline": "Node.js Releases Security Updates for High-Severity TLS, DNS, and Brotli Vulnerabilities",
-    "summary": "Node.js released updates for its 26.x, 24.x, and 22.x branches to patch ten vulnerabilities, including high‑severity flaws in DNS lookups, TLS certificate validation, and Brotli decompression. The most critical flaw enables remote code execution via the Brotli decoder, exposing servers to arbitrary code execution. Users must upgrade to 26.12.1, 24.22.1, or 22.23.4 and apply vendor patches immediately.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-21T16:33:58.000Z",
-    "url": "https://cybersecuritynews.com/node-js-releases-security-updates/",
     "additionalSources": []
   },
   {
@@ -1498,19 +1438,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/",
-    "sourceUrl": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/",
-    "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
-    "headline": "Widespread PHP Flaw May Cause Many Site Outages Today",
-    "summary": "A widespread PHP flaw lets attackers seize full control over servers that have not updated core software. The vulnerabilities enable remote code execution via crafted requests, and active exploits are already in the wild, causing frequent 404 errors. Site owners must immediately apply PHP security patches, disable vulnerable functions, and monitor logs for anomalous activity.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Krebs on Security",
-    "publishedAt": "2026-10-21T15:26:07.000Z",
-    "url": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/",
-    "additionalSources": []
-  },
-  {
     "id": "https://www.securityweek.com/context-bombs-cut-ai-attack-success-by-misleading-agents-with-fake-targets/",
     "sourceUrl": "https://www.securityweek.com/context-bombs-cut-ai-attack-success-by-misleading-agents-with-fake-targets/",
     "title": "Context Bombs Reduce AI Attack Success by 91%",
@@ -1521,19 +1448,6 @@
     "source": "SecurityWeek",
     "publishedAt": "2026-10-21T15:00:00.000Z",
     "url": "https://www.securityweek.com/context-bombs-cut-ai-attack-success-by-misleading-agents-with-fake-targets/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/php-script-vulnerabilities-warnings",
-    "sourceUrl": "https://therecord.media/php-script-vulnerabilities-warnings",
-    "title": "PHP Vulnerabilities Prompt Global Patch Release",
-    "headline": "PHP Vulnerabilities Prompt Global Patch Release",
-    "summary": "Two severe PHP vulnerabilities were disclosed, affecting the widely used scripting language and compromising web applications via remote code execution. The flaws allowed unauthenticated attackers to execute arbitrary code, leading to widespread site outages and data exposure. Patches have been issued; administrators must apply the latest PHP updates immediately to mitigate exploitation.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "The Record",
-    "publishedAt": "2026-10-21T14:17:00.000Z",
-    "url": "https://therecord.media/php-script-vulnerabilities-warnings",
     "additionalSources": []
   },
   {
@@ -1939,24 +1853,6 @@
     "publishedAt": "2026-10-21T04:22:11.000Z",
     "url": "https://www.securityweek.com/accenture-dragos-sans-launch-10m-initiative-to-defend-small-us-utilities/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/21/php-security-release-announcement-october-2026/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/21/php-security-release-announcement-october-2026/",
-    "title": "PHP Issues Critical Security Release for All Versions",
-    "headline": "PHP Issues Critical Security Release for All Versions",
-    "summary": "A PHP security release scheduled for 21 October 2026 addresses two critical vulnerabilities affecting all PHP installations. Both flaws carry a CVSS v4.0 score of 9.2, indicating high exploitation potential, though specific vectors remain undisclosed. Administrators should assume all PHP versions are vulnerable until the patch is released and apply the update immediately once available.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-21T04:21:54.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/21/php-security-release-announcement-october-2026/",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/php-warns-admins-of-two-critical-flaws-emergency-patches-coming-tomorrow/"
-      }
-    ]
   },
   {
     "id": "https://www.bleepingcomputer.com/news/security/stolen-updraftcentral-keys-used-to-backdoor-wordpress-sites/",
@@ -2613,15 +2509,23 @@
   {
     "id": "https://www.bleepingcomputer.com/news/security/f5-releases-out-of-band-patches-for-critical-nginx-vulnerabilities/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/f5-releases-out-of-band-patches-for-critical-nginx-vulnerabilities/",
-    "title": "F5 Releases Out‑of‑Band Patches for Critical NGINX Vulnerabilities",
-    "headline": "F5 Releases Out‑of‑Band Patches for Critical NGINX Vulnerabilities",
+    "title": "F5 Releases Out‑of‑Band Patches for Critical NGINX Vulnerabilities (CVE-2026-107336)",
+    "headline": "F5 Releases Out‑of‑Band Patches for Critical NGINX Vulnerabilities (CVE-2026-107336)",
     "summary": "F5 has issued out‑of‑band security patches addressing multiple critical‑severity flaws in the NGINX web server that could allow remote code execution. The patches mitigate three vulnerabilities that enable attackers to execute arbitrary code on vulnerable systems. Users should apply the updates immediately to prevent exploitation.",
-    "category": "VULNERABILITY",
+    "category": "CVE",
     "severity": "HIGH",
     "source": "BleepingComputer",
     "publishedAt": "2026-10-19T13:49:24.000Z",
     "url": "https://www.bleepingcomputer.com/news/security/f5-releases-out-of-band-patches-for-critical-nginx-vulnerabilities/",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "CISA",
+        "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-280-01"
+      }
+    ],
+    "cves": [
+      "CVE-2026-107336"
+    ]
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/10/19/axonius-ai-workforce/",
@@ -3428,28 +3332,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://cybersecuritynews.com/linus-torvalds-use-claude-code-patches/",
-    "sourceUrl": "https://cybersecuritynews.com/linus-torvalds-use-claude-code-patches/",
-    "title": "Linus Torvalds Credits AI Tool for Linux Kernel Patches",
-    "headline": "Linus Torvalds Credits AI Tool for Linux Kernel Patches",
-    "summary": "Linus Torvalds disclosed that the AI coding tool Claude Code assisted in writing Linux kernel patches and test programs focused on page‑cache read performance. The collaboration demonstrates AI’s role in core operating‑system development and highlights the limits of automated code generation.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-16T04:07:53.000Z",
-    "url": "https://cybersecuritynews.com/linus-torvalds-use-claude-code-patches/",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/linux-kernel-flaw-2/"
-      },
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/critical-pwnescape-linux-kernel.html"
-      }
-    ]
-  },
-  {
     "id": "https://www.helpnetsecurity.com/2026/10/16/new-infosec-products-of-the-week-october-16-2026/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/16/new-infosec-products-of-the-week-october-16-2026/",
     "title": "New infosec products of the week: October 16, 2026",
@@ -3783,19 +3665,6 @@
     "source": "CISA",
     "publishedAt": "2026-10-15T12:00:00.000Z",
     "url": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-288-02",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-280-01",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-280-01",
-    "title": "CISA Malcolm Vulnerability CVE-2026-107336 Exposes Authentication Bypass and SSRF",
-    "headline": "CISA Malcolm Vulnerability CVE-2026-107336 Exposes Authentication Bypass and SSRF",
-    "summary": "CISA Malcolm versions are vulnerable to CVE-2026-107336, a high‑severity flaw with CVSS 8.1. The issue stems from a case‑insensitive regex matcher in the nginx reverse proxy that allows authentication bypass, SSRF, and CSRF attacks. Affected systems include energy, IT, water, and wastewater sectors worldwide. Mitigation requires patching to the latest Malcolm release.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CISA",
-    "publishedAt": "2026-10-15T12:00:00.000Z",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-280-01",
     "additionalSources": []
   },
   {
@@ -5048,15 +4917,23 @@
   {
     "id": "https://blog.cloudflare.com/transformers-on-logpush/",
     "sourceUrl": "https://blog.cloudflare.com/transformers-on-logpush/",
-    "title": "Cloudflare Enhances Logpush with SQL‑Based Transformers",
-    "headline": "Cloudflare Enhances Logpush with SQL‑Based Transformers",
+    "title": "Cloudflare Enhances Logpush with SQL‑Based Transformers (CVE-2016-3081)",
+    "headline": "Cloudflare Enhances Logpush with SQL‑Based Transformers (CVE-2016-3081)",
     "summary": "Cloudflare’s Logpush now supports Transformers, enabling teams to filter, redact, and reshape log streams using SQL before export. Powered by Apache DataFusion and Apache Arrow, Transformers apply changes directly to log data, ensuring only desired information reaches destinations. This feature improves data privacy and compliance during log export.",
-    "category": "GENERAL",
+    "category": "CVE",
     "severity": "LOW",
     "source": "Cloudflare Security",
     "publishedAt": "2026-10-12T14:44:59.000Z",
     "url": "https://blog.cloudflare.com/transformers-on-logpush/",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/apache-struts-vulnerability-exploited/"
+      }
+    ],
+    "cves": [
+      "CVE-2016-3081"
+    ]
   },
   {
     "id": "https://www.securityweek.com/ionq-to-acquire-zero-trust-firm-elisity-for-up-to-1-3-billion/",
@@ -5216,19 +5093,6 @@
         "sourceUrl": "https://www.helpnetsecurity.com/2026/10/12/lets-encrypt-64-day-certificate-lifetime/"
       }
     ]
-  },
-  {
-    "id": "https://cybersecuritynews.com/apache-struts-vulnerability-exploited/",
-    "sourceUrl": "https://cybersecuritynews.com/apache-struts-vulnerability-exploited/",
-    "title": "CISA Adds Apache Struts CVE-2016-3081 to Exploited Vulnerabilities Catalog",
-    "headline": "CISA Adds Apache Struts CVE-2016-3081 to Exploited Vulnerabilities Catalog",
-    "summary": "CISA confirmed attackers are exploiting Apache Struts command injection CVE-2016-3081, allowing remote code execution on vulnerable servers. The flaw permits attackers to run arbitrary commands via Dynamic Method Invocation. The vulnerability is actively used in real‑world attacks and requires no user interaction.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-12T07:43:09.000Z",
-    "url": "https://cybersecuritynews.com/apache-struts-vulnerability-exploited/",
-    "additionalSources": []
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/10/12/microsoft-windows-update-certificate-rotation/",
