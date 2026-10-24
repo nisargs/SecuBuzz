@@ -18,33 +18,55 @@ export function News() {
   const [page, setPage] = useState(1);
   const { news } = useLiveNews();
 
-  const categoryCounts = useMemo(() => {
-    const counts: Record<string, number> = {
-      All: news.length,
-    };
-    for (const b of news) {
-      if (b.category) {
-        counts[b.category] = (counts[b.category] || 0) + 1;
-      }
-    }
-    return counts;
-  }, [news]);
-
   const severityCounts = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    const candidateNews = news.filter((b) => {
+      if (filter !== 'All' && b.category !== filter) return false;
+      if (!q) return true;
+      return (
+        b.title.toLowerCase().includes(q) ||
+        b.summary.toLowerCase().includes(q) ||
+        b.cves.some((c) => c.toLowerCase().includes(q))
+      );
+    });
+
     const counts: Record<SeverityFilter, number> = {
-      ALL: news.length,
+      ALL: candidateNews.length,
       CRITICAL: 0,
       HIGH: 0,
       MEDIUM: 0,
       LOW: 0,
     };
-    for (const b of news) {
+    for (const b of candidateNews) {
       if (b.severity && counts[b.severity] !== undefined) {
         counts[b.severity]++;
       }
     }
     return counts;
-  }, [news]);
+  }, [news, filter, query]);
+
+  const categoryCounts = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    const candidateNews = news.filter((b) => {
+      if (severityFilter !== 'ALL' && b.severity !== severityFilter) return false;
+      if (!q) return true;
+      return (
+        b.title.toLowerCase().includes(q) ||
+        b.summary.toLowerCase().includes(q) ||
+        b.cves.some((c) => c.toLowerCase().includes(q))
+      );
+    });
+
+    const counts: Record<string, number> = {
+      All: candidateNews.length,
+    };
+    for (const b of candidateNews) {
+      if (b.category) {
+        counts[b.category] = (counts[b.category] || 0) + 1;
+      }
+    }
+    return counts;
+  }, [news, severityFilter, query]);
 
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();

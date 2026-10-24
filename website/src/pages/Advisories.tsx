@@ -7,6 +7,7 @@ import { useLiveAdvisories } from '../data/useLiveAdvisories';
 import { daysUntil } from '../utils/date';
 import { getCvssSeverity } from '../utils/advisory';
 import { Seo } from '../components/Seo';
+import type { Advisory } from '../types/advisory';
 
 type AdvisorySourceFilter = 'ALL' | 'CISA' | 'GITHUB';
 type AdvisorySeverityFilter = 'ALL' | 'CRITICAL' | 'HIGH' | 'RANSOMWARE';
@@ -48,59 +49,65 @@ export function Advisories() {
       .sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }));
   }, [advisories]);
 
-  // Telemetry counts matching mobile app 1:1
-  const cisaCount = useMemo(
-    () => advisories.filter((a) => a.source === 'CISA KEV' || a.dueDate || a.references?.some(r => r.label.includes('CISA'))).length,
-    [advisories]
-  );
-  const githubCount = useMemo(
-    () => advisories.filter((a) => a.source === 'GITHUB' || (!a.dueDate && a.references?.some(r => r.label.includes('GitHub')))).length,
-    [advisories]
-  );
-  const ransomwareCount = useMemo(
-    () => advisories.filter((a) => a.ransomware).length,
-    [advisories]
-  );
-  const criticalCount = useMemo(
-    () => advisories.filter((a) => getCvssSeverity(a.cvss, a.severity).toUpperCase() === 'CRITICAL').length,
-    [advisories]
-  );
-  const highCount = useMemo(
-    () => advisories.filter((a) => getCvssSeverity(a.cvss, a.severity).toUpperCase() === 'HIGH').length,
-    [advisories]
-  );
+  const isCisa = (a: Advisory) =>
+    a.source === 'CISA KEV' || !!a.dueDate || !!a.references?.some((r: { label: string; url: string }) => r.label.includes('CISA'));
+
+  const isGithub = (a: Advisory) =>
+    a.source === 'GITHUB' || (!a.dueDate && !!a.references?.some((r: { label: string; url: string }) => r.label.includes('GitHub')));
+
+  const matchesSource = (a: Advisory, source: AdvisorySourceFilter) => {
+    if (source === 'CISA') return isCisa(a);
+    if (source === 'GITHUB') return isGithub(a);
+    return true;
+  };
+
+  const matchesSeverity = (a: Advisory, severity: AdvisorySeverityFilter) => {
+    if (severity === 'RANSOMWARE') return !!a.ransomware;
+    if (severity === 'CRITICAL') return getCvssSeverity(a.cvss, a.severity).toUpperCase() === 'CRITICAL';
+    if (severity === 'HIGH') return getCvssSeverity(a.cvss, a.severity).toUpperCase() === 'HIGH';
+    return true;
+  };
+
+  const matchesBase = (a: Advisory, q: string) => {
+    if (dueThisWeekOnly) {
+      const d = daysUntil(a.dueDate);
+      if (d < 0 || d > 7) return false;
+    }
+    if (vendorFilter !== 'ALL' && a.vendor.toLowerCase() !== vendorFilter.toLowerCase()) {
+      return false;
+    }
+    if (!q) return true;
+    return [a.cve, a.vendor, a.product, a.name, a.description].some((v) =>
+      (v || '').toLowerCase().includes(q)
+    );
+  };
+
+  // Telemetry counts matching mobile app 1:1 (faceted counts)
+  const severityCounts = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    const candidate = advisories.filter((a) => matchesBase(a, q) && matchesSource(a, sourceFilter));
+    return {
+      all: candidate.length,
+      critical: candidate.filter((a) => matchesSeverity(a, 'CRITICAL')).length,
+      high: candidate.filter((a) => matchesSeverity(a, 'HIGH')).length,
+      ransomware: candidate.filter((a) => matchesSeverity(a, 'RANSOMWARE')).length,
+    };
+  }, [advisories, sourceFilter, vendorFilter, dueThisWeekOnly, query]);
+
+  const sourceCounts = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    const candidate = advisories.filter((a) => matchesBase(a, q) && matchesSeverity(a, severityFilter));
+    return {
+      all: candidate.length,
+      cisa: candidate.filter((a) => matchesSource(a, 'CISA')).length,
+      github: candidate.filter((a) => matchesSource(a, 'GITHUB')).length,
+    };
+  }, [advisories, severityFilter, vendorFilter, dueThisWeekOnly, query]);
 
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
     return advisories
-      .filter((a) => {
-        if (sourceFilter === 'CISA') {
-          return a.source === 'CISA KEV' || a.dueDate || a.references?.some(r => r.label.includes('CISA'));
-        }
-        if (sourceFilter === 'GITHUB') {
-          return a.source === 'GITHUB' || (!a.dueDate && a.references?.some(r => r.label.includes('GitHub')));
-        }
-        return true;
-      })
-      .filter((a) => {
-        if (severityFilter === 'RANSOMWARE') return a.ransomware;
-        if (severityFilter === 'CRITICAL') return getCvssSeverity(a.cvss, a.severity).toUpperCase() === 'CRITICAL';
-        if (severityFilter === 'HIGH') return getCvssSeverity(a.cvss, a.severity).toUpperCase() === 'HIGH';
-        return true;
-      })
-      .filter((a) => {
-        if (!dueThisWeekOnly) return true;
-        const d = daysUntil(a.dueDate);
-        return d >= 0 && d <= 7;
-      })
-      .filter((a) => (vendorFilter === 'ALL' ? true : a.vendor.toLowerCase() === vendorFilter.toLowerCase()))
-      .filter((a) =>
-        q
-          ? [a.cve, a.vendor, a.product, a.name, a.description].some((v) =>
-              (v || '').toLowerCase().includes(q)
-            )
-          : true
-      )
+      .filter((a) => matchesBase(a, q) && matchesSource(a, sourceFilter) && matchesSeverity(a, severityFilter))
       .sort((a, b) =>
         sort === 'added' ? b.dateAdded.localeCompare(a.dateAdded) : a.dueDate.localeCompare(b.dueDate)
       );
@@ -241,7 +248,7 @@ export function Advisories() {
                   ? 'bg-raised font-medium text-accent border border-accent/40'
                   : 'text-muted hover:text-accent hover:bg-surface border border-line'
               }`}>
-              All ({advisories.length})
+              All ({severityCounts.all})
             </button>
             <button
               type="button"
@@ -255,7 +262,7 @@ export function Advisories() {
                   : 'text-muted hover:text-critical hover:bg-surface border border-line'
               }`}>
               <span className="h-2 w-2 rounded-full bg-critical" />
-              Critical ({criticalCount})
+              Critical ({severityCounts.critical})
             </button>
             <button
               type="button"
@@ -269,7 +276,7 @@ export function Advisories() {
                   : 'text-muted hover:text-amber-500 hover:bg-surface border border-line'
               }`}>
               <span className="h-2 w-2 rounded-full bg-amber-500" />
-              High ({highCount})
+              High ({severityCounts.high})
             </button>
             <button
               type="button"
@@ -283,7 +290,7 @@ export function Advisories() {
                   : 'text-muted hover:text-amber-400 hover:bg-surface border border-line'
               }`}>
               <span>💀</span>
-              Ransomware ({ransomwareCount})
+              Ransomware ({severityCounts.ransomware})
             </button>
           </div>
 
@@ -303,7 +310,7 @@ export function Advisories() {
                   ? 'bg-raised font-medium text-accent border border-accent/40'
                   : 'text-muted hover:text-accent hover:bg-surface border border-line'
               }`}>
-              All Sources ({advisories.length})
+              All Sources ({sourceCounts.all})
             </button>
             <button
               type="button"
@@ -317,7 +324,7 @@ export function Advisories() {
                   : 'text-muted hover:text-accent hover:bg-surface border border-line'
               }`}>
               <span>🛡️</span>
-              CISA KEV Zero-Days ({cisaCount})
+              CISA KEV Zero-Days ({sourceCounts.cisa})
             </button>
             <button
               type="button"
@@ -331,7 +338,7 @@ export function Advisories() {
                   : 'text-muted hover:text-accent hover:bg-surface border border-line'
               }`}>
               <span>&lt;&gt;</span>
-              GitHub Ecosystem ({githubCount})
+              GitHub Ecosystem ({sourceCounts.github})
             </button>
           </div>
 

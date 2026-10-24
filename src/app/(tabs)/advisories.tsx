@@ -257,15 +257,67 @@ export default function AdvisoriesScreen() {
     }
   }, [advisories, loadAdvisories, triggerUpToDateBanner]);
 
-  // Counts for filters
+  const matchesSource = (item: CveAdvisory, source: AdvisorySourceFilter) => {
+    if (source === 'CISA') return item.source === 'CISA KEV';
+    if (source === 'GITHUB') return item.source === 'GITHUB';
+    return true;
+  };
+
+  const matchesSeverity = (item: CveAdvisory, severity: AdvisorySeverityFilter) => {
+    if (severity === 'RANSOMWARE') {
+      return item.knownRansomwareCampaignUse?.toLowerCase() === 'known';
+    }
+    if (severity === 'CRITICAL') return item.severity === 'CRITICAL';
+    if (severity === 'HIGH') return item.severity === 'HIGH';
+    return true;
+  };
+
+  const matchesEpss = (item: CveAdvisory, epss: AdvisoryEpssFilter) => {
+    if (epss === 'CRITICAL_90') {
+      return (item.epssPercentile ?? getEpssPercentile(item.cveID) ?? 0) >= 0.90;
+    }
+    if (epss === 'HIGH_50') {
+      return (item.epssPercentile ?? getEpssPercentile(item.cveID) ?? 0) >= 0.50;
+    }
+    if (epss === 'LOW_50') {
+      const p = item.epssPercentile ?? getEpssPercentile(item.cveID);
+      return p !== undefined && p < 0.50;
+    }
+    return true;
+  };
+
+  const matchesSearch = (item: CveAdvisory, query: string) => {
+    if (!query) return true;
+    const text = [
+      item.cveID,
+      item.vendorProject,
+      item.product,
+      item.vulnerabilityName,
+      item.shortDescription,
+      item.source,
+    ]
+      .join(' ')
+      .toLowerCase();
+    return text.includes(query);
+  };
+
+  // Faceted counts for filters
   const severityCounts = useMemo(() => {
+    const query = searchQuery.trim().toLowerCase();
+    const candidate = advisories.filter(
+      (item) =>
+        matchesSource(item, sourceFilter) &&
+        matchesEpss(item, epssFilter) &&
+        matchesSearch(item, query),
+    );
+
     const counts: Record<string, number> = {
-      ALL: advisories.length,
+      ALL: candidate.length,
       CRITICAL: 0,
       HIGH: 0,
       RANSOMWARE: 0,
     };
-    advisories.forEach((item) => {
+    candidate.forEach((item) => {
       if (item.knownRansomwareCampaignUse?.toLowerCase() === 'known') {
         counts.RANSOMWARE++;
       }
@@ -273,30 +325,46 @@ export default function AdvisoriesScreen() {
       if (item.severity === 'HIGH') counts.HIGH++;
     });
     return counts;
-  }, [advisories]);
+  }, [advisories, sourceFilter, epssFilter, searchQuery]);
 
   const sourceCounts = useMemo(() => {
+    const query = searchQuery.trim().toLowerCase();
+    const candidate = advisories.filter(
+      (item) =>
+        matchesSeverity(item, severityFilter) &&
+        matchesEpss(item, epssFilter) &&
+        matchesSearch(item, query),
+    );
+
     const counts: Record<string, number> = {
-      ALL: advisories.length,
+      ALL: candidate.length,
       CISA: 0,
       GITHUB: 0,
     };
-    advisories.forEach((item) => {
+    candidate.forEach((item) => {
       if (item.source === 'CISA KEV') counts.CISA++;
       if (item.source === 'GITHUB') counts.GITHUB++;
     });
     return counts;
-  }, [advisories]);
+  }, [advisories, severityFilter, epssFilter, searchQuery]);
 
   // EPSS likelihood counts
   const epssCounts = useMemo(() => {
+    const query = searchQuery.trim().toLowerCase();
+    const candidate = advisories.filter(
+      (item) =>
+        matchesSource(item, sourceFilter) &&
+        matchesSeverity(item, severityFilter) &&
+        matchesSearch(item, query),
+    );
+
     const counts: Record<string, number> = {
-      ALL: advisories.length,
+      ALL: candidate.length,
       CRITICAL_90: 0,
       HIGH_50: 0,
       LOW_50: 0,
     };
-    advisories.forEach((item) => {
+    candidate.forEach((item) => {
       const p = item.epssPercentile ?? getEpssPercentile(item.cveID);
       if (p !== undefined) {
         if (p >= 0.90) counts.CRITICAL_90++;
@@ -305,65 +373,18 @@ export default function AdvisoriesScreen() {
       }
     });
     return counts;
-  }, [advisories]);
+  }, [advisories, sourceFilter, severityFilter, searchQuery]);
 
   // Filtered Advisories
   const filteredAdvisories = useMemo(() => {
-    let result = advisories;
-
-    // Filter by Source
-    if (sourceFilter === 'CISA') {
-      result = result.filter((item) => item.source === 'CISA KEV');
-    } else if (sourceFilter === 'GITHUB') {
-      result = result.filter((item) => item.source === 'GITHUB');
-    }
-
-    // Filter by Severity
-    if (severityFilter === 'RANSOMWARE') {
-      result = result.filter(
-        (item) => item.knownRansomwareCampaignUse?.toLowerCase() === 'known',
-      );
-    } else if (severityFilter === 'CRITICAL') {
-      result = result.filter((item) => item.severity === 'CRITICAL');
-    } else if (severityFilter === 'HIGH') {
-      result = result.filter((item) => item.severity === 'HIGH');
-    }
-
-    // Filter by EPSS Exploit Likelihood
-    if (epssFilter === 'CRITICAL_90') {
-      result = result.filter(
-        (item) =>
-          (item.epssPercentile ?? getEpssPercentile(item.cveID) ?? 0) >= 0.90,
-      );
-    } else if (epssFilter === 'HIGH_50') {
-      result = result.filter(
-        (item) =>
-          (item.epssPercentile ?? getEpssPercentile(item.cveID) ?? 0) >= 0.50,
-      );
-    } else if (epssFilter === 'LOW_50') {
-      result = result.filter((item) => {
-        const p = item.epssPercentile ?? getEpssPercentile(item.cveID);
-        return p !== undefined && p < 0.50;
-      });
-    }
-
-    // Search query
     const query = searchQuery.trim().toLowerCase();
-    if (!query) return result;
-
-    return result.filter((item) => {
-      const text = [
-        item.cveID,
-        item.vendorProject,
-        item.product,
-        item.vulnerabilityName,
-        item.shortDescription,
-        item.source,
-      ]
-        .join(' ')
-        .toLowerCase();
-      return text.includes(query);
-    });
+    return advisories.filter(
+      (item) =>
+        matchesSource(item, sourceFilter) &&
+        matchesSeverity(item, severityFilter) &&
+        matchesEpss(item, epssFilter) &&
+        matchesSearch(item, query),
+    );
   }, [advisories, sourceFilter, severityFilter, epssFilter, searchQuery]);
 
   // Progressive batch loading

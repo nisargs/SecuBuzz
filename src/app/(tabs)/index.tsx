@@ -227,36 +227,68 @@ export default function FeedScreen() {
   }, [state]);
 
   /*
-   * Category and severity counts for filter badges.
+   * Category and severity counts for filter badges (faceted counts).
    */
   const severityCounts = useMemo(() => {
+    const query = searchQuery.trim().toLowerCase();
+    const candidateArticles = articles.filter((a) => {
+      if (filter !== 'ALL' && a.category !== filter) return false;
+      if (!query) return true;
+      const searchableText = [
+        a.headline,
+        a.summary,
+        a.sourceName,
+        a.category,
+        a.severity || '',
+      ]
+        .join(' ')
+        .toLowerCase();
+      return searchableText.includes(query);
+    });
+
     const counts: Record<string, number> = {
-      ALL: articles.length,
+      ALL: candidateArticles.length,
       CRITICAL: 0,
       HIGH: 0,
       MEDIUM: 0,
       LOW: 0,
     };
-    articles.forEach((a) => {
+    candidateArticles.forEach((a) => {
       if (a.severity && counts[a.severity] !== undefined) {
         counts[a.severity]++;
       }
     });
     return counts;
-  }, [articles]);
+  }, [articles, filter, searchQuery]);
 
   const categoryCounts = useMemo(() => {
-    const counts: Record<string, number> = { ALL: articles.length };
+    const query = searchQuery.trim().toLowerCase();
+    const candidateArticles = articles.filter((a) => {
+      if (severityFilter !== 'ALL' && a.severity !== severityFilter) return false;
+      if (!query) return true;
+      const searchableText = [
+        a.headline,
+        a.summary,
+        a.sourceName,
+        a.category,
+        a.severity || '',
+      ]
+        .join(' ')
+        .toLowerCase();
+      return searchableText.includes(query);
+    });
+
+    const counts: Record<string, number> = { ALL: candidateArticles.length };
     ARTICLE_CATEGORIES.forEach((c) => {
       counts[c] = 0;
     });
-    articles.forEach((a) => {
+    candidateArticles.forEach((a) => {
       if (counts[a.category] !== undefined) {
         counts[a.category]++;
       }
     });
     return counts;
-  }, [articles]);
+  }, [articles, severityFilter, searchQuery]);
 
   /*
    * Multi-dimensional filtering:

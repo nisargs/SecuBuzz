@@ -76,6 +76,10 @@
   - **100% Mobile & Web Taxonomy Parity**:
     - News Briefs: `Breach`, `Ransomware`, `CVE`, `Vulnerability`, `Nation State`, `General`. Threat Severities: `CRITICAL`, `HIGH`, `MEDIUM`, `LOW`.
     - Advisories: `Severity & Impact` (`All`, `Critical`, `High`, `Ransomware`), `Advisory Source` (`All Sources`, `CISA KEV Zero-Days`, `GitHub Ecosystem`).
+  - **Dynamic Faceted Filter Counting (Zero-Misleading UX Standard)**:
+    - Replaced static total counts inside filter chips with dynamic faceted counts across both web and mobile app.
+    - News: `Threat Severity` counts are dynamically scoped to the active `Category` and search query; `Category` counts are dynamically scoped to the active `Severity` and search query. (e.g. Selecting `CVE (18)` dynamically scopes `Critical` to `(9)`, not total 20).
+    - Advisories: `Severity & Impact` counts are dynamically scoped to active `Advisory Source`, vendor, due date, and search query; `Advisory Source` counts are dynamically scoped to active `Severity`, vendor, due date, and search query. (e.g. Selecting `GitHub Ecosystem (50)` dynamically scopes `Critical` to `(3)`, not total 364; selecting `Critical` dynamically scopes `GitHub Ecosystem` to `(3)` and `CISA KEV` to `(361)`).
 - **Previous Release v1.0.2 (Version Code 8):** Header brand unification and tactile haptic feedback.
 
 ## 7. Product Evolution & Post-Approval Roadmap (Claude + ChatGPT Synthesis)
