@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Oct 2026 21:26:04 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2026 21:41:32 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Brotli Decoder Memory Corruption Enables RCE in Node.js, Bun, Python, and Envoy</title>
@@ -44,6 +44,15 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>Critical PHP RCE Vulnerabilities Impact Cisco Products</title>
+      <link>https://secubuzz.com/news/critical-php-rce-vulnerabilities-impact-cisco-prod-52936c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/critical-php-rce-vulnerabilities-impact-cisco-prod-52936c</guid>
+      <description><![CDATA[Critical PHP vulnerabilities CVE-2026-109618 and CVE-2026-109619 enable remote code execution via out‑of‑memory corruption and stale global state in Cisco products. The flaws allow attackers to execute arbitrary code without authentication, posing a high‑risk threat to affected systems. Cisco has released patches; administrators should apply the updates immediately to mitigate exploitation.]]></description>
+      <pubDate>Fri, 23 Oct 2026 22:39:09 GMT</pubDate>
+      <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+PHP+Affecting+Cisco+Products%3A+October+2026%26vs_k%3D1">Cisco PSIRT</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Threat Actors Exploit Help Desk Interactions for Unauthorized Access (CVE-2026-115547)</title>
       <link>https://secubuzz.com/news/threat-actors-exploit-help-desk-interactions-for-u-41da77</link>
       <guid isPermaLink="true">https://secubuzz.com/news/threat-actors-exploit-help-desk-interactions-for-u-41da77</guid>
@@ -69,6 +78,33 @@
       <pubDate>Fri, 23 Oct 2026 20:04:47 GMT</pubDate>
       <source url="https://isc.sans.edu/diary/rss/33452">SANS Internet Storm Center</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Red Hat ca-certificates Update Addresses Critical Vulnerability</title>
+      <link>https://secubuzz.com/news/red-hat-ca-certificates-update-addresses-critical-37e4f4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-ca-certificates-update-addresses-critical-37e4f4</guid>
+      <description><![CDATA[Red Hat Enterprise Linux 7 Extended Lifecycle Support receives a critical security update for ca-certificates, addressing an unspecified vulnerability that could allow attackers to tamper with certificate validation. The flaw is rated with a high CVSS score and could enable man‑in‑the‑middle attacks or unauthorized access. Users must install the latest ca-certificates package to ensure secure certificate handling.]]></description>
+      <pubDate>Fri, 23 Oct 2026 19:53:37 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:88779">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Critical Update for ca-certificates on RHEL 9.2 SAP Solutions</title>
+      <link>https://secubuzz.com/news/red-hat-releases-critical-update-for-ca-certificat-37e4fc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-update-for-ca-certificat-37e4fc</guid>
+      <description><![CDATA[A critical security update for ca-certificates is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions, addressing multiple vulnerabilities with high CVSS scores. The update mitigates certificate validation flaws that could allow attackers to forge trust chains and intercept secure communications. Red Hat has released the patch; administrators should apply it immediately to maintain system integrity.]]></description>
+      <pubDate>Fri, 23 Oct 2026 19:43:28 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:88562">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>PHP2Shell Vulnerabilities Require Comprehensive Mitigation Beyond Simple Updates</title>
+      <link>https://secubuzz.com/news/php2shell-vulnerabilities-require-comprehensive-mi-795ba5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/php2shell-vulnerabilities-require-comprehensive-mi-795ba5</guid>
+      <description><![CDATA[The PHP2Shell vulnerability exposes critical PHP flaws that enable remote code execution through crafted input. Attackers can exploit these weaknesses by injecting malicious payloads, potentially compromising web applications and servers. Security teams should perform a thorough risk assessment, apply the latest PHP patches, and enforce input validation to mitigate exploitation.]]></description>
+      <pubDate>Fri, 23 Oct 2026 19:41:23 GMT</pubDate>
+      <source url="https://www.darkreading.com/application-security/exposed-php2shell-cyber-experts-advice">Dark Reading</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Microsoft Teams to Add AI‑Powered Phishing Detection</title>
@@ -134,6 +170,15 @@
       <category>Ransomware</category>
     </item>
     <item>
+      <title>CVE-2026-84942: Stored XSS via Vega Expression Bypass in OpenSearch Dashboards</title>
+      <link>https://secubuzz.com/news/cve-2026-84942-stored-xss-via-vega-expression-bypa-455a23</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-84942-stored-xss-via-vega-expression-bypa-455a23</guid>
+      <description><![CDATA[A stored cross‑site scripting vulnerability in OpenSearch Dashboards allows attackers to inject malicious Vega expressions that bypass input sanitization. CVE‑2026‑84942 exploits a parser logic bug, enabling unauthenticated script execution that can hijack user sessions. An official patch is available from Elastic; administrators should update OpenSearch Dashboards immediately and review input validation settings to mitigate exploitation.]]></description>
+      <pubDate>Fri, 23 Oct 2026 17:43:59 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-102-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>FCC Bans Two Devices Containing Huawei-Linked Surveillance Chips</title>
       <link>https://secubuzz.com/news/fcc-bans-two-devices-containing-huawei-linked-surv-4c7a3a</link>
       <guid isPermaLink="true">https://secubuzz.com/news/fcc-bans-two-devices-containing-huawei-linked-surv-4c7a3a</guid>
@@ -152,6 +197,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>PHP Discloses Two Critical‑Level RCE Flaws</title>
+      <link>https://secubuzz.com/news/php-discloses-two-critical-level-rce-flaws-5e83e1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/php-discloses-two-critical-level-rce-flaws-5e83e1</guid>
+      <description><![CDATA[PHP has disclosed two critical‑level remote code execution vulnerabilities that allow attackers to execute arbitrary code on affected servers. The flaws stem from improper input validation in the core engine, with public proof‑of‑concept exploits demonstrating full system compromise. Immediate application of the vendor‑issued patches and disabling remote execution features are mandatory to prevent exploitation.]]></description>
+      <pubDate>Fri, 23 Oct 2026 17:18:43 GMT</pubDate>
+      <source url="https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-43-8">SentinelOne</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Microsoft Announces End of Support for Windows Server 2016</title>
       <link>https://secubuzz.com/news/microsoft-announces-end-of-support-for-windows-ser-72cd91</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-announces-end-of-support-for-windows-ser-72cd91</guid>
@@ -168,6 +222,33 @@
       <pubDate>Fri, 23 Oct 2026 16:40:07 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/quest-diagnostics-confirms-data-breach-exposed-patient-records/">BleepingComputer</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Chrome Dev Channel Updated to 158.0.8117.2</title>
+      <link>https://secubuzz.com/news/chrome-dev-channel-updated-to-158-0-8117-2-62d7c1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-dev-channel-updated-to-158-0-8117-2-62d7c1</guid>
+      <description><![CDATA[Chrome Dev channel received update 158.0.8117.2 for Windows, macOS, and Linux, adding bug fixes and performance enhancements. No security flaw was disclosed, but the release addresses several stability issues reported in the Git log. Users should install the update through Chrome Update or switch channels, and report new problems via the bug filing system.]]></description>
+      <pubDate>Fri, 23 Oct 2026 16:28:33 GMT</pubDate>
+      <source url="http://chromereleases.googleblog.com/feeds/4602648838450212475/comments/default">Google Chrome Releases</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>eMudhra Intermediate CA Private Keys Compromised</title>
+      <link>https://secubuzz.com/news/emudhra-intermediate-ca-private-keys-compromised-710aae</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/emudhra-intermediate-ca-private-keys-compromised-710aae</guid>
+      <description><![CDATA[A critical compromise of eMudhra intermediate certificates was discovered, exposing eight private keys due to a key generation ceremony flaw that permits brute‑force acquisition within seconds. The flaw allows attackers to forge certificates for any domain, potentially enabling man‑in‑the‑middle attacks and undermining trust chains. Cisco recommends disabling affected CAs and applying vendor‑issued mitigations immediately.]]></description>
+      <pubDate>Fri, 23 Oct 2026 16:00:00 GMT</pubDate>
+      <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Informational+for+Emergency+Distrust+of+eMudhra+Root+and+Intermediate+Certificate+Authorities%26vs_k%3D1">Cisco PSIRT</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>PHP Releases Mitigation for CVE‑2026‑115560 RCE Vulnerability</title>
+      <link>https://secubuzz.com/news/php-releases-mitigation-for-cve-2026-115560-rce-vu-3e4da4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/php-releases-mitigation-for-cve-2026-115560-rce-vu-3e4da4</guid>
+      <description><![CDATA[PHP disclosed a new remote code execution vulnerability, CVE‑2026‑115560, impacting systems with non‑default configurations. The flaw permits arbitrary code execution, with no patch available and active exploitation status unknown. PHP recommends disabling vulnerable features, monitoring logs, and applying the forthcoming vendor patch as soon as it is released.]]></description>
+      <pubDate>Fri, 23 Oct 2026 15:38:05 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/">BleepingComputer</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>WhatsApp May Stop Working Without Registered SIM Under New Rules</title>
@@ -215,6 +296,24 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>CVE-2026-102208: Windows Win32 Kernel Subsystem Elevation of Privilege</title>
+      <link>https://secubuzz.com/news/cve-2026-102208-windows-win32-kernel-subsystem-ele-1ff9f1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-102208-windows-win32-kernel-subsystem-ele-1ff9f1</guid>
+      <description><![CDATA[CVE-2026-102208 is an elevation of privilege flaw in Windows Win32 Kernel Subsystem affecting all Windows versions. The flaw allows local attackers to gain SYSTEM privileges via malformed input, with CVSS 8.5, and a public PoC exists. Microsoft released a patch in the latest cumulative update; administrators should apply it immediately and enforce least privilege.]]></description>
+      <pubDate>Fri, 23 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102208">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>CVE‑2026‑83862: Windows Network Load Balancing RCE Exploit Adjusted CVSS</title>
+      <link>https://secubuzz.com/news/cve-2026-83862-windows-network-load-balancing-rce-7440de</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-83862-windows-network-load-balancing-rce-7440de</guid>
+      <description><![CDATA[CVE‑2026‑83862 is a Windows Network Load Balancing Remote Code Execution vulnerability with a CVSS base score of 8.8 after an attack vector adjustment to Adjacent. The flaw requires Layer 2 adjacency and allows authenticated attackers to execute arbitrary code on affected systems. Microsoft has released a patch; customers should install the update immediately to mitigate the risk.]]></description>
+      <pubDate>Fri, 23 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83862">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Caribbean Cyber Threats Amplify Global Risk</title>
       <link>https://secubuzz.com/news/caribbean-cyber-threats-amplify-global-risk-485ca9</link>
       <guid isPermaLink="true">https://secubuzz.com/news/caribbean-cyber-threats-amplify-global-risk-485ca9</guid>
@@ -222,6 +321,24 @@
       <pubDate>Fri, 23 Oct 2026 14:00:00 GMT</pubDate>
       <source url="https://www.darkreading.com/cyber-risk/why-caribbean-threats-cascade-global-cyber-risk">Dark Reading</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Enterprise Firewalls and VPNs Breached, 70,000 Credentials Exposed</title>
+      <link>https://secubuzz.com/news/enterprise-firewalls-and-vpns-breached-70-000-cred-1f7b9d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/enterprise-firewalls-and-vpns-breached-70-000-cred-1f7b9d</guid>
+      <description><![CDATA[Hackers breached exposed Fortinet FortiGate and Palo Alto Networks GlobalProtect firewalls, accessing over 70,000 credentials across multiple organizations worldwide. The attack leveraged misconfigured network edge devices, allowing attackers to enumerate and exfiltrate stored credentials. Immediate patching of firewall firmware, tightening of VPN authentication, and network segmentation are required to remediate the breach.]]></description>
+      <pubDate>Fri, 23 Oct 2026 13:50:56 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Critical PHP Vulnerability CVE-2026-109618 Enables Remote Code Execution</title>
+      <link>https://secubuzz.com/news/critical-php-vulnerability-cve-2026-109618-enables-57dd7e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/critical-php-vulnerability-cve-2026-109618-enables-57dd7e</guid>
+      <description><![CDATA[A critical PHP vulnerability, CVE-2026-109618, enables remote code execution via malformed input. The flaw allows unauthenticated attackers to execute arbitrary code with the privileges of the web server, and a public PoC demonstrates the exploitability. A patch is available from the PHP team; administrators should update to the latest release immediately.]]></description>
+      <pubDate>Fri, 23 Oct 2026 13:43:20 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33450">SANS Internet Storm Center</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>StealC Returns with Stadia RAT for Password Theft and Remote Control</title>
@@ -269,6 +386,24 @@
       <category>General</category>
     </item>
     <item>
+      <title>HPE Releases Patches for Eight High‑Severity ArubaOS RCE and Auth Bypass Flaws</title>
+      <link>https://secubuzz.com/news/hpe-releases-patches-for-eight-high-severity-aruba-156206</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hpe-releases-patches-for-eight-high-severity-aruba-156206</guid>
+      <description><![CDATA[Hewlett Packard Enterprise disclosed eight high‑severity ArubaOS flaws enabling authentication bypass and remote code execution via the Aruba Operating System. The vulnerabilities stem from improper input validation in privileged configuration interfaces, allowing attackers to inject malicious commands and gain full administrative control. HPE released patches for all affected versions; security teams should apply the updates immediately and verify configuration integrity.]]></description>
+      <pubDate>Fri, 23 Oct 2026 12:48:00 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Mirai Botnet Operators Exploit PHP2Shell ASLR Bypass (CVE-2026-109618)</title>
+      <link>https://secubuzz.com/news/mirai-botnet-operators-exploit-php2shell-aslr-bypa-249a64</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/mirai-botnet-operators-exploit-php2shell-aslr-bypa-249a64</guid>
+      <description><![CDATA[Researchers linked Mirai botnet operators to PHP2Shell attacks, revealing an ASLR bypass that could facilitate remote code execution on vulnerable servers. The flaw, identified as CVE-2026-109618, exploits a stack corruption vulnerability in PHP’s internal memory handling, but no successful exploitation has been observed. Administrators should update PHP to the latest release and enable ASLR mitigation features to prevent potential exploitation.]]></description>
+      <pubDate>Fri, 23 Oct 2026 12:45:52 GMT</pubDate>
+      <source url="https://www.securityweek.com/mirai-botnet-operators-join-php2shell-attacks-as-aslr-bypass-exploits-emerge/">SecurityWeek</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>CISA Adds CVE-2026-110447 to Known Exploited Vulnerabilities Catalog</title>
       <link>https://secubuzz.com/news/cisa-adds-cve-2026-110447-to-known-exploited-vulne-240955</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-cve-2026-110447-to-known-exploited-vulne-240955</guid>
@@ -276,6 +411,15 @@
       <pubDate>Fri, 23 Oct 2026 12:00:00 GMT</pubDate>
       <source url="https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog-0">CISA</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Chrome Dev 158 Released for Android</title>
+      <link>https://secubuzz.com/news/chrome-dev-158-released-for-android-5b96fe</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-dev-158-released-for-android-5b96fe</guid>
+      <description><![CDATA[Chrome Dev 158 (158.0.8117.0) for Android has been released to Google Play, extending the developer channel for the browser. The update lists changes in the Git log, with feature details on the Chromium blog and web platform updates linked separately. Users reporting new issues should file bugs through official channels; no security patches or critical fixes are included.]]></description>
+      <pubDate>Fri, 23 Oct 2026 11:58:32 GMT</pubDate>
+      <source url="http://chromereleases.googleblog.com/feeds/3934494581393061675/comments/default">Google Chrome Releases</source>
+      <category>General</category>
     </item>
     <item>
       <title>Microsoft 365 Accounts Compromised at 79 Organizations via Session Replay</title>
@@ -312,150 +456,6 @@
       <pubDate>Fri, 23 Oct 2026 11:04:22 GMT</pubDate>
       <source url="https://www.schneier.com/blog/archives/2026/10/compromised-tls-certificates.html">Schneier on Security</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>China APT Uses AI Pentest Tool Artex in ConnectWise Attacks</title>
-      <link>https://secubuzz.com/news/china-apt-uses-ai-pentest-tool-artex-in-connectwis-21b8af</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/china-apt-uses-ai-pentest-tool-artex-in-connectwis-21b8af</guid>
-      <description><![CDATA[China APT leveraged the AI pentest tool Artex to target ConnectWise installations, compromising hundreds of organizations and achieving privileged access in some environments. The attack chain exploited automated credential discovery and lateral movement within the ConnectWise platform, enabling attackers to elevate privileges to operator level. ConnectWise has released a patch and recommends disabling the affected modules immediately.]]></description>
-      <pubDate>Fri, 23 Oct 2026 10:31:16 GMT</pubDate>
-      <source url="https://www.securityweek.com/china-apt-uses-ai-pentest-tool-artex-in-connectwise-attacks/">SecurityWeek</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>Attackers Exploit Third Arista VCO Zero-Day in Four Months</title>
-      <link>https://secubuzz.com/news/attackers-exploit-third-arista-vco-zero-day-in-fou-7f0770</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/attackers-exploit-third-arista-vco-zero-day-in-fou-7f0770</guid>
-      <description><![CDATA[Attackers have exploited a third‑party Arista VCO zero‑day SQL injection flaw, gaining privileged internal functionality and operator privileges across multiple deployments. The critical vulnerability allows unauthenticated remote code execution via crafted SQL queries and has been actively leveraged in the wild for over four months. Arista has issued a patch; security teams should apply it immediately and disable exposed interfaces.]]></description>
-      <pubDate>Fri, 23 Oct 2026 09:58:34 GMT</pubDate>
-      <source url="https://www.securityweek.com/attackers-exploit-third-velocloud-orchestrator-zero-day-in-four-months/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>SBI Notifies Customers After Personal Data Exposure</title>
-      <link>https://secubuzz.com/news/sbi-notifies-customers-after-personal-data-exposur-6bea26</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sbi-notifies-customers-after-personal-data-exposur-6bea26</guid>
-      <description><![CDATA[State Bank of India notified customers after a cyber incident that exposed personal information found on the dark web. Investigators are examining the suspected leak, while the bank confirmed that account balances and funds remain secure. Customers should monitor account activity and change passwords, and the bank has issued email and WhatsApp alerts to affected users.]]></description>
-      <pubDate>Fri, 23 Oct 2026 09:20:41 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/sbi-notifies-customers-with-cyber-incident/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Top 10 Email Encryption Services Ranked for 2026</title>
-      <link>https://secubuzz.com/news/top-10-email-encryption-services-ranked-for-2026-5a5cac</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/top-10-email-encryption-services-ranked-for-2026-5a5cac</guid>
-      <description><![CDATA[The article ranks ten email encryption services for 2026, evaluating sender-side automation and recipient experience. It assesses policy integration, DLP triggers, one-click protection, and usability metrics, highlighting services that balance strong cryptography with user convenience. Security teams should review the rankings to select solutions that meet compliance requirements and streamline secure communication workflows.]]></description>
-      <pubDate>Fri, 23 Oct 2026 08:22:52 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/best-email-encryption-services/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Hackers Hijack Exposed AI Models to Launch Cyberattacks</title>
-      <link>https://secubuzz.com/news/hackers-hijack-exposed-ai-models-to-launch-cyberat-c127e1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-hijack-exposed-ai-models-to-launch-cyberat-c127e1</guid>
-      <description><![CDATA[Hackers hijack publicly exposed AI models to orchestrate cyberattacks, forcing model owners to pay for the computing resources used. The method uses the model’s inference API, sending the attacker’s prompt to a decoy and then employing the output to plan break‑ins. Symantec’s honeypot captured the instruction set, allowing defenders to block hijacked model traffic and enforce authentication on AI services.]]></description>
-      <pubDate>Fri, 23 Oct 2026 08:21:48 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/23/llmjacking-agent-hijacks-exposed-ai-models/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Atlassian Releases Patch for 75 Vulnerabilities in Data Center and Server Products</title>
-      <link>https://secubuzz.com/news/atlassian-releases-patch-for-75-vulnerabilities-in-5d2e8e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/atlassian-releases-patch-for-75-vulnerabilities-in-5d2e8e</guid>
-      <description><![CDATA[Atlassian’s October bulletin lists 75 vulnerabilities affecting Data Center and Server products, including 14 critical‑severity issues located in third‑party components. The flaws enable authenticated remote code execution and privilege escalation when users access affected services. Atlassian has issued patches for all affected components; administrators should apply the updates immediately to mitigate exploitation.]]></description>
-      <pubDate>Fri, 23 Oct 2026 07:54:47 GMT</pubDate>
-      <source url="https://www.securityweek.com/atlassian-patches-75-third-party-flaws-in-data-center-and-server-products/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Iranian APT Prince of Persia Deploys US-Based C&amp;C Server</title>
-      <link>https://secubuzz.com/news/iranian-apt-prince-of-persia-deploys-us-based-c-c-6b9743</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/iranian-apt-prince-of-persia-deploys-us-based-c-c-6b9743</guid>
-      <description><![CDATA[Prince of Persia APT established a Tornado command-and-control server on a U.S. shared hosting platform, marking its first U.S. presence since 2016. The deployment leverages standard HTTP/HTTPS traffic, enabling remote command execution without requiring privileged access. Security teams should monitor domain registrations and block traffic to the identified IP ranges to mitigate potential command-and-control communications.]]></description>
-      <pubDate>Fri, 23 Oct 2026 06:39:29 GMT</pubDate>
-      <source url="https://www.securityweek.com/irans-prince-of-persia-apt-hosts-cc-in-us-for-first-time-since-2016/">SecurityWeek</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>Oracle Issues Emergency Java Update for Critical 9.1 HTTPS Trust Vulnerability</title>
-      <link>https://secubuzz.com/news/oracle-issues-emergency-java-update-for-critical-9-3aa4e5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/oracle-issues-emergency-java-update-for-critical-9-3aa4e5</guid>
-      <description><![CDATA[CVE‑2026‑91403 corrupts Java’s HTTPS trust chain, enabling attackers to forge intermediate certificates against Oracle Java SE and GraalVM. With a CVSS 3.1 score of 9.1, the flaw is actively exploitable and can lead to remote code execution. Oracle released an emergency patch blocking eMudhra certificates; apply immediately and verify trust settings.]]></description>
-      <pubDate>Fri, 23 Oct 2026 06:01:47 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/emergency-java-update/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Drone Program Compliance Interview Highlights Common Gaps</title>
-      <link>https://secubuzz.com/news/drone-program-compliance-interview-highlights-comm-778be3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/drone-program-compliance-interview-highlights-comm-778be3</guid>
-      <description><![CDATA[A drone program compliance interview reveals common gaps in public safety agencies' handling of flight logs, video, and control software. Inadequate chain‑of‑custody and spreadsheet logs expose agencies to data integrity risks. Security teams should enforce audit trails, publish activity through secure portals, and replace logs with tamper‑evident digital records to meet compliance.]]></description>
-      <pubDate>Fri, 23 Oct 2026 05:30:25 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/23/nick-donarski-rotorlab-drone-program-compliance/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>AI Adoption Drives Cybersecurity Workforce Reductions</title>
-      <link>https://secubuzz.com/news/ai-adoption-drives-cybersecurity-workforce-reducti-4e062a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-adoption-drives-cybersecurity-workforce-reducti-4e062a</guid>
-      <description><![CDATA[Organizations are cutting cybersecurity roles as they adopt AI, even while reporting shortages of the expertise needed to manage threats, according to Barracuda’s Cybersecurity Skills Gap Report. 56% have experienced professional workforce reductions linked to AI, evenly divided between entry-level and higher-level roles. The post AI is taking cybersecurity jobs at junior and experienced levels alike appeared first on Help Net Security.]]></description>
-      <pubDate>Fri, 23 Oct 2026 04:30:39 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/23/barracuda-cybersecurity-career-development-report/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>New Infosec Products of the Week: October 23, 2026</title>
-      <link>https://secubuzz.com/news/new-infosec-products-of-the-week-october-23-2026-5cf87d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/new-infosec-products-of-the-week-october-23-2026-5cf87d</guid>
-      <description><![CDATA[Sweet Security released Virtual Patching, a one-click protection feature that safeguards running cloud and AI applications from specific vulnerabilities the moment they are identified, while AppGate, IDENTOS, and ThreatModeler introduced other security tools. The new capability allows security teams to enforce protection instantly while engineering develops permanent fixes. The post New infosec products of the week: October 23, 2026 appeared first on Help Net Security.]]></description>
-      <pubDate>Fri, 23 Oct 2026 04:00:41 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/23/new-infosec-products-of-the-week-october-23-2026/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>PHP2Shell Bug Sparks Exploitation Attempts</title>
-      <link>https://secubuzz.com/news/php2shell-bug-sparks-exploitation-attempts-37092e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/php2shell-bug-sparks-exploitation-attempts-37092e</guid>
-      <description><![CDATA[The PHP2Shell bug, a PHP flaw enabling remote code execution, has spurred attempts against servers running vulnerable PHP versions. The flaw requires authenticated access and local file inclusion, with no confirmed zero‑day exploit in the wild yet. Until an official patch arrives, administrators should disable remote file uploads, enforce least‑privilege PHP execution, and monitor for anomalous file changes.]]></description>
-      <pubDate>Fri, 23 Oct 2026 04:00:00 GMT</pubDate>
-      <source url="https://therecord.media/php-php2shell-exploitation-attempts-pocs">The Record</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>State Bank of India Suffers a Customer PII Data Leak</title>
-      <link>https://secubuzz.com/news/state-bank-of-india-suffers-a-customer-pii-data-le-7ed967</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/state-bank-of-india-suffers-a-customer-pii-data-le-7ed967</guid>
-      <description><![CDATA[A customer PII data leak at State Bank of India exposed personal identifiers through an undisclosed breach channel. The leak potentially fuels underground markets, enabling malicious actors to trade sensitive information for financial gain. Bank officials should immediately conduct forensic investigations, notify affected customers, and apply data protection controls to mitigate further exposure.]]></description>
-      <pubDate>Fri, 23 Oct 2026 03:30:00 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyberattacks-data-breaches/state-bank-india-customer-pii-data-leak">Dark Reading</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Critical Unpatched Linux Kernel Flaws Accidentally Disclosed on Public List</title>
-      <link>https://secubuzz.com/news/critical-unpatched-linux-kernel-flaws-accidentally-544a4d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/critical-unpatched-linux-kernel-flaws-accidentally-544a4d</guid>
-      <description><![CDATA[Critical unpatched Linux kernel flaws were inadvertently disclosed on public mailing lists, revealing remote code execution vectors targeting the KSMBD file server. Both vulnerabilities carry CVSS 9.0 scores, enabling attackers to gain arbitrary code execution without authentication, though no wild exploitation has been reported. Trend Micro’s Zero Day Initiative recommends applying patches and monitoring kernel update channels to prevent exploitation.]]></description>
-      <pubDate>Fri, 23 Oct 2026 02:09:49 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/linux-kernel-flaws-accidentally-disclosed/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>ASPM in the AI Era Part 2: Prioritize Exploitable Risks with Code-to-Cloud Context</title>
-      <link>https://secubuzz.com/news/aspm-in-the-ai-era-part-2-prioritize-exploitable-r-5291d5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/aspm-in-the-ai-era-part-2-prioritize-exploitable-r-5291d5</guid>
-      <description><![CDATA[ASPM in the AI Era Part 2 presents a framework that prioritizes exploitable risks by merging code, infrastructure, and runtime context. This integration shortens triage times and focuses security teams on high-impact vulnerabilities. Implementing the model requires aligning threat feeds, automating context aggregation, and updating risk assessments for cloud workloads.]]></description>
-      <pubDate>Thu, 22 Oct 2026 22:51:55 GMT</pubDate>
-      <source url="https://www.wiz.io/blog/aspm-ai-era-pt-2-prioritize-appsec-risk">Wiz Research</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Railway Warns Developers to Rotate Secrets After Suspicious Activity</title>
-      <link>https://secubuzz.com/news/railway-warns-developers-to-rotate-secrets-after-s-57cfde</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/railway-warns-developers-to-rotate-secrets-after-s-57cfde</guid>
-      <description><![CDATA[Railway detected suspicious activity on its cloud platform that stores customer environment variables, urging developers to rotate secrets. The anomaly suggests possible unauthorized access to configuration data, though no exfiltration has been confirmed by the platform. Railway recommends enforcing secret rotation, enabling multi‑factor authentication, and auditing access logs for irregular activity.]]></description>
-      <pubDate>Thu, 22 Oct 2026 21:25:31 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/railway-warns-devs-to-rotate-secrets-after-potential-breach/">BleepingComputer</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>

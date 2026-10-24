@@ -142,7 +142,9 @@ async function syncNews() {
 
   console.log(`Filtered to ${recentArticles.length} articles within 30-day window`);
 
-  const seenSlugs = new Map();
+  const seenIds = new Set();
+  const seenUrls = new Set();
+  const seenNormTitles = new Set();
   const deduped = [];
 
   for (const art of recentArticles) {
@@ -153,87 +155,37 @@ async function syncNews() {
     const source = (art.source || art.sourceName || 'SecuBuzz').trim();
     const sourceUrl = (art.sourceUrl || art.url || art.id || '').trim();
     const publishedAt = art.publishedAt || new Date().toISOString();
-    const fullText = (title + ' ' + summary).toLowerCase();
     const cves = extractCves(title + ' ' + summary);
-    const keywords = getKeywords(title);
     const category = mapCategory(art.category, title + ' ' + summary);
-    const time = Date.parse(publishedAt) || 0;
+
+    const normUrl = sourceUrl.toLowerCase();
+    const articleId = (art.id || sourceUrl || title).trim().toLowerCase();
+    const normTitle = title.toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 60);
+
+    // O(1) duplicate filter (protects against duplicate items from multiple feeds)
+    if (seenIds.has(articleId) || (normUrl && seenUrls.has(normUrl)) || (normTitle && seenNormTitles.has(normTitle))) {
+      continue;
+    }
+
+    seenIds.add(articleId);
+    if (normUrl) seenUrls.add(normUrl);
+    if (normTitle) seenNormTitles.add(normTitle);
 
     let rawSlug = slugify(title);
     if (!rawSlug) rawSlug = 'brief';
 
-    // Deduplication check
-    let duplicateOf = null;
-    for (const existing of deduped) {
-      const existingTime = Date.parse(existing.publishedAt) || 0;
-      const timeDiffDays = Math.abs(time - existingTime) / (1000 * 3600 * 24);
-      if (timeDiffDays > 7) continue;
-
-      // 1) Shared CVE
-      if (cves.length > 0 && existing.cves.some(c => cves.includes(c))) {
-        duplicateOf = existing;
-        break;
-      }
-
-      // 2) Shared Enterprise Entity
-      const existingFull = (existing.title + ' ' + existing.summary).toLowerCase();
-      for (const ent of ENTITY_TERMS) {
-        if (fullText.includes(ent) && existingFull.includes(ent)) {
-          duplicateOf = existing;
-          break;
-        }
-      }
-      if (duplicateOf) break;
-
-      // 3) Shared specific soldier event
-      if (fullText.includes('soldier') && existingFull.includes('soldier')) {
-        duplicateOf = existing;
-        break;
-      }
-
-      // 4) Normalized component / zero-day matching (e.g. Apple CoreGraphics zero-day coverage)
-      const normFull = fullText.replace(/[^a-z0-9]/g, '');
-      const normExisting = existingFull.replace(/[^a-z0-9]/g, '');
-      if (
-        (normFull.includes('coregraphics') && normExisting.includes('coregraphics')) ||
-        (normFull.includes('apple') && normFull.includes('zeroday') && normExisting.includes('apple') && normExisting.includes('zeroday') && timeDiffDays <= 3)
-      ) {
-        duplicateOf = existing;
-        break;
-      }
-
-      // 5) Overlap of 2+ significant keywords within 3 days
-      const existingKw = new Set(existing.keywords);
-      const overlap = keywords.filter(k => existingKw.has(k));
-      if (overlap.length >= 2 && timeDiffDays <= 3) {
-        duplicateOf = existing;
-        break;
-      }
-    }
-
-    if (duplicateOf) {
-      if (!duplicateOf.additionalSources) duplicateOf.additionalSources = [];
-      if (!duplicateOf.additionalSources.some(s => s.sourceUrl === sourceUrl || s.source === source)) {
-        duplicateOf.additionalSources.push({ source, sourceUrl });
-      }
-      if (!duplicateOf.aliases) duplicateOf.aliases = [];
-      const dupSlug = createSlug(title, art.id || art.sourceUrl || art.url || title);
-      if (!duplicateOf.aliases.includes(dupSlug)) duplicateOf.aliases.push(dupSlug);
-      if (rawSlug && !duplicateOf.aliases.includes(rawSlug)) duplicateOf.aliases.push(rawSlug);
-      if ((!duplicateOf.cves || duplicateOf.cves.length === 0) && cves.length > 0) {
-        duplicateOf.cves = cves;
-      }
-      continue;
-    }
-
-    const articleId = art.id || art.sourceUrl || art.url || title;
-    const slug = createSlug(title, articleId);
+    const slug = art.slug || createSlug(title, art.id || art.sourceUrl || art.url || title);
     const baseSlug = (title || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 50).replace(/^-+|-+$/g, '');
     const hex = slug.slice(-6);
 
     const aliases = [baseSlug, `article-${hex}`, hex];
     if (rawSlug && rawSlug !== slug && !aliases.includes(rawSlug)) {
       aliases.push(rawSlug);
+    }
+    if (art.aliases && Array.isArray(art.aliases)) {
+      for (const a of art.aliases) {
+        if (!aliases.includes(a)) aliases.push(a);
+      }
     }
 
     const rawSev = (art.severity || '').toUpperCase();
@@ -249,16 +201,14 @@ async function syncNews() {
       sourceUrl,
       publishedAt,
       cves,
-      keywords,
-      additionalSources: [],
+      additionalSources: Array.isArray(art.additionalSources) ? art.additionalSources : [],
       aliases
     };
 
     deduped.push(item);
   }
 
-  // Strip temporary internal keywords before serialization
-  const cleanBriefs = deduped.map(({ keywords, ...rest }) => rest);
+  const cleanBriefs = deduped;
   console.log(`Deduplicated into ${cleanBriefs.length} clean unique briefs`);
 
   // Write website/src/data/news.ts

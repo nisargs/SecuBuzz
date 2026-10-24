@@ -4,29 +4,6 @@ import type { NewsBrief, NewsCategory } from '../types/news';
 
 const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
 
-const ENTITY_TERMS = [
-  'bitget', 'kiteworks', 'netscaler', 'citrix', 'wireshark', 'snowflake',
-  'chatgpt', 'elementor', 'sharepoint', 'fortinet', 'palo alto', 'ivanti',
-  'sonicwall', 'cisco', 'crowdstrike', 'vmware', 'salesforce', 'qualys',
-  'telegram', 'ransomhub', 'lockbit', 'akira', 'qilin', 'blacksuit'
-];
-
-const STOP_WORDS = new Set([
-  'the', 'a', 'an', 'in', 'on', 'for', 'to', 'of', 'and', 'is', 'with', 'after', 'from',
-  'targets', 'fixes', 'flaw', 'vulnerability', 'vulnerabilities', 'security', 'cyber',
-  'attack', 'attacks', 'new', 'release', 'addresses', 'update', 'updates', 'by', 'as',
-  'at', 'about', 'over', 'into', 'warns', 'alert', 'patch', 'patches', 'zero-day', 'exploit',
-  'exploited', 'users', 'critical', 'high', 'active', 'actively', 'amid', 'amidst', 'via'
-]);
-
-function getKeywords(title: string): string[] {
-  return (title || '')
-    .toLowerCase()
-    .replace(/[^a-z0-9\s-]/g, ' ')
-    .split(/\s+/)
-    .filter(w => w.length > 2 && !STOP_WORDS.has(w));
-}
-
 function mapCategory(cat: string = ''): NewsCategory {
   const upper = cat.toUpperCase();
   if (upper === 'CVE') return 'CVE';
@@ -67,10 +44,6 @@ function slugify(title: string): string {
     .slice(0, 60);
 }
 
-interface InternalBrief extends NewsBrief {
-  keywords?: string[];
-}
-
 function transformFeed(feed: any[]): NewsBrief[] {
   const cutoffTime = Date.now() - THIRTY_DAYS_MS;
 
@@ -85,8 +58,10 @@ function transformFeed(feed: any[]): NewsBrief[] {
       return timeB - timeA;
     });
 
-  const seenSlugs = new Map<string, number>();
-  const deduped: InternalBrief[] = [];
+  const seenIds = new Set<string>();
+  const seenUrls = new Set<string>();
+  const seenNormTitles = new Set<string>();
+  const deduped: NewsBrief[] = [];
 
   for (const art of sorted) {
     const title = (art.title || art.headline || '').trim();
@@ -96,64 +71,28 @@ function transformFeed(feed: any[]): NewsBrief[] {
     const source = (art.source || art.sourceName || 'SecuBuzz').trim();
     const sourceUrl = (art.sourceUrl || art.url || art.id || '').trim();
     const publishedAt = art.publishedAt || new Date().toISOString();
-    const fullText = (title + ' ' + summary).toLowerCase();
     const cves = extractCves(title + ' ' + summary);
-    const keywords = getKeywords(title);
     const category = mapCategory(art.category);
     const rawSev = (art.severity || '').toUpperCase();
     const severity = (['CRITICAL', 'HIGH', 'MEDIUM', 'LOW'].includes(rawSev) ? rawSev : undefined) as NewsBrief['severity'];
-    const time = Date.parse(publishedAt) || 0;
+
+    const normUrl = sourceUrl.toLowerCase();
+    const articleId = (art.id || sourceUrl || title).trim().toLowerCase();
+    const normTitle = title.toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 60);
+
+    // O(1) duplicate filter (exact match on ID, canonical URL, or identical title)
+    if (seenIds.has(articleId) || (normUrl && seenUrls.has(normUrl)) || (normTitle && seenNormTitles.has(normTitle))) {
+      continue;
+    }
+
+    seenIds.add(articleId);
+    if (normUrl) seenUrls.add(normUrl);
+    if (normTitle) seenNormTitles.add(normTitle);
 
     let rawSlug = slugify(title);
     if (!rawSlug) rawSlug = 'brief';
 
-    let duplicateOf: InternalBrief | null = null;
-    for (const existing of deduped) {
-      const existingTime = Date.parse(existing.publishedAt) || 0;
-      const timeDiffDays = Math.abs(time - existingTime) / (1000 * 3600 * 24);
-      if (timeDiffDays > 7) continue;
-
-      if (cves.length > 0 && existing.cves.some(c => cves.includes(c))) {
-        duplicateOf = existing;
-        break;
-      }
-
-      const existingFull = (existing.title + ' ' + existing.summary).toLowerCase();
-      for (const ent of ENTITY_TERMS) {
-        if (fullText.includes(ent) && existingFull.includes(ent)) {
-          duplicateOf = existing;
-          break;
-        }
-      }
-      if (duplicateOf) break;
-
-      if (fullText.includes('soldier') && existingFull.includes('soldier')) {
-        duplicateOf = existing;
-        break;
-      }
-
-      const existingKw = new Set(existing.keywords || []);
-      const overlap = keywords.filter(k => existingKw.has(k));
-      if (overlap.length >= 2 && timeDiffDays <= 3) {
-        duplicateOf = existing;
-        break;
-      }
-    }
-
-    if (duplicateOf) {
-      if (!duplicateOf.additionalSources) duplicateOf.additionalSources = [];
-      if (!duplicateOf.additionalSources.some(s => s.sourceUrl === sourceUrl || s.source === source)) {
-        duplicateOf.additionalSources.push({ source, sourceUrl });
-      }
-      if (!duplicateOf.aliases) duplicateOf.aliases = [];
-      const dupSlug = art.slug || createSlug(title, art.id || art.sourceUrl || art.url || title);
-      if (!duplicateOf.aliases.includes(dupSlug)) duplicateOf.aliases.push(dupSlug);
-      if (rawSlug && !duplicateOf.aliases.includes(rawSlug)) duplicateOf.aliases.push(rawSlug);
-      continue;
-    }
-
-    const articleId = art.id || art.sourceUrl || art.url || title;
-    const slug = art.slug || createSlug(title, articleId);
+    const slug = art.slug || createSlug(title, art.id || art.sourceUrl || art.url || title);
     const baseSlug = (title || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 50).replace(/^-+|-+$/g, '');
     const hex = slug.slice(-6);
 
@@ -167,7 +106,7 @@ function transformFeed(feed: any[]): NewsBrief[] {
       }
     }
 
-    const item: InternalBrief = {
+    const item: NewsBrief = {
       slug,
       title,
       summary,
@@ -177,15 +116,14 @@ function transformFeed(feed: any[]): NewsBrief[] {
       sourceUrl,
       publishedAt,
       cves,
-      keywords,
-      additionalSources: [],
+      additionalSources: Array.isArray(art.additionalSources) ? art.additionalSources : [],
       aliases
     };
 
     deduped.push(item);
   }
 
-  return deduped.map(({ keywords, ...rest }) => rest);
+  return deduped;
 }
 
 const SEVERITY_WEIGHT: Record<string, number> = {

@@ -61,55 +61,12 @@ export const news: NewsBrief[] = [
       "CVE-2026-109618",
       "CVE-2026-109619"
     ],
-    "additionalSources": [
-      {
-        "source": "Cisco PSIRT",
-        "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+PHP+Affecting+Cisco+Products%3A+October+2026%26vs_k%3D1"
-      },
-      {
-        "source": "SentinelOne",
-        "sourceUrl": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-43-8"
-      },
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/"
-      },
-      {
-        "source": "Microsoft MSRC",
-        "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83862"
-      },
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html"
-      },
-      {
-        "source": "SANS Internet Storm Center",
-        "sourceUrl": "https://isc.sans.edu/diary/rss/33450"
-      },
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/mirai-botnet-operators-join-php2shell-attacks-as-aslr-bypass-exploits-emerge/"
-      }
-    ],
+    "additionalSources": [],
     "aliases": [
       "palo-alto-confirms-php-rce-vulnerabilities-impact",
       "article-521f63",
       "521f63",
-      "palo-alto-confirms-php-rce-vulnerabilities-impact-pan-os-and",
-      "critical-php-rce-vulnerabilities-impact-cisco-prod-52936c",
-      "critical-php-rce-vulnerabilities-impact-cisco-products",
-      "php-discloses-two-critical-level-rce-flaws-5e83e1",
-      "php-discloses-two-critical-level-rce-flaws",
-      "php-releases-mitigation-for-cve-2026-115560-rce-vu-3e4da4",
-      "php-releases-mitigation-for-cve-2026-115560-rce-vulnerabilit",
-      "cve-2026-83862-windows-network-load-balancing-rce-7440de",
-      "cve-2026-83862-windows-network-load-balancing-rce-exploit-ad",
-      "enterprise-firewalls-and-vpns-breached-70-000-cred-1f7b9d",
-      "enterprise-firewalls-and-vpns-breached-70-000-credentials-ex",
-      "critical-php-vulnerability-cve-2026-109618-enables-57dd7e",
-      "critical-php-vulnerability-cve-2026-109618-enables-remote-co",
-      "mirai-botnet-operators-exploit-php2shell-aslr-bypa-249a64",
-      "mirai-botnet-operators-exploit-php2shell-aslr-bypass-cve-202"
+      "palo-alto-confirms-php-rce-vulnerabilities-impact-pan-os-and"
     ]
   },
   {
@@ -124,12 +81,38 @@ export const news: NewsBrief[] = [
     "cves": [
       "CVE-2026-76466"
     ],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html"
+      }
+    ],
     "aliases": [
       "cisa-flags-cve-2026-110447-in-collabora-online-and",
       "article-6019c7",
       "6019c7",
       "cisa-flags-cve-2026-110447-in-collabora-online-and-arista-ve"
+    ]
+  },
+  {
+    "slug": "critical-php-rce-vulnerabilities-impact-cisco-prod-52936c",
+    "title": "Critical PHP RCE Vulnerabilities Impact Cisco Products",
+    "summary": "Critical PHP vulnerabilities CVE-2026-109618 and CVE-2026-109619 enable remote code execution via out‑of‑memory corruption and stale global state in Cisco products. The flaws allow attackers to execute arbitrary code without authentication, posing a high‑risk threat to affected systems. Cisco has released patches; administrators should apply the updates immediately to mitigate exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Cisco PSIRT",
+    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+PHP+Affecting+Cisco+Products%3A+October+2026%26vs_k%3D1",
+    "publishedAt": "2026-10-23T22:39:09.000Z",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "critical-php-rce-vulnerabilities-impact-cisco-prod",
+      "article-52936c",
+      "52936c",
+      "critical-php-rce-vulnerabilities-impact-cisco-products"
     ]
   },
   {
@@ -200,18 +183,29 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:88779",
     "publishedAt": "2026-10-23T19:53:37.000Z",
     "cves": [],
-    "additionalSources": [
-      {
-        "source": "Red Hat Security Advisories",
-        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:88562"
-      }
-    ],
+    "additionalSources": [],
     "aliases": [
       "red-hat-ca-certificates-update-addresses-critical",
       "article-37e4f4",
       "37e4f4",
-      "red-hat-ca-certificates-update-addresses-critical-vulnerabil",
-      "red-hat-releases-critical-update-for-ca-certificat-37e4fc",
+      "red-hat-ca-certificates-update-addresses-critical-vulnerabil"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-critical-update-for-ca-certificat-37e4fc",
+    "title": "Red Hat Releases Critical Update for ca-certificates on RHEL 9.2 SAP Solutions",
+    "summary": "A critical security update for ca-certificates is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions, addressing multiple vulnerabilities with high CVSS scores. The update mitigates certificate validation flaws that could allow attackers to forge trust chains and intercept secure communications. Red Hat has released the patch; administrators should apply it immediately to maintain system integrity.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:88562",
+    "publishedAt": "2026-10-23T19:43:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-critical-update-for-ca-certificat",
+      "article-37e4fc",
+      "37e4fc",
       "red-hat-releases-critical-update-for-ca-certificates-on-rhel"
     ]
   },
@@ -297,7 +291,20 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/23/inside-the-litellm-1-107-0-supply-chain-compromise-credential-theft-through-python-startup-hooks/",
     "publishedAt": "2026-10-23T18:12:19.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/litellm-compromised-supply-chain-attack-pypi-docker/"
+      },
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/litellm-compromised-in-fresh-supply-chain-attack/"
+      },
+      {
+        "source": "Dark Reading",
+        "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/microsoft-storm-0940-connectwise-supply-chain-attack"
+      }
+    ],
     "aliases": [
       "litellm-1-107-0-supply-chain-compromise-via-python",
       "article-3513cb",
@@ -333,19 +340,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://thehackernews.com/2026/10/ruby-fixes-three-regex-engine-bugs.html",
     "publishedAt": "2026-10-23T17:54:08.000Z",
     "cves": [],
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/"
-      }
-    ],
+    "additionalSources": [],
     "aliases": [
       "ruby-releases-4-0-9-3-4-12-3-3-13-to-fix-onigmo-re",
       "article-69b84c",
       "69b84c",
-      "ruby-releases-4-0-9-3-4-12-3-3-13-to-fix-onigmo-regex-bugs-b",
-      "hpe-releases-patches-for-eight-high-severity-aruba-156206",
-      "hpe-releases-patches-for-eight-high-severity-arubaos-rce-and"
+      "ruby-releases-4-0-9-3-4-12-3-3-13-to-fix-onigmo-regex-bugs-b"
     ]
   },
   {
@@ -423,6 +423,23 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "php-discloses-two-critical-level-rce-flaws-5e83e1",
+    "title": "PHP Discloses Two Critical‑Level RCE Flaws",
+    "summary": "PHP has disclosed two critical‑level remote code execution vulnerabilities that allow attackers to execute arbitrary code on affected servers. The flaws stem from improper input validation in the core engine, with public proof‑of‑concept exploits demonstrating full system compromise. Immediate application of the vendor‑issued patches and disabling remote execution features are mandatory to prevent exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SentinelOne",
+    "sourceUrl": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-43-8",
+    "publishedAt": "2026-10-23T17:18:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "php-discloses-two-critical-level-rce-flaws",
+      "article-5e83e1",
+      "5e83e1"
+    ]
+  },
+  {
     "slug": "microsoft-announces-end-of-support-for-windows-ser-72cd91",
     "title": "Microsoft Announces End of Support for Windows Server 2016",
     "summary": "Microsoft announced Windows Server 2016 will reach end of support in January 2027, ceasing security updates. This end‑of‑life status means no further patches, exposing systems to unpatched vulnerabilities and potential exploitation. Organizations should upgrade to supported versions or apply extended support if available, and monitor for new advisories.",
@@ -450,7 +467,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/quest-diagnostics-confirms-data-breach-exposed-patient-records/",
     "publishedAt": "2026-10-23T16:40:07.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/quest-diagnostics-network-intrusion"
+      }
+    ],
     "aliases": [
       "quest-diagnostics-breach-exposes-patient-records-v",
       "article-1fdcce",
@@ -468,18 +490,11 @@ export const news: NewsBrief[] = [
     "sourceUrl": "http://chromereleases.googleblog.com/feeds/4602648838450212475/comments/default",
     "publishedAt": "2026-10-23T16:28:33.571Z",
     "cves": [],
-    "additionalSources": [
-      {
-        "source": "Google Chrome Releases",
-        "sourceUrl": "http://chromereleases.googleblog.com/feeds/3934494581393061675/comments/default"
-      }
-    ],
+    "additionalSources": [],
     "aliases": [
       "chrome-dev-channel-updated-to-158-0-8117-2",
       "article-62d7c1",
-      "62d7c1",
-      "chrome-dev-158-released-for-android-5b96fe",
-      "chrome-dev-158-released-for-android"
+      "62d7c1"
     ]
   },
   {
@@ -492,18 +507,29 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Informational+for+Emergency+Distrust+of+eMudhra+Root+and+Intermediate+Certificate+Authorities%26vs_k%3D1",
     "publishedAt": "2026-10-23T16:00:00.000Z",
     "cves": [],
-    "additionalSources": [
-      {
-        "source": "Schneier on Security",
-        "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/compromised-tls-certificates.html"
-      }
-    ],
+    "additionalSources": [],
     "aliases": [
       "emudhra-intermediate-ca-private-keys-compromised",
       "article-710aae",
-      "710aae",
-      "emudhra-tls-certificates-compromised-by-weak-priva-468030",
-      "emudhra-tls-certificates-compromised-by-weak-private-keys"
+      "710aae"
+    ]
+  },
+  {
+    "slug": "php-releases-mitigation-for-cve-2026-115560-rce-vu-3e4da4",
+    "title": "PHP Releases Mitigation for CVE‑2026‑115560 RCE Vulnerability",
+    "summary": "PHP disclosed a new remote code execution vulnerability, CVE‑2026‑115560, impacting systems with non‑default configurations. The flaw permits arbitrary code execution, with no patch available and active exploitation status unknown. PHP recommends disabling vulnerable features, monitoring logs, and applying the forthcoming vendor patch as soon as it is released.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/",
+    "publishedAt": "2026-10-23T15:38:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "php-releases-mitigation-for-cve-2026-115560-rce-vu",
+      "article-3e4da4",
+      "3e4da4",
+      "php-releases-mitigation-for-cve-2026-115560-rce-vulnerabilit"
     ]
   },
   {
@@ -617,6 +643,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cve-2026-83862-windows-network-load-balancing-rce-7440de",
+    "title": "CVE‑2026‑83862: Windows Network Load Balancing RCE Exploit Adjusted CVSS",
+    "summary": "CVE‑2026‑83862 is a Windows Network Load Balancing Remote Code Execution vulnerability with a CVSS base score of 8.8 after an attack vector adjustment to Adjacent. The flaw requires Layer 2 adjacency and allows authenticated attackers to execute arbitrary code on affected systems. Microsoft has released a patch; customers should install the update immediately to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83862",
+    "publishedAt": "2026-10-23T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-83862-windows-network-load-balancing-rce",
+      "article-7440de",
+      "7440de",
+      "cve-2026-83862-windows-network-load-balancing-rce-exploit-ad"
+    ]
+  },
+  {
     "slug": "caribbean-cyber-threats-amplify-global-risk-485ca9",
     "title": "Caribbean Cyber Threats Amplify Global Risk",
     "summary": "Caribbean cyber threats are escalating, demonstrating how regional exploit activity can amplify global risk. The lack of robust security assurance allows attackers to accelerate exploitation, increasing the likelihood of cross-border compromise. Stakeholders should strengthen threat intelligence sharing, enforce rigorous vulnerability management, and adopt proactive security frameworks to mitigate cascading impacts.",
@@ -631,6 +675,44 @@ export const news: NewsBrief[] = [
       "caribbean-cyber-threats-amplify-global-risk",
       "article-485ca9",
       "485ca9"
+    ]
+  },
+  {
+    "slug": "enterprise-firewalls-and-vpns-breached-70-000-cred-1f7b9d",
+    "title": "Enterprise Firewalls and VPNs Breached, 70,000 Credentials Exposed",
+    "summary": "Hackers breached exposed Fortinet FortiGate and Palo Alto Networks GlobalProtect firewalls, accessing over 70,000 credentials across multiple organizations worldwide. The attack leveraged misconfigured network edge devices, allowing attackers to enumerate and exfiltrate stored credentials. Immediate patching of firewall firmware, tightening of VPN authentication, and network segmentation are required to remediate the breach.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html",
+    "publishedAt": "2026-10-23T13:50:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "enterprise-firewalls-and-vpns-breached-70-000-cred",
+      "article-1f7b9d",
+      "1f7b9d",
+      "enterprise-firewalls-and-vpns-breached-70-000-credentials-ex"
+    ]
+  },
+  {
+    "slug": "critical-php-vulnerability-cve-2026-109618-enables-57dd7e",
+    "title": "Critical PHP Vulnerability CVE-2026-109618 Enables Remote Code Execution",
+    "summary": "A critical PHP vulnerability, CVE-2026-109618, enables remote code execution via malformed input. The flaw allows unauthenticated attackers to execute arbitrary code with the privileges of the web server, and a public PoC demonstrates the exploitability. A patch is available from the PHP team; administrators should update to the latest release immediately.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33450",
+    "publishedAt": "2026-10-23T13:43:20.000Z",
+    "cves": [
+      "CVE-2026-109618"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "critical-php-vulnerability-cve-2026-109618-enables",
+      "article-57dd7e",
+      "57dd7e",
+      "critical-php-vulnerability-cve-2026-109618-enables-remote-co"
     ]
   },
   {
@@ -679,7 +761,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://therecord.media/uk-undersea-cables-sabotage-new-sentencing-guidelines",
     "publishedAt": "2026-10-23T13:26:00.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/23/uk-undersea-cable-sabotage-sentences/"
+      }
+    ],
     "aliases": [
       "uk-proposes-14-year-prison-terms-for-undersea-cabl",
       "article-216515",
@@ -697,7 +784,16 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.malwarebytes.com/blog/data-breaches/2026/10/resident-evil-maker-capcom-warns-of-phishing-after-11-7-million-records-exposed",
     "publishedAt": "2026-10-23T13:07:52.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/11-million-impacted-by-capcom-data-breach/"
+      },
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/23/capcom-id-data-breach-11-million-records-exposed/"
+      }
+    ],
     "aliases": [
       "capcom-warns-of-phishing-after-11-7-million-record",
       "article-905773",
@@ -724,6 +820,44 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "hpe-releases-patches-for-eight-high-severity-aruba-156206",
+    "title": "HPE Releases Patches for Eight High‑Severity ArubaOS RCE and Auth Bypass Flaws",
+    "summary": "Hewlett Packard Enterprise disclosed eight high‑severity ArubaOS flaws enabling authentication bypass and remote code execution via the Aruba Operating System. The vulnerabilities stem from improper input validation in privileged configuration interfaces, allowing attackers to inject malicious commands and gain full administrative control. HPE released patches for all affected versions; security teams should apply the updates immediately and verify configuration integrity.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/",
+    "publishedAt": "2026-10-23T12:48:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hpe-releases-patches-for-eight-high-severity-aruba",
+      "article-156206",
+      "156206",
+      "hpe-releases-patches-for-eight-high-severity-arubaos-rce-and"
+    ]
+  },
+  {
+    "slug": "mirai-botnet-operators-exploit-php2shell-aslr-bypa-249a64",
+    "title": "Mirai Botnet Operators Exploit PHP2Shell ASLR Bypass (CVE-2026-109618)",
+    "summary": "Researchers linked Mirai botnet operators to PHP2Shell attacks, revealing an ASLR bypass that could facilitate remote code execution on vulnerable servers. The flaw, identified as CVE-2026-109618, exploits a stack corruption vulnerability in PHP’s internal memory handling, but no successful exploitation has been observed. Administrators should update PHP to the latest release and enable ASLR mitigation features to prevent potential exploitation.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/mirai-botnet-operators-join-php2shell-attacks-as-aslr-bypass-exploits-emerge/",
+    "publishedAt": "2026-10-23T12:45:52.000Z",
+    "cves": [
+      "CVE-2026-109618"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "mirai-botnet-operators-exploit-php2shell-aslr-bypa",
+      "article-249a64",
+      "249a64",
+      "mirai-botnet-operators-exploit-php2shell-aslr-bypass-cve-202"
+    ]
+  },
+  {
     "slug": "cisa-adds-cve-2026-110447-to-known-exploited-vulne-240955",
     "title": "CISA Adds CVE-2026-110447 to Known Exploited Vulnerabilities Catalog",
     "summary": "CISA has identified an active exploitation of CVE-2026-110447, a command‑injection flaw in Collabora Online’s built‑in CODE Server, targeting publicly exposed federal assets. The vulnerability permits unauthenticated remote code execution with full control over the host, and a public PoC demonstrates its feasibility. CISA urges federal agencies to apply the vendor patch immediately and to enforce BOD 26‑04 risk‑based update policies.",
@@ -735,12 +869,34 @@ export const news: NewsBrief[] = [
     "cves": [
       "CVE-2026-110447"
     ],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "CISA",
+        "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog"
+      }
+    ],
     "aliases": [
       "cisa-adds-cve-2026-110447-to-known-exploited-vulne",
       "article-240955",
       "240955",
       "cisa-adds-cve-2026-110447-to-known-exploited-vulnerabilities"
+    ]
+  },
+  {
+    "slug": "chrome-dev-158-released-for-android-5b96fe",
+    "title": "Chrome Dev 158 Released for Android",
+    "summary": "Chrome Dev 158 (158.0.8117.0) for Android has been released to Google Play, extending the developer channel for the browser. The update lists changes in the Git log, with feature details on the Chromium blog and web platform updates linked separately. Users reporting new issues should file bugs through official channels; no security patches or critical fixes are included.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "http://chromereleases.googleblog.com/feeds/3934494581393061675/comments/default",
+    "publishedAt": "2026-10-23T11:58:32.749Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-dev-158-released-for-android",
+      "article-5b96fe",
+      "5b96fe"
     ]
   },
   {
@@ -789,12 +945,44 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://thehackernews.com/2026/10/russian-linked-hackers-used-new-mesh.html",
     "publishedAt": "2026-10-23T11:11:23.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "ESET WeLiveSecurity",
+        "sourceUrl": "https://www.welivesecurity.com/en/eset-research/mythicratatoskr-yggdrasil-enabled-backdoor-deployed-uac0099-sandworm-collaboration/"
+      }
+    ],
     "aliases": [
       "sandworm-executes-destructive-wiping-attack-on-ukr",
       "article-5fff35",
       "5fff35",
       "sandworm-executes-destructive-wiping-attack-on-ukrainian-log"
+    ]
+  },
+  {
+    "slug": "emudhra-tls-certificates-compromised-by-weak-priva-468030",
+    "title": "eMudhra TLS Certificates Compromised by Weak Private Keys",
+    "summary": "eMudhra Limited’s eight TLS certificates contain private keys with only 3 to 8 bits of entropy, far below the 384‑bit standard for NIST P‑384 elliptic curve keys. The flaw arises from inadequate key generation, allowing trivial brute‑force recovery of the private keys. Immediate action requires revoking the compromised certificates, issuing new keys with full entropy, and enforcing strict key‑generation policies.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/compromised-tls-certificates.html",
+    "publishedAt": "2026-10-23T11:04:22.000Z",
+    "cves": [],
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/emudhra-to-exit-global-ssltls-business.html"
+      },
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/godaddy-revoking-tls-certificates/"
+      }
+    ],
+    "aliases": [
+      "emudhra-tls-certificates-compromised-by-weak-priva",
+      "article-468030",
+      "468030",
+      "emudhra-tls-certificates-compromised-by-weak-private-keys"
     ]
   },
   {
@@ -807,7 +995,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.securityweek.com/china-apt-uses-ai-pentest-tool-artex-in-connectwise-attacks/",
     "publishedAt": "2026-10-23T10:31:16.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/china-cyber-connectwise-ai"
+      }
+    ],
     "aliases": [
       "china-apt-uses-ai-pentest-tool-artex-in-connectwis",
       "article-21b8af",
@@ -825,7 +1018,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.securityweek.com/attackers-exploit-third-velocloud-orchestrator-zero-day-in-four-months/",
     "publishedAt": "2026-10-23T09:58:34.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/"
+      }
+    ],
     "aliases": [
       "attackers-exploit-third-arista-vco-zero-day-in-fou",
       "article-7f0770",
@@ -1146,7 +1344,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/litellm-release-pipeline-hacked-to-distribute-info-stealer-malware/",
     "publishedAt": "2026-10-22T19:12:51.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/litellm-suspects-github-token-leak-in.html"
+      }
+    ],
     "aliases": [
       "litellm-release-pipeline-compromised-with-maliciou",
       "article-1cce02",
@@ -1199,7 +1402,16 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/facebooks-misleading-privacy-claims-land-meta-a-25-billion-penalty",
     "publishedAt": "2026-10-22T16:59:22.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/meta-new-mexico-penalty-cambridge-analytica-privacy-case"
+      },
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/meta-ordered-to-pay-25-billion-after.html"
+      }
+    ],
     "aliases": [
       "meta-ordered-to-pay-25-billion-for-misleading-priv",
       "article-318930",
@@ -1253,7 +1465,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://cybersecuritynews.com/claude-security-continuous-scans/",
     "publishedAt": "2026-10-22T14:40:43.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/claude-security-continuous-scanning-update/"
+      }
+    ],
     "aliases": [
       "claude-security-enhances-continuous-repository-sca",
       "article-4bb4bc",
@@ -1325,7 +1542,16 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://thehackernews.com/2026/10/interpol-arrests-1462-suspects-disrupts.html",
     "publishedAt": "2026-10-22T13:38:22.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/authorities-disrupt-nearly-11-000-cybercrime-networks-in-africa/"
+      },
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/africa-cybercrime-interpol-arrests"
+      }
+    ],
     "aliases": [
       "interpol-arrests-1-462-suspects-disrupts-10-909-cy",
       "article-5e69d6",
@@ -1343,7 +1569,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://cybersecuritynews.com/hackers-planted-malware/",
     "publishedAt": "2026-10-22T13:05:45.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/japans-onamae-desktop-cloud-hacked-up-to-27-000-servers-affected/"
+      }
+    ],
     "aliases": [
       "malware-infiltration-forces-japanese-cloud-provide",
       "article-52ea52",
@@ -1510,7 +1741,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/sentinelone-singularity-agentic-detection-and-response/",
     "publishedAt": "2026-10-22T11:27:36.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/abstract-links-automated-response-actions-directly-to-siem-detection-rules/"
+      }
+    ],
     "aliases": [
       "sentinelone-introduces-singularity-agentic-detecti",
       "article-6c8dee",
@@ -1619,7 +1855,12 @@ export const news: NewsBrief[] = [
     "cves": [
       "CVE-2026-110936"
     ],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/exploitation-siemens-software-center-vulnerability-cve-2026-110936/"
+      }
+    ],
     "aliases": [
       "hackers-exploit-siemens-software-center-dll-side-l",
       "article-316c85",
@@ -1725,7 +1966,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/google-chrome-https-protection/",
     "publishedAt": "2026-10-21T22:30:30.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/google/google-chrome-adds-gemini-powered-scam-detection-warns-users-of-clickfix-attacks/"
+      }
+    ],
     "aliases": [
       "chrome-adds-permission-prompt-for-insecure-http-co",
       "article-3ac7f4",
@@ -1797,7 +2043,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-hackers-chain-plex-flaws-in-plex2shell-attacks-to-breach-servers/",
     "publishedAt": "2026-10-21T18:34:42.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/plex2shell-how-to-detect-patch-plex-media-server-rce"
+      }
+    ],
     "aliases": [
       "plex-media-server-vulnerabilities-exploited-in-ple",
       "article-3bd12d",
@@ -2118,7 +2369,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.securityweek.com/china-defends-deepseek-after-us-ban-of-its-ai-from-government-systems/",
     "publishedAt": "2026-10-21T10:54:49.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/us-orders-deepseek-removed-from-federal.html"
+      }
+    ],
     "aliases": [
       "us-dhs-orders-removal-of-deepseek-ai-from-federal",
       "article-455413",
@@ -2261,7 +2517,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-and-fbi-safepay-ransomware-has-hit-over-600-critical-infrastructure-organizations/",
     "publishedAt": "2026-10-21T08:36:24.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/fbi-says-safepay-ransomware-gang-among-most-active-600-victims"
+      }
+    ],
     "aliases": [
       "safepay-ransomware-attacks-over-600-critical-infra",
       "article-6cf263",
@@ -2403,7 +2664,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.darkreading.com/insider-threats/ex-openai-engineer-secret-recorder-saudi-ties",
     "publishedAt": "2026-10-20T19:16:49.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/ex-openai-engineer-detained-in-spy.html"
+      }
+    ],
     "aliases": [
       "ex-openai-engineer-detained-over-conference-room-b",
       "article-74d2ab",
@@ -2509,7 +2775,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://cybersecuritynews.com/fbi-suspects-cybersecurity-executive-shinyhunters/",
     "publishedAt": "2026-10-20T15:09:27.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Krebs on Security",
+        "sourceUrl": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/"
+      }
+    ],
     "aliases": [
       "fbi-investigates-cybersecurity-executive-s-role-in",
       "article-8118ff",
@@ -2956,7 +3227,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/cloudflare-ai-clairic-extraction-model/",
     "publishedAt": "2026-10-20T03:45:03.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Cloudflare Security",
+        "sourceUrl": "https://blog.cloudflare.com/clairic-extraction-model/"
+      }
+    ],
     "aliases": [
       "cloudflare-introduces-clairic-a-token-free-invoice",
       "article-b8d2c6",
@@ -3010,7 +3286,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.darkreading.com/data-privacy/adfection-online-ads-spyware-delivery",
     "publishedAt": "2026-10-19T19:55:01.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/israeli-ad-firm-doubled-as-candirus-zero-click-spyware-delivery-channel/"
+      }
+    ],
     "aliases": [
       "adfection-exploits-zero-click-ad-delivery-for-spyw",
       "article-36726c",
@@ -3100,7 +3381,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://thehackernews.com/2026/10/weekly-recap-98-zero-days-rogue-ai.html",
     "publishedAt": "2026-10-19T14:14:07.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/nsa-cisa-and-nist-release-guidelines-to-rogue-ai-agents/"
+      }
+    ],
     "aliases": [
       "weekly-recap-highlights-98-zero-days-rogue-ai-agen",
       "article-2be436",
@@ -3458,7 +3744,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.securityweek.com/us-cybersecurity-job-postings-fall-26-as-ai-security-engineer-demand-soars/",
     "publishedAt": "2026-10-18T11:00:00.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/16/cybersecurity-job-postings-talent-shortage/"
+      }
+    ],
     "aliases": [
       "us-cybersecurity-job-postings-decline-26-as-ai-sec",
       "article-35a5c2",
@@ -3512,7 +3803,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://cybersecuritynews.com/openai-confirms-ai-model-hacked/",
     "publishedAt": "2026-10-17T04:15:46.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/openai-research-model-spent-3rd-party.html"
+      }
+    ],
     "aliases": [
       "openai-ai-model-unauthorizedly-accessed-government",
       "article-21d32c",
@@ -3641,7 +3937,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://thehackernews.com/2026/10/researchers-demonstrate-openbsd-root.html",
     "publishedAt": "2026-10-16T17:48:45.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/37-year-old-kernel-openbsd-flaw/"
+      }
+    ],
     "aliases": [
       "researchers-demonstrate-openbsd-root-exploit-chain",
       "article-56010c",
@@ -3695,7 +3996,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://therecord.media/proofpoint-varonis-cybersecurity-acquisition",
     "publishedAt": "2026-10-16T14:45:00.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/proofpoint-inks-6-3-billion-all-cash-deal-to-acquire-varonis/"
+      }
+    ],
     "aliases": [
       "proofpoint-to-acquire-varonis-for-6-3-billion",
       "article-5aa563",
@@ -3909,7 +4215,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.securityweek.com/bae-systems-security-incident-stalls-notices-from-us-bankruptcy-courts/",
     "publishedAt": "2026-10-16T11:46:40.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/bae-systems-cyberattack-disrupts-us-federal-court-operations/"
+      }
+    ],
     "aliases": [
       "bae-systems-security-incident-halts-us-bankruptcy",
       "article-239aac",
@@ -3962,7 +4273,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://cybersecuritynews.com/chinese-phishing-network-2/",
     "publishedAt": "2026-10-16T11:26:28.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/chinese-phishing-network/"
+      }
+    ],
     "aliases": [
       "chinese-phishing-network-targets-japanese-banks-wi",
       "article-6fea71",
@@ -4016,7 +4332,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://cybersecuritynews.com/cert-in-warns-hackers-using-ai-agents/",
     "publishedAt": "2026-10-16T09:06:40.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/ai-turns-familiar-cyberattacks-into-a-race-against-time/"
+      }
+    ],
     "aliases": [
       "cert-in-warns-of-ai-powered-cyberattacks-reducing",
       "article-431489",
@@ -4087,7 +4408,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/kb5127648-windows-security-update-may-break-smart-app-control/",
     "publishedAt": "2026-10-16T08:44:22.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2022-reached-end-of-mainstream-support/"
+      }
+    ],
     "aliases": [
       "microsoft-windows-11-update-kb5127648-may-disable",
       "article-64fbe1",
@@ -4157,7 +4483,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/16/new-infosec-products-of-the-week-october-16-2026/",
     "publishedAt": "2026-10-16T04:00:27.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "CrowdStrike",
+        "sourceUrl": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-october-2026/"
+      }
+    ],
     "aliases": [
       "new-infosec-products-of-the-week-october-16-2026",
       "article-3092c1",
@@ -4261,7 +4592,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://therecord.media/spyware-citizen-lab-advertising",
     "publishedAt": "2026-10-15T19:00:00.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html"
+      }
+    ],
     "aliases": [
       "zero-click-spyware-spreads-via-online-ads-research",
       "article-31e319",
@@ -4423,7 +4759,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/15/kgb-rat-windows-trojan-webcam-spying-password-theft/",
     "publishedAt": "2026-10-15T13:51:03.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/kgb-rat-malware/"
+      }
+    ],
     "aliases": [
       "kgb-rat-trojan-enables-webcam-microphone-keystroke",
       "article-9b0e6f",
@@ -4584,7 +4925,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/sextortion-help-firm-took-60-million-from-victims-ftc-alleges",
     "publishedAt": "2026-10-15T11:48:26.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/sextortion-assistance-company-alleged-fraud-ftc-complaint"
+      }
+    ],
     "aliases": [
       "ftc-accuses-sextortion-firm-of-60m-fraud",
       "article-2ab075",
@@ -4673,7 +5019,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://thehackernews.com/2026/10/ghostaction-compromises-about-1900.html",
     "publishedAt": "2026-10-15T08:45:10.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/hackers-breach-meta-github-repositories/"
+      }
+    ],
     "aliases": [
       "ghostaction-compromises-about-1-900-github-account",
       "article-6086fa",
@@ -4910,7 +5261,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/10/ai-worms-could-spread-across-your-smart-devices-anthropic-warns",
     "publishedAt": "2026-10-14T16:36:46.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/anthropic-warns-self-replicating-ai-could-spread-to-your-smart-devices/"
+      }
+    ],
     "aliases": [
       "ai-worms-could-spread-across-smart-devices",
       "article-7dfb15",
@@ -5157,7 +5513,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://thehackernews.com/2026/10/how-to-run-deepfake-readiness-drill.html",
     "publishedAt": "2026-10-14T11:50:00.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "SentinelOne",
+        "sourceUrl": "https://www.sentinelone.com/blog/bring-your-own-vulnerable-driver-how-edr-killing-became-an-industry/"
+      }
+    ],
     "aliases": [
       "how-to-run-a-deepfake-readiness-drill-before-a-clo",
       "article-2728dd",
@@ -5175,7 +5536,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/10/update-windows-record-patch-tuesday-fixes-flaw-already-under-attack",
     "publishedAt": "2026-10-14T11:26:09.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Dark Reading",
+        "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/zero-days-microsoft-october-patch-tuesday"
+      }
+    ],
     "aliases": [
       "microsoft-patch-tuesday-addresses-flaw-already-und",
       "article-17065c",
@@ -5319,7 +5685,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/14/github-secret-detection-model/",
     "publishedAt": "2026-10-14T09:26:41.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/meta-says-hackers-took-code-personal-data-of-1500-in-github-breach/"
+      }
+    ],
     "aliases": [
       "github-deploys-cheaper-ai-model-to-detect-secrets",
       "article-78f8ab",
@@ -5354,7 +5725,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/14/openai-engineer-arrested-hidden-recording-device/",
     "publishedAt": "2026-10-14T08:40:41.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/openai-engineer-arrested-for-planting-spyware/"
+      }
+    ],
     "aliases": [
       "openai-engineer-arrested-for-attempting-to-eavesdr",
       "article-5cf8a5",
@@ -5407,7 +5783,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.securityweek.com/chrome-firefox-updates-patch-114-flaws-as-mozilla-unveils-firefox-enterprise/",
     "publishedAt": "2026-10-14T07:38:51.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/13/mozilla-firefox-enterprise-platform/"
+      }
+    ],
     "aliases": [
       "mozilla-launches-firefox-enterprise-amid-chrome-an",
       "article-3fe20a",
@@ -5548,7 +5929,16 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://thehackernews.com/2026/10/docker-fixes-critical-two-year-old-hub.html",
     "publishedAt": "2026-10-13T18:03:18.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/docker-hub-vulnerability/"
+      },
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/docker-hub-flaw-let-attackers-impersonate-users-tamper-with-images/"
+      }
+    ],
     "aliases": [
       "docker-fixes-critical-two-year-old-hub-flaw-allowi",
       "article-4dc54a",
@@ -5620,7 +6010,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://thehackernews.com/2026/10/github-tightens-npm-publishing-after.html",
     "publishedAt": "2026-10-13T16:18:18.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/npm-trusted-publishing-flaw/"
+      }
+    ],
     "aliases": [
       "github-expands-npm-publishing-expiry-to-prevent-pa",
       "article-21a2de",
@@ -5673,7 +6068,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://cybersecuritynews.com/danfoss-refrigeration-hack-exposed-hosts/",
     "publishedAt": "2026-10-13T15:49:00.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/refrigeration-controller-hack-spoils-food-across-european-supermarkets/"
+      }
+    ],
     "aliases": [
       "danfoss-refrigeration-hack-exposes-4-980-internet",
       "article-37d97b",
@@ -5766,7 +6166,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://therecord.media/ledger-cryptocurrency-wallet-implant-theft",
     "publishedAt": "2026-10-13T13:18:00.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/86-million-crypto-heist-linked-to-ledger-signer-hardware-implant/"
+      }
+    ],
     "aliases": [
       "ledger-reports-hardware-implant-in-crypto-wallets",
       "article-39e445",
@@ -5784,7 +6189,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/13/ukraine-drone-strikes-yandex-data-centers/",
     "publishedAt": "2026-10-13T13:15:05.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/yandex-data-center-service-outage/"
+      }
+    ],
     "aliases": [
       "ukrainian-drones-strike-yandex-data-centers",
       "article-6b6493",
@@ -5819,7 +6229,16 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://therecord.media/cyberattack-groceru-ahold-delhaize",
     "publishedAt": "2026-10-13T12:00:00.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/cyberattack-prompts-ahold-delhaize-to-disconnect-systems/"
+      },
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/ahold-delhaize-cyberattack/"
+      }
+    ],
     "aliases": [
       "cyber-incident-affects-ahold-delhaize-stores-in-us",
       "article-21b8df",
@@ -5908,7 +6327,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://cybersecuritynews.com/ubuntu-websites-ddos-attack/",
     "publishedAt": "2026-10-13T04:09:05.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/canonical-websites-disrupted-in-second-ddos-attack-this-year/"
+      }
+    ],
     "aliases": [
       "canonical-suffers-four-hour-ddos-disruption-of-ubu",
       "article-4db69d",
@@ -5943,7 +6367,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/max-severity-ssrf-flaw-sonicwall-sma-devices-under-attack",
     "publishedAt": "2026-10-12T21:42:42.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/critical-sonicwall-sma-1000-flaw.html"
+      }
+    ],
     "aliases": [
       "sonicwall-sma-1000-devices-targeted-for-ssrf-explo",
       "article-7aa16c",
@@ -5979,7 +6408,12 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://cybernewsai.com/blog/avisloader-tox-p2p-malware-loader-defense",
     "publishedAt": "2026-10-12T19:47:08.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/inside-avisloader-a-windows-malware-loader-built-to-resist-disruption/"
+      }
+    ],
     "aliases": [
       "avisloader-malware-loader-uses-tox-p2p-c2-and-lnk",
       "article-337a36",
@@ -6050,7 +6484,20 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/fbi-arrests-suspect-in-fbi-hacking-case.html",
     "publishedAt": "2026-10-12T15:01:26.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/ransomware-response-expert-arrested-in-shinyhunters-fbi-hack-probe/"
+      },
+      {
+        "source": "Krebs on Security",
+        "sourceUrl": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/"
+      },
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/fbi-arrests-cybersecurity-executive-in-shinyhunters/"
+      }
+    ],
     "aliases": [
       "fbi-arrests-suspect-in-shinyhunters-data-theft",
       "article-72bdf7",
@@ -6138,7 +6585,16 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://cybersecuritynews.com/hackers-exploit-critical-ahsaycbs-flaws/",
     "publishedAt": "2026-10-12T11:56:07.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/unpatched-ahsaycbs-flaws-exploited-to-deploy-webshells-mine-crypto/"
+      },
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/attackers-exploit-ahsaycbs-flaws-to.html"
+      }
+    ],
     "aliases": [
       "hackers-exploit-ahsaycbs-backup-server-flaws-to-de",
       "article-32d4b0",
