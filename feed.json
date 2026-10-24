@@ -1,5 +1,68 @@
 [
   {
+    "id": "https://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html",
+    "title": "CISA Flags CVE‑2026‑110447 in Collabora Online and Arista VeloCloud (CVE-2026-76466)",
+    "headline": "CISA Flags CVE‑2026‑110447 in Collabora Online and Arista VeloCloud (CVE-2026-76466)",
+    "summary": "CISA has flagged CVE‑2026‑110447 as a critical flaw in Collabora Online’s CODE Server and Arista VeloCloud Orchestrator, enabling code execution. The CVSS 9.2 vulnerability permits unauthenticated attackers to run arbitrary code on affected servers, threatening enterprise data and. Both vendors have issued patches; security teams should apply updates immediately to mitigate the exploitation risk today.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-24T06:25:57.000Z",
+    "url": "https://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html",
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/new-node2shell-node-js-rce-exploit/"
+      },
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html"
+      }
+    ],
+    "cves": [
+      "CVE-2026-76466"
+    ]
+  },
+  {
+    "id": "https://www.darkreading.com/cyber-risk/trust-is-not-what-it-seems-and-fraudsters-are-counting-on-it",
+    "sourceUrl": "https://www.darkreading.com/cyber-risk/trust-is-not-what-it-seems-and-fraudsters-are-counting-on-it",
+    "title": "Threat Actors Exploit Help Desk Interactions for Unauthorized Access (CVE-2026-115547)",
+    "headline": "Threat Actors Exploit Help Desk Interactions for Unauthorized Access (CVE-2026-115547)",
+    "summary": "Threat actors are exploiting help desk interactions to gain unauthorized access to corporate systems, bypassing traditional malware defenses. The technique relies on social engineering and AI‑assisted script generation to craft convincing requests, requiring only legitimate user credentials. Security teams should enforce strict verification protocols, enable multi‑factor authentication, and conduct regular phishing awareness training to mitigate this threat.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-23T20:57:56.000Z",
+    "url": "https://www.darkreading.com/cyber-risk/trust-is-not-what-it-seems-and-fraudsters-are-counting-on-it",
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/okta-access-gateway-flaw/"
+      },
+      {
+        "source": "Dark Reading",
+        "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/ovhcloud-github-compromise-glassworm-threat-actors"
+      }
+    ],
+    "cves": [
+      "CVE-2026-115547"
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/abandoned-popcorn-time-app-exposed-millions-of-device-to-rce-attacks/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/abandoned-popcorn-time-app-exposed-millions-of-device-to-rce-attacks/",
+    "title": "Abandoned Time4Popcorn App Vulnerable to Remote Code Execution",
+    "headline": "Abandoned Time4Popcorn App Vulnerable to Remote Code Execution",
+    "summary": "A vulnerable updater in the abandoned Time4Popcorn BitTorrent client allowed remote code execution with elevated privileges on millions of devices. Researchers remotely disabled the flaw, preventing attackers from exploiting the updater to inject malicious binaries, though no public exploits were reported. The vendor has released a patch that removes the updater component; administrators should update firmware or uninstall the application to eliminate the risk.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-23T20:55:05.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/abandoned-popcorn-time-app-exposed-millions-of-device-to-rce-attacks/",
+    "additionalSources": []
+  },
+  {
     "id": "https://isc.sans.edu/diary/rss/33452",
     "sourceUrl": "https://isc.sans.edu/diary/rss/33452",
     "title": "php2shell Vulnerability Causes Widespread Panic (CVE-2026-115560)",
@@ -125,6 +188,10 @@
       {
         "source": "SecurityWeek",
         "sourceUrl": "https://www.securityweek.com/litellm-compromised-in-fresh-supply-chain-attack/"
+      },
+      {
+        "source": "Dark Reading",
+        "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/microsoft-storm-0940-connectwise-supply-chain-attack"
       }
     ]
   },
@@ -165,6 +232,10 @@
       {
         "source": "BleepingComputer",
         "sourceUrl": "https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/"
+      },
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/atlassian-patches-75-third-party-flaws-in-data-center-and-server-products/"
       }
     ]
   },
@@ -256,27 +327,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://cybersecuritynews.com/okta-access-gateway-flaw/",
-    "sourceUrl": "https://cybersecuritynews.com/okta-access-gateway-flaw/",
-    "title": "Critical Okta Access Gateway Flaw Lets Attackers With Admin Access Execute System Commands",
-    "headline": "Critical Okta Access Gateway Flaw Lets Attackers With Admin Access Execute System Commands",
-    "summary": "A critical flaw in Okta Access Gateway allows authenticated administrators to execute arbitrary system commands via the Admin Console, affecting versions prior to 2026.10.2. The vulnerability, identified as CVE-2026-115547, carries a CVSS v3.1 score of 9.1 and is exploitable through weak input validation. Okta has released a patch; administrators should upgrade to 2026.10.2 or later immediately.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-23T15:19:23.000Z",
-    "url": "https://cybersecuritynews.com/okta-access-gateway-flaw/",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/hackers-exploiting-velocloud-orchestrator-flaw/"
-      }
-    ],
-    "cves": [
-      "CVE-2026-115547"
-    ]
-  },
-  {
     "id": "https://cybersecuritynews.com/hpe-warns-aruba-networking-flaws/",
     "sourceUrl": "https://cybersecuritynews.com/hpe-warns-aruba-networking-flaws/",
     "title": "HPE Aruba Networking Flaws Enable Full Device Takeover",
@@ -323,36 +373,6 @@
         "source": "The Record",
         "sourceUrl": "https://therecord.media/south-carolina-officials-offer-assistance-cyber-incident"
       }
-    ]
-  },
-  {
-    "id": "https://cybersecuritynews.com/new-node2shell-node-js-rce-exploit/",
-    "sourceUrl": "https://cybersecuritynews.com/new-node2shell-node-js-rce-exploit/",
-    "title": "CVE‑2026‑111497: Node.js Brotli Decoder Remote Code Execution (CVE-2026-76466)",
-    "headline": "CVE‑2026‑111497: Node.js Brotli Decoder Remote Code Execution (CVE-2026-76466)",
-    "summary": "CVE‑2026‑111497 is a high‑severity memory flaw in Node.js’s Brotli decoder that allows attackers to execute arbitrary code via Brotli‑compressed data. The flaw enables unauthenticated remote code execution, and researchers have released a proof‑of‑concept exploit demonstrating its full impact. Node.js has issued a security advisory and released a patch; administrators should update to the latest version to mitigate the risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-23T14:11:40.000Z",
-    "url": "https://cybersecuritynews.com/new-node2shell-node-js-rce-exploit/",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/critical-cisco-expressway-vulnerability/"
-      },
-      {
-        "source": "CISA",
-        "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-04"
-      },
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html"
-      }
-    ],
-    "cves": [
-      "CVE-2026-76466",
-      "CVE-2026-111497"
     ]
   },
   {
@@ -682,6 +702,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.securityweek.com/irans-prince-of-persia-apt-hosts-cc-in-us-for-first-time-since-2016/",
+    "sourceUrl": "https://www.securityweek.com/irans-prince-of-persia-apt-hosts-cc-in-us-for-first-time-since-2016/",
+    "title": "Iranian APT Prince of Persia Deploys US-Based C&C Server",
+    "headline": "Iranian APT Prince of Persia Deploys US-Based C&C Server",
+    "summary": "Prince of Persia APT established a Tornado command-and-control server on a U.S. shared hosting platform, marking its first U.S. presence since 2016. The deployment leverages standard HTTP/HTTPS traffic, enabling remote command execution without requiring privileged access. Security teams should monitor domain registrations and block traffic to the identified IP ranges to mitigate potential command-and-control communications.",
+    "category": "NATION_STATE",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-23T06:39:29.000Z",
+    "url": "https://www.securityweek.com/irans-prince-of-persia-apt-hosts-cc-in-us-for-first-time-since-2016/",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybersecuritynews.com/emergency-java-update/",
     "sourceUrl": "https://cybersecuritynews.com/emergency-java-update/",
     "title": "Oracle Issues Emergency Java Update for Critical 9.1 HTTPS Trust Vulnerability",
@@ -693,6 +726,28 @@
     "publishedAt": "2026-10-23T06:01:47.000Z",
     "url": "https://cybersecuritynews.com/emergency-java-update/",
     "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/23/google-cloud-openai-models-private-preview/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/23/google-cloud-openai-models-private-preview/",
+    "title": "Google Cloud Integrates OpenAI Models, Protects Business Data",
+    "headline": "Google Cloud Integrates OpenAI Models, Protects Business Data",
+    "summary": "Google Cloud announced a private preview adding OpenAI GPT-6 models to its platform, offering business customers GPT-6 Astra, GPT-6.1 Sol, and GPT-6 Luna. The integration promises fast responses for professional tasks while ensuring business data will not train the models, with usage billed through the Google Cloud Marketplace. Users should review data handling policies and enable appropriate access controls to maintain compliance.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-23T06:00:31.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/23/google-cloud-openai-models-private-preview/",
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/21/grafana-labs-knowledge-graph/"
+      },
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/google-cloud-outage/"
+      }
+    ]
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/10/23/nick-donarski-rotorlab-drone-program-compliance/",
@@ -844,24 +899,6 @@
       {
         "source": "The Hacker News",
         "sourceUrl": "https://thehackernews.com/2026/10/litellm-suspects-github-token-leak-in.html"
-      }
-    ]
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html",
-    "title": "Arista VeloCloud Orchestrator SQL Injection Zero-Day Exploited",
-    "headline": "Arista VeloCloud Orchestrator SQL Injection Zero-Day Exploited",
-    "summary": "A zero‑day SQL injection flaw in Arista’s VeloCloud Orchestrator (VCO) permits attackers with read‑only credentials to elevate to operator privileges, granting full control over SD‑WAN networks. The vulnerability is actively exploited in the wild, exposing critical network infrastructure to unauthorized configuration changes. Arista has released a patch; security teams must apply it immediately and restrict read‑only access to mitigate risk.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-22T19:05:17.000Z",
-    "url": "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html",
-    "additionalSources": [
-      {
-        "source": "CISA",
-        "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-12"
       }
     ]
   },
@@ -1434,19 +1471,6 @@
     ]
   },
   {
-    "id": "https://www.darkreading.com/cyberattacks-data-breaches/ovhcloud-github-compromise-glassworm-threat-actors",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/ovhcloud-github-compromise-glassworm-threat-actors",
-    "title": "OVHcloud GitHub Compromise Tied to GlassWorm Threat Actors",
-    "headline": "OVHcloud GitHub Compromise Tied to GlassWorm Threat Actors",
-    "summary": "A compromised developer GitHub account was used to push malicious code to unsuspecting users, linking the incident to the GlassWorm threat actor. The breach exploited credential theft and unauthorized repository access, enabling attackers to distribute malware through legitimate code repositories without detection. OVHcloud should enforce multi‑factor authentication, audit repository activity, and apply security best practices to prevent future credential compromise.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-21T16:50:15.000Z",
-    "url": "https://www.darkreading.com/cyberattacks-data-breaches/ovhcloud-github-compromise-glassworm-threat-actors",
-    "additionalSources": []
-  },
-  {
     "id": "https://cybersecuritynews.com/hackers-use-ai-powered-browsers/",
     "sourceUrl": "https://cybersecuritynews.com/hackers-use-ai-powered-browsers/",
     "title": "Hackers Use AI‑Enabled Browsers to Create Thousands of Fake Accounts",
@@ -1746,19 +1770,6 @@
     ]
   },
   {
-    "id": "https://www.helpnetsecurity.com/2026/10/21/grafana-labs-knowledge-graph/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/21/grafana-labs-knowledge-graph/",
-    "title": "Grafana Labs Integrates Knowledge Graph into Cloud Stack",
-    "headline": "Grafana Labs Integrates Knowledge Graph into Cloud Stack",
-    "summary": "Grafana Labs has integrated a Knowledge Graph into every Grafana Cloud stack, linking infrastructure and application dependencies with user experience and incident response. The release also adds Digital Experience Monitoring and refines Incident Response Management, giving agents shared context to investigate problems and take action. Security teams can now correlate events across services, accelerating root‑cause analysis.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-21T09:30:38.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/21/grafana-labs-knowledge-graph/",
-    "additionalSources": []
-  },
-  {
     "id": "https://www.helpnetsecurity.com/2026/10/21/threatlocker-zero-trust-ai-control-ztaic/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/21/threatlocker-zero-trust-ai-control-ztaic/",
     "title": "ThreatLocker Introduces Zero Trust AI Control (ZTAIC)",
@@ -1822,19 +1833,6 @@
     "source": "Cyber Security News",
     "publishedAt": "2026-10-21T08:28:43.000Z",
     "url": "https://cybersecuritynews.com/apache-tomcat-fixes-8-security-flaws/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/21/ecg-heart-data-privacy-preserving-ai/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/21/ecg-heart-data-privacy-preserving-ai/",
-    "title": "Modern Cardiac Monitoring Transmits ECG Data to Cloud",
-    "headline": "Modern Cardiac Monitoring Transmits ECG Data to Cloud",
-    "summary": "A modern cardiac monitoring system transmits ECG data from wearable devices to cloud services for remote cardiologist review. The shift introduces new privacy risks as data travels through mobile gateways and cloud storage, exposing it to potential interception or misuse. Healthcare providers must enforce end‑to‑end encryption, secure gateway authentication, and compliance with data‑protection regulations to mitigate these risks.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-21T06:00:35.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/21/ecg-heart-data-privacy-preserving-ai/",
     "additionalSources": []
   },
   {
@@ -1945,24 +1943,6 @@
     "publishedAt": "2026-10-20T18:32:00.000Z",
     "url": "https://therecord.media/23andme-california-data-breach-settlement",
     "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/google-cloud-outage/",
-    "sourceUrl": "https://cybersecuritynews.com/google-cloud-outage/",
-    "title": "Google Cloud Outage Disrupts UK Banks, Websites and Court Systems",
-    "headline": "Google Cloud Outage Disrupts UK Banks, Websites and Court Systems",
-    "summary": "A power event triggered a Google Cloud outage in the London region, knocking UK banks, business websites and court video links offline. Services began recovering around 07:08 BST, though a few customers still experienced issues. The incident highlights the impact of infrastructure failures on critical services.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-20T17:17:56.000Z",
-    "url": "https://cybersecuritynews.com/google-cloud-outage/",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/revolut-outage/"
-      }
-    ]
   },
   {
     "id": "https://therecord.media/nigerian-given-8-year-sentenc-tax-hacks",

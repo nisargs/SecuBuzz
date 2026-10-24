@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Oct 2026 07:21:41 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2026 11:32:19 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>CISA Flags CVE‑2026‑110447 in Collabora Online and Arista VeloCloud (CVE-2026-76466)</title>
+      <link>https://secubuzz.com/news/cisa-flags-cve-2026-110447-in-collabora-online-and-6019c7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-flags-cve-2026-110447-in-collabora-online-and-6019c7</guid>
+      <description><![CDATA[CISA has flagged CVE‑2026‑110447 as a critical flaw in Collabora Online’s CODE Server and Arista VeloCloud Orchestrator, enabling code execution. The CVSS 9.2 vulnerability permits unauthenticated attackers to run arbitrary code on affected servers, threatening enterprise data and. Both vendors have issued patches; security teams should apply updates immediately to mitigate the exploitation risk today.]]></description>
+      <pubDate>Sat, 24 Oct 2026 06:25:57 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Threat Actors Exploit Help Desk Interactions for Unauthorized Access (CVE-2026-115547)</title>
+      <link>https://secubuzz.com/news/threat-actors-exploit-help-desk-interactions-for-u-41da77</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/threat-actors-exploit-help-desk-interactions-for-u-41da77</guid>
+      <description><![CDATA[Threat actors are exploiting help desk interactions to gain unauthorized access to corporate systems, bypassing traditional malware defenses. The technique relies on social engineering and AI‑assisted script generation to craft convincing requests, requiring only legitimate user credentials. Security teams should enforce strict verification protocols, enable multi‑factor authentication, and conduct regular phishing awareness training to mitigate this threat.]]></description>
+      <pubDate>Fri, 23 Oct 2026 20:57:56 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyber-risk/trust-is-not-what-it-seems-and-fraudsters-are-counting-on-it">Dark Reading</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Abandoned Time4Popcorn App Vulnerable to Remote Code Execution</title>
+      <link>https://secubuzz.com/news/abandoned-time4popcorn-app-vulnerable-to-remote-co-23f8f6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/abandoned-time4popcorn-app-vulnerable-to-remote-co-23f8f6</guid>
+      <description><![CDATA[A vulnerable updater in the abandoned Time4Popcorn BitTorrent client allowed remote code execution with elevated privileges on millions of devices. Researchers remotely disabled the flaw, preventing attackers from exploiting the updater to inject malicious binaries, though no public exploits were reported. The vendor has released a patch that removes the updater component; administrators should update firmware or uninstall the application to eliminate the risk.]]></description>
+      <pubDate>Fri, 23 Oct 2026 20:55:05 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/abandoned-popcorn-time-app-exposed-millions-of-device-to-rce-attacks/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>php2shell Vulnerability Causes Widespread Panic (CVE-2026-115560)</title>
       <link>https://secubuzz.com/news/php2shell-vulnerability-causes-widespread-panic-cv-57dd7e</link>
@@ -125,15 +152,6 @@
       <category>General</category>
     </item>
     <item>
-      <title>Critical Okta Access Gateway Flaw Lets Attackers With Admin Access Execute System Commands</title>
-      <link>https://secubuzz.com/news/critical-okta-access-gateway-flaw-lets-attackers-w-302b8e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/critical-okta-access-gateway-flaw-lets-attackers-w-302b8e</guid>
-      <description><![CDATA[A critical flaw in Okta Access Gateway allows authenticated administrators to execute arbitrary system commands via the Admin Console, affecting versions prior to 2026.10.2. The vulnerability, identified as CVE-2026-115547, carries a CVSS v3.1 score of 9.1 and is exploitable through weak input validation. Okta has released a patch; administrators should upgrade to 2026.10.2 or later immediately.]]></description>
-      <pubDate>Fri, 23 Oct 2026 15:19:23 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/okta-access-gateway-flaw/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
       <title>HPE Aruba Networking Flaws Enable Full Device Takeover</title>
       <link>https://secubuzz.com/news/hpe-aruba-networking-flaws-enable-full-device-take-2478d1</link>
       <guid isPermaLink="true">https://secubuzz.com/news/hpe-aruba-networking-flaws-enable-full-device-take-2478d1</guid>
@@ -159,15 +177,6 @@
       <pubDate>Fri, 23 Oct 2026 14:22:35 GMT</pubDate>
       <source url="https://cybersecuritynews.com/multiple-waves-of-ddos-attacks-caused-in-north-korea/">Cyber Security News</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>CVE‑2026‑111497: Node.js Brotli Decoder Remote Code Execution (CVE-2026-76466)</title>
-      <link>https://secubuzz.com/news/cve-2026-111497-node-js-brotli-decoder-remote-code-a2d6ed</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-111497-node-js-brotli-decoder-remote-code-a2d6ed</guid>
-      <description><![CDATA[CVE‑2026‑111497 is a high‑severity memory flaw in Node.js’s Brotli decoder that allows attackers to execute arbitrary code via Brotli‑compressed data. The flaw enables unauthenticated remote code execution, and researchers have released a proof‑of‑concept exploit demonstrating its full impact. Node.js has issued a security advisory and released a patch; administrators should update to the latest version to mitigate the risk.]]></description>
-      <pubDate>Fri, 23 Oct 2026 14:11:40 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/new-node2shell-node-js-rce-exploit/">Cyber Security News</source>
-      <category>CVE</category>
     </item>
     <item>
       <title>AI Agent Manipulation via Malicious Inputs Exploits Legitimate Permissions</title>
@@ -341,6 +350,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Iranian APT Prince of Persia Deploys US-Based C&amp;C Server</title>
+      <link>https://secubuzz.com/news/iranian-apt-prince-of-persia-deploys-us-based-c-c-6b9743</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/iranian-apt-prince-of-persia-deploys-us-based-c-c-6b9743</guid>
+      <description><![CDATA[Prince of Persia APT established a Tornado command-and-control server on a U.S. shared hosting platform, marking its first U.S. presence since 2016. The deployment leverages standard HTTP/HTTPS traffic, enabling remote command execution without requiring privileged access. Security teams should monitor domain registrations and block traffic to the identified IP ranges to mitigate potential command-and-control communications.]]></description>
+      <pubDate>Fri, 23 Oct 2026 06:39:29 GMT</pubDate>
+      <source url="https://www.securityweek.com/irans-prince-of-persia-apt-hosts-cc-in-us-for-first-time-since-2016/">SecurityWeek</source>
+      <category>Nation State</category>
+    </item>
+    <item>
       <title>Oracle Issues Emergency Java Update for Critical 9.1 HTTPS Trust Vulnerability</title>
       <link>https://secubuzz.com/news/oracle-issues-emergency-java-update-for-critical-9-3aa4e5</link>
       <guid isPermaLink="true">https://secubuzz.com/news/oracle-issues-emergency-java-update-for-critical-9-3aa4e5</guid>
@@ -348,6 +366,15 @@
       <pubDate>Fri, 23 Oct 2026 06:01:47 GMT</pubDate>
       <source url="https://cybersecuritynews.com/emergency-java-update/">Cyber Security News</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Google Cloud Integrates OpenAI Models, Protects Business Data</title>
+      <link>https://secubuzz.com/news/google-cloud-integrates-openai-models-protects-bus-588ecf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-cloud-integrates-openai-models-protects-bus-588ecf</guid>
+      <description><![CDATA[Google Cloud announced a private preview adding OpenAI GPT-6 models to its platform, offering business customers GPT-6 Astra, GPT-6.1 Sol, and GPT-6 Luna. The integration promises fast responses for professional tasks while ensuring business data will not train the models, with usage billed through the Google Cloud Marketplace. Users should review data handling policies and enable appropriate access controls to maintain compliance.]]></description>
+      <pubDate>Fri, 23 Oct 2026 06:00:31 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/23/google-cloud-openai-models-private-preview/">Help Net Security</source>
+      <category>General</category>
     </item>
     <item>
       <title>Drone Program Compliance Interview Highlights Common Gaps</title>
@@ -429,33 +456,6 @@
       <pubDate>Thu, 22 Oct 2026 19:30:20 GMT</pubDate>
       <source url="https://www.darkreading.com/ics-ot-security/eu-grocers-unpatched-fridge-firmware-french">Dark Reading</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>LiteLLM Release Pipeline Compromised with Malicious Docker Images</title>
-      <link>https://secubuzz.com/news/litellm-release-pipeline-compromised-with-maliciou-1cce02</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/litellm-release-pipeline-compromised-with-maliciou-1cce02</guid>
-      <description><![CDATA[Hackers infiltrated the LiteLLM project's release pipeline, injecting malicious Docker images into the PyPI distribution. The compromised images contain an info‑stealer that harvests credentials, secrets, and environment variables, and the attack demonstrates a supply‑chain compromise with active exploitation. LiteLLM issued a security advisory, urging users to verify image signatures, update to the latest patched version, and monitor for credential exfiltration.]]></description>
-      <pubDate>Thu, 22 Oct 2026 19:12:51 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/litellm-release-pipeline-hacked-to-distribute-info-stealer-malware/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Arista VeloCloud Orchestrator SQL Injection Zero-Day Exploited</title>
-      <link>https://secubuzz.com/news/arista-velocloud-orchestrator-sql-injection-zero-d-13b84e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/arista-velocloud-orchestrator-sql-injection-zero-d-13b84e</guid>
-      <description><![CDATA[A zero‑day SQL injection flaw in Arista’s VeloCloud Orchestrator (VCO) permits attackers with read‑only credentials to elevate to operator privileges, granting full control over SD‑WAN networks. The vulnerability is actively exploited in the wild, exposing critical network infrastructure to unauthorized configuration changes. Arista has released a patch; security teams must apply it immediately and restrict read‑only access to mitigate risk.]]></description>
-      <pubDate>Thu, 22 Oct 2026 19:05:17 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Unit 42 Explores Contemporary OAuth Attack Landscape</title>
-      <link>https://secubuzz.com/news/unit-42-explores-contemporary-oauth-attack-landsca-40585f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/unit-42-explores-contemporary-oauth-attack-landsca-40585f</guid>
-      <description><![CDATA[Unit 42 examines contemporary OAuth attacks, highlighting credential theft, token misuse, and phishing vectors targeting OAuth implementations. The analysis identifies redirect URI manipulation, insecure client secrets, and insufficient scope validation as common exploitation techniques. Security teams should enforce redirect URI whitelisting, rotate client secrets, implement scope checks, and monitor anomalous token usage to mitigate risks.]]></description>
-      <pubDate>Thu, 22 Oct 2026 17:00:25 GMT</pubDate>
-      <source url="https://unit42.paloaltonetworks.com/current-landscape-oauth-attacks/">Unit 42</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
