@@ -2252,5 +2252,14 @@
   "https://www.darkreading.com/cyberattacks-data-breaches/microsoft-storm-0940-connectwise-supply-chain-attack",
   "https://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html",
   "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
-  "https://thehackernews.com/2026/10/google-says-gmail-and-photos-data.html"
+  "https://thehackernews.com/2026/10/google-says-gmail-and-photos-data.html",
+  "https://unit42.paloaltonetworks.com/noise-inside-network-third-party-risk/",
+  "https://www.wiz.io/blog/anatomy-of-ai-driven-cloud-attacks",
+  "https://blog.talosintelligence.com/theres-only-so-much-code-the-rise-in-vulnerability-numbers/",
+  "https://cybersecuritynews.com/palo-alto-confirms-php-rce-vulnerabilities/",
+  "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/",
+  "https://www.securityweek.com/atlassian-patches-75-third-party-flaws-in-data-center-and-server-products/",
+  "https://therecord.media/php-php2shell-exploitation-attempts-pocs",
+  "https://blog.talosintelligence.com/i-had-plans-for-that-second/",
+  "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-08"
 ]

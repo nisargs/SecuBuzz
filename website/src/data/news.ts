@@ -49,6 +49,40 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "palo-alto-confirms-php-rce-vulnerabilities-impact-521f63",
+    "title": "Palo Alto Confirms PHP RCE Vulnerabilities Impact PAN-OS and Multiple Network Products",
+    "summary": "Palo Alto Networks disclosed two PHP remote code execution vulnerabilities affecting PAN-OS and two cloud services, accessed via exposed management interfaces. The flaws, identified as CVE-2026-109618 and CVE-2026-109619, enable unauthenticated attackers to execute arbitrary code, posing high‑risk operational impact. Palo Alto has released hotfixes and recommends restricting management interface access until patches are applied.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/palo-alto-confirms-php-rce-vulnerabilities/",
+    "publishedAt": "2026-10-24T06:41:29.000Z",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/"
+      },
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html"
+      }
+    ],
+    "aliases": [
+      "palo-alto-confirms-php-rce-vulnerabilities-impact",
+      "article-521f63",
+      "521f63",
+      "palo-alto-confirms-php-rce-vulnerabilities-impact-pan-os-and",
+      "php-releases-mitigation-for-cve-2026-115560-rce-vu-3e4da4",
+      "php-releases-mitigation-for-cve-2026-115560-rce-vulnerabilit",
+      "enterprise-firewalls-and-vpns-breached-70-000-cred-1f7b9d",
+      "enterprise-firewalls-and-vpns-breached-70-000-credentials-ex"
+    ]
+  },
+  {
     "slug": "cisa-flags-cve-2026-110447-in-collabora-online-and-6019c7",
     "title": "CISA Flags CVE‑2026‑110447 in Collabora Online and Arista VeloCloud (CVE-2026-76466)",
     "summary": "CISA has flagged CVE‑2026‑110447 as a critical flaw in Collabora Online’s CODE Server and Arista VeloCloud Orchestrator, enabling code execution. The CVSS 9.2 vulnerability permits unauthenticated attackers to run arbitrary code on affected servers, threatening enterprise data and. Both vendors have issued patches; security teams should apply updates immediately to mitigate the exploitation risk today.",
@@ -432,24 +466,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "enterprise-firewalls-and-vpns-breached-70-000-cred-1f7b9d",
-    "title": "Enterprise Firewalls and VPNs Breached, 70,000 Credentials Exposed",
-    "summary": "Hackers breached exposed Fortinet FortiGate and Palo Alto Networks GlobalProtect firewalls, accessing over 70,000 credentials across multiple organizations worldwide. The attack leveraged misconfigured network edge devices, allowing attackers to enumerate and exfiltrate stored credentials. Immediate patching of firewall firmware, tightening of VPN authentication, and network segmentation are required to remediate the breach.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html",
-    "publishedAt": "2026-10-23T13:50:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "enterprise-firewalls-and-vpns-breached-70-000-cred",
-      "article-1f7b9d",
-      "1f7b9d",
-      "enterprise-firewalls-and-vpns-breached-70-000-credentials-ex"
-    ]
-  },
-  {
     "slug": "stealc-returns-with-stadia-rat-for-password-theft-5e33ee",
     "title": "StealC Returns with Stadia RAT for Password Theft and Remote Control",
     "summary": "The StealC operator has reintroduced its malware as Stadia, a Windows remote access trojan that steals passwords and secretly controls victim PCs. The RAT expands beyond credential theft, allowing attackers to execute commands, browse files, manage processes, and load additional malicious payloads. Security teams should monitor for unusual remote control activity and apply endpoint protection updates.",
@@ -721,6 +737,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "atlassian-releases-patch-for-75-vulnerabilities-in-5d2e8e",
+    "title": "Atlassian Releases Patch for 75 Vulnerabilities in Data Center and Server Products",
+    "summary": "Atlassian’s October bulletin lists 75 vulnerabilities affecting Data Center and Server products, including 14 critical‑severity issues located in third‑party components. The flaws enable authenticated remote code execution and privilege escalation when users access affected services. Atlassian has issued patches for all affected components; administrators should apply the updates immediately to mitigate exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/atlassian-patches-75-third-party-flaws-in-data-center-and-server-products/",
+    "publishedAt": "2026-10-23T07:54:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "atlassian-releases-patch-for-75-vulnerabilities-in",
+      "article-5d2e8e",
+      "5d2e8e",
+      "atlassian-releases-patch-for-75-vulnerabilities-in-data-cent"
+    ]
+  },
+  {
     "slug": "iranian-apt-prince-of-persia-deploys-us-based-c-c-6b9743",
     "title": "Iranian APT Prince of Persia Deploys US-Based C&C Server",
     "summary": "Prince of Persia APT established a Tornado command-and-control server on a U.S. shared hosting platform, marking its first U.S. presence since 2016. The deployment leverages standard HTTP/HTTPS traffic, enabling remote command execution without requiring privileged access. Security teams should monitor domain registrations and block traffic to the identified IP ranges to mitigate potential command-and-control communications.",
@@ -807,6 +841,23 @@ export const news: NewsBrief[] = [
       "new-infosec-products-of-the-week-october-23-2026",
       "article-5cf87d",
       "5cf87d"
+    ]
+  },
+  {
+    "slug": "php2shell-bug-sparks-exploitation-attempts-37092e",
+    "title": "PHP2Shell Bug Sparks Exploitation Attempts",
+    "summary": "The PHP2Shell bug, a PHP flaw enabling remote code execution, has spurred attempts against servers running vulnerable PHP versions. The flaw requires authenticated access and local file inclusion, with no confirmed zero‑day exploit in the wild yet. Until an official patch arrives, administrators should disable remote file uploads, enforce least‑privilege PHP execution, and monitor for anomalous file changes.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/php-php2shell-exploitation-attempts-pocs",
+    "publishedAt": "2026-10-23T04:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "php2shell-bug-sparks-exploitation-attempts",
+      "article-37092e",
+      "37092e"
     ]
   },
   {
@@ -933,6 +984,23 @@ export const news: NewsBrief[] = [
       "article-1cce02",
       "1cce02",
       "litellm-release-pipeline-compromised-with-malicious-docker-i"
+    ]
+  },
+  {
+    "slug": "critical-php-vulnerabilities-identified-61e462",
+    "title": "Critical PHP Vulnerabilities Identified",
+    "summary": "Critical vulnerabilities have been discovered in PHP, exposing affected web applications to potential remote code execution via malformed input. The flaw allows attackers to inject arbitrary code, leading to full system compromise and data exfiltration. Immediate patching of the latest PHP release and disabling vulnerable extensions is mandatory.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cisco Talos",
+    "sourceUrl": "https://blog.talosintelligence.com/i-had-plans-for-that-second/",
+    "publishedAt": "2026-10-22T18:04:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "critical-php-vulnerabilities-identified",
+      "article-61e462",
+      "61e462"
     ]
   },
   {
@@ -1167,6 +1235,27 @@ export const news: NewsBrief[] = [
       "article-44a04b",
       "44a04b",
       "ringrtc-call-hang-up-vulnerability-exploited-by-malicious-ca"
+    ]
+  },
+  {
+    "slug": "siemens-apogee-talon-desigo-pxc-pxm-vulnerabilitie-42ff49",
+    "title": "Siemens APOGEE, TALON, Desigo PXC/PXM Vulnerabilities (CVE-2026-102073 to CVE-2026-102076)",
+    "summary": "Siemens APOGEE, TALON, and Desigo PXC/PXM products contain multiple CVE-2026-102073 through CVE-2026-102076 vulnerabilities that enable denial of service and availability impact. The flaws stem from improper input validation in BACnet and Ethernet interfaces, allowing attackers to crash devices remotely. Siemens has released patched firmware; users must upgrade immediately and apply recommended mitigations.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-08",
+    "publishedAt": "2026-10-22T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-102073",
+      "CVE-2026-102076"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "siemens-apogee-talon-desigo-pxc-pxm-vulnerabilitie",
+      "article-42ff49",
+      "42ff49",
+      "siemens-apogee-talon-desigo-pxc-pxm-vulnerabilities-cve-2026"
     ]
   },
   {

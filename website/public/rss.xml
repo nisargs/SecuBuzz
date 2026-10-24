@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Oct 2026 15:47:09 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2026 16:14:52 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Brotli Decoder Memory Corruption Enables RCE in Node.js, Bun, Python, and Envoy</title>
@@ -24,6 +24,15 @@
       <pubDate>Sat, 24 Oct 2026 10:36:33 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/google-says-gmail-and-photos-data.html">The Hacker News</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Palo Alto Confirms PHP RCE Vulnerabilities Impact PAN-OS and Multiple Network Products</title>
+      <link>https://secubuzz.com/news/palo-alto-confirms-php-rce-vulnerabilities-impact-521f63</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/palo-alto-confirms-php-rce-vulnerabilities-impact-521f63</guid>
+      <description><![CDATA[Palo Alto Networks disclosed two PHP remote code execution vulnerabilities affecting PAN-OS and two cloud services, accessed via exposed management interfaces. The flaws, identified as CVE-2026-109618 and CVE-2026-109619, enable unauthenticated attackers to execute arbitrary code, posing high‑risk operational impact. Palo Alto has released hotfixes and recommends restricting management interface access until patches are applied.]]></description>
+      <pubDate>Sat, 24 Oct 2026 06:41:29 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/palo-alto-confirms-php-rce-vulnerabilities/">Cyber Security News</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>CISA Flags CVE‑2026‑110447 in Collabora Online and Arista VeloCloud (CVE-2026-76466)</title>
@@ -215,15 +224,6 @@
       <category>General</category>
     </item>
     <item>
-      <title>Enterprise Firewalls and VPNs Breached, 70,000 Credentials Exposed</title>
-      <link>https://secubuzz.com/news/enterprise-firewalls-and-vpns-breached-70-000-cred-1f7b9d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/enterprise-firewalls-and-vpns-breached-70-000-cred-1f7b9d</guid>
-      <description><![CDATA[Hackers breached exposed Fortinet FortiGate and Palo Alto Networks GlobalProtect firewalls, accessing over 70,000 credentials across multiple organizations worldwide. The attack leveraged misconfigured network edge devices, allowing attackers to enumerate and exfiltrate stored credentials. Immediate patching of firewall firmware, tightening of VPN authentication, and network segmentation are required to remediate the breach.]]></description>
-      <pubDate>Fri, 23 Oct 2026 13:50:56 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
       <title>StealC Returns with Stadia RAT for Password Theft and Remote Control</title>
       <link>https://secubuzz.com/news/stealc-returns-with-stadia-rat-for-password-theft-5e33ee</link>
       <guid isPermaLink="true">https://secubuzz.com/news/stealc-returns-with-stadia-rat-for-password-theft-5e33ee</guid>
@@ -359,6 +359,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Atlassian Releases Patch for 75 Vulnerabilities in Data Center and Server Products</title>
+      <link>https://secubuzz.com/news/atlassian-releases-patch-for-75-vulnerabilities-in-5d2e8e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/atlassian-releases-patch-for-75-vulnerabilities-in-5d2e8e</guid>
+      <description><![CDATA[Atlassian’s October bulletin lists 75 vulnerabilities affecting Data Center and Server products, including 14 critical‑severity issues located in third‑party components. The flaws enable authenticated remote code execution and privilege escalation when users access affected services. Atlassian has issued patches for all affected components; administrators should apply the updates immediately to mitigate exploitation.]]></description>
+      <pubDate>Fri, 23 Oct 2026 07:54:47 GMT</pubDate>
+      <source url="https://www.securityweek.com/atlassian-patches-75-third-party-flaws-in-data-center-and-server-products/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Iranian APT Prince of Persia Deploys US-Based C&amp;C Server</title>
       <link>https://secubuzz.com/news/iranian-apt-prince-of-persia-deploys-us-based-c-c-6b9743</link>
       <guid isPermaLink="true">https://secubuzz.com/news/iranian-apt-prince-of-persia-deploys-us-based-c-c-6b9743</guid>
@@ -404,6 +413,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>PHP2Shell Bug Sparks Exploitation Attempts</title>
+      <link>https://secubuzz.com/news/php2shell-bug-sparks-exploitation-attempts-37092e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/php2shell-bug-sparks-exploitation-attempts-37092e</guid>
+      <description><![CDATA[The PHP2Shell bug, a PHP flaw enabling remote code execution, has spurred attempts against servers running vulnerable PHP versions. The flaw requires authenticated access and local file inclusion, with no confirmed zero‑day exploit in the wild yet. Until an official patch arrives, administrators should disable remote file uploads, enforce least‑privilege PHP execution, and monitor for anomalous file changes.]]></description>
+      <pubDate>Fri, 23 Oct 2026 04:00:00 GMT</pubDate>
+      <source url="https://therecord.media/php-php2shell-exploitation-attempts-pocs">The Record</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>State Bank of India Suffers a Customer PII Data Leak</title>
       <link>https://secubuzz.com/news/state-bank-of-india-suffers-a-customer-pii-data-le-7ed967</link>
       <guid isPermaLink="true">https://secubuzz.com/news/state-bank-of-india-suffers-a-customer-pii-data-le-7ed967</guid>
@@ -438,24 +456,6 @@
       <pubDate>Thu, 22 Oct 2026 21:25:31 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/railway-warns-devs-to-rotate-secrets-after-potential-breach/">BleepingComputer</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Federal Agents Seize Texas Laptop Farms Linked to Espionage</title>
-      <link>https://secubuzz.com/news/federal-agents-seize-texas-laptop-farms-linked-to-632e59</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/federal-agents-seize-texas-laptop-farms-linked-to-632e59</guid>
-      <description><![CDATA[Federal agents seized multiple illicit laptop farms in Texas, targeting stolen hardware used for espionage. The operation, part of broader efforts to dismantle North Korean state-sponsored infrastructure, involved coordinated raids and seizure of devices linked to data exfiltration. Law enforcement released a statement urging vendors to secure supply chains and report suspicious hardware acquisitions.]]></description>
-      <pubDate>Thu, 22 Oct 2026 20:33:10 GMT</pubDate>
-      <source url="https://www.darkreading.com/insider-threats/texas-laptop-farms-north-korean-it-workers">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>EU Supermarkets Hit by Outdated Refrigerator Firmware</title>
-      <link>https://secubuzz.com/news/eu-supermarkets-hit-by-outdated-refrigerator-firmw-666457</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/eu-supermarkets-hit-by-outdated-refrigerator-firmw-666457</guid>
-      <description><![CDATA[An outdated OT firmware controlling refrigeration systems in EU supermarkets enabled attackers to compromise HVAC controls, causing millions of euros in losses. The flaw stemmed from third‑party firmware management lacking timely updates, allowing unauthorized manipulation of temperature settings. Vendors should immediately deploy the latest firmware patches and enforce strict update policies to mitigate further exposure.]]></description>
-      <pubDate>Thu, 22 Oct 2026 19:30:20 GMT</pubDate>
-      <source url="https://www.darkreading.com/ics-ot-security/eu-grocers-unpatched-fridge-firmware-french">Dark Reading</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
