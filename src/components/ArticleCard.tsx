@@ -15,6 +15,7 @@ import { colors, severityColors, spacing } from '../theme/theme';
 const BLUE = colors.accent;
 import { copyArticleToClipboard } from '../utils/copyReport';
 import { formatPublishedAt } from '../utils/formatPublishedAt';
+import { isVendorPsirt } from '../utils/psirt';
 import { openArticle } from '../utils/openArticle';
 import { shareArticle } from '../utils/shareArticle';
 import { wordCount } from '../utils/wordCount';
@@ -93,6 +94,31 @@ export function ArticleCard({
               {formatCategory(article.category)}
             </Text>
           </Pressable>
+
+          {isVendorPsirt(article.sourceName) ? (
+            <View
+              style={[
+                styles.psirtTag,
+                {
+                  backgroundColor: isDark
+                    ? 'rgba(76, 201, 240, 0.08)'
+                    : 'rgba(0, 119, 182, 0.06)',
+                  borderColor: isDark
+                    ? 'rgba(76, 201, 240, 0.35)'
+                    : 'rgba(0, 119, 182, 0.35)',
+                },
+              ]}
+            >
+              <Text
+                style={[
+                  styles.psirtLabel,
+                  { color: isDark ? '#4CC9F0' : '#0077B6' },
+                ]}
+              >
+                VENDOR PSIRT
+              </Text>
+            </View>
+          ) : null}
 
           {article.severity && severityConfig ? (
             <Pressable
@@ -315,6 +341,19 @@ const styles = StyleSheet.create({
     fontFamily: 'Exo_600SemiBold',
     fontSize: 11,
     letterSpacing: 1.7,
+  },
+
+  psirtTag: {
+    paddingHorizontal: 5,
+    paddingVertical: 1.5,
+    borderRadius: 3,
+    borderWidth: 1,
+  },
+
+  psirtLabel: {
+    fontFamily: 'Exo_600SemiBold',
+    fontSize: 9,
+    letterSpacing: 0.8,
   },
 
   severityTag: {

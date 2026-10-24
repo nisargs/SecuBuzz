@@ -21,7 +21,9 @@ import { FeedbackCard, FEEDBACK_DISMISSED_KEY } from '../../components/FeedbackC
 import {
   FilterModal,
   type SeverityFilter,
+  type SourceFilter,
 } from '../../components/FilterModal';
+import { isVendorPsirt } from '../../utils/psirt';
 import { OnboardingModal, WALKTHROUGH_STORAGE_KEY } from '../../components/OnboardingModal';
 import {
   EmptyState,
@@ -88,6 +90,9 @@ export default function FeedScreen() {
   const [severityFilter, setSeverityFilter] =
     useState<SeverityFilter>('ALL');
 
+  const [sourceFilter, setSourceFilter] =
+    useState<SourceFilter>('ALL');
+
   const [filterModalOpen, setFilterModalOpen] =
     useState(false);
 
@@ -107,7 +112,7 @@ export default function FeedScreen() {
   }, []);
 
   const isAnyFilterActive =
-    filter !== 'ALL' || severityFilter !== 'ALL';
+    filter !== 'ALL' || severityFilter !== 'ALL' || sourceFilter !== 'ALL';
 
   const [refreshing, setRefreshing] =
     useState(false);
@@ -227,12 +232,14 @@ export default function FeedScreen() {
   }, [state]);
 
   /*
-   * Category and severity counts for filter badges (faceted counts).
+   * Category, severity, and source counts for filter badges (faceted counts).
    */
   const severityCounts = useMemo(() => {
     const query = searchQuery.trim().toLowerCase();
     const candidateArticles = articles.filter((a) => {
       if (filter !== 'ALL' && a.category !== filter) return false;
+      if (sourceFilter === 'PSIRT' && !isVendorPsirt(a.sourceName)) return false;
+      if (sourceFilter === 'MEDIA' && isVendorPsirt(a.sourceName)) return false;
       if (!query) return true;
       const searchableText = [
         a.headline,
@@ -259,12 +266,14 @@ export default function FeedScreen() {
       }
     });
     return counts;
-  }, [articles, filter, searchQuery]);
+  }, [articles, filter, sourceFilter, searchQuery]);
 
   const categoryCounts = useMemo(() => {
     const query = searchQuery.trim().toLowerCase();
     const candidateArticles = articles.filter((a) => {
       if (severityFilter !== 'ALL' && a.severity !== severityFilter) return false;
+      if (sourceFilter === 'PSIRT' && !isVendorPsirt(a.sourceName)) return false;
+      if (sourceFilter === 'MEDIA' && isVendorPsirt(a.sourceName)) return false;
       if (!query) return true;
       const searchableText = [
         a.headline,
@@ -288,11 +297,44 @@ export default function FeedScreen() {
       }
     });
     return counts;
-  }, [articles, severityFilter, searchQuery]);
+  }, [articles, severityFilter, sourceFilter, searchQuery]);
+
+  const sourceCounts = useMemo(() => {
+    const query = searchQuery.trim().toLowerCase();
+    const candidateArticles = articles.filter((a) => {
+      if (filter !== 'ALL' && a.category !== filter) return false;
+      if (severityFilter !== 'ALL' && a.severity !== severityFilter) return false;
+      if (!query) return true;
+      const searchableText = [
+        a.headline,
+        a.summary,
+        a.sourceName,
+        a.category,
+        a.severity || '',
+      ]
+        .join(' ')
+        .toLowerCase();
+      return searchableText.includes(query);
+    });
+
+    const counts: Record<string, number> = {
+      ALL: candidateArticles.length,
+      PSIRT: 0,
+      MEDIA: 0,
+    };
+    candidateArticles.forEach((a) => {
+      if (isVendorPsirt(a.sourceName)) {
+        counts.PSIRT++;
+      } else {
+        counts.MEDIA++;
+      }
+    });
+    return counts;
+  }, [articles, filter, severityFilter, searchQuery]);
 
   /*
    * Multi-dimensional filtering:
-   * Category + Threat Severity + Search query.
+   * Category + Threat Severity + Source + Search query.
    */
   const filteredArticles = useMemo(() => {
     let result = articles;
@@ -306,6 +348,16 @@ export default function FeedScreen() {
     if (severityFilter !== 'ALL') {
       result = result.filter(
         (article) => article.severity === severityFilter,
+      );
+    }
+
+    if (sourceFilter === 'PSIRT') {
+      result = result.filter(
+        (article) => isVendorPsirt(article.sourceName),
+      );
+    } else if (sourceFilter === 'MEDIA') {
+      result = result.filter(
+        (article) => !isVendorPsirt(article.sourceName),
       );
     }
 
@@ -331,6 +383,7 @@ export default function FeedScreen() {
     articles,
     filter,
     severityFilter,
+    sourceFilter,
     searchQuery,
   ]);
 
@@ -435,6 +488,7 @@ export default function FeedScreen() {
   }, [
     filter,
     severityFilter,
+    sourceFilter,
     searchQuery,
   ]);
 
@@ -842,6 +896,15 @@ export default function FeedScreen() {
                   fontFamily: 'Exo_700Bold',
                 }}
               >
+                {sourceFilter === 'PSIRT'
+                  ? 'Vendor PSIRT'
+                  : sourceFilter === 'MEDIA'
+                  ? 'Media & Research'
+                  : ''}
+                {sourceFilter !== 'ALL' &&
+                (severityFilter !== 'ALL' || filter !== 'ALL')
+                  ? ' · '
+                  : ''}
                 {severityFilter !== 'ALL' ? severityFilter : ''}
                 {severityFilter !== 'ALL' && filter !== 'ALL' ? ' · ' : ''}
                 {filter !== 'ALL' ? formatCategory(filter) : ''}
@@ -857,6 +920,7 @@ export default function FeedScreen() {
             onPress={() => {
               setFilter('ALL');
               setSeverityFilter('ALL');
+              setSourceFilter('ALL');
             }}
             style={styles.clearFilterButton}
           >
@@ -1142,14 +1206,20 @@ export default function FeedScreen() {
         onSelectSeverity={(sev) => {
           setSeverityFilter(sev);
         }}
+        selectedSource={sourceFilter}
+        onSelectSource={(src) => {
+          setSourceFilter(src);
+        }}
         onReset={() => {
           setFilter('ALL');
           setSeverityFilter('ALL');
+          setSourceFilter('ALL');
         }}
         totalArticlesCount={articles.length}
         filteredCount={filteredArticles.length}
         severityCounts={severityCounts}
         categoryCounts={categoryCounts}
+        sourceCounts={sourceCounts}
       />
 
       <OnboardingModal

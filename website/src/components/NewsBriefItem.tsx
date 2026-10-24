@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowUpRightIcon } from 'lucide-react';
 import type { NewsBrief, NewsCategory, NewsSeverity } from '../types/news';
 import { timeAgo } from '../utils/date';
+import { isVendorPsirt } from '../utils/psirt';
 
 interface NewsBriefItemProps {
   brief: NewsBrief;
@@ -70,6 +71,11 @@ export function NewsBriefItem({ brief, onSelectSeverity, onSelectCategory }: New
               {brief.severity}
             </span>
           )
+        )}
+        {isVendorPsirt(brief.source) && (
+          <span className="inline-flex items-center rounded border border-cyan-500/35 bg-cyan-500/10 px-1.5 py-0.5 text-[9px] font-semibold uppercase tracking-wider text-cyan-400">
+            Vendor PSIRT
+          </span>
         )}
         <time dateTime={brief.publishedAt} className="text-subtle">
           {timeAgo(brief.publishedAt)}

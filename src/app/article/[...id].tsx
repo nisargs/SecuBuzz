@@ -29,6 +29,7 @@ import { colors, severityColors, spacing } from '../../theme/theme';
 const BLUE = colors.accent;
 import { copyAdvisoryToClipboard, copyArticleToClipboard } from '../../utils/copyReport';
 import { formatPublishedAt } from '../../utils/formatPublishedAt';
+import { isVendorPsirt } from '../../utils/psirt';
 import { openArticle } from '../../utils/openArticle';
 import { shareArticle } from '../../utils/shareArticle';
 import { wordCount } from '../../utils/wordCount';
@@ -493,6 +494,31 @@ export default function ArticleDetailScreen() {
             {formatCategory(article.category)}
           </Text>
 
+          {isVendorPsirt(article.sourceName) ? (
+            <View
+              style={[
+                styles.psirtTag,
+                {
+                  backgroundColor: isDark
+                    ? 'rgba(76, 201, 240, 0.08)'
+                    : 'rgba(0, 119, 182, 0.06)',
+                  borderColor: isDark
+                    ? 'rgba(76, 201, 240, 0.35)'
+                    : 'rgba(0, 119, 182, 0.35)',
+                },
+              ]}
+            >
+              <Text
+                style={[
+                  styles.psirtLabel,
+                  { color: isDark ? '#4CC9F0' : '#0077B6' },
+                ]}
+              >
+                VENDOR PSIRT
+              </Text>
+            </View>
+          ) : null}
+
           {article.severity && severityConfig ? (
             <View
               style={[
@@ -777,7 +803,11 @@ export default function ArticleDetailScreen() {
         >
           <View>
             <Text style={[styles.originalLabel, { color: accentColor }]}>
-              {isAdvisory ? 'INSPECT ADVISORY' : 'READ ORIGINAL'}
+              {isAdvisory
+                ? 'INSPECT ADVISORY'
+                : isVendorPsirt(article.sourceName)
+                ? 'OFFICIAL VENDOR BULLETIN'
+                : 'READ ORIGINAL'}
             </Text>
 
             <Text style={[styles.originalSource, { color: colors.textMuted }]}>
@@ -906,6 +936,19 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: '700',
     letterSpacing: 1.6,
+  },
+
+  psirtTag: {
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderRadius: 3,
+    borderWidth: 1,
+  },
+
+  psirtLabel: {
+    fontFamily: 'Exo_600SemiBold',
+    fontSize: 9.5,
+    letterSpacing: 0.8,
   },
 
   severityTag: {

@@ -10,6 +10,7 @@ import { Seo } from '../components/Seo';
 import { NotFound } from './NotFound';
 import { clockTime, isValidDate, shortDate, timeAgo } from '../utils/date';
 import { wordCount } from '../utils/text';
+import { isVendorPsirt } from '../utils/psirt';
 
 export function NewsArticle() {
   const { slug } = useParams();
@@ -171,6 +172,11 @@ export function NewsArticle() {
                   {brief.severity}
                 </span>
               )}
+              {isVendorPsirt(brief.source) && (
+                <span className="inline-flex items-center rounded border border-cyan-500/35 bg-cyan-500/10 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-cyan-400">
+                  Vendor PSIRT
+                </span>
+              )}
               <span className="text-subtle">·</span>
               <time dateTime={brief.publishedAt} className="text-muted">
                 {`${shortDate(brief.publishedAt)}, ${clockTime(brief.publishedAt)} UTC`}
@@ -243,7 +249,7 @@ export function NewsArticle() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex h-10 items-center justify-center gap-1.5 whitespace-nowrap rounded-md bg-accent px-4 text-sm font-semibold text-accent-ink transition-colors duration-150 ease-out hover:bg-accent/90">
-                Read original reporting <ArrowUpRightIcon className="h-4 w-4" aria-hidden="true" />
+                {isVendorPsirt(brief.source) ? 'View official vendor advisory' : 'Read original reporting'} <ArrowUpRightIcon className="h-4 w-4" aria-hidden="true" />
               </a>
             </div>
 

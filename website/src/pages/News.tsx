@@ -6,14 +6,17 @@ import { newsCategories } from '../data/news';
 import { useLiveNews } from '../data/useLiveNews';
 import type { NewsCategory, NewsSeverity } from '../types/news';
 import { Seo } from '../components/Seo';
+import { isVendorPsirt } from '../utils/psirt';
 
 type Filter = 'All' | NewsCategory;
 type SeverityFilter = 'ALL' | NewsSeverity;
+type SourceFilter = 'ALL' | 'PSIRT' | 'MEDIA';
 const PAGE_SIZE = 20;
 
 export function News() {
   const [filter, setFilter] = useState<Filter>('All');
   const [severityFilter, setSeverityFilter] = useState<SeverityFilter>('ALL');
+  const [sourceFilter, setSourceFilter] = useState<SourceFilter>('ALL');
   const [query, setQuery] = useState('');
   const [page, setPage] = useState(1);
   const { news } = useLiveNews();
@@ -22,6 +25,8 @@ export function News() {
     const q = query.trim().toLowerCase();
     const candidateNews = news.filter((b) => {
       if (filter !== 'All' && b.category !== filter) return false;
+      if (sourceFilter === 'PSIRT' && !isVendorPsirt(b.source)) return false;
+      if (sourceFilter === 'MEDIA' && isVendorPsirt(b.source)) return false;
       if (!q) return true;
       return (
         b.title.toLowerCase().includes(q) ||
@@ -43,12 +48,14 @@ export function News() {
       }
     }
     return counts;
-  }, [news, filter, query]);
+  }, [news, filter, sourceFilter, query]);
 
   const categoryCounts = useMemo(() => {
     const q = query.trim().toLowerCase();
     const candidateNews = news.filter((b) => {
       if (severityFilter !== 'ALL' && b.severity !== severityFilter) return false;
+      if (sourceFilter === 'PSIRT' && !isVendorPsirt(b.source)) return false;
+      if (sourceFilter === 'MEDIA' && isVendorPsirt(b.source)) return false;
       if (!q) return true;
       return (
         b.title.toLowerCase().includes(q) ||
@@ -66,11 +73,11 @@ export function News() {
       }
     }
     return counts;
-  }, [news, severityFilter, query]);
+  }, [news, severityFilter, sourceFilter, query]);
 
-  const results = useMemo(() => {
+  const sourceCounts = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return news.filter((b) => {
+    const candidateNews = news.filter((b) => {
       if (filter !== 'All' && b.category !== filter) return false;
       if (severityFilter !== 'ALL' && b.severity !== severityFilter) return false;
       if (!q) return true;
@@ -80,7 +87,37 @@ export function News() {
         b.cves.some((c) => c.toLowerCase().includes(q))
       );
     });
+
+    const counts: Record<SourceFilter, number> = {
+      ALL: candidateNews.length,
+      PSIRT: 0,
+      MEDIA: 0,
+    };
+    for (const b of candidateNews) {
+      if (isVendorPsirt(b.source)) {
+        counts.PSIRT++;
+      } else {
+        counts.MEDIA++;
+      }
+    }
+    return counts;
   }, [news, filter, severityFilter, query]);
+
+  const results = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    return news.filter((b) => {
+      if (filter !== 'All' && b.category !== filter) return false;
+      if (severityFilter !== 'ALL' && b.severity !== severityFilter) return false;
+      if (sourceFilter === 'PSIRT' && !isVendorPsirt(b.source)) return false;
+      if (sourceFilter === 'MEDIA' && isVendorPsirt(b.source)) return false;
+      if (!q) return true;
+      return (
+        b.title.toLowerCase().includes(q) ||
+        b.summary.toLowerCase().includes(q) ||
+        b.cves.some((c) => c.toLowerCase().includes(q))
+      );
+    });
+  }, [news, filter, severityFilter, sourceFilter, query]);
 
   const totalPages = Math.max(1, Math.ceil(results.length / PAGE_SIZE));
   const safePage = Math.min(page, totalPages);
@@ -127,12 +164,13 @@ export function News() {
               />
             </label>
 
-            {(filter !== 'All' || severityFilter !== 'ALL' || query) && (
+            {(filter !== 'All' || severityFilter !== 'ALL' || sourceFilter !== 'ALL' || query) && (
               <button
                 type="button"
                 onClick={() => {
                   setFilter('All');
                   setSeverityFilter('ALL');
+                  setSourceFilter('ALL');
                   setQuery('');
                   setPage(1);
                 }}
@@ -246,6 +284,54 @@ export function News() {
                   </button>
                 );
               })}
+            </div>
+          </div>
+
+          {/* Section 3: Feed Source */}
+          <div className="flex items-center gap-2 overflow-x-auto pb-1">
+            <span className="text-[11px] font-semibold uppercase tracking-wider text-subtle shrink-0 mr-1">
+              Feed Source:
+            </span>
+            <div className="flex gap-1.5">
+              <button
+                type="button"
+                onClick={() => {
+                  setSourceFilter('ALL');
+                  setPage(1);
+                }}
+                className={`whitespace-nowrap rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
+                  sourceFilter === 'ALL'
+                    ? 'bg-raised font-medium text-accent border border-accent/40 shadow-sm'
+                    : 'text-muted hover:text-accent hover:bg-surface border border-line'
+                }`}>
+                All Sources <span className="text-[11px] opacity-75">({sourceCounts.ALL})</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setSourceFilter('PSIRT');
+                  setPage(1);
+                }}
+                className={`whitespace-nowrap rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
+                  sourceFilter === 'PSIRT'
+                    ? 'bg-cyan-500/15 font-medium text-cyan-400 border border-cyan-500/50 shadow-sm'
+                    : 'text-muted hover:text-cyan-400 hover:bg-surface border border-line'
+                }`}>
+                Vendor PSIRT <span className="text-[11px] opacity-75">({sourceCounts.PSIRT})</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setSourceFilter('MEDIA');
+                  setPage(1);
+                }}
+                className={`whitespace-nowrap rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
+                  sourceFilter === 'MEDIA'
+                    ? 'bg-raised font-medium text-accent border border-accent/40 shadow-sm'
+                    : 'text-muted hover:text-accent hover:bg-surface border border-line'
+                }`}>
+                Media & Research <span className="text-[11px] opacity-75">({sourceCounts.MEDIA})</span>
+              </button>
             </div>
           </div>
         </div>

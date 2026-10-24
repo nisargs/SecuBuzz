@@ -20,6 +20,7 @@ import {
 import { spacing } from '../theme/theme';
 
 export type SeverityFilter = 'ALL' | NonNullable<Article['severity']>;
+export type SourceFilter = 'ALL' | 'PSIRT' | 'MEDIA';
 
 const SEVERITIES: NonNullable<Article['severity']>[] = [
   'CRITICAL',
@@ -35,11 +36,14 @@ type FilterModalProps = {
   onSelectCategory: (category: CategoryFilter) => void;
   selectedSeverity: SeverityFilter;
   onSelectSeverity: (severity: SeverityFilter) => void;
+  selectedSource?: SourceFilter;
+  onSelectSource?: (source: SourceFilter) => void;
   onReset: () => void;
   totalArticlesCount: number;
   filteredCount: number;
   severityCounts: Record<string, number>;
   categoryCounts: Record<string, number>;
+  sourceCounts?: Record<string, number>;
 };
 
 function formatCategoryLabel(category: CategoryFilter): string {
@@ -56,16 +60,21 @@ export function FilterModal({
   onSelectCategory,
   selectedSeverity,
   onSelectSeverity,
+  selectedSource = 'ALL',
+  onSelectSource,
   onReset,
   totalArticlesCount,
   filteredCount,
   severityCounts,
   categoryCounts,
+  sourceCounts,
 }: FilterModalProps) {
   const { colors, isDark, accentColor, severityColors } = useTheme();
 
   const isAnyFilterActive =
-    selectedCategory !== 'ALL' || selectedSeverity !== 'ALL';
+    selectedCategory !== 'ALL' ||
+    selectedSeverity !== 'ALL' ||
+    selectedSource !== 'ALL';
 
   const [modalVisible, setModalVisible] = useState(visible);
   const animValue = useRef(new Animated.Value(0)).current;
@@ -355,6 +364,137 @@ export function FilterModal({
                     </Pressable>
                   );
                 })}
+              </View>
+            </View>
+
+            {/* INTELLIGENCE SOURCE SECTION */}
+            <View style={styles.section}>
+              <View style={styles.sectionHeader}>
+                <Text
+                  style={[styles.sectionTitle, { color: colors.textSecondary }]}
+                >
+                  INTELLIGENCE SOURCE
+                </Text>
+                {selectedSource !== 'ALL' && onSelectSource && (
+                  <Pressable
+                    hitSlop={6}
+                    onPress={() => onSelectSource('ALL')}
+                  >
+                    <Text style={[styles.resetSectionText, { color: accentColor }]}>
+                      Clear
+                    </Text>
+                  </Pressable>
+                )}
+              </View>
+
+              <View style={styles.chipsRow}>
+                {/* ALL SOURCES */}
+                <Pressable
+                  accessibilityRole="button"
+                  onPress={() => onSelectSource?.('ALL')}
+                  style={[
+                    styles.severityChip,
+                    {
+                      borderColor: colors.border,
+                      backgroundColor:
+                        selectedSource === 'ALL'
+                          ? isDark
+                            ? `${accentColor}20`
+                            : `${accentColor}15`
+                          : isDark
+                          ? colors.background
+                          : colors.surface,
+                    },
+                    selectedSource === 'ALL' && {
+                      borderColor: accentColor,
+                    },
+                  ]}
+                >
+                  <Text
+                    style={[
+                      styles.chipText,
+                      { color: colors.textSecondary },
+                      selectedSource === 'ALL' && {
+                        color: accentColor,
+                        fontWeight: '700',
+                      },
+                    ]}
+                  >
+                    All Sources ({sourceCounts?.ALL ?? totalArticlesCount})
+                  </Text>
+                </Pressable>
+
+                {/* VENDOR PSIRT */}
+                <Pressable
+                  accessibilityRole="button"
+                  onPress={() => onSelectSource?.('PSIRT')}
+                  style={[
+                    styles.severityChip,
+                    {
+                      borderColor: colors.border,
+                      backgroundColor:
+                        selectedSource === 'PSIRT'
+                          ? isDark
+                            ? `${accentColor}20`
+                            : `${accentColor}15`
+                          : isDark
+                          ? colors.background
+                          : colors.surface,
+                    },
+                    selectedSource === 'PSIRT' && {
+                      borderColor: accentColor,
+                    },
+                  ]}
+                >
+                  <Text
+                    style={[
+                      styles.chipText,
+                      { color: colors.textSecondary },
+                      selectedSource === 'PSIRT' && {
+                        color: accentColor,
+                        fontWeight: '700',
+                      },
+                    ]}
+                  >
+                    Vendor PSIRT ({sourceCounts?.PSIRT ?? 0})
+                  </Text>
+                </Pressable>
+
+                {/* RESEARCH & MEDIA */}
+                <Pressable
+                  accessibilityRole="button"
+                  onPress={() => onSelectSource?.('MEDIA')}
+                  style={[
+                    styles.severityChip,
+                    {
+                      borderColor: colors.border,
+                      backgroundColor:
+                        selectedSource === 'MEDIA'
+                          ? isDark
+                            ? `${accentColor}20`
+                            : `${accentColor}15`
+                          : isDark
+                          ? colors.background
+                          : colors.surface,
+                    },
+                    selectedSource === 'MEDIA' && {
+                      borderColor: accentColor,
+                    },
+                  ]}
+                >
+                  <Text
+                    style={[
+                      styles.chipText,
+                      { color: colors.textSecondary },
+                      selectedSource === 'MEDIA' && {
+                        color: accentColor,
+                        fontWeight: '700',
+                      },
+                    ]}
+                  >
+                    Media & Research ({sourceCounts?.MEDIA ?? 0})
+                  </Text>
+                </Pressable>
               </View>
             </View>
           </ScrollView>
