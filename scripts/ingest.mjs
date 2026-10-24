@@ -1769,145 +1769,330 @@ console.log(
 
 const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
 
-// Standalone unique platforms, products, tools, and named threats where a matching mention within 3 days is 100% the same incident:
-const UNIQUE_PRODUCTS_OR_THREATS = [
-  'velocloud', 'fortimanager', 'fortigate', 'globalprotect', 'sharepoint',
-  'php2shell', 'node2shell', 'coregraphics', 'wireshark', 'elementor',
-  'connectwise', 'litellm', 'netscaler', 'pwnescape', 'ghostaction',
-  'avisloader', 'blackx', 'stealc', 'shinyhunters', 'whispergate'
-];
-
-// Specific companies and victim organizations where a breach/incident mention within 3 days is the same event:
-const SPECIFIC_ORGANIZATIONS = [
-  'capcom', 'emudhra', 'snowflake', 'bitget', 'kiteworks', 'danfoss', 'canonical',
-  'quest diagnostics', 'yandex', 'ahold delhaize', 'change healthcare', 'ticketmaster'
-];
-
-// Vendor + specific product pairs (both MUST match to prevent broad vendor collisions like Cisco Expressway vs Cisco Duo):
-const VENDOR_PRODUCT_PAIRS = [
-  { vendor: 'cisco', products: ['expressway', 'duo', 'asa', 'ftd', 'ios-xe', 'nexus', 'catalyst'] },
-  { vendor: 'arista', products: ['vco', 'eos'] },
-  { vendor: 'hpe', products: ['aruba', 'aos', 'proliant', 'ilo'] },
-  { vendor: 'apache', products: ['struts', 'airflow', 'superset', 'kafka', 'tomcat', 'httpd'] },
-  { vendor: 'okta', products: ['gateway', 'verify', 'oag', 'asa'] },
-  { vendor: 'fortinet', products: ['fortios', 'fortianalyzer', 'forticlient'] },
-  { vendor: 'palo alto', products: ['pan-os', 'prisma', 'cortex'] },
-  { vendor: 'ivanti', products: ['connect secure', 'epmm', 'policy secure', 'standalone sentry', 'csa'] },
-  { vendor: 'microsoft', products: ['exchange', 'teams', 'entra', 'rdp', 'outlook'] },
-  { vendor: 'ruby', products: ['onigmo', 'rails', 'rubygems'] },
-  { vendor: 'apple', products: ['webkit', 'safari', 'imageio'] }
-];
-
-// Comprehensive stop words list filtering out ALL generic cybersecurity and English jargon:
-const STOP_WORDS = new Set([
-  // Grammar, prepositions & articles
-  'the', 'a', 'an', 'in', 'on', 'for', 'to', 'of', 'and', 'is', 'are', 'was', 'were',
-  'with', 'after', 'from', 'by', 'as', 'at', 'about', 'over', 'into', 'amid', 'amidst',
-  'via', 'under', 'through', 'across', 'against', 'during', 'before', 'behind', 'between',
-  'more', 'than', 'also', 'both', 'each', 'other', 'some', 'any', 'could', 'would', 'will',
-  // Generic action verbs
-  'targets', 'target', 'targeting', 'targeted',
-  'fixes', 'fix', 'fixing', 'fixed',
-  'warns', 'warn', 'warning', 'warned',
-  'patches', 'patch', 'patching', 'patched',
-  'updates', 'update', 'updating', 'updated',
-  'addresses', 'address', 'addressing', 'addressed',
-  'releases', 'release', 'releasing', 'released',
-  'exploits', 'exploit', 'exploiting', 'exploited',
-  'attacks', 'attack', 'attacking', 'attacked',
-  'hackers', 'hacker', 'hacking', 'hacked',
-  'compromises', 'compromise', 'compromising', 'compromised',
-  'exposes', 'expose', 'exposing', 'exposed',
-  'leaks', 'leak', 'leaking', 'leaked',
-  'steals', 'steal', 'stealing', 'stolen',
-  'claims', 'claim', 'claiming', 'claimed',
-  'urges', 'urge', 'urging', 'urged',
-  'spotted', 'detected', 'found', 'uncovers', 'uncovered',
-  'allows', 'allow', 'allowing', 'allowed',
-  'lets', 'let', 'enables', 'enable', 'enabling', 'enabled',
-  'causes', 'cause', 'causing', 'caused',
-  'affects', 'affect', 'affecting', 'affected',
-  'impacts', 'impact', 'impacting', 'impacted',
-  // Generic security / tech nouns
-  'flaw', 'flaws', 'vulnerability', 'vulnerabilities', 'bug', 'bugs',
-  'security', 'cyber', 'cybersecurity', 'infosec',
-  'zero-day', 'zero-days', 'zeroday', '0-day', '0-days',
-  'rce', 'remote', 'code', 'execution', 'injection', 'bypass', 'privilege', 'escalation',
-  'breach', 'breaches', 'incident', 'incidents', 'outage', 'outages',
-  'data', 'records', 'credentials', 'passwords', 'password', 'tokens', 'token',
-  'accounts', 'account', 'users', 'user', 'customers', 'customer', 'clients', 'client',
-  'admin', 'administrator', 'administrators', 'root', 'superuser', 'authentication', 'auth',
-  'system', 'systems', 'network', 'networks', 'server', 'servers', 'device', 'devices',
-  'firmware', 'software', 'hardware', 'app', 'apps', 'application', 'applications',
-  'service', 'services', 'platform', 'platforms', 'tool', 'tools',
-  'firm', 'firms', 'company', 'companies', 'vendor', 'vendors', 'organization', 'organizations',
-  'report', 'reports', 'advisory', 'advisories', 'bulletin', 'bulletins', 'guidance',
-  'alert', 'alerts', 'notice', 'notices',
-  'malware', 'ransomware', 'trojan', 'backdoor', 'spyware', 'infostealer',
-  'million', 'millions', 'billion', 'billions', 'thousand', 'thousands',
-  'critical', 'high', 'medium', 'low', 'severe', 'severity',
-  'new', 'recent', 'latest', 'active', 'actively', 'widespread', 'major'
-]);
-
-function getTitleKeywords(title) {
-  return (title || '')
-    .toLowerCase()
-    .replace(/[^a-z0-9\s-]/g, ' ')
-    .split(/\s+/)
-    .filter(w => w.length > 2 && !STOP_WORDS.has(w));
-}
+// -----------------------------------------------------------------------------
+// SEMANTIC CONTEXT COMPARISON & DEDUPLICATION (STRICT CONTEXT COMPARISON)
+// -----------------------------------------------------------------------------
 
 function extractCvesFromText(text) {
   const matches = (text || '').match(/CVE-\d{4}-\d{4,7}/gi);
   return matches ? Array.from(new Set(matches.map(c => c.toUpperCase()))) : [];
 }
 
-function isSameIncident(fullA, titleA, fullB, titleB, timeDiffDays) {
-  if (timeDiffDays > 7) return false;
+const COMMON_HEADLINE_WORDS = new Set([
+  'the', 'and', 'for', 'with', 'from', 'after', 'into', 'over', 'under', 'amid',
+  'security', 'cyber', 'cybersecurity', 'infosec', 'threat', 'threats', 'attacks', 'attack',
+  'hackers', 'hacker', 'hacking', 'hacked', 'flaw', 'flaws', 'vulnerability', 'vulnerabilities',
+  'patch', 'patches', 'update', 'updates', 'report', 'reports', 'warning', 'warns', 'alert', 'alerts',
+  'breach', 'breaches', 'data', 'ransomware', 'malware', 'zero-day', 'exploit', 'exploits',
+  'unpatched', 'released', 'releases', 'fixes', 'fixed', 'incident', 'incidents', 'service', 'services',
+  'system', 'systems', 'platform', 'platforms', 'tool', 'tools', 'device', 'devices', 'software',
+  'firmware', 'hardware', 'critical', 'high', 'medium', 'low', 'new', 'recent', 'latest', 'active',
+  'actively', 'widespread', 'major', 'first', 'second', 'third', 'four', 'five', 'week', 'today',
+  'news', 'blog', 'post', 'article', 'says', 'finds', 'shows', 'leaves', 'exposes'
+]);
 
-  // 1. Shared CVE (Gold Standard)
-  const cvesA = extractCvesFromText(fullA);
-  const cvesB = extractCvesFromText(fullB);
-  if (cvesA.length > 0 && cvesB.some(c => cvesA.includes(c))) {
-    return true;
+function extractSubjectAnchors(title, summary) {
+  const text = ((title || '') + ' ' + (summary || '')).toLowerCase();
+  const cves = extractCvesFromText(text);
+
+  const properNouns = (title || '')
+    .replace(/[^a-zA-Z0-9\s-]/g, ' ')
+    .split(/\s+/)
+    .filter(w => w.length > 2)
+    .map(w => w.toLowerCase())
+    .filter(w => !COMMON_HEADLINE_WORDS.has(w));
+
+  return Array.from(new Set([...cves.map(c => c.toLowerCase()), ...properNouns]));
+}
+
+async function requestGroqContextComparison(storyA, storyB, prompt) {
+  if (!GROQ_API_KEY) throw new Error("GROQ_API_KEY not configured");
+
+  const response = await fetch(GROQ_API_URL, {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${GROQ_API_KEY}`,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      model: GROQ_MODEL,
+      messages: [
+        {
+          role: 'system',
+          content: 'You are an authoritative cybersecurity intelligence editor. Return valid JSON adhering strictly to the requested schema.'
+        },
+        { role: 'user', content: prompt }
+      ],
+      response_format: { type: 'json_object' },
+      reasoning_effort: 'low',
+      temperature: 0.1,
+      max_completion_tokens: 1200
+    })
+  });
+
+  const text = await response.text();
+  let payload = null;
+  try {
+    payload = JSON.parse(text);
+  } catch {
+    throw new Error(`Groq returned non-JSON: ${truncateText(text, 200)}`);
   }
 
-  if (timeDiffDays <= 3) {
-    // 2. Unique Standalone Product or Named Threat
-    for (const item of UNIQUE_PRODUCTS_OR_THREATS) {
-      if (fullA.includes(item) && fullB.includes(item)) {
-        return true;
-      }
-    }
+  if (!response.ok) {
+    throw new Error(payload?.error?.message || `Groq HTTP ${response.status}`);
+  }
 
-    // 3. Specific Organization / Victim
-    for (const org of SPECIFIC_ORGANIZATIONS) {
-      if (fullA.includes(org) && fullB.includes(org)) {
-        return true;
-      }
-    }
+  const content = payload?.choices?.[0]?.message?.content || '';
+  const parsed = safeJsonParse(content);
+  if (!parsed) throw new Error("Could not parse Groq context comparison response as JSON");
 
-    // 4. Vendor + Specific Product Pair
-    for (const vp of VENDOR_PRODUCT_PAIRS) {
-      if (fullA.includes(vp.vendor) && fullB.includes(vp.vendor)) {
-        for (const prod of vp.products) {
-          if (fullA.includes(prod) && fullB.includes(prod)) {
-            return true;
-          }
-        }
-      }
-    }
+  return parsed;
+}
 
-    // 5. Specific Non-Generic Title Keywords Overlap (requires >= 3 specific words)
-    const kwA = new Set(getTitleKeywords(titleA));
-    const kwB = getTitleKeywords(titleB);
-    const overlap = kwB.filter(k => kwA.has(k));
-    if (overlap.length >= 3) {
-      return true;
+async function requestGeminiContextComparison(storyA, storyB, prompt) {
+  if (!GEMINI_API_KEY) throw new Error("GEMINI_API_KEY not configured");
+
+  const response = await fetch(GEMINI_API_URL, {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${GEMINI_API_KEY}`,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      model: GEMINI_MODEL,
+      messages: [
+        {
+          role: 'system',
+          content: 'You are an authoritative cybersecurity intelligence editor. Return valid JSON adhering strictly to the requested schema.'
+        },
+        { role: 'user', content: prompt }
+      ],
+      response_format: { type: 'json_object' },
+      temperature: 0.1,
+      max_completion_tokens: 1200
+    })
+  });
+
+  const text = await response.text();
+  let payload = null;
+  try {
+    payload = JSON.parse(text);
+  } catch {
+    throw new Error(`Gemini returned non-JSON: ${truncateText(text, 200)}`);
+  }
+
+  if (!response.ok) {
+    throw new Error(payload?.error?.message || `Gemini HTTP ${response.status}`);
+  }
+
+  const content = payload?.choices?.[0]?.message?.content || '';
+  const parsed = safeJsonParse(content);
+  if (!parsed) throw new Error("Could not parse Gemini context comparison response as JSON");
+
+  return parsed;
+}
+
+async function requestOpenRouterContextComparison(storyA, storyB, prompt) {
+  if (!OPENROUTER_API_KEY) throw new Error("OPENROUTER_API_KEY not configured");
+
+  const response = await fetch(OPENROUTER_API_URL, {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${OPENROUTER_API_KEY}`,
+      'HTTP-Referer': 'https://secubuzz.com',
+      'X-Title': 'SecuBuzz Context Comparison',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      model: OPENROUTER_MODEL,
+      messages: [
+        {
+          role: 'system',
+          content: 'You are an authoritative cybersecurity intelligence editor. Return valid JSON adhering strictly to the requested schema.'
+        },
+        { role: 'user', content: prompt }
+      ],
+      response_format: { type: 'json_object' },
+      temperature: 0.1,
+      max_tokens: 1200
+    })
+  });
+
+  const text = await response.text();
+  let payload = null;
+  try {
+    payload = JSON.parse(text);
+  } catch {
+    throw new Error(`OpenRouter returned non-JSON: ${truncateText(text, 200)}`);
+  }
+
+  if (!response.ok) {
+    throw new Error(payload?.error?.message || `OpenRouter HTTP ${response.status}`);
+  }
+
+  const content = payload?.choices?.[0]?.message?.content || '';
+  const parsed = safeJsonParse(content);
+  if (!parsed) throw new Error("Could not parse OpenRouter context comparison response as JSON");
+
+  return parsed;
+}
+
+async function compareStoryContext(storyA, storyB) {
+  // Tier 1: Deterministic Fast-Paths (Zero AI latency/token cost)
+
+  // 1a. Identical or normalized source URL
+  const urlA = normaliseUrl(storyA.sourceUrl || storyA.url || '');
+  const urlB = normaliseUrl(storyB.sourceUrl || storyB.url || '');
+  if (urlA && urlB && urlA === urlB) {
+    return { isSameIncident: true, reason: 'Identical source URL' };
+  }
+
+  // 1b. Disjoint CVE Identifiers:
+  // If BOTH stories explicitly cite CVE IDs and their CVE sets have zero overlap,
+  // they are mathematically reporting on different vulnerabilities. Context is DIFFERENT.
+  const cvesA = extractCvesFromText((storyA.title || '') + ' ' + (storyA.summary || ''));
+  const cvesB = extractCvesFromText((storyB.title || '') + ' ' + (storyB.summary || ''));
+  if (cvesA.length > 0 && cvesB.length > 0) {
+    const hasSharedCve = cvesA.some(c => cvesB.includes(c));
+    if (!hasSharedCve) {
+      return {
+        isSameIncident: false,
+        reason: `Different CVE identifiers: ${cvesA.join(', ')} vs ${cvesB.join(', ')}`
+      };
     }
   }
 
-  return false;
+  // 1c. Publication time gap > 5 days (unless identical CVE)
+  const timeA = Date.parse(storyA.publishedAt || storyA.pubDate || 0) || 0;
+  const timeB = Date.parse(storyB.publishedAt || storyB.pubDate || 0) || 0;
+  const timeDiffDays = Math.abs(timeA - timeB) / (1000 * 3600 * 24);
+  const sharedCve = cvesA.length > 0 && cvesB.some(c => cvesA.includes(c));
+  if (timeDiffDays > 5 && !sharedCve) {
+    return { isSameIncident: false, reason: 'Stories published more than 5 days apart' };
+  }
+
+  // 1d. Anchor subject / entity check:
+  // If Story A and Story B do not share at least ONE common subject or entity anchor,
+  // they cannot possibly be about the same incident.
+  const anchorsA = extractSubjectAnchors(storyA.title || '', storyA.summary || '');
+  const anchorsB = extractSubjectAnchors(storyB.title || '', storyB.summary || '');
+  const sharedAnchors = anchorsA.filter(a => anchorsB.includes(a));
+  if (sharedAnchors.length === 0 && !sharedCve) {
+    return { isSameIncident: false, reason: 'No shared subject, product, or vendor anchor' };
+  }
+
+  // Tier 2: Semantic AI Context Comparison
+  // When stories share a vendor/product or topic within 5 days, compare their actual real-world context!
+  // If context is DIFFERENT (even if keywords match): INGEST IT AND SHOW IT!
+  // If context is SAME: MERGE AND PRESENT THE BEST LOOKING BRIEF UNDER 60 WORDS!
+  const prompt = `You are an authoritative cybersecurity intelligence editor for SecuBuzz.
+Compare the following two cybersecurity news stories and determine if they describe the EXACT SAME real-world incident, vulnerability, breach, or action.
+
+STORY A:
+Source: ${storyA.source || 'Source A'}
+Title: ${storyA.title || storyA.headline || ''}
+Summary: ${storyA.summary || storyA.description || ''}
+
+STORY B:
+Source: ${storyB.source || 'Source B'}
+Title: ${storyB.title || storyB.headline || ''}
+Summary: ${storyB.summary || storyB.description || ''}
+
+RULES FOR CONTEXT COMPARISON:
+1. If the context is DIFFERENT (even if keywords, products, or company names match):
+   - Examples of DIFFERENT context:
+     * One is a product feature, tool release, or general survey; the other is a breach or vulnerability.
+     * Two different vulnerabilities, bugs, or CVEs affecting the same vendor or product.
+     * Two different legal actions, reports, or research topics.
+     * Different attack campaigns, threat actors, or victims.
+   - When context is DIFFERENT: set "isSameIncident": false.
+
+2. If the context is the SAME:
+   - Both stories are reporting on the EXACT SAME underlying real-world event (e.g. multiple outlets reporting on the same breach at the same company, the same vulnerability/patch release, or the same law enforcement action).
+   - Set "isSameIncident": true.
+   - Present the BEST LOOKING, highest-density brief strictly between 50 and 60 words (under 60 words):
+     * Exactly 3 dense sentences: (1) Incident & Target, (2) Technical Flaw & Impact, (3) Action & Remediation.
+     * Word count MUST be between 50 and 60 words.
+     * Zero AI filler or slop ("delve", "tapestry", "in today's digital landscape", "vital reminder").
+     * Choose the most accurate headline, category (BREACH, RANSOMWARE, CVE, VULNERABILITY, NATION_STATE, GENERAL), and severity (LOW, MEDIUM, HIGH, CRITICAL).
+
+Return ONLY valid JSON matching this exact structure:
+{
+  "isSameIncident": boolean,
+  "reason": "short explanation of context comparison",
+  "bestHeadline": "string (clear factual headline, required if isSameIncident is true)",
+  "bestSummary": "string (50-60 word brief, required if isSameIncident is true)",
+  "category": "BREACH" | "RANSOMWARE" | "CVE" | "VULNERABILITY" | "NATION_STATE" | "GENERAL",
+  "severity": "LOW" | "MEDIUM" | "HIGH" | "CRITICAL"
+}`.trim();
+
+  const engines = getRotatedEngines();
+  let result = null;
+
+  for (let i = 0; i < engines.length; i++) {
+    const engine = engines[i];
+    try {
+      if (engine.name.includes("Groq")) {
+        result = await requestGroqContextComparison(storyA, storyB, prompt);
+      } else if (engine.name.includes("Gemini")) {
+        result = await requestGeminiContextComparison(storyA, storyB, prompt);
+      } else if (engine.name.includes("OpenRouter")) {
+        result = await requestOpenRouterContextComparison(storyA, storyB, prompt);
+      }
+      if (result && typeof result.isSameIncident === "boolean") {
+        break;
+      }
+    } catch (err) {
+      console.warn(`[Context Comparison] ${engine.name} check failed: ${err.message}`);
+    }
+  }
+
+  // Conservative Fail-Open Safety:
+  // If all AI engines fail or response is invalid, NEVER drop news! Default to DIFFERENT context!
+  if (!result || typeof result.isSameIncident !== "boolean") {
+    console.warn(`[Context Comparison] AI comparison unavailable. Defaulting to DIFFERENT context to preserve news.`);
+    return { isSameIncident: false, reason: "AI comparison unavailable - failing open to keep news" };
+  }
+
+  // Word count and quality guardrail on merged brief
+  if (result.isSameIncident) {
+    const words = wordCount(result.bestSummary);
+    let finalSummary = cleanText(result.bestSummary || '');
+    let finalHeadline = cleanText(result.bestHeadline || '') || storyA.title;
+
+    if (words < 48 || words > 65) {
+      const wordsA = wordCount(storyA.summary);
+      const wordsB = wordCount(storyB.summary);
+      if (wordsA >= 48 && wordsA <= 65) {
+        finalSummary = storyA.summary;
+        finalHeadline = storyA.title;
+      } else if (wordsB >= 48 && wordsB <= 65) {
+        finalSummary = storyB.summary;
+        finalHeadline = storyB.title;
+      }
+    }
+
+    return {
+      isSameIncident: true,
+      reason: result.reason || 'Verified identical real-world event',
+      bestHeadline: finalHeadline,
+      bestSummary: finalSummary,
+      category: result.category || storyA.category || 'GENERAL',
+      severity: result.severity || storyA.severity || 'MEDIUM'
+    };
+  }
+
+  return {
+    isSameIncident: false,
+    reason: result.reason || 'Different context'
+  };
+}
+
+function isSameVulnCandidate(candText, candTitle, entryText, entryTitle) {
+  const anchorsA = extractSubjectAnchors(candTitle, candText);
+  const anchorsB = extractSubjectAnchors(entryTitle, entryText);
+  const shared = anchorsA.filter(a => anchorsB.includes(a));
+  return shared.length >= 2;
 }
 
 
@@ -2112,12 +2297,11 @@ for (const cand of selectedCandidates) {
     const timeDiffDays = Math.abs(candTime - entry.time) / 86400000;
     if (timeDiffDays > 3) continue;
 
-    const matched = isSameIncident(
+    const matched = isSameVulnCandidate(
       currentText,
       cand.title || '',
       entry.text,
       entry.title,
-      timeDiffDays,
     );
 
     if (matched) {
@@ -2286,57 +2470,14 @@ const uniqueGeneratedArticles =
   );
 
 // -----------------------------------------------------------------------------
-// MERGE WITH EXISTING FEED
+// MERGE WITH EXISTING FEED (SEMANTIC CONTEXT COMPARISON & DEDUPLICATION)
 // -----------------------------------------------------------------------------
 
-const existingByUrl =
-  new Map();
-
-for (const article of feedArticles) {
-  const url =
-    normaliseUrl(
-      article?.sourceUrl ||
-        article?.url ||
-        "",
-    );
-
-  if (!url) {
-    continue;
-  }
-
-  existingByUrl.set(
-    url,
-    article,
-  );
-}
-
-for (
-  const article of
-  uniqueGeneratedArticles
-) {
-  existingByUrl.set(
-    normaliseUrl(
-      article.sourceUrl,
-    ),
-    article,
-  );
-}
-
-const newUrls =
-  new Set(
-    uniqueGeneratedArticles.map(
-      (article) =>
-        normaliseUrl(
-          article.sourceUrl,
-        ),
-    ),
-  );
-
-function deduplicateAndTrimFeed(articles) {
+async function deduplicateAndTrimFeed(newArticles, existingArticles) {
   const cutoffTime = Date.now() - THIRTY_DAYS_MS;
 
-  // 1. Filter out articles older than 30 days & sort newest first
-  const recentArticles = articles
+  // 1. Filter out existing articles older than 30 days & sort newest first
+  const activeExisting = (existingArticles || [])
     .filter(art => {
       const t = Date.parse(art.publishedAt || art.pubDate || 0) || 0;
       return t >= cutoffTime;
@@ -2347,100 +2488,127 @@ function deduplicateAndTrimFeed(articles) {
       return timeB - timeA;
     });
 
-  const deduped = [];
+  const mergedNewArticles = [];
 
-  for (const art of recentArticles) {
-    const title = (art.title || art.headline || '').trim();
-    if (!title) continue;
+  // 2. Compare new articles among each other (e.g. if 2 RSS feeds in current run cover the same incident)
+  for (const newArt of (newArticles || [])) {
+    let merged = false;
 
-    const summary = (art.summary || '').trim();
-    const source = (art.source || art.sourceName || 'SecuBuzz').trim();
-    const sourceUrl = (art.sourceUrl || art.url || art.id || '').trim();
-    const publishedAt = art.publishedAt || new Date().toISOString();
-    const fullText = (title + ' ' + summary).toLowerCase();
-    const cves = extractCvesFromText(title + ' ' + summary);
-    const keywords = getTitleKeywords(title);
-    const time = Date.parse(publishedAt) || 0;
+    for (const keptNew of mergedNewArticles) {
+      const comparison = await compareStoryContext(newArt, keptNew);
 
-    let duplicateOf = null;
-    for (const existing of deduped) {
-      const existingTime = Date.parse(existing.publishedAt) || 0;
-      const timeDiffDays = Math.abs(time - existingTime) / (1000 * 3600 * 24);
-      if (timeDiffDays > 7) continue;
+      if (comparison.isSameIncident) {
+        console.log(`[Context Merge] Merged sister candidates: "${newArt.title}" -> "${keptNew.title}" (${comparison.reason})`);
 
-      const existingTitle = existing.title || existing.headline || '';
-      const existingFull = (existingTitle + ' ' + (existing.summary || '')).toLowerCase();
+        // Present the best looking information under 60 words
+        if (comparison.bestHeadline) {
+          keptNew.title = comparison.bestHeadline;
+          if (keptNew.headline) keptNew.headline = comparison.bestHeadline;
+        }
+        if (comparison.bestSummary) keptNew.summary = comparison.bestSummary;
+        if (comparison.category) keptNew.category = comparison.category;
+        if (comparison.severity) keptNew.severity = comparison.severity;
 
-      if (isSameIncident(fullText, title, existingFull, existingTitle, timeDiffDays)) {
-        duplicateOf = existing;
+        if (!keptNew.additionalSources) keptNew.additionalSources = [];
+        const source = (newArt.source || newArt.sourceName || 'SecuBuzz').trim();
+        const sourceUrl = (newArt.sourceUrl || newArt.url || '').trim();
+        if (sourceUrl && !keptNew.additionalSources.some(s => s.sourceUrl === sourceUrl)) {
+          keptNew.additionalSources.push({ source, sourceUrl });
+        }
+
+        // Combine CVEs
+        const newCves = extractCvesFromText((newArt.title || '') + ' ' + (newArt.summary || ''));
+        if (newCves.length > 0) {
+          if (!Array.isArray(keptNew.cves)) keptNew.cves = [];
+          for (const c of newCves) {
+            if (!keptNew.cves.includes(c)) keptNew.cves.push(c);
+          }
+        }
+
+        merged = true;
         break;
       }
     }
 
-    if (duplicateOf) {
-      if (!duplicateOf.additionalSources) duplicateOf.additionalSources = [];
-      if (!duplicateOf.additionalSources.some(s => s.sourceUrl === sourceUrl || s.source === source)) {
-        duplicateOf.additionalSources.push({ source, sourceUrl });
-      }
-
-      // FUTURE-PROOF CVE INTELLIGENCE BACKFILL:
-      // If a secondary or sister reporting source includes a CVE identifier that the primary article missed
-      // (e.g. initial publisher truncated RSS snippet or omitted the CVE), enrich the primary article!
-      if (cves.length > 0) {
-        if (!Array.isArray(duplicateOf.cves)) {
-          duplicateOf.cves = extractCvesFromText((duplicateOf.title || '') + ' ' + (duplicateOf.summary || ''));
-        }
-        let enriched = false;
-        for (const cve of cves) {
-          if (!duplicateOf.cves.includes(cve)) {
-            duplicateOf.cves.push(cve);
-            enriched = true;
-          }
-        }
-        if (enriched) {
-          const primaryCve = duplicateOf.cves[0];
-          // Guardrail: Only append CVE to title if duplicateOf is classified as a vulnerability or CVE (never general tech survey or vendor blog)
-          if (duplicateOf.category !== 'GENERAL' && primaryCve && !duplicateOf.title.toUpperCase().includes(primaryCve)) {
-            duplicateOf.title = `${duplicateOf.title.replace(/\s*\([^)]*CVE[^)]*\)$/i, '')} (${primaryCve})`;
-            if (duplicateOf.headline) {
-              duplicateOf.headline = `${duplicateOf.headline.replace(/\s*\([^)]*CVE[^)]*\)$/i, '')} (${primaryCve})`;
-            }
-          }
-          if (duplicateOf.category === 'VULNERABILITY') {
-            duplicateOf.category = 'CVE';
-          }
-        }
-      }
-      continue;
+    if (!merged) {
+      mergedNewArticles.push({
+        ...newArt,
+        additionalSources: Array.isArray(newArt.additionalSources) ? newArt.additionalSources : []
+      });
     }
-
-    deduped.push({
-      ...art,
-      additionalSources: Array.isArray(art.additionalSources) ? art.additionalSources : []
-    });
   }
 
-  return deduped.slice(0, MAX_FEED_ARTICLES);
+  // 3. Compare each remaining unmerged new article against recent existing feed articles (last 5 days)
+  const finalNewArticles = [];
+
+  for (const newArt of mergedNewArticles) {
+    let mergedIntoExisting = false;
+
+    for (const existing of activeExisting) {
+      const existingTime = Date.parse(existing.publishedAt || existing.pubDate || 0) || 0;
+      const timeDiffDays = Math.abs((Date.parse(newArt.publishedAt || 0) || Date.now()) - existingTime) / (1000 * 3600 * 24);
+      if (timeDiffDays > 5) continue;
+
+      const comparison = await compareStoryContext(newArt, existing);
+
+      if (comparison.isSameIncident) {
+        console.log(`[Context Merge] Merged new article into existing story: "${newArt.title}" -> "${existing.title}" (${comparison.reason})`);
+
+        // Present the best looking information under 60 words
+        if (comparison.bestHeadline) {
+          existing.title = comparison.bestHeadline;
+          if (existing.headline) existing.headline = comparison.bestHeadline;
+        }
+        if (comparison.bestSummary) existing.summary = comparison.bestSummary;
+        if (comparison.category) existing.category = comparison.category;
+        if (comparison.severity) existing.severity = comparison.severity;
+
+        if (!existing.additionalSources) existing.additionalSources = [];
+        const source = (newArt.source || newArt.sourceName || 'SecuBuzz').trim();
+        const sourceUrl = (newArt.sourceUrl || newArt.url || '').trim();
+        if (sourceUrl && !existing.additionalSources.some(s => s.sourceUrl === sourceUrl)) {
+          existing.additionalSources.push({ source, sourceUrl });
+        }
+
+        // Combine CVEs
+        const newCves = extractCvesFromText((newArt.title || '') + ' ' + (newArt.summary || ''));
+        if (newCves.length > 0) {
+          if (!Array.isArray(existing.cves)) existing.cves = [];
+          for (const c of newCves) {
+            if (!existing.cves.includes(c)) existing.cves.push(c);
+          }
+        }
+
+        mergedIntoExisting = true;
+        break;
+      }
+    }
+
+    if (!mergedIntoExisting) {
+      // Context is DIFFERENT even if keywords match: INGEST IT AND SHOW ON OUR NEWS!
+      finalNewArticles.push(newArt);
+    }
+  }
+
+  // 4. Combine unmerged new articles + existing feed, deduplicate by canonical URL, and trim
+  const combined = [...finalNewArticles, ...activeExisting];
+  const seenFinalUrls = new Set();
+  const dedupedFeed = [];
+
+  for (const art of combined) {
+    const url = normaliseUrl(art.sourceUrl || art.url || art.id || '');
+    if (!url || seenFinalUrls.has(url)) continue;
+    seenFinalUrls.add(url);
+    dedupedFeed.push(art);
+  }
+
+  return dedupedFeed.slice(0, MAX_FEED_ARTICLES);
 }
 
-const rawFeed = [
-  ...uniqueGeneratedArticles,
-
-  ...Array.from(
-    existingByUrl.values(),
-  ).filter(
-    (article) =>
-      !newUrls.has(
-        normaliseUrl(
-          article?.sourceUrl ||
-            article?.url ||
-            "",
-        ),
-      ),
-  ),
-];
-
-const mergedFeed = deduplicateAndTrimFeed(rawFeed);
+const mergedFeed = await deduplicateAndTrimFeed(
+  uniqueGeneratedArticles,
+  feedArticles,
+);
 
 // -----------------------------------------------------------------------------
 // SAVE
