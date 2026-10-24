@@ -53,9 +53,9 @@ const OPENROUTER_MODEL = process.env.OPENROUTER_MODEL || "openrouter/free";
 
 const ARTICLES_PER_AI_BATCH = 2;
 
-const MAX_NEW_CANDIDATES = 24;
+const MAX_NEW_CANDIDATES = 30;
 
-const ITEMS_PER_FEED = 10;
+const ITEMS_PER_FEED = 15;
 
 const MAX_FEED_ARTICLES = 350;
 
@@ -200,6 +200,55 @@ const FEEDS = [
     name: "Cyber Security News",
     url: "https://feeds.feedburner.com/cyber-security-news",
   },
+  // Official Vendor PSIRT & Security Release Feeds (Primary Ecosystem Radar):
+  {
+    name: "Palo Alto Networks PSIRT",
+    url: "https://security.paloaltonetworks.com/rss.xml",
+  },
+  {
+    name: "Fortinet FortiGuard PSIRT",
+    url: "https://fortiguard.fortinet.com/rss/ir.xml",
+  },
+  {
+    name: "Cisco PSIRT",
+    url: "https://tools.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml",
+  },
+  {
+    name: "Ivanti Security Advisories",
+    url: "https://www.ivanti.com/blog/topics/security-advisory/rss",
+  },
+  {
+    name: "Microsoft MSRC",
+    url: "https://api.msrc.microsoft.com/update-guide/rss",
+  },
+  {
+    name: "Red Hat Security Advisories",
+    url: "https://access.redhat.com/security/data/metrics/rhsa.rss",
+  },
+  {
+    name: "Google Chrome Releases",
+    url: "https://feeds.feedburner.com/GoogleChromeReleases",
+  },
+  {
+    name: "AWS Security Bulletins",
+    url: "https://aws.amazon.com/security/security-bulletins/feed/",
+  },
+  {
+    name: "GitLab Security Releases",
+    url: "https://docs.gitlab.com/releases/patch-releases.xml",
+  },
+  {
+    name: "Ubuntu Security Notices",
+    url: "https://usn.ubuntu.com/rss.xml",
+  },
+  {
+    name: "Apple Security Updates",
+    url: "https://developer.apple.com/news/releases/rss/releases.rss",
+  },
+  {
+    name: "GitHub Security Blog",
+    url: "https://github.blog/security/feed/",
+  },
 ];
 
 // -----------------------------------------------------------------------------
@@ -303,7 +352,8 @@ function extractRssItems(xml) {
 
     const description =
       extractTag(item, "description") ||
-      extractTag(item, "content:encoded");
+      extractTag(item, "content:encoded") ||
+      title;
 
     const pubDate =
       extractTag(item, "pubDate") ||
@@ -340,7 +390,8 @@ function extractRssItems(xml) {
 
       const description =
         extractTag(entry, "summary") ||
-        extractTag(entry, "content");
+        extractTag(entry, "content") ||
+        title;
 
       const publishedAt =
         extractTag(entry, "published") ||
