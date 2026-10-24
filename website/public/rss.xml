@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Oct 2026 05:00:10 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2026 07:21:41 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>php2shell Vulnerability Causes Widespread Panic (CVE-2026-115560)</title>
@@ -242,12 +242,12 @@
       <category>General</category>
     </item>
     <item>
-      <title>CISA Adds CVE-2026-114625 to Known Exploited Vulnerabilities Catalog</title>
-      <link>https://secubuzz.com/news/cisa-adds-cve-2026-114625-to-known-exploited-vulne-1a68f7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-cve-2026-114625-to-known-exploited-vulne-1a68f7</guid>
-      <description><![CDATA[CISA added CVE-2026-114625, an SQL injection flaw in Arista VeloCloud Orchestrator, to its Known Exploited Vulnerabilities catalog after confirming active exploitation. The vulnerability allows unauthenticated attackers to run SQL commands on exposed management interfaces, granting full control over the orchestrator and connected edge devices. CISA urges federal agencies to apply firmware patches immediately and follow BOD 26‑04 for rapid remediation.]]></description>
+      <title>CISA Adds CVE-2026-110447 to Known Exploited Vulnerabilities Catalog</title>
+      <link>https://secubuzz.com/news/cisa-adds-cve-2026-110447-to-known-exploited-vulne-240955</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-cve-2026-110447-to-known-exploited-vulne-240955</guid>
+      <description><![CDATA[CISA has identified an active exploitation of CVE-2026-110447, a command‑injection flaw in Collabora Online’s built‑in CODE Server, targeting publicly exposed federal assets. The vulnerability permits unauthenticated remote code execution with full control over the host, and a public PoC demonstrates its feasibility. CISA urges federal agencies to apply the vendor patch immediately and to enforce BOD 26‑04 risk‑based update policies.]]></description>
       <pubDate>Fri, 23 Oct 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog">CISA</source>
+      <source url="https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog-0">CISA</source>
       <category>CVE</category>
     </item>
     <item>
@@ -258,6 +258,24 @@
       <pubDate>Fri, 23 Oct 2026 11:45:12 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/23/microsoft-365-accounts-stolen-sessions/">Help Net Security</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Microsoft’s Project Perception Deploys Guardian Agents Amid AI Insider Threat Concerns</title>
+      <link>https://secubuzz.com/news/microsoft-s-project-perception-deploys-guardian-ag-7fdadf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-s-project-perception-deploys-guardian-ag-7fdadf</guid>
+      <description><![CDATA[Microsoft’s Project Perception introduces Guardian Agents to monitor and contain anomalous AI agents within its unified security stack. Experts caution that deploying agents to police other agents could amplify risk rather than mitigate it, highlighting challenges in autonomous threat containment. Security teams should evaluate the trade‑offs of AI‑driven containment and consider layered defenses to prevent escalation.]]></description>
+      <pubDate>Fri, 23 Oct 2026 11:38:28 GMT</pubDate>
+      <source url="https://www.darkreading.com/cybersecurity-operations/ai-agents-insider-threats-inside-microsoft-unified-security-stack">Dark Reading</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Sandworm Executes Destructive Wiping Attack on Ukrainian Logistics Company via Spear-Phishing Backdoor</title>
+      <link>https://secubuzz.com/news/sandworm-executes-destructive-wiping-attack-on-ukr-5fff35</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sandworm-executes-destructive-wiping-attack-on-ukr-5fff35</guid>
+      <description><![CDATA[Sandworm, a Russian state-sponsored group, launched a destructive wiping attack on a Ukrainian logistics company via a spear-phishing email that delivered the UAC-0099 backdoor. The Earth Sirrush backdoor granted attackers initial access, enabling deployment of destructive payloads that caused irreversible data loss and system shutdowns. ESET recommends applying the latest updates and disabling unused services.]]></description>
+      <pubDate>Fri, 23 Oct 2026 11:11:23 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/russian-linked-hackers-used-new-mesh.html">The Hacker News</source>
+      <category>Nation State</category>
     </item>
     <item>
       <title>eMudhra TLS Certificates Compromised by Weak Private Keys</title>
@@ -437,24 +455,6 @@
       <description><![CDATA[Unit 42 examines contemporary OAuth attacks, highlighting credential theft, token misuse, and phishing vectors targeting OAuth implementations. The analysis identifies redirect URI manipulation, insecure client secrets, and insufficient scope validation as common exploitation techniques. Security teams should enforce redirect URI whitelisting, rotate client secrets, implement scope checks, and monitor anomalous token usage to mitigate risks.]]></description>
       <pubDate>Thu, 22 Oct 2026 17:00:25 GMT</pubDate>
       <source url="https://unit42.paloaltonetworks.com/current-landscape-oauth-attacks/">Unit 42</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Meta Ordered to Pay $25 Billion for Misleading Privacy Claims</title>
-      <link>https://secubuzz.com/news/meta-ordered-to-pay-25-billion-for-misleading-priv-318930</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/meta-ordered-to-pay-25-billion-for-misleading-priv-318930</guid>
-      <description><![CDATA[Meta faces a $25 billion penalty after regulators determined the company misled users about who could access their personal information on Facebook. The ruling underscores the importance of transparent privacy disclosures and compliance with data protection regulations. Facebook must update its privacy policies, enhance user consent mechanisms, and implement audit controls to avoid future violations.]]></description>
-      <pubDate>Thu, 22 Oct 2026 16:59:22 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/news/2026/10/facebooks-misleading-privacy-claims-land-meta-a-25-billion-penalty">Malwarebytes Labs</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Microsoft Restores Exchange Web Services API for Legacy Applications</title>
-      <link>https://secubuzz.com/news/microsoft-restores-exchange-web-services-api-for-l-679279</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-restores-exchange-web-services-api-for-l-679279</guid>
-      <description><![CDATA[Microsoft has announced that IT administrators can re‑enable the retired Exchange Web Services (EWS) API in Exchange Online to restore functionality for legacy EWS applications. The change addresses the deprecation that caused EWS apps to fail after the API was disabled in a recent update. Administrators should apply the new configuration settings immediately to prevent application downtime.]]></description>
-      <pubDate>Thu, 22 Oct 2026 15:49:32 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-shares-how-to-fix-broken-exchange-online-ews-apps/">BleepingComputer</source>
       <category>General</category>
     </item>
   </channel>

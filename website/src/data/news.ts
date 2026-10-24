@@ -484,23 +484,23 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "cisa-adds-cve-2026-114625-to-known-exploited-vulne-1a68f7",
-    "title": "CISA Adds CVE-2026-114625 to Known Exploited Vulnerabilities Catalog",
-    "summary": "CISA added CVE-2026-114625, an SQL injection flaw in Arista VeloCloud Orchestrator, to its Known Exploited Vulnerabilities catalog after confirming active exploitation. The vulnerability allows unauthenticated attackers to run SQL commands on exposed management interfaces, granting full control over the orchestrator and connected edge devices. CISA urges federal agencies to apply firmware patches immediately and follow BOD 26‑04 for rapid remediation.",
+    "slug": "cisa-adds-cve-2026-110447-to-known-exploited-vulne-240955",
+    "title": "CISA Adds CVE-2026-110447 to Known Exploited Vulnerabilities Catalog",
+    "summary": "CISA has identified an active exploitation of CVE-2026-110447, a command‑injection flaw in Collabora Online’s built‑in CODE Server, targeting publicly exposed federal assets. The vulnerability permits unauthenticated remote code execution with full control over the host, and a public PoC demonstrates its feasibility. CISA urges federal agencies to apply the vendor patch immediately and to enforce BOD 26‑04 risk‑based update policies.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog",
+    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog-0",
     "publishedAt": "2026-10-23T12:00:00.000Z",
     "cves": [
-      "CVE-2026-114625"
+      "CVE-2026-110447"
     ],
     "additionalSources": [],
     "aliases": [
-      "cisa-adds-cve-2026-114625-to-known-exploited-vulne",
-      "article-1a68f7",
-      "1a68f7",
-      "cisa-adds-cve-2026-114625-to-known-exploited-vulnerabilities"
+      "cisa-adds-cve-2026-110447-to-known-exploited-vulne",
+      "article-240955",
+      "240955",
+      "cisa-adds-cve-2026-110447-to-known-exploited-vulnerabilities"
     ]
   },
   {
@@ -519,6 +519,42 @@ export const news: NewsBrief[] = [
       "article-603fb9",
       "603fb9",
       "microsoft-365-accounts-compromised-at-79-organizations-via-s"
+    ]
+  },
+  {
+    "slug": "microsoft-s-project-perception-deploys-guardian-ag-7fdadf",
+    "title": "Microsoft’s Project Perception Deploys Guardian Agents Amid AI Insider Threat Concerns",
+    "summary": "Microsoft’s Project Perception introduces Guardian Agents to monitor and contain anomalous AI agents within its unified security stack. Experts caution that deploying agents to police other agents could amplify risk rather than mitigate it, highlighting challenges in autonomous threat containment. Security teams should evaluate the trade‑offs of AI‑driven containment and consider layered defenses to prevent escalation.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/ai-agents-insider-threats-inside-microsoft-unified-security-stack",
+    "publishedAt": "2026-10-23T11:38:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-s-project-perception-deploys-guardian-ag",
+      "article-7fdadf",
+      "7fdadf",
+      "microsoft-s-project-perception-deploys-guardian-agents-amid-"
+    ]
+  },
+  {
+    "slug": "sandworm-executes-destructive-wiping-attack-on-ukr-5fff35",
+    "title": "Sandworm Executes Destructive Wiping Attack on Ukrainian Logistics Company via Spear-Phishing Backdoor",
+    "summary": "Sandworm, a Russian state-sponsored group, launched a destructive wiping attack on a Ukrainian logistics company via a spear-phishing email that delivered the UAC-0099 backdoor. The Earth Sirrush backdoor granted attackers initial access, enabling deployment of destructive payloads that caused irreversible data loss and system shutdowns. ESET recommends applying the latest updates and disabling unused services.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/russian-linked-hackers-used-new-mesh.html",
+    "publishedAt": "2026-10-23T11:11:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sandworm-executes-destructive-wiping-attack-on-ukr",
+      "article-5fff35",
+      "5fff35",
+      "sandworm-executes-destructive-wiping-attack-on-ukrainian-log"
     ]
   },
   {
@@ -1276,24 +1312,6 @@ export const news: NewsBrief[] = [
       "article-28e624",
       "28e624",
       "open-source-projects-drop-security-controls-exposing-unauthe"
-    ]
-  },
-  {
-    "slug": "mythicratatoskr-backdoor-exploits-yggdrasil-mesh-f-6a7d9b",
-    "title": "MythicRatatoskr Backdoor Exploits Yggdrasil Mesh for Ukrainian Grain Firm Attack",
-    "summary": "ESET uncovered MythicRatatoskr, a Go-based backdoor that hides its C&C server inside Yggdrasil, enabling covert persistence. The malware exploited a UAC‑0099‑Sandworm collaboration to deliver a destructive payload to a Ukrainian grain firm via privilege escalation. Isolate affected hosts, apply Yggdrasil firmware patch, and enforce network segmentation to block actively traffic.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ESET WeLiveSecurity",
-    "sourceUrl": "https://www.welivesecurity.com/en/eset-research/mythicratatoskr-yggdrasil-enabled-backdoor-deployed-uac0099-sandworm-collaboration/",
-    "publishedAt": "2026-10-22T08:45:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "mythicratatoskr-backdoor-exploits-yggdrasil-mesh-f",
-      "article-6a7d9b",
-      "6a7d9b",
-      "mythicratatoskr-backdoor-exploits-yggdrasil-mesh-for-ukraini"
     ]
   },
   {
