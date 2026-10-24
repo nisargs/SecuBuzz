@@ -1,93 +1,119 @@
 [
   {
-    "id": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+PHP+Affecting+Cisco+Products%3A+October+2026%26vs_k%3D1",
-    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+PHP+Affecting+Cisco+Products%3A+October+2026%26vs_k%3D1",
-    "title": "Critical PHP RCE Vulnerabilities Impact Cisco Products",
-    "headline": "Critical PHP RCE Vulnerabilities Impact Cisco Products",
-    "summary": "Critical PHP vulnerabilities CVE-2026-109618 and CVE-2026-109619 enable remote code execution via out‑of‑memory corruption and stale global state in Cisco products. The flaws allow attackers to execute arbitrary code without authentication, posing a high‑risk threat to affected systems. Cisco has released patches; administrators should apply the updates immediately to mitigate exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cisco PSIRT",
-    "publishedAt": "2026-10-23T22:39:09.000Z",
-    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+PHP+Affecting+Cisco+Products%3A+October+2026%26vs_k%3D1",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:88779",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:88779",
-    "title": "Red Hat ca-certificates Update Addresses Critical Vulnerability",
-    "headline": "Red Hat ca-certificates Update Addresses Critical Vulnerability",
-    "summary": "Red Hat Enterprise Linux 7 Extended Lifecycle Support receives a critical security update for ca-certificates, addressing an unspecified vulnerability that could allow attackers to tamper with certificate validation. The flaw is rated with a high CVSS score and could enable man‑in‑the‑middle attacks or unauthorized access. Users must install the latest ca-certificates package to ensure secure certificate handling.",
+    "id": "https://access.redhat.com/errata/RHSA-2026:88562",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:88562",
+    "title": "Red Hat Releases Critical Update for ca-certificates on RHEL 9.2 SAP Solutions",
+    "headline": "Red Hat Releases Critical Update for ca-certificates on RHEL 9.2 SAP Solutions",
+    "summary": "A critical security update for ca-certificates is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions, addressing multiple vulnerabilities with high CVSS scores. The update mitigates certificate validation flaws that could allow attackers to forge trust chains and intercept secure communications. Red Hat has released the patch; administrators should apply it immediately to maintain system integrity.",
     "category": "VULNERABILITY",
-    "severity": "HIGH",
+    "severity": "CRITICAL",
     "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-10-23T19:53:37.000Z",
-    "url": "https://access.redhat.com/errata/RHSA-2026:88779",
+    "publishedAt": "2026-10-23T19:43:28.000Z",
+    "url": "https://access.redhat.com/errata/RHSA-2026:88562",
     "additionalSources": []
   },
   {
-    "id": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Informational+for+Emergency+Distrust+of+eMudhra+Root+and+Intermediate+Certificate+Authorities%26vs_k%3D1",
-    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Informational+for+Emergency+Distrust+of+eMudhra+Root+and+Intermediate+Certificate+Authorities%26vs_k%3D1",
-    "title": "eMudhra Intermediate CA Private Keys Compromised",
-    "headline": "eMudhra Intermediate CA Private Keys Compromised",
-    "summary": "A critical compromise of eMudhra intermediate certificates was discovered, exposing eight private keys due to a key generation ceremony flaw that permits brute‑force acquisition within seconds. The flaw allows attackers to forge certificates for any domain, potentially enabling man‑in‑the‑middle attacks and undermining trust chains. Cisco recommends disabling affected CAs and applying vendor‑issued mitigations immediately.",
+    "id": "https://www.darkreading.com/application-security/exposed-php2shell-cyber-experts-advice",
+    "sourceUrl": "https://www.darkreading.com/application-security/exposed-php2shell-cyber-experts-advice",
+    "title": "PHP2Shell Vulnerabilities Require Comprehensive Mitigation Beyond Simple Updates",
+    "headline": "PHP2Shell Vulnerabilities Require Comprehensive Mitigation Beyond Simple Updates",
+    "summary": "The PHP2Shell vulnerability exposes critical PHP flaws that enable remote code execution through crafted input. Attackers can exploit these weaknesses by injecting malicious payloads, potentially compromising web applications and servers. Security teams should perform a thorough risk assessment, apply the latest PHP patches, and enforce input validation to mitigate exploitation.",
     "category": "VULNERABILITY",
     "severity": "HIGH",
-    "source": "Cisco PSIRT",
-    "publishedAt": "2026-10-23T16:00:00.000Z",
-    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Informational+for+Emergency+Distrust+of+eMudhra+Root+and+Intermediate+Certificate+Authorities%26vs_k%3D1",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-23T19:41:23.000Z",
+    "url": "https://www.darkreading.com/application-security/exposed-php2shell-cyber-experts-advice",
     "additionalSources": []
   },
   {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83862",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83862",
-    "title": "CVE‑2026‑83862: Windows Network Load Balancing RCE Exploit Adjusted CVSS",
-    "headline": "CVE‑2026‑83862: Windows Network Load Balancing RCE Exploit Adjusted CVSS",
-    "summary": "CVE‑2026‑83862 is a Windows Network Load Balancing Remote Code Execution vulnerability with a CVSS base score of 8.8 after an attack vector adjustment to Adjacent. The flaw requires Layer 2 adjacency and allows authenticated attackers to execute arbitrary code on affected systems. Microsoft has released a patch; customers should install the update immediately to mitigate the risk.",
+    "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-102-aws/",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-102-aws/",
+    "title": "CVE-2026-84942: Stored XSS via Vega Expression Bypass in OpenSearch Dashboards",
+    "headline": "CVE-2026-84942: Stored XSS via Vega Expression Bypass in OpenSearch Dashboards",
+    "summary": "A stored cross‑site scripting vulnerability in OpenSearch Dashboards allows attackers to inject malicious Vega expressions that bypass input sanitization. CVE‑2026‑84942 exploits a parser logic bug, enabling unauthenticated script execution that can hijack user sessions. An official patch is available from Elastic; administrators should update OpenSearch Dashboards immediately and review input validation settings to mitigate exploitation.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "publishedAt": "2026-10-23T17:43:59.000Z",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-102-aws/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-43-8",
+    "sourceUrl": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-43-8",
+    "title": "PHP Discloses Two Critical‑Level RCE Flaws",
+    "headline": "PHP Discloses Two Critical‑Level RCE Flaws",
+    "summary": "PHP has disclosed two critical‑level remote code execution vulnerabilities that allow attackers to execute arbitrary code on affected servers. The flaws stem from improper input validation in the core engine, with public proof‑of‑concept exploits demonstrating full system compromise. Immediate application of the vendor‑issued patches and disabling remote execution features are mandatory to prevent exploitation.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "SentinelOne",
+    "publishedAt": "2026-10-23T17:18:43.000Z",
+    "url": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-43-8",
+    "additionalSources": []
+  },
+  {
+    "id": "http://chromereleases.googleblog.com/feeds/4602648838450212475/comments/default",
+    "sourceUrl": "http://chromereleases.googleblog.com/feeds/4602648838450212475/comments/default",
+    "title": "Chrome Dev Channel Updated to 158.0.8117.2",
+    "headline": "Chrome Dev Channel Updated to 158.0.8117.2",
+    "summary": "Chrome Dev channel received update 158.0.8117.2 for Windows, macOS, and Linux, adding bug fixes and performance enhancements. No security flaw was disclosed, but the release addresses several stability issues reported in the Git log. Users should install the update through Chrome Update or switch channels, and report new problems via the bug filing system.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "publishedAt": "2026-10-23T16:28:33.571Z",
+    "url": "http://chromereleases.googleblog.com/feeds/4602648838450212475/comments/default",
+    "additionalSources": []
+  },
+  {
+    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102208",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102208",
+    "title": "CVE-2026-102208: Windows Win32 Kernel Subsystem Elevation of Privilege",
+    "headline": "CVE-2026-102208: Windows Win32 Kernel Subsystem Elevation of Privilege",
+    "summary": "CVE-2026-102208 is an elevation of privilege flaw in Windows Win32 Kernel Subsystem affecting all Windows versions. The flaw allows local attackers to gain SYSTEM privileges via malformed input, with CVSS 8.5, and a public PoC exists. Microsoft released a patch in the latest cumulative update; administrators should apply it immediately and enforce least privilege.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "Microsoft MSRC",
     "publishedAt": "2026-10-23T14:00:00.000Z",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83862",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102208",
     "additionalSources": []
   },
   {
-    "id": "https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/",
-    "title": "HPE Releases Patches for Eight High‑Severity ArubaOS RCE and Auth Bypass Flaws",
-    "headline": "HPE Releases Patches for Eight High‑Severity ArubaOS RCE and Auth Bypass Flaws",
-    "summary": "Hewlett Packard Enterprise disclosed eight high‑severity ArubaOS flaws enabling authentication bypass and remote code execution via the Aruba Operating System. The vulnerabilities stem from improper input validation in privileged configuration interfaces, allowing attackers to inject malicious commands and gain full administrative control. HPE released patches for all affected versions; security teams should apply the updates immediately and verify configuration integrity.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-23T12:48:00.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/mirai-botnet-operators-join-php2shell-attacks-as-aslr-bypass-exploits-emerge/",
-    "sourceUrl": "https://www.securityweek.com/mirai-botnet-operators-join-php2shell-attacks-as-aslr-bypass-exploits-emerge/",
-    "title": "Mirai Botnet Operators Exploit PHP2Shell ASLR Bypass (CVE-2026-109618)",
-    "headline": "Mirai Botnet Operators Exploit PHP2Shell ASLR Bypass (CVE-2026-109618)",
-    "summary": "Researchers linked Mirai botnet operators to PHP2Shell attacks, revealing an ASLR bypass that could facilitate remote code execution on vulnerable servers. The flaw, identified as CVE-2026-109618, exploits a stack corruption vulnerability in PHP’s internal memory handling, but no successful exploitation has been observed. Administrators should update PHP to the latest release and enable ASLR mitigation features to prevent potential exploitation.",
+    "id": "https://isc.sans.edu/diary/rss/33450",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33450",
+    "title": "Critical PHP Vulnerability CVE-2026-109618 Enables Remote Code Execution",
+    "headline": "Critical PHP Vulnerability CVE-2026-109618 Enables Remote Code Execution",
+    "summary": "A critical PHP vulnerability, CVE-2026-109618, enables remote code execution via malformed input. The flaw allows unauthenticated attackers to execute arbitrary code with the privileges of the web server, and a public PoC demonstrates the exploitability. A patch is available from the PHP team; administrators should update to the latest release immediately.",
     "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-23T12:45:52.000Z",
-    "url": "https://www.securityweek.com/mirai-botnet-operators-join-php2shell-attacks-as-aslr-bypass-exploits-emerge/",
+    "severity": "CRITICAL",
+    "source": "SANS Internet Storm Center",
+    "publishedAt": "2026-10-23T13:43:20.000Z",
+    "url": "https://isc.sans.edu/diary/rss/33450",
     "additionalSources": []
   },
   {
-    "id": "http://chromereleases.googleblog.com/feeds/3934494581393061675/comments/default",
-    "sourceUrl": "http://chromereleases.googleblog.com/feeds/3934494581393061675/comments/default",
-    "title": "Chrome Dev 158 Released for Android",
-    "headline": "Chrome Dev 158 Released for Android",
-    "summary": "Chrome Dev 158 (158.0.8117.0) for Android has been released to Google Play, extending the developer channel for the browser. The update lists changes in the Git log, with feature details on the Chromium blog and web platform updates linked separately. Users reporting new issues should file bugs through official channels; no security patches or critical fixes are included.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "publishedAt": "2026-10-23T11:58:32.749Z",
-    "url": "http://chromereleases.googleblog.com/feeds/3934494581393061675/comments/default",
+    "id": "https://ubuntu.com/security/notices/USN-8954-1",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8954-1",
+    "title": "zlib Heap Buffer Overflow Vulnerability in Non-Blocking Write Operations",
+    "headline": "zlib Heap Buffer Overflow Vulnerability in Non-Blocking Write Operations",
+    "summary": "A zlib heap buffer overflow flaw in non-blocking write operations could allow attackers to trigger denial of service or arbitrary code execution. The vulnerability arises from incorrect handling of write buffers, potentially enabling arbitrary code execution; no CVE is cited, and exploitation remains theoretical with no public PoC reported. Ubuntu has released patch USN-8954-1; users should update zlib to mitigate the risk.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "publishedAt": "2026-10-22T19:54:53.000Z",
+    "url": "https://ubuntu.com/security/notices/USN-8954-1",
+    "additionalSources": []
+  },
+  {
+    "id": "https://ubuntu.com/security/notices/USN-8953-1",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8953-1",
+    "title": "OpenVPN Certificate Subject Field Vulnerability Exposes User Impersonation Risk",
+    "headline": "OpenVPN Certificate Subject Field Vulnerability Exposes User Impersonation Risk",
+    "summary": "OpenVPN was found to mishandle certificate subject fields, allowing a remote authenticated user to impersonate other users. The flaw stems from improper validation of subject names, creating a potential for credential spoofing without requiring elevated privileges. A vendor patch is available in the latest OpenVPN release; administrators should update immediately and verify certificate handling.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "publishedAt": "2026-10-22T15:38:41.000Z",
+    "url": "https://ubuntu.com/security/notices/USN-8953-1",
     "additionalSources": []
   },
   {
@@ -154,6 +180,19 @@
     ]
   },
   {
+    "id": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+PHP+Affecting+Cisco+Products%3A+October+2026%26vs_k%3D1",
+    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+PHP+Affecting+Cisco+Products%3A+October+2026%26vs_k%3D1",
+    "title": "Critical PHP RCE Vulnerabilities Impact Cisco Products",
+    "headline": "Critical PHP RCE Vulnerabilities Impact Cisco Products",
+    "summary": "Critical PHP vulnerabilities CVE-2026-109618 and CVE-2026-109619 enable remote code execution via out‑of‑memory corruption and stale global state in Cisco products. The flaws allow attackers to execute arbitrary code without authentication, posing a high‑risk threat to affected systems. Cisco has released patches; administrators should apply the updates immediately to mitigate exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Cisco PSIRT",
+    "publishedAt": "2026-10-23T22:39:09.000Z",
+    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+PHP+Affecting+Cisco+Products%3A+October+2026%26vs_k%3D1",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.darkreading.com/cyber-risk/trust-is-not-what-it-seems-and-fraudsters-are-counting-on-it",
     "sourceUrl": "https://www.darkreading.com/cyber-risk/trust-is-not-what-it-seems-and-fraudsters-are-counting-on-it",
     "title": "Threat Actors Exploit Help Desk Interactions for Unauthorized Access (CVE-2026-115547)",
@@ -199,6 +238,19 @@
       "CVE-2026-109618",
       "CVE-2026-109619"
     ]
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:88779",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:88779",
+    "title": "Red Hat ca-certificates Update Addresses Critical Vulnerability",
+    "headline": "Red Hat ca-certificates Update Addresses Critical Vulnerability",
+    "summary": "Red Hat Enterprise Linux 7 Extended Lifecycle Support receives a critical security update for ca-certificates, addressing an unspecified vulnerability that could allow attackers to tamper with certificate validation. The flaw is rated with a high CVSS score and could enable man‑in‑the‑middle attacks or unauthorized access. Users must install the latest ca-certificates package to ensure secure certificate handling.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-10-23T19:53:37.000Z",
+    "url": "https://access.redhat.com/errata/RHSA-2026:88779",
+    "additionalSources": []
   },
   {
     "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-to-get-ai-powered-context-aware-phishing-detection/",
@@ -362,6 +414,19 @@
     ]
   },
   {
+    "id": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Informational+for+Emergency+Distrust+of+eMudhra+Root+and+Intermediate+Certificate+Authorities%26vs_k%3D1",
+    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Informational+for+Emergency+Distrust+of+eMudhra+Root+and+Intermediate+Certificate+Authorities%26vs_k%3D1",
+    "title": "eMudhra Intermediate CA Private Keys Compromised",
+    "headline": "eMudhra Intermediate CA Private Keys Compromised",
+    "summary": "A critical compromise of eMudhra intermediate certificates was discovered, exposing eight private keys due to a key generation ceremony flaw that permits brute‑force acquisition within seconds. The flaw allows attackers to forge certificates for any domain, potentially enabling man‑in‑the‑middle attacks and undermining trust chains. Cisco recommends disabling affected CAs and applying vendor‑issued mitigations immediately.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Cisco PSIRT",
+    "publishedAt": "2026-10-23T16:00:00.000Z",
+    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Informational+for+Emergency+Distrust+of+eMudhra+Root+and+Intermediate+Certificate+Authorities%26vs_k%3D1",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/",
     "title": "PHP Releases Mitigation for CVE‑2026‑115560 RCE Vulnerability",
@@ -437,6 +502,19 @@
     "source": "BleepingComputer",
     "publishedAt": "2026-10-23T14:00:10.000Z",
     "url": "https://www.bleepingcomputer.com/news/security/you-gave-your-ai-agent-access-but-who-is-giving-it-orders/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83862",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83862",
+    "title": "CVE‑2026‑83862: Windows Network Load Balancing RCE Exploit Adjusted CVSS",
+    "headline": "CVE‑2026‑83862: Windows Network Load Balancing RCE Exploit Adjusted CVSS",
+    "summary": "CVE‑2026‑83862 is a Windows Network Load Balancing Remote Code Execution vulnerability with a CVSS base score of 8.8 after an attack vector adjustment to Adjacent. The flaw requires Layer 2 adjacency and allows authenticated attackers to execute arbitrary code on affected systems. Microsoft has released a patch; customers should install the update immediately to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "publishedAt": "2026-10-23T14:00:00.000Z",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83862",
     "additionalSources": []
   },
   {
@@ -545,6 +623,32 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/",
+    "title": "HPE Releases Patches for Eight High‑Severity ArubaOS RCE and Auth Bypass Flaws",
+    "headline": "HPE Releases Patches for Eight High‑Severity ArubaOS RCE and Auth Bypass Flaws",
+    "summary": "Hewlett Packard Enterprise disclosed eight high‑severity ArubaOS flaws enabling authentication bypass and remote code execution via the Aruba Operating System. The vulnerabilities stem from improper input validation in privileged configuration interfaces, allowing attackers to inject malicious commands and gain full administrative control. HPE released patches for all affected versions; security teams should apply the updates immediately and verify configuration integrity.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-23T12:48:00.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/mirai-botnet-operators-join-php2shell-attacks-as-aslr-bypass-exploits-emerge/",
+    "sourceUrl": "https://www.securityweek.com/mirai-botnet-operators-join-php2shell-attacks-as-aslr-bypass-exploits-emerge/",
+    "title": "Mirai Botnet Operators Exploit PHP2Shell ASLR Bypass (CVE-2026-109618)",
+    "headline": "Mirai Botnet Operators Exploit PHP2Shell ASLR Bypass (CVE-2026-109618)",
+    "summary": "Researchers linked Mirai botnet operators to PHP2Shell attacks, revealing an ASLR bypass that could facilitate remote code execution on vulnerable servers. The flaw, identified as CVE-2026-109618, exploits a stack corruption vulnerability in PHP’s internal memory handling, but no successful exploitation has been observed. Administrators should update PHP to the latest release and enable ASLR mitigation features to prevent potential exploitation.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-23T12:45:52.000Z",
+    "url": "https://www.securityweek.com/mirai-botnet-operators-join-php2shell-attacks-as-aslr-bypass-exploits-emerge/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog-0",
     "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog-0",
     "title": "CISA Adds CVE-2026-110447 to Known Exploited Vulnerabilities Catalog",
@@ -565,6 +669,19 @@
       "CVE-2026-110447",
       "CVE-2026-114625"
     ]
+  },
+  {
+    "id": "http://chromereleases.googleblog.com/feeds/3934494581393061675/comments/default",
+    "sourceUrl": "http://chromereleases.googleblog.com/feeds/3934494581393061675/comments/default",
+    "title": "Chrome Dev 158 Released for Android",
+    "headline": "Chrome Dev 158 Released for Android",
+    "summary": "Chrome Dev 158 (158.0.8117.0) for Android has been released to Google Play, extending the developer channel for the browser. The update lists changes in the Git log, with feature details on the Chromium blog and web platform updates linked separately. Users reporting new issues should file bugs through official channels; no security patches or critical fixes are included.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "publishedAt": "2026-10-23T11:58:32.749Z",
+    "url": "http://chromereleases.googleblog.com/feeds/3934494581393061675/comments/default",
+    "additionalSources": []
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/10/23/microsoft-365-accounts-stolen-sessions/",
@@ -4774,125 +4891,6 @@
     "source": "The Hacker News",
     "publishedAt": "2026-10-12T11:55:00.000Z",
     "url": "https://thehackernews.com/2026/10/bring-your-own-agent-your-employees.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/mastermind-of-15000-mule-cybercrime-laundering-network-pleads-guilty-in-us/",
-    "sourceUrl": "https://www.securityweek.com/mastermind-of-15000-mule-cybercrime-laundering-network-pleads-guilty-in-us/",
-    "title": "Mastermind of 15,000-Mule Cybercrime Laundering Network Pleads Guilty in US",
-    "headline": "Mastermind of 15,000-Mule Cybercrime Laundering Network Pleads Guilty in US",
-    "summary": "Oleg Korniev, a leader of the YMCO money‑mule network that helped hackers move funds outside the US, pleaded guilty in a US court. The case highlights the growing reach of cybercrime laundering operations and the legal actions against key figures.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-12T11:24:50.000Z",
-    "url": "https://www.securityweek.com/mastermind-of-15000-mule-cybercrime-laundering-network-pleads-guilty-in-us/",
-    "additionalSources": [
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/leader-of-money-mule-operation-for-cybercriminals-pleads-guilty"
-      }
-    ]
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/12/microsoft-decision-1-model/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/12/microsoft-decision-1-model/",
-    "title": "Microsoft’s New Decision‑Scoring Model Aims to Improve AI Agent Workflow",
-    "headline": "Microsoft’s New Decision‑Scoring Model Aims to Improve AI Agent Workflow",
-    "summary": "Microsoft released the Microsoft‑Decision‑1 model, a small decision‑scoring tool that assigns calibrated probabilities to answer options. It is intended for routing, classification, prioritization, verification, and workflow control, enabling secure, trusted AI agent integration.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-12T11:02:24.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/12/microsoft-decision-1-model/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.malwarebytes.com/blog/ai/2026/10/phishing-emails-are-baiting-your-ai-assistant",
-    "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/10/phishing-emails-are-baiting-your-ai-assistant",
-    "title": "Phishing Emails Target AI Assistant Users",
-    "headline": "Phishing Emails Target AI Assistant Users",
-    "summary": "Phishing emails embed hidden instructions that can trick AI assistants into executing commands, turning ignored emails into tasks. The technique exploits AI summarization features to gain user interaction and potentially access sensitive data.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "Malwarebytes Labs",
-    "publishedAt": "2026-10-12T10:54:40.000Z",
-    "url": "https://www.malwarebytes.com/blog/ai/2026/10/phishing-emails-are-baiting-your-ai-assistant",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/decepticon-ai-red-team-tool/",
-    "sourceUrl": "https://cybersecuritynews.com/decepticon-ai-red-team-tool/",
-    "title": "Decepticon: Open‑Source Autonomous Red Team Agent Integrating Claude and Codex",
-    "headline": "Decepticon: Open‑Source Autonomous Red Team Agent Integrating Claude and Codex",
-    "summary": "Decepticon is an open‑source autonomous red‑team tool that combines AI reasoning with hands‑on security testing. It links Claude Code and OpenAI Codex, allowing operators to manage assessments from familiar coding tools and follow attack paths within defined engagement rules.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-12T08:05:58.000Z",
-    "url": "https://cybersecuritynews.com/decepticon-ai-red-team-tool/",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/12/aws-strands-box-open-source-ai-agent-sandbox/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.securityweek.com/lets-encrypt-cuts-default-certificate-validity-to-64-days-ahead-of-45-day-switch/",
-    "sourceUrl": "https://www.securityweek.com/lets-encrypt-cuts-default-certificate-validity-to-64-days-ahead-of-45-day-switch/",
-    "title": "Let’s Encrypt Shortens Default Certificate Validity to 64 Days",
-    "headline": "Let’s Encrypt Shortens Default Certificate Validity to 64 Days",
-    "summary": "Let’s Encrypt will reduce the default validity of newly issued certificates to 64 days starting February 2027, moving away from the previously planned 45‑day period. The change aims to improve security by shortening the window for certificate misuse and encouraging more frequent renewals.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-12T07:53:28.000Z",
-    "url": "https://www.securityweek.com/lets-encrypt-cuts-default-certificate-validity-to-64-days-ahead-of-45-day-switch/",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/12/lets-encrypt-64-day-certificate-lifetime/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/12/microsoft-windows-update-certificate-rotation/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/12/microsoft-windows-update-certificate-rotation/",
-    "title": "Windows PCs May Lose Security Updates if Key Certificates Expire in 2027",
-    "headline": "Windows PCs May Lose Security Updates if Key Certificates Expire in 2027",
-    "summary": "Microsoft warns that Windows devices lacking updated certificates will lose access to Windows Update servers once the current certificates expire on May 17 or June 19, 2027. Users must install replacement certificates via Microsoft’s certificate rotation process to continue receiving security patches.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-12T07:39:50.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/12/microsoft-windows-update-certificate-rotation/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/nvidia-dcgm-exporter-bug-exposes/",
-    "sourceUrl": "https://cybersecuritynews.com/nvidia-dcgm-exporter-bug-exposes/",
-    "title": "NVIDIA DCGM Exporter Vulnerability Allows Resource Exhaustion",
-    "headline": "NVIDIA DCGM Exporter Vulnerability Allows Resource Exhaustion",
-    "summary": "NVIDIA patched a high‑severity flaw, CVE‑2026‑47483, in its DCGM Exporter that lets unauthenticated attackers exhaust GPU server resources, crash monitoring, and disrupt AI workloads. The flaw targets the exporter’s ability to read GPU metrics and serve them via HTTP.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-12T04:52:16.000Z",
-    "url": "https://cybersecuritynews.com/nvidia-dcgm-exporter-bug-exposes/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/12/ai-vulnerability-patching-grading-problem/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/12/ai-vulnerability-patching-grading-problem/",
-    "title": "AI‑Generated Patches Often Fail Maintainer Tests",
-    "headline": "AI‑Generated Patches Often Fail Maintainer Tests",
-    "summary": "Researchers at Northwestern University evaluated AI coding agents on 112 real security bugs. They found that many patches that eliminate crashes still fail the maintainers’ custom tests. With Claude Opus 4.7, one‑third of successful crash‑fix patches did not pass these checks, highlighting a flaw in AI patch grading.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-12T04:45:43.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/12/ai-vulnerability-patching-grading-problem/",
     "additionalSources": []
   }
 ]

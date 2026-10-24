@@ -67,6 +67,10 @@ export const news: NewsBrief[] = [
         "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+PHP+Affecting+Cisco+Products%3A+October+2026%26vs_k%3D1"
       },
       {
+        "source": "SentinelOne",
+        "sourceUrl": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-43-8"
+      },
+      {
         "source": "BleepingComputer",
         "sourceUrl": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/"
       },
@@ -77,6 +81,10 @@ export const news: NewsBrief[] = [
       {
         "source": "The Hacker News",
         "sourceUrl": "https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html"
+      },
+      {
+        "source": "SANS Internet Storm Center",
+        "sourceUrl": "https://isc.sans.edu/diary/rss/33450"
       },
       {
         "source": "SecurityWeek",
@@ -90,12 +98,16 @@ export const news: NewsBrief[] = [
       "palo-alto-confirms-php-rce-vulnerabilities-impact-pan-os-and",
       "critical-php-rce-vulnerabilities-impact-cisco-prod-52936c",
       "critical-php-rce-vulnerabilities-impact-cisco-products",
+      "php-discloses-two-critical-level-rce-flaws-5e83e1",
+      "php-discloses-two-critical-level-rce-flaws",
       "php-releases-mitigation-for-cve-2026-115560-rce-vu-3e4da4",
       "php-releases-mitigation-for-cve-2026-115560-rce-vulnerabilit",
       "cve-2026-83862-windows-network-load-balancing-rce-7440de",
       "cve-2026-83862-windows-network-load-balancing-rce-exploit-ad",
       "enterprise-firewalls-and-vpns-breached-70-000-cred-1f7b9d",
       "enterprise-firewalls-and-vpns-breached-70-000-credentials-ex",
+      "critical-php-vulnerability-cve-2026-109618-enables-57dd7e",
+      "critical-php-vulnerability-cve-2026-109618-enables-remote-co",
       "mirai-botnet-operators-exploit-php2shell-aslr-bypa-249a64",
       "mirai-botnet-operators-exploit-php2shell-aslr-bypass-cve-202"
     ]
@@ -188,12 +200,37 @@ export const news: NewsBrief[] = [
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:88779",
     "publishedAt": "2026-10-23T19:53:37.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Red Hat Security Advisories",
+        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:88562"
+      }
+    ],
     "aliases": [
       "red-hat-ca-certificates-update-addresses-critical",
       "article-37e4f4",
       "37e4f4",
-      "red-hat-ca-certificates-update-addresses-critical-vulnerabil"
+      "red-hat-ca-certificates-update-addresses-critical-vulnerabil",
+      "red-hat-releases-critical-update-for-ca-certificat-37e4fc",
+      "red-hat-releases-critical-update-for-ca-certificates-on-rhel"
+    ]
+  },
+  {
+    "slug": "php2shell-vulnerabilities-require-comprehensive-mi-795ba5",
+    "title": "PHP2Shell Vulnerabilities Require Comprehensive Mitigation Beyond Simple Updates",
+    "summary": "The PHP2Shell vulnerability exposes critical PHP flaws that enable remote code execution through crafted input. Attackers can exploit these weaknesses by injecting malicious payloads, potentially compromising web applications and servers. Security teams should perform a thorough risk assessment, apply the latest PHP patches, and enforce input validation to mitigate exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/application-security/exposed-php2shell-cyber-experts-advice",
+    "publishedAt": "2026-10-23T19:41:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "php2shell-vulnerabilities-require-comprehensive-mi",
+      "article-795ba5",
+      "795ba5",
+      "php2shell-vulnerabilities-require-comprehensive-mitigation-b"
     ]
   },
   {
@@ -330,6 +367,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cve-2026-84942-stored-xss-via-vega-expression-bypa-455a23",
+    "title": "CVE-2026-84942: Stored XSS via Vega Expression Bypass in OpenSearch Dashboards",
+    "summary": "A stored cross‑site scripting vulnerability in OpenSearch Dashboards allows attackers to inject malicious Vega expressions that bypass input sanitization. CVE‑2026‑84942 exploits a parser logic bug, enabling unauthenticated script execution that can hijack user sessions. An official patch is available from Elastic; administrators should update OpenSearch Dashboards immediately and review input validation settings to mitigate exploitation.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-102-aws/",
+    "publishedAt": "2026-10-23T17:43:59.000Z",
+    "cves": [
+      "CVE-2026-84942"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-84942-stored-xss-via-vega-expression-bypa",
+      "article-455a23",
+      "455a23",
+      "cve-2026-84942-stored-xss-via-vega-expression-bypass-in-open"
+    ]
+  },
+  {
     "slug": "fcc-bans-two-devices-containing-huawei-linked-surv-4c7a3a",
     "title": "FCC Bans Two Devices Containing Huawei-Linked Surveillance Chips",
     "summary": "The FCC has banned the import and sale of a wireless video transmitter and a dashboard camera that contain surveillance chips manufactured by Huawei subsidiary HiSilicon. The devices were identified as part of a broader effort to restrict the use of Chinese-made hardware in critical security applications, citing national security concerns. The ban applies to all U.S. importers and distributors.",
@@ -399,6 +456,30 @@ export const news: NewsBrief[] = [
       "article-1fdcce",
       "1fdcce",
       "quest-diagnostics-breach-exposes-patient-records-via-quanum-"
+    ]
+  },
+  {
+    "slug": "chrome-dev-channel-updated-to-158-0-8117-2-62d7c1",
+    "title": "Chrome Dev Channel Updated to 158.0.8117.2",
+    "summary": "Chrome Dev channel received update 158.0.8117.2 for Windows, macOS, and Linux, adding bug fixes and performance enhancements. No security flaw was disclosed, but the release addresses several stability issues reported in the Git log. Users should install the update through Chrome Update or switch channels, and report new problems via the bug filing system.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "http://chromereleases.googleblog.com/feeds/4602648838450212475/comments/default",
+    "publishedAt": "2026-10-23T16:28:33.571Z",
+    "cves": [],
+    "additionalSources": [
+      {
+        "source": "Google Chrome Releases",
+        "sourceUrl": "http://chromereleases.googleblog.com/feeds/3934494581393061675/comments/default"
+      }
+    ],
+    "aliases": [
+      "chrome-dev-channel-updated-to-158-0-8117-2",
+      "article-62d7c1",
+      "62d7c1",
+      "chrome-dev-158-released-for-android-5b96fe",
+      "chrome-dev-158-released-for-android"
     ]
   },
   {
@@ -513,6 +594,26 @@ export const news: NewsBrief[] = [
       "article-5ad1e0",
       "5ad1e0",
       "ai-agent-manipulation-via-malicious-inputs-exploits-legitima"
+    ]
+  },
+  {
+    "slug": "cve-2026-102208-windows-win32-kernel-subsystem-ele-1ff9f1",
+    "title": "CVE-2026-102208: Windows Win32 Kernel Subsystem Elevation of Privilege",
+    "summary": "CVE-2026-102208 is an elevation of privilege flaw in Windows Win32 Kernel Subsystem affecting all Windows versions. The flaw allows local attackers to gain SYSTEM privileges via malformed input, with CVSS 8.5, and a public PoC exists. Microsoft released a patch in the latest cumulative update; administrators should apply it immediately and enforce least privilege.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102208",
+    "publishedAt": "2026-10-23T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-102208"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-102208-windows-win32-kernel-subsystem-ele",
+      "article-1ff9f1",
+      "1ff9f1",
+      "cve-2026-102208-windows-win32-kernel-subsystem-elevation-of-"
     ]
   },
   {
@@ -640,23 +741,6 @@ export const news: NewsBrief[] = [
       "article-240955",
       "240955",
       "cisa-adds-cve-2026-110447-to-known-exploited-vulnerabilities"
-    ]
-  },
-  {
-    "slug": "chrome-dev-158-released-for-android-5b96fe",
-    "title": "Chrome Dev 158 Released for Android",
-    "summary": "Chrome Dev 158 (158.0.8117.0) for Android has been released to Google Play, extending the developer channel for the browser. The update lists changes in the Git log, with feature details on the Chromium blog and web platform updates linked separately. Users reporting new issues should file bugs through official channels; no security patches or critical fixes are included.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "http://chromereleases.googleblog.com/feeds/3934494581393061675/comments/default",
-    "publishedAt": "2026-10-23T11:58:32.749Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-dev-158-released-for-android",
-      "article-5b96fe",
-      "5b96fe"
     ]
   },
   {
@@ -1017,6 +1101,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "zlib-heap-buffer-overflow-vulnerability-in-non-blo-7fbd6b",
+    "title": "zlib Heap Buffer Overflow Vulnerability in Non-Blocking Write Operations",
+    "summary": "A zlib heap buffer overflow flaw in non-blocking write operations could allow attackers to trigger denial of service or arbitrary code execution. The vulnerability arises from incorrect handling of write buffers, potentially enabling arbitrary code execution; no CVE is cited, and exploitation remains theoretical with no public PoC reported. Ubuntu has released patch USN-8954-1; users should update zlib to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8954-1",
+    "publishedAt": "2026-10-22T19:54:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "zlib-heap-buffer-overflow-vulnerability-in-non-blo",
+      "article-7fbd6b",
+      "7fbd6b",
+      "zlib-heap-buffer-overflow-vulnerability-in-non-blocking-writ"
+    ]
+  },
+  {
     "slug": "eu-supermarkets-hit-by-outdated-refrigerator-firmw-666457",
     "title": "EU Supermarkets Hit by Outdated Refrigerator Firmware",
     "summary": "An outdated OT firmware controlling refrigeration systems in EU supermarkets enabled attackers to compromise HVAC controls, causing millions of euros in losses. The flaw stemmed from third‑party firmware management lacking timely updates, allowing unauthorized manipulation of temperature settings. Vendors should immediately deploy the latest firmware patches and enforce strict update policies to mitigate further exposure.",
@@ -1121,6 +1223,24 @@ export const news: NewsBrief[] = [
       "article-679279",
       "679279",
       "microsoft-restores-exchange-web-services-api-for-legacy-appl"
+    ]
+  },
+  {
+    "slug": "openvpn-certificate-subject-field-vulnerability-ex-7fbd6f",
+    "title": "OpenVPN Certificate Subject Field Vulnerability Exposes User Impersonation Risk",
+    "summary": "OpenVPN was found to mishandle certificate subject fields, allowing a remote authenticated user to impersonate other users. The flaw stems from improper validation of subject names, creating a potential for credential spoofing without requiring elevated privileges. A vendor patch is available in the latest OpenVPN release; administrators should update immediately and verify certificate handling.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8953-1",
+    "publishedAt": "2026-10-22T15:38:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openvpn-certificate-subject-field-vulnerability-ex",
+      "article-7fbd6f",
+      "7fbd6f",
+      "openvpn-certificate-subject-field-vulnerability-exposes-user"
     ]
   },
   {
@@ -6041,148 +6161,6 @@ export const news: NewsBrief[] = [
       "amazon-blocks-meta-s-muse-after-ai-agent-concerns",
       "article-1bd25d",
       "1bd25d"
-    ]
-  },
-  {
-    "slug": "mastermind-of-15-000-mule-cybercrime-laundering-ne-33edae",
-    "title": "Mastermind of 15,000-Mule Cybercrime Laundering Network Pleads Guilty in US",
-    "summary": "Oleg Korniev, a leader of the YMCO money‑mule network that helped hackers move funds outside the US, pleaded guilty in a US court. The case highlights the growing reach of cybercrime laundering operations and the legal actions against key figures.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/mastermind-of-15000-mule-cybercrime-laundering-network-pleads-guilty-in-us/",
-    "publishedAt": "2026-10-12T11:24:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "mastermind-of-15-000-mule-cybercrime-laundering-ne",
-      "article-33edae",
-      "33edae",
-      "mastermind-of-15-000-mule-cybercrime-laundering-network-plea"
-    ]
-  },
-  {
-    "slug": "microsoft-s-new-decision-scoring-model-aims-to-imp-7e4403",
-    "title": "Microsoft’s New Decision‑Scoring Model Aims to Improve AI Agent Workflow",
-    "summary": "Microsoft released the Microsoft‑Decision‑1 model, a small decision‑scoring tool that assigns calibrated probabilities to answer options. It is intended for routing, classification, prioritization, verification, and workflow control, enabling secure, trusted AI agent integration.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/12/microsoft-decision-1-model/",
-    "publishedAt": "2026-10-12T11:02:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-s-new-decision-scoring-model-aims-to-imp",
-      "article-7e4403",
-      "7e4403",
-      "microsoft-s-new-decision-scoring-model-aims-to-improve-ai-ag"
-    ]
-  },
-  {
-    "slug": "phishing-emails-target-ai-assistant-users-e9a99b",
-    "title": "Phishing Emails Target AI Assistant Users",
-    "summary": "Phishing emails embed hidden instructions that can trick AI assistants into executing commands, turning ignored emails into tasks. The technique exploits AI summarization features to gain user interaction and potentially access sensitive data.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/10/phishing-emails-are-baiting-your-ai-assistant",
-    "publishedAt": "2026-10-12T10:54:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "phishing-emails-target-ai-assistant-users",
-      "article-e9a99b",
-      "e9a99b"
-    ]
-  },
-  {
-    "slug": "decepticon-open-source-autonomous-red-team-agent-i-58019b",
-    "title": "Decepticon: Open‑Source Autonomous Red Team Agent Integrating Claude and Codex",
-    "summary": "Decepticon is an open‑source autonomous red‑team tool that combines AI reasoning with hands‑on security testing. It links Claude Code and OpenAI Codex, allowing operators to manage assessments from familiar coding tools and follow attack paths within defined engagement rules.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/decepticon-ai-red-team-tool/",
-    "publishedAt": "2026-10-12T08:05:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "decepticon-open-source-autonomous-red-team-agent-i",
-      "article-58019b",
-      "58019b",
-      "decepticon-open-source-autonomous-red-team-agent-integrating"
-    ]
-  },
-  {
-    "slug": "let-s-encrypt-shortens-default-certificate-validit-f04adb",
-    "title": "Let’s Encrypt Shortens Default Certificate Validity to 64 Days",
-    "summary": "Let’s Encrypt will reduce the default validity of newly issued certificates to 64 days starting February 2027, moving away from the previously planned 45‑day period. The change aims to improve security by shortening the window for certificate misuse and encouraging more frequent renewals.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/lets-encrypt-cuts-default-certificate-validity-to-64-days-ahead-of-45-day-switch/",
-    "publishedAt": "2026-10-12T07:53:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "let-s-encrypt-shortens-default-certificate-validit",
-      "article-f04adb",
-      "f04adb",
-      "let-s-encrypt-shortens-default-certificate-validity-to-64-da"
-    ]
-  },
-  {
-    "slug": "windows-pcs-may-lose-security-updates-if-key-certi-455e7c",
-    "title": "Windows PCs May Lose Security Updates if Key Certificates Expire in 2027",
-    "summary": "Microsoft warns that Windows devices lacking updated certificates will lose access to Windows Update servers once the current certificates expire on May 17 or June 19, 2027. Users must install replacement certificates via Microsoft’s certificate rotation process to continue receiving security patches.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/12/microsoft-windows-update-certificate-rotation/",
-    "publishedAt": "2026-10-12T07:39:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "windows-pcs-may-lose-security-updates-if-key-certi",
-      "article-455e7c",
-      "455e7c",
-      "windows-pcs-may-lose-security-updates-if-key-certificates-ex"
-    ]
-  },
-  {
-    "slug": "nvidia-dcgm-exporter-vulnerability-allows-resource-69e263",
-    "title": "NVIDIA DCGM Exporter Vulnerability Allows Resource Exhaustion",
-    "summary": "NVIDIA patched a high‑severity flaw, CVE‑2026‑47483, in its DCGM Exporter that lets unauthenticated attackers exhaust GPU server resources, crash monitoring, and disrupt AI workloads. The flaw targets the exporter’s ability to read GPU metrics and serve them via HTTP.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/nvidia-dcgm-exporter-bug-exposes/",
-    "publishedAt": "2026-10-12T04:52:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nvidia-dcgm-exporter-vulnerability-allows-resource",
-      "article-69e263",
-      "69e263",
-      "nvidia-dcgm-exporter-vulnerability-allows-resource-exhaustio"
-    ]
-  },
-  {
-    "slug": "ai-generated-patches-often-fail-maintainer-tests-3ddea6",
-    "title": "AI‑Generated Patches Often Fail Maintainer Tests",
-    "summary": "Researchers at Northwestern University evaluated AI coding agents on 112 real security bugs. They found that many patches that eliminate crashes still fail the maintainers’ custom tests. With Claude Opus 4.7, one‑third of successful crash‑fix patches did not pass these checks, highlighting a flaw in AI patch grading.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/12/ai-vulnerability-patching-grading-problem/",
-    "publishedAt": "2026-10-12T04:45:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-generated-patches-often-fail-maintainer-tests",
-      "article-3ddea6",
-      "3ddea6"
     ]
   }
 ];

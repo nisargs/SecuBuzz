@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Oct 2026 17:16:34 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2026 21:10:28 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Brotli Decoder Memory Corruption Enables RCE in Node.js, Bun, Python, and Envoy</title>
@@ -80,6 +80,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>PHP2Shell Vulnerabilities Require Comprehensive Mitigation Beyond Simple Updates</title>
+      <link>https://secubuzz.com/news/php2shell-vulnerabilities-require-comprehensive-mi-795ba5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/php2shell-vulnerabilities-require-comprehensive-mi-795ba5</guid>
+      <description><![CDATA[The PHP2Shell vulnerability exposes critical PHP flaws that enable remote code execution through crafted input. Attackers can exploit these weaknesses by injecting malicious payloads, potentially compromising web applications and servers. Security teams should perform a thorough risk assessment, apply the latest PHP patches, and enforce input validation to mitigate exploitation.]]></description>
+      <pubDate>Fri, 23 Oct 2026 19:41:23 GMT</pubDate>
+      <source url="https://www.darkreading.com/application-security/exposed-php2shell-cyber-experts-advice">Dark Reading</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Microsoft Teams to Add AI‑Powered Phishing Detection</title>
       <link>https://secubuzz.com/news/microsoft-teams-to-add-ai-powered-phishing-detecti-5ee80e</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-teams-to-add-ai-powered-phishing-detecti-5ee80e</guid>
@@ -143,6 +152,15 @@
       <category>Ransomware</category>
     </item>
     <item>
+      <title>CVE-2026-84942: Stored XSS via Vega Expression Bypass in OpenSearch Dashboards</title>
+      <link>https://secubuzz.com/news/cve-2026-84942-stored-xss-via-vega-expression-bypa-455a23</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-84942-stored-xss-via-vega-expression-bypa-455a23</guid>
+      <description><![CDATA[A stored cross‑site scripting vulnerability in OpenSearch Dashboards allows attackers to inject malicious Vega expressions that bypass input sanitization. CVE‑2026‑84942 exploits a parser logic bug, enabling unauthenticated script execution that can hijack user sessions. An official patch is available from Elastic; administrators should update OpenSearch Dashboards immediately and review input validation settings to mitigate exploitation.]]></description>
+      <pubDate>Fri, 23 Oct 2026 17:43:59 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-102-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>FCC Bans Two Devices Containing Huawei-Linked Surveillance Chips</title>
       <link>https://secubuzz.com/news/fcc-bans-two-devices-containing-huawei-linked-surv-4c7a3a</link>
       <guid isPermaLink="true">https://secubuzz.com/news/fcc-bans-two-devices-containing-huawei-linked-surv-4c7a3a</guid>
@@ -177,6 +195,15 @@
       <pubDate>Fri, 23 Oct 2026 16:40:07 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/quest-diagnostics-confirms-data-breach-exposed-patient-records/">BleepingComputer</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Chrome Dev Channel Updated to 158.0.8117.2</title>
+      <link>https://secubuzz.com/news/chrome-dev-channel-updated-to-158-0-8117-2-62d7c1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-dev-channel-updated-to-158-0-8117-2-62d7c1</guid>
+      <description><![CDATA[Chrome Dev channel received update 158.0.8117.2 for Windows, macOS, and Linux, adding bug fixes and performance enhancements. No security flaw was disclosed, but the release addresses several stability issues reported in the Git log. Users should install the update through Chrome Update or switch channels, and report new problems via the bug filing system.]]></description>
+      <pubDate>Fri, 23 Oct 2026 16:28:33 GMT</pubDate>
+      <source url="http://chromereleases.googleblog.com/feeds/4602648838450212475/comments/default">Google Chrome Releases</source>
+      <category>General</category>
     </item>
     <item>
       <title>eMudhra Intermediate CA Private Keys Compromised</title>
@@ -231,6 +258,15 @@
       <pubDate>Fri, 23 Oct 2026 14:00:10 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/you-gave-your-ai-agent-access-but-who-is-giving-it-orders/">BleepingComputer</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>CVE-2026-102208: Windows Win32 Kernel Subsystem Elevation of Privilege</title>
+      <link>https://secubuzz.com/news/cve-2026-102208-windows-win32-kernel-subsystem-ele-1ff9f1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-102208-windows-win32-kernel-subsystem-ele-1ff9f1</guid>
+      <description><![CDATA[CVE-2026-102208 is an elevation of privilege flaw in Windows Win32 Kernel Subsystem affecting all Windows versions. The flaw allows local attackers to gain SYSTEM privileges via malformed input, with CVSS 8.5, and a public PoC exists. Microsoft released a patch in the latest cumulative update; administrators should apply it immediately and enforce least privilege.]]></description>
+      <pubDate>Fri, 23 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102208">Microsoft MSRC</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Caribbean Cyber Threats Amplify Global Risk</title>
@@ -294,15 +330,6 @@
       <pubDate>Fri, 23 Oct 2026 12:00:00 GMT</pubDate>
       <source url="https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog-0">CISA</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>Chrome Dev 158 Released for Android</title>
-      <link>https://secubuzz.com/news/chrome-dev-158-released-for-android-5b96fe</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-dev-158-released-for-android-5b96fe</guid>
-      <description><![CDATA[Chrome Dev 158 (158.0.8117.0) for Android has been released to Google Play, extending the developer channel for the browser. The update lists changes in the Git log, with feature details on the Chromium blog and web platform updates linked separately. Users reporting new issues should file bugs through official channels; no security patches or critical fixes are included.]]></description>
-      <pubDate>Fri, 23 Oct 2026 11:58:32 GMT</pubDate>
-      <source url="http://chromereleases.googleblog.com/feeds/3934494581393061675/comments/default">Google Chrome Releases</source>
-      <category>General</category>
     </item>
     <item>
       <title>Microsoft 365 Accounts Compromised at 79 Organizations via Session Replay</title>
@@ -429,33 +456,6 @@
       <pubDate>Fri, 23 Oct 2026 04:00:41 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/23/new-infosec-products-of-the-week-october-23-2026/">Help Net Security</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>PHP2Shell Bug Sparks Exploitation Attempts</title>
-      <link>https://secubuzz.com/news/php2shell-bug-sparks-exploitation-attempts-37092e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/php2shell-bug-sparks-exploitation-attempts-37092e</guid>
-      <description><![CDATA[The PHP2Shell bug, a PHP flaw enabling remote code execution, has spurred attempts against servers running vulnerable PHP versions. The flaw requires authenticated access and local file inclusion, with no confirmed zero‑day exploit in the wild yet. Until an official patch arrives, administrators should disable remote file uploads, enforce least‑privilege PHP execution, and monitor for anomalous file changes.]]></description>
-      <pubDate>Fri, 23 Oct 2026 04:00:00 GMT</pubDate>
-      <source url="https://therecord.media/php-php2shell-exploitation-attempts-pocs">The Record</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>State Bank of India Suffers a Customer PII Data Leak</title>
-      <link>https://secubuzz.com/news/state-bank-of-india-suffers-a-customer-pii-data-le-7ed967</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/state-bank-of-india-suffers-a-customer-pii-data-le-7ed967</guid>
-      <description><![CDATA[A customer PII data leak at State Bank of India exposed personal identifiers through an undisclosed breach channel. The leak potentially fuels underground markets, enabling malicious actors to trade sensitive information for financial gain. Bank officials should immediately conduct forensic investigations, notify affected customers, and apply data protection controls to mitigate further exposure.]]></description>
-      <pubDate>Fri, 23 Oct 2026 03:30:00 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyberattacks-data-breaches/state-bank-india-customer-pii-data-leak">Dark Reading</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Critical Unpatched Linux Kernel Flaws Accidentally Disclosed on Public List</title>
-      <link>https://secubuzz.com/news/critical-unpatched-linux-kernel-flaws-accidentally-544a4d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/critical-unpatched-linux-kernel-flaws-accidentally-544a4d</guid>
-      <description><![CDATA[Critical unpatched Linux kernel flaws were inadvertently disclosed on public mailing lists, revealing remote code execution vectors targeting the KSMBD file server. Both vulnerabilities carry CVSS 9.0 scores, enabling attackers to gain arbitrary code execution without authentication, though no wild exploitation has been reported. Trend Micro’s Zero Day Initiative recommends applying patches and monitoring kernel update channels to prevent exploitation.]]></description>
-      <pubDate>Fri, 23 Oct 2026 02:09:49 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/linux-kernel-flaws-accidentally-disclosed/">Cyber Security News</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

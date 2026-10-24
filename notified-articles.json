@@ -2295,5 +2295,11 @@
   "https://access.redhat.com/errata/RHSA-2026:88779",
   "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Informational+for+Emergency+Distrust+of+eMudhra+Root+and+Intermediate+Certificate+Authorities%26vs_k%3D1",
   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83862",
-  "http://chromereleases.googleblog.com/feeds/3934494581393061675/comments/default"
+  "http://chromereleases.googleblog.com/feeds/3934494581393061675/comments/default",
+  "https://access.redhat.com/errata/RHSA-2026:88562",
+  "https://aws.amazon.com/security/security-bulletins/rss/2026-102-aws/",
+  "http://chromereleases.googleblog.com/feeds/4602648838450212475/comments/default",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102208",
+  "https://ubuntu.com/security/notices/USN-8954-1",
+  "https://ubuntu.com/security/notices/USN-8953-1"
 ]
