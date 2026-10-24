@@ -5,7 +5,6 @@ import { PhoneMockup } from '../components/PhoneMockup';
 import { FaqAccordion } from '../components/FaqAccordion';
 import { appFeatures, appRequirements, downloadFaq } from '../data/site';
 import { Seo } from '../components/Seo';
-import { SupportBanner } from '../components/SupportBanner';
 
 export function Download() {
   const scrollToVideo = (autoPlay = true) => {
@@ -184,11 +183,7 @@ export function Download() {
         </div>
       </section>
 
-      <section className="border-t border-line">
-        <div className="mx-auto max-w-site px-5 py-12 md:px-8">
-          <SupportBanner source="download_page" />
-        </div>
-      </section>
+
     </>);
 
 }

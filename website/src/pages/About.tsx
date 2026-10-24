@@ -4,8 +4,6 @@ import { AppCta } from '../components/AppCta';
 import { aboutPrinciples } from '../data/site';
 import { Seo } from '../components/Seo';
 
-import { SupportBanner } from '../components/SupportBanner';
-
 export function About() {
   return (
     <>
@@ -94,12 +92,6 @@ export function About() {
           <Link to="/contact" className="text-sm font-medium text-accent hover:underline">
             Contact MiSo Labs →
           </Link>
-        </div>
-      </section>
-
-      <section className="border-t border-line">
-        <div className="mx-auto max-w-site px-5 py-12 md:px-8">
-          <SupportBanner source="about_page" />
         </div>
       </section>
 
