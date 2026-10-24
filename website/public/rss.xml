@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Oct 2026 21:41:32 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2026 21:47:36 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Brotli Decoder Memory Corruption Enables RCE in Node.js, Bun, Python, and Envoy</title>
