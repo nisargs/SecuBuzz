@@ -1768,20 +1768,85 @@ console.log(
 );
 
 const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
-const ENTITY_TERMS = [
-  'php', 'okta', 'bitget', 'kiteworks', 'netscaler', 'citrix', 'wireshark', 'snowflake',
-  'chatgpt', 'elementor', 'sharepoint', 'fortinet', 'palo alto', 'ivanti',
-  'sonicwall', 'cisco', 'crowdstrike', 'vmware', 'salesforce', 'qualys',
-  'telegram', 'ransomhub', 'lockbit', 'akira', 'qilin', 'blacksuit',
-  'coregraphics', 'core graphics', 'safari', 'webkit', 'ios', 'apache', 'nginx', 'linux'
+
+// Standalone unique platforms, products, tools, and named threats where a matching mention within 3 days is 100% the same incident:
+const UNIQUE_PRODUCTS_OR_THREATS = [
+  'velocloud', 'fortimanager', 'fortigate', 'globalprotect', 'sharepoint',
+  'php2shell', 'node2shell', 'coregraphics', 'wireshark', 'elementor',
+  'connectwise', 'litellm', 'netscaler', 'pwnescape', 'ghostaction',
+  'avisloader', 'blackx', 'stealc', 'shinyhunters', 'whispergate'
 ];
 
+// Specific companies and victim organizations where a breach/incident mention within 3 days is the same event:
+const SPECIFIC_ORGANIZATIONS = [
+  'capcom', 'emudhra', 'snowflake', 'bitget', 'kiteworks', 'danfoss', 'canonical',
+  'quest diagnostics', 'yandex', 'ahold delhaize', 'change healthcare', 'ticketmaster'
+];
+
+// Vendor + specific product pairs (both MUST match to prevent broad vendor collisions like Cisco Expressway vs Cisco Duo):
+const VENDOR_PRODUCT_PAIRS = [
+  { vendor: 'cisco', products: ['expressway', 'duo', 'asa', 'ftd', 'ios-xe', 'nexus', 'catalyst'] },
+  { vendor: 'arista', products: ['vco', 'eos'] },
+  { vendor: 'hpe', products: ['aruba', 'aos', 'proliant', 'ilo'] },
+  { vendor: 'apache', products: ['struts', 'airflow', 'superset', 'kafka', 'tomcat', 'httpd'] },
+  { vendor: 'okta', products: ['gateway', 'verify', 'oag', 'asa'] },
+  { vendor: 'fortinet', products: ['fortios', 'fortianalyzer', 'forticlient'] },
+  { vendor: 'palo alto', products: ['pan-os', 'prisma', 'cortex'] },
+  { vendor: 'ivanti', products: ['connect secure', 'epmm', 'policy secure', 'standalone sentry', 'csa'] },
+  { vendor: 'microsoft', products: ['exchange', 'teams', 'entra', 'rdp', 'outlook'] },
+  { vendor: 'ruby', products: ['onigmo', 'rails', 'rubygems'] },
+  { vendor: 'apple', products: ['webkit', 'safari', 'imageio'] }
+];
+
+// Comprehensive stop words list filtering out ALL generic cybersecurity and English jargon:
 const STOP_WORDS = new Set([
-  'the', 'a', 'an', 'in', 'on', 'for', 'to', 'of', 'and', 'is', 'with', 'after', 'from',
-  'targets', 'fixes', 'flaw', 'vulnerability', 'vulnerabilities', 'security', 'cyber',
-  'attack', 'attacks', 'new', 'release', 'addresses', 'update', 'updates', 'by', 'as',
-  'at', 'about', 'over', 'into', 'warns', 'alert', 'patch', 'patches', 'zero-day', 'exploit',
-  'exploited', 'users', 'critical', 'high', 'active', 'actively', 'amid', 'amidst', 'via'
+  // Grammar, prepositions & articles
+  'the', 'a', 'an', 'in', 'on', 'for', 'to', 'of', 'and', 'is', 'are', 'was', 'were',
+  'with', 'after', 'from', 'by', 'as', 'at', 'about', 'over', 'into', 'amid', 'amidst',
+  'via', 'under', 'through', 'across', 'against', 'during', 'before', 'behind', 'between',
+  'more', 'than', 'also', 'both', 'each', 'other', 'some', 'any', 'could', 'would', 'will',
+  // Generic action verbs
+  'targets', 'target', 'targeting', 'targeted',
+  'fixes', 'fix', 'fixing', 'fixed',
+  'warns', 'warn', 'warning', 'warned',
+  'patches', 'patch', 'patching', 'patched',
+  'updates', 'update', 'updating', 'updated',
+  'addresses', 'address', 'addressing', 'addressed',
+  'releases', 'release', 'releasing', 'released',
+  'exploits', 'exploit', 'exploiting', 'exploited',
+  'attacks', 'attack', 'attacking', 'attacked',
+  'hackers', 'hacker', 'hacking', 'hacked',
+  'compromises', 'compromise', 'compromising', 'compromised',
+  'exposes', 'expose', 'exposing', 'exposed',
+  'leaks', 'leak', 'leaking', 'leaked',
+  'steals', 'steal', 'stealing', 'stolen',
+  'claims', 'claim', 'claiming', 'claimed',
+  'urges', 'urge', 'urging', 'urged',
+  'spotted', 'detected', 'found', 'uncovers', 'uncovered',
+  'allows', 'allow', 'allowing', 'allowed',
+  'lets', 'let', 'enables', 'enable', 'enabling', 'enabled',
+  'causes', 'cause', 'causing', 'caused',
+  'affects', 'affect', 'affecting', 'affected',
+  'impacts', 'impact', 'impacting', 'impacted',
+  // Generic security / tech nouns
+  'flaw', 'flaws', 'vulnerability', 'vulnerabilities', 'bug', 'bugs',
+  'security', 'cyber', 'cybersecurity', 'infosec',
+  'zero-day', 'zero-days', 'zeroday', '0-day', '0-days',
+  'rce', 'remote', 'code', 'execution', 'injection', 'bypass', 'privilege', 'escalation',
+  'breach', 'breaches', 'incident', 'incidents', 'outage', 'outages',
+  'data', 'records', 'credentials', 'passwords', 'password', 'tokens', 'token',
+  'accounts', 'account', 'users', 'user', 'customers', 'customer', 'clients', 'client',
+  'admin', 'administrator', 'administrators', 'root', 'superuser', 'authentication', 'auth',
+  'system', 'systems', 'network', 'networks', 'server', 'servers', 'device', 'devices',
+  'firmware', 'software', 'hardware', 'app', 'apps', 'application', 'applications',
+  'service', 'services', 'platform', 'platforms', 'tool', 'tools',
+  'firm', 'firms', 'company', 'companies', 'vendor', 'vendors', 'organization', 'organizations',
+  'report', 'reports', 'advisory', 'advisories', 'bulletin', 'bulletins', 'guidance',
+  'alert', 'alerts', 'notice', 'notices',
+  'malware', 'ransomware', 'trojan', 'backdoor', 'spyware', 'infostealer',
+  'million', 'millions', 'billion', 'billions', 'thousand', 'thousands',
+  'critical', 'high', 'medium', 'low', 'severe', 'severity',
+  'new', 'recent', 'latest', 'active', 'actively', 'widespread', 'major'
 ]);
 
 function getTitleKeywords(title) {
@@ -1796,6 +1861,55 @@ function extractCvesFromText(text) {
   const matches = (text || '').match(/CVE-\d{4}-\d{4,7}/gi);
   return matches ? Array.from(new Set(matches.map(c => c.toUpperCase()))) : [];
 }
+
+function isSameIncident(fullA, titleA, fullB, titleB, timeDiffDays) {
+  if (timeDiffDays > 7) return false;
+
+  // 1. Shared CVE (Gold Standard)
+  const cvesA = extractCvesFromText(fullA);
+  const cvesB = extractCvesFromText(fullB);
+  if (cvesA.length > 0 && cvesB.some(c => cvesA.includes(c))) {
+    return true;
+  }
+
+  if (timeDiffDays <= 3) {
+    // 2. Unique Standalone Product or Named Threat
+    for (const item of UNIQUE_PRODUCTS_OR_THREATS) {
+      if (fullA.includes(item) && fullB.includes(item)) {
+        return true;
+      }
+    }
+
+    // 3. Specific Organization / Victim
+    for (const org of SPECIFIC_ORGANIZATIONS) {
+      if (fullA.includes(org) && fullB.includes(org)) {
+        return true;
+      }
+    }
+
+    // 4. Vendor + Specific Product Pair
+    for (const vp of VENDOR_PRODUCT_PAIRS) {
+      if (fullA.includes(vp.vendor) && fullB.includes(vp.vendor)) {
+        for (const prod of vp.products) {
+          if (fullA.includes(prod) && fullB.includes(prod)) {
+            return true;
+          }
+        }
+      }
+    }
+
+    // 5. Specific Non-Generic Title Keywords Overlap (requires >= 3 specific words)
+    const kwA = new Set(getTitleKeywords(titleA));
+    const kwB = getTitleKeywords(titleB);
+    const overlap = kwB.filter(k => kwA.has(k));
+    if (overlap.length >= 3) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
 
 // -----------------------------------------------------------------------------
 // FETCH ALL RSS SOURCES
@@ -1962,9 +2076,9 @@ for (const cand of allCandidates) {
   if (cves.length > 0) {
     cveKnowledgeBase.push({
       cves,
-      title: (cand.title || '').toLowerCase(),
+      title: cand.title || '',
+      text,
       time: cand.publishedAt ? new Date(cand.publishedAt).getTime() : Date.now(),
-      keywords: getTitleKeywords(cand.title || ''),
       source: cand.source
     });
   }
@@ -1992,26 +2106,21 @@ for (const cand of selectedCandidates) {
 
   if (!isVulnTopic) continue;
 
-  const candKeywords = new Set(getTitleKeywords(cand.title || ''));
   const candTime = cand.publishedAt ? new Date(cand.publishedAt).getTime() : Date.now();
 
   for (const entry of cveKnowledgeBase) {
-    if (Math.abs(candTime - entry.time) > 3 * 86400000) continue;
+    const timeDiffDays = Math.abs(candTime - entry.time) / 86400000;
+    if (timeDiffDays > 3) continue;
 
-    let sharedEntity = false;
-    for (const ent of ENTITY_TERMS) {
-      if (titleLower.includes(ent) && entry.title.includes(ent)) {
-        sharedEntity = true;
-        break;
-      }
-    }
+    const matched = isSameIncident(
+      currentText,
+      cand.title || '',
+      entry.text,
+      entry.title,
+      timeDiffDays,
+    );
 
-    let sharedKwCount = 0;
-    for (const kw of entry.keywords) {
-      if (candKeywords.has(kw)) sharedKwCount++;
-    }
-
-    if (sharedEntity || sharedKwCount >= 2) {
+    if (matched) {
       const primaryCve = entry.cves[0];
       console.log(`[CVE Corroboration] Linked ${primaryCve} from ${entry.source} to candidate: "${cand.title}"`);
       cand.description = `${cand.description || ''} (Corroborated Threat Intelligence: Associated CVE is ${primaryCve}).`;
@@ -2259,44 +2368,10 @@ function deduplicateAndTrimFeed(articles) {
       const timeDiffDays = Math.abs(time - existingTime) / (1000 * 3600 * 24);
       if (timeDiffDays > 7) continue;
 
-      // 1) Shared CVE
-      const existingCves = extractCvesFromText((existing.title || '') + ' ' + (existing.summary || ''));
-      if (cves.length > 0 && existingCves.some(c => cves.includes(c))) {
-        duplicateOf = existing;
-        break;
-      }
+      const existingTitle = existing.title || existing.headline || '';
+      const existingFull = (existingTitle + ' ' + (existing.summary || '')).toLowerCase();
 
-      // 2) Shared Enterprise Entity
-      const existingFull = ((existing.title || '') + ' ' + (existing.summary || '')).toLowerCase();
-      for (const ent of ENTITY_TERMS) {
-        if (fullText.includes(ent) && existingFull.includes(ent)) {
-          duplicateOf = existing;
-          break;
-        }
-      }
-      if (duplicateOf) break;
-
-      // 3) Shared specific soldier espionage event
-      if (fullText.includes('soldier') && existingFull.includes('soldier')) {
-        duplicateOf = existing;
-        break;
-      }
-
-      // 4) Normalized component / zero-day matching (e.g. Apple CoreGraphics zero-day coverage)
-      const normFull = fullText.replace(/[^a-z0-9]/g, '');
-      const normExisting = existingFull.replace(/[^a-z0-9]/g, '');
-      if (
-        (normFull.includes('coregraphics') && normExisting.includes('coregraphics')) ||
-        (normFull.includes('apple') && normFull.includes('zeroday') && normExisting.includes('apple') && normExisting.includes('zeroday') && timeDiffDays <= 3)
-      ) {
-        duplicateOf = existing;
-        break;
-      }
-
-      // 5) Overlap of 2+ significant keywords within 3 days
-      const existingKw = new Set(getTitleKeywords(existing.title || ''));
-      const overlap = keywords.filter(k => existingKw.has(k));
-      if (overlap.length >= 2 && timeDiffDays <= 3) {
+      if (isSameIncident(fullText, title, existingFull, existingTitle, timeDiffDays)) {
         duplicateOf = existing;
         break;
       }
@@ -2324,13 +2399,16 @@ function deduplicateAndTrimFeed(articles) {
         }
         if (enriched) {
           const primaryCve = duplicateOf.cves[0];
-          if (primaryCve && !duplicateOf.title.toUpperCase().includes(primaryCve)) {
+          // Guardrail: Only append CVE to title if duplicateOf is classified as a vulnerability or CVE (never general tech survey or vendor blog)
+          if (duplicateOf.category !== 'GENERAL' && primaryCve && !duplicateOf.title.toUpperCase().includes(primaryCve)) {
             duplicateOf.title = `${duplicateOf.title.replace(/\s*\([^)]*CVE[^)]*\)$/i, '')} (${primaryCve})`;
             if (duplicateOf.headline) {
               duplicateOf.headline = `${duplicateOf.headline.replace(/\s*\([^)]*CVE[^)]*\)$/i, '')} (${primaryCve})`;
             }
           }
-          duplicateOf.category = 'CVE';
+          if (duplicateOf.category === 'VULNERABILITY') {
+            duplicateOf.category = 'CVE';
+          }
         }
       }
       continue;

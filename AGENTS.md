@@ -109,6 +109,12 @@
     - Vision: Glance / AppWidget displaying the latest 60-word critical threat brief or active CISA KEV zero-day counter directly on the Android home screen without needing to open the app.
     - Technical evaluation & confirmation: Officially supported in **Expo SDK 58** via native Android `expo-widgets` (runs isolated Hermes JS bundle on Android with Material dynamic colors and `cornerRadius`). Slated to build immediately upon upgrading to SDK 58 in v1.1.0.
 
+  - **P1: Incident Verification Portal Link & Discovery Vector Micro-Intel (Parked for Future Activation)**:
+    - User/community catalyst: Reddit feedback regarding eMudhra incident verification (`emudhra.we-have-a-problem.com`) and reader fatigue around locating root cause/discovery details.
+    - Architectural Blueprint (Agreed & Parked):
+      1. *Direct Verification Link (`verificationUrl`)*: Optional schema field in `feed.json` extracted at ingest time when an article explicitly cites an official leak checking portal, breach search tool, or remediation hub. Rendered on article detail screens as `[ 🔍 Verify Incident / Leak Checker ↗ ]`.
+      2. *Discovery Vector Micro-Intel (`discoveryVector`)*: Optional 1-sentence root-cause/discovery vector (max 15–25 words, e.g. *"Discovered by researcher Bob Diachenko via an unprotected Elasticsearch cluster"*). Strictly rejected separate 100-word explainer articles to protect the 60-word brand identity, prevent AI slop/hallucinations on early breaking news, and eliminate extra token costs.
+      3. *Zero-Cost Mandate*: Single-pass extraction in `scripts/ingest.mjs` (falls back to `null` if unconfirmed); zero manual maintenance.
   - **P1: Structured Threat Timeline**: Visual lifecycle (`Disclosed → PoC → Exploit → CISA KEV → Patch`) indicating what changed.
   - **P1: Authoritative NVD Vector Integration**: Pull CVSS v3.1/v4.0 vector strings directly from NIST NVD API.
   - **P2: Cloudflare Monetization Gateway (Agent & Scraper Micropayments)**:

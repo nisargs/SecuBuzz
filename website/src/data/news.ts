@@ -2871,16 +2871,14 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "f5-releases-out-of-band-patches-for-critical-nginx-6e0abe",
-    "title": "F5 Releases Out‑of‑Band Patches for Critical NGINX Vulnerabilities (CVE-2026-107336)",
+    "title": "F5 Releases Out‑of‑Band Patches for Critical NGINX Vulnerabilities",
     "summary": "F5 has issued out‑of‑band security patches addressing multiple critical‑severity flaws in the NGINX web server that could allow remote code execution. The patches mitigate three vulnerabilities that enable attackers to execute arbitrary code on vulnerable systems. Users should apply the updates immediately to prevent exploitation.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/f5-releases-out-of-band-patches-for-critical-nginx-vulnerabilities/",
     "publishedAt": "2026-10-19T13:49:24.000Z",
-    "cves": [
-      "CVE-2026-107336"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "f5-releases-out-of-band-patches-for-critical-nginx",
@@ -5786,22 +5784,20 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "cloudflare-enhances-logpush-with-sql-based-transfo-6c060a",
-    "title": "Cloudflare Enhances Logpush with SQL‑Based Transformers (CVE-2016-3081)",
+    "title": "Cloudflare Enhances Logpush with SQL‑Based Transformers",
     "summary": "Cloudflare’s Logpush now supports Transformers, enabling teams to filter, redact, and reshape log streams using SQL before export. Powered by Apache DataFusion and Apache Arrow, Transformers apply changes directly to log data, ensuring only desired information reaches destinations. This feature improves data privacy and compliance during log export.",
-    "category": "CVE",
+    "category": "General",
     "severity": "LOW",
     "source": "Cloudflare Security",
     "sourceUrl": "https://blog.cloudflare.com/transformers-on-logpush/",
     "publishedAt": "2026-10-12T14:44:59.000Z",
-    "cves": [
-      "CVE-2016-3081"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "cloudflare-enhances-logpush-with-sql-based-transfo",
       "article-6c060a",
       "6c060a",
-      "cloudflare-enhances-logpush-with-sql-based-transformers-cve-"
+      "cloudflare-enhances-logpush-with-sql-based-transformers"
     ]
   },
   {
