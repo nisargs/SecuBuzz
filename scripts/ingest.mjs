@@ -1767,6 +1767,36 @@ console.log(
   `Existing seen URL history contains ${seenUrls.size} URLs.`,
 );
 
+const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
+const ENTITY_TERMS = [
+  'php', 'okta', 'bitget', 'kiteworks', 'netscaler', 'citrix', 'wireshark', 'snowflake',
+  'chatgpt', 'elementor', 'sharepoint', 'fortinet', 'palo alto', 'ivanti',
+  'sonicwall', 'cisco', 'crowdstrike', 'vmware', 'salesforce', 'qualys',
+  'telegram', 'ransomhub', 'lockbit', 'akira', 'qilin', 'blacksuit',
+  'coregraphics', 'core graphics', 'safari', 'webkit', 'ios', 'apache', 'nginx', 'linux'
+];
+
+const STOP_WORDS = new Set([
+  'the', 'a', 'an', 'in', 'on', 'for', 'to', 'of', 'and', 'is', 'with', 'after', 'from',
+  'targets', 'fixes', 'flaw', 'vulnerability', 'vulnerabilities', 'security', 'cyber',
+  'attack', 'attacks', 'new', 'release', 'addresses', 'update', 'updates', 'by', 'as',
+  'at', 'about', 'over', 'into', 'warns', 'alert', 'patch', 'patches', 'zero-day', 'exploit',
+  'exploited', 'users', 'critical', 'high', 'active', 'actively', 'amid', 'amidst', 'via'
+]);
+
+function getTitleKeywords(title) {
+  return (title || '')
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, ' ')
+    .split(/\s+/)
+    .filter(w => w.length > 2 && !STOP_WORDS.has(w));
+}
+
+function extractCvesFromText(text) {
+  const matches = (text || '').match(/CVE-\d{4}-\d{4,7}/gi);
+  return matches ? Array.from(new Set(matches.map(c => c.toUpperCase()))) : [];
+}
+
 // -----------------------------------------------------------------------------
 // FETCH ALL RSS SOURCES
 // -----------------------------------------------------------------------------
@@ -1912,6 +1942,82 @@ if (
       );
     },
   );
+}
+
+// -----------------------------------------------------------------------------
+// CROSS-FEED CVE CORROBORATION (FUTURE-PROOF CVE INTELLIGENCE)
+// -----------------------------------------------------------------------------
+/*
+ * If an RSS publisher (like BleepingComputer) truncates their RSS description with [...]
+ * or omits the CVE identifier, cross-reference across all gathered candidates from other
+ * feeds (e.g. SANS ISC, SecurityWeek, The Hacker News) and recent feed items.
+ * If a sister feed covers the same vulnerability/vendor within 72h and contains a verified CVE,
+ * inject that corroborated CVE into the candidate's description so the AI model includes it!
+ */
+const cveKnowledgeBase = [];
+
+for (const cand of allCandidates) {
+  const text = (cand.title || '') + ' ' + (cand.description || '');
+  const cves = extractCvesFromText(text);
+  if (cves.length > 0) {
+    cveKnowledgeBase.push({
+      cves,
+      title: (cand.title || '').toLowerCase(),
+      time: cand.publishedAt ? new Date(cand.publishedAt).getTime() : Date.now(),
+      keywords: getTitleKeywords(cand.title || ''),
+      source: cand.source
+    });
+  }
+}
+
+for (const cand of selectedCandidates) {
+  const currentText = (cand.title || '') + ' ' + (cand.description || '');
+  const currentCves = extractCvesFromText(currentText);
+  if (currentCves.length > 0) continue;
+
+  const titleLower = (cand.title || '').toLowerCase();
+  const descLower = (cand.description || '').toLowerCase();
+  const isVulnTopic =
+    titleLower.includes('vulnerability') ||
+    titleLower.includes('flaw') ||
+    titleLower.includes('rce') ||
+    titleLower.includes('zero-day') ||
+    titleLower.includes('exploit') ||
+    titleLower.includes('patch') ||
+    titleLower.includes('mitigation') ||
+    titleLower.includes('bypass') ||
+    descLower.includes('remote code execution') ||
+    descLower.includes('security flaw') ||
+    descLower.includes('vulnerability');
+
+  if (!isVulnTopic) continue;
+
+  const candKeywords = new Set(getTitleKeywords(cand.title || ''));
+  const candTime = cand.publishedAt ? new Date(cand.publishedAt).getTime() : Date.now();
+
+  for (const entry of cveKnowledgeBase) {
+    if (Math.abs(candTime - entry.time) > 3 * 86400000) continue;
+
+    let sharedEntity = false;
+    for (const ent of ENTITY_TERMS) {
+      if (titleLower.includes(ent) && entry.title.includes(ent)) {
+        sharedEntity = true;
+        break;
+      }
+    }
+
+    let sharedKwCount = 0;
+    for (const kw of entry.keywords) {
+      if (candKeywords.has(kw)) sharedKwCount++;
+    }
+
+    if (sharedEntity || sharedKwCount >= 2) {
+      const primaryCve = entry.cves[0];
+      console.log(`[CVE Corroboration] Linked ${primaryCve} from ${entry.source} to candidate: "${cand.title}"`);
+      cand.description = `${cand.description || ''} (Corroborated Threat Intelligence: Associated CVE is ${primaryCve}).`;
+      break;
+    }
+  }
 }
 
 // -----------------------------------------------------------------------------
@@ -2117,36 +2223,6 @@ const newUrls =
     ),
   );
 
-const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
-const ENTITY_TERMS = [
-  'bitget', 'kiteworks', 'netscaler', 'citrix', 'wireshark', 'snowflake',
-  'chatgpt', 'elementor', 'sharepoint', 'fortinet', 'palo alto', 'ivanti',
-  'sonicwall', 'cisco', 'crowdstrike', 'vmware', 'salesforce', 'qualys',
-  'telegram', 'ransomhub', 'lockbit', 'akira', 'qilin', 'blacksuit',
-  'coregraphics', 'core graphics', 'safari', 'webkit', 'ios'
-];
-
-const STOP_WORDS = new Set([
-  'the', 'a', 'an', 'in', 'on', 'for', 'to', 'of', 'and', 'is', 'with', 'after', 'from',
-  'targets', 'fixes', 'flaw', 'vulnerability', 'vulnerabilities', 'security', 'cyber',
-  'attack', 'attacks', 'new', 'release', 'addresses', 'update', 'updates', 'by', 'as',
-  'at', 'about', 'over', 'into', 'warns', 'alert', 'patch', 'patches', 'zero-day', 'exploit',
-  'exploited', 'users', 'critical', 'high', 'active', 'actively', 'amid', 'amidst', 'via'
-]);
-
-function getTitleKeywords(title) {
-  return (title || '')
-    .toLowerCase()
-    .replace(/[^a-z0-9\s-]/g, ' ')
-    .split(/\s+/)
-    .filter(w => w.length > 2 && !STOP_WORDS.has(w));
-}
-
-function extractCvesFromText(text) {
-  const matches = (text || '').match(/CVE-\d{4}-\d{4,7}/gi);
-  return matches ? Array.from(new Set(matches.map(c => c.toUpperCase()))) : [];
-}
-
 function deduplicateAndTrimFeed(articles) {
   const cutoffTime = Date.now() - THIRTY_DAYS_MS;
 
@@ -2230,6 +2306,32 @@ function deduplicateAndTrimFeed(articles) {
       if (!duplicateOf.additionalSources) duplicateOf.additionalSources = [];
       if (!duplicateOf.additionalSources.some(s => s.sourceUrl === sourceUrl || s.source === source)) {
         duplicateOf.additionalSources.push({ source, sourceUrl });
+      }
+
+      // FUTURE-PROOF CVE INTELLIGENCE BACKFILL:
+      // If a secondary or sister reporting source includes a CVE identifier that the primary article missed
+      // (e.g. initial publisher truncated RSS snippet or omitted the CVE), enrich the primary article!
+      if (cves.length > 0) {
+        if (!Array.isArray(duplicateOf.cves)) {
+          duplicateOf.cves = extractCvesFromText((duplicateOf.title || '') + ' ' + (duplicateOf.summary || ''));
+        }
+        let enriched = false;
+        for (const cve of cves) {
+          if (!duplicateOf.cves.includes(cve)) {
+            duplicateOf.cves.push(cve);
+            enriched = true;
+          }
+        }
+        if (enriched) {
+          const primaryCve = duplicateOf.cves[0];
+          if (primaryCve && !duplicateOf.title.toUpperCase().includes(primaryCve)) {
+            duplicateOf.title = `${duplicateOf.title.replace(/\s*\([^)]*CVE[^)]*\)$/i, '')} (${primaryCve})`;
+            if (duplicateOf.headline) {
+              duplicateOf.headline = `${duplicateOf.headline.replace(/\s*\([^)]*CVE[^)]*\)$/i, '')} (${primaryCve})`;
+            }
+          }
+          duplicateOf.category = 'CVE';
+        }
       }
       continue;
     }

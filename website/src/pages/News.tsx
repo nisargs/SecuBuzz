@@ -18,6 +18,18 @@ export function News() {
   const [page, setPage] = useState(1);
   const { news } = useLiveNews();
 
+  const categoryCounts = useMemo(() => {
+    const counts: Record<string, number> = {
+      All: news.length,
+    };
+    for (const b of news) {
+      if (b.category) {
+        counts[b.category] = (counts[b.category] || 0) + 1;
+      }
+    }
+    return counts;
+  }, [news]);
+
   const severityCounts = useMemo(() => {
     const counts: Record<SeverityFilter, number> = {
       ALL: news.length,
@@ -75,48 +87,10 @@ export function News() {
       />
 
       <div className="mx-auto max-w-site px-5 pb-20 md:px-8">
-        <div className="sticky top-16 z-20 -mx-5 flex flex-col gap-3 border-b border-line bg-bg/95 px-5 py-4 backdrop-blur md:-mx-8 md:flex-row md:items-center md:justify-between md:px-8">
-          <div role="tablist" aria-label="Filter by category" className="-mx-1 flex gap-1 overflow-x-auto px-1">
-            {filters.map((f) => (
-              <button
-                key={f}
-                role="tab"
-                type="button"
-                aria-selected={filter === f}
-                onClick={() => {
-                  setFilter(f);
-                  setPage(1);
-                }}
-                className={`whitespace-nowrap rounded-md px-3 py-1.5 text-sm transition-colors duration-150 ease-out ${
-                  filter === f
-                    ? 'bg-raised font-medium text-accent border border-line'
-                    : 'text-muted hover:text-accent hover:bg-surface'
-                }`}>
-                {f}
-              </button>
-            ))}
-          </div>
-
-          <div className="flex flex-wrap items-center gap-2.5 sm:gap-3">
-            <label className="inline-flex items-center gap-1.5 text-xs text-subtle">
-              <span className="hidden sm:inline">Severity:</span>
-              <select
-                value={severityFilter}
-                onChange={(e) => {
-                  setSeverityFilter(e.target.value as SeverityFilter);
-                  setPage(1);
-                }}
-                aria-label="Filter by severity"
-                className="h-9 rounded-md border border-line bg-surface px-2.5 text-xs text-ink focus:border-accent focus:outline-none">
-                <option value="ALL">All Severities ({severityCounts.ALL})</option>
-                <option value="CRITICAL">Critical ({severityCounts.CRITICAL})</option>
-                <option value="HIGH">High ({severityCounts.HIGH})</option>
-                <option value="MEDIUM">Medium ({severityCounts.MEDIUM})</option>
-                <option value="LOW">Low ({severityCounts.LOW})</option>
-              </select>
-            </label>
-
-            <label className="relative block flex-1 sm:w-60 md:w-64">
+        <div className="sticky top-16 z-20 -mx-5 flex flex-col gap-3.5 border-b border-line bg-bg/95 px-5 py-4 backdrop-blur md:-mx-8 md:px-8">
+          {/* Search bar & Quick controls */}
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <label className="relative block flex-1 sm:max-w-md">
               <span className="sr-only">Search briefs</span>
               <SearchIcon className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-subtle" aria-hidden="true" />
               <input
@@ -126,10 +100,131 @@ export function News() {
                   setQuery(e.target.value);
                   setPage(1);
                 }}
-                placeholder="Search titles or CVE IDs"
+                placeholder="Search titles, vendors, or CVE IDs"
                 className="h-9 w-full rounded-md border border-line bg-surface pl-9 pr-3 text-sm text-ink placeholder:text-subtle focus:border-accent focus:outline-none"
               />
             </label>
+
+            {(filter !== 'All' || severityFilter !== 'ALL' || query) && (
+              <button
+                type="button"
+                onClick={() => {
+                  setFilter('All');
+                  setSeverityFilter('ALL');
+                  setQuery('');
+                  setPage(1);
+                }}
+                className="inline-flex items-center gap-1.5 self-start rounded-md border border-line bg-surface px-3 py-1.5 text-xs text-accent hover:border-accent transition-colors duration-150">
+                Reset All Filters
+              </button>
+            )}
+          </div>
+
+          {/* Section 1: Threat Severity */}
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="text-[11px] font-semibold uppercase tracking-wider text-subtle mr-1">
+              Threat Severity:
+            </span>
+            <button
+              type="button"
+              onClick={() => {
+                setSeverityFilter('ALL');
+                setPage(1);
+              }}
+              className={`rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
+                severityFilter === 'ALL'
+                  ? 'bg-raised font-medium text-accent border border-accent/40'
+                  : 'text-muted hover:text-accent hover:bg-surface border border-line'
+              }`}>
+              All ({severityCounts.ALL})
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setSeverityFilter('CRITICAL');
+                setPage(1);
+              }}
+              className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
+                severityFilter === 'CRITICAL'
+                  ? 'bg-critical/10 font-medium text-critical border border-critical/50'
+                  : 'text-muted hover:text-critical hover:bg-surface border border-line'
+              }`}>
+              <span className="h-2 w-2 rounded-full bg-critical" />
+              Critical ({severityCounts.CRITICAL})
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setSeverityFilter('HIGH');
+                setPage(1);
+              }}
+              className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
+                severityFilter === 'HIGH'
+                  ? 'bg-amber-500/10 font-medium text-amber-500 border border-amber-500/50'
+                  : 'text-muted hover:text-amber-500 hover:bg-surface border border-line'
+              }`}>
+              <span className="h-2 w-2 rounded-full bg-amber-500" />
+              High ({severityCounts.HIGH})
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setSeverityFilter('MEDIUM');
+                setPage(1);
+              }}
+              className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
+                severityFilter === 'MEDIUM'
+                  ? 'bg-[#4CC9F0]/10 font-medium text-[#4CC9F0] border border-[#4CC9F0]/50'
+                  : 'text-muted hover:text-[#4CC9F0] hover:bg-surface border border-line'
+              }`}>
+              <span className="h-2 w-2 rounded-full bg-[#4CC9F0]" />
+              Medium ({severityCounts.MEDIUM})
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setSeverityFilter('LOW');
+                setPage(1);
+              }}
+              className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
+                severityFilter === 'LOW'
+                  ? 'bg-slate-400/10 font-medium text-slate-300 border border-slate-400/50'
+                  : 'text-muted hover:text-ink hover:bg-surface border border-line'
+              }`}>
+              <span className="h-2 w-2 rounded-full bg-slate-400" />
+              Low ({severityCounts.LOW})
+            </button>
+          </div>
+
+          {/* Section 2: Category & Topic */}
+          <div className="flex items-center gap-2 overflow-x-auto pb-1">
+            <span className="text-[11px] font-semibold uppercase tracking-wider text-subtle shrink-0 mr-1">
+              Category & Topic:
+            </span>
+            <div role="tablist" aria-label="Filter by category" className="flex gap-1.5">
+              {filters.map((f) => {
+                const label = f === 'All' ? 'All Categories' : f;
+                const count = categoryCounts[f] ?? 0;
+                return (
+                  <button
+                    key={f}
+                    role="tab"
+                    type="button"
+                    aria-selected={filter === f}
+                    onClick={() => {
+                      setFilter(f);
+                      setPage(1);
+                    }}
+                    className={`whitespace-nowrap rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
+                      filter === f
+                        ? 'bg-raised font-medium text-accent border border-accent/40 shadow-sm'
+                        : 'text-muted hover:text-accent hover:bg-surface border border-line'
+                    }`}>
+                    {label} <span className="text-[11px] opacity-75">({count})</span>
+                  </button>
+                );
+              })}
+            </div>
           </div>
         </div>
 

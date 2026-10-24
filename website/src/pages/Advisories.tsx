@@ -8,15 +8,17 @@ import { daysUntil } from '../utils/date';
 import { getCvssSeverity } from '../utils/advisory';
 import { Seo } from '../components/Seo';
 
+type AdvisorySourceFilter = 'ALL' | 'CISA' | 'GITHUB';
+type AdvisorySeverityFilter = 'ALL' | 'CRITICAL' | 'HIGH' | 'RANSOMWARE';
 type SortKey = 'added' | 'due';
 const PAGE_SIZE = 25;
 
 export function Advisories() {
   const [query, setQuery] = useState('');
-  const [ransomwareOnly, setRansomwareOnly] = useState(false);
+  const [sourceFilter, setSourceFilter] = useState<AdvisorySourceFilter>('ALL');
+  const [severityFilter, setSeverityFilter] = useState<AdvisorySeverityFilter>('ALL');
   const [dueThisWeekOnly, setDueThisWeekOnly] = useState(false);
   const [vendorFilter, setVendorFilter] = useState('ALL');
-  const [severityFilter, setSeverityFilter] = useState('ALL');
   const [sort, setSort] = useState<SortKey>('added');
   const [page, setPage] = useState(1);
   const { advisories } = useLiveAdvisories();
@@ -46,21 +48,52 @@ export function Advisories() {
       .sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }));
   }, [advisories]);
 
+  // Telemetry counts matching mobile app 1:1
+  const cisaCount = useMemo(
+    () => advisories.filter((a) => a.source === 'CISA KEV' || a.dueDate || a.references?.some(r => r.label.includes('CISA'))).length,
+    [advisories]
+  );
+  const githubCount = useMemo(
+    () => advisories.filter((a) => a.source === 'GITHUB' || (!a.dueDate && a.references?.some(r => r.label.includes('GitHub')))).length,
+    [advisories]
+  );
+  const ransomwareCount = useMemo(
+    () => advisories.filter((a) => a.ransomware).length,
+    [advisories]
+  );
+  const criticalCount = useMemo(
+    () => advisories.filter((a) => getCvssSeverity(a.cvss, a.severity).toUpperCase() === 'CRITICAL').length,
+    [advisories]
+  );
+  const highCount = useMemo(
+    () => advisories.filter((a) => getCvssSeverity(a.cvss, a.severity).toUpperCase() === 'HIGH').length,
+    [advisories]
+  );
+
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
     return advisories
-      .filter((a) => (ransomwareOnly ? a.ransomware : true))
+      .filter((a) => {
+        if (sourceFilter === 'CISA') {
+          return a.source === 'CISA KEV' || a.dueDate || a.references?.some(r => r.label.includes('CISA'));
+        }
+        if (sourceFilter === 'GITHUB') {
+          return a.source === 'GITHUB' || (!a.dueDate && a.references?.some(r => r.label.includes('GitHub')));
+        }
+        return true;
+      })
+      .filter((a) => {
+        if (severityFilter === 'RANSOMWARE') return a.ransomware;
+        if (severityFilter === 'CRITICAL') return getCvssSeverity(a.cvss, a.severity).toUpperCase() === 'CRITICAL';
+        if (severityFilter === 'HIGH') return getCvssSeverity(a.cvss, a.severity).toUpperCase() === 'HIGH';
+        return true;
+      })
       .filter((a) => {
         if (!dueThisWeekOnly) return true;
         const d = daysUntil(a.dueDate);
         return d >= 0 && d <= 7;
       })
       .filter((a) => (vendorFilter === 'ALL' ? true : a.vendor.toLowerCase() === vendorFilter.toLowerCase()))
-      .filter((a) => {
-        if (severityFilter === 'ALL') return true;
-        const effectiveSev = getCvssSeverity(a.cvss, a.severity).toUpperCase();
-        return effectiveSev === severityFilter.toUpperCase();
-      })
       .filter((a) =>
         q
           ? [a.cve, a.vendor, a.product, a.name, a.description].some((v) =>
@@ -71,17 +104,8 @@ export function Advisories() {
       .sort((a, b) =>
         sort === 'added' ? b.dateAdded.localeCompare(a.dateAdded) : a.dueDate.localeCompare(b.dueDate)
       );
-  }, [advisories, query, ransomwareOnly, dueThisWeekOnly, vendorFilter, severityFilter, sort]);
+  }, [advisories, query, sourceFilter, severityFilter, dueThisWeekOnly, vendorFilter, sort]);
 
-  const ransomwareCount = advisories.filter((a) => a.ransomware).length;
-  const criticalCount = useMemo(
-    () => advisories.filter((a) => getCvssSeverity(a.cvss, a.severity).toUpperCase() === 'CRITICAL').length,
-    [advisories]
-  );
-  const highCount = useMemo(
-    () => advisories.filter((a) => getCvssSeverity(a.cvss, a.severity).toUpperCase() === 'HIGH').length,
-    [advisories]
-  );
   const totalPages = Math.max(1, Math.ceil(results.length / PAGE_SIZE));
   const safePage = Math.min(page, totalPages);
   const startIndex = (safePage - 1) * PAGE_SIZE;
@@ -125,22 +149,37 @@ export function Advisories() {
 
       <div className="mx-auto max-w-site px-5 py-8 pb-20 md:px-8">
         <div className="mb-5 flex flex-col gap-3">
+          {/* Search, Vendor, Due This Week & Sort Controls */}
           <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
-            <label className="relative block md:w-80">
-              <span className="sr-only">Search advisories</span>
-              <SearchIcon className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-subtle" aria-hidden="true" />
-              <input
-                type="search"
-                value={query}
-                onChange={(e) => {
-                  setQuery(e.target.value);
-                  setPage(1);
-                }}
-                placeholder="CVE, vendor, product, or keyword"
-                className="h-9 w-full rounded-md border border-line bg-surface pl-9 pr-3 text-sm text-ink placeholder:text-subtle focus:border-accent focus:outline-none" />
-            </label>
-            <div className="flex flex-wrap items-center gap-3">
-              <label className="inline-flex cursor-pointer items-center gap-2 text-sm text-muted">
+            <div className="flex flex-1 flex-wrap items-center gap-3">
+              <label className="relative block flex-1 sm:max-w-xs md:w-80">
+                <span className="sr-only">Search advisories</span>
+                <SearchIcon className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-subtle" aria-hidden="true" />
+                <input
+                  type="search"
+                  value={query}
+                  onChange={(e) => {
+                    setQuery(e.target.value);
+                    setPage(1);
+                  }}
+                  placeholder="CVE, vendor, product, or keyword"
+                  className="h-9 w-full rounded-md border border-line bg-surface pl-9 pr-3 text-sm text-ink placeholder:text-subtle focus:border-accent focus:outline-none" />
+              </label>
+
+              <div className="inline-flex items-center gap-2 text-xs text-subtle">
+                <span>Vendor:</span>
+                <VendorSelect
+                  value={vendorFilter}
+                  onChange={(v) => {
+                    setVendorFilter(v);
+                    setPage(1);
+                  }}
+                  vendors={sortedVendors}
+                  totalCount={advisories.length}
+                />
+              </div>
+
+              <label className="inline-flex cursor-pointer items-center gap-1.5 text-xs text-muted">
                 <input
                   type="checkbox"
                   checked={dueThisWeekOnly}
@@ -148,82 +187,152 @@ export function Advisories() {
                     setDueThisWeekOnly(e.target.checked);
                     setPage(1);
                   }}
-                  className="h-4 w-4 rounded border-line bg-surface accent-[rgb(var(--accent))]" />
+                  className="h-3.5 w-3.5 rounded border-line bg-surface accent-[rgb(var(--accent))]" />
                 Due this week {dueThisWeekCount > 0 ? `(${dueThisWeekCount})` : ''}
               </label>
+            </div>
 
-              <label className="inline-flex cursor-pointer items-center gap-2 text-sm text-muted">
-                <input
-                  type="checkbox"
-                  checked={ransomwareOnly}
-                  onChange={(e) => {
-                    setRansomwareOnly(e.target.checked);
-                    setPage(1);
-                  }}
-                  className="h-4 w-4 rounded border-line bg-surface accent-[rgb(var(--accent))]" />
-                Known ransomware use {ransomwareCount > 0 ? `(${ransomwareCount})` : ''}
-              </label>
-
-              <label className="inline-flex items-center gap-2 text-sm text-muted">
-                Sort
+            <div className="flex items-center gap-3 self-end sm:self-auto">
+              <label className="inline-flex items-center gap-1.5 text-xs text-muted">
+                <span>Sort:</span>
                 <select
                   value={sort}
                   onChange={(e) => {
                     setSort(e.target.value as SortKey);
                     setPage(1);
                   }}
-                  className="h-9 rounded-md border border-line bg-surface px-2.5 text-sm text-ink focus:border-accent focus:outline-none">
+                  className="h-8 rounded-md border border-line bg-surface px-2 text-xs text-ink focus:border-accent focus:outline-none">
                   <option value="added">Newest added</option>
                   <option value="due">Soonest due</option>
                 </select>
               </label>
+
+              {(vendorFilter !== 'ALL' || severityFilter !== 'ALL' || sourceFilter !== 'ALL' || dueThisWeekOnly || query) && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setQuery('');
+                    setVendorFilter('ALL');
+                    setSeverityFilter('ALL');
+                    setSourceFilter('ALL');
+                    setDueThisWeekOnly(false);
+                    setPage(1);
+                  }}
+                  className="rounded-md border border-line bg-surface px-2.5 py-1 text-xs text-accent hover:border-accent transition-colors duration-150">
+                  Reset Filters
+                </button>
+              )}
             </div>
           </div>
 
-          <div className="flex flex-wrap items-center gap-3 border-t border-line/50 pt-3">
-            <div className="inline-flex items-center gap-2 text-xs text-subtle">
-              <span>Vendor:</span>
-              <VendorSelect
-                value={vendorFilter}
-                onChange={(v) => {
-                  setVendorFilter(v);
-                  setPage(1);
-                }}
-                vendors={sortedVendors}
-                totalCount={advisories.length}
-              />
-            </div>
+          {/* Section 1: Severity & Impact (Matching Mobile App 1:1) */}
+          <div className="flex flex-wrap items-center gap-2 border-t border-line/60 pt-3">
+            <span className="text-[11px] font-semibold uppercase tracking-wider text-subtle mr-1">
+              Severity & Impact:
+            </span>
+            <button
+              type="button"
+              onClick={() => {
+                setSeverityFilter('ALL');
+                setPage(1);
+              }}
+              className={`rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
+                severityFilter === 'ALL'
+                  ? 'bg-raised font-medium text-accent border border-accent/40'
+                  : 'text-muted hover:text-accent hover:bg-surface border border-line'
+              }`}>
+              All ({advisories.length})
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setSeverityFilter('CRITICAL');
+                setPage(1);
+              }}
+              className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
+                severityFilter === 'CRITICAL'
+                  ? 'bg-critical/10 font-medium text-critical border border-critical/50'
+                  : 'text-muted hover:text-critical hover:bg-surface border border-line'
+              }`}>
+              <span className="h-2 w-2 rounded-full bg-critical" />
+              Critical ({criticalCount})
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setSeverityFilter('HIGH');
+                setPage(1);
+              }}
+              className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
+                severityFilter === 'HIGH'
+                  ? 'bg-amber-500/10 font-medium text-amber-500 border border-amber-500/50'
+                  : 'text-muted hover:text-amber-500 hover:bg-surface border border-line'
+              }`}>
+              <span className="h-2 w-2 rounded-full bg-amber-500" />
+              High ({highCount})
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setSeverityFilter('RANSOMWARE');
+                setPage(1);
+              }}
+              className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
+                severityFilter === 'RANSOMWARE'
+                  ? 'bg-amber-500/15 font-medium text-amber-400 border border-amber-500/60'
+                  : 'text-muted hover:text-amber-400 hover:bg-surface border border-line'
+              }`}>
+              <span>💀</span>
+              Ransomware ({ransomwareCount})
+            </button>
+          </div>
 
-            <label className="inline-flex items-center gap-2 text-xs text-subtle">
-              Severity:
-              <select
-                value={severityFilter}
-                onChange={(e) => {
-                  setSeverityFilter(e.target.value);
-                  setPage(1);
-                }}
-                className="h-8 rounded-md border border-line bg-surface px-2 text-xs text-ink focus:border-accent focus:outline-none">
-                <option value="ALL">All Severities ({advisories.length})</option>
-                <option value="CRITICAL">Critical ({criticalCount})</option>
-                <option value="HIGH">High ({highCount})</option>
-              </select>
-            </label>
-
-            {(vendorFilter !== 'ALL' || severityFilter !== 'ALL' || ransomwareOnly || dueThisWeekOnly || query) && (
-              <button
-                type="button"
-                onClick={() => {
-                  setQuery('');
-                  setVendorFilter('ALL');
-                  setSeverityFilter('ALL');
-                  setRansomwareOnly(false);
-                  setDueThisWeekOnly(false);
-                  setPage(1);
-                }}
-                className="text-xs text-accent hover:underline">
-                Reset filters
-              </button>
-            )}
+          {/* Section 2: Advisory Source (Matching Mobile App 1:1) */}
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="text-[11px] font-semibold uppercase tracking-wider text-subtle mr-1">
+              Advisory Source:
+            </span>
+            <button
+              type="button"
+              onClick={() => {
+                setSourceFilter('ALL');
+                setPage(1);
+              }}
+              className={`rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
+                sourceFilter === 'ALL'
+                  ? 'bg-raised font-medium text-accent border border-accent/40'
+                  : 'text-muted hover:text-accent hover:bg-surface border border-line'
+              }`}>
+              All Sources ({advisories.length})
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setSourceFilter('CISA');
+                setPage(1);
+              }}
+              className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
+                sourceFilter === 'CISA'
+                  ? 'bg-raised font-medium text-accent border border-accent/40'
+                  : 'text-muted hover:text-accent hover:bg-surface border border-line'
+              }`}>
+              <span>🛡️</span>
+              CISA KEV Zero-Days ({cisaCount})
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setSourceFilter('GITHUB');
+                setPage(1);
+              }}
+              className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
+                sourceFilter === 'GITHUB'
+                  ? 'bg-raised font-medium text-accent border border-accent/40'
+                  : 'text-muted hover:text-accent hover:bg-surface border border-line'
+              }`}>
+              <span>&lt;&gt;</span>
+              GitHub Ecosystem ({githubCount})
+            </button>
           </div>
 
         </div>

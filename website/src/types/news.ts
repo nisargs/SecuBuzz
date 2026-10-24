@@ -1,10 +1,10 @@
 export type NewsCategory =
-'Vulnerability' |
-'Ransomware' |
-'Breach' |
-'Malware' |
-'Policy' |
-'Cloud';
+  | 'Breach'
+  | 'Ransomware'
+  | 'CVE'
+  | 'Vulnerability'
+  | 'Nation State'
+  | 'General';
 
 export type NewsSeverity = 'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW';
 

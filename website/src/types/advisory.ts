@@ -20,4 +20,5 @@ export interface Advisory {
   description: string;
   requiredAction: string;
   references: AdvisoryReference[];
+  source?: 'CISA KEV' | 'GITHUB';
 }

@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Oct 2026 22:21:12 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2026 01:30:50 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>php2shell Vulnerability Causes Widespread Panic</title>
@@ -32,7 +32,7 @@
       <description><![CDATA[Microsoft announced that Teams will incorporate AI‑powered, context‑aware phishing detection in messages beginning early November 2026. The feature leverages machine learning models trained on historical phishing campaigns to flag suspicious links and attachments before users interact. Microsoft will release the update through the Teams app channel, and administrators should monitor rollout logs for any false positives.]]></description>
       <pubDate>Fri, 23 Oct 2026 18:54:41 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-to-get-ai-powered-context-aware-phishing-detection/">BleepingComputer</source>
-      <category>Policy</category>
+      <category>General</category>
     </item>
     <item>
       <title>Cloudflare Enhances Range Request Handling to Reduce Origin Bandwidth Waste</title>
@@ -41,7 +41,7 @@
       <description><![CDATA[Cloudflare’s Pingora cache architecture was updated to handle large file range requests more efficiently, targeting origin bandwidth waste on small requests. The change addresses naive byte-range caching that previously consumed gigabytes of origin bandwidth, reducing latency and bandwidth usage. No patch required; the update is deployed in Cloudflare’s infrastructure, improving performance for all users.]]></description>
       <pubDate>Fri, 23 Oct 2026 18:22:59 GMT</pubDate>
       <source url="https://blog.cloudflare.com/origin-range-requests/">Cloudflare Security</source>
-      <category>Cloud</category>
+      <category>General</category>
     </item>
     <item>
       <title>LiteLLM 1.107.0 Supply‑Chain Compromise via Python Startup Hooks</title>
@@ -59,7 +59,7 @@
       <description><![CDATA[Cloudflare introduced a post‑quantum GeoKey Manager that isolates decryption keys by geographic region, preventing harvest‑now‑decrypt‑later attacks. The solution rewrites the cryptography stack to enforce strict data sovereignty, ensuring keys cannot be extracted from one region and used elsewhere. The feature is available in Cloudflare’s current product offering; users should enable GeoKey Manager to maintain compliance with regional data‑protection regulations.]]></description>
       <pubDate>Fri, 23 Oct 2026 18:06:56 GMT</pubDate>
       <source url="https://blog.cloudflare.com/post-quantum-geo-key-manager/">Cloudflare Security</source>
-      <category>Cloud</category>
+      <category>General</category>
     </item>
     <item>
       <title>Ruby Releases 4.0.9, 3.4.12, 3.3.13 to Fix Onigmo Regex Bugs Behind GitLab RCE Flaws</title>
@@ -86,7 +86,7 @@
       <description><![CDATA[AI tools are producing large‑scale attack campaigns that target 105 websites using open‑weight models, while public models have achieved full domain control for $12. The attacks exploit automated credential stuffing and domain takeover vectors, causing widespread service disruptions. Vendors should monitor for anomalous login patterns and enforce multi‑factor authentication to mitigate these low‑cost attacks.]]></description>
       <pubDate>Fri, 23 Oct 2026 17:26:59 GMT</pubDate>
       <source url="https://www.darkreading.com/cybersecurity-operations/ai-tools-massive-attacks-little-cost">Dark Reading</source>
-      <category>Policy</category>
+      <category>General</category>
     </item>
     <item>
       <title>Microsoft Announces End of Support for Windows Server 2016</title>
@@ -95,7 +95,7 @@
       <description><![CDATA[Microsoft announced Windows Server 2016 will reach end of support in January 2027, ceasing security updates. This end‑of‑life status means no further patches, exposing systems to unpatched vulnerabilities and potential exploitation. Organizations should upgrade to supported versions or apply extended support if available, and monitor for new advisories.]]></description>
       <pubDate>Fri, 23 Oct 2026 17:05:07 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-january/">BleepingComputer</source>
-      <category>Policy</category>
+      <category>General</category>
     </item>
     <item>
       <title>Quest Diagnostics Breach Exposes Patient Records via Quanum LSM System</title>
@@ -107,13 +107,13 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>PHP Shares Mitigation for New RCE Vulnerability Without Patch</title>
-      <link>https://secubuzz.com/news/php-shares-mitigation-for-new-rce-vulnerability-wi-3e4da4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/php-shares-mitigation-for-new-rce-vulnerability-wi-3e4da4</guid>
-      <description><![CDATA[PHP has released mitigation guidance for a new remote code execution vulnerability affecting systems with non-default configurations. The flaw lacks an available patch and requires user interaction to exploit, elevating risk for exposed web services. Administrators should apply the documented mitigations, disable vulnerable features, and monitor logs for exploitation attempts until a patch is issued.]]></description>
+      <title>PHP Shares Mitigation for Unpatched RCE Vulnerability (CVE-2026-115560)</title>
+      <link>https://secubuzz.com/news/php-shares-mitigation-for-unpatched-rce-vulnerabil-3e4da4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/php-shares-mitigation-for-unpatched-rce-vulnerabil-3e4da4</guid>
+      <description><![CDATA[The PHP security team shared mitigation guidance for an unpatched remote code execution vulnerability (CVE-2026-115560) affecting non-default configurations where session upload progress is enabled and the serializer is switched dynamically. With public exploit code circulating, administrators should disable session upload progress or avoid dynamic handler switches until an official patch is released.]]></description>
       <pubDate>Fri, 23 Oct 2026 15:38:05 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/">BleepingComputer</source>
-      <category>Vulnerability</category>
+      <category>CVE</category>
     </item>
     <item>
       <title>WhatsApp May Stop Working Without Registered SIM Under New Rules</title>
@@ -122,7 +122,7 @@
       <description><![CDATA[WhatsApp users in India may lose service if their device lacks a registered SIM, per new government regulations effective January 1, 2027. The rule requires all messaging accounts to be linked to a registered SIM, impacting secondary phones, tablets, and other devices without active SIMs. Compliance deadlines are set for December 31, 2026, after which non‑compliant accounts will be disabled.]]></description>
       <pubDate>Fri, 23 Oct 2026 15:20:07 GMT</pubDate>
       <source url="https://cybersecuritynews.com/whatsapp-stop-working-without-registered-sim/">Cyber Security News</source>
-      <category>Policy</category>
+      <category>General</category>
     </item>
     <item>
       <title>Critical Okta Access Gateway Flaw Lets Attackers With Admin Access Execute System Commands</title>
@@ -131,7 +131,7 @@
       <description><![CDATA[A critical flaw in Okta Access Gateway allows authenticated administrators to execute arbitrary system commands via the Admin Console, affecting versions prior to 2026.10.2. The vulnerability, identified as CVE-2026-115547, carries a CVSS v3.1 score of 9.1 and is exploitable through weak input validation. Okta has released a patch; administrators should upgrade to 2026.10.2 or later immediately.]]></description>
       <pubDate>Fri, 23 Oct 2026 15:19:23 GMT</pubDate>
       <source url="https://cybersecuritynews.com/okta-access-gateway-flaw/">Cyber Security News</source>
-      <category>Vulnerability</category>
+      <category>CVE</category>
     </item>
     <item>
       <title>APT28 Targets NATO Defense Firms via Compromised Systems</title>
@@ -140,7 +140,7 @@
       <description><![CDATA[APT28 targeted NATO defense firms via compromised systems, exploiting weak authentication and privileged accounts. The attack leveraged stolen credentials and lateral movement, causing unauthorized access to sensitive data and disrupting operational workflows. Security teams should enforce MFA, monitor for anomalous activity, apply vendor patches, and conduct thorough access reviews immediately.]]></description>
       <pubDate>Fri, 23 Oct 2026 14:23:37 GMT</pubDate>
       <source url="https://www.securityweek.com/in-other-news-tor-exit-relays-hijacked-banks-spot-rogue-ai-agents-self-rebuilding-macos-ransomware/">SecurityWeek</source>
-      <category>Malware</category>
+      <category>Nation State</category>
     </item>
     <item>
       <title>North Korea’s State Websites Hit by Multi‑Country DDoS Floods</title>
@@ -149,7 +149,7 @@
       <description><![CDATA[Multiple waves of DDoS attacks originating from Vietnam, the Philippines, Venezuela, and other nations disrupted North Korea’s public internet services, taking major state websites offline. The floods began at 02:01 UTC on October 20, overwhelming the country’s bandwidth and rendering sites unreachable. Network operators should deploy rate limiting, scrubbing services, and traffic anomaly detection to defend against such volumetric assaults.]]></description>
       <pubDate>Fri, 23 Oct 2026 14:22:35 GMT</pubDate>
       <source url="https://cybersecuritynews.com/multiple-waves-of-ddos-attacks-caused-in-north-korea/">Cyber Security News</source>
-      <category>Policy</category>
+      <category>General</category>
     </item>
     <item>
       <title>AI Agent Manipulation via Malicious Inputs Exploits Legitimate Permissions</title>
@@ -167,7 +167,7 @@
       <description><![CDATA[Caribbean cyber threats are escalating, demonstrating how regional exploit activity can amplify global risk. The lack of robust security assurance allows attackers to accelerate exploitation, increasing the likelihood of cross-border compromise. Stakeholders should strengthen threat intelligence sharing, enforce rigorous vulnerability management, and adopt proactive security frameworks to mitigate cascading impacts.]]></description>
       <pubDate>Fri, 23 Oct 2026 14:00:00 GMT</pubDate>
       <source url="https://www.darkreading.com/cyber-risk/why-caribbean-threats-cascade-global-cyber-risk">Dark Reading</source>
-      <category>Policy</category>
+      <category>General</category>
     </item>
     <item>
       <title>Enterprise Firewalls and VPNs Breached, 70,000 Credentials Exposed</title>
@@ -194,7 +194,7 @@
       <description><![CDATA[Cyber insurers now face direct cybersecurity responsibilities as AI, social engineering, and cloud risks grow, shifting focus from pure risk transfer to active threat mitigation. This trend forces carriers to expand underwriting models, integrate technical assessments, and deploy defensive controls, while maintaining traditional actuarial pricing. Insurers are investing in cyber expertise, threat intelligence, and incident response to meet regulatory expectations.]]></description>
       <pubDate>Fri, 23 Oct 2026 13:30:00 GMT</pubDate>
       <source url="https://www.darkreading.com/cyber-risk/cyber-insurances-underwriting-isnt-enough">Dark Reading</source>
-      <category>Cloud</category>
+      <category>General</category>
     </item>
     <item>
       <title>UK Proposes 14‑Year Prison Terms for Undersea Cable Sabotage</title>
@@ -203,7 +203,7 @@
       <description><![CDATA[The United Kingdom is proposing amendments to the Submarine Telegraph Act 1885 to increase penalties for deliberate undersea cable sabotage. The revised law would raise the maximum fine to £1,000 and extend imprisonment to fourteen years, replacing the current five‑year limit. The proposal reflects growing concerns over hybrid threats targeting critical infrastructure and aims to deter future sabotage incidents.]]></description>
       <pubDate>Fri, 23 Oct 2026 13:26:00 GMT</pubDate>
       <source url="https://therecord.media/uk-undersea-cables-sabotage-new-sentencing-guidelines">The Record</source>
-      <category>Policy</category>
+      <category>General</category>
     </item>
     <item>
       <title>Capcom Warns of Phishing After 11.7 Million Records Exposed</title>
@@ -221,7 +221,7 @@
       <description><![CDATA[A new infostealer malware targets AI development tools, harvesting browser passwords, session cookies, and cryptocurrency wallets. The threat collects credentials for Claude, ChatGPT Desktop, Codex, Cursor, Windsurf, GitHub Copilot, and local development files, expanding its scope beyond traditional credential theft. Security teams should block known download URLs, enforce least‑privilege access, and monitor anomalous credential exfiltration to mitigate this evolving threat.]]></description>
       <pubDate>Fri, 23 Oct 2026 13:00:09 GMT</pubDate>
       <source url="https://research.checkpoint.com/2026/infostealer-riding-the-ai-train/">Check Point Research</source>
-      <category>Malware</category>
+      <category>General</category>
     </item>
     <item>
       <title>CISA Adds CVE-2026-114625 to Known Exploited Vulnerabilities Catalog</title>
@@ -230,7 +230,7 @@
       <description><![CDATA[CISA added CVE-2026-114625, an SQL injection flaw in Arista VeloCloud Orchestrator, to its Known Exploited Vulnerabilities catalog after confirming active exploitation. The vulnerability allows unauthenticated attackers to run SQL commands on exposed management interfaces, granting full control over the orchestrator and connected edge devices. CISA urges federal agencies to apply firmware patches immediately and follow BOD 26‑04 for rapid remediation.]]></description>
       <pubDate>Fri, 23 Oct 2026 12:00:00 GMT</pubDate>
       <source url="https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog">CISA</source>
-      <category>Vulnerability</category>
+      <category>CVE</category>
     </item>
     <item>
       <title>Microsoft 365 Accounts Compromised at 79 Organizations via Session Replay</title>
@@ -257,7 +257,7 @@
       <description><![CDATA[China APT leveraged the AI pentest tool Artex to target ConnectWise installations, compromising hundreds of organizations and achieving privileged access in some environments. The attack chain exploited automated credential discovery and lateral movement within the ConnectWise platform, enabling attackers to elevate privileges to operator level. ConnectWise has released a patch and recommends disabling the affected modules immediately.]]></description>
       <pubDate>Fri, 23 Oct 2026 10:31:16 GMT</pubDate>
       <source url="https://www.securityweek.com/china-apt-uses-ai-pentest-tool-artex-in-connectwise-attacks/">SecurityWeek</source>
-      <category>Malware</category>
+      <category>Nation State</category>
     </item>
     <item>
       <title>Attackers Exploit Third Arista VCO Zero-Day in Four Months</title>
@@ -284,7 +284,7 @@
       <description><![CDATA[The article ranks ten email encryption services for 2026, evaluating sender-side automation and recipient experience. It assesses policy integration, DLP triggers, one-click protection, and usability metrics, highlighting services that balance strong cryptography with user convenience. Security teams should review the rankings to select solutions that meet compliance requirements and streamline secure communication workflows.]]></description>
       <pubDate>Fri, 23 Oct 2026 08:22:52 GMT</pubDate>
       <source url="https://cybersecuritynews.com/best-email-encryption-services/">Cyber Security News</source>
-      <category>Policy</category>
+      <category>General</category>
     </item>
     <item>
       <title>Hackers Hijack Exposed AI Models to Launch Cyberattacks</title>
@@ -302,7 +302,7 @@
       <description><![CDATA[CVE‑2026‑91403 corrupts Java’s HTTPS trust chain, enabling attackers to forge intermediate certificates against Oracle Java SE and GraalVM. With a CVSS 3.1 score of 9.1, the flaw is actively exploitable and can lead to remote code execution. Oracle released an emergency patch blocking eMudhra certificates; apply immediately and verify trust settings.]]></description>
       <pubDate>Fri, 23 Oct 2026 06:01:47 GMT</pubDate>
       <source url="https://cybersecuritynews.com/emergency-java-update/">Cyber Security News</source>
-      <category>Vulnerability</category>
+      <category>CVE</category>
     </item>
     <item>
       <title>Critical Cisco Expressway Vulnerability Enables Remote Code Execution Attacks</title>
@@ -311,7 +311,7 @@
       <description><![CDATA[A critical flaw in Cisco Expressway allows remote attackers to execute operating system commands as root on devices configured in a cluster. Tracked as CVE-2026-76466, the vulnerability carries a CVSS score of 9.8, is publicly documented, and can be exploited without authentication. Cisco released a patch on October 21, 2026; apply it immediately or disable exposed services as a workaround.]]></description>
       <pubDate>Fri, 23 Oct 2026 04:47:50 GMT</pubDate>
       <source url="https://cybersecuritynews.com/critical-cisco-expressway-vulnerability/">Cyber Security News</source>
-      <category>Vulnerability</category>
+      <category>CVE</category>
     </item>
     <item>
       <title>AI Adoption Drives Cybersecurity Workforce Reductions</title>
@@ -320,7 +320,7 @@
       <description><![CDATA[Organizations are cutting cybersecurity roles as they adopt AI, even while reporting shortages of the expertise needed to manage threats, according to Barracuda’s Cybersecurity Skills Gap Report. 56% have experienced professional workforce reductions linked to AI, evenly divided between entry-level and higher-level roles. The post AI is taking cybersecurity jobs at junior and experienced levels alike appeared first on Help Net Security.]]></description>
       <pubDate>Fri, 23 Oct 2026 04:30:39 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/23/barracuda-cybersecurity-career-development-report/">Help Net Security</source>
-      <category>Policy</category>
+      <category>General</category>
     </item>
     <item>
       <title>New Infosec Products of the Week: October 23, 2026</title>
@@ -329,7 +329,7 @@
       <description><![CDATA[Sweet Security released Virtual Patching, a one-click protection feature that safeguards running cloud and AI applications from specific vulnerabilities the moment they are identified, while AppGate, IDENTOS, and ThreatModeler introduced other security tools. The new capability allows security teams to enforce protection instantly while engineering develops permanent fixes. The post New infosec products of the week: October 23, 2026 appeared first on Help Net Security.]]></description>
       <pubDate>Fri, 23 Oct 2026 04:00:41 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/23/new-infosec-products-of-the-week-october-23-2026/">Help Net Security</source>
-      <category>Cloud</category>
+      <category>General</category>
     </item>
     <item>
       <title>PHP2Shell Bugs Expose Input Validation Flaw in PHP</title>
@@ -365,7 +365,7 @@
       <description><![CDATA[ASPM in the AI Era Part 2 presents a framework that prioritizes exploitable risks by merging code, infrastructure, and runtime context. This integration shortens triage times and focuses security teams on high-impact vulnerabilities. Implementing the model requires aligning threat feeds, automating context aggregation, and updating risk assessments for cloud workloads.]]></description>
       <pubDate>Thu, 22 Oct 2026 22:51:55 GMT</pubDate>
       <source url="https://www.wiz.io/blog/aspm-ai-era-pt-2-prioritize-appsec-risk">Wiz Research</source>
-      <category>Cloud</category>
+      <category>General</category>
     </item>
     <item>
       <title>Railway Warns Developers to Rotate Secrets After Suspicious Activity</title>
@@ -383,7 +383,7 @@
       <description><![CDATA[Federal agents seized multiple illicit laptop farms in Texas, targeting stolen hardware used for espionage. The operation, part of broader efforts to dismantle North Korean state-sponsored infrastructure, involved coordinated raids and seizure of devices linked to data exfiltration. Law enforcement released a statement urging vendors to secure supply chains and report suspicious hardware acquisitions.]]></description>
       <pubDate>Thu, 22 Oct 2026 20:33:10 GMT</pubDate>
       <source url="https://www.darkreading.com/insider-threats/texas-laptop-farms-north-korean-it-workers">Dark Reading</source>
-      <category>Policy</category>
+      <category>General</category>
     </item>
     <item>
       <title>EU Supermarkets Hit by Outdated Refrigerator Firmware</title>
@@ -428,7 +428,7 @@
       <description><![CDATA[Unit 42 examines contemporary OAuth attacks, highlighting credential theft, token misuse, and phishing vectors targeting OAuth implementations. The analysis identifies redirect URI manipulation, insecure client secrets, and insufficient scope validation as common exploitation techniques. Security teams should enforce redirect URI whitelisting, rotate client secrets, implement scope checks, and monitor anomalous token usage to mitigate risks.]]></description>
       <pubDate>Thu, 22 Oct 2026 17:00:25 GMT</pubDate>
       <source url="https://unit42.paloaltonetworks.com/current-landscape-oauth-attacks/">Unit 42</source>
-      <category>Policy</category>
+      <category>General</category>
     </item>
     <item>
       <title>Meta Ordered to Pay $25 Billion for Misleading Privacy Claims</title>
@@ -437,7 +437,7 @@
       <description><![CDATA[Meta faces a $25 billion penalty after regulators determined the company misled users about who could access their personal information on Facebook. The ruling underscores the importance of transparent privacy disclosures and compliance with data protection regulations. Facebook must update its privacy policies, enhance user consent mechanisms, and implement audit controls to avoid future violations.]]></description>
       <pubDate>Thu, 22 Oct 2026 16:59:22 GMT</pubDate>
       <source url="https://www.malwarebytes.com/blog/news/2026/10/facebooks-misleading-privacy-claims-land-meta-a-25-billion-penalty">Malwarebytes Labs</source>
-      <category>Policy</category>
+      <category>General</category>
     </item>
     <item>
       <title>Gcore Blocks php2shell Vulnerabilities with Free WAAP Plan for Public Agencies</title>
@@ -446,7 +446,7 @@
       <description><![CDATA[A recent php2shell vulnerability, identified as CVE-2026-109618 and CVE-2026-109619, has forced public websites offline across Europe. Gcore’s WAAP Enterprise plan blocks the php2shell attack path by default, mitigating unauthenticated remote code execution that could compromise web servers. The vendor has released a free subscription for government bodies until December 31, 2026, ensuring continued protection.]]></description>
       <pubDate>Thu, 22 Oct 2026 16:12:01 GMT</pubDate>
       <source url="https://cybersecuritynews.com/gcore-makes-enterprise-security-bundle-free-for-public-agencies-until-end-of-the-year/">Cyber Security News</source>
-      <category>Vulnerability</category>
+      <category>CVE</category>
     </item>
     <item>
       <title>Microsoft Restores Exchange Web Services API for Legacy Applications</title>
@@ -455,7 +455,7 @@
       <description><![CDATA[Microsoft has announced that IT administrators can re‑enable the retired Exchange Web Services (EWS) API in Exchange Online to restore functionality for legacy EWS applications. The change addresses the deprecation that caused EWS apps to fail after the API was disabled in a recent update. Administrators should apply the new configuration settings immediately to prevent application downtime.]]></description>
       <pubDate>Thu, 22 Oct 2026 15:49:32 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-shares-how-to-fix-broken-exchange-online-ews-apps/">BleepingComputer</source>
-      <category>Policy</category>
+      <category>General</category>
     </item>
   </channel>
 </rss>

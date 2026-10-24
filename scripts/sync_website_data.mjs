@@ -43,20 +43,14 @@ function getKeywords(title) {
     .filter(w => w.length > 2 && !STOP_WORDS.has(w));
 }
 
-function mapCategory(cat, text = '') {
+function mapCategory(cat) {
   const upper = (cat || '').toUpperCase();
+  if (upper === 'CVE') return 'CVE';
+  if (upper === 'VULNERABILITY') return 'Vulnerability';
   if (upper === 'BREACH') return 'Breach';
   if (upper === 'RANSOMWARE') return 'Ransomware';
-  if (upper === 'CVE' || upper === 'VULNERABILITY') return 'Vulnerability';
-  if (upper === 'NATION_STATE') return 'Malware';
-  const lowerText = text.toLowerCase();
-  if (lowerText.includes('cloud') || lowerText.includes('aws') || lowerText.includes('azure') || lowerText.includes('container')) {
-    return 'Cloud';
-  }
-  if (lowerText.includes('malware') || lowerText.includes('trojan') || lowerText.includes('rat ') || lowerText.includes('spyware')) {
-    return 'Malware';
-  }
-  return 'Policy';
+  if (upper === 'NATION_STATE') return 'Nation State';
+  return 'General';
 }
 
 function extractCves(text) {
@@ -271,12 +265,12 @@ async function syncNews() {
   const newsTsContent = `import type { NewsBrief, NewsCategory } from '../types/news';
 
 export const newsCategories: NewsCategory[] = [
-  'Vulnerability',
-  'Ransomware',
   'Breach',
-  'Malware',
-  'Policy',
-  'Cloud'
+  'Ransomware',
+  'CVE',
+  'Vulnerability',
+  'Nation State',
+  'General'
 ];
 
 export const news: NewsBrief[] = ${JSON.stringify(cleanBriefs, null, 2)};
@@ -446,7 +440,8 @@ async function fetchGitHubAdvisories() {
         references: [
           { label: 'GitHub Advisory', url: item.html_url },
           ...(item.cve_id ? [{ label: 'NVD CVE entry', url: `https://nvd.nist.gov/vuln/detail/${item.cve_id}` }] : [])
-        ]
+        ],
+        source: 'GITHUB'
       };
     });
   } catch (err) {
@@ -508,7 +503,8 @@ async function syncAdvisories() {
         references: [
           { label: 'NVD CVE entry', url: `https://nvd.nist.gov/vuln/detail/${cve}` },
           { label: 'CISA KEV catalog', url: 'https://www.cisa.gov/known-exploited-vulnerabilities-catalog' }
-        ]
+        ],
+        source: 'CISA KEV'
       };
     });
 

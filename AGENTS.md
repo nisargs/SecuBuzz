@@ -61,13 +61,21 @@
     - Severity Floor: Prioritized by severity weight (CRITICAL > HIGH > MEDIUM > LOW, max 2 per cycle) so users receive fresh dispatches while relying on in-app preferences to filter.
     - CISA KEV Freshness & Tap Routing: CISA zero-day alerts are strictly limited to CVEs added within 72 hours (`<= 72h`), and carry full advisory payload metadata (`articleId`, `headline`, `summary`, `articleUrl`) wired to `handleNotificationResponse` so tapping an advisory notification directly opens the advisory details screen.
 
-## 6. Native `.aab` Releases
-- **Release v1.0.3 (Version Code 9):**
+## 6. Native `.aab` Releases & Production Updates
+- **Release v1.0.3 (Version Code 9 / OTA Active):**
   - **AMOLED Black Theme**: Added pure true-black OLED mode (`#000000`) alongside Dark and Slate.
   - **Dynamic Text Scaling**: Density selector (Compact / Standard / Comfortable) with live preview and persistent scaling.
   - **FIRST.org EPSS Telemetry**: Integrated live 30-day in-the-wild exploit probability and global threat percentiles with zero synthetic data.
   - **Feed UI Uniformity**: Consolidated quick filters inside the advisory filter sheet for a clean, distraction-free feed matching the news tab.
-  - **Catalog Reconciliation**: Unified website and mobile app inventory at 1,798 tracked advisories (1,748 live CISA KEV + 50 GitHub Advisories).
+  - **Catalog Reconciliation**: Unified website and mobile app inventory at **1,806 tracked advisories** (1,756 live CISA KEV + 50 GitHub Advisories).
+  - **Dynamic Word Count Telemetry**: Displayed on mobile feed cards, mobile article detail screen, and settings appearance preview ("60-word briefs").
+  - **Refresh Control Sanitation**: Fixed double-spinner bug on mobile briefs feed by eliminating redundant absolute `ActivityIndicator` overlay, standardizing on native `RefreshControl`.
+  - **Automated Cross-Feed CVE Corroboration & Deduplication Enrichment**:
+    - Pre-AI cross-feed candidate corroboration across 27 sources within a 72-hour window. If an RSS publisher truncates descriptions, the pipeline cross-matches vendor/incident keywords against sister candidates and passes verified CVEs into the AI prompt.
+    - Post-AI deduplication CVE backfill: when a secondary source is merged as a duplicate in `scripts/ingest.mjs`, any missing CVE is backfilled into `duplicateOf.cves`, title/headline is enriched with `(${cve})`, and category is elevated to `CVE`.
+  - **100% Mobile & Web Taxonomy Parity**:
+    - News Briefs: `Breach`, `Ransomware`, `CVE`, `Vulnerability`, `Nation State`, `General`. Threat Severities: `CRITICAL`, `HIGH`, `MEDIUM`, `LOW`.
+    - Advisories: `Severity & Impact` (`All`, `Critical`, `High`, `Ransomware`), `Advisory Source` (`All Sources`, `CISA KEV Zero-Days`, `GitHub Ecosystem`).
 - **Previous Release v1.0.2 (Version Code 8):** Header brand unification and tactile haptic feedback.
 
 ## 7. Product Evolution & Post-Approval Roadmap (Claude + ChatGPT Synthesis)
@@ -184,7 +192,7 @@
       5. *Download Clicks*: Breakdown of `/go/play` button clicks by country/source (human vs crawler) and `/download` visits.
       6. *Support & Ko-fi Clicks*: Breakdown of `/support` clicks by source (`footer_card`, `about_page`, `download_page`, `footer_nav`), unique clickers, repeat clicks, country, and recent referral stream.
 - **Authoritative Inventory Counts:**
-  - **Advisories count:** Exactly **1,789 active advisories** (CISA KEV ~1,530 + GitHub Advisories ~259). Kept strictly consistent across mobile app (`1,789 active`) and website (`1,789 active advisories`).
+  - **Advisories count:** Exactly **1,806 active advisories** (1,756 live CISA KEV + 50 GitHub Advisories). Kept strictly consistent across mobile app (`1,806 active`) and website (`1,806 active advisories`).
   - **News feed count:** Up to **350 articles** (~7–10 days of rolling intelligence across 27 verified threat feeds).
 - **100% Free Tier ($0.00 Cost Guarantee):**
   - AI Summarization: Tri-engine architecture (Groq `openai/gpt-oss-20b` + Google Gemini `gemini-2.5-flash` + OpenRouter fallback). Primary Groq free tier ceiling is 8,000 TPM, 30 RPM, 14,400 RPD; backup Google Gemini free tier offers 1,000,000 TPM, 15 RPM, 1,500 RPD. Ingestion runs every 1 hour, batching 2 articles with a 5s backoff and automated fallback. Adding feeds or increasing feed size respects these ceilings and never incurs costs.

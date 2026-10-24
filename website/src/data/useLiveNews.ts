@@ -27,20 +27,14 @@ function getKeywords(title: string): string[] {
     .filter(w => w.length > 2 && !STOP_WORDS.has(w));
 }
 
-function mapCategory(cat: string = '', text: string = ''): NewsCategory {
+function mapCategory(cat: string = ''): NewsCategory {
   const upper = cat.toUpperCase();
+  if (upper === 'CVE') return 'CVE';
+  if (upper === 'VULNERABILITY') return 'Vulnerability';
   if (upper === 'BREACH') return 'Breach';
   if (upper === 'RANSOMWARE') return 'Ransomware';
-  if (upper === 'CVE' || upper === 'VULNERABILITY') return 'Vulnerability';
-  if (upper === 'NATION_STATE') return 'Malware';
-  const lowerText = text.toLowerCase();
-  if (lowerText.includes('cloud') || lowerText.includes('aws') || lowerText.includes('azure') || lowerText.includes('container')) {
-    return 'Cloud';
-  }
-  if (lowerText.includes('malware') || lowerText.includes('trojan') || lowerText.includes('rat ') || lowerText.includes('spyware')) {
-    return 'Malware';
-  }
-  return 'Policy';
+  if (upper === 'NATION_STATE') return 'Nation State';
+  return 'General';
 }
 
 function extractCves(text: string): string[] {
@@ -105,7 +99,7 @@ function transformFeed(feed: any[]): NewsBrief[] {
     const fullText = (title + ' ' + summary).toLowerCase();
     const cves = extractCves(title + ' ' + summary);
     const keywords = getKeywords(title);
-    const category = mapCategory(art.category, title + ' ' + summary);
+    const category = mapCategory(art.category);
     const rawSev = (art.severity || '').toUpperCase();
     const severity = (['CRITICAL', 'HIGH', 'MEDIUM', 'LOW'].includes(rawSev) ? rawSev : undefined) as NewsBrief['severity'];
     const time = Date.parse(publishedAt) || 0;

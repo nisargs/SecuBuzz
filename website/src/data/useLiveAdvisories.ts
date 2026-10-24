@@ -39,7 +39,8 @@ function transformKev(list: any[]): Advisory[] {
       references: [
         { label: 'NVD CVE entry', url: `https://nvd.nist.gov/vuln/detail/${cve}` },
         { label: 'CISA KEV catalog', url: 'https://www.cisa.gov/known-exploited-vulnerabilities-catalog' }
-      ]
+      ],
+      source: 'CISA KEV'
     };
   });
 }
