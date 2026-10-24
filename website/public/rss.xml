@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Oct 2026 02:16:38 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2026 05:00:10 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>php2shell Vulnerability Causes Widespread Panic (CVE-2026-115560)</title>
@@ -296,6 +296,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>x402 SDK Flaw Enables Malicious APIs to Drain AI Agents’ Token Balances</title>
+      <link>https://secubuzz.com/news/x402-sdk-flaw-enables-malicious-apis-to-drain-ai-a-33f54d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/x402-sdk-flaw-enables-malicious-apis-to-drain-ai-a-33f54d</guid>
+      <description><![CDATA[The x402 SDK’s default client permits API calls to sign payments for an agent’s entire token balance, exposing the SDK to malicious API requests (CVE-2026-111497). The vulnerability arises from an absent spending limit until August 18 releases added one, allowing unchecked token drains. Users should upgrade to the latest SDK version or enforce manual spending limits to mitigate the risk.]]></description>
+      <pubDate>Fri, 23 Oct 2026 08:35:45 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/critical-x402-sdk-flaw-could-let.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Top 10 Email Encryption Services Ranked for 2026</title>
       <link>https://secubuzz.com/news/top-10-email-encryption-services-ranked-for-2026-5a5cac</link>
       <guid isPermaLink="true">https://secubuzz.com/news/top-10-email-encryption-services-ranked-for-2026-5a5cac</guid>
@@ -321,6 +330,15 @@
       <pubDate>Fri, 23 Oct 2026 06:01:47 GMT</pubDate>
       <source url="https://cybersecuritynews.com/emergency-java-update/">Cyber Security News</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Drone Program Compliance Interview Highlights Common Gaps</title>
+      <link>https://secubuzz.com/news/drone-program-compliance-interview-highlights-comm-778be3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/drone-program-compliance-interview-highlights-comm-778be3</guid>
+      <description><![CDATA[A drone program compliance interview reveals common gaps in public safety agencies' handling of flight logs, video, and control software. Inadequate chain‑of‑custody and spreadsheet logs expose agencies to data integrity risks. Security teams should enforce audit trails, publish activity through secure portals, and replace logs with tamper‑evident digital records to meet compliance.]]></description>
+      <pubDate>Fri, 23 Oct 2026 05:30:25 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/23/nick-donarski-rotorlab-drone-program-compliance/">Help Net Security</source>
+      <category>General</category>
     </item>
     <item>
       <title>AI Adoption Drives Cybersecurity Workforce Reductions</title>
@@ -438,24 +456,6 @@
       <pubDate>Thu, 22 Oct 2026 15:49:32 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-shares-how-to-fix-broken-exchange-online-ews-apps/">BleepingComputer</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Claude Security Enhances Continuous Repository Scanning</title>
-      <link>https://secubuzz.com/news/claude-security-enhances-continuous-repository-sca-4bb4bc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/claude-security-enhances-continuous-repository-sca-4bb4bc</guid>
-      <description><![CDATA[Anthropic updated Claude Security to continuously scan connected code repositories for new flaws, eliminating the need for manual scan initiation. The service now tracks reported vulnerabilities, marks them fixed when changes are detected, and reopens them if the issue returns. This enhancement improves continuous integration pipelines, reduces manual oversight, and ensures timely remediation of newly discovered security issues.]]></description>
-      <pubDate>Thu, 22 Oct 2026 14:40:43 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/claude-security-continuous-scans/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>ScarlettGroup Threatens Data Leaks with Dark Web Naming and Countdown Timers</title>
-      <link>https://secubuzz.com/news/scarlettgroup-threatens-data-leaks-with-dark-web-n-33c6ec</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/scarlettgroup-threatens-data-leaks-with-dark-web-n-33c6ec</guid>
-      <description><![CDATA[ScarlettGroup, a newly observed extortion gang, is naming companies on a dark web leak site and using countdown timers to threaten the release of allegedly stolen data. The operation applies public pressure before breach claims are independently verified, creating reputational risk and potential regulatory scrutiny. Security teams should monitor dark web activity, verify data integrity, and prepare incident response plans to mitigate reputational damage.]]></description>
-      <pubDate>Thu, 22 Oct 2026 14:40:34 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/a-new-extortion-gang/">Cyber Security News</source>
-      <category>Ransomware</category>
     </item>
   </channel>
 </rss>

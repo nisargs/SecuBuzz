@@ -594,6 +594,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "x402-sdk-flaw-enables-malicious-apis-to-drain-ai-a-33f54d",
+    "title": "x402 SDK Flaw Enables Malicious APIs to Drain AI Agents’ Token Balances",
+    "summary": "The x402 SDK’s default client permits API calls to sign payments for an agent’s entire token balance, exposing the SDK to malicious API requests (CVE-2026-111497). The vulnerability arises from an absent spending limit until August 18 releases added one, allowing unchecked token drains. Users should upgrade to the latest SDK version or enforce manual spending limits to mitigate the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/critical-x402-sdk-flaw-could-let.html",
+    "publishedAt": "2026-10-23T08:35:45.000Z",
+    "cves": [
+      "CVE-2026-111497"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "x402-sdk-flaw-enables-malicious-apis-to-drain-ai-a",
+      "article-33f54d",
+      "33f54d",
+      "x402-sdk-flaw-enables-malicious-apis-to-drain-ai-agents-toke"
+    ]
+  },
+  {
     "slug": "top-10-email-encryption-services-ranked-for-2026-5a5cac",
     "title": "Top 10 Email Encryption Services Ranked for 2026",
     "summary": "The article ranks ten email encryption services for 2026, evaluating sender-side automation and recipient experience. It assesses policy integration, DLP triggers, one-click protection, and usability metrics, highlighting services that balance strong cryptography with user convenience. Security teams should review the rankings to select solutions that meet compliance requirements and streamline secure communication workflows.",
@@ -644,6 +664,24 @@ export const news: NewsBrief[] = [
       "article-3aa4e5",
       "3aa4e5",
       "oracle-issues-emergency-java-update-for-critical-9-1-https-t"
+    ]
+  },
+  {
+    "slug": "drone-program-compliance-interview-highlights-comm-778be3",
+    "title": "Drone Program Compliance Interview Highlights Common Gaps",
+    "summary": "A drone program compliance interview reveals common gaps in public safety agencies' handling of flight logs, video, and control software. Inadequate chain‑of‑custody and spreadsheet logs expose agencies to data integrity risks. Security teams should enforce audit trails, publish activity through secure portals, and replace logs with tamper‑evident digital records to meet compliance.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/23/nick-donarski-rotorlab-drone-program-compliance/",
+    "publishedAt": "2026-10-23T05:30:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "drone-program-compliance-interview-highlights-comm",
+      "article-778be3",
+      "778be3",
+      "drone-program-compliance-interview-highlights-common-gaps"
     ]
   },
   {
@@ -2008,24 +2046,6 @@ export const news: NewsBrief[] = [
       "article-eacd25",
       "eacd25",
       "devguard-consolidates-vulnerability-findings-into-a-single-d"
-    ]
-  },
-  {
-    "slug": "teamupdraft-compromise-enables-malicious-plugin-de-3a97e1",
-    "title": "TeamUpdraft Compromise Enables Malicious Plugin Deployment on WordPress Sites",
-    "summary": "TeamUpdraft, the UpdraftPlus backup plugin developer, suffered a website breach exposing remote management keys, which attackers leveraged to install malicious plugins on connected WordPress sites. The flaw allowed unauthorized code execution via compromised management credentials, enabling widespread site compromise. A patch for the compromised keys is available; administrators should revoke exposed keys and apply the latest security update.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/wordpress-plugin-developer-hacked/",
-    "publishedAt": "2026-10-21T05:01:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "teamupdraft-compromise-enables-malicious-plugin-de",
-      "article-3a97e1",
-      "3a97e1",
-      "teamupdraft-compromise-enables-malicious-plugin-deployment-o"
     ]
   },
   {

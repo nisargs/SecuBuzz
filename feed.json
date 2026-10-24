@@ -344,10 +344,15 @@
       {
         "source": "CISA",
         "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-04"
+      },
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html"
       }
     ],
     "cves": [
-      "CVE-2026-76466"
+      "CVE-2026-76466",
+      "CVE-2026-111497"
     ]
   },
   {
@@ -593,6 +598,24 @@
     "additionalSources": []
   },
   {
+    "id": "https://thehackernews.com/2026/10/critical-x402-sdk-flaw-could-let.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/critical-x402-sdk-flaw-could-let.html",
+    "title": "x402 SDK Flaw Enables Malicious APIs to Drain AI Agents’ Token Balances",
+    "headline": "x402 SDK Flaw Enables Malicious APIs to Drain AI Agents’ Token Balances",
+    "summary": "The x402 SDK’s default client permits API calls to sign payments for an agent’s entire token balance, exposing the SDK to malicious API requests (CVE-2026-111497). The vulnerability arises from an absent spending limit until August 18 releases added one, allowing unchecked token drains. Users should upgrade to the latest SDK version or enforce manual spending limits to mitigate the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-23T08:35:45.000Z",
+    "url": "https://thehackernews.com/2026/10/critical-x402-sdk-flaw-could-let.html",
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/wordpress-plugin-developer-hacked/"
+      }
+    ]
+  },
+  {
     "id": "https://cybersecuritynews.com/best-email-encryption-services/",
     "sourceUrl": "https://cybersecuritynews.com/best-email-encryption-services/",
     "title": "Top 10 Email Encryption Services Ranked for 2026",
@@ -634,6 +657,19 @@
     "source": "Cyber Security News",
     "publishedAt": "2026-10-23T06:01:47.000Z",
     "url": "https://cybersecuritynews.com/emergency-java-update/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/23/nick-donarski-rotorlab-drone-program-compliance/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/23/nick-donarski-rotorlab-drone-program-compliance/",
+    "title": "Drone Program Compliance Interview Highlights Common Gaps",
+    "headline": "Drone Program Compliance Interview Highlights Common Gaps",
+    "summary": "A drone program compliance interview reveals common gaps in public safety agencies' handling of flight logs, video, and control software. Inadequate chain‑of‑custody and spreadsheet logs expose agencies to data integrity risks. Security teams should enforce audit trails, publish activity through secure portals, and replace logs with tamper‑evident digital records to meet compliance.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-23T05:30:25.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/23/nick-donarski-rotorlab-drone-program-compliance/",
     "additionalSources": []
   },
   {
@@ -1796,24 +1832,6 @@
     "publishedAt": "2026-10-21T05:30:45.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/21/devguard-open-source-vulnerability-management/",
     "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/wordpress-plugin-developer-hacked/",
-    "sourceUrl": "https://cybersecuritynews.com/wordpress-plugin-developer-hacked/",
-    "title": "TeamUpdraft Compromise Enables Malicious Plugin Deployment on WordPress Sites",
-    "headline": "TeamUpdraft Compromise Enables Malicious Plugin Deployment on WordPress Sites",
-    "summary": "TeamUpdraft, the UpdraftPlus backup plugin developer, suffered a website breach exposing remote management keys, which attackers leveraged to install malicious plugins on connected WordPress sites. The flaw allowed unauthorized code execution via compromised management credentials, enabling widespread site compromise. A patch for the compromised keys is available; administrators should revoke exposed keys and apply the latest security update.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-21T05:01:41.000Z",
-    "url": "https://cybersecuritynews.com/wordpress-plugin-developer-hacked/",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/wp2shell-attack/"
-      }
-    ]
   },
   {
     "id": "https://www.crowdstrike.com/en-us/blog/crowdstrike-uncovers-new-agentic-ai-campaigns/",
