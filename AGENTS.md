@@ -1,5 +1,10 @@
 # SecuBuzz Architectural Rules & Persistent Memory
 
+## 0. MANDATORY NOVEMBER 1st REMINDER: SWITCH REPO BACK TO PRIVATE
+- **Status**: The repository visibility was temporarily made **Public** on October 25, 2026, to bridge the remaining 6 days of October after reaching the 2,000 GitHub Actions free runner minutes quota.
+- **Action Required on November 1, 2026**: When the monthly billing cycle resets, **IMMEDIATELY PROMPT AND REMIND THE USER** to switch the repository visibility back from **Public** to **Private** in GitHub repository **Settings** → **Danger Zone** → **Change repository visibility** → **Make private**.
+- **Runner Quota Invariant**: To permanently prevent ever hitting the 2,000-minute quota again when the repo is Private, the ingestion pipeline runs on an optimized schedule (`cron: "17 */2 * * *"` = every 2 hours, ~360 runs/month = ~540 minutes, consuming only ~27% of the free monthly allowance).
+
 ## 1. Expo SDK 57 Standards
 - Read exact versioned docs at https://docs.expo.dev/versions/v57.0.0/ before writing code.
 - Always preserve protocol integrity for catch-all routes (`/article/[...id].tsx`) to avoid collapsing `https://` into `https:/`.
