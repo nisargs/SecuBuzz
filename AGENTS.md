@@ -255,3 +255,21 @@
   - **Local Verification**: Ready for local testing in Expo Go or physical Android device before production OTA release. Fallback to direct Play Store listing preserved.
 - *(Note: AMOLED Black mode `#000000` is already successfully built and deployed in Release v1.0.3 / Version Code 9).*
 
+## 13. Oracle Cloud Infrastructure (OCI) Always Free Architecture & Future Blueprint
+- **Resource Entitlement ($0.00 Forever)**:
+  - 4 ARM Ampere A1 OCPUs + 24 GB RAM (can run as 1 VM or split into up to 4 VMs).
+  - 200 GB block storage (NVMe) + 10 TB/month outbound bandwidth.
+  - 2 AMD micro VMs (1/8 OCPU, 1 GB RAM each).
+- **SecuBuzz Application Role**:
+  - *Headless Browser Scraping*: Offload heavy JavaScript-rendered PSIRT advisories, monthly Android Security Bulletins (ASB), or non-RSS threat portals via Crawl4AI / Playwright without consuming GitHub Actions runner minutes.
+  - *Offline Local LLM Fallback*: Host quantized local models via Ollama (`llama3.1:8b` / `mistral:7b-instruct`) on the 24 GB RAM node as an autonomous emergency summarization engine if external AI APIs ever rate-limit or fail.
+  - *Rule of Thumb*: Never replace Cloudflare Worker edge (300+ cities, DDoS protection) for public traffic; use OCI strictly as an asynchronous background worker or data pipeline accelerator.
+- **Cybersecurity Professional Lab Role**:
+  - *OpenCTI / MISP*: Host an enterprise-grade Cyber Threat Intelligence platform (requires 8–12 GB RAM) correlating CISA KEV, AlienVault OTX, ThreatFox, and MITRE ATT&CK IOCs.
+  - *Wazuh SIEM / XDR*: Deploy open-source SIEM + OpenSearch indexer for real-time endpoint monitoring, vulnerability scanning, and FIM across home/cloud systems.
+  - *OSINT & Threat Hunting Daemons*: 24/7 scanning for newly disclosed CVE PoCs, GitHub exploit releases, and automated Nuclei reconnaissance.
+  - *Hardened WireGuard + Pi-hole/AdGuard*: Personal encrypted egress with network-wide telemetry and malicious domain sinkholing.
+- **Critical Maintenance Invariant**:
+  - Avoid idle reclamation: Upgrade account to Pay-As-You-Go while staying within $0.00 Always Free limits, or maintain active cron/Docker jobs so CPU/RAM stays above the 15% 7-day idle deletion threshold.
+
+
