@@ -2336,5 +2336,14 @@
   "https://access.redhat.com/errata/RHSA-2026:88687",
   "https://access.redhat.com/errata/RHSA-2026:88563",
   "https://access.redhat.com/errata/RHSA-2026:88668",
-  "https://access.redhat.com/errata/RHSA-2026:88669"
+  "https://access.redhat.com/errata/RHSA-2026:88669",
+  "https://access.redhat.com/errata/RHSA-2026:88662",
+  "https://access.redhat.com/errata/RHSA-2026:88659",
+  "http://chromereleases.googleblog.com/feeds/4141447260395278637/comments/default",
+  "http://chromereleases.googleblog.com/feeds/2567200690070519815/comments/default",
+  "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-gre-JNpMHrTv?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Generic+Routing+Encapsulation+Denial+of+Service+Vulnerability%26vs_k%3D1",
+  "https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-110063",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96251",
+  "https://access.redhat.com/errata/RHSA-2026:88561"
 ]
