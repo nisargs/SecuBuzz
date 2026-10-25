@@ -2314,5 +2314,15 @@
   "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-mime-vulns-bkXjcKkt?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+SMTP+MIME+Denial+of+Service+Vulnerability%26vs_k%3D1",
   "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-snort3-ybgmhTQe?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Security+Hardening+Release%3A+October+2026%26vs_k%3D1",
   "https://www.darkreading.com/cyber-risk/cyber-insurance-covering-ai-damage",
-  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105014"
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105014",
+  "https://www.securityweek.com/former-unit-8200-officers-raise-34-million-for-agentic-secops-startup-mave/",
+  "https://www.helpnetsecurity.com/2026/10/25/week-in-review-php-vulnerabilities-patched-exploited-palo-alto-globalprotect-vpn-flaw/",
+  "https://cybersecuritynews.com/microsoft-teams-ai-detection/",
+  "https://access.redhat.com/errata/RHSA-2026:88725",
+  "http://chromereleases.googleblog.com/feeds/3362464942688322866/comments/default",
+  "https://aws.amazon.com/security/security-bulletins/rss/2026-146-aws/",
+  "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-misc-dos-6mB22qAK?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Denial+of+Service+Vulnerabilities%26vs_k%3D1",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108456",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97785",
+  "https://ubuntu.com/security/notices/USN-8952-1"
 ]

@@ -11,6 +11,58 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "mave-secops-startup-raises-34-million-354403",
+    "title": "Mave SecOps Startup Raises $34 Million",
+    "summary": "Mave, a Tel Aviv‑based startup founded by former Unit 8200 officers, raises $34 million to develop agentic SecOps solutions. The company leverages AI agents to autonomously investigate alerts across existing security stacks, aiming to reduce analyst workload. No public vulnerability or breach is reported; the announcement focuses on funding and product roadmap.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/former-unit-8200-officers-raise-34-million-for-agentic-secops-startup-mave/",
+    "publishedAt": "2026-10-25T11:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "mave-secops-startup-raises-34-million",
+      "article-354403",
+      "354403"
+    ]
+  },
+  {
+    "slug": "palo-alto-globalprotect-vpn-exploited-flaw-cve-202-7b67d6",
+    "title": "Palo Alto GlobalProtect VPN Exploited Flaw CVE‑2026‑109618",
+    "summary": "Palo Alto Networks’ GlobalProtect VPN suffered an exploited flaw that allows attackers to bypass authentication and gain remote access. The vulnerability, identified as CVE‑2026‑109618, carries a CVSS v4.0 score of 9.2, and a public PoC demonstrates its exploitability. Palo Alto released a patch in the upcoming security update; administrators should apply the fix immediately and verify VPN configuration.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/25/week-in-review-php-vulnerabilities-patched-exploited-palo-alto-globalprotect-vpn-flaw/",
+    "publishedAt": "2026-10-25T09:00:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "palo-alto-globalprotect-vpn-exploited-flaw-cve-202",
+      "article-7b67d6",
+      "7b67d6",
+      "palo-alto-globalprotect-vpn-exploited-flaw-cve-2026-109618"
+    ]
+  },
+  {
+    "slug": "microsoft-teams-ai-phishing-detection-feature-7c0011",
+    "title": "Microsoft Teams AI Phishing Detection Feature",
+    "summary": "Microsoft announced that Microsoft Teams will incorporate AI to detect phishing within team conversations, analyzing context to identify scams that may lack malicious links or attachments. The feature focuses on first exchanges with external contacts, where attackers impersonate support staff and request sensitive data. Microsoft will release the capability in upcoming updates, enabling teams to activate AI detection.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/microsoft-teams-ai-detection/",
+    "publishedAt": "2026-10-25T06:55:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-teams-ai-phishing-detection-feature",
+      "article-7c0011",
+      "7c0011"
+    ]
+  },
+  {
     "slug": "blackx-uefi-bootkit-exploits-baton-drop-to-bypass-159657",
     "title": "BlackX UEFI Bootkit Exploits Baton Drop to Bypass Secure Boot",
     "summary": "BlackX, a UEFI bootkit used in an espionage campaign, leveraged the Baton Drop flaw to bypass Secure Boot and load a malicious driver that interferes with Kaspersky and Avast security solutions. The root cause is a privilege escalation vulnerability in the UEFI firmware that allows unsigned code execution. A vendor patch and firmware update are required to mitigate the threat.",
@@ -661,6 +713,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-releases-php-security-update-for-rhel-9-4-37e4f5",
+    "title": "Red Hat Releases PHP Security Update for RHEL 9.4 SAP",
+    "summary": "Red Hat issued a PHP security update for Enterprise Linux 9.4 SAP Solutions, addressing multiple vulnerabilities with an Important impact rating. The update mitigates code execution risks by patching identified flaws referenced in CVE links. Users should apply the update immediately to maintain system integrity and prevent exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:88725",
+    "publishedAt": "2026-10-23T15:23:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-php-security-update-for-rhel-9-4",
+      "article-37e4f5",
+      "37e4f5",
+      "red-hat-releases-php-security-update-for-rhel-9-4-sap"
+    ]
+  },
+  {
     "slug": "whatsapp-may-stop-working-without-registered-sim-u-25a338",
     "title": "WhatsApp May Stop Working Without Registered SIM Under New Rules",
     "summary": "WhatsApp users in India may lose service if their device lacks a registered SIM, per new government regulations effective January 1, 2027. The rule requires all messaging accounts to be linked to a registered SIM, impacting secondary phones, tablets, and other devices without active SIMs. Compliance deadlines are set for December 31, 2026, after which non‑compliant accounts will be disabled.",
@@ -676,6 +746,26 @@ export const news: NewsBrief[] = [
       "article-25a338",
       "25a338",
       "whatsapp-may-stop-working-without-registered-sim-under-new-r"
+    ]
+  },
+  {
+    "slug": "critical-okta-access-gateway-flaw-lets-attackers-w-302b8e",
+    "title": "Critical Okta Access Gateway Flaw Lets Attackers With Admin Access Execute System Commands",
+    "summary": "A critical flaw in Okta Access Gateway lets authenticated administrators run arbitrary system commands via the Admin Console, enabling remote code execution. CVE-2026-115547 arises from weak input validation and has a CVSS v3.1 score of 9.1, indicating high exploitability. Okta released a patch for versions before 2026.10.2; apply it immediately to disable command execution.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/okta-access-gateway-flaw/",
+    "publishedAt": "2026-10-23T15:19:23.000Z",
+    "cves": [
+      "CVE-2026-115547"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "critical-okta-access-gateway-flaw-lets-attackers-w",
+      "article-302b8e",
+      "302b8e",
+      "critical-okta-access-gateway-flaw-lets-attackers-with-admin-"
     ]
   },
   {
@@ -1338,6 +1428,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "chromeos-beta-channel-updated-to-os-16852-10-0-and-27c401",
+    "title": "ChromeOS Beta Channel Updated to OS 16852.10.0 and Browser 157.0.8103.11",
+    "summary": "ChromeOS Beta channel received an OS update to version 16852.10.0 and browser build 157.0.8103.11, expanding support to most devices. The update includes bug fixes and stability improvements, with users encouraged to report issues via the ChromeOS communities or bug filing channels. No security vulnerabilities were disclosed, and the update is available immediately for all Beta users.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "http://chromereleases.googleblog.com/feeds/3362464942688322866/comments/default",
+    "publishedAt": "2026-10-23T04:38:41.146Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chromeos-beta-channel-updated-to-os-16852-10-0-and",
+      "article-27c401",
+      "27c401",
+      "chromeos-beta-channel-updated-to-os-16852-10-0-and-browser-1"
+    ]
+  },
+  {
     "slug": "ai-adoption-drives-cybersecurity-workforce-reducti-4e062a",
     "title": "AI Adoption Drives Cybersecurity Workforce Reductions",
     "summary": "Organizations are cutting cybersecurity roles as they adopt AI, even while reporting shortages of the expertise needed to manage threats, according to Barracuda’s Cybersecurity Skills Gap Report. 56% have experienced professional workforce reductions linked to AI, evenly divided between entry-level and higher-level roles. The post AI is taking cybersecurity jobs at junior and experienced levels alike appeared first on Help Net Security.",
@@ -1480,6 +1588,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cve-2026-115419-strands-agents-sdk-a2a-server-data-1fc672",
+    "title": "CVE-2026-115419: Strands Agents SDK A2A Server Data Disclosure",
+    "summary": "CVE-2026-115419 exposes the Strands Agents SDK A2A server to unintended data disclosure, allowing an authenticated remote user to access another caller’s conversation history in multi‑tenant deployments. The flaw stems from improper isolation of conversation state between callers, enabling unauthorized influence of model behavior. A patch is available for all affected Python and TypeScript SDK versions; administrators should update immediately to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-146-aws/",
+    "publishedAt": "2026-10-22T20:07:11.000Z",
+    "cves": [
+      "CVE-2026-115419"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-115419-strands-agents-sdk-a2a-server-data",
+      "article-1fc672",
+      "1fc672",
+      "cve-2026-115419-strands-agents-sdk-a2a-server-data-disclosur"
+    ]
+  },
+  {
     "slug": "zlib-heap-buffer-overflow-vulnerability-in-non-blo-7fbd6b",
     "title": "zlib Heap Buffer Overflow Vulnerability in Non-Blocking Write Operations",
     "summary": "A zlib heap buffer overflow flaw in non-blocking write operations could allow attackers to trigger denial of service or arbitrary code execution. The vulnerability arises from incorrect handling of write buffers, potentially enabling arbitrary code execution; no CVE is cited, and exploitation remains theoretical with no public PoC reported. Ubuntu has released patch USN-8954-1; users should update zlib to mitigate the risk.",
@@ -1574,6 +1702,24 @@ export const news: NewsBrief[] = [
       "article-a602c6",
       "a602c6",
       "cisco-snort-3-releases-hardening-fix-for-cve-2026-20043-out-"
+    ]
+  },
+  {
+    "slug": "cisco-snort-3-detection-engine-denial-of-service-v-2f6531",
+    "title": "Cisco Snort 3 Detection Engine Denial of Service Vulnerabilities",
+    "summary": "Multiple Cisco products contain vulnerabilities in the Snort 3 Detection Engine that permit an unauthenticated remote attacker to trigger a restart, causing a denial of service. The root cause is a flaw in the engine’s handling of malformed detection rules, leading to an unhandled exception and crash. Cisco has released software updates addressing these issues; users must apply the latest patches to restore service availability.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Cisco PSIRT",
+    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-misc-dos-6mB22qAK?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Denial+of+Service+Vulnerabilities%26vs_k%3D1",
+    "publishedAt": "2026-10-22T19:03:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisco-snort-3-detection-engine-denial-of-service-v",
+      "article-2f6531",
+      "2f6531",
+      "cisco-snort-3-detection-engine-denial-of-service-vulnerabili"
     ]
   },
   {
@@ -1787,6 +1933,46 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cve-2026-108456-azure-ai-foundry-elevation-of-priv-1ff72f",
+    "title": "CVE-2026-108456 Azure AI Foundry Elevation of Privilege Vulnerability",
+    "summary": "CVE-2026-108456 reveals a server‑side request forgery flaw in Azure AI Foundry that lets an authenticated attacker elevate privileges across the network. The flaw stems from inadequate validation of outbound requests, enabling privilege escalation without extra credentials and is actively exploitable. Microsoft issued a patch correcting the validation logic; apply the update immediately and disabling external request endpoints as temporary measure.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108456",
+    "publishedAt": "2026-10-22T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-108456"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-108456-azure-ai-foundry-elevation-of-priv",
+      "article-1ff72f",
+      "1ff72f",
+      "cve-2026-108456-azure-ai-foundry-elevation-of-privilege-vuln"
+    ]
+  },
+  {
+    "slug": "cve-2026-97785-aad-app-proxy-elevation-of-privileg-7430f9",
+    "title": "CVE-2026-97785: AAD App Proxy Elevation of Privilege Vulnerability",
+    "summary": "An improper authentication flaw in Microsoft Azure Active Directory App Proxy permits an unauthorized attacker to elevate privileges across the network. The vulnerability allows bypassing standard access controls, enabling attackers to gain higher-level permissions without valid credentials. Microsoft has released a patch; administrators should apply the update immediately to mitigate exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97785",
+    "publishedAt": "2026-10-22T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-97785"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-97785-aad-app-proxy-elevation-of-privileg",
+      "article-7430f9",
+      "7430f9",
+      "cve-2026-97785-aad-app-proxy-elevation-of-privilege-vulnerab"
+    ]
+  },
+  {
     "slug": "cve-2026-105014-azure-pipelines-remote-code-execut-1ff89c",
     "title": "CVE-2026-105014 Azure Pipelines Remote Code Execution Vulnerability",
     "summary": "Improper neutralization of special elements used in a command in Azure Pipelines allows an unauthorized attacker to execute code over a network. The flaw enables command injection without authentication, exposing enterprise pipelines to remote code execution. Microsoft has released a patch; users should apply the update immediately to mitigate the vulnerability.",
@@ -1926,6 +2112,26 @@ export const news: NewsBrief[] = [
       "article-44a04b",
       "44a04b",
       "ringrtc-call-hang-up-vulnerability-exploited-by-malicious-ca"
+    ]
+  },
+  {
+    "slug": "cve-2026-91990-tornado-http-request-handling-vulne-7fbd73",
+    "title": "CVE-2026-91990: Tornado HTTP Request Handling Vulnerability",
+    "summary": "Tornado’s failure to properly process certain HTTP requests and network inputs can lead to denial of service, information exposure, or access control bypass. The flaw, identified as CVE-2026-91990, is exploitable via crafted requests and has a public proof‑of‑concept. Ubuntu recommends installing the latest security update to address the issue.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8952-1",
+    "publishedAt": "2026-10-22T12:07:23.000Z",
+    "cves": [
+      "CVE-2026-91990"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-91990-tornado-http-request-handling-vulne",
+      "article-7fbd73",
+      "7fbd73",
+      "cve-2026-91990-tornado-http-request-handling-vulnerability"
     ]
   },
   {
@@ -6366,230 +6572,6 @@ export const news: NewsBrief[] = [
       "cloudflare-optimizes-data-pipeline-hardware-usage",
       "article-1f69a0",
       "1f69a0"
-    ]
-  },
-  {
-    "slug": "danfoss-refrigeration-hack-exposes-4-980-internet-37d97b",
-    "title": "Danfoss Refrigeration Hack Exposes 4,980 Internet-Facing Hosts",
-    "summary": "A cyberattack on Danfoss refrigeration systems has left 4,980 hosts exposed to the internet, with 2,911 in France and 517 in South Africa. The exposure was identified via a Shodan search, indicating potential vulnerability in Danfoss web pages that could be exploited by attackers.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/danfoss-refrigeration-hack-exposed-hosts/",
-    "publishedAt": "2026-10-13T15:49:00.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/refrigeration-controller-hack-spoils-food-across-european-supermarkets/"
-      }
-    ],
-    "aliases": [
-      "danfoss-refrigeration-hack-exposes-4-980-internet",
-      "article-37d97b",
-      "37d97b",
-      "danfoss-refrigeration-hack-exposes-4-980-internet-facing-hos"
-    ]
-  },
-  {
-    "slug": "litellm-v1-77-7-exposes-high-impact-vulnerabilitie-691179",
-    "title": "LiteLLM v1.77.7 Exposes High-Impact Vulnerabilities CVE-2026-35029 and CVE-2026-59823",
-    "summary": "Security assessment of LiteLLM v1.77.7 revealed missing authorization on /config/update, allowing any authenticated user to modify configuration. Two high-impact vulnerabilities, CVE-2026-35029 and CVE-2026-59823, were fixed in v1.83.9. Users should upgrade to the latest version to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Check Point Research",
-    "sourceUrl": "https://research.checkpoint.com/2026/when-llm-gateways-go-wrong-findings-from-litellm/",
-    "publishedAt": "2026-10-13T14:30:26.000Z",
-    "cves": [
-      "CVE-2026-35029",
-      "CVE-2026-59823"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "litellm-v1-77-7-exposes-high-impact-vulnerabilitie",
-      "article-691179",
-      "691179",
-      "litellm-v1-77-7-exposes-high-impact-vulnerabilities-cve-2026"
-    ]
-  },
-  {
-    "slug": "attackers-exploit-mfa-gaps-to-access-vpns-and-wind-744701",
-    "title": "Attackers Exploit MFA Gaps to Access VPNs and Windows Systems",
-    "summary": "Attackers continue to exploit gaps in multi‑factor authentication, using stolen credentials to reach VPNs, RDP, and Windows systems that rely only on passwords. Specops highlights why cloud application protection is insufficient and offers steps to close these authentication gaps.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/the-mfa-gaps-attackers-are-still-exploiting/",
-    "publishedAt": "2026-10-13T14:01:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "attackers-exploit-mfa-gaps-to-access-vpns-and-wind",
-      "article-744701",
-      "744701",
-      "attackers-exploit-mfa-gaps-to-access-vpns-and-windows-system"
-    ]
-  },
-  {
-    "slug": "g2a-com-sees-35-rise-in-antivirus-and-security-sof-48c940",
-    "title": "G2A.COM Sees 35% Rise in Antivirus and Security Software Orders",
-    "summary": "G2A.COM reports a 35% year‑on‑year increase in antivirus and security software orders, now accounting for 43% of all cybersecurity purchases on the marketplace. The digital marketplace serves over 35 million users across 180 countries, indicating growing demand for security solutions.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/g2a-com-reports-35-growth-in-security-software-orders-outpacing-vpn-growth/",
-    "publishedAt": "2026-10-13T13:56:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "g2a-com-sees-35-rise-in-antivirus-and-security-sof",
-      "article-48c940",
-      "48c940",
-      "g2a-com-sees-35-rise-in-antivirus-and-security-software-orde"
-    ]
-  },
-  {
-    "slug": "trellix-announces-trellix-wise-for-private-cloud-a-607d40",
-    "title": "Trellix Announces Trellix Wise for Private Cloud AI Core",
-    "summary": "Trellix launched Trellix Wise for Private Cloud, an on-premises federated AI core that extends security fabric across existing infrastructure. It aims to improve threat detection and response while preserving data sovereignty and governance, offering auditable AI investigations for security teams.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/13/trellix-wise-for-private-cloud-delivers-auditable-ai-investigations-for-security-teams/",
-    "publishedAt": "2026-10-13T13:35:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "trellix-announces-trellix-wise-for-private-cloud-a",
-      "article-607d40",
-      "607d40",
-      "trellix-announces-trellix-wise-for-private-cloud-ai-core"
-    ]
-  },
-  {
-    "slug": "ledger-reports-hardware-implant-in-crypto-wallets-39e445",
-    "title": "Ledger Reports Hardware Implant in Crypto Wallets Stole Recovery Phrases",
-    "summary": "Ledger disclosed that cryptocurrency wallets sold through a Southeast Asian reseller contained a hardware implant that allowed attackers to extract recovery phrases and drain funds. The flaw compromised wallet security and exposed users to theft.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/ledger-cryptocurrency-wallet-implant-theft",
-    "publishedAt": "2026-10-13T13:18:00.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/86-million-crypto-heist-linked-to-ledger-signer-hardware-implant/"
-      }
-    ],
-    "aliases": [
-      "ledger-reports-hardware-implant-in-crypto-wallets",
-      "article-39e445",
-      "39e445",
-      "ledger-reports-hardware-implant-in-crypto-wallets-stole-reco"
-    ]
-  },
-  {
-    "slug": "ukrainian-drones-strike-yandex-data-centers-6b6493",
-    "title": "Ukrainian Drones Strike Yandex Data Centers",
-    "summary": "Ukrainian drones struck three Yandex data centers, shutting down facilities in Sasovo, Vladimir, and partially in Kaluga. Yandex Cloud entered emergency mode on Oct 11, advising customers to activate disaster recovery plans. The attack disrupted services but did not expose data, highlighting the vulnerability of cloud infrastructure to physical threats.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/13/ukraine-drone-strikes-yandex-data-centers/",
-    "publishedAt": "2026-10-13T13:15:05.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/yandex-data-center-service-outage/"
-      }
-    ],
-    "aliases": [
-      "ukrainian-drones-strike-yandex-data-centers",
-      "article-6b6493",
-      "6b6493"
-    ]
-  },
-  {
-    "slug": "lattice-sentry-5-0-adds-quantum-resistant-firmware-1d3bc5",
-    "title": "Lattice Sentry 5.0 Adds Quantum‑Resistant Firmware Security",
-    "summary": "Lattice Semiconductor released Lattice Sentry 5.0, adding post‑quantum cryptography to its firmware resilience and attestation stack. The update delivers CNSA 2.0‑aligned, NIST‑compliant protection for AI data centers and critical infrastructure, enabling designers to deploy quantum‑resistant security in production firmware environments. This enhancement also includes automated integrity checks and secure boot features, ensuring firmware cannot be tampered with during supply chain attacks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/13/lattice-sentry-5-0-solution-stack/",
-    "publishedAt": "2026-10-13T13:04:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "lattice-sentry-5-0-adds-quantum-resistant-firmware",
-      "article-1d3bc5",
-      "1d3bc5",
-      "lattice-sentry-5-0-adds-quantum-resistant-firmware-security"
-    ]
-  },
-  {
-    "slug": "cyber-incident-affects-ahold-delhaize-stores-in-us-21b8df",
-    "title": "Cyber Incident Affects Ahold Delhaize Stores in US, Netherlands, Belgium",
-    "summary": "Ahold Delhaize reported a cybersecurity incident that impacted its stores in the United States, the Netherlands, and Belgium. The company is taking precautionary measures while investigating the breach. No details on data exfiltration or affected systems have been disclosed, and no user data loss has been confirmed.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/cyberattack-groceru-ahold-delhaize",
-    "publishedAt": "2026-10-13T12:00:00.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/cyberattack-prompts-ahold-delhaize-to-disconnect-systems/"
-      },
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/ahold-delhaize-cyberattack/"
-      }
-    ],
-    "aliases": [
-      "cyber-incident-affects-ahold-delhaize-stores-in-us",
-      "article-21b8df",
-      "21b8df",
-      "cyber-incident-affects-ahold-delhaize-stores-in-us-netherlan"
-    ]
-  },
-  {
-    "slug": "lg-smart-tvs-vulnerable-to-local-network-root-take-1339fd",
-    "title": "LG Smart TVs Vulnerable to Local Network Root Takeover",
-    "summary": "Three chained vulnerabilities in LG webOS let an attacker on the same local network gain root access to certain smart TVs without a PIN or user interaction. The flaw affects models 32LQ636BPSA and 27TQ600SW running webOS 7.5.7-25. LG has released a firmware patch to mitigate the issue.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/lg-smart-tvs-vulnerable-to-pre-auth.html",
-    "publishedAt": "2026-10-13T11:09:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "lg-smart-tvs-vulnerable-to-local-network-root-take",
-      "article-1339fd",
-      "1339fd",
-      "lg-smart-tvs-vulnerable-to-local-network-root-takeover"
-    ]
-  },
-  {
-    "slug": "bitdefender-ai-visibility-and-control-product-walk-7fea58",
-    "title": "Bitdefender AI Visibility and Control Product Walkthrough",
-    "summary": "The article demonstrates how Bitdefender’s AI Visibility and Control tool allows users to run local model runtimes without installing additional software, keeping data on the machine. It shows how developers can add coding assistant extensions that do not appear in installed programs, emphasizing privacy and local processing.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/product-walkthrough-bitdefender-ai.html",
-    "publishedAt": "2026-10-13T10:30:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "bitdefender-ai-visibility-and-control-product-walk",
-      "article-7fea58",
-      "7fea58",
-      "bitdefender-ai-visibility-and-control-product-walkthrough"
     ]
   }
 ];

@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Oct 2026 05:25:36 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 11:46:32 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Mave SecOps Startup Raises $34 Million</title>
+      <link>https://secubuzz.com/news/mave-secops-startup-raises-34-million-354403</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/mave-secops-startup-raises-34-million-354403</guid>
+      <description><![CDATA[Mave, a Tel Aviv‑based startup founded by former Unit 8200 officers, raises $34 million to develop agentic SecOps solutions. The company leverages AI agents to autonomously investigate alerts across existing security stacks, aiming to reduce analyst workload. No public vulnerability or breach is reported; the announcement focuses on funding and product roadmap.]]></description>
+      <pubDate>Sun, 25 Oct 2026 11:00:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/former-unit-8200-officers-raise-34-million-for-agentic-secops-startup-mave/">SecurityWeek</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Palo Alto GlobalProtect VPN Exploited Flaw CVE‑2026‑109618</title>
+      <link>https://secubuzz.com/news/palo-alto-globalprotect-vpn-exploited-flaw-cve-202-7b67d6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/palo-alto-globalprotect-vpn-exploited-flaw-cve-202-7b67d6</guid>
+      <description><![CDATA[Palo Alto Networks’ GlobalProtect VPN suffered an exploited flaw that allows attackers to bypass authentication and gain remote access. The vulnerability, identified as CVE‑2026‑109618, carries a CVSS v4.0 score of 9.2, and a public PoC demonstrates its exploitability. Palo Alto released a patch in the upcoming security update; administrators should apply the fix immediately and verify VPN configuration.]]></description>
+      <pubDate>Sun, 25 Oct 2026 09:00:56 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/25/week-in-review-php-vulnerabilities-patched-exploited-palo-alto-globalprotect-vpn-flaw/">Help Net Security</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Microsoft Teams AI Phishing Detection Feature</title>
+      <link>https://secubuzz.com/news/microsoft-teams-ai-phishing-detection-feature-7c0011</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-teams-ai-phishing-detection-feature-7c0011</guid>
+      <description><![CDATA[Microsoft announced that Microsoft Teams will incorporate AI to detect phishing within team conversations, analyzing context to identify scams that may lack malicious links or attachments. The feature focuses on first exchanges with external contacts, where attackers impersonate support staff and request sensitive data. Microsoft will release the capability in upcoming updates, enabling teams to activate AI detection.]]></description>
+      <pubDate>Sun, 25 Oct 2026 06:55:23 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/microsoft-teams-ai-detection/">Cyber Security News</source>
+      <category>General</category>
+    </item>
     <item>
       <title>BlackX UEFI Bootkit Exploits Baton Drop to Bypass Secure Boot</title>
       <link>https://secubuzz.com/news/blackx-uefi-bootkit-exploits-baton-drop-to-bypass-159657</link>
@@ -314,6 +341,15 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>Red Hat Releases PHP Security Update for RHEL 9.4 SAP</title>
+      <link>https://secubuzz.com/news/red-hat-releases-php-security-update-for-rhel-9-4-37e4f5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-php-security-update-for-rhel-9-4-37e4f5</guid>
+      <description><![CDATA[Red Hat issued a PHP security update for Enterprise Linux 9.4 SAP Solutions, addressing multiple vulnerabilities with an Important impact rating. The update mitigates code execution risks by patching identified flaws referenced in CVE links. Users should apply the update immediately to maintain system integrity and prevent exploitation.]]></description>
+      <pubDate>Fri, 23 Oct 2026 15:23:07 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:88725">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>WhatsApp May Stop Working Without Registered SIM Under New Rules</title>
       <link>https://secubuzz.com/news/whatsapp-may-stop-working-without-registered-sim-u-25a338</link>
       <guid isPermaLink="true">https://secubuzz.com/news/whatsapp-may-stop-working-without-registered-sim-u-25a338</guid>
@@ -321,6 +357,15 @@
       <pubDate>Fri, 23 Oct 2026 15:20:07 GMT</pubDate>
       <source url="https://cybersecuritynews.com/whatsapp-stop-working-without-registered-sim/">Cyber Security News</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Critical Okta Access Gateway Flaw Lets Attackers With Admin Access Execute System Commands</title>
+      <link>https://secubuzz.com/news/critical-okta-access-gateway-flaw-lets-attackers-w-302b8e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/critical-okta-access-gateway-flaw-lets-attackers-w-302b8e</guid>
+      <description><![CDATA[A critical flaw in Okta Access Gateway lets authenticated administrators run arbitrary system commands via the Admin Console, enabling remote code execution. CVE-2026-115547 arises from weak input validation and has a CVSS v3.1 score of 9.1, indicating high exploitability. Okta released a patch for versions before 2026.10.2; apply it immediately to disable command execution.]]></description>
+      <pubDate>Fri, 23 Oct 2026 15:19:23 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/okta-access-gateway-flaw/">Cyber Security News</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>HPE Aruba Networking Flaws Enable Full Device Takeover</title>
@@ -411,51 +456,6 @@
       <pubDate>Fri, 23 Oct 2026 13:40:19 GMT</pubDate>
       <source url="https://cybersecuritynews.com/stealc-malware/">Cyber Security News</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Cyber Insurers Shift from Risk Transfer to Active Cyber Defense</title>
-      <link>https://secubuzz.com/news/cyber-insurers-shift-from-risk-transfer-to-active-717256</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cyber-insurers-shift-from-risk-transfer-to-active-717256</guid>
-      <description><![CDATA[Cyber insurers now face direct cybersecurity responsibilities as AI, social engineering, and cloud risks grow, shifting focus from pure risk transfer to active threat mitigation. This trend forces carriers to expand underwriting models, integrate technical assessments, and deploy defensive controls, while maintaining traditional actuarial pricing. Insurers are investing in cyber expertise, threat intelligence, and incident response to meet regulatory expectations.]]></description>
-      <pubDate>Fri, 23 Oct 2026 13:30:00 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyber-risk/cyber-insurances-underwriting-isnt-enough">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>UK Proposes 14‑Year Prison Terms for Undersea Cable Sabotage</title>
-      <link>https://secubuzz.com/news/uk-proposes-14-year-prison-terms-for-undersea-cabl-216515</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/uk-proposes-14-year-prison-terms-for-undersea-cabl-216515</guid>
-      <description><![CDATA[The United Kingdom is proposing amendments to the Submarine Telegraph Act 1885 to increase penalties for deliberate undersea cable sabotage. The revised law would raise the maximum fine to £1,000 and extend imprisonment to fourteen years, replacing the current five‑year limit. The proposal reflects growing concerns over hybrid threats targeting critical infrastructure and aims to deter future sabotage incidents.]]></description>
-      <pubDate>Fri, 23 Oct 2026 13:26:00 GMT</pubDate>
-      <source url="https://therecord.media/uk-undersea-cables-sabotage-new-sentencing-guidelines">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Capcom Warns of Phishing After 11.7 Million Records Exposed</title>
-      <link>https://secubuzz.com/news/capcom-warns-of-phishing-after-11-7-million-record-905773</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/capcom-warns-of-phishing-after-11-7-million-record-905773</guid>
-      <description><![CDATA[Capcom disclosed that 11.7 million user records, including email addresses, were exposed, potentially enabling targeted phishing attacks against CAPCOM ID holders. The breach also involved unauthorized password changes on 196 accounts, indicating credential manipulation that could facilitate credential stuffing or account takeover. Capcom urges users to reset passwords immediately, enable two‑factor authentication, and is investigating the leak source.]]></description>
-      <pubDate>Fri, 23 Oct 2026 13:07:52 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/data-breaches/2026/10/resident-evil-maker-capcom-warns-of-phishing-after-11-7-million-records-exposed">Malwarebytes Labs</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Infostealer Targets AI Development Tools for Credential Theft</title>
-      <link>https://secubuzz.com/news/infostealer-targets-ai-development-tools-for-crede-5671d3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/infostealer-targets-ai-development-tools-for-crede-5671d3</guid>
-      <description><![CDATA[A new infostealer malware targets AI development tools, harvesting browser passwords, session cookies, and cryptocurrency wallets. The threat collects credentials for Claude, ChatGPT Desktop, Codex, Cursor, Windsurf, GitHub Copilot, and local development files, expanding its scope beyond traditional credential theft. Security teams should block known download URLs, enforce least‑privilege access, and monitor anomalous credential exfiltration to mitigate this evolving threat.]]></description>
-      <pubDate>Fri, 23 Oct 2026 13:00:09 GMT</pubDate>
-      <source url="https://research.checkpoint.com/2026/infostealer-riding-the-ai-train/">Check Point Research</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>HPE Releases Patches for Eight High‑Severity ArubaOS RCE and Auth Bypass Flaws</title>
-      <link>https://secubuzz.com/news/hpe-releases-patches-for-eight-high-severity-aruba-156206</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hpe-releases-patches-for-eight-high-severity-aruba-156206</guid>
-      <description><![CDATA[Hewlett Packard Enterprise disclosed eight high‑severity ArubaOS flaws enabling authentication bypass and remote code execution via the Aruba Operating System. The vulnerabilities stem from improper input validation in privileged configuration interfaces, allowing attackers to inject malicious commands and gain full administrative control. HPE released patches for all affected versions; security teams should apply the updates immediately and verify configuration integrity.]]></description>
-      <pubDate>Fri, 23 Oct 2026 12:48:00 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/">BleepingComputer</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
