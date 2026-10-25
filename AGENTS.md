@@ -314,5 +314,23 @@
   4. **Web "SOC Wallboard / Terminal Kiosk Mode" (`/kiosk` or `/terminal`)**:
      - Auto-refreshing, distraction-free wallboard for SOC analysts' 2nd monitors inspired by SecurityScroll.
 
+## 15. Active Session State & Next Conversation Reminders (Permanent Memory)
+- **Mandatory Next-Conversation Reminder Protocol**:
+  - *When the user opens chat next time, immediately greet and remind them about*:
+    1. **CVE Watchlist Implementation (v1.0.4 / Version Code 10)**:
+       - Ready to build local-first state (`AsyncStorage` on mobile, `localStorage` on web).
+       - Zero-account architecture: Google Play In-App Billing handles "Pro" entitlements anonymously via Google accounts without requiring database auth.
+       - Target release: Later this week (7–10 days post-v1.0.3) for an optimal Google Play update cadence.
+    2. **Parked Discussion: Article Detail Page Deep-Dive Intelligence**:
+       - Revisit what extra value detail pages can provide beyond the 60-word feed brief (interactive EPSS likelihood meter, leak checker/PSIRT links, discovery vector micro-intel).
+- **Recent Production Deployments Record**:
+  - **Website Layout Compacted & Deployed (Oct 25, 2026)**:
+    - Streamlined `/news` and `/advisories` into a sleek 1-line utility header and balanced 2-row toolbar (Search + Category dropdown on Row 1; Threat Severity on left, Feed Source on right of Row 2).
+    - Removed bulky header telemetry. Reclaimed ~70% vertical space; first 2–3 articles now immediately visible above the fold.
+    - Cloudflare Worker Version ID: `496aeea5-cddf-4c43-92bd-89c4731cbd67`.
+- **Live Broadcast Telemetry Record**:
+  - Noon custom community push notification (`COMMUNITY` / `HIGH` linking to Play Store review) has logged **2 verified user opens** so far in Cloudflare D1 on Android v1.0.3 devices.
+
+
 
 
