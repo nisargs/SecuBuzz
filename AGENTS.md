@@ -4,7 +4,7 @@
 - **Status**: The repository visibility was temporarily made **Public** on October 25, 2026, to bridge the remaining 6 days of October after reaching the 2,000 GitHub Actions free runner minutes quota.
 - **Action Required on November 1, 2026**: When the user opens and speaks in chat in November, **IMMEDIATELY PROMPT AND REMIND THE USER** in the response to switch the repository visibility back from **Public** to **Private** in GitHub repository **Settings** → **Danger Zone** → **Change repository visibility** → **Make private**.
 - **Reminder Protocol Invariant**: When the user asks for a reminder, deliver it directly in chat during their next active conversation. Do NOT schedule background timers or cron pings that fire at random off-hours when the user is not actively at their desk.
-- **Runner Quota Invariant**: To permanently prevent ever hitting the 2,000-minute quota again when the repo is Private, the ingestion pipeline runs on an optimized schedule (`cron: "17 */2 * * *"` = every 2 hours, ~360 runs/month = ~540 minutes, consuming only ~27% of the free monthly allowance).
+- **Runner Quota Invariant**: The ingestion pipeline runs hourly (`cron: "17 * * * *"` = 24 runs/day = ~720-1,080 minutes/month, consuming ~36-54% of the 2,000 free monthly allowance). The watchdog workflow is dialed to 6-hour intervals (`cron: "37 */6 * * *"` = 120 minutes/month), keeping total automated consumption safely below 1,200 minutes (leaving an 800+ minute buffer).
 
 ## 1. Expo SDK 57 Standards
 - Read exact versioned docs at https://docs.expo.dev/versions/v57.0.0/ before writing code.

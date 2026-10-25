@@ -1,10 +1,10 @@
 name: SecuBuzz Feed Ingestion
 
 on:
-  # Run automatically every 2 hours (offset to :17 to avoid global top-of-hour runner congestion)
-  # 12 runs/day = ~540 minutes/month, well within GitHub Actions 2,000 free minutes limit
+  # Run automatically every 1 hour (offset to :17 to avoid global top-of-hour runner congestion)
+  # 24 runs/day = ~720-1,080 billable minutes/month, safely within GitHub Actions 2,000 free minutes limit
   schedule:
-    - cron: "17 */2 * * *"
+    - cron: "17 * * * *"
 
   # Allow manual testing from GitHub Actions
   workflow_dispatch:
