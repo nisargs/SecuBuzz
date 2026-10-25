@@ -1,28 +1,34 @@
 import { Ionicons } from '@expo/vector-icons';
-import React from 'react';
+import React, { useState } from 'react';
 import { Linking, Pressable, StyleSheet, Text, View } from 'react-native';
 import Constants from 'expo-constants';
 import { useTheme } from '../context/ThemeContext';
 import { spacing } from '../theme/theme';
 import { haptics } from '../utils/haptics';
 
+import { requestStoreReview } from '../utils/storeReview';
+
 export const FEEDBACK_DISMISSED_KEY = 'secubuzz_feedback_card_dismissed';
 
 interface FeedbackCardProps {
   onDismiss: () => void;
+  onAdvanceToNext?: () => void;
   context?: 'news' | 'advisories';
 }
 
-export function FeedbackCard({ onDismiss, context = 'news' }: FeedbackCardProps) {
+export function FeedbackCard({ onDismiss, onAdvanceToNext, context = 'news' }: FeedbackCardProps) {
   const { colors, accentColor } = useTheme();
+  const [hasRated, setHasRated] = useState(false);
+  const [isDismissed, setIsDismissed] = useState(false);
 
   const handleRate = async () => {
     void haptics.notificationSuccess();
-    const playStoreUrl = 'https://play.google.com/store/apps/details?id=com.secubuzz.app';
-    try {
-      await Linking.openURL(playStoreUrl);
-    } catch (err) {
-      console.warn('SecuBuzz: Could not open Play Store URL:', err);
+    setHasRated(true);
+    await requestStoreReview();
+    if (onAdvanceToNext) {
+      onAdvanceToNext();
+    } else {
+      onDismiss();
     }
   };
 
@@ -56,7 +62,12 @@ export function FeedbackCard({ onDismiss, context = 'news' }: FeedbackCardProps)
 
   const handleDismiss = () => {
     void haptics.selection();
-    onDismiss();
+    setIsDismissed(true);
+    if (onAdvanceToNext) {
+      onAdvanceToNext();
+    } else {
+      onDismiss();
+    }
   };
 
   return (
@@ -65,7 +76,9 @@ export function FeedbackCard({ onDismiss, context = 'news' }: FeedbackCardProps)
       <View style={styles.topRow}>
         <View style={styles.badgeContainer}>
           <View style={[styles.pulseDot, { backgroundColor: accentColor }]} />
-          <Text style={[styles.badgeText, { color: accentColor }]}>COMMUNITY & FEEDBACK</Text>
+          <Text style={[styles.badgeText, { color: accentColor }]}>
+            {hasRated ? 'RATING RECORDED' : isDismissed ? 'DISMISSED' : 'COMMUNITY & FEEDBACK'}
+          </Text>
         </View>
 
         <Pressable
@@ -80,74 +93,154 @@ export function FeedbackCard({ onDismiss, context = 'news' }: FeedbackCardProps)
 
       {/* Main Copy */}
       <Text style={[styles.headline, { color: colors.textPrimary }]}>
-        Finding SecuBuzz helpful?
+        {hasRated
+          ? 'Thank you for your rating!'
+          : isDismissed
+          ? 'Card Dismissed'
+          : 'Finding SecuBuzz helpful?'}
       </Text>
 
       <Text style={[styles.description, { color: colors.textSecondary }]}>
-        SecuBuzz is 100% free, private, and ad-free. If you find our 60-word briefs or zero-day alerts valuable, help us grow with a rating on Google Play or send a quick note to the developer.
+        {hasRated
+          ? 'Your support helps SecuBuzz grow and keeps our 60 word briefs free for everyone.'
+          : isDismissed
+          ? 'SecuBuzz will keep your feed focused purely on intelligence.'
+          : 'SecuBuzz is built for the security community. If our news briefs or advisory tracking save you time, help us grow with a rating or send a quick suggestion.'}
       </Text>
 
       {/* Action Buttons */}
-      <View style={styles.actionColumn}>
-        {/* Rate on Google Play */}
-        <Pressable
-          onPress={handleRate}
-          style={({ pressed }) => [
-            styles.primaryButton,
-            { backgroundColor: accentColor },
-            pressed && { opacity: 0.88, transform: [{ scale: 0.98 }] },
-          ]}
-        >
-          <Ionicons name="star" size={16} color="#0B0F14" style={styles.buttonIcon} />
-          <Text style={styles.primaryButtonText}>Give Us a Rating on Google Play</Text>
-        </Pressable>
-
-        {/* Feature Suggestion */}
-        <Pressable
-          onPress={handleFeedback}
-          style={({ pressed }) => [
-            styles.secondaryButton,
-            { backgroundColor: colors.background, borderColor: colors.border },
-            pressed && { borderColor: accentColor },
-          ]}
-        >
-          <Ionicons name="bulb-outline" size={18} color={colors.textSecondary} style={styles.buttonIcon} />
-          <View style={styles.buttonTextColumn}>
-            <Text style={[styles.secondaryButtonText, { color: colors.textPrimary }]}>
-              Suggest a Feature or Idea
-            </Text>
-            <Text style={[styles.emailTag, { color: colors.textSecondary }]}>feedback@secubuzz.com</Text>
+      {hasRated ? (
+        <View style={styles.actionColumn}>
+          {/* Confirmed Status Box */}
+          <View
+            style={[
+              styles.confirmedBox,
+              { backgroundColor: colors.background, borderColor: colors.border },
+            ]}
+          >
+            <Ionicons name="checkmark-circle" size={20} color={accentColor} style={styles.buttonIcon} />
+            <View style={styles.buttonTextColumn}>
+              <Text style={[styles.confirmedTitle, { color: colors.textPrimary }]}>
+                Rating Acknowledged
+              </Text>
+              <Text style={[styles.confirmedSubtitle, { color: colors.textSecondary }]}>
+                Thank you for supporting independent threat intelligence.
+              </Text>
+            </View>
           </View>
-          <Ionicons name="mail-outline" size={16} color={colors.textSecondary} style={styles.rightIcon} />
-        </Pressable>
 
-        {/* Report a Bug */}
-        <Pressable
-          onPress={handleBug}
-          style={({ pressed }) => [
-            styles.secondaryButton,
-            { backgroundColor: colors.background, borderColor: colors.border },
-            pressed && { borderColor: accentColor },
-          ]}
-        >
-          <Ionicons name="bug-outline" size={18} color={colors.textSecondary} style={styles.buttonIcon} />
-          <View style={styles.buttonTextColumn}>
-            <Text style={[styles.secondaryButtonText, { color: colors.textPrimary }]}>
-              Report an Issue or Bug
+          {/* Continue Reading Button */}
+          <Pressable
+            onPress={handleDismiss}
+            style={({ pressed }) => [
+              styles.primaryButton,
+              { backgroundColor: accentColor },
+              pressed && { opacity: 0.88, transform: [{ scale: 0.98 }] },
+            ]}
+          >
+            <Ionicons name="arrow-down" size={16} color="#0B0F14" style={styles.buttonIcon} />
+            <Text style={styles.primaryButtonText}>Continue Reading</Text>
+          </Pressable>
+
+          {/* Feature Suggestion */}
+          <Pressable
+            onPress={handleFeedback}
+            style={({ pressed }) => [
+              styles.secondaryButton,
+              { backgroundColor: colors.background, borderColor: colors.border },
+              pressed && { borderColor: accentColor },
+            ]}
+          >
+            <Ionicons name="bulb-outline" size={18} color={colors.textSecondary} style={styles.buttonIcon} />
+            <View style={styles.buttonTextColumn}>
+              <Text style={[styles.secondaryButtonText, { color: colors.textPrimary }]}>
+                Suggest a Feature or Idea
+              </Text>
+              <Text style={[styles.emailTag, { color: colors.textSecondary }]}>feedback@secubuzz.com</Text>
+            </View>
+            <Ionicons name="mail-outline" size={16} color={colors.textSecondary} style={styles.rightIcon} />
+          </Pressable>
+        </View>
+      ) : isDismissed ? (
+        <View style={styles.actionColumn}>
+          <Pressable
+            onPress={handleDismiss}
+            style={({ pressed }) => [
+              styles.primaryButton,
+              { backgroundColor: accentColor },
+              pressed && { opacity: 0.88, transform: [{ scale: 0.98 }] },
+            ]}
+          >
+            <Ionicons name="arrow-down" size={16} color="#0B0F14" style={styles.buttonIcon} />
+            <Text style={styles.primaryButtonText}>Continue Reading</Text>
+          </Pressable>
+        </View>
+      ) : (
+        <View style={styles.actionColumn}>
+          {/* Rate on Google Play */}
+          <View style={styles.rateButtonWrapper}>
+            <Pressable
+              onPress={handleRate}
+              style={({ pressed }) => [
+                styles.primaryButton,
+                { backgroundColor: accentColor },
+                pressed && { opacity: 0.88, transform: [{ scale: 0.98 }] },
+              ]}
+            >
+              <Ionicons name="star" size={16} color="#0B0F14" style={styles.buttonIcon} />
+              <Text style={styles.primaryButtonText}>Give Us a Rating on Google Play</Text>
+            </Pressable>
+            <Text style={[styles.rateConvenienceText, { color: colors.textSecondary }]}>
+              Opens directly here. No need to switch apps.
             </Text>
-            <Text style={[styles.emailTag, { color: colors.textSecondary }]}>support@secubuzz.com</Text>
           </View>
-          <Ionicons name="mail-outline" size={16} color={colors.textSecondary} style={styles.rightIcon} />
-        </Pressable>
-      </View>
+
+          {/* Feature Suggestion */}
+          <Pressable
+            onPress={handleFeedback}
+            style={({ pressed }) => [
+              styles.secondaryButton,
+              { backgroundColor: colors.background, borderColor: colors.border },
+              pressed && { borderColor: accentColor },
+            ]}
+          >
+            <Ionicons name="bulb-outline" size={18} color={colors.textSecondary} style={styles.buttonIcon} />
+            <View style={styles.buttonTextColumn}>
+              <Text style={[styles.secondaryButtonText, { color: colors.textPrimary }]}>
+                Suggest a Feature or Idea
+              </Text>
+              <Text style={[styles.emailTag, { color: colors.textSecondary }]}>feedback@secubuzz.com</Text>
+            </View>
+            <Ionicons name="mail-outline" size={16} color={colors.textSecondary} style={styles.rightIcon} />
+          </Pressable>
+
+          {/* Report a Bug */}
+          <Pressable
+            onPress={handleBug}
+            style={({ pressed }) => [
+              styles.secondaryButton,
+              { backgroundColor: colors.background, borderColor: colors.border },
+              pressed && { borderColor: accentColor },
+            ]}
+          >
+            <Ionicons name="bug-outline" size={18} color={colors.textSecondary} style={styles.buttonIcon} />
+            <View style={styles.buttonTextColumn}>
+              <Text style={[styles.secondaryButtonText, { color: colors.textPrimary }]}>
+                Report an Issue or Bug
+              </Text>
+              <Text style={[styles.emailTag, { color: colors.textSecondary }]}>support@secubuzz.com</Text>
+            </View>
+            <Ionicons name="mail-outline" size={16} color={colors.textSecondary} style={styles.rightIcon} />
+          </Pressable>
+        </View>
+      )}
 
       {/* Footer Info & Dismiss */}
       <View style={[styles.footer, { borderTopColor: colors.border }]}>
-        <Text style={[styles.footerText, { color: colors.textSecondary }]}>
-          Zero tracking · Direct developer replies
-        </Text>
         <Pressable onPress={handleDismiss} hitSlop={8}>
-          <Text style={[styles.dismissText, { color: colors.textSecondary }]}>Don't show again</Text>
+          <Text style={[styles.dismissText, { color: colors.textSecondary }]}>
+            {hasRated || isDismissed ? 'Dismiss' : "Don't show again"}
+          </Text>
         </Pressable>
       </View>
     </View>
@@ -203,6 +296,9 @@ const styles = StyleSheet.create({
     gap: 10,
     marginVertical: spacing.md,
   },
+  rateButtonWrapper: {
+    gap: 4,
+  },
   primaryButton: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -215,6 +311,12 @@ const styles = StyleSheet.create({
     color: '#0B0F14',
     fontSize: 14,
     fontWeight: '700',
+  },
+  rateConvenienceText: {
+    fontSize: 11.5,
+    textAlign: 'center',
+    opacity: 0.8,
+    marginTop: 2,
   },
   secondaryButton: {
     flexDirection: 'row',
@@ -246,15 +348,29 @@ const styles = StyleSheet.create({
   footer: {
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between',
+    justifyContent: 'flex-end',
     borderTopWidth: StyleSheet.hairlineWidth,
     paddingTop: spacing.sm,
-  },
-  footerText: {
-    fontSize: 11,
   },
   dismissText: {
     fontSize: 11,
     textDecorationLine: 'underline',
+  },
+  confirmedBox: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingVertical: 12,
+    paddingHorizontal: 14,
+    borderRadius: 10,
+    borderWidth: 1,
+  },
+  confirmedTitle: {
+    fontSize: 13,
+    fontWeight: '700',
+  },
+  confirmedSubtitle: {
+    fontSize: 11.5,
+    marginTop: 2,
+    lineHeight: 16,
   },
 });

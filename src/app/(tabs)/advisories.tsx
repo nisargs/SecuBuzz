@@ -84,6 +84,10 @@ export default function AdvisoriesScreen() {
   const [feedbackDismissed, setFeedbackDismissed] = useState(true);
 
   useEffect(() => {
+    if (__DEV__) {
+      setFeedbackDismissed(false);
+      return;
+    }
     void AsyncStorage.getItem(FEEDBACK_DISMISSED_KEY).then((val) => {
       if (val !== '1') {
         setFeedbackDismissed(false);
@@ -423,6 +427,19 @@ export default function AdvisoriesScreen() {
 
     return items;
   }, [visibleAdvisories, feedbackDismissed]);
+
+  const handleAdvanceFromFeedback = useCallback(() => {
+    if (feedHeight > 0 && feedItems.length > 0) {
+      const nextIndex = Math.min(feedItems.length - 1, currentIndexRef.current + 1);
+      listRef.current?.scrollToOffset({
+        offset: nextIndex * feedHeight,
+        animated: true,
+      });
+      currentIndexRef.current = nextIndex;
+      setCurrentIndex(nextIndex);
+    }
+    void AsyncStorage.setItem(FEEDBACK_DISMISSED_KEY, '1');
+  }, [feedHeight, feedItems.length]);
 
   /*
    * Today's Fresh Zero-Day Horizon:
@@ -879,6 +896,7 @@ export default function AdvisoriesScreen() {
                 {item.type === 'feedback' ? (
                   <FeedbackCard
                     onDismiss={handleDismissFeedback}
+                    onAdvanceToNext={handleAdvanceFromFeedback}
                     context="advisories"
                   />
                 ) : (
@@ -894,6 +912,11 @@ export default function AdvisoriesScreen() {
                 )}
               </View>
             )}
+            getItemLayout={(_, index) => ({
+              length: feedHeight,
+              offset: feedHeight * index,
+              index,
+            })}
             pagingEnabled
             snapToInterval={feedHeight}
             snapToAlignment="start"

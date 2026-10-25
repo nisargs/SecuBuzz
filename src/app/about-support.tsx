@@ -15,6 +15,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { OnboardingModal } from '../components/OnboardingModal';
 import { useTheme } from '../context/ThemeContext';
 import { spacing } from '../theme/theme';
+import { requestStoreReview } from '../utils/storeReview';
 
 type SubItemRowProps = {
   icon: keyof typeof Ionicons.glyphMap;
@@ -146,8 +147,8 @@ export default function AboutSupportScreen() {
           <SubItemRow
             icon="star-outline"
             title="Rate SecuBuzz on Google Play"
-            subtitle="Support development & share your review"
-            onPress={() => void Linking.openURL('https://play.google.com/store/apps/details?id=com.secubuzz.app')}
+            subtitle="Opens directly here. No need to switch apps."
+            onPress={() => void requestStoreReview({ forceStoreFallbackIfPrompted: true })}
             accentColor={accentColor}
             colors={colors}
           />

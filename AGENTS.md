@@ -249,8 +249,8 @@
     - Milestone celebrations (e.g., reaching 100+ active devices or 1,000 readers).
     - Announcing major feature updates (e.g., v1.1.0 "My Stack / Am I Affected?" or Android Home Screen Widgets).
     - Timed rating & feedback outreach (e.g., asking engaged readers for a review after an impactful zero-day news cycle).
-- [ ] **In-App Review Dialog Upgrade (`expo-in-app-review`) (User Reminder / On Hold)**:
-  - **Goal**: Replace external Google Play Store redirect with Google Play's native in-app review bottom sheet so readers can submit 5-star ratings directly within SecuBuzz without app exits.
-  - **Testing Requirement**: User specifically requested to be reminded in a future update to test the in-app review dialog locally on a physical Android device before pushing to production.
+- [x] **In-App Review Dialog Upgrade (`expo-store-review`)**:
+  - **Status**: Implemented with official Expo SDK 57 `expo-store-review` in `src/utils/storeReview.ts`, `FeedbackCard.tsx`, `about-support.tsx`, and milestone tracking in `index.tsx`.
+  - **Local Verification**: Ready for local testing in Expo Go or physical Android device before production OTA release. Fallback to direct Play Store listing preserved.
 - *(Note: AMOLED Black mode `#000000` is already successfully built and deployed in Release v1.0.3 / Version Code 9).*
 
