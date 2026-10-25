@@ -140,29 +140,57 @@ export function News() {
           description: 'Quick, concise 60-word cybersecurity news briefs covering active zero-days, enterprise ransomware campaigns, and security advisories.',
         }}
       />
-      <PageIntro
-        title="News briefs"
-        description="Critical threat intelligence that matters to defenders, summarized in concise 60-word briefs and linked to original reporting."
-      />
+      {/* Compact Utility Header */}
+      <div className="border-b border-line bg-surface/20">
+        <div className="mx-auto max-w-site px-5 py-3 md:px-8 flex items-baseline gap-3">
+          <h1 className="text-xl font-bold tracking-tight text-ink md:text-2xl">
+            News briefs
+          </h1>
+          <p className="hidden sm:inline font-mono text-xs text-subtle">
+            · 60-word verified threat intelligence linked to primary sources
+          </p>
+        </div>
+      </div>
 
       <div className="mx-auto max-w-site px-5 pb-20 md:px-8">
-        <div className="sticky top-16 z-20 -mx-5 flex flex-col gap-3.5 border-b border-line bg-bg/95 px-5 py-4 backdrop-blur md:-mx-8 md:px-8">
-          {/* Search bar & Quick controls */}
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <label className="relative block flex-1 sm:max-w-md">
-              <span className="sr-only">Search briefs</span>
-              <SearchIcon className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-subtle" aria-hidden="true" />
-              <input
-                type="search"
-                value={query}
-                onChange={(e) => {
-                  setQuery(e.target.value);
-                  setPage(1);
-                }}
-                placeholder="Search titles, vendors, or CVE IDs"
-                className="h-9 w-full rounded-md border border-line bg-surface pl-9 pr-3 text-sm text-ink placeholder:text-subtle focus:border-accent focus:outline-none"
-              />
-            </label>
+        {/* Sticky Compact 2-Row Filter Toolbar (Matched to Advisories) */}
+        <div className="sticky top-16 z-20 -mx-5 flex flex-col gap-2.5 border-b border-line bg-bg/95 px-5 py-2.5 backdrop-blur md:-mx-8 md:px-8">
+          {/* Row 1: Search + Category Select + Reset */}
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+            <div className="flex flex-1 flex-wrap items-center gap-2.5">
+              <label className="relative block flex-1 sm:max-w-xs md:w-80">
+                <span className="sr-only">Search briefs</span>
+                <SearchIcon className="pointer-events-none absolute left-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-subtle" aria-hidden="true" />
+                <input
+                  type="search"
+                  value={query}
+                  onChange={(e) => {
+                    setQuery(e.target.value);
+                    setPage(1);
+                  }}
+                  placeholder="Search titles, vendors, or CVE IDs..."
+                  className="h-8 w-full rounded-md border border-line bg-surface pl-8 pr-3 text-xs text-ink placeholder:text-subtle focus:border-accent focus:outline-none"
+                />
+              </label>
+
+              <div className="inline-flex items-center gap-1.5 text-xs text-subtle">
+                <span>Category:</span>
+                <select
+                  value={filter}
+                  onChange={(e) => {
+                    setFilter(e.target.value as Filter);
+                    setPage(1);
+                  }}
+                  className="h-7.5 rounded-md border border-line bg-surface px-2 text-xs text-ink focus:border-accent focus:outline-none cursor-pointer">
+                  <option value="All">All Categories ({categoryCounts.All ?? news.length})</option>
+                  {newsCategories.map((c) => (
+                    <option key={c} value={c}>
+                      {c} ({categoryCounts[c] ?? 0})
+                    </option>
+                  ))}
+                </select>
+              </div>
+            </div>
 
             {(filter !== 'All' || severityFilter !== 'ALL' || sourceFilter !== 'ALL' || query) && (
               <button
@@ -174,137 +202,101 @@ export function News() {
                   setQuery('');
                   setPage(1);
                 }}
-                className="inline-flex items-center gap-1.5 self-start rounded-md border border-line bg-surface px-3 py-1.5 text-xs text-accent hover:border-accent transition-colors duration-150">
-                Reset All Filters
+                className="self-end sm:self-auto rounded border border-line bg-surface px-2.5 py-1 text-xs text-accent hover:border-accent transition-colors">
+                Reset Filters
               </button>
             )}
           </div>
 
-          {/* Section 1: Threat Severity */}
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="text-[11px] font-semibold uppercase tracking-wider text-subtle mr-1">
-              Threat Severity:
-            </span>
-            <button
-              type="button"
-              onClick={() => {
-                setSeverityFilter('ALL');
-                setPage(1);
-              }}
-              className={`rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
-                severityFilter === 'ALL'
-                  ? 'bg-raised font-medium text-accent border border-accent/40'
-                  : 'text-muted hover:text-accent hover:bg-surface border border-line'
-              }`}>
-              All ({severityCounts.ALL})
-            </button>
-            <button
-              type="button"
-              onClick={() => {
-                setSeverityFilter('CRITICAL');
-                setPage(1);
-              }}
-              className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
-                severityFilter === 'CRITICAL'
-                  ? 'bg-critical/10 font-medium text-critical border border-critical/50'
-                  : 'text-muted hover:text-critical hover:bg-surface border border-line'
-              }`}>
-              <span className="h-2 w-2 rounded-full bg-critical" />
-              Critical ({severityCounts.CRITICAL})
-            </button>
-            <button
-              type="button"
-              onClick={() => {
-                setSeverityFilter('HIGH');
-                setPage(1);
-              }}
-              className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
-                severityFilter === 'HIGH'
-                  ? 'bg-amber-500/10 font-medium text-amber-500 border border-amber-500/50'
-                  : 'text-muted hover:text-amber-500 hover:bg-surface border border-line'
-              }`}>
-              <span className="h-2 w-2 rounded-full bg-amber-500" />
-              High ({severityCounts.HIGH})
-            </button>
-            <button
-              type="button"
-              onClick={() => {
-                setSeverityFilter('MEDIUM');
-                setPage(1);
-              }}
-              className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
-                severityFilter === 'MEDIUM'
-                  ? 'bg-[#4CC9F0]/10 font-medium text-[#4CC9F0] border border-[#4CC9F0]/50'
-                  : 'text-muted hover:text-[#4CC9F0] hover:bg-surface border border-line'
-              }`}>
-              <span className="h-2 w-2 rounded-full bg-[#4CC9F0]" />
-              Medium ({severityCounts.MEDIUM})
-            </button>
-            <button
-              type="button"
-              onClick={() => {
-                setSeverityFilter('LOW');
-                setPage(1);
-              }}
-              className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
-                severityFilter === 'LOW'
-                  ? 'bg-slate-400/10 font-medium text-slate-300 border border-slate-400/50'
-                  : 'text-muted hover:text-ink hover:bg-surface border border-line'
-              }`}>
-              <span className="h-2 w-2 rounded-full bg-slate-400" />
-              Low ({severityCounts.LOW})
-            </button>
-          </div>
-
-          {/* Section 2: Category & Topic */}
-          <div className="flex items-center gap-2 overflow-x-auto pb-1">
-            <span className="text-[11px] font-semibold uppercase tracking-wider text-subtle shrink-0 mr-1">
-              Category & Topic:
-            </span>
-            <div role="tablist" aria-label="Filter by category" className="flex gap-1.5">
-              {filters.map((f) => {
-                const label = f === 'All' ? 'All Categories' : f;
-                const count = categoryCounts[f] ?? 0;
-                return (
-                  <button
-                    key={f}
-                    role="tab"
-                    type="button"
-                    aria-selected={filter === f}
-                    onClick={() => {
-                      setFilter(f);
-                      setPage(1);
-                    }}
-                    className={`whitespace-nowrap rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
-                      filter === f
-                        ? 'bg-raised font-medium text-accent border border-accent/40 shadow-sm'
-                        : 'text-muted hover:text-accent hover:bg-surface border border-line'
-                    }`}>
-                    {label} <span className="text-[11px] opacity-75">({count})</span>
-                  </button>
-                );
-              })}
+          {/* Row 2: Threat Severity (Left) + Feed Source (Right) */}
+          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-2">
+            {/* Threat Severity Chips */}
+            <div className="flex items-center gap-1 overflow-x-auto pb-0.5">
+              <button
+                type="button"
+                onClick={() => {
+                  setSeverityFilter('ALL');
+                  setPage(1);
+                }}
+                className={`rounded px-2 py-0.5 text-xs transition-colors ${
+                  severityFilter === 'ALL'
+                    ? 'bg-raised font-medium text-accent border border-accent/40'
+                    : 'text-muted hover:text-accent border border-line'
+                }`}>
+                All ({severityCounts.ALL})
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setSeverityFilter('CRITICAL');
+                  setPage(1);
+                }}
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors ${
+                  severityFilter === 'CRITICAL'
+                    ? 'bg-critical/10 font-medium text-critical border border-critical/50'
+                    : 'text-muted hover:text-critical border border-line'
+                }`}>
+                <span className="h-1.5 w-1.5 rounded-full bg-critical" />
+                Critical ({severityCounts.CRITICAL})
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setSeverityFilter('HIGH');
+                  setPage(1);
+                }}
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors ${
+                  severityFilter === 'HIGH'
+                    ? 'bg-amber-500/10 font-medium text-amber-500 border border-amber-500/50'
+                    : 'text-muted hover:text-amber-500 border border-line'
+                }`}>
+                <span className="h-1.5 w-1.5 rounded-full bg-amber-500" />
+                High ({severityCounts.HIGH})
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setSeverityFilter('MEDIUM');
+                  setPage(1);
+                }}
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors ${
+                  severityFilter === 'MEDIUM'
+                    ? 'bg-[#4CC9F0]/10 font-medium text-[#4CC9F0] border border-[#4CC9F0]/50'
+                    : 'text-muted hover:text-[#4CC9F0] border border-line'
+                }`}>
+                <span className="h-1.5 w-1.5 rounded-full bg-[#4CC9F0]" />
+                Medium ({severityCounts.MEDIUM})
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setSeverityFilter('LOW');
+                  setPage(1);
+                }}
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors ${
+                  severityFilter === 'LOW'
+                    ? 'bg-slate-400/10 font-medium text-slate-300 border border-slate-400/50'
+                    : 'text-muted hover:text-ink border border-line'
+                }`}>
+                <span className="h-1.5 w-1.5 rounded-full bg-slate-400" />
+                Low ({severityCounts.LOW})
+              </button>
             </div>
-          </div>
 
-          {/* Section 3: Feed Source */}
-          <div className="flex items-center gap-2 overflow-x-auto pb-1">
-            <span className="text-[11px] font-semibold uppercase tracking-wider text-subtle shrink-0 mr-1">
-              Feed Source:
-            </span>
-            <div className="flex gap-1.5">
+            {/* Feed Source Segment */}
+            <div className="flex items-center gap-1 overflow-x-auto pb-0.5 shrink-0">
               <button
                 type="button"
                 onClick={() => {
                   setSourceFilter('ALL');
                   setPage(1);
                 }}
-                className={`whitespace-nowrap rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
+                className={`rounded px-2 py-0.5 text-xs transition-colors ${
                   sourceFilter === 'ALL'
-                    ? 'bg-raised font-medium text-accent border border-accent/40 shadow-sm'
-                    : 'text-muted hover:text-accent hover:bg-surface border border-line'
+                    ? 'bg-raised font-medium text-accent border border-accent/40'
+                    : 'text-muted hover:text-accent border border-line'
                 }`}>
-                All Sources <span className="text-[11px] opacity-75">({sourceCounts.ALL})</span>
+                All Sources ({sourceCounts.ALL})
               </button>
               <button
                 type="button"
@@ -312,12 +304,12 @@ export function News() {
                   setSourceFilter('PSIRT');
                   setPage(1);
                 }}
-                className={`whitespace-nowrap rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors ${
                   sourceFilter === 'PSIRT'
-                    ? 'bg-cyan-500/15 font-medium text-cyan-400 border border-cyan-500/50 shadow-sm'
-                    : 'text-muted hover:text-cyan-400 hover:bg-surface border border-line'
+                    ? 'bg-cyan-500/20 font-medium text-cyan-400 border border-cyan-500/50'
+                    : 'text-muted hover:text-cyan-400 border border-line'
                 }`}>
-                Vendor PSIRT <span className="text-[11px] opacity-75">({sourceCounts.PSIRT})</span>
+                Vendor PSIRT ({sourceCounts.PSIRT})
               </button>
               <button
                 type="button"
@@ -325,18 +317,18 @@ export function News() {
                   setSourceFilter('MEDIA');
                   setPage(1);
                 }}
-                className={`whitespace-nowrap rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors ${
                   sourceFilter === 'MEDIA'
-                    ? 'bg-raised font-medium text-accent border border-accent/40 shadow-sm'
-                    : 'text-muted hover:text-accent hover:bg-surface border border-line'
+                    ? 'bg-raised font-medium text-accent border border-accent/40'
+                    : 'text-muted hover:text-accent border border-line'
                 }`}>
-                Media & Research <span className="text-[11px] opacity-75">({sourceCounts.MEDIA})</span>
+                Media & Research ({sourceCounts.MEDIA})
               </button>
             </div>
           </div>
         </div>
 
-        <div className="flex items-center justify-between pt-5 font-mono text-xs text-subtle" aria-live="polite">
+        <div className="flex items-center justify-between py-2 font-mono text-xs text-subtle" aria-live="polite">
           <p>
             {results.length === 0
               ? '0 briefs'

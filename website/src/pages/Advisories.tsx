@@ -137,35 +137,35 @@ export function Advisories() {
           description: 'Track active zero-days, CISA Known Exploited Vulnerabilities (KEV) with federal remediation deadlines, EPSS exploit likelihood scores, and vendor patch actions.',
         }}
       />
-      <PageIntro
-        title="Security Advisories"
-        description="Actionable intelligence on actively exploited zero-days, CISA federal remediation mandates, and critical ecosystem security advisories.">
-        
-        <dl className="mt-8 flex flex-wrap gap-x-10 gap-y-4">
-          <div>
-            <dt className="text-xs text-subtle">Tracked in catalog</dt>
-            <dd className="mt-1 font-mono text-2xl text-ink">{advisories.length.toLocaleString()}</dd>
+      {/* Compact Utility Header */}
+      <div className="border-b border-line bg-surface/20">
+        <div className="mx-auto max-w-site px-5 py-3 md:px-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1.5">
+          <div className="flex items-baseline gap-3">
+            <h1 className="text-xl font-bold tracking-tight text-ink md:text-2xl">
+              Security Advisories
+            </h1>
+            <p className="hidden md:inline font-mono text-xs text-subtle">
+              · Actively exploited zero-days & CISA remediation mandates
+            </p>
           </div>
-          <div>
-            <dt className="text-xs text-subtle">Open CISA deadlines</dt>
-            <dd className="mt-1 font-mono text-2xl text-accent">{openCount.toLocaleString()}</dd>
+          <div className="flex items-center gap-2.5 text-xs font-mono text-subtle">
+            <span>{advisories.length.toLocaleString()} tracked</span>
+            <span>·</span>
+            <span className="text-accent">{openCount.toLocaleString()} open deadlines</span>
+            <span>·</span>
+            <span>{overdueCount.toLocaleString()} past due</span>
           </div>
-          <div>
-            <dt className="text-xs text-subtle">Past due</dt>
-            <dd className="mt-1 font-mono text-2xl text-muted">{overdueCount.toLocaleString()}</dd>
-          </div>
-        </dl>
-
-      </PageIntro>
+        </div>
+      </div>
 
       <div className="mx-auto max-w-site px-5 pb-20 md:px-8">
-        <div className="sticky top-16 z-20 -mx-5 flex flex-col gap-3.5 border-b border-line bg-bg/95 px-5 py-4 backdrop-blur md:-mx-8 md:px-8">
-          {/* Search, Vendor, Due This Week & Sort Controls */}
-          <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
-            <div className="flex flex-1 flex-wrap items-center gap-3">
-              <label className="relative block flex-1 sm:max-w-xs md:w-80">
+        <div className="sticky top-16 z-20 -mx-5 flex flex-col gap-2.5 border-b border-line bg-bg/95 px-5 py-2.5 backdrop-blur md:-mx-8 md:px-8">
+          {/* Row 1: Search, Vendor, Due This Week, Sort & Reset */}
+          <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+            <div className="flex flex-1 flex-wrap items-center gap-2.5">
+              <label className="relative block flex-1 sm:max-w-xs md:w-72">
                 <span className="sr-only">Search advisories</span>
-                <SearchIcon className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-subtle" aria-hidden="true" />
+                <SearchIcon className="pointer-events-none absolute left-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-subtle" aria-hidden="true" />
                 <input
                   type="search"
                   value={query}
@@ -173,11 +173,11 @@ export function Advisories() {
                     setQuery(e.target.value);
                     setPage(1);
                   }}
-                  placeholder="CVE, vendor, product, or keyword"
-                  className="h-9 w-full rounded-md border border-line bg-surface pl-9 pr-3 text-sm text-ink placeholder:text-subtle focus:border-accent focus:outline-none" />
+                  placeholder="CVE, vendor, product, or keyword..."
+                  className="h-8 w-full rounded-md border border-line bg-surface pl-8 pr-3 text-xs text-ink placeholder:text-subtle focus:border-accent focus:outline-none" />
               </label>
 
-              <div className="inline-flex items-center gap-2 text-xs text-subtle">
+              <div className="inline-flex items-center gap-1.5 text-xs text-subtle">
                 <span>Vendor:</span>
                 <VendorSelect
                   value={vendorFilter}
@@ -203,7 +203,7 @@ export function Advisories() {
               </label>
             </div>
 
-            <div className="flex items-center gap-3 self-end sm:self-auto">
+            <div className="flex items-center gap-2.5 self-end sm:self-auto shrink-0">
               <label className="inline-flex items-center gap-1.5 text-xs text-muted">
                 <span>Sort:</span>
                 <select
@@ -212,7 +212,7 @@ export function Advisories() {
                     setSort(e.target.value as SortKey);
                     setPage(1);
                   }}
-                  className="h-8 rounded-md border border-line bg-surface px-2 text-xs text-ink focus:border-accent focus:outline-none">
+                  className="h-7.5 rounded-md border border-line bg-surface px-2 text-xs text-ink focus:border-accent focus:outline-none">
                   <option value="added">Newest added</option>
                   <option value="due">Soonest due</option>
                 </select>
@@ -229,152 +229,148 @@ export function Advisories() {
                     setDueThisWeekOnly(false);
                     setPage(1);
                   }}
-                  className="rounded-md border border-line bg-surface px-2.5 py-1 text-xs text-accent hover:border-accent transition-colors duration-150">
-                  Reset Filters
+                  className="rounded border border-line bg-surface px-2 py-0.5 text-xs text-accent hover:border-accent transition-colors duration-150">
+                  Reset
                 </button>
               )}
             </div>
           </div>
 
-          {/* Section 1: Severity & Impact (Matching Mobile App 1:1) */}
-          <div className="flex flex-wrap items-center gap-2 border-t border-line/60 pt-3">
-            <span className="text-[11px] font-semibold uppercase tracking-wider text-subtle mr-1">
-              Severity & Impact:
-            </span>
-            <button
-              type="button"
-              onClick={() => {
-                setSeverityFilter('ALL');
-                setPage(1);
-              }}
-              className={`rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
-                severityFilter === 'ALL'
-                  ? 'bg-raised font-medium text-accent border border-accent/40'
-                  : 'text-muted hover:text-accent hover:bg-surface border border-line'
-              }`}>
-              All ({severityCounts.all})
-            </button>
-            <button
-              type="button"
-              onClick={() => {
-                setSeverityFilter('CRITICAL');
-                setPage(1);
-              }}
-              className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
-                severityFilter === 'CRITICAL'
-                  ? 'bg-critical/10 font-medium text-critical border border-critical/50'
-                  : 'text-muted hover:text-critical hover:bg-surface border border-line'
-              }`}>
-              <span className="h-2 w-2 rounded-full bg-critical" />
-              Critical ({severityCounts.critical})
-            </button>
-            <button
-              type="button"
-              onClick={() => {
-                setSeverityFilter('HIGH');
-                setPage(1);
-              }}
-              className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
-                severityFilter === 'HIGH'
-                  ? 'bg-amber-500/10 font-medium text-amber-500 border border-amber-500/50'
-                  : 'text-muted hover:text-amber-500 hover:bg-surface border border-line'
-              }`}>
-              <span className="h-2 w-2 rounded-full bg-amber-500" />
-              High ({severityCounts.high})
-            </button>
-            <button
-              type="button"
-              onClick={() => {
-                setSeverityFilter('MEDIUM');
-                setPage(1);
-              }}
-              className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
-                severityFilter === 'MEDIUM'
-                  ? 'bg-[#4CC9F0]/10 font-medium text-[#4CC9F0] border border-[#4CC9F0]/50'
-                  : 'text-muted hover:text-[#4CC9F0] hover:bg-surface border border-line'
-              }`}>
-              <span className="h-2 w-2 rounded-full bg-[#4CC9F0]" />
-              Medium ({severityCounts.medium})
-            </button>
-            <button
-              type="button"
-              onClick={() => {
-                setSeverityFilter('LOW');
-                setPage(1);
-              }}
-              className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
-                severityFilter === 'LOW'
-                  ? 'bg-slate-400/10 font-medium text-slate-300 border border-slate-400/50'
-                  : 'text-muted hover:text-ink hover:bg-surface border border-line'
-              }`}>
-              <span className="h-2 w-2 rounded-full bg-slate-400" />
-              Low ({severityCounts.low})
-            </button>
-            <button
-              type="button"
-              onClick={() => {
-                setSeverityFilter('RANSOMWARE');
-                setPage(1);
-              }}
-              className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
-                severityFilter === 'RANSOMWARE'
-                  ? 'bg-rose-500/15 font-medium text-rose-400 border border-rose-500/60'
-                  : 'text-muted hover:text-rose-400 hover:bg-surface border border-line'
-              }`}>
-              <span className="h-2 w-2 rounded-full bg-rose-400" />
-              Ransomware ({severityCounts.ransomware})
-            </button>
-          </div>
+          {/* Row 2: Severity & Impact (Left) + Advisory Source (Right) */}
+          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-2">
+            {/* Severity & Impact Chips */}
+            <div className="flex items-center gap-1 overflow-x-auto pb-0.5">
+              <button
+                type="button"
+                onClick={() => {
+                  setSeverityFilter('ALL');
+                  setPage(1);
+                }}
+                className={`rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out ${
+                  severityFilter === 'ALL'
+                    ? 'bg-raised font-medium text-accent border border-accent/40'
+                    : 'text-muted hover:text-accent hover:bg-surface border border-line'
+                }`}>
+                All ({severityCounts.all})
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setSeverityFilter('CRITICAL');
+                  setPage(1);
+                }}
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out ${
+                  severityFilter === 'CRITICAL'
+                    ? 'bg-critical/10 font-medium text-critical border border-critical/50'
+                    : 'text-muted hover:text-critical hover:bg-surface border border-line'
+                }`}>
+                <span className="h-1.5 w-1.5 rounded-full bg-critical" />
+                Critical ({severityCounts.critical})
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setSeverityFilter('HIGH');
+                  setPage(1);
+                }}
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out ${
+                  severityFilter === 'HIGH'
+                    ? 'bg-amber-500/10 font-medium text-amber-500 border border-amber-500/50'
+                    : 'text-muted hover:text-amber-500 hover:bg-surface border border-line'
+                }`}>
+                <span className="h-1.5 w-1.5 rounded-full bg-amber-500" />
+                High ({severityCounts.high})
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setSeverityFilter('MEDIUM');
+                  setPage(1);
+                }}
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out ${
+                  severityFilter === 'MEDIUM'
+                    ? 'bg-[#4CC9F0]/10 font-medium text-[#4CC9F0] border border-[#4CC9F0]/50'
+                    : 'text-muted hover:text-[#4CC9F0] hover:bg-surface border border-line'
+                }`}>
+                <span className="h-1.5 w-1.5 rounded-full bg-[#4CC9F0]" />
+                Medium ({severityCounts.medium})
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setSeverityFilter('LOW');
+                  setPage(1);
+                }}
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out ${
+                  severityFilter === 'LOW'
+                    ? 'bg-slate-400/10 font-medium text-slate-300 border border-slate-400/50'
+                    : 'text-muted hover:text-ink hover:bg-surface border border-line'
+                }`}>
+                <span className="h-1.5 w-1.5 rounded-full bg-slate-400" />
+                Low ({severityCounts.low})
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setSeverityFilter('RANSOMWARE');
+                  setPage(1);
+                }}
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out ${
+                  severityFilter === 'RANSOMWARE'
+                    ? 'bg-rose-500/15 font-medium text-rose-400 border border-rose-500/60'
+                    : 'text-muted hover:text-rose-400 hover:bg-surface border border-line'
+                }`}>
+                <span className="h-1.5 w-1.5 rounded-full bg-rose-400" />
+                Ransomware ({severityCounts.ransomware})
+              </button>
+            </div>
 
-          {/* Section 2: Advisory Source (Matching Mobile App 1:1) */}
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="text-[11px] font-semibold uppercase tracking-wider text-subtle mr-1">
-              Advisory Source:
-            </span>
-            <button
-              type="button"
-              onClick={() => {
-                setSourceFilter('ALL');
-                setPage(1);
-              }}
-              className={`rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
-                sourceFilter === 'ALL'
-                  ? 'bg-raised font-medium text-accent border border-accent/40'
-                  : 'text-muted hover:text-accent hover:bg-surface border border-line'
-              }`}>
-              All Sources ({sourceCounts.all})
-            </button>
-            <button
-              type="button"
-              onClick={() => {
-                setSourceFilter('CISA');
-                setPage(1);
-              }}
-              className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
-                sourceFilter === 'CISA'
-                  ? 'bg-raised font-medium text-accent border border-accent/40'
-                  : 'text-muted hover:text-accent hover:bg-surface border border-line'
-              }`}>
-              CISA KEV Zero-Days ({sourceCounts.cisa})
-            </button>
-            <button
-              type="button"
-              onClick={() => {
-                setSourceFilter('GITHUB');
-                setPage(1);
-              }}
-              className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-xs transition-colors duration-150 ease-out ${
-                sourceFilter === 'GITHUB'
-                  ? 'bg-raised font-medium text-accent border border-accent/40'
-                  : 'text-muted hover:text-accent hover:bg-surface border border-line'
-              }`}>
-              GitHub Ecosystem ({sourceCounts.github})
-            </button>
+            {/* Advisory Source Segment */}
+            <div className="flex items-center gap-1 overflow-x-auto pb-0.5 shrink-0">
+              <button
+                type="button"
+                onClick={() => {
+                  setSourceFilter('ALL');
+                  setPage(1);
+                }}
+                className={`rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out ${
+                  sourceFilter === 'ALL'
+                    ? 'bg-raised font-medium text-accent border border-accent/40'
+                    : 'text-muted hover:text-accent hover:bg-surface border border-line'
+                }`}>
+                All Sources ({sourceCounts.all})
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setSourceFilter('CISA');
+                  setPage(1);
+                }}
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out ${
+                  sourceFilter === 'CISA'
+                    ? 'bg-raised font-medium text-accent border border-accent/40'
+                    : 'text-muted hover:text-accent hover:bg-surface border border-line'
+                }`}>
+                CISA KEV Zero-Days ({sourceCounts.cisa})
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setSourceFilter('GITHUB');
+                  setPage(1);
+                }}
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out ${
+                  sourceFilter === 'GITHUB'
+                    ? 'bg-raised font-medium text-accent border border-accent/40'
+                    : 'text-muted hover:text-accent hover:bg-surface border border-line'
+                }`}>
+                GitHub Ecosystem ({sourceCounts.github})
+              </button>
+            </div>
           </div>
-
         </div>
 
-        <div className="my-5 flex items-center justify-between text-xs font-mono text-subtle" aria-live="polite">
+        <div className="py-2 flex items-center justify-between text-xs font-mono text-subtle" aria-live="polite">
           <p>
             {results.length === 0
               ? '0 advisories'
