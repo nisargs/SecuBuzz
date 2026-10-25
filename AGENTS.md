@@ -18,6 +18,7 @@
 - **Mandatory Local Testing First:** Always test UI, layout, scroll, and JavaScript changes locally first using **Fast Refresh** via `npx expo start` on the physical phone's Expo Go or Android Studio Emulator.
 - **Explicit Deployment Approval Gate:** Develop, verify types and logic locally, present the verified changes to the user, and ONLY execute an OTA update or production release when the user explicitly tests, confirms, and instructs to ship.
 - **Save EAS Build Quotas:** NEVER trigger an EAS cloud build for UI, layout, or JavaScript testing. Full builds are ONLY needed for native config, plugins, or permissions.
+- **OTA vs. Native Module Invariant (Zero-Unlinked-Native Mandate):** NEVER introduce, install, or statically import any new native library package in an OTA update (`eas update`) if that package was not compiled into the current production native `.aab` binary installed on user devices. An OTA update can ONLY deliver pure JS/assets. Any optional native features must use `requireOptionalNativeModule` with a safe JS fallback (e.g. `Linking.openURL`), and static imports of new native modules must strictly wait for a full native release build (e.g. v1.1.0+).
 
 ## 3. Threat Severity Classification (Objective Criteria)
 - Grounded strictly in CVSS 3.1/4.0 and CISA KEV framework:
