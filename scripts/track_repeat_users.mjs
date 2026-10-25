@@ -12,8 +12,19 @@ function getOauthToken() {
   return match[1];
 }
 
-async function queryGraphQL(token, query, variables = {}) {
-  const res = await fetch('https://api.cloudflare.com/client/v4/graphql', {
+import { execSync } from 'child_process';
+
+function refreshOauthToken() {
+  try {
+    execSync('npx wrangler whoami', { stdio: 'ignore' });
+    return getOauthToken();
+  } catch {
+    return null;
+  }
+}
+
+async function queryGraphQL(token, query, variables = {}, retry = true) {
+  let res = await fetch('https://api.cloudflare.com/client/v4/graphql', {
     method: 'POST',
     headers: {
       Authorization: `Bearer ${token}`,
@@ -21,12 +32,18 @@ async function queryGraphQL(token, query, variables = {}) {
     },
     body: JSON.stringify({ query, variables })
   });
+  if ((res.status === 401 || res.status === 403) && retry) {
+    const freshToken = refreshOauthToken();
+    if (freshToken) {
+      return queryGraphQL(freshToken, query, variables, false);
+    }
+  }
   return await res.json();
 }
 
-async function queryD1(token, accountTag, databaseId, sql) {
+async function queryD1(token, accountTag, databaseId, sql, retry = true) {
   try {
-    const res = await fetch(`https://api.cloudflare.com/client/v4/accounts/${accountTag}/d1/database/${databaseId}/query`, {
+    let res = await fetch(`https://api.cloudflare.com/client/v4/accounts/${accountTag}/d1/database/${databaseId}/query`, {
       method: 'POST',
       headers: {
         Authorization: `Bearer ${token}`,
@@ -34,6 +51,12 @@ async function queryD1(token, accountTag, databaseId, sql) {
       },
       body: JSON.stringify({ sql })
     });
+    if ((res.status === 401 || res.status === 403) && retry) {
+      const freshToken = refreshOauthToken();
+      if (freshToken) {
+        return queryD1(freshToken, accountTag, databaseId, sql, false);
+      }
+    }
     if (!res.ok) return null;
     const data = await res.json();
     return data.result || null;
