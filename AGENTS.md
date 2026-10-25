@@ -104,7 +104,21 @@
       - Cisco PSIRT: `https://tools.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml` (IOS-XE, ASA, Duo, AnyConnect)
       - Fortinet PSIRT: `https://filestore.fortinet.com/fortinet/rss/psirt.xml` (FortiOS, FortiGate, FortiManager)
       - Ivanti Security Advisories: `https://www.ivanti.com/blog/topics/security-advisory/rss` (Connect Secure, EPMM)
-      - VMware / Broadcom Security Advisories (VMSA)
+      - VMware / Broadcom VMSA (Note: Broadcom killed all public RSS feeds post-acquisition; requires Crawl4AI scraping on OCI VM)
+      - Splunk Security Advisories: `https://advisory.splunk.com/feed.xml` (Enterprise SIEM, Splunk Cloud & apps)
+      - ZDI Published Advisories: `https://www.zerodayinitiative.com/rss/published/` (Raw coordinated 0-day disclosures)
+      - CERT-EU Security Advisories: `https://cert.europa.eu/publications/security-advisories-rss` (EU institutional threat alerts)
+      - GreyNoise Labs: `https://www.greynoise.io/blog/rss.xml` (Mass internet exploit spray & honeypot telemetry)
+      - Google Project Zero: `https://projectzero.google/feed.xml` (Deep root-cause zero-day exploit teardowns)
+    - **Dead / Gated Vendor Feeds (Permanent Invariant - Do NOT write RSS parsers)**:
+      - *VMware / Broadcom*: Broadcom permanently removed all `vmware.com` and `support.broadcom.com` RSS/Atom feeds. Only HTML web page exists.
+      - *F5 Networks*: Retired public `support.f5.com` RSS; replacement (`my.f5.com`) requires authenticated Salesforce session.
+      - *Juniper SIRT*: Retired public support portal RSS and S3 XML fallback.
+      - *Trellix (McAfee/FireEye)*: Feed broken with Cloudflare 522 origin timeout.
+      - *Remediation*: Route through headless browser scraping (`Crawl4AI` on OCI Always Free VM) rather than standard RSS.
+    - **Feed URL Modernization (Slated for v1.1.0 update)**:
+      - Google Security Blog: redirect from legacy Blogger (`security.googleblog.com`) to `https://blog.google/security/rss/`.
+      - SentinelOne: upgrade from general marketing blog to pure research `https://www.sentinelone.com/labs/feed/`.
     - **Tri-Tier In-App Experience**:
       1. *Dedicated 'My Stack' Feed*: Tab filtering 60-word briefs strictly to the user's selected vendor ecosystem.
       2. *'AFFECTS YOUR STACK' Badge*: Visual alert badge highlighting CISA KEV and CVE advisory cards matching user stack.
