@@ -9,12 +9,23 @@ function getOauthToken() {
   return match ? match[1] : null;
 }
 
-async function queryD1(token, accountTag, databaseId, sql) {
+import { execSync } from 'child_process';
+
+async function queryD1(token, accountTag, databaseId, sql, retry = true) {
   const res = await fetch(`https://api.cloudflare.com/client/v4/accounts/${accountTag}/d1/database/${databaseId}/query`, {
     method: 'POST',
     headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
     body: JSON.stringify({ sql })
   });
+  if (res.status === 401 && retry) {
+    try {
+      execSync('npx wrangler whoami', { stdio: 'ignore' });
+      const freshToken = getOauthToken();
+      return queryD1(freshToken, accountTag, databaseId, sql, false);
+    } catch {
+      // ignore
+    }
+  }
   const data = await res.json();
   return data.result;
 }
