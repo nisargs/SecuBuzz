@@ -2,7 +2,8 @@
 
 ## 0. MANDATORY NOVEMBER 1st REMINDER: SWITCH REPO BACK TO PRIVATE
 - **Status**: The repository visibility was temporarily made **Public** on October 25, 2026, to bridge the remaining 6 days of October after reaching the 2,000 GitHub Actions free runner minutes quota.
-- **Action Required on November 1, 2026**: When the monthly billing cycle resets, **IMMEDIATELY PROMPT AND REMIND THE USER** to switch the repository visibility back from **Public** to **Private** in GitHub repository **Settings** → **Danger Zone** → **Change repository visibility** → **Make private**.
+- **Action Required on November 1, 2026**: When the user opens and speaks in chat in November, **IMMEDIATELY PROMPT AND REMIND THE USER** in the response to switch the repository visibility back from **Public** to **Private** in GitHub repository **Settings** → **Danger Zone** → **Change repository visibility** → **Make private**.
+- **Reminder Protocol Invariant**: When the user asks for a reminder, deliver it directly in chat during their next active conversation. Do NOT schedule background timers or cron pings that fire at random off-hours when the user is not actively at their desk.
 - **Runner Quota Invariant**: To permanently prevent ever hitting the 2,000-minute quota again when the repo is Private, the ingestion pipeline runs on an optimized schedule (`cron: "17 */2 * * *"` = every 2 hours, ~360 runs/month = ~540 minutes, consuming only ~27% of the free monthly allowance).
 
 ## 1. Expo SDK 57 Standards
