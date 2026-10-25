@@ -52,7 +52,7 @@ export function Home() {
               <span className="block text-muted">Zero-days within hours of CISA listing them.</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">
-              Secu<span className="text-accent">Buzz</span> condenses the day’s cybersecurity reporting into source-linked briefs and pushes new
+              SecuBuzz condenses the day’s cybersecurity reporting into source-linked briefs and pushes new
               Known Exploited Vulnerabilities to your Android phone, with the remediation deadline attached.
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-5">
