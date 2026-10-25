@@ -2324,5 +2324,17 @@
   "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-misc-dos-6mB22qAK?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Denial+of+Service+Vulnerabilities%26vs_k%3D1",
   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108456",
   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97785",
-  "https://ubuntu.com/security/notices/USN-8952-1"
+  "https://ubuntu.com/security/notices/USN-8952-1",
+  "https://thehackernews.com/2026/10/openai-ai-agents-demonstrate-vm-escapes.html",
+  "https://security.paloaltonetworks.com/CVE-2026-109618",
+  "https://access.redhat.com/errata/RHSA-2026:88720",
+  "https://access.redhat.com/errata/RHSA-2026:88693",
+  "http://chromereleases.googleblog.com/feeds/3870118074972387329/comments/default",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96185",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83938",
+  "https://ubuntu.com/security/notices/USN-8890-2",
+  "https://access.redhat.com/errata/RHSA-2026:88687",
+  "https://access.redhat.com/errata/RHSA-2026:88563",
+  "https://access.redhat.com/errata/RHSA-2026:88668",
+  "https://access.redhat.com/errata/RHSA-2026:88669"
 ]
