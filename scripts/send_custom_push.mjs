@@ -80,15 +80,16 @@ async function main() {
     sound: 'default',
     title,
     body,
-    channelId: 'secubuzz-briefs',
+    channelId: 'secubuzz-news',
     priority: 'high',
     data: {
       type: 'custom_broadcast',
+      articleId: linkUrl,
       articleUrl: linkUrl,
       headline: title,
       summary: body,
       category: 'COMMUNITY',
-      severity: 'MEDIUM'
+      severity: 'HIGH'
     }
   }));
 

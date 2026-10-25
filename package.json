@@ -44,7 +44,8 @@
     "watchdog": "node scripts/watchdog.mjs",
     "verify:feed": "node scripts/verify_feed_freshness.mjs",
     "feed:sync": "node scripts/sync_website_data.mjs && npx wrangler r2 object put secubuzz-feed/feed.json --file ./feed.json --remote",
-    "test:push": "node scripts/test_push_targeting.mjs"
+    "test:push": "node scripts/test_push_targeting.mjs",
+    "track:push": "node scripts/track_broadcast_clicks.mjs"
   },
   "private": true
 }
