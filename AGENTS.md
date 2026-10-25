@@ -286,4 +286,33 @@
 - **Critical Maintenance Invariant**:
   - Avoid idle reclamation: Upgrade account to Pay-As-You-Go while staying within $0.00 Always Free limits, or maintain active cron/Docker jobs so CPU/RAM stays above the 15% 7-day idle deletion threshold.
 
+## 14. Competitive Intelligence, Moat & Strategic Feature Radar
+- **Teardown of Key Competitors**:
+  1. **PocketIntel (`pocketintel.app` / `app.weavehub.pocketintel`)**:
+     - *Overview*: AI-powered cybersecurity news and vulnerability aggregator on iOS and Android.
+     - *Strengths*: Clean mobile interface; vendor & topic filtering; dedicated CVE watchlists; customizable push notifications.
+     - *Fatal Flaws & Monetization Friction*: Aggressive paywall ($29.99/year or $2.99/month) locking search, read history, and vendor filters; forces user email and account creation; unconstrained generic AI summaries prone to AI slop.
+     - *SecuBuzz Moat*: 100% Free with zero paywalls; zero user accounts/zero tracking; strict 60-word technical schema (CVSS, CISA KEV, EPSS); tri-engine AI resilience.
+  2. **SecurityScroll (`app.securityscroll.com`)**:
+     - *Overview*: Web-based cybersecurity feed presented as a retro terminal / HUD.
+     - *Strengths*: Engaging desktop/SOC wallboard aesthetic; auto-scrolling ticker; dense card presentation.
+     - *Fatal Flaws*: Web-only (zero mobile apps); zero push notifications; displays raw RSS snippets without AI summarization, CVSS grounding, or CISA KEV tracking.
+     - *SecuBuzz Moat*: Native mobile app in 177+ countries with hourly CISA KEV/EPSS telemetry and instant zero-day push alerts.
+  3. **ThreatSignalForge (`threatsignalforge.com`)**:
+     - *Overview*: Heavy desktop-focused threat intelligence workbench and IOC analyzer.
+     - *Strengths*: IOC correlation, deep MITRE ATT&CK mapping, and analyst collaboration.
+     - *Fatal Flaws*: Complex, requires user API keys; built for in-depth forensics rather than 60-second mobile triage.
+- **4 High-Impact Strategic Opportunities (Roadmap Items)**:
+  1. **100% Free "My Stack / Am I Affected?" (P0 - v1.1.0)**:
+     - Directly defeats PocketIntel's $29.99/yr paywalled vendor filter.
+     - 100% local-first (`AsyncStorage`), zero accounts, highlights affected CISA KEV advisories.
+  2. **Local-First CVE Watchlist (Zero Accounts)**:
+     - Pin, track, and monitor specific CVEs (e.g. `CVE-2024-38063`) across both Web (`localStorage`) and Mobile (`AsyncStorage`).
+     - Real-time badge indicators when a watched CVE gets updated (CISA KEV addition, EPSS spike, or new news brief).
+  3. **Discovery Vector Micro-Intel & Leak Check Links**:
+     - 1-sentence root cause in briefs + 1-click incident verification links (`[ 🔍 Verify Incident / Leak Checker ↗ ]`).
+  4. **Web "SOC Wallboard / Terminal Kiosk Mode" (`/kiosk` or `/terminal`)**:
+     - Auto-refreshing, distraction-free wallboard for SOC analysts' 2nd monitors inspired by SecurityScroll.
+
+
 
