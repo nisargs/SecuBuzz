@@ -2301,5 +2301,18 @@
   "http://chromereleases.googleblog.com/feeds/4602648838450212475/comments/default",
   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102208",
   "https://ubuntu.com/security/notices/USN-8954-1",
-  "https://ubuntu.com/security/notices/USN-8953-1"
+  "https://ubuntu.com/security/notices/USN-8953-1",
+  "https://www.bleepingcomputer.com/news/security/blackx-uefi-bootkit-exploits-baton-drop-flaw-to-bypass-secure-boot/",
+  "https://thehackernews.com/2026/10/leaked-litellm-master-key-let-attackers.html",
+  "https://cybersecuritynews.com/openai-ai-agents-bypass-security/",
+  "https://access.redhat.com/errata/RHSA-2026:88835",
+  "https://access.redhat.com/errata/RHSA-2026:88834",
+  "https://aws.amazon.com/security/security-bulletins/rss/2026-103-aws/",
+  "https://aws.amazon.com/security/security-bulletins/rss/2026-101-aws/",
+  "https://isc.sans.edu/diary/rss/33448",
+  "http://chromereleases.googleblog.com/feeds/5747302014762024015/comments/default",
+  "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-mime-vulns-bkXjcKkt?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+SMTP+MIME+Denial+of+Service+Vulnerability%26vs_k%3D1",
+  "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-snort3-ybgmhTQe?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Security+Hardening+Release%3A+October+2026%26vs_k%3D1",
+  "https://www.darkreading.com/cyber-risk/cyber-insurance-covering-ai-damage",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105014"
 ]
