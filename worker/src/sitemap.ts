@@ -96,8 +96,9 @@ export function generateSitemapXml(
     .join('\n');
 
   const advisoryEntries = advisories
+    .filter(adv => !!(adv?.cveID || (adv as any)?.cve || (adv as any)?.slug))
     .map(adv => {
-      const slug = adv.cveID.toLowerCase();
+      const slug = (adv.cveID || (adv as any).cve || (adv as any).slug || '').toLowerCase();
       const mod = adv.dateAdded ? adv.dateAdded.slice(0, 10) : today;
       return `  <url>
     <loc>https://secubuzz.com/advisories/${slug}</loc>
@@ -195,7 +196,8 @@ export function injectMetaTags(
       description,
     };
   } else if (pathname.startsWith('/news/')) {
-    const slug = pathname.replace('/news/', '').toLowerCase().replace(/\/+$/, '');
+    const rawSlug = pathname.replace('/news/', '').toLowerCase().replace(/\/+$/, '');
+    const slug = decodeURIComponent(rawSlug).replace(/\.html?$/i, '');
     const article = articles.find(a => {
       const headline = a.headline || a.title || '';
       const articleId = a.id || a.sourceUrl || a.url || headline;
@@ -227,6 +229,32 @@ export function injectMetaTags(
           url: 'https://secubuzz.com',
         },
       };
+    } else {
+      const readableTitle = slug
+        .replace(/-[a-f0-9]{6}$/i, '')
+        .split('-')
+        .filter(Boolean)
+        .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+        .join(' ') || 'Security Brief';
+      title = `${readableTitle} · 60-Word Security Brief · SecuBuzz`;
+      description = `Read verified 60-word cybersecurity intelligence on ${readableTitle}. Fast triage, zero tracking.`;
+      ogType = 'article';
+      jsonLdObj = {
+        '@context': 'https://schema.org',
+        '@type': 'NewsArticle',
+        headline: readableTitle,
+        description: `Read verified 60-word cybersecurity intelligence on ${readableTitle}.`,
+        url: `https://secubuzz.com/news/${slug}`,
+        author: {
+          '@type': 'Organization',
+          name: 'SecuBuzz',
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'SecuBuzz',
+          url: 'https://secubuzz.com',
+        },
+      };
     }
   } else if (pathname === '/advisories') {
     title = 'CISA Known Exploited Vulnerabilities (KEV) Tracker & EPSS Radar · SecuBuzz';
@@ -239,25 +267,54 @@ export function injectMetaTags(
       description,
     };
   } else if (pathname.startsWith('/advisories/')) {
-    const slug = pathname.replace('/advisories/', '').toLowerCase();
-    const adv = advisories.find(a => a.cveID.toLowerCase() === slug || slug.includes(a.cveID.toLowerCase()));
+    const rawSlug = pathname.replace('/advisories/', '').toLowerCase().replace(/\/+$/, '');
+    const slug = decodeURIComponent(rawSlug).replace(/\.html?$/i, '');
+    const adv = advisories.find(a => {
+      const cve = (a?.cveID || (a as any)?.cve || (a as any)?.slug || '').toLowerCase();
+      return cve && (cve === slug || slug.includes(cve) || cve.includes(slug));
+    });
     if (adv) {
-      title = `${adv.cveID}: ${adv.vendorProject} ${adv.product} Exploit Status, Patch & CISA KEV · SecuBuzz`;
+      const cveCode = adv.cveID || (adv as any).cve || (adv as any).slug || slug.toUpperCase();
+      const vendor = adv.vendorProject || (adv as any).vendor || '';
+      const prod = adv.product || '';
+      const vendorProd = [vendor, prod].filter(Boolean).join(' ') || 'Vulnerability';
+      title = `${cveCode}: ${vendorProd} Exploit Status, Patch & CISA KEV · SecuBuzz`;
       const actionText = adv.requiredAction ? ` Action: ${adv.requiredAction}.` : '';
       const dueText = adv.dueDate ? ` Due: ${adv.dueDate}.` : '';
-      const summaryText = adv.shortDescription || adv.vulnerabilityName || '';
-      description = `CISA KEV active zero-day alert for ${adv.cveID} (${adv.vendorProject} ${adv.product}).${actionText}${dueText} ${summaryText}`.trim();
+      const summaryText = adv.shortDescription || adv.vulnerabilityName || (adv as any).description || '';
+      description = `CISA KEV active zero-day alert for ${cveCode} (${vendorProd}).${actionText}${dueText} ${summaryText}`.trim();
       ogType = 'article';
       jsonLdObj = {
         '@context': 'https://schema.org',
         '@type': 'TechArticle',
-        headline: `${adv.cveID} Vulnerability Advisory - ${adv.vendorProject} ${adv.product}`,
-        description: adv.shortDescription || adv.vulnerabilityName,
+        headline: `${cveCode} Vulnerability Advisory - ${vendorProd}`,
+        description: summaryText || `CISA KEV active zero-day alert for ${cveCode}`,
         datePublished: adv.dateAdded,
         url: `https://secubuzz.com/advisories/${slug}`,
         author: {
           '@type': 'Organization',
           name: 'CISA / SecuBuzz',
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'SecuBuzz',
+          url: 'https://secubuzz.com',
+        },
+      };
+    } else {
+      const cveCode = slug.toUpperCase();
+      title = `${cveCode} Vulnerability Advisory, Exploit Status & CISA KEV · SecuBuzz`;
+      description = `Track exploit likelihood, CISA KEV zero-day status, and patch intelligence for ${cveCode} on SecuBuzz.`;
+      ogType = 'article';
+      jsonLdObj = {
+        '@context': 'https://schema.org',
+        '@type': 'TechArticle',
+        headline: `${cveCode} Vulnerability Advisory`,
+        description: `Track exploit likelihood, CISA KEV zero-day status, and patch intelligence for ${cveCode}.`,
+        url: `https://secubuzz.com/advisories/${slug}`,
+        author: {
+          '@type': 'Organization',
+          name: 'SecuBuzz Threat Radar',
         },
         publisher: {
           '@type': 'Organization',

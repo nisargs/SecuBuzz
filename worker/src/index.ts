@@ -372,7 +372,8 @@ function isKnownSpaRoute(pathname: string, articlesList: ArticleItem[], advisori
   if (STATIC_ROUTES.has(clean)) return true;
 
   if (clean.startsWith('/news/')) {
-    const slug = clean.slice('/news/'.length).toLowerCase();
+    const rawSlug = clean.slice('/news/'.length).toLowerCase();
+    const slug = decodeURIComponent(rawSlug).replace(/\.html?$/i, '');
     if (!slug) return false;
     // 1) First check active feed
     const inFeed = articlesList.some(a => {
@@ -387,27 +388,29 @@ function isKnownSpaRoute(pathname: string, articlesList: ArticleItem[], advisori
     });
     if (inFeed) return true;
 
-    // 2) Any valid news slug (alphanumeric with hyphens/underscores, >= 3 chars) is a valid SPA article route
+    // 2) Any valid news slug (alphanumeric with hyphens/underscores/dots, >= 3 chars) is a valid SPA article route
     // This allows Googlebot to index historical/aged-out stories with HTTP 200 instead of receiving a 404
-    return /^[a-z0-9_-]{3,}$/i.test(slug);
+    return /^[a-z0-9_.-]{3,}$/i.test(slug);
   }
 
   if (clean.startsWith('/advisories/')) {
-    const slug = clean.slice('/advisories/'.length).toLowerCase();
+    const rawSlug = clean.slice('/advisories/'.length).toLowerCase();
+    const slug = decodeURIComponent(rawSlug).replace(/\.html?$/i, '');
     if (!slug) return false;
     // 1) Any standard CVE (cve-YYYY-NNNN) or GHSA identifier
-    if (/^(cve-\d{4}-\d+|ghsa-[a-z0-9_-]+)$/i.test(slug)) {
+    if (/^(cve-\d{4}-\d+|ghsa-[a-z0-9_.-]+)$/i.test(slug)) {
       return true;
     }
     // 2) Active KEV catalog match
     if (advisoriesList.some(
-      a => (a.cveID && a.cveID.toLowerCase() === slug) ||
-           (a.cveID && slug.includes(a.cveID.toLowerCase()))
+      a => (a?.cveID && a.cveID.toLowerCase() === slug) ||
+           (a?.cveID && slug.includes(a.cveID.toLowerCase())) ||
+           ((a as any)?.cve && (a as any).cve.toLowerCase() === slug)
     )) {
       return true;
     }
     // 3) Any valid advisory slug (>= 4 chars)
-    return /^[a-z0-9_-]{4,}$/i.test(slug);
+    return /^[a-z0-9_.-]{4,}$/i.test(slug);
   }
 
   return false;
@@ -418,10 +421,10 @@ async function findKevAdvisory(slug: string): Promise<KevVulnerability | undefin
   const target = slug.toLowerCase();
   return (
     cachedAllKev.find(
-      adv => adv.cveID.toLowerCase() === target || target.includes(adv.cveID.toLowerCase())
+      adv => adv?.cveID && (adv.cveID.toLowerCase() === target || target.includes(adv.cveID.toLowerCase()))
     ) ||
     SEED_KEV_ADVISORIES.find(
-      adv => adv.cveID.toLowerCase() === target || target.includes(adv.cveID.toLowerCase())
+      adv => adv?.cveID && (adv.cveID.toLowerCase() === target || target.includes(adv.cveID.toLowerCase()))
     )
   );
 }
@@ -1275,7 +1278,7 @@ export default {
         }
 
         if (assetRes.status === 404) {
-          if (url.pathname.match(/\.[a-zA-Z0-9]+$/)) {
+          if (url.pathname.match(/\.(png|jpe?g|gif|webp|svg|ico|css|js|map|woff2?|ttf|eot|mp4|webm|json|xml|txt)$/i)) {
             return new Response('Not found', {
               status: 404,
               headers: {
@@ -1305,7 +1308,12 @@ export default {
             });
           }
 
-          const enrichedHtml = injectMetaTags(rawHtml, url.pathname, articles, advisories);
+          let enrichedHtml = rawHtml;
+          try {
+            enrichedHtml = injectMetaTags(rawHtml, url.pathname, articles, advisories);
+          } catch (metaErr) {
+            console.error('Failed to inject meta tags for path:', url.pathname, metaErr);
+          }
           const htmlHeaders = new Headers({
             'Content-Type': 'text/html; charset=utf-8',
             'Cache-Control': 'public, max-age=60, s-maxage=300',
