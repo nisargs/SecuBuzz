@@ -1,5 +1,57 @@
 [
   {
+    "id": "https://fortiguard.fortinet.com/psirt/FG-IR-26-187",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-187",
+    "title": "Node.js Brotli Decoder Out-of-Bounds Write Enables Remote Code Execution",
+    "headline": "Node.js Brotli Decoder Out-of-Bounds Write Enables Remote Code Execution",
+    "summary": "A critical out-of-bounds write flaw in Node.js Brotli decoder permits remote code execution on Node.js 26.x, 24.x, and 22.x releases. Identified as CVE-2026-111497, the flaw scores 9.8 CVSSv3, enabling unauthenticated remote exploitation. Apply the latest Node.js security patch or upgrade to a supported version; disabling Brotli compression is a temporary fix.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Fortinet FortiGuard PSIRT",
+    "publishedAt": "2026-10-26T07:00:00.000Z",
+    "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-187",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.wiz.io/blog/cve-2026-111497-brotli-rce-node-js",
+    "sourceUrl": "https://www.wiz.io/blog/cve-2026-111497-brotli-rce-node-js",
+    "title": "Critical Brotli Decoder Vulnerability CVE-2026-111497 Enables Remote Code Execution",
+    "headline": "Critical Brotli Decoder Vulnerability CVE-2026-111497 Enables Remote Code Execution",
+    "summary": "A critical Brotli decoder vulnerability, CVE-2026-111497, permits remote code execution via malformed Brotli streams. The flaw originates from unchecked buffer handling during decompression, yielding a CVSS score of 9.8 and active exploitation potential. A vendor patch is available for all supported browsers; administrators should apply updates immediately and disable Brotli where feasible.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Wiz Research",
+    "publishedAt": "2026-10-25T14:46:53.000Z",
+    "url": "https://www.wiz.io/blog/cve-2026-111497-brotli-rce-node-js",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.crowdstrike.com/en-us/blog/obstacles-to-weaponizing-php2shell-likely-constrain-exploitation/",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/obstacles-to-weaponizing-php2shell-likely-constrain-exploitation/",
+    "title": "PHP2Shell Vulnerability Exploitation Obstacles Limit Immediate Widespread Use",
+    "headline": "PHP2Shell Vulnerability Exploitation Obstacles Limit Immediate Widespread Use",
+    "summary": "A PHP2Shell vulnerability in PHP web applications enables attackers to upload malicious code via file upload endpoints. However, obstacles such as input validation, server configuration, and lack of public exploit code constrain immediate weaponization and widespread exploitation. Security teams should enforce strict upload policies, apply vendor patches, and monitor for anomalous file activity to mitigate potential compromise.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "CrowdStrike",
+    "publishedAt": "2026-10-23T05:00:00.000Z",
+    "url": "https://www.crowdstrike.com/en-us/blog/obstacles-to-weaponizing-php2shell-likely-constrain-exploitation/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.crowdstrike.com/en-us/blog/why-organizations-secure-ai-agents-with-falcon-guardian/",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/why-organizations-secure-ai-agents-with-falcon-guardian/",
+    "title": "Falcon Guardian Enhances AI Agent Security Through Monitoring and Isolation",
+    "headline": "Falcon Guardian Enhances AI Agent Security Through Monitoring and Isolation",
+    "summary": "Falcon Guardian protects AI agents by monitoring and controlling their data access and execution environments. The solution intercepts malicious payloads, enforces policy compliance, and isolates compromised agents to prevent lateral movement. Organizations should integrate Falcon Guardian into their AI workflows, apply the latest policy updates, and conduct regular security reviews to maintain resilience.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "CrowdStrike",
+    "publishedAt": "2026-10-23T05:00:00.000Z",
+    "url": "https://www.crowdstrike.com/en-us/blog/why-organizations-secure-ai-agents-with-falcon-guardian/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/10/26/kali-linux-2026-3-released/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/26/kali-linux-2026-3-released/",
     "title": "Kali Linux 2026.3 Release Adds Kernel 7.1.5 and Wardriving Support for TicWatch Pro 3",
@@ -49,6 +101,19 @@
     "source": "Red Hat Security Advisories",
     "publishedAt": "2026-10-26T12:52:47.000Z",
     "url": "https://access.redhat.com/errata/RHSA-2026:89923",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:89915",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89915",
+    "title": "Red Hat Issues Security Update for rhc Client in Enterprise Linux 9.2 SAP Services",
+    "headline": "Red Hat Issues Security Update for rhc Client in Enterprise Linux 9.2 SAP Services",
+    "summary": "Red Hat released an important security update for the rhc client used in Enterprise Linux 9.2 Update Services for SAP Solutions, addressing vulnerabilities that could allow privilege escalation or code execution. The update contains patches for several CVEs, though specific identifiers are not listed in the advisory. Red Hat recommends applying the rhc update immediately to mitigate the exposed weaknesses.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-10-26T12:22:30.000Z",
+    "url": "https://access.redhat.com/errata/RHSA-2026:89915",
     "additionalSources": []
   },
   {
@@ -114,97 +179,6 @@
     "source": "The Hacker News",
     "publishedAt": "2026-10-26T11:23:56.000Z",
     "url": "https://thehackernews.com/2026/10/between-alerts-what-attackers-do-in.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/",
-    "title": "PHP2Shell RCE Vulnerabilities Exploited in the Wild",
-    "headline": "PHP2Shell RCE Vulnerabilities Exploited in the Wild",
-    "summary": "Two critical RCE vulnerabilities (CVE-2026-109618 and CVE-2026-109619), collectively known as PHP2Shell, have been exploited in the wild against PHP applications via remote code execution. Unauthenticated attackers can run arbitrary code with web‑server privileges, enabling full system compromise. PHP releases a patch; administrators should update to the latest version or apply the vendor’s advisory to mitigate the risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-26T09:19:57.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles",
-    "sourceUrl": "https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles",
-    "title": "Gheist Attempts to Abuse Stolen GitHub Tokens via Secret‑Dumping Workflows",
-    "headline": "Gheist Attempts to Abuse Stolen GitHub Tokens via Secret‑Dumping Workflows",
-    "summary": "Gheist attempts to abuse stolen GitHub tokens by planting secret‑dumping workflows across reachable repositories. The attack exploits GitHub’s workflow permissions model, enabling credential exfiltration without a command‑and‑control server, and has been partially mitigated by recent platform security updates. Security teams should enforce least‑privilege workflow permissions, rotate compromised tokens, and apply GitHub’s security patches to block further Gheist deployments.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Wiz Research",
-    "publishedAt": "2026-10-25T17:55:33.000Z",
-    "url": "https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70197",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70197",
-    "title": "CVE-2026-70197 .NET and Visual Studio Remote Code Execution Vulnerability",
-    "headline": "CVE-2026-70197 .NET and Visual Studio Remote Code Execution Vulnerability",
-    "summary": "A remote code execution vulnerability exists in .NET and Visual Studio, identified as CVE-2026-70197, allowing attackers to execute arbitrary code via crafted input during software updates. The flaw stems from insufficient input validation in the update handling module, exposing systems to potential compromise if unpatched. Microsoft has released a patch in the latest update; administrators should apply it immediately to mitigate risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-10-25T14:00:00.000Z",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70197",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102870",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102870",
-    "title": "CVE-2026-102870 ASP.NET Core Remote Code Execution Vulnerability",
-    "headline": "CVE-2026-102870 ASP.NET Core Remote Code Execution Vulnerability",
-    "summary": "ASP.NET Core contains a remote code execution flaw, CVE-2026-102870, that permits attackers to run arbitrary code through malformed requests processed during runtime. The vulnerability arises from improper sanitization of user-supplied data in the request pipeline, enabling exploitation without authentication. Microsoft has issued a patch; deploying the update is essential to secure affected deployments.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-10-25T14:00:00.000Z",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102870",
-    "additionalSources": []
-  },
-  {
-    "id": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-gtpcodec-dos-Rmecfepz?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Denial+of+Service+Vulnerability%26vs_k%3D1",
-    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-gtpcodec-dos-Rmecfepz?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Denial+of+Service+Vulnerability%26vs_k%3D1",
-    "title": "Cisco Snort 3 Detection Engine Denial of Service Vulnerability",
-    "headline": "Cisco Snort 3 Detection Engine Denial of Service Vulnerability",
-    "summary": "A logic flaw in Cisco’s Snort 3 Detection Engine lets an unauthenticated remote attacker trigger a denial of service by sending crafted GTP extension headers in a fragmented UDP datagram. The flaw causes an infinite loop, halting packet processing and disrupting monitoring. Cisco released updates that fix the issue; security teams should apply the patch or use the available workaround.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "Cisco PSIRT",
-    "publishedAt": "2026-10-22T19:03:26.000Z",
-    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-gtpcodec-dos-Rmecfepz?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Denial+of+Service+Vulnerability%26vs_k%3D1",
-    "additionalSources": []
-  },
-  {
-    "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-145-aws/",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-145-aws/",
-    "title": "CVE‑2026‑115414: OS Command Injection in AWS SAM CLI Terraform Hook",
-    "headline": "CVE‑2026‑115414: OS Command Injection in AWS SAM CLI Terraform Hook",
-    "summary": "An OS command injection flaw (CVE‑2026‑115414) in AWS SAM CLI’s Terraform hook allows an attacker controlling the Terraform configuration to execute arbitrary commands as the build user on the host. The vulnerability arises from unsanitized interpolation of Terraform resource addresses into a generated Makefile recipe, enabling remote code execution. AWS has released a patch for all affected versions (≥1.63.0).",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "AWS Security Bulletins",
-    "publishedAt": "2026-10-22T18:50:58.000Z",
-    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-145-aws/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:89915",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89915",
-    "title": "Red Hat Issues Security Update for rhc Client in Enterprise Linux 9.2 SAP Services",
-    "headline": "Red Hat Issues Security Update for rhc Client in Enterprise Linux 9.2 SAP Services",
-    "summary": "Red Hat released an important security update for the rhc client used in Enterprise Linux 9.2 Update Services for SAP Solutions, addressing vulnerabilities that could allow privilege escalation or code execution. The update contains patches for several CVEs, though specific identifiers are not listed in the advisory. Red Hat recommends applying the rhc update immediately to mitigate the exposed weaknesses.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-10-26T12:22:30.000Z",
-    "url": "https://access.redhat.com/errata/RHSA-2026:89915",
     "additionalSources": []
   },
   {
@@ -283,6 +257,19 @@
     "source": "Red Hat Security Advisories",
     "publishedAt": "2026-10-26T09:41:43.000Z",
     "url": "https://access.redhat.com/errata/RHSA-2026:89850",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/",
+    "title": "PHP2Shell RCE Vulnerabilities Exploited in the Wild",
+    "headline": "PHP2Shell RCE Vulnerabilities Exploited in the Wild",
+    "summary": "Two critical RCE vulnerabilities (CVE-2026-109618 and CVE-2026-109619), collectively known as PHP2Shell, have been exploited in the wild against PHP applications via remote code execution. Unauthenticated attackers can run arbitrary code with web‑server privileges, enabling full system compromise. PHP releases a patch; administrators should update to the latest version or apply the vendor’s advisory to mitigate the risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-26T09:19:57.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/",
     "additionalSources": []
   },
   {
@@ -403,6 +390,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles",
+    "sourceUrl": "https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles",
+    "title": "Gheist Attempts to Abuse Stolen GitHub Tokens via Secret‑Dumping Workflows",
+    "headline": "Gheist Attempts to Abuse Stolen GitHub Tokens via Secret‑Dumping Workflows",
+    "summary": "Gheist attempts to abuse stolen GitHub tokens by planting secret‑dumping workflows across reachable repositories. The attack exploits GitHub’s workflow permissions model, enabling credential exfiltration without a command‑and‑control server, and has been partially mitigated by recent platform security updates. Security teams should enforce least‑privilege workflow permissions, rotate compromised tokens, and apply GitHub’s security patches to block further Gheist deployments.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Wiz Research",
+    "publishedAt": "2026-10-25T17:55:33.000Z",
+    "url": "https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles",
+    "additionalSources": []
+  },
+  {
     "id": "https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html",
     "sourceUrl": "https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html",
     "title": "Tailscale SSH Flaws Enable Root Escalation Across Network",
@@ -426,6 +426,32 @@
     "source": "The Hacker News",
     "publishedAt": "2026-10-25T17:19:46.000Z",
     "url": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70197",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70197",
+    "title": "CVE-2026-70197 .NET and Visual Studio Remote Code Execution Vulnerability",
+    "headline": "CVE-2026-70197 .NET and Visual Studio Remote Code Execution Vulnerability",
+    "summary": "A remote code execution vulnerability exists in .NET and Visual Studio, identified as CVE-2026-70197, allowing attackers to execute arbitrary code via crafted input during software updates. The flaw stems from insufficient input validation in the update handling module, exposing systems to potential compromise if unpatched. Microsoft has released a patch in the latest update; administrators should apply it immediately to mitigate risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "publishedAt": "2026-10-25T14:00:00.000Z",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70197",
+    "additionalSources": []
+  },
+  {
+    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102870",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102870",
+    "title": "CVE-2026-102870 ASP.NET Core Remote Code Execution Vulnerability",
+    "headline": "CVE-2026-102870 ASP.NET Core Remote Code Execution Vulnerability",
+    "summary": "ASP.NET Core contains a remote code execution flaw, CVE-2026-102870, that permits attackers to run arbitrary code through malformed requests processed during runtime. The vulnerability arises from improper sanitization of user-supplied data in the request pipeline, enabling exploitation without authentication. Microsoft has issued a patch; deploying the update is essential to secure affected deployments.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "publishedAt": "2026-10-25T14:00:00.000Z",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102870",
     "additionalSources": []
   },
   {
@@ -1948,6 +1974,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-gtpcodec-dos-Rmecfepz?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Denial+of+Service+Vulnerability%26vs_k%3D1",
+    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-gtpcodec-dos-Rmecfepz?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Denial+of+Service+Vulnerability%26vs_k%3D1",
+    "title": "Cisco Snort 3 Detection Engine Denial of Service Vulnerability",
+    "headline": "Cisco Snort 3 Detection Engine Denial of Service Vulnerability",
+    "summary": "A logic flaw in Cisco’s Snort 3 Detection Engine lets an unauthenticated remote attacker trigger a denial of service by sending crafted GTP extension headers in a fragmented UDP datagram. The flaw causes an infinite loop, halting packet processing and disrupting monitoring. Cisco released updates that fix the issue; security teams should apply the patch or use the available workaround.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
+    "source": "Cisco PSIRT",
+    "publishedAt": "2026-10-22T19:03:26.000Z",
+    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-gtpcodec-dos-Rmecfepz?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Denial+of+Service+Vulnerability%26vs_k%3D1",
+    "additionalSources": []
+  },
+  {
     "id": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-vba-bufdos-jAuFdvn9?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Visual+Basic+for+Applications+Buffer+Overflow+Denial+of+Service+Vulnerability%26vs_k%3D1",
     "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-vba-bufdos-jAuFdvn9?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Visual+Basic+for+Applications+Buffer+Overflow+Denial+of+Service+Vulnerability%26vs_k%3D1",
     "title": "Cisco Snort 3 VBA Decompression Engine Buffer Overflow Causes Denial of Service",
@@ -1958,6 +1997,19 @@
     "source": "Cisco PSIRT",
     "publishedAt": "2026-10-22T19:03:25.000Z",
     "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-vba-bufdos-jAuFdvn9?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Visual+Basic+for+Applications+Buffer+Overflow+Denial+of+Service+Vulnerability%26vs_k%3D1",
+    "additionalSources": []
+  },
+  {
+    "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-145-aws/",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-145-aws/",
+    "title": "CVE‑2026‑115414: OS Command Injection in AWS SAM CLI Terraform Hook",
+    "headline": "CVE‑2026‑115414: OS Command Injection in AWS SAM CLI Terraform Hook",
+    "summary": "An OS command injection flaw (CVE‑2026‑115414) in AWS SAM CLI’s Terraform hook allows an attacker controlling the Terraform configuration to execute arbitrary commands as the build user on the host. The vulnerability arises from unsanitized interpolation of Terraform resource addresses into a generated Makefile recipe, enabling remote code execution. AWS has released a patch for all affected versions (≥1.63.0).",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "AWS Security Bulletins",
+    "publishedAt": "2026-10-22T18:50:58.000Z",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-145-aws/",
     "additionalSources": []
   },
   {
@@ -4723,58 +4775,6 @@
     "source": "Help Net Security",
     "publishedAt": "2026-10-15T13:29:01.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/15/barracuda-fake-captcha-phishing-attacks/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://blog.cloudflare.com/cloudflare-openai-discovery-agentic-web/",
-    "sourceUrl": "https://blog.cloudflare.com/cloudflare-openai-discovery-agentic-web/",
-    "title": "Cloudflare and OpenAI Partner to Improve AI Discovery",
-    "headline": "Cloudflare and OpenAI Partner to Improve AI Discovery",
-    "summary": "Cloudflare and OpenAI are partnering to enhance AI discovery by improving content relevance, reducing wasted requests, and streamlining updates for users and website owners. The collaboration aims to make AI experiences more efficient and user-friendly across the web globally today.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "publishedAt": "2026-10-15T13:00:00.000Z",
-    "url": "https://blog.cloudflare.com/cloudflare-openai-discovery-agentic-web/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.malwarebytes.com/blog/product/2026/10/is-this-link-safe-find-out-with-malwarebytes-scam-link-check",
-    "sourceUrl": "https://www.malwarebytes.com/blog/product/2026/10/is-this-link-safe-find-out-with-malwarebytes-scam-link-check",
-    "title": "Malwarebytes Launches Scam Link Check Tool",
-    "headline": "Malwarebytes Launches Scam Link Check Tool",
-    "summary": "Malwarebytes introduced a Scam Link Check feature that scans suspicious URLs for phishing, scams, malware, and other online threats before users click. The tool helps users verify link safety and protect against malicious content. No vulnerabilities or exploits are reported.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "publishedAt": "2026-10-15T12:55:00.000Z",
-    "url": "https://www.malwarebytes.com/blog/product/2026/10/is-this-link-safe-find-out-with-malwarebytes-scam-link-check",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/supermarket-refrigeration-attack-widens-to-copeland-dixell-controllers/",
-    "sourceUrl": "https://www.securityweek.com/supermarket-refrigeration-attack-widens-to-copeland-dixell-controllers/",
-    "title": "Supermarket Refrigeration Attack Expands to Copeland and Dixell Controllers",
-    "headline": "Supermarket Refrigeration Attack Expands to Copeland and Dixell Controllers",
-    "summary": "Cyberattacks targeting refrigeration systems in about 700 French supermarkets have spread to Copeland and Dixell controllers. The attacks compromise control systems but no group has claimed responsibility. The incident highlights the growing threat to industrial control infrastructure.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-15T12:50:42.000Z",
-    "url": "https://www.securityweek.com/supermarket-refrigeration-attack-widens-to-copeland-dixell-controllers/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/critical-next-js-vulnerabilities/",
-    "sourceUrl": "https://cybersecuritynews.com/critical-next-js-vulnerabilities/",
-    "title": "Critical Next.js Vulnerabilities Allow Hackers to Execute Malicious Code Remotely",
-    "headline": "Critical Next.js Vulnerabilities Allow Hackers to Execute Malicious Code Remotely",
-    "summary": "Two critical vulnerabilities in Next.js enable remote attackers to execute malicious code without authentication, affecting cached functions and SVG image processing. A third high‑severity flaw can cause applications to stop serving requests. Patches are available in Next.js 16.4.1 and 15.5.28.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-15T12:39:05.000Z",
-    "url": "https://cybersecuritynews.com/critical-next-js-vulnerabilities/",
     "additionalSources": []
   }
 ]

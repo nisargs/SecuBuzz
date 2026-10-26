@@ -2502,5 +2502,10 @@
   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102870",
   "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-gtpcodec-dos-Rmecfepz?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Denial+of+Service+Vulnerability%26vs_k%3D1",
   "https://aws.amazon.com/security/security-bulletins/rss/2026-145-aws/",
-  "https://access.redhat.com/errata/RHSA-2026:89915"
+  "https://access.redhat.com/errata/RHSA-2026:89915",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96303",
+  "https://fortiguard.fortinet.com/psirt/FG-IR-26-187",
+  "https://www.wiz.io/blog/cve-2026-111497-brotli-rce-node-js",
+  "https://www.crowdstrike.com/en-us/blog/obstacles-to-weaponizing-php2shell-likely-constrain-exploitation/",
+  "https://www.crowdstrike.com/en-us/blog/why-organizations-secure-ai-agents-with-falcon-guardian/"
 ]

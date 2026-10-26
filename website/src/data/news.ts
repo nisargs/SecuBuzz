@@ -352,6 +352,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "node-js-brotli-decoder-out-of-bounds-write-enables-3bcda9",
+    "title": "Node.js Brotli Decoder Out-of-Bounds Write Enables Remote Code Execution",
+    "summary": "A critical out-of-bounds write flaw in Node.js Brotli decoder permits remote code execution on Node.js 26.x, 24.x, and 22.x releases. Identified as CVE-2026-111497, the flaw scores 9.8 CVSSv3, enabling unauthenticated remote exploitation. Apply the latest Node.js security patch or upgrade to a supported version; disabling Brotli compression is a temporary fix.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-187",
+    "publishedAt": "2026-10-26T07:00:00.000Z",
+    "cves": [
+      "CVE-2026-111497"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "node-js-brotli-decoder-out-of-bounds-write-enables",
+      "article-3bcda9",
+      "3bcda9",
+      "node-js-brotli-decoder-out-of-bounds-write-enables-remote-co"
+    ]
+  },
+  {
     "slug": "red-hat-python-3-9-update-addresses-multiple-vulne-37e480",
     "title": "Red Hat Python 3.9 Update Addresses Multiple Vulnerabilities",
     "summary": "An update for python3.9 on Red Hat Enterprise Linux 9 addresses multiple security vulnerabilities identified by Red Hat Product Security. The update mitigates flaws that could allow attackers to execute arbitrary code or elevate privileges, as indicated by the CVSS base scores linked in the advisory. Red Hat recommends applying the latest python3.9 package to ensure protection.",
@@ -530,6 +550,26 @@ export const news: NewsBrief[] = [
       "article-7a7376",
       "7a7376",
       "php2shell-vulnerabilities-exploited-against-european-governm"
+    ]
+  },
+  {
+    "slug": "critical-brotli-decoder-vulnerability-cve-2026-111-348748",
+    "title": "Critical Brotli Decoder Vulnerability CVE-2026-111497 Enables Remote Code Execution",
+    "summary": "A critical Brotli decoder vulnerability, CVE-2026-111497, permits remote code execution via malformed Brotli streams. The flaw originates from unchecked buffer handling during decompression, yielding a CVSS score of 9.8 and active exploitation potential. A vendor patch is available for all supported browsers; administrators should apply updates immediately and disable Brotli where feasible.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Wiz Research",
+    "sourceUrl": "https://www.wiz.io/blog/cve-2026-111497-brotli-rce-node-js",
+    "publishedAt": "2026-10-25T14:46:53.000Z",
+    "cves": [
+      "CVE-2026-111497"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "critical-brotli-decoder-vulnerability-cve-2026-111",
+      "article-348748",
+      "348748",
+      "critical-brotli-decoder-vulnerability-cve-2026-111497-enable"
     ]
   },
   {
@@ -2297,6 +2337,42 @@ export const news: NewsBrief[] = [
       "article-778be3",
       "778be3",
       "drone-program-compliance-interview-highlights-common-gaps"
+    ]
+  },
+  {
+    "slug": "php2shell-vulnerability-exploitation-obstacles-lim-664955",
+    "title": "PHP2Shell Vulnerability Exploitation Obstacles Limit Immediate Widespread Use",
+    "summary": "A PHP2Shell vulnerability in PHP web applications enables attackers to upload malicious code via file upload endpoints. However, obstacles such as input validation, server configuration, and lack of public exploit code constrain immediate weaponization and widespread exploitation. Security teams should enforce strict upload policies, apply vendor patches, and monitor for anomalous file activity to mitigate potential compromise.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "CrowdStrike",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/obstacles-to-weaponizing-php2shell-likely-constrain-exploitation/",
+    "publishedAt": "2026-10-23T05:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "php2shell-vulnerability-exploitation-obstacles-lim",
+      "article-664955",
+      "664955",
+      "php2shell-vulnerability-exploitation-obstacles-limit-immedia"
+    ]
+  },
+  {
+    "slug": "falcon-guardian-enhances-ai-agent-security-through-747cf8",
+    "title": "Falcon Guardian Enhances AI Agent Security Through Monitoring and Isolation",
+    "summary": "Falcon Guardian protects AI agents by monitoring and controlling their data access and execution environments. The solution intercepts malicious payloads, enforces policy compliance, and isolates compromised agents to prevent lateral movement. Organizations should integrate Falcon Guardian into their AI workflows, apply the latest policy updates, and conduct regular security reviews to maintain resilience.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CrowdStrike",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/why-organizations-secure-ai-agents-with-falcon-guardian/",
+    "publishedAt": "2026-10-23T05:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "falcon-guardian-enhances-ai-agent-security-through",
+      "article-747cf8",
+      "747cf8",
+      "falcon-guardian-enhances-ai-agent-security-through-monitorin"
     ]
   },
   {
@@ -6470,77 +6546,6 @@ export const news: NewsBrief[] = [
       "article-334d38",
       "334d38",
       "fake-captchas-used-to-trick-users-into-running-malware"
-    ]
-  },
-  {
-    "slug": "cloudflare-and-openai-partner-to-improve-ai-discov-7fca34",
-    "title": "Cloudflare and OpenAI Partner to Improve AI Discovery",
-    "summary": "Cloudflare and OpenAI are partnering to enhance AI discovery by improving content relevance, reducing wasted requests, and streamlining updates for users and website owners. The collaboration aims to make AI experiences more efficient and user-friendly across the web globally today.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/cloudflare-openai-discovery-agentic-web/",
-    "publishedAt": "2026-10-15T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-and-openai-partner-to-improve-ai-discov",
-      "article-7fca34",
-      "7fca34",
-      "cloudflare-and-openai-partner-to-improve-ai-discovery"
-    ]
-  },
-  {
-    "slug": "malwarebytes-launches-scam-link-check-tool-4c575a",
-    "title": "Malwarebytes Launches Scam Link Check Tool",
-    "summary": "Malwarebytes introduced a Scam Link Check feature that scans suspicious URLs for phishing, scams, malware, and other online threats before users click. The tool helps users verify link safety and protect against malicious content. No vulnerabilities or exploits are reported.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/product/2026/10/is-this-link-safe-find-out-with-malwarebytes-scam-link-check",
-    "publishedAt": "2026-10-15T12:55:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "malwarebytes-launches-scam-link-check-tool",
-      "article-4c575a",
-      "4c575a"
-    ]
-  },
-  {
-    "slug": "supermarket-refrigeration-attack-expands-to-copela-2a3033",
-    "title": "Supermarket Refrigeration Attack Expands to Copeland and Dixell Controllers",
-    "summary": "Cyberattacks targeting refrigeration systems in about 700 French supermarkets have spread to Copeland and Dixell controllers. The attacks compromise control systems but no group has claimed responsibility. The incident highlights the growing threat to industrial control infrastructure.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/supermarket-refrigeration-attack-widens-to-copeland-dixell-controllers/",
-    "publishedAt": "2026-10-15T12:50:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "supermarket-refrigeration-attack-expands-to-copela",
-      "article-2a3033",
-      "2a3033",
-      "supermarket-refrigeration-attack-expands-to-copeland-and-dix"
-    ]
-  },
-  {
-    "slug": "critical-next-js-vulnerabilities-allow-hackers-to-381e3d",
-    "title": "Critical Next.js Vulnerabilities Allow Hackers to Execute Malicious Code Remotely",
-    "summary": "Two critical vulnerabilities in Next.js enable remote attackers to execute malicious code without authentication, affecting cached functions and SVG image processing. A third high‑severity flaw can cause applications to stop serving requests. Patches are available in Next.js 16.4.1 and 15.5.28.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/critical-next-js-vulnerabilities/",
-    "publishedAt": "2026-10-15T12:39:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "critical-next-js-vulnerabilities-allow-hackers-to",
-      "article-381e3d",
-      "381e3d",
-      "critical-next-js-vulnerabilities-allow-hackers-to-execute-ma"
     ]
   }
 ];
