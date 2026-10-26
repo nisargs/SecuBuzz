@@ -2345,5 +2345,8 @@
   "https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/",
   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-110063",
   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96251",
-  "https://access.redhat.com/errata/RHSA-2026:88561"
+  "https://access.redhat.com/errata/RHSA-2026:88561",
+  "https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html",
+  "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
+  "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-vba-bufdos-jAuFdvn9?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Visual+Basic+for+Applications+Buffer+Overflow+Denial+of+Service+Vulnerability%26vs_k%3D1"
 ]

@@ -11,6 +11,45 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "tailscale-ssh-flaws-enable-root-escalation-across-1a2e44",
+    "title": "Tailscale SSH Flaws Enable Root Escalation Across Network",
+    "summary": "A single compromised device on a Tailscale network can be leveraged to gain root access to other servers via SSH port forwarding, provided the target is permitted by the network’s access rules. The flaw allows an attacker to execute arbitrary commands on reachable hosts, potentially compromising critical infrastructure. Tailscale has released a patch; administrators should update immediately and disable port forwarding until verified.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html",
+    "publishedAt": "2026-10-25T17:44:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "tailscale-ssh-flaws-enable-root-escalation-across",
+      "article-1a2e44",
+      "1a2e44",
+      "tailscale-ssh-flaws-enable-root-escalation-across-network"
+    ]
+  },
+  {
+    "slug": "php2shell-vulnerabilities-exploited-against-europe-7a7376",
+    "title": "PHP2Shell Vulnerabilities Exploited Against European Government Entity",
+    "summary": "Threat actors exploited PHP2Shell flaws identified as CVE-2026-109618 and CVE-2026-109619 to compromise a European government system, retrieving password hashes and multi‑factor credentials within two hours. The vulnerabilities enable remote code execution through unsanitized input in PHP applications, allowing attackers to elevate privileges and exfiltrate data. Patches for the affected PHP versions are available; security teams must apply them and enforce strict input validation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
+    "publishedAt": "2026-10-25T17:19:46.000Z",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "php2shell-vulnerabilities-exploited-against-europe",
+      "article-7a7376",
+      "7a7376",
+      "php2shell-vulnerabilities-exploited-against-european-governm"
+    ]
+  },
+  {
     "slug": "mave-secops-startup-raises-34-million-354403",
     "title": "Mave SecOps Startup Raises $34 Million",
     "summary": "Mave, a Tel Aviv‑based startup founded by former Unit 8200 officers, raises $34 million to develop agentic SecOps solutions. The company leverages AI agents to autonomously investigate alerts across existing security stacks, aiming to reduce analyst workload. No public vulnerability or breach is reported; the announcement focuses on funding and product roadmap.",
@@ -2045,6 +2084,24 @@ export const news: NewsBrief[] = [
       "article-1671e2",
       "1671e2",
       "cisco-snort-3-gre-tunnel-denial-of-service-vulnerability"
+    ]
+  },
+  {
+    "slug": "cisco-snort-3-vba-decompression-engine-buffer-over-4dad9f",
+    "title": "Cisco Snort 3 VBA Decompression Engine Buffer Overflow Causes Denial of Service",
+    "summary": "Improper range checking in the Snort 3 Visual Basic for Applications decompression engine permits an unauthenticated remote attacker to send crafted VBA data, triggering a stack overflow that restarts the detection engine. The flaw enables denial of service on targeted devices without authentication, impacting network security operations. Cisco has issued software updates and a workaround to resolve the vulnerability.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Cisco PSIRT",
+    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-vba-bufdos-jAuFdvn9?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Visual+Basic+for+Applications+Buffer+Overflow+Denial+of+Service+Vulnerability%26vs_k%3D1",
+    "publishedAt": "2026-10-22T19:03:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisco-snort-3-vba-decompression-engine-buffer-over",
+      "article-4dad9f",
+      "4dad9f",
+      "cisco-snort-3-vba-decompression-engine-buffer-overflow-cause"
     ]
   },
   {
@@ -6500,65 +6557,6 @@ export const news: NewsBrief[] = [
       "article-2728dd",
       "2728dd",
       "how-to-run-a-deepfake-readiness-drill-before-a-cloned-voice-"
-    ]
-  },
-  {
-    "slug": "microsoft-patch-tuesday-addresses-flaw-already-und-17065c",
-    "title": "Microsoft Patch Tuesday Addresses Flaw Already Under Attack",
-    "summary": "Microsoft’s October Patch Tuesday released 1,413 fixes, including a Windows flaw currently being exploited in the wild and two zero-day vulnerabilities. The patch mitigates the active exploitation vector, preventing further compromise of affected systems. Administrators should apply the update promptly to close the security gap.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/10/update-windows-record-patch-tuesday-fixes-flaw-already-under-attack",
-    "publishedAt": "2026-10-14T11:26:09.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Dark Reading",
-        "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/zero-days-microsoft-october-patch-tuesday"
-      }
-    ],
-    "aliases": [
-      "microsoft-patch-tuesday-addresses-flaw-already-und",
-      "article-17065c",
-      "17065c",
-      "microsoft-patch-tuesday-addresses-flaw-already-under-attack"
-    ]
-  },
-  {
-    "slug": "chrome-full-chain-exploit-built-using-public-ai-mo-60063a",
-    "title": "Chrome Full-Chain Exploit Built Using Public AI Model",
-    "summary": "Security firm XBOW chained three previously unknown Google Chrome bugs into a single attack that executes code on a Windows machine when a user loads a web page. The team used OpenAI’s GPT‑5.6 Sol model to develop the exploit in six days. Google has confirmed and fixed all three bugs.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/researchers-used-public-openai-model-to.html",
-    "publishedAt": "2026-10-14T11:19:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-full-chain-exploit-built-using-public-ai-mo",
-      "article-60063a",
-      "60063a",
-      "chrome-full-chain-exploit-built-using-public-ai-model"
-    ]
-  },
-  {
-    "slug": "wiz-ai-agents-introduced-for-government-cnapp-secu-126ff3",
-    "title": "Wiz AI Agents Introduced for Government CNAPP Security",
-    "summary": "Wiz Research announced the launch of Wiz AI Agents, an extension to its CNAPP platform tailored for public sector security teams. The AI agents automate threat detection and remediation, aiming to accelerate security operations and innovation across government environments.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Wiz Research",
-    "sourceUrl": "https://www.wiz.io/blog/wiz-for-gov-agents-fedramp",
-    "publishedAt": "2026-10-14T11:00:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "wiz-ai-agents-introduced-for-government-cnapp-secu",
-      "article-126ff3",
-      "126ff3",
-      "wiz-ai-agents-introduced-for-government-cnapp-security"
     ]
   }
 ];

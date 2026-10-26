@@ -1,158 +1,41 @@
 [
   {
-    "id": "https://cybersecuritynews.com/capcom-confirmed-customer-records-exposed/",
-    "sourceUrl": "https://cybersecuritynews.com/capcom-confirmed-customer-records-exposed/",
-    "title": "Capcom Customer Data Breach Exposes 11.8 Million Records",
-    "headline": "Capcom Customer Data Breach Exposes 11.8 Million Records",
-    "summary": "Capcom’s CAPCOM ID service suffered unauthorized access, exposing 11,774,247 customer records including email addresses and account activity. The breach involved credential compromise and unauthorized password changes on 196 accounts, indicating active credential theft. Capcom has reset affected passwords and will notify customers, urging immediate password updates and monitoring for suspicious activity.",
-    "category": "BREACH",
+    "id": "https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html",
+    "title": "Tailscale SSH Flaws Enable Root Escalation Across Network",
+    "headline": "Tailscale SSH Flaws Enable Root Escalation Across Network",
+    "summary": "A single compromised device on a Tailscale network can be leveraged to gain root access to other servers via SSH port forwarding, provided the target is permitted by the network’s access rules. The flaw allows an attacker to execute arbitrary commands on reachable hosts, potentially compromising critical infrastructure. Tailscale has released a patch; administrators should update immediately and disable port forwarding until verified.",
+    "category": "VULNERABILITY",
     "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-23T14:37:14.000Z",
-    "url": "https://cybersecuritynews.com/capcom-confirmed-customer-records-exposed/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:88662",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:88662",
-    "title": "Red Hat ca-certificates Critical Security Update Released",
-    "headline": "Red Hat ca-certificates Critical Security Update Released",
-    "summary": "Red Hat Enterprise Linux 8.8 users face a critical vulnerability in the ca-certificates package, impacting SSL/TLS trust chains. The flaw allows attackers to subvert certificate validation, potentially enabling man‑in‑the‑middle attacks; a CVSS score of 9.8 reflects its high exploitability. Red Hat has issued an immediate patch; administrators must apply the update to restore secure certificate handling.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-10-23T11:50:45.000Z",
-    "url": "https://access.redhat.com/errata/RHSA-2026:88662",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:88659",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:88659",
-    "title": "Red Hat Releases PHP Security Update for RHEL 9.2 SAP Solutions",
-    "headline": "Red Hat Releases PHP Security Update for RHEL 9.2 SAP Solutions",
-    "summary": "A PHP security update has been issued for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions, addressing multiple vulnerabilities with an Important impact rating. The update mitigates unspecified code execution flaws that could be triggered by misconfigured PHP installations. Red Hat has made the patch available through the standard update channels, and users should apply it immediately.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-10-23T11:44:40.000Z",
-    "url": "https://access.redhat.com/errata/RHSA-2026:88659",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html",
-    "title": "PHP Warns of New RCE Risk CVE-2026-115560, No Emergency Fix Issued",
-    "headline": "PHP Warns of New RCE Risk CVE-2026-115560, No Emergency Fix Issued",
-    "summary": "PHP has identified a new remote code execution vulnerability, CVE-2026-115560, affecting web applications configured in an unusual way. The flaw is considered unlikely to be exploited, and PHP has not released an emergency patch, instead recommending disabling a specific feature to mitigate risk. Users should review configuration settings and apply any available updates to reduce exposure.",
-    "category": "CVE",
-    "severity": "MEDIUM",
     "source": "The Hacker News",
-    "publishedAt": "2026-10-23T11:25:43.000Z",
-    "url": "https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html",
+    "publishedAt": "2026-10-25T17:44:09.000Z",
+    "url": "https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html",
     "additionalSources": []
   },
   {
-    "id": "http://chromereleases.googleblog.com/feeds/4141447260395278637/comments/default",
-    "sourceUrl": "http://chromereleases.googleblog.com/feeds/4141447260395278637/comments/default",
-    "title": "Google Chrome Beta 157.0.8103.15 Released for Desktop",
-    "headline": "Google Chrome Beta 157.0.8103.15 Released for Desktop",
-    "summary": "Google released Chrome Beta 157.0.8103.15 for Windows, macOS, and Linux, updating the desktop channel. The update includes a partial list of changes documented in the Git log and offers guidance for users considering channel switches. Users are encouraged to file bugs for new issues and consult the community help forum for support.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "publishedAt": "2026-10-22T20:43:32.954Z",
-    "url": "http://chromereleases.googleblog.com/feeds/4141447260395278637/comments/default",
+    "id": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
+    "title": "PHP2Shell Vulnerabilities Exploited Against European Government Entity",
+    "headline": "PHP2Shell Vulnerabilities Exploited Against European Government Entity",
+    "summary": "Threat actors exploited PHP2Shell flaws identified as CVE-2026-109618 and CVE-2026-109619 to compromise a European government system, retrieving password hashes and multi‑factor credentials within two hours. The vulnerabilities enable remote code execution through unsanitized input in PHP applications, allowing attackers to elevate privileges and exfiltrate data. Patches for the affected PHP versions are available; security teams must apply them and enforce strict input validation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-25T17:19:46.000Z",
+    "url": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
     "additionalSources": []
   },
   {
-    "id": "http://chromereleases.googleblog.com/feeds/2567200690070519815/comments/default",
-    "sourceUrl": "http://chromereleases.googleblog.com/feeds/2567200690070519815/comments/default",
-    "title": "Google Chrome Early Stable Update for Desktop",
-    "headline": "Google Chrome Early Stable Update for Desktop",
-    "summary": "Google Chrome released an early stable update for Windows, version 157.0.8103.15/.16, with a forthcoming Mac release for a small user subset. The update includes multiple bug fixes and performance improvements, detailed in the release log. Users are encouraged to monitor the community forum for issue reporting and to consider switching release channels if desired.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "publishedAt": "2026-10-22T20:33:11.637Z",
-    "url": "http://chromereleases.googleblog.com/feeds/2567200690070519815/comments/default",
-    "additionalSources": []
-  },
-  {
-    "id": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-gre-JNpMHrTv?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Generic+Routing+Encapsulation+Denial+of+Service+Vulnerability%26vs_k%3D1",
-    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-gre-JNpMHrTv?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Generic+Routing+Encapsulation+Denial+of+Service+Vulnerability%26vs_k%3D1",
-    "title": "Cisco Snort 3 GRE Tunnel Denial of Service Vulnerability",
-    "headline": "Cisco Snort 3 GRE Tunnel Denial of Service Vulnerability",
-    "summary": "A flaw in Cisco Snort 3’s GRE tunnel decapsulation allows unauthenticated remote attackers to send crafted GRE payloads, triggering an unexpected engine restart. The improper handling of nested GRE traffic can cause a denial of service or bypass, depending on device configuration. Cisco has issued software updates; administrators should apply the patch promptly to mitigate the risk.",
+    "id": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-vba-bufdos-jAuFdvn9?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Visual+Basic+for+Applications+Buffer+Overflow+Denial+of+Service+Vulnerability%26vs_k%3D1",
+    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-vba-bufdos-jAuFdvn9?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Visual+Basic+for+Applications+Buffer+Overflow+Denial+of+Service+Vulnerability%26vs_k%3D1",
+    "title": "Cisco Snort 3 VBA Decompression Engine Buffer Overflow Causes Denial of Service",
+    "headline": "Cisco Snort 3 VBA Decompression Engine Buffer Overflow Causes Denial of Service",
+    "summary": "Improper range checking in the Snort 3 Visual Basic for Applications decompression engine permits an unauthenticated remote attacker to send crafted VBA data, triggering a stack overflow that restarts the detection engine. The flaw enables denial of service on targeted devices without authentication, impacting network security operations. Cisco has issued software updates and a workaround to resolve the vulnerability.",
     "category": "VULNERABILITY",
     "severity": "CRITICAL",
     "source": "Cisco PSIRT",
-    "publishedAt": "2026-10-22T19:03:27.000Z",
-    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-gre-JNpMHrTv?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Generic+Routing+Encapsulation+Denial+of+Service+Vulnerability%26vs_k%3D1",
-    "additionalSources": []
-  },
-  {
-    "id": "https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/",
-    "sourceUrl": "https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/",
-    "title": "GitHub Bug Bounty Highlights Researcher @r31n",
-    "headline": "GitHub Bug Bounty Highlights Researcher @r31n",
-    "summary": "The GitHub Bug Bounty team highlighted researcher @r31n during Cybersecurity Awareness Month, detailing their research methodology and preferred bug categories. The post emphasizes how active bug hunting refines security expertise, showcasing real-world exploitation techniques and defensive insights. Security teams can adopt similar iterative testing practices to uncover latent vulnerabilities before external discovery.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "GitHub Security Blog",
-    "publishedAt": "2026-10-22T17:21:30.000Z",
-    "url": "https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-110063",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-110063",
-    "title": "CVE-2026-110063: Azure VM Inspector Elevation of Privilege Vulnerability",
-    "headline": "CVE-2026-110063: Azure VM Inspector Elevation of Privilege Vulnerability",
-    "summary": "CVE-2026-110063 exposes an improper link resolution flaw in Azure Virtual Machines’ VM Inspector, enabling attackers to elevate privileges across the network. The vulnerability permits unauthorized file access via link following, bypassing access controls and potentially granting full administrative rights to compromised hosts. Microsoft released a patch correcting link resolution; administrators should apply it immediately to stop privilege escalation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-10-22T14:00:00.000Z",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-110063",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96251",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96251",
-    "title": "Microsoft PowerShell CVE-2026-96251 Remote Code Execution Vulnerability",
-    "headline": "Microsoft PowerShell CVE-2026-96251 Remote Code Execution Vulnerability",
-    "summary": "A remote code execution flaw exists in Microsoft PowerShell, identified as CVE-2026-96251, affecting the command execution engine. The vulnerability allows attackers to run arbitrary code via crafted PowerShell commands, with a CVSS score of 8.3 and no active exploitation reported. Microsoft has released a patch; users should apply the update immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-10-22T14:00:00.000Z",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96251",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-02",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-02",
-    "title": "Siemens Industrial Edge App Publisher Improper Certificate Validation and XSS Vulnerabilities",
-    "headline": "Siemens Industrial Edge App Publisher Improper Certificate Validation and XSS Vulnerabilities",
-    "summary": "Siemens Industrial Edge App Publisher contains a vulnerability chain combining improper certificate validation and cross‑site scripting that permits network attackers to impersonate the management server and execute arbitrary code through Node.js integration. The flaw carries a CVSS score of 8.3, enabling remote code execution on local machines. Siemens has issued an update; operators must upgrade to the latest version to remediate the issue.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "CISA",
-    "publishedAt": "2026-10-22T12:00:00.000Z",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-02",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:88561",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:88561",
-    "title": "Red Hat releases PHP security update for RHEL 10.0 EUS",
-    "headline": "Red Hat releases PHP security update for RHEL 10.0 EUS",
-    "summary": "Red Hat released a security update for PHP on Enterprise Linux 10.0 Extended Update Support, addressing a flaw that could allow unauthorized code execution. The flaw, rated Important by Red Hat Product Security, carries a CVSS base score listed in the CVE references. Users should apply the update immediately to mitigate potential exploitation; no workaround is provided.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-10-23T10:00:37.000Z",
-    "url": "https://access.redhat.com/errata/RHSA-2026:88561",
+    "publishedAt": "2026-10-22T19:03:25.000Z",
+    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-vba-bufdos-jAuFdvn9?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Visual+Basic+for+Applications+Buffer+Overflow+Denial+of+Service+Vulnerability%26vs_k%3D1",
     "additionalSources": []
   },
   {
@@ -765,6 +648,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://cybersecuritynews.com/capcom-confirmed-customer-records-exposed/",
+    "sourceUrl": "https://cybersecuritynews.com/capcom-confirmed-customer-records-exposed/",
+    "title": "Capcom Customer Data Breach Exposes 11.8 Million Records",
+    "headline": "Capcom Customer Data Breach Exposes 11.8 Million Records",
+    "summary": "Capcom’s CAPCOM ID service suffered unauthorized access, exposing 11,774,247 customer records including email addresses and account activity. The breach involved credential compromise and unauthorized password changes on 196 accounts, indicating active credential theft. Capcom has reset affected passwords and will notify customers, urging immediate password updates and monitoring for suspicious activity.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-23T14:37:14.000Z",
+    "url": "https://cybersecuritynews.com/capcom-confirmed-customer-records-exposed/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.securityweek.com/in-other-news-tor-exit-relays-hijacked-banks-spot-rogue-ai-agents-self-rebuilding-macos-ransomware/",
     "sourceUrl": "https://www.securityweek.com/in-other-news-tor-exit-relays-hijacked-banks-spot-rogue-ai-agents-self-rebuilding-macos-ransomware/",
     "title": "APT28 Targets NATO Defense Firms via Compromised Systems",
@@ -1087,6 +983,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:88662",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:88662",
+    "title": "Red Hat ca-certificates Critical Security Update Released",
+    "headline": "Red Hat ca-certificates Critical Security Update Released",
+    "summary": "Red Hat Enterprise Linux 8.8 users face a critical vulnerability in the ca-certificates package, impacting SSL/TLS trust chains. The flaw allows attackers to subvert certificate validation, potentially enabling man‑in‑the‑middle attacks; a CVSS score of 9.8 reflects its high exploitability. Red Hat has issued an immediate patch; administrators must apply the update to restore secure certificate handling.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-10-23T11:50:45.000Z",
+    "url": "https://access.redhat.com/errata/RHSA-2026:88662",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/10/23/microsoft-365-accounts-stolen-sessions/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/23/microsoft-365-accounts-stolen-sessions/",
     "title": "Microsoft 365 Accounts Compromised at 79 Organizations via Session Replay",
@@ -1100,6 +1009,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:88659",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:88659",
+    "title": "Red Hat Releases PHP Security Update for RHEL 9.2 SAP Solutions",
+    "headline": "Red Hat Releases PHP Security Update for RHEL 9.2 SAP Solutions",
+    "summary": "A PHP security update has been issued for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions, addressing multiple vulnerabilities with an Important impact rating. The update mitigates unspecified code execution flaws that could be triggered by misconfigured PHP installations. Red Hat has made the patch available through the standard update channels, and users should apply it immediately.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-10-23T11:44:40.000Z",
+    "url": "https://access.redhat.com/errata/RHSA-2026:88659",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.darkreading.com/cybersecurity-operations/ai-agents-insider-threats-inside-microsoft-unified-security-stack",
     "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/ai-agents-insider-threats-inside-microsoft-unified-security-stack",
     "title": "Microsoft’s Project Perception Deploys Guardian Agents Amid AI Insider Threat Concerns",
@@ -1110,6 +1032,19 @@
     "source": "Dark Reading",
     "publishedAt": "2026-10-23T11:38:28.000Z",
     "url": "https://www.darkreading.com/cybersecurity-operations/ai-agents-insider-threats-inside-microsoft-unified-security-stack",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html",
+    "title": "PHP Warns of New RCE Risk CVE-2026-115560, No Emergency Fix Issued",
+    "headline": "PHP Warns of New RCE Risk CVE-2026-115560, No Emergency Fix Issued",
+    "summary": "PHP has identified a new remote code execution vulnerability, CVE-2026-115560, affecting web applications configured in an unusual way. The flaw is considered unlikely to be exploited, and PHP has not released an emergency patch, instead recommending disabling a specific feature to mitigate risk. Users should review configuration settings and apply any available updates to reduce exposure.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-23T11:25:43.000Z",
+    "url": "https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html",
     "additionalSources": []
   },
   {
@@ -1181,6 +1116,19 @@
     "source": "SANS Internet Storm Center",
     "publishedAt": "2026-10-23T10:25:11.000Z",
     "url": "https://isc.sans.edu/diary/rss/33448",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:88561",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:88561",
+    "title": "Red Hat releases PHP security update for RHEL 10.0 EUS",
+    "headline": "Red Hat releases PHP security update for RHEL 10.0 EUS",
+    "summary": "Red Hat released a security update for PHP on Enterprise Linux 10.0 Extended Update Support, addressing a flaw that could allow unauthorized code execution. The flaw, rated Important by Red Hat Product Security, carries a CVSS base score listed in the CVE references. Users should apply the update immediately to mitigate potential exploitation; no workaround is provided.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-10-23T10:00:37.000Z",
+    "url": "https://access.redhat.com/errata/RHSA-2026:88561",
     "additionalSources": []
   },
   {
@@ -1436,6 +1384,32 @@
     "additionalSources": []
   },
   {
+    "id": "http://chromereleases.googleblog.com/feeds/4141447260395278637/comments/default",
+    "sourceUrl": "http://chromereleases.googleblog.com/feeds/4141447260395278637/comments/default",
+    "title": "Google Chrome Beta 157.0.8103.15 Released for Desktop",
+    "headline": "Google Chrome Beta 157.0.8103.15 Released for Desktop",
+    "summary": "Google released Chrome Beta 157.0.8103.15 for Windows, macOS, and Linux, updating the desktop channel. The update includes a partial list of changes documented in the Git log and offers guidance for users considering channel switches. Users are encouraged to file bugs for new issues and consult the community help forum for support.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "publishedAt": "2026-10-22T20:43:32.954Z",
+    "url": "http://chromereleases.googleblog.com/feeds/4141447260395278637/comments/default",
+    "additionalSources": []
+  },
+  {
+    "id": "http://chromereleases.googleblog.com/feeds/2567200690070519815/comments/default",
+    "sourceUrl": "http://chromereleases.googleblog.com/feeds/2567200690070519815/comments/default",
+    "title": "Google Chrome Early Stable Update for Desktop",
+    "headline": "Google Chrome Early Stable Update for Desktop",
+    "summary": "Google Chrome released an early stable update for Windows, version 157.0.8103.15/.16, with a forthcoming Mac release for a small user subset. The update includes multiple bug fixes and performance improvements, detailed in the release log. Users are encouraged to monitor the community forum for issue reporting and to consider switching release channels if desired.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "publishedAt": "2026-10-22T20:33:11.637Z",
+    "url": "http://chromereleases.googleblog.com/feeds/2567200690070519815/comments/default",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.darkreading.com/insider-threats/texas-laptop-farms-north-korean-it-workers",
     "sourceUrl": "https://www.darkreading.com/insider-threats/texas-laptop-farms-north-korean-it-workers",
     "title": "Federal Agents Seize Texas Laptop Farms Linked to Espionage",
@@ -1545,6 +1519,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-gre-JNpMHrTv?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Generic+Routing+Encapsulation+Denial+of+Service+Vulnerability%26vs_k%3D1",
+    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-gre-JNpMHrTv?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Generic+Routing+Encapsulation+Denial+of+Service+Vulnerability%26vs_k%3D1",
+    "title": "Cisco Snort 3 GRE Tunnel Denial of Service Vulnerability",
+    "headline": "Cisco Snort 3 GRE Tunnel Denial of Service Vulnerability",
+    "summary": "A flaw in Cisco Snort 3’s GRE tunnel decapsulation allows unauthenticated remote attackers to send crafted GRE payloads, triggering an unexpected engine restart. The improper handling of nested GRE traffic can cause a denial of service or bypass, depending on device configuration. Cisco has issued software updates; administrators should apply the patch promptly to mitigate the risk.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
+    "source": "Cisco PSIRT",
+    "publishedAt": "2026-10-22T19:03:27.000Z",
+    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-gre-JNpMHrTv?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Generic+Routing+Encapsulation+Denial+of+Service+Vulnerability%26vs_k%3D1",
+    "additionalSources": []
+  },
+  {
     "id": "https://blog.talosintelligence.com/i-had-plans-for-that-second/",
     "sourceUrl": "https://blog.talosintelligence.com/i-had-plans-for-that-second/",
     "title": "Critical PHP Vulnerabilities Identified",
@@ -1555,6 +1542,19 @@
     "source": "Cisco Talos",
     "publishedAt": "2026-10-22T18:04:32.000Z",
     "url": "https://blog.talosintelligence.com/i-had-plans-for-that-second/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/",
+    "sourceUrl": "https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/",
+    "title": "GitHub Bug Bounty Highlights Researcher @r31n",
+    "headline": "GitHub Bug Bounty Highlights Researcher @r31n",
+    "summary": "The GitHub Bug Bounty team highlighted researcher @r31n during Cybersecurity Awareness Month, detailing their research methodology and preferred bug categories. The post emphasizes how active bug hunting refines security expertise, showcasing real-world exploitation techniques and defensive insights. Security teams can adopt similar iterative testing practices to uncover latent vulnerabilities before external discovery.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "GitHub Security Blog",
+    "publishedAt": "2026-10-22T17:21:30.000Z",
+    "url": "https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/",
     "additionalSources": []
   },
   {
@@ -1699,6 +1699,32 @@
     "source": "BleepingComputer",
     "publishedAt": "2026-10-22T14:02:12.000Z",
     "url": "https://www.bleepingcomputer.com/news/security/machine-speed-attacks-require-machine-speed-detection-and-response/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-110063",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-110063",
+    "title": "CVE-2026-110063: Azure VM Inspector Elevation of Privilege Vulnerability",
+    "headline": "CVE-2026-110063: Azure VM Inspector Elevation of Privilege Vulnerability",
+    "summary": "CVE-2026-110063 exposes an improper link resolution flaw in Azure Virtual Machines’ VM Inspector, enabling attackers to elevate privileges across the network. The vulnerability permits unauthorized file access via link following, bypassing access controls and potentially granting full administrative rights to compromised hosts. Microsoft released a patch correcting link resolution; administrators should apply it immediately to stop privilege escalation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "publishedAt": "2026-10-22T14:00:00.000Z",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-110063",
+    "additionalSources": []
+  },
+  {
+    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96251",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96251",
+    "title": "Microsoft PowerShell CVE-2026-96251 Remote Code Execution Vulnerability",
+    "headline": "Microsoft PowerShell CVE-2026-96251 Remote Code Execution Vulnerability",
+    "summary": "A remote code execution flaw exists in Microsoft PowerShell, identified as CVE-2026-96251, affecting the command execution engine. The vulnerability allows attackers to run arbitrary code via crafted PowerShell commands, with a CVSS score of 8.3 and no active exploitation reported. Microsoft has released a patch; users should apply the update immediately to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "publishedAt": "2026-10-22T14:00:00.000Z",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96251",
     "additionalSources": []
   },
   {
@@ -1869,6 +1895,19 @@
     "source": "Ubuntu Security Notices",
     "publishedAt": "2026-10-22T12:07:23.000Z",
     "url": "https://ubuntu.com/security/notices/USN-8952-1",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-02",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-02",
+    "title": "Siemens Industrial Edge App Publisher Improper Certificate Validation and XSS Vulnerabilities",
+    "headline": "Siemens Industrial Edge App Publisher Improper Certificate Validation and XSS Vulnerabilities",
+    "summary": "Siemens Industrial Edge App Publisher contains a vulnerability chain combining improper certificate validation and cross‑site scripting that permits network attackers to impersonate the management server and execute arbitrary code through Node.js integration. The flaw carries a CVSS score of 8.3, enabling remote code execution on local machines. Siemens has issued an update; operators must upgrade to the latest version to remediate the issue.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "CISA",
+    "publishedAt": "2026-10-22T12:00:00.000Z",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-02",
     "additionalSources": []
   },
   {
@@ -4757,49 +4796,5 @@
         "sourceUrl": "https://www.sentinelone.com/blog/bring-your-own-vulnerable-driver-how-edr-killing-became-an-industry/"
       }
     ]
-  },
-  {
-    "id": "https://www.malwarebytes.com/blog/bugs/2026/10/update-windows-record-patch-tuesday-fixes-flaw-already-under-attack",
-    "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/10/update-windows-record-patch-tuesday-fixes-flaw-already-under-attack",
-    "title": "Microsoft Patch Tuesday Addresses Flaw Already Under Attack",
-    "headline": "Microsoft Patch Tuesday Addresses Flaw Already Under Attack",
-    "summary": "Microsoft’s October Patch Tuesday released 1,413 fixes, including a Windows flaw currently being exploited in the wild and two zero-day vulnerabilities. The patch mitigates the active exploitation vector, preventing further compromise of affected systems. Administrators should apply the update promptly to close the security gap.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Malwarebytes Labs",
-    "publishedAt": "2026-10-14T11:26:09.000Z",
-    "url": "https://www.malwarebytes.com/blog/bugs/2026/10/update-windows-record-patch-tuesday-fixes-flaw-already-under-attack",
-    "additionalSources": [
-      {
-        "source": "Dark Reading",
-        "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/zero-days-microsoft-october-patch-tuesday"
-      }
-    ]
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/researchers-used-public-openai-model-to.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/researchers-used-public-openai-model-to.html",
-    "title": "Chrome Full-Chain Exploit Built Using Public AI Model",
-    "headline": "Chrome Full-Chain Exploit Built Using Public AI Model",
-    "summary": "Security firm XBOW chained three previously unknown Google Chrome bugs into a single attack that executes code on a Windows machine when a user loads a web page. The team used OpenAI’s GPT‑5.6 Sol model to develop the exploit in six days. Google has confirmed and fixed all three bugs.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-14T11:19:02.000Z",
-    "url": "https://thehackernews.com/2026/10/researchers-used-public-openai-model-to.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.wiz.io/blog/wiz-for-gov-agents-fedramp",
-    "sourceUrl": "https://www.wiz.io/blog/wiz-for-gov-agents-fedramp",
-    "title": "Wiz AI Agents Introduced for Government CNAPP Security",
-    "headline": "Wiz AI Agents Introduced for Government CNAPP Security",
-    "summary": "Wiz Research announced the launch of Wiz AI Agents, an extension to its CNAPP platform tailored for public sector security teams. The AI agents automate threat detection and remediation, aiming to accelerate security operations and innovation across government environments.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Wiz Research",
-    "publishedAt": "2026-10-14T11:00:02.000Z",
-    "url": "https://www.wiz.io/blog/wiz-for-gov-agents-fedramp",
-    "additionalSources": []
   }
 ]
