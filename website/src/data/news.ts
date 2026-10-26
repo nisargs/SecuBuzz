@@ -11,6 +11,130 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-python-3-9-update-addresses-multiple-vulne-37e480",
+    "title": "Red Hat Python 3.9 Update Addresses Multiple Vulnerabilities",
+    "summary": "An update for python3.9 on Red Hat Enterprise Linux 9 addresses multiple security vulnerabilities identified by Red Hat Product Security. The update mitigates flaws that could allow attackers to execute arbitrary code or elevate privileges, as indicated by the CVSS base scores linked in the advisory. Red Hat recommends applying the latest python3.9 package to ensure protection.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89742",
+    "publishedAt": "2026-10-26T04:45:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-python-3-9-update-addresses-multiple-vulne",
+      "article-37e480",
+      "37e480",
+      "red-hat-python-3-9-update-addresses-multiple-vulnerabilities"
+    ]
+  },
+  {
+    "slug": "red-hat-bind9-18-update-mitigates-security-flaws-37e480",
+    "title": "Red Hat Bind9.18 Update Mitigates Security Flaws",
+    "summary": "An update for bind9.18 on Red Hat Enterprise Linux 9.8 Extended Update Support addresses security vulnerabilities that could enable remote code execution or privilege escalation. The advisory references CVSS base scores for each flaw, indicating moderate risk levels. Red Hat advises installing the bind9.18 update to eliminate the identified weaknesses.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89746",
+    "publishedAt": "2026-10-26T04:40:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-bind9-18-update-mitigates-security-flaws",
+      "article-37e480",
+      "37e480"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-security-update-for-container-too-37e480",
+    "title": "Red Hat Releases Security Update for container-tools:rhel8",
+    "summary": "An update for the container-tools:rhel8 module on Red Hat Enterprise Linux 8 addresses multiple security issues identified by Red Hat Product Security. The update mitigates vulnerabilities with a CVSS base score that classifies them as Important, indicating potential for significant impact if exploited. Red Hat has issued a patch that must be applied immediately to prevent exploitation of these flaws.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89760",
+    "publishedAt": "2026-10-26T04:35:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-security-update-for-container-too",
+      "article-37e480",
+      "37e480",
+      "red-hat-releases-security-update-for-container-tools-rhel8"
+    ]
+  },
+  {
+    "slug": "reddit-r-opensource-bans-ai-projects-and-solo-deve-1f923d",
+    "title": "Reddit r/opensource Bans AI Projects and Solo Developers",
+    "summary": "Reddit moderators of r/opensource have prohibited any project that uses AI, is AI-generated, or is intended for AI, requiring projects to be at least one year old, OSI licensed, and have a community with three or more contributors. The ban also mandates that the poster’s Reddit account must be at least one year old. The policy aims to restrict AI-driven content on the open-source forum.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/26/reddit-r-opensource-ai-ban/",
+    "publishedAt": "2026-10-26T04:30:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "reddit-r-opensource-bans-ai-projects-and-solo-deve",
+      "article-1f923d",
+      "1f923d",
+      "reddit-r-opensource-bans-ai-projects-and-solo-developers"
+    ]
+  },
+  {
+    "slug": "google-releases-elephant-goldfish-model-plugin-to-22409e",
+    "title": "Google Releases Elephant‑Goldfish Model Plugin to Detect AI Coding Errors",
+    "summary": "Google has open‑source the Elephant‑Goldfish Model (EGM) plugin, an internal tool that forces an AI coding agent to draft and defend a design document before coding. The plugin then presents the document to fresh AI sessions that have never seen the design conversation, prompting them to identify flaws. The release highlights Google’s effort to mitigate reliability risks in AI‑driven development.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/26/google-elephant-goldfish-model-plugin/",
+    "publishedAt": "2026-10-26T04:25:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-releases-elephant-goldfish-model-plugin-to",
+      "article-22409e",
+      "22409e",
+      "google-releases-elephant-goldfish-model-plugin-to-detect-ai-"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-security-patch-for-xorg-x11-server-37e480",
+    "title": "Red Hat Issues Security Patch for xorg-x11-server",
+    "summary": "Red Hat has released a security update for the xorg-x11-server package on Red Hat Enterprise Linux 8 to remediate identified vulnerabilities. The vulnerabilities carry a CVSS base score that classifies them as Important, suggesting a high likelihood of exploitation in the wild. Applying the provided patch is essential to eliminate the risk posed by these security flaws.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89747",
+    "publishedAt": "2026-10-26T03:59:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-security-patch-for-xorg-x11-server",
+      "article-37e480",
+      "37e480"
+    ]
+  },
+  {
+    "slug": "critical-php2shell-flaws-exploited-in-bitcoin-chal-624ddc",
+    "title": "Critical PHP2Shell Flaws Exploited in Bitcoin Challenge",
+    "summary": "A researcher exploited two critical PHP flaws to access a test server during a public Bitcoin challenge, demonstrating the vulnerabilities’ impact on web application security. The flaws allowed unauthenticated remote code execution, evidenced by the successful 19.28‑hour run and subsequent PoC release. A vendor patch is pending; security teams should monitor for updates and apply mitigations once available.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/php2shell-flaws-exploited/",
+    "publishedAt": "2026-10-26T03:41:52.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "critical-php2shell-flaws-exploited-in-bitcoin-chal",
+      "article-624ddc",
+      "624ddc",
+      "critical-php2shell-flaws-exploited-in-bitcoin-challenge"
+    ]
+  },
+  {
     "slug": "tailscale-ssh-flaws-enable-root-escalation-across-1a2e44",
     "title": "Tailscale SSH Flaws Enable Root Escalation Across Network",
     "summary": "A single compromised device on a Tailscale network can be leveraged to gain root access to other servers via SSH port forwarding, provided the target is permitted by the network’s access rules. The flaw allows an attacker to execute arbitrary commands on reachable hosts, potentially compromising critical infrastructure. Tailscale has released a patch; administrators should update immediately and disable port forwarding until verified.",
@@ -212,6 +336,24 @@ export const news: NewsBrief[] = [
       "article-14d194",
       "14d194",
       "google-updates-privacy-policy-to-allow-ai-features-to-use-gm"
+    ]
+  },
+  {
+    "slug": "researchers-push-over-2-million-updates-to-disable-6bf1dd",
+    "title": "Researchers Push Over 2 Million Updates to Disable Popcorn Time Updater That Could Fuel a Botnet",
+    "summary": "Researchers pushed over 2 million updates to disable a background updater in the abandoned Time4Popcorn app, preventing potential remote takeover. The updater could have allowed unauthorized remote code execution if left enabled, enabling an outsider to hijack the system. Eye Security recommends installing the update immediately and removing Time4Popcorn to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/researchers-push-over-2-million-updates.html",
+    "publishedAt": "2026-10-24T09:04:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "researchers-push-over-2-million-updates-to-disable",
+      "article-6bf1dd",
+      "6bf1dd",
+      "researchers-push-over-2-million-updates-to-disable-popcorn-t"
     ]
   },
   {
@@ -1561,6 +1703,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "critical-flaw-in-pillow-image-library-enables-os-c-334e72",
+    "title": "Critical Flaw in Pillow Image Library Enables OS Command Execution",
+    "summary": "A critical flaw in Pillow lets attackers execute OS commands by crafting an EPS image that specifies a file name. The vulnerability, CVE-2026-112900, occurs because Pillow passes the file name directly to Ghostscript without validation, enabling remote code execution. Pillow released patch 10.4.0; users should upgrade immediately or disable EPS support to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html",
+    "publishedAt": "2026-10-23T09:36:00.000Z",
+    "cves": [
+      "CVE-2026-112900"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "critical-flaw-in-pillow-image-library-enables-os-c",
+      "article-334e72",
+      "334e72",
+      "critical-flaw-in-pillow-image-library-enables-os-command-exe"
+    ]
+  },
+  {
     "slug": "sbi-notifies-customers-after-personal-data-exposur-6bea26",
     "title": "SBI Notifies Customers After Personal Data Exposure",
     "summary": "State Bank of India notified customers after a cyber incident that exposed personal information found on the dark web. Investigators are examining the suspected leak, while the bank confirmed that account balances and funds remain secure. Customers should monitor account activity and change passwords, and the bank has issued email and WhatsApp alerts to affected users.",
@@ -2184,6 +2346,23 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "chrome-beta-157-released-for-android-219bef",
+    "title": "Chrome Beta 157 Released for Android",
+    "summary": "Chrome Beta 157 (157.0.8103.14) for Android has been released, making the new build available through Google Play. The update lists changes in the Git log, with feature details on the Chromium blog and web platform updates. Users encountering new issues should file bugs through the Chrome Release Team channels; no immediate security patches or firmware upgrades are required.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "http://chromereleases.googleblog.com/feeds/1960193025315187574/comments/default",
+    "publishedAt": "2026-10-22T15:58:32.486Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-beta-157-released-for-android",
+      "article-219bef",
+      "219bef"
+    ]
+  },
+  {
     "slug": "microsoft-restores-exchange-web-services-api-for-l-679279",
     "title": "Microsoft Restores Exchange Web Services API for Legacy Applications",
     "summary": "Microsoft has announced that IT administrators can re‑enable the retired Exchange Web Services (EWS) API in Exchange Online to restore functionality for legacy EWS applications. The change addresses the deprecation that caused EWS apps to fail after the API was disabled in a recent update. Administrators should apply the new configuration settings immediately to prevent application downtime.",
@@ -2217,6 +2396,23 @@ export const news: NewsBrief[] = [
       "article-7fbd6f",
       "7fbd6f",
       "openvpn-certificate-subject-field-vulnerability-exposes-user"
+    ]
+  },
+  {
+    "slug": "chrome-beta-157-released-for-ios-610648",
+    "title": "Chrome Beta 157 Released for iOS",
+    "summary": "Chrome Beta 157 (157.0.8103.13) for iOS has been released, becoming available on the App Store shortly. The update lists changes in the Git log, with feature details on the Chromium blog and web platform updates. Users encountering new issues should file bugs through the Chrome Release Team channels; no immediate security patches or firmware upgrades are required.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "http://chromereleases.googleblog.com/feeds/6943765864254111853/comments/default",
+    "publishedAt": "2026-10-22T15:13:32.971Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-beta-157-released-for-ios",
+      "article-610648",
+      "610648"
     ]
   },
   {
@@ -2611,6 +2807,24 @@ export const news: NewsBrief[] = [
       "article-7fbd73",
       "7fbd73",
       "cve-2026-91990-tornado-http-request-handling-vulnerability"
+    ]
+  },
+  {
+    "slug": "siemens-software-center-uncontrolled-dll-search-pa-42ff49",
+    "title": "Siemens Software Center Uncontrolled DLL Search Path Exploit",
+    "summary": "Siemens Software Center loads DLLs from an uncontrolled search path, permitting an authenticated local attacker to place a malicious DLL and achieve arbitrary code execution with application privileges. The flaw is a path traversal vulnerability with CVSS 6.7, and active exploitation has been reported in the wild. Siemens has released an updated version; security teams should upgrade immediately or implement DLL search path restrictions.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-03",
+    "publishedAt": "2026-10-22T12:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "siemens-software-center-uncontrolled-dll-search-pa",
+      "article-42ff49",
+      "42ff49",
+      "siemens-software-center-uncontrolled-dll-search-path-exploit"
     ]
   },
   {
@@ -6340,223 +6554,6 @@ export const news: NewsBrief[] = [
       "article-6b6e62",
       "6b6e62",
       "windows-11-rdp-update-causes-connection-failures-for-non-adm"
-    ]
-  },
-  {
-    "slug": "siemens-issues-17-advisories-rockwell-fixes-armorb-534653",
-    "title": "Siemens Issues 17 Advisories, Rockwell Fixes ArmorBlock Takeover Flaw",
-    "summary": "On Patch Tuesday, Siemens released 17 advisories covering various industrial control system vulnerabilities. Rockwell Automation addressed a takeover flaw in its ArmorBlock product, allowing attackers to gain unauthorized control. The fixes mitigate potential remote code execution risks and strengthen system integrity.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/ics-patch-tuesday-siemens-issues-17-advisories-rockwell-fixes-armorblock-takeover-flaw/",
-    "publishedAt": "2026-10-14T15:15:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "siemens-issues-17-advisories-rockwell-fixes-armorb",
-      "article-534653",
-      "534653",
-      "siemens-issues-17-advisories-rockwell-fixes-armorblock-takeo"
-    ]
-  },
-  {
-    "slug": "experts-debate-ai-s-role-in-future-cryptanalysis-59cc8a",
-    "title": "Experts Debate AI's Role in Future Cryptanalysis",
-    "summary": "Matthew Green has published a pessimistic series on AI’s potential to outperform humans in cryptanalysis of symmetric and public-key ciphers. The author counters with optimism, emphasizing the over‑engineering of cryptographic systems and expressing stronger faith in their resilience.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Schneier on Security",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/the-future-of-ai-cryptanalysis.html",
-    "publishedAt": "2026-10-14T14:24:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "experts-debate-ai-s-role-in-future-cryptanalysis",
-      "article-59cc8a",
-      "59cc8a"
-    ]
-  },
-  {
-    "slug": "uk-sanctions-cryptomus-for-russian-money-launderin-6d5000",
-    "title": "UK Sanctions Cryptomus for Russian Money Laundering",
-    "summary": "The United Kingdom has imposed economic sanctions on Cryptomus, a cryptocurrency platform described as a major conduit for payments linked to ransomware, narcotics, darknet markets, fraud, and other cybercrime services. The move aims to block Russia’s ability to bypass existing financial restrictions.",
-    "category": "Nation State",
-    "severity": "LOW",
-    "source": "Krebs on Security",
-    "sourceUrl": "https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/",
-    "publishedAt": "2026-10-14T14:22:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "uk-sanctions-cryptomus-for-russian-money-launderin",
-      "article-6d5000",
-      "6d5000",
-      "uk-sanctions-cryptomus-for-russian-money-laundering"
-    ]
-  },
-  {
-    "slug": "harmonic-security-raises-50m-to-expand-workforce-a-1201a3",
-    "title": "Harmonic Security Raises $50M to Expand Workforce AI Protection",
-    "summary": "Cybersecurity startup Harmonic Security announced a $50 million funding round to grow its engineering and go‑to‑market teams in the United States and United Kingdom. The capital will support the development of AI‑driven solutions designed to protect enterprise workforces from evolving cyber threats.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/harmonic-security-raises-50-million-for-workforce-ai-protection/",
-    "publishedAt": "2026-10-14T14:09:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "harmonic-security-raises-50m-to-expand-workforce-a",
-      "article-1201a3",
-      "1201a3",
-      "harmonic-security-raises-50m-to-expand-workforce-ai-protecti"
-    ]
-  },
-  {
-    "slug": "closing-the-blind-spots-of-agentic-penetration-tes-696e4e",
-    "title": "Closing the Blind Spots of Agentic Penetration Testing",
-    "summary": "AI‑driven pentesting can reveal complex attack paths, but safety limits and network boundaries leave many assets untested. Combining agentic testing with exposure validation and breach simulation helps close these gaps, improving overall security posture.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/the-blind-spots-of-agentic-pentesting-and-how-to-close-them/",
-    "publishedAt": "2026-10-14T14:00:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "closing-the-blind-spots-of-agentic-penetration-tes",
-      "article-696e4e",
-      "696e4e",
-      "closing-the-blind-spots-of-agentic-penetration-testing"
-    ]
-  },
-  {
-    "slug": "global-crackdown-removes-3-7-million-scam-accounts-313abd",
-    "title": "Global Crackdown Removes 3.7 Million Scam Accounts",
-    "summary": "Meta, Google, Microsoft, and OpenAI joined an international operation that removed over 3.7 million Facebook and Instagram accounts, pages, and groups linked to West African scam networks. The crackdown led to 28 arrests and the rescue of 117 people forced into scam centers, marking a significant law enforcement success.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/west-african-scam-networks/",
-    "publishedAt": "2026-10-14T13:44:57.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "global-crackdown-removes-3-7-million-scam-accounts",
-      "article-313abd",
-      "313abd"
-    ]
-  },
-  {
-    "slug": "russian-travel-site-offline-after-cyberattack-948fdf",
-    "title": "Russian Travel Site Offline After Cyberattack",
-    "summary": "Customers of the Russian travel booking platform Anywayanyday could not book tickets or hotel rooms after a cyberattack, prompting the company to suspend reservations while it responds to the incident.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/russia-anywayanyday-travel-website-cyberattack",
-    "publishedAt": "2026-10-14T13:05:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "russian-travel-site-offline-after-cyberattack",
-      "article-948fdf",
-      "948fdf"
-    ]
-  },
-  {
-    "slug": "guide-highlights-pitfalls-of-ai-adoption-in-securi-16fb96",
-    "title": "Guide Highlights Pitfalls of AI Adoption in Security and IT",
-    "summary": "The guide examines why AI adoption in security and IT often fails, citing poor real‑world performance, increased complexity, broken trust, and new risks. It offers a step‑by‑step path from evaluation to implementation, emphasizing human oversight and clearer risk management to avoid costly AI pitfalls.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/14/tines-it-security-ai-adoption-guide/",
-    "publishedAt": "2026-10-14T13:00:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "guide-highlights-pitfalls-of-ai-adoption-in-securi",
-      "article-16fb96",
-      "16fb96",
-      "guide-highlights-pitfalls-of-ai-adoption-in-security-and-it"
-    ]
-  },
-  {
-    "slug": "russian-influence-operation-targets-latin-american-83898b",
-    "title": "Russian Influence Operation Targets Latin American Schools",
-    "summary": "A Russian influence operation used AI‑generated spoofed emails, fake government documents, and a fabricated local organization to target schools in Peru and Ecuador, among other Latin American institutions. The campaign aimed to spread disinformation and sow confusion.",
-    "category": "Nation State",
-    "severity": "MEDIUM",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/russian-influence-operation-targeting-latin-america",
-    "publishedAt": "2026-10-14T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "russian-influence-operation-targets-latin-american",
-      "article-83898b",
-      "83898b",
-      "russian-influence-operation-targets-latin-american-schools"
-    ]
-  },
-  {
-    "slug": "cloudflare-fixes-rare-hyperdrive-mysql-caching-bug-45e37a",
-    "title": "Cloudflare Fixes Rare Hyperdrive MySQL Caching Bug",
-    "summary": "Cloudflare identified a subtle protocol bug in Hyperdrive’s MySQL caching that caused a 0.001% error rate. The team traced the issue to a caching logic flaw, corrected the code, and released the fix, enabling stable MySQL support in Hyperdrive. No exploitation reported.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/hyperdrive-mysql/",
-    "publishedAt": "2026-10-14T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-fixes-rare-hyperdrive-mysql-caching-bug",
-      "article-45e37a",
-      "45e37a"
-    ]
-  },
-  {
-    "slug": "congressional-probe-faults-match-group-for-failing-5f2ce5",
-    "title": "Congressional Probe Faults Match Group for Failing to Rein In Dating App Scams",
-    "summary": "A congressional Joint Economic Committee probe found Match Group failed to curb dating‑app scams across Tinder, Hinge, Match, Plenty of Fish and others. The report highlights gaps in user protection and calls for stronger oversight of the industry’s fraud prevention measures.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/congressional-probe-faults-match-group-for-failing-to-stop-dating-app-scams",
-    "publishedAt": "2026-10-14T12:32:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "congressional-probe-faults-match-group-for-failing",
-      "article-5f2ce5",
-      "5f2ce5",
-      "congressional-probe-faults-match-group-for-failing-to-rein-i"
-    ]
-  },
-  {
-    "slug": "how-to-run-a-deepfake-readiness-drill-before-a-clo-2728dd",
-    "title": "How to Run a Deepfake Readiness Drill Before a Cloned Voice Calls Your Team",
-    "summary": "Security teams can test their defenses against cloned‑voice deepfakes by running a readiness drill that simulates a CFO’s voice requesting a supplier payment. The exercise exposes verification weaknesses in payment fraud, help‑desk resets, and access requests, helping teams tighten voice‑authentication protocols.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/how-to-run-deepfake-readiness-drill.html",
-    "publishedAt": "2026-10-14T11:50:00.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "SentinelOne",
-        "sourceUrl": "https://www.sentinelone.com/blog/bring-your-own-vulnerable-driver-how-edr-killing-became-an-industry/"
-      }
-    ],
-    "aliases": [
-      "how-to-run-a-deepfake-readiness-drill-before-a-clo",
-      "article-2728dd",
-      "2728dd",
-      "how-to-run-a-deepfake-readiness-drill-before-a-cloned-voice-"
     ]
   }
 ];

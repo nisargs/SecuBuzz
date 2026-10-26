@@ -2348,5 +2348,17 @@
   "https://access.redhat.com/errata/RHSA-2026:88561",
   "https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html",
   "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
-  "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-vba-bufdos-jAuFdvn9?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Visual+Basic+for+Applications+Buffer+Overflow+Denial+of+Service+Vulnerability%26vs_k%3D1"
+  "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-vba-bufdos-jAuFdvn9?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Visual+Basic+for+Applications+Buffer+Overflow+Denial+of+Service+Vulnerability%26vs_k%3D1",
+  "https://access.redhat.com/errata/RHSA-2026:89742",
+  "https://access.redhat.com/errata/RHSA-2026:89746",
+  "https://www.helpnetsecurity.com/2026/10/26/reddit-r-opensource-ai-ban/",
+  "https://www.helpnetsecurity.com/2026/10/26/google-elephant-goldfish-model-plugin/",
+  "https://cybersecuritynews.com/php2shell-flaws-exploited/",
+  "https://thehackernews.com/2026/10/researchers-push-over-2-million-updates.html",
+  "https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html",
+  "http://chromereleases.googleblog.com/feeds/1960193025315187574/comments/default",
+  "http://chromereleases.googleblog.com/feeds/6943765864254111853/comments/default",
+  "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-03",
+  "https://access.redhat.com/errata/RHSA-2026:89760",
+  "https://access.redhat.com/errata/RHSA-2026:89747"
 ]
