@@ -5,8 +5,98 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Oct 2026 13:28:41 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 17:18:35 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Kali Linux 2026.3 Release Adds Kernel 7.1.5 and Wardriving Support for TicWatch Pro 3</title>
+      <link>https://secubuzz.com/news/kali-linux-2026-3-release-adds-kernel-7-1-5-and-wa-4343c9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/kali-linux-2026-3-release-adds-kernel-7-1-5-and-wa-4343c9</guid>
+      <description><![CDATA[Kali Linux 2026.3 release includes kernel 7.1.5 and wardriving support for TicWatch Pro 3. The update overhauls public build scripts, enabling containerized builds with Docker or Podman, and maintains compatibility with older script pipelines. Users should review and adjust pipeline scripts accordingly and test builds in container environments to ensure functionality.]]></description>
+      <pubDate>Mon, 26 Oct 2026 13:24:24 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/26/kali-linux-2026-3-released/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Security Update for git-lfs on RHEL 8.6</title>
+      <link>https://secubuzz.com/news/red-hat-issues-security-update-for-git-lfs-on-rhel-37e479</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-security-update-for-git-lfs-on-rhel-37e479</guid>
+      <description><![CDATA[Red Hat released a security update for git-lfs targeting RHEL 8.6 Advanced Mission Critical and Extended Update Support. The update addresses unspecified vulnerabilities with an Important impact rating and a CVSS base score available via CVE links, indicating potential security risk. Administrators should apply the patch immediately and verify functionality to mitigate exposure.]]></description>
+      <pubDate>Mon, 26 Oct 2026 13:24:00 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:89926">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>AI-Driven Phishing Risk from Employee Data Sharing</title>
+      <link>https://secubuzz.com/news/ai-driven-phishing-risk-from-employee-data-sharing-6144cf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-driven-phishing-risk-from-employee-data-sharing-6144cf</guid>
+      <description><![CDATA[Employees pasting company data into AI tools create a risk vector for AI-generated phishing attacks. The concern was highlighted by 209 security professionals surveyed by O’Reilly, with only a quarter identifying it as a top threat. Security teams should enforce strict data handling policies and monitor AI tool usage to mitigate this risk.]]></description>
+      <pubDate>Mon, 26 Oct 2026 13:16:01 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/26/ai-tools-security-worry-survey/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Critical Libreswan Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-critical-libreswan-security-updat-37e479</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-libreswan-security-updat-37e479</guid>
+      <description><![CDATA[Red Hat released an important security update for libreswan on RHEL10 to address a critical vulnerability that could enable remote code execution via malformed packets. The flaw carries a CVSS score of 8.5 and is publicly documented. Apply the RHSA-2026:89923 patch or upgrade to the latest libreswan version to mitigate the risk.]]></description>
+      <pubDate>Mon, 26 Oct 2026 12:52:47 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:89923">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Security Update for rhc Client in Enterprise Linux 9.2 SAP Services</title>
+      <link>https://secubuzz.com/news/red-hat-issues-security-update-for-rhc-client-in-e-37e479</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-security-update-for-rhc-client-in-e-37e479</guid>
+      <description><![CDATA[Red Hat released an important security update for the rhc client used in Enterprise Linux 9.2 Update Services for SAP Solutions, addressing vulnerabilities that could allow privilege escalation or code execution. The update contains patches for several CVEs, though specific identifiers are not listed in the advisory. Red Hat recommends applying the rhc update immediately to mitigate the exposed weaknesses.]]></description>
+      <pubDate>Mon, 26 Oct 2026 12:22:30 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:89915">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>LiteLLM Supply‑Chain Attack via Exposed Key</title>
+      <link>https://secubuzz.com/news/litellm-supply-chain-attack-via-exposed-key-54e511</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/litellm-supply-chain-attack-via-exposed-key-54e511</guid>
+      <description><![CDATA[A key accidentally exposed in May enabled a supply‑chain attack that targeted tens of thousands of LiteLLM users. The flaw allowed attackers to inject malicious code into the open‑source framework, compromising user credentials and data integrity without requiring additional authentication. LiteLLM has released a patch and recommends users update to the latest version and revoke any exposed keys immediately.]]></description>
+      <pubDate>Mon, 26 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://therecord.media/litellm-hackers-ai-malware">The Record</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Wasmtime Flaws Enable WebAssembly Sandbox Escape on ARM64</title>
+      <link>https://secubuzz.com/news/wasmtime-flaws-enable-webassembly-sandbox-escape-o-c567a2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/wasmtime-flaws-enable-webassembly-sandbox-escape-o-c567a2</guid>
+      <description><![CDATA[Two critical flaws in the Wasmtime WebAssembly runtime could allow a malicious module to escape its sandbox on vulnerable ARM64 builds. The vulnerabilities require a compromised Wasmtime build and enable arbitrary code execution, presenting a high‑severity risk to applications embedding the runtime. Fixed releases are available; upgrade to the latest Wasmtime version and audit embedded ARM64 builds.]]></description>
+      <pubDate>Mon, 26 Oct 2026 11:52:41 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/two-critical-wasmtime-flaws-could-let.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>NFC Relay Attacks Drain Over $400,000 From Bank Accounts</title>
+      <link>https://secubuzz.com/news/nfc-relay-attacks-drain-over-400-000-from-bank-acc-f7a333</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/nfc-relay-attacks-drain-over-400-000-from-bank-acc-f7a333</guid>
+      <description><![CDATA[NFC relay attacks drained over $400,000 from bank accounts by persuading victims to install a malicious app and scan their credit cards. Attackers exploited the NFC relay vulnerability, enabling unauthorized access to banking credentials through the installed app. Dutch Police arrested two suspects; victims should monitor accounts and report unauthorized transactions.]]></description>
+      <pubDate>Mon, 26 Oct 2026 11:47:52 GMT</pubDate>
+      <source url="https://www.securityweek.com/dutch-police-arrest-two-over-nfc-relay-attacks-that-drained-400000/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Quest Diagnostics Breach Exposes Patient Records</title>
+      <link>https://secubuzz.com/news/quest-diagnostics-breach-exposes-patient-records-6242fd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/quest-diagnostics-breach-exposes-patient-records-6242fd</guid>
+      <description><![CDATA[Quest Diagnostics suffered a breach exposing personal information and patient records. The incident involved unauthorized access to the company’s database, compromising sensitive health data, though specific exploit details are not disclosed. Patients should review their records, monitor for identity theft, and follow Quest’s guidance for remediation and notify relevant authorities if suspicious activity is detected.]]></description>
+      <pubDate>Mon, 26 Oct 2026 11:34:00 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/data-breaches/2026/10/patient-records-exposed-in-quest-breach-what-you-need-to-know">Malwarebytes Labs</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>SOC Alert Overload Hinders Attack Visibility, NDR Offers Solution</title>
+      <link>https://secubuzz.com/news/soc-alert-overload-hinders-attack-visibility-ndr-o-f13606</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/soc-alert-overload-hinders-attack-visibility-ndr-o-f13606</guid>
+      <description><![CDATA[SOC teams confront a deluge of alerts that rarely disclose how an intrusion began, a challenge detailed in the article. Network detection and response platforms aggregate these alerts into a unified timeline, enabling defenders to trace attack progression. Security teams should adopt NDR solutions and integrate them with SIEMs to achieve comprehensive visibility and faster incident response.]]></description>
+      <pubDate>Mon, 26 Oct 2026 11:23:56 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/between-alerts-what-attackers-do-in.html">The Hacker News</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Red Hat Delve Update Addresses Medium‑Severity Vulnerability</title>
       <link>https://secubuzz.com/news/red-hat-delve-update-addresses-medium-severity-vul-37e47c</link>
@@ -60,6 +150,15 @@
       <pubDate>Mon, 26 Oct 2026 09:41:43 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:89850">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>PHP2Shell RCE Vulnerabilities Exploited in the Wild</title>
+      <link>https://secubuzz.com/news/php2shell-rce-vulnerabilities-exploited-in-the-wil-3d2d87</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/php2shell-rce-vulnerabilities-exploited-in-the-wil-3d2d87</guid>
+      <description><![CDATA[Two critical RCE vulnerabilities (CVE-2026-109618 and CVE-2026-109619), collectively known as PHP2Shell, have been exploited in the wild against PHP applications via remote code execution. Unauthenticated attackers can run arbitrary code with web‑server privileges, enabling full system compromise. PHP releases a patch; administrators should update to the latest version or apply the vendor’s advisory to mitigate the risk.]]></description>
+      <pubDate>Mon, 26 Oct 2026 09:19:57 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/">BleepingComputer</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Microsoft 365 Token‑Replay Campaign Compromises 97 Accounts at 79 Organizations</title>
@@ -143,6 +242,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Gheist Attempts to Abuse Stolen GitHub Tokens via Secret‑Dumping Workflows</title>
+      <link>https://secubuzz.com/news/gheist-attempts-to-abuse-stolen-github-tokens-via-266dd0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/gheist-attempts-to-abuse-stolen-github-tokens-via-266dd0</guid>
+      <description><![CDATA[Gheist attempts to abuse stolen GitHub tokens by planting secret‑dumping workflows across reachable repositories. The attack exploits GitHub’s workflow permissions model, enabling credential exfiltration without a command‑and‑control server, and has been partially mitigated by recent platform security updates. Security teams should enforce least‑privilege workflow permissions, rotate compromised tokens, and apply GitHub’s security patches to block further Gheist deployments.]]></description>
+      <pubDate>Sun, 25 Oct 2026 17:55:33 GMT</pubDate>
+      <source url="https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles">Wiz Research</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Tailscale SSH Flaws Enable Root Escalation Across Network</title>
       <link>https://secubuzz.com/news/tailscale-ssh-flaws-enable-root-escalation-across-1a2e44</link>
       <guid isPermaLink="true">https://secubuzz.com/news/tailscale-ssh-flaws-enable-root-escalation-across-1a2e44</guid>
@@ -158,6 +266,24 @@
       <description><![CDATA[Threat actors exploited PHP2Shell flaws identified as CVE-2026-109618 and CVE-2026-109619 to compromise a European government system, retrieving password hashes and multi‑factor credentials within two hours. The vulnerabilities enable remote code execution through unsanitized input in PHP applications, allowing attackers to elevate privileges and exfiltrate data. Patches for the affected PHP versions are available; security teams must apply them and enforce strict input validation.]]></description>
       <pubDate>Sun, 25 Oct 2026 17:19:46 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>CVE-2026-70197 .NET and Visual Studio Remote Code Execution Vulnerability</title>
+      <link>https://secubuzz.com/news/cve-2026-70197-net-and-visual-studio-remote-code-e-74506d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-70197-net-and-visual-studio-remote-code-e-74506d</guid>
+      <description><![CDATA[A remote code execution vulnerability exists in .NET and Visual Studio, identified as CVE-2026-70197, allowing attackers to execute arbitrary code via crafted input during software updates. The flaw stems from insufficient input validation in the update handling module, exposing systems to potential compromise if unpatched. Microsoft has released a patch in the latest update; administrators should apply it immediately to mitigate risk.]]></description>
+      <pubDate>Sun, 25 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70197">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>CVE-2026-102870 ASP.NET Core Remote Code Execution Vulnerability</title>
+      <link>https://secubuzz.com/news/cve-2026-102870-asp-net-core-remote-code-execution-1ff9da</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-102870-asp-net-core-remote-code-execution-1ff9da</guid>
+      <description><![CDATA[ASP.NET Core contains a remote code execution flaw, CVE-2026-102870, that permits attackers to run arbitrary code through malformed requests processed during runtime. The vulnerability arises from improper sanitization of user-supplied data in the request pipeline, enabling exploitation without authentication. Microsoft has issued a patch; deploying the update is essential to secure affected deployments.]]></description>
+      <pubDate>Sun, 25 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102870">Microsoft MSRC</source>
       <category>CVE</category>
     </item>
     <item>
@@ -330,132 +456,6 @@
       <pubDate>Fri, 23 Oct 2026 19:43:28 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:88562">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>PHP2Shell Vulnerabilities Require Comprehensive Mitigation Beyond Simple Updates</title>
-      <link>https://secubuzz.com/news/php2shell-vulnerabilities-require-comprehensive-mi-795ba5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/php2shell-vulnerabilities-require-comprehensive-mi-795ba5</guid>
-      <description><![CDATA[The PHP2Shell vulnerability exposes critical PHP flaws that enable remote code execution through crafted input. Attackers can exploit these weaknesses by injecting malicious payloads, potentially compromising web applications and servers. Security teams should perform a thorough risk assessment, apply the latest PHP patches, and enforce input validation to mitigate exploitation.]]></description>
-      <pubDate>Fri, 23 Oct 2026 19:41:23 GMT</pubDate>
-      <source url="https://www.darkreading.com/application-security/exposed-php2shell-cyber-experts-advice">Dark Reading</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:88835: Important: php:8.2 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-88835-important-php-8-2-security-update-37e4f1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-88835-important-php-8-2-security-update-37e4f1</guid>
-      <description><![CDATA[A vulnerability in the php:8.2 module on Red Hat Enterprise Linux 9.4 for SAP Solutions allows attackers to compromise web applications through the affected PHP runtime. The root cause is an unspecified flaw, with a CVSS base score available via CVE links, and no active exploitation has been reported. Red Hat has released a patch; security teams should apply the update immediately.]]></description>
-      <pubDate>Fri, 23 Oct 2026 19:39:20 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:88835">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:88834: Important: php:8.2 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-88834-important-php-8-2-security-update-37e4f1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-88834-important-php-8-2-security-update-37e4f1</guid>
-      <description><![CDATA[A vulnerability in the php:8.2 module on Red Hat Enterprise Linux 9.6 Extended Update Support permits attackers to compromise web applications via the affected PHP runtime. The flaw is unspecified, with a CVSS base score provided through CVE links, and no active exploitation has been observed. Red Hat has issued a patch; apply it without delay.]]></description>
-      <pubDate>Fri, 23 Oct 2026 19:29:21 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:88834">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Microsoft Teams to Add AI‑Powered Phishing Detection</title>
-      <link>https://secubuzz.com/news/microsoft-teams-to-add-ai-powered-phishing-detecti-5ee80e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-teams-to-add-ai-powered-phishing-detecti-5ee80e</guid>
-      <description><![CDATA[Microsoft announced that Teams will incorporate AI‑powered, context‑aware phishing detection in messages beginning early November 2026. The feature leverages machine learning models trained on historical phishing campaigns to flag suspicious links and attachments before users interact. Microsoft will release the update through the Teams app channel, and administrators should monitor rollout logs for any false positives.]]></description>
-      <pubDate>Fri, 23 Oct 2026 18:54:41 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-to-get-ai-powered-context-aware-phishing-detection/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>BlackX UEFI Bootkit Bypasses Secure Boot on Patched Windows Systems Missing Revocations</title>
-      <link>https://secubuzz.com/news/blackx-uefi-bootkit-bypasses-secure-boot-on-patche-1cafe3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/blackx-uefi-bootkit-bypasses-secure-boot-on-patche-1cafe3</guid>
-      <description><![CDATA[BlackX, a UEFI bootkit, bypasses Secure Boot on patched Windows systems lacking revocation lists, targeting diplomatic organizations in Tajikistan, Uzbekistan, and Turkmenistan. The bootkit exploits a firmware-level privilege escalation flaw that remains active, enabling attackers to load malicious code before OS authentication, potentially compromising system integrity and confidentiality. Apply the Microsoft firmware patch and update revocation lists immediately.]]></description>
-      <pubDate>Fri, 23 Oct 2026 18:50:13 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/blackx-uefi-bootkit-bypasses-secure.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cloudflare Enhances Range Request Handling to Reduce Origin Bandwidth Waste</title>
-      <link>https://secubuzz.com/news/cloudflare-enhances-range-request-handling-to-redu-aaedf1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-enhances-range-request-handling-to-redu-aaedf1</guid>
-      <description><![CDATA[Cloudflare’s Pingora cache architecture was updated to handle large file range requests more efficiently, targeting origin bandwidth waste on small requests. The change addresses naive byte-range caching that previously consumed gigabytes of origin bandwidth, reducing latency and bandwidth usage. No patch required; the update is deployed in Cloudflare’s infrastructure, improving performance for all users.]]></description>
-      <pubDate>Fri, 23 Oct 2026 18:22:59 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/origin-range-requests/">Cloudflare Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>LiteLLM 1.107.0 Supply‑Chain Compromise via Python Startup Hooks</title>
-      <link>https://secubuzz.com/news/litellm-1-107-0-supply-chain-compromise-via-python-3513cb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/litellm-1-107-0-supply-chain-compromise-via-python-3513cb</guid>
-      <description><![CDATA[A supply‑chain compromise in LiteLLM 1.107.0 leveraged Python startup hooks to exfiltrate credentials and load remote code. The flaw allows attackers to inject malicious modules during interpreter initialization, bypassing standard package verification and enabling credential theft without user interaction. Microsoft recommends updating to the patched LiteLLM release and disabling startup hooks as a mitigation until a vendor patch is issued.]]></description>
-      <pubDate>Fri, 23 Oct 2026 18:12:19 GMT</pubDate>
-      <source url="https://www.microsoft.com/en-us/security/blog/2026/10/23/inside-the-litellm-1-107-0-supply-chain-compromise-credential-theft-through-python-startup-hooks/">Microsoft Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cloudflare Launches GeoKey Manager to Enforce Post‑Quantum Geographic Key Isolation</title>
-      <link>https://secubuzz.com/news/cloudflare-launches-geokey-manager-to-enforce-post-5eab96</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-launches-geokey-manager-to-enforce-post-5eab96</guid>
-      <description><![CDATA[Cloudflare introduced a post‑quantum GeoKey Manager that isolates decryption keys by geographic region, preventing harvest‑now‑decrypt‑later attacks. The solution rewrites the cryptography stack to enforce strict data sovereignty, ensuring keys cannot be extracted from one region and used elsewhere. The feature is available in Cloudflare’s current product offering; users should enable GeoKey Manager to maintain compliance with regional data‑protection regulations.]]></description>
-      <pubDate>Fri, 23 Oct 2026 18:06:56 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/post-quantum-geo-key-manager/">Cloudflare Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Ruby Releases 4.0.9, 3.4.12, 3.3.13 to Fix Onigmo Regex Bugs Behind GitLab RCE Flaws</title>
-      <link>https://secubuzz.com/news/ruby-releases-4-0-9-3-4-12-3-3-13-to-fix-onigmo-re-69b84c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ruby-releases-4-0-9-3-4-12-3-3-13-to-fix-onigmo-re-69b84c</guid>
-      <description><![CDATA[Ruby released 4.0.9, 3.4.12, and 3.3.13 to address three Onigmo regex engine bugs that enabled memory corruption during pattern compilation. These defects underpinned four critical GitLab RCE vulnerabilities, allowing crafted patterns to execute arbitrary code on GitLab servers without authentication. GitLab has applied patches, and Ruby advises users to upgrade to the fixed releases and monitor for anomalous regex activity.]]></description>
-      <pubDate>Fri, 23 Oct 2026 17:54:08 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/ruby-fixes-three-regex-engine-bugs.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Ransomware Affiliates Deploy AI-Driven Intrusion Ecosystem</title>
-      <link>https://secubuzz.com/news/ransomware-affiliates-deploy-ai-driven-intrusion-e-6dc9f4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ransomware-affiliates-deploy-ai-driven-intrusion-e-6dc9f4</guid>
-      <description><![CDATA[Cybersecurity researchers uncovered an AI‑driven intrusion ecosystem operated by affiliates of the INC and The Gentlemen ransomware groups, centered on an Autonomous Red Team Kill Chain Framework called Phantom. The framework enables automated intrusion and data‑extortion operations, leveraging AI agents to orchestrate attacks across multiple targets. Security teams should monitor for AI‑based intrusion patterns and block Phantom command and control traffic to mitigate exploitation.]]></description>
-      <pubDate>Fri, 23 Oct 2026 17:50:47 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html">The Hacker News</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>CVE-2026-85788 Exploits awslabs mysql-mcp-server SQL Validation Flaw</title>
-      <link>https://secubuzz.com/news/cve-2026-85788-exploits-awslabs-mysql-mcp-server-s-470efb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-85788-exploits-awslabs-mysql-mcp-server-s-470efb</guid>
-      <description><![CDATA[CVE-2026-85788 exposes a flaw in the awslabs mysql-mcp-server SQL validation component, allowing attackers to bypass input restrictions and execute arbitrary SQL commands. The vulnerability arises from incomplete input sanitization, enabling unauthorized data manipulation without authentication. AWS has released a patch; administrators should apply the update immediately to mitigate the risk.]]></description>
-      <pubDate>Fri, 23 Oct 2026 17:44:25 GMT</pubDate>
-      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-103-aws/">AWS Security Bulletins</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>CVE-2026-84942: Stored XSS via Vega Expression Bypass in OpenSearch Dashboards</title>
-      <link>https://secubuzz.com/news/cve-2026-84942-stored-xss-via-vega-expression-bypa-455a23</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-84942-stored-xss-via-vega-expression-bypa-455a23</guid>
-      <description><![CDATA[A stored cross‑site scripting vulnerability in OpenSearch Dashboards allows attackers to inject malicious Vega expressions that bypass input sanitization. CVE‑2026‑84942 exploits a parser logic bug, enabling unauthenticated script execution that can hijack user sessions. An official patch is available from Elastic; administrators should update OpenSearch Dashboards immediately and review input validation settings to mitigate exploitation.]]></description>
-      <pubDate>Fri, 23 Oct 2026 17:43:59 GMT</pubDate>
-      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-102-aws/">AWS Security Bulletins</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>CVE-2026-85787 Allows Data Modification Beyond Read-Only Scope in awslabs postgres-mcp-server</title>
-      <link>https://secubuzz.com/news/cve-2026-85787-allows-data-modification-beyond-rea-43a54a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-85787-allows-data-modification-beyond-rea-43a54a</guid>
-      <description><![CDATA[CVE-2026-85787 reveals that the Amazon awslabs postgres-mcp-server SQL validation component fails to enforce disallowed input checks, permitting data modifications beyond the intended read-only scope. The root cause is an incomplete list of prohibited inputs, leading to potential unauthorized data alteration. AWS has issued a fix; users must update the server to prevent exploitation.]]></description>
-      <pubDate>Fri, 23 Oct 2026 17:43:25 GMT</pubDate>
-      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-101-aws/">AWS Security Bulletins</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>FCC Bans Two Devices Containing Huawei-Linked Surveillance Chips</title>
-      <link>https://secubuzz.com/news/fcc-bans-two-devices-containing-huawei-linked-surv-4c7a3a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fcc-bans-two-devices-containing-huawei-linked-surv-4c7a3a</guid>
-      <description><![CDATA[The FCC has banned the import and sale of a wireless video transmitter and a dashboard camera that contain surveillance chips manufactured by Huawei subsidiary HiSilicon. The devices were identified as part of a broader effort to restrict the use of Chinese-made hardware in critical security applications, citing national security concerns. The ban applies to all U.S. importers and distributors.]]></description>
-      <pubDate>Fri, 23 Oct 2026 17:28:00 GMT</pubDate>
-      <source url="https://therecord.media/fcc-bans-devices-huawei-surveillance-chips">The Record</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

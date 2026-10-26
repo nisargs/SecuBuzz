@@ -11,6 +11,183 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "kali-linux-2026-3-release-adds-kernel-7-1-5-and-wa-4343c9",
+    "title": "Kali Linux 2026.3 Release Adds Kernel 7.1.5 and Wardriving Support for TicWatch Pro 3",
+    "summary": "Kali Linux 2026.3 release includes kernel 7.1.5 and wardriving support for TicWatch Pro 3. The update overhauls public build scripts, enabling containerized builds with Docker or Podman, and maintains compatibility with older script pipelines. Users should review and adjust pipeline scripts accordingly and test builds in container environments to ensure functionality.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/26/kali-linux-2026-3-released/",
+    "publishedAt": "2026-10-26T13:24:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "kali-linux-2026-3-release-adds-kernel-7-1-5-and-wa",
+      "article-4343c9",
+      "4343c9",
+      "kali-linux-2026-3-release-adds-kernel-7-1-5-and-wardriving-s"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-security-update-for-git-lfs-on-rhel-37e479",
+    "title": "Red Hat Issues Security Update for git-lfs on RHEL 8.6",
+    "summary": "Red Hat released a security update for git-lfs targeting RHEL 8.6 Advanced Mission Critical and Extended Update Support. The update addresses unspecified vulnerabilities with an Important impact rating and a CVSS base score available via CVE links, indicating potential security risk. Administrators should apply the patch immediately and verify functionality to mitigate exposure.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89926",
+    "publishedAt": "2026-10-26T13:24:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-security-update-for-git-lfs-on-rhel",
+      "article-37e479",
+      "37e479",
+      "red-hat-issues-security-update-for-git-lfs-on-rhel-8-6"
+    ]
+  },
+  {
+    "slug": "ai-driven-phishing-risk-from-employee-data-sharing-6144cf",
+    "title": "AI-Driven Phishing Risk from Employee Data Sharing",
+    "summary": "Employees pasting company data into AI tools create a risk vector for AI-generated phishing attacks. The concern was highlighted by 209 security professionals surveyed by O’Reilly, with only a quarter identifying it as a top threat. Security teams should enforce strict data handling policies and monitor AI tool usage to mitigate this risk.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/26/ai-tools-security-worry-survey/",
+    "publishedAt": "2026-10-26T13:16:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-driven-phishing-risk-from-employee-data-sharing",
+      "article-6144cf",
+      "6144cf"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-critical-libreswan-security-updat-37e479",
+    "title": "Red Hat Releases Critical Libreswan Security Update",
+    "summary": "Red Hat released an important security update for libreswan on RHEL10 to address a critical vulnerability that could enable remote code execution via malformed packets. The flaw carries a CVSS score of 8.5 and is publicly documented. Apply the RHSA-2026:89923 patch or upgrade to the latest libreswan version to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89923",
+    "publishedAt": "2026-10-26T12:52:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-critical-libreswan-security-updat",
+      "article-37e479",
+      "37e479",
+      "red-hat-releases-critical-libreswan-security-update"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-security-update-for-rhc-client-in-e-37e479",
+    "title": "Red Hat Issues Security Update for rhc Client in Enterprise Linux 9.2 SAP Services",
+    "summary": "Red Hat released an important security update for the rhc client used in Enterprise Linux 9.2 Update Services for SAP Solutions, addressing vulnerabilities that could allow privilege escalation or code execution. The update contains patches for several CVEs, though specific identifiers are not listed in the advisory. Red Hat recommends applying the rhc update immediately to mitigate the exposed weaknesses.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89915",
+    "publishedAt": "2026-10-26T12:22:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-security-update-for-rhc-client-in-e",
+      "article-37e479",
+      "37e479",
+      "red-hat-issues-security-update-for-rhc-client-in-enterprise-"
+    ]
+  },
+  {
+    "slug": "litellm-supply-chain-attack-via-exposed-key-54e511",
+    "title": "LiteLLM Supply‑Chain Attack via Exposed Key",
+    "summary": "A key accidentally exposed in May enabled a supply‑chain attack that targeted tens of thousands of LiteLLM users. The flaw allowed attackers to inject malicious code into the open‑source framework, compromising user credentials and data integrity without requiring additional authentication. LiteLLM has released a patch and recommends users update to the latest version and revoke any exposed keys immediately.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/litellm-hackers-ai-malware",
+    "publishedAt": "2026-10-26T12:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "litellm-supply-chain-attack-via-exposed-key",
+      "article-54e511",
+      "54e511"
+    ]
+  },
+  {
+    "slug": "wasmtime-flaws-enable-webassembly-sandbox-escape-o-c567a2",
+    "title": "Wasmtime Flaws Enable WebAssembly Sandbox Escape on ARM64",
+    "summary": "Two critical flaws in the Wasmtime WebAssembly runtime could allow a malicious module to escape its sandbox on vulnerable ARM64 builds. The vulnerabilities require a compromised Wasmtime build and enable arbitrary code execution, presenting a high‑severity risk to applications embedding the runtime. Fixed releases are available; upgrade to the latest Wasmtime version and audit embedded ARM64 builds.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/two-critical-wasmtime-flaws-could-let.html",
+    "publishedAt": "2026-10-26T11:52:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "wasmtime-flaws-enable-webassembly-sandbox-escape-o",
+      "article-c567a2",
+      "c567a2",
+      "wasmtime-flaws-enable-webassembly-sandbox-escape-on-arm64"
+    ]
+  },
+  {
+    "slug": "nfc-relay-attacks-drain-over-400-000-from-bank-acc-f7a333",
+    "title": "NFC Relay Attacks Drain Over $400,000 From Bank Accounts",
+    "summary": "NFC relay attacks drained over $400,000 from bank accounts by persuading victims to install a malicious app and scan their credit cards. Attackers exploited the NFC relay vulnerability, enabling unauthorized access to banking credentials through the installed app. Dutch Police arrested two suspects; victims should monitor accounts and report unauthorized transactions.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/dutch-police-arrest-two-over-nfc-relay-attacks-that-drained-400000/",
+    "publishedAt": "2026-10-26T11:47:52.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "nfc-relay-attacks-drain-over-400-000-from-bank-acc",
+      "article-f7a333",
+      "f7a333",
+      "nfc-relay-attacks-drain-over-400-000-from-bank-accounts"
+    ]
+  },
+  {
+    "slug": "quest-diagnostics-breach-exposes-patient-records-6242fd",
+    "title": "Quest Diagnostics Breach Exposes Patient Records",
+    "summary": "Quest Diagnostics suffered a breach exposing personal information and patient records. The incident involved unauthorized access to the company’s database, compromising sensitive health data, though specific exploit details are not disclosed. Patients should review their records, monitor for identity theft, and follow Quest’s guidance for remediation and notify relevant authorities if suspicious activity is detected.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/data-breaches/2026/10/patient-records-exposed-in-quest-breach-what-you-need-to-know",
+    "publishedAt": "2026-10-26T11:34:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "quest-diagnostics-breach-exposes-patient-records",
+      "article-6242fd",
+      "6242fd"
+    ]
+  },
+  {
+    "slug": "soc-alert-overload-hinders-attack-visibility-ndr-o-f13606",
+    "title": "SOC Alert Overload Hinders Attack Visibility, NDR Offers Solution",
+    "summary": "SOC teams confront a deluge of alerts that rarely disclose how an intrusion began, a challenge detailed in the article. Network detection and response platforms aggregate these alerts into a unified timeline, enabling defenders to trace attack progression. Security teams should adopt NDR solutions and integrate them with SIEMs to achieve comprehensive visibility and faster incident response.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/between-alerts-what-attackers-do-in.html",
+    "publishedAt": "2026-10-26T11:23:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "soc-alert-overload-hinders-attack-visibility-ndr-o",
+      "article-f13606",
+      "f13606",
+      "soc-alert-overload-hinders-attack-visibility-ndr-offers-solu"
+    ]
+  },
+  {
     "slug": "red-hat-delve-update-addresses-medium-severity-vul-37e47c",
     "title": "Red Hat Delve Update Addresses Medium‑Severity Vulnerability",
     "summary": "An update for the delve component in Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions addresses a security flaw that could allow unauthorized code execution via malformed input. The vulnerability’s CVSS base score is documented in the referenced CVE links, indicating a medium‑severity risk. Red Hat has released a patch; administrators should apply it immediately.",
@@ -115,6 +292,27 @@ export const news: NewsBrief[] = [
       "red-hat-issues-flatpak-security-update-for-rhel-9",
       "article-37e47c",
       "37e47c"
+    ]
+  },
+  {
+    "slug": "php2shell-rce-vulnerabilities-exploited-in-the-wil-3d2d87",
+    "title": "PHP2Shell RCE Vulnerabilities Exploited in the Wild",
+    "summary": "Two critical RCE vulnerabilities (CVE-2026-109618 and CVE-2026-109619), collectively known as PHP2Shell, have been exploited in the wild against PHP applications via remote code execution. Unauthenticated attackers can run arbitrary code with web‑server privileges, enabling full system compromise. PHP releases a patch; administrators should update to the latest version or apply the vendor’s advisory to mitigate the risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/",
+    "publishedAt": "2026-10-26T09:19:57.000Z",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "php2shell-rce-vulnerabilities-exploited-in-the-wil",
+      "article-3d2d87",
+      "3d2d87",
+      "php2shell-rce-vulnerabilities-exploited-in-the-wild"
     ]
   },
   {
@@ -278,6 +476,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "gheist-attempts-to-abuse-stolen-github-tokens-via-266dd0",
+    "title": "Gheist Attempts to Abuse Stolen GitHub Tokens via Secret‑Dumping Workflows",
+    "summary": "Gheist attempts to abuse stolen GitHub tokens by planting secret‑dumping workflows across reachable repositories. The attack exploits GitHub’s workflow permissions model, enabling credential exfiltration without a command‑and‑control server, and has been partially mitigated by recent platform security updates. Security teams should enforce least‑privilege workflow permissions, rotate compromised tokens, and apply GitHub’s security patches to block further Gheist deployments.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Wiz Research",
+    "sourceUrl": "https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles",
+    "publishedAt": "2026-10-25T17:55:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gheist-attempts-to-abuse-stolen-github-tokens-via",
+      "article-266dd0",
+      "266dd0",
+      "gheist-attempts-to-abuse-stolen-github-tokens-via-secret-dum"
+    ]
+  },
+  {
     "slug": "tailscale-ssh-flaws-enable-root-escalation-across-1a2e44",
     "title": "Tailscale SSH Flaws Enable Root Escalation Across Network",
     "summary": "A single compromised device on a Tailscale network can be leveraged to gain root access to other servers via SSH port forwarding, provided the target is permitted by the network’s access rules. The flaw allows an attacker to execute arbitrary commands on reachable hosts, potentially compromising critical infrastructure. Tailscale has released a patch; administrators should update immediately and disable port forwarding until verified.",
@@ -314,6 +530,46 @@ export const news: NewsBrief[] = [
       "article-7a7376",
       "7a7376",
       "php2shell-vulnerabilities-exploited-against-european-governm"
+    ]
+  },
+  {
+    "slug": "cve-2026-70197-net-and-visual-studio-remote-code-e-74506d",
+    "title": "CVE-2026-70197 .NET and Visual Studio Remote Code Execution Vulnerability",
+    "summary": "A remote code execution vulnerability exists in .NET and Visual Studio, identified as CVE-2026-70197, allowing attackers to execute arbitrary code via crafted input during software updates. The flaw stems from insufficient input validation in the update handling module, exposing systems to potential compromise if unpatched. Microsoft has released a patch in the latest update; administrators should apply it immediately to mitigate risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70197",
+    "publishedAt": "2026-10-25T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-70197"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-70197-net-and-visual-studio-remote-code-e",
+      "article-74506d",
+      "74506d",
+      "cve-2026-70197-net-and-visual-studio-remote-code-execution-v"
+    ]
+  },
+  {
+    "slug": "cve-2026-102870-asp-net-core-remote-code-execution-1ff9da",
+    "title": "CVE-2026-102870 ASP.NET Core Remote Code Execution Vulnerability",
+    "summary": "ASP.NET Core contains a remote code execution flaw, CVE-2026-102870, that permits attackers to run arbitrary code through malformed requests processed during runtime. The vulnerability arises from improper sanitization of user-supplied data in the request pipeline, enabling exploitation without authentication. Microsoft has issued a patch; deploying the update is essential to secure affected deployments.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102870",
+    "publishedAt": "2026-10-25T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-102870"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-102870-asp-net-core-remote-code-execution",
+      "article-1ff9da",
+      "1ff9da",
+      "cve-2026-102870-asp-net-core-remote-code-execution-vulnerabi"
     ]
   },
   {
@@ -2392,6 +2648,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cisco-snort-3-detection-engine-denial-of-service-v-3a3654",
+    "title": "Cisco Snort 3 Detection Engine Denial of Service Vulnerability",
+    "summary": "A logic flaw in Cisco’s Snort 3 Detection Engine lets an unauthenticated remote attacker trigger a denial of service by sending crafted GTP extension headers in a fragmented UDP datagram. The flaw causes an infinite loop, halting packet processing and disrupting monitoring. Cisco released updates that fix the issue; security teams should apply the patch or use the available workaround.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Cisco PSIRT",
+    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-gtpcodec-dos-Rmecfepz?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Denial+of+Service+Vulnerability%26vs_k%3D1",
+    "publishedAt": "2026-10-22T19:03:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisco-snort-3-detection-engine-denial-of-service-v",
+      "article-3a3654",
+      "3a3654",
+      "cisco-snort-3-detection-engine-denial-of-service-vulnerabili"
+    ]
+  },
+  {
     "slug": "cisco-snort-3-vba-decompression-engine-buffer-over-4dad9f",
     "title": "Cisco Snort 3 VBA Decompression Engine Buffer Overflow Causes Denial of Service",
     "summary": "Improper range checking in the Snort 3 Visual Basic for Applications decompression engine permits an unauthenticated remote attacker to send crafted VBA data, triggering a stack overflow that restarts the detection engine. The flaw enables denial of service on targeted devices without authentication, impacting network security operations. Cisco has issued software updates and a workaround to resolve the vulnerability.",
@@ -2407,6 +2681,24 @@ export const news: NewsBrief[] = [
       "article-4dad9f",
       "4dad9f",
       "cisco-snort-3-vba-decompression-engine-buffer-overflow-cause"
+    ]
+  },
+  {
+    "slug": "cve-2026-115414-os-command-injection-in-aws-sam-cl-1e119a",
+    "title": "CVE‑2026‑115414: OS Command Injection in AWS SAM CLI Terraform Hook",
+    "summary": "An OS command injection flaw (CVE‑2026‑115414) in AWS SAM CLI’s Terraform hook allows an attacker controlling the Terraform configuration to execute arbitrary commands as the build user on the host. The vulnerability arises from unsanitized interpolation of Terraform resource addresses into a generated Makefile recipe, enabling remote code execution. AWS has released a patch for all affected versions (≥1.63.0).",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-145-aws/",
+    "publishedAt": "2026-10-22T18:50:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-115414-os-command-injection-in-aws-sam-cl",
+      "article-1e119a",
+      "1e119a",
+      "cve-2026-115414-os-command-injection-in-aws-sam-cli-terrafor"
     ]
   },
   {
@@ -6249,306 +6541,6 @@ export const news: NewsBrief[] = [
       "article-381e3d",
       "381e3d",
       "critical-next-js-vulnerabilities-allow-hackers-to-execute-ma"
-    ]
-  },
-  {
-    "slug": "drupal-core-rce-flaw-exploitable-via-contributed-m-b922f0",
-    "title": "Drupal Core RCE Flaw Exploitable via Contributed Modules, No-Login Path",
-    "summary": "Drupal core’s Field UI module contains a critical remote code execution flaw that can be triggered through contributed modules without requiring user authentication. The vulnerability was patched in Drupal 11.4.10, 11.3.19, and 10.6.19 on October 14. Attackers can execute arbitrary code on the server via these modules.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/drupal-patches-critical-core-rce-flaw.html",
-    "publishedAt": "2026-10-15T12:07:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "drupal-core-rce-flaw-exploitable-via-contributed-m",
-      "article-b922f0",
-      "b922f0",
-      "drupal-core-rce-flaw-exploitable-via-contributed-modules-no-"
-    ]
-  },
-  {
-    "slug": "j4care-dcm4che-vulnerabilities-enable-medical-imag-49c059",
-    "title": "J4Care dcm4che Vulnerabilities Enable Medical Image Deletion and Data Disclosure",
-    "summary": "Multiple CVE-2026-xxxx vulnerabilities in J4Care dcm4che versions 5.35.1 and 4 allow attackers to delete medical images, disclose patient data, inject forged studies, reassign records, overwrite files, and cause denial of service. CVSS score 9.1 indicates critical impact on healthcare infrastructure.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-288-02",
-    "publishedAt": "2026-10-15T12:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "j4care-dcm4che-vulnerabilities-enable-medical-imag",
-      "article-49c059",
-      "49c059",
-      "j4care-dcm4che-vulnerabilities-enable-medical-image-deletion"
-    ]
-  },
-  {
-    "slug": "police-arrest-95-suspects-in-international-csam-cr-66e54a",
-    "title": "Police Arrest 95 Suspects in International CSAM Crackdown",
-    "summary": "Law enforcement authorities from 17 countries in Latin America and Europe have arrested 95 suspects in an INTERPOL‑coordinated operation targeting the distribution of child sexual abuse material through online messaging groups. The operation disrupted several active groups and seized evidence for ongoing investigations.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-arrests-95-suspects-in-child-sexual-abuse-material-crackdown/",
-    "publishedAt": "2026-10-15T11:55:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "police-arrest-95-suspects-in-international-csam-cr",
-      "article-66e54a",
-      "66e54a",
-      "police-arrest-95-suspects-in-international-csam-crackdown"
-    ]
-  },
-  {
-    "slug": "ftc-accuses-sextortion-firm-of-60m-fraud-2ab075",
-    "title": "FTC Accuses Sextortion Firm of $60M Fraud",
-    "summary": "The Federal Trade Commission alleges that Digital Forensics Corporation and its affiliates ran a sextortion scheme, extorting victims for intimate images and collecting $60 million in payments. The firm targeted individuals seeking help with blackmail, exploiting their vulnerability to demand ransom.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/sextortion-help-firm-took-60-million-from-victims-ftc-alleges",
-    "publishedAt": "2026-10-15T11:48:26.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/sextortion-assistance-company-alleged-fraud-ftc-complaint"
-      }
-    ],
-    "aliases": [
-      "ftc-accuses-sextortion-firm-of-60m-fraud",
-      "article-2ab075",
-      "2ab075"
-    ]
-  },
-  {
-    "slug": "cikabika-bot-rat-uses-discord-for-command-and-cont-7b597a",
-    "title": "CikaBika Bot RAT Uses Discord for Command and Control",
-    "summary": "The CikaBika Bot Remote Access Trojan, delivered via phishing, offers reconnaissance, remote execution, and data exfiltration. It uses Discord servers for command and control, enabling attackers to manage compromised hosts from a covert channel. Security analysts recommend monitoring Discord traffic and blocking malicious bot tokens to mitigate the threat.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/cikabika-bot-rat-uses-discord-for-cc/",
-    "publishedAt": "2026-10-15T11:25:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cikabika-bot-rat-uses-discord-for-command-and-cont",
-      "article-7b597a",
-      "7b597a",
-      "cikabika-bot-rat-uses-discord-for-command-and-control"
-    ]
-  },
-  {
-    "slug": "ai-tool-enables-law-enforcement-to-locate-homes-fr-30534a",
-    "title": "AI Tool Enables Law Enforcement to Locate Homes from Indoor Photos",
-    "summary": "An AI tool used by police can match indoor images to property listings, revealing home addresses even when GPS data is removed. The technology cross‑references photo content with online listings, potentially compromising privacy for residents who assume location data is stripped.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/privacy/2026/10/raven-ai-lets-cops-find-your-home-from-a-photo-taken-inside",
-    "publishedAt": "2026-10-15T11:09:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-tool-enables-law-enforcement-to-locate-homes-fr",
-      "article-30534a",
-      "30534a",
-      "ai-tool-enables-law-enforcement-to-locate-homes-from-indoor-"
-    ]
-  },
-  {
-    "slug": "ai-confidence-grows-faster-than-validation-standar-497bad",
-    "title": "AI Confidence Grows Faster Than Validation Standards",
-    "summary": "AI tools used in digital forensics and incident response are becoming increasingly confident in their outputs, outpacing the development of governance and validation methods. The lack of reliable verification processes risks unchecked errors beyond individual workstations, potentially compromising investigations.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/why-ai-confidence-is-not-validation.html",
-    "publishedAt": "2026-10-15T11:04:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-confidence-grows-faster-than-validation-standar",
-      "article-497bad",
-      "497bad",
-      "ai-confidence-grows-faster-than-validation-standards"
-    ]
-  },
-  {
-    "slug": "india-mandates-caller-id-display-on-4g-and-newer-n-5e0b33",
-    "title": "India Mandates Caller ID Display on 4G and Newer Networks",
-    "summary": "The Indian government has ordered telecom service providers to display callers’ registered names with numbers on all 4G and newer networks starting November 1, 2026. The directive aims to help users identify unknown callers and reduce spam and fraudulent calls.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/india-mandates-registered-caller-name.html",
-    "publishedAt": "2026-10-15T10:42:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "india-mandates-caller-id-display-on-4g-and-newer-n",
-      "article-5e0b33",
-      "5e0b33",
-      "india-mandates-caller-id-display-on-4g-and-newer-networks"
-    ]
-  },
-  {
-    "slug": "ghostaction-compromises-about-1-900-github-account-6086fa",
-    "title": "GhostAction Compromises About 1,900 GitHub Accounts, Targets Over 30,000 Repositories",
-    "summary": "The GhostAction credential‑theft campaign compromised roughly 1,900 GitHub accounts, targeting more than 30,000 repositories across 3,000 users and organizations. Attackers attempted to extract 3,174 secrets from public repositories’ CI pipelines.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/ghostaction-compromises-about-1900.html",
-    "publishedAt": "2026-10-15T08:45:10.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/hackers-breach-meta-github-repositories/"
-      }
-    ],
-    "aliases": [
-      "ghostaction-compromises-about-1-900-github-account",
-      "article-6086fa",
-      "6086fa",
-      "ghostaction-compromises-about-1-900-github-accounts-targets-"
-    ]
-  },
-  {
-    "slug": "optro-expands-ai-driven-grc-platform-with-auditabl-64d244",
-    "title": "Optro Expands AI‑Driven GRC Platform with Auditable Agents",
-    "summary": "Optro has added autonomous AI agents to its Governance, Risk, and Compliance platform, enabling risk teams to automate workflows while maintaining audit trails. Each agent action, decision, model entry, and evidence is logged and cited, ensuring transparency and compliance with team‑defined guardrails.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/15/optro-grc-intelligence-platform/",
-    "publishedAt": "2026-10-15T07:43:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "optro-expands-ai-driven-grc-platform-with-auditabl",
-      "article-64d244",
-      "64d244",
-      "optro-expands-ai-driven-grc-platform-with-auditable-agents"
-    ]
-  },
-  {
-    "slug": "langflow-s-critical-authenticated-rce-flaw-targete-69bc0f",
-    "title": "Langflow's Critical Authenticated RCE Flaw Targeted in 1,423 Honeypot Exploit Attempts",
-    "summary": "Langflow, an open‑source AI application platform, has a critical authenticated remote code execution flaw identified as CVE-2026-105740 with a CVSS score of 9.9. Threat actors have launched 1,423 honeypot exploit attempts targeting this vulnerability, allowing attackers to execute arbitrary code on authenticated accounts.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/langflows-critical-authenticated-rce.html",
-    "publishedAt": "2026-10-15T07:07:05.000Z",
-    "cves": [
-      "CVE-2026-105740"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "langflow-s-critical-authenticated-rce-flaw-targete",
-      "article-69bc0f",
-      "69bc0f",
-      "langflow-s-critical-authenticated-rce-flaw-targeted-in-1-423"
-    ]
-  },
-  {
-    "slug": "eu-grocers-hit-by-unpatched-fridge-firmware-6635a1",
-    "title": "EU Grocers Hit by Unpatched Fridge Firmware",
-    "summary": "Hundreds of EU grocery stores suffered multi‑million dollar losses after third‑party vendors managed outdated OT firmware on their cooling systems, leaving the equipment vulnerable to exploitation. The issue highlights the risk of unpatched industrial control software in retail environments.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/ics-ot-security/eu-grocers-unpatched-fridge-firmware",
-    "publishedAt": "2026-10-15T07:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "eu-grocers-hit-by-unpatched-fridge-firmware",
-      "article-6635a1",
-      "6635a1"
-    ]
-  },
-  {
-    "slug": "immuta-ciso-predicts-critical-ai-incidents-at-majo-2cfc17",
-    "title": "Immuta CISO Predicts Critical AI Incidents at Major Enterprises Within 18 Months",
-    "summary": "Immuta CISO Michael Scott warns that major enterprises will face critical AI incidents within 18 months if AI agents are not treated as lower‑trust identities. He stresses that agent privilege creep differs from human users, that authority should pass to sub‑agents, and that authentication alone does not secure agent actions.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/15/michael-scott-immuta-ai-agent-permissions/",
-    "publishedAt": "2026-10-15T05:30:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "immuta-ciso-predicts-critical-ai-incidents-at-majo",
-      "article-2cfc17",
-      "2cfc17",
-      "immuta-ciso-predicts-critical-ai-incidents-at-major-enterpri"
-    ]
-  },
-  {
-    "slug": "internet-attack-surface-growth-varies-by-sector-5f5765",
-    "title": "Internet Attack Surface Growth Varies by Sector",
-    "summary": "Censys data shows AI-related software exposed to the public internet grew 63% in nine months, from 164,088 IPs in October 2025 to 267,915 in July 2026. Industrial control systems grew only 4% over two and a half years, while older business products remained stable.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/15/exposed-ai-infrastructure-report/",
-    "publishedAt": "2026-10-15T05:00:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "internet-attack-surface-growth-varies-by-sector",
-      "article-5f5765",
-      "5f5765"
-    ]
-  },
-  {
-    "slug": "ai-generated-code-causes-ci-cd-review-bottlenecks-6c6e7e",
-    "title": "AI‑Generated Code Causes CI/CD Review Bottlenecks",
-    "summary": "JetBrains’ State of CI/CD in 2026 report finds 83.4% of DevOps teams run CI/CD pipelines, with GitHub Actions leading adoption. AI‑generated changes are increasing review workload, creating bottlenecks in software delivery despite widespread use of CI/CD practices.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/15/jetbrains-ai-software-delivery-report/",
-    "publishedAt": "2026-10-15T04:30:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-generated-code-causes-ci-cd-review-bottlenecks",
-      "article-6c6e7e",
-      "6c6e7e"
-    ]
-  },
-  {
-    "slug": "microsoft-discloses-three-active-directory-vulnera-2b9147",
-    "title": "Microsoft Discloses Three Active Directory Vulnerabilities Allowing Remote Bypass of Security Feature",
-    "summary": "Microsoft identified three Active Directory flaws—CVE-2026-69982, CVE-2026-96252, and CVE-2026-108131—that enable remote attackers to bypass a key security feature in Windows domain environments. Administrators should review the Security Update Guide and apply the available fixes promptly to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/multiple-active-directory-vulnerabilities/",
-    "publishedAt": "2026-10-15T03:51:31.000Z",
-    "cves": [
-      "CVE-2026-69982",
-      "CVE-2026-96252",
-      "CVE-2026-108131"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-discloses-three-active-directory-vulnera",
-      "article-2b9147",
-      "2b9147",
-      "microsoft-discloses-three-active-directory-vulnerabilities-a"
     ]
   }
 ];
