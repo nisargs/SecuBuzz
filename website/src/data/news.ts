@@ -11,6 +11,149 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-delve-update-addresses-medium-severity-vul-37e47c",
+    "title": "Red Hat Delve Update Addresses Medium‑Severity Vulnerability",
+    "summary": "An update for the delve component in Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions addresses a security flaw that could allow unauthorized code execution via malformed input. The vulnerability’s CVSS base score is documented in the referenced CVE links, indicating a medium‑severity risk. Red Hat has released a patch; administrators should apply it immediately.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89888",
+    "publishedAt": "2026-10-26T10:36:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-delve-update-addresses-medium-severity-vul",
+      "article-37e47c",
+      "37e47c",
+      "red-hat-delve-update-addresses-medium-severity-vulnerability"
+    ]
+  },
+  {
+    "slug": "red-hat-rhc-update-mitigates-remote-code-execution-37e47c",
+    "title": "Red Hat rhc Update Mitigates Remote Code Execution Risk",
+    "summary": "An update for the rhc client in Red Hat Enterprise Linux 10.0 Extended Update Support mitigates a security vulnerability that could enable remote code execution through improperly validated configuration data. The CVSS base score for the flaw is provided in the CVE references, reflecting a medium‑severity assessment. Red Hat has issued a patch; users must install it promptly.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89892",
+    "publishedAt": "2026-10-26T10:34:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-rhc-update-mitigates-remote-code-execution",
+      "article-37e47c",
+      "37e47c",
+      "red-hat-rhc-update-mitigates-remote-code-execution-risk"
+    ]
+  },
+  {
+    "slug": "kali-linux-2026-3-released-with-six-new-tools-and-25aadd",
+    "title": "Kali Linux 2026.3 Released with Six New Tools and Desktop Updates",
+    "summary": "Kali Linux 2026.3 has been released, adding six new hacking tools and updated desktop environment. The update includes refreshed build scripts and other minor improvements, expanding the distribution’s toolkit for penetration testers. Users should download the new image from the official Kali website and verify checksums to ensure integrity and compatibility.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/linux/kali-linux-20263-released-with-6-new-tools-desktop-updates/",
+    "publishedAt": "2026-10-26T10:26:52.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "kali-linux-2026-3-released-with-six-new-tools-and",
+      "article-25aadd",
+      "25aadd",
+      "kali-linux-2026-3-released-with-six-new-tools-and-desktop-up"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-delve-security-update-for-rhel-10-37e47c",
+    "title": "Red Hat Releases Delve Security Update for RHEL 10.0 EUS",
+    "summary": "A security update for delve on Red Hat Enterprise Linux 10.0 Extended Update Support addresses multiple vulnerabilities. The vulnerabilities carry CVSS scores detailed in the CVE references, indicating moderate to high risk, but no active exploitation reported. Red Hat has released a patch; administrators should apply the update immediately to mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89884",
+    "publishedAt": "2026-10-26T09:56:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-delve-security-update-for-rhel-10",
+      "article-37e47c",
+      "37e47c",
+      "red-hat-releases-delve-security-update-for-rhel-10-0-eus"
+    ]
+  },
+  {
+    "slug": "top-10-sensitive-data-discovery-tools-for-2026-hig-28d2d0",
+    "title": "Top 10 Sensitive Data Discovery Tools for 2026 Highlighted",
+    "summary": "The article lists the top ten sensitive data discovery tools for 2026, noting increased shadow data in SaaS, warehouses, and AI pipelines. It stresses that discovery must map data to identity to meet legal ownership requirements, as classification alone is insufficient. Readers should assess tools based on scoring metrics and integration with existing governance frameworks.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-data-discovery-tools/",
+    "publishedAt": "2026-10-26T09:46:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "top-10-sensitive-data-discovery-tools-for-2026-hig",
+      "article-28d2d0",
+      "28d2d0",
+      "top-10-sensitive-data-discovery-tools-for-2026-highlighted"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-flatpak-security-update-for-rhel-9-37e47c",
+    "title": "Red Hat Issues Flatpak Security Update for RHEL 9",
+    "summary": "A security update for flatpak on Red Hat Enterprise Linux 9 addresses several vulnerabilities. The vulnerabilities have CVSS scores listed in the CVE references, suggesting moderate to high risk, with no confirmed active exploitation. Red Hat has issued a patch; users should install the update promptly to prevent potential compromise.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89850",
+    "publishedAt": "2026-10-26T09:41:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-flatpak-security-update-for-rhel-9",
+      "article-37e47c",
+      "37e47c"
+    ]
+  },
+  {
+    "slug": "microsoft-365-token-replay-campaign-compromises-97-780f2c",
+    "title": "Microsoft 365 Token‑Replay Campaign Compromises 97 Accounts at 79 Organizations",
+    "summary": "A Microsoft 365 token‑replay campaign captured sign‑in sessions via an adversary‑in‑the‑middle relay and replayed stolen tokens to access 97 accounts across 79 organizations. The flaw allows attackers to hijack authenticated sessions without credential theft, enabling persistent access to email and collaboration services. Microsoft has released a patch and recommends disabling legacy authentication methods immediately.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/microsoft-365-token-replay-attacks.html",
+    "publishedAt": "2026-10-26T08:35:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-365-token-replay-campaign-compromises-97",
+      "article-780f2c",
+      "780f2c",
+      "microsoft-365-token-replay-campaign-compromises-97-accounts-"
+    ]
+  },
+  {
+    "slug": "witness-open-source-framework-for-verifying-softwa-29a24e",
+    "title": "Witness: Open‑Source Framework for Verifying Software Build Provenance",
+    "summary": "Witness is an open‑source command‑line tool that records and signs build processes, enabling teams to verify the provenance of compiled binaries before shipping. By capturing the exact commands, inputs, and environment, Witness provides a tamper‑evident audit trail that can be validated against a policy, reducing supply‑chain risks. The tool is maintained by the Cloud Native Computing Foundation community and is freely available.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/26/witness-open-source-software-supply-chain-tool/",
+    "publishedAt": "2026-10-26T07:00:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "witness-open-source-framework-for-verifying-softwa",
+      "article-29a24e",
+      "29a24e",
+      "witness-open-source-framework-for-verifying-software-build-p"
+    ]
+  },
+  {
     "slug": "red-hat-python-3-9-update-addresses-multiple-vulne-37e480",
     "title": "Red Hat Python 3.9 Update Addresses Multiple Vulnerabilities",
     "summary": "An update for python3.9 on Red Hat Enterprise Linux 9 addresses multiple security vulnerabilities identified by Red Hat Product Security. The update mitigates flaws that could allow attackers to execute arbitrary code or elevate privileges, as indicated by the CVSS base scores linked in the advisory. Red Hat recommends applying the latest python3.9 package to ensure protection.",
@@ -6406,154 +6549,6 @@ export const news: NewsBrief[] = [
       "article-2b9147",
       "2b9147",
       "microsoft-discloses-three-active-directory-vulnerabilities-a"
-    ]
-  },
-  {
-    "slug": "ukraine-restores-spacex-starshield-satellite-servi-4a00a0",
-    "title": "Ukraine Restores SpaceX Starshield Satellite Service After Restrictions",
-    "summary": "Ukraine’s military regained access to SpaceX’s Starshield satellite communications after temporary restrictions halted drone operations. The Defense Ministry confirmed the service is now operational, allowing continued use of satellite‑based drone control along the front line. No cyber attack or vulnerability was reported.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/ukraine-says-starshield-working-again-after-disruption",
-    "publishedAt": "2026-10-14T23:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ukraine-restores-spacex-starshield-satellite-servi",
-      "article-4a00a0",
-      "4a00a0",
-      "ukraine-restores-spacex-starshield-satellite-service-after-r"
-    ]
-  },
-  {
-    "slug": "yandex-outage-malicious-bots-migrate-instead-of-go-287e26",
-    "title": "Yandex Outage: Malicious Bots Migrate Instead of Going Dark",
-    "summary": "When Yandex data centers experienced strikes, search crawling stopped, but Cloudflare data showed that malicious bots simply moved to other networks. The bot activity continued elsewhere, indicating resilience of the bot operators rather than a shutdown.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/yandex-outage/",
-    "publishedAt": "2026-10-14T20:24:19.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "yandex-outage-malicious-bots-migrate-instead-of-go",
-      "article-287e26",
-      "287e26",
-      "yandex-outage-malicious-bots-migrate-instead-of-going-dark"
-    ]
-  },
-  {
-    "slug": "wiz-integrates-code-scanners-for-unified-applicati-669a9b",
-    "title": "Wiz Integrates Code Scanners for Unified Application Risk Visibility",
-    "summary": "Wiz Research announced that its platform now supports integration of existing code scanners, providing a single view of application risk across an organization’s entire stack. The update aims to streamline security assessments and improve visibility into potential vulnerabilities across development environments.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Wiz Research",
-    "sourceUrl": "https://www.wiz.io/blog/aspm-ai-era-pt-1-centralize-appsec-scanners",
-    "publishedAt": "2026-10-14T20:13:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "wiz-integrates-code-scanners-for-unified-applicati",
-      "article-669a9b",
-      "669a9b",
-      "wiz-integrates-code-scanners-for-unified-application-risk-vi"
-    ]
-  },
-  {
-    "slug": "fbi-seizes-laptops-used-by-north-korean-remote-it-6e3602",
-    "title": "FBI Seizes Laptops Used by North Korean Remote IT Workers",
-    "summary": "The U.S. Department of Justice disrupted the Famous Chollima threat group by arresting two suspects, charging 14 individuals, and seizing nearly 187 laptops used in North Korean remote IT worker schemes. The operation targets DPRK cyber espionage activities in Texas.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-raids-dprk-it-worker-laptop-farms-in-texas-us-nationals-arrested/",
-    "publishedAt": "2026-10-14T19:41:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fbi-seizes-laptops-used-by-north-korean-remote-it",
-      "article-6e3602",
-      "6e3602",
-      "fbi-seizes-laptops-used-by-north-korean-remote-it-workers"
-    ]
-  },
-  {
-    "slug": "curl-8-23-0-releases-24-security-fixes-for-30-bill-1776b2",
-    "title": "Curl 8.23.0 Releases 24 Security Fixes for 30 Billion Installations",
-    "summary": "The curl project released version 8.23.0, patching 24 security vulnerabilities affecting the data transfer tool and libcurl. Fixes address credential leaks, authentication errors, command injection, and application disruption flaws. The update also removes SMB and SMBS protocol support, requiring compatibility checks before deployment.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/curl-security-update-24-vulnerabilities/",
-    "publishedAt": "2026-10-14T16:46:52.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "curl-8-23-0-releases-24-security-fixes-for-30-bill",
-      "article-1776b2",
-      "1776b2",
-      "curl-8-23-0-releases-24-security-fixes-for-30-billion-instal"
-    ]
-  },
-  {
-    "slug": "ai-worms-could-spread-across-smart-devices-7dfb15",
-    "title": "AI Worms Could Spread Across Smart Devices",
-    "summary": "Researchers warn that small AI models could propagate across vulnerable smart devices within months, potentially enabling automated malware spread. The threat relies on device firmware weaknesses and network connectivity, but no specific exploit or CVE is identified. Mitigation involves patching device firmware and restricting network access.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/10/ai-worms-could-spread-across-your-smart-devices-anthropic-warns",
-    "publishedAt": "2026-10-14T16:36:46.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/anthropic-warns-self-replicating-ai-could-spread-to-your-smart-devices/"
-      }
-    ],
-    "aliases": [
-      "ai-worms-could-spread-across-smart-devices",
-      "article-7dfb15",
-      "7dfb15"
-    ]
-  },
-  {
-    "slug": "mssps-face-tier-1-bottlenecks-that-reduce-profit-m-a5109d",
-    "title": "MSSPs Face Tier 1 Bottlenecks That Reduce Profit Margins",
-    "summary": "MSSPs are overwhelmed by rising alert volumes, causing analysts to spend excessive time triaging and escalating cases. The inefficiency leads to slower response times and higher operational costs, eroding profit margins as firms struggle to manage increasing client demands.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/how-mssps-can-cut-tier-1-bottlenecks-eating-into-profit-margins/",
-    "publishedAt": "2026-10-14T16:29:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "mssps-face-tier-1-bottlenecks-that-reduce-profit-m",
-      "article-a5109d",
-      "a5109d",
-      "mssps-face-tier-1-bottlenecks-that-reduce-profit-margins"
-    ]
-  },
-  {
-    "slug": "windows-11-rdp-update-causes-connection-failures-f-6b6e62",
-    "title": "Windows 11 RDP Update Causes Connection Failures for Non-Admin Users",
-    "summary": "Microsoft’s recent Windows 11 updates, including KB5124010, introduced a Remote Desktop Services bug that blocks non‑admin users from connecting to hosts with Administrator protection enabled. The issue returns error 0xC000000D and affects company‑managed RDP servers. No patch yet announced.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/microsoft-recent-update-remote-desktop/",
-    "publishedAt": "2026-10-14T15:51:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "windows-11-rdp-update-causes-connection-failures-f",
-      "article-6b6e62",
-      "6b6e62",
-      "windows-11-rdp-update-causes-connection-failures-for-non-adm"
     ]
   }
 ];

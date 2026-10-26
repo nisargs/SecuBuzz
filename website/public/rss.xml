@@ -5,8 +5,80 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Oct 2026 08:11:54 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 13:28:41 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Delve Update Addresses Medium‑Severity Vulnerability</title>
+      <link>https://secubuzz.com/news/red-hat-delve-update-addresses-medium-severity-vul-37e47c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-delve-update-addresses-medium-severity-vul-37e47c</guid>
+      <description><![CDATA[An update for the delve component in Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions addresses a security flaw that could allow unauthorized code execution via malformed input. The vulnerability’s CVSS base score is documented in the referenced CVE links, indicating a medium‑severity risk. Red Hat has released a patch; administrators should apply it immediately.]]></description>
+      <pubDate>Mon, 26 Oct 2026 10:36:51 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:89888">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat rhc Update Mitigates Remote Code Execution Risk</title>
+      <link>https://secubuzz.com/news/red-hat-rhc-update-mitigates-remote-code-execution-37e47c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-rhc-update-mitigates-remote-code-execution-37e47c</guid>
+      <description><![CDATA[An update for the rhc client in Red Hat Enterprise Linux 10.0 Extended Update Support mitigates a security vulnerability that could enable remote code execution through improperly validated configuration data. The CVSS base score for the flaw is provided in the CVE references, reflecting a medium‑severity assessment. Red Hat has issued a patch; users must install it promptly.]]></description>
+      <pubDate>Mon, 26 Oct 2026 10:34:56 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:89892">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Kali Linux 2026.3 Released with Six New Tools and Desktop Updates</title>
+      <link>https://secubuzz.com/news/kali-linux-2026-3-released-with-six-new-tools-and-25aadd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/kali-linux-2026-3-released-with-six-new-tools-and-25aadd</guid>
+      <description><![CDATA[Kali Linux 2026.3 has been released, adding six new hacking tools and updated desktop environment. The update includes refreshed build scripts and other minor improvements, expanding the distribution’s toolkit for penetration testers. Users should download the new image from the official Kali website and verify checksums to ensure integrity and compatibility.]]></description>
+      <pubDate>Mon, 26 Oct 2026 10:26:52 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/linux/kali-linux-20263-released-with-6-new-tools-desktop-updates/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Delve Security Update for RHEL 10.0 EUS</title>
+      <link>https://secubuzz.com/news/red-hat-releases-delve-security-update-for-rhel-10-37e47c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-delve-security-update-for-rhel-10-37e47c</guid>
+      <description><![CDATA[A security update for delve on Red Hat Enterprise Linux 10.0 Extended Update Support addresses multiple vulnerabilities. The vulnerabilities carry CVSS scores detailed in the CVE references, indicating moderate to high risk, but no active exploitation reported. Red Hat has released a patch; administrators should apply the update immediately to mitigate potential exploitation.]]></description>
+      <pubDate>Mon, 26 Oct 2026 09:56:07 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:89884">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Top 10 Sensitive Data Discovery Tools for 2026 Highlighted</title>
+      <link>https://secubuzz.com/news/top-10-sensitive-data-discovery-tools-for-2026-hig-28d2d0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/top-10-sensitive-data-discovery-tools-for-2026-hig-28d2d0</guid>
+      <description><![CDATA[The article lists the top ten sensitive data discovery tools for 2026, noting increased shadow data in SaaS, warehouses, and AI pipelines. It stresses that discovery must map data to identity to meet legal ownership requirements, as classification alone is insufficient. Readers should assess tools based on scoring metrics and integration with existing governance frameworks.]]></description>
+      <pubDate>Mon, 26 Oct 2026 09:46:25 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/best-data-discovery-tools/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Flatpak Security Update for RHEL 9</title>
+      <link>https://secubuzz.com/news/red-hat-issues-flatpak-security-update-for-rhel-9-37e47c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-flatpak-security-update-for-rhel-9-37e47c</guid>
+      <description><![CDATA[A security update for flatpak on Red Hat Enterprise Linux 9 addresses several vulnerabilities. The vulnerabilities have CVSS scores listed in the CVE references, suggesting moderate to high risk, with no confirmed active exploitation. Red Hat has issued a patch; users should install the update promptly to prevent potential compromise.]]></description>
+      <pubDate>Mon, 26 Oct 2026 09:41:43 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:89850">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Microsoft 365 Token‑Replay Campaign Compromises 97 Accounts at 79 Organizations</title>
+      <link>https://secubuzz.com/news/microsoft-365-token-replay-campaign-compromises-97-780f2c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-365-token-replay-campaign-compromises-97-780f2c</guid>
+      <description><![CDATA[A Microsoft 365 token‑replay campaign captured sign‑in sessions via an adversary‑in‑the‑middle relay and replayed stolen tokens to access 97 accounts across 79 organizations. The flaw allows attackers to hijack authenticated sessions without credential theft, enabling persistent access to email and collaboration services. Microsoft has released a patch and recommends disabling legacy authentication methods immediately.]]></description>
+      <pubDate>Mon, 26 Oct 2026 08:35:51 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/microsoft-365-token-replay-attacks.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Witness: Open‑Source Framework for Verifying Software Build Provenance</title>
+      <link>https://secubuzz.com/news/witness-open-source-framework-for-verifying-softwa-29a24e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/witness-open-source-framework-for-verifying-softwa-29a24e</guid>
+      <description><![CDATA[Witness is an open‑source command‑line tool that records and signs build processes, enabling teams to verify the provenance of compiled binaries before shipping. By capturing the exact commands, inputs, and environment, Witness provides a tamper‑evident audit trail that can be validated against a policy, reducing supply‑chain risks. The tool is maintained by the Cloud Native Computing Foundation community and is freely available.]]></description>
+      <pubDate>Mon, 26 Oct 2026 07:00:45 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/26/witness-open-source-software-supply-chain-tool/">Help Net Security</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Red Hat Python 3.9 Update Addresses Multiple Vulnerabilities</title>
       <link>https://secubuzz.com/news/red-hat-python-3-9-update-addresses-multiple-vulne-37e480</link>
@@ -384,78 +456,6 @@
       <pubDate>Fri, 23 Oct 2026 17:28:00 GMT</pubDate>
       <source url="https://therecord.media/fcc-bans-devices-huawei-surveillance-chips">The Record</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>AI‑Generated Attack Campaigns Target Hundreds of Sites</title>
-      <link>https://secubuzz.com/news/ai-generated-attack-campaigns-target-hundreds-of-s-5ca1da</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-generated-attack-campaigns-target-hundreds-of-s-5ca1da</guid>
-      <description><![CDATA[AI tools are producing large‑scale attack campaigns that target 105 websites using open‑weight models, while public models have achieved full domain control for $12. The attacks exploit automated credential stuffing and domain takeover vectors, causing widespread service disruptions. Vendors should monitor for anomalous login patterns and enforce multi‑factor authentication to mitigate these low‑cost attacks.]]></description>
-      <pubDate>Fri, 23 Oct 2026 17:26:59 GMT</pubDate>
-      <source url="https://www.darkreading.com/cybersecurity-operations/ai-tools-massive-attacks-little-cost">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>PHP Discloses Two Critical‑Level RCE Flaws</title>
-      <link>https://secubuzz.com/news/php-discloses-two-critical-level-rce-flaws-5e83e1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/php-discloses-two-critical-level-rce-flaws-5e83e1</guid>
-      <description><![CDATA[PHP has disclosed two critical‑level remote code execution vulnerabilities that allow attackers to execute arbitrary code on affected servers. The flaws stem from improper input validation in the core engine, with public proof‑of‑concept exploits demonstrating full system compromise. Immediate application of the vendor‑issued patches and disabling remote execution features are mandatory to prevent exploitation.]]></description>
-      <pubDate>Fri, 23 Oct 2026 17:18:43 GMT</pubDate>
-      <source url="https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-43-8">SentinelOne</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Microsoft Announces End of Support for Windows Server 2016</title>
-      <link>https://secubuzz.com/news/microsoft-announces-end-of-support-for-windows-ser-72cd91</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-announces-end-of-support-for-windows-ser-72cd91</guid>
-      <description><![CDATA[Microsoft announced Windows Server 2016 will reach end of support in January 2027, ceasing security updates. This end‑of‑life status means no further patches, exposing systems to unpatched vulnerabilities and potential exploitation. Organizations should upgrade to supported versions or apply extended support if available, and monitor for new advisories.]]></description>
-      <pubDate>Fri, 23 Oct 2026 17:05:07 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-january/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Quest Diagnostics Breach Exposes Patient Records via Quanum LSM System</title>
-      <link>https://secubuzz.com/news/quest-diagnostics-breach-exposes-patient-records-v-1fdcce</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/quest-diagnostics-breach-exposes-patient-records-v-1fdcce</guid>
-      <description><![CDATA[Quest Diagnostics disclosed a breach exposing patient records after unauthorized access to its Quanum LSM system. The attacker leveraged compromised credentials to read sensitive medical data, potentially compromising privacy and regulatory compliance. Quest should conduct forensic analysis, notify affected patients, reset credentials, and strengthen access controls, implementing multi‑factor authentication immediately.]]></description>
-      <pubDate>Fri, 23 Oct 2026 16:40:07 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/quest-diagnostics-confirms-data-breach-exposed-patient-records/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Chrome Dev Channel Updated to 158.0.8117.2</title>
-      <link>https://secubuzz.com/news/chrome-dev-channel-updated-to-158-0-8117-2-62d7c1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-dev-channel-updated-to-158-0-8117-2-62d7c1</guid>
-      <description><![CDATA[Chrome Dev channel received update 158.0.8117.2 for Windows, macOS, and Linux, adding bug fixes and performance enhancements. No security flaw was disclosed, but the release addresses several stability issues reported in the Git log. Users should install the update through Chrome Update or switch channels, and report new problems via the bug filing system.]]></description>
-      <pubDate>Fri, 23 Oct 2026 16:28:33 GMT</pubDate>
-      <source url="http://chromereleases.googleblog.com/feeds/4602648838450212475/comments/default">Google Chrome Releases</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>eMudhra Intermediate CA Private Keys Compromised</title>
-      <link>https://secubuzz.com/news/emudhra-intermediate-ca-private-keys-compromised-710aae</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/emudhra-intermediate-ca-private-keys-compromised-710aae</guid>
-      <description><![CDATA[A critical compromise of eMudhra intermediate certificates was discovered, exposing eight private keys due to a key generation ceremony flaw that permits brute‑force acquisition within seconds. The flaw allows attackers to forge certificates for any domain, potentially enabling man‑in‑the‑middle attacks and undermining trust chains. Cisco recommends disabling affected CAs and applying vendor‑issued mitigations immediately.]]></description>
-      <pubDate>Fri, 23 Oct 2026 16:00:00 GMT</pubDate>
-      <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Informational+for+Emergency+Distrust+of+eMudhra+Root+and+Intermediate+Certificate+Authorities%26vs_k%3D1">Cisco PSIRT</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>PHP Releases Mitigation for CVE‑2026‑115560 RCE Vulnerability</title>
-      <link>https://secubuzz.com/news/php-releases-mitigation-for-cve-2026-115560-rce-vu-3e4da4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/php-releases-mitigation-for-cve-2026-115560-rce-vu-3e4da4</guid>
-      <description><![CDATA[PHP disclosed a new remote code execution vulnerability, CVE‑2026‑115560, impacting systems with non‑default configurations. The flaw permits arbitrary code execution, with no patch available and active exploitation status unknown. PHP recommends disabling vulnerable features, monitoring logs, and applying the forthcoming vendor patch as soon as it is released.]]></description>
-      <pubDate>Fri, 23 Oct 2026 15:38:05 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/">BleepingComputer</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Red Hat Releases PHP Security Update for RHEL 9.6 EUS</title>
-      <link>https://secubuzz.com/news/red-hat-releases-php-security-update-for-rhel-9-6-37e4f5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-php-security-update-for-rhel-9-6-37e4f5</guid>
-      <description><![CDATA[Red Hat Enterprise Linux 9.6 Extended Update Support released RHSA‑2026:88720 to patch multiple PHP security flaws impacting web services. The patches cover vulnerabilities rated Important by Red Hat Product Security, with CVSS scores linked via CVE references, though no active exploitation has been observed. Apply the update immediately to eliminate potential remote code execution risks and maintain PHP integrity.]]></description>
-      <pubDate>Fri, 23 Oct 2026 15:23:46 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:88720">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

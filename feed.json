@@ -1,5 +1,109 @@
 [
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:89888",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89888",
+    "title": "Red Hat Delve Update Addresses Medium‑Severity Vulnerability",
+    "headline": "Red Hat Delve Update Addresses Medium‑Severity Vulnerability",
+    "summary": "An update for the delve component in Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions addresses a security flaw that could allow unauthorized code execution via malformed input. The vulnerability’s CVSS base score is documented in the referenced CVE links, indicating a medium‑severity risk. Red Hat has released a patch; administrators should apply it immediately.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-10-26T10:36:51.000Z",
+    "url": "https://access.redhat.com/errata/RHSA-2026:89888",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:89892",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89892",
+    "title": "Red Hat rhc Update Mitigates Remote Code Execution Risk",
+    "headline": "Red Hat rhc Update Mitigates Remote Code Execution Risk",
+    "summary": "An update for the rhc client in Red Hat Enterprise Linux 10.0 Extended Update Support mitigates a security vulnerability that could enable remote code execution through improperly validated configuration data. The CVSS base score for the flaw is provided in the CVE references, reflecting a medium‑severity assessment. Red Hat has issued a patch; users must install it promptly.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-10-26T10:34:56.000Z",
+    "url": "https://access.redhat.com/errata/RHSA-2026:89892",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/linux/kali-linux-20263-released-with-6-new-tools-desktop-updates/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/linux/kali-linux-20263-released-with-6-new-tools-desktop-updates/",
+    "title": "Kali Linux 2026.3 Released with Six New Tools and Desktop Updates",
+    "headline": "Kali Linux 2026.3 Released with Six New Tools and Desktop Updates",
+    "summary": "Kali Linux 2026.3 has been released, adding six new hacking tools and updated desktop environment. The update includes refreshed build scripts and other minor improvements, expanding the distribution’s toolkit for penetration testers. Users should download the new image from the official Kali website and verify checksums to ensure integrity and compatibility.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-26T10:26:52.000Z",
+    "url": "https://www.bleepingcomputer.com/news/linux/kali-linux-20263-released-with-6-new-tools-desktop-updates/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/best-data-discovery-tools/",
+    "sourceUrl": "https://cybersecuritynews.com/best-data-discovery-tools/",
+    "title": "Top 10 Sensitive Data Discovery Tools for 2026 Highlighted",
+    "headline": "Top 10 Sensitive Data Discovery Tools for 2026 Highlighted",
+    "summary": "The article lists the top ten sensitive data discovery tools for 2026, noting increased shadow data in SaaS, warehouses, and AI pipelines. It stresses that discovery must map data to identity to meet legal ownership requirements, as classification alone is insufficient. Readers should assess tools based on scoring metrics and integration with existing governance frameworks.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-26T09:46:25.000Z",
+    "url": "https://cybersecuritynews.com/best-data-discovery-tools/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/microsoft-365-token-replay-attacks.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/microsoft-365-token-replay-attacks.html",
+    "title": "Microsoft 365 Token‑Replay Campaign Compromises 97 Accounts at 79 Organizations",
+    "headline": "Microsoft 365 Token‑Replay Campaign Compromises 97 Accounts at 79 Organizations",
+    "summary": "A Microsoft 365 token‑replay campaign captured sign‑in sessions via an adversary‑in‑the‑middle relay and replayed stolen tokens to access 97 accounts across 79 organizations. The flaw allows attackers to hijack authenticated sessions without credential theft, enabling persistent access to email and collaboration services. Microsoft has released a patch and recommends disabling legacy authentication methods immediately.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-26T08:35:51.000Z",
+    "url": "https://thehackernews.com/2026/10/microsoft-365-token-replay-attacks.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/26/witness-open-source-software-supply-chain-tool/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/26/witness-open-source-software-supply-chain-tool/",
+    "title": "Witness: Open‑Source Framework for Verifying Software Build Provenance",
+    "headline": "Witness: Open‑Source Framework for Verifying Software Build Provenance",
+    "summary": "Witness is an open‑source command‑line tool that records and signs build processes, enabling teams to verify the provenance of compiled binaries before shipping. By capturing the exact commands, inputs, and environment, Witness provides a tamper‑evident audit trail that can be validated against a policy, reducing supply‑chain risks. The tool is maintained by the Cloud Native Computing Foundation community and is freely available.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-26T07:00:45.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/26/witness-open-source-software-supply-chain-tool/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:89884",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89884",
+    "title": "Red Hat Releases Delve Security Update for RHEL 10.0 EUS",
+    "headline": "Red Hat Releases Delve Security Update for RHEL 10.0 EUS",
+    "summary": "A security update for delve on Red Hat Enterprise Linux 10.0 Extended Update Support addresses multiple vulnerabilities. The vulnerabilities carry CVSS scores detailed in the CVE references, indicating moderate to high risk, but no active exploitation reported. Red Hat has released a patch; administrators should apply the update immediately to mitigate potential exploitation.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-10-26T09:56:07.000Z",
+    "url": "https://access.redhat.com/errata/RHSA-2026:89884",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:89850",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89850",
+    "title": "Red Hat Issues Flatpak Security Update for RHEL 9",
+    "headline": "Red Hat Issues Flatpak Security Update for RHEL 9",
+    "summary": "A security update for flatpak on Red Hat Enterprise Linux 9 addresses several vulnerabilities. The vulnerabilities have CVSS scores listed in the CVE references, suggesting moderate to high risk, with no confirmed active exploitation. Red Hat has issued a patch; users should install the update promptly to prevent potential compromise.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-10-26T09:41:43.000Z",
+    "url": "https://access.redhat.com/errata/RHSA-2026:89850",
+    "additionalSources": []
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:89742",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89742",
     "title": "Red Hat Python 3.9 Update Addresses Multiple Vulnerabilities",
@@ -23,6 +127,19 @@
     "source": "Red Hat Security Advisories",
     "publishedAt": "2026-10-26T04:40:59.000Z",
     "url": "https://access.redhat.com/errata/RHSA-2026:89746",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:89760",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89760",
+    "title": "Red Hat Releases Security Update for container-tools:rhel8",
+    "headline": "Red Hat Releases Security Update for container-tools:rhel8",
+    "summary": "An update for the container-tools:rhel8 module on Red Hat Enterprise Linux 8 addresses multiple security issues identified by Red Hat Product Security. The update mitigates vulnerabilities with a CVSS base score that classifies them as Important, indicating potential for significant impact if exploited. Red Hat has issued a patch that must be applied immediately to prevent exploitation of these flaws.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-10-26T04:35:02.000Z",
+    "url": "https://access.redhat.com/errata/RHSA-2026:89760",
     "additionalSources": []
   },
   {
@@ -52,97 +169,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://cybersecuritynews.com/php2shell-flaws-exploited/",
-    "sourceUrl": "https://cybersecuritynews.com/php2shell-flaws-exploited/",
-    "title": "Critical PHP2Shell Flaws Exploited in Bitcoin Challenge",
-    "headline": "Critical PHP2Shell Flaws Exploited in Bitcoin Challenge",
-    "summary": "A researcher exploited two critical PHP flaws to access a test server during a public Bitcoin challenge, demonstrating the vulnerabilities’ impact on web application security. The flaws allowed unauthenticated remote code execution, evidenced by the successful 19.28‑hour run and subsequent PoC release. A vendor patch is pending; security teams should monitor for updates and apply mitigations once available.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-26T03:41:52.000Z",
-    "url": "https://cybersecuritynews.com/php2shell-flaws-exploited/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/researchers-push-over-2-million-updates.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/researchers-push-over-2-million-updates.html",
-    "title": "Researchers Push Over 2 Million Updates to Disable Popcorn Time Updater That Could Fuel a Botnet",
-    "headline": "Researchers Push Over 2 Million Updates to Disable Popcorn Time Updater That Could Fuel a Botnet",
-    "summary": "Researchers pushed over 2 million updates to disable a background updater in the abandoned Time4Popcorn app, preventing potential remote takeover. The updater could have allowed unauthorized remote code execution if left enabled, enabling an outsider to hijack the system. Eye Security recommends installing the update immediately and removing Time4Popcorn to mitigate the risk.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-24T09:04:24.000Z",
-    "url": "https://thehackernews.com/2026/10/researchers-push-over-2-million-updates.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html",
-    "title": "Critical Flaw in Pillow Image Library Enables OS Command Execution",
-    "headline": "Critical Flaw in Pillow Image Library Enables OS Command Execution",
-    "summary": "A critical flaw in Pillow lets attackers execute OS commands by crafting an EPS image that specifies a file name. The vulnerability, CVE-2026-112900, occurs because Pillow passes the file name directly to Ghostscript without validation, enabling remote code execution. Pillow released patch 10.4.0; users should upgrade immediately or disable EPS support to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-23T09:36:00.000Z",
-    "url": "https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html",
-    "additionalSources": []
-  },
-  {
-    "id": "http://chromereleases.googleblog.com/feeds/1960193025315187574/comments/default",
-    "sourceUrl": "http://chromereleases.googleblog.com/feeds/1960193025315187574/comments/default",
-    "title": "Chrome Beta 157 Released for Android",
-    "headline": "Chrome Beta 157 Released for Android",
-    "summary": "Chrome Beta 157 (157.0.8103.14) for Android has been released, making the new build available through Google Play. The update lists changes in the Git log, with feature details on the Chromium blog and web platform updates. Users encountering new issues should file bugs through the Chrome Release Team channels; no immediate security patches or firmware upgrades are required.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "publishedAt": "2026-10-22T15:58:32.486Z",
-    "url": "http://chromereleases.googleblog.com/feeds/1960193025315187574/comments/default",
-    "additionalSources": []
-  },
-  {
-    "id": "http://chromereleases.googleblog.com/feeds/6943765864254111853/comments/default",
-    "sourceUrl": "http://chromereleases.googleblog.com/feeds/6943765864254111853/comments/default",
-    "title": "Chrome Beta 157 Released for iOS",
-    "headline": "Chrome Beta 157 Released for iOS",
-    "summary": "Chrome Beta 157 (157.0.8103.13) for iOS has been released, becoming available on the App Store shortly. The update lists changes in the Git log, with feature details on the Chromium blog and web platform updates. Users encountering new issues should file bugs through the Chrome Release Team channels; no immediate security patches or firmware upgrades are required.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "publishedAt": "2026-10-22T15:13:32.971Z",
-    "url": "http://chromereleases.googleblog.com/feeds/6943765864254111853/comments/default",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-03",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-03",
-    "title": "Siemens Software Center Uncontrolled DLL Search Path Exploit",
-    "headline": "Siemens Software Center Uncontrolled DLL Search Path Exploit",
-    "summary": "Siemens Software Center loads DLLs from an uncontrolled search path, permitting an authenticated local attacker to place a malicious DLL and achieve arbitrary code execution with application privileges. The flaw is a path traversal vulnerability with CVSS 6.7, and active exploitation has been reported in the wild. Siemens has released an updated version; security teams should upgrade immediately or implement DLL search path restrictions.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "CISA",
-    "publishedAt": "2026-10-22T12:00:00.000Z",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-03",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:89760",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89760",
-    "title": "Red Hat Releases Security Update for container-tools:rhel8",
-    "headline": "Red Hat Releases Security Update for container-tools:rhel8",
-    "summary": "An update for the container-tools:rhel8 module on Red Hat Enterprise Linux 8 addresses multiple security issues identified by Red Hat Product Security. The update mitigates vulnerabilities with a CVSS base score that classifies them as Important, indicating potential for significant impact if exploited. Red Hat has issued a patch that must be applied immediately to prevent exploitation of these flaws.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-10-26T04:35:02.000Z",
-    "url": "https://access.redhat.com/errata/RHSA-2026:89760",
-    "additionalSources": []
-  },
-  {
     "id": "https://access.redhat.com/errata/RHSA-2026:89747",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89747",
     "title": "Red Hat Issues Security Patch for xorg-x11-server",
@@ -153,6 +179,19 @@
     "source": "Red Hat Security Advisories",
     "publishedAt": "2026-10-26T03:59:28.000Z",
     "url": "https://access.redhat.com/errata/RHSA-2026:89747",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/php2shell-flaws-exploited/",
+    "sourceUrl": "https://cybersecuritynews.com/php2shell-flaws-exploited/",
+    "title": "Critical PHP2Shell Flaws Exploited in Bitcoin Challenge",
+    "headline": "Critical PHP2Shell Flaws Exploited in Bitcoin Challenge",
+    "summary": "A researcher exploited two critical PHP flaws to access a test server during a public Bitcoin challenge, demonstrating the vulnerabilities’ impact on web application security. The flaws allowed unauthenticated remote code execution, evidenced by the successful 19.28‑hour run and subsequent PoC release. A vendor patch is pending; security teams should monitor for updates and apply mitigations once available.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-26T03:41:52.000Z",
+    "url": "https://cybersecuritynews.com/php2shell-flaws-exploited/",
     "additionalSources": []
   },
   {
@@ -299,6 +338,19 @@
     "source": "The Hacker News",
     "publishedAt": "2026-10-24T10:36:33.000Z",
     "url": "https://thehackernews.com/2026/10/google-says-gmail-and-photos-data.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/researchers-push-over-2-million-updates.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/researchers-push-over-2-million-updates.html",
+    "title": "Researchers Push Over 2 Million Updates to Disable Popcorn Time Updater That Could Fuel a Botnet",
+    "headline": "Researchers Push Over 2 Million Updates to Disable Popcorn Time Updater That Could Fuel a Botnet",
+    "summary": "Researchers pushed over 2 million updates to disable a background updater in the abandoned Time4Popcorn app, preventing potential remote takeover. The updater could have allowed unauthorized remote code execution if left enabled, enabling an outsider to hijack the system. Eye Security recommends installing the update immediately and removing Time4Popcorn to mitigate the risk.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-24T09:04:24.000Z",
+    "url": "https://thehackernews.com/2026/10/researchers-push-over-2-million-updates.html",
     "additionalSources": []
   },
   {
@@ -1293,6 +1345,19 @@
     ]
   },
   {
+    "id": "https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html",
+    "title": "Critical Flaw in Pillow Image Library Enables OS Command Execution",
+    "headline": "Critical Flaw in Pillow Image Library Enables OS Command Execution",
+    "summary": "A critical flaw in Pillow lets attackers execute OS commands by crafting an EPS image that specifies a file name. The vulnerability, CVE-2026-112900, occurs because Pillow passes the file name directly to Ghostscript without validation, enabling remote code execution. Pillow released patch 10.4.0; users should upgrade immediately or disable EPS support to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-23T09:36:00.000Z",
+    "url": "https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybersecuritynews.com/sbi-notifies-customers-with-cyber-incident/",
     "sourceUrl": "https://cybersecuritynews.com/sbi-notifies-customers-with-cyber-incident/",
     "title": "SBI Notifies Customers After Personal Data Exposure",
@@ -1749,6 +1814,19 @@
     ]
   },
   {
+    "id": "http://chromereleases.googleblog.com/feeds/1960193025315187574/comments/default",
+    "sourceUrl": "http://chromereleases.googleblog.com/feeds/1960193025315187574/comments/default",
+    "title": "Chrome Beta 157 Released for Android",
+    "headline": "Chrome Beta 157 Released for Android",
+    "summary": "Chrome Beta 157 (157.0.8103.14) for Android has been released, making the new build available through Google Play. The update lists changes in the Git log, with feature details on the Chromium blog and web platform updates. Users encountering new issues should file bugs through the Chrome Release Team channels; no immediate security patches or firmware upgrades are required.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "publishedAt": "2026-10-22T15:58:32.486Z",
+    "url": "http://chromereleases.googleblog.com/feeds/1960193025315187574/comments/default",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-shares-how-to-fix-broken-exchange-online-ews-apps/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-shares-how-to-fix-broken-exchange-online-ews-apps/",
     "title": "Microsoft Restores Exchange Web Services API for Legacy Applications",
@@ -1772,6 +1850,19 @@
     "source": "Ubuntu Security Notices",
     "publishedAt": "2026-10-22T15:38:41.000Z",
     "url": "https://ubuntu.com/security/notices/USN-8953-1",
+    "additionalSources": []
+  },
+  {
+    "id": "http://chromereleases.googleblog.com/feeds/6943765864254111853/comments/default",
+    "sourceUrl": "http://chromereleases.googleblog.com/feeds/6943765864254111853/comments/default",
+    "title": "Chrome Beta 157 Released for iOS",
+    "headline": "Chrome Beta 157 Released for iOS",
+    "summary": "Chrome Beta 157 (157.0.8103.13) for iOS has been released, becoming available on the App Store shortly. The update lists changes in the Git log, with feature details on the Chromium blog and web platform updates. Users encountering new issues should file bugs through the Chrome Release Team channels; no immediate security patches or firmware upgrades are required.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "publishedAt": "2026-10-22T15:13:32.971Z",
+    "url": "http://chromereleases.googleblog.com/feeds/6943765864254111853/comments/default",
     "additionalSources": []
   },
   {
@@ -2051,6 +2142,19 @@
     "source": "Ubuntu Security Notices",
     "publishedAt": "2026-10-22T12:07:23.000Z",
     "url": "https://ubuntu.com/security/notices/USN-8952-1",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-03",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-03",
+    "title": "Siemens Software Center Uncontrolled DLL Search Path Exploit",
+    "headline": "Siemens Software Center Uncontrolled DLL Search Path Exploit",
+    "summary": "Siemens Software Center loads DLLs from an uncontrolled search path, permitting an authenticated local attacker to place a malicious DLL and achieve arbitrary code execution with application privileges. The flaw is a path traversal vulnerability with CVSS 6.7, and active exploitation has been reported in the wild. Siemens has released an updated version; security teams should upgrade immediately or implement DLL search path restrictions.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "CISA",
+    "publishedAt": "2026-10-22T12:00:00.000Z",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-03",
     "additionalSources": []
   },
   {
@@ -4681,115 +4785,6 @@
     "source": "Cyber Security News",
     "publishedAt": "2026-10-15T03:51:31.000Z",
     "url": "https://cybersecuritynews.com/multiple-active-directory-vulnerabilities/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/ukraine-says-starshield-working-again-after-disruption",
-    "sourceUrl": "https://therecord.media/ukraine-says-starshield-working-again-after-disruption",
-    "title": "Ukraine Restores SpaceX Starshield Satellite Service After Restrictions",
-    "headline": "Ukraine Restores SpaceX Starshield Satellite Service After Restrictions",
-    "summary": "Ukraine’s military regained access to SpaceX’s Starshield satellite communications after temporary restrictions halted drone operations. The Defense Ministry confirmed the service is now operational, allowing continued use of satellite‑based drone control along the front line. No cyber attack or vulnerability was reported.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Record",
-    "publishedAt": "2026-10-14T23:00:00.000Z",
-    "url": "https://therecord.media/ukraine-says-starshield-working-again-after-disruption",
-    "additionalSources": []
-  },
-  {
-    "id": "https://blog.cloudflare.com/yandex-outage/",
-    "sourceUrl": "https://blog.cloudflare.com/yandex-outage/",
-    "title": "Yandex Outage: Malicious Bots Migrate Instead of Going Dark",
-    "headline": "Yandex Outage: Malicious Bots Migrate Instead of Going Dark",
-    "summary": "When Yandex data centers experienced strikes, search crawling stopped, but Cloudflare data showed that malicious bots simply moved to other networks. The bot activity continued elsewhere, indicating resilience of the bot operators rather than a shutdown.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "publishedAt": "2026-10-14T20:24:19.000Z",
-    "url": "https://blog.cloudflare.com/yandex-outage/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.wiz.io/blog/aspm-ai-era-pt-1-centralize-appsec-scanners",
-    "sourceUrl": "https://www.wiz.io/blog/aspm-ai-era-pt-1-centralize-appsec-scanners",
-    "title": "Wiz Integrates Code Scanners for Unified Application Risk Visibility",
-    "headline": "Wiz Integrates Code Scanners for Unified Application Risk Visibility",
-    "summary": "Wiz Research announced that its platform now supports integration of existing code scanners, providing a single view of application risk across an organization’s entire stack. The update aims to streamline security assessments and improve visibility into potential vulnerabilities across development environments.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Wiz Research",
-    "publishedAt": "2026-10-14T20:13:53.000Z",
-    "url": "https://www.wiz.io/blog/aspm-ai-era-pt-1-centralize-appsec-scanners",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/fbi-raids-dprk-it-worker-laptop-farms-in-texas-us-nationals-arrested/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-raids-dprk-it-worker-laptop-farms-in-texas-us-nationals-arrested/",
-    "title": "FBI Seizes Laptops Used by North Korean Remote IT Workers",
-    "headline": "FBI Seizes Laptops Used by North Korean Remote IT Workers",
-    "summary": "The U.S. Department of Justice disrupted the Famous Chollima threat group by arresting two suspects, charging 14 individuals, and seizing nearly 187 laptops used in North Korean remote IT worker schemes. The operation targets DPRK cyber espionage activities in Texas.",
-    "category": "NATION_STATE",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-14T19:41:43.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/fbi-raids-dprk-it-worker-laptop-farms-in-texas-us-nationals-arrested/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/curl-security-update-24-vulnerabilities/",
-    "sourceUrl": "https://cybersecuritynews.com/curl-security-update-24-vulnerabilities/",
-    "title": "Curl 8.23.0 Releases 24 Security Fixes for 30 Billion Installations",
-    "headline": "Curl 8.23.0 Releases 24 Security Fixes for 30 Billion Installations",
-    "summary": "The curl project released version 8.23.0, patching 24 security vulnerabilities affecting the data transfer tool and libcurl. Fixes address credential leaks, authentication errors, command injection, and application disruption flaws. The update also removes SMB and SMBS protocol support, requiring compatibility checks before deployment.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-14T16:46:52.000Z",
-    "url": "https://cybersecuritynews.com/curl-security-update-24-vulnerabilities/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.malwarebytes.com/blog/ai/2026/10/ai-worms-could-spread-across-your-smart-devices-anthropic-warns",
-    "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/10/ai-worms-could-spread-across-your-smart-devices-anthropic-warns",
-    "title": "AI Worms Could Spread Across Smart Devices",
-    "headline": "AI Worms Could Spread Across Smart Devices",
-    "summary": "Researchers warn that small AI models could propagate across vulnerable smart devices within months, potentially enabling automated malware spread. The threat relies on device firmware weaknesses and network connectivity, but no specific exploit or CVE is identified. Mitigation involves patching device firmware and restricting network access.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Malwarebytes Labs",
-    "publishedAt": "2026-10-14T16:36:46.000Z",
-    "url": "https://www.malwarebytes.com/blog/ai/2026/10/ai-worms-could-spread-across-your-smart-devices-anthropic-warns",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/anthropic-warns-self-replicating-ai-could-spread-to-your-smart-devices/"
-      }
-    ]
-  },
-  {
-    "id": "https://cybersecuritynews.com/how-mssps-can-cut-tier-1-bottlenecks-eating-into-profit-margins/",
-    "sourceUrl": "https://cybersecuritynews.com/how-mssps-can-cut-tier-1-bottlenecks-eating-into-profit-margins/",
-    "title": "MSSPs Face Tier 1 Bottlenecks That Reduce Profit Margins",
-    "headline": "MSSPs Face Tier 1 Bottlenecks That Reduce Profit Margins",
-    "summary": "MSSPs are overwhelmed by rising alert volumes, causing analysts to spend excessive time triaging and escalating cases. The inefficiency leads to slower response times and higher operational costs, eroding profit margins as firms struggle to manage increasing client demands.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-14T16:29:10.000Z",
-    "url": "https://cybersecuritynews.com/how-mssps-can-cut-tier-1-bottlenecks-eating-into-profit-margins/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/microsoft-recent-update-remote-desktop/",
-    "sourceUrl": "https://cybersecuritynews.com/microsoft-recent-update-remote-desktop/",
-    "title": "Windows 11 RDP Update Causes Connection Failures for Non-Admin Users",
-    "headline": "Windows 11 RDP Update Causes Connection Failures for Non-Admin Users",
-    "summary": "Microsoft’s recent Windows 11 updates, including KB5124010, introduced a Remote Desktop Services bug that blocks non‑admin users from connecting to hosts with Administrator protection enabled. The issue returns error 0xC000000D and affects company‑managed RDP servers. No patch yet announced.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-14T15:51:38.000Z",
-    "url": "https://cybersecuritynews.com/microsoft-recent-update-remote-desktop/",
     "additionalSources": []
   }
 ]
