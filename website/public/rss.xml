@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 27 Oct 2026 12:02:40 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 15:48:34 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>PHP and Node.js Flaws Threaten Trusted Websites</title>
+      <link>https://secubuzz.com/news/php-and-node-js-flaws-threaten-trusted-websites-19c656</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/php-and-node-js-flaws-threaten-trusted-websites-19c656</guid>
+      <description><![CDATA[PHP and Node.js flaws, hacked sites, fake updates, and rogue certificates can risk users on trusted websites. The vulnerabilities arise from insecure server configurations and certificate mismanagement, enabling credential theft and man‑in‑the‑middle attacks; no specific CVE cited. Users should verify site certificates, avoid downloading unverified updates, and keep PHP/Node.js environments patched.]]></description>
+      <pubDate>Tue, 27 Oct 2026 12:22:37 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/news/2026/10/the-webs-having-a-rough-week-heres-how-to-browse-safely">Malwarebytes Labs</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Microsoft Authenticator Flaw Enables Token Theft</title>
+      <link>https://secubuzz.com/news/microsoft-authenticator-flaw-enables-token-theft-1cfe87</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-authenticator-flaw-enables-token-theft-1cfe87</guid>
+      <description><![CDATA[Microsoft Authenticator for Android had a flaw allowing permissionless malicious apps to impersonate trusted Microsoft apps and harvest work account sign‑in tokens. The vulnerability, tracked as CVE‑2026‑80097, exploits the app’s lack of permission checks, enabling credential theft without user interaction; a public PoC demonstrated the exploit. Microsoft released Authenticator 6.2606.4246, and users must update immediately to mitigate the risk.]]></description>
+      <pubDate>Tue, 27 Oct 2026 12:09:50 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/microsoft-authenticator-flaw-let.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Samsung TVs May Listen via Connected Soundbars</title>
+      <link>https://secubuzz.com/news/samsung-tvs-may-listen-via-connected-soundbars-5a742a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/samsung-tvs-may-listen-via-connected-soundbars-5a742a</guid>
+      <description><![CDATA[A vulnerability in Samsung TVs lacking built‑in microphones allows connected soundbars or Bluetooth microphones to capture audio, enabling covert listening. The flaw exploits the TV’s audio‑routing firmware, permitting unauthorized audio streams to bypass user‑controlled privacy settings without requiring network access. Samsung released a firmware update disabling external microphone routing; users should apply it.]]></description>
+      <pubDate>Tue, 27 Oct 2026 10:44:40 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/privacy/2026/10/samsung-tvs-without-mics-may-listen-through-soundbars-researcher-says">Malwarebytes Labs</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Apple Backports Zero‑Day Patch for Older iOS Devices</title>
+      <link>https://secubuzz.com/news/apple-backports-zero-day-patch-for-older-ios-devic-118c92</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apple-backports-zero-day-patch-for-older-ios-devic-118c92</guid>
+      <description><![CDATA[Apple has backported security patches to older iPhones and iPads, addressing a zero‑day bug exploited in sophisticated targeted attacks on iOS devices. CVE-2026-86950 allows remote code execution via a malformed graphics request, actively exploited. Apple has issued a firmware update for affected devices; security teams should install the patch immediately to eliminate the exploitation vector.]]></description>
+      <pubDate>Tue, 27 Oct 2026 10:36:12 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/apple/apple-backports-coregraphics-zero-day-patches-to-older-iphones/">BleepingComputer</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>Maritime Coalition Launches Free Vulnerability Database for Ship and Port Systems</title>
       <link>https://secubuzz.com/news/maritime-coalition-launches-free-vulnerability-dat-694cac</link>
@@ -78,6 +114,15 @@
       <pubDate>Tue, 27 Oct 2026 02:09:55 GMT</pubDate>
       <source url="https://isc.sans.edu/diary/rss/33458">SANS Internet Storm Center</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Penetration Tester Arrested for ARTEX AI Breach of 90 South Korean Organizations</title>
+      <link>https://secubuzz.com/news/penetration-tester-arrested-for-artex-ai-breach-of-58f8a2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/penetration-tester-arrested-for-artex-ai-breach-of-58f8a2</guid>
+      <description><![CDATA[A penetration tester weaponized the ARTEX AI framework to breach 90 South Korean organizations, leading to seven arrests. The breach leveraged ARTEX AI’s automated credential harvesting and lateral movement, exfiltrating sensitive data and demanding ransom from. Security teams should rotate credentials, enable multi‑factor authentication, and monitor AI‑driven anomalies to mitigate similar attacks in 2026.]]></description>
+      <pubDate>Tue, 27 Oct 2026 00:59:27 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/seoul-police-arrest-pentester-over-82m-artex-ai-breach">CyberNews AI</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>CVE-2026-111497 Enables Remote Code Execution in PHP Windows Packages</title>
@@ -194,6 +239,15 @@
       <description><![CDATA[Ukraine's Defense Minister confirmed that Starlink and Starshield satellite connectivity has been restored after alleged misuse claims. The restoration follows a brief outage that prompted speculation about potential military exploitation of the commercial network. Operators should verify service integrity and monitor for anomalous traffic patterns to ensure continued secure communications.]]></description>
       <pubDate>Mon, 26 Oct 2026 16:40:00 GMT</pubDate>
       <source url="https://therecord.media/ukraine-disputes-musk-claims-of-starlink-misuse">The Record</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Dutch police extradite Chinese national linked to Cambodian investment scam</title>
+      <link>https://secubuzz.com/news/dutch-police-extradite-chinese-national-linked-to-1ec2c5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/dutch-police-extradite-chinese-national-linked-to-1ec2c5</guid>
+      <description><![CDATA[Dutch police extradited Zheng Zhao, a 44‑year‑old Chinese national, for alleged money laundering tied to a Cambodian investment scam targeting U.S. victims. Zhao allegedly facilitated transfer of illicit funds through fictitious businesses, enabling scammers to siphon investments from unsuspecting Americans. The extradition underscores international cooperation; law enforcement agencies should monitor cross‑border financial flows and enforce AML compliance.]]></description>
+      <pubDate>Mon, 26 Oct 2026 16:37:00 GMT</pubDate>
+      <source url="https://therecord.media/dutch-police-extradite-chinese-national-money-laundering-scams">The Record</source>
       <category>General</category>
     </item>
     <item>
@@ -401,60 +455,6 @@
       <description><![CDATA[An update for python3.9 on Red Hat Enterprise Linux 9 addresses multiple security vulnerabilities identified by Red Hat Product Security. The update mitigates flaws that could allow attackers to execute arbitrary code or elevate privileges, as indicated by the CVSS base scores linked in the advisory. Red Hat recommends applying the latest python3.9 package to ensure protection.]]></description>
       <pubDate>Mon, 26 Oct 2026 04:45:16 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:89742">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Bind9.18 Update Mitigates Security Flaws</title>
-      <link>https://secubuzz.com/news/red-hat-bind9-18-update-mitigates-security-flaws-37e480</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-bind9-18-update-mitigates-security-flaws-37e480</guid>
-      <description><![CDATA[An update for bind9.18 on Red Hat Enterprise Linux 9.8 Extended Update Support addresses security vulnerabilities that could enable remote code execution or privilege escalation. The advisory references CVSS base scores for each flaw, indicating moderate risk levels. Red Hat advises installing the bind9.18 update to eliminate the identified weaknesses.]]></description>
-      <pubDate>Mon, 26 Oct 2026 04:40:59 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:89746">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Security Update for container-tools:rhel8</title>
-      <link>https://secubuzz.com/news/red-hat-releases-security-update-for-container-too-37e480</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-security-update-for-container-too-37e480</guid>
-      <description><![CDATA[An update for the container-tools:rhel8 module on Red Hat Enterprise Linux 8 addresses multiple security issues identified by Red Hat Product Security. The update mitigates vulnerabilities with a CVSS base score that classifies them as Important, indicating potential for significant impact if exploited. Red Hat has issued a patch that must be applied immediately to prevent exploitation of these flaws.]]></description>
-      <pubDate>Mon, 26 Oct 2026 04:35:02 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:89760">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Reddit r/opensource Bans AI Projects and Solo Developers</title>
-      <link>https://secubuzz.com/news/reddit-r-opensource-bans-ai-projects-and-solo-deve-1f923d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/reddit-r-opensource-bans-ai-projects-and-solo-deve-1f923d</guid>
-      <description><![CDATA[Reddit moderators of r/opensource have prohibited any project that uses AI, is AI-generated, or is intended for AI, requiring projects to be at least one year old, OSI licensed, and have a community with three or more contributors. The ban also mandates that the poster’s Reddit account must be at least one year old. The policy aims to restrict AI-driven content on the open-source forum.]]></description>
-      <pubDate>Mon, 26 Oct 2026 04:30:36 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/26/reddit-r-opensource-ai-ban/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Google Releases Elephant‑Goldfish Model Plugin to Detect AI Coding Errors</title>
-      <link>https://secubuzz.com/news/google-releases-elephant-goldfish-model-plugin-to-22409e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-releases-elephant-goldfish-model-plugin-to-22409e</guid>
-      <description><![CDATA[Google has open‑source the Elephant‑Goldfish Model (EGM) plugin, an internal tool that forces an AI coding agent to draft and defend a design document before coding. The plugin then presents the document to fresh AI sessions that have never seen the design conversation, prompting them to identify flaws. The release highlights Google’s effort to mitigate reliability risks in AI‑driven development.]]></description>
-      <pubDate>Mon, 26 Oct 2026 04:25:59 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/26/google-elephant-goldfish-model-plugin/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Security Patch for xorg-x11-server</title>
-      <link>https://secubuzz.com/news/red-hat-issues-security-patch-for-xorg-x11-server-37e480</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-security-patch-for-xorg-x11-server-37e480</guid>
-      <description><![CDATA[Red Hat has released a security update for the xorg-x11-server package on Red Hat Enterprise Linux 8 to remediate identified vulnerabilities. The vulnerabilities carry a CVSS base score that classifies them as Important, suggesting a high likelihood of exploitation in the wild. Applying the provided patch is essential to eliminate the risk posed by these security flaws.]]></description>
-      <pubDate>Mon, 26 Oct 2026 03:59:28 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:89747">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Critical PHP2Shell Flaws Exploited in Bitcoin Challenge</title>
-      <link>https://secubuzz.com/news/critical-php2shell-flaws-exploited-in-bitcoin-chal-624ddc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/critical-php2shell-flaws-exploited-in-bitcoin-chal-624ddc</guid>
-      <description><![CDATA[A researcher exploited two critical PHP flaws to access a test server during a public Bitcoin challenge, demonstrating the vulnerabilities’ impact on web application security. The flaws allowed unauthenticated remote code execution, evidenced by the successful 19.28‑hour run and subsequent PoC release. A vendor patch is pending; security teams should monitor for updates and apply mitigations once available.]]></description>
-      <pubDate>Mon, 26 Oct 2026 03:41:52 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/php2shell-flaws-exploited/">Cyber Security News</source>
       <category>Vulnerability</category>
     </item>
   </channel>

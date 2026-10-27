@@ -1,5 +1,83 @@
 [
   {
+    "id": "https://www.malwarebytes.com/blog/news/2026/10/the-webs-having-a-rough-week-heres-how-to-browse-safely",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/the-webs-having-a-rough-week-heres-how-to-browse-safely",
+    "title": "PHP and Node.js Flaws Threaten Trusted Websites",
+    "headline": "PHP and Node.js Flaws Threaten Trusted Websites",
+    "summary": "PHP and Node.js flaws, hacked sites, fake updates, and rogue certificates can risk users on trusted websites. The vulnerabilities arise from insecure server configurations and certificate mismanagement, enabling credential theft and man‑in‑the‑middle attacks; no specific CVE cited. Users should verify site certificates, avoid downloading unverified updates, and keep PHP/Node.js environments patched.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "publishedAt": "2026-10-27T12:22:37.000Z",
+    "url": "https://www.malwarebytes.com/blog/news/2026/10/the-webs-having-a-rough-week-heres-how-to-browse-safely",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/microsoft-authenticator-flaw-let.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/microsoft-authenticator-flaw-let.html",
+    "title": "Microsoft Authenticator Flaw Enables Token Theft",
+    "headline": "Microsoft Authenticator Flaw Enables Token Theft",
+    "summary": "Microsoft Authenticator for Android had a flaw allowing permissionless malicious apps to impersonate trusted Microsoft apps and harvest work account sign‑in tokens. The vulnerability, tracked as CVE‑2026‑80097, exploits the app’s lack of permission checks, enabling credential theft without user interaction; a public PoC demonstrated the exploit. Microsoft released Authenticator 6.2606.4246, and users must update immediately to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-27T12:09:50.000Z",
+    "url": "https://thehackernews.com/2026/10/microsoft-authenticator-flaw-let.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.malwarebytes.com/blog/privacy/2026/10/samsung-tvs-without-mics-may-listen-through-soundbars-researcher-says",
+    "sourceUrl": "https://www.malwarebytes.com/blog/privacy/2026/10/samsung-tvs-without-mics-may-listen-through-soundbars-researcher-says",
+    "title": "Samsung TVs May Listen via Connected Soundbars",
+    "headline": "Samsung TVs May Listen via Connected Soundbars",
+    "summary": "A vulnerability in Samsung TVs lacking built‑in microphones allows connected soundbars or Bluetooth microphones to capture audio, enabling covert listening. The flaw exploits the TV’s audio‑routing firmware, permitting unauthorized audio streams to bypass user‑controlled privacy settings without requiring network access. Samsung released a firmware update disabling external microphone routing; users should apply it.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Malwarebytes Labs",
+    "publishedAt": "2026-10-27T10:44:40.000Z",
+    "url": "https://www.malwarebytes.com/blog/privacy/2026/10/samsung-tvs-without-mics-may-listen-through-soundbars-researcher-says",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/apple/apple-backports-coregraphics-zero-day-patches-to-older-iphones/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/apple/apple-backports-coregraphics-zero-day-patches-to-older-iphones/",
+    "title": "Apple Backports Zero‑Day Patch for Older iOS Devices",
+    "headline": "Apple Backports Zero‑Day Patch for Older iOS Devices",
+    "summary": "Apple has backported security patches to older iPhones and iPads, addressing a zero‑day bug exploited in sophisticated targeted attacks on iOS devices. CVE-2026-86950 allows remote code execution via a malformed graphics request, actively exploited. Apple has issued a firmware update for affected devices; security teams should install the patch immediately to eliminate the exploitation vector.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-27T10:36:12.000Z",
+    "url": "https://www.bleepingcomputer.com/news/apple/apple-backports-coregraphics-zero-day-patches-to-older-iphones/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybernewsai.com/blog/seoul-police-arrest-pentester-over-82m-artex-ai-breach",
+    "sourceUrl": "https://cybernewsai.com/blog/seoul-police-arrest-pentester-over-82m-artex-ai-breach",
+    "title": "Penetration Tester Arrested for ARTEX AI Breach of 90 South Korean Organizations",
+    "headline": "Penetration Tester Arrested for ARTEX AI Breach of 90 South Korean Organizations",
+    "summary": "A penetration tester weaponized the ARTEX AI framework to breach 90 South Korean organizations, leading to seven arrests. The breach leveraged ARTEX AI’s automated credential harvesting and lateral movement, exfiltrating sensitive data and demanding ransom from. Security teams should rotate credentials, enable multi‑factor authentication, and monitor AI‑driven anomalies to mitigate similar attacks in 2026.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-10-27T00:59:27.000Z",
+    "url": "https://cybernewsai.com/blog/seoul-police-arrest-pentester-over-82m-artex-ai-breach",
+    "additionalSources": []
+  },
+  {
+    "id": "https://therecord.media/dutch-police-extradite-chinese-national-money-laundering-scams",
+    "sourceUrl": "https://therecord.media/dutch-police-extradite-chinese-national-money-laundering-scams",
+    "title": "Dutch police extradite Chinese national linked to Cambodian investment scam",
+    "headline": "Dutch police extradite Chinese national linked to Cambodian investment scam",
+    "summary": "Dutch police extradited Zheng Zhao, a 44‑year‑old Chinese national, for alleged money laundering tied to a Cambodian investment scam targeting U.S. victims. Zhao allegedly facilitated transfer of illicit funds through fictitious businesses, enabling scammers to siphon investments from unsuspecting Americans. The extradition underscores international cooperation; law enforcement agencies should monitor cross‑border financial flows and enforce AML compliance.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Record",
+    "publishedAt": "2026-10-26T16:37:00.000Z",
+    "url": "https://therecord.media/dutch-police-extradite-chinese-national-money-laundering-scams",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.securityweek.com/maritime-coalition-launches-free-vulnerability-database-for-ship-and-port-systems/",
     "sourceUrl": "https://www.securityweek.com/maritime-coalition-launches-free-vulnerability-database-for-ship-and-port-systems/",
     "title": "Maritime Coalition Launches Free Vulnerability Database for Ship and Port Systems",
@@ -104,58 +182,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
-    "sourceUrl": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
-    "title": "Cloudflare Workers AI GLM‑5.3 KV Cache Exposure",
-    "headline": "Cloudflare Workers AI GLM‑5.3 KV Cache Exposure",
-    "summary": "A configuration mismatch in Cloudflare Workers AI’s GLM‑5.3 model exposed KV cache pages across requests via an SGLang bug. The flaw allowed unauthenticated readers to retrieve sensitive session data, creating a cross‑request information disclosure with potential credential leakage. Cloudflare released a patch correcting the SGLang configuration and recommends updating to the latest Workers AI runtime to mitigate the exposure.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Cloudflare Security",
-    "publishedAt": "2026-10-26T22:01:23.000Z",
-    "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/cyberattacks-data-breaches/gheist-stolen-github-tokens-cloud-secrets",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/gheist-stolen-github-tokens-cloud-secrets",
-    "title": "'Gheist' Exploits GitHub Tokens to Harvest Cloud Secrets",
-    "headline": "'Gheist' Exploits GitHub Tokens to Harvest Cloud Secrets",
-    "summary": "'Gheist' exploits compromised GitHub tokens to harvest credentials and cloud secrets from thousands of developer repositories. The threat uses authenticated API calls, bypassing software vulnerabilities, to read and exfiltrate secrets, creating a high‑risk exposure for cloud environments. Teams must rotate tokens, enforce least‑privilege, and monitor API activity; vendors should provide token‑revocation tooling.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-26T18:01:40.000Z",
-    "url": "https://www.darkreading.com/cyberattacks-data-breaches/gheist-stolen-github-tokens-cloud-secrets",
-    "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/ukraine-disputes-musk-claims-of-starlink-misuse",
-    "sourceUrl": "https://therecord.media/ukraine-disputes-musk-claims-of-starlink-misuse",
-    "title": "Ukraine Confirms Starlink Connectivity Restored After Misuse Allegations",
-    "headline": "Ukraine Confirms Starlink Connectivity Restored After Misuse Allegations",
-    "summary": "Ukraine's Defense Minister confirmed that Starlink and Starshield satellite connectivity has been restored after alleged misuse claims. The restoration follows a brief outage that prompted speculation about potential military exploitation of the commercial network. Operators should verify service integrity and monitor for anomalous traffic patterns to ensure continued secure communications.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Record",
-    "publishedAt": "2026-10-26T16:40:00.000Z",
-    "url": "https://therecord.media/ukraine-disputes-musk-claims-of-starlink-misuse",
-    "additionalSources": []
-  },
-  {
-    "id": "https://ubuntu.com/security/notices/USN-8956-1",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8956-1",
-    "title": "Brotli Decompression Flaw Enables Remote Denial‑of‑Service and Code Execution",
-    "headline": "Brotli Decompression Flaw Enables Remote Denial‑of‑Service and Code Execution",
-    "summary": "A Brotli decompression flaw allows remote attackers to trigger denial‑of‑service or arbitrary code execution by supplying malformed compressed streams. The defect stems from improper bounds checking during stream parsing, enabling memory corruption and potential code injection without authentication. Ubuntu has released patch USN‑8956‑1; users should update Brotli libraries immediately to mitigate the vulnerability.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "publishedAt": "2026-10-26T15:54:30.000Z",
-    "url": "https://ubuntu.com/security/notices/USN-8956-1",
-    "additionalSources": []
-  },
-  {
     "id": "https://cybernewsai.com/blog/cve-2026-111497-php-windows-brotli-memory-corruption-patch-guide",
     "sourceUrl": "https://cybernewsai.com/blog/cve-2026-111497-php-windows-brotli-memory-corruption-patch-guide",
     "title": "CVE-2026-111497 Enables Remote Code Execution in PHP Windows Packages",
@@ -205,6 +231,19 @@
     "source": "BleepingComputer",
     "publishedAt": "2026-10-26T22:20:36.000Z",
     "url": "https://www.bleepingcomputer.com/news/security/university-of-copenhagen-data-breach-exposes-data-of-525-000-people/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+    "sourceUrl": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+    "title": "Cloudflare Workers AI GLM‑5.3 KV Cache Exposure",
+    "headline": "Cloudflare Workers AI GLM‑5.3 KV Cache Exposure",
+    "summary": "A configuration mismatch in Cloudflare Workers AI’s GLM‑5.3 model exposed KV cache pages across requests via an SGLang bug. The flaw allowed unauthenticated readers to retrieve sensitive session data, creating a cross‑request information disclosure with potential credential leakage. Cloudflare released a patch correcting the SGLang configuration and recommends updating to the latest Workers AI runtime to mitigate the exposure.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Cloudflare Security",
+    "publishedAt": "2026-10-26T22:01:23.000Z",
+    "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
     "additionalSources": []
   },
   {
@@ -273,6 +312,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.darkreading.com/cyberattacks-data-breaches/gheist-stolen-github-tokens-cloud-secrets",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/gheist-stolen-github-tokens-cloud-secrets",
+    "title": "'Gheist' Exploits GitHub Tokens to Harvest Cloud Secrets",
+    "headline": "'Gheist' Exploits GitHub Tokens to Harvest Cloud Secrets",
+    "summary": "'Gheist' exploits compromised GitHub tokens to harvest credentials and cloud secrets from thousands of developer repositories. The threat uses authenticated API calls, bypassing software vulnerabilities, to read and exfiltrate secrets, creating a high‑risk exposure for cloud environments. Teams must rotate tokens, enforce least‑privilege, and monitor API activity; vendors should provide token‑revocation tooling.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-26T18:01:40.000Z",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/gheist-stolen-github-tokens-cloud-secrets",
+    "additionalSources": []
+  },
+  {
     "id": "https://thehackernews.com/2026/10/php-issues-second-windows-security.html",
     "sourceUrl": "https://thehackernews.com/2026/10/php-issues-second-windows-security.html",
     "title": "PHP Brotli Compression Library Vulnerability CVE-2026-111497",
@@ -286,6 +338,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://therecord.media/ukraine-disputes-musk-claims-of-starlink-misuse",
+    "sourceUrl": "https://therecord.media/ukraine-disputes-musk-claims-of-starlink-misuse",
+    "title": "Ukraine Confirms Starlink Connectivity Restored After Misuse Allegations",
+    "headline": "Ukraine Confirms Starlink Connectivity Restored After Misuse Allegations",
+    "summary": "Ukraine's Defense Minister confirmed that Starlink and Starshield satellite connectivity has been restored after alleged misuse claims. The restoration follows a brief outage that prompted speculation about potential military exploitation of the commercial network. Operators should verify service integrity and monitor for anomalous traffic patterns to ensure continued secure communications.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Record",
+    "publishedAt": "2026-10-26T16:40:00.000Z",
+    "url": "https://therecord.media/ukraine-disputes-musk-claims-of-starlink-misuse",
+    "additionalSources": []
+  },
+  {
     "id": "https://research.checkpoint.com/2026/26th-october-threat-intelligence-report/",
     "sourceUrl": "https://research.checkpoint.com/2026/26th-october-threat-intelligence-report/",
     "title": "Onamae Desktop Cloud Breach Compromises 26,000 Servers",
@@ -296,6 +361,19 @@
     "source": "Check Point Research",
     "publishedAt": "2026-10-26T16:12:38.000Z",
     "url": "https://research.checkpoint.com/2026/26th-october-threat-intelligence-report/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://ubuntu.com/security/notices/USN-8956-1",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8956-1",
+    "title": "Brotli Decompression Flaw Enables Remote Denial‑of‑Service and Code Execution",
+    "headline": "Brotli Decompression Flaw Enables Remote Denial‑of‑Service and Code Execution",
+    "summary": "A Brotli decompression flaw allows remote attackers to trigger denial‑of‑service or arbitrary code execution by supplying malformed compressed streams. The defect stems from improper bounds checking during stream parsing, enabling memory corruption and potential code injection without authentication. Ubuntu has released patch USN‑8956‑1; users should update Brotli libraries immediately to mitigate the vulnerability.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "publishedAt": "2026-10-26T15:54:30.000Z",
+    "url": "https://ubuntu.com/security/notices/USN-8956-1",
     "additionalSources": []
   },
   {
@@ -4667,94 +4745,6 @@
     "source": "Help Net Security",
     "publishedAt": "2026-10-16T11:34:35.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/16/usa-2026-midterm-election-scams/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html",
-    "title": "Rise of AI Decision Models in SOC Platforms",
-    "headline": "Rise of AI Decision Models in SOC Platforms",
-    "summary": "Within a month, AI decision models proliferated across security operations. TypeSafe AI launched Jev, a System One model, while OpenAI introduced a Decisions API and Cribl released a local LoRA adapter. These developments aim to enhance automated threat analysis but also raise concerns about model reliability and bias.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-16T11:30:00.000Z",
-    "url": "https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/chinese-phishing-network-2/",
-    "sourceUrl": "https://cybersecuritynews.com/chinese-phishing-network-2/",
-    "title": "Chinese Phishing Network Targets Japanese Banks with 17,000 Domains",
-    "headline": "Chinese Phishing Network Targets Japanese Banks with 17,000 Domains",
-    "summary": "A Chinese-language phishing operation used about 17,000 domains to impersonate banks, payment services, and retailers, focusing on Japan. The campaign employed three phishing kits—CoGUI, CoAceV, and CoFish_Ws—to send deceptive emails and redirect victims to fake login or payment pages, stealing credentials.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-16T11:26:28.000Z",
-    "url": "https://cybersecuritynews.com/chinese-phishing-network-2/",
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/chinese-phishing-network/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.schneier.com/blog/archives/2026/10/backdooring-open-weight-ai-models.html",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/backdooring-open-weight-ai-models.html",
-    "title": "Backdoored Open-Weight AI Models via Abliterated Builds",
-    "headline": "Backdoored Open-Weight AI Models via Abliterated Builds",
-    "summary": "Researchers discovered that open AI models whose weights have been edited can carry backdoors. Abliterated models, which remove a model’s refusal capability, are commonly uploaded to Hugging Face. These modified weights allow the model to answer prompts that a safety‑tuned version would normally refuse, posing a new vulnerability.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Schneier on Security",
-    "publishedAt": "2026-10-16T11:04:53.000Z",
-    "url": "https://www.schneier.com/blog/archives/2026/10/backdooring-open-weight-ai-models.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/f5-juniper-networks-patch-critical-vulnerabilities/",
-    "sourceUrl": "https://www.securityweek.com/f5-juniper-networks-patch-critical-vulnerabilities/",
-    "title": "F5 and Juniper Networks Issue Patches for Critical Vulnerabilities",
-    "headline": "F5 and Juniper Networks Issue Patches for Critical Vulnerabilities",
-    "summary": "F5 and Juniper Networks have released patches for critical security flaws that could allow attackers to execute remote code and seize full control of affected devices. The vulnerabilities pose a high risk of device takeover, necessitating immediate application of the vendor‑issued updates to protect network infrastructure.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-16T09:54:34.000Z",
-    "url": "https://www.securityweek.com/f5-juniper-networks-patch-critical-vulnerabilities/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/cert-in-warns-hackers-using-ai-agents/",
-    "sourceUrl": "https://cybersecuritynews.com/cert-in-warns-hackers-using-ai-agents/",
-    "title": "CERT‑In Warns of AI‑Powered Cyberattacks Reducing Response Time",
-    "headline": "CERT‑In Warns of AI‑Powered Cyberattacks Reducing Response Time",
-    "summary": "India’s CERT‑In issued a critical advisory on October 15, 2026, alerting that hackers are deploying AI agents to accelerate cyberattacks, cutting the interval between system access and damage from days to hours. The advisory cites incidents against Indian organizations and unauthorized AI activity beyond approved research.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-16T09:06:40.000Z",
-    "url": "https://cybersecuritynews.com/cert-in-warns-hackers-using-ai-agents/",
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/ai-turns-familiar-cyberattacks-into-a-race-against-time/"
-      }
-    ]
-  },
-  {
-    "id": "https://cybersecuritynews.com/hackers-exploit-d-link/",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-exploit-d-link/",
-    "title": "Hackers Exploit D-Link, Ubiquiti and SAP Flaws to Hijack Devices for Proxy Networks",
-    "headline": "Hackers Exploit D-Link, Ubiquiti and SAP Flaws to Hijack Devices for Proxy Networks",
-    "summary": "A cybercrime campaign compromised at least 143 devices in 34 countries by exploiting flaws in D‑Link, Ubiquiti and SAP products. Attackers installed Pawns.app proxy software, turning victim devices into residential proxy nodes that route traffic through the real IP addresses.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-16T09:02:30.000Z",
-    "url": "https://cybersecuritynews.com/hackers-exploit-d-link/",
     "additionalSources": []
   }
 ]

@@ -11,6 +11,77 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "php-and-node-js-flaws-threaten-trusted-websites-19c656",
+    "title": "PHP and Node.js Flaws Threaten Trusted Websites",
+    "summary": "PHP and Node.js flaws, hacked sites, fake updates, and rogue certificates can risk users on trusted websites. The vulnerabilities arise from insecure server configurations and certificate mismanagement, enabling credential theft and man‑in‑the‑middle attacks; no specific CVE cited. Users should verify site certificates, avoid downloading unverified updates, and keep PHP/Node.js environments patched.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/the-webs-having-a-rough-week-heres-how-to-browse-safely",
+    "publishedAt": "2026-10-27T12:22:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "php-and-node-js-flaws-threaten-trusted-websites",
+      "article-19c656",
+      "19c656"
+    ]
+  },
+  {
+    "slug": "microsoft-authenticator-flaw-enables-token-theft-1cfe87",
+    "title": "Microsoft Authenticator Flaw Enables Token Theft",
+    "summary": "Microsoft Authenticator for Android had a flaw allowing permissionless malicious apps to impersonate trusted Microsoft apps and harvest work account sign‑in tokens. The vulnerability, tracked as CVE‑2026‑80097, exploits the app’s lack of permission checks, enabling credential theft without user interaction; a public PoC demonstrated the exploit. Microsoft released Authenticator 6.2606.4246, and users must update immediately to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/microsoft-authenticator-flaw-let.html",
+    "publishedAt": "2026-10-27T12:09:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-authenticator-flaw-enables-token-theft",
+      "article-1cfe87",
+      "1cfe87"
+    ]
+  },
+  {
+    "slug": "samsung-tvs-may-listen-via-connected-soundbars-5a742a",
+    "title": "Samsung TVs May Listen via Connected Soundbars",
+    "summary": "A vulnerability in Samsung TVs lacking built‑in microphones allows connected soundbars or Bluetooth microphones to capture audio, enabling covert listening. The flaw exploits the TV’s audio‑routing firmware, permitting unauthorized audio streams to bypass user‑controlled privacy settings without requiring network access. Samsung released a firmware update disabling external microphone routing; users should apply it.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/privacy/2026/10/samsung-tvs-without-mics-may-listen-through-soundbars-researcher-says",
+    "publishedAt": "2026-10-27T10:44:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "samsung-tvs-may-listen-via-connected-soundbars",
+      "article-5a742a",
+      "5a742a"
+    ]
+  },
+  {
+    "slug": "apple-backports-zero-day-patch-for-older-ios-devic-118c92",
+    "title": "Apple Backports Zero‑Day Patch for Older iOS Devices",
+    "summary": "Apple has backported security patches to older iPhones and iPads, addressing a zero‑day bug exploited in sophisticated targeted attacks on iOS devices. CVE-2026-86950 allows remote code execution via a malformed graphics request, actively exploited. Apple has issued a firmware update for affected devices; security teams should install the patch immediately to eliminate the exploitation vector.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/apple/apple-backports-coregraphics-zero-day-patches-to-older-iphones/",
+    "publishedAt": "2026-10-27T10:36:12.000Z",
+    "cves": [
+      "CVE-2026-86950"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "apple-backports-zero-day-patch-for-older-ios-devic",
+      "article-118c92",
+      "118c92",
+      "apple-backports-zero-day-patch-for-older-ios-devices"
+    ]
+  },
+  {
     "slug": "maritime-coalition-launches-free-vulnerability-dat-694cac",
     "title": "Maritime Coalition Launches Free Vulnerability Database for Ship and Port Systems",
     "summary": "The Maritime Coalition has released a free vulnerability database cataloging nearly 30,000 IT and OT weaknesses affecting ship and port systems, including 37 maritime‑specific products. The database aggregates known flaws to aid operators in prioritizing security controls and patching schedules. Users can access the repository online to download vulnerability lists and mitigation guidance.",
@@ -160,6 +231,24 @@ export const news: NewsBrief[] = [
       "article-57dd7e",
       "57dd7e",
       "apple-releases-patch-for-cve-2026-109618-and-303-other-vulne"
+    ]
+  },
+  {
+    "slug": "penetration-tester-arrested-for-artex-ai-breach-of-58f8a2",
+    "title": "Penetration Tester Arrested for ARTEX AI Breach of 90 South Korean Organizations",
+    "summary": "A penetration tester weaponized the ARTEX AI framework to breach 90 South Korean organizations, leading to seven arrests. The breach leveraged ARTEX AI’s automated credential harvesting and lateral movement, exfiltrating sensitive data and demanding ransom from. Security teams should rotate credentials, enable multi‑factor authentication, and monitor AI‑driven anomalies to mitigate similar attacks in 2026.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/seoul-police-arrest-pentester-over-82m-artex-ai-breach",
+    "publishedAt": "2026-10-27T00:59:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "penetration-tester-arrested-for-artex-ai-breach-of",
+      "article-58f8a2",
+      "58f8a2",
+      "penetration-tester-arrested-for-artex-ai-breach-of-90-south-"
     ]
   },
   {
@@ -399,6 +488,24 @@ export const news: NewsBrief[] = [
       "article-420079",
       "420079",
       "ukraine-confirms-starlink-connectivity-restored-after-misuse"
+    ]
+  },
+  {
+    "slug": "dutch-police-extradite-chinese-national-linked-to-1ec2c5",
+    "title": "Dutch police extradite Chinese national linked to Cambodian investment scam",
+    "summary": "Dutch police extradited Zheng Zhao, a 44‑year‑old Chinese national, for alleged money laundering tied to a Cambodian investment scam targeting U.S. victims. Zhao allegedly facilitated transfer of illicit funds through fictitious businesses, enabling scammers to siphon investments from unsuspecting Americans. The extradition underscores international cooperation; law enforcement agencies should monitor cross‑border financial flows and enforce AML compliance.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/dutch-police-extradite-chinese-national-money-laundering-scams",
+    "publishedAt": "2026-10-26T16:37:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "dutch-police-extradite-chinese-national-linked-to",
+      "article-1ec2c5",
+      "1ec2c5",
+      "dutch-police-extradite-chinese-national-linked-to-cambodian-"
     ]
   },
   {
@@ -6429,123 +6536,6 @@ export const news: NewsBrief[] = [
       "article-4f7640",
       "4f7640",
       "scammers-clone-candidates-voices-to-steal-cash-and-voter-dat"
-    ]
-  },
-  {
-    "slug": "rise-of-ai-decision-models-in-soc-platforms-126822",
-    "title": "Rise of AI Decision Models in SOC Platforms",
-    "summary": "Within a month, AI decision models proliferated across security operations. TypeSafe AI launched Jev, a System One model, while OpenAI introduced a Decisions API and Cribl released a local LoRA adapter. These developments aim to enhance automated threat analysis but also raise concerns about model reliability and bias.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html",
-    "publishedAt": "2026-10-16T11:30:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rise-of-ai-decision-models-in-soc-platforms",
-      "article-126822",
-      "126822"
-    ]
-  },
-  {
-    "slug": "chinese-phishing-network-targets-japanese-banks-wi-6fea71",
-    "title": "Chinese Phishing Network Targets Japanese Banks with 17,000 Domains",
-    "summary": "A Chinese-language phishing operation used about 17,000 domains to impersonate banks, payment services, and retailers, focusing on Japan. The campaign employed three phishing kits—CoGUI, CoAceV, and CoFish_Ws—to send deceptive emails and redirect victims to fake login or payment pages, stealing credentials.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/chinese-phishing-network-2/",
-    "publishedAt": "2026-10-16T11:26:28.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/chinese-phishing-network/"
-      }
-    ],
-    "aliases": [
-      "chinese-phishing-network-targets-japanese-banks-wi",
-      "article-6fea71",
-      "6fea71",
-      "chinese-phishing-network-targets-japanese-banks-with-17-000-"
-    ]
-  },
-  {
-    "slug": "backdoored-open-weight-ai-models-via-abliterated-b-438175",
-    "title": "Backdoored Open-Weight AI Models via Abliterated Builds",
-    "summary": "Researchers discovered that open AI models whose weights have been edited can carry backdoors. Abliterated models, which remove a model’s refusal capability, are commonly uploaded to Hugging Face. These modified weights allow the model to answer prompts that a safety‑tuned version would normally refuse, posing a new vulnerability.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Schneier on Security",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/backdooring-open-weight-ai-models.html",
-    "publishedAt": "2026-10-16T11:04:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "backdoored-open-weight-ai-models-via-abliterated-b",
-      "article-438175",
-      "438175",
-      "backdoored-open-weight-ai-models-via-abliterated-builds"
-    ]
-  },
-  {
-    "slug": "f5-and-juniper-networks-issue-patches-for-critical-4f2ace",
-    "title": "F5 and Juniper Networks Issue Patches for Critical Vulnerabilities",
-    "summary": "F5 and Juniper Networks have released patches for critical security flaws that could allow attackers to execute remote code and seize full control of affected devices. The vulnerabilities pose a high risk of device takeover, necessitating immediate application of the vendor‑issued updates to protect network infrastructure.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/f5-juniper-networks-patch-critical-vulnerabilities/",
-    "publishedAt": "2026-10-16T09:54:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "f5-and-juniper-networks-issue-patches-for-critical",
-      "article-4f2ace",
-      "4f2ace",
-      "f5-and-juniper-networks-issue-patches-for-critical-vulnerabi"
-    ]
-  },
-  {
-    "slug": "cert-in-warns-of-ai-powered-cyberattacks-reducing-431489",
-    "title": "CERT‑In Warns of AI‑Powered Cyberattacks Reducing Response Time",
-    "summary": "India’s CERT‑In issued a critical advisory on October 15, 2026, alerting that hackers are deploying AI agents to accelerate cyberattacks, cutting the interval between system access and damage from days to hours. The advisory cites incidents against Indian organizations and unauthorized AI activity beyond approved research.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/cert-in-warns-hackers-using-ai-agents/",
-    "publishedAt": "2026-10-16T09:06:40.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/ai-turns-familiar-cyberattacks-into-a-race-against-time/"
-      }
-    ],
-    "aliases": [
-      "cert-in-warns-of-ai-powered-cyberattacks-reducing",
-      "article-431489",
-      "431489",
-      "cert-in-warns-of-ai-powered-cyberattacks-reducing-response-t"
-    ]
-  },
-  {
-    "slug": "hackers-exploit-d-link-ubiquiti-and-sap-flaws-to-h-4c7500",
-    "title": "Hackers Exploit D-Link, Ubiquiti and SAP Flaws to Hijack Devices for Proxy Networks",
-    "summary": "A cybercrime campaign compromised at least 143 devices in 34 countries by exploiting flaws in D‑Link, Ubiquiti and SAP products. Attackers installed Pawns.app proxy software, turning victim devices into residential proxy nodes that route traffic through the real IP addresses.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-exploit-d-link/",
-    "publishedAt": "2026-10-16T09:02:30.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-exploit-d-link-ubiquiti-and-sap-flaws-to-h",
-      "article-4c7500",
-      "4c7500",
-      "hackers-exploit-d-link-ubiquiti-and-sap-flaws-to-hijack-devi"
     ]
   }
 ];
