@@ -11,6 +11,158 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "maritime-coalition-launches-free-vulnerability-dat-694cac",
+    "title": "Maritime Coalition Launches Free Vulnerability Database for Ship and Port Systems",
+    "summary": "The Maritime Coalition has released a free vulnerability database cataloging nearly 30,000 IT and OT weaknesses affecting ship and port systems, including 37 maritime‑specific products. The database aggregates known flaws to aid operators in prioritizing security controls and patching schedules. Users can access the repository online to download vulnerability lists and mitigation guidance.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/maritime-coalition-launches-free-vulnerability-database-for-ship-and-port-systems/",
+    "publishedAt": "2026-10-27T07:14:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "maritime-coalition-launches-free-vulnerability-dat",
+      "article-694cac",
+      "694cac",
+      "maritime-coalition-launches-free-vulnerability-database-for-"
+    ]
+  },
+  {
+    "slug": "attackers-hijack-dahua-ip-cameras-in-ukraine-using-185083",
+    "title": "Attackers Hijack Dahua IP Cameras in Ukraine Using P2P Access and Auth Weaknesses",
+    "summary": "Attackers exploited weak authentication and P2P access controls on Dahua IP cameras and DVRs in Ukraine, enabling unauthorized remote viewing, configuration changes, and creation of third‑party accounts. The vulnerability allows remote attackers to bypass device security, potentially exposing sensitive surveillance feeds and compromising operational integrity. Operators should disable P2P features, enforce strong passwords, and apply vendor firmware updates immediately.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/attackers-hijack-dahua-ip-cameras-in.html",
+    "publishedAt": "2026-10-27T06:34:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "attackers-hijack-dahua-ip-cameras-in-ukraine-using",
+      "article-185083",
+      "185083",
+      "attackers-hijack-dahua-ip-cameras-in-ukraine-using-p2p-acces"
+    ]
+  },
+  {
+    "slug": "ai-security-startups-expected-to-merge-into-larger-2149ac",
+    "title": "AI Security Startups Expected to Merge into Larger Platforms",
+    "summary": "The interview discusses how AI security startups will consolidate into larger platform offerings within the cybersecurity ecosystem. Key categories expected to survive include core threat detection, while others may become platform features as vendors merge. Investors should focus on Q3 funding trends, Israel’s venture share, and foundational controls before agent deployment to mitigate integration risks.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/27/jonathan-care-kuppingercole-analysts-ai-security-market/",
+    "publishedAt": "2026-10-27T06:30:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-security-startups-expected-to-merge-into-larger",
+      "article-2149ac",
+      "2149ac",
+      "ai-security-startups-expected-to-merge-into-larger-platforms"
+    ]
+  },
+  {
+    "slug": "microsoft-authenticator-android-flaw-enables-rogue-1f8218",
+    "title": "Microsoft Authenticator Android Flaw Enables Rogue Apps to Steal Work Accounts",
+    "summary": "A flaw in Microsoft Authenticator on Android allows any local app to silently hijack a user’s work account without permissions. The vulnerability bypasses the broker mechanism used by Teams and Outlook, enabling credential theft without user interaction or elevated privileges. Microsoft has released an update that patches the flaw; administrators should upgrade Authenticator immediately and enforce app permission restrictions.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/27/microsoft-authenticator-vulnerability-patchedcve-2026-80097/",
+    "publishedAt": "2026-10-27T06:14:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-authenticator-android-flaw-enables-rogue",
+      "article-1f8218",
+      "1f8218",
+      "microsoft-authenticator-android-flaw-enables-rogue-apps-to-s"
+    ]
+  },
+  {
+    "slug": "cve-2026-111497-brotli-vulnerability-affects-palo-4fd0b0",
+    "title": "CVE-2026-111497 Brotli Vulnerability Affects Palo Alto Networks Products",
+    "summary": "A critical Brotli compression flaw, CVE-2026-111497, compromises Palo Alto Networks devices via unauthenticated remote code execution. The vulnerability, rated CVSS 9.5, allows attackers to inject malicious payloads into network traffic, potentially bypassing security controls. Palo Alto Networks has released a patch; administrators must apply the update immediately to mitigate exploitation.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Palo Alto Networks PSIRT",
+    "sourceUrl": "https://security.paloaltonetworks.com/CVE-2026-111497",
+    "publishedAt": "2026-10-27T05:40:00.000Z",
+    "cves": [
+      "CVE-2026-111497"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-111497-brotli-vulnerability-affects-palo",
+      "article-4fd0b0",
+      "4fd0b0",
+      "cve-2026-111497-brotli-vulnerability-affects-palo-alto-netwo"
+    ]
+  },
+  {
+    "slug": "red-hat-enterprise-linux-8-6-rhc-client-security-u-37da80",
+    "title": "Red Hat Enterprise Linux 8.6 rhc Client Security Update Addresses Critical Flaw",
+    "summary": "An update for the Red Hat Enterprise Linux 8.6 rhc client fixes a security flaw in Advanced Mission Critical Update Support and Extended Update Support Long‑Life Add‑On. Red Hat Product Security rates the issue as Important, with a CVSS base score listed in the CVE references, but no public exploit. Apply the rhc security update via standard channels to remediate the flaw.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:90725",
+    "publishedAt": "2026-10-27T04:35:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-enterprise-linux-8-6-rhc-client-security-u",
+      "article-37da80",
+      "37da80",
+      "red-hat-enterprise-linux-8-6-rhc-client-security-update-addr"
+    ]
+  },
+  {
+    "slug": "chromeos-lts-150-update-addresses-multiple-cves-7591fa",
+    "title": "ChromeOS LTS-150 Update Addresses Multiple CVEs",
+    "summary": "ChromeOS LTS-150 version 150.0.7871.287 is being rolled out, addressing several CVEs including CVE-2026-103629, CVE-2026-110166, CVE-2026-113279, and CVE-2026-110138. The vulnerabilities involve integer overflows, buffer overflows, memory corruption, and use‑after‑free conditions across Skia, Animation, Accessibility, Payments, Core, Compositing, Video, and ShapeDetection components. Users should install the update promptly to mitigate the identified security flaws.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "http://chromereleases.googleblog.com/feeds/2026129518798281934/comments/default",
+    "publishedAt": "2026-10-27T02:10:25.437Z",
+    "cves": [
+      "CVE-2026-103629",
+      "CVE-2026-110166",
+      "CVE-2026-113279",
+      "CVE-2026-110138"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromeos-lts-150-update-addresses-multiple-cves",
+      "article-7591fa",
+      "7591fa"
+    ]
+  },
+  {
+    "slug": "apple-releases-patch-for-cve-2026-109618-and-303-o-57dd7e",
+    "title": "Apple Releases Patch for CVE-2026-109618 and 303 Other Vulnerabilities",
+    "summary": "Apple issued a patch update covering 304 vulnerabilities, including CVE-2026-109618, as part of its October 2026 security release. The update addresses a range of issues across macOS and iOS platforms, though specific technical details are not disclosed. Users are advised to apply the latest update to ensure protection against the identified weaknesses.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33458",
+    "publishedAt": "2026-10-27T02:09:55.000Z",
+    "cves": [
+      "CVE-2026-109618"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "apple-releases-patch-for-cve-2026-109618-and-303-o",
+      "article-57dd7e",
+      "57dd7e",
+      "apple-releases-patch-for-cve-2026-109618-and-303-other-vulne"
+    ]
+  },
+  {
     "slug": "cve-2026-111497-enables-remote-code-execution-in-p-2b6599",
     "title": "CVE-2026-111497 Enables Remote Code Execution in PHP Windows Packages",
     "summary": "CVE-2026-111497 permits remote code execution in PHP Windows packages via Brotli auto‑decompression triggered by cURL and Guzzle. The CVSS 9.2 flaw allows unauthenticated attackers to run arbitrary code on affected servers, threatening web applications. PHP released a patch for the Windows build; apply it immediately or disable Brotli decompression as a workaround.",
@@ -82,6 +234,23 @@ export const news: NewsBrief[] = [
       "article-59b7e3",
       "59b7e3",
       "university-of-copenhagen-data-breach-exposes-525-000-persona"
+    ]
+  },
+  {
+    "slug": "cloudflare-workers-ai-glm-5-3-kv-cache-exposure-5ff437",
+    "title": "Cloudflare Workers AI GLM‑5.3 KV Cache Exposure",
+    "summary": "A configuration mismatch in Cloudflare Workers AI’s GLM‑5.3 model exposed KV cache pages across requests via an SGLang bug. The flaw allowed unauthenticated readers to retrieve sensitive session data, creating a cross‑request information disclosure with potential credential leakage. Cloudflare released a patch correcting the SGLang configuration and recommends updating to the latest Workers AI runtime to mitigate the exposure.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+    "publishedAt": "2026-10-26T22:01:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cloudflare-workers-ai-glm-5-3-kv-cache-exposure",
+      "article-5ff437",
+      "5ff437"
     ]
   },
   {
@@ -177,6 +346,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "gheist-exploits-github-tokens-to-harvest-cloud-se-1b72a0",
+    "title": "'Gheist' Exploits GitHub Tokens to Harvest Cloud Secrets",
+    "summary": "'Gheist' exploits compromised GitHub tokens to harvest credentials and cloud secrets from thousands of developer repositories. The threat uses authenticated API calls, bypassing software vulnerabilities, to read and exfiltrate secrets, creating a high‑risk exposure for cloud environments. Teams must rotate tokens, enforce least‑privilege, and monitor API activity; vendors should provide token‑revocation tooling.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/gheist-stolen-github-tokens-cloud-secrets",
+    "publishedAt": "2026-10-26T18:01:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gheist-exploits-github-tokens-to-harvest-cloud-se",
+      "article-1b72a0",
+      "1b72a0",
+      "gheist-exploits-github-tokens-to-harvest-cloud-secrets"
+    ]
+  },
+  {
     "slug": "php-brotli-compression-library-vulnerability-cve-2-541794",
     "title": "PHP Brotli Compression Library Vulnerability CVE-2026-111497",
     "summary": "A flaw in PHP's Brotli compression library, CVE-2026-111497, allows memory corruption and potential code execution via the cURL extension when automatically decompressing HTTP responses. The vulnerability is exploitable without user interaction by enabling cURL’s automatic decompression, which is disabled by default. PHP released updated Windows packages for 8.2–8.5; install them or disable cURL’s automatic decompression.",
@@ -197,6 +384,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "ukraine-confirms-starlink-connectivity-restored-af-420079",
+    "title": "Ukraine Confirms Starlink Connectivity Restored After Misuse Allegations",
+    "summary": "Ukraine's Defense Minister confirmed that Starlink and Starshield satellite connectivity has been restored after alleged misuse claims. The restoration follows a brief outage that prompted speculation about potential military exploitation of the commercial network. Operators should verify service integrity and monitor for anomalous traffic patterns to ensure continued secure communications.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/ukraine-disputes-musk-claims-of-starlink-misuse",
+    "publishedAt": "2026-10-26T16:40:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ukraine-confirms-starlink-connectivity-restored-af",
+      "article-420079",
+      "420079",
+      "ukraine-confirms-starlink-connectivity-restored-after-misuse"
+    ]
+  },
+  {
     "slug": "onamae-desktop-cloud-breach-compromises-26-000-ser-6cb9de",
     "title": "Onamae Desktop Cloud Breach Compromises 26,000 Servers",
     "summary": "A cyberattack on Japanese cloud provider Onamae Desktop Cloud compromised its infrastructure, installing malware on customer servers, potentially affecting 26,000 units. Attackers gained unauthorized access to the control plane, deploying malicious payloads across virtual machines without authentication, exposing client data. Onamae issued a control‑plane patch and urges customers to update firmware and revoke compromised credentials immediately.",
@@ -212,6 +417,24 @@ export const news: NewsBrief[] = [
       "article-6cb9de",
       "6cb9de",
       "onamae-desktop-cloud-breach-compromises-26-000-servers"
+    ]
+  },
+  {
+    "slug": "brotli-decompression-flaw-enables-remote-denial-of-7fbd64",
+    "title": "Brotli Decompression Flaw Enables Remote Denial‑of‑Service and Code Execution",
+    "summary": "A Brotli decompression flaw allows remote attackers to trigger denial‑of‑service or arbitrary code execution by supplying malformed compressed streams. The defect stems from improper bounds checking during stream parsing, enabling memory corruption and potential code injection without authentication. Ubuntu has released patch USN‑8956‑1; users should update Brotli libraries immediately to mitigate the vulnerability.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8956-1",
+    "publishedAt": "2026-10-26T15:54:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "brotli-decompression-flaw-enables-remote-denial-of",
+      "article-7fbd64",
+      "7fbd64",
+      "brotli-decompression-flaw-enables-remote-denial-of-service-a"
     ]
   },
   {
@@ -6323,225 +6546,6 @@ export const news: NewsBrief[] = [
       "article-4c7500",
       "4c7500",
       "hackers-exploit-d-link-ubiquiti-and-sap-flaws-to-hijack-devi"
-    ]
-  },
-  {
-    "slug": "inbox-flooded-with-sign-up-emails-explained-1c8798",
-    "title": "Inbox Flooded with Sign‑Up Emails Explained",
-    "summary": "A sudden surge of sign‑up emails may indicate an email bombing attack, where attackers overwhelm inboxes with automated messages. The phenomenon can mask malicious intent or be a precursor to phishing attempts. Users should verify senders and consider filtering or blocking suspicious domains.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "ESET WeLiveSecurity",
-    "sourceUrl": "https://www.welivesecurity.com/en/cybersecurity/inbox-flooded-signup-messages-email-bombing/",
-    "publishedAt": "2026-10-16T09:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "inbox-flooded-with-sign-up-emails-explained",
-      "article-1c8798",
-      "1c8798"
-    ]
-  },
-  {
-    "slug": "mitre-att-ck-v20-adds-nine-new-techniques-covering-4bb82c",
-    "title": "MITRE ATT&CK v20 Adds Nine New Techniques Covering AI Exploits, MFA Bypass, and CAPTCHA Evasion",
-    "summary": "MITRE released ATT&CK v20, adding nine Enterprise techniques that describe how attackers may target AI systems, steal application‑specific passwords to bypass MFA, and evade CAPTCHA checks. The update also expands coverage for industrial control systems and mobile devices, with detection guidance for the new behaviors.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/mitre-attck-v20-released/",
-    "publishedAt": "2026-10-16T08:58:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "mitre-att-ck-v20-adds-nine-new-techniques-covering",
-      "article-4bb82c",
-      "4bb82c",
-      "mitre-att-ck-v20-adds-nine-new-techniques-covering-ai-exploi"
-    ]
-  },
-  {
-    "slug": "microsoft-windows-11-update-kb5127648-may-disable-64fbe1",
-    "title": "Microsoft Windows 11 Update KB5127648 May Disable Smart App Control",
-    "summary": "The Windows 11 security update KB5127648 can prevent users from enabling Smart App Control, a feature that blocks untrusted applications. The issue occurs after installation and may affect device security posture. Users should monitor Microsoft advisories for a fix or workaround.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/kb5127648-windows-security-update-may-break-smart-app-control/",
-    "publishedAt": "2026-10-16T08:44:22.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2022-reached-end-of-mainstream-support/"
-      }
-    ],
-    "aliases": [
-      "microsoft-windows-11-update-kb5127648-may-disable",
-      "article-64fbe1",
-      "64fbe1",
-      "microsoft-windows-11-update-kb5127648-may-disable-smart-app-"
-    ]
-  },
-  {
-    "slug": "microsoft-patches-multiple-rce-flaws-in-office-7b7d79",
-    "title": "Microsoft Patches Multiple RCE Flaws in Office",
-    "summary": "Microsoft released a security update addressing more than twenty remote code execution vulnerabilities in Office, along with several information disclosure bugs and a security bypass issue. The patch mitigates the risk of attackers executing arbitrary code or accessing sensitive data within Office applications.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/microsoft-patches-two-dozen-rce-flaws-in-office/",
-    "publishedAt": "2026-10-16T07:55:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-patches-multiple-rce-flaws-in-office",
-      "article-7b7d79",
-      "7b7d79"
-    ]
-  },
-  {
-    "slug": "active-directory-weaknesses-persist-in-small-teams-687e8d",
-    "title": "Active Directory Weaknesses Persist in Small Teams",
-    "summary": "A discussion with intcube CTO David Fuhr highlights why Active Directory vulnerabilities remain open in organizations with only one or two administrators. The interview explains hardening practices such as SMB signing, LDAP signing, and Kerberos hardening, and shows how a 12‑week cohort can systematically secure Windows Server environments.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/16/david-fuhr-intcube-active-directory-security/",
-    "publishedAt": "2026-10-16T06:00:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "active-directory-weaknesses-persist-in-small-teams",
-      "article-687e8d",
-      "687e8d"
-    ]
-  },
-  {
-    "slug": "record-ddos-attacks-surge-straining-global-service-4d809d",
-    "title": "Record DDoS Attacks Surge, Straining Global Services",
-    "summary": "Netscout reported over 9.1 million DDoS attacks worldwide between January and June 2026, a nearly 25% year‑over‑year increase. Attacks exceeding 1 Tbps or 1 Gpps grew 1,286%, driven by botnets linked to Aisuru, Kimwolf, and Jackskid, forcing services offline before bandwidth limits are reached.",
-    "category": "General",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/16/netscout-ddos-attack-growth-report/",
-    "publishedAt": "2026-10-16T04:30:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "record-ddos-attacks-surge-straining-global-service",
-      "article-4d809d",
-      "4d809d",
-      "record-ddos-attacks-surge-straining-global-services"
-    ]
-  },
-  {
-    "slug": "new-infosec-products-of-the-week-october-16-2026-3092c1",
-    "title": "New infosec products of the week: October 16, 2026",
-    "summary": "The week’s highlights include releases from NinjaOne, Qualys, Scytale, and SolarWinds. NinjaOne introduces Katana AI, an agentic AI technician, and the MCP server, an orchestration connector extending AI tool access. The post details how these tools accelerate IT problem resolution.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/16/new-infosec-products-of-the-week-october-16-2026/",
-    "publishedAt": "2026-10-16T04:00:27.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "CrowdStrike",
-        "sourceUrl": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-october-2026/"
-      }
-    ],
-    "aliases": [
-      "new-infosec-products-of-the-week-october-16-2026",
-      "article-3092c1",
-      "3092c1"
-    ]
-  },
-  {
-    "slug": "fastfetch-2-70-0-changes-how-disk-free-space-is-re-2b15e5",
-    "title": "Fastfetch 2.70.0 changes how Disk free space is reported",
-    "summary": "Fastfetch 2.70.0, a cross‑platform system information tool, removed QuickJS scripting and altered Disk module reporting. The new Disk format drops the {size-available} field; {size-free} now reports either free or available space. Configs for older versions may produce different values or fail.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/16/fastfetch-2-70-0-released/",
-    "publishedAt": "2026-10-16T03:53:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fastfetch-2-70-0-changes-how-disk-free-space-is-re",
-      "article-2b15e5",
-      "2b15e5",
-      "fastfetch-2-70-0-changes-how-disk-free-space-is-reported"
-    ]
-  },
-  {
-    "slug": "industry-debate-on-ai-security-approaches-57dd7d",
-    "title": "Industry Debate on AI Security Approaches",
-    "summary": "A commentary on the cybersecurity industry's approach to AI security highlights concerns about current strategies and suggests a need for more effective safeguards. The piece calls for a reassessment of AI integration practices to better protect systems from emerging threats.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33430",
-    "publishedAt": "2026-10-16T00:46:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "industry-debate-on-ai-security-approaches",
-      "article-57dd7d",
-      "57dd7d"
-    ]
-  },
-  {
-    "slug": "ai-powered-espionage-targets-government-linux-syst-749199",
-    "title": "AI-Powered Espionage Targets Government Linux Systems",
-    "summary": "Unit 42 reports an AI‑driven espionage campaign that has infiltrated government Linux infrastructure. Attackers deploy custom malware, web shells, and advanced credential‑theft tools to harvest privileged access. The operation demonstrates sophisticated state‑sponsored tactics aimed at compromising critical public sector systems.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "Unit 42",
-    "sourceUrl": "https://unit42.paloaltonetworks.com/ai-campaign-targets-linux-infrastructure/",
-    "publishedAt": "2026-10-15T22:00:09.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-powered-espionage-targets-government-linux-syst",
-      "article-749199",
-      "749199",
-      "ai-powered-espionage-targets-government-linux-systems"
-    ]
-  },
-  {
-    "slug": "f-secure-publishes-scam-encyclopedia-for-consumers-5a0c7c",
-    "title": "F‑Secure Publishes Scam Encyclopedia for Consumers",
-    "summary": "F‑Secure has released a victim‑first scam encyclopedia that catalogs over 50 types of consumer fraud. The resource draws on decades of threat intelligence to explain scams from the victim’s perspective and tracks emerging cyber‑crime trends, helping users recognize and avoid new fraud tactics.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/threat-intelligence/f-secure-launches-victim-first-scam-encyclopedia-covering-50-types-of-consumer-fraud",
-    "publishedAt": "2026-10-15T21:55:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "f-secure-publishes-scam-encyclopedia-for-consumers",
-      "article-5a0c7c",
-      "5a0c7c"
-    ]
-  },
-  {
-    "slug": "ai-slop-dumbing-down-cyberattacks-6073d9",
-    "title": "AI Slop Dumbing Down Cyberattacks",
-    "summary": "Industry analysts warn that the hype around AI is misleading, as it is actually simplifying cyberattacks. Serious threat actors are largely ignoring AI, suggesting that current AI-driven tools are not yet effective for sophisticated attacks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/threat-intelligence/ai-slop-ruining-cyberattacks",
-    "publishedAt": "2026-10-15T20:43:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-slop-dumbing-down-cyberattacks",
-      "article-6073d9",
-      "6073d9"
     ]
   }
 ];
