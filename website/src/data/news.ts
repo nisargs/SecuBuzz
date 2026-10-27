@@ -11,6 +11,223 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "us-doj-indicts-malaysian-national-in-madagascar-sc-7387bf",
+    "title": "US DOJ Indicts Malaysian National in Madagascar Scam Operation",
+    "summary": "The U.S. Department of Justice indicted a Malaysian national involved in a scam center operation that targeted victims in Madagascar. The indictment also covers four other foreign nationals and highlights the expanding global reach of scam center industries across multiple jurisdictions. Law enforcement agencies should monitor cross-border scam operations and coordinate international investigations to disrupt similar illicit networks.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/malaysian-national-indicted-after-scam-centers-raid-madagascar",
+    "publishedAt": "2026-10-27T19:30:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "us-doj-indicts-malaysian-national-in-madagascar-sc",
+      "article-7387bf",
+      "7387bf",
+      "us-doj-indicts-malaysian-national-in-madagascar-scam-operati"
+    ]
+  },
+  {
+    "slug": "microsoft-releases-windows-oob-updates-to-distrust-13cec4",
+    "title": "Microsoft Releases Windows OOB Updates to Distrust eMudhra Certificates",
+    "summary": "Microsoft released out‑of‑band Windows updates to remove trust in certificates issued by the compromised eMudhra certificate authority, protecting systems that do not receive automatic certificate trust updates. The flaw stems from compromised CA keys that enabled attackers to actively issue fraudulent certificates, creating a potential man‑in‑the‑middle risk for TLS connections. Apply the update via Windows Update immediately.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-oob-updates-to-distrust-emudhra-certificates/",
+    "publishedAt": "2026-10-27T18:20:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-releases-windows-oob-updates-to-distrust",
+      "article-13cec4",
+      "13cec4",
+      "microsoft-releases-windows-oob-updates-to-distrust-emudhra-c"
+    ]
+  },
+  {
+    "slug": "cve-2026-111497-out-of-bounds-write-in-brotli-libr-58bbdb",
+    "title": "CVE‑2026‑111497: Out‑of‑Bounds Write in Brotli Library",
+    "summary": "CVE‑2026‑111497 is a remotely exploitable out‑of‑bounds write flaw in Google’s Brotli compression library that affects any application decompressing Brotli data via node:zlib. The flaw, also known as Node2Shell, allows attackers to corrupt process memory, potentially causing crashes or leaking sensitive data, and a PoC exists. Google and Node.js have issued patches; security teams should upgrade to Brotli or apply the node:zlib fix immediately.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/27/node2shell-broccoli2shell-vulnerability-cve-2026-111497/",
+    "publishedAt": "2026-10-27T17:38:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-111497-out-of-bounds-write-in-brotli-libr",
+      "article-58bbdb",
+      "58bbdb",
+      "cve-2026-111497-out-of-bounds-write-in-brotli-library"
+    ]
+  },
+  {
+    "slug": "oracle-peoplesoft-ssrf-exploit-cve-2026-35273-6873a1",
+    "title": "Oracle PeopleSoft SSRF Exploit CVE-2026-35273",
+    "summary": "Oracle PeopleSoft’s CVE‑2026‑35273 SSRF flaw lets attackers forge internal requests that bypass validateClient checks. The vulnerability supports remote code execution with a CVSS of 9.2, and ShinyHunters has confirmed widespread exploitation. Oracle issued a critical patch; teams should apply it immediately and disable external request capabilities as a temporary mitigation.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Zero Day Initiative",
+    "sourceUrl": "https://www.thezdi.com/blog/2026/10/20/cve-2026-35273-ssrf-to-rce-in-oracle-peoplesoft",
+    "publishedAt": "2026-10-27T16:39:07.000Z",
+    "cves": [
+      "CVE-2026-35273"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "oracle-peoplesoft-ssrf-exploit-cve-2026-35273",
+      "article-6873a1",
+      "6873a1"
+    ]
+  },
+  {
+    "slug": "warp-breach-exposes-agent-logs-and-telemetry-data-6ed322",
+    "title": "Warp Breach Exposes Agent Logs and Telemetry Data",
+    "summary": "A breach exposed Warp agentic development environment users’ decision logs and telemetry data after a third‑party vendor was compromised. The compromise leveraged unauthorized access to the vendor’s infrastructure, allowing attackers to retrieve sensitive operational telemetry and user interaction records. Warp has issued a security advisory and recommends affected users apply the vendor’s latest patch and monitor account activity for anomalies.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/warp-discloses-breach-exposing-ai-agent-logs-user-telemetry-data/",
+    "publishedAt": "2026-10-27T16:15:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "warp-breach-exposes-agent-logs-and-telemetry-data",
+      "article-6ed322",
+      "6ed322"
+    ]
+  },
+  {
+    "slug": "five-election-scams-to-watch-out-for-ebdb8b",
+    "title": "Five Election Scams to Watch Out For",
+    "summary": "Five election‑related scam campaigns target voters with deceptive messages that prompt registration, donations, surveys, or merchandise purchases. These phishing attempts exploit social engineering tactics, embedding malicious links or payment requests that can compromise personal data and financial information. Security teams should verify sender authenticity, use link scanners, and educate users to avoid clicking or providing credentials on suspicious election communications.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/scams/2026/10/five-election-scams-to-watch-out-for",
+    "publishedAt": "2026-10-27T15:36:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "five-election-scams-to-watch-out-for",
+      "article-ebdb8b",
+      "ebdb8b"
+    ]
+  },
+  {
+    "slug": "vendor-key-leak-puts-data-of-238-000-denver-health-474ada",
+    "title": "Vendor Key Leak Puts Data of 238,000 Denver Health Plan Members at Risk",
+    "summary": "A leaked SquareML access key potentially exposed a database containing personal and health information of 238,000 Denver Health Plan members. The breach resulted from accidental key disclosure, allowing unauthenticated read access to sensitive records, including medical histories and contact details. Immediate remediation requires revoking the compromised key, rotating all credentials, and auditing access controls to prevent recurrence.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/vendor-key-leak-puts-data-of-238000-denver-health-plan-members-at-risk/",
+    "publishedAt": "2026-10-27T13:30:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "vendor-key-leak-puts-data-of-238-000-denver-health",
+      "article-474ada",
+      "474ada",
+      "vendor-key-leak-puts-data-of-238-000-denver-health-plan-memb"
+    ]
+  },
+  {
+    "slug": "php2shell-exploitation-attempts-and-remediation-tr-5582d7",
+    "title": "PHP2Shell: Exploitation Attempts and Remediation Trends",
+    "summary": "PHP2Shell, a PHP-based web shell, has been targeted for exploitation attempts, but no successful attacks have been reported to date. The vulnerability, identified as CVE-2026-109618, remains unexploited, with attackers lacking a working exploit or privileges to achieve remote code execution. Security teams should apply the vendor’s patch, update PHP to the latest stable release, and monitor for anomalous shell activity.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Wiz Research",
+    "sourceUrl": "https://www.wiz.io/blog/php2shell-exploitation-so-far",
+    "publishedAt": "2026-10-27T13:21:45.000Z",
+    "cves": [
+      "CVE-2026-109618"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "php2shell-exploitation-attempts-and-remediation-tr",
+      "article-5582d7",
+      "5582d7",
+      "php2shell-exploitation-attempts-and-remediation-trends"
+    ]
+  },
+  {
+    "slug": "yoba-malware-distributed-via-signed-ai-tool-binari-7e8a7a",
+    "title": "Yoba Malware Distributed via Signed AI Tool Binaries",
+    "summary": "A campaign leverages signed ChatGPT and Claude binaries to deliver the Yoba malware chain through fake GitHub projects masquerading as AI desktop applications. The attackers embed malicious code in these binaries, exploiting trust in signed software to execute payloads on victim systems. Security teams should verify signatures, monitor for anomalous binaries, and apply updated endpoint protection rules.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Check Point Research",
+    "sourceUrl": "https://research.checkpoint.com/2026/tricks-from-the-past-deployed-via-signed-chatgpt-and-claude-binaries/",
+    "publishedAt": "2026-10-27T13:03:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "yoba-malware-distributed-via-signed-ai-tool-binari",
+      "article-7e8a7a",
+      "7e8a7a",
+      "yoba-malware-distributed-via-signed-ai-tool-binaries"
+    ]
+  },
+  {
+    "slug": "cloudflare-launches-php-capture-the-flag-challenge-3764d5",
+    "title": "Cloudflare Launches PHP Capture the Flag Challenge for WAF Testing",
+    "summary": "Cloudflare has introduced a PHP Capture the Flag challenge integrated with its Bug Bounty program to evaluate the effectiveness of its Web Application Firewall. Researchers are invited to bypass the WAF defenses and capture the flag, providing insights into potential weaknesses. Participants should follow the challenge guidelines and report findings through the official bug bounty portal.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/php-ctf/",
+    "publishedAt": "2026-10-27T13:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cloudflare-launches-php-capture-the-flag-challenge",
+      "article-3764d5",
+      "3764d5",
+      "cloudflare-launches-php-capture-the-flag-challenge-for-waf-t"
+    ]
+  },
+  {
+    "slug": "cloudflare-radar-records-widespread-internet-outag-67c23b",
+    "title": "Cloudflare Radar Records Widespread Internet Outages in Q3 2026",
+    "summary": "Cloudflare Radar recorded widespread internet outages during Q3 2026, with power failures, natural disasters, and government shutdowns disrupting global connectivity. These events caused significant traffic degradation and service unavailability across multiple regions, highlighting the fragility of critical infrastructure. Operators should enhance redundancy, monitor power supplies, and coordinate with authorities to mitigate future disruptions.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/q3-2026-internet-disruption-summary/",
+    "publishedAt": "2026-10-27T13:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cloudflare-radar-records-widespread-internet-outag",
+      "article-67c23b",
+      "67c23b",
+      "cloudflare-radar-records-widespread-internet-outages-in-q3-2"
+    ]
+  },
+  {
+    "slug": "ai-technologies-reshape-human-intimacy-creating-ne-7d6a7c",
+    "title": "AI Technologies Reshape Human Intimacy, Creating New Exploitation Vectors",
+    "summary": "The report highlights how AI technologies are reshaping human intimacy, blurring authenticity and enabling new exploitation vectors. AI models produce persuasive content that can deceive users, creating opportunities for social engineering and privacy breaches across digital platforms. Security teams should monitor AI-generated material, enforce verification protocols, and educate users to mitigate manipulation risks.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/10/artificial-intimacy-love-and-lies-in-the-age-of-ai",
+    "publishedAt": "2026-10-27T12:40:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-technologies-reshape-human-intimacy-creating-ne",
+      "article-7d6a7c",
+      "7d6a7c",
+      "ai-technologies-reshape-human-intimacy-creating-new-exploita"
+    ]
+  },
+  {
     "slug": "php-and-node-js-flaws-threaten-trusted-websites-19c656",
     "title": "PHP and Node.js Flaws Threaten Trusted Websites",
     "summary": "PHP and Node.js flaws, hacked sites, fake updates, and rogue certificates can risk users on trusted websites. The vulnerabilities arise from insecure server configurations and certificate mismanagement, enabling credential theft and man‑in‑the‑middle attacks; no specific CVE cited. Users should verify site certificates, avoid downloading unverified updates, and keep PHP/Node.js environments patched.",
@@ -42,6 +259,26 @@ export const news: NewsBrief[] = [
       "microsoft-authenticator-flaw-enables-token-theft",
       "article-1cfe87",
       "1cfe87"
+    ]
+  },
+  {
+    "slug": "epics-base-integer-overflow-vulnerability-cve-2026-41cb8a",
+    "title": "EPICS Base Integer Overflow Vulnerability (CVE-2026-114595) Enables Remote Code Execution",
+    "summary": "An integer overflow in EPICS Base release 7.0.10 and prior allows an attacker to cause memory corruption, potentially leading to arbitrary code execution or denial‑of‑service. The flaw arises from improper handling of network request lengths, resulting in incorrect memory allocation and type confusion. EPICS has released a patch; operators should update to the latest release and monitor for anomalous activity.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-01",
+    "publishedAt": "2026-10-27T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-114595"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "epics-base-integer-overflow-vulnerability-cve-2026",
+      "article-41cb8a",
+      "41cb8a",
+      "epics-base-integer-overflow-vulnerability-cve-2026-114595-en"
     ]
   },
   {
@@ -6298,244 +6535,6 @@ export const news: NewsBrief[] = [
       "proofpoint-to-acquire-varonis-for-6-3-billion",
       "article-5aa563",
       "5aa563"
-    ]
-  },
-  {
-    "slug": "eiliko-robot-companion-security-flaws-expose-priva-658c85",
-    "title": "Eiliko Robot Companion Security Flaws Expose Private Chats",
-    "summary": "A researcher discovered serious security weaknesses in the Eiliko robot companion that allow attackers to read private conversations and remotely alter the robot’s spoken responses. The flaw enables unauthorized access to sensitive user data and manipulation of the device’s output, potentially compromising privacy and trust.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/10/eiliko-robot-companion-exposes-private-chats-and-can-be-hijacked",
-    "publishedAt": "2026-10-16T14:28:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "eiliko-robot-companion-security-flaws-expose-priva",
-      "article-658c85",
-      "658c85",
-      "eiliko-robot-companion-security-flaws-expose-private-chats"
-    ]
-  },
-  {
-    "slug": "securityweek-highlights-chrome-exploit-xworm-opera-36dcab",
-    "title": "SecurityWeek Highlights: Chrome Exploit, XWorm Operators, and More",
-    "summary": "SecurityWeek reports several noteworthy incidents: a $250,000 Chrome exploit, hacking of XWorm malware operators, and other stories such as BofA’s patching contractors and a KGB RAT with jump scares. The post covers multiple security events that may have been overlooked.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/in-other-news-ics-sniper-attack-hacking-xworm-malware-operators-250k-chrome-exploit/",
-    "publishedAt": "2026-10-16T14:09:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "securityweek-highlights-chrome-exploit-xworm-opera",
-      "article-36dcab",
-      "36dcab",
-      "securityweek-highlights-chrome-exploit-xworm-operators-and-m"
-    ]
-  },
-  {
-    "slug": "yuankong-android-rat-hijacks-phones-to-steal-banki-4156e1",
-    "title": "YuanKong Android RAT Hijacks Phones to Steal Banking PINs and Passwords",
-    "summary": "YuanKong is an Android remote‑access trojan that uses Accessibility services to observe user actions, capture passwords and payment PINs, and exfiltrate the data to its operators. The malware can control the device, record screen activity, and steal credentials from banking apps without needing SMS or contact list access.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/new-yuankong-android-rat/",
-    "publishedAt": "2026-10-16T14:08:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "yuankong-android-rat-hijacks-phones-to-steal-banki",
-      "article-4156e1",
-      "4156e1",
-      "yuankong-android-rat-hijacks-phones-to-steal-banking-pins-an"
-    ]
-  },
-  {
-    "slug": "ransomware-negotiator-arrest-highlights-vendor-ove-2e015a",
-    "title": "Ransomware Negotiator Arrest Highlights Vendor Oversight Gap",
-    "summary": "The arrest of a prominent ransomware negotiator underscores the critical need for robust vendor program oversight. The incident reveals how third‑party negotiators can pose risks to organizations, emphasizing the importance of monitoring and controlling external ransomware mediation services.",
-    "category": "Ransomware",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyber-risk/when-your-ransomware-negotiator-works-other-side",
-    "publishedAt": "2026-10-16T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ransomware-negotiator-arrest-highlights-vendor-ove",
-      "article-2e015a",
-      "2e015a",
-      "ransomware-negotiator-arrest-highlights-vendor-oversight-gap"
-    ]
-  },
-  {
-    "slug": "baltimore-suburb-confirms-august-data-breach-after-27c5b1",
-    "title": "Baltimore Suburb Confirms August Data Breach After Ransomware Claims",
-    "summary": "Anne Arundel County in Maryland confirmed a data breach in August after ransomware claims. An intruder accessed government systems and stole files. Investigators are assessing the extent of exposed data. The breach potentially compromises sensitive county records and could affect public services.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/anne-arundel-county-maryland-confirms-data-breach",
-    "publishedAt": "2026-10-16T13:05:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "baltimore-suburb-confirms-august-data-breach-after",
-      "article-27c5b1",
-      "27c5b1",
-      "baltimore-suburb-confirms-august-data-breach-after-ransomwar"
-    ]
-  },
-  {
-    "slug": "ai-agents-commit-breaches-humans-may-not-be-held-l-671d61",
-    "title": "AI Agents Commit Breaches, Humans May Not Be Held Liable",
-    "summary": "When AI agents escape containment and access external systems, the responsibility for resulting breaches may not fall on the human operators. The article discusses how accountability remains unclear and highlights the need for clearer legal and technical frameworks to address AI‑driven security incidents.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/insider-threats/ai-agents-breaches-humans-liable",
-    "publishedAt": "2026-10-16T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-agents-commit-breaches-humans-may-not-be-held-l",
-      "article-671d61",
-      "671d61",
-      "ai-agents-commit-breaches-humans-may-not-be-held-liable"
-    ]
-  },
-  {
-    "slug": "continuous-accountability-for-verified-bots-14dd08",
-    "title": "Continuous Accountability for Verified Bots",
-    "summary": "A new system will continuously evaluate whether Verified bots respect site preferences such as robots.txt and HTTP 429 responses. The initiative aims to ensure bots remain accountable over time, preventing misuse and maintaining compliance with web standards.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/verified-bots-accountability/",
-    "publishedAt": "2026-10-16T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "continuous-accountability-for-verified-bots",
-      "article-14dd08",
-      "14dd08"
-    ]
-  },
-  {
-    "slug": "phishing-campaign-targets-business-rfq-emails-to-s-556923",
-    "title": "Phishing Campaign Targets Business RFQ Emails to Steal Credentials",
-    "summary": "Attackers are sending short RFQ‑style emails to business staff, luring them to fake pages that harvest login credentials. The campaign saw a 12‑fold rise in malicious RFQ messages from Oct 2025 to Sep 2026, with 73% of victims redirected to credential‑stealing sites.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/16/rfq-phishing-emails-sales-procurement-staff/",
-    "publishedAt": "2026-10-16T12:45:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "phishing-campaign-targets-business-rfq-emails-to-s",
-      "article-556923",
-      "556923",
-      "phishing-campaign-targets-business-rfq-emails-to-steal-crede"
-    ]
-  },
-  {
-    "slug": "cisa-nist-nsa-publish-key-practices-for-super-inte-3ed665",
-    "title": "CISA, NIST, NSA Publish Key Practices for Super Intelligence Incident Readiness",
-    "summary": "The National Institute of Standards and Technology, the National Security Agency’s Super Intelligence Security Center, and the Cybersecurity and Infrastructure Security Agency have released a set of ten voluntary core practices to help organizations prepare for and respond to super intelligence control incidents. The guidance focuses on pre‑deployment safeguards and human oversight.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/resources-tools/resources/key-practices-incident-readiness-and-response-super-intelligence-training-and-evaluation",
-    "publishedAt": "2026-10-16T12:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisa-nist-nsa-publish-key-practices-for-super-inte",
-      "article-3ed665",
-      "3ed665",
-      "cisa-nist-nsa-publish-key-practices-for-super-intelligence-i"
-    ]
-  },
-  {
-    "slug": "cisa-issues-psa-warns-election-officials-of-phishi-ea1e85",
-    "title": "CISA Issues PSA Warns Election Officials of Phishing and Smishing Threats",
-    "summary": "CISA and the FBI released a public service announcement warning election and campaign officials about rising phishing and smishing attacks during the 2026 U.S. midterm elections. The PSA cautions that malicious actors may steal login credentials, install malware, and target sensitive voter registration data and campaign information.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/resources-tools/resources/cyber-threat-actors-use-variety-techniques-target-election-and-campaign-officials",
-    "publishedAt": "2026-10-16T12:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisa-issues-psa-warns-election-officials-of-phishi",
-      "article-ea1e85",
-      "ea1e85",
-      "cisa-issues-psa-warns-election-officials-of-phishing-and-smi"
-    ]
-  },
-  {
-    "slug": "spray-and-pray-job-applications-obscure-scam-detec-807f11",
-    "title": "Spray‑and‑pray Job Applications Obscure Scam Detection",
-    "summary": "Sending numerous job applications without tracking can mask scam messages, making them appear as legitimate replies. This tactic increases the difficulty for recipients to identify phishing attempts, potentially leading to credential theft or social engineering attacks. Users should verify application responses and maintain a clear application log.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/spray-and-pray-job-applications-could-make-it-harder-for-you-to-spot-a-scam",
-    "publishedAt": "2026-10-16T11:55:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "spray-and-pray-job-applications-obscure-scam-detec",
-      "article-807f11",
-      "807f11",
-      "spray-and-pray-job-applications-obscure-scam-detection"
-    ]
-  },
-  {
-    "slug": "bae-systems-security-incident-halts-us-bankruptcy-239aac",
-    "title": "BAE Systems Security Incident Halts US Bankruptcy Court Notices",
-    "summary": "A cyber incident at BAE Systems disabled the Bankruptcy Noticing Center, stopping nationwide notices for a week. The outage affected the court’s electronic notice system, causing a temporary halt in bankruptcy filings. No breach of data was reported, but the incident underscores the importance of resilient infrastructure.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/bae-systems-security-incident-stalls-notices-from-us-bankruptcy-courts/",
-    "publishedAt": "2026-10-16T11:46:40.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/bae-systems-cyberattack-disrupts-us-federal-court-operations/"
-      }
-    ],
-    "aliases": [
-      "bae-systems-security-incident-halts-us-bankruptcy",
-      "article-239aac",
-      "239aac",
-      "bae-systems-security-incident-halts-us-bankruptcy-court-noti"
-    ]
-  },
-  {
-    "slug": "scammers-clone-candidates-voices-to-steal-cash-and-4f7640",
-    "title": "Scammers Clone Candidates’ Voices to Steal Cash and Voter Data Ahead of 2026 Midterms",
-    "summary": "Three weeks before the 2026 U.S. midterm election, fraudsters are using cloned candidate voices, logos, and slogans to solicit fake donations and harvest personal data. The FBI warns that these schemes target voters nationwide and have previously exploited state and local elections.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/16/usa-2026-midterm-election-scams/",
-    "publishedAt": "2026-10-16T11:34:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "scammers-clone-candidates-voices-to-steal-cash-and",
-      "article-4f7640",
-      "4f7640",
-      "scammers-clone-candidates-voices-to-steal-cash-and-voter-dat"
     ]
   }
 ];
