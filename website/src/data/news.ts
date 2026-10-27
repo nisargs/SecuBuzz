@@ -11,6 +11,210 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "cve-2026-111497-enables-remote-code-execution-in-p-2b6599",
+    "title": "CVE-2026-111497 Enables Remote Code Execution in PHP Windows Packages",
+    "summary": "CVE-2026-111497 permits remote code execution in PHP Windows packages via Brotli auto‑decompression triggered by cURL and Guzzle. The CVSS 9.2 flaw allows unauthenticated attackers to run arbitrary code on affected servers, threatening web applications. PHP released a patch for the Windows build; apply it immediately or disable Brotli decompression as a workaround.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/cve-2026-111497-php-windows-brotli-memory-corruption-patch-guide",
+    "publishedAt": "2026-10-27T00:59:11.000Z",
+    "cves": [
+      "CVE-2026-111497"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-111497-enables-remote-code-execution-in-p",
+      "article-2b6599",
+      "2b6599",
+      "cve-2026-111497-enables-remote-code-execution-in-php-windows"
+    ]
+  },
+  {
+    "slug": "fragmented-ai-security-benchmarks-fail-to-capture-6eb353",
+    "title": "Fragmented AI Security Benchmarks Fail to Capture Real‑World Threats",
+    "summary": "The proliferation of AI security benchmarks creates fragmented evaluation landscapes, with each metric focusing on distinct aspects of model robustness. Because benchmarks target isolated variables, they fail to capture real‑world attack vectors, underscoring the need for integrated testing against proprietary codebases. Security teams should supplement benchmark results with internal penetration tests and continuous monitoring to ensure comprehensive AI model protection.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-analytics/benchmarking-security-of-ai-models-poses-challenges",
+    "publishedAt": "2026-10-27T00:26:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fragmented-ai-security-benchmarks-fail-to-capture",
+      "article-6eb353",
+      "6eb353",
+      "fragmented-ai-security-benchmarks-fail-to-capture-real-world"
+    ]
+  },
+  {
+    "slug": "flaw-in-ignition-component-of-rhel-9-4-sap-solutio-37da88",
+    "title": "Flaw in Ignition Component of RHEL 9.4 SAP Solutions Enables Local Privilege Escalation",
+    "summary": "A flaw in the ignition component of Red Hat Enterprise Linux 9.4 SAP Solutions permits local privilege escalation. The issue stems from improper input validation; CVSS scores 7.0‑8.5 and a public PoC confirm exploitability, making it a high‑risk vulnerability. Red Hat released an update; apply the patch immediately to remediate the vulnerability today.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:90518",
+    "publishedAt": "2026-10-27T00:05:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "flaw-in-ignition-component-of-rhel-9-4-sap-solutio",
+      "article-37da88",
+      "37da88",
+      "flaw-in-ignition-component-of-rhel-9-4-sap-solutions-enables"
+    ]
+  },
+  {
+    "slug": "university-of-copenhagen-data-breach-exposes-525-0-59b7e3",
+    "title": "University of Copenhagen Data Breach Exposes 525,000 Personal Records",
+    "summary": "Hackers accessed a test environment at the University of Copenhagen, exposing personal data of 525,000 individuals. The breach involved unauthorized entry into a non-production system, revealing names, addresses, and student IDs. The university has notified affected parties and is conducting a forensic investigation, urging users to monitor for identity theft.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/university-of-copenhagen-data-breach-exposes-data-of-525-000-people/",
+    "publishedAt": "2026-10-26T22:20:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "university-of-copenhagen-data-breach-exposes-525-0",
+      "article-59b7e3",
+      "59b7e3",
+      "university-of-copenhagen-data-breach-exposes-525-000-persona"
+    ]
+  },
+  {
+    "slug": "nvidia-executive-urges-cisos-to-own-ai-risks-1d1431",
+    "title": "Nvidia Executive Urges CISOs to Own AI Risks",
+    "summary": "Nvidia security executive Mark Weatherford emphasized that CISOs must guide business leaders in evaluating AI benefits and risks. The briefing highlighted that organizations deploying AI must retain ownership of associated security responsibilities and risk mitigation. No vendor patch or technical fix is required; the focus remains on governance and risk management practices.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-careers/risks-rewards-ai-redefining-ciso-role",
+    "publishedAt": "2026-10-26T21:44:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "nvidia-executive-urges-cisos-to-own-ai-risks",
+      "article-1d1431",
+      "1d1431"
+    ]
+  },
+  {
+    "slug": "former-pentester-uses-artex-ai-to-steal-8-2-millio-7e6d07",
+    "title": "Former Pentester Uses ARTEX AI to Steal 8.2 Million Records",
+    "summary": "A former penetration tester employed the ARTEX AI pentesting framework to compromise over 90 South Korean organizations, exfiltrating 8.2 million data records. The operation leveraged automated vulnerability discovery and credential harvesting, enabling attackers to bypass authentication controls without manual intervention. South Korean police identified seven suspects; organizations should review access controls, monitor anomalous data exfiltration, and apply security patches.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/former-pentester-used-artex-ai-to-steal-82-million-data-records/",
+    "publishedAt": "2026-10-26T21:08:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "former-pentester-uses-artex-ai-to-steal-8-2-millio",
+      "article-7e6d07",
+      "7e6d07",
+      "former-pentester-uses-artex-ai-to-steal-8-2-million-records"
+    ]
+  },
+  {
+    "slug": "texas-sues-openai-over-alleged-deceptive-ai-safety-79c7fc",
+    "title": "Texas Sues OpenAI Over Alleged Deceptive AI Safety Claims",
+    "summary": "Texas files a lawsuit against OpenAI alleging deceptive marketing of its AI safety claims, targeting the company’s CEO under state trade‑practice laws. The suit seeks personal liability for founder Sam Altman and demands regulatory reforms and substantial fines for consumer deception. OpenAI has not yet responded, but the case could prompt stricter oversight of AI marketing practices across the industry.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/texas-sues-openai-deceiving-customers",
+    "publishedAt": "2026-10-26T21:03:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "texas-sues-openai-over-alleged-deceptive-ai-safety",
+      "article-79c7fc",
+      "79c7fc",
+      "texas-sues-openai-over-alleged-deceptive-ai-safety-claims"
+    ]
+  },
+  {
+    "slug": "hackers-exploit-php2shell-vulnerability-to-target-56d3fb",
+    "title": "Hackers Exploit PHP2Shell Vulnerability to Target Universities and Businesses",
+    "summary": "Hackers are exploiting the PHP2Shell vulnerability, using publicly available code to compromise PHP‑based websites at universities and businesses. The flaw, identified as CVE-2026-109618 and CVE-2026-109619, has a CVSS v4.0 score of 9.2, enabling remote code execution without authentication. Administrators should apply the vendor‑issued patches immediately and disable exposed PHP functions to mitigate the risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/public-php2shell-exploit-code/",
+    "publishedAt": "2026-10-26T20:29:21.000Z",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-exploit-php2shell-vulnerability-to-target",
+      "article-56d3fb",
+      "56d3fb",
+      "hackers-exploit-php2shell-vulnerability-to-target-universiti"
+    ]
+  },
+  {
+    "slug": "anthropic-files-for-potentially-the-biggest-ipo-ev-31e9d8",
+    "title": "Anthropic Files for Potentially the Biggest IPO Ever",
+    "summary": "Anthropic has filed for what could become the largest initial public offering in history, according to a SecurityWeek report. The company’s chief executive highlighted the potential for artificial intelligence to act autonomously in ways that could threaten human safety. Investors and regulators should monitor the filing closely, as the IPO could influence market dynamics and regulatory scrutiny of AI development.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/anthropic-files-for-potentially-the-biggest-ipo-ever-as-ceo-warns-of-risk-to-humanity-from-ai/",
+    "publishedAt": "2026-10-26T20:20:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "anthropic-files-for-potentially-the-biggest-ipo-ev",
+      "article-31e9d8",
+      "31e9d8",
+      "anthropic-files-for-potentially-the-biggest-ipo-ever"
+    ]
+  },
+  {
+    "slug": "php-brotli-compression-library-vulnerability-cve-2-541794",
+    "title": "PHP Brotli Compression Library Vulnerability CVE-2026-111497",
+    "summary": "A flaw in PHP's Brotli compression library, CVE-2026-111497, allows memory corruption and potential code execution via the cURL extension when automatically decompressing HTTP responses. The vulnerability is exploitable without user interaction by enabling cURL’s automatic decompression, which is disabled by default. PHP released updated Windows packages for 8.2–8.5; install them or disable cURL’s automatic decompression.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/php-issues-second-windows-security.html",
+    "publishedAt": "2026-10-26T17:45:57.000Z",
+    "cves": [
+      "CVE-2026-111497"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "php-brotli-compression-library-vulnerability-cve-2",
+      "article-541794",
+      "541794",
+      "php-brotli-compression-library-vulnerability-cve-2026-111497"
+    ]
+  },
+  {
+    "slug": "onamae-desktop-cloud-breach-compromises-26-000-ser-6cb9de",
+    "title": "Onamae Desktop Cloud Breach Compromises 26,000 Servers",
+    "summary": "A cyberattack on Japanese cloud provider Onamae Desktop Cloud compromised its infrastructure, installing malware on customer servers, potentially affecting 26,000 units. Attackers gained unauthorized access to the control plane, deploying malicious payloads across virtual machines without authentication, exposing client data. Onamae issued a control‑plane patch and urges customers to update firmware and revoke compromised credentials immediately.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Check Point Research",
+    "sourceUrl": "https://research.checkpoint.com/2026/26th-october-threat-intelligence-report/",
+    "publishedAt": "2026-10-26T16:12:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "onamae-desktop-cloud-breach-compromises-26-000-ser",
+      "article-6cb9de",
+      "6cb9de",
+      "onamae-desktop-cloud-breach-compromises-26-000-servers"
+    ]
+  },
+  {
     "slug": "kali-linux-2026-3-release-adds-kernel-7-1-5-and-wa-4343c9",
     "title": "Kali Linux 2026.3 Release Adds Kernel 7.1.5 and Wardriving Support for TicWatch Pro 3",
     "summary": "Kali Linux 2026.3 release includes kernel 7.1.5 and wardriving support for TicWatch Pro 3. The update overhauls public build scripts, enabling containerized builds with Docker or Podman, and maintains compatibility with older script pipelines. Users should review and adjust pipeline scripts accordingly and test builds in container environments to ensure functionality.",
@@ -6338,214 +6542,6 @@ export const news: NewsBrief[] = [
       "ai-slop-dumbing-down-cyberattacks",
       "article-6073d9",
       "6073d9"
-    ]
-  },
-  {
-    "slug": "zero-click-spyware-spreads-via-online-ads-research-31e319",
-    "title": "Zero‑Click Spyware Spreads via Online Ads, Researchers Warn",
-    "summary": "Researchers report that a zero‑click spyware variant now infects devices worldwide through targeted online advertisements. The malware activates without user interaction, enabling covert surveillance and data exfiltration. No CVE is cited, but the exploit chain demonstrates a high‑severity vulnerability that can compromise user privacy and device integrity.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/spyware-citizen-lab-advertising",
-    "publishedAt": "2026-10-15T19:00:00.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html"
-      }
-    ],
-    "aliases": [
-      "zero-click-spyware-spreads-via-online-ads-research",
-      "article-31e319",
-      "31e319",
-      "zero-click-spyware-spreads-via-online-ads-researchers-warn"
-    ]
-  },
-  {
-    "slug": "q3-vulnerability-pulse-highlights-discovery-vs-exp-59c4d1",
-    "title": "Q3 Vulnerability Pulse Highlights Discovery vs Exploitation Trends",
-    "summary": "Thor reviews Q3 trends, noting a gap between vulnerability discovery and exploitation. The newsletter covers recent CVE and KEV data, questioning if the industry faces a \"Bugmageddon.\" It offers insights into how many reported flaws remain unexploited, guiding defensive priorities.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cisco Talos",
-    "sourceUrl": "https://blog.talosintelligence.com/the-q3-vulnerability-pulse-discovery-exploitation/",
-    "publishedAt": "2026-10-15T18:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "q3-vulnerability-pulse-highlights-discovery-vs-exp",
-      "article-59c4d1",
-      "59c4d1",
-      "q3-vulnerability-pulse-highlights-discovery-vs-exploitation-"
-    ]
-  },
-  {
-    "slug": "contextual-defense-is-key-to-stopping-modern-cyber-61b6e2",
-    "title": "Contextual Defense Is Key to Stopping Modern Cyberattacks",
-    "summary": "The article stresses that contextual defense enables teams to link threat signals, anticipate attacks, and intervene before escalation. By integrating contextual data, security operations can prioritize responses and reduce the impact of emerging cyber threats.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/context-is-king-in-the-fight-against-modern-cyberattacks/",
-    "publishedAt": "2026-10-15T17:42:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "contextual-defense-is-key-to-stopping-modern-cyber",
-      "article-61b6e2",
-      "61b6e2",
-      "contextual-defense-is-key-to-stopping-modern-cyberattacks"
-    ]
-  },
-  {
-    "slug": "cloudflare-launches-fully-programmable-secure-web-707deb",
-    "title": "Cloudflare Launches Fully Programmable Secure Web Gateway",
-    "summary": "Cloudflare has integrated its Gateway and Data Loss Prevention with Cloudflare Workers, enabling users to program custom security rules and policies via the Cloudflare Developer platform. The new feature expands flexibility for building secure, compliant web gateways tailored to organizational needs.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/programmable-gateway-dlp/",
-    "publishedAt": "2026-10-15T17:11:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-launches-fully-programmable-secure-web",
-      "article-707deb",
-      "707deb",
-      "cloudflare-launches-fully-programmable-secure-web-gateway"
-    ]
-  },
-  {
-    "slug": "new-study-quantifies-cryptanalysis-effort-on-publi-2e31e0",
-    "title": "New Study Quantifies Cryptanalysis Effort on Public-Key Algorithms",
-    "summary": "Researchers used AI to estimate the cumulative cryptanalytic effort on public-key algorithms, analyzing 16,000 papers. The study shows lattice-based attacks have recently surpassed elliptic curve efforts, providing a historical view of research allocation and highlighting shifts in cryptographic focus.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Schneier on Security",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/measuring-human-cryptanalysis-effort.html",
-    "publishedAt": "2026-10-15T16:24:29.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "new-study-quantifies-cryptanalysis-effort-on-publi",
-      "article-2e31e0",
-      "2e31e0",
-      "new-study-quantifies-cryptanalysis-effort-on-public-key-algo"
-    ]
-  },
-  {
-    "slug": "silent-lynx-uses-winrar-exploit-to-deploy-reverse-7ac91b",
-    "title": "Silent Lynx Uses WinRAR Exploit to Deploy Reverse Shells in CIS Government Attacks",
-    "summary": "Silent Lynx leveraged a WinRAR vulnerability in macro‑enabled documents, PS2EXE downloaders, GitHub‑hosted PowerShell, and crafted WinRAR archives to deliver reverse shells to CIS government systems from June 2025 to August 2026. The attacks used four distinct infection chains to compromise target networks.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/silent-lynx-exploits-winrar-flaw-to.html",
-    "publishedAt": "2026-10-15T16:00:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "silent-lynx-uses-winrar-exploit-to-deploy-reverse",
-      "article-7ac91b",
-      "7ac91b",
-      "silent-lynx-uses-winrar-exploit-to-deploy-reverse-shells-in-"
-    ]
-  },
-  {
-    "slug": "vulnerability-management-should-focus-on-real-worl-5a221f",
-    "title": "Vulnerability Management Should Focus on Real-World Impact",
-    "summary": "Organizations are urged to shift from vendor-assigned theoretical scores to real exploit data that reflects their specific environments. The article emphasizes tailoring vulnerability management to actual risk exposure rather than generic metrics.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/vulnerability-management-isnt-about-the-score-its-about-how-it-applies-to-you",
-    "publishedAt": "2026-10-15T15:17:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "vulnerability-management-should-focus-on-real-worl",
-      "article-5a221f",
-      "5a221f",
-      "vulnerability-management-should-focus-on-real-world-impact"
-    ]
-  },
-  {
-    "slug": "ai-pentesting-vs-human-pentesters-a-comparative-an-5157d4",
-    "title": "AI Pentesting vs Human Pentesters: A Comparative Analysis",
-    "summary": "The article compares AI‑driven penetration testing with traditional human testing. It highlights AI’s ability to uncover overlooked vulnerabilities while noting limitations in consistency, risk assessment, and business context understanding. The discussion outlines where AI agents can enhance security testing practices.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/is-ai-pentesting-as-good-as-a-human-pentester/",
-    "publishedAt": "2026-10-15T14:01:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-pentesting-vs-human-pentesters-a-comparative-an",
-      "article-5157d4",
-      "5157d4",
-      "ai-pentesting-vs-human-pentesters-a-comparative-analysis"
-    ]
-  },
-  {
-    "slug": "servicenow-introduces-ai-passport-for-runtime-gove-764847",
-    "title": "ServiceNow Introduces AI Passport for Runtime Governance of AI Agents",
-    "summary": "ServiceNow introduces an AI Passport solution that adds a runtime authority layer to AI agents and Model Context Protocol servers, enabling enterprises to control and govern AI actions within a multi‑agent workflow. The feature combines runtime governance, platform integration, and oversight to keep AI agents production‑ready while limiting their capabilities.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/15/servicenow-ai-passport/",
-    "publishedAt": "2026-10-15T13:51:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "servicenow-introduces-ai-passport-for-runtime-gove",
-      "article-764847",
-      "764847",
-      "servicenow-introduces-ai-passport-for-runtime-governance-of-"
-    ]
-  },
-  {
-    "slug": "kgb-rat-trojan-enables-webcam-microphone-keystroke-9b0e6f",
-    "title": "KGB RAT Trojan Enables Webcam, Microphone, Keystroke, and Password Theft",
-    "summary": "KGB RAT, a Windows trojan built on the NjRAT framework, offers attackers webcam and microphone access, keystroke logging, and password theft. The malware also includes a “fun” menu designed to frighten victims. Analysts from Group‑IB identified the trojan’s features and confirmed its use on hacking forums for as little as $150 a month.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/15/kgb-rat-windows-trojan-webcam-spying-password-theft/",
-    "publishedAt": "2026-10-15T13:51:03.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/kgb-rat-malware/"
-      }
-    ],
-    "aliases": [
-      "kgb-rat-trojan-enables-webcam-microphone-keystroke",
-      "article-9b0e6f",
-      "9b0e6f",
-      "kgb-rat-trojan-enables-webcam-microphone-keystroke-and-passw"
-    ]
-  },
-  {
-    "slug": "fake-captchas-used-to-trick-users-into-running-mal-334d38",
-    "title": "Fake CAPTCHAs Used to Trick Users into Running Malware",
-    "summary": "Attackers embed malicious code in fake CAPTCHA challenges, luring users to download malware, receive harmful browser notifications, and execute commands. The technique, identified by Barracuda, was found in 43% of phishing-kit attacks examined in 2025, exploiting user trust to bypass automated security tools.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/15/barracuda-fake-captcha-phishing-attacks/",
-    "publishedAt": "2026-10-15T13:29:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fake-captchas-used-to-trick-users-into-running-mal",
-      "article-334d38",
-      "334d38",
-      "fake-captchas-used-to-trick-users-into-running-malware"
     ]
   }
 ];
