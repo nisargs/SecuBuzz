@@ -324,12 +324,28 @@
     2. **Parked Discussion: Article Detail Page Deep-Dive Intelligence**:
        - Revisit what extra value detail pages can provide beyond the 60-word feed brief (interactive EPSS likelihood meter, leak checker/PSIRT links, discovery vector micro-intel).
 - **Recent Production Deployments Record**:
+  - **Website Navigation, Filter Sorting & Copy Modernization (Oct 28, 2026)**:
+    - Alphabetical Category Sorting: Scoped and sorted the Category dropdown in `website/src/pages/News.tsx` alphabetically (`Breach`, `CVE`, `General`, `Nation State`, `Ransomware`, `Vulnerability`) using `localeCompare`.
+    - Alphabetical Vendor PSIRT Select with Live Search: Upgraded `website/src/components/VendorSelect.tsx` with alphabetical vendor ordering and an internal search filter (`Search vendors...`), harmonizing news vendor filtering with the advisories experience.
+    - Sober Aesthetic Cleanup: Removed the legacy `Sparkles` icon from `WhatsNewModal.tsx` and removed the `Direct Vendor PSIRT Radar` ticker strip from `Home.tsx` to maintain a restrained, professional posture.
+    - What's New Copy Alignment: Updated PSIRT modal bullet to *"Ingests official security errata and bulletins directly from 5+ vendors including Red Hat, Microsoft, Cisco, and AWS."*
+    - Cloudflare Worker Production Deployed: Version ID `108c813b-c682-435e-8710-abde62793859` on `secubuzz.com`. Verified live with `fetch`.
   - **Website Layout Compacted & Deployed (Oct 25, 2026)**:
     - Streamlined `/news` and `/advisories` into a sleek 1-line utility header and balanced 2-row toolbar (Search + Category dropdown on Row 1; Threat Severity on left, Feed Source on right of Row 2).
-    - Removed bulky header telemetry. Reclaimed ~70% vertical space; first 2–3 articles now immediately visible above the fold.
+    - Removed bulky header telemetry. Reclaimed ~70% vertical space; first 2 to 3 articles now immediately visible above the fold.
     - Cloudflare Worker Version ID: `496aeea5-cddf-4c43-92bd-89c4731cbd67`.
-- **Live Broadcast Telemetry Record**:
-  - Noon custom community push notification (`COMMUNITY` / `HIGH` linking to Play Store review) has logged **2 verified user opens** so far in Cloudflare D1 on Android v1.0.3 devices.
+- **Live Broadcast Controller Architecture & Telemetry Record**:
+  - **Vendor PSIRT Announcement Broadcast (Oct 28, 2026)**:
+    - Script: `scripts/send_custom_push.mjs`.
+    - Payload Architecture: Title `"What's New: Vendor PSIRT Feeds"`, Body `"Now tracking 9+ vendor PSIRTs including Red Hat, Microsoft, Cisco, and AWS. Filter directly by Vendor PSIRT in your News briefs tab."`
+    - Notification Mechanics: Dispatched on Android channel `secubuzz-briefs` with `priority: 'high'` and `data: { type: 'announcement', category: 'CVE', severity: 'HIGH' }`.
+    - Tap Routing Invariant: When `--url` is omitted, `articleId` / `articleUrl` is set to null, allowing the notification tap to directly foreground the root News Briefs tab rather than triggering an invalid article modal route.
+    - Fleet Delivery: Successfully broadcast to all 36 active subscribed Android devices with 36/36 `ok` tickets returned from Expo Push API.
+    - Ticket Hygiene: Integrated automatic Cloudflare D1 deactivation (`is_active = 0`) for dead tokens returning `DeviceNotRegistered`.
+  - **User & Fleet Telemetry Snapshot (Oct 27 vs Oct 28)**:
+    - Oct 27 (Full Day): 944 unique visitors, 2,072 page views, 8,605 requests, 6 Play Store clicks, 3 active mobile devices seen, 15 notification opens.
+    - Oct 28 (Mid-day): 924 unique visitors, 843 page views, 3,077 requests, 17 Play Store clicks, 9 active mobile devices seen (3x increase post-broadcast), 8 notification opens.
+    - Audience Definition Grounding: Daily "Unique Visitors" in Cloudflare collapses intra-day repeat visits from the same IP/device into 1 unique count, while returning repeat users across days are explicitly monitored via direct/bookmark sessions (357 loads in 48h) and repeat Play Store clickers (64 repeat clicks out of 132 unique clickers).
 
 
 
