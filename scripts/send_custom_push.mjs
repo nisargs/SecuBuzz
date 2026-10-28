@@ -36,7 +36,7 @@ async function main() {
 
   const title = titleIdx !== -1 && args[titleIdx + 1] ? args[titleIdx + 1] : 'SecuBuzz Community Update';
   const body = bodyIdx !== -1 && args[bodyIdx + 1] ? args[bodyIdx + 1] : 'Finding SecuBuzz helpful? Share a quick rating & review on Google Play to help independent threat intelligence grow!';
-  const linkUrl = urlIdx !== -1 && args[urlIdx + 1] ? args[urlIdx + 1] : 'https://play.google.com/store/apps/details?id=com.secubuzz.app';
+  const linkUrl = urlIdx !== -1 && args[urlIdx + 1] ? args[urlIdx + 1] : null;
 
   console.log('\n========================================================');
   console.log('📣 SECUBUZZ CUSTOM PUSH BROADCAST CONTROLLER');
@@ -45,7 +45,7 @@ async function main() {
   console.log(`Notification Payload:`);
   console.log(`  Title:   "${title}"`);
   console.log(`  Body:    "${body}"`);
-  console.log(`  Link:    ${linkUrl}`);
+  console.log(`  Link:    ${linkUrl || '(Opens directly to News briefs tab)'}`);
   console.log(`  Mode:    ${isSend ? '🚨 LIVE BROADCAST (Will buzz devices)' : '🛡️ DRY-RUN PREVIEW (No devices messaged)'}\n`);
 
   const token = getOauthToken();
@@ -75,27 +75,36 @@ async function main() {
 
   console.log(`\nBroadcasting to ${activeTokens.length} devices via Expo Push Service...`);
 
+  const dataPayload = {
+    type: 'announcement',
+    headline: title,
+    summary: body,
+    category: 'CVE',
+    severity: 'HIGH'
+  };
+
+  if (linkUrl) {
+    dataPayload.articleId = linkUrl;
+    dataPayload.articleUrl = linkUrl;
+  }
+
   const messages = activeTokens.map(d => ({
     to: d.token,
     sound: 'default',
     title,
     body,
-    channelId: 'secubuzz-news',
+    channelId: 'secubuzz-briefs',
     priority: 'high',
-    data: {
-      type: 'custom_broadcast',
-      articleId: linkUrl,
-      articleUrl: linkUrl,
-      headline: title,
-      summary: body,
-      category: 'COMMUNITY',
-      severity: 'HIGH'
-    }
+    data: dataPayload
   }));
 
   // Chunk in batches of 100
   const CHUNK_SIZE = 100;
   let sentCount = 0;
+  let successCount = 0;
+  let errorCount = 0;
+  const invalidTokens = [];
+
   for (let i = 0; i < messages.length; i += CHUNK_SIZE) {
     const chunk = messages.slice(i, i + CHUNK_SIZE);
     const pushRes = await fetch('https://exp.host/--/api/v2/push/send', {
@@ -109,10 +118,42 @@ async function main() {
     });
     const result = await pushRes.json();
     sentCount += chunk.length;
+
+    if (Array.isArray(result?.data)) {
+      result.data.forEach((ticket, idx) => {
+        if (ticket.status === 'ok') {
+          successCount++;
+        } else {
+          errorCount++;
+          if (ticket.details?.error === 'DeviceNotRegistered') {
+            invalidTokens.push(chunk[idx].to);
+          }
+          console.warn(`Device ${chunk[idx].to} push error:`, ticket.message || ticket.details);
+        }
+      });
+    }
+
     console.log(`Batch ${Math.floor(i / CHUNK_SIZE) + 1}: Sent ${chunk.length} messages. Status: ${pushRes.status}`);
   }
 
-  console.log(`\n✅ Broadcast complete! Delivered to ${sentCount} devices.`);
+  console.log(`\n✅ Broadcast complete!`);
+  console.log(`   Total devices targeted: ${sentCount}`);
+  console.log(`   Tickets OK:             ${successCount}`);
+  if (errorCount > 0) {
+    console.log(`   Tickets Error:          ${errorCount}`);
+  }
+
+  if (invalidTokens.length > 0) {
+    console.log(`\nDeactivating ${invalidTokens.length} unregistered device tokens in Cloudflare D1...`);
+    const placeholders = invalidTokens.map(() => '?').join(', ');
+    await queryD1(
+      token,
+      accountTag,
+      d1Id,
+      `UPDATE push_tokens SET is_active = 0 WHERE token IN (${placeholders});`
+    );
+    console.log(`Deactivated ${invalidTokens.length} dead tokens.`);
+  }
 }
 
 main().catch(console.error);
