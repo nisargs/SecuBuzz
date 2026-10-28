@@ -1395,27 +1395,17 @@ async function requestGroq(
       );
 
       if (retryAfter) {
-        const retrySeconds =
-          parseSeconds(
-            retryAfter,
-          );
-
-        console.log(
-          `Groq requested retry after approximately ${retrySeconds.toFixed(
-            2,
-          )}s.`,
-        );
-
-        await sleep(
-          Math.ceil(
-            retrySeconds * 1000,
-          ) +
-            RATE_LIMIT_RESET_BUFFER_MS,
-        );
+        const retrySeconds = parseSeconds(retryAfter);
+        if (retrySeconds > 8) {
+          throw new Error(`Groq rate-limited (retry-after ${retrySeconds}s) - failing over to next engine`);
+        }
+        await sleep(Math.ceil(retrySeconds * 1000) + RATE_LIMIT_RESET_BUFFER_MS);
       } else if (resetTokens) {
-        await waitForRateLimitReset(
-          response,
-        );
+        const resetSec = parseSeconds(resetTokens);
+        if (resetSec > 8) {
+          throw new Error(`Groq token limit reached (reset in ${resetSec}s) - failing over to next engine`);
+        }
+        await waitForRateLimitReset(response);
       } else {
         /*
          * Exponential backoff fallback.
@@ -2086,6 +2076,9 @@ async function requestOpenRouterContextComparison(storyA, storyB, prompt) {
   return parsed;
 }
 
+let totalAiComparisonsThisRun = 0;
+const MAX_AI_COMPARISONS_PER_RUN = 10;
+
 async function compareStoryContext(storyA, storyB) {
   // Tier 1: Deterministic Fast-Paths (Zero AI latency/token cost)
 
@@ -2126,9 +2119,20 @@ async function compareStoryContext(storyA, storyB) {
   const anchorsA = extractSubjectAnchors(storyA.title || '', storyA.summary || '');
   const anchorsB = extractSubjectAnchors(storyB.title || '', storyB.summary || '');
   const sharedAnchors = anchorsA.filter(a => anchorsB.includes(a));
-  if (sharedAnchors.length === 0 && !sharedCve) {
-    return { isSameIncident: false, reason: 'No shared subject, product, or vendor anchor' };
+
+  const wordsA = new Set((storyA.title || '').toLowerCase().split(/\s+/).filter(w => w.length > 3 && !COMMON_HEADLINE_WORDS.has(w)));
+  const wordsB = new Set((storyB.title || '').toLowerCase().split(/\s+/).filter(w => w.length > 3 && !COMMON_HEADLINE_WORDS.has(w)));
+  const titleOverlap = [...wordsA].filter(w => wordsB.has(w)).length;
+
+  const isCandidate = sharedCve || sharedAnchors.length >= 2 || titleOverlap >= 2;
+  if (!isCandidate) {
+    return { isSameIncident: false, reason: 'Insufficient subject/title overlap' };
   }
+
+  if (totalAiComparisonsThisRun >= MAX_AI_COMPARISONS_PER_RUN) {
+    return { isSameIncident: false, reason: 'AI comparison budget reached - failing open to keep news' };
+  }
+  totalAiComparisonsThisRun++;
 
   // Tier 2: Semantic AI Context Comparison
   // When stories share a vendor/product or topic within 5 days, compare their actual real-world context!
