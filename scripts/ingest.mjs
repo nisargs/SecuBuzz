@@ -2019,7 +2019,7 @@ async function requestGroqContextComparison(storyA, storyB, prompt) {
       response_format: { type: 'json_object' },
       reasoning_effort: 'low',
       temperature: 0.1,
-      max_completion_tokens: 1200
+      max_tokens: 1200
     })
   });
 
