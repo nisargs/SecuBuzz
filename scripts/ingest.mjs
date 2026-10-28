@@ -865,6 +865,7 @@ async function fetchFeed(feed) {
         Accept:
           "application/rss+xml, application/xml, text/xml, */*",
       },
+      signal: AbortSignal.timeout(12000),
     },
   );
 
@@ -1351,6 +1352,7 @@ async function requestGroq(
 
             stream: false,
           }),
+          signal: AbortSignal.timeout(45000),
         },
       );
     } catch (error) {
@@ -1649,6 +1651,7 @@ async function requestGemini(candidates) {
       temperature: 0.2,
       max_completion_tokens: MAX_COMPLETION_TOKENS,
     }),
+    signal: AbortSignal.timeout(45000),
   });
 
   const responseText = await response.text();
@@ -1725,6 +1728,7 @@ async function requestOpenRouter(candidates) {
       temperature: 0.2,
       max_tokens: MAX_COMPLETION_TOKENS,
     }),
+    signal: AbortSignal.timeout(45000),
   });
 
   const responseText = await response.text();
@@ -2893,7 +2897,7 @@ async function sendPushNotificationsForNewArticles(newArticles, activeFeed) {
       headers["Authorization"] = `Bearer ${PUSH_ADMIN_SECRET}`;
     }
 
-    const tokenRes = await fetch(PUSH_TOKEN_API_URL, { headers });
+    const tokenRes = await fetch(PUSH_TOKEN_API_URL, { headers, signal: AbortSignal.timeout(10000) });
     if (tokenRes.ok) {
       const data = await tokenRes.json();
       if (Array.isArray(data.devices)) {
@@ -3121,6 +3125,7 @@ async function checkAndBroadcastCisaKevZeroDays() {
     console.log("\nChecking CISA KEV catalog for new in-the-wild zero-days...");
     const res = await fetch(CISA_KEV_FEED_URL, {
       headers: { Accept: "application/json" },
+      signal: AbortSignal.timeout(15000),
     });
     if (!res.ok) {
       console.warn(`CISA KEV fetch failed: HTTP ${res.status}`);
@@ -3166,7 +3171,7 @@ async function checkAndBroadcastCisaKevZeroDays() {
         headers["x-admin-key"] = PUSH_ADMIN_SECRET;
         headers["Authorization"] = `Bearer ${PUSH_ADMIN_SECRET}`;
       }
-      const tokenRes = await fetch(PUSH_TOKEN_API_URL, { headers });
+      const tokenRes = await fetch(PUSH_TOKEN_API_URL, { headers, signal: AbortSignal.timeout(10000) });
       if (tokenRes.ok) {
         const tokenData = await tokenRes.json();
         if (Array.isArray(tokenData.devices)) {

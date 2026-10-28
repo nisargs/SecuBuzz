@@ -16,6 +16,7 @@ jobs:
   watchdog:
     name: Check Production Feed Freshness
     runs-on: ubuntu-latest
+    timeout-minutes: 5
 
     steps:
       - name: Checkout repository
