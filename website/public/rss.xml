@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Oct 2026 22:02:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 22:17:00 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Cisco SD‑WAN Controller Authentication Bypass</title>
+      <link>https://secubuzz.com/news/cisco-sd-wan-controller-authentication-bypass-78eefb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisco-sd-wan-controller-authentication-bypass-78eefb</guid>
+      <description><![CDATA[A flaw in Cisco Catalyst SD‑WAN Controller’s peering authentication permits unauthenticated remote attackers to bypass login and gain administrative privileges. The defect stems from a broken authentication mechanism that accepts crafted requests, enabling attackers to log in as a high‑privileged non‑root user and manipulate NETCONF network configurations. Cisco has issued a patch; administrators should apply the update immediately.]]></description>
+      <pubDate>Thu, 29 Oct 2026 01:54:35 GMT</pubDate>
+      <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-rpa-EHchtZk?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Catalyst+SD-WAN+Controller+Authentication+Bypass+Vulnerability%26vs_k%3D1">Cisco PSIRT</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Node.js Vulnerabilities Impact Cisco Products</title>
+      <link>https://secubuzz.com/news/node-js-vulnerabilities-impact-cisco-products-1aa209</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/node-js-vulnerabilities-impact-cisco-products-1aa209</guid>
+      <description><![CDATA[Node.js released fixes for multiple high‑impact vulnerabilities affecting Cisco products, including CVE-2026-111497, an out‑of‑bounds write in the Brotli decoder that could lead to remote code execution. Additional flaws, CVE-2026-105482, CVE-2026-105483, and CVE-2026-106069, compromise DNS resolution and TLS hostname validation, enabling traffic interception. Cisco should apply the Node.js patches and verify TLS configurations.]]></description>
+      <pubDate>Thu, 29 Oct 2026 00:36:45 GMT</pubDate>
+      <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+Node.js+Affecting+Cisco+Products%3A+October+2026%26vs_k%3D1">Cisco PSIRT</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>FBI Seizes Domain of Hosting Provider Allegedly Facilitating Child Abuse and Money Laundering</title>
       <link>https://secubuzz.com/news/fbi-seizes-domain-of-hosting-provider-allegedly-fa-57e04e</link>
@@ -24,6 +42,15 @@
       <pubDate>Wed, 28 Oct 2026 11:15:51 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/adobe-fixes-8-critical-campaign-classic.html">The Hacker News</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Researchers Study Fraudulent North Korean IT Workers</title>
+      <link>https://secubuzz.com/news/researchers-study-fraudulent-north-korean-it-worke-365efa</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/researchers-study-fraudulent-north-korean-it-worke-365efa</guid>
+      <description><![CDATA[Researchers established a fictitious startup to observe fraudulent North Korean IT workers across the global talent market. The operation aimed to identify recruitment tactics, credential misuse, insider threat patterns, and potential supply‑chain risks within the tech sector. Findings will guide security teams in tightening background checks, detecting deceptive hiring, and reinforcing vendor vetting procedures.]]></description>
+      <pubDate>Wed, 28 Oct 2026 11:05:00 GMT</pubDate>
+      <source url="https://www.schneier.com/blog/archives/2026/10/studying-fraudulent-north-korean-it-workers.html">Schneier on Security</source>
+      <category>General</category>
     </item>
     <item>
       <title>Hackers Compromise Camera Management Software to Deploy Malware on Windows Computers</title>
@@ -80,6 +107,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>CrowdStrike 2026 Report: eCrime Leads, China Activity Rises</title>
+      <link>https://secubuzz.com/news/crowdstrike-2026-report-ecrime-leads-china-activit-6b8654</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/crowdstrike-2026-report-ecrime-leads-china-activit-6b8654</guid>
+      <description><![CDATA[CrowdStrike released its 2026 Legal Threat Landscape Report, highlighting eCrime as the leading attack vector. The analysis indicates a surge in China‑originated cyber activity, with increased phishing, ransomware, and data‑exfiltration campaigns. Security teams should prioritize monitoring for emerging threat actors, enforce strict email filtering, and update incident response playbooks accordingly.]]></description>
+      <pubDate>Wed, 28 Oct 2026 05:00:00 GMT</pubDate>
+      <source url="https://www.crowdstrike.com/en-us/blog/crowdstrike-2026-legal-threat-landscape-report/">CrowdStrike</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>GMO Group Advises Shutdown Amid Ransomware Threat</title>
       <link>https://secubuzz.com/news/gmo-group-advises-shutdown-amid-ransomware-threat-6b8c08</link>
       <guid isPermaLink="true">https://secubuzz.com/news/gmo-group-advises-shutdown-amid-ransomware-threat-6b8c08</guid>
@@ -96,15 +132,6 @@
       <pubDate>Tue, 27 Oct 2026 22:43:27 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/artificial-intelligence/openais-gpt-61-terra-is-safer-overall-but-shows-more-destructive-action-flags-in-tests/">BleepingComputer</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Node.js Security Release Addresses Multiple Cisco‑Affected Vulnerabilities</title>
-      <link>https://secubuzz.com/news/node-js-security-release-addresses-multiple-cisco-150f77</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/node-js-security-release-addresses-multiple-cisco-150f77</guid>
-      <description><![CDATA[Node.js released critical fixes for multiple vulnerabilities affecting Cisco products, including Brotli decoder, DNS resolution, and TLS certificate validation components. The flaws, identified as CVE-2026-111497, CVE-2026-105482, CVE-2026-105483, and CVE-2026-106069, enable remote code execution or hostname validation bypass, posing high‑severity risks. Cisco should apply the Node.js security patches immediately and verify that affected firmware versions are updated to mitigate exploitation.]]></description>
-      <pubDate>Tue, 27 Oct 2026 21:30:00 GMT</pubDate>
-      <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+node.js+Affecting+Cisco+Products%3A+October+2026%26vs_k%3D1">Cisco PSIRT</source>
-      <category>CVE</category>
     </item>
     <item>
       <title>AI Liability Mitigation Frameworks for CISOs</title>
@@ -428,33 +455,6 @@
       <description><![CDATA[ChromeOS LTS-150 version 150.0.7871.287 is being rolled out, addressing several CVEs including CVE-2026-103629, CVE-2026-110166, CVE-2026-113279, and CVE-2026-110138. The vulnerabilities involve integer overflows, buffer overflows, memory corruption, and use‑after‑free conditions across Skia, Animation, Accessibility, Payments, Core, Compositing, Video, and ShapeDetection components. Users should install the update promptly to mitigate the identified security flaws.]]></description>
       <pubDate>Tue, 27 Oct 2026 02:10:25 GMT</pubDate>
       <source url="https://chromereleases.googleblog.com/2026/10/long-term-support-channel-update-for_0661547040.html">Google Chrome Releases</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Apple Releases Patch for CVE-2026-109618 and 303 Other Vulnerabilities</title>
-      <link>https://secubuzz.com/news/apple-releases-patch-for-cve-2026-109618-and-303-o-57dd7e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apple-releases-patch-for-cve-2026-109618-and-303-o-57dd7e</guid>
-      <description><![CDATA[Apple issued a patch update covering 304 vulnerabilities, including CVE-2026-109618, as part of its October 2026 security release. The update addresses a range of issues across macOS and iOS platforms, though specific technical details are not disclosed. Users are advised to apply the latest update to ensure protection against the identified weaknesses.]]></description>
-      <pubDate>Tue, 27 Oct 2026 02:09:55 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/33458">SANS Internet Storm Center</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Penetration Tester Arrested for ARTEX AI Breach of 90 South Korean Organizations</title>
-      <link>https://secubuzz.com/news/penetration-tester-arrested-for-artex-ai-breach-of-58f8a2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/penetration-tester-arrested-for-artex-ai-breach-of-58f8a2</guid>
-      <description><![CDATA[A penetration tester weaponized the ARTEX AI framework to breach 90 South Korean organizations, leading to seven arrests. The breach leveraged ARTEX AI’s automated credential harvesting and lateral movement, exfiltrating sensitive data and demanding ransom from. Security teams should rotate credentials, enable multi‑factor authentication, and monitor AI‑driven anomalies to mitigate similar attacks in 2026.]]></description>
-      <pubDate>Tue, 27 Oct 2026 00:59:27 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/seoul-police-arrest-pentester-over-82m-artex-ai-breach">CyberNews AI</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>CVE-2026-111497 Enables Remote Code Execution in PHP Windows Packages</title>
-      <link>https://secubuzz.com/news/cve-2026-111497-enables-remote-code-execution-in-p-2b6599</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-111497-enables-remote-code-execution-in-p-2b6599</guid>
-      <description><![CDATA[CVE-2026-111497 permits remote code execution in PHP Windows packages via Brotli auto‑decompression triggered by cURL and Guzzle. The CVSS 9.2 flaw allows unauthenticated attackers to run arbitrary code on affected servers, threatening web applications. PHP released a patch for the Windows build; apply it immediately or disable Brotli decompression as a workaround.]]></description>
-      <pubDate>Tue, 27 Oct 2026 00:59:11 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/cve-2026-111497-php-windows-brotli-memory-corruption-patch-guide">CyberNews AI</source>
       <category>CVE</category>
     </item>
   </channel>

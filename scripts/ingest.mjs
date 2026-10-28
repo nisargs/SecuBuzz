@@ -1618,55 +1618,100 @@ async function requestGemini(candidates) {
   const prompt = buildBatchPrompt(candidates);
   console.log(`Sending batch to Gemini AI fallback (${GEMINI_MODEL})...`);
 
-  const response = await fetch(GEMINI_API_URL, {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${GEMINI_API_KEY}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      model: GEMINI_MODEL,
-      messages: [
-        {
-          role: "system",
-          content:
-            "You are an authoritative cybersecurity intelligence editor. Summarize each news item into an exact 50-60 word technical brief using 3 high-density sentences. Follow the requested JSON format exactly. Do not provide markdown code blocks, explanations, or reasoning.",
-        },
-        {
-          role: "user",
-          content: prompt,
-        },
-      ],
-      response_format: { type: "json_object" },
-      temperature: 0.2,
-      max_completion_tokens: MAX_COMPLETION_TOKENS,
-    }),
-    signal: AbortSignal.timeout(45000),
-  });
+  let content = "";
 
-  const responseText = await response.text();
-  let payload = null;
+  // 1. If key is standard Google AI Studio (AIzaSy...), prefer Google native generateContent
+  if (GEMINI_API_KEY.startsWith("AIzaSy")) {
+    try {
+      const nativeUrl = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
+      const response = await fetch(nativeUrl, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          contents: [
+            {
+              parts: [
+                {
+                  text:
+                    "You are an authoritative cybersecurity intelligence editor. Summarize each news item into an exact 50-60 word technical brief using 3 high-density sentences. Follow the requested JSON format exactly. Do not provide markdown code blocks, explanations, or reasoning.\n\n" +
+                    prompt,
+                },
+              ],
+            },
+          ],
+          generationConfig: {
+            responseMimeType: "application/json",
+            temperature: 0.2,
+            maxOutputTokens: MAX_COMPLETION_TOKENS,
+          },
+        }),
+        signal: AbortSignal.timeout(45000),
+      });
 
-  try {
-    payload = JSON.parse(responseText);
-  } catch {
-    throw new Error(
-      `Gemini returned non-JSON HTTP response: ${truncateText(responseText, 500)}`,
-    );
+      if (response.ok) {
+        const payload = await response.json();
+        content = payload?.candidates?.[0]?.content?.parts?.[0]?.text || "";
+      } else {
+        const errText = await response.text();
+        console.warn(`[Gemini Native] HTTP ${response.status}: ${truncateText(errText, 200)}`);
+      }
+    } catch (nativeErr) {
+      console.warn(`[Gemini Native] error: ${nativeErr.message}`);
+    }
   }
 
-  if (!response.ok) {
-    throw new Error(
-      payload?.error?.message ||
-        `Gemini request failed with HTTP ${response.status}`,
-    );
-  }
-
-  const choice = payload?.choices?.[0];
-  const content = choice?.message?.content || "";
+  // 2. OpenAI-compatible endpoint fallback
   if (!content.trim()) {
-    console.log("Gemini returned an empty content response.");
-    return [];
+    const response = await fetch(GEMINI_API_URL, {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${GEMINI_API_KEY}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        model: GEMINI_MODEL,
+        messages: [
+          {
+            role: "system",
+            content:
+              "You are an authoritative cybersecurity intelligence editor. Summarize each news item into an exact 50-60 word technical brief using 3 high-density sentences. Follow the requested JSON format exactly. Do not provide markdown code blocks, explanations, or reasoning.",
+          },
+          {
+            role: "user",
+            content: prompt,
+          },
+        ],
+        response_format: { type: "json_object" },
+        temperature: 0.2,
+        max_tokens: MAX_COMPLETION_TOKENS,
+      }),
+      signal: AbortSignal.timeout(45000),
+    });
+
+    const responseText = await response.text();
+    let payload = null;
+
+    try {
+      payload = JSON.parse(responseText);
+    } catch {
+      throw new Error(
+        `Gemini returned non-JSON HTTP response: ${truncateText(responseText, 500)}`,
+      );
+    }
+
+    if (!response.ok) {
+      throw new Error(
+        payload?.error?.message ||
+          `Gemini request failed with HTTP ${response.status}`,
+      );
+    }
+
+    const choice = payload?.choices?.[0];
+    content = choice?.message?.content || "";
+  }
+
+  if (!content.trim()) {
+    throw new Error("Gemini returned an empty content response.");
   }
 
   const parsed = safeJsonParse(content);
@@ -1676,6 +1721,9 @@ async function requestGemini(candidates) {
 
   const articles = extractArticleArray(parsed);
   console.log(`Gemini returned ${articles.length} article results.`);
+  if (!articles || articles.length === 0) {
+    throw new Error("Gemini returned 0 valid article objects.");
+  }
 
   await sleep(1500);
   return articles;
@@ -1742,8 +1790,7 @@ async function requestOpenRouter(candidates) {
   const choice = payload?.choices?.[0];
   const content = choice?.message?.content || "";
   if (!content.trim()) {
-    console.log("OpenRouter returned an empty content response.");
-    return [];
+    throw new Error("OpenRouter returned an empty content response.");
   }
 
   const parsed = safeJsonParse(content);
@@ -1753,6 +1800,9 @@ async function requestOpenRouter(candidates) {
 
   const articles = extractArticleArray(parsed);
   console.log(`OpenRouter returned ${articles.length} article results.`);
+  if (!articles || articles.length === 0) {
+    throw new Error("OpenRouter returned 0 valid article objects.");
+  }
 
   await sleep(1500);
   return articles;
@@ -1797,7 +1847,11 @@ async function requestAi(candidates) {
       console.log(
         `[AI Dispatcher] Using engine ${i === 0 ? "LEAD (Hourly Rotation)" : "FAILOVER"}: ${engine.name}`,
       );
-      return await engine.run(candidates);
+      const results = await engine.run(candidates);
+      if (!Array.isArray(results) || results.length === 0) {
+        throw new Error(`${engine.name} returned 0 valid article results.`);
+      }
+      return results;
     } catch (err) {
       console.warn(`[AI Dispatcher] ${engine.name} attempt failed: ${err.message}`);
       lastError = err;
@@ -2552,9 +2606,9 @@ for (
      *
      * Failed articles are NOT added to seenUrls.
      *
-     * They can therefore be retried during
-     * the next six-hour ingestion run.
+     * Sleep 6s to avoid hammering APIs if rate-limited.
      */
+    await sleep(6000);
     continue;
   }
 

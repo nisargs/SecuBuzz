@@ -11,6 +11,45 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "cisco-sd-wan-controller-authentication-bypass-78eefb",
+    "title": "Cisco SD‑WAN Controller Authentication Bypass",
+    "summary": "A flaw in Cisco Catalyst SD‑WAN Controller’s peering authentication permits unauthenticated remote attackers to bypass login and gain administrative privileges. The defect stems from a broken authentication mechanism that accepts crafted requests, enabling attackers to log in as a high‑privileged non‑root user and manipulate NETCONF network configurations. Cisco has issued a patch; administrators should apply the update immediately.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cisco PSIRT",
+    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-rpa-EHchtZk?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Catalyst+SD-WAN+Controller+Authentication+Bypass+Vulnerability%26vs_k%3D1",
+    "publishedAt": "2026-10-29T01:54:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisco-sd-wan-controller-authentication-bypass",
+      "article-78eefb",
+      "78eefb"
+    ]
+  },
+  {
+    "slug": "node-js-vulnerabilities-impact-cisco-products-1aa209",
+    "title": "Node.js Vulnerabilities Impact Cisco Products",
+    "summary": "Node.js released fixes for multiple high‑impact vulnerabilities affecting Cisco products, including CVE-2026-111497, an out‑of‑bounds write in the Brotli decoder that could lead to remote code execution. Additional flaws, CVE-2026-105482, CVE-2026-105483, and CVE-2026-106069, compromise DNS resolution and TLS hostname validation, enabling traffic interception. Cisco should apply the Node.js patches and verify TLS configurations.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Cisco PSIRT",
+    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+Node.js+Affecting+Cisco+Products%3A+October+2026%26vs_k%3D1",
+    "publishedAt": "2026-10-29T00:36:45.000Z",
+    "cves": [
+      "CVE-2026-111497",
+      "CVE-2026-105482",
+      "CVE-2026-105483",
+      "CVE-2026-106069"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "node-js-vulnerabilities-impact-cisco-products",
+      "article-1aa209",
+      "1aa209"
+    ]
+  },
+  {
     "slug": "fbi-seizes-domain-of-hosting-provider-allegedly-fa-57e04e",
     "title": "FBI Seizes Domain of Hosting Provider Allegedly Facilitating Child Abuse and Money Laundering",
     "summary": "The FBI seized the domain of a bullet‑proof hosting provider that allegedly facilitated child sexual abuse material distribution and money laundering. The operation targeted the provider’s infrastructure, disrupting its services and preventing further criminal activity through its hosting network. No public patch is required; security teams should monitor for related domain registrations and enforce strict domain registration policies.",
@@ -46,6 +85,24 @@ export const news: NewsBrief[] = [
       "article-533abd",
       "533abd",
       "adobe-issues-patches-for-eight-critical-campaign-classic-vul"
+    ]
+  },
+  {
+    "slug": "researchers-study-fraudulent-north-korean-it-worke-365efa",
+    "title": "Researchers Study Fraudulent North Korean IT Workers",
+    "summary": "Researchers established a fictitious startup to observe fraudulent North Korean IT workers across the global talent market. The operation aimed to identify recruitment tactics, credential misuse, insider threat patterns, and potential supply‑chain risks within the tech sector. Findings will guide security teams in tightening background checks, detecting deceptive hiring, and reinforcing vendor vetting procedures.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/studying-fraudulent-north-korean-it-workers.html",
+    "publishedAt": "2026-10-28T11:05:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "researchers-study-fraudulent-north-korean-it-worke",
+      "article-365efa",
+      "365efa",
+      "researchers-study-fraudulent-north-korean-it-workers"
     ]
   },
   {
@@ -157,6 +214,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "crowdstrike-2026-report-ecrime-leads-china-activit-6b8654",
+    "title": "CrowdStrike 2026 Report: eCrime Leads, China Activity Rises",
+    "summary": "CrowdStrike released its 2026 Legal Threat Landscape Report, highlighting eCrime as the leading attack vector. The analysis indicates a surge in China‑originated cyber activity, with increased phishing, ransomware, and data‑exfiltration campaigns. Security teams should prioritize monitoring for emerging threat actors, enforce strict email filtering, and update incident response playbooks accordingly.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CrowdStrike",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-2026-legal-threat-landscape-report/",
+    "publishedAt": "2026-10-28T05:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "crowdstrike-2026-report-ecrime-leads-china-activit",
+      "article-6b8654",
+      "6b8654",
+      "crowdstrike-2026-report-ecrime-leads-china-activity-rises"
+    ]
+  },
+  {
     "slug": "gmo-group-advises-shutdown-amid-ransomware-threat-6b8c08",
     "title": "GMO Group Advises Shutdown Amid Ransomware Threat",
     "summary": "A threat actor breached GMO Group’s Onamae Desktop Cloud and threatened a ransomware attack, prompting the company to advise customers to disconnect and shut down systems. The threat exploits compromised credentials to gain remote access, potentially encrypting user data. GMO has released a mitigation guide and urges immediate network isolation.",
@@ -189,29 +264,6 @@ export const news: NewsBrief[] = [
       "article-622464",
       "622464",
       "openai-gpt-6-1-terra-safety-testing-reveals-increased-destru"
-    ]
-  },
-  {
-    "slug": "node-js-security-release-addresses-multiple-cisco-150f77",
-    "title": "Node.js Security Release Addresses Multiple Cisco‑Affected Vulnerabilities",
-    "summary": "Node.js released critical fixes for multiple vulnerabilities affecting Cisco products, including Brotli decoder, DNS resolution, and TLS certificate validation components. The flaws, identified as CVE-2026-111497, CVE-2026-105482, CVE-2026-105483, and CVE-2026-106069, enable remote code execution or hostname validation bypass, posing high‑severity risks. Cisco should apply the Node.js security patches immediately and verify that affected firmware versions are updated to mitigate exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cisco PSIRT",
-    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+node.js+Affecting+Cisco+Products%3A+October+2026%26vs_k%3D1",
-    "publishedAt": "2026-10-27T21:30:00.000Z",
-    "cves": [
-      "CVE-2026-111497",
-      "CVE-2026-105482",
-      "CVE-2026-105483",
-      "CVE-2026-106069"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "node-js-security-release-addresses-multiple-cisco",
-      "article-150f77",
-      "150f77",
-      "node-js-security-release-addresses-multiple-cisco-affected-v"
     ]
   },
   {
@@ -6452,77 +6504,6 @@ export const news: NewsBrief[] = [
       "article-292970",
       "292970",
       "sweet-security-releases-one-click-virtual-patching-for-cloud"
-    ]
-  },
-  {
-    "slug": "byovd-attack-hunting-strategies-for-modern-securit-d8ba75",
-    "title": "BYOVD Attack Hunting Strategies for Modern Security Operations",
-    "summary": "Detection teams can segment EDR‑killer attacks into four behavior hunts to identify BYOVD and driverless threats before ransomware execution. The approach focuses on driver activity, privilege escalation, persistence, and lateral movement indicators, enabling proactive containment of driver‑based attacks that bypass traditional EDR defenses.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "SentinelOne",
-    "sourceUrl": "https://www.sentinelone.com/blog/bring-your-own-vulnerable-driver-what-detection-teams-should-actually-hunt/",
-    "publishedAt": "2026-10-19T13:00:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "byovd-attack-hunting-strategies-for-modern-securit",
-      "article-d8ba75",
-      "d8ba75",
-      "byovd-attack-hunting-strategies-for-modern-security-operatio"
-    ]
-  },
-  {
-    "slug": "securing-ai-agent-workloads-against-insider-threat-4fee9a",
-    "title": "Securing AI Agent Workloads Against Insider Threat Vectors",
-    "summary": "Microsoft 365 E7 and Project Perception introduce capabilities that treat internal agents as potential insiders, allowing continuous adaptation of protection and containment of agent‑related risk. The features monitor agent behavior, enforce least‑privilege policies, and provide rapid response to insider threats within the Microsoft ecosystem.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Microsoft Security",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/19/agents-are-your-newest-insiders-security-must-move-at-their-speed/",
-    "publishedAt": "2026-10-19T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "securing-ai-agent-workloads-against-insider-threat",
-      "article-4fee9a",
-      "4fee9a",
-      "securing-ai-agent-workloads-against-insider-threat-vectors"
-    ]
-  },
-  {
-    "slug": "sextortion-conspiracy-leads-to-tragic-loss-245f35",
-    "title": "Sextortion Conspiracy Leads to Tragic Loss",
-    "summary": "A sextortion plot targeted the son of John DeMay, culminating in the victim’s suicide. The Lock and Code podcast discusses the conspiracy’s details and the emotional impact on the family. No technical exploitation or data breach is reported; the incident is a personal crime case.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/podcast/2026/10/a-sextortion-conspiracy-killed-his-son-lock-and-code-s07e21",
-    "publishedAt": "2026-10-19T12:10:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sextortion-conspiracy-leads-to-tragic-loss",
-      "article-245f35",
-      "245f35"
-    ]
-  },
-  {
-    "slug": "salesforce-agentforce-email-to-case-governance-exp-1b7c8c",
-    "title": "Salesforce Agentforce Email-to-Case Governance Exploitation",
-    "summary": "Salesforce Agentforce recommends using a Flow to trigger agents on record creation or case updates. Email-to-Case and Web-to-Case convert inbound messages into case records. When chained with a Flow, these standard features can bypass governance controls designed for software, exposing potential policy violations.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/from-email-to-case-to-boardroom-how.html",
-    "publishedAt": "2026-10-19T11:50:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "salesforce-agentforce-email-to-case-governance-exp",
-      "article-1b7c8c",
-      "1b7c8c",
-      "salesforce-agentforce-email-to-case-governance-exploitation"
     ]
   }
 ];
