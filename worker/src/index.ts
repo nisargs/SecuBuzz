@@ -206,7 +206,7 @@ let cachedArticlesTime = 0;
 
 async function getArticles(): Promise<ArticleItem[]> {
   const now = Date.now();
-  if (cachedArticles && now - cachedArticlesTime < 10 * 60 * 1000) {
+  if (cachedArticles && now - cachedArticlesTime < 60 * 1000) {
     return cachedArticles;
   }
   try {
@@ -767,7 +767,7 @@ export default {
       if (url.pathname === '/api/news' || url.pathname === '/feed.json') {
         const articles = await getArticles();
         return jsonResponse(articles, 200, {
-          'Cache-Control': 'public, max-age=60, s-maxage=300, stale-while-revalidate=120',
+          'Cache-Control': 'public, max-age=30, s-maxage=60, stale-while-revalidate=30',
         });
       }
 

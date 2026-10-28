@@ -52,639 +52,1293 @@ export const advisories: Advisory[] = [
     "source": "CISA KEV"
   },
   {
-    "cve": "CVE-2026-118255",
-    "slug": "cve-2026-118255",
-    "vendor": "npm",
-    "product": "@highcharts/dashboards",
-    "name": "Highcharts Grid: `javascript:` URL in credits.href runs script on click",
+    "cve": "CVE-2026-117601",
+    "slug": "cve-2026-117601",
+    "vendor": "Pip",
+    "product": "electrum",
+    "name": "Electrum: Malicious server can replace a just-broadcast tx and try to trick user into RBF-ing it",
     "dateAdded": "2026-10-28",
     "dueDate": "",
-    "cvss": 8.4,
-    "severity": "High",
-    "cwe": "CWE-79",
+    "cvss": 9.3,
+    "severity": "Critical",
+    "cwe": "CWE-347",
     "ransomware": false,
-    "description": "An attacker who controls the Grid configuration can set credits.href to a javascript: URL. The value is not validated against an allowed-scheme list before it is applied to the credits link, so activating that link runs attacker-supplied script in the origin of the page hosting the Grid.",
-    "requiredAction": "Upgrade @highcharts/dashboards to version 4.0.0 or later.",
+    "description": "The main Electrum server the client connects to is trusted with mempool (\"unconfirmed\") transactions. This is documented design.",
+    "requiredAction": "Upgrade electrum to version 4.8.3 or later.",
     "references": [
       {
         "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-6hgp-fmhr-mrg4"
+        "url": "https://github.com/advisories/GHSA-6jp4-8v48-cc5v"
       },
       {
         "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118255"
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-117601"
       }
     ],
     "source": "GITHUB"
   },
   {
-    "cve": "CVE-2026-118254",
-    "slug": "cve-2026-118254",
-    "vendor": "npm",
-    "product": "@highcharts/grid-lite",
-    "name": "Highcharts Grid parses pagination language options as HTML",
+    "cve": "GHSA-2hw4-c9m4-f2fj",
+    "slug": "ghsa-2hw4-c9m4-f2fj",
+    "vendor": "Go",
+    "product": "knative.dev/pkg",
+    "name": "knative.dev/pkg admission webhooks allow unbounded request-body memory exhaustion",
     "dateAdded": "2026-10-28",
     "dueDate": "",
-    "cvss": 8.6,
-    "severity": "High",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "The pagination language strings are written into the DOM as markup rather than as text. An attacker who controls those language options can supply elements carrying event handlers, and those handlers execute in the origin of the page hosting the Grid when the pagination controls render.",
-    "requiredAction": "Upgrade @highcharts/grid-lite to version 3.2.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-r5wg-q8fc-p6w2"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118254"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-118253",
-    "slug": "cve-2026-118253",
-    "vendor": "npm",
-    "product": "@highcharts/dashboards",
-    "name": "Highcharts Dashboards parses fullscreen labels as HTML",
-    "dateAdded": "2026-10-28",
-    "dueDate": "",
-    "cvss": 8.4,
-    "severity": "High",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "The edit mode fullscreen labels are parsed as HTML when the corresponding control is rendered. An attacker who controls the Dashboards language options can supply markup carrying event handlers, which then execute in the origin of the page hosting the dashboard. Exploitation requires that untrusted data reach the Dashboards language configuration and that the affected control be rendered.",
-    "requiredAction": "Upgrade @highcharts/dashboards to version 4.2.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-58g7-7f52-h92c"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118253"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-118252",
-    "slug": "cve-2026-118252",
-    "vendor": "npm",
-    "product": "@highcharts/dashboards",
-    "name": "Highcharts Dashboards parses sidebar component labels as HTML",
-    "dateAdded": "2026-10-28",
-    "dueDate": "",
-    "cvss": 8.4,
-    "severity": "High",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "The component language strings shown in the edit mode sidebar are parsed as HTML rather than inserted as text. An attacker who controls those language options can supply markup carrying event handlers, which execute in the origin of the page hosting the dashboard once the sidebar renders the affected labels.",
-    "requiredAction": "Upgrade @highcharts/dashboards to version 4.2.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-rcqf-f6h2-ccg9"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118252"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-118251",
-    "slug": "cve-2026-118251",
-    "vendor": "npm",
-    "product": "highcharts",
-    "name": "Highcharts: `javascript:` URL in credits.href runs script on click",
-    "dateAdded": "2026-10-28",
-    "dueDate": "",
-    "cvss": 8.4,
-    "severity": "High",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "A credits.href value beginning with javascript: is assigned to the window location when the credits label is clicked, without being checked against an allowed-scheme list. An attacker who controls the chart configuration can therefore run script in the origin of the page hosting the chart.",
-    "requiredAction": "Upgrade highcharts to version 11.4.9 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-5793-x2q3-c3q7"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118251"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-118250",
-    "slug": "cve-2026-118250",
-    "vendor": "npm",
-    "product": "highcharts",
-    "name": "Highcharts: dotted series.keys paths write to Object.prototype",
-    "dateAdded": "2026-10-28",
-    "dueDate": "",
-    "cvss": 7.2,
-    "severity": "High",
-    "cwe": "CWE-1321",
-    "ransomware": false,
-    "description": "A dot-separated key path taken from series.keys is followed without filtering the individual segments. An attacker who controls series.keys and the matching point data can use a path such as proto.polluted to set arbitrary properties on Object.prototype. The resulting properties are visible to all JavaScript running in the page, not only to the chart.",
-    "requiredAction": "Upgrade highcharts to version 12.6.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-rmqc-xvr3-v46c"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118250"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-118249",
-    "slug": "cve-2026-118249",
-    "vendor": "npm",
-    "product": "highcharts",
-    "name": "Highcharts: series column construction writes to Object.prototype",
-    "dateAdded": "2026-10-28",
-    "dueDate": "",
-    "cvss": 7.1,
-    "severity": "High",
-    "cwe": "CWE-1321",
-    "ransomware": false,
-    "description": "When series columns are built from point objects, the point option keys are used directly as data column ids, so the write that populates a column reaches Object.prototype and the Object constructor.",
-    "requiredAction": "Upgrade highcharts to version 13.1.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-gfvx-2c2g-38wq"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118249"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-118246",
-    "slug": "cve-2026-118246",
-    "vendor": "npm",
-    "product": "highcharts",
-    "name": "Highcharts Core: `breadcrumbs.style` keys become SVG event-handler attributes",
-    "dateAdded": "2026-10-28",
-    "dueDate": "",
-    "cvss": 8.4,
-    "severity": "High",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "The breadcrumbs style option is applied to the breadcrumb button as SVG attributes rather than as CSS, and the attribute names are not filtered. An attacker who controls the chart configuration can supply keys under breadcrumbs.style that name event handlers, and those keys become live handlers on the breadcrumb button, so the attacker's script runs in the origin of the page hosting the chart.",
-    "requiredAction": "Upgrade highcharts to version 11.4.9 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-35rr-xwfh-x789"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118246"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-116797",
-    "slug": "cve-2026-116797",
-    "vendor": "npm",
-    "product": "@highcharts/grid-pro",
-    "name": "Highcharts Grid Pro: cell-renderer `attributes` map written with raw `setAttribute`",
-    "dateAdded": "2026-10-28",
-    "dueDate": "",
-    "cvss": 8.5,
-    "severity": "High",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "The input-type cell renderers copy every entry of the renderer's attributes option onto the input or select element they create, without checking the attribute names.",
-    "requiredAction": "Upgrade @highcharts/grid-pro to version 3.2.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-5ghw-9mgr-jvx2"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116797"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-118242",
-    "slug": "cve-2026-118242",
-    "vendor": "npm",
-    "product": "@highcharts/grid-lite",
-    "name": "Highcharts Grid: custom icon definition objects written with raw `setAttribute` on `<path>`",
-    "dateAdded": "2026-10-28",
-    "dueDate": "",
-    "cvss": 8.5,
-    "severity": "High",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "A custom icon supplied under rendering.icons as an icon definition object is built by creating an SVG path for each of its child entries and setting every key of that entry as an attribute of the path, without filtering the attribute names; only the string form of the option is passed through the markup allow-list.",
-    "requiredAction": "Upgrade @highcharts/grid-lite to version 3.2.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-6g3c-p4fg-xv47"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118242"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-118245",
-    "slug": "cve-2026-118245",
-    "vendor": "npm",
-    "product": "@highcharts/dashboards",
-    "name": "Highcharts Dashboards: `chartConstructor` is an unchecked lookup into the Highcharts namespace",
-    "dateAdded": "2026-10-28",
-    "dueDate": "",
-    "cvss": 8.6,
-    "severity": "High",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "The Highcharts component uses the value of chartConstructor to select a function from the Highcharts namespace and invokes it with the component's container element and its chartOptions, without checking the value against the supported chart constructors.",
-    "requiredAction": "Upgrade @highcharts/dashboards to version 4.2.2 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-grj7-r4jv-pw9j"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118245"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-118247",
-    "slug": "cve-2026-118247",
-    "vendor": "npm",
-    "product": "@highcharts/dashboards",
-    "name": "Highcharts Dashboards / Grid Pro: `DataTable.setCell` and column writers treat `__proto__` as an existing column.",
-    "dateAdded": "2026-10-28",
-    "dueDate": "",
-    "cvss": 6.9,
+    "cvss": 6.5,
     "severity": "Medium",
-    "cwe": "CWE-1321",
+    "cwe": "CWE-770",
     "ransomware": false,
-    "description": "When a single cell value is written to a data table, the column id is used as a key on the table's column collection without filtering, so a column id of proto resolves to Object.prototype, is taken for an existing column, and the write lands at the row index on Object.prototype; a column id of constructor writes onto the Object constructor in the same way.",
-    "requiredAction": "Upgrade @highcharts/dashboards to version 4.2.2 or later.",
+    "description": "knative.dev/pkg's admission webhook handler reads the incoming HTTP request body via json.NewDecoder(io.TeeReader(r.Body, &bodyBuffer)) with no http.MaxBytesReader wrapping the body.",
+    "requiredAction": "Upgrade knative.dev/pkg to version 0.0.0-20260531000007-52dbd5ece63f or later.",
     "references": [
       {
         "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-c75x-9x9h-28rm"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118247"
+        "url": "https://github.com/advisories/GHSA-2hw4-c9m4-f2fj"
       }
     ],
     "source": "GITHUB"
   },
   {
-    "cve": "CVE-2026-118243",
-    "slug": "cve-2026-118243",
+    "cve": "GHSA-jf75-q64q-g65r",
+    "slug": "ghsa-jf75-q64q-g65r",
     "vendor": "npm",
-    "product": "@highcharts/dashboards",
-    "name": "Highcharts Dashboards: `__proto__` data table id writes sync listeners to `Object.prototype`",
+    "product": "@waline/vercel",
+    "name": "Waline login accepts a non-string email as a match-all MongoDB query",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-287",
+    "ransomware": false,
+    "description": "The login endpoint POST /api/token reads the email field from the request body without checking its type and passes it straight into the MongoDB storage query. When email is not a string (for example a JSON object such as {\"$ne\": null}), the MongoDB storage adapter's parseWhere silently DROPS the field rather than rejecting the request, producing an empty filter that matches ALL users.",
+    "requiredAction": "Upgrade @waline/vercel to version 1.41.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-jf75-q64q-g65r"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116583",
+    "slug": "cve-2026-116583",
+    "vendor": "npm",
+    "product": "seroval",
+    "name": "Seroval: Code injection through a typed array's own constructor property",
     "dateAdded": "2026-10-28",
     "dueDate": "",
     "cvss": 5.3,
     "severity": "Medium",
-    "cwe": "CWE-1321",
-    "ransomware": false,
-    "description": "The data cursor keeps its listener and state bookkeeping in plain objects keyed by data table id, so a table id of proto supplied in the dataPool connector configuration resolves to Object.prototype when a sync registers its listeners, and the registration creates a property on Object.prototype named after the sync state and holding the internal listener array.",
-    "requiredAction": "Upgrade @highcharts/dashboards to version 4.2.2 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-jqgh-w3cc-7jqw"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118243"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-118244",
-    "slug": "cve-2026-118244",
-    "vendor": "npm",
-    "product": "highcharts",
-    "name": "Highcharts Core: HTML text parsing falls back to unfiltered `innerHTML` during printing",
-    "dateAdded": "2026-10-28",
-    "dueDate": "",
-    "cvss": 7.2,
-    "severity": "High",
     "cwe": "CWE-79",
     "ransomware": false,
-    "description": "When the HTML text parser cannot obtain a document from DOMParser because the call throws, it falls back to assigning the raw markup to the innerHTML of an element created in the hosting document, and the allow-list is applied only to the resulting DOM afterwards.",
-    "requiredAction": "Upgrade highcharts to version 12.6.1 or later.",
+    "description": "seroval writes a typed array as a call to its constructor. In affected versions, the constructor name in the output is read from a property that data on the value can replace, and it is written without checks. A typed array that received properties from untrusted data can then put arbitrary code into the serialized output.",
+    "requiredAction": "Upgrade seroval to version 1.6.11 or later.",
     "references": [
       {
         "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-65hg-cf3f-5m39"
+        "url": "https://github.com/advisories/GHSA-f86p-h4j2-7qgj"
       },
       {
         "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118244"
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116583"
       }
     ],
     "source": "GITHUB"
   },
   {
-    "cve": "CVE-2026-116796",
-    "slug": "cve-2026-116796",
+    "cve": "CVE-2026-116582",
+    "slug": "cve-2026-116582",
     "vendor": "npm",
-    "product": "highcharts",
-    "name": "Highcharts Core: `javascript:` URL in an `xlink:href` attribute survives text filtering and reaches exported charts",
+    "product": "seroval",
+    "name": "Seroval: Script injection through RegExp sources in serialized output",
     "dateAdded": "2026-10-28",
     "dueDate": "",
-    "cvss": 7.2,
-    "severity": "High",
+    "cvss": 4.7,
+    "severity": "Medium",
     "cwe": "CWE-79",
     "ransomware": false,
-    "description": "The filter applied to markup in text options checks href, src and a few similar attributes against an allowed-scheme list, but accepts xlink:href without that check, so an SVG anchor whose xlink:href is a javascript: URL passes the filter, whether or not the option is rendered with useHTML.",
-    "requiredAction": "Upgrade highcharts to version 11.4.9 or later.",
+    "description": "seroval writes a RegExp as a regular expression literal. In affected versions, the < character in a RegExp source is written without escaping. A source built from untrusted input can then end the HTML <script> element that the serialized output is placed in, and run script in the page.",
+    "requiredAction": "Upgrade seroval to version 1.6.10 or later.",
     "references": [
       {
         "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-mw4f-gj5x-6xr4"
+        "url": "https://github.com/advisories/GHSA-9wx9-5pv9-3349"
       },
       {
         "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116796"
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116582"
       }
     ],
     "source": "GITHUB"
   },
   {
-    "cve": "CVE-2026-118650",
-    "slug": "cve-2026-118650",
-    "vendor": "Go",
-    "product": "echo (v5) · labstack",
-    "name": "Echo's middleware.Static: `%2F`-encoded path bypasses route/group middleware guarding a statically-served path",
+    "cve": "CVE-2026-116581",
+    "slug": "cve-2026-116581",
+    "vendor": "npm",
+    "product": "seroval",
+    "name": "Seroval: fromJSON deserializer trusts node-supplied array length and sequence doneAt (unauthenticated event-loop DoS)",
     "dateAdded": "2026-10-28",
     "dueDate": "",
     "cvss": 7.5,
     "severity": "High",
-    "cwe": "CWE-177",
+    "cwe": "CWE-835",
     "ransomware": false,
-    "description": "When middleware.Static is mounted globally (e.Use(middleware.Static(...))) and an application relies on a route- or group-level middleware guard to restrict a path that also falls under the served static root, a %2F-encoded request bypasses that guard while the file is still served.",
-    "requiredAction": "Upgrade echo (v5) · labstack to version 5.4.0 or later.",
+    "description": "fromJSON and fromCrossJSON used two node fields without checking them. - An array node's element list was not checked to be an array. A small payload could set the length the decoder looped over. This part is also tracked in GHSA-wp97-x4hv-qvhp. - A sequence node's done index was not checked. A crafted value produced an iterator that never finished.",
+    "requiredAction": "Upgrade seroval to version 1.6.8 or later.",
     "references": [
       {
         "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-375p-5qhx-8wq4"
+        "url": "https://github.com/advisories/GHSA-97r2-qh9m-474h"
       },
       {
         "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118650"
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116581"
       }
     ],
     "source": "GITHUB"
   },
   {
-    "cve": "CVE-2026-118652",
-    "slug": "cve-2026-118652",
+    "cve": "CVE-2026-116584",
+    "slug": "cve-2026-116584",
+    "vendor": "npm",
+    "product": "seroval",
+    "name": "Seroval `fromJSON`/`fromCrossJSON` denial of service via unvalidated array node length",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-770",
+    "ransomware": false,
+    "description": "fromJSON and fromCrossJSON did not check that an array node's element list is an array. A small crafted payload could set the length the decoder used. That length controlled how much memory was allocated and how many times the decoder looped, and it did not depend on the size of the payload.",
+    "requiredAction": "Upgrade seroval to version 1.6.8 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-wp97-x4hv-qvhp"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116584"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116580",
+    "slug": "cve-2026-116580",
+    "vendor": "npm",
+    "product": "seroval",
+    "name": "Seroval: Deserialization invokes attacker-chosen callables: AsyncIteratorFactoryInstance calls source.on(listener) without type check",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 7.3,
+    "severity": "High",
+    "cwe": "CWE-502",
+    "ransomware": false,
+    "description": "When fromJSON rebuilt an async iterator, it called on() on the iterator's source without checking that the source was a seroval stream. A crafted payload could pick another value as the source, such as a function returned by an application plugin. The deserializer then called that value's on method. This is a variant of GHSA-mv8w-475r-vwqw.",
+    "requiredAction": "Upgrade seroval to version 1.6.8 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-7rv5-mrxv-xcr9"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116580"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116575",
+    "slug": "cve-2026-116575",
+    "vendor": "Pip",
+    "product": "mem0ai",
+    "name": "Mem0: Cross-tenant conversation leak via unescaped delimiter collision in session-scope key (_build_session_scope)",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 6.3,
+    "severity": "Medium",
+    "cwe": "CWE-200",
+    "ransomware": false,
+    "description": "Summary _build_session_scope() in mem0/memory/main.py builds the conversation-history scope key used to fetch/store the last N raw messages by naively joining caller-supplied user_id/agent_id/run_id values with unescaped & and = delimiters: def _build_session_scope(filters): parts = [] for key in sorted([\"user_id\", \"agent_id\", \"run_id\"]): val = filters.get(key) if val:...",
+    "requiredAction": "Upgrade mem0ai to version 2.0.18 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-5324-3w58-qpp2"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116575"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-115910",
+    "slug": "cve-2026-115910",
+    "vendor": "Pip",
+    "product": "social-auth-core",
+    "name": "Python Social Auth: OpenID Connect nonce is not bound to the browser session, so a stolen authorization code logs the attacker in as the victim",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 6.8,
+    "severity": "Medium",
+    "cwe": "CWE-345",
+    "ransomware": false,
+    "description": "The generic OpenID Connect backend (OpenIdConnectAuth and every backend built on it) stores the nonce in the shared Association table, not in the user's session. When the ID token comes back, validate_claims only checks that the nonce exists in that table and is not expired. It does not check that the nonce was issued to the browser that is finishing the login. So the nonce does not do its job.",
+    "requiredAction": "Upgrade social-auth-core to version 6.2.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-h2r5-x5m7-3935"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115910"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-115920",
+    "slug": "cve-2026-115920",
+    "vendor": "Pip",
+    "product": "onnx",
+    "name": "ONNX: Out-of-bounds read in ConvTranspose shape inference via undersized weight rank",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 6.2,
+    "severity": "Medium",
+    "cwe": "CWE-125",
+    "ransomware": false,
+    "description": "ONNX ConvTranspose shape inference performed an out-of-bounds read when the weight tensor had fewer than three dimensions and the model did not provide a kernel_shape attribute. The inference function derived an empty effective_kernel_shape vector from the undersized weight tensor, then indexed that vector once for each spatial dimension of the input tensor.",
+    "requiredAction": "Upgrade onnx to version 1.22.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-6pwm-x34p-fvj2"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115920"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-115922",
+    "slug": "cve-2026-115922",
+    "vendor": "Pip",
+    "product": "onnx",
+    "name": "ONNX: Denial of service via unchecked expansion of packed sub-byte tensors in ONNX Python APIs",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 6.2,
+    "severity": "Medium",
+    "cwe": "CWE-789",
+    "ransomware": false,
+    "description": "ONNX's Python tensor-materialization helpers could allocate memory according to attacker-controlled tensor dimensions without verifying that a packed sub-byte payload contained the declared number of elements.",
+    "requiredAction": "Upgrade onnx to version 1.22.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-q69g-f4f5-v8m7"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115922"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-115921",
+    "slug": "cve-2026-115921",
+    "vendor": "Pip",
+    "product": "onnx",
+    "name": "ONNX: Null Pointer Dereference in ScanInferenceFunction Due to Missing Required Attribute",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 6.2,
+    "severity": "Medium",
+    "cwe": "CWE-195",
+    "ransomware": false,
+    "description": "ONNX shape inference did not safely validate the required Scan num_scan_inputs attribute. Two malformed values could terminate or disrupt the process: 1. If the attribute was missing, ctx.getAttribute(\"num_scan_inputs\") returned null and was dereferenced. 2.",
+    "requiredAction": "Upgrade onnx to version 1.22.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-m4pr-6v3c-6fgr"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115921"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-115919",
+    "slug": "cve-2026-115919",
+    "vendor": "Pip",
+    "product": "onnx",
+    "name": "ONNX: Out-of-Bounds Read in RNN/GRU/LSTM Shape Inference (Old Opsets, Missing Rank Check)",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 6.2,
+    "severity": "Medium",
+    "cwe": "CWE-125",
+    "ransomware": false,
+    "description": "ONNX shape inference performed an out-of-bounds read when processing a malformed RNN, GRU, or LSTM node from opsets 1–6 whose first input had a rank other than three. RNNShapeInference_opset1_to_6() checked whether the input shape was present but accessed dim(0) and dim(1) without first checking its rank.",
+    "requiredAction": "Upgrade onnx to version 1.22.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-48m4-24cq-37qf"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115919"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-115917",
+    "slug": "cve-2026-115917",
+    "vendor": "Pip",
+    "product": "vllm",
+    "name": "vLLM: Permissive default CORS origins allow cross-origin requests to the vLLM HTTP server",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 3.4,
+    "severity": "Low",
+    "cwe": "CWE-942",
+    "ransomware": false,
+    "description": "The OpenAI-compatible server registers Starlette CORSMiddleware with allowed_origins defaulting to [\"*\"], and performs no authentication unless --api-key (or VLLM_API_KEY) is configured. A web page on any origin can send requests to a vLLM server that the victim's browser can reach (for example localhost or an internal/VPN address) and read the responses.",
+    "requiredAction": "Upgrade vllm to version 0.32.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-vvpg-rrww-wpmh"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115917"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-115913",
+    "slug": "cve-2026-115913",
+    "vendor": "Pip",
+    "product": "vllm",
+    "name": "vLLM: Phi-4 multimodal audio encoder materializes and retains full attention matrices: a single max-length audio OOM-crashes the vLLM engine",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-770",
+    "ransomware": false,
+    "description": "The Phi-4 multimodal audio encoder (phi4mm_audio.py / phi4mm_utils.py) runs its conformer attention in eager mode by default: the official HF config of microsoft/Phi-4-multimodal-instruct does not set use_pt_scaled_dot_product_attention, so the default False applies (phi4mm_audio.py:166, :876; phi4mm_utils.py:1669).",
+    "requiredAction": "Upgrade vllm to version 0.32.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-8397-8qf6-f2gm"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115913"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-115914",
+    "slug": "cve-2026-115914",
+    "vendor": "Pip",
+    "product": "vllm",
+    "name": "vLLM DeepSeek-OCR image processing vulnerable to denial of service",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-617",
+    "ransomware": false,
+    "description": "Any vLLM deployment serving a model of the DeepSeek-OCR family — deepseek-ai/DeepSeek-OCR, deepseek-ai/DeepSeek-OCR-2, or baidu/Unlimited-OCR (whose UnlimitedOCRForCausalLM subclasses DeepseekOCRForCausalLM) — can be killed by a single unauthenticated chat request carrying an ordinary, schema-valid PNG image, under completely default server configuration.",
+    "requiredAction": "Upgrade vllm to version 0.32.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-gq5q-89c7-vhvx"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115914"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-115915",
+    "slug": "cve-2026-115915",
+    "vendor": "Pip",
+    "product": "vllm",
+    "name": "vLLM: Untrusted EPS inputs can trigger denial of service or Ghostscript RCE",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 8.1,
+    "severity": "High",
+    "cwe": "CWE-20",
+    "ransomware": false,
+    "description": "In vLLM 0.30.0, ImageMediaIO passes attacker-controlled image bytes to Pillow's format autodetection without restricting the accepted formats; the request's MIME label does not constrain decoder selection. An EPS payload labeled image/png reached the host's Ghostscript executable.",
+    "requiredAction": "Upgrade vllm to version 0.32.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-h3rc-j82p-2c3h"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115915"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-115912",
+    "slug": "cve-2026-115912",
+    "vendor": "Pip",
+    "product": "vllm",
+    "name": "vLLM: Public multimodal SHM handle forgery reaches worker-side `pickle.loads()` with insecure serialization disabled",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-502",
+    "ransomware": false,
+    "description": "When --mm-processor-cache-type shm is enabled, vLLM's multimodal SHM cache represents a cached item with an address and monotonic_id pair and treats that pair as authority to dereference shared memory in the worker.",
+    "requiredAction": "Upgrade vllm to version 0.32.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-6757-hggm-hp2w"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115912"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-115916",
+    "slug": "cve-2026-115916",
+    "vendor": "Pip",
+    "product": "vllm",
+    "name": "vLLM: Out-of-vocabulary prompt token id passes input validation and triggers a CUDA device-side assert (engine crash / DoS)",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-129",
+    "ransomware": false,
+    "description": "For a model whose vocabulary size is an exact multiple of the embedding padding size (64) — e.g. any Llama-2-family model, vocab 32000 — a single request carrying a pre-tokenized prompt with token id equal to the vocab size (32000) passes vLLM's input-id validation but is one past the last embedding row.",
+    "requiredAction": "Upgrade vllm to version 0.32.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-q97c-p368-75c4"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115916"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-115918",
+    "slug": "cve-2026-115918",
+    "vendor": "Pip",
+    "product": "vllm",
+    "name": "vLLM: Responses API bypasses trust_request_chat_template for chat_template_kwargs",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "vLLM's /v1/responses endpoint accepts request-level chat_template_kwargs, but does not apply the --trust-request-chat-template gate that protects Chat Completions, render, tokenize, and pooling paths.",
+    "requiredAction": "Upgrade vllm to version 0.32.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-x567-49g5-p4cf"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115918"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-115911",
+    "slug": "cve-2026-115911",
+    "vendor": "Pip",
+    "product": "vllm",
+    "name": "vLLM: DoS via unbounded chat_template Jinja2 rendering exhausts the renderer thread pool",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "vLLM renders chat templates by passing the resolved Jinja2 source to tokenizer.apply_chat_template(), which compiles and .render()s it in an ImmutableSandboxedEnvironment. The sandbox prevents code-execution escapes but imposes no wall-clock timeout, no output-size cap, and no nested-loop or binop limit.",
+    "requiredAction": "Upgrade vllm to version 0.32.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-542m-9234-8gvf"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115911"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-115893",
+    "slug": "cve-2026-115893",
+    "vendor": "Rust (Cargo)",
+    "product": "wasmtime",
+    "name": "Wasmtime: Cranelift backend on aarch64 can jump to incorrect target on large Wasm `br_table` instruction",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 9.9,
+    "severity": "Critical",
+    "cwe": "CWE-691",
+    "ransomware": false,
+    "description": "When running with the Cranelift compiler backend on an aarch64 target, Wasmtime can compile a Wasm module with more than ~256k targets on one br_table instruction in a way that results in an incorrect conditional branch target. This conditional branch could then jump to arbitrary other code (at an user-controlled offset), leading to arbitrary sandbox escapes.",
+    "requiredAction": "Upgrade wasmtime to version 36.0.19 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-mghf-wjfp-p5xm"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115893"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116586",
+    "slug": "cve-2026-116586",
     "vendor": "Go",
-    "product": "echo (v5) · labstack",
-    "name": "Echo vulnerable to Reflected Cross-Site Scripting (XSS) via unsanitized JSONP callback in Context.JSONP / Context.JSONPBlob",
+    "product": "go-jose (v4) · go-jose",
+    "name": "Go JOSE: Panics in JSON parsing",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 6.9,
+    "severity": "Medium",
+    "cwe": "CWE-674",
+    "ransomware": false,
+    "description": "Parsing deeply nested JSON structures can hit Go's stack limit, causing the application to crash. Note: this advisory is the same as",
+    "requiredAction": "Upgrade go-jose (v4) · go-jose to version 4.1.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-vvm8-gf78-28g4"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116586"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116585",
+    "slug": "cve-2026-116585",
+    "vendor": "Go",
+    "product": "go-jose (v4) · go-jose",
+    "name": "Go JOSE: Panic during CBC-HMAC processing",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 6.9,
+    "severity": "Medium",
+    "cwe": "CWE-129",
+    "ransomware": false,
+    "description": "Decrypting a ciphertext with \"A128CBC-HS256\", \"A192CBC-HS384\", or \"A256CBC-HS512\" can result in a panic on untrusted input. Note this advisory is the same as",
+    "requiredAction": "Upgrade go-jose (v4) · go-jose to version 4.1.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-4w3g-jfj2-cw2q"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116585"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116673",
+    "slug": "cve-2026-116673",
+    "vendor": "npm",
+    "product": "systeminformation",
+    "name": "systeminformation has path traversal in Linux networkStats() that allows symlink-based file disclosure outside /sys/class/net",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 3.3,
+    "severity": "Low",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "On Linux, systeminformation@5.33.13 builds /sys/class/net/<iface> paths from the caller-supplied networkStats(iface) value without checking that the resolved path stays inside /sys/class/net. A caller who can create a symlink fixture and control the value passed to this API can make the function return the first line of a file readable by the Node process.",
+    "requiredAction": "Upgrade systeminformation to version 5.33.14 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-4vjg-vx72-qq4g"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116673"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116674",
+    "slug": "cve-2026-116674",
+    "vendor": "npm",
+    "product": "systeminformation",
+    "name": "systeminformation has prototype pollution in `networkStats()` via the interface name",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-1321",
+    "ransomware": false,
+    "description": "networkStats() keeps a per interface cache for computing rx_sec / tx_sec between calls. The cache is a plain JavaScript object and is indexed with the interface name the caller supplied. Passing the name proto makes every cache write land on Object.prototype instead of the cache, polluting every object in the Node.js process.",
+    "requiredAction": "Upgrade systeminformation to version 5.33.13 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-7648-jmwf-vw7j"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116674"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-115885",
+    "slug": "cve-2026-115885",
+    "vendor": "Pip",
+    "product": "langgraph-cli",
+    "name": "LangGraph CLI prints the registry push token in `langgraph deploy --verbose` output",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 4.1,
+    "severity": "Medium",
+    "cwe": "CWE-532",
+    "ransomware": false,
+    "description": "langgraph deploy --verbose printed the temporary registry push token that the CLI uses to log Docker in to the deployment's image registry. Anyone who could read that output, for example in CI logs, could use the token until it expired.",
+    "requiredAction": "Upgrade langgraph-cli to version 0.4.32 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-8prr-f582-jqq3"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115885"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-115887",
+    "slug": "cve-2026-115887",
+    "vendor": "npm",
+    "product": "graphql-scalars",
+    "name": "graphql-scalars PhoneNumber scalar is vulnerable to regular expression denial of service",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-1333",
+    "ransomware": false,
+    "description": "The regular expression behind GraphQLPhoneNumber since 1.24.1 backtracks exponentially. A string made of a run of digits followed by one character that makes the match fail (for example \"1\".repeat(30) + \"x\") blocks the JavaScript thread for seconds, and every additional digit doubles the time.",
+    "requiredAction": "Upgrade graphql-scalars to version 2.0.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-x8rm-f576-gq67"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115887"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116579",
+    "slug": "cve-2026-116579",
+    "vendor": "Pip",
+    "product": "autobahn",
+    "name": "Autobahn Python: permessage-brotli inflates a whole frame before maxMessagePayloadSize is checked (incomplete fix of GHSA-hxp9-w8x3-p566)",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 5.9,
+    "severity": "Medium",
+    "cwe": "CWE-409",
+    "ransomware": false,
+    "description": "permessage-brotli inflates each frame fully before checking maxMessagePayloadSize, so one 421-byte frame makes the server allocate about 545 MiB even with a 1 MiB message limit (brotli expands about 1,000,000:1). Any unauthenticated client can exhaust server memory this way on servers that enable permessage-brotli. This bypasses the GHSA-hxp9-w8x3-p566 fix.",
+    "requiredAction": "Upgrade autobahn to version 26.10.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-pjh6-c8mg-3x7m"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116579"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118258",
+    "slug": "cve-2026-118258",
+    "vendor": "npm",
+    "product": "i18next-http-backend",
+    "name": "i18next-http-backend: Query-parameter injection through & and = in lng when loadPath/addPath puts {{lng}} in the query string",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 3.7,
+    "severity": "Low",
+    "cwe": "CWE-74",
+    "ransomware": false,
+    "description": "The URL-segment check added for GHSA-q89c-q3h5-w34g blocks ?, #, %, :, / and @ in lng, but not & or =, and the checked value is inserted into the URL without encoding. The README documents a multiload loadPath of the form /locales/resources.json?lng=de+en&ns=ns1+ns2.",
+    "requiredAction": "Upgrade i18next-http-backend to version 4.0.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-3cmx-xjww-583x"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118258"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116795",
+    "slug": "cve-2026-116795",
+    "vendor": "npm",
+    "product": "re2js",
+    "name": "RE2JS: Quadratic-time denial of service in re2js lookbehind matching",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-407",
+    "ransomware": false,
+    "description": "Using the opt-in LOOKBEHINDS flag together with any repeated-matching API (matcher().find() in a loop, matchAll(), split(), matcher().replaceAll()) causes quadratic-time (Θ(n²)) matching, contradicting the library's own \"linear time matching\" guarantee. A single call with a 16,000-character input takes 36.7–38.7 seconds of CPU.",
+    "requiredAction": "Upgrade re2js to version 2.8.7 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-gg6h-894w-4m9c"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116795"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-115905",
+    "slug": "cve-2026-115905",
+    "vendor": "Rust (Cargo)",
+    "product": "zip",
+    "name": "zip: Critical Parser Differential & Security Control Bypass via Dual-Header Inconsistencies (Zip Cloaking) Leading to Arbitrary File Overwrite & RCE",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 10,
+    "severity": "Critical",
+    "cwe": "CWE-20",
+    "ransomware": false,
+    "description": "A critical architectural parser differential exists in the zip crate (<= 9.0.4) between random-access archive readers (ZipArchive) and streaming readers (ZipStreamReader). ZipArchive considers the Central Directory File Header (CDFH) authoritative and ignores the filename declared in the Local File Header (LFH).",
+    "requiredAction": "Upgrade zip to version 9.0.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-m665-v7pm-7grj"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115905"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118668",
+    "slug": "cve-2026-118668",
+    "vendor": "Pip",
+    "product": "langgraph-api",
+    "name": "LangGraph JavaScript custom authentication may permit cross-user Store access",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 8.6,
+    "severity": "High",
+    "cwe": "CWE-639",
+    "ransomware": false,
+    "description": "LangGraph deployments using JavaScript or TypeScript custom authentication may fail to apply Store authorization changes returned by an authorization handler. In affected deployments, an authenticated user may be able to access Store data outside their authorized namespace.",
+    "requiredAction": "Upgrade langgraph-api to version 0.15.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-4hm6-w6qq-w73v"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118668"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-112941",
+    "slug": "cve-2026-112941",
+    "vendor": "Pip",
+    "product": "filelock",
+    "name": "filelock: SoftReadWriteLock follows a lock tree swapped in after its first acquire and writes lock records into directories of the user running the lock",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 3.3,
+    "severity": "Low",
+    "cwe": "CWE-367",
+    "ransomware": false,
+    "description": "SoftReadWriteLock (and AsyncSoftReadWriteLock, which wraps one) checks once per lock object, by name, that <path>.rw, <path>.rw/gen and <path>.rw/holders are real directories and not symbolic links (files that redirect to another path). It then keeps only a boolean.",
+    "requiredAction": "Upgrade filelock to version 4.2.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-wfhq-q4j2-c37m"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112941"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-112908",
+    "slug": "cve-2026-112908",
+    "vendor": "Pip",
+    "product": "filelock",
+    "name": "filelock: StrictSoftFileLock creates its claim directories without the lock mode, so another local user with a write bit on them can end a live hold",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-732",
+    "ransomware": false,
+    "description": "StrictSoftFileLock and AsyncStrictSoftFileLock apply the caller's mode to the sentinel (the lock file at <path>) and to both claim files (the files whose presence says a process wants or holds the lock). They create the two directories that hold the claims, <path>.filelock and <path>.filelock/claims, with a bare mkdir().",
+    "requiredAction": "Upgrade filelock to version 4.2.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-6627-m3xw-93mp"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112908"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-112911",
+    "slug": "cve-2026-112911",
+    "vendor": "Pip",
+    "product": "filelock",
+    "name": "filelock: StrictSoftFileLock and SoftReadWriteLock adopt a protocol directory another user created first, losing mutual exclusion",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 6.3,
+    "severity": "Medium",
+    "cwe": "CWE-283",
+    "ransomware": false,
+    "description": "StrictSoftFileLock, AsyncStrictSoftFileLock, SoftReadWriteLock and AsyncSoftReadWriteLock keep their whole ownership state as files in a directory derived from the lock path (<path>.filelock/claims, <path>.rw/{gen,holders}). When that directory already exists they adopt it after checking only that it is a real directory, not who owns it.",
+    "requiredAction": "Upgrade filelock to version 4.2.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-9c4x-gm8v-wgc4"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112911"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-112910",
+    "slug": "cve-2026-112910",
+    "vendor": "Pip",
+    "product": "filelock",
+    "name": "filelock: WindowsFileLock ignores mode: a 0o600 lock file and the ReadWriteLock database inherit the directory ACL",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-732",
+    "ransomware": false,
+    "description": "filelock on Windows ignores the mode argument. FileLock(path, mode=0o600) creates the same file as FileLock(path): one with no security descriptor of its own (the Windows record that says who may access a file). Its access list, or ACL, is whatever the lock directory hands down to new files. filelock creates the ReadWriteLock database, which it asks to be 0o600, the same way.",
+    "requiredAction": "Upgrade filelock to version 4.2.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-8mx5-7m5m-r77g"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112910"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-112915",
+    "slug": "cve-2026-112915",
+    "vendor": "Pip",
+    "product": "filelock",
+    "name": "filelock ReadWriteLock: a crafted lock database makes every acquire stall or hang regardless of timeout",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 5.5,
+    "severity": "Medium",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "ReadWriteLock and AsyncReadWriteLock (the SQLite-backed reader/writer lock) run PRAGMA journal_mode=MEMORY on a fresh connection for every acquire. That statement makes SQLite load the whole schema (the sqlite_master table, which lists every table and index with its CREATE text) of whatever file sits at the lock path.",
+    "requiredAction": "Upgrade filelock to version 4.2.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-cwqr-hh33-gh44"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112915"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-112939",
+    "slug": "cve-2026-112939",
+    "vendor": "Pip",
+    "product": "filelock",
+    "name": "filelock: SoftFileLock removes a live holder's marker when another user forges the PID in a writable marker",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 4.7,
+    "severity": "Medium",
+    "cwe": "CWE-345",
+    "ransomware": false,
+    "description": "SoftFileLock, MarkerSoftFileLock, SoftFileLease, their async variants and a FileLock that has fallen back to a soft lock on ENOSYS decide from the record inside the marker file whether its owner is gone. The marker is the file whose presence says a process holds the lock. They do not check who could have written that record.",
+    "requiredAction": "Upgrade filelock to version 4.2.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-rfpc-qcw5-3pc4"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112939"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-112912",
+    "slug": "cve-2026-112912",
+    "vendor": "Pip",
+    "product": "filelock",
+    "name": "filelock: Symlink swap during SoftFileLock's writability check leaks whether a path exists and is writable by the lock taker",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 2.5,
+    "severity": "Low",
+    "cwe": "CWE-59",
+    "ransomware": false,
+    "description": "raise_on_not_writable_file() is the check that SoftFileLock and the locks sharing its acquire path run before every attempt. It looks at the lock path with os.lstat, so that it judges a planted symlink (a file that points at another path) by itself. When the node has no owner-write bit, it then calls os.access(filename, os.W_OK), which follows symlinks.",
+    "requiredAction": "Upgrade filelock to version 4.2.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-9j6q-wvj5-jgjg"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112912"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-112909",
+    "slug": "cve-2026-112909",
+    "vendor": "Pip",
+    "product": "filelock",
+    "name": "filelock: UnixFileLock truncates and chmods any regular file another user renames or hard-links onto the lock path",
     "dateAdded": "2026-10-28",
     "dueDate": "",
     "cvss": 6.1,
     "severity": "Medium",
-    "cwe": "CWE-79",
+    "cwe": "CWE-706",
     "ransomware": false,
-    "description": "The Context.JSONP, Context.JSONPBlob, and internal jsonPBlob helper in context.go directly concatenate the caller-supplied callback parameter into a JavaScript response without any validation, escaping, or allow-listing. This creates a high-impact reflected XSS that can be triggered by any route passing attacker-controlled data (query string, form, header, path param, etc.) into the callback.",
-    "requiredAction": "Upgrade echo (v5) · labstack to version 5.4.0 or later.",
+    "description": "UnixFileLock, the backend of FileLock and AsyncFileLock on Unix, empties whatever regular file it finds at the lock path once it holds the flock (a kernel lock on an open file). With an explicit mode it also chmods that file (sets its permission bits), whether or not this acquire created it.",
+    "requiredAction": "Upgrade filelock to version 4.2.1 or later.",
     "references": [
       {
         "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-h9g5-28mm-hx3g"
+        "url": "https://github.com/advisories/GHSA-69hj-f68j-2879"
       },
       {
         "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118652"
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112909"
       }
     ],
     "source": "GITHUB"
   },
   {
-    "cve": "CVE-2026-118653",
-    "slug": "cve-2026-118653",
-    "vendor": "Go",
-    "product": "echo (v5) · labstack",
-    "name": "Echo has Rate Limiter Bypass via Spoofed X-Forwarded-For Header in Default Configuration",
+    "cve": "CVE-2026-112936",
+    "slug": "cve-2026-112936",
+    "vendor": "Pip",
+    "product": "filelock",
+    "name": "filelock: ReadWriteLock follows a symlink at the lock path into SQLite",
     "dateAdded": "2026-10-28",
     "dueDate": "",
-    "cvss": 5.3,
+    "cvss": 6.1,
     "severity": "Medium",
-    "cwe": "CWE-290",
+    "cwe": "CWE-59",
     "ransomware": false,
-    "description": "When echo.New() is used without explicitly setting Echo#IPExtractor, the RealIP() method falls back to reading the client-supplied X-Forwarded-For (or X-Real-IP) header without any proxy-origin validation.",
-    "requiredAction": "Upgrade echo (v5) · labstack to version 5.1.0 or later.",
+    "description": "ReadWriteLock and AsyncReadWriteLock resolve the lock path with pathlib.Path.resolve() and pass it to sqlite3.connect() without refusing a symlink.",
+    "requiredAction": "Upgrade filelock to version 4.0.9 or later.",
     "references": [
       {
         "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-246p-cpwv-v3jq"
+        "url": "https://github.com/advisories/GHSA-j8f7-rjxc-mr56"
       },
       {
         "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118653"
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112936"
       }
     ],
     "source": "GITHUB"
   },
   {
-    "cve": "CVE-2026-118266",
-    "slug": "cve-2026-118266",
-    "vendor": "Go",
-    "product": "echo (v5) · labstack",
-    "name": "Echo has CSRF Protection Bypass via MethodOverride Rewriting POST to Safe Method",
+    "cve": "CVE-2026-112938",
+    "slug": "cve-2026-112938",
+    "vendor": "Pip",
+    "product": "filelock",
+    "name": "filelock: StrictSoftFileLock follows a symbolic link swapped in at <path>.filelock and creates claim files in a directory another local user chooses",
     "dateAdded": "2026-10-28",
     "dueDate": "",
-    "cvss": 5.3,
+    "cvss": 5.8,
     "severity": "Medium",
-    "cwe": "CWE-352",
+    "cwe": "CWE-363",
     "ransomware": false,
-    "description": "The MethodOverride middleware accepts any non-empty string as the override target method — including safe methods (GET, HEAD, OPTIONS, TRACE) — when rewriting a POST request. When MethodOverride is registered before CSRF in the post-routing middleware chain (e.Use()), it rewrites the request method to a safe method before CSRF evaluates it.",
-    "requiredAction": "Upgrade echo (v5) · labstack to version 5.4.0 or later.",
+    "description": "StrictSoftFileLock and AsyncStrictSoftFileLock check <path>.filelock (the coordination directory that holds the lock's state) with one lstat call on its name. lstat reports what a name is without following a symbolic link (a file that redirects to another path). After that check, the code reaches <path>.filelock/claims by pathname for every later operation (mkdir, scan, publish, link, unlink).",
+    "requiredAction": "Upgrade filelock to version 4.2.1 or later.",
     "references": [
       {
         "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-r7w9-592q-9vg4"
+        "url": "https://github.com/advisories/GHSA-m462-7rxw-wvpg"
       },
       {
         "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118266"
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112938"
       }
     ],
     "source": "GITHUB"
   },
   {
-    "cve": "CVE-2026-118651",
-    "slug": "cve-2026-118651",
-    "vendor": "Go",
-    "product": "echo (v5) · labstack",
-    "name": "Echo: Reverse Proxy Forwards Attacker-Supplied X-Real-IP to Upstream by Default",
+    "cve": "CVE-2026-112934",
+    "slug": "cve-2026-112934",
+    "vendor": "Pip",
+    "product": "filelock",
+    "name": "filelock: SoftReadWriteLock holder refresh writes through a hard link and hangs on a named pipe that another local user renames over its record",
     "dateAdded": "2026-10-28",
     "dueDate": "",
-    "cvss": 5.3,
+    "cvss": 6.1,
     "severity": "Medium",
-    "cwe": "CWE-346",
+    "cwe": "CWE-62",
     "ransomware": false,
-    "description": "The Echo proxy middleware (middleware/proxy.go) preserves an incoming X-Real-IP header verbatim and forwards it to the upstream service when Echo#IPExtractor is not configured — which is the default.",
-    "requiredAction": "Upgrade echo (v5) · labstack to version 5.4.0 or later.",
+    "description": "SoftReadWriteLock (and AsyncSoftReadWriteLock, which wraps one) refreshes its holder record (the file under <path>.rw/holders/ that says a process holds or wants the lock) on every poll of a waiting acquire and on every heartbeat (the periodic refresh a holder runs to keep its record fresh).",
+    "requiredAction": "Upgrade filelock to version 4.2.1 or later.",
     "references": [
       {
         "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-99jh-6h7p-pp36"
+        "url": "https://github.com/advisories/GHSA-fj95-fr6c-h845"
       },
       {
         "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118651"
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112934"
       }
     ],
     "source": "GITHUB"
   },
   {
-    "cve": "GHSA-4mfg-r38w-w8fg",
-    "slug": "ghsa-4mfg-r38w-w8fg",
+    "cve": "CVE-2026-112935",
+    "slug": "cve-2026-112935",
+    "vendor": "Pip",
+    "product": "filelock",
+    "name": "filelock: SoftFileLock stale-lock break removes a live lock file on a reused inode number and admits two holders",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 4.7,
+    "severity": "Medium",
+    "cwe": "CWE-367",
+    "ransomware": false,
+    "description": "The stale-lock break shared by SoftFileLock, MarkerSoftFileLock and SoftFileLease (and their async variants, and a FileLock that has fallen back to a soft lock on ENOSYS, the \"not implemented\" error) recognises the marker it judged stale by two values. The marker is the lock file at <path>, whose presence says a process holds the lock.",
+    "requiredAction": "Upgrade filelock to version 4.2.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-fq56-3cx3-fjxp"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112935"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-115730",
+    "slug": "cve-2026-115730",
     "vendor": "npm",
-    "product": "mcp-sanitizer",
-    "name": "mcp-sanitizer: URL sanitizer allows localhost/IPv6 loopback SSRF bypass via explicit port or bracketed IPv6",
+    "product": "i18next-http-backend",
+    "name": "i18next-http-backend: Namespace value starting with / forms a protocol-relative URL when loadPath/addPath places {{ns}} right after a / (bypass of the // check added for GHSA-xvq9-wjp8-hwqf)",
     "dateAdded": "2026-10-28",
     "dueDate": "",
-    "cvss": 8.2,
+    "cvss": 3.1,
+    "severity": "Low",
+    "cwe": "CWE-74",
+    "ransomware": false,
+    "description": "Verified on 4.0.2 (latest on npm) and on commit 07e0288 (the GHSA-xvq9-wjp8-hwqf fix). Earlier 3.x/4.x versions that allow / in ns are likely affected too. Not verified on them. Same class as GHSA-xvq9-wjp8-hwqf and GHSA-q89c-q3h5-w34g: when an attacker controls the namespace value, the request goes to an attacker-chosen origin.",
+    "requiredAction": "Upgrade i18next-http-backend to version 4.0.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-9jhj-wvmw-cfx5"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115730"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118259",
+    "slug": "cve-2026-118259",
+    "vendor": "Java (Maven)",
+    "product": "io.opentelemetry:opentelemetry-api",
+    "name": "opentelemetry-java: Quadratic CPU consumption in W3C tracestate parsing",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-1333",
+    "ransomware": false,
+    "description": "OpenTelemetry Java's W3C trace-context propagator permits excessive CPU consumption when extracting crafted tracestate headers, potentially leading to denial of service. Regex backtracking causes quadratic parsing time for headers containing long runs of spaces or tabs without a following comma.",
+    "requiredAction": "Upgrade io.opentelemetry:opentelemetry-api to version 1.67.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-ccrj-gw8r-854m"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118259"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118660",
+    "slug": "cve-2026-118660",
+    "vendor": "npm",
+    "product": "happy-dom",
+    "name": "Happy DOM: SSRF via iframe and link stylesheet when parsing untrusted HTML",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 8.6,
     "severity": "High",
     "cwe": "CWE-918",
     "ransomware": false,
-    "description": "mcp-sanitizer v1.3.3 fails to block Server-Side Request Forgery (SSRF) targets when a localhost URL includes an explicit port (e.g., or when an IPv6 loopback/link-local address is expressed in bracketed notation (e.g., Because the library is explicitly designed to gate MCP tool parameters such as web_fetch and web_scraper` before outbound HTTP requests are made, a bypass here directly enables an...",
-    "requiredAction": "Upgrade mcp-sanitizer to version 1.4.0 or later.",
+    "description": "happy-dom v20.8.9 makes real server-side HTTP requests to arbitrary URLs when parsing HTML containing <iframe> or <link rel=\"stylesheet\"> elements. This behavior is enabled by default (disableIframePageLoading: false, disableCSSFileLoading: false).",
+    "requiredAction": "Upgrade happy-dom to version 21.0.0 or later.",
     "references": [
       {
         "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-4mfg-r38w-w8fg"
+        "url": "https://github.com/advisories/GHSA-c8p4-j97h-3vg8"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118660"
       }
     ],
     "source": "GITHUB"
   },
   {
-    "cve": "GHSA-7w82-6f9j-v9jp",
-    "slug": "ghsa-7w82-6f9j-v9jp",
+    "cve": "CVE-2026-118256",
+    "slug": "cve-2026-118256",
     "vendor": "npm",
-    "product": "mcp-sanitizer",
-    "name": "mcp-sanitizer: File Path Sanitizer Permits Arbitrary User-Home Absolute Paths",
+    "product": "vue-i18n",
+    "name": "Vue I18n: `escapeParameter` does not escape named values when the same call also passes a list",
     "dateAdded": "2026-10-28",
     "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-22",
-    "ransomware": false,
-    "description": "mcp-sanitizer v1.3.3 explicitly whitelists /home/ and /Users/ as allowed absolute path prefixes in its file path validation logic (src/utils/validation-utils.js:188-196). As a result, paths such as /home/alice/.ssh/id_rsa and /home/alice/.aws/credentials pass through sanitizer.sanitize() with blocked=false, even though they point to highly sensitive files outside any configured safe root.",
-    "requiredAction": "Upgrade mcp-sanitizer to version 1.4.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-7w82-6f9j-v9jp"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-58273",
-    "slug": "cve-2026-58273",
-    "vendor": "Pip",
-    "product": "rucio",
-    "name": "rucio has an Authorization Bypass on REST API endpoint for signing URLs",
-    "dateAdded": "2026-10-28",
-    "dueDate": "",
-    "cvss": 8.8,
-    "severity": "High",
-    "cwe": "CWE-639",
-    "ransomware": false,
-    "description": "The /credentials/signurl endpoint decides authorization from the client-supplied X-Rucio-Account HTTP header instead of the authenticated token's account.",
-    "requiredAction": "Upgrade rucio to version 35.9.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-5j9r-fx4x-rpvg"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58273"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-473q-m89c-ghf8",
-    "slug": "ghsa-473q-m89c-ghf8",
-    "vendor": ".NET (NuGet)",
-    "product": "MySqlConnector",
-    "name": "MySqlConnector: Account password disclosed to a man-in-the-middle in zero-configuration TLS mode (clear-text password sent before certificate is verified)",
-    "dateAdded": "2026-10-28",
-    "dueDate": "",
-    "cvss": 6.9,
-    "severity": "Medium",
-    "cwe": "CWE-200",
-    "ransomware": false,
-    "description": "With SslMode set to VerifyCA or VerifyFull with no configured CA certificate, an unvalidated TLS connection is treated as secure and a clear-text password can be sent before the certificate is checked. This can occur when relying on the password to validate a self-signed cert, e.g., MariaDB's zero-configuration TLS.",
-    "requiredAction": "Upgrade MySqlConnector to version 2.6.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-473q-m89c-ghf8"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-55458",
-    "slug": "cve-2026-55458",
-    "vendor": "Go",
-    "product": "caddy (v2) · caddyserver",
-    "name": "Caddy has an RFC 7230 §6.1 compliance issue / Hop-by-hop headers that leak through",
-    "dateAdded": "2026-10-28",
-    "dueDate": "",
-    "cvss": 2.9,
+    "cvss": 2.1,
     "severity": "Low",
-    "cwe": "CWE-444",
+    "cwe": "CWE-79",
     "ransomware": false,
-    "description": "Caddy's reverse proxy fails to strip RFC 7230 hop-by-hop headers from upstream responses when handling WebSocket upgrades (HTTP 101 Switching Protocols). Headers including Alt-Svc, Keep-Alive, Proxy-Authenticate, Transfer-Encoding, or Trailer, which Caddy actually correctly strips for normal HTTP responses, pass through unfiltered to the client during protocol upgrades.",
-    "requiredAction": "Upgrade caddy (v2) · caddyserver to version 2.11.5 or later.",
+    "description": "When escapeParameter is enabled (escapeParameterHtml in the Legacy API), Vue I18n escapes the interpolation parameters before formatting a message. escapeParams() escapes either the list values or the named values, but not both: the two branches are joined by else. When a single call passes both, for example t(key, ['...'], { named: { ...",
+    "requiredAction": "Upgrade vue-i18n to version 11.4.14 or later.",
     "references": [
       {
         "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-8qx7-j2v2-x6q5"
+        "url": "https://github.com/advisories/GHSA-8rc2-428q-7ww3"
       },
       {
         "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-55458"
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118256"
       }
     ],
     "source": "GITHUB"
@@ -738,648 +1392,6 @@ export const advisories: Advisory[] = [
       }
     ],
     "source": "CISA KEV"
-  },
-  {
-    "cve": "CVE-2026-116690",
-    "slug": "cve-2026-116690",
-    "vendor": "Pip",
-    "product": "mlflow",
-    "name": "MLflow vulnerable to arbitrary file read on unauthenticated servers via prompt model version source",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-22",
-    "ransomware": false,
-    "description": "On MLflow tracking servers running without authentication, which is the default for mlflow server, a remote attacker can read arbitrary files from the server’s filesystem by creating a model version tagged as a prompt whose source is a schemeless local path.",
-    "requiredAction": "Upgrade mlflow to version 3.17.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-m65p-9j7q-6w33"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116690"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-116691",
-    "slug": "cve-2026-116691",
-    "vendor": "Pip",
-    "product": "mlflow",
-    "name": "MLflow CrewAI autologging records LLM provider API keys in logged trace spans",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-200",
-    "ransomware": false,
-    "description": "mlflow.crewai.autolog() leaks CrewAI LLM provider API keys into MLflow trace telemetry. When a CrewAI Agent is instrumented with MLflow autologging, MLflow serializes the agent's dict and converts its fields to strings. The llm field contains the CrewAI LLM object, whose string representation includes its api_key in plaintext.",
-    "requiredAction": "Upgrade mlflow to version 3.17.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-j7qq-vr8c-xvw3"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116691"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-116692",
-    "slug": "cve-2026-116692",
-    "vendor": "Pip",
-    "product": "mlflow",
-    "name": "MLflow vulnerable to remote code execution on unauthenticated servers via third-party scorer deserialization importing caller-placed artifact modules",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 9.8,
-    "severity": "Critical",
-    "cwe": "CWE-94",
-    "ransomware": false,
-    "description": "MLflow 3.12.0 introduced registration and deserialization support for third-party scorers in OSS MLflow. During scorer deserialization, the server accepts a request-controlled Python module path beneath one of four allowed package prefixes, imports that module, obtains a request-controlled class, and instantiates it synchronously.",
-    "requiredAction": "Upgrade mlflow to version 3.17.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-26p8-2jq9-3vq9"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116692"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-116693",
-    "slug": "cve-2026-116693",
-    "vendor": "npm",
-    "product": "dd-trace",
-    "name": "dd-trace: ReDOS in URL query string obfuscation",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 8.7,
-    "severity": "High",
-    "cwe": "CWE-1333",
-    "ransomware": false,
-    "description": "A regular expression used to obfuscate URL query strings can consume excessive CPU when processing certain attacker-controlled input. This can stall request processing and cause denial of service in applications using affected HTTP tracing integrations.",
-    "requiredAction": "Upgrade dd-trace to version 5.131.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-x94g-w73q-hpcw"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116693"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-116675",
-    "slug": "cve-2026-116675",
-    "vendor": "npm",
-    "product": "tinymce",
-    "name": "TinyMCE Cross-Site Scripting (XSS) vulnerability using media plugin `data-mce-object` serialization",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 8.5,
-    "severity": "High",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "Stored XSS vulnerability in the media plugin. Attackers can inject malicious scripts via elements crafted through the data-mce-object attribute, which are created and executed before sanitization. Impacts users of TinyMCE with the media plugin enabled.",
-    "requiredAction": "Upgrade tinymce to version 8.9.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-mf2p-h6hf-fcwm"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116675"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-116684",
-    "slug": "cve-2026-116684",
-    "vendor": "Pip",
-    "product": "mcp",
-    "name": "Model Context Protocol Python SDK: Server bearer-token authentication accepts tokens issued for a different resource server",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 6.8,
-    "severity": "Medium",
-    "cwe": "CWE-863",
-    "ransomware": false,
-    "description": "In affected versions, the SDK's server-side bearer authentication had no way to check that a token was issued for your server (its audience). Where one authorization server issues tokens for several services, a valid token for another service was also accepted by your MCP server.",
-    "requiredAction": "Upgrade mcp to version 2.2.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-w4fh-qvv9-3v23"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116684"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-116694",
-    "slug": "cve-2026-116694",
-    "vendor": "Pip",
-    "product": "opentelemetry-propagator-jaeger",
-    "name": "OpenTelemetry Python: Unbounded memory allocation in Jaeger baggage propagation",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 6.3,
-    "severity": "Medium",
-    "cwe": "CWE-770",
-    "ransomware": false,
-    "description": "JaegerPropagator.extract() in opentelemetry-propagator-jaeger did not enforce limits when extracting inbound uberctx-* baggage headers. Attacker-controlled baggage could cause unnecessary CPU work and short-lived heap allocations while processing more data than the propagator should accept.",
-    "requiredAction": "Upgrade opentelemetry-propagator-jaeger to version 1.45.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-f5m9-jfrj-jjj7"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116694"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-116685",
-    "slug": "cve-2026-116685",
-    "vendor": "Pip",
-    "product": "mcp",
-    "name": "Model Context Protocol Python SDK: HTTP client transports followed cross-origin redirects carrying custom headers and bodies",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 5.9,
-    "severity": "Medium",
-    "cwe": "CWE-200",
-    "ransomware": false,
-    "description": "In affected versions, the SDK's Streamable HTTP and SSE client transports followed HTTP redirects to any host. If the configured MCP endpoint answered with a redirect to a different origin: - custom headers set on the client (for example an X-API-Key credential) were sent to that origin, and - on a 307 or 308 redirect the request body was re-sent there too.",
-    "requiredAction": "Upgrade mcp to version 2.2.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-5h93-6whr-6q8j"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116685"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-116686",
-    "slug": "cve-2026-116686",
-    "vendor": "Pip",
-    "product": "mcp",
-    "name": "Model Context Protocol Python SDK: Client fetched server-chosen $ref URLs while validating tool results against output schemas",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-918",
-    "ransomware": false,
-    "description": "In affected versions, when a connected MCP server declared an outputSchema for a tool, the SDK's client validated each call_tool result with jsonschema's default resolver, which fetches any $ref it cannot resolve locally by opening the URL.",
-    "requiredAction": "Upgrade mcp to version 2.2.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-rwrf-2pqf-9j8j"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116686"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-116687",
-    "slug": "cve-2026-116687",
-    "vendor": "npm",
-    "product": "ckeditor5",
-    "name": "CKEditor: Cross-site scripting (XSS) in the engine package",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 3.1,
-    "severity": "Low",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "A Cross-Site Scripting (XSS) vulnerability has been discovered in the CKEditor 5 engine. This vulnerability could be triggered by inserting specially crafted markup under a specific General HTML Support configuration that allows inserting objects, leading to unauthorized JavaScript code execution in a browser context isolated from the origin of the application embedding the editor.",
-    "requiredAction": "Upgrade ckeditor5 to version 47.7.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-v6mg-96c6-gmpq"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116687"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-116688",
-    "slug": "cve-2026-116688",
-    "vendor": "npm",
-    "product": "ckeditor5",
-    "name": "CKEditor: Cross-site scripting (XSS) in the engine package",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 8.1,
-    "severity": "High",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "A Cross-Site Scripting (XSS) vulnerability has been discovered in the CKEditor 5 engine. This vulnerability is caused by a prototype pollution issue in the es-toolkit library used in the CKEditor 5 codebase. This vulnerability could lead to unauthorized JavaScript code execution when the editor processes incoming style attribute values.",
-    "requiredAction": "Upgrade ckeditor5 to version 47.7.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-rh54-vffm-5fvp"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116688"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-116679",
-    "slug": "cve-2026-116679",
-    "vendor": "Go",
-    "product": "neko (server) · m1k1o",
-    "name": "Neko: Authorization bypass in legacy WebRTC input handling",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 5.4,
-    "severity": "Medium",
-    "cwe": "CWE-863",
-    "ransomware": false,
-    "description": "When legacy mode is enabled and session.implicit_hosting is enabled, the legacy WebRTC data channel incorrectly authorizes input events due to a logic error in LegacyIsHost().",
-    "requiredAction": "Upgrade neko (server) · m1k1o to version 0.0.0-20260805142851-395ca1a6f62b or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-5cp7-fp4j-wwcv"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116679"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-116676",
-    "slug": "cve-2026-116676",
-    "vendor": "Go",
-    "product": "atlantis · runatlantis",
-    "name": "Atlantis: OS command injection through PR-controlled Terraform workspace enables RCE during plan",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 8.8,
-    "severity": "High",
-    "cwe": "CWE-78",
-    "ransomware": false,
-    "description": "Atlantis passes the Terraform workspace value from a pull request's atlantis.yaml into a shell command without quoting or escaping it. A contributor whose pull request is eligible for an Atlantis plan can include shell metacharacters in the workspace name and execute arbitrary commands as the Atlantis service account.",
-    "requiredAction": "Upgrade atlantis · runatlantis to version 0.47.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-rjh2-4xgw-p2hj"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116676"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-116682",
-    "slug": "cve-2026-116682",
-    "vendor": "Go",
-    "product": "filebrowser (backend) · gtsteffaniak",
-    "name": "FileBrowser: Symlink following escapes user scope allowing arbitrary file read outside the served directory",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 8.6,
-    "severity": "High",
-    "cwe": "CWE-22",
-    "ransomware": false,
-    "description": "File read paths resolve symbolic links with filepath.EvalSymlinks and then operate on the resolved target without re-checking that the target still lies inside the user's source/scope.",
-    "requiredAction": "Upgrade filebrowser (backend) · gtsteffaniak to version 0.0.0-20260814233832-4126edeb07a0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-mgqf-5mf5-prfj"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116682"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-109829",
-    "slug": "cve-2026-109829",
-    "vendor": "npm",
-    "product": "undici",
-    "name": "undici vulnerable to cache poisoning and cross-user disclosure via cross-origin redirects",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 7.4,
-    "severity": "High",
-    "cwe": "CWE-346",
-    "ransomware": false,
-    "description": "When an originless Agent composes the redirect and cache interceptors as compose(redirect(), cache()) with a shared cache (type: 'shared'), the cache builds its key from the original request URL before the redirect handler changes the origin. The response produced after a redirect is then stored under the original key, even when the redirect crossed to a different origin.",
-    "requiredAction": "Upgrade undici to version 7.30.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-4w7w-5xrc-9h26"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109829"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-109383",
-    "slug": "cve-2026-109383",
-    "vendor": "npm",
-    "product": "undici",
-    "name": "undici vulnerable to TLS certificate validation bypass via dropped tls options in Agent",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 7.4,
-    "severity": "High",
-    "cwe": "CWE-295",
-    "ransomware": false,
-    "description": "undici's Agent passes its constructor options through a JSON-based deep clone (JSON.parse(JSON.stringify(...))) before forwarding them to each per-origin Pool. JSON cannot represent functions, so a caller-supplied tls option containing a checkServerIdentity callback is silently dropped before it reaches the TLS layer.",
-    "requiredAction": "Upgrade undici to version 6.29.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-2m5v-pch6-74hx"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109383"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-87018",
-    "slug": "cve-2026-87018",
-    "vendor": "npm",
-    "product": "undici",
-    "name": "undici vulnerable to Denial of Service via TLS 1.2 certificate-changing renegotiation",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-248",
-    "ransomware": false,
-    "description": "undici crashes the client process when a TLS 1.2 server renegotiates after the connection is established and presents a different, CA-trusted certificate whose hostname does not match the requested host. Node.js re-runs hostname verification on the renegotiated handshake and destroys the socket with ERR_TLS_CERT_ALTNAME_INVALID.",
-    "requiredAction": "Upgrade undici to version 6.29.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-qrxm-fqhp-jwvm"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87018"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-109932",
-    "slug": "cve-2026-109932",
-    "vendor": "npm",
-    "product": "undici",
-    "name": "undici WebSocket client vulnerable to Denial of Service via unbounded automatic PONG buffering",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 5.9,
-    "severity": "Medium",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "undici's WebSocket client (including Node.js's bundled globalThis.WebSocket) can be driven to exhaust process memory by a malicious or compromised WebSocket server.",
-    "requiredAction": "Upgrade undici to version 6.29.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-9fm3-97px-rjf6"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109932"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-87029",
-    "slug": "cve-2026-87029",
-    "vendor": "npm",
-    "product": "undici",
-    "name": "undici vulnerable to Denial of Service via unhandled exception in the decompress interceptor",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 5.9,
-    "severity": "Medium",
-    "cwe": "CWE-248",
-    "ransomware": false,
-    "description": "undici's decompress interceptor forwards decompressed response data to the downstream handler from zlib stream event callbacks without catching exceptions those callbacks may throw. undici's engine converts a synchronous throw from a downstream handler into a per-request failure, but that protection is not in place when the throw happens asynchronously from a zlib callback.",
-    "requiredAction": "Upgrade undici to version 7.30.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-55wc-3pg8-jfw6"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87029"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-f897-62hf-6gxq",
-    "slug": "ghsa-f897-62hf-6gxq",
-    "vendor": "npm",
-    "product": "@modelcontextprotocol/sdk",
-    "name": "MCP TypeScript SDK: HTTP server transports and handlers did not limit request body size or JSON-RPC batch length",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-770",
-    "ransomware": false,
-    "description": "In affected versions, MCP servers reachable over HTTP put no limit on the size of a POST body or on the number of messages in a JSON-RPC batch. Large requests could exhaust the server's memory, and one long batch could block it from serving anyone else. No credentials were needed, unless your application authenticates requests before they reach the SDK.",
-    "requiredAction": "Upgrade @modelcontextprotocol/sdk to version 1.30.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-f897-62hf-6gxq"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-109413",
-    "slug": "cve-2026-109413",
-    "vendor": "Composer",
-    "product": "symfony/symfony",
-    "name": "Symfony: Unbounded Recursion in the YAML Inline Lexer Lets a Single Document Crash the Process",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 8.7,
-    "severity": "High",
-    "cwe": "CWE-674",
-    "ransomware": false,
-    "description": "Yaml\\Parser::lexInlineStructure() recursed through lexInlineMapping() and lexInlineSequence() for every { and [ of an inline collection, without entering the nesting level that the rest of the parser bounds with maxNestingLevel.",
-    "requiredAction": "Upgrade symfony/symfony to version 5.4.54 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-2v3c-qxhr-7vpv"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109413"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-108082",
-    "slug": "cve-2026-108082",
-    "vendor": "Composer",
-    "product": "symfony/http-foundation",
-    "name": "Symfony: ReDoS in HeaderUtils::split() Reachable Through the Cache-Control Request Header",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 8.7,
-    "severity": "High",
-    "cwe": "CWE-1333",
-    "ransomware": false,
-    "description": "HeaderUtils::split() parsed header values with a pattern whose token alternative also matched whitespace, followed by a (?<!\\s) lookbehind. A run of whitespace placed before a separator could be divided among the iterations of the enclosing repetition in exponentially many ways, and the engine tried all of them before settling.",
-    "requiredAction": "Upgrade symfony/http-foundation to version 6.4.46 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-r925-mgvr-h9cc"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108082"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-116587",
-    "slug": "cve-2026-116587",
-    "vendor": "Go",
-    "product": "go-jose (v4) · go-jose",
-    "name": "Go JOSE: DoS when parsing JWKs that contain RSA keys",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-407",
-    "ransomware": false,
-    "description": "A crafted RSA key inside a JWK can cause operations that parse JWKs to consume excess CPU.",
-    "requiredAction": "Upgrade go-jose (v4) · go-jose to version 4.1.6 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-mgcc-cww5-fp2q"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116587"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-116683",
-    "slug": "cve-2026-116683",
-    "vendor": "Go",
-    "product": "terraform-provider-ctfd · ctfer-io",
-    "name": "CTFer.io's CTFd Terraform Provider allows a local or remote attacker to read team passwords in state as non sensitive values",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 7.1,
-    "severity": "High",
-    "cwe": "CWE-522",
-    "ransomware": false,
-    "description": "CTFer.io's CTFd Terraform Provider stores ctfd_team.password as non-sensitive values (CWE-522). A local or remote attacker, who can have access to the Terraform state, can read team passwords without the need for the state password for decryption. Patched in v2.8.2.",
-    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-vg84-c5mg-76xh"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116683"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-wf6j-7hvr-gr93",
-    "slug": "ghsa-wf6j-7hvr-gr93",
-    "vendor": "Pip",
-    "product": "hydra-core",
-    "name": "Hydra legacy target blacklist permits unsafe PyYAML loading",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 7.8,
-    "severity": "High",
-    "cwe": "CWE-184",
-    "ransomware": false,
-    "description": "Hydra's legacy target blacklist omits PyYAML's unsafe loading surfaces. If an application passes attacker-controlled targets and arguments to instantiate(), a target such as yaml.unsafe_load can execute Python code through a config-controlled YAML stream containing Python object-construction tags.",
-    "requiredAction": "Upgrade hydra-core to version 1.3.8 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-wf6j-7hvr-gr93"
-      }
-    ],
-    "source": "GITHUB"
   },
   {
     "cve": "CVE-2026-109618",
