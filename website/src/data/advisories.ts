@@ -2,6 +2,1374 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-48356",
+    "slug": "cve-2026-48356",
+    "vendor": "Adobe",
+    "product": "Commerce and Magento",
+    "name": "Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability",
+    "dateAdded": "2026-10-27",
+    "dueDate": "2026-11-10",
+    "severity": "High",
+    "cwe": "CWE-434",
+    "ransomware": false,
+    "description": "Adobe Commerce and Magento contain an unrestricted upload of file with dangerous type vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or control over the victim's account or session.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48356"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-48356"
+      }
+    ],
+    "source": "CISA KEV"
+  },
+  {
+    "cve": "CVE-2026-111497",
+    "slug": "cve-2026-111497",
+    "vendor": "Google",
+    "product": "Brotli",
+    "name": "Google Brotli Unchecked Return Value Vulnerability",
+    "dateAdded": "2026-10-27",
+    "dueDate": "2026-11-10",
+    "severity": "High",
+    "cwe": "CWE-252, CWE-787",
+    "ransomware": false,
+    "description": "Google Brotli contains an unchecked return value vulnerability that allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111497"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-111497"
+      }
+    ],
+    "source": "CISA KEV"
+  },
+  {
+    "cve": "CVE-2026-116690",
+    "slug": "cve-2026-116690",
+    "vendor": "Pip",
+    "product": "mlflow",
+    "name": "MLflow vulnerable to arbitrary file read on unauthenticated servers via prompt model version source",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "On MLflow tracking servers running without authentication, which is the default for mlflow server, a remote attacker can read arbitrary files from the server’s filesystem by creating a model version tagged as a prompt whose source is a schemeless local path.",
+    "requiredAction": "Upgrade mlflow to version 3.17.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-m65p-9j7q-6w33"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116690"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116691",
+    "slug": "cve-2026-116691",
+    "vendor": "Pip",
+    "product": "mlflow",
+    "name": "MLflow CrewAI autologging records LLM provider API keys in logged trace spans",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-200",
+    "ransomware": false,
+    "description": "mlflow.crewai.autolog() leaks CrewAI LLM provider API keys into MLflow trace telemetry. When a CrewAI Agent is instrumented with MLflow autologging, MLflow serializes the agent's dict and converts its fields to strings. The llm field contains the CrewAI LLM object, whose string representation includes its api_key in plaintext.",
+    "requiredAction": "Upgrade mlflow to version 3.17.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-j7qq-vr8c-xvw3"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116691"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116692",
+    "slug": "cve-2026-116692",
+    "vendor": "Pip",
+    "product": "mlflow",
+    "name": "MLflow vulnerable to remote code execution on unauthenticated servers via third-party scorer deserialization importing caller-placed artifact modules",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 9.8,
+    "severity": "Critical",
+    "cwe": "CWE-94",
+    "ransomware": false,
+    "description": "MLflow 3.12.0 introduced registration and deserialization support for third-party scorers in OSS MLflow. During scorer deserialization, the server accepts a request-controlled Python module path beneath one of four allowed package prefixes, imports that module, obtains a request-controlled class, and instantiates it synchronously.",
+    "requiredAction": "Upgrade mlflow to version 3.17.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-26p8-2jq9-3vq9"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116692"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116693",
+    "slug": "cve-2026-116693",
+    "vendor": "npm",
+    "product": "dd-trace",
+    "name": "dd-trace: ReDOS in URL query string obfuscation",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 8.7,
+    "severity": "High",
+    "cwe": "CWE-1333",
+    "ransomware": false,
+    "description": "A regular expression used to obfuscate URL query strings can consume excessive CPU when processing certain attacker-controlled input. This can stall request processing and cause denial of service in applications using affected HTTP tracing integrations.",
+    "requiredAction": "Upgrade dd-trace to version 5.131.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-x94g-w73q-hpcw"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116693"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116675",
+    "slug": "cve-2026-116675",
+    "vendor": "npm",
+    "product": "tinymce",
+    "name": "TinyMCE Cross-Site Scripting (XSS) vulnerability using media plugin `data-mce-object` serialization",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 8.5,
+    "severity": "High",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "Stored XSS vulnerability in the media plugin. Attackers can inject malicious scripts via elements crafted through the data-mce-object attribute, which are created and executed before sanitization. Impacts users of TinyMCE with the media plugin enabled.",
+    "requiredAction": "Upgrade tinymce to version 8.9.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-mf2p-h6hf-fcwm"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116675"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116684",
+    "slug": "cve-2026-116684",
+    "vendor": "Pip",
+    "product": "mcp",
+    "name": "Model Context Protocol Python SDK: Server bearer-token authentication accepts tokens issued for a different resource server",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 6.8,
+    "severity": "Medium",
+    "cwe": "CWE-863",
+    "ransomware": false,
+    "description": "In affected versions, the SDK's server-side bearer authentication had no way to check that a token was issued for your server (its audience). Where one authorization server issues tokens for several services, a valid token for another service was also accepted by your MCP server.",
+    "requiredAction": "Upgrade mcp to version 2.2.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-w4fh-qvv9-3v23"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116684"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116694",
+    "slug": "cve-2026-116694",
+    "vendor": "Pip",
+    "product": "opentelemetry-propagator-jaeger",
+    "name": "OpenTelemetry Python: Unbounded memory allocation in Jaeger baggage propagation",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 6.3,
+    "severity": "Medium",
+    "cwe": "CWE-770",
+    "ransomware": false,
+    "description": "JaegerPropagator.extract() in opentelemetry-propagator-jaeger did not enforce limits when extracting inbound uberctx-* baggage headers. Attacker-controlled baggage could cause unnecessary CPU work and short-lived heap allocations while processing more data than the propagator should accept.",
+    "requiredAction": "Upgrade opentelemetry-propagator-jaeger to version 1.45.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-f5m9-jfrj-jjj7"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116694"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116685",
+    "slug": "cve-2026-116685",
+    "vendor": "Pip",
+    "product": "mcp",
+    "name": "Model Context Protocol Python SDK: HTTP client transports followed cross-origin redirects carrying custom headers and bodies",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 5.9,
+    "severity": "Medium",
+    "cwe": "CWE-200",
+    "ransomware": false,
+    "description": "In affected versions, the SDK's Streamable HTTP and SSE client transports followed HTTP redirects to any host. If the configured MCP endpoint answered with a redirect to a different origin: - custom headers set on the client (for example an X-API-Key credential) were sent to that origin, and - on a 307 or 308 redirect the request body was re-sent there too.",
+    "requiredAction": "Upgrade mcp to version 2.2.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-5h93-6whr-6q8j"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116685"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116686",
+    "slug": "cve-2026-116686",
+    "vendor": "Pip",
+    "product": "mcp",
+    "name": "Model Context Protocol Python SDK: Client fetched server-chosen $ref URLs while validating tool results against output schemas",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-918",
+    "ransomware": false,
+    "description": "In affected versions, when a connected MCP server declared an outputSchema for a tool, the SDK's client validated each call_tool result with jsonschema's default resolver, which fetches any $ref it cannot resolve locally by opening the URL.",
+    "requiredAction": "Upgrade mcp to version 2.2.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-rwrf-2pqf-9j8j"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116686"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116687",
+    "slug": "cve-2026-116687",
+    "vendor": "npm",
+    "product": "ckeditor5",
+    "name": "CKEditor: Cross-site scripting (XSS) in the engine package",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 3.1,
+    "severity": "Low",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "A Cross-Site Scripting (XSS) vulnerability has been discovered in the CKEditor 5 engine. This vulnerability could be triggered by inserting specially crafted markup under a specific General HTML Support configuration that allows inserting objects, leading to unauthorized JavaScript code execution in a browser context isolated from the origin of the application embedding the editor.",
+    "requiredAction": "Upgrade ckeditor5 to version 47.7.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-v6mg-96c6-gmpq"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116687"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116688",
+    "slug": "cve-2026-116688",
+    "vendor": "npm",
+    "product": "ckeditor5",
+    "name": "CKEditor: Cross-site scripting (XSS) in the engine package",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 8.1,
+    "severity": "High",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "A Cross-Site Scripting (XSS) vulnerability has been discovered in the CKEditor 5 engine. This vulnerability is caused by a prototype pollution issue in the es-toolkit library used in the CKEditor 5 codebase. This vulnerability could lead to unauthorized JavaScript code execution when the editor processes incoming style attribute values.",
+    "requiredAction": "Upgrade ckeditor5 to version 47.7.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-rh54-vffm-5fvp"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116688"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116679",
+    "slug": "cve-2026-116679",
+    "vendor": "Go",
+    "product": "neko (server) · m1k1o",
+    "name": "Neko: Authorization bypass in legacy WebRTC input handling",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 5.4,
+    "severity": "Medium",
+    "cwe": "CWE-863",
+    "ransomware": false,
+    "description": "When legacy mode is enabled and session.implicit_hosting is enabled, the legacy WebRTC data channel incorrectly authorizes input events due to a logic error in LegacyIsHost().",
+    "requiredAction": "Upgrade neko (server) · m1k1o to version 0.0.0-20260805142851-395ca1a6f62b or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-5cp7-fp4j-wwcv"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116679"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116676",
+    "slug": "cve-2026-116676",
+    "vendor": "Go",
+    "product": "atlantis · runatlantis",
+    "name": "Atlantis: OS command injection through PR-controlled Terraform workspace enables RCE during plan",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 8.8,
+    "severity": "High",
+    "cwe": "CWE-78",
+    "ransomware": false,
+    "description": "Atlantis passes the Terraform workspace value from a pull request's atlantis.yaml into a shell command without quoting or escaping it. A contributor whose pull request is eligible for an Atlantis plan can include shell metacharacters in the workspace name and execute arbitrary commands as the Atlantis service account.",
+    "requiredAction": "Upgrade atlantis · runatlantis to version 0.47.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-rjh2-4xgw-p2hj"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116676"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116682",
+    "slug": "cve-2026-116682",
+    "vendor": "Go",
+    "product": "filebrowser (backend) · gtsteffaniak",
+    "name": "FileBrowser: Symlink following escapes user scope allowing arbitrary file read outside the served directory",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 8.6,
+    "severity": "High",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "File read paths resolve symbolic links with filepath.EvalSymlinks and then operate on the resolved target without re-checking that the target still lies inside the user's source/scope.",
+    "requiredAction": "Upgrade filebrowser (backend) · gtsteffaniak to version 0.0.0-20260814233832-4126edeb07a0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-mgqf-5mf5-prfj"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116682"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-109829",
+    "slug": "cve-2026-109829",
+    "vendor": "npm",
+    "product": "undici",
+    "name": "undici vulnerable to cache poisoning and cross-user disclosure via cross-origin redirects",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 7.4,
+    "severity": "High",
+    "cwe": "CWE-346",
+    "ransomware": false,
+    "description": "When an originless Agent composes the redirect and cache interceptors as compose(redirect(), cache()) with a shared cache (type: 'shared'), the cache builds its key from the original request URL before the redirect handler changes the origin. The response produced after a redirect is then stored under the original key, even when the redirect crossed to a different origin.",
+    "requiredAction": "Upgrade undici to version 7.30.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-4w7w-5xrc-9h26"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109829"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-109383",
+    "slug": "cve-2026-109383",
+    "vendor": "npm",
+    "product": "undici",
+    "name": "undici vulnerable to TLS certificate validation bypass via dropped tls options in Agent",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 7.4,
+    "severity": "High",
+    "cwe": "CWE-295",
+    "ransomware": false,
+    "description": "undici's Agent passes its constructor options through a JSON-based deep clone (JSON.parse(JSON.stringify(...))) before forwarding them to each per-origin Pool. JSON cannot represent functions, so a caller-supplied tls option containing a checkServerIdentity callback is silently dropped before it reaches the TLS layer.",
+    "requiredAction": "Upgrade undici to version 6.29.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-2m5v-pch6-74hx"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109383"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-87018",
+    "slug": "cve-2026-87018",
+    "vendor": "npm",
+    "product": "undici",
+    "name": "undici vulnerable to Denial of Service via TLS 1.2 certificate-changing renegotiation",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-248",
+    "ransomware": false,
+    "description": "undici crashes the client process when a TLS 1.2 server renegotiates after the connection is established and presents a different, CA-trusted certificate whose hostname does not match the requested host. Node.js re-runs hostname verification on the renegotiated handshake and destroys the socket with ERR_TLS_CERT_ALTNAME_INVALID.",
+    "requiredAction": "Upgrade undici to version 6.29.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-qrxm-fqhp-jwvm"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87018"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-109932",
+    "slug": "cve-2026-109932",
+    "vendor": "npm",
+    "product": "undici",
+    "name": "undici WebSocket client vulnerable to Denial of Service via unbounded automatic PONG buffering",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 5.9,
+    "severity": "Medium",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "undici's WebSocket client (including Node.js's bundled globalThis.WebSocket) can be driven to exhaust process memory by a malicious or compromised WebSocket server.",
+    "requiredAction": "Upgrade undici to version 6.29.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-9fm3-97px-rjf6"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109932"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-87029",
+    "slug": "cve-2026-87029",
+    "vendor": "npm",
+    "product": "undici",
+    "name": "undici vulnerable to Denial of Service via unhandled exception in the decompress interceptor",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 5.9,
+    "severity": "Medium",
+    "cwe": "CWE-248",
+    "ransomware": false,
+    "description": "undici's decompress interceptor forwards decompressed response data to the downstream handler from zlib stream event callbacks without catching exceptions those callbacks may throw. undici's engine converts a synchronous throw from a downstream handler into a per-request failure, but that protection is not in place when the throw happens asynchronously from a zlib callback.",
+    "requiredAction": "Upgrade undici to version 7.30.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-55wc-3pg8-jfw6"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87029"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "GHSA-f897-62hf-6gxq",
+    "slug": "ghsa-f897-62hf-6gxq",
+    "vendor": "npm",
+    "product": "@modelcontextprotocol/sdk",
+    "name": "MCP TypeScript SDK: HTTP server transports and handlers did not limit request body size or JSON-RPC batch length",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-770",
+    "ransomware": false,
+    "description": "In affected versions, MCP servers reachable over HTTP put no limit on the size of a POST body or on the number of messages in a JSON-RPC batch. Large requests could exhaust the server's memory, and one long batch could block it from serving anyone else. No credentials were needed, unless your application authenticates requests before they reach the SDK.",
+    "requiredAction": "Upgrade @modelcontextprotocol/sdk to version 1.30.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-f897-62hf-6gxq"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-109413",
+    "slug": "cve-2026-109413",
+    "vendor": "Composer",
+    "product": "symfony/symfony",
+    "name": "Symfony: Unbounded Recursion in the YAML Inline Lexer Lets a Single Document Crash the Process",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 8.7,
+    "severity": "High",
+    "cwe": "CWE-674",
+    "ransomware": false,
+    "description": "Yaml\\Parser::lexInlineStructure() recursed through lexInlineMapping() and lexInlineSequence() for every { and [ of an inline collection, without entering the nesting level that the rest of the parser bounds with maxNestingLevel.",
+    "requiredAction": "Upgrade symfony/symfony to version 5.4.54 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-2v3c-qxhr-7vpv"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109413"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-108082",
+    "slug": "cve-2026-108082",
+    "vendor": "Composer",
+    "product": "symfony/http-foundation",
+    "name": "Symfony: ReDoS in HeaderUtils::split() Reachable Through the Cache-Control Request Header",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 8.7,
+    "severity": "High",
+    "cwe": "CWE-1333",
+    "ransomware": false,
+    "description": "HeaderUtils::split() parsed header values with a pattern whose token alternative also matched whitespace, followed by a (?<!\\s) lookbehind. A run of whitespace placed before a separator could be divided among the iterations of the enclosing repetition in exponentially many ways, and the engine tried all of them before settling.",
+    "requiredAction": "Upgrade symfony/http-foundation to version 6.4.46 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-r925-mgvr-h9cc"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108082"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116587",
+    "slug": "cve-2026-116587",
+    "vendor": "Go",
+    "product": "go-jose (v4) · go-jose",
+    "name": "Go JOSE: DoS when parsing JWKs that contain RSA keys",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-407",
+    "ransomware": false,
+    "description": "A crafted RSA key inside a JWK can cause operations that parse JWKs to consume excess CPU.",
+    "requiredAction": "Upgrade go-jose (v4) · go-jose to version 4.1.6 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-mgcc-cww5-fp2q"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116587"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116683",
+    "slug": "cve-2026-116683",
+    "vendor": "Go",
+    "product": "terraform-provider-ctfd · ctfer-io",
+    "name": "CTFer.io's CTFd Terraform Provider allows a local or remote attacker to read team passwords in state as non sensitive values",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 7.1,
+    "severity": "High",
+    "cwe": "CWE-522",
+    "ransomware": false,
+    "description": "CTFer.io's CTFd Terraform Provider stores ctfd_team.password as non-sensitive values (CWE-522). A local or remote attacker, who can have access to the Terraform state, can read team passwords without the need for the state password for decryption. Patched in v2.8.2.",
+    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-vg84-c5mg-76xh"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116683"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "GHSA-wf6j-7hvr-gr93",
+    "slug": "ghsa-wf6j-7hvr-gr93",
+    "vendor": "Pip",
+    "product": "hydra-core",
+    "name": "Hydra legacy target blacklist permits unsafe PyYAML loading",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 7.8,
+    "severity": "High",
+    "cwe": "CWE-184",
+    "ransomware": false,
+    "description": "Hydra's legacy target blacklist omits PyYAML's unsafe loading surfaces. If an application passes attacker-controlled targets and arguments to instantiate(), a target such as yaml.unsafe_load can execute Python code through a config-controlled YAML stream containing Python object-construction tags.",
+    "requiredAction": "Upgrade hydra-core to version 1.3.8 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-wf6j-7hvr-gr93"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-110816",
+    "slug": "cve-2026-110816",
+    "vendor": "npm",
+    "product": "qs",
+    "name": "qs : qs.stringify with arrayFormat 'comma' throws an uncaught TypeError on array elements carrying a non-callable own toString (DoS)",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 6.3,
+    "severity": "Medium",
+    "cwe": "CWE-248",
+    "ransomware": false,
+    "description": "qs.stringify(obj, { arrayFormat: 'comma' }) throws an uncaught TypeError: Cannot convert object to primitive value when an array in obj contains an element that carries an own, non-callable toString property (for example { a: [ { toString: 'x' } ] }).",
+    "requiredAction": "Upgrade qs to version 6.16.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-6pq8-jhm2-2vcw"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110816"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-109855",
+    "slug": "cve-2026-109855",
+    "vendor": "npm",
+    "product": "undici",
+    "name": "undici WebSocket client vulnerable to Denial of Service via failed HTTP/2 handshake",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-248",
+    "ransomware": false,
+    "description": "undici's experimental WebSocket client (enabled by default via allowH2: true) crashes the Node.js process when it connects to a malicious server over HTTP/2.",
+    "requiredAction": "Upgrade undici to version 8.11.2 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-qq8j-7v2v-3rwp"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109855"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-114616",
+    "slug": "cve-2026-114616",
+    "vendor": "Pip",
+    "product": "Authlib",
+    "name": "Authlib accepts an empty HMAC key, allowing JWS/JWT signature forgery (HS256/HS384/HS512)",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 7.4,
+    "severity": "High",
+    "cwe": "CWE-287",
+    "ransomware": false,
+    "description": "Reporter: Cavan Loughran, Celvex Group Inc. Summary Authlib's symmetric (oct) key handling accepts an empty key (empty bytes b'' / empty string '') as a valid HMAC signing and verification key.",
+    "requiredAction": "Upgrade Authlib to version 1.9.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-8m4g-j4wp-wgcg"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114616"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "GHSA-vp88-798v-h67f",
+    "slug": "ghsa-vp88-798v-h67f",
+    "vendor": "Rust (Cargo)",
+    "product": "rustls",
+    "name": "rustls: ECH rejection can expose buffered application data to authenticated outer server before `ech_required` alert",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 2.3,
+    "severity": "Low",
+    "cwe": "CWE-200",
+    "ransomware": false,
+    "description": "In rustls 0.23.44 and 0.23.45, application data that a client buffers before the handshake completes is sent to the server even when the server rejects Encrypted Client Hello (ECH). When the server rejects ECH, the client completes the handshake with the outer ClientHello and authenticates the server against the ECH config's public_name.",
+    "requiredAction": "Upgrade rustls to version 0.23.46 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-vp88-798v-h67f"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "GHSA-w44r-93j7-qv28",
+    "slug": "ghsa-w44r-93j7-qv28",
+    "vendor": "Rust (Cargo)",
+    "product": "rustls",
+    "name": "rustls: An unauthenticated ServerHello poisons the per-name key-exchange record, so later ClientHellos carry only a classical X25519 share",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 3.7,
+    "severity": "Low",
+    "cwe": "CWE-757",
+    "ransomware": false,
+    "description": "The client records the server-selected key-exchange group per server name when it processes the ServerHello, before the server is authenticated. A network attacker can answer one connection attempt for a target name with a ServerHello that selects X25519 and close the connection. Later ClientHellos for that name carry one X25519 share while supported_groups still lists X25519MLKEM768 first.",
+    "requiredAction": "Upgrade rustls to version 0.23.46 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-w44r-93j7-qv28"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "GHSA-c8m5-c952-6cm4",
+    "slug": "ghsa-c8m5-c952-6cm4",
+    "vendor": "Rust (Cargo)",
+    "product": "rustls",
+    "name": "Rustls: Session Debug formatting exposes TLS master secrets and resumption PSKs",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 4,
+    "severity": "Medium",
+    "cwe": "CWE-212",
+    "ransomware": false,
+    "description": "Formatting a client session value with Debug exposes its TLS 1.2 master secret or TLS 1.3 resumption PSK. A custom session store that logs these values can disclose keys to readers of the logs. Ordinary connection and built-in cache diagnostics remain redacted, and the session-store interface already warns that its values are sensitive.",
+    "requiredAction": "Upgrade rustls to version 0.23.46 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-c8m5-c952-6cm4"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "GHSA-h2v8-394m-p7vv",
+    "slug": "ghsa-h2v8-394m-p7vv",
+    "vendor": "Rust (Cargo)",
+    "product": "rustls",
+    "name": "Rustls: Brotli certificate decompression can allocate an attacker-controlled amount of memory up to 1 GiB before authentication.",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 3.7,
+    "severity": "Low",
+    "cwe": "CWE-770",
+    "ransomware": false,
+    "description": "The built-in (but disabled by default) Brotli certificate decoder bounds the output buffer but accepts an input-selected history window. A header of five bytes can specify a 1 GiB window allocation. A peer can abort a process whose allocator cannot satisfy that request. A client must enable Brotli and connect to the peer; a server must enable Brotli and request a client certificate.",
+    "requiredAction": "Upgrade rustls to version 0.23.46 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-h2v8-394m-p7vv"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-114620",
+    "slug": "cve-2026-114620",
+    "vendor": "Pip",
+    "product": "authlib",
+    "name": "Authlib: Unvalidated request_uri fetch in JWT-secured authorization request (JAR) leading to SSRF",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 5.4,
+    "severity": "Medium",
+    "cwe": "CWE-918",
+    "ransomware": false,
+    "description": "Authlib's RFC 9101 (JAR) extension passes the attacker-controlled request_uri authorization parameter straight to the get_request_object() fetch hook with no validation, at a pre-authentication endpoint.",
+    "requiredAction": "Upgrade authlib to version 1.9.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-x4rv-c3wx-4cr8"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114620"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-114617",
+    "slug": "cve-2026-114617",
+    "vendor": "Pip",
+    "product": "authlib",
+    "name": "Authlib: ID token can disable its own nonce validation via the nonce_supported claim",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 4.2,
+    "severity": "Medium",
+    "cwe": "CWE-294",
+    "ransomware": false,
+    "description": "OpenIDMixin.parse_id_token() reads the nonce_supported claim from the ID token it is validating. When that claim is boolean false, the expected nonce is set to None and nonce validation is skipped for that token. An ID token that carries this claim is therefore accepted in a session whose nonce does not match.",
+    "requiredAction": "Upgrade authlib to version 1.9.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-c5mf-xmp2-59rc"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114617"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-114618",
+    "slug": "cve-2026-114618",
+    "vendor": "Pip",
+    "product": "authlib",
+    "name": "Authlib: Default JWT bearer grant accepts assertions for the wrong audience",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 6.8,
+    "severity": "Medium",
+    "cwe": "CWE-287",
+    "ransomware": false,
+    "description": "Authlib's default RFC 7523 JWT bearer grant leaves get_audiences() empty, so verify_claims() only checks that an aud claim exists instead of requiring it to match the current authorization server's token endpoint. An attacker holding a legitimately issued JWT assertion for any audience can present it to a different authorization server sharing the same signing key and obtain an access token.",
+    "requiredAction": "Upgrade authlib to version 1.9.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-fch4-3c6x-j4gc"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114618"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-114619",
+    "slug": "cve-2026-114619",
+    "vendor": "Pip",
+    "product": "authlib",
+    "name": "Authlib: OpenID implicit grant checks raw scope instead of allowed scope before issuing ID tokens",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 4.6,
+    "severity": "Medium",
+    "cwe": "CWE-863",
+    "ransomware": false,
+    "description": "OpenIDImplicitGrant.validate_authorization_request() first runs the parent ImplicitGrant validation, which filters the requested scope through client.get_allowed_scope() and stores the result in request.scope. It then decides whether this is an OpenID request by checking the raw, client-supplied request.payload.scope instead of that filtered value.",
+    "requiredAction": "Upgrade authlib to version 1.9.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-q686-2qmg-hqc7"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114619"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-114615",
+    "slug": "cve-2026-114615",
+    "vendor": "Pip",
+    "product": "authlib",
+    "name": "Authlib incomplete algorithm-confusion fix permits HMAC forgery with prefixed public keys",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 7.4,
+    "severity": "High",
+    "cwe": "CWE-184",
+    "ransomware": false,
+    "description": "OctKey.import_key() carries the only guard that stops an asymmetric public key from being used as an HMAC secret in authlib.jose.",
+    "requiredAction": "Upgrade authlib to version 1.9.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-7vr2-2fgp-9w7p"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114615"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-108360",
+    "slug": "cve-2026-108360",
+    "vendor": "Composer",
+    "product": "phpoffice/phpspreadsheet",
+    "name": "PhpSpreadsheet: SSRF whitelist bypass via unre-validated HTTP redirect in Drawing::setPath external image loading",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 6.4,
+    "severity": "Medium",
+    "cwe": "CWE-863",
+    "ransomware": false,
+    "description": "PhpSpreadsheet's Worksheet\\Drawing::setPath() validates an external-image URL against an operator-supplied isWhitelisted callback once, on the initial URL only, then fetches it with file_get_contents() using a stream context that does not set follow_location => 0.",
+    "requiredAction": "Upgrade phpoffice/phpspreadsheet to version 5.10.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-2phh-27fw-q4gc"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108360"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-108359",
+    "slug": "cve-2026-108359",
+    "vendor": "Composer",
+    "product": "phpoffice/phpspreadsheet",
+    "name": "PhpSpreadsheet ODS Reader: Unbounded number-rows-repeated → CPU & Memory Exhaustion (DoS)",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 8.7,
+    "severity": "High",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "When PhpSpreadsheet loads an OpenDocument Spreadsheet (.ods), Ods::processTableRow() reads the table:number-rows-repeated attribute of a with an unchecked (int) cast, then materialises one cell per repeated row. This value is completely unbounded, so a single ~1.4 KB file can instruct the reader to create up to millions of cells, exhausting memory (fatal OOM).",
+    "requiredAction": "Upgrade phpoffice/phpspreadsheet to version 5.10.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-j2w7-387v-m2rq"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108359"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-108358",
+    "slug": "cve-2026-108358",
+    "vendor": "Composer",
+    "product": "phpoffice/phpspreadsheet",
+    "name": "PhpSpreadsheet: XmlScanner Bypass via ISO-2022 Escape Sequences Allows XXE and Denial of Service",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 8.8,
+    "severity": "High",
+    "cwe": "CWE-611",
+    "ransomware": false,
+    "description": "PhpSpreadsheet's XmlScanner::scan() uses a regex pattern that only accounts for NULL byte (0x00) interleaving when detecting <!DOCTYPE. ISO-2022 escape sequences (0x1B bytes) inserted between the characters of the pattern break the regex match entirely, allowing DOCTYPE declarations with entity definitions to pass through undetected.",
+    "requiredAction": "Upgrade phpoffice/phpspreadsheet to version 5.10.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-3x94-m842-937c"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108358"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-108357",
+    "slug": "cve-2026-108357",
+    "vendor": "Composer",
+    "product": "phpoffice/phpspreadsheet",
+    "name": "PhpSpreadsheet: XmlScanner Bypass via Double-Encoded unentity() TOCTOU Allows XXE and Denial of Service",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 8.8,
+    "severity": "High",
+    "cwe": "CWE-611",
+    "ransomware": false,
+    "description": "The SpreadsheetML XML reader (Reader\\Xml) scans file content twice through XmlScanner::scan(), and each scan runs an unentity() callback that calls html_entity_decode() after the pattern check. By double-encoding the < character as &#38;#60;, the first scan decodes &#38; to & (forming &#60;), and the second scan decodes &#60; to < (forming <!DOCTYPE).",
+    "requiredAction": "Upgrade phpoffice/phpspreadsheet to version 5.10.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-rxj4-h86g-25gc"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108357"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116591",
+    "slug": "cve-2026-116591",
+    "vendor": "Go",
+    "product": "compress (zstd) · klauspost",
+    "name": "compress zstd: Panic on two-block frames",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 8.7,
+    "severity": "High",
+    "cwe": "CWE-190",
+    "ransomware": false,
+    "description": "A crafted ~27 KB two-block zstd frame makes DecodeAll and the streaming decoder panic with an out-of-range slice index instead of returning a decode error. The same bytes decode fine with the reference zstd. Any program that decompresses untrusted zstd input can be crashed by it. Reproduced on v1.20.0 and v1.20.1. Released in",
+    "requiredAction": "Upgrade compress (zstd) · klauspost to version 1.20.2 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-fpmh-frq8-7rj8"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116591"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-114614",
+    "slug": "cve-2026-114614",
+    "vendor": "Pip",
+    "product": "authlib",
+    "name": "Authlib: is_secure_transport() loopback exemption can be bypassed with a userinfo component, allowing cleartext-HTTP URLs to non-loopback hosts",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 2.6,
+    "severity": "Low",
+    "cwe": "CWE-319",
+    "ransomware": false,
+    "description": "authlib.common.security.is_secure_transport() is used throughout Authlib to enforce the OAuth 2.0 / OIDC requirement that endpoint and redirect URIs use TLS, with an RFC 8252 §7.3 exemption for loopback URIs. The check is implemented as a textual str.startswith prefix match, so a URL such as — whose actual host is evil.example and whose scheme is plain http — is accepted as \"secure\".",
+    "requiredAction": "Upgrade authlib to version 1.8.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-jj7h-c3hg-m23x"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114614"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-114605",
+    "slug": "cve-2026-114605",
+    "vendor": "Pip",
+    "product": "dnspython",
+    "name": "dnspython dns.name.from_wire_parser() excessive CPU use",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-674",
+    "ransomware": false,
+    "description": "A maliciously crafted DNS message may cause dns.name.from_wire_parser() to use excessive CPU for DNS name decompression. Applications that process untrusted DNS wire form messages with dnspython may be degraded or DoS'd by the extra CPU use required. This problem is fixed in dnspython 2.9.0. There are no known workarounds.",
+    "requiredAction": "Upgrade dnspython to version 2.9.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-45c3-73f7-pv4m"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114605"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116588",
+    "slug": "cve-2026-116588",
+    "vendor": "Pip",
+    "product": "ddtrace",
+    "name": "Datadog dd-trace-py: ReDoS in URL query string obfuscation",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 8.7,
+    "severity": "High",
+    "cwe": "CWE-1333",
+    "ransomware": false,
+    "description": "A regular expression used to obfuscate URL query strings can consume excessive CPU when processing certain attacker-controlled input. This can stall request processing and cause denial of service in applications using affected HTTP tracing integrations.",
+    "requiredAction": "Upgrade ddtrace to version 3.19.9 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-3633-r77q-h3v3"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116588"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116589",
+    "slug": "cve-2026-116589",
+    "vendor": "Pip",
+    "product": "ddtrace",
+    "name": "Datadog dd-trace-py: IAST instrumentation can lead to application DOS",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 8.2,
+    "severity": "High",
+    "cwe": "CWE-248",
+    "ransomware": false,
+    "description": "A flaw in dd-trace-py’s IAST instrumentation can cause the Python application process to terminate unexpectedly when processing certain attacker-controlled input. Only applications with IAST enabled are affected. IAST is disabled by default.",
+    "requiredAction": "Upgrade ddtrace to version 4.15.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-p3m5-h5v9-vqj6"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116589"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-106435",
+    "slug": "cve-2026-106435",
+    "vendor": "Pip",
+    "product": "pymongo",
+    "name": "MongoDB Python Driver: Out-of-bounds read in BSON decoding via a malformed Regex element",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 8.2,
+    "severity": "High",
+    "cwe": "CWE-125",
+    "ransomware": false,
+    "description": "The C extension's BSON decoder scans a Regex element's pattern and flags strings with strlen before checking the document's remaining length, so a crafted truncated Regex element can read past the end of the caller's buffer.",
+    "requiredAction": "Upgrade pymongo to version 4.18.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-98qm-wvgf-w4cf"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106435"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-114053",
+    "slug": "cve-2026-114053",
+    "vendor": "Pip",
+    "product": "vllm",
+    "name": "vLLM: Request-controlled mm_processor_kwargs.code_revision allows remote code execution",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 8.1,
+    "severity": "High",
+    "cwe": "CWE-94",
+    "ransomware": false,
+    "description": "An untrusted multimodal request can set mm_processor_kwargs.code_revision. When vLLM serves a model whose Hugging Face processor uses dynamic auto_map code and the operator enabled --trust-remote-code, this request value reaches AutoProcessor.from_pretrained and selects the Python revision imported by Transformers.",
+    "requiredAction": "Upgrade vllm to version 0.31.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-h3rc-6mm3-gc2m"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114053"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "GHSA-3w55-933p-8pv5",
+    "slug": "ghsa-3w55-933p-8pv5",
+    "vendor": "Pip",
+    "product": "strands-agents",
+    "name": "Strands Agents: Local Privilege Escalation via Symlink Attack in Default Session File Storage",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 7.1,
+    "severity": "High",
+    "cwe": "CWE-59",
+    "ransomware": false,
+    "description": "The FileSessionManager defaults to storing session data in /tmp/strands/sessions/ (a world-writable directory) using predictable file paths and a write pattern (open(path + \".tmp\", \"w\") → os.replace()) that follows symbolic links. A local attacker can exploit this to overwrite arbitrary files or inject malicious session data for persistent prompt injection.",
+    "requiredAction": "Upgrade strands-agents to version 1.48.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-3w55-933p-8pv5"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "GHSA-763v-5pjm-fx36",
+    "slug": "ghsa-763v-5pjm-fx36",
+    "vendor": "Pip",
+    "product": "strands-agents",
+    "name": "Strands Agents: Default FileSessionManager storage is world-readable on shared systems",
+    "dateAdded": "2026-10-27",
+    "dueDate": "",
+    "cvss": 5.7,
+    "severity": "Medium",
+    "cwe": "CWE-276",
+    "ransomware": false,
+    "description": "There is a local confidentiality issue in the default FileSessionManager storage behavior. By default it writes session data under /tmp/strands/sessions and relies on the process umask for directory and file permissions. On systems using the common umask 022, the session directories are 0755 and JSON files are 0644, so other local users can read persisted agent session data.",
+    "requiredAction": "Upgrade strands-agents to version 1.48.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-763v-5pjm-fx36"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-109618",
+    "slug": "cve-2026-109618",
+    "vendor": "PHP Group",
+    "product": "PHP",
+    "name": "PHP Memory Corruption Vulnerability",
+    "dateAdded": "2026-10-26",
+    "dueDate": "2026-10-29",
+    "severity": "High",
+    "cwe": "CWE-416, CWE-755, CWE-824, CWE-1325, CWE-1419",
+    "ransomware": false,
+    "description": "PHP contains an out-of-memory corruption vulnerability that allows for unauthenticated remote code execution.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-109618"
+      }
+    ],
+    "source": "CISA KEV"
+  },
+  {
+    "cve": "CVE-2026-109619",
+    "slug": "cve-2026-109619",
+    "vendor": "PHP Group",
+    "product": "PHP",
+    "name": "PHP Stale Internal Request-State Vulnerability",
+    "dateAdded": "2026-10-26",
+    "dueDate": "2026-10-29",
+    "severity": "High",
+    "cwe": "CWE-416, CWE-755, CWE-824, CWE-1325, CWE-1419",
+    "ransomware": false,
+    "description": "PHP contains a stale internal request-state vulnerability that allows for unauthenticated remote code execution.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109619"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-109619"
+      }
+    ],
+    "source": "CISA KEV"
+  },
+  {
     "cve": "CVE-2026-114625",
     "slug": "cve-2026-114625",
     "vendor": "Arista",
@@ -21,7 +1389,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-114625"
       }
     ],
     "source": "CISA KEV"
@@ -46,1274 +1414,10 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-110447"
       }
     ],
     "source": "CISA KEV"
-  },
-  {
-    "cve": "CVE-2026-112937",
-    "slug": "cve-2026-112937",
-    "vendor": "Pip",
-    "product": "filelock",
-    "name": "filelock: ReadWriteLock on the hard-link route deletes any directory another user renames onto its .filelock-* link directory name",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 6.1,
-    "severity": "Medium",
-    "cwe": "CWE-367",
-    "ransomware": false,
-    "description": "ReadWriteLock and AsyncReadWriteLock (the SQLite-backed reader/writer lock) remove their private .filelock- link directories with shutil.rmtree (a recursive delete) on a remembered path. They do not check that the path still names the directory they created. This happens on the hard-link route (a hard link is a second name for the same file).",
-    "requiredAction": "Upgrade filelock to version 4.2.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-jqc4-5cvw-7w85"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112937"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-112913",
-    "slug": "cve-2026-112913",
-    "vendor": "Pip",
-    "product": "filelock",
-    "name": "filelock: ReadWriteLock on Windows acts on SQLite side files another local user places beside its database",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 3.3,
-    "severity": "Low",
-    "cwe": "CWE-367",
-    "ransomware": false,
-    "description": "On Windows, ReadWriteLock and AsyncReadWriteLock (the SQLite-backed reader/writer lock) connect SQLite to the lock database by its path, in every directory.",
-    "requiredAction": "Upgrade filelock to version 4.2.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-9vhv-jxww-xfm5"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112913"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-112907",
-    "slug": "cve-2026-112907",
-    "vendor": "Pip",
-    "product": "filelock",
-    "name": "filelock: On Windows an oplock on a soft lock's marker holds SoftFileLock.acquire() past its timeout and blocks the stale break",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 2.5,
-    "severity": "Low",
-    "cwe": "CWE-667",
-    "ransomware": false,
-    "description": "On Windows the soft locks (SoftFileLock, MarkerSoftFileLock, SoftFileLease, their async forms, and a FileLock that fell back to a soft lock) read their marker by path. The marker is the lock file whose presence says a process holds the lock.",
-    "requiredAction": "Upgrade filelock to version 4.2.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-567q-5qvw-pf92"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112907"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-113713",
-    "slug": "cve-2026-113713",
-    "vendor": "Pip",
-    "product": "virtualenv",
-    "name": "virtualenv: Temporary app-data can leave dangling seed package links",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 4.4,
-    "severity": "Medium",
-    "cwe": "CWE-377",
-    "ransomware": false,
-    "description": "The app-data seeder can leave an environment linked to temporary package files that virtualenv deletes when creation finishes. The environment-variable and configuration-file forms of symlink_app_data can enable this state even though the command-line flag is disabled for temporary app-data. The resulting environment depends on a cache pathname that its owner no longer controls.",
-    "requiredAction": "Upgrade virtualenv to version 21.14.10 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-4f8h-vr72-p32c"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113713"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-113717",
-    "slug": "cve-2026-113717",
-    "vendor": "Pip",
-    "product": "virtualenv",
-    "name": "virtualenv: Pip seeding with download omits wheel digest verification",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 2.3,
-    "severity": "Low",
-    "cwe": "CWE-494",
-    "ransomware": false,
-    "description": "The pip seeder acquires bundled wheels with download=False and lets pip access the index when --download is selected. Index candidates on that path do not pass through virtualenv's wheel digest verification. Anthropic's OSS Scanner reported this as ANT-2026-74ALJBUF in virtualenv-20261015-005, received on 15 October 2026.",
-    "requiredAction": "Upgrade virtualenv to version 21.14.9 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-cx28-75q4-x26q"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113717"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-113714",
-    "slug": "cve-2026-113714",
-    "vendor": "Pip",
-    "product": "virtualenv",
-    "name": "virtualenv: Downloaded wheel selection and caching precede verification",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 2.3,
-    "severity": "Low",
-    "cwe": "CWE-354",
-    "ransomware": false,
-    "description": "Wheel downloads go directly into the reusable wheelhouse, while the verification target is selected from pip's textual output. A verification failure does not remove the downloaded file from that cache. Anthropic's OSS Scanner reported this as ANT-2026-ST00DRO3 in virtualenv-20261015-005, received on 15 October 2026.",
-    "requiredAction": "Upgrade virtualenv to version 21.14.9 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-494p-63j8-28p3"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113714"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-113718",
-    "slug": "cve-2026-113718",
-    "vendor": "Pip",
-    "product": "virtualenv",
-    "name": "virtualenv: Xonsh activation literals depend on the script decoding codec",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 7.1,
-    "severity": "High",
-    "cwe": "CWE-94",
-    "ransomware": false,
-    "description": "Caller-supplied prompt text can become executable syntax in the xonsh activation script. An attacker must influence the value passed to virtualenv, and a user must subsequently activate the environment.",
-    "requiredAction": "Upgrade virtualenv to version 21.14.9 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-394h-qwmc-48pf"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113718"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-113720",
-    "slug": "cve-2026-113720",
-    "vendor": "Pip",
-    "product": "virtualenv",
-    "name": "virtualenv: Seeded files retain permissions from an older cache",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 4.4,
-    "severity": "Medium",
-    "cwe": "CWE-732",
-    "ransomware": false,
-    "description": "The app-data copy seeder uses shutil.copy, which preserves cached file modes independently of the current umask. A cache populated under permissive permissions can therefore produce files with wider access in later environments. Anthropic's OSS Scanner reported this as ANT-2026-487MH6OW in virtualenv-20261015-005, received on 15 October 2026.",
-    "requiredAction": "Upgrade virtualenv to version 21.14.9 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-fc2g-4w5p-6whm"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113720"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-113723",
-    "slug": "cve-2026-113723",
-    "vendor": "Pip",
-    "product": "virtualenv",
-    "name": "virtualenv: Bash prompt values can change meaning under older compatibility modes",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 7.1,
-    "severity": "High",
-    "cwe": "CWE-78",
-    "ransomware": false,
-    "description": "Caller-supplied prompt text can become executable syntax in the bash activation prompt. An attacker must influence the value passed to virtualenv, and a user must subsequently activate the environment and draw the prompt.",
-    "requiredAction": "Upgrade virtualenv to version 21.14.9 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-6w3r-xr62-4xcp"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113723"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-113715",
-    "slug": "cve-2026-113715",
-    "vendor": "Pip",
-    "product": "virtualenv",
-    "name": "virtualenv: Venv configuration readback can reinterpret path boundaries",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 2,
-    "severity": "Low",
-    "cwe": "CWE-93",
-    "ransomware": false,
-    "description": "The venv creator reads the standard library's generated pyvenv.cfg with splitlines() and merges all resulting keys over virtualenv's configuration. Line-boundary characters from destination data can therefore become configuration structure before output sanitization. Anthropic's OSS Scanner reported this as ANT-2026-6ZQHJ6VI in virtualenv-20261015-005, received on 15 October 2026.",
-    "requiredAction": "Upgrade virtualenv to version 21.14.9 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-qmx5-4p3x-wvqf"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113715"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-113719",
-    "slug": "cve-2026-113719",
-    "vendor": "Pip",
-    "product": "virtualenv",
-    "name": "virtualenv: Seed replacement does not contain metadata deletion paths",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 4.5,
-    "severity": "Medium",
-    "cwe": "CWE-22",
-    "ransomware": false,
-    "description": "The app-data seeder joins paths from existing distribution metadata to site-packages and deletes the resulting paths without checking containment within the environment. Anthropic's OSS Scanner reported this as ANT-2026-SXOEHWP7 in virtualenv-20261015-005, received on 15 October 2026.",
-    "requiredAction": "Upgrade virtualenv to version 21.14.9 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-hhxq-47xx-j5xx"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113719"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-109461",
-    "slug": "cve-2026-109461",
-    "vendor": "npm",
-    "product": "@azure/msal-node",
-    "name": "MSAL Node authorization code flow may disclose parameters to an attacker-controlled endpoint",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-346",
-    "ransomware": false,
-    "description": "Origin validation error in Microsoft Authentication Library (MSAL) for Node.js allows an unauthorized attacker to disclose information over a network. This affects the auth_code flow. Version 7.1.0 and higher are patched. Ensure you pass in only the auth_code to to acquireTokenByCode",
-    "requiredAction": "Upgrade @azure/msal-node to version 7.1.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-xcx6-jx8p-x3h5"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109461"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-109869",
-    "slug": "cve-2026-109869",
-    "vendor": "npm",
-    "product": "undici",
-    "name": "undici vulnerable to Denial of Service via unhandled error on excessive content-encodings",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-248",
-    "ransomware": false,
-    "description": "undici's fetch() crashes the Node.js process when a malicious server returns a response with more than five content codings and closes the connection before sending the body. undici rejects such responses (a content-encoding limit), but it created the internal response stream before that check and returned without attaching an error listener or aborting the request.",
-    "requiredAction": "Upgrade undici to version 6.29.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-xjj6-f33q-929c"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109869"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-109924",
-    "slug": "cve-2026-109924",
-    "vendor": "npm",
-    "product": "undici",
-    "name": "undici vulnerable to Denial of Service via unbounded memory in the EventSource parser",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 5.9,
-    "severity": "Medium",
-    "cwe": "CWE-770",
-    "ransomware": false,
-    "description": "undici's EventSource client can be driven to exhaust process memory by a malicious or compromised Server-Sent Events peer. By sending millions of tiny completed data: fields with no blank event separator, or a single unfinished line split across many chunks, the parser retains a growing amount of per-field and per-chunk state.",
-    "requiredAction": "Upgrade undici to version 6.29.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-4qv8-2p9j-2685"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109924"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-109841",
-    "slug": "cve-2026-109841",
-    "vendor": "npm",
-    "product": "undici",
-    "name": "undici vulnerable to Subresource Integrity bypass via non-lowercase algorithm tokens",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 5.9,
-    "severity": "Medium",
-    "cwe": "CWE-178",
-    "ransomware": false,
-    "description": "undici's fetch() verifies Subresource Integrity (SRI) metadata by looking up the algorithm token in a lowercase-only set, but the SRI specification defines a valid token by its ASCII-lowercase form. A correct but non-lowercase token such as SHA256-... or Sha256-... is therefore treated as unknown and skipped.",
-    "requiredAction": "Upgrade undici to version 7.30.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-f72v-6w45-q472"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109841"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-115897",
-    "slug": "cve-2026-115897",
-    "vendor": "npm",
-    "product": "serialize-javascript",
-    "name": "Serialize JavaScript: Cross-site scripting (XSS) via unescaped </script at the end of a serialized function body",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 2.1,
-    "severity": "Low",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "serialize-javascript escapes its output so it is safe to embed inside a <script> element. Before 7.1.3 that guarantee did not hold for a function value whose source ends in a bare </script.",
-    "requiredAction": "Upgrade serialize-javascript to version 7.1.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-m5mm-p8h7-m29v"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115897"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-113872",
-    "slug": "cve-2026-113872",
-    "vendor": "npm",
-    "product": "multer",
-    "name": "multer vulnerable to Denial of Service via a pending asynchronous fileFilter after request teardown",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-248",
-    "ransomware": false,
-    "description": "When multer is configured with an asynchronous fileFilter, a single request can crash the Node.js process. If a request is aborted (for example when one file is rejected) while another file's async fileFilter is still pending, the pending callback later resumes a parsing stream that multer has already torn down.",
-    "requiredAction": "Upgrade multer to version 2.5.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-q7qp-rjg7-q26m"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113872"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-115886",
-    "slug": "cve-2026-115886",
-    "vendor": "Pip",
-    "product": "mlflow",
-    "name": "MLflow: SSRF on unauthenticated MLflow servers via third-party scorer kwargs in the scorer invoke, register, and GenAI evaluate endpoints",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-470",
-    "ransomware": false,
-    "description": "MLflow's tracking server exposes POST /ajax-api/3.0/mlflow/scorer/invoke with no authentication, and the handler reflectively instantiates an attacker-named class from attacker-supplied JSON with unconstrained constructor kwargs.",
-    "requiredAction": "Upgrade mlflow to version 3.17.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-2wqp-q3c6-ccj5"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115886"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-115883",
-    "slug": "cve-2026-115883",
-    "vendor": "Pip",
-    "product": "langgraph-checkpoint-postgres",
-    "name": "LangGraph: Namespace labels containing `.` reach other namespaces in Postgres and SQLite stores",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 6,
-    "severity": "Medium",
-    "cwe": "CWE-20",
-    "ransomware": false,
-    "description": "The Postgres and SQLite stores save a namespace as its labels joined with ., so (\"tenant\", \"bob\") and (\"tenant.bob\",) map to the same stored namespace. put rejected labels containing ., but get, search, delete, list_namespaces, their async versions, and ops passed directly to batch/abatch did not. A caller that could pass such a label could read, overwrite or delete items in another namespace.",
-    "requiredAction": "Upgrade langgraph-checkpoint-postgres to version 3.1.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-6hmw-9432-67qq"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115883"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-115895",
-    "slug": "cve-2026-115895",
-    "vendor": "npm",
-    "product": "happy-dom",
-    "name": "Happy DOM: Incomplete fix for CVE-2026-33943: unsanitized import alias leads to host code execution",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 8.8,
-    "severity": "High",
-    "cwe": "CWE-94",
-    "ransomware": false,
-    "description": "The ESM compiler in happy-dom@20.14.5 does not validate imported local binding aliases before interpolating them into generated JavaScript. As a result, an invalid ESM import alias can be transformed into a valid JavaScript destructuring default initializer and executed. This appears to be an alternate injection path and incomplete remediation of GHSA-6q6h-j7hj-3r64 / CVE-2026-33943.",
-    "requiredAction": "Upgrade happy-dom to version 21.0.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-834v-8h66-3h79"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115895"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-115892",
-    "slug": "cve-2026-115892",
-    "vendor": "Rust (Cargo)",
-    "product": "wasmtime",
-    "name": "Wasmtime: Panic lowering a host-created component model stream into a guest that expects a different payload type",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 5.7,
-    "severity": "Medium",
-    "cwe": "CWE-843",
-    "ransomware": false,
-    "description": "Wasmtime may panic when the host lowers a component model stream or future into a guest, if the host created that stream or future with one payload type and the guest expects a different one.",
-    "requiredAction": "Upgrade wasmtime to version 48.0.7 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-9pvw-hwfg-92h5"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115892"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-115889",
-    "slug": "cve-2026-115889",
-    "vendor": "Rust (Cargo)",
-    "product": "wasmtime",
-    "name": "Wasmtime: Bit-packing in Cranelift compiler causes silent overflow and miscompilation",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 9.9,
-    "severity": "Critical",
-    "cwe": "CWE-197",
-    "ransomware": false,
-    "description": "In Wasmtime prior to v43, the Cranelift compiler backend bit-packs its SSA value indices in a way that can result in silent overflow in release builds, and result in incorrect value references in the IR resulting in arbitrary miscompilation.",
-    "requiredAction": "Upgrade wasmtime to version 36.0.19 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-897f-g5gm-fmxm"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115889"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-112906",
-    "slug": "cve-2026-112906",
-    "vendor": "Pip",
-    "product": "filelock",
-    "name": "filelock: SoftFileLock evicts a fresh lock file whose watched age another local user's pre-dated file passed on through inode reuse",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 4.7,
-    "severity": "Medium",
-    "cwe": "CWE-694",
-    "ransomware": false,
-    "description": "SoftFileLock and MarkerSoftFileLock evict an unparsable marker (the lock file at <path>, whose presence says a process holds the lock) once a waiting contender has watched it unchanged for two seconds. SoftFileLease expires a lease the same way.",
-    "requiredAction": "Upgrade filelock to version 4.2.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-2g95-wg33-c5x2"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112906"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-112914",
-    "slug": "cve-2026-112914",
-    "vendor": "Pip",
-    "product": "filelock",
-    "name": "filelock: SoftFileLock stale-break restore follows a swapped-in symbolic link and hard-links a file of the user running the lock into the lock directory",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-59",
-    "ransomware": false,
-    "description": "When a soft-lock stale break finds that the marker (the lock file at <path>) it renamed aside was a live one recreated by a successor, the restore branch of break_lock_file() checks the break name with lstat (a check that reads a name without following a symbolic link) and then calls os.link(break_path, lock_file) by name.",
-    "requiredAction": "Upgrade filelock to version 4.2.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-crv4-6mhj-j5jh"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112914"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-112940",
-    "slug": "cve-2026-112940",
-    "vendor": "Pip",
-    "product": "filelock",
-    "name": "filelock ReadWriteLock: SQLite reopens the lock database by name, so a planted symlink or journal file makes the lock user's process overwrite or unlink its own files",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 7.1,
-    "severity": "High",
-    "cwe": "CWE-59",
-    "ransomware": false,
-    "description": "ReadWriteLock and AsyncReadWriteLock (the SQLite-backed reader/writer lock) hand SQLite a name they do not control. On Linux the lock validates its database through a descriptor (the number the kernel gives a process for an open file). It then connects SQLite to /proc/self/fd/<n>, a Linux path that names the process's own open file n.",
-    "requiredAction": "Upgrade filelock to version 4.2.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-v4x8-3wr5-3wq8"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112940"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-h4fr-cmh5-qr62",
-    "slug": "ghsa-h4fr-cmh5-qr62",
-    "vendor": "npm",
-    "product": "fallow",
-    "name": "Fallow: A `.*` glob segment let an analyzed repository make Fallow test paths in the parent of the project root",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 3.3,
-    "severity": "Low",
-    "cwe": "CWE-22",
-    "ransomware": false,
-    "description": "Fallow expands some globs from the analyzed repository on disk. Before 3.34.0, a segment such as ., .? or .. in such a glob also matched the special .. entry. The glob crate tests .. against a segment that starts with a literal .. Fallow validates plugin glob patterns and refuses absolute paths and .. segments, but these segments passed that validation.",
-    "requiredAction": "Upgrade fallow to version 3.34.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-h4fr-cmh5-qr62"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-115569",
-    "slug": "cve-2026-115569",
-    "vendor": "npm",
-    "product": "fallow",
-    "name": "Fallow: Jest and Vitest `projects` entries let an analyzed repository make Fallow read files outside the project root",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 3.3,
-    "severity": "Low",
-    "cwe": "CWE-22",
-    "ransomware": false,
-    "description": "Fallow reads the Jest and Vitest configs of the repository that it analyzes. A Jest projects entry or a Vitest test.projects entry can name a path. Fallow followed such an entry to a config file and read that file, also when the file was outside the project root. These forms reached outside the root: - an absolute path or glob, for example /etc/; - a path with ..",
-    "requiredAction": "Upgrade fallow to version 3.34.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-jfwm-3p3c-6hx5"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115569"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-112398",
-    "slug": "cve-2026-112398",
-    "vendor": "Pip",
-    "product": "pillow",
-    "name": "Pillow: Heap buffer overflow in FlashPix (FPX) JPEG decoding leads to code execution",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 9.2,
-    "severity": "Critical",
-    "cwe": "CWE-122",
-    "ransomware": false,
-    "description": "A heap buffer overflow in Pillow's FlashPix (FPX) JPEG-tile decoder lets an attacker achieve arbitrary code execution by getting an application to open a single crafted file with Image.open().",
-    "requiredAction": "Upgrade pillow to version 13.0.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-5x8w-8jj5-q52h"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112398"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-f2hq-32vh-53cc",
-    "slug": "ghsa-f2hq-32vh-53cc",
-    "vendor": "npm",
-    "product": "postal-mime",
-    "name": "postal-mime: Quadratic CPU consumption when decoding a header of many joinable RFC 2047 base64 encoded words",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "Decoding a header that holds a long run of joinable RFC 2047 base64 encoded words, such as =?utf-8?B?QUJD?= repeated tens of thousands of times in a Subject, From, To, a filename or a description, took time quadratic in the number of words. The join check ran a regex over the text joined so far for every word, which flattens the accumulated string each time.",
-    "requiredAction": "Upgrade postal-mime to version 4.0.8 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-f2hq-32vh-53cc"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-114501",
-    "slug": "cve-2026-114501",
-    "vendor": "Pip",
-    "product": "Pillow",
-    "name": "Pillow: Arrow export leaks stale heap memory when PILLOW_ALIGNMENT > 1",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 6.3,
-    "severity": "Medium",
-    "cwe": "CWE-226",
-    "ransomware": false,
-    "description": "When PILLOW_ALIGNMENT is set above 1, exporting an image to Arrow returns uninitialized heap memory mixed in with the pixel data. That memory can include pixels from images the process freed earlier.",
-    "requiredAction": "Upgrade Pillow to version 13.0.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-654x-cwwv-5j9c"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114501"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-8c8m-p3m8-cjg8",
-    "slug": "ghsa-8c8m-p3m8-cjg8",
-    "vendor": "npm",
-    "product": "nodemailer",
-    "name": "Nodemailer: A nested comment ends early in addressparser, releasing the rest of the comment as a recipient",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-20",
-    "ransomware": false,
-    "description": "RFC 5322 comments nest. addressparser ended a comment at the first ), including the one that closes a nested comment, and parsed the rest of the outer comment as header text. Victim (x(y) <evil@evil.com>) <v@victim.com> names v@victim.com with x(y) <evil@evil.com> as a comment, and Nodemailer read it as the address evil@evil.com.",
-    "requiredAction": "Upgrade nodemailer to version 10.1.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-8c8m-p3m8-cjg8"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-m943-m63m-w62w",
-    "slug": "ghsa-m943-m63m-w62w",
-    "vendor": "npm",
-    "product": "nodemailer",
-    "name": "Nodemailer: A \";\" inside a quoted string or comment ends an address group early in addressparser, turning display text into a recipient",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-20",
-    "ransomware": false,
-    "description": "addressparser ends an RFC 5322 group at the first ;, including one inside a quoted display name or a comment. The text after it is parsed again as top level recipients with the quoting flipped, so text that every conformant parser reads as a display name or comment becomes a live address.",
-    "requiredAction": "Upgrade nodemailer to version 10.1.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-m943-m63m-w62w"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-85x2-q946-cp5h",
-    "slug": "ghsa-85x2-q946-cp5h",
-    "vendor": "npm",
-    "product": "nodemailer",
-    "name": "Nodemailer: A \">\" inside a quoted local part ends an angle-addr early in addressparser, delivering to a domain the header does not name",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-20",
-    "ransomware": false,
-    "description": "addressparser ends an angle-addr at the first > it sees, including one inside a quoted local part, a comment or a domain literal. The domain is then read off the text in front of that >. <\"a@evil.com>\"@good.com> is the mailbox \"a@evil.com>\"@good.com under RFC 5322, and Nodemailer read it as an address at evil.com. The unbracketed spelling of the same value was already read correctly.",
-    "requiredAction": "Upgrade nodemailer to version 10.1.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-85x2-q946-cp5h"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-114509",
-    "slug": "cve-2026-114509",
-    "vendor": "Composer",
-    "product": "laravel/framework",
-    "name": "Laravel TokenGuard authentication bypass through non-string API credentials",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 9.2,
-    "severity": "Critical",
-    "cwe": "CWE-287",
-    "ransomware": false,
-    "description": "Laravel's built-in TokenGuard, when configured with a standard token-based API guard, may be bypassed to authenticate as an arbitrary existing user without knowledge of their valid API token.",
-    "requiredAction": "Upgrade laravel/framework to version 13.29.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-f9x3-7vq9-cph6"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114509"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-114508",
-    "slug": "cve-2026-114508",
-    "vendor": "Composer",
-    "product": "laravel/framework",
-    "name": "Laravel relationship inclusion can trigger unauthorized data destruction",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-470",
-    "ransomware": false,
-    "description": "A vulnerability in how relationship inclusion is processed on certain read endpoints. Under specific conditions, a request to a read-only endpoint can be crafted to trigger a destructive database operation on a related table, rather than simply retrieving data.",
-    "requiredAction": "Upgrade laravel/framework to version 12.68.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-5wcm-3v2w-8362"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114508"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-xmj3-9gf7-h52w",
-    "slug": "ghsa-xmj3-9gf7-h52w",
-    "vendor": "Pip",
-    "product": "setuptools",
-    "name": "setuptools: Windows path escape via namespace_packages.txt during legacy wheel installation  Description",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 1,
-    "severity": "Low",
-    "cwe": "CWE-22",
-    "ransomware": false,
-    "description": "On Windows, attacker-controlled content in a wheel's .dist-info/namespace_packages.txt can cause setuptools' legacy wheel installation path to create an init.py outside the requested destination_eggdir. The attacker can influence the destination path, but not the contents of the created file.",
-    "requiredAction": "Upgrade setuptools to version 84.1.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-xmj3-9gf7-h52w"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-110306",
-    "slug": "cve-2026-110306",
-    "vendor": "npm",
-    "product": "fast-uri",
-    "name": "fast-uri vulnerable to URI scheme spoofing via percent-encoded scheme decoding",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 6.1,
-    "severity": "Medium",
-    "cwe": "CWE-172",
-    "ransomware": false,
-    "description": "fast-uri percent-decodes the scheme component with the legacy global unescape() before validating it, so an input whose decoded scheme is a valid but dangerous token is emitted as a live scheme. RFC 3986 section 3.1 does not allow percent-encoding in a scheme, so no RFC or WHATWG parser treats such input as having that scheme, but fast-uri does.",
-    "requiredAction": "Upgrade fast-uri to version 2.4.8 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-w74x-v6f9-j3xg"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110306"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-110095",
-    "slug": "cve-2026-110095",
-    "vendor": "npm",
-    "product": "fast-uri",
-    "name": "fast-uri vulnerable to improper path equivalence in relative reference normalization",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 3.7,
-    "severity": "Low",
-    "cwe": "CWE-41",
-    "ransomware": false,
-    "description": "fast-uri's normalize() and serialize() apply RFC 3986 dot-segment removal (remove_dot_segments) to the path of a relative-path reference. RFC 3986 section 5.2.4 defines that algorithm only for the merged target path during resolution, not for the reference itself, so applied to the reference it drops leading .. segments and can turn a document-relative reference into a root-relative one.",
-    "requiredAction": "Upgrade fast-uri to version 2.4.8 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-xhq7-xmqj-769h"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110095"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-110180",
-    "slug": "cve-2026-110180",
-    "vendor": "npm",
-    "product": "fast-uri",
-    "name": "fast-uri vulnerable to host confusion via unchecked WHATWG host canonicalization",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 4.8,
-    "severity": "Medium",
-    "cwe": "CWE-20",
-    "ransomware": false,
-    "description": "fast-uri versions >= 2.4.2, <= 2.4.7, >= 3.1.3, <= 3.1.8, and >= 4.0.1, <= 4.2.2 can silently rewrite the host of an HTTP-family URL (http, https, ws, wss, or any scheme with domainHost: true). For those schemes canonicalizeHost() passes the parsed host to the WHATWG URL parser and adopts its .hostname without checking that the parser read the whole input as a host.",
-    "requiredAction": "Upgrade fast-uri to version 2.4.8 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-wjr9-j795-jxcr"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110180"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-110725",
-    "slug": "cve-2026-110725",
-    "vendor": "npm",
-    "product": "fast-uri",
-    "name": "fast-uri vulnerable to scheme injection via an unescaped first-segment colon in suffix references",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 3.7,
-    "severity": "Low",
-    "cwe": "CWE-41",
-    "ransomware": false,
-    "description": "fast-uri's serialize(), normalize(), and resolve(), when called with the non-default option reference: 'suffix' on a reference that has no authority, emit a relative reference whose first path segment contains a bare colon without escaping it.",
-    "requiredAction": "Upgrade fast-uri to version 2.4.8 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-333x-w4r6-6crp"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110725"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-7xgj-8392-5q4r",
-    "slug": "ghsa-7xgj-8392-5q4r",
-    "vendor": "Pip",
-    "product": "fastmcp",
-    "name": "FastMCP: Post-transform component authorization is skipped on direct calls",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 6.8,
-    "severity": "Medium",
-    "cwe": "CWE-862",
-    "ransomware": false,
-    "description": "FastMCP's direct component paths can return a transformed component before its applicable AuthCheck, allowing low-privilege callers to execute hidden protected behavior. I reproduced this against FastMCP 4.1.0 and commit e2fcc412001ff7414095c5dc282f94c70299a612 using only an in-process FastMCP server. The attacker does not have server-side access and does not control FastMCP configuration.",
-    "requiredAction": "Upgrade fastmcp to version 3.4.10 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-7xgj-8392-5q4r"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-vqqp-x5qm-5qp4",
-    "slug": "ghsa-vqqp-x5qm-5qp4",
-    "vendor": "Pip",
-    "product": "fastmcp",
-    "name": "FastMCP MCP client wrappers construct M2M OAuth providers without issuer binding — client secret redirectable to attacker-advertised authorization server",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 5.9,
-    "severity": "Medium",
-    "cwe": "CWE-287",
-    "ransomware": false,
-    "description": "fastmcp's ClientCredentialsOAuthProvider and PrivateKeyJWTOAuthProvider do not expose or validate OAuth issuer binding when connecting to MCP servers. A client secret configured for a legitimate authorization server can be transmitted to an attacker-controlled authorization server if the MCP server URL is attacker-supplied or compromised.",
-    "requiredAction": "Upgrade fastmcp to version 4.1.2 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-vqqp-x5qm-5qp4"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-114055",
-    "slug": "cve-2026-114055",
-    "vendor": "Pip",
-    "product": "vllm",
-    "name": "vLLM : DoS via unvalidated mm_processor_kwargs in multimodal image processors (Isaac, InternVL, H2OVL, etc.)",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "API clients can supply arbitrary mm_processor_kwargs per request. vLLM forwards these values through the multimodal rendering and processing pipeline to Hugging Face and custom image/video processor constructors and calls. Resource-sensitive values such as image size, patch size, patch count, crop count, or frame count can therefore be controlled by a remote client.",
-    "requiredAction": "Upgrade vllm to version 0.31.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-gx7p-2j49-hfq4"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114055"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-114060",
-    "slug": "cve-2026-114060",
-    "vendor": "npm",
-    "product": "@sveltejs/kit",
-    "name": "SvelteKit: URL redirection to untrusted site via enhanced form submission",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 2.1,
-    "severity": "Low",
-    "cwe": "CWE-601",
-    "ransomware": false,
-    "description": "Applications using enhanced form actions (use:enhance) on routes that accept paths beginning with //, such as catch-all routes, may be vulnerable to an open redirect. A fix has been prepared for @sveltejs/kit 3.0.0. Users should upgrade to 3.0.0 or later.",
-    "requiredAction": "Upgrade @sveltejs/kit to version 3.0.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-pfhg-q3qv-9q6r"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114060"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-114437",
-    "slug": "cve-2026-114437",
-    "vendor": "Go",
-    "product": "chi (v5) · go-chi",
-    "name": "chi: Client IP spoofing in ClientIPFromXFF via X-Forwarded-For",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 4.8,
-    "severity": "Medium",
-    "cwe": "CWE-345",
-    "ransomware": false,
-    "description": "ClientIPFromXFF skips any X-Forwarded-For entry in a configured trusted CIDR but never verifies that the direct TCP peer in http.Request.RemoteAddr belongs to that CIDR. A client that can reach the Go server directly can therefore append a trusted-looking proxy address and choose the client IP returned by middleware.GetClientIP.",
-    "requiredAction": "Upgrade chi (v5) · go-chi to version 5.4.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-j6qf-3m9c-vwj3"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114437"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-2rqm-h6hv-g79v",
-    "slug": "ghsa-2rqm-h6hv-g79v",
-    "vendor": "npm",
-    "product": "odf-kit",
-    "name": "odf-kit has HTML injection leading to XSS in odsToHtml() via unescaped style attribute values",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 6.1,
-    "severity": "Medium",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "ODF style values are interpolated into style=\"...\" attributes without HTML-escaping in odf-kit's ODS to-HTML renderer (odsToHtml()).",
-    "requiredAction": "Upgrade odf-kit to version 0.14.2 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-2rqm-h6hv-g79v"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-115572",
-    "slug": "cve-2026-115572",
-    "vendor": "Pip",
-    "product": "pypdf",
-    "name": "pypdf: Possible long runtimes for repeated references to the same missing object",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 7.1,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "An attacker who uses this vulnerability can craft a PDF which leads to long runtimes. This requires loading relevant parts of a file (like their pages) where the same, but non-existent indirect object is referenced multiple times. This has been fixed in pypdf==6.21.2. If you cannot upgrade yet, consider applying the changes from PR #4240.",
-    "requiredAction": "Upgrade pypdf to version 6.21.2 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-6c7f-9265-g8fw"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115572"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-115585",
-    "slug": "cve-2026-115585",
-    "vendor": "Pip",
-    "product": "pypdf",
-    "name": "pypdf: Possible long runtimes for repeated malformed cross-reference entries (Follow-up)",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 7.1,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "An attacker who uses this vulnerability can craft a PDF which leads to long runtimes. This requires cross-reference streams with repeated malformed cross-reference streams. This has been fixed in pypdf==6.21.2. If you cannot upgrade yet, consider applying the changes from PR #4240.",
-    "requiredAction": "Upgrade pypdf to version 6.21.2 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-jr96-gvgh-j3r4"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115585"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-115580",
-    "slug": "cve-2026-115580",
-    "vendor": "Pip",
-    "product": "pypdf",
-    "name": "pypdf: Possible long runtimes for large xref table header limits",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 7.1,
-    "severity": "High",
-    "cwe": "CWE-834",
-    "ransomware": false,
-    "description": "An attacker who uses this vulnerability can craft a PDF which leads to long runtimes. This requires opening a file with large/wrong upper limits in the xref table. This has been fixed in pypdf==6.21.2. If you cannot upgrade yet, consider applying the changes from PR #4239.",
-    "requiredAction": "Upgrade pypdf to version 6.21.2 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-gmh7-3g9r-mjh5"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115580"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-115567",
-    "slug": "cve-2026-115567",
-    "vendor": "Rust (Cargo)",
-    "product": "tokio",
-    "name": "Tokio: Race condition in `tokio::time::Interval`",
-    "dateAdded": "2026-10-23",
-    "dueDate": "",
-    "cvss": 5.8,
-    "severity": "Medium",
-    "cwe": "CWE-362",
-    "ransomware": false,
-    "description": "On the multi-threaded runtime, there is a race condition between Interval::poll_tick and the runtime's time driver. This affects Interval only. Sleep and Timeout are not affected.",
-    "requiredAction": "Upgrade tokio to version 1.54.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-5wjr-9356-4wc8"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115567"
-      }
-    ],
-    "source": "GITHUB"
   },
   {
     "cve": "CVE-2026-106931",
@@ -1335,7 +1439,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-106931"
       }
     ],
     "source": "CISA KEV"
@@ -1360,7 +1464,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-96656"
       }
     ],
     "source": "CISA KEV"
@@ -1385,7 +1489,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-96655"
       }
     ],
     "source": "CISA KEV"
@@ -1410,7 +1514,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-96654"
       }
     ],
     "source": "CISA KEV"
@@ -1435,7 +1539,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-96652"
       }
     ],
     "source": "CISA KEV"
@@ -1460,7 +1564,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-110936"
       }
     ],
     "source": "CISA KEV"
@@ -1485,7 +1589,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-102764"
       }
     ],
     "source": "CISA KEV"
@@ -1510,7 +1614,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-61624"
       }
     ],
     "source": "CISA KEV"
@@ -1535,7 +1639,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-21589"
       }
     ],
     "source": "CISA KEV"
@@ -1560,7 +1664,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-105134"
       }
     ],
     "source": "CISA KEV"
@@ -1585,7 +1689,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-76519"
       }
     ],
     "source": "CISA KEV"
@@ -1610,7 +1714,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-105133"
       }
     ],
     "source": "CISA KEV"
@@ -1635,7 +1739,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-0322"
       }
     ],
     "source": "CISA KEV"
@@ -1660,7 +1764,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-104935"
       }
     ],
     "source": "CISA KEV"
@@ -1685,7 +1789,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-96951"
       }
     ],
     "source": "CISA KEV"
@@ -1710,7 +1814,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-5477"
       }
     ],
     "source": "CISA KEV"
@@ -1735,7 +1839,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-3081"
       }
     ],
     "source": "CISA KEV"
@@ -1760,7 +1864,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-22894"
       }
     ],
     "source": "CISA KEV"
@@ -1785,7 +1889,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-3199"
       }
     ],
     "source": "CISA KEV"
@@ -1810,7 +1914,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-3306"
       }
     ],
     "source": "CISA KEV"
@@ -1835,7 +1939,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-88779"
       }
     ],
     "source": "CISA KEV"
@@ -1860,7 +1964,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-102490"
       }
     ],
     "source": "CISA KEV"
@@ -1885,7 +1989,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-102489"
       }
     ],
     "source": "CISA KEV"
@@ -1910,7 +2014,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-104286"
       }
     ],
     "source": "CISA KEV"
@@ -1935,7 +2039,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-76504"
       }
     ],
     "source": "CISA KEV"
@@ -1960,7 +2064,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-86950"
       }
     ],
     "source": "CISA KEV"
@@ -1985,7 +2089,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-88772"
       }
     ],
     "source": "CISA KEV"
@@ -2010,7 +2114,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-88771"
       }
     ],
     "source": "CISA KEV"
@@ -2035,7 +2139,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-67279"
       }
     ],
     "source": "CISA KEV"
@@ -2060,7 +2164,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-65660"
       }
     ],
     "source": "CISA KEV"
@@ -2085,7 +2189,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-87902"
       }
     ],
     "source": "CISA KEV"
@@ -2110,7 +2214,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-5430"
       }
     ],
     "source": "CISA KEV"
@@ -2135,7 +2239,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-71362"
       }
     ],
     "source": "CISA KEV"
@@ -2160,7 +2264,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-93952"
       }
     ],
     "source": "CISA KEV"
@@ -2185,7 +2289,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-94127"
       }
     ],
     "source": "CISA KEV"
@@ -2210,7 +2314,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-93616"
       }
     ],
     "source": "CISA KEV"
@@ -2235,7 +2339,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-85102"
       }
     ],
     "source": "CISA KEV"
@@ -2260,7 +2364,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-7273"
       }
     ],
     "source": "CISA KEV"
@@ -2285,7 +2389,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-39964"
       }
     ],
     "source": "CISA KEV"
@@ -2310,7 +2414,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-53266"
       }
     ],
     "source": "CISA KEV"
@@ -2335,7 +2439,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-39682"
       }
     ],
     "source": "CISA KEV"
@@ -2360,7 +2464,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-58704"
       }
     ],
     "source": "CISA KEV"
@@ -2385,7 +2489,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-76460"
       }
     ],
     "source": "CISA KEV"
@@ -2410,7 +2514,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-87886"
       }
     ],
     "source": "CISA KEV"
@@ -2435,7 +2539,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-76461"
       }
     ],
     "source": "CISA KEV"
@@ -2460,7 +2564,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-84869"
       }
     ],
     "source": "CISA KEV"
@@ -2485,7 +2589,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-42016"
       }
     ],
     "source": "CISA KEV"
@@ -2510,7 +2614,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-42018"
       }
     ],
     "source": "CISA KEV"
@@ -2535,7 +2639,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-85706"
       }
     ],
     "source": "CISA KEV"
@@ -2560,7 +2664,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-86060"
       }
     ],
     "source": "CISA KEV"
@@ -2585,7 +2689,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-67277"
       }
     ],
     "source": "CISA KEV"
@@ -2610,7 +2714,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-19490"
       }
     ],
     "source": "CISA KEV"
@@ -2635,7 +2739,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-25249"
       }
     ],
     "source": "CISA KEV"
@@ -2660,7 +2764,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-87491"
       }
     ],
     "source": "CISA KEV"
@@ -2685,7 +2789,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-20079"
       }
     ],
     "source": "CISA KEV"
@@ -2710,7 +2814,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-75650"
       }
     ],
     "source": "CISA KEV"
@@ -2735,7 +2839,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-81963"
       }
     ],
     "source": "CISA KEV"
@@ -2760,7 +2864,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-86218"
       }
     ],
     "source": "CISA KEV"
@@ -2785,7 +2889,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-85880"
       }
     ],
     "source": "CISA KEV"
@@ -2810,7 +2914,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-85046"
       }
     ],
     "source": "CISA KEV"
@@ -2835,7 +2939,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-59822"
       }
     ],
     "source": "CISA KEV"
@@ -2860,7 +2964,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-48710"
       }
     ],
     "source": "CISA KEV"
@@ -2885,7 +2989,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-49869"
       }
     ],
     "source": "CISA KEV"
@@ -2910,7 +3014,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-82329"
       }
     ],
     "source": "CISA KEV"
@@ -2935,7 +3039,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-9586"
       }
     ],
     "source": "CISA KEV"
@@ -2960,7 +3064,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-83548"
       }
     ],
     "source": "CISA KEV"
@@ -2985,7 +3089,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-83549"
       }
     ],
     "source": "CISA KEV"
@@ -3010,7 +3114,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-82078"
       }
     ],
     "source": "CISA KEV"
@@ -3035,7 +3139,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-81578"
       }
     ],
     "source": "CISA KEV"
@@ -3060,7 +3164,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-49105"
       }
     ],
     "source": "CISA KEV"
@@ -3085,7 +3189,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-53362"
       }
     ],
     "source": "CISA KEV"
@@ -3110,7 +3214,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-66384"
       }
     ],
     "source": "CISA KEV"
@@ -3135,7 +3239,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-23758"
       }
     ],
     "source": "CISA KEV"
@@ -3160,7 +3264,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-3246"
       }
     ],
     "source": "CISA KEV"
@@ -3185,7 +3289,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-5287"
       }
     ],
     "source": "CISA KEV"
@@ -3210,7 +3314,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-0995"
       }
     ],
     "source": "CISA KEV"
@@ -3235,7 +3339,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-8452"
       }
     ],
     "source": "CISA KEV"
@@ -3260,7 +3364,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-1068"
       }
     ],
     "source": "CISA KEV"
@@ -3285,7 +3389,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-60004"
       }
     ],
     "source": "CISA KEV"
@@ -3310,7 +3414,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-21962"
       }
     ],
     "source": "CISA KEV"
@@ -3335,7 +3439,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-73570"
       }
     ],
     "source": "CISA KEV"
@@ -3360,7 +3464,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-72530"
       }
     ],
     "source": "CISA KEV"
@@ -3385,7 +3489,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-72529"
       }
     ],
     "source": "CISA KEV"
@@ -3410,7 +3514,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-64849"
       }
     ],
     "source": "CISA KEV"
@@ -3435,7 +3539,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-33824"
       }
     ],
     "source": "CISA KEV"
@@ -3460,7 +3564,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-59310"
       }
     ],
     "source": "CISA KEV"
@@ -3485,7 +3589,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-55040"
       }
     ],
     "source": "CISA KEV"
@@ -3510,7 +3614,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-65400"
       }
     ],
     "source": "CISA KEV"
@@ -3535,7 +3639,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-62593"
       }
     ],
     "source": "CISA KEV"
@@ -3560,7 +3664,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-20349"
       }
     ],
     "source": "CISA KEV"
@@ -3585,7 +3689,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-68820"
       }
     ],
     "source": "CISA KEV"
@@ -3610,7 +3714,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-72898"
       }
     ],
     "source": "CISA KEV"
@@ -3635,7 +3739,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-8037"
       }
     ],
     "source": "CISA KEV"
@@ -3660,7 +3764,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-63077"
       }
     ],
     "source": "CISA KEV"
@@ -3685,7 +3789,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-18556"
       }
     ],
     "source": "CISA KEV"
@@ -3710,7 +3814,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-34486"
       }
     ],
     "source": "CISA KEV"
@@ -3735,7 +3839,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-9198"
       }
     ],
     "source": "CISA KEV"
@@ -3760,7 +3864,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-18577"
       }
     ],
     "source": "CISA KEV"
@@ -3785,7 +3889,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-20316"
       }
     ],
     "source": "CISA KEV"
@@ -3810,7 +3914,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-68686"
       }
     ],
     "source": "CISA KEV"
@@ -3835,7 +3939,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-16812"
       }
     ],
     "source": "CISA KEV"
@@ -3860,7 +3964,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-16232"
       }
     ],
     "source": "CISA KEV"
@@ -3885,7 +3989,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-50522"
       }
     ],
     "source": "CISA KEV"
@@ -3910,7 +4014,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-60137"
       }
     ],
     "source": "CISA KEV"
@@ -3935,7 +4039,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-63030"
       }
     ],
     "source": "CISA KEV"
@@ -3960,7 +4064,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-0770"
       }
     ],
     "source": "CISA KEV"
@@ -3985,7 +4089,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-27137"
       }
     ],
     "source": "CISA KEV"
@@ -4010,7 +4114,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-58644"
       }
     ],
     "source": "CISA KEV"
@@ -4035,7 +4139,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-25089"
       }
     ],
     "source": "CISA KEV"
@@ -4060,7 +4164,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-39808"
       }
     ],
     "source": "CISA KEV"
@@ -4085,7 +4189,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-46817"
       }
     ],
     "source": "CISA KEV"
@@ -4110,7 +4214,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-4346"
       }
     ],
     "source": "CISA KEV"
@@ -4135,7 +4239,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-56155"
       }
     ],
     "source": "CISA KEV"
@@ -4160,7 +4264,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-56164"
       }
     ],
     "source": "CISA KEV"
@@ -4185,7 +4289,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-15409"
       }
     ],
     "source": "CISA KEV"
@@ -4210,7 +4314,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-15410"
       }
     ],
     "source": "CISA KEV"
@@ -4235,7 +4339,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2008-4128"
       }
     ],
     "source": "CISA KEV"
@@ -4260,7 +4364,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-56291"
       }
     ],
     "source": "CISA KEV"
@@ -4285,7 +4389,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-48939"
       }
     ],
     "source": "CISA KEV"
@@ -4310,7 +4414,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-48908"
       }
     ],
     "source": "CISA KEV"
@@ -4335,7 +4439,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-55255"
       }
     ],
     "source": "CISA KEV"
@@ -4360,7 +4464,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-56290"
       }
     ],
     "source": "CISA KEV"
@@ -4385,7 +4489,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-48282"
       }
     ],
     "source": "CISA KEV"
@@ -4410,7 +4514,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-45659"
       }
     ],
     "source": "CISA KEV"
@@ -4435,7 +4539,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-48558"
       }
     ],
     "source": "CISA KEV"
@@ -4460,7 +4564,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-12569"
       }
     ],
     "source": "CISA KEV"
@@ -4485,7 +4589,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-20230"
       }
     ],
     "source": "CISA KEV"
@@ -4510,7 +4614,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-67038"
       }
     ],
     "source": "CISA KEV"
@@ -4535,7 +4639,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-34910"
       }
     ],
     "source": "CISA KEV"
@@ -4560,7 +4664,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-34909"
       }
     ],
     "source": "CISA KEV"
@@ -4585,7 +4689,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-34908"
       }
     ],
     "source": "CISA KEV"
@@ -4610,7 +4714,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-20253"
       }
     ],
     "source": "CISA KEV"
@@ -4635,7 +4739,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-48907"
       }
     ],
     "source": "CISA KEV"
@@ -4660,7 +4764,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-54420"
       }
     ],
     "source": "CISA KEV"
@@ -4685,7 +4789,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-20262"
       }
     ],
     "source": "CISA KEV"
@@ -4710,7 +4814,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-35273"
       }
     ],
     "source": "CISA KEV"
@@ -4735,7 +4839,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-10520"
       }
     ],
     "source": "CISA KEV"
@@ -4760,7 +4864,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-11645"
       }
     ],
     "source": "CISA KEV"
@@ -4785,7 +4889,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-7473"
       }
     ],
     "source": "CISA KEV"
@@ -4810,7 +4914,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-20245"
       }
     ],
     "source": "CISA KEV"
@@ -4835,7 +4939,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-42271"
       }
     ],
     "source": "CISA KEV"
@@ -4860,7 +4964,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-50751"
       }
     ],
     "source": "CISA KEV"
@@ -4885,7 +4989,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-28318"
       }
     ],
     "source": "CISA KEV"
@@ -4910,7 +5014,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-45247"
       }
     ],
     "source": "CISA KEV"
@@ -4935,7 +5039,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-0492"
       }
     ],
     "source": "CISA KEV"
@@ -4960,7 +5064,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-48595"
       }
     ],
     "source": "CISA KEV"
@@ -4985,7 +5089,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-21182"
       }
     ],
     "source": "CISA KEV"
@@ -5010,7 +5114,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-0257"
       }
     ],
     "source": "CISA KEV"
@@ -5035,7 +5139,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-48027"
       }
     ],
     "source": "CISA KEV"
@@ -5060,7 +5164,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-45321"
       }
     ],
     "source": "CISA KEV"
@@ -5085,7 +5189,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-8398"
       }
     ],
     "source": "CISA KEV"
@@ -5110,7 +5214,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-48172"
       }
     ],
     "source": "CISA KEV"
@@ -5135,7 +5239,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-9082"
       }
     ],
     "source": "CISA KEV"
@@ -5160,7 +5264,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-34291"
       }
     ],
     "source": "CISA KEV"
@@ -5185,7 +5289,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-34926"
       }
     ],
     "source": "CISA KEV"
@@ -5210,7 +5314,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2008-4250"
       }
     ],
     "source": "CISA KEV"
@@ -5235,7 +5339,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2009-1537"
       }
     ],
     "source": "CISA KEV"
@@ -5260,7 +5364,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2009-3459"
       }
     ],
     "source": "CISA KEV"
@@ -5285,7 +5389,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2010-0249"
       }
     ],
     "source": "CISA KEV"
@@ -5310,7 +5414,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2010-0806"
       }
     ],
     "source": "CISA KEV"
@@ -5335,7 +5439,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-41091"
       }
     ],
     "source": "CISA KEV"
@@ -5360,7 +5464,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-45498"
       }
     ],
     "source": "CISA KEV"
@@ -5385,7 +5489,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-42897"
       }
     ],
     "source": "CISA KEV"
@@ -5410,7 +5514,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-20182"
       }
     ],
     "source": "CISA KEV"
@@ -5435,7 +5539,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-42208"
       }
     ],
     "source": "CISA KEV"
@@ -5460,7 +5564,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-6973"
       }
     ],
     "source": "CISA KEV"
@@ -5485,7 +5589,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-0300"
       }
     ],
     "source": "CISA KEV"
@@ -5510,7 +5614,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-31431"
       }
     ],
     "source": "CISA KEV"
@@ -5535,7 +5639,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-41940"
       }
     ],
     "source": "CISA KEV"
@@ -5560,7 +5664,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-1708"
       }
     ],
     "source": "CISA KEV"
@@ -5585,7 +5689,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-32202"
       }
     ],
     "source": "CISA KEV"
@@ -5610,7 +5714,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-29635"
       }
     ],
     "source": "CISA KEV"
@@ -5635,7 +5739,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-7399"
       }
     ],
     "source": "CISA KEV"
@@ -5660,7 +5764,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-57728"
       }
     ],
     "source": "CISA KEV"
@@ -5685,7 +5789,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-57726"
       }
     ],
     "source": "CISA KEV"
@@ -5710,7 +5814,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-39987"
       }
     ],
     "source": "CISA KEV"
@@ -5735,7 +5839,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-33825"
       }
     ],
     "source": "CISA KEV"
@@ -5760,7 +5864,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-20122"
       }
     ],
     "source": "CISA KEV"
@@ -5785,7 +5889,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-20133"
       }
     ],
     "source": "CISA KEV"
@@ -5810,7 +5914,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-2749"
       }
     ],
     "source": "CISA KEV"
@@ -5835,7 +5939,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-27351"
       }
     ],
     "source": "CISA KEV"
@@ -5860,7 +5964,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-48700"
       }
     ],
     "source": "CISA KEV"
@@ -5885,7 +5989,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-20128"
       }
     ],
     "source": "CISA KEV"
@@ -5910,7 +6014,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-32975"
       }
     ],
     "source": "CISA KEV"
@@ -5935,7 +6039,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-27199"
       }
     ],
     "source": "CISA KEV"
@@ -5960,7 +6064,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-34197"
       }
     ],
     "source": "CISA KEV"
@@ -5985,7 +6089,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2009-0238"
       }
     ],
     "source": "CISA KEV"
@@ -6010,7 +6114,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-32201"
       }
     ],
     "source": "CISA KEV"
@@ -6035,7 +6139,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2012-1854"
       }
     ],
     "source": "CISA KEV"
@@ -6060,7 +6164,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-60710"
       }
     ],
     "source": "CISA KEV"
@@ -6085,7 +6189,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-21529"
       }
     ],
     "source": "CISA KEV"
@@ -6110,7 +6214,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-36424"
       }
     ],
     "source": "CISA KEV"
@@ -6135,7 +6239,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-9715"
       }
     ],
     "source": "CISA KEV"
@@ -6160,7 +6264,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-21643"
       }
     ],
     "source": "CISA KEV"
@@ -6185,7 +6289,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-34621"
       }
     ],
     "source": "CISA KEV"
@@ -6210,7 +6314,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-1340"
       }
     ],
     "source": "CISA KEV"
@@ -6235,7 +6339,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-35616"
       }
     ],
     "source": "CISA KEV"
@@ -6260,7 +6364,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-3502"
       }
     ],
     "source": "CISA KEV"
@@ -6285,7 +6389,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-5281"
       }
     ],
     "source": "CISA KEV"
@@ -6310,7 +6414,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-3055"
       }
     ],
     "source": "CISA KEV"
@@ -6335,7 +6439,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-53521"
       }
     ],
     "source": "CISA KEV"
@@ -6360,7 +6464,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-33634"
       }
     ],
     "source": "CISA KEV"
@@ -6385,7 +6489,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-33017"
       }
     ],
     "source": "CISA KEV"
@@ -6410,7 +6514,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-32432"
       }
     ],
     "source": "CISA KEV"
@@ -6435,7 +6539,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-54068"
       }
     ],
     "source": "CISA KEV"
@@ -6460,7 +6564,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-43510"
       }
     ],
     "source": "CISA KEV"
@@ -6485,7 +6589,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-43520"
       }
     ],
     "source": "CISA KEV"
@@ -6510,7 +6614,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-31277"
       }
     ],
     "source": "CISA KEV"
@@ -6535,7 +6639,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-20131"
       }
     ],
     "source": "CISA KEV"
@@ -6560,7 +6664,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-66376"
       }
     ],
     "source": "CISA KEV"
@@ -6585,7 +6689,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-20963"
       }
     ],
     "source": "CISA KEV"
@@ -6610,7 +6714,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-47813"
       }
     ],
     "source": "CISA KEV"
@@ -6635,7 +6739,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-3910"
       }
     ],
     "source": "CISA KEV"
@@ -6660,7 +6764,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-3909"
       }
     ],
     "source": "CISA KEV"
@@ -6685,7 +6789,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-68613"
       }
     ],
     "source": "CISA KEV"
@@ -6710,7 +6814,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-22054"
       }
     ],
     "source": "CISA KEV"
@@ -6735,7 +6839,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-26399"
       }
     ],
     "source": "CISA KEV"
@@ -6760,7 +6864,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-1603"
       }
     ],
     "source": "CISA KEV"
@@ -6785,7 +6889,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-7921"
       }
     ],
     "source": "CISA KEV"
@@ -6810,7 +6914,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-22681"
       }
     ],
     "source": "CISA KEV"
@@ -6835,7 +6939,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-43000"
       }
     ],
     "source": "CISA KEV"
@@ -6860,7 +6964,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-30952"
       }
     ],
     "source": "CISA KEV"
@@ -6885,7 +6989,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-41974"
       }
     ],
     "source": "CISA KEV"
@@ -6910,7 +7014,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-22719"
       }
     ],
     "source": "CISA KEV"
@@ -6935,7 +7039,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-21385"
       }
     ],
     "source": "CISA KEV"
@@ -6960,7 +7064,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-20775"
       }
     ],
     "source": "CISA KEV"
@@ -6985,7 +7089,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-20127"
       }
     ],
     "source": "CISA KEV"
@@ -7010,7 +7114,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-25108"
       }
     ],
     "source": "CISA KEV"
@@ -7035,7 +7139,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-49113"
       }
     ],
     "source": "CISA KEV"
@@ -7060,7 +7164,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-68461"
       }
     ],
     "source": "CISA KEV"
@@ -7085,7 +7189,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-22175"
       }
     ],
     "source": "CISA KEV"
@@ -7110,7 +7214,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-22769"
       }
     ],
     "source": "CISA KEV"
@@ -7135,7 +7239,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-7796"
       }
     ],
     "source": "CISA KEV"
@@ -7160,7 +7264,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-7694"
       }
     ],
     "source": "CISA KEV"
@@ -7185,7 +7289,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2008-0015"
       }
     ],
     "source": "CISA KEV"
@@ -7210,7 +7314,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-2441"
       }
     ],
     "source": "CISA KEV"
@@ -7235,7 +7339,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-1731"
       }
     ],
     "source": "CISA KEV"
@@ -7260,7 +7364,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-20700"
       }
     ],
     "source": "CISA KEV"
@@ -7285,7 +7389,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-43468"
       }
     ],
     "source": "CISA KEV"
@@ -7310,7 +7414,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-15556"
       }
     ],
     "source": "CISA KEV"
@@ -7335,7 +7439,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-40536"
       }
     ],
     "source": "CISA KEV"
@@ -7360,7 +7464,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-21513"
       }
     ],
     "source": "CISA KEV"
@@ -7385,7 +7489,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-21525"
       }
     ],
     "source": "CISA KEV"
@@ -7410,7 +7514,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-21510"
       }
     ],
     "source": "CISA KEV"
@@ -7435,7 +7539,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-21533"
       }
     ],
     "source": "CISA KEV"
@@ -7460,7 +7564,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-21519"
       }
     ],
     "source": "CISA KEV"
@@ -7485,7 +7589,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-21514"
       }
     ],
     "source": "CISA KEV"
@@ -7510,7 +7614,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-11953"
       }
     ],
     "source": "CISA KEV"
@@ -7535,7 +7639,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-24423"
       }
     ],
     "source": "CISA KEV"
@@ -7560,7 +7664,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-39935"
       }
     ],
     "source": "CISA KEV"
@@ -7585,7 +7689,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-64328"
       }
     ],
     "source": "CISA KEV"
@@ -7610,7 +7714,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-19006"
       }
     ],
     "source": "CISA KEV"
@@ -7635,7 +7739,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-40551"
       }
     ],
     "source": "CISA KEV"
@@ -7660,7 +7764,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-1281"
       }
     ],
     "source": "CISA KEV"
@@ -7685,7 +7789,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-24858"
       }
     ],
     "source": "CISA KEV"
@@ -7710,7 +7814,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-14634"
       }
     ],
     "source": "CISA KEV"
@@ -7736,7 +7840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-52691"
       }
     ],
     "source": "CISA KEV"
@@ -7761,7 +7865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-23760"
       }
     ],
     "source": "CISA KEV"
@@ -7786,7 +7890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-24061"
       }
     ],
     "source": "CISA KEV"
@@ -7811,7 +7915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-21509"
       }
     ],
     "source": "CISA KEV"
@@ -7836,7 +7940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-37079"
       }
     ],
     "source": "CISA KEV"
@@ -7861,7 +7965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-68645"
       }
     ],
     "source": "CISA KEV"
@@ -7886,7 +7990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-34026"
       }
     ],
     "source": "CISA KEV"
@@ -7911,7 +8015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-31125"
       }
     ],
     "source": "CISA KEV"
@@ -7936,7 +8040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-54313"
       }
     ],
     "source": "CISA KEV"
@@ -7961,7 +8065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-20045"
       }
     ],
     "source": "CISA KEV"
@@ -7986,7 +8090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-20805"
       }
     ],
     "source": "CISA KEV"
@@ -8011,7 +8115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-8110"
       }
     ],
     "source": "CISA KEV"
@@ -8036,7 +8140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2009-0556"
       }
     ],
     "source": "CISA KEV"
@@ -8061,7 +8165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-37164"
       }
     ],
     "source": "CISA KEV"
@@ -8086,7 +8190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-14847"
       }
     ],
     "source": "CISA KEV"
@@ -8111,7 +8215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-52163"
       }
     ],
     "source": "CISA KEV"
@@ -8136,7 +8240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-14733"
       }
     ],
     "source": "CISA KEV"
@@ -8161,7 +8265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-59374"
       }
     ],
     "source": "CISA KEV"
@@ -8186,7 +8290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-40602"
       }
     ],
     "source": "CISA KEV"
@@ -8211,7 +8315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-20393"
       }
     ],
     "source": "CISA KEV"
@@ -8236,7 +8340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-59718"
       }
     ],
     "source": "CISA KEV"
@@ -8261,7 +8365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-14611"
       }
     ],
     "source": "CISA KEV"
@@ -8286,7 +8390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-43529"
       }
     ],
     "source": "CISA KEV"
@@ -8311,7 +8415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-4063"
       }
     ],
     "source": "CISA KEV"
@@ -8336,7 +8440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-14174"
       }
     ],
     "source": "CISA KEV"
@@ -8361,7 +8465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-58360"
       }
     ],
     "source": "CISA KEV"
@@ -8386,7 +8490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-6218"
       }
     ],
     "source": "CISA KEV"
@@ -8411,7 +8515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-62221"
       }
     ],
     "source": "CISA KEV"
@@ -8436,7 +8540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-37055"
       }
     ],
     "source": "CISA KEV"
@@ -8461,7 +8565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-66644"
       }
     ],
     "source": "CISA KEV"
@@ -8486,7 +8590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-55182"
       }
     ],
     "source": "CISA KEV"
@@ -8511,7 +8615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-26828"
       }
     ],
     "source": "CISA KEV"
@@ -8536,7 +8640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-48633"
       }
     ],
     "source": "CISA KEV"
@@ -8561,7 +8665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-48572"
       }
     ],
     "source": "CISA KEV"
@@ -8586,7 +8690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-26829"
       }
     ],
     "source": "CISA KEV"
@@ -8611,7 +8715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-61757"
       }
     ],
     "source": "CISA KEV"
@@ -8636,7 +8740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-13223"
       }
     ],
     "source": "CISA KEV"
@@ -8661,7 +8765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-58034"
       }
     ],
     "source": "CISA KEV"
@@ -8686,7 +8790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-64446"
       }
     ],
     "source": "CISA KEV"
@@ -8711,7 +8815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-12480"
       }
     ],
     "source": "CISA KEV"
@@ -8736,7 +8840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-62215"
       }
     ],
     "source": "CISA KEV"
@@ -8761,7 +8865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-9242"
       }
     ],
     "source": "CISA KEV"
@@ -8786,7 +8890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-21042"
       }
     ],
     "source": "CISA KEV"
@@ -8811,7 +8915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-48703"
       }
     ],
     "source": "CISA KEV"
@@ -8836,7 +8940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-11371"
       }
     ],
     "source": "CISA KEV"
@@ -8861,7 +8965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-41244"
       }
     ],
     "source": "CISA KEV"
@@ -8886,7 +8990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-24893"
       }
     ],
     "source": "CISA KEV"
@@ -8911,7 +9015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-6204"
       }
     ],
     "source": "CISA KEV"
@@ -8936,7 +9040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-6205"
       }
     ],
     "source": "CISA KEV"
@@ -8961,7 +9065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-54236"
       }
     ],
     "source": "CISA KEV"
@@ -8986,7 +9090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-59287"
       }
     ],
     "source": "CISA KEV"
@@ -9011,7 +9115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-61932"
       }
     ],
     "source": "CISA KEV"
@@ -9036,7 +9140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-48503"
       }
     ],
     "source": "CISA KEV"
@@ -9061,7 +9165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-2746"
       }
     ],
     "source": "CISA KEV"
@@ -9086,7 +9190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-2747"
       }
     ],
     "source": "CISA KEV"
@@ -9111,7 +9215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-33073"
       }
     ],
     "source": "CISA KEV"
@@ -9136,7 +9240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-61884"
       }
     ],
     "source": "CISA KEV"
@@ -9161,7 +9265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-54253"
       }
     ],
     "source": "CISA KEV"
@@ -9186,7 +9290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-47827"
       }
     ],
     "source": "CISA KEV"
@@ -9211,7 +9315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-24990"
       }
     ],
     "source": "CISA KEV"
@@ -9236,7 +9340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-59230"
       }
     ],
     "source": "CISA KEV"
@@ -9261,7 +9365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-7836"
       }
     ],
     "source": "CISA KEV"
@@ -9286,7 +9390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-43798"
       }
     ],
     "source": "CISA KEV"
@@ -9311,7 +9415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-27915"
       }
     ],
     "source": "CISA KEV"
@@ -9336,7 +9440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-22555"
       }
     ],
     "source": "CISA KEV"
@@ -9361,7 +9465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2010-3962"
       }
     ],
     "source": "CISA KEV"
@@ -9386,7 +9490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-43226"
       }
     ],
     "source": "CISA KEV"
@@ -9411,7 +9515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-3918"
       }
     ],
     "source": "CISA KEV"
@@ -9436,7 +9540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2011-3402"
       }
     ],
     "source": "CISA KEV"
@@ -9461,7 +9565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2010-3765"
       }
     ],
     "source": "CISA KEV"
@@ -9486,7 +9590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-61882"
       }
     ],
     "source": "CISA KEV"
@@ -9511,7 +9615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-6278"
       }
     ],
     "source": "CISA KEV"
@@ -9536,7 +9640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-1000353"
       }
     ],
     "source": "CISA KEV"
@@ -9561,7 +9665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-7755"
       }
     ],
     "source": "CISA KEV"
@@ -9586,7 +9690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-21043"
       }
     ],
     "source": "CISA KEV"
@@ -9611,7 +9715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-4008"
       }
     ],
     "source": "CISA KEV"
@@ -9636,7 +9740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-32463"
       }
     ],
     "source": "CISA KEV"
@@ -9661,7 +9765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-59689"
       }
     ],
     "source": "CISA KEV"
@@ -9686,7 +9790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-10035"
       }
     ],
     "source": "CISA KEV"
@@ -9711,7 +9815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-20352"
       }
     ],
     "source": "CISA KEV"
@@ -9736,7 +9840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-21311"
       }
     ],
     "source": "CISA KEV"
@@ -9761,7 +9865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-20362"
       }
     ],
     "source": "CISA KEV"
@@ -9786,7 +9890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-20333"
       }
     ],
     "source": "CISA KEV"
@@ -9811,7 +9915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-10585"
       }
     ],
     "source": "CISA KEV"
@@ -9836,7 +9940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-5086"
       }
     ],
     "source": "CISA KEV"
@@ -9861,7 +9965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-38352"
       }
     ],
     "source": "CISA KEV"
@@ -9886,7 +9990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-48543"
       }
     ],
     "source": "CISA KEV"
@@ -9911,7 +10015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-53690"
       }
     ],
     "source": "CISA KEV"
@@ -9936,7 +10040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-50224"
       }
     ],
     "source": "CISA KEV"
@@ -9961,7 +10065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-9377"
       }
     ],
     "source": "CISA KEV"
@@ -9986,7 +10090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-24363"
       }
     ],
     "source": "CISA KEV"
@@ -10011,7 +10115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-55177"
       }
     ],
     "source": "CISA KEV"
@@ -10036,7 +10140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-57819"
       }
     ],
     "source": "CISA KEV"
@@ -10061,7 +10165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-7775"
       }
     ],
     "source": "CISA KEV"
@@ -10086,7 +10190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-48384"
       }
     ],
     "source": "CISA KEV"
@@ -10111,7 +10215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-8068"
       }
     ],
     "source": "CISA KEV"
@@ -10136,7 +10240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-8069"
       }
     ],
     "source": "CISA KEV"
@@ -10161,7 +10265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-43300"
       }
     ],
     "source": "CISA KEV"
@@ -10186,7 +10290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-54948"
       }
     ],
     "source": "CISA KEV"
@@ -10211,7 +10315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-8876"
       }
     ],
     "source": "CISA KEV"
@@ -10236,7 +10340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-8875"
       }
     ],
     "source": "CISA KEV"
@@ -10261,7 +10365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-8088"
       }
     ],
     "source": "CISA KEV"
@@ -10286,7 +10390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2007-0671"
       }
     ],
     "source": "CISA KEV"
@@ -10311,7 +10415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-3893"
       }
     ],
     "source": "CISA KEV"
@@ -10336,7 +10440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-25078"
       }
     ],
     "source": "CISA KEV"
@@ -10361,7 +10465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-25079"
       }
     ],
     "source": "CISA KEV"
@@ -10386,7 +10490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-40799"
       }
     ],
     "source": "CISA KEV"
@@ -10411,7 +10515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-2533"
       }
     ],
     "source": "CISA KEV"
@@ -10436,7 +10540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-20337"
       }
     ],
     "source": "CISA KEV"
@@ -10461,7 +10565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-20281"
       }
     ],
     "source": "CISA KEV"
@@ -10486,7 +10590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-2775"
       }
     ],
     "source": "CISA KEV"
@@ -10511,7 +10615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-2776"
       }
     ],
     "source": "CISA KEV"
@@ -10536,7 +10640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-6558"
       }
     ],
     "source": "CISA KEV"
@@ -10561,7 +10665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-54309"
       }
     ],
     "source": "CISA KEV"
@@ -10586,7 +10690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-49704"
       }
     ],
     "source": "CISA KEV"
@@ -10611,7 +10715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-49706"
       }
     ],
     "source": "CISA KEV"
@@ -10636,7 +10740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-53770"
       }
     ],
     "source": "CISA KEV"
@@ -10661,7 +10765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-25257"
       }
     ],
     "source": "CISA KEV"
@@ -10686,7 +10790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-47812"
       }
     ],
     "source": "CISA KEV"
@@ -10711,7 +10815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-5777"
       }
     ],
     "source": "CISA KEV"
@@ -10736,7 +10840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-9621"
       }
     ],
     "source": "CISA KEV"
@@ -10761,7 +10865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-5418"
       }
     ],
     "source": "CISA KEV"
@@ -10786,7 +10890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-10033"
       }
     ],
     "source": "CISA KEV"
@@ -10811,7 +10915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-3931"
       }
     ],
     "source": "CISA KEV"
@@ -10836,7 +10940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-6554"
       }
     ],
     "source": "CISA KEV"
@@ -10861,7 +10965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-48928"
       }
     ],
     "source": "CISA KEV"
@@ -10886,7 +10990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-48927"
       }
     ],
     "source": "CISA KEV"
@@ -10911,7 +11015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-6543"
       }
     ],
     "source": "CISA KEV"
@@ -10936,7 +11040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-6693"
       }
     ],
     "source": "CISA KEV"
@@ -10961,7 +11065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-0769"
       }
     ],
     "source": "CISA KEV"
@@ -10986,7 +11090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-54085"
       }
     ],
     "source": "CISA KEV"
@@ -11011,7 +11115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-0386"
       }
     ],
     "source": "CISA KEV"
@@ -11036,7 +11140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-33538"
       }
     ],
     "source": "CISA KEV"
@@ -11061,7 +11165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-43200"
       }
     ],
     "source": "CISA KEV"
@@ -11086,7 +11190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-33053"
       }
     ],
     "source": "CISA KEV"
@@ -11111,7 +11215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-24016"
       }
     ],
     "source": "CISA KEV"
@@ -11136,7 +11240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-42009"
       }
     ],
     "source": "CISA KEV"
@@ -11161,7 +11265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-32433"
       }
     ],
     "source": "CISA KEV"
@@ -11186,7 +11290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-5419"
       }
     ],
     "source": "CISA KEV"
@@ -11211,7 +11315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-21479"
       }
     ],
     "source": "CISA KEV"
@@ -11236,7 +11340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-21480"
       }
     ],
     "source": "CISA KEV"
@@ -11261,7 +11365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-27038"
       }
     ],
     "source": "CISA KEV"
@@ -11286,7 +11390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-32030"
       }
     ],
     "source": "CISA KEV"
@@ -11311,7 +11415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-3935"
       }
     ],
     "source": "CISA KEV"
@@ -11336,7 +11440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-35939"
       }
     ],
     "source": "CISA KEV"
@@ -11361,7 +11465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-56145"
       }
     ],
     "source": "CISA KEV"
@@ -11386,7 +11490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-39780"
       }
     ],
     "source": "CISA KEV"
@@ -11411,7 +11515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-4632"
       }
     ],
     "source": "CISA KEV"
@@ -11436,7 +11540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-38950"
       }
     ],
     "source": "CISA KEV"
@@ -11461,7 +11565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-27443"
       }
     ],
     "source": "CISA KEV"
@@ -11486,7 +11590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-27920"
       }
     ],
     "source": "CISA KEV"
@@ -11511,7 +11615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-11182"
       }
     ],
     "source": "CISA KEV"
@@ -11536,7 +11640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-4428"
       }
     ],
     "source": "CISA KEV"
@@ -11561,7 +11665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-4427"
       }
     ],
     "source": "CISA KEV"
@@ -11586,7 +11690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-42999"
       }
     ],
     "source": "CISA KEV"
@@ -11611,7 +11715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-12987"
       }
     ],
     "source": "CISA KEV"
@@ -11636,7 +11740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-32756"
       }
     ],
     "source": "CISA KEV"
@@ -11661,7 +11765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-32709"
       }
     ],
     "source": "CISA KEV"
@@ -11686,7 +11790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-30397"
       }
     ],
     "source": "CISA KEV"
@@ -11711,7 +11815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-32706"
       }
     ],
     "source": "CISA KEV"
@@ -11736,7 +11840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-32701"
       }
     ],
     "source": "CISA KEV"
@@ -11761,7 +11865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-30400"
       }
     ],
     "source": "CISA KEV"
@@ -11786,7 +11890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-47729"
       }
     ],
     "source": "CISA KEV"
@@ -11811,7 +11915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-11120"
       }
     ],
     "source": "CISA KEV"
@@ -11836,7 +11940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-6047"
       }
     ],
     "source": "CISA KEV"
@@ -11861,7 +11965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-27363"
       }
     ],
     "source": "CISA KEV"
@@ -11886,7 +11990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-3248"
       }
     ],
     "source": "CISA KEV"
@@ -11911,7 +12015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-34028"
       }
     ],
     "source": "CISA KEV"
@@ -11936,7 +12040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-58136"
       }
     ],
     "source": "CISA KEV"
@@ -11961,7 +12065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-38475"
       }
     ],
     "source": "CISA KEV"
@@ -11986,7 +12090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-44221"
       }
     ],
     "source": "CISA KEV"
@@ -12011,7 +12115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-31324"
       }
     ],
     "source": "CISA KEV"
@@ -12036,7 +12140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-1976"
       }
     ],
     "source": "CISA KEV"
@@ -12061,7 +12165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-42599"
       }
     ],
     "source": "CISA KEV"
@@ -12086,7 +12190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-3928"
       }
     ],
     "source": "CISA KEV"
@@ -12111,7 +12215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-24054"
       }
     ],
     "source": "CISA KEV"
@@ -12136,7 +12240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-31201"
       }
     ],
     "source": "CISA KEV"
@@ -12161,7 +12265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-31200"
       }
     ],
     "source": "CISA KEV"
@@ -12186,7 +12290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-20035"
       }
     ],
     "source": "CISA KEV"
@@ -12211,7 +12315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-53150"
       }
     ],
     "source": "CISA KEV"
@@ -12236,7 +12340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-53197"
       }
     ],
     "source": "CISA KEV"
@@ -12261,7 +12365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-29824"
       }
     ],
     "source": "CISA KEV"
@@ -12286,7 +12390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-30406"
       }
     ],
     "source": "CISA KEV"
@@ -12311,7 +12415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-31161"
       }
     ],
     "source": "CISA KEV"
@@ -12336,7 +12440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-22457"
       }
     ],
     "source": "CISA KEV"
@@ -12361,7 +12465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-24813"
       }
     ],
     "source": "CISA KEV"
@@ -12386,7 +12490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-20439"
       }
     ],
     "source": "CISA KEV"
@@ -12411,7 +12515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-2783"
       }
     ],
     "source": "CISA KEV"
@@ -12436,7 +12540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-9875"
       }
     ],
     "source": "CISA KEV"
@@ -12461,7 +12565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-9874"
       }
     ],
     "source": "CISA KEV"
@@ -12486,7 +12590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-30154"
       }
     ],
     "source": "CISA KEV"
@@ -12511,7 +12615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-12637"
       }
     ],
     "source": "CISA KEV"
@@ -12536,7 +12640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-48248"
       }
     ],
     "source": "CISA KEV"
@@ -12561,7 +12665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-1316"
       }
     ],
     "source": "CISA KEV"
@@ -12586,7 +12690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-30066"
       }
     ],
     "source": "CISA KEV"
@@ -12611,7 +12715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-24472"
       }
     ],
     "source": "CISA KEV"
@@ -12636,7 +12740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-21590"
       }
     ],
     "source": "CISA KEV"
@@ -12661,7 +12765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-24201"
       }
     ],
     "source": "CISA KEV"
@@ -12686,7 +12790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-24993"
       }
     ],
     "source": "CISA KEV"
@@ -12711,7 +12815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-24991"
       }
     ],
     "source": "CISA KEV"
@@ -12736,7 +12840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-24985"
       }
     ],
     "source": "CISA KEV"
@@ -12761,7 +12865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-24984"
       }
     ],
     "source": "CISA KEV"
@@ -12786,7 +12890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-24983"
       }
     ],
     "source": "CISA KEV"
@@ -12811,7 +12915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-26633"
       }
     ],
     "source": "CISA KEV"
@@ -12836,7 +12940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-13161"
       }
     ],
     "source": "CISA KEV"
@@ -12861,7 +12965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-13160"
       }
     ],
     "source": "CISA KEV"
@@ -12886,7 +12990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-13159"
       }
     ],
     "source": "CISA KEV"
@@ -12911,7 +13015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-57968"
       }
     ],
     "source": "CISA KEV"
@@ -12936,7 +13040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-25181"
       }
     ],
     "source": "CISA KEV"
@@ -12961,7 +13065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-22226"
       }
     ],
     "source": "CISA KEV"
@@ -12986,7 +13090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-22225"
       }
     ],
     "source": "CISA KEV"
@@ -13011,7 +13115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-22224"
       }
     ],
     "source": "CISA KEV"
@@ -13036,7 +13140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-50302"
       }
     ],
     "source": "CISA KEV"
@@ -13061,7 +13165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-4885"
       }
     ],
     "source": "CISA KEV"
@@ -13086,7 +13190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-8639"
       }
     ],
     "source": "CISA KEV"
@@ -13111,7 +13215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-43769"
       }
     ],
     "source": "CISA KEV"
@@ -13136,7 +13240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-43939"
       }
     ],
     "source": "CISA KEV"
@@ -13161,7 +13265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-20118"
       }
     ],
     "source": "CISA KEV"
@@ -13186,7 +13290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-34192"
       }
     ],
     "source": "CISA KEV"
@@ -13211,7 +13315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-49035"
       }
     ],
     "source": "CISA KEV"
@@ -13236,7 +13340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-20953"
       }
     ],
     "source": "CISA KEV"
@@ -13261,7 +13365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-3066"
       }
     ],
     "source": "CISA KEV"
@@ -13286,7 +13390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-24989"
       }
     ],
     "source": "CISA KEV"
@@ -13311,7 +13415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-0111"
       }
     ],
     "source": "CISA KEV"
@@ -13336,7 +13440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-23209"
       }
     ],
     "source": "CISA KEV"
@@ -13361,7 +13465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-0108"
       }
     ],
     "source": "CISA KEV"
@@ -13386,7 +13490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-53704"
       }
     ],
     "source": "CISA KEV"
@@ -13411,7 +13515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-57727"
       }
     ],
     "source": "CISA KEV"
@@ -13436,7 +13540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-24200"
       }
     ],
     "source": "CISA KEV"
@@ -13461,7 +13565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-41710"
       }
     ],
     "source": "CISA KEV"
@@ -13486,7 +13590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-40891"
       }
     ],
     "source": "CISA KEV"
@@ -13511,7 +13615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-40890"
       }
     ],
     "source": "CISA KEV"
@@ -13536,7 +13640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-21418"
       }
     ],
     "source": "CISA KEV"
@@ -13561,7 +13665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-21391"
       }
     ],
     "source": "CISA KEV"
@@ -13586,7 +13690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-0994"
       }
     ],
     "source": "CISA KEV"
@@ -13611,7 +13715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-15069"
       }
     ],
     "source": "CISA KEV"
@@ -13636,7 +13740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-29574"
       }
     ],
     "source": "CISA KEV"
@@ -13661,7 +13765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-21413"
       }
     ],
     "source": "CISA KEV"
@@ -13686,7 +13790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-23748"
       }
     ],
     "source": "CISA KEV"
@@ -13711,7 +13815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-0411"
       }
     ],
     "source": "CISA KEV"
@@ -13736,7 +13840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-53104"
       }
     ],
     "source": "CISA KEV"
@@ -13761,7 +13865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-19410"
       }
     ],
     "source": "CISA KEV"
@@ -13786,7 +13890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-9276"
       }
     ],
     "source": "CISA KEV"
@@ -13811,7 +13915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-29059"
       }
     ],
     "source": "CISA KEV"
@@ -13836,7 +13940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-45195"
       }
     ],
     "source": "CISA KEV"
@@ -13861,7 +13965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-24085"
       }
     ],
     "source": "CISA KEV"
@@ -13886,7 +13990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-23006"
       }
     ],
     "source": "CISA KEV"
@@ -13911,7 +14015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-11023"
       }
     ],
     "source": "CISA KEV"
@@ -13936,7 +14040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-50603"
       }
     ],
     "source": "CISA KEV"
@@ -13961,7 +14065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-21335"
       }
     ],
     "source": "CISA KEV"
@@ -13986,7 +14090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-21334"
       }
     ],
     "source": "CISA KEV"
@@ -14011,7 +14115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-21333"
       }
     ],
     "source": "CISA KEV"
@@ -14036,7 +14140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-55591"
       }
     ],
     "source": "CISA KEV"
@@ -14061,7 +14165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-48365"
       }
     ],
     "source": "CISA KEV"
@@ -14086,7 +14190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-12686"
       }
     ],
     "source": "CISA KEV"
@@ -14111,7 +14215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-0282"
       }
     ],
     "source": "CISA KEV"
@@ -14136,7 +14240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-2883"
       }
     ],
     "source": "CISA KEV"
@@ -14161,7 +14265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-55550"
       }
     ],
     "source": "CISA KEV"
@@ -14186,7 +14290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-41713"
       }
     ],
     "source": "CISA KEV"
@@ -14211,7 +14315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-3393"
       }
     ],
     "source": "CISA KEV"
@@ -14236,7 +14340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-44207"
       }
     ],
     "source": "CISA KEV"
@@ -14261,7 +14365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-12356"
       }
     ],
     "source": "CISA KEV"
@@ -14286,7 +14390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-40407"
       }
     ],
     "source": "CISA KEV"
@@ -14311,7 +14415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-11001"
       }
     ],
     "source": "CISA KEV"
@@ -14336,7 +14440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-23227"
       }
     ],
     "source": "CISA KEV"
@@ -14361,7 +14465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-14933"
       }
     ],
     "source": "CISA KEV"
@@ -14386,7 +14490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-55956"
       }
     ],
     "source": "CISA KEV"
@@ -14411,7 +14515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-35250"
       }
     ],
     "source": "CISA KEV"
@@ -14436,7 +14540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-20767"
       }
     ],
     "source": "CISA KEV"
@@ -14461,7 +14565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-50623"
       }
     ],
     "source": "CISA KEV"
@@ -14486,7 +14590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-49138"
       }
     ],
     "source": "CISA KEV"
@@ -14511,7 +14615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-51378"
       }
     ],
     "source": "CISA KEV"
@@ -14536,7 +14640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-11667"
       }
     ],
     "source": "CISA KEV"
@@ -14561,7 +14665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-11680"
       }
     ],
     "source": "CISA KEV"
@@ -14586,7 +14690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-45727"
       }
     ],
     "source": "CISA KEV"
@@ -14611,7 +14715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-28461"
       }
     ],
     "source": "CISA KEV"
@@ -14636,7 +14740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-21287"
       }
     ],
     "source": "CISA KEV"
@@ -14661,7 +14765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-44309"
       }
     ],
     "source": "CISA KEV"
@@ -14686,7 +14790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-44308"
       }
     ],
     "source": "CISA KEV"
@@ -14711,7 +14815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-38813"
       }
     ],
     "source": "CISA KEV"
@@ -14736,7 +14840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-38812"
       }
     ],
     "source": "CISA KEV"
@@ -14761,7 +14865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-9474"
       }
     ],
     "source": "CISA KEV"
@@ -14786,7 +14890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-0012"
       }
     ],
     "source": "CISA KEV"
@@ -14811,7 +14915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-1212"
       }
     ],
     "source": "CISA KEV"
@@ -14836,7 +14940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-9465"
       }
     ],
     "source": "CISA KEV"
@@ -14861,7 +14965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-9463"
       }
     ],
     "source": "CISA KEV"
@@ -14886,7 +14990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-26086"
       }
     ],
     "source": "CISA KEV"
@@ -14911,7 +15015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-2120"
       }
     ],
     "source": "CISA KEV"
@@ -14936,7 +15040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-41277"
       }
     ],
     "source": "CISA KEV"
@@ -14961,7 +15065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-43451"
       }
     ],
     "source": "CISA KEV"
@@ -14986,7 +15090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-49039"
       }
     ],
     "source": "CISA KEV"
@@ -15011,7 +15115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-16278"
       }
     ],
     "source": "CISA KEV"
@@ -15036,7 +15140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-51567"
       }
     ],
     "source": "CISA KEV"
@@ -15061,7 +15165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-43093"
       }
     ],
     "source": "CISA KEV"
@@ -15086,7 +15190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-5910"
       }
     ],
     "source": "CISA KEV"
@@ -15111,7 +15215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-8956"
       }
     ],
     "source": "CISA KEV"
@@ -15136,7 +15240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-8957"
       }
     ],
     "source": "CISA KEV"
@@ -15161,7 +15265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-37383"
       }
     ],
     "source": "CISA KEV"
@@ -15186,7 +15290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-20481"
       }
     ],
     "source": "CISA KEV"
@@ -15211,7 +15315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-47575"
       }
     ],
     "source": "CISA KEV"
@@ -15236,7 +15340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-38094"
       }
     ],
     "source": "CISA KEV"
@@ -15261,7 +15365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-9537"
       }
     ],
     "source": "CISA KEV"
@@ -15286,7 +15390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-40711"
       }
     ],
     "source": "CISA KEV"
@@ -15311,7 +15415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-28987"
       }
     ],
     "source": "CISA KEV"
@@ -15336,7 +15440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-9680"
       }
     ],
     "source": "CISA KEV"
@@ -15361,7 +15465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-30088"
       }
     ],
     "source": "CISA KEV"
@@ -15386,7 +15490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-9380"
       }
     ],
     "source": "CISA KEV"
@@ -15411,7 +15515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-9379"
       }
     ],
     "source": "CISA KEV"
@@ -15436,7 +15540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-23113"
       }
     ],
     "source": "CISA KEV"
@@ -15461,7 +15565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-43573"
       }
     ],
     "source": "CISA KEV"
@@ -15486,7 +15590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-43572"
       }
     ],
     "source": "CISA KEV"
@@ -15511,7 +15615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-43047"
       }
     ],
     "source": "CISA KEV"
@@ -15536,7 +15640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-45519"
       }
     ],
     "source": "CISA KEV"
@@ -15561,7 +15665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-29824"
       }
     ],
     "source": "CISA KEV"
@@ -15586,7 +15690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-0344"
       }
     ],
     "source": "CISA KEV"
@@ -15611,7 +15715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-15415"
       }
     ],
     "source": "CISA KEV"
@@ -15636,7 +15740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-25280"
       }
     ],
     "source": "CISA KEV"
@@ -15661,7 +15765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-7593"
       }
     ],
     "source": "CISA KEV"
@@ -15686,7 +15790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-8963"
       }
     ],
     "source": "CISA KEV"
@@ -15711,7 +15815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-14644"
       }
     ],
     "source": "CISA KEV"
@@ -15736,7 +15840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-21445"
       }
     ],
     "source": "CISA KEV"
@@ -15761,7 +15865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-0618"
       }
     ],
     "source": "CISA KEV"
@@ -15786,7 +15890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-27348"
       }
     ],
     "source": "CISA KEV"
@@ -15811,7 +15915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-0502"
       }
     ],
     "source": "CISA KEV"
@@ -15836,7 +15940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-0648"
       }
     ],
     "source": "CISA KEV"
@@ -15861,7 +15965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-0643"
       }
     ],
     "source": "CISA KEV"
@@ -15886,7 +15990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-0497"
       }
     ],
     "source": "CISA KEV"
@@ -15911,7 +16015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-6670"
       }
     ],
     "source": "CISA KEV"
@@ -15936,7 +16040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-43461"
       }
     ],
     "source": "CISA KEV"
@@ -15961,7 +16065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-8190"
       }
     ],
     "source": "CISA KEV"
@@ -15986,7 +16090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-38217"
       }
     ],
     "source": "CISA KEV"
@@ -16011,7 +16115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-38014"
       }
     ],
     "source": "CISA KEV"
@@ -16036,7 +16140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-38226"
       }
     ],
     "source": "CISA KEV"
@@ -16061,7 +16165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-40766"
       }
     ],
     "source": "CISA KEV"
@@ -16086,7 +16190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-1000253"
       }
     ],
     "source": "CISA KEV"
@@ -16111,7 +16215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-3714"
       }
     ],
     "source": "CISA KEV"
@@ -16136,7 +16240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-7262"
       }
     ],
     "source": "CISA KEV"
@@ -16161,7 +16265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-20124"
       }
     ],
     "source": "CISA KEV"
@@ -16186,7 +16290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-20123"
       }
     ],
     "source": "CISA KEV"
@@ -16211,7 +16315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-7965"
       }
     ],
     "source": "CISA KEV"
@@ -16236,7 +16340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-38856"
       }
     ],
     "source": "CISA KEV"
@@ -16261,7 +16365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-7971"
       }
     ],
     "source": "CISA KEV"
@@ -16286,7 +16390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-39717"
       }
     ],
     "source": "CISA KEV"
@@ -16311,7 +16415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-31196"
       }
     ],
     "source": "CISA KEV"
@@ -16336,7 +16440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-0185"
       }
     ],
     "source": "CISA KEV"
@@ -16361,7 +16465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-33045"
       }
     ],
     "source": "CISA KEV"
@@ -16386,7 +16490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-33044"
       }
     ],
     "source": "CISA KEV"
@@ -16411,7 +16515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-23897"
       }
     ],
     "source": "CISA KEV"
@@ -16436,7 +16540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-28986"
       }
     ],
     "source": "CISA KEV"
@@ -16461,7 +16565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-38107"
       }
     ],
     "source": "CISA KEV"
@@ -16486,7 +16590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-38106"
       }
     ],
     "source": "CISA KEV"
@@ -16511,7 +16615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-38193"
       }
     ],
     "source": "CISA KEV"
@@ -16536,7 +16640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-38213"
       }
     ],
     "source": "CISA KEV"
@@ -16561,7 +16665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-38178"
       }
     ],
     "source": "CISA KEV"
@@ -16586,7 +16690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-38189"
       }
     ],
     "source": "CISA KEV"
@@ -16611,7 +16715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-32113"
       }
     ],
     "source": "CISA KEV"
@@ -16636,7 +16740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-36971"
       }
     ],
     "source": "CISA KEV"
@@ -16661,7 +16765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-0824"
       }
     ],
     "source": "CISA KEV"
@@ -16686,7 +16790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-37085"
       }
     ],
     "source": "CISA KEV"
@@ -16711,7 +16815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-45249"
       }
     ],
     "source": "CISA KEV"
@@ -16736,7 +16840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-5217"
       }
     ],
     "source": "CISA KEV"
@@ -16761,7 +16865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-4879"
       }
     ],
     "source": "CISA KEV"
@@ -16786,7 +16890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-39891"
       }
     ],
     "source": "CISA KEV"
@@ -16811,7 +16915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2012-4792"
       }
     ],
     "source": "CISA KEV"
@@ -16836,7 +16940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-22948"
       }
     ],
     "source": "CISA KEV"
@@ -16861,7 +16965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-28995"
       }
     ],
     "source": "CISA KEV"
@@ -16886,7 +16990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-34102"
       }
     ],
     "source": "CISA KEV"
@@ -16911,7 +17015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-36401"
       }
     ],
     "source": "CISA KEV"
@@ -16936,7 +17040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-23692"
       }
     ],
     "source": "CISA KEV"
@@ -16961,7 +17065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-38080"
       }
     ],
     "source": "CISA KEV"
@@ -16986,7 +17090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-38112"
       }
     ],
     "source": "CISA KEV"
@@ -17011,7 +17115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-20399"
       }
     ],
     "source": "CISA KEV"
@@ -17036,7 +17140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-13965"
       }
     ],
     "source": "CISA KEV"
@@ -17061,7 +17165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-2586"
       }
     ],
     "source": "CISA KEV"
@@ -17086,7 +17190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-24816"
       }
     ],
     "source": "CISA KEV"
@@ -17111,7 +17215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-4358"
       }
     ],
     "source": "CISA KEV"
@@ -17136,7 +17240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-26169"
       }
     ],
     "source": "CISA KEV"
@@ -17161,7 +17265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-32896"
       }
     ],
     "source": "CISA KEV"
@@ -17186,7 +17290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-4577"
       }
     ],
     "source": "CISA KEV"
@@ -17211,7 +17315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-4610"
       }
     ],
     "source": "CISA KEV"
@@ -17236,7 +17340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-3506"
       }
     ],
     "source": "CISA KEV"
@@ -17261,7 +17365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-1086"
       }
     ],
     "source": "CISA KEV"
@@ -17286,7 +17390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-24919"
       }
     ],
     "source": "CISA KEV"
@@ -17311,7 +17415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-4978"
       }
     ],
     "source": "CISA KEV"
@@ -17336,7 +17440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-5274"
       }
     ],
     "source": "CISA KEV"
@@ -17361,7 +17465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-17519"
       }
     ],
     "source": "CISA KEV"
@@ -17386,7 +17490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-4947"
       }
     ],
     "source": "CISA KEV"
@@ -17411,7 +17515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-43208"
       }
     ],
     "source": "CISA KEV"
@@ -17436,7 +17540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-4761"
       }
     ],
     "source": "CISA KEV"
@@ -17461,7 +17565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-40655"
       }
     ],
     "source": "CISA KEV"
@@ -17486,7 +17590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-100005"
       }
     ],
     "source": "CISA KEV"
@@ -17511,7 +17615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-30040"
       }
     ],
     "source": "CISA KEV"
@@ -17536,7 +17640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-30051"
       }
     ],
     "source": "CISA KEV"
@@ -17561,7 +17665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-4671"
       }
     ],
     "source": "CISA KEV"
@@ -17586,7 +17690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-7028"
       }
     ],
     "source": "CISA KEV"
@@ -17611,7 +17715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-29988"
       }
     ],
     "source": "CISA KEV"
@@ -17636,7 +17740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-4040"
       }
     ],
     "source": "CISA KEV"
@@ -17661,7 +17765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-20359"
       }
     ],
     "source": "CISA KEV"
@@ -17686,7 +17790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-20353"
       }
     ],
     "source": "CISA KEV"
@@ -17711,7 +17815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-38028"
       }
     ],
     "source": "CISA KEV"
@@ -17736,7 +17840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-3400"
       }
     ],
     "source": "CISA KEV"
@@ -17761,7 +17865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-3273"
       }
     ],
     "source": "CISA KEV"
@@ -17786,7 +17890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-3272"
       }
     ],
     "source": "CISA KEV"
@@ -17811,7 +17915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-29748"
       }
     ],
     "source": "CISA KEV"
@@ -17836,7 +17940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-29745"
       }
     ],
     "source": "CISA KEV"
@@ -17861,7 +17965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-24955"
       }
     ],
     "source": "CISA KEV"
@@ -17886,7 +17990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-7256"
       }
     ],
     "source": "CISA KEV"
@@ -17911,7 +18015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-44529"
       }
     ],
     "source": "CISA KEV"
@@ -17936,7 +18040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-48788"
       }
     ],
     "source": "CISA KEV"
@@ -17961,7 +18065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-27198"
       }
     ],
     "source": "CISA KEV"
@@ -17986,7 +18090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-23225"
       }
     ],
     "source": "CISA KEV"
@@ -18011,7 +18115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-23296"
       }
     ],
     "source": "CISA KEV"
@@ -18036,7 +18140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-21237"
       }
     ],
     "source": "CISA KEV"
@@ -18061,7 +18165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-36380"
       }
     ],
     "source": "CISA KEV"
@@ -18086,7 +18190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-21338"
       }
     ],
     "source": "CISA KEV"
@@ -18111,7 +18215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-29360"
       }
     ],
     "source": "CISA KEV"
@@ -18136,7 +18240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-1709"
       }
     ],
     "source": "CISA KEV"
@@ -18161,7 +18265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-3259"
       }
     ],
     "source": "CISA KEV"
@@ -18186,7 +18290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-21410"
       }
     ],
     "source": "CISA KEV"
@@ -18211,7 +18315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-21412"
       }
     ],
     "source": "CISA KEV"
@@ -18236,7 +18340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-21351"
       }
     ],
     "source": "CISA KEV"
@@ -18261,7 +18365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-43770"
       }
     ],
     "source": "CISA KEV"
@@ -18286,7 +18390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-21762"
       }
     ],
     "source": "CISA KEV"
@@ -18311,7 +18415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-4762"
       }
     ],
     "source": "CISA KEV"
@@ -18336,7 +18440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-48618"
       }
     ],
     "source": "CISA KEV"
@@ -18361,7 +18465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-21893"
       }
     ],
     "source": "CISA KEV"
@@ -18386,7 +18490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-22527"
       }
     ],
     "source": "CISA KEV"
@@ -18411,7 +18515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-23222"
       }
     ],
     "source": "CISA KEV"
@@ -18436,7 +18540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-34048"
       }
     ],
     "source": "CISA KEV"
@@ -18461,7 +18565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-35082"
       }
     ],
     "source": "CISA KEV"
@@ -18486,7 +18590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-0519"
       }
     ],
     "source": "CISA KEV"
@@ -18511,7 +18615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-6549"
       }
     ],
     "source": "CISA KEV"
@@ -18536,7 +18640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-6548"
       }
     ],
     "source": "CISA KEV"
@@ -18561,7 +18665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-15133"
       }
     ],
     "source": "CISA KEV"
@@ -18586,7 +18690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-29357"
       }
     ],
     "source": "CISA KEV"
@@ -18611,7 +18715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-46805"
       }
     ],
     "source": "CISA KEV"
@@ -18636,7 +18740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2024-21887"
       }
     ],
     "source": "CISA KEV"
@@ -18661,7 +18765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-23752"
       }
     ],
     "source": "CISA KEV"
@@ -18686,7 +18790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-20017"
       }
     ],
     "source": "CISA KEV"
@@ -18711,7 +18815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-41990"
       }
     ],
     "source": "CISA KEV"
@@ -18736,7 +18840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-27524"
       }
     ],
     "source": "CISA KEV"
@@ -18761,7 +18865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-29300"
       }
     ],
     "source": "CISA KEV"
@@ -18786,7 +18890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-38203"
       }
     ],
     "source": "CISA KEV"
@@ -18811,7 +18915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-7101"
       }
     ],
     "source": "CISA KEV"
@@ -18836,7 +18940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-7024"
       }
     ],
     "source": "CISA KEV"
@@ -18861,7 +18965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-49897"
       }
     ],
     "source": "CISA KEV"
@@ -18886,7 +18990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-47565"
       }
     ],
     "source": "CISA KEV"
@@ -18911,7 +19015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-6448"
       }
     ],
     "source": "CISA KEV"
@@ -18936,7 +19040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-41266"
       }
     ],
     "source": "CISA KEV"
@@ -18961,7 +19065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-41265"
       }
     ],
     "source": "CISA KEV"
@@ -18986,7 +19090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-33107"
       }
     ],
     "source": "CISA KEV"
@@ -19011,7 +19115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-33106"
       }
     ],
     "source": "CISA KEV"
@@ -19036,7 +19140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-33063"
       }
     ],
     "source": "CISA KEV"
@@ -19061,7 +19165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-22071"
       }
     ],
     "source": "CISA KEV"
@@ -19086,7 +19190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-42917"
       }
     ],
     "source": "CISA KEV"
@@ -19111,7 +19215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-42916"
       }
     ],
     "source": "CISA KEV"
@@ -19136,7 +19240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-6345"
       }
     ],
     "source": "CISA KEV"
@@ -19161,7 +19265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-49103"
       }
     ],
     "source": "CISA KEV"
@@ -19186,7 +19290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-4911"
       }
     ],
     "source": "CISA KEV"
@@ -19211,7 +19315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-36584"
       }
     ],
     "source": "CISA KEV"
@@ -19236,7 +19340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-1671"
       }
     ],
     "source": "CISA KEV"
@@ -19261,7 +19365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-2551"
       }
     ],
     "source": "CISA KEV"
@@ -19286,7 +19390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-36033"
       }
     ],
     "source": "CISA KEV"
@@ -19311,7 +19415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-36025"
       }
     ],
     "source": "CISA KEV"
@@ -19336,7 +19440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-36036"
       }
     ],
     "source": "CISA KEV"
@@ -19361,7 +19465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-47246"
       }
     ],
     "source": "CISA KEV"
@@ -19386,7 +19490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-36844"
       }
     ],
     "source": "CISA KEV"
@@ -19411,7 +19515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-36845"
       }
     ],
     "source": "CISA KEV"
@@ -19436,7 +19540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-36846"
       }
     ],
     "source": "CISA KEV"
@@ -19461,7 +19565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-36847"
       }
     ],
     "source": "CISA KEV"
@@ -19486,7 +19590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-36851"
       }
     ],
     "source": "CISA KEV"
@@ -19511,7 +19615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-29552"
       }
     ],
     "source": "CISA KEV"
@@ -19536,7 +19640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-22518"
       }
     ],
     "source": "CISA KEV"
@@ -19561,7 +19665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-46604"
       }
     ],
     "source": "CISA KEV"
@@ -19586,7 +19690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-46748"
       }
     ],
     "source": "CISA KEV"
@@ -19611,7 +19715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-46747"
       }
     ],
     "source": "CISA KEV"
@@ -19636,7 +19740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-5631"
       }
     ],
     "source": "CISA KEV"
@@ -19661,7 +19765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-20273"
       }
     ],
     "source": "CISA KEV"
@@ -19686,7 +19790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-4966"
       }
     ],
     "source": "CISA KEV"
@@ -19711,7 +19815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-20198"
       }
     ],
     "source": "CISA KEV"
@@ -19736,7 +19840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-21608"
       }
     ],
     "source": "CISA KEV"
@@ -19761,7 +19865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-20109"
       }
     ],
     "source": "CISA KEV"
@@ -19786,7 +19890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-41763"
       }
     ],
     "source": "CISA KEV"
@@ -19811,7 +19915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-36563"
       }
     ],
     "source": "CISA KEV"
@@ -19836,7 +19940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-44487"
       }
     ],
     "source": "CISA KEV"
@@ -19861,7 +19965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-22515"
       }
     ],
     "source": "CISA KEV"
@@ -19886,7 +19990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-40044"
       }
     ],
     "source": "CISA KEV"
@@ -19911,7 +20015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-42824"
       }
     ],
     "source": "CISA KEV"
@@ -19936,7 +20040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-42793"
       }
     ],
     "source": "CISA KEV"
@@ -19961,7 +20065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-28229"
       }
     ],
     "source": "CISA KEV"
@@ -19986,7 +20090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-4211"
       }
     ],
     "source": "CISA KEV"
@@ -20011,7 +20115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-5217"
       }
     ],
     "source": "CISA KEV"
@@ -20036,7 +20140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-14667"
       }
     ],
     "source": "CISA KEV"
@@ -20061,7 +20165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-41991"
       }
     ],
     "source": "CISA KEV"
@@ -20086,7 +20190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-41992"
       }
     ],
     "source": "CISA KEV"
@@ -20111,7 +20215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-41993"
       }
     ],
     "source": "CISA KEV"
@@ -20136,7 +20240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-41179"
       }
     ],
     "source": "CISA KEV"
@@ -20161,7 +20265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-28434"
       }
     ],
     "source": "CISA KEV"
@@ -20186,7 +20290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-22265"
       }
     ],
     "source": "CISA KEV"
@@ -20211,7 +20315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-8361"
       }
     ],
     "source": "CISA KEV"
@@ -20236,7 +20340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-6884"
       }
     ],
     "source": "CISA KEV"
@@ -20261,7 +20365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-3129"
       }
     ],
     "source": "CISA KEV"
@@ -20286,7 +20390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-26369"
       }
     ],
     "source": "CISA KEV"
@@ -20311,7 +20415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-35674"
       }
     ],
     "source": "CISA KEV"
@@ -20336,7 +20440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-20269"
       }
     ],
     "source": "CISA KEV"
@@ -20361,7 +20465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-4863"
       }
     ],
     "source": "CISA KEV"
@@ -20386,7 +20490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-36761"
       }
     ],
     "source": "CISA KEV"
@@ -20411,7 +20515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-36802"
       }
     ],
     "source": "CISA KEV"
@@ -20436,7 +20540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-41064"
       }
     ],
     "source": "CISA KEV"
@@ -20461,7 +20565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-41061"
       }
     ],
     "source": "CISA KEV"
@@ -20486,7 +20590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-33246"
       }
     ],
     "source": "CISA KEV"
@@ -20511,7 +20615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-38831"
       }
     ],
     "source": "CISA KEV"
@@ -20536,7 +20640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-32315"
       }
     ],
     "source": "CISA KEV"
@@ -20561,7 +20665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-38035"
       }
     ],
     "source": "CISA KEV"
@@ -20586,7 +20690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-27532"
       }
     ],
     "source": "CISA KEV"
@@ -20611,7 +20715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-26359"
       }
     ],
     "source": "CISA KEV"
@@ -20636,7 +20740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-24489"
       }
     ],
     "source": "CISA KEV"
@@ -20661,7 +20765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-38180"
       }
     ],
     "source": "CISA KEV"
@@ -20686,7 +20790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-18368"
       }
     ],
     "source": "CISA KEV"
@@ -20711,7 +20815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-35081"
       }
     ],
     "source": "CISA KEV"
@@ -20736,7 +20840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-37580"
       }
     ],
     "source": "CISA KEV"
@@ -20761,7 +20865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-38606"
       }
     ],
     "source": "CISA KEV"
@@ -20786,7 +20890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-35078"
       }
     ],
     "source": "CISA KEV"
@@ -20811,7 +20915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-29298"
       }
     ],
     "source": "CISA KEV"
@@ -20836,7 +20940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-38205"
       }
     ],
     "source": "CISA KEV"
@@ -20861,7 +20965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-3519"
       }
     ],
     "source": "CISA KEV"
@@ -20886,7 +20990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-36884"
       }
     ],
     "source": "CISA KEV"
@@ -20911,7 +21015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-29303"
       }
     ],
     "source": "CISA KEV"
@@ -20936,7 +21040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-37450"
       }
     ],
     "source": "CISA KEV"
@@ -20961,7 +21065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-32046"
       }
     ],
     "source": "CISA KEV"
@@ -20986,7 +21090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-32049"
       }
     ],
     "source": "CISA KEV"
@@ -21011,7 +21115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-35311"
       }
     ],
     "source": "CISA KEV"
@@ -21036,7 +21140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-36874"
       }
     ],
     "source": "CISA KEV"
@@ -21061,7 +21165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-31199"
       }
     ],
     "source": "CISA KEV"
@@ -21086,7 +21190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-29256"
       }
     ],
     "source": "CISA KEV"
@@ -21111,7 +21215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-17621"
       }
     ],
     "source": "CISA KEV"
@@ -21136,7 +21240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-20500"
       }
     ],
     "source": "CISA KEV"
@@ -21161,7 +21265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-25487"
       }
     ],
     "source": "CISA KEV"
@@ -21186,7 +21290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-25489"
       }
     ],
     "source": "CISA KEV"
@@ -21211,7 +21315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-25394"
       }
     ],
     "source": "CISA KEV"
@@ -21236,7 +21340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-25395"
       }
     ],
     "source": "CISA KEV"
@@ -21261,7 +21365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-25371"
       }
     ],
     "source": "CISA KEV"
@@ -21286,7 +21390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-25372"
       }
     ],
     "source": "CISA KEV"
@@ -21311,7 +21415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-32434"
       }
     ],
     "source": "CISA KEV"
@@ -21336,7 +21440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-32435"
       }
     ],
     "source": "CISA KEV"
@@ -21361,7 +21465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-32439"
       }
     ],
     "source": "CISA KEV"
@@ -21386,7 +21490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-20867"
       }
     ],
     "source": "CISA KEV"
@@ -21411,7 +21515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-27992"
       }
     ],
     "source": "CISA KEV"
@@ -21436,7 +21540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-20887"
       }
     ],
     "source": "CISA KEV"
@@ -21461,7 +21565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-35730"
       }
     ],
     "source": "CISA KEV"
@@ -21486,7 +21590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-12641"
       }
     ],
     "source": "CISA KEV"
@@ -21511,7 +21615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-44026"
       }
     ],
     "source": "CISA KEV"
@@ -21536,7 +21640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-9079"
       }
     ],
     "source": "CISA KEV"
@@ -21561,7 +21665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-0165"
       }
     ],
     "source": "CISA KEV"
@@ -21586,7 +21690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-27997"
       }
     ],
     "source": "CISA KEV"
@@ -21611,7 +21715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-3079"
       }
     ],
     "source": "CISA KEV"
@@ -21636,7 +21740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-33009"
       }
     ],
     "source": "CISA KEV"
@@ -21661,7 +21765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-33010"
       }
     ],
     "source": "CISA KEV"
@@ -21686,7 +21790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-34362"
       }
     ],
     "source": "CISA KEV"
@@ -21711,7 +21815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-28771"
       }
     ],
     "source": "CISA KEV"
@@ -21736,7 +21840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-2868"
       }
     ],
     "source": "CISA KEV"
@@ -21761,7 +21865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-32409"
       }
     ],
     "source": "CISA KEV"
@@ -21786,7 +21890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-28204"
       }
     ],
     "source": "CISA KEV"
@@ -21811,7 +21915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-32373"
       }
     ],
     "source": "CISA KEV"
@@ -21836,7 +21940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2004-1464"
       }
     ],
     "source": "CISA KEV"
@@ -21861,7 +21965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-6415"
       }
     ],
     "source": "CISA KEV"
@@ -21886,7 +21990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-21492"
       }
     ],
     "source": "CISA KEV"
@@ -21911,7 +22015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-25717"
       }
     ],
     "source": "CISA KEV"
@@ -21936,7 +22040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-3560"
       }
     ],
     "source": "CISA KEV"
@@ -21961,7 +22065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-0196"
       }
     ],
     "source": "CISA KEV"
@@ -21986,7 +22090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2010-3904"
       }
     ],
     "source": "CISA KEV"
@@ -22011,7 +22115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-5317"
       }
     ],
     "source": "CISA KEV"
@@ -22036,7 +22140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-3427"
       }
     ],
     "source": "CISA KEV"
@@ -22061,7 +22165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-8735"
       }
     ],
     "source": "CISA KEV"
@@ -22086,7 +22190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-29336"
       }
     ],
     "source": "CISA KEV"
@@ -22111,7 +22215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-1389"
       }
     ],
     "source": "CISA KEV"
@@ -22136,7 +22240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-45046"
       }
     ],
     "source": "CISA KEV"
@@ -22161,7 +22265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-21839"
       }
     ],
     "source": "CISA KEV"
@@ -22186,7 +22290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-28432"
       }
     ],
     "source": "CISA KEV"
@@ -22211,7 +22315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-27350"
       }
     ],
     "source": "CISA KEV"
@@ -22236,7 +22340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-2136"
       }
     ],
     "source": "CISA KEV"
@@ -22261,7 +22365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-6742"
       }
     ],
     "source": "CISA KEV"
@@ -22286,7 +22390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-8526"
       }
     ],
     "source": "CISA KEV"
@@ -22311,7 +22415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-2033"
       }
     ],
     "source": "CISA KEV"
@@ -22336,7 +22440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-20963"
       }
     ],
     "source": "CISA KEV"
@@ -22361,7 +22465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-29492"
       }
     ],
     "source": "CISA KEV"
@@ -22386,7 +22490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-28252"
       }
     ],
     "source": "CISA KEV"
@@ -22411,7 +22515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-28205"
       }
     ],
     "source": "CISA KEV"
@@ -22436,7 +22540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-28206"
       }
     ],
     "source": "CISA KEV"
@@ -22461,7 +22565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-27876"
       }
     ],
     "source": "CISA KEV"
@@ -22486,7 +22590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-27877"
       }
     ],
     "source": "CISA KEV"
@@ -22511,7 +22615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-27878"
       }
     ],
     "source": "CISA KEV"
@@ -22536,7 +22640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-1388"
       }
     ],
     "source": "CISA KEV"
@@ -22561,7 +22665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-26083"
       }
     ],
     "source": "CISA KEV"
@@ -22586,7 +22690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-27926"
       }
     ],
     "source": "CISA KEV"
@@ -22611,7 +22715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-3163"
       }
     ],
     "source": "CISA KEV"
@@ -22636,7 +22740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-7494"
       }
     ],
     "source": "CISA KEV"
@@ -22661,7 +22765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-42948"
       }
     ],
     "source": "CISA KEV"
@@ -22686,7 +22790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-39197"
       }
     ],
     "source": "CISA KEV"
@@ -22711,7 +22815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-30900"
       }
     ],
     "source": "CISA KEV"
@@ -22736,7 +22840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-38181"
       }
     ],
     "source": "CISA KEV"
@@ -22761,7 +22865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-0266"
       }
     ],
     "source": "CISA KEV"
@@ -22786,7 +22890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-3038"
       }
     ],
     "source": "CISA KEV"
@@ -22811,7 +22915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-22706"
       }
     ],
     "source": "CISA KEV"
@@ -22836,7 +22940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-26360"
       }
     ],
     "source": "CISA KEV"
@@ -22861,7 +22965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-23397"
       }
     ],
     "source": "CISA KEV"
@@ -22886,7 +22990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-24880"
       }
     ],
     "source": "CISA KEV"
@@ -22911,7 +23015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-41328"
       }
     ],
     "source": "CISA KEV"
@@ -22936,7 +23040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-39144"
       }
     ],
     "source": "CISA KEV"
@@ -22961,7 +23065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-5741"
       }
     ],
     "source": "CISA KEV"
@@ -22986,7 +23090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-28810"
       }
     ],
     "source": "CISA KEV"
@@ -23011,7 +23115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-33891"
       }
     ],
     "source": "CISA KEV"
@@ -23036,7 +23140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-35914"
       }
     ],
     "source": "CISA KEV"
@@ -23061,7 +23165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-36537"
       }
     ],
     "source": "CISA KEV"
@@ -23086,7 +23190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-47986"
       }
     ],
     "source": "CISA KEV"
@@ -23111,7 +23215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-41223"
       }
     ],
     "source": "CISA KEV"
@@ -23136,7 +23240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-40765"
       }
     ],
     "source": "CISA KEV"
@@ -23161,7 +23265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-46169"
       }
     ],
     "source": "CISA KEV"
@@ -23186,7 +23290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-21715"
       }
     ],
     "source": "CISA KEV"
@@ -23211,7 +23315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-23376"
       }
     ],
     "source": "CISA KEV"
@@ -23236,7 +23340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-23529"
       }
     ],
     "source": "CISA KEV"
@@ -23261,7 +23365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-21823"
       }
     ],
     "source": "CISA KEV"
@@ -23286,7 +23390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-2291"
       }
     ],
     "source": "CISA KEV"
@@ -23311,7 +23415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-24990"
       }
     ],
     "source": "CISA KEV"
@@ -23336,7 +23440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-0669"
       }
     ],
     "source": "CISA KEV"
@@ -23361,7 +23465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-21587"
       }
     ],
     "source": "CISA KEV"
@@ -23386,7 +23490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-22952"
       }
     ],
     "source": "CISA KEV"
@@ -23411,7 +23515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-11357"
       }
     ],
     "source": "CISA KEV"
@@ -23436,7 +23540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-47966"
       }
     ],
     "source": "CISA KEV"
@@ -23461,7 +23565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-44877"
       }
     ],
     "source": "CISA KEV"
@@ -23486,7 +23590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-41080"
       }
     ],
     "source": "CISA KEV"
@@ -23511,7 +23615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2023-21674"
       }
     ],
     "source": "CISA KEV"
@@ -23536,7 +23640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-5430"
       }
     ],
     "source": "CISA KEV"
@@ -23561,7 +23665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-18809"
       }
     ],
     "source": "CISA KEV"
@@ -23586,7 +23690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-42856"
       }
     ],
     "source": "CISA KEV"
@@ -23611,7 +23715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-42475"
       }
     ],
     "source": "CISA KEV"
@@ -23636,7 +23740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-44698"
       }
     ],
     "source": "CISA KEV"
@@ -23661,7 +23765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-27518"
       }
     ],
     "source": "CISA KEV"
@@ -23686,7 +23790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-26500"
       }
     ],
     "source": "CISA KEV"
@@ -23711,7 +23815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-26501"
       }
     ],
     "source": "CISA KEV"
@@ -23736,7 +23840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-4262"
       }
     ],
     "source": "CISA KEV"
@@ -23761,7 +23865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-35587"
       }
     ],
     "source": "CISA KEV"
@@ -23786,7 +23890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-4135"
       }
     ],
     "source": "CISA KEV"
@@ -23811,7 +23915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-41049"
       }
     ],
     "source": "CISA KEV"
@@ -23836,7 +23940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-41091"
       }
     ],
     "source": "CISA KEV"
@@ -23861,7 +23965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-41073"
       }
     ],
     "source": "CISA KEV"
@@ -23886,7 +23990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-41125"
       }
     ],
     "source": "CISA KEV"
@@ -23911,7 +24015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-41128"
       }
     ],
     "source": "CISA KEV"
@@ -23936,7 +24040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-25337"
       }
     ],
     "source": "CISA KEV"
@@ -23961,7 +24065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-25369"
       }
     ],
     "source": "CISA KEV"
@@ -23986,7 +24090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-25370"
       }
     ],
     "source": "CISA KEV"
@@ -24011,7 +24115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-3723"
       }
     ],
     "source": "CISA KEV"
@@ -24036,7 +24140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-42827"
       }
     ],
     "source": "CISA KEV"
@@ -24061,7 +24165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-3433"
       }
     ],
     "source": "CISA KEV"
@@ -24086,7 +24190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-3153"
       }
     ],
     "source": "CISA KEV"
@@ -24111,7 +24215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-19323"
       }
     ],
     "source": "CISA KEV"
@@ -24136,7 +24240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-19322"
       }
     ],
     "source": "CISA KEV"
@@ -24161,7 +24265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-19321"
       }
     ],
     "source": "CISA KEV"
@@ -24186,7 +24290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-19320"
       }
     ],
     "source": "CISA KEV"
@@ -24211,7 +24315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-41352"
       }
     ],
     "source": "CISA KEV"
@@ -24236,7 +24340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-3493"
       }
     ],
     "source": "CISA KEV"
@@ -24261,7 +24365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-40684"
       }
     ],
     "source": "CISA KEV"
@@ -24286,7 +24390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-41033"
       }
     ],
     "source": "CISA KEV"
@@ -24311,7 +24415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-41082"
       }
     ],
     "source": "CISA KEV"
@@ -24336,7 +24440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-41040"
       }
     ],
     "source": "CISA KEV"
@@ -24361,7 +24465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-36804"
       }
     ],
     "source": "CISA KEV"
@@ -24386,7 +24490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-3236"
       }
     ],
     "source": "CISA KEV"
@@ -24411,7 +24515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-35405"
       }
     ],
     "source": "CISA KEV"
@@ -24436,7 +24540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-40139"
       }
     ],
     "source": "CISA KEV"
@@ -24461,7 +24565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-6282"
       }
     ],
     "source": "CISA KEV"
@@ -24486,7 +24590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-2597"
       }
     ],
     "source": "CISA KEV"
@@ -24511,7 +24615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-2596"
       }
     ],
     "source": "CISA KEV"
@@ -24536,7 +24640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-2094"
       }
     ],
     "source": "CISA KEV"
@@ -24561,7 +24665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2010-2568"
       }
     ],
     "source": "CISA KEV"
@@ -24586,7 +24690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-37969"
       }
     ],
     "source": "CISA KEV"
@@ -24611,7 +24715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-32917"
       }
     ],
     "source": "CISA KEV"
@@ -24636,7 +24740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-3075"
       }
     ],
     "source": "CISA KEV"
@@ -24661,7 +24765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-27593"
       }
     ],
     "source": "CISA KEV"
@@ -24686,7 +24790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-26258"
       }
     ],
     "source": "CISA KEV"
@@ -24711,7 +24815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-9934"
       }
     ],
     "source": "CISA KEV"
@@ -24736,7 +24840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-7445"
       }
     ],
     "source": "CISA KEV"
@@ -24761,7 +24865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-6530"
       }
     ],
     "source": "CISA KEV"
@@ -24786,7 +24890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-2628"
       }
     ],
     "source": "CISA KEV"
@@ -24811,7 +24915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-13374"
       }
     ],
     "source": "CISA KEV"
@@ -24836,7 +24940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-5521"
       }
     ],
     "source": "CISA KEV"
@@ -24861,7 +24965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2011-4723"
       }
     ],
     "source": "CISA KEV"
@@ -24886,7 +24990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2011-1823"
       }
     ],
     "source": "CISA KEV"
@@ -24911,7 +25015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-26352"
       }
     ],
     "source": "CISA KEV"
@@ -24936,7 +25040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-24706"
       }
     ],
     "source": "CISA KEV"
@@ -24961,7 +25065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-24112"
       }
     ],
     "source": "CISA KEV"
@@ -24986,7 +25090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-22963"
       }
     ],
     "source": "CISA KEV"
@@ -25011,7 +25115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-2294"
       }
     ],
     "source": "CISA KEV"
@@ -25036,7 +25140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-39226"
       }
     ],
     "source": "CISA KEV"
@@ -25061,7 +25165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-38406"
       }
     ],
     "source": "CISA KEV"
@@ -25086,7 +25190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-31010"
       }
     ],
     "source": "CISA KEV"
@@ -25111,7 +25215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-36193"
       }
     ],
     "source": "CISA KEV"
@@ -25136,7 +25240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-28949"
       }
     ],
     "source": "CISA KEV"
@@ -25161,7 +25265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-0028"
       }
     ],
     "source": "CISA KEV"
@@ -25186,7 +25290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-22536"
       }
     ],
     "source": "CISA KEV"
@@ -25211,7 +25315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-32894"
       }
     ],
     "source": "CISA KEV"
@@ -25236,7 +25340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-32893"
       }
     ],
     "source": "CISA KEV"
@@ -25261,7 +25365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-2856"
       }
     ],
     "source": "CISA KEV"
@@ -25286,7 +25390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-26923"
       }
     ],
     "source": "CISA KEV"
@@ -25311,7 +25415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-21971"
       }
     ],
     "source": "CISA KEV"
@@ -25336,7 +25440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-15944"
       }
     ],
     "source": "CISA KEV"
@@ -25361,7 +25465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-27925"
       }
     ],
     "source": "CISA KEV"
@@ -25386,7 +25490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-37042"
       }
     ],
     "source": "CISA KEV"
@@ -25411,7 +25515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-34713"
       }
     ],
     "source": "CISA KEV"
@@ -25436,7 +25540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-30333"
       }
     ],
     "source": "CISA KEV"
@@ -25461,7 +25565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-27924"
       }
     ],
     "source": "CISA KEV"
@@ -25486,7 +25590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-26138"
       }
     ],
     "source": "CISA KEV"
@@ -25511,7 +25615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-22047"
       }
     ],
     "source": "CISA KEV"
@@ -25536,7 +25640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-26925"
       }
     ],
     "source": "CISA KEV"
@@ -25561,7 +25665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-29499"
       }
     ],
     "source": "CISA KEV"
@@ -25586,7 +25690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-30533"
       }
     ],
     "source": "CISA KEV"
@@ -25611,7 +25715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-4034"
       }
     ],
     "source": "CISA KEV"
@@ -25636,7 +25740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-30983"
       }
     ],
     "source": "CISA KEV"
@@ -25661,7 +25765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-3837"
       }
     ],
     "source": "CISA KEV"
@@ -25686,7 +25790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-9907"
       }
     ],
     "source": "CISA KEV"
@@ -25711,7 +25815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-8605"
       }
     ],
     "source": "CISA KEV"
@@ -25736,7 +25840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-4344"
       }
     ],
     "source": "CISA KEV"
@@ -25761,7 +25865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-30190"
       }
     ],
     "source": "CISA KEV"
@@ -25786,7 +25890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-38163"
       }
     ],
     "source": "CISA KEV"
@@ -25811,7 +25915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-2386"
       }
     ],
     "source": "CISA KEV"
@@ -25836,7 +25940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-2388"
       }
     ],
     "source": "CISA KEV"
@@ -25861,7 +25965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-7195"
       }
     ],
     "source": "CISA KEV"
@@ -25886,7 +25990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-7194"
       }
     ],
     "source": "CISA KEV"
@@ -25911,7 +26015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-7193"
       }
     ],
     "source": "CISA KEV"
@@ -25936,7 +26040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-7192"
       }
     ],
     "source": "CISA KEV"
@@ -25961,7 +26065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-5825"
       }
     ],
     "source": "CISA KEV"
@@ -25986,7 +26090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-15271"
       }
     ],
     "source": "CISA KEV"
@@ -26011,7 +26115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-6065"
       }
     ],
     "source": "CISA KEV"
@@ -26036,7 +26140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-4990"
       }
     ],
     "source": "CISA KEV"
@@ -26061,7 +26165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-17480"
       }
     ],
     "source": "CISA KEV"
@@ -26086,7 +26190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-17463"
       }
     ],
     "source": "CISA KEV"
@@ -26111,7 +26215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-6862"
       }
     ],
     "source": "CISA KEV"
@@ -26136,7 +26240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-5070"
       }
     ],
     "source": "CISA KEV"
@@ -26161,7 +26265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-5030"
       }
     ],
     "source": "CISA KEV"
@@ -26186,7 +26290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-5198"
       }
     ],
     "source": "CISA KEV"
@@ -26211,7 +26315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-1646"
       }
     ],
     "source": "CISA KEV"
@@ -26236,7 +26340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-1331"
       }
     ],
     "source": "CISA KEV"
@@ -26261,7 +26365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2012-5054"
       }
     ],
     "source": "CISA KEV"
@@ -26286,7 +26390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2012-4969"
       }
     ],
     "source": "CISA KEV"
@@ -26311,7 +26415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2012-1889"
       }
     ],
     "source": "CISA KEV"
@@ -26336,7 +26440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2012-0767"
       }
     ],
     "source": "CISA KEV"
@@ -26361,7 +26465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2012-0754"
       }
     ],
     "source": "CISA KEV"
@@ -26386,7 +26490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2012-0151"
       }
     ],
     "source": "CISA KEV"
@@ -26411,7 +26515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2011-2462"
       }
     ],
     "source": "CISA KEV"
@@ -26436,7 +26540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2011-0609"
       }
     ],
     "source": "CISA KEV"
@@ -26461,7 +26565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2010-2883"
       }
     ],
     "source": "CISA KEV"
@@ -26486,7 +26590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2010-2572"
       }
     ],
     "source": "CISA KEV"
@@ -26511,7 +26615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2010-1297"
       }
     ],
     "source": "CISA KEV"
@@ -26536,7 +26640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2009-4324"
       }
     ],
     "source": "CISA KEV"
@@ -26561,7 +26665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2009-3953"
       }
     ],
     "source": "CISA KEV"
@@ -26586,7 +26690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2009-1862"
       }
     ],
     "source": "CISA KEV"
@@ -26611,7 +26715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2009-0563"
       }
     ],
     "source": "CISA KEV"
@@ -26636,7 +26740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2009-0557"
       }
     ],
     "source": "CISA KEV"
@@ -26661,7 +26765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2008-0655"
       }
     ],
     "source": "CISA KEV"
@@ -26686,7 +26790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2007-5659"
       }
     ],
     "source": "CISA KEV"
@@ -26711,7 +26815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2006-2492"
       }
     ],
     "source": "CISA KEV"
@@ -26736,7 +26840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-26134"
       }
     ],
     "source": "CISA KEV"
@@ -26761,7 +26865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-3010"
       }
     ],
     "source": "CISA KEV"
@@ -26786,7 +26890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-3393"
       }
     ],
     "source": "CISA KEV"
@@ -26811,7 +26915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-7256"
       }
     ],
     "source": "CISA KEV"
@@ -26836,7 +26940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-1010"
       }
     ],
     "source": "CISA KEV"
@@ -26861,7 +26965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-0984"
       }
     ],
     "source": "CISA KEV"
@@ -26886,7 +26990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-0034"
       }
     ],
     "source": "CISA KEV"
@@ -26911,7 +27015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-0310"
       }
     ],
     "source": "CISA KEV"
@@ -26936,7 +27040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-0016"
       }
     ],
     "source": "CISA KEV"
@@ -26961,7 +27065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-0071"
       }
     ],
     "source": "CISA KEV"
@@ -26986,7 +27090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-2360"
       }
     ],
     "source": "CISA KEV"
@@ -27011,7 +27115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-2425"
       }
     ],
     "source": "CISA KEV"
@@ -27036,7 +27140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-1769"
       }
     ],
     "source": "CISA KEV"
@@ -27061,7 +27165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-4495"
       }
     ],
     "source": "CISA KEV"
@@ -27086,7 +27190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-8651"
       }
     ],
     "source": "CISA KEV"
@@ -27111,7 +27215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-6175"
       }
     ],
     "source": "CISA KEV"
@@ -27136,7 +27240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-1671"
       }
     ],
     "source": "CISA KEV"
@@ -27161,7 +27265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-4148"
       }
     ],
     "source": "CISA KEV"
@@ -27186,7 +27290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-8439"
       }
     ],
     "source": "CISA KEV"
@@ -27211,7 +27315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-4123"
       }
     ],
     "source": "CISA KEV"
@@ -27236,7 +27340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-0546"
       }
     ],
     "source": "CISA KEV"
@@ -27261,7 +27365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-2817"
       }
     ],
     "source": "CISA KEV"
@@ -27286,7 +27390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-4077"
       }
     ],
     "source": "CISA KEV"
@@ -27311,7 +27415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-3153"
       }
     ],
     "source": "CISA KEV"
@@ -27336,7 +27440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-7331"
       }
     ],
     "source": "CISA KEV"
@@ -27361,7 +27465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-3993"
       }
     ],
     "source": "CISA KEV"
@@ -27386,7 +27490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-3896"
       }
     ],
     "source": "CISA KEV"
@@ -27411,7 +27515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-2423"
       }
     ],
     "source": "CISA KEV"
@@ -27436,7 +27540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-0431"
       }
     ],
     "source": "CISA KEV"
@@ -27461,7 +27565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-0422"
       }
     ],
     "source": "CISA KEV"
@@ -27486,7 +27590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-0074"
       }
     ],
     "source": "CISA KEV"
@@ -27511,7 +27615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2012-1710"
       }
     ],
     "source": "CISA KEV"
@@ -27536,7 +27640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2010-1428"
       }
     ],
     "source": "CISA KEV"
@@ -27561,7 +27665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2010-0840"
       }
     ],
     "source": "CISA KEV"
@@ -27586,7 +27690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2010-0738"
       }
     ],
     "source": "CISA KEV"
@@ -27611,7 +27715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-8611"
       }
     ],
     "source": "CISA KEV"
@@ -27636,7 +27740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-19953"
       }
     ],
     "source": "CISA KEV"
@@ -27661,7 +27765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-19949"
       }
     ],
     "source": "CISA KEV"
@@ -27686,7 +27790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-19943"
       }
     ],
     "source": "CISA KEV"
@@ -27711,7 +27815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-0147"
       }
     ],
     "source": "CISA KEV"
@@ -27736,7 +27840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-0022"
       }
     ],
     "source": "CISA KEV"
@@ -27761,7 +27865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-0005"
       }
     ],
     "source": "CISA KEV"
@@ -27786,7 +27890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-0149"
       }
     ],
     "source": "CISA KEV"
@@ -27811,7 +27915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-0210"
       }
     ],
     "source": "CISA KEV"
@@ -27836,7 +27940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-8291"
       }
     ],
     "source": "CISA KEV"
@@ -27861,7 +27965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-8543"
       }
     ],
     "source": "CISA KEV"
@@ -27886,7 +27990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-18362"
       }
     ],
     "source": "CISA KEV"
@@ -27911,7 +28015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-0162"
       }
     ],
     "source": "CISA KEV"
@@ -27936,7 +28040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-3351"
       }
     ],
     "source": "CISA KEV"
@@ -27961,7 +28065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-4655"
       }
     ],
     "source": "CISA KEV"
@@ -27986,7 +28090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-4656"
       }
     ],
     "source": "CISA KEV"
@@ -28011,7 +28115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-4657"
       }
     ],
     "source": "CISA KEV"
@@ -28036,7 +28140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-6366"
       }
     ],
     "source": "CISA KEV"
@@ -28061,7 +28165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-6367"
       }
     ],
     "source": "CISA KEV"
@@ -28086,7 +28190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-3298"
       }
     ],
     "source": "CISA KEV"
@@ -28111,7 +28215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-20821"
       }
     ],
     "source": "CISA KEV"
@@ -28136,7 +28240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-1048"
       }
     ],
     "source": "CISA KEV"
@@ -28161,7 +28265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-0920"
       }
     ],
     "source": "CISA KEV"
@@ -28186,7 +28290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-30883"
       }
     ],
     "source": "CISA KEV"
@@ -28211,7 +28315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-1027"
       }
     ],
     "source": "CISA KEV"
@@ -28236,7 +28340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-0638"
       }
     ],
     "source": "CISA KEV"
@@ -28261,7 +28365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-7286"
       }
     ],
     "source": "CISA KEV"
@@ -28286,7 +28390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-7287"
       }
     ],
     "source": "CISA KEV"
@@ -28311,7 +28415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-0676"
       }
     ],
     "source": "CISA KEV"
@@ -28336,7 +28440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-5786"
       }
     ],
     "source": "CISA KEV"
@@ -28361,7 +28465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-0703"
       }
     ],
     "source": "CISA KEV"
@@ -28386,7 +28490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-0880"
       }
     ],
     "source": "CISA KEV"
@@ -28411,7 +28515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-13720"
       }
     ],
     "source": "CISA KEV"
@@ -28436,7 +28540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-11707"
       }
     ],
     "source": "CISA KEV"
@@ -28461,7 +28565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-11708"
       }
     ],
     "source": "CISA KEV"
@@ -28486,7 +28590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-8720"
       }
     ],
     "source": "CISA KEV"
@@ -28511,7 +28615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-18426"
       }
     ],
     "source": "CISA KEV"
@@ -28536,7 +28640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-1385"
       }
     ],
     "source": "CISA KEV"
@@ -28561,7 +28665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-1130"
       }
     ],
     "source": "CISA KEV"
@@ -28586,7 +28690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-5002"
       }
     ],
     "source": "CISA KEV"
@@ -28611,7 +28715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-8589"
       }
     ],
     "source": "CISA KEV"
@@ -28636,7 +28740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-30525"
       }
     ],
     "source": "CISA KEV"
@@ -28661,7 +28765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-22947"
       }
     ],
     "source": "CISA KEV"
@@ -28686,7 +28790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-1388"
       }
     ],
     "source": "CISA KEV"
@@ -28711,7 +28815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-1789"
       }
     ],
     "source": "CISA KEV"
@@ -28736,7 +28840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-8506"
       }
     ],
     "source": "CISA KEV"
@@ -28761,7 +28865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-4113"
       }
     ],
     "source": "CISA KEV"
@@ -28786,7 +28890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-0322"
       }
     ],
     "source": "CISA KEV"
@@ -28811,7 +28915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-0160"
       }
     ],
     "source": "CISA KEV"
@@ -28836,7 +28940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-29464"
       }
     ],
     "source": "CISA KEV"
@@ -28861,7 +28965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-26904"
       }
     ],
     "source": "CISA KEV"
@@ -28886,7 +28990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-21919"
       }
     ],
     "source": "CISA KEV"
@@ -28911,7 +29015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-0847"
       }
     ],
     "source": "CISA KEV"
@@ -28936,7 +29040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-41357"
       }
     ],
     "source": "CISA KEV"
@@ -28961,7 +29065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-40450"
       }
     ],
     "source": "CISA KEV"
@@ -28986,7 +29090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-1003029"
       }
     ],
     "source": "CISA KEV"
@@ -29011,7 +29115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-6882"
       }
     ],
     "source": "CISA KEV"
@@ -29036,7 +29140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-3568"
       }
     ],
     "source": "CISA KEV"
@@ -29061,7 +29165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-22718"
       }
     ],
     "source": "CISA KEV"
@@ -29086,7 +29190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-22960"
       }
     ],
     "source": "CISA KEV"
@@ -29111,7 +29215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-1364"
       }
     ],
     "source": "CISA KEV"
@@ -29136,7 +29240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-3929"
       }
     ],
     "source": "CISA KEV"
@@ -29161,7 +29265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-16057"
       }
     ],
     "source": "CISA KEV"
@@ -29186,7 +29290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-7841"
       }
     ],
     "source": "CISA KEV"
@@ -29211,7 +29315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-4523"
       }
     ],
     "source": "CISA KEV"
@@ -29236,7 +29340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-0780"
       }
     ],
     "source": "CISA KEV"
@@ -29261,7 +29365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2010-5330"
       }
     ],
     "source": "CISA KEV"
@@ -29286,7 +29390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2007-3010"
       }
     ],
     "source": "CISA KEV"
@@ -29311,7 +29415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-22954"
       }
     ],
     "source": "CISA KEV"
@@ -29336,7 +29440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-24521"
       }
     ],
     "source": "CISA KEV"
@@ -29361,7 +29465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-7602"
       }
     ],
     "source": "CISA KEV"
@@ -29386,7 +29490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-20753"
       }
     ],
     "source": "CISA KEV"
@@ -29411,7 +29515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-5123"
       }
     ],
     "source": "CISA KEV"
@@ -29436,7 +29540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-5122"
       }
     ],
     "source": "CISA KEV"
@@ -29461,7 +29565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-3113"
       }
     ],
     "source": "CISA KEV"
@@ -29486,7 +29590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-2502"
       }
     ],
     "source": "CISA KEV"
@@ -29511,7 +29615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-0313"
       }
     ],
     "source": "CISA KEV"
@@ -29536,7 +29640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-0311"
       }
     ],
     "source": "CISA KEV"
@@ -29561,7 +29665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-9163"
       }
     ],
     "source": "CISA KEV"
@@ -29586,7 +29690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-23176"
       }
     ],
     "source": "CISA KEV"
@@ -29611,7 +29715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-42287"
       }
     ],
     "source": "CISA KEV"
@@ -29636,7 +29740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-42278"
       }
     ],
     "source": "CISA KEV"
@@ -29661,7 +29765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-39793"
       }
     ],
     "source": "CISA KEV"
@@ -29686,7 +29790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-27852"
       }
     ],
     "source": "CISA KEV"
@@ -29711,7 +29815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-22600"
       }
     ],
     "source": "CISA KEV"
@@ -29736,7 +29840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-2509"
       }
     ],
     "source": "CISA KEV"
@@ -29761,7 +29865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-11317"
       }
     ],
     "source": "CISA KEV"
@@ -29786,7 +29890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-3156"
       }
     ],
     "source": "CISA KEV"
@@ -29811,7 +29915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-31166"
       }
     ],
     "source": "CISA KEV"
@@ -29836,7 +29940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-0148"
       }
     ],
     "source": "CISA KEV"
@@ -29861,7 +29965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-22965"
       }
     ],
     "source": "CISA KEV"
@@ -29886,7 +29990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-22675"
       }
     ],
     "source": "CISA KEV"
@@ -29911,7 +30015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-22674"
       }
     ],
     "source": "CISA KEV"
@@ -29936,7 +30040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-45382"
       }
     ],
     "source": "CISA KEV"
@@ -29961,7 +30065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-26871"
       }
     ],
     "source": "CISA KEV"
@@ -29986,7 +30090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-1040"
       }
     ],
     "source": "CISA KEV"
@@ -30011,7 +30115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-34484"
       }
     ],
     "source": "CISA KEV"
@@ -30036,7 +30140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-28799"
       }
     ],
     "source": "CISA KEV"
@@ -30061,7 +30165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-21551"
       }
     ],
     "source": "CISA KEV"
@@ -30086,7 +30190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-10562"
       }
     ],
     "source": "CISA KEV"
@@ -30111,7 +30215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-10561"
       }
     ],
     "source": "CISA KEV"
@@ -30136,7 +30240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-1096"
       }
     ],
     "source": "CISA KEV"
@@ -30161,7 +30265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-0543"
       }
     ],
     "source": "CISA KEV"
@@ -30186,7 +30290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-38646"
       }
     ],
     "source": "CISA KEV"
@@ -30211,7 +30315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-34486"
       }
     ],
     "source": "CISA KEV"
@@ -30236,7 +30340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-26085"
       }
     ],
     "source": "CISA KEV"
@@ -30261,7 +30365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-20028"
       }
     ],
     "source": "CISA KEV"
@@ -30286,7 +30390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-7483"
       }
     ],
     "source": "CISA KEV"
@@ -30311,7 +30415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-8440"
       }
     ],
     "source": "CISA KEV"
@@ -30336,7 +30440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-8406"
       }
     ],
     "source": "CISA KEV"
@@ -30361,7 +30465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-8405"
       }
     ],
     "source": "CISA KEV"
@@ -30386,7 +30490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-0213"
       }
     ],
     "source": "CISA KEV"
@@ -30411,7 +30515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-0059"
       }
     ],
     "source": "CISA KEV"
@@ -30436,7 +30540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-0037"
       }
     ],
     "source": "CISA KEV"
@@ -30461,7 +30565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-7201"
       }
     ],
     "source": "CISA KEV"
@@ -30486,7 +30590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-7200"
       }
     ],
     "source": "CISA KEV"
@@ -30511,7 +30615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-0189"
       }
     ],
     "source": "CISA KEV"
@@ -30536,7 +30640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-0151"
       }
     ],
     "source": "CISA KEV"
@@ -30561,7 +30665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-0040"
       }
     ],
     "source": "CISA KEV"
@@ -30586,7 +30690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-2426"
       }
     ],
     "source": "CISA KEV"
@@ -30611,7 +30715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-2419"
       }
     ],
     "source": "CISA KEV"
@@ -30636,7 +30740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-1770"
       }
     ],
     "source": "CISA KEV"
@@ -30661,7 +30765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-3660"
       }
     ],
     "source": "CISA KEV"
@@ -30686,7 +30790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-2729"
       }
     ],
     "source": "CISA KEV"
@@ -30711,7 +30815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-2551"
       }
     ],
     "source": "CISA KEV"
@@ -30736,7 +30840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-2465"
       }
     ],
     "source": "CISA KEV"
@@ -30761,7 +30865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-1690"
       }
     ],
     "source": "CISA KEV"
@@ -30786,7 +30890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2012-5076"
       }
     ],
     "source": "CISA KEV"
@@ -30811,7 +30915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2012-2539"
       }
     ],
     "source": "CISA KEV"
@@ -30836,7 +30940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2012-2034"
       }
     ],
     "source": "CISA KEV"
@@ -30861,7 +30965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2012-0518"
       }
     ],
     "source": "CISA KEV"
@@ -30886,7 +30990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2011-2005"
       }
     ],
     "source": "CISA KEV"
@@ -30911,7 +31015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2010-4398"
       }
     ],
     "source": "CISA KEV"
@@ -30936,7 +31040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-26318"
       }
     ],
     "source": "CISA KEV"
@@ -30961,7 +31065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-26143"
       }
     ],
     "source": "CISA KEV"
@@ -30986,7 +31090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-21999"
       }
     ],
     "source": "CISA KEV"
@@ -31011,7 +31115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-42237"
       }
     ],
     "source": "CISA KEV"
@@ -31036,7 +31140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-22941"
       }
     ],
     "source": "CISA KEV"
@@ -31061,7 +31165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-9377"
       }
     ],
     "source": "CISA KEV"
@@ -31086,7 +31190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-9054"
       }
     ],
     "source": "CISA KEV"
@@ -31111,7 +31215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-7247"
       }
     ],
     "source": "CISA KEV"
@@ -31136,7 +31240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-5410"
       }
     ],
     "source": "CISA KEV"
@@ -31161,7 +31265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-25223"
       }
     ],
     "source": "CISA KEV"
@@ -31186,7 +31290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-2506"
       }
     ],
     "source": "CISA KEV"
@@ -31211,7 +31315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-2021"
       }
     ],
     "source": "CISA KEV"
@@ -31236,7 +31340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-1956"
       }
     ],
     "source": "CISA KEV"
@@ -31261,7 +31365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-1631"
       }
     ],
     "source": "CISA KEV"
@@ -31286,7 +31390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-6340"
       }
     ],
     "source": "CISA KEV"
@@ -31311,7 +31415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-2616"
       }
     ],
     "source": "CISA KEV"
@@ -31336,7 +31440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-16920"
       }
     ],
     "source": "CISA KEV"
@@ -31361,7 +31465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-15107"
       }
     ],
     "source": "CISA KEV"
@@ -31386,7 +31490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-12991"
       }
     ],
     "source": "CISA KEV"
@@ -31411,7 +31515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-12989"
       }
     ],
     "source": "CISA KEV"
@@ -31436,7 +31540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-11043"
       }
     ],
     "source": "CISA KEV"
@@ -31461,7 +31565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-10068"
       }
     ],
     "source": "CISA KEV"
@@ -31486,7 +31590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-1003030"
       }
     ],
     "source": "CISA KEV"
@@ -31511,7 +31615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-0903"
       }
     ],
     "source": "CISA KEV"
@@ -31536,7 +31640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-8414"
       }
     ],
     "source": "CISA KEV"
@@ -31561,7 +31665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-8373"
       }
     ],
     "source": "CISA KEV"
@@ -31586,7 +31690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-6961"
       }
     ],
     "source": "CISA KEV"
@@ -31611,7 +31715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-14839"
       }
     ],
     "source": "CISA KEV"
@@ -31636,7 +31740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-1273"
       }
     ],
     "source": "CISA KEV"
@@ -31661,7 +31765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-11138"
       }
     ],
     "source": "CISA KEV"
@@ -31686,7 +31790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-0147"
       }
     ],
     "source": "CISA KEV"
@@ -31711,7 +31815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-0125"
       }
     ],
     "source": "CISA KEV"
@@ -31736,7 +31840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-6334"
       }
     ],
     "source": "CISA KEV"
@@ -31761,7 +31865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-6316"
       }
     ],
     "source": "CISA KEV"
@@ -31786,7 +31890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-3881"
       }
     ],
     "source": "CISA KEV"
@@ -31811,7 +31915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-12617"
       }
     ],
     "source": "CISA KEV"
@@ -31836,7 +31940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-12615"
       }
     ],
     "source": "CISA KEV"
@@ -31861,7 +31965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-0146"
       }
     ],
     "source": "CISA KEV"
@@ -31886,7 +31990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-7892"
       }
     ],
     "source": "CISA KEV"
@@ -31911,7 +32015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-4171"
       }
     ],
     "source": "CISA KEV"
@@ -31936,7 +32040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-1555"
       }
     ],
     "source": "CISA KEV"
@@ -31961,7 +32065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-11021"
       }
     ],
     "source": "CISA KEV"
@@ -31986,7 +32090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-10174"
       }
     ],
     "source": "CISA KEV"
@@ -32011,7 +32115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-0752"
       }
     ],
     "source": "CISA KEV"
@@ -32036,7 +32140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-4068"
       }
     ],
     "source": "CISA KEV"
@@ -32061,7 +32165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-3035"
       }
     ],
     "source": "CISA KEV"
@@ -32086,7 +32190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-1427"
       }
     ],
     "source": "CISA KEV"
@@ -32111,7 +32215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-1187"
       }
     ],
     "source": "CISA KEV"
@@ -32136,7 +32240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-0666"
       }
     ],
     "source": "CISA KEV"
@@ -32161,7 +32265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-6332"
       }
     ],
     "source": "CISA KEV"
@@ -32186,7 +32290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-6324"
       }
     ],
     "source": "CISA KEV"
@@ -32211,7 +32315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-6287"
       }
     ],
     "source": "CISA KEV"
@@ -32236,7 +32340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-3120"
       }
     ],
     "source": "CISA KEV"
@@ -32261,7 +32365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-0130"
       }
     ],
     "source": "CISA KEV"
@@ -32286,7 +32390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-5223"
       }
     ],
     "source": "CISA KEV"
@@ -32311,7 +32415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-4810"
       }
     ],
     "source": "CISA KEV"
@@ -32336,7 +32440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-2251"
       }
     ],
     "source": "CISA KEV"
@@ -32361,7 +32465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2012-1823"
       }
     ],
     "source": "CISA KEV"
@@ -32386,7 +32490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2010-4345"
       }
     ],
     "source": "CISA KEV"
@@ -32411,7 +32515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2010-4344"
       }
     ],
     "source": "CISA KEV"
@@ -32436,7 +32540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2010-3035"
       }
     ],
     "source": "CISA KEV"
@@ -32461,7 +32565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2010-2861"
       }
     ],
     "source": "CISA KEV"
@@ -32486,7 +32590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2009-2055"
       }
     ],
     "source": "CISA KEV"
@@ -32511,7 +32615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2009-1151"
       }
     ],
     "source": "CISA KEV"
@@ -32536,7 +32640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2009-0927"
       }
     ],
     "source": "CISA KEV"
@@ -32561,7 +32665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2005-2773"
       }
     ],
     "source": "CISA KEV"
@@ -32586,7 +32690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-5135"
       }
     ],
     "source": "CISA KEV"
@@ -32611,7 +32715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-1405"
       }
     ],
     "source": "CISA KEV"
@@ -32636,7 +32740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-1322"
       }
     ],
     "source": "CISA KEV"
@@ -32661,7 +32765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-1315"
       }
     ],
     "source": "CISA KEV"
@@ -32686,7 +32790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-1253"
       }
     ],
     "source": "CISA KEV"
@@ -32711,7 +32815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-1132"
       }
     ],
     "source": "CISA KEV"
@@ -32736,7 +32840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-1129"
       }
     ],
     "source": "CISA KEV"
@@ -32761,7 +32865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-1069"
       }
     ],
     "source": "CISA KEV"
@@ -32786,7 +32890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-1064"
       }
     ],
     "source": "CISA KEV"
@@ -32811,7 +32915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-0841"
       }
     ],
     "source": "CISA KEV"
@@ -32836,7 +32940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-0543"
       }
     ],
     "source": "CISA KEV"
@@ -32861,7 +32965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-8120"
       }
     ],
     "source": "CISA KEV"
@@ -32886,7 +32990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-0101"
       }
     ],
     "source": "CISA KEV"
@@ -32911,7 +33015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-3309"
       }
     ],
     "source": "CISA KEV"
@@ -32936,7 +33040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-2546"
       }
     ],
     "source": "CISA KEV"
@@ -32961,7 +33065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-26486"
       }
     ],
     "source": "CISA KEV"
@@ -32986,7 +33090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-26485"
       }
     ],
     "source": "CISA KEV"
@@ -33011,7 +33115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-21973"
       }
     ],
     "source": "CISA KEV"
@@ -33036,7 +33140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-8218"
       }
     ],
     "source": "CISA KEV"
@@ -33061,7 +33165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-11581"
       }
     ],
     "source": "CISA KEV"
@@ -33086,7 +33190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-6077"
       }
     ],
     "source": "CISA KEV"
@@ -33111,7 +33215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-6277"
       }
     ],
     "source": "CISA KEV"
@@ -33136,7 +33240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-0631"
       }
     ],
     "source": "CISA KEV"
@@ -33161,7 +33265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-0629"
       }
     ],
     "source": "CISA KEV"
@@ -33186,7 +33290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-0625"
       }
     ],
     "source": "CISA KEV"
@@ -33211,7 +33315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2009-3960"
       }
     ],
     "source": "CISA KEV"
@@ -33236,7 +33340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-20708"
       }
     ],
     "source": "CISA KEV"
@@ -33261,7 +33365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-20703"
       }
     ],
     "source": "CISA KEV"
@@ -33286,7 +33390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-20701"
       }
     ],
     "source": "CISA KEV"
@@ -33311,7 +33415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-20700"
       }
     ],
     "source": "CISA KEV"
@@ -33336,7 +33440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-20699"
       }
     ],
     "source": "CISA KEV"
@@ -33361,7 +33465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-41379"
       }
     ],
     "source": "CISA KEV"
@@ -33386,7 +33490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-1938"
       }
     ],
     "source": "CISA KEV"
@@ -33411,7 +33515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-11899"
       }
     ],
     "source": "CISA KEV"
@@ -33436,7 +33540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-16928"
       }
     ],
     "source": "CISA KEV"
@@ -33461,7 +33565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-1652"
       }
     ],
     "source": "CISA KEV"
@@ -33486,7 +33590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-1297"
       }
     ],
     "source": "CISA KEV"
@@ -33511,7 +33615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-8581"
       }
     ],
     "source": "CISA KEV"
@@ -33536,7 +33640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-8298"
       }
     ],
     "source": "CISA KEV"
@@ -33561,7 +33665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-0180"
       }
     ],
     "source": "CISA KEV"
@@ -33586,7 +33690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-0179"
       }
     ],
     "source": "CISA KEV"
@@ -33611,7 +33715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-0175"
       }
     ],
     "source": "CISA KEV"
@@ -33636,7 +33740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-0174"
       }
     ],
     "source": "CISA KEV"
@@ -33661,7 +33765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-0173"
       }
     ],
     "source": "CISA KEV"
@@ -33686,7 +33790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-0172"
       }
     ],
     "source": "CISA KEV"
@@ -33711,7 +33815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-0167"
       }
     ],
     "source": "CISA KEV"
@@ -33736,7 +33840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-0161"
       }
     ],
     "source": "CISA KEV"
@@ -33761,7 +33865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-0159"
       }
     ],
     "source": "CISA KEV"
@@ -33786,7 +33890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-0158"
       }
     ],
     "source": "CISA KEV"
@@ -33811,7 +33915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-0156"
       }
     ],
     "source": "CISA KEV"
@@ -33836,7 +33940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-0155"
       }
     ],
     "source": "CISA KEV"
@@ -33861,7 +33965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-0154"
       }
     ],
     "source": "CISA KEV"
@@ -33886,7 +33990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-0151"
       }
     ],
     "source": "CISA KEV"
@@ -33911,7 +34015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-8540"
       }
     ],
     "source": "CISA KEV"
@@ -33936,7 +34040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-6744"
       }
     ],
     "source": "CISA KEV"
@@ -33961,7 +34065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-6743"
       }
     ],
     "source": "CISA KEV"
@@ -33986,7 +34090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-6740"
       }
     ],
     "source": "CISA KEV"
@@ -34011,7 +34115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-6739"
       }
     ],
     "source": "CISA KEV"
@@ -34036,7 +34140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-6738"
       }
     ],
     "source": "CISA KEV"
@@ -34061,7 +34165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-6737"
       }
     ],
     "source": "CISA KEV"
@@ -34086,7 +34190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-6736"
       }
     ],
     "source": "CISA KEV"
@@ -34111,7 +34215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-6663"
       }
     ],
     "source": "CISA KEV"
@@ -34136,7 +34240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-6627"
       }
     ],
     "source": "CISA KEV"
@@ -34161,7 +34265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-12319"
       }
     ],
     "source": "CISA KEV"
@@ -34186,7 +34290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-12240"
       }
     ],
     "source": "CISA KEV"
@@ -34211,7 +34315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-12238"
       }
     ],
     "source": "CISA KEV"
@@ -34236,7 +34340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-12237"
       }
     ],
     "source": "CISA KEV"
@@ -34261,7 +34365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-12235"
       }
     ],
     "source": "CISA KEV"
@@ -34286,7 +34390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-12234"
       }
     ],
     "source": "CISA KEV"
@@ -34311,7 +34415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-12233"
       }
     ],
     "source": "CISA KEV"
@@ -34336,7 +34440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-12232"
       }
     ],
     "source": "CISA KEV"
@@ -34361,7 +34465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-12231"
       }
     ],
     "source": "CISA KEV"
@@ -34386,7 +34490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-11826"
       }
     ],
     "source": "CISA KEV"
@@ -34411,7 +34515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-11292"
       }
     ],
     "source": "CISA KEV"
@@ -34436,7 +34540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-0261"
       }
     ],
     "source": "CISA KEV"
@@ -34461,7 +34565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-0001"
       }
     ],
     "source": "CISA KEV"
@@ -34486,7 +34590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-8562"
       }
     ],
     "source": "CISA KEV"
@@ -34511,7 +34615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-7855"
       }
     ],
     "source": "CISA KEV"
@@ -34536,7 +34640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-7262"
       }
     ],
     "source": "CISA KEV"
@@ -34561,7 +34665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-7193"
       }
     ],
     "source": "CISA KEV"
@@ -34586,7 +34690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-5195"
       }
     ],
     "source": "CISA KEV"
@@ -34611,7 +34715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-4117"
       }
     ],
     "source": "CISA KEV"
@@ -34636,7 +34740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-1019"
       }
     ],
     "source": "CISA KEV"
@@ -34661,7 +34765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-0099"
       }
     ],
     "source": "CISA KEV"
@@ -34686,7 +34790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-7645"
       }
     ],
     "source": "CISA KEV"
@@ -34711,7 +34815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-5119"
       }
     ],
     "source": "CISA KEV"
@@ -34736,7 +34840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-4902"
       }
     ],
     "source": "CISA KEV"
@@ -34761,7 +34865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-3043"
       }
     ],
     "source": "CISA KEV"
@@ -34786,7 +34890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-2590"
       }
     ],
     "source": "CISA KEV"
@@ -34811,7 +34915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-2545"
       }
     ],
     "source": "CISA KEV"
@@ -34836,7 +34940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-2424"
       }
     ],
     "source": "CISA KEV"
@@ -34861,7 +34965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-2387"
       }
     ],
     "source": "CISA KEV"
@@ -34886,7 +34990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-1701"
       }
     ],
     "source": "CISA KEV"
@@ -34911,7 +35015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-1642"
       }
     ],
     "source": "CISA KEV"
@@ -34936,7 +35040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-4114"
       }
     ],
     "source": "CISA KEV"
@@ -34961,7 +35065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-0496"
       }
     ],
     "source": "CISA KEV"
@@ -34986,7 +35090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-5065"
       }
     ],
     "source": "CISA KEV"
@@ -35011,7 +35115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-3897"
       }
     ],
     "source": "CISA KEV"
@@ -35036,7 +35140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-3346"
       }
     ],
     "source": "CISA KEV"
@@ -35061,7 +35165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-1675"
       }
     ],
     "source": "CISA KEV"
@@ -35086,7 +35190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-1347"
       }
     ],
     "source": "CISA KEV"
@@ -35111,7 +35215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-0641"
       }
     ],
     "source": "CISA KEV"
@@ -35136,7 +35240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-0640"
       }
     ],
     "source": "CISA KEV"
@@ -35161,7 +35265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-0632"
       }
     ],
     "source": "CISA KEV"
@@ -35186,7 +35290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2012-4681"
       }
     ],
     "source": "CISA KEV"
@@ -35211,7 +35315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2012-1856"
       }
     ],
     "source": "CISA KEV"
@@ -35236,7 +35340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2012-1723"
       }
     ],
     "source": "CISA KEV"
@@ -35261,7 +35365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2012-1535"
       }
     ],
     "source": "CISA KEV"
@@ -35286,7 +35390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2012-0507"
       }
     ],
     "source": "CISA KEV"
@@ -35311,7 +35415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2011-3544"
       }
     ],
     "source": "CISA KEV"
@@ -35336,7 +35440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2011-1889"
       }
     ],
     "source": "CISA KEV"
@@ -35361,7 +35465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2011-0611"
       }
     ],
     "source": "CISA KEV"
@@ -35386,7 +35490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2010-3333"
       }
     ],
     "source": "CISA KEV"
@@ -35411,7 +35515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2010-0232"
       }
     ],
     "source": "CISA KEV"
@@ -35436,7 +35540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2010-0188"
       }
     ],
     "source": "CISA KEV"
@@ -35461,7 +35565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2009-3129"
       }
     ],
     "source": "CISA KEV"
@@ -35486,7 +35590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2009-1123"
       }
     ],
     "source": "CISA KEV"
@@ -35511,7 +35615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2008-3431"
       }
     ],
     "source": "CISA KEV"
@@ -35536,7 +35640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2008-2992"
       }
     ],
     "source": "CISA KEV"
@@ -35561,7 +35665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2004-0210"
       }
     ],
     "source": "CISA KEV"
@@ -35586,7 +35690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2002-0367"
       }
     ],
     "source": "CISA KEV"
@@ -35611,7 +35715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-24682"
       }
     ],
     "source": "CISA KEV"
@@ -35636,7 +35740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-8570"
       }
     ],
     "source": "CISA KEV"
@@ -35661,7 +35765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-0222"
       }
     ],
     "source": "CISA KEV"
@@ -35686,7 +35790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-6352"
       }
     ],
     "source": "CISA KEV"
@@ -35711,7 +35815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-23131"
       }
     ],
     "source": "CISA KEV"
@@ -35736,7 +35840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-23134"
       }
     ],
     "source": "CISA KEV"
@@ -35761,7 +35865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-24086"
       }
     ],
     "source": "CISA KEV"
@@ -35786,7 +35890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-0609"
       }
     ],
     "source": "CISA KEV"
@@ -35811,7 +35915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-0752"
       }
     ],
     "source": "CISA KEV"
@@ -35836,7 +35940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-8174"
       }
     ],
     "source": "CISA KEV"
@@ -35861,7 +35965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-20250"
       }
     ],
     "source": "CISA KEV"
@@ -35886,7 +35990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-15982"
       }
     ],
     "source": "CISA KEV"
@@ -35911,7 +36015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-9841"
       }
     ],
     "source": "CISA KEV"
@@ -35936,7 +36040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-1761"
       }
     ],
     "source": "CISA KEV"
@@ -35961,7 +36065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-3906"
       }
     ],
     "source": "CISA KEV"
@@ -35986,7 +36090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-22620"
       }
     ],
     "source": "CISA KEV"
@@ -36011,7 +36115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-36934"
       }
     ],
     "source": "CISA KEV"
@@ -36036,7 +36140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-0796"
       }
     ],
     "source": "CISA KEV"
@@ -36061,7 +36165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-1000861"
       }
     ],
     "source": "CISA KEV"
@@ -36086,7 +36190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-9791"
       }
     ],
     "source": "CISA KEV"
@@ -36111,7 +36215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-8464"
       }
     ],
     "source": "CISA KEV"
@@ -36136,7 +36240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-10271"
       }
     ],
     "source": "CISA KEV"
@@ -36161,7 +36265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-0263"
       }
     ],
     "source": "CISA KEV"
@@ -36186,7 +36290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-0262"
       }
     ],
     "source": "CISA KEV"
@@ -36211,7 +36315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-0145"
       }
     ],
     "source": "CISA KEV"
@@ -36236,7 +36340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-0144"
       }
     ],
     "source": "CISA KEV"
@@ -36261,7 +36365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-3088"
       }
     ],
     "source": "CISA KEV"
@@ -36286,7 +36390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-2051"
       }
     ],
     "source": "CISA KEV"
@@ -36311,7 +36415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-1635"
       }
     ],
     "source": "CISA KEV"
@@ -36336,7 +36440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-1130"
       }
     ],
     "source": "CISA KEV"
@@ -36361,7 +36465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-4404"
       }
     ],
     "source": "CISA KEV"
@@ -36386,7 +36490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-21882"
       }
     ],
     "source": "CISA KEV"
@@ -36411,7 +36515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-22587"
       }
     ],
     "source": "CISA KEV"
@@ -36436,7 +36540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-20038"
       }
     ],
     "source": "CISA KEV"
@@ -36461,7 +36565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-5722"
       }
     ],
     "source": "CISA KEV"
@@ -36486,7 +36590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-0787"
       }
     ],
     "source": "CISA KEV"
@@ -36511,7 +36615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-5689"
       }
     ],
     "source": "CISA KEV"
@@ -36536,7 +36640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-1776"
       }
     ],
     "source": "CISA KEV"
@@ -36561,7 +36665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-6271"
       }
     ],
     "source": "CISA KEV"
@@ -36586,7 +36690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-7169"
       }
     ],
     "source": "CISA KEV"
@@ -36611,7 +36715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2006-1547"
       }
     ],
     "source": "CISA KEV"
@@ -36636,7 +36740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2012-0391"
       }
     ],
     "source": "CISA KEV"
@@ -36661,7 +36765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-8453"
       }
     ],
     "source": "CISA KEV"
@@ -36686,7 +36790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-35247"
       }
     ],
     "source": "CISA KEV"
@@ -36711,7 +36815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-32648"
       }
     ],
     "source": "CISA KEV"
@@ -36736,7 +36840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-25296"
       }
     ],
     "source": "CISA KEV"
@@ -36761,7 +36865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-25297"
       }
     ],
     "source": "CISA KEV"
@@ -36786,7 +36890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-25298"
       }
     ],
     "source": "CISA KEV"
@@ -36811,7 +36915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-40870"
       }
     ],
     "source": "CISA KEV"
@@ -36836,7 +36940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-33766"
       }
     ],
     "source": "CISA KEV"
@@ -36861,7 +36965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-21975"
       }
     ],
     "source": "CISA KEV"
@@ -36886,7 +36990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-21315"
       }
     ],
     "source": "CISA KEV"
@@ -36911,7 +37015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-22991"
       }
     ],
     "source": "CISA KEV"
@@ -36936,7 +37040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-14864"
       }
     ],
     "source": "CISA KEV"
@@ -36961,7 +37065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-13671"
       }
     ],
     "source": "CISA KEV"
@@ -36986,7 +37090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-11978"
       }
     ],
     "source": "CISA KEV"
@@ -37011,7 +37115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-13927"
       }
     ],
     "source": "CISA KEV"
@@ -37036,7 +37140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-22017"
       }
     ],
     "source": "CISA KEV"
@@ -37061,7 +37165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-36260"
       }
     ],
     "source": "CISA KEV"
@@ -37086,7 +37190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-6572"
       }
     ],
     "source": "CISA KEV"
@@ -37111,7 +37215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-1458"
       }
     ],
     "source": "CISA KEV"
@@ -37136,7 +37240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2013-3900"
       }
     ],
     "source": "CISA KEV"
@@ -37161,7 +37265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-2725"
       }
     ],
     "source": "CISA KEV"
@@ -37186,7 +37290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-9670"
       }
     ],
     "source": "CISA KEV"
@@ -37211,7 +37315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-13382"
       }
     ],
     "source": "CISA KEV"
@@ -37236,7 +37340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-13383"
       }
     ],
     "source": "CISA KEV"
@@ -37261,7 +37365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-1579"
       }
     ],
     "source": "CISA KEV"
@@ -37286,7 +37390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-10149"
       }
     ],
     "source": "CISA KEV"
@@ -37311,7 +37415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-7450"
       }
     ],
     "source": "CISA KEV"
@@ -37336,7 +37440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-1000486"
       }
     ],
     "source": "CISA KEV"
@@ -37361,7 +37465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-7609"
       }
     ],
     "source": "CISA KEV"
@@ -37386,7 +37490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-27860"
       }
     ],
     "source": "CISA KEV"
@@ -37411,7 +37515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-43890"
       }
     ],
     "source": "CISA KEV"
@@ -37436,7 +37540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-4102"
       }
     ],
     "source": "CISA KEV"
@@ -37461,7 +37565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-44515"
       }
     ],
     "source": "CISA KEV"
@@ -37486,7 +37590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-13272"
       }
     ],
     "source": "CISA KEV"
@@ -37511,7 +37615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-35394"
       }
     ],
     "source": "CISA KEV"
@@ -37536,7 +37640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-7238"
       }
     ],
     "source": "CISA KEV"
@@ -37561,7 +37665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-0193"
       }
     ],
     "source": "CISA KEV"
@@ -37586,7 +37690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-44168"
       }
     ],
     "source": "CISA KEV"
@@ -37611,7 +37715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-17562"
       }
     ],
     "source": "CISA KEV"
@@ -37636,7 +37740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-12149"
       }
     ],
     "source": "CISA KEV"
@@ -37661,7 +37765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2010-1871"
       }
     ],
     "source": "CISA KEV"
@@ -37686,7 +37790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-17463"
       }
     ],
     "source": "CISA KEV"
@@ -37711,7 +37815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-8816"
       }
     ],
     "source": "CISA KEV"
@@ -37736,7 +37840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-10758"
       }
     ],
     "source": "CISA KEV"
@@ -37761,7 +37865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-44228"
       }
     ],
     "source": "CISA KEV"
@@ -37786,7 +37890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-11261"
       }
     ],
     "source": "CISA KEV"
@@ -37811,7 +37915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-14847"
       }
     ],
     "source": "CISA KEV"
@@ -37836,7 +37940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-37415"
       }
     ],
     "source": "CISA KEV"
@@ -37861,7 +37965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-40438"
       }
     ],
     "source": "CISA KEV"
@@ -37886,7 +37990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-44077"
       }
     ],
     "source": "CISA KEV"
@@ -37911,7 +38015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-22204"
       }
     ],
     "source": "CISA KEV"
@@ -37936,7 +38040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-40449"
       }
     ],
     "source": "CISA KEV"
@@ -37961,7 +38065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-42321"
       }
     ],
     "source": "CISA KEV"
@@ -37986,7 +38090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-42292"
       }
     ],
     "source": "CISA KEV"
@@ -38011,7 +38115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-27104"
       }
     ],
     "source": "CISA KEV"
@@ -38036,7 +38140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-27102"
       }
     ],
     "source": "CISA KEV"
@@ -38061,7 +38165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-27101"
       }
     ],
     "source": "CISA KEV"
@@ -38086,7 +38190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-27103"
       }
     ],
     "source": "CISA KEV"
@@ -38111,7 +38215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-21017"
       }
     ],
     "source": "CISA KEV"
@@ -38136,7 +38240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-28550"
       }
     ],
     "source": "CISA KEV"
@@ -38161,7 +38265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-4939"
       }
     ],
     "source": "CISA KEV"
@@ -38186,7 +38290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-15961"
       }
     ],
     "source": "CISA KEV"
@@ -38211,7 +38315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-4878"
       }
     ],
     "source": "CISA KEV"
@@ -38236,7 +38340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-5735"
       }
     ],
     "source": "CISA KEV"
@@ -38261,7 +38365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-2215"
       }
     ],
     "source": "CISA KEV"
@@ -38286,7 +38390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-0041"
       }
     ],
     "source": "CISA KEV"
@@ -38311,7 +38415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-0069"
       }
     ],
     "source": "CISA KEV"
@@ -38336,7 +38440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-9805"
       }
     ],
     "source": "CISA KEV"
@@ -38361,7 +38465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-42013"
       }
     ],
     "source": "CISA KEV"
@@ -38386,7 +38490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-41773"
       }
     ],
     "source": "CISA KEV"
@@ -38411,7 +38515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-0211"
       }
     ],
     "source": "CISA KEV"
@@ -38436,7 +38540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-4437"
       }
     ],
     "source": "CISA KEV"
@@ -38461,7 +38565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-17558"
       }
     ],
     "source": "CISA KEV"
@@ -38486,7 +38590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-17530"
       }
     ],
     "source": "CISA KEV"
@@ -38511,7 +38615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-5638"
       }
     ],
     "source": "CISA KEV"
@@ -38536,7 +38640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-11776"
       }
     ],
     "source": "CISA KEV"
@@ -38561,7 +38665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-30858"
       }
     ],
     "source": "CISA KEV"
@@ -38586,7 +38690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-6223"
       }
     ],
     "source": "CISA KEV"
@@ -38611,7 +38715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-30860"
       }
     ],
     "source": "CISA KEV"
@@ -38636,7 +38740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-27930"
       }
     ],
     "source": "CISA KEV"
@@ -38661,7 +38765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-30807"
       }
     ],
     "source": "CISA KEV"
@@ -38686,7 +38790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-27950"
       }
     ],
     "source": "CISA KEV"
@@ -38711,7 +38815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-27932"
       }
     ],
     "source": "CISA KEV"
@@ -38736,7 +38840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-9818"
       }
     ],
     "source": "CISA KEV"
@@ -38761,7 +38865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-9819"
       }
     ],
     "source": "CISA KEV"
@@ -38786,7 +38890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-30762"
       }
     ],
     "source": "CISA KEV"
@@ -38811,7 +38915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-1782"
       }
     ],
     "source": "CISA KEV"
@@ -38836,7 +38940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-1870"
       }
     ],
     "source": "CISA KEV"
@@ -38861,7 +38965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-1871"
       }
     ],
     "source": "CISA KEV"
@@ -38886,7 +38990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-1879"
       }
     ],
     "source": "CISA KEV"
@@ -38911,7 +39015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-30661"
       }
     ],
     "source": "CISA KEV"
@@ -38936,7 +39040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-30666"
       }
     ],
     "source": "CISA KEV"
@@ -38961,7 +39065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-30713"
       }
     ],
     "source": "CISA KEV"
@@ -38986,7 +39090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-30657"
       }
     ],
     "source": "CISA KEV"
@@ -39011,7 +39115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-30665"
       }
     ],
     "source": "CISA KEV"
@@ -39036,7 +39140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-30663"
       }
     ],
     "source": "CISA KEV"
@@ -39061,7 +39165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-30761"
       }
     ],
     "source": "CISA KEV"
@@ -39086,7 +39190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-30869"
       }
     ],
     "source": "CISA KEV"
@@ -39111,7 +39215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-9859"
       }
     ],
     "source": "CISA KEV"
@@ -39136,7 +39240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-20090"
       }
     ],
     "source": "CISA KEV"
@@ -39161,7 +39265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-27562"
       }
     ],
     "source": "CISA KEV"
@@ -39186,7 +39290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-28664"
       }
     ],
     "source": "CISA KEV"
@@ -39211,7 +39315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-28663"
       }
     ],
     "source": "CISA KEV"
@@ -39236,7 +39340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-3398"
       }
     ],
     "source": "CISA KEV"
@@ -39261,7 +39365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-26084"
       }
     ],
     "source": "CISA KEV"
@@ -39286,7 +39390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-11580"
       }
     ],
     "source": "CISA KEV"
@@ -39311,7 +39415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-3396"
       }
     ],
     "source": "CISA KEV"
@@ -39336,7 +39440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-42258"
       }
     ],
     "source": "CISA KEV"
@@ -39361,7 +39465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-3452"
       }
     ],
     "source": "CISA KEV"
@@ -39386,7 +39490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-3580"
       }
     ],
     "source": "CISA KEV"
@@ -39411,7 +39515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-1497"
       }
     ],
     "source": "CISA KEV"
@@ -39436,7 +39540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-1498"
       }
     ],
     "source": "CISA KEV"
@@ -39461,7 +39565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-0171"
       }
     ],
     "source": "CISA KEV"
@@ -39486,7 +39590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-3118"
       }
     ],
     "source": "CISA KEV"
@@ -39511,7 +39615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-3566"
       }
     ],
     "source": "CISA KEV"
@@ -39536,7 +39640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-3569"
       }
     ],
     "source": "CISA KEV"
@@ -39561,7 +39665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-3161"
       }
     ],
     "source": "CISA KEV"
@@ -39586,7 +39690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-1653"
       }
     ],
     "source": "CISA KEV"
@@ -39611,7 +39715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-0296"
       }
     ],
     "source": "CISA KEV"
@@ -39636,7 +39740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-13608"
       }
     ],
     "source": "CISA KEV"
@@ -39661,7 +39765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-8193"
       }
     ],
     "source": "CISA KEV"
@@ -39686,7 +39790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-8195"
       }
     ],
     "source": "CISA KEV"
@@ -39711,7 +39815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-8196"
       }
     ],
     "source": "CISA KEV"
@@ -39736,7 +39840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-19781"
       }
     ],
     "source": "CISA KEV"
@@ -39761,7 +39865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-11634"
       }
     ],
     "source": "CISA KEV"
@@ -39786,7 +39890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-29557"
       }
     ],
     "source": "CISA KEV"
@@ -39811,7 +39915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-25506"
       }
     ],
     "source": "CISA KEV"
@@ -39836,7 +39940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-15811"
       }
     ],
     "source": "CISA KEV"
@@ -39861,7 +39965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-18325"
       }
     ],
     "source": "CISA KEV"
@@ -39886,7 +39990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-9822"
       }
     ],
     "source": "CISA KEV"
@@ -39911,7 +40015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-15752"
       }
     ],
     "source": "CISA KEV"
@@ -39936,7 +40040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-8515"
       }
     ],
     "source": "CISA KEV"
@@ -39961,7 +40065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-7600"
       }
     ],
     "source": "CISA KEV"
@@ -39986,7 +40090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-22205"
       }
     ],
     "source": "CISA KEV"
@@ -40011,7 +40115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-6789"
       }
     ],
     "source": "CISA KEV"
@@ -40036,7 +40140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-8657"
       }
     ],
     "source": "CISA KEV"
@@ -40061,7 +40165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-8655"
       }
     ],
     "source": "CISA KEV"
@@ -40086,7 +40190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-5902"
       }
     ],
     "source": "CISA KEV"
@@ -40111,7 +40215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-22986"
       }
     ],
     "source": "CISA KEV"
@@ -40136,7 +40240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-35464"
       }
     ],
     "source": "CISA KEV"
@@ -40161,7 +40265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-5591"
       }
     ],
     "source": "CISA KEV"
@@ -40186,7 +40290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-12812"
       }
     ],
     "source": "CISA KEV"
@@ -40211,7 +40315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-13379"
       }
     ],
     "source": "CISA KEV"
@@ -40236,7 +40340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-16010"
       }
     ],
     "source": "CISA KEV"
@@ -40261,7 +40365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-15999"
       }
     ],
     "source": "CISA KEV"
@@ -40286,7 +40390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-21166"
       }
     ],
     "source": "CISA KEV"
@@ -40311,7 +40415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-16017"
       }
     ],
     "source": "CISA KEV"
@@ -40336,7 +40440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-37976"
       }
     ],
     "source": "CISA KEV"
@@ -40361,7 +40465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-16009"
       }
     ],
     "source": "CISA KEV"
@@ -40386,7 +40490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-30632"
       }
     ],
     "source": "CISA KEV"
@@ -40411,7 +40515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-16013"
       }
     ],
     "source": "CISA KEV"
@@ -40436,7 +40540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-30633"
       }
     ],
     "source": "CISA KEV"
@@ -40461,7 +40565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-21148"
       }
     ],
     "source": "CISA KEV"
@@ -40486,7 +40590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-37973"
       }
     ],
     "source": "CISA KEV"
@@ -40511,7 +40615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-30551"
       }
     ],
     "source": "CISA KEV"
@@ -40536,7 +40640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-37975"
       }
     ],
     "source": "CISA KEV"
@@ -40561,7 +40665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-6418"
       }
     ],
     "source": "CISA KEV"
@@ -40586,7 +40690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-30554"
       }
     ],
     "source": "CISA KEV"
@@ -40611,7 +40715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-21206"
       }
     ],
     "source": "CISA KEV"
@@ -40636,7 +40740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-38000"
       }
     ],
     "source": "CISA KEV"
@@ -40661,7 +40765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-38003"
       }
     ],
     "source": "CISA KEV"
@@ -40686,7 +40790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-21224"
       }
     ],
     "source": "CISA KEV"
@@ -40711,7 +40815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-21193"
       }
     ],
     "source": "CISA KEV"
@@ -40736,7 +40840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-21220"
       }
     ],
     "source": "CISA KEV"
@@ -40761,7 +40865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-30563"
       }
     ],
     "source": "CISA KEV"
@@ -40786,7 +40890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-4430"
       }
     ],
     "source": "CISA KEV"
@@ -40811,7 +40915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-4427"
       }
     ],
     "source": "CISA KEV"
@@ -40836,7 +40940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-4428"
       }
     ],
     "source": "CISA KEV"
@@ -40861,7 +40965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-4716"
       }
     ],
     "source": "CISA KEV"
@@ -40886,7 +40990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-3715"
       }
     ],
     "source": "CISA KEV"
@@ -40911,7 +41015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-3718"
       }
     ],
     "source": "CISA KEV"
@@ -40936,7 +41040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-15505"
       }
     ],
     "source": "CISA KEV"
@@ -40961,7 +41065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-30116"
       }
     ],
     "source": "CISA KEV"
@@ -40986,7 +41090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-7961"
       }
     ],
     "source": "CISA KEV"
@@ -41011,7 +41115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-23874"
       }
     ],
     "source": "CISA KEV"
@@ -41036,7 +41140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-22506"
       }
     ],
     "source": "CISA KEV"
@@ -41061,7 +41165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-22502"
       }
     ],
     "source": "CISA KEV"
@@ -41086,7 +41190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2014-1812"
       }
     ],
     "source": "CISA KEV"
@@ -41111,7 +41215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-38647"
       }
     ],
     "source": "CISA KEV"
@@ -41136,7 +41240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-0167"
       }
     ],
     "source": "CISA KEV"
@@ -41161,7 +41265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-0878"
       }
     ],
     "source": "CISA KEV"
@@ -41186,7 +41290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-31955"
       }
     ],
     "source": "CISA KEV"
@@ -41211,7 +41315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-1647"
       }
     ],
     "source": "CISA KEV"
@@ -41236,7 +41340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-33739"
       }
     ],
     "source": "CISA KEV"
@@ -41261,7 +41365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-0185"
       }
     ],
     "source": "CISA KEV"
@@ -41286,7 +41390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-0683"
       }
     ],
     "source": "CISA KEV"
@@ -41311,7 +41415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-17087"
       }
     ],
     "source": "CISA KEV"
@@ -41336,7 +41440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-33742"
       }
     ],
     "source": "CISA KEV"
@@ -41361,7 +41465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-31199"
       }
     ],
     "source": "CISA KEV"
@@ -41386,7 +41490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-33771"
       }
     ],
     "source": "CISA KEV"
@@ -41411,7 +41515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-31956"
       }
     ],
     "source": "CISA KEV"
@@ -41436,7 +41540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-31201"
       }
     ],
     "source": "CISA KEV"
@@ -41461,7 +41565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-31979"
       }
     ],
     "source": "CISA KEV"
@@ -41486,7 +41590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-0938"
       }
     ],
     "source": "CISA KEV"
@@ -41511,7 +41615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-17144"
       }
     ],
     "source": "CISA KEV"
@@ -41536,7 +41640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-0986"
       }
     ],
     "source": "CISA KEV"
@@ -41561,7 +41665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-1020"
       }
     ],
     "source": "CISA KEV"
@@ -41586,7 +41690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-38645"
       }
     ],
     "source": "CISA KEV"
@@ -41611,7 +41715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-34523"
       }
     ],
     "source": "CISA KEV"
@@ -41636,7 +41740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-7269"
       }
     ],
     "source": "CISA KEV"
@@ -41661,7 +41765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-36948"
       }
     ],
     "source": "CISA KEV"
@@ -41686,7 +41790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-38649"
       }
     ],
     "source": "CISA KEV"
@@ -41711,7 +41815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-0688"
       }
     ],
     "source": "CISA KEV"
@@ -41736,7 +41840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-0143"
       }
     ],
     "source": "CISA KEV"
@@ -41761,7 +41865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-7255"
       }
     ],
     "source": "CISA KEV"
@@ -41786,7 +41890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-0708"
       }
     ],
     "source": "CISA KEV"
@@ -41811,7 +41915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-34473"
       }
     ],
     "source": "CISA KEV"
@@ -41836,7 +41940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-1464"
       }
     ],
     "source": "CISA KEV"
@@ -41861,7 +41965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-1732"
       }
     ],
     "source": "CISA KEV"
@@ -41886,7 +41990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-34527"
       }
     ],
     "source": "CISA KEV"
@@ -41911,7 +42015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-31207"
       }
     ],
     "source": "CISA KEV"
@@ -41936,7 +42040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-0803"
       }
     ],
     "source": "CISA KEV"
@@ -41961,7 +42065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-1040"
       }
     ],
     "source": "CISA KEV"
@@ -41986,7 +42090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-28310"
       }
     ],
     "source": "CISA KEV"
@@ -42011,7 +42115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-1350"
       }
     ],
     "source": "CISA KEV"
@@ -42036,7 +42140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-26411"
       }
     ],
     "source": "CISA KEV"
@@ -42061,7 +42165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-0859"
       }
     ],
     "source": "CISA KEV"
@@ -42086,7 +42190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-40444"
       }
     ],
     "source": "CISA KEV"
@@ -42111,7 +42215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-8759"
       }
     ],
     "source": "CISA KEV"
@@ -42136,7 +42240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-8653"
       }
     ],
     "source": "CISA KEV"
@@ -42161,7 +42265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-0797"
       }
     ],
     "source": "CISA KEV"
@@ -42186,7 +42290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-36942"
       }
     ],
     "source": "CISA KEV"
@@ -42211,7 +42315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-1215"
       }
     ],
     "source": "CISA KEV"
@@ -42236,7 +42340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-0798"
       }
     ],
     "source": "CISA KEV"
@@ -42261,7 +42365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-0802"
       }
     ],
     "source": "CISA KEV"
@@ -42286,7 +42390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2012-0158"
       }
     ],
     "source": "CISA KEV"
@@ -42311,7 +42415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-1641"
       }
     ],
     "source": "CISA KEV"
@@ -42336,7 +42440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-27085"
       }
     ],
     "source": "CISA KEV"
@@ -42361,7 +42465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-0541"
       }
     ],
     "source": "CISA KEV"
@@ -42386,7 +42490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-11882"
       }
     ],
     "source": "CISA KEV"
@@ -42411,7 +42515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-0674"
       }
     ],
     "source": "CISA KEV"
@@ -42436,7 +42540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-27059"
       }
     ],
     "source": "CISA KEV"
@@ -42461,7 +42565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-1367"
       }
     ],
     "source": "CISA KEV"
@@ -42486,7 +42590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-0199"
       }
     ],
     "source": "CISA KEV"
@@ -42511,7 +42615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-1380"
       }
     ],
     "source": "CISA KEV"
@@ -42536,7 +42640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-1429"
       }
     ],
     "source": "CISA KEV"
@@ -42561,7 +42665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-11774"
       }
     ],
     "source": "CISA KEV"
@@ -42586,7 +42690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-0968"
       }
     ],
     "source": "CISA KEV"
@@ -42611,7 +42715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-1472"
       }
     ],
     "source": "CISA KEV"
@@ -42636,7 +42740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-26855"
       }
     ],
     "source": "CISA KEV"
@@ -42661,7 +42765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-26858"
       }
     ],
     "source": "CISA KEV"
@@ -42686,7 +42790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-27065"
       }
     ],
     "source": "CISA KEV"
@@ -42711,7 +42815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-1054"
       }
     ],
     "source": "CISA KEV"
@@ -42736,7 +42840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-1675"
       }
     ],
     "source": "CISA KEV"
@@ -42761,7 +42865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-34448"
       }
     ],
     "source": "CISA KEV"
@@ -42786,7 +42890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-0601"
       }
     ],
     "source": "CISA KEV"
@@ -42811,7 +42915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-0604"
       }
     ],
     "source": "CISA KEV"
@@ -42836,7 +42940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-0646"
       }
     ],
     "source": "CISA KEV"
@@ -42861,7 +42965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-0808"
       }
     ],
     "source": "CISA KEV"
@@ -42886,7 +42990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-26857"
       }
     ],
     "source": "CISA KEV"
@@ -42911,7 +43015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-1147"
       }
     ],
     "source": "CISA KEV"
@@ -42936,7 +43040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-1214"
       }
     ],
     "source": "CISA KEV"
@@ -42961,7 +43065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-3235"
       }
     ],
     "source": "CISA KEV"
@@ -42986,7 +43090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-0863"
       }
     ],
     "source": "CISA KEV"
@@ -43011,7 +43115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-36955"
       }
     ],
     "source": "CISA KEV"
@@ -43036,7 +43140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-38648"
       }
     ],
     "source": "CISA KEV"
@@ -43061,7 +43165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-6819"
       }
     ],
     "source": "CISA KEV"
@@ -43086,7 +43190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-6820"
       }
     ],
     "source": "CISA KEV"
@@ -43111,7 +43215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-17026"
       }
     ],
     "source": "CISA KEV"
@@ -43136,7 +43240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-15949"
       }
     ],
     "source": "CISA KEV"
@@ -43161,7 +43265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-26919"
       }
     ],
     "source": "CISA KEV"
@@ -43186,7 +43290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-19356"
       }
     ],
     "source": "CISA KEV"
@@ -43211,7 +43315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-2555"
       }
     ],
     "source": "CISA KEV"
@@ -43236,7 +43340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2012-3152"
       }
     ],
     "source": "CISA KEV"
@@ -43261,7 +43365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-14871"
       }
     ],
     "source": "CISA KEV"
@@ -43286,7 +43390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2015-4852"
       }
     ],
     "source": "CISA KEV"
@@ -43311,7 +43415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-14750"
       }
     ],
     "source": "CISA KEV"
@@ -43336,7 +43440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-14882"
       }
     ],
     "source": "CISA KEV"
@@ -43361,7 +43465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-14883"
       }
     ],
     "source": "CISA KEV"
@@ -43386,7 +43490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-8644"
       }
     ],
     "source": "CISA KEV"
@@ -43411,7 +43515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-18935"
       }
     ],
     "source": "CISA KEV"
@@ -43436,7 +43540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-22893"
       }
     ],
     "source": "CISA KEV"
@@ -43461,7 +43565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-8243"
       }
     ],
     "source": "CISA KEV"
@@ -43486,7 +43590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-22900"
       }
     ],
     "source": "CISA KEV"
@@ -43511,7 +43615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-22894"
       }
     ],
     "source": "CISA KEV"
@@ -43536,7 +43640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-8260"
       }
     ],
     "source": "CISA KEV"
@@ -43561,7 +43665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-22899"
       }
     ],
     "source": "CISA KEV"
@@ -43586,7 +43690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-11510"
       }
     ],
     "source": "CISA KEV"
@@ -43611,7 +43715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-11539"
       }
     ],
     "source": "CISA KEV"
@@ -43636,7 +43740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-1906"
       }
     ],
     "source": "CISA KEV"
@@ -43661,7 +43765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-1905"
       }
     ],
     "source": "CISA KEV"
@@ -43686,7 +43790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-10221"
       }
     ],
     "source": "CISA KEV"
@@ -43711,7 +43815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-35395"
       }
     ],
     "source": "CISA KEV"
@@ -43736,7 +43840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-16651"
       }
     ],
     "source": "CISA KEV"
@@ -43761,7 +43865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-11652"
       }
     ],
     "source": "CISA KEV"
@@ -43786,7 +43890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-11651"
       }
     ],
     "source": "CISA KEV"
@@ -43811,7 +43915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-16846"
       }
     ],
     "source": "CISA KEV"
@@ -43836,7 +43940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-2380"
       }
     ],
     "source": "CISA KEV"
@@ -43861,7 +43965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2010-5326"
       }
     ],
     "source": "CISA KEV"
@@ -43886,7 +43990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-9563"
       }
     ],
     "source": "CISA KEV"
@@ -43911,7 +44015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-6287"
       }
     ],
     "source": "CISA KEV"
@@ -43936,7 +44040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-6207"
       }
     ],
     "source": "CISA KEV"
@@ -43961,7 +44065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-3976"
       }
     ],
     "source": "CISA KEV"
@@ -43986,7 +44090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-16256"
       }
     ],
     "source": "CISA KEV"
@@ -44011,7 +44115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-10148"
       }
     ],
     "source": "CISA KEV"
@@ -44036,7 +44140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-35211"
       }
     ],
     "source": "CISA KEV"
@@ -44061,7 +44165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2016-3643"
       }
     ],
     "source": "CISA KEV"
@@ -44086,7 +44190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-10199"
       }
     ],
     "source": "CISA KEV"
@@ -44111,7 +44215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-20021"
       }
     ],
     "source": "CISA KEV"
@@ -44136,7 +44240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-7481"
       }
     ],
     "source": "CISA KEV"
@@ -44161,7 +44265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-20022"
       }
     ],
     "source": "CISA KEV"
@@ -44186,7 +44290,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-20023"
       }
     ],
     "source": "CISA KEV"
@@ -44211,7 +44315,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-20016"
       }
     ],
     "source": "CISA KEV"
@@ -44236,7 +44340,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-12271"
       }
     ],
     "source": "CISA KEV"
@@ -44261,7 +44365,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-10181"
       }
     ],
     "source": "CISA KEV"
@@ -44286,7 +44390,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-6327"
       }
     ],
     "source": "CISA KEV"
@@ -44311,7 +44415,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-18988"
       }
     ],
     "source": "CISA KEV"
@@ -44336,7 +44440,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-9248"
       }
     ],
     "source": "CISA KEV"
@@ -44361,7 +44465,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-31755"
       }
     ],
     "source": "CISA KEV"
@@ -44386,7 +44490,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-10987"
       }
     ],
     "source": "CISA KEV"
@@ -44411,7 +44515,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-14558"
       }
     ],
     "source": "CISA KEV"
@@ -44436,7 +44540,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2018-20062"
       }
     ],
     "source": "CISA KEV"
@@ -44461,7 +44565,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-9082"
       }
     ],
     "source": "CISA KEV"
@@ -44486,7 +44590,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-18187"
       }
     ],
     "source": "CISA KEV"
@@ -44511,7 +44615,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-8467"
       }
     ],
     "source": "CISA KEV"
@@ -44536,7 +44640,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-8468"
       }
     ],
     "source": "CISA KEV"
@@ -44561,7 +44665,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-24557"
       }
     ],
     "source": "CISA KEV"
@@ -44586,7 +44690,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-8599"
       }
     ],
     "source": "CISA KEV"
@@ -44611,7 +44715,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-36742"
       }
     ],
     "source": "CISA KEV"
@@ -44636,7 +44740,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-36741"
       }
     ],
     "source": "CISA KEV"
@@ -44661,7 +44765,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-20085"
       }
     ],
     "source": "CISA KEV"
@@ -44686,7 +44790,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-5849"
       }
     ],
     "source": "CISA KEV"
@@ -44711,7 +44815,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-5847"
       }
     ],
     "source": "CISA KEV"
@@ -44736,7 +44840,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-16759"
       }
     ],
     "source": "CISA KEV"
@@ -44761,7 +44865,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-17496"
       }
     ],
     "source": "CISA KEV"
@@ -44786,7 +44890,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-5544"
       }
     ],
     "source": "CISA KEV"
@@ -44811,7 +44915,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-3992"
       }
     ],
     "source": "CISA KEV"
@@ -44836,7 +44940,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-3950"
       }
     ],
     "source": "CISA KEV"
@@ -44861,7 +44965,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-22005"
       }
     ],
     "source": "CISA KEV"
@@ -44886,7 +44990,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-3952"
       }
     ],
     "source": "CISA KEV"
@@ -44911,7 +45015,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-21972"
       }
     ],
     "source": "CISA KEV"
@@ -44936,7 +45040,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-21985"
       }
     ],
     "source": "CISA KEV"
@@ -44961,7 +45065,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-4006"
       }
     ],
     "source": "CISA KEV"
@@ -44986,7 +45090,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-25213"
       }
     ],
     "source": "CISA KEV"
@@ -45011,7 +45115,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-11738"
       }
     ],
     "source": "CISA KEV"
@@ -45036,7 +45140,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-9978"
       }
     ],
     "source": "CISA KEV"
@@ -45061,7 +45165,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-27561"
       }
     ],
     "source": "CISA KEV"
@@ -45086,7 +45190,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-40539"
       }
     ],
     "source": "CISA KEV"
@@ -45111,7 +45215,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-10189"
       }
     ],
     "source": "CISA KEV"
@@ -45136,7 +45240,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2019-8394"
       }
     ],
     "source": "CISA KEV"
@@ -45161,7 +45265,7 @@ export const advisories: Advisory[] = [
       },
       {
         "label": "CISA KEV catalog",
-        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-29583"
       }
     ],
     "source": "CISA KEV"

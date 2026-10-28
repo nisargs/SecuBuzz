@@ -495,18 +495,23 @@ export function AdvisoryDetail() {
             <section>
               <h2 className="text-lg font-semibold text-ink">References</h2>
               <ul className="mt-3 divide-y divide-line border-y border-line">
-                {advisory.references.map((r) => (
-                  <li key={r.url}>
-                    <a
-                      href={r.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-between gap-4 py-3.5 text-[15px] text-ink transition-colors duration-150 ease-out hover:text-accent">
-                      {r.label}
-                      <ArrowUpRightIcon className="h-4 w-4 shrink-0 text-muted" aria-hidden="true" />
-                    </a>
-                  </li>
-                ))}
+                {advisory.references.map((r) => {
+                  const targetUrl = r.label.toLowerCase().includes('cisa') && !r.url.includes('field_cve')
+                    ? `https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=${encodeURIComponent(advisory.cve)}`
+                    : r.url;
+                  return (
+                    <li key={r.url}>
+                      <a
+                        href={targetUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-between gap-4 py-3.5 text-[15px] text-ink transition-colors duration-150 ease-out hover:text-accent">
+                        {r.label}
+                        <ArrowUpRightIcon className="h-4 w-4 shrink-0 text-muted" aria-hidden="true" />
+                      </a>
+                    </li>
+                  );
+                })}
               </ul>
             </section>
           </div>

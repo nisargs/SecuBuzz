@@ -38,7 +38,7 @@ function transformKev(list: any[]): Advisory[] {
       requiredAction: (item.requiredAction || 'Apply vendor updates according to instructions.').replace(/\s*\(see URL in Notes\)/gi, '').trim(),
       references: [
         { label: 'NVD CVE entry', url: `https://nvd.nist.gov/vuln/detail/${cve}` },
-        { label: 'CISA KEV catalog', url: 'https://www.cisa.gov/known-exploited-vulnerabilities-catalog' }
+        { label: 'CISA KEV catalog', url: `https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=${cve}` }
       ],
       source: 'CISA KEV'
     };
