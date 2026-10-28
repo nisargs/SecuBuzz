@@ -33,7 +33,7 @@ const GEMINI_API_URL =
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 
-const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-2.5-flash";
+const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-1.5-flash";
 
 const OPENROUTER_API_URL =
   "https://openrouter.ai/api/v1/chat/completions";
@@ -1396,13 +1396,13 @@ async function requestGroq(
 
       if (retryAfter) {
         const retrySeconds = parseSeconds(retryAfter);
-        if (retrySeconds > 8) {
+        if (retrySeconds > 25) {
           throw new Error(`Groq rate-limited (retry-after ${retrySeconds}s) - failing over to next engine`);
         }
         await sleep(Math.ceil(retrySeconds * 1000) + RATE_LIMIT_RESET_BUFFER_MS);
       } else if (resetTokens) {
         const resetSec = parseSeconds(resetTokens);
-        if (resetSec > 8) {
+        if (resetSec > 25) {
           throw new Error(`Groq token limit reached (reset in ${resetSec}s) - failing over to next engine`);
         }
         await waitForRateLimitReset(response);
