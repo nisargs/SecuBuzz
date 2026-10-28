@@ -119,7 +119,7 @@ ${advisoryEntries}
 
 export function generateRssXml(articles: ArticleItem[] = []): string {
   const buildDate = new Date().toUTCString();
-  const items = articles.slice(0, 50).map(art => {
+  const items = articles.slice(0, 100).map(art => {
     const headline = art.headline || art.title || 'Threat Intelligence Brief';
     const slug = createSlug(headline, art.id);
     const link = `https://secubuzz.com/news/${slug}`;
@@ -210,7 +210,10 @@ export function injectMetaTags(
     if (article) {
       const artTitle = article.headline || article.title || 'Security Brief';
       title = `${artTitle} · 60-Word Security Brief · SecuBuzz`;
-      description = `[60-Word Security Brief] ${article.summary || description}`;
+      const fullSummary = article.summary || description;
+      description = fullSummary.length > 155
+        ? `[60-Word Brief] ${fullSummary.slice(0, 145).replace(/[,;:\s]+$/, '')}…`
+        : `[60-Word Brief] ${fullSummary}`;
       ogType = 'article';
       jsonLdObj = {
         '@context': 'https://schema.org',
@@ -362,6 +365,10 @@ export function injectMetaTags(
   } else if (pathname === '/contact') {
     title = 'Contact SecuBuzz · MiSo Labs';
     description = 'Contact the SecuBuzz team at MiSo Labs. Support, bug reports, publisher partnerships, and coordinated security disclosures.';
+  } else if (pathname === '/404') {
+    title = 'Page Not Found · SecuBuzz';
+    description = 'The requested security brief or advisory could not be found. Browse today\'s 60-word briefs or the active CISA KEV catalog.';
+    canonicalPath = '/404';
   }
 
   const canonicalUrl = canonicalPath ? `https://secubuzz.com${canonicalPath}` : 'https://secubuzz.com/';

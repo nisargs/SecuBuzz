@@ -31,7 +31,7 @@ export function Home() {
     <>
       <Seo
         title="SecuBuzz · Quick Cybersecurity News in 60 Words & CISA KEV Radar"
-        description="Quick, factual 60-word cybersecurity news briefs and CISA KEV zero-day tracking with EPSS scores. Zero ad trackers or cookies, fast triage, 27+ curated threat feeds."
+        description="Quick, factual 60-word cybersecurity news briefs and CISA KEV zero-day tracking with EPSS scores. Privacy-first, zero third-party trackers, fast triage, 43 curated threat feeds and vendor PSIRTs."
         canonicalPath="/"
         jsonLd={{
           '@context': 'https://schema.org',

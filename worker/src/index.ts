@@ -1,3 +1,4 @@
+import { GITHUB_ADVISORIES } from './githubAdvisories';
 export interface D1PreparedStatement {
   bind(...values: unknown[]): D1PreparedStatement;
   first<T = unknown>(colName?: string): Promise<T | null>;
@@ -33,6 +34,7 @@ const SECURITY_HEADERS = {
   'X-Frame-Options': 'DENY',
   'Referrer-Policy': 'strict-origin-when-cross-origin',
   'Permissions-Policy': 'camera=(), microphone=(), geolocation=()',
+  'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload',
 };
 
 function jsonResponse(
@@ -390,7 +392,8 @@ function isKnownSpaRoute(pathname: string, articlesList: ArticleItem[], advisori
 
     // 2) Any valid news slug (alphanumeric with hyphens/underscores/dots, >= 3 chars) is a valid SPA article route
     // This allows Googlebot to index historical/aged-out stories with HTTP 200 instead of receiving a 404
-    return /^[a-z0-9_.-]{3,}$/i.test(slug);
+    // Strict news check (eliminates soft 404s)
+    return false;
   }
 
   if (clean.startsWith('/advisories/')) {
@@ -398,9 +401,7 @@ function isKnownSpaRoute(pathname: string, articlesList: ArticleItem[], advisori
     const slug = decodeURIComponent(rawSlug).replace(/\.html?$/i, '');
     if (!slug) return false;
     // 1) Any standard CVE (cve-YYYY-NNNN) or GHSA identifier
-    if (/^(cve-\d{4}-\d+|ghsa-[a-z0-9_.-]+)$/i.test(slug)) {
-      return true;
-    }
+    // Validated against advisoriesList below
     // 2) Active KEV catalog match
     if (advisoriesList.some(
       a => (a?.cveID && a.cveID.toLowerCase() === slug) ||
@@ -410,7 +411,8 @@ function isKnownSpaRoute(pathname: string, articlesList: ArticleItem[], advisori
       return true;
     }
     // 3) Any valid advisory slug (>= 4 chars)
-    return /^[a-z0-9_.-]{4,}$/i.test(slug);
+    // Strict advisory check (eliminates soft 404s)
+    return false;
   }
 
   return false;
@@ -524,7 +526,7 @@ export default {
         }
 
         const headers = new Headers({
-          'Location': SUPPORT_TARGET_URL,
+          'Location': (source && source !== 'direct') ? `${SUPPORT_TARGET_URL}?src=${encodeURIComponent(source)}` : SUPPORT_TARGET_URL,
           'Cache-Control': 'no-cache, no-store, must-revalidate',
         });
         if (isNewCookie) {
@@ -726,7 +728,8 @@ export default {
       // API: Advisories JSON (Full CISA KEV catalog by default)
       if (url.pathname === '/api/advisories') {
         const all = url.searchParams.get('all') !== 'false';
-        const advisories = await getKevAdvisories(all);
+        const cisa = await getKevAdvisories(all);
+        const advisories = [...cisa, ...GITHUB_ADVISORIES];
         return jsonResponse({
           success: true,
           count: advisories.length,
@@ -802,7 +805,8 @@ export default {
 
       // Dynamic Sitemap for Search Engines
       if (url.pathname === '/sitemap.xml') {
-        const [articles, advisories] = await Promise.all([getArticles(), getKevAdvisories()]);
+        const [articles, cisa] = await Promise.all([getArticles(), getKevAdvisories()]);
+        const advisories = [...cisa, ...(GITHUB_ADVISORIES as any)];
         const sitemapXml = generateSitemapXml(articles, advisories);
         return new Response(sitemapXml, {
           status: 200,
@@ -1274,6 +1278,19 @@ export default {
 
         // If static asset was found (CSS, JS, images, icons, video, etc.)
         if ((assetRes.status === 200 || assetRes.status === 206) && !contentType.includes('text/html')) {
+          const isImmutable = url.pathname.startsWith('/assets/') ||
+            url.pathname === '/qr.png' ||
+            url.pathname === '/1.jpg' ||
+            url.pathname === '/2.jpg' ||
+            url.pathname === '/3.jpg';
+          if (isImmutable && assetRes.status === 200) {
+            const cachedHeaders = new Headers(assetRes.headers);
+            cachedHeaders.set('Cache-Control', 'public, max-age=31536000, immutable');
+            for (const [k, v] of Object.entries(CORS_HEADERS)) {
+              cachedHeaders.set(k, v);
+            }
+            return new Response(assetRes.body, { status: assetRes.status, headers: cachedHeaders });
+          }
           return assetRes;
         }
 
@@ -1294,16 +1311,22 @@ export default {
         const finalContentType = assetRes.headers.get('content-type') || '';
         if (assetRes.status === 200 && finalContentType.includes('text/html')) {
           const rawHtml = await assetRes.text();
-          const [articles, advisories] = await Promise.all([getArticles(), getKevAdvisories()]);
+          const [articles, cisaAdv] = await Promise.all([getArticles(), getKevAdvisories()]);
+          const advisories = [...cisaAdv, ...GITHUB_ADVISORIES];
           const isRouteValid = isKnownSpaRoute(url.pathname, articles, advisories);
 
           if (!isRouteValid) {
-            return new Response('404 Page Not Found', {
+            let notFoundHtml = rawHtml;
+            try {
+              notFoundHtml = injectMetaTags(rawHtml, '/404', articles, advisories);
+            } catch {}
+            return new Response(notFoundHtml, {
               status: 404,
               headers: {
-                'Content-Type': 'text/plain; charset=utf-8',
+                'Content-Type': 'text/html; charset=utf-8',
                 'Cache-Control': 'public, max-age=3600, s-maxage=3600',
                 ...CORS_HEADERS,
+                ...SECURITY_HEADERS,
               },
             });
           }
@@ -1320,10 +1343,7 @@ export default {
             ...CORS_HEADERS,
             ...SECURITY_HEADERS,
           });
-          const visitor = getVisitorInfo(request);
-          if (visitor.isNewCookie) {
-            htmlHeaders.set('Set-Cookie', `sb_vid=${visitor.visitorId}; Path=/; Max-Age=31536000; SameSite=Lax; Secure`);
-          }
+          // Zero cookies on regular browsing; sb_vid is set strictly on /go/play download button clicks
           return new Response(enrichedHtml, {
             status: 200,
             headers: htmlHeaders,

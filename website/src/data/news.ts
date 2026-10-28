@@ -29,8 +29,8 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "microsoft-releases-windows-oob-updates-to-distrust-13cec4",
-    "title": "Microsoft Releases Windows OOB Updates to Distrust eMudhra Certificates",
+    "slug": "microsoft-distrusts-emudhra-certificates-in-out-of-13cec4",
+    "title": "Microsoft Distrusts eMudhra Certificates in Out-of-Band Update",
     "summary": "Microsoft released out‑of‑band Windows updates to remove trust in certificates issued by the compromised eMudhra certificate authority, protecting systems that do not receive automatic certificate trust updates. The flaw stems from compromised CA keys that enabled attackers to actively issue fraudulent certificates, creating a potential man‑in‑the‑middle risk for TLS connections. Apply the update via Windows Update immediately.",
     "category": "Vulnerability",
     "severity": "MEDIUM",
@@ -40,16 +40,16 @@ export const news: NewsBrief[] = [
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "microsoft-releases-windows-oob-updates-to-distrust",
+      "microsoft-distrusts-emudhra-certificates-in-out-of",
       "article-13cec4",
       "13cec4",
-      "microsoft-releases-windows-oob-updates-to-distrust-emudhra-c"
+      "microsoft-distrusts-emudhra-certificates-in-out-of-band-upda"
     ]
   },
   {
     "slug": "cve-2026-111497-out-of-bounds-write-in-brotli-libr-58bbdb",
     "title": "CVE‑2026‑111497: Out‑of‑Bounds Write in Brotli Library",
-    "summary": "CVE‑2026‑111497 is a remotely exploitable out‑of‑bounds write flaw in Google’s Brotli compression library that affects any application decompressing Brotli data via node:zlib. The flaw, also known as Node2Shell, allows attackers to corrupt process memory, potentially causing crashes or leaking sensitive data, and a PoC exists. Google and Node.js have issued patches; security teams should upgrade to Brotli or apply the node:zlib fix immediately.",
+    "summary": "CVE‑2026‑111497 is a remotely exploitable out‑of‑bounds write flaw in Google’s Brotli compression library that affects any application decompressing Brotli data via node:zlib. The flaw, also known as Node2Shell, allows attackers to corrupt process memory, potentially causing crashes or leaking sensitive data, and a PoC exists. Google and Node.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "Help Net Security",
@@ -101,8 +101,8 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "five-election-scams-to-watch-out-for-ebdb8b",
-    "title": "Five Election Scams to Watch Out For",
+    "slug": "top-five-cybersecurity-scams-targeting-u-s-voters-ebdb8b",
+    "title": "Top Five Cybersecurity Scams Targeting U.S. Voters",
     "summary": "Five election‑related scam campaigns target voters with deceptive messages that prompt registration, donations, surveys, or merchandise purchases. These phishing attempts exploit social engineering tactics, embedding malicious links or payment requests that can compromise personal data and financial information. Security teams should verify sender authenticity, use link scanners, and educate users to avoid clicking or providing credentials on suspicious election communications.",
     "category": "General",
     "severity": "LOW",
@@ -112,14 +112,14 @@ export const news: NewsBrief[] = [
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "five-election-scams-to-watch-out-for",
+      "top-five-cybersecurity-scams-targeting-u-s-voters",
       "article-ebdb8b",
       "ebdb8b"
     ]
   },
   {
-    "slug": "vendor-key-leak-puts-data-of-238-000-denver-health-474ada",
-    "title": "Vendor Key Leak Puts Data of 238,000 Denver Health Plan Members at Risk",
+    "slug": "denver-health-plan-breach-exposes-238-000-records-474ada",
+    "title": "Denver Health Plan Breach Exposes 238,000 Records via Leaked Key",
     "summary": "A leaked SquareML access key potentially exposed a database containing personal and health information of 238,000 Denver Health Plan members. The breach resulted from accidental key disclosure, allowing unauthenticated read access to sensitive records, including medical histories and contact details. Immediate remediation requires revoking the compromised key, rotating all credentials, and auditing access controls to prevent recurrence.",
     "category": "Breach",
     "severity": "HIGH",
@@ -129,15 +129,15 @@ export const news: NewsBrief[] = [
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "vendor-key-leak-puts-data-of-238-000-denver-health",
+      "denver-health-plan-breach-exposes-238-000-records",
       "article-474ada",
       "474ada",
-      "vendor-key-leak-puts-data-of-238-000-denver-health-plan-memb"
+      "denver-health-plan-breach-exposes-238-000-records-via-leaked"
     ]
   },
   {
-    "slug": "php2shell-exploitation-attempts-and-remediation-tr-5582d7",
-    "title": "PHP2Shell: Exploitation Attempts and Remediation Trends",
+    "slug": "php2shell-exploitation-attempts-fail-in-observed-a-5582d7",
+    "title": "PHP2Shell Exploitation Attempts Fail in Observed Attacks",
     "summary": "PHP2Shell, a PHP-based web shell, has been targeted for exploitation attempts, but no successful attacks have been reported to date. The vulnerability, identified as CVE-2026-109618, remains unexploited, with attackers lacking a working exploit or privileges to achieve remote code execution. Security teams should apply the vendor’s patch, update PHP to the latest stable release, and monitor for anomalous shell activity.",
     "category": "CVE",
     "severity": "MEDIUM",
@@ -149,10 +149,10 @@ export const news: NewsBrief[] = [
     ],
     "additionalSources": [],
     "aliases": [
-      "php2shell-exploitation-attempts-and-remediation-tr",
+      "php2shell-exploitation-attempts-fail-in-observed-a",
       "article-5582d7",
       "5582d7",
-      "php2shell-exploitation-attempts-and-remediation-trends"
+      "php2shell-exploitation-attempts-fail-in-observed-attacks"
     ]
   },
   {
@@ -319,8 +319,8 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "maritime-coalition-launches-free-vulnerability-dat-694cac",
-    "title": "Maritime Coalition Launches Free Vulnerability Database for Ship and Port Systems",
+    "slug": "maritime-coalition-unveils-open-threat-database-fo-694cac",
+    "title": "Maritime Coalition Unveils Open Threat Database for Port Infrastructure",
     "summary": "The Maritime Coalition has released a free vulnerability database cataloging nearly 30,000 IT and OT weaknesses affecting ship and port systems, including 37 maritime‑specific products. The database aggregates known flaws to aid operators in prioritizing security controls and patching schedules. Users can access the repository online to download vulnerability lists and mitigation guidance.",
     "category": "General",
     "severity": "LOW",
@@ -330,10 +330,10 @@ export const news: NewsBrief[] = [
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "maritime-coalition-launches-free-vulnerability-dat",
+      "maritime-coalition-unveils-open-threat-database-fo",
       "article-694cac",
       "694cac",
-      "maritime-coalition-launches-free-vulnerability-database-for-"
+      "maritime-coalition-unveils-open-threat-database-for-port-inf"
     ]
   },
   {
@@ -413,7 +413,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "red-hat-enterprise-linux-8-6-rhc-client-security-u-37da80",
     "title": "Red Hat Enterprise Linux 8.6 rhc Client Security Update Addresses Critical Flaw",
-    "summary": "An update for the Red Hat Enterprise Linux 8.6 rhc client fixes a security flaw in Advanced Mission Critical Update Support and Extended Update Support Long‑Life Add‑On. Red Hat Product Security rates the issue as Important, with a CVSS base score listed in the CVE references, but no public exploit. Apply the rhc security update via standard channels to remediate the flaw.",
+    "summary": "An update for the Red Hat Enterprise Linux 8.6 rhc client fixes a security flaw in Advanced Mission Critical Update Support and Extended Update Support Long‑Life Add‑On. Red Hat Product Security rates the issue as Important, with a CVSS base score listed in the CVE references, but no public exploit.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "Red Hat Security Advisories",
@@ -429,13 +429,13 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "chromeos-lts-150-update-addresses-multiple-cves-7591fa",
+    "slug": "chromeos-lts-150-update-addresses-multiple-cves-732b9d",
     "title": "ChromeOS LTS-150 Update Addresses Multiple CVEs",
     "summary": "ChromeOS LTS-150 version 150.0.7871.287 is being rolled out, addressing several CVEs including CVE-2026-103629, CVE-2026-110166, CVE-2026-113279, and CVE-2026-110138. The vulnerabilities involve integer overflows, buffer overflows, memory corruption, and use‑after‑free conditions across Skia, Animation, Accessibility, Payments, Core, Compositing, Video, and ShapeDetection components. Users should install the update promptly to mitigate the identified security flaws.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "Google Chrome Releases",
-    "sourceUrl": "http://chromereleases.googleblog.com/feeds/2026129518798281934/comments/default",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/long-term-support-channel-update-for_0661547040.html",
     "publishedAt": "2026-10-27T02:10:25.437Z",
     "cves": [
       "CVE-2026-103629",
@@ -446,8 +446,8 @@ export const news: NewsBrief[] = [
     "additionalSources": [],
     "aliases": [
       "chromeos-lts-150-update-addresses-multiple-cves",
-      "article-7591fa",
-      "7591fa"
+      "article-732b9d",
+      "732b9d"
     ]
   },
   {
@@ -457,7 +457,7 @@ export const news: NewsBrief[] = [
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33458",
+    "sourceUrl": "https://isc.sans.edu/diary/33458",
     "publishedAt": "2026-10-27T02:09:55.000Z",
     "cves": [
       "CVE-2026-109618"
@@ -995,8 +995,8 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "kali-linux-2026-3-released-with-six-new-tools-and-25aadd",
-    "title": "Kali Linux 2026.3 Released with Six New Tools and Desktop Updates",
+    "slug": "kali-linux-2026-3-ships-with-six-new-security-tool-25aadd",
+    "title": "Kali Linux 2026.3 Ships with Six New Security Tools",
     "summary": "Kali Linux 2026.3 has been released, adding six new hacking tools and updated desktop environment. The update includes refreshed build scripts and other minor improvements, expanding the distribution’s toolkit for penetration testers. Users should download the new image from the official Kali website and verify checksums to ensure integrity and compatibility.",
     "category": "General",
     "severity": "LOW",
@@ -1006,10 +1006,10 @@ export const news: NewsBrief[] = [
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "kali-linux-2026-3-released-with-six-new-tools-and",
+      "kali-linux-2026-3-ships-with-six-new-security-tool",
       "article-25aadd",
       "25aadd",
-      "kali-linux-2026-3-released-with-six-new-tools-and-desktop-up"
+      "kali-linux-2026-3-ships-with-six-new-security-tools"
     ]
   },
   {
@@ -1107,7 +1107,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "witness-open-source-framework-for-verifying-softwa-29a24e",
     "title": "Witness: Open‑Source Framework for Verifying Software Build Provenance",
-    "summary": "Witness is an open‑source command‑line tool that records and signs build processes, enabling teams to verify the provenance of compiled binaries before shipping. By capturing the exact commands, inputs, and environment, Witness provides a tamper‑evident audit trail that can be validated against a policy, reducing supply‑chain risks. The tool is maintained by the Cloud Native Computing Foundation community and is freely available.",
+    "summary": "Witness is an open‑source command‑line tool that records and signs build processes, enabling teams to verify the provenance of compiled binaries before shipping. By capturing the exact commands, inputs, and environment, Witness provides a tamper‑evident audit trail that can be validated against a policy, reducing supply‑chain risks.",
     "category": "General",
     "severity": "LOW",
     "source": "Help Net Security",
@@ -1198,7 +1198,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "reddit-r-opensource-bans-ai-projects-and-solo-deve-1f923d",
     "title": "Reddit r/opensource Bans AI Projects and Solo Developers",
-    "summary": "Reddit moderators of r/opensource have prohibited any project that uses AI, is AI-generated, or is intended for AI, requiring projects to be at least one year old, OSI licensed, and have a community with three or more contributors. The ban also mandates that the poster’s Reddit account must be at least one year old. The policy aims to restrict AI-driven content on the open-source forum.",
+    "summary": "Reddit moderators of r/opensource have prohibited any project that uses AI, is AI-generated, or is intended for AI, requiring projects to be at least one year old, OSI licensed, and have a community with three or more contributors. The ban also mandates that the poster’s Reddit account must be at least one year old.",
     "category": "General",
     "severity": "LOW",
     "source": "Help Net Security",
@@ -1287,7 +1287,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "tailscale-ssh-flaws-enable-root-escalation-across-1a2e44",
     "title": "Tailscale SSH Flaws Enable Root Escalation Across Network",
-    "summary": "A single compromised device on a Tailscale network can be leveraged to gain root access to other servers via SSH port forwarding, provided the target is permitted by the network’s access rules. The flaw allows an attacker to execute arbitrary commands on reachable hosts, potentially compromising critical infrastructure. Tailscale has released a patch; administrators should update immediately and disable port forwarding until verified.",
+    "summary": "A single compromised device on a Tailscale network can be leveraged to gain root access to other servers via SSH port forwarding, provided the target is permitted by the network’s access rules. The flaw allows an attacker to execute arbitrary commands on reachable hosts, potentially compromising critical infrastructure.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "The Hacker News",
@@ -1305,7 +1305,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "php2shell-vulnerabilities-exploited-against-europe-7a7376",
     "title": "PHP2Shell Vulnerabilities Exploited Against European Government Entity",
-    "summary": "Threat actors exploited PHP2Shell flaws identified as CVE-2026-109618 and CVE-2026-109619 to compromise a European government system, retrieving password hashes and multi‑factor credentials within two hours. The vulnerabilities enable remote code execution through unsanitized input in PHP applications, allowing attackers to elevate privileges and exfiltrate data. Patches for the affected PHP versions are available; security teams must apply them and enforce strict input validation.",
+    "summary": "Threat actors exploited PHP2Shell flaws identified as CVE-2026-109618 and CVE-2026-109619 to compromise a European government system, retrieving password hashes and multi‑factor credentials within two hours. The vulnerabilities enable remote code execution through unsanitized input in PHP applications, allowing attackers to elevate privileges and exfiltrate data.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "The Hacker News",
@@ -1346,7 +1346,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "cve-2026-70197-net-and-visual-studio-remote-code-e-74506d",
     "title": "CVE-2026-70197 .NET and Visual Studio Remote Code Execution Vulnerability",
-    "summary": "A remote code execution vulnerability exists in .NET and Visual Studio, identified as CVE-2026-70197, allowing attackers to execute arbitrary code via crafted input during software updates. The flaw stems from insufficient input validation in the update handling module, exposing systems to potential compromise if unpatched. Microsoft has released a patch in the latest update; administrators should apply it immediately to mitigate risk.",
+    "summary": "A remote code execution vulnerability exists in .NET and Visual Studio, identified as CVE-2026-70197, allowing attackers to execute arbitrary code via crafted input during software updates. The flaw stems from insufficient input validation in the update handling module, exposing systems to potential compromise if unpatched.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "Microsoft MSRC",
@@ -1475,8 +1475,8 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "blackx-uefi-bootkit-exploits-baton-drop-to-bypass-159657",
-    "title": "BlackX UEFI Bootkit Exploits Baton Drop to Bypass Secure Boot",
+    "slug": "blackx-uefi-bootkit-leverages-baton-drop-flaw-to-d-159657",
+    "title": "BlackX UEFI Bootkit Leverages Baton Drop Flaw to Defeat Secure Boot",
     "summary": "BlackX, a UEFI bootkit used in an espionage campaign, leveraged the Baton Drop flaw to bypass Secure Boot and load a malicious driver that interferes with Kaspersky and Avast security solutions. The root cause is a privilege escalation vulnerability in the UEFI firmware that allows unsigned code execution. A vendor patch and firmware update are required to mitigate the threat.",
     "category": "Vulnerability",
     "severity": "HIGH",
@@ -1486,16 +1486,16 @@ export const news: NewsBrief[] = [
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "blackx-uefi-bootkit-exploits-baton-drop-to-bypass",
+      "blackx-uefi-bootkit-leverages-baton-drop-flaw-to-d",
       "article-159657",
       "159657",
-      "blackx-uefi-bootkit-exploits-baton-drop-to-bypass-secure-boo"
+      "blackx-uefi-bootkit-leverages-baton-drop-flaw-to-defeat-secu"
     ]
   },
   {
     "slug": "brotli-decoder-memory-corruption-enables-rce-in-no-164f62",
     "title": "Brotli Decoder Memory Corruption Enables RCE in Node.js, Bun, Python, and Envoy",
-    "summary": "A memory-corruption flaw in Google’s Brotli decoder, identified as CVE-2026-111497, allows crafted Brotli-compressed data to overwrite memory beyond a buffer in Node.js, Bun, Python Brotli packages, and Envoy proxies. The vulnerability enables remote code execution through buffer overflow, potentially compromising any process handling untrusted Brotli streams. Vendors should apply the latest patch releases and enforce strict input validation to mitigate exploitation.",
+    "summary": "A memory-corruption flaw in Google’s Brotli decoder, identified as CVE-2026-111497, allows crafted Brotli-compressed data to overwrite memory beyond a buffer in Node.js, Bun, Python Brotli packages, and Envoy proxies. The vulnerability enables remote code execution through buffer overflow, potentially compromising any process handling untrusted Brotli streams.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "The Hacker News",
@@ -1515,7 +1515,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "litellm-master-key-leak-enables-github-token-theft-4b2854",
     "title": "LiteLLM Master Key Leak Enables GitHub Token Theft and Release Hijacking",
-    "summary": "A publicly exposed LiteLLM Agent Platform master key was committed to a GitHub repository, allowing attackers to push a malicious Python package and hijack the release pipeline. The flaw stems from accidental exposure of privileged credentials in a configuration file, enabling credential theft and unauthorized code deployment. Immediate revocation of the compromised key and repository audit are mandatory to remediate the breach.",
+    "summary": "A publicly exposed LiteLLM Agent Platform master key was committed to a GitHub repository, allowing attackers to push a malicious Python package and hijack the release pipeline. The flaw stems from accidental exposure of privileged credentials in a configuration file, enabling credential theft and unauthorized code deployment.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "The Hacker News",
@@ -1674,7 +1674,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "abandoned-time4popcorn-app-vulnerable-to-remote-co-23f8f6",
     "title": "Abandoned Time4Popcorn App Vulnerable to Remote Code Execution",
-    "summary": "A vulnerable updater in the abandoned Time4Popcorn BitTorrent client allowed remote code execution with elevated privileges on millions of devices. Researchers remotely disabled the flaw, preventing attackers from exploiting the updater to inject malicious binaries, though no public exploits were reported. The vendor has released a patch that removes the updater component; administrators should update firmware or uninstall the application to eliminate the risk.",
+    "summary": "A vulnerable updater in the abandoned Time4Popcorn BitTorrent client allowed remote code execution with elevated privileges on millions of devices. Researchers remotely disabled the flaw, preventing attackers from exploiting the updater to inject malicious binaries, though no public exploits were reported.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "BleepingComputer",
@@ -1690,23 +1690,23 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "php2shell-vulnerability-causes-widespread-panic-cv-57dd7e",
-    "title": "php2shell Vulnerability Causes Widespread Panic (CVE-2026-115560)",
+    "slug": "php-remote-code-execution-risk-disclosed-cve-2026-57dd7e",
+    "title": "PHP Remote Code Execution Risk Disclosed (CVE-2026-115560)",
     "summary": "The php2shell vulnerability triggered widespread panic among users, affecting PHP installations via a remote code execution vector. The flaw allows unauthenticated attackers to execute arbitrary code with the web server’s privileges, and a public proof‑of‑concept has been released, indicating active exploitation potential. A patch is available from the PHP team; administrators should apply the update immediately and verify configuration hardening.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33452",
+    "sourceUrl": "https://isc.sans.edu/diary/33452",
     "publishedAt": "2026-10-23T20:04:47.000Z",
     "cves": [
       "CVE-2026-115560"
     ],
     "additionalSources": [],
     "aliases": [
-      "php2shell-vulnerability-causes-widespread-panic-cv",
+      "php-remote-code-execution-risk-disclosed-cve-2026",
       "article-57dd7e",
       "57dd7e",
-      "php2shell-vulnerability-causes-widespread-panic-cve-2026-115"
+      "php-remote-code-execution-risk-disclosed-cve-2026-115560"
     ]
   },
   {
@@ -1766,7 +1766,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "rhsa-2026-88835-important-php-8-2-security-update-37e4f1",
     "title": "RHSA-2026:88835: Important: php:8.2 security update",
-    "summary": "A vulnerability in the php:8.2 module on Red Hat Enterprise Linux 9.4 for SAP Solutions allows attackers to compromise web applications through the affected PHP runtime. The root cause is an unspecified flaw, with a CVSS base score available via CVE links, and no active exploitation has been reported. Red Hat has released a patch; security teams should apply the update immediately.",
+    "summary": "A vulnerability in the php:8.2 module on Red Hat Enterprise Linux 9.4 for SAP Solutions allows attackers to compromise web applications through the affected PHP runtime. The root cause is an unspecified flaw, with a CVSS base score available via CVE links, and no active exploitation has been reported.",
     "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "Red Hat Security Advisories",
@@ -1921,7 +1921,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "ransomware-affiliates-deploy-ai-driven-intrusion-e-6dc9f4",
     "title": "Ransomware Affiliates Deploy AI-Driven Intrusion Ecosystem",
-    "summary": "Cybersecurity researchers uncovered an AI‑driven intrusion ecosystem operated by affiliates of the INC and The Gentlemen ransomware groups, centered on an Autonomous Red Team Kill Chain Framework called Phantom. The framework enables automated intrusion and data‑extortion operations, leveraging AI agents to orchestrate attacks across multiple targets. Security teams should monitor for AI‑based intrusion patterns and block Phantom command and control traffic to mitigate exploitation.",
+    "summary": "Cybersecurity researchers uncovered an AI‑driven intrusion ecosystem operated by affiliates of the INC and The Gentlemen ransomware groups, centered on an Autonomous Red Team Kill Chain Framework called Phantom. The framework enables automated intrusion and data‑extortion operations, leveraging AI agents to orchestrate attacks across multiple targets.",
     "category": "Ransomware",
     "severity": "HIGH",
     "source": "The Hacker News",
@@ -1943,7 +1943,7 @@ export const news: NewsBrief[] = [
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-103-aws/",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/2026-103-aws/",
     "publishedAt": "2026-10-23T17:44:25.000Z",
     "cves": [
       "CVE-2026-85788"
@@ -1963,7 +1963,7 @@ export const news: NewsBrief[] = [
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-102-aws/",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/2026-102-aws/",
     "publishedAt": "2026-10-23T17:43:59.000Z",
     "cves": [
       "CVE-2026-84942"
@@ -1983,7 +1983,7 @@ export const news: NewsBrief[] = [
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-101-aws/",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/2026-101-aws/",
     "publishedAt": "2026-10-23T17:43:25.000Z",
     "cves": [
       "CVE-2026-85787"
@@ -2091,20 +2091,20 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "chrome-dev-channel-updated-to-158-0-8117-2-62d7c1",
+    "slug": "chrome-dev-channel-updated-to-158-0-8117-2-7f02c8",
     "title": "Chrome Dev Channel Updated to 158.0.8117.2",
     "summary": "Chrome Dev channel received update 158.0.8117.2 for Windows, macOS, and Linux, adding bug fixes and performance enhancements. No security flaw was disclosed, but the release addresses several stability issues reported in the Git log. Users should install the update through Chrome Update or switch channels, and report new problems via the bug filing system.",
     "category": "General",
     "severity": "LOW",
     "source": "Google Chrome Releases",
-    "sourceUrl": "http://chromereleases.googleblog.com/feeds/4602648838450212475/comments/default",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/chrome-dev-for-desktop-update_01159222561.html",
     "publishedAt": "2026-10-23T16:28:33.571Z",
     "cves": [],
     "additionalSources": [],
     "aliases": [
       "chrome-dev-channel-updated-to-158-0-8117-2",
-      "article-62d7c1",
-      "62d7c1"
+      "article-7f02c8",
+      "7f02c8"
     ]
   },
   {
@@ -2416,7 +2416,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "red-hat-kernel-update-for-enterprise-linux-10-0-eu-37e4f8",
     "title": "Red Hat Kernel Update for Enterprise Linux 10.0 EUS",
-    "summary": "Red Hat Enterprise Linux 10.0 Extended Update Support received a kernel security update addressing multiple vulnerabilities that could enable privilege escalation or denial of service. The update carries an Important security impact rating, with CVSS scores available via the referenced CVE links, indicating moderate to high severity. System administrators should apply the RHSA‑2026:88687 patch immediately and verify kernel integrity to mitigate potential exploitation.",
+    "summary": "Red Hat Enterprise Linux 10.0 Extended Update Support received a kernel security update addressing multiple vulnerabilities that could enable privilege escalation or denial of service. The update carries an Important security impact rating, with CVSS scores available via the referenced CVE links, indicating moderate to high severity.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "Red Hat Security Advisories",
@@ -2438,7 +2438,7 @@ export const news: NewsBrief[] = [
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33450",
+    "sourceUrl": "https://isc.sans.edu/diary/33450",
     "publishedAt": "2026-10-23T13:43:20.000Z",
     "cves": [
       "CVE-2026-109618"
@@ -2614,7 +2614,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "red-hat-ca-certificates-critical-update-for-rhel-8-37e4f8",
     "title": "Red Hat ca-certificates Critical Update for RHEL 8.6 AMSC and ELS",
-    "summary": "A critical flaw in ca-certificates compromises Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Extended Update Support Long‑Life Add‑On, allowing attackers to bypass certificate validation. The vulnerability’s root cause is a logic error in chain verification, with a CVSS score reflecting severe risk and potential in‑the‑wild exploitation. Red Hat has issued a patch; applying it is mandatory to secure affected systems.",
+    "summary": "A critical flaw in ca-certificates compromises Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Extended Update Support Long‑Life Add‑On, allowing attackers to bypass certificate validation. The vulnerability’s root cause is a logic error in chain verification, with a CVSS score reflecting severe risk and potential in‑the‑wild exploitation.",
     "category": "Vulnerability",
     "severity": "CRITICAL",
     "source": "Red Hat Security Advisories",
@@ -2673,20 +2673,20 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "chrome-dev-158-released-for-android-5b96fe",
+    "slug": "chrome-dev-158-released-for-android-7a379b",
     "title": "Chrome Dev 158 Released for Android",
     "summary": "Chrome Dev 158 (158.0.8117.0) for Android has been released to Google Play, extending the developer channel for the browser. The update lists changes in the Git log, with feature details on the Chromium blog and web platform updates linked separately. Users reporting new issues should file bugs through official channels; no security patches or critical fixes are included.",
     "category": "General",
     "severity": "LOW",
     "source": "Google Chrome Releases",
-    "sourceUrl": "http://chromereleases.googleblog.com/feeds/3934494581393061675/comments/default",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/chrome-dev-for-android-update_01679408792.html",
     "publishedAt": "2026-10-23T11:58:32.749Z",
     "cves": [],
     "additionalSources": [],
     "aliases": [
       "chrome-dev-158-released-for-android",
-      "article-5b96fe",
-      "5b96fe"
+      "article-7a379b",
+      "7a379b"
     ]
   },
   {
@@ -2710,7 +2710,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "microsoft-365-accounts-compromised-at-79-organizat-603fb9",
     "title": "Microsoft 365 Accounts Compromised at 79 Organizations via Session Replay",
-    "summary": "An attacker replayed stolen Microsoft 365 sign‑in sessions to access email accounts at 79 organizations, bypassing password authentication. The campaign, spanning July 14 to September 22, 2026, involved 497 successful sign‑ins and over 200,000 failed attempts, with attackers deploying hidden inbox rules to conceal activity. Microsoft has issued guidance to monitor session logs, enforce MFA, and revoke compromised credentials to mitigate further breaches.",
+    "summary": "An attacker replayed stolen Microsoft 365 sign‑in sessions to access email accounts at 79 organizations, bypassing password authentication. The campaign, spanning July 14 to September 22, 2026, involved 497 successful sign‑ins and over 200,000 failed attempts, with attackers deploying hidden inbox rules to conceal activity.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "Help Net Security",
@@ -2832,8 +2832,8 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "china-apt-uses-ai-pentest-tool-artex-in-connectwis-21b8af",
-    "title": "China APT Uses AI Pentest Tool Artex in ConnectWise Attacks",
+    "slug": "chinese-threat-actors-weaponize-artex-ai-tool-in-c-21b8af",
+    "title": "Chinese Threat Actors Weaponize Artex AI Tool in ConnectWise Intrusions",
     "summary": "China APT leveraged the AI pentest tool Artex to target ConnectWise installations, compromising hundreds of organizations and achieving privileged access in some environments. The attack chain exploited automated credential discovery and lateral movement within the ConnectWise platform, enabling attackers to elevate privileges to operator level. ConnectWise has released a patch and recommends disabling the affected modules immediately.",
     "category": "Nation State",
     "severity": "HIGH",
@@ -2848,10 +2848,10 @@ export const news: NewsBrief[] = [
       }
     ],
     "aliases": [
-      "china-apt-uses-ai-pentest-tool-artex-in-connectwis",
+      "chinese-threat-actors-weaponize-artex-ai-tool-in-c",
       "article-21b8af",
       "21b8af",
-      "china-apt-uses-ai-pentest-tool-artex-in-connectwise-attacks"
+      "chinese-threat-actors-weaponize-artex-ai-tool-in-connectwise"
     ]
   },
   {
@@ -2861,7 +2861,7 @@ export const news: NewsBrief[] = [
     "category": "General",
     "severity": "LOW",
     "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33448",
+    "sourceUrl": "https://isc.sans.edu/diary/33448",
     "publishedAt": "2026-10-23T10:25:11.000Z",
     "cves": [],
     "additionalSources": [],
@@ -2986,20 +2986,20 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "chrome-stable-156-released-for-ios-7f18ac",
+    "slug": "chrome-stable-156-released-for-ios-3de4e4",
     "title": "Chrome Stable 156 Released for iOS",
     "summary": "Google Chrome has released Stable 156 (156.0.8078.54) for iOS, adding stability and performance improvements to the browser. The update is available on the App Store within hours and includes a full list of changes in the Git log. Users are advised to install the new version to benefit from the latest enhancements.",
     "category": "General",
     "severity": "LOW",
     "source": "Google Chrome Releases",
-    "sourceUrl": "http://chromereleases.googleblog.com/feeds/3870118074972387329/comments/default",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/chrome-stable-for-ios-update_01042930971.html",
     "publishedAt": "2026-10-23T08:13:33.029Z",
     "cves": [],
     "additionalSources": [],
     "aliases": [
       "chrome-stable-156-released-for-ios",
-      "article-7f18ac",
-      "7f18ac"
+      "article-3de4e4",
+      "3de4e4"
     ]
   },
   {
@@ -3021,20 +3021,20 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "chrome-157-for-android-released-to-small-user-segm-3d71b2",
+    "slug": "chrome-157-for-android-released-to-small-user-segm-1a6120",
     "title": "Chrome 157 for Android Released to Small User Segment",
     "summary": "Chrome 157 (157.0.8103.14) for Android has been released to a small percentage of users via Google Play, marking the latest stable update. The release emphasizes stability and performance enhancements, with no new security vulnerabilities disclosed in the changelog or Git log. Users should install the update when it becomes available; no additional patches or workarounds are required at this time.",
     "category": "General",
     "severity": "LOW",
     "source": "Google Chrome Releases",
-    "sourceUrl": "http://chromereleases.googleblog.com/feeds/5747302014762024015/comments/default",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/chrome-for-android-update_0483554600.html",
     "publishedAt": "2026-10-23T07:47:07.132Z",
     "cves": [],
     "additionalSources": [],
     "aliases": [
       "chrome-157-for-android-released-to-small-user-segm",
-      "article-3d71b2",
-      "3d71b2",
+      "article-1a6120",
+      "1a6120",
       "chrome-157-for-android-released-to-small-user-segment"
     ]
   },
@@ -3147,27 +3147,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "chromeos-beta-channel-updated-to-os-16852-10-0-and-27c401",
+    "slug": "chromeos-beta-channel-updated-to-os-16852-10-0-and-5f6600",
     "title": "ChromeOS Beta Channel Updated to OS 16852.10.0 and Browser 157.0.8103.11",
     "summary": "ChromeOS Beta channel received an OS update to version 16852.10.0 and browser build 157.0.8103.11, expanding support to most devices. The update includes bug fixes and stability improvements, with users encouraged to report issues via the ChromeOS communities or bug filing channels. No security vulnerabilities were disclosed, and the update is available immediately for all Beta users.",
     "category": "General",
     "severity": "LOW",
     "source": "Google Chrome Releases",
-    "sourceUrl": "http://chromereleases.googleblog.com/feeds/3362464942688322866/comments/default",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/beta-channel-update-for-chromeos_01676166270.html",
     "publishedAt": "2026-10-23T04:38:41.146Z",
     "cves": [],
     "additionalSources": [],
     "aliases": [
       "chromeos-beta-channel-updated-to-os-16852-10-0-and",
-      "article-27c401",
-      "27c401",
+      "article-5f6600",
+      "5f6600",
       "chromeos-beta-channel-updated-to-os-16852-10-0-and-browser-1"
     ]
   },
   {
     "slug": "ai-adoption-drives-cybersecurity-workforce-reducti-4e062a",
     "title": "AI Adoption Drives Cybersecurity Workforce Reductions",
-    "summary": "Organizations are cutting cybersecurity roles as they adopt AI, even while reporting shortages of the expertise needed to manage threats, according to Barracuda’s Cybersecurity Skills Gap Report. 56% have experienced professional workforce reductions linked to AI, evenly divided between entry-level and higher-level roles. The post AI is taking cybersecurity jobs at junior and experienced levels alike appeared first on Help Net Security.",
+    "summary": "Organizations are cutting cybersecurity roles as they adopt AI, even while reporting shortages of the expertise needed to manage threats, according to Barracuda’s Cybersecurity Skills Gap Report. 56% have experienced professional workforce reductions linked to AI, evenly divided between entry-level and higher-level roles.",
     "category": "General",
     "severity": "LOW",
     "source": "Help Net Security",
@@ -3183,9 +3183,9 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "new-infosec-products-of-the-week-october-23-2026-5cf87d",
-    "title": "New Infosec Products of the Week: October 23, 2026",
-    "summary": "Sweet Security released Virtual Patching, a one-click protection feature that safeguards running cloud and AI applications from specific vulnerabilities the moment they are identified, while AppGate, IDENTOS, and ThreatModeler introduced other security tools. The new capability allows security teams to enforce protection instantly while engineering develops permanent fixes. The post New infosec products of the week: October 23, 2026 appeared first on Help Net Security.",
+    "slug": "weekly-enterprise-security-solutions-roundup-late-5cf87d",
+    "title": "Weekly Enterprise Security Solutions Roundup: Late October 2026",
+    "summary": "Sweet Security released Virtual Patching, a one-click protection feature that safeguards running cloud and AI applications from specific vulnerabilities the moment they are identified, while AppGate, IDENTOS, and ThreatModeler introduced other security tools. The new capability allows security teams to enforce protection instantly while engineering develops permanent fixes.",
     "category": "General",
     "severity": "LOW",
     "source": "Help Net Security",
@@ -3194,9 +3194,10 @@ export const news: NewsBrief[] = [
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "new-infosec-products-of-the-week-october-23-2026",
+      "weekly-enterprise-security-solutions-roundup-late",
       "article-5cf87d",
-      "5cf87d"
+      "5cf87d",
+      "weekly-enterprise-security-solutions-roundup-late-october-20"
     ]
   },
   {
@@ -3217,8 +3218,8 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "state-bank-of-india-suffers-a-customer-pii-data-le-7ed967",
-    "title": "State Bank of India Suffers a Customer PII Data Leak",
+    "slug": "state-bank-of-india-breach-leaks-customer-pii-data-7ed967",
+    "title": "State Bank of India Breach Leaks Customer PII Data",
     "summary": "A customer PII data leak at State Bank of India exposed personal identifiers through an undisclosed breach channel. The leak potentially fuels underground markets, enabling malicious actors to trade sensitive information for financial gain. Bank officials should immediately conduct forensic investigations, notify affected customers, and apply data protection controls to mitigate further exposure.",
     "category": "Breach",
     "severity": "HIGH",
@@ -3228,10 +3229,9 @@ export const news: NewsBrief[] = [
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "state-bank-of-india-suffers-a-customer-pii-data-le",
+      "state-bank-of-india-breach-leaks-customer-pii-data",
       "article-7ed967",
-      "7ed967",
-      "state-bank-of-india-suffers-a-customer-pii-data-leak"
+      "7ed967"
     ]
   },
   {
@@ -3289,38 +3289,38 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "google-chrome-beta-157-0-8103-15-released-for-desk-65a717",
+    "slug": "google-chrome-beta-157-0-8103-15-released-for-desk-1f511d",
     "title": "Google Chrome Beta 157.0.8103.15 Released for Desktop",
     "summary": "Google released Chrome Beta 157.0.8103.15 for Windows, macOS, and Linux, updating the desktop channel. The update includes a partial list of changes documented in the Git log and offers guidance for users considering channel switches. Users are encouraged to file bugs for new issues and consult the community help forum for support.",
     "category": "General",
     "severity": "LOW",
     "source": "Google Chrome Releases",
-    "sourceUrl": "http://chromereleases.googleblog.com/feeds/4141447260395278637/comments/default",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/chrome-beta-for-desktop-update_02146026170.html",
     "publishedAt": "2026-10-22T20:43:32.954Z",
     "cves": [],
     "additionalSources": [],
     "aliases": [
       "google-chrome-beta-157-0-8103-15-released-for-desk",
-      "article-65a717",
-      "65a717",
+      "article-1f511d",
+      "1f511d",
       "google-chrome-beta-157-0-8103-15-released-for-desktop"
     ]
   },
   {
-    "slug": "google-chrome-early-stable-update-for-desktop-9b214b",
+    "slug": "google-chrome-early-stable-update-for-desktop-123465",
     "title": "Google Chrome Early Stable Update for Desktop",
     "summary": "Google Chrome released an early stable update for Windows, version 157.0.8103.15/.16, with a forthcoming Mac release for a small user subset. The update includes multiple bug fixes and performance improvements, detailed in the release log. Users are encouraged to monitor the community forum for issue reporting and to consider switching release channels if desired.",
     "category": "General",
     "severity": "LOW",
     "source": "Google Chrome Releases",
-    "sourceUrl": "http://chromereleases.googleblog.com/feeds/2567200690070519815/comments/default",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/early-stable-update-for-desktop_02123641300.html",
     "publishedAt": "2026-10-22T20:33:11.637Z",
     "cves": [],
     "additionalSources": [],
     "aliases": [
       "google-chrome-early-stable-update-for-desktop",
-      "article-9b214b",
-      "9b214b"
+      "article-123465",
+      "123465"
     ]
   },
   {
@@ -3344,11 +3344,11 @@ export const news: NewsBrief[] = [
   {
     "slug": "cve-2026-115419-strands-agents-sdk-a2a-server-data-1fc672",
     "title": "CVE-2026-115419: Strands Agents SDK A2A Server Data Disclosure",
-    "summary": "CVE-2026-115419 exposes the Strands Agents SDK A2A server to unintended data disclosure, allowing an authenticated remote user to access another caller’s conversation history in multi‑tenant deployments. The flaw stems from improper isolation of conversation state between callers, enabling unauthorized influence of model behavior. A patch is available for all affected Python and TypeScript SDK versions; administrators should update immediately to mitigate the risk.",
+    "summary": "CVE-2026-115419 exposes the Strands Agents SDK A2A server to unintended data disclosure, allowing an authenticated remote user to access another caller’s conversation history in multi‑tenant deployments. The flaw stems from improper isolation of conversation state between callers, enabling unauthorized influence of model behavior.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-146-aws/",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/2026-146-aws/",
     "publishedAt": "2026-10-22T20:07:11.000Z",
     "cves": [
       "CVE-2026-115419"
@@ -3364,7 +3364,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "zlib-heap-buffer-overflow-vulnerability-in-non-blo-7fbd6b",
     "title": "zlib Heap Buffer Overflow Vulnerability in Non-Blocking Write Operations",
-    "summary": "A zlib heap buffer overflow flaw in non-blocking write operations could allow attackers to trigger denial of service or arbitrary code execution. The vulnerability arises from incorrect handling of write buffers, potentially enabling arbitrary code execution; no CVE is cited, and exploitation remains theoretical with no public PoC reported. Ubuntu has released patch USN-8954-1; users should update zlib to mitigate the risk.",
+    "summary": "A zlib heap buffer overflow flaw in non-blocking write operations could allow attackers to trigger denial of service or arbitrary code execution. The vulnerability arises from incorrect handling of write buffers, potentially enabling arbitrary code execution; no CVE is cited, and exploitation remains theoretical with no public PoC reported.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "Ubuntu Security Notices",
@@ -3461,7 +3461,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "cisco-snort-3-detection-engine-denial-of-service-v-2f6531",
     "title": "Cisco Snort 3 Detection Engine Denial of Service Vulnerabilities",
-    "summary": "Multiple Cisco products contain vulnerabilities in the Snort 3 Detection Engine that permit an unauthenticated remote attacker to trigger a restart, causing a denial of service. The root cause is a flaw in the engine’s handling of malformed detection rules, leading to an unhandled exception and crash. Cisco has released software updates addressing these issues; users must apply the latest patches to restore service availability.",
+    "summary": "Multiple Cisco products contain vulnerabilities in the Snort 3 Detection Engine that permit an unauthenticated remote attacker to trigger a restart, causing a denial of service. The root cause is a flaw in the engine’s handling of malformed detection rules, leading to an unhandled exception and crash.",
     "category": "Vulnerability",
     "severity": "CRITICAL",
     "source": "Cisco PSIRT",
@@ -3537,7 +3537,7 @@ export const news: NewsBrief[] = [
     "category": "CVE",
     "severity": "HIGH",
     "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-145-aws/",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/2026-145-aws/",
     "publishedAt": "2026-10-22T18:50:58.000Z",
     "cves": [],
     "additionalSources": [],
@@ -3628,20 +3628,20 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "chrome-beta-157-released-for-android-219bef",
+    "slug": "chrome-beta-157-released-for-android-65ca11",
     "title": "Chrome Beta 157 Released for Android",
     "summary": "Chrome Beta 157 (157.0.8103.14) for Android has been released, making the new build available through Google Play. The update lists changes in the Git log, with feature details on the Chromium blog and web platform updates. Users encountering new issues should file bugs through the Chrome Release Team channels; no immediate security patches or firmware upgrades are required.",
     "category": "General",
     "severity": "LOW",
     "source": "Google Chrome Releases",
-    "sourceUrl": "http://chromereleases.googleblog.com/feeds/1960193025315187574/comments/default",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/chrome-beta-for-android-update_02061041745.html",
     "publishedAt": "2026-10-22T15:58:32.486Z",
     "cves": [],
     "additionalSources": [],
     "aliases": [
       "chrome-beta-157-released-for-android",
-      "article-219bef",
-      "219bef"
+      "article-65ca11",
+      "65ca11"
     ]
   },
   {
@@ -3681,20 +3681,20 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "chrome-beta-157-released-for-ios-610648",
+    "slug": "chrome-beta-157-released-for-ios-5e173a",
     "title": "Chrome Beta 157 Released for iOS",
     "summary": "Chrome Beta 157 (157.0.8103.13) for iOS has been released, becoming available on the App Store shortly. The update lists changes in the Git log, with feature details on the Chromium blog and web platform updates. Users encountering new issues should file bugs through the Chrome Release Team channels; no immediate security patches or firmware upgrades are required.",
     "category": "General",
     "severity": "LOW",
     "source": "Google Chrome Releases",
-    "sourceUrl": "http://chromereleases.googleblog.com/feeds/6943765864254111853/comments/default",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/chrome-beta-for-ios-update_01220496618.html",
     "publishedAt": "2026-10-22T15:13:32.971Z",
     "cves": [],
     "additionalSources": [],
     "aliases": [
       "chrome-beta-157-released-for-ios",
-      "article-610648",
-      "610648"
+      "article-5e173a",
+      "5e173a"
     ]
   },
   {
@@ -3723,7 +3723,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "scarlettgroup-threatens-data-leaks-with-dark-web-n-33c6ec",
     "title": "ScarlettGroup Threatens Data Leaks with Dark Web Naming and Countdown Timers",
-    "summary": "ScarlettGroup, a newly observed extortion gang, is naming companies on a dark web leak site and using countdown timers to threaten the release of allegedly stolen data. The operation applies public pressure before breach claims are independently verified, creating reputational risk and potential regulatory scrutiny. Security teams should monitor dark web activity, verify data integrity, and prepare incident response plans to mitigate reputational damage.",
+    "summary": "ScarlettGroup, a newly observed extortion gang, is naming companies on a dark web leak site and using countdown timers to threaten the release of allegedly stolen data. The operation applies public pressure before breach claims are independently verified, creating reputational risk and potential regulatory scrutiny.",
     "category": "Ransomware",
     "severity": "HIGH",
     "source": "Cyber Security News",
@@ -4094,7 +4094,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "siemens-software-center-uncontrolled-dll-search-pa-42ff49",
     "title": "Siemens Software Center Uncontrolled DLL Search Path Exploit",
-    "summary": "Siemens Software Center loads DLLs from an uncontrolled search path, permitting an authenticated local attacker to place a malicious DLL and achieve arbitrary code execution with application privileges. The flaw is a path traversal vulnerability with CVSS 6.7, and active exploitation has been reported in the wild. Siemens has released an updated version; security teams should upgrade immediately or implement DLL search path restrictions.",
+    "summary": "Siemens Software Center loads DLLs from an uncontrolled search path, permitting an authenticated local attacker to place a malicious DLL and achieve arbitrary code execution with application privileges. The flaw is a path traversal vulnerability with CVSS 6.7, and active exploitation has been reported in the wild.",
     "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "CISA",
@@ -4112,7 +4112,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "siemens-industrial-edge-app-publisher-improper-cer-42ff49",
     "title": "Siemens Industrial Edge App Publisher Improper Certificate Validation and XSS Vulnerabilities",
-    "summary": "Siemens Industrial Edge App Publisher contains a vulnerability chain combining improper certificate validation and cross‑site scripting that permits network attackers to impersonate the management server and execute arbitrary code through Node.js integration. The flaw carries a CVSS score of 8.3, enabling remote code execution on local machines. Siemens has issued an update; operators must upgrade to the latest version to remediate the issue.",
+    "summary": "Siemens Industrial Edge App Publisher contains a vulnerability chain combining improper certificate validation and cross‑site scripting that permits network attackers to impersonate the management server and execute arbitrary code through Node.js integration. The flaw carries a CVSS score of 8.3, enabling remote code execution on local machines.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "CISA",
@@ -4130,7 +4130,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "multiple-vulnerabilities-in-siemens-simatic-s7-150-42ff49",
     "title": "Multiple Vulnerabilities in Siemens SIMATIC S7-1500 CPU 1518(F)-4 Firmware",
-    "summary": "Multiple vulnerabilities have been identified in the GNU/Linux subsystem of firmware V3.1.7 for Siemens SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP, affecting several product variants. The flaws enable remote code execution with a CVSS score of 10, posing a high‑risk threat to industrial control systems. Siemens has released mitigations and is preparing fixes; operators should apply the vendor’s patches or follow the recommended workarounds.",
+    "summary": "Multiple vulnerabilities have been identified in the GNU/Linux subsystem of firmware V3.1.7 for Siemens SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP, affecting several product variants. The flaws enable remote code execution with a CVSS score of 10, posing a high‑risk threat to industrial control systems.",
     "category": "Vulnerability",
     "severity": "CRITICAL",
     "source": "CISA",
@@ -4169,7 +4169,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "siemens-ruggedcom-ape1808-devices-affected-by-mult-42ff49",
     "title": "Siemens RUGGEDCOM APE1808 Devices Affected by Multiple CVEs",
-    "summary": "Siemens RUGGEDCOM APE1808 devices are affected by multiple CVE‑2026‑33387 to CVE‑2026‑33920 vulnerabilities that enable template engine injection, CSRF, and authorization bypass. The flaws stem from improper neutralization of template elements, lack of administrator control, and cross‑site request forgery, posing medium‑to‑high risk for credential theft and system compromise. Siemens recommends contacting support for patch updates; operators should apply the latest firmware to eliminate the high‑severity vulnerabilities.",
+    "summary": "Siemens RUGGEDCOM APE1808 devices are affected by multiple CVE‑2026‑33387 to CVE‑2026‑33920 vulnerabilities that enable template engine injection, CSRF, and authorization bypass. The flaws stem from improper neutralization of template elements, lack of administrator control, and cross‑site request forgery, posing medium‑to‑high risk for credential theft and system compromise.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "CISA",
@@ -4415,7 +4415,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "ai-coding-boom-exposes-cracks-in-cloud-development-52a630",
     "title": "AI Coding Boom Exposes Cracks in Cloud Development",
-    "summary": "Developers report bugs, testing delays, and disruptions in shared cloud environments as AI increases code volume, per LocalStack’s 2026 State of AI in Cloud Development report. The surge, with 65% of teams generating twice as much code and 32% five times more, amplifies testing workloads and resource contention. Cloud providers should enhance automated testing pipelines and resource isolation to mitigate these operational stresses.",
+    "summary": "Developers report bugs, testing delays, and disruptions in shared cloud environments as AI increases code volume, per LocalStack’s 2026 State of AI in Cloud Development report. The surge, with 65% of teams generating twice as much code and 32% five times more, amplifies testing workloads and resource contention.",
     "category": "General",
     "severity": "LOW",
     "source": "Help Net Security",
@@ -4473,7 +4473,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "ubuntu-26-10-libsoup-vulnerabilities-fixed-7fc9c0",
     "title": "Ubuntu 26.10 libsoup Vulnerabilities Fixed",
-    "summary": "A remote attacker could exploit libsoup’s improper handling of HTTP/2 requests, HTTPS proxy connections, and chunked HTTP requests to cause denial of service, obtain sensitive information, or bypass security controls. The flaws, identified as CVE-2026-4271, CVE-2026-5119, and CVE-2026-63xx, affect Ubuntu 22.04, 24.04, and 26.04 LTS releases. Ubuntu has released patches for libsoup3 in 26.10; administrators should apply the update immediately to mitigate the risks.",
+    "summary": "A remote attacker could exploit libsoup’s improper handling of HTTP/2 requests, HTTPS proxy connections, and chunked HTTP requests to cause denial of service, obtain sensitive information, or bypass security controls. The flaws, identified as CVE-2026-4271, CVE-2026-5119, and CVE-2026-63xx, affect Ubuntu 22.04, 24.04, and 26.04 LTS releases. Ubuntu has released patches for libsoup3 in 26.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "Ubuntu Security Notices",
@@ -4678,7 +4678,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "php-core-vulnerabilities-enable-full-server-contro-123072",
     "title": "PHP Core Vulnerabilities Enable Full Server Control, Exploited in Wild",
-    "summary": "A pair of critical PHP core vulnerabilities allow attackers to seize full control over affected servers, leading to widespread site outages and 404 errors across the web. The flaws enable remote code execution through malformed input, with active exploits already in the wild, causing significant operational impact. Immediate patching of PHP to the latest stable release is required to remediate the vulnerabilities.",
+    "summary": "A pair of critical PHP core vulnerabilities allow attackers to seize full control over affected servers, leading to widespread site outages and 404 errors across the web. The flaws enable remote code execution through malformed input, with active exploits already in the wild, causing significant operational impact.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "Krebs on Security",
@@ -4748,7 +4748,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "commerce-com-and-cloudflare-enable-ai-agents-acros-4dc4ea",
     "title": "Commerce.com and Cloudflare Enable AI Agents Across 100,000 Storefronts",
-    "summary": "Commerce.com and Cloudflare have enabled AI agents to interact with storefronts via WebMCP across nearly 100,000 domains, providing real shopping tools. The deployment leverages Cloudflare’s edge infrastructure to activate the feature globally while preserving individual merchant control over configuration and data access. Security teams should monitor traffic patterns for anomalous agent activity and verify that merchant settings remain unchanged after the rollout.",
+    "summary": "Commerce.com and Cloudflare have enabled AI agents to interact with storefronts via WebMCP across nearly 100,000 domains, providing real shopping tools. The deployment leverages Cloudflare’s edge infrastructure to activate the feature globally while preserving individual merchant control over configuration and data access.",
     "category": "General",
     "severity": "LOW",
     "source": "Cloudflare Security",
@@ -4764,9 +4764,9 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "decades-old-windows-utility-powers-modern-clickfix-1ea2d9",
-    "title": "Decades-Old Windows Utility Powers Modern ClickFix Attack",
-    "summary": "A modern ClickFix attack leverages the legacy Windows 'finger' utility to trigger a CAPTCHA that installs the Lumma stealer via malicious Google search results. The exploitation chain abuses the finger command’s ability to execute arbitrary code, enabling credential theft and persistent malware installation. Defenders should disable the finger utility, apply recent Windows updates, and monitor for unauthorized CAPTCHA prompts to mitigate this threat.",
+    "slug": "legacy-windows-executable-exploited-in-clickfix-ph-1ea2d9",
+    "title": "Legacy Windows Executable Exploited in ClickFix Phishing Wave",
+    "summary": "A modern ClickFix attack leverages the legacy Windows 'finger' utility to trigger a CAPTCHA that installs the Lumma stealer via malicious Google search results. The exploitation chain abuses the finger command’s ability to execute arbitrary code, enabling credential theft and persistent malware installation.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "Dark Reading",
@@ -4775,10 +4775,10 @@ export const news: NewsBrief[] = [
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "decades-old-windows-utility-powers-modern-clickfix",
+      "legacy-windows-executable-exploited-in-clickfix-ph",
       "article-1ea2d9",
       "1ea2d9",
-      "decades-old-windows-utility-powers-modern-clickfix-attack"
+      "legacy-windows-executable-exploited-in-clickfix-phishing-wav"
     ]
   },
   {
@@ -4820,7 +4820,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "bronze-sandcastle-exploits-sandboxie-dll-sideloadi-2c23a1",
     "title": "Bronze Sandcastle Exploits Sandboxie DLL Sideloading to Deploy Backdoors",
-    "summary": "Bronze Sandcastle, a China-aligned threat cluster, has been observed targeting organizations in Asia and Africa since mid‑2025 by sideloading Sandboxie DLLs to deploy backdoors. The technique bypasses standard DLL loading checks, enabling attackers to execute malicious code with elevated privileges without detection. Defenders should enforce DLL integrity verification, restrict Sandboxie usage, and monitor for anomalous process creation to mitigate this lateral movement strategy.",
+    "summary": "Bronze Sandcastle, a China-aligned threat cluster, has been observed targeting organizations in Asia and Africa since mid‑2025 by sideloading Sandboxie DLLs to deploy backdoors. The technique bypasses standard DLL loading checks, enabling attackers to execute malicious code with elevated privileges without detection.",
     "category": "Nation State",
     "severity": "HIGH",
     "source": "The Hacker News",
@@ -4932,7 +4932,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "microsoft-reports-vpn-bug-not-fixed-in-october-upd-3a1fd6",
     "title": "Microsoft Reports VPN Bug Not Fixed in October Updates",
-    "summary": "Microsoft announced that the October 2026 Windows 11 cumulative updates mistakenly marked a bug causing Always On VPN connection failures as resolved. The oversight leaves users vulnerable to intermittent VPN outages, potentially disrupting remote access for enterprise environments without authentication bypass. Microsoft is working on a corrective patch and advises deploying the latest cumulative update once released, while monitoring VPN stability.",
+    "summary": "Microsoft announced that the October 2026 Windows 11 cumulative updates mistakenly marked a bug causing Always On VPN connection failures as resolved. The oversight leaves users vulnerable to intermittent VPN outages, potentially disrupting remote access for enterprise environments without authentication bypass.",
     "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "BleepingComputer",
@@ -4968,7 +4968,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "legitimate-platforms-coerced-into-attack-delivery-2c65a5",
     "title": "Legitimate Platforms Coerced into Attack Delivery Channels",
-    "summary": "Adversaries are exploiting over 25 trusted collaboration, file‑sharing, and payment services to deliver malicious payloads, turning legitimate infrastructure into a covert delivery pipeline. The technique leverages built‑in trust mechanisms, enabling attackers to bypass perimeter defenses and embed malware within seemingly benign files or links. Security teams must enforce strict access controls, monitor anomalous outbound traffic, and apply zero‑trust policies to mitigate this threat.",
+    "summary": "Adversaries are exploiting over 25 trusted collaboration, file‑sharing, and payment services to deliver malicious payloads, turning legitimate infrastructure into a covert delivery pipeline. The technique leverages built‑in trust mechanisms, enabling attackers to bypass perimeter defenses and embed malware within seemingly benign files or links.",
     "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "Cisco Talos",
@@ -5022,7 +5022,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "apple-safari-blocks-post-cookie-email-tracking-3d64a8",
     "title": "Apple Safari Blocks Post-Cookie Email Tracking",
-    "summary": "Apple’s Safari and WebKit now block connections to identity resolution services that convert email addresses into persistent tracking identifiers. The anti-tracking feature intercepts third‑party requests that would normally capture a user’s email during login or newsletter sign‑ups, preventing the creation of post‑cookie tracking IDs. Users should verify that their browsers are updated to the latest Safari version to ensure the protection remains active.",
+    "summary": "Apple’s Safari and WebKit now block connections to identity resolution services that convert email addresses into persistent tracking identifiers. The anti-tracking feature intercepts third‑party requests that would normally capture a user’s email during login or newsletter sign‑ups, preventing the creation of post‑cookie tracking IDs.",
     "category": "General",
     "severity": "LOW",
     "source": "Help Net Security",
@@ -5037,8 +5037,8 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "safepay-ransomware-attacks-over-600-critical-infra-6cf263",
-    "title": "SafePay Ransomware Attacks Over 600 Critical Infrastructure Organizations",
+    "slug": "safepay-ransomware-compromises-over-600-infrastruc-6cf263",
+    "title": "SafePay Ransomware Compromises Over 600 Infrastructure Entities",
     "summary": "SafePay ransomware gang breached more than 600 critical infrastructure organizations worldwide since 2024, targeting essential services and disrupting operations. The attacks leveraged credential theft and phishing to gain initial access, enabling encryption of critical data and denial of service. Security teams must apply the latest vendor patches, enforce multi‑factor authentication, and isolate affected systems immediately.",
     "category": "Ransomware",
     "severity": "HIGH",
@@ -5053,10 +5053,10 @@ export const news: NewsBrief[] = [
       }
     ],
     "aliases": [
-      "safepay-ransomware-attacks-over-600-critical-infra",
+      "safepay-ransomware-compromises-over-600-infrastruc",
       "article-6cf263",
       "6cf263",
-      "safepay-ransomware-attacks-over-600-critical-infrastructure-"
+      "safepay-ransomware-compromises-over-600-infrastructure-entit"
     ]
   },
   {
@@ -5096,8 +5096,8 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "crowdstrike-uncovers-new-agentic-ai-campaigns-2b7377",
-    "title": "CrowdStrike Uncovers New Agentic AI Campaigns",
+    "slug": "adversaries-deploy-autonomous-ai-agents-in-cyber-c-2b7377",
+    "title": "Adversaries Deploy Autonomous AI Agents in Cyber Campaigns",
     "summary": "CrowdStrike identified new agentic AI campaigns targeting enterprise networks via malicious code injection. The campaigns leverage machine learning models to generate polymorphic payloads, enabling stealthy persistence and lateral movement. Security teams should monitor for anomalous process behavior and apply the latest endpoint protection updates to mitigate these threats.",
     "category": "General",
     "severity": "LOW",
@@ -5107,9 +5107,10 @@ export const news: NewsBrief[] = [
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "crowdstrike-uncovers-new-agentic-ai-campaigns",
+      "adversaries-deploy-autonomous-ai-agents-in-cyber-c",
       "article-2b7377",
-      "2b7377"
+      "2b7377",
+      "adversaries-deploy-autonomous-ai-agents-in-cyber-campaigns"
     ]
   },
   {
@@ -5960,8 +5961,8 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "f5-releases-out-of-band-patches-for-critical-nginx-6e0abe",
-    "title": "F5 Releases Out‑of‑Band Patches for Critical NGINX Vulnerabilities",
+    "slug": "f5-issues-emergency-patches-for-critical-nginx-vul-6e0abe",
+    "title": "F5 Issues Emergency Patches for Critical NGINX Vulnerabilities",
     "summary": "F5 has issued out‑of‑band security patches addressing multiple critical‑severity flaws in the NGINX web server that could allow remote code execution. The patches mitigate three vulnerabilities that enable attackers to execute arbitrary code on vulnerable systems. Users should apply the updates immediately to prevent exploitation.",
     "category": "CVE",
     "severity": "HIGH",
@@ -5971,10 +5972,10 @@ export const news: NewsBrief[] = [
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "f5-releases-out-of-band-patches-for-critical-nginx",
+      "f5-issues-emergency-patches-for-critical-nginx-vul",
       "article-6e0abe",
       "6e0abe",
-      "f5-releases-out-of-band-patches-for-critical-nginx-vulnerabi"
+      "f5-issues-emergency-patches-for-critical-nginx-vulnerabiliti"
     ]
   },
   {
@@ -6014,8 +6015,8 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "bring-your-own-vulnerable-driver-what-detection-te-d8ba75",
-    "title": "Bring Your Own Vulnerable Driver: What Detection Teams Should Actually Hunt",
+    "slug": "byovd-attack-hunting-strategies-for-modern-securit-d8ba75",
+    "title": "BYOVD Attack Hunting Strategies for Modern Security Operations",
     "summary": "Detection teams can segment EDR‑killer attacks into four behavior hunts to identify BYOVD and driverless threats before ransomware execution. The approach focuses on driver activity, privilege escalation, persistence, and lateral movement indicators, enabling proactive containment of driver‑based attacks that bypass traditional EDR defenses.",
     "category": "Vulnerability",
     "severity": "MEDIUM",
@@ -6025,15 +6026,15 @@ export const news: NewsBrief[] = [
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "bring-your-own-vulnerable-driver-what-detection-te",
+      "byovd-attack-hunting-strategies-for-modern-securit",
       "article-d8ba75",
       "d8ba75",
-      "bring-your-own-vulnerable-driver-what-detection-teams-should"
+      "byovd-attack-hunting-strategies-for-modern-security-operatio"
     ]
   },
   {
-    "slug": "agents-are-your-newest-insiders-security-must-move-4fee9a",
-    "title": "Agents are your newest insiders. Security must move at their speed.",
+    "slug": "securing-ai-agent-workloads-against-insider-threat-4fee9a",
+    "title": "Securing AI Agent Workloads Against Insider Threat Vectors",
     "summary": "Microsoft 365 E7 and Project Perception introduce capabilities that treat internal agents as potential insiders, allowing continuous adaptation of protection and containment of agent‑related risk. The features monitor agent behavior, enforce least‑privilege policies, and provide rapid response to insider threats within the Microsoft ecosystem.",
     "category": "General",
     "severity": "LOW",
@@ -6043,10 +6044,10 @@ export const news: NewsBrief[] = [
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "agents-are-your-newest-insiders-security-must-move",
+      "securing-ai-agent-workloads-against-insider-threat",
       "article-4fee9a",
       "4fee9a",
-      "agents-are-your-newest-insiders-security-must-move-at-their-"
+      "securing-ai-agent-workloads-against-insider-threat-vectors"
     ]
   },
   {
@@ -6139,8 +6140,8 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "anthropic-acquires-confidential-ai-startup-opaque-679039",
-    "title": "Anthropic Acquires Confidential AI Startup Opaque Systems",
+    "slug": "anthropic-acquires-opaque-systems-to-bolster-enter-679039",
+    "title": "Anthropic Acquires Opaque Systems to Bolster Enterprise AI Privacy",
     "summary": "Anthropic has acquired Opaque Systems, a confidential AI startup that developed hardware‑protected technology enabling AI systems to process sensitive data while keeping it secure. The acquisition expands Anthropic’s capabilities in secure AI data handling, potentially enhancing privacy and compliance for future AI deployments.",
     "category": "General",
     "severity": "LOW",
@@ -6150,10 +6151,10 @@ export const news: NewsBrief[] = [
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "anthropic-acquires-confidential-ai-startup-opaque",
+      "anthropic-acquires-opaque-systems-to-bolster-enter",
       "article-679039",
       "679039",
-      "anthropic-acquires-confidential-ai-startup-opaque-systems"
+      "anthropic-acquires-opaque-systems-to-bolster-enterprise-ai-p"
     ]
   },
   {
@@ -6252,7 +6253,7 @@ export const news: NewsBrief[] = [
     "category": "General",
     "severity": "LOW",
     "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33434",
+    "sourceUrl": "https://isc.sans.edu/diary/33434",
     "publishedAt": "2026-10-18T12:59:30.000Z",
     "cves": [],
     "additionalSources": [],

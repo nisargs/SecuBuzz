@@ -50,7 +50,7 @@ export function About() {
           </p>
           <p>
             We built SecuBuzz to cut straight to what matters. Our automated intelligence pipeline ingests
-            coverage from 27 authoritative security publications, the CISA Known Exploited Vulnerabilities (KEV)
+            coverage from 43 authoritative security publications and vendor PSIRTs, the CISA Known Exploited Vulnerabilities (KEV)
             catalog, and the GitHub Security Advisory Database hourly around the clock, distilling complex developments into objective, 60-word briefs with direct links to primary sources.
           </p>
           <p>

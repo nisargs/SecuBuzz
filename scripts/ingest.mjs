@@ -51,9 +51,9 @@ const OPENROUTER_MODEL = process.env.OPENROUTER_MODEL || "openrouter/free";
  * All 3 run on 100% free tier allowances with automated failover.
  */
 
-const ARTICLES_PER_AI_BATCH = 2;
+const ARTICLES_PER_AI_BATCH = 3;
 
-const MAX_NEW_CANDIDATES = 30;
+const MAX_NEW_CANDIDATES = 45;
 
 const ITEMS_PER_FEED = 15;
 
@@ -334,6 +334,8 @@ function extractTag(block, tagName) {
     "i",
   );
 
+
+
   const match = block.match(regex);
 
   if (!match) {
@@ -344,6 +346,30 @@ function extractTag(block, tagName) {
 }
 
 function extractAtomLink(block) {
+  // 1. Prioritize rel="alternate" (clean post permalink in Blogger/Atom)
+  const altMatch = block.match(/<link\s+[^>]*rel=["']alternate["'][^>]*>/i);
+  if (altMatch) {
+    const hrefMatch = altMatch[0].match(/href=["']([^"']+)["']/i);
+    if (hrefMatch) return decodeXml(hrefMatch[1]).trim().replace(/^http:\/\//i, "https://");
+  }
+
+  // 2. Prioritize type="text/html"
+  const htmlMatch = block.match(/<link\s+[^>]*type=["']text\/html["'][^>]*>/i);
+  if (htmlMatch) {
+    const hrefMatch = htmlMatch[0].match(/href=["']([^"']+)["']/i);
+    if (hrefMatch) return decodeXml(hrefMatch[1]).trim().replace(/^http:\/\//i, "https://");
+  }
+
+  // 3. Fallback: Any link that is NOT replies or self
+  const links = block.matchAll(/<link\s+[^>]*href=["']([^"']+)["'][^>]*>/gi);
+  for (const l of links) {
+    const tag = l[0];
+    if (!tag.includes('rel="replies"') && !tag.includes("rel='replies'") &&
+        !tag.includes('rel="self"') && !tag.includes("rel='self'")) {
+      return decodeXml(l[1]).trim().replace(/^http:\/\//i, "https://");
+    }
+  }
+
   const match = block.match(
     /<link[^>]+href=["']([^"']+)["'][^>]*>/i,
   );
@@ -658,6 +684,27 @@ function normaliseSeverity(severity, contextText = "") {
     return "HIGH";
   }
 
+  // Anti-miscalibration overrides
+  if (assigned === "CRITICAL") {
+    const isDosOnly = (lower.includes("denial of service") || lower.includes("denial-of-service") || lower.includes(" dos ")) &&
+                      !lower.includes("remote code execution") && !lower.includes("rce") && !lower.includes("arbitrary code") && !lower.includes("memory corruption");
+    const isCertOnly = lower.includes("ca-certificates") || lower.includes("certificate bundle") || lower.includes("cert-bundle");
+    const isFailedAttempt = lower.includes("no success yet") || lower.includes("failed exploitation") || lower.includes("attempts targeted, no success");
+    if (isDosOnly) assigned = "HIGH";
+    if (isCertOnly || isFailedAttempt) assigned = "MEDIUM";
+  }
+
+  const isActiveMalware = lower.includes("malware chain") || lower.includes("clickfix") || lower.includes("stealer surge") || lower.includes("deploying malware");
+  if (isActiveMalware && assigned === "LOW") {
+    assigned = "HIGH";
+  }
+
+  const isActivelyExploitedZeroDay = (lower.includes("zero-day") || lower.includes("0-day")) &&
+    (lower.includes("actively exploited") || lower.includes("in-the-wild") || lower.includes("in the wild") || lower.includes("under active exploitation"));
+  if (isActivelyExploitedZeroDay) {
+    return "CRITICAL";
+  }
+
   return assigned;
 }
 
@@ -713,8 +760,23 @@ function validateAiArticle(
    * technical depth, eliminating sub-45-word summaries while allowing
    * slight variance for hyphenated CVEs and technical terms.
    */
-  if (words < 48 || words > 65) {
+  if (words < 45) {
     return null;
+  }
+
+  let finalSummary = summary;
+  if (words > 60) {
+    const wordList = summary.split(/\s+/);
+    const candidateStr = wordList.slice(0, 60).join(" ");
+    const lastPeriodIdx = candidateStr.lastIndexOf(".");
+    if (lastPeriodIdx > 120) {
+      finalSummary = candidateStr.slice(0, lastPeriodIdx + 1).trim();
+    } else {
+      finalSummary = candidateStr.replace(/[,;:\s]+$/, "") + ".";
+    }
+  }
+  if (wordCount(finalSummary) > 60) {
+    finalSummary = finalSummary.split(/\s+/).slice(0, 60).join(" ").replace(/[,;:\s]+$/, "") + ".";
   }
 
   const sourceUrl = normaliseUrl(
@@ -726,7 +788,7 @@ function validateAiArticle(
     sourceUrl,
     title: headline,
     headline,
-    summary,
+    summary: finalSummary,
     category: (() => {
       const cat = normaliseCategory(article.category);
       if (cat === "CVE") {
@@ -860,13 +922,25 @@ Process each supplied cybersecurity news article independently.
 
 For each article:
 
-1. Create a clear factual headline.
+1. Create an ORIGINAL, concise SecuBuzz headline (strictly under 10 words). NEVER copy or replicate the publisher's headline verbatim.
 2. Create an authoritative 50 to 60 word technical intelligence brief.
 3. Assign exactly one category.
 4. Assign exactly one severity.
 
 IMPORTANT RULES:
 
+- HEADLINE REQUIREMENT & FIDELITY (STRICT INVARIANT):
+  * Every headline MUST preserve 100% of the original factual meaning and technical scope. NEVER divert, distort, exaggerate, or change what actually happened.
+  * Rephrase for syntactic originality and concise delivery (strictly under 10 words). NEVER copy the publisher's headline verbatim.
+  * Do NOT sensationalize or reclassify events (e.g. do not call a vulnerability or key revocation a "breach", do not call an "attempt" a "compromise", do not claim malware succeeded if it failed).
+  * Accurately reflect the exact subject, vendor, action, and outcome described in the source.
+  * Examples of faithful rephrasing:
+    - Original: "Microsoft releases Windows OOB updates to distrust eMudhra certificates"
+      -> Rephrased: "Microsoft Distrusts eMudhra Certificates in Out-of-Band Update"
+    - Original: "F5 Releases Out-of-Band Patches for Critical NGINX Vulnerabilities"
+      -> Rephrased: "F5 Issues Emergency Patches for Critical NGINX Vulnerabilities"
+    - Original: "PHP2Shell: Exploitation Attempts and Remediation Trends"
+      -> Rephrased: "PHP2Shell Exploitation Attempts Fail in Observed Attacks"
 - Use ONLY information present in the supplied title and description.
 - Do not invent facts.
 - Do not combine information between articles.
@@ -877,7 +951,7 @@ IMPORTANT RULES:
 - Do not use bullet points inside summaries.
 - Do not use ellipses.
 - LENGTH & STRUCTURE REQUIREMENT (STRICT):
-  * Every summary MUST be between 50 and 60 words in length. Do NOT write under 50 words. Do NOT write over 65 words. Briefs under 50 words will fail validation.
+  * Every summary MUST be strictly between 50 and 60 words in length (hard ceiling of 60 words). Never write under 50 words and NEVER exceed 60 words. Briefs over 60 words will be rejected.
   * Structure the brief as exactly 3 dense, informative sentences:
     - Sentence 1 (Incident & Target): State the vulnerability, active threat, or breach incident, identifying the affected vendor, software/hardware product, and attack vector.
     - Sentence 2 (Technical Flaw & Impact): Detail the root cause mechanism, CVE identifier or severity score (if mentioned), exploitability status (active zero-day, public PoC, or credential theft), and operational impact.
@@ -896,7 +970,11 @@ CATEGORY RULES (STRICT):
 
 SEVERITY RULES (OBJECTIVE THREAT CRITERIA):
 - "CRITICAL":
-  * Active zero-day exploitation confirmed in the wild.
+  * Active zero-day exploitation confirmed in the wild (including actively exploited Apple, Google, or Microsoft zero-days).
+  * Unauthenticated Remote Code Execution (RCE) with CVSS 9.0-10.0 affecting enterprise infrastructure, firewalls, VPNs, hypervisors, or operating system kernels.
+  * Mass infrastructure collapse or emergency CISA Binding Operational Directives.
+  * NEGATIVE RULE: NEVER assign CRITICAL to Denial-of-Service (DoS) flaws, routine certificate refreshes, or CA-bundle updates regardless of vendor title. DoS without code execution is HIGH at most; CA refreshes are LOW/MEDIUM.
+  * NEGATIVE RULE: NEVER assign CRITICAL to failed exploitation attempts where attackers were unsuccessful.
   * Unauthenticated Remote Code Execution (RCE) with CVSS 9.0-10.0 affecting enterprise infrastructure, firewalls, VPNs, hypervisors, or operating system kernels.
   * Mass infrastructure collapse or emergency CISA Binding Operational Directives.
 - "HIGH":

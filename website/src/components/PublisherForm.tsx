@@ -6,7 +6,7 @@ Subject: [Feed Submission] <Publication Name>
 
 Publication: <Name / Org>
 Feed URL:    <https://example.com/feed.xml>
-Contact:     <editor@example.com>
+Contact:     publishers@secubuzz.com
 Coverage:    Vulnerabilities / Breaches / Intel
 Corrections: <https://example.com/policy>
 
@@ -16,7 +16,7 @@ Notes:
 const DEFAULT_SUBJECT = '[Feed Submission] <Publication Name>';
 const DEFAULT_BODY = `Publication: <Name / Org>
 Feed URL:    <https://example.com/feed.xml>
-Contact:     <editor@example.com>
+Contact:     publishers@secubuzz.com
 Coverage:    Vulnerabilities / Breaches / Intel
 Corrections: <https://example.com/policy>
 

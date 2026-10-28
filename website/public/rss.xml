@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Oct 2026 02:54:53 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 21:00:30 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>US DOJ Indicts Malaysian National in Madagascar Scam Operation</title>
@@ -17,9 +17,9 @@
       <category>General</category>
     </item>
     <item>
-      <title>Microsoft Releases Windows OOB Updates to Distrust eMudhra Certificates</title>
-      <link>https://secubuzz.com/news/microsoft-releases-windows-oob-updates-to-distrust-13cec4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-releases-windows-oob-updates-to-distrust-13cec4</guid>
+      <title>Microsoft Distrusts eMudhra Certificates in Out-of-Band Update</title>
+      <link>https://secubuzz.com/news/microsoft-distrusts-emudhra-certificates-in-out-of-13cec4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-distrusts-emudhra-certificates-in-out-of-13cec4</guid>
       <description><![CDATA[Microsoft released out‑of‑band Windows updates to remove trust in certificates issued by the compromised eMudhra certificate authority, protecting systems that do not receive automatic certificate trust updates. The flaw stems from compromised CA keys that enabled attackers to actively issue fraudulent certificates, creating a potential man‑in‑the‑middle risk for TLS connections. Apply the update via Windows Update immediately.]]></description>
       <pubDate>Tue, 27 Oct 2026 18:20:28 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-oob-updates-to-distrust-emudhra-certificates/">BleepingComputer</source>
@@ -29,7 +29,7 @@
       <title>CVE‑2026‑111497: Out‑of‑Bounds Write in Brotli Library</title>
       <link>https://secubuzz.com/news/cve-2026-111497-out-of-bounds-write-in-brotli-libr-58bbdb</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-111497-out-of-bounds-write-in-brotli-libr-58bbdb</guid>
-      <description><![CDATA[CVE‑2026‑111497 is a remotely exploitable out‑of‑bounds write flaw in Google’s Brotli compression library that affects any application decompressing Brotli data via node:zlib. The flaw, also known as Node2Shell, allows attackers to corrupt process memory, potentially causing crashes or leaking sensitive data, and a PoC exists. Google and Node.js have issued patches; security teams should upgrade to Brotli or apply the node:zlib fix immediately.]]></description>
+      <description><![CDATA[CVE‑2026‑111497 is a remotely exploitable out‑of‑bounds write flaw in Google’s Brotli compression library that affects any application decompressing Brotli data via node:zlib. The flaw, also known as Node2Shell, allows attackers to corrupt process memory, potentially causing crashes or leaking sensitive data, and a PoC exists. Google and Node.]]></description>
       <pubDate>Tue, 27 Oct 2026 17:38:51 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/27/node2shell-broccoli2shell-vulnerability-cve-2026-111497/">Help Net Security</source>
       <category>CVE</category>
@@ -53,27 +53,27 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>Five Election Scams to Watch Out For</title>
-      <link>https://secubuzz.com/news/five-election-scams-to-watch-out-for-ebdb8b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/five-election-scams-to-watch-out-for-ebdb8b</guid>
+      <title>Top Five Cybersecurity Scams Targeting U.S. Voters</title>
+      <link>https://secubuzz.com/news/top-five-cybersecurity-scams-targeting-u-s-voters-ebdb8b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/top-five-cybersecurity-scams-targeting-u-s-voters-ebdb8b</guid>
       <description><![CDATA[Five election‑related scam campaigns target voters with deceptive messages that prompt registration, donations, surveys, or merchandise purchases. These phishing attempts exploit social engineering tactics, embedding malicious links or payment requests that can compromise personal data and financial information. Security teams should verify sender authenticity, use link scanners, and educate users to avoid clicking or providing credentials on suspicious election communications.]]></description>
       <pubDate>Tue, 27 Oct 2026 15:36:09 GMT</pubDate>
       <source url="https://www.malwarebytes.com/blog/scams/2026/10/five-election-scams-to-watch-out-for">Malwarebytes Labs</source>
       <category>General</category>
     </item>
     <item>
-      <title>Vendor Key Leak Puts Data of 238,000 Denver Health Plan Members at Risk</title>
-      <link>https://secubuzz.com/news/vendor-key-leak-puts-data-of-238-000-denver-health-474ada</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/vendor-key-leak-puts-data-of-238-000-denver-health-474ada</guid>
+      <title>Denver Health Plan Breach Exposes 238,000 Records via Leaked Key</title>
+      <link>https://secubuzz.com/news/denver-health-plan-breach-exposes-238-000-records-474ada</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/denver-health-plan-breach-exposes-238-000-records-474ada</guid>
       <description><![CDATA[A leaked SquareML access key potentially exposed a database containing personal and health information of 238,000 Denver Health Plan members. The breach resulted from accidental key disclosure, allowing unauthenticated read access to sensitive records, including medical histories and contact details. Immediate remediation requires revoking the compromised key, rotating all credentials, and auditing access controls to prevent recurrence.]]></description>
       <pubDate>Tue, 27 Oct 2026 13:30:28 GMT</pubDate>
       <source url="https://www.securityweek.com/vendor-key-leak-puts-data-of-238000-denver-health-plan-members-at-risk/">SecurityWeek</source>
       <category>Breach</category>
     </item>
     <item>
-      <title>PHP2Shell: Exploitation Attempts and Remediation Trends</title>
-      <link>https://secubuzz.com/news/php2shell-exploitation-attempts-and-remediation-tr-5582d7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/php2shell-exploitation-attempts-and-remediation-tr-5582d7</guid>
+      <title>PHP2Shell Exploitation Attempts Fail in Observed Attacks</title>
+      <link>https://secubuzz.com/news/php2shell-exploitation-attempts-fail-in-observed-a-5582d7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/php2shell-exploitation-attempts-fail-in-observed-a-5582d7</guid>
       <description><![CDATA[PHP2Shell, a PHP-based web shell, has been targeted for exploitation attempts, but no successful attacks have been reported to date. The vulnerability, identified as CVE-2026-109618, remains unexploited, with attackers lacking a working exploit or privileges to achieve remote code execution. Security teams should apply the vendor’s patch, update PHP to the latest stable release, and monitor for anomalous shell activity.]]></description>
       <pubDate>Tue, 27 Oct 2026 13:21:45 GMT</pubDate>
       <source url="https://www.wiz.io/blog/php2shell-exploitation-so-far">Wiz Research</source>
@@ -161,9 +161,9 @@
       <category>CVE</category>
     </item>
     <item>
-      <title>Maritime Coalition Launches Free Vulnerability Database for Ship and Port Systems</title>
-      <link>https://secubuzz.com/news/maritime-coalition-launches-free-vulnerability-dat-694cac</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/maritime-coalition-launches-free-vulnerability-dat-694cac</guid>
+      <title>Maritime Coalition Unveils Open Threat Database for Port Infrastructure</title>
+      <link>https://secubuzz.com/news/maritime-coalition-unveils-open-threat-database-fo-694cac</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/maritime-coalition-unveils-open-threat-database-fo-694cac</guid>
       <description><![CDATA[The Maritime Coalition has released a free vulnerability database cataloging nearly 30,000 IT and OT weaknesses affecting ship and port systems, including 37 maritime‑specific products. The database aggregates known flaws to aid operators in prioritizing security controls and patching schedules. Users can access the repository online to download vulnerability lists and mitigation guidance.]]></description>
       <pubDate>Tue, 27 Oct 2026 07:14:27 GMT</pubDate>
       <source url="https://www.securityweek.com/maritime-coalition-launches-free-vulnerability-database-for-ship-and-port-systems/">SecurityWeek</source>
@@ -209,18 +209,18 @@
       <title>Red Hat Enterprise Linux 8.6 rhc Client Security Update Addresses Critical Flaw</title>
       <link>https://secubuzz.com/news/red-hat-enterprise-linux-8-6-rhc-client-security-u-37da80</link>
       <guid isPermaLink="true">https://secubuzz.com/news/red-hat-enterprise-linux-8-6-rhc-client-security-u-37da80</guid>
-      <description><![CDATA[An update for the Red Hat Enterprise Linux 8.6 rhc client fixes a security flaw in Advanced Mission Critical Update Support and Extended Update Support Long‑Life Add‑On. Red Hat Product Security rates the issue as Important, with a CVSS base score listed in the CVE references, but no public exploit. Apply the rhc security update via standard channels to remediate the flaw.]]></description>
+      <description><![CDATA[An update for the Red Hat Enterprise Linux 8.6 rhc client fixes a security flaw in Advanced Mission Critical Update Support and Extended Update Support Long‑Life Add‑On. Red Hat Product Security rates the issue as Important, with a CVSS base score listed in the CVE references, but no public exploit.]]></description>
       <pubDate>Tue, 27 Oct 2026 04:35:12 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:90725">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
       <title>ChromeOS LTS-150 Update Addresses Multiple CVEs</title>
-      <link>https://secubuzz.com/news/chromeos-lts-150-update-addresses-multiple-cves-7591fa</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromeos-lts-150-update-addresses-multiple-cves-7591fa</guid>
+      <link>https://secubuzz.com/news/chromeos-lts-150-update-addresses-multiple-cves-732b9d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromeos-lts-150-update-addresses-multiple-cves-732b9d</guid>
       <description><![CDATA[ChromeOS LTS-150 version 150.0.7871.287 is being rolled out, addressing several CVEs including CVE-2026-103629, CVE-2026-110166, CVE-2026-113279, and CVE-2026-110138. The vulnerabilities involve integer overflows, buffer overflows, memory corruption, and use‑after‑free conditions across Skia, Animation, Accessibility, Payments, Core, Compositing, Video, and ShapeDetection components. Users should install the update promptly to mitigate the identified security flaws.]]></description>
       <pubDate>Tue, 27 Oct 2026 02:10:25 GMT</pubDate>
-      <source url="http://chromereleases.googleblog.com/feeds/2026129518798281934/comments/default">Google Chrome Releases</source>
+      <source url="https://chromereleases.googleblog.com/2026/10/long-term-support-channel-update-for_0661547040.html">Google Chrome Releases</source>
       <category>CVE</category>
     </item>
     <item>
@@ -229,7 +229,7 @@
       <guid isPermaLink="true">https://secubuzz.com/news/apple-releases-patch-for-cve-2026-109618-and-303-o-57dd7e</guid>
       <description><![CDATA[Apple issued a patch update covering 304 vulnerabilities, including CVE-2026-109618, as part of its October 2026 security release. The update addresses a range of issues across macOS and iOS platforms, though specific technical details are not disclosed. Users are advised to apply the latest update to ensure protection against the identified weaknesses.]]></description>
       <pubDate>Tue, 27 Oct 2026 02:09:55 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33458">SANS Internet Storm Center</source>
+      <source url="https://isc.sans.edu/diary/33458">SANS Internet Storm Center</source>
       <category>CVE</category>
     </item>
     <item>

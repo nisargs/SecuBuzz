@@ -38,7 +38,7 @@ export function BottomFeedbackCard() {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.94, y: 10 }}
               transition={{ duration: 0.18, ease: [0.16, 1, 0.3, 1] }}
-              className="w-[340px] sm:w-[390px] rounded-2xl border border-line bg-surface/95 p-5 shadow-2xl backdrop-blur-md"
+              className="w-[calc(100vw-32px)] max-w-[340px] sm:max-w-[390px] rounded-2xl border border-line bg-surface/95 p-5 shadow-2xl backdrop-blur-md"
             >
               {/* Header */}
               <div className="flex items-center justify-between pb-3 border-b border-line/60">

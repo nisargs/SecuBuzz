@@ -86,7 +86,7 @@ export const downloadFaq = [
   },
   {
     q: 'Does the app track me?',
-    a: 'No. SecuBuzz is engineered with privacy by architecture. No user accounts required, no location tracking, and no advertising IDs. We collect only anonymous crash logs and version diagnostics to ensure stability. See our Privacy Policy for full details.',
+    a: 'No. SecuBuzz is engineered with privacy by architecture. No user accounts required, no location tracking, and no advertising IDs. If you opt into push alerts, an anonymous device token and your severity preferences are registered to deliver updates. See our Privacy Policy for full details.',
   },
   {
     q: 'How do I install the app?',

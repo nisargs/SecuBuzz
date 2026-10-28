@@ -21,7 +21,7 @@ html[data-theme="dark"] {
   --accent-ink: 11 15 20;
   --critical: 242 85 90;
   --high: 255 138 61;
-  --medium: 122 167 255;
+  --medium: 245 158 11;
   --low: 140 150 160;
 }
 
@@ -37,7 +37,7 @@ html[data-theme="light"] {
   --accent-ink: 255 255 255;
   --critical: 220 38 38;
   --high: 217 119 6;
-  --medium: 37 99 235;
+  --medium: 217 119 6;
   --low: 100 116 139;
 }
 html,

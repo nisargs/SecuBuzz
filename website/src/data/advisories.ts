@@ -2,6 +2,694 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-41709",
+    "slug": "cve-2026-41709",
+    "vendor": "Broadcom",
+    "product": "VMware ESX",
+    "name": "Broadcom VMWare ESX Insufficient Logging Vulnerability",
+    "dateAdded": "2026-10-28",
+    "dueDate": "2026-11-11",
+    "severity": "High",
+    "cwe": "CWE-778",
+    "ransomware": false,
+    "description": "Broadcom VMWare ESX contains an insufficient logging vulnerability that could allow a malicious actor with admin access to perform certain operations without being logged.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41709"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-41709"
+      }
+    ],
+    "source": "CISA KEV"
+  },
+  {
+    "cve": "CVE-2026-46300",
+    "slug": "cve-2026-46300",
+    "vendor": "Linux",
+    "product": "Kernel",
+    "name": "Linux Kernel Missing Initialization of a Variable Vulnerability",
+    "dateAdded": "2026-10-28",
+    "dueDate": "2026-10-31",
+    "severity": "High",
+    "cwe": "CWE-456",
+    "ransomware": false,
+    "description": "Linux Kernel contains a missing initialization of a variable vulnerability that could allow for unintended modification of page-cache-backed data via failure to preserve the shared-fragment marker during socket buffer coalescing, causing ESP input processing to decrypt shared fragments in place. This vulnerability can be chained with CVE-2026-109618 and CVE-2026-109619 to implant PHP webshells and run commands as root.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-46300"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-46300"
+      }
+    ],
+    "source": "CISA KEV"
+  },
+  {
+    "cve": "CVE-2026-118255",
+    "slug": "cve-2026-118255",
+    "vendor": "npm",
+    "product": "@highcharts/dashboards",
+    "name": "Highcharts Grid: `javascript:` URL in credits.href runs script on click",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 8.4,
+    "severity": "High",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "An attacker who controls the Grid configuration can set credits.href to a javascript: URL. The value is not validated against an allowed-scheme list before it is applied to the credits link, so activating that link runs attacker-supplied script in the origin of the page hosting the Grid.",
+    "requiredAction": "Upgrade @highcharts/dashboards to version 4.0.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-6hgp-fmhr-mrg4"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118255"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118254",
+    "slug": "cve-2026-118254",
+    "vendor": "npm",
+    "product": "@highcharts/grid-lite",
+    "name": "Highcharts Grid parses pagination language options as HTML",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 8.6,
+    "severity": "High",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "The pagination language strings are written into the DOM as markup rather than as text. An attacker who controls those language options can supply elements carrying event handlers, and those handlers execute in the origin of the page hosting the Grid when the pagination controls render.",
+    "requiredAction": "Upgrade @highcharts/grid-lite to version 3.2.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-r5wg-q8fc-p6w2"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118254"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118253",
+    "slug": "cve-2026-118253",
+    "vendor": "npm",
+    "product": "@highcharts/dashboards",
+    "name": "Highcharts Dashboards parses fullscreen labels as HTML",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 8.4,
+    "severity": "High",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "The edit mode fullscreen labels are parsed as HTML when the corresponding control is rendered. An attacker who controls the Dashboards language options can supply markup carrying event handlers, which then execute in the origin of the page hosting the dashboard. Exploitation requires that untrusted data reach the Dashboards language configuration and that the affected control be rendered.",
+    "requiredAction": "Upgrade @highcharts/dashboards to version 4.2.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-58g7-7f52-h92c"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118253"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118252",
+    "slug": "cve-2026-118252",
+    "vendor": "npm",
+    "product": "@highcharts/dashboards",
+    "name": "Highcharts Dashboards parses sidebar component labels as HTML",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 8.4,
+    "severity": "High",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "The component language strings shown in the edit mode sidebar are parsed as HTML rather than inserted as text. An attacker who controls those language options can supply markup carrying event handlers, which execute in the origin of the page hosting the dashboard once the sidebar renders the affected labels.",
+    "requiredAction": "Upgrade @highcharts/dashboards to version 4.2.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-rcqf-f6h2-ccg9"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118252"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118251",
+    "slug": "cve-2026-118251",
+    "vendor": "npm",
+    "product": "highcharts",
+    "name": "Highcharts: `javascript:` URL in credits.href runs script on click",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 8.4,
+    "severity": "High",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "A credits.href value beginning with javascript: is assigned to the window location when the credits label is clicked, without being checked against an allowed-scheme list. An attacker who controls the chart configuration can therefore run script in the origin of the page hosting the chart.",
+    "requiredAction": "Upgrade highcharts to version 11.4.9 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-5793-x2q3-c3q7"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118251"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118250",
+    "slug": "cve-2026-118250",
+    "vendor": "npm",
+    "product": "highcharts",
+    "name": "Highcharts: dotted series.keys paths write to Object.prototype",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 7.2,
+    "severity": "High",
+    "cwe": "CWE-1321",
+    "ransomware": false,
+    "description": "A dot-separated key path taken from series.keys is followed without filtering the individual segments. An attacker who controls series.keys and the matching point data can use a path such as proto.polluted to set arbitrary properties on Object.prototype. The resulting properties are visible to all JavaScript running in the page, not only to the chart.",
+    "requiredAction": "Upgrade highcharts to version 12.6.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-rmqc-xvr3-v46c"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118250"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118249",
+    "slug": "cve-2026-118249",
+    "vendor": "npm",
+    "product": "highcharts",
+    "name": "Highcharts: series column construction writes to Object.prototype",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 7.1,
+    "severity": "High",
+    "cwe": "CWE-1321",
+    "ransomware": false,
+    "description": "When series columns are built from point objects, the point option keys are used directly as data column ids, so the write that populates a column reaches Object.prototype and the Object constructor.",
+    "requiredAction": "Upgrade highcharts to version 13.1.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-gfvx-2c2g-38wq"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118249"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118246",
+    "slug": "cve-2026-118246",
+    "vendor": "npm",
+    "product": "highcharts",
+    "name": "Highcharts Core: `breadcrumbs.style` keys become SVG event-handler attributes",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 8.4,
+    "severity": "High",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "The breadcrumbs style option is applied to the breadcrumb button as SVG attributes rather than as CSS, and the attribute names are not filtered. An attacker who controls the chart configuration can supply keys under breadcrumbs.style that name event handlers, and those keys become live handlers on the breadcrumb button, so the attacker's script runs in the origin of the page hosting the chart.",
+    "requiredAction": "Upgrade highcharts to version 11.4.9 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-35rr-xwfh-x789"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118246"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116797",
+    "slug": "cve-2026-116797",
+    "vendor": "npm",
+    "product": "@highcharts/grid-pro",
+    "name": "Highcharts Grid Pro: cell-renderer `attributes` map written with raw `setAttribute`",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 8.5,
+    "severity": "High",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "The input-type cell renderers copy every entry of the renderer's attributes option onto the input or select element they create, without checking the attribute names.",
+    "requiredAction": "Upgrade @highcharts/grid-pro to version 3.2.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-5ghw-9mgr-jvx2"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116797"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118242",
+    "slug": "cve-2026-118242",
+    "vendor": "npm",
+    "product": "@highcharts/grid-lite",
+    "name": "Highcharts Grid: custom icon definition objects written with raw `setAttribute` on `<path>`",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 8.5,
+    "severity": "High",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "A custom icon supplied under rendering.icons as an icon definition object is built by creating an SVG path for each of its child entries and setting every key of that entry as an attribute of the path, without filtering the attribute names; only the string form of the option is passed through the markup allow-list.",
+    "requiredAction": "Upgrade @highcharts/grid-lite to version 3.2.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-6g3c-p4fg-xv47"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118242"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118245",
+    "slug": "cve-2026-118245",
+    "vendor": "npm",
+    "product": "@highcharts/dashboards",
+    "name": "Highcharts Dashboards: `chartConstructor` is an unchecked lookup into the Highcharts namespace",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 8.6,
+    "severity": "High",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "The Highcharts component uses the value of chartConstructor to select a function from the Highcharts namespace and invokes it with the component's container element and its chartOptions, without checking the value against the supported chart constructors.",
+    "requiredAction": "Upgrade @highcharts/dashboards to version 4.2.2 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-grj7-r4jv-pw9j"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118245"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118247",
+    "slug": "cve-2026-118247",
+    "vendor": "npm",
+    "product": "@highcharts/dashboards",
+    "name": "Highcharts Dashboards / Grid Pro: `DataTable.setCell` and column writers treat `__proto__` as an existing column.",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 6.9,
+    "severity": "Medium",
+    "cwe": "CWE-1321",
+    "ransomware": false,
+    "description": "When a single cell value is written to a data table, the column id is used as a key on the table's column collection without filtering, so a column id of proto resolves to Object.prototype, is taken for an existing column, and the write lands at the row index on Object.prototype; a column id of constructor writes onto the Object constructor in the same way.",
+    "requiredAction": "Upgrade @highcharts/dashboards to version 4.2.2 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-c75x-9x9h-28rm"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118247"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118243",
+    "slug": "cve-2026-118243",
+    "vendor": "npm",
+    "product": "@highcharts/dashboards",
+    "name": "Highcharts Dashboards: `__proto__` data table id writes sync listeners to `Object.prototype`",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-1321",
+    "ransomware": false,
+    "description": "The data cursor keeps its listener and state bookkeeping in plain objects keyed by data table id, so a table id of proto supplied in the dataPool connector configuration resolves to Object.prototype when a sync registers its listeners, and the registration creates a property on Object.prototype named after the sync state and holding the internal listener array.",
+    "requiredAction": "Upgrade @highcharts/dashboards to version 4.2.2 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-jqgh-w3cc-7jqw"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118243"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118244",
+    "slug": "cve-2026-118244",
+    "vendor": "npm",
+    "product": "highcharts",
+    "name": "Highcharts Core: HTML text parsing falls back to unfiltered `innerHTML` during printing",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 7.2,
+    "severity": "High",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "When the HTML text parser cannot obtain a document from DOMParser because the call throws, it falls back to assigning the raw markup to the innerHTML of an element created in the hosting document, and the allow-list is applied only to the resulting DOM afterwards.",
+    "requiredAction": "Upgrade highcharts to version 12.6.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-65hg-cf3f-5m39"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118244"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116796",
+    "slug": "cve-2026-116796",
+    "vendor": "npm",
+    "product": "highcharts",
+    "name": "Highcharts Core: `javascript:` URL in an `xlink:href` attribute survives text filtering and reaches exported charts",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 7.2,
+    "severity": "High",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "The filter applied to markup in text options checks href, src and a few similar attributes against an allowed-scheme list, but accepts xlink:href without that check, so an SVG anchor whose xlink:href is a javascript: URL passes the filter, whether or not the option is rendered with useHTML.",
+    "requiredAction": "Upgrade highcharts to version 11.4.9 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-mw4f-gj5x-6xr4"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116796"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118650",
+    "slug": "cve-2026-118650",
+    "vendor": "Go",
+    "product": "echo (v5) · labstack",
+    "name": "Echo's middleware.Static: `%2F`-encoded path bypasses route/group middleware guarding a statically-served path",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-177",
+    "ransomware": false,
+    "description": "When middleware.Static is mounted globally (e.Use(middleware.Static(...))) and an application relies on a route- or group-level middleware guard to restrict a path that also falls under the served static root, a %2F-encoded request bypasses that guard while the file is still served.",
+    "requiredAction": "Upgrade echo (v5) · labstack to version 5.4.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-375p-5qhx-8wq4"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118650"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118652",
+    "slug": "cve-2026-118652",
+    "vendor": "Go",
+    "product": "echo (v5) · labstack",
+    "name": "Echo vulnerable to Reflected Cross-Site Scripting (XSS) via unsanitized JSONP callback in Context.JSONP / Context.JSONPBlob",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 6.1,
+    "severity": "Medium",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "The Context.JSONP, Context.JSONPBlob, and internal jsonPBlob helper in context.go directly concatenate the caller-supplied callback parameter into a JavaScript response without any validation, escaping, or allow-listing. This creates a high-impact reflected XSS that can be triggered by any route passing attacker-controlled data (query string, form, header, path param, etc.) into the callback.",
+    "requiredAction": "Upgrade echo (v5) · labstack to version 5.4.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-h9g5-28mm-hx3g"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118652"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118653",
+    "slug": "cve-2026-118653",
+    "vendor": "Go",
+    "product": "echo (v5) · labstack",
+    "name": "Echo has Rate Limiter Bypass via Spoofed X-Forwarded-For Header in Default Configuration",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-290",
+    "ransomware": false,
+    "description": "When echo.New() is used without explicitly setting Echo#IPExtractor, the RealIP() method falls back to reading the client-supplied X-Forwarded-For (or X-Real-IP) header without any proxy-origin validation.",
+    "requiredAction": "Upgrade echo (v5) · labstack to version 5.1.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-246p-cpwv-v3jq"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118653"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118266",
+    "slug": "cve-2026-118266",
+    "vendor": "Go",
+    "product": "echo (v5) · labstack",
+    "name": "Echo has CSRF Protection Bypass via MethodOverride Rewriting POST to Safe Method",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-352",
+    "ransomware": false,
+    "description": "The MethodOverride middleware accepts any non-empty string as the override target method — including safe methods (GET, HEAD, OPTIONS, TRACE) — when rewriting a POST request. When MethodOverride is registered before CSRF in the post-routing middleware chain (e.Use()), it rewrites the request method to a safe method before CSRF evaluates it.",
+    "requiredAction": "Upgrade echo (v5) · labstack to version 5.4.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-r7w9-592q-9vg4"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118266"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118651",
+    "slug": "cve-2026-118651",
+    "vendor": "Go",
+    "product": "echo (v5) · labstack",
+    "name": "Echo: Reverse Proxy Forwards Attacker-Supplied X-Real-IP to Upstream by Default",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-346",
+    "ransomware": false,
+    "description": "The Echo proxy middleware (middleware/proxy.go) preserves an incoming X-Real-IP header verbatim and forwards it to the upstream service when Echo#IPExtractor is not configured — which is the default.",
+    "requiredAction": "Upgrade echo (v5) · labstack to version 5.4.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-99jh-6h7p-pp36"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118651"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "GHSA-4mfg-r38w-w8fg",
+    "slug": "ghsa-4mfg-r38w-w8fg",
+    "vendor": "npm",
+    "product": "mcp-sanitizer",
+    "name": "mcp-sanitizer: URL sanitizer allows localhost/IPv6 loopback SSRF bypass via explicit port or bracketed IPv6",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 8.2,
+    "severity": "High",
+    "cwe": "CWE-918",
+    "ransomware": false,
+    "description": "mcp-sanitizer v1.3.3 fails to block Server-Side Request Forgery (SSRF) targets when a localhost URL includes an explicit port (e.g., or when an IPv6 loopback/link-local address is expressed in bracketed notation (e.g., Because the library is explicitly designed to gate MCP tool parameters such as web_fetch and web_scraper` before outbound HTTP requests are made, a bypass here directly enables an...",
+    "requiredAction": "Upgrade mcp-sanitizer to version 1.4.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-4mfg-r38w-w8fg"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "GHSA-7w82-6f9j-v9jp",
+    "slug": "ghsa-7w82-6f9j-v9jp",
+    "vendor": "npm",
+    "product": "mcp-sanitizer",
+    "name": "mcp-sanitizer: File Path Sanitizer Permits Arbitrary User-Home Absolute Paths",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "mcp-sanitizer v1.3.3 explicitly whitelists /home/ and /Users/ as allowed absolute path prefixes in its file path validation logic (src/utils/validation-utils.js:188-196). As a result, paths such as /home/alice/.ssh/id_rsa and /home/alice/.aws/credentials pass through sanitizer.sanitize() with blocked=false, even though they point to highly sensitive files outside any configured safe root.",
+    "requiredAction": "Upgrade mcp-sanitizer to version 1.4.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-7w82-6f9j-v9jp"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-58273",
+    "slug": "cve-2026-58273",
+    "vendor": "Pip",
+    "product": "rucio",
+    "name": "rucio has an Authorization Bypass on REST API endpoint for signing URLs",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 8.8,
+    "severity": "High",
+    "cwe": "CWE-639",
+    "ransomware": false,
+    "description": "The /credentials/signurl endpoint decides authorization from the client-supplied X-Rucio-Account HTTP header instead of the authenticated token's account.",
+    "requiredAction": "Upgrade rucio to version 35.9.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-5j9r-fx4x-rpvg"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58273"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "GHSA-473q-m89c-ghf8",
+    "slug": "ghsa-473q-m89c-ghf8",
+    "vendor": ".NET (NuGet)",
+    "product": "MySqlConnector",
+    "name": "MySqlConnector: Account password disclosed to a man-in-the-middle in zero-configuration TLS mode (clear-text password sent before certificate is verified)",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 6.9,
+    "severity": "Medium",
+    "cwe": "CWE-200",
+    "ransomware": false,
+    "description": "With SslMode set to VerifyCA or VerifyFull with no configured CA certificate, an unvalidated TLS connection is treated as secure and a clear-text password can be sent before the certificate is checked. This can occur when relying on the password to validate a self-signed cert, e.g., MariaDB's zero-configuration TLS.",
+    "requiredAction": "Upgrade MySqlConnector to version 2.6.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-473q-m89c-ghf8"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-55458",
+    "slug": "cve-2026-55458",
+    "vendor": "Go",
+    "product": "caddy (v2) · caddyserver",
+    "name": "Caddy has an RFC 7230 §6.1 compliance issue / Hop-by-hop headers that leak through",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 2.9,
+    "severity": "Low",
+    "cwe": "CWE-444",
+    "ransomware": false,
+    "description": "Caddy's reverse proxy fails to strip RFC 7230 hop-by-hop headers from upstream responses when handling WebSocket upgrades (HTTP 101 Switching Protocols). Headers including Alt-Svc, Keep-Alive, Proxy-Authenticate, Transfer-Encoding, or Trailer, which Caddy actually correctly strips for normal HTTP responses, pass through unfiltered to the client during protocol upgrades.",
+    "requiredAction": "Upgrade caddy (v2) · caddyserver to version 2.11.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-8qx7-j2v2-x6q5"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-55458"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-48356",
     "slug": "cve-2026-48356",
     "vendor": "Adobe",
@@ -689,632 +1377,6 @@ export const advisories: Advisory[] = [
       {
         "label": "GitHub Advisory",
         "url": "https://github.com/advisories/GHSA-wf6j-7hvr-gr93"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-110816",
-    "slug": "cve-2026-110816",
-    "vendor": "npm",
-    "product": "qs",
-    "name": "qs : qs.stringify with arrayFormat 'comma' throws an uncaught TypeError on array elements carrying a non-callable own toString (DoS)",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 6.3,
-    "severity": "Medium",
-    "cwe": "CWE-248",
-    "ransomware": false,
-    "description": "qs.stringify(obj, { arrayFormat: 'comma' }) throws an uncaught TypeError: Cannot convert object to primitive value when an array in obj contains an element that carries an own, non-callable toString property (for example { a: [ { toString: 'x' } ] }).",
-    "requiredAction": "Upgrade qs to version 6.16.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-6pq8-jhm2-2vcw"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110816"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-109855",
-    "slug": "cve-2026-109855",
-    "vendor": "npm",
-    "product": "undici",
-    "name": "undici WebSocket client vulnerable to Denial of Service via failed HTTP/2 handshake",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-248",
-    "ransomware": false,
-    "description": "undici's experimental WebSocket client (enabled by default via allowH2: true) crashes the Node.js process when it connects to a malicious server over HTTP/2.",
-    "requiredAction": "Upgrade undici to version 8.11.2 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-qq8j-7v2v-3rwp"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109855"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-114616",
-    "slug": "cve-2026-114616",
-    "vendor": "Pip",
-    "product": "Authlib",
-    "name": "Authlib accepts an empty HMAC key, allowing JWS/JWT signature forgery (HS256/HS384/HS512)",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 7.4,
-    "severity": "High",
-    "cwe": "CWE-287",
-    "ransomware": false,
-    "description": "Reporter: Cavan Loughran, Celvex Group Inc. Summary Authlib's symmetric (oct) key handling accepts an empty key (empty bytes b'' / empty string '') as a valid HMAC signing and verification key.",
-    "requiredAction": "Upgrade Authlib to version 1.9.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-8m4g-j4wp-wgcg"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114616"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-vp88-798v-h67f",
-    "slug": "ghsa-vp88-798v-h67f",
-    "vendor": "Rust (Cargo)",
-    "product": "rustls",
-    "name": "rustls: ECH rejection can expose buffered application data to authenticated outer server before `ech_required` alert",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 2.3,
-    "severity": "Low",
-    "cwe": "CWE-200",
-    "ransomware": false,
-    "description": "In rustls 0.23.44 and 0.23.45, application data that a client buffers before the handshake completes is sent to the server even when the server rejects Encrypted Client Hello (ECH). When the server rejects ECH, the client completes the handshake with the outer ClientHello and authenticates the server against the ECH config's public_name.",
-    "requiredAction": "Upgrade rustls to version 0.23.46 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-vp88-798v-h67f"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-w44r-93j7-qv28",
-    "slug": "ghsa-w44r-93j7-qv28",
-    "vendor": "Rust (Cargo)",
-    "product": "rustls",
-    "name": "rustls: An unauthenticated ServerHello poisons the per-name key-exchange record, so later ClientHellos carry only a classical X25519 share",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 3.7,
-    "severity": "Low",
-    "cwe": "CWE-757",
-    "ransomware": false,
-    "description": "The client records the server-selected key-exchange group per server name when it processes the ServerHello, before the server is authenticated. A network attacker can answer one connection attempt for a target name with a ServerHello that selects X25519 and close the connection. Later ClientHellos for that name carry one X25519 share while supported_groups still lists X25519MLKEM768 first.",
-    "requiredAction": "Upgrade rustls to version 0.23.46 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-w44r-93j7-qv28"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-c8m5-c952-6cm4",
-    "slug": "ghsa-c8m5-c952-6cm4",
-    "vendor": "Rust (Cargo)",
-    "product": "rustls",
-    "name": "Rustls: Session Debug formatting exposes TLS master secrets and resumption PSKs",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 4,
-    "severity": "Medium",
-    "cwe": "CWE-212",
-    "ransomware": false,
-    "description": "Formatting a client session value with Debug exposes its TLS 1.2 master secret or TLS 1.3 resumption PSK. A custom session store that logs these values can disclose keys to readers of the logs. Ordinary connection and built-in cache diagnostics remain redacted, and the session-store interface already warns that its values are sensitive.",
-    "requiredAction": "Upgrade rustls to version 0.23.46 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-c8m5-c952-6cm4"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-h2v8-394m-p7vv",
-    "slug": "ghsa-h2v8-394m-p7vv",
-    "vendor": "Rust (Cargo)",
-    "product": "rustls",
-    "name": "Rustls: Brotli certificate decompression can allocate an attacker-controlled amount of memory up to 1 GiB before authentication.",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 3.7,
-    "severity": "Low",
-    "cwe": "CWE-770",
-    "ransomware": false,
-    "description": "The built-in (but disabled by default) Brotli certificate decoder bounds the output buffer but accepts an input-selected history window. A header of five bytes can specify a 1 GiB window allocation. A peer can abort a process whose allocator cannot satisfy that request. A client must enable Brotli and connect to the peer; a server must enable Brotli and request a client certificate.",
-    "requiredAction": "Upgrade rustls to version 0.23.46 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-h2v8-394m-p7vv"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-114620",
-    "slug": "cve-2026-114620",
-    "vendor": "Pip",
-    "product": "authlib",
-    "name": "Authlib: Unvalidated request_uri fetch in JWT-secured authorization request (JAR) leading to SSRF",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 5.4,
-    "severity": "Medium",
-    "cwe": "CWE-918",
-    "ransomware": false,
-    "description": "Authlib's RFC 9101 (JAR) extension passes the attacker-controlled request_uri authorization parameter straight to the get_request_object() fetch hook with no validation, at a pre-authentication endpoint.",
-    "requiredAction": "Upgrade authlib to version 1.9.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-x4rv-c3wx-4cr8"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114620"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-114617",
-    "slug": "cve-2026-114617",
-    "vendor": "Pip",
-    "product": "authlib",
-    "name": "Authlib: ID token can disable its own nonce validation via the nonce_supported claim",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 4.2,
-    "severity": "Medium",
-    "cwe": "CWE-294",
-    "ransomware": false,
-    "description": "OpenIDMixin.parse_id_token() reads the nonce_supported claim from the ID token it is validating. When that claim is boolean false, the expected nonce is set to None and nonce validation is skipped for that token. An ID token that carries this claim is therefore accepted in a session whose nonce does not match.",
-    "requiredAction": "Upgrade authlib to version 1.9.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-c5mf-xmp2-59rc"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114617"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-114618",
-    "slug": "cve-2026-114618",
-    "vendor": "Pip",
-    "product": "authlib",
-    "name": "Authlib: Default JWT bearer grant accepts assertions for the wrong audience",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 6.8,
-    "severity": "Medium",
-    "cwe": "CWE-287",
-    "ransomware": false,
-    "description": "Authlib's default RFC 7523 JWT bearer grant leaves get_audiences() empty, so verify_claims() only checks that an aud claim exists instead of requiring it to match the current authorization server's token endpoint. An attacker holding a legitimately issued JWT assertion for any audience can present it to a different authorization server sharing the same signing key and obtain an access token.",
-    "requiredAction": "Upgrade authlib to version 1.9.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-fch4-3c6x-j4gc"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114618"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-114619",
-    "slug": "cve-2026-114619",
-    "vendor": "Pip",
-    "product": "authlib",
-    "name": "Authlib: OpenID implicit grant checks raw scope instead of allowed scope before issuing ID tokens",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 4.6,
-    "severity": "Medium",
-    "cwe": "CWE-863",
-    "ransomware": false,
-    "description": "OpenIDImplicitGrant.validate_authorization_request() first runs the parent ImplicitGrant validation, which filters the requested scope through client.get_allowed_scope() and stores the result in request.scope. It then decides whether this is an OpenID request by checking the raw, client-supplied request.payload.scope instead of that filtered value.",
-    "requiredAction": "Upgrade authlib to version 1.9.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-q686-2qmg-hqc7"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114619"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-114615",
-    "slug": "cve-2026-114615",
-    "vendor": "Pip",
-    "product": "authlib",
-    "name": "Authlib incomplete algorithm-confusion fix permits HMAC forgery with prefixed public keys",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 7.4,
-    "severity": "High",
-    "cwe": "CWE-184",
-    "ransomware": false,
-    "description": "OctKey.import_key() carries the only guard that stops an asymmetric public key from being used as an HMAC secret in authlib.jose.",
-    "requiredAction": "Upgrade authlib to version 1.9.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-7vr2-2fgp-9w7p"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114615"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-108360",
-    "slug": "cve-2026-108360",
-    "vendor": "Composer",
-    "product": "phpoffice/phpspreadsheet",
-    "name": "PhpSpreadsheet: SSRF whitelist bypass via unre-validated HTTP redirect in Drawing::setPath external image loading",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 6.4,
-    "severity": "Medium",
-    "cwe": "CWE-863",
-    "ransomware": false,
-    "description": "PhpSpreadsheet's Worksheet\\Drawing::setPath() validates an external-image URL against an operator-supplied isWhitelisted callback once, on the initial URL only, then fetches it with file_get_contents() using a stream context that does not set follow_location => 0.",
-    "requiredAction": "Upgrade phpoffice/phpspreadsheet to version 5.10.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-2phh-27fw-q4gc"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108360"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-108359",
-    "slug": "cve-2026-108359",
-    "vendor": "Composer",
-    "product": "phpoffice/phpspreadsheet",
-    "name": "PhpSpreadsheet ODS Reader: Unbounded number-rows-repeated → CPU & Memory Exhaustion (DoS)",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 8.7,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "When PhpSpreadsheet loads an OpenDocument Spreadsheet (.ods), Ods::processTableRow() reads the table:number-rows-repeated attribute of a with an unchecked (int) cast, then materialises one cell per repeated row. This value is completely unbounded, so a single ~1.4 KB file can instruct the reader to create up to millions of cells, exhausting memory (fatal OOM).",
-    "requiredAction": "Upgrade phpoffice/phpspreadsheet to version 5.10.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-j2w7-387v-m2rq"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108359"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-108358",
-    "slug": "cve-2026-108358",
-    "vendor": "Composer",
-    "product": "phpoffice/phpspreadsheet",
-    "name": "PhpSpreadsheet: XmlScanner Bypass via ISO-2022 Escape Sequences Allows XXE and Denial of Service",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 8.8,
-    "severity": "High",
-    "cwe": "CWE-611",
-    "ransomware": false,
-    "description": "PhpSpreadsheet's XmlScanner::scan() uses a regex pattern that only accounts for NULL byte (0x00) interleaving when detecting <!DOCTYPE. ISO-2022 escape sequences (0x1B bytes) inserted between the characters of the pattern break the regex match entirely, allowing DOCTYPE declarations with entity definitions to pass through undetected.",
-    "requiredAction": "Upgrade phpoffice/phpspreadsheet to version 5.10.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-3x94-m842-937c"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108358"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-108357",
-    "slug": "cve-2026-108357",
-    "vendor": "Composer",
-    "product": "phpoffice/phpspreadsheet",
-    "name": "PhpSpreadsheet: XmlScanner Bypass via Double-Encoded unentity() TOCTOU Allows XXE and Denial of Service",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 8.8,
-    "severity": "High",
-    "cwe": "CWE-611",
-    "ransomware": false,
-    "description": "The SpreadsheetML XML reader (Reader\\Xml) scans file content twice through XmlScanner::scan(), and each scan runs an unentity() callback that calls html_entity_decode() after the pattern check. By double-encoding the < character as &#38;#60;, the first scan decodes &#38; to & (forming &#60;), and the second scan decodes &#60; to < (forming <!DOCTYPE).",
-    "requiredAction": "Upgrade phpoffice/phpspreadsheet to version 5.10.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-rxj4-h86g-25gc"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108357"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-116591",
-    "slug": "cve-2026-116591",
-    "vendor": "Go",
-    "product": "compress (zstd) · klauspost",
-    "name": "compress zstd: Panic on two-block frames",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 8.7,
-    "severity": "High",
-    "cwe": "CWE-190",
-    "ransomware": false,
-    "description": "A crafted ~27 KB two-block zstd frame makes DecodeAll and the streaming decoder panic with an out-of-range slice index instead of returning a decode error. The same bytes decode fine with the reference zstd. Any program that decompresses untrusted zstd input can be crashed by it. Reproduced on v1.20.0 and v1.20.1. Released in",
-    "requiredAction": "Upgrade compress (zstd) · klauspost to version 1.20.2 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-fpmh-frq8-7rj8"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116591"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-114614",
-    "slug": "cve-2026-114614",
-    "vendor": "Pip",
-    "product": "authlib",
-    "name": "Authlib: is_secure_transport() loopback exemption can be bypassed with a userinfo component, allowing cleartext-HTTP URLs to non-loopback hosts",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 2.6,
-    "severity": "Low",
-    "cwe": "CWE-319",
-    "ransomware": false,
-    "description": "authlib.common.security.is_secure_transport() is used throughout Authlib to enforce the OAuth 2.0 / OIDC requirement that endpoint and redirect URIs use TLS, with an RFC 8252 §7.3 exemption for loopback URIs. The check is implemented as a textual str.startswith prefix match, so a URL such as — whose actual host is evil.example and whose scheme is plain http — is accepted as \"secure\".",
-    "requiredAction": "Upgrade authlib to version 1.8.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-jj7h-c3hg-m23x"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114614"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-114605",
-    "slug": "cve-2026-114605",
-    "vendor": "Pip",
-    "product": "dnspython",
-    "name": "dnspython dns.name.from_wire_parser() excessive CPU use",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-674",
-    "ransomware": false,
-    "description": "A maliciously crafted DNS message may cause dns.name.from_wire_parser() to use excessive CPU for DNS name decompression. Applications that process untrusted DNS wire form messages with dnspython may be degraded or DoS'd by the extra CPU use required. This problem is fixed in dnspython 2.9.0. There are no known workarounds.",
-    "requiredAction": "Upgrade dnspython to version 2.9.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-45c3-73f7-pv4m"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114605"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-116588",
-    "slug": "cve-2026-116588",
-    "vendor": "Pip",
-    "product": "ddtrace",
-    "name": "Datadog dd-trace-py: ReDoS in URL query string obfuscation",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 8.7,
-    "severity": "High",
-    "cwe": "CWE-1333",
-    "ransomware": false,
-    "description": "A regular expression used to obfuscate URL query strings can consume excessive CPU when processing certain attacker-controlled input. This can stall request processing and cause denial of service in applications using affected HTTP tracing integrations.",
-    "requiredAction": "Upgrade ddtrace to version 3.19.9 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-3633-r77q-h3v3"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116588"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-116589",
-    "slug": "cve-2026-116589",
-    "vendor": "Pip",
-    "product": "ddtrace",
-    "name": "Datadog dd-trace-py: IAST instrumentation can lead to application DOS",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 8.2,
-    "severity": "High",
-    "cwe": "CWE-248",
-    "ransomware": false,
-    "description": "A flaw in dd-trace-py’s IAST instrumentation can cause the Python application process to terminate unexpectedly when processing certain attacker-controlled input. Only applications with IAST enabled are affected. IAST is disabled by default.",
-    "requiredAction": "Upgrade ddtrace to version 4.15.5 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-p3m5-h5v9-vqj6"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116589"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-106435",
-    "slug": "cve-2026-106435",
-    "vendor": "Pip",
-    "product": "pymongo",
-    "name": "MongoDB Python Driver: Out-of-bounds read in BSON decoding via a malformed Regex element",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 8.2,
-    "severity": "High",
-    "cwe": "CWE-125",
-    "ransomware": false,
-    "description": "The C extension's BSON decoder scans a Regex element's pattern and flags strings with strlen before checking the document's remaining length, so a crafted truncated Regex element can read past the end of the caller's buffer.",
-    "requiredAction": "Upgrade pymongo to version 4.18.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-98qm-wvgf-w4cf"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106435"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-114053",
-    "slug": "cve-2026-114053",
-    "vendor": "Pip",
-    "product": "vllm",
-    "name": "vLLM: Request-controlled mm_processor_kwargs.code_revision allows remote code execution",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 8.1,
-    "severity": "High",
-    "cwe": "CWE-94",
-    "ransomware": false,
-    "description": "An untrusted multimodal request can set mm_processor_kwargs.code_revision. When vLLM serves a model whose Hugging Face processor uses dynamic auto_map code and the operator enabled --trust-remote-code, this request value reaches AutoProcessor.from_pretrained and selects the Python revision imported by Transformers.",
-    "requiredAction": "Upgrade vllm to version 0.31.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-h3rc-6mm3-gc2m"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114053"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-3w55-933p-8pv5",
-    "slug": "ghsa-3w55-933p-8pv5",
-    "vendor": "Pip",
-    "product": "strands-agents",
-    "name": "Strands Agents: Local Privilege Escalation via Symlink Attack in Default Session File Storage",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 7.1,
-    "severity": "High",
-    "cwe": "CWE-59",
-    "ransomware": false,
-    "description": "The FileSessionManager defaults to storing session data in /tmp/strands/sessions/ (a world-writable directory) using predictable file paths and a write pattern (open(path + \".tmp\", \"w\") → os.replace()) that follows symbolic links. A local attacker can exploit this to overwrite arbitrary files or inject malicious session data for persistent prompt injection.",
-    "requiredAction": "Upgrade strands-agents to version 1.48.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-3w55-933p-8pv5"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-763v-5pjm-fx36",
-    "slug": "ghsa-763v-5pjm-fx36",
-    "vendor": "Pip",
-    "product": "strands-agents",
-    "name": "Strands Agents: Default FileSessionManager storage is world-readable on shared systems",
-    "dateAdded": "2026-10-27",
-    "dueDate": "",
-    "cvss": 5.7,
-    "severity": "Medium",
-    "cwe": "CWE-276",
-    "ransomware": false,
-    "description": "There is a local confidentiality issue in the default FileSessionManager storage behavior. By default it writes session data under /tmp/strands/sessions and relies on the process umask for directory and file permissions. On systems using the common umask 022, the session directories are 0755 and JSON files are 0644, so other local users can read persisted agent session data.",
-    "requiredAction": "Upgrade strands-agents to version 1.48.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-763v-5pjm-fx36"
       }
     ],
     "source": "GITHUB"
