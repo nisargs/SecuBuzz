@@ -200,6 +200,14 @@ const FEEDS = [
     name: "Cyber Security News",
     url: "https://feeds.feedburner.com/cyber-security-news",
   },
+  {
+    name: "Google Project Zero",
+    url: "https://projectzero.google/feed.xml",
+  },
+  {
+    name: "GreyNoise Labs",
+    url: "https://www.greynoise.io/blog/rss.xml",
+  },
   // Official Vendor PSIRT & Security Release Feeds (Primary Ecosystem Radar):
   {
     name: "Palo Alto Networks PSIRT",
@@ -248,6 +256,14 @@ const FEEDS = [
   {
     name: "GitHub Security Blog",
     url: "https://github.blog/security/feed/",
+  },
+  {
+    name: "ZDI Advisories",
+    url: "https://www.zerodayinitiative.com/rss/published/",
+  },
+  {
+    name: "CERT-EU Security Advisories",
+    url: "https://cert.europa.eu/publications/security-advisories-rss",
   },
 ];
 

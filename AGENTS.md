@@ -53,7 +53,7 @@
 - **Desktop QR Conversion & Video Assets:**
   - High-res QR code (`/qr.png`) pointing directly to Google Play Store deployed to bridge the desktop-to-mobile conversion gap for corporate PC readers (89.8% of web traffic). Rendered on `/download` and via desktop helper triggers.
   - Product walkthrough video deployed at `/secubuzz-landscape.mp4` (with HTTP 301 redirect from legacy `/brag.mp4` in Cloudflare Worker).
-- **Feed System:** `scripts/ingest.mjs` retains up to 350 articles (~7–10 days of security intelligence across 39 curated sources: 27 media/research publications + 12 official vendor PSIRT feeds, documented in `docs/FEEDS_AND_SOURCES.md`), scheduled every 1 hour via GitHub Actions (`cron: "17 * * * *"`). Powered by resilient tri-engine AI (Groq `openai/gpt-oss-20b` + Google Gemini `gemini-2.5-flash` + OpenRouter fallback), interleaved via hourly lead rotation (`currentHour % pool.length`) with instant failover on HTTP 429/5xx.
+- **Feed System:** `scripts/ingest.mjs` retains up to 350 articles (~7–10 days of security intelligence across 43 curated sources: 29 media/research publications + 14 official vendor PSIRT & advisory feeds, documented in `docs/FEEDS_AND_SOURCES.md`), scheduled every 1 hour via GitHub Actions (`cron: "17 * * * *"`). Powered by resilient tri-engine AI (Groq `openai/gpt-oss-20b` + Google Gemini `gemini-2.5-flash` + OpenRouter fallback), interleaved via hourly lead rotation (`currentHour % pool.length`) with instant failover on HTTP 429/5xx.
 - **Feed Resilience & Watchdog System (Zero-Silent-Failure Mandate):**
   - **Read-Only Invariant:** `scripts/sync_website_data.mjs` is strictly read-only on `feed.json` and must NEVER write or overwrite `feed.json`.
   - **In-Pipeline Gate (`scripts/verify_feed_freshness.mjs`):** Runs in `.github/workflows/ingest.yml` before R2 upload. Asserts >= 50 articles and newest story meets adaptive threshold (<= 32h on weekends, <= 18h on weekdays) accounting for natural journalism lulls; fails CI loudly if stale.
@@ -78,7 +78,7 @@
   - **Dynamic Word Count Telemetry**: Displayed on mobile feed cards, mobile article detail screen, and settings appearance preview ("60-word briefs").
   - **Refresh Control Sanitation**: Fixed double-spinner bug on mobile briefs feed by eliminating redundant absolute `ActivityIndicator` overlay, standardizing on native `RefreshControl`.
   - **Automated Cross-Feed CVE Corroboration & Deduplication Enrichment**:
-    - Pre-AI cross-feed candidate corroboration across 39 sources within a 72-hour window. If an RSS publisher truncates descriptions, the pipeline cross-matches vendor/incident keywords against sister candidates and passes verified CVEs into the AI prompt.
+    - Pre-AI cross-feed candidate corroboration across 43 sources within a 72-hour window. If an RSS publisher truncates descriptions, the pipeline cross-matches vendor/incident keywords against sister candidates and passes verified CVEs into the AI prompt.
     - Post-AI deduplication CVE backfill: when a secondary source is merged as a duplicate in `scripts/ingest.mjs`, any missing CVE is backfilled into `duplicateOf.cves`, title/headline is enriched with `(${cve})`, and category is elevated to `CVE`.
   - **100% Mobile & Web Taxonomy Parity**:
     - News Briefs: `Breach`, `Ransomware`, `CVE`, `Vulnerability`, `Nation State`, `General`. Threat Severities: `CRITICAL`, `HIGH`, `MEDIUM`, `LOW`.

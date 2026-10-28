@@ -15,6 +15,8 @@ export const VENDOR_PSIRT_SOURCES = [
   'Ubuntu Security Notices',
   'Apple Security Updates',
   'GitHub Security Blog',
+  'ZDI Advisories',
+  'CERT-EU Security Advisories',
 ] as const;
 
 export type VendorPsirtSource = (typeof VENDOR_PSIRT_SOURCES)[number];
