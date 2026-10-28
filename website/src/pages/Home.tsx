@@ -52,7 +52,7 @@ export function Home() {
               <span className="block text-muted">Zero-days within hours of CISA listing them.</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">
-              SecuBuzz condenses the day’s cybersecurity reporting and official vendor PSIRT advisories—from Red Hat, Cisco, Microsoft, Palo Alto, and AWS—into source-linked 60-word briefs, pushing new Known Exploited Vulnerabilities to your Android phone with remediation deadlines.
+              SecuBuzz condenses the day’s cybersecurity reporting and official vendor PSIRT advisories across Red Hat, Cisco, Microsoft, Palo Alto, and AWS into source-linked 60-word briefs, pushing new Known Exploited Vulnerabilities to your Android phone with remediation deadlines.
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-5">
               <PlayStoreButton size="lg" source="home_hero" />
