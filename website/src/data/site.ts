@@ -40,18 +40,23 @@ export const footerNav = [
 
 
 export const homeReasons = [
-{
-  title: 'Read the whole feed before stand-up',
-  body: 'Every brief is capped at 60 words. A full day of coverage takes about five minutes, not fifty open tabs.'
-},
-{
-  title: 'Every claim traces back to a source',
-  body: 'Briefs link to the original reporting and vendor advisories, so you can verify before you escalate.'
-},
-{
-  title: 'KEV alerts that carry the deadline',
-  body: 'When CISA adds a CVE to the Known Exploited Vulnerabilities catalog, you get a push with the vendor, product and remediation due date.'
-}];
+  {
+    title: 'Read the whole feed before stand-up',
+    body: 'Every brief is capped at 60 words. A full day of coverage takes about five minutes, not fifty open tabs.'
+  },
+  {
+    title: 'Official vendor PSIRTs, not just news blogs',
+    body: 'Direct ingestion from Red Hat RHSA, Microsoft MSRC, Cisco PSIRT, Palo Alto, and AWS ensures sysadmins catch critical patch releases before secondary media reports them.'
+  },
+  {
+    title: 'Every claim traces back to a source',
+    body: 'Briefs link to the original reporting and vendor advisories, so you can verify before you escalate.'
+  },
+  {
+    title: 'KEV alerts that carry the deadline',
+    body: 'When CISA adds a CVE to the Known Exploited Vulnerabilities catalog, you get a push with the vendor, product and remediation due date.'
+  }
+];
 
 
 export const appFeatures = [

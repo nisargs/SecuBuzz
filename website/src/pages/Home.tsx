@@ -52,8 +52,7 @@ export function Home() {
               <span className="block text-muted">Zero-days within hours of CISA listing them.</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">
-              SecuBuzz condenses the day’s cybersecurity reporting into source-linked briefs and pushes new
-              Known Exploited Vulnerabilities to your Android phone, with the remediation deadline attached.
+              SecuBuzz condenses the day’s cybersecurity reporting and official vendor PSIRT advisories—from Red Hat, Cisco, Microsoft, Palo Alto, and AWS—into source-linked 60-word briefs, pushing new Known Exploited Vulnerabilities to your Android phone with remediation deadlines.
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-5">
               <PlayStoreButton size="lg" source="home_hero" />
@@ -97,6 +96,34 @@ export function Home() {
           <PhoneMockup />
         </div>
       </section>
+
+      <div className="border-b border-line bg-surface/40 py-3.5">
+        <div className="mx-auto flex max-w-site flex-col gap-3 px-5 sm:flex-row sm:items-center sm:justify-between md:px-8">
+          <div className="flex items-center gap-2">
+            <span className="h-1.5 w-1.5 rounded-full bg-cyan-400" />
+            <span className="font-mono text-xs font-medium uppercase tracking-wider text-muted">
+              Direct Vendor PSIRT Radar
+            </span>
+          </div>
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-1.5 font-mono text-xs text-subtle">
+            <span>Red Hat RHSA</span>
+            <span className="text-line">•</span>
+            <span>Microsoft MSRC</span>
+            <span className="text-line">•</span>
+            <span>Cisco PSIRT</span>
+            <span className="text-line">•</span>
+            <span>Palo Alto Networks</span>
+            <span className="text-line">•</span>
+            <span>Fortinet</span>
+            <span className="text-line">•</span>
+            <span>AWS Bulletins</span>
+            <span className="text-line">•</span>
+            <span>Ubuntu USN</span>
+            <span className="text-line">•</span>
+            <span>GitLab Security</span>
+          </div>
+        </div>
+      </div>
 
       <section className="mx-auto grid max-w-site gap-12 px-5 py-16 md:px-8 lg:grid-cols-[1fr_360px]">
         <div>
