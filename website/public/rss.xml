@@ -5,8 +5,62 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Oct 2026 09:30:05 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 17:22:51 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>FBI Seizes Domain of Hosting Provider Allegedly Facilitating Child Abuse and Money Laundering</title>
+      <link>https://secubuzz.com/news/fbi-seizes-domain-of-hosting-provider-allegedly-fa-57e04e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fbi-seizes-domain-of-hosting-provider-allegedly-fa-57e04e</guid>
+      <description><![CDATA[The FBI seized the domain of a bullet‑proof hosting provider that allegedly facilitated child sexual abuse material distribution and money laundering. The operation targeted the provider’s infrastructure, disrupting its services and preventing further criminal activity through its hosting network. No public patch is required; security teams should monitor for related domain registrations and enforce strict domain registration policies.]]></description>
+      <pubDate>Wed, 28 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://therecord.media/fbi-seizure-csam-virtualine">The Record</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Adobe Issues Patches for Eight Critical Campaign Classic Vulnerabilities Including CVE-2026-104351</title>
+      <link>https://secubuzz.com/news/adobe-issues-patches-for-eight-critical-campaign-c-533abd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/adobe-issues-patches-for-eight-critical-campaign-c-533abd</guid>
+      <description><![CDATA[Adobe released patches for eight critical Campaign Classic vulnerabilities, including CVE-2026-104351, a code injection flaw that could enable arbitrary code execution. The flaw carries a CVSS score of 9.9, indicating a high‑risk remote code execution vector that could bypass security features and elevate privileges. Adobe has issued the updates; users should apply patches immediately and verify installation to mitigate exploitation.]]></description>
+      <pubDate>Wed, 28 Oct 2026 11:15:51 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/adobe-fixes-8-critical-campaign-classic.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Hackers Compromise Camera Management Software to Deploy Malware on Windows Computers</title>
+      <link>https://secubuzz.com/news/hackers-compromise-camera-management-software-to-d-50255f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-compromise-camera-management-software-to-d-50255f</guid>
+      <description><![CDATA[Hackers compromised a camera management application to deploy malware on Windows PCs, leveraging a legitimate Microsoft program to execute malicious code and maintain persistence. The attack chain exploited the software’s Windows authentication integration, enabling attackers to bypass security controls and execute code remotely. Apply vendor patches and limit camera software privileges immediately.]]></description>
+      <pubDate>Wed, 28 Oct 2026 11:03:12 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/camera-management-software/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Long-Hidden Flaws Patched in EPICS Research Facility Control Software</title>
+      <link>https://secubuzz.com/news/long-hidden-flaws-patched-in-epics-research-facili-3ce2ad</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/long-hidden-flaws-patched-in-epics-research-facili-3ce2ad</guid>
+      <description><![CDATA[Four previously undisclosed EPICS Base flaws were identified in research facility control software used by particle accelerators and fusion laboratories. The vulnerabilities could allow attackers to crash critical control processes, potentially disrupting experimental operations, but no evidence of exploitation was reported. Patches have been released by the EPICS project; operators should update their systems promptly to mitigate the risk.]]></description>
+      <pubDate>Wed, 28 Oct 2026 10:48:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/long-hidden-flaws-patched-in-epics-research-facility-control-software/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Skyw4lker Phishing Campaign Targets American Organizations</title>
+      <link>https://secubuzz.com/news/skyw4lker-phishing-campaign-targets-american-organ-4e2af0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/skyw4lker-phishing-campaign-targets-american-organ-4e2af0</guid>
+      <description><![CDATA[Skyw4lker is a device code phishing campaign that targets American organizations by exploiting legitimate cloud services and authentication mechanisms to gain corporate account access. The attack bypasses traditional credential theft, leveraging trusted workflows and leaving fewer obvious signs, which hampers detection. Security teams should monitor anomalous device code requests, enforce multi‑factor authentication, and apply vendor patches to mitigate this vector.]]></description>
+      <pubDate>Wed, 28 Oct 2026 10:30:00 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/american-organizations-under-attack.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Interpol’s Operation Serengeti Nets 1,462 Arrests and $105M Recovery</title>
+      <link>https://secubuzz.com/news/interpol-s-operation-serengeti-nets-1-462-arrests-130710</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/interpol-s-operation-serengeti-nets-1-462-arrests-130710</guid>
+      <description><![CDATA[Interpol's Operation Serengeti, now in its third iteration, resulted in 1,462 arrests across 20 African countries and the US, recovering $105 million in stolen funds. The crackdown demonstrates international cooperation against cybercrime syndicates that funnel illicit proceeds into global financial systems. Law enforcement agencies should continue joint investigations, share threat intelligence, and enforce asset forfeiture to disrupt future operations.]]></description>
+      <pubDate>Wed, 28 Oct 2026 06:00:00 GMT</pubDate>
+      <source url="https://www.darkreading.com/cybersecurity-operations/third-serengeti-sweep-1400-arrests-investigations-mature">Dark Reading</source>
+      <category>General</category>
+    </item>
     <item>
       <title>NIST Roadmap to Retire Quantum‑Vulnerable Encryption</title>
       <link>https://secubuzz.com/news/nist-roadmap-to-retire-quantum-vulnerable-encrypti-6711e9</link>
@@ -71,12 +125,30 @@
       <category>Ransomware</category>
     </item>
     <item>
+      <title>Artem Stryzhak Pleads Guilty to Ransomware Operator Charges</title>
+      <link>https://secubuzz.com/news/artem-stryzhak-pleads-guilty-to-ransomware-operato-2da8f1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/artem-stryzhak-pleads-guilty-to-ransomware-operato-2da8f1</guid>
+      <description><![CDATA[Ukrainian national Artem Stryzhak pleaded guilty to charges linked to participation in at least two ransomware groups, including Nefilim and Hive. The case underscores legal action against operators behind Nefilim and Hive ransomware, highlighting international cooperation. Courts imposed a five‑year-plus sentence, underscoring the judiciary's firm stance against ransomware operations worldwide.]]></description>
+      <pubDate>Tue, 27 Oct 2026 20:40:00 GMT</pubDate>
+      <source url="https://therecord.media/nefilim-hive-ransomware-operator-70-months-prison">The Record</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Chrome 156 for Android Released with Security Fixes</title>
       <link>https://secubuzz.com/news/chrome-156-for-android-released-with-security-fixe-45fb25</link>
       <guid isPermaLink="true">https://secubuzz.com/news/chrome-156-for-android-released-with-security-fixe-45fb25</guid>
       <description><![CDATA[Chrome 156 (156.0.8078.73) for Android has been released, incorporating stability and performance improvements alongside the same security fixes present in the corresponding desktop releases. The update addresses previously identified vulnerabilities through standard patching procedures, ensuring consistency across platforms. Users should install the new version via Google Play to maintain up‑to‑date protection and mitigate any known exploits.]]></description>
       <pubDate>Tue, 27 Oct 2026 20:33:52 GMT</pubDate>
       <source url="http://chromereleases.googleblog.com/feeds/7038944475844055753/comments/default">Google Chrome Releases</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Google ChromeOS Beta Channel Updated to OS 16852.15.0</title>
+      <link>https://secubuzz.com/news/google-chromeos-beta-channel-updated-to-os-16852-1-315562</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-chromeos-beta-channel-updated-to-os-16852-1-315562</guid>
+      <description><![CDATA[Google ChromeOS Beta channel is updated to OS version 16852.15.0 and Browser version 157.0.8103.23, affecting most ChromeOS devices. The update includes bug fixes and performance improvements, with users encouraged to report new issues via the ChromeOS communities or bug filing channels. No security patches are disclosed, and the update is available for immediate installation through the standard channel upgrade process.]]></description>
+      <pubDate>Tue, 27 Oct 2026 19:39:25 GMT</pubDate>
+      <source url="http://chromereleases.googleblog.com/feeds/6615525151673996673/comments/default">Google Chrome Releases</source>
       <category>General</category>
     </item>
     <item>
@@ -95,6 +167,24 @@
       <description><![CDATA[Microsoft released out‑of‑band Windows updates to remove trust in certificates issued by the compromised eMudhra certificate authority, protecting systems that do not receive automatic certificate trust updates. The flaw stems from compromised CA keys that enabled attackers to actively issue fraudulent certificates, creating a potential man‑in‑the‑middle risk for TLS connections. Apply the update via Windows Update immediately.]]></description>
       <pubDate>Tue, 27 Oct 2026 18:20:28 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-oob-updates-to-distrust-emudhra-certificates/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat OpenShift Container Platform 4.16.74 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-openshift-container-platform-4-16-74-secur-37e481</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-openshift-container-platform-4-16-74-secur-37e481</guid>
+      <description><![CDATA[Red Hat released OpenShift Container Platform 4.16.74, addressing multiple bugs and adding enhancements that impact the platform’s security posture. The update includes a security fix for an unspecified vulnerability, with Red Hat Product Security rating the impact as Important and providing CVSS scores via referenced CVE links. Users should apply the 4.16.74 update immediately through the standard Red Hat update channels to mitigate potential exploitation.]]></description>
+      <pubDate>Tue, 27 Oct 2026 18:00:00 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:89714">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Critical Update for OpenShift Container Platform 4.12.102</title>
+      <link>https://secubuzz.com/news/red-hat-releases-critical-update-for-openshift-con-37da92</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-update-for-openshift-con-37da92</guid>
+      <description><![CDATA[Red Hat released a critical security update for OpenShift Container Platform 4.12.102, addressing multiple bugs that could compromise container workloads. The update carries a security impact rated Critical, with CVSS base scores available for each vulnerability referenced in the advisory. Users should apply the 4.12.102 release immediately to mitigate the identified risks.]]></description>
+      <pubDate>Tue, 27 Oct 2026 17:59:35 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:90272">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -365,96 +455,6 @@
       <description><![CDATA[Apple issued a patch update covering 304 vulnerabilities, including CVE-2026-109618, as part of its October 2026 security release. The update addresses a range of issues across macOS and iOS platforms, though specific technical details are not disclosed. Users are advised to apply the latest update to ensure protection against the identified weaknesses.]]></description>
       <pubDate>Tue, 27 Oct 2026 02:09:55 GMT</pubDate>
       <source url="https://isc.sans.edu/diary/rss/33458">SANS Internet Storm Center</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Penetration Tester Arrested for ARTEX AI Breach of 90 South Korean Organizations</title>
-      <link>https://secubuzz.com/news/penetration-tester-arrested-for-artex-ai-breach-of-58f8a2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/penetration-tester-arrested-for-artex-ai-breach-of-58f8a2</guid>
-      <description><![CDATA[A penetration tester weaponized the ARTEX AI framework to breach 90 South Korean organizations, leading to seven arrests. The breach leveraged ARTEX AI’s automated credential harvesting and lateral movement, exfiltrating sensitive data and demanding ransom from. Security teams should rotate credentials, enable multi‑factor authentication, and monitor AI‑driven anomalies to mitigate similar attacks in 2026.]]></description>
-      <pubDate>Tue, 27 Oct 2026 00:59:27 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/seoul-police-arrest-pentester-over-82m-artex-ai-breach">CyberNews AI</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>CVE-2026-111497 Enables Remote Code Execution in PHP Windows Packages</title>
-      <link>https://secubuzz.com/news/cve-2026-111497-enables-remote-code-execution-in-p-2b6599</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-111497-enables-remote-code-execution-in-p-2b6599</guid>
-      <description><![CDATA[CVE-2026-111497 permits remote code execution in PHP Windows packages via Brotli auto‑decompression triggered by cURL and Guzzle. The CVSS 9.2 flaw allows unauthenticated attackers to run arbitrary code on affected servers, threatening web applications. PHP released a patch for the Windows build; apply it immediately or disable Brotli decompression as a workaround.]]></description>
-      <pubDate>Tue, 27 Oct 2026 00:59:11 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/cve-2026-111497-php-windows-brotli-memory-corruption-patch-guide">CyberNews AI</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Fragmented AI Security Benchmarks Fail to Capture Real‑World Threats</title>
-      <link>https://secubuzz.com/news/fragmented-ai-security-benchmarks-fail-to-capture-6eb353</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fragmented-ai-security-benchmarks-fail-to-capture-6eb353</guid>
-      <description><![CDATA[The proliferation of AI security benchmarks creates fragmented evaluation landscapes, with each metric focusing on distinct aspects of model robustness. Because benchmarks target isolated variables, they fail to capture real‑world attack vectors, underscoring the need for integrated testing against proprietary codebases. Security teams should supplement benchmark results with internal penetration tests and continuous monitoring to ensure comprehensive AI model protection.]]></description>
-      <pubDate>Tue, 27 Oct 2026 00:26:50 GMT</pubDate>
-      <source url="https://www.darkreading.com/cybersecurity-analytics/benchmarking-security-of-ai-models-poses-challenges">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Flaw in Ignition Component of RHEL 9.4 SAP Solutions Enables Local Privilege Escalation</title>
-      <link>https://secubuzz.com/news/flaw-in-ignition-component-of-rhel-9-4-sap-solutio-37da88</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/flaw-in-ignition-component-of-rhel-9-4-sap-solutio-37da88</guid>
-      <description><![CDATA[A flaw in the ignition component of Red Hat Enterprise Linux 9.4 SAP Solutions permits local privilege escalation. The issue stems from improper input validation; CVSS scores 7.0‑8.5 and a public PoC confirm exploitability, making it a high‑risk vulnerability. Red Hat released an update; apply the patch immediately to remediate the vulnerability today.]]></description>
-      <pubDate>Tue, 27 Oct 2026 00:05:13 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:90518">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>University of Copenhagen Data Breach Exposes 525,000 Personal Records</title>
-      <link>https://secubuzz.com/news/university-of-copenhagen-data-breach-exposes-525-0-59b7e3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/university-of-copenhagen-data-breach-exposes-525-0-59b7e3</guid>
-      <description><![CDATA[Hackers accessed a test environment at the University of Copenhagen, exposing personal data of 525,000 individuals. The breach involved unauthorized entry into a non-production system, revealing names, addresses, and student IDs. The university has notified affected parties and is conducting a forensic investigation, urging users to monitor for identity theft.]]></description>
-      <pubDate>Mon, 26 Oct 2026 22:20:36 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/university-of-copenhagen-data-breach-exposes-data-of-525-000-people/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Cloudflare Workers AI GLM‑5.3 KV Cache Exposure</title>
-      <link>https://secubuzz.com/news/cloudflare-workers-ai-glm-5-3-kv-cache-exposure-5ff437</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-workers-ai-glm-5-3-kv-cache-exposure-5ff437</guid>
-      <description><![CDATA[A configuration mismatch in Cloudflare Workers AI’s GLM‑5.3 model exposed KV cache pages across requests via an SGLang bug. The flaw allowed unauthenticated readers to retrieve sensitive session data, creating a cross‑request information disclosure with potential credential leakage. Cloudflare released a patch correcting the SGLang configuration and recommends updating to the latest Workers AI runtime to mitigate the exposure.]]></description>
-      <pubDate>Mon, 26 Oct 2026 22:01:23 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/kv-cache-exposure-remediation/">Cloudflare Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Nvidia Executive Urges CISOs to Own AI Risks</title>
-      <link>https://secubuzz.com/news/nvidia-executive-urges-cisos-to-own-ai-risks-1d1431</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/nvidia-executive-urges-cisos-to-own-ai-risks-1d1431</guid>
-      <description><![CDATA[Nvidia security executive Mark Weatherford emphasized that CISOs must guide business leaders in evaluating AI benefits and risks. The briefing highlighted that organizations deploying AI must retain ownership of associated security responsibilities and risk mitigation. No vendor patch or technical fix is required; the focus remains on governance and risk management practices.]]></description>
-      <pubDate>Mon, 26 Oct 2026 21:44:33 GMT</pubDate>
-      <source url="https://www.darkreading.com/cybersecurity-careers/risks-rewards-ai-redefining-ciso-role">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Former Pentester Uses ARTEX AI to Steal 8.2 Million Records</title>
-      <link>https://secubuzz.com/news/former-pentester-uses-artex-ai-to-steal-8-2-millio-7e6d07</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/former-pentester-uses-artex-ai-to-steal-8-2-millio-7e6d07</guid>
-      <description><![CDATA[A former penetration tester employed the ARTEX AI pentesting framework to compromise over 90 South Korean organizations, exfiltrating 8.2 million data records. The operation leveraged automated vulnerability discovery and credential harvesting, enabling attackers to bypass authentication controls without manual intervention. South Korean police identified seven suspects; organizations should review access controls, monitor anomalous data exfiltration, and apply security patches.]]></description>
-      <pubDate>Mon, 26 Oct 2026 21:08:28 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/former-pentester-used-artex-ai-to-steal-82-million-data-records/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Texas Sues OpenAI Over Alleged Deceptive AI Safety Claims</title>
-      <link>https://secubuzz.com/news/texas-sues-openai-over-alleged-deceptive-ai-safety-79c7fc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/texas-sues-openai-over-alleged-deceptive-ai-safety-79c7fc</guid>
-      <description><![CDATA[Texas files a lawsuit against OpenAI alleging deceptive marketing of its AI safety claims, targeting the company’s CEO under state trade‑practice laws. The suit seeks personal liability for founder Sam Altman and demands regulatory reforms and substantial fines for consumer deception. OpenAI has not yet responded, but the case could prompt stricter oversight of AI marketing practices across the industry.]]></description>
-      <pubDate>Mon, 26 Oct 2026 21:03:00 GMT</pubDate>
-      <source url="https://therecord.media/texas-sues-openai-deceiving-customers">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Hackers Exploit PHP2Shell Vulnerability to Target Universities and Businesses</title>
-      <link>https://secubuzz.com/news/hackers-exploit-php2shell-vulnerability-to-target-56d3fb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-php2shell-vulnerability-to-target-56d3fb</guid>
-      <description><![CDATA[Hackers are exploiting the PHP2Shell vulnerability, using publicly available code to compromise PHP‑based websites at universities and businesses. The flaw, identified as CVE-2026-109618 and CVE-2026-109619, has a CVSS v4.0 score of 9.2, enabling remote code execution without authentication. Administrators should apply the vendor‑issued patches immediately and disable exposed PHP functions to mitigate the risk.]]></description>
-      <pubDate>Mon, 26 Oct 2026 20:29:21 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/public-php2shell-exploit-code/">Cyber Security News</source>
       <category>CVE</category>
     </item>
   </channel>

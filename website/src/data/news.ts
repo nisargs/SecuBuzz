@@ -11,6 +11,116 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "fbi-seizes-domain-of-hosting-provider-allegedly-fa-57e04e",
+    "title": "FBI Seizes Domain of Hosting Provider Allegedly Facilitating Child Abuse and Money Laundering",
+    "summary": "The FBI seized the domain of a bullet‑proof hosting provider that allegedly facilitated child sexual abuse material distribution and money laundering. The operation targeted the provider’s infrastructure, disrupting its services and preventing further criminal activity through its hosting network. No public patch is required; security teams should monitor for related domain registrations and enforce strict domain registration policies.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/fbi-seizure-csam-virtualine",
+    "publishedAt": "2026-10-28T12:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fbi-seizes-domain-of-hosting-provider-allegedly-fa",
+      "article-57e04e",
+      "57e04e",
+      "fbi-seizes-domain-of-hosting-provider-allegedly-facilitating"
+    ]
+  },
+  {
+    "slug": "adobe-issues-patches-for-eight-critical-campaign-c-533abd",
+    "title": "Adobe Issues Patches for Eight Critical Campaign Classic Vulnerabilities Including CVE-2026-104351",
+    "summary": "Adobe released patches for eight critical Campaign Classic vulnerabilities, including CVE-2026-104351, a code injection flaw that could enable arbitrary code execution. The flaw carries a CVSS score of 9.9, indicating a high‑risk remote code execution vector that could bypass security features and elevate privileges. Adobe has issued the updates; users should apply patches immediately and verify installation to mitigate exploitation.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/adobe-fixes-8-critical-campaign-classic.html",
+    "publishedAt": "2026-10-28T11:15:51.000Z",
+    "cves": [
+      "CVE-2026-104351"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "adobe-issues-patches-for-eight-critical-campaign-c",
+      "article-533abd",
+      "533abd",
+      "adobe-issues-patches-for-eight-critical-campaign-classic-vul"
+    ]
+  },
+  {
+    "slug": "hackers-compromise-camera-management-software-to-d-50255f",
+    "title": "Hackers Compromise Camera Management Software to Deploy Malware on Windows Computers",
+    "summary": "Hackers compromised a camera management application to deploy malware on Windows PCs, leveraging a legitimate Microsoft program to execute malicious code and maintain persistence. The attack chain exploited the software’s Windows authentication integration, enabling attackers to bypass security controls and execute code remotely. Apply vendor patches and limit camera software privileges immediately.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/camera-management-software/",
+    "publishedAt": "2026-10-28T11:03:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-compromise-camera-management-software-to-d",
+      "article-50255f",
+      "50255f",
+      "hackers-compromise-camera-management-software-to-deploy-malw"
+    ]
+  },
+  {
+    "slug": "long-hidden-flaws-patched-in-epics-research-facili-3ce2ad",
+    "title": "Long-Hidden Flaws Patched in EPICS Research Facility Control Software",
+    "summary": "Four previously undisclosed EPICS Base flaws were identified in research facility control software used by particle accelerators and fusion laboratories. The vulnerabilities could allow attackers to crash critical control processes, potentially disrupting experimental operations, but no evidence of exploitation was reported. Patches have been released by the EPICS project; operators should update their systems promptly to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/long-hidden-flaws-patched-in-epics-research-facility-control-software/",
+    "publishedAt": "2026-10-28T10:48:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "long-hidden-flaws-patched-in-epics-research-facili",
+      "article-3ce2ad",
+      "3ce2ad",
+      "long-hidden-flaws-patched-in-epics-research-facility-control"
+    ]
+  },
+  {
+    "slug": "skyw4lker-phishing-campaign-targets-american-organ-4e2af0",
+    "title": "Skyw4lker Phishing Campaign Targets American Organizations",
+    "summary": "Skyw4lker is a device code phishing campaign that targets American organizations by exploiting legitimate cloud services and authentication mechanisms to gain corporate account access. The attack bypasses traditional credential theft, leveraging trusted workflows and leaving fewer obvious signs, which hampers detection. Security teams should monitor anomalous device code requests, enforce multi‑factor authentication, and apply vendor patches to mitigate this vector.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/american-organizations-under-attack.html",
+    "publishedAt": "2026-10-28T10:30:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "skyw4lker-phishing-campaign-targets-american-organ",
+      "article-4e2af0",
+      "4e2af0",
+      "skyw4lker-phishing-campaign-targets-american-organizations"
+    ]
+  },
+  {
+    "slug": "interpol-s-operation-serengeti-nets-1-462-arrests-130710",
+    "title": "Interpol’s Operation Serengeti Nets 1,462 Arrests and $105M Recovery",
+    "summary": "Interpol's Operation Serengeti, now in its third iteration, resulted in 1,462 arrests across 20 African countries and the US, recovering $105 million in stolen funds. The crackdown demonstrates international cooperation against cybercrime syndicates that funnel illicit proceeds into global financial systems. Law enforcement agencies should continue joint investigations, share threat intelligence, and enforce asset forfeiture to disrupt future operations.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/third-serengeti-sweep-1400-arrests-investigations-mature",
+    "publishedAt": "2026-10-28T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "interpol-s-operation-serengeti-nets-1-462-arrests",
+      "article-130710",
+      "130710",
+      "interpol-s-operation-serengeti-nets-1-462-arrests-and-105m-r"
+    ]
+  },
+  {
     "slug": "nist-roadmap-to-retire-quantum-vulnerable-encrypti-6711e9",
     "title": "NIST Roadmap to Retire Quantum‑Vulnerable Encryption",
     "summary": "NIST released a roadmap to retire quantum‑vulnerable encryption, targeting sensitive federal systems with earlier deadlines. The plan identifies legacy cryptographic algorithms that are susceptible to quantum attacks and outlines transition milestones, but no specific CVE is cited. Organizations should begin migrating to post‑quantum algorithms per NIST IR 8547, applying recommended updates and monitoring compliance.",
@@ -140,6 +250,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "artem-stryzhak-pleads-guilty-to-ransomware-operato-2da8f1",
+    "title": "Artem Stryzhak Pleads Guilty to Ransomware Operator Charges",
+    "summary": "Ukrainian national Artem Stryzhak pleaded guilty to charges linked to participation in at least two ransomware groups, including Nefilim and Hive. The case underscores legal action against operators behind Nefilim and Hive ransomware, highlighting international cooperation. Courts imposed a five‑year-plus sentence, underscoring the judiciary's firm stance against ransomware operations worldwide.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/nefilim-hive-ransomware-operator-70-months-prison",
+    "publishedAt": "2026-10-27T20:40:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "artem-stryzhak-pleads-guilty-to-ransomware-operato",
+      "article-2da8f1",
+      "2da8f1",
+      "artem-stryzhak-pleads-guilty-to-ransomware-operator-charges"
+    ]
+  },
+  {
     "slug": "chrome-156-for-android-released-with-security-fixe-45fb25",
     "title": "Chrome 156 for Android Released with Security Fixes",
     "summary": "Chrome 156 (156.0.8078.73) for Android has been released, incorporating stability and performance improvements alongside the same security fixes present in the corresponding desktop releases. The update addresses previously identified vulnerabilities through standard patching procedures, ensuring consistency across platforms. Users should install the new version via Google Play to maintain up‑to‑date protection and mitigate any known exploits.",
@@ -155,6 +283,24 @@ export const news: NewsBrief[] = [
       "article-45fb25",
       "45fb25",
       "chrome-156-for-android-released-with-security-fixes"
+    ]
+  },
+  {
+    "slug": "google-chromeos-beta-channel-updated-to-os-16852-1-315562",
+    "title": "Google ChromeOS Beta Channel Updated to OS 16852.15.0",
+    "summary": "Google ChromeOS Beta channel is updated to OS version 16852.15.0 and Browser version 157.0.8103.23, affecting most ChromeOS devices. The update includes bug fixes and performance improvements, with users encouraged to report new issues via the ChromeOS communities or bug filing channels. No security patches are disclosed, and the update is available for immediate installation through the standard channel upgrade process.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "http://chromereleases.googleblog.com/feeds/6615525151673996673/comments/default",
+    "publishedAt": "2026-10-27T19:39:25.377Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-chromeos-beta-channel-updated-to-os-16852-1",
+      "article-315562",
+      "315562",
+      "google-chromeos-beta-channel-updated-to-os-16852-15-0"
     ]
   },
   {
@@ -191,6 +337,42 @@ export const news: NewsBrief[] = [
       "article-13cec4",
       "13cec4",
       "microsoft-releases-windows-oob-updates-to-distrust-emudhra-c"
+    ]
+  },
+  {
+    "slug": "red-hat-openshift-container-platform-4-16-74-secur-37e481",
+    "title": "Red Hat OpenShift Container Platform 4.16.74 Security Update",
+    "summary": "Red Hat released OpenShift Container Platform 4.16.74, addressing multiple bugs and adding enhancements that impact the platform’s security posture. The update includes a security fix for an unspecified vulnerability, with Red Hat Product Security rating the impact as Important and providing CVSS scores via referenced CVE links. Users should apply the 4.16.74 update immediately through the standard Red Hat update channels to mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89714",
+    "publishedAt": "2026-10-27T18:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-openshift-container-platform-4-16-74-secur",
+      "article-37e481",
+      "37e481",
+      "red-hat-openshift-container-platform-4-16-74-security-update"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-critical-update-for-openshift-con-37da92",
+    "title": "Red Hat Releases Critical Update for OpenShift Container Platform 4.12.102",
+    "summary": "Red Hat released a critical security update for OpenShift Container Platform 4.12.102, addressing multiple bugs that could compromise container workloads. The update carries a security impact rated Critical, with CVSS base scores available for each vulnerability referenced in the advisory. Users should apply the 4.12.102 release immediately to mitigate the identified risks.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:90272",
+    "publishedAt": "2026-10-27T17:59:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-critical-update-for-openshift-con",
+      "article-37da92",
+      "37da92",
+      "red-hat-releases-critical-update-for-openshift-container-pla"
     ]
   },
   {
@@ -783,6 +965,23 @@ export const news: NewsBrief[] = [
       "article-2b6599",
       "2b6599",
       "cve-2026-111497-enables-remote-code-execution-in-php-windows"
+    ]
+  },
+  {
+    "slug": "magento-cms-skimmer-exploit-compromises-953-stores-7aa7f5",
+    "title": "Magento CMS Skimmer Exploit Compromises 953 Stores",
+    "summary": "Attackers exploited a flaw in Magento CMS, injecting JavaScript skimmers via cms_block poisoning and PolyShell RCE, compromising over 953 e‑commerce stores. The flaw allows arbitrary code execution via cms_block, enabling PolyShell payloads; the exploit is actively used in the wild with no public PoC. Magento has released a patch; administrators should apply the latest update and disable unused cms_block modules.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/magento-cms-skimmer-how-to-detect-block-953-store-attack",
+    "publishedAt": "2026-10-27T00:58:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "magento-cms-skimmer-exploit-compromises-953-stores",
+      "article-7aa7f5",
+      "7aa7f5"
     ]
   },
   {
@@ -6324,202 +6523,6 @@ export const news: NewsBrief[] = [
       "article-4fee9a",
       "4fee9a",
       "agents-are-your-newest-insiders-security-must-move-at-their-"
-    ]
-  },
-  {
-    "slug": "sextortion-conspiracy-leads-to-tragic-loss-245f35",
-    "title": "Sextortion Conspiracy Leads to Tragic Loss",
-    "summary": "A sextortion plot targeted the son of John DeMay, culminating in the victim’s suicide. The Lock and Code podcast discusses the conspiracy’s details and the emotional impact on the family. No technical exploitation or data breach is reported; the incident is a personal crime case.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/podcast/2026/10/a-sextortion-conspiracy-killed-his-son-lock-and-code-s07e21",
-    "publishedAt": "2026-10-19T12:10:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sextortion-conspiracy-leads-to-tragic-loss",
-      "article-245f35",
-      "245f35"
-    ]
-  },
-  {
-    "slug": "salesforce-agentforce-email-to-case-governance-exp-1b7c8c",
-    "title": "Salesforce Agentforce Email-to-Case Governance Exploitation",
-    "summary": "Salesforce Agentforce recommends using a Flow to trigger agents on record creation or case updates. Email-to-Case and Web-to-Case convert inbound messages into case records. When chained with a Flow, these standard features can bypass governance controls designed for software, exposing potential policy violations.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/from-email-to-case-to-boardroom-how.html",
-    "publishedAt": "2026-10-19T11:50:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "salesforce-agentforce-email-to-case-governance-exp",
-      "article-1b7c8c",
-      "1b7c8c",
-      "salesforce-agentforce-email-to-case-governance-exploitation"
-    ]
-  },
-  {
-    "slug": "new-teams-based-phishing-domain-targets-workplace-13ce99",
-    "title": "New Teams‑Based Phishing Domain Targets Workplace Logins",
-    "summary": "A newly registered domain, teams‑cloud.live, mimics Microsoft Teams’ login page. Security researcher Steven Lim flagged it five days after registration. The site harvests credentials from unsuspecting workplace users. Organizations should block the domain to prevent credential theft before any data is compromised.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/teams-domain-login-page/",
-    "publishedAt": "2026-10-19T11:40:57.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "new-teams-based-phishing-domain-targets-workplace",
-      "article-13ce99",
-      "13ce99",
-      "new-teams-based-phishing-domain-targets-workplace-logins"
-    ]
-  },
-  {
-    "slug": "vision-language-models-solve-captchas-without-task-7d9446",
-    "title": "Vision‑Language Models Solve CAPTCHAs Without Task‑Specific Training",
-    "summary": "Researchers paired a fine‑tuned YOLOv8 detector with an open‑weight vision‑language model, routing confidence‑based decisions. The system solves 16 CAPTCHA classes with 85.4% overall accuracy, operating solely from screenshots and OS input events, eliminating browser automation or DOM access.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Schneier on Security",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/training-ais-to-solve-captchas.html",
-    "publishedAt": "2026-10-19T11:07:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "vision-language-models-solve-captchas-without-task",
-      "article-7d9446",
-      "7d9446",
-      "vision-language-models-solve-captchas-without-task-specific-"
-    ]
-  },
-  {
-    "slug": "open-weight-ai-increases-enterprise-security-respo-5d1d4b",
-    "title": "Open-Weight AI Increases Enterprise Security Responsibility",
-    "summary": "Microsoft and NVIDIA warn that running open-weight AI models on in‑house infrastructure shifts safety and security controls from providers to enterprises. Open-weight models expose weights for download, inspection, modification, and execution, requiring organizations to implement their own safeguards and monitoring.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/19/open-weight-ai-model-risks-microsoft-nvidia/",
-    "publishedAt": "2026-10-19T11:04:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "open-weight-ai-increases-enterprise-security-respo",
-      "article-5d1d4b",
-      "5d1d4b",
-      "open-weight-ai-increases-enterprise-security-responsibility"
-    ]
-  },
-  {
-    "slug": "anthropic-acquires-confidential-ai-startup-opaque-679039",
-    "title": "Anthropic Acquires Confidential AI Startup Opaque Systems",
-    "summary": "Anthropic has acquired Opaque Systems, a confidential AI startup that developed hardware‑protected technology enabling AI systems to process sensitive data while keeping it secure. The acquisition expands Anthropic’s capabilities in secure AI data handling, potentially enhancing privacy and compliance for future AI deployments.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/anthropic-acquires-confidential-ai-startup-opaque-systems/",
-    "publishedAt": "2026-10-19T07:45:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "anthropic-acquires-confidential-ai-startup-opaque",
-      "article-679039",
-      "679039",
-      "anthropic-acquires-confidential-ai-startup-opaque-systems"
-    ]
-  },
-  {
-    "slug": "broadcom-wi-fi-flaw-lets-nearby-attackers-run-code-79de2c",
-    "title": "Broadcom Wi‑Fi Flaw Lets Nearby Attackers Run Code as Root on Routers",
-    "summary": "A flaw in Broadcom’s Wi‑Fi setup software allows an attacker within radio range to execute code with root privileges on Broadcom‑based routers without a network password or pairing step. The vulnerability was demonstrated against home gateways from three Belgian ISPs, including reading the device’s Wi‑Fi password.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/unpatched-broadcom-wi-fi-flaw-lets.html",
-    "publishedAt": "2026-10-19T06:29:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "broadcom-wi-fi-flaw-lets-nearby-attackers-run-code",
-      "article-79de2c",
-      "79de2c",
-      "broadcom-wi-fi-flaw-lets-nearby-attackers-run-code-as-root-o"
-    ]
-  },
-  {
-    "slug": "rpo-and-rto-explained-with-a-real-disaster-recover-3b7498",
-    "title": "RPO and RTO Explained with a Real Disaster Recovery Example",
-    "summary": "Matthew Burden, CEO of BlackBox Hosting, explains the difference between recovery point objective (RPO) and recovery time objective (RTO). RPO defines the maximum data loss in time, while RTO defines the maximum downtime a business can tolerate. The video emphasizes that backups do not guarantee quick recovery and that quick recovery is ineffective if data is stale.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/19/rpo-rto-video/",
-    "publishedAt": "2026-10-19T05:00:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rpo-and-rto-explained-with-a-real-disaster-recover",
-      "article-3b7498",
-      "3b7498",
-      "rpo-and-rto-explained-with-a-real-disaster-recovery-example"
-    ]
-  },
-  {
-    "slug": "half-of-ai-bot-traffic-targeting-websites-originat-f45514",
-    "title": "Half of AI Bot Traffic Targeting Websites Originates from Meta",
-    "summary": "DataDome’s AI Traffic Report Q3 2026 shows that 41.5% of AI agent traffic, nearly 25 billion requests, comes from Meta’s Muse. In the first 12 days of Muse’s full availability, 29.1 million requests were recorded, with 99.3% originating from cloud and CDN infrastructure. The report highlights Meta’s significant share of AI bot traffic.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/19/datadome-ai-agent-traffic-report/",
-    "publishedAt": "2026-10-19T04:30:52.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "half-of-ai-bot-traffic-targeting-websites-originat",
-      "article-f45514",
-      "f45514",
-      "half-of-ai-bot-traffic-targeting-websites-originates-from-me"
-    ]
-  },
-  {
-    "slug": "ransomware-threats-extend-to-employees-families-5e5507",
-    "title": "Ransomware Threats Extend to Employees’ Families",
-    "summary": "Ransomware actors now target employees’ family members or friends, according to a 2026 Semperis report. The survey of 1,200 IT and security professionals found that 37% of organizations experienced such threats, indicating a shift beyond the workplace into personal networks.",
-    "category": "Ransomware",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/19/semperis-ransomware-employee-safety-report/",
-    "publishedAt": "2026-10-19T04:00:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ransomware-threats-extend-to-employees-families",
-      "article-5e5507",
-      "5e5507"
-    ]
-  },
-  {
-    "slug": "servicenow-user-enumeration-via-graph-reconnaissan-bd7e3a",
-    "title": "ServiceNow User Enumeration via Graph Reconnaissance",
-    "summary": "Researchers identified a technique that leverages graph reconnaissance to enumerate ServiceNow users. Attackers can map user relationships and identify valid accounts, facilitating targeted credential attacks. Mitigation involves restricting API access, enforcing least privilege, and monitoring anomalous enumeration activity.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Sophos Threat Research",
-    "sourceUrl": "https://www.sophos.com/en-us/blog/graph-reconnaissance-and-servicenow-user-enumeration-in-a-modern-identity-intrusion",
-    "publishedAt": "2026-10-19T00:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "servicenow-user-enumeration-via-graph-reconnaissan",
-      "article-bd7e3a",
-      "bd7e3a",
-      "servicenow-user-enumeration-via-graph-reconnaissance"
     ]
   }
 ];
