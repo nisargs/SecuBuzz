@@ -122,7 +122,7 @@ export const termsSections: LegalSection[] = [
     id: 'sources',
     heading: 'Monitored Sources & Feeds',
     body: [
-      'SecuBuzz indexes public cybersecurity reporting, official bulletins, and threat research from 27 independent newsrooms, government CERT advisories, and threat research organizations for its 60-word news briefs. In addition, SecuBuzz ingests authoritative security advisories directly from the CISA Known Exploited Vulnerabilities (KEV) catalog (cisa.gov) and the GitHub Security Advisory Database (github.com/advisories), with exploit likelihood percentiles powered by FIRST.org EPSS.'
+      'SecuBuzz indexes public cybersecurity reporting, official bulletins, and threat research from 43 independent newsrooms, vendor PSIRTs, government CERT advisories, and threat research organizations for its 60-word news briefs. In addition, SecuBuzz ingests authoritative security advisories directly from the CISA Known Exploited Vulnerabilities (KEV) catalog (cisa.gov) and the GitHub Security Advisory Database (github.com/advisories), with exploit likelihood percentiles powered by FIRST.org EPSS.'
     ],
     sourcesList: [
       { name: 'The Hacker News', domain: 'thehackernews.com', url: 'https://thehackernews.com' },
@@ -152,6 +152,22 @@ export const termsSections: LegalSection[] = [
       { name: 'Malwarebytes Labs', domain: 'www.malwarebytes.com/blog', url: 'https://www.malwarebytes.com/blog' },
       { name: 'ESET WeLiveSecurity', domain: 'www.welivesecurity.com', url: 'https://www.welivesecurity.com' },
       { name: 'Cyber Security News', domain: 'cybersecuritynews.com', url: 'https://cybersecuritynews.com' },
+      { name: 'Google Project Zero', domain: 'projectzero.google', url: 'https://projectzero.google' },
+      { name: 'GreyNoise Labs', domain: 'www.greynoise.io', url: 'https://www.greynoise.io/blog' },
+      { name: 'Palo Alto Networks PSIRT', domain: 'security.paloaltonetworks.com', url: 'https://security.paloaltonetworks.com' },
+      { name: 'Fortinet FortiGuard PSIRT', domain: 'fortiguard.fortinet.com', url: 'https://fortiguard.fortinet.com' },
+      { name: 'Cisco PSIRT', domain: 'sec.cloudapps.cisco.com', url: 'https://sec.cloudapps.cisco.com/security/center/publicationListing.x' },
+      { name: 'Ivanti Security Advisories', domain: 'www.ivanti.com', url: 'https://www.ivanti.com/blog/topics/security-advisory' },
+      { name: 'Microsoft MSRC', domain: 'msrc.microsoft.com', url: 'https://msrc.microsoft.com/update-guide' },
+      { name: 'Red Hat Security Advisories', domain: 'access.redhat.com', url: 'https://access.redhat.com/security/security-updates/' },
+      { name: 'Google Chrome Releases', domain: 'chromereleases.googleblog.com', url: 'https://chromereleases.googleblog.com' },
+      { name: 'AWS Security Bulletins', domain: 'aws.amazon.com/security', url: 'https://aws.amazon.com/security/security-bulletins/' },
+      { name: 'GitLab Security Releases', domain: 'about.gitlab.com', url: 'https://about.gitlab.com/releases/categories/releases/' },
+      { name: 'Ubuntu Security Notices', domain: 'ubuntu.com/security', url: 'https://ubuntu.com/security/notices' },
+      { name: 'Apple Security Updates', domain: 'support.apple.com', url: 'https://support.apple.com/en-us/HT201222' },
+      { name: 'GitHub Security Blog', domain: 'github.blog/security', url: 'https://github.blog/category/security/' },
+      { name: 'ZDI Advisories', domain: 'www.zerodayinitiative.com', url: 'https://www.zerodayinitiative.com/advisories/published/' },
+      { name: 'CERT-EU Security Advisories', domain: 'cert.europa.eu', url: 'https://cert.europa.eu/publications/security-advisories/' },
     ]
   },
   {

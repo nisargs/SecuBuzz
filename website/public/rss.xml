@@ -5,8 +5,116 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Oct 2026 00:33:47 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 01:04:36 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>US DOJ Indicts Malaysian National in Madagascar Scam Operation</title>
+      <link>https://secubuzz.com/news/us-doj-indicts-malaysian-national-in-madagascar-sc-7387bf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/us-doj-indicts-malaysian-national-in-madagascar-sc-7387bf</guid>
+      <description><![CDATA[The U.S. Department of Justice indicted a Malaysian national involved in a scam center operation that targeted victims in Madagascar. The indictment also covers four other foreign nationals and highlights the expanding global reach of scam center industries across multiple jurisdictions. Law enforcement agencies should monitor cross-border scam operations and coordinate international investigations to disrupt similar illicit networks.]]></description>
+      <pubDate>Tue, 27 Oct 2026 19:30:00 GMT</pubDate>
+      <source url="https://therecord.media/malaysian-national-indicted-after-scam-centers-raid-madagascar">The Record</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Microsoft Releases Windows OOB Updates to Distrust eMudhra Certificates</title>
+      <link>https://secubuzz.com/news/microsoft-releases-windows-oob-updates-to-distrust-13cec4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-releases-windows-oob-updates-to-distrust-13cec4</guid>
+      <description><![CDATA[Microsoft released out‑of‑band Windows updates to remove trust in certificates issued by the compromised eMudhra certificate authority, protecting systems that do not receive automatic certificate trust updates. The flaw stems from compromised CA keys that enabled attackers to actively issue fraudulent certificates, creating a potential man‑in‑the‑middle risk for TLS connections. Apply the update via Windows Update immediately.]]></description>
+      <pubDate>Tue, 27 Oct 2026 18:20:28 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-oob-updates-to-distrust-emudhra-certificates/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>CVE‑2026‑111497: Out‑of‑Bounds Write in Brotli Library</title>
+      <link>https://secubuzz.com/news/cve-2026-111497-out-of-bounds-write-in-brotli-libr-58bbdb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-111497-out-of-bounds-write-in-brotli-libr-58bbdb</guid>
+      <description><![CDATA[CVE‑2026‑111497 is a remotely exploitable out‑of‑bounds write flaw in Google’s Brotli compression library that affects any application decompressing Brotli data via node:zlib. The flaw, also known as Node2Shell, allows attackers to corrupt process memory, potentially causing crashes or leaking sensitive data, and a PoC exists. Google and Node.js have issued patches; security teams should upgrade to Brotli or apply the node:zlib fix immediately.]]></description>
+      <pubDate>Tue, 27 Oct 2026 17:38:51 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/27/node2shell-broccoli2shell-vulnerability-cve-2026-111497/">Help Net Security</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Oracle PeopleSoft SSRF Exploit CVE-2026-35273</title>
+      <link>https://secubuzz.com/news/oracle-peoplesoft-ssrf-exploit-cve-2026-35273-6873a1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/oracle-peoplesoft-ssrf-exploit-cve-2026-35273-6873a1</guid>
+      <description><![CDATA[Oracle PeopleSoft’s CVE‑2026‑35273 SSRF flaw lets attackers forge internal requests that bypass validateClient checks. The vulnerability supports remote code execution with a CVSS of 9.2, and ShinyHunters has confirmed widespread exploitation. Oracle issued a critical patch; teams should apply it immediately and disable external request capabilities as a temporary mitigation.]]></description>
+      <pubDate>Tue, 27 Oct 2026 16:39:07 GMT</pubDate>
+      <source url="https://www.thezdi.com/blog/2026/10/20/cve-2026-35273-ssrf-to-rce-in-oracle-peoplesoft">Zero Day Initiative</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Warp Breach Exposes Agent Logs and Telemetry Data</title>
+      <link>https://secubuzz.com/news/warp-breach-exposes-agent-logs-and-telemetry-data-6ed322</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/warp-breach-exposes-agent-logs-and-telemetry-data-6ed322</guid>
+      <description><![CDATA[A breach exposed Warp agentic development environment users’ decision logs and telemetry data after a third‑party vendor was compromised. The compromise leveraged unauthorized access to the vendor’s infrastructure, allowing attackers to retrieve sensitive operational telemetry and user interaction records. Warp has issued a security advisory and recommends affected users apply the vendor’s latest patch and monitor account activity for anomalies.]]></description>
+      <pubDate>Tue, 27 Oct 2026 16:15:39 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/warp-discloses-breach-exposing-ai-agent-logs-user-telemetry-data/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Five Election Scams to Watch Out For</title>
+      <link>https://secubuzz.com/news/five-election-scams-to-watch-out-for-ebdb8b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/five-election-scams-to-watch-out-for-ebdb8b</guid>
+      <description><![CDATA[Five election‑related scam campaigns target voters with deceptive messages that prompt registration, donations, surveys, or merchandise purchases. These phishing attempts exploit social engineering tactics, embedding malicious links or payment requests that can compromise personal data and financial information. Security teams should verify sender authenticity, use link scanners, and educate users to avoid clicking or providing credentials on suspicious election communications.]]></description>
+      <pubDate>Tue, 27 Oct 2026 15:36:09 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/scams/2026/10/five-election-scams-to-watch-out-for">Malwarebytes Labs</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Vendor Key Leak Puts Data of 238,000 Denver Health Plan Members at Risk</title>
+      <link>https://secubuzz.com/news/vendor-key-leak-puts-data-of-238-000-denver-health-474ada</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/vendor-key-leak-puts-data-of-238-000-denver-health-474ada</guid>
+      <description><![CDATA[A leaked SquareML access key potentially exposed a database containing personal and health information of 238,000 Denver Health Plan members. The breach resulted from accidental key disclosure, allowing unauthenticated read access to sensitive records, including medical histories and contact details. Immediate remediation requires revoking the compromised key, rotating all credentials, and auditing access controls to prevent recurrence.]]></description>
+      <pubDate>Tue, 27 Oct 2026 13:30:28 GMT</pubDate>
+      <source url="https://www.securityweek.com/vendor-key-leak-puts-data-of-238000-denver-health-plan-members-at-risk/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>PHP2Shell: Exploitation Attempts and Remediation Trends</title>
+      <link>https://secubuzz.com/news/php2shell-exploitation-attempts-and-remediation-tr-5582d7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/php2shell-exploitation-attempts-and-remediation-tr-5582d7</guid>
+      <description><![CDATA[PHP2Shell, a PHP-based web shell, has been targeted for exploitation attempts, but no successful attacks have been reported to date. The vulnerability, identified as CVE-2026-109618, remains unexploited, with attackers lacking a working exploit or privileges to achieve remote code execution. Security teams should apply the vendor’s patch, update PHP to the latest stable release, and monitor for anomalous shell activity.]]></description>
+      <pubDate>Tue, 27 Oct 2026 13:21:45 GMT</pubDate>
+      <source url="https://www.wiz.io/blog/php2shell-exploitation-so-far">Wiz Research</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Yoba Malware Distributed via Signed AI Tool Binaries</title>
+      <link>https://secubuzz.com/news/yoba-malware-distributed-via-signed-ai-tool-binari-7e8a7a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/yoba-malware-distributed-via-signed-ai-tool-binari-7e8a7a</guid>
+      <description><![CDATA[A campaign leverages signed ChatGPT and Claude binaries to deliver the Yoba malware chain through fake GitHub projects masquerading as AI desktop applications. The attackers embed malicious code in these binaries, exploiting trust in signed software to execute payloads on victim systems. Security teams should verify signatures, monitor for anomalous binaries, and apply updated endpoint protection rules.]]></description>
+      <pubDate>Tue, 27 Oct 2026 13:03:27 GMT</pubDate>
+      <source url="https://research.checkpoint.com/2026/tricks-from-the-past-deployed-via-signed-chatgpt-and-claude-binaries/">Check Point Research</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Cloudflare Launches PHP Capture the Flag Challenge for WAF Testing</title>
+      <link>https://secubuzz.com/news/cloudflare-launches-php-capture-the-flag-challenge-3764d5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-launches-php-capture-the-flag-challenge-3764d5</guid>
+      <description><![CDATA[Cloudflare has introduced a PHP Capture the Flag challenge integrated with its Bug Bounty program to evaluate the effectiveness of its Web Application Firewall. Researchers are invited to bypass the WAF defenses and capture the flag, providing insights into potential weaknesses. Participants should follow the challenge guidelines and report findings through the official bug bounty portal.]]></description>
+      <pubDate>Tue, 27 Oct 2026 13:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/php-ctf/">Cloudflare Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Cloudflare Radar Records Widespread Internet Outages in Q3 2026</title>
+      <link>https://secubuzz.com/news/cloudflare-radar-records-widespread-internet-outag-67c23b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-radar-records-widespread-internet-outag-67c23b</guid>
+      <description><![CDATA[Cloudflare Radar recorded widespread internet outages during Q3 2026, with power failures, natural disasters, and government shutdowns disrupting global connectivity. These events caused significant traffic degradation and service unavailability across multiple regions, highlighting the fragility of critical infrastructure. Operators should enhance redundancy, monitor power supplies, and coordinate with authorities to mitigate future disruptions.]]></description>
+      <pubDate>Tue, 27 Oct 2026 13:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/q3-2026-internet-disruption-summary/">Cloudflare Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>AI Technologies Reshape Human Intimacy, Creating New Exploitation Vectors</title>
+      <link>https://secubuzz.com/news/ai-technologies-reshape-human-intimacy-creating-ne-7d6a7c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-technologies-reshape-human-intimacy-creating-ne-7d6a7c</guid>
+      <description><![CDATA[The report highlights how AI technologies are reshaping human intimacy, blurring authenticity and enabling new exploitation vectors. AI models produce persuasive content that can deceive users, creating opportunities for social engineering and privacy breaches across digital platforms. Security teams should monitor AI-generated material, enforce verification protocols, and educate users to mitigate manipulation risks.]]></description>
+      <pubDate>Tue, 27 Oct 2026 12:40:00 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/ai/2026/10/artificial-intimacy-love-and-lies-in-the-age-of-ai">Malwarebytes Labs</source>
+      <category>General</category>
+    </item>
     <item>
       <title>PHP and Node.js Flaws Threaten Trusted Websites</title>
       <link>https://secubuzz.com/news/php-and-node-js-flaws-threaten-trusted-websites-19c656</link>
@@ -23,6 +131,15 @@
       <description><![CDATA[Microsoft Authenticator for Android had a flaw allowing permissionless malicious apps to impersonate trusted Microsoft apps and harvest work account sign‑in tokens. The vulnerability, tracked as CVE‑2026‑80097, exploits the app’s lack of permission checks, enabling credential theft without user interaction; a public PoC demonstrated the exploit. Microsoft released Authenticator 6.2606.4246, and users must update immediately to mitigate the risk.]]></description>
       <pubDate>Tue, 27 Oct 2026 12:09:50 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/microsoft-authenticator-flaw-let.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>EPICS Base Integer Overflow Vulnerability (CVE-2026-114595) Enables Remote Code Execution</title>
+      <link>https://secubuzz.com/news/epics-base-integer-overflow-vulnerability-cve-2026-41cb8a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/epics-base-integer-overflow-vulnerability-cve-2026-41cb8a</guid>
+      <description><![CDATA[An integer overflow in EPICS Base release 7.0.10 and prior allows an attacker to cause memory corruption, potentially leading to arbitrary code execution or denial‑of‑service. The flaw arises from improper handling of network request lengths, resulting in incorrect memory allocation and type confusion. EPICS has released a patch; operators should update to the latest release and monitor for anomalous activity.]]></description>
+      <pubDate>Tue, 27 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-01">CISA</source>
       <category>CVE</category>
     </item>
     <item>
@@ -339,123 +456,6 @@
       <pubDate>Mon, 26 Oct 2026 11:47:52 GMT</pubDate>
       <source url="https://www.securityweek.com/dutch-police-arrest-two-over-nfc-relay-attacks-that-drained-400000/">SecurityWeek</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Quest Diagnostics Breach Exposes Patient Records</title>
-      <link>https://secubuzz.com/news/quest-diagnostics-breach-exposes-patient-records-6242fd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/quest-diagnostics-breach-exposes-patient-records-6242fd</guid>
-      <description><![CDATA[Quest Diagnostics suffered a breach exposing personal information and patient records. The incident involved unauthorized access to the company’s database, compromising sensitive health data, though specific exploit details are not disclosed. Patients should review their records, monitor for identity theft, and follow Quest’s guidance for remediation and notify relevant authorities if suspicious activity is detected.]]></description>
-      <pubDate>Mon, 26 Oct 2026 11:34:00 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/data-breaches/2026/10/patient-records-exposed-in-quest-breach-what-you-need-to-know">Malwarebytes Labs</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>SOC Alert Overload Hinders Attack Visibility, NDR Offers Solution</title>
-      <link>https://secubuzz.com/news/soc-alert-overload-hinders-attack-visibility-ndr-o-f13606</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/soc-alert-overload-hinders-attack-visibility-ndr-o-f13606</guid>
-      <description><![CDATA[SOC teams confront a deluge of alerts that rarely disclose how an intrusion began, a challenge detailed in the article. Network detection and response platforms aggregate these alerts into a unified timeline, enabling defenders to trace attack progression. Security teams should adopt NDR solutions and integrate them with SIEMs to achieve comprehensive visibility and faster incident response.]]></description>
-      <pubDate>Mon, 26 Oct 2026 11:23:56 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/between-alerts-what-attackers-do-in.html">The Hacker News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Delve Update Addresses Medium‑Severity Vulnerability</title>
-      <link>https://secubuzz.com/news/red-hat-delve-update-addresses-medium-severity-vul-37e47c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-delve-update-addresses-medium-severity-vul-37e47c</guid>
-      <description><![CDATA[An update for the delve component in Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions addresses a security flaw that could allow unauthorized code execution via malformed input. The vulnerability’s CVSS base score is documented in the referenced CVE links, indicating a medium‑severity risk. Red Hat has released a patch; administrators should apply it immediately.]]></description>
-      <pubDate>Mon, 26 Oct 2026 10:36:51 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:89888">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat rhc Update Mitigates Remote Code Execution Risk</title>
-      <link>https://secubuzz.com/news/red-hat-rhc-update-mitigates-remote-code-execution-37e47c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-rhc-update-mitigates-remote-code-execution-37e47c</guid>
-      <description><![CDATA[An update for the rhc client in Red Hat Enterprise Linux 10.0 Extended Update Support mitigates a security vulnerability that could enable remote code execution through improperly validated configuration data. The CVSS base score for the flaw is provided in the CVE references, reflecting a medium‑severity assessment. Red Hat has issued a patch; users must install it promptly.]]></description>
-      <pubDate>Mon, 26 Oct 2026 10:34:56 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:89892">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Kali Linux 2026.3 Released with Six New Tools and Desktop Updates</title>
-      <link>https://secubuzz.com/news/kali-linux-2026-3-released-with-six-new-tools-and-25aadd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/kali-linux-2026-3-released-with-six-new-tools-and-25aadd</guid>
-      <description><![CDATA[Kali Linux 2026.3 has been released, adding six new hacking tools and updated desktop environment. The update includes refreshed build scripts and other minor improvements, expanding the distribution’s toolkit for penetration testers. Users should download the new image from the official Kali website and verify checksums to ensure integrity and compatibility.]]></description>
-      <pubDate>Mon, 26 Oct 2026 10:26:52 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/linux/kali-linux-20263-released-with-6-new-tools-desktop-updates/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Delve Security Update for RHEL 10.0 EUS</title>
-      <link>https://secubuzz.com/news/red-hat-releases-delve-security-update-for-rhel-10-37e47c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-delve-security-update-for-rhel-10-37e47c</guid>
-      <description><![CDATA[A security update for delve on Red Hat Enterprise Linux 10.0 Extended Update Support addresses multiple vulnerabilities. The vulnerabilities carry CVSS scores detailed in the CVE references, indicating moderate to high risk, but no active exploitation reported. Red Hat has released a patch; administrators should apply the update immediately to mitigate potential exploitation.]]></description>
-      <pubDate>Mon, 26 Oct 2026 09:56:07 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:89884">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Top 10 Sensitive Data Discovery Tools for 2026 Highlighted</title>
-      <link>https://secubuzz.com/news/top-10-sensitive-data-discovery-tools-for-2026-hig-28d2d0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/top-10-sensitive-data-discovery-tools-for-2026-hig-28d2d0</guid>
-      <description><![CDATA[The article lists the top ten sensitive data discovery tools for 2026, noting increased shadow data in SaaS, warehouses, and AI pipelines. It stresses that discovery must map data to identity to meet legal ownership requirements, as classification alone is insufficient. Readers should assess tools based on scoring metrics and integration with existing governance frameworks.]]></description>
-      <pubDate>Mon, 26 Oct 2026 09:46:25 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/best-data-discovery-tools/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Flatpak Security Update for RHEL 9</title>
-      <link>https://secubuzz.com/news/red-hat-issues-flatpak-security-update-for-rhel-9-37e47c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-flatpak-security-update-for-rhel-9-37e47c</guid>
-      <description><![CDATA[A security update for flatpak on Red Hat Enterprise Linux 9 addresses several vulnerabilities. The vulnerabilities have CVSS scores listed in the CVE references, suggesting moderate to high risk, with no confirmed active exploitation. Red Hat has issued a patch; users should install the update promptly to prevent potential compromise.]]></description>
-      <pubDate>Mon, 26 Oct 2026 09:41:43 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:89850">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>PHP2Shell RCE Vulnerabilities Exploited in the Wild</title>
-      <link>https://secubuzz.com/news/php2shell-rce-vulnerabilities-exploited-in-the-wil-3d2d87</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/php2shell-rce-vulnerabilities-exploited-in-the-wil-3d2d87</guid>
-      <description><![CDATA[Two critical RCE vulnerabilities (CVE-2026-109618 and CVE-2026-109619), collectively known as PHP2Shell, have been exploited in the wild against PHP applications via remote code execution. Unauthenticated attackers can run arbitrary code with web‑server privileges, enabling full system compromise. PHP releases a patch; administrators should update to the latest version or apply the vendor’s advisory to mitigate the risk.]]></description>
-      <pubDate>Mon, 26 Oct 2026 09:19:57 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/">BleepingComputer</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft 365 Token‑Replay Campaign Compromises 97 Accounts at 79 Organizations</title>
-      <link>https://secubuzz.com/news/microsoft-365-token-replay-campaign-compromises-97-780f2c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-365-token-replay-campaign-compromises-97-780f2c</guid>
-      <description><![CDATA[A Microsoft 365 token‑replay campaign captured sign‑in sessions via an adversary‑in‑the‑middle relay and replayed stolen tokens to access 97 accounts across 79 organizations. The flaw allows attackers to hijack authenticated sessions without credential theft, enabling persistent access to email and collaboration services. Microsoft has released a patch and recommends disabling legacy authentication methods immediately.]]></description>
-      <pubDate>Mon, 26 Oct 2026 08:35:51 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/microsoft-365-token-replay-attacks.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Witness: Open‑Source Framework for Verifying Software Build Provenance</title>
-      <link>https://secubuzz.com/news/witness-open-source-framework-for-verifying-softwa-29a24e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/witness-open-source-framework-for-verifying-softwa-29a24e</guid>
-      <description><![CDATA[Witness is an open‑source command‑line tool that records and signs build processes, enabling teams to verify the provenance of compiled binaries before shipping. By capturing the exact commands, inputs, and environment, Witness provides a tamper‑evident audit trail that can be validated against a policy, reducing supply‑chain risks. The tool is maintained by the Cloud Native Computing Foundation community and is freely available.]]></description>
-      <pubDate>Mon, 26 Oct 2026 07:00:45 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/26/witness-open-source-software-supply-chain-tool/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Node.js Brotli Decoder Out-of-Bounds Write Enables Remote Code Execution</title>
-      <link>https://secubuzz.com/news/node-js-brotli-decoder-out-of-bounds-write-enables-3bcda9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/node-js-brotli-decoder-out-of-bounds-write-enables-3bcda9</guid>
-      <description><![CDATA[A critical out-of-bounds write flaw in Node.js Brotli decoder permits remote code execution on Node.js 26.x, 24.x, and 22.x releases. Identified as CVE-2026-111497, the flaw scores 9.8 CVSSv3, enabling unauthenticated remote exploitation. Apply the latest Node.js security patch or upgrade to a supported version; disabling Brotli compression is a temporary fix.]]></description>
-      <pubDate>Mon, 26 Oct 2026 07:00:00 GMT</pubDate>
-      <source url="https://fortiguard.fortinet.com/psirt/FG-IR-26-187">Fortinet FortiGuard PSIRT</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Red Hat Python 3.9 Update Addresses Multiple Vulnerabilities</title>
-      <link>https://secubuzz.com/news/red-hat-python-3-9-update-addresses-multiple-vulne-37e480</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-python-3-9-update-addresses-multiple-vulne-37e480</guid>
-      <description><![CDATA[An update for python3.9 on Red Hat Enterprise Linux 9 addresses multiple security vulnerabilities identified by Red Hat Product Security. The update mitigates flaws that could allow attackers to execute arbitrary code or elevate privileges, as indicated by the CVSS base scores linked in the advisory. Red Hat recommends applying the latest python3.9 package to ensure protection.]]></description>
-      <pubDate>Mon, 26 Oct 2026 04:45:16 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:89742">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
