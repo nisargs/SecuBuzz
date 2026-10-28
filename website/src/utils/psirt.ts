@@ -41,3 +41,27 @@ export function isVendorPsirt(source?: string | null): boolean {
     s.includes('apple security')
   );
 }
+
+/**
+ * Normalizes an article's source string into a clean, human-friendly Vendor / Publisher name.
+ */
+export function getVendorFromSource(source?: string | null): string {
+  if (!source) return 'Other';
+  const s = source.trim();
+  if (/red\s*hat/i.test(s)) return 'Red Hat';
+  if (/microsoft/i.test(s)) return 'Microsoft';
+  if (/cisco/i.test(s)) return 'Cisco';
+  if (/chrome/i.test(s)) return 'Google Chrome';
+  if (/aws|amazon/i.test(s)) return 'AWS';
+  if (/ubuntu|canonical/i.test(s)) return 'Ubuntu';
+  if (/palo\s*alto/i.test(s)) return 'Palo Alto Networks';
+  if (/fortinet/i.test(s)) return 'Fortinet';
+  if (/ivanti/i.test(s)) return 'Ivanti';
+  if (/apple/i.test(s)) return 'Apple';
+  if (/gitlab/i.test(s)) return 'GitLab';
+  if (/github/i.test(s)) return 'GitHub';
+  if (/zero\s*day\s*initiative|zdi/i.test(s)) return 'ZDI';
+  if (/cert-eu/i.test(s)) return 'CERT-EU';
+  if (/splunk/i.test(s)) return 'Splunk';
+  return s;
+}

@@ -7,6 +7,7 @@ import { NewsBriefItem } from '../components/NewsBriefItem';
 import { AdvisoryListItem } from '../components/AdvisoryListItem';
 import { AppCta } from '../components/AppCta';
 import { QrModal } from '../components/QrModal';
+import { WhatsNewModal } from '../components/WhatsNewModal';
 import { homeReasons } from '../data/site';
 import { useLiveNews } from '../data/useLiveNews';
 import { useLiveAdvisories } from '../data/useLiveAdvisories';
@@ -16,6 +17,7 @@ import { Seo } from '../components/Seo';
 
 export function Home() {
   const [showHeroQr, setShowHeroQr] = useState(false);
+  const [showWhatsNew, setShowWhatsNew] = useState(false);
   const { news } = useLiveNews();
   const { advisories } = useLiveAdvisories();
   const latest = news.slice(0, 4);
@@ -47,6 +49,23 @@ export function Home() {
       <section className="border-b border-line">
         <div className="mx-auto grid max-w-site items-center gap-14 px-5 py-16 md:px-8 lg:grid-cols-[1.15fr_0.85fr] lg:py-24">
           <div>
+            {/* What's New Pill */}
+            <div className="mb-5">
+              <button
+                type="button"
+                onClick={() => setShowWhatsNew(true)}
+                className="group inline-flex items-center gap-2 rounded-full border border-accent/40 bg-accent/10 px-3.5 py-1.5 font-mono text-xs text-accent transition-all duration-150 ease-out hover:border-accent hover:bg-accent/20 cursor-pointer">
+                <span className="relative flex h-2 w-2">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
+                </span>
+                <span className="font-semibold">What's New in v1.0.3</span>
+                <span className="text-subtle">·</span>
+                <span className="text-ink transition-colors group-hover:text-accent">Vendor Radar, EPSS & AMOLED</span>
+                <ArrowRightIcon className="h-3 w-3 text-subtle transition-transform duration-150 ease-out group-hover:translate-x-0.5 group-hover:text-accent" aria-hidden="true" />
+              </button>
+            </div>
+
             <h1 className="text-[44px] font-semibold leading-[1.05] tracking-tight text-ink md:text-6xl">
               Security news in 60 words.
               <span className="block text-muted">Zero-days within hours of CISA listing them.</span>
@@ -181,6 +200,7 @@ export function Home() {
 
       <AppCta />
       <QrModal isOpen={showHeroQr} onClose={() => setShowHeroQr(false)} source="home_hero_qr" />
+      <WhatsNewModal isOpen={showWhatsNew} onClose={() => setShowWhatsNew(false)} />
     </>);
 
 }

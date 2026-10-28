@@ -6,7 +6,7 @@ import { newsCategories } from '../data/news';
 import { useLiveNews } from '../data/useLiveNews';
 import type { NewsCategory, NewsSeverity } from '../types/news';
 import { Seo } from '../components/Seo';
-import { isVendorPsirt } from '../utils/psirt';
+import { isVendorPsirt, getVendorFromSource } from '../utils/psirt';
 
 type Filter = 'All' | NewsCategory;
 type SeverityFilter = 'ALL' | NewsSeverity;
@@ -17,6 +17,7 @@ export function News() {
   const [filter, setFilter] = useState<Filter>('All');
   const [severityFilter, setSeverityFilter] = useState<SeverityFilter>('ALL');
   const [sourceFilter, setSourceFilter] = useState<SourceFilter>('ALL');
+  const [vendorFilter, setVendorFilter] = useState<string>('ALL');
   const [query, setQuery] = useState('');
   const [page, setPage] = useState(1);
   const { news } = useLiveNews();
@@ -27,6 +28,7 @@ export function News() {
       if (filter !== 'All' && b.category !== filter) return false;
       if (sourceFilter === 'PSIRT' && !isVendorPsirt(b.source)) return false;
       if (sourceFilter === 'MEDIA' && isVendorPsirt(b.source)) return false;
+      if (vendorFilter !== 'ALL' && getVendorFromSource(b.source) !== vendorFilter) return false;
       if (!q) return true;
       return (
         b.title.toLowerCase().includes(q) ||
@@ -48,7 +50,7 @@ export function News() {
       }
     }
     return counts;
-  }, [news, filter, sourceFilter, query]);
+  }, [news, filter, sourceFilter, vendorFilter, query]);
 
   const categoryCounts = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -56,6 +58,7 @@ export function News() {
       if (severityFilter !== 'ALL' && b.severity !== severityFilter) return false;
       if (sourceFilter === 'PSIRT' && !isVendorPsirt(b.source)) return false;
       if (sourceFilter === 'MEDIA' && isVendorPsirt(b.source)) return false;
+      if (vendorFilter !== 'ALL' && getVendorFromSource(b.source) !== vendorFilter) return false;
       if (!q) return true;
       return (
         b.title.toLowerCase().includes(q) ||
@@ -73,13 +76,14 @@ export function News() {
       }
     }
     return counts;
-  }, [news, severityFilter, sourceFilter, query]);
+  }, [news, severityFilter, sourceFilter, vendorFilter, query]);
 
   const sourceCounts = useMemo(() => {
     const q = query.trim().toLowerCase();
     const candidateNews = news.filter((b) => {
       if (filter !== 'All' && b.category !== filter) return false;
       if (severityFilter !== 'ALL' && b.severity !== severityFilter) return false;
+      if (vendorFilter !== 'ALL' && getVendorFromSource(b.source) !== vendorFilter) return false;
       if (!q) return true;
       return (
         b.title.toLowerCase().includes(q) ||
@@ -101,11 +105,11 @@ export function News() {
       }
     }
     return counts;
-  }, [news, filter, severityFilter, query]);
+  }, [news, filter, severityFilter, vendorFilter, query]);
 
-  const results = useMemo(() => {
+  const vendorCounts = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return news.filter((b) => {
+    const candidateNews = news.filter((b) => {
       if (filter !== 'All' && b.category !== filter) return false;
       if (severityFilter !== 'ALL' && b.severity !== severityFilter) return false;
       if (sourceFilter === 'PSIRT' && !isVendorPsirt(b.source)) return false;
@@ -117,7 +121,45 @@ export function News() {
         b.cves.some((c) => c.toLowerCase().includes(q))
       );
     });
+
+    const counts: Record<string, number> = {
+      ALL: candidateNews.length,
+    };
+    for (const b of candidateNews) {
+      const v = getVendorFromSource(b.source);
+      counts[v] = (counts[v] || 0) + 1;
+    }
+    return counts;
   }, [news, filter, severityFilter, sourceFilter, query]);
+
+  const availableVendors = useMemo(() => {
+    const pool = sourceFilter === 'PSIRT'
+      ? news.filter((b) => isVendorPsirt(b.source))
+      : news;
+    const vendorSet = new Set<string>();
+    for (const b of pool) {
+      const v = getVendorFromSource(b.source);
+      if (v && v !== 'Other') vendorSet.add(v);
+    }
+    return Array.from(vendorSet).sort((a, b) => (vendorCounts[b] || 0) - (vendorCounts[a] || 0));
+  }, [news, sourceFilter, vendorCounts]);
+
+  const results = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    return news.filter((b) => {
+      if (filter !== 'All' && b.category !== filter) return false;
+      if (severityFilter !== 'ALL' && b.severity !== severityFilter) return false;
+      if (sourceFilter === 'PSIRT' && !isVendorPsirt(b.source)) return false;
+      if (sourceFilter === 'MEDIA' && isVendorPsirt(b.source)) return false;
+      if (vendorFilter !== 'ALL' && getVendorFromSource(b.source) !== vendorFilter) return false;
+      if (!q) return true;
+      return (
+        b.title.toLowerCase().includes(q) ||
+        b.summary.toLowerCase().includes(q) ||
+        b.cves.some((c) => c.toLowerCase().includes(q))
+      );
+    });
+  }, [news, filter, severityFilter, sourceFilter, vendorFilter, query]);
 
   const totalPages = Math.max(1, Math.ceil(results.length / PAGE_SIZE));
   const safePage = Math.min(page, totalPages);
@@ -190,15 +232,34 @@ export function News() {
                   ))}
                 </select>
               </div>
+
+              <div className="inline-flex items-center gap-1.5 text-xs text-subtle">
+                <span>Vendor:</span>
+                <select
+                  value={vendorFilter}
+                  onChange={(e) => {
+                    setVendorFilter(e.target.value);
+                    setPage(1);
+                  }}
+                  className="h-7.5 rounded-md border border-line bg-surface px-2 text-xs text-ink focus:border-accent focus:outline-none cursor-pointer">
+                  <option value="ALL">All Vendors ({vendorCounts.ALL ?? 0})</option>
+                  {availableVendors.map((v) => (
+                    <option key={v} value={v}>
+                      {v} ({vendorCounts[v] ?? 0})
+                    </option>
+                  ))}
+                </select>
+              </div>
             </div>
 
-            {(filter !== 'All' || severityFilter !== 'ALL' || sourceFilter !== 'ALL' || query) && (
+            {(filter !== 'All' || severityFilter !== 'ALL' || sourceFilter !== 'ALL' || vendorFilter !== 'ALL' || query) && (
               <button
                 type="button"
                 onClick={() => {
                   setFilter('All');
                   setSeverityFilter('ALL');
                   setSourceFilter('ALL');
+                  setVendorFilter('ALL');
                   setQuery('');
                   setPage(1);
                 }}
@@ -289,6 +350,7 @@ export function News() {
                 type="button"
                 onClick={() => {
                   setSourceFilter('ALL');
+                  setVendorFilter('ALL');
                   setPage(1);
                 }}
                 className={`rounded px-2 py-0.5 text-xs transition-colors ${
@@ -302,6 +364,7 @@ export function News() {
                 type="button"
                 onClick={() => {
                   setSourceFilter('PSIRT');
+                  setVendorFilter('ALL');
                   setPage(1);
                 }}
                 className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors ${
@@ -315,6 +378,7 @@ export function News() {
                 type="button"
                 onClick={() => {
                   setSourceFilter('MEDIA');
+                  setVendorFilter('ALL');
                   setPage(1);
                 }}
                 className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors ${

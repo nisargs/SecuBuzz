@@ -9,6 +9,8 @@ import { NotFound } from './NotFound';
 import { shortDate, timeAgo } from '../utils/date';
 import { dueStatus, parseCvssVector, formatAdvisorySnippet, getCvssSeverity } from '../utils/advisory';
 import { Seo } from '../components/Seo';
+import { getVendorFromSource } from '../utils/psirt';
+import type { Advisory } from '../types/advisory';
 
 interface EpssData {
   epss: number;
@@ -35,7 +37,41 @@ export function AdvisoryDetail() {
   const { slug } = useParams();
   const { advisories, loading: loadingAdv } = useLiveAdvisories();
   const { news } = useLiveNews();
-  const advisory = advisories.find((a) => a.slug === slug || a.cve.toLowerCase() === (slug || '').toLowerCase());
+
+  const isCveSlug = /^cve-\d{4}-\d+$/i.test(slug || '');
+  const cveCode = isCveSlug ? (slug || '').toUpperCase() : '';
+
+  const matchedAdvisory = advisories.find((a) => a.slug === slug || a.cve.toLowerCase() === (slug || '').toLowerCase());
+
+  const matchingBrief = isCveSlug
+    ? news.find((b) => b.cves.some((c) => c.toUpperCase() === cveCode) || (b.title + ' ' + b.summary).toUpperCase().includes(cveCode))
+    : null;
+
+  const fallbackAdvisory: Advisory | null = isCveSlug
+    ? {
+        cve: cveCode,
+        slug: (slug || '').toLowerCase(),
+        vendor: matchingBrief?.source ? getVendorFromSource(matchingBrief.source) : 'Software Vendor',
+        product: matchingBrief?.title ? matchingBrief.title.split(' ')[0] : 'Affected Software',
+        name: matchingBrief?.title || `${cveCode} Vulnerability Intelligence`,
+        dateAdded: matchingBrief?.publishedAt ? matchingBrief.publishedAt.slice(0, 10) : new Date().toISOString().slice(0, 10),
+        dueDate: '—',
+        severity: (matchingBrief?.severity === 'CRITICAL' ? 'Critical' : matchingBrief?.severity === 'HIGH' ? 'High' : 'Medium'),
+        cvss: undefined,
+        cwe: '—',
+        ransomware: false,
+        description: matchingBrief?.summary || `Security advisory details, EPSS threat probability, and CVSS vector metrics for ${cveCode}.`,
+        requiredAction: 'Apply latest official vendor security updates or mitigations.',
+        references: [
+          { label: 'NIST NVD Advisory', url: `https://nvd.nist.gov/vuln/detail/${cveCode}` },
+          { label: 'MITRE CVE Record', url: `https://cve.mitre.org/cgi-bin/cvename.cgi?name=${cveCode}` },
+          ...(matchingBrief ? [{ label: `${matchingBrief.source} Report`, url: matchingBrief.sourceUrl }] : []),
+        ],
+        source: 'VENDOR' as any,
+      }
+    : null;
+
+  const advisory = matchedAdvisory || fallbackAdvisory;
 
   const [epss, setEpss] = useState<EpssData | null>(null);
   const [epssLoading, setEpssLoading] = useState(false);
@@ -148,7 +184,7 @@ export function AdvisoryDetail() {
 
   const status = dueStatus(advisory.dueDate);
   const coverage = news.filter(
-    (b) => b.cves.includes(advisory.cve) || (b.title + ' ' + b.summary).toLowerCase().includes(advisory.cve.toLowerCase())
+    (b) => b.cves.some((c) => c.toUpperCase() === advisory.cve.toUpperCase()) || (b.title + ' ' + b.summary).toUpperCase().includes(advisory.cve.toUpperCase())
   );
   const hasCisaDeadline = status.hasDeadline;
   const deadlineTone =
@@ -174,6 +210,7 @@ export function AdvisoryDetail() {
     { label: 'Vendor', value: advisory.vendor },
     { label: 'Product', value: advisory.product },
     { label: hasCisaDeadline ? 'Added to KEV' : 'Published Date', value: shortDate(advisory.dateAdded) },
+    { label: 'CISA KEV Status', value: hasCisaDeadline ? 'Cataloged Zero-Day' : 'Not on CISA KEV (Standard advisory)' },
     { label: 'Weakness', value: cleanCwe || '—' },
     { label: 'Ransomware use', value: advisory.ransomware ? 'Known campaign use' : 'Not reported' },
     {
@@ -224,6 +261,11 @@ export function AdvisoryDetail() {
             <div className="flex flex-wrap items-center gap-3">
               <span className="font-mono text-sm text-muted">{advisory.cve}</span>
               <SeverityBadge severity={effectiveSeverity} cvss={effectiveCvss} />
+              {!hasCisaDeadline && (
+                <span className="rounded border border-line bg-surface px-2 py-0.5 font-mono text-xs text-subtle">
+                  {matchedAdvisory ? 'Ecosystem' : 'Standard Advisory (Non-KEV)'}
+                </span>
+              )}
               {advisory.ransomware && (
                 <span className="rounded bg-critical/10 px-2 py-0.5 font-mono text-xs font-medium text-critical">
                   Ransomware Campaign
@@ -296,7 +338,9 @@ export function AdvisoryDetail() {
               <>
                 <p className="text-xs text-subtle">Remediation status</p>
                 <p className="mt-1 font-mono text-xl font-medium text-ink">Upgrade Available</p>
-                <p className="mt-1 font-mono text-xs text-subtle">Open Source Advisory · No federal deadline</p>
+                <p className="mt-1 font-mono text-xs text-subtle">
+                  {matchedAdvisory ? 'Ecosystem Advisory · No federal deadline' : 'Vendor Advisory · Not cataloged on CISA KEV'}
+                </p>
               </>
             )}
           </div>
