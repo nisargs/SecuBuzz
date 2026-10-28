@@ -25,7 +25,7 @@ const RELEASES: ReleaseItem[] = [
     highlights: [
       {
         title: 'Direct Vendor PSIRT Ingestion',
-        desc: 'Ingests official security errata and bulletins directly from Red Hat RHSA, Microsoft MSRC, Cisco PSIRT, Palo Alto Networks, Fortinet, and AWS.',
+        desc: 'Ingests official security errata and bulletins directly from 5+ vendors including Red Hat, Microsoft, Cisco, and AWS.',
       },
       {
         title: 'FIRST.org EPSS Scoring',
