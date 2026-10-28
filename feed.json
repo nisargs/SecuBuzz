@@ -26,32 +26,6 @@
     "additionalSources": []
   },
   {
-    "id": "https://www.schneier.com/blog/archives/2026/10/studying-fraudulent-north-korean-it-workers.html",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/studying-fraudulent-north-korean-it-workers.html",
-    "title": "Researchers Study Fraudulent North Korean IT Workers",
-    "headline": "Researchers Study Fraudulent North Korean IT Workers",
-    "summary": "Researchers established a fictitious startup to observe fraudulent North Korean IT workers across the global talent market. The operation aimed to identify recruitment tactics, credential misuse, insider threat patterns, and potential supply‑chain risks within the tech sector. Findings will guide security teams in tightening background checks, detecting deceptive hiring, and reinforcing vendor vetting procedures.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Schneier on Security",
-    "publishedAt": "2026-10-28T11:05:00.000Z",
-    "url": "https://www.schneier.com/blog/archives/2026/10/studying-fraudulent-north-korean-it-workers.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.crowdstrike.com/en-us/blog/crowdstrike-2026-legal-threat-landscape-report/",
-    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-2026-legal-threat-landscape-report/",
-    "title": "CrowdStrike 2026 Report: eCrime Leads, China Activity Rises",
-    "headline": "CrowdStrike 2026 Report: eCrime Leads, China Activity Rises",
-    "summary": "CrowdStrike released its 2026 Legal Threat Landscape Report, highlighting eCrime as the leading attack vector. The analysis indicates a surge in China‑originated cyber activity, with increased phishing, ransomware, and data‑exfiltration campaigns. Security teams should prioritize monitoring for emerging threat actors, enforce strict email filtering, and update incident response playbooks accordingly.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "CrowdStrike",
-    "publishedAt": "2026-10-28T05:00:00.000Z",
-    "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-2026-legal-threat-landscape-report/",
-    "additionalSources": []
-  },
-  {
     "id": "https://therecord.media/fbi-seizure-csam-virtualine",
     "sourceUrl": "https://therecord.media/fbi-seizure-csam-virtualine",
     "title": "FBI Seizes Domain of Hosting Provider Allegedly Facilitating Child Abuse and Money Laundering",
@@ -75,6 +49,19 @@
     "source": "The Hacker News",
     "publishedAt": "2026-10-28T11:15:51.000Z",
     "url": "https://thehackernews.com/2026/10/adobe-fixes-8-critical-campaign-classic.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.schneier.com/blog/archives/2026/10/studying-fraudulent-north-korean-it-workers.html",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/studying-fraudulent-north-korean-it-workers.html",
+    "title": "Researchers Study Fraudulent North Korean IT Workers",
+    "headline": "Researchers Study Fraudulent North Korean IT Workers",
+    "summary": "Researchers established a fictitious startup to observe fraudulent North Korean IT workers across the global talent market. The operation aimed to identify recruitment tactics, credential misuse, insider threat patterns, and potential supply‑chain risks within the tech sector. Findings will guide security teams in tightening background checks, detecting deceptive hiring, and reinforcing vendor vetting procedures.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Schneier on Security",
+    "publishedAt": "2026-10-28T11:05:00.000Z",
+    "url": "https://www.schneier.com/blog/archives/2026/10/studying-fraudulent-north-korean-it-workers.html",
     "additionalSources": []
   },
   {
@@ -153,6 +140,19 @@
     "source": "Help Net Security",
     "publishedAt": "2026-10-28T05:00:19.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/28/kroll-third-party-data-breaches-insurance-claims-report/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.crowdstrike.com/en-us/blog/crowdstrike-2026-legal-threat-landscape-report/",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-2026-legal-threat-landscape-report/",
+    "title": "CrowdStrike 2026 Report: eCrime Leads, China Activity Rises",
+    "headline": "CrowdStrike 2026 Report: eCrime Leads, China Activity Rises",
+    "summary": "CrowdStrike released its 2026 Legal Threat Landscape Report, highlighting eCrime as the leading attack vector. The analysis indicates a surge in China‑originated cyber activity, with increased phishing, ransomware, and data‑exfiltration campaigns. Security teams should prioritize monitoring for emerging threat actors, enforce strict email filtering, and update incident response playbooks accordingly.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "CrowdStrike",
+    "publishedAt": "2026-10-28T05:00:00.000Z",
+    "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-2026-legal-threat-landscape-report/",
     "additionalSources": []
   },
   {
