@@ -2797,8 +2797,13 @@ async function deduplicateAndTrimFeed(newArticles, existingArticles) {
     }
   }
 
-  // 4. Combine unmerged new articles + existing feed, deduplicate by canonical URL, and trim
+  // 4. Combine unmerged new articles + existing feed, deduplicate by canonical URL, sort chronologically, and trim
   const combined = [...finalNewArticles, ...activeExisting];
+  combined.sort((a, b) => {
+    const timeA = a.publishedAt ? new Date(a.publishedAt).getTime() : 0;
+    const timeB = b.publishedAt ? new Date(b.publishedAt).getTime() : 0;
+    return (Number.isFinite(timeB) ? timeB : 0) - (Number.isFinite(timeA) ? timeA : 0);
+  });
   const seenFinalUrls = new Set();
   const dedupedFeed = [];
 

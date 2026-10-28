@@ -12,7 +12,7 @@ export const newsCategories: NewsCategory[] = [
 export const news: NewsBrief[] = [
   {
     "slug": "cisco-sd-wan-controller-authentication-bypass-78eefb",
-    "title": "Cisco SD‑WAN Controller Authentication Bypass",
+    "title": "Cisco SD-WAN Controller Authentication Bypass",
     "summary": "A flaw in Cisco Catalyst SD‑WAN Controller’s peering authentication permits unauthenticated remote attackers to bypass login and gain administrative privileges. The defect stems from a broken authentication mechanism that accepts crafted requests, enabling attackers to log in as a high‑privileged non‑root user and manipulate NETCONF network configurations. Cisco has issued a patch; administrators should apply the update immediately.",
     "category": "Vulnerability",
     "severity": "HIGH",

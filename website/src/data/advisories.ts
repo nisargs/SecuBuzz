@@ -52,6 +52,162 @@ export const advisories: Advisory[] = [
     "source": "CISA KEV"
   },
   {
+    "cve": "CVE-2026-115927",
+    "slug": "cve-2026-115927",
+    "vendor": "Pip",
+    "product": "tornado",
+    "name": "Tornado: Event loop blocking and excess memory use from chunked bodies with many small chunks",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "When Tornado reads an HTTP/1.1 body that uses chunked transfer encoding, it processes all chunks that have already arrived without yielding to the event loop. A client can send a body made of millions of 1-byte chunks, which blocks the event loop (and therefore every other connection served by that process) for the entire time it takes to parse the body.",
+    "requiredAction": "Upgrade tornado to version 6.6 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-r4j5-9xpp-3985"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115927"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116578",
+    "slug": "cve-2026-116578",
+    "vendor": "Pip",
+    "product": "tornado",
+    "name": "Tornado: Open redirect in RedirectHandler via protocol-relative URLs",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 2.1,
+    "severity": "Low",
+    "cwe": "CWE-601",
+    "ransomware": false,
+    "description": "tornado.web.RedirectHandler builds its target URL by substituting parts of the request path into a template. Depending on where those substitutions appear in the template, an attacker can craft a request that redirects to a host of their choosing. This creates an open redirect on the application's domain, which can be used in phishing.",
+    "requiredAction": "Upgrade tornado to version 6.6 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-pw9p-v7r6-gx4p"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116578"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116577",
+    "slug": "cve-2026-116577",
+    "vendor": "Pip",
+    "product": "tornado",
+    "name": "Tornado: Quadratic CPU usage when parsing HTTP headers with line folding",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-407",
+    "ransomware": false,
+    "description": "Tornado's HTTP header parser takes quadratic time (O(n²)) when a header value is continued across many \"obsolete line folding\" (obs-fold) lines. An unauthenticated attacker can send a request whose header block is mostly short continuation lines. Parsing it uses a large amount of CPU on the IOLoop thread and blocks every other connection that process is serving.",
+    "requiredAction": "Upgrade tornado to version 6.6 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-pcg2-g6cj-q92c"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116577"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116695",
+    "slug": "cve-2026-116695",
+    "vendor": "RubyGems",
+    "product": "crass",
+    "name": "Crass: Incorrect tokenization of bad URLs enables CSS sanitizer bypass",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-436",
+    "ransomware": false,
+    "description": "Crass's tokenizer didn't terminate a bad URL token at a ) that followed an escaped backslash (\\\\). As a result, Crass consumed more input as part of the bad URL than a spec-compliant browser does.",
+    "requiredAction": "Upgrade crass to version 1.0.8 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-pq4g-8rxf-4g29"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116695"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116576",
+    "slug": "cve-2026-116576",
+    "vendor": "npm",
+    "product": "systeminformation",
+    "name": "systeminformation vulnerable to Windows command injection in services() through Unicode quotation marks",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 7.8,
+    "severity": "High",
+    "cwe": "CWE-78",
+    "ransomware": false,
+    "description": "On Windows, systeminformation@5.33.15 builds a PowerShell command using the value passed to services(). The default sanitizer removes ASCII quotes but keeps Unicode curly quotes, spaces, and parentheses. A crafted service name can use those characters to break out of the generated filter string and run a PowerShell expression. The expression runs with the permissions of the Node.js process.",
+    "requiredAction": "Upgrade systeminformation to version 5.33.16 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-3f7j-7jwc-fxfj"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116576"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-115923",
+    "slug": "cve-2026-115923",
+    "vendor": "npm",
+    "product": "@backstage/plugin-catalog-backend",
+    "name": "Backstage catalog rules can be bypassed for URL locations using encoded path segments",
+    "dateAdded": "2026-10-28",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "@backstage/plugin-catalog-backend matches URL-type locations against catalog.rules location patterns using the raw URL string submitted by the user, while URL readers resolve that same string in canonical form when fetching the location's content. A URL can therefore be crafted so that it appears to belong to a trusted location scope during rule evaluation, but is fetched from a different scope.",
+    "requiredAction": "Upgrade @backstage/plugin-catalog-backend to version 3.9.2 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-w658-mh9p-ww8f"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115923"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-117601",
     "slug": "cve-2026-117601",
     "vendor": "Pip",
@@ -1183,162 +1339,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112938"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-112934",
-    "slug": "cve-2026-112934",
-    "vendor": "Pip",
-    "product": "filelock",
-    "name": "filelock: SoftReadWriteLock holder refresh writes through a hard link and hangs on a named pipe that another local user renames over its record",
-    "dateAdded": "2026-10-28",
-    "dueDate": "",
-    "cvss": 6.1,
-    "severity": "Medium",
-    "cwe": "CWE-62",
-    "ransomware": false,
-    "description": "SoftReadWriteLock (and AsyncSoftReadWriteLock, which wraps one) refreshes its holder record (the file under <path>.rw/holders/ that says a process holds or wants the lock) on every poll of a waiting acquire and on every heartbeat (the periodic refresh a holder runs to keep its record fresh).",
-    "requiredAction": "Upgrade filelock to version 4.2.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-fj95-fr6c-h845"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112934"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-112935",
-    "slug": "cve-2026-112935",
-    "vendor": "Pip",
-    "product": "filelock",
-    "name": "filelock: SoftFileLock stale-lock break removes a live lock file on a reused inode number and admits two holders",
-    "dateAdded": "2026-10-28",
-    "dueDate": "",
-    "cvss": 4.7,
-    "severity": "Medium",
-    "cwe": "CWE-367",
-    "ransomware": false,
-    "description": "The stale-lock break shared by SoftFileLock, MarkerSoftFileLock and SoftFileLease (and their async variants, and a FileLock that has fallen back to a soft lock on ENOSYS, the \"not implemented\" error) recognises the marker it judged stale by two values. The marker is the lock file at <path>, whose presence says a process holds the lock.",
-    "requiredAction": "Upgrade filelock to version 4.2.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-fq56-3cx3-fjxp"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112935"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-115730",
-    "slug": "cve-2026-115730",
-    "vendor": "npm",
-    "product": "i18next-http-backend",
-    "name": "i18next-http-backend: Namespace value starting with / forms a protocol-relative URL when loadPath/addPath places {{ns}} right after a / (bypass of the // check added for GHSA-xvq9-wjp8-hwqf)",
-    "dateAdded": "2026-10-28",
-    "dueDate": "",
-    "cvss": 3.1,
-    "severity": "Low",
-    "cwe": "CWE-74",
-    "ransomware": false,
-    "description": "Verified on 4.0.2 (latest on npm) and on commit 07e0288 (the GHSA-xvq9-wjp8-hwqf fix). Earlier 3.x/4.x versions that allow / in ns are likely affected too. Not verified on them. Same class as GHSA-xvq9-wjp8-hwqf and GHSA-q89c-q3h5-w34g: when an attacker controls the namespace value, the request goes to an attacker-chosen origin.",
-    "requiredAction": "Upgrade i18next-http-backend to version 4.0.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-9jhj-wvmw-cfx5"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115730"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-118259",
-    "slug": "cve-2026-118259",
-    "vendor": "Java (Maven)",
-    "product": "io.opentelemetry:opentelemetry-api",
-    "name": "opentelemetry-java: Quadratic CPU consumption in W3C tracestate parsing",
-    "dateAdded": "2026-10-28",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-1333",
-    "ransomware": false,
-    "description": "OpenTelemetry Java's W3C trace-context propagator permits excessive CPU consumption when extracting crafted tracestate headers, potentially leading to denial of service. Regex backtracking causes quadratic parsing time for headers containing long runs of spaces or tabs without a following comma.",
-    "requiredAction": "Upgrade io.opentelemetry:opentelemetry-api to version 1.67.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-ccrj-gw8r-854m"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118259"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-118660",
-    "slug": "cve-2026-118660",
-    "vendor": "npm",
-    "product": "happy-dom",
-    "name": "Happy DOM: SSRF via iframe and link stylesheet when parsing untrusted HTML",
-    "dateAdded": "2026-10-28",
-    "dueDate": "",
-    "cvss": 8.6,
-    "severity": "High",
-    "cwe": "CWE-918",
-    "ransomware": false,
-    "description": "happy-dom v20.8.9 makes real server-side HTTP requests to arbitrary URLs when parsing HTML containing <iframe> or <link rel=\"stylesheet\"> elements. This behavior is enabled by default (disableIframePageLoading: false, disableCSSFileLoading: false).",
-    "requiredAction": "Upgrade happy-dom to version 21.0.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-c8p4-j97h-3vg8"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118660"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-118256",
-    "slug": "cve-2026-118256",
-    "vendor": "npm",
-    "product": "vue-i18n",
-    "name": "Vue I18n: `escapeParameter` does not escape named values when the same call also passes a list",
-    "dateAdded": "2026-10-28",
-    "dueDate": "",
-    "cvss": 2.1,
-    "severity": "Low",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "When escapeParameter is enabled (escapeParameterHtml in the Legacy API), Vue I18n escapes the interpolation parameters before formatting a message. escapeParams() escapes either the list values or the named values, but not both: the two branches are joined by else. When a single call passes both, for example t(key, ['...'], { named: { ...",
-    "requiredAction": "Upgrade vue-i18n to version 11.4.14 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-8rc2-428q-7ww3"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118256"
       }
     ],
     "source": "GITHUB"
