@@ -2429,5 +2429,20 @@
   "https://blog.cloudflare.com/php-ctf/",
   "https://blog.cloudflare.com/q3-2026-internet-disruption-summary/",
   "https://www.malwarebytes.com/blog/ai/2026/10/artificial-intimacy-love-and-lies-in-the-age-of-ai",
-  "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-01"
+  "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-01",
+  "https://www.helpnetsecurity.com/2026/10/28/nist-post-quantum-cryptography-migration-roadmap/",
+  "https://www.helpnetsecurity.com/2026/10/28/kroll-third-party-data-breaches-insurance-claims-report/",
+  "https://www.bleepingcomputer.com/news/security/japans-gmo-urges-customers-to-shut-down-pcs-amid-ransomware-threat/",
+  "https://www.bleepingcomputer.com/news/artificial-intelligence/openais-gpt-61-terra-is-safer-overall-but-shows-more-destructive-action-flags-in-tests/",
+  "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+node.js+Affecting+Cisco+Products%3A+October+2026%26vs_k%3D1",
+  "https://www.darkreading.com/cyber-risk/3-frameworks-cisos-ai-liability",
+  "https://www.darkreading.com/cloud-security/email-bombing-external-teams-chats-repeatable-access-path",
+  "http://chromereleases.googleblog.com/feeds/7038944475844055753/comments/default",
+  "https://ubuntu.com/security/notices/USN-8957-1",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70161",
+  "https://thehackernews.com/2026/10/goahead-tls-flaws-allow-revoked-client.html",
+  "https://blog.talosintelligence.com/from-federal-socs-to-talos-ryan-fetterman-on-practical-security-research/",
+  "https://projectzero.google/2026/10/fuzzing-v-AI.html",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-811/",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-810/"
 ]
