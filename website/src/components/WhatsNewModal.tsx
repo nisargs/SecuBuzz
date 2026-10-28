@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import { X, Sparkles, CheckCircle2, ArrowRight } from 'lucide-react';
+import { X, CheckCircle2, ArrowRight } from 'lucide-react';
 import { PlayStoreButton } from './PlayStoreButton';
 
 interface WhatsNewModalProps {
@@ -111,16 +111,11 @@ export function WhatsNewModal({ isOpen, onClose }: WhatsNewModalProps) {
       >
         {/* Modal Header */}
         <div className="flex items-center justify-between border-b border-line px-6 py-4">
-          <div className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg border border-accent/30 bg-accent/10 text-accent">
-              <Sparkles className="h-4 w-4" />
-            </div>
-            <div>
-              <h2 id="whats-new-title" className="text-base font-semibold text-ink">
-                What’s New in Secu<span className="text-accent">Buzz</span>
-              </h2>
-              <p className="text-xs text-subtle">Product release notes & continuous engineering updates</p>
-            </div>
+          <div>
+            <h2 id="whats-new-title" className="text-base font-semibold text-ink">
+              What’s New in Secu<span className="text-accent">Buzz</span>
+            </h2>
+            <p className="text-xs text-subtle">Product release notes & continuous engineering updates</p>
           </div>
           <button
             type="button"

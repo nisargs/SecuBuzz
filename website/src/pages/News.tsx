@@ -2,6 +2,7 @@ import React, { useMemo, useState } from 'react';
 import { SearchIcon, ChevronLeftIcon, ChevronRightIcon } from 'lucide-react';
 import { PageIntro } from '../components/PageIntro';
 import { NewsBriefItem } from '../components/NewsBriefItem';
+import { VendorSelect } from '../components/VendorSelect';
 import { newsCategories } from '../data/news';
 import { useLiveNews } from '../data/useLiveNews';
 import type { NewsCategory, NewsSeverity } from '../types/news';
@@ -132,7 +133,7 @@ export function News() {
     return counts;
   }, [news, filter, severityFilter, sourceFilter, query]);
 
-  const availableVendors = useMemo(() => {
+  const sortedVendors = useMemo(() => {
     const pool = sourceFilter === 'PSIRT'
       ? news.filter((b) => isVendorPsirt(b.source))
       : news;
@@ -141,7 +142,12 @@ export function News() {
       const v = getVendorFromSource(b.source);
       if (v && v !== 'Other') vendorSet.add(v);
     }
-    return Array.from(vendorSet).sort((a, b) => (vendorCounts[b] || 0) - (vendorCounts[a] || 0));
+    return Array.from(vendorSet)
+      .map((name) => ({
+        name,
+        count: vendorCounts[name] ?? 0,
+      }))
+      .sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }));
   }, [news, sourceFilter, vendorCounts]);
 
   const results = useMemo(() => {
@@ -161,12 +167,16 @@ export function News() {
     });
   }, [news, filter, severityFilter, sourceFilter, vendorFilter, query]);
 
+  const sortedCategories = useMemo(() => {
+    return [...newsCategories].sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
+  }, []);
+
   const totalPages = Math.max(1, Math.ceil(results.length / PAGE_SIZE));
   const safePage = Math.min(page, totalPages);
   const startIndex = (safePage - 1) * PAGE_SIZE;
   const paginatedBriefs = results.slice(startIndex, startIndex + PAGE_SIZE);
 
-  const filters: Filter[] = ['All', ...newsCategories];
+  const filters: Filter[] = ['All', ...sortedCategories];
 
   return (
     <>
@@ -225,7 +235,7 @@ export function News() {
                   }}
                   className="h-7.5 rounded-md border border-line bg-surface px-2 text-xs text-ink focus:border-accent focus:outline-none cursor-pointer">
                   <option value="All">All Categories ({categoryCounts.All ?? news.length})</option>
-                  {newsCategories.map((c) => (
+                  {sortedCategories.map((c) => (
                     <option key={c} value={c}>
                       {c} ({categoryCounts[c] ?? 0})
                     </option>
@@ -235,20 +245,15 @@ export function News() {
 
               <div className="inline-flex items-center gap-1.5 text-xs text-subtle">
                 <span>Vendor:</span>
-                <select
+                <VendorSelect
                   value={vendorFilter}
-                  onChange={(e) => {
-                    setVendorFilter(e.target.value);
+                  onChange={(v) => {
+                    setVendorFilter(v);
                     setPage(1);
                   }}
-                  className="h-7.5 rounded-md border border-line bg-surface px-2 text-xs text-ink focus:border-accent focus:outline-none cursor-pointer">
-                  <option value="ALL">All Vendors ({vendorCounts.ALL ?? 0})</option>
-                  {availableVendors.map((v) => (
-                    <option key={v} value={v}>
-                      {v} ({vendorCounts[v] ?? 0})
-                    </option>
-                  ))}
-                </select>
+                  vendors={sortedVendors}
+                  totalCount={vendorCounts.ALL ?? news.length}
+                />
               </div>
             </div>
 
