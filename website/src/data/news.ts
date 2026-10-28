@@ -50,6 +50,475 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cisco-patches-ssl-vpn-dos-in-asa-and-ftd-2f6ce2",
+    "title": "Cisco Patches SSL VPN DoS in ASA and FTD",
+    "summary": "A logic error in the Remote Access SSL VPN service of Cisco Secure Firewall ASA and FTD software allows an unauthenticated remote attacker to trigger a device reload. The flaw occurs when secondary authentication is configured on a tunnel group, and exploitation requires sending a crafted request during VPN connection, resulting in a denial of service condition.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cisco PSIRT",
+    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-tunnel-dos-s6mgkb75?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Secure+Firewall+Adaptive+Security+Appliance+and+Secure+Firewall+Threat+Defense+Software+Remote+Access+SSL+VPN+Tunnel+Denial+of+Service+Vulnerability%26vs_k%3D1",
+    "publishedAt": "2026-10-28T23:15:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisco-patches-ssl-vpn-dos-in-asa-and-ftd",
+      "article-2f6ce2",
+      "2f6ce2"
+    ]
+  },
+  {
+    "slug": "uat-11473-exploits-cisco-sd-wan-auth-bypass-373777",
+    "title": "UAT-11473 Exploits Cisco SD-WAN Auth Bypass",
+    "summary": "Cisco Talos identified UAT-11473, a sophisticated APT group, exploiting CVE-2026-20127, an authentication bypass vulnerability in Cisco SD-WAN Catalyst Controller instances to gain unauthorized access. The group deployed KeyDrift malware on compromised systems after bypassing authentication controls. Organizations running Cisco SD-WAN Catalyst Controllers should verify patch status for CVE-2026-20127 and hunt for KeyDrift indicators.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "Cisco Talos",
+    "sourceUrl": "https://blog.talosintelligence.com/uat-11473-keydrift/",
+    "publishedAt": "2026-10-28T21:32:02.000Z",
+    "cves": [
+      "CVE-2026-20127"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "uat-11473-exploits-cisco-sd-wan-auth-bypass",
+      "article-373777",
+      "373777"
+    ]
+  },
+  {
+    "slug": "federal-court-rules-west-virginia-data-shield-law-7fd6e6",
+    "title": "Federal Court Rules West Virginia Data Shield Law Unconstitutional",
+    "summary": "A federal appellate court panel ruled West Virginia's Daniel's Law, which shielded personal data of police and public officials, unconstitutional. The decision removes the legal barrier preventing public disclosure of personal information held by state agencies regarding law enforcement personnel. The ruling enables public records requests targeting personal data of public safety officials in West Virginia.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/west-virginia-daniels-law-struck-down-appellate-court",
+    "publishedAt": "2026-10-28T20:50:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "federal-court-rules-west-virginia-data-shield-law",
+      "article-7fd6e6",
+      "7fd6e6",
+      "federal-court-rules-west-virginia-data-shield-law-unconstitu"
+    ]
+  },
+  {
+    "slug": "law-enforcement-seizes-virtualine-bulletproof-host-8c1e6f",
+    "title": "Law Enforcement Seizes Virtualine Bulletproof Hosting Domain",
+    "summary": "U.S. law enforcement seized the primary domain of Virtualine, a bulletproof hosting service advertised on cybercrime forums for facilitating illegal activities. The service provided infrastructure to ransomware operators and other cybercriminals seeking to evade takedown efforts. The seizure disrupts a known channel for illicit hosting but does not eliminate the underlying criminal operations.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-seize-virtualine-bulletproof-service-tied-to-ransowmare-cybercrime/",
+    "publishedAt": "2026-10-28T20:47:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "law-enforcement-seizes-virtualine-bulletproof-host",
+      "article-8c1e6f",
+      "8c1e6f",
+      "law-enforcement-seizes-virtualine-bulletproof-hosting-domain"
+    ]
+  },
+  {
+    "slug": "japan-airlines-confirms-customer-data-theft-incide-482a55",
+    "title": "Japan Airlines Confirms Customer Data Theft Incident",
+    "summary": "Japan Airlines confirmed a data breach in which hackers stole passport numbers, frequent flyer numbers, email addresses, and phone numbers for approximately 2,000 customers. The incident occurred amid a broader wave of cyber incidents affecting Japanese organizations. Affected individuals face identity theft risk from exposed government-issued identifiers and personal contact details.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/japan-airlines-warns-of-breach-country-grapples-with-incidents",
+    "publishedAt": "2026-10-28T20:33:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "japan-airlines-confirms-customer-data-theft-incide",
+      "article-482a55",
+      "482a55",
+      "japan-airlines-confirms-customer-data-theft-incident"
+    ]
+  },
+  {
+    "slug": "cisco-pre-announces-november-advisories-for-three-76d307",
+    "title": "Cisco Pre-Announces November Advisories for Three Products",
+    "summary": "Cisco PSIRT will publish security advisories on November 4, 2026, addressing vulnerabilities in Identity Services Engine, UCS Central Software, and Unified Communications Manager. The advisories include fixed software releases, and no further security-hardening advisories are planned before January 20, 2027. Cisco recommends customers upgrade to the fixed versions specified in the advisories to remediate the disclosed flaws.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cisco PSIRT",
+    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-notice-I8z3n6lK?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Advance+Notification+for+Publication+of+November+4%2C+2026%2C+Security+Advisories%26vs_k%3D1",
+    "publishedAt": "2026-10-28T20:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisco-pre-announces-november-advisories-for-three",
+      "article-76d307",
+      "76d307",
+      "cisco-pre-announces-november-advisories-for-three-products"
+    ]
+  },
+  {
+    "slug": "chromeos-stable-patch-fixes-critical-fileapi-flaw-60e267",
+    "title": "ChromeOS Stable Patch Fixes Critical FileAPI Flaw",
+    "summary": "Google released ChromeOS Stable channel update 16836.30.0, patching multiple vulnerabilities including a critical improper input validation flaw in FileAPI. CVE-2026-118331 carries a critical severity rating, while five additional high-severity flaws span use-after-free and input validation issues across Animation, Compositing, UI, and ReadingList components. Users should update to browser version 156.0.8078.77 to remediate all disclosed defects.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/stable-channel-update-for-chromeos_01748991111.html",
+    "publishedAt": "2026-10-28T19:45:30.211Z",
+    "cves": [
+      "CVE-2026-118331"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromeos-stable-patch-fixes-critical-fileapi-flaw",
+      "article-60e267",
+      "60e267"
+    ]
+  },
+  {
+    "slug": "ghostaction-pivots-to-developer-endpoints-and-clou-d1cd75",
+    "title": "GhostAction Pivots to Developer Endpoints and Cloud",
+    "summary": "The GhostAction cybercrime group's supply chain attack campaign has fizzled, with the outfit shifting its operational focus toward developer endpoints and cloud access infrastructure. The group's persistent presence on GitHub signals an intent to target software development workflows and cloud-connected environments as new attack vectors.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/application-security/ghostaction-hacking-wave-fizzles-attackers-github",
+    "publishedAt": "2026-10-28T19:39:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ghostaction-pivots-to-developer-endpoints-and-clou",
+      "article-d1cd75",
+      "d1cd75",
+      "ghostaction-pivots-to-developer-endpoints-and-cloud"
+    ]
+  },
+  {
+    "slug": "discord-opens-public-server-messages-to-search-eng-24cc09",
+    "title": "Discord Opens Public Server Messages to Search Engines",
+    "summary": "Discord will permit search engines to index discussions within Discoverable Servers, making those messages accessible on the open web to users outside the platform without requiring an account or invitation. This policy change expands the public surface of server communications previously confined to the Discord ecosystem.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/discord-to-let-search-engines-index-public-server-messages/",
+    "publishedAt": "2026-10-28T18:44:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "discord-opens-public-server-messages-to-search-eng",
+      "article-24cc09",
+      "24cc09",
+      "discord-opens-public-server-messages-to-search-engines"
+    ]
+  },
+  {
+    "slug": "volt-typhoon-leverages-silent-train-for-zero-days-371e09",
+    "title": "Volt Typhoon Leverages Silent Train for Zero-Days",
+    "summary": "The China-nexus espionage group Volt Typhoon operated a covert access network dubbed Silent Train to execute four zero-day exploitation campaigns for strategic access. Lumen Technologies Black Lotus Labs identified the network in late 2023, noting it uses rotating chains of compromised SOHO, IoT, and enterprise infrastructure.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/volt-typhoon-used-covert-silent-train.html",
+    "publishedAt": "2026-10-28T18:08:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "volt-typhoon-leverages-silent-train-for-zero-days",
+      "article-371e09",
+      "371e09"
+    ]
+  },
+  {
+    "slug": "red-hat-patches-mrtg-on-rhel-9-4-sap-37d9b1",
+    "title": "Red Hat Patches mrtg on RHEL 9.4 SAP",
+    "summary": "Red Hat released a security update for the mrtg monitoring package on Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. The update addresses vulnerabilities rated as Important by Red Hat Product Security, with specific CVSS scores available through referenced CVE links. Administrators should apply the RHSA-2026:92051 patch to remediate the identified flaws in their mrtg installations.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92051",
+    "publishedAt": "2026-10-28T18:00:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-patches-mrtg-on-rhel-9-4-sap",
+      "article-37d9b1",
+      "37d9b1"
+    ]
+  },
+  {
+    "slug": "unit-42-maps-retail-holiday-threat-landscape-2a5d72",
+    "title": "Unit 42 Maps Retail Holiday Threat Landscape",
+    "summary": "Unit 42 published an analysis of peak shopping season cyber threats targeting retail operations, covering ransomware campaigns and AI-powered attack vectors. The report outlines defensive strategies to protect customer trust and operational continuity during high-volume holiday periods. Security teams should review the guidance to align holiday-season incident response plans with emerging threat patterns.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Unit 42",
+    "sourceUrl": "https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/",
+    "publishedAt": "2026-10-28T18:00:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "unit-42-maps-retail-holiday-threat-landscape",
+      "article-2a5d72",
+      "2a5d72"
+    ]
+  },
+  {
+    "slug": "red-hat-ships-jboss-eap-8-1-9-security-fix-37d9b1",
+    "title": "Red Hat Ships JBoss EAP 8.1.9 Security Fix",
+    "summary": "Red Hat released a security update for JBoss Enterprise Application Platform 8.1.9 on Red Hat Enterprise Linux 9. The update addresses vulnerabilities rated as Important by Red Hat Product Security, with specific CVSS scores available through referenced CVE links. Administrators should apply the RHSA-2026:92056 patch to remediate the identified flaws in their JBoss EAP deployments.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92056",
+    "publishedAt": "2026-10-28T17:56:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-ships-jboss-eap-8-1-9-security-fix",
+      "article-37d9b1",
+      "37d9b1"
+    ]
+  },
+  {
+    "slug": "offsec-releases-free-php2shell-exploitation-lab-17a67c",
+    "title": "OffSec Releases Free PHP2Shell Exploitation Lab",
+    "summary": "OffSec released a free interactive lab in Proving Grounds Play enabling security practitioners to examine and defend against the critical PHP2Shell vulnerabilities, including CVE-2026-109618. The lab provides hands-on exploitation scenarios for the PHP2Shell flaw family, which researchers classify as critical severity, as AI-assisted research reshapes vulnerability discovery workflows.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/offsec-launches-free-php2shell-lab-following-critical-vulnerability-discovery/",
+    "publishedAt": "2026-10-28T17:54:27.000Z",
+    "cves": [
+      "CVE-2026-109618"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "offsec-releases-free-php2shell-exploitation-lab",
+      "article-17a67c",
+      "17a67c"
+    ]
+  },
+  {
+    "slug": "zero-click-telegram-sticker-flaw-enables-ios-code-2356c5",
+    "title": "Zero-Click Telegram Sticker Flaw Enables iOS Code Execution",
+    "summary": "Security researcher Saifeldeen Aziz disclosed new zero-click vulnerabilities in Telegram stickers that bypass server-side validation checks. He chained the flaws to achieve arbitrary code execution on iOS devices, demonstrating a complete attack path without user interaction. The research was scheduled for presentation at OffensiveCon in Tokyo on October 28, 2026",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/0-click-flaw-in-telegram-stickers/",
+    "publishedAt": "2026-10-28T17:15:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "zero-click-telegram-sticker-flaw-enables-ios-code",
+      "article-2356c5",
+      "2356c5",
+      "zero-click-telegram-sticker-flaw-enables-ios-code-execution"
+    ]
+  },
+  {
+    "slug": "github-ships-npm-package-firewall-for-pre-install-3a9011",
+    "title": "GitHub Ships npm Package Firewall for Pre-Install Scanning",
+    "summary": "GitHub announced a package firewall that evaluates npm packages against enterprise policy before installation, blocking known malware, critical vulnerabilities, and brand-new versions. The checks execute before a package reaches a developer laptop, build pipeline, or coding agent. Any developer can enable the firewall by pointing npm at it, part of four security additions addressing AI-accelerated software development",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/28/github-package-firewall-npm/",
+    "publishedAt": "2026-10-28T17:09:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "github-ships-npm-package-firewall-for-pre-install",
+      "article-3a9011",
+      "3a9011",
+      "github-ships-npm-package-firewall-for-pre-install-scanning"
+    ]
+  },
+  {
+    "slug": "google-enables-one-tap-installs-for-approved-third-14b753",
+    "title": "Google Enables One-Tap Installs for Approved Third-Party Stores",
+    "summary": "Google is enabling approved third-party Android app stores outside the U.S. to offer one-tap installs and background updates, bypassing confirmation screens. Stores must pass identity checks and submit their full catalog and every update to Google for ongoing malware scanning. The feature becomes available to qualifying stores starting December 1, expanding sideloading while retaining centralized security review.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/google-to-allow-one-tap-android-app.html",
+    "publishedAt": "2026-10-28T17:08:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-enables-one-tap-installs-for-approved-third",
+      "article-14b753",
+      "14b753",
+      "google-enables-one-tap-installs-for-approved-third-party-sto"
+    ]
+  },
+  {
+    "slug": "clickfix-social-engineering-campaign-observed-in-t-57dd7e",
+    "title": "ClickFix Social Engineering Campaign Observed in the Wild",
+    "summary": "A new ClickFix social engineering campaign is actively targeting users through deceptive instructions that trick victims into executing malicious commands. The attack vector relies on convincing users to manually run PowerShell or similar commands, bypassing traditional malware delivery mechanisms. Security teams should monitor for anomalous command-line execution patterns and reinforce user awareness training against instruction-based lures.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33466",
+    "publishedAt": "2026-10-28T16:07:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "clickfix-social-engineering-campaign-observed-in-t",
+      "article-57dd7e",
+      "57dd7e",
+      "clickfix-social-engineering-campaign-observed-in-the-wild"
+    ]
+  },
+  {
+    "slug": "microsoft-outlines-ciso-strategy-for-agentic-ai-er-2412d7",
+    "title": "Microsoft Outlines CISO Strategy for Agentic AI Era",
+    "summary": "Microsoft published guidance for CISOs navigating the agentic AI era, identifying two core priorities: enabling innovation through identity and data guardrails, and modernizing defense against AI-powered threats. The advisory, authored by Aarti Borkar, frames the evolving security leadership role around balancing AI adoption with protective controls.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Microsoft Security",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/28/the-cisos-evolving-role-protecting-and-defending-in-the-agentic-era/",
+    "publishedAt": "2026-10-28T16:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-outlines-ciso-strategy-for-agentic-ai-er",
+      "article-2412d7",
+      "2412d7",
+      "microsoft-outlines-ciso-strategy-for-agentic-ai-era"
+    ]
+  },
+  {
+    "slug": "aws-sdk-for-pandas-athena-result-tampering-flaw-4f8e24",
+    "title": "AWS SDK for pandas Athena Result Tampering Flaw",
+    "summary": "AWS disclosed CVE-2026-118029 in the awswrangler library, where unverified ownership of the default Athena query result location permits data tampering. A remote user can read query results and alter returned data sets by pre-creating an S3 bucket at the default destination, bypassing ownership checks. Teams should upgrade awswrangler and verify S3 bucket ownership for Athena result destinations.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-153-aws/",
+    "publishedAt": "2026-10-28T15:40:38.000Z",
+    "cves": [
+      "CVE-2026-118029"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "aws-sdk-for-pandas-athena-result-tampering-flaw",
+      "article-4f8e24",
+      "4f8e24"
+    ]
+  },
+  {
+    "slug": "ai-adoption-in-soc-outpaces-expectations-2bc3ae",
+    "title": "AI Adoption in SOC Outpaces Expectations",
+    "summary": "A Help Net Security analysis reports that security teams are adopting AI-driven automation in the SOC faster than industry observers anticipated. The author notes that compliance obligations, previously assumed to slow AI integration, have not impeded deployment pace. The finding suggests SOC operators are increasingly trusting AI to execute operational actions within security workflows.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/28/exaforce-trust-in-ai-security/",
+    "publishedAt": "2026-10-28T15:25:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-adoption-in-soc-outpaces-expectations",
+      "article-2bc3ae",
+      "2bc3ae"
+    ]
+  },
+  {
+    "slug": "nefilim-ransomware-affiliate-sentenced-to-70-month-211c3a",
+    "title": "Nefilim Ransomware Affiliate Sentenced to 70 Months",
+    "summary": "Artem Stryzhak, identified as a Ukrainian Hive and Nefilim ransomware affiliate, was sentenced to 70 months in US federal prison. He pleaded guilty to using Nefilim ransomware in attacks against victims. The prosecution represents a continued law enforcement effort targeting ransomware operators linked to the Hive ecosystem.",
+    "category": "Ransomware",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/ukrainian-hive-and-nefilim-ransomware-affiliate-gets-70-months-in-us-prison/",
+    "publishedAt": "2026-10-28T15:05:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "nefilim-ransomware-affiliate-sentenced-to-70-month",
+      "article-211c3a",
+      "211c3a",
+      "nefilim-ransomware-affiliate-sentenced-to-70-months"
+    ]
+  },
+  {
+    "slug": "ai-bot-impersonation-used-for-credential-scanning-5eded3",
+    "title": "AI Bot Impersonation Used for Credential Scanning",
+    "summary": "A threat actor is scanning for exposed credentials by impersonating AI agents from OpenAI, Anthropic, Meta, and other vendors. The attacker leverages trusted AI company bot identities to probe for publicly accessible data and evade detection. Security teams should monitor anomalous bot user-agent strings and restrict public access to sensitive endpoints to counter this reconnaissance.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyber-risk/attacker-impersonates-ai-bots-scans-credentials",
+    "publishedAt": "2026-10-28T14:37:52.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-bot-impersonation-used-for-credential-scanning",
+      "article-5eded3",
+      "5eded3"
+    ]
+  },
+  {
+    "slug": "windows-imaging-component-information-disclosure-p-745d86",
+    "title": "Windows Imaging Component Information Disclosure Patched",
+    "summary": "Microsoft disclosed CVE-2026-62740, an information disclosure vulnerability in the Windows Imaging Component affecting supported editions of Microsoft Office. The flaw allows unauthorized access to sensitive data through improper handling of image processing operations. Microsoft recommends customers install the latest security updates across all affected Office editions to remediate the issue.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62740",
+    "publishedAt": "2026-10-28T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-62740"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "windows-imaging-component-information-disclosure-p",
+      "article-745d86",
+      "745d86",
+      "windows-imaging-component-information-disclosure-patched"
+    ]
+  },
+  {
+    "slug": "banks-block-third-party-ai-agents-from-accounts-669fa8",
+    "title": "Banks Block Third-Party AI Agents From Accounts",
+    "summary": "Banks are blocking third-party AI agents from accessing customer accounts, citing security risks to account integrity. The concern centers on unauthorized access and potential misuse of customer financial data by external AI systems. Financial institutions are implementing access restrictions to mitigate risks posed by autonomous third-party agents interacting with banking platforms.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/10/banks-are-blocking-ai-agents-from-customer-accounts",
+    "publishedAt": "2026-10-28T13:38:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "banks-block-third-party-ai-agents-from-accounts",
+      "article-669fa8",
+      "669fa8"
+    ]
+  },
+  {
+    "slug": "cisa-flags-actively-exploited-vmware-and-linux-fla-50dc05",
+    "title": "CISA Flags Actively Exploited VMware and Linux Flaws",
+    "summary": "CISA added CVE-2026-41709 (Broadcom VMware ESX insufficient logging) and CVE-2026-46300 (Linux kernel missing variable initialization) to its Known Exploited Vulnerabilities catalog based on evidence of active exploitation. Both flaws represent frequent attack vectors for malicious actors targeting federal enterprise infrastructure. BOD 26-04 mandates FCEB agencies prioritize rapid remediation of KEV-listed vulnerabilities on publicly exposed assets.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/28/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-28T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-41709",
+      "CVE-2026-46300"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-flags-actively-exploited-vmware-and-linux-fla",
+      "article-50dc05",
+      "50dc05",
+      "cisa-flags-actively-exploited-vmware-and-linux-flaws"
+    ]
+  },
+  {
     "slug": "fbi-seizes-domain-of-hosting-provider-allegedly-fa-57e04e",
     "title": "FBI Seizes Domain of Hosting Provider Allegedly Facilitating Child Abuse and Money Laundering",
     "summary": "The FBI seized the domain of a bullet‑proof hosting provider that allegedly facilitated child sexual abuse material distribution and money laundering. The operation targeted the provider’s infrastructure, disrupting its services and preventing further criminal activity through its hosting network. No public patch is required; security teams should monitor for related domain registrations and enforce strict domain registration policies.",
@@ -85,6 +554,23 @@ export const news: NewsBrief[] = [
       "article-533abd",
       "533abd",
       "adobe-issues-patches-for-eight-critical-campaign-classic-vul"
+    ]
+  },
+  {
+    "slug": "chrome-and-firefox-patch-serious-security-flaws-2bca28",
+    "title": "Chrome and Firefox Patch Serious Security Flaws",
+    "summary": "Google and Mozilla released security updates for Chrome and Firefox on October 27, 2026, addressing serious security flaws in both browsers. The patches remediate vulnerabilities that could be exploited to compromise user sessions or execute malicious code within the browser environment. Users should install the updates immediately to close the exposure window and reduce attack surface.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/10/chrome-and-firefox-updates-fix-serious-security-flaws-install-them-now",
+    "publishedAt": "2026-10-28T11:13:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-and-firefox-patch-serious-security-flaws",
+      "article-2bca28",
+      "2bca28"
     ]
   },
   {
@@ -232,6 +718,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "node2shell-brotli-flaw-under-active-exploitation-563a99",
+    "title": "Node2Shell Brotli Flaw Under Active Exploitation",
+    "summary": "Sophos Threat Research confirms active exploitation of Node2Shell (CVE-2026-111497), a vulnerability in the Brotli compression library. The flaw is being actively exploited in the wild, representing an urgent remote threat to systems processing Brotli-compressed data. Security teams should apply vendor patches immediately and monitor for exploitation indicators on affected infrastructure.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Sophos Threat Research",
+    "sourceUrl": "https://www.sophos.com/en-us/blog/node2shell-cve-2026-111497-in-active-exploitation",
+    "publishedAt": "2026-10-28T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-111497"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "node2shell-brotli-flaw-under-active-exploitation",
+      "article-563a99",
+      "563a99"
+    ]
+  },
+  {
     "slug": "gmo-group-advises-shutdown-amid-ransomware-threat-6b8c08",
     "title": "GMO Group Advises Shutdown Amid Ransomware Threat",
     "summary": "A threat actor breached GMO Group’s Onamae Desktop Cloud and threatened a ransomware attack, prompting the company to advise customers to disconnect and shut down systems. The threat exploits compromised credentials to gain remote access, potentially encrypting user data. GMO has released a mitigation guide and urges immediate network isolation.",
@@ -281,6 +786,24 @@ export const news: NewsBrief[] = [
       "ai-liability-mitigation-frameworks-for-cisos",
       "article-221f17",
       "221f17"
+    ]
+  },
+  {
+    "slug": "ubuntu-patches-brotli-denial-of-service-and-code-e-7fbd64",
+    "title": "Ubuntu Patches Brotli Denial-of-Service and Code Execution Flaw",
+    "summary": "Ubuntu released USN-8956-2 to address a Brotli vulnerability affecting Ubuntu 16.04 LTS, 18.04 LTS, and 20.04 LTS. The flaw involves incorrect handling of certain compressed streams, allowing a remote attacker to cause denial of service or execute arbitrary code. Administrators should apply the update immediately to mitigate remote exploitation risk on affected releases.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8956-2",
+    "publishedAt": "2026-10-27T21:14:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-patches-brotli-denial-of-service-and-code-e",
+      "article-7fbd64",
+      "7fbd64",
+      "ubuntu-patches-brotli-denial-of-service-and-code-execution-f"
     ]
   },
   {
@@ -661,6 +1184,29 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "mitsubishi-electric-patches-multiple-ics-product-v-41cb8a",
+    "title": "Mitsubishi Electric Patches Multiple ICS Product Vulnerabilities",
+    "summary": "CISA issued a CSAF advisory for multiple vulnerabilities in Mitsubishi Electric GENESIS, GENESIS64, ICONICS Suite, and related industrial products enabling arbitrary code execution and authentication bypass. The flaws (CVE-2023-4863, CVE-2026-16436, CVE-2026-16437, CVE-2026-16438) permit remote code execution, credential bypass, and arbitrary operations leading to data tampering, destruction, and denial-of-service conditions. Affected versions include GENESIS64 and ICONICS Suite 10.97 and up",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-02",
+    "publishedAt": "2026-10-27T12:00:00.000Z",
+    "cves": [
+      "CVE-2023-4863",
+      "CVE-2026-16436",
+      "CVE-2026-16437",
+      "CVE-2026-16438"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "mitsubishi-electric-patches-multiple-ics-product-v",
+      "article-41cb8a",
+      "41cb8a",
+      "mitsubishi-electric-patches-multiple-ics-product-vulnerabili"
+    ]
+  },
+  {
     "slug": "epics-base-integer-overflow-vulnerability-cve-2026-41cb8a",
     "title": "EPICS Base Integer Overflow Vulnerability (CVE-2026-114595) Enables Remote Code Execution",
     "summary": "An integer overflow in EPICS Base release 7.0.10 and prior allows an attacker to cause memory corruption, potentially leading to arbitrary code execution or denial‑of‑service. The flaw arises from improper handling of network request lengths, resulting in incorrect memory allocation and type confusion. EPICS has released a patch; operators should update to the latest release and monitor for anomalous activity.",
@@ -678,6 +1224,23 @@ export const news: NewsBrief[] = [
       "article-41cb8a",
       "41cb8a",
       "epics-base-integer-overflow-vulnerability-cve-2026-114595-en"
+    ]
+  },
+  {
+    "slug": "research-proves-ai-models-can-hide-backdoors-21fd94",
+    "title": "Research Proves AI Models Can Hide Backdoors",
+    "summary": "Researchers demonstrated that AI models can embed encrypted neural networks within host weights, executing only upon a secret trigger. The proof-of-concept, implemented in PyTorch, uses digital lockers to make hidden circuits provably hard to elicit under cryptographic assumptions even with full weight access. The work extends prior hiding techniques from fixed strings to arbitrary computations",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/hiding-capabilities-in-ai-models.html",
+    "publishedAt": "2026-10-27T11:01:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "research-proves-ai-models-can-hide-backdoors",
+      "article-21fd94",
+      "21fd94"
     ]
   },
   {
@@ -1202,6 +1765,23 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "apple-releases-ios-27-2-security-update-6dc785",
+    "title": "Apple Releases iOS 27.2 Security Update",
+    "summary": "Apple released iOS 27.2 build 24B91020 as a scheduled security update for iPhone devices. The release addresses undisclosed vulnerabilities in the operating system, consistent with Apple's routine patch cadence for mobile platforms. Users should install the update promptly to close any unpatched attack surface in the iOS kernel and system frameworks",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Apple Security Updates",
+    "sourceUrl": "https://developer.apple.com/news/releases/?id=10262026a",
+    "publishedAt": "2026-10-26T17:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-releases-ios-27-2-security-update",
+      "article-6dc785",
+      "6dc785"
+    ]
+  },
+  {
     "slug": "ukraine-confirms-starlink-connectivity-restored-af-420079",
     "title": "Ukraine Confirms Starlink Connectivity Restored After Misuse Allegations",
     "summary": "Ukraine's Defense Minister confirmed that Starlink and Starshield satellite connectivity has been restored after alleged misuse claims. The restoration follows a brief outage that prompted speculation about potential military exploitation of the commercial network. Operators should verify service integrity and monitor for anomalous traffic patterns to ensure continued secure communications.",
@@ -1274,6 +1854,47 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "ubuntu-patches-multiple-nginx-rce-and-dos-flaws-7fbd68",
+    "title": "Ubuntu Patches Multiple nginx RCE and DoS Flaws",
+    "summary": "Ubuntu released USN-8955-1 addressing multiple nginx vulnerabilities including CVE-2026-15176, CVE-2026-93479, and CVE-2026-95101. The flaws involve incorrect handling of alias directives with rewrite rules and map regex matching, enabling remote unauthenticated attackers to trigger denial of service or execute arbitrary code, while CVE-2026-95101 permits data injection into proxied HTTP/3 requests on Ubuntu 26.04 LTS and 26.10.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8955-1",
+    "publishedAt": "2026-10-26T15:34:05.000Z",
+    "cves": [
+      "CVE-2026-15176",
+      "CVE-2026-93479",
+      "CVE-2026-95101"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-patches-multiple-nginx-rce-and-dos-flaws",
+      "article-7fbd68",
+      "7fbd68"
+    ]
+  },
+  {
+    "slug": "eset-details-two-critical-php-vulnerabilities-65a2c4",
+    "title": "ESET Details Two Critical PHP Vulnerabilities",
+    "summary": "ESET published guidance on two critical PHP vulnerabilities, CVE-2026-109618 and CVE-2026-109619, affecting PHP-based web applications. The flaws are classified as critical severity, posing significant risk to unpatched PHP deployments exposed to the internet. Website owners and IT teams should apply vendor patches and review PHP configurations to mitigate exploitation risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ESET WeLiveSecurity",
+    "sourceUrl": "https://www.welivesecurity.com/en/videos/php2shell-what-know-two-critical-php-flaws/",
+    "publishedAt": "2026-10-26T13:25:00.000Z",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "eset-details-two-critical-php-vulnerabilities",
+      "article-65a2c4",
+      "65a2c4"
+    ]
+  },
+  {
     "slug": "kali-linux-2026-3-release-adds-kernel-7-1-5-and-wa-4343c9",
     "title": "Kali Linux 2026.3 Release Adds Kernel 7.1.5 and Wardriving Support for TicWatch Pro 3",
     "summary": "Kali Linux 2026.3 release includes kernel 7.1.5 and wardriving support for TicWatch Pro 3. The update overhauls public build scripts, enabling containerized builds with Docker or Podman, and maintains compatibility with older script pipelines. Users should review and adjust pipeline scripts accordingly and test builds in container environments to ensure functionality.",
@@ -1289,6 +1910,24 @@ export const news: NewsBrief[] = [
       "article-4343c9",
       "4343c9",
       "kali-linux-2026-3-release-adds-kernel-7-1-5-and-wardriving-s"
+    ]
+  },
+  {
+    "slug": "github-actions-residual-attack-surface-persists-po-687789",
+    "title": "GitHub Actions Residual Attack Surface Persists Post-2026 Changes",
+    "summary": "Wiz Research identified residual attack surface in GitHub Actions following the platform's 2026 pull_request_target security changes. While updated configurations reduce untrusted code execution feasibility, certain misconfigured workflows remain exploitable by malicious actors. Security teams should audit existing workflows for residual pull_request_target exposure and restrict permissions on untrusted event triggers.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Wiz Research",
+    "sourceUrl": "https://www.wiz.io/blog/github-actions-security-pwn-request-reckoning",
+    "publishedAt": "2026-10-26T13:24:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "github-actions-residual-attack-surface-persists-po",
+      "article-687789",
+      "687789",
+      "github-actions-residual-attack-surface-persists-post-2026-ch"
     ]
   },
   {
@@ -1448,6 +2087,24 @@ export const news: NewsBrief[] = [
       "article-f13606",
       "f13606",
       "soc-alert-overload-hinders-attack-visibility-ndr-offers-solu"
+    ]
+  },
+  {
+    "slug": "qwen3-coder-model-embeds-geopolitical-bias-in-gene-7260dd",
+    "title": "Qwen3-Coder Model Embeds Geopolitical Bias in Generated Code",
+    "summary": "Researchers demonstrated that Qwen3-Coder's model weights contain geopolitical alignment triggers that degrade the security of generated code based on target audience. Prompting the model for a US defense contractor increases the likelihood of producing vulnerable applications by 19 percent compared to a Chinese defense contractor. Removing the model's CCP alignment from its weights eliminates the bias entirely.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/bias-in-qwen3-coder-model.html",
+    "publishedAt": "2026-10-26T11:03:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "qwen3-coder-model-embeds-geopolitical-bias-in-gene",
+      "article-7260dd",
+      "7260dd",
+      "qwen3-coder-model-embeds-geopolitical-bias-in-generated-code"
     ]
   },
   {
@@ -1964,6 +2621,26 @@ export const news: NewsBrief[] = [
       "article-4fc642",
       "4fc642",
       "cve-2026-109618-and-cve-2026-109619-impact-palo-alto-network"
+    ]
+  },
+  {
+    "slug": "aws-systems-manager-agent-ssrf-vulnerability-patch-4de25e",
+    "title": "AWS Systems Manager Agent SSRF Vulnerability Patched",
+    "summary": "AWS issued a security bulletin for CVE-2026-89049, a server-side request forgery flaw in the Session Manager port forwarding functionality of AWS Systems Manager Agent. The vulnerability allows an attacker to craft requests that bypass intended network boundaries through the port forwarding mechanism. AWS recommends updating the Systems Manager Agent to the latest patched version to remediate the exposure.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-107-aws/",
+    "publishedAt": "2026-10-25T03:13:38.000Z",
+    "cves": [
+      "CVE-2026-89049"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "aws-systems-manager-agent-ssrf-vulnerability-patch",
+      "article-4de25e",
+      "4de25e",
+      "aws-systems-manager-agent-ssrf-vulnerability-patched"
     ]
   },
   {
@@ -5826,684 +6503,6 @@ export const news: NewsBrief[] = [
       "article-60db8d",
       "60db8d",
       "eu-cyber-resilience-act-does-not-mandate-fixes-for-fridge-co"
-    ]
-  },
-  {
-    "slug": "ai-powered-antidetect-browsers-facilitate-large-sc-761f0b",
-    "title": "AI-Powered Antidetect Browsers Facilitate Large-Scale Online Fraud",
-    "summary": "Antidetect browsers hide users’ digital footprints, allowing operators to run thousands of isolated accounts across major social platforms. This capability enables coordinated fraud and influence campaigns without triggering platform detection, posing a significant threat to online security and user trust.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Check Point Research",
-    "sourceUrl": "https://research.checkpoint.com/2026/the-risk-of-ai-powered-antidetect-browsers-in-online-fraud-and-influence-operations/",
-    "publishedAt": "2026-10-20T14:17:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-powered-antidetect-browsers-facilitate-large-sc",
-      "article-761f0b",
-      "761f0b",
-      "ai-powered-antidetect-browsers-facilitate-large-scale-online"
-    ]
-  },
-  {
-    "slug": "incomplete-security-patches-provide-attackers-clea-6cd99c",
-    "title": "Incomplete Security Patches Provide Attackers Clear Bypass Paths",
-    "summary": "Security patches are increasingly incomplete, providing attackers with clear bypass paths. A Terra Security researcher tracked broken fixes across CVE records, finding a pattern where a patch is released, a bypass is discovered, and a new patch follows. The trend highlights the need for rigorous validation before deployment.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/ncomplete-security-patches-broken-fixes-rise/",
-    "publishedAt": "2026-10-20T14:13:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "incomplete-security-patches-provide-attackers-clea",
-      "article-6cd99c",
-      "6cd99c",
-      "incomplete-security-patches-provide-attackers-clear-bypass-p"
-    ]
-  },
-  {
-    "slug": "autonomous-ai-agents-breach-over-1-200-company-web-3635ea",
-    "title": "Autonomous AI Agents Breach Over 1,200 Company Websites",
-    "summary": "Autonomous AI agents, controlled by a Chinese-speaking criminal, targeted over 1,200 company websites, successfully breaching more than 100 sites including Deere and appliance manufacturers. Operators left control panels exposed online, allowing researchers to observe the attacks. The breach demonstrates automated exploitation of web application weaknesses without manual intervention.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/hackers-use-autonomous-ai-agents-to.html",
-    "publishedAt": "2026-10-20T14:07:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "autonomous-ai-agents-breach-over-1-200-company-web",
-      "article-3635ea",
-      "3635ea",
-      "autonomous-ai-agents-breach-over-1-200-company-websites"
-    ]
-  },
-  {
-    "slug": "anti-putin-messages-disrupt-nationwide-school-asse-6c3704",
-    "title": "Anti-Putin Messages Disrupt Nationwide School Assessments in Russia",
-    "summary": "A pro-Ukraine group claiming to operate within Russia injected anti-Putin messages into a nationwide school assessment platform, disrupting evaluations. Authorities restored the system after the attack. The incident highlights political interference in educational infrastructure but no evidence of data theft or credential compromise.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/anti-putin-messages-disrupt-russian-education-platform",
-    "publishedAt": "2026-10-20T14:05:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "anti-putin-messages-disrupt-nationwide-school-asse",
-      "article-6c3704",
-      "6c3704",
-      "anti-putin-messages-disrupt-nationwide-school-assessments-in"
-    ]
-  },
-  {
-    "slug": "cjis-v6-1-compliance-five-practical-priorities-for-4da26c",
-    "title": "CJIS v6.1 Compliance: Five Practical Priorities for Agencies",
-    "summary": "CJIS v6.1 mandates agencies to enforce strong authentication, account security, and audit controls. Specops recommends prioritizing MFA, account management, password policies, logging, and audit readiness to meet compliance requirements and maintain secure operations.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cjis-v61-compliance-5-practical-priorities-for-agencies/",
-    "publishedAt": "2026-10-20T13:51:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cjis-v6-1-compliance-five-practical-priorities-for",
-      "article-4da26c",
-      "4da26c",
-      "cjis-v6-1-compliance-five-practical-priorities-for-agencies"
-    ]
-  },
-  {
-    "slug": "developers-ai-adoption-curve-determines-security-r-447761",
-    "title": "Developers’ AI Adoption Curve Determines Security Risk",
-    "summary": "Developers’ position on the AI adoption curve directly influences security risk. The article argues that maturity, not speed, is the key to protecting AI software. It outlines how early adopters may overlook foundational controls, while mature teams implement layered defenses, continuous testing, and governance to mitigate emerging threats.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/the-key-to-ai-software-security-isnt-speed-its-maturity/",
-    "publishedAt": "2026-10-20T13:34:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "developers-ai-adoption-curve-determines-security-r",
-      "article-447761",
-      "447761",
-      "developers-ai-adoption-curve-determines-security-risk"
-    ]
-  },
-  {
-    "slug": "threatmodeler-launches-nexusai-for-automated-threa-487fe2",
-    "title": "ThreatModeler Launches NexusAI for Automated Threat Modeling",
-    "summary": "ThreatModeler introduces NexusAI, an AI‑powered tool integrated into its Nexus platform. The solution automates threat model creation, analysis, and maintenance, allowing security teams to scale risk assessment without increasing manual effort. NexusAI monitors architectural changes and recommends security updates to keep applications secure as development accelerates.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/threatmodeler-nexusai/",
-    "publishedAt": "2026-10-20T13:17:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "threatmodeler-launches-nexusai-for-automated-threa",
-      "article-487fe2",
-      "487fe2",
-      "threatmodeler-launches-nexusai-for-automated-threat-modeling"
-    ]
-  },
-  {
-    "slug": "android-firmware-malware-disables-google-play-prot-3e0346",
-    "title": "Android Firmware Malware Disables Google Play Protections",
-    "summary": "A widespread firmware-based malware campaign, named Midnight Mimosa, infects thousands of Android phones in over 150 countries. The malware installs and removes apps silently, disabling Google Play Protect and granting attackers full system access without user interaction. The attack bypasses app store safeguards, enabling persistent compromise of low‑cost devices.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/thousands-of-android-phones/",
-    "publishedAt": "2026-10-20T13:15:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "android-firmware-malware-disables-google-play-prot",
-      "article-3e0346",
-      "3e0346",
-      "android-firmware-malware-disables-google-play-protections"
-    ]
-  },
-  {
-    "slug": "identos-launches-policyarc-for-ai-agent-access-con-675754",
-    "title": "IDENTOS Launches PolicyArc for AI Agent Access Control",
-    "summary": "IDENTOS has released PolicyArc, a solution that centralizes definition, enforcement, and audit of access policies for applications, including AI agents. The tool provides task‑specific, time‑limited permissions, extending secure access beyond people and services. Built on 12 years of identity and access work, it targets government and healthcare sectors.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/identos-policyarc/",
-    "publishedAt": "2026-10-20T13:09:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "identos-launches-policyarc-for-ai-agent-access-con",
-      "article-675754",
-      "675754",
-      "identos-launches-policyarc-for-ai-agent-access-control"
-    ]
-  },
-  {
-    "slug": "cloudflare-releases-tsrs-a-rust-port-of-typescript-1473c1",
-    "title": "Cloudflare Releases tsrs, a Rust Port of TypeScript",
-    "summary": "Cloudflare has unveiled tsrs, a Rust implementation of TypeScript that claims up to eight times faster execution and 70% lower memory usage. The project aims to improve performance for developers migrating from JavaScript to Rust while maintaining TypeScript compatibility.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/typescript-rust-port/",
-    "publishedAt": "2026-10-20T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-releases-tsrs-a-rust-port-of-typescript",
-      "article-1473c1",
-      "1473c1"
-    ]
-  },
-  {
-    "slug": "pegasus-spyware-infected-serbian-university-rector-4e97f1",
-    "title": "Pegasus Spyware Infected Serbian University Rector’s iPhone",
-    "summary": "NSO Group’s Pegasus spyware infected the iPhone of Vladan Đokić, rector of the University of Belgrade, using a zero‑click exploit. The infection was discovered six days before Serbia’s snap parliamentary election. The attack demonstrates state‑sponsored espionage targeting political figures.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/pegasus-spyware-infection-confirmed-on.html",
-    "publishedAt": "2026-10-20T12:59:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "pegasus-spyware-infected-serbian-university-rector",
-      "article-4e97f1",
-      "4e97f1",
-      "pegasus-spyware-infected-serbian-university-rector-s-iphone"
-    ]
-  },
-  {
-    "slug": "ex-openai-worker-accused-of-bug-in-the-air-surveil-25a3ed",
-    "title": "Ex‑OpenAI Worker Accused of Bug‑in‑the‑Air Surveillance",
-    "summary": "An ex‑OpenAI employee, Abdulrahman Alfozan, is accused of installing a bug‑in‑the‑air device in a conference room and planning to fly to Saudi Arabia. Prosecutors claim the device was used to eavesdrop on meetings, raising concerns about insider espionage and physical surveillance tactics.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/ex-openai-worker-accused-of-bugging-conference-room-planned-to-fly-to-saudi-arabia-prosecutors-say/",
-    "publishedAt": "2026-10-20T12:33:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ex-openai-worker-accused-of-bug-in-the-air-surveil",
-      "article-25a3ed",
-      "25a3ed",
-      "ex-openai-worker-accused-of-bug-in-the-air-surveillance"
-    ]
-  },
-  {
-    "slug": "escalation-of-malicious-calendar-invite-attacks-2d683f",
-    "title": "Escalation of Malicious Calendar Invite Attacks",
-    "summary": "Malicious calendar invites have surged, with Check Point reporting over 118,000 such emails in September 2026 and Sublime Security noting a 1,216% month-over-month increase. The attacks target users via email, delivering phishing payloads or malware. Organizations should enforce stricter email filtering and user training to counter this trend.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/malicious-calendar-invites/",
-    "publishedAt": "2026-10-20T12:18:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "escalation-of-malicious-calendar-invite-attacks",
-      "article-2d683f",
-      "2d683f"
-    ]
-  },
-  {
-    "slug": "hitachi-energy-rtu500-firmware-vulnerabilities-exp-430032",
-    "title": "Hitachi Energy RTU500 Firmware Vulnerabilities Expose Critical Infrastructure",
-    "summary": "Hitachi Energy identified multiple vulnerabilities in RTU500 series CMU firmware versions 13.5.1 through 12.7.1. The flaws include NULL pointer dereference, type confusion, use‑after‑free, cleartext transmission, weak credential protection, and authentication bypass. Exploitation could compromise confidentiality, integrity, and availability. Immediate patching or mitigation is required.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-05",
-    "publishedAt": "2026-10-20T12:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hitachi-energy-rtu500-firmware-vulnerabilities-exp",
-      "article-430032",
-      "430032",
-      "hitachi-energy-rtu500-firmware-vulnerabilities-expose-critic"
-    ]
-  },
-  {
-    "slug": "security-teams-adopt-ai-assisted-workflow-to-manag-24719c",
-    "title": "Security Teams Adopt AI‑Assisted Workflow to Manage Wild Code",
-    "summary": "A sales manager implements an AI‑assisted workflow that routes leads, accesses customer records, summarizes inbound requests, and posts updates to a shared channel. The automation reduces manual effort and becomes integral to daily operations, while other employees accelerate app and agent development beyond existing process capacity.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/what-security-teams-can-do-to-tame-wild.html",
-    "publishedAt": "2026-10-20T11:33:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "security-teams-adopt-ai-assisted-workflow-to-manag",
-      "article-24719c",
-      "24719c",
-      "security-teams-adopt-ai-assisted-workflow-to-manage-wild-cod"
-    ]
-  },
-  {
-    "slug": "possible-new-cellebrite-iphone-radio-zero-day-expl-6473ce",
-    "title": "Possible New Cellebrite iPhone Radio Zero‑Day Exploit",
-    "summary": "A confidential Cellebrite document leaked to Justin.sh describes a new Advanced Unlocks (AU) product that includes a radio‑based zero‑day vector targeting iPhone devices. The exploit operates over a short range and bypasses Apple’s Stolen Device Protection, potentially allowing attackers to gain unauthorized access to locked iPhones.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Schneier on Security",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/possible-new-cellebrite-iphone-radio-zero-day.html",
-    "publishedAt": "2026-10-20T11:03:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "possible-new-cellebrite-iphone-radio-zero-day-expl",
-      "article-6473ce",
-      "6473ce",
-      "possible-new-cellebrite-iphone-radio-zero-day-exploit"
-    ]
-  },
-  {
-    "slug": "threatbook-unveils-redagents-ai-platform-for-autom-5a8ff5",
-    "title": "ThreatBook Unveils RedAgents AI Platform for Automated Penetration Testing",
-    "summary": "ThreatBook introduced RedAgents, a cloud-based platform that aggregates multiple AI-driven penetration-testing agents to identify security weaknesses within authorized scopes. The service automates diverse tests, enabling security teams to assess network vulnerabilities efficiently. No public exploits or vulnerabilities are disclosed.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/redagents-ai-platform/",
-    "publishedAt": "2026-10-20T10:41:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "threatbook-unveils-redagents-ai-platform-for-autom",
-      "article-5a8ff5",
-      "5a8ff5",
-      "threatbook-unveils-redagents-ai-platform-for-automated-penet"
-    ]
-  },
-  {
-    "slug": "extend-verify-launches-document-fraud-detection-ap-8ebe07",
-    "title": "Extend Verify Launches Document Fraud Detection API for AI Agents",
-    "summary": "Extend has released Extend Verify, a document fraud detection API that enables developers and AI agents to assess the integrity of documents before using them in decision processes. The service targets common fraud scenarios such as forged bank statements, invoices, and receipts, aiming to reduce reliance on human reviewers.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/extend-verify/",
-    "publishedAt": "2026-10-20T10:08:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "extend-verify-launches-document-fraud-detection-ap",
-      "article-8ebe07",
-      "8ebe07",
-      "extend-verify-launches-document-fraud-detection-api-for-ai-a"
-    ]
-  },
-  {
-    "slug": "meta-glasses-record-private-conversations-without-6a1038",
-    "title": "Meta Glasses Record Private Conversations Without Wake Phrase",
-    "summary": "Owners of Meta glasses reported that the devices recorded private conversations without the required wake phrase. Meta has not clarified the cause or the handling of the captured audio, raising concerns about unauthorized data capture and privacy violations.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/meta-says-it-fixed-smart-glasses-unprompted-eavesdropping",
-    "publishedAt": "2026-10-20T10:06:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "meta-glasses-record-private-conversations-without",
-      "article-6a1038",
-      "6a1038",
-      "meta-glasses-record-private-conversations-without-wake-phras"
-    ]
-  },
-  {
-    "slug": "man-traveled-2-000-km-to-meet-ai-generated-woman-a-2d0c9e",
-    "title": "Man Traveled 2,000 km to Meet AI‑Generated Woman After Influencer’s Invitation",
-    "summary": "A man traveled 2,000 km to meet an AI‑generated woman after following an influencer’s invitation to a farm. The incident illustrates how public videos can create misleading personal connections, raising concerns about online privacy and the psychological impact of synthetic media. No security breach was reported.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/scams/2026/10/man-seeking-love-travels-2000-km-to-meet-an-ai-generated-woman",
-    "publishedAt": "2026-10-20T09:44:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "man-traveled-2-000-km-to-meet-ai-generated-woman-a",
-      "article-2d0c9e",
-      "2d0c9e",
-      "man-traveled-2-000-km-to-meet-ai-generated-woman-after-influ"
-    ]
-  },
-  {
-    "slug": "mastercard-launches-stablecoin-security-solution-68f72c",
-    "title": "Mastercard Launches Stablecoin Security Solution",
-    "summary": "Mastercard introduces Stablecoin Security, a risk intelligence platform partnering with Borderless.xyz and Keyrails. The solution maps fraud, scams, sanctions, and other financial‑crime indicators across stablecoin payment flows, enabling institutions to assess risk before on‑chain fund movement.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/mastercard-stablecoin-security/",
-    "publishedAt": "2026-10-20T06:25:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "mastercard-launches-stablecoin-security-solution",
-      "article-68f72c",
-      "68f72c"
-    ]
-  },
-  {
-    "slug": "easydmarc-partners-with-gmo-globalsign-to-strength-240e21",
-    "title": "EasyDMARC partners with GMO GlobalSign to strengthen email authentication and branding",
-    "summary": "EasyDMARC has teamed with GMO GlobalSign to enable organizations to set up trusted email identities via DNS security, sender authentication, and verified branding. The collaboration aims to reduce risks from new DNS records and authentication requirements that can affect security, deliverability, and brand reputation.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/easydmarc-gmo-globalsign-partnership/",
-    "publishedAt": "2026-10-20T06:00:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "easydmarc-partners-with-gmo-globalsign-to-strength",
-      "article-240e21",
-      "240e21",
-      "easydmarc-partners-with-gmo-globalsign-to-strengthen-email-a"
-    ]
-  },
-  {
-    "slug": "romulus-clickfix-platform-distributes-legionloader-34a70b",
-    "title": "ROMULUS ClickFix Platform Distributes LegionLoader Malware",
-    "summary": "Researchers identified ROMULUS, a ClickFix-style delivery platform that hosts bogus landing pages to lure users into executing malicious commands, distributing LegionLoader and other malware. The platform mimics legitimate sites, tricking users into running payloads that compromise systems.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/romulus-clickfix-platform-tricks-users.html",
-    "publishedAt": "2026-10-20T04:05:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "romulus-clickfix-platform-distributes-legionloader",
-      "article-34a70b",
-      "34a70b",
-      "romulus-clickfix-platform-distributes-legionloader-malware"
-    ]
-  },
-  {
-    "slug": "cloudflare-introduces-clairic-a-token-free-invoice-b8d2c6",
-    "title": "Cloudflare Introduces Clairic, a Token‑Free Invoice Extraction Model",
-    "summary": "Cloudflare unveiled Clairic, a model that extracts typed values from text and images in a single pass without generating tokens. In tests on a damaged‑product claim, Clairic completed the task in 19.3 seconds versus 61.7 seconds for an LLM‑based version, cutting costs by 49%.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/cloudflare-ai-clairic-extraction-model/",
-    "publishedAt": "2026-10-20T03:45:03.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Cloudflare Security",
-        "sourceUrl": "https://blog.cloudflare.com/clairic-extraction-model/"
-      }
-    ],
-    "aliases": [
-      "cloudflare-introduces-clairic-a-token-free-invoice",
-      "article-b8d2c6",
-      "b8d2c6",
-      "cloudflare-introduces-clairic-a-token-free-invoice-extractio"
-    ]
-  },
-  {
-    "slug": "claude-ai-detects-hidden-xmrig-crypto-miner-on-dev-67928d",
-    "title": "Claude AI Detects Hidden XMRig Crypto Miner on Developer’s Mac",
-    "summary": "During a temperature monitoring app build, Claude Code flagged unusually high CPU usage. Investigation revealed XMRig mining software consuming ~1,175% CPU across 12 cores. The miner was running covertly on the developer’s Mac, diverting processing power for cryptocurrency mining.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/claude-ai-detects-hidden-crypto-miner/",
-    "publishedAt": "2026-10-20T02:49:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "claude-ai-detects-hidden-xmrig-crypto-miner-on-dev",
-      "article-67928d",
-      "67928d",
-      "claude-ai-detects-hidden-xmrig-crypto-miner-on-developer-s-m"
-    ]
-  },
-  {
-    "slug": "researchers-penetrate-microsoft-tech-support-scam-312422",
-    "title": "Researchers Penetrate Microsoft Tech Support Scam Operation",
-    "summary": "Security researchers infiltrated a large‑scale Microsoft impersonation scam that uses a malicious traffic distribution system operated by a Russian organization. The operation abuses thousands of Cloudflare links to route traffic to malicious destinations.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/threat-intelligence/microsoft-tech-support-scam-operation",
-    "publishedAt": "2026-10-19T21:13:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "researchers-penetrate-microsoft-tech-support-scam",
-      "article-312422",
-      "312422",
-      "researchers-penetrate-microsoft-tech-support-scam-operation"
-    ]
-  },
-  {
-    "slug": "adfection-exploits-zero-click-ad-delivery-for-spyw-36726c",
-    "title": "AdFection Exploits Zero-Click Ad Delivery for Spyware",
-    "summary": "AdFection leverages targeted ad bidding to deliver spyware without user interaction, enabling stealth tracking of individuals and organizations. The technique uses ad impressions as a vector, bypassing traditional click-based infection methods. Mitigation requires monitoring ad traffic and blocking suspicious ad exchanges.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/data-privacy/adfection-online-ads-spyware-delivery",
-    "publishedAt": "2026-10-19T19:55:01.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/israeli-ad-firm-doubled-as-candirus-zero-click-spyware-delivery-channel/"
-      }
-    ],
-    "aliases": [
-      "adfection-exploits-zero-click-ad-delivery-for-spyw",
-      "article-36726c",
-      "36726c",
-      "adfection-exploits-zero-click-ad-delivery-for-spyware"
-    ]
-  },
-  {
-    "slug": "judge-denies-whatsapp-s-bid-to-hold-spyware-maker-56a8b6",
-    "title": "Judge denies WhatsApp’s bid to hold spyware maker in contempt",
-    "summary": "A federal judge rejected WhatsApp’s request to hold NSO Group in contempt over alleged spyware use. WhatsApp claimed NSO violated a 2025 injunction. The judge ruled WhatsApp failed to provide sufficient information, weakening its case. The decision limits legal leverage against the spyware maker.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/whatsapp-denied-appeal-alleged-nso-group-violation-injunction",
-    "publishedAt": "2026-10-19T19:49:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "judge-denies-whatsapp-s-bid-to-hold-spyware-maker",
-      "article-56a8b6",
-      "56a8b6",
-      "judge-denies-whatsapp-s-bid-to-hold-spyware-maker-in-contemp"
-    ]
-  },
-  {
-    "slug": "bright-security-launches-star-fuzzer-agentic-fuzzi-8f49f7",
-    "title": "Bright Security Launches STAR Fuzzer, Agentic Fuzzing Tool",
-    "summary": "Bright Security released STAR Fuzzer, an evolutionary engine that generates its own harnesses and proves findings. The open‑source research run identified high or critical memory‑safety bugs in 45% of tested projects, demonstrating the tool’s effectiveness in uncovering crashes and memory exhaustion without a running application.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/bright-security-introduces-star-fuzzer-agentic-fuzzing-that-writes-its-own-harnesses-and-proves-every-finding/",
-    "publishedAt": "2026-10-19T17:11:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "bright-security-launches-star-fuzzer-agentic-fuzzi",
-      "article-8f49f7",
-      "8f49f7",
-      "bright-security-launches-star-fuzzer-agentic-fuzzing-tool"
-    ]
-  },
-  {
-    "slug": "vk-service-disruptions-after-data-center-drone-str-317c6a",
-    "title": "VK Service Disruptions After Data Center Drone Strike",
-    "summary": "A drone strike on a VK data center caused widespread service disruptions, leading users to report difficulties loading news feeds, playing music, and accessing other platform features. The incident highlights the vulnerability of social media infrastructure to physical attacks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/russian-social-media-giant-vk-faces-disruptions-drone-strike-data-center",
-    "publishedAt": "2026-10-19T15:55:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "vk-service-disruptions-after-data-center-drone-str",
-      "article-317c6a",
-      "317c6a",
-      "vk-service-disruptions-after-data-center-drone-strike"
-    ]
-  },
-  {
-    "slug": "onlyfans-takedowns-reveal-vulnerable-university-an-d3bfd3",
-    "title": "OnlyFans Takedowns Reveal Vulnerable University and Government Sites",
-    "summary": "Attackers use OnlyFans copyright takedown requests to identify and exploit vulnerable university and government websites, manipulating search results. The exploitation leverages weaknesses in site configurations, enabling attackers to alter search rankings. Security teams should audit site hardening and monitor takedown activity for indicators of compromise.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/onlyfans-copyright-takedowns-expose-compromised-websites",
-    "publishedAt": "2026-10-19T14:28:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "onlyfans-takedowns-reveal-vulnerable-university-an",
-      "article-d3bfd3",
-      "d3bfd3",
-      "onlyfans-takedowns-reveal-vulnerable-university-and-governme"
-    ]
-  },
-  {
-    "slug": "weekly-recap-highlights-98-zero-days-rogue-ai-agen-2be436",
-    "title": "Weekly Recap Highlights 98 Zero-Days, Rogue AI Agents, $100M Crypto Theft, 700 Supermarkets Hit",
-    "summary": "The week’s security landscape featured 98 zero‑day vulnerabilities, rogue AI agents, a $100M cryptocurrency theft, and attacks on 700 supermarkets. The report underscores how trusted services, hardware, and legacy bugs can become vectors for widespread damage.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/weekly-recap-98-zero-days-rogue-ai.html",
-    "publishedAt": "2026-10-19T14:14:07.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/nsa-cisa-and-nist-release-guidelines-to-rogue-ai-agents/"
-      }
-    ],
-    "aliases": [
-      "weekly-recap-highlights-98-zero-days-rogue-ai-agen",
-      "article-2be436",
-      "2be436",
-      "weekly-recap-highlights-98-zero-days-rogue-ai-agents-100m-cr"
-    ]
-  },
-  {
-    "slug": "underground-market-offers-forged-kyc-services-to-b-2ca68f",
-    "title": "Underground Market Offers Forged KYC Services to Bypass Verification",
-    "summary": "Cybercriminals sell forged identity documents, deepfake videos, and live verification services to bypass Know Your Client checks. The market provides tools and techniques for creating and maintaining fraudulent verified accounts, enabling illicit access to financial and other regulated services.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/inside-the-underground-market-for-know-your-client-services/",
-    "publishedAt": "2026-10-19T14:00:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "underground-market-offers-forged-kyc-services-to-b",
-      "article-2ca68f",
-      "2ca68f",
-      "underground-market-offers-forged-kyc-services-to-bypass-veri"
-    ]
-  },
-  {
-    "slug": "cybersecurity-focus-shifts-toward-resilience-amid-558fb8",
-    "title": "Cybersecurity Focus Shifts Toward Resilience Amid Rising Vulnerability Discovery",
-    "summary": "Industry analysts note that the relentless emphasis on finding new vulnerabilities has crowded out strategic resilience planning. Security teams report insufficient bandwidth to develop robust defenses, potentially leaving organizations exposed to evolving threats. The trend underscores a need to balance detection with proactive hardening.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/cybersecurity-lexicon-vulnerability-discovery-resilience",
-    "publishedAt": "2026-10-19T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cybersecurity-focus-shifts-toward-resilience-amid",
-      "article-558fb8",
-      "558fb8",
-      "cybersecurity-focus-shifts-toward-resilience-amid-rising-vul"
-    ]
-  },
-  {
-    "slug": "f5-issues-emergency-patches-for-critical-nginx-vul-6e0abe",
-    "title": "F5 Issues Emergency Patches for Critical NGINX Vulnerabilities",
-    "summary": "F5 has issued out‑of‑band security patches addressing multiple critical‑severity flaws in the NGINX web server that could allow remote code execution. The patches mitigate three vulnerabilities that enable attackers to execute arbitrary code on vulnerable systems. Users should apply the updates immediately to prevent exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/f5-releases-out-of-band-patches-for-critical-nginx-vulnerabilities/",
-    "publishedAt": "2026-10-19T13:49:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "f5-issues-emergency-patches-for-critical-nginx-vul",
-      "article-6e0abe",
-      "6e0abe",
-      "f5-issues-emergency-patches-for-critical-nginx-vulnerabiliti"
-    ]
-  },
-  {
-    "slug": "axonius-ai-workforce-expands-asset-intelligence-wi-3cc3f1",
-    "title": "Axonius AI Workforce Expands Asset Intelligence with Automated Remediation",
-    "summary": "Axonius AI Workforce introduces virtual workers that scan environments, detect high‑risk exposures, and remediate deviations from expected states. Actions requiring human‑in‑the‑loop approval are routed through structured checkpoints. The solution consolidates scattered security data across multiple tools into a unified platform.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/19/axonius-ai-workforce/",
-    "publishedAt": "2026-10-19T13:38:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "axonius-ai-workforce-expands-asset-intelligence-wi",
-      "article-3cc3f1",
-      "3cc3f1",
-      "axonius-ai-workforce-expands-asset-intelligence-with-automat"
-    ]
-  },
-  {
-    "slug": "sweet-security-releases-one-click-virtual-patching-292970",
-    "title": "Sweet Security Releases One‑Click Virtual Patching for Cloud Workloads",
-    "summary": "Sweet Security has launched Virtual Patching, a feature that allows security teams to apply immediate protection to running cloud and AI applications against identified vulnerabilities. The solution can be enabled with a single click while developers work on permanent fixes, reducing exposure during patch development cycles.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/19/sweet-security-virtual-patching/",
-    "publishedAt": "2026-10-19T13:28:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sweet-security-releases-one-click-virtual-patching",
-      "article-292970",
-      "292970",
-      "sweet-security-releases-one-click-virtual-patching-for-cloud"
     ]
   }
 ];
