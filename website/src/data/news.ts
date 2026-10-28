@@ -340,42 +340,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "red-hat-openshift-container-platform-4-16-74-secur-37e481",
-    "title": "Red Hat OpenShift Container Platform 4.16.74 Security Update",
-    "summary": "Red Hat released OpenShift Container Platform 4.16.74, addressing multiple bugs and adding enhancements that impact the platform’s security posture. The update includes a security fix for an unspecified vulnerability, with Red Hat Product Security rating the impact as Important and providing CVSS scores via referenced CVE links. Users should apply the 4.16.74 update immediately through the standard Red Hat update channels to mitigate potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89714",
-    "publishedAt": "2026-10-27T18:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-openshift-container-platform-4-16-74-secur",
-      "article-37e481",
-      "37e481",
-      "red-hat-openshift-container-platform-4-16-74-security-update"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-critical-update-for-openshift-con-37da92",
-    "title": "Red Hat Releases Critical Update for OpenShift Container Platform 4.12.102",
-    "summary": "Red Hat released a critical security update for OpenShift Container Platform 4.12.102, addressing multiple bugs that could compromise container workloads. The update carries a security impact rated Critical, with CVSS base scores available for each vulnerability referenced in the advisory. Users should apply the 4.12.102 release immediately to mitigate the identified risks.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:90272",
-    "publishedAt": "2026-10-27T17:59:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-critical-update-for-openshift-con",
-      "article-37da92",
-      "37da92",
-      "red-hat-releases-critical-update-for-openshift-container-pla"
-    ]
-  },
-  {
     "slug": "cve-2026-111497-out-of-bounds-write-in-brotli-libr-58bbdb",
     "title": "CVE‑2026‑111497: Out‑of‑Bounds Write in Brotli Library",
     "summary": "CVE‑2026‑111497 is a remotely exploitable out‑of‑bounds write flaw in Google’s Brotli compression library that affects any application decompressing Brotli data via node:zlib. The flaw, also known as Node2Shell, allows attackers to corrupt process memory, potentially causing crashes or leaking sensitive data, and a PoC exists. Google and Node.",
@@ -735,24 +699,6 @@ export const news: NewsBrief[] = [
       "article-694cac",
       "694cac",
       "maritime-coalition-unveils-open-threat-database-for-port-inf"
-    ]
-  },
-  {
-    "slug": "google-project-zero-compares-fuzzilli-and-bigsleep-75f539",
-    "title": "Google Project Zero Compares Fuzzilli and BigSleep on V8",
-    "summary": "Google Project Zero compared the generative JavaScript engine fuzzer Fuzzilli with the LLM-based bug finder BigSleep against Chrome’s V8 engine. Over six months, BigSleep reported 45 vulnerabilities versus Fuzzilli’s 37, with an estimated 60% overlap in discovered bugs. The study demonstrates that LLMs and fuzzers uncover distinct flaw sets, underscoring their complementary roles in vulnerability discovery.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Project Zero",
-    "sourceUrl": "https://projectzero.google/2026/10/fuzzing-v-AI.html",
-    "publishedAt": "2026-10-27T07:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-project-zero-compares-fuzzilli-and-bigsleep",
-      "article-75f539",
-      "75f539",
-      "google-project-zero-compares-fuzzilli-and-bigsleep-on-v8"
     ]
   },
   {
