@@ -1316,7 +1316,7 @@ export default {
           }
           const htmlHeaders = new Headers({
             'Content-Type': 'text/html; charset=utf-8',
-            'Cache-Control': 'public, max-age=60, s-maxage=300',
+            'Cache-Control': 'public, max-age=0, must-revalidate',
             ...CORS_HEADERS,
             ...SECURITY_HEADERS,
           });
