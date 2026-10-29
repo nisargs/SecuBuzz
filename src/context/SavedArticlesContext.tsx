@@ -15,6 +15,7 @@ import type { Article } from '../models/article';
 import { haptics } from '../utils/haptics';
 
 const SAVED_ARTICLES_KEY = 'secubuzz-saved-articles';
+const LEGACY_SAVED_ARTICLES_KEY = 'secubuzz:saved-articles';
 const FEED_CACHE_KEY = 'cached-articles';
 
 type SavedArticlesContextValue = {
@@ -23,41 +24,48 @@ type SavedArticlesContextValue = {
   isHydrated: boolean;
   isSaved: (articleId: string) => boolean;
   getSavedArticle: (articleId: string) => Article | undefined;
-  toggleSaved: (articleId: string) => void;
+  toggleSaved: (articleOrId: string | Article) => void;
 };
 
 const SavedArticlesContext =
   createContext<SavedArticlesContextValue | null>(null);
 
-function isArticleCategory(value: unknown): value is Article['category'] {
-  return (
-    value === 'BREACH' ||
-    value === 'RANSOMWARE' ||
-    value === 'CVE' ||
-    value === 'VULNERABILITY' ||
-    value === 'NATION_STATE' ||
-    value === 'GENERAL'
-  );
+function normalizeCategory(value: unknown): Article['category'] {
+  if (typeof value !== 'string') return 'GENERAL';
+  const clean = value.trim().toUpperCase().replace(/[-\s]+/g, '_');
+  if (
+    clean === 'BREACH' ||
+    clean === 'RANSOMWARE' ||
+    clean === 'CVE' ||
+    clean === 'VULNERABILITY' ||
+    clean === 'NATION_STATE' ||
+    clean === 'GENERAL'
+  ) {
+    return clean as Article['category'];
+  }
+  return 'GENERAL';
 }
 
-function isArticleSeverity(value: unknown): value is Article['severity'] {
-  return (
-    value === 'LOW' ||
-    value === 'MEDIUM' ||
-    value === 'HIGH' ||
-    value === 'CRITICAL' ||
-    value === 'low' ||
-    value === 'medium' ||
-    value === 'high' ||
-    value === 'critical'
-  );
+function normalizeSeverity(value: unknown): Article['severity'] {
+  if (typeof value !== 'string') return 'MEDIUM';
+  const clean = value.trim().toUpperCase();
+  if (
+    clean === 'CRITICAL' ||
+    clean === 'HIGH' ||
+    clean === 'MEDIUM' ||
+    clean === 'LOW'
+  ) {
+    return clean as Article['severity'];
+  }
+  if (clean === 'IMPORTANT') return 'HIGH';
+  if (clean === 'MODERATE') return 'MEDIUM';
+  return 'MEDIUM';
 }
 
 /**
- * Converts stored JSON back into the Article shape.
- *
- * Only the fields required by the Article model are restored.
- * Unknown legacy fields are ignored automatically.
+ * Resiliently converts stored JSON back into the Article shape.
+ * Tolerates legacy field names (title vs headline, source vs sourceName,
+ * dateAdded vs publishedAt, Title Case vs uppercase categories/severities).
  */
 function parseArticle(value: unknown): Article | null {
   if (typeof value !== 'object' || value === null) {
@@ -66,83 +74,133 @@ function parseArticle(value: unknown): Article | null {
 
   const record = value as Record<string, unknown>;
 
-  if (
-    typeof record.id !== 'string' ||
-    typeof record.headline !== 'string' ||
-    typeof record.summary !== 'string' ||
-    typeof record.sourceName !== 'string' ||
-    typeof record.sourceUrl !== 'string' ||
-    !isArticleCategory(record.category) ||
-    typeof record.publishedAt !== 'string' ||
-    !isArticleSeverity(record.severity)
-  ) {
+  const id =
+    typeof record.id === 'string'
+      ? record.id
+      : typeof record.cveID === 'string'
+      ? record.cveID
+      : typeof record.url === 'string'
+      ? record.url
+      : null;
+
+  const headline =
+    typeof record.headline === 'string'
+      ? record.headline
+      : typeof record.title === 'string'
+      ? record.title
+      : typeof record.vulnerabilityName === 'string'
+      ? record.vulnerabilityName
+      : null;
+
+  if (!id || !headline) {
     return null;
   }
 
-  const rawSummary = record.summary as string;
-  const cleanSummary = rawSummary
+  const rawSummary =
+    typeof record.summary === 'string'
+      ? record.summary
+      : typeof record.shortDescription === 'string'
+      ? record.shortDescription
+      : typeof record.requiredAction === 'string'
+      ? record.requiredAction
+      : '';
+
+  const cleanSummary = String(rawSummary)
     .replace(/^#+\s*.*$/gm, '')
     .replace(/#+\s*(?:Summary|Details|Impact|Workarounds|PoC)\b:?/gi, '')
     .replace(/\s+/g, ' ')
     .trim();
 
+  const sourceName =
+    typeof record.sourceName === 'string'
+      ? record.sourceName
+      : typeof record.source === 'string'
+      ? record.source
+      : 'SecuBuzz';
+
+  const sourceUrl =
+    typeof record.sourceUrl === 'string'
+      ? record.sourceUrl
+      : typeof record.url === 'string'
+      ? record.url
+      : '';
+
+  const publishedAt =
+    typeof record.publishedAt === 'string'
+      ? record.publishedAt
+      : typeof record.dateAdded === 'string'
+      ? record.dateAdded
+      : new Date().toISOString();
+
   return {
-    id: record.id,
-    headline: record.headline,
-    summary: cleanSummary,
-    sourceName: record.sourceName,
-    sourceUrl: record.sourceUrl,
-    category: record.category,
-    publishedAt: record.publishedAt,
-    severity: String(record.severity).toUpperCase() as Article['severity'],
-    requiredAction: typeof record.requiredAction === 'string' ? record.requiredAction : undefined,
+    id,
+    headline,
+    summary: cleanSummary || headline,
+    sourceName,
+    sourceUrl,
+    category: normalizeCategory(record.category),
+    publishedAt,
+    severity: normalizeSeverity(record.severity),
+    requiredAction:
+      typeof record.requiredAction === 'string'
+        ? record.requiredAction
+        : undefined,
     dueDate: typeof record.dueDate === 'string' ? record.dueDate : undefined,
-    patchedVersion: typeof record.patchedVersion === 'string' ? record.patchedVersion : undefined,
-    vulnerableVersionRange: typeof record.vulnerableVersionRange === 'string' ? record.vulnerableVersionRange : undefined,
-    vendorProject: typeof record.vendorProject === 'string' ? record.vendorProject : undefined,
+    patchedVersion:
+      typeof record.patchedVersion === 'string'
+        ? record.patchedVersion
+        : undefined,
+    vulnerableVersionRange:
+      typeof record.vulnerableVersionRange === 'string'
+        ? record.vulnerableVersionRange
+        : undefined,
+    vendorProject:
+      typeof record.vendorProject === 'string'
+        ? record.vendorProject
+        : undefined,
     product: typeof record.product === 'string' ? record.product : undefined,
   };
 }
 
-function parseSavedArticles(raw: string | null): Article[] {
+function parseSavedData(raw: string | null): {
+  articles: Article[];
+  ids: string[];
+} {
   if (raw === null) {
-    return [];
+    return { articles: [], ids: [] };
   }
 
   try {
     const parsed: unknown = JSON.parse(raw);
 
     if (!Array.isArray(parsed)) {
-      return [];
+      return { articles: [], ids: [] };
     }
 
     const articles: Article[] = [];
+    const ids: string[] = [];
 
     for (const item of parsed) {
-      const article = parseArticle(item);
-
-      if (article !== null) {
-        articles.push(article);
+      if (typeof item === 'string') {
+        ids.push(item);
+      } else {
+        const article = parseArticle(item);
+        if (article !== null) {
+          articles.push(article);
+        }
       }
     }
 
-    return articles;
+    return { articles, ids };
   } catch {
-    return [];
+    return { articles: [], ids: [] };
   }
 }
 
 async function findArticleForSaving(
   articleId: string,
 ): Promise<Article | null> {
-  /*
-   * First try the feed cache.
-   *
-   * The Feed already writes its successful response to
-   * "cached-articles", so normally this gives us the exact
-   * article that the user just bookmarked without another
-   * network request.
-   */
+  // 1. Try feed cache
   try {
     const cachedRaw = await AsyncStorage.getItem(FEED_CACHE_KEY);
 
@@ -154,14 +212,14 @@ async function findArticleForSaving(
         cached !== null &&
         Array.isArray((cached as { articles?: unknown }).articles)
       ) {
-        const articles = (
-          cached as { articles: unknown[] }
-        ).articles;
+        const articles = (cached as { articles: unknown[] }).articles;
 
         for (const item of articles) {
           const article = parseArticle(item);
-
-          if (article?.id === articleId) {
+          if (
+            article?.id === articleId ||
+            article?.sourceUrl === articleId
+          ) {
             return article;
           }
         }
@@ -171,11 +229,7 @@ async function findArticleForSaving(
     // Continue to advisories check.
   }
 
-  /*
-   * Second, check the advisories cache.
-   * If the user saved a CVE/threat advisory from the Advisories tab,
-   * convert it into the unified Article shape so it appears in the Saved tab.
-   */
+  // 2. Check advisories caches (v3 and legacy v2)
   try {
     let rawAdvisories = await AsyncStorage.getItem('@secubuzz_advisories_v3');
     if (!rawAdvisories) {
@@ -185,14 +239,17 @@ async function findArticleForSaving(
       const advisories: unknown = JSON.parse(rawAdvisories);
       if (Array.isArray(advisories)) {
         const found = advisories.find(
-          (item: any) => item?.id === articleId || item?.cveID === articleId,
+          (item: any) =>
+            item?.id === articleId ||
+            item?.cveID === articleId ||
+            item?.url === articleId,
         );
         if (found) {
           const rawDesc =
             found.shortDescription ||
             found.requiredAction ||
             'Known Exploited Threat Advisory';
-          const cleanSummary = rawDesc
+          const cleanSummary = String(rawDesc)
             .replace(/^#+\s*.*$/gm, '')
             .replace(/#+\s*(?:Summary|Details|Impact|Workarounds|PoC)\b:?/gi, '')
             .replace(/\s+/g, ' ')
@@ -208,7 +265,7 @@ async function findArticleForSaving(
             sourceName: found.source || 'CISA KEV',
             publishedAt: found.dateAdded || new Date().toISOString(),
             category: 'CVE',
-            severity: found.severity || 'HIGH',
+            severity: normalizeSeverity(found.severity),
             requiredAction: found.requiredAction,
             dueDate: found.dueDate,
             patchedVersion: found.patchedVersion,
@@ -224,16 +281,17 @@ async function findArticleForSaving(
     // Continue to repository fallback.
   }
 
-  /*
-   * If the cache is unavailable, ask the existing repository.
-   * CachingArticleRepository will itself fall back to its cache
-   * if the network is unavailable.
-   */
+  // 3. Fallback to repository
   try {
     const repository = getArticleRepository();
     const articles = await repository.getArticles();
 
-    return articles.find((article) => article.id === articleId) ?? null;
+    return (
+      articles.find(
+        (article) =>
+          article.id === articleId || article.sourceUrl === articleId,
+      ) ?? null
+    );
   } catch {
     return null;
   }
@@ -247,10 +305,6 @@ export function SavedArticlesProvider({
   const [savedArticles, setSavedArticles] = useState<Article[]>([]);
   const [isHydrated, setIsHydrated] = useState(false);
 
-  /*
-   * Ref keeps the latest state available inside async functions
-   * without creating stale-closure problems.
-   */
   const savedArticlesRef = useRef<Article[]>([]);
 
   useEffect(() => {
@@ -258,30 +312,59 @@ export function SavedArticlesProvider({
   }, [savedArticles]);
 
   /*
-   * Load saved article snapshots once when the provider starts.
+   * Hydrate saved article snapshots on mount with automatic legacy recovery.
    */
   useEffect(() => {
     let cancelled = false;
 
     async function hydrate() {
       try {
-        const raw = await AsyncStorage.getItem(SAVED_ARTICLES_KEY);
-        const articles = parseSavedArticles(raw);
+        const [rawPrimary, rawLegacy] = await Promise.all([
+          AsyncStorage.getItem(SAVED_ARTICLES_KEY),
+          AsyncStorage.getItem(LEGACY_SAVED_ARTICLES_KEY),
+        ]);
+
+        const primary = parseSavedData(rawPrimary);
+        const legacy = parseSavedData(rawLegacy);
+
+        // Merge without duplicates
+        const merged: Article[] = [...primary.articles];
+        for (const item of legacy.articles) {
+          if (!merged.some((a) => a.id === item.id)) {
+            merged.push(item);
+          }
+        }
+
+        // Resolve any string IDs from legacy storage
+        const pendingIds = [...primary.ids, ...legacy.ids].filter(
+          (id) => !merged.some((a) => a.id === id),
+        );
+
+        for (const id of pendingIds) {
+          try {
+            const found = await findArticleForSaving(id);
+            if (found && !merged.some((a) => a.id === found.id)) {
+              merged.push(found);
+            }
+          } catch {
+            // Ignore individual resolution failure
+          }
+        }
 
         if (cancelled) {
           return;
         }
 
-        savedArticlesRef.current = articles;
-        setSavedArticles(articles);
+        savedArticlesRef.current = merged;
+        setSavedArticles(merged);
 
-        /*
-        * Rewrite stored records using only the current Article shape.
-        */
-        await AsyncStorage.setItem(
-          SAVED_ARTICLES_KEY,
-          JSON.stringify(articles),
-        );
+        // If legacy data was found or primary was migrated, persist clean state
+        if (rawLegacy || (rawPrimary && primary.ids.length > 0)) {
+          await AsyncStorage.setItem(
+            SAVED_ARTICLES_KEY,
+            JSON.stringify(merged),
+          );
+        }
       } catch {
         if (!cancelled) {
           savedArticlesRef.current = [];
@@ -312,10 +395,7 @@ export function SavedArticlesProvider({
           JSON.stringify(articles),
         );
       } catch {
-        /*
-         * Keep the in-memory state even if storage temporarily fails.
-         * The next app launch will retry hydration.
-         */
+        // Keep in-memory state if write fails
       }
     },
     [],
@@ -323,69 +403,82 @@ export function SavedArticlesProvider({
 
   const isSaved = useCallback(
     (articleId: string) => {
-      return savedArticles.some((article) => article.id === articleId);
+      return savedArticles.some(
+        (article) =>
+          article.id === articleId ||
+          (article.sourceUrl && article.sourceUrl === articleId),
+      );
     },
     [savedArticles],
   );
 
   const getSavedArticle = useCallback(
     (articleId: string) => {
-      return savedArticles.find((article) => article.id === articleId);
+      return savedArticles.find(
+        (article) =>
+          article.id === articleId ||
+          (article.sourceUrl && article.sourceUrl === articleId),
+      );
     },
     [savedArticles],
   );
 
   const toggleSaved = useCallback(
-    (articleId: string) => {
+    (articleOrId: string | Article) => {
       const current = savedArticlesRef.current;
+      const targetId =
+        typeof articleOrId === 'string' ? articleOrId : articleOrId.id;
 
-      /*
-       * Already saved → remove immediately.
-       */
+      // 1. If already saved -> remove immediately
       const existing = current.some(
-        (article) => article.id === articleId,
+        (article) =>
+          article.id === targetId ||
+          (typeof articleOrId !== 'string' &&
+            article.sourceUrl &&
+            article.sourceUrl === articleOrId.sourceUrl),
       );
 
       if (existing) {
         void haptics.impactLight();
         const next = current.filter(
-          (article) => article.id !== articleId,
+          (article) =>
+            article.id !== targetId &&
+            (typeof articleOrId === 'string' ||
+              !article.sourceUrl ||
+              article.sourceUrl !== articleOrId.sourceUrl),
         );
 
         void persistSavedArticles(next);
         return;
       }
 
-      /*
-       * Not saved yet → retrieve the full article snapshot and
-       * permanently store it.
-       */
+      // 2. Not saved yet: if full Article object was passed, save immediately!
+      if (typeof articleOrId !== 'string') {
+        void haptics.notificationSuccess();
+        const cleanArticle: Article = {
+          ...articleOrId,
+          category: normalizeCategory(articleOrId.category),
+          severity: normalizeSeverity(articleOrId.severity),
+        };
+        void persistSavedArticles([...current, cleanArticle]);
+        return;
+      }
+
+      // 3. If only ID was passed, find snapshot and save
       void (async () => {
         void haptics.notificationSuccess();
-        const article = await findArticleForSaving(articleId);
+        const article = await findArticleForSaving(targetId);
 
         if (article === null) {
           return;
         }
 
-        /*
-         * Check again in case another async operation saved it
-         * while we were loading the snapshot.
-         */
         const latest = savedArticlesRef.current;
-
-        if (
-          latest.some(
-            (savedArticle) => savedArticle.id === article.id,
-          )
-        ) {
+        if (latest.some((a) => a.id === article.id)) {
           return;
         }
 
-        await persistSavedArticles([
-          ...latest,
-          article,
-        ]);
+        await persistSavedArticles([...latest, article]);
       })();
     },
     [persistSavedArticles],

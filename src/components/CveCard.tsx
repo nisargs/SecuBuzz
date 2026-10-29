@@ -1,3 +1,4 @@
+import type { Article } from '../models/article';
 import { Ionicons } from '@expo/vector-icons';
 import { useEffect, useState } from 'react';
 import {
@@ -22,7 +23,7 @@ import { openArticle } from '../utils/openArticle';
 type CveCardProps = {
   advisory: CveAdvisory;
   isSaved?: boolean;
-  onToggleSaved?: (id: string) => void;
+  onToggleSaved?: (articleOrId: string | Article) => void;
   onSelectSeverity?: (severity: AdvisorySeverity) => void;
   onSelectSource?: (source: AdvisorySource) => void;
 };
@@ -322,7 +323,38 @@ export function CveCard({
             accessibilityRole="button"
             accessibilityLabel={isSaved ? 'Remove bookmark' : 'Save advisory'}
             hitSlop={12}
-            onPress={() => onToggleSaved?.(advisory.id)}
+            onPress={() => {
+              if (!onToggleSaved) return;
+              const cleanSummary = (
+                advisory.shortDescription ||
+                advisory.requiredAction ||
+                'Known Exploited Threat Advisory'
+              )
+                .replace(/^#+\s*.*$/gm, '')
+                .replace(/#+\s*(?:Summary|Details|Impact|Workarounds|PoC)\b:?/gi, '')
+                .replace(/\s+/g, ' ')
+                .trim();
+
+              const advisoryArticle: Article = {
+                id: advisory.id || advisory.cveID,
+                headline: `${advisory.cveID}: ${advisory.vulnerabilityName || advisory.product}`,
+                summary: cleanSummary,
+                sourceUrl:
+                  advisory.url ||
+                  `https://nvd.nist.gov/vuln/detail/${advisory.cveID}`,
+                sourceName: advisory.source || 'CISA KEV',
+                publishedAt: advisory.dateAdded || new Date().toISOString(),
+                category: 'CVE',
+                severity: (advisory.severity?.toUpperCase() as Article['severity']) || 'HIGH',
+                requiredAction: advisory.requiredAction,
+                dueDate: advisory.dueDate,
+                patchedVersion: advisory.patchedVersion,
+                vulnerableVersionRange: advisory.vulnerableVersionRange,
+                vendorProject: advisory.vendorProject,
+                product: advisory.product,
+              };
+              onToggleSaved(advisoryArticle);
+            }}
             style={styles.actionButton}
           >
             <Ionicons
@@ -821,6 +853,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 8,
+    flexShrink: 0,
   },
   actionButton: {
     padding: 4,

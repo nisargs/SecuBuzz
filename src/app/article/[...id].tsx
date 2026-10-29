@@ -462,7 +462,7 @@ export default function ArticleDetailScreen() {
             }
             hitSlop={12}
             onPress={() =>
-              toggleSaved(article.id)
+              toggleSaved(article)
             }
             style={styles.headerButton}
           >

@@ -225,7 +225,7 @@ export function AdvisoryFilterModal({
                       },
                     ]}
                   >
-                    All ({totalCount})
+                    All ({severityCounts.ALL ?? 0})
                   </Text>
                 </Pressable>
 
@@ -488,7 +488,7 @@ export function AdvisoryFilterModal({
                       },
                     ]}
                   >
-                    All Sources ({totalCount})
+                    All Sources ({sourceCounts.ALL ?? 0})
                   </Text>
                 </Pressable>
 
@@ -639,7 +639,7 @@ export function AdvisoryFilterModal({
                       },
                     ]}
                   >
-                    All Likelihoods ({totalCount})
+                    All Likelihoods ({epssCounts.ALL ?? 0})
                   </Text>
                 </Pressable>
 

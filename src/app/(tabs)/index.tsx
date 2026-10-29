@@ -814,6 +814,8 @@ export default function FeedScreen() {
                 >
                   {isViewingFeedback
                     ? 'FEEDBACK'
+                    : searchQuery.trim().length > 0
+                    ? `SEARCH: ${displayStoryNum} OF ${filteredArticles.length}`
                     : displayStoryNum === todayTargetCount
                     ? `CAUGHT UP (${todayTargetCount}/${todayTargetCount})`
                     : isArchiveMode
@@ -987,20 +989,40 @@ export default function FeedScreen() {
           />
 
           {searchQuery.length > 0 ? (
-            <Pressable
-              accessibilityRole="button"
-              accessibilityLabel="Clear search"
-              hitSlop={8}
-              onPress={() =>
-                setSearchQuery('')
-              }
-            >
-              <Ionicons
-                name="close-circle"
-                size={20}
-                color={accentColor}
-              />
-            </Pressable>
+            <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
+              <View
+                style={{
+                  backgroundColor: isDark ? 'rgba(76, 201, 240, 0.15)' : 'rgba(2, 132, 199, 0.12)',
+                  paddingHorizontal: 8,
+                  paddingVertical: 2.5,
+                  borderRadius: 12,
+                }}
+              >
+                <Text
+                  style={{
+                    color: accentColor,
+                    fontSize: 11,
+                    fontFamily: 'Exo_700Bold',
+                  }}
+                >
+                  {filteredArticles.length} found
+                </Text>
+              </View>
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel="Clear search"
+                hitSlop={8}
+                onPress={() =>
+                  setSearchQuery('')
+                }
+              >
+                <Ionicons
+                  name="close-circle"
+                  size={20}
+                  color={accentColor}
+                />
+              </Pressable>
+            </View>
           ) : null}
         </View>
       ) : null}

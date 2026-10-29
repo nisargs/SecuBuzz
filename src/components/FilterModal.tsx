@@ -245,7 +245,7 @@ export function FilterModal({
                       },
                     ]}
                   >
-                    All ({totalArticlesCount})
+                    All ({severityCounts?.ALL ?? totalArticlesCount})
                   </Text>
                 </Pressable>
 

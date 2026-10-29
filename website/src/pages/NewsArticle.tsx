@@ -181,7 +181,6 @@ export function NewsArticle() {
               <time dateTime={brief.publishedAt} className="text-muted">
                 {`${shortDateUTC(brief.publishedAt)}, ${clockTimeUTC(brief.publishedAt)} UTC`}
               </time>
-              <span className="text-subtle">({timeAgo(brief.publishedAt)})</span>
             </div>
             <h1 className="mt-4 text-3xl font-semibold leading-tight tracking-tight text-ink md:text-[44px]">
               {brief.title}

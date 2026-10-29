@@ -23,7 +23,7 @@ import { wordCount } from '../utils/wordCount';
 type ArticleCardProps = {
   article: Article;
   isSaved: boolean;
-  onToggleSaved: (articleId: string) => void;
+  onToggleSaved: (articleOrId: string | Article) => void;
   onSelectSeverity?: (severity: NonNullable<Article['severity']>) => void;
   onSelectCategory?: (category: Article['category']) => void;
 };
@@ -173,7 +173,7 @@ export function ArticleCard({
           >
             <Ionicons
               name={copied ? 'checkmark-circle' : 'copy-outline'}
-              size={21}
+              size={20}
               color={copied ? accentColor : colors.textSecondary}
             />
           </Pressable>
@@ -189,7 +189,7 @@ export function ArticleCard({
           >
             <Ionicons
               name="arrow-redo-outline"
-              size={22}
+              size={20}
               color={colors.textSecondary}
             />
           </Pressable>
@@ -203,7 +203,7 @@ export function ArticleCard({
             }
             hitSlop={12}
             onPress={() =>
-              onToggleSaved(article.id)
+              onToggleSaved(article)
             }
             style={styles.actionButton}
           >
@@ -213,7 +213,7 @@ export function ArticleCard({
                   ? 'bookmark'
                   : 'bookmark-outline'
               }
-              size={24}
+              size={21}
               color={
                 isSaved
                   ? accentColor
@@ -328,23 +328,25 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
+    gap: 6,
   },
 
   metaLeftGroup: {
+    flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 8,
+    gap: 6,
   },
 
   category: {
     color: BLUE,
     fontFamily: 'Exo_600SemiBold',
-    fontSize: 11,
-    letterSpacing: 1.7,
+    fontSize: 10.5,
+    letterSpacing: 1.1,
   },
 
   psirtTag: {
-    paddingHorizontal: 5,
+    paddingHorizontal: 4.5,
     paddingVertical: 1.5,
     borderRadius: 3,
     borderWidth: 1,
@@ -352,16 +354,16 @@ const styles = StyleSheet.create({
 
   psirtLabel: {
     fontFamily: 'Exo_600SemiBold',
-    fontSize: 9,
-    letterSpacing: 0.8,
+    fontSize: 8.5,
+    letterSpacing: 0.6,
   },
 
   severityTag: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 5,
-    paddingHorizontal: 6,
-    paddingVertical: 2,
+    gap: 4,
+    paddingHorizontal: 5,
+    paddingVertical: 1.5,
     borderRadius: 4,
     backgroundColor: 'rgba(255, 255, 255, 0.05)',
   },
@@ -380,18 +382,19 @@ const styles = StyleSheet.create({
 
   severityLabel: {
     fontFamily: 'Exo_600SemiBold',
-    fontSize: 9.5,
-    letterSpacing: 1.1,
+    fontSize: 9,
+    letterSpacing: 0.8,
   },
 
   actionsRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 12,
+    gap: 8,
+    flexShrink: 0,
   },
 
   actionButton: {
-    padding: 4,
+    padding: 2,
   },
 
   publicationMeta: {

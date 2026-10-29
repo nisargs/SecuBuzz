@@ -34,29 +34,8 @@ function formatDate(
 }
 
 /**
- * Returns the short name or code of the device's local time zone (e.g. "IST", "EDT").
- */
-export function getLocalTimeZoneShort(date = new Date()): string {
-  try {
-    const parts = new Intl.DateTimeFormat(undefined, {
-      timeZoneName: 'short',
-    }).formatToParts(date);
-
-    return parts.find((part) => part.type === 'timeZoneName')?.value ?? '';
-  } catch {
-    return '';
-  }
-}
-
-/**
  * Formats an article's publication timestamp using
- * the timezone configured on the user's device.
- *
- * The feed stores publishedAt as an absolute timestamp,
- * in ISO UTC (e.g. 2026-09-18T14:29:00.000Z).
- *
- * new Date(...) converts that instant to the device's
- * local timezone.
+ * the user's device clock (e.g. "4:00 pm · 28 Oct").
  */
 export function formatPublishedAt(
   article: Article,

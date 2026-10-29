@@ -283,7 +283,8 @@ export default function AdvisoriesScreen() {
       return (item.epssPercentile ?? getEpssPercentile(item.cveID) ?? 0) >= 0.90;
     }
     if (epss === 'HIGH_50') {
-      return (item.epssPercentile ?? getEpssPercentile(item.cveID) ?? 0) >= 0.50;
+      const p = item.epssPercentile ?? getEpssPercentile(item.cveID) ?? 0;
+      return p >= 0.50 && p < 0.90;
     }
     if (epss === 'LOW_50') {
       const p = item.epssPercentile ?? getEpssPercentile(item.cveID);
@@ -307,25 +308,22 @@ export default function AdvisoriesScreen() {
     return text.includes(query);
   };
 
-  // Faceted counts for filters
-  const severityCounts = useMemo(() => {
+  // Base filtered advisories for counting (harmonized against active search query)
+  const baseAdvisories = useMemo(() => {
     const query = searchQuery.trim().toLowerCase();
-    const candidate = advisories.filter(
-      (item) =>
-        matchesSource(item, sourceFilter) &&
-        matchesEpss(item, epssFilter) &&
-        matchesSearch(item, query),
-    );
+    return advisories.filter((item) => matchesSearch(item, query));
+  }, [advisories, searchQuery]);
 
+  const severityCounts = useMemo(() => {
     const counts: Record<string, number> = {
-      ALL: candidate.length,
+      ALL: baseAdvisories.length,
       CRITICAL: 0,
       HIGH: 0,
       MEDIUM: 0,
       LOW: 0,
       RANSOMWARE: 0,
     };
-    candidate.forEach((item) => {
+    baseAdvisories.forEach((item) => {
       if (item.knownRansomwareCampaignUse?.toLowerCase() === 'known') {
         counts.RANSOMWARE++;
       }
@@ -335,55 +333,43 @@ export default function AdvisoriesScreen() {
       if (item.severity === 'LOW') counts.LOW++;
     });
     return counts;
-  }, [advisories, sourceFilter, epssFilter, searchQuery]);
+  }, [baseAdvisories]);
 
   const sourceCounts = useMemo(() => {
-    const query = searchQuery.trim().toLowerCase();
-    const candidate = advisories.filter(
-      (item) =>
-        matchesSeverity(item, severityFilter) &&
-        matchesEpss(item, epssFilter) &&
-        matchesSearch(item, query),
-    );
-
     const counts: Record<string, number> = {
-      ALL: candidate.length,
+      ALL: baseAdvisories.length,
       CISA: 0,
       GITHUB: 0,
     };
-    candidate.forEach((item) => {
+    baseAdvisories.forEach((item) => {
       if (item.source === 'CISA KEV') counts.CISA++;
       if (item.source === 'GITHUB') counts.GITHUB++;
     });
     return counts;
-  }, [advisories, severityFilter, epssFilter, searchQuery]);
+  }, [baseAdvisories]);
 
   // EPSS likelihood counts
   const epssCounts = useMemo(() => {
-    const query = searchQuery.trim().toLowerCase();
-    const candidate = advisories.filter(
-      (item) =>
-        matchesSource(item, sourceFilter) &&
-        matchesSeverity(item, severityFilter) &&
-        matchesSearch(item, query),
-    );
-
     const counts: Record<string, number> = {
-      ALL: candidate.length,
+      ALL: baseAdvisories.length,
       CRITICAL_90: 0,
       HIGH_50: 0,
       LOW_50: 0,
     };
-    candidate.forEach((item) => {
+    baseAdvisories.forEach((item) => {
       const p = item.epssPercentile ?? getEpssPercentile(item.cveID);
       if (p !== undefined) {
-        if (p >= 0.90) counts.CRITICAL_90++;
-        if (p >= 0.50) counts.HIGH_50++;
-        if (p < 0.50) counts.LOW_50++;
+        if (p >= 0.90) {
+          counts.CRITICAL_90++;
+        } else if (p >= 0.50) {
+          counts.HIGH_50++;
+        } else {
+          counts.LOW_50++;
+        }
       }
     });
     return counts;
-  }, [advisories, sourceFilter, severityFilter, searchQuery]);
+  }, [baseAdvisories]);
 
   // Filtered Advisories
   const filteredAdvisories = useMemo(() => {
@@ -827,18 +813,38 @@ export default function AdvisoriesScreen() {
             autoCorrect={false}
           />
           {searchQuery.length > 0 ? (
-            <Pressable
-              accessibilityRole="button"
-              accessibilityLabel="Clear search"
-              hitSlop={8}
-              onPress={() => setSearchQuery('')}
-            >
-              <Ionicons
-                name="close-circle"
-                size={20}
-                color={accentColor}
-              />
-            </Pressable>
+            <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
+              <View
+                style={{
+                  backgroundColor: isDark ? 'rgba(76, 201, 240, 0.15)' : 'rgba(2, 132, 199, 0.12)',
+                  paddingHorizontal: 8,
+                  paddingVertical: 2.5,
+                  borderRadius: 12,
+                }}
+              >
+                <Text
+                  style={{
+                    color: accentColor,
+                    fontSize: 11,
+                    fontFamily: 'Exo_700Bold',
+                  }}
+                >
+                  {filteredAdvisories.length} found
+                </Text>
+              </View>
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel="Clear search"
+                hitSlop={8}
+                onPress={() => setSearchQuery('')}
+              >
+                <Ionicons
+                  name="close-circle"
+                  size={20}
+                  color={accentColor}
+                />
+              </Pressable>
+            </View>
           ) : null}
         </View>
       ) : null}
