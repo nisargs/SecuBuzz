@@ -1445,9 +1445,11 @@ export default {
         } else {
           const errText = await dispatchRes.text();
           console.error(`[Cron Watchdog] GitHub dispatch returned HTTP ${dispatchRes.status}: ${errText}`);
+          throw new Error(`[Cron Watchdog] GitHub dispatch failed (HTTP ${dispatchRes.status}): ${errText}`);
         }
       } catch (err: any) {
-        console.error('[Cron Watchdog] Network error during watchdog check/dispatch:', err);
+        console.error('[Cron Watchdog] Critical failure during watchdog check/dispatch:', err);
+        throw err;
       }
     };
 
