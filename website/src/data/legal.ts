@@ -122,7 +122,7 @@ export const termsSections: LegalSection[] = [
     id: 'sources',
     heading: 'Monitored Sources & Feeds',
     body: [
-      'SecuBuzz indexes public cybersecurity reporting, official bulletins, and threat research from 43 independent newsrooms, vendor PSIRTs, government CERT advisories, and threat research organizations for its 60-word news briefs. In addition, SecuBuzz ingests authoritative security advisories directly from the CISA Known Exploited Vulnerabilities (KEV) catalog (cisa.gov) and the GitHub Security Advisory Database (github.com/advisories), with exploit likelihood percentiles powered by FIRST.org EPSS.'
+      'SecuBuzz indexes public cybersecurity reporting, official bulletins, and threat research from 48 independent newsrooms, vendor PSIRTs, government CERT advisories, and threat research organizations for its 60-word news briefs. In addition, SecuBuzz ingests authoritative security advisories directly from the CISA Known Exploited Vulnerabilities (KEV) catalog (cisa.gov) and the GitHub Security Advisory Database (github.com/advisories), with exploit likelihood percentiles powered by FIRST.org EPSS.'
     ],
     sourcesList: [
       { name: 'The Hacker News', domain: 'thehackernews.com', url: 'https://thehackernews.com' },
@@ -154,6 +154,9 @@ export const termsSections: LegalSection[] = [
       { name: 'Cyber Security News', domain: 'cybersecuritynews.com', url: 'https://cybersecuritynews.com' },
       { name: 'Google Project Zero', domain: 'projectzero.google', url: 'https://projectzero.google' },
       { name: 'GreyNoise Labs', domain: 'www.greynoise.io', url: 'https://www.greynoise.io/blog' },
+      { name: 'Socket.dev', domain: 'socket.dev', url: 'https://socket.dev/blog' },
+      { name: 'Huntress', domain: 'www.huntress.com', url: 'https://www.huntress.com/blog' },
+      { name: 'Arctic Wolf', domain: 'arcticwolf.com', url: 'https://arcticwolf.com/resources/blog/' },
       { name: 'Palo Alto Networks PSIRT', domain: 'security.paloaltonetworks.com', url: 'https://security.paloaltonetworks.com' },
       { name: 'Fortinet FortiGuard PSIRT', domain: 'fortiguard.fortinet.com', url: 'https://fortiguard.fortinet.com' },
       { name: 'Cisco PSIRT', domain: 'sec.cloudapps.cisco.com', url: 'https://sec.cloudapps.cisco.com/security/center/publicationListing.x' },
@@ -168,6 +171,8 @@ export const termsSections: LegalSection[] = [
       { name: 'GitHub Security Blog', domain: 'github.blog/security', url: 'https://github.blog/category/security/' },
       { name: 'ZDI Advisories', domain: 'www.zerodayinitiative.com', url: 'https://www.zerodayinitiative.com/advisories/published/' },
       { name: 'CERT-EU Security Advisories', domain: 'cert.europa.eu', url: 'https://cert.europa.eu/publications/security-advisories/' },
+      { name: 'Oracle Security Alerts', domain: 'www.oracle.com', url: 'https://www.oracle.com/security-alerts/' },
+      { name: 'Android Security Bulletin', domain: 'source.android.com', url: 'https://source.android.com/docs/security/bulletin' },
     ]
   },
   {

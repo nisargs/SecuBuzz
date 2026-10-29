@@ -17,6 +17,8 @@ export const VENDOR_PSIRT_SOURCES = [
   'GitHub Security Blog',
   'ZDI Advisories',
   'CERT-EU Security Advisories',
+  'Oracle Security Alerts',
+  'Android Security Bulletin',
 ] as const;
 
 export type VendorPsirtSource = (typeof VENDOR_PSIRT_SOURCES)[number];
@@ -34,11 +36,13 @@ export function isVendorPsirt(source?: string | null): boolean {
     s.includes('psirt') ||
     s.includes('msrc') ||
     s.includes('security advisories') ||
+    s.includes('security alerts') ||
     s.includes('security bulletins') ||
     s.includes('security notices') ||
     s.includes('security releases') ||
     s.includes('chrome releases') ||
-    s.includes('apple security')
+    s.includes('apple security') ||
+    s.includes('android security')
   );
 }
 
@@ -63,5 +67,10 @@ export function getVendorFromSource(source?: string | null): string {
   if (/zero\s*day\s*initiative|zdi/i.test(s)) return 'ZDI';
   if (/cert-eu/i.test(s)) return 'CERT-EU';
   if (/splunk/i.test(s)) return 'Splunk';
+  if (/oracle/i.test(s)) return 'Oracle';
+  if (/android/i.test(s)) return 'Android / Google';
+  if (/socket/i.test(s)) return 'Socket.dev';
+  if (/huntress/i.test(s)) return 'Huntress';
+  if (/arctic\s*wolf/i.test(s)) return 'Arctic Wolf';
   return s;
 }

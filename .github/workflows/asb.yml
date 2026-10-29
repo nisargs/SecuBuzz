@@ -1,0 +1,112 @@
+name: SecuBuzz Android Security Bulletin Ingest
+
+on:
+  # Monthly run on the 5th at 18:00 UTC (Google releases bulletins monthly during the first week)
+  schedule:
+    - cron: "0 18 5 * *"
+
+  # Allow manual trigger from GitHub Actions tab
+  workflow_dispatch:
+
+concurrency:
+  group: secubuzz-ingest
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  ingest-asb:
+    name: Ingest Android Security Bulletin
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    env:
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      # Cloudflare R2 credentials
+      AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+      AWS_DEFAULT_REGION: auto
+
+      # Cloudflare account ID
+      R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+
+    steps:
+      # ---------------------------------------------------------
+      # Checkout repository
+      # ---------------------------------------------------------
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # ---------------------------------------------------------
+      # Setup Node.js
+      # ---------------------------------------------------------
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      # ---------------------------------------------------------
+      # Validate ASB ingestion script
+      # ---------------------------------------------------------
+      - name: Validate ASB script syntax
+        run: |
+          node --check "./scripts/ingest_asb.mjs"
+
+      # ---------------------------------------------------------
+      # Run Android Security Bulletin ingestion
+      # ---------------------------------------------------------
+      - name: Run ASB ingestion
+        run: |
+          node "./scripts/ingest_asb.mjs"
+
+      # ---------------------------------------------------------
+      # Synchronize website news & RSS data
+      # ---------------------------------------------------------
+      - name: Sync website news & RSS
+        run: |
+          node "./scripts/sync_website_data.mjs"
+
+      # ---------------------------------------------------------
+      # Upload latest feed.json to Cloudflare R2
+      # ---------------------------------------------------------
+      - name: Upload feed.json to Cloudflare R2
+        shell: bash
+        run: |
+          if [ -n "$R2_ACCOUNT_ID" ] && [ -n "$AWS_ACCESS_KEY_ID" ] && [ -n "$AWS_SECRET_ACCESS_KEY" ]; then
+            echo "Uploading feed.json to Cloudflare R2..."
+            aws s3 cp "./feed.json" \
+              "s3://secubuzz-feed/feed.json" \
+              --endpoint-url "https://${R2_ACCOUNT_ID}.r2.cloudflarestorage.com" \
+              --content-type "application/json" \
+              --cache-control "no-cache, no-store, must-revalidate"
+            echo "feed.json successfully uploaded to Cloudflare R2."
+          else
+            echo "R2 credentials not present; skipping R2 upload step."
+          fi
+
+      # ---------------------------------------------------------
+      # Commit updated feed files to GitHub repository
+      # ---------------------------------------------------------
+      - name: Commit updated feed
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add feed.json seen-urls.json website/src/data/news.ts website/public/rss.xml
+
+          if git diff --cached --quiet; then
+            echo "No ASB feed changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Update SecuBuzz feed (Android Security Bulletin)"
+
+          git pull --rebase origin main
+          git push
+

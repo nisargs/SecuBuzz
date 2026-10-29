@@ -208,6 +208,18 @@ const FEEDS = [
     name: "GreyNoise Labs",
     url: "https://www.greynoise.io/blog/rss.xml",
   },
+  {
+    name: "Socket.dev",
+    url: "https://socket.dev/api/blog/feed.atom",
+  },
+  {
+    name: "Huntress",
+    url: "https://www.huntress.com/blog/rss.xml",
+  },
+  {
+    name: "Arctic Wolf",
+    url: "https://arcticwolf.com/feed/",
+  },
   // Official Vendor PSIRT & Security Release Feeds (Primary Ecosystem Radar):
   {
     name: "Palo Alto Networks PSIRT",
@@ -264,6 +276,10 @@ const FEEDS = [
   {
     name: "CERT-EU Security Advisories",
     url: "https://cert.europa.eu/publications/security-advisories-rss",
+  },
+  {
+    name: "Oracle Security Alerts",
+    url: "https://www.oracle.com/ocom/groups/public/@otn/documents/webcontent/rss-otn-sec.xml",
   },
 ];
 
