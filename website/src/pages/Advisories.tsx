@@ -30,25 +30,6 @@ export function Advisories() {
   const overdueCount = advisories.filter(
     (a) => a.dueDate && /^\d{4}-\d{2}-\d{2}$/.test(a.dueDate) && daysUntil(a.dueDate) < 0
   ).length;
-  const dueThisWeekCount = advisories.filter((a) => {
-    if (!a.dueDate || !/^\d{4}-\d{2}-\d{2}$/.test(a.dueDate)) return false;
-    const d = daysUntil(a.dueDate);
-    return d >= 0 && d <= 7;
-  }).length;
-
-  const sortedVendors = useMemo(() => {
-    const counts: Record<string, number> = {};
-    for (const a of advisories) {
-      const v = a.vendor?.trim();
-      if (v) {
-        counts[v] = (counts[v] || 0) + 1;
-      }
-    }
-    return Object.entries(counts)
-      .map(([name, count]) => ({ name, count }))
-      .sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }));
-  }, [advisories]);
-
   const isCisa = (a: Advisory) =>
     a.source === 'CISA KEV' || !!a.dueDate || !!a.references?.some((r: { label: string; url: string }) => r.label.includes('CISA'));
 
@@ -84,31 +65,83 @@ export function Advisories() {
     );
   };
 
-  // Telemetry counts matching query & base filters (harmonized without asymmetrical cross-zeroing)
-  const baseAdvisories = useMemo(() => {
+  // 1. Severity & Impact counts: scoped to active Advisory Source, vendor, due date, and query
+  const severityCandidates = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return advisories.filter((a) => matchesBase(a, q));
-  }, [advisories, vendorFilter, dueThisWeekOnly, query]);
+    return advisories.filter((a) => matchesBase(a, q) && matchesSource(a, sourceFilter));
+  }, [advisories, vendorFilter, dueThisWeekOnly, query, sourceFilter]);
 
   const severityCounts = useMemo(() => {
     return {
-      all: baseAdvisories.length,
-      critical: baseAdvisories.filter((a) => matchesSeverity(a, 'CRITICAL')).length,
-      high: baseAdvisories.filter((a) => matchesSeverity(a, 'HIGH')).length,
-      medium: baseAdvisories.filter((a) => matchesSeverity(a, 'MEDIUM')).length,
-      low: baseAdvisories.filter((a) => matchesSeverity(a, 'LOW')).length,
-      ransomware: baseAdvisories.filter((a) => matchesSeverity(a, 'RANSOMWARE')).length,
+      all: severityCandidates.length,
+      critical: severityCandidates.filter((a) => matchesSeverity(a, 'CRITICAL')).length,
+      high: severityCandidates.filter((a) => matchesSeverity(a, 'HIGH')).length,
+      medium: severityCandidates.filter((a) => matchesSeverity(a, 'MEDIUM')).length,
+      low: severityCandidates.filter((a) => matchesSeverity(a, 'LOW')).length,
+      ransomware: severityCandidates.filter((a) => matchesSeverity(a, 'RANSOMWARE')).length,
     };
-  }, [baseAdvisories]);
+  }, [severityCandidates]);
+
+  // 2. Advisory Source counts: scoped to active Severity, vendor, due date, and query
+  const sourceCandidates = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    return advisories.filter((a) => matchesBase(a, q) && matchesSeverity(a, severityFilter));
+  }, [advisories, vendorFilter, dueThisWeekOnly, query, severityFilter]);
 
   const sourceCounts = useMemo(() => {
     return {
-      all: baseAdvisories.length,
-      cisa: baseAdvisories.filter((a) => matchesSource(a, 'CISA')).length,
-      github: baseAdvisories.filter((a) => matchesSource(a, 'GITHUB')).length,
+      all: sourceCandidates.length,
+      cisa: sourceCandidates.filter((a) => matchesSource(a, 'CISA')).length,
+      github: sourceCandidates.filter((a) => matchesSource(a, 'GITHUB')).length,
     };
-  }, [baseAdvisories]);
+  }, [sourceCandidates]);
 
+  // 3. Vendor counts: scoped to active Advisory Source, Severity, due date, and query
+  const vendorCandidates = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    return advisories.filter((a) => {
+      if (dueThisWeekOnly) {
+        const d = daysUntil(a.dueDate);
+        if (d < 0 || d > 7) return false;
+      }
+      if (!matchesSource(a, sourceFilter)) return false;
+      if (!matchesSeverity(a, severityFilter)) return false;
+      if (!q) return true;
+      return [a.cve, a.vendor, a.product, a.name, a.description].some((v) =>
+        (v || '').toLowerCase().includes(q)
+      );
+    });
+  }, [advisories, sourceFilter, severityFilter, dueThisWeekOnly, query]);
+
+  const sortedVendors = useMemo(() => {
+    const counts: Record<string, number> = {};
+    for (const a of vendorCandidates) {
+      const v = a.vendor?.trim();
+      if (v) {
+        counts[v] = (counts[v] || 0) + 1;
+      }
+    }
+    return Object.entries(counts)
+      .map(([name, count]) => ({ name, count }))
+      .sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }));
+  }, [vendorCandidates]);
+
+  // 4. Due this week count: scoped to active Source, Severity, vendor, and query
+  const dueThisWeekCount = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    return advisories.filter((a) => {
+      if (!a.dueDate || !/^\d{4}-\d{2}-\d{2}$/.test(a.dueDate)) return false;
+      const d = daysUntil(a.dueDate);
+      if (d < 0 || d > 7) return false;
+      if (vendorFilter !== 'ALL' && a.vendor.toLowerCase() !== vendorFilter.toLowerCase()) return false;
+      if (!matchesSource(a, sourceFilter)) return false;
+      if (!matchesSeverity(a, severityFilter)) return false;
+      if (!q) return true;
+      return [a.cve, a.vendor, a.product, a.name, a.description].some((v) =>
+        (v || '').toLowerCase().includes(q)
+      );
+    }).length;
+  }, [advisories, vendorFilter, sourceFilter, severityFilter, query]);
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
     return advisories
@@ -187,7 +220,7 @@ export function Advisories() {
                     setPage(1);
                   }}
                   vendors={sortedVendors}
-                  totalCount={advisories.length}
+                  totalCount={vendorCandidates.length}
                 />
               </div>
 
