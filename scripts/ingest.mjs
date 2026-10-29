@@ -53,9 +53,9 @@ const OPENROUTER_MODEL = process.env.OPENROUTER_MODEL || "openrouter/free";
 
 const ARTICLES_PER_AI_BATCH = 3;
 
-const MAX_NEW_CANDIDATES = 45;
+const MAX_NEW_CANDIDATES = 60;
 
-const ITEMS_PER_FEED = 15;
+const ITEMS_PER_FEED = 50;
 
 const MAX_FEED_ARTICLES = 350;
 
@@ -2419,7 +2419,11 @@ const remainingPool = [];
 
 for (const candidate of filteredCandidates) {
   const currentCount = sourceCounts.get(candidate.source) || 0;
-  if (currentCount < 2) {
+  // Primary breaking newsrooms (The Hacker News, BleepingComputer) publish high volumes;
+  // allocate up to 4 candidates in first pass so multi-threat breaking days are not starved.
+  const isHighVolumeSource = candidate.source === 'The Hacker News' || candidate.source === 'BleepingComputer';
+  const maxPerSource = isHighVolumeSource ? 4 : 2;
+  if (currentCount < maxPerSource) {
     diversifiedCandidates.push(candidate);
     sourceCounts.set(candidate.source, currentCount + 1);
   } else {
