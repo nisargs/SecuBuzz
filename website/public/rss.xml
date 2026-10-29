@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Oct 2026 22:44:11 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 22:58:13 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Binance Investigates $5.8B Crypto Theft</title>
+      <link>https://secubuzz.com/news/binance-investigates-5-8b-crypto-theft-93b9d9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/binance-investigates-5-8b-crypto-theft-93b9d9</guid>
+      <description><![CDATA[Binance is investigating a potential breach that may have stolen up to $5.8 billion in digital assets, potentially the largest crypto hack ever. The incident involved unauthorized access to user wallets and exchange infrastructure, with attackers exploiting unknown vulnerabilities or credential compromise. Binance has issued a statement and is working with law enforcement to contain the breach and recover assets.]]></description>
+      <pubDate>Thu, 29 Oct 2026 22:45:23 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/binance-probes-potential-58-billion-crypto-theft-hack/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Pillow Security Patch</title>
+      <link>https://secubuzz.com/news/red-hat-releases-pillow-security-patch-37d99b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-pillow-security-patch-37d99b</guid>
+      <description><![CDATA[Red Hat released an update for the python‑pillow package on RHEL 8 to address a critical security flaw. The vulnerability allows local privilege escalation through malformed image processing, with a CVSS score of 7.8. The patch is available via the standard update channel; administrators should apply it immediately to mitigate exploitation.]]></description>
+      <pubDate>Thu, 29 Oct 2026 22:42:05 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:92639">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Updates Node.js 24 for RHEL 9</title>
+      <link>https://secubuzz.com/news/red-hat-updates-node-js-24-for-rhel-9-37d9a6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-node-js-24-for-rhel-9-37d9a6</guid>
+      <description><![CDATA[Red Hat issued a security update for the nodejs:24 module on RHEL 9, fixing a flaw that could enable remote code execution via crafted JavaScript payloads. The vulnerability carries a CVSS score of 7.5 and is publicly documented. Users should install the update through the package manager to prevent exploitation.]]></description>
+      <pubDate>Thu, 29 Oct 2026 22:34:48 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:92378">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Hugging Face Models Hijack GPUs for Mining</title>
+      <link>https://secubuzz.com/news/hugging-face-models-hijack-gpus-for-mining-40cea6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hugging-face-models-hijack-gpus-for-mining-40cea6</guid>
+      <description><![CDATA[A crypto‑mining campaign targeting Hugging Face models has resurfaced, hijacking GPU servers and installing backdoors after model downloads. The malware exploits insecure model hosting to inject mining code, affecting over 28,000 downloads. Security teams should block suspicious model traffic and apply host‑based intrusion detection to detect and remove the backdoor.]]></description>
+      <pubDate>Thu, 29 Oct 2026 22:09:24 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/hugging-face-malware-campaign-returns-to-hijack-gpus-for-crypto-mining/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Polymarket Trading Suspended After Crypto‑Draining Breach</title>
       <link>https://secubuzz.com/news/polymarket-trading-suspended-after-crypto-draining-499595</link>
@@ -419,42 +455,6 @@
       <description><![CDATA[A Help Net Security analysis reports that security teams are adopting AI-driven automation in the SOC faster than industry observers anticipated. The author notes that compliance obligations, previously assumed to slow AI integration, have not impeded deployment pace. The finding suggests SOC operators are increasingly trusting AI to execute operational actions within security workflows.]]></description>
       <pubDate>Wed, 28 Oct 2026 15:25:01 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/10/28/exaforce-trust-in-ai-security/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Nefilim Ransomware Affiliate Sentenced to 70 Months</title>
-      <link>https://secubuzz.com/news/nefilim-ransomware-affiliate-sentenced-to-70-month-211c3a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/nefilim-ransomware-affiliate-sentenced-to-70-month-211c3a</guid>
-      <description><![CDATA[Artem Stryzhak, identified as a Ukrainian Hive and Nefilim ransomware affiliate, was sentenced to 70 months in US federal prison. He pleaded guilty to using Nefilim ransomware in attacks against victims. The prosecution represents a continued law enforcement effort targeting ransomware operators linked to the Hive ecosystem.]]></description>
-      <pubDate>Wed, 28 Oct 2026 15:05:06 GMT</pubDate>
-      <source url="https://www.securityweek.com/ukrainian-hive-and-nefilim-ransomware-affiliate-gets-70-months-in-us-prison/">SecurityWeek</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>AI Bot Impersonation Used for Credential Scanning</title>
-      <link>https://secubuzz.com/news/ai-bot-impersonation-used-for-credential-scanning-5eded3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-bot-impersonation-used-for-credential-scanning-5eded3</guid>
-      <description><![CDATA[A threat actor is scanning for exposed credentials by impersonating AI agents from OpenAI, Anthropic, Meta, and other vendors. The attacker leverages trusted AI company bot identities to probe for publicly accessible data and evade detection. Security teams should monitor anomalous bot user-agent strings and restrict public access to sensitive endpoints to counter this reconnaissance.]]></description>
-      <pubDate>Wed, 28 Oct 2026 14:37:52 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyber-risk/attacker-impersonates-ai-bots-scans-credentials">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Windows Imaging Component Information Disclosure Patched</title>
-      <link>https://secubuzz.com/news/windows-imaging-component-information-disclosure-p-745d86</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/windows-imaging-component-information-disclosure-p-745d86</guid>
-      <description><![CDATA[Microsoft disclosed CVE-2026-62740, an information disclosure vulnerability in the Windows Imaging Component affecting supported editions of Microsoft Office. The flaw allows unauthorized access to sensitive data through improper handling of image processing operations. Microsoft recommends customers install the latest security updates across all affected Office editions to remediate the issue.]]></description>
-      <pubDate>Wed, 28 Oct 2026 14:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62740">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Banks Block Third-Party AI Agents From Accounts</title>
-      <link>https://secubuzz.com/news/banks-block-third-party-ai-agents-from-accounts-669fa8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/banks-block-third-party-ai-agents-from-accounts-669fa8</guid>
-      <description><![CDATA[Banks are blocking third-party AI agents from accessing customer accounts, citing security risks to account integrity. The concern centers on unauthorized access and potential misuse of customer financial data by external AI systems. Financial institutions are implementing access restrictions to mitigate risks posed by autonomous third-party agents interacting with banking platforms.]]></description>
-      <pubDate>Wed, 28 Oct 2026 13:38:59 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/ai/2026/10/banks-are-blocking-ai-agents-from-customer-accounts">Malwarebytes Labs</source>
       <category>General</category>
     </item>
   </channel>

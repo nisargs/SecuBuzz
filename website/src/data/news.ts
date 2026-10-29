@@ -11,6 +11,74 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "binance-investigates-5-8b-crypto-theft-93b9d9",
+    "title": "Binance Investigates $5.8B Crypto Theft",
+    "summary": "Binance is investigating a potential breach that may have stolen up to $5.8 billion in digital assets, potentially the largest crypto hack ever. The incident involved unauthorized access to user wallets and exchange infrastructure, with attackers exploiting unknown vulnerabilities or credential compromise. Binance has issued a statement and is working with law enforcement to contain the breach and recover assets.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/binance-probes-potential-58-billion-crypto-theft-hack/",
+    "publishedAt": "2026-10-29T22:45:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "binance-investigates-5-8b-crypto-theft",
+      "article-93b9d9",
+      "93b9d9"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-pillow-security-patch-37d99b",
+    "title": "Red Hat Releases Pillow Security Patch",
+    "summary": "Red Hat released an update for the python‑pillow package on RHEL 8 to address a critical security flaw. The vulnerability allows local privilege escalation through malformed image processing, with a CVSS score of 7.8. The patch is available via the standard update channel; administrators should apply it immediately to mitigate exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92639",
+    "publishedAt": "2026-10-29T22:42:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-pillow-security-patch",
+      "article-37d99b",
+      "37d99b"
+    ]
+  },
+  {
+    "slug": "red-hat-updates-node-js-24-for-rhel-9-37d9a6",
+    "title": "Red Hat Updates Node.js 24 for RHEL 9",
+    "summary": "Red Hat issued a security update for the nodejs:24 module on RHEL 9, fixing a flaw that could enable remote code execution via crafted JavaScript payloads. The vulnerability carries a CVSS score of 7.5 and is publicly documented. Users should install the update through the package manager to prevent exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92378",
+    "publishedAt": "2026-10-29T22:34:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-node-js-24-for-rhel-9",
+      "article-37d9a6",
+      "37d9a6"
+    ]
+  },
+  {
+    "slug": "hugging-face-models-hijack-gpus-for-mining-40cea6",
+    "title": "Hugging Face Models Hijack GPUs for Mining",
+    "summary": "A crypto‑mining campaign targeting Hugging Face models has resurfaced, hijacking GPU servers and installing backdoors after model downloads. The malware exploits insecure model hosting to inject mining code, affecting over 28,000 downloads. Security teams should block suspicious model traffic and apply host‑based intrusion detection to detect and remove the backdoor.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hugging-face-malware-campaign-returns-to-hijack-gpus-for-crypto-mining/",
+    "publishedAt": "2026-10-29T22:09:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hugging-face-models-hijack-gpus-for-mining",
+      "article-40cea6",
+      "40cea6"
+    ]
+  },
+  {
     "slug": "polymarket-trading-suspended-after-crypto-draining-499595",
     "title": "Polymarket Trading Suspended After Crypto‑Draining Breach",
     "summary": "Polymarket halted trading after attackers compromised a third‑party service to deploy a cryptocurrency‑draining JavaScript payload. The flaw allowed unauthorized extraction of user funds, with approximately $2.5 million traced to a suspected attacker wallet. Red Hat issued a patch and advised users to monitor account balances and revoke compromised API keys.",
@@ -6446,78 +6514,6 @@ export const news: NewsBrief[] = [
       "article-458852",
       "458852",
       "fake-amazon-music-x-youtube-deal-traps-creators-into-google-"
-    ]
-  },
-  {
-    "slug": "microsoft-powertoys-0-102-adds-cursorhide-button-l-f9e809",
-    "title": "Microsoft PowerToys 0.102 Adds CursorHide, Button Lock, and Command‑Line Enhancements",
-    "summary": "Microsoft released PowerToys 0.102, adding CursorHide and Button Lock mouse utilities, new command‑line tools, and Command Palette enhancements. The update expands PowerToys functionality, enabling users to hide the cursor, lock mouse buttons, and access utilities via command line, improving workflow automation. Users should download the latest release from Microsoft’s official site and review the release notes for compatibility considerations.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-powertoys-adds-cursorhide-button-lock-mouse-tools/",
-    "publishedAt": "2026-10-21T12:20:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-powertoys-0-102-adds-cursorhide-button-l",
-      "article-f9e809",
-      "f9e809",
-      "microsoft-powertoys-0-102-adds-cursorhide-button-lock-and-co"
-    ]
-  },
-  {
-    "slug": "bronze-sandcastle-exploits-sandboxie-dll-sideloadi-2c23a1",
-    "title": "Bronze Sandcastle Exploits Sandboxie DLL Sideloading to Deploy Backdoors",
-    "summary": "Bronze Sandcastle, a China-aligned threat cluster, has been observed targeting organizations in Asia and Africa since mid‑2025 by sideloading Sandboxie DLLs to deploy backdoors. The technique bypasses standard DLL loading checks, enabling attackers to execute malicious code with elevated privileges without detection.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/china-aligned-bronze-sandcastle-abuses.html",
-    "publishedAt": "2026-10-21T12:05:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "bronze-sandcastle-exploits-sandboxie-dll-sideloadi",
-      "article-2c23a1",
-      "2c23a1",
-      "bronze-sandcastle-exploits-sandboxie-dll-sideloading-to-depl"
-    ]
-  },
-  {
-    "slug": "generative-ai-weakens-behavior-only-email-detectio-74d84a",
-    "title": "Generative AI Weakens Behavior-Only Email Detection, Proofpoint Reports",
-    "summary": "Generative AI is erasing behavioral tells, weakening behavior-only detection, Proofpoint reports. The shift replaces clumsy wording, generic pretexts, and reused templates with fluent, personalized messages that evade traditional email filters. Security teams must adopt advanced content analysis, machine learning models, and contextual threat intelligence to counter evolving email threats.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/generative-ai-is-erasing-behavioral.html",
-    "publishedAt": "2026-10-21T11:53:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "generative-ai-weakens-behavior-only-email-detectio",
-      "article-74d84a",
-      "74d84a",
-      "generative-ai-weakens-behavior-only-email-detection-proofpoi"
-    ]
-  },
-  {
-    "slug": "signal-calling-library-bug-allows-post-hangup-audi-26c9d5",
-    "title": "Signal Calling Library Bug Allows Post-Hangup Audio",
-    "summary": "A flaw in Signal’s calling library permits a participant to continue hearing audio after the caller hangs up, exposing ongoing conversation data. The vulnerability stems from improper termination handling, enabling unauthorized audio capture without authentication. Updating to the latest Signal version applies the fix and restores proper call closure.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/10/signal-bug-could-let-someone-keep-listening-after-you-hang-up",
-    "publishedAt": "2026-10-21T11:37:57.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "signal-calling-library-bug-allows-post-hangup-audi",
-      "article-26c9d5",
-      "26c9d5",
-      "signal-calling-library-bug-allows-post-hangup-audio"
     ]
   }
 ];
