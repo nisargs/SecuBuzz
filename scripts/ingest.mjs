@@ -1814,23 +1814,31 @@ async function requestOpenRouter(candidates) {
 // -----------------------------------------------------------------------------
 
 function getRotatedEngines() {
-  const pool = [];
+  const primaryPool = [];
   if (GROQ_API_KEY) {
-    pool.push({ name: `Groq (${GROQ_MODEL})`, run: requestGroq });
+    primaryPool.push({ name: `Groq (${GROQ_MODEL})`, run: requestGroq });
   }
   if (GEMINI_API_KEY) {
-    pool.push({ name: `Gemini (${GEMINI_MODEL})`, run: requestGemini });
+    primaryPool.push({ name: `Gemini (${GEMINI_MODEL})`, run: requestGemini });
   }
+
+  if (primaryPool.length === 0 && !OPENROUTER_API_KEY) return [];
+
+  // Alternates hourly lead 50/50 between Groq and Gemini (12 hours each per day)
+  let rotated = [];
+  if (primaryPool.length > 0) {
+    const currentHour = new Date().getUTCHours();
+    const leadIndex = currentHour % primaryPool.length;
+    rotated = [...primaryPool.slice(leadIndex), ...primaryPool.slice(0, leadIndex)];
+  }
+
+  // OpenRouter is kept strictly as the last-resort failover engine
+  // to protect its unfunded 50 req/day free tier from being tripped by routine lead hours
   if (OPENROUTER_API_KEY) {
-    pool.push({ name: `OpenRouter (${OPENROUTER_MODEL})`, run: requestOpenRouter });
+    rotated.push({ name: `OpenRouter (${OPENROUTER_MODEL})`, run: requestOpenRouter });
   }
 
-  if (pool.length === 0) return [];
-
-  // Interleave the lead engine based on current UTC hour
-  const currentHour = new Date().getUTCHours();
-  const leadIndex = currentHour % pool.length;
-  return [...pool.slice(leadIndex), ...pool.slice(0, leadIndex)];
+  return rotated;
 }
 
 async function requestAi(candidates) {
@@ -2040,6 +2048,8 @@ async function requestGroqContextComparison(storyA, storyB, prompt) {
   const parsed = safeJsonParse(content);
   if (!parsed) throw new Error("Could not parse Groq context comparison response as JSON");
 
+  // Spacing delay: keeps Groq token usage and RPM spaced during deduplication
+  await sleep(2500);
   return parsed;
 }
 
@@ -2083,6 +2093,8 @@ async function requestGeminiContextComparison(storyA, storyB, prompt) {
   const parsed = safeJsonParse(content);
   if (!parsed) throw new Error("Could not parse Gemini context comparison response as JSON");
 
+  // Pacing delay: guarantees Gemini comparison requests strictly respect the 10 RPM ceiling
+  await sleep(6000);
   return parsed;
 }
 
