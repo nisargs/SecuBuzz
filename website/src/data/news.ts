@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "claude-ai-chains-exploits-across-major-browsers-an-11f7cd",
+    "title": "Claude AI Chains Exploits Across Major Browsers and OSes",
+    "summary": "An unreleased version of Anthropic’s Claude model has discovered and chained multiple vulnerabilities in Chrome, Safari, Android, Windows, and Linux. The model demonstrates active exploitation potential, revealing zero‑day weaknesses that bypass standard security controls. Vendors should review recent advisories and deploy mitigations; security teams must monitor for related attack patterns.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/application-security/claude-model-exploits-major-browsers-oses",
+    "publishedAt": "2026-10-29T18:15:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "claude-ai-chains-exploits-across-major-browsers-an",
+      "article-11f7cd",
+      "11f7cd",
+      "claude-ai-chains-exploits-across-major-browsers-and-oses"
+    ]
+  },
+  {
+    "slug": "ad-fraud-report-shows-ai-cloaking-declines-ios-exp-7962fd",
+    "title": "Ad Fraud Report Shows AI Cloaking Declines, iOS Exploits Rise",
+    "summary": "The State of Ad Fraud 2026 report reveals that 52% of schemes use AI as cloaking, yet iOS exploits and Messenger phishing are gaining traction. Analysis covers 1.2 million campaigns across eight platforms, highlighting shifting tactics in malicious advertising. Stakeholders should review platform safeguards and update verification processes accordingly.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/state-of-ad-fraud-2026-52-of-schemes-use-ai-as-cloaking-loses-ground-to-ios-exploits-and-messenger-phishing/",
+    "publishedAt": "2026-10-29T17:26:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ad-fraud-report-shows-ai-cloaking-declines-ios-exp",
+      "article-7962fd",
+      "7962fd",
+      "ad-fraud-report-shows-ai-cloaking-declines-ios-exploits-rise"
+    ]
+  },
+  {
     "slug": "google-showcases-gemini-4-carbon-cybersecurity-mod-8eaa07",
     "title": "Google Showcases Gemini 4 Carbon Cybersecurity Model",
     "summary": "Google introduced the Gemini 4 Carbon model, achieving 88.2% on SEC-bench Pro, targeting vetted cyber defenders through its Fairwind Program. The model leverages advanced AI to detect and mitigate threats, providing automated analysis and threat intelligence. Users must integrate the model via the Fairwind Program to access its capabilities and stay updated on security enhancements.",
@@ -240,20 +276,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "cisco-sd-wan-controller-authentication-bypass-78eefb",
-    "title": "Cisco SD-WAN Controller Authentication Bypass",
-    "summary": "A flaw in Cisco Catalyst SD‑WAN Controller’s peering authentication permits unauthenticated remote attackers to bypass login and gain administrative privileges. The defect stems from a broken authentication mechanism that accepts crafted requests, enabling attackers to log in as a high‑privileged non‑root user and manipulate NETCONF network configurations. Cisco has issued a patch; administrators should apply the update immediately.",
+    "slug": "cisco-sd-wan-controllers-vulnerability-cve-2026-20-78eefb",
+    "title": "Cisco SD‑WAN Controllers Vulnerability (CVE‑2026‑20127) Allows Authentication Bypass and Potential KeyDrift Deployment",
+    "summary": "Cisco SD‑WAN Controllers suffered an authentication‑bypass flaw (CVE‑2026‑20127) that let attackers gain privileged access. The defect allowed unauthenticated remote requests to bypass login, enabling manipulation of NETCONF configurations and potential deployment of the KeyDrift malware framework. Cisco issued an out‑of‑band patch; administrators should apply it immediately and monitor controller logs for signs of compromise.",
     "category": "Vulnerability",
-    "severity": "HIGH",
+    "severity": "CRITICAL",
     "source": "Cisco PSIRT",
     "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-rpa-EHchtZk?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Catalyst+SD-WAN+Controller+Authentication+Bypass+Vulnerability%26vs_k%3D1",
     "publishedAt": "2026-10-29T01:54:35.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-cisco-sd-wan-flaw-to-deploy-custom-keydrift-malware/"
+      }
+    ],
     "aliases": [
-      "cisco-sd-wan-controller-authentication-bypass",
+      "cisco-sd-wan-controllers-vulnerability-cve-2026-20",
       "article-78eefb",
-      "78eefb"
+      "78eefb",
+      "cisco-sd-wan-controllers-vulnerability-cve-2026-20127-allows"
     ]
   },
   {
@@ -6480,42 +6522,6 @@ export const news: NewsBrief[] = [
       "article-455413",
       "455413",
       "us-dhs-orders-removal-of-deepseek-ai-from-federal-systems"
-    ]
-  },
-  {
-    "slug": "attackers-hijacked-over-300-tor-exit-relays-to-int-54c4a5",
-    "title": "Attackers Hijacked Over 300 Tor Exit Relays to Intercept SSH Connections",
-    "summary": "Attackers hijacked more than 300 Tor exit relays between October 1 and 5, redirecting SSH traffic to malicious servers that captured login passwords. The flaw exploited the exit relay’s role as the final hop, enabling credential theft without authentication or user interaction. Operators should monitor exit relay logs, block compromised relays, and enforce multi‑factor authentication for SSH access.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/attackers-hijacked-over-300-tor-exit.html",
-    "publishedAt": "2026-10-21T10:30:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "attackers-hijacked-over-300-tor-exit-relays-to-int",
-      "article-54c4a5",
-      "54c4a5",
-      "attackers-hijacked-over-300-tor-exit-relays-to-intercept-ssh"
-    ]
-  },
-  {
-    "slug": "microsoft-reports-vpn-bug-not-fixed-in-october-upd-3a1fd6",
-    "title": "Microsoft Reports VPN Bug Not Fixed in October Updates",
-    "summary": "Microsoft announced that the October 2026 Windows 11 cumulative updates mistakenly marked a bug causing Always On VPN connection failures as resolved. The oversight leaves users vulnerable to intermittent VPN outages, potentially disrupting remote access for enterprise environments without authentication bypass.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-didnt-actually-fix-vpn-issues-caused-by-windows-updates/",
-    "publishedAt": "2026-10-21T10:14:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-reports-vpn-bug-not-fixed-in-october-upd",
-      "article-3a1fd6",
-      "3a1fd6",
-      "microsoft-reports-vpn-bug-not-fixed-in-october-updates"
     ]
   }
 ];
