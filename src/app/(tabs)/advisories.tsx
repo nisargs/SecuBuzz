@@ -308,22 +308,24 @@ export default function AdvisoriesScreen() {
     return text.includes(query);
   };
 
-  // Base filtered advisories for counting (harmonized against active search query)
-  const baseAdvisories = useMemo(() => {
-    const query = searchQuery.trim().toLowerCase();
-    return advisories.filter((item) => matchesSearch(item, query));
-  }, [advisories, searchQuery]);
-
+  // Dynamic faceted counts for AdvisoryFilterModal
   const severityCounts = useMemo(() => {
+    const query = searchQuery.trim().toLowerCase();
+    const candidateAdvisories = advisories.filter(
+      (item) =>
+        matchesSource(item, sourceFilter) &&
+        matchesEpss(item, epssFilter) &&
+        matchesSearch(item, query),
+    );
     const counts: Record<string, number> = {
-      ALL: baseAdvisories.length,
+      ALL: candidateAdvisories.length,
       CRITICAL: 0,
       HIGH: 0,
       MEDIUM: 0,
       LOW: 0,
       RANSOMWARE: 0,
     };
-    baseAdvisories.forEach((item) => {
+    candidateAdvisories.forEach((item) => {
       if (item.knownRansomwareCampaignUse?.toLowerCase() === 'known') {
         counts.RANSOMWARE++;
       }
@@ -333,30 +335,44 @@ export default function AdvisoriesScreen() {
       if (item.severity === 'LOW') counts.LOW++;
     });
     return counts;
-  }, [baseAdvisories]);
+  }, [advisories, sourceFilter, epssFilter, searchQuery]);
 
   const sourceCounts = useMemo(() => {
+    const query = searchQuery.trim().toLowerCase();
+    const candidateAdvisories = advisories.filter(
+      (item) =>
+        matchesSeverity(item, severityFilter) &&
+        matchesEpss(item, epssFilter) &&
+        matchesSearch(item, query),
+    );
     const counts: Record<string, number> = {
-      ALL: baseAdvisories.length,
+      ALL: candidateAdvisories.length,
       CISA: 0,
       GITHUB: 0,
     };
-    baseAdvisories.forEach((item) => {
+    candidateAdvisories.forEach((item) => {
       if (item.source === 'CISA KEV') counts.CISA++;
       if (item.source === 'GITHUB') counts.GITHUB++;
     });
     return counts;
-  }, [baseAdvisories]);
+  }, [advisories, severityFilter, epssFilter, searchQuery]);
 
   // EPSS likelihood counts
   const epssCounts = useMemo(() => {
+    const query = searchQuery.trim().toLowerCase();
+    const candidateAdvisories = advisories.filter(
+      (item) =>
+        matchesSource(item, sourceFilter) &&
+        matchesSeverity(item, severityFilter) &&
+        matchesSearch(item, query),
+    );
     const counts: Record<string, number> = {
-      ALL: baseAdvisories.length,
+      ALL: candidateAdvisories.length,
       CRITICAL_90: 0,
       HIGH_50: 0,
       LOW_50: 0,
     };
-    baseAdvisories.forEach((item) => {
+    candidateAdvisories.forEach((item) => {
       const p = item.epssPercentile ?? getEpssPercentile(item.cveID);
       if (p !== undefined) {
         if (p >= 0.90) {
@@ -369,7 +385,7 @@ export default function AdvisoriesScreen() {
       }
     });
     return counts;
-  }, [baseAdvisories]);
+  }, [advisories, sourceFilter, severityFilter, searchQuery]);
 
   // Filtered Advisories
   const filteredAdvisories = useMemo(() => {
