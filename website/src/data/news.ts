@@ -28,25 +28,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "node-js-vulnerabilities-impact-cisco-products-1aa209",
-    "title": "Node.js Vulnerabilities Impact Cisco Products",
-    "summary": "Node.js released fixes for multiple high‑impact vulnerabilities affecting Cisco products, including CVE-2026-111497, an out‑of‑bounds write in the Brotli decoder that could lead to remote code execution. Additional flaws, CVE-2026-105482, CVE-2026-105483, and CVE-2026-106069, compromise DNS resolution and TLS hostname validation, enabling traffic interception. Cisco should apply the Node.js patches and verify TLS configurations.",
-    "category": "CVE",
-    "severity": "HIGH",
+    "slug": "cisa-adds-cve-2026-111497-to-known-exploited-vulne-1aa209",
+    "title": "CISA Adds CVE‑2026‑111497 to Known Exploited Vulnerabilities Catalog; AWS and Cisco Issue Patches for Brotli RCE",
+    "summary": "CISA added CVE‑2026‑111497, a Brotli decompression flaw, to its Known Exploited Vulnerabilities catalog, affecting Google services. The flaw permits remote code execution or memory disclosure by exploiting improper input validation, enabling attackers to run arbitrary code. AWS and Cisco have issued patches for affected services, urging customers to update immediately to mitigate exploitation.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
     "source": "Cisco PSIRT",
     "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+Node.js+Affecting+Cisco+Products%3A+October+2026%26vs_k%3D1",
     "publishedAt": "2026-10-29T00:36:45.000Z",
-    "cves": [
-      "CVE-2026-111497",
-      "CVE-2026-105482",
-      "CVE-2026-105483",
-      "CVE-2026-106069"
+    "cves": [],
+    "additionalSources": [
+      {
+        "source": "AWS Security Bulletins",
+        "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-155-aws/"
+      }
     ],
-    "additionalSources": [],
     "aliases": [
-      "node-js-vulnerabilities-impact-cisco-products",
+      "cisa-adds-cve-2026-111497-to-known-exploited-vulne",
       "article-1aa209",
-      "1aa209"
+      "1aa209",
+      "cisa-adds-cve-2026-111497-to-known-exploited-vulnerabilities"
     ]
   },
   {
@@ -158,6 +159,23 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "chrome-early-stable-update-released-671bb3",
+    "title": "Chrome Early Stable Update Released",
+    "summary": "Google Chrome’s Stable channel received an early update to version 157.0.8103.26/27 for Windows, with Mac following shortly. The update includes bug fixes and performance improvements, as detailed in the release log. Users are encouraged to install the update via the browser’s update mechanism to maintain security and stability.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/early-stable-update-for-desktop_01255863767.html",
+    "publishedAt": "2026-10-28T19:57:13.619Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-early-stable-update-released",
+      "article-671bb3",
+      "671bb3"
+    ]
+  },
+  {
     "slug": "chromeos-stable-patch-fixes-critical-fileapi-flaw-60e267",
     "title": "ChromeOS Stable Patch Fixes Critical FileAPI Flaw",
     "summary": "Google released ChromeOS Stable channel update 16836.30.0, patching multiple vulnerabilities including a critical improper input validation flaw in FileAPI. CVE-2026-118331 carries a critical severity rating, while five additional high-severity flaws span use-after-free and input validation issues across Animation, Compositing, UI, and ReadingList components. Users should update to browser version 156.0.8078.77 to remediate all disclosed defects.",
@@ -174,6 +192,25 @@ export const news: NewsBrief[] = [
       "chromeos-stable-patch-fixes-critical-fileapi-flaw",
       "article-60e267",
       "60e267"
+    ]
+  },
+  {
+    "slug": "aws-agent-tool-masking-bypass-cve-2026-115415-5142fc",
+    "title": "AWS Agent Tool Masking Bypass CVE-2026-115415",
+    "summary": "CVE-2026-115415 allows an LLM to bypass environment variable masking in Strands Agents Tools, exposing cloud credentials and API keys. The flaw occurs when a crafted prompt instructs the tool to disable masking, returning sensitive data without operator consent. AWS recommends applying the latest patch and disabling automatic tool invocation until remediation is applied.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-154-aws/",
+    "publishedAt": "2026-10-28T19:39:08.000Z",
+    "cves": [
+      "CVE-2026-115415"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "aws-agent-tool-masking-bypass-cve-2026-115415",
+      "article-5142fc",
+      "5142fc"
     ]
   },
   {
@@ -6485,24 +6522,6 @@ export const news: NewsBrief[] = [
       "article-8118ff",
       "8118ff",
       "fbi-investigates-cybersecurity-executive-s-role-in-shinyhunt"
-    ]
-  },
-  {
-    "slug": "eu-cyber-resilience-act-does-not-mandate-fixes-for-60db8d",
-    "title": "EU Cyber Resilience Act Does Not Mandate Fixes for Fridge Controller Vulnerabilities",
-    "summary": "The EU’s Cyber Resilience Act, effective last month, requires manufacturers to address vulnerabilities and provide free updates only during a product’s support period, as defined by the manufacturer. The law does not compel fixes for fridge controllers already compromised in a French attack.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/eu-cyber-law-wont-force-fixes-for-fridges-in-french-attack",
-    "publishedAt": "2026-10-20T14:55:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "eu-cyber-resilience-act-does-not-mandate-fixes-for",
-      "article-60db8d",
-      "60db8d",
-      "eu-cyber-resilience-act-does-not-mandate-fixes-for-fridge-co"
     ]
   }
 ];

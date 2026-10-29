@@ -15,15 +15,23 @@
   {
     "id": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+Node.js+Affecting+Cisco+Products%3A+October+2026%26vs_k%3D1",
     "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+Node.js+Affecting+Cisco+Products%3A+October+2026%26vs_k%3D1",
-    "title": "Node.js Vulnerabilities Impact Cisco Products",
-    "headline": "Node.js Vulnerabilities Impact Cisco Products",
-    "summary": "Node.js released fixes for multiple high‑impact vulnerabilities affecting Cisco products, including CVE-2026-111497, an out‑of‑bounds write in the Brotli decoder that could lead to remote code execution. Additional flaws, CVE-2026-105482, CVE-2026-105483, and CVE-2026-106069, compromise DNS resolution and TLS hostname validation, enabling traffic interception. Cisco should apply the Node.js patches and verify TLS configurations.",
-    "category": "CVE",
-    "severity": "HIGH",
+    "title": "CISA Adds CVE‑2026‑111497 to Known Exploited Vulnerabilities Catalog; AWS and Cisco Issue Patches for Brotli RCE",
+    "headline": "CISA Adds CVE‑2026‑111497 to Known Exploited Vulnerabilities Catalog; AWS and Cisco Issue Patches for Brotli RCE",
+    "summary": "CISA added CVE‑2026‑111497, a Brotli decompression flaw, to its Known Exploited Vulnerabilities catalog, affecting Google services. The flaw permits remote code execution or memory disclosure by exploiting improper input validation, enabling attackers to run arbitrary code. AWS and Cisco have issued patches for affected services, urging customers to update immediately to mitigate exploitation.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
     "source": "Cisco PSIRT",
     "publishedAt": "2026-10-29T00:36:45.000Z",
     "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+Node.js+Affecting+Cisco+Products%3A+October+2026%26vs_k%3D1",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "AWS Security Bulletins",
+        "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-155-aws/"
+      }
+    ],
+    "cves": [
+      "CVE-2026-111497"
+    ]
   },
   {
     "id": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-tunnel-dos-s6mgkb75?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Secure+Firewall+Adaptive+Security+Appliance+and+Secure+Firewall+Threat+Defense+Software+Remote+Access+SSL+VPN+Tunnel+Denial+of+Service+Vulnerability%26vs_k%3D1",
@@ -104,6 +112,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://chromereleases.googleblog.com/2026/10/early-stable-update-for-desktop_01255863767.html",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/early-stable-update-for-desktop_01255863767.html",
+    "title": "Chrome Early Stable Update Released",
+    "headline": "Chrome Early Stable Update Released",
+    "summary": "Google Chrome’s Stable channel received an early update to version 157.0.8103.26/27 for Windows, with Mac following shortly. The update includes bug fixes and performance improvements, as detailed in the release log. Users are encouraged to install the update via the browser’s update mechanism to maintain security and stability.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "publishedAt": "2026-10-28T19:57:13.619Z",
+    "url": "https://chromereleases.googleblog.com/2026/10/early-stable-update-for-desktop_01255863767.html",
+    "additionalSources": []
+  },
+  {
     "id": "https://chromereleases.googleblog.com/2026/10/stable-channel-update-for-chromeos_01748991111.html",
     "sourceUrl": "https://chromereleases.googleblog.com/2026/10/stable-channel-update-for-chromeos_01748991111.html",
     "title": "ChromeOS Stable Patch Fixes Critical FileAPI Flaw",
@@ -114,6 +135,19 @@
     "source": "Google Chrome Releases",
     "publishedAt": "2026-10-28T19:45:30.211Z",
     "url": "https://chromereleases.googleblog.com/2026/10/stable-channel-update-for-chromeos_01748991111.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-154-aws/",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-154-aws/",
+    "title": "AWS Agent Tool Masking Bypass CVE-2026-115415",
+    "headline": "AWS Agent Tool Masking Bypass CVE-2026-115415",
+    "summary": "CVE-2026-115415 allows an LLM to bypass environment variable masking in Strands Agents Tools, exposing cloud credentials and API keys. The flaw occurs when a crafted prompt instructs the tool to disable masking, returning sensitive data without operator consent. AWS recommends applying the latest patch and disabling automatic tool invocation until remediation is applied.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "AWS Security Bulletins",
+    "publishedAt": "2026-10-28T19:39:08.000Z",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-154-aws/",
     "additionalSources": []
   },
   {
@@ -4679,18 +4713,5 @@
         "sourceUrl": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/"
       }
     ]
-  },
-  {
-    "id": "https://therecord.media/eu-cyber-law-wont-force-fixes-for-fridges-in-french-attack",
-    "sourceUrl": "https://therecord.media/eu-cyber-law-wont-force-fixes-for-fridges-in-french-attack",
-    "title": "EU Cyber Resilience Act Does Not Mandate Fixes for Fridge Controller Vulnerabilities",
-    "headline": "EU Cyber Resilience Act Does Not Mandate Fixes for Fridge Controller Vulnerabilities",
-    "summary": "The EU’s Cyber Resilience Act, effective last month, requires manufacturers to address vulnerabilities and provide free updates only during a product’s support period, as defined by the manufacturer. The law does not compel fixes for fridge controllers already compromised in a French attack.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Record",
-    "publishedAt": "2026-10-20T14:55:00.000Z",
-    "url": "https://therecord.media/eu-cyber-law-wont-force-fixes-for-fridges-in-french-attack",
-    "additionalSources": []
   }
 ]
