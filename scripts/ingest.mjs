@@ -51,9 +51,9 @@ const OPENROUTER_MODEL = process.env.OPENROUTER_MODEL || "openrouter/free";
  * All 3 run on 100% free tier allowances with automated failover.
  */
 
-const ARTICLES_PER_AI_BATCH = 3;
+const ARTICLES_PER_AI_BATCH = 4;
 
-const MAX_NEW_CANDIDATES = 60;
+const MAX_NEW_CANDIDATES = 40;
 
 const ITEMS_PER_FEED = 50;
 
