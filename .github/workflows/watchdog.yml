@@ -1,9 +1,9 @@
 name: SecuBuzz Feed Watchdog
 
 on:
-  # Check feed freshness every 6 hours (offset to :37) to conserve Actions quota
+  # Check feed freshness every 3 hours (offset to :37) to catch dropped GitHub runs
   schedule:
-    - cron: "37 */6 * * *"
+    - cron: "37 */3 * * *"
 
   # Allow manual trigger from GitHub Actions tab
   workflow_dispatch:
