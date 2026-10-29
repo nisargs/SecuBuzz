@@ -110,7 +110,7 @@ function parseBulletin(html, bulletinDate) {
   const vulnerabilities = [];
 
   for (const tr of trs) {
-    const cveMatch = tr.match(/CVE-(?:2024|2025|2026)-\d+/i);
+    const cveMatch = tr.match(/CVE-\d{4}-\d+/i);
     if (!cveMatch) continue;
     const cve = cveMatch[0].toUpperCase();
 
@@ -122,8 +122,15 @@ function parseBulletin(html, bulletinDate) {
       // Typical ASB table: [CVE, References, Type, Severity, Updated AOSP versions]
       const reference = tds[1] || '';
       const type = tds[2] || 'Vulnerability';
-      const severityRaw = tds[3] || 'High';
-      const severity = severityRaw.toLowerCase().includes('critical') ? 'CRITICAL' : 'HIGH';
+      const severityLower = (tds[3] || 'high').toLowerCase();
+      let severity = 'HIGH';
+      if (severityLower.includes('critical')) {
+        severity = 'CRITICAL';
+      } else if (severityLower.includes('moderate') || severityLower.includes('medium')) {
+        severity = 'MEDIUM';
+      } else if (severityLower.includes('low')) {
+        severity = 'LOW';
+      }
       const versions = tds[4] || '';
 
       vulnerabilities.push({
@@ -148,17 +155,20 @@ function parseBulletin(html, bulletinDate) {
 
   const criticals = uniqueVulns.filter((v) => v.severity === 'CRITICAL');
   const highs = uniqueVulns.filter((v) => v.severity === 'HIGH');
+  const moderates = uniqueVulns.filter((v) => v.severity === 'MEDIUM');
 
   console.log(`[ASB] Parsed bulletin ${bulletinDate}:`);
   console.log(`      Total unique CVEs: ${uniqueVulns.length}`);
   console.log(`      Critical severity: ${criticals.length}`);
   console.log(`      High severity:     ${highs.length}`);
+  console.log(`      Moderate severity: ${moderates.length}`);
 
   return {
     bulletinDate,
     totalCves: uniqueVulns.length,
     criticals,
     highs,
+    moderates,
     allVulns: uniqueVulns,
   };
 }
@@ -172,7 +182,8 @@ function buildPromptForBulletin(parsed, bulletinUrl) {
   const monthName = monthNames[parseInt(month, 10) - 1] || 'Current';
 
   const criticalCveList = parsed.criticals.map((c) => `${c.cve} (${c.type})`).slice(0, 5).join(', ') || 'None';
-  const highCveList = parsed.highs.map((c) => `${c.cve} (${c.type})`).slice(0, 5).join(', ');
+  const highCveList = parsed.highs.map((c) => `${c.cve} (${c.type})`).slice(0, 5).join(', ') || 'None';
+  const moderateCveList = parsed.moderates.map((c) => `${c.cve} (${c.type})`).slice(0, 5).join(', ') || 'None';
 
   return `
 You are the content editor for SecuBuzz, a concise cybersecurity news app.
@@ -184,6 +195,7 @@ DATA:
 - Total Vulnerabilities Addressed: ${parsed.totalCves}
 - Critical Severity Flaws: ${parsed.criticals.length} (Key CVEs: ${criticalCveList})
 - High Severity Flaws: ${parsed.highs.length} (Key CVEs: ${highCveList})
+- Moderate Severity Flaws: ${parsed.moderates.length} (Key CVEs: ${moderateCveList})
 - Source: Android Open Source Project (Google)
 
 STRICT REQUIREMENTS:
