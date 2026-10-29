@@ -54,7 +54,20 @@
 - **Desktop QR Conversion & Video Assets:**
   - High-res QR code (`/qr.png`) pointing directly to Google Play Store deployed to bridge the desktop-to-mobile conversion gap for corporate PC readers (89.8% of web traffic). Rendered on `/download` and via desktop helper triggers.
   - Product walkthrough video deployed at `/secubuzz-landscape.mp4` (with HTTP 301 redirect from legacy `/brag.mp4` in Cloudflare Worker).
-- **Feed System:** `scripts/ingest.mjs` retains up to 350 articles (~7–10 days of security intelligence across 43 curated sources: 29 media/research publications + 14 official vendor PSIRT & advisory feeds, documented in `docs/FEEDS_AND_SOURCES.md`), scheduled every 1 hour via GitHub Actions (`cron: "17 * * * *"`). Powered by resilient tri-engine AI (Groq `openai/gpt-oss-20b` + Google Gemini `gemini-2.5-flash` + OpenRouter fallback), interleaved via hourly lead rotation (`currentHour % pool.length`) with instant failover on HTTP 429/5xx.
+- **Feed System:** `scripts/ingest.mjs` retains up to 350 articles (~7–10 days of security intelligence across 43 curated sources: 29 media/research publications + 14 official vendor PSIRT & advisory feeds, documented in `docs/FEEDS_AND_SOURCES.md`), scheduled every 1 hour via GitHub Actions (`cron: "17 * * * *"`). Powered by resilient multi-engine AI (Groq `openai/gpt-oss-20b` + Google Gemini `gemini-2.5-flash` with OpenRouter emergency fallback), alternating lead duties 50/50 between Groq and Gemini (12 hours each: `currentHour % 2`) with instant failover on HTTP 429/5xx.
+- **INGESTION PIPELINE CODE FREEZE (PERMANENT INVARIANT):**
+  - **DO NOT TOUCH OR MODIFY `scripts/ingest.mjs` EVER:** The ingestion pipeline is mathematically calibrated, balanced, and locked. Let it run completely autonomously to ingest, summarize, and publish new stories and advisories. Never alter its constants or flow.
+  - **Calibrated Ingestion Constants:**
+    - `ITEMS_PER_FEED = 50`: Captures full 50-item feeds (e.g. The Hacker News) without truncating recent zero-days.
+    - `ARTICLES_PER_AI_BATCH = 4`: Balances prompt density and completion token limits.
+    - `MAX_NEW_CANDIDATES = 40`: Capped at 10 batches per run ($40 \div 4 = 10$).
+    - `isHighVolumeSource ? 4 : 2`: Tiered diversity allows up to 4 articles for breaking newsrooms (The Hacker News, BleepingComputer) and 2 for other feeds.
+    - **Engine Rate Limits & Pacing Safeguards:**
+      - **Groq (`openai/gpt-oss-20b`)**: 1,000 RPD / 200,000 TPD ceiling. Paced at 5,000ms delay for batches and 2,500ms delay for comparisons.
+      - **Gemini (`gemini-2.5-flash`)**: 10 RPM / 250 RPD ceiling. Paced at **6,000ms delay** for both batches and semantic comparisons, guaranteeing instantaneous rate stays strictly $\le 7.05\text{ RPM}$ (mathematically impossible to breach the 10 RPM ceiling).
+      - **OpenRouter (Emergency Failover)**: Strictly demoted from hourly lead rotation to preserve its unfunded 50 req/day free cap for true dual outages (0 calls during normal operations).
+      - **Failed Batch Invariant**: Failed articles are strictly NEVER added to `seenUrls.json`, automatically retrying on the next hourly run.
+      - **Runner Minutes**: Normal runs consume $\sim 30\text{s}$ (1 billed minute); full 10-batch burst runs consume $\sim 95\text{s}$ (2 billed minutes, or 4 minutes in extreme maxed comparisons). Total automated monthly consumption (Ingest + 6-hour Watchdog) is safely locked between $960–1,100\text{ minutes/month}$, preserving a 900+ minute buffer on the 2,000-minute private quota.
 - **Feed Resilience & Watchdog System (Zero-Silent-Failure Mandate):**
   - **Read-Only Invariant:** `scripts/sync_website_data.mjs` is strictly read-only on `feed.json` and must NEVER write or overwrite `feed.json`.
   - **In-Pipeline Gate (`scripts/verify_feed_freshness.mjs`):** Runs in `.github/workflows/ingest.yml` before R2 upload. Asserts >= 50 articles and newest story meets adaptive threshold (<= 32h on weekends, <= 18h on weekdays) accounting for natural journalism lulls; fails CI loudly if stale.
@@ -70,7 +83,23 @@
     - CISA KEV Freshness & Tap Routing: CISA zero-day alerts are strictly limited to CVEs added within 72 hours (`<= 72h`), and carry full advisory payload metadata (`articleId`, `headline`, `summary`, `articleUrl`) wired to `handleNotificationResponse` so tapping an advisory notification directly opens the advisory details screen.
 
 ## 6. Native `.aab` Releases & Production Updates
-- **Release v1.0.3 (Version Code 9 / OTA Active):**
+- **Release v1.0.3 (Version Code 9 / OTA Active `f7da0679-adf8-46d0-8dc2-9b736bba8461`):**
+  - **Bookmark Persistence & Data Loss Prevention (`SavedArticlesContext.tsx`)**:
+    - Replaced strict uppercase validators (`isArticleSeverity`, `isArticleCategory`) with permissive normalizers (`normalizeSeverity`, `normalizeCategory`), preventing Title Case advisories (e.g. `'Critical'`, `'High'`) from failing parsing.
+    - Zero-overwrite startup safety: removed destructive `AsyncStorage.setItem(..., [])` overwrite on anomaly.
+    - Dual-storage migration: automatically checks both `'secubuzz-saved-articles'` and legacy `'secubuzz:saved-articles'` to recover orphaned bookmarks and string ID arrays.
+    - Direct snapshot persistence: card bookmark actions pass full `Article` snapshots into `toggleSaved`, eliminating asynchronous lookup failures when offline or navigating off-feed.
+  - **In-Search Feedback & Match Counting**:
+    - Real-time match count pill (**`[ 2 found ]`**) displayed directly inside search inputs in `advisories.tsx` and `index.tsx`.
+    - Dynamic header counter: updates from `CAUGHT UP (1/1)` to **`SEARCH: 1 OF 2`** and tracks active swipe position during searches.
+  - **Harmonized Filter Modal Counts**:
+    - Connected category counts to base search query candidate totals, eliminating discrepancy where one category read 0 while others displayed catalog totals.
+    - EPSS risk tier disjointing: partitioned `HIGH_50` to `p >= 0.50 && p < 0.90` to eliminate double-counting of >90% flaws in >50%.
+  - **Screen Boundary & Action Bar Overflow Fix**: Compacted action button gap to 8px, applied `flexShrink: 0`, and constrained badge padding to prevent bookmark button clipping on narrow viewports.
+  - **Clean Local Timestamps**: Removed technical `GMT-4` offset jargon and fuzzy relative drifting (`(6h ago)`), standardizing on local device time format (e.g. `4:00 pm · 28 Oct`).
+  - **Edge SEO & Security Hardening (Worker Version `877a39e0-3160-4eff-861a-774681f9e065`)**:
+    - Hard HTTP 404 for nonexistent news/advisories/pages with branded 404 shell and clean canonicals (`Page Not Found · SecuBuzz`), preventing search engine phantom indexing.
+    - Blogger comments URL fix: Chrome Releases items verified linking to actual article permalinks (`https://chromereleases.googleblog.com/2026/10/...html`).
   - **AMOLED Black Theme**: Added pure true-black OLED mode (`#000000`) alongside Dark and Slate.
   - **Dynamic Text Scaling**: Density selector (Compact / Standard / Comfortable) with live preview and persistent scaling.
   - **FIRST.org EPSS Telemetry**: Integrated live 30-day in-the-wild exploit probability and global threat percentiles with zero synthetic data.

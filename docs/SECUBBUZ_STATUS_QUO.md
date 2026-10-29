@@ -59,7 +59,7 @@ graph TD
 | **Cloudflare Worker** (`secubuzz-push`) | API routing, token registry, install tracking & edge caching | 100,000 req/day | ~1,200–3,500 req/day | **96.5% buffer remaining** |
 | **Cloudflare D1** (`secubuzz-push-db`) | Serverless SQLite database for push tokens & click analytics | 5,000,000 reads / 100k writes/day | < 50,000 reads / < 50 writes/day | **99.0% database headroom** |
 | **Cloudflare R2** (`secubuzz-feed`) | Object storage hosting `feed.json` (~280 KB) | 10 GB storage / 1,000,000 writes/mo | ~30 MB storage / 720 writes/mo | **99.9% free buffer** |
-| **Dual/Tri-Engine AI Pipeline** | Summarizing raw RSS feeds into 60-word briefs | Groq (14.4k req/day), Gemini (1,500 req/day) | ~50–120 requests/day | **98.5% API headroom** |
+| **Multi-Engine AI Pipeline** | Summarizing raw RSS feeds into 60-word briefs | Groq (1,000 req/day / 200k TPD), Gemini 2.5 Flash (250 req/day / 10 RPM), OpenRouter emergency failover (50 req/day) | ~10–22 batches/day split 50/50 | **95.6%+ API headroom** |
 | **GitHub Actions** | Automated CI cron running `scripts/ingest.mjs` hourly | 2,000 min/mo | ~350 min/month (~25s per run) | **82.5% free buffer** |
 | **Expo Push Service** | FCM push relay to registered Android devices | Unlimited | Batched in chunks of 100 | **100% free** |
 
