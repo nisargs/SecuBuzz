@@ -96,7 +96,7 @@
     - CISA KEV Freshness & Tap Routing: CISA zero-day alerts are strictly limited to CVEs added within 72 hours (`<= 72h`), and carry full advisory payload metadata (`articleId`, `headline`, `summary`, `articleUrl`) wired to `handleNotificationResponse` so tapping an advisory notification directly opens the advisory details screen.
 
 ## 6. Native `.aab` Releases & Production Updates
-- **Release v1.0.3 (Version Code 9 / OTA Active `f7da0679-adf8-46d0-8dc2-9b736bba8461`):**
+- **Release v1.0.3 (Version Code 9 / OTA Active `01a189cd-0d01-7024-baa2-e2376ae06852` / Group `8019e07a-515f-4db4-a3d4-c7faf2b4ead6`):**
   - **Bookmark Persistence & Data Loss Prevention (`SavedArticlesContext.tsx`)**:
     - Replaced strict uppercase validators (`isArticleSeverity`, `isArticleCategory`) with permissive normalizers (`normalizeSeverity`, `normalizeCategory`), preventing Title Case advisories (e.g. `'Critical'`, `'High'`) from failing parsing.
     - Zero-overwrite startup safety: removed destructive `AsyncStorage.setItem(..., [])` overwrite on anomaly.
