@@ -202,6 +202,11 @@ To uphold our **Zero-Silent-Failure Mandate**, SecuBuzz runs a 3-layer automated
    Runs every 2 hours via GitHub Actions. Evaluates feed age against adaptive thresholds (28h on weekends, 12h on weekdays) to prevent false alerts during regular publishing pauses.
 3. **Edge Health Endpoint (`https://secubuzz.com/health`)**:
    Evaluates live R2 feed age on every request. Returns HTTP 200 with feed telemetry (`articleCount`, `latestHeadline`, `ageHours`, `thresholdHours`, `isWeekend`, `isFresh`) or HTTP 503 `stale_feed` if stale ($\le$ 30.0h weekends, $\le$ 16.0h weekdays).
+4. **CI Concurrency, Rate Limit Guards & Stampede Prevention**:
+   - **Top-Level Concurrency Group**: `.github/workflows/ingest.yml` enforces `concurrency: { group: secubuzz-ingest, cancel-in-progress: false }` so hourly runs and emergency dispatches never overlap or contend for API allowances.
+   - **60s Success-Path Rate Limit Cap**: `scripts/ingest.mjs` caps Groq reset sleeps to strictly $\le 60\text{s}$; if a token window reset exceeds 60s, it immediately fails over to Gemini rather than stalling the runner.
+   - **Clean Rebase Push**: Removed `|| true` masking on `git pull --rebase origin main` in `ingest.yml` so git conflicts fail loudly.
+   - **Watchdog Anti-Stampede Check**: `.github/workflows/watchdog.yml` checks active Actions workflow runs and skips emergency dispatches if an ingestion job is already running or queued.
 
 ---
 

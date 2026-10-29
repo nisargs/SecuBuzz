@@ -74,7 +74,9 @@
   - **Edge Watchdog (`https://secubuzz.com/health`):** Evaluates live R2 feed age on every request. Returns HTTP 200 with feed telemetry if healthy (<= 30.0h weekends, <= 16.0h weekdays), or HTTP 503 `stale_feed` if stale (triggering external HetrixTools/Uptime monitors).
   - **Autonomous Watchdog Workflow (`.github/workflows/watchdog.yml`):** Runs every 2 hours; uses adaptive threshold (28h weekends, 12h weekdays) to prevent false alerts during regular publishing pauses.
   - **Watchdog CLI Routines:** `npm run watchdog` (checks production site freshness) and `npm run verify:feed` (local/CI integrity gate).
-  - **CI Push Rebase Hygiene:** `.github/workflows/ingest.yml` runs `git pull --rebase origin main || true` before `git push` to eliminate CI race condition failures when commits land on main during ingestion.
+  - **Workflow Concurrency & Rebase Hygiene:** `.github/workflows/ingest.yml` uses top-level concurrency (`group: secubuzz-ingest`, `cancel-in-progress: false`) preventing overlapping runs. Runs `git pull --rebase origin main` before `git push` (failing loudly on conflicts without masking).
+  - **60-Second Success-Path Rate Limit Guard:** `waitForRateLimitReset` and `waitBetweenRequests` cap all Groq sleeps strictly to <= 60s; any reset window exceeding 60s fails over instantly to Gemini rather than stalling.
+  - **Watchdog Stampede Guard:** `.github/workflows/watchdog.yml` queries the GitHub Actions API before dispatching and skips emergency runs if an ingest run is already `in_progress` or `queued`.
   - **Zero-Stale-Push Mandate:**
     - Candidate floor: RSS candidate items older than 4 days (96h) are discarded before AI processing and marked as seen in `seenUrls` to prevent repeated evaluation.
     - Live Feed Invariant: Push notifications are strictly blocked unless the article is verified present in `mergedFeed`.

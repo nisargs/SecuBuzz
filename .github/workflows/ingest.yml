@@ -9,6 +9,10 @@ on:
   # Allow manual testing from GitHub Actions
   workflow_dispatch:
 
+concurrency:
+  group: secubuzz-ingest
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -143,5 +147,5 @@ jobs:
 
           git commit -m "Update SecuBuzz feed"
 
-          git pull --rebase origin main || true
+          git pull --rebase origin main
           git push

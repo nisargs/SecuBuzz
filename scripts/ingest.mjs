@@ -1086,11 +1086,20 @@ async function waitForRateLimitReset(
     return;
   }
 
-  const waitMilliseconds =
+  // Cap wait at 60s: if reset window exceeds 60s, fail over immediately to next engine
+  if (resetSeconds > 60) {
+    throw new Error(
+      `Groq token limit reached (reset in ${resetSeconds.toFixed(2)}s) - failing over to next engine`,
+    );
+  }
+
+  const waitMilliseconds = Math.min(
     Math.ceil(
       resetSeconds * 1000,
     ) +
-    RATE_LIMIT_RESET_BUFFER_MS;
+    RATE_LIMIT_RESET_BUFFER_MS,
+    60000
+  );
 
   console.log(
     `Groq token window resets in approximately ${resetSeconds.toFixed(
@@ -1170,6 +1179,13 @@ async function waitBetweenRequests(
     console.log(
       `Remaining TPM is below ${MIN_REMAINING_TOKENS_BEFORE_WAIT}.`,
     );
+
+    const resetSec = parseSeconds(resetTokensHeader);
+    if (resetSec > 60) {
+      throw new Error(
+        `Groq token allowance low and reset in ${resetSec.toFixed(2)}s - failing over to next engine`,
+      );
+    }
 
     await waitForRateLimitReset(
       response,
