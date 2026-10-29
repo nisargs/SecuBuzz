@@ -104,6 +104,9 @@ In **Store presence > Store settings > Category and tags**:
 
 ## 3. Screenshot Visual Conversion Optimization (CRO)
 
+- **Screenshot Generator Tool**: [AppScreenshots.net](https://appscreenshots.net/)  
+  *(Used to generate the 6 verified 1080 × 1920 Google Play Store screenshots in `assets/store-screenshots/` with dark background `#0B0F14`, cyan header captions, and Android titanium chassis).*
+
 Google Play displays the first 3 screenshots side-by-side in search results. To maximize install conversion, your screenshot gallery should feature bold benefit captions above the UI:
 
 | Slot | Caption / Benefit Header | Screen Featured |

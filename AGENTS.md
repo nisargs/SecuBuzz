@@ -52,6 +52,13 @@
   - **Clean Edge-to-Edge Navigation**: Mobile screenshots (`1.jpg`, `2.jpg`, `3.jpg`, `screenshot.jpg`, `app-screenshot.jpg`) must maintain a seamless dark `#0B0E14` base with a subtle Android gesture pill, completely eliminating any light/white OS 3-button navigation bars.
   - **Interactive 3-Screen Showcase Controller**: `PhoneMockup.tsx` provides 3 interactive tabs (`Briefs`, `Advisories`, `Bookmarks`) allowing visitors to explore the core app experiences (`/1.jpg`, `/2.jpg`, `/3.jpg`). Features smooth 500ms crossfade, a 6.5s auto-rotation with active progress line, and pause on hover/focus.
 
+- **Official Google Play Screenshot Generator Tool (`assets/store-screenshots/`)**:
+  - Generated using **[AppScreenshots.net](https://appscreenshots.net/)**.
+  - Canvas preset: 1080 × 1920 px (Play Store vertical spec).
+  - Background: Solid dark `#0B0F14` matching SecuBuzz dark mode.
+  - Header: Bold cyan (`#38BDF8` / `#4CC9F0`) benefit captions above UI.
+  - Chassis: Android titanium frame with centered punch-hole camera and subtle side buttons.
+
 ## 5. Deployment & Google Play Compliance
 - **Cloudflare Worker (`worker/src/index.ts`):** Must always be deployed with `npx wrangler deploy` when routing or policy files change. Always verify live endpoints with `fetch`.
 - **Policy URLs & Inbound Channels:**
